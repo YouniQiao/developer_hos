@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "离线编辑(C/C++)"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-production-creation/audio-suite-manual-rendering
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-production-creation/audio-suite-manual-rendering
+last_sync: 2026-06-07
+sync_hash: ce0ffd0c
 ---
-
-
 从API version 22开始，[OHAudioSuite](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudiosuite)给开发者提供音频离线编辑能力，允许在非实时播放场景下对音频数据进行处理，开发者可以组合多个音频节点实现复杂的音频处理流程。
 
 ## 开发基础配置

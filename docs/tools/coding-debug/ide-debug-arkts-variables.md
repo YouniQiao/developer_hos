@@ -3,9 +3,10 @@ title: "检查变量"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-arkts-variables
 format: md
+upstream_id: tools/coding-debug/ide-debug-arkts-variables
+last_sync: 2026-06-07
+sync_hash: e5399a74
 ---
-
-
 # 检查变量
 
 当应用停止在某个断点处时，您可以在"Debugger"窗口中查看当前的变量信息。在"Frame"窗格中选择某个帧之后，可以在"Variable"窗格中检查变量，或对变量进行计算。

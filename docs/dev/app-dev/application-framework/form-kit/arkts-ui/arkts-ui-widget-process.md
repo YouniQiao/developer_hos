@@ -2,9 +2,10 @@
 title: "ArkTS卡片进程模型"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-process
 format: md
+upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-process
+last_sync: 2026-06-07
+sync_hash: 5245c99c
 ---
-
-
 本文主要介绍，卡片从创建到显示整个过程中各个进程的含义。具体请参考卡片进程模型。
 
 **图1** 卡片进程模型

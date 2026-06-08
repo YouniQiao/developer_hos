@@ -2,9 +2,10 @@
 title: "在自绘编辑框中使用输入法开发指导 (C/C++)"
 original_url: /docs/dev/app-dev/application-framework/ime-kit/use-inputmethod-in-custom-edit-box-ndk
 format: md
+upstream_id: dev/app-dev/application-framework/ime-kit/use-inputmethod-in-custom-edit-box-ndk
+last_sync: 2026-06-07
+sync_hash: 227bba0f
 ---
-
-
 ## 场景介绍
 
 IME Kit支持开发者在自绘编辑框中使用输入法，与输入法应用交互，包括显示、隐藏输入法，接收来自输入法应用的文本编辑操作通知等，本文档介绍开发者如何使用C/C++完成此功能开发。

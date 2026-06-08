@@ -2,9 +2,10 @@
 title: "注销核准（备案）"
 original_url: /docs/dev/atomic-dev/atomic-service-cloud/atomic-service-filing-log-out
 format: md
+upstream_id: dev/atomic-dev/atomic-service-cloud/atomic-service-filing-log-out
+last_sync: 2026-06-07
+sync_hash: 25a91ad0
 ---
-
-
 ## 注销主体
 
 注销主体将在工信部删除主体及主体下的网站/APP/元服务的核准（备案）信息，届时互联网信息服务将不可使用。操作步骤如下：

@@ -2,9 +2,10 @@
 title: "错误码"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-errorcode-0000002271000673
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-errorcode-0000002271000673
+last_sync: 2026-06-07
+sync_hash: fa99c229
 ---
-
-
 ![](../img/agc-help-publish-api-errorcode-0000002271000673_0.png)
 
 如果返回的错误信息为“unknown error”，可以通过[在线工单系统](https://developer.huawei.com/consumer/cn/support/feedback/#/add/89?level2=9016)与我们联系。

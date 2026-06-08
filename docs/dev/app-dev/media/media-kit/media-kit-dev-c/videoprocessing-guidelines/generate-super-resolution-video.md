@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "视频缩放"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/videoprocessing-guidelines/generate-super-resolution-video
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-c/videoprocessing-guidelines/generate-super-resolution-video
+last_sync: 2026-06-07
+sync_hash: 8f2c6a07
 ---
-
-
 本模块提供视频细节增强的[C API接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-videoprocessing)，通过调用本模块的接口，可以实现视频流图像内容的清晰度增强及缩放功能，处理后的数据可以用于送显、播放和录制。
 
 典型应用场景如：视频解码 > 视频细节增强 > XComponent显示。

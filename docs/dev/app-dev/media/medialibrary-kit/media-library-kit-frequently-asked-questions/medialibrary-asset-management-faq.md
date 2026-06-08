@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "如何正确管理媒体资源"
 original_url: /docs/dev/app-dev/media/medialibrary-kit/media-library-kit-frequently-asked-questions/medialibrary-asset-management-faq
 format: md
+upstream_id: dev/app-dev/media/medialibrary-kit/media-library-kit-frequently-asked-questions/medialibrary-asset-management-faq
+last_sync: 2026-06-07
+sync_hash: 0a471c4e
 ---
-
-
 [Media Library Kit](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-overview)（媒体文件管理服务）提供了媒体资源的管理能力，开发者可以访问和修改相册中的媒体信息。
 
 ![](./img/d89a038f.png)

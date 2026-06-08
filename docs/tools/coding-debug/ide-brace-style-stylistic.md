@@ -3,9 +3,10 @@ title: "@hw-stylistic/brace-style"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-brace-style-stylistic
 format: md
+upstream_id: tools/coding-debug/ide-brace-style-stylistic
+last_sync: 2026-06-07
+sync_hash: 5d3e7e0d
 ---
-
-
 # @hw-stylistic/brace-style
 
 强制大括号和语句位于同一行。该规则仅检查.ets文件类型。

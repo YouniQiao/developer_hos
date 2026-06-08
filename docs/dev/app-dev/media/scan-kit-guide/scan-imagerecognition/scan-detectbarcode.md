@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "识别本地图片"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-imagerecognition/scan-detectbarcode
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-imagerecognition/scan-detectbarcode
+last_sync: 2026-06-07
+sync_hash: 680bfc60
 ---
-
-
 ## 基本概念
 
 图片识码能力支持对图库中的码图进行扫描识别，并获取信息。

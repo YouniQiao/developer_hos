@@ -3,9 +3,10 @@ title: "插件工具的对应代码实现"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/end-side-application-implementation-0000002471344185/corresponding-code-implementation-of-plug-in-tools-0000002437625938
 format: md
+upstream_id: distribute/xiaoyi/end-side-application-implementation-0000002471344185/corresponding-code-implementation-of-plug-in-tools-0000002437625938
+last_sync: 2026-06-07
+sync_hash: 79a4ded8
 ---
-
-
 # 插件工具的对应代码实现
 
 当绑定的端插件被大模型调用时，设置为前端、后端执行的插件工具会触发InsightIntentExecutorImpl类方法的调用，可以在对应的类方法里面匹配对应的工具名称后，进行自定义逻辑业务的处理。

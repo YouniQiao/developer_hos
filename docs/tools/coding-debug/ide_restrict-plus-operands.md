@@ -3,9 +3,10 @@ title: "@typescript-eslint/restrict-plus-operands"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_restrict-plus-operands
 format: md
+upstream_id: tools/coding-debug/ide_restrict-plus-operands
+last_sync: 2026-06-07
+sync_hash: 655872ec
 ---
-
-
 # @typescript-eslint/restrict-plus-operands
 
 要求加法的两个操作数都是相同的类型，并且是“bigint”、“number”或“string”。

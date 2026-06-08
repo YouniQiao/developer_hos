@@ -2,9 +2,10 @@
 title: "键盘"
 original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-keyboard
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-device/apis-keyboard
+last_sync: 2026-06-07
+sync_hash: a789b840
 ---
-
-
 ## has.onKeyboardHeightChange
 
 has.onKeyboardHeightChange(function callback)

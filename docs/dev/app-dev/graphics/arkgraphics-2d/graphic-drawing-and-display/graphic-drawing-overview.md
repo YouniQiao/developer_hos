@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "图形绘制与显示开发概述"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/graphic-drawing-overview
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/graphic-drawing-overview
+last_sync: 2026-06-07
+sync_hash: caa6929d
+upstream_hash: be873214c21e
 ---
-
 
 ## 场景介绍
 

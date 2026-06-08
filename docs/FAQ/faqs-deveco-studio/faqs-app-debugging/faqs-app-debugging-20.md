@@ -2,9 +2,10 @@
 format: md
 title: "修改代码后使用Hot Reload不支持情况说明"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-20
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-20
+last_sync: 2026-06-07
+sync_hash: e6e8fc2e
 ---
-
-
 **问题现象**
 
 执行热重载过程中，如果当前修改不支持热重载，控制台会打印蓝色重启链接，提示重新安装并重启。
@@ -13,7 +14,7 @@ original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging
 
 **解决措施**
 
-DevEco Studio的热重载功能支持特定的代码场景。如果修改的代码超出支持范围，系统将提示“当前修改不支持”，并要求重启。具体支持的代码范围，请参阅[Hot Reload使用约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hot-reload#section995453874915)。
+DevEco Studio的热重载功能支持特定的代码场景。如果修改的代码超出支持范围，系统将提示“当前修改不支持”，并要求重启。具体支持的代码范围，请参阅[Hot Reload使用约束](/docs/tools/coding-debug/ide-hot-reload#section995453874915)。
 
 **常见不支持代码场景**
 

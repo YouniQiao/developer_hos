@@ -3,9 +3,10 @@ title: "GPU活动分析"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-profiler-gpu
 format: md
+upstream_id: tools/coding-debug/ide-profiler-gpu
+last_sync: 2026-06-07
+sync_hash: 03a27c17
 ---
-
-
 # GPU活动分析
 
 从DevEco Studio 6.0.0 Beta3版本开始，DevEco Profiler提供GPU模板展示不同GPU硬件模块利用率的详细信息，这些信息可用于识别GPU利用率低、执行图形和计算工作负载性能瓶颈的根本原因。

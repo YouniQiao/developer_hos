@@ -3,8 +3,11 @@ title: "命令：基础命令&lt;Command&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-command-0000002504354913
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-command-0000002504354913
+last_sync: 2026-06-07
+sync_hash: 597f40d0
+upstream_hash: 665c443601be
 ---
-
 
 # 命令：基础命令&lt;Command&gt;
 

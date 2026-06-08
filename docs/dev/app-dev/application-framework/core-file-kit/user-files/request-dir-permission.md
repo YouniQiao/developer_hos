@@ -2,9 +2,10 @@
 title: "获取并使用公共目录"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/user-files/request-dir-permission
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/user-files/request-dir-permission
+last_sync: 2026-06-07
+sync_hash: b1106fb2
 ---
-
-
 ## 通过 ArkTS 接口获取并访问公共目录
 
 目录环境能力接口（[ohos.file.environment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-environment)）提供获取公共目录路径的能力，支持三方应用在公共文件用户目录下进行文件访问操作。

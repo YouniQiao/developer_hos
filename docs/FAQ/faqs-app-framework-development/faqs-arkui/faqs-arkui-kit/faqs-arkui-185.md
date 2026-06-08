@@ -2,9 +2,10 @@
 format: md
 title: "使用@Watch监听并在回调函数中调用其他异步接口时UI响应慢"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-185
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-185
+last_sync: 2026-06-07
+sync_hash: e3fc10fb
 ---
-
-
 @Watch用于快速计算，在UI重新渲染之前执行。不建议在@Watch函数中调用async和await，因为异步行为会延迟组件的重新渲染，可能导致性能问题。
 
 **参考链接**

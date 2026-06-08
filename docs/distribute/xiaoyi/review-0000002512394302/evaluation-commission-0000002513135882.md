@@ -3,9 +3,10 @@ title: "评估器"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/review-0000002512394302/evaluation-commission-0000002513135882
 format: md
+upstream_id: distribute/xiaoyi/review-0000002512394302/evaluation-commission-0000002513135882
+last_sync: 2026-06-07
+sync_hash: 8c72c405
 ---
-
-
 # 评估器
 
 ## 评估器介绍

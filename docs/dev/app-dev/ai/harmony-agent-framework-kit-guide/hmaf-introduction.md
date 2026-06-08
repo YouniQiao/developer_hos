@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Agent Framework Kit简介"
 original_url: /docs/dev/app-dev/ai/harmony-agent-framework-kit-guide/hmaf-introduction
 format: md
+upstream_id: dev/app-dev/ai/harmony-agent-framework-kit-guide/hmaf-introduction
+last_sync: 2026-06-07
+sync_hash: 177e922e
 ---
-
-
 Agent Framework Kit（智能体框架服务）提供了拉起指定智能体的能力。
 
 应用在[小艺开放平台](https://developer.huawei.com/consumer/cn/hag/hagindex.html?isInFrame=true&lang=zh_CN#/)上线智能体后，向用户提供应用+智能体组合的服务，让用户可以在适当的场景下通过Agent Framework Kit的UI控件能力主动拉起智能体。

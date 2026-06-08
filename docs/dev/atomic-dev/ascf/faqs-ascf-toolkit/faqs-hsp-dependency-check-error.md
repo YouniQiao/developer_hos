@@ -2,8 +2,11 @@
 title: "hsp依赖检查错误"
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-hsp-dependency-check-error
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-hsp-dependency-check-error
+last_sync: 2026-06-07
+sync_hash: 188a984c
+upstream_hash: 913d651af73e
 ---
-
 
 **问题现象**
 

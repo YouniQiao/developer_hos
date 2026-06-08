@@ -2,8 +2,11 @@
 format: md
 title: "应用安装到设备的方式有哪些"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-47
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-47
+last_sync: 2026-06-07
+sync_hash: fb6e7c36
+upstream_hash: 38b837437a74
 ---
-
 
 支持两种方式安装HAP包到设备：
 

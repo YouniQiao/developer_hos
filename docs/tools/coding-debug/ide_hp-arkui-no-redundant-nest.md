@@ -3,8 +3,11 @@ title: "@performance/hp-arkui-remove-redundant-nest-container"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-no-redundant-nest
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-no-redundant-nest
+last_sync: 2026-06-07
+sync_hash: 21f9cea5
+upstream_hash: 9b700a28b240
 ---
-
 
 # @performance/hp-arkui-remove-redundant-nest-container
 

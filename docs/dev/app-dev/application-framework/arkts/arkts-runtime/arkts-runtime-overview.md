@@ -2,9 +2,10 @@
 title: "ArkTS运行时概述"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-overview
+last_sync: 2026-06-07
+sync_hash: e2310883
 ---
-
-
 ArkTS运行时是HarmonyOS上应用的默认语言运行时，支持ArkTS、TS和JS语言的字节码及相关标准库。它提供解释器、AOT和JIT高效执行方式，并通过[Node-API](/docs/dev/ndk-dev/napi-introduction)实现完善的跨语言调用接口，支持多语言混合开发。
 
 ArkTS Runtime主要由四个子系统组成：

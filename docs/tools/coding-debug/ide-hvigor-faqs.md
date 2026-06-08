@@ -3,9 +3,10 @@ title: "编译构建常见问题"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-faqs
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-faqs
+last_sync: 2026-06-07
+sync_hash: 86039a69
 ---
-
-
 # 编译构建常见问题
 
 #### 如何解决编译过程内存过高

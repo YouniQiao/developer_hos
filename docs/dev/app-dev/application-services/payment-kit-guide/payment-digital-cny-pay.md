@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "数字人民币支付场景"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-digital-cny-pay
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-digital-cny-pay
+last_sync: 2026-06-07
+sync_hash: ee965d40
 ---
-
-
 ![](./img/f23df388.png)
 
 1. 用户手机端rom版本过低可能导致应用闪退，建议开发者对开放接口抛出的异常错误进行捕获并进行处理。

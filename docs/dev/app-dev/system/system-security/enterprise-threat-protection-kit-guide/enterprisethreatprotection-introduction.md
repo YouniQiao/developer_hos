@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Enterprise Threat Protection Kit简介"
 original_url: /docs/dev/app-dev/system/system-security/enterprise-threat-protection-kit-guide/enterprisethreatprotection-introduction
 format: md
+upstream_id: dev/app-dev/system/system-security/enterprise-threat-protection-kit-guide/enterprisethreatprotection-introduction
+last_sync: 2026-06-07
+sync_hash: a15d0b19
 ---
-
-
 Enterprise Threat Protection Kit（企业威胁防护服务）为企业开发者提供了一套构建安全防护类应用的核心能力，其核心在于**文件访问与处置**功能。该服务旨在助力上层应用快速构建完整的终端安全防护解决方案，通过对文件进行安全、高效地扫描以识别潜在威胁，并对已识别的威胁文件执行隔离、恢复或删除等操作，从而有效保护企业设备上的数据安全。
 
 ## 场景介绍

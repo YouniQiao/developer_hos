@@ -3,9 +3,10 @@ title: "ohpm install"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-install
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-install
+last_sync: 2026-06-07
+sync_hash: 009b715c
 ---
-
-
 # ohpm install
 
 安装三方库。

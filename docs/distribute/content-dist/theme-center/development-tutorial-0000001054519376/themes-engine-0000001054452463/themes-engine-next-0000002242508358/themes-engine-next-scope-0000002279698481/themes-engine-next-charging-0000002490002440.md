@@ -3,9 +3,10 @@ title: "充电动效换肤&lt;ChargingSkin&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-scope-0000002279698481/themes-engine-next-charging-0000002490002440
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-scope-0000002279698481/themes-engine-next-charging-0000002490002440
+last_sync: 2026-06-07
+sync_hash: bf2f80fe
 ---
-
-
 # 充电动效换肤&lt;ChargingSkin&gt;
 
 ## 功能概述

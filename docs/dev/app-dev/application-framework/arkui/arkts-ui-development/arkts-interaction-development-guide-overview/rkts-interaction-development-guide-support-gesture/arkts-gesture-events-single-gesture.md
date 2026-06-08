@@ -2,9 +2,10 @@
 title: "单一手势"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-single-gesture
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-single-gesture
+last_sync: 2026-06-07
+sync_hash: 0c6a57f6
 ---
-
-
 ## 点击事件（onClick）
 
 单击作为常用的手势，可以方便地使用[onClick](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-click#onclick)接口实现。尽管被称为事件，它实际上是基本手势类型，等同于将count配置为1的TapGesture，即单击手势。

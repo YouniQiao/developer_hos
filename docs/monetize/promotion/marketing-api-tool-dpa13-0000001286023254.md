@@ -3,8 +3,10 @@ title: "查询DPA任务销售国家列表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-dpa13-0000001286023254
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-dpa13-0000001286023254
+last_sync: 2026-06-07
+sync_hash: d0284479
 ---
-
 # 查询DPA任务销售国家列表
 
 您通过本接口可以查询DPA任务销售国家列表。

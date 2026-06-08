@@ -2,9 +2,10 @@
 format: md
 title: "不同类型的Context获取fileDir目录的结果不一致"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-42
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-42
+last_sync: 2026-06-07
+sync_hash: 366f6e42
 ---
-
-
 **问题描述**
 
 不同类型的Context获取fileDir目录的结果存在差异。

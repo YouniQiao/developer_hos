@@ -2,9 +2,10 @@
 title: "特别活动"
 original_url: /docs/dev/game-dev/games-center-big-event-special-events-0000002286057088
 format: md
+upstream_id: dev/game-dev/games-center-big-event-special-events-0000002286057088
+last_sync: 2026-06-07
+sync_hash: 8dd647df
 ---
-
-
 特别活动是指游戏内的亮点活动。
 
 ## 前提条件

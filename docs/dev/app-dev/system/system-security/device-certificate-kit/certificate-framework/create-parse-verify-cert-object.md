@@ -2,9 +2,10 @@
 title: "证书对象的创建、解析和校验"
 original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-parse-verify-cert-object
 format: md
+upstream_id: dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-parse-verify-cert-object
+last_sync: 2026-06-07
+sync_hash: d5987e19
 ---
-
-
 以校验证书有效性为例，完成证书对象的创建、解析和校验。
 
 ## 开发步骤

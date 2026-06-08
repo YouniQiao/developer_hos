@@ -2,9 +2,10 @@
 format: md
 title: "如何全局存储WebController"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-60
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-60
+last_sync: 2026-06-07
+sync_hash: ebe76771
 ---
-
-
 **问题场景：**
 
 需要全局存储多个WebController对象，目前使用将Map存入AppStorage的方式不生效。

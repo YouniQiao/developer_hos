@@ -2,9 +2,10 @@
 format: md
 title: "是否支持动态授权"
 original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-access-control/faqs-access-control-13
+upstream_id: FAQ/faqs-system-development/faqs-security/faqs-access-control/faqs-access-control-13
+last_sync: 2026-06-07
+sync_hash: 7fdb3c1b
 ---
-
-
 权限类型分为系统授权和用户授权。
 
 * 安装应用时，系统会根据应用声明的权限自动授予相应权限，此时不涉及动态授权流程。

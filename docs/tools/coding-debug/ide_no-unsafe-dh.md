@@ -3,8 +3,11 @@ title: "@security/no-unsafe-dh"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unsafe-dh
 format: md
+upstream_id: tools/coding-debug/ide_no-unsafe-dh
+last_sync: 2026-06-07
+sync_hash: ad7a18b8
+upstream_hash: ec111610a411
 ---
-
 
 # @security/no-unsafe-dh
 

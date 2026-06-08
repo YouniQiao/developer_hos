@@ -2,8 +2,11 @@
 title: "USB批量传输"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-dev/usb-host-dev/bulktransfer
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-dev/usb-host-dev/bulktransfer
+last_sync: 2026-06-07
+sync_hash: 10b87b07
+upstream_hash: 38dd83f320be
 ---
-
 
 ## 场景介绍
 
@@ -15,7 +18,7 @@ format: md
 
 * 开发工具及配置：
 
-  DevEco Studio作为驱动开发工具，是进行驱动开发必备条件之一，开发者可以使用该工具进行开发、调试、打包等操作。请[下载安装](https://developer.huawei.com/consumer/cn/download/)该工具，并参考[DevEco Studio使用指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-tools-overview)中的[创建工程及运行](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-create-new-project)进行基本的操作验证，保证DevEco Studio可正常运行。
+  DevEco Studio作为驱动开发工具，是进行驱动开发必备条件之一，开发者可以使用该工具进行开发、调试、打包等操作。请[下载安装](https://developer.huawei.com/consumer/cn/download/)该工具，并参考[DevEco Studio使用指南](/docs/tools/coding-debug/ide-tools-overview)中的[创建工程及运行](/docs/tools/coding-debug/ide-create-new-project)进行基本的操作验证，保证DevEco Studio可正常运行。
 * SDK版本配置：
 
   扩展外设管理提供的ArkTS接口，所需SDK版本为API 16及以上才可使用。

@@ -2,9 +2,10 @@
 title: "基于三方框架（uni-app，Taro等）编译为ASCF范式"
 original_url: /docs/dev/atomic-dev/ascf/use-ide/compile-ascf-paradigm
 format: md
+upstream_id: dev/atomic-dev/ascf/use-ide/compile-ascf-paradigm
+last_sync: 2026-06-07
+sync_hash: 0eff87a1
 ---
-
-
 当前已有部分三方框架支持通过ASCF框架，将工程编译为元服务。
 
 ## uni-app编译为元服务

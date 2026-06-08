@@ -2,9 +2,10 @@
 format: md
 title: "如何控制Tabs内容页单向滑动切换"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-455
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-455
+last_sync: 2026-06-07
+sync_hash: 1db5762d
 ---
-
-
 **背景知识**
 
 [scrollable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs#scrollable)：设置是否可以通过滑动页面进行Tab页面切换，默认支持向左向右两个方向滑动。

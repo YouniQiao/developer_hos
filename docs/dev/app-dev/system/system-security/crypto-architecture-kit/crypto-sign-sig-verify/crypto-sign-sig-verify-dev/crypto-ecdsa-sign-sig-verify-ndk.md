@@ -2,9 +2,10 @@
 title: "使用ECDSA密钥对签名验签 (C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-ecdsa-sign-sig-verify-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-ecdsa-sign-sig-verify-ndk
+last_sync: 2026-06-07
+sync_hash: 6422e3c0
 ---
-
-
 对应的算法规格请查看[签名验签算法规格：ECDSA](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-overview#ecdsa)。
 
 ## 在CMake脚本中链接相关动态库

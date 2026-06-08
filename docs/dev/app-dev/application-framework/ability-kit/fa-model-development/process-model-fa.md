@@ -2,9 +2,10 @@
 title: "进程模型概述"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/process-model-fa
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/process-model-fa
+last_sync: 2026-06-07
+sync_hash: f4fb2d08
 ---
-
-
 系统的进程模型如下图所示：
 
 * 应用中（同一包名）的所有PageAbility、ServiceAbility、DataAbility、FormAbility运行在同一个独立进程中，即图中绿色部分的“Main Process”。

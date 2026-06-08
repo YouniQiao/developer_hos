@@ -2,9 +2,10 @@
 title: "消息通信"
 original_url: /docs/dev/game-dev/gameobe-gamedata-real-time-server-0000002361510720
 format: md
+upstream_id: dev/game-dev/gameobe-gamedata-real-time-server-0000002361510720
+last_sync: 2026-06-07
+sync_hash: 06c523c1
 ---
-
-
 您可以使用ActionArgs.SDK相关方法实现一些消息管理的业务逻辑，包括发送消息给客户端、请求补帧等使用场景。
 
 ## 发送消息给客户端

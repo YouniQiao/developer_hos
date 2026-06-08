@@ -3,8 +3,10 @@ title: "调测流程"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-commondeeplink-test-0000002039774721
 format: md
+upstream_id: monetize/promotion/bp-functions-commondeeplink-test-0000002039774721
+last_sync: 2026-06-07
+sync_hash: 1f1fe467
 ---
-
 # 调测流程
 
 1. 通过创建搜索投放任务进行调测，创建任务时需注意以下几点：

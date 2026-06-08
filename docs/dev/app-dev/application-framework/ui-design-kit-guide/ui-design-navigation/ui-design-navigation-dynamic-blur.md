@@ -2,9 +2,10 @@
 title: "设置动态模糊样式"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation/ui-design-navigation-dynamic-blur
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation/ui-design-navigation-dynamic-blur
+last_sync: 2026-06-07
+sync_hash: 48dd1551
 ---
-
-
 ## 场景介绍
 
 从5.1.0(18)版本开始， 导航组件新增支持标题栏[通用模糊](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdsnavigation#scrolleffecttype)（适用于列表型非沉浸式场景）样式。

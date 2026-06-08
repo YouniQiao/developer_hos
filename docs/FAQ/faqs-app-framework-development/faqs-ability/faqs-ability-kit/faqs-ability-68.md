@@ -2,8 +2,11 @@
 format: md
 title: "关于emitter、eventHub的使用场景"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-68
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-68
+last_sync: 2026-06-07
+sync_hash: e9030b7f
+upstream_hash: f94fba2ceb1c
 ---
-
 
 Emitter提供跨线程事件的发送和处理功能，包括事件的持续订阅、单次订阅、取消订阅及事件队列的发送。
 

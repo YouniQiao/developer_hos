@@ -2,9 +2,10 @@
 title: "ArkTS是否支持调用js文件中的方法"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-146
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-146
+last_sync: 2026-06-07
+sync_hash: d19db59a
 ---
-
-
 **问题描述**
 
 ArkTS是否支持调用js文件中的方法，如果支持，能否提供一下ArkTS与js交互的代码样例?

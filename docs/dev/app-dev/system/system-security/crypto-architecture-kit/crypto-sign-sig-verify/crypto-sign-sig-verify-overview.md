@@ -2,9 +2,10 @@
 title: "签名验签介绍及算法规格"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-overview
+last_sync: 2026-06-07
+sync_hash: 119b1dd8
 ---
-
-
 当需要判断接收的数据是否被篡改、数据是否为指定对象发送的数据时，可以使用签名验签操作。
 
 接下来将说明系统目前支持的算法及其对应的规格。

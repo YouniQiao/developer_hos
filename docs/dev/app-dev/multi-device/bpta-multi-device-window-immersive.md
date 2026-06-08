@@ -3,8 +3,10 @@ title: "窗口沉浸式"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-window-immersive
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi-device-window-immersive
+last_sync: 2026-06-07
+sync_hash: f15637d2
 ---
-
 # 窗口沉浸式
 
 ## 概述

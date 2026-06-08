@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "热力图"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-heat
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-drawing/map-heat
+last_sync: 2026-06-07
+sync_hash: 9bfb87a9
+upstream_hash: 98d71fe078a2
 ---
-
 
 ## 场景介绍
 

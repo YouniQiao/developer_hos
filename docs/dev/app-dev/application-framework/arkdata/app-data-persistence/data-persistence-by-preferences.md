@@ -2,9 +2,10 @@
 title: "通过用户首选项实现数据持久化 (ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/app-data-persistence/data-persistence-by-preferences
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/app-data-persistence/data-persistence-by-preferences
+last_sync: 2026-06-07
+sync_hash: 6c18bb6c
 ---
-
-
 ## 场景介绍
 
 用户首选项(Preferences)为应用提供Key-Value键值型的数据处理能力，支持应用持久化轻量级数据，并对其修改和查询。当用户有轻量级的键值型数据需要存储时，可以采用Preferences来进行存储。一般适用于保存用户的个性化设置，例如字体大小、是否开启夜间模式等。

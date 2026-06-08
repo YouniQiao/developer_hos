@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "文件打开加速状态感知"
 original_url: /docs/dev/app-dev/application-services/preview-kit-guide/preview-openfileboost-stateawareness
 format: md
+upstream_id: dev/app-dev/application-services/preview-kit-guide/preview-openfileboost-stateawareness
+last_sync: 2026-06-07
+sync_hash: 1d579d6d
 ---
-
-
 从5.0.5(17)版本开始，如浏览器等支持下载文件的应用，可以接入文件预加载状态感知接口，动态感知文件预加载状态，通过UI（user interface）标识对加速文件进行显性化提示，进一步提升用户体验。
 
 ## 接口说明

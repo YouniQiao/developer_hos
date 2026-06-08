@@ -2,9 +2,10 @@
 title: "Web组件焦点管理"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-focus
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-focus
+last_sync: 2026-06-07
+sync_hash: 32b2968e
 ---
-
-
 开发者可利用Web组件的焦点管理功能，有效管理Web组件的获焦与失焦，同时利用H5端的W3C标准接口，管理网页界面上唯一可交互的元素获焦与失焦。
 
 * Web组件与ArkUI组件焦点控制的常用接口及其使用场景：

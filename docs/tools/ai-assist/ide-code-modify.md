@@ -3,9 +3,10 @@ title: "代码修改"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-code-modify
 format: md
+upstream_id: tools/ai-assist/ide-code-modify
+last_sync: 2026-06-07
+sync_hash: 3f6f8713
 ---
-
-
 # 代码修改
 
 CodeGenie提供代码修改能力，在<strong>对话框内</strong>输入需求描述，生成符合要求的代码，提升代码质量与开发效率。

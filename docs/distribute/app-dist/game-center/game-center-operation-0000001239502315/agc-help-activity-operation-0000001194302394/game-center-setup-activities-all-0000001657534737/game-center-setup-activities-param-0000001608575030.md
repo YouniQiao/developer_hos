@@ -2,6 +2,9 @@
 title: "参数说明"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-param-0000001608575030
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-param-0000001608575030
+last_sync: 2026-06-07
+sync_hash: ed710635
 ---
 import MergeTable from "@site/src/components/MergeTable";
 

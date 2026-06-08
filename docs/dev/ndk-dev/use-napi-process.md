@@ -2,9 +2,10 @@
 title: "使用Node-API实现跨语言交互开发流程"
 original_url: /docs/dev/ndk-dev/use-napi-process
 format: md
+upstream_id: dev/ndk-dev/use-napi-process
+last_sync: 2026-06-07
+sync_hash: 4d121ae1
 ---
-
-
 使用Node-API实现跨语言交互，首先需要按照Node-API的机制实现模块的注册和加载等相关动作。
 
 * **ArkTS/JS侧**：实现C++方法的调用，通过import所需的so库后，可以调用C++方法。
@@ -15,7 +16,7 @@ format: md
 ## 创建Native C++工程
 
 * 在DevEco Studio中**New &gt; Create Project**，选择**Native C++**模板，点击**Next**，选择API版本，设置好工程名称，点击**Finish**，创建得到新工程。
-* 创建工程后工程结构可以分两部分，cpp部分和ets部分，工程结构具体介绍可见[C++工程目录结构](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-project-structure)。
+* 创建工程后工程结构可以分两部分，cpp部分和ets部分，工程结构具体介绍可见[C++工程目录结构](/docs/tools/coding-debug/ide-project-structure)。
 
 ## Native侧方法的实现
 

@@ -2,9 +2,10 @@
 title: "C#（小游戏）"
 original_url: /docs/dev/game-dev/games-export-csharp-minigame-0000002393227221
 format: md
+upstream_id: dev/game-dev/games-export-csharp-minigame-0000002393227221
+last_sync: 2026-06-07
+sync_hash: 3c6b2718
 ---
-
-
 ## 前提条件
 
 * 您已[下载游戏多媒体SDK](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Library/gamemme-sdkdownload-csharp-minigame-0000001825274857)。

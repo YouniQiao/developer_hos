@@ -3,8 +3,10 @@ title: "查询直客和子客广告主财务消耗"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-chaxunzhikehezikeguangaozhu-0000001832382165
 format: md
+upstream_id: monetize/promotion/ads-chaxunzhikehezikeguangaozhu-0000001832382165
+last_sync: 2026-06-07
+sync_hash: 3374cb94
 ---
-
 # 查询直客和子客广告主财务消耗
 
 【简介】通过此接口可以查询直客和子客的现金消耗和返利金消耗数据。

@@ -3,8 +3,10 @@ title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-link-faq-0000001299338236
 format: md
+upstream_id: monetize/promotion/bp-functions-link-faq-0000001299338236
+last_sync: 2026-06-07
+sync_hash: 2d138e40
 ---
-
 # FAQ
 
 ## 华为监测链接发送服务提供哪些用户行为数据？

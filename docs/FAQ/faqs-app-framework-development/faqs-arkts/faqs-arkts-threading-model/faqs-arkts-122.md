@@ -2,9 +2,10 @@
 title: "如何在TaskPool和Worker获取上下文Context"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-122
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-122
+last_sync: 2026-06-07
+sync_hash: 2100b6fb
 ---
-
-
 Worker线程和TaskPool线程中无法直接获取到组件级的Context 。可以通过主线程参数传递应用级Context，通过[getHostContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#gethostcontext12)接口获取Context上下文。
 
 ```

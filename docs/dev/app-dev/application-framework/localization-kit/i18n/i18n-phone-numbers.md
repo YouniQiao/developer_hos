@@ -2,9 +2,10 @@
 title: "电话号码格式化"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-phone-numbers
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/i18n/i18n-phone-numbers
+last_sync: 2026-06-07
+sync_hash: 241d114d
 ---
-
-
 ## 功能介绍
 
 不同国家和地区的电话号码在号码位数、组合方式、呈现方式等都存在差异。同时，在不同环境和条件下，电话号码可能存在不同的拨打方式和号码格式。例如，在中国境内跨地区打电话，通常需要先输入“0”，再拨打区号和八位电话号码，而在香港或澳门拨打电话时，需要不同的拨号方式。

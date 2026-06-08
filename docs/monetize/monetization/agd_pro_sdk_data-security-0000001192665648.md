@@ -3,10 +3,10 @@ title: "SDK隐私声明"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_data-security-0000001192665648
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_data-security-0000001192665648
+last_sync: 2026-06-07
+sync_hash: 9a10157d
 ---
-
-
-
 AGD Pro服务是由华为软件技术有限公司（以下简称“我们”或“华为”）面向应用开发者（以下简称“开发者”）提供安全可靠的用户认证系统开放能力及服务。
 
 开发者根据AGD Pro服务的开发文档和指南在其应用中集成了AGD Pro SDK后，我们将通过被集成的AGD Pro SDK向开发者的最终用户（以下简称“您”或“用户”）提供相关服务，处理开发者应用相关的数据，相关数据中可能包含您的个人信息。华为非常重视您的个人信息和隐私保护，我们将会按照法律要求和业界成熟的安全标准，为您的个人信息提供相应的安全保护措施。我们将通过本声明向您说明我们如何收集、使用、披露、保护、存储及传输您的个人信息。

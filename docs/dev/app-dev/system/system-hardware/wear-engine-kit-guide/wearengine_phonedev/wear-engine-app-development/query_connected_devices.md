@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "已连接穿戴设备查询"
 original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_connected_devices
 format: md
+upstream_id: dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_connected_devices
+last_sync: 2026-06-07
+sync_hash: 77617e46
 ---
-
-
 ![](./img/d4292fa7.png)
 
 该接口的调用前，需要在开发者联盟申请设备基础信息权限（具体请参考[申请接入Wear Engine服务](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/wearengine_apply)）。

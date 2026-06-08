@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "宿主应用接入模式"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-access-mode
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-access-mode
+last_sync: 2026-06-07
+sync_hash: 1d110a13
 ---
-
-
 为应对开发者接入系统分享能力时的不同诉求，Share Kit支持两种宿主应用接入模式。
 
 | 接入模式 | 接入方式&适用应用类型 | 效果图 |

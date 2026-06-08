@@ -2,9 +2,10 @@
 title: "如何生成带logo的二维码"
 original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-23
 format: md
+upstream_id: FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-23
+last_sync: 2026-06-07
+sync_hash: 8ee5f764
 ---
-
-
 1. 使用Canvas组件绘制二维码图片和logo图片。
 
    ```

@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口进行虚拟机快照相关开发"
 original_url: /docs/dev/ndk-dev/use-jsvm-create-snapshot
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-create-snapshot
+last_sync: 2026-06-07
+sync_hash: ef260243
 ---
-
-
 ## 简介
 
 JavaScript虚拟机（JSVM）的快照创建功能，将当前运行时的JavaScript程序状态保存为一个快照文件，这个快照文件包含了当前的堆内存、执行上下文、函数闭包等信息。

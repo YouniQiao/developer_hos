@@ -2,9 +2,10 @@
 title: "密码自动填充服务概述"
 original_url: /docs/dev/app-dev/system/system-security/passwordvault/passwordvault-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/passwordvault/passwordvault-overview
+last_sync: 2026-06-07
+sync_hash: ab57e84d
 ---
-
-
 ## 功能简介
 
 密码保险箱作为HarmonyOS系统安全功能，为用户提供了便捷的免密登录体验。

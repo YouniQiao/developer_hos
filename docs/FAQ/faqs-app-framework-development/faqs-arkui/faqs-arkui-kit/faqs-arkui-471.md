@@ -2,9 +2,10 @@
 format: md
 title: "在子容器的onTouch中调用stopPropagation，为什么无法阻止外层容器的onClick事件"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-471
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-471
+last_sync: 2026-06-07
+sync_hash: 4d1769a3
 ---
-
-
 在onTouch事件回调中调用stopPropagation只会影响触摸事件的冒泡传递，无法阻止点击事件的触发。在下面Demo中，子组件调用stopPropagation只会阻止父组件响应onTouch事件，无法阻止onClick事件的触发。
 
 ```

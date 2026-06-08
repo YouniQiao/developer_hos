@@ -2,9 +2,10 @@
 format: md
 title: "如何实现多行输入"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-116
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-116
+last_sync: 2026-06-07
+sync_hash: 9848eee3
 ---
-
-
 可使用TextArea实现多行输入。
 
 **参考链接**

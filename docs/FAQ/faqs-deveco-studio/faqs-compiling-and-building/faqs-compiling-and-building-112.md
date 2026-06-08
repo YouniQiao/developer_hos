@@ -2,9 +2,10 @@
 format: md
 title: "构建报错“proxy data is duplicated”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-112
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-112
+last_sync: 2026-06-07
+sync_hash: 60cc1fe6
 ---
-
-
 **问题现象**
 
 打包APP时，出现“uri datashareproxy://bundleName/\*\* in proxy data is duplicated”的提示。

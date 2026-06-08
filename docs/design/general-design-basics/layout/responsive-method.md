@@ -3,8 +3,10 @@ title: 响应式布局方法
 sidebar_label: 响应式布局方法
 original_url: /docs/design/general-design-basics/layout/responsive-method
 format: md
+upstream_id: design/general-design-basics/layout/responsive-method
+last_sync: 2026-06-07
+sync_hash: b3511075
 ---
-
 # 响应式布局方法
 
 当窗口容器大小发生变化时，界面元素需要自动变化以适应容器大小的变化。

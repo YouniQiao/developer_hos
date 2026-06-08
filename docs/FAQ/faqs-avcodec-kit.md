@@ -2,8 +2,11 @@
 format: md
 title: "音视频编解码（AVCodec）"
 original_url: /docs/FAQ/faqs-avcodec-kit
+upstream_id: FAQ/faqs-avcodec-kit
+last_sync: 2026-06-07
+sync_hash: 6c8c5b0a
+upstream_hash: 022f475e1f7d
 ---
-
 
 * **[VideoDecoder支持的包装方式是AVCC还是AnnexB](/docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avcodec-kit/faqs-avcodec-1)**
 * **[音视频文件的封装协议与编码格式有哪些](/docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avcodec-kit/faqs-avcodec-2)**

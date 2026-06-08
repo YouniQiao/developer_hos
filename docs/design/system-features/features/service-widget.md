@@ -3,8 +3,10 @@ title: 服务卡片
 sidebar_label: 服务卡片
 original_url: /docs/design/system-features/features/service-widget
 format: md
+upstream_id: design/system-features/features/service-widget
+last_sync: 2026-06-07
+sync_hash: b45e7ba5
 ---
-
 # 服务卡片
 
 ### 概述

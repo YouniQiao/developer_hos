@@ -2,9 +2,10 @@
 title: "业务介绍"
 original_url: /docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-introduction-0000002271496181
 format: md
+upstream_id: distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-introduction-0000002271496181
+last_sync: 2026-06-07
+sync_hash: edb3e913
 ---
-
-
 认证服务能为您的应用迅速搭建起安全可靠的用户认证系统，您只需在应用中调用认证服务的相关功能，无需担心云侧的设施和实现细节。认证服务提供了SDK和后端支持，内置多种认证方式，配备强大的管理平台，让您可以轻松完成用户认证的开发与管理工作。
 
 **了解更多信息：**

@@ -2,9 +2,10 @@
 format: md
 title: "如何解决Network单元测试用例crash问题"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-33
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-33
+last_sync: 2026-06-07
+sync_hash: afff5217
 ---
-
-
 **问题描述**
 
 组件依赖已更新到最新。network源码编译时出现如下报错：

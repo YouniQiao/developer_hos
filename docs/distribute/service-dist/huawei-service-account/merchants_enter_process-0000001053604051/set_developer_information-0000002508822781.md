@@ -3,9 +3,10 @@ title: "步骤5 设置开发者信息"
 displayed_sidebar: serviceDistSidebar
 original_url: /docs/distribute/service-dist/huawei-service-account/merchants_enter_process-0000001053604051/set_developer_information-0000002508822781
 format: md
+upstream_id: distribute/service-dist/huawei-service-account/merchants_enter_process-0000001053604051/set_developer_information-0000002508822781
+last_sync: 2026-06-07
+sync_hash: 224747d1
 ---
-
-
 # 步骤5 设置开发者信息
 
 如商家涉及开发接入场景（接收关注关系通知、发送模板消息、查询消息回执等），您需进入管理界面，配置开发者信息。

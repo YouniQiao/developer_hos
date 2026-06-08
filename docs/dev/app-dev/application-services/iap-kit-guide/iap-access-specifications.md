@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "IAP Kit接入规范"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-access-specifications
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-access-specifications
+last_sync: 2026-06-07
+sync_hash: 2cb18565
 ---
-
-
 为了确保用户获得良好的支付体验，IAP Kit制定了应用接入IAP Kit的设计规范，请开发者遵照执行，否则可能影响应用上架。具体要求如下：
 
 ## 界面设计规范

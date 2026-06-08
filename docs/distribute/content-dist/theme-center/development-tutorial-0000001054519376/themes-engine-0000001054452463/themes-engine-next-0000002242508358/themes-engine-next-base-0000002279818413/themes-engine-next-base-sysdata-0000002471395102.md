@@ -3,8 +3,11 @@ title: "数据开放：系统数据开放"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-sysdata-0000002471395102
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-sysdata-0000002471395102
+last_sync: 2026-06-07
+sync_hash: 0b9f0779
+upstream_hash: 3c95b66cdbce
 ---
-
 
 # 数据开放：系统数据开放
 

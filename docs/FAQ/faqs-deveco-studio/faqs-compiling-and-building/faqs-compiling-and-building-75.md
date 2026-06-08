@@ -2,9 +2,10 @@
 format: md
 title: "如何解决构建流水线提示Couldn't find hvigor/hvigor-wrapper.js的问题"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-75
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-75
+last_sync: 2026-06-07
+sync_hash: 3e659009
 ---
-
-
 1. hvigorw脚本依赖于hvigor-wrapper.js。
 2. 在工程外部使用脚本进行编译时：
    1. 确认hvigor-wrapper.js文件是否位于工程的hvigor文件夹中。

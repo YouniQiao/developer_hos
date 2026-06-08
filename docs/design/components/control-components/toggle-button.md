@@ -3,8 +3,10 @@ title: 状态按钮
 sidebar_label: 状态按钮
 original_url: /docs/design/components/control-components/toggle-button
 format: md
+upstream_id: design/components/control-components/toggle-button
+last_sync: 2026-06-07
+sync_hash: 2a9eace5
 ---
-
 # 状态按钮
 
 状态按钮用于从一组选项中进行选择，并可能在界面上实时显示选择后的结果。通常这一组选项都是由状态按钮构成。开发相关描述请参考 [Toggle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toggle)文档。

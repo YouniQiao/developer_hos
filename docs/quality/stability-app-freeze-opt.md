@@ -1,8 +1,10 @@
 ---
 title: "应用冻屏类问题优化建议"
 original_url: /docs/quality/stability-app-freeze-opt
+upstream_id: /docs/quality/stability-app-freeze-opt
+last_sync: 2026-06-07
+sync_hash: 795c66bf
 ---
-
 # 应用冻屏类问题优化建议
 
 ## 优化建议1：多线程操作锁时，需要合理使用lock\_guard这类自动控制持锁和释放锁的管理方式

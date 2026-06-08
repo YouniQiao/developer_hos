@@ -3,8 +3,10 @@ title: "屏幕类型布局场景"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-screen-layout
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi-device-screen-layout
+last_sync: 2026-06-07
+sync_hash: 7cc1f862
 ---
-
 # 屏幕类型布局场景
 
 ## 概述

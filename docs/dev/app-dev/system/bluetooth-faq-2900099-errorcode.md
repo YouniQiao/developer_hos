@@ -2,9 +2,10 @@
 title: "蓝牙接口调用报错2900099"
 original_url: /docs/dev/app-dev/system/bluetooth-faq-2900099-errorcode
 format: md
+upstream_id: dev/app-dev/system/bluetooth-faq-2900099-errorcode
+last_sync: 2026-06-07
+sync_hash: 32d31c22
 ---
-
-
 ## 问题现象
 
 在BLE蓝牙应用开发过程中，调用[setCharacteristicChangeNotification](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bluetooth-ble#setcharacteristicchangenotification)接口时出现2900099报错。

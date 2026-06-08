@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "睡眠"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-healthsequence/health-sleeprecord
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-healthsequence/health-sleeprecord
+last_sync: 2026-06-07
+sync_hash: 5bf4da8a
 ---
-
-
 ## 夜间睡眠
 
 从入睡到醒来的一段完整睡眠记录（睡眠时长超过3小时），包括夜间睡眠数据以及每个时刻的睡眠状态采样数据。

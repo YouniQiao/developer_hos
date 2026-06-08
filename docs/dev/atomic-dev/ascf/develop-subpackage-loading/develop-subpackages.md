@@ -2,9 +2,10 @@
 title: "分包"
 original_url: /docs/dev/atomic-dev/ascf/develop-subpackage-loading/develop-subpackages
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-subpackage-loading/develop-subpackages
+last_sync: 2026-06-07
+sync_hash: bc200bc3
 ---
-
-
 假设应用根目录文件组织如下：
 
 ```

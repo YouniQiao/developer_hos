@@ -2,9 +2,10 @@
 format: md
 title: "如何通过离线方式安装npm包"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-20
+upstream_id: FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-20
+last_sync: 2026-06-07
+sync_hash: bb316d75
 ---
-
-
 前置条件
 
 * 有网环境的PC

@@ -3,10 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "使用X25519进行密钥协商(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-agreement/crypto-key-agreement-dev/crypto-key-agreement-using-x25519
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-agreement/crypto-key-agreement-dev/crypto-key-agreement-using-x25519
+last_sync: 2026-06-07
+sync_hash: 5e05c09f
 ---
-
-
-对应的算法规格请查看[密钥协商算法规格：X25519](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-overview#x25519)。
+对应的算法规格请查看[密钥协商算法规格：X25519](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-agreement/crypto-key-agreement-overview#x25519)。
 
 ## 开发步骤
 

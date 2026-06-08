@@ -3,9 +3,10 @@ title: "业务简介"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/huawei-video-baihua/service-introduction-0000001270924713
 format: md
+upstream_id: distribute/content-dist/huawei-video-baihua/service-introduction-0000001270924713
+last_sync: 2026-06-07
+sync_hash: ff30cdcc
 ---
-
-
 # 业务简介
 
 华为视频百花号开放服务依托于华为视频百花号，向在开发者联盟中注册的的广大开发者提供视频管理、评论管理、数据统计等视频服务。和华为视频百花号建立合作关系的内容供给合作伙伴，可以通过华为视频百花号开放服务授权的三方应用，上传视频到华为视频百花号，并享受自助运营内容、发表和回复评论以及获取视频统计数据等配套服务，通过华为视频百花号多渠道分发和闭环商业。内容供给合作伙伴、开发者可以通过华为视频百花号开放服务与华为视频百花号共建健康的、可信的和可持续发展的华为视频内容生态。

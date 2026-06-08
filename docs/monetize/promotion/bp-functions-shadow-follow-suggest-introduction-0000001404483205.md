@@ -3,8 +3,10 @@ title: "功能介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-shadow-follow-suggest-introduction-0000001404483205
 format: md
+upstream_id: monetize/promotion/bp-functions-shadow-follow-suggest-introduction-0000001404483205
+last_sync: 2026-06-07
+sync_hash: b4e7efe1
 ---
-
 # 功能介绍
 
 在影子投放推广任务过程中创建子任务时，您需要选择定向跟随的目标应用。往往因为缺少充足认知或不熟悉追随条件，导致无法快速找到符合条件的追随应用。

@@ -2,9 +2,10 @@
 title: "标题栏动态显隐"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation/ui-design-navigation-dynamic-display-and-hiding
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation/ui-design-navigation-dynamic-display-and-hiding
+last_sync: 2026-06-07
+sync_hash: 8a4dce56
 ---
-
-
 ## 场景介绍
 
 从6.0.0(20)版本开始，导航组件新增支持设置标题栏动态显隐功能。

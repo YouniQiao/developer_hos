@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Graphics Accelerate Kit简介"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-introduction
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-introduction
+last_sync: 2026-06-07
+sync_hash: 07c99b11
 ---
-
-
 Graphics Accelerate Kit（图形加速服务）是集成了先进的图形渲染加速和资源管理优化的综合解决方案，旨在通过软硬件协同优化，全面提升图形处理相关应用的性能和用户体验。该服务的应用场景包括游戏、AR、VR、UI交互渲染、3D动效等。其中，游戏作为端侧典型的重负载GPU渲染场景。本Kit已构建三大核心服务：游戏渲染加速服务、游戏资源加速服务、游戏启动加速服务。
 
 ## 业务介绍

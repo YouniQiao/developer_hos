@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "使用AVRecorder录制音频(ArkTS)"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-recording-arkts/using-avrecorder-for-recording
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-arkts/media-recording-arkts/using-avrecorder-for-recording
+last_sync: 2026-06-07
+sync_hash: 5eb605f8
+upstream_hash: bb335a9d8c69
 ---
-
 
 使用[AVRecorder](/docs/dev/app-dev/media/media-kit/media-kit-intro#avrecorder)可以实现音频录制功能，本开发指导将以“开始录制-暂停录制-恢复录制-停止录制”的一次流程为例，向开发者讲解AVRecorder音频录制相关功能。
 

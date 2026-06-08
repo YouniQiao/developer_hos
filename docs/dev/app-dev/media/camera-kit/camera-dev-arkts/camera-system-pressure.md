@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "压力管控(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-system-pressure
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-system-pressure
+last_sync: 2026-06-07
+sync_hash: ec68aec6
+upstream_hash: bb96e7cf9867
 ---
-
 
 从API version 20开始，相机框架提供对系统压力等级的监听。
 

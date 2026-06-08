@@ -2,8 +2,11 @@
 title: "ECS Converter概述"
 original_url: /docs/dev/game-dev/pgd-tool-converter-overview-0000002494439226
 format: md
+upstream_id: dev/game-dev/pgd-tool-converter-overview-0000002494439226
+last_sync: 2026-06-07
+sync_hash: 081834d4
+upstream_hash: 3bb5a2d69026
 ---
-
 
 ## 功能介绍
 

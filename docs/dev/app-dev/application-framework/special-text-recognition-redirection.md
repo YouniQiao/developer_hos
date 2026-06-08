@@ -2,9 +2,10 @@
 title: "特殊文本识别跳转"
 original_url: /docs/dev/app-dev/application-framework/special-text-recognition-redirection
 format: md
+upstream_id: dev/app-dev/application-framework/special-text-recognition-redirection
+last_sync: 2026-06-07
+sync_hash: 303c0e38
 ---
-
-
 ## 概述
 
 特殊文本识别，是指自动检测文本内容中具备特定格式或语义的信息（如链接、日期、电话号码等），并将其赋予交互功能，实现一键跳转或快捷操作。这一能力让用户在阅读、聊天、办公等场景下，无需复制粘贴即可高效完成访问网页、添加日程、拨打电话等任务。

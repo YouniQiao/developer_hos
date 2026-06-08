@@ -2,9 +2,10 @@
 title: "调试意图"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-debug
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-debug
+last_sync: 2026-06-07
+sync_hash: d3319f0d
 ---
-
-
 ## 概述
 
 意图框架提供了一个意图调试工具，便于接入意图框架后进行意图调试。该工具支持查询意图、执行意图。

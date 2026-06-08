@@ -2,9 +2,10 @@
 format: md
 title: "应用能否指定使用某一网络来发请求"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-32
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-32
+last_sync: 2026-06-07
+sync_hash: cdbfbbed
 ---
-
-
 **问题现象**
 
 发网络请求时，指定使用Wi-Fi或蜂窝数据。

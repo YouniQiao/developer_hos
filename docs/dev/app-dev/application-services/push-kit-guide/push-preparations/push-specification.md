@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "学习Push Kit接入规范"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-specification
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-preparations/push-specification
+last_sync: 2026-06-07
+sync_hash: 9922d2ec
 ---
-
-
 为维护华为通知生态秩序，保障用户合法权益和良好的使用体验，根据现行法律法规及[《华为开发者服务协议》](https://developer.huawei.com/consumer/cn/doc/start/agreement-0000001052728169)、[《华为APIs使用协议》](https://developer.huawei.com/consumer/cn/doc/20209)、[《华为推送服务使用协议》](/docs/distribute/app-dist/app-market/x20240513/x20213)、[《应用审核指南》](/docs/distribute/app-dist/app-market/x50000/x50104/x50104-overview)、[《元服务审核指南》](/docs/distribute/app-dist/app-market/x50000/x50129/x50129-overview)，特制定本规范。
 
 所有发布上架到华为应用市场且使用推送通知行为的HarmonyOS应用、联运应用及元服务（以下简称应用）应当遵守本规范，若开发者的行为违反本规范或[《华为应用市场联运服务协议》](/docs/distribute/app-dist/app-market/x20240513/x20204)，华为有权根据本规范和[《华为应用市场联运违规处罚规定》](/docs/distribute/app-dist/app-market/x20240513/x20204)对开发者进行处罚。

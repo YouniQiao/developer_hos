@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "密钥证明介绍及算法规格"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-attestation/huks-key-attestation-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-attestation/huks-key-attestation-overview
+last_sync: 2026-06-07
+sync_hash: 6e9a2431
 ---
-
-
 HUKS为密钥提供合法性证明能力，主要应用于非对称密钥的公钥的证明。
 
 基于PKI证书链技术，HUKS可以为存储在HUKS中的非对称密钥对的公钥签发证书，证明其公钥的合法性。业务可以通过系统提供的根CA证书，逐级验证HUKS签发的密钥证明证书，来确保证书中的公钥以及对应的私钥，确实来自合法的硬件设备，且存储管理在HUKS中。

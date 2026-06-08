@@ -3,9 +3,10 @@ title: "ohpm cache clean错误码"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/errorcode/ide-ohpm-cache-errorcode
 format: md
+upstream_id: tools/ohpm/errorcode/ide-ohpm-cache-errorcode
+last_sync: 2026-06-07
+sync_hash: 3214b394
 ---
-
-
 # ohpm cache clean错误码
 
 ## 00601001 缓存子命令为空

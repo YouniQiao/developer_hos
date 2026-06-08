@@ -2,9 +2,10 @@
 format: md
 title: "使用Router跳转导致闪退，可能是什么原因，如何排查"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-388
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-388
+last_sync: 2026-06-07
+sync_hash: 6b2747dd
 ---
-
-
 **场景一**: 循环依赖导致闪退
 
 **问题现象**

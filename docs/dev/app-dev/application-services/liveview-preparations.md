@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: /docs/dev/app-dev/application-services/live-view-kit-guide/liveview-preparations
 format: md
+upstream_id: dev/app-dev/application-services/live-view-kit-guide/liveview-preparations
+last_sync: 2026-06-07
+sync_hash: 806fe8bb
 ---
-
-
 * **[基本准备工作](/docs/dev/app-dev/application-services/live-view-kit-guide/liveview-preparations/liveview-base)**
 * **[开通推送服务权益](/docs/dev/app-dev/application-services/live-view-kit-guide/liveview-preparations/liveview-push-service)**
 * **[设置数据处理位置](/docs/dev/app-dev/application-services/live-view-kit-guide/liveview-preparations/liveview-data-process)**

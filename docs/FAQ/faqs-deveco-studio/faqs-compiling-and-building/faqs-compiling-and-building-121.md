@@ -2,8 +2,11 @@
 format: md
 title: "用户目录下没有.npmrc文件"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-121
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-121
+last_sync: 2026-06-07
+sync_hash: 45c34666
+upstream_hash: ac2e7605e705
 ---
-
 
 **问题现象**
 

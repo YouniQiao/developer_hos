@@ -2,9 +2,10 @@
 title: "C#（Native）"
 original_url: /docs/dev/game-dev/games-gamemme-integratingsdk-csharp-native-0000002393227057
 format: md
+upstream_id: dev/game-dev/games-gamemme-integratingsdk-csharp-native-0000002393227057
+last_sync: 2026-06-07
+sync_hash: 95d16ce6
 ---
-
-
 游戏多媒体C# SDK提供了实时语音、实时信令、语音消息、效果音播放和语音转文本功能，支持团结游戏引擎。
 
 ## 开发准备

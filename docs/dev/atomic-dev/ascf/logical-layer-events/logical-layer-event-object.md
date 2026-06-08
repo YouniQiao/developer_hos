@@ -2,9 +2,10 @@
 title: "事件对象"
 original_url: /docs/dev/atomic-dev/ascf/logical-layer-events/logical-layer-event-object
 format: md
+upstream_id: dev/atomic-dev/ascf/logical-layer-events/logical-layer-event-object
+last_sync: 2026-06-07
+sync_hash: ee662152
 ---
-
-
 当组件触发事件时，逻辑层绑定的处理函数会收到一个事件对象。对象中包含以下字段：
 
 | 属性 | 类型 | 描述 |

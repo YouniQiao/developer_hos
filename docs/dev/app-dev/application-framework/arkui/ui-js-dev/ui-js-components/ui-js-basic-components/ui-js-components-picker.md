@@ -2,9 +2,10 @@
 title: "picker开发指导"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-basic-components/ui-js-components-picker
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-basic-components/ui-js-components-picker
+last_sync: 2026-06-07
+sync_hash: 10e40754
 ---
-
-
 picker是滑动选择器组件，类型支持普通选择器、日期选择器、时间选择器、时间日期选择器和多列文本选择器。具体用法请参考[picker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-basic-picker)。
 
 ## 创建picker组件

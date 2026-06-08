@@ -2,9 +2,10 @@
 title: "消耗型商品补单流程"
 original_url: /docs/dev/game-dev/games-quickgame-runtime-redelivering-consumables-0000002351893465
 format: md
+upstream_id: dev/game-dev/games-quickgame-runtime-redelivering-consumables-0000002351893465
+last_sync: 2026-06-07
+sync_hash: 819e03eb
 ---
-
-
 玩家完成消耗型商品的支付后，若出现网络错误、进程被中止等异常情况，导致快游戏无法知道玩家实际是否支付成功，即出现掉单情况。华为应用内支付针对此场景提供了消耗型商品的补单机制，您需要在以下场景触发补单机制：
 
 * 快游戏**启动**时。

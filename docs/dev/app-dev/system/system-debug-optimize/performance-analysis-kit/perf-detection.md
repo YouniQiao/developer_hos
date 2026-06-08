@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "性能检测"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/perf-detection
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/perf-detection
+last_sync: 2026-06-07
+sync_hash: a4a2d446
 ---
-
-
 ## 启动耗时事件检测
 
 ## 简介

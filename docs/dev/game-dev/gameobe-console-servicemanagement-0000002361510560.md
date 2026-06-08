@@ -2,9 +2,10 @@
 title: "服务管理"
 original_url: /docs/dev/game-dev/gameobe-console-servicemanagement-0000002361510560
 format: md
+upstream_id: dev/game-dev/gameobe-console-servicemanagement-0000002361510560
+last_sync: 2026-06-07
+sync_hash: 8865bd50
 ---
-
-
 在服务管理页面，联机对战提供了当前服务状态展示、服务关闭及接入安全加固开启/关闭等功能。
 
 ## 前提条件

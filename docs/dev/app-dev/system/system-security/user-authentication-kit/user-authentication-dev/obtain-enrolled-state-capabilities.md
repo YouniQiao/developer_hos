@@ -2,9 +2,10 @@
 title: "查询用户注册凭据的状态"
 original_url: /docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/obtain-enrolled-state-capabilities
 format: md
+upstream_id: dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/obtain-enrolled-state-capabilities
+last_sync: 2026-06-07
+sync_hash: 4e8f16e6
 ---
-
-
 调用者需感知用户注册凭据（人脸、指纹、口令）的变化，可使用该接口查询当前用户注册凭据的状态。
 
 ## 接口说明

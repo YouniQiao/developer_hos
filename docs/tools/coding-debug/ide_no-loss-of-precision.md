@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-loss-of-precision"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-loss-of-precision
 format: md
+upstream_id: tools/coding-debug/ide_no-loss-of-precision
+last_sync: 2026-06-07
+sync_hash: 64e71944
 ---
-
-
 # @typescript-eslint/no-loss-of-precision
 
 禁止使用失去精度的字面数字。

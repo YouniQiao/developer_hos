@@ -2,9 +2,10 @@
 title: "全新开发"
 original_url: /docs/dev/game-dev/games-quickgame-new-development-0000002351893573
 format: md
+upstream_id: dev/game-dev/games-quickgame-new-development-0000002351893573
+last_sync: 2026-06-07
+sync_hash: 17568695
 ---
-
-
 不基于样例工程，您可以全新开发元服务。
 
 ## 前提条件

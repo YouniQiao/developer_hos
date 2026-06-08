@@ -2,8 +2,11 @@
 title: "错误码"
 original_url: /docs/distribute/agc/agc-help-beacon-regist-by-api-0000002382718889/agc-help-beacon-api-errorcode-0000002382718897
 format: md
+upstream_id: distribute/agc/agc-help-beacon-regist-by-api-0000002382718889/agc-help-beacon-api-errorcode-0000002382718897
+last_sync: 2026-06-07
+sync_hash: 52501c5d
+upstream_hash: 3c26e398a3dd
 ---
-
 
 | 错误码（errorCode） | 错误描述（errorMsg） |
 | --- | --- |

@@ -2,9 +2,10 @@
 title: "选择正式上架的软件包"
 original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-choose-pkg-0000002424923338
 format: md
+upstream_id: distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-choose-pkg-0000002424923338
+last_sync: 2026-06-07
+sync_hash: 85bf6d0a
 ---
-
-
 请选择正式上架的软件包，并设置是否加密小游戏软件包。
 
 #### 前提条件

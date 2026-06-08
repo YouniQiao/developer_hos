@@ -3,9 +3,10 @@ title: "@typescript-eslint/prefer-literal-enum-member"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_prefer-literal-enum-member
 format: md
+upstream_id: tools/coding-debug/ide_prefer-literal-enum-member
+last_sync: 2026-06-07
+sync_hash: 740e5277
 ---
-
-
 # @typescript-eslint/prefer-literal-enum-member
 
 要求所有枚举成员都定义为字面量值。

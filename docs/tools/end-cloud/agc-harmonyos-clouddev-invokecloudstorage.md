@@ -1,12 +1,12 @@
 ---
-
 title: "在端侧调用云存储"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-invokecloudstorage
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-invokecloudstorage
+last_sync: 2026-06-07
+sync_hash: 7911fac1
 ---
-
-
 # 在端侧调用云存储
 
 ## 前提条件

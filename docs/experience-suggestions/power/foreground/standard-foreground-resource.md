@@ -2,9 +2,10 @@
 title: "前台资源使用"
 original_url: /docs/experience-suggestions/power/foreground/standard-foreground-resource
 format: md
+upstream_id: experience-suggestions/power/foreground/standard-foreground-resource
+last_sync: 2026-06-07
+sync_hash: c5b6884f
 ---
-
-
 # 前台资源使用
 
 ### 视频场景强制建议

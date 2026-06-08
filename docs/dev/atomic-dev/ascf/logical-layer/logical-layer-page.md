@@ -2,9 +2,10 @@
 title: "Page"
 original_url: /docs/dev/atomic-dev/ascf/logical-layer/logical-layer-page
 format: md
+upstream_id: dev/atomic-dev/ascf/logical-layer/logical-layer-page
+last_sync: 2026-06-07
+sync_hash: 54dcb52f
 ---
-
-
 ASCF框架中，可以[使用page注册页面](#使用page注册页面)，也可以[使用Component注册页面](#使用component注册页面)。
 
 ## Page

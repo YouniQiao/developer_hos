@@ -2,9 +2,10 @@
 title: "耗时任务并发场景简介"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/time-consuming-task/time-consuming-task-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/time-consuming-task/time-consuming-task-overview
+last_sync: 2026-06-07
+sync_hash: 8706f3d6
 ---
-
-
 耗时任务是指需要较长时间执行的任务，如果在UI主线程执行，可能导致应用卡顿、掉帧或响应延迟。典型的耗时任务包括CPU密集型任务、I/O密集型任务和同步任务。
 
 常见的业务场景分类如下：

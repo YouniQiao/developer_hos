@@ -3,9 +3,10 @@ title: "@performance/tabs-on-change-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-tabs-on-change-check
 format: md
+upstream_id: tools/coding-debug/ide-tabs-on-change-check
+last_sync: 2026-06-07
+sync_hash: bb4d325c
 ---
-
-
 # @performance/tabs-on-change-check
 
 推荐使用onAnimationStart事件设置切换标签动效。避免使用onChange事件会导致页面切换后再触发动效，造成效果延迟。

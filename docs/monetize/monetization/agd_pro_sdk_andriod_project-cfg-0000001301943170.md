@@ -3,9 +3,11 @@ title: "工程配置"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_project-cfg-0000001301943170
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_andriod_project-cfg-0000001301943170
+last_sync: 2026-06-07
+sync_hash: 6308994e
+upstream_hash: 59154cb66fc8
 ---
-
-
 
 #### 集成SDK
 

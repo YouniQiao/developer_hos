@@ -2,8 +2,11 @@
 title: "商家直接接入服务直达"
 original_url: /docs/dev/atomic-dev/instant-service-getting-started/instant-service-merchants
 format: md
+upstream_id: dev/atomic-dev/instant-service-getting-started/instant-service-merchants
+last_sync: 2026-06-07
+sync_hash: 733a39df
+upstream_hash: 3a799b62ba07
 ---
-
 
 如图为商家直接接入服务直达的流程。
 

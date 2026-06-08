@@ -2,9 +2,10 @@
 format: md
 title: "如何解决编译报错“Cannot add xxxx items to index”的问题"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-131
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-131
+last_sync: 2026-06-07
+sync_hash: e7ee62cc
 ---
-
-
 **问题现象**
 
 编译报错“Cannot add xxxx items to index”。

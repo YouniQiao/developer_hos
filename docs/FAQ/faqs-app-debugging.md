@@ -2,9 +2,10 @@
 format: md
 title: "应用调试"
 original_url: /docs/FAQ/faqs-app-debugging
+upstream_id: FAQ/faqs-app-debugging
+last_sync: 2026-06-07
+sync_hash: 1f6e9087
 ---
-
-
 * **[调试过程中无法添加断点](/docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-1)**
 * **[真机设备连接后，在DevEco Studio中无法识别设备](/docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-3)**
 * **[真机设备连接后，执行“hdc list targets”命令结果为“[Empty]”](/docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-performance-analysis-kit-32)**

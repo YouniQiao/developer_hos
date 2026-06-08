@@ -2,9 +2,10 @@
 title: "启动分析"
 original_url: /docs/distribute/agc/agc-help-apms-performance-0000002236333926/agc-help-apms-performance-startup-0000002271413049
 format: md
+upstream_id: distribute/agc/agc-help-apms-performance-0000002236333926/agc-help-apms-performance-startup-0000002271413049
+last_sync: 2026-06-07
+sync_hash: 6635be91
 ---
-
-
 #### 元服务启动分析
 
 “元服务启动分析”页面为开发者提供元服务启动的整体耗时及启动阶段耗时，帮助开发者快速了解元服务启动性能，并发现潜在的启动问题。

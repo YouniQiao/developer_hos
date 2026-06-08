@@ -2,9 +2,10 @@
 format: md
 title: "如何避免使用AppAnalyzer后使用git提示需要版本化"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-11
+upstream_id: FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-11
+last_sync: 2026-06-07
+sync_hash: 79b47111
 ---
-
-
 **问题现象**
 
 1. 使用AppAnalyzer进行应用/元服务体检后，使用git提示需要版本化。

@@ -2,9 +2,10 @@
 title: "Navigation容器中，如何设置子组件的高度为100%，撑满父容器"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-263
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-263
+last_sync: 2026-06-07
+sync_hash: 18b54e39
 ---
-
-
 参考代码如下：
 
 ```

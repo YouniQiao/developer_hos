@@ -2,8 +2,11 @@
 format: md
 title: "如何解决Text组件文本为中文、数字、英文混合时显示省略号截断异常的问题"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-347
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-347
+last_sync: 2026-06-07
+sync_hash: 9c13127c
+upstream_hash: fe2784a2340a
 ---
-
 
 文本截断按语言单位进行：中文按字，英文默认按单词，若需按字母截断，可在字母间添加零宽空格：\u200B。
 

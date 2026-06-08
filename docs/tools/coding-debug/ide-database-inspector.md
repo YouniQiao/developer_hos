@@ -3,9 +3,10 @@ title: "数据库调试"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-database-inspector
 format: md
+upstream_id: tools/coding-debug/ide-database-inspector
+last_sync: 2026-06-07
+sync_hash: 5e3667c3
 ---
-
-
 # 数据库调试
 
 从DevEco Studio 6.0.2 Beta1版本开始，新增Database Inspector，支持在DevEco Studio上执行SQL语句查看、修改应用数据库，无需将应用数据库先导出到本地，提升开发调试效率，当前支持SQLite和向量数据库。

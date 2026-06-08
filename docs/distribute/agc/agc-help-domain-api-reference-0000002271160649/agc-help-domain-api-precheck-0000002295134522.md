@@ -2,9 +2,10 @@
 title: "预检查业务域名配置"
 original_url: /docs/distribute/agc/agc-help-domain-api-reference-0000002271160649/agc-help-domain-api-precheck-0000002295134522
 format: md
+upstream_id: distribute/agc/agc-help-domain-api-reference-0000002271160649/agc-help-domain-api-precheck-0000002295134522
+last_sync: 2026-06-07
+sync_hash: a50dc407
 ---
-
-
 #### 功能介绍
 
 此接口用于对业务域名配置进行预检查。

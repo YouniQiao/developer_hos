@@ -2,9 +2,10 @@
 format: md
 title: "如何使用DevEco Studio中的ArkTS代码模板"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-5
+upstream_id: FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-5
+last_sync: 2026-06-07
+sync_hash: 6820657b
 ---
-
-
 使用代码模板可以提高开发效率。在DevEco Studio中，可以通过“File \> Settings \> Editor \> Live Templates”查看现有模板并新增自定义模板。
 
 ![](./img/d1d96b5b.png "点击放大")

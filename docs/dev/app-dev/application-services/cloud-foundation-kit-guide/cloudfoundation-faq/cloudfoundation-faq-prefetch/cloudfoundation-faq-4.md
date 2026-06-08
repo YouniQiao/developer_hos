@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "运行应用时报“XXX Read timed out”异常"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-faq/cloudfoundation-faq-prefetch/cloudfoundation-faq-4
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-faq/cloudfoundation-faq-prefetch/cloudfoundation-faq-4
+last_sync: 2026-06-07
+sync_hash: 04ff52bb
 ---
-
-
 **问题现象**
 
 运行应用时报“XXX Read timed out”异常。

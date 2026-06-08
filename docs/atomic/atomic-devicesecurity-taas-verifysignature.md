@@ -2,14 +2,15 @@
 title: "验证签名"
 original_url: /docs/dev/atomic-dev/atomic-devicesecurity-taas-verify/atomic-devicesecurity-taas-verifysignature
 format: md
+upstream_id: dev/atomic-dev/atomic-devicesecurity-taas-verify/atomic-devicesecurity-taas-verifysignature
+last_sync: 2026-06-07
+sync_hash: 7270bddc
 ---
-
-
 如果需要在端侧校验安全地理位置数据签名的有效性，可以使用[Crypto Architecture Kit](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-architecture-kit-intro)，使用方法请参考开发指南中“[使用ECDSA密钥对签名验签](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-ecdsa-sign-sig-verify)”章节。
 
 ![](./img/76857a0b.png)
 
-推荐应用开发者在服务器端完成安全地理位置的签名验证，请参考“[Device Ceritificate Kit 设备真实性证明服务器端开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-servers)”。
+推荐应用开发者在服务器端完成安全地理位置的签名验证，请参考“[Device Ceritificate Kit 设备真实性证明服务器端开发](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/attestation-signature-verification/attestation-signature-verification-servers)”。
 
 ## 安全地理位置数据格式
 

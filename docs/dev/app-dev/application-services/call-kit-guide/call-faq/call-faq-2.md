@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "来电横幅通知头像无法显示"
 original_url: /docs/dev/app-dev/application-services/call-kit-guide/call-faq/call-faq-2
 format: md
+upstream_id: dev/app-dev/application-services/call-kit-guide/call-faq/call-faq-2
+last_sync: 2026-06-07
+sync_hash: 0dae2248
 ---
-
-
 **问题现象**
 
 来电过程中，横幅通知展示，但头像无法正常显示。

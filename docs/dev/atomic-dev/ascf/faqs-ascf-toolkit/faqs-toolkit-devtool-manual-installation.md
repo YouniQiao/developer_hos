@@ -2,9 +2,10 @@
 title: "devtool工具手动安装"
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-devtool-manual-installation
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-devtool-manual-installation
+last_sync: 2026-06-07
+sync_hash: b369a4e9
 ---
-
-
 **问题现象**
 
 devtool工具安装失败，例如下图中的错误。

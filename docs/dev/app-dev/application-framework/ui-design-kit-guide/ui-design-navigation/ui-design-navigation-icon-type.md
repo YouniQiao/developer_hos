@@ -2,9 +2,10 @@
 title: "图标类型设置"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation/ui-design-navigation-icon-type
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation/ui-design-navigation-icon-type
+last_sync: 2026-06-07
+sync_hash: a2730a56
 ---
-
-
 ## 场景介绍
 
 从6.0.0(20)版本开始，导航组件新增了对文本型与图片型图标类型的支持。

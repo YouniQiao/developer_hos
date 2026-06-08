@@ -2,9 +2,10 @@
 title: "开发准备"
 original_url: /docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/prerequisites
 format: md
+upstream_id: dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/prerequisites
+last_sync: 2026-06-07
+sync_hash: 3b632e1b
 ---
-
-
 应用在开发用户身份认证功能时，需要先了解以下流程，并根据实际需求参考对应指导开发。
 
 * [查询设备支持的用户身份认证能力](/docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/obtain-supported-authentication-capabilities)。

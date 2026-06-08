@@ -2,9 +2,10 @@
 title: "Sendable使用场景"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/sendable-guide
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/sendable-guide
+last_sync: 2026-06-07
+sync_hash: 92caee5a
 ---
-
-
 Sendable对象在不同并发实例间默认采用引用传递，这种方式比序列化更高效，且不会丢失类成员方法。因此，Sendable能够解决两个关键场景的问题：
 
 * 跨并发实例传输大数据（例如达到100KB以上的数据）。

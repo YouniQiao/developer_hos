@@ -2,9 +2,10 @@
 title: "单客户端订阅场景"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-audit/devicesecurity-audit-subscribe-arkts-suevent
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-audit/devicesecurity-audit-subscribe-arkts-suevent
+last_sync: 2026-06-07
+sync_hash: 35ee5ad4
 ---
-
-
 ## еңәжҷҜд»Ӣз»Қ
 
 жҸҗдҫӣз»ҹдёҖзҡ„е®үе…Ёе®Ўи®Ўж•°жҚ®еҚ•е®ўжҲ·з«Ҝи®ўйҳ…дёҺеҸ–ж¶Ҳи®ўйҳ…жҺҘеҸЈпјҢеә”з”ЁеҸҜд»ҘиҺ·еҸ–и®ҫеӨҮдёҠзҡ„е®үе…Ёе®Ўи®Ўж•°жҚ®пјҲеҰӮдёӢиЎЁпјүпјҢд»Ҙж”Ҝж’‘е®Ўи®Ўзӣёе…ідёҡеҠЎгҖӮ

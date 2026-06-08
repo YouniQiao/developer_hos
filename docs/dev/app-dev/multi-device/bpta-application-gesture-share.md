@@ -3,8 +3,10 @@ title: "隔空传送快速分享"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-application-gesture-share
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-application-gesture-share
+last_sync: 2026-06-07
+sync_hash: cd8bad85
 ---
-
 # 隔空传送快速分享
 
 ## 概述

@@ -2,9 +2,10 @@
 format: md
 title: "编辑功能失效，提示“ArkTS language service terminated due to memory constraints.”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-12
+upstream_id: FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-12
+last_sync: 2026-06-07
+sync_hash: 31078c44
 ---
-
-
 **问题现象**
 
 场景1：多次执行git pull或切分支等大量修改代码的操作时，编辑器的Node进程内存峰值超过上限（默认为8GB），来不及回收内存导致OOM，编辑功能失效，弹窗提示“ArkTS language service terminated due to memory constraints.”。

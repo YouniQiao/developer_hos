@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "添加图像效果（C/C++）"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/offline-image-processing/effectkit-filter-c
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/offline-image-processing/effectkit-filter-c
+last_sync: 2026-06-07
+sync_hash: 64028fa2
 ---
-
-
 ## 场景介绍
 
 在离线处理图像时，可以进行一些图像效果的设置以获取视觉上的不同呈现，比如设置图像模糊程度、调节图像亮度和灰度、设置图像反色等。

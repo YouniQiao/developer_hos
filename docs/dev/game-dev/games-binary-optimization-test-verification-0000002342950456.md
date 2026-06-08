@@ -3,9 +3,10 @@ title: "测试及验证收益"
 original_url: /docs/dev/game-dev/games-binary-optimization-test-verification-0000002342950456
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-binary-optimization-test-verification-0000002342950456
+last_sync: 2026-06-07
+sync_hash: 48e7151b
 ---
-
-
 二进制优化主要优化SoC系统级芯片、DDR，优化后的效果体现在游戏过程中手机性能、功耗。游戏完成二进制优化后，您可以测试游戏、验证优化收益。
 
 ## 测试游戏

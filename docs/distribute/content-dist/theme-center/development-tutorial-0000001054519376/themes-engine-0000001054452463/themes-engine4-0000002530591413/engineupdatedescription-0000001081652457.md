@@ -3,9 +3,10 @@ title: "版本更新说明"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/engineupdatedescription-0000001081652457
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/engineupdatedescription-0000001081652457
+last_sync: 2026-06-07
+sync_hash: e23d5ec7
 ---
-
-
 # 版本更新说明
 
 ## 【2023/8/29】引擎1.1.15.300版本

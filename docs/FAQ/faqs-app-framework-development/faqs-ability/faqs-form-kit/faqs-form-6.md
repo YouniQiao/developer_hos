@@ -2,8 +2,9 @@
 format: md
 title: "元服务与服务卡片的区别"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-form-kit/faqs-form-6
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-form-kit/faqs-form-6
+last_sync: 2026-06-07
+sync_hash: 2e67856a
 ---
-
-
 * 元服务：元服务是系统提供的一种面向未来的服务方式，具备独立入口，用户可直接点击触发，免安装，系统程序框架后台安装后即可使用，为用户提供一个或多个便捷服务。
 * 服务卡片：服务卡片是一种界面展示形式，用于将应用的重要信息或操作前置，以实现服务直达、缩短交互步骤。卡片通常嵌入到其他系统应用中，如桌面，作为界面显示的一部分，并支持拉起页面、发送消息等基本交互功能。

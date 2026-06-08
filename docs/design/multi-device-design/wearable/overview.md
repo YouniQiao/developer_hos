@@ -3,8 +3,10 @@ title: 概述
 sidebar_label: 概述
 original_url: /docs/design/multi-device-design/wearable/overview
 format: md
+upstream_id: design/multi-device-design/wearable/overview
+last_sync: 2026-06-07
+sync_hash: 9711475d
 ---
-
 # 概述
 
 智能穿戴已经成为继手机之后，用户生活中极为重要的贴身辅助设备，是我们的生活助手，健康管家，亦是运动教练。

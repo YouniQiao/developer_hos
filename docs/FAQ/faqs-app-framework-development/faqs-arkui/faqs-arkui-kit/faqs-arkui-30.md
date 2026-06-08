@@ -2,9 +2,10 @@
 format: md
 title: "如何获取UI组件的显示或隐藏状态"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-30
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-30
+last_sync: 2026-06-07
+sync_hash: 9bc88ac4
 ---
-
-
 * 方法1：使用if条件渲染，通过变量控制组件的显隐。使用@Watch监听变量，可以判断组件的显示状态。
 * 方法2：组件显示或隐藏时，生命周期方法 aboutToAppear() 和 aboutToDisappear() 会触发，可以感知组件的显示状态。
 

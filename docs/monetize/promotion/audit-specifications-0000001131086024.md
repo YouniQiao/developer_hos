@@ -3,8 +3,10 @@ title: "审核规范"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/audit-specifications-0000001131086024
 format: md
+upstream_id: monetize/promotion/audit-specifications-0000001131086024
+last_sync: 2026-06-07
+sync_hash: 93ef8236
 ---
-
 # 审核规范
 
 <strong>【活动应用】：</strong>华为应用市场在架应用。

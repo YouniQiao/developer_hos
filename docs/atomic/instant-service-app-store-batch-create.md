@@ -2,9 +2,10 @@
 title: "批量创建门店"
 original_url: /docs/dev/atomic-dev/instant-service-app-store/instant-service-app-store-batch-create
 format: md
+upstream_id: dev/atomic-dev/instant-service-app-store/instant-service-app-store-batch-create
+last_sync: 2026-06-07
+sync_hash: 83923668
 ---
-
-
 1. 在服务直达主界面，选择“门店管理”页签，点击“批量新建”。
 
    ![](./img/c762edd5.png "点击放大")

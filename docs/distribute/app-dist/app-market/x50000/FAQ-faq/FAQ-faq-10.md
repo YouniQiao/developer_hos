@@ -3,8 +3,10 @@ title: "11.​​​​​​ 个人信息保护合规性检测服务介绍"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-10
 format: md
+upstream_id: distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-10
+last_sync: 2026-06-07
+sync_hash: ce208ec1
 ---
-
 # 11.​​​​​​ 个人信息保护合规性检测服务介绍
 
 ## 11.1 个人信息保护合规性检测介绍

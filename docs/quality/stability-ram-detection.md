@@ -2,9 +2,10 @@
 title: "地址越界类问题检测"
 original_url: /docs/quality/stability-ram-detection
 format: md
+upstream_id: /docs/quality/stability-ram-detection
+last_sync: 2026-06-07
+sync_hash: ea223ab5
 ---
-
-
 # 地址越界类问题检测
 
 * **[地址越界检测能力概述](/docs/quality/stability-address-sanitizer-overview)**

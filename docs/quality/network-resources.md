@@ -1,8 +1,10 @@
 ---
 title: "网络资源低功耗建议"
 original_url: /docs/quality/network-resources
+upstream_id: /docs/quality/network-resources
+last_sync: 2026-06-07
+sync_hash: a786ab9a
 ---
-
 # 网络资源低功耗建议
 
 ## 建议

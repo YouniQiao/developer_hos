@@ -2,9 +2,10 @@
 format: md
 title: "在建立好TCPSocket之后，如何将复合类型结构转换为ArrayBuffer"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-58
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-58
+last_sync: 2026-06-07
+sync_hash: ad7cf26a
 ---
-
-
 可将复合类型结构转换为字符串后使用如下方法转为ArrayBuffer，参考代码如下：
 
 ```

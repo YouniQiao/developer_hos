@@ -3,9 +3,11 @@ title: "场景处理"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_api_scenario-handle-0000001262378977
 format: md
+upstream_id: monetize/monetization/agd_pro_api_scenario-handle-0000001262378977
+last_sync: 2026-06-07
+sync_hash: 49a04d87
+upstream_hash: d34e0b6c6532
 ---
-
-
 
 #### 广告过滤与处理
 

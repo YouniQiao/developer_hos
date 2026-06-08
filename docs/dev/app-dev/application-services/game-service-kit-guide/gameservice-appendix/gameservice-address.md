@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "配置回调地址"
 original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-appendix/gameservice-address
 format: md
+upstream_id: dev/app-dev/application-services/game-service-kit-guide/gameservice-appendix/gameservice-address
+last_sync: 2026-06-07
+sync_hash: 6f634698
+upstream_hash: 8b95949f4e71
 ---
-
 
 若在关键事件发生时，华为游戏服务器向开发者服务器发送事件通知，请前往AppGallery Connect配置开发者服务器的回调地址。发送通知的接口原型等信息请参见[解绑账号通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/gameservice-unbindplayer-notification)接口。涉及的关键事件及对应的处理逻辑如下：
 

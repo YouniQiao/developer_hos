@@ -2,8 +2,11 @@
 title: "view"
 original_url: /docs/dev/atomic-dev/ascf/components-view-container/components-view
 format: md
+upstream_id: dev/atomic-dev/ascf/components-view-container/components-view
+last_sync: 2026-06-07
+sync_hash: a6c6c908
+upstream_hash: fbf1e746f39d
 ---
-
 
 视图容器，相当于 web 的 div 元素。
 

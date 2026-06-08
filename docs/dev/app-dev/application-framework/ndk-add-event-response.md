@@ -2,9 +2,10 @@
 title: "添加事件响应"
 original_url: /docs/dev/app-dev/application-framework/ndk-add-event-response
 format: md
+upstream_id: dev/app-dev/application-framework/ndk-add-event-response
+last_sync: 2026-06-07
+sync_hash: f8d1f32c
 ---
-
-
 使用NDK开发UI界面时，通过为组件添加事件监听和事件处理逻辑，可以让UI界面响应各种交互事件，包括基础输入事件、手势事件以及拖拽事件。
 
 ## 添加事件监听

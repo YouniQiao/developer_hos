@@ -2,9 +2,10 @@
 format: md
 title: "如何实现页面加载的loading效果"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-233
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-233
+last_sync: 2026-06-07
+sync_hash: 75f6a543
 ---
-
-
 使用Stack堆叠组件和LoadingProgress加载组件实现页面首次加载时的等待效果。参考代码如下：
 
 ```

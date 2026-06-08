@@ -3,9 +3,10 @@ title: "智能体数字商品支付服务介绍"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/digital-product-payment-0000002537601305/service-introduction-0000002537853869
 format: md
+upstream_id: distribute/xiaoyi/digital-product-payment-0000002537601305/service-introduction-0000002537853869
+last_sync: 2026-06-07
+sync_hash: 6ff2b1d1
 ---
-
-
 # 智能体数字商品支付服务介绍
 
 ## 1. 概述

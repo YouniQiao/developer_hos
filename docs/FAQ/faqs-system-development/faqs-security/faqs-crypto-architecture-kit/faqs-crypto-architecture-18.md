@@ -2,8 +2,11 @@
 title: "如何将公钥转为十六进制或者base64进制数据"
 original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-18
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-18
+last_sync: 2026-06-07
+sync_hash: ab60e629
+upstream_hash: fd25e96ac9c4
 ---
-
 
 公钥转为十六进制或Base64编码数据，参考代码如下：
 

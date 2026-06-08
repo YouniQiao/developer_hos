@@ -2,9 +2,10 @@
 format: md
 title: "如何更改TextInput密码输入模式下passwordIcon的大小、颜色、位置"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-356
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-356
+last_sync: 2026-06-07
+sync_hash: da3f6dc4
 ---
-
-
 使用Stack容器作为父容器，子组件使用Image组件自定义passwordIcon。通过该方式可调整Image组件的位置、大小和颜色。示例代码如下：
 
 ```

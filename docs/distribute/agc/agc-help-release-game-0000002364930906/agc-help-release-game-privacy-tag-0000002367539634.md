@@ -2,9 +2,10 @@
 title: "配置隐私标签信息"
 original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-privacy-tag-0000002367539634
 format: md
+upstream_id: distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-privacy-tag-0000002367539634
+last_sync: 2026-06-07
+sync_hash: 4430c189
 ---
-
-
 游戏发布设备类型包括手机、平板、PC/2in1、智慧屏时，要求配置隐私标签信息。
 
 隐私标签帮助玩家提前了解游戏使用玩家个人数据的情况。隐私标签展示效果请参见[客户端展示效果](/docs/distribute/app-dist/app-market/privacy-label#h1-1683516845797-0)。

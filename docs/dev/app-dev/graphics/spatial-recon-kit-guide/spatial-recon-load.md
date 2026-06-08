@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "加载3DGS模型"
 original_url: /docs/dev/app-dev/graphics/spatial-recon-kit-guide/spatial-recon-load
 format: md
+upstream_id: dev/app-dev/graphics/spatial-recon-kit-guide/spatial-recon-load
+last_sync: 2026-06-07
+sync_hash: f5e6038b
 ---
-
-
 ## 适用场景
 
 支持的3DGS模块格式包括：MP4、PLY、GLB三种格式。

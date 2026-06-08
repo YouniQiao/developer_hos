@@ -2,9 +2,10 @@
 title: "分析元服务履约情况"
 original_url: /docs/distribute/agc/agc-help-anaiyze-atomic-0000002236332568/agc-help-anaiyze-atomic-performance-0000002271371757
 format: md
+upstream_id: distribute/agc/agc-help-anaiyze-atomic-0000002236332568/agc-help-anaiyze-atomic-performance-0000002271371757
+last_sync: 2026-06-07
+sync_hash: 6e0f3910
 ---
-
-
 您可以在“元服务履约数据分析”页签下查看元服务的使用情况：
 
 “元服务履约数据分析”报表包含“[访问分析](#section7346714124116)”、“[页面分析](#section15514203219411)”、“[华为支付](#section198906590417)”三个页面，便于您查看访问人数、交易金额等数据。

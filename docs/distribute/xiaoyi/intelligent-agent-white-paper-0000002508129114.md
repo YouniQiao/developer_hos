@@ -3,9 +3,10 @@ title: "鸿蒙智能体白皮书"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/intelligent-agent-white-paper-0000002508129114
 format: md
+upstream_id: distribute/xiaoyi/intelligent-agent-white-paper-0000002508129114
+last_sync: 2026-06-07
+sync_hash: 63f06bd0
 ---
-
-
 # 鸿蒙智能体白皮书
 
 [鸿蒙智能体框架白皮书.pdf](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260113184335.59820006582977232008702110298072%3A50001231000000%3A2800%3A3A6879A1B21DE7E758F2B92B76418CD5D7234C088D3A50E0A4D11FC500C2A6AD.pdf?needInitFileName=true)

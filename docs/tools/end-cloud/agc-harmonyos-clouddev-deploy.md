@@ -1,12 +1,12 @@
 ---
-
 title: "部署云侧工程"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-deploy
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-deploy
+last_sync: 2026-06-07
+sync_hash: 9419166c
 ---
-
-
 # 部署云侧工程
 
 您也可选择在云函数和云数据库全部开发完成后，将整个云工程资源统一部署到AGC云端。

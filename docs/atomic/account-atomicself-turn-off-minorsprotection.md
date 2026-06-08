@@ -2,9 +2,10 @@
 title: "关闭元服务的未成年人模式（推荐）"
 original_url: /docs/dev/atomic-dev/account-atomic-turn-off-minorsprotection/account-atomicself-turn-off-minorsprotection
 format: md
+upstream_id: dev/atomic-dev/account-atomic-turn-off-minorsprotection/account-atomicself-turn-off-minorsprotection
+last_sync: 2026-06-07
+sync_hash: 8f9841b6
 ---
-
-
 ## 场景介绍
 
 系统的未成年人模式已开启，用户打开元服务，希望单独关闭元服务的未成年人模式，系统的未成年人模式仍保持开启。

@@ -3,8 +3,10 @@ title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/creative-pre-review-faq-0000001926887165
 format: md
+upstream_id: monetize/promotion/creative-pre-review-faq-0000001926887165
+last_sync: 2026-06-07
+sync_hash: 7149af02
 ---
-
 # FAQ
 
 - <strong>新建投放推广任务时，为什么点击“选择预审创意”，提示“该展示类型下，暂无预审创意”？</strong>

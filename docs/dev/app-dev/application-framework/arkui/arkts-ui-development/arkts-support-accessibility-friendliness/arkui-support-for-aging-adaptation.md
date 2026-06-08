@@ -2,9 +2,10 @@
 title: "支持适老化"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-support-accessibility-friendliness/arkui-support-for-aging-adaptation
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-support-accessibility-friendliness/arkui-support-for-aging-adaptation
+last_sync: 2026-06-07
+sync_hash: 5973a992
 ---
-
-
 系统字体被放大后，应用应确保整体布局不出现错乱，组件不出现重叠。可以根据业务需要限制跟随的字体最大档位、改变布局来更好的适配更大字体等。本文旨在指导应用如何跟随系统字体大小和跟随到的最大倍数。
 
 ## 应用适配规则

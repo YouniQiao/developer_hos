@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "高性能GPU排序"
 original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-maleoon-api/xengine-kit-high-performance-gpu-sorting
 format: md
+upstream_id: dev/app-dev/graphics/xengine-kit-guide/xengine-kit-maleoon-api/xengine-kit-high-performance-gpu-sorting
+last_sync: 2026-06-07
+sync_hash: 124a3681
 ---
-
-
 从6.0.0(20) 版本开始，新增高性能GPU排序特性。
 
 XEngine Kit HPS(High Performance Sorting)特性提供高性能GPU排序能力。相比于其它排序能力，该能力依托于华为Maleoon GPU的软硬结合优化，效率更高。

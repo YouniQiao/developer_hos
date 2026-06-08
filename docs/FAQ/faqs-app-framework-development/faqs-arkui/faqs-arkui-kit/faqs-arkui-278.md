@@ -2,8 +2,11 @@
 format: md
 title: "如何实现List/Swiper/Grid嵌套滚动的下拉刷新和上拉加载更多"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-278
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-278
+last_sync: 2026-06-07
+sync_hash: 99564877
+upstream_hash: e9a7a9ca67ed
 ---
-
 
 开发者可通过Refresh组件嵌套List实现下拉刷新。刷新逻辑在onRefreshing回调方法中执行。上拉加载更多给List添加onReachEnd事件回调，列表滑动到底部时触发。示例代码如下：
 

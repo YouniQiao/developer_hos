@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "事件订阅简介"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/event-subscription-overview
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/event-subscription-overview
+last_sync: 2026-06-07
+sync_hash: 6743cd1c
 ---
-
-
 ## 事件介绍
 
 HiAppEvent能够订阅应用事件和系统事件。

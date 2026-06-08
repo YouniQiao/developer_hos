@@ -2,9 +2,10 @@
 title: "互动评论"
 original_url: /docs/distribute/agc/agc-help-users-operation-0000002338612342/agc-help-interaction-comments-0000002392386937
 format: md
+upstream_id: distribute/agc/agc-help-users-operation-0000002338612342/agc-help-interaction-comments-0000002392386937
+last_sync: 2026-06-07
+sync_hash: 0e413782
 ---
-
-
 用户可对应用进行评分并发表评论，您可以对用户评论进行查看、回复、删除等管理操作，以增强与用户的互动，第一时间了解用户反馈，解决用户问题并监控舆情。
 
 华为分别为HarmonyOS应用与游戏提供了不同的评论管理平台：

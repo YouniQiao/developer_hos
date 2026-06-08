@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "XEngine Kit（GPU加速引擎服务）"
 original_url: /docs/dev/app-dev/graphics/xengine-kit-guide
 format: md
+upstream_id: dev/app-dev/graphics/xengine-kit-guide
+last_sync: 2026-06-07
+sync_hash: 0c5743ea
 ---
-
-
 * **[XEngine Kit简介](/docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-introduction)**
 * **[开发准备](/docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-preparations)**
 * **[空域GPU超分](/docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-gpu-spatial-upscaling)**

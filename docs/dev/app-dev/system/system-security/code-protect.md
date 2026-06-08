@@ -2,9 +2,10 @@
 title: "应用加密"
 original_url: /docs/dev/app-dev/system/system-security/code-protect
 format: md
+upstream_id: dev/app-dev/system/system-security/code-protect
+last_sync: 2026-06-07
+sync_hash: 1816a267
 ---
-
-
 ![](./img/55183a92.png)
 
 应用加密特性可以有效提高应用代码文件逆向分析的难度，但应用代码防逆向是一个持续攻防对抗的过程，如对代码文件保护有更高的要求，需要结合其他安全加固措施，进一步提高逆向分析应用的难度。

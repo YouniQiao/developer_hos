@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "启动耗时事件介绍"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/startup-duration-events/hiappevent-watcher-app-launch-event
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/startup-duration-events/hiappevent-watcher-app-launch-event
+last_sync: 2026-06-07
+sync_hash: 2c3fa1a0
 ---
-
-
 ## 简介
 
 用户在使用应用时，如果出现点击应用后启动缓慢的情况，并且整个过程超过了一定的时间，就会被定义为启动耗时事件。系统会采集相关流程耗时，并生成HiappEvent事件，供应用开发者分析。
@@ -16,7 +17,7 @@ format: md
 
 ![](./img/3348422e.png)
 
-启动耗时事件支持在[元服务场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-create-faproject)下使用HiAppEvent进行订阅。不支持在[应用分身场景](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)或[输入法应用场景](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)下使用HiAppEvent进行订阅。
+启动耗时事件支持在[元服务场景](/docs/tools/end-cloud/agc-harmonyos-create-faproject)下使用HiAppEvent进行订阅。不支持在[应用分身场景](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)或[输入法应用场景](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)下使用HiAppEvent进行订阅。
 
 ## 事件检测原理
 
@@ -26,7 +27,7 @@ format: md
 
 1. 系统在监控应用启动时，依赖多个系统内部事件的打点记录。若这些事件在完成应用启动的5秒内全部完成打点上报，系统将立即生成启动耗时事件，并通过回调函数将事件内容传递给应用；若非关键事件存在缺失，系统将在5秒后根据实际接收到的事件生成启动耗时事件。
 2. 单设备上的所有应用在每个自然日内最多可以累计上报2000次启动耗时事件，系统会在每日 0 点重置统计计数。若在一次启动流程中，涉及多个同一依赖事件的触发（如在启动过程中调用多次[startAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#startability-1)），会导致实际可上报的启动耗时事件数量少于理论上限。
-3. 启动完成前（如应用[首帧绘制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-launch-case)前）终止启动不会生成启动耗时事件。
+3. 启动完成前（如应用[首帧绘制](/docs/tools/coding-debug/ide-profiler-launch-case)前）终止启动不会生成启动耗时事件。
 
 ## 启动耗时优化指导
 

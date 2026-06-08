@@ -2,9 +2,10 @@
 title: "FilePartUploadInfo"
 original_url: /docs/distribute/agc/agc-help-upload-api-data-0000002272457913/agc-help-upload-api-data-filepartuploadinfo-0000002237338748
 format: md
+upstream_id: distribute/agc/agc-help-upload-api-data-0000002272457913/agc-help-upload-api-data-filepartuploadinfo-0000002237338748
+last_sync: 2026-06-07
+sync_hash: 2cb0c211
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | url | M | String | 分片上传地址。  上传地址有效期为4分钟，请在4分钟内调用[上传分片实体](/docs/distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-obbfile-upload-0000002236201298)接口上传分片。 |

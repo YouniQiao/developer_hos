@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "分享时提示“您选择的文件不支持分享”"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/share-faq/share-faq-3
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/share-faq/share-faq-3
+last_sync: 2026-06-07
+sync_hash: 94b50e3f
 ---
-
-
 **现象描述：**
 
 预览区内容无法正常显示，点击分享方式区或操作区均提示“您选择的文件不支持分享”。

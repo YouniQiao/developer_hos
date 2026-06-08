@@ -3,9 +3,10 @@ title: "构建产物说明"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-compile-build
 format: md
+upstream_id: tools/coding-debug/ide-compile-build
+last_sync: 2026-06-07
+sync_hash: 3413cb5c
 ---
-
-
 # 构建产物说明
 
 #### HAP/HSP构建产物说明

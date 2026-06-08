@@ -2,8 +2,11 @@
 format: md
 title: "测试任务执行时，避免PC进入睡眠状态，如何设置"
 original_url: /docs/FAQ/faqs-deveco-testing/faqs-deveco-testing-faq/faqs-deveco-testing-faq-3
+upstream_id: FAQ/faqs-deveco-testing/faqs-deveco-testing-faq/faqs-deveco-testing-faq-3
+last_sync: 2026-06-07
+sync_hash: 06d39f9f
+upstream_hash: 43c5f881aa9d
 ---
-
 
 在执行DevEco Testing测试任务时，确保PC始终正常工作。为避免因PC休眠导致设备断连或任务暂停，请手动设置电源管理。
 

@@ -3,9 +3,10 @@ title: "实践说明"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-compilation-options-customizing-sample
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-compilation-options-customizing-sample
+last_sync: 2026-06-07
+sync_hash: 080d822d
 ---
-
-
 # 实践说明
 
 应用正式对外发布版本前，需要对应用进行代码调试。调试和正式发布版本，两者编译行为可能不同。此时，可以利用buildMode能力，来定制两个版本的编译差异性。

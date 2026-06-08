@@ -3,8 +3,10 @@ title: 焦点导航
 sidebar_label: 焦点导航
 original_url: /docs/design/hmi/focus
 format: md
+upstream_id: design/hmi/focus
+last_sync: 2026-06-07
+sync_hash: 49a85789
 ---
-
 \{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 焦点导航

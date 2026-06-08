@@ -3,8 +3,10 @@ title: "线上充值"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-start-guest-recharge-online-0000001379958177
 format: md
+upstream_id: monetize/promotion/bpos-start-guest-recharge-online-0000001379958177
+last_sync: 2026-06-07
+sync_hash: 2fbc50ec
 ---
-
 # 线上充值
 
 ## 概述
@@ -13,7 +15,7 @@ format: md
 
 ![](./img/0d1f87722484.png) 
 
-如果您需要使用此功能，需要申请[特性](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/addtongxing-0000001128278195)。
+如果您需要使用此功能，需要申请[特性](/docs/monetize/promotion/addtongxing-0000001128278195)。
 
 如果您开通了鲸鸿动能广告的[团队管理](/docs/monetize/promotion/bpos-delivery-task-account-management-team-0000001328677534)功能，仅团队主账号能使用线上充值功能。
 

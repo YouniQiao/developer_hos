@@ -2,9 +2,10 @@
 format: md
 title: "如何设置图片显示的分辨率"
 original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-8
+upstream_id: FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-8
+last_sync: 2026-06-07
+sync_hash: 7da4a699
 ---
-
-
 可以通过[sourceSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image#sourcesize)属性设置图片分辨率。实例代码如下，原图尺寸为1280×960，示例将图片解码为40×40。
 
 ```

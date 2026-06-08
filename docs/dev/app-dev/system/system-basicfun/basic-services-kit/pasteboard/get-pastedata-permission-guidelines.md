@@ -2,9 +2,10 @@
 title: "申请访问剪贴板权限"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/get-pastedata-permission-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/get-pastedata-permission-guidelines
+last_sync: 2026-06-07
+sync_hash: a653edab
 ---
-
-
 ## 概述
 
 API version 12及之后，系统为提升用户隐私安全保护能力，剪贴板读取接口增加权限管控。

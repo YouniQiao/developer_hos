@@ -2,9 +2,10 @@
 title: "文件隔离恢复"
 original_url: /docs/dev/app-dev/system/enterprisethreatprotection-virusremediation-restore
 format: md
+upstream_id: dev/app-dev/system/enterprisethreatprotection-virusremediation-restore
+last_sync: 2026-06-07
+sync_hash: 166feef2
 ---
-
-
 ## 基本概念
 
 文件隔离恢复是指将指定隔离ID的文件从隔离区还原至其原始存储路径。

@@ -3,8 +3,10 @@ title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-ocpd-faq-0000001361909701
 format: md
+upstream_id: monetize/promotion/bp-functions-ocpd-faq-0000001361909701
+last_sync: 2026-06-07
+sync_hash: 4b863dc3
 ---
-
 # FAQ
 
 ## 所有下发的数据都是应用商店推广的用户数据么？

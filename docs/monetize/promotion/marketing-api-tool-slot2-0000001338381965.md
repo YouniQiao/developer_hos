@@ -3,6 +3,10 @@ title: "查询版位元素"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-slot2-0000001338381965
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-slot2-0000001338381965
+last_sync: 2026-06-07
+sync_hash: 06be12bc
+upstream_hash: 7ed99fd5da1c
 ---
 
 # 查询版位元素

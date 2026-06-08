@@ -2,9 +2,10 @@
 title: "页面json配置"
 original_url: /docs/dev/atomic-dev/ascf/config/page-json-config
 format: md
+upstream_id: dev/atomic-dev/ascf/config/page-json-config
+last_sync: 2026-06-07
+sync_hash: 4c6cb0f1
 ---
-
-
 每一个ASCF框架页面也可以使用 .json 文件来对本页面的窗口表现进行配置。页面中配置项在当前页面会覆盖 app.json 的 window 中相同的配置项。文件内容为一个 JSON 对象，包含如下属性。
 
 在app.json中配置如下属性将在所有页面生效，如果仅需个别页面生效，请在页面对应的.json文件中配置。

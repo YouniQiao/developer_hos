@@ -3,9 +3,10 @@ title: "实践说明"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-get-build-profile-para-sample
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-get-build-profile-para-sample
+last_sync: 2026-06-07
+sync_hash: 223af1e8
 ---
-
-
 # 实践说明
 
 示例：配置工程级和模块级的自定义参数并通过切换product来展示不同的message。

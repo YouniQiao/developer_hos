@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "转换指定页面或指定区域为图片"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-doc-to-imgs/pdf-get-img
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-doc-to-imgs/pdf-get-img
+last_sync: 2026-06-07
+sync_hash: f3bdb4b3
 ---
-
-
 ## 场景介绍
 
 PDF文档页面转换为图片，或将页面的指定区域转换为图片时使用。

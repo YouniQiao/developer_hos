@@ -2,8 +2,11 @@
 format: md
 title: "Navigation组件，如何监听页面切换后系统动画的结束时机"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-410
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-410
+last_sync: 2026-06-07
+sync_hash: 91bc6df4
+upstream_hash: 6089f6e2992e
 ---
-
 
 **问题描述**
 

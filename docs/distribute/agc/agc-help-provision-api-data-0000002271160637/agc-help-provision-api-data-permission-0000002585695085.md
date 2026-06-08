@@ -2,9 +2,10 @@
 title: "Permission"
 original_url: /docs/distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-permission-0000002585695085
 format: md
+upstream_id: distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-permission-0000002585695085
+last_sync: 2026-06-07
+sync_hash: 62cb9e10
 ---
-
-
 | еҸӮж•°еҗҚз§° | еҝ…йҖү(M)/еҸҜйҖү(O) | зұ»еһӢ | еҸӮж•°иҜҙжҳҺ |
 | --- | --- | --- | --- |
 | id | O | String(32) | жқғйҷҗIDгҖӮ |

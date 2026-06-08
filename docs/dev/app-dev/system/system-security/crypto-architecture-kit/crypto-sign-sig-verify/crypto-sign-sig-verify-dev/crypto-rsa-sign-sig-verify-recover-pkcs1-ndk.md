@@ -2,9 +2,10 @@
 title: "使用RSA密钥对（PKCS1模式）签名恢复(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-rsa-sign-sig-verify-recover-pkcs1-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-rsa-sign-sig-verify-recover-pkcs1-ndk
+last_sync: 2026-06-07
+sync_hash: e2c6bb58
 ---
-
-
 对应的算法规格请查看[验签算法规格：RSA](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-overview#rsa)。
 
 ## 在CMake脚本中链接相关动态库

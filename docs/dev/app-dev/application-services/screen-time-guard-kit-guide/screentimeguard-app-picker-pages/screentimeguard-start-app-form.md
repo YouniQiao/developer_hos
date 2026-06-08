@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "拉起许可应用跳转页"
 original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-app-picker-pages/screentimeguard-start-app-form
 format: md
+upstream_id: dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-app-picker-pages/screentimeguard-start-app-form
+last_sync: 2026-06-07
+sync_hash: 7c4606bc
 ---
-
-
 ## 场景介绍
 
 从6.0.2(22)版本开始，新增支持拉起许可应用跳转页功能。为实现用户在被管控期间快速跳转到许可应用的诉求，开发者可调用startAppForm接口拉起应用跳转页，页面中将展示通过接口参数传入的许可应用token对应的应用列表。用户点击其中的应用图标后能跳转到该应用。

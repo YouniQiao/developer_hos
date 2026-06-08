@@ -2,9 +2,10 @@
 title: "适配PC设备"
 original_url: /docs/dev/game-dev/games-adapt-pc-platform-0000002330261222
 format: md
+upstream_id: dev/game-dev/games-adapt-pc-platform-0000002330261222
+last_sync: 2026-06-07
+sync_hash: dfd2e2a5
 ---
-
-
 为了扩大游戏的使用范围，增加游戏的用户群体，提升游戏的市场竞争力，建议游戏适配PC设备。
 
 ## 追加设备类型

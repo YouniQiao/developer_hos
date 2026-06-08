@@ -2,8 +2,11 @@
 title: "SM2签名数据格式转换(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-sm2-sign-data-format-conversion
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-sm2-sign-data-format-conversion
+last_sync: 2026-06-07
+sync_hash: 938b3ad8
+upstream_hash: 983d97bc0716
 ---
-
 
 当前支持DER格式与（r、s）格式互转的能力。
 

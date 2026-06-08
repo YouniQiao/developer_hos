@@ -2,9 +2,10 @@
 title: "应用/组件级配置"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/application-component-configuration-fa
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/application-component-configuration-fa
+last_sync: 2026-06-07
+sync_hash: c78c1cc7
 ---
-
-
 开发者在开发应用时，需要配置应用的一些标签，例如应用的Bundle名称、图标等标识特征的属性。这一章节描述了开发者在开发应用时需要配置的一些关键标签。
 
 ## 应用包名配置

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "请求UI绘制帧率"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/displaysync/displaysync-ui
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/displaysync/displaysync-ui
+last_sync: 2026-06-07
+sync_hash: 44da89f0
 ---
-
-
 如果开发者需要以独立的帧率绘制更新操作UI界面时，可以通过DisplaySync来实现。应用中绘制内容的帧率可以使用DisplaySync实例来控制，具体请查阅[@ohos.graphics.displaySync (可变帧率)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-graphics-displaysync)。
 
 ## 开发步骤

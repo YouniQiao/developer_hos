@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "日志中频繁打印BusinessError: The Worker instance is not running, maybe worker is terminated when PostMessage错误信息，应该如何排查"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-5
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-5
+last_sync: 2026-06-07
+sync_hash: 3cb9409c
+upstream_hash: 0d6c3900f644
 ---
-
 
 该错误通常是由于Worker线程崩溃或被终止导致。
 

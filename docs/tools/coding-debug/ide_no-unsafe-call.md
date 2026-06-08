@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-unsafe-call"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unsafe-call
 format: md
+upstream_id: tools/coding-debug/ide_no-unsafe-call
+last_sync: 2026-06-07
+sync_hash: 1441fb09
 ---
-
-
 # @typescript-eslint/no-unsafe-call
 
 禁止调用“any”类型的表达式。

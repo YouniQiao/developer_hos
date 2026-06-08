@@ -2,9 +2,10 @@
 title: "操作错误场景"
 original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-operation-error
 format: md
+upstream_id: dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-operation-error
+last_sync: 2026-06-07
+sync_hash: b585cd53
 ---
-
-
 ## 设计场景
 
 比如网络连接错误，或者其他警告信息，不能仅仅以颜色区分，需要实时告诉用户错误提示和改进方法。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用Image_NativeModule完成位图操作"
 original_url: /docs/dev/app-dev/media/image-kit/image-native/image-editing-c/pixelmap-c
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-native/image-editing-c/pixelmap-c
+last_sync: 2026-06-07
+sync_hash: 79aa95af
 ---
-
-
 创建位图，获取位图的宽、高、pixelFormat、alphaType、rowStride信息、对位图进行操作以及释放位图实例。
 
 ## 开发步骤

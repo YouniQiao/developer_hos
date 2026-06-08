@@ -3,9 +3,10 @@ title: "发布应用"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-publish-app
 format: md
+upstream_id: tools/coding-debug/ide-publish-app
+last_sync: 2026-06-07
+sync_hash: 69cf007e
 ---
-
-
 # 发布应用
 
 HarmonyOS通过数字证书与Profile文件等签名信息来保证应用/元服务的完整性，应用/元服务上架到AppGallery Connect（AGC）必须通过签名校验。因此，您需要使用发布证书和Profile文件对应用/元服务进行签名后才能发布。

@@ -2,9 +2,10 @@
 title: "计费说明"
 original_url: /docs/distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-price-0000002255019568
 format: md
+upstream_id: distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-price-0000002255019568
+last_sync: 2026-06-07
+sync_hash: 46030bb8
 ---
-
-
 #### 计费方式说明
 
 自2022年5月23日起，您在使用云调试服务时，可以使用账号内的优惠调试时长免费调试特定设备，还可以通过购买付费套餐和开通升级付费档按量收费两种方式付费享受更全面的云调试服务。

@@ -1,8 +1,10 @@
 ---
 title: "地址越界类问题分析方法"
 original_url: /docs/quality/stability-address-illegal-way
+upstream_id: /docs/quality/stability-address-illegal-way
+last_sync: 2026-06-07
+sync_hash: 17784820
 ---
-
 # 地址越界类问题分析方法
 
 ## 概述

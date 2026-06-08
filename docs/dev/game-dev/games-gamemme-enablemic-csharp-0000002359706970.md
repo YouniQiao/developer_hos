@@ -2,9 +2,10 @@
 title: "设置麦克风状态"
 original_url: /docs/dev/game-dev/games-gamemme-enablemic-csharp-0000002359706970
 format: md
+upstream_id: dev/game-dev/games-gamemme-enablemic-csharp-0000002359706970
+last_sync: 2026-06-07
+sync_hash: 8296cc87
 ---
-
-
 进入语音房间后，玩家如果不希望自身语音被房间内的其他玩家接收，可通过关闭自身麦克风实现。同时，还可以通过开启麦克风的方式快速解除自身静默状态。
 
 ![](./img/fb948412.png)

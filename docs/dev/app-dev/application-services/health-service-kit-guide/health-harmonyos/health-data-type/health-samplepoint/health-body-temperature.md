@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "体温"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-body-temperature
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-body-temperature
+last_sync: 2026-06-07
+sync_hash: 028d4443
 ---
-
-
 ## 体温
 
 此数据记录用户在一小段时间内的体温数据。

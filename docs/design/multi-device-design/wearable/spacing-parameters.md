@@ -3,8 +3,10 @@ title: 间隔参数
 sidebar_label: 间隔参数
 original_url: /docs/design/multi-device-design/wearable/spacing-parameters
 format: md
+upstream_id: design/multi-device-design/wearable/spacing-parameters
+last_sync: 2026-06-07
+sync_hash: 66a654ad
 ---
-
 # 间隔参数
 
 本节对通用性的元素间隔进行了定义。主要有元素、文本的边距；控件之间的上下左右间距；文本的间距、 段落间距等。开发者如有涉及以下场景页面，建议根据提供的间隔参数进行绘制。

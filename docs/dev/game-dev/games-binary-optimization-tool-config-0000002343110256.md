@@ -2,9 +2,10 @@
 title: "hdc工具配置"
 original_url: /docs/dev/game-dev/games-binary-optimization-tool-config-0000002343110256
 format: md
+upstream_id: dev/game-dev/games-binary-optimization-tool-config-0000002343110256
+last_sync: 2026-06-07
+sync_hash: 56e8c9b3
 ---
-
-
 ## hdc工具配置（Windows）
 
 优化HarmonyOS 5.0及以上系统游戏时，在PC端（Windows系统）安装hdc工具可按如下步骤操作，可参考[命令行工具hdc安装应用指南](https://developer.huawei.com/consumer/cn/blog/topic/03137966529669104)。

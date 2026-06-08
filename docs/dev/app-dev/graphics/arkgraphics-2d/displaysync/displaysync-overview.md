@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "可变帧率简介"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/displaysync/displaysync-overview
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/displaysync/displaysync-overview
+last_sync: 2026-06-07
+sync_hash: 0e56a45c
 ---
-
-
 随着设备屏幕的不断演进，当前主流设备采用LTPO屏幕，此类屏幕支持在多个档位之间切换屏幕帧率。
 
 对于快速变化的内容，如射击游戏，交互动画等，显示帧率越高，画面越流畅，但是相对的功耗也会越高。

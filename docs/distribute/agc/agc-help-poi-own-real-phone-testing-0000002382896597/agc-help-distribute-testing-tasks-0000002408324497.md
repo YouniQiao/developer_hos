@@ -2,9 +2,10 @@
 title: "下发测试任务"
 original_url: /docs/distribute/agc/agc-help-poi-own-real-phone-testing-0000002382896597/agc-help-distribute-testing-tasks-0000002408324497
 format: md
+upstream_id: distribute/agc/agc-help-poi-own-real-phone-testing-0000002382896597/agc-help-distribute-testing-tasks-0000002408324497
+last_sync: 2026-06-07
+sync_hash: 1a91eb43
 ---
-
-
 在AppGallery Connect近场测试服务界面，选择您需要测试的近场服务，对测试手机下发测试任务，使测试手机接收近场服务推送的内容。
 
 1. 左侧菜单栏选择“近场服务 > 近场测试”，进入近场测试服务主界面，点击右上角的“创建测试”。

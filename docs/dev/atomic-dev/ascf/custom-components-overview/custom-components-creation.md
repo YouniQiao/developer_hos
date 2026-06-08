@@ -2,8 +2,11 @@
 title: "创建自定义组件"
 original_url: /docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-creation
 format: md
+upstream_id: dev/atomic-dev/ascf/custom-components-overview/custom-components-creation
+last_sync: 2026-06-07
+sync_hash: 711c0c66
+upstream_hash: 1ffa87df226f
 ---
-
 
 和page类似，自定义组件也由json、hxml、css、js四类文件组成。
 

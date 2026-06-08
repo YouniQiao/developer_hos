@@ -2,9 +2,10 @@
 title: "使用code cache加速编译"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-code-cache
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-code-cache
+last_sync: 2026-06-07
+sync_hash: 2a84e6b1
 ---
-
-
 ##code cache简介
 
 JSVM提供了生成并使用code cache加速编译过程的方法，其获取和使用分为下面几个部分：

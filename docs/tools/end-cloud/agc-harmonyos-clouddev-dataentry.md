@@ -1,12 +1,12 @@
 ---
-
 title: "添加数据条目"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-dataentry
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-dataentry
+last_sync: 2026-06-07
+sync_hash: a72bc582
 ---
-
-
 # 添加数据条目
 
 创建完对象类型后，您可在对象类型内添加数据条目（DataEntry），并配置数据所在的存储区。

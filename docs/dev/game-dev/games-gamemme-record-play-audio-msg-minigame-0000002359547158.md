@@ -2,9 +2,10 @@
 title: "JS（小游戏）"
 original_url: /docs/dev/game-dev/games-gamemme-record-play-audio-msg-minigame-0000002359547158
 format: md
+upstream_id: dev/game-dev/games-gamemme-record-play-audio-msg-minigame-0000002359547158
+last_sync: 2026-06-07
+sync_hash: 1fa1b330
 ---
-
-
 ![](./img/038ab9a6.png)
 
 如需发布到华为快游戏、微信小游戏、支付宝小游戏和字节跳动小游戏平台，需要注意的是，不支持使用浏览器、模拟器等进行预览调试。

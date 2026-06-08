@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "权益发放"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-purchases/iap-nonrenewable/iap-delivering-nonrenewable
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-purchases/iap-nonrenewable/iap-delivering-nonrenewable
+last_sync: 2026-06-07
+sync_hash: d6a124ca
 ---
-
-
 ## 场景介绍
 
 用户购买商品后，开发者需要及时发放相关权益。但实际应用场景中，若出现异常（网络错误、进程被中止等）将导致应用无法知道用户实际是否支付成功，从而无法及时发放权益，即出现掉单情况。为了确保权益发放，需要在以下场景检查用户是否存在已购未发货的商品：

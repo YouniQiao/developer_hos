@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "分享视频"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios/share-utd-video
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios/share-utd-video
+last_sync: 2026-06-07
+sync_hash: 652018b5
+upstream_hash: 47c37a7efd80
 ---
-
 
 视频类型分享支持将一个或多个视频分享到目标设备/目标应用。
 

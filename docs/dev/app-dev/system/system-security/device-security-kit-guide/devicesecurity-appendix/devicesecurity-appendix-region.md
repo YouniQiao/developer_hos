@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "支持的国家/地区"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-appendix/devicesecurity-appendix-region
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-appendix/devicesecurity-appendix-region
+last_sync: 2026-06-07
+sync_hash: 2f9b1fd2
 ---
-
-
 | 国家/地区 | 英文名称 |
 | --- | --- |
 | 中国境内（香港特别行政区、澳门特别行政区、中国台湾除外） | Chinese mainland |

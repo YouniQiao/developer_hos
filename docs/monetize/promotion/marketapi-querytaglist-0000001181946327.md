@@ -3,8 +3,10 @@ title: "查询定向列表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-querytaglist-0000001181946327
 format: md
+upstream_id: monetize/promotion/marketapi-querytaglist-0000001181946327
+last_sync: 2026-06-07
+sync_hash: a089dc3d
 ---
-
 # 查询定向列表
 
 ## 功能介绍

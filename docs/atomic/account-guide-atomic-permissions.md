@@ -2,9 +2,10 @@
 title: "申请账号权限"
 original_url: /docs/dev/atomic-dev/account-guide-atomic-preparations/account-guide-atomic-permissions
 format: md
+upstream_id: dev/atomic-dev/account-guide-atomic-preparations/account-guide-atomic-permissions
+last_sync: 2026-06-07
+sync_hash: 335cb519
 ---
-
-
 请参考“ **[元服务开发准备](/docs/dev/atomic-dev/atomic-service-development/atomic-dev-preparation)** ”章节，创建元服务、使用DevEco Studio创建元服务工程。
 
 ![](./img/380872c0.png)

@@ -3,8 +3,10 @@ title: "新增智能分包"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-addchannelpkg-0000001181946357
 format: md
+upstream_id: monetize/promotion/marketapi-addchannelpkg-0000001181946357
+last_sync: 2026-06-07
+sync_hash: 2d44a74a
 ---
-
 # 新增智能分包
 
 ## 功能介绍

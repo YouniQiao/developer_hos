@@ -2,9 +2,10 @@
 format: md
 title: "注册的自定义字体在webview中无效"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-16
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-16
+last_sync: 2026-06-07
+sync_hash: 67acdb85
 ---
-
-
 **问题现象**
 
 通过@ohos.font.registerFont接口注册的自定义字体在webview中设置对应的family无法正确显示。在webview H5中设置DOM style font-family也无效。

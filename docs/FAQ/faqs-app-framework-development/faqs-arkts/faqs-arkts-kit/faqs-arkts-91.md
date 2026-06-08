@@ -2,9 +2,10 @@
 title: "Uint8Array类型和String以及hex如何互相转换"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-91
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-91
+last_sync: 2026-06-07
+sync_hash: 82c59bdc
 ---
-
-
 Uint8Array类型和String以及hex实现互相转换，可参考如下代码：
 
 ```

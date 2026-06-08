@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "若开发者在游戏中使用Unity Addressables资源管理框架，如何集成游戏资源包后台下载功能"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-assetdownload-faq/graphics-accelerate-assetdownload-faq-10
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-assetdownload-faq/graphics-accelerate-assetdownload-faq-10
+last_sync: 2026-06-07
+sync_hash: 9b63dc30
 ---
-
-
 Addressables资源加载机制是根据Addressables的缓存文件判定资源包是否已下载，若未下载再通过游戏资源包后台下载功能把资源文件下载到Addressables的缓存目录下。集成步骤如下：
 
 * 在游戏资源包下载的[onDownloadContentRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-extensionability#ondownloadcontentrequest)生命周期函数中：

@@ -2,9 +2,10 @@
 format: md
 title: "流水线场景使用命令行工具sdkmgr下载Linux SDK失败"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-11
+upstream_id: FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-11
+last_sync: 2026-06-07
+sync_hash: 8c1d3eea
 ---
-
-
 **问题现象**
 
 在Linux上使用命令行工具sdkmgr时，如果提示“Failed to request URL https://devecostudio-dre.op.hicloud.com/sdkmanager/v5/hos/getSdkList”。

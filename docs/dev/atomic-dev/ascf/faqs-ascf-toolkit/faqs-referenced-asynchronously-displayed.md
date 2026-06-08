@@ -2,9 +2,10 @@
 title: "异步引用主包或本包组件，无法显示"
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-referenced-asynchronously-displayed
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-referenced-asynchronously-displayed
+last_sync: 2026-06-07
+sync_hash: ba3e336d
 ---
-
-
 **问题现象**
 
 在使用本包或者主包的组件时，给组件加了占位符，运行组件显示不了。

@@ -3,8 +3,10 @@ title: "上传广告元素"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-quanyuzhitouchuanyiyanshennengli-0000001751793165
 format: md
+upstream_id: monetize/promotion/ads-quanyuzhitouchuanyiyanshennengli-0000001751793165
+last_sync: 2026-06-07
+sync_hash: 67c56f2a
 ---
-
 # 上传广告元素
 
 ## 概述

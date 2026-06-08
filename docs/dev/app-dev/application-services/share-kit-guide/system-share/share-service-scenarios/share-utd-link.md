@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "分享链接"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios/share-utd-link
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios/share-utd-link
+last_sync: 2026-06-07
+sync_hash: 4d0b50b5
 ---
-
-
 ## 分享App Linking直达应用
 
 使用App Linking分享应用，目标设备接收后可直达应用，参见：[使用App Linking实现应用间跳转](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-linking-startup)。

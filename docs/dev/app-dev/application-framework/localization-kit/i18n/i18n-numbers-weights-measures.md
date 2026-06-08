@@ -2,9 +2,10 @@
 title: "数字与度量衡国际化"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-numbers-weights-measures
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/i18n/i18n-numbers-weights-measures
+last_sync: 2026-06-07
+sync_hash: 9b259879
 ---
-
-
 ## 功能介绍
 
 在不同的国家和文化中，数字、货币和度量衡的表示方法各异，包括小数分隔符、小数位数、货币和度量衡单位等。例如，应用界面需要显示数字“1,000”（一千）表示商品价格。若采用固定格式“1,000”，在欧洲某些国家（如德国）用户会将其理解为“1”，因为这些国家使用逗号作为小数分隔符。为了确保界面符合当地习惯，需要对数字、货币和度量衡进行格式化，使其根据用户的语言和地区设置显示。

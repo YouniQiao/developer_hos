@@ -3,9 +3,10 @@ title: "开发者选项"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-developer-mode
 format: md
+upstream_id: tools/coding-debug/ide-developer-mode
+last_sync: 2026-06-07
+sync_hash: ae2f0e21
 ---
-
-
 # 开发者选项
 
 HarmonyOS系统上的“设置”包含开发者选项的界面，用于辅助HarmonyOS应用程序开发、测试及优化，面向开发人员提供商业发行版之外的功能（如API能力），提供更多的调试选项及能力；您可在该界面中通过配置选项来帮助您分析和调试应用，例如，您可以通过启用USB/无线调试进行应用调试、开启DFX稳定性相关选项获取更多应用的故障及性能信息、开启过度绘制等选项快速发现性能问题等等。

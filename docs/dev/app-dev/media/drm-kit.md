@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "DRM Kit（数字版权保护服务）"
 original_url: /docs/dev/app-dev/media/drm-kit
 format: md
+upstream_id: dev/app-dev/media/drm-kit
+last_sync: 2026-06-07
+sync_hash: 4f4c63b9
 ---
-
-
 * **[DRM Kit 简介](/docs/dev/app-dev/media/drm-kit/drm-overview)**
 * **[数字版权保护(ArkTS)](/docs/dev/app-dev/media/drm-kit/drm-arkts-dev-guide)**
 * **[数字版权保护(C/C++)](/docs/dev/app-dev/media/drm-kit/drm-c-dev-guide)**

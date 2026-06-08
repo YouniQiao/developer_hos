@@ -3,8 +3,10 @@ title: "社交"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-appendix-material-rule-social-0000001936745629
 format: md
+upstream_id: monetize/promotion/bp-appendix-material-rule-social-0000001936745629
+last_sync: 2026-06-07
+sync_hash: dc8a0bc1
 ---
-
 # 社交
 
 ## 社交&网络直播行业通用审核规范

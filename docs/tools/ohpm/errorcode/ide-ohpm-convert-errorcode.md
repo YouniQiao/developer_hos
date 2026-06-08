@@ -3,9 +3,10 @@ title: "ohpm convert错误码"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/errorcode/ide-ohpm-convert-errorcode
 format: md
+upstream_id: tools/ohpm/errorcode/ide-ohpm-convert-errorcode
+last_sync: 2026-06-07
+sync_hash: 778ecba8
 ---
-
-
 # ohpm convert错误码
 
 ## 00636001 无子目录

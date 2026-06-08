@@ -2,8 +2,11 @@
 title: "签名/验签介绍及算法规格"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-overview
+last_sync: 2026-06-07
+sync_hash: db74a9cf
+upstream_hash: 58f915e4c7fc
 ---
-
 
 为实现数据完整性保护和防抵赖，可使用生成/导入的密钥，对数据进行签名验签操作。
 

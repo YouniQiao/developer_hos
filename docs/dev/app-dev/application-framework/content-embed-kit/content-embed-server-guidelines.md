@@ -2,9 +2,10 @@
 title: "服务端应用开发"
 original_url: /docs/dev/app-dev/application-framework/content-embed-kit/content-embed-server-guidelines
 format: md
+upstream_id: dev/app-dev/application-framework/content-embed-kit/content-embed-server-guidelines
+last_sync: 2026-06-07
+sync_hash: 619618af
 ---
-
-
 ## 场景介绍
 
 [OH\_ContentEmbed](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-contentembed)内容嵌入模块提供对象编辑框架与技术，支持应用间文档嵌入与协同编辑。

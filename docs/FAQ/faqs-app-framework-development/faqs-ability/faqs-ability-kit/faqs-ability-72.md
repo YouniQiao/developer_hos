@@ -2,8 +2,11 @@
 title: "如何获取指定bundleFlags的Ability信息"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-72
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-72
+last_sync: 2026-06-07
+sync_hash: 58ea9540
+upstream_hash: dc8f7b0f31b7
 ---
-
 
 bundleManager.getBundleInfoForSelf :getBundleInfoForSelf(bundleFlags: number): Promise\<BundleInfo\>;
 

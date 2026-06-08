@@ -2,8 +2,11 @@
 format: md
 title: "如何正确使用OH_JSVM_GetValueStringUtf8获取字符串"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-jsvm/faqs-jsvm-5
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-jsvm/faqs-jsvm-5
+last_sync: 2026-06-07
+sync_hash: 8b1d2aa1
+upstream_hash: fb7edf80dce9
 ---
-
 
 **问题现象**
 

@@ -2,9 +2,10 @@
 title: "DeviceBaseInfo"
 original_url: /docs/distribute/agc/agc-help-beacon-api-data-model-0000002382718893/agc-help-beacon-api-devicebaseinfo-0000002382838601
 format: md
+upstream_id: distribute/agc/agc-help-beacon-api-data-model-0000002382718893/agc-help-beacon-api-devicebaseinfo-0000002382838601
+last_sync: 2026-06-07
+sync_hash: 84aaacc5
 ---
-
-
 | **参数** | **必选(M)/****可选(O)** | **参数类型** | **描述** |
 | --- | --- | --- | --- |
 | locationDeviceId | M | String | 设备ID，由UUID+Major+Minor组成的40位16进制数。 |

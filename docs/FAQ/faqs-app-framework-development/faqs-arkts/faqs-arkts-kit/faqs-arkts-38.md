@@ -2,9 +2,10 @@
 format: md
 title: "ArkTS的SendableClass对象内存共享的原理和限制是什么"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-38
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-38
+last_sync: 2026-06-07
+sync_hash: eabe2008
 ---
-
-
 SendableClass基于Actor内存隔离并发模型扩展，Sendable对象的内存由线程间共享，需确保单线程无锁化运行。因此，同一Sendable实例不能多线程并发访问，开发者应通过同步机制保证线程安全。
 
 Sendable对象需要满足一定的规格。

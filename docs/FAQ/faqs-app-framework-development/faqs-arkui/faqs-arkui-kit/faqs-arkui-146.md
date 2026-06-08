@@ -2,9 +2,10 @@
 format: md
 title: "如何获取图片的宽高"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-146
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-146
+last_sync: 2026-06-07
+sync_hash: 8f370d57
 ---
-
-
 通过Image组件的[onComplete](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image#oncomplete)事件，图片数据加载成功和解码成功时均触发该回调，返回成功加载的图片尺寸。参考代码如下：
 
 ```

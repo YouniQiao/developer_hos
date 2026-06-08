@@ -2,9 +2,10 @@
 title: "上传分片实体"
 original_url: /docs/distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-obbfile-upload-0000002236201298
 format: md
+upstream_id: distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-obbfile-upload-0000002236201298
+last_sync: 2026-06-07
+sync_hash: c0f9dc53
 ---
-
-
 #### 功能介绍
 
 此接口用于将分片实体文件上传到AppGallery Connect服务器，每次调用只能上传一个分片，支持多次调用逐个上传多个分片。

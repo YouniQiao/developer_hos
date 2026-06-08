@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "添加、删除PDF页"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-add-delete-page
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-add-delete-page
+last_sync: 2026-06-07
+sync_hash: 96c19f5a
 ---
-
-
 在PDF文档中添加或删除页面，包括：
 
 * 添加单个、多个空白页到PDF文档。

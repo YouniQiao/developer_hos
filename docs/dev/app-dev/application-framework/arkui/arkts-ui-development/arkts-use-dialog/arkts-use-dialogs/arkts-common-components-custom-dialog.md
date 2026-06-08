@@ -2,9 +2,10 @@
 title: "基础自定义弹出框 (CustomDialog)"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-common-components-custom-dialog
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-common-components-custom-dialog
+last_sync: 2026-06-07
+sync_hash: 50669512
 ---
-
-
 CustomDialog是自定义弹出框，可用于广告、中奖、警告、软件更新等与用户交互响应操作。开发者可以通过CustomDialogController类显示自定义弹出框。具体用法请参考[自定义弹出框](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-custom-dialog-box)。
 
 ![](./img/7dd0b9f3.png)

@@ -2,9 +2,10 @@
 format: md
 title: "DevEco Studio上使用生成NAPI功能时， 提示“Could not find usage of napi_module_register in napi_init.cpp.”错误"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-15
+upstream_id: FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-15
+last_sync: 2026-06-07
+sync_hash: fa19c638
 ---
-
-
 **问题现象**
 
 右键单击函数， 在弹出的菜单中依次选择 Generate... > NAPI， 生成胶水代码报错。

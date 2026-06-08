@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "请求用户授权"
 original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-interface-call-auth/screentimeguard-request-user-auth
 format: md
+upstream_id: dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-interface-call-auth/screentimeguard-request-user-auth
+last_sync: 2026-06-07
+sync_hash: 27ceb0ff
 ---
-
-
 ## 场景介绍
 
 Screen Time Guard Kit支持对用户设备的时间管理和应用限制，因此在功能启用前，必须获得用户的明确授权。应用可以调用请求用户授权接口，系统会弹出授权请求界面，明确告知用户功能的作用和必要性，并在用户允许之后，才可正常访问。如果用户未同意授权，则无法再提供相关管控能力，此时如果继续调用管控相关接口，会抛出用户未授权使用的错误码。

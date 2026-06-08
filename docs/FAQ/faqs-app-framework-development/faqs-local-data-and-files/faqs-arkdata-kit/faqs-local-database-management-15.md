@@ -2,9 +2,10 @@
 format: md
 title: "数据库查询失败 14800007"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-15
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-15
+last_sync: 2026-06-07
+sync_hash: e2ef140d
 ---
-
-
 **问题现象**
 
 使用rdbStore.querySql可以获取 20 条结果，但在调用resultSet.isColumnNull时出现报错，报错信息如下：

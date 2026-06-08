@@ -2,9 +2,10 @@
 title: "场景介绍"
 original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_introduction/scene_introduction
 format: md
+upstream_id: dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_introduction/scene_introduction
+last_sync: 2026-06-07
+sync_hash: b1d76450
 ---
-
-
 ## 手机与穿戴设备分布式协同
 
 * 重要通知实现腕上提醒，实现即时通知推送，如：在手机侧App中设置日程提醒、用药提醒、任务提醒等数据，可以同步到穿戴设备侧App中，不用打开手机，也可以随时在穿戴设备上查看重要信息。

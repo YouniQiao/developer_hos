@@ -3,8 +3,10 @@ title: "查询深度转化目标"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-tracking0-0000001574246740
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-tracking0-0000001574246740
+last_sync: 2026-06-07
+sync_hash: 7a4fdb6b
 ---
-
 # 查询深度转化目标
 
 【简介】通过此接口可以查询深度转化目标，需要向运营申请转化指标权限。使用深度转化目标需要先创建相应的<strong>[转化跟踪指标](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section125615641916)</strong>。例如，使用激活应用为浅层指标同时使用<strong>[浏览商品](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section125615641916)</strong>作为深度转化目标。则需要创建<strong>[激活应用](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section125615641916)</strong>和<strong>[浏览商品](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section125615641916)</strong>的转化跟踪指标。此时即可使用浏览商品作为激活应用目标的深度转化目标。

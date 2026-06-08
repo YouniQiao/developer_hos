@@ -3,8 +3,10 @@ title: "创建文件人群"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-filecreation-0000001847699773
 format: md
+upstream_id: monetize/promotion/marketapi-filecreation-0000001847699773
+last_sync: 2026-06-07
+sync_hash: f3bd48fc
 ---
-
 # 创建文件人群
 
 ## 功能介绍

@@ -3,9 +3,10 @@ title: "快速上手"
 displayed_sidebar: devecoTestingSidebar
 original_url: /docs/tools/deveco-testing/get-familiar
 format: md
+upstream_id: tools/deveco-testing/get-familiar
+last_sync: 2026-06-07
+sync_hash: 6256873e
 ---
-
-
 # 快速上手
 
 DevEco Testing是一款专项集成测试工具，提供了多项测试能力。DevEco Testing将测试能力以测试服务卡片的形式呈现给用户，无需复杂的配置，即可一键执行测试任务，同时提供了测试报告和分析，辅助开发者发现应用和产品问题，提升应用质量。

@@ -3,9 +3,10 @@ title: "ohpm ping错误码"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/errorcode/ide-ohpm-ping-errorcode
 format: md
+upstream_id: tools/ohpm/errorcode/ide-ohpm-ping-errorcode
+last_sync: 2026-06-07
+sync_hash: fb7680dc
 ---
-
-
 # ohpm ping错误码
 
 ## 00632001 ping仓库失败

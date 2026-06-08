@@ -2,9 +2,10 @@
 title: "配置隐私说明"
 original_url: /docs/distribute/agc/agc-help-release-atomic-0000002327731065/agc-help-release-atomic-privacy-desc-0000002327610837
 format: md
+upstream_id: distribute/agc/agc-help-release-atomic-0000002327731065/agc-help-release-atomic-privacy-desc-0000002327610837
+last_sync: 2026-06-07
+sync_hash: c77c401f
 ---
-
-
 如果检测到您的元服务中涉及获取敏感隐私权限或者使用受限开放权限，您需要填写“应用隐私说明”。
 
 ![](../img/agc-help-release-atomic-privacy-desc-0000002327610837_0.png)

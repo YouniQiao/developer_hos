@@ -3,8 +3,10 @@ title: "参数描述说明"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-appendix5-0000001338486113
 format: md
+upstream_id: monetize/promotion/marketing-api-appendix5-0000001338486113
+last_sync: 2026-06-07
+sync_hash: ae27d490
 ---
-
 # 参数描述说明
 
 ## 修改限额约束

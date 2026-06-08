@@ -3,9 +3,11 @@ title: "下载安装体验描述"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_api_appendices_installfaq-0000001357798925
 format: md
+upstream_id: monetize/monetization/agd_pro_api_appendices_installfaq-0000001357798925
+last_sync: 2026-06-07
+sync_hash: b919e998
+upstream_hash: 038b44389585
 ---
-
-
 
 在响应体中，clickDeepLink和downloadLink均可实现有效的计费安装，具体说明如下：
 

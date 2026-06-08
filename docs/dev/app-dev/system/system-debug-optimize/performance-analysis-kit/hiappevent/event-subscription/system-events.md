@@ -2,9 +2,10 @@
 title: "系统事件"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events
+last_sync: 2026-06-07
+sync_hash: 915529e0
 ---
-
-
 * **[崩溃事件](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/crash-events)**
 * **[应用冻屏事件](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/freeze-events)**
 * **[资源泄漏事件](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/resource-leak-events)**

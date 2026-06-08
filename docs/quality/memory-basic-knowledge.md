@@ -2,9 +2,10 @@
 title: "内存基础知识"
 original_url: /docs/quality/memory-basic-knowledge
 format: md
+upstream_id: /docs/quality/memory-basic-knowledge
+last_sync: 2026-06-07
+sync_hash: 6f3e989e
 ---
-
-
 # 内存基础知识
 
 ## 基本概念

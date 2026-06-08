@@ -2,9 +2,10 @@
 title: "陀螺仪"
 original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-gyroscope
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-device/apis-gyroscope
+last_sync: 2026-06-07
+sync_hash: 9fa641c3
 ---
-
-
 ## has.startGyroscope
 
 has.startGyroscope(Object object)

@@ -2,9 +2,10 @@
 title: "如何获取当前应用程序缓存目录"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-14
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-14
+last_sync: 2026-06-07
+sync_hash: 4725f34f
 ---
-
-
 使用Context.cacheDir获取应用程序的缓存目录。代码示例如下：
 
 ```

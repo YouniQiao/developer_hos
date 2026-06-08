@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "不同开发者的应用之间如何实现用户数据互通"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-19
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-19
+last_sync: 2026-06-07
+sync_hash: 8591bb98
 ---
-
-
 不同开发者的应用，可以使用GroupUnionID关联用户数据来实现数据互通。GroupUnionID是华为账号用户在关联主体账号组内的唯一标识。不同开发者账号加入同一关联主体账号组后，其组内所有开发者的应用获取到用户的GroupUnionID相同。应用获取GroupUnionID流程如下：
 
 1. 开发者账号加入同一关联主体账号组。

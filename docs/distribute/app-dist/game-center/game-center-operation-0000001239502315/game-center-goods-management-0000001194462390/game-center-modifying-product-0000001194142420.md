@@ -2,6 +2,9 @@
 title: "修改应用内商品"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-modifying-product-0000001194142420
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-modifying-product-0000001194142420
+last_sync: 2026-06-07
+sync_hash: bf309efa
 ---
 import MergeTable from "@site/src/components/MergeTable";
 

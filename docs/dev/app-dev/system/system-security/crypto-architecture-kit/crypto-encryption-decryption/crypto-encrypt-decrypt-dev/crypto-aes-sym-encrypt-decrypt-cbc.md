@@ -2,9 +2,10 @@
 title: "使用AES对称密钥（CBC模式）加解密(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-aes-sym-encrypt-decrypt-cbc
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-aes-sym-encrypt-decrypt-cbc
+last_sync: 2026-06-07
+sync_hash: 3bdb8db9
 ---
-
-
 对应的算法规格请参见[对称密钥加解密算法规格：AES](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-spec/crypto-sym-encrypt-decrypt-spec#aes)。
 
 **加密**

@@ -2,9 +2,10 @@
 format: md
 title: "在本地模拟器中卸载应用显示成功，但实际未卸载成功"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-4
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-4
+last_sync: 2026-06-07
+sync_hash: c6ee653d
 ---
-
-
 **问题现象**
 
 通过桌面菜单卸载应用，显示卸载成功，但实际上未卸载。

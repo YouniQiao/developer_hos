@@ -3,9 +3,10 @@ title: "语法错误码"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-errorcode-00305
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-errorcode-00305
+last_sync: 2026-06-07
+sync_hash: 7f3958de
 ---
-
-
 # 语法错误码
 
 #### 00305001 ArkTS语法检查报错

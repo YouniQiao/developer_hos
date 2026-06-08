@@ -2,9 +2,10 @@
 title: "ASCF运行时"
 original_url: /docs/dev/atomic-dev/ascf/ascf-release-note/release-note-ascf-runtime
 format: md
+upstream_id: dev/atomic-dev/ascf/ascf-release-note/release-note-ascf-runtime
+last_sync: 2026-06-07
+sync_hash: c95d26fa
 ---
-
-
 ## 1.0.23
 
 **发布日期**：2026/04/29

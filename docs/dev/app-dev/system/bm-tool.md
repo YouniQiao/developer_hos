@@ -2,9 +2,10 @@
 title: "bm工具"
 original_url: /docs/dev/app-dev/system/bm-tool
 format: md
+upstream_id: dev/app-dev/system/bm-tool
+last_sync: 2026-06-07
+sync_hash: d820874e
 ---
-
-
 Bundle Manager（包管理工具，简称bm）是实现应用安装、卸载、更新、查询等功能的工具，bm为开发者提供基本的应用安装包的调试能力。
 
 ## 环境要求（hdc工具）
@@ -65,7 +66,7 @@ bm install [-h] [-p filePath] [-r] [-w waitingTime] [-s hspDirPath] [-u userId] 
 | -w | 可选参数，安装HAP时指定bm工具等待时间，最小的等待时长为180s，最大的等待时长为600s, 默认缺省为180s。 |
 | -u | 可选参数，指定[用户](#userid)，默认在当前活跃用户下安装应用。仅支持在当前活跃用户或0用户下安装。  **说明：**  如果当前活跃用户是100，使用命令bm install -p /data/local/tmp/ohos.app.hap -u 102安装时，只会在当前活跃用户100下安装应用。 |
 | -d | 可选参数，允许应用降级安装，即设备已安装较高版本的应用，也可以覆盖安装较低版本的应用。仅支持签名证书分发类型为app\_gallery或者签名证书类型为debug的三方应用降级安装。从API version 23开始支持。 |
-| -g | 可选参数，安装签名证书类型为debug的应用时自动授予[user\_grant](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#user_grant用户授权)和[manual\_settings](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#manual_settings手动设置授权)权限。  仅对[开发者模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode#section530763213432)下的签名证书类型为debug的应用生效。可以通过[Profile签名文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-overview-0000002283260125)中的type字段查看签名证书类型。  签名证书类型为debug的应用更新为签名证书类型为release的应用时取消已授予的[user\_grant](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#user_grant用户授权)和[manual\_settings](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#manual_settings手动设置授权)权限。从API version 24开始支持。 |
+| -g | 可选参数，安装签名证书类型为debug的应用时自动授予[user\_grant](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#user_grant用户授权)和[manual\_settings](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#manual_settings手动设置授权)权限。  仅对[开发者模式](/docs/tools/coding-debug/ide-developer-mode#section530763213432)下的签名证书类型为debug的应用生效。可以通过[Profile签名文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-overview-0000002283260125)中的type字段查看签名证书类型。  签名证书类型为debug的应用更新为签名证书类型为release的应用时取消已授予的[user\_grant](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#user_grant用户授权)和[manual\_settings](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#manual_settings手动设置授权)权限。从API version 24开始支持。 |
 
 示例：
 
@@ -522,9 +523,9 @@ HAP包签名文件存在异常。
 
 **处理步骤**
 
-方法一. 使用[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
+方法一. 使用[自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
 
-方法二. 使用手动签名，请参考[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+方法二. 使用手动签名，请参考[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)。
 
 ### 9568320 签名文件不存在
 
@@ -542,13 +543,13 @@ HAP/HSP包没有签名。
 
 **处理步骤**
 
-请开发者根据实际场景选择自动签名或者手动签名，例如无法连接互联网的情况下推荐使用手动签名方式，详情参考[使用场景说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section54361623194519)。
+请开发者根据实际场景选择自动签名或者手动签名，例如无法连接互联网的情况下推荐使用手动签名方式，详情参考[使用场景说明](/docs/tools/coding-debug/ide-signing#section54361623194519)。
 
-方法一. 使用[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
+方法一. 使用[自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
 
-方法二. 使用手动签名，请参考[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+方法二. 使用手动签名，请参考[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)。
 
-方法三. 如果安装APP时报这个错误码，需要在[工程级build-profile.json5文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app)里配置[packOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section03812484215)的appWithSignedPkg属性为true，保证APP里的HAP/HSP有签名。
+方法三. 如果安装APP时报这个错误码，需要在[工程级build-profile.json5文件](/docs/tools/coding-debug/ide-hvigor-build-profile-app)里配置[packOptions](/docs/tools/coding-debug/ide-hvigor-build-profile-app#section03812484215)的appWithSignedPkg属性为true，保证APP里的HAP/HSP有签名。
 
 ### 9568321 签名文件解析失败
 
@@ -566,9 +567,9 @@ HAP包签名文件存在异常。
 
 **处理步骤**
 
-方法一. 使用[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
+方法一. 使用[自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
 
-方法二. 使用手动签名，请参考[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+方法二. 使用手动签名，请参考[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)。
 
 ### 9568323 签名摘要验证未通过
 
@@ -586,9 +587,9 @@ HAP包签名不正确。
 
 **处理步骤**
 
-方法一. 使用[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
+方法一. 使用[自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
 
-方法二. 使用手动签名，请参考[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+方法二. 使用手动签名，请参考[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)。
 
 ### 9568324 签名完整性校验未通过
 
@@ -606,9 +607,9 @@ HAP包签名不正确。
 
 **处理步骤**
 
-方法一. 使用[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
+方法一. 使用[自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
 
-方法二. 使用手动签名，请参考[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+方法二. 使用手动签名，请参考[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)。
 
 ### 9568326 签名公钥存在异常
 
@@ -626,9 +627,9 @@ HAP包签名不正确。
 
 **处理步骤**
 
-方法一. 使用[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
+方法一. 使用[自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
 
-方法二. 使用手动签名，请参考[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+方法二. 使用手动签名，请参考[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)。
 
 ### 9568327 签名获取异常
 
@@ -646,9 +647,9 @@ HAP包签名不正确。
 
 **处理步骤**
 
-方法一. 使用[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
+方法一. 使用[自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
 
-方法二. 使用手动签名，请参考[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+方法二. 使用手动签名，请参考[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)。
 
 ### 9568328 未找到配置文件区块
 
@@ -666,9 +667,9 @@ HAP包签名不正确。
 
 **处理步骤**
 
-方法一. 使用[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
+方法一. 使用[自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
 
-方法二. 使用手动签名，请参考[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+方法二. 使用手动签名，请参考[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)。
 
 ### 9568330 初始化签名源失败
 
@@ -686,9 +687,9 @@ HAP包签名不正确。
 
 **处理步骤**
 
-方法一. 使用[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
+方法一. 使用[自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
 
-方法二. 使用手动签名，请参考[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+方法二. 使用手动签名，请参考[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)。
 
 ### 9568257 签名文件Pkcs7校验失败
 
@@ -710,9 +711,9 @@ error: fail to verify pkcs7 file.
 
 **处理步骤**
 
-方法一. 使用[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
+方法一. 使用[自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
 
-方法二. 使用手动签名，请参考[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+方法二. 使用手动签名，请参考[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)。
 
 ### 9568344 解析配置文件失败
 
@@ -1007,7 +1008,7 @@ error: signature verification failed due to not trusted app source.
 **可能原因**
 
 * 场景一：签名时使用了[发布profile文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)。发布证书签名的应用不能启动调试或运行。
-* 场景二：在[build-profile.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section153288223224)文件中，配置的profile文件与.cer文件不匹配。
+* 场景二：在[build-profile.json5](/docs/tools/coding-debug/ide-hvigor-build-profile-app#section153288223224)文件中，配置的profile文件与.cer文件不匹配。
 * 场景三：签名中未包含该调试设备的UDID。
 
 **处理步骤**
@@ -1016,7 +1017,7 @@ error: signature verification failed due to not trusted app source.
 * 场景二：请确保profile文件是由配置中的.cer文件生成的，可以登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)，选择“证书、APP ID和Profile”，在左侧导航栏选择“证书、APP ID和Profile > Profile”，进入“Profile”页面，选择配置的profile文件，右侧操作点击“查看”，确认“查看Profile”页面中“归属证书”是否与配置的.cer文件一致。
 * 场景三：
 
-1. 使用[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
+1. 使用[自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
 
 ### 9568286 安装应用的签名证书profile文件中的类型与已安装应用的不相同
 
@@ -1053,7 +1054,7 @@ error: install failed due to insufficient disk memory.
 
 **处理步骤**
 
-查看应用安装的设备存储空间并清理，保证满足安装所需空间，再重试安装应用。模拟器上存储空间清理之后仍然失败，请尝试创建新的模拟器设备，并设置更大的存储空间，详情请参考[创建新的模拟器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-create#section1764055173710)。
+查看应用安装的设备存储空间并清理，保证满足安装所需空间，再重试安装应用。模拟器上存储空间清理之后仍然失败，请尝试创建新的模拟器设备，并设置更大的存储空间，详情请参考[创建新的模拟器](/docs/tools/coding-debug/ide-emulator-create#section1764055173710)。
 
 ### 9568289 权限请求失败导致安装失败
 
@@ -1216,8 +1217,8 @@ error: install sign info inconsistent.
 
 **可能原因**
 
-1. 设备上已安装的应用与新安装的应用中签名不一致或者多个包（HAP和HSP）之间的签名存在差异。若两个应用的签名[密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section462703710326)或[APP ID](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506#section16423184171915)中至少有一项相同，则认为它们的签名一致。如果在DevEco Studio的“Edit Configurations”中勾选了“Keep Application Data”（即不卸载应用，直接覆盖安装），并且重新进行了签名，将导致该报错。
-2. 如果某个应用被卸载但是保留了数据，那么后面安装相同包名的应用时，需要校验其签名信息的一致性。如果两者签名信息中的[密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section462703710326)和[APP ID](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506#section16423184171915)都不一致，则会导致该报错。
+1. 设备上已安装的应用与新安装的应用中签名不一致或者多个包（HAP和HSP）之间的签名存在差异。若两个应用的签名[密钥](/docs/tools/coding-debug/ide-signing#section462703710326)或[APP ID](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506#section16423184171915)中至少有一项相同，则认为它们的签名一致。如果在DevEco Studio的“Edit Configurations”中勾选了“Keep Application Data”（即不卸载应用，直接覆盖安装），并且重新进行了签名，将导致该报错。
+2. 如果某个应用被卸载但是保留了数据，那么后面安装相同包名的应用时，需要校验其签名信息的一致性。如果两者签名信息中的[密钥](/docs/tools/coding-debug/ide-signing#section462703710326)和[APP ID](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506#section16423184171915)都不一致，则会导致该报错。
 
 **处理步骤**
 
@@ -1245,7 +1246,7 @@ error: verify signature failed.
 **处理步骤**
 
 * 场景一：HSP只能给同包名的应用使用，只有集成态HSP可以给不同包名的应用使用。需要用户与三方开发者确认，三方开发者应提供集成态HSP、或同包名的HSP给用户使用。
-* 场景二：检查签名流程和签名证书，参考[应用/元服务签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
+* 场景二：检查签名流程和签名证书，参考[应用/元服务签名](/docs/tools/coding-debug/ide-signing)。
 
 ### 9568266 安装权限拒绝
 
@@ -1339,7 +1340,7 @@ error: signature file path is invalid.
 
 **处理步骤**
 
-使用[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)或者[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)重新签名后安装调试。
+使用[自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)或者[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)重新签名后安装调试。
 
 ### 9568325 由于文件过大，签名验证失败
 
@@ -1357,7 +1358,7 @@ error: signature verification failed due to oversize file.
 
 **处理步骤**
 
-使用[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)或者重新申请签名证书，在[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)重新签名后安装调试。
+使用[自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)或者重新申请签名证书，在[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)重新签名后安装调试。
 
 ### 9568336 应用调试类型与已安装应用不一致
 
@@ -2530,7 +2531,7 @@ error: Encrypted bundle cannot be installed.
 
 **处理步骤**
 
-1. 使用[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)或者[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)重新签名后安装调试。
+1. 使用[自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)或者[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)重新签名后安装调试。
 
 ### 9568417 签名校验失败
 
@@ -2550,7 +2551,7 @@ error: bundle cannot be installed because the appId is not same with preinstalle
 
 方法一：重新签名。
 
-通过重新签名，确保应用签名信息中的[密钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section462703710326)和[APP ID](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506#section16423184171915)至少有一项与预置应用保持一致。
+通过重新签名，确保应用签名信息中的[密钥](/docs/tools/coding-debug/ide-signing#section462703710326)和[APP ID](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506#section16423184171915)至少有一项与预置应用保持一致。
 
 如果直接使用DevEco Studio自动签名，由于生成的签名信息均为随机值，与预置应用不匹配，将导致应用安装失败。因此，您需要用之前[申请发布Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)的账号，重新[申请调试Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)或直接使用发布Profile对应用重新签名，完成签名后，重新安装应用。
 
@@ -2646,7 +2647,7 @@ error: Failed to install the HAP because the device is unauthorized, make sure t
 
 方式一：根据[指导](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)将当前设备添加到调试类型证书或使用[发布类型证书](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)重新签名。
 
-方式二：重新[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)。
+方式二：重新[自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)。
 
 ### 9568380 卸载系统应用失败
 
@@ -2762,7 +2763,7 @@ error: Install incompatible signature info.
 
 **处理步骤**
 
-重新签名，使多个HAP包签名信息一致。参考[应用/元服务签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
+重新签名，使多个HAP包签名信息一致。参考[应用/元服务签名](/docs/tools/coding-debug/ide-signing)。
 
 ### 9568334 模块名称重复
 
@@ -2794,7 +2795,7 @@ HAP包没有配置文件，导致安装失败。
 
 **可能原因**
 
-[module.json](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)、[pack.info](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-compile-build#section43931054115513)等配置文件缺失。
+[module.json](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)、[pack.info](/docs/tools/coding-debug/ide-compile-build#section43931054115513)等配置文件缺失。
 
 **处理步骤**
 
@@ -2812,7 +2813,7 @@ error: Install parse bad profile.
 
 **可能原因**
 
-[module.json](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)、[pack.info](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-compile-build#section43931054115513)等配置文件格式异常。
+[module.json](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)、[pack.info](/docs/tools/coding-debug/ide-compile-build#section43931054115513)等配置文件格式异常。
 
 **处理步骤**
 
@@ -2830,7 +2831,7 @@ error: Install parse profile prop type error.
 
 **可能原因**
 
-[module.json](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)、[pack.info](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-compile-build#section43931054115513)等配置文件存在数据类型错误的字段。
+[module.json](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)、[pack.info](/docs/tools/coding-debug/ide-compile-build#section43931054115513)等配置文件存在数据类型错误的字段。
 
 **处理步骤**
 
@@ -2848,7 +2849,7 @@ error: too large size of string or array type element in the profile.
 
 **可能原因**
 
-[module.json](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)、[pack.info](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-compile-build#section43931054115513)等配置文件存在字符串长度或者数组大小过大的字段。
+[module.json](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)、[pack.info](/docs/tools/coding-debug/ide-compile-build#section43931054115513)等配置文件存在字符串长度或者数组大小过大的字段。
 
 **处理步骤**
 
@@ -2895,14 +2896,14 @@ error: install parse native so failed.
 
 **处理步骤**
 
-1. 将设备或模拟器与DevEco Studio进行连接，具体指导及要求可查看[运行应用/元服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device)。
+1. 将设备或模拟器与DevEco Studio进行连接，具体指导及要求可查看[运行应用/元服务](/docs/tools/coding-debug/ide-run-device)。
 2. 在命令行执行如下[hdc命令](#环境要求hdc工具)，查询设备支持的Abi列表。
 
    ```
    hdc shell
    param get const.product.cpu.abilist
    ```
-3. 根据查询返回结果，检查[模块级build-profile.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile)文件中的[“abiFilters”参数](/docs/dev/ndk-dev/ohos-abi#在编译架构中指定abi)中的配置，规则如下：
+3. 根据查询返回结果，检查[模块级build-profile.json5](/docs/tools/coding-debug/ide-hvigor-build-profile)文件中的[“abiFilters”参数](/docs/dev/ndk-dev/ohos-abi#在编译架构中指定abi)中的配置，规则如下：
 
    * 若返回结果为armeabi-v7a/armeabi/arm64-v8a/x86/x86\_64中的一个或多个，需要在“abiFilters”参数中至少包含返回结果中的一个Abi类型。
 
@@ -3083,7 +3084,7 @@ error: install failed due to U1Enabled can not change.
 
 **处理步骤**
 
-方案一：重新签名，签名过程中，请参考[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)的支持ACL权限、或者[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)的使用ACL的签名配置指导进行配置，确保待安装应用与已安装应用配置一致。
+方案一：重新签名，签名过程中，请参考[自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)的支持ACL权限、或者[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)的使用ACL的签名配置指导进行配置，确保待安装应用与已安装应用配置一致。
 
 方案二：先卸载设备上已安装的应用（PC/2in1设备需要确保所有用户下都卸载完成，手机/平板侧需要关注隐私空间和主用户下是否卸载完成），再尝试安装待安装应用。
 
@@ -3103,7 +3104,7 @@ error: Install failed due to the U1Enabled is not same in all haps.
 
 **处理步骤**
 
-重新签名，签名过程中，请参考[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)的支持ACL权限、或者[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)的使用ACL的签名配置指导进行配置，使多个HAP包签名信息中allowed-acls的U1Enabled信息一致。
+重新签名，签名过程中，请参考[自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)的支持ACL权限、或者[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)的使用ACL的签名配置指导进行配置，使多个HAP包签名信息中allowed-acls的U1Enabled信息一致。
 
 ### 9568445 一次仅支持安装一个APP包
 
@@ -3180,9 +3181,9 @@ APP包签名不正确或没有签名。
 
 **处理步骤**
 
-方法一. 使用[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
+方法一. 使用[自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)。在连接设备后，重新为应用进行签名。
 
-方法二. 使用手动签名，请参考[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+方法二. 使用手动签名，请参考[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)。
 
 ### 9568449 二进制文件校验失败
 
@@ -3216,7 +3217,7 @@ error: Failed to install because the bundle must be debug type.
 
 **可能原因**
 
-[开发者模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode#section530763213432)下使用[-g参数](#安装命令install)授权签名证书类型为非debug的应用。可以通过[Profile签名文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-overview-0000002283260125)中的type字段来查看签名证书类型。
+[开发者模式](/docs/tools/coding-debug/ide-developer-mode#section530763213432)下使用[-g参数](#安装命令install)授权签名证书类型为非debug的应用。可以通过[Profile签名文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-overview-0000002283260125)中的type字段来查看签名证书类型。
 
 **处理步骤**
 

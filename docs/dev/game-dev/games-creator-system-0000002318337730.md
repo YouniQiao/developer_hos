@@ -2,9 +2,10 @@
 title: "系统能力适配"
 original_url: /docs/dev/game-dev/games-creator-system-0000002318337730
 format: md
+upstream_id: dev/game-dev/games-creator-system-0000002318337730
+last_sync: 2026-06-07
+sync_hash: 4c3f3987
 ---
-
-
 本文介绍Cocos Creator 2.X游戏如何适配系统能力。
 
 由于HarmonyOS 5.0及以上系统使用的协议栈和其它系统不同，因此游戏原有的系统方法，例如获取剪切板、获取电量等在HarmonyOS 5.0及以上平台可能不支持，您需根据当前游戏的实际使用情况进行替换适配。

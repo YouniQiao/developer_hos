@@ -2,9 +2,10 @@
 title: "申请使用已发布的POI"
 original_url: /docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-apply-publish-poi-0000002382902157
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-apply-publish-poi-0000002382902157
+last_sync: 2026-06-07
+sync_hash: 0f4e3bf2
 ---
-
-
 当您创建POI时，如果提示**该位置已被其他应用使用**，则表示该POI位置已被其他应用发布过。您需发送邮件申请使用该POI，华为方收到邮件后，将在15个工作日内完成审核，并邮件告知您审核结果。
 
 申请邮件格式要求如下：

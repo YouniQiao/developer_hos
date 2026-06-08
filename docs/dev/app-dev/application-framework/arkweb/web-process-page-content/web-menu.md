@@ -2,9 +2,10 @@
 title: "使用Web组件菜单处理网页内容"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-menu
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-process-page-content/web-menu
+last_sync: 2026-06-07
+sync_hash: cf22a21e
 ---
-
-
 菜单作为用户交互的关键组件，其作用是构建清晰的导航体系，通过结构化布局展示功能入口，使用户能够迅速找到目标内容或执行操作。作为人机交互的重要枢纽，它显著提升了Web组件的可访问性和用户体验，是应用设计中必不可少的部分。Web组件菜单类型包括[文本选中菜单](/docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-menu#文本选中菜单)、[上下文菜单](/docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-menu#上下文菜单)和[自定义菜单](/docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-menu#自定义菜单)，应用可根据具体需求灵活选择。
 
 | 菜单类型 | 目标元素 | 响应类型 | 是否支持自定义 |

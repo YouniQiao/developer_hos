@@ -2,9 +2,10 @@
 title: "离开房间"
 original_url: /docs/dev/game-dev/games-gamemme-leaveroom-csharp-0000002359547066
 format: md
+upstream_id: dev/game-dev/games-gamemme-leaveroom-csharp-0000002359547066
+last_sync: 2026-06-07
+sync_hash: ce00dbc0
 ---
-
-
 进入房间后，不论是否已进入游戏中，房间内玩家均可离开房间。
 
 ![](./img/b0f2e480.png)

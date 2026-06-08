@@ -3,9 +3,10 @@ title: "@performance/init-list-component"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-init-list-component
 format: md
+upstream_id: tools/coding-debug/ide-init-list-component
+last_sync: 2026-06-07
+sync_hash: a781783a
 ---
-
-
 # @performance/init-list-component
 
 List组件在使用时，建议同时定义width和height属性。

@@ -2,8 +2,11 @@
 title: "使用RSA密钥对分段签名验签（PKCS1模式）(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-rsa-sign-sig-verify-pkcs1-by-segment
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-rsa-sign-sig-verify-pkcs1-by-segment
+last_sync: 2026-06-07
+sync_hash: 309086d9
+upstream_hash: e0199d2fd8a3
 ---
-
 
 对应的算法规格请查看[签名验签算法规格：RSA](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-overview#rsa)。
 

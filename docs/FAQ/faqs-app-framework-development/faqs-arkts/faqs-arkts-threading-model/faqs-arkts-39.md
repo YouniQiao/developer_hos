@@ -2,9 +2,10 @@
 format: md
 title: "ArkTS的线程机制是怎么样的？每个线程是一个单独的JS引擎吗？如果每个线程开销较小的话，为什么要限制线程数量"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-39
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-39
+last_sync: 2026-06-07
+sync_hash: da03e23f
 ---
-
-
 设备核数有限，线程数过多会导致调度和内存开销增大。
 
 HarmonyOS提供了ArkTS任务池和FFRT任务池，支持系统统一调度。

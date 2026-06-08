@@ -3,8 +3,11 @@ title: "调试场景说明"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-arkts-worker-taskpool
 format: md
+upstream_id: tools/coding-debug/ide-debug-arkts-worker-taskpool
+last_sync: 2026-06-07
+sync_hash: d86bbe7d
+upstream_hash: 5a4e5f36c8ba
 ---
-
 
 # 调试场景说明
 

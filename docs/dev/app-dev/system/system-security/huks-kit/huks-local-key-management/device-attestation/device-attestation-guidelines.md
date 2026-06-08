@@ -2,8 +2,11 @@
 title: "创建密钥确立可信凭证"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/device-attestation-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/device-attestation-guidelines
+last_sync: 2026-06-07
+sync_hash: ae0e0559
+upstream_hash: c4b1e743657c
 ---
-
 
 ## 概述
 
@@ -40,5 +43,5 @@ format: md
 
 在“签名验签识别真实请求”流程中，为了便于应用服务器查找应用公钥，建议为应用公钥生成一个唯一的应用公钥ID，并在应用服务器中保存应用公钥ID和应用公钥的对应关系。同时，应用服务器应该返回应用公钥ID给应用，并由应用存储应用ID。
 
-* **[应用端开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-apps)**
-* **[服务器端开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-servers)**
+* **[应用端开发](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/attestation-signature-verification/attestation-signature-verification-apps)**
+* **[服务器端开发](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/attestation-signature-verification/attestation-signature-verification-servers)**

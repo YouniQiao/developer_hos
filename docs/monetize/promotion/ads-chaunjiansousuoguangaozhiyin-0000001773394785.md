@@ -3,6 +3,10 @@ title: "搜索广告投放指南"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-chaunjiansousuoguangaozhiyin-0000001773394785
 format: md
+upstream_id: monetize/promotion/ads-chaunjiansousuoguangaozhiyin-0000001773394785
+last_sync: 2026-06-07
+sync_hash: a6c04fbf
+upstream_hash: 7741e85d1a4f
 ---
 
 # 搜索广告投放指南

@@ -2,9 +2,10 @@
 format: md
 title: "ArcSwiper如何适配表冠"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-439
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-439
+last_sync: 2026-06-07
+sync_hash: f6b3dff0
 ---
-
-
 可以滑动的组件需要适配旋转表冠，默认支持的组件在获焦时即可响应表冠事件。
 
 1. 默认支持组件只需要添加.focusable(true)、 .focusOnTouch(true)、.defaultFocus(true)属性获焦即可响应。

@@ -2,9 +2,10 @@
 title: "数据迁移"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-data-migration
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-data-migration
+last_sync: 2026-06-07
+sync_hash: d64024f4
 ---
-
-
 # 数据迁移
 
 ohpm-repo**2.2.0**版本开始支持数据迁移功能。在ohpm-repo配置文件中，db是元数据存储的配置项，store是文件存储的配置项，db和store不能随意搭配，需要符合下面表格中的匹配规范。如果需要改变db和store的存储方式，需要进行数据迁移操作。

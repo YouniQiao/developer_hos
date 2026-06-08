@@ -1,8 +1,10 @@
 ---
 title: "app.json5配置文件"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/app-configuration-file
+last_sync: 2026-06-07
+sync_hash: eaeaf262
 ---
-
 应用级配置文件，包含应用的全局配置信息和特定设备类型的配置信息，用于向编译工具、操作系统和应用市场提供应用的基本信息。每个工程下必须包含一个app.json5配置文件，文件所在目录为工程名称/AppScope/app.json5。
 
 ![](./img/736464ba.png)
@@ -80,12 +82,12 @@ app.json5配置文件包含以下标签。
 | versionCode | 标识应用的版本号，取值范围为0~2147483647。此数字仅用于确定某个版本是否比另一个版本新，数值越大表示版本越新。  开发者可以将该值设置为任何正整数，但是必须确保应用的新版本都使用比旧版本更大的值。 | 数值 | 该标签不可缺省。 |
 | versionName | 标识向用户展示的应用版本号。  取值为长度不超过127字节的字符串：  1. 仅由数字和点构成，推荐采用“A.B.C.D”四段式的形式。四段式推荐的含义如下所示。  第一段：主版本号/Major，重大修改的版本，如实现新的大功能或重大变化。  第二段：次版本号/Minor，表示实现较突出的特点，如新功能添加或大问题修复。  第三段：特性版本号/Feature，标识规划的新版本特性。  第四段：修订版本号/Patch，表示维护版本，如修复bug。  2. 包含花括号{}的字符串，且字符串只能包含数字、字母、下划线、点号、花括号。 | 字符串 | 该标签不可缺省。 |
 | minCompatibleVersionCode | 标识应用能够兼容的最低历史版本号，用于应用多设备之间协同、数据迁移、跨设备兼容性判断，该标签为预留字段，暂未使用。取值范围为0~2147483647。 | 数值 | 该标签可缺省，缺省值等于versionCode标签值。 |
-| minAPIVersion | 标识应用运行所需的最小SDK API版本。取值范围为0~2147483647。 | 数值 | 该标签在应用编译构建时自动生成，手动配置无效，对应[工程级build-profile.json5文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section45865492619)中的compatibleSdkVersion标签。相关标签与应用兼容性关系参见[应用兼容性说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/app-compatibility)。 |
-| targetAPIVersion | 标识应用运行需要的API目标版本。取值范围为0~2147483647。 | 数值 | 该标签在应用编译构建时自动生成，手动配置无效，对应[工程级build-profile.json5文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section45865492619)中的targetSdkVersion标签，如果未配置targetSdkVersion标签，则由工程级build-profile.json5文件中的compileSdkVersion自动生成。相关标签与应用兼容性关系参见[应用兼容性说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/app-compatibility)。 |
+| minAPIVersion | 标识应用运行所需的最小SDK API版本。取值范围为0~2147483647。 | 数值 | 该标签在应用编译构建时自动生成，手动配置无效，对应[工程级build-profile.json5文件](/docs/tools/coding-debug/ide-hvigor-build-profile-app#section45865492619)中的compatibleSdkVersion标签。相关标签与应用兼容性关系参见[应用兼容性说明](/docs/dev/release-notes/app-compatibility)。 |
+| targetAPIVersion | 标识应用运行需要的API目标版本。取值范围为0~2147483647。 | 数值 | 该标签在应用编译构建时自动生成，手动配置无效，对应[工程级build-profile.json5文件](/docs/tools/coding-debug/ide-hvigor-build-profile-app#section45865492619)中的targetSdkVersion标签，如果未配置targetSdkVersion标签，则由工程级build-profile.json5文件中的compileSdkVersion自动生成。相关标签与应用兼容性关系参见[应用兼容性说明](/docs/dev/release-notes/app-compatibility)。 |
 | apiReleaseType | 标识应用运行需要的API目标版本的类型，采用字符串类型表示。取值为“CanaryN”、“BetaN”或者“ReleaseN”，其中，N代表大于零的整数。  - Canary：受限发布的版本。  - Beta：公开发布的Beta版本。  - Release：公开发布的正式版本。 | 字符串 | 应用编译构建时根据当前使用的SDK的版本类型自动生成。手动配置无效。 |
 | accessible | 标识应用是否能访问应用的安装目录，仅预置的系统应用配置生效，三方应用配置不生效。  - true：当前应用可以访问应用的安装目录。  - false：当前应用不可以访问应用的安装目录。 | 布尔值 | 该标签可缺省，缺省值为false。 |
-| multiProjects | 标识当前工程是否支持多个工程的联合开发。  - true：当前工程支持多个工程的联合开发。多工程开发可参考[多工程构建](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-multi-projects)。  - false：当前工程不支持多个工程的联合开发。 | 布尔值 | 该标签在应用编译构建时自动生成，手动配置无效，对应[工程级build-profile.json5文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app)中的multiProjects标签。 |
-| asanEnabled | 标识应用程序是否开启[asan检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-asan)，用于辅助定位buffer越界造成的crash问题。  - true：当前工程开启asan检测。  - false：当前工程不开启asan检测。 | 布尔值 | 该标签可缺省，缺省值为false。 |
+| multiProjects | 标识当前工程是否支持多个工程的联合开发。  - true：当前工程支持多个工程的联合开发。多工程开发可参考[多工程构建](/docs/tools/coding-debug/ide-hvigor-multi-projects)。  - false：当前工程不支持多个工程的联合开发。 | 布尔值 | 该标签在应用编译构建时自动生成，手动配置无效，对应[工程级build-profile.json5文件](/docs/tools/coding-debug/ide-hvigor-build-profile-app)中的multiProjects标签。 |
+| asanEnabled | 标识应用程序是否开启[asan检测](/docs/tools/coding-debug/ide-asan)，用于辅助定位buffer越界造成的crash问题。  - true：当前工程开启asan检测。  - false：当前工程不开启asan检测。 | 布尔值 | 该标签可缺省，缺省值为false。 |
 | tablet | 标识对tablet设备做的特殊配置，可以配置的属性标签有上文提到的：minAPIVersion。  如果使用该属性对tablet设备做了特殊配置，则应用在tablet设备中会采用此处配置的属性值，并忽略在app.json5公共区域的属性值。 | 对象 | 该标签可缺省，缺省时tablet设备使用app.json5公共区域的属性值。 |
 | tv | 标识对tv设备做的特殊配置，可以配置的属性标签有上文提到的：minAPIVersion。  如果使用该属性对tv设备做了特殊配置，则应用在tv设备中会采用此处配置的属性值，并忽略在app.json5公共区域的属性值。 | 对象 | 该标签可缺省，缺省时tv设备使用app.json5公共区域的属性值。 |
 | wearable | 标识对wearable设备做的特殊配置，可以配置的属性标签有上文提到的：minAPIVersion。  如果使用该属性对wearable设备做了特殊配置，则应用在wearable设备中会采用此处配置的属性值，并忽略在app.json5公共区域的属性值。 | 对象 | 该标签可缺省，缺省时wearable设备使用app.json5公共区域的属性值。 |
@@ -99,9 +101,9 @@ app.json5配置文件包含以下标签。
 | [appEnvironments](#appenvironments标签) | 标识当前应用配置的应用环境变量。 | 对象数组 | 该标签可缺省，缺省值为空。 |
 | maxChildProcess | 标识当前应用自身可创建的子进程的最大个数，取值范围为0到512，0表示不限制，当应用有多个模块时，以entry模块的配置为准。 | 数值 | 该标签可缺省，缺省时使用系统配置的默认值512。 |
 | [multiAppMode](#multiappmode标签) | 标识当前应用配置的多开模式。仅bundleType为app的应用的entry或feature模块配置有效，存在多个模块时，以entry模块的配置为准。 | 对象 | 该标签可缺省，缺省值为空。 |
-| hwasanEnabled | 标识应用程序是否开启[HWAsan检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hwasan)。HWAsan(HardWare-assisted AddressSanitizer)是利用Top-Byte-Ignore特性实现的增强版Asan，与Asan相比HWAsan的内存开销更低，检测到的内存错误范围更大。  - true：当前工程开启HWAsan检测。  - false：当前工程不开启HWAsan检测。  **说明：**  从API version 14开始，支持该标签。 | 布尔值 | 该标签可缺省，缺省值为false。 |
+| hwasanEnabled | 标识应用程序是否开启[HWAsan检测](/docs/tools/coding-debug/ide-hwasan)。HWAsan(HardWare-assisted AddressSanitizer)是利用Top-Byte-Ignore特性实现的增强版Asan，与Asan相比HWAsan的内存开销更低，检测到的内存错误范围更大。  - true：当前工程开启HWAsan检测。  - false：当前工程不开启HWAsan检测。  **说明：**  从API version 14开始，支持该标签。 | 布尔值 | 该标签可缺省，缺省值为false。 |
 | tsanEnabled | 标识应用程序是否开启使用TSan检测线程错误。  [TSan（ThreadSanitizer）](/docs/quality/stability-tsan-detection)是一个检测数据竞争的工具。  - true：当前工程开启TSan检测。  - false：当前工程不开启TSan检测。 | 布尔值 | 该标签可缺省，缺省值为false。 |
-| ubsanEnabled | 标识应用程序是否[使用UBSan检测未定义行为](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ubsan)。  UBsan(Undefined Behavior Sanitizer)是一个用于运行时检测程序中未定义行为的工具，旨在帮助开发人员发现代码中潜在的错误和漏洞。  - true：当前工程开启UBsan检测。  - false：当前工程不开启UBsan检测。  **说明：**  从API version 14开始，支持该标签。 | 布尔值 | 该标签可缺省，缺省值为false。 |
+| ubsanEnabled | 标识应用程序是否[使用UBSan检测未定义行为](/docs/tools/coding-debug/ide-ubsan)。  UBsan(Undefined Behavior Sanitizer)是一个用于运行时检测程序中未定义行为的工具，旨在帮助开发人员发现代码中潜在的错误和漏洞。  - true：当前工程开启UBsan检测。  - false：当前工程不开启UBsan检测。  **说明：**  从API version 14开始，支持该标签。 | 布尔值 | 该标签可缺省，缺省值为false。 |
 | cloudFileSyncEnabled | 标识当前应用是否启用端云文件同步能力。  - true：当前应用启用端云文件同步能力。  - false：当前应用不启用端云文件同步能力。 | 布尔值 | 该标签可缺省，缺省值为false。 |
 | cloudStructuredDataSyncEnabled | 标识当前应用是否启用端云结构化数据同步能力。  - true：当前应用启用端云结构化数据同步能力。  - false：当前应用不启用端云结构化数据同步能力。  **说明：**  从API version 20开始，支持该标签。 | 布尔值 | 该标签可缺省，缺省值为false。 |
 | [configuration](#configuration标签) | 标识当前应用字体大小跟随系统配置的能力。  该标签是一个profile文件资源，用于指定描述应用字体大小跟随系统变更的配置文件。 | 字符串 | 该标签可缺省，缺省时configuration使用不跟随系统默认设定。 |

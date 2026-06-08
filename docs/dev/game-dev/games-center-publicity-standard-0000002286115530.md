@@ -3,9 +3,10 @@ title: "宣传素材规范及示例"
 original_url: /docs/dev/game-dev/games-center-publicity-standard-0000002286115530
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-center-publicity-standard-0000002286115530
+last_sync: 2026-06-07
+sync_hash: ad5495b4
 ---
-
-
 | 华为游戏中心素材 |  | 尺寸 | 格式 | 大小要求 | 规范及示例材料下载 |
 | --- | --- | --- | --- | --- | --- |
 | 华为游戏中心闪屏 | 横版 | 480x320 | JPG | \&lt; 800KB | [游戏中心闪屏规范及示例下载](https://communityfile-drcn.op.hicloud.com/FileServer/getFile/cmtyManage/011/111/111/0000000000011111111.20200117105839.48607100430822331412511141034351%3A50510629025427%3A2800%3A8BE6F1ACE864BE52F15314FF36F62D8FE1523DB7E766D97A9FC7500C8A5AB9FA.zip?needInitFileName=true) |

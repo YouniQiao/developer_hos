@@ -2,9 +2,10 @@
 title: "通用规格"
 original_url: /docs/experience-suggestions/compatibility/system-features/general-specifications
 format: md
+upstream_id: experience-suggestions/compatibility/system-features/general-specifications
+last_sync: 2026-06-07
+sync_hash: 4b338b7b
 ---
-
-
 # 通用规格
 
 |  |  |

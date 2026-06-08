@@ -2,9 +2,10 @@
 title: "通过用户首选项实现数据持久化 (C/C++)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/app-data-persistence/preferences-guidelines
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/app-data-persistence/preferences-guidelines
+last_sync: 2026-06-07
+sync_hash: 5f13f5c2
 ---
-
-
 ## 场景介绍
 
 用户首选项（Preferences）模块主要提供轻量级Key-Value操作，支持本地存储少量数据，数据存储在文件和内存中，访问速度快。如果存在大量数据场景，请考虑使用键值型数据库或关系型数据库。

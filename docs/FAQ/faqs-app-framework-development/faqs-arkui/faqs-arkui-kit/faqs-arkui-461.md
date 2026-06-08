@@ -2,9 +2,10 @@
 format: md
 title: "AppStorage里面存储数据，如何保证不会有内存泄漏"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-461
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-461
+last_sync: 2026-06-07
+sync_hash: 76d6d47c
 ---
-
-
 **问题描述**
 
 在entryability里用AppStorage存储数据，'当需要访问数据时进行读取会存在内存泄漏吗？

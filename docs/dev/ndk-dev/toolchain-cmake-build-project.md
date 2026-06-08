@@ -2,9 +2,10 @@
 title: "CMake构建工程配置HarmonyOS编译工具链"
 original_url: /docs/dev/ndk-dev/toolchain-cmake-build-project
 format: md
+upstream_id: dev/ndk-dev/toolchain-cmake-build-project
+last_sync: 2026-06-07
+sync_hash: f4c5a99c
 ---
-
-
 ## 概述
 
 CMake是一个跨平台的构建工具，用于管理构建过程、编译、链接和打包软件项目，它可以生成Makefile等用于不同操作系统和编译器的构建脚本。CMake的配置过程是跨平台的，因此可以在不同的操作系统上运行，例如Linux、Windows和macOS。

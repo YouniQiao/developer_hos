@@ -3,9 +3,10 @@ title: "案例：使用Frame模板分析应用卡顿问题"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-frame-case
 format: md
+upstream_id: tools/coding-debug/ide-frame-case
+last_sync: 2026-06-07
+sync_hash: 9ebaf421
 ---
-
-
 # 案例：使用Frame模板分析应用卡顿问题
 
 本案例介绍如何判断应用存在卡顿帧，再通过调用栈和trace信息分析应用运行逻辑，找出应用卡顿的原因。

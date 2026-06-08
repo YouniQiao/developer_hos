@@ -2,9 +2,10 @@
 title: "分析APP FREEZE问题"
 original_url: /docs/distribute/agc/agc-help-apms-crash-0000002236333918/agc-help-apms-crash-appfreeze-analyse-0000002236493746
 format: md
+upstream_id: distribute/agc/agc-help-apms-crash-0000002236333918/agc-help-apms-crash-appfreeze-analyse-0000002236493746
+last_sync: 2026-06-07
+sync_hash: ddcbea1e
 ---
-
-
 用户在使用应用时会出现点击没反应、应用无响应等情况，其超过一定时间限制后即被定义为应用无响应（APP FREEZE）。OS操作系统提供了检测应用无响应的机制，并可生成APP FREEZE日志供应用开发分析。
 
 #### 查看APP FREEZE基本数据

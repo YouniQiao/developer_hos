@@ -2,9 +2,10 @@
 title: "素材规范"
 original_url: /docs/distribute/agc/agc-help-appendix-0000002312305161/agc-help-app-visual-asset-spec-0000002277607976
 format: md
+upstream_id: distribute/agc/agc-help-appendix-0000002312305161/agc-help-app-visual-asset-spec-0000002277607976
+last_sync: 2026-06-07
+sync_hash: 20d3aefc
 ---
-
-
 AGC对您上传的应用素材数量、大小、分辨率等有相关限制。上传前，建议您先仔细了解素材规范。
 
 #### HarmonyOS应用

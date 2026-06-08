@@ -3,9 +3,10 @@ title: "配置调试签名"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-signing
 format: md
+upstream_id: tools/coding-debug/ide-signing
+last_sync: 2026-06-07
+sync_hash: 64672623
 ---
-
-
 # 配置调试签名
 
 针对开发调试场景，DevEco Studio为开发者提供了[自动签名](#section18815157237)方案，帮助开发者高效进行调试。此外，也可以选择[手动签名](#section297715173233)方式生成调试签名。

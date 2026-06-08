@@ -2,9 +2,10 @@
 title: "事件分类"
 original_url: /docs/dev/atomic-dev/ascf/logical-layer-events/logical-layer-event-category
 format: md
+upstream_id: dev/atomic-dev/ascf/logical-layer-events/logical-layer-event-category
+last_sync: 2026-06-07
+sync_hash: 925e1310
 ---
-
-
 ASCF框架渲染层中事件分为冒泡事件和非冒泡事件：
 
 * 冒泡事件是指当一个组件上的事件被触发后，该事件会向父节点传递。

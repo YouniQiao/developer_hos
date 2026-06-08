@@ -2,9 +2,10 @@
 title: "配置隐私声明"
 original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-privacy-state-0000002458282225
 format: md
+upstream_id: distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-privacy-state-0000002458282225
+last_sync: 2026-06-07
+sync_hash: 3167ffaf
 ---
-
-
 发布小游戏时，您需要提供隐私政策，便于玩家了解小游戏收集、使用隐私数据的情况。
 
 #### 前提条件

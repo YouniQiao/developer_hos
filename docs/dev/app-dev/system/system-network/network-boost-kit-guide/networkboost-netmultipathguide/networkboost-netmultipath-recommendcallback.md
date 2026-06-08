@@ -2,9 +2,10 @@
 title: "多网建议监听"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide/networkboost-netmultipath-recommendcallback
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide/networkboost-netmultipath-recommendcallback
+last_sync: 2026-06-07
+sync_hash: 6258d3e4
 ---
-
-
 ## 场景介绍
 
 系统感知到应用可能需要使用多网络加速的场景时，如弱网、网络切换等特定场景，会给出建议。应用通过监听多网络加速的建议，决策发起多网络加速的请求。

@@ -3,8 +3,10 @@ title: "查询分析工具提供商"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-tracking2-0000001286343126
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-tracking2-0000001286343126
+last_sync: 2026-06-07
+sync_hash: 62fdfeb5
 ---
-
 # 查询分析工具提供商
 
 您通过本接口可以查询分析工具提供商。

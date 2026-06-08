@@ -2,9 +2,10 @@
 format: md
 title: "组件支持的参数类型及参数单位类型：PX、 VP、 FP 、LPX、Percentage、Resource 详细区别是什么"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-45
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-45
+last_sync: 2026-06-07
+sync_hash: 0623ddaa
 ---
-
-
 [屏幕像素单位](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#px10)：px。屏幕上的实际像素，1px代表手机屏幕上的一个像素点。
 
 [视窗逻辑像素单位](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#lpx10)：lpx。视窗逻辑像素单位，lpx单位为实际屏幕宽度与逻辑宽度（通过[designWidth](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#pages标签)配置）的比值，designWidth默认值为720。当designWidth为720时，在实际宽度为1440物理像素的屏幕上，1lpx为2px大小。

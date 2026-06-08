@@ -2,9 +2,10 @@
 format: md
 title: "Hash.hash是否支持同步接口"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-13
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-13
+last_sync: 2026-06-07
+sync_hash: 6ba0410f
 ---
-
-
 **解决措施**
 
 [@ohos.file.hash](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-hash)提供文件哈希处理能力。

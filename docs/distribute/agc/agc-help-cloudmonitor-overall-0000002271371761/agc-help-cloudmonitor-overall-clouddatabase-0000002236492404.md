@@ -2,9 +2,10 @@
 title: "云数据库"
 original_url: /docs/distribute/agc/agc-help-cloudmonitor-overall-0000002271371761/agc-help-cloudmonitor-overall-clouddatabase-0000002236492404
 format: md
+upstream_id: distribute/agc/agc-help-cloudmonitor-overall-0000002271371761/agc-help-cloudmonitor-overall-clouddatabase-0000002236492404
+last_sync: 2026-06-07
+sync_hash: f0ccdc1e
 ---
-
-
 监控云数据库的使用情况，关键指标有查询、写入、删除、事务、安全规则命中数、连接数和订阅关系数。指标以今昨对比图、折线图、列表的形式来统计。
 
 #### 前提条件

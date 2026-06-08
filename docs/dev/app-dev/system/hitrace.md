@@ -2,9 +2,10 @@
 title: "hitrace"
 original_url: /docs/dev/app-dev/system/hitrace
 format: md
+upstream_id: dev/app-dev/system/hitrace
+last_sync: 2026-06-07
+sync_hash: 99b23d82
 ---
-
-
 hitrace命令行工具提供trace信息采集能力，支持采集系统提供的打点和开发者使用[HitraceMeter接口](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracemeter/hitracemeter-intro)在应用中设置的打点。该工具支持多种方式采集文本格式或二进制格式的trace信息，帮助开发者观测程序运行情况和定位故障问题。
 
 ## 环境要求

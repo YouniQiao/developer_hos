@@ -2,9 +2,10 @@
 title: "产品优势"
 original_url: /docs/dev/game-dev/games-gamemme-product-advantages-0000002338706249
 format: md
+upstream_id: dev/game-dev/games-gamemme-product-advantages-0000002338706249
+last_sync: 2026-06-07
+sync_hash: 9fa9c65f
 ---
-
-
 ## 游戏场景全覆盖
 
 实时语音（小队语音、国战语音和范围语音）、实时信令、语音消息、语音转文本等能力，提供丰富的游戏多媒体功能，满足开黑、国战、狼人杀等游戏场景的主流语音需求。

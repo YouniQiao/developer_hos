@@ -2,8 +2,11 @@
 title: "组件之间通信"
 original_url: /docs/dev/atomic-dev/ascf/custom-components/custom-components-communication
 format: md
+upstream_id: dev/atomic-dev/ascf/custom-components/custom-components-communication
+last_sync: 2026-06-07
+sync_hash: 5fa2f1a5
+upstream_hash: 26f04482e544
 ---
-
 
 组件间的基本通信方式有三种:
 

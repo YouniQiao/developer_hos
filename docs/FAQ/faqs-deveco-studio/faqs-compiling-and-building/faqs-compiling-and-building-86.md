@@ -2,9 +2,10 @@
 format: md
 title: "编译打包CPU架构设置"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-86
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-86
+last_sync: 2026-06-07
+sync_hash: f30648c7
 ---
-
-
 **问题描述**
 
 在编译打包时，若需移除v7a，可以参考以下配置文档。

@@ -2,9 +2,10 @@
 title: "如何获取屏幕顶部状态栏、底部导航栏和导航条的高度"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-266
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-266
+last_sync: 2026-06-07
+sync_hash: 7a8fbc9d
 ---
-
-
 可以使用window的[getWindowAvoidArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-uiextension#getwindowavoidarea)方法获取，示例代码如下：
 
 ```

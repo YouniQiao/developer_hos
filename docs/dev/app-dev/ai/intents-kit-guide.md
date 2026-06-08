@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Intents Kit（意图框架服务）"
 original_url: /docs/dev/app-dev/ai/intents-kit-guide
 format: md
+upstream_id: dev/app-dev/ai/intents-kit-guide
+last_sync: 2026-06-07
+sync_hash: 96fa6212
 ---
-
-
 * **[Intents Kit简介](/docs/dev/app-dev/ai/intents-kit-guide/intents-introduction)**
 * **[Intents Kit接入流程](/docs/dev/app-dev/ai/intents-kit-guide/intents-access-flow)**
 * **[习惯推荐方案](/docs/dev/app-dev/ai/intents-kit-guide/intents-habit-rec)**

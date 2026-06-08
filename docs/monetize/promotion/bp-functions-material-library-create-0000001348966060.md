@@ -3,8 +3,10 @@ title: "新建素材库内容"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-material-library-create-0000001348966060
 format: md
+upstream_id: monetize/promotion/bp-functions-material-library-create-0000001348966060
+last_sync: 2026-06-07
+sync_hash: c84f90ac
 ---
-
 # 新建素材库内容
 
 1. 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)， 在顶部菜单栏点击【工具】页签，确认推广范围为“应用市场应用推广”。选择“资产管理”——“素材库”。

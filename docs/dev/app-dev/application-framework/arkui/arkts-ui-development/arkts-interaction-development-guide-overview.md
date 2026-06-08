@@ -2,9 +2,10 @@
 title: "添加交互响应"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview
+last_sync: 2026-06-07
+sync_hash: 0cbeb4b0
 ---
-
-
 ArkUI框架提供了丰富的接口，用于处理用户通过不同外设生成的基础输入事件，同时提供了高级接口封装，以响应用户归一化的交互行为，如手势、拖拽、焦点等。
 
 相较于基础输入事件，应优先采用手势处理用户交互，因为手势作为用户交互的识别结果，能够屏蔽不同基础事件的差异。例如，点击操作既可通过手指触控实现，也可通过鼠标点击完成，应用程序只需对接一个[TapGesture](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-gestures-tapgesture)即可在各类输入设备上支持点击交互。

@@ -2,9 +2,10 @@
 title: "跨设备文件共享和访问"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/distributed-fs/file-access-across-devices
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/distributed-fs/file-access-across-devices
+last_sync: 2026-06-07
+sync_hash: f915cef8
 ---
-
-
 分布式文件系统为应用提供了跨设备文件访问的能力，开发者在两个设备上安装同一应用时，通过[基础文件接口](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/app-file-access)，可跨设备读写另一个设备上该应用[分布式目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系)（/data/storage/el2/distributedfiles/）下的文件。例如：多设备数据流转的场景，设备组网互联之后，设备A上的应用可访问设备B上的同应用分布式目录下的文件，当期望应用文件被其他设备访问时，只需将文件移动到分布式目录即可。
 
 ![](./img/3e761267.png)

@@ -2,9 +2,10 @@
 title: "JS Crash类问题优化建议"
 original_url: /docs/quality/stability-js-crash-opt
 format: md
+upstream_id: /docs/quality/stability-js-crash-opt
+last_sync: 2026-06-07
+sync_hash: ae37ec66
 ---
-
-
 # JS Crash类问题优化建议
 
 ## 优化建议1：Source Maps归档保存
@@ -13,7 +14,7 @@ format: md
 
 ![](./img/18e8b1db.png)
 
-编译时SourceMap的获取位置详见：[sourceMap归档位置介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-exception-stack-parsing-principle#section666114451518)。
+编译时SourceMap的获取位置详见：[sourceMap归档位置介绍](/docs/tools/coding-debug/ide-exception-stack-parsing-principle#section666114451518)。
 
 ## 优化建议2：崩溃预防机制
 

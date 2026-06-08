@@ -3,9 +3,10 @@ title: "性能优化过程简介"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-profiler-process
 format: md
+upstream_id: tools/coding-debug/ide-profiler-process
+last_sync: 2026-06-07
+sync_hash: 64a4e808
 ---
-
-
 # 性能优化过程简介
 
 在开发应用时，开发者会对应用的运行情况有一个预期的指标，当应用在某些方面不能满足预期的指标或者表现不佳时，意味着您的应用可能存在性能问题，需要对应用进行性能优化以达到您的预期。应用的性能优化是一个不断持续的周期性的过程，您需要在应用开发过程中观察应用的运行表现来识别性能瓶颈，通过运行时数据定位性能问题，定位根因后修复代码并验证优化措施的可行性，循环往复直到应用满足您的性能指标。

@@ -1,12 +1,12 @@
 ---
-
 title: "同步云端代码至本地（可选）"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-sync
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-sync
+last_sync: 2026-06-07
+sync_hash: bb5f70d7
 ---
-
-
 # 同步云端代码至本地（可选）
 
 DevEco Studio还支持您将AGC云端当前项目下的代码同步至本地工程，包括之前从本地部署到AGC云端的代码、以及在AGC云端编写的代码，以保证云端和本地的版本一致性，方便您的日常开发。

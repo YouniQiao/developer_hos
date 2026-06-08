@@ -3,8 +3,10 @@ title: "人群自动化洞察"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/dmprenqunzidonhua-0000001764408452
 format: md
+upstream_id: monetize/promotion/dmprenqunzidonhua-0000001764408452
+last_sync: 2026-06-07
+sync_hash: 2bad096b
 ---
-
 # 人群自动化洞察
 
 ## 功能简介

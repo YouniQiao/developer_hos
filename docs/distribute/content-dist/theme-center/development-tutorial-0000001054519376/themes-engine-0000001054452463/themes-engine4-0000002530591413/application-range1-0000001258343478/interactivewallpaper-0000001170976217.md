@@ -3,9 +3,10 @@ title: "可交互桌面&lt;CommonWallpaper&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/interactivewallpaper-0000001170976217
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/application-range1-0000001258343478/interactivewallpaper-0000001170976217
+last_sync: 2026-06-07
+sync_hash: d7080b48
 ---
-
-
 # 可交互桌面&lt;CommonWallpaper&gt;
 
 ## 功能概述

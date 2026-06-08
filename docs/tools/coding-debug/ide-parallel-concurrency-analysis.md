@@ -3,9 +3,10 @@ title: "并行并发：Concurrency分析"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-parallel-concurrency-analysis
 format: md
+upstream_id: tools/coding-debug/ide-parallel-concurrency-analysis
+last_sync: 2026-06-07
+sync_hash: e58fae31
 ---
-
-
 # 并行并发：Concurrency分析
 
 任务池（TaskPool）（详细信息请参考[@ohos.taskpool（启动任务池）](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-taskpool)）是为应用程序提供一个多线程的运行环境，降低整体资源的消耗和提高系统的整体性能，且您无需关心线程实例的生命周期。您可以使用任务池API创建后台任务（Task），并对所创建的任务进行如任务执行、任务取消的操作。

@@ -3,9 +3,10 @@ title: "鸿蒙Agent通信协议技术规范总览"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/agent2agent-0000002498656261/agent2agent-comments-0000002500412353
 format: md
+upstream_id: distribute/xiaoyi/agent2agent-0000002498656261/agent2agent-comments-0000002500412353
+last_sync: 2026-06-07
+sync_hash: 527c212c
 ---
-
-
 # 鸿蒙Agent通信协议技术规范总览
 
 ![](./img/844e867459e3.png "点击放大")

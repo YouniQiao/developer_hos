@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "正地理编码与逆地理编码开发指导"
 original_url: /docs/dev/app-dev/application-services/location-kit/geocode-guidelines
 format: md
+upstream_id: dev/app-dev/application-services/location-kit/geocode-guidelines
+last_sync: 2026-06-07
+sync_hash: 6ca4e183
 ---
-
-
 ## 场景概述
 
 使用经纬度坐标描述一个位置，非常准确，但是并不直观，面向用户表达并不友好。系统向开发者提供了以下两种转化能力。

@@ -2,9 +2,10 @@
 title: "使用XComponent实现画中画功能开发（ArkTS）"
 original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/window-pipwindow/pipwindow-xcomponent
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/window-manager/window-pipwindow/pipwindow-xcomponent
+last_sync: 2026-06-07
+sync_hash: 6c73774f
 ---
-
-
 本文以视频播放为例，介绍通过XComponent实现画中画功能的基本开发步骤。
 
 ## 约束与限制

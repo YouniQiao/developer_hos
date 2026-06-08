@@ -2,9 +2,10 @@
 title: "概览"
 original_url: /docs/dev/atomic-dev/instant-service/instant-service-overview
 format: md
+upstream_id: dev/atomic-dev/instant-service/instant-service-overview
+last_sync: 2026-06-07
+sync_hash: 41a67737
 ---
-
-
 ## 场景介绍
 
 为了更好地帮助元服务商家做好服务生态的经营，平台构建了子服务、服务卡片（FormKit）、商品、门店等一系列场景，帮助商家在HarmonyOS公域流量场进行分发和引流。

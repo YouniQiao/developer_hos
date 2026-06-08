@@ -3,9 +3,10 @@ title: "@performance/high-frequency-log-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-high-frequency-log-check
 format: md
+upstream_id: tools/coding-debug/ide-high-frequency-log-check
+last_sync: 2026-06-07
+sync_hash: d759ae2c
 ---
-
-
 # @performance/high-frequency-log-check
 
 不建议在高频函数中使用Hilog。

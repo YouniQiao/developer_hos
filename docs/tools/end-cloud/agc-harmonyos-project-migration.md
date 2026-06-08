@@ -1,11 +1,13 @@
 ---
-
 title: "历史工程转换为端云一体化开发工程"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-project-migration
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-project-migration
+last_sync: 2026-06-07
+sync_hash: b59eebfe
+upstream_hash: 893f9705f9b9
 ---
-
 
 # 历史工程转换为端云一体化开发工程
 

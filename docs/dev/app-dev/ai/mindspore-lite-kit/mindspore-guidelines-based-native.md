@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "使用MindSpore Lite实现图像分类（C/C++）"
 original_url: /docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-guidelines-based-native
 format: md
+upstream_id: dev/app-dev/ai/mindspore-lite-kit/mindspore-guidelines-based-native
+last_sync: 2026-06-07
+sync_hash: 9d8c6709
+upstream_hash: 9f45f3ed6297
 ---
-
 
 ## 场景说明
 

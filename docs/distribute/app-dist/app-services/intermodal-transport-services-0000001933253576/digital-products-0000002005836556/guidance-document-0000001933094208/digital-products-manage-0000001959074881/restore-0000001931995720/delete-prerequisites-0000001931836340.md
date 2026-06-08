@@ -3,9 +3,10 @@ title: "前提条件"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/restore-0000001931995720/delete-prerequisites-0000001931836340
 format: md
+upstream_id: distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/restore-0000001931995720/delete-prerequisites-0000001931836340
+last_sync: 2026-06-07
+sync_hash: 2be65cf8
 ---
-
-
 # 前提条件
 
 * 您已在商品管理[新增商品](`https://developer.huawei.com/consumer/cn/doc/app/create-digital-products-0000001958955105`)。

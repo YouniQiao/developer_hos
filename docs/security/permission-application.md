@@ -2,10 +2,10 @@
 title: "应用权限申请"
 original_url: /docs/security/permission-application
 format: md
+upstream_id: /docs/security/permission-application
+last_sync: 2026-06-07
+sync_hash: ad9a2275
 ---
-
-
-
 # 应用权限申请
 
 ## 概述

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取云侧文件列表"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service/cloudfoundation-storage-list-files
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service/cloudfoundation-storage-list-files
+last_sync: 2026-06-07
+sync_hash: b3dcc9f7
 ---
-
-
 开发者可以获取指定云侧目录下所有的文件信息，包括文件存储目录、文件名称等。
 
 ## 约束与限制

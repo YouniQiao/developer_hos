@@ -2,9 +2,10 @@
 title: "快速入门"
 original_url: /docs/dev/game-dev/pgd-tool-editor-quick-0000002526540937
 format: md
+upstream_id: dev/game-dev/pgd-tool-editor-quick-0000002526540937
+last_sync: 2026-06-07
+sync_hash: e3ed6fa2
 ---
-
-
 通过如下示例简单演示PGD Editor的使用。
 
 ## 第一步：创建一个空项目

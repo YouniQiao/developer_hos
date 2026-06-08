@@ -3,8 +3,10 @@ title: "首页"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/fusion-level2-homepage-0000002499137841
 format: md
+upstream_id: monetize/promotion/fusion-level2-homepage-0000002499137841
+last_sync: 2026-06-07
+sync_hash: 9a8b06f6
 ---
-
 # 首页
 
 您可以查看子账户的账户余额（现金、虚拟金、赠送金、耀星券等）、本月新增的投放操作账户数、名下管理的投放操作账户的余额数据、新建投放操作账户（新建子客）等。

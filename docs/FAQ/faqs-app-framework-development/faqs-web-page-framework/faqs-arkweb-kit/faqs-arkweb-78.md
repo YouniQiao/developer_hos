@@ -2,9 +2,10 @@
 format: md
 title: "Webview目前支持预览什么文件"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-78
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-78
+last_sync: 2026-06-07
+sync_hash: 1e43f177
 ---
-
-
 Webview支持加载图片、视频、网页和PDF文件。
 
 **参考链接**

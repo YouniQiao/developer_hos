@@ -2,9 +2,10 @@
 format: md
 title: "hdc无法安装包"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-72
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-72
+last_sync: 2026-06-07
+sync_hash: d6af209f
 ---
-
-
 **问题现象**
 
 1. hdc list targets只显示一台手机连接，但执行hdc install安装命令还是报错：[Fail]ExecuteCommand need connect-key? please confirm a device by help info。

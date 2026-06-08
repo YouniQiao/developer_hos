@@ -2,8 +2,11 @@
 format: md
 title: "Native侧如何对ArkTS传递的Object类型的数据、属性进行修改"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-62
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-62
+last_sync: 2026-06-07
+sync_hash: 0e0a9183
+upstream_hash: dfe77727e99a
 ---
-
 
 1. ArkTS侧调用Native侧方法modifyObject，并传递参数。
 

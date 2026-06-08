@@ -3,10 +3,10 @@ title: "ReportMediaInfo"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_if_reportmediainfo-0000001456160032
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_if_reportmediainfo-0000001456160032
+last_sync: 2026-06-07
+sync_hash: 0e7dc10d
 ---
-
-
-
 ![](./img/agd_pro_sdk_if_reportmediainfo-0000001456160032_0.png)
 
 * **timeSwitch**字段为**1**时（即按天统计），**mediaPkgName**和**slotIds**字段不能同时为空。

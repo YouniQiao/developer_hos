@@ -3,9 +3,10 @@ title: "代码续写"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-code-continuation
 format: md
+upstream_id: tools/ai-assist/ide-code-continuation
+last_sync: 2026-06-07
+sync_hash: cd13f14b
 ---
-
-
 # 代码续写
 
 利用AI大模型分析并理解开发者在代码编辑区的上下文信息或自然语言描述信息，智能续写符合上下文的ArkTS或C++代码片段，减少重复编码工作。

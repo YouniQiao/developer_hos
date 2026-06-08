@@ -3,8 +3,10 @@ title: 轻量高效
 sidebar_label: 轻量高效
 original_url: /docs/design/atomic-service-design/design-principles/lightweight
 format: md
+upstream_id: design/atomic-service-design/design-principles/lightweight
+last_sync: 2026-06-07
+sync_hash: 5499c137
 ---
-
 # 轻量高效
 
 ### 导航清晰，入口明确

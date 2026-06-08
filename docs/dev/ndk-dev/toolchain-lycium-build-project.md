@@ -2,8 +2,11 @@
 title: "使用lycium交叉编译框架快速编译三方库"
 original_url: /docs/dev/ndk-dev/toolchain-lycium-build-project
 format: md
+upstream_id: dev/ndk-dev/toolchain-lycium-build-project
+last_sync: 2026-06-07
+sync_hash: 9bf71fbe
+upstream_hash: 2ea0a45600a4
 ---
-
 
 ## 概述
 

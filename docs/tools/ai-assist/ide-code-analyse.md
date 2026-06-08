@@ -3,9 +3,10 @@ title: "代码分析"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-code-analyse
 format: md
+upstream_id: tools/ai-assist/ide-code-analyse
+last_sync: 2026-06-07
+sync_hash: 24b3a300
 ---
-
-
 # 代码分析
 
 CodeGenie支持在<strong>对话框中</strong>输入对代码段和代码文件分析要求，帮助开发者快速理解代码逻辑、代码功能、技术细节和潜在问题等，提升开发效率。

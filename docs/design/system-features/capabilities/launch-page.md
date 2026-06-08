@@ -3,8 +3,10 @@ title: 启动页
 sidebar_label: 启动页
 original_url: /docs/design/system-features/capabilities/launch-page
 format: md
+upstream_id: design/system-features/capabilities/launch-page
+last_sync: 2026-06-07
+sync_hash: e2f4385b
 ---
-
 # 启动页
 
 内容类应用启动页是用户开启应用时最先看到的界面。其承担传递品牌形象、获取用户必要权限（如存储、位置、相机等）的重任。设计时，需遵循鸿蒙系统规范，适配各设备屏幕特性，确保快速加载，自然融入授权流程，避免打断用户体验，为用户打造流畅且高效的应用启动开端。

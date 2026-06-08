@@ -2,9 +2,10 @@
 title: "ArkTS中有类似Java中的System.arraycopy数组复制的方法吗"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-15
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-15
+last_sync: 2026-06-07
+sync_hash: 17609846
 ---
-
-
 可以通过 buffer.concat() 方法，将数组中的内容复制到新的 Buffer 对象中并返回。参考代码如下：
 
 ```

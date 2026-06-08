@@ -2,9 +2,10 @@
 title: "Enterprise Threat Protection Kit常见问题"
 original_url: /docs/dev/app-dev/system/enterprisethreatprotection-virusremediation-question
 format: md
+upstream_id: dev/app-dev/system/enterprisethreatprotection-virusremediation-question
+last_sync: 2026-06-07
+sync_hash: 140d49d5
 ---
-
-
 ## Enterprise Threat Protection Kit权限获取失败
 
 **问题现象**

@@ -2,9 +2,10 @@
 format: md
 title: "设置了动态的visibility属性，切换组件的显示隐藏，使用requestFocus让组件获取焦点报错150003：the component is not on tree or does not exist."
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-483
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-483
+last_sync: 2026-06-07
+sync_hash: 6789b49b
 ---
-
-
 根据焦点错误码[150003 节点不存在](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-focus#section150003-节点不存在)表明传入的id指向不存在、未挂树或者不可见节点。requestFocus前需要确保节点已经可见。
 
 如以下代码的实现，在切换可见性时，并不能保证获取焦点时组件已经可见：

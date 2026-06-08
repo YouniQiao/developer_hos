@@ -2,9 +2,10 @@
 title: "应用及文件系统空间统计"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/app-fs-space-statistics
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/app-fs-space-statistics
+last_sync: 2026-06-07
+sync_hash: 0fb32191
 ---
-
-
 在系统中，可能出现系统空间不够或者cacheDir等目录受系统配额限制等情况，需要应用开发者关注系统剩余空间，同时控制应用自身占用的空间大小。
 
 ## 接口说明

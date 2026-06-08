@@ -3,8 +3,10 @@ title: 评分条
 sidebar_label: 评分条
 original_url: /docs/design/components/selection-components/rating
 format: md
+upstream_id: design/components/selection-components/rating
+last_sync: 2026-06-07
+sync_hash: 6a1d5da7
 ---
-
 \{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 评分条

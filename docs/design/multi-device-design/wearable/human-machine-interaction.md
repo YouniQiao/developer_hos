@@ -3,8 +3,10 @@ title: 人机交互
 sidebar_label: 人机交互
 original_url: /docs/design/multi-device-design/wearable/human-machine-interaction
 format: md
+upstream_id: design/multi-device-design/wearable/human-machine-interaction
+last_sync: 2026-06-07
+sync_hash: 2e9eebb6
 ---
-
 # 人机交互
 
 ### **表冠**

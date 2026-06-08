@@ -2,9 +2,10 @@
 title: "使用扩展的Node-API接口在当前线程中创建、切换和销毁上下文环境"
 original_url: /docs/dev/ndk-dev/use-napi-about-context
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-context
+last_sync: 2026-06-07
+sync_hash: f0c1244c
 ---
-
-
 在应用被拉起时，应用的主线程即为一个ArkTS线程，该线程中存在一个由系统管理的上下文环境，当ArkTS需要和C/C++交互时，在C/C++侧，napi\_env即代表该上下文环境，每个上下文环境中存在着独立的globalThis对象。
 
 开发者可以通过使用Node-API中的扩展接口napi\_create\_ark\_context和napi\_destroy\_ark\_context在当前线程中创建和销毁新的上下文环境，这些新创建的上下文环境和线程中原始的上下文环境共用一个运行时虚拟机。

@@ -2,8 +2,11 @@
 format: md
 title: "如何播放PCM格式的音频"
 original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-21
+upstream_id: FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-21
+last_sync: 2026-06-07
+sync_hash: 7f1437eb
+upstream_hash: 8cecd693fad4
 ---
-
 
 **问题现象**
 

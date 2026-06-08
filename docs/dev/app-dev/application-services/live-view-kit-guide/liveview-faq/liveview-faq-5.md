@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "关于实况窗数量约束的问题"
 original_url: /docs/dev/app-dev/application-services/live-view-kit-guide/liveview-faq/liveview-faq-5
 format: md
+upstream_id: dev/app-dev/application-services/live-view-kit-guide/liveview-faq/liveview-faq-5
+last_sync: 2026-06-07
+sync_hash: ff1625d4
 ---
-
-
 1. 创建实况时的id约束：
 
    * 唯一性：应用可以一次性创建多个实况窗，需要保证每个实况窗id唯一。同一id在同一时刻只能创建一个实况窗。

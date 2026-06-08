@@ -2,9 +2,10 @@
 title: "vector-store数据库调试工具指导"
 original_url: /docs/dev/app-dev/application-framework/arkdata/arkdata-debug-tool/vector-store-debug-tool
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/arkdata-debug-tool/vector-store-debug-tool
+last_sync: 2026-06-07
+sync_hash: 5f0d0354
 ---
-
-
 当前开发者在使用vector-store数据库进行开发调试和定位问题时，无法查看数据库文件中的内容信息，如元数据和用户数据等。
 
 为了提升开发者的工作效率，数据库调试工具支持开发者查看设备中的vector-store数据库内容。
@@ -15,8 +16,8 @@ format: md
 
 ## 环境要求
 
-* 在使用本工具前，开发者需要先获取[hdc工具](/docs/dev/app-dev/system/hdc#环境准备)，开启[开发者选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode#section530763213432)，执行hdc shell。
-* 此调试工具仅支持调试应用使用，配置调试应用具体可见[配置应用可调试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-debug-configurations)。
+* 在使用本工具前，开发者需要先获取[hdc工具](/docs/dev/app-dev/system/hdc#环境准备)，开启[开发者选项](/docs/tools/coding-debug/ide-developer-mode#section530763213432)，执行hdc shell。
+* 此调试工具仅支持调试应用使用，配置调试应用具体可见[配置应用可调试](/docs/tools/coding-debug/ide-run-debug-configurations)。
 * 正常连接设备。
 
 ## 操作准备

@@ -2,9 +2,10 @@
 format: md
 title: "开启多线程开关后应用性能劣化"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-4
+upstream_id: FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-4
+last_sync: 2026-06-07
+sync_hash: a4741648
 ---
-
-
 **问题现象**
 
 在进行DevEco Testing稳定性压测后，性能测试显示性能下降。

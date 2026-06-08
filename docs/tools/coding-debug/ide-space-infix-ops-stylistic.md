@@ -3,9 +3,10 @@ title: "@hw-stylistic/space-infix-ops"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-space-infix-ops-stylistic
 format: md
+upstream_id: tools/coding-debug/ide-space-infix-ops-stylistic
+last_sync: 2026-06-07
+sync_hash: 0231578d
 ---
-
-
 # @hw-stylistic/space-infix-ops
 
 强制运算符前后都加空格。该规则仅检查.ets文件类型。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "复杂绘制效果（C/C++）"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/drawing-effect/complex-drawing-effect-c
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/drawing-effect/complex-drawing-effect-c
+last_sync: 2026-06-07
+sync_hash: 49e56e21
 ---
-
-
 除了基础填充颜色、描边颜色和一些样式设置的绘制效果外，还支持通过画刷和画笔实现更多复杂的绘制效果。比如：
 
 * 混合模式。

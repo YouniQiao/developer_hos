@@ -2,9 +2,10 @@
 format: md
 title: "DevEco Studio安装HAP时报错“FileTransfer Failed: Error while Deploy Hap”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-35
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-35
+last_sync: 2026-06-07
+sync_hash: 08586ea6
 ---
-
-
 **问题现象**
 
 DevEco Studio安装HAP时报错“FileTransfer Failed: Error while Deploy Hap”。

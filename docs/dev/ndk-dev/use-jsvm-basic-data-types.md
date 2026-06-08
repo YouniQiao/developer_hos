@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口创建和获取数值"
 original_url: /docs/dev/ndk-dev/use-jsvm-basic-data-types
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-basic-data-types
+last_sync: 2026-06-07
+sync_hash: f776c73e
 ---
-
-
 ## 简介
 
 在JavaScript中，整数类型是一种基本数据类型，用于表示没有小数部分的数值。Double类型用于表示有小数的数值。JavaScript的数值存储方式会导致在某些情况下无法准确表示非常大或非常小的数值，在这种情况下，需要使用BigInt对应的JSVM-API接口来处理更大范围的整数。

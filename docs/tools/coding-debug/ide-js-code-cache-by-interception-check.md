@@ -3,9 +3,10 @@ title: "@performance/js-code-cache-by-interception-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-js-code-cache-by-interception-check
 format: md
+upstream_id: tools/coding-debug/ide-js-code-cache-by-interception-check
+last_sync: 2026-06-07
+sync_hash: 285a5953
 ---
-
-
 # @performance/js-code-cache-by-interception-check
 
 在资源拦截场景下，建议生成JavaScript字节码缓存，可以降低Web页面非首次的加载时间。

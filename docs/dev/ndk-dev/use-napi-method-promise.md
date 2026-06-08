@@ -2,8 +2,11 @@
 title: "使用Node-API调用返回值为promise的ArkTS方法"
 original_url: /docs/dev/ndk-dev/use-napi-method-promise
 format: md
+upstream_id: dev/ndk-dev/use-napi-method-promise
+last_sync: 2026-06-07
+sync_hash: 56872f50
+upstream_hash: 54712d9bb3cc
 ---
-
 
 ## 场景介绍
 

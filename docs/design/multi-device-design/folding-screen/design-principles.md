@@ -3,8 +3,10 @@ title: 设计原则
 sidebar_label: 设计原则
 original_url: /docs/design/multi-device-design/folding-screen/design-principles
 format: md
+upstream_id: design/multi-device-design/folding-screen/design-principles
+last_sync: 2026-06-07
+sync_hash: 0f356d44
 ---
-
 # 设计原则
 
 ### 折叠屏形态

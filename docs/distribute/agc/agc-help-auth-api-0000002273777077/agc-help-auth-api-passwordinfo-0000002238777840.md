@@ -2,9 +2,10 @@
 title: "PasswordInfo"
 original_url: /docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-passwordinfo-0000002238777840
 format: md
+upstream_id: distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-passwordinfo-0000002238777840
+last_sync: 2026-06-07
+sync_hash: bdce5d1f
 ---
-
-
 更新密码操作相关的密码信息类。
 
 #### Parameters

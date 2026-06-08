@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口进行生命周期相关开发"
 original_url: /docs/dev/ndk-dev/use-jsvm-life-cycle
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-life-cycle
+last_sync: 2026-06-07
+sync_hash: 176e06a2
 ---
-
-
 ## 简介
 
 在JSVM-API中，JSVM\_Value是一个表示JavaScript值的抽象类型，它可以表示任何JavaScript值，包括基本类型（如数字、字符串、布尔值）和对象类型（如数组、函数、对象等）。

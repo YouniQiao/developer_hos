@@ -2,9 +2,10 @@
 title: "访问媒体文件"
 original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-media-access
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-basic-capabilities/develop-media-access
+last_sync: 2026-06-07
+sync_hash: e0e4442f
 ---
-
-
 开发者可以使用[has.chooseImage](/docs/dev/atomic-dev/ascf/apis-media/apis-image#haschooseimage)选择图片，从而访问媒体库资源。
 
 ```

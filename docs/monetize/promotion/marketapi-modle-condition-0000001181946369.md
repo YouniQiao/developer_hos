@@ -3,8 +3,10 @@ title: "Condition"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-condition-0000001181946369
 format: md
+upstream_id: monetize/promotion/marketapi-modle-condition-0000001181946369
+last_sync: 2026-06-07
+sync_hash: 6f25f893
 ---
-
 # Condition
 
 ![](./img/57922974999f.png) 

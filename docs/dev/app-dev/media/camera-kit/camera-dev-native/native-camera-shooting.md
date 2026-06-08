@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "拍照(C/C++)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-shooting
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-native/native-camera-shooting
+last_sync: 2026-06-07
+sync_hash: 49ff47f8
 ---
-
-
 ## 概述
 
 拍照是相机的重要功能之一，拍照模块基于相机复杂的逻辑，为了保证用户拍出的照片质量，在中间步骤可以设置分辨率、闪光灯、焦距、照片质量及旋转角度等信息。

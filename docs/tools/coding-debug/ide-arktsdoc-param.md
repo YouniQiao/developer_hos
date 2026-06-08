@@ -3,8 +3,11 @@ title: "@param"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-arktsdoc-param
 format: md
+upstream_id: tools/coding-debug/ide-arktsdoc-param
+last_sync: 2026-06-07
+sync_hash: 252898ed
+upstream_hash: cb2dfa91150e
 ---
-
 
 # @param
 

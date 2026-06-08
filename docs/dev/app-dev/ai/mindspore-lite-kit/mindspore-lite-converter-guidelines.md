@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用MindSpore Lite进行模型转换"
 original_url: /docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-lite-converter-guidelines
 format: md
+upstream_id: dev/app-dev/ai/mindspore-lite-kit/mindspore-lite-converter-guidelines
+last_sync: 2026-06-07
+sync_hash: 9a80e30d
 ---
-
-
 ## 场景介绍
 
 MindSpore Lite AI模型部署流程是：

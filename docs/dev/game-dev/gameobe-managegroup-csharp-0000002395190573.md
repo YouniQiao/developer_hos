@@ -2,8 +2,11 @@
 title: "管理队伍"
 original_url: /docs/dev/game-dev/gameobe-managegroup-csharp-0000002395190573
 format: md
+upstream_id: dev/game-dev/gameobe-managegroup-csharp-0000002395190573
+last_sync: 2026-06-07
+sync_hash: 1a64becf
+upstream_hash: 5263afe7f32c
 ---
-
 
 通过队伍信息查询，可获取当前所处队伍的相关信息。同时，队长还可以通过修改队伍名称、队长身份、队伍自定义属性等队伍相关属性，更新队伍相关信息。
 

@@ -2,9 +2,10 @@
 format: md
 title: "Tabs导航页签栏如何根据Tabbar数均匀设置宽度"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-474
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-474
+last_sync: 2026-06-07
+sync_hash: 6e8dfa58
 ---
-
-
 可以通过设置TabBar布局模式枚举中的BarMode.Fixed来动态均分Tab导航栏宽度，示例代码如下：
 
 ```

@@ -2,9 +2,10 @@
 title: "模块加载副作用及优化"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-module-side-effects
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-module-side-effects
+last_sync: 2026-06-07
+sync_hash: 72caaa75
 ---
-
-
 ## 概述
 
 当使用[ArkTS模块化](/docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/module-principle)时，模块的加载和执行可能会引发**副作用**。副作用是指在模块导入时除了导出功能或对象之外，额外的行为或状态变化，**这些行为可能影响程序的其他部分，并导致产生非预期的顶层代码执行、全局状态变化、原型链修改、导入内容未定义等问题**。
@@ -429,7 +430,7 @@ Stacktrace:
 
 **优化方式**
 
-尽量避免模块间的循环依赖，确保模块的加载顺序是明确和可控的，以避免产生意外的副作用。[@security/no-cycle循环依赖检查工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-cycle) 可以辅助检查循环依赖。
+尽量避免模块间的循环依赖，确保模块的加载顺序是明确和可控的，以避免产生意外的副作用。[@security/no-cycle循环依赖检查工具](/docs/tools/coding-debug/ide_no-cycle) 可以辅助检查循环依赖。
 
 ### 延迟加载（lazy import）改变模块执行顺序，可能导致预期的全局变量未定义
 

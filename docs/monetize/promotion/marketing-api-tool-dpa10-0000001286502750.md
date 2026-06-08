@@ -3,8 +3,10 @@ title: "查询符合条件的商品数量"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-dpa10-0000001286502750
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-dpa10-0000001286502750
+last_sync: 2026-06-07
+sync_hash: 1ee85a4c
 ---
-
 # 查询符合条件的商品数量
 
 您通过本接口可以查询符合条件的商品数量。

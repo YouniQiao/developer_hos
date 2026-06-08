@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-restricted-syntax"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-restricted-syntax
 format: md
+upstream_id: tools/coding-debug/ide_no-restricted-syntax
+last_sync: 2026-06-07
+sync_hash: 9b4e6499
 ---
-
-
 # @typescript-eslint/no-restricted-syntax
 
 不允许使用指定的（即用户在规则中定义的）语法。

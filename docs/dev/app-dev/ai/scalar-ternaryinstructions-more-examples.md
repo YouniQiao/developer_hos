@@ -2,9 +2,10 @@
 title: "更多样例"
 original_url: /docs/dev/app-dev/ai/scalar-ternaryinstructions-more-examples
 format: md
+upstream_id: dev/app-dev/ai/scalar-ternaryinstructions-more-examples
+last_sync: 2026-06-07
+sync_hash: 88ac3d7f
 ---
-
-
 ## 样例模板
 
 为了方便开发者快速运行具体指令中的参考样例，本章节提供标量三目指令的样例模板。

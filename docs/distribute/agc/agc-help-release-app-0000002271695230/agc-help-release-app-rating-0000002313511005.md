@@ -2,9 +2,10 @@
 title: "配置内容分级"
 original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-rating-0000002313511005
 format: md
+upstream_id: distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-rating-0000002313511005
+last_sync: 2026-06-07
+sync_hash: 6e35e04e
 ---
-
-
 内容分级用于标识您的应用适宜用户的年龄段。年龄分级作为应用的重要属性，在华为应用市场的应用详情页展示给用户，帮助用户找到适合其年龄段的应用，从而为未成年人用户打造纯净的使用环境。
 
 AGC提供了调查问卷，根据您回答的内容，自动生成年龄分级结果。请根据实际情况如实填写。

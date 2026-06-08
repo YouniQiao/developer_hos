@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "上传软件包时提示“上传的软件包与声明支持设备不一致”"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-4
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-4
+last_sync: 2026-06-07
+sync_hash: 96c51a41
 ---
-
-
 **问题现象**
 
 在进行应用上架操作中，上传软件包时，AGC平台提示“上传的软件包与声明支持设备不一致，请重新上传或修改可支持设备”。

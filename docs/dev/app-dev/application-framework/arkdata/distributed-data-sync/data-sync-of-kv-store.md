@@ -2,9 +2,10 @@
 title: "键值型数据库跨设备数据同步 (ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/distributed-data-sync/data-sync-of-kv-store
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/distributed-data-sync/data-sync-of-kv-store
+last_sync: 2026-06-07
+sync_hash: 998bdcf9
 ---
-
-
 ## 场景介绍
 
 键值型数据库适合不涉及过多数据关系和业务关系的业务数据存储，比SQL数据库存储拥有更好的读写性能，同时因其在分布式场景中降低了解决数据库版本兼容问题的复杂度，和数据端端同步过程中冲突解决的复杂度而被广泛使用。

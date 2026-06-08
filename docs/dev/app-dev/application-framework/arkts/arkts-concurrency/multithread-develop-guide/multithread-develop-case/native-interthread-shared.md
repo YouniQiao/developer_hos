@@ -2,9 +2,10 @@
 title: "C++线程间数据共享场景"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/native-interthread-shared
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/native-interthread-shared
+last_sync: 2026-06-07
+sync_hash: 48a2d501
 ---
-
-
 在C++层进行多线程并发计算时，需要在每个C++线程上创建ArkTS执行环境，直接调用API。这样可以避免在非UI主线程回调时等待UI主线程的API调用结果。同时，还需要在C++线程之间共享和操作Sendable对象。
 
 为了支持此类场景，C++线程需要能够创建并调用ArkTS，同时支持对Sendable对象进行多线程共享和操作。

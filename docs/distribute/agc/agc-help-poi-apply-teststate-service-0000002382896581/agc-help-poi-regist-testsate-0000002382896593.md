@@ -2,9 +2,10 @@
 title: "创建测试态POI"
 original_url: /docs/distribute/agc/agc-help-poi-apply-teststate-service-0000002382896581/agc-help-poi-regist-testsate-0000002382896593
 format: md
+upstream_id: distribute/agc/agc-help-poi-apply-teststate-service-0000002382896581/agc-help-poi-regist-testsate-0000002382896593
+last_sync: 2026-06-07
+sync_hash: 7b3360d5
 ---
-
-
 ![](../img/agc-help-poi-regist-testsate-0000002382896593_0.png)
 
 * 每个应用/元服务最多支持添加2000个POI位置。

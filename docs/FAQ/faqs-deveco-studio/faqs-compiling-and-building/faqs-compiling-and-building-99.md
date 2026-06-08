@@ -2,9 +2,10 @@
 format: md
 title: "编译的时候遇到“too many open files”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-99
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-99
+last_sync: 2026-06-07
+sync_hash: d164779b
 ---
-
-
 **问题描述**
 
 mac系统项目编译报错。

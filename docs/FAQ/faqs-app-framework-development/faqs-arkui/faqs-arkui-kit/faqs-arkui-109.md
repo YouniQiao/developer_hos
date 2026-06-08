@@ -2,9 +2,10 @@
 format: md
 title: "List组件如何设置多列"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-109
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-109
+last_sync: 2026-06-07
+sync_hash: 6d71ffbb
 ---
-
-
 以列模式为例(listDirection为Axis.Vertical):lanes用于决定List组件在交叉轴方向上的列数。参考代码如下：
 
 ```

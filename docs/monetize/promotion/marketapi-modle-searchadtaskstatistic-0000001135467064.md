@@ -3,8 +3,10 @@ title: "SearchAdTaskStatistic"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-searchadtaskstatistic-0000001135467064
 format: md
+upstream_id: monetize/promotion/marketapi-modle-searchadtaskstatistic-0000001135467064
+last_sync: 2026-06-07
+sync_hash: 677213cd
 ---
-
 # SearchAdTaskStatistic
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |

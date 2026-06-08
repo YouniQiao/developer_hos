@@ -3,8 +3,10 @@ title: "卸载洞察"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-load-recall-insight-0000001367192288
 format: md
+upstream_id: monetize/promotion/bp-functions-load-recall-insight-0000001367192288
+last_sync: 2026-06-07
+sync_hash: 500dbcf9
 ---
-
 # 卸载洞察
 
 1. 登录[华为应用市场应用推广平台](https://developer.huawei.com/consumer/cn/service/apcs/app/home.html)，点击右上角“管理中心”，进入“管理中心”页面。

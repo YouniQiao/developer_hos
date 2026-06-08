@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "典型场景展示"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-introduction-typical-scenario
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-introduction-typical-scenario
+last_sync: 2026-06-07
+sync_hash: bdcc8443
 ---
-
-
 如下展示两种智能填充的典型场景。
 
 ## 实名购票场景

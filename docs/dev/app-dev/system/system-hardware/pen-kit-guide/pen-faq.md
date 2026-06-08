@@ -2,9 +2,10 @@
 title: "Pen Kit常见问题"
 original_url: /docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-faq
 format: md
+upstream_id: dev/app-dev/system/system-hardware/pen-kit-guide/pen-faq
+last_sync: 2026-06-07
+sync_hash: 8b6ccc7a
 ---
-
-
 * **[Pen Kit手写套件是否支持自定义笔刷？](/docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-faq/pen-faq-1)**
 * **[Pen Kit手写套件是否支持自定义笔宽？](/docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-faq/pen-faq-2)**
 * **[Pen Kit手写套件是否支持自定义颜色？](/docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-faq/pen-faq-3)**

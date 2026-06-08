@@ -1,9 +1,10 @@
 ---
 title: "Swiper组件加载丢帧优化"
 original_url: /docs/quality/swiper_high_performance_development_guide
+upstream_id: /docs/quality/swiper_high_performance_development_guide
+last_sync: 2026-06-07
+sync_hash: 0c46913b
 ---
-
-
 # Swiper组件加载丢帧优化
 
 ## 概述

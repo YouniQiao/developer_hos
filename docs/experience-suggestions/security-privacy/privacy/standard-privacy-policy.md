@@ -2,9 +2,10 @@
 title: "通知"
 original_url: /docs/experience-suggestions/security-privacy/privacy/standard-privacy-policy
 format: md
+upstream_id: experience-suggestions/security-privacy/privacy/standard-privacy-policy
+last_sync: 2026-06-07
+sync_hash: e7a55bc8
 ---
-
-
 # 通知
 
 |  |  |

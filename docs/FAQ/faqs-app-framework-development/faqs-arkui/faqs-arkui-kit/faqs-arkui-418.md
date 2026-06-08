@@ -2,9 +2,10 @@
 format: md
 title: "使用Navigation，页面从A->B->C->D，D直接调用popToName到A，不会触发B、C的onPop是什么原因"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-418
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-418
+last_sync: 2026-06-07
+sync_hash: befb9e1d
 ---
-
-
 **问题描述**
 
 页面从A->B->C->D，D直接调用popToName到A，会不会触发B、C的onPop。

@@ -3,9 +3,10 @@ title: "@performance/timezone-interface-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-timezone-interface-check
 format: md
+upstream_id: tools/coding-debug/ide-timezone-interface-check
+last_sync: 2026-06-07
+sync_hash: 8fd11c23
 ---
-
-
 # @performance/timezone-interface-check
 
 在获取非本地时间时，建议使用统一标准的i18n.Calendar接口获取时间时区相关信息。

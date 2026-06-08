@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "地图数据版权声明"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-appendix/map-privacy
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-appendix/map-privacy
+last_sync: 2026-06-07
+sync_hash: 3d54251c
 ---
-
-
 TomTom Data
 
 © 2006-2025 TomTom. All rights reserved. This material is proprietary and the subject of copyright protection, database right protection and other Intellectual Property Rights owned by TomTom or its suppliers. The use of this material is subject to the terms of a license agreement. Any unauthorized copying or disclosure of this material will lead to criminal and civil liabilities.

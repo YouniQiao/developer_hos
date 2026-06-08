@@ -2,9 +2,10 @@
 format: md
 title: "TextInput组件获取焦点的几种场景"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-13
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-13
+last_sync: 2026-06-07
+sync_hash: 5d63b291
 ---
-
-
 * 场景一：TextInput[主动获焦/失焦](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-common-events-focus-event#主动获焦失焦)。
 
   调用focusControl.requestFocus接口可以主动让焦点转移至参数指定的组件上。可参考如下代码：

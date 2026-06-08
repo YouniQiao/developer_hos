@@ -2,9 +2,10 @@
 format: md
 title: "如何实现通过调用其他已安装的应用来打开特定文件"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-54
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-54
+last_sync: 2026-06-07
+sync_hash: eea90cb1
 ---
-
-
 开发者可以通过使用隐式Want机制来调用其他应用打开文件。通过设置合适的携带的数据（uri）、MIME type类型（type）、处理Want的方式（flag）等字段，以便系统能够识别并弹出一个选择框，让用户选择合适的应用来打开文件，若仅匹配到一个应用，则会直接拉起该应用。
 
 效果示意如下图所示：

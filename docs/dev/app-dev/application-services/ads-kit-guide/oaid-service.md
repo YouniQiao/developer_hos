@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开放匿名设备标识服务"
 original_url: /docs/dev/app-dev/application-services/ads-kit-guide/oaid-service
 format: md
+upstream_id: dev/app-dev/application-services/ads-kit-guide/oaid-service
+last_sync: 2026-06-07
+sync_hash: 0d105232
 ---
-
-
 ## 获取OAID信息
 
 ### 场景介绍

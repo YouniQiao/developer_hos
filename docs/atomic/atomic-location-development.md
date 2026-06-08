@@ -2,9 +2,10 @@
 title: "位置"
 original_url: /docs/dev/atomic-dev/operations-fulfillment-capability-development/atomic-location-development
 format: md
+upstream_id: dev/atomic-dev/operations-fulfillment-capability-development/atomic-location-development
+last_sync: 2026-06-07
+sync_hash: 8ee69bd4
 ---
-
-
 ## 位置服务开发概述
 
 移动终端设备已经深入人们日常生活的方方面面，如查看所在城市的天气、新闻轶事、出行打车、旅行导航、运动记录。这些习以为常的活动，都离不开定位用户终端设备的位置。

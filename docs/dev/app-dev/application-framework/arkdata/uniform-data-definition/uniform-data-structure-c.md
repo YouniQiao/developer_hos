@@ -2,9 +2,10 @@
 title: "标准化数据结构 (C/C++)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-structure-c
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-structure-c
+last_sync: 2026-06-07
+sync_hash: 433f0e87
 ---
-
-
 ## 场景介绍
 
 针对[UTD](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-utd-h)标准化数据类型中的部分常见类型，为了方便业务使用，提供了标准化数据结构。例如，系统定义的桌面图标类型（标准化数据类型标识为'OH\_UdsAppItem'）明确定义了相关描述信息。

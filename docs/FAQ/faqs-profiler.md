@@ -2,9 +2,10 @@
 format: md
 title: "性能分析"
 original_url: /docs/FAQ/faqs-profiler
+upstream_id: FAQ/faqs-profiler
+last_sync: 2026-06-07
+sync_hash: c668142f
 ---
-
-
 * **[Profiler分析任务录制失败](/docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-1)**
 * **[导入历史数据失败](/docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-2)**
 * **[内存占用率过高导致DevEco Studio无法正常运行](/docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-3)**

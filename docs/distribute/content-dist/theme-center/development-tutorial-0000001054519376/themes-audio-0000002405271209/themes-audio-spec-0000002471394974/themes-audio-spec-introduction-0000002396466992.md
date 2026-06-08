@@ -3,9 +3,10 @@ title: "介绍"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-introduction-0000002396466992
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-introduction-0000002396466992
+last_sync: 2026-06-07
+sync_hash: 11b61f99
 ---
-
-
 # 介绍
 
 支持对音频产品（TWS耳机、颈戴、眼镜和头戴）回连弹窗进行个性化设计，可换肤范围包括：弹窗背景、产品主体/产品小图标、电量、产品文本和运营文本，如下图蓝色线框范围所示。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "圆形"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-circle
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-drawing/map-circle
+last_sync: 2026-06-07
+sync_hash: 32ad4ed0
 ---
-
-
 ## 场景介绍
 
 本章节将向您介绍如何在地图上绘制圆形。

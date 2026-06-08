@@ -2,9 +2,10 @@
 title: "使用typeNode实现画中画功能开发（ArkTS）"
 original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/window-pipwindow/pipwindow-typenode
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/window-manager/window-pipwindow/pipwindow-typenode
+last_sync: 2026-06-07
+sync_hash: e13c9ed9
 ---
-
-
 ![](./img/11e1cbff.png)
 
 * 从API version 12开始，支持使用typeNode实现画中画功能开发。

@@ -3,8 +3,10 @@ title: "批量修改任务出价"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-taskpricemanage-0000001263095175
 format: md
+upstream_id: monetize/promotion/marketapi-taskpricemanage-0000001263095175
+last_sync: 2026-06-07
+sync_hash: 376004f5
 ---
-
 # 批量修改任务出价
 
 ## 功能介绍

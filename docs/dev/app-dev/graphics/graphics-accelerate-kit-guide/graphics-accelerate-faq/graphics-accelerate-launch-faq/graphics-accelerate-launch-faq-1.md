@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通过加载内存镜像启动的游戏会全屏显示来电提醒，应该如何避免"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-1
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-1
+last_sync: 2026-06-07
+sync_hash: 28c9fa26
 ---
-
-
 没有通过加载内存镜像启动的游戏，用户在游戏期间来电，来电提醒悬浮在手机正上方。
 
 通过加载内存镜像启动的游戏，用户在游戏期间来电，游戏画面会被切至后台，当前来电提醒会被全屏显示，这影响了用户的游戏体验。

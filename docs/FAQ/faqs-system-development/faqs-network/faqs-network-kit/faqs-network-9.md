@@ -2,9 +2,10 @@
 format: md
 title: "http请求的官方示例代码中的extraData是什么类型"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-9
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-9
+last_sync: 2026-06-07
+sync_hash: 7a5db272
 ---
-
-
 1. 文档中对extraData的定义是“extraData?: string | Object | ArrayBuffer”，也就是extraData支持string、Object和ArrayBuffer三种类型。
 2. 有如下三种方法可供选择。
 

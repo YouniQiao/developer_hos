@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "AppFreeze（应用冻屏）检测"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines
+last_sync: 2026-06-07
+sync_hash: ac3f1511
 ---
-
-
 ## 简介
 
 用户在使用应用时，如果出现点击无反应或应用无响应等情况，并且持续时间超过一定限制，就会被定义为应用冻屏（AppFreeze），即应用无响应。系统会检测应用无响应，并生成AppFreeze日志，供应用开发者分析。
@@ -63,7 +64,7 @@ format: md
 
 **方式一：通过DevEco Studio获取日志**
 
-DevEco Studio会收集设备/data/log/faultlog/faultlogger/路径下的进程崩溃故障日志到FaultLog下，根据进程名和故障时间分类显示。获取日志的方法参见：[DevEco Studio使用指南-FaultLog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-fault-log)。
+DevEco Studio会收集设备/data/log/faultlog/faultlogger/路径下的进程崩溃故障日志到FaultLog下，根据进程名和故障时间分类显示。获取日志的方法参见：[DevEco Studio使用指南-FaultLog](/docs/tools/coding-debug/ide-fault-log)。
 
 **方式二：通过HiAppEvent接口订阅**
 
@@ -135,7 +136,7 @@ AppFreeze事件（THREAD\_BLOCK\_6S、 APP\_INPUT\_BLOCK）都包含以下几部
 | 字段 | 说明 |
 | --- | --- |
 | DeviceDebuggable | 设备的系统版本是否可调试，和开发者选项无关。  **说明**：从API version 23开始支持。 |
-| ReleaseType | 应用的版本类型。release表示应用为[release版本应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)，debug表示应用为[debug版本应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)。  **说明**：从API version 23开始支持。 |
+| ReleaseType | 应用的版本类型。release表示应用为[release版本应用](/docs/tools/coding-debug/ide-hvigor-compilation-options-customizing-guide#section192461528194916)，debug表示应用为[debug版本应用](/docs/tools/coding-debug/ide-hvigor-compilation-options-customizing-guide#section192461528194916)。  **说明**：从API version 23开始支持。 |
 | CpuAbi | 二进制接口类型。  **说明**：从API version 23开始支持。 |
 | IsSystemApp | 应用是否为系统应用。  **说明**：从API version 23开始支持。 |
 | Reason | 应用无响应原因，与应用无响应检测能力点对应。 |

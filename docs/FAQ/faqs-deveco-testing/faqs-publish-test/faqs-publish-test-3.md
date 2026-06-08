@@ -2,9 +2,10 @@
 format: md
 title: "测试报告中，为什么会批量出现待检测项"
 original_url: /docs/FAQ/faqs-deveco-testing/faqs-publish-test/faqs-publish-test-3
+upstream_id: FAQ/faqs-deveco-testing/faqs-publish-test/faqs-publish-test-3
+last_sync: 2026-06-07
+sync_hash: 4b892418
 ---
-
-
 由于测试任务内部异常，偶现任务终止的情况。请查看【测试报告-执行日志】，如果应用信息为空，请重新创建任务并执行测试。
 
 ![](./img/c8327791.png)

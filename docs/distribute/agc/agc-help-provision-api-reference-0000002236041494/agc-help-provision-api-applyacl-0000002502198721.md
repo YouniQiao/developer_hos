@@ -2,9 +2,10 @@
 title: "申请受限ACL权限"
 original_url: /docs/distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-applyacl-0000002502198721
 format: md
+upstream_id: distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-applyacl-0000002502198721
+last_sync: 2026-06-07
+sync_hash: 1d3a49d2
 ---
-
-
 #### 功能介绍
 
 此接口用于申请受限ACL权限。

@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "Configuration：高效实现定制功能"
 original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-customhttp/remote-communication-customconfig
 format: md
+upstream_id: dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-customhttp/remote-communication-customconfig
+last_sync: 2026-06-07
+sync_hash: d3b1a757
+upstream_hash: 6aeb3da75be3
 ---
-
 
 * **[DnsConfiguration：定制DNS](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-customhttp/remote-communication-customconfig/remote-communication-customdnsconfig)**
 * **[TransferConfiguration：定制数据传输](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-customhttp/remote-communication-customconfig/remote-communication-customtranferconfig)**

@@ -3,9 +3,10 @@ title: "启动调试"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-native-enable
 format: md
+upstream_id: tools/coding-debug/ide-debug-native-enable
+last_sync: 2026-06-07
+sync_hash: f4ffe05f
 ---
-
-
 # 启动调试
 
 Native代码调试依赖LLDB调试器，关于LLDB调试器的介绍请参考[LLDB高性能调试器](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/debug-lldb)。

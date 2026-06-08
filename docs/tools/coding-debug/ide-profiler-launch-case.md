@@ -3,9 +3,10 @@ title: "案例：应用冷启动首帧完成时延问题分析"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-profiler-launch-case
 format: md
+upstream_id: tools/coding-debug/ide-profiler-launch-case
+last_sync: 2026-06-07
+sync_hash: 286c2633
 ---
-
-
 # 案例：应用冷启动首帧完成时延问题分析
 
 应用冷启动首帧完成时延是指从用户点击桌面应用图标离手开始，到应用进程首帧绘制结束的时间。本案例介绍如何找到应用冷启动首帧完成时延起止点，以及如何通过调用栈和trace信息分析应用运行逻辑，定位应用冷启动首帧完成时延超预期的原因。

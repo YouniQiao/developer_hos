@@ -2,9 +2,10 @@
 title: "测试及验证收益"
 original_url: /docs/dev/game-dev/pga-test-verification-0000002083371437
 format: md
+upstream_id: dev/game-dev/pga-test-verification-0000002083371437
+last_sync: 2026-06-07
+sync_hash: dacde5e5
 ---
-
-
 PGA通过将C#代码转换成更为高效的本地代码（自研毕昇编译器），解决手机游戏中可能存在的响应速度慢、动作不流畅、画面卡顿等性能、功耗问题。游戏使用PGA完成优化后，您可以测试游戏、验证优化收益。
 
 ## 测试游戏

@@ -3,8 +3,10 @@ title: "查询关键词列表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-querykeywords-0000001181946353
 format: md
+upstream_id: monetize/promotion/marketapi-querykeywords-0000001181946353
+last_sync: 2026-06-07
+sync_hash: 54e15f1f
 ---
-
 # 查询关键词列表
 
 ## 功能介绍

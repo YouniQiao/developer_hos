@@ -2,9 +2,10 @@
 title: "证书链校验器对象的创建和校验"
 original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-verify-cerchainvalidator-object
 format: md
+upstream_id: dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-verify-cerchainvalidator-object
+last_sync: 2026-06-07
+sync_hash: 4845fbbb
 ---
-
-
 证书链是由一组证书组成的证书集合，以图中样例证书文件为例，即可放在一个证书链中。
 
 样例中可以看到GlobalSign自签名了证书，GlobalSign也签发了GlobalSign RSA OV SSL CA 2018的证书，GlobalSign RSA OV SSL CA 2018又签发了第三级证书。

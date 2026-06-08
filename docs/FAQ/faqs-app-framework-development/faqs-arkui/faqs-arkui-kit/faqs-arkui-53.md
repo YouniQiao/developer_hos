@@ -2,9 +2,10 @@
 title: "如何在键盘弹出时，让内容上移，而不是整个页面上移"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-53
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-53
+last_sync: 2026-06-07
+sync_hash: 4a7cdd08
 ---
-
-
 可通过setKeyboardAvoidMode接口设置键盘避让模式为KeyboardAvoidMode.RESIZE，表示压缩模式。参考代码如下：
 
 ```

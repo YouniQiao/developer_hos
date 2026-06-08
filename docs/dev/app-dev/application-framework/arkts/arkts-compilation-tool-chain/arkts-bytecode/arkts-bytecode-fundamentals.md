@@ -2,8 +2,11 @@
 title: "方舟字节码基本原理"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/arkts-bytecode-fundamentals
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/arkts-bytecode-fundamentals
+last_sync: 2026-06-07
+sync_hash: 177e5225
+upstream_hash: d8cd2b101ed9
 ---
-
 
 ## 总体设计
 

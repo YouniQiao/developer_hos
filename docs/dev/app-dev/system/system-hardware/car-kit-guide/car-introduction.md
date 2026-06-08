@@ -2,9 +2,10 @@
 title: "Car Kit简介"
 original_url: /docs/dev/app-dev/system/system-hardware/car-kit-guide/car-introduction
 format: md
+upstream_id: dev/app-dev/system/system-hardware/car-kit-guide/car-introduction
+last_sync: 2026-06-07
+sync_hash: 46927e1b
 ---
-
-
 Car Kit（车服务）为开发者提供一套便捷接入出行服务的能力，开发者通过集成Car Kit，可以轻松实现在手机与鸿蒙智行车机之间无缝传递导航信息、通过超级桌面在鸿蒙智行车机上使用手机上的应用、通过HiCar在认证车机上使用手机上的应用等功能，为用户提供更加良好的出行体验。
 
 ![](./img/7c139172.png)

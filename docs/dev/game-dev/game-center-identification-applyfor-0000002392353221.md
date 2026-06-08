@@ -2,9 +2,10 @@
 title: "版署实名认证申请"
 original_url: /docs/dev/game-dev/game-center-identification-applyfor-0000002392353221
 format: md
+upstream_id: dev/game-dev/game-center-identification-applyfor-0000002392353221
+last_sync: 2026-06-07
+sync_hash: ce384180
 ---
-
-
 按照国家新闻出版署《关于开展网络游戏防沉迷实名认证系统接口对接工作的通知》，各游戏出版运营企业均须在2021年6月1日前完成国家新闻出版署的实名认证系统的接入。
 
 为落实您和华为游戏中心联运的游戏执行通知要求，您需要完成如下2步才能完成国家新闻出版署实名认证系统的接入：

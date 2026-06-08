@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Core Vision Kit简介"
 original_url: /docs/dev/app-dev/ai/core-vision-kit-guide/core-vision-introduction
 format: md
+upstream_id: dev/app-dev/ai/core-vision-kit-guide/core-vision-introduction
+last_sync: 2026-06-07
+sync_hash: 2588c273
 ---
-
-
 Core Vision Kit（基础视觉服务）提供了机器视觉相关的基础能力，例如通用文字识别（即OCR，Optical Character Recognition，也称为光学字符识别）、人脸检测、人脸比对以及主体分割等能力。
 
 开发者可以结合[Vision Kit](/docs/dev/app-dev/ai/vision-kit-guide/vision-introduction)的UI控件能力（例如：人脸活体检测），提升应用的智能化、便捷化交互体验。

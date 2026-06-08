@@ -2,9 +2,10 @@
 title: "体验建议概述"
 original_url: /docs/experience-suggestions/experience-suggestions-overview
 format: md
+upstream_id: experience-suggestions/experience-suggestions-overview
+last_sync: 2026-06-07
+sync_hash: f79f9807
 ---
-
-
 # 体验建议概述
 
 本文档介绍基础功能和兼容性、稳定性、功耗、性能、安全和UX这6大核心质量维度在开发阶段和测试阶段需要关注的体验建议。

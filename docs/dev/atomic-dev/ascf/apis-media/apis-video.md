@@ -2,9 +2,10 @@
 title: "视频"
 original_url: /docs/dev/atomic-dev/ascf/apis-media/apis-video
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-media/apis-video
+last_sync: 2026-06-07
+sync_hash: 2ef1c1ec
 ---
-
-
 ## has.chooseMedia
 
 has.chooseMedia(Object object)

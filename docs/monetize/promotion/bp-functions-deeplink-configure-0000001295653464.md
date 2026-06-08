@@ -3,8 +3,10 @@ title: "配置延迟Deeplink"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-deeplink-configure-0000001295653464
 format: md
+upstream_id: monetize/promotion/bp-functions-deeplink-configure-0000001295653464
+last_sync: 2026-06-07
+sync_hash: 86d6293b
 ---
-
 # 配置延迟Deeplink
 
 ## 操作步骤

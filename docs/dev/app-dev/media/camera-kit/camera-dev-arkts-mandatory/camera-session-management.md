@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "会话管理(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-session-management
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-session-management
+last_sync: 2026-06-07
+sync_hash: 289bc572
+upstream_hash: 146eb9735cfe
 ---
-
 
 相机使用预览、拍照、录像、元数据功能前，均需要创建相机会话。
 

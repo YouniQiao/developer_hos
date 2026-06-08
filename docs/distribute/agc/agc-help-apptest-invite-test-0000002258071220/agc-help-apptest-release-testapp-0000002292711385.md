@@ -2,9 +2,10 @@
 title: "创建并发布测试版本"
 original_url: /docs/distribute/agc/agc-help-apptest-invite-test-0000002258071220/agc-help-apptest-release-testapp-0000002292711385
 format: md
+upstream_id: distribute/agc/agc-help-apptest-invite-test-0000002258071220/agc-help-apptest-release-testapp-0000002292711385
+last_sync: 2026-06-07
+sync_hash: ee8166aa
 ---
-
-
 #### 版本号规范
 
 * 测试版本的VersionCode必须高于发布过的全网版本的VersionCode。

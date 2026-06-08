@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "静态图"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-static-diagram
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-static-diagram
+last_sync: 2026-06-07
+sync_hash: 89d3dde0
 ---
-
-
 ## 场景介绍
 
 本章节将向您介绍如何使用静态图功能。静态图功能会返回一张地图图片，您可以将地图以图片形式嵌入自己的应用/元服务中。在使用时，您可以指定请求的地图位置、图片大小。

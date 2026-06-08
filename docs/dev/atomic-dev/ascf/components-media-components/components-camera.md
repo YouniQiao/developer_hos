@@ -2,9 +2,10 @@
 title: "camera"
 original_url: /docs/dev/atomic-dev/ascf/components-media-components/components-camera
 format: md
+upstream_id: dev/atomic-dev/ascf/components-media-components/components-camera
+last_sync: 2026-06-07
+sync_hash: 66d84731
 ---
-
-
 系统相机，支持拍摄、录像功能。
 
 **起始版本：** 1.0.4

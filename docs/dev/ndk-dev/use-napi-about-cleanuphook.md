@@ -2,8 +2,11 @@
 title: "使用Node-API接口注册和使用环境清理钩子"
 original_url: /docs/dev/ndk-dev/use-napi-about-cleanuphook
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-cleanuphook
+last_sync: 2026-06-07
+sync_hash: acbec180
+upstream_hash: 196a8c5e9f3c
 ---
-
 
 ## 简介
 
@@ -37,7 +40,7 @@ Node-API接口开发流程参考[使用Node-API实现跨语言交互开发流程
 
 用于注册一个环境清理钩子函数，该函数将在环境退出时执行。这是确保资源在环境销毁前得到清理的重要机制。
 
-需要注意的是，napi\_add\_env\_cleanup\_hook接口并不支持对同一arg绑定多个回调。若出现env已销毁，但cleanup回调未被执行的情况，可以在启用ArkTS运行时[多线程检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-multi-thread-check)功能的前提下，查看hilog流水日志AddCleanupHook Failed, data cannot register multiple times.来查找发生注册失败的调用。
+需要注意的是，napi\_add\_env\_cleanup\_hook接口并不支持对同一arg绑定多个回调。若出现env已销毁，但cleanup回调未被执行的情况，可以在启用ArkTS运行时[多线程检测](/docs/tools/coding-debug/ide-multi-thread-check)功能的前提下，查看hilog流水日志AddCleanupHook Failed, data cannot register multiple times.来查找发生注册失败的调用。
 
 ### napi\_remove\_env\_cleanup\_hook
 

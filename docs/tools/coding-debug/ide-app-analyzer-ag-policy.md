@@ -3,9 +3,10 @@ title: "上架合规体检"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-app-analyzer-ag-policy
 format: md
+upstream_id: tools/coding-debug/ide-app-analyzer-ag-policy
+last_sync: 2026-06-07
+sync_hash: 528711f2
 ---
-
-
 # 上架合规体检
 
 从DevEco Studio 6.1.0 Beta1版本开始，AppAnalyzer新增上架合规体检，针对AppGallery应用的上架合规要求进行检测，提前发现需要重点关注的合规事项，了解应做和不应做的事项，避免常见误区。

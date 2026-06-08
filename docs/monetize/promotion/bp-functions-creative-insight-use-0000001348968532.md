@@ -3,8 +3,10 @@ title: "使用创意洞察功能"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-creative-insight-use-0000001348968532
 format: md
+upstream_id: monetize/promotion/bp-functions-creative-insight-use-0000001348968532
+last_sync: 2026-06-07
+sync_hash: e2cef8b8
 ---
-
 # 使用创意洞察功能
 
 1. 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)。

@@ -2,9 +2,10 @@
 title: "如何读取rawfile中的xml文件并转化为string类型"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-accessibility-localization/faqs-localization-kit/faqs-localization-3
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-accessibility-localization/faqs-localization-kit/faqs-localization-3
+last_sync: 2026-06-07
+sync_hash: 3dbd18dc
 ---
-
-
 使用resourceManager的getRawFileContent接口获取xml数据。使用util工具函数中的decodeToString接口将数据转化为string类型。
 
 参考代码如下：

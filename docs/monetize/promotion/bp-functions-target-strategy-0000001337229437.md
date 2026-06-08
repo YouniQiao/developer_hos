@@ -3,8 +3,10 @@ title: "创建定向包"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-target-strategy-0000001337229437
 format: md
+upstream_id: monetize/promotion/bp-functions-target-strategy-0000001337229437
+last_sync: 2026-06-07
+sync_hash: 9cb7d0e3
 ---
-
 # 创建定向包
 
 ## 进入定向管理页面

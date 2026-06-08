@@ -2,9 +2,10 @@
 title: "离线环境配置指导"
 format: md
 original_url: /docs/tools/coding-debug/ide-no-network
+upstream_id: tools/coding-debug/ide-no-network
+last_sync: 2026-06-07
+sync_hash: 32fc880a
 ---
-
-
 # 离线环境配置指导
 
 如果开发者所使用的电脑处于完全无网络的离线环境中，需要先在一台可访问网络的电脑上准备好以下文件，将这些文件拷贝到无网络电脑中。

@@ -2,9 +2,10 @@
 title: "添加Page"
 format: md
 original_url: /docs/tools/coding-debug/ide-add-page
+upstream_id: tools/coding-debug/ide-add-page
+last_sync: 2026-06-07
+sync_hash: 7012be3e
 ---
-
-
 # 添加Page
 
 在ArkTS语言的工程中，支持添加Page。Page是表示应用/元服务的一个页面。应用/元服务可以设计为多个功能页面，每个页面进行单独的文件管理，并通过路由API实现页面的调度管理，以实现应用内功能的解耦。ArkTS语言的工程添加Page后，会在pages文件夹下生成一个新的ets文件。

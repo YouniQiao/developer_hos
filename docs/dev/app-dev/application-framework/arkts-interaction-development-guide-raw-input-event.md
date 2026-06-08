@@ -2,9 +2,10 @@
 title: "输入设备与事件"
 original_url: /docs/dev/app-dev/application-framework/arkts-interaction-development-guide-raw-input-event
 format: md
+upstream_id: dev/app-dev/application-framework/arkts-interaction-development-guide-raw-input-event
+last_sync: 2026-06-07
+sync_hash: dec102d3
 ---
-
-
 不同的输入设备会产生不同的事件类型。只有在用户操作特定输入设备和工具时，才会触发基础事件。通过输入设备和工具类型，可以区分这些事件。
 
 * 输入设备(source type)：即事件来源的设备类型，是真正产生了底层事件的设备，如触摸屏、鼠标、触控板、键盘、摇杆等；

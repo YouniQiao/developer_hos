@@ -2,9 +2,10 @@
 title: "加密"
 original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-crypto
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-device/apis-crypto
+last_sync: 2026-06-07
+sync_hash: a448c4bb
 ---
-
-
 ## has.getRandomValues
 
 has.getRandomValues(Object object)

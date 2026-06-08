@@ -2,8 +2,11 @@
 title: "控件位置调整场景"
 original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-component-relocation
 format: md
+upstream_id: dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-component-relocation
+last_sync: 2026-06-07
+sync_hash: 50835ef6
+upstream_hash: 2439d3a87f29
 ---
-
 
 ## 设计场景
 

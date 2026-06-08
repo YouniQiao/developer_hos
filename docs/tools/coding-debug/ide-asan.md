@@ -3,9 +3,10 @@ title: "使用ASan检测内存错误"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-asan
 format: md
+upstream_id: tools/coding-debug/ide-asan
+last_sync: 2026-06-07
+sync_hash: 0e2267b3
 ---
-
-
 # 使用ASan检测内存错误
 
 为追求C/C++的极致性能，编译器和OS(Windows/Linux/Mac)运行框架不会对内存操作进行安全检测。针对该场景，DevEco Studio集成ASan（Address-Sanitizer）为开发者提供面向C/C++的地址越界检测能力，并通过FaultLog展示错误的堆栈详情及导致错误的代码行。关于ASan的检测原理请参考[ASan检测原理](`https://`developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-address-sanitizer-principle#section159561141247)。

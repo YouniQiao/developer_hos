@@ -2,9 +2,10 @@
 title: "js标签配置"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-js-tag
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-js-tag
+last_sync: 2026-06-07
+sync_hash: d22861f5
 ---
-
-
 js标签用于配置实例名称、页面路由和窗口样式信息。
 
 | 标签 | 类型 | 默认值 | 必填 | 描述 |

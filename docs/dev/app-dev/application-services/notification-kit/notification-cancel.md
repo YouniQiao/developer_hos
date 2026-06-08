@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "取消通知"
 original_url: /docs/dev/app-dev/application-services/notification-kit/notification-cancel
 format: md
+upstream_id: dev/app-dev/application-services/notification-kit/notification-cancel
+last_sync: 2026-06-07
+sync_hash: e0c0d631
 ---
-
-
 用户点击通知并拉起应用到前台时，应用可以取消某条通知、部分通知或所有通知。
 
 用户点击桌面图标拉起应用到前台时，用户查看后的应用内消息，应用可以选择取消这些已查看消息的通知。

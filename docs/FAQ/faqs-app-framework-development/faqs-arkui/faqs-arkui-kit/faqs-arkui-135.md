@@ -2,9 +2,10 @@
 format: md
 title: "如何实现两层Tab嵌套滑动的效果"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-135
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-135
+last_sync: 2026-06-07
+sync_hash: 50e5b5bc
 ---
-
-
 **问题描述**
 
 在一级Tabs组件下嵌套二级Tabs时，如果二级Tabs的第一个页面左滑或最后一个页面右滑不能切换一级Tabs标签，可以采取以下方法解决：

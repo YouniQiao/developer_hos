@@ -2,9 +2,10 @@
 title: "弹窗组件常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-popup-component-faq
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-popup-component-faq
+last_sync: 2026-06-07
+sync_hash: 945b1b4c
 ---
-
-
 本文档介绍弹窗组件的常见问题并提供参考。
 
 ## bindPopup设置placement属性不生效

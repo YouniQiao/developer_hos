@@ -2,9 +2,10 @@
 title: "开发环境准备"
 original_url: /docs/dev/game-dev/games-quickgame-environment-preparation-0000002351893453
 format: md
+upstream_id: dev/game-dev/games-quickgame-environment-preparation-0000002351893453
+last_sync: 2026-06-07
+sync_hash: e6e6bdfb
 ---
-
-
 ## 硬件要求
 
 | 硬件设备 | 说明 |

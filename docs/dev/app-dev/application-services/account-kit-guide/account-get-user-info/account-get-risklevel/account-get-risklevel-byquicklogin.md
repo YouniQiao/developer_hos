@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通过华为账号一键登录获取用户风险等级"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-risklevel/account-get-risklevel-byquicklogin
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-risklevel/account-get-risklevel-byquicklogin
+last_sync: 2026-06-07
+sync_hash: c35625ec
 ---
-
-
 ## 场景介绍
 
 应用登录风控场景，可以通过[华为账号一键登录](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-phone-unionid-login)获取用户风险等级，对恶意账号进行风控，提升应用的安全等级。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "高尔夫"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-golf
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-golf
+last_sync: 2026-06-07
+sync_hash: 86ecbe14
 ---
-
-
 ## 高尔夫练习场
 
 ### 高尔夫练习场相关锻炼记录类型如下：

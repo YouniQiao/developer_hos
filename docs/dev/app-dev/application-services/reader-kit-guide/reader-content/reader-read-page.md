@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "构建阅读器"
 original_url: /docs/dev/app-dev/application-services/reader-kit-guide/reader-content/reader-read-page
 format: md
+upstream_id: dev/app-dev/application-services/reader-kit-guide/reader-content/reader-read-page
+last_sync: 2026-06-07
+sync_hash: c02e79bf
 ---
-
-
 Reader Kit提供的阅读页组件ReadPageComponent，支持对标准的txt和富文本内容（html+css）按仿真和横滑方式进行分页排版的能力、支持翻页阅读过程中所需要的进度和行为感知能力。利用ReadPageComponent，开发者可快速实现书籍阅读的能力。
 
 ## 业务流程

@@ -2,9 +2,10 @@
 title: "自定义组件"
 original_url: /docs/dev/atomic-dev/ascf/apis-page/apis-custom-components
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-page/apis-custom-components
+last_sync: 2026-06-07
+sync_hash: f7aaaef8
 ---
-
-
 ## has.nextTick
 
 has.nextTick(function callback)

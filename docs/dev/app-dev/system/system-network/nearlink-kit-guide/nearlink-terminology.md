@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "NearLink Kit术语"
 original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-terminology
 format: md
+upstream_id: dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-terminology
+last_sync: 2026-06-07
+sync_hash: 4a34c5f5
+upstream_hash: af7b1f7a2a9d
 ---
-
 
 ## D
 

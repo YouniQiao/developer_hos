@@ -3,9 +3,10 @@ title: "命令：视频命令&lt;VideoCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-videocommand-0000002504354923
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-videocommand-0000002504354923
+last_sync: 2026-06-07
+sync_hash: 5f60f696
 ---
-
-
 # 命令：视频命令&lt;VideoCommand&gt;
 
 ## 功能概述

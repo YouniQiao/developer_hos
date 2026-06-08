@@ -3,8 +3,10 @@ title: 通知
 sidebar_label: 通知
 original_url: /docs/design/system-features/features/notification
 format: md
+upstream_id: design/system-features/features/notification
+last_sync: 2026-06-07
+sync_hash: 5cf0554f
 ---
-
 # 通知
 
 通知旨在让用户以合适的方式及时获得有用的新消息，帮助用户高效地处理任务。

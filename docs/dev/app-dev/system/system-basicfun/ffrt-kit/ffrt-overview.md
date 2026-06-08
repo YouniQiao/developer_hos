@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "Function Flow Runtime Kit概述"
 original_url: /docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-overview
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-overview
+last_sync: 2026-06-07
+sync_hash: ad3267ae
+upstream_hash: 77bdbf020265
 ---
-
 
 ## 简介
 
@@ -74,4 +77,4 @@ Function Flow编程模型支持两种方式构建任务依赖图：
 
 本Kit支持模拟器。
 
-模拟器与真机存在通用差异，详情请参见[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification)。
+模拟器与真机存在通用差异，详情请参见[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification)。

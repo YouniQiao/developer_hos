@@ -2,9 +2,10 @@
 title: "@Track装饰器：class对象属性级更新"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-data-object-state-management/arkts-track
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-data-object-state-management/arkts-track
+last_sync: 2026-06-07
+sync_hash: a7ae3c86
 ---
-
-
 @Track应用于class对象的属性级更新。@Track装饰的属性变化时，只会触发该属性关联的UI更新。
 
 在阅读本文档之前，建议开发者对状态管理基本观察能力有基本的了解。建议提前阅读：[@State](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state)。

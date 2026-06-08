@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-use-taskpool-for-web-request"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hp-arkui-use-taskpool-for-web-request
 format: md
+upstream_id: tools/coding-debug/ide-hp-arkui-use-taskpool-for-web-request
+last_sync: 2026-06-07
+sync_hash: 08031c8a
 ---
-
-
 # @performance/hp-arkui-use-taskpool-for-web-request
 
 建议网络资源的请求和返回使用taskpool线程池异步处理。

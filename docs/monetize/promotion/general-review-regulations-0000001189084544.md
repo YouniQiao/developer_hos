@@ -3,8 +3,10 @@ title: "通用审核规范"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/general-review-regulations-0000001189084544
 format: md
+upstream_id: monetize/promotion/general-review-regulations-0000001189084544
+last_sync: 2026-06-07
+sync_hash: b217e035
 ---
-
 # 通用审核规范
 
 ## 概述

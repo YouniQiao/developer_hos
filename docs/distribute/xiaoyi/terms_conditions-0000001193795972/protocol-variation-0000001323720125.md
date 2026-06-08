@@ -3,9 +3,10 @@ title: "协议变更点"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/terms_conditions-0000001193795972/protocol-variation-0000001323720125
 format: md
+upstream_id: distribute/xiaoyi/terms_conditions-0000001193795972/protocol-variation-0000001323720125
+last_sync: 2026-06-07
+sync_hash: 31e1a60b
 ---
-
-
 # 协议变更点
 
 **更新时间：2025年10月20日**

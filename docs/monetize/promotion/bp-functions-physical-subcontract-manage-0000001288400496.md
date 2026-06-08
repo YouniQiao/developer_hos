@@ -3,8 +3,10 @@ title: "管理渠道包"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-physical-subcontract-manage-0000001288400496
 format: md
+upstream_id: monetize/promotion/bp-functions-physical-subcontract-manage-0000001288400496
+last_sync: 2026-06-07
+sync_hash: b86df830
 ---
-
 # 管理渠道包
 
 在新建物理分包任务前，需要开通渠道包，配置好渠道包信息，并上传对应的软件包。

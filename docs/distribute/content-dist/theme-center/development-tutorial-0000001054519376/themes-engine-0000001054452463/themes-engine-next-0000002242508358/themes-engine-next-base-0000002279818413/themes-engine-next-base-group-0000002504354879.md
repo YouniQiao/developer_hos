@@ -3,9 +3,10 @@ title: "组：视图组&lt;Group&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-group-0000002504354879
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-group-0000002504354879
+last_sync: 2026-06-07
+sync_hash: b8035183
 ---
-
-
 # 组：视图组&lt;Group&gt;
 
 ## 功能概述

@@ -3,9 +3,10 @@ title: "使用预览器调试应用"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-previewer-debug
 format: md
+upstream_id: tools/coding-debug/ide-previewer-debug
+last_sync: 2026-06-07
+sync_hash: 1c7305d7
 ---
-
-
 # 使用预览器调试应用
 
 使用真机或模拟器进行调试时，修改后的代码需要经过较长时间的编译和安装过程，才能刷新至调试环境。使用预览器进行调试，可快速地修改代码和运行应用，在DevEco Studio中直接查看修改后的界面显示效果。

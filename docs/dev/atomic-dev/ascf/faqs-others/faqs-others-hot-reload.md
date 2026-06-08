@@ -2,9 +2,10 @@
 title: "启用热重载功能修改js/json文件不生效"
 original_url: /docs/dev/atomic-dev/ascf/faqs-others/faqs-others-hot-reload
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-others/faqs-others-hot-reload
+last_sync: 2026-06-07
+sync_hash: e49d5b6e
 ---
-
-
 **问题现象**
 
 修改js/json文件出现热重载功能不生效，日志报错：
@@ -17,7 +18,7 @@ BundleResourceLoader --&gt; request -&gt; fetch bundle resource from ascfDevServ
 
 **解决措施**
 
-在[开发者选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode#section530763213432)中，开启“开发中元服务豁免管控”。
+在[开发者选项](/docs/tools/coding-debug/ide-developer-mode#section530763213432)中，开启“开发中元服务豁免管控”。
 
 通过HiLog快速查看error日志方法：
 

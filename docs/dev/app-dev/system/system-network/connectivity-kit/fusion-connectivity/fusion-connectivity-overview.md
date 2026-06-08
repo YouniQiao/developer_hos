@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "融合短距服务开发概述"
 original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/fusion-connectivity/fusion-connectivity-overview
 format: md
+upstream_id: dev/app-dev/system/system-network/connectivity-kit/fusion-connectivity/fusion-connectivity-overview
+last_sync: 2026-06-07
+sync_hash: 341a8a88
 ---
-
-
 ## 概述
 
 融合短距通信服务（以下简称融合短距）是HarmonyOS系统中统一管理短距离通信技术的服务，当前其内部实现了PartnerAgent服务模块。

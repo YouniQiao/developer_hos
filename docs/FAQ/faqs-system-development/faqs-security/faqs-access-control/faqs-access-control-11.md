@@ -2,9 +2,10 @@
 format: md
 title: "应用申请位置信息权限为什么没有弹窗"
 original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-access-control/faqs-access-control-11
+upstream_id: FAQ/faqs-system-development/faqs-security/faqs-access-control/faqs-access-control-11
+last_sync: 2026-06-07
+sync_hash: 0e6c1f73
 ---
-
-
 **可能原因**
 
 未申请ohos.permission.LOCATION权限。

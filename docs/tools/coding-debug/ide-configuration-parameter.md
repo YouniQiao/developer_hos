@@ -3,9 +3,10 @@ title: "DevEco Studio配置参数列表"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-configuration-parameter
 format: md
+upstream_id: tools/coding-debug/ide-configuration-parameter
+last_sync: 2026-06-07
+sync_hash: d5093e61
 ---
-
-
 # DevEco Studio配置参数列表
 
 DevEco Studio基于IntelliJ平台开发，在原生的IntelliJ参数的基础上新增了部分参数，这些参数可在idea.properties中进行配置，参数列表如下：

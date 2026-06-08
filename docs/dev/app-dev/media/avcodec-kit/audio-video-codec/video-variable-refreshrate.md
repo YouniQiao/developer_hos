@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "视频可变帧率"
 original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-variable-refreshrate
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/audio-video-codec/video-variable-refreshrate
+last_sync: 2026-06-07
+sync_hash: d646b4aa
 ---
-
-
 从API version 15开始，支持视频可变帧率。
 
 本模块提供视频可变帧率功能的CAPI接口，通过调用本接口，可以在视频播放过程中根据视频内容动态调整屏幕刷新率，在保障视频播放流畅度的基础上节省屏幕显示功耗。

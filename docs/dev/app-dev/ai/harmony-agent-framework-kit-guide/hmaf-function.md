@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通过Function组件拉起智能体"
 original_url: /docs/dev/app-dev/ai/harmony-agent-framework-kit-guide/hmaf-function
 format: md
+upstream_id: dev/app-dev/ai/harmony-agent-framework-kit-guide/hmaf-function
+last_sync: 2026-06-07
+sync_hash: c8ca8f44
 ---
-
-
 ## 场景介绍
 
 * Function组件分为图标组件和按钮组件，无标题时默认显示图标组件，有标题时默认显示按钮组件。

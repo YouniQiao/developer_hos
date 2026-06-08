@@ -3,8 +3,11 @@ title: "内容信息规范"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/contentreviewspecifications-0000001792709172/content-information-test-0000001057563280
 format: md
+upstream_id: distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/contentreviewspecifications-0000001792709172/content-information-test-0000001057563280
+last_sync: 2026-06-07
+sync_hash: 40de0d85
+upstream_hash: ec7c4f64658a
 ---
-
 
 # 内容信息规范
 

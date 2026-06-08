@@ -2,9 +2,10 @@
 title: "调试流程"
 original_url: /docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-process-0000002289516737
 format: md
+upstream_id: distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-process-0000002289516737
+last_sync: 2026-06-07
+sync_hash: d6d46cd4
 ---
-
-
 本章节介绍单机调试流程。
 
 | 序号 | 步骤 | 详情 |

@@ -3,9 +3,10 @@ title: "快捷键"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-shortcut-key
 format: md
+upstream_id: tools/coding-debug/ide-shortcut-key
+last_sync: 2026-06-07
+sync_hash: 2bd3056a
 ---
-
-
 # 快捷键
 
 <strong>表1</strong>

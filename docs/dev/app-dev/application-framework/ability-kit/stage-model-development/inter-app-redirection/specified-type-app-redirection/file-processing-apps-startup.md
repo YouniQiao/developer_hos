@@ -2,9 +2,10 @@
 title: "拉起文件处理类应用（startAbility）"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/file-processing-apps-startup
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/file-processing-apps-startup
+last_sync: 2026-06-07
+sync_hash: cbcd2995
 ---
-
-
 ## 使用场景
 
 开发者可以通过调用[startAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#startability)接口，由系统从已安装的应用中寻找符合要求的应用，打开特定文件。

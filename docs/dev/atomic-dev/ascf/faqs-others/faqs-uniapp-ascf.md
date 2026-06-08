@@ -2,9 +2,10 @@
 title: "uni-App转换ASCF常见问题"
 original_url: /docs/dev/atomic-dev/ascf/faqs-others/faqs-uniapp-ascf
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-others/faqs-uniapp-ascf
+last_sync: 2026-06-07
+sync_hash: b516f2c1
 ---
-
-
 ## 元服务运行遇到白屏问题如何调试
 
 元服务启动白屏原因可能有以下常见原因：

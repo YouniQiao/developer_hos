@@ -2,9 +2,10 @@
 title: "系统适配技术支持"
 original_url: /docs/dev/game-dev/games-adapt-support-0000002514906059
 format: md
+upstream_id: dev/game-dev/games-adapt-support-0000002514906059
+last_sync: 2026-06-07
+sync_hash: 5b328418
 ---
-
-
 当您在系统适配过程中遇到问题时，可以按照以下顺序寻求帮助。
 
 1. 通过[智能客服](https://developer.huawei.com/consumer/cn/customerService/#/bot-dev-top/faq-top/faq-talk-top)查找问题解决方案。

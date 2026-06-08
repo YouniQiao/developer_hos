@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "ArkGraphics 3D简介"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-3d/arkgraphics3d-overview
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-3d/arkgraphics3d-overview
+last_sync: 2026-06-07
+sync_hash: e5413711
 ---
-
-
 ArkGraphics 3D（方舟3D图形）基于轻量级的3D引擎以及渲染管线为开发者提供基础3D场景绘制能力，供开发者便捷、高效地构建3D场景并完成渲染。
 
 ArkGraphics 3D以自定义场景模式为核心能力，支持开发者自行构建和管理Scene、Camera、Light等节点，从而对3D场景的渲染效果与交互行为进行完全控制。同时，为了便于快速预览和展示模型，也提供自动场景模式，允许开发者直接加载glTF（.gltf文件和.glb文件）模型，由框架自动创建基础相机、光源及交互控制。

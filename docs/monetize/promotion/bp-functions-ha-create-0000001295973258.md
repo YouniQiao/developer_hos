@@ -3,8 +3,10 @@ title: "新建数据源"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-ha-create-0000001295973258
 format: md
+upstream_id: monetize/promotion/bp-functions-ha-create-0000001295973258
+last_sync: 2026-06-07
+sync_hash: 326d8c54
 ---
-
 # 新建数据源
 
 ## 前提条件

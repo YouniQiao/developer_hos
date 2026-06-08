@@ -2,9 +2,10 @@
 title: "加速计"
 original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-accelerometer
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-device/apis-accelerometer
+last_sync: 2026-06-07
+sync_hash: a85dd80a
 ---
-
-
 ## has.startAccelerometer
 
 has.startAccelerometer(Object object)

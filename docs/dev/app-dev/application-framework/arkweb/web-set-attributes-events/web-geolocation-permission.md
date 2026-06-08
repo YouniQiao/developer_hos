@@ -2,9 +2,10 @@
 title: "管理位置权限"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-geolocation-permission
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-geolocation-permission
+last_sync: 2026-06-07
+sync_hash: 719ed631
 ---
-
-
 从API version 9开始，支持Web组件的[GeolocationPermissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-geolocationpermissions)类和[onGeolocationShow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#ongeolocationshow)方法对网页进行位置权限管理。更多信息请参见[应用数据安全](/docs/security/data-security)。
 
 Web组件根据[GeolocationPermissions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-geolocationpermissions)类和[onGeolocationShow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#ongeolocationshow)方法的响应结果，决定是否赋予前端页面权限。用户可以获取位置信息，以便使用出行导航、天气预报等服务。

@@ -2,9 +2,10 @@
 format: md
 title: "在ArkTS侧如何引用Native侧使用napi_create_buffer接口构造的对象"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-58
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-58
+last_sync: 2026-06-07
+sync_hash: c7471423
 ---
-
-
 **问题现象**
 
 使用napi\_create\_buffer接口创建缓冲区，并在ArkTS与Native之间传递构建结果的步骤如下：

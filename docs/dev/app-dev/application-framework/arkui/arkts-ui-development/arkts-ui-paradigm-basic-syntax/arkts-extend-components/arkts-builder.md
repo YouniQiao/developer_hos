@@ -2,9 +2,10 @@
 title: "@Builder装饰器：自定义构建函数"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-builder
+last_sync: 2026-06-07
+sync_hash: 1ba9c63c
 ---
-
-
 ArkUI提供轻量的UI元素复用机制@Builder，其内部UI结构固定，仅与使用方进行数据传递。开发者可将重复使用的UI元素抽象成函数，在build函数中调用。
 
 @Builder装饰的函数也称为“自定义构建函数”。

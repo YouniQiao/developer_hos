@@ -2,9 +2,10 @@
 title: "支付"
 original_url: /docs/dev/game-dev/games-quickgame-faq-payment-0000002458692481
 format: md
+upstream_id: dev/game-dev/games-quickgame-faq-payment-0000002458692481
+last_sync: 2026-06-07
+sync_hash: ac1d84b0
 ---
-
-
 ## 调用支付接口
 
 ### 调用支付接口时，出现Uncaught Error: Java exception was raised during method invocation，如何处理？

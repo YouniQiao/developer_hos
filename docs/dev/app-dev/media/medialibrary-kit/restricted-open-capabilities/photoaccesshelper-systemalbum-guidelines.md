@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "系统相册资源使用指导"
 original_url: /docs/dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/photoaccesshelper-systemalbum-guidelines
 format: md
+upstream_id: dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/photoaccesshelper-systemalbum-guidelines
+last_sync: 2026-06-07
+sync_hash: be5d2a1d
+upstream_hash: 900c60b92886
 ---
-
 
 photoAccessHelper提供对收藏夹、视频相册、截屏和录屏相册的相关操作。
 

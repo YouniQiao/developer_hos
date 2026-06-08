@@ -2,9 +2,10 @@
 title: "准备工作"
 original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-prepare-0000002424763490
 format: md
+upstream_id: distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-prepare-0000002424763490
+last_sync: 2026-06-07
+sync_hash: b71824f5
 ---
-
-
 提前了解小游戏的上架规则，并提前准备小游戏素材，有助于快速通过小游戏上架审核。
 
 #### 了解上架规则

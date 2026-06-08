@@ -2,9 +2,10 @@
 title: "素材管理"
 original_url: /docs/distribute/agc/agc-help-service-materials-0000002501020901/agc-help-materials-manage-0000002500940929
 format: md
+upstream_id: distribute/agc/agc-help-service-materials-0000002501020901/agc-help-materials-manage-0000002500940929
+last_sync: 2026-06-07
+sync_hash: 8784fff6
 ---
-
-
 您可在素材管理页面上传宽\*高为600\*600px、600\*800px、442\*248px、1200\*600px四种尺寸的主题图，并可设置素材模板的主标题、副标题、按钮名称、关联的POI位置、跳转页面等信息。
 
 ![](../img/agc-help-materials-manage-0000002500940929_0.png)

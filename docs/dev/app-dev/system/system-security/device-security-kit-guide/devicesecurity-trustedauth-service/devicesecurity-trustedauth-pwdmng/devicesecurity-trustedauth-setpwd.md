@@ -2,8 +2,11 @@
 title: "设置数字盾密码"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-pwdmng/devicesecurity-trustedauth-setpwd
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-pwdmng/devicesecurity-trustedauth-setpwd
+last_sync: 2026-06-07
+sync_hash: 205c8fbb
+upstream_hash: 240d84cdbda4
 ---
-
 
 ## 场景介绍
 

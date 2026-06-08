@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Image Kit异常处理"
 original_url: /docs/dev/app-dev/media/image-kit/image-faqs/image-error-faq
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-faqs/image-error-faq
+last_sync: 2026-06-07
+sync_hash: 15f73d5f
 ---
-
-
 [Image Kit](/docs/dev/app-dev/media/image-kit/image-overview)提供**ArkTS接口**和**C接口**。在遇到特殊情况时（例如输入参数无效、内存不足或函数无法处理请求等），系统会通过异常（ArkTS）或错误码（C接口）来反馈错误。开发者需要在应用层合理捕获和处理这些错误，以避免应用崩溃或出现未定义行为。在[Image错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image)中给出了Image Kit错误码对应的错误信息、可能原因、处理步骤。但由于部分场景引发错误的原因较为复杂，还需要开发者结合日志进一步定位。例如：401参数错误，可能是函数入参存在问题，也可能是由于缺少特定的文件读写权限导致无法访问或修改图片文件（Image Kit不感知权限，表现为传入文件异常的参数错误）。
 
 ## ArkTS接口异常处理

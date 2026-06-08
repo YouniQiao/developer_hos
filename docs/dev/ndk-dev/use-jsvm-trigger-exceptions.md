@@ -2,9 +2,10 @@
 title: "使用JSVM-API进行异常的定制化处理"
 original_url: /docs/dev/ndk-dev/use-jsvm-trigger-exceptions
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-trigger-exceptions
+last_sync: 2026-06-07
+sync_hash: a3946e09
 ---
-
-
 ## 简介
 
 JSVM-API提供了一组用于处理JSVM异常的接口。通过这些接口，可以向JSVM注册回调函数。当JSVM触发异常时，会调用已注册的回调函数。

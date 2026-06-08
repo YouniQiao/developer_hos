@@ -2,9 +2,10 @@
 title: "记忆链接开发指导"
 original_url: /docs/dev/app-dev/system/system-hardware/multimodal-awareness-kit/metadatabinding-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-hardware/multimodal-awareness-kit/metadatabinding-guidelines
+last_sync: 2026-06-07
+sync_hash: 92d324d2
 ---
-
-
 ## 概述
 
 MetadataBinding（记忆链接）指由第三方应用提供[鸿蒙App Linking链接](/docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-introduction)，系统将当前用户浏览的内容与鸿蒙App Linking链接进行关联并保存的功能。

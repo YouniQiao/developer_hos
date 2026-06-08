@@ -2,9 +2,10 @@
 title: "查询用户协议列表"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-query-user-agreement-0000002236041442
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-query-user-agreement-0000002236041442
+last_sync: 2026-06-07
+sync_hash: e3b0e623
 ---
-
-
 #### 功能介绍
 
 此接口用于查询HarmonyOS应用/元服务的用户协议信息。

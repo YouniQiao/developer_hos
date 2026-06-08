@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "外部密钥管理扩展"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-external-key-management
+last_sync: 2026-06-07
+sync_hash: 546c0103
 ---
-
-
 * **[外部密钥管理扩展简介](/docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-external-hardware-key-management-overview)**
 * **[Provider管理](/docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-provider-management)**
 * **[资源管理](/docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-resource-management)**

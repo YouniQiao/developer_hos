@@ -2,9 +2,10 @@
 title: "方案设计"
 original_url: /docs/dev/atomic-dev/reusable-develop-state/reusable-develop-state-design
 format: md
+upstream_id: dev/atomic-dev/reusable-develop-state/reusable-develop-state-design
+last_sync: 2026-06-07
+sync_hash: 8c45c3d9
 ---
-
-
 ## 多团队开发场景
 
 应用和元服务由不同的团队开发，建议应用和元服务通过不同的工程开发，并实现代码复用。

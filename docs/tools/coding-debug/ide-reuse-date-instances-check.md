@@ -3,9 +3,10 @@ title: "@performance/reuse-date-instances-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-reuse-date-instances-check
 format: md
+upstream_id: tools/coding-debug/ide-reuse-date-instances-check
+last_sync: 2026-06-07
+sync_hash: 7bcfbdb3
 ---
-
-
 # @performance/reuse-date-instances-check
 
 用于检测在循环或调用频繁的方法中重复创建Date对象，建议开发者重用现有实例或使用时间戳进行计算，减少创建Date成本。

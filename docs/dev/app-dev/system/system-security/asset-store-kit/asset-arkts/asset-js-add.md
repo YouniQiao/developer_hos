@@ -2,9 +2,10 @@
 title: "新增关键资产(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-add
 format: md
+upstream_id: dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-add
+last_sync: 2026-06-07
+sync_hash: 510cf740
 ---
-
-
 ## 接口介绍
 
 开发者可以查阅API文档，获取关键资产新增接口的详细说明：[add(attributes: AssetMap)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-asset#assetadd)、同步接口[addSync(attributes: AssetMap)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-asset#assetaddsync12)。

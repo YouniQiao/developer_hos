@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "AppGallery Kit（应用市场服务）"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide
+last_sync: 2026-06-07
+sync_hash: 455bf09e
 ---
-
-
 * **[AppGallery Kit简介](/docs/dev/app-dev/application-services/store-kit-guide/store-introduction)**
 * **[数字商品服务](/docs/dev/app-dev/application-services/store-kit-guide/store-iap)**
 * **[应用市场推荐](/docs/dev/app-dev/application-services/store-kit-guide/store-productview)**
@@ -17,4 +18,4 @@ format: md
 * **[图标管理服务](/docs/dev/app-dev/application-services/store-kit-guide/appgallery-appinfo)**
 * **[应用评论服务](/docs/dev/app-dev/application-services/store-kit-guide/appgallery-comment)**
 * **[AppGallery Kit常见问题](/docs/dev/app-dev/application-services/store-kit-guide/store-faq)**
-* **[附录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-attribution-appendix)**
+* **[附录](/docs/dev/app-dev/application-services/scenario-fusion-appendix)**

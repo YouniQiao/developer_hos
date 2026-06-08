@@ -3,9 +3,10 @@ title: "通过命令行使用模拟器"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-emulator-command-line
 format: md
+upstream_id: tools/coding-debug/ide-emulator-command-line
+last_sync: 2026-06-07
+sync_hash: db702bb8
 ---
-
-
 # 通过命令行使用模拟器
 
 除了在DevEco Studio的设备管理中使用模拟器外，开发者还可以通过Emulator命令行使用模拟器，支持Windows和macOS平台。

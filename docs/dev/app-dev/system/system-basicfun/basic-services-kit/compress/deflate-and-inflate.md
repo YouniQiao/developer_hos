@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "压缩与解压"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/compress/deflate-and-inflate
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/compress/deflate-and-inflate
+last_sync: 2026-06-07
+sync_hash: 7bc6a49d
 ---
-
-
 本文针对常见的几种压缩、解压场景，介绍相关函数的使用方法。
 
 ## 接口说明

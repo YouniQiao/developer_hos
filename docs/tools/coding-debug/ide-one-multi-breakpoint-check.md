@@ -3,9 +3,10 @@ title: "@cross-device-app-dev/one-multi-breakpoint-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-one-multi-breakpoint-check
 format: md
+upstream_id: tools/coding-debug/ide-one-multi-breakpoint-check
+last_sync: 2026-06-07
+sync_hash: 3ee3dfe9
 ---
-
-
 # @cross-device-app-dev/one-multi-breakpoint-check
 
 一多特性必须使用系统断点判断是否开启，不能通过设备类型、设备方向或是否可折叠等属性来判断。

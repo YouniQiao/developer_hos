@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "点注释"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-annotation
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-drawing/map-annotation
+last_sync: 2026-06-07
+sync_hash: f10ccafb
 ---
-
-
 ## 场景介绍
 
 本章节将向您介绍如何在地图的指定位置添加点注释以标识位置、商家、建筑等，并可以通过信息窗口展示详细信息。

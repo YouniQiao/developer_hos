@@ -2,9 +2,10 @@
 title: "优秀素材示例"
 original_url: /docs/distribute/agc/agc-help-service-materials-0000002501020901/agc-help-excellent-material-examples-0000002494195770
 format: md
+upstream_id: distribute/agc/agc-help-service-materials-0000002501020901/agc-help-excellent-material-examples-0000002494195770
+last_sync: 2026-06-07
+sync_hash: 67a2a65f
 ---
-
-
 #### 素材审核细则
 
 #### [h2]素材内容规范

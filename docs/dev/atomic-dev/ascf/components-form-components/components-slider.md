@@ -2,9 +2,10 @@
 title: "slider"
 original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-slider
 format: md
+upstream_id: dev/atomic-dev/ascf/components-form-components/components-slider
+last_sync: 2026-06-07
+sync_hash: 4ace6edd
 ---
-
-
 滑动选择器。
 
 **起始版本：** 1.0.0

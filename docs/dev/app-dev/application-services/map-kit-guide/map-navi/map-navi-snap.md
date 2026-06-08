@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "轨迹绑路"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-navi/map-navi-snap
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-navi/map-navi-snap
+last_sync: 2026-06-07
+sync_hash: 2b0b3e90
 ---
-
-
 ## 场景介绍
 
 根据给定的坐标点捕捉道路，将用户的轨迹纠正到道路上，从而返回用户实际驾车经过的道路坐标。

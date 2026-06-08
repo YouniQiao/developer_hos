@@ -2,9 +2,10 @@
 title: "数据可靠性与安全性概述"
 original_url: /docs/dev/app-dev/application-framework/arkdata/data-reliability-security/data-reliability-security-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/data-reliability-security/data-reliability-security-overview
+last_sync: 2026-06-07
+sync_hash: 3ddd6d45
 ---
-
-
 ## 功能场景
 
 在系统运行中，存储损坏、存储空间不足、文件系统权限、系统掉电等都可能导致数据库发生故障。比如联系人应用的数据库损坏，导致用户的联系人丢失；日历应用的数据库损坏，导致丢失日历提醒等。为此数据管理提供了数据可靠性与安全性相关的解决方案和能力保障。

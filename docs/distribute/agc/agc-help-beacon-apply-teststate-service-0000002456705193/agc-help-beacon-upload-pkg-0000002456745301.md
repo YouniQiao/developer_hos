@@ -2,8 +2,11 @@
 title: "上传已注册意图的软件包"
 original_url: /docs/distribute/agc/agc-help-beacon-apply-teststate-service-0000002456705193/agc-help-beacon-upload-pkg-0000002456745301
 format: md
+upstream_id: distribute/agc/agc-help-beacon-apply-teststate-service-0000002456705193/agc-help-beacon-upload-pkg-0000002456745301
+last_sync: 2026-06-07
+sync_hash: 2c48c3b0
+upstream_hash: 3352202f24bd
 ---
-
 
 ![](../img/agc-help-beacon-upload-pkg-0000002456745301_0.png)
 

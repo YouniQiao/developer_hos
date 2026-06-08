@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "基础播控"
 original_url: /docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control
 format: md
+upstream_id: dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control
+last_sync: 2026-06-07
+sync_hash: 375af930
+upstream_hash: e799b0489805
 ---
-
 
 ## 媒体封面
 

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Audio Kit简介"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-kit-intro
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-kit-intro
+last_sync: 2026-06-07
+sync_hash: 1644d251
 ---
-
-
 Audio Kit（音频服务）旨在提供场景化的音频播放和录制接口，助力开发者迅速构建音频高清采集及沉浸式播放能力。
 
 ## 亮点/特征
@@ -108,7 +109,7 @@ audio模块下的接口支持PCM编码，包括AudioRenderer、AudioCapturer、T
 
 本Kit支持模拟器，但与真机存在部分能力差异，具体差异如下。
 
-* 通用差异：请参见[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification#section18112195514315)。
+* 通用差异：请参见[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification#section18112195514315)。
 * 不支持低时延音频播放。
 * 不支持低时延音频录制。
 * 不支持低功耗音频播放。

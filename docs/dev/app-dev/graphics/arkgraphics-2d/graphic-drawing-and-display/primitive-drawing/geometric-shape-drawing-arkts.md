@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "几何形状绘制（ArkTS）"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/primitive-drawing/geometric-shape-drawing-arkts
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/primitive-drawing/geometric-shape-drawing-arkts
+last_sync: 2026-06-07
+sync_hash: f3f83046
 ---
-
-
 ## 场景介绍
 
 当前支持绘制的几何形状，主要包括以下几种：

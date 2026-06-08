@@ -3,9 +3,10 @@ title: "代码生成/补全"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-code-completion
 format: md
+upstream_id: tools/coding-debug/ide-code-completion
+last_sync: 2026-06-07
+sync_hash: f21e4291
 ---
-
-
 # 代码生成/补全
 
 #### 代码自动补全

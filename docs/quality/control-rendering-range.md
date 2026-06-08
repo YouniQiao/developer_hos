@@ -2,9 +2,10 @@
 title: "渲染范围控制"
 original_url: /docs/quality/control-rendering-range
 format: md
+upstream_id: /docs/quality/control-rendering-range
+last_sync: 2026-06-07
+sync_hash: e63c6287
 ---
-
-
 # 渲染范围控制
 
 在应用开发中，控制UI渲染范围，防止界面卡顿或掉帧。

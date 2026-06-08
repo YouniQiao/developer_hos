@@ -2,9 +2,10 @@
 title: "Web组件的生命周期"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-event-sequence
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-event-sequence
+last_sync: 2026-06-07
+sync_hash: 928ae503
 ---
-
-
 ## 概述
 
 开发者可以使用Web组件加载本地或者在线网页。

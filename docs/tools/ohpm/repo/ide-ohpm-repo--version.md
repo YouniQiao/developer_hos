@@ -2,9 +2,10 @@
 title: "ohpm-repo --version"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo--version
+upstream_id: tools/ohpm/repo/ide-ohpm-repo--version
+last_sync: 2026-06-07
+sync_hash: f66e5613
 ---
-
-
 # ohpm-repo --version
 
 查询ohpm-repo版本。

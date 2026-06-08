@@ -2,8 +2,11 @@
 title: "数据预拉取"
 original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-data-preloading
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-basic-capabilities/develop-data-preloading
+last_sync: 2026-06-07
+sync_hash: ee4dd412
+upstream_hash: 15aad5edf166
 ---
-
 
 预拉取能够在ASCF元服务框架启动的时候提前向第三方服务器拉取业务数据，当元服务代码包加载完时可以更快地渲染页面，减少用户等待时间，从而提升元服务的打开速度。
 

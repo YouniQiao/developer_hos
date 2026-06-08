@@ -2,9 +2,10 @@
 title: "连接迁移通知 (C/C++)"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-nethandoverguide-c/networkboost-nethandovercallback-c
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-nethandoverguide-c/networkboost-nethandovercallback-c
+last_sync: 2026-06-07
+sync_hash: b0b65e81
 ---
-
-
 ## 场景介绍
 
 在弱网环境下，系统发起多网迁移（WiFi\<-\>蜂窝，主卡\<-\>副卡等）的过程中，给应用提供连接迁移开始和完成通知，应用根据连接迁移通知的建议进行网络连接重建，快速恢复业务，给用户带来平滑、高速、低时延的上网体验。

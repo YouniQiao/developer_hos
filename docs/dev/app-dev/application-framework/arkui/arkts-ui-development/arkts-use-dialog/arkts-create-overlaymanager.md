@@ -2,9 +2,10 @@
 title: "设置浮层（OverlayManager）"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-create-overlaymanager
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-create-overlaymanager
+last_sync: 2026-06-07
+sync_hash: 313c66af
 ---
-
-
 浮层（OverlayManager）用于在页面（Page）之上展示自定义的UI内容，位于Dialog、Popup、Menu、BindSheet、BindContentCover和Toast等组件之下，展示范围为当前窗口的安全区内，适用于常驻悬浮等场景。
 
 ![](./img/d02c64a3.png)

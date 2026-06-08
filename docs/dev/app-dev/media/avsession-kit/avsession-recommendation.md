@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "播控推荐服务"
 original_url: /docs/dev/app-dev/media/avsession-kit/avsession-recommendation
 format: md
+upstream_id: dev/app-dev/media/avsession-kit/avsession-recommendation
+last_sync: 2026-06-07
+sync_hash: 7aa7e114
 ---
-
-
 ## 播控特性简介
 
 播控推荐服务致力于为用户提供更便捷的操作路径、更精准的内容推荐服务，帮助用户发现更感兴趣的内容，助力应用从系统级入口直达服务。

@@ -2,9 +2,10 @@
 format: md
 title: "登录华为开发者账号后，提示需要实名认证"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-1
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-1
+last_sync: 2026-06-07
+sync_hash: f5c32747
 ---
-
-
 **问题现象**
 
 使用本地模拟器时，需用实名认证的开发者账号登录授权。若账号未实名认证，本地模拟器会提示需要实名认证。

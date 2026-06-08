@@ -2,9 +2,10 @@
 format: md
 title: "本地文件管理"
 original_url: /docs/FAQ/faqs-core-file-kit
+upstream_id: FAQ/faqs-core-file-kit
+last_sync: 2026-06-07
+sync_hash: 66cf523b
 ---
-
-
 * **[如何使用Zip模块解压项目目录rawfile中的文件至应用的沙箱目录中](/docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-1)**
 * **[如何实现文件不存在则创建文件](/docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-3)**
 * **[如何解决文件的中文乱码问题](/docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-4)**

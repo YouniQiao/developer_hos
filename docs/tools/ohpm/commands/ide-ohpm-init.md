@@ -3,9 +3,10 @@ title: "ohpm init"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-init
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-init
+last_sync: 2026-06-07
+sync_hash: 3d587c9f
 ---
-
-
 # ohpm init
 
 创建 oh-package.json5 文件。

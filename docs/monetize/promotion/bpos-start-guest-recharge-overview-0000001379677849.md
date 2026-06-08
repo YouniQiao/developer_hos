@@ -2,6 +2,9 @@
 title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-start-guest-recharge-overview-0000001379677849
+upstream_id: monetize/promotion/bpos-start-guest-recharge-overview-0000001379677849
+last_sync: 2026-06-07
+sync_hash: 03c5065b
 ---
 import MergeTable from '@site/src/components/MergeTable';
 

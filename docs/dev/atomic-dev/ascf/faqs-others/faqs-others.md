@@ -2,9 +2,10 @@
 title: "其他问题"
 original_url: /docs/dev/atomic-dev/ascf/faqs-others/faqs-others
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-others/faqs-others
+last_sync: 2026-06-07
+sync_hash: 958357ae
 ---
-
-
 * **[在AGC上传ASCF元服务app包不通过返回错误码9](/docs/dev/atomic-dev/ascf/faqs-others/faqs-others-agc-upload-errorcode9)**
 * **[转换为ASCF框架后运行白屏或异常](/docs/dev/atomic-dev/ascf/faqs-others/faqs-others-running-abnormally)**
 * **[启用热重载功能修改js/json文件不生效](/docs/dev/atomic-dev/ascf/faqs-others/faqs-others-hot-reload)**

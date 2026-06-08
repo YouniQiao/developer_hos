@@ -2,9 +2,10 @@
 title: "editor"
 original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-editor
 format: md
+upstream_id: dev/atomic-dev/ascf/components-form-components/components-editor
+last_sync: 2026-06-07
+sync_hash: 992a3df5
 ---
-
-
 富文本编辑器组件，可以对图片、文字进行编辑。
 
 编辑器导出内容支持带标签的html和纯文本的text，编辑器内部采用delta格式进行存储。通过setContents接口设置内容时，解析插入的html可能会由于一些非法标签导致解析错误，建议开发者在ASCF元服务内使用时，通过delta进行插入。

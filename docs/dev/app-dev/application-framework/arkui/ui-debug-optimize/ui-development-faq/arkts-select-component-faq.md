@@ -2,9 +2,10 @@
 title: "按钮与选择组件常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-select-component-faq
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-select-component-faq
+last_sync: 2026-06-07
+sync_hash: 5bc8f81c
 ---
-
-
 本文档介绍按钮与选择组件的常见问题并提供参考。
 
 ## Slider组件滑块与滑轨是如何对齐的

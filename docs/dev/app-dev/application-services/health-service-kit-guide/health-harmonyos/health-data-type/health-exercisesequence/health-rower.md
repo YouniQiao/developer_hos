@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "划船机"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-rower
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-rower
+last_sync: 2026-06-07
+sync_hash: 6f1f710b
 ---
-
-
 ## 划船机
 
 ### 划船机相关锻炼记录类型如下：

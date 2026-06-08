@@ -3,8 +3,10 @@ title: "基础人群定向（应用推广任务人群定向功能）"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-functions-base-target-0000001328677542
 format: md
+upstream_id: monetize/promotion/bpos-functions-base-target-0000001328677542
+last_sync: 2026-06-07
+sync_hash: e200b31a
 ---
-
 # 基础人群定向（应用推广任务人群定向功能）
 
 ## 创建应用市场展示广告基础定向条件

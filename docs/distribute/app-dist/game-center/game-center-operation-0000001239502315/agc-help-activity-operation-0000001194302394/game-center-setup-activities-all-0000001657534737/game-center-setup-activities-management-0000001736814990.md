@@ -3,9 +3,10 @@ title: "管理已创建活动"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-management-0000001736814990
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-management-0000001736814990
+last_sync: 2026-06-07
+sync_hash: 2071259a
 ---
-
-
 # 管理已创建活动
 
 创建活动后，可对已创建的活动进行查看、编辑等操作。

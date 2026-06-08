@@ -3,6 +3,10 @@ title: "(可选)授权客户投放伙伴管理账户"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-start-guest-authorize-0000001346774281
 format: md
+upstream_id: monetize/promotion/bp-start-guest-authorize-0000001346774281
+last_sync: 2026-06-07
+sync_hash: 18b13117
+upstream_hash: c418f9db5c49
 ---
 
 # (可选)授权客户投放伙伴管理账户

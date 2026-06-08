@@ -2,9 +2,10 @@
 title: "功耗概览"
 original_url: /docs/quality/power_overview
 format: md
+upstream_id: /docs/quality/power_overview
+last_sync: 2026-06-07
+sync_hash: edf01a99
 ---
-
-
 # 功耗概览
 
 应用功耗体验是用户在使用应用程序时的重要考量因素之一。在开发过程中，功耗工具开发套件覆盖了应用开发的各个阶段。应用开发完成后上架，有专业的功耗测试工具用于检查和测试应用的功耗指标。功耗最佳实践板块重点介绍了在应用开发过程中使用功耗工具和功耗优化方案来检测、分析和优化功耗问题的流程。

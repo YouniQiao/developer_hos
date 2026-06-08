@@ -2,9 +2,10 @@
 title: "流量变现服务开发概述"
 original_url: /docs/dev/atomic-dev/atomic-ads-publisher-service-dev/atomic-ads-publisher-service-dev-overview
 format: md
+upstream_id: dev/atomic-dev/atomic-ads-publisher-service-dev/atomic-ads-publisher-service-dev-overview
+last_sync: 2026-06-07
+sync_hash: e6ed1cd0
 ---
-
-
 流量变现服务是依托华为终端强大的平台与数据能力为您提供的流量变现服务，依托HarmonyOS系统让您无需集成SDK，轻松实现广告的接入，您通过该服务可以在自己的应用中获取并向用户展示精美的、高价值的广告内容，并从中获得广告收益，帮助您解决流量变现的难题。
 
 ## 产品优势

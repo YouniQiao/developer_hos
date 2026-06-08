@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用AVMetadataExtractor获取元数据(C/C++)"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-info-c/using-ndk-avmetadataextractor-for-media
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-c/media-info-c/using-ndk-avmetadataextractor-for-media
+last_sync: 2026-06-07
+sync_hash: 2cd913de
 ---
-
-
 使用AVMetadataExtractor可以实现从原始媒体资源中获取元数据，本开发指导将以获取一个媒体资源的元数据作为示例，向开发者讲解AVMetadataExtractor元数据相关功能。
 
 获取媒体资源的元数据的全流程包含：创建AVMetadataExtractor、设置资源、获取元数据、销毁资源。

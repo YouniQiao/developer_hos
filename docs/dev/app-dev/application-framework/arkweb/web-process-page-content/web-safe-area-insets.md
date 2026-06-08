@@ -2,9 +2,10 @@
 title: "网页中安全区域计算和避让适配"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-safe-area-insets
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-process-page-content/web-safe-area-insets
+last_sync: 2026-06-07
+sync_hash: 8dd60ee2
 ---
-
-
 早期设备屏幕多为矩形，应用界面能够完整展示。随着全面屏、刘海屏等异形屏幕的普及，屏幕边缘可能出现圆角、摄像头或系统导航条，导致界面部分被遮挡。
 
 安全区域是指屏幕中未被设备硬件或系统UI遮挡的区域，不与系统非安全区域（如状态栏、挖孔区和导航栏）重叠。应用的布局默认限定在安全区域内，但系统提供沉浸式布局能力，允许应用通过配置使界面扩展至非安全区域。

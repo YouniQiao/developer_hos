@@ -2,9 +2,10 @@
 title: "自有账号"
 original_url: /docs/distribute/agc/agc-help-auth-login-0000002271496189/agc-help-auth-login-self-0000002271496193
 format: md
+upstream_id: distribute/agc/agc-help-auth-login-0000002271496189/agc-help-auth-login-self-0000002271496193
+last_sync: 2026-06-07
+sync_hash: e5e2baa0
 ---
-
-
 如果您已经自行构建了认证系统，您可以通过自有账号来对接认证服务，让您的用户可以使用自有账号进行AppGallery Connect身份验证。
 
 #### 前提条件

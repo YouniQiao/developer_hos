@@ -2,9 +2,10 @@
 title: "兼容性测试"
 original_url: /docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-compatibilitytest-0000002289534101
 format: md
+upstream_id: distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-compatibilitytest-0000002289534101
+last_sync: 2026-06-07
+sync_hash: 05265e3e
 ---
-
-
 云测试为您提供全自动化的兼容性测试功能，用于检测应用或元服务在启动、崩溃、无响应、白屏、无法回退、输入一致、任务连续和设计约束等方面的兼容性问题。
 
 #### 前提条件

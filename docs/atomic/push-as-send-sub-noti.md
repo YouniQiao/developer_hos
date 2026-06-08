@@ -2,9 +2,10 @@
 title: "推送基于账号的订阅消息"
 original_url: /docs/dev/atomic-dev/push-as-subscription/push-as-send-sub-noti
 format: md
+upstream_id: dev/atomic-dev/push-as-subscription/push-as-send-sub-noti
+last_sync: 2026-06-07
+sync_hash: 61edd4fa
 ---
-
-
 ## 场景介绍
 
 当用户授权同意订阅消息模板后，元服务的服务端主动调用服务通知REST API接口，向登录了账号的设备发送订阅消息（服务通知消息）。

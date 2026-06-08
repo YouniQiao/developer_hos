@@ -2,9 +2,10 @@
 format: md
 title: "如何实现文本展开收起功能"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-267
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-267
+last_sync: 2026-06-07
+sync_hash: d56f8181
 ---
-
-
 使用[measureTextSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-measureutils#measuretextsize12)接口实现文字段落展开收起的功能，具体实现如下所示：
 
 ```

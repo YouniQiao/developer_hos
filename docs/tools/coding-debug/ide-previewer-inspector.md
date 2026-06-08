@@ -3,9 +3,10 @@ title: "Inspector双向预览"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-previewer-inspector
 format: md
+upstream_id: tools/coding-debug/ide-previewer-inspector
+last_sync: 2026-06-07
+sync_hash: fa00101e
 ---
-
-
 # Inspector双向预览
 
 DevEco Studio提供HarmonyOS应用/元服务的UI预览界面与源代码文件间的双向预览功能，支持ets文件与预览器界面的双向预览。使用双向预览功能时，需要在预览器界面单击![](./img/zh-cn_image_0000002571387098.png)图标打开双向预览功能。

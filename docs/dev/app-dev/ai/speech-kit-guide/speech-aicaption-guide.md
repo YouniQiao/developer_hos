@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "AI字幕控件"
 original_url: /docs/dev/app-dev/ai/speech-kit-guide/speech-aicaption-guide
 format: md
+upstream_id: dev/app-dev/ai/speech-kit-guide/speech-aicaption-guide
+last_sync: 2026-06-07
+sync_hash: f7a6ec19
 ---
-
-
 ## 适用场景
 
 AI字幕控件应用广泛，例如在用户不熟悉音频源语言或者静音的时候，为用户提供字幕服务。

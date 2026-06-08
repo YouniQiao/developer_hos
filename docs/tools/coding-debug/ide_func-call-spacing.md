@@ -3,9 +3,10 @@ title: "@typescript-eslint/func-call-spacing"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_func-call-spacing
 format: md
+upstream_id: tools/coding-debug/ide_func-call-spacing
+last_sync: 2026-06-07
+sync_hash: bf633262
 ---
-
-
 # @typescript-eslint/func-call-spacing
 
 禁止或者要求函数名与函数名后面的括号之间加空格。

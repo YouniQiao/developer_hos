@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Payment Kit简介"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-introduction
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-introduction
+last_sync: 2026-06-07
+sync_hash: 4664f9ac
 ---
-
-
 Payment Kit（鸿蒙支付服务）提供了方便、安全和快捷的支付方式，助力开发者在商户应用/元服务中快速实现支付功能。
 
 商户应用/元服务接入Payment Kit后，可在商户的应用/元服务内通过拉起华为支付收银台来完成订单的支付并展示支付结果以及完成用户对**实体商品或服务**（例如酒店服务、出行服务、充值缴费服务等）的购买。

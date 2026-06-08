@@ -2,9 +2,10 @@
 title: "创建全网态POI"
 original_url: /docs/distribute/agc/agc-help-location-sense-by-poi-petalmap-0000002373994556/agc-help-petalmap-create-formalstate-poi-0000002407634113
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-by-poi-petalmap-0000002373994556/agc-help-petalmap-create-formalstate-poi-0000002407634113
+last_sync: 2026-06-07
+sync_hash: 93abb78b
 ---
-
-
 ![](../img/agc-help-petalmap-create-formalstate-poi-0000002407634113_0.png)
 
 每个应用/元服务最多支持添加2000个POI位置。

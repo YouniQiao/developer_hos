@@ -2,9 +2,10 @@
 title: "API"
 original_url: /docs/dev/atomic-dev/ascf/apis/apis
 format: md
+upstream_id: dev/atomic-dev/ascf/apis/apis
+last_sync: 2026-06-07
+sync_hash: 6c536b15
 ---
-
-
 * **[基础](/docs/dev/atomic-dev/ascf/apis-basis/apis-basis)**
 * **[路由](/docs/dev/atomic-dev/ascf/apis/apis-router)**
 * **[跳转](/docs/dev/atomic-dev/ascf/apis/apis-navigate)**

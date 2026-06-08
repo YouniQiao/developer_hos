@@ -3,9 +3,10 @@ title: "@hw-stylistic/semi-spacing"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_semi-spacing
 format: md
+upstream_id: tools/coding-debug/ide_semi-spacing
+last_sync: 2026-06-07
+sync_hash: 862f824a
 ---
-
-
 # @hw-stylistic/semi-spacing
 
 强制分号之前不加空格。该规则仅检查.ets文件类型。

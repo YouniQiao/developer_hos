@@ -2,9 +2,10 @@
 title: "不支持ASCF的语法检查和提示"
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-plugin-unsupported-syntax
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-plugin-unsupported-syntax
+last_sync: 2026-06-07
+sync_hash: 8bd22923
 ---
-
-
 **问题现象**
 
 在DevEco Studio中不支持对ASCF源码的语法检查和提示。

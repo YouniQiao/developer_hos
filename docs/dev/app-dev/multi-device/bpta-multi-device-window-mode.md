@@ -3,8 +3,10 @@ title: "窗口模式"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-window-mode
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi-device-window-mode
+last_sync: 2026-06-07
+sync_hash: 98268240
 ---
-
 # 窗口模式
 
 ## 概述

@@ -2,9 +2,10 @@
 title: "元服务内调整未成年人模式设置"
 original_url: /docs/dev/atomic-dev/account-follow-atomic-minorsprotection/account-password-atomic-minorsprotection
 format: md
+upstream_id: dev/atomic-dev/account-follow-atomic-minorsprotection/account-password-atomic-minorsprotection
+last_sync: 2026-06-07
+sync_hash: 4f8624e4
 ---
-
-
 ## 场景介绍
 
 系统的未成年人模式已开启，元服务已随系统切换至未成年人模式。用户打开元服务，希望在元服务内调整内容偏好、使用时长等设置，需要验证家长身份。

@@ -3,8 +3,10 @@ title: "编辑计划"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-advertising-campaign3-0000001338495013
 format: md
+upstream_id: monetize/promotion/marketing-api-advertising-campaign3-0000001338495013
+last_sync: 2026-06-07
+sync_hash: e26006af
 ---
-
 # 编辑计划
 
 您通过本接口可以编辑计划状态、计划名称、计划日预算。

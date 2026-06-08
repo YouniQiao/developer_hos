@@ -3,9 +3,10 @@ title: "ohpm uninstall错误码"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/errorcode/ide-ohpm-uninstall-errorcode
 format: md
+upstream_id: tools/ohpm/errorcode/ide-ohpm-uninstall-errorcode
+last_sync: 2026-06-07
+sync_hash: 950a7640
 ---
-
-
 # ohpm uninstall错误码
 
 ## 00605001 未配置包名称

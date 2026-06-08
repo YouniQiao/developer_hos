@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "批量算路"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-navi/map-navi-matrix
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-navi/map-navi-matrix
+last_sync: 2026-06-07
+sync_hash: a4ea6dd8
 ---
-
-
 ## 场景介绍
 
 多个起点到多个终点的批量算路功能，在驾车、步行、骑行模式下，快速批量计算多个起点分别到多个终点的路线距离和耗时。

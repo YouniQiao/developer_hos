@@ -3,10 +3,10 @@ title: "快速集成"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_demo-0000001461263141
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_andriod_demo-0000001461263141
+last_sync: 2026-06-07
+sync_hash: 5c5e7fcc
 ---
-
-
-
 #### 快速集成SDK指引
 
 为了方便您快速集成AGD Pro服务SDK，提供各类场景的Android示例代码。

@@ -2,8 +2,11 @@
 title: "如何获取当前HAP的BundleName"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-26
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-26
+last_sync: 2026-06-07
+sync_hash: fc82df0e
+upstream_hash: 5cf7df076c56
 ---
-
 
 使用bundleManager模块的getBundleInfoForSelf接口获取所有信息。
 

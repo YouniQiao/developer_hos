@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "明文导入密钥(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-import/huks-import-key-in-plaintext-arkts
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-import/huks-import-key-in-plaintext-arkts
+last_sync: 2026-06-07
+sync_hash: 702aec16
 ---
-
-
 分别以导入AES256、RSA2048和X25519密钥为例。具体的场景介绍及支持的算法规格，请参考[密钥导入支持的算法](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-import/huks-key-import-overview#支持的算法)。
 
 ## 开发步骤

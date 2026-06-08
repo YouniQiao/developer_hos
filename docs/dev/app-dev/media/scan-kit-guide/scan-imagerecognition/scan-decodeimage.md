@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "识别图像数据"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-imagerecognition/scan-decodeimage
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-imagerecognition/scan-decodeimage
+last_sync: 2026-06-07
+sync_hash: 30d7ab0e
 ---
-
-
 ## 基本概念
 
 图像数据识码能力支持对相机预览流数据中的码图进行扫描识别，并获取信息。

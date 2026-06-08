@@ -3,9 +3,10 @@ title: "弹窗背景、产品主题"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-bg-0000002429946741
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-bg-0000002429946741
+last_sync: 2026-06-07
+sync_hash: fa492b6d
 ---
-
-
 # 弹窗背景、产品主题
 
 <strong>表1</strong>

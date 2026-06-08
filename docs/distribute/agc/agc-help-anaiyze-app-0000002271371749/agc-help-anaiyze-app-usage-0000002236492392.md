@@ -2,9 +2,10 @@
 title: "分析应用使用情况"
 original_url: /docs/distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-usage-0000002236492392
 format: md
+upstream_id: distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-usage-0000002236492392
+last_sync: 2026-06-07
+sync_hash: a2544356
 ---
-
-
 您可以在“分发分析”页签下查看HarmonyOS应用的使用情况数据：
 
 通过“[下载安装](#section14231122115416)”、“[游戏新增与留存](#section53361428183912)”、“[用户分析](#section3905133110302)”和“[行为分析](#section4811191914125)”衡量用户安装及持续使用HarmonyOS应用的情况。

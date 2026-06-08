@@ -3,9 +3,10 @@ title: "增量调试"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-incremental-debugging
 format: md
+upstream_id: tools/coding-debug/ide-incremental-debugging
+last_sync: 2026-06-07
+sync_hash: 13cdb0cd
 ---
-
-
 # 增量调试
 
 对于大型应用来说，每次修改代码后需要重新构建、推包、安装，整个流程耗时较长。针对该场景，在DevEco Studio和命令行场景中分别提供增量运行调试功能，支持开发者在真机上调试应用时，修改代码后，会识别出代码差异，构建增量包，增量运行调试时只推送增量包，减少大型应用调试推包时间。

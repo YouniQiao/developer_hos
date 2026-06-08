@@ -3,9 +3,10 @@ title: "查看异步函数堆栈"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-async-stack-traces
 format: md
+upstream_id: tools/coding-debug/ide-debug-async-stack-traces
+last_sync: 2026-06-07
+sync_hash: fd44e998
 ---
-
-
 # 查看异步函数堆栈
 
 从DevEco Studio 5.1.1 Beta1版本开始，开发者可通过打开异步堆栈跟踪开关、设置异步调用链深度来跟踪异步函数调用的顺序。

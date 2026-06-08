@@ -3,9 +3,10 @@ title: "ohpm unpublish错误码"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/errorcode/ide-ohpm-unpublish-errorcode
 format: md
+upstream_id: tools/ohpm/errorcode/ide-ohpm-unpublish-errorcode
+last_sync: 2026-06-07
+sync_hash: 1593ffcf
 ---
-
-
 # ohpm unpublish错误码
 
 ## 00610001 执行下架命令时未指定版本号

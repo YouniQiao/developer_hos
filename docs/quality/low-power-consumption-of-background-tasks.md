@@ -2,9 +2,10 @@
 title: "后台任务低功耗"
 original_url: /docs/quality/low-power-consumption-of-background-tasks
 format: md
+upstream_id: /docs/quality/low-power-consumption-of-background-tasks
+last_sync: 2026-06-07
+sync_hash: 9f82d2c8
 ---
-
-
 # 后台任务低功耗
 
 * **[后台任务合理使用](/docs/quality/use-of-background-tasks)**

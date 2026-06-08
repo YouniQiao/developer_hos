@@ -3,9 +3,10 @@ title: "@typescript-eslint/comma-spacing"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_comma-spacing
 format: md
+upstream_id: tools/coding-debug/ide_comma-spacing
+last_sync: 2026-06-07
+sync_hash: 9ae62d21
 ---
-
-
 # @typescript-eslint/comma-spacing
 
 强制逗号前后的空格风格保持一致。

@@ -2,9 +2,10 @@
 title: "采集性能数据"
 original_url: /docs/dev/game-dev/games-hismartperf-collection-0000002321404205
 format: md
+upstream_id: dev/game-dev/games-hismartperf-collection-0000002321404205
+last_sync: 2026-06-07
+sync_hash: 766c47a6
 ---
-
-
 ## 前提条件
 
 游戏性能调优工具已[设置采集要求](/docs/dev/game-dev/games-hismartperf-setting-0000002321517289)。

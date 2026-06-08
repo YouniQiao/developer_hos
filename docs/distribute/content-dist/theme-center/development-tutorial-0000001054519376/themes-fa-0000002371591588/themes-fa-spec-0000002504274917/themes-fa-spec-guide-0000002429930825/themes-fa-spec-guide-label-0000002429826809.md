@@ -3,9 +3,10 @@ title: "卡片标签"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/themes-fa-spec-guide-label-0000002429826809
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/themes-fa-spec-guide-label-0000002429826809
+last_sync: 2026-06-07
+sync_hash: 15f1095f
 ---
-
-
 # 卡片标签
 
 通过主题联盟上传百变卡片作品时，创作者需根据卡片的实际元素给作品打“卡片标签”，一个百变卡片作品支持打多个标签，比如卡片包含时钟和天气信息时，需要选择“时钟”和“天气”标签。

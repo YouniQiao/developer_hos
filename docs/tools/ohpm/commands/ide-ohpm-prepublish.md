@@ -3,9 +3,10 @@ title: "ohpm prepublish"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-prepublish
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-prepublish
+last_sync: 2026-06-07
+sync_hash: e1458fe2
 ---
-
-
 # ohpm prepublish
 
 预发布一个三方库。

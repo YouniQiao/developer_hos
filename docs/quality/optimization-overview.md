@@ -2,9 +2,10 @@
 title: "性能分析简介"
 original_url: /docs/quality/optimization-overview
 format: md
+upstream_id: /docs/quality/optimization-overview
+last_sync: 2026-06-07
+sync_hash: 1624e995
 ---
-
-
 # 性能分析简介
 
 ## 概述
@@ -36,14 +37,14 @@ format: md
 
 性能调优工具能帮助开发者识别应用中的性能问题。DevEco Studio提供了多种场景化调优工具DevEco Profiler，具体如下：
 
-* [启动分析工具Launch Profiler](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-launch)： 分析启动过程中各阶段的性能问题。Launch主要用于分析应用或服务的启动耗时，分析启动周期各阶段的耗时情况、核心线程的运行情况等，协助开发者识别启动缓慢的原因。
-* [帧率分析工具Frame Profiler](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-frame)： 用于深度分析应用或服务卡顿丢帧的原因。Frame用于录制GPU数据信息，录制完成的子泳道对应录制过程中各个进程的帧数据，主要用于深度分析应用或服务卡顿丢帧的原因。Frame会对Trace进行录制和解析，进而可以分析应用运行的性能及其瓶颈，最终得出优化方案，关于Trace的详细介绍可参考[Trace打点信息说明](#section085643405116)。
-* [耗时分析工具Time Profiler](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-time)： 在应用/服务运行时，展示热点区域内基于 CPU 和进程耗时分析的调用栈情况。Time可在应用/服务运行时，展示热点区域内基于CPU和进程耗时分析的调用栈情况，并提供跳转至相关代码的能力，使开发者更便捷地进行代码优化。
+* [启动分析工具Launch Profiler](/docs/tools/coding-debug/ide-insight-session-launch)： 分析启动过程中各阶段的性能问题。Launch主要用于分析应用或服务的启动耗时，分析启动周期各阶段的耗时情况、核心线程的运行情况等，协助开发者识别启动缓慢的原因。
+* [帧率分析工具Frame Profiler](/docs/tools/coding-debug/ide-insight-session-frame)： 用于深度分析应用或服务卡顿丢帧的原因。Frame用于录制GPU数据信息，录制完成的子泳道对应录制过程中各个进程的帧数据，主要用于深度分析应用或服务卡顿丢帧的原因。Frame会对Trace进行录制和解析，进而可以分析应用运行的性能及其瓶颈，最终得出优化方案，关于Trace的详细介绍可参考[Trace打点信息说明](#section085643405116)。
+* [耗时分析工具Time Profiler](/docs/tools/coding-debug/ide-insight-session-time)： 在应用/服务运行时，展示热点区域内基于 CPU 和进程耗时分析的调用栈情况。Time可在应用/服务运行时，展示热点区域内基于CPU和进程耗时分析的调用栈情况，并提供跳转至相关代码的能力，使开发者更便捷地进行代码优化。
 * [内存分析工具Allocation Profiler](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-allocations)： 实时监测应用或服务内存使用情况。开发者可以使用Allocation内存分析器，识别可能会导致应用卡顿、内存泄漏、内存抖动的问题。
 * [内存快照Snapshot Profiler](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-snapshot)： 用于分析应用程序内存使用情况。内存快照（Snapshot）是一种用于分析应用程序内存使用情况的工具，通过记录应用程序在运行时的内存快照，可以快速查看应用程序在某一时刻的内存占用情况以及内存占用详情。
-* [应用性能分析工具CPU Profiler](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-cpu)： 该工具可以监测应用的CPU使用情况，为开发者提供性能采样分析手段，可在不插桩的情况下获取调用栈上各层函数的执行时间，并展示在时间轴上。
-* [ArkWeb分析工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-arkweb)：DevEco Profiler提供ArkWeb分析模板，可以结合ArkWeb执行流程的关键trace点来定位问题发生的阶段。
-* [Network分析工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-network)：DevEco Profiler提供Network模板，帮助用户在应用运行过程中查看http协议栈网络信息，包括请求分段耗时以及请求具体内容，方便对网络问题进行调优。
+* [应用性能分析工具CPU Profiler](/docs/tools/coding-debug/ide-insight-session-cpu)： 该工具可以监测应用的CPU使用情况，为开发者提供性能采样分析手段，可在不插桩的情况下获取调用栈上各层函数的执行时间，并展示在时间轴上。
+* [ArkWeb分析工具](/docs/tools/coding-debug/ide-profiler-arkweb)：DevEco Profiler提供ArkWeb分析模板，可以结合ArkWeb执行流程的关键trace点来定位问题发生的阶段。
+* [Network分析工具](/docs/tools/coding-debug/ide-profiler-network)：DevEco Profiler提供Network模板，帮助用户在应用运行过程中查看http协议栈网络信息，包括请求分段耗时以及请求具体内容，方便对网络问题进行调优。
 
 其他常见的性能调优工具，包括[HiDumper](/docs/dev/app-dev/system/hidumper)、[SmartPerf](https://gitcode.com/openharmony-sig/smartperf)。
 
@@ -58,13 +59,13 @@ DevEco Profiler工具不支持模拟器进行调优。
 
 **介绍**
 
-开发者可以使用[Inspector双向预览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-inspector)，在DevEco Studio上查看应用在真机上的组件布局，并通过查看多次操作后的界面状态，快速分析定位状态变量、组件嵌套层次、UI界面布局存在的问题等。
+开发者可以使用[Inspector双向预览](/docs/tools/coding-debug/ide-previewer-inspector)，在DevEco Studio上查看应用在真机上的组件布局，并通过查看多次操作后的界面状态，快速分析定位状态变量、组件嵌套层次、UI界面布局存在的问题等。
 
 **使用方法**
 
 详细使用指导见：
 
-[布局分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arkui-inspector)
+[布局分析](/docs/tools/coding-debug/ide-arkui-inspector)
 
 ## Trace打点信息说明
 

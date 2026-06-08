@@ -2,9 +2,10 @@
 format: md
 title: "如何通过Index获取ArrayList中的元素"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-85
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-85
+last_sync: 2026-06-07
+sync_hash: 6e592b26
 ---
-
-
 * 方式一：
 
   JS语法基础中可以通过数组元素的下标直接访问数组中的对象。示例如下：

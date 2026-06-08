@@ -2,9 +2,10 @@
 format: md
 title: "文本组件是否支持分段设置字体样式"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-117
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-117
+last_sync: 2026-06-07
+sync_hash: 364d0e84
 ---
-
-
 单个组件只能设置一种字体样式，可以通过多个Span子组件实现一行文本展示不同样式。参考代码如下：
 
 ```

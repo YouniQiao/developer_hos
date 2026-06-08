@@ -3,9 +3,10 @@ title: "@performance/bad-deep-clone-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-bad-deep-clone-check
 format: md
+upstream_id: tools/coding-debug/ide-bad-deep-clone-check
+last_sync: 2026-06-07
+sync_hash: a450157a
 ---
-
-
 # @performance/bad-deep-clone-check
 
 避免使用不合理深拷贝，如JSON.parse(JSON.stringify(foo))和\_.cloneDeep(foo)。

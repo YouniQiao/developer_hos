@@ -2,9 +2,10 @@
 title: "通过接口方式获取头像昵称"
 original_url: /docs/dev/atomic-dev/account-guide-atomic-get-avatar-nickname/account-guide-atomic-get-avatar-nickname-api
 format: md
+upstream_id: dev/atomic-dev/account-guide-atomic-get-avatar-nickname/account-guide-atomic-get-avatar-nickname-api
+last_sync: 2026-06-07
+sync_hash: c8e24de5
 ---
-
-
 ## 场景介绍
 
 如元服务需要获取用户头像昵称信息，可使用Account Kit提供的头像昵称授权能力，用户允许元服务获取头像昵称后，可快速完成个人信息填写。以下对Account Kit提供的头像昵称授权能力进行介绍。

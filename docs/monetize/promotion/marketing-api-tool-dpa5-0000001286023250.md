@@ -3,8 +3,10 @@ title: "更新商品库"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-dpa5-0000001286023250
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-dpa5-0000001286023250
+last_sync: 2026-06-07
+sync_hash: 0a1c752f
 ---
-
 # 更新商品库
 
 您通过本接口可以更新商品库。

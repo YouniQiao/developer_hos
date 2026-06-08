@@ -3,8 +3,11 @@ title: "@security/no-unsafe-sm2-cipher"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unsafe-sm2-cipher
 format: md
+upstream_id: tools/coding-debug/ide_no-unsafe-sm2-cipher
+last_sync: 2026-06-07
+sync_hash: 22bd080e
+upstream_hash: 04459f765ac0
 ---
-
 
 # @security/no-unsafe-sm2-cipher
 

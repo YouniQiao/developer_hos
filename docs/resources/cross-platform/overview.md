@@ -2,9 +2,9 @@
 title: 跨平台框架
 sidebar_label: 跨平台框架
 format: md
+upstream_id: _local
+last_sync: 2026-06-08
 ---
-
-
 # 跨平台框架
 
 HarmonyOS 生态支持多种跨平台开发框架，开发者可使用熟悉的框架和技术栈快速构建鸿蒙应用。

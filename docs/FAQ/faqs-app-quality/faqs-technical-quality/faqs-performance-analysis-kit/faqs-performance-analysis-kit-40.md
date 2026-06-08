@@ -2,9 +2,10 @@
 format: md
 title: "如何解决Kill server failed 的问题"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-40
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-40
+last_sync: 2026-06-07
+sync_hash: 0e9fed8b
 ---
-
-
 **问题现象**
 
 执行 hdc kill 命令后，返回信息为“Kill server failed: operation not permitted”。

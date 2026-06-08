@@ -3,9 +3,10 @@ title: "业务概述"
 original_url: /docs/dev/game-dev/gameobe-realtime-server-0000002361510716
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/gameobe-realtime-server-0000002361510716
+last_sync: 2026-06-07
+sync_hash: 1713820a
 ---
-
-
 为了实现复杂的游戏逻辑，通常您需要搭建一个实时服务器。然而，自建实时服务器不仅成本高，而且运维工作量巨大。为此，我们提供了更安全、更稳定、更低成本的实时服务器托管游戏代码的功能，支持您将部分代码按照特定格式托管到实时服务器上，即可实现云侧计算与管理能力。
 
 ## 工作原理

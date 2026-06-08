@@ -2,9 +2,10 @@
 format: md
 title: "如何进行视频压缩"
 original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avcodec-kit/faqs-avsession-13
+upstream_id: FAQ/faqs-media-development/faqs-audio-video/faqs-avcodec-kit/faqs-avsession-13
+last_sync: 2026-06-07
+sync_hash: 24f5a7b5
 ---
-
-
 **问题现象**
 
 视频压缩处理是影音娱乐类应用中的典型场景之一，如上传、发送或保存视频时存在大小限制，需要对视频进行压缩，保证视频质量及大小满足用户需要。

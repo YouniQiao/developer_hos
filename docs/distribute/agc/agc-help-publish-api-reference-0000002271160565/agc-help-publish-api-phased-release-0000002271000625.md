@@ -2,9 +2,10 @@
 title: "更新分阶段发布"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-phased-release-0000002271000625
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-phased-release-0000002271000625
+last_sync: 2026-06-07
+sync_hash: 6d224e69
 ---
-
-
 #### 功能介绍
 
 此接口用于将分阶段发布修改为全网发布，或者更新分阶段发布的设置。

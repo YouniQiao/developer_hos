@@ -2,8 +2,11 @@
 title: "获取用户目录环境(C/C++)"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/user-files/native-environment-guidelines
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/user-files/native-environment-guidelines
+last_sync: 2026-06-07
+sync_hash: d3961561
+upstream_hash: aa1d9d5dd477
 ---
-
 
 ## 场景介绍
 

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "证书管理概述"
 original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certmanager/certmanager-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/device-certificate-kit/certmanager/certmanager-overview
+last_sync: 2026-06-07
+sync_hash: cf558f84
 ---
-
-
 证书管理主要提供系统级的证书管理能力，实现证书全生命周期（安装、存储、使用和销毁）的管理和安全使用。同时提供拉起证书管理对话框的接口，使应用可以通过界面查看、管理证书及凭据。
 
 ## 证书管理基本概念

@@ -1,8 +1,10 @@
 ---
 title: "资源泄漏类问题案例"
 original_url: /docs/quality/scenario-stability-leak
+upstream_id: /docs/quality/scenario-stability-leak
+last_sync: 2026-06-07
+sync_hash: 8df64f22
 ---
-
 # 资源泄漏类问题案例
 
 本文按照[资源泄漏分析方法](/docs/quality/stability-leak-way)的流程展开，以实际案例的形式指导开发者如何从泄漏维测日志出发，分析、定位具体泄漏点。开发者可阅读[资源泄漏检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/resource-leak-guidelines)了解系统检测资源泄漏问题的机制与日志规格。

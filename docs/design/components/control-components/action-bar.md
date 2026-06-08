@@ -3,8 +3,10 @@ title: 核心操作栏
 sidebar_label: 核心操作栏
 original_url: /docs/design/components/control-components/action-bar
 format: md
+upstream_id: design/components/control-components/action-bar
+last_sync: 2026-06-07
+sync_hash: 53e1fabc
 ---
-
 # 核心操作栏
 
 核心操作栏悬浮在页面下方，是用于承载核心操作和功能的系统组件。开发信息请参阅 [HDS Action Bar](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdsactionbar) 文档。

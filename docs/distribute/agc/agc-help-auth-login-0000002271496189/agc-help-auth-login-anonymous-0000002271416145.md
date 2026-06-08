@@ -2,9 +2,10 @@
 title: "匿名账号"
 original_url: /docs/distribute/agc/agc-help-auth-login-0000002271496189/agc-help-auth-login-anonymous-0000002271416145
 format: md
+upstream_id: distribute/agc/agc-help-auth-login-0000002271496189/agc-help-auth-login-anonymous-0000002271416145
+last_sync: 2026-06-07
+sync_hash: df7e0d43
 ---
-
-
 您可以在应用中集成匿名账号认证方式，让您的用户可以使用游客模式进行身份验证。
 
 #### 前提条件

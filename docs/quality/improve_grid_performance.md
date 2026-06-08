@@ -1,8 +1,10 @@
 ---
 title: "Grid组件加载丢帧优化"
 original_url: /docs/quality/improve_grid_performance
+upstream_id: /docs/quality/improve_grid_performance
+last_sync: 2026-06-07
+sync_hash: 408c5c6f
 ---
-
 # Grid组件加载丢帧优化
 
 ## 概述

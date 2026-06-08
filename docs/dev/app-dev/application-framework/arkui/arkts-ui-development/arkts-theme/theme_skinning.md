@@ -2,9 +2,10 @@
 title: "设置应用内主题换肤"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-theme/theme_skinning
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-theme/theme_skinning
+last_sync: 2026-06-07
+sync_hash: 2f2de827
 ---
-
-
 ## 概述
 
 对于采用ArkTS开发的应用，提供了应用内组件的主题换肤功能，支持局部的深浅色切换及动态换肤。目前，该功能只支持设置应用内主题换肤，暂不支持在UIAbility或窗口层面进行主题设置，同时也不支持C-API和Node-API。

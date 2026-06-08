@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通知订阅扩展能力概述"
 original_url: /docs/dev/app-dev/application-services/notification-kit/notification-subscriber-extension/notification-subscriber-extension-ability
 format: md
+upstream_id: dev/app-dev/application-services/notification-kit/notification-subscriber-extension/notification-subscriber-extension-ability
+last_sync: 2026-06-07
+sync_hash: 74b29ec9
 ---
-
-
 ## 功能简介
 
 此扩展能力的核心作用是让三方应用接收系统通知，应用可在此扩展能力中实现与穿戴设备之间的数据传输。应用发送通知给分布式通知服务后，该服务会把通知转发给三方应用实现的[NotificationSubscriberExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationsubscriberextensionability)。若一定时间内无新通知发布，当前运行的[NotificationSubscriberExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationsubscriberextensionability)会被系统自动销毁。

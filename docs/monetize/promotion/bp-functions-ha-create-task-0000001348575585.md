@@ -3,8 +3,10 @@ title: "创建推广任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-ha-create-task-0000001348575585
 format: md
+upstream_id: monetize/promotion/bp-functions-ha-create-task-0000001348575585
+last_sync: 2026-06-07
+sync_hash: c16b5574
 ---
-
 # 创建推广任务
 
 在创建推广任务时归因方式选择“华为分析监测”，并使用HA数据回传。

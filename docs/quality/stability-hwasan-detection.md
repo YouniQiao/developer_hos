@@ -1,8 +1,11 @@
 ---
 title: "使用HWASan检测内存错误"
 original_url: /docs/quality/stability-hwasan-detection
+upstream_id: /docs/quality/stability-hwasan-detection
+last_sync: 2026-06-07
+sync_hash: ebdc8635
+upstream_hash: 5874474dea76
 ---
-
 
 # 使用HWASan检测内存错误
 
@@ -58,7 +61,7 @@ HWASAN\_OPTIONS支持在“app.json5”中配置。
    ```
 
    ![](./img/a250b872.png)
-2. 在hvigorw命令后加上**-p** **ohos-enable-hwasan=true**的选项，执行hvigorw命令，更多options参考[hvigorw文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-commandline)。
+2. 在hvigorw命令后加上**-p** **ohos-enable-hwasan=true**的选项，执行hvigorw命令，更多options参考[hvigorw文档](/docs/tools/cli-tools/ide-hvigor-commandline)。
 
    ```
    hvigorw [taskNames...] -p ohos-enable-hwasan=true  <options>
@@ -85,7 +88,7 @@ HWASAN\_OPTIONS支持在“app.json5”中配置。
 
 **流水线场景**
 
-在AppScope/app.json5和模块build-profile.json5配置对应HWASan项后，可直接执行hvigorw命令，更多options参考[hvigorw文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-commandline)。
+在AppScope/app.json5和模块build-profile.json5配置对应HWASan项后，可直接执行hvigorw命令，更多options参考[hvigorw文档](/docs/tools/cli-tools/ide-hvigor-commandline)。
 
 ```
 hvigorw [taskNames...] -p ohos-enable-hwasan=true  <options>

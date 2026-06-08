@@ -2,9 +2,10 @@
 title: "制作标签"
 original_url: /docs/distribute/agc/agc-help-by-harmonyoslabel-touch-scan-0000002444192029/agc-help-by-harmonyoslabel-touch-scan-makelabel-0000002444072097
 format: md
+upstream_id: distribute/agc/agc-help-by-harmonyoslabel-touch-scan-0000002444192029/agc-help-by-harmonyoslabel-touch-scan-makelabel-0000002444072097
+last_sync: 2026-06-07
+sync_hash: d37c09db
 ---
-
-
 “碰扫合一”标签制作分为[NFC标签烧录](#section2362204119448)和[HarmonyOS标签数据下载及设计](#section2359405496)。
 
 #### NFC标签烧录

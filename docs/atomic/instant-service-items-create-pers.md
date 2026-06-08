@@ -2,9 +2,10 @@
 title: "创建子服务及个性化设置"
 original_url: /docs/dev/atomic-dev/instant-service-items/instant-service-items-create-pers
 format: md
+upstream_id: dev/atomic-dev/instant-service-items/instant-service-items-create-pers
+last_sync: 2026-06-07
+sync_hash: caadcf32
 ---
-
-
 开发者可在此页签创建子服务后，再进行个性化设置。
 
 1. 在服务直达主界面，选择“子服务直达”页签，点击“新建”。

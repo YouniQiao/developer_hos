@@ -2,9 +2,10 @@
 title: "label"
 original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-label
 format: md
+upstream_id: dev/atomic-dev/ascf/components-form-components/components-label
+last_sync: 2026-06-07
+sync_hash: 0040ce58
 ---
-
-
 用来改进表单组件的可用性。
 
 **起始版本：** 1.0.0

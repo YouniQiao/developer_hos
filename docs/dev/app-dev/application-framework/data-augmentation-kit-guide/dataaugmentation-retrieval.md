@@ -2,9 +2,10 @@
 title: "智慧化数据检索-ArkTS"
 original_url: /docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-retrieval
 format: md
+upstream_id: dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-retrieval
+last_sync: 2026-06-07
+sync_hash: 4d25cb14
 ---
-
-
 ## 场景介绍
 
 智慧化数据检索可用于文件整理，文件搜索等场景，例如：关键词检索、语义检索（文搜文）和跨模态检索（文搜图）。智慧化数据检索通过多路召回和重排两个阶段实现：

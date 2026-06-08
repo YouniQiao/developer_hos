@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "设置铃声"
 original_url: /docs/dev/app-dev/media/ringtone-kit-guide/ringtone-preparations
 format: md
+upstream_id: dev/app-dev/media/ringtone-kit-guide/ringtone-preparations
+last_sync: 2026-06-07
+sync_hash: 913cf160
+upstream_hash: c4ae62954401
 ---
-
 
 1. 导入ringtone模块和相关公共模块。
 

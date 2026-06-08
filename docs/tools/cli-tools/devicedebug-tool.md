@@ -3,9 +3,10 @@ title: "devicedebug工具"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/devicedebug-tool
 format: md
+upstream_id: tools/cli-tools/devicedebug-tool
+last_sync: 2026-06-07
+sync_hash: f2070bf5
 ---
-
-
 # devicedebug工具
 
 devicedebug工具向开发者提供对调试应用发送信号的能力，目前仅支持向AMS管理的debug类型的应用进程的pid发送signal信号，达到终止对应pid进程的能力。

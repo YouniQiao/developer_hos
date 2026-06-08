@@ -2,9 +2,10 @@
 title: "密钥删除(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-delete-key/huks-delete-key-arkts
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-delete-key/huks-delete-key-arkts
+last_sync: 2026-06-07
+sync_hash: 2d7b8a09
 ---
-
-
 为保证数据安全性，当不需要使用该密钥时，应该删除密钥。
 
 从API 23开始支持[群组密钥](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-group-key/huks-group-key-overview)特性。

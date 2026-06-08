@@ -3,8 +3,10 @@ title: 服务卡片
 sidebar_label: 服务卡片
 original_url: /docs/design/atomic-service-design/basic-elements/service-card
 format: md
+upstream_id: design/atomic-service-design/basic-elements/service-card
+last_sync: 2026-06-07
+sync_hash: dfb0c9d6
 ---
-
 # 服务卡片
 
 为了给用户提供便捷、智能的服务体验，每个元服务都可选配置服务卡片。卡片作为服务的轻量承载，需要做到易用可见、智能可选和多端可变。

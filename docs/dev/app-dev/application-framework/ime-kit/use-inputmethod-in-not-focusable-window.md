@@ -2,9 +2,10 @@
 title: "不可获焦窗口中输入框与输入法交互指南"
 original_url: /docs/dev/app-dev/application-framework/ime-kit/use-inputmethod-in-not-focusable-window
 format: md
+upstream_id: dev/app-dev/application-framework/ime-kit/use-inputmethod-in-not-focusable-window
+last_sync: 2026-06-07
+sync_hash: b81cd4db
 ---
-
-
 ## 场景介绍
 
 应用获得焦点是使用输入法的必要条件，开发者需要正确处理焦点以确保输入法的正常工作。

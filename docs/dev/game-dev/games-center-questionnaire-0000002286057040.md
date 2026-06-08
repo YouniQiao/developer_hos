@@ -3,9 +3,10 @@ title: "问卷服务"
 original_url: /docs/dev/game-dev/games-center-questionnaire-0000002286057040
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-center-questionnaire-0000002286057040
+last_sync: 2026-06-07
+sync_hash: c59acf75
 ---
-
-
 为了改善用户体验，现华为平台开放问卷服务，您可以在不同的使用场景下自定义问卷内容，快速向用户分发问卷并在线收集问卷结果，提升您的工作效率。
 
 ## 前提条件

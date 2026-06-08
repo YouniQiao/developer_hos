@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "ArkGraphics 3D场景搭建以及管理"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-3d/arkgraphics3d-scene
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-3d/arkgraphics3d-scene
+last_sync: 2026-06-07
+sync_hash: 3d21a1f5
 ---
-
-
 一个3D场景通常由光源、相机、模型三个关键部分组成。
 
 * 光源：为整个3D场景提供光照，使得3D场景中的模型变得可见。与真实物理场景一致，没有光源场景将变得一片漆黑，得到的渲染结果也就是全黑色。

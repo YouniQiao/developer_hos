@@ -2,9 +2,10 @@
 title: "快游戏调试"
 original_url: /docs/dev/game-dev/games-quickgame-tool-debug-quickgame-0000002544859545
 format: md
+upstream_id: dev/game-dev/games-quickgame-tool-debug-quickgame-0000002544859545
+last_sync: 2026-06-07
+sync_hash: 66584645
 ---
-
-
 ## 前提条件
 
 * 已[获取APP ID](/docs/dev/game-dev/games-quickgame-enable-account-kit-0000002317894820#section1148753814717)。

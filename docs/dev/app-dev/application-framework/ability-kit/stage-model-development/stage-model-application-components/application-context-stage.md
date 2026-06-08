@@ -2,9 +2,10 @@
 title: "应用上下文Context"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-context-stage
+last_sync: 2026-06-07
+sync_hash: ff9c0b03
 ---
-
-
 ## 概述
 
 [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)是应用中对象的上下文，其提供了应用的一些基础信息，例如[resourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager)（资源管理）、[applicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager-applicationinfo)（当前应用信息）、[area](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-contextconstant#areamode)（文件分区）等。

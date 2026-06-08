@@ -2,9 +2,10 @@
 title: "典型应用场景"
 original_url: /docs/dev/game-dev/gameobe-applicationscenarios-0000002395190461
 format: md
+upstream_id: dev/game-dev/gameobe-applicationscenarios-0000002395190461
+last_sync: 2026-06-07
+sync_hash: d5db4da0
 ---
-
-
 ## 满足多种游戏玩法
 
 联机对战服务提供多种匹配方式，支持玩家约战或快速匹配（包括房间匹配、在线匹配和组队匹配），满足多种游戏玩法。

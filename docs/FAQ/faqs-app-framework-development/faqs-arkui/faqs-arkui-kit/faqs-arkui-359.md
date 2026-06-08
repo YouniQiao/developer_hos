@@ -2,9 +2,10 @@
 format: md
 title: "在深色模式切换下如何适配状态栏颜色"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-359
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-359
+last_sync: 2026-06-07
+sync_hash: 0a17bc8b
 ---
-
-
 **问题描述**
 
 在深色模式下，状态栏颜色与背景色对比度不足，导致内容难以辨认。

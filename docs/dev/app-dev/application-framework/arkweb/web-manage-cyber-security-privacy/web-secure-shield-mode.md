@@ -2,9 +2,10 @@
 title: "坚盾守护模式"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-cyber-security-privacy/web-secure-shield-mode
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-cyber-security-privacy/web-secure-shield-mode
+last_sync: 2026-06-07
+sync_hash: cb6644a9
 ---
-
-
 坚盾守护模式提供给高安全需求用户的系统级别安全模式。该模式通过限制设备基础功能，增强安全性，有效抵御远程攻击面的针对性攻击。
 
 ## ArkWeb限制的HTML5特性

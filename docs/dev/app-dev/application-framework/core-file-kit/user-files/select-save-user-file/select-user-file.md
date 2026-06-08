@@ -2,8 +2,11 @@
 title: "选择用户文件"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/select-user-file
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/select-user-file
+last_sync: 2026-06-07
+sync_hash: 46bed5a1
+upstream_hash: 50a91749cddb
 ---
-
 
 用户需要分享文件、保存图片、视频等用户文件时，开发者可以通过系统预置的[文件选择器（FilePicker）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-picker)，实现该能力。通过Picker访问相关文件，将拉起对应的应用，引导用户完成界面操作，接口本身无需申请权限。Picker选择文件或文件夹获取到的URI只具有**临时读写权限**，获取持久化权限需要通过[FilePicker设置永久授权](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/file-persistpermission#通过picker获取临时授权并进行授权持久化)方式获取。
 

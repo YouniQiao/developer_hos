@@ -1,9 +1,10 @@
 ---
 title: "Vsync低功耗优化"
 original_url: /docs/quality/vsync-power-optimization
+upstream_id: /docs/quality/vsync-power-optimization
+last_sync: 2026-06-07
+sync_hash: 5d467420
 ---
-
-
 # Vsync低功耗优化
 
 ## 概述

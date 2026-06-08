@@ -2,9 +2,10 @@
 title: "订阅和处理用户信息变更"
 original_url: /docs/dev/atomic-dev/atomic-account-development/account-guide-atomic-sub-pro-userinfo-change
 format: md
+upstream_id: dev/atomic-dev/atomic-account-development/account-guide-atomic-sub-pro-userinfo-change
+last_sync: 2026-06-07
+sync_hash: ad148755
 ---
-
-
 ## 概述
 
 通过订阅用户信息变更，您可以接收有关用户及其账户的重要更新。当用户及其账户信息发生变更时，华为账号服务器会发送通知到元服务，元服务可以根据通知消息进行自身业务处理。

@@ -2,9 +2,10 @@
 title: "如何控制只在Web组件第一次加载url的时候触发onPageBegin，onPageEnd"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-34
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-34
+last_sync: 2026-06-07
+sync_hash: cd97a2a2
 ---
-
-
 使用onAppear事件控制仅在首次加载URL时触发onPageBegin和onPageEnd，参考代码如下：
 
 ```

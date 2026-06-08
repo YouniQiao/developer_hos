@@ -2,9 +2,10 @@
 title: "事件监听"
 original_url: /docs/dev/game-dev/gameobe-listener-real-time-server-0000002395350537
 format: md
+upstream_id: dev/game-dev/gameobe-listener-real-time-server-0000002395350537
+last_sync: 2026-06-07
+sync_hash: 441aeea1
 ---
-
-
 您可以使用GameServer相关方法监听客户端的相关事件，包括监听客户端的房间创建/销毁、帧同步开始/停止、客户端发送给实时服务器消息等事件。
 
 ## 监听创建房间事件

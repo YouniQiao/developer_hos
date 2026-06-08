@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用ImageEffect编辑图片"
 original_url: /docs/dev/app-dev/media/image-kit/image-native/image-editing-c/image-effect-guidelines
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-native/image-editing-c/image-effect-guidelines
+last_sync: 2026-06-07
+sync_hash: 44f3423a
 ---
-
-
 ## 场景介绍
 
 ImageEffect提供了一系列接口用于图像的编辑。开发者可以通过ImageEffect接口处理不同图像输入类型Pixelmap、NativeWindow、NativeBuffer或Uri，获得滤镜处理效果。

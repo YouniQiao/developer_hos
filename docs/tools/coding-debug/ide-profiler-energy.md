@@ -3,9 +3,10 @@ title: "能耗诊断：Energy分析"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-profiler-energy
 format: md
+upstream_id: tools/coding-debug/ide-profiler-energy
+last_sync: 2026-06-07
+sync_hash: 4a77ab96
 ---
-
-
 # 能耗诊断：Energy分析
 
 从DevEco Studio 5.1.0 Release版本开始，DevEco Profiler提供Energy模板，帮助用户在应用运行过程中查看能耗信息，包括不同器件的能耗、整机温度以及能耗异常帧，从而方便用户对能耗问题进行调优。此外，Energy模板还集成了Frame、Time、CPU场景分析任务的功能，方便开发者在分析能耗问题的同时同步对比同一时段的其他资源占用情况。

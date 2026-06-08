@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Account Kit简介"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-introduction
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-introduction
+last_sync: 2026-06-07
+sync_hash: f4ca09d7
 ---
-
-
 ## 场景介绍
 
 Account Kit（华为账号服务）提供简单、快速、安全的登录功能，让用户快捷地使用华为账号登录应用。用户授权后，Account Kit可提供头像、昵称、手机号码等信息，帮助应用更了解用户。
@@ -70,6 +71,6 @@ Account Kit提供的[SampleCode示例工程](https://gitcode.com/HarmonyOS_Sampl
 
 本Kit支持模拟器，但与真机存在部分能力差异，具体差异如下。
 
-* 通用差异：请参见“[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification#section1227613205203)”。
+* 通用差异：请参见“[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification#section1227613205203)”。
 * 模拟器仅支持应用统一认证服务[authentication](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication)的登录和授权能力、[华为账号Button登录组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-huawei-id-button)。
 * 不支持Wearable设备模拟器。

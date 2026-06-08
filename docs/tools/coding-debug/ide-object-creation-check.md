@@ -3,9 +3,10 @@ title: "@performance/object-creation-check（已下线）"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-object-creation-check
 format: md
+upstream_id: tools/coding-debug/ide-object-creation-check
+last_sync: 2026-06-07
+sync_hash: ef5717cf
 ---
-
-
 # @performance/object-creation-check（已下线）
 
 建议使用字面量进行对象创建。仅支持检查ts文件，暂不支持ets文件检查。该规则已于5.0.3.500版本下线。

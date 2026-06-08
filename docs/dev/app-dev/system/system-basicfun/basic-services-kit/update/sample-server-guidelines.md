@@ -2,9 +2,10 @@
 title: "示例服务器开发指导"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/update/sample-server-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/update/sample-server-guidelines
+last_sync: 2026-06-07
+sync_hash: 275714a3
 ---
-
-
 ## 开发步骤
 
 1. 生成SSL证书

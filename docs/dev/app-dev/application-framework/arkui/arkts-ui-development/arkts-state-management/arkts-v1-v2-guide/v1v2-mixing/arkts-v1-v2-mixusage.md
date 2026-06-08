@@ -2,8 +2,11 @@
 title: "状态管理V1和V2混用指导（API version 19及之后）"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/v1v2-mixing/arkts-v1-v2-mixusage
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/v1v2-mixing/arkts-v1-v2-mixusage
+last_sync: 2026-06-07
+sync_hash: 99ba9a47
+upstream_hash: b5980413a80f
 ---
-
 
 ## 概述
 

@@ -2,9 +2,10 @@
 title: "按钮 (Button)"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection/arkts-common-components-button
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection/arkts-common-components-button
+last_sync: 2026-06-07
+sync_hash: 6b3aeea5
 ---
-
-
 Button是按钮组件，通常用于响应用户的点击操作，其类型包括胶囊按钮、圆形按钮、普通按钮、圆角矩形按钮。Button作为容器使用时可以通过添加子组件实现包含文字、图片等元素的按钮。具体用法请参考[Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button)。
 
 ## 创建按钮

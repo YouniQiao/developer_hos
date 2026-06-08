@@ -2,9 +2,10 @@
 title: "常见问题"
 original_url: /docs/dev/testing/faq
 format: md
+upstream_id: dev/testing/faq
+last_sync: 2026-06-07
+sync_hash: 47e3a307
 ---
-
-
 **Q1：执行过程中，设备断连重连后，任务能否继续执行？**
 
 A1：如果发生设备断连情况，测试会终止，并生成测试报告，由于测试执行不充分，会导致生成的报告数据不完整，请确保设备在测试的过程中正常连接。

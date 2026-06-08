@@ -2,9 +2,10 @@
 title: "性能概览"
 original_url: /docs/quality/performance-guide-reading
 format: md
+upstream_id: /docs/quality/performance-guide-reading
+last_sync: 2026-06-07
+sync_hash: 9273fc07
 ---
-
-
 # 性能概览
 
 ![](./img/b8b18c63.png)

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "创建并使用环境资源"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-3d/arkgraphics3d-resource/arkgraphics3d-resource-environment
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-3d/arkgraphics3d-resource/arkgraphics3d-resource-environment
+last_sync: 2026-06-07
+sync_hash: fed19f03
 ---
-
-
 环境（Environment）：环境是3D场景背景的一种描述，可以基于图片进行创建。通过将一张图片进行正方体或者球体的映射处理，将图片贴在正方体或者球体上，在3D场景中模拟真实的环境。
 
 ArkGraphics 3D支持用户创建环境资源，定义3D场景的背景。

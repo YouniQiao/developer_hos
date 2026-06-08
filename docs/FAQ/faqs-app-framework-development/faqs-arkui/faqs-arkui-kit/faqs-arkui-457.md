@@ -2,9 +2,10 @@
 format: md
 title: "当一个组件同时绑定了点击事件（onClick）和并行手势（.parallelGesture），为什么当操作为长按时，两个手势都会响应"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-457
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-457
+last_sync: 2026-06-07
+sync_hash: 56c58475
 ---
-
-
 **问题描述**
 
 由于onClick和.parallelGesture绑定的手势被组合成并行手势组，在长按操作时，系统会同时检测到长按手势和潜在的单击手势（在未达到长按时间阈值前），因此两者都会被触发。

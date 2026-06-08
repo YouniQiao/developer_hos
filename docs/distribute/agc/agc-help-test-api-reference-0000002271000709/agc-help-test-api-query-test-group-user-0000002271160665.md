@@ -2,9 +2,10 @@
 title: "查询测试群组成员"
 original_url: /docs/distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-query-test-group-user-0000002271160665
 format: md
+upstream_id: distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-query-test-group-user-0000002271160665
+last_sync: 2026-06-07
+sync_hash: 614555a0
 ---
-
-
 #### 功能介绍
 
 此接口用于邀请测试查询已添加到测试群组的成员信息。

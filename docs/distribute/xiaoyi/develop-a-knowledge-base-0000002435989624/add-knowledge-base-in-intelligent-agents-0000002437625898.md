@@ -3,8 +3,11 @@ title: "在智能体中添加知识库"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/develop-a-knowledge-base-0000002435989624/add-knowledge-base-in-intelligent-agents-0000002437625898
 format: md
+upstream_id: distribute/xiaoyi/develop-a-knowledge-base-0000002435989624/add-knowledge-base-in-intelligent-agents-0000002437625898
+last_sync: 2026-06-07
+sync_hash: 939a40b4
+upstream_hash: cf5846e5215e
 ---
-
 
 # 在智能体中添加知识库
 

@@ -2,9 +2,10 @@
 title: "PageAbility的启动模式"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/pageability-launch-type
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/pageability-launch-type
+last_sync: 2026-06-07
+sync_hash: 985c1157
 ---
-
-
 启动模式对应PageAbility被启动时的行为，支持单实例模式、多实例模式两种启动模式。
 
 **表1** PageAbility的启动模式

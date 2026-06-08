@@ -2,9 +2,10 @@
 title: "其他工具"
 original_url: /docs/dev/game-dev/games-hismartperf-others-0000002321517305
 format: md
+upstream_id: dev/game-dev/games-hismartperf-others-0000002321517305
+last_sync: 2026-06-07
+sync_hash: 9a8d1141
 ---
-
-
 ![](./img/450f68ef.png)
 
 Mac版本的HiSmartPerf-Editor暂不支持其他辅助工具。

@@ -1,8 +1,10 @@
 ---
 title: "Image白块解决方案"
 original_url: /docs/quality/image-white-lump-solution
+upstream_id: /docs/quality/image-white-lump-solution
+last_sync: 2026-06-07
+sync_hash: 3ae98c61
 ---
-
 # Image白块解决方案
 
 ## 概述

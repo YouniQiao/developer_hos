@@ -2,9 +2,10 @@
 title: "下载"
 original_url: /docs/dev/atomic-dev/ascf/apis-network/apis-download
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-network/apis-download
+last_sync: 2026-06-07
+sync_hash: 1bf60ee2
 ---
-
-
 ## has.downloadFile
 
 has.downloadFile(Object object): DownloadTask

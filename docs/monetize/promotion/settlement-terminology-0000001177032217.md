@@ -3,8 +3,10 @@ title: "授信账户"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/settlement-terminology-0000001177032217
 format: md
+upstream_id: monetize/promotion/settlement-terminology-0000001177032217
+last_sync: 2026-06-07
+sync_hash: 76742c14
 ---
-
 # 授信账户
 
 本章节为直客授信账户，服务商授信账户请参考[授信账户](/docs/monetize/promotion/finance-0000001058604140#section984883812297)。

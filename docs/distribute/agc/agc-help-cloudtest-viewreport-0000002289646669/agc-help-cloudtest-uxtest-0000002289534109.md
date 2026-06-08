@@ -2,9 +2,10 @@
 title: "UX测试"
 original_url: /docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-uxtest-0000002289534109
 format: md
+upstream_id: distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-uxtest-0000002289534109
+last_sync: 2026-06-07
+sync_hash: c6976312
 ---
-
-
 云测试提供应用或元服务在真机设备上的UX测试功能，支持检测的问题类别包括基础体验、系统特性适配、视觉风格、动效、大屏体验等。
 
 #### 前提条件

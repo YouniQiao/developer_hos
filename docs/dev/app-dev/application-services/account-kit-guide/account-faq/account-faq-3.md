@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "一键登录场景下无法获取到匿名手机号如何解决"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-3
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-3
+last_sync: 2026-06-07
+sync_hash: 8805696c
 ---
-
-
 在华为账号一键登录场景下无法获取到匿名手机号时，建议通过以下步骤排查解决：
 
 1. 当开发者开启了[代码混淆](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-guide)时，为了防止quickLoginAnonymousPhone（匿名手机号）属性在release包中被混淆，请在调用“获取匿名手机号”方法所在工程模块的混淆文件obfuscation-rules.txt中添加如下配置：

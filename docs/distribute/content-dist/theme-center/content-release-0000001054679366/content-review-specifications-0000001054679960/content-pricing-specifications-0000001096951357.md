@@ -2,9 +2,10 @@
 title: "内容定价规范"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-pricing-specifications-0000001096951357
+upstream_id: distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-pricing-specifications-0000001096951357
+last_sync: 2026-06-07
+sync_hash: 564d4a8e
 ---
-
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # 内容定价规范

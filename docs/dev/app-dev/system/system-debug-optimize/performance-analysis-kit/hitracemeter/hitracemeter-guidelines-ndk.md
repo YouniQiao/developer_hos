@@ -2,9 +2,10 @@
 title: "使用HiTraceMeter跟踪性能（C/C++）"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracemeter/hitracemeter-guidelines-ndk
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracemeter/hitracemeter-guidelines-ndk
+last_sync: 2026-06-07
+sync_hash: d59c310b
 ---
-
-
 ## 简介
 
 HiTraceMeter提供系统性能打点接口。开发者在关键代码位置调用这些API，能够有效跟踪进程轨迹，查看系统和应用性能。

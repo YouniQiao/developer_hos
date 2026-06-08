@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "已连接对端设备查询"
 original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_watchdev/watch_query_connected_devices
 format: md
+upstream_id: dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_watchdev/watch_query_connected_devices
+last_sync: 2026-06-07
+sync_hash: 660eaf50
 ---
-
-
 Wear Engine提供查询用户在穿戴侧已连接的对端设备列表的接口。
 
 建议开发者在使用Wear Engine其他API接口前先实现该接口功能，从已连接的对端设备列表中选定设备。

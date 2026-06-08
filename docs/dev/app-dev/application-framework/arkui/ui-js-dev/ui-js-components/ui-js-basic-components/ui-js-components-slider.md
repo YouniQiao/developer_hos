@@ -2,9 +2,10 @@
 title: "slider开发指导"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-basic-components/ui-js-components-slider
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-basic-components/ui-js-components-slider
+last_sync: 2026-06-07
+sync_hash: 1b9fc2ce
 ---
-
-
 slider为滑动条组件，用来快速调节音量、亮度等。具体用法请参考[slider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-basic-slider)。
 
 ## 创建slider组件

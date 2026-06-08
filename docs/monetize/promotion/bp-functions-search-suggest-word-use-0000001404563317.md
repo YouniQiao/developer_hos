@@ -3,8 +3,10 @@ title: "使用搜索投放建议词"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-search-suggest-word-use-0000001404563317
 format: md
+upstream_id: monetize/promotion/bp-functions-search-suggest-word-use-0000001404563317
+last_sync: 2026-06-07
+sync_hash: cd8ae03c
 ---
-
 # 使用搜索投放建议词
 
 1. 登录[华为应用市场应用推广平台](https://developer.huawei.com/consumer/cn/service/apcs/app/home.html)，创建一个搜索推广任务，在推广任务中创建搜索场景子任务时，右侧会出现搜索投放建议词窗口，从窗口中按优质、行业、热门、潜力四个推荐理由类型，并结合流行度排序添加建议词。

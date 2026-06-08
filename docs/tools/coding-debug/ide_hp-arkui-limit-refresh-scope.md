@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-limit-refresh-scope（已下线）"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-limit-refresh-scope
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-limit-refresh-scope
+last_sync: 2026-06-07
+sync_hash: 968fc23e
 ---
-
-
 # @performance/hp-arkui-limit-refresh-scope（已下线）
 
 建议减少组件刷新范围。该规则已于5.0.3.500版本下线。

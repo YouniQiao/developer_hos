@@ -2,8 +2,11 @@
 format: md
 title: "Toggle组件响应点击后会立即渲染并回调，如何实现点击后延迟改变状态"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-353
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-353
+last_sync: 2026-06-07
+sync_hash: b76b4d34
+upstream_hash: 8a749e12811f
 ---
-
 
 使用hitTestBehavior和setTimeout解决。示例代码如下：
 

@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-namespace"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-namespace
 format: md
+upstream_id: tools/coding-debug/ide_no-namespace
+last_sync: 2026-06-07
+sync_hash: 0215747e
 ---
-
-
 # @typescript-eslint/no-namespace
 
 禁止使用 TypeScript语法中的命名空间。

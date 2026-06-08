@@ -2,9 +2,10 @@
 title: "Native与Sendable ArkTS对象绑定"
 original_url: /docs/dev/ndk-dev/use-sendable-napi
 format: md
+upstream_id: dev/ndk-dev/use-sendable-napi
+last_sync: 2026-06-07
+sync_hash: bffac81d
 ---
-
-
 ## 场景介绍
 
 通过napi\_wrap\_sendable将[Sendable](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable) ArkTS对象与Native的C++对象绑定，后续操作时再通过napi\_unwrap\_sendable将ArkTS对象绑定的C++对象取出，并对其进行操作。

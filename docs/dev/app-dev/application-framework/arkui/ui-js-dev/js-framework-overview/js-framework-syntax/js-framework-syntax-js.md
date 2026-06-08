@@ -2,8 +2,11 @@
 title: "JS语法参考"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-syntax/js-framework-syntax-js
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-syntax/js-framework-syntax-js
+last_sync: 2026-06-07
+sync_hash: 07367d9f
+upstream_hash: 6fd1b97632d9
 ---
-
 
 JS文件用来定义HML页面的业务逻辑，支持ECMA规范的JavaScript语言。基于JavaScript语言的动态化能力，可以使应用更加富有表现力，具备更加灵活的设计能力。下面讲述JS文件的编译和运行的支持情况。
 

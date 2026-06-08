@@ -2,9 +2,10 @@
 format: md
 title: "ArkTS层调用Native层接口时的线程相关问题"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-14
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-14
+last_sync: 2026-06-07
+sync_hash: 3aafbdfa
 ---
-
-
 **问题详情**
 
 1. ArkTS层按钮点击后，调用Native层接口时，Native层代码是否在主线程中执行？

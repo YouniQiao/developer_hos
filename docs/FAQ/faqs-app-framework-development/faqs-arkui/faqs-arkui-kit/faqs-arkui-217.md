@@ -2,9 +2,10 @@
 format: md
 title: "Image组件是否有缓存机制"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-217
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-217
+last_sync: 2026-06-07
+sync_hash: 91d6dedc
 ---
-
-
 1. Image的缓存策略
 
 Image模块提供了三级Cache机制，解码后内存图片缓存、解码前数据缓存、物理磁盘缓存。在加载图片时会逐级查找，如果在Cache中找到之前加载过的图片则提前返回对应的结果。

@@ -2,9 +2,10 @@
 title: "管理群组关键资产(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-group-access-control
 format: md
+upstream_id: dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-group-access-control
+last_sync: 2026-06-07
+sync_hash: a36b120d
 ---
-
-
 以下为管理群组关键资产使用示例，请先查看开发指导：
 
 * [新增关键资产(C/C++)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-add)

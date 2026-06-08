@@ -2,9 +2,10 @@
 title: "协议规格"
 original_url: /docs/experience-suggestions/compatibility/system-features/protocol-specification
 format: md
+upstream_id: experience-suggestions/compatibility/system-features/protocol-specification
+last_sync: 2026-06-07
+sync_hash: b33f8caf
 ---
-
-
 # 协议规格
 
 ### 蜂窝通信体验

@@ -3,8 +3,10 @@ title: "错误码"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-returncode-0000001135626866
 format: md
+upstream_id: monetize/promotion/marketapi-returncode-0000001135626866
+last_sync: 2026-06-07
+sync_hash: 6d3c5ba4
 ---
-
 # 错误码
 
 | 错误码（errorCode） | 错误描述（errorMsg） |

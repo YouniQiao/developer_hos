@@ -3,8 +3,11 @@ title: "@typescript-eslint/no-throw-literal"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-throw-literal
 format: md
+upstream_id: tools/coding-debug/ide_no-throw-literal
+last_sync: 2026-06-07
+sync_hash: 1293a31f
+upstream_hash: 5e3888f5074a
 ---
-
 
 # @typescript-eslint/no-throw-literal
 

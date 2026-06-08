@@ -2,8 +2,11 @@
 format: md
 title: "导入Sample时，提示SSL证书校验错误"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-3
+upstream_id: FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-3
+last_sync: 2026-06-07
+sync_hash: 2463da0d
+upstream_hash: 49d55eda44a7
 ---
-
 
 **问题现象**
 

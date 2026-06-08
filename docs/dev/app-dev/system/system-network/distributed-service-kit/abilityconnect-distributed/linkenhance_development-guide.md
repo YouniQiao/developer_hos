@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "增强连接开发指导"
 original_url: /docs/dev/app-dev/system/system-network/distributed-service-kit/abilityconnect-distributed/linkenhance_development-guide
 format: md
+upstream_id: dev/app-dev/system/system-network/distributed-service-kit/abilityconnect-distributed/linkenhance_development-guide
+last_sync: 2026-06-07
+sync_hash: 50f9c931
 ---
-
-
 ## 简介
 
 随着技术的发展，各种应用层出不穷，设备间的互联关系也成为一种常态，此时对于网络环境的依赖也不可避免。然而，在某些特殊场景下（如航空、远洋航行等），网络受限，蓝牙成为少数可行的连接方式。但是传统蓝牙连接存在着连接数量有限、连接成功率低、连接不稳定等缺点，影响了用户体验。

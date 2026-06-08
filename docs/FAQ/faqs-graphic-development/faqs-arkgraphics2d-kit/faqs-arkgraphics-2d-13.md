@@ -2,8 +2,11 @@
 format: md
 title: "一个EGLSurface支持同时显屏和输出到编码器吗"
 original_url: /docs/FAQ/faqs-graphic-development/faqs-arkgraphics2d-kit/faqs-arkgraphics-2d-13
+upstream_id: FAQ/faqs-graphic-development/faqs-arkgraphics2d-kit/faqs-arkgraphics-2d-13
+last_sync: 2026-06-07
+sync_hash: 9a4c8d80
+upstream_hash: bbe25ac237da
 ---
-
 
 不支持EglSurface同时用于显屏和编码器输出。
 

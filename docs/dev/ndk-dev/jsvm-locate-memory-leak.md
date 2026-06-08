@@ -2,8 +2,11 @@
 title: "JSVM-API 内存泄漏问题定位指导"
 original_url: /docs/dev/ndk-dev/jsvm-locate-memory-leak
 format: md
+upstream_id: dev/ndk-dev/jsvm-locate-memory-leak
+last_sync: 2026-06-07
+sync_hash: 9362f30c
+upstream_hash: 995d63733353
 ---
-
 
 JSVM的内存占用包括Native内存占用(C/C++侧的内存占用)和底层的JS引擎的堆内存占用，JS引擎会维护一个堆来管理其生成的JS对象，其生命周期由JS引擎维护，除此之外的内存我们归为Native内存。用户在使用JSVM时，可能碰到这两种内存异常增长的情况。
 
@@ -42,7 +45,7 @@ OH_JSVM_GetReferenceValue(env, reference, &result);
 
 ### 定位步骤
 
-为了分析Native内存泄漏，可以借助DevEco Studio的内存分析模块，具体参考文档：[内存分析及优化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-allocations-memory)。
+为了分析Native内存泄漏，可以借助DevEco Studio的内存分析模块，具体参考文档：[内存分析及优化](/docs/tools/coding-debug/ide-insight-session-allocations-memory)。
 
 1. 使用Profiler的Allocation模块记录一段时间内的Native内存信息。
 

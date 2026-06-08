@@ -2,9 +2,10 @@
 format: md
 title: "如何在AVRecorder录制WAV格式的音频文件时正确配置AVRecorderProfile参数"
 original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-20
+upstream_id: FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-20
+last_sync: 2026-06-07
+sync_hash: c6cb6288
 ---
-
-
 **问题现象**
 
 使用AVRecorder录制WAV格式音频时，发生异常错误。

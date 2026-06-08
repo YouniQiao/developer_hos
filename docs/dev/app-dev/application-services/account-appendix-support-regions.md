@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "支持的国家/地区"
 original_url: /docs/dev/app-dev/application-services/account-appendix-support-regions
 format: md
+upstream_id: dev/app-dev/application-services/account-appendix-support-regions
+last_sync: 2026-06-07
+sync_hash: cf5e4827
 ---
-
-
 | 国家/地区 | 英文名称 |
 | --- | --- |
 | 奥地利 | Austria |

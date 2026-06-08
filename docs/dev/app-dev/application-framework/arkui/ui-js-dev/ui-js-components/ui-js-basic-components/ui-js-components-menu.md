@@ -2,9 +2,10 @@
 title: "menu开发指导"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-basic-components/ui-js-components-menu
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-basic-components/ui-js-components-menu
+last_sync: 2026-06-07
+sync_hash: 2f871fdd
 ---
-
-
 提供菜单组件，作为临时性弹出窗口，用于展示用户可执行的操作，具体用法请参考[menu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-basic-menu)。
 
 ## 创建menu组件

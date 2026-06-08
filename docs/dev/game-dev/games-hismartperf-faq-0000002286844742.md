@@ -2,9 +2,10 @@
 title: "HiSmartPerf FAQ"
 original_url: /docs/dev/game-dev/games-hismartperf-faq-0000002286844742
 format: md
+upstream_id: dev/game-dev/games-hismartperf-faq-0000002286844742
+last_sync: 2026-06-07
+sync_hash: 43e438aa
 ---
-
-
 ## 如何解决一直显示“正在连接采集器”
 
 手机连接HiSmartPerf-Editor工具后，界面一直显示“正在连接采集器”，这是因为工具的安装路径可能有中文。您需要卸载工具重新安装，且保证安装路径中没有**中文**和**空格**。

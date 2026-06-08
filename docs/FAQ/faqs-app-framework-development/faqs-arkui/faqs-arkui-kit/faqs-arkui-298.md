@@ -2,9 +2,10 @@
 title: "如何在Page中获取WindowStage实例"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-298
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-298
+last_sync: 2026-06-07
+sync_hash: 33d689ad
 ---
-
-
 方式一：在onWindowStageCreate方法中获取，此方式适用于Ability生命周期内需要持久化WindowStage实例的场景。
 
 ```

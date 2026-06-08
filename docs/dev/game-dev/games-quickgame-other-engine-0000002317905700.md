@@ -2,9 +2,10 @@
 title: "低版本引擎开发快游戏"
 original_url: /docs/dev/game-dev/games-quickgame-other-engine-0000002317905700
 format: md
+upstream_id: dev/game-dev/games-quickgame-other-engine-0000002317905700
+last_sync: 2026-06-07
+sync_hash: 0d9e3ade
 ---
-
-
 ## 使用低于2.8.0版本的LayaAir开发快游戏
 
 ![](./img/f7f9c0ca.png)

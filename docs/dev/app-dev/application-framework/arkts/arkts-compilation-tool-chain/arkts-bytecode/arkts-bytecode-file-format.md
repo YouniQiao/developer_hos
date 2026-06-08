@@ -2,9 +2,10 @@
 title: "方舟字节码文件格式"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/arkts-bytecode-file-format
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/arkts-bytecode-file-format
+last_sync: 2026-06-07
+sync_hash: dbac54c6
 ---
-
-
 本文详细介绍了方舟字节码文件的格式，旨在帮助开发者深入理解字节码文件的组成结构，以指导字节码的分析和修改。
 
 ## 约束

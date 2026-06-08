@@ -3,8 +3,11 @@ title: "@cross-device-app-dev/font-size-unit"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_font-size-unit
 format: md
+upstream_id: tools/coding-debug/ide_font-size-unit
+last_sync: 2026-06-07
+sync_hash: 6a3e0402
+upstream_hash: e5b5769a2a2a
 ---
-
 
 # @cross-device-app-dev/font-size-unit
 

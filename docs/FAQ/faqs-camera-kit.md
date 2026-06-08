@@ -2,9 +2,10 @@
 format: md
 title: "相机开发（Camera）"
 original_url: /docs/FAQ/faqs-camera-kit
+upstream_id: FAQ/faqs-camera-kit
+last_sync: 2026-06-07
+sync_hash: d2b38fb1
 ---
-
-
 * **[使用XComponent组件显示相机的预览输出流时，如何获取相机的帧数据](/docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-1)**
 * **[如何获取前置摄像头的预览图像](/docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-2)**
 * **[如何设置相机焦距](/docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-3)**

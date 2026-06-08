@@ -2,8 +2,11 @@
 format: md
 title: "如何配置oh-package.json5动态依赖"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-48
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-48
+last_sync: 2026-06-07
+sync_hash: 60bcbc14
+upstream_hash: be335dc3a491
 ---
-
 
 oh-package.json5文件中：
 
@@ -37,4 +40,4 @@ oh-package.json5文件中：
 
 **参考链接**
 
-[oh-package.json5文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-oh-package-json5)，[添加依赖项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-dependencies)
+[oh-package.json5文件](/docs/tools/ohpm/ide-oh-package-json5)，[添加依赖项](/docs/tools/coding-debug/ide-hvigor-dependencies)

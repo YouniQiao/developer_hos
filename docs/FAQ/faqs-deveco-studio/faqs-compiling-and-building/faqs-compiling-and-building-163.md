@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“The permission under requestPermissions must be a value that is predefined within the SDK or a custom one that you have included under definePermissions.”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-163
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-163
+last_sync: 2026-06-07
+sync_hash: 35838ecf
 ---
-
-
 **错误描述**
 
 requestPermissions下的权限必须是SDK中预定义的值，或在definePermissions中定义的自定义值。

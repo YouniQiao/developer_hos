@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "添加滤镜效果"
 original_url: /docs/dev/app-dev/graphics/spatial-recon-kit-guide/spatial-recon-filter
 format: md
+upstream_id: dev/app-dev/graphics/spatial-recon-kit-guide/spatial-recon-filter
+last_sync: 2026-06-07
+sync_hash: edc5225e
 ---
-
-
 为3DGS模型渲染画面添加风格化滤镜，包括：复古滤镜、漫画风格、黑白bit效果、颜色编辑。
 
 ## 接口说明

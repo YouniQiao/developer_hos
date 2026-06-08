@@ -2,9 +2,10 @@
 title: "如何在Native侧获取APP版本信息"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-24
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-24
+last_sync: 2026-06-07
+sync_hash: d07eac14
 ---
-
-
 Native侧目前没有获取APP版本信息的接口。如需获取APP版本信息，可以在ArkTS侧获取，然后传递到Native侧。
 
 通过@kit.AbilityKit模块中的bundleManager查询bundleInfo。bundleInfo包含App版本号和版本名。

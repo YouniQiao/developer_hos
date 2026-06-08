@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "收银台报错“服务暂不可用，请稍后重试”？"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-11
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-11
+last_sync: 2026-06-07
+sync_hash: e5e4079e
 ---
-
-
 1. 检查网络是否正常。
 2. 检查[orderStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-model#orderstr)入参格式、字段值（如merc\_no、app\_id、auth\_id等）是否正确，auth\_id是否归属于merc\_no(即公私钥对以及商户是否匹配）。
 3. 应用是否在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)上面注册了，本地使用的调试签名证书是否是从[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)上面下载的。

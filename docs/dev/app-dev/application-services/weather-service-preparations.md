@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-preparations
 format: md
+upstream_id: dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-preparations
+last_sync: 2026-06-07
+sync_hash: 3629445c
 ---
-
-
 在阅读本章节前，请先参考“[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)”完成基本准备工作及指纹配置，再继续进行以下开发活动。
 
 ## 开通天气服务

@@ -3,8 +3,10 @@ title: "查询商品库"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-dpa1-0000001338383017
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-dpa1-0000001338383017
+last_sync: 2026-06-07
+sync_hash: a929d191
 ---
-
 # 查询商品库
 
 您通过本接口获取查询商品库。

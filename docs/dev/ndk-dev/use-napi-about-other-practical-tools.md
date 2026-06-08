@@ -2,9 +2,10 @@
 title: "使用Node-API其他实用接口"
 original_url: /docs/dev/ndk-dev/use-napi-about-other-practical-tools
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-other-practical-tools
+last_sync: 2026-06-07
+sync_hash: 203aa578
 ---
-
-
 ## 简介
 
 Node-API接口提供了一些实用接口，可以帮助开发者更好地进行Node-API相关开发。

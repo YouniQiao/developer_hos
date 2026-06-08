@@ -2,9 +2,10 @@
 format: md
 title: "ArkTS侧如何释放绑定的C++侧对象"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-51
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-51
+last_sync: 2026-06-07
+sync_hash: baad0be6
 ---
-
-
 **问题现象**
 
 在Java中，垃圾回收机制可以自动回收对象。对于ArkTS对象内部创建并绑定的C++对象，可以通过类似Java的`finalize`方法实现自动内存回收，而无需开发者主动调用。

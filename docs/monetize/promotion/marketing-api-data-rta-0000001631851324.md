@@ -3,8 +3,10 @@ title: "通过RTA实验ID查询"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-data-rta-0000001631851324
 format: md
+upstream_id: monetize/promotion/marketing-api-data-rta-0000001631851324
+last_sync: 2026-06-07
+sync_hash: 383574ce
 ---
-
 # 通过RTA实验ID查询
 
 您通过本接口通过RTA实验ID查询报表。

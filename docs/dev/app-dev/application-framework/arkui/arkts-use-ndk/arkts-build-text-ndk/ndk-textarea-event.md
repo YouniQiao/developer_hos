@@ -2,9 +2,10 @@
 title: "添加输入框文本事件监听"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-build-text-ndk/ndk-textarea-event
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-build-text-ndk/ndk-textarea-event
+last_sync: 2026-06-07
+sync_hash: cdeabff3
 ---
-
-
 输入框包含多种交互行为，开发者可注册事件监听并获取状态。以下以多行文本输入框为例进行说明，单行文本输入框添加文本事件监听的步骤与此类似。
 
 要实现实时搜索功能，可注册[NODE\_TEXT\_AREA\_ON\_CHANGE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodeeventtype)事件，输入框文本发生变化时会收到通知，并能获取当前文本内容。

@@ -3,8 +3,11 @@ title: "@performance/hp-arkui-reduce-pangesture-distance"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hp-arkui-reduce-ges-distance
 format: md
+upstream_id: tools/coding-debug/ide-hp-arkui-reduce-ges-distance
+last_sync: 2026-06-07
+sync_hash: 843cd1a7
+upstream_hash: 725591a35b55
 ---
-
 
 # @performance/hp-arkui-reduce-pangesture-distance
 

@@ -1,11 +1,13 @@
 ---
-
 title: "创建HarmonyOS应用工程"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-create-appproject
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-create-appproject
+last_sync: 2026-06-07
+sync_hash: 0a31efca
+upstream_hash: e6c2f407be16
 ---
-
 
 # 创建HarmonyOS应用工程
 

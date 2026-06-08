@@ -2,9 +2,10 @@
 title: "访问应用文件"
 original_url: /docs/dev/atomic-dev/atomic-file-management-service/atomic-app-file-access
 format: md
+upstream_id: dev/atomic-dev/atomic-file-management-service/atomic-app-file-access
+last_sync: 2026-06-07
+sync_hash: 0933b693
 ---
-
-
 应用需要对应用文件目录下的应用文件进行查看、创建、读写、删除、复制、获取属性等访问操作，下文介绍具体方法。
 
 ## 接口说明

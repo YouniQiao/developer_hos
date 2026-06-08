@@ -2,9 +2,10 @@
 title: "如何修改状态栏字体颜色"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-118
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-118
+last_sync: 2026-06-07
+sync_hash: 346888dc
 ---
-
-
 [setWindowSystemBarProperties](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowsystembarproperties9)可以用于设置窗口内导航栏和状态栏的属性，包括状态栏背景颜色和状态栏文字颜色等。
 
 在EntryAbility.ets的onWindowStageCreate方法中设置WindowStage的AppStorage。参考代码如下：

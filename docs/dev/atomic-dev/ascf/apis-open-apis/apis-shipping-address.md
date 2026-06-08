@@ -2,9 +2,10 @@
 title: "收货地址"
 original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-shipping-address
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-open-apis/apis-shipping-address
+last_sync: 2026-06-07
+sync_hash: 9d81945d
 ---
-
-
 ## has.chooseAddress
 
 has.chooseAddress(Object object)

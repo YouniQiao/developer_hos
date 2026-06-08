@@ -3,10 +3,10 @@ title: "接入调试"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_quickapp_commission-0000001411145018
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_quickapp_commission-0000001411145018
+last_sync: 2026-06-07
+sync_hash: 34830a3e
 ---
-
-
-
 在接入AGD Pro服务调试过程中，请根据需要配置对应屏蔽规则，以及基于测试状态的展示位进行调试。
 
 #### 接入测试

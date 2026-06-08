@@ -2,9 +2,10 @@
 title: "硬件兼容性"
 original_url: /docs/dev/ndk-dev/hardware-compatibility
 format: md
+upstream_id: dev/ndk-dev/hardware-compatibility
+last_sync: 2026-06-07
+sync_hash: 4e9709b3
 ---
-
-
 * **[硬件兼容性简介](/docs/dev/ndk-dev/hw-guide)**
 * **[HarmonyOS ABI](/docs/dev/ndk-dev/ohos-abi)**
 * **[CPU特性](/docs/dev/ndk-dev/cpu-features)**

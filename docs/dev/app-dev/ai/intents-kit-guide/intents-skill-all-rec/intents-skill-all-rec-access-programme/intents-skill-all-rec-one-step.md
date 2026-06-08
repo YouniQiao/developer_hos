@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "功能一步达场景方案"
 original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-access-programme/intents-skill-all-rec-one-step
 format: md
+upstream_id: dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-access-programme/intents-skill-all-rec-one-step
+last_sync: 2026-06-07
+sync_hash: a72b1840
 ---
-
-
 ## 方案概述
 
 从5.1.0(18)开始，新增功能一步达接入方案，可通过该方案实现快速打开应用内功能页面。若应用中有“查找路线”和“扫一扫”两个功能需要注册到意图框架中，让用户通过小艺快速打开对应功能页面，比如“帮我打开XXX的查找路线”、“帮我打开XXX的扫一扫”或“帮我打开XXX的扫码”，则需要在意图声明文件中声明JumpFunctionPage意图，以及上述两个功能，并实现对应意图调用。

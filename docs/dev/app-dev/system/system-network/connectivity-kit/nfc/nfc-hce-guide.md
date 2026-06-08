@@ -2,9 +2,10 @@
 title: "HCE卡模拟开发指南"
 original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/nfc/nfc-hce-guide
 format: md
+upstream_id: dev/app-dev/system/system-network/connectivity-kit/nfc/nfc-hce-guide
+last_sync: 2026-06-07
+sync_hash: c5ab25db
 ---
-
-
 ## 简介
 
 近场通信(Near Field Communication，NFC)是一种短距高频的无线电技术，在13.56MHz频率运行，通信距离一般在10厘米距离内。HCE(Host Card Emulation)，称为基于主机的卡模拟，表示不依赖安全单元芯片，电子设备上的应用程序模拟NFC卡片和NFC读卡器通信，实现NFC刷卡业务。从API version 22开始支持OFFHOST(Off Host Card Emulation)，称为基于安全单元的卡模拟，卡由设备中的一个单独芯片(称为安全单元)进行模拟。无线运营商部分SIM卡也包含安全单元。

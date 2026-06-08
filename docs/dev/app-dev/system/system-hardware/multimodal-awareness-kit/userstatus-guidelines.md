@@ -2,9 +2,10 @@
 title: "用户状态感知开发指导"
 original_url: /docs/dev/app-dev/system/system-hardware/multimodal-awareness-kit/userstatus-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-hardware/multimodal-awareness-kit/userstatus-guidelines
+last_sync: 2026-06-07
+sync_hash: 320f09a8
 ---
-
-
 UserStatus（用户状态感知）模块提供用户感知能力，可以感知到操作者特定状态，例如：检测用户年龄组。
 
 详细的接口介绍请参考[@ohos.multimodalAwareness.userStatus (用户状态感知)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-awareness-userstatus)。

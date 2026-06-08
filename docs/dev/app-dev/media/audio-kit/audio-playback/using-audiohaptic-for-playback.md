@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用AudioHaptic开发音振协同播放功能(ArkTs)"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-playback/using-audiohaptic-for-playback
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-playback/using-audiohaptic-for-playback
+last_sync: 2026-06-07
+sync_hash: ff71f08b
 ---
-
-
 AudioHaptic提供音频与振动协同播放及管理的方法，适用于需要在播放音频时同步发起振动的场景，如来电铃声随振、键盘按键反馈、消息通知反馈等。
 
 ## 开发指导

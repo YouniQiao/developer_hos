@@ -2,9 +2,10 @@
 title: "首次提交数字商品或新增数字商品类型"
 original_url: /docs/dev/game-dev/games-center-first-digital-products-for-review-0000002286076732
 format: md
+upstream_id: dev/game-dev/games-center-first-digital-products-for-review-0000002286076732
+last_sync: 2026-06-07
+sync_hash: 614df8ff
 ---
-
-
 1. 点击[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要提交商品的应用。
 3. 在“分发”页签下的左侧导航栏中，选择“应用上架 &gt; 版本信息”。

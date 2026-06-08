@@ -3,8 +3,10 @@ title: "查询创意关联信息列表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-creative-associated1-0000001128438072
 format: md
+upstream_id: monetize/promotion/marketing-api-creative-associated1-0000001128438072
+last_sync: 2026-06-07
+sync_hash: 7b0bec89
 ---
-
 # 查询创意关联信息列表
 
 您通过本接口查询创意关联数据，查询结果按照创建的时间倒序排列。

@@ -2,9 +2,10 @@
 title: "离开房间"
 original_url: /docs/dev/game-dev/gameobe-leaveroom-csharp-0000002361670552
 format: md
+upstream_id: dev/game-dev/gameobe-leaveroom-csharp-0000002361670552
+last_sync: 2026-06-07
+sync_hash: 4877f6cf
 ---
-
-
 进入房间后，游戏未开始前，房间内玩家均可离开房间。
 
 ## 前提条件

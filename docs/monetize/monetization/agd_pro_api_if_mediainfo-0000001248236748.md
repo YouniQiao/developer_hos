@@ -3,10 +3,10 @@ title: "MediaInfo"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_api_if_mediainfo-0000001248236748
 format: md
+upstream_id: monetize/monetization/agd_pro_api_if_mediainfo-0000001248236748
+last_sync: 2026-06-07
+sync_hash: 8a687de8
 ---
-
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | mediaPkgName | M | `String` | 媒体包名。 |

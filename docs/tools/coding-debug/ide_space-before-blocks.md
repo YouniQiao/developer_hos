@@ -3,9 +3,10 @@ title: "@hw-stylistic/space-before-blocks"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_space-before-blocks
 format: md
+upstream_id: tools/coding-debug/ide_space-before-blocks
+last_sync: 2026-06-07
+sync_hash: 4a797b95
 ---
-
-
 # @hw-stylistic/space-before-blocks
 
 强制在"&#123;"之前加空格。该规则仅检查.ets文件类型。
@@ -87,4 +88,4 @@ struct Index{
 "plugin:@hw-stylistic/all"
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](/docs/tools/coding-debug/ide-code-linter)。

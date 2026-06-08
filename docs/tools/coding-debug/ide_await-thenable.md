@@ -3,9 +3,10 @@ title: "@typescript-eslint/await-thenable"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_await-thenable
 format: md
+upstream_id: tools/coding-debug/ide_await-thenable
+last_sync: 2026-06-07
+sync_hash: 93a3968e
 ---
-
-
 # @typescript-eslint/await-thenable
 
 不允许对不是“Thenable”对象的值使用await关键字（“Thenable”表示某个对象拥有“then”方法，比如Promise）。

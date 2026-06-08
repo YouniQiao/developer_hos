@@ -2,9 +2,10 @@
 title: "HXML"
 original_url: /docs/dev/atomic-dev/ascf/apis/apis-hxml
 format: md
+upstream_id: dev/atomic-dev/ascf/apis/apis-hxml
+last_sync: 2026-06-07
+sync_hash: ead7256b
 ---
-
-
 ## has.createSelectorQuery
 
 has.createSelectorQuery(): SelectorQuery

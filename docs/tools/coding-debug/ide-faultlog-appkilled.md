@@ -3,9 +3,10 @@ title: "查看App Killed（应用终止）日志"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-faultlog-appkilled
 format: md
+upstream_id: tools/coding-debug/ide-faultlog-appkilled
+last_sync: 2026-06-07
+sync_hash: 79b09c3b
 ---
-
-
 # 查看App Killed（应用终止）日志
 
 从DevEco Studio 6.0.2 Beta1版本开始，提供<strong>AppKilled</strong>窗口，用于查看设备上应用终止的相关信息，包括应用异常退出的时间、进程名、是否前台应用、异常退出原因，点击<strong>recordId</strong>可以查看详细的FaultLog信息。支持按设备、应用和异常原因对信息进行过滤。

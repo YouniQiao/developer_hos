@@ -3,8 +3,10 @@ title: "概述"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x50000/x50104/x50104-overview
 format: md
+upstream_id: distribute/app-dist/app-market/x50000/x50104/x50104-overview
+last_sync: 2026-06-07
+sync_hash: b32b6df2
 ---
-
 # 应用审核指南
 
 ## 概述
@@ -953,7 +955,7 @@ HarmonyOS 5.0及以上已开放系统权限弹窗编辑功能，请参考[reason
 
 游戏需注意，根据国家新闻出版署《关于开展网络游戏防沉迷实名认证系统接口对接工作的通知》，规定各游戏出版运营企业均须完成国家新闻出版署实名认证系统的接入。请您根据接入文档正确接入防沉迷。相关文档请参考：[游戏服务-防沉迷](https://developer.huawei.com/consumer/cn/doc/development/HMSCore-Guides/game-anti-indulgence-0000001050123479)、[防沉迷专题](https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/faq-anti-indulgence-0000001050164364)。
 
-请先完成版署网络游戏防沉迷实名认证系统与华为平台的绑定，并在AGC提交BizID且审核通过，具体提交路径为：AGC后台-运营-版署实名认证申请。您可参考指导文档：[版署实名认证申请](https://developer.huawei.com/consumer/cn/doc/distribution/app/game-center-identification-applyfor-0000001193982458)。
+请先完成版署网络游戏防沉迷实名认证系统与华为平台的绑定，并在AGC提交BizID且审核通过，具体提交路径为：AGC后台-运营-版署实名认证申请。您可参考指导文档：[版署实名认证申请](/docs/distribute/app-dist/game-center/game-center-access-0000001239622337/game-center-identification-applyfor-0000001193982458)。
 
 示例：
 

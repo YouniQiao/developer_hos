@@ -2,8 +2,11 @@
 title: "窗口"
 original_url: /docs/dev/atomic-dev/ascf/apis-page/apis-window
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-page/apis-window
+last_sync: 2026-06-07
+sync_hash: f2c518b7
+upstream_hash: 6ff9832008b2
 ---
-
 
 ## has.onWindowResize
 

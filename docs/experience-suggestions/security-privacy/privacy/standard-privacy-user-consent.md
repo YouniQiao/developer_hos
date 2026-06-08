@@ -2,9 +2,10 @@
 title: "选择和同意"
 original_url: /docs/experience-suggestions/security-privacy/privacy/standard-privacy-user-consent
 format: md
+upstream_id: experience-suggestions/security-privacy/privacy/standard-privacy-user-consent
+last_sync: 2026-06-07
+sync_hash: 76c4cef5
 ---
-
-
 # 选择和同意
 
 |  |  |

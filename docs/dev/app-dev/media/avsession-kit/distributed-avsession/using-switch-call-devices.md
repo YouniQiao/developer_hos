@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用组件切换通话设备"
 original_url: /docs/dev/app-dev/media/avsession-kit/distributed-avsession/using-switch-call-devices
 format: md
+upstream_id: dev/app-dev/media/avsession-kit/distributed-avsession/using-switch-call-devices
+last_sync: 2026-06-07
+sync_hash: 124021c7
 ---
-
-
 ## 切换通话输出设备
 
 本文主要介绍AVCastPicker组件接入，实现通话设备切换功能。相关参数可参考[@ohos.multimedia.avCastPicker(投播组件)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-multimedia-avcastpicker)和[@ohos.multimedia.avCastPickerParam（投播组件参数）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-avcastpickerparam)。如果希望实现音频输出设备路由切换的效果，请参考[实现音频输出设备路由切换](/docs/dev/app-dev/media/audio-kit/audio-device/audio-output-device-switcher)。

@@ -3,9 +3,10 @@ title: "游戏内测（APK）"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-test-0000001239342331/game-center-early-access-0000001194302390
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-test-0000001239342331/game-center-early-access-0000001194302390
+last_sync: 2026-06-07
+sync_hash: 0ada7257
 ---
-
-
 # 游戏内测（APK）
 
 游戏内测是您验证游戏对华为手机适配情况，获取游戏数据情况来改进游戏的关键环节，同时内测数据也是用来确定游戏评分评级与首发推广资源的重要参考依据。因此强烈建议您对游戏进行内测。内测流程如下：
@@ -17,7 +18,7 @@ format: md
 * 您已成功[创建游戏](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-createapp-0000001146718717`)，且软件包类型为“APK(Android应用)”，支持设备为“手机”。
 * 您已[配置应用基本信息](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-releaseapkrpk-0000001106463276#section27070410361`)，且游戏分类不包括“斗地主”、“捕鱼”、“纸牌 ”和“麻将”。
 * 为了提升内测包的通过率，您需要提前自检游戏接入参数、游戏登录体验、游戏支付体验等。
-* （可选）您可以[开通社区论坛](`https://developer.huawei.com/consumer/cn/doc/app/game-center-community-operation-0000001194305462`)，用于宣传游戏内容，聚集核心用户。
+* （可选）您可以[开通社区论坛](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)，用于宣传游戏内容，聚集核心用户。
 
 ## 提交内测申请
 

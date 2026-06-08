@@ -3,9 +3,10 @@ title: "规则（Rules）配置"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-agent-rules
 format: md
+upstream_id: tools/ai-assist/ide-agent-rules
+last_sync: 2026-06-07
+sync_hash: 696a4146
 ---
-
-
 # 规则（Rules）配置
 
 从DevEco Studio 6.0.2 Beta1开始，CodeGenie支持用户配置规则（Rules）。在自定义智能体模型下，智能问答时可生成更加符合Rules规范的代码。规则包括全局级别规则（Global Rules）和工程级别规则（Project Rules）。

@@ -2,9 +2,10 @@
 title: "使用Web组件的智能分词能力"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-data-detector
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-process-page-content/web-data-detector
+last_sync: 2026-06-07
+sync_hash: 0a9c9b47
 ---
-
-
 从API version 20开始，ArkWeb提供了H5页面内的文本分词识别功能，支持文本分词高亮、分词长按预览及文本选择菜单扩展等。这些功能需将[enableDataDetector](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-attributes#enabledatadetector20)设置为true，默认为false。
 
 此功能主要用于单页H5页面内容的实体识别，能够自动识别页面中的电话号码、网址等信息，并提供便捷的交互操作。启用此功能后，用户可以直接在页面中与识别的实体交互，如点击电话号码进行呼叫，点击地址在地图中查看，从而提升用户体验。

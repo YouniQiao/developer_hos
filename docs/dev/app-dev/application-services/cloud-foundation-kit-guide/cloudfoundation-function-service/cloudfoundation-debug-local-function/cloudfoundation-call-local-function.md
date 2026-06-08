@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "调用本地云函数"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-debug-local-function/cloudfoundation-call-local-function
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-debug-local-function/cloudfoundation-call-local-function
+last_sync: 2026-06-07
+sync_hash: ee1a40e1
 ---
-
-
 ## 约束与限制
 
 支持Phone、Tablet、Wearable、TV设备。并且从6.1.0(23)版本开始，新增支持PC/2in1设备。

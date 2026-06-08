@@ -3,9 +3,10 @@ title: "使用日志记录"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-log
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-log
+last_sync: 2026-06-07
+sync_hash: 2d57b403
 ---
-
-
 # 使用日志记录
 
 日志是构建工具主要的输出显示部分，如果日志过于冗长，真正的告警和异常将更容易被隐藏；而另一方面，当出现问题时，你也需要相关的信息来定位问题。Hvigor定义了四种日志级别，如下所示。

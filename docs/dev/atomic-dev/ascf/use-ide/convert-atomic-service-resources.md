@@ -2,9 +2,10 @@
 title: "导入小程序资源"
 original_url: /docs/dev/atomic-dev/ascf/use-ide/convert-atomic-service-resources
 format: md
+upstream_id: dev/atomic-dev/ascf/use-ide/convert-atomic-service-resources
+last_sync: 2026-06-07
+sync_hash: 9c1011a3
 ---
-
-
 开发者可以通过导入小程序的资源，来构建元服务。
 
 1. 在DevEco Studio顶部菜单栏中选择“**Tools**&gt; **ASCF Devtools** &gt; **ASCF Converter**”。

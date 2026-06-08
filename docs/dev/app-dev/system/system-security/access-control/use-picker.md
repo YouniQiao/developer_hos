@@ -2,9 +2,10 @@
 title: "使用系统Picker"
 original_url: /docs/dev/app-dev/system/system-security/access-control/use-picker
 format: md
+upstream_id: dev/app-dev/system/system-security/access-control/use-picker
+last_sync: 2026-06-07
+sync_hash: e5cfae8e
 ---
-
-
 应用拉起系统Picker组件（文件选择器、照片选择器、联系人选择器等），由用户在Picker上选择对应的文件、照片、联系人等资源，应用即可获取到Picker的返回结果。
 
 系统Picker由系统独立进程实现。

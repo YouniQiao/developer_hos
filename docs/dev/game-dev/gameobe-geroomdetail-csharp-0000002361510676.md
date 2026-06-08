@@ -2,9 +2,10 @@
 title: "获取房间最新信息"
 original_url: /docs/dev/game-dev/gameobe-geroomdetail-csharp-0000002361510676
 format: md
+upstream_id: dev/game-dev/gameobe-geroomdetail-csharp-0000002361510676
+last_sync: 2026-06-07
+sync_hash: d7b633cd
 ---
-
-
 本章将指导您实现获取房间最新信息的功能。
 
 ## 前提条件

@@ -2,9 +2,10 @@
 title: "屏幕管理开发术语"
 original_url: /docs/dev/app-dev/application-framework/arkui/display-manager/display-terminology
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/display-manager/display-terminology
+last_sync: 2026-06-07
+sync_hash: 332dbe2a
 ---
-
-
 屏幕管理开发主要围绕逻辑屏和物理屏两个核心概念进行。
 
 逻辑屏不能独立于物理屏存在，每一块逻辑屏都会映射到物理屏上。

@@ -2,9 +2,10 @@
 format: md
 title: "ohpm publish在本地Git bash环境下一直报错“the content of private key in the key_path error”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-command-line-tool/faqs-command-line-tool-10
+upstream_id: FAQ/faqs-deveco-studio/faqs-command-line-tool/faqs-command-line-tool-10
+last_sync: 2026-06-07
+sync_hash: e1ef24be
 ---
-
-
 **问题描述**
 
 在本地Git Bash环境下使用ohpm publish命令时，一直报错“the content of private key in the key\_path error”。但在DevEco Studio中不会出现此问题，DevEco Studio会提示输入密码。当前使用的ohpm版本为1.5，环境变量已配置。

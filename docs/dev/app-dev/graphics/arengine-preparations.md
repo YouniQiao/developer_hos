@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: /docs/dev/app-dev/graphics/arengine-preparations
 format: md
+upstream_id: dev/app-dev/graphics/arengine-preparations
+last_sync: 2026-06-07
+sync_hash: 07005cbf
 ---
-
-
 ## 硬件要求
 
 开发者可根据实际的开发语言，选择对应接口判断当前设备是否支持AR Engine。接口的调用参考如下方式：

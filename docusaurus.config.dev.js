@@ -193,6 +193,7 @@ const config = {
             title: 'About',
             items: [
               { label: '更新记录与计划', to: '/update' },
+              { label: '内容同步仪表盘', to: '/dashboard' },
             ],
           },
           {

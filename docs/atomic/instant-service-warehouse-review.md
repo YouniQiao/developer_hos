@@ -2,9 +2,10 @@
 title: "元服务货仓审核规范"
 original_url: /docs/dev/atomic-dev/instant-service/instant-service-warehouse-review
 format: md
+upstream_id: dev/atomic-dev/instant-service/instant-service-warehouse-review
+last_sync: 2026-06-07
+sync_hash: 9ca8cec5
 ---
-
-
 ## 商品信息
 
 1. 商品信息可包含商品品牌、商品品名、基本属性（如材质/功能/特征等）和规格参数（如型号/颜色/尺寸/规格/用途/货号等）等。

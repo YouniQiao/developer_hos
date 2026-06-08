@@ -2,9 +2,10 @@
 format: md
 title: "JDK版本不匹配导致编译失败"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-14
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-14
+last_sync: 2026-06-07
+sync_hash: c419cb79
 ---
-
-
 **问题现象**
 
 通过命令行方式构建HarmonyOS应用或元服务过程中出现构建失败，现象如下图所示。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Contacts Kit简介"
 original_url: /docs/dev/app-dev/application-services/contacts-kit/contacts-intro
 format: md
+upstream_id: dev/app-dev/application-services/contacts-kit/contacts-intro
+last_sync: 2026-06-07
+sync_hash: 74f5e2cc
 ---
-
-
 Contacts Kit（联系人服务）可以帮助开发者轻松实现联系人的增删改查等功能。该Kit提供了一系列API，可以让开发者在应用中快速集成联系人管理功能。
 
 详情请参考[@ohos.contact (联系人)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-contact)文档。
@@ -112,4 +113,4 @@ struct Contact {
 
 本Kit支持模拟器。
 
-模拟器与真机存在通用差异，详情请参见“[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification#section1227613205203)”。
+模拟器与真机存在通用差异，详情请参见“[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification#section1227613205203)”。

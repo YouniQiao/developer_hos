@@ -3,9 +3,10 @@ title: "关联账号组"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-associated-group-0000002521616574
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-associated-group-0000002521616574
+last_sync: 2026-06-07
+sync_hash: 75f5938f
 ---
-
-
 # 关联账号组
 
 开发者及其关联公司在使用华为数字商品及联运服务时，需关联账号组。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "签约代扣场景"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-password-free-pay/payment-withhold-process
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-password-free-pay/payment-withhold-process
+last_sync: 2026-06-07
+sync_hash: 86d2499d
 ---
-
-
 ## 场景介绍
 
 从4.1.0(11)版本开始，新增支持签约代扣场景。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "加解密(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-encryption-decryption/huks-encryption-decryption-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-encryption-decryption/huks-encryption-decryption-ndk
+last_sync: 2026-06-07
+sync_hash: 4c8e6606
 ---
-
-
 以AES256、RSA1024、SM2和DES64为例，完成加解密。具体的场景介绍及支持的算法规格，请参考[加解密支持的算法](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-encryption-decryption/huks-encryption-decryption-overview#支持的算法)。
 
 ## 在CMake脚本中链接相关动态库

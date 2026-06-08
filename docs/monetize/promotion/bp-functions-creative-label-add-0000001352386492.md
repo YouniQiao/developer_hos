@@ -3,8 +3,10 @@ title: "添加创意标签"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-creative-label-add-0000001352386492
 format: md
+upstream_id: monetize/promotion/bp-functions-creative-label-add-0000001352386492
+last_sync: 2026-06-07
+sync_hash: e5732f8a
 ---
-
 # 添加创意标签
 
 1. 创建或修改推广任务时，若该任务支持推广创意功能，勾选“编辑辅助创意”。

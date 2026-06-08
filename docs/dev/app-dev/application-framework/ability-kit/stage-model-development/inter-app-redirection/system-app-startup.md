@@ -2,9 +2,10 @@
 title: "拉起系统应用"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/system-app-startup
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/system-app-startup
+last_sync: 2026-06-07
+sync_hash: c6b4f978
 ---
-
-
 本章节介绍拉起系统应用的方式，以及支持跳转系统应用的能力清单。
 
 ## 拉起系统应用的方式

@@ -2,9 +2,10 @@
 title: "tabs开发指导"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-container-components/ui-js-component-tabs
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-container-components/ui-js-component-tabs
+last_sync: 2026-06-07
+sync_hash: c0b468f5
 ---
-
-
 tabs是一种常见的界面导航结构。通过页签容器，用户可以快捷地访问应用的不同模块。具体用法请参考[tabs API](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-container-tabs)。
 
 ## 创建tabs

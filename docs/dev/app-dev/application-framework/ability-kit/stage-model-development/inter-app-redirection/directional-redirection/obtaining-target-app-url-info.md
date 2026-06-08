@@ -2,9 +2,10 @@
 title: "获取目标应用的URL信息"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/obtaining-target-app-url-info
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/obtaining-target-app-url-info
+last_sync: 2026-06-07
+sync_hash: cb8c9621
 ---
-
-
 ## 场景介绍
 
 开发者在使用[UIAbilityContext.openLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#openlink12)接口拉起目标应用时，需要传入目标应用的URL信息。本章节主要介绍如何获取目标应用的URL信息。

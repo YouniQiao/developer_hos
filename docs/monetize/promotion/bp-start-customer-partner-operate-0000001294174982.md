@@ -3,8 +3,10 @@ title: "投放操作账户"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-start-customer-partner-operate-0000001294174982
 format: md
+upstream_id: monetize/promotion/bp-start-customer-partner-operate-0000001294174982
+last_sync: 2026-06-07
+sync_hash: 77860661
 ---
-
 # 投放操作账户
 
 ## 前提条件

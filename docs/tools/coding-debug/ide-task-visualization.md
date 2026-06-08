@@ -3,9 +3,10 @@ title: "任务可视化与执行"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-task-visualization
 format: md
+upstream_id: tools/coding-debug/ide-task-visualization
+last_sync: 2026-06-07
+sync_hash: 9dc3899d
 ---
-
-
 # 任务可视化与执行
 
 从DevEco Studio 6.1.0 Beta1版本开始，Hvigor提供任务可视化窗口，用于展示工程和各个模块常用的构建任务，便于快速执行。

@@ -2,9 +2,10 @@
 title: "多网状态监听"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide/networkboost-netmultipath-statechangecallback
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide/networkboost-netmultipath-statechangecallback
+last_sync: 2026-06-07
+sync_hash: 21b3cc10
 ---
-
-
 ## 场景介绍
 
 应用通过监听多网络状态的变化，感知可用网络的变化，从而选择在多网络上传输数据的策略。

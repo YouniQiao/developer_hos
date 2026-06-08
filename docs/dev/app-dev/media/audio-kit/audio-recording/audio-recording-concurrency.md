@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "录音并发策略说明"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-recording/audio-recording-concurrency
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-recording/audio-recording-concurrency
+last_sync: 2026-06-07
+sync_hash: 2b7d439d
 ---
-
-
 音频输入的音频源通常是由内置麦克风、外接设备或远端分布式设备的采集的音频数据，但也可能是其他应用发送到系统以供播放的音频数据。根据音频源的不同，音频输入可分为两类：内录型音频输入和外录型音频输入。
 
 * 内录型音频输入：是指以系统内部音频数据作为音频源的输入类型，简称为内录，对应的流称为内录流。

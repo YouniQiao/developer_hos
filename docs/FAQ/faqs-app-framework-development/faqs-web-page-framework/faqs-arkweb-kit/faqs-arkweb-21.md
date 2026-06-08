@@ -2,8 +2,11 @@
 format: md
 title: "Webview的runJavaScript和runJavaScriptExt有什么区别，在页面生命周期（如onPageShow、onPageEnd）的什么时候进行调用"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-21
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-21
+last_sync: 2026-06-07
+sync_hash: 532228be
+upstream_hash: 52c9e5875715
 ---
-
 
 二者均可异步执行JavaScript脚本，并通过回调或Promise返回执行结果。
 

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发流程"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-devprocess
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-devprocess
+last_sync: 2026-06-07
+sync_hash: 11db39d1
 ---
-
-
 开发预加载，总体流程如下：
 
 ![](./img/f24a6418.png)

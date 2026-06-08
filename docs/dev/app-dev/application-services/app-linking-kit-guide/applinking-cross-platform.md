@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通过聚合链接按指定方式跳转至应用"
 original_url: /docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-cross-platform
 format: md
+upstream_id: dev/app-dev/application-services/app-linking-kit-guide/applinking-cross-platform
+last_sync: 2026-06-07
+sync_hash: f698afaa
 ---
-
-
 ## 场景介绍
 
 从6.0.0(20)版本开始，新增支持聚合链接能力。

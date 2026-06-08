@@ -2,8 +2,11 @@
 title: "进程模型"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/process-model-stage
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/process-model-stage
+last_sync: 2026-06-07
+sync_hash: 4895ba77
+upstream_hash: 6685b07a14c1
 ---
-
 
 ## 概述
 

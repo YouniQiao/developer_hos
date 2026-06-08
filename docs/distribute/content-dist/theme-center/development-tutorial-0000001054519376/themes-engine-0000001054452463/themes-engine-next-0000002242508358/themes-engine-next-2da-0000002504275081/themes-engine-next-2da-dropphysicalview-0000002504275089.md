@@ -3,9 +3,10 @@ title: "下落动效&lt;DropPhysicalView&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-dropphysicalview-0000002504275089
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-dropphysicalview-0000002504275089
+last_sync: 2026-06-07
+sync_hash: f9268b9c
 ---
-
-
 # 下落动效&lt;DropPhysicalView&gt;
 
 ## 功能概述

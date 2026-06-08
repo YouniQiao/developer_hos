@@ -2,8 +2,11 @@
 title: "使用MDNS访问局域网服务"
 original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/net-mdns
 format: md
+upstream_id: dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/net-mdns
+last_sync: 2026-06-07
+sync_hash: 43c9ddbe
+upstream_hash: a64a7da53228
 ---
-
 
 ## 简介
 

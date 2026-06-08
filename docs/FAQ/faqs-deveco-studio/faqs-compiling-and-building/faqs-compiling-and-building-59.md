@@ -2,9 +2,10 @@
 format: md
 title: "如何处理include <stddef.h>编译报错"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-59
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-59
+last_sync: 2026-06-07
+sync_hash: 0c24d9e3
 ---
-
-
 **问题现象**
 
 C语言代码中包含\<stddef.h\>时编译报错：

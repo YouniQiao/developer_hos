@@ -2,9 +2,10 @@
 title: "查询商品列表"
 original_url: /docs/dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-list
 format: md
+upstream_id: dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-list
+last_sync: 2026-06-07
+sync_hash: f8d86de0
 ---
-
-
 ## 功能介绍
 
 本接口用于商家系统定期从平台侧拉取元服务下所有商品的完整列表，支持分页查询，适用于数据同步、本地对账及批量管理等场景。

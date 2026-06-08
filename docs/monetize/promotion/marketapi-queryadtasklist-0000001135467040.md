@@ -3,8 +3,10 @@ title: "查询推广任务列表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-queryadtasklist-0000001135467040
 format: md
+upstream_id: monetize/promotion/marketapi-queryadtasklist-0000001135467040
+last_sync: 2026-06-07
+sync_hash: 11fe47d8
 ---
-
 # 查询推广任务列表
 
 ## 功能介绍

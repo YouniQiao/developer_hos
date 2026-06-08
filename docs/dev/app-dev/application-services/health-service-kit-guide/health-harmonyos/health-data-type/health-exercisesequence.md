@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "锻炼记录数据"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence
+last_sync: 2026-06-07
+sync_hash: 977dc2e4
 ---
-
-
 * **[简介](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-exercisesequence-summary)**
 * **[跑步](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-running)**
 * **[健走](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-walking)**

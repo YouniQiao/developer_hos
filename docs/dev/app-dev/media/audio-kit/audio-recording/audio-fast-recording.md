@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "低时延音频录制(C/C++)"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-recording/audio-fast-recording
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-recording/audio-fast-recording
+last_sync: 2026-06-07
+sync_hash: 02c6be85
 ---
-
-
 从API version 10开始支持低时延音频录制。
 
 低时延音频录制是一种通过软硬芯协同设计实现的音频渲染方案。其核心机制是通过减少buffer大小、优化读写数据架构，使该模式下音频录制具有更低的时延。

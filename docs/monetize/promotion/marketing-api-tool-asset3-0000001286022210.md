@@ -3,8 +3,10 @@ title: "编辑素材"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-asset3-0000001286022210
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-asset3-0000001286022210
+last_sync: 2026-06-07
+sync_hash: bb7b6385
 ---
-
 # 编辑素材
 
 您通过本接口可以编辑素材。

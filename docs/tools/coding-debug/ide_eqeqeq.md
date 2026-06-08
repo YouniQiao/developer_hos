@@ -3,9 +3,10 @@ title: "eqeqeq"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_eqeqeq
 format: md
+upstream_id: tools/coding-debug/ide_eqeqeq
+last_sync: 2026-06-07
+sync_hash: db058e8f
 ---
-
-
 # eqeqeq
 
 要求使用===和!==。

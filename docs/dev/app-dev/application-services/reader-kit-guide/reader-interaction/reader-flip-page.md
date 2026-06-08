@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "手动触发翻页"
 original_url: /docs/dev/app-dev/application-services/reader-kit-guide/reader-interaction/reader-flip-page
 format: md
+upstream_id: dev/app-dev/application-services/reader-kit-guide/reader-interaction/reader-flip-page
+last_sync: 2026-06-07
+sync_hash: 48ae7f78
 ---
-
-
 Reader Kit的交互能力已经集成了手指点击和触摸滑动翻页，如果开发者需要增加其它翻页场景时（如：耳机播控翻页），可使用手动翻页接口实现自定义翻页场景。
 
 ## 业务流程

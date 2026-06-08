@@ -2,9 +2,10 @@
 title: "概述"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-name-localization/i18n-display-overview
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/i18n/i18n-name-localization/i18n-display-overview
+last_sync: 2026-06-07
+sync_hash: 784fa6ba
 ---
-
-
 本地化是指将语言、地区、脚本、时区、历法和日期等区域性元素按照本地的语言习惯显示。
 
 可以通过以下方式进行本地化：

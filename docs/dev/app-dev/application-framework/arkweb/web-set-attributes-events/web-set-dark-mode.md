@@ -2,9 +2,10 @@
 title: "Web深色模式适配"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-set-dark-mode
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-set-dark-mode
+last_sync: 2026-06-07
+sync_hash: bf05411f
 ---
-
-
 系统提供浅色和深色的主题模式供用户选择。深色模式在低光环境下能够降低屏幕亮度，减少光线刺激，改善阅读体验。Web组件根据网页样式进行渲染。若网页未适配深色模式，会造成与系统主题的割裂感。网页开发者应考虑用户的主题偏好，适配深色模式，以保证用户体验的一致性。
 
 ArkWeb提供灵活控制Web组件深色模式的能力，支持独立于系统进行设置。此外，ArkWeb还可以强制不同网页适配深色模式，以兼容不同的系统主题。

@@ -2,9 +2,10 @@
 title: "基于NDK构建UI概述"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-ui-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-ui-overview
+last_sync: 2026-06-07
+sync_hash: 81d873f5
 ---
-
-
 ArkUI开发框架提供了一系列[NDK接口](/docs/dev/ndk-dev/ndk-development-overview)，能够在应用中使用C和C++代码构建UI界面，这些接口包括UI组件创建、UI树操作、属性设置和事件监听等。面向通用UI界面开发场景，建议使用ArkTS代码和ArkUI声明式开发框架。然而，如果需要实现以下一个或多个目标，那么ArkUI NDK接口就能派上用场：
 
 * 需要使用UI组件树控制接口来动态创建和挂载UI组件，方便实现自身UI开发框架的系统桥接。

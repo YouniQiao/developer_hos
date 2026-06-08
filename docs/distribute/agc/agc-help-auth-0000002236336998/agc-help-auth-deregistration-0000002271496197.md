@@ -2,9 +2,10 @@
 title: "销户"
 original_url: /docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-deregistration-0000002271496197
 format: md
+upstream_id: distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-deregistration-0000002271496197
+last_sync: 2026-06-07
+sync_hash: f54684a3
 ---
-
-
 #### 前提条件
 
 * 您需要在AppGallery Connect[开通认证服务](/docs/distribute/agc/agc-help-auth-preparation-0000002236496826/agc-help-auth-enable-service-0000002271422405)。

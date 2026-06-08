@@ -3,8 +3,11 @@ title: "单元测试用例生成"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-ut-generation
 format: md
+upstream_id: tools/ai-assist/ide-ut-generation
+last_sync: 2026-06-07
+sync_hash: da9d3536
+upstream_hash: 0c3d7c888efa
 ---
-
 
 # 单元测试用例生成
 

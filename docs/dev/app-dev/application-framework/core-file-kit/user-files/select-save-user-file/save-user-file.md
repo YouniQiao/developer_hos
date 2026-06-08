@@ -2,9 +2,10 @@
 title: "保存用户文件"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/save-user-file
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/save-user-file
+last_sync: 2026-06-07
+sync_hash: 0bd773e3
 ---
-
-
 在从网络下载文件到本地或将已有用户文件另存为新的文件路径等场景下，需要使用FilePicker提供的保存用户文件的能力。需关注以下关键点：
 
 **权限说明**

@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-parameter-properties"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-parameter-properties
 format: md
+upstream_id: tools/coding-debug/ide_no-parameter-properties
+last_sync: 2026-06-07
+sync_hash: e24406d5
 ---
-
-
 # @typescript-eslint/no-parameter-properties
 
 禁止在类构造函数中使用参数属性。

@@ -2,9 +2,10 @@
 title: "使用Hypium实现ArkWeb自动化测试"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-debugging/web-hypium-autotests
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-debugging/web-hypium-autotests
+last_sync: 2026-06-07
+sync_hash: 691ae240
 ---
-
-
 ## 概述
 
 ArkWeb页面支持使用Hypium集成Selenium框架、ChromeDriver驱动进行UI自动化测试。

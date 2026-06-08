@@ -3,7 +3,8 @@ displayed_sidebar: appDevSidebar
 title: "商户侧没有传营销信息，支付回调里面为什么会有营销信息？"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-17
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-17
+last_sync: 2026-06-07
+sync_hash: 857ce697
 ---
-
-
 营销活动不需要商户侧传递，拉起收银台前华为支付会根据用户和商户去获取华为支付侧配置的营销活动信息展示在收银台，若用户使用了营销活动，支付结果就会返回营销信息。

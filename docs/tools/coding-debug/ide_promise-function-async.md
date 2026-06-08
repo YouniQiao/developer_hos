@@ -3,9 +3,10 @@ title: "@typescript-eslint/promise-function-async"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_promise-function-async
 format: md
+upstream_id: tools/coding-debug/ide_promise-function-async
+last_sync: 2026-06-07
+sync_hash: dd125576
 ---
-
-
 # @typescript-eslint/promise-function-async
 
 要求任何返回Promise的函数或方法标记为async。

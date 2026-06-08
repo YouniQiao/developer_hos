@@ -2,9 +2,10 @@
 title: "存储数据"
 original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-data-storage
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-basic-capabilities/develop-data-storage
+last_sync: 2026-06-07
+sync_hash: 96800a79
 ---
-
-
 每个元服务都可以有自己的本地缓存，可以通过以下接口对本地缓存进行读写和清理。
 
 | API | 描述 |

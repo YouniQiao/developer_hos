@@ -2,9 +2,10 @@
 title: "状态变量改变不触发组件刷新问题常用定位方法"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-faq/troubleshooting-state-manage
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-faq/troubleshooting-state-manage
+last_sync: 2026-06-07
+sync_hash: 192b39e2
 ---
-
-
 在声明式UI编程框架中，状态管理的主要职责是：当状态变量改变时，触发其关联组件的刷新。所以在使用状态变量的过程中，最常见的问题就是组件不刷新。本文主要针对开发者在使用状态变量时遇到的不刷新问题，阐述以下两个方面。
 
 * 如何定位状态变量不刷新的问题。

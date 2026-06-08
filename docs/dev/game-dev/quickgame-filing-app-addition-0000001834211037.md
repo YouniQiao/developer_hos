@@ -2,9 +2,10 @@
 title: "新增互联网信息"
 original_url: /docs/dev/game-dev/quickgame-filing-app-addition-0000001834211037
 format: md
+upstream_id: dev/game-dev/quickgame-filing-app-addition-0000001834211037
+last_sync: 2026-06-07
+sync_hash: 417e1f78
 ---
-
-
 ## 前提条件
 
 已前往应用市场下载最新版本的华为云App。

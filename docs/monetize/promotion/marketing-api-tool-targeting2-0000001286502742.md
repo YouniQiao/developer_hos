@@ -3,6 +3,10 @@ title: "查询公共定向包"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-targeting2-0000001286502742
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-targeting2-0000001286502742
+last_sync: 2026-06-07
+sync_hash: 85379388
+upstream_hash: fe1dda177536
 ---
 
 # 查询公共定向包

@@ -3,8 +3,10 @@ title: 预览
 sidebar_label: 预览
 original_url: /docs/design/system-features/capabilities/preview
 format: md
+upstream_id: design/system-features/capabilities/preview
+last_sync: 2026-06-07
+sync_hash: fe446b87
 ---
-
 # 预览
 
 “预览”功能通常指编辑详细文档内容之前，能先快速浏览或查看其内容。提供该系统级文件预览框架和能力，建立统一的“一步预览”体验。适用场景包含：

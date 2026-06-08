@@ -2,9 +2,10 @@
 format: md
 title: "工程检查报错，提示“Incorrect settings found in the build-profile.json5 file”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-2
+upstream_id: FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-2
+last_sync: 2026-06-07
+sync_hash: 0003869e
 ---
-
-
 **解决措施**
 
 1. 工程级build-profile.json5文件配置可能存在错误，请根据以下规范检查并修改配置。特别注意compatibleSdkVersion、targetSdkVersion和runtimeOS的位置和填写格式。

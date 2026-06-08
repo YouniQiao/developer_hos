@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "混合支付场景"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-mix
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-mix
+last_sync: 2026-06-07
+sync_hash: 9a835233
 ---
-
-
 ## 场景介绍
 
 从5.0.2(14)版本开始，新增支持通用收银台混合支付场景。

@@ -2,9 +2,10 @@
 title: "使用Web组件的拖拽功能与网页交互"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-drag
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-drag
+last_sync: 2026-06-07
+sync_hash: cd0abdbd
 ---
-
-
 ArkWeb的拖拽功能使应用能够在网页中实现元素的拖放，用户可以长按可拖拽的元素，将其拖至可放置的元素上，然后松手完成放置。ArkWeb在网页内容中的拖拽功能满足H5标准。
 
 ## 将网页内容拖拽至其他应用

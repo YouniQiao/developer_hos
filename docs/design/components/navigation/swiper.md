@@ -3,8 +3,10 @@ title: 导航点
 sidebar_label: 导航点
 original_url: /docs/design/components/navigation/swiper
 format: md
+upstream_id: design/components/navigation/swiper
+last_sync: 2026-06-07
+sync_hash: 2ecb3e99
 ---
-
 # 导航点
 
 导航点是用于界面设计中的常用导航类控件，通常用于展示多个视图、界面内容之间的切换关系。通过导航点可以直观的告诉用户当前内容的数量，且指示当前内容所处位置。导航点导航的内容都是处于同等重要的位置。开发相关描述请参考 [Swiper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper) 文档。

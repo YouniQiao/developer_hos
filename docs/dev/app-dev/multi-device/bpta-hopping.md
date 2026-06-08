@@ -3,8 +3,10 @@ title: "自由流转概述"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-hopping
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-hopping
+last_sync: 2026-06-07
+sync_hash: fbc3bea0
 ---
-
 # 自由流转概述
 
 ## 概述

@@ -3,9 +3,10 @@ title: "常见错误说明"
 original_url: /docs/dev/game-dev/games-center-mistakes-0000002320646013
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-center-mistakes-0000002320646013
+last_sync: 2026-06-07
+sync_hash: 56218381
 ---
-
-
 | **字段** | **错误提示语** | **原因说明** |
 | --- | --- | --- |
 | productId | 商品ID不符合规范，请参考批量添加商品模板说明。 | productId不符合规范。 |

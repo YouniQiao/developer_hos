@@ -2,9 +2,10 @@
 title: "输入框拉起键盘时，如何将底部布局弹起到键盘顶部"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-54
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-54
+last_sync: 2026-06-07
+sync_hash: 6ac80a3e
 ---
-
-
 **原因分析**
 
 软键盘弹出时，默认顶起输入框，下方的显示组件将被遮挡。

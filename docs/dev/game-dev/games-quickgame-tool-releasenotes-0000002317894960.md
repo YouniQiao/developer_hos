@@ -2,9 +2,10 @@
 title: "版本更新说明"
 original_url: /docs/dev/game-dev/games-quickgame-tool-releasenotes-0000002317894960
 format: md
+upstream_id: dev/game-dev/games-quickgame-tool-releasenotes-0000002317894960
+last_sync: 2026-06-07
+sync_hash: 1254e6f3
 ---
-
-
 ## Windows
 
 | 版本号 | 发布时间 | 更新说明 |

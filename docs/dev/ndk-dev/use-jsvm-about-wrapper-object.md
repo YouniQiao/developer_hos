@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口进行Wrapper object相关开发"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-wrapper-object
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-wrapper-object
+last_sync: 2026-06-07
+sync_hash: aa497f71
 ---
-
-
 ## 简介
 
 JSVM-API中，装箱类型(Wrapper object)判断相关接口支持通过不同API快速判断object的装箱类型。

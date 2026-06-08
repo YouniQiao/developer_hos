@@ -2,9 +2,10 @@
 format: md
 title: "调用camera拍摄的照片如何上传到服务器"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-4
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-4
+last_sync: 2026-06-07
+sync_hash: c9d82629
 ---
-
-
 启动应用并获取权限后，系统会访问远程服务器，拍摄的照片将保存在本地，并通过上传接口从手机传送至远程服务器。
 
 **参考链接**

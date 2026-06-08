@@ -2,9 +2,10 @@
 title: "收集"
 original_url: /docs/experience-suggestions/security-privacy/privacy/standard-privacy-collect-use
 format: md
+upstream_id: experience-suggestions/security-privacy/privacy/standard-privacy-collect-use
+last_sync: 2026-06-07
+sync_hash: f4866906
 ---
-
-
 # 收集
 
 |  |  |

@@ -2,9 +2,10 @@
 title: "BriefPackageInfo"
 original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-briefpackageinfo-0000002236041470
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-briefpackageinfo-0000002236041470
+last_sync: 2026-06-07
+sync_hash: 0fa50c81
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | packageId | O | String | 软件包ID。 |

@@ -1,12 +1,12 @@
 ---
-
 title: "在端侧调用云函数"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-invokecloudfunc
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-invokecloudfunc
+last_sync: 2026-06-07
+sync_hash: 9159cbd6
 ---
-
-
 # 在端侧调用云函数
 
 ## 前提条件

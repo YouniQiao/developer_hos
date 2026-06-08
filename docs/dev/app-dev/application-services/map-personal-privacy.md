@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "个人数据处理说明"
 original_url: /docs/dev/app-dev/application-services/map-personal-privacy
 format: md
+upstream_id: dev/app-dev/application-services/map-personal-privacy
+last_sync: 2026-06-07
+sync_hash: 1b4b36af
+upstream_hash: 9904944f859c
 ---
-
 
 此文档针对华为作为最终用户数据处理者，开发者作为数据控制者的处理进行说明，包括：
 

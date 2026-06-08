@@ -2,9 +2,10 @@
 title: "配置支持设备"
 original_url: /docs/distribute/agc/agc-help-release-atomic-0000002327731065/agc-help-release-atomic-devicetype-0000002293811138
 format: md
+upstream_id: distribute/agc/agc-help-release-atomic-0000002327731065/agc-help-release-atomic-devicetype-0000002293811138
+last_sync: 2026-06-07
+sync_hash: 5dab7c66
 ---
-
-
 发布时，您可以为元服务配置分发至多种设备，默认发布设备为您创建元服务时选择的设备类型，您可以根据实际情况进行修改。您只需发布一次，用户即可在多种设备上使用您的元服务。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“快速开始”中的“元服务一站式平台”卡片。

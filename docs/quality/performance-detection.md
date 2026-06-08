@@ -2,9 +2,10 @@
 title: "开发态性能检测"
 original_url: /docs/quality/performance-detection
 format: md
+upstream_id: /docs/quality/performance-detection
+last_sync: 2026-06-07
+sync_hash: 33672733
 ---
-
-
 # 开发态性能检测
 
 ## 简介
@@ -37,7 +38,7 @@ format: md
 
 详细使用指导见：
 
-[代码Code Linter检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)
+[代码Code Linter检查](/docs/tools/coding-debug/ide-code-linter)
 
 静态性能规则全集见：
 
@@ -46,7 +47,7 @@ format: md
 ![](./img/ee4726be.png)
 
 * 若未配置代码检查规则文件，直接执行Code Linter，将按照默认的编程规范规则对.ets文件进行检查。
-* 注意[规则变更说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-codelinter-rules-change)。
+* 注意[规则变更说明](/docs/tools/coding-debug/ide-codelinter-rules-change)。
 
 ## 动态运行工具检测应用性能问题
 
@@ -64,11 +65,11 @@ format: md
 
 在使用AppAnalyzer工具前，请确保完成以下准备工作：
 
-1、应用已配置签名[signingConfigs](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section153288223224)。
+1、应用已配置签名[signingConfigs](/docs/tools/coding-debug/ide-hvigor-build-profile-app#section153288223224)。
 
 2、确认模块Product配置正确。
 
-3、关闭代码混淆：在模块级build-profile.json5配置文件中关闭代码混淆，详见：[字段说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-obfuscation#section88021016154414)。
+3、关闭代码混淆：在模块级build-profile.json5配置文件中关闭代码混淆，详见：[字段说明](/docs/tools/coding-debug/ide-build-obfuscation#section88021016154414)。
 
 4、将编译模式Build Mode设置为release。
 
@@ -102,7 +103,7 @@ format: md
 
 应用体检工具集成性能规则见：
 
-[应用/元服务体检规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer-rules)
+[应用/元服务体检规则](/docs/tools/coding-debug/ide-app-analyzer-rules)
 
 ## Testing测试报告导入体检工具分析
 

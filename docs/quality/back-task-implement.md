@@ -1,8 +1,10 @@
 ---
 title: "应用后台运行"
 original_url: /docs/quality/back-task-implement
+upstream_id: /docs/quality/back-task-implement
+last_sync: 2026-06-07
+sync_hash: 85c7cc31
 ---
-
 # 应用后台运行
 
 ## 概述

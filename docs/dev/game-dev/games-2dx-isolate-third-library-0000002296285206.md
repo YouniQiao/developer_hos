@@ -2,9 +2,10 @@
 title: "隔离三方SDK代码"
 original_url: /docs/dev/game-dev/games-2dx-isolate-third-library-0000002296285206
 format: md
+upstream_id: dev/game-dev/games-2dx-isolate-third-library-0000002296285206
+last_sync: 2026-06-07
+sync_hash: b02d122a
 ---
-
-
 由于当前部分游戏常用的SDK不支持在HarmonyOS 5.0及以上系统上运行，因此适配HarmonyOS 5.0及以上系统的第一步是进行SDK隔离（拆分），去掉不支持的SDK。
 
 按照语言可以分为几个类别：

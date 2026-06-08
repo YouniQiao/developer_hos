@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "提升音频性能体验"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-performance-optimization/audio-performance
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-performance-optimization/audio-performance
+last_sync: 2026-06-07
+sync_hash: 9c098cf5
 ---
-
-
 在各种终端设备的使用过程中，对于音频相关功能的体验，用户在不同场景下，有多方面的核心性能诉求，包含流畅度、响应速度、省电等，典型的场景如下：
 
 * 在听音乐和听书的场景，希望能更加省电，延长续航时间。
@@ -61,7 +62,7 @@ format: md
 
 DevEco Profiler是一个帮助开发者更高效地进行性能问题的分析的场景化调优工具，集成在DevEco Studio中，可以在应用开发过程中直接使用。
 
-工具的具体使用方式可参考指南：[性能调优工具简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-description)。
+工具的具体使用方式可参考指南：[性能调优工具简介](/docs/tools/coding-debug/ide-insight-description)。
 
 DevEco Profiler主要用于对应用内运行流程进行分析和调优，指南中有详细的分析步骤说明，此文不再赘述。
 

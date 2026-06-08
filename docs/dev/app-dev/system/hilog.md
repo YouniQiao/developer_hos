@@ -2,9 +2,10 @@
 title: "hilog"
 original_url: /docs/dev/app-dev/system/hilog
 format: md
+upstream_id: dev/app-dev/system/hilog
+last_sync: 2026-06-07
+sync_hash: 4a94a455
 ---
-
-
 HiLog日志系统，提供给系统框架、服务、以及应用，用于打印日志，记录用户操作、系统运行状态等。开发者可以通过hilog命令行查询相关日志信息。
 
 ## 环境要求
@@ -23,7 +24,7 @@ HiLog日志系统，提供给系统框架、服务、以及应用，用于打印
 **在线查看**
 
 * 使用hdc shell hilog命令在线查看日志。
-* 使用DevEco Studio工具在线查看日志，参考：[日志分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-setup-hilog)。
+* 使用DevEco Studio工具在线查看日志，参考：[日志分析](/docs/tools/coding-debug/ide-setup-hilog)。
 
 **查看落盘的文件**
 
@@ -554,7 +555,8 @@ INFO lines: 101795(74%), length: 6.1M(76%)
 WARN lines: 10268(7.5%), length: 719.9K(8.8%)
 ERROR lines: 25452(19%), length: 1.2M(15%)
 FATAL lines: 2(0.0015%), length: 259.0B(0.0031%)
-------------------------------------------------------------
+---
+---------------------------------------------------------
 Domain Table:
 LOGTYPE- DOMAIN---- TAG----------------------------- MAX_FREQ-- TIME---------------- MAX_TP---- TIME---------------- LINES----- LENGTH---- DROPPED---
 app----- 0xf00----- -------------------------------- 924.00---- 11-15 16:04:25.594-- 111975.00- 11-15 16:04:25.594-- 3386------ 371.5K---- 0---------

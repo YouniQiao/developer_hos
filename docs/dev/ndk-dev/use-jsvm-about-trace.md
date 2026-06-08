@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口进行Trace相关开发"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-trace
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-trace
+last_sync: 2026-06-07
+sync_hash: 47eb6e95
 ---
-
-
 ## 简介
 
 JSVM-API中trace相关接口用于在运行时采集并输出各种类型运行时信息。该能力可用于在JSVM模块中定位问题与性能分析。

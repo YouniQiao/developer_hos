@@ -2,8 +2,11 @@
 format: md
 title: "发布ohpm提示错误：The version field: 12.5.0.0-20-dev in the oh-package.json5 file does not satisfy the semver specification"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-command-line-tool/faqs-command-line-tool-8
+upstream_id: FAQ/faqs-deveco-studio/faqs-command-line-tool/faqs-command-line-tool-8
+last_sync: 2026-06-07
+sync_hash: 5e2a178f
+upstream_hash: 0d5a30882a94
 ---
-
 
 **问题描述**
 

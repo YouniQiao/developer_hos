@@ -2,9 +2,10 @@
 format: md
 title: "Native侧如何引入头文件deviceinfo.h"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-44
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-44
+last_sync: 2026-06-07
+sync_hash: a7577df2
 ---
-
-
 **问题现象：**
 
 在C++文件中，参照官方指导文档，引入#include "deviceinfo.h"头文件后，编译时仍提示无法找到该头文件，日志提示未链接deviceinfo库。

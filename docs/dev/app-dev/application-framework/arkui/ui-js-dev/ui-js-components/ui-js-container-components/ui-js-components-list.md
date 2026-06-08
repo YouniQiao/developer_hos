@@ -2,9 +2,10 @@
 title: "list开发指导"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-container-components/ui-js-components-list
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-container-components/ui-js-components-list
+last_sync: 2026-06-07
+sync_hash: 7e7c639c
 ---
-
-
 list是用来显示列表的组件，包含一系列相同宽度的列表项，适合连续、多行地呈现同类数据。具体用法请参考[list API](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-container-list)。
 
 ## 创建list组件

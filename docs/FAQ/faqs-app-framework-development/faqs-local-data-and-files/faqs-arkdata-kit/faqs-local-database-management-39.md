@@ -2,9 +2,10 @@
 format: md
 title: "跨模块、跨进程时如何保证正常读取首选项中数据"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-39
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-39
+last_sync: 2026-06-07
+sync_hash: 0ef4671e
 ---
-
-
 **解决措施**
 
 跨模块：

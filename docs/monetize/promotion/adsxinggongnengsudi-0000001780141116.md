@@ -3,8 +3,10 @@ title: "新功能速递"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/adsxinggongnengsudi-0000001780141116
 format: md
+upstream_id: monetize/promotion/adsxinggongnengsudi-0000001780141116
+last_sync: 2026-06-07
+sync_hash: f13ee4f9
 ---
-
 # 新功能速递
 
 ## 4月新功能速递

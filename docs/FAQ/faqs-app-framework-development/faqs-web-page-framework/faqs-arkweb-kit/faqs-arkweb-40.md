@@ -2,8 +2,11 @@
 title: "如何判断Web滑动到了顶部/底部，并且把滑动事件传递给页面"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-40
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-40
+last_sync: 2026-06-07
+sync_hash: 880dfd8a
+upstream_hash: db445bc14a79
 ---
-
 
 Web组件的[onOverScroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onoverscroll10)事件可以判断滑动是否到达顶部或底部。当yOffset小于0时，表示页面到达顶端；当yOffset大于0时，表示页面到达底端。
 

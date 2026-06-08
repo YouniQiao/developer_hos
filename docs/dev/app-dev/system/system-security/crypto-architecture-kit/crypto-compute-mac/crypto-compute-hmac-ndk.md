@@ -2,9 +2,10 @@
 title: "消息认证码计算HMAC(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-mac/crypto-compute-hmac-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-mac/crypto-compute-hmac-ndk
+last_sync: 2026-06-07
+sync_hash: faecbd6e
 ---
-
-
 HMAC通过指定摘要算法，以通信双方共享密钥与消息作为输入，生成消息认证码用于检验传递报文的完整性。HMAC在消息摘要算法的基础上增加了密钥的输入，确保了信息的正确性。生成的消息认证码为固定长度。
 
 ## 开发步骤

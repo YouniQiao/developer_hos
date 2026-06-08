@@ -2,9 +2,10 @@
 title: "测试流程"
 original_url: /docs/distribute/agc/agc-help-public-test-0000002287814841/agc-help-public-test-guide-0000002293706429
 format: md
+upstream_id: distribute/agc/agc-help-public-test-0000002287814841/agc-help-public-test-guide-0000002293706429
+last_sync: 2026-06-07
+sync_hash: ef93b823
 ---
-
-
 您可以将应用上架至华为应用市场，面向全网用户招募测试用户来测试您的应用。具体测试流程如下：
 
 **第一步：****[创建并发布测试版本](/docs/distribute/agc/agc-help-public-test-0000002287814841/agc-help-publictest-release-app-0000002259033172)**

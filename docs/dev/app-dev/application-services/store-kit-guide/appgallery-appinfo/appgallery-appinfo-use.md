@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "实现应用图标动态切换"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/appgallery-appinfo/appgallery-appinfo-use
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/appgallery-appinfo/appgallery-appinfo-use
+last_sync: 2026-06-07
+sync_hash: 21bdf947
 ---
-
-
 AppGallery Kit为使用动态图标的应用客户端提供查询动态图标信息、切换动态图标、恢复默认图标功能。
 
 ![](./img/fd91911c.png)

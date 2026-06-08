@@ -3,8 +3,11 @@ title: "网格化-水波纹&lt;MeshImage-SinMotion&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-meshimagesinmotion-0000002504355009
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-meshimagesinmotion-0000002504355009
+last_sync: 2026-06-07
+sync_hash: 03db17e2
+upstream_hash: b1e655aefdf0
 ---
-
 
 # 网格化-水波纹&lt;MeshImage-SinMotion&gt;
 

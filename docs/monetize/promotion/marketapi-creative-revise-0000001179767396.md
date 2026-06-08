@@ -3,8 +3,10 @@ title: "修改任务创意状态"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-creative-revise-0000001179767396
 format: md
+upstream_id: monetize/promotion/marketapi-creative-revise-0000001179767396
+last_sync: 2026-06-07
+sync_hash: c689abcf
 ---
-
 # 修改任务创意状态
 
 ## 功能介绍

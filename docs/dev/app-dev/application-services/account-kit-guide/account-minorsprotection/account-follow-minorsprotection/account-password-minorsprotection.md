@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "应用内调整未成年人模式设置"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-minorsprotection/account-follow-minorsprotection/account-password-minorsprotection
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-minorsprotection/account-follow-minorsprotection/account-password-minorsprotection
+last_sync: 2026-06-07
+sync_hash: f6fda870
 ---
-
-
 ## 场景介绍
 
 系统的未成年人模式已开启，应用已随系统切换至未成年人模式。用户打开应用，希望在应用内调整内容偏好、使用时长等设置，需要验证家长身份。

@@ -2,9 +2,10 @@
 title: "JS Crash类问题分析方法"
 original_url: /docs/quality/stability-app-crash-js-way
 format: md
+upstream_id: /docs/quality/stability-app-crash-js-way
+last_sync: 2026-06-07
+sync_hash: 6d82adb2
 ---
-
-
 # JS Crash类问题分析方法
 
 当未处理的JS异常导致应用意外退出时，应用会在抛出未处理的异常时崩溃并且会生成对应的JS Crash崩溃日志文件。开发者可通过错误日志查看引起崩溃的代码位置及分析应用崩溃的原因，可参看[JS Crash日志规格](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/jscrash-guidelines#日志规格)。
@@ -144,4 +145,4 @@ JS Crash故障日志中的StackTrace字段存放了JS Crash异常的调用栈信
   如果FaultLog的堆栈信息中的链接或偏移地址指向的是当前工程中的某行代码，该段信息将被转换为超链接形式，在DevEco Studio中点击后跳转至对应代码行。
 * 情况二：不可跳转至引起错误的代码行或者跳转代码位置不存在
 
-  如出现Cannot get Source Map info, dump raw stack信息代表js栈转换ets行列号失败，在DevEco Studio中点击链接会跳转到不正确的代码位置或不存在的代码行位置。可参考：[堆栈轨迹分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-release-app-stack-analysis)。
+  如出现Cannot get Source Map info, dump raw stack信息代表js栈转换ets行列号失败，在DevEco Studio中点击链接会跳转到不正确的代码位置或不存在的代码行位置。可参考：[堆栈轨迹分析](/docs/tools/coding-debug/ide-release-app-stack-analysis)。

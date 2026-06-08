@@ -3,9 +3,10 @@ title: "游戏预约魔方创意"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-pre-order-0000002023298502
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-pre-order-0000002023298502
+last_sync: 2026-06-07
+sync_hash: 95b1b9e1
 ---
-
-
 # 游戏预约魔方创意
 
 游戏预约魔方创意是为[游戏预约](https://developer.huawei.com/consumer/cn/doc/app/game-center-pre-order-0000001239342333)提供的在线制作、轻松上手、简单轻量的设计网站。该网站支持一键预览，支持复杂的交互或跳转，您可以自由搭配组件，一键复用优质内容，轻松设计游戏预约的可视化H5落地页。

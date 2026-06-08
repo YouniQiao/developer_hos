@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "配置预加载"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-config
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-config
+last_sync: 2026-06-07
+sync_hash: 49ae5c0d
 ---
-
-
 安装预加载、周期性预加载和跳链安装预加载需分别进行配置，且三者均可通过云函数和开发者服务器（即HTTPS请求）两种数据来源方式来实现。
 
 对于不同类型的开发者，支持的数据来源方式有所不同：

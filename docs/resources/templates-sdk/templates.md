@@ -2,9 +2,9 @@
 title: 模板
 sidebar_label: 模板
 format: md
+upstream_id: _local
+last_sync: 2026-06-08
 ---
-
-
 # 模板
 
 应用模板为常见应用场景提供完整的开发样例和工程代码，开发者可直接下载使用，快速启动 HarmonyOS 应用项目。所有模板均由华为官方提供，涵盖美食、工具、新闻、商城、政务等多种行业场景。

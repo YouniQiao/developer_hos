@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "证书PKCS12的创建和解析"
 original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-parse-pkcs12
 format: md
+upstream_id: dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-parse-pkcs12
+last_sync: 2026-06-07
+sync_hash: 72a1791c
 ---
-
-
 从API 18开始，支持解析PKCS12证书。
 
 从API 21开始，支持创建PKCS12证书。

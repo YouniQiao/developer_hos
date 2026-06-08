@@ -2,9 +2,10 @@
 format: md
 title: "如何获取应用签名证书的hash值"
 original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-2
+upstream_id: FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-2
+last_sync: 2026-06-07
+sync_hash: dd2b1f6b
 ---
-
-
 * “应用指纹”signatureInfo.fingerprint是应用签名证书（.cer文件）的SHA-256哈希值，当前支持获取本应用的指纹。示例代码如下：
 
   ```

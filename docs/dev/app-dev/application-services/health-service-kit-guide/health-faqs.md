@@ -3,12 +3,13 @@ displayed_sidebar: appDevSidebar
 title: "Health Service Kit常见问题"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-faqs
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-faqs
+last_sync: 2026-06-07
+sync_hash: be5169d4
 ---
-
-
 ## 读取今天的日常活动数据统计，与运动健康App页面数据不一致
 
-[聚合查询](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-data-manage/health-samplepoint-manage#聚合查询)接口读取今日日常活动数据，数据上报存在延时，读取实时日常活动数据建议使用[读取实时三环数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/health-three-ring-read)接口。
+[聚合查询](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-data-manage/health-samplepoint-manage#聚合查询)接口读取今日日常活动数据，数据上报存在延时，读取实时日常活动数据建议使用[读取实时三环数据](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-data-manage/health-three-ring-read)接口。
 
 ## 授权后仍然没有数据类型权限
 

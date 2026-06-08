@@ -3,6 +3,10 @@ title: "游戏"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-appendix-material-rule-game-0000001895585960
 format: md
+upstream_id: monetize/promotion/bp-appendix-material-rule-game-0000001895585960
+last_sync: 2026-06-07
+sync_hash: e651e8c1
+upstream_hash: 0e5d8665ea26
 ---
 
 # 游戏

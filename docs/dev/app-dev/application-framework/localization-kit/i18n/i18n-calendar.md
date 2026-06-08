@@ -2,9 +2,10 @@
 title: "设置日历和历法"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-calendar
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/i18n/i18n-calendar
+last_sync: 2026-06-07
+sync_hash: 967d53b8
 ---
-
-
 ## 功能介绍
 
 不同地区的用户使用不同的历法，大多数地区使用公历，也有些地区的用户使用其他历法，例如农历、伊斯兰历或希伯来历。日历上的时间和日期根据历法计算得到，并会随时区和夏令时的变化而调整。因此，用户需要设置符合本地习惯的历法。国际化提供了[Calendar](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-i18n#calendar)类，可以设置历法、日期、时区、一周的起始日期和一年中第一周的最小天数。此外，还可以判断具体某一天在日历中是否为周末以及计算相差天数。在应用开发过程中，可以根据业务需求选择使用不同功能。

@@ -2,9 +2,10 @@
 format: md
 title: "如何解决编译报错“Error: the name 'XXX' can only contain [a-zA-Z0-9_]”的问题"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-124
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-124
+last_sync: 2026-06-07
+sync_hash: 16b9a3dc
 ---
-
-
 **问题现象**
 
 编译报错：文件名只能包含大小写字母、数字、下划线。

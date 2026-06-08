@@ -2,9 +2,10 @@
 format: md
 title: "Grid如何实现拖拽功能"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-211
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-211
+last_sync: 2026-06-07
+sync_hash: 2693090e
 ---
-
-
 1. 通过editMode(true)属性设置Grid进入编辑模式，该模式下可拖拽内部GridItem。
 2. 在onItemDragStart回调中设置拖拽过程中显示的图片。
 3. 在onItemDrop中获取拖拽起始位置和拖拽插入位置，并在onItemDrop中完成交换数组位置动作。

@@ -2,8 +2,11 @@
 title: "开发流程"
 original_url: /docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-process-0000002271416137
 format: md
+upstream_id: distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-process-0000002271416137
+last_sync: 2026-06-07
+sync_hash: d1062568
+upstream_hash: 7b5ad1516f56
 ---
-
 
 ![](../img/agc-help-auth-process-0000002271416137_0.png)
 

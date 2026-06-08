@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "个人数据处理说明"
 original_url: /docs/dev/app-dev/application-services/location-personal-data
 format: md
+upstream_id: dev/app-dev/application-services/location-personal-data
+last_sync: 2026-06-07
+sync_hash: 5e64716c
 ---
-
-
 此文档针对华为作为最终用户数据处理者，您作为最终用户数据控制者的数据处理进行说明，包括：
 
 * 华为处理的个人数据清单。

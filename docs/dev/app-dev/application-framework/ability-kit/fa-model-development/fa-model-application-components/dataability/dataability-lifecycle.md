@@ -2,9 +2,10 @@
 title: "DataAbility的生命周期"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/dataability/dataability-lifecycle
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/dataability/dataability-lifecycle
+last_sync: 2026-06-07
+sync_hash: af5c211a
 ---
-
-
 应用开发者可以根据业务场景实现data.js/data.ets中的生命周期相关接口。DataAbility生命周期接口说明见下表。
 
 **表1** DataAbility相关生命周期API功能介绍

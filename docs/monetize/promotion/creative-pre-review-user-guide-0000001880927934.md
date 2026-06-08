@@ -3,6 +3,10 @@ title: "使用创意预审库"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/creative-pre-review-user-guide-0000001880927934
 format: md
+upstream_id: monetize/promotion/creative-pre-review-user-guide-0000001880927934
+last_sync: 2026-06-07
+sync_hash: d82e4d5a
+upstream_hash: 5bb46f77d276
 ---
 
 # 使用创意预审库

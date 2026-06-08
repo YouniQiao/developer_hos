@@ -2,9 +2,10 @@
 title: "证书链校验时下载缺失的中间CA证书"
 original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/allow-download-intermediate-cert
 format: md
+upstream_id: dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/allow-download-intermediate-cert
+last_sync: 2026-06-07
+sync_hash: bf09a689
 ---
-
-
 从API 23开始，支持证书链校验时下载缺失的中间CA证书。
 
 以创建X509证书链为例，完成证书链对象的创建，创建过程校验时允许下载缺失的中间证书。

@@ -3,8 +3,10 @@ title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-zhanghaoguanlifaq-0000001814790816
 format: md
+upstream_id: monetize/promotion/ads-zhanghaoguanlifaq-0000001814790816
+last_sync: 2026-06-07
+sync_hash: 270cb0d2
 ---
-
 # FAQ
 
 ## 服务商账户注册

@@ -2,9 +2,10 @@
 title: "开放接口"
 original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-open-apis
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-open-apis/apis-open-apis
+last_sync: 2026-06-07
+sync_hash: c5767704
 ---
-
-
 * **[账号](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-account)**
 * **[授权](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization)**
 * **[设置](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-setting)**

@@ -1,8 +1,10 @@
 ---
 title: "不可见组件低功耗建议"
 original_url: /docs/quality/low-power-consumption-suggestions
+upstream_id: /docs/quality/low-power-consumption-suggestions
+last_sync: 2026-06-07
+sync_hash: fe3e55be
 ---
-
 # 不可见组件低功耗建议
 
 ## 概述
@@ -23,7 +25,7 @@ original_url: /docs/quality/low-power-consumption-suggestions
 * 组件本身位于屏幕范围内，但由于页面特殊结构，被另一级页面或组件完全遮蔽了，考虑到用户实际的操作需求，以及上层组件可能存在透明度、模糊效果等因素，系统不会终止被遮挡组件的行为，依赖三方开发者感知这种遮蔽事件，来控制被遮挡组件停止刷新。
 * 动效组件如Video、Web等组件，在已经卸载ArkUI树后，依然在执行解码、web render等业务导致Buffer持续空转。一方面开发者需确保组件在离线状态下构建时，渲染控制器为不播放，另一方面需要开发者确保当组件卸载时，停止正在执行的渲染控制器。
 
-为了帮助开发者定位到存在空跑问题的组件，在当前系统中已经开放了[不可见动效的自检工具](/docs/quality/frontend-invisible-animation-analysis)。本文将着重介绍Vsync冗余信号、UI刷新问题以及Buffer自绘制三类问题中的UI刷新问题。开发者可进一步通过[布局分析（ArkUI Inspector）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arkui-inspector)较为直观且方便的查看ArkUI组件树结构以及关键的变量信息，勾选打开第四项，Show Hidden Components，可以使得开发者找到更多隐藏但未被析构的组件。
+为了帮助开发者定位到存在空跑问题的组件，在当前系统中已经开放了[不可见动效的自检工具](/docs/quality/frontend-invisible-animation-analysis)。本文将着重介绍Vsync冗余信号、UI刷新问题以及Buffer自绘制三类问题中的UI刷新问题。开发者可进一步通过[布局分析（ArkUI Inspector）](/docs/tools/coding-debug/ide-arkui-inspector)较为直观且方便的查看ArkUI组件树结构以及关键的变量信息，勾选打开第四项，Show Hidden Components，可以使得开发者找到更多隐藏但未被析构的组件。
 
 ![](./img/ae878299.png)
 

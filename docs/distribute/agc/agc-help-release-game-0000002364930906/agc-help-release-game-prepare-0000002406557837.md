@@ -2,9 +2,10 @@
 title: "准备工作"
 original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-prepare-0000002406557837
 format: md
+upstream_id: distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-prepare-0000002406557837
+last_sync: 2026-06-07
+sync_hash: b7acb71c
 ---
-
-
 提前了解游戏的上架规则，并提前准备游戏素材，有助于快速通过游戏上架审核。
 
 #### 了解上架规则

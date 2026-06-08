@@ -2,9 +2,10 @@
 title: "应用侧调用前端页面函数"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/web-in-app-frontend-page-function-invoking
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/web-in-app-frontend-page-function-invoking
+last_sync: 2026-06-07
+sync_hash: ac8c7f4c
 ---
-
-
 应用侧可以通过[runJavaScript()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#runjavascript)和[runJavaScriptExt()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#runjavascriptext10)方法调用前端页面的JavaScript相关函数。
 
 [runJavaScript()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#runjavascript)和[runJavaScriptExt()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#runjavascriptext10)在参数类型上有以下差异：[runJavaScriptExt()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#runjavascriptext10)支持string和ArrayBuffer类型参数，而[runJavaScript()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#runjavascript)仅支持string类型参数。

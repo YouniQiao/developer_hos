@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "命中检测"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/arworld
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/arworld
+last_sync: 2026-06-07
+sync_hash: e38f63f2
 ---
-
-
 * **[命中检测介绍](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arworld/arengine-arworld-conversion)**
 * **[物体摆放（ArkTS）](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arworld/arengine-arworld)**
 * **[物体摆放（C/C++）](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arworld/arengine-c-arworld)**

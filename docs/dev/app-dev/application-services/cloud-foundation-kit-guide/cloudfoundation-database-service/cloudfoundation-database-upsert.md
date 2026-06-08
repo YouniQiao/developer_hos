@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "写入数据"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-upsert
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-upsert
+last_sync: 2026-06-07
+sync_hash: db444baa
 ---
-
-
 开发者可以通过[upsert()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cloudfoundation-clouddatabase#upsert)将一个或者一组对象写入到当前存储区中。在写入对象时，如果在存储区已经存在主键相同的对象，则更新已有的对象；如果不存在，则写入一个新的对象。写入的数据可以来自于新建对象，或者从存储区查询出来的对象。
 
 ![](./img/8290608a.png)

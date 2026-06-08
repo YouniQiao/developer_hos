@@ -2,9 +2,10 @@
 format: md
 title: "hdc list targets回显慢"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-76
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-76
+last_sync: 2026-06-07
+sync_hash: 0bb343d6
 ---
-
-
 **问题现象**
 
 执行hdc list targets命令回显慢。

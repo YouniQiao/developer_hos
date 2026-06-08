@@ -2,8 +2,11 @@
 title: "场景动效类型互动卡片概述"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-liveform/arkts-ui-liveform-sceneanimation/arkts-ui-liveform-sceneanimation-overview
 format: md
+upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-liveform/arkts-ui-liveform-sceneanimation/arkts-ui-liveform-sceneanimation-overview
+last_sync: 2026-06-07
+sync_hash: b0e12a44
+upstream_hash: 6761cff3d7d4
 ---
-
 
 从API version 20开始，场景动效类型互动卡片支持在特定场景下触发互动卡片的特有效果。例如，开发者可以选择将动效渲染区域扩展到卡片自身的渲染区域之外，营造“破框”效果。
 

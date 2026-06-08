@@ -2,9 +2,10 @@
 title: "获取/设置环境变量"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/subscribe-system-environment-variable-changes
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/subscribe-system-environment-variable-changes
+last_sync: 2026-06-07
+sync_hash: eae0627a
 ---
-
-
 环境变量涵盖了所有可能影响应用运行时的环境配置信息，包括应用可指定的内部环境变量（字体大小、外观、语言等）和应用可感知的外部环境变量（屏幕方向等）。
 
 通常条件下，环境变量会跟随系统设置变化。

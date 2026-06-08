@@ -2,9 +2,10 @@
 title: "申请企业MDM应用发布证书"
 original_url: /docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-enterprise-mdm-cert-0000002283256801
 format: md
+upstream_id: distribute/agc/agc-help-cert-0000002270829389/agc-help-enterprise-mdm-cert-0000002283256801
+last_sync: 2026-06-07
+sync_hash: 5f941f1f
 ---
-
-
 MDM（Mobile Device Management，移动设备管理）是一种企业级的IT应用解决方案，用于管理并保护公司设备上的数据和应用程序。MDM可以通过集中管理、远程配置和监控来保障设备和数据的安全性和稳定性。它广泛应用于企业和政府机构，以确保员工和客户使用的设备和数据受到保护，实现企业高效管理、安全使用设备。
 
 在发布企业MDM应用时，您需要使用企业MDM应用发布证书和企业MDM应用发布Profile手动签名后，才能编译构建正式发布包。请参考本文档申请并下载企业MDM应用发布证书。
@@ -25,7 +26,7 @@ MDM（Mobile Device Management，移动设备管理）是一种企业级的IT应
 
 #### 准备工作
 
-* 请准备好[证书请求文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section462703710326)。
+* 请准备好[证书请求文件](/docs/tools/coding-debug/ide-signing#section462703710326)。
 * 请确保您的账号角色已[获取“访问发布类证书”权限](/docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-manageaccount-0000002306610129#ZH-CN_TOPIC_0000002306610129__li626645853313)。
 
 #### 操作步骤

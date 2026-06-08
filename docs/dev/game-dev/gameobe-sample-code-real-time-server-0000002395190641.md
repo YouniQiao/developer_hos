@@ -2,9 +2,10 @@
 title: "使用示例"
 original_url: /docs/dev/game-dev/gameobe-sample-code-real-time-server-0000002395190641
 format: md
+upstream_id: dev/game-dev/gameobe-sample-code-real-time-server-0000002395190641
+last_sync: 2026-06-07
+sync_hash: 09021cfc
 ---
-
-
 如下示例主要展示实时服务器与客户端交互等业务逻辑，具体内容请参见[示例代码](https://developer.huawei.com/consumer/cn/doc/games-samples/gameobe-samplecode-server-0000001630174649)。
 
 ![](./img/b052adca.png)

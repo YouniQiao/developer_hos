@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "使用AlbumPicker组件访问相册列表"
 original_url: /docs/dev/app-dev/media/medialibrary-kit/component-guidelines-albumpicker
 format: md
+upstream_id: dev/app-dev/media/medialibrary-kit/component-guidelines-albumpicker
+last_sync: 2026-06-07
+sync_hash: cf9b834d
+upstream_hash: 4b50f3472dc2
 ---
-
 
 开发者可以在布局中嵌入AlbumPickerComponent组件，通过此组件，应用无需申请权限，即可访问公共目录中的相册列表。
 

@@ -2,10 +2,10 @@
 title: "ArkWeb组件安全开发"
 original_url: /docs/security/arkweb-security
 format: md
+upstream_id: /docs/security/arkweb-security
+last_sync: 2026-06-07
+sync_hash: dec3f151
 ---
-
-
-
 # ArkWeb组件安全开发
 
 ## 概述

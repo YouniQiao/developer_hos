@@ -2,9 +2,10 @@
 format: md
 title: "应用为什么无法进行应用探索测试"
 original_url: /docs/FAQ/faqs-deveco-testing/faqs-exploratory-test/faqs-app-exploration-test/faqs-app-exploration-test-7
+upstream_id: FAQ/faqs-deveco-testing/faqs-exploratory-test/faqs-app-exploration-test/faqs-app-exploration-test-7
+last_sync: 2026-06-07
+sync_hash: 55529b61
 ---
-
-
 若发现应用界面控件无法点击，请使用 DevEco Testing 实用工具中的 UIViewer 打开该应用界面，逐层检查控件树以排查问题。
 
 1. 查看页面控件树，如果仅存在一个节点且最底层组件为XComponent，则不支持进一步遍历。

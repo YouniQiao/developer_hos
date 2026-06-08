@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Enterprise Space Kit简介"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-introduction
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-introduction
+last_sync: 2026-06-07
+sync_hash: 8a4f6c6f
 ---
-
-
 Enterprise Space Kit（企业数字空间服务）为企业[MDM](/docs/dev/app-dev/system/system-basicfun/mdm-kit)应用提供空间管控、空间互传管控API，用于企业空间灵活配置管理、空间互传文件发送策略管控。企业MDM应用可以通过集中管理、远程配置来保障空间满足企业业务需求及数据传输安全诉求。它广泛应用于政府机构、大型科技企业、央国企、商业银行等“一机两用”、“一企多网”场景，以确保企业员工高效易用，企业管理简单易管，企业数据安全隔离。
 
 ## 场景介绍
@@ -29,7 +30,7 @@ Enterprise Space Kit（企业数字空间服务）为企业[MDM](/docs/dev/app-d
 
 ### 访问限制
 
-在企业数字空间服务使能后，经过空间切换，处于后台的空间，其[公共目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-device-file-explorer#section975311314172)数据可能无法访问。
+在企业数字空间服务使能后，经过空间切换，处于后台的空间，其[公共目录](/docs/tools/coding-debug/ide-device-file-explorer#section975311314172)数据可能无法访问。
 
 ## 模拟器支持情况
 

@@ -2,9 +2,10 @@
 format: md
 title: "OAID、AAID和ODID分别是什么，如何获取设备的唯一标识"
 original_url: /docs/FAQ/faqs-system-development/faqs-basic-functions/faqs-basic-services-kit/faq-basics-service-kit-14
+upstream_id: FAQ/faqs-system-development/faqs-basic-functions/faqs-basic-services-kit/faq-basics-service-kit-14
+last_sync: 2026-06-07
+sync_hash: 6204222a
 ---
-
-
 OAID是开放匿名设备标识符，非永久性。OAID保护用户隐私，提供个性化广告，支持广告转化分析。OAID具有以下特性：
 
 * OAID是设备级标识符，同一台设备上不同的App获取到的OAID值一样。

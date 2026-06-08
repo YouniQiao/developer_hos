@@ -3,9 +3,10 @@ title: "扫描工具"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/app-check-tool
 format: md
+upstream_id: tools/cli-tools/app-check-tool
+last_sync: 2026-06-07
+sync_hash: edefca0b
 ---
-
-
 # 扫描工具
 
 ## 简介

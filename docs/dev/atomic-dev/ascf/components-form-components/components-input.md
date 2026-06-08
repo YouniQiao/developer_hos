@@ -2,9 +2,10 @@
 title: "input"
 original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-input
 format: md
+upstream_id: dev/atomic-dev/ascf/components-form-components/components-input
+last_sync: 2026-06-07
+sync_hash: 74a19ad0
 ---
-
-
 输入框。
 
 **起始版本：** 1.0.0

@@ -2,9 +2,10 @@
 title: "分包加载"
 original_url: /docs/dev/game-dev/games-quickgame-subpackage-0000002317894828
 format: md
+upstream_id: dev/game-dev/games-quickgame-subpackage-0000002317894828
+last_sync: 2026-06-07
+sync_hash: f17d4949
 ---
-
-
 对于包内资源较为丰富的快游戏，华为提供了分包策略。华为的分包策略是将**不超过30MB**的快游戏包体按照一定的规则拆分为一个主包和若干分包，玩家进入快游戏时仅下载、加载主包，游戏过程中再按需触发其它分包的下载，而不必将所有整包内容一次性下载、加载，目的是为了缩短玩家进入游戏的时间，减少下载快游戏包体的流量。
 
 ![](./img/c2ef1f24.png)

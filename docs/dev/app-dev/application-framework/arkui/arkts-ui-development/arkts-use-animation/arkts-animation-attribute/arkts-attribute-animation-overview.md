@@ -2,9 +2,10 @@
 title: "属性动画概述"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-attribute/arkts-attribute-animation-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-attribute/arkts-attribute-animation-overview
+last_sync: 2026-06-07
+sync_hash: e1d694fb
 ---
-
-
 属性接口（以下简称属性）包含尺寸属性、布局属性、位置属性等多种类型，用于控制组件的行为。针对当前界面上的组件，其部分属性（如位置属性）的变化会引起UI的变化。添加动画可以让属性值从起点逐渐变化到终点，从而产生连续的动画效果。为保障动画起点和终点的正确性，属性动画会将当前在标脏队列内的所有节点进行刷新。如果发现当前动画时长较长时，需要确认当前是否有额外的节点刷新。根据变化时是否能够添加动画，可以将属性分为可动画属性和不可动画属性。判断一种属性是否适合作为可动画属性主要有两个标准：
 
 1. 属性变化能够引起UI的变化。例如，[enabled](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-enable#enabled)属性用于控制组件是否可以响应点击、触摸等事件，但enabled属性的变化不会引起UI的变化，因此不适合作为可动画属性。

@@ -3,9 +3,10 @@ title: "hvigor-config.json5文件"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-set-options
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-set-options
+last_sync: 2026-06-07
+sync_hash: 3e14a7e1
 ---
-
-
 # hvigor-config.json5文件
 
 #### 配置文件结构

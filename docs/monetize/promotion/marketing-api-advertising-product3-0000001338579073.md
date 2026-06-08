@@ -3,8 +3,10 @@ title: "编辑推广产品"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-advertising-product3-0000001338579073
 format: md
+upstream_id: monetize/promotion/marketing-api-advertising-product3-0000001338579073
+last_sync: 2026-06-07
+sync_hash: 9ec189aa
 ---
-
 # 编辑推广产品
 
 您通过本接口可以编辑推广产品。仅可以网页类型的推广产品。

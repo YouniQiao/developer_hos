@@ -2,9 +2,10 @@
 title: "房间匹配"
 original_url: /docs/dev/game-dev/gameobe-matchroom-js-0000002395350385
 format: md
+upstream_id: dev/game-dev/gameobe-matchroom-js-0000002395350385
+last_sync: 2026-06-07
+sync_hash: 734e5751
 ---
-
-
 除好友约战方式外，玩家还可以通过房间匹配的方式，根据传入的参数，优先加入符合条件且最先创建的对战房间中。若未匹配到符合条件的房间，云侧服务器会为玩家自动创建一个符合条件的房间，并默认当前玩家为该房间房主。此种方式主要适用于根据房间类型进行匹配的游戏场景，例如，新手区、高手区等。
 
 ## 前提条件

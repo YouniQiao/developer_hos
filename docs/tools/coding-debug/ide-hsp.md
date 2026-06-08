@@ -2,9 +2,10 @@
 title: "开发动态共享包"
 format: md
 original_url: /docs/tools/coding-debug/ide-hsp
+upstream_id: tools/coding-debug/ide-hsp
+last_sync: 2026-06-07
+sync_hash: 1e3632b3
 ---
-
-
 # 开发动态共享包
 
 DevEco Studio支持开发动态共享包[HSP（Harmony Shared Package）](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)。在应用/元服务开发过程中部分功能按需动态下载，或开发元服务场景时需要分包加载，可使用HSP实现相应功能。当有多个安装包需要资源共享时，也可利用HSP减少公共资源和代码重复打包.

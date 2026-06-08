@@ -1,8 +1,10 @@
 ---
 title: "JsLeakWatcher开发实践"
 original_url: /docs/quality/js-leak-watcher
+upstream_id: /docs/quality/js-leak-watcher
+last_sync: 2026-06-07
+sync_hash: 131bb5c6
 ---
-
 # JsLeakWatcher开发实践
 
 ## 概述
@@ -123,22 +125,22 @@ ArkTS对象内存泄漏，通常会带来以下影响：
 
       ArkTS Snapshot介绍参考资料：[Snapshot分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-snapshot)。
 
-      ArkTS Snapshot分析方法，详细请参考资料：[分析Snapshot数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arkts-memory-leak-analysis#section87474517134)。
+      ArkTS Snapshot分析方法，详细请参考资料：[分析Snapshot数据](/docs/tools/coding-debug/ide-arkts-memory-leak-analysis#section87474517134)。
    2. 将\*.jsleaklist文件导入DevEco Studio解析：
 
       ![](./img/f39c6dab.png)
 
       解析之后展示泄漏对象的信息，是ArkTS堆快照的子集，分析方法和上述ArkTS Snapshot分析方式相同。
 
-      查看[应用对象名称解析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-snapshot-basic-operations#section17661924162612)数据以及泄漏对象对应代码行号：
+      查看[应用对象名称解析](/docs/tools/coding-debug/ide-snapshot-basic-operations#section17661924162612)数据以及泄漏对象对应代码行号：
 
       ![](./img/2c0d2be8.png "点击放大")
 
-      查看泄漏对象的[节点属性与引用链](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-snapshot-basic-operations#section1964818525439)：
+      查看泄漏对象的[节点属性与引用链](/docs/tools/coding-debug/ide-snapshot-basic-operations#section1964818525439)：
 
       ![](./img/5aca7fa7.png "点击放大")
 
-      DevEco支持导入jsleaklist文件的约束限制参考：[离线导入内存快照](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-snapshot-basic-operations#section6760173514388)。
+      DevEco支持导入jsleaklist文件的约束限制参考：[离线导入内存快照](/docs/tools/coding-debug/ide-snapshot-basic-operations#section6760173514388)。
 
 ![](./img/4c56dcc8.png)
 

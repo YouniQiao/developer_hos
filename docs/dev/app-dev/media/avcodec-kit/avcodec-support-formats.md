@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "AVCodec支持的格式"
 original_url: /docs/dev/app-dev/media/avcodec-kit/avcodec-support-formats
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/avcodec-support-formats
+last_sync: 2026-06-07
+sync_hash: dfe0cf38
 ---
-
-
 音视频的编解码能力以及文件格式封装和解封装能力的支持情况，在不同平台存在能力和规格的差异。开发者可以通过[获取支持的编解码能力](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/obtain-supported-codecs)来获取实际的支持情况和规格情况。
 
 ## 媒体编解码

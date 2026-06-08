@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取重置锁屏密码的企业恢复密钥"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-getkeyforresetpin
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-getkeyforresetpin
+last_sync: 2026-06-07
+sync_hash: 14f76ab4
 ---
-
-
 ## 场景介绍
 
 为企业用户提供获取企业恢复密钥的能力，可以在用户忘记锁屏密码时，使用该企业恢复密钥重置用户的锁屏密码。

@@ -3,8 +3,10 @@ title: "功能介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-ocpd_2target_overview-0000001527328981
 format: md
+upstream_id: monetize/promotion/bp-functions-ocpd_2target_overview-0000001527328981
+last_sync: 2026-06-07
+sync_hash: 1e8da321
 ---
-
 # 功能介绍
 
 oCPD双目标出价功能适用于多指标衡量推广效果的应用，最大程度满足开发者对浅层和深层转化目标的考核要求。

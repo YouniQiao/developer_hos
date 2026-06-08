@@ -2,9 +2,10 @@
 title: "更新应用文件信息"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-app-file-info-update-0000002236041430
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-app-file-info-update-0000002236041430
+last_sync: 2026-06-07
+sync_hash: bd019f28
 ---
-
-
 #### 功能介绍
 
 图片、视频等文件上传完成后，通过该接口刷新HarmonyOS应用/元服务的文件信息。

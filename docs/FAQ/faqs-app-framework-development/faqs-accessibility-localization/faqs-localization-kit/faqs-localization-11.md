@@ -2,9 +2,10 @@
 title: "如何实现汉字转拼音"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-accessibility-localization/faqs-localization-kit/faqs-localization-11
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-accessibility-localization/faqs-localization-kit/faqs-localization-11
+last_sync: 2026-06-07
+sync_hash: f5ef84b7
 ---
-
-
 可以通过Transliterator将汉字转成拼音。
 
 参考代码如下：

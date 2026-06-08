@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "（可选）用户身份验证服务接入准备"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-real-name-preparations
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-real-name-preparations
+last_sync: 2026-06-07
+sync_hash: 772dd061
 ---
-
-
 如不涉及身份验证服务接入，可跳过该章节。
 
 ## 开启用户身份验证服务权限开关

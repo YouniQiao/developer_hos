@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "指定PEM格式字符串数据转换非对称密钥对(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-convert-string-data-to-asym-key-pair-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-convert-string-data-to-asym-key-pair-ndk
+last_sync: 2026-06-07
+sync_hash: beb00809
 ---
-
-
 以RSA为例，根据指定的非对称密钥字符串数据，生成非对称密钥对（OH\_CryptoKeyPair）。
 
 ![](./img/4732d4d9.png)

@@ -2,9 +2,10 @@
 format: md
 title: "签名验签错误"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-16
+upstream_id: FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-16
+last_sync: 2026-06-07
+sync_hash: b27f599e
 ---
-
-
 **问题现象**
 
 打包签名提示“**Verify Signature failed**”错误。

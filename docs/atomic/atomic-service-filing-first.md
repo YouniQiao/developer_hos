@@ -2,9 +2,10 @@
 title: "首次核准（备案）"
 original_url: /docs/dev/atomic-dev/atomic-service-cloud/atomic-service-filing-first
 format: md
+upstream_id: dev/atomic-dev/atomic-service-cloud/atomic-service-filing-first
+last_sync: 2026-06-07
+sync_hash: f70feff6
 ---
-
-
 在华为云核准（备案）系统中首次核准（备案）主体信息和元服务信息。操作步骤如下：
 
 1. 登录[华为云核准（备案）系统](https://beian.huaweicloud.com/?utm_source=HUAWEI%2BDeveloper&utm_adplace=AdPlace099034)，填写主办单位信息、互联网信息，完成后点击“验证核准（备案）类型”，其中**“元服务包名”使用“com.atomicservice.\*\*\*”格式的包名**。在弹出的窗口中点击“下一步”。

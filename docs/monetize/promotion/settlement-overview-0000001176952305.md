@@ -2,6 +2,9 @@
 title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/settlement-overview-0000001176952305
+upstream_id: monetize/promotion/settlement-overview-0000001176952305
+last_sync: 2026-06-07
+sync_hash: c46ff729
 ---
 import MergeTable from '@site/src/components/MergeTable';
 

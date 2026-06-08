@@ -3,9 +3,10 @@ title: "天气数据刷新命令&lt;RefreshWeatherCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/refreshweathercommand-0000001194207227
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/basic-function-0000001054908461/orders-0000001073987886/refreshweathercommand-0000001194207227
+last_sync: 2026-06-07
+sync_hash: 2fe2ffbe
 ---
-
-
 # 天气数据刷新命令&lt;RefreshWeatherCommand&gt;
 
 ## 功能概述

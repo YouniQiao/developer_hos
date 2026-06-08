@@ -2,9 +2,10 @@
 title: "向第三方披露"
 original_url: /docs/experience-suggestions/security-privacy/privacy/standard-privacy-ad-identifier
 format: md
+upstream_id: experience-suggestions/security-privacy/privacy/standard-privacy-ad-identifier
+last_sync: 2026-06-07
+sync_hash: 5cca8dfa
 ---
-
-
 # 向第三方披露
 
 |  |  |

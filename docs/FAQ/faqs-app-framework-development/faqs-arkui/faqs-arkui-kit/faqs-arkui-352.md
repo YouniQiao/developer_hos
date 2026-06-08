@@ -2,9 +2,10 @@
 format: md
 title: "如何避免Badge在数量显示切换时的Image闪烁问题"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-352
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-352
+last_sync: 2026-06-07
+sync_hash: 88835319
 ---
-
-
 在 onComplete 回调事件中处理 Badge 数量的逻辑，图片数据加载成功和解码成功时均触发该回调。示例代码如下：
 
 ```

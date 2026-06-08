@@ -2,9 +2,10 @@
 title: "DevEco Studio 6.0.2"
 format: md
 original_url: /docs/tools/coding-debug/release-notes/deveco-studio-602
+upstream_id: tools/coding-debug/release-notes/deveco-studio-602
+last_sync: 2026-06-07
+sync_hash: 1dfcefc4
 ---
-
-
 # DevEco Studio 6.0.2
 
 ## DevEco Studio 6.0.2 Release（6.0.2.660）兼容性配套关系

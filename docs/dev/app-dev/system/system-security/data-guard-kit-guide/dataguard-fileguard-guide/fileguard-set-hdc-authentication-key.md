@@ -2,9 +2,10 @@
 title: "设置HDC鉴权密钥"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-set-hdc-authentication-key
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-set-hdc-authentication-key
+last_sync: 2026-06-07
+sync_hash: 8854de88
 ---
-
-
 ![](./img/876931ac.png)
 
 从6.1.1(24)版本开始，新增HDC鉴权密钥设置接口，支持用户在企业设备上开展安全调试，进一步强化设备安全性。

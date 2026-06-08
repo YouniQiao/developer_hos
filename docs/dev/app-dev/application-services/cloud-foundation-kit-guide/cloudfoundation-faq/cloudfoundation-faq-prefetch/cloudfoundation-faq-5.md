@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "如何通过应用侧日志定位预加载问题"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-faq/cloudfoundation-faq-prefetch/cloudfoundation-faq-5
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-faq/cloudfoundation-faq-prefetch/cloudfoundation-faq-5
+last_sync: 2026-06-07
+sync_hash: 8feb0d0c
 ---
-
-
 预加载的日志进程为“clouddevelopproxy”，日志过滤选择“No filters”。
 
 下文列举几种场景下的日志提示信息：

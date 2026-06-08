@@ -3,8 +3,10 @@ title: "SearchkeyWord"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-searchkeyword-0000001181826457
 format: md
+upstream_id: monetize/promotion/marketapi-modle-searchkeyword-0000001181826457
+last_sync: 2026-06-07
+sync_hash: 1c7f5361
 ---
-
 # SearchkeyWord
 
 ![](./img/be29a47a5d57.png) 

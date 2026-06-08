@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口处理异步操作"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-promise
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-promise
+last_sync: 2026-06-07
+sync_hash: f8a8bac5
 ---
-
-
 ## 简介
 
 使用JSVM-API接口处理异步操作。异步操作是指需要一定时间才能完成的操作，例如从网络下载数据或读取大型文件。与同步操作不同，异步操作不会阻塞主线程，而是会在后台执行。当异步操作完成后，事件循环将把它放入任务队列中，等待主线程空闲时执行。

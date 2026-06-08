@@ -3,9 +3,10 @@ title: "查看ArkUI状态变量"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-arkui-state
 format: md
+upstream_id: tools/coding-debug/ide-arkui-state
+last_sync: 2026-06-07
+sync_hash: ce12f03f
 ---
-
-
 # 查看ArkUI状态变量
 
 从DevEco Studio 6.0.2 Beta1版本开始，支持在调试时查看ArkUI状态变量的实时变化情况。

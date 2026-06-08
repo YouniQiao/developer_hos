@@ -3,9 +3,10 @@ title: "EMUI 11.0升级HarmonyOS 2.0指导"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-upgrade-0000001160790879
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-upgrade-0000001160790879
+last_sync: 2026-06-07
+sync_hash: b7d3399b
 ---
-
-
 # EMUI 11.0升级HarmonyOS 2.0指导
 
 ## 1. 主题包内文件说明

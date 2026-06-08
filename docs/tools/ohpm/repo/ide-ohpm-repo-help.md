@@ -2,9 +2,10 @@
 title: "ohpm-repo help"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-help
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-help
+last_sync: 2026-06-07
+sync_hash: 15515685
 ---
-
-
 # ohpm-repo help
 
 获取有关ohpm-repo的帮助。

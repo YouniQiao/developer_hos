@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "录像实践(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-recording-case
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-recording-case
+last_sync: 2026-06-07
+sync_hash: c7df0f3a
 ---
-
-
 在开发相机应用时，需要先[申请相关权限](/docs/dev/app-dev/media/camera-kit/camera-preparation)。
 
 当前示例提供完整的录像流程介绍，方便开发者了解完整的接口调用顺序。

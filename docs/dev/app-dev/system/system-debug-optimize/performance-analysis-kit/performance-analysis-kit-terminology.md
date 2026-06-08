@@ -2,9 +2,10 @@
 title: "Performance Analysis Kit术语"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/performance-analysis-kit-terminology
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/performance-analysis-kit-terminology
+last_sync: 2026-06-07
+sync_hash: 818bf6b2
 ---
-
-
 ## 通用
 
 ### log版本
@@ -21,11 +22,11 @@ Nolog版本是指在系统中关闭了日志记录功能的系统版本。这种
 
 ### debug版本应用
 
-使用[debug模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)构建的应用。
+使用[debug模式](/docs/tools/coding-debug/ide-hvigor-compilation-options-customizing-guide#section192461528194916)构建的应用。
 
 ### release版本应用
 
-使用[release模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)构建的应用。
+使用[release模式](/docs/tools/coding-debug/ide-hvigor-compilation-options-customizing-guide#section192461528194916)构建的应用。
 
 ## 稳定性
 

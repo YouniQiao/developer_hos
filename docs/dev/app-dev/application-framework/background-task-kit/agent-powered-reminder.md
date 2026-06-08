@@ -2,9 +2,10 @@
 title: "代理提醒(ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/background-task-kit/agent-powered-reminder
 format: md
+upstream_id: dev/app-dev/application-framework/background-task-kit/agent-powered-reminder
+last_sync: 2026-06-07
+sync_hash: 02aaf962
 ---
-
-
 ## 功能介绍
 
 应用退到后台或进程终止后，仍然有一些提醒用户的定时类通知，为满足此类功能场景，系统提供了代理提醒的能力。当应用退至后台或进程终止后，系统会代理应用做定时提醒。当前支持的提醒类型包括：倒计时、日历和闹钟。为了防止代理提醒被滥用于广告、营销类提醒，影响用户体验，部分设备上代理提醒增加了管控机制，应用无法直接使用代理提醒，管控后的使用方法请参考[管控限制](#约束与限制)。
@@ -86,7 +87,7 @@ format: md
 
    ![](./img/5d69594f.png)
 6. 申请审批通过后，互动中心会发送通知给您，同时“申请中”按钮会变为置灰显示的“申请”。
-7. 能力申请通过后，勾选代理提醒的能力开关，点击右上角“保存”。至此，您的应用已成功接入开放能力。此时，调试和发布应用必须重新生成Profile文件并使用[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
+7. 能力申请通过后，勾选代理提醒的能力开关，点击右上角“保存”。至此，您的应用已成功接入开放能力。此时，调试和发布应用必须重新生成Profile文件并使用[手动签名](/docs/tools/coding-debug/ide-signing)。
 
    ![](./img/5937c448.png)
 

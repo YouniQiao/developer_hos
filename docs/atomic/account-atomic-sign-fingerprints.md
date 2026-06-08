@@ -2,9 +2,10 @@
 title: "配置签名和指纹"
 original_url: /docs/dev/atomic-dev/account-guide-atomic-preparations/account-atomic-sign-fingerprints
 format: md
+upstream_id: dev/atomic-dev/account-guide-atomic-preparations/account-atomic-sign-fingerprints
+last_sync: 2026-06-07
+sync_hash: 9c61897f
 ---
-
-
 请先参考“ **[元服务开发准备](/docs/dev/atomic-dev/atomic-service-development/atomic-dev-preparation)** ”章节，完成以下操作步骤：
 
 1. 创建元服务、使用DevEco Studio创建元服务工程（如已完成，请跳过此步骤）。
@@ -13,7 +14,7 @@ format: md
 
    ![](./img/3a8094cc.png)
 
-   **发布阶段**，请参考[发布流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app#section6406135115814)章节，重新配置用于元服务发布的签名信息、添加公钥指纹（必选）。
+   **发布阶段**，请参考[发布流程](/docs/tools/coding-debug/ide-publish-app#section6406135115814)章节，重新配置用于元服务发布的签名信息、添加公钥指纹（必选）。
 
    * 检查是否需要配置公钥指纹：元服务仅接入未成年人模式或compatibleSdkVersion&gt;=20不需要配置公钥指纹，其他场景均需配置。
 

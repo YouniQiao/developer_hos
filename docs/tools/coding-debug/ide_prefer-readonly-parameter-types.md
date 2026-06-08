@@ -3,8 +3,11 @@ title: "@typescript-eslint/prefer-readonly-parameter-types"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_prefer-readonly-parameter-types
 format: md
+upstream_id: tools/coding-debug/ide_prefer-readonly-parameter-types
+last_sync: 2026-06-07
+sync_hash: a9785a11
+upstream_hash: e55ead2e1b1d
 ---
-
 
 # @typescript-eslint/prefer-readonly-parameter-types
 

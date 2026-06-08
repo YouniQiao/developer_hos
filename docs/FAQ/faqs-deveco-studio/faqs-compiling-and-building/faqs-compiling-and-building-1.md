@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“JS heap out of memory”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-1
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-1
+last_sync: 2026-06-07
+sync_hash: 885fc9a8
 ---
-
-
 **问题现象**
 
 编译构建时，出现报错“JS heap out of memory”。

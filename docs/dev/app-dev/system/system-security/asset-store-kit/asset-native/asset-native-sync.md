@@ -2,9 +2,10 @@
 title: "同步（备份恢复）关键资产(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-sync
 format: md
+upstream_id: dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-sync
+last_sync: 2026-06-07
+sync_hash: 8c72355f
 ---
-
-
 ## 添加依赖
 
 在CMake脚本中链接相关动态库。

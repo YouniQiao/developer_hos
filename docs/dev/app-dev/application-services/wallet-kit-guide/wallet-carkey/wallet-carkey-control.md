@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "车控"
 original_url: /docs/dev/app-dev/application-services/wallet-kit-guide/wallet-carkey/wallet-carkey-control
 format: md
+upstream_id: dev/app-dev/application-services/wallet-kit-guide/wallet-carkey/wallet-carkey-control
+last_sync: 2026-06-07
+sync_hash: 3d4d9551
 ---
-
-
 数字车钥匙开通完成后，车主APP可以通过车控指令远程控制车辆的开门等操作。
 
 ![](./img/eaa8631e.png)

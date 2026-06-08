@@ -2,9 +2,10 @@
 title: "方舟字节码函数命名规则"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/arkts-bytecode-function-name
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/arkts-bytecode-function-name
+last_sync: 2026-06-07
+sync_hash: cb32643d
 ---
-
-
 ## 概述
 
 本文介绍字节码文件中[Method](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/arkts-bytecode-file-format#method)的name\_off字段指向的字符串的命名规则，该命名规则从方舟字节码文件版本12.0.4.0开始生效。

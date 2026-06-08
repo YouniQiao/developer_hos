@@ -2,9 +2,10 @@
 title: "JS（小游戏）"
 original_url: /docs/dev/game-dev/games-gamemme-engine-minigame-0000002393266909
 format: md
+upstream_id: dev/game-dev/games-gamemme-engine-minigame-0000002393266909
+last_sync: 2026-06-07
+sync_hash: 8bd74746
 ---
-
-
 调用相关接口需要先完成初始化，初始化是通过创建实例来实现的。
 
 ![](./img/8dcb3c20.png)

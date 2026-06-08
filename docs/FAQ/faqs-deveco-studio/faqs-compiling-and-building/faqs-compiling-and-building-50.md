@@ -2,9 +2,10 @@
 format: md
 title: "如何解决自定义组件struct内不支持定义成员变量get/set方法的问题"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-50
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-50
+last_sync: 2026-06-07
+sync_hash: c1073c36
 ---
-
-
 **问题现象**
 
 运行DevEco Studio的build编译构建功能后，产物中不会生成get/set方法的代码逻辑。

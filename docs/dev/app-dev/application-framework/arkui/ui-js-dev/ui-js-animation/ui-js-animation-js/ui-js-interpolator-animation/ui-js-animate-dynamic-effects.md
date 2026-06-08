@@ -2,9 +2,10 @@
 title: "动画动效"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-animation/ui-js-animation-js/ui-js-interpolator-animation/ui-js-animate-dynamic-effects
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-animation/ui-js-animation-js/ui-js-interpolator-animation/ui-js-animate-dynamic-effects
+last_sync: 2026-06-07
+sync_hash: b7f8a7a9
 ---
-
-
 通过设置插值器来实现动画效果。
 
 ## 创建动画对象

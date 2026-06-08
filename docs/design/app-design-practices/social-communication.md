@@ -3,8 +3,10 @@ title: 社交通讯类
 sidebar_label: 社交通讯类
 original_url: /docs/design/app-design-practices/social-communication
 format: md
+upstream_id: design/app-design-practices/social-communication
+last_sync: 2026-06-07
+sync_hash: 178863d4
 ---
-
 # 社交通讯类
 
 社交通讯类场景主要包括社交动态、IM 对话、通话、会议等类型的应用和场景。此类场景旨在让用户享受高效的浏览和互动交互。需要避免因为部分元素显示过大，导致大屏幕上交互效率降低。建议重点关注首页、详情页、对话页、通话页等，有针对性地适配以提高用户体验。

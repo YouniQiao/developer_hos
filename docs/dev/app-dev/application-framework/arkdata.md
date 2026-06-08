@@ -2,9 +2,10 @@
 title: "ArkData（方舟数据管理）"
 original_url: /docs/dev/app-dev/application-framework/arkdata
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata
+last_sync: 2026-06-07
+sync_hash: 110b8cf8
 ---
-
-
 * **[ArkData简介](/docs/dev/app-dev/application-framework/arkdata/data-mgmt-overview)**
 * **[标准化数据定义](/docs/dev/app-dev/application-framework/arkdata/uniform-data-definition)**
 * **[应用数据持久化](/docs/dev/app-dev/application-framework/arkdata/app-data-persistence)**

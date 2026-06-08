@@ -2,9 +2,10 @@
 title: "dialog开发指导"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-container-components/ui-js-components-dialog
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-container-components/ui-js-components-dialog
+last_sync: 2026-06-07
+sync_hash: 07d059ee
 ---
-
-
 dialog组件用于创建自定义弹窗，通常用来展示用户当前需要或用户必须关注的信息或操作。具体用法请参考[dialog API](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-container-dialog)。
 
 ## 创建dialog组件

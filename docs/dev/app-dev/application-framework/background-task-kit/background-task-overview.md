@@ -2,9 +2,10 @@
 title: "Background Tasks Kit简介"
 original_url: /docs/dev/app-dev/application-framework/background-task-kit/background-task-overview
 format: md
+upstream_id: dev/app-dev/application-framework/background-task-kit/background-task-overview
+last_sync: 2026-06-07
+sync_hash: c213ae55
 ---
-
-
 ## 功能介绍
 
 设备返回主界面、锁屏、应用切换等操作会使应用退至后台。应用退至后台后，如果继续在后台运行，可能会造成设备耗电快、用户界面卡顿等现象。为了降低设备耗电速度、保障用户使用流畅度，系统会对退至后台的应用进行管控，包括[进程](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/process-model-stage)挂起和进程终止。典型场景包括：应用退至后台一段时间应用进程会被挂起、资源不足时系统会终止部分应用进程（即回收该进程的所有资源）。应用进程挂起后，无法使用软件资源（如公共事件、定时器等）和硬件资源（CPU、网络、GPS、蓝牙等）。如何合理使用请参考[后台硬件资源合理使用](/docs/quality/use-of-background-hardware-resources)。

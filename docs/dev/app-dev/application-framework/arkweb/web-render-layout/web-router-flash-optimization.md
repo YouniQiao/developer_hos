@@ -2,9 +2,10 @@
 title: "优化跳转至新Web组件过程中的页面闪烁现象"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-render-layout/web-router-flash-optimization
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-render-layout/web-router-flash-optimization
+last_sync: 2026-06-07
+sync_hash: 64d25a9d
 ---
-
-
 应用使用[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)等路由策略导航至Web组件页面时，在网页加载过程中，页面底部可能出现闪烁现象，这会影响用户体验。
 
 ## 闪烁原因

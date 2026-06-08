@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "实现音频耳返"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-recording/audio-ear-monitor
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-recording/audio-ear-monitor
+last_sync: 2026-06-07
+sync_hash: 40a08c67
+upstream_hash: 0a7eedca989c
 ---
-
 
 实现音频耳返的功能，可将音频实时传输到耳机中，让用户可以实时听到自己或者其他相关声音。
 

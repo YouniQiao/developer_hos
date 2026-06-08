@@ -3,9 +3,10 @@ title: "hilogtool"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/hilog-tool
 format: md
+upstream_id: tools/cli-tools/hilog-tool
+last_sync: 2026-06-07
+sync_hash: dd1aa367
 ---
-
-
 # hilogtool
 
 ## 使用场景

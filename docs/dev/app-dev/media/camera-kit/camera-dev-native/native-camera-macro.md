@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "微距能力设置(C/C++)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-macro
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-native/native-camera-macro
+last_sync: 2026-06-07
+sync_hash: 2a191e0d
 ---
-
-
 从API version 19开始，支持设置微距能力。微距能力是指通过光学设计与算法优化，实现近距离对焦并清晰捕捉微小物体细节的相机功能。
 
 ## 开发步骤

@@ -3,9 +3,10 @@ title: "更新在架应用详情"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-update-0000001239645255/game-center-upgrade-detail-0000001239525221
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-update-0000001239645255/game-center-upgrade-detail-0000001239525221
+last_sync: 2026-06-07
+sync_hash: da382758
 ---
-
-
 # 更新在架应用详情
 
 若您想提升应用的下载转化率和市场曝光度，建议您时常更新在架应用详情。您无需更换软件包即可方便快捷地上传一套效果较好的新素材应用于全网。

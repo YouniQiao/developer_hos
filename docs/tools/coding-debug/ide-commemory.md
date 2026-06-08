@@ -3,9 +3,10 @@ title: "UI组件内存：ComMemory分析"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-commemory
 format: md
+upstream_id: tools/coding-debug/ide-commemory
+last_sync: 2026-06-07
+sync_hash: c40438a7
 ---
-
-
 # UI组件内存：ComMemory分析
 
 从DevEco Studio 6.1.1 Beta1版本开始，DevEco Profiler新增ComMemory模板，可以分析UI界面各组件内存的分配情况，帮助定位UI组件内存泄漏问题。

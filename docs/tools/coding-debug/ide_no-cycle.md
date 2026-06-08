@@ -3,9 +3,10 @@ title: "@security/no-cycle"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-cycle
 format: md
+upstream_id: tools/coding-debug/ide_no-cycle
+last_sync: 2026-06-07
+sync_hash: a6c0dcb2
 ---
-
-
 # @security/no-cycle
 
 该规则禁止使用循环依赖。

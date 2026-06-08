@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "解除应用访问限制"
 original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-apps-restriction/screentimeguard-release-apps-restriction
 format: md
+upstream_id: dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-apps-restriction/screentimeguard-release-apps-restriction
+last_sync: 2026-06-07
+sync_hash: a8c91529
 ---
-
-
 ## 场景介绍
 
 当用户希望解除用户访问某些特定应用的限制时，可以调用解除应用访问限制的接口。根据参数中传入的token以及限制类型（允许/禁用），将允许/禁用清单解析后，解除对应的应用的限制。

@@ -2,9 +2,10 @@
 title: "HiDebug接口使用示例(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hidebug/hidebug-guidelines-arkts
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hidebug/hidebug-guidelines-arkts
+last_sync: 2026-06-07
+sync_hash: 2ba5f68c
 ---
-
-
 HiDebug ArkTS接口功能独立，需要获取调试信息时直接调用。具体调用方式请参考[@ohos.hidebug](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hidebug)中的示例。
 
 ## 开发示例

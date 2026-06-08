@@ -2,9 +2,10 @@
 title: "发起基于账号的订阅请求"
 original_url: /docs/dev/atomic-dev/push-as-subscription/push-as-request-sub
 format: md
+upstream_id: dev/atomic-dev/push-as-subscription/push-as-request-sub
+last_sync: 2026-06-07
+sync_hash: f58df347
 ---
-
-
 ## 场景介绍
 
 元服务领用服务通知模板后，主动向登录华为账号的用户发起订阅请求，Push Kit将向用户弹出授权弹窗。当用户在弹窗中选择后，Push Kit将返回用户的订阅选择给元服务，元服务根据用户的订阅结果处理消息下发逻辑。

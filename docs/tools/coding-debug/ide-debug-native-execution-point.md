@@ -3,9 +3,10 @@ title: "设置执行点"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-native-execution-point
 format: md
+upstream_id: tools/coding-debug/ide-debug-native-execution-point
+last_sync: 2026-06-07
+sync_hash: 1f4b5562
 ---
-
-
 # 设置执行点
 
 开发者可以通过“设置执行点”在调试会话期间跳转到编辑器中的任意代码行，并在对应位置设置执行点，跳过当前位置到目标位置之间的所有代码。

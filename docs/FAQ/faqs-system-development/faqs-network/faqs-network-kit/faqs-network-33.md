@@ -2,9 +2,10 @@
 format: md
 title: "网络波动情况下，底层系统是否会关闭Socket连接"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-33
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-33
+last_sync: 2026-06-07
+sync_hash: d7dd0835
 ---
-
-
 **问题现象**
 
 在网络连接不稳定，频繁出现连接和断开的情况下，底层系统是否会关闭Socket连接？

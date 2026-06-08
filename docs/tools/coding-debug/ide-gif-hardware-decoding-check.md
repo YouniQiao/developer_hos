@@ -3,9 +3,10 @@ title: "@performance/gif-hardware-decoding-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-gif-hardware-decoding-check
 format: md
+upstream_id: tools/coding-debug/ide-gif-hardware-decoding-check
+last_sync: 2026-06-07
+sync_hash: 8af787a7
 ---
-
-
 # @performance/gif-hardware-decoding-check
 
 在使用@ohos/gif-drawable库解码gif图片时，建议开启硬解码，提升gif加载性能。

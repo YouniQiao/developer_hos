@@ -2,8 +2,11 @@
 title: "创建ServiceAbility"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/serviceability/create-serviceability
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/serviceability/create-serviceability
+last_sync: 2026-06-07
+sync_hash: e4af5e08
+upstream_hash: 8c602e7e080b
 ---
-
 
 1. 创建ServiceAbility。
 

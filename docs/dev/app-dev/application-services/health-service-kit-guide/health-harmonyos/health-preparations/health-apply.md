@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "申请运动健康服务"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-preparations/health-apply
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-preparations/health-apply
+last_sync: 2026-06-07
+sync_hash: 23302d7d
+upstream_hash: 5414a19f4ff4
 ---
-
 
 申请运动健康服务前，请先参考[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)，确认开发环境并完成[创建项目](/docs/distribute/agc/agc-help-project-0000002270709469/agc-help-create-project-0000002242804048)、[创建HarmonyOS应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)、[添加公钥指纹](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview#条件必选添加公钥指纹)等基本准备工作，再继续进行以下开发活动。
 

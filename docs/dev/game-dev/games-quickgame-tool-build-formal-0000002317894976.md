@@ -3,9 +3,10 @@ title: "打包正式版本"
 original_url: /docs/dev/game-dev/games-quickgame-tool-build-formal-0000002317894976
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-quickgame-tool-build-formal-0000002317894976
+last_sync: 2026-06-07
+sync_hash: e387c1e4
 ---
-
-
 ## 准备工作
 
 * 将待打包的快游戏项目尽量优化、缩减，确保打出的正式包不超**20MB**。若正式包超过20MB，将无法在AGC控制台提交上架。

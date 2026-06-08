@@ -2,9 +2,10 @@
 title: "使用DSP进行向量计算"
 original_url: /docs/dev/app-dev/system/system-basicfun/fast-kit-guide/fast-dsp-vector-calculation
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/fast-kit-guide/fast-dsp-vector-calculation
+last_sync: 2026-06-07
+sync_hash: f69adb62
 ---
-
-
 数字信号处理（DSP）中的向量计算功能，用于对实值向量和复数数据进行高效的统计运算、数学运算和格式转换。当开发者需要对传感器数据、音频信号或其他数值序列进行最大值查找、求和、点积、复数格式转换等计算时，可以使用向量计算接口。
 
 向量计算支持单精度（float）和双精度（double）两种数据类型，并针对ARM NEON指令集进行了优化，在步长为 1 的连续存储场景下可获得显著性能提升。需要注意的是，为了提升性能，部分接口对浮点数的计算顺序进行了调整，可能影响结果精度。

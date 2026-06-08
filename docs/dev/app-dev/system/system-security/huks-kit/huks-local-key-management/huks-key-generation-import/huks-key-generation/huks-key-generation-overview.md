@@ -2,9 +2,10 @@
 title: "密钥生成介绍及算法规格"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-generation/huks-key-generation-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-generation/huks-key-generation-overview
+last_sync: 2026-06-07
+sync_hash: a9e80b10
 ---
-
-
 当业务需要使用HUKS生成随机密钥，并由HUKS进行安全保存时，可以调用HUKS的接口生成密钥。
 
 ![](./img/04e4cee7.png)

@@ -2,9 +2,10 @@
 title: "为快游戏创新互动卡片添加桌面卡片入口"
 original_url: /docs/dev/game-dev/games-quickgame-interact-card-rpk-add-desk-0000002513179652
 format: md
+upstream_id: dev/game-dev/games-quickgame-interact-card-rpk-add-desk-0000002513179652
+last_sync: 2026-06-07
+sync_hash: 311294f2
 ---
-
-
 为您的快游戏创新互动卡片添加桌面卡片入口。
 
 ## 前提条件

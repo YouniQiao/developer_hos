@@ -2,8 +2,11 @@
 title: "在Web组件的H5页面中，如何使用a标签实现打开各种页面"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-41
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-41
+last_sync: 2026-06-07
+sync_hash: ca8f4693
+upstream_hash: 56d3ff7831e4
 ---
-
 
 情况一：跳转本应用的ArkTS页面
 

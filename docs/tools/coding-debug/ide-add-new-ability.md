@@ -2,9 +2,10 @@
 title: "添加Ability"
 format: md
 original_url: /docs/tools/coding-debug/ide-add-new-ability
+upstream_id: tools/coding-debug/ide-add-new-ability
+last_sync: 2026-06-07
+sync_hash: 176d251f
 ---
-
-
 # 添加Ability
 
 Ability是应用/元服务所具备的能力的抽象，应用的一个Module可以包含一个或多个Ability，元服务仅包含一个Ability。应用/元服务先后提供了两种应用模型：

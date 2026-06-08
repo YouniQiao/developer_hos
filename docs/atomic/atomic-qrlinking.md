@@ -2,9 +2,10 @@
 title: "使用普通链接二维码跳转元服务"
 original_url: /docs/dev/atomic-dev/atomic-linking/atomic-qrlinking
 format: md
+upstream_id: dev/atomic-dev/atomic-linking/atomic-qrlinking
+last_sync: 2026-06-07
+sync_hash: 287f051b
 ---
-
-
 ## 简介
 
 普通链接二维码是通过工具对网页链接进行编码后生成的，与元服务链接生成的二维码相对应。当开发者使用普通链接二维码关联元服务时，不受元服务链接固定域名的限制，可以使用自己的域名，复用现有的二维码资源，从而促进引流。同时，用户只需扫描二维码，无需手动输入网址，即可快速访问指定的元服务页面，提升用户体验。

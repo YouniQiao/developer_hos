@@ -1,12 +1,12 @@
 ---
-
 title: "调试函数"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-debugfunc
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-debugfunc
+last_sync: 2026-06-07
+sync_hash: aac08753
 ---
-
-
 # 调试函数
 
 函数开发完成后，您可以对函数进行调试，以验证函数代码运行是否正常。

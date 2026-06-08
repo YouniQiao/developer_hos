@@ -2,9 +2,10 @@
 title: "接入流程"
 original_url: /docs/distribute/agc/agc-help-location-sense-by-poi-petalmap-0000002373994556/agc-help-petalmap-access-process-0000002407793981
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-by-poi-petalmap-0000002373994556/agc-help-petalmap-access-process-0000002407793981
+last_sync: 2026-06-07
+sync_hash: b411940e
 ---
-
-
 |  |  |  |
 | --- | --- | --- |
 | **序号** | **步骤** | **详情** |

@@ -3,8 +3,10 @@ title: "删除素材"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-delmaterial-0000001181946333
 format: md
+upstream_id: monetize/promotion/marketapi-delmaterial-0000001181946333
+last_sync: 2026-06-07
+sync_hash: 45d52295
 ---
-
 # 删除素材
 
 ## 功能介绍

@@ -2,8 +2,11 @@
 title: "ArkTS侧如何接收Native侧的键值对进行修改并返回到Native侧"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-41
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-41
+last_sync: 2026-06-07
+sync_hash: 1791d968
+upstream_hash: 336a834e150e
 ---
-
 
 1. 使用具体类型如 Record\<string, number\> 或 Map\<string, number\> 接收并修改数据。
 2. 在ArkTS侧的函数中返回修改后的数据，在Native层通过napi\_call\_function可以获取到修改的数据。

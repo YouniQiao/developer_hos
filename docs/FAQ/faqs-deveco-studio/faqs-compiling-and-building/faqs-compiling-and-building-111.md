@@ -2,9 +2,10 @@
 format: md
 title: "构建报错“debug is different”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-111
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-111
+last_sync: 2026-06-07
+sync_hash: eba0783a
 ---
-
-
 **问题现象**
 
 打包应用时，提示“debug is different”。

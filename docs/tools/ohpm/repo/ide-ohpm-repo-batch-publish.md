@@ -2,9 +2,10 @@
 title: "ohpm-repo batch_publish"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-batch-publish
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-batch-publish
+last_sync: 2026-06-07
+sync_hash: 83e7396b
 ---
-
-
 # ohpm-repo batch\_publish
 
 批量上传包文件。

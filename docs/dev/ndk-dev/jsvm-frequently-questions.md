@@ -2,9 +2,10 @@
 title: "JSVM-API常见问题"
 original_url: /docs/dev/ndk-dev/jsvm-frequently-questions
 format: md
+upstream_id: dev/ndk-dev/jsvm-frequently-questions
+last_sync: 2026-06-07
+sync_hash: 555c5ffa
 ---
-
-
 ## 定位方法
 
 程序崩溃类问题：通过C++崩溃时调用栈查询FAQ的方式定位代码问题

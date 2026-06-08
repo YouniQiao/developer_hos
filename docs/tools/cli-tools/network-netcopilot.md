@@ -3,9 +3,10 @@ title: "netcopilot工具"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/network-netcopilot
 format: md
+upstream_id: tools/cli-tools/network-netcopilot
+last_sync: 2026-06-07
+sync_hash: 2656039d
 ---
-
-
 # netcopilot工具
 
 netcopilot是一款帮助开发者进行网络模拟的工具，通过hdc命令行直接调用网络领航员接口，执行网络领航员请求，目前已支持预置场景场景调用和自定义场景调用。

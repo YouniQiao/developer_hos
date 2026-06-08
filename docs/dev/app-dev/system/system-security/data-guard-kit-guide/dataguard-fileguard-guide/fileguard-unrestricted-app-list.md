@@ -2,9 +2,10 @@
 title: "添加、删除和获取放通应用列表"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-unrestricted-app-list
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-unrestricted-app-list
+last_sync: 2026-06-07
+sync_hash: e46f28d2
 ---
-
-
 ![](./img/ed12ada6.png)
 
 从6.1.1(24)版本开始，新增添加、删除和获取放通应用列表的接口，支持用户维护放通应用列表。

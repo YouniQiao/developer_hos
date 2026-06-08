@@ -3,9 +3,10 @@ title: "参数说明"
 original_url: /docs/dev/game-dev/games-center-setup-activities-param-0000002320553297
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-center-setup-activities-param-0000002320553297
+last_sync: 2026-06-07
+sync_hash: ad126d35
 ---
-
-
 ## 奖品素材
 
 礼包奖品需准备如下素材内容：

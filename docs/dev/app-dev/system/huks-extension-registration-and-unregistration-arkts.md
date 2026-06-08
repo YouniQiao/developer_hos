@@ -2,9 +2,10 @@
 title: "注册/注销Provider(ArkTS)"
 original_url: /docs/dev/app-dev/system/huks-extension-registration-and-unregistration-arkts
 format: md
+upstream_id: dev/app-dev/system/huks-extension-registration-and-unregistration-arkts
+last_sync: 2026-06-07
+sync_hash: f7090090
 ---
-
-
 从API 22开始，huksExternalCrypto提供Provider注册和注销功能接口。
 
 ## 注册Provider

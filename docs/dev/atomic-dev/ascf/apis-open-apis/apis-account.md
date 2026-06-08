@@ -2,9 +2,10 @@
 title: "账号"
 original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-account
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-open-apis/apis-account
+last_sync: 2026-06-07
+sync_hash: b00ee662
 ---
-
-
 ## has.login
 
 has.login(Object object)

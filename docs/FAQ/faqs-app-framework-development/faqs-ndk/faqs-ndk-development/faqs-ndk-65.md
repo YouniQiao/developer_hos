@@ -2,9 +2,10 @@
 format: md
 title: "使用napi_run_script_path接口执行包内abc文件的使用限制"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-65
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-65
+last_sync: 2026-06-07
+sync_hash: e1b42e66
 ---
-
-
 **问题现象**
 
 1. 通过这个API执行的abc文件运行在哪个JS上下文，是否可以与主线程进行交互？

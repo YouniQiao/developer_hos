@@ -3,8 +3,10 @@ title: "AdSubTaskStatistic"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-adsubtaskstatistic-0000001202666373
 format: md
+upstream_id: monetize/promotion/marketapi-modle-adsubtaskstatistic-0000001202666373
+last_sync: 2026-06-07
+sync_hash: 7f7b444f
 ---
-
 # AdSubTaskStatistic
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |

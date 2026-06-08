@@ -2,8 +2,11 @@
 title: "页面转场动画 (不推荐)"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition/arkts-page-transition-animation
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition/arkts-page-transition-animation
+last_sync: 2026-06-07
+sync_hash: 378ca9f6
+upstream_hash: c0ca7c52d65b
 ---
-
 
 为了实现更好的转场效果，推荐使用[Navigation转场动画](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-animation)和[模态转场](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition/arkts-modal-transition)。
 

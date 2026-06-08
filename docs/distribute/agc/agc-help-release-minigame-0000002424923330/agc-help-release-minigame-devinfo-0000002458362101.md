@@ -2,9 +2,10 @@
 title: "填写开发者服务信息"
 original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-devinfo-0000002458362101
 format: md
+upstream_id: distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-devinfo-0000002458362101
+last_sync: 2026-06-07
+sync_hash: bcd376d7
 ---
-
-
 填写开发者服务信息，方便玩家咨询或反馈小游戏相关问题。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，选择待上架的小游戏。

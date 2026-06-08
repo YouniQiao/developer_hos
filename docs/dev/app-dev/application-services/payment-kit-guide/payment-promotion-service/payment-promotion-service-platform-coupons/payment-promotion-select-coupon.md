@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "选券场景"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-promotion-service/payment-promotion-service-platform-coupons/payment-promotion-select-coupon
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-promotion-service/payment-promotion-service-platform-coupons/payment-promotion-select-coupon
+last_sync: 2026-06-07
+sync_hash: 06937ff6
 ---
-
-
 ## 场景介绍
 
 从6.1.0(23)版本开始，新增支持选券场景。

@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "健康使用设备授权列表页中应用授权开关打开/关闭时触发回调"
 original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-interface-call-auth/screentimeguard-switch-state-change-callback
 format: md
+upstream_id: dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-interface-call-auth/screentimeguard-switch-state-change-callback
+last_sync: 2026-06-07
+sync_hash: 0ec905f2
+upstream_hash: f78a498eb3b2
 ---
-
 
 ## 场景介绍
 

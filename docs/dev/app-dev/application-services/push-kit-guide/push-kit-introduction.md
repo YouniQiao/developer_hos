@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Push Kit简介"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-kit-introduction
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-kit-introduction
+last_sync: 2026-06-07
+sync_hash: 13f46eff
 ---
-
-
 Push Kit（推送服务）是华为提供的消息推送平台，建立了从云端到终端的消息推送通道。所有HarmonyOS应用可通过集成Push Kit，实现向应用实时推送消息，使消息易见，构筑良好的用户关系，提升用户的感知度和活跃度。
 
 ## 快速入门
@@ -114,7 +115,7 @@ Push Kit不支持云真机调试。
 
 Push Kit支持模拟器，但与真机存在部分能力差异，具体差异如下。
 
-* 通用差异：请参见“[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification#section1227613205203)”。
+* 通用差异：请参见“[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification#section1227613205203)”。
 * 模拟器不支持推送语音播报消息、推送实况窗消息、推送应用内通话消息。
 
 ## 与相关Kit的关系

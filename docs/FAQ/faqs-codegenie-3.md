@@ -2,9 +2,10 @@
 format: md
 title: "CodeGenie偶现报错：The reasoning_content in the thinking mode must be passed back to the API."
 original_url: /docs/FAQ/faqs-codegenie-3
+upstream_id: FAQ/faqs-codegenie-3
+last_sync: 2026-06-07
+sync_hash: 7985f782
 ---
-
-
 **问题现象**
 
 DevEco Studio 6.1.0 Release（6.1.0.850）及以上版本，在CodeGenie中通过URL方式配置deepseek-v4模型后，过程中界面提示“The reasoning\_content in the thinking mode must be passed back to the API.”。

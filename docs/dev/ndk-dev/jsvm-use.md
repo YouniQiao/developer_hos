@@ -2,9 +2,10 @@
 title: "JSVM-API使用指导"
 original_url: /docs/dev/ndk-dev/jsvm-use
 format: md
+upstream_id: dev/ndk-dev/jsvm-use
+last_sync: 2026-06-07
+sync_hash: 3e445b71
 ---
-
-
 * **[使用JSVM-API接口进行任务队列相关开发](/docs/dev/ndk-dev/use-jsvm-execute_tasks)**
 * **[使用JSVM-API接口进行虚拟机快照相关开发](/docs/dev/ndk-dev/use-jsvm-create-snapshot)**
 * **[使用JSVM-API接口进行WebAssembly模块相关开发](/docs/dev/ndk-dev/use-jsvm-about-wasm)**

@@ -2,8 +2,11 @@
 format: md
 title: "如何用hdc命令将本地文件发送至远端设备"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-17
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-17
+last_sync: 2026-06-07
+sync_hash: 1cb0fe37
+upstream_hash: fcfd1f415ff2
 ---
-
 
 从本地向远端设备发送文件，命令格式如下：
 

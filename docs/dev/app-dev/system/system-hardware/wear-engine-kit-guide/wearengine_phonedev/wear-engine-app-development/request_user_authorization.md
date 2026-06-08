@@ -2,9 +2,10 @@
 title: "请求用户授权"
 original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/request_user_authorization
 format: md
+upstream_id: dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/request_user_authorization
+last_sync: 2026-06-07
+sync_hash: e67f6274
 ---
-
-
 为保护用户隐私，Wear Engine的API需要用户授权才可以正常访问。建议开发者在用户首次调用Wear Engine开放能力的时候执行本章节操作。
 
 ## 申请用户穿戴设备权限

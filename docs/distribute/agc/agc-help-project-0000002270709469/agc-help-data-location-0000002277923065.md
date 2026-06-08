@@ -2,9 +2,10 @@
 title: "管理数据处理位置"
 original_url: /docs/distribute/agc/agc-help-project-0000002270709469/agc-help-data-location-0000002277923065
 format: md
+upstream_id: distribute/agc/agc-help-project-0000002270709469/agc-help-data-location-0000002277923065
+last_sync: 2026-06-07
+sync_hash: 12a49616
 ---
-
-
 #### 简介
 
 AppGallery Connect的部分服务在处理您的应用及用户的数据时，需要您指定数据处理位置，以便这些服务能够在您期望的位置上处理您的应用及用户的数据。

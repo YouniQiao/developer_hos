@@ -2,9 +2,10 @@
 title: "Content Embed Kit简介"
 original_url: /docs/dev/app-dev/application-framework/content-embed-kit/content-embed-kit-overview
 format: md
+upstream_id: dev/app-dev/application-framework/content-embed-kit/content-embed-kit-overview
+last_sync: 2026-06-07
+sync_hash: 5494ebdf
 ---
-
-
 从API version 24开始，Content Embed Kit（内容嵌入服务）为开发者提供应用间文档互相嵌入与协同编辑的能力，帮助用户在本应用文档中嵌入其他格式的文档，并实现跨应用的文档编辑能力，丰富应用编辑体验。
 
 在Content Embed Kit套件中，按应用承担的职责不同，有如下应用分类模型：

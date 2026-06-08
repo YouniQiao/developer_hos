@@ -2,9 +2,10 @@
 title: "申请全网态服务上线"
 original_url: /docs/distribute/agc/agc-help-poi-apply-formalstate-service-0000002349016132/agc-help-apply-formalstate-service-launch-0000002410652629
 format: md
+upstream_id: distribute/agc/agc-help-poi-apply-formalstate-service-0000002349016132/agc-help-apply-formalstate-service-launch-0000002410652629
+last_sync: 2026-06-07
+sync_hash: 96baecf2
 ---
-
-
 ![](../img/agc-help-apply-formalstate-service-launch-0000002410652629_0.png)
 
 在申请全网态服务上线之前，请确保真机测试已满足[小艺建议出卡的验收要求](/docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-xiaoyi-requirements-for-card-out-0000002430663182)，以避免申请后被审核驳回。

@@ -2,9 +2,10 @@
 title: "循环渲染迁移"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-state-management-v1-v2-migration-guide/arkts-v1-v2-migration-rendering-control-repeat
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-state-management-v1-v2-migration-guide/arkts-v1-v2-migration-rendering-control-repeat
+last_sync: 2026-06-07
+sync_hash: 79b8e405
 ---
-
-
 本文档主要介绍组件循环渲染从V1向V2的迁移，涉及如下渲染控制组件。
 
 | 迁移前渲染控制组件名称 | 迁移后渲染控制组件名称 |

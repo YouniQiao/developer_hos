@@ -3,9 +3,10 @@ title: "应用升级targetSDKVersion兼容低版本指导"
 displayed_sidebar: appCompatibilitySidebar
 original_url: /docs/design/app-compatibility/app-compatibility-upgrade
 format: md
+upstream_id: design/app-compatibility/app-compatibility-upgrade
+last_sync: 2026-06-07
+sync_hash: 175d11f8
 ---
-
-
 # 应用升级targetSDKVersion兼容低版本指导
 
 应用的源码工程配置项（build-profile.json5文件）中通过targetSdkVersion和compatibleSdkVersion定义了应用运行的目标SDK版本和最低SDK版本。

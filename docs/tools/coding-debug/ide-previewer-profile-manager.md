@@ -3,9 +3,10 @@ title: "Profile Manager"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-previewer-profile-manager
 format: md
+upstream_id: tools/coding-debug/ide-previewer-profile-manager
+last_sync: 2026-06-07
+sync_hash: 67ef2b38
 ---
-
-
 # Profile Manager
 
 由于真机设备型号众多，不同设备型号的屏幕分辨率可能各不相同。因此，在HarmonyOS应用/元服务开发过程中，为了适配多种设备型号，可能需要查看不同设备上的界面显示效果。对此，DevEco Studio的预览器提供了Profile Manager功能，支持开发者自定义预览设备Profile（包含分辨率和语言），从而可以通过定义不同的预览设备Profile，查看HarmonyOS应用/元服务在不同设备上的预览显示效果。当前支持自定义设备分辨率及系统语言。

@@ -2,9 +2,10 @@
 title: "使用SM2非对称密钥加解密(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-sm2-asym-encrypt-decrypt-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-sm2-asym-encrypt-decrypt-ndk
+last_sync: 2026-06-07
+sync_hash: 374bf9f1
 ---
-
-
 对应的算法规格请查看[非对称密钥加解密算法规格：SM2](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-spec/crypto-asym-encrypt-decrypt-spec#sm2)。
 
 **加密**

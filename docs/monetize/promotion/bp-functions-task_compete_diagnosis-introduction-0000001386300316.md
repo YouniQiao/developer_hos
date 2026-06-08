@@ -3,8 +3,10 @@ title: "功能介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-task_compete_diagnosis-introduction-0000001386300316
 format: md
+upstream_id: monetize/promotion/bp-functions-task_compete_diagnosis-introduction-0000001386300316
+last_sync: 2026-06-07
+sync_hash: ba751b18
 ---
-
 # 功能介绍
 
 针对您在推广时不知道当前任务各项指标的竞争力状态，无法判断自身业务质量等场景，应用市场应用推广平台提供<strong>任务竞争力诊断</strong>功能，帮助您识别推广任务各项的竞争力水平，为您的投放方案提供有价值的方向，快速提升整体竞争力。

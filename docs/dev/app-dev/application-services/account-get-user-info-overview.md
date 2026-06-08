@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "概述"
 original_url: /docs/dev/app-dev/application-services/account-get-user-info-overview
 format: md
+upstream_id: dev/app-dev/application-services/account-get-user-info-overview
+last_sync: 2026-06-07
+sync_hash: 286c8711
 ---
-
-
 当应用需要获取用户身份标识或者完善用户个人资料（头像昵称、收货地址、发票抬头）时，或需要获取用户风险等级判断用户风险时，可通过Account Kit提供的相关能力，引导用户填写、管理相关信息并完成授权。获取头像昵称、收货地址、发票抬头等详细接入体验可参考Account Kit提供的[SampleCode示例工程](https://gitcode.com/HarmonyOS_Samples/accountkit-samplecode-clientdemo-arkts)。
 
 **典型场景：**

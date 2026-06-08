@@ -2,9 +2,10 @@
 title: "提交资质审核任务"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-post-qualification-review-0000002271000629
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-post-qualification-review-0000002271000629
+last_sync: 2026-06-07
+sync_hash: bce1d103
 ---
-
-
 #### 功能介绍
 
 此接口用于提交元服务的资质审核任务。

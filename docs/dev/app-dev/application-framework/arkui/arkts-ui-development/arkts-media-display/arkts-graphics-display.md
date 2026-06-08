@@ -2,9 +2,10 @@
 title: "显示图片 (Image)"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-media-display/arkts-graphics-display
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-media-display/arkts-graphics-display
+last_sync: 2026-06-07
+sync_hash: e25454c3
 ---
-
-
 开发者经常需要在应用中显示一些图片，例如：按钮中的icon、网络图片、本地图片等。在应用中显示图片需要使用Image组件实现，Image支持多种图片格式，包括png、jpg、jpeg等格式，不支持apng和svga格式，具体支持格式和用法请参考[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image)组件。
 
 Image通过调用接口来创建，接口调用形式如下：
@@ -33,7 +34,7 @@ Image支持加载存档图、多媒体像素图和可绘制描述符三种类型
 
   ![](./img/0799fc00.png)
 
-  从DevEco Studio 6.0.0 Beta2版本开始，新建工程或模块时，默认创建的模块不会对非resources目录下的资源进行打包，需使相关模块：build-profile.json5中buildOption > resOptions > copyCodeResource > enable设置为true，详见resOptions中[copyCodeResource](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile#table1476161719356)相关介绍。
+  从DevEco Studio 6.0.0 Beta2版本开始，新建工程或模块时，默认创建的模块不会对非resources目录下的资源进行打包，需使相关模块：build-profile.json5中buildOption > resOptions > copyCodeResource > enable设置为true，详见resOptions中[copyCodeResource](/docs/tools/coding-debug/ide-hvigor-build-profile#table1476161719356)相关介绍。
 
   ```
   // 'images/view.jpg'需要替换为开发者所需的资源文件
@@ -417,7 +418,7 @@ Image加载的SVG图源路径设置方法如下所示：
 
 ![](./img/07616bb7.png)
 
-从DevEco Studio 6.0.0 Beta2版本开始，新建工程或模块时，默认创建的模块不会对非resources目录下的资源进行打包，需使相关模块：build-profile.json5中buildOption > resOptions > copyCodeResource > enable设置为true，详见resOptions中[copyCodeResource](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile#table1476161719356)相关介绍。
+从DevEco Studio 6.0.0 Beta2版本开始，新建工程或模块时，默认创建的模块不会对非resources目录下的资源进行打包，需使相关模块：build-profile.json5中buildOption > resOptions > copyCodeResource > enable设置为true，详见resOptions中[copyCodeResource](/docs/tools/coding-debug/ide-hvigor-build-profile#table1476161719356)相关介绍。
 
 ```
 // 'images/icon.svg'需要替换为开发者所需的资源文件

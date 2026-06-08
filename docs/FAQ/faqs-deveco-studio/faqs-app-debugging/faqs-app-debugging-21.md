@@ -2,9 +2,10 @@
 format: md
 title: "Hot Reload执行失败原因说明"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-21
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-21
+last_sync: 2026-06-07
+sync_hash: 7e0b501d
 ---
-
-
 **问题现象**
 
 热重载执行结果失败，控制台打印蓝色重启链接：“Reloaded 1 files failed. Please reinstall and restart.”

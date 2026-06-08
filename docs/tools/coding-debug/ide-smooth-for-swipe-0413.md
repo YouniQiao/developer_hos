@@ -3,9 +3,10 @@ title: "滑动过程流畅"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-smooth-for-swipe-0413
 format: md
+upstream_id: tools/coding-debug/ide-smooth-for-swipe-0413
+last_sync: 2026-06-07
+sync_hash: ff212bf6
 ---
-
-
 # 滑动过程流畅
 
 #### 规则详情

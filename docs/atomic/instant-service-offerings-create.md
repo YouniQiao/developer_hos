@@ -2,9 +2,10 @@
 title: "创建商品"
 original_url: /docs/dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-create
 format: md
+upstream_id: dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-create
+last_sync: 2026-06-07
+sync_hash: 86b6d669
 ---
-
-
 ## 功能介绍
 
 “创建商品”接口用于商家首次提交商品基本信息，完成商品的上架申请。商家通过该接口上传商品名称、类目、价格、主图等核心信息，平台接收后启动内容安全与合规性审核流程。审核通过后，商品将进入可分发状态。

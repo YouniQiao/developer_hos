@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "权益发放"
 original_url: /docs/dev/app-dev/application-services/iap-delivering-products
 format: md
+upstream_id: dev/app-dev/application-services/iap-delivering-products
+last_sync: 2026-06-07
+sync_hash: d24f1013
+upstream_hash: 1f4a9bfa12f4
 ---
-
 
 ## 场景介绍
 

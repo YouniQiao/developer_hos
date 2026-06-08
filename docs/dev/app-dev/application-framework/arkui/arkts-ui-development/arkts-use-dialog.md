@@ -2,9 +2,10 @@
 title: "使用弹窗"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog
+last_sync: 2026-06-07
+sync_hash: 9b09da8d
 ---
-
-
 * **[弹窗概述](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-dialog-overview)**
 * **[弹出框 (Dialog)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs)**
 * **[菜单](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-menu)**

@@ -2,9 +2,10 @@
 title: "使用Node-API接口进行array相关开发"
 original_url: /docs/dev/ndk-dev/use-napi-about-array
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-array
+last_sync: 2026-06-07
+sync_hash: d8269f8e
 ---
-
-
 ## 简介
 
 使用Node-API接口进行array相关开发时，调用相关接口可以在Node-API模块中直接操作和处理ArkTS中的数组。

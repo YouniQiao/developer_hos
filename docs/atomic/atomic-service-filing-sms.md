@@ -2,9 +2,10 @@
 title: "工信部核验核准（备案）短信"
 original_url: /docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing-sms
 format: md
+upstream_id: dev/atomic-dev/atomic-service-filing/atomic-service-filing-sms
+last_sync: 2026-06-07
+sync_hash: cd3c1211
 ---
-
-
 核准（备案）材料经华为初审通过后，华为工作人员将核准（备案）申请转交至管局处做最终的管局审核。转交后，主体负责人将先后收到华为的通知短信和工信部的短信验证码，**通知短信**是告知核准（备案）信息已提交至管局，**短信验证码**需要核准（备案）负责人前往工信部网站完成短信核验，只有完成短信核验，核准（备案）申请才能正式进入通管局进行终审。请核准（备案）负责人在24小时内前往工信部网站完成短信核验。
 
 ## 短信核验

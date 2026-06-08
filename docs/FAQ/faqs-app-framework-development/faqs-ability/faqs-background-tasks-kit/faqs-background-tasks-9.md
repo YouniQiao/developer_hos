@@ -2,9 +2,10 @@
 format: md
 title: "如何查询后台任务中短时任务/长时任务/延迟任务/后台代理提醒相关的系统日志"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-background-tasks-kit/faqs-background-tasks-9
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-background-tasks-kit/faqs-background-tasks-9
+last_sync: 2026-06-07
+sync_hash: c55e16f3
 ---
-
-
 以后台任务中短时任务为例。可以在日志中通过过滤关键字“C01711/TRANSIENT\_TASK”来查询短时任务的状态情况，包括查询申请短时任务状态、查询对应短时任务的剩余时间和取消短时任务状态等。
 
 ![](./img/ec6d07de.png "点击放大")

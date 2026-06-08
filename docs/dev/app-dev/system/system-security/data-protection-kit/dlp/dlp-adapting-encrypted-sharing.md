@@ -2,9 +2,10 @@
 title: "适配加密分享"
 original_url: /docs/dev/app-dev/system/system-security/data-protection-kit/dlp/dlp-adapting-encrypted-sharing
 format: md
+upstream_id: dev/app-dev/system/system-security/data-protection-kit/dlp/dlp-adapting-encrypted-sharing
+last_sync: 2026-06-07
+sync_hash: 34b7b49f
 ---
-
-
 ## 介绍
 
 DLP加密分享是基于系统级数据防泄漏框架构建的数据安全功能，用户在分享文件时可以使用该功能对文件进行加密保护，加密后的文件仅指定的华为账号用户可以查看，从而实现防止转发的安全效果。

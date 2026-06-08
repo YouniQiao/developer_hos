@@ -1,12 +1,12 @@
 ---
-
 title: "开发函数"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-funccoding
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-funccoding
+last_sync: 2026-06-07
+sync_hash: 15b26875
 ---
-
-
 # 开发函数
 
 函数创建并配置完成后，您便可以开始编写函数业务代码了。

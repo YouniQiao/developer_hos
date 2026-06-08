@@ -2,9 +2,10 @@
 title: "Web组件渲染模式"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-render-layout/web-render-mode
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-render-layout/web-render-mode
+last_sync: 2026-06-07
+sync_hash: 5dff43d7
 ---
-
-
 Web组件提供了两种可配置的渲染模式，能够根据不同的容器大小进行适配，从而满足使用场景中对容器尺寸的需求。
 
 ## 异步渲染模式（默认）

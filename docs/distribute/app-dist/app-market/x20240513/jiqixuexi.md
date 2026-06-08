@@ -3,8 +3,10 @@ title: "华为机器学习服务使用协议"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x20240513/jiqixuexi
 format: md
+upstream_id: distribute/app-dist/app-market/x20240513/jiqixuexi
+last_sync: 2026-06-07
+sync_hash: 548dd422
 ---
-
 # 华为机器学习服务使用协议
 
 点击下载[华为机器学习服务使用协议](https://terms-drcn.platform.dbankcloud.cn/agreementservice/developer/getAgreementTemplate?agrType=1096&country=cn&language=zh_cn&version=2022090201)。

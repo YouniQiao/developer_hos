@@ -3,8 +3,10 @@ title: "RTA广告请求接口"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-rta-interface-request-0000001299178600
 format: md
+upstream_id: monetize/promotion/bp-functions-rta-interface-request-0000001299178600
+last_sync: 2026-06-07
+sync_hash: ec7114d6
 ---
-
 # RTA广告请求接口
 
 ## 功能介绍

@@ -3,9 +3,10 @@ title: "内容上架流程"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/content-listing-process-0000001364289837
 format: md
+upstream_id: distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/content-listing-process-0000001364289837
+last_sync: 2026-06-07
+sync_hash: 3c1f1c65
 ---
-
-
 # 内容上架流程
 
 ![](./img/125c72b19a17.png)

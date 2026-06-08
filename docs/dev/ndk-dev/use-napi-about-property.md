@@ -2,9 +2,10 @@
 title: "使用Node-API接口设置ArkTS对象的属性"
 original_url: /docs/dev/ndk-dev/use-napi-about-property
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-property
+last_sync: 2026-06-07
+sync_hash: a2125805
 ---
-
-
 ## 简介
 
 使用Node-API接口获取和设置ArkTS对象的属性，实现更复杂的功能和逻辑。

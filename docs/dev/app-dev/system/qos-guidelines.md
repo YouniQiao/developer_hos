@@ -2,9 +2,10 @@
 title: "QoS 开发指导"
 original_url: /docs/dev/app-dev/system/qos-guidelines
 format: md
+upstream_id: dev/app-dev/system/qos-guidelines
+last_sync: 2026-06-07
+sync_hash: 138908b9
 ---
-
-
 ## 场景介绍
 
 自多道程序及多任务操作系统问世以来，CPU、内存等有限的系统资源成为系统中所有任务的竞争对象。合理安排各个任务对系统的响应速度以及资源消耗都有非常重大的意义。相比操作系统，开发者更加清楚应用中各个任务的重要程度；根据重要程度对应用的任务进行分类，能帮助系统更好地进行任务的调度。通过本指导，开发者可以了解在HarmonyOS系统中，如何利用QoS特性及相关的接口调节任务在系统中的运行时间分配。

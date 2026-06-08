@@ -3,9 +3,10 @@ title: "使用断点"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-native-breakpoint
 format: md
+upstream_id: tools/coding-debug/ide-debug-native-breakpoint
+last_sync: 2026-06-07
+sync_hash: b1f0acf8
 ---
-
-
 # 使用断点
 
 点击<strong>View Breakpoints</strong> 图标![](./img/zh-cn_image_0000002571546578.png)可以打开断点管理界面，您可以在断点管理界面查看或更改您的断点。

@@ -2,9 +2,10 @@
 title: "在NDK工程中使用预构建库"
 original_url: /docs/dev/ndk-dev/build-with-ndk-prebuilts
 format: md
+upstream_id: dev/ndk-dev/build-with-ndk-prebuilts
+last_sync: 2026-06-07
+sync_hash: 328ca3ee
 ---
-
-
 在NDK工程中，可以通过CMake语法规则引入并使用预构建库。在引用预构建库时，模块libs目录中的预构建库，以及在CMakeLists.txt编译脚本中声明的预构建库都会被打包。
 
 ## 预构建库使用约束

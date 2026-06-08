@@ -2,9 +2,10 @@
 title: "开发准备"
 original_url: /docs/dev/atomic-dev/atomic-push-development/push-as-prepare
 format: md
+upstream_id: dev/atomic-dev/atomic-push-development/push-as-prepare
+last_sync: 2026-06-07
+sync_hash: 1084cf9f
 ---
-
-
 在阅读本章节前，请先参考“[元服务开发准备](/docs/dev/atomic-dev/atomic-service-development/atomic-dev-preparation)”完成基本准备工作，再继续进行以下开发活动。
 
 ![](./img/fa6cdf5d.png)

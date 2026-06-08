@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用LPP播放器播放视频 (C/C++)"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-playback-c/using-ndk-lpp-for-playback
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-c/media-playback-c/using-ndk-lpp-for-playback
+last_sync: 2026-06-07
+sync_hash: 21c46e7b
 ---
-
-
 从API version 20开始，使用LPP（low power player）播放器可以通过低功耗实现从媒体源到渲染的视频通路能力。本指南通过播放本地视频的示例，讲解如何使用LowPowerPlayer播放视频。
 
 ![](./img/eab3c388.png)

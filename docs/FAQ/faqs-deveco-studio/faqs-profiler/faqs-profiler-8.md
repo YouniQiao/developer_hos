@@ -2,9 +2,10 @@
 format: md
 title: "Profiler录制Launch，详情中Load ETS Files和TOP Redundant页签无数据"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-8
+upstream_id: FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-8
+last_sync: 2026-06-07
+sync_hash: 843e1017
 ---
-
-
 **问题现象**
 
 Profiler录制Launch，将ETS文件监控时长配置为20000，录制成功后，详情中Load ETS Files和TOP Redundant页签无数据。

@@ -2,9 +2,10 @@
 title: "取消接入"
 original_url: /docs/dev/game-dev/quickgame-filing-app-cancel-0000001801045912
 format: md
+upstream_id: dev/game-dev/quickgame-filing-app-cancel-0000001801045912
+last_sync: 2026-06-07
+sync_hash: 3cbe1df6
 ---
-
-
 ## 前提条件
 
 已前往应用市场下载最新版本的华为云App。

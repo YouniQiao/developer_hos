@@ -2,9 +2,10 @@
 title: "Web应用模拟点击检测"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-detect-simulated-click-risk-enhanced
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-detect-simulated-click-risk-enhanced
+last_sync: 2026-06-07
+sync_hash: 5492a48b
 ---
-
-
 从API version 23开始，新增支持Web应用模拟点击检测。
 
 Web应用通过Javascript调用window.detectSimulatedClickRiskEnhanced接口，获取模拟点击检测结果。用于自动化点击、设备墙等作弊行为检测。

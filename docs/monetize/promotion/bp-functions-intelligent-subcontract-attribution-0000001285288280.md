@@ -3,6 +3,10 @@ title: "客户端归因查询"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-intelligent-subcontract-attribution-0000001285288280
 format: md
+upstream_id: monetize/promotion/bp-functions-intelligent-subcontract-attribution-0000001285288280
+last_sync: 2026-06-07
+sync_hash: cff015a8
+upstream_hash: 680d5f2ed1ec
 ---
 
 # 客户端归因查询

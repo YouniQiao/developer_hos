@@ -2,9 +2,10 @@
 format: md
 title: "时延类指标出现负数是什么原因"
 original_url: /docs/FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-scenario-based-performance-test/faqs-scenario-based-performance-test-14
+upstream_id: FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-scenario-based-performance-test/faqs-scenario-based-performance-test-14
+last_sync: 2026-06-07
+sync_hash: e9389df5
 ---
-
-
 **响应时延**
 
 -2：起始点错误

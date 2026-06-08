@@ -2,9 +2,10 @@
 title: "意图框架概述"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-overview
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-overview
+last_sync: 2026-06-07
+sync_hash: 6cdd9a87
 ---
-
-
 ## 场景介绍
 
 开发者可以通过意图框架提供的意图开发功能，将应用功能以“意图”形式集成至系统入口。用户通过系统入口（如语音助手、智能推荐卡片）触发意图执行，即可便捷使用应用提供的功能。

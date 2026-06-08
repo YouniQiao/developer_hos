@@ -2,9 +2,10 @@
 format: md
 title: "Tab组件页面切换时，如何不显示中间过渡的tab页"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-328
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-328
+last_sync: 2026-06-07
+sync_hash: 4f1e427f
 ---
-
-
 如果需要做动画，可以通过设置[.animationDuration(0)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs#animationduration)跳过中间过渡页显示，示例代码如下：
 
 ```

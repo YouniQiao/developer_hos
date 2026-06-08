@@ -2,9 +2,10 @@
 title: "UI稳定性故障分析概述"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-stability/arkts-stability-guide
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-stability/arkts-stability-guide
+last_sync: 2026-06-07
+sync_hash: 2eae5d8d
 ---
-
-
 本文档将简单介绍稳定性故障的概念与分类，并提供各类稳定性问题的参考帮助，用于指导应用开发者充分利用系统提供的调试能力和工具定位各类稳定性问题。
 
 应用稳定性问题主要包括应用崩溃、应用无响应、应用资源泄漏等问题。性能问题不属于稳定性范畴，要了解性能相关内容可以参考[UI性能优化概览](/docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-performance-overview)。

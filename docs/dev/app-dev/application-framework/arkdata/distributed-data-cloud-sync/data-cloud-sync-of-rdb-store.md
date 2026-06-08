@@ -2,9 +2,10 @@
 title: "端云数据同步关系型数据库端侧开发指导 (ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/distributed-data-cloud-sync/data-cloud-sync-of-rdb-store
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/distributed-data-cloud-sync/data-cloud-sync-of-rdb-store
+last_sync: 2026-06-07
+sync_hash: 74274def
 ---
-
-
 ## 场景介绍
 
 端云数据同步：关系型数据库提供端云同步的能力，云作为数据的中心节点，设备通过与云的数据同步，实现同账号设备间的数据一致性。

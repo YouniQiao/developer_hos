@@ -3,8 +3,11 @@ title: "界面布局"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-profiler-layout
 format: md
+upstream_id: tools/coding-debug/ide-profiler-layout
+last_sync: 2026-06-07
+sync_hash: d104fc69
+upstream_hash: 6bb3cde0697d
 ---
-
 
 # 界面布局
 

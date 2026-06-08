@@ -2,8 +2,11 @@
 title: "多线程Worker"
 original_url: /docs/dev/game-dev/games-quickgame-worker-0000002318054656
 format: md
+upstream_id: dev/game-dev/games-quickgame-worker-0000002318054656
+last_sync: 2026-06-07
+sync_hash: 0829d661
+upstream_hash: 48a1a5bd292d
 ---
-
 
 ## 场景介绍
 

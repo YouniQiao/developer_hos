@@ -3,9 +3,10 @@ title: "代码实时检查及快速修复"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-realtime-check
 format: md
+upstream_id: tools/coding-debug/ide-realtime-check
+last_sync: 2026-06-07
+sync_hash: 6ba62751
 ---
-
-
 # 代码实时检查及快速修复
 
 #### 实时检查

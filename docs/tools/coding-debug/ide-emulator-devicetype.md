@@ -3,9 +3,10 @@ title: "设备支持类型"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-emulator-devicetype
 format: md
+upstream_id: tools/coding-debug/ide-emulator-devicetype
+last_sync: 2026-06-07
+sync_hash: ad2df348
 ---
-
-
 # 设备支持类型
 
 模拟器在不同系统上支持的设备类型见下表。

@@ -2,9 +2,10 @@
 title: "定档"
 original_url: /docs/dev/game-dev/games-center-big-event-scheduling-0000002320626365
 format: md
+upstream_id: dev/game-dev/games-center-big-event-scheduling-0000002320626365
+last_sync: 2026-06-07
+sync_hash: bd635019
 ---
-
-
 定档是指游戏确定正式上线档期。
 
 ## 前提条件

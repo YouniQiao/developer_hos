@@ -3,8 +3,10 @@ title: "更新素材"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-updatematerial-0000001181826413
 format: md
+upstream_id: monetize/promotion/marketapi-updatematerial-0000001181826413
+last_sync: 2026-06-07
+sync_hash: 8573d29a
 ---
-
 # 更新素材
 
 ## 功能介绍

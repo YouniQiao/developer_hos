@@ -2,9 +2,10 @@
 title: "线程模型"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/thread-model-fa
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/thread-model-fa
+last_sync: 2026-06-07
+sync_hash: 8749bf84
 ---
-
-
 [FA模型](/docs/dev/app-dev/application-framework/ability-kit/ability-terminology#fa模型)下的线程主要有如下三类：
 
 * 主线程：

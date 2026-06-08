@@ -2,9 +2,10 @@
 title: "UI相关应用无响应常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-stability/arkts-stability-freeze-issues
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-stability/arkts-stability-freeze-issues
+last_sync: 2026-06-07
+sync_hash: 13bf4342
 ---
-
-
 本文档收集整理了一些常见的会导致应用无响应的ArkUI API错误用法，旨在帮助开发者了解这些错误用法，从而避免在实际应用开发过程中犯类似错误。
 
 ## 网络图片使用syncLoad同步下载

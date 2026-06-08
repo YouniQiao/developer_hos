@@ -2,9 +2,10 @@
 title: "版本更新说明"
 original_url: /docs/distribute/agc/agc-help-releasenotes-0000002271020145
 format: md
+upstream_id: distribute/agc/agc-help-releasenotes-0000002271020145
+last_sync: 2026-06-07
+sync_hash: 949c3c85
 ---
-
-
 #### 16.4.1
 
 | 2026/05/07 AppGallery Connect 16.4.1版本上线 |

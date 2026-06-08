@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "AVSession Kit简介"
 original_url: /docs/dev/app-dev/media/avsession-kit/avsession-overview
 format: md
+upstream_id: dev/app-dev/media/avsession-kit/avsession-overview
+last_sync: 2026-06-07
+sync_hash: e9a7b3cc
 ---
-
-
 AVSession Kit（Audio & Video Session Kit，音视频播控服务）是系统提供的音视频管控服务，用于统一管理系统中所有音视频行为，帮助开发者快速构建音视频统一展示和控制能力。
 
 ## 能力范围
@@ -71,6 +72,6 @@ AVSession Kit（Audio & Video Session Kit，音视频播控服务）是系统提
 
 本Kit支持模拟器，但与真机存在部分能力差异，具体差异如下：
 
-* 通用差异：请参见[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification#section18112195514315)。
+* 通用差异：请参见[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification#section18112195514315)。
 * 不支持跨设备投播。
 * 只存在默认输出（Speaker）和默认输入（Mic）设备，会映射到模拟器运行操作系统的音频设备，没有其他外设的概念。

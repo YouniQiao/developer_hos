@@ -2,9 +2,10 @@
 format: md
 title: "构建报错“input module releaseType is different”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-110
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-110
+last_sync: 2026-06-07
+sync_hash: 5748f81f
 ---
-
-
 **问题现象**
 
 在打包APP时，如果提示“input module releaseType is different”，请检查输入模块的发布类型是否一致。

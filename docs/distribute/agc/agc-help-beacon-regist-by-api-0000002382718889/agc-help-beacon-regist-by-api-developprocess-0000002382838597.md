@@ -2,9 +2,10 @@
 title: "位置推荐开发指导"
 original_url: /docs/distribute/agc/agc-help-beacon-regist-by-api-0000002382718889/agc-help-beacon-regist-by-api-developprocess-0000002382838597
 format: md
+upstream_id: distribute/agc/agc-help-beacon-regist-by-api-0000002382718889/agc-help-beacon-regist-by-api-developprocess-0000002382838597
+last_sync: 2026-06-07
+sync_hash: fa3e124d
 ---
-
-
 如果您需要将多个第三方服务商的Beacon信标设备信息同步至AGC，为提高录入效率，您可以直接调用设备管理API接口注册信标设备。
 
 基本开发流程如下：

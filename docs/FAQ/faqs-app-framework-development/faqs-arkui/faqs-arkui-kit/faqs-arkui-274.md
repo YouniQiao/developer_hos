@@ -2,9 +2,10 @@
 format: md
 title: "如何完成挖孔屏的适配"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-274
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-274
+last_sync: 2026-06-07
+sync_hash: 92ef78f6
 ---
-
-
 1. 使用setWindowLayoutFullScreen和setWindowSystemBarEnable将窗口设置为全屏并隐藏顶部状态栏。
 
    ```

@@ -3,8 +3,10 @@ title: "概述"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x50000/x50111/x50111-overview
 format: md
+upstream_id: distribute/app-dist/app-market/x50000/x50111/x50111-overview
+last_sync: 2026-06-07
+sync_hash: eed4a57a
 ---
-
 # 概述
 
 为帮助开发者更好地履行作为应用信息提供者的责任与义务，落实《网络安全法》、《互联网信息服务管理办法》、《互联网文化管理暂行规定》、《医疗机构管理条例》等法规政策要求，华为应用市场整理出以下常见的资质问题及修改指引，引导开发者进行修改，共同促进移动互联网的良性发展，为用户提供更安全、更优质的服务。

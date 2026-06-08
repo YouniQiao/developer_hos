@@ -2,9 +2,10 @@
 title: "手势冲突处理"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-gesture-judge
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-gesture-judge
+last_sync: 2026-06-07
+sync_hash: 0fdeeca9
 ---
-
-
 手势冲突是指多个手势识别器在同一组件或重叠区域同时识别时产生竞争，导致识别结果不符合预期。常见冲突场景包括：
 
 * 同一组件上的多手势（如按钮同时添加点击与长按手势）。

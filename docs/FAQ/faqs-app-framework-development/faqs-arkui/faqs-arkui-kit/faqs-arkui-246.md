@@ -2,9 +2,10 @@
 format: md
 title: "如何实现背景跟随文字大小改变"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-246
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-246
+last_sync: 2026-06-07
+sync_hash: 14083923
 ---
-
-
 可以通过文字长度自动调整宽度。参考代码如下：
 
 ```

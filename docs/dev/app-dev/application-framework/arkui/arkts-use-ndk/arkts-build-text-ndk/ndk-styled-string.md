@@ -2,9 +2,10 @@
 title: "使用属性字符串"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-build-text-ndk/ndk-styled-string
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-build-text-ndk/ndk-styled-string
+last_sync: 2026-06-07
+sync_hash: 3a65400c
 ---
-
-
 部分框架或应用具备自研的文字排版能力，在移植时，其文字排版能力会被对接到[方舟2D图形服务的文本引擎](/docs/dev/app-dev/graphics/arkgraphics-2d/text/draw-text-display/complex-text-c)。为了避免开发者重复开发文本组件，Text组件可以通过[ArkUI\_NodeAttributeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodeattributetype)中的NODE\_TEXT\_CONTENT\_WITH\_STYLED\_STRING属性，使用格式化字符串对象设置文本内容属性，直接渲染方舟文本引擎生成的文本。
 
 ![](./img/a0a7e7aa.png)

@@ -2,9 +2,10 @@
 format: md
 title: "应用安装后，HAP文件在哪个目录路径"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-36
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-36
+last_sync: 2026-06-07
+sync_hash: 0db76318
 ---
-
-
 目录路径："/data/app/el1/bundle/public/\<bundleName\>"
 
 **参考链接**

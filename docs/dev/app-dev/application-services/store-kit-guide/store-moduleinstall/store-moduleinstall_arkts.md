@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "产品特性按需分发(ArkTS)"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-moduleinstall/store-moduleinstall_arkts
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-moduleinstall/store-moduleinstall_arkts
+last_sync: 2026-06-07
+sync_hash: 58a27d8d
+upstream_hash: 6705f00aa363
 ---
-
 
 ## 场景介绍
 
@@ -342,13 +345,13 @@ entry中主要实现如下：
 
 产品特性按需分发为开发者提供接入调试功能，支持开发者在接入过程中进行调试，应用无需上架应用市场。假如应用A由entry.hap、AModulelib.hsp两个包组成，其中entry是基础包，AModulelib是扩展功能包（创建方式请参考[应用程序包开发与使用](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package)）。
 
-1. 使用[调试证书签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)应用/服务，本地编译构建出entry.hap、AModulelib.hsp，可通过[HDC命令安装](/docs/dev/app-dev/system/hdc#hdc命令列表)或DevEco Studio直接安装基础包。
+1. 使用[调试证书签名](/docs/tools/coding-debug/ide-signing)应用/服务，本地编译构建出entry.hap、AModulelib.hsp，可通过[HDC命令安装](/docs/dev/app-dev/system/hdc#hdc命令列表)或DevEco Studio直接安装基础包。
 
    ```
    hdc install entry.hap
    ```
-2. 打开[开发者调试模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode#section530763213432)：进入设置 -> 机型 -> 关于手机，连续点击软件版本7次，弹出“开启“开发者模式””，点击“确认开启”。
-3. [访问设备沙箱路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-device-file-explorer#section48216711204)，在[应用el2级别加密数据目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系)下，创建cache/moduleinstall/\<ModuleName\>目录（这里\<ModuleName\>是AModulelib），将模块调试包AModulelib.hsp上传至对应模块目录下（请确保模块调试包文件应有读写权限）。
+2. 打开[开发者调试模式](/docs/tools/coding-debug/ide-developer-mode#section530763213432)：进入设置 -> 机型 -> 关于手机，连续点击软件版本7次，弹出“开启“开发者模式””，点击“确认开启”。
+3. [访问设备沙箱路径](/docs/tools/coding-debug/ide-device-file-explorer#section48216711204)，在[应用el2级别加密数据目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系)下，创建cache/moduleinstall/\<ModuleName\>目录（这里\<ModuleName\>是AModulelib），将模块调试包AModulelib.hsp上传至对应模块目录下（请确保模块调试包文件应有读写权限）。
 
    ![](./img/e225b61a.png)
 4. 按照[创建按需加载的请求实例](#创建按需加载的请求实例)、[请求按需加载的接口](#请求按需加载模块)或[使用动态模块](#使用动态模块)，无需改动参数即可安装好模块调试包。监听到安装成功后，对应模块目录下的文件会被自动删除。

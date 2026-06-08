@@ -2,9 +2,10 @@
 title: "atm工具"
 original_url: /docs/dev/app-dev/system/atm-tool
 format: md
+upstream_id: dev/app-dev/system/atm-tool
+last_sync: 2026-06-07
+sync_hash: 8b279961
 ---
-
-
 Access Token Manager (程序访问控制管理工具，简称atm工具)，是用于查询应用进程的权限、使用类型等信息的工具，为开发者提供了根据tokenid、包名、进程名等信息进行访问控制管理的能力。
 
 ## 环境说明

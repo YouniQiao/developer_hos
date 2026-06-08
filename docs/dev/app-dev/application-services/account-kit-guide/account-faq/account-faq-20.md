@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "401 参数检查失败的可能原因和解决办法"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-20
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-20
+last_sync: 2026-06-07
+sync_hash: c26a731a
 ---
-
-
 **问题现象**
 
 调用接口报错401 参数检查失败。

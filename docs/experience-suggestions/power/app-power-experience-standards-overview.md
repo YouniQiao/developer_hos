@@ -2,9 +2,10 @@
 title: "概述"
 original_url: /docs/experience-suggestions/power/app-power-experience-standards-overview
 format: md
+upstream_id: experience-suggestions/power/app-power-experience-standards-overview
+last_sync: 2026-06-07
+sync_hash: 618fb162
 ---
-
-
 # 概述
 
 ### 背景及目的

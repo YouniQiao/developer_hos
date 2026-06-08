@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "Media Library Kit 简介"
 original_url: /docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-overview
 format: md
+upstream_id: dev/app-dev/media/medialibrary-kit/photoaccesshelper-overview
+last_sync: 2026-06-07
+sync_hash: 38d68137
+upstream_hash: 9e11fedd4a3a
 ---
-
 
 Media Library Kit（媒体文件管理服务）提供了管理相册和媒体文件的能力，包括图片和视频，帮助应用快速构建图片和视频的展示与播放功能。
 
@@ -66,4 +69,4 @@ Media Library Kit（媒体文件管理服务）提供了管理相册和媒体文
 
 ## 模拟器支持情况
 
-本Kit支持模拟器，但与真机存在差异，详情请参见[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification)。
+本Kit支持模拟器，但与真机存在差异，详情请参见[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification)。

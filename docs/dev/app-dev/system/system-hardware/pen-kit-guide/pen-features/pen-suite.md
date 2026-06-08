@@ -2,9 +2,10 @@
 title: "接入手写套件"
 original_url: /docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-features/pen-suite
 format: md
+upstream_id: dev/app-dev/system/system-hardware/pen-kit-guide/pen-features/pen-suite
+last_sync: 2026-06-07
+sync_hash: aa189dd5
 ---
-
-
 接入手写套件后，可以在应用中创建手写功能界面。界面包括画布和工具栏两部分，画布部分支持手写笔和手指的书写效果绘制，工具栏部分提供多种笔刷和编辑工具，并支持对手写功能进行设置。接入手写套件后将自动开启一笔成形和报点预测功能，无需再单独接入。
 
 从5.1.0(18)开始，手写套件新增支持设置工具栏默认笔刷、各笔刷默认宽度。

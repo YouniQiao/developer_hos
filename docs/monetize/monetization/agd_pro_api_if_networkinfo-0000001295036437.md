@@ -3,10 +3,10 @@ title: "NetworkInfo"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_api_if_networkinfo-0000001295036437
 format: md
+upstream_id: monetize/monetization/agd_pro_api_if_networkinfo-0000001295036437
+last_sync: 2026-06-07
+sync_hash: 2b7a6387
 ---
-
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | connectType | M | `Integer` | 网络类型。  取值范围：   * 0：未知 * 1：wifi * 2：2G * 3：3G * 4：4G * 5：5G |

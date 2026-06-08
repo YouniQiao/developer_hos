@@ -3,8 +3,10 @@ title: "线下充值"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-start-guest-recharge-offline-0000001328517610
 format: md
+upstream_id: monetize/promotion/bpos-start-guest-recharge-offline-0000001328517610
+last_sync: 2026-06-07
+sync_hash: bfbc81d7
 ---
-
 # 线下充值
 
 ## 操作流程

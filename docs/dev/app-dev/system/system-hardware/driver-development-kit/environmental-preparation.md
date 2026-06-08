@@ -3,14 +3,15 @@ displayed_sidebar: appDevSidebar
 title: "环境准备"
 original_url: /docs/dev/app-dev/system/system-hardware/driver-development-kit/environmental-preparation
 format: md
+upstream_id: dev/app-dev/system/system-hardware/driver-development-kit/environmental-preparation
+last_sync: 2026-06-07
+sync_hash: 1ae10197
 ---
-
-
 ## 开发工具及配置
 
 DevEco Studio作为驱动开发工具，是进行驱动开发的必备条件之一，我们可以使用该工具进行开发、调试、打包等操作。请下载安装该工具，并参考工具概述中的创建一个新的工程进行基本的操作验证，保证DevEco Studio可正常运行。
 
-请使用[华为账号-登录](https://developer.huawei.com/consumer/cn/download/)下载安装该工具，并参考[工具概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-tools-overview)中的[创建一个新的工程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-create-new-project)进行基本的操作验证，保证DevEco Studio可正常运行。
+请使用[华为账号-登录](https://developer.huawei.com/consumer/cn/download/)下载安装该工具，并参考[工具概述](/docs/tools/coding-debug/ide-tools-overview)中的[创建一个新的工程](/docs/tools/coding-debug/ide-create-new-project)进行基本的操作验证，保证DevEco Studio可正常运行。
 
 ## SDK版本配置
 

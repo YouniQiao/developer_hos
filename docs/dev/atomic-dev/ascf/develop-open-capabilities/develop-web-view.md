@@ -2,9 +2,10 @@
 title: "开发web-view组件"
 original_url: /docs/dev/atomic-dev/ascf/develop-open-capabilities/develop-web-view
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-open-capabilities/develop-web-view
+last_sync: 2026-06-07
+sync_hash: 8fb12108
 ---
-
-
 web-view用于在元服务中嵌入网页内容，它作为一个容器，能够将网页内容直接集成到元服务的界面中，使得用户可以在不离开元服务的情况下浏览网页，为用户提供无缝的浏览体验。
 
 ## 开发准备

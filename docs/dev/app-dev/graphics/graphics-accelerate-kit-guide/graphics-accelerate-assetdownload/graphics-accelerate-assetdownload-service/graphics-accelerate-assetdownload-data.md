@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "查看资源包分发数据"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-data
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-data
+last_sync: 2026-06-07
+sync_hash: 143985cb
 ---
-
-
 资源包下载任务正式发布后，开发者可以前往AppGallery Connect查看资源包分发情况。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“分析”，在应用列表中选择对应的游戏。

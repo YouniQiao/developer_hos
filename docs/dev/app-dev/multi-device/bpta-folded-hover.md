@@ -3,8 +3,10 @@ title: "折叠屏悬停态"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-folded-hover
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-folded-hover
+last_sync: 2026-06-07
+sync_hash: c9211648
 ---
-
 # 折叠屏悬停态
 
 ## 概述

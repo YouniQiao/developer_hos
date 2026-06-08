@@ -3,8 +3,10 @@ title: 应用设计
 sidebar_label: 应用设计
 original_url: /docs/design/multi-device-design/2in1/app-design
 format: md
+upstream_id: design/multi-device-design/2in1/app-design
+last_sync: 2026-06-07
+sync_hash: ccde0c7c
 ---
-
 # 应用设计
 
 应用窗口的内容区作为展示信息的空间，需要根据业务类型合理选择布局、控件元素和响应式布局。

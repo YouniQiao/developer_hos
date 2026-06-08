@@ -2,9 +2,10 @@
 title: "Native与ArkTS对象绑定"
 original_url: /docs/dev/ndk-dev/use-napi-object-wrap
 format: md
+upstream_id: dev/ndk-dev/use-napi-object-wrap
+last_sync: 2026-06-07
+sync_hash: 59c4e24b
 ---
-
-
 ## 场景介绍
 
 通过napi\_wrap将ArkTS对象与Native的C++对象绑定，后续操作时再通过napi\_unwrap将ArkTS对象绑定的C++对象取出，并对其进行操作。

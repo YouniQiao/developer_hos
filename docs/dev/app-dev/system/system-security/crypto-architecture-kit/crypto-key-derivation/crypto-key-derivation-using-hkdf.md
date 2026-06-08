@@ -3,10 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "使用HKDF进行密钥派生(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-derivation/crypto-key-derivation-using-hkdf
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-derivation/crypto-key-derivation-using-hkdf
+last_sync: 2026-06-07
+sync_hash: 32dfbe75
 ---
-
-
-对应算法规格请查看[密钥派生算法规格：HKDF](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-derivation-overview#hkdf算法)。
+对应算法规格请查看[密钥派生算法规格：HKDF](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-derivation/crypto-key-derivation-overview#hkdf算法)。
 
 ## 开发步骤
 

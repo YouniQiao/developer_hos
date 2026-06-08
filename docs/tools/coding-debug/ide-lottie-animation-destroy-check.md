@@ -3,9 +3,10 @@ title: "@performance/lottie-animation-destroy-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-lottie-animation-destroy-check
 format: md
+upstream_id: tools/coding-debug/ide-lottie-animation-destroy-check
+last_sync: 2026-06-07
+sync_hash: 337a161a
 ---
-
-
 # @performance/lottie-animation-destroy-check
 
 该规则检测使用lottie加载的动画是否都正确销毁。

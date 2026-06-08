@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Beacon（蓝牙信标设备）方案"
 original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-local-rec/intents-local-rec-dp-self-validation/intents-beacon-scheme
 format: md
+upstream_id: dev/app-dev/ai/intents-kit-guide/intents-local-rec/intents-local-rec-dp-self-validation/intents-beacon-scheme
+last_sync: 2026-06-07
+sync_hash: 87573d58
 ---
-
-
 根据与华为方锁定的场景选择的Beacon（蓝牙信标设备）方案对应步骤详情参考：
 
 [近场服务-信标设备场景](https://developer.huawei.com/consumer/cn/doc/app/agc-help-location-sense-by-beacon-0000002305369365)

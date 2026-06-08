@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "查询支持的认证能力"
 original_url: /docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/obtain-supported-authentication-capabilities
 format: md
+upstream_id: dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/obtain-supported-authentication-capabilities
+last_sync: 2026-06-07
+sync_hash: ee904c50
 ---
-
-
 不同的设备对于认证能力（人脸、指纹、口令）的支持性各有差异，开发者在发起认证前应当先查询当前设备支持的用户认证能力。
 
 ## 接口说明

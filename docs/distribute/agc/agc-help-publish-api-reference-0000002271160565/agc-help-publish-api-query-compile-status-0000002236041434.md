@@ -2,9 +2,10 @@
 title: "查询软件包编译状态"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-query-compile-status-0000002236041434
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-query-compile-status-0000002236041434
+last_sync: 2026-06-07
+sync_hash: a11001b4
 ---
-
-
 #### 功能介绍
 
 此接口用于查询HarmonyOS应用/元服务的软件包的编译状态。

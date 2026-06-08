@@ -2,9 +2,10 @@
 title: "添加交互"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-building-ui/ui-js-building-ui-interactions
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-building-ui/ui-js-building-ui-interactions
+last_sync: 2026-06-07
+sync_hash: 21cfa945
 ---
-
-
 添加交互可以通过在组件上关联事件实现。本节将介绍如何用div、text、image组件关联click事件，构建一个如下图所示的点赞按钮。
 
 ![](./img/bbce4200.gif)

@@ -3,9 +3,10 @@ title: "@performance/datashare-query-unrelease-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-datashare-query-unrelease-check
 format: md
+upstream_id: tools/coding-debug/ide-datashare-query-unrelease-check
+last_sync: 2026-06-07
+sync_hash: 1153df0d
 ---
-
-
 # @performance/datashare-query-unrelease-check
 
 使用DataShareHelper的query接口查询数据后必须及时关闭结果集，以防止内存泄漏。

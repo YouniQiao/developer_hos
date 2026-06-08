@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "适配相机旋转角度(C/C++)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/camera-rotation-native/camera-rotation-angle-adaptation-native
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-native/camera-rotation-native/camera-rotation-angle-adaptation-native
+last_sync: 2026-06-07
+sync_hash: 65d3bc62
 ---
-
-
 屏幕处于不同的屏幕状态时，原始图像需旋转不同的角度，以确保图像在合适的方向显示，效果如图所示。
 
 ![](./img/f93fa182.png)

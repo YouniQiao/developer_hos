@@ -3,9 +3,10 @@ title: "数据开放：音乐数据开放&lt;MediaController&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-mediacontroller-0000002471235098
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-mediacontroller-0000002471235098
+last_sync: 2026-06-07
+sync_hash: f8e2d2e3
 ---
-
-
 # 数据开放：音乐数据开放&lt;MediaController&gt;
 
 ## 功能概述

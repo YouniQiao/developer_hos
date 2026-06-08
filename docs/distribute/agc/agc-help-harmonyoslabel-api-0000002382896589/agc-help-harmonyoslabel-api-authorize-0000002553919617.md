@@ -2,9 +2,10 @@
 title: "获取服务端API授权"
 original_url: /docs/distribute/agc/agc-help-harmonyoslabel-api-0000002382896589/agc-help-harmonyoslabel-api-authorize-0000002553919617
 format: md
+upstream_id: distribute/agc/agc-help-harmonyoslabel-api-0000002382896589/agc-help-harmonyoslabel-api-authorize-0000002553919617
+last_sync: 2026-06-07
+sync_hash: 3ea3b905
 ---
-
-
 在向AppGallery Connect服务端发起REST API请求前，您需要先获得AppGallery Connect服务端的授权。
 
 获得授权的方式有如下两种：

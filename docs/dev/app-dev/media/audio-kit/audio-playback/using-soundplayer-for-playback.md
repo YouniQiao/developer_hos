@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用SoundPlayer开发系统音效播放功能"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-playback/using-soundplayer-for-playback
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-playback/using-soundplayer-for-playback
+last_sync: 2026-06-07
+sync_hash: 567cc29d
 ---
-
-
 从API version 23开始，支持系统音效播放。
 
 SoundPlayer提供系统音效播放功能，适用于拍照或录像提示音，比如在开始拍照、开始录像或结束录像时播放提示音。

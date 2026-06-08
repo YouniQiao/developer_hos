@@ -2,9 +2,10 @@
 title: "使用智能防跟踪功能"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-cyber-security-privacy/web-intelligent-tracking-prevention
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-cyber-security-privacy/web-intelligent-tracking-prevention
+last_sync: 2026-06-07
+sync_hash: 7c56d5c6
 ---
-
-
 Web组件支持智能防跟踪功能，即当跟踪型网站作为第三方插入到其他网页时，其发送的网络请求将禁止携带cookie。
 
 * 通过调用[enableIntelligentTrackingPrevention](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#enableintelligenttrackingprevention12)接口启用或关闭Web组件的智能防跟踪功能。默认情况下，该功能未启用。

@@ -2,9 +2,10 @@
 title: "运动联动管理"
 original_url: /docs/dev/app-dev/application-services/health-litewearable-sport-linkage-manage
 format: md
+upstream_id: dev/app-dev/application-services/health-litewearable-sport-linkage-manage
+last_sync: 2026-06-07
+sync_hash: 29785d66
 ---
-
-
 ## 场景介绍
 
 运动联动管理，包含运动联动的配置、开启、暂停、恢复、停止，数据订阅、解订阅、下发，锻炼记录的读写。

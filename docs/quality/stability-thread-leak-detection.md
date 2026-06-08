@@ -2,9 +2,10 @@
 title: "线程泄漏类问题检测方法"
 original_url: /docs/quality/stability-thread-leak-detection
 format: md
+upstream_id: /docs/quality/stability-thread-leak-detection
+last_sync: 2026-06-07
+sync_hash: 74574d03
 ---
-
-
 # 线程泄漏类问题检测方法
 
 ## 概述

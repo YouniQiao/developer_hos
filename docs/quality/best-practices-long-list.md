@@ -1,8 +1,10 @@
 ---
 title: "长列表加载丢帧优化"
 original_url: /docs/quality/best-practices-long-list
+upstream_id: /docs/quality/best-practices-long-list
+last_sync: 2026-06-07
+sync_hash: 5296724a
 ---
-
 # 长列表加载丢帧优化
 
 ## 概述
@@ -258,7 +260,7 @@ LazyForEach的数据源需要实现IDataSource接口，具体实现可参考“H
 
 ![](./img/86200cab.png)
 
-建议开发者优先使用[代码Code Linter检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)工具进行代码扫描，重点关注[@performance/hp-arkui-set-cache-count-for-lazyforeach-grid](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-set-cache-count-for-lazyforeach-grid)规则。若扫描结果中出现该规则相关问题，可参考本章节提供的优化建议进行调整。
+建议开发者优先使用[代码Code Linter检查](/docs/tools/coding-debug/ide-code-linter)工具进行代码扫描，重点关注[@performance/hp-arkui-set-cache-count-for-lazyforeach-grid](/docs/tools/coding-debug/ide_hp-arkui-set-cache-count-for-lazyforeach-grid)规则。若扫描结果中出现该规则相关问题，可参考本章节提供的优化建议进行调整。
 
 从上文了解到，在进行列表加载时，应避免一次性加载所有列表数据项，推荐按需加载数据。例如，页面一次可以显示6条数据，若不提前缓存部分数据，快速下滑到列表底部时，可能会出现“滑动白块”的现象。这是因为上一次请求的数据仅限于屏幕上的6条，如果滑动速度过快，数据无法及时加载，导致白块出现。在追求高性能的同时，应避免此类影响用户体验的问题。
 

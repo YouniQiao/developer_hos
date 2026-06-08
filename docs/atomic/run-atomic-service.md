@@ -2,10 +2,11 @@
 title: "使用真机运行元服务"
 original_url: /docs/dev/atomic-dev/develop-first-atomic-service/run-atomic-service
 format: md
+upstream_id: dev/atomic-dev/develop-first-atomic-service/run-atomic-service
+last_sync: 2026-06-07
+sync_hash: ca7c656c
 ---
-
-
-1. 将真机与电脑连接。具体指导及要求，请参见[运行应用/服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device)。
+1. 将真机与电脑连接。具体指导及要求，请参见[运行应用/服务](/docs/tools/coding-debug/ide-run-device)。
 2. 选择**File** &gt; **Project Structure...** &gt; **Project** &gt; **SigningConfigs**界面，勾选“**Support HarmonyOS**”和“**Automatically generate signature**”，单击界面提示的“**Sign In**”，使用华为账号登录。等待自动签名完成后，单击“**OK**”即可。
 
    ![](./img/f85b7152.png)

@@ -2,9 +2,10 @@
 title: "门店管理流程说明"
 original_url: /docs/dev/atomic-dev/instant-service-store-management/instant-service-store-process
 format: md
+upstream_id: dev/atomic-dev/instant-service-store-management/instant-service-store-process
+last_sync: 2026-06-07
+sync_hash: 448344bc
 ---
-
-
 商家可通过开放接口对门店信息进行全生命周期管理，包括创建、更新和删除操作。所有变更均需经过平台审核。接口调用流程如下：
 
 ![](./img/3617bdb6.png)

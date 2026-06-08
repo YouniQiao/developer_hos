@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通过API展示关注组件"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-api-information-attribute/scenario-fusion-api-followcomponent
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-api-information-attribute/scenario-fusion-api-followcomponent
+last_sync: 2026-06-07
+sync_hash: d31d2bb0
 ---
-
-
 ## 场景介绍
 
 从6.0.1(21)版本开始，支持关注组件API功能。

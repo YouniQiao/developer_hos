@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "（可选）申请嵌入式收银台开放能力权限"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-apply-for-open-capabilities
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-apply-for-open-capabilities
+last_sync: 2026-06-07
+sync_hash: 5e66ab13
 ---
-
-
 如果使用接入嵌入式收银台能力，则需要申请对应权限。
 
 ## 开放能力申请准备

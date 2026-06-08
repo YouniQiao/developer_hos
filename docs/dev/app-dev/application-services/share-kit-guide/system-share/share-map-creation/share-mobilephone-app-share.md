@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通过分享面板发起分享"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-mobilephone-app-share
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-mobilephone-app-share
+last_sync: 2026-06-07
+sync_hash: 135d8afb
 ---
-
-
 ## 接口说明
 
 **表1** 宿主应用发起分享接口功能介绍

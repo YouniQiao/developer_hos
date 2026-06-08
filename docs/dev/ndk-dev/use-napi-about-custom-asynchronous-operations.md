@@ -2,9 +2,10 @@
 title: "使用Node-API进行自定义异步操作相关开发"
 original_url: /docs/dev/ndk-dev/use-napi-about-custom-asynchronous-operations
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-custom-asynchronous-operations
+last_sync: 2026-06-07
+sync_hash: 9cdf118d
 ---
-
-
 ## 简介
 
 使用Node-API的自定义异步操作功能，可以使ArkTS更灵活高效地处理那些可能阻塞事件循环的长时间运行任务，同时保持应用的响应性和性能。

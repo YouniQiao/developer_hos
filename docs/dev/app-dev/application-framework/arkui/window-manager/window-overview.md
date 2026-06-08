@@ -2,9 +2,10 @@
 title: "窗口开发概述"
 original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/window-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/window-manager/window-overview
+last_sync: 2026-06-07
+sync_hash: 659aea06
 ---
-
-
 ## 窗口模块的定义
 
 窗口模块用于在同一块物理屏幕上，提供多个应用界面显示、交互的机制。

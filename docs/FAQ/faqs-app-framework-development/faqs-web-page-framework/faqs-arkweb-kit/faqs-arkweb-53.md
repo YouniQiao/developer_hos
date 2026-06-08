@@ -2,9 +2,10 @@
 format: md
 title: "如何查看cookie的保存位置"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-53
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-53
+last_sync: 2026-06-07
+sync_hash: 2be30c25
 ---
-
-
 Cookie信息保存在/proc/\\{pid\\}/root/data/storage/el2/base/cache/web/Cookies文件中。\{pid\}代表进程ID。
 
 **参考链接**

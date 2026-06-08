@@ -1,12 +1,12 @@
 ---
-
 title: "创建并配置函数"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-createfunc
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-createfunc
+last_sync: 2026-06-07
+sync_hash: 528488ac
 ---
-
-
 # 创建并配置函数
 
 您可直接在DevEco Studio创建函数、为函数配置调用的触发器等。

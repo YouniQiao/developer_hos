@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "条形码识别坐标信息为空"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-7
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-7
+last_sync: 2026-06-07
+sync_hash: 7ef90445
 ---
-
-
 **问题现象**
 
 条形码识别场景下，存在识别成功后，返回位置信息为空的现象。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "AVScreenCapture录屏自定义场景"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-recording-c/using-avscreencapture-for-buffer/avscreencapture-c-custom-scenarios
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-c/media-recording-c/using-avscreencapture-for-buffer/avscreencapture-c-custom-scenarios
+last_sync: 2026-06-07
+sync_hash: e567a0e8
 ---
-
-
 AVScreenCapture支持应用完成场景化的自定义配置，具体配置可参考下述指导。
 
 ## 设置录屏策略

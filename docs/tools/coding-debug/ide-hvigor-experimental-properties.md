@@ -3,9 +3,10 @@ title: "性能优化实验特性"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-experimental-properties
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-experimental-properties
+last_sync: 2026-06-07
+sync_hash: aeab848f
 ---
-
-
 # 性能优化实验特性
 
 为了打造更敏捷流畅的使用体验，新版本的Hvigor带来了一系列的编译构建性能优化实验特性，这些优化特性将显著提高工程的编译速度，降低峰值内存占用等。由于部分优化方案仍处于试验性阶段，您可能在这些特性中体验到效率的提升，也可能在特定场景中遇到待完善的问题，因此，这些特性提供了开关，用户可以根据业务需求开启后使用。

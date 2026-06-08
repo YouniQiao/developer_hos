@@ -2,9 +2,10 @@
 title: "绑定拖拽事件"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-add-event/ndk-drag-event
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-add-event/ndk-drag-event
+last_sync: 2026-06-07
+sync_hash: 930dc9e9
 ---
-
-
 ArkUI开发框架针对拖拽事件提供了[NODE\_ON\_PRE\_DRAG](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodeeventtype)，[NODE\_ON\_DRAG\_START](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodeeventtype)，[NODE\_ON\_DROP](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodeeventtype)，[NODE\_ON\_DRAG\_ENTER](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodeeventtype)，[NODE\_ON\_DRAG\_MOVE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodeeventtype)，[NODE\_ON\_DRAG\_LEAVE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodeeventtype)，[NODE\_ON\_DRAG\_END](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodeeventtype)等组件事件，当拖拽在不同的阶段时会触发对应的组件事件，完成对应的数据处理操作，实现期望的拖拽交互能力。
 
 ## 通用拖拽

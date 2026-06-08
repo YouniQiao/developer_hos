@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "位图操作"
 original_url: /docs/dev/app-dev/media/image-kit/image-native-js-objects/image-pixelmap-operation-native
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-native-js-objects/image-pixelmap-operation-native
+last_sync: 2026-06-07
+sync_hash: 6e2a8fb2
 ---
-
-
 ![](./img/c6e6e746.png)
 
 当前开发指导使用的接口为[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image)模块下的C API，可完成图片编解码，图片接收器，处理图像数据等功能。这部分API在API version 11之前发布，在后续的版本不再增加新功能，**不再推荐使用**。

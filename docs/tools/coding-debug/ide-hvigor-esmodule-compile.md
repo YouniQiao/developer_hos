@@ -3,9 +3,10 @@ title: "模块化编译"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-esmodule-compile
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-esmodule-compile
+last_sync: 2026-06-07
+sync_hash: f4b0f462
 ---
-
-
 # 模块化编译
 
 应用模块化编译是指基于ES Module的Bundleless编译模式，使用原生ES Module规则构建源码。API 10及以上版本的Stage工程默认开启模块化编译，可有效缩短增量编译时间、减小编译后的包体积。

@@ -3,9 +3,11 @@ title: "展示位创建"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/zhanshiweichuangjian-0000001132700049
 format: md
+upstream_id: monetize/monetization/zhanshiweichuangjian-0000001132700049
+last_sync: 2026-06-07
+sync_hash: 391461bf
+upstream_hash: 09a4ec2836c5
 ---
-
-
 
 1. 添加展示位
 

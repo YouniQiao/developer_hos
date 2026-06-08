@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "发起星闪扫描"
 original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-start-scan
 format: md
+upstream_id: dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-start-scan
+last_sync: 2026-06-07
+sync_hash: 74f94067
 ---
-
-
 ## 场景介绍
 
 发起星闪扫描，可以扫描到正在发送星闪广播的外围设备。

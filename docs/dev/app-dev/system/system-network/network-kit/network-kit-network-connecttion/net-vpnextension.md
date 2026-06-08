@@ -2,9 +2,10 @@
 title: "连接VPN"
 original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-network-connecttion/net-vpnextension
 format: md
+upstream_id: dev/app-dev/system/system-network/network-kit/network-kit-network-connecttion/net-vpnextension
+last_sync: 2026-06-07
+sync_hash: bbcc1d7e
 ---
-
-
 ## 简介
 
 VPN，即虚拟专用网络（Virtual Private Network），是在公用网络上建立专用网络的一种技术。在VPN网络中，任意两个节点间的连接并非依赖传统专用网络所需要的端到端的物理链路，而是构建在公用网络服务商提供的平台（如Internet）之上的逻辑网络。用户数据在这一逻辑链路中进行传输。

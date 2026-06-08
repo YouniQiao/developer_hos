@@ -3,8 +3,10 @@ title: "查看账户余额"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-account-management-overage-0000001346691949
 format: md
+upstream_id: monetize/promotion/bp-delivery-account-management-overage-0000001346691949
+last_sync: 2026-06-07
+sync_hash: d3890dec
 ---
-
 # 查看账户余额
 
 华为应用市场应用推广平台的余额如下图所示。

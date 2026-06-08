@@ -2,9 +2,10 @@
 title: "列表项组合场景"
 original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/list-item-combination-scenarios
 format: md
+upstream_id: dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/list-item-combination-scenarios
+last_sync: 2026-06-07
+sync_hash: 9e187691
 ---
-
-
 ## 设计场景
 
 列表包含一系列相同宽度的列表项，列表项可能由显示文本和可操控组件组合而成。显示文本通常是对可操控组件的功能性描述，类似于可操控组件的标签，因此列表项中的显示文本和可操控组件适合作为一个整体进行聚焦和播报。应用可以在列表项上设置[accessibilityGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-accessibility#accessibilitygroup)，并通过[accessibilityOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#accessibilityoptions14对象说明)指定可操控组件，桥接可操控组件的无障碍状态和无障碍点击事件。

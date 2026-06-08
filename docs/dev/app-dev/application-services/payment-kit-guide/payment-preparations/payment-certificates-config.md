@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "准备证书"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-certificates-config
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-certificates-config
+last_sync: 2026-06-07
+sync_hash: 8b07e707
 ---
-
-
 开发者接入华为支付开放API接口，需要通过证书来对请求内容及响应内容做签名和验证签名，以保证请求的安全性和可靠性。
 
 本文将介绍接入过程中相关证书的作用和获取方法。在准备证书前，请在[华为支付商户平台](https://petalpay-merchant.cloud.huawei.com/)入网，具体请参见[商户入网](https://developer.huawei.com/consumer/cn/doc/hwzf-jieruliucheng-0000001251448455)。
@@ -114,7 +115,8 @@ format: md
 待上传公钥信息示例：
 
 ```
------BEGIN PUBLIC KEY-----
+---
+--BEGIN PUBLIC KEY-----
 MIIBIjANBgkq*********************************vW7gQTM8BHFTezQjdRI
 A7xka2TaVHt***********************************rOA3P5rew9cO96q/7Z
 kQ6lRd3oVsf************************************rGYCrA2RVgr79mRx+
@@ -122,7 +124,8 @@ s22qfA5FdTC*************************************i6I2cRVb1grBQphR
 yFBxCGC/NeV*************************************K1QM1SC4GCORHocS
 MQvApBQwQF9*************************************eEQvwpVfFxg4dGBz
 DQIDAQAB
------END PUBLIC KEY-----
+---
+--END PUBLIC KEY-----
 ```
 
 ## 华为支付证书

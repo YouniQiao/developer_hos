@@ -3,9 +3,10 @@ title: "FAQ"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-productmanagement-faq-0000001194302398
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-productmanagement-faq-0000001194302398
+last_sync: 2026-06-07
+sync_hash: 92d52d22
 ---
-
-
 # FAQ
 
 ## 兑换码业务是否需要接入华为的应用内支付HMS Core IAP SDK?

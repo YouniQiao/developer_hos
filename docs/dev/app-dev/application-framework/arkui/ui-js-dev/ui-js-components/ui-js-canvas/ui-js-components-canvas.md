@@ -2,8 +2,11 @@
 title: "Canvas对象"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-canvas/ui-js-components-canvas
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-canvas/ui-js-components-canvas
+last_sync: 2026-06-07
+sync_hash: 03919e40
+upstream_hash: 89ac0ccb9d19
 ---
-
 
 Canvas组件提供画布，用于自定义绘制图形。具体用法请参考[CanvasRenderingContext2D对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-canvas-canvasrenderingcontext2d)。
 

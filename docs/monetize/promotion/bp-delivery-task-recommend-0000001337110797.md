@@ -3,8 +3,10 @@ title: "投放推荐任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-task-recommend-0000001337110797
 format: md
+upstream_id: monetize/promotion/bp-delivery-task-recommend-0000001337110797
+last_sync: 2026-06-07
+sync_hash: b69076b2
 ---
-
 # 投放推荐任务
 
 ## 背景信息

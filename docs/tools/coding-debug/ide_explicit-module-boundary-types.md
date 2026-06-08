@@ -3,9 +3,10 @@ title: "@typescript-eslint/explicit-module-boundary-types"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_explicit-module-boundary-types
 format: md
+upstream_id: tools/coding-debug/ide_explicit-module-boundary-types
+last_sync: 2026-06-07
+sync_hash: cee27e0f
 ---
-
-
 # @typescript-eslint/explicit-module-boundary-types
 
 导出到外部的函数和公共类方法，需要显式的定义返回类型和参数类型。

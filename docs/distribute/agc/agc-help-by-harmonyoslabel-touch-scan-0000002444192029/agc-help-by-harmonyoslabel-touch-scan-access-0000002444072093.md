@@ -2,9 +2,10 @@
 title: "接入流程"
 original_url: /docs/distribute/agc/agc-help-by-harmonyoslabel-touch-scan-0000002444192029/agc-help-by-harmonyoslabel-touch-scan-access-0000002444072093
 format: md
+upstream_id: distribute/agc/agc-help-by-harmonyoslabel-touch-scan-0000002444192029/agc-help-by-harmonyoslabel-touch-scan-access-0000002444072093
+last_sync: 2026-06-07
+sync_hash: 5df8f6e1
 ---
-
-
 | **序号** | **步骤** | **详情** |
 | --- | --- | --- |
 | 1 | [申请开通权限](/docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-apply-permission-0000002382902149#section1337155051819) | 当前近场服务处于灰度开放阶段，使用服务前需先申请开通近场服务权限。如果已开通，可跳过本步骤。 |

@@ -2,9 +2,10 @@
 title: "ohpm-repo restore"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-restore
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-restore
+last_sync: 2026-06-07
+sync_hash: bc6bdd0a
 ---
-
-
 # ohpm-repo restore
 
 将ohpm-repo pack打包产物替换`deploy_root`目录下相应文件，重启服务。

@@ -3,9 +3,10 @@ title: "启动时内存分析"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-insight-session-boot-memory
 format: md
+upstream_id: tools/coding-debug/ide-insight-session-boot-memory
+last_sync: 2026-06-07
+sync_hash: 08d6f9bb
 ---
-
-
 # 启动时内存分析
 
 应用/元服务在启动过程中对内存资源的占用情况，是开发者较为关心的问题。DevEco Profiler的Allocation分析任务，提供了启动内存分析能力，协助开发者优化启动过程的内存占用。

@@ -2,9 +2,10 @@
 title: "沙盒测试"
 original_url: /docs/dev/game-dev/games-quickgame-runtime-iap-public-0000002317894840
 format: md
+upstream_id: dev/game-dev/games-quickgame-runtime-iap-public-0000002317894840
+last_sync: 2026-06-07
+sync_hash: ee7a3364
 ---
-
-
 沙盒测试允许您在接入应用内支付服务联调过程中无需真实支付即可完成端到端的测试。
 
 ## 前提条件

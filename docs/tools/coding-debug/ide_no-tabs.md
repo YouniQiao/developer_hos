@@ -3,9 +3,10 @@ title: "@hw-stylistic/no-tabs"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-tabs
 format: md
+upstream_id: tools/coding-debug/ide_no-tabs
+last_sync: 2026-06-07
+sync_hash: bc06a384
 ---
-
-
 # @hw-stylistic/no-tabs
 
 禁止使用tab作为缩进，推荐使用空格。该规则仅检查.ets文件类型。

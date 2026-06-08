@@ -3,10 +3,10 @@ title: "接入Banner广告"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_sdk-banner-0000001347614022
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_andriod_sdk-banner-0000001347614022
+last_sync: 2026-06-07
+sync_hash: 7c308dc7
 ---
-
-
-
 #### 创建AdsContext对象
 
 ![](./img/agd_pro_sdk_andriod_sdk-banner-0000001347614022_0.png)

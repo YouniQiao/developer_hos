@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "添加、删除页眉页脚"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-add-headerfooter
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-add-headerfooter
+last_sync: 2026-06-07
+sync_hash: 5a44266c
 ---
-
-
 PDF Kit支持对指定页面添加、删除页眉页脚。页眉页脚信息包含文字、日期和页码等相关内容，并可设置字体大小、颜色和间距等相关样式，具体属性参考[HeaderFooterInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfservice#headerfooterinfo)。如下图：
 
 ![](./img/73d76a63.jpg)

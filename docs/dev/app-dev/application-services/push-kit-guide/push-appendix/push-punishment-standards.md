@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通知违规处罚标准"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-appendix/push-punishment-standards
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-appendix/push-punishment-standards
+last_sync: 2026-06-07
+sync_hash: c46dce1a
 ---
-
-
 ## 违规分类、违规行为及违规处罚标准
 
 ![](./img/5a30c7e3.png)

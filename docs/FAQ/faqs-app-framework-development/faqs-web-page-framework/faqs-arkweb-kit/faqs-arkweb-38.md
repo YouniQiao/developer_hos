@@ -2,9 +2,10 @@
 format: md
 title: "Web组件对H5页面、常用框架VUE、React的页面支持情况，包括本地和网络端的页面"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-38
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-38
+last_sync: 2026-06-07
+sync_hash: 459eca25
 ---
-
-
 Web组件支持H5页面及常用框架Vue和React。
 
 Web组件支持加载网络页面、本地页面和HTML文本数据。详情及代码示例请参考[使用Web组件加载页面](/docs/dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-page-loading-with-web-components)。

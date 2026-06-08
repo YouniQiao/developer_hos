@@ -2,9 +2,10 @@
 title: "模板文件"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-custom-auth-plugin-template
+upstream_id: tools/ohpm/repo/ide-custom-auth-plugin-template
+last_sync: 2026-06-07
+sync_hash: 48d75759
 ---
-
-
 # 模板文件
 
 模板文件中包含自定义auth插件需要的两个文件：CustomAuth.ts和tsconfig.json。

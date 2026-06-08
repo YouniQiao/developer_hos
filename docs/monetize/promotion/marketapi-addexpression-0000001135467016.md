@@ -3,8 +3,10 @@ title: "新增交并差计算定向"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-addexpression-0000001135467016
 format: md
+upstream_id: monetize/promotion/marketapi-addexpression-0000001135467016
+last_sync: 2026-06-07
+sync_hash: bf43c5a6
 ---
-
 # 新增交并差计算定向
 
 ## 功能介绍

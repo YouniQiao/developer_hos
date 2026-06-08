@@ -2,9 +2,10 @@
 title: "授权"
 original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-basic-capabilities/develop-authorization
+last_sync: 2026-06-07
+sync_hash: 6976c2e6
 ---
-
-
 部分接口在使用之前，需要经过用户授权同意，按照使用范围，这些接口被分成多个scope。用户按scope范围进行授权，此时，该scope对应的所有接口均可以被调用。
 
 在调用这类接口前，需要在项目的配置文件中，逐个声明需要的权限，否则应用将无法获取授权，导致接口调用失败。声明文件中的字段说明及样例可查阅：[在配置文件中声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions#在配置文件中声明权限)。

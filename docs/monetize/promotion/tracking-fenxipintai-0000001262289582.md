@@ -3,8 +3,10 @@ title: "分析平台接入鲸鸿动能广告平台及referrer归因"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/tracking-fenxipintai-0000001262289582
 format: md
+upstream_id: monetize/promotion/tracking-fenxipintai-0000001262289582
+last_sync: 2026-06-07
+sync_hash: 2de7ef08
 ---
-
 # 分析平台接入鲸鸿动能广告平台及referrer归因
 
 分析平台接入时需按照鲸鸿动能广告平台支持的归因模式进行接入，鲸鸿动能广告平台分为自归因与非自归因:

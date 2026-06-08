@@ -3,8 +3,10 @@ title: 元服务体验场景
 sidebar_label: 元服务体验场景
 original_url: /docs/design/atomic-service-design/experience-scenes
 format: md
+upstream_id: design/atomic-service-design/experience-scenes
+last_sync: 2026-06-07
+sync_hash: 52c1f43a
 ---
-
 # 元服务体验场景
 
 ### 服务发现

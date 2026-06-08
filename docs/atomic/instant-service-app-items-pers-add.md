@@ -2,9 +2,10 @@
 title: "新增个性化设置"
 original_url: /docs/dev/atomic-dev/instant-service-app-items/instant-service-app-items-pers-add
 format: md
+upstream_id: dev/atomic-dev/instant-service-app-items/instant-service-app-items-pers-add
+last_sync: 2026-06-07
+sync_hash: dc5bfbc0
 ---
-
-
 1. 如果您已下架子服务关联的个性化数据，您可在“个性化设置”页签，点击“新建”。
 
    ![](./img/dacf40a1.png "点击放大")

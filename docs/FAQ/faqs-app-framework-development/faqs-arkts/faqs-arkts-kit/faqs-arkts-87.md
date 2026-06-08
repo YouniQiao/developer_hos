@@ -2,9 +2,10 @@
 format: md
 title: "如何获取对象的类名"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-87
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-87
+last_sync: 2026-06-07
+sync_hash: 4ef728d7
 ---
-
-
 获取类的实例，通过constructor的name属性获取类名。
 
 示例如下：

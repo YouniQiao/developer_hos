@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "权益发放"
 original_url: /docs/dev/app-dev/application-services/iap-delivering-subscriptions
 format: md
+upstream_id: dev/app-dev/application-services/iap-delivering-subscriptions
+last_sync: 2026-06-07
+sync_hash: 4acdb2e6
 ---
-
-
 ## 对生效中的订阅发放权益
 
 ### 场景介绍

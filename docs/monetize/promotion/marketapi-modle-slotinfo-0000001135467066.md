@@ -3,8 +3,10 @@ title: "SlotInfo"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-slotinfo-0000001135467066
 format: md
+upstream_id: monetize/promotion/marketapi-modle-slotinfo-0000001135467066
+last_sync: 2026-06-07
+sync_hash: 658a8e9e
 ---
-
 # SlotInfo
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |

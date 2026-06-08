@@ -3,9 +3,10 @@ title: "@security/no-unsafe-ecdsa"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unsafe-ecdsa
 format: md
+upstream_id: tools/coding-debug/ide_no-unsafe-ecdsa
+last_sync: 2026-06-07
+sync_hash: 21fab64d
 ---
-
-
 # @security/no-unsafe-ecdsa
 
 该规则禁止在ECDSA签名算法中使用不安全的SHA1摘要算法。推荐使用Petal Aegis SDK中的安全ECDSA接口，详情参见： [ECDSA签名验签](`https://`developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/aegis-signature-verification-0000001866035345)。

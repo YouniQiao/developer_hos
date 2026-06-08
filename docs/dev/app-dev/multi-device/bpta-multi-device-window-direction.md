@@ -3,8 +3,10 @@ title: "窗口方向"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-window-direction
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi-device-window-direction
+last_sync: 2026-06-07
+sync_hash: e6f0a2f0
 ---
-
 # 窗口方向
 
 ## 概述

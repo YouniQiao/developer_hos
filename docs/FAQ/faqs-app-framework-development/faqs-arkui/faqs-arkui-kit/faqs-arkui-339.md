@@ -2,9 +2,10 @@
 title: "如何解决Web页上下滑动时会误触发tab页翻页手势及tab页切换时Web组件还可以上下滚动问题"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-339
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-339
+last_sync: 2026-06-07
+sync_hash: 7c8c9dee
 ---
-
-
 **问题现象**
 
 Tabs组件嵌套Web组件在滚动场景中可能出现以下问题：

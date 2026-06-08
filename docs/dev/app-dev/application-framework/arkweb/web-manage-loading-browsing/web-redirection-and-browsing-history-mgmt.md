@@ -2,9 +2,10 @@
 title: "管理页面跳转及浏览记录导航"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-redirection-and-browsing-history-mgmt
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-redirection-and-browsing-history-mgmt
+last_sync: 2026-06-07
+sync_hash: 783aa4fb
 ---
-
-
 为了提高页面访问速度，浏览记录导航允许用户通过“前进”和“后退”按钮在历史记录的页面之间切换。Web组件支持用户跳转到应用内其他页面或者进行跨应用跳转。
 
 ## 历史记录导航

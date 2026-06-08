@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "接入全局取色"
 original_url: /docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-features/pen-image-feature-picker
 format: md
+upstream_id: dev/app-dev/system/system-hardware/pen-kit-guide/pen-features/pen-image-feature-picker
+last_sync: 2026-06-07
+sync_hash: e7eca143
 ---
-
-
 接入全局取色功能，用户可以使用手指或者手写笔操作取色器在屏幕上移动，在目标位置抬起手指/抬起手写笔，会生成该位置色值对应的图像信息。
 
 ## 场景介绍

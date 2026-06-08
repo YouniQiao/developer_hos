@@ -3,9 +3,10 @@ title: "基础构建能力"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-api
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-api
+last_sync: 2026-06-07
+sync_hash: 124e228d
 ---
-
-
 # 基础构建能力
 
 #### Hvigor预置对象

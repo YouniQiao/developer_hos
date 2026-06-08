@@ -2,9 +2,10 @@
 format: md
 title: "环境检查时显示ohpm registry access不通过"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-10
+upstream_id: FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-10
+last_sync: 2026-06-07
+sync_hash: 7884c979
 ---
-
-
 ohpm registry access不通过可能有以下几种情况：
 
 **问题现象****1**

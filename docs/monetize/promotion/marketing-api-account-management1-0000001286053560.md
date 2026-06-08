@@ -3,8 +3,10 @@ title: "查询账户信息"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-account-management1-0000001286053560
 format: md
+upstream_id: monetize/promotion/marketing-api-account-management1-0000001286053560
+last_sync: 2026-06-07
+sync_hash: ea8286b8
 ---
-
 # 查询账户信息
 
 您通过本接口获取广告账户基本信息。

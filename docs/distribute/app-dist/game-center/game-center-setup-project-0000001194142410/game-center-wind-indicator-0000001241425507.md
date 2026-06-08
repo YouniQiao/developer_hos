@@ -2,6 +2,9 @@
 title: "行业风向标"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-setup-project-0000001194142410/game-center-wind-indicator-0000001241425507
+upstream_id: distribute/app-dist/game-center/game-center-setup-project-0000001194142410/game-center-wind-indicator-0000001241425507
+last_sync: 2026-06-07
+sync_hash: c8fb5d2d
 ---
 import MergeTable from "@site/src/components/MergeTable";
 

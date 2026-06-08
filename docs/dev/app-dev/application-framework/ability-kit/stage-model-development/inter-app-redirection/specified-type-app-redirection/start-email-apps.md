@@ -2,8 +2,11 @@
 title: "拉起邮件类应用（startAbilityByType）"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-email-apps
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-email-apps
+last_sync: 2026-06-07
+sync_hash: 9a63a5cd
+upstream_hash: 4f32aa65df8d
 ---
-
 
 本章节介绍如何拉起邮件类应用扩展面板。
 

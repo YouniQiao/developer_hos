@@ -3,9 +3,10 @@ title: "@typescript-eslint/switch-exhaustiveness-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_switch-exhaustiveness-check
 format: md
+upstream_id: tools/coding-debug/ide_switch-exhaustiveness-check
+last_sync: 2026-06-07
+sync_hash: adaee954
 ---
-
-
 # @typescript-eslint/switch-exhaustiveness-check
 
 要求switch语句对于联合类型中值的判断是详尽无遗的。

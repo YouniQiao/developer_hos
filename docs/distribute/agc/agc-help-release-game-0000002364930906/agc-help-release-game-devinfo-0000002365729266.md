@@ -2,9 +2,10 @@
 title: "配置开发者服务信息"
 original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-devinfo-0000002365729266
 format: md
+upstream_id: distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-devinfo-0000002365729266
+last_sync: 2026-06-07
+sync_hash: 0d4a400d
 ---
-
-
 填写开发者服务信息，方便玩家咨询或反馈游戏相关问题。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，选择待上架的游戏。

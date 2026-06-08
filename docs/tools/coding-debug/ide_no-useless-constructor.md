@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-useless-constructor"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-useless-constructor
 format: md
+upstream_id: tools/coding-debug/ide_no-useless-constructor
+last_sync: 2026-06-07
+sync_hash: 831d9f63
 ---
-
-
 # @typescript-eslint/no-useless-constructor
 
 禁止不必要的构造函数。

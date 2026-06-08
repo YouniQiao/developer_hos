@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "业务场景设置(C/C++)"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide-c/networkboost-netmultipath-setscenedesc-c
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide-c/networkboost-netmultipath-setscenedesc-c
+last_sync: 2026-06-07
+sync_hash: 6c15f445
 ---
-
-
 从6.0.2(22)开始，支持业务场景设置。
 
 ## 场景介绍

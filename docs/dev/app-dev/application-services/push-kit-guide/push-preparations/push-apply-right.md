@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "申请推送场景化消息权益"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-apply-right
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-preparations/push-apply-right
+last_sync: 2026-06-07
+sync_hash: ab505f4a
 ---
-
-
 ## 场景化消息权益简介
 
 Push Kit支持多种场景化消息类型，其中部分场景化消息类型需要您申请特殊权益才能正常发送。具体见下表：

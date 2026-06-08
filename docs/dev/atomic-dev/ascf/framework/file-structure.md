@@ -2,8 +2,11 @@
 title: "文件结构"
 original_url: /docs/dev/atomic-dev/ascf/framework/file-structure
 format: md
+upstream_id: dev/atomic-dev/ascf/framework/file-structure
+last_sync: 2026-06-07
+sync_hash: e20fbcbe
+upstream_hash: 57e157a26e6e
 ---
-
 
 ## 工程文件结构
 

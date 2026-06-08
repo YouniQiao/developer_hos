@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "应用与系统联动切换未成年人模式"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-minorsprotection/account-follow-minorsprotection/account-system-minorsprotection
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-minorsprotection/account-follow-minorsprotection/account-system-minorsprotection
+last_sync: 2026-06-07
+sync_hash: 68bc8ff5
 ---
-
-
 ## 场景介绍
 
 在未成年人模式下，应用可通过以下两种方式获取系统未成年人模式状态，与系统未成年人模式进行联动：

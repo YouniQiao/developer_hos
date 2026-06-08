@@ -2,9 +2,10 @@
 title: "单点部署"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-deploy-single-instance
+upstream_id: tools/ohpm/repo/ide-ohpm-deploy-single-instance
+last_sync: 2026-06-07
+sync_hash: aee3d71b
 ---
-
-
 # 单点部署
 
 ![](./img/f7a2c467.png)

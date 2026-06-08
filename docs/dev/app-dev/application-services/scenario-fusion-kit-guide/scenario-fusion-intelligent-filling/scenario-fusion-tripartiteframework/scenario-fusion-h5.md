@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "H5接入智能填充"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-tripartiteframework/scenario-fusion-h5
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-tripartiteframework/scenario-fusion-h5
+last_sync: 2026-06-07
+sync_hash: ae9eecc1
 ---
-
-
 本章节介绍在ArkWeb的Web组件加载H5文件如何实现智能填充功能。
 
 ## 前提条件

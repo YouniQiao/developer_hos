@@ -3,8 +3,10 @@ title: 应用架构
 sidebar_label: 应用架构
 original_url: /docs/design/multi-device-design/wearable/application-architecture
 format: md
+upstream_id: design/multi-device-design/wearable/application-architecture
+last_sync: 2026-06-07
+sync_hash: 52bc0c65
 ---
-
 # 应用架构
 
 应用需遵循一定的系统规范进行应用架构、应用导航的设计。

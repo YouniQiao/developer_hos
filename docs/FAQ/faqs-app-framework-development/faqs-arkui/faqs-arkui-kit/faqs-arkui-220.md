@@ -2,9 +2,10 @@
 format: md
 title: "Flex布局与w3c中的Flex是否有差异"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-220
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-220
+last_sync: 2026-06-07
+sync_hash: 92afec4c
 ---
-
-
 在w3c标准中，Flex组件主轴的默认大小是由子组件决定的，但是Flex的align-items的默认值是stretch，也就是拉伸，因此在父Flex组件不设置align-items时，子Flex组件会在主轴上填满父组件，而当将父组件的align-items设置为其他值时，子Flex组件由他自己的子组件决定主轴的大小了。
 
 与w3c标准不同，在ArkTS中，Flex组件主轴的默认大小是由父组件决定的，即在主轴方向上填满父组件，因此在不设置Flex组件主轴大小的情况下，对齐方式alignItems是不会影响Flex组件的主轴大小的，且ArkTS中Flex组件的alignItems属性的默认值为ItemAlign.Start，因此设置了ItemAlign.Start后，Flex组件仍然会在主轴上填满父组件。

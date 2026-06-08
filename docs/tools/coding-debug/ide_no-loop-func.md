@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-loop-func"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-loop-func
 format: md
+upstream_id: tools/coding-debug/ide_no-loop-func
+last_sync: 2026-06-07
+sync_hash: ff6c62d1
 ---
-
-
 # @typescript-eslint/no-loop-func
 
 禁止在循环语句内包含不安全引用的函数声明。

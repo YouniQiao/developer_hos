@@ -3,8 +3,11 @@ title: "制作实例"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/production-example-0000001530293740
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/production-example-0000001530293740
+last_sync: 2026-06-07
+sync_hash: 49f22902
+upstream_hash: da8094c55420
 ---
-
 
 # 制作实例
 

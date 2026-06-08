@@ -2,9 +2,10 @@
 title: "关系型数据库跨设备数据同步 (ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/distributed-data-sync/data-sync-of-rdb-store
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/distributed-data-sync/data-sync-of-rdb-store
+last_sync: 2026-06-07
+sync_hash: e0daf5d8
 ---
-
-
 ## 场景介绍
 
 当应用程序本地存储的关系型数据存在跨设备同步的需求时，可以将需要同步的表数据迁移到新的支持跨设备的表中，当然也可以在刚完成表创建时设置其支持跨设备。

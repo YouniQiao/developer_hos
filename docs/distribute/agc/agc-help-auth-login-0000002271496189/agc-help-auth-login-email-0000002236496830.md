@@ -2,9 +2,10 @@
 title: "邮箱"
 original_url: /docs/distribute/agc/agc-help-auth-login-0000002271496189/agc-help-auth-login-email-0000002236496830
 format: md
+upstream_id: distribute/agc/agc-help-auth-login-0000002271496189/agc-help-auth-login-email-0000002236496830
+last_sync: 2026-06-07
+sync_hash: 86b57886
 ---
-
-
 您可以在应用中集成邮箱账号认证方式，您的用户可以使用“邮箱地址+密码”或者“邮箱地址+验证码”的方式来登录您的应用。
 
 #### 前提条件

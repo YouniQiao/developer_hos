@@ -3,8 +3,10 @@ title: "获取用户信息"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-account2-0000001128438068
 format: md
+upstream_id: monetize/promotion/marketing-api-account2-0000001128438068
+last_sync: 2026-06-07
+sync_hash: 816f6e08
 ---
-
 # 获取用户信息
 
 调用该API接口，可以在您登录鲸鸿动能广告平台后查询并展示您的华为账号的基本信息。

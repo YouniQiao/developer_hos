@@ -2,9 +2,10 @@
 title: "Wi-Fi"
 original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-wifi
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-device/apis-wifi
+last_sync: 2026-06-07
+sync_hash: 89e29735
 ---
-
-
 ## has.onWifiConnectedWithPartialInfo
 
 has.onWifiConnectedWithPartialInfo(function callback)

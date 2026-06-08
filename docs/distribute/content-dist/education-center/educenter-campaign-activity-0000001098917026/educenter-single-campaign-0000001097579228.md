@@ -3,9 +3,10 @@ title: "单品促销"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/education-center/educenter-campaign-activity-0000001098917026/educenter-single-campaign-0000001097579228
 format: md
+upstream_id: distribute/content-dist/education-center/educenter-campaign-activity-0000001098917026/educenter-single-campaign-0000001097579228
+last_sync: 2026-06-07
+sync_hash: 67ca2b29
 ---
-
-
 # 单品促销
 
 您可以在AppGallery Connect创建单品促销活动，丰富您的课程售卖模式。通过促销活动为用户提供福利，提升用户留存。

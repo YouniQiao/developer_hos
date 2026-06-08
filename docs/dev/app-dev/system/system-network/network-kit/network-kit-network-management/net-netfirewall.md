@@ -2,9 +2,10 @@
 title: "使用网络防火墙"
 original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-network-management/net-netfirewall
 format: md
+upstream_id: dev/app-dev/system/system-network/network-kit/network-kit-network-management/net-netfirewall
+last_sync: 2026-06-07
+sync_hash: 8aea2068
 ---
-
-
 ## 简介
 
 网络防火墙提供如下功能：

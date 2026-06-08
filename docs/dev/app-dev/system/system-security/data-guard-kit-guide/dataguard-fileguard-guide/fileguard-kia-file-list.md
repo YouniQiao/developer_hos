@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "设置KIA文件列表"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-kia-file-list
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-kia-file-list
+last_sync: 2026-06-07
+sync_hash: 2c7bdd33
 ---
-
-
 ## 场景介绍
 
 Enterprise Data Guard Kit为应用提供设置KIA文件列表的能力，HarmonyOS系统根据管控策略对KIA文件列表中的文件实行管控。

@@ -2,9 +2,10 @@
 title: "人脸活体检测"
 original_url: /docs/dev/atomic-dev/ascf/apis-ai/apis-ai-face-liveness-detection
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-ai/apis-ai-face-liveness-detection
+last_sync: 2026-06-07
+sync_hash: 1f8ac3c1
 ---
-
-
 ## has.startLivenessDetection
 
 has.startLivenessDetection(Object object)

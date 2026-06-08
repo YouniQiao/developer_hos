@@ -3,8 +3,10 @@ title: "修改日预算和次日预算"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-dailybudget-revise-0000001237788539
 format: md
+upstream_id: monetize/promotion/marketapi-dailybudget-revise-0000001237788539
+last_sync: 2026-06-07
+sync_hash: fc302abd
 ---
-
 # 修改日预算和次日预算
 
 ## 功能介绍

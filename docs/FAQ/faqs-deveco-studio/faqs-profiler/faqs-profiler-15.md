@@ -2,9 +2,10 @@
 format: md
 title: "录制Snapshot模板时，看不到taskPool线程内存信息"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-15
+upstream_id: FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-15
+last_sync: 2026-06-07
+sync_hash: 2ad509a4
 ---
-
-
 **问题现象**
 
 录制Snapshot模板时，无法看到taskPool线程的内存信息。

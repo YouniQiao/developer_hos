@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "自定义字体的注册和使用（C/C++）"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/font-manager/custom-font-c
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/text/font-manager/custom-font-c
+last_sync: 2026-06-07
+sync_hash: 5b3edbe5
 ---
-
-
 ## 场景介绍
 
 自定义字体是指开发者根据应用需求创建或选择的字体，通常用于实现特定的文字风格或满足独特的设计要求。当应用需要使用特定的文本样式和字符集时，可以注册并使用自定义字体进行文本渲染。

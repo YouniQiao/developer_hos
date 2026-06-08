@@ -3,9 +3,10 @@ title: "@typescript-eslint/method-signature-style"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_method-signature-style
 format: md
+upstream_id: tools/coding-debug/ide_method-signature-style
+last_sync: 2026-06-07
+sync_hash: 6bbe23c9
 ---
-
-
 # @typescript-eslint/method-signature-style
 
 定义函数类型的属性时，强制使用特定的风格。

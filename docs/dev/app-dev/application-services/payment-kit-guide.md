@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Payment Kit（鸿蒙支付服务）"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide
+last_sync: 2026-06-07
+sync_hash: 553ef8eb
 ---
-
-
 * **[Payment Kit简介](/docs/dev/app-dev/application-services/payment-kit-guide/payment-introduction)**
 * **[接入规范学习](/docs/dev/app-dev/application-services/payment-kit-guide/payment-access-specifications)**
 * **[接入Skill说明](/docs/dev/app-dev/application-services/payment-kit-guide/payment-skill-introduction)**

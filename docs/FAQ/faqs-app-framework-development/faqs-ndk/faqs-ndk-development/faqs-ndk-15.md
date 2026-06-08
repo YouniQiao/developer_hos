@@ -2,9 +2,10 @@
 format: md
 title: "如何将Native侧的函数封装到类中导出到ArkTS侧使用"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-15
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-15
+last_sync: 2026-06-07
+sync_hash: e778bb6d
 ---
-
-
 **问题详情**
 
 现有一个C++库，提供的接口以类方法形式提供。Native侧可以封装成普通函数的形式供上层调用，也可以保持原有类方法的形式。

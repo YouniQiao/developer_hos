@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "创建视频解码器和NativeWindow初始化并行"
 original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/parallel-decoding-nativewindow
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/audio-video-codec/parallel-decoding-nativewindow
+last_sync: 2026-06-07
+sync_hash: cd1af40a
 ---
-
-
 ## 场景介绍
 
 为了解码Surface模式的正常创建，在XComponent尚未创建或OpenGL后处理（NativeImage）尚未初始化的情况下，可以创建一个空的surface，以确保视频解码器能够正常创建和运行。

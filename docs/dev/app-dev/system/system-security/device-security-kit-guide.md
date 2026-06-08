@@ -2,12 +2,13 @@
 title: "Device Security Kit（设备安全服务）"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide
+last_sync: 2026-06-07
+sync_hash: 9f52d4af
 ---
-
-
 * **[Device Security Kit简介](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-introduction)**
 * **[服务配额](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-quota)**
-* **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-prepare)**
+* **[开发准备](/docs/dev/app-dev/system/system-hardware/car-kit-guide/car-preparations)**
 * **[应用设备状态检测](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-deviceverify-develop)**
 * **[安全检测](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-safetydetect-develop)**
 * **[可信应用服务](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-taas-dev)**
@@ -19,5 +20,5 @@ format: md
 * **[防窥保护](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-dlpantipeep)**
 * **[病毒防护服务管理(C/C++)](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-vps-c)**
 * **[超级隐私模式](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-superprivacymode)**
-* **[个人数据处理说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-personal-data)**
+* **[个人数据处理说明](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_personal_data)**
 * **[附录](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-appendix)**

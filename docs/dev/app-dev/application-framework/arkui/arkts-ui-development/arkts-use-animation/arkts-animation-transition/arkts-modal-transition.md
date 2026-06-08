@@ -2,9 +2,10 @@
 title: "模态转场"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition/arkts-modal-transition
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-transition/arkts-modal-transition
+last_sync: 2026-06-07
+sync_hash: d87087e8
 ---
-
-
 模态转场是新的界面覆盖在旧的界面上，旧的界面不消失的一种转场方式。
 
 **表1** 模态转场接口

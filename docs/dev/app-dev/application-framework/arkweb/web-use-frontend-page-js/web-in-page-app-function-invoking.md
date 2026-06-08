@@ -2,9 +2,10 @@
 title: "前端页面调用应用侧函数"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/web-in-page-app-function-invoking
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/web-in-page-app-function-invoking
+last_sync: 2026-06-07
+sync_hash: 0805f778
 ---
-
-
 开发者使用Web组件将应用侧代码注册到前端页面中，注册完成之后，前端页面中使用注册的对象名称就可以调用应用侧的方法。
 
 ## 如何建立应用侧与H5侧的交互通道

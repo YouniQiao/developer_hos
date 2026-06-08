@@ -3,8 +3,10 @@ title: "响应式布局"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi-device-responsive-layout
+last_sync: 2026-06-07
+sync_hash: 939c7344
 ---
-
 # 响应式布局
 
 ## 概述

@@ -2,9 +2,10 @@
 title: "获取AppFreeze指标"
 original_url: /docs/distribute/agc/agc-help-report-api-reference-0000002236201354/agc-help-report-api-appfreeze-0000002309619750
 format: md
+upstream_id: distribute/agc/agc-help-report-api-reference-0000002236201354/agc-help-report-api-appfreeze-0000002309619750
+last_sync: 2026-06-07
+sync_hash: 876a0236
 ---
-
-
 #### 功能介绍
 
 获取某一应用指定时间段内的AppFreeze指标数据，指标查询结果包括AppFreeze发生时间、AppFreeze次数、AppFreeze设备数及Fingerprint等。

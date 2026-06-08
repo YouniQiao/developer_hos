@@ -2,9 +2,10 @@
 format: md
 title: "如何修改bindPopup绑定的弹窗圆角大小和箭头颜色"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-349
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-349
+last_sync: 2026-06-07
+sync_hash: 699a4dbe
 ---
-
-
 通过radius参数调整圆角大小，但箭头颜色需通过popupColor间接设置。示例代码如下：
 
 ```

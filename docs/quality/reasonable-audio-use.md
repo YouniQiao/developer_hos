@@ -1,8 +1,10 @@
 ---
 title: "音频资源合理使用"
 original_url: /docs/quality/reasonable-audio-use
+upstream_id: /docs/quality/reasonable-audio-use
+last_sync: 2026-06-07
+sync_hash: 6bf40f6f
 ---
-
 # 音频资源合理使用
 
 无长时任务的应用退到后台时，禁止使用麦克风和扬声器。

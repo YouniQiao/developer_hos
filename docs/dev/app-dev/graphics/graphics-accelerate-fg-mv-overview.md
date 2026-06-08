@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "概述"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-fg-mv-overview
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-fg-mv-overview
+last_sync: 2026-06-07
+sync_hash: 15dd60dd
 ---
-
-
 从6.0.0(20)版本开始，新增支持顶点标记的Vulkan平台能力。
 
 超帧提供两种运动估计模式供开发者选择：分别为基础模式和增强模式。其中增强模式需要对绘制顶点的Draw Call命令进行额外的标记，在相机和物体快速运动的游戏场景超帧效果较基础模式更优，能够有效改善拖影问题。本章主要介绍增强模式的运动估计原理及顶点标记方法。

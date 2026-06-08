@@ -2,9 +2,10 @@
 title: "生成HarmonyOS 5.0及以上工程"
 original_url: /docs/dev/game-dev/games-2dx-generate-project-0000002296123910
 format: md
+upstream_id: dev/game-dev/games-2dx-generate-project-0000002296123910
+last_sync: 2026-06-07
+sync_hash: e0e1f1d3
 ---
-
-
 HarmonyOS 5.0及以上的HAP包需要通过DevEco工程构建，因此您需要为游戏生成对应的DevEco工程。
 
 您可以[在DevEco Studio中构建HAP包](#section410919387581)，或者[通过工程构建工具](#section827164516582)自动在Cocos游戏工程下生成HarmonyOS 5.0及以上工程。

@@ -2,9 +2,10 @@
 format: md
 title: "软件包格式异常"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-15
+upstream_id: FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-15
+last_sync: 2026-06-07
+sync_hash: 3ca079ab
 ---
-
-
 **问题现象**
 
 1. 打包签名提示“**find zip central directory failed**”错误。

@@ -3,9 +3,10 @@ title: "cem工具"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/cem-tool
 format: md
+upstream_id: tools/cli-tools/cem-tool
+last_sync: 2026-06-07
+sync_hash: 257e963d
 ---
-
-
 # cem工具
 
 Common Event Manager（公共事件管理工具， 简称cem）是实现公共事件信息打印、发布公共事件等功能的工具，为开发者提供基本的公共事件调试和测试能力，例如打印所有公共事件订阅者、已发送公共事件和接收者、模拟发布公共事件等。

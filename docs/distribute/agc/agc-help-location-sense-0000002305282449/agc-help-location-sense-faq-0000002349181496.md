@@ -2,9 +2,10 @@
 title: "FAQ"
 original_url: /docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-faq-0000002349181496
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-faq-0000002349181496
+last_sync: 2026-06-07
+sync_hash: 8c42339b
 ---
-
-
 #### 创建近场服务时提示无意图可选，如何解决
 
 当您创建近场服务选择意图名称时，如果提示您暂无意图可选，请检查工程配置文件（#PROJECT\_HOME/entry/src/main/resources/base/profile/insight\_intent.json）中是否注册需要使用的意图。如果未配置意图，请参考[意图开发说明](https://developer.huawei.com/consumer/cn/doc/app/agc-help-insight-config-poi-0000002349175932)正确配置和调用意图。

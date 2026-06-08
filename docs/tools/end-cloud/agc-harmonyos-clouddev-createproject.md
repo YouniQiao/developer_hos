@@ -1,12 +1,12 @@
 ---
-
 title: "在AGC创建项目和HarmonyOS应用/元服务"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-createproject
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-createproject
+last_sync: 2026-06-07
+sync_hash: f0abdce2
 ---
-
-
 # 在AGC创建项目和HarmonyOS应用/元服务
 
 ## 创建项目

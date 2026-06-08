@@ -2,10 +2,11 @@
 title: "使用Node-API接口产生的异常日志/崩溃分析"
 original_url: /docs/dev/ndk-dev/use-napi-about-crash
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-crash
+last_sync: 2026-06-07
+sync_hash: a70db055
 ---
-
-
-以下维测手段多数依赖于ArkTS运行时的多线程检测能力，因此建议在调试前启用此功能。启用方法参考文档[分析CppCrash（进程崩溃）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-multi-thread-check)。
+以下维测手段多数依赖于ArkTS运行时的多线程检测能力，因此建议在调试前启用此功能。启用方法参考文档[分析CppCrash（进程崩溃）](/docs/tools/coding-debug/ide-multi-thread-check)。
 
 若无特殊说明，本章节描述的维测手段会在启用ArkTS运行时多线程检测开关的情况下，立即中断进程。
 

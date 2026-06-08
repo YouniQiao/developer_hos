@@ -3,9 +3,10 @@ title: "工程级build-profile.json5文件"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-build-profile-app
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-build-profile-app
+last_sync: 2026-06-07
+sync_hash: 8003f7ac
 ---
-
-
 # 工程级build-profile.json5文件
 
 #### 配置文件结构

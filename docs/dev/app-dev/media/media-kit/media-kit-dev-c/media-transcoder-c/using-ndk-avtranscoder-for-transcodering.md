@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用AVTranscoder实现视频转码(C/C++)"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-transcoder-c/using-ndk-avtranscoder-for-transcodering
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-c/media-transcoder-c/using-ndk-avtranscoder-for-transcodering
+last_sync: 2026-06-07
+sync_hash: e274f3d0
 ---
-
-
 从API version 20开始支持使用NDK接口（C/C++）实现视频转码。
 
 使用[AVTranscoder](/docs/dev/app-dev/media/media-kit/media-kit-intro#avtranscoder)可以实现视频转码功能，从API 12开始，转码功能可在手机、平板、2in1设备上作为系统提供的基础能力使用。可以通过调用[canIUse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/init#caniuse)接口来判断当前设备是否支持AVTranscoder。当canIUse("SystemCapability.Multimedia.Media.AVTranscoder")返回值为true时，表示可以使用转码能力。

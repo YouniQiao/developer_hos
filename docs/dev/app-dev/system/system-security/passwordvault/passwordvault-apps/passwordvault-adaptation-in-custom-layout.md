@@ -2,9 +2,10 @@
 title: "自定义布局下的适配建议"
 original_url: /docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-adaptation-in-custom-layout
 format: md
+upstream_id: dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-adaptation-in-custom-layout
+last_sync: 2026-06-07
+sync_hash: 1fa45b16
 ---
-
-
 ## 登录
 
 应用在设置“登录”页面时，需要“用户名/账号名”、“密码”在同一个界面，具体可参照[账号密码保存-登录](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autosave/passwordvault-save-acc-password#账号密码登录)、[账号密码填充-登录](/docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autofill/passwordvault-autofill-acc-password#登录)中的介绍。

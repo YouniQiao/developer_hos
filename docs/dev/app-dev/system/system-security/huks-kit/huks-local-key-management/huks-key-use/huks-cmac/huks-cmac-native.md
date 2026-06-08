@@ -2,9 +2,10 @@
 title: "CMAC(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-cmac/huks-cmac-native
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-cmac/huks-cmac-native
+last_sync: 2026-06-07
+sync_hash: d498ad22
 ---
-
-
 CMAC是基于对称密钥分组加密算法的消息认证码（Cipher-based Message Authentication Code），目前支持3DES加密算法的消息认证方法。
 
 ![](./img/ec9472f2.png)

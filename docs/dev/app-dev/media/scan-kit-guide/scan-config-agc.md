@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-config-agc
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-config-agc
+last_sync: 2026-06-07
+sync_hash: 28eb3c09
 ---
-
-
 1. 参考“[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)”完成基本准备工作。
 2. （**仅针对“扫码直达”必选**）接入[App Linking](/docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp)，您需要完成以下步骤：
 
@@ -18,4 +19,4 @@ format: md
 
 * App Linking方式当前仅支持HTTPS网址，具备应用和网页两种呈现方式。当应用安装时则优先直达应用内服务页，当应用未安装时，浏览器也可以为用户提供服务。
 * App Linking还广泛应用于社交分享、沉默唤醒、广告引流等场景。
-* 接入App Linking不能使用DevEco的自动签名功能，必须使用[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+* 接入App Linking不能使用DevEco的自动签名功能，必须使用[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)。

@@ -2,9 +2,10 @@
 title: "稳定性测试"
 original_url: /docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-stabilitytest-0000002254933876
 format: md
+upstream_id: distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-stabilitytest-0000002254933876
+last_sync: 2026-06-07
+sync_hash: ef754e17
 ---
-
-
 稳定性测试通过长时间遍历测试和随机测试，检测应用或元服务是否存在崩溃、冻屏、内存泄漏、进（线）程限制、文件资源限制等稳定性问题。
 
 #### 前提条件

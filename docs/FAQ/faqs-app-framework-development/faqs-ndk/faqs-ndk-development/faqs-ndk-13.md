@@ -2,9 +2,10 @@
 format: md
 title: "如何在Native侧区分ArkTS侧创建的ArrayBuffer和Uint8Array对象"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-13
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-13
+last_sync: 2026-06-07
+sync_hash: e3fd1cd0
 ---
-
-
 **问题详情**
 
 ArkTS层创建的ArrayBuffer和Uint8Array对象在Native层无法正确区分。

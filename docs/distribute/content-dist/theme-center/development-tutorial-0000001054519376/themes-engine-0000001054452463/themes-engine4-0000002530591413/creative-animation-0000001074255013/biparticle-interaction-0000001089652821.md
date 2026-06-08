@@ -3,9 +3,10 @@ title: "双粒子互动"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/biparticle-interaction-0000001089652821
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/creative-animation-0000001074255013/biparticle-interaction-0000001089652821
+last_sync: 2026-06-07
+sync_hash: 0caa2674
 ---
-
-
 # 双粒子互动
 
 ## 动效概述

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "显示我的位置"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-creation/map-location
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-creation/map-location
+last_sync: 2026-06-07
+sync_hash: 81373b60
 ---
-
-
 ## 场景介绍
 
 从6.0.1(21)开始，支持更改我的位置相对覆盖物的顺序。

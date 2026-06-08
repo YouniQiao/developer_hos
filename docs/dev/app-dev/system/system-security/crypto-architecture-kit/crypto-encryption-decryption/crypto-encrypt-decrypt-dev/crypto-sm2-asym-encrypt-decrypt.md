@@ -2,9 +2,10 @@
 title: "使用SM2非对称密钥加解密(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-sm2-asym-encrypt-decrypt
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-sm2-asym-encrypt-decrypt
+last_sync: 2026-06-07
+sync_hash: 15b22daf
 ---
-
-
 对应的算法规格请查看[非对称密钥加解密算法规格：SM2](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-spec/crypto-asym-encrypt-decrypt-spec#sm2)。
 
 **加密**

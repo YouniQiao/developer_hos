@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口进行错误处理开发"
 original_url: /docs/dev/ndk-dev/use-jsvm-error
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-error
+last_sync: 2026-06-07
+sync_hash: 5abf8a50
 ---
-
-
 ## 简介
 
 使用JSVM-API接口进行错误处理，可以更好地管理和响应错误情况。合理使用这些函数，可以提高模块的稳定性和可靠性。

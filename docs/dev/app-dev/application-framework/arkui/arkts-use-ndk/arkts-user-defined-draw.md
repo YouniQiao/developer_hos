@@ -2,9 +2,10 @@
 title: "自定义绘制"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-user-defined-draw
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-user-defined-draw
+last_sync: 2026-06-07
+sync_hash: eeea6a6b
 ---
-
-
 ## 概述
 
 当某些组件本身的绘制内容不满足需求时，可使用组件自定义绘制功能，在原有组件基础上部分绘制、或者全部自行绘制，以达到预期效果。例如：独特的按钮形状、文字和图像混合的图标等。NDK提供了自定义绘制节点的能力，通过自定义绘制事件，开发者可以实现基于NDK侧[ArkUI\_NodeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodetype)中ARKUI\_NODE\_CUSTOM类型节点的自绘制能力。

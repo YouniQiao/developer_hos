@@ -2,9 +2,10 @@
 title: "滚动"
 original_url: /docs/dev/atomic-dev/ascf/apis-page/apis-scroll
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-page/apis-scroll
+last_sync: 2026-06-07
+sync_hash: 45692117
 ---
-
-
 ## has.pageScrollTo
 
 has.pageScrollTo(Object object)

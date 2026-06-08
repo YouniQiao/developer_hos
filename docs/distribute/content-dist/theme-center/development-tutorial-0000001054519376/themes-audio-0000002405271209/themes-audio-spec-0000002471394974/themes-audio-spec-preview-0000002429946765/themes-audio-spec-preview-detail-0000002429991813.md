@@ -3,9 +3,10 @@ title: "详情图"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-preview-0000002429946765/themes-audio-spec-preview-detail-0000002429991813
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-preview-0000002429946765/themes-audio-spec-preview-detail-0000002429991813
+last_sync: 2026-06-07
+sync_hash: d215fcfc
 ---
-
-
 # 详情图
 
 详情图，用于主题市场的耳机弹窗详情页展示。

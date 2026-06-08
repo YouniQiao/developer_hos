@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "隐私管理服务"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-privacy
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-privacy
+last_sync: 2026-06-07
+sync_hash: 23e6d371
 ---
-
-
 隐私管理服务为使用[标准化隐私声明托管服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-privacy-policy-0000002316794885)的应用/元服务提供查询隐私链接、查询隐私签署状态、撤销同意记录和拉起标准化隐私弹框请求用户同意功能。
 
 ![](./img/ed29a9f3.png)
@@ -302,7 +303,7 @@ class PrivacyEventSubscriber {
 
 预置隐私链接信息完成后，打开应用会弹出统一隐私弹框，应用可以使用隐私管理服务提供的查询隐私链接、查询隐私签署状态和撤销同意记录等相关功能。
 
-1. 将应用工程构建模式修改为[debug模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-sample#section390311716277)。
+1. 将应用工程构建模式修改为[debug模式](/docs/tools/coding-debug/ide-hvigor-compilation-options-customizing-sample#section390311716277)。
 2. 打开代码工程中type为entry类型的模块，修改其中的src/main/module.json5文件，添加module.metadata信息，其中包含四个字段，值均为字符串类型：
 
    | 字段名称 | 字段解释 | 是否必填 |

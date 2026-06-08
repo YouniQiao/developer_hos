@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: /docs/dev/app-dev/application-services/development-preparation
 format: md
+upstream_id: dev/app-dev/application-services/development-preparation
+last_sync: 2026-06-07
+sync_hash: 3bd1be68
 ---
-
-
 ## 申请权限
 
 应用在使用Ads Kit能力前，需要检查是否已经获取对应权限。如未获得授权，需要声明对应权限。

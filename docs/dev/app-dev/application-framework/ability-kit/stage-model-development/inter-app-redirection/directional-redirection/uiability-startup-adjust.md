@@ -2,8 +2,11 @@
 title: "显式Want跳转切换应用链接跳转适配指导"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/uiability-startup-adjust
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/uiability-startup-adjust
+last_sync: 2026-06-07
+sync_hash: 997eeb33
+upstream_hash: 5d01b384a131
 ---
-
 
 从API 12开始，已不再推荐三方应用使用指定Ability方式（即显式Want）拉起其他应用，推荐通过指定[应用链接](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-startup-overview#应用链接)的方式来实现。
 

@@ -2,9 +2,10 @@
 title: "业务介绍"
 original_url: /docs/distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-introduction-0000002255036400
 format: md
+upstream_id: distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-introduction-0000002255036400
+last_sync: 2026-06-07
+sync_hash: 0e66781d
 ---
-
-
 云测试致力于为您提供便捷的一站式应用测试服务，解决您在应用开发、测试过程中面临的成本、技术和效率问题，保障您的应用在华为平台上架期间获得优质的用户体验。云测试为您提供了热门移动真机设备，有针对性地向您提供应用在手机、平板等设备上的兼容性测试、稳定性测试、性能测试、功耗测试、UX测试和隐私测试能力，快速出具专业且详细的测试报告，帮助您提前发现并精准定位和解决问题。
 
 #### 主要功能

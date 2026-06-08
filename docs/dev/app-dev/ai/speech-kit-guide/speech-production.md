@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Speech Kit简介"
 original_url: /docs/dev/app-dev/ai/speech-kit-guide/speech-production
 format: md
+upstream_id: dev/app-dev/ai/speech-kit-guide/speech-production
+last_sync: 2026-06-07
+sync_hash: 466a8e12
 ---
-
-
 Speech Kit（场景化语音服务）集成了语音类AI能力，包括朗读控件（TextReader）和AI字幕控件（AICaptionComponent）能力，便于用户与设备进行互动，为用户实现朗读文章。
 
 ## 场景介绍

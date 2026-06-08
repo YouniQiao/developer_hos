@@ -3,8 +3,10 @@ title: "创建解决方案数据源"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-lending-industry-solutions-datasource-0000001965887790
 format: md
+upstream_id: monetize/promotion/bp-functions-lending-industry-solutions-datasource-0000001965887790
+last_sync: 2026-06-07
+sync_hash: 1458cf09
 ---
-
 # 创建解决方案数据源
 
 贷款行业解决方案的数据源与外部通用数据源隔离，需在【解决方案】-【贷款行业解决方案】完成数据源创建。

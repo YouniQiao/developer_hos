@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "HDR Vivid相机拍照(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-hdr-shooting
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-hdr-shooting
+last_sync: 2026-06-07
+sync_hash: 14930e29
 ---
-
-
 HarmonyOS支持调用接口拍摄HDR Vivid照片，可以拍出层次表现更细腻、光影细节更丰富的画面，提升画面质感，呈现更卓越的视觉效果。
 
 当前示例提供完整的HDR Vivid拍照开发步骤，方便开发者实现HDR拍照的功能。更多HDR Vivid的开发指导，请参考[使用HDR Vivid特性开发媒体应用](/docs/dev/app-dev/media/multimedia-hdr-vivid)。

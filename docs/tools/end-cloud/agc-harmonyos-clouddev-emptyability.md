@@ -1,12 +1,12 @@
 ---
-
 title: "通用云开发模板"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-emptyability
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-emptyability
+last_sync: 2026-06-07
+sync_hash: c04db7a9
 ---
-
-
 # 通用云开发模板
 
 ## 适用范围

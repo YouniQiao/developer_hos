@@ -2,9 +2,10 @@
 title: "TaskPool线程内存如何共享"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-58
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-58
+last_sync: 2026-06-07
+sync_hash: a17a546f
 ---
-
-
 TaskPool 底层采用 Actor 模型，线程间隔离，不共享内存。可以通过传输 SharedArrayBuffer 对象实现内存共享。
 
 需要注意，SharedArrayBuffer对象存储的数据在同时被修改时，必须通过原子操作确保同步，即下一个操作开始前，上一个操作必须已完成。

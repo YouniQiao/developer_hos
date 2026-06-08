@@ -2,9 +2,10 @@
 title: "UI测试框架使用指导"
 original_url: /docs/dev/testing/ut/arkxtest-guidelines/uitest-guidelines
 format: md
+upstream_id: dev/testing/ut/arkxtest-guidelines/uitest-guidelines
+last_sync: 2026-06-07
+sync_hash: e600db5f
 ---
-
-
 ## 概述
 
 UI测试框架（UITest）为开发者提供UI界面查找和模拟操作能力，可覆盖UI自动化测试的关键场景，包括界面控件精准查找、UI交互操作（如点击、滑动、文本输入等）、外设行为模拟（如键盘输入、鼠标操作、触控板手势、手写笔动作等），助力开发者开发高效可靠的界面自动化测试用例。

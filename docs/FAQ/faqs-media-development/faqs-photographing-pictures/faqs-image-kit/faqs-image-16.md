@@ -2,9 +2,10 @@
 format: md
 title: "如何将图片压缩到指定大小以下"
 original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-16
+upstream_id: FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-16
+last_sync: 2026-06-07
+sync_hash: 9264bb88
 ---
-
-
 **问题详情：**
 
 目前仅支持通过质量压缩来减小图片大小，尚未提供其他压缩方法将图片压缩到指定大小，例如将PixelMap压缩至30 KB。

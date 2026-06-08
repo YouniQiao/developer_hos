@@ -3,8 +3,10 @@ title: 转场动效
 sidebar_label: 转场动效
 original_url: /docs/design/general-design-basics/animation/transition
 format: md
+upstream_id: design/general-design-basics/animation/transition
+last_sync: 2026-06-07
+sync_hash: a29a1651
 ---
-
 # 转场动效
 
 衔接页面与页面间或元素与元素间的过渡动画称之为转场动效，帮助用户理解界面以及元素之间的逻辑关系，比如打开应用动效，日程切换动效，在系统占比最高的动效类型60%以上。在HarmonyOS的转场动效设计上，我们推出了一镜到底的高级转场设计手法，可以提升视觉流畅性的同时又能增强动效品质感。

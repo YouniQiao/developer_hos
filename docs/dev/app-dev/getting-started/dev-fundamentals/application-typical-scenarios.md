@@ -1,8 +1,10 @@
 ---
 title: "典型场景的开发指导"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/application-typical-scenarios
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/application-typical-scenarios
+last_sync: 2026-06-07
+sync_hash: 84f7191f
 ---
-
 * **[创建应用静态快捷方式](/docs/dev/app-dev/getting-started/dev-fundamentals/typical-scenario-configuration)**
 * **[创建应用分身](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)**
 * **[创建应用多实例](/docs/dev/app-dev/getting-started/dev-fundamentals/multiinstance)**

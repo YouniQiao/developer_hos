@@ -3,9 +3,10 @@ title: "智慧分发SDK合规使用指南"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/terms_conditions-0000001193795972/compliance-guidelines-0000002485548586
 format: md
+upstream_id: distribute/xiaoyi/terms_conditions-0000001193795972/compliance-guidelines-0000002485548586
+last_sync: 2026-06-07
+sync_hash: 3e9bbaf7
 ---
-
-
 # 智慧分发SDK合规使用指南
 
 《中华人民共和国个人信息保护法》自2021年11月1日起正式施行后，监管部门、各行业参与方和终端消费者越来越关注用户的隐私保护问题。为了有效治理App违规收集使用个人信息的现象，监管部门也陆续出台相关标准规范。

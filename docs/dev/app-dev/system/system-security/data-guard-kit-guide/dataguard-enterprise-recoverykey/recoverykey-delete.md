@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "删除企业恢复密钥"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-delete
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-delete
+last_sync: 2026-06-07
+sync_hash: 49bb5ef5
 ---
-
-
 ## 场景介绍
 
 为应用提供删除企业恢复密钥的能力，用于在企业恢复密钥发生泄漏、禁用企业恢复密钥时删除相关数据，使之前导出的企业恢复密钥失效。

@@ -2,9 +2,10 @@
 title: "栈顶在方舟运行时的应用冻屏问题定位实践"
 original_url: /docs/quality/stability-app-freeze-ark-runtime
 format: md
+upstream_id: /docs/quality/stability-app-freeze-ark-runtime
+last_sync: 2026-06-07
+sync_hash: dc6426c3
 ---
-
-
 # 栈顶在方舟运行时的应用冻屏问题定位实践
 
 ## 概述

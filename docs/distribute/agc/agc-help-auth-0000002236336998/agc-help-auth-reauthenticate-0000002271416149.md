@@ -2,8 +2,11 @@
 title: "账号重认证"
 original_url: /docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-reauthenticate-0000002271416149
 format: md
+upstream_id: distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-reauthenticate-0000002271416149
+last_sync: 2026-06-07
+sync_hash: f4d94131
+upstream_hash: 8777665992e8
 ---
-
 
 #### 前提条件
 

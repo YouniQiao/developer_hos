@@ -2,9 +2,10 @@
 title: "发票"
 original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-invoice
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-open-apis/apis-invoice
+last_sync: 2026-06-07
+sync_hash: 136742c9
 ---
-
-
 ## has.chooseInvoiceTitle
 
 has.chooseInvoiceTitle(Object object)

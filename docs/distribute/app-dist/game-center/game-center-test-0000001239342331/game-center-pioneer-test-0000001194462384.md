@@ -3,9 +3,10 @@ title: "先锋测试"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-test-0000001239342331/game-center-pioneer-test-0000001194462384
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-test-0000001239342331/game-center-pioneer-test-0000001194462384
+last_sync: 2026-06-07
+sync_hash: 84095590
 ---
-
-
 # 先锋测试
 
 先锋测试是在游戏正式发布前，通过调查问卷对先锋玩家进行招募体验并获得其反馈，调优产品从而提升体验的一种限量测试。您可以通过问卷形式筛选出目标用户，对其发放游戏测试资格，在先锋测试阶段根据玩家反馈意见，优化游戏玩法、操作体验、美术风格等，提高游戏质量及体验。同时，您可以验证游戏对华为终端设备、华为游戏SDK适配情况。
@@ -24,7 +25,7 @@ format: md
   + “斗地主”、“捕鱼”、“纸牌 ”和“麻将”类型游戏不支持先锋测试。
   + 已有在架包体的游戏不支持先锋测试。若需使用“体验服”测试，请重新创建游戏后向华为工作人员提供APPID。
 * 为了提升测试包的通过率，您需要提前自检游戏接入参数、游戏登录体验、游戏支付体验等。
-* （可选）您可以[开通游戏版块](`https://developer.huawei.com/consumer/cn/doc/distribution/app/game-center-community-operation-0000001194305462`)，用于宣传游戏内容，聚集核心用户。
+* （可选）您可以[开通游戏版块](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)，用于宣传游戏内容，聚集核心用户。
 
 ## 操作流程
 
@@ -90,7 +91,7 @@ format: md
 ![](./img/2e5bd60eb2ba.png)
 
 * 请在招募开始前至少提前5天申请先锋测试，预留时间修改问题。
-* 请勿同时提交“先锋测试”和“[内测](`https://developer.huawei.com/consumer/cn/doc/distribution/app/game-center-early-access-0000001194302390`)”申请。
+* 请勿同时提交“先锋测试”和“[内测](`/docs/distribute/app-dist/game-center/game-center-test-0000001239342331/game-center-early-access-0000001194302390)”申请。
 
 1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”，在应用列表页面选择需要申请先锋测试的游戏。
 2. 选择“分发 &gt; 服务 &gt; 测试申请”，在页面右侧点击“申请”。

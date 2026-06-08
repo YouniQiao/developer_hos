@@ -2,9 +2,10 @@
 title: "新增测试群组"
 original_url: /docs/distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-add-test-group-0000002271160661
 format: md
+upstream_id: distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-add-test-group-0000002271160661
+last_sync: 2026-06-07
+sync_hash: 87623107
 ---
-
-
 #### 功能介绍
 
 此接口用于邀请测试创建测试群组。

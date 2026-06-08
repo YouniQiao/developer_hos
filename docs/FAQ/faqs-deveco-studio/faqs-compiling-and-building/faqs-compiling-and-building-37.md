@@ -2,9 +2,10 @@
 format: md
 title: "构建报错“ERROR: Task xxx was not found in the project xxx”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-37
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-37
+last_sync: 2026-06-07
+sync_hash: 88c078ee
 ---
-
-
 **问题现象**
 
 命令行手动执行构建命令时，如果构建失败并提示“ERROR: Task xxx was not found in the project xxx”，请检查以下内容：

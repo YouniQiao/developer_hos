@@ -3,10 +3,10 @@ title: "常见问题"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/harmonyosnextchangjianwenti-0000002150269710
 format: md
+upstream_id: monetize/monetization/harmonyosnextchangjianwenti-0000002150269710
+last_sync: 2026-06-07
+sync_hash: eff6970c
 ---
-
-
-
 **Q1：****测试ID是什么？**
 
 A：测试ID是开发者在集成开发阶段，用于验证广告请求和展示是否正常。

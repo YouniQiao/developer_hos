@@ -2,9 +2,10 @@
 title: "概述"
 original_url: /docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-overview-0000002283260125
 format: md
+upstream_id: distribute/agc/agc-help-profile-0000002270709473/agc-help-profile-overview-0000002283260125
+last_sync: 2026-06-07
+sync_hash: 263403c6
 ---
-
-
 Profile格式为.p7b，包含HarmonyOS应用/元服务的包名、数字证书信息、HarmonyOS应用/元服务允许申请的证书权限列表，以及允许应用/元服务调试的设备列表（如果HarmonyOS应用/元服务类型为Release类型，则设备列表为空）等内容。每个HarmonyOS应用/元服务包中均必须包含一个Profile文件。
 
 根据业务与场景需求，您可以使用不同类型的Profile。

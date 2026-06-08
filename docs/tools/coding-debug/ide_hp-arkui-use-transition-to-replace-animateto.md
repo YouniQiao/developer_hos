@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-use-transition-to-replace-animateto"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-use-transition-to-replace-animateto
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-use-transition-to-replace-animateto
+last_sync: 2026-06-07
+sync_hash: 064af32b
 ---
-
-
 # @performance/hp-arkui-use-transition-to-replace-animateto
 
 建议组件转场动画使用transition。

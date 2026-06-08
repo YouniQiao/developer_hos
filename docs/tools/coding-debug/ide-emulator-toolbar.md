@@ -3,8 +3,11 @@ title: "使用工具栏"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-emulator-toolbar
 format: md
+upstream_id: tools/coding-debug/ide-emulator-toolbar
+last_sync: 2026-06-07
+sync_hash: bfa70c23
+upstream_hash: 455614a9572e
 ---
-
 
 # 使用工具栏
 

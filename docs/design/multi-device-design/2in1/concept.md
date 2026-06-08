@@ -3,8 +3,10 @@ title: 设计概述
 sidebar_label: 设计概述
 original_url: /docs/design/multi-device-design/2in1/concept
 format: md
+upstream_id: design/multi-device-design/2in1/concept
+last_sync: 2026-06-07
+sync_hash: 86214075
 ---
-
 # 设计概述
 
 电脑融合了屏幕触摸和键鼠的交互手段，保持便携性的同时能充分发挥设备生产力，帮助用户高效完成任务。

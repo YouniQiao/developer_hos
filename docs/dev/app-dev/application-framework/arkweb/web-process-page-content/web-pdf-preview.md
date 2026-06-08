@@ -2,8 +2,11 @@
 title: "使用Web组件的PDF文档预览能力"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-pdf-preview
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-process-page-content/web-pdf-preview
+last_sync: 2026-06-07
+sync_hash: 48f7cf64
+upstream_hash: e9e788c3b2cc
 ---
-
 
 [Web](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web)组件支持在网页中预览PDF。但受限于性能表现，部分场景存在掉帧现象。若对流畅度有要求，建议使用[PdfView](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfview-component)，或第三方解析库[PDF.js](https://github.com/mozilla/pdf.js)。应用通过[WebOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-i#weboptions)的src参数和[loadUrl()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#loadurl)接口加载PDF文档。具体场景包括：网络PDF文档、应用沙箱内PDF文档和本地PDF文档。
 

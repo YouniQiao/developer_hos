@@ -2,9 +2,10 @@
 title: "基于设备分类和数据分级的访问控制 (C/C++)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/data-reliability-security/native-access-control-by-device-and-data-level
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/data-reliability-security/native-access-control-by-device-and-data-level
+last_sync: 2026-06-07
+sync_hash: e26db892
 ---
-
-
 ## 场景介绍
 
 分布式数据库的访问控制机制确保了数据存储和同步时的安全能力。在创建数据库时，应当基于数据分类分级规范合理地设置数据库的安全标签，确保数据库内容和数据标签的一致性。

@@ -3,8 +3,10 @@ title: "关键词状态修改"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-keywords3-0000001338413333
 format: md
+upstream_id: monetize/promotion/marketing-api-keywords3-0000001338413333
+last_sync: 2026-06-07
+sync_hash: 52f9cf63
 ---
-
 # 关键词状态修改
 
 您通过本接口可以批量修改同类型关键词的状态。

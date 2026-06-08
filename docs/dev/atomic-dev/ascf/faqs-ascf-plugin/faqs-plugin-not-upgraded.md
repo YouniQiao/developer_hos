@@ -2,9 +2,10 @@
 title: "ASCF引擎没有自动升级到最新版本"
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-plugin-not-upgraded
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-plugin-not-upgraded
+last_sync: 2026-06-07
+sync_hash: 8ceeeb38
 ---
-
-
 **问题现象**
 
 在手机上无法打开元服务。

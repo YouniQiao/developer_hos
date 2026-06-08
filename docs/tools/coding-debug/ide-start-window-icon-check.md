@@ -3,9 +3,10 @@ title: "@performance/start-window-icon-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-start-window-icon-check
 format: md
+upstream_id: tools/coding-debug/ide-start-window-icon-check
+last_sync: 2026-06-07
+sync_hash: ec68c228
 ---
-
-
 # @performance/start-window-icon-check
 
 启动页图标分辨率建议不超过256 \* 256，[冷启动响应时延场景](`https://`developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-cold-start-optimization#section5953164714132)下，建议优先修改。

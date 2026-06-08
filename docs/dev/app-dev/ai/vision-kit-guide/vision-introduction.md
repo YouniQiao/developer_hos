@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Vision Kit简介"
 original_url: /docs/dev/app-dev/ai/vision-kit-guide/vision-introduction
 format: md
+upstream_id: dev/app-dev/ai/vision-kit-guide/vision-introduction
+last_sync: 2026-06-07
+sync_hash: 736c0961
 ---
-
-
 Vision Kit（场景化视觉服务）集成了视觉类AI能力，包括人脸活体检测（interactiveLiveness）能力、卡证识别（CardRecognition）能力、文档扫描（DocumentScanner）能力、AI识图控件（visionImageAnalyzer）能力。人脸活体检测能力便于用户与设备进行互动，验证用户是否为真实活体；卡证识别能力可提供身份证、行驶证、驾驶证、护照、银行卡等证件的结构化识别服务；文档扫描控件可提供拍摄文档并转换为高清扫描件的服务；AI识图控件可提供场景化的文本识别、主体分割、识图搜索功能。其中动作活体检测能力、卡证识别能力实施试用期免费的计费政策，试用期至2026年12月31日。开始正式收费前，华为将会提前通过正式途径发布计费调整通告。
 
 ## 场景介绍

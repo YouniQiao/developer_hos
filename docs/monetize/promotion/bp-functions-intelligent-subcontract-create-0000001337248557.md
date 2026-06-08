@@ -3,8 +3,10 @@ title: "新建智能分包"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-intelligent-subcontract-create-0000001337248557
 format: md
+upstream_id: monetize/promotion/bp-functions-intelligent-subcontract-create-0000001337248557
+last_sync: 2026-06-07
+sync_hash: f7c31d37
 ---
-
 # 新建智能分包
 
 ## 操作步骤

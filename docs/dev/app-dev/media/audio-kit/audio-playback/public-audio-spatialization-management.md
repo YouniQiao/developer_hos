@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "空间音频能力查询和状态订阅"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-playback/public-audio-spatialization-management
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-playback/public-audio-spatialization-management
+last_sync: 2026-06-07
+sync_hash: 3ca0cc3a
 ---
-
-
 从API version 18开始，支持空间音频能力查询和状态订阅。
 
 空间音频是一种能够将传统立体声体验扩展到三维空间的音频技术，在单声道、立体声、环绕声的基础上，增加高度感知，营造全方位的听音体验。空间音频为用户提供沉浸的、有互动的、有空间感的“声”临其境的音频体验。

@@ -2,9 +2,10 @@
 title: "实名"
 original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-realname
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-open-apis/apis-realname
+last_sync: 2026-06-07
+sync_hash: 4be6d4e0
 ---
-
-
 ## has.startRealNameVerification
 
 has.startRealNameVerification(Object object)

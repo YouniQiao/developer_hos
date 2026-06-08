@@ -2,9 +2,10 @@
 title: "支持的国家/地区"
 original_url: /docs/dev/atomic-dev/atomic-devicesecurity-appendix/atomic-devicesecurity-appendix-region
 format: md
+upstream_id: dev/atomic-dev/atomic-devicesecurity-appendix/atomic-devicesecurity-appendix-region
+last_sync: 2026-06-07
+sync_hash: ac78d4b9
 ---
-
-
 | 国家/地区 | 英文名称 |
 | --- | --- |
 | 中国境内（不包含中国香港、中国澳门、中国台湾） | Chinese mainland |

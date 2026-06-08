@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通过延迟链接跳转至应用详情页"
 original_url: /docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-deferredlink
 format: md
+upstream_id: dev/app-dev/application-services/app-linking-kit-guide/applinking-deferredlink
+last_sync: 2026-06-07
+sync_hash: cdeb4b70
 ---
-
-
 ## 场景介绍
 
 从5.0.3(15)版本开始，新增支持延迟链接能力。

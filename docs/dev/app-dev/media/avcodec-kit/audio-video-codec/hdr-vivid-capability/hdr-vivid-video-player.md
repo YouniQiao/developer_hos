@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "HDR Vivid视频播放"
 original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/hdr-vivid-capability/hdr-vivid-video-player
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/audio-video-codec/hdr-vivid-capability/hdr-vivid-video-player
+last_sync: 2026-06-07
+sync_hash: c5d0d17e
 ---
-
-
 开发者可以调用本模块的Native API接口，实现在视频播放中支持HDR Vivid标准。
 
 视频播放的主要流程，是将视频文件“解封装 > 解码 > 送显/播放”。

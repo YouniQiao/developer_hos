@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“Module 'xxx' has no exported member 'yyy'”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-6
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-6
+last_sync: 2026-06-07
+sync_hash: f521dfb9
 ---
-
-
 **问题现象**
 
 Stage模板工程编译构建失败，提示 “Module 'xxx' has no exported member 'yyy'” 并且“yyy”符号是由export \* from 'x.js'语法从js文件中导出。

@@ -2,9 +2,10 @@
 title: "如何将文件转换成字符串"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-accessibility-localization/faqs-localization-kit/faqs-localization-13
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-accessibility-localization/faqs-localization-kit/faqs-localization-13
+last_sync: 2026-06-07
+sync_hash: b69b16dc
 ---
-
-
 1. 获取resources/rawfile目录下对应的rawfile文件内容。
 2. 调用util模块的TextDecoder将字节数组解码为字符串。
 3. 对Uint8Array进行解码。

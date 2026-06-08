@@ -2,9 +2,10 @@
 format: md
 title: "通过RdbStore.query()获取resultSet对象，出现resultSet的rowCount返回结果为-1"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-11
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-11
+last_sync: 2026-06-07
+sync_hash: 58d72564
 ---
-
-
 查询失败，返回结果为-1。
 
 以下是一种可能的情况：

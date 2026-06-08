@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "订阅CPU高负载事件（ArkTS）"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/high-cpu-load-event/hiappevent-watcher-cpu-usage-high-arkts
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/high-cpu-load-event/hiappevent-watcher-cpu-usage-high-arkts
+last_sync: 2026-06-07
+sync_hash: 918739f8
 ---
-
-
 ## 接口说明
 
 API接口的具体使用说明（参数使用限制、具体取值范围等）请参考[@ohos.hiviewdfx.hiAppEvent (应用事件打点)ArkTS API文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hiviewdfx-hiappevent)。

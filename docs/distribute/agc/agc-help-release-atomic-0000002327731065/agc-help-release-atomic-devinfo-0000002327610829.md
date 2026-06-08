@@ -2,9 +2,10 @@
 title: "配置开发者服务信息"
 original_url: /docs/distribute/agc/agc-help-release-atomic-0000002327731065/agc-help-release-atomic-devinfo-0000002327610829
 format: md
+upstream_id: distribute/agc/agc-help-release-atomic-0000002327731065/agc-help-release-atomic-devinfo-0000002327610829
+last_sync: 2026-06-07
+sync_hash: d0e73bd8
 ---
-
-
 您作为开发者的相关信息将面向元服务发布区域的用户公开，其中客服联系方式可能会提供给用户，用于咨询相关问题。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“快速开始”中的“元服务一站式平台”卡片。

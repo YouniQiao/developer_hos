@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "快捷播放"
 original_url: /docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/quick-playback
 format: md
+upstream_id: dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/quick-playback
+last_sync: 2026-06-07
+sync_hash: 0c0ee436
 ---
-
-
 针对音乐/听书类应用，播控中心提供一系列快捷播放能力，包括一键启动冷启动续播以及历史歌单与推荐歌单功能，其中歌单功能中支持显示的音频媒体内容有：音乐歌单、有声书专辑、播客专辑等。视频媒体内容、直播类媒体内容暂不支持歌单。应用选择PlayMusicList意图（音乐类应用）或者PlayAudio意图（听书类应用）其一，注册并适配[意图调用](/docs/dev/app-dev/ai/intents-habit-rec-access-programme)，即可实现接入上述三个功能，具体实现参考[历史歌单](/docs/dev/app-dev/media/avsession-kit/local-avsession/avsession-access-scene#历史歌单)。
 
 ## 播放按钮一键冷启动播放

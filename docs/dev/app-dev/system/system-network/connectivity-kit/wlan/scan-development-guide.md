@@ -2,9 +2,10 @@
 title: "Wi-Fi扫描开发指南"
 original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/wlan/scan-development-guide
 format: md
+upstream_id: dev/app-dev/system/system-network/connectivity-kit/wlan/scan-development-guide
+last_sync: 2026-06-07
+sync_hash: b3ff63e8
 ---
-
-
 ## 简介
 
 Wi-Fi扫描是指设备（如手机、电脑、路由器等）搜索周围可用Wi-Fi网络的过程。通过扫描，设备可以获取附近网络的基本信息（如网络名称、信号强度、加密方式等），从而实现连接、管理或分析周围网络。

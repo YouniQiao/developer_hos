@@ -3,9 +3,10 @@ title: "适配功能：可变帧率&lt;VariableFramerate&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-variableframerate-0000002504354979
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-variableframerate-0000002504354979
+last_sync: 2026-06-07
+sync_hash: 5876fcce
 ---
-
-
 # 适配功能：可变帧率&lt;VariableFramerate&gt;
 
 ## 功能概述

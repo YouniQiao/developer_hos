@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用picker管理联系人"
 original_url: /docs/dev/app-dev/application-services/contacts-kit/contacts-addcontactviaui
 format: md
+upstream_id: dev/app-dev/application-services/contacts-kit/contacts-addcontactviaui
+last_sync: 2026-06-07
+sync_hash: 6df0da86
 ---
-
-
 ## 接口说明
 
 | 接口名 | 描述 |

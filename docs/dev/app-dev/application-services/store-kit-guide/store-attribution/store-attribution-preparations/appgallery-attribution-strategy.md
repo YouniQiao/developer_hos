@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "管理归因策略"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-preparations/appgallery-attribution-strategy
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-preparations/appgallery-attribution-strategy
+last_sync: 2026-06-07
+sync_hash: 93f63bd6
 ---
-
-
 通过归因策略管理，支持开发者在应用归因云端管理台维护可归因的分发平台及归因优先级、归因窗口期、归因节点设置，从而提升归因能力拓展性，适配开发者多样化归因诉求。
 
 **开发者角色的合作伙伴在归因策略管理页面可以做如下操作**：

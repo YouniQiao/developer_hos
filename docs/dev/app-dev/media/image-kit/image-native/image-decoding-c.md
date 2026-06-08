@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "图片解码"
 original_url: /docs/dev/app-dev/media/image-kit/image-native/image-decoding-c
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-native/image-decoding-c
+last_sync: 2026-06-07
+sync_hash: 1f32c7c5
 ---
-
-
 ![](./img/a861b6db.png)
 
 当前开发指导使用的接口为[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-image)模块下的C API，可完成图片编解码，图片接收器，处理图像数据等功能。这部分API在API version 11之前发布，在后续的版本不再增加新功能，**不再推荐使用**。

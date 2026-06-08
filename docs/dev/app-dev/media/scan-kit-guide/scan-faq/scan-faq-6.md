@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "条形码识别错误"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-6
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-6
+last_sync: 2026-06-07
+sync_hash: 7f6f2c3f
 ---
-
-
 **问题现象**
 
 条形码识别过程中存在码图类型识别错误的场景。

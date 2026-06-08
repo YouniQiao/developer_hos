@@ -2,9 +2,10 @@
 title: "非公开发布"
 original_url: /docs/distribute/agc/agc-help-release-0000002235870050/agc-help-non-public-release-0000002278016482
 format: md
+upstream_id: distribute/agc/agc-help-release-0000002235870050/agc-help-non-public-release-0000002278016482
+last_sync: 2026-06-07
+sync_hash: 04d11bb8
 ---
-
-
 #### 简介
 
 对于不适合面向所有用户公开分发的应用，您可以通过非公开发布的方式在华为应用市场上发布。非公开发布的应用不会出现在华为应用市场的任何类别、推荐、排行榜、搜索结果或其他列表中，仅通过分发链接被用户发现、下载和更新，且任何获取到分发链接的用户均可以下载应用。

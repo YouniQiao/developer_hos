@@ -3,9 +3,10 @@ title: "资源缺失错误码"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-errorcode-00304
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-errorcode-00304
+last_sync: 2026-06-07
+sync_hash: 5fc2b492
 ---
-
-
 # 资源缺失错误码
 
 #### 00304001 启动框架配置文件不存在

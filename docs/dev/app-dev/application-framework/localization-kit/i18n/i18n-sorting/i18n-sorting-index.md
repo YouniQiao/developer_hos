@@ -2,8 +2,11 @@
 title: "创建索引"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-sorting/i18n-sorting-index
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/i18n/i18n-sorting/i18n-sorting-index
+last_sync: 2026-06-07
+sync_hash: 66e841fe
+upstream_hash: 842e584868b2
 ---
-
 
 ## 功能介绍
 

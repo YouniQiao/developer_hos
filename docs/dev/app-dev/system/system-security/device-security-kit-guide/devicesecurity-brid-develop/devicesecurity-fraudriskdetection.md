@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "涉诈剧本检测"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-brid-develop/devicesecurity-fraudriskdetection
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-brid-develop/devicesecurity-fraudriskdetection
+last_sync: 2026-06-07
+sync_hash: 552267a4
+upstream_hash: b118fb4c4c9e
 ---
-
 
 ## 场景介绍
 

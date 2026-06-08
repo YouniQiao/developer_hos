@@ -2,9 +2,10 @@
 title: "设备"
 original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-device
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-device/apis-device
+last_sync: 2026-06-07
+sync_hash: ba6fa425
 ---
-
-
 * **[网络](/docs/dev/atomic-dev/ascf/apis-device/apis-network-type)**
 * **[电话](/docs/dev/atomic-dev/ascf/apis-device/apis-telephony)**
 * **[设备方向](/docs/dev/atomic-dev/ascf/apis-device/apis-device-orientation)**

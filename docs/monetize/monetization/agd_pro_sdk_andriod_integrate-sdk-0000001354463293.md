@@ -3,10 +3,10 @@ title: "集成AGD Pro服务SDK"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_integrate-sdk-0000001354463293
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_andriod_integrate-sdk-0000001354463293
+last_sync: 2026-06-07
+sync_hash: b2d21598
 ---
-
-
-
 * **[快速集成](/docs/monetize/monetization/agd_pro_sdk_andriod_demo-0000001461263141)**
 * **[前置要求](/docs/monetize/monetization/agd_pro_sdk_andriod_prerequisite-0000001354663501)**
 * **[工程配置](/docs/monetize/monetization/agd_pro_sdk_andriod_project-cfg-0000001301943170)**

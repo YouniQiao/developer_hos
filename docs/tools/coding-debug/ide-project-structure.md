@@ -2,9 +2,10 @@
 title: "工程目录结构介绍"
 format: md
 original_url: /docs/tools/coding-debug/ide-project-structure
+upstream_id: tools/coding-debug/ide-project-structure
+last_sync: 2026-06-07
+sync_hash: 91d8627a
 ---
-
-
 # 工程目录结构介绍
 
 ## ArkTS工程目录结构（Stage模型）

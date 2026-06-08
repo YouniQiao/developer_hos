@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "设备输入(C/C++)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-device-input
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-device-input
+last_sync: 2026-06-07
+sync_hash: 9c186925
 ---
-
-
 在开发相机应用时，需要先[申请相关权限](/docs/dev/app-dev/media/camera-kit/camera-preparation)。
 
 相机应用通过调用和控制相机设备，完成预览、拍照和录像等基础操作。

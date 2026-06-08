@@ -2,9 +2,10 @@
 title: "如何实现三键导航的监听与避让"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-491
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-491
+last_sync: 2026-06-07
+sync_hash: 8d61a173
 ---
-
-
 **解决措施**
 
 1、通过[settings.registerKeyObserver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-settings#settingsregisterkeyobserver11)监听三键导航的开启。

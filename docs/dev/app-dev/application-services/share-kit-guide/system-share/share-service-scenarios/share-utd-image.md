@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "分享图片"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios/share-utd-image
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios/share-utd-image
+last_sync: 2026-06-07
+sync_hash: 61870feb
 ---
-
-
 图片类型分享支持将一张或多张图片分享到目标设备/目标应用。
 
 * 目标设备接收时，图片会保存到图库中。

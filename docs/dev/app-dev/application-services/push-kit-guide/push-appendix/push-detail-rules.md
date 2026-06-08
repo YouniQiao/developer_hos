@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通知内容管理细则"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-appendix/push-detail-rules
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-appendix/push-detail-rules
+last_sync: 2026-06-07
+sync_hash: b0274c55
 ---
-
-
 ## 目的
 
 为保障华为推送平台内容信息的合法性、真实客观性、一致性、可读性，以及用户良好的通知使用体验，制定了Push Kit通知内容管理细则。

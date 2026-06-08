@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "创建Wallet Kit服务"
 original_url: /docs/dev/app-dev/application-services/wallet-kit-guide/wallet-preparations
 format: md
+upstream_id: dev/app-dev/application-services/wallet-kit-guide/wallet-preparations
+last_sync: 2026-06-07
+sync_hash: f79fc835
 ---
-
-
 请先参考“[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)”完成基本准备工作和指纹配置，再继续以下开发活动。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“我的项目”。

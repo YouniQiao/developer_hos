@@ -2,9 +2,10 @@
 title: "Web组件大小自适应页面内容布局"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-render-layout/web-fit-content
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-render-layout/web-fit-content
+last_sync: 2026-06-07
+sync_hash: 608ff306
 ---
-
-
 使用Web组件大小自适应页面内容布局模式[layoutMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-attributes#layoutmode11)([WebLayoutMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-e#weblayoutmode11).FIT\_CONTENT)时，能使Web组件的大小根据页面内容自适应变化。
 
 多设备适配Web页面请参考[Web响应式布局](/docs/dev/app-dev/multi-device/bpta-web-adaptation)。

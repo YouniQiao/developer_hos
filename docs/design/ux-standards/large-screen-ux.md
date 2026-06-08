@@ -3,8 +3,10 @@ title: 大屏应用 UX 体验标准
 sidebar_label: 大屏应用 UX 体验标准
 original_url: /docs/design/ux-standards/large-screen-ux
 format: md
+upstream_id: design/ux-standards/large-screen-ux
+last_sync: 2026-06-07
+sync_hash: fee04fdc
 ---
-
 \{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 大屏应用 UX 体验标准

@@ -2,9 +2,10 @@
 format: md
 title: "在CMakeLists文件中如何获取模块版本信息"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-60
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-60
+last_sync: 2026-06-07
+sync_hash: c11896fc
 ---
-
-
 **问题现象**
 
 有一个har模块，在 oh-package.json5 中配置了版本 1.0.0。模块内部有C++代码，其中某一个文件会根据版本变化，因此不同版本参与编译的都是不同的文件。通过CMAKE\_VERSION变量可以获取CMake的版本信息，但获取不到har的版本信息，如何在CMakeLists中获取当前har模块oh-package.json5中的version版本号，以匹配不同的cpp文件。

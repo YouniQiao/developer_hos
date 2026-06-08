@@ -3,6 +3,10 @@ title: "使用放量模板创建"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-customize-create-template-0000001309390054
 format: md
+upstream_id: monetize/promotion/bp-functions-customize-create-template-0000001309390054
+last_sync: 2026-06-07
+sync_hash: 6d5c6628
+upstream_hash: c9b6ba7e1b7a
 ---
 
 # 使用放量模板创建

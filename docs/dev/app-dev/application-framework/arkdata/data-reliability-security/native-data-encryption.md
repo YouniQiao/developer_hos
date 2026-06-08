@@ -2,8 +2,11 @@
 title: "数据库加密 (C/C++)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/data-reliability-security/native-data-encryption
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/data-reliability-security/native-data-encryption
+last_sync: 2026-06-07
+sync_hash: 72402d98
+upstream_hash: 2fff98807698
 ---
-
 
 ## 场景介绍
 

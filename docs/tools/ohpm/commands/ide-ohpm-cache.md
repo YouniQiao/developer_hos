@@ -3,9 +3,10 @@ title: "ohpm cache clean"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-cache
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-cache
+last_sync: 2026-06-07
+sync_hash: ee55f3a0
 ---
-
-
 # ohpm cache clean
 
 清理 ohpm 缓存文件夹。

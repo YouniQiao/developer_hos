@@ -3,8 +3,10 @@ title: 字体排印
 sidebar_label: 字体排印
 original_url: /docs/design/general-design-basics/visual-design/font
 format: md
+upstream_id: design/general-design-basics/visual-design/font
+last_sync: 2026-06-07
+sync_hash: 80dfccb7
 ---
-
 # 字体排印
 
 字体排印指的是在操作系统中对文字的布局和呈现方式的定义。在 UI 设计中，字体排印起着关键的作用，包括字体的大小、样式、行间距等，这些因素直接影响用户界面的可读性和整体美观性。通过合适的字体排印，设计师可以确保用户能够轻松阅读和理解应用程序的内容，提升用户体验。除了确保文本清晰易读外，其所选字体排印方式还可协助你阐明信息层级结构、传达重要内容并宣传你的品牌。

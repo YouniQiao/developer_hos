@@ -2,9 +2,10 @@
 title: "VersionExtInfo"
 original_url: /docs/distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-versionextinfo-0000002272455645
 format: md
+upstream_id: distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-versionextinfo-0000002272455645
+last_sync: 2026-06-07
+sync_hash: 4ac59a8b
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | testUserName | O | String(128) | 应用审核信息的测试账号。  注意：  仅公开测试支持填写此字段。 |

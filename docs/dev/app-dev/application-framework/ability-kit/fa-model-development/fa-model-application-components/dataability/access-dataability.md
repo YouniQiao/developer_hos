@@ -2,8 +2,11 @@
 title: "访问DataAbility"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/dataability/access-dataability
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/dataability/access-dataability
+last_sync: 2026-06-07
+sync_hash: deb84be4
+upstream_hash: 71b8dd405308
 ---
-
 
 访问DataAbility需导入基础依赖包，以及获取与DataAbility子模块通信的URI字符串。
 

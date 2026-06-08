@@ -2,9 +2,10 @@
 title: "新增互联网信息"
 original_url: /docs/dev/atomic-dev/atomic-service-cloud/atomic-service-filing-internet-info
 format: md
+upstream_id: dev/atomic-dev/atomic-service-cloud/atomic-service-filing-internet-info
+last_sync: 2026-06-07
+sync_hash: 78ee8c2d
 ---
-
-
 在华为云核准（备案）系统中已核准（备案）的主体下新增元服务信息。操作步骤如下：
 
 1. 登录[华为云核准（备案）系统](https://beian.huaweicloud.com/?utm_source=HUAWEI%2BDeveloper&utm_adplace=AdPlace099034)，左侧菜单栏点击“我的核准（备案）”，右侧页面点击“新增互联网信息”。

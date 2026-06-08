@@ -2,9 +2,10 @@
 format: md
 title: "调试过程中无法添加断点"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-1
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-1
+last_sync: 2026-06-07
+sync_hash: 3e7ee741
 ---
-
-
 **问题现象**
 
 调试过程中无法添加断点，提示“Can't set breakpoint to remote debug server”，如图所示。

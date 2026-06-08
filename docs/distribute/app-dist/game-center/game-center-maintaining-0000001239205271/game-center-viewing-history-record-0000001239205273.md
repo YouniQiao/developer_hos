@@ -3,9 +3,10 @@ title: "版本历史记录"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-viewing-history-record-0000001239205273
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-viewing-history-record-0000001239205273
+last_sync: 2026-06-07
+sync_hash: b134c3e0
 ---
-
-
 # 版本历史记录
 
 版本历史记录是AppGallery Connect（以下简称AGC）对应用进行版本信息管理的信息资料库。您可以查看应用下所有的版本历史记录信息，也可以打开指定版本了解详细的软件包信息、新版本特征说明、提交及审核信息等。

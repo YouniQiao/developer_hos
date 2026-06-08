@@ -3,8 +3,10 @@ title: 折叠电脑
 sidebar_label: 折叠电脑
 original_url: /docs/design/multi-device-design/2in1/foldable-pc
 format: md
+upstream_id: design/multi-device-design/2in1/foldable-pc
+last_sync: 2026-06-07
+sync_hash: 03f9400f
 ---
-
 # 折叠电脑
 
 ### 设计概述

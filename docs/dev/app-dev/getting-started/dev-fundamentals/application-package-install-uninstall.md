@@ -1,6 +1,10 @@
 ---
 title: "应用安装卸载与更新开发指导"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/application-package-install-uninstall
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/application-package-install-uninstall
+last_sync: 2026-06-07
+sync_hash: a60b2bfb
+upstream_hash: 47f7ccfbf419
 ---
 
 本章节介绍应用程序包的安装卸载流程和两种更新方式。

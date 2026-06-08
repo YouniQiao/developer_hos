@@ -2,9 +2,10 @@
 format: md
 title: "Button组件无法设置字体最大、最小值"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-361
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-361
+last_sync: 2026-06-07
+sync_hash: de05e871
 ---
-
-
 Button组件的[labelStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#labelstyle10)属性可以设置按钮标签文本和字体的样式。示例代码如下
 
 ```

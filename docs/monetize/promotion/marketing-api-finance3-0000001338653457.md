@@ -3,8 +3,10 @@ title: "查询资金账户日结算明细"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-finance3-0000001338653457
 format: md
+upstream_id: monetize/promotion/marketing-api-finance3-0000001338653457
+last_sync: 2026-06-07
+sync_hash: cddc4b9c
 ---
-
 # 查询资金账户日结算明细
 
 您通过本接口可以查询广告账户的日结算明细，包括现金、赠送、返利账户分别支出的信息。

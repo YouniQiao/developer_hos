@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "跨平台数据兼容实践指导"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-development-practice
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-development-practice
+last_sync: 2026-06-07
+sync_hash: 3b57c235
 ---
-
-
 开发者可以参考以下开发实践，学习相关场景开发，在HarmonyOS平台上更高效、准确地开发加解密的功能。
 
 ## 加解密跨平台数据兼容性开发实践

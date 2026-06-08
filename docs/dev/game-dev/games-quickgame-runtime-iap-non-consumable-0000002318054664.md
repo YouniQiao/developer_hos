@@ -2,9 +2,10 @@
 title: "非消耗型商品"
 original_url: /docs/dev/game-dev/games-quickgame-runtime-iap-non-consumable-0000002318054664
 format: md
+upstream_id: dev/game-dev/games-quickgame-runtime-iap-non-consumable-0000002318054664
+last_sync: 2026-06-07
+sync_hash: 80baa95f
 ---
-
-
 非消耗型商品是在游戏内一次性购买，永久有效，例如游戏中额外的游戏关卡或应用中无时限的高级会员。
 
 ## 前提条件

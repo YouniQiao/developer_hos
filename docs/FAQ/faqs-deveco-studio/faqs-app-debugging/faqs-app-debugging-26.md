@@ -2,9 +2,10 @@
 format: md
 title: "如何使用DevEco Studio进行C/C++代码断点调试"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-26
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-26
+last_sync: 2026-06-07
+sync_hash: 89d577f5
 ---
-
-
 **问题现象**
 
 在DevEco Studio上的C/C++代码处打断点，调试运行时断点不生效。

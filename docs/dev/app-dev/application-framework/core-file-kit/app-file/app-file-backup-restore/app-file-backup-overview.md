@@ -2,9 +2,10 @@
 title: "应用数据备份恢复概述"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-overview
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-overview
+last_sync: 2026-06-07
+sync_hash: 1e1328ee
 ---
-
-
 用户在使用应用的过程中，会产生对应的应用数据，如配置信息、业务数据等。为了保证用户数据不会因为应用升级、迁移等操作而丢失，应用需要接入数据备份恢复。
 
 在开发前，需要先了解ExtensionAbility组件，建议参考[ExtensionAbility组件概述](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview)。

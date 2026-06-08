@@ -2,9 +2,10 @@
 format: md
 title: "如何判断对象的类型"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-112
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-112
+last_sync: 2026-06-07
+sync_hash: b79945cc
 ---
-
-
 在代码开发中，如果需要对对象的类型做判断，调用不同类的方法，可以使用instanceof进行判断来得知对象的类型，参考代码如下：
 
 ```

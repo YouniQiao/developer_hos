@@ -3,9 +3,10 @@ title: "安装有奖"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-install-0000001657934421
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-install-0000001657934421
+last_sync: 2026-06-07
+sync_hash: 843345b8
 ---
-
-
 # 安装有奖
 
 为了提升用户安装量，您可以创建安装有奖活动。在活动期间，首次安装应用的用户有机会获得奖励（重复安装无效）。

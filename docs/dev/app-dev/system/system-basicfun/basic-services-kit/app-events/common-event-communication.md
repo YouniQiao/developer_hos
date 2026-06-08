@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用公共事件进行进程间通信"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication
+last_sync: 2026-06-07
+sync_hash: 3d7eceda
 ---
-
-
 * **[公共事件简介](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/common-event-overview)**
 * **[动态订阅公共事件](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/common-event-subscription)**
 * **[取消动态订阅公共事件](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/common-event-unsubscription)**

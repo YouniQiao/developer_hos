@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "情绪"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-emotion
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-emotion
+last_sync: 2026-06-07
+sync_hash: 820f4a72
 ---
-
-
 此数据记录用户在某时刻的情绪数据。
 
 Harmony SDK类型常量：[samplePointHelper.emotion.DATA\_TYPE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-samplepointhelper#常量-4)

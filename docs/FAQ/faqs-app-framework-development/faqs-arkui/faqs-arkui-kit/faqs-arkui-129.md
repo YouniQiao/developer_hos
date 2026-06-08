@@ -2,9 +2,10 @@
 title: "UI布局默认是多少vp为基准，以达到不同机器自适应"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-129
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-129
+last_sync: 2026-06-07
+sync_hash: 0ee2f534
 ---
-
-
 无论屏幕分辨率或密度如何，组件的视觉效果保持一致。
 
 vp具体计算公式为：vp= px/(DPI/160)

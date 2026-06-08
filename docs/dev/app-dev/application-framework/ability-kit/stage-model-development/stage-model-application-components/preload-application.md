@@ -2,9 +2,10 @@
 title: "应用预加载"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/preload-application
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/preload-application
+last_sync: 2026-06-07
+sync_hash: 8cd8fa4b
 ---
-
-
 ## 概述
 
 从API version 20开始，提供应用预加载机制。该机制会根据用户的使用习惯，在系统资源充足时提前加载应用至特定阶段。当用户启动应用时，由于此前已完成了应用的部分加载，所需的启动时间会缩短，有助于提升用户体验和应用竞争力。

@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-unused-vars"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unused-vars
 format: md
+upstream_id: tools/coding-debug/ide_no-unused-vars
+last_sync: 2026-06-07
+sync_hash: 9b496c01
 ---
-
-
 # @typescript-eslint/no-unused-vars
 
 禁止定义未使用的变量。

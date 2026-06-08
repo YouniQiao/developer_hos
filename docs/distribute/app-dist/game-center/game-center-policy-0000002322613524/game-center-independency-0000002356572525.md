@@ -3,9 +3,10 @@ title: "独立游戏"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-policy-0000002322613524/game-center-independency-0000002356572525
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-policy-0000002322613524/game-center-independency-0000002356572525
+last_sync: 2026-06-07
+sync_hash: 70630ee4
 ---
-
-
 # 独立游戏
 
 独立游戏是指由中小型团队开发制作，在玩法、美术、精神表达上相对小众，同时又有一定程度的创新和突破，但是要排除掉一些通过和商业化IP授权直接引入其世界观、故事背景的游戏，以及一些超休闲类或者涉及到盗版抄袭的游戏。

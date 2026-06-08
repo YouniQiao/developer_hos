@@ -2,9 +2,10 @@
 title: "Disassembler反汇编工具"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/tool-disassembler
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/tool-disassembler
+last_sync: 2026-06-07
+sync_hash: ddf7acd9
 ---
-
-
 ## 简介
 
 Disassembler是ArkTS反汇编工具。如果需要分析方舟字节码文件（\*.abc）相关问题，开发者可以使用Disassembler将方舟字节码文件反编译为可读的汇编指令。

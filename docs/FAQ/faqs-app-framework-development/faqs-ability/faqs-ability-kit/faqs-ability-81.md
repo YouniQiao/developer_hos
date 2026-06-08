@@ -2,9 +2,10 @@
 format: md
 title: "如何查询应用进程的pid信息"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-81
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-81
+last_sync: 2026-06-07
+sync_hash: 345692b6
 ---
-
-
 可以通过以下两种方式获取：
 
 * 方式一：通过以下命令查询应用进程信息。

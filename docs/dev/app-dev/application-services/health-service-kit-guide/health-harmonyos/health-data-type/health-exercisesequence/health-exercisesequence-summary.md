@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "简介"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-exercisesequence-summary
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-exercisesequence-summary
+last_sync: 2026-06-07
+sync_hash: 58dfa54f
 ---
-
-
 用户一段持续时间的锻炼记录数据，由运动类型、应用信息、时间范围、关联的详情数据、关联的统计数据等组成，如跑步、跳绳等锻炼记录。
 
 开发者可以通过[锻炼记录数据查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthstore#healthstorereaddata-1)接口获取华为运动健康App“运动记录”卡片中的数据。

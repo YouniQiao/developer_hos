@@ -3,9 +3,10 @@ title: "@hw-stylistic/no-multi-spaces"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-multi-spaces
 format: md
+upstream_id: tools/coding-debug/ide_no-multi-spaces
+last_sync: 2026-06-07
+sync_hash: 480f465a
 ---
-
-
 # @hw-stylistic/no-multi-spaces
 
 不允许出现连续多个空格，除非是换行。该规则仅检查.ets文件类型。

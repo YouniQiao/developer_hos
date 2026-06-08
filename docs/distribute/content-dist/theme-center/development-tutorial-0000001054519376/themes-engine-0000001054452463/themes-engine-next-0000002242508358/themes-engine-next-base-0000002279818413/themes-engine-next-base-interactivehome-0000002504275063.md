@@ -3,9 +3,10 @@ title: "适配功能：可交互桌面"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-interactivehome-0000002504275063
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-interactivehome-0000002504275063
+last_sync: 2026-06-07
+sync_hash: d085767a
 ---
-
-
 # 适配功能：可交互桌面
 
 ## 功能概述

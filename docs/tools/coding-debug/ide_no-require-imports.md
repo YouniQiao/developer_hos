@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-require-imports"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-require-imports
 format: md
+upstream_id: tools/coding-debug/ide_no-require-imports
+last_sync: 2026-06-07
+sync_hash: 38e383cf
 ---
-
-
 # @typescript-eslint/no-require-imports
 
 禁止使用“require()”语法导入依赖。

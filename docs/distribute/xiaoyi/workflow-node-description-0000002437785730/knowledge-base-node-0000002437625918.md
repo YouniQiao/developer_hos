@@ -3,9 +3,10 @@ title: "知识库节点"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/workflow-node-description-0000002437785730/knowledge-base-node-0000002437625918
 format: md
+upstream_id: distribute/xiaoyi/workflow-node-description-0000002437785730/knowledge-base-node-0000002437625918
+last_sync: 2026-06-07
+sync_hash: 36fa398f
 ---
-
-
 # 知识库节点
 
 知识库是团队私有的知识合集，暂时不支持公开知识库。知识库节点可以基于用户输入查询指定的知识库，召回最匹配的信息，并将匹配结果以列表形式返回。

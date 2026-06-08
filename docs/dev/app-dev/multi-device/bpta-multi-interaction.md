@@ -3,8 +3,10 @@ title: "多设备交互"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi-interaction
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi-interaction
+last_sync: 2026-06-07
+sync_hash: 52f09f71
 ---
-
 # 多设备交互
 
 ## 概述

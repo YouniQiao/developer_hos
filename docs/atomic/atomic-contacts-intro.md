@@ -2,9 +2,10 @@
 title: "联系人服务"
 original_url: /docs/dev/atomic-dev/atomic-contacts/atomic-contacts-intro
 format: md
+upstream_id: dev/atomic-dev/atomic-contacts/atomic-contacts-intro
+last_sync: 2026-06-07
+sync_hash: e630cbe1
 ---
-
-
 Contacts Kit可以帮助开发者轻松实现联系人的增删改查等功能。该Kit提供了一系列API，可以让开发者在应用中快速集成联系人管理功能。
 
 详情请参考[@ohos.contact](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-contact) API。

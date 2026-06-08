@@ -3,8 +3,10 @@ title: "素材管理"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-asset1-0000001286182150
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-asset1-0000001286182150
+last_sync: 2026-06-07
+sync_hash: 3a5b803d
 ---
-
 # 素材管理
 
 您通过本接口可以创建素材。

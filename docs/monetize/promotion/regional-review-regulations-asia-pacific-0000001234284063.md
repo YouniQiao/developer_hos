@@ -3,8 +3,10 @@ title: "区域审核规范（亚太）"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/regional-review-regulations-asia-pacific-0000001234284063
 format: md
+upstream_id: monetize/promotion/regional-review-regulations-asia-pacific-0000001234284063
+last_sync: 2026-06-07
+sync_hash: 9305b55d
 ---
-
 # 区域审核规范（亚太）
 
 ## 概述

@@ -2,9 +2,10 @@
 title: "创建全网态服务"
 original_url: /docs/distribute/agc/agc-help-poi-apply-formalstate-service-0000002349016132/agc-help-xiaoyi-create-formalstate-service-0000002349016144
 format: md
+upstream_id: distribute/agc/agc-help-poi-apply-formalstate-service-0000002349016132/agc-help-xiaoyi-create-formalstate-service-0000002349016144
+last_sync: 2026-06-07
+sync_hash: 5baa6c1d
 ---
-
-
 当您的应用/元服务已上架，并且使用自有真机测试通过，您就可以创建全网态近场服务。
 
 ![](../img/agc-help-xiaoyi-create-formalstate-service-0000002349016144_0.png)

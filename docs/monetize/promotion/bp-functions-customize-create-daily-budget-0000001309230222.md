@@ -3,8 +3,10 @@ title: "使用日预算自动调整模板创建"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-customize-create-daily-budget-0000001309230222
 format: md
+upstream_id: monetize/promotion/bp-functions-customize-create-daily-budget-0000001309230222
+last_sync: 2026-06-07
+sync_hash: ef88ea06
 ---
-
 # 使用日预算自动调整模板创建
 
 ## 前提条件

@@ -3,8 +3,10 @@ title: "管理推广任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-task-management-master-0000001294213644
 format: md
+upstream_id: monetize/promotion/bp-delivery-task-management-master-0000001294213644
+last_sync: 2026-06-07
+sync_hash: 72d2579a
 ---
-
 # 管理推广任务
 
 ## 前提条件

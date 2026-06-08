@@ -2,9 +2,10 @@
 title: "如何实现弹窗动画和遮罩动画分开设置"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-391
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-391
+last_sync: 2026-06-07
+sync_hash: a07c2f30
 ---
-
-
 **问题现象**
 
 目前由于弹窗和遮罩是一起的，如果给弹窗增加由上往下的动画，遮罩也会同时执行相同的动画效果。

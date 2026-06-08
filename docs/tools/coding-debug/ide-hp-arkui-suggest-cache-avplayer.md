@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-suggest-cache-avplayer"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hp-arkui-suggest-cache-avplayer
 format: md
+upstream_id: tools/coding-debug/ide-hp-arkui-suggest-cache-avplayer
+last_sync: 2026-06-07
+sync_hash: 3d367c17
 ---
-
-
 # @performance/hp-arkui-suggest-cache-avplayer
 
 建议缓存AVPlayer实例减少起播时延。

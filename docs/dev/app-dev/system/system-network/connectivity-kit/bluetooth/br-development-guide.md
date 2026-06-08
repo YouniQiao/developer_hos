@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "蓝牙设置"
 original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/br-development-guide
 format: md
+upstream_id: dev/app-dev/system/system-network/connectivity-kit/bluetooth/br-development-guide
+last_sync: 2026-06-07
+sync_hash: 14f0faa1
 ---
-
-
 ## 简介
 
 本指南主要提供了开启蓝牙、关闭蓝牙和获取蓝牙开关状态的开发指导。开发者在使用蓝牙其他功能时，应确保蓝牙子系统已正常开启。

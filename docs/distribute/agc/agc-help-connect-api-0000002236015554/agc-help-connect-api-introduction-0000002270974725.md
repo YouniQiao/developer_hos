@@ -2,9 +2,10 @@
 title: "业务介绍"
 original_url: /docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-introduction-0000002270974725
 format: md
+upstream_id: distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-introduction-0000002270974725
+last_sync: 2026-06-07
+sync_hash: d3348adf
 ---
-
-
 **AppGallery Connect API**是一套RESTful API，通过这些API，您可以无需登录**AppGallery Connect**即可定制AppGallery Connect提供的服务，或是实现流程自动化，从而提升工作效率。
 
 AppGallery Connect API提供如下所示的各类API，供您按需调用。

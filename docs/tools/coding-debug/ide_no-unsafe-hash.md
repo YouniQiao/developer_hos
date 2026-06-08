@@ -3,9 +3,10 @@ title: "@security/no-unsafe-hash"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unsafe-hash
 format: md
+upstream_id: tools/coding-debug/ide_no-unsafe-hash
+last_sync: 2026-06-07
+sync_hash: 4a15afff
 ---
-
-
 # @security/no-unsafe-hash
 
 该规则禁止不安全的哈希算法，例如MD5、SHA1。

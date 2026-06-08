@@ -3,9 +3,10 @@ title: "位移动画&lt;PositionAnimation&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2d-0000002471235130/themes-engine-next-2d-positionanimation-0000002471395132
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2d-0000002471235130/themes-engine-next-2d-positionanimation-0000002471395132
+last_sync: 2026-06-07
+sync_hash: 40e458d2
 ---
-
-
 # 位移动画&lt;PositionAnimation&gt;
 
 ## 功能概述

@@ -3,9 +3,10 @@ title: "oh-package.json5"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/ide-oh-package-json5
 format: md
+upstream_id: tools/ohpm/ide-oh-package-json5
+last_sync: 2026-06-07
+sync_hash: 9896e43c
 ---
-
-
 # oh-package.json5
 
 从OHPM 5.0.0版本开始，支持区分工程级与模块级oh-package.json5配置。其中：

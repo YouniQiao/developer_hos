@@ -2,8 +2,11 @@
 title: "创建子服务及个性化设置"
 original_url: /docs/dev/atomic-dev/instant-service-app-items/instant-service-app-items-create-pers
 format: md
+upstream_id: dev/atomic-dev/instant-service-app-items/instant-service-app-items-create-pers
+last_sync: 2026-06-07
+sync_hash: 1b0a200a
+upstream_hash: 0ac8eaceac0d
 ---
-
 
 开发者可在此页签创建子服务后，再进行个性化设置。
 

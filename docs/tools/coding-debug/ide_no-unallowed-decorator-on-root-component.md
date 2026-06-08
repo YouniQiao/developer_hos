@@ -3,9 +3,10 @@ title: "@previewer/no-unallowed-decorator-on-root-component"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unallowed-decorator-on-root-component
 format: md
+upstream_id: tools/coding-debug/ide_no-unallowed-decorator-on-root-component
+last_sync: 2026-06-07
+sync_hash: f2805e8e
 ---
-
-
 # @previewer/no-unallowed-decorator-on-root-component
 
 不允许直接预览包含@Consume、@Link、@ObjectLink、@Prop等装饰器的子组件；

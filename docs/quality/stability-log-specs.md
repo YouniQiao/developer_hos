@@ -2,9 +2,10 @@
 title: "日志规格"
 original_url: /docs/quality/stability-log-specs
 format: md
+upstream_id: /docs/quality/stability-log-specs
+last_sync: 2026-06-07
+sync_hash: 90ebe15b
 ---
-
-
 # 日志规格
 
 ## 应用崩溃

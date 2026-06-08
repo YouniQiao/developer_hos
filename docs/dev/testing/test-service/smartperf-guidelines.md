@@ -2,9 +2,10 @@
 title: "HiSmartPerf Device性能使用指导"
 original_url: /docs/dev/testing/test-service/smartperf-guidelines
 format: md
+upstream_id: dev/testing/test-service/smartperf-guidelines
+last_sync: 2026-06-07
+sync_hash: a90d4617
 ---
-
-
 ## 工具简介
 
 HiSmartPerf Device是一款性能功耗测试工具，支持监测性能、功耗相关指标，包括FPS、CPU、GPU、RAM、Temp等，并提供Device hap端和Device daemon端。Device hap适用于有屏设备，支持可视化操作，测试过程中可通过悬浮窗的开始和暂停来实时展示性能指标数据，保存后可生成数据报告，在报告中可分析各指标数据详情。Device daemon端支持shell命令行方式，同时适用于有屏和无屏设备。

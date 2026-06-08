@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Map Kit简介"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-introduction
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-introduction
+last_sync: 2026-06-07
+sync_hash: 47472548
 ---
-
-
 Map Kit（地图服务）为开发者提供强大而便捷的地图能力，助力全球开发者实现个性化显示地图、位置搜索和路径规划等功能，轻松完成地图构建工作。您可以轻松地在HarmonyOS应用/元服务中集成地图相关的功能，全方位提升用户体验。
 
 Map Kit提供了全球3.2亿的 POI（Point of Interest，兴趣点）。在地图表达中，一个 POI可代表一家商铺、一栋办公楼、一处景点等等。
@@ -44,6 +45,6 @@ Map Kit（地图服务）示例代码，请参考[示例代码](https://gitcode.
 
 ## 模拟器支持情况
 
-* 通用差异：请参见“[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification#section1227613205203)”。
+* 通用差异：请参见“[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification#section1227613205203)”。
 * ARM模拟器：petalMaps命名空间下相关功能不支持，我的位置功能不支持。
 * x86模拟器：petalMaps命名空间下相关功能不支持，我的位置功能不支持，手表不支持。

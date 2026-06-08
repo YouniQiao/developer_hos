@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "发送网络请求（ArkTS）"
 original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-netinit/remote-communication-netsend-arkts
 format: md
+upstream_id: dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-netinit/remote-communication-netsend-arkts
+last_sync: 2026-06-07
+sync_hash: d1a66da1
 ---
-
-
 ## 约束与限制
 
 发送网络请求能力支持Phone、2in1、Tablet、Wearable设备。并且从5.1.1(19)开始，新增支持TV设备。

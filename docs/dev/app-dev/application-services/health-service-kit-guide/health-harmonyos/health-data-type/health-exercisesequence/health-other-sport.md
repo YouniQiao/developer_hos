@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "其他运动"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-other-sport
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-other-sport
+last_sync: 2026-06-07
+sync_hash: 5683f735
 ---
-
-
 ![](./img/b4f82d5a.png)
 
 本章节锻炼记录类型，共用相同的统计数据模型与明细数据模型，后续部分锻炼记录类型可能扩充，扩充后的锻炼记录类型将拥有独立的命名空间，关联更多的统计/明细数据。

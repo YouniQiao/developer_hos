@@ -2,9 +2,10 @@
 title: "自定义存储插件配置"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-plugin-configuration
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-plugin-configuration
+last_sync: 2026-06-07
+sync_hash: 14aafda3
 ---
-
-
 # 自定义存储插件配置
 
 ohpm-repo从2.2.0版本开始支持自定义存储插件（需要配套使用1.7.0及以上版本ohpm命令行工具），允许您开发定制化的存储插件来对接您自己的存储系统，您希望将ohpm-repo下的三方包文件存储在华为云OBS或者其他云存储平台，可以按照如下步骤来实现自定义存储插件。

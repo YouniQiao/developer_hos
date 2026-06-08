@@ -3,8 +3,10 @@ title: 框选
 sidebar_label: 框选
 original_url: /docs/design/hmi/scenes/selection
 format: md
+upstream_id: design/hmi/scenes/selection
+last_sync: 2026-06-07
+sync_hash: 91c48e6a
 ---
-
 # 框选
 
 框选是指通过使用指针拖动选择框，使被框到的文本、文件等被选中。框选对象后，内容支持键鼠操作如拖拽、弹出菜单、加减选等。框选的对象可以为单个控件也可以为多个控件，可以为同类型的对象也可以为不同类型的对象。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Core Speech Kit简介"
 original_url: /docs/dev/app-dev/ai/core-speech-kit-guide/core-speech-introduction
 format: md
+upstream_id: dev/app-dev/ai/core-speech-kit-guide/core-speech-introduction
+last_sync: 2026-06-07
+sync_hash: 0ea550e9
 ---
-
-
 Core Speech Kit（基础语音服务）集成了语音类基础AI能力，包括文本转语音（TextToSpeech）及语音识别（SpeechRecognizer）能力，便于用户与设备进行互动，实现将实时输入的语音与文本之间相互转换。
 
 ## 场景介绍
@@ -34,4 +35,4 @@ Phone、Tablet、PC/2in1。
 
 本Kit能力从6.0.0(20)版本开始支持模拟器。
 
-模拟器与真机存在通用差异，详情请参见[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification)。
+模拟器与真机存在通用差异，详情请参见[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification)。

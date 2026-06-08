@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "适配深、浅色模式"
 original_url: /docs/dev/app-dev/application-services/reader-kit-guide/reader-content/reader-setting/reader-setting-color-mode
 format: md
+upstream_id: dev/app-dev/application-services/reader-kit-guide/reader-content/reader-setting/reader-setting-color-mode
+last_sync: 2026-06-07
+sync_hash: 19034a91
+upstream_hash: 8f5760b75cdb
 ---
-
 
 当应用需要根据设备的深、浅色模式变化动态切换主题时，开发者可通过UIAbility的onConfigurationUpdate回调判断模式的变化，然后设置模式对应的字体颜色及背景色。
 

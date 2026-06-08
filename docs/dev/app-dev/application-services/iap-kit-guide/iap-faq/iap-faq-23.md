@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "自动续期订阅商品，A切换B且立即生效时，新订阅有效期的组成"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-faq/iap-faq-23
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-faq/iap-faq-23
+last_sync: 2026-06-07
+sync_hash: f6b63369
+upstream_hash: aba9be0161d7
 ---
-
 
 订阅在发生切换且立即生效时，原订阅的剩余权益价值会自动按照比例，折算并叠加至新订阅。所以，切换后订阅有效期的组成 = 原订阅剩余权益的折算时间 + 新订阅原本的周期时间。
 

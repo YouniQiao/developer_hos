@@ -2,9 +2,10 @@
 title: "USB串口通信服务开发概述"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-serial-dev/usbserial-overview
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-serial-dev/usbserial-overview
+last_sync: 2026-06-07
+sync_hash: ad17b359
 ---
-
-
 ## 简介
 
 USB串口通信服务主要提供USB Host设备转串口协议通信的功能，它提供获取遵循USB Host转串口标准协议的已连接的端口列表，同时提供打开端口、关闭端口、设置参数、获取参数、读取数据、写入数据和设备权限管理这些基本功能。

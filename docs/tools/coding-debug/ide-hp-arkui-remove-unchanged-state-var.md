@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-remove-unchanged-state-var"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hp-arkui-remove-unchanged-state-var
 format: md
+upstream_id: tools/coding-debug/ide-hp-arkui-remove-unchanged-state-var
+last_sync: 2026-06-07
+sync_hash: e2f33f9a
 ---
-
-
 # @performance/hp-arkui-remove-unchanged-state-var
 
 建议移除未改变的状态变量设置。

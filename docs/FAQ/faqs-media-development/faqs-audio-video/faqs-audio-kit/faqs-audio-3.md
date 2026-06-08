@@ -2,9 +2,10 @@
 format: md
 title: "OpenSL ES音频录制示例调用崩溃"
 original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-3
+upstream_id: FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-3
+last_sync: 2026-06-07
+sync_hash: 41baea10
 ---
-
-
 **问题现象**
 
 OpenSL ES音频录制接口调用失败，程序崩溃。报错日志信息如下：

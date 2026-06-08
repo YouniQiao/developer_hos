@@ -2,9 +2,10 @@
 title: "应用被查杀类问题分析方法"
 original_url: /docs/quality/stability-app-killed-way
 format: md
+upstream_id: /docs/quality/stability-app-killed-way
+last_sync: 2026-06-07
+sync_hash: 321858b0
 ---
-
-
 # 应用被查杀类问题分析方法
 
 ## 日志获取

@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-unnecessary-type-assertion"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unnecessary-type-assertion
 format: md
+upstream_id: tools/coding-debug/ide_no-unnecessary-type-assertion
+last_sync: 2026-06-07
+sync_hash: ad4d08c9
 ---
-
-
 # @typescript-eslint/no-unnecessary-type-assertion
 
 禁止不必要的类型断言。

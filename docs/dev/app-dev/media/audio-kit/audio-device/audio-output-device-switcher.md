@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "实现音频输出设备路由切换"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-device/audio-output-device-switcher
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-device/audio-output-device-switcher
+last_sync: 2026-06-07
+sync_hash: 3b36989d
 ---
-
-
 当应用进行音频输出时，系统会根据音频流类型选择对应的输出设备（[STREAM\_USAGE\_MUSIC](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)：扬声器发声；[STREAM\_USAGE\_VOICE\_COMMUNICATION](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)：听筒发声）。如果系统提供的默认输出设备不满足应用需求，应用可通过AVCastPicker或setDefaultOutputDevice实现音频输出设备路由切换。
 
 以下各步骤示例为片段代码，可通过示例代码右下方链接获取[完整示例](https://gitcode.com/openharmony/applications_app_samples/blob/master/code/DocsSample/Media/Audio/AudioRoutingManagerSampleJS)。

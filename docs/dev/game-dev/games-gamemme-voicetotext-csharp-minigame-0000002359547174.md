@@ -2,9 +2,10 @@
 title: "C#（小游戏）"
 original_url: /docs/dev/game-dev/games-gamemme-voicetotext-csharp-minigame-0000002359547174
 format: md
+upstream_id: dev/game-dev/games-gamemme-voicetotext-csharp-minigame-0000002359547174
+last_sync: 2026-06-07
+sync_hash: 0f1b66f5
 ---
-
-
 ## 前提条件
 
 * 您已[开启语音转文本功能](/docs/dev/game-dev/games-gamemme-console-servicemanagement-0000002338391901#section157881245131518)。

@@ -2,9 +2,10 @@
 title: "成功案例"
 original_url: /docs/dev/game-dev/gameobe-sucessfulcase-0000002361670600
 format: md
+upstream_id: dev/game-dev/gameobe-sucessfulcase-0000002361670600
+last_sync: 2026-06-07
+sync_hash: 323fcdee
 ---
-
-
 ## 客户需求
 
 作为一款策略性游戏，《火柴人战争》操作简单，老少咸宜。开发者团队希望在原有的单机模式下，新增竞技的玩法，以增加游戏的趣味性，同时提升游戏活跃度。

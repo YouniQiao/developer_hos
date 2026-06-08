@@ -2,9 +2,10 @@
 title: "JS卡片开发指导（FA模型）"
 original_url: /docs/dev/app-dev/application-framework/form-kit/form-js-ui/widget-development-fa
 format: md
+upstream_id: dev/app-dev/application-framework/form-kit/form-js-ui/widget-development-fa
+last_sync: 2026-06-07
+sync_hash: 2db4034f
 ---
-
-
 FA模型从API version 7开始支持，已经不再主推。该应用模型通过导出匿名对象、固定入口文件的方式指定应用组件，开发者无法进行派生，不利于扩展能力。建议使用新的Stage模型进行开发。
 
 ## 接口说明
@@ -51,7 +52,7 @@ FA卡片开发，即基于[FA模型](/docs/dev/app-dev/application-framework/abi
 
 ### 实现卡片生命周期接口
 
-创建FA模型的卡片，需实现卡片的生命周期接口。先参考[DevEco Studio开发服务卡片指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-service-widget)生成服务卡片模板。
+创建FA模型的卡片，需实现卡片的生命周期接口。先参考[DevEco Studio开发服务卡片指南](/docs/tools/coding-debug/ide-service-widget)生成服务卡片模板。
 
 1. 在form.ts中，导入相关模块
 

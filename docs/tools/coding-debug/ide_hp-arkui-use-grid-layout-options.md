@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-use-grid-layout-options"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-use-grid-layout-options
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-use-grid-layout-options
+last_sync: 2026-06-07
+sync_hash: ef3d976b
 ---
-
-
 # @performance/hp-arkui-use-grid-layout-options
 
 建议在指定位置时使用GridLayoutOptions提升Grid性能。

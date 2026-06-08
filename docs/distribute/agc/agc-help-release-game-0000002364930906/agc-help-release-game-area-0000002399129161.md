@@ -2,8 +2,11 @@
 title: "配置发布国家或地区"
 original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-area-0000002399129161
 format: md
+upstream_id: distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-area-0000002399129161
+last_sync: 2026-06-07
+sync_hash: 17ebcb90
+upstream_hash: b63c57306949
 ---
-
 
 ![](../img/agc-help-release-game-area-0000002399129161_0.png)
 

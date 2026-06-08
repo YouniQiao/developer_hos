@@ -2,9 +2,10 @@
 title: "高性能Protobuf解析"
 original_url: /docs/quality/high-performance-protobuf-parsing
 format: md
+upstream_id: /docs/quality/high-performance-protobuf-parsing
+last_sync: 2026-06-07
+sync_hash: 3ef6949e
 ---
-
-
 # 高性能Protobuf解析
 
 ## 概述

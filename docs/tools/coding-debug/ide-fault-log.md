@@ -3,9 +3,10 @@ title: "FaultLog"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-fault-log
 format: md
+upstream_id: tools/coding-debug/ide-fault-log
+last_sync: 2026-06-07
+sync_hash: 08dca46d
 ---
-
-
 # FaultLog
 
 当应用运行发生错误导致应用进程终止时，应用将会抛出错误日志以通知应用崩溃的原因，开发者可通过查看错误日志分析应用崩溃的原因及引起崩溃的代码位置。

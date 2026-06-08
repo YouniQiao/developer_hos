@@ -2,9 +2,10 @@
 format: md
 title: "如何给不同输入框绑定不同的自定义键盘"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-331
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-331
+last_sync: 2026-06-07
+sync_hash: c54350e5
 ---
-
-
 1. 为不同的输入框定义相应的控制器。
 
    ```

@@ -3,8 +3,10 @@ title: "精选推荐-RTA投放-CPD任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/mktapi-adtask-top-rat-cpd-0000001314157208
 format: md
+upstream_id: monetize/promotion/mktapi-adtask-top-rat-cpd-0000001314157208
+last_sync: 2026-06-07
+sync_hash: f02a1b87
 ---
-
 # 精选推荐-RTA投放-CPD任务
 
 ## 功能介绍

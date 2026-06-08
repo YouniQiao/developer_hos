@@ -2,8 +2,11 @@
 format: md
 title: "如何将HAR（静态共享包）转为HSP（动态共享包）"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-7
+upstream_id: FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-7
+last_sync: 2026-06-07
+sync_hash: 2f1a2dc5
+upstream_hash: 744ea2a1942c
 ---
-
 
 [HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package)转换成[HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp)可参考如下步骤：
 

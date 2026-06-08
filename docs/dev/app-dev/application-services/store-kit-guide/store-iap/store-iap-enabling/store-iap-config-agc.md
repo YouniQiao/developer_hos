@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开通相关服务和配置参数"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-enabling/store-iap-config-agc
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-enabling/store-iap-config-agc
+last_sync: 2026-06-07
+sync_hash: 544a3ec1
 ---
-
-
 请先参考“[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)”完成基本准备工作及指纹配置，再继续进行以下开发活动。
 
 ![](./img/782a23eb.png)
@@ -37,8 +38,8 @@ format: md
 ![](./img/d8ccbaa2.png)
 
 * 用户购买商品后，服务器会在订单/订阅场景的某些关键事件发生时通知您配置的事件通知地址，具体可参见[服务端关键事件通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-key-event-notifications)。
-* 调试阶段必须[申请调试证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-debug-cert-0000002283256797)、[注册设备](/docs/distribute/agc/agc-help-device-0000002235870042/agc-help-add-device-0000002283189937)、开启和激活“应用内购买服务”后需要重新[申请调试Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)，并完成[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
-* 发布阶段必须[申请发布证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-release-cert-0000002283336729)、开启和激活“应用内购买服务”后需要重新[申请发布Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)，并完成[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+* 调试阶段必须[申请调试证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-debug-cert-0000002283256797)、[注册设备](/docs/distribute/agc/agc-help-device-0000002235870042/agc-help-add-device-0000002283189937)、开启和激活“应用内购买服务”后需要重新[申请调试Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)，并完成[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)。
+* 发布阶段必须[申请发布证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-release-cert-0000002283336729)、开启和激活“应用内购买服务”后需要重新[申请发布Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)，并完成[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)。
 
 ## 服务端密钥管理
 

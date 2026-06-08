@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "屏幕录制支持矩形区域录制"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-recording-c/video-supports-rectangular-area-recording
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-c/media-recording-c/video-supports-rectangular-area-recording
+last_sync: 2026-06-07
+sync_hash: ec8ddc80
 ---
-
-
 ## 基础概念
 
 从API20开始，屏幕录制支持矩形区域录制是在现有的录制区域捕获基础上开放的能力，允许开发者自主选择录屏需要捕获的区域位置，并通过调整屏幕捕获ID和指定的捕获区域area确定矩形录制区域。

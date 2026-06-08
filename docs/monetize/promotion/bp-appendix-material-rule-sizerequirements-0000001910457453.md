@@ -3,8 +3,10 @@ title: "资源位素材尺寸要求"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-appendix-material-rule-sizerequirements-0000001910457453
 format: md
+upstream_id: monetize/promotion/bp-appendix-material-rule-sizerequirements-0000001910457453
+last_sync: 2026-06-07
+sync_hash: 53d00876
 ---
-
 # 资源位素材尺寸要求
 
 ## 元素合规

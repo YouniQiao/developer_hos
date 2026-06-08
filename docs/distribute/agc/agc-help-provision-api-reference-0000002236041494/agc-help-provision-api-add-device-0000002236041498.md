@@ -2,9 +2,10 @@
 title: "批量添加设备"
 original_url: /docs/distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-add-device-0000002236041498
 format: md
+upstream_id: distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-add-device-0000002236041498
+last_sync: 2026-06-07
+sync_hash: 94e11a81
 ---
-
-
 #### 功能介绍
 
 此接口用于批量添加调试/测试设备。

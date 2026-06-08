@@ -2,9 +2,10 @@
 title: "批量删除门店"
 original_url: /docs/dev/atomic-dev/instant-service-store/instant-service-store-batch-delete
 format: md
+upstream_id: dev/atomic-dev/instant-service-store/instant-service-store-batch-delete
+last_sync: 2026-06-07
+sync_hash: 498031f7
 ---
-
-
 1. 在“门店管理”页签，点击批量删除。
 
    ![](./img/3b0310d8.png "点击放大")

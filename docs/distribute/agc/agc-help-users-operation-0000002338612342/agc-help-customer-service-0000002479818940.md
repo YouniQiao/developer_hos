@@ -2,9 +2,10 @@
 title: "元服务客服"
 original_url: /docs/distribute/agc/agc-help-users-operation-0000002338612342/agc-help-customer-service-0000002479818940
 format: md
+upstream_id: distribute/agc/agc-help-users-operation-0000002338612342/agc-help-customer-service-0000002479818940
+last_sync: 2026-06-07
+sync_hash: cb0c9ff9
 ---
-
-
 #### 概述
 
 元服务客服是元服务平台官方提供的、增强元服务服务能力和提升元服务服务质量的客服系统，帮助开发者与元服务用户进行快速高效的沟通。

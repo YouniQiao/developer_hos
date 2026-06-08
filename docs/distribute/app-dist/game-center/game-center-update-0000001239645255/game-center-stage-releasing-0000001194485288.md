@@ -3,9 +3,10 @@ title: "分阶段发布"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-update-0000001239645255/game-center-stage-releasing-0000001194485288
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-update-0000001239645255/game-center-stage-releasing-0000001194485288
+last_sync: 2026-06-07
+sync_hash: 88150fc8
 ---
-
-
 # 分阶段发布
 
 在当前上架版本为全网发布时，您可以采用分阶段发布的方式进行应用升级。采用分阶段发布，您可以先向一定比例的用户发布更新的版本，然后再逐步提升用户比例，最终实现全网发布。通过小范围的版本更新，您可以快速获取用户对新版本的反馈意见，降低全网发布后版本出现问题的风险。

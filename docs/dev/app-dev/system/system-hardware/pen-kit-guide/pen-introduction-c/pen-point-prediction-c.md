@@ -2,9 +2,10 @@
 title: "接入报点预测"
 original_url: /docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-features/pen-point-prediction
 format: md
+upstream_id: dev/app-dev/system/system-hardware/pen-kit-guide/pen-features/pen-point-prediction
+last_sync: 2026-06-07
+sync_hash: 8e6e691b
 ---
-
-
 从6.0.0(20)开始，报点预测新增C API接口。
 
 接入报点预测功能，可以优化应用中手写效果的绘制跟手性，提升应用中手写笔书写场景的跟手体验。

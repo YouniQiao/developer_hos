@@ -2,9 +2,10 @@
 format: md
 title: "NavPathStack清空页面栈或者按返回键，为什么显示的是导航栏，如何实现退出Navigation所在的页面"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-430
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-430
+last_sync: 2026-06-07
+sync_hash: ebf26e43
 ---
-
-
 **问题描述**
 
 NavPathStack清空页面栈或者按返回键，为什么没有退出Navigation所在的页面，而是显示导航栏。

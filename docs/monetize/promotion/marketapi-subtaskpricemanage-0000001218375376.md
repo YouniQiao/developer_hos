@@ -3,8 +3,10 @@ title: "批量修改非搜索词子任务出价"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-subtaskpricemanage-0000001218375376
 format: md
+upstream_id: monetize/promotion/marketapi-subtaskpricemanage-0000001218375376
+last_sync: 2026-06-07
+sync_hash: 6be72c6c
 ---
-
 # 批量修改非搜索词子任务出价
 
 ## 功能介绍

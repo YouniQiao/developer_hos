@@ -2,9 +2,10 @@
 title: "应用文件访问(ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/app-file-access
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/app-file-access
+last_sync: 2026-06-07
+sync_hash: 5bf3972d
 ---
-
-
 应用需要对应用文件目录下的应用文件进行查看、创建、读写、删除、移动、复制、获取属性等访问操作，下文介绍具体方法。
 
 ## 接口说明

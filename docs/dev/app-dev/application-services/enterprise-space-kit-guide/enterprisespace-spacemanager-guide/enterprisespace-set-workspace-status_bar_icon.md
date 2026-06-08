@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "设置工作空间状态栏图标"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-set-workspace-status_bar_icon
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-set-workspace-status_bar_icon
+last_sync: 2026-06-07
+sync_hash: 56ff39ac
 ---
-
-
 ## 场景介绍
 
 从6.1.0(23)开始，支持设置工作空间图标的能力。

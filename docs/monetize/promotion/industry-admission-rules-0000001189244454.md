@@ -3,8 +3,10 @@ title: "行业准入规则"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/industry-admission-rules-0000001189244454
 format: md
+upstream_id: monetize/promotion/industry-admission-rules-0000001189244454
+last_sync: 2026-06-07
+sync_hash: 66872be3
 ---
-
 # 行业准入规则
 
 ## 鲸鸿动能广告禁止内容

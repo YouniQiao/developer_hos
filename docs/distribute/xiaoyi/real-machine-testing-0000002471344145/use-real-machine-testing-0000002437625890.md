@@ -3,9 +3,10 @@ title: "调试"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/real-machine-testing-0000002471344145/use-real-machine-testing-0000002437625890
 format: md
+upstream_id: distribute/xiaoyi/real-machine-testing-0000002471344145/use-real-machine-testing-0000002437625890
+last_sync: 2026-06-07
+sync_hash: fcd2da33
 ---
-
-
 # 调试
 
 ## 概述

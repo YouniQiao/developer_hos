@@ -2,9 +2,10 @@
 title: "访问网络"
 original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-network-access
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-basic-capabilities/develop-network-access
+last_sync: 2026-06-07
+sync_hash: 2bccf5e6
 ---
-
-
 ## 配置服务器域名
 
 为给用户提供安全可靠的网络环境，从而提升用户信任度和满意度。需对调用的服务器域名做配置，配置后才可以访问。请参见[配置服务器域名](/docs/dev/atomic-dev/atomic-network-development/agc-help-harmonyos-server-domain)。

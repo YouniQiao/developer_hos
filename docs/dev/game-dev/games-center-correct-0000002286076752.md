@@ -2,9 +2,10 @@
 title: "币种美化/更正原则"
 original_url: /docs/dev/game-dev/games-center-correct-0000002286076752
 format: md
+upstream_id: dev/game-dev/games-center-correct-0000002286076752
+last_sync: 2026-06-07
+sync_hash: fd54f1ad
 ---
-
-
 非美元币种国家/地区按照当时的汇率先将设置的“汇率换算基准价格”兑换为以美元为单位的价格，再由以美元为单位的价格兑换为该国家/地区币种为单位的价格，如涉及税率，还需加上对应税额，并按照如下币种美化/更正规则调整为最终商品价格，即“用户支付价格（含税）”。
 
 * 通用币种要求国家/地区：按照汇率换算后，视价格不同情况进行如下调整。

@@ -2,9 +2,10 @@
 title: "实现一个输入法应用"
 original_url: /docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide
 format: md
+upstream_id: dev/app-dev/application-framework/ime-kit/inputmethod-application-guide
+last_sync: 2026-06-07
+sync_hash: d5cec481
 ---
-
-
 [InputMethodExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethod-extension-ability)提供了onCreate()和onDestroy()生命周期回调，根据需要重写对应的回调方法。InputMethodExtensionAbility的生命周期如下：
 
 * **onCreate()**

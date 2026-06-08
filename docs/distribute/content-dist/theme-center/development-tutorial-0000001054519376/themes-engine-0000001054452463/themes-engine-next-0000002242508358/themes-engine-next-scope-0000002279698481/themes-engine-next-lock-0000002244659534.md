@@ -3,9 +3,10 @@ title: "锁屏&lt;Lockscreen&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-scope-0000002279698481/themes-engine-next-lock-0000002244659534
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-scope-0000002279698481/themes-engine-next-lock-0000002244659534
+last_sync: 2026-06-07
+sync_hash: bdda09bd
 ---
-
-
 # 锁屏&lt;Lockscreen&gt;
 
 ## 功能概述

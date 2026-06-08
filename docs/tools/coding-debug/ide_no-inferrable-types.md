@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-inferrable-types"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-inferrable-types
 format: md
+upstream_id: tools/coding-debug/ide_no-inferrable-types
+last_sync: 2026-06-07
+sync_hash: 8edf5abb
 ---
-
-
 # @typescript-eslint/no-inferrable-types
 
 不允许对初始化为数字、字符串或布尔值的变量或参数进行显式类型声明。

@@ -3,8 +3,10 @@ title: "创建任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-advertising-task1-0000001286337462
 format: md
+upstream_id: monetize/promotion/marketing-api-advertising-task1-0000001286337462
+last_sync: 2026-06-07
+sync_hash: 3f129c45
 ---
-
 # 创建任务
 
 您通过本接口创建任务。

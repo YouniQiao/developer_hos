@@ -2,9 +2,10 @@
 title: "Publishing API指南"
 original_url: /docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-publish-api-guide-0000002271134665
 format: md
+upstream_id: distribute/agc/agc-help-connect-api-0000002236015554/agc-help-publish-api-guide-0000002271134665
+last_sync: 2026-06-07
+sync_hash: 358ea8b6
 ---
-
-
 您可以通过AppGallery Connect API发布HarmonyOS应用/元服务。
 
 具体流程如下：

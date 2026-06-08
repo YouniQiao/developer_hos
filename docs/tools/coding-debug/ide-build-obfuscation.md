@@ -3,9 +3,10 @@ title: "混淆加固"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-build-obfuscation
 format: md
+upstream_id: tools/coding-debug/ide-build-obfuscation
+last_sync: 2026-06-07
+sync_hash: 863cd7ba
 ---
-
-
 # 混淆加固
 
 DevEco Studio原先默认开启源码混淆功能，会对API 10及以上的Stage工程，且编译模式是release时，自动进行简单的源码混淆，仅对参数名和局部变量名进行混淆。

@@ -2,9 +2,10 @@
 title: "获取元服务链接"
 original_url: /docs/dev/atomic-dev/ascf/develop-open-capabilities/ascf-applinking
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-open-capabilities/ascf-applinking
+last_sync: 2026-06-07
+sync_hash: e13c06a0
 ---
-
-
 可以使用AppLinking生成短链，通过短链生成二维码，然后扫码打开元服务并进入指定页面，详细配置请参考：[使用App Linking跳转到元服务](/docs/dev/atomic-dev/atomic-linking/atomic-applinking)。
 
 ![](./img/6813550c.png)

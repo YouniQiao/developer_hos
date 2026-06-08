@@ -2,9 +2,10 @@
 title: "ArkWeb简介"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-component-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-component-overview
+last_sync: 2026-06-07
+sync_hash: 4cc2d5b0
 ---
-
-
 ## 使用场景
 
 ArkWeb（方舟Web）提供了Web组件，用于在应用中显示Web页面内容。常见使用场景包括：
@@ -53,4 +54,4 @@ Web组件为开发者提供了丰富的控制Web页面能力。包括：
 
 ## 模拟器支持情况
 
-* 本Kit支持模拟器。模拟器与真机存在通用差异，详情请参见“[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification)”。
+* 本Kit支持模拟器。模拟器与真机存在通用差异，详情请参见“[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification)”。

@@ -2,9 +2,10 @@
 title: "应用重启"
 original_url: /docs/dev/app-dev/application-framework/app-restart
 format: md
+upstream_id: dev/app-dev/application-framework/app-restart
+last_sync: 2026-06-07
+sync_hash: b6e3270e
 ---
-
-
 应用重启用于在不同场景下重新初始化应用或恢复应用正常状态。系统提供了应用主动重启、元服务主动重启和应用故障恢复被动重启等，开发者可根据实际需求选择合适方案。
 
 ## 应用主动重启以重新初始化应用

@@ -3,9 +3,10 @@ title: "ohpm publish"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-publish
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-publish
+last_sync: 2026-06-07
+sync_hash: 1fa830b4
 ---
-
-
 # ohpm publish
 
 发布一个三方库。

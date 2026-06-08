@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-misused-new"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-misused-new
 format: md
+upstream_id: tools/coding-debug/ide_no-misused-new
+last_sync: 2026-06-07
+sync_hash: ba021468
 ---
-
-
 # @typescript-eslint/no-misused-new
 
 要求正确地定义“new”和“constructor”。

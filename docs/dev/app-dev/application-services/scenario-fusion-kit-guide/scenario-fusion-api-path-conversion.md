@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "文件路径转换API"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-api-path-conversion
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-api-path-conversion
+last_sync: 2026-06-07
+sync_hash: b6f0298f
 ---
-
-
 ## 场景介绍
 
 Scenario Fusion Kit提供文件路径转换的API，在HarmonyOS 4及以下到HarmonyOS 5及以上的升级场景和克隆场景，调用该接口可以将源文件路径转换为目标文件路径。

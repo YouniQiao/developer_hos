@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "PDF Kit简介"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-introduction
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-introduction
+last_sync: 2026-06-07
+sync_hash: 5bf76f5c
 ---
-
-
 PDF Kit（PDF服务）包含pdfService和PdfView组件。
 
 pdfService提供了加载和保存PDF文档、在PDF页面中添加文本内容、图片、批注、页眉页脚、水印、背景图片、书签、判断PDF文档是否加密及删除文档加密等相关的功能，对PDF文档的操作有更多的应用场景。
@@ -47,5 +48,5 @@ PDF Kit相关能力支持在Phone、Tablet和PC/2in1设备上运行。
 
 本Kit支持模拟器开发，但与真机存在部分能力差异，具体差异如下：
 
-* 通用差异：请参见“[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification#section1227613205203)”。
+* 通用差异：请参见“[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification#section1227613205203)”。
 * 支持ARM模拟器，不支持x86模拟器。

@@ -2,9 +2,10 @@
 format: md
 title: "如何获取应用级别的temp路径和files路径"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-15
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-15
+last_sync: 2026-06-07
+sync_hash: 04e59dc0
 ---
-
-
 通过上下文 context 获取。例如：
 
 * temp路径：通过 this.context.getApplicationContext().tempDir 获取。

@@ -2,9 +2,10 @@
 format: md
 title: "如何处理父子组件间的事件传递，例如，如何解决滑动冲突"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-40
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-40
+last_sync: 2026-06-07
+sync_hash: 93e5b83d
 ---
-
-
 1. 系统基于触摸测试收集需响应事件的控件，测试顺序从父组件到子组件。后续手势识别和竞争基于hitTest结果。
 
 2. 应用可改变组件上 hitTestBehavior 的值，以修改系统对其的 hitTest 结果。

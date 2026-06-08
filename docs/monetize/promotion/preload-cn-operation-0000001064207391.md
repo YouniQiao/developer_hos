@@ -3,8 +3,10 @@ title: "预装操作指南"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/preload-cn-operation-0000001064207391
 format: md
+upstream_id: monetize/promotion/preload-cn-operation-0000001064207391
+last_sync: 2026-06-07
+sync_hash: c357b0e0
 ---
-
 # 预装操作指南
 
 ## 1.注册-认证开发者

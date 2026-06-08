@@ -3,8 +3,10 @@ title: "多设备体验设计"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-design-principles
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi-device-design-principles
+last_sync: 2026-06-07
+sync_hash: 070111f2
 ---
-
 # 多设备体验设计
 
 支持一多的应用开发，建议在产品设计的早期阶段就纳入多设备适配的考量，通过统一规划实现跨终端的功能布局与用户体验一致性。

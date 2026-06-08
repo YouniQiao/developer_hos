@@ -2,9 +2,10 @@
 title: "公共事件简介"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/common-event-overview
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/common-event-overview
+last_sync: 2026-06-07
+sync_hash: 50f1ce47
 ---
-
-
 CES（Common Event Service，公共事件服务）为应用程序提供订阅、发布、退订公共事件的能力。
 
 ## 公共事件分类
@@ -42,4 +43,4 @@ CES（Common Event Service，公共事件服务）为应用程序提供订阅、
 
 本Kit支持模拟器。
 
-模拟器与真机存在通用差异，详情请参见“[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification)”。
+模拟器与真机存在通用差异，详情请参见“[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification)”。

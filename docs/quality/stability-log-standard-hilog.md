@@ -2,9 +2,10 @@
 title: "HiLog打印规范"
 original_url: /docs/quality/stability-log-standard-hilog
 format: md
+upstream_id: /docs/quality/stability-log-standard-hilog
+last_sync: 2026-06-07
+sync_hash: de37fbf8
 ---
-
-
 # HiLog打印规范
 
 ## 简介

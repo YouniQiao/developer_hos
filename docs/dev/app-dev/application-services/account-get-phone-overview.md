@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "概述"
 original_url: /docs/dev/app-dev/application-services/account-get-phone-overview
 format: md
+upstream_id: dev/app-dev/application-services/account-get-phone-overview
+last_sync: 2026-06-07
+sync_hash: cab25530
 ---
-
-
 当应用需要获取用户手机号时，可使用Account Kit提供的手机号授权能力，引导用户完成手机号授权。
 
 ![](./img/c49e2309.png)

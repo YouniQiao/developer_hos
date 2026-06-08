@@ -3,8 +3,10 @@ title: "多设备即时通讯界面"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/multi-communication-app
 format: md
+upstream_id: dev/app-dev/multi-device/multi-communication-app
+last_sync: 2026-06-07
+sync_hash: 1fb1d852
 ---
-
 # 多设备即时通讯界面
 
 ## 概述

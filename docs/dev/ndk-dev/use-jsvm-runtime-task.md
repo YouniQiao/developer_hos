@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口创建多个引擎执行JS代码并销毁"
 original_url: /docs/dev/ndk-dev/use-jsvm-runtime-task
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-runtime-task
+last_sync: 2026-06-07
+sync_hash: 23a3daa2
 ---
-
-
 ## 场景介绍
 
 开发者通过createJsCore方法来创建一个新的JS运行时环境，并通过该方法获得一个CoreID。然后，通过evaluateJS方法使用CoreID对应的运行环境来运行JS代码，在JS代码中创建promise并异步执行函数。最后，使用releaseJsCore方法来销毁CoreID对应的运行环境。

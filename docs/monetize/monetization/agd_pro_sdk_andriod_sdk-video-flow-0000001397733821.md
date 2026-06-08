@@ -3,10 +3,10 @@ title: "接入视频流广告"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_sdk-video-flow-0000001397733821
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_andriod_sdk-video-flow-0000001397733821
+last_sync: 2026-06-07
+sync_hash: 17f04869
 ---
-
-
-
 #### 创建AdsContext对象
 
 ```

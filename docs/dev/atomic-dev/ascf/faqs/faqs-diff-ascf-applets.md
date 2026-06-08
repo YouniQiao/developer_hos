@@ -2,8 +2,11 @@
 title: "ASCF框架与小程序的差异"
 original_url: /docs/dev/atomic-dev/ascf/faqs/faqs-diff-ascf-applets
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs/faqs-diff-ascf-applets
+last_sync: 2026-06-07
+sync_hash: 2019e6af
+upstream_hash: 451d356bf8a5
 ---
-
 
 ## 框架差异
 

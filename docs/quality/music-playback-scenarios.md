@@ -1,8 +1,10 @@
 ---
 title: "音乐播放场景低功耗规则"
 original_url: /docs/quality/music-playback-scenarios
+upstream_id: /docs/quality/music-playback-scenarios
+last_sync: 2026-06-07
+sync_hash: cfdf870b
 ---
-
 # 音乐播放场景低功耗规则
 
 ## 规则

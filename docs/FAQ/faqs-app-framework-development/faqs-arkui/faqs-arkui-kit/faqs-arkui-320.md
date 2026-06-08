@@ -2,9 +2,10 @@
 format: md
 title: "如何解决滚动类容器的滚动事件和手势之间的冲突"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-320
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-320
+last_sync: 2026-06-07
+sync_hash: d541a730
 ---
-
-
 可以通过添加并行手势绑定方法[parallelGesture](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-binding#parallelgesture并行手势绑定方法)来处理，参考代码如下：
 
 ```

@@ -2,9 +2,10 @@
 format: md
 title: "子组件事件能否传递到父组件"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-180
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-180
+last_sync: 2026-06-07
+sync_hash: 5650ba92
 ---
-
-
 ArkUI目前不支持直接的事件传递链机制。可以通过状态同步@Link或@Provide和@Consume进行父子组件间的状态通知，结合@Watch将状态变量的修改在组件间传递，实现类似功能。
 
 **参考链接**

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "密钥派生(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-key-derivation/huks-key-derivation-arkts
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-key-derivation/huks-key-derivation-arkts
+last_sync: 2026-06-07
+sync_hash: d1107781
 ---
-
-
 以PBKDF2和HKDF256密钥为例，完成密钥派生。具体的场景介绍及支持的算法规格，请参考[密钥派生支持的算法](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-derivation/crypto-key-derivation-overview#支持的算法)。
 
 ## 开发步骤

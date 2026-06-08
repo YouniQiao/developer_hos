@@ -2,9 +2,10 @@
 title: "解决Web组件本地资源跨域问题"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-cyber-security-privacy/web-cross-origin
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-cyber-security-privacy/web-cross-origin
+last_sync: 2026-06-07
+sync_hash: 0cff7f5b
 ---
-
-
 ## 拦截本地资源跨域
 
 为了提高安全性，ArkWeb内核禁止file协议和resource协议访问跨域请求。因此，在使用Web组件加载本地离线资源的时候，Web组件会拦截file协议和resource协议的跨域访问。通过方法二设置一个路径列表，再使用file协议访问该路径列表中的资源，允许跨域访问本地文件。Web组件无法访问本地跨域资源时，DevTools控制台会显示报错信息：

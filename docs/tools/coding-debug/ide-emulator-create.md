@@ -3,9 +3,10 @@ title: "创建模拟器"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-emulator-create
 format: md
+upstream_id: tools/coding-debug/ide-emulator-create
+last_sync: 2026-06-07
+sync_hash: e28a2826
 ---
-
-
 # 创建模拟器
 
 有网络环境可参考以下步骤创建模拟器，如果是无网络环境，请查看[离线部署模拟器](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-no-network)。

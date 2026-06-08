@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "地理编码"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-location-services/map-site-geocode
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-location-services/map-site-geocode
+last_sync: 2026-06-07
+sync_hash: e5b4a3e3
 ---
-
-
 ## 场景介绍
 
 提供正地理编码、逆地理编码的能力：

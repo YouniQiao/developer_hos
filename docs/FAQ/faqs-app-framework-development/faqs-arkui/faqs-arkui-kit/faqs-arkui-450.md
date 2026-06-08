@@ -2,9 +2,10 @@
 format: md
 title: "TextInput、TextArea等组件如何禁止提示拍摄输入"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-450
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-450
+last_sync: 2026-06-07
+sync_hash: a3208ffd
 ---
-
-
 **问题描述**
 
 在使用TextInput、TextArea等文本输入类组件时，系统会默认生成编辑选项，如拍照输入、全选等气泡内容，如果希望隐藏该内容，如何实现？

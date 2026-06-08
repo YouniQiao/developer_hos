@@ -3,8 +3,10 @@ title: "整体创建流程"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/overall-creation-process-0000001176965769
 format: md
+upstream_id: monetize/promotion/overall-creation-process-0000001176965769
+last_sync: 2026-06-07
+sync_hash: c78f279a
 ---
-
 # 整体创建流程
 
 - <strong>创建路径</strong>

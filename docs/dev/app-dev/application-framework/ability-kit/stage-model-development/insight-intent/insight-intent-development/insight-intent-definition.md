@@ -2,9 +2,10 @@
 title: "意图开发概述"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-development/insight-intent-definition
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-development/insight-intent-definition
+last_sync: 2026-06-07
+sync_hash: 361c753b
 ---
-
-
 开发者可以通过如下两种方式来定义意图：
 
 | 意图定义方式 | 说明 | 使用场景 |

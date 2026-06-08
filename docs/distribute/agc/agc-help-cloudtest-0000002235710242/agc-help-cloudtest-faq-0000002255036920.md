@@ -2,9 +2,10 @@
 title: "FAQ"
 original_url: /docs/distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-faq-0000002255036920
 format: md
+upstream_id: distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-faq-0000002255036920
+last_sync: 2026-06-07
+sync_hash: c7fec167
 ---
-
-
 #### 通用
 
 #### [h2]云测试的单个测试范围（兼容性测试、稳定性测试、性能测试、功耗测试、UX测试和隐私测试）每次可以选择多少款机型进行测试？
@@ -108,8 +109,8 @@ format: md
 请执行以下步骤解决：
 
 1. 申请[发布证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-release-cert-0000002283336729)和[发布Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)。
-2. 打开DevEco Studio，重新[配置签名信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app#section280162182818)（选择步骤1中申请的发布证书和发布Profile文件）
-3. 使用Release模式[编译构建应用包](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app#section1992513343374)。
+2. 打开DevEco Studio，重新[配置签名信息](/docs/tools/coding-debug/ide-publish-app#section280162182818)（选择步骤1中申请的发布证书和发布Profile文件）
+3. 使用Release模式[编译构建应用包](/docs/tools/coding-debug/ide-publish-app#section1992513343374)。
 
 #### [h2]遇到解析应用包未知异常类问题时，如何反馈？
 

@@ -2,7 +2,8 @@
 format: md
 title: "如何导出手机的文件, 例如外部存储的文件"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-18
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-18
+last_sync: 2026-06-07
+sync_hash: 42482f69
 ---
-
-
 在连接设备的情况下，点击DevEco Studio右下角的Device File Browser，进入手机目录结构，找到要导出的文件，右击选择“另存为”，保存到本地即可。

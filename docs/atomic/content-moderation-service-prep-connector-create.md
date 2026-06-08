@@ -3,9 +3,10 @@ title: "使用内容风控服务连接器"
 original_url: /docs/dev/atomic-dev/content-moderation-service-prep/content-moderation-service-prep-connector-create
 has_merged_cells: true
 format: md
+upstream_id: dev/atomic-dev/content-moderation-service-prep/content-moderation-service-prep-connector-create
+last_sync: 2026-06-07
+sync_hash: f5e72b48
 ---
-
-
 1. 请参照指导[创建官方连接器](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/cloud-function-official-connector-0000002219452452)，创建内容风控服务连接器
 
    连接器创建完成，系统将自动添加连接器方法textCheck（文本风控检测）和imageCheck（图片风控检测），2个连接器方法对应的入参和出参如下。

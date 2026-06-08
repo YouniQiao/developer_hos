@@ -2,8 +2,11 @@
 title: "配置隐私政策（元服务）"
 original_url: /docs/distribute/agc/agc-help-privacy-policy-0000002316794885/agc-help-privacy-policy-atomic-0000002317135133
 format: md
+upstream_id: distribute/agc/agc-help-privacy-policy-0000002316794885/agc-help-privacy-policy-atomic-0000002317135133
+last_sync: 2026-06-07
+sync_hash: f5e97dbe
+upstream_hash: 10882b89adf1
 ---
-
 
 ![](../img/agc-help-privacy-policy-atomic-0000002317135133_0.png)
 

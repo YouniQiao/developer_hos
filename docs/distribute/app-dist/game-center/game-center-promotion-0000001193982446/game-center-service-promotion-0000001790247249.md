@@ -3,14 +3,15 @@ title: "游戏中心服务推广"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-promotion-0000001193982446/game-center-service-promotion-0000001790247249
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-promotion-0000001193982446/game-center-service-promotion-0000001790247249
+last_sync: 2026-06-07
+sync_hash: 7fed256f
 ---
-
-
 # 游戏中心服务推广
 
 ![](./img/325f12ecbb41.png)
 
-[服务介绍链接：游戏中心介绍总览](`https://developer.huawei.com/consumer/cn/doc/distribution/app/game-center-introduction-0000001193266912`)
+[服务介绍链接：游戏中心介绍总览](`/docs/distribute/app-dist/game-center/game-center-introduction-0000001193266912)
 
 ## 游戏中心客户端-在玩
 
@@ -52,7 +53,7 @@ format: md
 
 ![](./img/8df9baf2a8ae.png)
 
-[服务介绍链接：AGC-社区管理操作指南](`https://developer.huawei.com/consumer/cn/doc/distribution/app/game-center-community-operation-0000001194305462`)
+[服务介绍链接：AGC-社区管理操作指南](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)
 
 ![](./img/e90ac011f283.png)
 
@@ -60,7 +61,7 @@ format: md
 
 |  |  |
 | --- | --- |
-| [服务介绍链接：AGC-互动评论操作指南](`https://developer.huawei.com/consumer/cn/doc/distribution/app/game-center-interaction-comments-0000001239182361`) | [服务介绍链接：AGC-开发者的话操作指南](`https://developer.huawei.com/consumer/cn/doc/distribution/app/game-center-developers-message-0000001194302396`) |
+| [服务介绍链接：AGC-互动评论操作指南](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-interaction-comments-0000001239182361) | [服务介绍链接：AGC-开发者的话操作指南](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-developers-message-0000001194302396) |
 
 ![](./img/391e60bb1a42.png)
 
@@ -92,11 +93,11 @@ format: md
 
 ![](./img/706a5a69189b.png)
 
-[服务介绍链接：AGC-开版指南](`https://developer.huawei.com/consumer/cn/doc/distribution/app/game-center-community-operation-0000001194305462`)
+[服务介绍链接：AGC-开版指南](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)
 
 ![](./img/007df32377a8.png)
 
-[服务介绍链接：AGC-首发申请](`https://developer.huawei.com/consumer/cn/doc/distribution/app/game-center-first-applyfor-0000001239502317`)
+[服务介绍链接：AGC-首发申请](`/docs/distribute/app-dist/game-center/game-center-first-applyfor-0000001239502317)
 
 ![](./img/b4e0af8c3519.png)
 
@@ -108,7 +109,7 @@ format: md
 
 |  |  |
 | --- | --- |
-| [服务介绍链接：AGC-活动管理](`https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-reservation-0000001657694701`) | [服务介绍链接：AGC-奖品管理](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-reservation-0000001657694701#section3160112618266`) |
+| [服务介绍链接：AGC-活动管理](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-reservation-0000001657694701) | [服务介绍链接：AGC-奖品管理](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-reservation-0000001657694701#section3160112618266`) |
 
 ![](./img/fbcf77035196.png)
 
@@ -140,7 +141,7 @@ format: md
 
 ![](./img/05717ca1cfe8.png)
 
-[服务介绍链接：AGC-营销素材管理](`https://developer.huawei.com/consumer/cn/doc/distribution/app/game-center-marketing-material-0000001193982454`)
+[服务介绍链接：AGC-营销素材管理](`/docs/distribute/app-dist/game-center/game-center-promotion-0000001193982446/game-center-marketing-material-0000001193982454)
 
 ![](./img/523194f2a3b8.png)
 

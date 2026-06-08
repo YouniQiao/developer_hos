@@ -2,9 +2,10 @@
 title: "CPU 高负载分析"
 original_url: /docs/quality/high-cpu-load-analysis
 format: md
+upstream_id: /docs/quality/high-cpu-load-analysis
+last_sync: 2026-06-07
+sync_hash: 3298a219
 ---
-
-
 # CPU 高负载分析
 
 ## 日志获取
@@ -44,7 +45,7 @@ CPU高负载问题通常涉及以下三种情况：
 某应用使用过程中，边刷视频边查看评论或推荐时，手机发烫严重，关闭应用后逐渐恢复正常。
 
 1. 在Profiler工具中开启Energy模板分析任务并复现问题场景。
-2. 观察CPU Core泳道找到运行时长占比比较高的线程，详细分析方法可参考：[CPU活动分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-cpu)。
+2. 观察CPU Core泳道找到运行时长占比比较高的线程，详细分析方法可参考：[CPU活动分析](/docs/tools/coding-debug/ide-insight-session-cpu)。
 
    选择CPU Core泳道，通过下方详情区可以看出应用进程占比时长较高。
 
@@ -66,7 +67,7 @@ CPU高负载问题通常涉及以下三种情况：
 某应用使用期间，屏幕发烫严重，壳温高达40摄氏度；结束应用后，温度自行恢复正常。
 
 1. 在Profiler工具中开启Energy模板分析任务并复现问题场景。
-2. 观察CPU Core泳道找到运行时长占比比较高的线程，详细分析方法可参考：[CPU活动分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-cpu)。
+2. 观察CPU Core泳道找到运行时长占比比较高的线程，详细分析方法可参考：[CPU活动分析](/docs/tools/coding-debug/ide-insight-session-cpu)。
 
    选择CPU Core泳道，通过下方详情区可以看出，应用进程占比时长较高。不同应用的应用进程名称不同，一般与应用包名一致。
 
@@ -88,7 +89,7 @@ CPU高负载问题通常涉及以下三种情况：
 在某应用上进入直播页面进行观看，功耗超100mA，手机温度持续升高。
 
 1. 在Profiler工具中开启Energy模板分析任务并复现问题场景。
-2. 观察CPU Core泳道找到运行时长占比比较高的线程，详细分析方法可参考：[CPU活动分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-cpu)。
+2. 观察CPU Core泳道找到运行时长占比比较高的线程，详细分析方法可参考：[CPU活动分析](/docs/tools/coding-debug/ide-insight-session-cpu)。
 
    选择CPU Core泳道，通过下方详情区可以看出，应用进程占比时长较高。
 
@@ -107,6 +108,6 @@ CPU高负载问题通常涉及以下三种情况：
 
    ![](./img/06d03d6c.png "点击放大")
 
-   查看Slice List，检查是否存在冗余绘制及组件未复用等情况。选择Slice List，发现id为-1的Image一直在执行绘制任务，Occurrences达到了4万多次。然后借助ArkUI Inspector工具进行排查确认组件是否存在冗余绘制情况。关于ArkUI Inspector的使用可参考：[布局分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arkui-inspector)。
+   查看Slice List，检查是否存在冗余绘制及组件未复用等情况。选择Slice List，发现id为-1的Image一直在执行绘制任务，Occurrences达到了4万多次。然后借助ArkUI Inspector工具进行排查确认组件是否存在冗余绘制情况。关于ArkUI Inspector的使用可参考：[布局分析](/docs/tools/coding-debug/ide-arkui-inspector)。
 
    ![](./img/17655b55.png "点击放大")

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "SOTER免密身份认证"
 original_url: /docs/dev/app-dev/system/system-security/online-authentication-kit-guide/onlineauthentication-soter
 format: md
+upstream_id: dev/app-dev/system/system-security/online-authentication-kit-guide/onlineauthentication-soter
+last_sync: 2026-06-07
+sync_hash: 29b57ee5
 ---
-
-
 ## 场景介绍
 
 用户可以利用生物特征来代替传统的密码验证，实现免密身份认证。

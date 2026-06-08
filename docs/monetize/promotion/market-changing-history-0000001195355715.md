@@ -3,8 +3,10 @@ title: "接口更新说明"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/market-changing-history-0000001195355715
 format: md
+upstream_id: monetize/promotion/market-changing-history-0000001195355715
+last_sync: 2026-06-07
+sync_hash: db3b69fd
 ---
-
 # 接口更新说明
 
 | 版本号 | 发布时间 | 更新说明 |

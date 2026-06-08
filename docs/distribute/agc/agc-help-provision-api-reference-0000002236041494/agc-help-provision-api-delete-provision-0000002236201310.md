@@ -2,9 +2,10 @@
 title: "删除Profile"
 original_url: /docs/distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-delete-provision-0000002236201310
 format: md
+upstream_id: distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-delete-provision-0000002236201310
+last_sync: 2026-06-07
+sync_hash: 99d93bc9
 ---
-
-
 #### 功能介绍
 
 此接口用于删除申请的Profile。

@@ -3,14 +3,15 @@ title: "删除/还原应用内商品"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-deleting-product-0000001193982456
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-deleting-product-0000001193982456
+last_sync: 2026-06-07
+sync_hash: cee78ed8
 ---
-
-
 # 删除/还原应用内商品
 
 ## 前提条件
 
-* 您已在商品管理[新增商品](`https://developer.huawei.com/consumer/cn/doc/app/game-center-creating-product-0000001239502323`)。
+* 您已在商品管理[新增商品](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-creating-product-0000001239502323)。
 * 建议使用Google Chrome浏览器访问商品管理服务，最低版本为62.0.3202.62。
 
 ## 删除商品

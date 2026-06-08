@@ -3,8 +3,11 @@ title: "@performance/hp-arkui-use-word-break-to-replace-zero-width-space"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-use-word-break-in-space
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-use-word-break-in-space
+last_sync: 2026-06-07
+sync_hash: 545bff1b
+upstream_hash: d227d69a523a
 ---
-
 
 # @performance/hp-arkui-use-word-break-to-replace-zero-width-space
 

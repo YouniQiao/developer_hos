@@ -2,9 +2,10 @@
 format: md
 title: "List组件如何设置两端的渐变效果"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-137
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-137
+last_sync: 2026-06-07
+sync_hash: 64953435
 ---
-
-
 List组件本身不支持直接设置两端渐变效果，但可通过Stack布局结合LinearGradient对象实现效果。参考代码如下：
 
 ```

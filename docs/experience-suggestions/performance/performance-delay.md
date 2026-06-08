@@ -1,8 +1,10 @@
 ---
 title: "时延"
 original_url: /docs/experience-suggestions/performance/performance-delay
+upstream_id: experience-suggestions/performance/performance-delay
+last_sync: 2026-06-07
+sync_hash: b82243a2
 ---
-
 import MergedTable from '@site/src/components/MergedTable';
 
 {/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用<MergedTable>组件还原 */}

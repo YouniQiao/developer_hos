@@ -3,9 +3,10 @@ title: "打包自测说明"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/basic-content-requirements-0000001311210204
 format: md
+upstream_id: distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/basic-content-requirements-0000001311210204
+last_sync: 2026-06-07
+sync_hash: fc8fe24b
 ---
-
-
 # 打包自测说明
 
 <strong>鸿蒙4.3及以下版本皮肤打包自测步骤</strong>

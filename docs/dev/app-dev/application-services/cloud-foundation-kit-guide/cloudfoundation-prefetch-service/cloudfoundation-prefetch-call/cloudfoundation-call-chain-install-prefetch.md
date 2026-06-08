@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "调用跳链安装预加载"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-call/cloudfoundation-call-chain-install-prefetch
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-call/cloudfoundation-call-chain-install-prefetch
+last_sync: 2026-06-07
+sync_hash: 14d06e51
 ---
-
-
 在项目的EntryAbility.ets文件中导入预加载实现类[PrefetchWrapper](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-call/cloudfoundation-prefetch-add-dependency-class/cloudfoundation-prefetch-implementation-class#prefetchwrapper)，并在onCreate中调用PrefetchWrapper的doLinkPrefetch方法。方法内部会先调用[popDeferredLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/applinking-deferredlink-api#popdeferredlink)接口获取延迟链接，再调用[getPrefetchResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cloudfoundation-cloudresprefetch#getprefetchresult)获取跳链安装预加载缓存数据。
 
 ![](./img/5b59a61a.png)

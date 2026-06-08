@@ -3,9 +3,10 @@ title: "跨语言调试"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-cross-language-debugging
 format: md
+upstream_id: tools/coding-debug/ide-cross-language-debugging
+last_sync: 2026-06-07
+sync_hash: 045d6c2c
 ---
-
-
 # 跨语言调试
 
 DevEco Studio支持C++和ArkTS的跨语言调试，可以同时调试这两种语言。整体操作体验与单一语言调试一致，无需额外在对应语言去手动添加断点，提升了使用两种语言混合开发的调试效率。

@@ -2,9 +2,10 @@
 format: md
 title: "应用的进程启动过程是怎样的"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-28
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-28
+last_sync: 2026-06-07
+sync_hash: 83a08864
 ---
-
-
 * 每个应用最多包含三类进程（主进程、Extension类进程、Render进程），系统负责创建和管理应用中的所有进程。
 * 应用主进程运行所有UIAbility组件、页面及业务逻辑，可拥有多个UIAbility实例。
 * 同一应用包含一个或多个Module，Module分为“Ability”和“Library”两种类型。Ability类型的Module编译后生成HAP，Library类型的Module生成HAR或HSP。

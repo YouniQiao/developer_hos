@@ -2,9 +2,10 @@
 title: "构建发布工程"
 original_url: /docs/dev/game-dev/games-creator-release-0000002290527377
 format: md
+upstream_id: dev/game-dev/games-creator-release-0000002290527377
+last_sync: 2026-06-07
+sync_hash: 4f6e8c77
 ---
-
-
 完成游戏适配后，需从Cocos Creator引擎中构建发布工程。此处以Cocos Creator 2.4.15引擎为例。
 
 1. 在Cocos Creator 2.4.15顶部菜单选择“项目 &gt; 构建发布”，在弹出的“构建发布”窗口填写配置项后，其中：

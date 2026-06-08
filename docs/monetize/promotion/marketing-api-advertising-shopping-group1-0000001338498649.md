@@ -3,8 +3,10 @@ title: "查询商品组信息"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-advertising-shopping-group1-0000001338498649
 format: md
+upstream_id: monetize/promotion/marketing-api-advertising-shopping-group1-0000001338498649
+last_sync: 2026-06-07
+sync_hash: 81a2ad6a
 ---
-
 # 查询商品组信息
 
 您通过本接口可以查询商品组信息。

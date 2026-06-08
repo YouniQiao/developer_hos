@@ -3,9 +3,10 @@ title: "基础耗时：Time分析"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-insight-session-time
 format: md
+upstream_id: tools/coding-debug/ide-insight-session-time
+last_sync: 2026-06-07
+sync_hash: fcac84a2
 ---
-
-
 # 基础耗时：Time分析
 
 #### 函数耗时分析及优化

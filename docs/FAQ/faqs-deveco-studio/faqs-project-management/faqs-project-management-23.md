@@ -2,9 +2,10 @@
 format: md
 title: "如何设置可以在工程目录中自动定位当前打开的文件"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-23
+upstream_id: FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-23
+last_sync: 2026-06-07
+sync_hash: a6322ac2
 ---
-
-
 **问题现象**
 
 打开文件时，左侧工程目录自动定位到当前文件位置。

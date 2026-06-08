@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "音频播放流管理"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-playback/audio-playback-stream-management
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-playback/audio-playback-stream-management
+last_sync: 2026-06-07
+sync_hash: db33dcb8
 ---
-
-
 对于播放音频类的应用，开发者需要关注该应用的音频流的状态以做出相应的操作，比如监听到状态为播放中/暂停时，及时改变播放按钮的UI显示。
 
 以下各步骤示例为片段代码，可通过示例代码右下方链接获取[完整示例](https://gitcode.com/openharmony/applications_app_samples/blob/master/code/DocsSample/Media/Audio/AudioRendererSampleJS)。

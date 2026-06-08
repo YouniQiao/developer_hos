@@ -2,9 +2,10 @@
 format: md
 title: "赋值和深拷贝与浅拷贝的区别"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-93
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-93
+last_sync: 2026-06-07
+sync_hash: c40d45c3
 ---
-
-
 浅拷贝：
 
 * 在堆内存中为新对象重新创建内存空间。

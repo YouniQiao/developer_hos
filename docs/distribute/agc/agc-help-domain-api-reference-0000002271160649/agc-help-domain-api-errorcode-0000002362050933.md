@@ -2,9 +2,10 @@
 title: "错误码"
 original_url: /docs/distribute/agc/agc-help-domain-api-reference-0000002271160649/agc-help-domain-api-errorcode-0000002362050933
 format: md
+upstream_id: distribute/agc/agc-help-domain-api-reference-0000002271160649/agc-help-domain-api-errorcode-0000002362050933
+last_sync: 2026-06-07
+sync_hash: ae89a98f
 ---
-
-
 | 错误码（errorCode） | 错误描述（errorMsg） |
 | --- | --- |
 | 205979650 | 无效参数 |

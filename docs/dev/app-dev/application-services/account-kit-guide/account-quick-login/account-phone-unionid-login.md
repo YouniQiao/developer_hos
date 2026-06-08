@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "华为账号一键登录（获取手机号和UnionID/OpenID）"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-phone-unionid-login
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-quick-login/account-phone-unionid-login
+last_sync: 2026-06-07
+sync_hash: 9fa90d66
 ---
-
-
 ## 概述
 
 华为账号一键登录是基于[OAuth 2.0协议标准](https://oauth.net/2/)和[OpenID Connect协议标准](https://openid.net/connect/)构建的OAuth 2.0授权登录系统，应用可以通过华为账号一键登录能力快捷地获取华为账号用户的身份标识和手机号，快速建立应用内的用户体系。
@@ -940,7 +941,7 @@ format: md
 
    ![](./img/04d1ddc3.png)
 
-   若代码片段插入失败，可查询[快速插入场景化代码片段](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-kit-assistant)的说明排查原因。
+   若代码片段插入失败，可查询[快速插入场景化代码片段](/docs/tools/coding-debug/ide-kit-assistant)的说明排查原因。
 4. 在自动生成的代码段的getQuickLoginAnonymousPhone函数中，执行executeRequest函数可获取响应结果。
 
    根据获取的响应结果判断，可能存在以下场景：

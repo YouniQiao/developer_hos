@@ -2,9 +2,10 @@
 format: md
 title: "如何自排查_Bool类型没有找到的编译问题"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-jsvm/faqs-jsvm-2
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-jsvm/faqs-jsvm-2
+last_sync: 2026-06-07
+sync_hash: 1a90cefc
 ---
-
-
 **问题现象**
 
 构建HAP工程时，编译工具报错：“error: unknown type name '\_Bool'”，找不到\_Bool类型错误，如下所示：

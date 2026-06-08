@@ -2,9 +2,10 @@
 title: "开发准备"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-preparations
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-preparations
+last_sync: 2026-06-07
+sync_hash: d4beb008
 ---
-
-
 ## 环境准备
 
 * HarmonyOS系统：HarmonyOS NEXT Developer Beta1及以上。

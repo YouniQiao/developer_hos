@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "支持的语言"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-appendix/map-language
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-appendix/map-language
+last_sync: 2026-06-07
+sync_hash: 9d077521
+upstream_hash: 2d00cf6cee7f
 ---
-
 
 ## 地图组件支持语言
 

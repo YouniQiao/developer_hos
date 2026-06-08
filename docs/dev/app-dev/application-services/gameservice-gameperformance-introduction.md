@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "概述"
 original_url: /docs/dev/app-dev/application-services/gameservice-gameperformance-introduction
 format: md
+upstream_id: dev/app-dev/application-services/gameservice-gameperformance-introduction
+last_sync: 2026-06-07
+sync_hash: 4c688ee4
 ---
-
-
 ## 功能说明
 
 游戏场景感知提供API接口，帮助开发者快速实现游戏与系统的交互，开发者通过游戏场景感知，可以完成向系统发送游戏信息以及从系统获取设备状态信息两大动作。

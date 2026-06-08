@@ -3,8 +3,10 @@ title: "查询账户消耗明细"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-balancedetail-0000001181826443
 format: md
+upstream_id: monetize/promotion/marketapi-balancedetail-0000001181826443
+last_sync: 2026-06-07
+sync_hash: 305e29c9
 ---
-
 # 查询账户消耗明细
 
 ## 功能介绍

@@ -2,9 +2,10 @@
 title: "如何将数据持续写入文件内"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-35
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-35
+last_sync: 2026-06-07
+sync_hash: a1b33d8f
 ---
-
-
 fileIo.writeSync方法中的WriteOptions.offset表示期望的文件写入位置。可以通过[filelo.read](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#fileioread)获取偏移量offset，然后在之前的数据位置继续写入数据。参考代码如下：
 
 ```

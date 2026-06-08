@@ -3,8 +3,10 @@ title: 通用友好
 sidebar_label: 通用友好
 original_url: /docs/design/atomic-service-design/design-principles/universal-friendly
 format: md
+upstream_id: design/atomic-service-design/design-principles/universal-friendly
+last_sync: 2026-06-07
+sync_hash: 7b97c293
 ---
-
 # 通用友好
 
 ### 即点即用、秒开清爽

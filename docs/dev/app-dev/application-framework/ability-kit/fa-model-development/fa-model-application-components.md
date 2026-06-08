@@ -2,9 +2,10 @@
 title: "FA模型应用组件"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components
+last_sync: 2026-06-07
+sync_hash: ebc7fec7
 ---
-
-
 * **[应用/组件级配置](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/application-component-configuration-fa)**
 * **[PageAbility组件开发指导](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability)**
 * **[ServiceAbility组件开发指导](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/serviceability)**

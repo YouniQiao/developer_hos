@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "推送应用内通话消息"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-voip
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-scenes/push-voip
+last_sync: 2026-06-07
+sync_hash: eecc4dae
 ---
-
-
 ## 场景介绍
 
 应用内通话消息，支持应用实现网络音视频通话的能力。当终端处于锁屏或解锁两种不同状态时，Push Kit将分别进行以下处理：

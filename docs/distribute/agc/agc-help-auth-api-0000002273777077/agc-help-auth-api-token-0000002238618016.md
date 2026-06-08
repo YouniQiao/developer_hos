@@ -2,8 +2,11 @@
 title: "Token"
 original_url: /docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-token-0000002238618016
 format: md
+upstream_id: distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-token-0000002238618016
+last_sync: 2026-06-07
+sync_hash: 89c1b6fe
+upstream_hash: c17afb04fd02
 ---
-
 
 AGC网关的Access Token结果信息。
 

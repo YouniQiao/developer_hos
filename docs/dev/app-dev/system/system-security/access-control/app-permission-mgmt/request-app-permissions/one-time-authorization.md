@@ -2,8 +2,11 @@
 title: "向用户申请单次授权"
 original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/one-time-authorization
 format: md
+upstream_id: dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/one-time-authorization
+last_sync: 2026-06-07
+sync_hash: 8da61780
+upstream_hash: 96e6aa09b9e2
 ---
-
 
 基于授权最小化原则，防止应用获取和滥用用户数据。针对部分应用敏感权限，在弹窗向用户申请授权时，新增“允许本次使用”的授权选项。
 

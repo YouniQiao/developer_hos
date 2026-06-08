@@ -2,9 +2,10 @@
 title: "应用布局适配智慧多窗"
 original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/multi-window-guide/multi-window-adapt/multi-window-layout-adapt
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/window-manager/multi-window-guide/multi-window-adapt/multi-window-layout-adapt
+last_sync: 2026-06-07
+sync_hash: f54c64df
 ---
-
-
 ## 应用布局适配智慧多窗的意义
 
 由于应用从全屏进入智慧多窗（悬浮窗/分屏）模式后，窗口尺寸、宽高比例会发生变化，所以需要开发者适配应用窗口在不同尺寸、不同比例下的自适应布局，以确保应用窗口在各种形态下都能呈现出最佳的视觉效果，提供更好的用户体验。

@@ -3,9 +3,10 @@ title: "模拟器与真机的差异"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-emulator-specification
 format: md
+upstream_id: tools/coding-debug/ide-emulator-specification
+last_sync: 2026-06-07
+sync_hash: 1edf369f
 ---
-
-
 # 模拟器与真机的差异
 
 模拟器是开发和调试HarmonyOS应用/元服务的便捷工具，例如不需要配置服务器域名即可开发和调试元服务，在大多数情况下，模拟器上推包调试不需要签名，但部分Kit仍需签名后才能正常运行，具体要求请参考Kit的开发指南。

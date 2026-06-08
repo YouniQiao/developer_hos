@@ -3,8 +3,10 @@ title: "功能介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-one-sentence-introduction-ability-0000001362259141
 format: md
+upstream_id: monetize/promotion/bp-functions-one-sentence-introduction-ability-0000001362259141
+last_sync: 2026-06-07
+sync_hash: b2be274f
 ---
-
 # 功能介绍
 
 ## 什么是一句话简介

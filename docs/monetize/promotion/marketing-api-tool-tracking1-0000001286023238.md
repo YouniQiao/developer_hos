@@ -3,6 +3,10 @@ title: "查询转化跟踪目标"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-tracking1-0000001286023238
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-tracking1-0000001286023238
+last_sync: 2026-06-07
+sync_hash: 1a9825be
+upstream_hash: 508b9b453e4f
 ---
 
 # 查询转化跟踪目标

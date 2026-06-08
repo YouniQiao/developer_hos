@@ -2,9 +2,10 @@
 title: "HarmonyOS 5 内容信息规范"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/contentreviewspecifications-0000001792709172/harmonyos5-content-information-test-0000002307551889
+upstream_id: distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/contentreviewspecifications-0000001792709172/harmonyos5-content-information-test-0000002307551889
+last_sync: 2026-06-07
+sync_hash: a7f5fd07
 ---
-
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # HarmonyOS 5 内容信息规范

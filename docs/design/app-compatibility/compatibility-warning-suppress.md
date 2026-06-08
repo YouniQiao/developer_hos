@@ -3,9 +3,10 @@ title: "兼容性告警屏蔽"
 displayed_sidebar: appCompatibilitySidebar
 original_url: /docs/design/app-compatibility/compatibility-warning-suppress
 format: md
+upstream_id: design/app-compatibility/compatibility-warning-suppress
+last_sync: 2026-06-07
+sync_hash: 8cfadb40
 ---
-
-
 # 兼容性告警屏蔽
 
 从DevEco Studio 6.1.0 Beta2开始，DevEco Studio新增ArkTS API接口兼容性告警屏蔽能力，支持通过添加@SuppressWarnings注解或@SuppressWarnings单行注释的方式消除COMPATIBILITY类型的告警。

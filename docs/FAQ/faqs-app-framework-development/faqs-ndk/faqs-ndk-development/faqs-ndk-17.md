@@ -2,9 +2,10 @@
 format: md
 title: "Native侧如何获取ArkTS侧的应用包名"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-17
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-17
+last_sync: 2026-06-07
+sync_hash: dbf0055b
 ---
-
-
 **问题详情**
 
 ArkTS侧调用Native开放的接口时，如何在Native侧获取TS侧应用包名？

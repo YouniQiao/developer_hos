@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "共享联系人信息到分享推荐区"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-target-application/share-intents-share
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/system-share/share-target-application/share-intents-share
+last_sync: 2026-06-07
+sync_hash: 94efbdd1
+upstream_hash: d9bb2214ff27
 ---
-
 
 通过意图框架服务，目标应用可以将联系人信息共享到分享推荐区。参考：[习惯推荐-接入方案](/docs/dev/app-dev/ai/intents-habit-rec-access-programme)。
 

@@ -1,8 +1,10 @@
 ---
 title: "Cloudfoundation Appendix"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-appendix
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-appendix
+last_sync: 2026-06-07
+sync_hash: b6fbb74c
 ---
-
 import SourceLink from '@site/src/components/SourceLink';
 
 # Cloudfoundation Appendix

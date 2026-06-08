@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "推送后台消息"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-background
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-scenes/push-background
+last_sync: 2026-06-07
+sync_hash: 10c06f91
 ---
-
-
 ## 场景介绍
 
 后台消息用于内容不频繁更新的场景，不会显示通知、播放铃声或改变应用角标。终端设备接收到后台消息后，如果应用进程在前台则将消息内容传给应用；如果应用进程不在前台则缓存消息，等待应用启动后再传给应用。

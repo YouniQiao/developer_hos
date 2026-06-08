@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用硬件熵源生成安全随机数(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-rand/crypto-generate-random-number-hardware-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-rand/crypto-generate-random-number-hardware-ndk
+last_sync: 2026-06-07
+sync_hash: ee812a16
 ---
-
-
 从API version 21开始，可以选择使用硬件熵源生成安全随机数。
 
 随机数主要用于临时会话密钥生成和非对称加密算法密钥生成等场景。在加解密场景中，安全随机数生成器需要具备随机性、不可预测性和不可重现性。

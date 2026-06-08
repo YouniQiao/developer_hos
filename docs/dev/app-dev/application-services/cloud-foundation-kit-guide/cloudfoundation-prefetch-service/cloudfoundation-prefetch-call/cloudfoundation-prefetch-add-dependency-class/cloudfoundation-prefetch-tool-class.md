@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "预加载工具类"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-call/cloudfoundation-prefetch-add-dependency-class/cloudfoundation-prefetch-tool-class
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-call/cloudfoundation-prefetch-add-dependency-class/cloudfoundation-prefetch-tool-class
+last_sync: 2026-06-07
+sync_hash: 4e410f5c
 ---
-
-
 在“entry/src/main/ets/common”目录下新增GlobalContext.ets和PreferenceUtil.ets。
 
 ## GlobalContext

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "基于TracingConfiguration实现性能维测"
 original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-tpms
 format: md
+upstream_id: dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-tpms
+last_sync: 2026-06-07
+sync_hash: 5fc97748
 ---
-
-
 ## 约束与限制
 
 性能维测能力支持Phone、2in1、Tablet、Wearable设备。并且从5.1.1(19)开始，新增支持TV设备。

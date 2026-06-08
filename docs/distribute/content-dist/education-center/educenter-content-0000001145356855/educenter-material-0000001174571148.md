@@ -3,9 +3,10 @@ title: "素材管理"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/education-center/educenter-content-0000001145356855/educenter-material-0000001174571148
 format: md
+upstream_id: distribute/content-dist/education-center/educenter-content-0000001145356855/educenter-material-0000001174571148
+last_sync: 2026-06-07
+sync_hash: 5f5000a2
 ---
-
-
 # 素材管理
 
 ## 上传素材

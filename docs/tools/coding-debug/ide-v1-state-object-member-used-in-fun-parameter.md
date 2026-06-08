@@ -3,9 +3,10 @@ title: "@correctness/v1-state-object-member-used-in-function-parameter-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-v1-state-object-member-used-in-fun-parameter
 format: md
+upstream_id: tools/coding-debug/ide-v1-state-object-member-used-in-fun-parameter
+last_sync: 2026-06-07
+sync_hash: 6da0def6
 ---
-
-
 # @correctness/v1-state-object-member-used-in-function-parameter-check
 
 在 build() 方法内，避免将@Observed和@ObjectLink装饰的类对象的状态变量直接作为参数传递给方法（如 a.b(this.object)）。

@@ -3,8 +3,10 @@ title: "三折叠应用开发"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-matext-guide
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-matext-guide
+last_sync: 2026-06-07
+sync_hash: e00d4efb
 ---
-
 # 三折叠应用开发
 
 ## 概述
@@ -71,7 +73,7 @@ format: md
 
 ###相机硬件信息
 
-相机有默认的[相机镜头安装角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#相机镜头安装角度)，使用时需结合镜头角度与设备旋转角度综合考量，具体定义可参考[预览旋转角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#预览旋转角度)。
+相机有默认的[相机镜头安装角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#相机镜头安装角度)，使用时需结合镜头角度与设备旋转角度综合考量，具体定义可参考[预览旋转角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#预览旋转角度)。
 
 **单屏态相机硬件信息**
 

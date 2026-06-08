@@ -1,8 +1,10 @@
 ---
 title: "HarmonyOS术语"
 original_url: /docs/dev/app-dev/getting-started/glossary/glossary
+upstream_id: dev/app-dev/getting-started/glossary/glossary
+last_sync: 2026-06-07
+sync_hash: 8f8d09a3
 ---
-
 ## A
 
 ### abc文件

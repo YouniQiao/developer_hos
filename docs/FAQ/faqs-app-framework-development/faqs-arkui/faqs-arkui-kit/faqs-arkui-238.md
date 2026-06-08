@@ -2,9 +2,10 @@
 format: md
 title: "在屏幕底部的组件的响应区域是否存在遮挡"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-238
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-238
+last_sync: 2026-06-07
+sync_hash: 9996eab7
 ---
-
-
 **问题现象**
 
 创建窗口并加载自定义键盘后，发现底部按钮下半部分无法响应点击事件。

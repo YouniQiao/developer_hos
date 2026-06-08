@@ -2,9 +2,10 @@
 title: "绑定手势事件"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-add-event/ndk-bind-gesture-events
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-add-event/ndk-bind-gesture-events
+last_sync: 2026-06-07
+sync_hash: 739ec697
 ---
-
-
 ArkUI开发框架在NDK接口主要提供点击手势、滑动手势、快滑手势、长按手势、捏合手势和旋转手势，通过给指定的组件绑定不同的手势并设置相应的回调，实现期望的手势交互能力。
 
 下面通过一个简单的示例来介绍如何实现手势绑定。

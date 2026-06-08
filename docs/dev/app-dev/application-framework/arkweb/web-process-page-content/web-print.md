@@ -2,9 +2,10 @@
 title: "使用Web组件打印前端页面"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-print
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-process-page-content/web-print
+last_sync: 2026-06-07
+sync_hash: 04d23eb2
 ---
-
-
 Web组件打印HTML页面时可通过W3C标准协议接口和应用接口两种方式实现。
 
 使用打印功能前，请在module.json5中配置相关权限，添加方法请参考[在配置文件中声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions#在配置文件中声明权限)。

@@ -2,7 +2,8 @@
 title: "文件系统适配"
 original_url: /docs/dev/game-dev/games-universal-file-system-0000002333176749
 format: md
+upstream_id: dev/game-dev/games-universal-file-system-0000002333176749
+last_sync: 2026-06-07
+sync_hash: c56c99b0
 ---
-
-
 HarmonyOS文件系统按文件所有者不同可分为：应用文件、用户文件和系统文件。文件系统适配主要针对应用运行时对文件的操作（读写、只读），帮助理解rawfile、resfile和应用沙箱的差异点。更多内容请参见[Rawfile开发指导](/docs/dev/ndk-dev/rawfile-guidelines)。

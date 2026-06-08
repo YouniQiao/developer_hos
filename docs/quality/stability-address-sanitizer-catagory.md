@@ -1,8 +1,10 @@
 ---
 title: "地址越界经典问题类型"
 original_url: /docs/quality/stability-address-sanitizer-catagory
+upstream_id: /docs/quality/stability-address-sanitizer-catagory
+last_sync: 2026-06-07
+sync_hash: 6f336ea3
 ---
-
 # 地址越界经典问题类型
 
 ## heap-use-after-free

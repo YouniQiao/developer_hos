@@ -3,8 +3,10 @@ title: "通过API接口查询(方式二)"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-deeplink-inquire-api-0000001296132894
 format: md
+upstream_id: monetize/promotion/bp-functions-deeplink-inquire-api-0000001296132894
+last_sync: 2026-06-07
+sync_hash: c6666aa2
 ---
-
 # 通过API接口查询(方式二)
 
 ## 功能介绍

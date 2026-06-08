@@ -2,9 +2,10 @@
 format: md
 title: "如何使用Zip模块解压项目目录rawfile中的文件至应用的沙箱目录中"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-1
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-1
+last_sync: 2026-06-07
+sync_hash: 95055e87
 ---
-
-
 1. 使用getRawFileContent接口获取 rawfile 中的文件内容，以字节数组形式返回。
 2. 通过context对象获取应用的沙箱目录。
 3. 使用file.write接口将rawfile的字节数组写入沙箱目录。

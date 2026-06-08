@@ -3,9 +3,10 @@ title: "插件上下文"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-build-expanding-context
 format: md
+upstream_id: tools/coding-debug/ide-build-expanding-context
+last_sync: 2026-06-07
+sync_hash: d72f62af
 ---
-
-
 # 插件上下文
 
 #### OhosPluginId

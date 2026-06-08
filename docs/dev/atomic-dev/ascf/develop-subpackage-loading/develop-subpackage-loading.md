@@ -2,9 +2,10 @@
 title: "分包加载"
 original_url: /docs/dev/atomic-dev/ascf/develop-subpackage-loading/develop-subpackage-loading
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-subpackage-loading/develop-subpackage-loading
+last_sync: 2026-06-07
+sync_hash: 4a2df76a
 ---
-
-
 当ASCF元服务体积较大时，可以使用ASCF元服务的分包加载功能。简单来说，就是将项目中的所有页面及资源通过配置规则划分到多个单独的分包文件中，运行时单独下载，加快页面渲染。对ASCF元服务进行分包，可以优化其首次启动的加载时间，以及更好的管理和解耦各个模块功能。
 
 分包加载的能力首先依赖于编译时工具，根据开发者在manifest.json中配置的subpackages规则，将项目打包成多个分包。这些分包包含一个主包和若干个分包，主包内容包含一些公共的资源、页面等内容，而分包内容则是根据开发者的配置资源目录进行划分。每个包都是作为rawfile资源文件放到元服务分包中，都是一个元服务的一个独立的hsp。

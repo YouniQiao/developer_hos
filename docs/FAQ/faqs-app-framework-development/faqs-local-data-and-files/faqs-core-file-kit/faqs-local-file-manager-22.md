@@ -2,8 +2,11 @@
 title: "如何校验文件一致性"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-22
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-22
+last_sync: 2026-06-07
+sync_hash: 3a36d88f
+upstream_hash: 01c071d27d57
 ---
-
 
 通过比较Hash值的方法来校验文件的一致性。Hash算法使用MD5算法，[消息摘要计算MD5(ArkTS)](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-generate-message/crypto-generate-message-digest-dev/crypto-generate-message-digest-md5)，参考代码如下：
 

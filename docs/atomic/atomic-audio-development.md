@@ -2,8 +2,11 @@
 title: "音视频"
 original_url: /docs/dev/atomic-dev/atomic-basic-capability-development/atomic-audio-development
 format: md
+upstream_id: dev/atomic-dev/atomic-basic-capability-development/atomic-audio-development
+last_sync: 2026-06-07
+sync_hash: 4530b2b4
+upstream_hash: 3436a07f3a24
 ---
-
 
 元服务音视频的开发方式与应用音视频的开发方式相同，针对元服务，Media Kit（媒体服务）当前仅开放支持以下功能：
 

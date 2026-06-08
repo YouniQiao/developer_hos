@@ -3,8 +3,10 @@ title: "投放大卡智投任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-task-search-image-video-0000001788696032
 format: md
+upstream_id: monetize/promotion/bp-delivery-task-search-image-video-0000001788696032
+last_sync: 2026-06-07
+sync_hash: 9c5f3c16
 ---
-
 # 投放大卡智投任务
 
 ## 背景信息

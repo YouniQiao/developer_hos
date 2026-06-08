@@ -2,9 +2,10 @@
 title: "使用HiChecker检测问题（ArkTS）"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hichecker/hichecker-guidelines-arkts
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hichecker/hichecker-guidelines-arkts
+last_sync: 2026-06-07
+sync_hash: fcc5b943
 ---
-
-
 ## 简介
 
 HiChecker可以作为应用开发阶段使用的检测能力，用于检测代码运行过程中部分易忽略的问题，如应用线程出现耗时调用、应用进程中元能力资源泄露等问题。开发者可以通过日志记录或进程crash等形式查看具体问题并进行修改，提升应用的使用体验。

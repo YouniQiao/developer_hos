@@ -2,9 +2,10 @@
 title: "设置支付服务端回调"
 original_url: /docs/dev/game-dev/games-quickgame-enable-iap-kit-0000002318054648
 format: md
+upstream_id: dev/game-dev/games-quickgame-enable-iap-kit-0000002318054648
+last_sync: 2026-06-07
+sync_hash: 7c3fd827
 ---
-
-
 若您的游戏对安全性要求比较高，可以不使用客户端数据，直接通过服务端向华为支付服务器发起校验请求，进一步确认订单的准确性。
 
 ## 配置回调地址

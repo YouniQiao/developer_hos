@@ -2,9 +2,10 @@
 title: "如何实现状态栏背景颜色沉浸"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-358
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-358
+last_sync: 2026-06-07
+sync_hash: a6491387
 ---
-
-
 **问题描述**
 
 为了避免状态栏颜色与背景重合，需根据状态栏和内容区域的颜色进行沉浸式效果适配，具体方式如下：

@@ -2,9 +2,10 @@
 title: "工程模板介绍"
 format: md
 original_url: /docs/tools/coding-debug/ide-template
+upstream_id: tools/coding-debug/ide-template
+last_sync: 2026-06-07
+sync_hash: eeea9bbf
 ---
-
-
 # 工程模板介绍
 
 DevEco Studio支持多种品类的应用/元服务开发，预置丰富的工程模板，可以根据工程向导轻松创建适应于各类设备的工程，并自动生成对应的代码和资源模板。同时，DevEco Studio还提供了多种编程语言供开发者进行应用/元服务开发，包括ArkTS、JS和C/C++。

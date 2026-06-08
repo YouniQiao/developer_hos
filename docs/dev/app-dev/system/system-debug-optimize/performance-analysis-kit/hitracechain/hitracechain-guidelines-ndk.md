@@ -2,9 +2,10 @@
 title: "使用HiTraceChain打点（C/C++）"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracechain/hitracechain-guidelines-ndk
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracechain/hitracechain-guidelines-ndk
+last_sync: 2026-06-07
+sync_hash: 4cbbfb17
 ---
-
-
 ## 接口说明
 
 分布式跟踪接口由HiTraceChain模块提供，详细API请参考[trace.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-trace-h)。

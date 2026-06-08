@@ -2,9 +2,10 @@
 title: "StorageInfo"
 original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-storageinfo-0000002295005350
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-storageinfo-0000002295005350
+last_sync: 2026-06-07
+sync_hash: 81303baf
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | storagePeriod | O | String(512) | 开发者对信息的存储期限。  取值范围：   * -1：表示最短期限。 * 其他取值表示由开发者填写。 |

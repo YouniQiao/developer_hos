@@ -2,9 +2,10 @@
 title: "构建渲染节点"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-embed-render-components
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-embed-render-components
+last_sync: 2026-06-07
+sync_hash: 4e37a8dd
 ---
-
-
 从API version 20开始，ArkUI开发框架针对NDK接口，提供了直接构建渲染节点的能力，包括节点树操作、属性设置及含动画的自定义绘制。开发者通过调用渲染节点相关能力，可以绕过[registerNodeCustomEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativenodeapi-1#registernodecustomevent)的测量布局过程，直接对节点进行绘制并调整其大小和位置。
 
 * **渲染节点树操作相关的能力** ，例如[OH\_ArkUI\_RenderNodeUtils\_AddRenderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-render-h#oh_arkui_rendernodeutils_addrendernode)、[OH\_ArkUI\_RenderNodeUtils\_AddChild](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-render-h#oh_arkui_rendernodeutils_addchild)等接口用于编辑渲染节点树的结构。仅类型为ARKUI\_NODE\_CUSTOM且无其他子节点的自定义节点（加超链接到nativeNode）能够挂载渲染节点，且最多挂载一个渲染节点。即渲染节点以子树形式挂载在类型为ARKUI\_NODE\_CUSTOM的叶子自定义节点上。

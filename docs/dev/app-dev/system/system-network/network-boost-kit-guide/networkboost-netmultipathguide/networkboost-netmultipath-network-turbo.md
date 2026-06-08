@@ -2,9 +2,10 @@
 title: "多网并发网络加速"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide/networkboost-netmultipath-network-turbo
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide/networkboost-netmultipath-network-turbo
+last_sync: 2026-06-07
+sync_hash: f8163c90
 ---
-
-
 ## 概述
 
 网络数据传输是应用的核心功能场景之一，而传输的性能直接决定着用户体验——例如高清晰度视频/图片的加载、大文件的上传下载、设备间多文件的同步迁移等场景，有限的网络传输性能导致的卡顿、长时间等待往往会导致用户使用感受变差。针对此类性能敏感的场景，Network Boost Kit的[多网并发](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide)能力提供了网络加速的解决方案。

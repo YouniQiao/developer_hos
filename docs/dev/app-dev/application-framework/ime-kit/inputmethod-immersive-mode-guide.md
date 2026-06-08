@@ -2,9 +2,10 @@
 title: "输入法应用沉浸模式"
 original_url: /docs/dev/app-dev/application-framework/ime-kit/inputmethod-immersive-mode-guide
 format: md
+upstream_id: dev/app-dev/application-framework/ime-kit/inputmethod-immersive-mode-guide
+last_sync: 2026-06-07
+sync_hash: 32324abc
 ---
-
-
 ## 场景介绍
 
 为了让应用能够提供一致的沉浸式体验，我们提供了前台应用和输入法应用之间的通信机制。通过该机制，输入法应用根据前台应用设置的沉浸模式来决定最终沉浸模式。

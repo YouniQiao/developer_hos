@@ -2,9 +2,10 @@
 title: "感知流畅优化"
 original_url: /docs/quality/perceived-smoothness
 format: md
+upstream_id: /docs/quality/perceived-smoothness
+last_sync: 2026-06-07
+sync_hash: 5a501e2d
 ---
-
-
 # 感知流畅优化
 
 在应用开发中，动画可以为用户界面增添生动、流畅的交互效果，提升用户对应用的好感度。然而，滥用动画也会导致应用性能下降，消耗过多的系统资源，甚至影响用户体验。关于感知流畅度优化方法，请参阅[提升动画感知流畅度](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-fair-use-animation#section6998195315306)。

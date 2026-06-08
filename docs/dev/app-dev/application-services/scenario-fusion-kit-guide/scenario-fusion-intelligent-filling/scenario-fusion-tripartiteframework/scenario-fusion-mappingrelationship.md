@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "H5/三方框架和HarmonyOS配置项映射关系"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-tripartiteframework/scenario-fusion-mappingrelationship
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-tripartiteframework/scenario-fusion-mappingrelationship
+last_sync: 2026-06-07
+sync_hash: e66b6403
 ---
-
-
 ## H5 autocomplete和HarmonyOS的ContentType的映射关系
 
 | 输入场景 | 【H5】autocomplete | 【ArkUI】ContentType | 说明 |

@@ -2,8 +2,11 @@
 format: md
 title: "Native侧如何使用hilog打印出日志信息"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-35
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-35
+last_sync: 2026-06-07
+sync_hash: d196512e
+upstream_hash: 41be909de5a9
 ---
-
 
 1.在CMakeLists.txt中新增libhilog\_ndk.z.so链接：
 

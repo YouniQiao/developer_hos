@@ -2,9 +2,10 @@
 title: "包权限管理"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-package-permission-management
+upstream_id: tools/ohpm/repo/ide-package-permission-management
+last_sync: 2026-06-07
+sync_hash: e330b830
 ---
-
-
 # 包权限管理
 
 ohpm-repo从5.3.0版本开始支持配置包级别的权限管理。系统支持对单个三方包配置精细化的权限控制，包含包的所有者、包的维护者和包的查看者。

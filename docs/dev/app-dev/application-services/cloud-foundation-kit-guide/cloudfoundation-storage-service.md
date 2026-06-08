@@ -1,8 +1,10 @@
 ---
 title: "Cloudfoundation Storage Service"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service
+last_sync: 2026-06-07
+sync_hash: fd36a973
 ---
-
 import SourceLink from '@site/src/components/SourceLink';
 
 # Cloudfoundation Storage Service

@@ -2,8 +2,11 @@
 format: md
 title: "编译报错“The 'tag' keyword is not allowed for 'version' at 'xxx/oh-package.json5'”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-149
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-149
+last_sync: 2026-06-07
+sync_hash: 216bd385
+upstream_hash: 96168768f710
 ---
-
 
 **错误描述**
 

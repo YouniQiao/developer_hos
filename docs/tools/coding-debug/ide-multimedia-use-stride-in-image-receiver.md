@@ -3,9 +3,10 @@ title: "@correctness/multimedia-use-stride-in-image-receiver"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-multimedia-use-stride-in-image-receiver
 format: md
+upstream_id: tools/coding-debug/ide-multimedia-use-stride-in-image-receiver
+last_sync: 2026-06-07
+sync_hash: 06c66cfc
 ---
-
-
 # @correctness/multimedia-use-stride-in-image-receiver
 
 在使用ImageReceiver组件中[readNextImage](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagereceiver#readnextimage9)接口时，建议设置且调用rowStride属性，避免出现相机获取预览流数据异常的问题。

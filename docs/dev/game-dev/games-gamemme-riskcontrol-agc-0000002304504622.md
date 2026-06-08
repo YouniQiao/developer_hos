@@ -2,9 +2,10 @@
 title: "在AGC控制台人工送检"
 original_url: /docs/dev/game-dev/games-gamemme-riskcontrol-agc-0000002304504622
 format: md
+upstream_id: dev/game-dev/games-gamemme-riskcontrol-agc-0000002304504622
+last_sync: 2026-06-07
+sync_hash: e0ca0a5e
 ---
-
-
 除自动送检方式外，游戏多媒体服务还提供了在AGC控制台进行人工送检的方式，支持手动批量上传文本消息聊天内容进行内容检测。
 
 ## 前提条件

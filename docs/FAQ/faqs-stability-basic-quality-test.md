@@ -2,9 +2,10 @@
 format: md
 title: "稳定性基础质量测试"
 original_url: /docs/FAQ/faqs-stability-basic-quality-test
+upstream_id: FAQ/faqs-stability-basic-quality-test
+last_sync: 2026-06-07
+sync_hash: 76632cce
 ---
-
-
 * **[任务出现超时未结束是什么原因](/docs/FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-stability-basic-quality-test/faqs-stability-basic-quality-test-1)**
 * **[内存泄漏的定位日志为什么是乱码](/docs/FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-stability-basic-quality-test/faqs-stability-basic-quality-test-2)**
 * **[为什么我的应用在开始稳定性测试后一直反复拉起退出，且最后测试中断结束，报告中展示测试中断？](/docs/FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-stability-basic-quality-test/faqs-stability-basic-quality-test-3)**

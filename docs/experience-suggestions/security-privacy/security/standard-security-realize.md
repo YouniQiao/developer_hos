@@ -2,9 +2,10 @@
 title: "实现安全"
 original_url: /docs/experience-suggestions/security-privacy/security/standard-security-realize
 format: md
+upstream_id: experience-suggestions/security-privacy/security/standard-security-realize
+last_sync: 2026-06-07
+sync_hash: 89f93426
 ---
-
-
 # 实现安全
 
 |  |  |
@@ -37,7 +38,7 @@ format: md
 | 类型 | 建议 |
 | 适用设备 | 手机，平板，PC/2in1，智慧屏，车机 |
 | 应用形态适用性 | 鸿蒙应用，鸿蒙元服务 |
-| 说明 | [ArkGuard源码混淆工具](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation)开发指南、[DevEco Studio使能代码混淆](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-obfuscation)指南 |
+| 说明 | [ArkGuard源码混淆工具](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation)开发指南、[DevEco Studio使能代码混淆](/docs/tools/coding-debug/ide-build-obfuscation)指南 |
 
 |  |  |
 | --- | --- |

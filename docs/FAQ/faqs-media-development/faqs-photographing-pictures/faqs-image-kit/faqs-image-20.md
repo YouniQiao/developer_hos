@@ -2,9 +2,10 @@
 title: "如何将PixelMap保存到相册"
 original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-20
 format: md
+upstream_id: FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-20
+last_sync: 2026-06-07
+sync_hash: e71f6803
 ---
-
-
 PixelMap使用[imagePacker.packToFile()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagepacker#packtofile11)的方法将ImageSource图片源编码后直接打包进文件。
 
 **参考代码**

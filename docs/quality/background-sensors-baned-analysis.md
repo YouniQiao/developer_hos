@@ -2,9 +2,10 @@
 title: "应用退后台禁止使用传感器问题分析"
 original_url: /docs/quality/background-sensors-baned-analysis
 format: md
+upstream_id: /docs/quality/background-sensors-baned-analysis
+last_sync: 2026-06-07
+sync_hash: 73538827
 ---
-
-
 # 应用退后台禁止使用传感器问题分析
 
 ## 应用退后台禁止使用传感器介绍

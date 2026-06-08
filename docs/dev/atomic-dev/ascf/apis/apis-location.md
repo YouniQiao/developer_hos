@@ -2,9 +2,10 @@
 title: "位置"
 original_url: /docs/dev/atomic-dev/ascf/apis/apis-location
 format: md
+upstream_id: dev/atomic-dev/ascf/apis/apis-location
+last_sync: 2026-06-07
+sync_hash: 653cf052
 ---
-
-
 ## has.openLocation
 
 has.openLocation(Object object)

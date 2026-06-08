@@ -3,9 +3,10 @@ title: "@hw-stylistic/space-before-function-paren"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-space-before-function-paren-stylistic
 format: md
+upstream_id: tools/coding-debug/ide-space-before-function-paren-stylistic
+last_sync: 2026-06-07
+sync_hash: 0d8bc4f4
 ---
-
-
 # @hw-stylistic/space-before-function-paren
 
 在函数名和“(”之间强制不加空格。该规则仅检查.ets文件类型。

@@ -2,9 +2,10 @@
 format: md
 title: "ohosTest测试文件引用了entry模块的方法，测试时报cppcrash"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-8
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-8
+last_sync: 2026-06-07
+sync_hash: ec2bd745
 ---
-
-
 **问题现象**
 
 如果ohosTest测试文件引用了entry的方法，并且entry中存在以普通形式（例如"entry/ets/workers/Worker.ets"）加载worker时，测试执行期间会报cppcrash。

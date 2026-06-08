@@ -2,9 +2,10 @@
 title: "如何实现http并行下载"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-49
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-49
+last_sync: 2026-06-07
+sync_hash: 431dc603
 ---
-
-
 使用上传下载模块进行下载。最多支持4个任务同时下载。
 
 参考代码如下：

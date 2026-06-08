@@ -2,9 +2,10 @@
 title: "帧率"
 original_url: /docs/experience-suggestions/performance/performance-frame-rate
 format: md
+upstream_id: experience-suggestions/performance/performance-frame-rate
+last_sync: 2026-06-07
+sync_hash: 33899303
 ---
-
-
 # 帧率
 
 ### 应用或元服务启动过程不丢帧

@@ -2,9 +2,10 @@
 title: "配置分析过程模板"
 original_url: /docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-rag/data-augmentation-rag-config/data-augmentation-analyze-config
 format: md
+upstream_id: dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-rag/data-augmentation-rag-config/data-augmentation-analyze-config
+last_sync: 2026-06-07
+sync_hash: 8dbbe877
 ---
-
-
 ## 功能介绍
 
 分析过程模板用于在RAG运行时，通过流式输出向用户实时呈现结构化的中间结果。该模板包含预设文本和动态占位符，可将大模型的输出或RAG执行中的关键信息组织为连贯文本。开发者可以通过在指定应用[资源目录](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access#资源目录)放置thought\_template.json配置文件，自定义分析过程模板。

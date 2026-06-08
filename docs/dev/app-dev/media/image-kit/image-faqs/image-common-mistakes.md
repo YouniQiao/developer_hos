@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "Image Kit常见崩溃报错问题"
 original_url: /docs/dev/app-dev/media/image-kit/image-faqs/image-common-mistakes
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-faqs/image-common-mistakes
+last_sync: 2026-06-07
+sync_hash: 28982950
+upstream_hash: 98d6be383ef6
 ---
-
 
 本文档展示了Image Kit接口的典型错误用法案例，帮助开发者避免常见的开发问题，提高应用的稳定性和性能。
 

@@ -3,8 +3,10 @@ title: "查询搜索类推广任务统计报表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-searchadreport-0000001181946363
 format: md
+upstream_id: monetize/promotion/marketapi-searchadreport-0000001181946363
+last_sync: 2026-06-07
+sync_hash: 03c1e19e
 ---
-
 # 查询搜索类推广任务统计报表
 
 ## 功能介绍

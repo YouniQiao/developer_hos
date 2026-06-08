@@ -2,9 +2,10 @@
 title: "确认意图名称"
 original_url: /docs/distribute/agc/agc-help-insight-config-beacon-0000002270752670/agc-help-confirm-intent-name-beacon-0000002443645837
 format: md
+upstream_id: distribute/agc/agc-help-insight-config-beacon-0000002270752670/agc-help-confirm-intent-name-beacon-0000002443645837
+last_sync: 2026-06-07
+sync_hash: 61364fe1
 ---
-
-
 HarmonyOS依托华为智能终端，提供了一套面向开发者智能接入系统的意图标准体系，即HarmonyOS意图框架。一个意图表示开发者实现的一个业务功能，意图框架能够帮助开发者将应用/元服务内的业务功能，智能分发到小艺建议、智慧搜索等系统入口。
 
 #### 查看意图Schema

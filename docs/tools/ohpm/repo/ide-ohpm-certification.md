@@ -2,8 +2,11 @@
 title: "认证管理"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-certification
+upstream_id: tools/ohpm/repo/ide-ohpm-certification
+last_sync: 2026-06-07
+sync_hash: c54c7479
+upstream_hash: d7ec29c0e7cb
 ---
-
 
 # 认证管理
 

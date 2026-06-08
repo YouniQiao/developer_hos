@@ -3,9 +3,10 @@ title: "端插件配置"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/end-plug-in-0000002471264313/endpoint-plugin-configuration-0000002437785762
 format: md
+upstream_id: distribute/xiaoyi/end-plug-in-0000002471264313/endpoint-plugin-configuration-0000002437785762
+last_sync: 2026-06-07
+sync_hash: 4d46d99d
 ---
-
-
 # 端插件配置
 
 ## 工具基本信息

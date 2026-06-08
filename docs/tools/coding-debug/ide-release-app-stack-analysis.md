@@ -3,9 +3,10 @@ title: "堆栈轨迹分析"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-release-app-stack-analysis
 format: md
+upstream_id: tools/coding-debug/ide-release-app-stack-analysis
+last_sync: 2026-06-07
+sync_hash: e16e5276
 ---
-
-
 # 堆栈轨迹分析
 
 对于发布的应用（Release应用），为减小应用程序大小，提高运行效率，会对代码进行优化，去除其中的debug信息。因此无法直接通过Release应用的堆栈信息定位到源码的具体文件和行位置，不易于开发者快速定位解决问题。

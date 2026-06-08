@@ -2,9 +2,10 @@
 title: "项目json配置"
 original_url: /docs/dev/atomic-dev/ascf/config/project-json-config
 format: md
+upstream_id: dev/atomic-dev/ascf/config/project-json-config
+last_sync: 2026-06-07
+sync_hash: bb239c0f
 ---
-
-
 通过项目配置文件可以配置编译行为，方便开发者使用编译工具。
 
 ![](./img/ac3f108a.png)

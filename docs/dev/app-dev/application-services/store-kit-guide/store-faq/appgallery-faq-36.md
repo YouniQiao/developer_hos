@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "按需加载成功后，跳转动态模块页面失败？"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/appgallery-faq-36
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-faq/appgallery-faq-36
+last_sync: 2026-06-07
+sync_hash: 7e1f225d
 ---
-
-
 **问题现象**
 
 按需加载成功后，开发者业务需要跳转到动态模块的页面，使用Navigation跨包路由时返回100005错误码。

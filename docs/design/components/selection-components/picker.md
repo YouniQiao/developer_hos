@@ -3,8 +3,10 @@ title: 选择器
 sidebar_label: 选择器
 original_url: /docs/design/components/selection-components/picker
 format: md
+upstream_id: design/components/selection-components/picker
+last_sync: 2026-06-07
+sync_hash: 8c9fc29c
 ---
-
 # 选择器
 
 当需要从单个维度或多个维度进行组合做选择时使用。月历视图日期选择器开发相关描述请参考 [CalendarPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-calendarpicker) 文档。滚动选择器开发相关描述请参考 [DatePicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-datepicker)、[TimePicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-timepicker)、[TextPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textpicker)文档。

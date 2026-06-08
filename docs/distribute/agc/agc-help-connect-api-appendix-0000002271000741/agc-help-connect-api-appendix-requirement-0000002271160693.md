@@ -2,9 +2,10 @@
 title: "应用文件要求"
 original_url: /docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-requirement-0000002271160693
 format: md
+upstream_id: distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-requirement-0000002271160693
+last_sync: 2026-06-07
+sync_hash: b111c8af
 ---
-
-
 在上传应用文件到AppGallery Connect时，对于文件的类型、大小等有相关限制，如下表所示。
 
 #### HarmonyOS应用

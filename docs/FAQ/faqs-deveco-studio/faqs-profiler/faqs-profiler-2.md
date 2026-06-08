@@ -2,9 +2,10 @@
 format: md
 title: "导入历史数据失败"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-2
+upstream_id: FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-2
+last_sync: 2026-06-07
+sync_hash: 93aa76c1
 ---
-
-
 **问题现象**
 
 使用其他版本的DevEco Studio导出的Profiler深度分析任务文件（.insight 文件）时，可能会遇到异常。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "沙盒环境验证"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-sandbox-test
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-sandbox-test
+last_sync: 2026-06-07
+sync_hash: fe1bd393
 ---
-
-
 华为支付提供沙盒环境，开发者无需真实完成商户入网即可开始调试华为支付接入，模拟真实环境下华为支付交易过程，提前介入方案设计和开发联调，提升接入效率。
 
 ![](./img/d4b3407f.png)
@@ -40,7 +41,7 @@ format: md
 构建debug签名应用步骤如下：
 
 1. 参见[手动签名方式调试HarmonyOS应用/元服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-cert-0000002270829389)，申请应用调试证书->注册调试设备->申请调试Profile。
-2. 参见[配置签名信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section1240072619462)，在DevEco Studio侧配置签名信息。
+2. 参见[配置签名信息](/docs/tools/coding-debug/ide-signing#section1240072619462)，在DevEco Studio侧配置签名信息。
 3. 在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中[配置应用签名证书指纹](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-cert-fingerprint-0000002278002933)。
 
 ## 沙盒环境接口请求及支持维度说明

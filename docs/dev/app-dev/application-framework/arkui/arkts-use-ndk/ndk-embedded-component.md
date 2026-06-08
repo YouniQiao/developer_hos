@@ -2,9 +2,10 @@
 title: "通过EmbeddedComponent拉起EmbeddedUIExtensionAbility"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-embedded-component
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-embedded-component
+last_sync: 2026-06-07
+sync_hash: ad3fd8d4
 ---
-
-
 ArkUI在Native侧提供的能力是ArkTS的子集，某些能力不会在Native侧提供，例如声明式UI语法、自定义struct组件及UI系统预置UI组件库。
 
 从API version 20开始，ArkUI开发框架提供了Native侧嵌入EmbeddedComponent组件的能力，此能力依赖于[EmbeddedComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-embedded-component)机制。EmbeddedComponent用于支持在当前页面嵌入同一应用内其他[EmbeddedUIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-embeddeduiextensionability)提供的UI。EmbeddedUIExtensionAbility在独立进程中运行，负责页面布局和渲染。此功能主要用于有进程隔离需求的模块化开发场景。

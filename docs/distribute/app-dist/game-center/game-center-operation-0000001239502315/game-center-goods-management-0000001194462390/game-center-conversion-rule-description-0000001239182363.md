@@ -3,9 +3,10 @@ title: "换算规则描述"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-conversion-rule-description-0000001239182363
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-conversion-rule-description-0000001239182363
+last_sync: 2026-06-07
+sync_hash: 0ec6f3dc
 ---
-
-
 # 换算规则描述
 
 编辑商品（或应用）价格时，当您在设置完“汇率换算基准价格”并点击刷新后，系统会根据当时汇率（及[税率](`https://developer.huawei.com/consumer/en/doc/start/merchant-service-0000001053025967#section154132916309`)）和如下币种美化/更正规则换算出所选国家/地区商品的用户支付价格（含税）。

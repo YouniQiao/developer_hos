@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "清除跨设备场景下的重复通知"
 original_url: /docs/dev/app-dev/application-services/notification-kit/notification-distributed/notification-distributed-messageid
 format: md
+upstream_id: dev/app-dev/application-services/notification-kit/notification-distributed/notification-distributed-messageid
+last_sync: 2026-06-07
+sync_hash: 4c4fe2d1
+upstream_hash: fc61ba560378
 ---
-
 
 从API version 20开始，为了避免不同渠道发布的通知重复打扰用户（例如，手机协同到当前设备的通知与Push推送服务发布的通知重复），可以使用通知去重功能，清除跨设备场景下的重复通知。
 

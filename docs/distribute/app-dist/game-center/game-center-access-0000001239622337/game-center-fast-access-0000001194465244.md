@@ -3,9 +3,10 @@ title: "RPK游戏接入"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-access-0000001239622337/game-center-fast-access-0000001194465244
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-access-0000001239622337/game-center-fast-access-0000001194465244
+last_sync: 2026-06-07
+sync_hash: c0248cf6
 ---
-
-
 # RPK游戏接入
 
 ## 华为快游戏特点

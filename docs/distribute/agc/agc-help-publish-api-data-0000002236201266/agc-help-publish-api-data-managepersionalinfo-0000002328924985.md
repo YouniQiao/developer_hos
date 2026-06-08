@@ -2,9 +2,10 @@
 title: "ManagePersonalInfo"
 original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-managepersionalinfo-0000002328924985
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-managepersionalinfo-0000002328924985
+last_sync: 2026-06-07
+sync_hash: af0da288
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | infoAccess | O | [InfoAccess](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-infoaccess-0000002328805233) | 访问记录。 |

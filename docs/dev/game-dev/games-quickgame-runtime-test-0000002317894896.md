@@ -3,9 +3,10 @@ title: "测试快游戏"
 original_url: /docs/dev/game-dev/games-quickgame-runtime-test-0000002317894896
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-quickgame-runtime-test-0000002317894896
+last_sync: 2026-06-07
+sync_hash: f27f4a09
 ---
-
-
 ## 运行快游戏
 
 ### 快游戏开发者工具
@@ -27,4 +28,4 @@ format: md
 | 登录华为账号后进行游戏内支付。 | 支付成功，弹出支付成功订单页面，且用户收到已支付商品。 |
 | 支付成功后，在订单页面结束游戏进程（不点击“知道了”），再次进入游戏。 | 商品可以正常到账，没有掉单。 |
 | 检查如下异常场景下进行消耗型商品的补单处理：   * 快游戏启动时。 * 支付接口返回错误码**-1**和**60051**时。 | 异常场景下及时补单。 |
-| 广告 | 参考[官网自测项](https://developer.huawei.com/consumer/cn/doc/distribution/monetize/ceshiyanzhengjishangxian-0000001085219714#section19766143473016)测试接入的广告能力。 | 所有自测项通过测试。 | 测试阶段使用**测试ID**。 |
+| 广告 | 参考[官网自测项](/docs/monetize/monetization/ceshiyanzhengjishangxian-0000001085219714#section19766143473016)测试接入的广告能力。 | 所有自测项通过测试。 | 测试阶段使用**测试ID**。 |

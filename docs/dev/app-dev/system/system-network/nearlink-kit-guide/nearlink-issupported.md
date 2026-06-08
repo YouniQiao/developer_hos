@@ -2,9 +2,10 @@
 title: "查询是否支持星闪"
 original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-issupported
 format: md
+upstream_id: dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-issupported
+last_sync: 2026-06-07
+sync_hash: 613034b8
 ---
-
-
 ## 场景介绍
 
 从6.1.0(23)版本开始，新增查询是否支持星闪的能力。由于并非所有设备都支持星闪，使用星闪相关功能前可以主动查询当前设备是否支持星闪。

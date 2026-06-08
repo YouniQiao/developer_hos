@@ -3,8 +3,10 @@ title: "术语介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-introduce-0000001174597581
 format: md
+upstream_id: monetize/promotion/marketing-api-introduce-0000001174597581
+last_sync: 2026-06-07
+sync_hash: 97bed370
 ---
-
 # 术语介绍
 
 | <strong>术语</strong> | <strong>详细描述</strong> |

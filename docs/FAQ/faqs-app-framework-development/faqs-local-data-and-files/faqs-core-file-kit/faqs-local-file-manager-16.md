@@ -2,9 +2,10 @@
 format: md
 title: "如何根据fd对应的mode来判断是否有对应的操作权限"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-16
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-16
+last_sync: 2026-06-07
+sync_hash: c682c55e
 ---
-
-
 **问题场景**
 
 使用fileIo.open以只读模式打开文件，然后使用fileIo.stat获取mode的值，发现该值与文档中的描述不一致。

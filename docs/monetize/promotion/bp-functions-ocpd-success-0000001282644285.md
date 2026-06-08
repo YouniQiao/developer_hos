@@ -3,8 +3,10 @@ title: "成功案例"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-ocpd-success-0000001282644285
 format: md
+upstream_id: monetize/promotion/bp-functions-ocpd-success-0000001282644285
+last_sync: 2026-06-07
+sync_hash: 69f00714
 ---
-
 # 成功案例
 
 ## 客户需求

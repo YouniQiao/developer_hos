@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口进行private相关开发"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-private
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-private
+last_sync: 2026-06-07
+sync_hash: 82b2ef22
 ---
-
-
 ## 简介
 
 JSVM-API 提供操作私有属性的接口。

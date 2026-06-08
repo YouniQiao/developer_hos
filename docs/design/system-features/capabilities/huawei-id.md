@@ -3,8 +3,10 @@ title: 华为账号开放登录
 sidebar_label: 华为账号开放登录
 original_url: /docs/design/system-features/capabilities/huawei-id
 format: md
+upstream_id: design/system-features/capabilities/huawei-id
+last_sync: 2026-06-07
+sync_hash: 6f546867
 ---
-
 # 华为账号开放登录
 
 华为账号提供登录体验设计规范，帮助用户使用已有的华为账号登录HarmonyOS生态内全部应用。遵循规范设计可享有以下好处：

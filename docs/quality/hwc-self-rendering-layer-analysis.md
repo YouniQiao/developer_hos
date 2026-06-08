@@ -2,9 +2,10 @@
 title: "自渲染图层未使用硬件合成问题分析"
 original_url: /docs/quality/hwc-self-rendering-layer-analysis
 format: md
+upstream_id: /docs/quality/hwc-self-rendering-layer-analysis
+last_sync: 2026-06-07
+sync_hash: 9520d1a0
 ---
-
-
 # 自渲染图层未使用硬件合成问题分析
 
 ## 自渲染图层使用硬件合成介绍

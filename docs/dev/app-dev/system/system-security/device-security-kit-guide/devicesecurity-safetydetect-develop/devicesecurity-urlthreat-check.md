@@ -2,9 +2,10 @@
 title: "URL检测"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-safetydetect-develop/devicesecurity-urlthreat-check
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-safetydetect-develop/devicesecurity-urlthreat-check
+last_sync: 2026-06-07
+sync_hash: ef1c7663
 ---
-
-
 ## 场景介绍
 
 应用通过调用Device Security Kit的checkUrlThreat接口检测URL是否为恶意的，并且根据检测结果来提示或拦截该URL。

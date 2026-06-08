@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“Cannot read properties of undefined (reading 'split')”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-184
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-184
+last_sync: 2026-06-07
+sync_hash: 3068afd5
 ---
-
-
 * 场景一：
 
   **问题现象**

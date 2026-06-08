@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“Cannot find module XXX or its corresponding type declarations”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-4
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-4
+last_sync: 2026-06-07
+sync_hash: beb55adb
 ---
-
-
 * **场景一：**
 
   **问题现象**

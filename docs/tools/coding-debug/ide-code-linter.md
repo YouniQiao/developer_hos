@@ -3,8 +3,11 @@ title: "Code Linter代码检查"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-code-linter
 format: md
+upstream_id: tools/coding-debug/ide-code-linter
+last_sync: 2026-06-07
+sync_hash: 06df02ef
+upstream_hash: d99405ee46bd
 ---
-
 
 # Code Linter代码检查
 

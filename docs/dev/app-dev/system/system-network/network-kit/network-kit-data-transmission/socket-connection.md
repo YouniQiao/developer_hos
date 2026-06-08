@@ -2,9 +2,10 @@
 title: "使用Socket访问网络"
 original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/socket-connection
 format: md
+upstream_id: dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/socket-connection
+last_sync: 2026-06-07
+sync_hash: 3a79dee8
 ---
-
-
 ## 简介
 
 Socket连接主要是通过Socket进行数据传输，支持TCP/UDP/Multicast/TLS协议。

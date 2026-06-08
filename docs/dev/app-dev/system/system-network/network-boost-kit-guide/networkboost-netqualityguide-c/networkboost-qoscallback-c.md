@@ -2,9 +2,10 @@
 title: "网络质量评估 (C/C++)"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide-c/networkboost-qoscallback-c
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide-c/networkboost-qoscallback-c
+last_sync: 2026-06-07
+sync_hash: d3ffea42
 ---
-
-
 ## 场景介绍
 
 应用在订阅网络质量Qos评估后，系统按照一定的周期或Qos变化后回调给应用。回调的Qos信息包括数据传输的链路类型、上下行空口实时带宽、上下行空口实时速率、RTT时延等。

@@ -2,9 +2,10 @@
 title: "报错error: Failed to install the HAP or HSP because the dependent module does not exist."
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-install-hsp-faild
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-install-hsp-faild
+last_sync: 2026-06-07
+sync_hash: 5dc2e3c3
 ---
-
-
 **问题现象**
 
 DevEco Studio或者在VSCode中点击运行元服务启动报错，错误提示如下图所示：

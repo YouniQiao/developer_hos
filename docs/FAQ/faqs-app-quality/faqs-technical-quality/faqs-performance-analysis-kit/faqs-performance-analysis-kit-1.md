@@ -2,9 +2,10 @@
 format: md
 title: "hilog日志如何落盘存储"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-1
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-1
+last_sync: 2026-06-07
+sync_hash: 5a3ebf63
 ---
-
-
 运行命令：hilog -w start -f ckTest -l 1M -n 5 -m zlib -j 11
 
 文件保存在目录：/data/log/hilog/

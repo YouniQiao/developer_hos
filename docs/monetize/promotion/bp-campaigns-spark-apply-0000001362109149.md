@@ -3,8 +3,10 @@ title: "星火计划2026报名流程"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-campaigns-spark-apply-0000001362109149
 format: md
+upstream_id: monetize/promotion/bp-campaigns-spark-apply-0000001362109149
+last_sync: 2026-06-07
+sync_hash: aeb2bb87
 ---
-
 # 星火计划2026报名流程
 
 ## 直客报名流程

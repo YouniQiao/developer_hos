@@ -2,9 +2,10 @@
 title: "管理接入的华为开放能力"
 original_url: /docs/distribute/agc/agc-help-open-capability-0000002465058093
 format: md
+upstream_id: distribute/agc/agc-help-open-capability-0000002465058093
+last_sync: 2026-06-07
+sync_hash: b0c452fa
 ---
-
-
 华为为HarmonyOS应用/元服务提供了众多开放能力，您可以选择接入，从而增加应用/元服务的能力。
 
 在使用这些开放能力前，您需要开启相关能力。当前有两种方式：

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "设置地图元素压盖顺序"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-display-order
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-drawing/map-display-order
+last_sync: 2026-06-07
+sync_hash: 3d862298
 ---
-
-
 ## 场景介绍
 
 本章节将向您介绍如何设置地图元素的层级压盖关系。

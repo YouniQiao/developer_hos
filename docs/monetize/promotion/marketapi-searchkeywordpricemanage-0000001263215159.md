@@ -3,8 +3,10 @@ title: "批量修改搜索关键词出价"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-searchkeywordpricemanage-0000001263215159
 format: md
+upstream_id: monetize/promotion/marketapi-searchkeywordpricemanage-0000001263215159
+last_sync: 2026-06-07
+sync_hash: 657a6987
 ---
-
 # 批量修改搜索关键词出价
 
 ## 功能介绍

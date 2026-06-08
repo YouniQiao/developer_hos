@@ -2,9 +2,10 @@
 title: "uinput"
 original_url: /docs/dev/app-dev/system/uinput
 format: md
+upstream_id: dev/app-dev/system/uinput
+last_sync: 2026-06-07
+sync_hash: 1b71be2a
 ---
-
-
 uinput 可模拟用户操作，例如鼠标、键盘、触控板等设备，适用于稳定性等压力测试。
 
 ## 环境要求

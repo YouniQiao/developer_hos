@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "默认界面扫码/自定义界面扫码体验设计"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-16
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-16
+last_sync: 2026-06-07
+sync_hash: 95e2a28f
 ---
-
-
 **问题现象**
 
 点击按钮后，无法确认是否正在拉起扫码功能。

@@ -2,9 +2,10 @@
 title: "长时任务并发场景简介"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/long-time-task/long-time-task-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/long-time-task/long-time-task-overview
+last_sync: 2026-06-07
+sync_hash: 081ec199
 ---
-
-
 在应用业务实现过程中，需要较长时间不定时运行的任务称为长时任务。如果在UI主线程中执行这些长时任务，会阻塞UI业务，导致卡顿和丢帧等问题，影响用户体验。因此，通常需要将这些独立的长时任务放到单独的子线程中执行。
 
 典型的长时任务场景如下所示：

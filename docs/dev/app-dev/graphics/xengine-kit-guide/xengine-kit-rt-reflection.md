@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "光线追踪反射"
 original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-rt-reflection
 format: md
+upstream_id: dev/app-dev/graphics/xengine-kit-guide/xengine-kit-rt-reflection
+last_sync: 2026-06-07
+sync_hash: 6efd05bb
+upstream_hash: bf93c8c95fa2
 ---
-
 
 从6.0.0(20) 版本开始，新增光线追踪反射特性。
 

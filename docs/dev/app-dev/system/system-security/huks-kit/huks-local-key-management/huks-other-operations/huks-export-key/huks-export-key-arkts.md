@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "密钥导出(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-export-key/huks-export-key-arkts
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-export-key/huks-export-key-arkts
+last_sync: 2026-06-07
+sync_hash: a483c7c1
 ---
-
-
 业务需要获取持久化存储的非对称密钥的公钥时使用，当前支持ECC/RSA/ED25519/X25519/SM2的公钥导出。
 
 ![](./img/aa88c1bb.png)

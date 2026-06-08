@@ -3,10 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-preparations
 format: md
+upstream_id: dev/app-dev/graphics/xengine-kit-guide/xengine-kit-preparations
+last_sync: 2026-06-07
+sync_hash: 2d9a5801
 ---
-
-
-安装DevEco Studio，详情请参考[下载与安装DevEco Studio](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-software-install)。
+安装DevEco Studio，详情请参考[下载与安装DevEco Studio](/docs/tools/coding-debug/ide-software-install)。
 
 ## 软件要求
 

@@ -2,9 +2,10 @@
 title: "设备兼容"
 original_url: /docs/experience-suggestions/compatibility/basic-compatibility/device-compatible
 format: md
+upstream_id: experience-suggestions/compatibility/basic-compatibility/device-compatible
+last_sync: 2026-06-07
+sync_hash: 4544e856
 ---
-
-
 # 设备兼容
 
 |  |  |

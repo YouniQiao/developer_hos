@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "多网配额查询(C/C++)"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide-c/networkboost-netmultipath-getmultipathquota-c
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide-c/networkboost-netmultipath-getmultipathquota-c
+last_sync: 2026-06-07
+sync_hash: 2a0c61da
 ---
-
-
 从6.0.2(22)开始，支持多网配额查询。
 
 ## 场景介绍

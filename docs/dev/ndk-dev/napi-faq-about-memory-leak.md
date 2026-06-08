@@ -2,9 +2,10 @@
 title: "内存泄漏相关问题汇总"
 original_url: /docs/dev/ndk-dev/napi-faq-about-memory-leak
 format: md
+upstream_id: dev/ndk-dev/napi-faq-about-memory-leak
+last_sync: 2026-06-07
+sync_hash: e55c6530
 ---
-
-
 ## 当前是否有机制来检查是否有泄漏的napi\_ref
 
 * 具体问题：napi\_create\_reference可以创建对js对象的引用，保持js对象不释放，正常来说使用完需要使用napi\_delete\_reference进行释放，但怕漏delete导致js对象内存泄漏，当前是否有机制来检查/测试是否有泄漏的napi\_ref？

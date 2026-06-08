@@ -2,9 +2,10 @@
 format: md
 title: "启动模拟器，提示镜像文件缺失"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-33
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-33
+last_sync: 2026-06-07
+sync_hash: 5d45c80c
 ---
-
-
 **问题现象**
 
 启动模拟器失败，提示“system-image文件缺失”或“The system-image file is missing.”，原因是模拟器镜像文件缺失。

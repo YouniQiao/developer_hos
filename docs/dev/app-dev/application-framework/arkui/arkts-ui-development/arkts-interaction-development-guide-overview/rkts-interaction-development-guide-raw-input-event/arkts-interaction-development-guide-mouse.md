@@ -2,9 +2,10 @@
 title: "支持鼠标输入事件"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-mouse
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-raw-input-event/arkts-interaction-development-guide-mouse
+last_sync: 2026-06-07
+sync_hash: 9af7f890
 ---
-
-
 ![](./img/fc255bb5.png)
 
 鼠标设备是2in1类型设备必不可少的输入设备，其特点是可以通过按键达成点击或滑动操作，也可以通过滚轮触发滑动，另外还有一些按键，这些分别通过[MouseEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-mouse-key#mouseevent对象说明)及[AxisEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-axis#axisevent)上报给应用。

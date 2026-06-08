@@ -2,9 +2,10 @@
 title: "AGC控制台准备"
 original_url: /docs/dev/game-dev/games-binary-optimization-agc-works-0000002342950440
 format: md
+upstream_id: dev/game-dev/games-binary-optimization-agc-works-0000002342950440
+last_sync: 2026-06-07
+sync_hash: 4edf139d
 ---
-
-
 ## 注册开发者账号
 
 若您还没有实名认证的华为开发者账号，请前往华为开发者联盟网站注册开发者账号并完成实名认证，详细操作请参见[账号注册认证](https://developer.huawei.com/consumer/cn/doc/start/registration-and-verification-0000001053628148)。

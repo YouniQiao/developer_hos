@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "原生广告"
 original_url: /docs/dev/app-dev/application-services/ads-kit-guide/ads-publisher-service-dev/ads-publisher-service-native
 format: md
+upstream_id: dev/app-dev/application-services/ads-kit-guide/ads-publisher-service-dev/ads-publisher-service-native
+last_sync: 2026-06-07
+sync_hash: e6821c18
 ---
-
-
 ## 场景介绍
 
 原生广告是与应用内容融于一体的广告，通过“和谐”的内容呈现广告信息，在不破坏用户体验的前提下，为用户提供有价值的信息，展示形式包含图片和视频，支持您自由定制界面。
@@ -312,7 +313,7 @@ format: md
 
 ## 测试原生广告
 
-原生广告测试广告位ID，仅可用于调测原生广告功能，不可用于广告变现，在应用正式发布前需替换为正式的原生广告位ID。您应在应用发布前先进入[流量变现官网](https://developer.huawei.com/consumer/cn/monetize)，点击“开始变现”，登录[鲸鸿动能媒体服务平台](https://developer.huawei.com/consumer/cn/service/ads/publisher/html/index.html?lang=zh)，申请正式的广告位ID并替换测试广告位ID，具体操作详情请参见[展示位创建](https://developer.huawei.com/consumer/cn/doc/distribution/monetize/zhanshiweichuangjian-0000001132700049)。
+原生广告测试广告位ID，仅可用于调测原生广告功能，不可用于广告变现，在应用正式发布前需替换为正式的原生广告位ID。您应在应用发布前先进入[流量变现官网](https://developer.huawei.com/consumer/cn/monetize)，点击“开始变现”，登录[鲸鸿动能媒体服务平台](https://developer.huawei.com/consumer/cn/service/ads/publisher/html/index.html?lang=zh)，申请正式的广告位ID并替换测试广告位ID，具体操作详情请参见[展示位创建](/docs/monetize/monetization/zhanshiweichuangjian-0000001132700049)。
 
 原生广告测试广告位ID列表如下：
 

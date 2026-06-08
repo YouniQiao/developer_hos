@@ -1,9 +1,10 @@
 ---
 title: "高效利用HWC的低功耗设计"
 original_url: /docs/quality/utilize-hwc-efficiently
+upstream_id: /docs/quality/utilize-hwc-efficiently
+last_sync: 2026-06-07
+sync_hash: 112fd97c
 ---
-
-
 # 高效利用HWC的低功耗设计
 
 ## 概述

@@ -1,8 +1,10 @@
 ---
 title: "GN构建工程配置HarmonyOS编译工具链"
 original_url: /docs/dev/ndk-dev/toolchain-gn-build-project
+upstream_id: dev/ndk-dev/toolchain-gn-build-project
+last_sync: 2026-06-07
+sync_hash: 564d49a9
 ---
-
 ## 概述
 
 本文将介绍如何在GN工程中配置HarmonyOS工具链，然后通过HarmonyOS工具链编译出可以在HarmonyOS环境下使用的三方库。

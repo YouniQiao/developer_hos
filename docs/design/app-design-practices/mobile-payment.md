@@ -3,13 +3,15 @@ title: 移动支付类
 sidebar_label: 移动支付类
 original_url: /docs/design/app-design-practices/mobile-payment
 format: md
+upstream_id: design/app-design-practices/mobile-payment
+last_sync: 2026-06-07
+sync_hash: d0c00549
 ---
-
 # 移动支付类
 
 移动支付类应用主要包括收付款、余额、账单、扫一扫、转账等典型业务场景。此类应用，在多端设备的设计适配过程中，需充分利用大屏设备优势，提升浏览和交互效率。
 
-本场景的开发指南，请参阅[一多开发实例 (移动支付)](https://developer.huawei.com/consumer/cn/doc/best-practices/multi-mobile-payment)。
+本场景的开发指南，请参阅[一多开发实例 (移动支付)](/docs/dev/app-dev/multi-device/multi-mobile-payment)。
 
 ### 首页
 

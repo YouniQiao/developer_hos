@@ -3,9 +3,10 @@ title: "增量构建"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-incremental-build
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-incremental-build
+last_sync: 2026-06-07
+sync_hash: 94655075
 ---
-
-
 # 增量构建
 
 增量构建是Hvigor执行任务的一种优化，如果在两次执行任务过程中，执行任务的输入和输出没有更改，Hvigor会跳过该任务的执行。

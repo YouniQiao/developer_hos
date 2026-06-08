@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "音频焦点介绍"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency
+last_sync: 2026-06-07
+sync_hash: e8e799b5
 ---
-
-
 在应用播放或录制声音时，常出现与其他音频流的并发或中断情况，这对用户体验构成显著影响。例如，当应用启动视频播放时，若后台正在播放音乐，用户会期望音乐能自动暂停，以确保视频音频优先播放，这正是音频焦点功能的体现。对于涉及音频服务的应用而言，妥善地管理音频焦点非常重要，它可以显著提升用户的音频体验。
 
 本文档将介绍系统的音频焦点策略，以及应对焦点变化的方法。同时，系统提供了[音频会话管理](/docs/dev/app-dev/media/audio-kit/audio-session/audio-session-management)机制，允许应用自定义其音频流的焦点策略。

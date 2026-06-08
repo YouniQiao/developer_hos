@@ -3,8 +3,10 @@ title: "计算受众人群"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-functions-advanced-target-calculate-audience-0000001379958193
 format: md
+upstream_id: monetize/promotion/bpos-functions-advanced-target-calculate-audience-0000001379958193
+last_sync: 2026-06-07
+sync_hash: 57df898d
 ---
-
 # 计算受众人群
 
 ## 概述

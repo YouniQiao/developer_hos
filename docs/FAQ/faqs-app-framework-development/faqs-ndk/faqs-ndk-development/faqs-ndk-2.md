@@ -2,9 +2,10 @@
 format: md
 title: "在Native侧如何处理ArkTS侧传入的字符串被截断的异常场景"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-2
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-2
+last_sync: 2026-06-07
+sync_hash: 4d3e2cf2
 ---
-
-
 **问题现象**
 
 获取ArkTS侧传入的字符串到char数组时，字符串未完整获取。

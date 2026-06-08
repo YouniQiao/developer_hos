@@ -2,9 +2,10 @@
 title: "加解密介绍"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encryption-decryption-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encryption-decryption-overview
+last_sync: 2026-06-07
+sync_hash: aec3ab27
 ---
-
-
 在数据存储或传输场景中，可以使用加解密操作用于保证数据的机密性，防止敏感数据泄露。
 
 使用加解密操作时，典型的场景有：

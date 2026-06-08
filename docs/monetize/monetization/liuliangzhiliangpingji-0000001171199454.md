@@ -3,10 +3,10 @@ title: "流量质量评级"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/liuliangzhiliangpingji-0000001171199454
 format: md
+upstream_id: monetize/monetization/liuliangzhiliangpingji-0000001171199454
+last_sync: 2026-06-07
+sync_hash: 41edb313
 ---
-
-
-
 #### 概述
 
 **流量质量评级**是衡量您的应用在流量变现服务平台中流量质量的一种方式。您的流量质量的评级越高，代表流量越优质，您的变现收益也会更高。通过关注流量质量评级，您可以发现流量质量问题并及时主动整改。系统将每天更新流量质量评级，您看到的评级是基于前7个自然日的数据。

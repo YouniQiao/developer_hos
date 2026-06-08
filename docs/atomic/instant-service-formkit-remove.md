@@ -2,9 +2,10 @@
 title: "下架服务卡片（FormKit）"
 original_url: /docs/dev/atomic-dev/instant-service-formkit/instant-service-formkit-remove
 format: md
+upstream_id: dev/atomic-dev/instant-service-formkit/instant-service-formkit-remove
+last_sync: 2026-06-07
+sync_hash: 83a55cbe
 ---
-
-
 1. 对于已通过审核、服务状态为“已上架”的FormKit卡，开发者可点击“下架”进行下架FormKit卡的操作。
 
    ![](./img/8c3c86fa.png "点击放大")

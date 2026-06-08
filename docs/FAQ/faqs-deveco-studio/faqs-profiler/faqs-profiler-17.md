@@ -2,8 +2,11 @@
 format: md
 title: "指标检测值无法点击拉起profiler"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-17
+upstream_id: FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-17
+last_sync: 2026-06-07
+sync_hash: 659b1fc3
+upstream_hash: bfe5c1351b0a
 ---
-
 
 **问题现象**
 

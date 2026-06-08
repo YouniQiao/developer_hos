@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用音频模板"
 original_url: /docs/dev/app-dev/media/avsession-kit/music-template/using-avsession-avmusictemplate
 format: md
+upstream_id: dev/app-dev/media/avsession-kit/music-template/using-avsession-avmusictemplate
+last_sync: 2026-06-07
+sync_hash: 50b0ceef
 ---
-
-
 从API version 23开始，支持媒体应用通过音频模板接入播控中心（系统应用），实现音视频在播控中心进行统一的界面显示和播控管理，减少应用侧开发工作量。该文档介绍音频模板接口能力及开发基本流程，包括通过音模板接入播控中心、上报媒体相关信息（标题、作者、播放状态等）至播控中心、响应播控中心下发的操作（播放、暂停、搜索、收藏）指令等。
 
 音频模板同时支持音频和视频内容，且两者的接入方式相同。本文档以音频场景为例进行说明。

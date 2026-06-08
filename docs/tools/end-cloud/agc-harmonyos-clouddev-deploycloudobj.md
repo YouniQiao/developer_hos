@@ -1,12 +1,12 @@
 ---
-
 title: "部署云对象"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-deploycloudobj
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-deploycloudobj
+last_sync: 2026-06-07
+sync_hash: 0bfa202a
 ---
-
-
 # 部署云对象
 
 完成云对象代码开发后，您可将云对象部署到AGC云端，支持单个部署和批量部署。

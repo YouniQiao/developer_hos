@@ -2,9 +2,10 @@
 title: "开发准备"
 original_url: /docs/dev/atomic-dev/ads-kit-atomicservice/development-preparation
 format: md
+upstream_id: dev/atomic-dev/ads-kit-atomicservice/development-preparation
+last_sync: 2026-06-07
+sync_hash: 3eb41225
 ---
-
-
 ## 申请权限
 
 元服务在使用Ads Kit能力前，需要检查是否已经获取对应权限。如未获得授权，需要声明对应权限。

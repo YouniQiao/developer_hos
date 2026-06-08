@@ -3,8 +3,10 @@ title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-load-recall-faq-0000001417392493
 format: md
+upstream_id: monetize/promotion/bp-functions-load-recall-faq-0000001417392493
+last_sync: 2026-06-07
+sync_hash: 897b2801
 ---
-
 # FAQ
 
 ## 卸载召回专区是否有通投任务？

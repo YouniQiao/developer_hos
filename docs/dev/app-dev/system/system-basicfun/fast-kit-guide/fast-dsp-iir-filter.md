@@ -2,9 +2,10 @@
 title: "使用DSP进行二阶IIR滤波"
 original_url: /docs/dev/app-dev/system/system-basicfun/fast-kit-guide/fast-dsp-iir-filter
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/fast-kit-guide/fast-dsp-iir-filter
+last_sync: 2026-06-07
+sync_hash: eaeac747
 ---
-
-
 二阶IIR滤波器用于音频和信号处理中的滤波操作，例如实现低通、高通或带通滤波。
 
 二阶IIR滤波器采用直接II型转置结构，支持多通道（如立体声）和多节级联（如高阶滤波器）配置。滤波器支持动态激活/旁路控制，允许运行时灵活调整滤波特性。

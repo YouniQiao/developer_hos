@@ -2,9 +2,10 @@
 format: md
 title: "如何在键盘弹出时仅调整指定UI组件的位置，而不影响整体布局"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-43
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-43
+last_sync: 2026-06-07
+sync_hash: 04d7efe0
 ---
-
-
 键盘弹出时的避让可以利用安全区域属性expandSafeArea进行UI逻辑避让控制。
 
 **参考链接**

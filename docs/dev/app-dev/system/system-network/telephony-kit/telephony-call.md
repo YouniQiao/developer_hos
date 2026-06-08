@@ -2,9 +2,10 @@
 title: "拨打电话"
 original_url: /docs/dev/app-dev/system/system-network/telephony-kit/telephony-call
 format: md
+upstream_id: dev/app-dev/system/system-network/telephony-kit/telephony-call
+last_sync: 2026-06-07
+sync_hash: 03eff87d
 ---
-
-
 ## 场景介绍
 
 开发者可以通过以下方式实现拨打电话的功能：

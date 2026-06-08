@@ -2,9 +2,10 @@
 title: "require的用法，出现功能失效的情况。"
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-require-invalid
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-require-invalid
+last_sync: 2026-06-07
+sync_hash: a66d6c5c
 ---
-
-
 **问题现象**
 
 下面是一个简单的示例代码

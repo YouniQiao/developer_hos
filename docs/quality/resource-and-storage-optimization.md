@@ -2,9 +2,10 @@
 title: "资源与存储优化"
 original_url: /docs/quality/resource-and-storage-optimization
 format: md
+upstream_id: /docs/quality/resource-and-storage-optimization
+last_sync: 2026-06-07
+sync_hash: a6c50fa2
 ---
-
-
 # 资源与存储优化
 
 * **[应用包体积优化](/docs/quality/decrease_pakage_size)**

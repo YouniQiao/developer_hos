@@ -2,9 +2,10 @@
 title: "应用文件访问(C/C++)"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/native-fileio-guidelines
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/native-fileio-guidelines
+last_sync: 2026-06-07
+sync_hash: 43c87a32
 ---
-
-
 ## 场景介绍
 
 FileIO模块提供了部分文件基础操作能力，其他能力请参考[libc标准库](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/musl)/[c++标准库](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cpp)。

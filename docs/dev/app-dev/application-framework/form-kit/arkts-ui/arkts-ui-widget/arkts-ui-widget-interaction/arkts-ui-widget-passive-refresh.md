@@ -2,9 +2,10 @@
 title: "ArkTS卡片被动刷新"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-interaction/arkts-ui-widget-passive-refresh
 format: md
+upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-interaction/arkts-ui-widget-passive-refresh
+last_sync: 2026-06-07
+sync_hash: 4c93e901
 ---
-
-
 本文主要提供被动刷新的开发指导，刷新流程请参考[被动刷新概述](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-interaction/arkts-ui-widget-interaction-overview#被动刷新)。
 
 ## 卡片定时刷新

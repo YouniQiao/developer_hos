@@ -2,9 +2,10 @@
 title: "地址越界检测工具原理"
 original_url: /docs/quality/stability-address-sanitizer-principle
 format: md
+upstream_id: /docs/quality/stability-address-sanitizer-principle
+last_sync: 2026-06-07
+sync_hash: 8bd760ba
 ---
-
-
 # 地址越界检测工具原理
 
 ## ASan检测原理

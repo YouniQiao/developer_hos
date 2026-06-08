@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "平台类商户合单支付场景"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-partner-combined
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-partner-combined
+last_sync: 2026-06-07
+sync_hash: 5e3c104c
 ---
-
-
 ## 场景介绍
 
 从4.1.0(11)版本开始，新增支持平台类商户合单支付场景。

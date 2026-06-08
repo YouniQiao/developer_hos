@@ -2,9 +2,10 @@
 title: "选择申请权限的方式"
 original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/determine-application-mode
 format: md
+upstream_id: dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/determine-application-mode
+last_sync: 2026-06-07
+sync_hash: b8cc1d6a
 ---
-
-
 应用访问数据或执行操作时，需评估是否需要相关权限。如需权限，应在应用安装包中申请。
 
 每个权限的等级和[授权方式](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#授权方式)不同，因此申请权限的方式也不同。申请权限前，开发者需要：

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "按需加载场景中加载动态模块失败"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-2
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-2
+last_sync: 2026-06-07
+sync_hash: 01a0d8f9
 ---
-
-
 **问题现象**
 
 调用加载接口时加载模块失败。

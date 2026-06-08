@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "接入流程"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-preparations
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-preparations
+last_sync: 2026-06-07
+sync_hash: 87e3f6f6
 ---
-
-
 ![](./img/2149b695.png)
 
 | 步骤 | 说明 |

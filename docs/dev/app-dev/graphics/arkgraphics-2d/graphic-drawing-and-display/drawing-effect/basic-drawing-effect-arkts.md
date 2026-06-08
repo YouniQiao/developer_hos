@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "基础绘制效果（ArkTS）"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/drawing-effect/basic-drawing-effect-arkts
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/drawing-effect/basic-drawing-effect-arkts
+last_sync: 2026-06-07
+sync_hash: a8f2270c
 ---
-
-
 ## 场景介绍
 
 在进行绘制时，可以进行一些基础效果的设置，比如设置填充颜色、设置抗锯齿、设置图形描边、设置图形线条连接样式等。

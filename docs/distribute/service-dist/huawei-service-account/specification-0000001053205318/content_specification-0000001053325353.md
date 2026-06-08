@@ -3,9 +3,10 @@ title: "服务号入驻规范"
 displayed_sidebar: serviceDistSidebar
 original_url: /docs/distribute/service-dist/huawei-service-account/specification-0000001053205318/content_specification-0000001053325353
 format: md
+upstream_id: distribute/service-dist/huawei-service-account/specification-0000001053205318/content_specification-0000001053325353
+last_sync: 2026-06-07
+sync_hash: 47f6d130
 ---
-
-
 # 服务号入驻规范
 
 

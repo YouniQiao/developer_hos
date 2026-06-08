@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "光线追踪阴影和环境光遮蔽"
 original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-rt-shadow-and-ao
 format: md
+upstream_id: dev/app-dev/graphics/xengine-kit-guide/xengine-kit-rt-shadow-and-ao
+last_sync: 2026-06-07
+sync_hash: 385ab9af
 ---
-
-
 从6.0.0(20) 版本开始，新增光线追踪阴影和环境光遮蔽特性。
 
 XEngine VisibleMask特性提供开箱即用的光线追踪阴影和环境光遮蔽（Ray-Traced Shadow and AO）渲染能力。相比于这些效果的传统光线追踪实现方式，依托于华为马良GPU的软硬结合优化，XEngine支持FERT(Flexible Entry Raytracing)求交加速技术，可以减少光线与场景几何的求交计算次数，从而降低实现高画质光追效果时的GPU负载。此外，XEngine通过高度优化的时空域降噪技术，解决光线追踪渲染时因为光线数量不足而引入的噪声问题，可以在发射较少光线数的情况下达成高画质表现，实现同等画质GPU负载更轻，同等负载下画质更好的效果。

@@ -2,9 +2,10 @@
 title: "获取ASCF插件"
 original_url: /docs/dev/atomic-dev/ascf/ascf-plugin
 format: md
+upstream_id: dev/atomic-dev/ascf/ascf-plugin
+last_sync: 2026-06-07
+sync_hash: aa784fa1
 ---
-
-
 ## 在DevEco Studio中使用
 
 ### 获取方式

@@ -2,9 +2,10 @@
 title: "如何读取相册中的图片"
 original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-10
 format: md
+upstream_id: FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-10
+last_sync: 2026-06-07
+sync_hash: 82114ae9
 ---
-
-
 使用photoAccessHelper.PhotoSelectOptions接口读取相册中的图片
 
 ```

@@ -2,9 +2,10 @@
 title: "错误码"
 original_url: /docs/distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-errorcode-0000002356508845
 format: md
+upstream_id: distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-errorcode-0000002356508845
+last_sync: 2026-06-07
+sync_hash: 2970f265
 ---
-
-
 | 错误码（errorCode） | 错误描述（errorMsg） |
 | --- | --- |
 | 1 | 字段校验失败。  可能原因如下:   * 字段未填。 * 字段超长。 * 字段枚举值无效。 * 字段包含特殊字符。 |

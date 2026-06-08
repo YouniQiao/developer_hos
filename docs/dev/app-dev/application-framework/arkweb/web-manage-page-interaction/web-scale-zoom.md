@@ -2,9 +2,10 @@
 title: "使用Web组件管理网页缩放"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-scale-zoom
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-scale-zoom
+last_sync: 2026-06-07
+sync_hash: 396eb798
 ---
-
-
 Web组件支持手势缩放、鼠标滚轮、键盘缩放，以方便用户调整到舒适的显示大小。并对应用提供监听、控制页面缩放比例的功能，以便应用实现个性化的视觉效果。
 
 ## 启用/禁用网页缩放

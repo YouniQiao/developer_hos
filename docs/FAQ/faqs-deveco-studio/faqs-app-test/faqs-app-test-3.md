@@ -2,8 +2,11 @@
 format: md
 title: "运行测试用例时，结果树始终处于加载状态"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-3
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-3
+last_sync: 2026-06-07
+sync_hash: 63c02a48
+upstream_hash: f3230c27fc83
 ---
-
 
 **问题现象**
 

@@ -3,9 +3,10 @@ title: "模型（Model）配置"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-agent-model
 format: md
+upstream_id: tools/ai-assist/ide-agent-model
+last_sync: 2026-06-07
+sync_hash: b1080112
 ---
-
-
 # 模型（Model）配置
 
 CodeGenie支持通过Anthropic-API、Gemini-API和OpenAI-API协议接入第三方模型，为自定义Agent提供多样化的模型选择。

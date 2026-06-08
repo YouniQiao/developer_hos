@@ -2,9 +2,10 @@
 title: "应用真实性证明简介"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/device-attestation-intro
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/device-attestation-intro
+last_sync: 2026-06-07
+sync_hash: c5d185ba
 ---
-
-
 您可以利用应用真实性证明能力在服务器验证来自应用的请求，具体包括验证请求是否源自真实应用、真实设备，以及请求内容是否未经篡改。
 
 ![](./img/d9de0f7e.png)

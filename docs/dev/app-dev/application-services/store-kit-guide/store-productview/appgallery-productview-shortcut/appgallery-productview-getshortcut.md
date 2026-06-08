@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "查询应用内快捷方式"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-productview/appgallery-productview-shortcut/appgallery-productview-getshortcut
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-productview/appgallery-productview-shortcut/appgallery-productview-getshortcut
+last_sync: 2026-06-07
+sync_hash: 2e446e3c
 ---
-
-
 ![](./img/d2a65c1c.png)
 
 6.1.1(24)版本开始，新增查询桌面快捷方式接口，支持用户查询桌面快捷方式。

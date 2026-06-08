@@ -2,8 +2,11 @@
 title: "显示规格"
 original_url: /docs/experience-suggestions/compatibility/system-features/display-specification
 format: md
+upstream_id: experience-suggestions/compatibility/system-features/display-specification
+last_sync: 2026-06-07
+sync_hash: 95b84470
+upstream_hash: a33169e7588f
 ---
-
 
 # 显示规格
 

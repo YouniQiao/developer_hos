@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "监听HiCar的连接状态"
 original_url: /docs/dev/app-dev/system/system-hardware/car-kit-guide/car-get-connect-status/car-listener-connect-status
 format: md
+upstream_id: dev/app-dev/system/system-hardware/car-kit-guide/car-get-connect-status/car-listener-connect-status
+last_sync: 2026-06-07
+sync_hash: ed1e1b8d
 ---
-
-
 ## 场景介绍
 
 生态应用可以通过监听智慧出行连接状态接口获取连接信息，适配HiCar业务（如：应用流转）。

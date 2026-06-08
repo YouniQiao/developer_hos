@@ -2,9 +2,10 @@
 title: "自动续期订阅商品"
 original_url: /docs/distribute/agc/agc-help-create-product-0000002425264341/agc-help-create-auto-subscription-0000002425144493
 format: md
+upstream_id: distribute/agc/agc-help-create-product-0000002425264341/agc-help-create-auto-subscription-0000002425144493
+last_sync: 2026-06-07
+sync_hash: 1a75668d
 ---
-
-
 每个自动续期订阅商品必须属于某个订阅组。一个订阅组中可以包含多个订阅型商品。用户订购自动续期订阅商品时，对于一个订阅组，只能订阅其中一个商品。如果希望用户购买多个订阅型商品，可以把这些商品放在不同的订阅组中，例如电影会员组（月会员、年会员）、音乐会员组（月会员、年会员）。
 
 #### 新增订阅组

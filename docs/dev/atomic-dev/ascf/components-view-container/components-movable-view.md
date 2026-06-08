@@ -2,9 +2,10 @@
 title: "movable-view"
 original_url: /docs/dev/atomic-dev/ascf/components-view-container/components-movable-view
 format: md
+upstream_id: dev/atomic-dev/ascf/components-view-container/components-movable-view
+last_sync: 2026-06-07
+sync_hash: d00fa669
 ---
-
-
 可移动的视图容器，在页面中可以拖拽滑动。
 
 **起始版本：** 1.0.0

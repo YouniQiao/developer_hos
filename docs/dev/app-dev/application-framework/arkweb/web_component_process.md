@@ -2,9 +2,10 @@
 title: "ArkWeb进程"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web_component_process
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web_component_process
+last_sync: 2026-06-07
+sync_hash: 6b414651
 ---
-
-
 ArkWeb是多进程模型，分为应用进程、Web渲染进程、Web GPU进程、Web孵化进程和Foundation进程。
 
 ![](./img/7e95bb3e.png)

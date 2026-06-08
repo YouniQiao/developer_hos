@@ -2,9 +2,10 @@
 title: "整机测试"
 original_url: /docs/dev/game-dev/games-hismartperf-systemtest-0000002286788036
 format: md
+upstream_id: dev/game-dev/games-hismartperf-systemtest-0000002286788036
+last_sync: 2026-06-07
+sync_hash: a8c74a2a
 ---
-
-
 [RS树可视化展示](#section182307571364)、[多应用内存测试](#section11284462518)、[设备日志查看](#section51161733666)和[设备状态监测](#section12659161475117)功能，可帮助您进一步进行整机测试，定位图形渲染、内存占用等问题。
 
 ## 可视化展示RS树

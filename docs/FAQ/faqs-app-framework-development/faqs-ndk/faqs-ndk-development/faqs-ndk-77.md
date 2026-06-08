@@ -2,9 +2,10 @@
 title: "如何在ArkTS侧管理Native侧的C++对象"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-77
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-77
+last_sync: 2026-06-07
+sync_hash: 0b8a3bd1
 ---
-
-
 **问题现象**
 
 在ArkTS层管理C++层分配的对象，并通过接口访问C++层的业务。

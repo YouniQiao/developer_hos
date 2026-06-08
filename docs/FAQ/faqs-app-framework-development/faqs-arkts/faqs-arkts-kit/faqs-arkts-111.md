@@ -2,9 +2,10 @@
 title: "如何遍历JSON对象"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-111
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-111
+last_sync: 2026-06-07
+sync_hash: d34907ba
 ---
-
-
 具体请参考如下示例代码：
 
 ```

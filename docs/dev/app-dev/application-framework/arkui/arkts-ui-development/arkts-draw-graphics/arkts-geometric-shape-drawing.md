@@ -2,9 +2,10 @@
 title: "绘制几何图形 (Shape)"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-draw-graphics/arkts-geometric-shape-drawing
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-draw-graphics/arkts-geometric-shape-drawing
+last_sync: 2026-06-07
+sync_hash: 4702fa1b
 ---
-
-
 绘制组件用于在页面绘制图形，Shape组件是绘制组件的父组件，包含所有绘制组件的通用属性。具体用法请参考[Shape](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-shape)。
 
 ## 创建绘制组件

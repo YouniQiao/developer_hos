@@ -3,10 +3,10 @@ title: "查看收益报表"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_quickapp_report-0000001410825326
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_quickapp_report-0000001410825326
+last_sync: 2026-06-07
+sync_hash: d3dbde10
 ---
-
-
-
 待集成AGD Pro SDK的应用正式上线后，即可通过数据报表查看对应的广告收益。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“我的项目”。

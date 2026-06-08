@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "设置PDF文档预览效果"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-preview-method
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-preview-method
+last_sync: 2026-06-07
+sync_hash: 2f48845c
 ---
-
-
 pdfViewManager为PDF文档提供了丰富的预览特性。
 
 * 单双页布局，是否连续滚动和页面适配方式。

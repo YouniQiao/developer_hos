@@ -3,8 +3,11 @@ title: "Hot Reload"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hot-reload
 format: md
+upstream_id: tools/coding-debug/ide-hot-reload
+last_sync: 2026-06-07
+sync_hash: 4a33b709
+upstream_hash: d9071fee30b5
 ---
-
 
 # Hot Reload
 

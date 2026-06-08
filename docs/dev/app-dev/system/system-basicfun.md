@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "基础功能"
 original_url: /docs/dev/app-dev/system/system-basicfun
 format: md
+upstream_id: dev/app-dev/system/system-basicfun
+last_sync: 2026-06-07
+sync_hash: 74647d86
+upstream_hash: 28233759433a
 ---
-
 
 * **[Basic Services Kit（基础服务）](/docs/dev/app-dev/system/system-basicfun/basic-services-kit)**
 * **[Desktop Extension Kit（桌面拓展服务）](/docs/dev/app-dev/system/system-basicfun/status-bar-extension-kit-guide)**

@@ -3,8 +3,10 @@ title: "功能介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-lending-industry-introduction-0000001965455890
 format: md
+upstream_id: monetize/promotion/bp-functions-lending-industry-introduction-0000001965455890
+last_sync: 2026-06-07
+sync_hash: 9d86ad0e
 ---
-
 # 功能介绍
 
 ## 功能简介

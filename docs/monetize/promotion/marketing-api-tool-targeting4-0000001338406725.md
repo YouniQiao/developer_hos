@@ -3,8 +3,10 @@ title: "删除定向包"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-targeting4-0000001338406725
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-targeting4-0000001338406725
+last_sync: 2026-06-07
+sync_hash: cce599ed
 ---
-
 # 删除定向包
 
 您通过本接口可以删除定向包。

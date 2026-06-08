@@ -3,8 +3,10 @@ title: "多设备长视频界面"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/multi-video-app
 format: md
+upstream_id: dev/app-dev/multi-device/multi-video-app
+last_sync: 2026-06-07
+sync_hash: f134fd30
 ---
-
 # 多设备长视频界面
 
 ## 概述

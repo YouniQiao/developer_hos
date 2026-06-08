@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "mPaas框架+H5接入智能填充"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-tripartiteframework/scenario-fusion-mpass
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-tripartiteframework/scenario-fusion-mpass
+last_sync: 2026-06-07
+sync_hash: 140def72
 ---
-
-
 ![](./img/44991ce1.png)
 
 目前仅支持已适配HarmonyOS的三方框架应用使用。

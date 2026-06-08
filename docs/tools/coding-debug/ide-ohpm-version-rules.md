@@ -3,8 +3,11 @@ title: "OHPM版本号规则"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-ohpm-version-rules
 format: md
+upstream_id: tools/coding-debug/ide-ohpm-version-rules
+last_sync: 2026-06-07
+sync_hash: a514e3df
+upstream_hash: 0b23a80b00fe
 ---
-
 
 # OHPM版本号规则
 

@@ -2,9 +2,10 @@
 title: "配置应用隐私说明"
 original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-privacy-desc-0000002513751229
 format: md
+upstream_id: distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-privacy-desc-0000002513751229
+last_sync: 2026-06-07
+sync_hash: 54c4ab84
 ---
-
-
 如果检测到您的应用中涉及获取敏感隐私权限或者使用受限开放权限，您需要填写“应用隐私说明”。
 
 ![](../img/agc-help-release-game-privacy-desc-0000002513751229_0.png)

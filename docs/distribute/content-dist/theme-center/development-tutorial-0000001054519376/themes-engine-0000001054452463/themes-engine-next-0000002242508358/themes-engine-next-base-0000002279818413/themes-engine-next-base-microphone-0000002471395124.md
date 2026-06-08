@@ -3,9 +3,10 @@ title: "适配功能：麦克风音量感知&lt;Microphone&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-microphone-0000002471395124
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-microphone-0000002471395124
+last_sync: 2026-06-07
+sync_hash: 9c2d14a9
 ---
-
-
 # 适配功能：麦克风音量感知&lt;Microphone&gt;
 
 ## 功能概述

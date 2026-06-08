@@ -2,9 +2,10 @@
 title: "API错误码说明"
 original_url: /docs/dev/atomic-dev/instant-service-apis/instant-service-error-code
 format: md
+upstream_id: dev/atomic-dev/instant-service-apis/instant-service-error-code
+last_sync: 2026-06-07
+sync_hash: 3a3d3f25
 ---
-
-
 | HTTP状态码 | 错误码 | 描述 |
 | --- | --- | --- |
 | 200 | 0 | 成功 |

@@ -2,9 +2,10 @@
 title: "BatchEntityBuilder实体创建批处理"
 original_url: /docs/dev/game-dev/pgd-batch-entitybuilder-0000002483522709
 format: md
+upstream_id: dev/game-dev/pgd-batch-entitybuilder-0000002483522709
+last_sync: 2026-06-07
+sync_hash: 077192c8
 ---
-
-
 用于预先设置一组组件和标签，然后一次性创建多个具有相同组件和标签的实体，从而提高性能。
 
 ## 基本使用

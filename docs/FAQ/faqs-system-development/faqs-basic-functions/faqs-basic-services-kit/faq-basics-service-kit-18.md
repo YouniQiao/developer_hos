@@ -2,9 +2,10 @@
 format: md
 title: "应用使用API如何在不同系统版本设备上做兼容性保护判断（ArkTS/C++）"
 original_url: /docs/FAQ/faqs-system-development/faqs-basic-functions/faqs-basic-services-kit/faq-basics-service-kit-18
+upstream_id: FAQ/faqs-system-development/faqs-basic-functions/faqs-basic-services-kit/faq-basics-service-kit-18
+last_sync: 2026-06-07
+sync_hash: 65782eea
 ---
-
-
 **问题描述**
 
 例如，应用某个特性使用了6.0.0(20)版本的API，那么在低版本设备（如5.0.0(17)版本）上如何做兼容性保护？

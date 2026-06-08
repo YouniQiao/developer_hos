@@ -1,8 +1,10 @@
 ---
 title: "蓝牙资源合理使用"
 original_url: /docs/quality/reasonable-bluetooth-use
+upstream_id: /docs/quality/reasonable-bluetooth-use
+last_sync: 2026-06-07
+sync_hash: 89e7951f
 ---
-
 # 蓝牙资源合理使用
 
 无长时任务的应用退到后台时，不允许进行蓝牙扫描。

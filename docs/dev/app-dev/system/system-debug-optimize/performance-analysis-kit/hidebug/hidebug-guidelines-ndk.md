@@ -2,9 +2,10 @@
 title: "HiDebug接口使用示例(C/C++)"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hidebug/hidebug-guidelines-ndk
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hidebug/hidebug-guidelines-ndk
+last_sync: 2026-06-07
+sync_hash: fefbad0f
 ---
-
-
 HiDebug C/C++接口功能独立，需要获取调试信息时直接调用。具体调用示例请参考下文。
 
 ## 通用开发示例

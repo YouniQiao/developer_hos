@@ -2,9 +2,10 @@
 title: "form开发指导"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-container-components/ui-js-components-form
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-container-components/ui-js-components-form
+last_sync: 2026-06-07
+sync_hash: 62179e27
 ---
-
-
 form是一个表单容器，支持容器内[Input](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-basic-input)组件内容的提交和重置。具体用法请参考[form API](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-container-form)。
 
 ## 创建form组件

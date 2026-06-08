@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "事件订阅（ArkTS）"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/hiappevent-watcher-app-events-arkts
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/hiappevent-watcher-app-events-arkts
+last_sync: 2026-06-07
+sync_hash: 936720de
 ---
-
-
 HiAppEvent提供了事件订阅接口，用于获取应用的事件。
 
 ## 接口说明

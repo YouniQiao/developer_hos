@@ -2,8 +2,11 @@
 title: "安全图像压缩、裁剪场景"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-taas-dev/devicesecurity-taas-secimage-process
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-taas-dev/devicesecurity-taas-secimage-process
+last_sync: 2026-06-07
+sync_hash: 21cd491f
+upstream_hash: fe0c3e9ec1d6
 ---
-
 
 ## 场景介绍
 

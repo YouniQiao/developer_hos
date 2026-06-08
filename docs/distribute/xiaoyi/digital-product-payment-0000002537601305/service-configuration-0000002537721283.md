@@ -3,9 +3,10 @@ title: "智能体数字商品支付服务配置"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/digital-product-payment-0000002537601305/service-configuration-0000002537721283
 format: md
+upstream_id: distribute/xiaoyi/digital-product-payment-0000002537601305/service-configuration-0000002537721283
+last_sync: 2026-06-07
+sync_hash: 4f2c7d21
 ---
-
-
 # **智能体数字商品支付服务配置**
 
 目前“智能体数字商品支付服务”在内测阶段，仅企业开发者可用，企业开发者在使用前请通过商务或提[华为开发者联盟工单](https://developer.huawei.com/consumer/cn/support/feedback/#/)联系小艺商业化运营人员申请开通。

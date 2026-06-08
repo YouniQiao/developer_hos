@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用AVTranscoder实现视频转码(ArkTS)"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-transcoder-arkts/using-avtranscoder-for-transcodering
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-arkts/media-transcoder-arkts/using-avtranscoder-for-transcodering
+last_sync: 2026-06-07
+sync_hash: ac01d5e3
 ---
-
-
 使用[AVTranscoder](/docs/dev/app-dev/media/media-kit/media-kit-intro#avtranscoder)可以实现视频转码功能，从API 20开始支持视频转码的C/C++开发，转码功能可在手机、平板、2in1设备上作为系统提供的基础能力使用。可以通过调用[canIUse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-syscap#caniuse)接口来判断当前设备是否支持AVTranscoder，当canIUse("SystemCapability.Multimedia.Media.AVTranscoder")的返回值为true时，表示可以使用转码能力。
 
 本开发指导将以“开始转码-暂停转码-恢复转码-转码完成”的一次流程为示例，向开发者讲解AVTranscoder视频转码相关功能。

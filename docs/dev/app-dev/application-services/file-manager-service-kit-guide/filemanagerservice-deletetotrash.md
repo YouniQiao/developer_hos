@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "删除文件到回收站"
 original_url: /docs/dev/app-dev/application-services/file-manager-service-kit-guide/filemanagerservice-deletetotrash
 format: md
+upstream_id: dev/app-dev/application-services/file-manager-service-kit-guide/filemanagerservice-deletetotrash
+last_sync: 2026-06-07
+sync_hash: daad4f33
 ---
-
-
 ## 场景介绍
 
 删除公共目录的文件到回收站。

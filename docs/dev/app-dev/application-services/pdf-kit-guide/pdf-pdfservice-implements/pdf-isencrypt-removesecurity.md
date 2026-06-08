@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "判断PDF文档是否加密及删除加密"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-isencrypt-removesecurity
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-isencrypt-removesecurity
+last_sync: 2026-06-07
+sync_hash: 36a43db9
 ---
-
-
 PDF Kit支持判断PDF文档是否加密及删除PDF加密锁。
 
 ## 接口说明

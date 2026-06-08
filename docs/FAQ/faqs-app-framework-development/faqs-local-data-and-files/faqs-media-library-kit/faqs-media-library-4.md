@@ -2,9 +2,10 @@
 title: "关于导入图片的使用权限和问题"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-media-library-kit/faqs-media-library-4
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-media-library-kit/faqs-media-library-4
+last_sync: 2026-06-07
+sync_hash: 3b8e3f3b
 ---
-
-
 **问题描述**
 
 需要导入图片并获取图片地址，然后传递到底层C++代码。经过测试发现，导入后读取图片时失败。

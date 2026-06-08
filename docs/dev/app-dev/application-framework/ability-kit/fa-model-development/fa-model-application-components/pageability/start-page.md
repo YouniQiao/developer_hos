@@ -2,8 +2,11 @@
 title: "启动指定页面"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/start-page
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/start-page
+last_sync: 2026-06-07
+sync_hash: 9cb815de
+upstream_hash: 205ce06c983d
 ---
-
 
 当PageAbility的启动模式设置为单例时（具体设置方法和典型场景示例见[PageAbility的启动模式](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/pageability-launch-type)，缺省情况下是单实例模式），若PageAbility已被拉起，再次启动PageAbility会触发onNewWant回调（即非首次拉起）。开发者可以通过Want传递启动参数，例如开发者希望指定页面启动PageAbility，可以通过Want中的parameters参数传递pages信息，具体示例代码如下：
 

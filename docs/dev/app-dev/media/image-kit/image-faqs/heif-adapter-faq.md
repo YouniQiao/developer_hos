@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "如何处理HEIF图片"
 original_url: /docs/dev/app-dev/media/image-kit/image-faqs/heif-adapter-faq
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-faqs/heif-adapter-faq
+last_sync: 2026-06-07
+sync_hash: fbdda720
 ---
-
-
 ## HEIF图片介绍
 
 HEIF图片（High Efficiency Image File Format，HEIF，也称高效图像文件格式），是一个用于单张图像或图像序列的文件格式。它由动态影像专家小组（MPEG）开发，并在MPEG-H Part 12（ISO/IEC 23008-12）中定义。

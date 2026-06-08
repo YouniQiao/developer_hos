@@ -2,9 +2,10 @@
 title: "param工具"
 original_url: /docs/dev/app-dev/system/param-tool
 format: md
+upstream_id: dev/app-dev/system/param-tool
+last_sync: 2026-06-07
+sync_hash: 8d2ea76d
 ---
-
-
 param是为开发人员提供用于操作系统参数的工具，该工具只支持标准系统。
 
 ## 环境要求

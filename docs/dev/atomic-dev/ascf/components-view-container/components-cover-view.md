@@ -2,9 +2,10 @@
 title: "cover-view"
 original_url: /docs/dev/atomic-dev/ascf/components-view-container/components-cover-view
 format: md
+upstream_id: dev/atomic-dev/ascf/components-view-container/components-cover-view
+last_sync: 2026-06-07
+sync_hash: 3e7b4073
 ---
-
-
 覆盖在系统组件之上的文本视图。
 
 可支持在[map](/docs/dev/atomic-dev/ascf/components-map-components/components-map)、[video](/docs/dev/atomic-dev/ascf/components-media-components/components-video)、[canvas](/docs/dev/atomic-dev/ascf/components-canvas-components/components-canvas)、[camera](/docs/dev/atomic-dev/ascf/components-media-components/components-camera)组件上使用。

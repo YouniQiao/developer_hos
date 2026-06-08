@@ -2,9 +2,10 @@
 format: md
 title: "如何在Native侧释放ArkTS对象"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-82
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-82
+last_sync: 2026-06-07
+sync_hash: 752141a5
 ---
-
-
 使用napi\_wrap接口时，如果最后一个参数result不为nullptr，需在适当时机调用napi\_remove\_wrap函数删除创建的napi\_ref对象。
 
 ```

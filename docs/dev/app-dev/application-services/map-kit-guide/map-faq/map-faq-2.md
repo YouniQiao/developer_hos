@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "siteId参数如何获取"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-faq/map-faq-2
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-faq/map-faq-2
+last_sync: 2026-06-07
+sync_hash: ac1d7f52
 ---
-
-
 siteId有多种获取方式，这里提供其中的3种作为参考：
 
 1. 可通过[on('poiClick')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-mapeventmanager#onpoiclick)方法获取。

@@ -2,8 +2,11 @@
 title: "自定义页面请求响应"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-resource-interception-request-mgmt
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-resource-interception-request-mgmt
+last_sync: 2026-06-07
+sync_hash: d3e41b18
+upstream_hash: e0fbab9e960f
 ---
-
 
 Web组件支持在应用拦截到页面请求后自定义响应请求能力。开发者通过[onInterceptRequest()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#oninterceptrequest9)接口来实现自定义资源请求响应。自定义请求能力可以用于开发者自定义Web页面响应、自定义文件资源响应等场景。
 

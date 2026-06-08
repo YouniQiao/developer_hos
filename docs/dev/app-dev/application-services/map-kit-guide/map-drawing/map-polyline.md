@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "折线"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-polyline
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-drawing/map-polyline
+last_sync: 2026-06-07
+sync_hash: a69e9d49
 ---
-
-
 ## 场景介绍
 
 本章节将向您介绍如何在地图上绘制折线、设置折线分段颜色、设置折线可渐变、绘制纹理。

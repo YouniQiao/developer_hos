@@ -2,9 +2,10 @@
 format: md
 title: "如何打开键鼠穿越功能开关"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-377
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-377
+last_sync: 2026-06-07
+sync_hash: 9e744225
 ---
-
-
 在HarmonyOS 4.0 Canary2版本的PC/2in1设备上，默认提供了用于测试键鼠穿越功能的应用“AssociateAssistant”。通过该应用可打开键鼠穿越功能开关。具体方法如下：
 
 1. 登录同一个华为账号。

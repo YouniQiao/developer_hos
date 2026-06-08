@@ -3,9 +3,10 @@ title: "添加依赖项"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-dependencies
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-dependencies
+last_sync: 2026-06-07
+sync_hash: 9eca8616
 ---
-
-
 # 添加依赖项
 
 应用/元服务支持通过包管理工具ohpm来安装、共享、分发代码，管理项目的依赖关系。本文介绍了在您的项目中如何配置依赖项，以及不同的配置方式在编译期间的处理逻辑和编译结果。

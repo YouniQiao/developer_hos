@@ -2,9 +2,10 @@
 title: "概览"
 original_url: /docs/dev/atomic-dev/instant-service-app-gui/instant-service-app-gui-overview
 format: md
+upstream_id: dev/atomic-dev/instant-service-app-gui/instant-service-app-gui-overview
+last_sync: 2026-06-07
+sync_hash: a0d1bd42
 ---
-
-
 为了更好地帮助应用商家做好服务生态的经营，平台构建了子服务、商品、门店等一系列场景，帮助商家在HarmonyOS公域流量场进行分发和引流。
 
 * 子服务：子服务无需开发，基于开发者上传的宣传图片和跳转链接等素材渲染生成的卡片，在推广阶段展示该卡片的宣传素材，并提供一键添卡的能力，用户可将该卡片添加至负一屏。该卡片以元服务或应用内某个落地页为载体，能够独立满足用户完整需求的一项服务。如寄快递、营销活动、品牌营销、新闻栏目、购物频道、专栏节目等。

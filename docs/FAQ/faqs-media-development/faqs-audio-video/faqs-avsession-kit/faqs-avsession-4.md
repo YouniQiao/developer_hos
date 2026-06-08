@@ -2,9 +2,10 @@
 format: md
 title: "能否定制播控中心界面上显示的控制元素"
 original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avsession-kit/faqs-avsession-4
+upstream_id: FAQ/faqs-media-development/faqs-audio-video/faqs-avsession-kit/faqs-avsession-4
+last_sync: 2026-06-07
+sync_hash: 9f56d40b
 ---
-
-
 播控中心的控制元素根据会话类型固定。
 
 * audio类型的控制元素：收藏，上一首，播放/暂停，下一首，循环模式。

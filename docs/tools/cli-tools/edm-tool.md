@@ -3,9 +3,10 @@ title: "edm工具"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/edm-tool
 format: md
+upstream_id: tools/cli-tools/edm-tool
+last_sync: 2026-06-07
+sync_hash: 4afc2d51
 ---
-
-
 # edm工具
 
 Enterprise Device Manager（企业设备管理工具，简称为edm），为设备管理应用提供调试和测试能力，例如激活企业设备管理拓展能力、解除激活企业设备管理拓展能力。

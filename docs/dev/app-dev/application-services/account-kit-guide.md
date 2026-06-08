@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Account Kit（华为账号服务）"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide
+last_sync: 2026-06-07
+sync_hash: 5e43ed21
 ---
-
-
 * **[Account Kit简介](/docs/dev/app-dev/application-services/account-kit-guide/account-introduction)**
 * **[开发者使用Account Kit的登录能力的管理细则](/docs/dev/app-dev/application-services/account-kit-guide/account-detailedrules)**
 * **[开发准备](/docs/dev/app-dev/application-services/account-kit-guide/account-preparations)**

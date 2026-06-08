@@ -3,9 +3,10 @@ title: "签名工具错误码"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/hapsigntool-errorcode
 format: md
+upstream_id: tools/coding-debug/hapsigntool-errorcode
+last_sync: 2026-06-07
+sync_hash: c5d419e4
 ---
-
-
 # 签名工具错误码
 
 #### 11010001 未知错误

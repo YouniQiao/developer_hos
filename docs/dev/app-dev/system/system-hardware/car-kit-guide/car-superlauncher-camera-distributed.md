@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "超级桌面应用接入分布式相机"
 original_url: /docs/dev/app-dev/system/system-hardware/car-kit-guide/car-superlauncher-camera-distributed
 format: md
+upstream_id: dev/app-dev/system/system-hardware/car-kit-guide/car-superlauncher-camera-distributed
+last_sync: 2026-06-07
+sync_hash: d1ab971c
 ---
-
-
 ## 场景介绍
 
 超级桌面是一种手机、车机互联的特性，车主可以通过超级桌面，将华为手机上的应用共享至中控屏，在中控屏上使用丰富的手机应用。

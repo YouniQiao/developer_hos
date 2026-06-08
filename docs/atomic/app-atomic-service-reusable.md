@@ -2,9 +2,10 @@
 title: "应用和元服务可复用设计"
 original_url: /docs/dev/atomic-dev/app-atomic-service-reusable/app-atomic-service-reusable
 format: md
+upstream_id: dev/atomic-dev/app-atomic-service-reusable/app-atomic-service-reusable
+last_sync: 2026-06-07
+sync_hash: fabd67a4
 ---
-
-
 我们提供了两种可复用设计模式来帮助开发者实现应用和元服务间的代码或者功能复用：
 
 * 开发态可复用设计：在开发阶段将元服务的代码复用到应用，在应用内快速实现和元服务相同的功能。应用和元服务分别打包上架，在运行态用户可以通过元服务体验功能，也可以通过应用来体验相同的功能。应用和元服务包体都包含了这一部分的功能代码，通过自身的功能入口分别对用户提供相同的服务。

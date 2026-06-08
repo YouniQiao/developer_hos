@@ -2,9 +2,10 @@
 title: "数据分析"
 original_url: /docs/dev/game-dev/games-gamemme-console-analyticaldata-0000002304632340
 format: md
+upstream_id: dev/game-dev/games-gamemme-console-analyticaldata-0000002304632340
+last_sync: 2026-06-07
+sync_hash: 945c4715
 ---
-
-
 游戏多媒体相关服务使用后，AGC控制台会自动统计语音聊天时长、语音转文本使用量、错误码等数据。您可以通过查看业务用量、业务分析和质量分析相关数据，了解游戏多媒体服务的使用效果。
 
 ## 前提条件

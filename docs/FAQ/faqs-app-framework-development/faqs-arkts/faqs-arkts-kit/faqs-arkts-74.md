@@ -2,9 +2,10 @@
 title: "如何判断能否对接口进行插桩或替换"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-74
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-74
+last_sync: 2026-06-07
+sync_hash: df008e4a
 ---
-
-
 如果类和方法在运行时是实际存在的对象，并且方法的属性描述符的writable字段为true，即可对接口进行插桩和替换。
 
 获取方法的属性描述符的writable字段：

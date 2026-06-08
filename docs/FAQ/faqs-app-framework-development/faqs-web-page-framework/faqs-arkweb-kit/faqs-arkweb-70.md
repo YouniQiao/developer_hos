@@ -2,9 +2,10 @@
 format: md
 title: "Web组件加载发生错误对应错误码如何获取"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-70
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-70
+last_sync: 2026-06-07
+sync_hash: 0400417e
 ---
-
-
 **问题场景**
 
 网页加载遇到错误时触发[onErrorReceive](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onerrorreceive)回调。回调函数会返回相关错误码，需要了解错误码的具体含义。

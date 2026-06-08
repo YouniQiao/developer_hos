@@ -2,8 +2,11 @@
 title: "使用JSVM-API实现JS与C/C++语言交互开发流程"
 original_url: /docs/dev/ndk-dev/use-jsvm-process
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-process
+last_sync: 2026-06-07
+sync_hash: b9fef6a3
+upstream_hash: 67208718881c
 ---
-
 
 使用JSVM-API实现跨语言交互，首先需按其机制注册和加载模块。
 

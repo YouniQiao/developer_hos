@@ -2,9 +2,10 @@
 title: "学习UI范式基本语法"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax
+last_sync: 2026-06-07
+sync_hash: 0662f46b
 ---
-
-
 * **[基本语法概述](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-basic-syntax-overview)**
 * **[UI装饰器总览](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-decorator-overview)**
 * **[声明式UI描述](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-declarative-ui-description)**

@@ -2,9 +2,10 @@
 title: "前台页面"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-web-front-page
+upstream_id: tools/ohpm/repo/ide-ohpm-web-front-page
+last_sync: 2026-06-07
+sync_hash: bfdbd9ee
 ---
-
-
 # 前台页面
 
 ![](./img/a00da671.png)

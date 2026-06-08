@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "在地图上绘制"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-drawing
+last_sync: 2026-06-07
+sync_hash: 875265b3
+upstream_hash: 0f94621fcbc8
 ---
-
 
 * **[标记](/docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-marker)**
 * **[折线](/docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-polyline)**

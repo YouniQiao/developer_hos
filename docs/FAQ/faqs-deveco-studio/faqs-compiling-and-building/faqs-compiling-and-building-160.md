@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“CMake task execution failed”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-160
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-160
+last_sync: 2026-06-07
+sync_hash: f3aaf1e1
 ---
-
-
 **错误描述**
 
 CMake任务执行时提示“CMake task execution failed”错误信息。

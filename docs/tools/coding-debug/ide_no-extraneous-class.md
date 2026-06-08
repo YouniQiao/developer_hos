@@ -3,8 +3,11 @@ title: "@typescript-eslint/no-extraneous-class"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-extraneous-class
 format: md
+upstream_id: tools/coding-debug/ide_no-extraneous-class
+last_sync: 2026-06-07
+sync_hash: be78528b
+upstream_hash: 1e9ad6d49291
 ---
-
 
 # @typescript-eslint/no-extraneous-class
 

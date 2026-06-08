@@ -3,9 +3,10 @@ title: "PGD Systems组件"
 original_url: /docs/dev/game-dev/pgd-tool-editor-systems-0000002494261300
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/pgd-tool-editor-systems-0000002494261300
+last_sync: 2026-06-07
+sync_hash: c2302525
 ---
-
-
 PGD Systems组件为系统操作模块。
 
 通过对该组件的Inspector进行配置，即可完成PGD中System集合的初始化运行。同时，系统的运行状态也将在Inspector中进行可视化展示。

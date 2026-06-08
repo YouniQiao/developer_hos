@@ -3,9 +3,10 @@ title: "ohpm dependency-check错误码"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/errorcode/ide-ohpm-dependency-check-errorcode
 format: md
+upstream_id: tools/ohpm/errorcode/ide-ohpm-dependency-check-errorcode
+last_sync: 2026-06-07
+sync_hash: 0ee18253
 ---
-
-
 # ohpm dependency-check错误码
 
 ## 00680001 更新信息查询失败

@@ -3,8 +3,11 @@ title: "@performance/constant-property-referencing-check-in-loops"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-constant-property-check-in-loops
 format: md
+upstream_id: tools/coding-debug/ide-constant-property-check-in-loops
+last_sync: 2026-06-07
+sync_hash: 377ed138
+upstream_hash: 3f3660750d6f
 ---
-
 
 # @performance/constant-property-referencing-check-in-loops
 

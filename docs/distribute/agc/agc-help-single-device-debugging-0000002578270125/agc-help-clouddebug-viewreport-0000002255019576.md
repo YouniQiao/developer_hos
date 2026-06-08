@@ -2,9 +2,10 @@
 title: "查看测试报告"
 original_url: /docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-viewreport-0000002255019576
 format: md
+upstream_id: distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-viewreport-0000002255019576
+last_sync: 2026-06-07
+sync_hash: fa124548
 ---
-
-
 在单机调试过程中，系统会自动生成测试报告。您既可以在调试过程中实时查看报告，也可以在调试结束后查看完整报告。您可在“测试报告”页签查看您调试过的设备的相关测试信息，以及优惠时长、套餐余额和按量付费的额度消耗。
 
 #### 前提条件

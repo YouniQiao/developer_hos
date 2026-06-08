@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口获取JSVM API的版本号"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-version
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-version
+last_sync: 2026-06-07
+sync_hash: e73edab5
 ---
-
-
 ## 简介
 
 用于获取当前JSVM API的版本信息。

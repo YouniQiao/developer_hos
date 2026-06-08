@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发相机应用基础能力(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts
+last_sync: 2026-06-07
+sync_hash: b36378fe
 ---
-
-
 * **[通过系统相机拍照和录像(CameraPicker)](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-picker)**
 * **[预览(ArkTS)](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-preview)**
 * **[双路预览(ArkTS)](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-dual-channel-preview)**
@@ -30,7 +31,7 @@ format: md
 * **[多摄同开(ArkTS)](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-concurrent-open)**
 * **[YUV拍照(ArkTS)](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-yuv-shooting)**
 * **[对焦(ArkTS)](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-focus)**
-* **[相机旋转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation)**
+* **[相机旋转](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation)**
 * **[安全相机(ArkTS)](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-secure-photo)**
 * **[动态调整预览帧率(ArkTS)](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-framerate)**
 * **[使用相机预配置(ArkTS)](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-preconfig)**

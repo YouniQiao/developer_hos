@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "穿戴设备传感器获取"
 original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/device_sensor
 format: md
+upstream_id: dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/device_sensor
+last_sync: 2026-06-07
+sync_hash: 22cb0077
+upstream_hash: 32d47e2b6a5d
 ---
-
 
 ![](./img/74470867.png)
 

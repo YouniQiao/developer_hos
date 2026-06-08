@@ -2,9 +2,10 @@
 title: "导出OpenHarmony三方库中心仓元数据至ohpm-repo"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-export-metadata
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-export-metadata
+last_sync: 2026-06-07
+sync_hash: dff0d3e9
 ---
-
-
 # 导出OpenHarmony三方库中心仓元数据至ohpm-repo
 
 支持通过export\_pkginfo和batch\_download命令，将OpenHarmony三方库中心仓中所有包批量导出，并能够通过batch\_publish命令将导出的库批量上传至部署的ohpm-repo实例中。

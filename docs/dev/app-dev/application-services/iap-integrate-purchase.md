@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "接入购买"
 original_url: /docs/dev/app-dev/application-services/iap-integrate-purchase
 format: md
+upstream_id: dev/app-dev/application-services/iap-integrate-purchase
+last_sync: 2026-06-07
+sync_hash: dc3d06c7
 ---
-
-
 ## 场景介绍
 
 在应用内购买场景中，用户会采用一次性付款的方式购买消耗型商品或非消耗型商品。请结合实际业务场景选择提供的商品类型。

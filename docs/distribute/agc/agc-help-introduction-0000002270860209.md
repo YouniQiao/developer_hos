@@ -2,9 +2,10 @@
 title: "简介"
 original_url: /docs/distribute/agc/agc-help-introduction-0000002270860209
 format: md
+upstream_id: distribute/agc/agc-help-introduction-0000002270860209
+last_sync: 2026-06-07
+sync_hash: 31af0fc6
 ---
-
-
 |  |  |
 | --- | --- |
 | AppGallery Connect是华为推出的应用一站式服务平台，致力于为开发者提供应用开发、分发、运营、分析全生命周期服务，构建全场景智慧化的应用生态。  AppGallery Connect深度整合华为内部各项优质服务，将华为在全球化、质量、安全、工程管理等领域长期积累的能力向开发者开放，大幅降低应用开发与运维难度，提高版本质量，开放分发和运营服务，帮助您获得更多用户。 |  |

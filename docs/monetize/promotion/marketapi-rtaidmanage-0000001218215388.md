@@ -3,8 +3,10 @@ title: "批量修改RTAID"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-rtaidmanage-0000001218215388
 format: md
+upstream_id: monetize/promotion/marketapi-rtaidmanage-0000001218215388
+last_sync: 2026-06-07
+sync_hash: 34b9e3aa
 ---
-
 # 批量修改RTAID
 
 ## 功能介绍

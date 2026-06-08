@@ -2,9 +2,10 @@
 title: "选取软件包版本"
 original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-choose-pkg-0000002365569342
 format: md
+upstream_id: distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-choose-pkg-0000002365569342
+last_sync: 2026-06-07
+sync_hash: d8aa80bd
 ---
-
-
 请选择待发布的游戏软件包，并设置是否加密游戏软件包。
 
 #### 前提条件

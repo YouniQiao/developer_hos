@@ -2,9 +2,10 @@
 title: "集成SDK"
 original_url: /docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-integration-sdk-0000002236337006
 format: md
+upstream_id: distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-integration-sdk-0000002236337006
+last_sync: 2026-06-07
+sync_hash: 2165d49a
 ---
-
-
 AGC 认证服务SDK能为您的应用迅速搭建安全可靠的用户认证系统，您只需在应用中调用认证服务的相关功能，无需担心云侧的设施和实现细节。内置了多种认证方式，让您可以轻松完成用户认证的开发工作。
 
 SDK名称：AGC 认证服务SDK

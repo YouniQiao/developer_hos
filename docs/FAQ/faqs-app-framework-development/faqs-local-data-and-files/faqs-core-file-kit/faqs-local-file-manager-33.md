@@ -2,7 +2,10 @@
 format: md
 title: "native如何获取沙箱路径"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-33
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-33
+last_sync: 2026-06-07
+sync_hash: 84424ef3
+upstream_hash: 113ec389dbeb
 ---
-
 
 目前支持通过ArkTS侧获取沙箱路径传递到Native侧，或者在Native侧直接拼接沙箱路径。详细实现方法可参考文章：[方案二：Native侧直接拼接沙箱路径访问文件](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-file-native-side#section19243162119554)。

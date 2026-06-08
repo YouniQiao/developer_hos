@@ -3,8 +3,10 @@ title: "问题反馈"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-appendix-feedback-0000001293729922
 format: md
+upstream_id: monetize/promotion/bp-appendix-feedback-0000001293729922
+last_sync: 2026-06-07
+sync_hash: a25d5f24
 ---
-
 # 问题反馈
 
 ## 在线提单

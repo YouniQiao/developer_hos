@@ -3,8 +3,11 @@ title: "@typescript-eslint/no-for-in-array"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-for-in-array
 format: md
+upstream_id: tools/coding-debug/ide_no-for-in-array
+last_sync: 2026-06-07
+sync_hash: cc6358fa
+upstream_hash: 01a6c230fdfd
 ---
-
 
 # @typescript-eslint/no-for-in-array
 

@@ -2,9 +2,10 @@
 title: "开发指导"
 original_url: /docs/dev/game-dev/games-gpm-development-guide-0000002332905597
 format: md
+upstream_id: dev/game-dev/games-gpm-development-guide-0000002332905597
+last_sync: 2026-06-07
+sync_hash: c4810bc7
 ---
-
-
 HarmonyOS 5.0及以上系统游戏无需集成SDK，用户**必须**在启动游戏前打开“手机设置 &gt; 系统和更新 &gt; 用户体验改进计划”开关，即可自动采集现网游戏数据并上报至AGC控制台。
 
 ![](./img/2a2fcd39.png)

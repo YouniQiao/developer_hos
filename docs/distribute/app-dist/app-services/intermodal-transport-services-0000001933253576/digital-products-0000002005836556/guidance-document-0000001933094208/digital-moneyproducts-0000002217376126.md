@@ -3,16 +3,17 @@ title: "付费下载应用"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-moneyproducts-0000002217376126
 format: md
+upstream_id: distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-moneyproducts-0000002217376126
+last_sync: 2026-06-07
+sync_hash: 6607c499
 ---
-
-
 # 付费下载应用
 
 如果您想要在鸿蒙应用市场上架付费下载的HarmonyOS应用，您可以在[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/`)中发布应用时将应用设置为付费应用。
 
 ![](./img/da141f467973.png)
 
-若您需要开通付费下载功能，请您先[开通商户服务](`https://developer.huawei.com/consumer/cn/doc/app/open-0000001959074873`)并通过官方渠道[联系我们](`https://developer.huawei.com/consumer/cn/doc/app/service-0000001959074917`)签署《华为数字商品及联运服务协议》。
+若您需要开通付费下载功能，请您先[开通商户服务](`/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-serve-0000001931836308/open-0000001959074873)并通过官方渠道[联系我们](`/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/service-0000001959074917)签署《华为数字商品及联运服务协议》。
 
 如您有Harmony OS 5以下或安卓应用，与 Harmony OS 5及以上的应用相对应，需要做用户的权益映射（已有权益的用户无需重复购买），请联系客服developer@huawei.com。
 
@@ -80,7 +81,7 @@ format: md
 | 排序规则 | 国家/地区的排序规则。   * 按字母A-Z顺序排序 * 按地理区域分组排序 |
 | 置顶国家/地区 | 置顶汇率换算国家/地区，方便您查看或编辑应用价格，可选。   * 当国家/地区按字母A-Z顺序排序时，您可以在下拉选项中选择您要置顶的国家/地区。 * 当国家/地区按地理区域分组排序时，您可以在下拉选项中选择您要置顶的区域。 |
 
-特殊币种要求国家/地区详见[应用管理国家/地区、语言、币种表](`https://developer.huawei.com/consumer/cn/doc/app/countries-overview-0000002071714318`)。
+特殊币种要求国家/地区详见[应用管理国家/地区、语言、币种表](`/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/countries-overview-0000002071714318)。
 
 <strong>5、</strong><strong>价格调整</strong>
 

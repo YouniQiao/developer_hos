@@ -2,9 +2,10 @@
 title: "是否有处理'9图'（又称'draw9patch'、'.9图'、'点9图'等）的平替方案"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-208
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-208
+last_sync: 2026-06-07
+sync_hash: ec80968d
 ---
-
-
 Image组件提供与点九图相同功能的API设置，通过设置resizable属性来配置ResizableOptions，即图像拉伸时的大小调整选项。ResizableOptions的参数slice包含top、left、bottom和right四个属性，分别表示图片在上下左右四个方向拉伸时保持不变的距离。
 
 参考代码如下：

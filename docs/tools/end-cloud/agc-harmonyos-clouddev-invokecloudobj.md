@@ -1,12 +1,12 @@
 ---
-
 title: "在端侧调用云对象"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-invokecloudobj
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-invokecloudobj
+last_sync: 2026-06-07
+sync_hash: 1c9ea40f
 ---
-
-
 # 在端侧调用云对象
 
 云对象开发完成后，您可以为其生成端侧调用接口类，供后续端侧工程调用云对象使用。

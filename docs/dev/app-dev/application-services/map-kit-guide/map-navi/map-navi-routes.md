@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "出行路线规划"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-navi/map-navi-routes
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-navi/map-navi-routes
+last_sync: 2026-06-07
+sync_hash: 7bee2268
 ---
-
-
 ## 场景介绍
 
 从5.1.1(19)开始，支持公共交通规划功能。

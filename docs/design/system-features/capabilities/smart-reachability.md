@@ -3,8 +3,10 @@ title: 智感握姿
 sidebar_label: 智感握姿
 original_url: /docs/design/system-features/capabilities/smart-reachability
 format: md
+upstream_id: design/system-features/capabilities/smart-reachability
+last_sync: 2026-06-07
+sync_hash: e43f5348
 ---
-
 # 智感握姿
 
 ### 概述

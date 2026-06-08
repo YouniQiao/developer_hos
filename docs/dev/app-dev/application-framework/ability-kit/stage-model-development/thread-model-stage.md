@@ -2,9 +2,10 @@
 title: "线程模型"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/thread-model-stage
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/thread-model-stage
+last_sync: 2026-06-07
+sync_hash: 4551b8dc
 ---
-
-
 线程是操作系统进行运算调度的基本单位，是[进程](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/process-model-stage)中的执行流，共享进程的资源。一个进程可以包含多个线程。
 
 ## 线程类型

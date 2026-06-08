@@ -3,9 +3,10 @@ title: "问卷服务"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-setup-project-0000001194142410/game-center-questionnaire-0000001194144428
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-setup-project-0000001194142410/game-center-questionnaire-0000001194144428
+last_sync: 2026-06-07
+sync_hash: b26eb474
 ---
-
-
 # 问卷服务
 
 为了改善用户体验，现华为平台开放问卷服务，您可以在不同的使用场景下自定义问卷内容，快速向用户分发问卷并在线收集问卷结果，提升您的工作效率。

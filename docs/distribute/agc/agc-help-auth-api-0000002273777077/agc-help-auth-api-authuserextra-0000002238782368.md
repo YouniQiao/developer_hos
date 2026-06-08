@@ -2,9 +2,10 @@
 title: "AuthUserExtra"
 original_url: /docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-authuserextra-0000002238782368
 format: md
+upstream_id: distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-authuserextra-0000002238782368
+last_sync: 2026-06-07
+sync_hash: 59091723
 ---
-
-
 用户的Extra信息。
 
 #### Method Summary

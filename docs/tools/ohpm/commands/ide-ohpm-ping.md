@@ -3,9 +3,10 @@ title: "ohpm ping"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-ping
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-ping
+last_sync: 2026-06-07
+sync_hash: ba98efad
 ---
-
-
 # ohpm ping
 
 ping ohpm 仓库地址。

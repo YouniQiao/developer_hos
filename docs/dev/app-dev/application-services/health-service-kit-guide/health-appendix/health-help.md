@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "如何获取帮助"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-appendix/health-help
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-appendix/health-help
+last_sync: 2026-06-07
+sync_hash: b0090818
 ---
-
-
 建议优先查找官方文档，快速获取所需指导。查阅文档后，仍不能解决的问题，可以通过以下方式进行反馈。
 
 * 通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)反馈问题。提交问题后，通常会在1~2个工作日内收到回复。有时需要您进一步澄清问题，请及时关注进展并予以回复，以便更好地解决问题。

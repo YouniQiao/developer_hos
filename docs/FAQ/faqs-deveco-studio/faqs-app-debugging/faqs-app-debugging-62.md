@@ -2,9 +2,10 @@
 format: md
 title: "DevEco Studio安装HAP时报错“FileTransfer Failed: [Fail]Transfer Stop at:XXX, Reason: no space left on device”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-62
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-62
+last_sync: 2026-06-07
+sync_hash: 4145a278
 ---
-
-
 **问题现象**
 
 DevEco Studio安装HAP时报错“FileTransfer Failed: [Fail]Transfer Stop at:XXX, Reason: no space left on device”。

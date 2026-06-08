@@ -2,9 +2,10 @@
 title: "开通服务"
 original_url: /docs/dev/game-dev/games-gamemme-enable-0000002338511697
 format: md
+upstream_id: dev/game-dev/games-gamemme-enable-0000002338511697
+last_sync: 2026-06-07
+sync_hash: c406588f
 ---
-
-
 首次使用游戏多媒体服务前，需要先开通此服务。如果您已经开通，可跳过本步骤。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“开发与服务”。

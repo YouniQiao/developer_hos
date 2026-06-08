@@ -2,9 +2,10 @@
 title: "Longque-JS-API使用指导"
 original_url: /docs/dev/ndk-dev/use-longque-js-api
 format: md
+upstream_id: dev/ndk-dev/use-longque-js-api
+last_sync: 2026-06-07
+sync_hash: a521a291
 ---
-
-
 Longque JS API 由 Longque JS Engine 提供，适用于在 HarmonyOS 平台构建稳定、高性能的应用。所有 API 均位于 \_\_Longque\_\_ 对象下。接口的版本可通过 \_\_Longque\_\_.version 获得，开发者可使用该版本进行特性判断。
 
 **【注意】：Longque JS API 处于实验阶段，使用前请阅读本文档，评估其稳定性和兼容性。**

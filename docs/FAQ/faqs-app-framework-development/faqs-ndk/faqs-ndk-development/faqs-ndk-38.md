@@ -2,9 +2,10 @@
 title: "Native侧如何获取可操作的文件目录"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-38
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-38
+last_sync: 2026-06-07
+sync_hash: bfc3e0cc
 ---
-
-
 当前native侧暂无可直接获取文件目录的接口，可以通过ArkTS侧获取相关路径信息，然后传递到native侧使用。
 
 ArkTS侧获取路径信息代码示例：

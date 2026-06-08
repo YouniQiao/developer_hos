@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-unused-expressions"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unused-expressions
 format: md
+upstream_id: tools/coding-debug/ide_no-unused-expressions
+last_sync: 2026-06-07
+sync_hash: f19bc0eb
 ---
-
-
 # @typescript-eslint/no-unused-expressions
 
 代码中禁止包含未使用的表达式。

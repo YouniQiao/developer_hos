@@ -2,9 +2,10 @@
 title: "升级与维护"
 original_url: /docs/dev/game-dev/games-quickgame-upgrade-maintain-0000002351893561
 format: md
+upstream_id: dev/game-dev/games-quickgame-upgrade-maintain-0000002351893561
+last_sync: 2026-06-07
+sync_hash: e668736a
 ---
-
-
 ## 催促/撤销审核
 
 ### 催促审核

@@ -2,9 +2,10 @@
 title: "使用保存控件"
 original_url: /docs/dev/app-dev/system/system-security/access-control/security-components/savebutton
 format: md
+upstream_id: dev/app-dev/system/system-security/access-control/security-components/savebutton
+last_sync: 2026-06-07
+sync_hash: 8c4b55f1
 ---
-
-
 保存控件允许用户通过点击按钮临时获取存储权限，无需权限弹框确认。
 
 集成保存控件后，当用户点击该控件时，应用会在短时间内获取访问媒体库特权接口的授权。在API version 19及之前的版本中，授权持续时间为10秒；在API version 20及之后的版本中，授权持续时间为1分钟。这适用于任何需要将文件保存到媒体库的应用场景，例如保存图片或视频等。

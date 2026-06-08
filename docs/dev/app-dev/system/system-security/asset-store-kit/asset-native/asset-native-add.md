@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "新增关键资产(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-add
 format: md
+upstream_id: dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-add
+last_sync: 2026-06-07
+sync_hash: 58b63ce9
 ---
-
-
 ## 接口介绍
 
 开发者可以查阅API文档，获取关键资产新增接口的详细说明：[OH\_Asset\_Add](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-asset-api-h#oh_asset_add)。

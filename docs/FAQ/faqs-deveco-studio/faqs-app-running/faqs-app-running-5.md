@@ -2,9 +2,10 @@
 format: md
 title: "运行工程到本地模拟器，提示“Failed to get the device apiVersion”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-5
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-5
+last_sync: 2026-06-07
+sync_hash: 4f1e96d2
 ---
-
-
 **问题现象**
 
 本地模拟器启动后，运行工程到模拟器，提示“Failed to get the device apiVersion”。

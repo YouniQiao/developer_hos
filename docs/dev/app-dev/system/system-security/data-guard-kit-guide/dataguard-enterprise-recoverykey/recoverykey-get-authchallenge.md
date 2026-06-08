@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取挑战值"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-get-authchallenge
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-get-authchallenge
+last_sync: 2026-06-07
+sync_hash: de84a344
 ---
-
-
 ## 场景介绍
 
 请求获取挑战值，在发起更新企业公钥证书、删除已有企业恢复密钥流程前，需要获取挑战值，并进行签名，以确认企业身份。

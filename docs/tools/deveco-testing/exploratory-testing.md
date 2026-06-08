@@ -3,9 +3,10 @@ title: "探索测试"
 displayed_sidebar: devecoTestingSidebar
 original_url: /docs/tools/deveco-testing/exploratory-testing
 format: md
+upstream_id: tools/deveco-testing/exploratory-testing
+last_sync: 2026-06-07
+sync_hash: 2b6722bd
 ---
-
-
 # 探索测试
 
 ![](./img/zh-cn_image_0000002492503674.png)

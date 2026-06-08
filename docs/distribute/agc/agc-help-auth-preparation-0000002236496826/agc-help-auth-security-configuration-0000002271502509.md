@@ -2,9 +2,10 @@
 title: "（可选）安全配置"
 original_url: /docs/distribute/agc/agc-help-auth-preparation-0000002236496826/agc-help-auth-security-configuration-0000002271502509
 format: md
+upstream_id: distribute/agc/agc-help-auth-preparation-0000002236496826/agc-help-auth-security-configuration-0000002271502509
+last_sync: 2026-06-07
+sync_hash: baa59360
 ---
-
-
 开通认证服务后，您可以根据需要进入“配置”页签进行用户账户的安全配置。
 
 ![](../img/agc-help-auth-security-configuration-0000002271502509_0.png)

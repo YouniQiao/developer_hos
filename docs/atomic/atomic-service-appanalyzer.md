@@ -2,9 +2,10 @@
 title: "使用元服务体检工具"
 original_url: /docs/dev/atomic-dev/atomic-running-debugging/atomic-service-appanalyzer
 format: md
+upstream_id: dev/atomic-dev/atomic-running-debugging/atomic-service-appanalyzer
+last_sync: 2026-06-07
+sync_hash: 7375731c
 ---
-
-
 应用与元服务体检工具（AppAnalyzer）是DevEco Studio面向开发人员提供的元服务体检工具，可以在开发阶段快速对元服务的质量和体验好坏打分。
 
 开发者可以通过DevEco Studio连接本地设备，体检工具将自动遍历元服务，快速进行自测试，输出测试结果及评分，并提供分析指导以及修改建议，帮助开发者提升元服务质量和用户体验。
@@ -20,8 +21,8 @@ format: md
 ## 约束与限制
 
 * 当前仅phone类型的设备支持使用应用与元服务体检能力。
-* 在使用AppAnalyzer对HarmonyOS元服务进行测试之前，先要确保[DevEco Studio与真机设备已连接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device)。
-* 在使用AppAnalyzer对HarmonyOS元服务进行测试之前，请先根据[应用/服务签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)章节进行签名，再编译生成HAP或编译生成HSP。
+* 在使用AppAnalyzer对HarmonyOS元服务进行测试之前，先要确保[DevEco Studio与真机设备已连接](/docs/tools/coding-debug/ide-run-device)。
+* 在使用AppAnalyzer对HarmonyOS元服务进行测试之前，请先根据[应用/服务签名](/docs/tools/coding-debug/ide-signing)章节进行签名，再编译生成HAP或编译生成HSP。
 
 ## 使用流程及方法
 
@@ -29,4 +30,4 @@ format: md
 
 ## 评分方法及规则
 
-元服务当前支持的测试类型包括兼容性、稳定性、安全与隐私、最佳实践等，具体评分标准请参见[评分方法和指标](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer#section197465025710)，具体测试项请参见[测试标准](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer-rules)。
+元服务当前支持的测试类型包括兼容性、稳定性、安全与隐私、最佳实践等，具体评分标准请参见[评分方法和指标](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer#section197465025710)，具体测试项请参见[测试标准](/docs/tools/coding-debug/ide-app-analyzer-rules)。

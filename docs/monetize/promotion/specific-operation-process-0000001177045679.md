@@ -3,6 +3,10 @@ title: "具体操作流程"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/specific-operation-process-0000001177045679
 format: md
+upstream_id: monetize/promotion/specific-operation-process-0000001177045679
+last_sync: 2026-06-07
+sync_hash: b0b0efbc
+upstream_hash: 6265dea5600c
 ---
 
 # 具体操作流程
@@ -35,14 +39,14 @@ format: md
 
 ![](./img/bc964549430f.png)
 
-<strong>活动类型</strong>：共7种，具体类型活动请参考[具体类型活动示例](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/activity-examples-0000001176965771)。
+<strong>活动类型</strong>：共7种，具体类型活动请参考[具体类型活动示例](/docs/monetize/promotion/activity-examples-0000001176965771)。
 
 <strong>奖品发放方式</strong>：
 
 - 满足条件自动发放的方式（推荐）：用户满足活动条件后，奖品自动发放到用户的账户中；
 - 满足条件手动领取的方式：用户满足活动条件后，需进入活动详情页手动领取奖品。
 
-注明：活动结算模式相关信息，请查阅 [活动结算模式](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/settlement-model-0000001131086022)
+注明：活动结算模式相关信息，请查阅 [活动结算模式](/docs/monetize/promotion/settlement-model-0000001131086022)
 
 <strong>（3）关联奖品，提交素材</strong>
 

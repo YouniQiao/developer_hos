@@ -2,9 +2,10 @@
 title: "游戏大事件"
 original_url: /docs/dev/game-dev/games-center-big-event-all-0000002285953798
 format: md
+upstream_id: dev/game-dev/games-center-big-event-all-0000002285953798
+last_sync: 2026-06-07
+sync_hash: e3cc9a9a
 ---
-
-
 * **[概述](/docs/dev/game-dev/games-center-big-event-overview-0000002320626361)**
 * **[大版本更新](/docs/dev/game-dev/games-center-big-event-version-update-0000002286057084)**
 * **[首发](/docs/dev/game-dev/games-center-big-event-first-applyfor-0000002320553305)**

@@ -3,9 +3,10 @@ title: "功能要求"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/themes-fa-spec-guide--0000002505026369
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/themes-fa-spec-guide--0000002505026369
+last_sync: 2026-06-07
+sync_hash: 89745acc
 ---
-
-
 # 功能要求
 
 卡片应用成功并添桌后可以正常使用，功能要求如下：

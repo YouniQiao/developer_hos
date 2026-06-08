@@ -2,9 +2,10 @@
 title: "单选框 (Radio)"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection/arkts-common-components-radio-button
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection/arkts-common-components-radio-button
+last_sync: 2026-06-07
+sync_hash: cd6cd015
 ---
-
-
 Radio是单选框组件，通常用于提供相应的用户交互选择项，同一组的Radio中只有一个可以被选中。具体用法请参考[Radio](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-radio)。
 
 ## 创建单选框

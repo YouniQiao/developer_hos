@@ -2,9 +2,10 @@
 title: "FAQ"
 original_url: /docs/distribute/agc/agc-help-products-management-0000002391702238/agc-help-countries-faq-0000002425264361
 format: md
+upstream_id: distribute/agc/agc-help-products-management-0000002391702238/agc-help-countries-faq-0000002425264361
+last_sync: 2026-06-07
+sync_hash: 2f1cd9f1
 ---
-
-
 | 问题/需求描述 | 意见 |
 | --- | --- |
 | 商品创建完成后，不支持修改的字段有哪些？ | 商品创建完成后，不支持修改的字段：  produceNo 商品ID  purchaseType 商品类型  subGroupID 订阅分组ID |

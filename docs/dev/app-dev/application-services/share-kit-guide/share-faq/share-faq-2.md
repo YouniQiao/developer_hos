@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "分享数据类型不支持"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/share-faq/share-faq-2
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/share-faq/share-faq-2
+last_sync: 2026-06-07
+sync_hash: 570f13e6
 ---
-
-
 **现象描述：**
 
 1. 数据在分享过程中被丢弃或者提示无效的数据类型。

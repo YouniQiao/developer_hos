@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "（可选）推送报告"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-server/push-delivery-report
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-server/push-delivery-report
+last_sync: 2026-06-07
+sync_hash: 69ef163c
 ---
-
-
 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，点击“开发与服务”，在项目列表中找到您的项目，通过“增长 > 推送服务 > 推送报告”，您可以在“推送报告”中查看推送消息详情和推送用户详情。
 
 ![](./img/5e11e1c2.png)

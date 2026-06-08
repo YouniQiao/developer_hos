@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-invalid-void-type"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-invalid-void-type
 format: md
+upstream_id: tools/coding-debug/ide_no-invalid-void-type
+last_sync: 2026-06-07
+sync_hash: 5eb14e38
 ---
-
-
 # @typescript-eslint/no-invalid-void-type
 
 禁止在返回类型或者泛型类型之外使用void。

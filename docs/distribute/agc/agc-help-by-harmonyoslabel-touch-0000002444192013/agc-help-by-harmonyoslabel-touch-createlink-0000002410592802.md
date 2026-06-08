@@ -2,9 +2,10 @@
 title: "创建链接"
 original_url: /docs/distribute/agc/agc-help-by-harmonyoslabel-touch-0000002444192013/agc-help-by-harmonyoslabel-touch-createlink-0000002410592802
 format: md
+upstream_id: distribute/agc/agc-help-by-harmonyoslabel-touch-0000002444192013/agc-help-by-harmonyoslabel-touch-createlink-0000002410592802
+last_sync: 2026-06-07
+sync_hash: 7e3935e1
 ---
-
-
 #### 创建应用链接
 
 对于应用，在AGC[创建应用链接并配置网址域名](/docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp#在agc为应用创建关联的网址域 名)，确保域名发布状态为“成功”。

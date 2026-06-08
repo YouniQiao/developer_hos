@@ -2,9 +2,10 @@
 title: "NativeBundle开发指导"
 original_url: /docs/dev/ndk-dev/native-bundle-guidelines
 format: md
+upstream_id: dev/ndk-dev/native-bundle-guidelines
+last_sync: 2026-06-07
+sync_hash: fe05edf4
 ---
-
-
 ## еңәжҷҜд»Ӣз»Қ
 
 ејҖеҸ‘иҖ…еҸҜд»ҘйҖҡиҝҮжң¬жҢҮеҜјдәҶи§ЈеңЁHarmonyOSеә”з”ЁдёӯпјҢеҰӮдҪ•дҪҝз”ЁNative BundleжҺҘеҸЈиҺ·еҸ–еә”з”ЁиҮӘиә«зӣёе…ідҝЎжҒҜгҖӮ

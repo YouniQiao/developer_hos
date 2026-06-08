@@ -2,9 +2,10 @@
 title: "首曝"
 original_url: /docs/distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-first-exposure-0000002392555597
 format: md
+upstream_id: distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-first-exposure-0000002392555597
+last_sync: 2026-06-07
+sync_hash: 2e9c6868
 ---
-
-
 首曝是指游戏首次向玩家发布PV、实机视频等内容。
 
 #### 前提条件

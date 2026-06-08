@@ -3,8 +3,10 @@ title: "内容编辑多设备协同"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-continue
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-continue
+last_sync: 2026-06-07
+sync_hash: a5a0c5eb
 ---
-
 # 内容编辑多设备协同
 
 ## 概述

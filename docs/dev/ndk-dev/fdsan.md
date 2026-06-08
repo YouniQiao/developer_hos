@@ -2,8 +2,11 @@
 title: "fdsan使用指导"
 original_url: /docs/dev/ndk-dev/fdsan
 format: md
+upstream_id: dev/ndk-dev/fdsan
+last_sync: 2026-06-07
+sync_hash: a7facd77
+upstream_hash: 019e2c87bb6c
 ---
-
 
 ## 功能介绍
 

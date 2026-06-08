@@ -2,9 +2,10 @@
 title: "Connectivity Kit简介"
 original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/connectivity-kit-intro
 format: md
+upstream_id: dev/app-dev/system/system-network/connectivity-kit/connectivity-kit-intro
+last_sync: 2026-06-07
+sync_hash: 1e2433d4
 ---
-
-
 ## Connectivity Kit开发概述
 
 移动终端设备已经深入人民日常生活的方方面面，如连接蓝牙耳机听音乐、连接WIFI上网、使用NFC进行一碰开门等已成为终端用户日常生活中常见的行为。

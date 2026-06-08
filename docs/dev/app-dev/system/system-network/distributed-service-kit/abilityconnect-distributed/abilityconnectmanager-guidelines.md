@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "跨设备连接UIAbility开发指南"
 original_url: /docs/dev/app-dev/system/system-network/distributed-service-kit/abilityconnect-distributed/abilityconnectmanager-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-network/distributed-service-kit/abilityconnect-distributed/abilityconnectmanager-guidelines
+last_sync: 2026-06-07
+sync_hash: fa100b60
 ---
-
-
 ## 简介
 
 自API version 18起，系统新增支持应用跨设备协同连接与通信能力（含数据传输）。该特性通过分布式组件管理框架实现多端应用协作（即多个终端设备上的应用协同完成同一业务场景），成为分布式能力体系的核心功能之一。典型应用场景如智能手表端的拍照控制应用，可远程调用手机端相机功能并实现跨设备的实时双向数据交互。

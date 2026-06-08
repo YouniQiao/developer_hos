@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "选择收货地址Button"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-ship-to
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-ship-to
+last_sync: 2026-06-07
+sync_hash: 0c1a6927
 ---
-
-
 ## 场景介绍
 
 选择收货地址Button功能可以帮助开发者调用对应Button组件快速拉起地址选择页面，并返回用户选择的收货地址。

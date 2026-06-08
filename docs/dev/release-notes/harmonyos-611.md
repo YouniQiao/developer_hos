@@ -2,14 +2,15 @@
 title: "HarmonyOS 6.1.1(24) Beta"
 format: md
 original_url: /docs/dev/release-notes/harmonyos-611
+upstream_id: dev/release-notes/harmonyos-611
+last_sync: 2026-06-07
+sync_hash: ba65f76c
 ---
-
-
 # HarmonyOS 6.1.1(24) Beta
 
-6.1.1(24) Beta1在6.1.0(23)的基础上，开发能力得到进一步增强：Ability Kit增强了AbilityStage上下文能力以支持动态加载资源；ArkUI增强了平行视界状态获取、自定义组件跨Ability迁移、动态布局容器等能力，新增多个组件的C API；ArkTS增强了虚拟机维测能力，支持taskpool任务超时设置；ArkWeb增强了下载任务回调能力，新增URL白名单和安全控制接口；Camera Kit新增延迟预览输出和影随人动能力；Audio Kit新增MIDI C API支持外接设备；FAST Kit新增并发哈希表、向量运算和滤波器功能；Performance Analysis Kit增强了资源采集和崩溃日志分析能力；新增Content Embed Kit（内容嵌入服务）和Enterprise Threat Protection Kit（企业威胁防护服务），等等。更多详情可参见[OS平台新增和增强特性](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/os-new-feature-611)。
+6.1.1(24) Beta1在6.1.0(23)的基础上，开发能力得到进一步增强：Ability Kit增强了AbilityStage上下文能力以支持动态加载资源；ArkUI增强了平行视界状态获取、自定义组件跨Ability迁移、动态布局容器等能力，新增多个组件的C API；ArkTS增强了虚拟机维测能力，支持taskpool任务超时设置；ArkWeb增强了下载任务回调能力，新增URL白名单和安全控制接口；Camera Kit新增延迟预览输出和影随人动能力；Audio Kit新增MIDI C API支持外接设备；FAST Kit新增并发哈希表、向量运算和滤波器功能；Performance Analysis Kit增强了资源采集和崩溃日志分析能力；新增Content Embed Kit（内容嵌入服务）和Enterprise Threat Protection Kit（企业威胁防护服务），等等。更多详情可参见[OS平台新增和增强特性](/docs/dev/release-notes/os-new-feature-611)。
 
-DevEco Studio能力进一步增强：支持开发API 24工程；Hot Reload能力增强，支持修改C++代码和资源文件；支持解析更多AppFreeze日志，包括Binder通信信息、主线程任务队列和采样栈数据，提升开发者定位效率；新增ComMemory模板，用于分析UI界面各组件内存的分配情况，帮助定位UI组件内存泄漏问题，等等。更多详情可参见[DevEco Studio新增和增强特性](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/deveco-studio-new-features-611)。
+DevEco Studio能力进一步增强：支持开发API 24工程；Hot Reload能力增强，支持修改C++代码和资源文件；支持解析更多AppFreeze日志，包括Binder通信信息、主线程任务队列和采样栈数据，提升开发者定位效率；新增ComMemory模板，用于分析UI界面各组件内存的分配情况，帮助定位UI组件内存泄漏问题，等等。更多详情可参见[DevEco Studio新增和增强特性](/docs/dev/release-notes/deveco-studio-new-features-611)。
 
 ## 版本信息
 
@@ -123,7 +124,7 @@ DevEco Studio能力进一步增强：支持开发API 24工程；Hot Reload能力
 
 - 新增代码签名信息查询功能，开发者可获取设备上已签名的文件签名信息。（[指南-ArkTS](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-audit/devicesecurity-audit-acquirecodesign-arkts)、[API参考-ArkTS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-securityaudit-api#acquirecodesign)、[指南-C/C++](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-audit/devicesecurity-audit-acquirecodesign-c)、[API参考-C/C++](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-capi-securityaudit#hms_securityaudit_acquirecodesign)）
 - 数字盾服务新增支持Tablet、PC/2in1设备。（[指南](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-introduction#支持的设备)、[API参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-trusted-auth-api)）
-- 新增系统安全专项相关事件：进程提权事件、进程异常调试事件、系统目录异常挂载事件、进程异常崩溃事件、应用代码未签名事件、应用代码验签异常事件、驱动代码验签异常事件、驱动非法映射内核内存事件、内核内存异常使用事件。（[指南-ArkTS](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-audit-subscribe-arkts-filterevent)、[API参考-ArkTS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-securityaudit-api#notifyevent)、[指南-C/C++](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-audit/devicesecurity-audit-subscribe-arkts/devicesecurity-audit-subscribe-arkts-filterevent)、[API参考-C/C++](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-capi-securityaudit#securityaudit_notify_event)）
+- 新增系统安全专项相关事件：进程提权事件、进程异常调试事件、系统目录异常挂载事件、进程异常崩溃事件、应用代码未签名事件、应用代码验签异常事件、驱动代码验签异常事件、驱动非法映射内核内存事件、内核内存异常使用事件。（[指南-ArkTS](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-audit/devicesecurity-audit-subscribe-arkts/devicesecurity-audit-subscribe-arkts-filterevent)、[API参考-ArkTS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-securityaudit-api#notifyevent)、[指南-C/C++](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-audit/devicesecurity-audit-subscribe-arkts/devicesecurity-audit-subscribe-arkts-filterevent)、[API参考-C/C++](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/devicesecurity-capi-securityaudit#securityaudit_notify_event)）
 
 ### Enterprise Data Guard
 

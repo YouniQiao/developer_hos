@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "打开APP Button"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-launchapp
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-launchapp
+last_sync: 2026-06-07
+sync_hash: 396427cd
 ---
-
-
 ## 场景介绍
 
 打开APP功能可以帮助调用对应Button组件打开另一个应用。

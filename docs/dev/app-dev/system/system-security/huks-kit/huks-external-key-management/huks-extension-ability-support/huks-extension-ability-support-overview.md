@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "CryptoExtensionAbility扩展能力介绍"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-extension-ability-support/huks-extension-ability-support-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-extension-ability-support/huks-extension-ability-support-overview
+last_sync: 2026-06-07
+sync_hash: 0483bc7c
 ---
-
-
 CryptoExtensionAbility是Stage模型中扩展组件[ExtensionAbility](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview)的派生类。
 
 CryptoExtensionAbility给驱动厂商提供外部密钥管理扩展能力所需接口定义，包括打开/关闭资源、PIN码认证、签名验签、导出证书等接口。

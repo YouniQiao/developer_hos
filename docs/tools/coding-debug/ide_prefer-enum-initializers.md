@@ -3,9 +3,10 @@ title: "@typescript-eslint/prefer-enum-initializers"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_prefer-enum-initializers
 format: md
+upstream_id: tools/coding-debug/ide_prefer-enum-initializers
+last_sync: 2026-06-07
+sync_hash: 2ddd941d
 ---
-
-
 # @typescript-eslint/prefer-enum-initializers
 
 推荐显式初始化每个枚举成员值。

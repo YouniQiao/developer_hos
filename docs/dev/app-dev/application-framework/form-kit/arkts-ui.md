@@ -2,9 +2,10 @@
 title: "ArkTS卡片开发（推荐）"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui
 format: md
+upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui
+last_sync: 2026-06-07
+sync_hash: f022fad8
 ---
-
-
 * **[ArkTS卡片概述](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-form-overview)**
 * **[创建ArkTS卡片](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-creation)**
 * **[配置ArkTS卡片的配置文件](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration)**

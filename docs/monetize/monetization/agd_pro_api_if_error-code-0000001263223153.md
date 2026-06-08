@@ -3,10 +3,10 @@ title: "错误码说明"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_api_if_error-code-0000001263223153
 format: md
+upstream_id: monetize/monetization/agd_pro_api_if_error-code-0000001263223153
+last_sync: 2026-06-07
+sync_hash: 139ebaee
 ---
-
-
-
 #### API接口错误码
 
 | 错误码rtnCode | 错误描述rtnDesc | 说明 |

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Ukey PIN码认证介绍及规格"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-pin-authentication-management/huks-ukey-pin-authentication-management-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-pin-authentication-management/huks-ukey-pin-authentication-management-overview
+last_sync: 2026-06-07
+sync_hash: ed5fa13b
 ---
-
-
 PIN（Personal Identification Number）码是Ukey设备的安全访问凭证，采用“硬件设备+PIN码”的双因子认证模式。用户必须同时拥有物理Ukey设备和正确的PIN码才能访问设备内的密钥材料。
 
 PIN码作用如下：

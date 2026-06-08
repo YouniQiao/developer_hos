@@ -2,9 +2,10 @@
 title: "批量导出门店"
 original_url: /docs/dev/atomic-dev/instant-service-store/instant-service-store-batch-export
 format: md
+upstream_id: dev/atomic-dev/instant-service-store/instant-service-store-batch-export
+last_sync: 2026-06-07
+sync_hash: efa4f689
 ---
-
-
 1. 在服务直达主界面，选择“门店管理”页签，根据门店状态或门店名称/编码筛选出需要导出的门店。
 
    ![](./img/09aa275a.png "点击放大")

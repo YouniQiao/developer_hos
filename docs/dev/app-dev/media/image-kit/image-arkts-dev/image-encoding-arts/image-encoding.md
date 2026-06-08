@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用ImagePacker完成图片编码"
 original_url: /docs/dev/app-dev/media/image-kit/image-arkts-dev/image-encoding-arts/image-encoding
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-arkts-dev/image-encoding-arts/image-encoding
+last_sync: 2026-06-07
+sync_hash: e61dae91
 ---
-
-
 图片编码指将PixelMap压缩成不同格式的图片文件，用于保存和传输。
 
 支持使用[PackToData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagepacker#packtodata13-1)和[PackToFile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagepacker#packtofile11-2)将[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)编码为JPEG、WebP、PNG和HEIC格式。

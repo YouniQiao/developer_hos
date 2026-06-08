@@ -3,8 +3,10 @@ title: "获取文件上传凭证"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-asset5-0000001338581865
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-asset5-0000001338581865
+last_sync: 2026-06-07
+sync_hash: ad4305e6
 ---
-
 # 获取文件上传凭证
 
 您通过本接口可以获取文件上传凭证。

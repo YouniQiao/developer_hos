@@ -2,8 +2,11 @@
 title: "@Require装饰器：校验构造传参"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-require
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-require
+last_sync: 2026-06-07
+sync_hash: 7d951fbf
+upstream_hash: a1c277617fb8
 ---
-
 
 @Require是校验@Prop、@State、@Provide、@BuilderParam、@Param和普通变量（无状态装饰器修饰的变量）是否需要构造传参的一个装饰器。
 

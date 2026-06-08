@@ -3,8 +3,10 @@ title: "投放推荐任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-delivery-task-recommend-0000001328517618
 format: md
+upstream_id: monetize/promotion/bpos-delivery-task-recommend-0000001328517618
+last_sync: 2026-06-07
+sync_hash: e003d4bf
 ---
-
 # 投放推荐任务
 
 ## 概述
@@ -17,7 +19,7 @@ format: md
 
 ## 操作步骤
 
-1. 在[应用管理](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/appmanagement-0000001182393586)中添加应用并申请推广国家。
+1. 在[应用管理](/docs/monetize/promotion/appmanagement-0000001182393586)中添加应用并申请推广国家。
 2. 创建广告计划。
 
    点击![](./img/522c217cd8ea.png)，选择“创建计划”。
@@ -32,7 +34,7 @@ format: md
    - <strong>推广计划名称：</strong>设置一个清晰易懂的计划名称，方便您在广告账户中轻松找到这个计划，例如：推广产品 + 营销目标 + 投放网络 + 目标人群。
 
 3. 创建广告任务（简称“基础任务”）。
-   - <strong>推广应用ID：</strong>从下拉列表中选择要推广的应用。列表中仅展示已经成功添加到“应用管理”并通过推广审核的应用。如果需要推广的应用不在下拉列表中，您需要先添加应用，详情请参考应用市场应用推广评测-[应用管理](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/appmanagement-0000001182393586)。
+   - <strong>推广应用ID：</strong>从下拉列表中选择要推广的应用。列表中仅展示已经成功添加到“应用管理”并通过推广审核的应用。如果需要推广的应用不在下拉列表中，您需要先添加应用，详情请参考应用市场应用推广评测-[应用管理](/docs/monetize/promotion/appmanagement-0000001182393586)。
    - <strong>定向：</strong>设置您希望推广的国家/地区，只支持从此应用已经[广告审核](/docs/monetize/promotion/bpos-delivery-task-promotion-evaluation-0000001379837553)的国家中进行选择，同一任务中可以选择多个国家/地区进行投放。如果您想使用更多的定向功能，请参考[应用市场应用推广任务支持基础定向功能](/docs/monetize/promotion/bpos-functions-base-target-0000001328677542)。
    - <strong>版位：</strong>推荐您同时在所有版位进行推广，提升应用转化率。由于每个任务只能选择一个版位，需要您为应用市场的每个版位创建任务。
    - <strong>投放日期：</strong>不限制日期：如果您希望广告一直投放，您可以设置一个起始日期，起始日期默认是您创建广告的当天，您也可以指定未来的某一个日期进行投放。选择日期范围：如果您希望广告在某一段日期内投放，您可以为广告设置指定的日期。
@@ -56,7 +58,7 @@ format: md
 
 ![](./img/cb3926474683.png) 
 
-- 如果您需要使用此功能，需要申请[特性通行名单](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/addtongxing-0000001128278195)。
+- 如果您需要使用此功能，需要申请[特性通行名单](/docs/monetize/promotion/addtongxing-0000001128278195)。
 
 1. 在已有计划下创建普通任务。
 

@@ -3,9 +3,10 @@ title: "代码检查工具（codelinter）"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/ide-command-line-codelinter
 format: md
+upstream_id: tools/cli-tools/ide-command-line-codelinter
+last_sync: 2026-06-07
+sync_hash: 8fb0454d
 ---
-
-
 # 代码检查工具（codelinter）
 
 codelinter同时支持使用命令行执行代码检查与修复，可将codelinter工具集成到门禁或持续集成环境中。

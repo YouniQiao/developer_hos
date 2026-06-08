@@ -3,9 +3,10 @@ title: "ohpm run错误码"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/errorcode/ide-ohpm-run-errorcode
 format: md
+upstream_id: tools/ohpm/errorcode/ide-ohpm-run-errorcode
+last_sync: 2026-06-07
+sync_hash: 626bddd5
 ---
-
-
 # ohpm run错误码
 
 ## 00611001 脚本执行失败

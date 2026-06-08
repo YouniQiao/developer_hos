@@ -2,9 +2,10 @@
 title: "文件没有默认导出，但可以默认导入的场景说明"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-134
 format: md
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-134
+last_sync: 2026-06-07
+sync_hash: 57698dc1
 ---
-
-
 **问题现象**
 
 当声明文件没有默认导出时，使用 import xxx from 'module' 导入不会导致编译不会报错。

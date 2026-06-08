@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "游戏出现卡死后，应该如何避免下一次秒启后还是卡死场景"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-6
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-6
+last_sync: 2026-06-07
+sync_hash: 078d449e
+upstream_hash: a58c73664d02
 ---
-
 
 建议游戏上划退出后进行场景切换操作，若场景切换失败或场景切换超时（5s）则设置游戏不支持缓存后快速启动。
 

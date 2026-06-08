@@ -2,9 +2,10 @@
 title: "Session间缓存共享"
 original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-cache/remote-communication-cache-shared
 format: md
+upstream_id: dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-cache/remote-communication-cache-shared
+last_sync: 2026-06-07
+sync_hash: 5fc9abaf
 ---
-
-
 从6.0.0(20)开始，支持Session间缓存共享。
 
 Session之间数据是隔离的，当业务场景需要实现跨Session访问缓存数据时，可通过以下两种标准方式达成目标：

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Notification Kit简介"
 original_url: /docs/dev/app-dev/application-services/notification-kit/notification-overview
 format: md
+upstream_id: dev/app-dev/application-services/notification-kit/notification-overview
+last_sync: 2026-06-07
+sync_hash: 7b15a9ac
 ---
-
-
 Notification Kit（用户通知服务）为开发者提供本地通知发布通道，开发者可借助Notification Kit将应用产生的通知直接在客户端本地推送给用户，本地通知根据通知类型及发布场景会产生对应的铃声、震动、横幅、锁屏、息屏、通知栏提醒和显示。
 
 ## 使用场景
@@ -78,4 +79,4 @@ Notification Kit中常用的通知样式如下：
 
 本Kit支持模拟器。
 
-模拟器与真机存在通用差异，详情请参见“[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification)”。
+模拟器与真机存在通用差异，详情请参见“[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification)”。

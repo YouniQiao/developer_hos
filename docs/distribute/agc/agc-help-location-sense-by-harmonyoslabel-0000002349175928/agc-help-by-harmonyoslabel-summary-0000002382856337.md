@@ -2,9 +2,10 @@
 title: "概述"
 original_url: /docs/distribute/agc/agc-help-location-sense-by-harmonyoslabel-0000002349175928/agc-help-by-harmonyoslabel-summary-0000002382856337
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-by-harmonyoslabel-0000002349175928/agc-help-by-harmonyoslabel-summary-0000002382856337
+last_sync: 2026-06-07
+sync_hash: edebd1c8
 ---
-
-
 HarmonyOS标签类型包含“碰一碰”、“扫一扫”、“碰扫合一”三种样式，主要应用于线下服务引导、活动推广等场景，方便HarmonyOS 5设备用户通过系统提供的碰一碰或扫一扫，实现服务一步直达。
 
 #### 优势

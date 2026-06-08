@@ -2,9 +2,10 @@
 title: "保护需要用户认证的密码类数据"
 original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-scenarios/asset-scenario2
 format: md
+upstream_id: dev/app-dev/system/system-security/asset-store-kit/asset-scenarios/asset-scenario2
+last_sync: 2026-06-07
+sync_hash: 08d88578
 ---
-
-
 ![](./img/3b8f7141.png)
 
 密码类数据可以是密码、登录令牌、信用卡号等用户敏感数据。

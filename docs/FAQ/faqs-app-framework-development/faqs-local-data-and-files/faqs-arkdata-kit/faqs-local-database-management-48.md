@@ -2,9 +2,10 @@
 format: md
 title: "ValuesBucket是否有可动态添加字段的方式"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-48
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-48
+last_sync: 2026-06-07
+sync_hash: 73df4489
 ---
-
-
 **解决措施**
 
 ValuesBucket的实现如下：

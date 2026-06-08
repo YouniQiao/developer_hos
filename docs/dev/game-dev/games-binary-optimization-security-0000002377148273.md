@@ -2,9 +2,10 @@
 title: "隐私声明"
 original_url: /docs/dev/game-dev/games-binary-optimization-security-0000002377148273
 format: md
+upstream_id: dev/game-dev/games-binary-optimization-security-0000002377148273
+last_sync: 2026-06-07
+sync_hash: d842a0b9
 ---
-
-
 “二进制优化服务” 是由华为软件技术有限公司（注册地：江苏省南京市雨花台区软件大道101号）（以下简称“我们”或“华为”）为您提供的游戏性能优化服务。华为非常重视您的个人信息和隐私保护，我们将会按照法律要求和业界成熟的安全标准，为您的个人信息提供相应的安全保护措施。目前仅在中国大陆地区提供服务。
 
 ## 我们如何收集和使用您的个人信息

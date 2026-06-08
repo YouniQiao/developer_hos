@@ -2,8 +2,11 @@
 title: "性能分析"
 original_url: /docs/quality/optimization-tool-practice
 format: md
+upstream_id: /docs/quality/optimization-tool-practice
+last_sync: 2026-06-07
+sync_hash: c005a15a
+upstream_hash: f13e34e96bf1
 ---
-
 
 # 性能分析
 

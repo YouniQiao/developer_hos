@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "音频录制开发概述"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-recording/audio-recording-overview
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-recording/audio-recording-overview
+last_sync: 2026-06-07
+sync_hash: af3ed515
 ---
-
-
 ## 如何选择音频录制开发方式
 
 系统提供了多样化的API，来帮助开发者完成音频录制的开发，不同的API适用于不同录音输出格式、音频使用场景或不同开发语言。因此，选择合适的音频录制API，有助于降低开发工作量，实现更佳的音频录制效果。

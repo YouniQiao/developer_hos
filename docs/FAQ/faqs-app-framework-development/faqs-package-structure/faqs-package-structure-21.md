@@ -2,8 +2,10 @@
 format: md
 title: "如何正确引用HAR/HSP包模块"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-21
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-21
+last_sync: 2026-06-07
+sync_hash: 7ab4797c
 ---
-
 在HarmonyOS应用开发中，处理包（HAR/HSP）模块间的依赖很常见。正确的依赖处理方式能确保代码模块化和可维护性，同时减少团队开发中的管理与沟通成本。以下是如何引用包模块的推荐和不推荐做法。
 
 * 推荐方式：

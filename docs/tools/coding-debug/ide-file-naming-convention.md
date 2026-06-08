@@ -3,9 +3,10 @@ title: "@hw-stylistic/file-naming-convention"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-file-naming-convention
 format: md
+upstream_id: tools/coding-debug/ide-file-naming-convention
+last_sync: 2026-06-07
+sync_hash: 20b61ba7
 ---
-
-
 # @hw-stylistic/file-naming-convention
 
 强制代码文件和资源文件保持一致的命名风格。

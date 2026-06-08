@@ -2,9 +2,10 @@
 title: "USB串口配置管理"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-serial-dev/usbserial-configuration
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-serial-dev/usbserial-configuration
+last_sync: 2026-06-07
+sync_hash: 9a43bc11
 ---
-
-
 ## 简介
 
 USB串口配置管理中，波特率、数据位、校验位和停止位是串口通信协议的核心参数，它们共同定义了数据传输的格式和规则。通过合理配置这些参数，可以显著提升串口通信的可靠性和效率。

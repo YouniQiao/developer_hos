@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Audio Vivid播放"
 original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/audiovivid/audiovivid-audiorenderer
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/audio-video-codec/audiovivid/audiovivid-audiorenderer
+last_sync: 2026-06-07
+sync_hash: 4bc154ce
 ---
-
-
 在获取到解码后的Audio Vivid的PCM数据和元数据之后，可以调用OHAudio的相关播放接口，进行Audio Vivid格式音源的渲染播放。详细的API说明请参考[OHAudio API参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudio)。
 
 ## 在CMake脚本中链接到动态库

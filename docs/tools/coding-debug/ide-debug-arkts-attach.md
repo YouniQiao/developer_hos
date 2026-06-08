@@ -3,9 +3,10 @@ title: "attach启动调试"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-arkts-attach
 format: md
+upstream_id: tools/coding-debug/ide-debug-arkts-attach
+last_sync: 2026-06-07
+sync_hash: 64c96e4f
 ---
-
-
 # attach启动调试
 
 开发者也可以通过将调试程序attach到已运行的应用进行调试。

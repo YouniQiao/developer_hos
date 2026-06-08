@@ -2,9 +2,10 @@
 title: "Crypto Architecture Kit简介"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-architecture-kit-intro
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-architecture-kit-intro
+last_sync: 2026-06-07
+sync_hash: 592eb6c6
 ---
-
-
 Crypto Architecture Kit屏蔽了第三方密码学算法库实现差异的算法框架，提供加解密、签名验签、消息认证码、哈希、安全随机数、密钥派生等相关功能。
 
 开发者可以通过调用加解密算法框架服务，忽略底层不同第三方密码学算法库的差异，实现快速开发。
@@ -22,11 +23,11 @@ Crypto Architecture Kit屏蔽了第三方密码学算法库实现差异的算法
 * [密钥生成和转换](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-overview)
 * [加解密](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encryption-decryption-overview)
 * [签名验签](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-overview)
-* [密钥协商](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-overview)
+* [密钥协商](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-agreement/crypto-key-agreement-overview)
 * [消息摘要计算](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-generate-message/crypto-generate-message-digest-overview)
 * [消息认证码计算](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-mac/crypto-compute-mac-overview)
 * [安全随机数生成](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-rand/crypto-generate-random-number)
-* [密钥派生](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-derivation-overview)
+* [密钥派生](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-derivation/crypto-key-derivation-overview)
 
 ## 基本概念
 
@@ -47,7 +48,7 @@ Crypto Architecture Kit屏蔽了第三方密码学算法库实现差异的算法
 
 本Kit支持模拟器。
 
-模拟器与真机存在通用差异，详情请参见详情请参见[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification)。
+模拟器与真机存在通用差异，详情请参见详情请参见[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification)。
 
 ## 与相关Kit的关系
 

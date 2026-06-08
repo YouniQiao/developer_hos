@@ -2,8 +2,11 @@
 title: "Web加载失败时的白屏页面如何改为自定义错误页"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-96
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-96
+last_sync: 2026-06-07
+sync_hash: 35087d3c
+upstream_hash: cfaeb27bfa1e
 ---
-
 
 **问题场景：**
 

@@ -3,8 +3,10 @@ title: "批量查询子任务列表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-subtask-batchquery-0000001179940260
 format: md
+upstream_id: monetize/promotion/marketapi-subtask-batchquery-0000001179940260
+last_sync: 2026-06-07
+sync_hash: 9a853d01
 ---
-
 # 批量查询子任务列表
 
 ## 功能介绍

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "证书链在线校验证书吊销状态"
 original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-verify-cerchainvalidator-revocation-object
 format: md
+upstream_id: dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-verify-cerchainvalidator-revocation-object
+last_sync: 2026-06-07
+sync_hash: 5ca8b254
 ---
-
-
 ## 本地证书链吊销状态校验时仅校验终端实体证书
 
 API 22开始支持本地证书链吊销状态校验时仅校验终端实体证书。

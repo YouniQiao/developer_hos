@@ -2,9 +2,10 @@
 title: "管理设备"
 original_url: /docs/distribute/agc/agc-help-location-sense-by-beacon-0000002305369365/agc-help-beacon-manage-0000002289119360
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-by-beacon-0000002305369365/agc-help-beacon-manage-0000002289119360
+last_sync: 2026-06-07
+sync_hash: 75636675
 ---
-
-
 #### 设备状态
 
 信标设备状态包括草稿、待激活、激活中、已激活4种。状态流转图如下：

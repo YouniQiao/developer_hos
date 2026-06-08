@@ -2,9 +2,10 @@
 title: "开发指南"
 original_url: /docs/dev/atomic-dev/ascf/ascf-development-guide/ascf-development-guide
 format: md
+upstream_id: dev/atomic-dev/ascf/ascf-development-guide/ascf-development-guide
+last_sync: 2026-06-07
+sync_hash: f2d1df72
 ---
-
-
 ASCF框架支持采用类似小程序开发技术开发元服务，详情请参考[ASCF框架概述](/docs/dev/atomic-dev/ascf/ascf-overview)。在开始开发前，请先确保已[获取并安装ASCF插件](/docs/dev/atomic-dev/ascf/ascf-plugin)。
 
 ASCF框架支持复用小程序代码资产，支持通过转换工具转换为元服务，也支持使用[uniapp](https://uniapp.dcloud.net.cn/tutorial/mp-harmony/intro.html)、[Taro](https://docs.taro.zone/docs/GETTING-STARTED#ascf元服务)等三方框架编译为元服务。转换后都需要针对平台相关功能和特性做适配和修改。

@@ -2,6 +2,10 @@
 title: "入驻指导"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/beginner-guide-0000001054200638/settlement-guidance-0000001056348857
+upstream_id: distribute/content-dist/theme-center/beginner-guide-0000001054200638/settlement-guidance-0000001056348857
+last_sync: 2026-06-07
+sync_hash: 4f6193b6
+upstream_hash: 87567fd6cc3b
 ---
 
 import MergeTable from '@site/src/components/MergeTable';
@@ -72,7 +76,7 @@ import MergeTable from '@site/src/components/MergeTable';
 
 1. <strong>以下操作或将导致申请驳回：</strong>在“作品上传”入口上传非作品预览图的内容，包括但不限于：版权文件、原创证明、个人简历等。
 2. 限制申请：审核被驳回后，审核意见中如有注明间隔期，请按审核意见执行。间隔期内多次以相同作品申请会被判定为恶意申请，可能会被限制申请功能（1~3个月）。
-3. 包含商业化/广告信息的作品资源，不属于内容合作范畴，请联系[鲸鸿动能广告](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/ads_lxwm01-0000001192387242)沟通合作详情。
+3. 包含商业化/广告信息的作品资源，不属于内容合作范畴，请联系[鲸鸿动能广告](/docs/monetize/promotion/ads_lxwm01-0000001192387242)沟通合作详情。
 
 ### 2.2 入驻方式
 
@@ -124,4 +128,4 @@ import MergeTable from '@site/src/components/MergeTable';
 
 详见新手指南-&gt;[结算流程](/docs/distribute/content-dist/theme-center/beginner-guide-0000001054200638/checkout-process-0000001055868899)。
 
--&gt;[设计师入驻常见FAQ](https://developer.huawei.com/consumer/cn/doc/distribution/content/faq-0000001055159128)
+-&gt;[设计师入驻常见FAQ](/docs/distribute/content-dist/theme-center/developer-notes-0000001054559367/faq-0000001055159128)

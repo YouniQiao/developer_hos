@@ -2,9 +2,10 @@
 title: "模拟器运行问题处理"
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-runtime-emulator
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-runtime-emulator
+last_sync: 2026-06-07
+sync_hash: 6a29322b
 ---
-
-
 **问题现象**
 
 模拟器运行ASCF框架无法正常启动，提示“Failed to install the HAP or HSP because the dependent module does not exist.”错误。

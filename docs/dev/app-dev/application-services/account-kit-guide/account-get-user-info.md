@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取华为账号用户信息"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-get-user-info
+last_sync: 2026-06-07
+sync_hash: 1d7d96c2
 ---
-
-
 * **[概述](/docs/dev/app-dev/application-services/account-get-user-info-overview)**
 * **[获取头像昵称](/docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-avatar-nickname)**
 * **[获取手机号](/docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-phone)**

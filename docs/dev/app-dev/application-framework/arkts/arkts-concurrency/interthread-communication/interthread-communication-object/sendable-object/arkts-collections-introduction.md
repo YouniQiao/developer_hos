@@ -2,9 +2,10 @@
 title: "共享容器"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-collections-introduction
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-collections-introduction
+last_sync: 2026-06-07
+sync_hash: 3d150107
 ---
-
-
 ## ArkTS容器集
 
 ArkTS共享容器（[@arkts.collections (ArkTS容器集)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections)）是一种在并发实例间共享传输的容器类，用于并发场景下的高性能数据传递。它的功能与ECMAScript 262规范定义的容器类似，但存在部分差异，具体可见[共享容器与原生API方法的行为差异对比](#共享容器与原生api方法的行为差异对比)。

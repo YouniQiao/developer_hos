@@ -2,9 +2,10 @@
 title: "UI上下文异常调试"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/arkts-wrong-uicontext-debug
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-debug-optimize/arkts-wrong-uicontext-debug
+last_sync: 2026-06-07
+sync_hash: 174604d6
 ---
-
-
 本指导主要介绍如何解决因使用无效的[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)导致文本显示异常的问题。当开发者使用了已失效的UIContext对象（通常是因为对应的UI实例已被销毁），可能导致后续UI操作无效。此类问题常见于多窗口场景。从API version 12开始，该问题也见于调用[setSupportedProcessCache](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-applicationcontext#applicationcontextsetsupportedprocesscache12)打开进程缓存后快速启动的情形。
 
 ## 定位UIContext错误问题

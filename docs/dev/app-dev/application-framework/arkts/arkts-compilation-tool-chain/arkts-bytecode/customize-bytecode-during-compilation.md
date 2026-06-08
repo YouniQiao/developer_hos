@@ -2,9 +2,10 @@
 title: "编译期自定义修改方舟字节码"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/customize-bytecode-during-compilation
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/customize-bytecode-during-compilation
+last_sync: 2026-06-07
+sync_hash: 3683367e
 ---
-
-
 如果开发者希望自定义修改方舟字节码文件的内容，可以使用ArkTS编译工具链提供的方法自定义修改方舟字节码文件。
 
 ## 能力配置说明

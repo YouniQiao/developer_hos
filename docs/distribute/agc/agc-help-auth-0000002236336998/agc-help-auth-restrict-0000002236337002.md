@@ -2,9 +2,10 @@
 title: "使用限制"
 original_url: /docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-restrict-0000002236337002
 format: md
+upstream_id: distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-restrict-0000002236337002
+last_sync: 2026-06-07
+sync_hash: b9d39a72
 ---
-
-
 本章节将为您详细介绍认证服务不同类型的限制。这些限制可能会根据实际情况随时更新，请您注意文档变化。
 
 #### 电话号码验证码限额

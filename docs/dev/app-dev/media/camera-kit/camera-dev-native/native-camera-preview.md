@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "预览(C/C++)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-preview
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-native/native-camera-preview
+last_sync: 2026-06-07
+sync_hash: a0071b5c
 ---
-
-
 预览是启动相机后看见的画面，通常在拍照和录像前执行。
 
 ## 开发步骤

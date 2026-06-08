@@ -2,9 +2,10 @@
 title: "振动开发概述"
 original_url: /docs/dev/atomic-dev/atomic-vibrator/atomic-vibrator-overview
 format: md
+upstream_id: dev/atomic-dev/atomic-vibrator/atomic-vibrator-overview
+last_sync: 2026-06-07
+sync_hash: 6074e580
 ---
-
-
 振动器模块服务最大化开放马达器件能力，通过拓展马达服务实现振动与交互融合设计，打造细腻精致的一体化振动体验和差异化体验，提升用户交互效率和易用性、提升用户体验、增强品牌竞争力。
 
 ## 运作机制

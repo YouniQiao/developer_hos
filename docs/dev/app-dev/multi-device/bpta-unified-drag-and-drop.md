@@ -3,8 +3,10 @@ title: "统一拖拽"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-unified-drag-and-drop
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-unified-drag-and-drop
+last_sync: 2026-06-07
+sync_hash: af7dcb7d
 ---
-
 # 统一拖拽
 
 ## 概述

@@ -2,9 +2,10 @@
 title: "版本升级"
 original_url: /docs/dev/game-dev/games-hismartperf-update-version-0000002321404225
 format: md
+upstream_id: dev/game-dev/games-hismartperf-update-version-0000002321404225
+last_sync: 2026-06-07
+sync_hash: c7af597d
 ---
-
-
 若打开工具时未升级工具版本，您可以在“版本升级”页面进行升级。
 
 1. 打开“版本升级”页面，点击“立即升级”。

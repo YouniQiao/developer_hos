@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "修改数字盾密码"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-pwdmng/devicesecurity-trustedauth-modifypwd
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-pwdmng/devicesecurity-trustedauth-modifypwd
+last_sync: 2026-06-07
+sync_hash: 4877d7f2
 ---
-
-
 ## 场景介绍
 
 激活数字盾后，用户可在完成旧密码认证后，修改数字盾密码信息。

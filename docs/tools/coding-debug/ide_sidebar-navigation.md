@@ -3,9 +3,10 @@ title: "@cross-device-app-dev/sidebar-navigation"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_sidebar-navigation
 format: md
+upstream_id: tools/coding-debug/ide_sidebar-navigation
+last_sync: 2026-06-07
+sync_hash: ad59a3d8
 ---
-
-
 # @cross-device-app-dev/sidebar-navigation
 
 对于2in1和tablet设备，应将Tabs组件设置为侧边导航栏。

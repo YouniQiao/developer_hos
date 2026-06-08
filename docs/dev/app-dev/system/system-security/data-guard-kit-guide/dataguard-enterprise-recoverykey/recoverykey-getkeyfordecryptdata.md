@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取解密硬盘数据的企业恢复密钥"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-getkeyfordecryptdata
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-getkeyfordecryptdata
+last_sync: 2026-06-07
+sync_hash: 5b1aac06
 ---
-
-
 ## 场景介绍
 
 为应用提供获取企业恢复密钥的能力，在企业公钥证书配置成功后，可直接获取企业恢复密钥，用于解密已加密的硬盘数据。

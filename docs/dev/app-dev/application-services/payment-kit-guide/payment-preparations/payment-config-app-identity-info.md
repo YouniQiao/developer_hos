@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "端侧应用配置"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-config-app-identity-info
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-config-app-identity-info
+last_sync: 2026-06-07
+sync_hash: 58eca6a2
 ---
-
-
 可下载并参考[示例代码-客户端](https://gitcode.com/HarmonyOS_Samples/payment-kit-sample-code-clientdemo-arkts)，以此来快速的完成商户端侧应用开发环境的构建。
 
 通过下载示例代码或商户自行创建端侧应用后，需完成以下配置：

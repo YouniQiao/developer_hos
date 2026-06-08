@@ -3,9 +3,10 @@ title: "更多的扩展能力"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-emulator-more-features
 format: md
+upstream_id: tools/coding-debug/ide-emulator-more-features
+last_sync: 2026-06-07
+sync_hash: b59efd87
 ---
-
-
 # 更多的扩展能力
 
 模拟器支持电池、GPS、虚拟传感器等扩展能力，具体使用方式参考以下介绍。点击模拟器菜单栏的![](./img/zh-cn_image_0000002602184875.png)，打开扩展菜单栏。

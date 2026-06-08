@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "应用内通知设置快捷入口开发指导"
 original_url: /docs/dev/app-dev/application-services/notification-kit/notification-shortcut-settings
 format: md
+upstream_id: dev/app-dev/application-services/notification-kit/notification-shortcut-settings
+last_sync: 2026-06-07
+sync_hash: 30acff5c
 ---
-
-
 ## 使用场景
 
 应用的通知设置页面属于3层页面，用户查找难度较大，导致应用的通知关闭率上升。

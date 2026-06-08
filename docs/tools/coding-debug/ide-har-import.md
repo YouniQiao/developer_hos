@@ -2,9 +2,10 @@
 title: "引用及管理共享包"
 format: md
 original_url: /docs/tools/coding-debug/ide-har-import
+upstream_id: tools/coding-debug/ide-har-import
+last_sync: 2026-06-07
+sync_hash: b88eff6e
 ---
-
-
 # 引用及管理共享包
 
 引用三方HAR，包括从ohpm仓库进行安装、从本地文件夹和本地压缩包中进行安装三种方式。

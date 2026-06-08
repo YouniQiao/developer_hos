@@ -2,9 +2,10 @@
 title: "怎么获取应用已使用的缓存大小，如何使用API清理缓存"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-12
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-12
+last_sync: 2026-06-07
+sync_hash: 296fd276
 ---
-
-
 **解决措施**
 
 获取应用已使用缓存大小可以通过[storageStatistics.getCurrentBundleStats](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-storage-statistics#storagestatisticsgetcurrentbundlestats9)来获取。清理缓存需要调用context的cacheDir获取缓存，然后调用系统[@ohos.file.fs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs) 接口，判断是文件或者文件夹，再分别删除缓存。

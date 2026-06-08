@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "判断应用是否被系统分享拉起"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-target-application/share-launch-param
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/system-share/share-target-application/share-launch-param
+last_sync: 2026-06-07
+sync_hash: 960439fb
 ---
-
-
 从5.1.0(18)版本开始，支持应用判断是否被系统分享拉起。
 
 作为目标应用接入系统分享时，当应用被拉起，需要判断本次启动原因是被系统分享拉起的，以便处理对应的分享业务。

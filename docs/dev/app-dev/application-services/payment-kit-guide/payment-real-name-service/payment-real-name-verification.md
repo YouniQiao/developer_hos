@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "实名信息验证/授权场景"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-real-name-service/payment-real-name-verification
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-real-name-service/payment-real-name-verification
+last_sync: 2026-06-07
+sync_hash: d7688fd0
 ---
-
-
 ## 场景介绍
 
 从5.1.1(19)版本开始，新增支持实名信息验证/授权场景。

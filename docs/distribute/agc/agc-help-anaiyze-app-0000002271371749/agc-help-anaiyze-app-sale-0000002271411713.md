@@ -2,9 +2,10 @@
 title: "分析应用销售和订阅情况"
 original_url: /docs/distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-sale-0000002271411713
 format: md
+upstream_id: distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-sale-0000002271411713
+last_sync: 2026-06-07
+sync_hash: b9c1377c
 ---
-
-
 #### 数字商品服务分析
 
 1. 在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)首页，点击“分析”。

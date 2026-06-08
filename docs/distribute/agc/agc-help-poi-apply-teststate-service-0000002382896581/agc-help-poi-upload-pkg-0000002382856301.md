@@ -2,9 +2,10 @@
 title: "上传已注册意图的软件包"
 original_url: /docs/distribute/agc/agc-help-poi-apply-teststate-service-0000002382896581/agc-help-poi-upload-pkg-0000002382856301
 format: md
+upstream_id: distribute/agc/agc-help-poi-apply-teststate-service-0000002382896581/agc-help-poi-upload-pkg-0000002382856301
+last_sync: 2026-06-07
+sync_hash: 0211d4d8
 ---
-
-
 ![](../img/agc-help-poi-upload-pkg-0000002382856301_0.png)
 
 如果软件包尚未注册意图，请先完成[意图开发](https://developer.huawei.com/consumer/cn/doc/app/agc-help-insight-config-poi-0000002349175932)。

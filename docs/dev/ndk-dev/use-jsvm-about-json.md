@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口进行JSON操作"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-json
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-json
+last_sync: 2026-06-07
+sync_hash: ae0de165
 ---
-
-
 ## 简介
 
 使用JSVM-API接口操作JSON数据时，JSVM模块中的相关接口可以直接处理JSON格式的数据。

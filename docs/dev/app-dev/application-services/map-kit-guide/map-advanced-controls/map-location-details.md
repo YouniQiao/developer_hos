@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "地点详情展示"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-advanced-controls/map-location-details
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-advanced-controls/map-location-details
+last_sync: 2026-06-07
+sync_hash: 0f863c4f
 ---
-
-
 ## 场景介绍
 
 本章节介绍如何集成地点详情展示控件。该控件提供便捷的地点详情展示功能以及导航和打车服务入口，开发者无需自行开发地图页面，即可实现用户点击“路线”按钮启动导航，或点击“打车”按钮发起打车。

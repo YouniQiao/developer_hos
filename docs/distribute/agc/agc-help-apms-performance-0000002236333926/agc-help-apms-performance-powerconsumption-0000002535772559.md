@@ -2,9 +2,10 @@
 title: "分析应用功耗"
 original_url: /docs/distribute/agc/agc-help-apms-performance-0000002236333926/agc-help-apms-performance-powerconsumption-0000002535772559
 format: md
+upstream_id: distribute/agc/agc-help-apms-performance-0000002236333926/agc-help-apms-performance-powerconsumption-0000002535772559
+last_sync: 2026-06-07
+sync_hash: 82795d3b
 ---
-
-
 “应用功耗”页面为开发者提供应用运行过程中的整体功耗数据及多维度细分分析，帮助开发者快速掌握应用功耗表现，精准定位功耗问题。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“开发与服务”。

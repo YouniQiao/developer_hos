@@ -2,9 +2,10 @@
 title: "AuthUser"
 original_url: /docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-authuser-0000002273781645
 format: md
+upstream_id: distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-authuser-0000002273781645
+last_sync: 2026-06-07
+sync_hash: a59881d4
 ---
-
-
 当前登录的用户信息。
 
 #### Method Summary

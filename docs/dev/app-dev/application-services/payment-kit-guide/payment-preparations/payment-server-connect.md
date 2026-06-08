@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "云侧服务准备"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-server-connect
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-server-connect
+last_sync: 2026-06-07
+sync_hash: 2c4f5b31
 ---
-
-
 Payment Kit服务提供了支付系统相关的一系列API接口。为减少API接口的接入工作量，提供了相应java版本的Maven依赖用于云侧服务对接。
 
 开发者可通过Maven集成来完成服务器开发环境的构建，以此来快速使用华为支付提供的API接口。

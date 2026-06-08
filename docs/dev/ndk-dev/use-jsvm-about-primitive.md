@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口进行primitive类相关开发"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-primitive
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-primitive
+last_sync: 2026-06-07
+sync_hash: 47d421d6
 ---
-
-
 ## 简介
 
 在使用JSVM-API接口时，开发人员可以实现在JSVM模块中与JavaScript对象的交互，并进行数据转换和获取特定对象的操作，它们在不同的场景中发挥着重要的作用，使开发人员能够更灵活地处理JavaScript值和对象。

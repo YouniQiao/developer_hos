@@ -2,16 +2,17 @@
 format: md
 title: "新建工程/模块无法加载ets目录下的资源"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-191
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-191
+last_sync: 2026-06-07
+sync_hash: b5ac4af4
 ---
-
-
 **问题现象**
 
 新建工程，通过ImageBitmap或其他组件使用src/main/ets目录中的本地图片无法加载。
 
 **可能原因**
 
-若使用DevEco Studio 6.0.0 Beta2及之后的版本创建的新工程，会默认不打包模块src/main目录中的图片资源，具体参考**[copyCodeResource](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile#table1476161719356)**
+若使用DevEco Studio 6.0.0 Beta2及之后的版本创建的新工程，会默认不打包模块src/main目录中的图片资源，具体参考**[copyCodeResource](/docs/tools/coding-debug/ide-hvigor-build-profile#table1476161719356)**
 
 **解决措施**
 

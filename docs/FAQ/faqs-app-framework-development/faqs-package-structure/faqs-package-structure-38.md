@@ -2,8 +2,11 @@
 format: md
 title: "HAR包是否支持依赖传递"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-38
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-38
+last_sync: 2026-06-07
+sync_hash: 5e14b748
+upstream_hash: 37a1cd6e5866
 ---
-
 
 **问题现象**
 

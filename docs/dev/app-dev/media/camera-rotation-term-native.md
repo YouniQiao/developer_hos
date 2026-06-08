@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "相机旋转角度的术语"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term
+last_sync: 2026-06-07
+sync_hash: e1370d3a
 ---
-
-
 在适配相机旋转角度中涉及设备方向、镜头角度、屏幕显示角度等多个术语，开发者可以了解相关概念，帮助理解框架的运作机制。
 
 ## 设备自然方向

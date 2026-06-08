@@ -2,9 +2,10 @@
 title: "如何解决第三方包require语句报错"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-125
 format: md
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-125
+last_sync: 2026-06-07
+sync_hash: 6c16aba1
 ---
-
-
 **问题现象**
 
 引入第三方包时，编译出现错误。

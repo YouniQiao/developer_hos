@@ -3,9 +3,10 @@ title: "影响应用兼容性的关键信息"
 displayed_sidebar: appCompatibilitySidebar
 original_url: /docs/design/app-compatibility/app-compatibility-influence-factor
 format: md
+upstream_id: design/app-compatibility/app-compatibility-influence-factor
+last_sync: 2026-06-07
+sync_hash: 5ac55e5e
 ---
-
-
 # 影响应用兼容性的关键信息
 
 ## 应用开发过程使用的SDK版本
@@ -15,7 +16,7 @@ format: md
 | SDK版本属性 | 源码工程中配置项  （build-profile.json5文件中） | 应用打包后的对应字段  （module.json5文件中） | 说明 |
 | --- | --- | --- | --- |
 | 编译应用的SDK版本 | compileSdkVersion | compileSdkVersion | 编译应用工程的SDK版本，该字段决定了应用开发过程中可自动联想的API范围和使用的工具链版本。  取值默认为DevEco Studio自带的SDK版本，如需显式配置，只能配置为当前DevEco Studio自带的SDK版本。 |
-| 应用运行的目标SDK版本 | targetSdkVersion | targetAPIVersion | 应用运行的目标SDK版本。默认取值为编译该应用的SDK版本号，即与compileSdkVersion的取值相同。  针对[系统侧进行API版本隔离的变更](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/app-compatibility-influence-factor#section84462041135416)，应用在终端设备上运行时会呈现以targetSdkVersion版本为目标版本的行为。  例如当前设备API版本为5.0.2(14)，而运行在该设备上的某应用targetSdkVersion配置为5.0.1(13)，则经过API版本隔离的变更会以5.0.1(13)版本的API行为呈现。在5.0.2(14)发生的API变更不会影响该应用在当前设备的实际表现。  建议开发者在升级SDK后重新编译应用工程时充分考虑API行为变更的影响，并合理配置targetSdkVersion的值。 |
+| 应用运行的目标SDK版本 | targetSdkVersion | targetAPIVersion | 应用运行的目标SDK版本。默认取值为编译该应用的SDK版本号，即与compileSdkVersion的取值相同。  针对[系统侧进行API版本隔离的变更](/docs/design/app-compatibility/app-compatibility-influence-factor#section84462041135416)，应用在终端设备上运行时会呈现以targetSdkVersion版本为目标版本的行为。  例如当前设备API版本为5.0.2(14)，而运行在该设备上的某应用targetSdkVersion配置为5.0.1(13)，则经过API版本隔离的变更会以5.0.1(13)版本的API行为呈现。在5.0.2(14)发生的API变更不会影响该应用在当前设备的实际表现。  建议开发者在升级SDK后重新编译应用工程时充分考虑API行为变更的影响，并合理配置targetSdkVersion的值。 |
 | 应用运行的最低SDK版本 | compatibleSdkVersion | minAPIVersion | 应用运行要求的最低SDK版本。运行该应用的终端设备系统搭载的API版本不能低于该字段的值，低于则无法安装。  该字段版本值不能高于目标SDK版本。  可将compatibleSdkVersion的值设置为较小值，从而可在更低版本的系统上安装该应用，但应用是否能在compatibleSdkVersion对应系统版本上面正常运行，需要开发者针对无法在compatibleSdkVersion版本使用的API进行兼容性判断保护。 |
 
 在应用的工程配置中，三个SDK版本属性之间的大小关系为：compatibleSdkVersion值≤targetSdkVersion值≤compileSdkVersion值，如果配置不符合这个规则，会有报错提示。
@@ -38,7 +39,7 @@ format: md
 ]
 ```
 
-本示例中，将compatibleSdkVersion值配置为6.0.0(20)（注意：compatibleSdkVersion字段具体配置的最低值，可根据应用运营策略和[HarmonyOS现网设备API版本分布](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/sdk-version-percentage)来决定），但因为该应用升级到了6.0.2(22)，并使用了该版本的新API，考虑到新的API在6.0.2(22)版本会运行异常，所以需通过API版本判断进行保护，具体保护方式可以参考后续章节：[API兼容性保护和告警屏蔽](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/app-compatibility-apis-compatibility)。
+本示例中，将compatibleSdkVersion值配置为6.0.0(20)（注意：compatibleSdkVersion字段具体配置的最低值，可根据应用运营策略和[HarmonyOS现网设备API版本分布](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/sdk-version-percentage)来决定），但因为该应用升级到了6.0.2(22)，并使用了该版本的新API，考虑到新的API在6.0.2(22)版本会运行异常，所以需通过API版本判断进行保护，具体保护方式可以参考后续章节：[API兼容性保护和告警屏蔽](/docs/dev/release-notes/app-compatibility-apis-compatibility)。
 
 ## 运行应用的设备系统所搭载的API版本
 

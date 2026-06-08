@@ -2,9 +2,10 @@
 format: md
 title: "解决hdc执行返回command not found"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-64
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-64
+last_sync: 2026-06-07
+sync_hash: db091d94
 ---
-
-
 **问题现象**
 
 在命令行工具中hdc执行返回command not found提示命令未找到。

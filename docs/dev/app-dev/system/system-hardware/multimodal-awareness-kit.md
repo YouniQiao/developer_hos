@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Multimodal Awareness Kit（多模态融合感知服务）"
 original_url: /docs/dev/app-dev/system/system-hardware/multimodal-awareness-kit
 format: md
+upstream_id: dev/app-dev/system/system-hardware/multimodal-awareness-kit
+last_sync: 2026-06-07
+sync_hash: 045bb145
 ---
-
-
 * **[Multimodal Awareness Kit简介](/docs/dev/app-dev/system/system-hardware/multimodal-awareness-kit/multimodalawareness-kit-intro)**
 * **[Stationary开发指导](/docs/dev/app-dev/system/system-hardware/multimodal-awareness-kit/stationary-guidelines)**
 * **[获取用户动作开发指导](/docs/dev/app-dev/system/system-hardware/multimodal-awareness-kit/motion-guidelines)**

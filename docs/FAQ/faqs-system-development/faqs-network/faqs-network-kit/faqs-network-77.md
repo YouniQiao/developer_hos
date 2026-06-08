@@ -2,7 +2,8 @@
 format: md
 title: "为什么在设置自定义DNS后，HTTP请求还是会走本地DNS缓存"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-77
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-77
+last_sync: 2026-06-07
+sync_hash: ad0adbc7
 ---
-
-
 HTTP请求存在连接复用，而连接复用基于域名匹配，如果已经有指向相同域名的连接可以复用，那么请求会直接复用已有连接，导致自定义规则不生效。

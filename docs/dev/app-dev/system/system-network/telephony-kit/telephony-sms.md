@@ -2,9 +2,10 @@
 title: "短信服务"
 original_url: /docs/dev/app-dev/system/system-network/telephony-kit/telephony-sms
 format: md
+upstream_id: dev/app-dev/system/system-network/telephony-kit/telephony-sms
+last_sync: 2026-06-07
+sync_hash: 698db1be
 ---
-
-
 ## 场景介绍
 
 短信服务模块提供了管理短信的一些基础能力，包括创建/发送短信、获取/设置发送短信的默认SIM卡槽ID、获取/设置短信服务中心地址，以及检查当前设备是否具备短信发送和接收能力等。

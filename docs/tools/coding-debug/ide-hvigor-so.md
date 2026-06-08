@@ -3,9 +3,10 @@ title: "预构建库快速链接"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-so
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-so
+last_sync: 2026-06-07
+sync_hash: fc26d580
 ---
-
-
 # 预构建库快速链接
 
 在工程中使用依赖模块时，如果希望使用依赖模块中native相关的so库与接口文件（.h/.hpp），Hvigor提供了快速链接功能。

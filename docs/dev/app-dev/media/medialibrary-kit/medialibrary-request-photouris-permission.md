@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "设备升级继承媒体文件访问权限"
 original_url: /docs/dev/app-dev/media/medialibrary-kit/medialibrary-request-photouris-permission
 format: md
+upstream_id: dev/app-dev/media/medialibrary-kit/medialibrary-request-photouris-permission
+last_sync: 2026-06-07
+sync_hash: d454f2f7
 ---
-
-
 应用在HarmonyOS 3.1 Release API 9及更低版本运行时，有图片/视频访问权限，并在应用内记录对应的图片/视频文件路径或uri，在进入应用特定界面时，可实时访问图片/视频显示内容。
 
 但在设备从HarmonyOS 3.1 Release API 9及更低版本升级至HarmonyOS 5.0.2及以上版本时，图片、视频等媒体文件的访问方式发生变化，应用无法使用原来的文件路径或uri访问媒体文件，且新版本上应用默认没有权限直接访问图片/视频。在新版本上，应用需要向用户发起请求，用户同意后，可继承原有的媒体文件访问权限。

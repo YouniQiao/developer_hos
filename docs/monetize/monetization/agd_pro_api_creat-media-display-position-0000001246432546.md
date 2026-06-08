@@ -3,10 +3,10 @@ title: "创建媒体及展示位"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_api_creat-media-display-position-0000001246432546
 format: md
+upstream_id: monetize/monetization/agd_pro_api_creat-media-display-position-0000001246432546
+last_sync: 2026-06-07
+sync_hash: 6314f873
 ---
-
-
-
 ![](./img/agd_pro_api_creat-media-display-position-0000001246432546_0.png)
 
 应用变现服务只支持将已在架应用设置为媒体，如您的应用尚未上架，请参考[发布应用](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-releaseapkrpk-0000001106463276)。

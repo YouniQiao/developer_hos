@@ -2,9 +2,10 @@
 format: md
 title: ".h文件中uint8_t无法使用如何解决"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-16
+upstream_id: FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-16
+last_sync: 2026-06-07
+sync_hash: 8ad423f0
 ---
-
-
 **解决措施**
 
 1. 在CPP导入头文件修改如下：

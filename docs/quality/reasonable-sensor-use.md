@@ -1,8 +1,10 @@
 ---
 title: "传感器资源合理使用"
 original_url: /docs/quality/reasonable-sensor-use
+upstream_id: /docs/quality/reasonable-sensor-use
+last_sync: 2026-06-07
+sync_hash: d9db44b4
 ---
-
 # 传感器资源合理使用
 
 应用退至后台时，禁止使用传感器资源。若有正常业务需求，申请后台长时任务后，可在锁屏状态下获取传感器信息。

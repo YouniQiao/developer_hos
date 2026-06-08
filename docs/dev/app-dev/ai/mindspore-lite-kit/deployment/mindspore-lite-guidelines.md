@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用MindSpore Lite进行模型推理 (C/C++)"
 original_url: /docs/dev/app-dev/ai/mindspore-lite-kit/deployment/mindspore-lite-guidelines
 format: md
+upstream_id: dev/app-dev/ai/mindspore-lite-kit/deployment/mindspore-lite-guidelines
+last_sync: 2026-06-07
+sync_hash: 0954eef6
 ---
-
-
 ## 场景介绍
 
 MindSpore Lite是一款AI引擎，它提供了面向不同硬件设备AI模型推理的功能，目前已经在图像分类、目标识别、人脸识别、文字识别等应用中广泛使用。

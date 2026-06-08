@@ -2,9 +2,10 @@
 title: "hilogtool"
 original_url: /docs/dev/app-dev/system/hilog-tool
 format: md
+upstream_id: dev/app-dev/system/hilog-tool
+last_sync: 2026-06-07
+sync_hash: 19b9fb70
 ---
-
-
 ## 使用场景
 
 当前hilog日志为编码后二进制形式保存的gz格式文件，开发者从设备/data/log/hilog路径下导出后无法直接解压查看，需要使用hilogtool工具进行解析，将转换为明文hilog日志。

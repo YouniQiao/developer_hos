@@ -2,9 +2,10 @@
 title: "Tab Bar"
 original_url: /docs/dev/atomic-dev/ascf/apis-page/apis-tab-bar
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-page/apis-tab-bar
+last_sync: 2026-06-07
+sync_hash: 41f37a60
 ---
-
-
 ## has.showTabBar
 
 has.showTabBar(Object object)

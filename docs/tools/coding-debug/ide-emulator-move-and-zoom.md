@@ -3,8 +3,11 @@ title: "移动和缩放模拟器"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-emulator-move-and-zoom
 format: md
+upstream_id: tools/coding-debug/ide-emulator-move-and-zoom
+last_sync: 2026-06-07
+sync_hash: b70766b6
+upstream_hash: bbf6dbb9e6c1
 ---
-
 
 # 移动和缩放模拟器
 

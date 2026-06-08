@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发概述"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-introduction
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-introduction
+last_sync: 2026-06-07
+sync_hash: 5f8dc67f
 ---
-
-
 应用归因服务是华为提供的不依赖用户标识符的端侧归因能力。
 
 当用户完成应用安装或在已安装应用内完成转化时，应用归因服务通过匹配用户在转化前的行为数据，分析用户的来源渠道以及转化的原因，并将归因结果回传给分发平台、开发者、归因监测平台。开发者可以通过归因结果数据分析投放效果、评估渠道质量，进而优化投放策略，分发平台可以评估渠道商业价值，优化营销效果。

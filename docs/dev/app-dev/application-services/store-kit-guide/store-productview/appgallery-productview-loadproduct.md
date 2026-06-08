@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "展示应用详情页面"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-productview/appgallery-productview-loadproduct
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-productview/appgallery-productview-loadproduct
+last_sync: 2026-06-07
+sync_hash: e531a1d2
 ---
-
-
 ## 场景介绍
 
 通过应用内调用[loadProduct](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagerloadproduct)接口或者在网页嵌入跳转链接的方式，用户可直接进入应用详情页，简化应用下载流程，增加应用的下载量和用户活跃度。

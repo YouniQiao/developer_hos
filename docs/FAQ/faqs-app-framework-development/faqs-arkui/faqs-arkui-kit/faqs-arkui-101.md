@@ -2,9 +2,10 @@
 format: md
 title: "如何在List组件中分组展示不同种类的数据"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-101
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-101
+last_sync: 2026-06-07
+sync_hash: 27263658
 ---
-
-
 **问题现象**
 
 根据数据种类为ListItem设置不同样式。例如，标题和标题对应的子类等，应分别应用相应的样式。

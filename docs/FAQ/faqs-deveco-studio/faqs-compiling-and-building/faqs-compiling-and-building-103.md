@@ -2,9 +2,10 @@
 format: md
 title: "编译通过，但是安装时失败报错“Error while Deploy Hap”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-103
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-103
+last_sync: 2026-06-07
+sync_hash: c6ff997d
 ---
-
-
 **问题描述**
 
 在工程内打包的har包，编译通过，但在安装时失败。

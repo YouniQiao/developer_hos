@@ -3,8 +3,10 @@ title: "批量修改子任务状态"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-subtask-statusbatchmanage-0000001262975217
 format: md
+upstream_id: monetize/promotion/marketapi-subtask-statusbatchmanage-0000001262975217
+last_sync: 2026-06-07
+sync_hash: 530b23b6
 ---
-
 # 批量修改子任务状态
 
 ## 功能介绍

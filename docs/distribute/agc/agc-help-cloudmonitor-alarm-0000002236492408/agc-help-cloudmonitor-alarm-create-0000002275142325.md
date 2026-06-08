@@ -2,9 +2,10 @@
 title: "新建告警"
 original_url: /docs/distribute/agc/agc-help-cloudmonitor-alarm-0000002236492408/agc-help-cloudmonitor-alarm-create-0000002275142325
 format: md
+upstream_id: distribute/agc/agc-help-cloudmonitor-alarm-0000002236492408/agc-help-cloudmonitor-alarm-create-0000002275142325
+last_sync: 2026-06-07
+sync_hash: 32c763f7
 ---
-
-
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“开发与服务”。
 2. 在项目列表中选择您的项目。
 3. 在左侧导航栏选择“质量 > 云监控 > 告警管理”，进入告警管理主界面，点击“新建告警”。

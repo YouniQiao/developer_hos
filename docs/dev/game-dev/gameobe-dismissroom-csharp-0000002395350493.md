@@ -2,9 +2,10 @@
 title: "解散房间"
 original_url: /docs/dev/game-dev/gameobe-dismissroom-csharp-0000002395350493
 format: md
+upstream_id: dev/game-dev/gameobe-dismissroom-csharp-0000002395350493
+last_sync: 2026-06-07
+sync_hash: d03b748d
 ---
-
-
 创建房间后，如需销毁房间，可以将房间解散。
 
 ## 前提条件

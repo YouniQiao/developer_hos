@@ -3,9 +3,10 @@ title: "ohpm dist-tags"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-dist-tags
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-dist-tags
+last_sync: 2026-06-07
+sync_hash: e2270b2e
 ---
-
-
 # ohpm dist-tags
 
 tag可标记一个三方库的某个版本，在install时可用tag代替版本号安装包。

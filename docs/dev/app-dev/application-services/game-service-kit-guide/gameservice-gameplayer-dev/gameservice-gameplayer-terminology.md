@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "基础游戏服务术语"
 original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-terminology
 format: md
+upstream_id: dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-terminology
+last_sync: 2026-06-07
+sync_hash: 28056aae
 ---
-
-
 ## H
 
 ### HarmonyOS 4及以下

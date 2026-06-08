@@ -3,10 +3,10 @@ title: "AdCreative"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_api_if_adcreative-0000001294886337
 format: md
+upstream_id: monetize/monetization/agd_pro_api_if_adcreative-0000001294886337
+last_sync: 2026-06-07
+sync_hash: 133785c1
 ---
-
-
-
 ![](./img/agd_pro_api_if_adcreative-0000001294886337_0.png)
 
 仅原生广告会返回，其他类型的展示位无需关注该字段。

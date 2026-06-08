@@ -3,8 +3,10 @@ title: 分隔器
 sidebar_label: 分隔器
 original_url: /docs/design/components/view-components/divider
 format: md
+upstream_id: design/components/view-components/divider
+last_sync: 2026-06-07
+sync_hash: cf913621
 ---
-
 # 分隔器
 
 分隔器主要用于区分不同内容元素和组别，可用于列表或界面布局。分割线相关基础属性配置参考 [Divider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-divider) 文档。

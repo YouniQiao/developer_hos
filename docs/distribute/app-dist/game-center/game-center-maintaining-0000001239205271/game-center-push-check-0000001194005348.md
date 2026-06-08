@@ -3,9 +3,10 @@ title: "催促/加急/撤销审核"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-push-check-0000001194005348
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-push-check-0000001194005348
+last_sync: 2026-06-07
+sync_hash: fe39d9ea
 ---
-
-
 # 催促/加急/撤销审核
 
 ## 催促审核

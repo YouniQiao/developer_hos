@@ -2,9 +2,10 @@
 format: md
 title: "如何控制CustomDialog显示层级"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-325
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-325
+last_sync: 2026-06-07
+sync_hash: 60ed97eb
 ---
-
-
 **问题现象**
 
 在A页面弹出一个CustomDialog，若Dialog未关闭时从A页面跳转到B页面，此时会发现在A页面弹出的Dialog会出现在B页面的层级上方。请问有什么方式可以让页面B盖住Dialog？

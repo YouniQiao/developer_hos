@@ -2,9 +2,10 @@
 title: "更新服务卡片"
 original_url: /docs/distribute/agc/agc-help-by-harmonyoslabel-touch-scan-0000002444192029/agc-help-by-harmonyoslabel-touch-scan-airtouch-0000002410432950
 format: md
+upstream_id: distribute/agc/agc-help-by-harmonyoslabel-touch-scan-0000002444192029/agc-help-by-harmonyoslabel-touch-scan-airtouch-0000002410432950
+last_sync: 2026-06-07
+sync_hash: 1f1ee9d4
 ---
-
-
 1. 在标签服务页面，点击“更新服务卡片”跳转到AirTouch服务页面。
 
    ![](../img/agc-help-by-harmonyoslabel-touch-scan-airtouch-0000002410432950_0.png)

@@ -3,9 +3,10 @@ title: "业务概述"
 original_url: /docs/dev/game-dev/games-gamemme-overview-0000002338546393
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-gamemme-overview-0000002338546393
+last_sync: 2026-06-07
+sync_hash: 6458dc96
 ---
-
-
 |  |  |
 | --- | --- |
 | 游戏多媒体服务是华为游戏中心推出的一款快速实现游戏内实时语音、实时信令（Real-time Messaging，即RTM）、语音消息等功能的服务。您只需要集成游戏多媒体服务SDK，即可为您的游戏提供实时语音对讲、全局聊天、语音/文本消息、语音转文本等能力，降低开发难度，提升玩家的游戏体验。 |  |

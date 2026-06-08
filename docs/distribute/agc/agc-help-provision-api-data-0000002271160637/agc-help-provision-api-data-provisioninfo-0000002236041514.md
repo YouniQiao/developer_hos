@@ -2,9 +2,10 @@
 title: "ProvisionInfo"
 original_url: /docs/distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-provisioninfo-0000002236041514
 format: md
+upstream_id: distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-provisioninfo-0000002236041514
+last_sync: 2026-06-07
+sync_hash: 6d406717
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | id | O | String(32) | Profile的ID。 |

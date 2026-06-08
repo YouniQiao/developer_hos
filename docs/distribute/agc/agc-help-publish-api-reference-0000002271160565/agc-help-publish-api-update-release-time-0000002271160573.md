@@ -2,9 +2,10 @@
 title: "更新版本上架时间"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-update-release-time-0000002271160573
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-update-release-time-0000002271160573
+last_sync: 2026-06-07
+sync_hash: b8f373e3
 ---
-
-
 #### 功能介绍
 
 此接口用于设置版本的上架时间。

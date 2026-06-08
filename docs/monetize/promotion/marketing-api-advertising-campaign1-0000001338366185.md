@@ -3,8 +3,10 @@ title: "创建计划"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-advertising-campaign1-0000001338366185
 format: md
+upstream_id: monetize/promotion/marketing-api-advertising-campaign1-0000001338366185
+last_sync: 2026-06-07
+sync_hash: d165a51a
 ---
-
 # 创建计划
 
 您通过本接口创建计划。

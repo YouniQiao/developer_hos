@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "权限设置Button"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-permissiononsetting
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-permissiononsetting
+last_sync: 2026-06-07
+sync_hash: 463df86e
+upstream_hash: 90ccf01869f1
 ---
-
 
 ## 场景介绍
 

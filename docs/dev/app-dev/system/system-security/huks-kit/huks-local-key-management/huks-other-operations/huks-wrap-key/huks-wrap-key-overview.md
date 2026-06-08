@@ -2,9 +2,10 @@
 title: "加密导出导入密钥介绍"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-wrap-key/huks-wrap-key-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-wrap-key/huks-wrap-key-overview
+last_sync: 2026-06-07
+sync_hash: 89b68ede
 ---
-
-
 为支持应用在卸载后仍能保留密钥，从API 20开始，HUKS新增了加密导出密钥与加密导入密钥的功能。
 
 由于应用卸载时，其在HUKS中存储的密钥会被清除，通过加密导出导入密钥功能，开发者可在应用卸载前将密钥加密导出保存，并在应用重新安装后将加密密钥导入恢复，从而实现应用卸载后保留密钥。

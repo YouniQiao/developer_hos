@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "如何处理推送消息时遇到的问题"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-1
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-1
+last_sync: 2026-06-07
+sync_hash: 7ce4868b
 ---
-
-
 当使用REST API接口进行消息推送时，您可能遇到一些问题，请按照如下思路进行处理：
 
 1. 优先检查[消息推送接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-struct)URL（https://push-api.cloud.huawei.com/**v3**/**[projectId]**/messages:send）是否正确。

@@ -2,9 +2,10 @@
 format: md
 title: "一个自定义组件内某一时机批量刷新多个@State修饰的状态变量，是否会影响性能"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-333
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-333
+last_sync: 2026-06-07
+sync_hash: f7a86591
 ---
-
-
 **问题现象**
 
 例如，一个自定义的Component包含20个由@State修饰的变量，每个@State变量都支持值更新操作，批量修改时会调用每个State的更新接口。这种批量更新操作可能引发组件频繁刷新，需要评估其对性能的影响。

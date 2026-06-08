@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "企业联系人信息来去电页面显示"
 original_url: /docs/dev/app-dev/application-services/call-kit-guide/callservice-enterprise-contact-display
 format: md
+upstream_id: dev/app-dev/application-services/call-kit-guide/callservice-enterprise-contact-display
+last_sync: 2026-06-07
+sync_hash: 60428e15
 ---
-
-
 本功能仅供企业应用开发者接入。
 
 ## 场景介绍

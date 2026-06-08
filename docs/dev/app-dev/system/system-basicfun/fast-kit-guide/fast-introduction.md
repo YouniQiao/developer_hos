@@ -2,9 +2,10 @@
 title: "FAST Kit简介"
 original_url: /docs/dev/app-dev/system/system-basicfun/fast-kit-guide/fast-introduction
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/fast-kit-guide/fast-introduction
+last_sync: 2026-06-07
+sync_hash: 81f7aec9
 ---
-
-
 FAST Kit（算法加速服务）以理论计算机为基础、面向开发者提供算法加速能力。当前开放线段表、矩形划分求解器与数字信号处理（DSP）接口，支撑应用的开发体验和用户体验提升。
 
 当前FAST Kit包括以下功能域：
@@ -57,4 +58,4 @@ Phone、Tablet、PC/2in1。
 
 本Kit支持模拟器。
 
-模拟器与真机存在通用差异，详情请参见“[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification#section1227613205203)”。
+模拟器与真机存在通用差异，详情请参见“[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification#section1227613205203)”。

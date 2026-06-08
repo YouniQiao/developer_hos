@@ -2,9 +2,10 @@
 title: "HiTraceChain介绍"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracechain/hitracechain-intro
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracechain/hitracechain-intro
+last_sync: 2026-06-07
+sync_hash: 5d3459f0
 ---
-
-
 ## 简介
 
 HiTraceChain是基于分布式跟踪调用链思想，在端侧业务流程（涉及跨线程、跨进程、跨设备）中的一种轻量级分布式跟踪的实现。HiTraceChain在业务流程中生成和传递唯一跟踪标识，在业务流程输出的各类信息中（包括HiTraceMeter打点、应用事件、hilog日志等）记录该跟踪标识。在调试、问题定位的过程中，开发者可以通过该唯一跟踪标识将本次业务流程端到端的各类信息快速关联起来。HiTraceChain为开发者提供业务流程调用链跟踪的维测接口，帮助开发者迅速获取指定业务流程调用链的运行日志，定位跨设备/跨进程/跨线程的故障问题。

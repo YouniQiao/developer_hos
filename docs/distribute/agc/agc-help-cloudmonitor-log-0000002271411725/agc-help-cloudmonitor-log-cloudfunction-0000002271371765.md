@@ -2,9 +2,10 @@
 title: "云函数"
 original_url: /docs/distribute/agc/agc-help-cloudmonitor-log-0000002271411725/agc-help-cloudmonitor-log-cloudfunction-0000002271371765
 format: md
+upstream_id: distribute/agc/agc-help-cloudmonitor-log-0000002271411725/agc-help-cloudmonitor-log-cloudfunction-0000002271371765
+last_sync: 2026-06-07
+sync_hash: a04e850f
 ---
-
-
 云监控提供的日志服务功能可呈现和查询云函数的业务日志和接入日志两种日志类型，具体说明如下表所示。
 
 | 日志类型 | 说明 |

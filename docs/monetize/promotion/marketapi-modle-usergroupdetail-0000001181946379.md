@@ -3,8 +3,10 @@ title: "UserGroupDetail"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-usergroupdetail-0000001181946379
 format: md
+upstream_id: monetize/promotion/marketapi-modle-usergroupdetail-0000001181946379
+last_sync: 2026-06-07
+sync_hash: 6542e069
 ---
-
 # UserGroupDetail
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |

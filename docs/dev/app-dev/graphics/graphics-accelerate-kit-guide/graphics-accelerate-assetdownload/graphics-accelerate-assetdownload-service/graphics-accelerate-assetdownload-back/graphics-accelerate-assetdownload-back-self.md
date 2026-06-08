@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "extension协同下载"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-back/graphics-accelerate-assetdownload-back-self
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-back/graphics-accelerate-assetdownload-back-self
+last_sync: 2026-06-07
+sync_hash: 14c0392e
+upstream_hash: efdcc853fa4c
 ---
-
 
 从5.1.1(19)版本开始，新增extension协同下载。
 

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用AVMetadataExtractor提取音视频元数据信息(ArkTS)"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-info-arkts/avmetadataextractor
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-arkts/media-info-arkts/avmetadataextractor
+last_sync: 2026-06-07
+sync_hash: 8ea6e741
 ---
-
-
 使用[AVMetadataExtractor](/docs/dev/app-dev/media/media-kit/media-kit-intro#avmetadataextractor)可以实现从原始媒体资源中获取元数据。本指南将以获取一个媒体资源的元数据作为示例，向开发者讲解AVMetadataExtractor元数据相关功能。
 
 获取音视频资源的元数据的全流程包含：创建AVMetadataExtractor、设置资源、获取元数据、获取音频资源的专辑封面或获取视频缩略图、释放资源。

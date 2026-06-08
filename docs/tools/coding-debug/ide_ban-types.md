@@ -3,9 +3,10 @@ title: "@typescript-eslint/ban-types"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_ban-types
 format: md
+upstream_id: tools/coding-debug/ide_ban-types
+last_sync: 2026-06-07
+sync_hash: 4fbb0159
 ---
-
-
 # @typescript-eslint/ban-types
 
 不允许使用某些类型。

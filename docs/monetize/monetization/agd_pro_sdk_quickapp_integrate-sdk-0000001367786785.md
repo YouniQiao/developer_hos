@@ -3,10 +3,10 @@ title: "集成AGD Pro接口"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_quickapp_integrate-sdk-0000001367786785
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_quickapp_integrate-sdk-0000001367786785
+last_sync: 2026-06-07
+sync_hash: 0315a458
 ---
-
-
-
 在您开发App过程中集成AGD Pro接口，实现如下接口集成。
 
 * 集成征求用户意见

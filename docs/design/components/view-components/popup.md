@@ -3,8 +3,10 @@ title: 气泡提示
 sidebar_label: 气泡提示
 original_url: /docs/design/components/view-components/popup
 format: md
+upstream_id: design/components/view-components/popup
+last_sync: 2026-06-07
+sync_hash: d22bd4b2
 ---
-
 # 气泡提示
 
 通过临时弹出指向性气泡提示用户当前如何操作。开发相关能力请参考 [Popup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-popup) 文档。

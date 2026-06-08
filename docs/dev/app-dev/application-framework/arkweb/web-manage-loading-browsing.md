@@ -2,9 +2,10 @@
 title: "管理网页加载与浏览记录"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-loading-browsing
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-loading-browsing
+last_sync: 2026-06-07
+sync_hash: 0dd33a1f
 ---
-
-
 * **[使用Web组件加载页面](/docs/dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-page-loading-with-web-components)**
 * **[管理页面跳转及浏览记录导航](/docs/dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-redirection-and-browsing-history-mgmt)**
 * **[拦截Web组件发起的网络请求](/docs/dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-scheme-handler)**

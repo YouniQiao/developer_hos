@@ -2,9 +2,10 @@
 format: md
 title: "如何解决hdc server和client版本不一致的问题"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-38
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-38
+last_sync: 2026-06-07
+sync_hash: 1108a36a
 ---
-
-
 **问题现象**
 
 hdc.log 中的报错信息为“Daemon Session Handshake failed”。

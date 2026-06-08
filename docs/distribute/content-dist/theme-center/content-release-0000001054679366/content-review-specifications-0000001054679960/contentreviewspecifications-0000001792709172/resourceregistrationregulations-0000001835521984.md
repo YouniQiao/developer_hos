@@ -3,9 +3,10 @@ title: "资源上架规范"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/contentreviewspecifications-0000001792709172/resourceregistrationregulations-0000001835521984
 format: md
+upstream_id: distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/contentreviewspecifications-0000001792709172/resourceregistrationregulations-0000001835521984
+last_sync: 2026-06-07
+sync_hash: 88087e08
 ---
-
-
 # 资源上架规范
 
 |  |  |

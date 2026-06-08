@@ -3,8 +3,10 @@ title: "协作者管理"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-xiezuozheguangli-0000002114730989
 format: md
+upstream_id: monetize/promotion/ads-xiezuozheguangli-0000002114730989
+last_sync: 2026-06-07
+sync_hash: 048c902f
 ---
-
 # 协作者管理
 
 鲸鸿动能服务商管理平台协作者功能支持通过添加协作者，帮助服务商便捷、高效管理多个账号，目前仅支持服务商使用该功能。

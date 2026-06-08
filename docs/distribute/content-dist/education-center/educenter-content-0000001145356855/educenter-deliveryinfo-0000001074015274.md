@@ -3,9 +3,10 @@ title: "发货信息"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/education-center/educenter-content-0000001145356855/educenter-deliveryinfo-0000001074015274
 format: md
+upstream_id: distribute/content-dist/education-center/educenter-content-0000001145356855/educenter-deliveryinfo-0000001074015274
+last_sync: 2026-06-07
+sync_hash: e8261c97
 ---
-
-
 # 发货信息
 
 当用户购买了“需要邮寄教材”的课程或套餐权益时，会在“发货信息”页面记录用户的发货信息。

@@ -3,8 +3,10 @@ title: 三折叠
 sidebar_label: 三折叠
 original_url: /docs/design/multi-device-design/folding-screen/trifold
 format: md
+upstream_id: design/multi-device-design/folding-screen/trifold
+last_sync: 2026-06-07
+sync_hash: 405684ab
 ---
-
 # 三折叠
 
 ### 概览

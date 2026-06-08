@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "基本准备工作"
 original_url: /docs/dev/app-dev/application-services/applinking-basic-preparation
 format: md
+upstream_id: dev/app-dev/application-services/applinking-basic-preparation
+last_sync: 2026-06-07
+sync_hash: 9a59cfd1
 ---
-
-
 在开始应用开发前，需要先完成以下准备工作。
 
 1. 注册成为开发者。

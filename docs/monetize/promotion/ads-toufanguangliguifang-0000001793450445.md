@@ -2,6 +2,9 @@
 title: "鲸鸿动能投放违规管理规范"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-toufanguangliguifang-0000001793450445
+upstream_id: monetize/promotion/ads-toufanguangliguifang-0000001793450445
+last_sync: 2026-06-07
+sync_hash: bdc18009
 ---
 import MergeTable from '@site/src/components/MergeTable';
 

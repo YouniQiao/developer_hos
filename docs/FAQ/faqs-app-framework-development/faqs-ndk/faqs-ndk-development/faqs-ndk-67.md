@@ -2,9 +2,10 @@
 format: md
 title: "如何实现ArkTS与C/C++的HashMap转换"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-67
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-67
+last_sync: 2026-06-07
+sync_hash: 80823656
 ---
-
-
 **问题详情：**
 
 如何实现将ArkTS的HashMap转换至Native侧。

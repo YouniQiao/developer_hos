@@ -2,9 +2,10 @@
 title: "编译打包"
 original_url: /docs/dev/game-dev/gameobe-packaging-realtime-server-0000002361670596
 format: md
+upstream_id: dev/game-dev/gameobe-packaging-realtime-server-0000002361670596
+last_sync: 2026-06-07
+sync_hash: 0ef8c994
 ---
-
-
 运行如下命令，将index.ts文件编译为index.js文件。
 
 ![](./img/ed494122.png)

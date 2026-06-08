@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "上架前准备-获取地图服务协议及资质证明"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/preparations_before
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/preparations_before
+last_sync: 2026-06-07
+sync_hash: 91059d25
 ---
-
-
 ## 华为地图服务使用协议
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，选择“协议签署记录”。

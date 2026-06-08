@@ -2,9 +2,10 @@
 format: md
 title: "虚拟机打开时，一直报错“无法打开libQt5Network.5.dylib，因为Apple无法检查其是否包含恶意软件”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-16
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-16
+last_sync: 2026-06-07
+sync_hash: c7d561a3
 ---
-
-
 **问题描述**
 
 按教程创建虚拟机后，虚拟机无法打开。虚拟机打开时，一直报错“无法打开libQt5Network.5.dylib，因为Apple无法检查其是否包含恶意软件”。已在设置/隐私中反复同意打开，但问题仍然存在。

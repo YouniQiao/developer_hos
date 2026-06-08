@@ -2,8 +2,11 @@
 title: "服务卡片开发"
 original_url: /docs/dev/atomic-dev/atomic-service-development/atomic-widget-development
 format: md
+upstream_id: dev/atomic-dev/atomic-service-development/atomic-widget-development
+last_sync: 2026-06-07
+sync_hash: 515d56c9
+upstream_hash: d31c0d6c9909
 ---
-
 
 服务卡片的具体开发方式请参见[服务卡片开发指导](/docs/dev/app-dev/application-framework/form-kit/formkit-overview)。
 

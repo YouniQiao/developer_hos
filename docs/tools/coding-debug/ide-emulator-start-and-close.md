@@ -3,9 +3,10 @@ title: "启动和关闭模拟器"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-emulator-start-and-close
 format: md
+upstream_id: tools/coding-debug/ide-emulator-start-and-close
+last_sync: 2026-06-07
+sync_hash: ddc47253
 ---
-
-
 # 启动和关闭模拟器
 
 在设备管理器页面，单击![](./img/zh-cn_image_0000002602064787.png)即可启动模拟器。模拟器启动时会默认携带之前运行时的用户数据，包括用户上传的文件，安装的应用等。如果是新创建的模拟器，则不会携带用户数据。如果想清除之前运行时的用户数据，点击<strong>Actions &gt;</strong> ![](./img/zh-cn_image_0000002571385672.png) <strong>&gt; Wipe User Data</strong>。

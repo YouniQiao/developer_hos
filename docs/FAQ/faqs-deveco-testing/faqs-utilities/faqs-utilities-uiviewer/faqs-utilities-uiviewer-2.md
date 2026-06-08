@@ -2,9 +2,10 @@
 format: md
 title: "UIViewer获取页面时，无法展示页面截图和元素树如何处理"
 original_url: /docs/FAQ/faqs-deveco-testing/faqs-utilities/faqs-utilities-uiviewer/faqs-utilities-uiviewer-2
+upstream_id: FAQ/faqs-deveco-testing/faqs-utilities/faqs-utilities-uiviewer/faqs-utilities-uiviewer-2
+last_sync: 2026-06-07
+sync_hash: d8c68eec
 ---
-
-
 请排查设备UiTest框架是否正常，打开cmd窗口，在设备上运行 hdc shell uitest dumpLayout 和 hdc shell snapshot\_display -f /data/local/tmp/screenCasting.jpeg 两条指令，确认下是否能运行成功，成功运行截图如下：
 
 ![](./img/6c07ae0c.png "点击放大")

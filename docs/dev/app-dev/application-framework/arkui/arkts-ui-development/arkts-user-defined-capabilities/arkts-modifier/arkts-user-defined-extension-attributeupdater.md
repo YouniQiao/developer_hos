@@ -2,9 +2,10 @@
 title: "属性更新器 (AttributeUpdater)"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-modifier/arkts-user-defined-extension-attributeupdater
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-modifier/arkts-user-defined-extension-attributeupdater
+last_sync: 2026-06-07
+sync_hash: 1675cbc6
 ---
-
-
 ## 概述
 
 在大量属性频繁更新的场景下，使用状态变量可能导致前端状态管理的计算量过大，并且需要对单个组件进行全量属性更新。尽管可以通过AttributeModifier[（动态属性设置）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier)机制实现按需更新属性，但前端仍会采用一定的diff和reset策略，这可能带来性能问题。

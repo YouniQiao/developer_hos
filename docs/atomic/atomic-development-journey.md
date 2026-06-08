@@ -2,9 +2,10 @@
 title: "元服务开发旅程"
 original_url: /docs/dev/atomic-dev/atomic-development-journey
 format: md
+upstream_id: dev/atomic-dev/atomic-development-journey
+last_sync: 2026-06-07
+sync_hash: be0f1c2b
 ---
-
-
 元服务的开发旅程如下图所示。
 
 **图1** 元服务开发旅程
@@ -33,7 +34,7 @@ format: md
   + [元服务体检工具](/docs/dev/atomic-dev/atomic-running-debugging/atomic-service-appanalyzer)：开发者可以对元服务的质量和体验进行快速评分和优化。
   + **打包**
 
-    可通过DevEco Studio快速[打包生成发布版本](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app)，使用此版本，可以用于进行邀请测试和公开测试或直接提交上架审核。
+    可通过DevEco Studio快速[打包生成发布版本](/docs/tools/coding-debug/ide-publish-app)，使用此版本，可以用于进行邀请测试和公开测试或直接提交上架审核。
   + **测试**
 
     在正式发布元服务前，您可以发布邀请测试，邀请部分用户提前体验新版本，或者面向AppGallery用户发布[公开测试](https://developer.huawei.com/consumer/cn/doc/app/agc-help-public-test-0000002287814841)版本，并收集用户的反馈，以便提前发现问题进行改进，从而保证全网版本的质量，提升用户体验。您可以根据下表对照选择合适的测试方式。

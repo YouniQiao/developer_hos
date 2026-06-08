@@ -2,9 +2,10 @@
 title: "如何使用服务端下发的RSA公钥（字符串）对明文数据进行加密"
 original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-3
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-3
+last_sync: 2026-06-07
+sync_hash: 447cfc81
 ---
-
-
 将服务器下发的RSA公钥字符串赋值给`pubKeyStr`，即可实现。具体代码参考如下：
 
 ```

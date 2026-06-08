@@ -2,9 +2,10 @@
 format: md
 title: "组件A通过bindContextMenu配置了长按菜单，点击菜单外区域，组件A响应了点击事件"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-447
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-447
+last_sync: 2026-06-07
+sync_hash: 17c23254
 ---
-
-
 **问题背景**
 
 在组件A上通过bindContextMenu配置了长按菜单后，当用户点击菜单外区域时，会出现事件透传现象——组件A会响应点击事件。这种交互行为不符合某些场景下的设计需求，需要实现菜单弹出时完全阻断对下层组件的事件传递。

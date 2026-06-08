@@ -2,9 +2,10 @@
 title: "错误码"
 original_url: /docs/distribute/agc/agc-help-harmonyoslabel-api-0000002382896589/agc-help-harmonyoslabel-api-errorcode-0000002349175968
 format: md
+upstream_id: distribute/agc/agc-help-harmonyoslabel-api-0000002382896589/agc-help-harmonyoslabel-api-errorcode-0000002349175968
+last_sync: 2026-06-07
+sync_hash: 6d5502ad
 ---
-
-
 | 错误码（errorCode） | 错误描述（errorMsg） |
 | --- | --- |
 | 0 | 成功 |

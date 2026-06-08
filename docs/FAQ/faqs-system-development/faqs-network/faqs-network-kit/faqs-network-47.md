@@ -2,9 +2,10 @@
 format: md
 title: "http请求如何以表单形式进行传输"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-47
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-47
+last_sync: 2026-06-07
+sync_hash: 7d0489b8
 ---
-
-
 1. 在HTTP协议消息头中，使用Content-Type来表示媒体类型信息，设置该参数值为“application/x-www-form-urlencoded”。
 
    ```

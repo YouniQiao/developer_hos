@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "预览PDF文档"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-component
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-component
+last_sync: 2026-06-07
+sync_hash: 7a485ff9
 ---
-
-
 PDF Kit提供了丰富的PDF文档预览能力，比如：
 
 * 页面跳转

@@ -2,9 +2,10 @@
 title: "svg动画"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-animation/ui-js-animation-css/ui-js-animate-svg
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-animation/ui-js-animation-css/ui-js-animate-svg
+last_sync: 2026-06-07
+sync_hash: abb3c0e5
 ---
-
-
 为svg组件添加动画效果。
 
 ## 属性样式动画

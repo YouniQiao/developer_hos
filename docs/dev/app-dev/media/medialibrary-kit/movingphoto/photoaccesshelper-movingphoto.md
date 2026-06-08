@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "访问和管理动态照片资源"
 original_url: /docs/dev/app-dev/media/medialibrary-kit/movingphoto/photoaccesshelper-movingphoto
 format: md
+upstream_id: dev/app-dev/media/medialibrary-kit/movingphoto/photoaccesshelper-movingphoto
+last_sync: 2026-06-07
+sync_hash: 5697afd1
 ---
-
-
 动态照片是一种结合了图片和视频的照片形式，可以显示一小段时间的动态画面和声音。可以帮助用户捕捉精彩的动态瞬间，提升创作空间，同时令拍照的容错率更高。
 
 媒体库提供访问和管理动态照片资源的能力，包括：

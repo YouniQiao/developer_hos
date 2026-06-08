@@ -3,9 +3,10 @@ title: "@hw-stylistic/object-property-newline"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_object-property-newline
 format: md
+upstream_id: tools/coding-debug/ide_object-property-newline
+last_sync: 2026-06-07
+sync_hash: de311d43
 ---
-
-
 # @hw-stylistic/object-property-newline
 
 强制对象属性换行。该规则仅检查.ets文件类型。

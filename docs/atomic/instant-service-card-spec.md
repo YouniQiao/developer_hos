@@ -2,9 +2,10 @@
 title: "服务卡片规范"
 original_url: /docs/dev/atomic-dev/instant-service/instant-service-card-spec
 format: md
+upstream_id: dev/atomic-dev/instant-service/instant-service-card-spec
+last_sync: 2026-06-07
+sync_hash: 8e7262a8
 ---
-
-
 鸿蒙公域流量场给开发者提供多种卡片模板供开发者在配置时选择，开发者可根据素材选择不同的模板。
 
 | 卡片模板名称 | 是否支持商品卡 | 是否支持门店卡 | 是否支持子服务卡 |

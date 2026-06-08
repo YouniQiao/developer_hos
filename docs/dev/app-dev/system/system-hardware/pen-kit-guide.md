@@ -2,8 +2,11 @@
 title: "Pen Kit（手写笔服务）"
 original_url: /docs/dev/app-dev/system/system-hardware/pen-kit-guide
 format: md
+upstream_id: dev/app-dev/system/system-hardware/pen-kit-guide
+last_sync: 2026-06-07
+sync_hash: e6648c5d
+upstream_hash: 2f7798fde74b
 ---
-
 
 * **[Pen Kit简介](/docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-introduction)**
 * **[手写功能开发](/docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-features)**

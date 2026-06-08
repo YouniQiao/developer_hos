@@ -2,9 +2,10 @@
 title: "使用REST API人工送检"
 original_url: /docs/dev/game-dev/games-gamemme-riskcontrol-restapi-0000002338703705
 format: md
+upstream_id: dev/game-dev/games-gamemme-riskcontrol-restapi-0000002338703705
+last_sync: 2026-06-07
+sync_hash: 58d794c4
 ---
-
-
 除自动送检方式外，游戏多媒体服务提供了使用REST API人工送检的方式，支持手动批量上传实时信令文本消息进行内容检测。
 
 ## 前提条件

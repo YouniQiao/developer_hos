@@ -3,8 +3,10 @@ title: 弹出框
 sidebar_label: 弹出框
 original_url: /docs/design/components/container-components/dialog
 format: md
+upstream_id: design/components/container-components/dialog
+last_sync: 2026-06-07
+sync_hash: c6d87b29
 ---
-
 # 弹出框
 
 弹出框是一种模态窗口，在弹出框消失之前，用户无法操作其他界面内容，是一种对用户在进行界面交互过程中干扰性比较强的控件。通常弹出框用来展示用户当前需要执行的操作或必须关注的信息，其他情况不建议使用弹出框，可考虑应用内通知等其他非模态窗口控件。

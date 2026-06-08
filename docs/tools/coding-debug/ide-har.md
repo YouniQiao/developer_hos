@@ -2,9 +2,10 @@
 title: "开发静态共享包"
 format: md
 original_url: /docs/tools/coding-debug/ide-har
+upstream_id: tools/coding-debug/ide-har
+last_sync: 2026-06-07
+sync_hash: 24b1e85a
 ---
-
-
 # 开发静态共享包
 
 [HAR（Harmony Archive）](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package)是静态共享包，可以包含代码、C++库、资源和配置文件。通过HAR可以实现多个模块或多个工程共享ArkUI组件、资源等相关代码。HAR不同于HAP，不能独立安装运行在设备上，只能作为应用模块的依赖项被引用。本文将介绍如何创建HAR模块、如何编译共享包.

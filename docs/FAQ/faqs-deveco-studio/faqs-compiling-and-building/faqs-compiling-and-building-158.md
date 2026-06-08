@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“The reason and usedScene attributes are mandatory for user_grant permissions.”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-158
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-158
+last_sync: 2026-06-07
+sync_hash: ce875b59
 ---
-
-
 **错误描述**
 
 针对Hap模块，配置user\_grant权限时必须包含reason和usedScene属性。

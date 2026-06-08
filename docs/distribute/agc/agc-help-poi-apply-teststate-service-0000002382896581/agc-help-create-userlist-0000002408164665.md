@@ -2,9 +2,10 @@
 title: "创建测试用户"
 original_url: /docs/distribute/agc/agc-help-poi-apply-teststate-service-0000002382896581/agc-help-create-userlist-0000002408164665
 format: md
+upstream_id: distribute/agc/agc-help-poi-apply-teststate-service-0000002382896581/agc-help-create-userlist-0000002408164665
+last_sync: 2026-06-07
+sync_hash: 39eccfc9
 ---
-
-
 在对近场服务进行自有真机测试前，您需要先准备好参与测试的用户账号。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)， 点击“用户与访问”。

@@ -3,9 +3,10 @@ title: "ohpm update错误码"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/errorcode/ide-ohpm-update-errorcode
 format: md
+upstream_id: tools/ohpm/errorcode/ide-ohpm-update-errorcode
+last_sync: 2026-06-07
+sync_hash: 31faa623
 ---
-
-
 # ohpm update错误码
 
 ## 00606001 执行命令时带版本号

@@ -2,8 +2,11 @@
 title: "连接迁移通知"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-nethandoverguide/networkboost-nethandovercallback
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-nethandoverguide/networkboost-nethandovercallback
+last_sync: 2026-06-07
+sync_hash: cc46bf73
+upstream_hash: c07c5d68e2fd
 ---
-
 
 ## 场景介绍
 

@@ -2,9 +2,10 @@
 title: "如何获取视频首帧画面"
 original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-media-kit/faqs-media-7
 format: md
+upstream_id: FAQ/faqs-media-development/faqs-audio-video/faqs-media-kit/faqs-media-7
+last_sync: 2026-06-07
+sync_hash: aa8742b5
 ---
-
-
 获得视频首帧分为从本地视频获取视频首帧和从网络视频获取视频首帧。
 
 **本地视频获取首帧**

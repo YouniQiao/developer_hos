@@ -3,7 +3,8 @@ displayed_sidebar: appDevSidebar
 title: "开通商户服务"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-enable-merchant-service
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-enable-merchant-service
+last_sync: 2026-06-07
+sync_hash: 9cc2d13e
 ---
-
-
 开通商户服务是开发者分发付费内容（付费应用/主题、应用内付费、广告变现等）的前提。商户服务里需要配置银行卡账户、币种等信息，用于开发者接收华为分成收益。详细信息和操作请参见[商户服务](https://developer.huawei.com/consumer/cn/doc/start/merchant-service-0000001053025967)。

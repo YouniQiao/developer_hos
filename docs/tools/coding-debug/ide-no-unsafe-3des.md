@@ -3,9 +3,10 @@ title: "@security/no-unsafe-3des"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-no-unsafe-3des
 format: md
+upstream_id: tools/coding-debug/ide-no-unsafe-3des
+last_sync: 2026-06-07
+sync_hash: 2e047ee3
 ---
-
-
 # @security/no-unsafe-3des
 
 该规则禁止使用不安全的3DES加密模式，例如3DES|ECB。建议使用安全的3DES加密模式，例如3DES|CBC。详情参考[3DES加密模式](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-sym-encrypt-decrypt-spec#section3des)。

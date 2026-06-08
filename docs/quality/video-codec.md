@@ -1,9 +1,10 @@
 ---
 title: "视频场景编解码低功耗规则"
 original_url: /docs/quality/video-codec
+upstream_id: /docs/quality/video-codec
+last_sync: 2026-06-07
+sync_hash: f6b0162a
 ---
-
-
 # 视频场景编解码低功耗规则
 
 ## 规则
@@ -34,7 +35,7 @@ OH_AVCodec *videoDecH = OH_VideoDecoder_CreateByMime(OH_AVCODEC_MIMETYPE_VIDEO_H
 
   ![](./img/27733b57.png "点击放大")
 
-* 方法二：[通过DevEco Studio Profiler抓取systrace](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-time)
+* 方法二：[通过DevEco Studio Profiler抓取systrace](/docs/tools/coding-debug/ide-insight-session-time)
 
   通过systrace确认av\_codec\_service进程的负载，如下图所示。业务频繁唤醒且有实际函数运行，说明视频处于硬解码状态。
 

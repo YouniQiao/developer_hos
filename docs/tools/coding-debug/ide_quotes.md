@@ -3,9 +3,10 @@ title: "@typescript-eslint/quotes"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_quotes
 format: md
+upstream_id: tools/coding-debug/ide_quotes
+last_sync: 2026-06-07
+sync_hash: c23907d3
 ---
-
-
 # @typescript-eslint/quotes
 
 强制使用一致的反引号、双引号或单引号风格。

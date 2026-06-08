@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“This project is in the stage model and does not allow for dependencies of modules in the FA model.”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-154
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-154
+last_sync: 2026-06-07
+sync_hash: 95216c72
 ---
-
-
 **错误描述**
 
 Stage模型项目不得依赖FA模型模块。

@@ -2,9 +2,10 @@
 title: "典型应用场景"
 original_url: /docs/dev/game-dev/games-gpm-application-scenarios-0000002298787824
 format: md
+upstream_id: dev/game-dev/games-gpm-application-scenarios-0000002298787824
+last_sync: 2026-06-07
+sync_hash: 6640b061
 ---
-
-
 ## 自定义场景分析
 
 通过自定义的场景如大厅/战斗/剧情，分别查看不同场景下游戏的流畅度指标，结合场景需求进行优化调整，来选择降低功耗或提高性能表现。

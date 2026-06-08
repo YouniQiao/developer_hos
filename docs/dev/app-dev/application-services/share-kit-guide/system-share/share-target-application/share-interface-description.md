@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "应用内处理分享内容"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-target-application/share-interface-description
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/system-share/share-target-application/share-interface-description
+last_sync: 2026-06-07
+sync_hash: 774f93ef
+upstream_hash: acc67c73ac29
 ---
-
 
 目标应用可以通过[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)构建接收分享内容的界面，并将应用显示到分享面板应用推荐区内，以实现将分享内容传递到目标应用内进行处理。开发时需要接入方实现[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)并于module.json5中注册支持分享内容的能力。
 

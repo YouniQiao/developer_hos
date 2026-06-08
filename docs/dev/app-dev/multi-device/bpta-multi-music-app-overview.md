@@ -3,8 +3,10 @@ title: "多设备音乐界面"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi-music-app-overview
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi-music-app-overview
+last_sync: 2026-06-07
+sync_hash: 311e6d8b
 ---
-
 # 多设备音乐界面
 
 ## 概述

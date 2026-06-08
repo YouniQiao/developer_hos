@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发接入"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos
+last_sync: 2026-06-07
+sync_hash: 5ab2c8aa
 ---
-
-
 * **[数据开放总览](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-overview)**
 * **[开发准备](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-preparations)**
 * **[Phone/Tablet应用开发](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev)**

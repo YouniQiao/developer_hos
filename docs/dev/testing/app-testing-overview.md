@@ -2,9 +2,10 @@
 title: "HarmonyOS 开发者测试服务概述"
 original_url: /docs/dev/testing/app-testing-overview
 format: md
+upstream_id: dev/testing/app-testing-overview
+last_sync: 2026-06-07
+sync_hash: a9e6ab50
 ---
-
-
 本章节介绍HarmonyOS 开发者测试服务的所有环节，包括代码静态检查、单元测试、应用和元服务体检、UI测试、专项测试、上架预检测试、用户测试、应用性能监测服务和持续集成与交付（CI/CD）。
 
 ## 代码静态检查

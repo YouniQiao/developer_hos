@@ -3,9 +3,10 @@ title: "网格化-位移&lt;MeshImage-Translation&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-meshimagetrans-0000002471235150
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-meshimagetrans-0000002471235150
+last_sync: 2026-06-07
+sync_hash: d31775ce
 ---
-
-
 # 网格化-位移&lt;MeshImage-Translation&gt;
 
 ## 功能概述

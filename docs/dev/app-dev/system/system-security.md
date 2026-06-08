@@ -2,9 +2,10 @@
 title: "安全"
 original_url: /docs/dev/app-dev/system/system-security
 format: md
+upstream_id: dev/app-dev/system/system-security
+last_sync: 2026-06-07
+sync_hash: 0ced7d2e
 ---
-
-
 * **[程序访问控制](/docs/dev/app-dev/system/system-security/access-control)**
 * **[密码自动填充服务](/docs/dev/app-dev/system/system-security/passwordvault)**
 * **[应用加密](/docs/dev/app-dev/system/system-security/code-protect)**

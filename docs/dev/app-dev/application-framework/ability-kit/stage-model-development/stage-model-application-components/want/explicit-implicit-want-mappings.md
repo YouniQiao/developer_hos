@@ -2,9 +2,10 @@
 title: "显式Want与隐式Want匹配规则"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/want/explicit-implicit-want-mappings
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/want/explicit-implicit-want-mappings
+last_sync: 2026-06-07
+sync_hash: 7b990ea9
 ---
-
-
 在启动目标应用组件时，会通过显式[Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want)或者隐式[Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want)进行目标应用组件的匹配，这里说的匹配规则就是调用方传入的[want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want)参数中设置的参数如何与目标应用组件声明的配置文件进行匹配。
 
 ## 显式Want匹配原理

@@ -2,9 +2,10 @@
 title: "删除证书"
 original_url: /docs/distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-delete-cent-0000002271000685
 format: md
+upstream_id: distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-delete-cent-0000002271000685
+last_sync: 2026-06-07
+sync_hash: 98334310
 ---
-
-
 #### 功能介绍
 
 此接口用于删除创建的证书。

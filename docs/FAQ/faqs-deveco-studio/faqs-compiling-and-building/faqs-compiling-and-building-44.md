@@ -2,9 +2,10 @@
 format: md
 title: "编译时DevEco Studio提示Signing material error"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-44
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-44
+last_sync: 2026-06-07
+sync_hash: 03b3ccb5
 ---
-
-
 **问题现象**
 
 ![](./img/59a01221.png "点击放大")

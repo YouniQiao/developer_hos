@@ -2,9 +2,10 @@
 title: "栅格布局"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-components-grid
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-components-grid
+last_sync: 2026-06-07
+sync_hash: 4a18c775
 ---
-
-
 栅格布局容器根节点，使用grid-row与grid-col进行栅格布局。API具体描述请参考[grid-container](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-grid-container)。
 
 ## 创建grid-container组件

@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "支持的国家/地区"
 original_url: /docs/dev/app-dev/application-services/map-supported
 format: md
+upstream_id: dev/app-dev/application-services/map-supported
+last_sync: 2026-06-07
+sync_hash: 9b7d1863
+upstream_hash: 918140bb1e5c
 ---
-
 
 | 国家/地区名 | 英文名称 |
 | --- | --- |

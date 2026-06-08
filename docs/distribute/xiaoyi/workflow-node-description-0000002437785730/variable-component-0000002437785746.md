@@ -3,9 +3,10 @@ title: "变量组件"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/workflow-node-description-0000002437785730/variable-component-0000002437785746
 format: md
+upstream_id: distribute/xiaoyi/workflow-node-description-0000002437785730/variable-component-0000002437785746
+last_sync: 2026-06-07
+sync_hash: 8655d32b
 ---
-
-
 # 变量组件
 
 变量节点是工作流中用于修改和存储用户变量值的节点。

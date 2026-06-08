@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "ArkGraphics Editor插件及编辑器的下载与安装"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-3d/arkgraphics-editor
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-3d/arkgraphics-editor
+last_sync: 2026-06-07
+sync_hash: 78120f40
 ---
-
-
 3D编辑器ArkGraphics Editor提供3D模型、动画、ShaderGraph等核心编辑能力，可供设计师、开发者快速接入使用。支持通过拖拽等操作，利用3D编辑器可视化能力，完成3D场景开发，3D设计效果所见即所得。无需代码编写，支持从PC到移动端设备的快速流转， 可大幅提升3D应用开发效率。
 
 ## 主要功能

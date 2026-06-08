@@ -3,8 +3,11 @@ title: "AI终端白皮书"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/ai-terminal-white-paper-0000001929691644
 format: md
+upstream_id: distribute/xiaoyi/ai-terminal-white-paper-0000001929691644
+last_sync: 2026-06-07
+sync_hash: 56cb533e
+upstream_hash: 391842c2537d
 ---
-
 
 # AI终端白皮书
 

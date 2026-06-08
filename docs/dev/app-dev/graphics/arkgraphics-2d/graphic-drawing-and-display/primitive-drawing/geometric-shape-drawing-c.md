@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "几何形状绘制（C/C++）"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/primitive-drawing/geometric-shape-drawing-c
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/primitive-drawing/geometric-shape-drawing-c
+last_sync: 2026-06-07
+sync_hash: 48778ac7
+upstream_hash: 8ac79ee52953
 ---
-
 
 ## 场景介绍
 

@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "删除云侧文件"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service/cloudfoundation-storage-delete-file
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service/cloudfoundation-storage-delete-file
+last_sync: 2026-06-07
+sync_hash: fed607be
+upstream_hash: d296a5d7d61b
 ---
-
 
 当云侧文件不需要时，开发者可以在应用客户端删除云侧的文件。
 

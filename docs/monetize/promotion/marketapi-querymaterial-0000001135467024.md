@@ -3,8 +3,10 @@ title: "查询素材列表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-querymaterial-0000001135467024
 format: md
+upstream_id: monetize/promotion/marketapi-querymaterial-0000001135467024
+last_sync: 2026-06-07
+sync_hash: 724cc51d
 ---
-
 # 查询素材列表
 
 ## 功能介绍

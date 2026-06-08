@@ -2,9 +2,10 @@
 title: "属性修改器 (AttributeModifier)"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-modifier/arkts-user-defined-extension-attributemodifier
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-modifier/arkts-user-defined-extension-attributemodifier
+last_sync: 2026-06-07
+sync_hash: 130747a4
 ---
-
-
 ## 概述
 
 声明式语法引入了[@Styles](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-style)和[@Extend](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-extend-components/arkts-extend)两个装饰器，可以解决复用相同自定义样式的问题，但是存在以下受限场景：

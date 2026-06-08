@@ -2,9 +2,10 @@
 title: "质量分析"
 original_url: /docs/dev/game-dev/games-center-anaiyze-app-quality-0000002384225033
 format: md
+upstream_id: dev/game-dev/games-center-anaiyze-app-quality-0000002384225033
+last_sync: 2026-06-07
+sync_hash: b2d3b2cc
 ---
-
-
 ## 安装失败
 
 ### 报表概览

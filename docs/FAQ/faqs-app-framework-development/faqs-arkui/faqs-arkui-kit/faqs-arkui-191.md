@@ -2,9 +2,10 @@
 format: md
 title: "通用属性width是否支持设置变量"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-191
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-191
+last_sync: 2026-06-07
+sync_hash: a816d0ef
 ---
-
-
 通用属性width支持设置变量。
 
 ```

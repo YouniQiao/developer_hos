@@ -3,9 +3,10 @@ title: "创建活动"
 original_url: /docs/dev/game-dev/games-center-setup-activities-create-0000002286057076
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-center-setup-activities-create-0000002286057076
+last_sync: 2026-06-07
+sync_hash: 7a3028f5
 ---
-
-
 华为应用市场面向所有实名认证的联运应用及游戏开发者开放运营活动管理功能，您可自助创建运营活动，通过审核后即可在华为应用市场、游戏中心正式上线，实现拉新、促活、创收等经营目标。
 
 ## 活动目的

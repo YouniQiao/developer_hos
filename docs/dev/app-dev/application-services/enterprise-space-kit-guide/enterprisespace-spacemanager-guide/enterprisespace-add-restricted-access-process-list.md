@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "新增系统服务进程不可访问后台用户数据路径列表"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-add-restricted-access-process-list
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-add-restricted-access-process-list
+last_sync: 2026-06-07
+sync_hash: a9af1e37
+upstream_hash: 32ab6f4ce075
 ---
-
 
 ## 场景介绍
 

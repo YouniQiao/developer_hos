@@ -2,14 +2,15 @@
 title: "HarmonyOS 6.0.2(22)"
 format: md
 original_url: /docs/dev/release-notes/harmonyos-602
+upstream_id: dev/release-notes/harmonyos-602
+last_sync: 2026-06-07
+sync_hash: 7f121d42
 ---
-
-
 # HarmonyOS 6.0.2(22)
 
-6.0.2(22)在6.0.1(21)的基础上，开发能力得到进一步增强：ArkUI增强了滚动组件相关能力，支持更多可配置和自定义的属性；Ability Kit增强了UIAbilityContext管理应用自身UIAbility的能力；ArkWeb增强了与终端用户交互的能力，提升Web页面的交互体验；Connectivity Kit的蓝牙模块增强了获取套接字链路信息的能力；Test Kit的UITest模块增强了模拟交互操作的能力；新增了FAST Kit（算法加速服务），提供高性能算法和数据结构等加速服务，等等。更多详情可参见[OS平台新增和增强特性](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/os-new-feature-602)。
+6.0.2(22)在6.0.1(21)的基础上，开发能力得到进一步增强：ArkUI增强了滚动组件相关能力，支持更多可配置和自定义的属性；Ability Kit增强了UIAbilityContext管理应用自身UIAbility的能力；ArkWeb增强了与终端用户交互的能力，提升Web页面的交互体验；Connectivity Kit的蓝牙模块增强了获取套接字链路信息的能力；Test Kit的UITest模块增强了模拟交互操作的能力；新增了FAST Kit（算法加速服务），提供高性能算法和数据结构等加速服务，等等。更多详情可参见[OS平台新增和增强特性](/docs/dev/release-notes/os-new-feature-602)。
 
-DevEco Studio进一步增强AI智能辅助编程的能力和Code Linter静态检测能力，编译构建脚本（如hvigorfile.ts）支持代码联想、跳转等编辑能力，新增支持数据库可视化调试能力，等等。更多详情可参见[DevEco Studio新增和增强特性](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/deveco-studio-new-features-602)。
+DevEco Studio进一步增强AI智能辅助编程的能力和Code Linter静态检测能力，编译构建脚本（如hvigorfile.ts）支持代码联想、跳转等编辑能力，新增支持数据库可视化调试能力，等等。更多详情可参见[DevEco Studio新增和增强特性](/docs/dev/release-notes/deveco-studio-new-features-602)。
 
 ## 版本信息
 
@@ -40,16 +41,16 @@ DevEco Studio进一步增强AI智能辅助编程的能力和Code Linter静态检
 
 ## 应用工程版本信息配置建议
 
-应用工程中应当正确配置应用运行所依赖的SDK版本信息，以确保[应用在不同系统版本的设备上运行时的兼容性](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/app-compatibility)。
+应用工程中应当正确配置应用运行所依赖的SDK版本信息，以确保[应用在不同系统版本的设备上运行时的兼容性](/docs/dev/release-notes/app-compatibility)。
 
 使用该版本开发的应用，其build-profile.json5配置项中关于版本的配置项建议如下：
 
 | **build-profile.json5配置项** | **已开发应用** | | **新启动开发应用** |
 | --- | --- | --- | --- |
 | **build-profile.json5配置项** | **配置建议** | **配置示例** | **新启动开发应用** |
-| compileSdkVersion | 无需显性配置，编译时默认使用配套的SDK版本，即默认为：  “compileSdkVersion”: “6.0.2(22)” | NA | 推荐使用[6.0.0(20)](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-600)进行新应用的开发。 |
-| compatibleSdkVersion | 建议与工程升级前的compatibleSdkVersion保持一致。 | 和升级前保持一致，如：  “compatibleSdkVersion”: “5.0.5(17)” | 推荐使用[6.0.0(20)](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-600)进行新应用的开发。 |
-| targetSdkVersion | 推荐您适配新版本的最新变更，然后配置为：“targetSdkVersion”: “6.0.2(22)”。  如果您期望延迟适配变更，可配置targetSdkVersion与工程升级前的targetSdkVersion一致。 | 1、应用适配变更，变更适配完成后配置为：  “targetSdkVersion”: “6.0.2(22)”  2、应用暂不适配变更，需配置为工程升级前的值，如：  “targetSdkVersion”: “5.0.5(17)” | 推荐使用[6.0.0(20)](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-600)进行新应用的开发。 |
+| compileSdkVersion | 无需显性配置，编译时默认使用配套的SDK版本，即默认为：  “compileSdkVersion”: “6.0.2(22)” | NA | 推荐使用[6.0.0(20)](/docs/dev/release-notes/overview-600)进行新应用的开发。 |
+| compatibleSdkVersion | 建议与工程升级前的compatibleSdkVersion保持一致。 | 和升级前保持一致，如：  “compatibleSdkVersion”: “5.0.5(17)” | 推荐使用[6.0.0(20)](/docs/dev/release-notes/overview-600)进行新应用的开发。 |
+| targetSdkVersion | 推荐您适配新版本的最新变更，然后配置为：“targetSdkVersion”: “6.0.2(22)”。  如果您期望延迟适配变更，可配置targetSdkVersion与工程升级前的targetSdkVersion一致。 | 1、应用适配变更，变更适配完成后配置为：  “targetSdkVersion”: “6.0.2(22)”  2、应用暂不适配变更，需配置为工程升级前的值，如：  “targetSdkVersion”: “5.0.5(17)” | 推荐使用[6.0.0(20)](/docs/dev/release-notes/overview-600)进行新应用的开发。 |
 
 ## 历史Beta版本
 

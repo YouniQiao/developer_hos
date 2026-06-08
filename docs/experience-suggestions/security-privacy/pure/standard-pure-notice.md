@@ -2,9 +2,10 @@
 title: "恶意弹窗"
 original_url: /docs/experience-suggestions/security-privacy/pure/standard-pure-notice
 format: md
+upstream_id: experience-suggestions/security-privacy/pure/standard-pure-notice
+last_sync: 2026-06-07
+sync_hash: c915e807
 ---
-
-
 # 恶意弹窗
 
 |  |  |

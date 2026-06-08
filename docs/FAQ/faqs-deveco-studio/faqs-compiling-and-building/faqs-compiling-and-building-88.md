@@ -2,9 +2,10 @@
 format: md
 title: "构建流水线报错：Failed to request the remote SDK"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-88
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-88
+last_sync: 2026-06-07
+sync_hash: 5d3d8d5e
 ---
-
-
 **问题描述**
 
 执行SDK安装时出现错误，请协助检查问题原因。

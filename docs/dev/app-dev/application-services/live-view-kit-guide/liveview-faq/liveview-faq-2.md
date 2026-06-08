@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "三方开发框架接入的问题"
 original_url: /docs/dev/app-dev/application-services/live-view-kit-guide/liveview-faq/liveview-faq-2
 format: md
+upstream_id: dev/app-dev/application-services/live-view-kit-guide/liveview-faq/liveview-faq-2
+last_sync: 2026-06-07
+sync_hash: 2e8d4637
 ---
-
-
 实况窗随HarmonyOS整体框架支持三方平台，HarmonyOS为常见的三方开发框架提供了接入指南：
 
 * [React Native](https://gitee.com/react-native-oh-library/usage-docs)

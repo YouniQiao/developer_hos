@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "IAP Kit常见问题"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-faq
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-faq
+last_sync: 2026-06-07
+sync_hash: b26d5ff1
 ---
-
-
 * **[AppGallery Connect中可以配置多个关键事件通知接收地址吗？](/docs/dev/app-dev/application-services/iap-kit-guide/iap-faq/iap-faq-2)**
 * **[AppGallery Connect获取的IAP公钥最大长度是多少？便于用户存储设置的最大长度是多少？](/docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-10)**
 * **[AppGallery Connect商品管理页面，商品价格编辑界面的默认价格表示什么意思？](/docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-11)**

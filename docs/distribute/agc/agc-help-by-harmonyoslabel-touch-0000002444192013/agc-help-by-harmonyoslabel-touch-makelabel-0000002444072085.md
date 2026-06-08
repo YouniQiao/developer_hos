@@ -2,9 +2,10 @@
 title: "制作标签"
 original_url: /docs/distribute/agc/agc-help-by-harmonyoslabel-touch-0000002444192013/agc-help-by-harmonyoslabel-touch-makelabel-0000002444072085
 format: md
+upstream_id: distribute/agc/agc-help-by-harmonyoslabel-touch-0000002444192013/agc-help-by-harmonyoslabel-touch-makelabel-0000002444072085
+last_sync: 2026-06-07
+sync_hash: 0dfe8b75
 ---
-
-
 #### 获取NFC标签数据
 
 1. 在标签服务的“HarmonyOS标签”列表中，对已生效的碰一碰标签点击“查看”。

@@ -2,9 +2,10 @@
 format: md
 title: "debug包功能正常，release包开启混淆后应用功能运行异常，页面白屏，崩溃"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-187
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-187
+last_sync: 2026-06-07
+sync_hash: 2bb4ca91
 ---
-
-
 **解决措施**
 
 在主模块下的obfuscation-rules.txt文件中配置-disable-obfuscation选项关闭混淆，确认问题是否由混淆引起。
@@ -15,4 +16,4 @@ original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-comp
 
 **参考链接**
 
-[通过混淆助手配置保留选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-obfuscation#section19439175917123)
+[通过混淆助手配置保留选项](/docs/tools/coding-debug/ide-build-obfuscation#section19439175917123)

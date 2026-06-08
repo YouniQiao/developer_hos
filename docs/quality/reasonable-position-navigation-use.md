@@ -1,8 +1,10 @@
 ---
 title: "后台定位导航服务合理使用"
 original_url: /docs/quality/reasonable-position-navigation-use
+upstream_id: /docs/quality/reasonable-position-navigation-use
+last_sync: 2026-06-07
+sync_hash: 2f8adb74
 ---
-
 # 后台定位导航服务合理使用
 
 使用定位导航服务时，申请长时任务的应用需设置正确应用场景。

@@ -3,9 +3,10 @@ title: "@typescript-eslint/naming-convention"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_naming-convention
 format: md
+upstream_id: tools/coding-debug/ide_naming-convention
+last_sync: 2026-06-07
+sync_hash: 0cb6d9ce
 ---
-
-
 # @typescript-eslint/naming-convention
 
 强制标识符使用一致的命名风格。

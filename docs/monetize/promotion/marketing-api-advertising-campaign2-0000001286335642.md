@@ -3,8 +3,10 @@ title: "查询计划"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-advertising-campaign2-0000001286335642
 format: md
+upstream_id: monetize/promotion/marketing-api-advertising-campaign2-0000001286335642
+last_sync: 2026-06-07
+sync_hash: 23db9a66
 ---
-
 # 查询计划
 
 您通过本接口查询计划。

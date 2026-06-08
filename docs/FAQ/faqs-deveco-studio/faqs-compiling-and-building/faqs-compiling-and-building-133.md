@@ -2,9 +2,10 @@
 format: md
 title: "Mac环境下加载动态库，签名拦截导致未生效"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-133
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-133
+last_sync: 2026-06-07
+sync_hash: 199af510
 ---
-
-
 **问题现象**
 
 Mac环境下，在DevEco项目开发时，build-profile.json中添加了如下的插桩配置，但是插桩功能未生效。

@@ -3,10 +3,10 @@ title: "技术支持"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_api_technical-support-0000001256970296
 format: md
+upstream_id: monetize/monetization/agd_pro_api_technical-support-0000001256970296
+last_sync: 2026-06-07
+sync_hash: c165fe86
 ---
-
-
-
 当您使用AGD Pro API遇到问题时，可以按照以下顺序需求帮助。
 
 1. 查看[FAQ](/docs/monetize/monetization/agd_pro_api_faq-0000001217354962)和[错误码](/docs/monetize/monetization/agd_pro_api_if_error-code-0000001263223153)，来解答您的常见咨询问题。

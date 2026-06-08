@@ -2,8 +2,11 @@
 title: "进度条 (Progress)"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-add-component/arkts-common-components-progress-indicator
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-add-component/arkts-common-components-progress-indicator
+last_sync: 2026-06-07
+sync_hash: 294d3203
+upstream_hash: da28cd150e36
 ---
-
 
 Progress是进度条显示组件，显示内容通常为目标操作的当前进度。具体用法请参考[Progress](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-progress)。
 

@@ -2,9 +2,10 @@
 title: "新建元服务卡片"
 original_url: /docs/dev/atomic-dev/develop-first-atomic-service/atomic-service-create-page
 format: md
+upstream_id: dev/atomic-dev/develop-first-atomic-service/atomic-service-create-page
+last_sync: 2026-06-07
+sync_hash: ba61f5f5
 ---
-
-
 1. 在元服务中新建一张卡片。
    * 在“**Project**”窗口，在“**entry**”模块目录右键选择“**New &gt; Service Widget &gt; Dynamic Widget**”，进入卡片模板选择界面，如下图所示：
 

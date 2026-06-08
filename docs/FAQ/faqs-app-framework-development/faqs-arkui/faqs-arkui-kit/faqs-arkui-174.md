@@ -2,9 +2,10 @@
 format: md
 title: "当父组件绑定了onTouch，其子组件Button绑定了onClick，如何做到点击Button只响应Button的onClick，而不用响应父组件的onTouch"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-174
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-174
+last_sync: 2026-06-07
+sync_hash: 15815276
 ---
-
-
 可以在Button组件中绑定onTouch，并在onTouch中使用stopPropagation()阻止事件冒泡到父组件。参考代码如下：
 
 ```

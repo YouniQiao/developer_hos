@@ -2,9 +2,10 @@
 title: "标准化数据类型 (C/C++)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-type-descriptors-c
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-type-descriptors-c
+last_sync: 2026-06-07
+sync_hash: 831b14b0
 ---
-
-
 ## 场景介绍
 
 统一数据管理框架（UDMF）提供数据跨应用、跨设备交互标准，定义数据交互过程中的数据语言，提升数据交互效率。它提供安全、标准化的数据流通路径，支持不同级别的数据访问权限和生命周期管理策略，实现高效的数据共享。

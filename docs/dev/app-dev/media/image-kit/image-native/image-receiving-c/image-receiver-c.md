@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用Image_NativeModule完成图片接收"
 original_url: /docs/dev/app-dev/media/image-kit/image-native/image-receiving-c/image-receiver-c
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-native/image-receiving-c/image-receiver-c
+last_sync: 2026-06-07
+sync_hash: 904a0fa0
 ---
-
-
 图像接收类，用于获取组件的surfaceId、接收最新的图片、读取下一张图片以及释放ImageReceiver实例。结合camera API实现的相机预览示例代码可参考[预览流二次处理(C/C++)](/docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-preview-imagereceiver)。
 
 ![](./img/e6cd3e4e.png)

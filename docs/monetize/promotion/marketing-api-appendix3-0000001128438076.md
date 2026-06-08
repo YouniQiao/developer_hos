@@ -3,8 +3,10 @@ title: "错误码"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-appendix3-0000001128438076
 format: md
+upstream_id: monetize/promotion/marketing-api-appendix3-0000001128438076
+last_sync: 2026-06-07
+sync_hash: b64f71a5
 ---
-
 # 错误码
 
 |  |  |

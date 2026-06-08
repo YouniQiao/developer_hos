@@ -3,8 +3,11 @@ title: "@typescript-eslint/no-unnecessary-boolean-literal-compare"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unnecessary-boolean-literal-compare
 format: md
+upstream_id: tools/coding-debug/ide_no-unnecessary-boolean-literal-compare
+last_sync: 2026-06-07
+sync_hash: d0ee42a4
+upstream_hash: 47fe23e50bc6
 ---
-
 
 # @typescript-eslint/no-unnecessary-boolean-literal-compare
 

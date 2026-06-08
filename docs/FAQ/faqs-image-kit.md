@@ -2,9 +2,10 @@
 format: md
 title: "图片处理（Image）"
 original_url: /docs/FAQ/faqs-image-kit
+upstream_id: FAQ/faqs-image-kit
+last_sync: 2026-06-07
+sync_hash: 98d5eb48
 ---
-
-
 * **[通过PixelMap\_CreatePixelMap创建的对象，内存在ArkTS侧和Native侧是否共享](/docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-1)**
 * **[如何从图库选择图片并上传到服务器](/docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-22)**
 * **[如何设置图片的高斯模糊效果](/docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-2)**

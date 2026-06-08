@@ -2,9 +2,10 @@
 title: "场景体验"
 original_url: /docs/dev/app-dev/ai/intents-habit-rec-scene-experience
 format: md
+upstream_id: dev/app-dev/ai/intents-habit-rec-scene-experience
+last_sync: 2026-06-07
+sync_hash: 1e083a82
 ---
-
-
 ## 典型场景
 
 当前习惯推荐可在小艺建议入口分发，在不同垂域中，填充功能详细参数或内容的逻辑不同，主要典型场景可分为常用接续、常用复访、常用推新三类。

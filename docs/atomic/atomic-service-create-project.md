@@ -2,15 +2,16 @@
 title: "创建元服务工程"
 original_url: /docs/dev/atomic-dev/develop-first-atomic-service/atomic-service-create-project
 format: md
+upstream_id: dev/atomic-dev/develop-first-atomic-service/atomic-service-create-project
+last_sync: 2026-06-07
+sync_hash: 95a7b2fc
 ---
-
-
 1. 若首次打开**DevEco Studio**，请选择**Create Project**开始创建一个新工程。如果已经打开了一个工程，请在菜单栏选择**File** &gt; **New** &gt; **Create Project**来创建一个新工程。选择**Atomic Service**元服务开发，选择模板，单击**Next**进行下一步配置。
 
    当前元服务支持的模板类型：
 
    * Empty Ability：用于Phone、Tablet、Car设备的模板，展示基础的Hello World功能。
-   * [CloudDev]Empty Ability：端云一体化开发通用模板。更多信息请参见[端云一体化开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-create-faproject)。
+   * [CloudDev]Empty Ability：端云一体化开发通用模板。更多信息请参见[端云一体化开发](/docs/tools/end-cloud/agc-harmonyos-create-faproject)。
    * Embeddable Ability：用于开发支持被其他应用嵌入式运行的元服务的工程模板。
 
    ![](./img/874c0b17.png)

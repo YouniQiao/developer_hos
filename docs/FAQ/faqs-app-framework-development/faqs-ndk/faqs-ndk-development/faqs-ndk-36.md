@@ -2,9 +2,10 @@
 format: md
 title: "如何使用后缀为so.x.y类型的so库，例如libxxx.so.3.1、libxxx.so.3.1.0"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-36
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-36
+last_sync: 2026-06-07
+sync_hash: dfd821bb
 ---
-
-
 **问题现象：**
 
 使用系统的工具链编译 OpenCV 3.1.0 的共享库文件（.so）。由于生成的共享库文件后缀为 .so.x.y.z，无法直接用于应用包。

@@ -3,8 +3,10 @@ title: "新增素材"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-addmaterial-0000001135626812
 format: md
+upstream_id: monetize/promotion/marketapi-addmaterial-0000001135626812
+last_sync: 2026-06-07
+sync_hash: bb71007c
 ---
-
 # 新增素材
 
 ## 功能介绍

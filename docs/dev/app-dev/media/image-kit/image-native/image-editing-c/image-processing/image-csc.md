@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "图片色彩空间转换"
 original_url: /docs/dev/app-dev/media/image-kit/image-native/image-editing-c/image-processing/image-csc
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-native/image-editing-c/image-processing/image-csc
+last_sync: 2026-06-07
+sync_hash: 6300efb3
 ---
-
-
 调用者可以调用本模块提供的[C API接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-imageprocessing)，实现HDR2SDR、SDR2HDR、SDR2SDR的图片色彩空间转换。
 
 该能力常用于图片编辑中，如下图所示：

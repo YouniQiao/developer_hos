@@ -2,9 +2,10 @@
 format: md
 title: "签名后生成的material目录是干什么用的"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-9
+upstream_id: FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-9
+last_sync: 2026-06-07
+sync_hash: e3ca3579
 ---
-
-
 **问题描述**
 
 通过DevEco Studio上的Generate key and csr工具生成p12和csr文件时，会同时生成一个material文件夹。这个material文件夹用于存储签名应用所需的辅助文件。在签名应用时，这些文件可能需要被引用，因此建议保留该文件夹以确保签名过程顺利进行。

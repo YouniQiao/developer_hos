@@ -2,9 +2,10 @@
 title: "获取文件上传地址"
 original_url: /docs/distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-upload-url-0000002236201294
 format: md
+upstream_id: distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-upload-url-0000002236201294
+last_sync: 2026-06-07
+sync_hash: a9589d29
 ---
-
-
 #### 功能介绍
 
 上传文件至AppGallery Connect前需要先调用此接口获取上传地址，包括图片、视频、APP、PDF等文件。

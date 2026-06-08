@@ -3,9 +3,10 @@ title: "@typescript-eslint/comma-dangle"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_comma-dangle
 format: md
+upstream_id: tools/coding-debug/ide_comma-dangle
+last_sync: 2026-06-07
+sync_hash: 185cfce8
 ---
-
-
 # @typescript-eslint/comma-dangle
 
 允许或禁止使用尾随逗号。

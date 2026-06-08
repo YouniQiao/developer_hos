@@ -2,9 +2,10 @@
 title: "国家码"
 original_url: /docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-countrycode-0000002236201362
 format: md
+upstream_id: distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-countrycode-0000002236201362
+last_sync: 2026-06-07
+sync_hash: 06557898
 ---
-
-
 | 站点 | 国家或地区（中文） | 国家码  两位字母 |
 | --- | --- | --- |
 | 德国站点 | 土耳其 | TR |

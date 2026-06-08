@@ -2,9 +2,10 @@
 title: "标准化数据结构 (ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-structure
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-structure
+last_sync: 2026-06-07
+sync_hash: c0184cae
 ---
-
-
 ## 场景介绍
 
 针对[UTD标准化数据类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-uniformtypedescriptor#uniformdatatype)中的部分常见类型，为了方便业务使用，我们按照不同的数据类型提供了标准化数据结构，例如系统定义的桌面图标类型（对应的标准化数据类型标识为'openharmony.app-item'），我们明确定义了该数据结构对应的相关描述信息。

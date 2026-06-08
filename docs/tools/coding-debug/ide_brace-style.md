@@ -3,8 +3,11 @@ title: "@typescript-eslint/brace-style"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_brace-style
 format: md
+upstream_id: tools/coding-debug/ide_brace-style
+last_sync: 2026-06-07
+sync_hash: 70132972
+upstream_hash: 9f786bf23a4f
 ---
-
 
 # @typescript-eslint/brace-style
 

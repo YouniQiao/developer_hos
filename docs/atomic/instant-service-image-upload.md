@@ -2,9 +2,10 @@
 title: "上传图片"
 original_url: /docs/dev/atomic-dev/instant-service-image-management/instant-service-image-upload
 format: md
+upstream_id: dev/atomic-dev/instant-service-image-management/instant-service-image-upload
+last_sync: 2026-06-07
+sync_hash: 115cb45d
 ---
-
-
 ## 功能介绍
 
 上传图片接口用于将商品的图片文件或图片URL上传至平台素材库，生成唯一的素材ID（imageMaterialId），供后续创建或更新商品时使用。该接口为商品图片字段的前置依赖，所有在商品中使用的图片必须通过此接口预先上传并获取有效的imageMaterialId。
@@ -65,16 +66,19 @@ Authorization: Bearer eyJr*****OiIx---****.eyJh*****iJodHR--***.QRod*****4Gp---*
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 appId: 5981*****5845
 
-------WebKitFormBoundary7MA4YWxkTrZu0gW
+---
+---WebKitFormBoundary7MA4YWxkTrZu0gW
 Content-Disposition: form-data; name="file"; filename="image.png"
 Content-Type: image/png
 
 <二进制图片数据>
-------WebKitFormBoundary7MA4YWxkTrZu0gW
+---
+---WebKitFormBoundary7MA4YWxkTrZu0gW
 Content-Disposition: form-data; name="imageTypeId"
 
 1
-------WebKitFormBoundary7MA4YWxkTrZu0gW--
+---
+---WebKitFormBoundary7MA4YWxkTrZu0gW--
 ```
 
 ## 请求示例-通过图片URL上传
@@ -85,15 +89,18 @@ Authorization: Bearer eyJr*****OiIx---****.eyJh*****iJodHR--***.QRod*****4Gp---*
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 appId: 5981*****5845
 
-------WebKitFormBoundary7MA4YWxkTrZu0gW
+---
+---WebKitFormBoundary7MA4YWxkTrZu0gW
 Content-Disposition: form-data; name="imageUrl"
 
 https://example.com/images/product.png
-------WebKitFormBoundary7MA4YWxkTrZu0gW
+---
+---WebKitFormBoundary7MA4YWxkTrZu0gW
 Content-Disposition: form-data; name="imageTypeId"
 
 1
-------WebKitFormBoundary7MA4YWxkTrZu0gW--
+---
+---WebKitFormBoundary7MA4YWxkTrZu0gW--
 ```
 
 ## 响应参数

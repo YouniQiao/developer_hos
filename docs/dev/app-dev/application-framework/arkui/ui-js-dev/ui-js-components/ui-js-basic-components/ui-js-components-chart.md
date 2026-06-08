@@ -2,9 +2,10 @@
 title: "chart开发指导"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-basic-components/ui-js-components-chart
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-basic-components/ui-js-components-chart
+last_sync: 2026-06-07
+sync_hash: b2ea9cb0
 ---
-
-
 chart为图表组件，用于呈现线形图、柱状图和量规图界面。具体用法请参考[chart](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-basic-chart)。
 
 ## 创建chart组件

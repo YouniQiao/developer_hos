@@ -2,9 +2,10 @@
 title: "将pixelFormat设置为nv21或者nv12时抛出错误码62980096怎么处理"
 original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-17
 format: md
+upstream_id: FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-17
+last_sync: 2026-06-07
+sync_hash: fa0b1aad
 ---
-
-
 **问题详情：**
 
 调用createPixelMap方法时，如果将pixelFormat设置为nv21或nv12，可能会遇到错误代码62980096。建议检查以下几点：

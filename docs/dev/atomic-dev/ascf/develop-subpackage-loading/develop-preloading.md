@@ -2,9 +2,10 @@
 title: "预加载"
 original_url: /docs/dev/atomic-dev/ascf/develop-subpackage-loading/develop-preloading
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-subpackage-loading/develop-preloading
+last_sync: 2026-06-07
+sync_hash: 8cdc5ed3
 ---
-
-
 开发者可以通过配置预加载，由系统自动下载和安装可能需要的分包模块，从而提升进入后续模块的速度。
 
 对于配置了预加载的分包模块，当点击进入该模块并完成页面加载后，将触发关联模块的预加载。

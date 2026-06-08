@@ -2,9 +2,10 @@
 format: md
 title: "javaScriptProxy和registerJavaScriptProxy有什么区别，能注册多少个对象"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-20
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-20
+last_sync: 2026-06-07
+sync_hash: 7f4ab855
 ---
-
-
 从功能上讲，二者都可以注入JavaScript对象到window对象中，并在window对象中调用该对象的方法。
 
 从接口角度来看，javaScriptProxy是Web组件的方法，而registerJavaScriptProxy是WebviewController的方法。

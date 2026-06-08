@@ -2,9 +2,10 @@
 title: "查找设备"
 original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-ble/ble-development-guide
 format: md
+upstream_id: dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-ble/ble-development-guide
+last_sync: 2026-06-07
+sync_hash: 4a01d1d3
 ---
-
-
 ## 简介
 
 本指南主要提供了BLE扫描和BLE广播相关操作的开发指导。可以实现发现周边BLE设备和其他设备发现本机设备的场景。

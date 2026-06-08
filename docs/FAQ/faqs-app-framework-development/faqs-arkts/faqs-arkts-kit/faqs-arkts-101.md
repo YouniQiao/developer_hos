@@ -2,9 +2,10 @@
 format: md
 title: "如何快速生成class的setter和getter方法"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-101
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-101
+last_sync: 2026-06-07
+sync_hash: 898d92fa
 ---
-
-
 1. 在类内部，右键点击，选择“生成”。
 
    ![](./img/4cd39ffa.png "点击放大")

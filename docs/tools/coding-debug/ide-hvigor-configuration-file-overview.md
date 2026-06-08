@@ -3,9 +3,10 @@ title: "配置文件概述"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-configuration-file-overview
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-configuration-file-overview
+last_sync: 2026-06-07
+sync_hash: 35d56b6f
 ---
-
-
 # 配置文件概述
 
 工程应用代码包含hvigor-config.json5、build-profile.json5等构建配置文件，用于配置构建环境，定制构建流程，包括构建工具版本和依赖、[多目标构建配置](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products)等。

@@ -3,9 +3,10 @@ title: "多进程调试"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-multi-process
 format: md
+upstream_id: tools/coding-debug/ide-debug-multi-process
+last_sync: 2026-06-07
+sync_hash: 15d21c93
 ---
-
-
 # 多进程调试
 
 部分设备上，UIAbility支持以独立进程的方式运行并调试，详细请参考[进程模型](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/process-model-stage#其他进程类型)，可按照以下步骤对UIAbility进行调试。

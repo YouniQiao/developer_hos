@@ -3,10 +3,10 @@ title: "MaterialMeta"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_api_if_materialmeta-0000001247927004
 format: md
+upstream_id: monetize/monetization/agd_pro_api_if_materialmeta-0000001247927004
+last_sync: 2026-06-07
+sync_hash: 766d84bb
 ---
-
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | adFlag | O | `Integer` | 是否为商业化结果。  取值范围：   * 0：否 * 1：是   说明：  默认不返回自然量，如果需要自然量，请和运营单独申请。 |

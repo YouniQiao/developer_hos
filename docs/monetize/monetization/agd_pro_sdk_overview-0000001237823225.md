@@ -3,10 +3,10 @@ title: "业务介绍"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_overview-0000001237823225
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_overview-0000001237823225
+last_sync: 2026-06-07
+sync_hash: cee745bf
 ---
-
-
-
 #### 业务概述
 
 **AGD Pro应用变现服务（简称AGD Pro服务）**是华为应用市场为在架应用提供的媒体增值服务。AGD Pro**兼顾广告主投放效果、用户体验和媒体收益**为服务宗旨，为开发者提供**一键应用分发**、**高效商业变现**的产品服务，覆盖开户接入、策略优化、数据分析及运营服务，通过智能流量分发策略、全链路数据分析、精细化运营服务，一站式、多维度助力开发者实现增长+变现闭环，快速获得**商业成功**。

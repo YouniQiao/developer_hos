@@ -1,8 +1,10 @@
 ---
 title: "开发基础知识"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/development-fundamentals
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/development-fundamentals
+last_sync: 2026-06-07
+sync_hash: f2799fa1
 ---
-
 * **[应用程序包基础知识](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-fundamentals)**
 * **[应用配置文件（Stage模型）](/docs/dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-stage)**
 * **[应用配置文件（FA模型）](/docs/dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-fa)**

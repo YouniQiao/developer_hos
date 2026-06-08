@@ -2,9 +2,10 @@
 title: "设置无主按钮的组件"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-actionbar/ui-design-actionbar-without-master-button
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-actionbar/ui-design-actionbar-without-master-button
+last_sync: 2026-06-07
+sync_hash: 7f9a86cf
 ---
-
-
 ## 场景介绍
 
 从6.0.0(20)版本开始，新增支持设置无主按钮的组件。

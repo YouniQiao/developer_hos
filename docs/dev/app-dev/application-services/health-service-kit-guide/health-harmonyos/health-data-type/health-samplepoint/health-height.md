@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "身高"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-height
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-height
+last_sync: 2026-06-07
+sync_hash: 15e46757
 ---
-
-
 此数据记录用户在某时刻的身高数据。
 
 Harmony SDK类型常量：[samplePointHelper.height.DATA\_TYPE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-samplepointhelper#常量-7)

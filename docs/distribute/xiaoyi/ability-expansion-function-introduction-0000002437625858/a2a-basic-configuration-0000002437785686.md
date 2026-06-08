@@ -3,9 +3,10 @@ title: "A2A基础配置"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/a2a-basic-configuration-0000002437785686
 format: md
+upstream_id: distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/a2a-basic-configuration-0000002437785686
+last_sync: 2026-06-07
+sync_hash: cdf9efe6
 ---
-
-
 # A2A基础配置
 
 A2A模式创建智能体是以HarmonyOS Agent2Agent协议接入三方智能体。在该模式下，开发者必须完成此节点的配置，否则无法正常发布智能体。

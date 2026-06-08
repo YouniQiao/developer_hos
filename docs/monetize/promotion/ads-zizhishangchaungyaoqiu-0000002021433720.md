@@ -3,8 +3,10 @@ title: "资质文件规范性要求"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-zizhishangchaungyaoqiu-0000002021433720
 format: md
+upstream_id: monetize/promotion/ads-zizhishangchaungyaoqiu-0000002021433720
+last_sync: 2026-06-07
+sync_hash: aa148285
 ---
-
 # 资质文件规范性要求
 
 ## 《营业执照》上传要求解读

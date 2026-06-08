@@ -2,9 +2,10 @@
 title: "ohpm-repo 命令参考"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-commands
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-commands
+last_sync: 2026-06-07
+sync_hash: 65dddec6
 ---
-
-
 # ohpm-repo 命令参考
 
 

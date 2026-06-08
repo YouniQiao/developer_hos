@@ -3,8 +3,10 @@ title: 全球化
 sidebar_label: 全球化
 original_url: /docs/design/general-design-basics/globalization
 format: md
+upstream_id: design/general-design-basics/globalization
+last_sync: 2026-06-07
+sync_hash: cffc1df5
 ---
-
 # 全球化
 
 产品和应用要在全球发布，需考虑全球化流程，即**“**国际化**”**和**“**本地化**”**。

@@ -3,8 +3,10 @@ title: "9. 账号注销常见问题"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-11
 format: md
+upstream_id: distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-11
+last_sync: 2026-06-07
+sync_hash: d453e2f5
 ---
-
 # 9. 账号注销常见问题
 
 ## 9.1 为什么要设置账号注销功能，应用是不是“必须”允许用户注销账号？

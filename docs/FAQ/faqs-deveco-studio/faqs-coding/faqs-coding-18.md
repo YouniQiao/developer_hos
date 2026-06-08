@@ -2,9 +2,10 @@
 format: md
 title: "DevEco Studio上使用ArcList组件时编辑器提示“The default system capabilities of devices wearable do not include SystemCapability.ArkUI.ArkUI.Circle”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-18
+upstream_id: FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-18
+last_sync: 2026-06-07
+sync_hash: 4ee3c632
 ---
-
-
 **问题现象**
 
 使用ArcList组件时，编辑器报错，错误信息如下：

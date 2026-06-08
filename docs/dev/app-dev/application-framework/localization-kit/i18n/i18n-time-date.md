@@ -2,9 +2,10 @@
 title: "时间日期国际化"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-time-date
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/i18n/i18n-time-date
+last_sync: 2026-06-07
+sync_hash: 1c4819b5
 ---
-
-
 ## 使用场景
 
 在不同国家和文化中，时间和日期的表示方法存在差异，主要体现在年月日的顺序以及时分秒的分隔符。若应用中需展示时间日期，要确保界面以合适的方式显示，以便用户能够理解。

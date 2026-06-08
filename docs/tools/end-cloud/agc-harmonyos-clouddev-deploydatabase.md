@@ -1,12 +1,12 @@
 ---
-
 title: "部署云数据库"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-deploydatabase
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-deploydatabase
+last_sync: 2026-06-07
+sync_hash: d5506d9c
 ---
-
-
 # 部署云数据库
 
 完成数据条目创建后，您可以直接部署该数据条目。您也可以等所有对象类型和数据条目开发完成后，再统一批量部署到AGC云端。

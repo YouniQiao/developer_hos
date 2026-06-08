@@ -3,8 +3,10 @@ title: "功能介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-creative-prefer-introduction-0000001352546332
 format: md
+upstream_id: monetize/promotion/bp-functions-creative-prefer-introduction-0000001352546332
+last_sync: 2026-06-07
+sync_hash: 74224011
 ---
-
 # 功能介绍
 
 当一个任务设置多组创意后，开发者可选择以优选模式或轮播模式展示创意。

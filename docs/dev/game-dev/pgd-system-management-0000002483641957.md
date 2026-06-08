@@ -2,9 +2,10 @@
 title: "系统管理"
 original_url: /docs/dev/game-dev/pgd-system-management-0000002483641957
 format: md
+upstream_id: dev/game-dev/pgd-system-management-0000002483641957
+last_sync: 2026-06-07
+sync_hash: fe5cdae5
 ---
-
-
 ## 添加系统
 
 ```

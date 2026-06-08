@@ -2,9 +2,10 @@
 title: "集成SDK"
 original_url: /docs/dev/game-dev/gameobe-integratingsdk-csharp-0000002395350421
 format: md
+upstream_id: dev/game-dev/gameobe-integratingsdk-csharp-0000002395350421
+last_sync: 2026-06-07
+sync_hash: b40256ea
 ---
-
-
 为了方便Unity开发者接入联机对战服务相关API，我们提供了C# SDK，支持实现匹配组局、消息同步、掉线重连、录像回放等功能。
 
 ![](./img/c55695a7.png)

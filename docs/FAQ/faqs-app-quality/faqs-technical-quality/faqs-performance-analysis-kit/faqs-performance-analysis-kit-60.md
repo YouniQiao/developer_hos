@@ -2,9 +2,10 @@
 title: "如何使用ErrorManager捕获异常"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-60
 format: md
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-60
+last_sync: 2026-06-07
+sync_hash: 026b6832
 ---
-
-
 ErrorManager提供错误观察器的注册和注销。
 
 异常监听（ErrorObserver）接口功能介绍：

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "附录"
 original_url: /docs/dev/app-dev/application-services/location-kit-appendix
 format: md
+upstream_id: dev/app-dev/application-services/location-kit-appendix
+last_sync: 2026-06-07
+sync_hash: 526b8a60
 ---
-
-
 ## 支持的国家/地区
 
 ![](./img/069a3a13.png)

@@ -3,8 +3,10 @@ title: "服务商账户注册"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-start-service-provider-register-0000001328677530
 format: md
+upstream_id: monetize/promotion/bpos-start-service-provider-register-0000001328677530
+last_sync: 2026-06-07
+sync_hash: 2c25576c
 ---
-
 # 服务商账户注册
 
 ## 概述
@@ -44,7 +46,7 @@ format: md
    如果您的华为账号在华为开发者联盟开通了团队账号，那么您需要使用<strong>华为开发者联盟的主账号</strong>登录并完成注册流程。
 2. 选择投放区域。
 
-   选择<strong>全球（除中国大陆外）</strong>。如果您想要投放中国大陆地区应用市场广告，请查阅[中国大陆地区白皮书](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/bp-introduction-0000001309070266)。
+   选择<strong>全球（除中国大陆外）</strong>。如果您想要投放中国大陆地区应用市场广告，请查阅[中国大陆地区白皮书](/docs/monetize/promotion/bp-introduction-0000001309070266)。
 
    ![](./img/45feb3f4b981.png "点击放大")
 

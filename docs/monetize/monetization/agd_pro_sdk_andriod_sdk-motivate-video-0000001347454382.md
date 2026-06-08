@@ -3,10 +3,10 @@ title: "接入激励视频广告"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_sdk-motivate-video-0000001347454382
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_andriod_sdk-motivate-video-0000001347454382
+last_sync: 2026-06-07
+sync_hash: 6b517439
 ---
-
-
-
 #### 创建AdsContext对象
 
 ```

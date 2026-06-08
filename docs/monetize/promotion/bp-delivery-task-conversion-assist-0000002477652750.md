@@ -3,8 +3,10 @@ title: "投放转化助攻任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-task-conversion-assist-0000002477652750
 format: md
+upstream_id: monetize/promotion/bp-delivery-task-conversion-assist-0000002477652750
+last_sync: 2026-06-07
+sync_hash: f6211e3b
 ---
-
 # 投放转化助攻任务
 
 ## 背景信息

@@ -3,9 +3,10 @@ title: "工作流版本管理"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/development-workflow-0000002435989628/workflow-version-management-0000002503518822
 format: md
+upstream_id: distribute/xiaoyi/development-workflow-0000002435989628/workflow-version-management-0000002503518822
+last_sync: 2026-06-07
+sync_hash: 364afa44
 ---
-
-
 # 工作流版本管理
 
 工作流的版本管理功能，包括版本存档、预览历史版本、回退到历史版本；通过版本管理，开发者可以记录工作流演进过程，并快速预览或回退到特定版本。

@@ -2,9 +2,10 @@
 title: "Stage模型应用组件"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components
+last_sync: 2026-06-07
+sync_hash: 6fd5b738
 ---
-
-
 * **[应用/组件级配置](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-component-configuration-stage)**
 * **[UIAbility组件](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability)**
 * **[ExtensionAbility组件](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview)**

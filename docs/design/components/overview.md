@@ -3,8 +3,10 @@ title: 概览
 sidebar_label: 概览
 original_url: /docs/design/components/overview
 format: md
+upstream_id: design/components/overview
+last_sync: 2026-06-07
+sync_hash: 3c59bd52
 ---
-
 # 概览
 
 ### 导航类

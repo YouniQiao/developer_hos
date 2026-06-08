@@ -2,9 +2,10 @@
 title: "下载标签"
 original_url: /docs/distribute/agc/agc-help-by-harmonyoslabel-scan-0000002410592806/agc-help-by-harmonyoslabel-scan-downloadlabel-0000002410592810
 format: md
+upstream_id: distribute/agc/agc-help-by-harmonyoslabel-scan-0000002410592806/agc-help-by-harmonyoslabel-scan-downloadlabel-0000002410592810
+last_sync: 2026-06-07
+sync_hash: 7a4d97d4
 ---
-
-
 1. 在标签服务的“HarmonyOS标签”列表中，对已生效的扫一扫标签点击“查看”。
 
    ![](../img/agc-help-by-harmonyoslabel-scan-downloadlabel-0000002410592810_0.png)

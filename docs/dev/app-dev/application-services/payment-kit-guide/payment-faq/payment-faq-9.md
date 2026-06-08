@@ -3,8 +3,9 @@ displayed_sidebar: appDevSidebar
 title: "关于支付回调的验签，为什么预下单请求验签的时候使用SHA256，回调验签却使用SM2？只能使用SM2进行验签吗？"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-9
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-9
+last_sync: 2026-06-07
+sync_hash: 554e9633
 ---
-
-
 1. 商户预下单请求加签，华为支付提供了SHA256WithRSA/PSS和SM2两种签名方式，由商户自行选择使用哪一种签名方式进行签名。
 2. 对于支付业务，应监管要求，需要支持国密算法。回调通知华为支付统一使用SM2进行加签，所以目前只能使用SM2进行回调验签，无法由商户选择。

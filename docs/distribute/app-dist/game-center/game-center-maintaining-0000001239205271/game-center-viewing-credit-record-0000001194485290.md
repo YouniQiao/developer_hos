@@ -3,9 +3,10 @@ title: "应用信用记录"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-viewing-credit-record-0000001194485290
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-viewing-credit-record-0000001194485290
+last_sync: 2026-06-07
+sync_hash: 8e69564b
 ---
-
-
 # 应用信用记录
 
 应用信用记录是AppGallery Connect（以下简称AGC）对上架应用进行信用管理的信息资料库，包括违规处罚和负面事件等关键事件记录。它是我们评定开发者诚信行为的重要依据，也是应用转授权、主体转移的主要凭证。您可以在AGC上查询您应用的信用记录。

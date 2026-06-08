@@ -3,10 +3,10 @@ title: "SDK版本更新说明"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_sdk-version-0000001237624123
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_andriod_sdk-version-0000001237624123
+last_sync: 2026-06-07
+sync_hash: 70862193
 ---
-
-
-
 | 版本号 | 发布时间 | 更新说明 |
 | --- | --- | --- |
 | 6.3.1.300 | 2026-05-09 | 支持媒体兼容使用Activity参数构造AdsContext。 |

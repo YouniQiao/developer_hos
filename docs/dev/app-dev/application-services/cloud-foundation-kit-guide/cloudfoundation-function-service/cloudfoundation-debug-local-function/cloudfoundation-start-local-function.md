@@ -3,13 +3,14 @@ displayed_sidebar: appDevSidebar
 title: "启动本地云函数"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-debug-local-function/cloudfoundation-start-local-function
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-debug-local-function/cloudfoundation-start-local-function
+last_sync: 2026-06-07
+sync_hash: 65aed749
 ---
-
-
 请按照如下步骤启动本地云函数：
 
-1. [创建端云一体化开发工程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-create-appproject)：选择合适的云开发模板，根据工程向导创建端云一体化开发工程。
-2. [开发云函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-functionprocess)：使用DevEco Studio在端云一体化云侧工程下创建函数、开发函数、调试函数（通过本地调用方式调试函数）。
+1. [创建端云一体化开发工程](/docs/tools/end-cloud/agc-harmonyos-create-appproject)：选择合适的云开发模板，根据工程向导创建端云一体化开发工程。
+2. [开发云函数](/docs/tools/end-cloud/agc-harmonyos-clouddev-functionprocess)：使用DevEco Studio在端云一体化云侧工程下创建函数、开发函数、调试函数（通过本地调用方式调试函数）。
 
    调试函数过程中，如果下方通知栏的“cloudfunctions”窗口显示“Cloud Functions loaded successfully”，则表示本地云函数启动成功，将生成本地函数的Function URI。**请记录下该Function URI的域名和端口信息，例如下图中的http://localhost:18090 ，后续[调用本地云函数](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-debug-local-function/cloudfoundation-call-local-function)时需要使用这些信息。**
 

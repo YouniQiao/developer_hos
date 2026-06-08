@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "应用市场更新功能"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-update
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-update
+last_sync: 2026-06-07
+sync_hash: 40a66865
 ---
-
-
 应用市场更新功能为已上架应用提供版本检测、显示更新提醒能力。开发者使用应用市场更新功能可以在应用内提醒用户及时更新到最新版本。
 
 ## 场景介绍

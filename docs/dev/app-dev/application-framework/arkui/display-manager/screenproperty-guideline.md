@@ -2,9 +2,10 @@
 title: "使用Display实现屏幕属性查询及状态监听 (ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/arkui/display-manager/screenproperty-guideline
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/display-manager/screenproperty-guideline
+last_sync: 2026-06-07
+sync_hash: 53a5ea53
 ---
-
-
 ## 场景介绍
 
 [Display](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display)屏幕属性提供管理设备屏幕的一些基础能力，例如获取默认显示设备的相关信息、获取全部显示设备的信息，此外还能对显示设备的插拔行为进行监听。应用可以根据对应的屏幕信息、屏幕状态变化、屏幕折叠状态等适配不同的UI界面显示。

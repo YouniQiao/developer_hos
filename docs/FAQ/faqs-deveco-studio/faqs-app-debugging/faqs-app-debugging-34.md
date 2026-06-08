@@ -2,9 +2,10 @@
 format: md
 title: "Native调试无法与lldb-server连接"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-34
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-34
+last_sync: 2026-06-07
+sync_hash: 1b02d40e
 ---
-
-
 **问题现象：**Native调试长时间没有启动，最后DevEco Studio超时报错"Attach request timeout after 600000 milliseconds"或Native调试启动后报错"Failed to connect port"。
 
 ![](./img/312ee879.jpg)

@@ -2,9 +2,10 @@
 title: "相机"
 original_url: /docs/dev/atomic-dev/ascf/apis-media/apis-camera
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-media/apis-camera
+last_sync: 2026-06-07
+sync_hash: 5f3576ac
 ---
-
-
 ## has.createCameraContext
 
 has.createCameraContext(): CameraContext

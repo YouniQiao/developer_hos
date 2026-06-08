@@ -2,9 +2,10 @@
 title: "短时任务(C/C++)"
 original_url: /docs/dev/app-dev/application-framework/background-task-kit/native-transient-task
 format: md
+upstream_id: dev/app-dev/application-framework/background-task-kit/native-transient-task
+last_sync: 2026-06-07
+sync_hash: 51474b3a
 ---
-
-
 ## 场景介绍
 
 应用退至后台一小段时间后，应用进程会被挂起，无法执行对应的任务。如果应用在后台仍需要执行耗时不长的任务，如状态保存等，可以通过本文申请短时任务，扩展应用在后台的运行时间。

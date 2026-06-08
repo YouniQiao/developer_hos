@@ -3,8 +3,10 @@ title: "功能调试"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-intelligent-subcontract-debug-0000001284968724
 format: md
+upstream_id: monetize/promotion/bp-functions-intelligent-subcontract-debug-0000001284968724
+last_sync: 2026-06-07
+sync_hash: 0af57b23
 ---
-
 # 功能调试
 
 ## 前提条件

@@ -3,9 +3,10 @@ title: "ohpm命令公共错误码"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-errorcode-universal
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-errorcode-universal
+last_sync: 2026-06-07
+sync_hash: b765a3f0
 ---
-
-
 # ohpm命令公共错误码
 
 ## 00617101 获取包信息失败

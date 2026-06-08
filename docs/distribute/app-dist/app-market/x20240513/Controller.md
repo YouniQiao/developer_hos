@@ -3,8 +3,10 @@ title: "华为分析数据保护协议"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x20240513/Controller
 format: md
+upstream_id: distribute/app-dist/app-market/x20240513/Controller
+last_sync: 2026-06-07
+sync_hash: 4908c279
 ---
-
 # 华为分析数据保护协议
 
 点击下载[华为分析数据保护协议](https://terms-drcn.platform.dbankcloud.cn/agreementservice/developer/getAgreementTemplate?agrType=1194&country=cn&language=zh_cn&version=2022020801)。

@@ -2,9 +2,10 @@
 title: "功能开发"
 original_url: /docs/dev/game-dev/games-gamemme-rtm-restapi-develop-0000002339373738
 format: md
+upstream_id: dev/game-dev/games-gamemme-rtm-restapi-develop-0000002339373738
+last_sync: 2026-06-07
+sync_hash: dd5d039b
 ---
-
-
 完成创建API客户端和获取到访问API的Access Token后，您即可以调用对应的接口来完成相应的功能开发。
 
 | 接口 | 说明 |

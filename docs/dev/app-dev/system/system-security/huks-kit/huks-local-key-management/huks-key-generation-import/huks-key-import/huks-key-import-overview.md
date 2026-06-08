@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "密钥导入介绍及算法规格"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-import/huks-key-import-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-import/huks-key-import-overview
+last_sync: 2026-06-07
+sync_hash: a89b836c
 ---
-
-
 如果业务在HUKS外部生成密钥（比如应用间协商生成、服务器端生成），业务可以将密钥导入到HUKS中由HUKS进行管理。密钥一旦导入到HUKS中，在密钥的生命周期内，其明文仅在安全环境中进行访问操作，不会传递出安全环境。
 
 密钥导入的方式包含明文导入和安全导入两种方式。

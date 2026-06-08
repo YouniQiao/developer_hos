@@ -2,9 +2,10 @@
 title: "申请证书"
 original_url: /docs/distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-apply-cent-0000002236201302
 format: md
+upstream_id: distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-apply-cent-0000002236201302
+last_sync: 2026-06-07
+sync_hash: d34e6746
 ---
-
-
 #### 功能介绍
 
 此接口用于申请二进制证书、In-house发布证书、调试证书或发布证书。

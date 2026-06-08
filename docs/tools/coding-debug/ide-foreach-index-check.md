@@ -3,9 +3,10 @@ title: "@performance/foreach-index-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-foreach-index-check
 format: md
+upstream_id: tools/coding-debug/ide-foreach-index-check
+last_sync: 2026-06-07
+sync_hash: 54006c6a
 ---
-
-
 # @performance/foreach-index-check
 
 使用Foreach组件时，不建议在keyGenerator中使用index作为返回值或者返回值的一部分，可能会导致性能问题。

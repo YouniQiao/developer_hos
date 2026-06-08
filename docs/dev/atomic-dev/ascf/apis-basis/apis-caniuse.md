@@ -2,9 +2,10 @@
 title: "API可用判断"
 original_url: /docs/dev/atomic-dev/ascf/apis-basis/apis-caniuse
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-basis/apis-caniuse
+last_sync: 2026-06-07
+sync_hash: 012404ad
 ---
-
-
 ## has.canIUse
 
 has.canIUse(string schema): boolean

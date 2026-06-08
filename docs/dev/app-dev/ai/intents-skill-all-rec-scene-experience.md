@@ -2,9 +2,10 @@
 title: "场景体验"
 original_url: /docs/dev/app-dev/ai/intents-skill-all-rec-scene-experience
 format: md
+upstream_id: dev/app-dev/ai/intents-skill-all-rec-scene-experience
+last_sync: 2026-06-07
+sync_hash: ea3002bb
 ---
-
-
 用户通过小艺对话进行自然语言输入实现服务闭环和内容查询。主要场景分为两大类：任务执行和功能一步达。其中任务执行体验又分为两种：功能服务类和信息交互类。
 
 1. 任务执行：

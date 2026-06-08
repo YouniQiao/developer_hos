@@ -2,14 +2,15 @@
 title: "HarmonyOS 6.0.1(21)"
 format: md
 original_url: /docs/dev/release-notes/harmonyos-601
+upstream_id: dev/release-notes/harmonyos-601
+last_sync: 2026-06-07
+sync_hash: 8f3e356e
 ---
-
-
 # HarmonyOS 6.0.1(21)
 
-6.0.1(21)在6.0.0(20)的基础上，进一步增强ArkUI组件能力，新增一批属性样式的C API，增强了Image组件的SVG解析能力；Ability Kit增强了拉起应用的结果处理；ArkWeb增强了WebView相关能力；后台任务新增支持并行创建多个同样的长时任务；地图服务进一步丰富了可直接调用的场景，等等。更多详情可参见[OS平台新增和增强特性](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/os-new-feature-601)。
+6.0.1(21)在6.0.0(20)的基础上，进一步增强ArkUI组件能力，新增一批属性样式的C API，增强了Image组件的SVG解析能力；Ability Kit增强了拉起应用的结果处理；ArkWeb增强了WebView相关能力；后台任务新增支持并行创建多个同样的长时任务；地图服务进一步丰富了可直接调用的场景，等等。更多详情可参见[OS平台新增和增强特性](/docs/dev/release-notes/os-new-feature-601)。
 
-DevEco Studio进一步增强AI智能辅助编程的能力和Code Linter静态检测能力，工程级配置文件新增多个可选配置字段，等等。更多详情可参见[DevEco Studio新增和增强特性](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/deveco-studio-new-features-601)。
+DevEco Studio进一步增强AI智能辅助编程的能力和Code Linter静态检测能力，工程级配置文件新增多个可选配置字段，等等。更多详情可参见[DevEco Studio新增和增强特性](/docs/dev/release-notes/deveco-studio-new-features-601)。
 
 ## 版本信息
 
@@ -39,14 +40,14 @@ DevEco Studio进一步增强AI智能辅助编程的能力和Code Linter静态检
 
 ## 应用工程版本信息配置建议
 
-应用工程中应当正确配置应用运行所依赖的SDK版本信息，以确保[应用在不同系统版本的设备上运行时的兼容性](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/app-compatibility)。
+应用工程中应当正确配置应用运行所依赖的SDK版本信息，以确保[应用在不同系统版本的设备上运行时的兼容性](/docs/dev/release-notes/app-compatibility)。
 
 使用该版本开发的应用，其build-profile.json5配置项中关于版本的配置项建议如下：
 
 | ****build-profile.json5配置项**** | ****已开发应用**** | | ****新启动开发应用**** |
 | --- | --- | --- | --- |
 | ****配置建议**** | ****配置示例**** |
-| compileSdkVersion | 无需显性配置，编译时默认使用配套的SDK版本，即默认为：  “compileSdkVersion”: “6.0.1(21)” | NA | 推荐使用[6.0.0(20)](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-600)进行新应用的开发。 |
+| compileSdkVersion | 无需显性配置，编译时默认使用配套的SDK版本，即默认为：  “compileSdkVersion”: “6.0.1(21)” | NA | 推荐使用[6.0.0(20)](/docs/dev/release-notes/overview-600)进行新应用的开发。 |
 | compatibleSdkVersion | 建议与工程升级前的compatibleSdkVersion保持一致 | 和升级前保持一致，如：  “compatibleSdkVersion”: “5.0.5(17)” |
 | targetSdkVersion | 推荐您适配新版本的最新变更，然后配置为：“targetSdkVersion”: “6.0.1(21)”。  如果您期望延迟适配变更，可配置targetSdkVersion与工程升级前的targetSdkVersion一致。 | 1、应用适配变更，变更适配完成后配置为：  “targetSdkVersion”: “6.0.1(21)”  2、应用暂不适配变更，需配置为工程升级前的值，如：  “targetSdkVersion”: “5.0.5(17)” |
 

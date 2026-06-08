@@ -3,8 +3,10 @@ title: "多设备设置界面"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi-settings-application-page
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi-settings-application-page
+last_sync: 2026-06-07
+sync_hash: 4781616f
 ---
-
 # 多设备设置界面
 
 ## 概述

@@ -3,6 +3,10 @@ title: "多设备购物比价界面"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/multi-shopping-price-comparison
 format: md
+upstream_id: dev/app-dev/multi-device/multi-shopping-price-comparison
+last_sync: 2026-06-07
+sync_hash: 913be524
+upstream_hash: 32af8673ca23
 ---
 
 # 多设备购物比价界面

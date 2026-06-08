@@ -2,9 +2,10 @@
 title: "使用Node-API接口进行函数创建和调用"
 original_url: /docs/dev/ndk-dev/use-napi-about-function
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-function
+last_sync: 2026-06-07
+sync_hash: 6bdef19c
 ---
-
-
 ## 简介
 
 函数调用允许开发者从Node-API模块中调用ArkTS函数并传递参数，或在Node-API模块中创建ArkTS函数。

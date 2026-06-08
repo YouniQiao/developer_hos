@@ -2,9 +2,10 @@
 title: "使用HiLog打印日志是否有长度限制"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-58
 format: md
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-58
+last_sync: 2026-06-07
+sync_hash: 2eaf056d
 ---
-
-
 使用HiLog进行日志打印时，最多支持4096字节，超出部分将被截断。
 
 利用HiLog封装日志打印工具类，解决日志信息过长的问题。

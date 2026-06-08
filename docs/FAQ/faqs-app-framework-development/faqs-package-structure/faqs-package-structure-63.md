@@ -2,9 +2,10 @@
 format: md
 title: "如何跨HSP包调用rawfile目录下的文件"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-63
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-63
+last_sync: 2026-06-07
+sync_hash: 41013834
 ---
-
-
 **解决方案**
 
 建议通过导出资源的方式供其他模块使用，参见参考资料中的“导出HSP中的资源”。

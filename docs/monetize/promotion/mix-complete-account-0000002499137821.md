@@ -3,8 +3,10 @@ title: "进入认证中心完成开户"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/mix-complete-account-0000002499137821
 format: md
+upstream_id: monetize/promotion/mix-complete-account-0000002499137821
+last_sync: 2026-06-07
+sync_hash: 2b514d31
 ---
-
 # 进入认证中心完成开户
 
 进入认证中心后，您需补充与所选推广范围相关的开户信息。具体如下：

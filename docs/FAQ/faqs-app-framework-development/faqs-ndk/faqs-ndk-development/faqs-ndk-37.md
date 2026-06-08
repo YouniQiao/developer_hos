@@ -2,9 +2,10 @@
 format: md
 title: "napi_module结构体字段描述解析"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-37
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-37
+last_sync: 2026-06-07
+sync_hash: 88322600
 ---
-
-
 关于napi\_module\_register(napi\_module\* mod)方法的入参napi\_module有两个关键属性：一个是.nm\_register\_func，定义模块初始化函数；另一个是.nm\_modname，定义模块的名称，也就是ArkTS侧引入的so库的名称，模块系统会根据此名称来区分不同的so。napi\_module字段的详细描述如下：
 
 ```

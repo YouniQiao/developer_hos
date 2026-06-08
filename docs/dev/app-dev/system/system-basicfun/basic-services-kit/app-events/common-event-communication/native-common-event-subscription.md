@@ -2,9 +2,10 @@
 title: "订阅公共事件（C/C++）"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/native-common-event-subscription
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/native-common-event-subscription
+last_sync: 2026-06-07
+sync_hash: b1cd9ff2
 ---
-
-
 ## 场景介绍
 
 通过[OH\_CommonEvent\_CreateSubscriber](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-commonevent-h#oh_commonevent_createsubscriber)创建的订阅者可以对某个公共事件进行订阅，如果有订阅的事件发布那么订阅了这个事件的订阅者将会收到该事件及其传递的参数，也可以通过订阅者对象进一步处理有序公共事件。

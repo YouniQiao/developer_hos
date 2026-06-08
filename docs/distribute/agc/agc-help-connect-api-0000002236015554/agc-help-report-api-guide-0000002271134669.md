@@ -2,9 +2,10 @@
 title: "Reports API指南"
 original_url: /docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-report-api-guide-0000002271134669
 format: md
+upstream_id: distribute/agc/agc-help-connect-api-0000002236015554/agc-help-report-api-guide-0000002271134669
+last_sync: 2026-06-07
+sync_hash: 631154b4
 ---
-
-
 您可以使用Reports API查询AppGallery Connect中大部分分析数据，例如下载安装等报表数据。
 
 一个典型的Reports API业务的开发流程如下：

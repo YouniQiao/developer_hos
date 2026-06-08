@@ -2,9 +2,10 @@
 format: md
 title: "点击Device Manager，提示“找不到应用程序”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-18
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-18
+last_sync: 2026-06-07
+sync_hash: a25b0e61
 ---
-
-
 **问题现象**
 
 点击Device Manager进行登录授权时，如果提示“找不到应用程序”，则无法打开浏览器登录。

@@ -3,9 +3,10 @@ title: "@typescript-eslint/member-delimiter-style"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_member-delimiter-style
 format: md
+upstream_id: tools/coding-debug/ide_member-delimiter-style
+last_sync: 2026-06-07
+sync_hash: feb1bf59
 ---
-
-
 # @typescript-eslint/member-delimiter-style
 
 要求接口和类型别名中的成员之间使用特定的分隔符。

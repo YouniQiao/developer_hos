@@ -3,9 +3,10 @@ title: "使用本地真机运行应用"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-run-device
 format: md
+upstream_id: tools/coding-debug/ide-run-device
+last_sync: 2026-06-07
+sync_hash: 488f4722
 ---
-
-
 # 使用本地真机运行应用
 
 在本地真机中运行HarmonyOS应用/元服务，可以采用USB连接方式或者无线连接方式。

@@ -2,9 +2,10 @@
 title: "Native侧如何获取ArkTS侧Object对象及其成员变量"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-42
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-42
+last_sync: 2026-06-07
+sync_hash: 328211a1
 ---
-
-
 在ArkTS侧定义类，传递类到Native侧调用类函数。详情见示例代码。
 
 ArkTS侧

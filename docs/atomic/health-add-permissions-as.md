@@ -2,9 +2,10 @@
 title: "管理用户授权"
 original_url: /docs/dev/atomic-dev/health-app-dev-as/health-add-permissions-as
 format: md
+upstream_id: dev/atomic-dev/health-app-dev-as/health-add-permissions-as
+last_sync: 2026-06-07
+sync_hash: 49f57111
 ---
-
-
 ## 场景介绍
 
 应用拉起华为账号登录和授权界面，由用户授权相应的数据访问权限。用户可以自主选择授权的数据类型，可以只授权部分数据权限。

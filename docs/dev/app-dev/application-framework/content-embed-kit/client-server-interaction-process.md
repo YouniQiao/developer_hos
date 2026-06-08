@@ -2,9 +2,10 @@
 title: "客户端和服务端交互流程"
 original_url: /docs/dev/app-dev/application-framework/content-embed-kit/client-server-interaction-process
 format: md
+upstream_id: dev/app-dev/application-framework/content-embed-kit/client-server-interaction-process
+last_sync: 2026-06-07
+sync_hash: 083c76aa
 ---
-
-
 [OE](/docs/dev/app-dev/application-framework/content-embed-kit/content-embed-kit-terminology#oe)框架采用ExtensionAbility机制进行扩展，主要架构元素包括：[OE Extension](/docs/dev/app-dev/application-framework/content-embed-kit/content-embed-kit-terminology#oe-extension)和[OE SA](/docs/dev/app-dev/application-framework/content-embed-kit/content-embed-kit-terminology#oe-sa)。外部依赖元素包括：[AMS](/docs/dev/app-dev/application-framework/content-embed-kit/content-embed-kit-terminology#ams)和[BMS](/docs/dev/app-dev/application-framework/content-embed-kit/content-embed-kit-terminology#bms)。
 
 以下是OE客户端和服务端交互流程：客户端依赖服务端的OE Extension执行文档的嵌入与编辑操作；服务端则负责OE Extension的统一注册与管理。在运行时，服务端依据客户端请求，**动态启动**相应的OE Extension实例，以响应文档处理需求。

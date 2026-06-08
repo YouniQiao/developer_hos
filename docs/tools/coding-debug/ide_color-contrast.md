@@ -3,9 +3,10 @@ title: "@cross-device-app-dev/color-contrast"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_color-contrast
 format: md
+upstream_id: tools/coding-debug/ide_color-contrast
+last_sync: 2026-06-07
+sync_hash: d7c94dc7
 ---
-
-
 # @cross-device-app-dev/color-contrast
 
 文本和背景之间的颜色对比度至少为4.5:1以确保可读性。

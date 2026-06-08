@@ -2,9 +2,10 @@
 title: "探索测试"
 original_url: /docs/dev/testing/exploratory-testing
 format: md
+upstream_id: dev/testing/exploratory-testing
+last_sync: 2026-06-07
+sync_hash: 314e336a
 ---
-
-
 ![](./img/3ac23fe6.png "点击放大")
 
 ## 应用探索测试

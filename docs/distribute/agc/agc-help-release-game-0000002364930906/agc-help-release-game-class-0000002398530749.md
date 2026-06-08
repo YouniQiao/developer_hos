@@ -2,9 +2,10 @@
 title: "配置应用分类标签"
 original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-class-0000002398530749
 format: md
+upstream_id: distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-class-0000002398530749
+last_sync: 2026-06-07
+sync_hash: 7592f387
 ---
-
-
 ![](../img/agc-help-release-game-class-0000002398530749_0.png)
 
 因游戏分类标签规则有调整，请未配置新分类标签的游戏重新选择游戏分类和游戏标签。

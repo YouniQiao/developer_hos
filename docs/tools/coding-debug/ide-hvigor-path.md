@@ -3,9 +3,10 @@ title: "自定义.hvigor目录路径"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-path
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-path
+last_sync: 2026-06-07
+sync_hash: 5c445078
 ---
-
-
 # 自定义.hvigor目录路径
 
 .hvigor目录默认位于用户目录下：

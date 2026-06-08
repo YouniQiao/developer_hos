@@ -2,9 +2,10 @@
 format: md
 title: "Tabs组件子组件包含if节点，if条件变更后, tabBar页签联动异常，有没有解决方案"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-478
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-478
+last_sync: 2026-06-07
+sync_hash: bd9feeb9
 ---
-
-
 **问题描述**
 
 在Tabs刚启动的时候创建四个TabContent ，当this.isShowMessageTab为true会再加一个TabContent，

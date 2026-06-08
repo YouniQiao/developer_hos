@@ -2,9 +2,10 @@
 format: md
 title: "回归测试"
 original_url: /docs/FAQ/faqs-regression-test
+upstream_id: FAQ/faqs-regression-test
+last_sync: 2026-06-07
+sync_hash: 779a8011
 ---
-
-
 * **[生成回归测试包时报错提示“打包失败,当前项目根目录下缺少testcases文件夹”](/docs/FAQ/faqs-deveco-testing/faqs-regression-test/faqs-regression-test-1)**
 * **[生成回归测试包时报错提示“当前项目根目录下不存在setup-regression.py文件”](/docs/FAQ/faqs-deveco-testing/faqs-regression-test/faqs-regression-test-2)**
 * **[生成回归测试包时，如果出现“setup-regression.py解析失败，请检查setup-regression.py的写法是否规范”的错误提示，应如何处理](/docs/FAQ/faqs-deveco-testing/faqs-regression-test/faqs-regression-test-3)**

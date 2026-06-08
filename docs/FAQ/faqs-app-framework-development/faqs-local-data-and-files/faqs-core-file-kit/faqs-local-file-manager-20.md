@@ -2,9 +2,10 @@
 title: "如何存储文件才不会跟随app卸载而删除"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-20
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-20
+last_sync: 2026-06-07
+sync_hash: 318f8a86
 ---
-
-
 **解决措施**
 
 如果是用户文件，例如在应用内主动保存的文件，可以存储在媒体库公共目录/storage/media/100/local/files。公共目录下的文件不会在应用卸载时被删除。

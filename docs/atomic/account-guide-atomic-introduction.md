@@ -2,9 +2,10 @@
 title: "Account Kit简介"
 original_url: /docs/dev/atomic-dev/atomic-account-development/account-guide-atomic-introduction
 format: md
+upstream_id: dev/atomic-dev/atomic-account-development/account-guide-atomic-introduction
+last_sync: 2026-06-07
+sync_hash: 286d2e9c
 ---
-
-
 ## 场景介绍
 
 Account Kit（华为账号服务）提供简单、快速、安全的登录功能，让用户快捷地使用华为账号登录元服务。用户授权后，Account Kit可提供头像昵称、手机号码等信息，帮助元服务更了解用户。

@@ -3,8 +3,10 @@ title: 隐私
 sidebar_label: 隐私
 original_url: /docs/design/general-design-basics/privacy
 format: md
+upstream_id: design/general-design-basics/privacy
+last_sync: 2026-06-07
+sync_hash: 4cc59310
 ---
-
 # 隐私
 
 |  |  |

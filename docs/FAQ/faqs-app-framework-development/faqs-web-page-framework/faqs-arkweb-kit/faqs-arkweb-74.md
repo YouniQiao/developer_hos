@@ -2,9 +2,10 @@
 title: "如何使用Web组件下载pdf文件并展示给用户"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-74
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-74
+last_sync: 2026-06-07
+sync_hash: 9ba8b611
 ---
-
-
 **问题场景**
 
 使用Webview加载指定URL，下载PDF文件并展示。

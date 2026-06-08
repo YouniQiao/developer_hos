@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口操作bigint类型值"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-bigint
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-bigint
+last_sync: 2026-06-07
+sync_hash: 16270cc6
 ---
-
-
 ## 简介
 
 BigInt是JavaScript中用于表示任意精度整数的数据类型，能够处理比Number类型更大范围的整数值。JSVM-API提供的接口支持在JSVM模块中创建、获取和操作BigInt类型值。

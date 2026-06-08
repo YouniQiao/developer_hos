@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "随机生成对称密钥(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-generate-sym-key-randomly-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-generate-sym-key-randomly-ndk
+last_sync: 2026-06-07
+sync_hash: 1276dff1
 ---
-
-
 以AES和SM4为例，随机生成对称密钥（OH\_CryptoSymKey）。
 
 对称密钥对象可用于后续加解密操作，二进制数据可用于存储或传输。

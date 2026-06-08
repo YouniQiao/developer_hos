@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "快速验证"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-phone/account-get-phonenumber
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-phone/account-get-phonenumber
+last_sync: 2026-06-07
+sync_hash: 7addf5a9
 ---
-
-
 ## 场景介绍
 
 当应用对获取的手机号时效性要求不高时，可使用Account Kit提供的手机号授权与快速验证能力，向用户发起手机号授权申请，经用户同意授权后，获取到手机号并为用户提供相应服务。以下对Account Kit提供的手机号授权与快速验证能力进行介绍，快速验证手机号功能还可使用场景化控件[快速验证手机号Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-getphonenumber)进行实现。

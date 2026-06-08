@@ -2,9 +2,10 @@
 title: "商品管理流程说明"
 original_url: /docs/dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-process
 format: md
+upstream_id: dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-process
+last_sync: 2026-06-07
+sync_hash: 8f720536
 ---
-
-
 商家可通过开放接口对商品进行全生命周期管理，涵盖创建、更新、下架及删除等操作。所有商品变更均需经平台审核生效，确保合规与体验一致。接口调用流程如下：
 
 ![](./img/b89c8673.png)

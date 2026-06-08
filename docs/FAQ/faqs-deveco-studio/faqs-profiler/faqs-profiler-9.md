@@ -2,9 +2,10 @@
 format: md
 title: "应用体检在MacOS X86_64的系统上无法进行检测"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-9
+upstream_id: FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-9
+last_sync: 2026-06-07
+sync_hash: 7a24aa0b
 ---
-
-
 **问题现象**
 
 MacOS X86\_64上无法使用应用体检，加载FFmpeg 7.1-1.5.11库异常或者有DevEco Studio Crash问题。

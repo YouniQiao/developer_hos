@@ -2,9 +2,10 @@
 title: "同应用端云数据同步概述"
 original_url: /docs/dev/app-dev/application-framework/arkdata/distributed-data-cloud-sync/data-cloud-sync-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/distributed-data-cloud-sync/data-cloud-sync-overview
+last_sync: 2026-06-07
+sync_hash: 41cd78bc
 ---
-
-
 ## 场景介绍
 
 端云数据同步功能（端云协同），指将端侧设备（如手机、PC、平板等）数据同步到云侧。常用于应用数据通过云侧实现多设备一致。

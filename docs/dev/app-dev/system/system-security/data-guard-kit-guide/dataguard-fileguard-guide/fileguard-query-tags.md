@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取文件属性标签"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-query-tags
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-query-tags
+last_sync: 2026-06-07
+sync_hash: 10cd6a6c
 ---
-
-
 ## 场景介绍
 
 Enterprise Data Guard Kit为应用提供获取文件属性标签的能力，HarmonyOS系统根据管控策略和文件属性标签对文件实行管控。

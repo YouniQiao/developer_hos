@@ -2,9 +2,10 @@
 title: "夏令时跳变"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-time-zone-dst/i18n-dst-transition
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/i18n/i18n-time-zone-dst/i18n-dst-transition
+last_sync: 2026-06-07
+sync_hash: bf762d5b
 ---
-
-
 ## 功能介绍
 
 夏令时是一种为节约能源而规定的地方时间制度，即在天亮早的夏季人为将时间调快一段时间，使人们早起早睡，减少照明时间，从而节约照明用电。

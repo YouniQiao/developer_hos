@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口创建和获取string值"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-string
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-string
+last_sync: 2026-06-07
+sync_hash: 489a161f
 ---
-
-
 ## 简介
 
 使用JSVM-API的六个字符串接口，可以实现JSVM模块与JavaScript字符串的交互功能。

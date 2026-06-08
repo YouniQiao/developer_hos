@@ -2,9 +2,10 @@
 title: "在自绘编辑框中使用输入法"
 original_url: /docs/dev/app-dev/application-framework/ime-kit/use-inputmethod-in-custom-edit-box
 format: md
+upstream_id: dev/app-dev/application-framework/ime-kit/use-inputmethod-in-custom-edit-box
+last_sync: 2026-06-07
+sync_hash: cb47c996
 ---
-
-
 在输入法框架中，可以通过[getController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethod#inputmethodgetcontroller9)方法获取到[InputMethodController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethod#inputmethodcontroller)实例来绑定输入法并监听输入法应用的各种操作，比如插入、删除、选择、光标移动等。这样就可以在自绘编辑框中使用输入法，并实现更加灵活和自由的编辑操作。
 
 ## 开发步骤

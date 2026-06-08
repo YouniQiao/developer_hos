@@ -2,9 +2,10 @@
 title: "格式转换"
 original_url: /docs/dev/atomic-dev/ascf/apis-basis/apis-format-conversion
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-basis/apis-format-conversion
+last_sync: 2026-06-07
+sync_hash: 325d395a
 ---
-
-
 ## has.base64ToArrayBuffer
 
 has.base64ToArrayBuffer(string base64Str): ArrayBuffer

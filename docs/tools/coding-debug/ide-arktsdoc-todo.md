@@ -3,9 +3,10 @@ title: "@todo"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-arktsdoc-todo
 format: md
+upstream_id: tools/coding-debug/ide-arktsdoc-todo
+last_sync: 2026-06-07
+sync_hash: 79637bf0
 ---
-
-
 # @todo
 
 @todo 标签记录要完成的任务。在一个 ArkTSDoc 注释块中可以包含多个 @todo 标签。

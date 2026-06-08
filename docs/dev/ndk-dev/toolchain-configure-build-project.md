@@ -2,9 +2,10 @@
 title: "Configure构建工程配置HarmonyOS编译工具链"
 original_url: /docs/dev/ndk-dev/toolchain-configure-build-project
 format: md
+upstream_id: dev/ndk-dev/toolchain-configure-build-project
+last_sync: 2026-06-07
+sync_hash: 5ab2620d
 ---
-
-
 ## 概述
 
 Configure是一个用于自动化软件编译和安装的工具，它可以帮助开发者编译和安装源代码，以便生成可执行文件和库文件。在编译和安装软件时，通常需要一系列步骤，例如设置编译选项、检查依赖库、生成配置文件等，Configure可以通过读取软件的源代码，自动化这些步骤，简化软件的编译和安装过程。其原理是根据系统环境和用户设置来生成Makefile文件，Makefile文件是一个包含编译选项和依赖关系的脚本，可以自动化编译和安装软件。

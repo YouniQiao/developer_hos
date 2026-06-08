@@ -2,9 +2,10 @@
 title: "管理用户"
 original_url: /docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-user-manage-0000002236496846
 format: md
+upstream_id: distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-user-manage-0000002236496846
+last_sync: 2026-06-07
+sync_hash: 44278b24
 ---
-
-
 同一个项目下已经登录过的用户都会展现在“用户”页签。您可以在此管理用户，可对用户进行停用、启用、解锁和删除的操作。
 
 #### 启用用户

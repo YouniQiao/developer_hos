@@ -2,9 +2,10 @@
 format: md
 title: "如何通过AKI三方库实现ArkTS与C/C++之间的跨语言调用"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-33
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-33
+last_sync: 2026-06-07
+sync_hash: 172ab665
 ---
-
-
 ArkTS与C/C++之间交互，涉及到跨语言调用中数据转换，以及跨线程交互等内容。沿用Node-API标准实现，支持的Node-API接口可参见[Node-API支持的数据类型和接口](/docs/dev/ndk-dev/napi-data-types-interfaces)。
 
 当前可以通过AKI三方库实现跨语言调用。AKI针对OpenHarmony上提供ArkTS与C/C++跨语言互调的场景提供解决方案，提供了极简语法糖使用方式，一行代码完成ArkTS与C/C++的无障碍跨语言互调，所见即所得。同时开发者无需关心Node-API的线程安全问题、Native对象GC问题，为开发者屏蔽Node-API内部复杂逻辑。

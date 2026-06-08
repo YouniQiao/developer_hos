@@ -1,8 +1,10 @@
 ---
 title: "应用配置文件概述（FA模型）"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-overview-fa
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-overview-fa
+last_sync: 2026-06-07
+sync_hash: 60d8577b
 ---
-
 每个应用项目必须在项目的代码目录下加入配置文件，这些配置文件会向编译工具、操作系统和应用市场提供描述应用的基本信息。
 
 应用配置文件需要声明以下内容：

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "音视频投播"
 original_url: /docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/avcastpicker
 format: md
+upstream_id: dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/avcastpicker
+last_sync: 2026-06-07
+sync_hash: 453f6b98
 ---
-
-
 针对音视频类应用，播控中心提供系统级设备切换、投播能力选择入口，提供音视频发声设备统一投播组件。应用通过接入统一投播组件，可以实现在应用内及系统播控中心，将应用音视频资源通过Cast+协议/DLNA协议投播到远端设备。应用需先按自检要求接入[基础播控](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control)，才可正常接入音视频投播组件。
 
 ![](./img/5ceb69ad.png) ![](./img/338c6933.png)

@@ -2,9 +2,10 @@
 title: "进入全屏模式后隐藏状态栏，退出全屏模式如何显示状态栏"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-360
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-360
+last_sync: 2026-06-07
+sync_hash: 797c5600
 ---
-
-
 **问题描述**
 
 当应用进入全屏模式时调用[setWindowLayoutFullscreen](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowlayoutfullscreen9)接口会导致状态栏隐藏，返回非全屏页面时需要重新显示状态栏。

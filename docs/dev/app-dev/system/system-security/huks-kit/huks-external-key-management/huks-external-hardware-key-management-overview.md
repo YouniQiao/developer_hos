@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "外部密钥管理扩展简介"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-external-hardware-key-management-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-external-hardware-key-management-overview
+last_sync: 2026-06-07
+sync_hash: 92322aca
 ---
-
-
 HUKS提供统一的Ability扩展接口，驱动HAP可基于此实现外部密钥管理扩展，注册、注销自定义的硬件密钥管理模块，满足金融领域Ukey证书的浏览器双向SSL认证等场景的身份认证需求。
 
 Ukey：USB key，基于USB接口的硬件设备，可用于存储用户私钥、证书及身份认证等信息。

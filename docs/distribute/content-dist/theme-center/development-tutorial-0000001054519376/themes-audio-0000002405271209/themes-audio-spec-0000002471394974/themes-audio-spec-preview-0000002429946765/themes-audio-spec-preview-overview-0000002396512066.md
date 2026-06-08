@@ -3,9 +3,10 @@ title: "封面图"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-preview-0000002429946765/themes-audio-spec-preview-overview-0000002396512066
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-preview-0000002429946765/themes-audio-spec-preview-overview-0000002396512066
+last_sync: 2026-06-07
+sync_hash: d4cd6253
 ---
-
-
 # 封面图
 
 封面图，用于主题市场耳机弹窗专区中的预览展示。

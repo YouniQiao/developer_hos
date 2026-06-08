@@ -3,9 +3,10 @@ title: "配置关联元服务"
 displayed_sidebar: serviceDistSidebar
 original_url: /docs/distribute/service-dist/huawei-service-account/operationguide-0000001263024771/association_service-0000002508947051
 format: md
+upstream_id: distribute/service-dist/huawei-service-account/operationguide-0000001263024771/association_service-0000002508947051
+last_sync: 2026-06-07
+sync_hash: 22db2969
 ---
-
-
 # 配置关联元服务
 
 该功能支持将您的元服务与服务号进行绑定，并在服务号各位置生成快捷入口。旨在打通服务号与元服务的用户体验，构建“内容/服务”到“交易/工具”的无缝转化路径。

@@ -2,9 +2,10 @@
 format: md
 title: "图片如何添加渐变模糊"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-55
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-55
+last_sync: 2026-06-07
+sync_hash: 8b7e8107
 ---
-
-
 组件通用样式属性linearGradientBlur可以为当前组件添加线性渐变模糊效果。以下为参考代码：
 
 ```

@@ -3,9 +3,10 @@ title: "接入要求"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/joint-operation-game-0000002024369570/joint-operation-access-0000002024211358
 format: md
+upstream_id: distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/joint-operation-game-0000002024369570/joint-operation-access-0000002024211358
+last_sync: 2026-06-07
+sync_hash: dae3da3b
 ---
-
-
 # 接入要求
 
 联运合作的详细介绍请参见[联运服务介绍](/docs/monetize/promotion/service-introduction-0000001062607577)，本文仅介绍联运游戏的功能开发。

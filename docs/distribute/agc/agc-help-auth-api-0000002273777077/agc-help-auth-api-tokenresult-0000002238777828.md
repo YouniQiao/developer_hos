@@ -2,9 +2,10 @@
 title: "TokenResult"
 original_url: /docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-tokenresult-0000002238777828
 format: md
+upstream_id: distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-tokenresult-0000002238777828
+last_sync: 2026-06-07
+sync_hash: 7de529c4
 ---
-
-
 已登录用户的Access Token结果信息。
 
 #### Method Summary

@@ -2,9 +2,10 @@
 title: "FAQ"
 original_url: /docs/distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-faq-0000002254916526
 format: md
+upstream_id: distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-faq-0000002254916526
+last_sync: 2026-06-07
+sync_hash: 8a3f0d12
 ---
-
-
 #### 云调试是否收费？收费策略是什么？
 
 云调试为华为第三方应用提供在线真机调试解决方案，每天以账号为维度针对部分机型提供360分钟的优惠时长，适用于“优惠机型”的远程测试和应用调试，帮助您及时发现问题并解决问题，从而提升应用质量。

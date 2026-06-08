@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Reader Kit简介"
 original_url: /docs/dev/app-dev/application-services/reader-kit-guide/reader-introduction
 format: md
+upstream_id: dev/app-dev/application-services/reader-kit-guide/reader-introduction
+last_sync: 2026-06-07
+sync_hash: 707d93e6
 ---
-
-
 Reader Kit（阅读服务）为开发者提供多种格式电子书的解析、排版、阅读交互能力，开发者可以借助Reader Kit的能力和组件快速构建书籍阅读能力。
 
 ## 能力范围

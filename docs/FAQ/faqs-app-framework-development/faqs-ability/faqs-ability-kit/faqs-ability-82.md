@@ -2,9 +2,10 @@
 format: md
 title: "有了代码签名特性后，开发者的so文件在调试、发布等阶段该如何部署"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-82
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-82
+last_sync: 2026-06-07
+sync_hash: c8ba08fd
 ---
-
-
 安全原则：HarmonyOS NEXT版本已部署强制代码签名机制。所有上架应用市场和开发者调试的应用，必须使用合法证书对代码文件进行签名，才能在设备端正常执行。直接推送到设备端的so文件，如果签名不合法，将被系统拦截，导致加载失败。
 
 针对开发者so文件的部署：

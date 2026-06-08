@@ -2,8 +2,11 @@
 format: md
 title: "如何查询应用堆内存的已分配内存大小和堆内存的空闲内存大小"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-15
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-15
+last_sync: 2026-06-07
+sync_hash: e6d8dc9c
+upstream_hash: 2d4ea6772df9
 ---
-
 
 目前有两种方法可以查询当前CPU占用，如下：
 

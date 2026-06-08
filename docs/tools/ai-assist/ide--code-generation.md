@@ -3,9 +3,10 @@ title: "代码生成"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide--code-generation
 format: md
+upstream_id: tools/ai-assist/ide--code-generation
+last_sync: 2026-06-07
+sync_hash: 43eaeff7
 ---
-
-
 # 代码生成
 
 CodeGenie具备自然语言代码生成能力，在<strong>对话框内</strong>输入代码需求描述，点击![](./img/zh-cn_image_0000002602186161.png)发送，将自动生成符合要求的代码段。

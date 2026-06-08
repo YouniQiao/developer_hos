@@ -2,9 +2,10 @@
 title: "版本更新说明"
 original_url: /docs/dev/game-dev/games-gamemme-releasenotes-0000002338511693
 format: md
+upstream_id: dev/game-dev/games-gamemme-releasenotes-0000002338511693
+last_sync: 2026-06-07
+sync_hash: 8e378385
 ---
-
-
 ## µ£Ćµ¢░ńēłµ£¼
 
 ### Õ«óµłĘń½»

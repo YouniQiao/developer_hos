@@ -2,9 +2,10 @@
 title: "如何针对UI组件属性做API版本兼容性判断"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-449
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-449
+last_sync: 2026-06-07
+sync_hash: 69f49d10
 ---
-
-
 **问题描述**
 
 在使用了高版本才支持的UI属性后，如果在低API版本的系统上可能会运行出错，出现闪退。

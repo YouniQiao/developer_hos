@@ -2,9 +2,10 @@
 title: "管理应用窗口（FA模型）"
 original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/application-window-fa
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/window-manager/application-window-fa
+last_sync: 2026-06-07
+sync_hash: d4c0bb4e
 ---
-
-
 ## 基本概念
 
 窗口沉浸式能力：指对状态栏、导航栏等系统窗口进行控制，减少状态栏导航栏等系统界面的突兀感，从而使用户获得最佳体验的能力。

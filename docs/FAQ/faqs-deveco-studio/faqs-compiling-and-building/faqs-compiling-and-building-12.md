@@ -2,9 +2,10 @@
 format: md
 title: "C++工程编译导致电脑卡顿的处理建议"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-12
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-12
+last_sync: 2026-06-07
+sync_hash: a1590b0b
 ---
-
-
 **问题现象**
 
 在编译大型C++工程时，由于CPU占用率较高，可能会导致电脑卡顿和反应迟缓。

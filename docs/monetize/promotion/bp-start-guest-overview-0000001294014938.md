@@ -3,8 +3,10 @@ title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-start-guest-overview-0000001294014938
 format: md
+upstream_id: monetize/promotion/bp-start-guest-overview-0000001294014938
+last_sync: 2026-06-07
+sync_hash: 090c5d50
 ---
-
 # 概述
 
 目前仅支持企业开发者作为直客在华为应用市场应用推广平台申请注册。

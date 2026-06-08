@@ -2,9 +2,10 @@
 title: "业务概述"
 original_url: /docs/dev/game-dev/games-gpm-introduction-0000002332907201
 format: md
+upstream_id: dev/game-dev/games-gpm-introduction-0000002332907201
+last_sync: 2026-06-07
+sync_hash: 2d1d79ff
 ---
-
-
 ## 业务描述
 
 |  |  |

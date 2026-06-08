@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取云侧文件下载地址"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service/cloudfoundation-storage-getdownloadurl
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service/cloudfoundation-storage-getdownloadurl
+last_sync: 2026-06-07
+sync_hash: 82174d41
 ---
-
-
 文件上传至云侧后，开发者可以获取云侧文件的下载地址，将下载地址放到网站中提供文件下载的体验。
 
 ## 约束与限制

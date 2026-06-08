@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: /docs/dev/app-dev/application-services/enterprisespace-preparations
 format: md
+upstream_id: dev/app-dev/application-services/enterprisespace-preparations
+last_sync: 2026-06-07
+sync_hash: 7b6b627d
 ---
-
-
 ## 环境准备
 
 * HarmonyOS系统：HarmonyOS 6.0.0 Release及以上。

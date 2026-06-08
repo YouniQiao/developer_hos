@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "应用市场推荐展示元服务卡片异常"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-1
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-1
+last_sync: 2026-06-07
+sync_hash: b1301025
 ---
-
-
 **问题现象**
 
 调用展示元服务卡片详情页接口，显示异常页面。

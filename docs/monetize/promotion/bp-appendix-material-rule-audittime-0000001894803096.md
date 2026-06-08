@@ -3,8 +3,10 @@ title: "审核时间"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-appendix-material-rule-audittime-0000001894803096
 format: md
+upstream_id: monetize/promotion/bp-appendix-material-rule-audittime-0000001894803096
+last_sync: 2026-06-07
+sync_hash: 9e1effb0
 ---
-
 # 审核时间
 
 1. 审核周期为素材提交后的1个工作日。

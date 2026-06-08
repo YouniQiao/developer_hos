@@ -1,8 +1,10 @@
 ---
 title: "NDK开发ArkTS侧编码规范"
 original_url: /docs/quality/stability-coding-standard-ndk-arkts
+upstream_id: /docs/quality/stability-coding-standard-ndk-arkts
+last_sync: 2026-06-07
+sync_hash: 3c20a564
 ---
-
 # NDK开发ArkTS侧编码规范
 
 ArkTS通过引用编译好的so文件来调用native方法。为避免不规范引用导致的运行时异常和故障排查成本，开发者应按照本文的标准进行引用。

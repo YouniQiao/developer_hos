@@ -3,8 +3,10 @@ title: "7. 下载分发行为"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-07
 format: md
+upstream_id: distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-07
+last_sync: 2026-06-07
+sync_hash: 4afbbb9e
 ---
-
 # 7. 下载分发行为
 
 * 重点整治通过“偷梁换柱”、“移花接木”等方式欺骗误导用户下载APP，特别是具有分发功能的移动应用程序欺骗误导用户下载非用户所自愿下载APP的行为。

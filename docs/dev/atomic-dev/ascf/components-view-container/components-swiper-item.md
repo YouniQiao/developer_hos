@@ -2,8 +2,11 @@
 title: "swiper-item"
 original_url: /docs/dev/atomic-dev/ascf/components-view-container/components-swiper-item
 format: md
+upstream_id: dev/atomic-dev/ascf/components-view-container/components-swiper-item
+last_sync: 2026-06-07
+sync_hash: 969edacc
+upstream_hash: f58e9d17de48
 ---
-
 
 swiper组件的子组件。
 

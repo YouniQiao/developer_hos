@@ -2,9 +2,10 @@
 title: "安全随机数生成(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-rand/crypto-generate-random-number-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-rand/crypto-generate-random-number-ndk
+last_sync: 2026-06-07
+sync_hash: 0b599928
 ---
-
-
 ![](./img/8da90efa.png)
 
 从API version 12开始，轻量级智能穿戴设备支持获取随机数相关操作。

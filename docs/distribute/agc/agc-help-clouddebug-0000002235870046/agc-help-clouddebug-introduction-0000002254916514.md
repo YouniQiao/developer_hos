@@ -2,9 +2,10 @@
 title: "业务介绍"
 original_url: /docs/distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-introduction-0000002254916514
 format: md
+upstream_id: distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-introduction-0000002254916514
+last_sync: 2026-06-07
+sync_hash: c017cf63
 ---
-
-
 云调试致力于为您提供高效的云端设备调试解决方案，解决您设备机型不足、设备管理困难及bug无法复现等问题，降低您的采购及管理成本。云调试提供不同型号的机型，让您可随时随地直观了解应用在不同机型上的运行表现。
 
 #### 主要功能

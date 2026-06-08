@@ -3,9 +3,10 @@ title: "Instrument Test"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-instrument-test
 format: md
+upstream_id: tools/coding-debug/ide-instrument-test
+last_sync: 2026-06-07
+sync_hash: ad0a3223
 ---
-
-
 # Instrument Test
 
 #### 创建ArkTS测试用例

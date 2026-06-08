@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "证书吊销列表对象的创建、解析和校验"
 original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-parse-verify-crl-object
 format: md
+upstream_id: dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-parse-verify-crl-object
+last_sync: 2026-06-07
+sync_hash: 3baa9918
 ---
-
-
 以校验证书是否已吊销为例，完成证书吊销列表对象的创建、解析和校验。若证书已被吊销，将打印被吊销日期。
 
 ## 开发步骤

@@ -2,9 +2,10 @@
 title: "PGD Entity组件"
 original_url: /docs/dev/game-dev/pgd-tool-editor-entity-0000002494421276
 format: md
+upstream_id: dev/game-dev/pgd-tool-editor-entity-0000002494421276
+last_sync: 2026-06-07
+sync_hash: 9a3d71bd
 ---
-
-
 PGD Entity为实体操作模块，开发者可以通过可视化方式操作实体。
 
 ## 界面布局

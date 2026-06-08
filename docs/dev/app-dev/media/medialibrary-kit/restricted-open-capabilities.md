@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "受限开放能力"
 original_url: /docs/dev/app-dev/media/medialibrary-kit/restricted-open-capabilities
 format: md
+upstream_id: dev/app-dev/media/medialibrary-kit/restricted-open-capabilities
+last_sync: 2026-06-07
+sync_hash: 8b9b7d50
+upstream_hash: 0a490c3e7cb9
 ---
-
 
 * **[开发准备](/docs/dev/app-dev/media/photoaccesshelper-preparation)**
 * **[媒体资源使用指导](/docs/dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/photoaccesshelper-resource-guidelines)**

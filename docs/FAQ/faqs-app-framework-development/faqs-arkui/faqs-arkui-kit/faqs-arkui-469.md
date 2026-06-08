@@ -2,9 +2,10 @@
 title: "Tabs组件，使用tab键循环走焦，会在最后一个页面和最后一个页签之间循环，怎么解决"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-469
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-469
+last_sync: 2026-06-07
+sync_hash: 0b10ea47
 ---
-
-
 **问题描述**
 
 使用键盘tab按键切换焦点时，如何检测tabBar页签的焦点状态，或者设置页签不能获焦。现在如果在一个页签在底部的Tabs组件里使用tab键循环切换焦点，会在最后一个页面的最后一个组件和最后一个tabbar页签两个中循环。

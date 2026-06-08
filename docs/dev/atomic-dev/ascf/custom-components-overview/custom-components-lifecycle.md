@@ -2,9 +2,10 @@
 title: "组件生命周期"
 original_url: /docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-lifecycle
 format: md
+upstream_id: dev/atomic-dev/ascf/custom-components-overview/custom-components-lifecycle
+last_sync: 2026-06-07
+sync_hash: 585de82f
 ---
-
-
 组件的生命周期，指的是组件自身的一些方法会在组件生命流程特定的阶段触发。目前支持的生命周期包括 created、attached、ready、detached，具体说明如下：
 
 * created：组件实例刚刚被创建好时， created 生命周期被触发。

@@ -2,8 +2,11 @@
 title: "生成签名证书"
 original_url: /docs/dev/game-dev/games-quickgame-tool-sign-0000002351893601
 format: md
+upstream_id: dev/game-dev/games-quickgame-tool-sign-0000002351893601
+last_sync: 2026-06-07
+sync_hash: d4fdbf10
+upstream_hash: 322d9a964bbd
 ---
-
 
 1. [打开项目](/docs/dev/game-dev/games-quickgame-tool-open-0000002317894968)进入工具主界面后，在顶部菜单栏选择“工具 &gt; 生成证书”。
 

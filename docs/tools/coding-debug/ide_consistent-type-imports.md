@@ -3,9 +3,10 @@ title: "@typescript-eslint/consistent-type-imports"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_consistent-type-imports
 format: md
+upstream_id: tools/coding-debug/ide_consistent-type-imports
+last_sync: 2026-06-07
+sync_hash: 4ea5fed6
 ---
-
-
 # @typescript-eslint/consistent-type-imports
 
 强制使用一致的类型导入风格。

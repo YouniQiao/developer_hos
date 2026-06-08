@@ -2,9 +2,10 @@
 title: "开发沉浸式页面"
 original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-immersive-pages
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-basic-capabilities/develop-immersive-pages
+last_sync: 2026-06-07
+sync_hash: 4d358dee
 ---
-
-
 ## 实现介绍
 
 ![](./img/9b41e485.png "点击放大")

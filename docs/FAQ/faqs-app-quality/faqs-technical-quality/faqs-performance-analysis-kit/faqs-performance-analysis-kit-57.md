@@ -2,9 +2,10 @@
 format: md
 title: "如何选择收集崩溃的方式，ErrorManager、FaultLog、HiAppEvent在监听crash上的差异"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-57
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-57
+last_sync: 2026-06-07
+sync_hash: 10bd30e3
 ---
-
-
 推荐使用HiAppEvent方式。
 
 | 方式 | 作用范围 | 触发方式 | 场景 | 发生崩溃表现 |

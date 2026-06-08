@@ -3,9 +3,10 @@ title: "@performance/sparse-array-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-sparse-array-check
 format: md
+upstream_id: tools/coding-debug/ide-sparse-array-check
+last_sync: 2026-06-07
+sync_hash: 7a2d7f5f
 ---
-
-
 # @performance/sparse-array-check
 
 建议避免使用稀疏数组。

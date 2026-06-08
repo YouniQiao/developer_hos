@@ -2,9 +2,10 @@
 format: md
 title: "如何解决编译报错“ Error: 'icon' value `$media:icons` invalid value.”的问题"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-122
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-122
+last_sync: 2026-06-07
+sync_hash: 34429466
 ---
-
-
 **问题现象**
 
 编译报错。

@@ -2,9 +2,10 @@
 title: "禁言其他玩家"
 original_url: /docs/dev/game-dev/games-gamemme-forbidplayer-csharp-0000002359547074
 format: md
+upstream_id: dev/game-dev/games-gamemme-forbidplayer-csharp-0000002359547074
+last_sync: 2026-06-07
+sync_hash: f612ec4f
 ---
-
-
 在语音房间内，房主可禁言指定玩家。同时，还可以通过一键禁言房间内其他全部玩家，实现仅房主发言功能。如需取消对其他玩家的禁言，可通过解禁方式快速解除禁言限制。目前，仅小队房间支持禁言操作。
 
 ## 前提条件

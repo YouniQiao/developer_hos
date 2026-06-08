@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "系统字体的信息获取和使用（ArkTS）"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/font-manager/system-font-arkts
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/text/font-manager/system-font-arkts
+last_sync: 2026-06-07
+sync_hash: e50c1f35
 ---
-
-
 ## 场景介绍
 
 系统字体是指操作系统预设的字体，用于在没有指定自定义字体时显示文本，确保文本的可读性和一致性。

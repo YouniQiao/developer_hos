@@ -2,9 +2,10 @@
 title: "管理实体"
 original_url: /docs/dev/game-dev/pgd-world-management-0000002483555301
 format: md
+upstream_id: dev/game-dev/pgd-world-management-0000002483555301
+last_sync: 2026-06-07
+sync_hash: 9f7137d7
 ---
-
-
 ## 创建实体
 
 ```

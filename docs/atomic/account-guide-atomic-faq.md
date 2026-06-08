@@ -2,9 +2,10 @@
 title: "Account Kit常见问题"
 original_url: /docs/dev/atomic-dev/atomic-account-development/account-guide-atomic-faq
 format: md
+upstream_id: dev/atomic-dev/atomic-account-development/account-guide-atomic-faq
+last_sync: 2026-06-07
+sync_hash: cbe650d5
 ---
-
-
 ## 1001500001 应用指纹证书校验失败的可能原因和解决办法
 
 **问题现象**

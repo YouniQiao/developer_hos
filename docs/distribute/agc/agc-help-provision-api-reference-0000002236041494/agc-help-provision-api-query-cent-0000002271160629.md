@@ -2,9 +2,10 @@
 title: "查询证书"
 original_url: /docs/distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-query-cent-0000002271160629
 format: md
+upstream_id: distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-query-cent-0000002271160629
+last_sync: 2026-06-07
+sync_hash: ceb121f0
 ---
-
-
 #### 功能介绍
 
 此接口用于查询创建的证书。

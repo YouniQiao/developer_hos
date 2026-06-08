@@ -2,9 +2,10 @@
 title: "设置基本属性和事件"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-set-attributes-events
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-set-attributes-events
+last_sync: 2026-06-07
+sync_hash: 17f38bef
 ---
-
-
 * **[User-Agent开发指导](/docs/dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-default-useragent)**
 * **[管理Cookie及数据存储](/docs/dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-cookie-and-data-storage-mgmt)**
 * **[Web深色模式适配](/docs/dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-set-dark-mode)**

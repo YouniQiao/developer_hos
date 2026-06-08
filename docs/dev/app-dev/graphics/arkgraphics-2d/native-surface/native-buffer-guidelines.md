@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "NativeBuffer开发指导 (C/C++)"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/native-surface/native-buffer-guidelines
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/native-surface/native-buffer-guidelines
+last_sync: 2026-06-07
+sync_hash: e9448063
 ---
-
-
 ## 场景介绍
 
 NativeBuffer模块提供**共享内存**功能，支持内存的申请、使用、查询和释放等操作。

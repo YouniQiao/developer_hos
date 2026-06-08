@@ -3,9 +3,10 @@ title: "@typescript-eslint/space-before-function-paren"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_space-before-function-paren
 format: md
+upstream_id: tools/coding-debug/ide_space-before-function-paren
+last_sync: 2026-06-07
+sync_hash: 4747b69c
 ---
-
-
 # @typescript-eslint/space-before-function-paren
 
 强制在函数名和括号之间保持一致的空格风格。

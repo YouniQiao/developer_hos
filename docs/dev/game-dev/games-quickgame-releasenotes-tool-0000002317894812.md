@@ -3,9 +3,10 @@ title: "工具下载与使用"
 original_url: /docs/dev/game-dev/games-quickgame-releasenotes-tool-0000002317894812
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-quickgame-releasenotes-tool-0000002317894812
+last_sync: 2026-06-07
+sync_hash: 1616f089
 ---
-
-
 ## 快游戏开发者工具
 
 华为2023年7月正式推出快游戏开发者工具，这是一款面向快游戏开发者的工具。

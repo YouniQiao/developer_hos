@@ -2,9 +2,10 @@
 format: md
 title: "组件被隐藏后 onVisibleAreaChange 事件触发了两次"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-183
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-183
+last_sync: 2026-06-07
+sync_hash: 18e2558e
 ---
-
-
 **问题现象**
 
 绑定ratios为[0, 1]时，组件突然消失会触发两次onVisibleAreaChange方法。

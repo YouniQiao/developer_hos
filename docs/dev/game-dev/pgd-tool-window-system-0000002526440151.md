@@ -2,9 +2,10 @@
 title: "System窗口"
 original_url: /docs/dev/game-dev/pgd-tool-window-system-0000002526440151
 format: md
+upstream_id: dev/game-dev/pgd-tool-window-system-0000002526440151
+last_sync: 2026-06-07
+sync_hash: 1592e711
 ---
-
-
 ## 功能介绍
 
 System窗口支持实时展示注册在被选World下的System信息，以及其在底层的运行状态。

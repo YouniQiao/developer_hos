@@ -2,9 +2,10 @@
 title: "Node-API接口返回状态码介绍"
 original_url: /docs/dev/ndk-dev/napi_status_introduction
 format: md
+upstream_id: dev/ndk-dev/napi_status_introduction
+last_sync: 2026-06-07
+sync_hash: 7af57acb
 ---
-
-
 ## 概述
 
 绝大部分Node-API接口在执行结束后，会返回一个数据类型为napi\_status的状态码枚举，表示操作成功与否的相关信息。本文将重点介绍Node-API接口返回的非napi\_ok的状态码详情与修复建议。

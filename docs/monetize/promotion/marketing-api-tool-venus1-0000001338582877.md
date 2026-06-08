@@ -3,8 +3,10 @@ title: "查询维纳斯落地页列表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-venus1-0000001338582877
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-venus1-0000001338582877
+last_sync: 2026-06-07
+sync_hash: 093d0e64
 ---
-
 # 查询维纳斯落地页列表
 
 您通过本接口可以获取维纳斯落地页列表。

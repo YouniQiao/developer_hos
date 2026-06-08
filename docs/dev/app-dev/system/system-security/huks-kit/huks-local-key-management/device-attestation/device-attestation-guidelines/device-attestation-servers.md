@@ -3,15 +3,16 @@ displayed_sidebar: appDevSidebar
 title: "服务器端开发"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/device-attestation-guidelines/device-attestation-servers
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/device-attestation-guidelines/device-attestation-servers
+last_sync: 2026-06-07
+sync_hash: 129679f1
 ---
-
-
 ## 使用前提
 
 使用应用公钥对业务请求进行验签的前提是服务器已经完成对密钥证明证书链进行校验和保存应用公钥，相关开发指南请参考：
 
-* [对密钥证明证书链进行校验](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-servers#校验密钥证明证书链)
-* [保存应用公钥](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-servers#保存应用公钥)
+* [对密钥证明证书链进行校验](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/attestation-signature-verification/attestation-signature-verification-servers#校验密钥证明证书链)
+* [保存应用公钥](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/attestation-signature-verification/attestation-signature-verification-servers#保存应用公钥)
 
 ## 使用应用公钥对业务请求进行验签
 

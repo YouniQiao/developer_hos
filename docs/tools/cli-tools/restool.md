@@ -3,9 +3,10 @@ title: "restoolе·Ҙе…·"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/restool
 format: md
+upstream_id: tools/cli-tools/restool
+last_sync: 2026-06-07
+sync_hash: db90ded0
 ---
-
-
 # restoolе·Ҙе…·
 
 ## з®Җд»Ӣ

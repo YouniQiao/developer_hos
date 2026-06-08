@@ -3,9 +3,10 @@ title: "反向调试"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-native-reverse
 format: md
+upstream_id: tools/coding-debug/ide-debug-native-reverse
+last_sync: 2026-06-07
+sync_hash: 7b228e68
 ---
-
-
 # 反向调试
 
 针对C/C++开发场景，DevEco Studio在提供基础调试能力的基础上，同时提供反向调试能力，帮助开发者更好地理解代码和更迅速定位问题。

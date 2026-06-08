@@ -3,9 +3,10 @@ title: "@performance/reasonable-sensor-use-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-reasonable-sensor-use-check
 format: md
+upstream_id: tools/coding-debug/ide-reasonable-sensor-use-check
+last_sync: 2026-06-07
+sync_hash: 6fce18a3
 ---
-
-
 # @performance/reasonable-sensor-use-check
 
 应用退到后台时，禁止使用传感器资源。

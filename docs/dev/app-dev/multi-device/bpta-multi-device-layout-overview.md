@@ -3,8 +3,10 @@ title: "布局概述"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-layout-overview
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi-device-layout-overview
+last_sync: 2026-06-07
+sync_hash: 9fd9118d
 ---
-
 # 布局概述
 
 布局可以分为自适应布局和响应式布局，二者的介绍如下表所示。

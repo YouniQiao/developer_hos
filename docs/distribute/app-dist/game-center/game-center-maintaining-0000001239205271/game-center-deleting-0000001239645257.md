@@ -3,8 +3,11 @@ title: "删除应用"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-deleting-0000001239645257
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-deleting-0000001239645257
+last_sync: 2026-06-07
+sync_hash: e847cdef
+upstream_hash: 486817c440c9
 ---
-
 
 # 删除应用
 

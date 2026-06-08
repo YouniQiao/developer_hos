@@ -2,9 +2,10 @@
 title: "获取文件URI"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-get-file-url
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-get-file-url
+last_sync: 2026-06-07
+sync_hash: beb54635
 ---
-
-
 ## 场景介绍
 
 Enterprise Data Guard Kit为应用提供获取文件路径信息的能力，该路径可被应用直接打开，从而辅助判断是否是KIA文件。

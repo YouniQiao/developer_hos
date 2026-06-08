@@ -3,8 +3,10 @@ title: "Huawei Analytics跟踪"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads_gongjujiance_hayy-0000001458624748
 format: md
+upstream_id: monetize/promotion/ads_gongjujiance_hayy-0000001458624748
+last_sync: 2026-06-07
+sync_hash: a91966b0
 ---
-
 # Huawei Analytics跟踪
 
 ![](./img/notice_3.0-zh-cn_8ce47bc9dc62.png) 

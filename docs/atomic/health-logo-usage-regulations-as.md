@@ -2,9 +2,10 @@
 title: "标志使用规范"
 original_url: /docs/dev/atomic-dev/health-appendix-as/health-logo-usage-regulations-as
 format: md
+upstream_id: dev/atomic-dev/health-appendix-as/health-logo-usage-regulations-as
+last_sync: 2026-06-07
+sync_hash: 0b3f97f5
 ---
-
-
 开发者应用在面向用户呈现华为运动健康品牌图标时，需要遵循《[HUAWEI Health授权使用规范](https://hihealthbase-drcn.things.hicloud.com/healthkit/fileServer/getFile/private/HuaweiHealthLicenseUsageGuidelines/000/001/044/0000100000000001044.20240417160150.64977181324752114137620022856507%3A20740405160241%3A100005355%3ADBEDC693E5482E439BFCDF5A73D1B74F41B5BEABF7F62F4AA2807330B8335543.pdf)》，图标样式请点击[资源下载](https://hihealthbase-drcn.things.hicloud.com/healthkit/fileServer/getFile/private/huaweiLogo/000/001/044/1000000000000001044.20231121144534.39714294158320889793671141568467%3A20731108144750%3A100005355%3AF16C5DE4AF6D9AC89675DAD1BB4D12821B5BCC039AFCADFF9ECEA7852757F9AA.zip)获取。
 
 ## 标志说明

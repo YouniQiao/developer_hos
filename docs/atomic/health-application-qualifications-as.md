@@ -2,8 +2,11 @@
 title: "应用开发者申请资质说明"
 original_url: /docs/dev/atomic-dev/atomic-health-service-development/health-application-qualifications-as
 format: md
+upstream_id: dev/atomic-dev/atomic-health-service-development/health-application-qualifications-as
+last_sync: 2026-06-07
+sync_hash: a3c4c559
+upstream_hash: a988dadf9df7
 ---
-
 
 ## 个人开发者接入资质审核要求
 

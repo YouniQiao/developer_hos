@@ -3,6 +3,10 @@ title: "政策介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-bonus-global_ocpd-overview-0000001627128700
 format: md
+upstream_id: monetize/promotion/bp-bonus-global_ocpd-overview-0000001627128700
+last_sync: 2026-06-07
+sync_hash: c86265db
+upstream_hash: df8e7616033b
 ---
 
 # 政策介绍

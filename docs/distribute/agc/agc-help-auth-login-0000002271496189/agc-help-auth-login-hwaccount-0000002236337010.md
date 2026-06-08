@@ -2,9 +2,10 @@
 title: "华为账号"
 original_url: /docs/distribute/agc/agc-help-auth-login-0000002271496189/agc-help-auth-login-hwaccount-0000002236337010
 format: md
+upstream_id: distribute/agc/agc-help-auth-login-0000002271496189/agc-help-auth-login-hwaccount-0000002236337010
+last_sync: 2026-06-07
+sync_hash: 9cafcd86
 ---
-
-
 您可以在应用中集成华为账号认证方式，让您的用户可以使用自己的华为账号进行AppGallery Connect身份验证。
 
 #### 前提条件

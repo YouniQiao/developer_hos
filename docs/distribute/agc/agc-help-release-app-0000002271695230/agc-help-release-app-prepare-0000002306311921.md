@@ -2,9 +2,10 @@
 title: "发布准备工作"
 original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-prepare-0000002306311921
 format: md
+upstream_id: distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-prepare-0000002306311921
+last_sync: 2026-06-07
+sync_hash: 47efd845
 ---
-
-
 发布应用前，请详细了解华为应用市场的审核要求与上架规则，并提前准备发布所需的文件与资源，以便您能顺利、快速通过发布审核流程。
 
 #### 了解上架规则

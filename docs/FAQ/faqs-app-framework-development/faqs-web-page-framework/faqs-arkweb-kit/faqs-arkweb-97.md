@@ -2,9 +2,10 @@
 title: "返回的html里包含数学公式，怎么合理渲染到页面"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-97
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-97
+last_sync: 2026-06-07
+sync_hash: 8c9c0d31
 ---
-
-
 HarmonyOS目前没有提供专门的数学公式渲染组件，可以使用WebView组件来加载支持数学公式渲染的网页。
 
 示例代码如下：

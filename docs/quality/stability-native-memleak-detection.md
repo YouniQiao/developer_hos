@@ -2,9 +2,10 @@
 title: "Native内存泄漏问题检测方法"
 original_url: /docs/quality/stability-native-memleak-detection
 format: md
+upstream_id: /docs/quality/stability-native-memleak-detection
+last_sync: 2026-06-07
+sync_hash: 26829d7a
 ---
-
-
 # Native内存泄漏问题检测方法
 
 ## 使用Allocation检测Native内存泄漏
@@ -15,10 +16,10 @@ DevEco Profiler提供了基础的内存场景分析Allocation，您可以使用A
 
 在设备连接完成后，可按照如下方法查看内存分析结果：
 
-1. 请参考模块级[build-profile.json5文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile)，增加strip字段并赋值为false（false值表示附带调试和符号信息，待发布上线版本建议恢复为true）。采集函数栈解析符号需要附带符号表信息，无符号表信息可能采集不到函数名称，因此请录制模板前按照下图进行配置。
+1. 请参考模块级[build-profile.json5文件](/docs/tools/coding-debug/ide-hvigor-build-profile)，增加strip字段并赋值为false（false值表示附带调试和符号信息，待发布上线版本建议恢复为true）。采集函数栈解析符号需要附带符号表信息，无符号表信息可能采集不到函数名称，因此请录制模板前按照下图进行配置。
 
    ![](./img/47a0ca1a.png)
-2. 创建Allocation分析任务并录制相关数据，操作方法可参考[性能问题定位：深度录制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording)，或在会话区选择Open File，导入历史数据。
+2. 创建Allocation分析任务并录制相关数据，操作方法可参考[性能问题定位：深度录制](/docs/tools/coding-debug/deep-recording)，或在会话区选择Open File，导入历史数据。
 
    ![](./img/3659e765.png)
 
@@ -29,7 +30,7 @@ DevEco Profiler提供了基础的内存场景分析Allocation，您可以使用A
    * 鼠标框选要关注的时间段，可以通过“Shift+M”添加时间段时间标签。
    * 在任务分析窗口，可以通过“ctrl+,”向前选中单点时间标签，通过“ctrl+.”向后选中单点时间标签。
    * 在任务分析窗口，可以通过“ctrl+[”向前选中时间段时间标签，通过“ctrl+]”向后选中时间段时间标签。
-   * Allocation分析支持离线符号解析能力，请参见[离线符号解析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-time#section186881175012)。
+   * Allocation分析支持离线符号解析能力，请参见[离线符号解析](/docs/tools/coding-debug/ide-insight-session-time#section186881175012)。
 
    Allocation分析任务支持在录制前单击![](./img/b1f17c91.png)指定要录制的泳道：
 

@@ -2,9 +2,10 @@
 format: md
 title: "预览窗口顶部和底部出现白边"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-previewer-operating/faqs-previewer-operating-6
+upstream_id: FAQ/faqs-deveco-studio/faqs-previewer-operating/faqs-previewer-operating-6
+last_sync: 2026-06-07
+sync_hash: 0341c99a
 ---
-
-
 **问题现象**
 
 预览窗口顶部和底部出现白边。

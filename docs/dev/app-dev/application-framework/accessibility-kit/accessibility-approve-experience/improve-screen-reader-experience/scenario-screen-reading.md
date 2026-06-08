@@ -2,9 +2,10 @@
 title: "标注屏幕朗读内容的场景"
 original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-screen-reading
 format: md
+upstream_id: dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-screen-reading
+last_sync: 2026-06-07
+sync_hash: 8776257a
 ---
-
-
 ## 设计场景
 
 屏幕朗读提取信息进行朗读时无障碍文本的优先级大于显示文本，即当无障碍文本不为空时，会朗读无障碍文本，否则朗读显示文本。因此，在进行应用设计时，需要遵守如下规则：

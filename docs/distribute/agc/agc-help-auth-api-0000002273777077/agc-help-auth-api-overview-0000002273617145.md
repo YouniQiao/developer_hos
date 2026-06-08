@@ -2,9 +2,10 @@
 title: "Overview"
 original_url: /docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-overview-0000002273617145
 format: md
+upstream_id: distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-overview-0000002273617145
+last_sync: 2026-06-07
+sync_hash: f2e3c4c5
 ---
-
-
 #### Interface Summary
 
 | **Interface** | Description |

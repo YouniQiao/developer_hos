@@ -3,6 +3,10 @@ title: "查询素材"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-asset2-0000001338262105
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-asset2-0000001338262105
+last_sync: 2026-06-07
+sync_hash: d150a103
+upstream_hash: dc93724c5224
 ---
 
 # 查询素材

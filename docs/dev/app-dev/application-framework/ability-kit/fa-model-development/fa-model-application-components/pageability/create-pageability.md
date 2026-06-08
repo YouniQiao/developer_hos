@@ -2,9 +2,10 @@
 title: "创建PageAbility"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/create-pageability
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/create-pageability
+last_sync: 2026-06-07
+sync_hash: 53ee46d1
 ---
-
-
 通过DevEco Studio开发平台创建PageAbility时，DevEco Studio会在app.js/app.ets中默认生成onCreate()和onDestroy()方法，其他方法需要开发者自行实现。接口说明参见[PageAbility的生命周期](/docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/pageability-lifecycle)，创建PageAbility示例如下：
 
 ```

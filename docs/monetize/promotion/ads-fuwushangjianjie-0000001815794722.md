@@ -3,8 +3,10 @@ title: "服务商体系简介"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-fuwushangjianjie-0000001815794722
 format: md
+upstream_id: monetize/promotion/ads-fuwushangjianjie-0000001815794722
+last_sync: 2026-06-07
+sync_hash: c0a2a1e4
 ---
-
 # 服务商体系简介
 
 ## 概述

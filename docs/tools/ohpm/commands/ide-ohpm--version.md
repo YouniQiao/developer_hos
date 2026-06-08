@@ -3,9 +3,10 @@ title: "ohpm --version"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm--version
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm--version
+last_sync: 2026-06-07
+sync_hash: 74f51f07
 ---
-
-
 # ohpm --version
 
 查询 ohpm cli 安装版本。

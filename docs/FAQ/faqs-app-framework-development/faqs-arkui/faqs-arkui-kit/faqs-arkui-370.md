@@ -2,9 +2,10 @@
 format: md
 title: "如何实现沉浸式页面（包括沉浸式状态栏、沉浸式导航条）"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-370
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-370
+last_sync: 2026-06-07
+sync_hash: d158f0ab
 ---
-
-
 **解决措施**
 
 沉浸式页面开发分为以下两步：

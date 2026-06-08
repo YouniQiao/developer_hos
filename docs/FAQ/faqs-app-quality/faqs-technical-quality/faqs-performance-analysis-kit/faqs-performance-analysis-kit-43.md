@@ -2,9 +2,10 @@
 format: md
 title: "如何解决连接手机时，提示：“hdc server port 8710 has been used”的问题"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-43
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-43
+last_sync: 2026-06-07
+sync_hash: f548b83b
 ---
-
-
 * 方式一：结束掉占用该端口的应用。
   1. 运行cmd命令行工具，输入“netstat -ano | findstr 端口号”，查询占用端口号的进程PID。
   2. 打开任务管理器，选择详细信息页签，查看此PID对应的应用。

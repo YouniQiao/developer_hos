@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使能工作空间"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-enable-workspace
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-enable-workspace
+last_sync: 2026-06-07
+sync_hash: ff1f1707
 ---
-
-
 ## 场景介绍
 
 Enterprise Space Kit为应用提供使能双空间的能力。需要先使能工作空间才可以创建个人空间。

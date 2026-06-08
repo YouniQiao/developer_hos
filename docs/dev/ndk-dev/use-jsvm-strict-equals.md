@@ -2,9 +2,10 @@
 title: "使用JSVM-API判断给定的两个JS value是否严格相等"
 original_url: /docs/dev/ndk-dev/use-jsvm-strict-equals
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-strict-equals
+last_sync: 2026-06-07
+sync_hash: fc787628
 ---
-
-
 ## 简介
 
 JSVM-API 中的函数用于判断两个 JavaScript 值是否严格相等，类似于 JavaScript 中的 === 操作符。该函数避免类型转换和松散相等性比较，确保值和类型均相等。

@@ -2,9 +2,10 @@
 title: "任务超时检测"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/apptask-timeout-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/apptask-timeout-guidelines
+last_sync: 2026-06-07
+sync_hash: ed5c97fd
 ---
-
-
 ## 简介
 
 开发者在开发应用时，某一段业务逻辑期望执行一定时间，如果该业务逻辑执行时长超过预期时间，即为任务超时。
@@ -25,8 +26,8 @@ format: md
 
 | 采集流程 | 触发条件 | 采集日志格式 | 前提条件与限制 |
 | --- | --- | --- | --- |
-| 堆栈采集 | 150ms < 主线程处理时长 < 450ms | 文件名格式：MAIN\_THREAD\_JANK\_秒级时间\_进程PID.txt。  例如：MAIN\_THREAD\_JANK\_20240613211739\_40986.txt。 | - **应用启动10s内不进行检测。**  - **关闭[开发者选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode#section0736139111917)：应用在一个生命周期内，一天最多触发一次主线程超时事件堆栈采集流程。**  - **启用[开发者选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode#section530763213432)：应用在一个生命周期内，一小时最多触发一次主线程超时事件采集堆栈采集流程。** |
-| trace采集 | 主线程处理时长 > 450ms | 文件名格式：MAIN\_THREAD\_JANK\_unix时间戳\_进程PID.trace。  例如：MAIN\_THREAD\_JANK\_1762064185461\_40986.trace。 | - 触发trace采集的前提：**开发者使用[nolog](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/performance-analysis-kit-terminology#nolog版本)版本，并且关闭[开发者选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode#section530763213432)**。  - **应用一天内，最多触发一次主线程超时事件trace采集流程。** |
+| 堆栈采集 | 150ms < 主线程处理时长 < 450ms | 文件名格式：MAIN\_THREAD\_JANK\_秒级时间\_进程PID.txt。  例如：MAIN\_THREAD\_JANK\_20240613211739\_40986.txt。 | - **应用启动10s内不进行检测。**  - **关闭[开发者选项](/docs/tools/coding-debug/ide-developer-mode#section0736139111917)：应用在一个生命周期内，一天最多触发一次主线程超时事件堆栈采集流程。**  - **启用[开发者选项](/docs/tools/coding-debug/ide-developer-mode#section530763213432)：应用在一个生命周期内，一小时最多触发一次主线程超时事件采集堆栈采集流程。** |
+| trace采集 | 主线程处理时长 > 450ms | 文件名格式：MAIN\_THREAD\_JANK\_unix时间戳\_进程PID.trace。  例如：MAIN\_THREAD\_JANK\_1762064185461\_40986.trace。 | - 触发trace采集的前提：**开发者使用[nolog](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/performance-analysis-kit-terminology#nolog版本)版本，并且关闭[开发者选项](/docs/tools/coding-debug/ide-developer-mode#section530763213432)**。  - **应用一天内，最多触发一次主线程超时事件trace采集流程。** |
 
 ![](./img/e88e75e7.png)
 

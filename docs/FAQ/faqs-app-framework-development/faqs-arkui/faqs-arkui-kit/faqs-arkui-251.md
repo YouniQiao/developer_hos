@@ -2,9 +2,10 @@
 format: md
 title: "如何使用Swiper组件实现下拉刷新"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-251
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-251
+last_sync: 2026-06-07
+sync_hash: 0871a263
 ---
-
-
 Swiper组件用于创建滑块视图容器，可以使用Refresh组件实现下拉刷新效果。
 
 ```

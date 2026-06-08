@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "划词服务概述"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/selectioninput/selection-services-intro
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/selectioninput/selection-services-intro
+last_sync: 2026-06-07
+sync_hash: 1964d4fe
 ---
-
-
 从API version 24开始，新增划词服务，该服务具有全局获取用户选中文本的能力。开发者可调用该服务提供的接口，实现划词弹窗功能。
 
 ## 框架原理

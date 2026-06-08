@@ -2,9 +2,10 @@
 title: "参数说明"
 original_url: /docs/distribute/agc/agc-help-setup-activities-0000002358750666/agc-help-setup-activities-param-0000002392401425
 format: md
+upstream_id: distribute/agc/agc-help-setup-activities-0000002358750666/agc-help-setup-activities-param-0000002392401425
+last_sync: 2026-06-07
+sync_hash: 3b1d120b
 ---
-
-
 #### 奖品素材
 
 礼包奖品需准备如下素材内容：

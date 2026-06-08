@@ -2,9 +2,10 @@
 format: md
 title: "如何查询应用当前CPU占用"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-14
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-14
+last_sync: 2026-06-07
+sync_hash: 78f9d773
 ---
-
-
 目前有两种方式查询当前CPU占用：
 
 在代码中查询：

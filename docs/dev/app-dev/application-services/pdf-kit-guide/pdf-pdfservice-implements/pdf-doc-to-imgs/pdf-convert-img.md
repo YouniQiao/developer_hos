@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "转换整个PDF文档为图片"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-doc-to-imgs/pdf-convert-img
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-doc-to-imgs/pdf-convert-img
+last_sync: 2026-06-07
+sync_hash: 442ec466
 ---
-
-
 ## 场景介绍
 
 将整个PDF文档的页面转换为图片，每页为一张图片，并且所有图片存放在指定的同一个文件夹下。

@@ -3,9 +3,10 @@ title: "介绍"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-introduction-0000002429810857
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-introduction-0000002429810857
+last_sync: 2026-06-07
+sync_hash: f4f6c88d
 ---
-
-
 # 介绍
 
 百变卡片，由创作者基于主题引擎能力设计出各式各样动态效果的卡片，最终用户可根据自己的想法将百变卡片自由组合，打造个性化桌面。

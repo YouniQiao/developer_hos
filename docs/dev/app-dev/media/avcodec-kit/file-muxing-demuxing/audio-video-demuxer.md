@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "媒体数据解析"
 original_url: /docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-demuxer
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-demuxer
+last_sync: 2026-06-07
+sync_hash: 178f4d6d
 ---
-
-
 开发者可以调用本模块的Native API接口，完成媒体数据的解封装相关操作，即从比特流数据中取出音频、视频、字幕等媒体sample，获得DRM相关信息。
 
 当前支持的数据输入类型有：远程连接(http协议)和文件描述符(fd)。

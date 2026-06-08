@@ -2,9 +2,10 @@
 title: "安全随机数生成(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-rand/crypto-generate-random-number
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-rand/crypto-generate-random-number
+last_sync: 2026-06-07
+sync_hash: 5409dd6b
 ---
-
-
 ![](./img/3dfddc02.png)
 
 从API version 12开始，轻量级智能穿戴设备支持获取随机数相关操作。

@@ -2,9 +2,10 @@
 title: "ArkTS卡片为组件添加动效"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-page/arkts-ui-widget-page-animation
 format: md
+upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-page/arkts-ui-widget-page-animation
+last_sync: 2026-06-07
+sync_hash: c2523eaf
 ---
-
-
 ArkTS卡片开放了使用动画效果的能力，支持[显式动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation)、[属性动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-animatorproperty)、[组件内转场](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-transition-animation-component)能力。ArkTS卡片使用动画效果时具有以下限制：
 
 **表1** 动效参数限制

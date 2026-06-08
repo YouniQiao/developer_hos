@@ -2,9 +2,10 @@
 title: "Data Augmentation Kit（数据增强服务）"
 original_url: /docs/dev/app-dev/application-framework/data-augmentation-kit-guide
 format: md
+upstream_id: dev/app-dev/application-framework/data-augmentation-kit-guide
+last_sync: 2026-06-07
+sync_hash: e563f646
 ---
-
-
 * **[Data Augmentation Kit简介](/docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-introduction)**
 * **[知识加工](/docs/dev/app-dev/application-framework/data-augmentation-kit-guide/data-augmentation-knowledge-processing)**
 * **[RAG](/docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-rag)**

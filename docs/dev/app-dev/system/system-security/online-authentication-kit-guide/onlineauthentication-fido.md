@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "FIDO免密身份认证"
 original_url: /docs/dev/app-dev/system/system-security/online-authentication-kit-guide/onlineauthentication-fido
 format: md
+upstream_id: dev/app-dev/system/system-security/online-authentication-kit-guide/onlineauthentication-fido
+last_sync: 2026-06-07
+sync_hash: d2ff34a0
 ---
-
-
 ## 场景介绍
 
 * 开通FIDO免密身份认证功能，使用用户已有的生物特征开通FIDO免密身份认证能力。

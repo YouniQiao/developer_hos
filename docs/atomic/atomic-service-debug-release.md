@@ -2,13 +2,14 @@
 title: "发布元服务"
 original_url: /docs/dev/atomic-dev/atomic-service-debug-release
 format: md
+upstream_id: dev/atomic-dev/atomic-service-debug-release
+last_sync: 2026-06-07
+sync_hash: ee3c934b
 ---
-
-
 发布元服务的基本流程如下：
 
 1. 了解[元服务审核指南](https://developer.huawei.com/consumer/cn/doc/distribution/app/50129)的要求，并完成发布前自检。
-2. [打包发布版本](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app)。
+2. [打包发布版本](/docs/tools/coding-debug/ide-publish-app)。
 3. （可选）在正式发布元服务前，您可以发布一个[邀请测试](https://developer.huawei.com/consumer/cn/doc/app/agc-help-invite-test-0000002270829393)版本，邀请部分用户提前体验新版本，并收集用户的反馈，以便提前发现问题进行改进，从而保证全网版本的质量，提升用户体验。
 4. 完成[元服务核准（备案）](/docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing)。
 5. [发布元服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-atomic-0000002327731065)。

@@ -3,10 +3,10 @@ title: "快应用/快游戏"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/kuaiyouxikuaiyongyong-0000001132278783
 format: md
+upstream_id: monetize/monetization/kuaiyouxikuaiyongyong-0000001132278783
+last_sync: 2026-06-07
+sync_hash: 43eff61a
 ---
-
-
-
 快应用/快游戏与鲸鸿动能平台对接采用API方式。
 
 1. 详情参考[《快应用接入API文档》](https://developer.huawei.com/consumer/cn/doc/quickApp-References/quickapp-api-ad-0000001074754667)和《[快游戏接入API文档》](https://developer.huawei.com/consumer/cn/doc/development/quickApp-References/quickgame-api-ad-0000001130711971)。

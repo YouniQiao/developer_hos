@@ -2,9 +2,10 @@
 title: "信息安全管理承诺书"
 original_url: /docs/dev/game-dev/quickgame-filing-information-security-0000001851796609
 format: md
+upstream_id: dev/game-dev/quickgame-filing-information-security-0000001851796609
+last_sync: 2026-06-07
+sync_hash: a26d2e8a
 ---
-
-
 华为软件技术有限公司：
 
 本单位（本人）郑重承诺遵守本承诺书的有关条款，如有违反本承诺书有关条款的行为，本单位（本人）承担由此带来的一切民事、行政和刑事责任。

@@ -2,9 +2,10 @@
 title: "窗口旋转"
 original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/window-rotation
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/window-manager/window-rotation
+last_sync: 2026-06-07
+sync_hash: bc5f8e5e
 ---
-
-
 ## 窗口旋转简介
 
 移动设备在用户手中可以任意改变握持方向。在特定场景下，应用需要根据用户握持的方向调整显示页面，或者主动指定在固定方向显示页面，以提供更好的用户体验。比如，双手操作的游戏更倾向于在横屏显示，视频类应用更倾向于在全屏播放和小窗播放间自由切换。

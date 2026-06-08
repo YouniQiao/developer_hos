@@ -2,9 +2,10 @@
 title: "学习UI范式状态管理"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management
+last_sync: 2026-06-07
+sync_hash: 817545d3
 ---
-
-
 * **[状态管理概述](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-overview)**
 * **[状态管理术语](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-glossary)**
 * **[状态管理原理介绍](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-introduce)**

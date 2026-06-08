@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "AES解密失败返回错误码17630001"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-faqs/crypto-aes-decryption-error-faq
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-faqs/crypto-aes-decryption-error-faq
+last_sync: 2026-06-07
+sync_hash: 807703ea
 ---
-
-
 开发者使用加解密算法库经常遇到对称算法解密报错17630001，下文将对其失败原因进行详细分析。
 
 ## AES-GCM算法

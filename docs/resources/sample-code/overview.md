@@ -2,9 +2,9 @@
 title: Codelabs
 sidebar_label: Codelabs
 format: md
+upstream_id: _local
+last_sync: 2026-06-08
 ---
-
-
 # Codelabs
 
 HarmonyOS Codelabs 是华为官方提供的**互动式编程教程平台**，隶属于「开发者学堂」。通过分步详解与实操，帮助开发者快速掌握 HarmonyOS 应用开发的核心技能。

@@ -2,8 +2,11 @@
 format: md
 title: "HAP依赖HAR A，HAR A依赖HAR B。HAP能否调用HAR B提供的接口？如果不支持间接依赖HAR，设计的原因是什么"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-17
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-17
+last_sync: 2026-06-07
+sync_hash: ce053796
+upstream_hash: 58eb6cb9d944
 ---
-
 
 不支持传递依赖。
 

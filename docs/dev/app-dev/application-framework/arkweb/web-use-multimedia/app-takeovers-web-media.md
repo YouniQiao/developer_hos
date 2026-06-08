@@ -2,9 +2,10 @@
 title: "托管网页中的媒体播放"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-use-multimedia/app-takeovers-web-media
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-use-multimedia/app-takeovers-web-media
+last_sync: 2026-06-07
+sync_hash: 0186cd04
 ---
-
-
 Web组件提供了应用接管网页中媒体播放的能力，用来支持应用增强网页的媒体播放，如画质增强等。
 
 ## 使用场景

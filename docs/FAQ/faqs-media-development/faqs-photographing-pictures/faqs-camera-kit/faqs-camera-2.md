@@ -2,9 +2,10 @@
 title: "如何获取前置摄像头的预览图像"
 original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-2
 format: md
+upstream_id: FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-2
+last_sync: 2026-06-07
+sync_hash: 81ea8499
 ---
-
-
 获取前置摄像头预览图像示例代码如下：
 
 ```

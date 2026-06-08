@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "病毒防护服务管理(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-vps-c
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-vps-c
+last_sync: 2026-06-07
+sync_hash: 1851994b
 ---
-
-
 ## 场景介绍
 
 从6.0.0(20)开始，三方EDR（Endpoint Detection and Response）应用在Device Security Kit上注册后，可以调用注册、更新、卸载（删除数据）接口，将自身应用信息提交至HarmonyOS安全防护服务进行统一管理；零信任应用在Device Security Kit上注册后，可以查询所有注册的EDR信息列表（包含包名、当前版本号、上次更新时间、病毒防护开关状态、用户ID）；MDM应用在Device Security Kit上注册后，企业管理员可通过MDM（Mobile Device Management）应用启用或禁用HarmonyOS自带的安全防护服务。

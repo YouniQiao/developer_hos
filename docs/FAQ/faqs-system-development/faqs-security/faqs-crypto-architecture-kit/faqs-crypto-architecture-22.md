@@ -2,9 +2,10 @@
 title: "HMAC加密报错：Error message:convertSymKey key failed!"
 original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-22
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-22
+last_sync: 2026-06-07
+sync_hash: 38f73d3b
 ---
-
-
 **问题场景**
 
 HMAC加密报错：Error message:convertSymKey key failed!

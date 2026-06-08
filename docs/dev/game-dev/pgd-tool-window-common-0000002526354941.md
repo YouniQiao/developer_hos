@@ -2,9 +2,10 @@
 title: "常用操作"
 original_url: /docs/dev/game-dev/pgd-tool-window-common-0000002526354941
 format: md
+upstream_id: dev/game-dev/pgd-tool-window-common-0000002526354941
+last_sync: 2026-06-07
+sync_hash: 36ae756f
 ---
-
-
 ## 单次打开所有关系窗口
 
 您可以在顶部菜单栏选择“Window &gt; PGD &gt; Relationship &gt; 所有关系窗口”，同时打开System、Component、Entity三个窗口，并按左中右的顺序自动完成布局。

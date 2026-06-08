@@ -2,9 +2,10 @@
 title: "如何使用TaskPool在子线程调用对象成员函数"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-120
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-120
+last_sync: 2026-06-07
+sync_hash: aa332898
 ---
-
-
 通过将对象Sendable化来使用对象中的方法。具体可参考如下示例代码：
 
 ```

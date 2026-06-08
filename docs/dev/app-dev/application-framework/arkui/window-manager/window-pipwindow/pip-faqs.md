@@ -2,9 +2,10 @@
 title: "画中画常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/window-pipwindow/pip-faqs
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/window-manager/window-pipwindow/pip-faqs
+last_sync: 2026-06-07
+sync_hash: eef9d0b5
 ---
-
-
 ## 画中画如何实现多个视频流播放
 
 开发者需要实现多个视频流播放，可以通过自定义节点将视频流封装为NodeController，创建画中画时配置为自定义节点[customUIController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pipwindow#pipconfiguration)，实现多个视频流播放 。

@@ -2,9 +2,10 @@
 title: "输入法开发服务术语"
 original_url: /docs/dev/app-dev/application-framework/ime-kit-glossary
 format: md
+upstream_id: dev/app-dev/application-framework/ime-kit-glossary
+last_sync: 2026-06-07
+sync_hash: e192efc4
 ---
-
-
 ## B
 
 ### Base experience mode; 基础访问模式

@@ -2,9 +2,10 @@
 format: md
 title: "如何获取Native侧printf等方法打印的信息"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-16
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-16
+last_sync: 2026-06-07
+sync_hash: 65feafcb
 ---
-
-
 **问题详情**
 
 Native侧引用的三方库使用printf等方法打印到stdout、stderr的信息怎么获取？在三方库代码里有许多fprintf, std::cout printf 的标准日志打印log，在程序开发中无法查看这些日志。

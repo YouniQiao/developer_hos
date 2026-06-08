@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通用查询介绍及规格"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-general-operation/huks-ukey-general-query-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-general-operation/huks-ukey-general-query-overview
+last_sync: 2026-06-07
+sync_hash: 5571a2ce
 ---
-
-
 HUKS提供属性查询接口，支持从外部密钥管理执行通用查询操作，例如Ukey设备信息、PIN码信息等。
 
 ![](./img/872c7f35.png)

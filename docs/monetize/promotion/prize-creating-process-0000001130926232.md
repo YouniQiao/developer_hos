@@ -3,8 +3,10 @@ title: "各类型奖品创建流程"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/prize-creating-process-0000001130926232
 format: md
+upstream_id: monetize/promotion/prize-creating-process-0000001130926232
+last_sync: 2026-06-07
+sync_hash: 7916c6eb
 ---
-
 # 各类型奖品创建流程
 
 （1）华为优惠券：图示

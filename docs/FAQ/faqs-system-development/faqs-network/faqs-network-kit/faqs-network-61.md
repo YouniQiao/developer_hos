@@ -2,8 +2,11 @@
 title: "如何判断当前网络能否上网"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-61
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-61
+last_sync: 2026-06-07
+sync_hash: ed6adaa4
+upstream_hash: 67cc59a3af61
 ---
-
 
 可以使用@ohos.net.connection的能力，在网络连接状态发生变化时，判断当前网络是否可以访问互联网，并将判断结果存储到AppStorage中。需要判断网络连接状态时，直接从AppStorage获取结果。参考代码如下：
 

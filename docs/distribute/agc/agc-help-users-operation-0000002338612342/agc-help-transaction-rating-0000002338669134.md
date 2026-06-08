@@ -2,9 +2,10 @@
 title: "元服务交易评价"
 original_url: /docs/distribute/agc/agc-help-users-operation-0000002338612342/agc-help-transaction-rating-0000002338669134
 format: md
+upstream_id: distribute/agc/agc-help-users-operation-0000002338612342/agc-help-transaction-rating-0000002338669134
+last_sync: 2026-06-07
+sync_hash: bb7aa7d3
 ---
-
-
 #### 功能简介
 
 元服务交易评价是元服务平台官方提供的，反映用户对元服务交易体验的评价系统。在元服务中产生交易的用户，可以针对本元服务的交易体验进行打分、发表评论。

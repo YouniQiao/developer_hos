@@ -3,9 +3,10 @@ title: "脚本错误码"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-errorcode-00302
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-errorcode-00302
+last_sync: 2026-06-07
+sync_hash: f1b0299f
 ---
-
-
 # 脚本错误码
 
 #### 00302001 FA模型不支持单元测试

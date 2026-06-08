@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "HiAppEvent常见问题"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/hiappevent-faq
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/hiappevent-faq
+last_sync: 2026-06-07
+sync_hash: 73b89006
 ---
-
-
 ## 查不到已通过HiAppEvent订阅的事件内容
 
 **问题现象**

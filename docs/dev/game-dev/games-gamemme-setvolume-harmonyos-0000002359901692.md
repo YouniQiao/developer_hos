@@ -2,9 +2,10 @@
 title: "设置扬声器播放音量"
 original_url: /docs/dev/game-dev/games-gamemme-setvolume-harmonyos-0000002359901692
 format: md
+upstream_id: dev/game-dev/games-gamemme-setvolume-harmonyos-0000002359901692
+last_sync: 2026-06-07
+sync_hash: 9d692d32
 ---
-
-
 进入语音房间后，玩家如果希望控制房间音量，可通过设置扬声器播放音量实现，房间中任意玩家的声音都按设置的音量大小通过扬声器播出。
 
 ## 前提条件

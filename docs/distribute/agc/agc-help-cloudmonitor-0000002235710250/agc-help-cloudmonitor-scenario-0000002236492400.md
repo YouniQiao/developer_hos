@@ -2,9 +2,10 @@
 title: "典型应用场景"
 original_url: /docs/distribute/agc/agc-help-cloudmonitor-0000002235710250/agc-help-cloudmonitor-scenario-0000002236492400
 format: md
+upstream_id: distribute/agc/agc-help-cloudmonitor-0000002235710250/agc-help-cloudmonitor-scenario-0000002236492400
+last_sync: 2026-06-07
+sync_hash: 6c54583d
 ---
-
-
 当您开通并使用了AGC云函数、云数据库、APMS等服务时，云监控可以帮助您监测这些服务的运行状况，主要在以下场景帮助您监控资源：
 
 #### 提供云侧监控数据，助力优化改进

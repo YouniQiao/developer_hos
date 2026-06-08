@@ -3,9 +3,10 @@ title: "热重载和增量调试错误码"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-errorcode-00402
 format: md
+upstream_id: tools/coding-debug/ide-debug-errorcode-00402
+last_sync: 2026-06-07
+sync_hash: ffe8d8a8
 ---
-
-
 # 热重载和增量调试错误码
 
 #### 00402001 找不到SDK

@@ -3,9 +3,10 @@ title: "ohpm config错误码"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/errorcode/ide-ohpm-config-errorcode
 format: md
+upstream_id: tools/ohpm/errorcode/ide-ohpm-config-errorcode
+last_sync: 2026-06-07
+sync_hash: 4f596a31
 ---
-
-
 # ohpm config错误码
 
 ## 00602001 未配置子命令

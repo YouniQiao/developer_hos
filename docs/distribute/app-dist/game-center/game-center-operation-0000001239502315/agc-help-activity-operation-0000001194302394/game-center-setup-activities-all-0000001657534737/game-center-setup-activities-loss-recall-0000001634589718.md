@@ -3,9 +3,10 @@ title: "流失召回"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-loss-recall-0000001634589718
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-loss-recall-0000001634589718
+last_sync: 2026-06-07
+sync_hash: 0aabee6a
 ---
-
-
 # 流失召回
 
 为了挽回流失用户，提升用户留存率，您可以创建流失召回活动。在活动期间，针对指定的用户群体直接发放活动奖励，例如标签用户群、私有用户群。奖品信息会通过应用市场或游戏中心推送给用户。

@@ -1,6 +1,10 @@
 ---
 title: "Health Wearable Data Manage"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-data-manage
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-data-manage
+last_sync: 2026-06-07
+sync_hash: 86cb6022
+upstream_hash: 23b165a6ddb5
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

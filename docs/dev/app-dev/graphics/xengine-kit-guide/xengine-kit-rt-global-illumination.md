@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "光线追踪全局光照"
 original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-rt-global-illumination
 format: md
+upstream_id: dev/app-dev/graphics/xengine-kit-guide/xengine-kit-rt-global-illumination
+last_sync: 2026-06-07
+sync_hash: c45e103d
 ---
-
-
 从6.0.0(20) 版本开始，新增光线追踪全局光照特性。
 
 XEngine Kit提供端侧光线追踪全局光照（Ray-Traced Global Illumination，RTGI）能力，包含动态漫反射全局光照（DDGI）算法和神经网络全局光照（NNGI）算法。

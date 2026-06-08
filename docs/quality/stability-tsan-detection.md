@@ -1,9 +1,10 @@
 ---
 title: "使用TSan检测线程问题"
 original_url: /docs/quality/stability-tsan-detection
+upstream_id: /docs/quality/stability-tsan-detection
+last_sync: 2026-06-07
+sync_hash: 4ca33002
 ---
-
-
 # 使用TSan检测线程问题
 
 ## 原理概述
@@ -65,7 +66,7 @@ TSan能够检测出如下问题：
 
 **流水线场景**
 
-在hvigorw命令后加上**ohos-debug-tsan=true**的选项，执行hvigorw命令，更多options参考[命令行构建工具（hvigorw）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-commandline)。
+在hvigorw命令后加上**ohos-debug-tsan=true**的选项，执行hvigorw命令，更多options参考[命令行构建工具（hvigorw）](/docs/tools/cli-tools/ide-hvigor-commandline)。
 
 ```
 hvigorw [taskNames...] ohos-debug-tsan=true  <options>
@@ -88,7 +89,7 @@ hvigorw [taskNames...] ohos-debug-tsan=true  <options>
 
 **流水线场景**
 
-在hvigorw命令后加上**ohos-debug-tsan=true**的选项，执行hvigorw命令，更多options参考[命令行构建工具（hvigorw）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-commandline)。
+在hvigorw命令后加上**ohos-debug-tsan=true**的选项，执行hvigorw命令，更多options参考[命令行构建工具（hvigorw）](/docs/tools/cli-tools/ide-hvigor-commandline)。
 
 ```
 hvigorw [taskNames...] ohos-debug-tsan=true  <options>

@@ -2,9 +2,10 @@
 title: "修改资质审核任务"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-put-qualification-review-0000002422530746
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-put-qualification-review-0000002422530746
+last_sync: 2026-06-07
+sync_hash: 619b6bc9
 ---
-
-
 #### 功能介绍
 
 此接口用于修改元服务的资质审核任务。

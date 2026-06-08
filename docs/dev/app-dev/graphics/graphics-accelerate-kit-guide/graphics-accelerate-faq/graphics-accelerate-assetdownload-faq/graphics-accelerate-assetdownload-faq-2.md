@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "集成游戏资源加速ExtensionAbility方法，未配置游戏资源加速ExtensionAbility组件类型信息，导致功能未生效"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-assetdownload-faq/graphics-accelerate-assetdownload-faq-2
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-assetdownload-faq/graphics-accelerate-assetdownload-faq-2
+last_sync: 2026-06-07
+sync_hash: cf626778
+upstream_hash: b710143fe24b
 ---
-
 
 未配置游戏资源加速ExtensionAbility组件类型信息将出现如下异常日志：
 

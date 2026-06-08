@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "搜索关键字"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-search
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-search
+last_sync: 2026-06-07
+sync_hash: 6aa7b37a
 ---
-
-
 预览PDF文档时，可以对页面的关键词（英文字符不区分大小写）进行搜索并高亮显示，同时使用[setSearchIndex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#setsearchindex)方法高亮显示指定的搜索结果。
 
 使用[getSearchIndex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#getsearchindex)方法获取当前高亮的索引，可以使用[clearSearch](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#clearsearch)方法清除所有搜索结果。

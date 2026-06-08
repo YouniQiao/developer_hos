@@ -3,9 +3,10 @@ title: "@typescript-eslint/adjacent-overload-signatures"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_adjacent-overload-signatures
 format: md
+upstream_id: tools/coding-debug/ide_adjacent-overload-signatures
+last_sync: 2026-06-07
+sync_hash: d0a53212
 ---
-
-
 # @typescript-eslint/adjacent-overload-signatures
 
 建议函数重载的签名保持连续。

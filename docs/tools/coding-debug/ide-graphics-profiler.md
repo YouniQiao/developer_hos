@@ -3,9 +3,10 @@ title: "GPU帧捕获工具：Graphics Profiler抓帧入口"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-graphics-profiler
 format: md
+upstream_id: tools/coding-debug/ide-graphics-profiler
+last_sync: 2026-06-07
+sync_hash: 6e9aaec9
 ---
-
-
 # GPU帧捕获工具：Graphics Profiler抓帧入口
 
 Graphics Profiler（图形性能调优）是专为GPU分析和优化提供的一种调试分析解决方案，可帮助OpenGL ES游戏或Vulkan游戏提升性能，分析绘制和计算问题。从DevEco Studio 6.0.0 Beta1版本开始，提供Graphics Profiler工具的抓帧入口，该工具用于对HarmonyOS手机设备进行调试，需使用调试证书。

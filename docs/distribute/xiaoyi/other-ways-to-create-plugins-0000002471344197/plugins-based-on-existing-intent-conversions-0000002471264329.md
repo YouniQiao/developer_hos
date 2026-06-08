@@ -3,9 +3,10 @@ title: "基于已有意图转换创建插件"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/other-ways-to-create-plugins-0000002471344197/plugins-based-on-existing-intent-conversions-0000002471264329
 format: md
+upstream_id: distribute/xiaoyi/other-ways-to-create-plugins-0000002471344197/plugins-based-on-existing-intent-conversions-0000002471264329
+last_sync: 2026-06-07
+sync_hash: f68ff838
 ---
-
-
 # 基于已有意图转换创建插件
 
 插件创建方式选择“端/云插件-基于已有意图转换”。

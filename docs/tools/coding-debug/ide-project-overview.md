@@ -2,9 +2,10 @@
 title: "工程介绍"
 format: md
 original_url: /docs/tools/coding-debug/ide-project-overview
+upstream_id: tools/coding-debug/ide-project-overview
+last_sync: 2026-06-07
+sync_hash: 693b7ee7
 ---
-
-
 # 工程介绍
 
 ## 应用程序包基础知识

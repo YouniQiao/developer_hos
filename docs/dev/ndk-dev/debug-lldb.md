@@ -2,9 +2,10 @@
 title: "LLDB高性能调试器"
 original_url: /docs/dev/ndk-dev/debug-lldb
 format: md
+upstream_id: dev/ndk-dev/debug-lldb
+last_sync: 2026-06-07
+sync_hash: 15a4c3b8
 ---
-
-
 ## 概述
 
 LLDB（Low Level Debugger）是新一代高性能调试器。具备断点设置、变量查看与修改、内存操作、线程控制、表达式计算、堆栈回溯等功能，并支持跨平台和插件扩展。

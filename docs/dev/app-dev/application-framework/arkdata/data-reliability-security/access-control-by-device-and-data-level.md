@@ -2,9 +2,10 @@
 title: "基于设备分类和数据分级的访问控制 (ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/data-reliability-security/access-control-by-device-and-data-level
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/data-reliability-security/access-control-by-device-and-data-level
+last_sync: 2026-06-07
+sync_hash: dace96cc
 ---
-
-
 ## 基本概念
 
 分布式数据管理对数据实施分类分级保护，提供基于数据安全标签以及设备安全等级的访问控制机制。

@@ -3,8 +3,10 @@ title: "查询关键词"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-keywords1-0000001286373436
 format: md
+upstream_id: monetize/promotion/marketing-api-keywords1-0000001286373436
+last_sync: 2026-06-07
+sync_hash: f3d9a84e
 ---
-
 # 查询关键词
 
 您通过本接口可以查询关键词信息，包括关键词和否词信息。

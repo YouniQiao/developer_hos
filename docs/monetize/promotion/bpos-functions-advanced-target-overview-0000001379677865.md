@@ -3,13 +3,15 @@ title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-functions-advanced-target-overview-0000001379677865
 format: md
+upstream_id: monetize/promotion/bpos-functions-advanced-target-overview-0000001379677865
+last_sync: 2026-06-07
+sync_hash: 594e7832
 ---
-
 # 概述
 
 ![](./img/53ea65e49103.png) 
 
-若[基础人群定向](/docs/monetize/promotion/bpos-functions-base-target-0000001328677542)无法满足您的定向需求，您可以申请[特性通行名单](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/addtongxing-0000001128278195)，使用人群管理，可支持拓展人群、交并差等更多定制人群功能。
+若[基础人群定向](/docs/monetize/promotion/bpos-functions-base-target-0000001328677542)无法满足您的定向需求，您可以申请[特性通行名单](/docs/monetize/promotion/addtongxing-0000001128278195)，使用人群管理，可支持拓展人群、交并差等更多定制人群功能。
 
 仅支持直客与子客使用人群管理功能。
 

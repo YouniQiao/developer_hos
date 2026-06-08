@@ -2,9 +2,10 @@
 title: "接入ArkTS页面"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page
+last_sync: 2026-06-07
+sync_hash: c782ee8a
 ---
-
-
 ## 占位组件
 
 使用NDK接口构建UI界面时，需要在ArkTS页面创建用于挂载NDK接口创建组件的占位组件。占位组件类型为[ContentSlot](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-contentslot)，ContentSlot能够绑定一个[NodeContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-nodecontent)对象，该对象可通过Node-API传递到Native侧挂载显示Native组件。

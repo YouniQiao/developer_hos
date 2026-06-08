@@ -3,8 +3,10 @@ title: "多设备资源文件"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-resource
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi-device-resource
+last_sync: 2026-06-07
+sync_hash: 4dda5824
 ---
-
 # 多设备资源文件
 
 在页面开发过程中，经常需要用到颜色、字体、间距、图片等资源，在不同的设备或配置中，这些资源的值可能不同。有两种方式处理：

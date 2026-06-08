@@ -2,9 +2,10 @@
 title: "使用HiSmartPerf采集jsvm trace"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-v8-trace
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-v8-trace
+last_sync: 2026-06-07
+sync_hash: 81ae6c69
 ---
-
-
 ## 简介
 
 jsvm的trace是jsvm引擎提供的一种用于分析和调试JavaScript代码执行过程的工具。它可以记录并输出关于代码执行的详细信息，包括函数调用、执行时间、内存使用情况等，帮助开发者了解代码的性能、诊断潜在问题，进行优化。

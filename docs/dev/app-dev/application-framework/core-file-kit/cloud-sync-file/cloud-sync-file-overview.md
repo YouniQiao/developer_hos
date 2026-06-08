@@ -2,8 +2,11 @@
 title: "端云文件协同概述"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/cloud-sync-file/cloud-sync-file-overview
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/cloud-sync-file/cloud-sync-file-overview
+last_sync: 2026-06-07
+sync_hash: 6c35e135
+upstream_hash: bdd3f435f63f
 ---
-
 
 端云文件协同为应用开发提供端云一体的统一文件系统能力，为用户和应用提供一致的文件同步与跨端访问体验。
 

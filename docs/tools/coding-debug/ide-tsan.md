@@ -3,9 +3,10 @@ title: "使用TSan检测线程错误"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-tsan
 format: md
+upstream_id: tools/coding-debug/ide-tsan
+last_sync: 2026-06-07
+sync_hash: 240b65a3
 ---
-
-
 # 使用TSan检测线程错误
 
 TSan（ThreadSanitizer）是一个检测数据竞争的工具。它包含一个编译器插桩模块和一个运行时库。TSan开启后，会使性能降低5到15倍，同时使内存占用率提高5到10倍。关于TSan的检测原理请参考[TSan](`https://`developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-tsan-detection)。

@@ -2,6 +2,9 @@
 title: "《重磅更新》栏目"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-content-operation-0000001239502321/game-center-renewing-program-0000001194142418
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-content-operation-0000001239502321/game-center-renewing-program-0000001194142418
+last_sync: 2026-06-07
+sync_hash: bc6d4af5
 ---
 import MergeTable from "@site/src/components/MergeTable";
 

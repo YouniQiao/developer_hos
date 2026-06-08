@@ -2,9 +2,10 @@
 title: "获取风险等级"
 original_url: /docs/dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-get-risklevel
 format: md
+upstream_id: dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-get-risklevel
+last_sync: 2026-06-07
+sync_hash: 04b0e59b
 ---
-
-
 ## 场景介绍
 
 当元服务需要获取用户风险等级时，可使用Account Kit提供的获取用户风险等级能力，用于以下恶意场景识别：

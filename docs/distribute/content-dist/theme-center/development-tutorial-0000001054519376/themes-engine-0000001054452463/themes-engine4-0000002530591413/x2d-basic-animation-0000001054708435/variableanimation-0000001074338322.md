@@ -3,9 +3,10 @@ title: "变量动画&lt;VariableAnimation&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-basic-animation-0000001054708435/variableanimation-0000001074338322
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-basic-animation-0000001054708435/variableanimation-0000001074338322
+last_sync: 2026-06-07
+sync_hash: 424ec815
 ---
-
-
 # 变量动画&lt;VariableAnimation&gt;
 
 ## 动效概述

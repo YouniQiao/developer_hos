@@ -3,8 +3,10 @@ title: "查询应用详情"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-advertising-product4-0000001286339298
 format: md
+upstream_id: monetize/promotion/marketing-api-advertising-product4-0000001286339298
+last_sync: 2026-06-07
+sync_hash: f0ee5a0b
 ---
-
 # 查询应用详情
 
 您通过本接口可以查询应用详情。

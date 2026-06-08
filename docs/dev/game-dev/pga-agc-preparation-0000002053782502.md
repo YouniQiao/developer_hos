@@ -2,9 +2,10 @@
 title: "AGC控制台准备"
 original_url: /docs/dev/game-dev/pga-agc-preparation-0000002053782502
 format: md
+upstream_id: dev/game-dev/pga-agc-preparation-0000002053782502
+last_sync: 2026-06-07
+sync_hash: 84f4ba33
 ---
-
-
 ## 注册开发者账号
 
 若您还没有实名认证的华为开发者账号，请前往华为开发者联盟网站注册开发者账号并完成实名认证，详细操作请参见[注册账号](https://developer.huawei.com/consumer/cn/doc/start/registration-and-verification-0000001053628148)。

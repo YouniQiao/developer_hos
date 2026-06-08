@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Weather Service Kit简介"
 original_url: /docs/dev/app-dev/application-services/weather-service-kit-guide/weather-service-introduction
 format: md
+upstream_id: dev/app-dev/application-services/weather-service-kit-guide/weather-service-introduction
+last_sync: 2026-06-07
+sync_hash: bfd2f1e1
 ---
-
-
 Weather Service Kit（天气服务）是HarmonyOS生态下的一个数据提供服务，Weather Service Kit融合了多家气象行业TOPs供应商，提供专业、精准、稳定的超本地化天气预报服务，帮助开发者为用户提供更贴心的本地生活服务，支撑行业客户防灾减灾、降本增效。开发者可以轻松地在HarmonyOS应用/元服务中获取天气数据。
 
 ## 场景介绍

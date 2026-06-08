@@ -2,9 +2,10 @@
 format: md
 title: "如何对手势事件进行限流防止连续识别，例如500ms内不允许点击事件重复触发？如何对多个手势进行统一限流"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-394
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-394
+last_sync: 2026-06-07
+sync_hash: 56ec2a05
 ---
-
-
 可以自定义节流函数。
 
 ```

@@ -2,9 +2,10 @@
 title: "上传版权材料"
 original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-copyright-0000002458362109
 format: md
+upstream_id: distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-copyright-0000002458362109
+last_sync: 2026-06-07
+sync_hash: 10db8eaa
 ---
-
-
 根据法律法规，要求小游戏上架时提供对应的小游戏版权材料。
 
 #### 前提条件

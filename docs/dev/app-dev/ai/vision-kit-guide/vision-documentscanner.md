@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "文档扫描"
 original_url: /docs/dev/app-dev/ai/vision-kit-guide/vision-documentscanner
 format: md
+upstream_id: dev/app-dev/ai/vision-kit-guide/vision-documentscanner
+last_sync: 2026-06-07
+sync_hash: 71249075
 ---
-
-
 ## 场景介绍
 
 文档扫描控件提供拍摄文档并转换为高清扫描件的服务。仅需拍摄文档，即可自动裁剪和优化，并支持图片、PDF格式保存和分享；同时支持拍摄或从图库选择图片识别表格，生成表格文档。

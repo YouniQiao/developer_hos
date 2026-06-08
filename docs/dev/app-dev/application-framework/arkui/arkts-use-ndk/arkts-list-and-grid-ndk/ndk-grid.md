@@ -2,9 +2,10 @@
 title: "使用网格"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-list-and-grid-ndk/ndk-grid
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-list-and-grid-ndk/ndk-grid
+last_sync: 2026-06-07
+sync_hash: 8e0d408a
 ---
-
-
 ## 概述
 
 ArkUI开发框架从API version 12开始在NDK接口提供了网格组件，使用网格可以将页面按行列分割成单元格，并指定子组件所在单元格和占用的行列数，从而实现不同的布局需求。例如页面上大小不同的卡片和应用图标、按日期分组显示图片等。

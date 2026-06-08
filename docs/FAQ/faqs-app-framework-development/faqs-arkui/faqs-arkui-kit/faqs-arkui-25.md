@@ -2,9 +2,10 @@
 format: md
 title: "如何实现分组列表的吸顶/吸底效果"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-25
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-25
+last_sync: 2026-06-07
+sync_hash: def0b040
 ---
-
-
 可通过[List](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list)组件的sticky属性配合ListItemGroup组件来实现。通过给List组件设置sticky属性为StickyStyle.Header/StickyStyle.Footer。可参考如下代码：
 
 ```

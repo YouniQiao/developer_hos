@@ -2,9 +2,10 @@
 format: md
 title: "如何将图片合成视频"
 original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avcodec-kit/faqs-avsession-14
+upstream_id: FAQ/faqs-media-development/faqs-audio-video/faqs-avcodec-kit/faqs-avsession-14
+last_sync: 2026-06-07
+sync_hash: 68cb62c4
 ---
-
-
 使用AVCodec Kit将图片合成视频，具体操作步骤如下：
 
 1. 在ArkTS侧使用ImageSource将图片解码为PixelMap对象，具体参考指南：[使用ImageSource完成图片解码](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-decoding)。

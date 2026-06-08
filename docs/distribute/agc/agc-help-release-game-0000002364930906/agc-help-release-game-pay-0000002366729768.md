@@ -2,9 +2,10 @@
 title: "配置应用内资费"
 original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-pay-0000002366729768
 format: md
+upstream_id: distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-pay-0000002366729768
+last_sync: 2026-06-07
+sync_hash: cb22a55d
 ---
-
-
 若游戏涉及付费，要求按照业务场景选择游戏内的资费类型，用于标识玩家在游戏内的付费类型。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，选择待上架的游戏。

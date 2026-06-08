@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "保护密码类数据"
 original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-scenarios/asset-scenario1
 format: md
+upstream_id: dev/app-dev/system/system-security/asset-store-kit/asset-scenarios/asset-scenario1
+last_sync: 2026-06-07
+sync_hash: 07efc44c
 ---
-
-
 ![](./img/7639596d.png)
 
 密码类数据可以是密码、登录令牌、信用卡号等用户敏感数据。

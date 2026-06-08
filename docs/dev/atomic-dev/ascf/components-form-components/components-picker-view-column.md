@@ -2,9 +2,10 @@
 title: "picker-view-column"
 original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-picker-view-column
 format: md
+upstream_id: dev/atomic-dev/ascf/components-form-components/components-picker-view-column
+last_sync: 2026-06-07
+sync_hash: 78933516
 ---
-
-
 picker-view组件的子组件。
 
 **起始版本：** 1.0.0

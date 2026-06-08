@@ -2,9 +2,10 @@
 title: "字体"
 original_url: /docs/dev/atomic-dev/ascf/apis-page/apis-font
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-page/apis-font
+last_sync: 2026-06-07
+sync_hash: 05c0cedc
 ---
-
-
 ## has.loadFontFace
 
 has.loadFontFace(Object object)

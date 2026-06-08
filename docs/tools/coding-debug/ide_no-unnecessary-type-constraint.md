@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-unnecessary-type-constraint"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unnecessary-type-constraint
 format: md
+upstream_id: tools/coding-debug/ide_no-unnecessary-type-constraint
+last_sync: 2026-06-07
+sync_hash: a5ddbb8a
 ---
-
-
 # @typescript-eslint/no-unnecessary-type-constraint
 
 不允许在泛型中使用不必要的约束条件。

@@ -3,9 +3,10 @@ title: "升级应用版本"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-update-0000001239645255/game-center-upgrade-version-0000001194325288
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-update-0000001239645255/game-center-upgrade-version-0000001194325288
+last_sync: 2026-06-07
+sync_hash: 85d47973
 ---
-
-
 # 升级应用版本
 
 应用上架后，如果您需要修改应用的分发国家、修改软件包、发布开放式测试版本等，需在AppGallery Connect中提交新版本给华为进行审核。审核通过后，用户将在华为应用市场搜索到最新的应用版本。

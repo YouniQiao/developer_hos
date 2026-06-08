@@ -3,9 +3,10 @@ title: "编辑区对话"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-edit-area-code-generation
 format: md
+upstream_id: tools/ai-assist/ide-edit-area-code-generation
+last_sync: 2026-06-07
+sync_hash: 1a477c83
 ---
-
-
 # 编辑区对话
 
 CodeGenie提供Inline Edit能力，支持在ArkTS文件的编辑窗口中通过自然语言进行问答，基于上下文智能生成代码片段，提升代码可读性。

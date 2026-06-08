@@ -2,9 +2,10 @@
 title: "通过预建连接提升HTTP传输性能"
 original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-pre-connect
 format: md
+upstream_id: dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-pre-connect
+last_sync: 2026-06-07
+sync_hash: 81e8ce13
 ---
-
-
 ## 概述
 
 从6.1.1(24)版本开始，新增支持预建连接功能。

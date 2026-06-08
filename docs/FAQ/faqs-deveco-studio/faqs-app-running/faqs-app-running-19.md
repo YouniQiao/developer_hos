@@ -2,9 +2,10 @@
 format: md
 title: "DevEco Studio修改文件后点击run，一直没成功跑起来，run按钮一直处于禁用状态（Mac环境）"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-19
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-19
+last_sync: 2026-06-07
+sync_hash: d4546596
 ---
-
-
 **问题描述**
 
 DevEco Studio修改文件后点击run，一直没成功跑起来，run按钮一直处于禁用状态（Mac环境）

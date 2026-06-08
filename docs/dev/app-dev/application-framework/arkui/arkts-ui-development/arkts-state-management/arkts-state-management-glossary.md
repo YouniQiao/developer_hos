@@ -2,9 +2,10 @@
 title: "状态管理术语"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-glossary
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-glossary
+last_sync: 2026-06-07
+sync_hash: 9f4ba3d8
 ---
-
-
 ## A
 
 ### 属性级精准更新（Attribute-Level Updates）

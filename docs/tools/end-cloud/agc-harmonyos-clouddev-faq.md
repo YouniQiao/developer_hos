@@ -1,12 +1,12 @@
 ---
-
 title: "FAQ"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-faq
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-faq
+last_sync: 2026-06-07
+sync_hash: b84c8e83
 ---
-
-
 # FAQ
 
 ## 使用DevEco Studio打开端云一体化项目文件夹，左侧的项目列表不显示云侧工程

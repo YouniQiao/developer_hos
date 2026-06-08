@@ -2,9 +2,10 @@
 title: "查询关键资产(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-query
 format: md
+upstream_id: dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-query
+last_sync: 2026-06-07
+sync_hash: 3ec191e6
 ---
-
-
 ## 接口介绍
 
 开发者可以查阅API文档，获取关键资产查询接口的详细说明：[OH\_Asset\_Query](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-asset-api-h#oh_asset_query)。

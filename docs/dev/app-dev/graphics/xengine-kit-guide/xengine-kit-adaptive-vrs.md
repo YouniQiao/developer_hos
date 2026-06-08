@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "自适应VRS"
 original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-adaptive-vrs
 format: md
+upstream_id: dev/app-dev/graphics/xengine-kit-guide/xengine-kit-adaptive-vrs
+last_sync: 2026-06-07
+sync_hash: ecc4c7d8
+upstream_hash: 5460e5543ec7
 ---
-
 
 XEngine Kit提供自适应VRS功能，其通过合理分配画面的计算资源，视觉无损降低渲染频次，使不同的渲染图像使用不同的渲染速率，能够有效提高渲染性能。
 

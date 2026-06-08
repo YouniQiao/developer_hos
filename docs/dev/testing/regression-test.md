@@ -2,8 +2,11 @@
 title: "回归测试"
 original_url: /docs/dev/testing/regression-test
 format: md
+upstream_id: dev/testing/regression-test
+last_sync: 2026-06-07
+sync_hash: b9e72e58
+upstream_hash: f4df26d686c0
 ---
-
 
 ![](./img/95566807.png "点击放大")
 

@@ -3,9 +3,10 @@ title: "使用仿真器运行轻量级穿戴应用"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-run-simulator
 format: md
+upstream_id: tools/coding-debug/ide-run-simulator
+last_sync: 2026-06-07
+sync_hash: 5677e4f4
 ---
-
-
 # 使用仿真器运行轻量级穿戴应用
 
 DevEco Studio提供的<strong>Simulator</strong>可以运行和调试Lite Wearable设备上的HarmonyOS应用，兼容签名与不签名两种类型的HAP。

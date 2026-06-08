@@ -2,9 +2,10 @@
 title: "使用Node-API接口进行primitive类相关开发"
 original_url: /docs/dev/ndk-dev/use-napi-about-primitive
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-primitive
+last_sync: 2026-06-07
+sync_hash: cfa0b666
 ---
-
-
 ## 简介
 
 使用Node-API接口，开发人员可以在Node-API模块中与ArkTS对象交互，进行数据转换和获取特定对象。这些操作在不同场景中发挥重要作用，使开发人员能够更灵活地处理ArkTS值和对象。

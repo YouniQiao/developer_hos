@@ -3,9 +3,10 @@ title: "回复模板配置"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/development-card-0000002435989672/reply-template-configuration-0000002471344213
 format: md
+upstream_id: distribute/xiaoyi/development-card-0000002435989672/reply-template-configuration-0000002471344213
+last_sync: 2026-06-07
+sync_hash: 02d2f4df
 ---
-
-
 # 回复模板配置
 
 **查询插件/工作流输出参数**

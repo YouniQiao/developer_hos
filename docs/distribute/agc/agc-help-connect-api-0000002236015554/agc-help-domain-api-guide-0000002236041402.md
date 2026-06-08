@@ -2,9 +2,10 @@
 title: "Domain Management API指南"
 original_url: /docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-domain-api-guide-0000002236041402
 format: md
+upstream_id: distribute/agc/agc-help-connect-api-0000002236015554/agc-help-domain-api-guide-0000002236041402
+last_sync: 2026-06-07
+sync_hash: 086241fa
 ---
-
-
 针对元服务管控访问域名的范围，您可以调用Domain Management API配置域名信息。
 
 1. 如果是业务域名，则调用[下载域名配置文件](/docs/distribute/agc/agc-help-domain-api-reference-0000002271160649/agc-help-domain-api-download-domain-config-0000002271160653)接口，下载域名配置文件。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "概述"
 original_url: /docs/dev/app-dev/application-services/knock-share-between-phones-overview
 format: md
+upstream_id: dev/app-dev/application-services/knock-share-between-phones-overview
+last_sync: 2026-06-07
+sync_hash: fb148819
 ---
-
-
 Share Kit推出碰一碰分享，支持用户通过碰一碰发起跨端分享，可实现传输图片、共享Wi-Fi等。
 
 ## 场景介绍
@@ -39,11 +40,11 @@ Share Kit的处理机制：
 
 ## 环境要求
 
-* 支持的手机系统：[HarmonyOS NEXT Release](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-500#section62333015377)及以上版本，可使用[canIUse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-syscap#caniuse)判断系统能力是否支持。
+* 支持的手机系统：[HarmonyOS NEXT Release](/docs/dev/release-notes/overview-500#section62333015377)及以上版本，可使用[canIUse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-syscap#caniuse)判断系统能力是否支持。
 
   ```
   if (canIUse('SystemCapability.Collaboration.HarmonyShare')) {
     // 支持一碰分享的能力.
   }
   ```
-* 集成开发环境：[DevEco Studio NEXT Beta1](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-500#section1457031563711)及以上版本。
+* 集成开发环境：[DevEco Studio NEXT Beta1](/docs/dev/release-notes/overview-500#section1457031563711)及以上版本。

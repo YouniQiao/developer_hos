@@ -3,8 +3,10 @@ title: "全域推荐-系统投放-CPD任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/mktapi-adtask-global-sys-cpd-0000001366206389
 format: md
+upstream_id: monetize/promotion/mktapi-adtask-global-sys-cpd-0000001366206389
+last_sync: 2026-06-07
+sync_hash: 8b0800e4
 ---
-
 # 全域推荐-系统投放-CPD任务
 
 ## 功能介绍

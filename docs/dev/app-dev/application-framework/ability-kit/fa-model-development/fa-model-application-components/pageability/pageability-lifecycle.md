@@ -2,9 +2,10 @@
 title: "PageAbility的生命周期"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/pageability-lifecycle
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/pageability-lifecycle
+last_sync: 2026-06-07
+sync_hash: 2db2f13f
 ---
-
-
 ## 概述
 
 PageAbility生命周期是PageAbility被调度到INACTIVE、ACTIVE、BACKGROUND等各个状态的统称。PageAbility生命周期流转及状态说明如图1、表1所示。

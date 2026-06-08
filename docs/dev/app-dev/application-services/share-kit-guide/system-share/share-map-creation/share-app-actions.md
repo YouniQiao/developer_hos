@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "自定义配置操作区"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-app-actions
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-app-actions
+last_sync: 2026-06-07
+sync_hash: 153a9217
 ---
-
-
 ## 场景介绍
 
 系统操作区提供了复制、保存、另存为、打印、复制到中转站等系统级快捷操作。宿主应用可以根据自己的业务体验需要判断是否给用户提供相关操作。

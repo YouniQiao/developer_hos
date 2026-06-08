@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "证书管理对话框开发指导"
 original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certmanager/certmanagerdialog-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-security/device-certificate-kit/certmanager/certmanagerdialog-guidelines
+last_sync: 2026-06-07
+sync_hash: 5aa521ed
 ---
-
-
 ![](./img/b713d362.png)
 
 本开发指导需使用API version 13及以上版本SDK。

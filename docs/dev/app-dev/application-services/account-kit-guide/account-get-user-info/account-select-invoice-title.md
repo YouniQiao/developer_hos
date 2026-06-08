@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取发票抬头"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-select-invoice-title
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-select-invoice-title
+last_sync: 2026-06-07
+sync_hash: efbe78cb
 ---
-
-
 ## 场景介绍
 
 当应用需要获取用户发票抬头时，可使用Account Kit提供的发票助手能力，打开发票抬头选择页面，帮助用户快速选择或管理发票抬头。以下对Account Kit提供的发票助手能力进行介绍，获取发票抬头功能还可使用场景化控件[选择发票抬头Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-invoice-title)进行实现。

@@ -2,9 +2,10 @@
 title: "稳定性相关问题汇总"
 original_url: /docs/dev/ndk-dev/napi-faq-about-stability
 format: md
+upstream_id: dev/ndk-dev/napi-faq-about-stability
+last_sync: 2026-06-07
+sync_hash: fd8f1ecf
 ---
-
-
 ## 应用运行过程中出现高概率闪退怎么进行定位解决
 
 * 具体问题：在使用Node-API开发过程中，应用运行过程中出现高概率闪退，出现cpp crash栈，栈顶为系统库libark\_jsruntime.so，崩溃栈前几帧也有libace\_napi.z.so，怎么进行定位解决？

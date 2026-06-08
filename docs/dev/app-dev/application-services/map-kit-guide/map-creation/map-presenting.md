@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "显示地图"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-creation/map-presenting
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-creation/map-presenting
+last_sync: 2026-06-07
+sync_hash: ee634712
 ---
-
-
 ## 场景介绍
 
 从5.0.3(15)开始，支持Logo缩放功能和3D地球功能；从5.1.1(19)开始，支持室内图功能和设置比例尺单位功能；从6.0.0(20)开始，支持设置地图语言功能；从6.1.0(23)开始，支持设置3D地图城市灯光效果。

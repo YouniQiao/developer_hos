@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "跑步"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-running
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-running
+last_sync: 2026-06-07
+sync_hash: fd2ef062
 ---
-
-
 跑步相关锻炼记录类型如下：
 
 | **锻炼记录子类型常量** | **描述** | 数据来源 |

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "AI识图"
 original_url: /docs/dev/app-dev/ai/vision-kit-guide/vision-imageanalyzer
 format: md
+upstream_id: dev/app-dev/ai/vision-kit-guide/vision-imageanalyzer
+last_sync: 2026-06-07
+sync_hash: ef977599
 ---
-
-
 ## 场景介绍
 
 AI识图是通过聚合OCR（Optical Character Recognition）、主体分割、实体识别、多目标识别等AI能力，提供场景化的文本识别、主体分割、识图搜索功能。AI识图功能主开关入口在基础控件API列表中，如果您接受AI识图默认的交互和功能，仅需使用基础控件提供的相关使能接口打开功能开关即可。该文档配套的API配合基础控件使用，主要满足您的定制诉求，帮助您完成AI识图功能交互上的细粒度控制，获取文本识别、图像分割等分析结果以便您进行扩展业务的开发，目前支持的基础控件范围包括[Image](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image#enableanalyzer11)、[Video](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-media-components-video#enableanalyzer12)、[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent#enableanalyzer12)。其中，配合Image控件可完成静态图片上的识图功能，配合Video控件可完成视频播放暂停帧的识图功能，配合XComponent可完成自定义渲染等场景下的图像的识图功能。

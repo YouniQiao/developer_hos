@@ -2,9 +2,10 @@
 title: "游戏多媒体"
 original_url: /docs/dev/game-dev/games-quickgame-runtime-gamemme-service-0000002317894888
 format: md
+upstream_id: dev/game-dev/games-quickgame-runtime-gamemme-service-0000002317894888
+last_sync: 2026-06-07
+sync_hash: 37568db1
 ---
-
-
 ## 简介
 
 游戏多媒体服务是华为游戏中心推出的一款快速实现游戏内语音对讲和即时通讯的服务。您只需集成**游戏多媒体服务SDK**，即可为您的快游戏提供**实时信令收发**、**实时语音对讲**能力，降低开发难度，提升玩家的游戏体验。

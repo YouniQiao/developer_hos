@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "实现游戏启动加速"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-launchacceleration-service/graphics-accelerate-mirror-launch/graphics-accelerate-launch-development
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-launchacceleration-service/graphics-accelerate-mirror-launch/graphics-accelerate-launch-development
+last_sync: 2026-06-07
+sync_hash: 0dba67a9
 ---
-
-
 ## 业务流程
 
 ![](./img/7f8cf043.png)

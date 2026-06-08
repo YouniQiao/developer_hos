@@ -2,9 +2,10 @@
 title: "删除证书指纹"
 original_url: /docs/distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-delete-fingerprints-0000002464839925
 format: md
+upstream_id: distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-delete-fingerprints-0000002464839925
+last_sync: 2026-06-07
+sync_hash: 3be23725
 ---
-
-
 #### 功能介绍
 
 此接口用于删除证书指纹。

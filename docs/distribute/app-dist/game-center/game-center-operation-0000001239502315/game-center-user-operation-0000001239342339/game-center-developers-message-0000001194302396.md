@@ -3,9 +3,10 @@ title: "开发者的话"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-developers-message-0000001194302396
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-developers-message-0000001194302396
+last_sync: 2026-06-07
+sync_hash: 8caf8bce
 ---
-
-
 # 开发者的话
 
 ## 功能简介

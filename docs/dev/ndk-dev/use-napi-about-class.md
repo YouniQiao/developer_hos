@@ -2,9 +2,10 @@
 title: "使用Node-API进行class相关开发"
 original_url: /docs/dev/ndk-dev/use-napi-about-class
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-class
+last_sync: 2026-06-07
+sync_hash: 4c04d79c
 ---
-
-
 ## 简介
 
 使用Node-API接口进行class相关开发，处理ArkTS中的类，例如定义类、构造实例等。

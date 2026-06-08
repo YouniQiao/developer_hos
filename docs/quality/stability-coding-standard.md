@@ -2,9 +2,10 @@
 title: "稳定性编码规范"
 original_url: /docs/quality/stability-coding-standard
 format: md
+upstream_id: /docs/quality/stability-coding-standard
+last_sync: 2026-06-07
+sync_hash: ad66b77e
 ---
-
-
 # 稳定性编码规范
 
 * **[NDK开发ArkTS侧编码规范](/docs/quality/stability-coding-standard-ndk-arkts)**

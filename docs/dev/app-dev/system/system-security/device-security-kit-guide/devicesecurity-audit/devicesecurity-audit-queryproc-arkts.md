@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "进程信息查询场景"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-audit/devicesecurity-audit-queryproc-arkts
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-audit/devicesecurity-audit-queryproc-arkts
+last_sync: 2026-06-07
+sync_hash: c0384fe7
 ---
-
-
 ## 场景介绍
 
 从6.0.0(20) 开始，新增提供应用进程信息查询接口，可以获取设备上已启动的应用进程信息。进程信息包括进程ID、指令命令行、父进程PID、用户ID、用户组ID、进程启动时间、进程所有者ID类型、进程所有者ID等相关信息。

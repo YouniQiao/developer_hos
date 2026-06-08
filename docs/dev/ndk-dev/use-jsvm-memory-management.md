@@ -2,9 +2,10 @@
 title: "使用JSVM-API进行内存管理"
 original_url: /docs/dev/ndk-dev/use-jsvm-memory-management
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-memory-management
+last_sync: 2026-06-07
+sync_hash: bb0b8886
 ---
-
-
 ## 简介
 
 JSVM-API提供了一组用于管理JavaScript虚拟机内存的API，可以更好地控制JavaScript代码使用的内存，并优化内存管理和垃圾回收机制。

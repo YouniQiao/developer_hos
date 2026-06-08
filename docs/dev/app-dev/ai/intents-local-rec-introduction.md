@@ -2,7 +2,10 @@
 title: "概述"
 original_url: /docs/dev/app-dev/ai/intents-local-rec-introduction
 format: md
+upstream_id: dev/app-dev/ai/intents-local-rec-introduction
+last_sync: 2026-06-07
+sync_hash: a83bc484
+upstream_hash: 2216f3d867ed
 ---
-
 
 位置感知推荐能力基于华为意图框架与花瓣地图定位识别能力，通过小艺建议等智慧入口，适时、适需地将服务内容以卡片形式推荐给用户。位置感知基于GNSS、WLAN和基站等融合定位技术，设置圆形、多边形等地理围栏，提供室内外高精度定位能力。

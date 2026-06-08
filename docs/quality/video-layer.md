@@ -1,9 +1,10 @@
 ---
 title: "视频场景图层低功耗建议"
 original_url: /docs/quality/video-layer
+upstream_id: /docs/quality/video-layer
+last_sync: 2026-06-07
+sync_hash: 579d8182
 ---
-
-
 # 视频场景图层低功耗建议
 
 ## 建议

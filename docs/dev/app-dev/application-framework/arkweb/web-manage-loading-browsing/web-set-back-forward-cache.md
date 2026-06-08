@@ -2,8 +2,11 @@
 title: "设置Web组件前进后退缓存"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-set-back-forward-cache
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-set-back-forward-cache
+last_sync: 2026-06-07
+sync_hash: 5cc6d0dc
+upstream_hash: 678d63e6a2a0
 ---
-
 
 Web组件为开发者提供了启用和配置前进后退缓存（以下简称BFCache）的功能。启用此功能后，能够显著提升用户返回至先前浏览网页的速度，尤其对于网络条件不佳的用户，可提供更为流畅的浏览体验。
 

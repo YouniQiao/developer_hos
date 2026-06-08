@@ -2,9 +2,10 @@
 title: "使用WebNativeMessagingExtensionAbility组件实现浏览器扩展和应用通信场景"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-native-messaging
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-native-messaging
+last_sync: 2026-06-07
+sync_hash: 238cdda4
 ---
-
-
 ## 概述
 
 浏览器的扩展程序（extension）支持与系统上安装的应用交换消息，应用向扩展提供服务，帮助扩展实现一些应用才具备的能力，常见的例子是密码管理器：应用负责存储和加密你的密码信息，以便浏览器扩展程序自动填充网页中的表单字段。

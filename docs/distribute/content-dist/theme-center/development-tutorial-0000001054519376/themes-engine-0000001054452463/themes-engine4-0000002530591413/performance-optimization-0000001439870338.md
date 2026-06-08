@@ -3,9 +3,10 @@ title: "性能优化"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/performance-optimization-0000001439870338
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/performance-optimization-0000001439870338
+last_sync: 2026-06-07
+sync_hash: f4fea0b0
 ---
-
-
 # 性能优化
 
 制作主题时，除视觉效果外，还需考虑性能优化，以提供流畅的使用体验。

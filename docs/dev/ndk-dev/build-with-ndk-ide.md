@@ -2,9 +2,10 @@
 title: "使用DevEco Studio模板构建NDK工程"
 original_url: /docs/dev/ndk-dev/build-with-ndk-ide
 format: md
+upstream_id: dev/ndk-dev/build-with-ndk-ide
+last_sync: 2026-06-07
+sync_hash: b4813320
 ---
-
-
 NDK通过CMake和Ninja编译应用的C/C++代码，编译过程如下图所示。
 
 ![](./img/910f57d6.png)
@@ -72,4 +73,4 @@ externalNativeOptions具体参数说明如下表所示。
 | arguments | string | CMake编译参数。 |
 | cppFlags | string | C++编译器参数。 |
 
-更多关于build-profile.json5中参数的说明，请参考[build-profile.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile)。
+更多关于build-profile.json5中参数的说明，请参考[build-profile.json5](/docs/tools/coding-debug/ide-hvigor-build-profile)。

@@ -2,9 +2,10 @@
 title: "导航栏"
 original_url: /docs/dev/atomic-dev/ascf/apis-page/apis-navigation
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-page/apis-navigation
+last_sync: 2026-06-07
+sync_hash: 89c34c2e
 ---
-
-
 ## has.setNavigationBarTitle
 
 has.setNavigationBarTitle(Object object)

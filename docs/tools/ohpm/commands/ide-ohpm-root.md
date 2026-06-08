@@ -3,9 +3,10 @@ title: "ohpm root"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-root
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-root
+last_sync: 2026-06-07
+sync_hash: 88f737ff
 ---
-
-
 # ohpm root
 
 在标准输出中打印有效的 oh\_modules 目录路径信息。

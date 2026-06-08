@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "商户号绑定AppID"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-binding-appid-to-merc
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-binding-appid-to-merc
+last_sync: 2026-06-07
+sync_hash: 4c78c4c8
 ---
-
-
 ![](./img/541c0375.png)
 
 商户号绑定AppID的商户需要通过[华为支付商户平台](https://petalpay-merchant.cloud.huawei.com/)入网，详见[商户入网和获取商户号](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-merc-regist-apply)。通过[华为开发者联盟官网](https://developer.huawei.com/consumer/cn/)开通[商户服务](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-serve-0000001931836308/open-0000001959074873)入网的商户暂不支持直接接入华为支付以及绑定AppID操作。

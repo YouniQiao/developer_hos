@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "设置系统服务进程不可访问后台用户数据的功能"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-set-restrict-access-bg-userdata
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-set-restrict-access-bg-userdata
+last_sync: 2026-06-07
+sync_hash: 360aa7f9
 ---
-
-
 ## 场景介绍
 
 从6.0.1(21)开始，支持设置系统服务进程不可访问后台用户数据的能力。

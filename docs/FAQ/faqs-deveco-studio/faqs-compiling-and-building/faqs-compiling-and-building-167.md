@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“Duplicate 'Module-Abilities' object names detected.”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-167
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-167
+last_sync: 2026-06-07
+sync_hash: d876e4a6
 ---
-
-
 **错误描述**
 
 Module-Abilities对象名称重复。

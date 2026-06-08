@@ -2,8 +2,11 @@
 title: "如何获取系统版本号"
 original_url: /docs/FAQ/faqs-system-development/faqs-basic-functions/faqs-basic-services-kit/faq-basics-service-kit-10
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-basic-functions/faqs-basic-services-kit/faq-basics-service-kit-10
+last_sync: 2026-06-07
+sync_hash: 44549b88
+upstream_hash: 4f76e4c95bd6
 ---
-
 
 可通过[@ohos.deviceInfo (设备信息)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-device-info)模块，查询设备信息。
 

@@ -2,9 +2,10 @@
 title: "常见问题"
 original_url: /docs/dev/game-dev/games-center-products-faq-0000002320646025
 format: md
+upstream_id: dev/game-dev/games-center-products-faq-0000002320646025
+last_sync: 2026-06-07
+sync_hash: a1bd5f1a
 ---
-
-
 | 问题/需求描述 | 意见 |
 | --- | --- |
 | 商品创建完成后，不支持修改的字段有哪些？ | 商品创建完成后，不支持修改的字段：  produceNo 商品ID  purchaseType 商品类型  subGroupID 订阅分组ID |

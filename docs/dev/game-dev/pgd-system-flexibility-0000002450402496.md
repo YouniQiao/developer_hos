@@ -2,9 +2,10 @@
 title: "系统灵活调度"
 original_url: /docs/dev/game-dev/pgd-system-flexibility-0000002450402496
 format: md
+upstream_id: dev/game-dev/pgd-system-flexibility-0000002450402496
+last_sync: 2026-06-07
+sync_hash: 341998a4
 ---
-
-
 ## 灵活调度模式
 
 PGD通过给系统添加内置定时器，支持灵活控制系统的调度时机。System灵活调度功能支持两种模式：

@@ -2,9 +2,10 @@
 title: "发布公共事件（C/C++）"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/native-common-event-publish
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/native-common-event-publish
+last_sync: 2026-06-07
+sync_hash: a97beedf
 ---
-
-
 ## 场景介绍
 
 当需要发布某个公共事件时，可以通过[OH\_CommonEvent\_Publish](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-commonevent-h#oh_commonevent_publish)和[OH\_CommonEvent\_PublishWithInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-commonevent-h#oh_commonevent_publishwithinfo)方法发布事件。发布的公共事件可以携带数据，供订阅者解析并进行下一步处理。

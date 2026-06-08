@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "证书链对象的创建和校验"
 original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-verify-certchain-object
 format: md
+upstream_id: dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-verify-certchain-object
+last_sync: 2026-06-07
+sync_hash: c3dfb3d2
 ---
-
-
 以校验证书链为例，完成证书链对象的创建，获取证书链中的证书列表以及使用信任锚对证书链进行校验。
 
 ## 开发步骤

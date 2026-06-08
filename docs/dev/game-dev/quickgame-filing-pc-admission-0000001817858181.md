@@ -2,9 +2,10 @@
 title: "新增接入"
 original_url: /docs/dev/game-dev/quickgame-filing-pc-admission-0000001817858181
 format: md
+upstream_id: dev/game-dev/quickgame-filing-pc-admission-0000001817858181
+last_sync: 2026-06-07
+sync_hash: eed5d775
 ---
-
-
 在华为云核准（备案）系统中接入已在其它接入商核准（备案）成功的快游戏。操作步骤如下：
 
 1. 登录[华为云核准（备案）系统](https://beian.huaweicloud.com/?utm_source=HUAWEI%2BDeveloper&utm_adplace=AdPlace099034)，左侧菜单栏点击“我的备案”，右侧页面点击“新增互联网信息”。

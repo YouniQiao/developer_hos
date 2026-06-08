@@ -3,10 +3,10 @@ title: "SDK接口的版本更新说明"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_quickapp_sdk-version-0000001316338170
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_quickapp_sdk-version-0000001316338170
+last_sync: 2026-06-07
+sync_hash: 0c9e2178
 ---
-
-
-
 | 版本号 | 发布时间 | 更新说明 |
 | --- | --- | --- |
 | 3.2.1.300 | 2023-06-26 | 版本内部优化。 |

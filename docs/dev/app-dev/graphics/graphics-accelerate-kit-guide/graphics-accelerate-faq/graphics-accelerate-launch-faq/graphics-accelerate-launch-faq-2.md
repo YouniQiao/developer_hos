@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "游戏上划退出后，场景切换阶段存在振动，应该如何避免"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-2
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-2
+last_sync: 2026-06-07
+sync_hash: 54b9be85
 ---
-
-
 开发步骤如下：
 
 1. 通过globalThis定义全局作用域的变量isCacheStatus，在onCreate生命周期函数中赋值false，[isLaunchMirrorEnabled](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/graphics-accelerate-launchacceleration#islaunchmirrorenabled)接口返回true时赋值true。

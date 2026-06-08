@@ -3,8 +3,10 @@ title: "创建影子投放任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-shadow-delivery-create-0000001285257656
 format: md
+upstream_id: monetize/promotion/bp-functions-shadow-delivery-create-0000001285257656
+last_sync: 2026-06-07
+sync_hash: a5efbdbf
 ---
-
 # 创建影子投放任务
 
 1. 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)，“应用市场应用推广”推广范围，点击“推广”—“创建计划”，进入任务创建页面。

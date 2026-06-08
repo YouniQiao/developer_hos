@@ -2,9 +2,10 @@
 title: "内容显示"
 original_url: /docs/experience-suggestions/performance/performance-content-display
 format: md
+upstream_id: experience-suggestions/performance/performance-content-display
+last_sync: 2026-06-07
+sync_hash: a9c151e7
 ---
-
-
 # 内容显示
 
 ### 应用内滑动页面白块率

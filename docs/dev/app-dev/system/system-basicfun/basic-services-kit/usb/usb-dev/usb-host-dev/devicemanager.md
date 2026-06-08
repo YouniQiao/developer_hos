@@ -2,9 +2,10 @@
 title: "USB设备管理"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-dev/usb-host-dev/devicemanager
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-dev/usb-host-dev/devicemanager
+last_sync: 2026-06-07
+sync_hash: 6a00692a
 ---
-
-
 ## 场景介绍
 
 当有USB设备插入时，可以通过usbManager获取一些USB设备的基本信息，如设备类型、支持的功能等。 Host侧主要通过封装的pipe来完成和USB设备的通信。在HarmonyOS系统中，USB管理服务是核心组件，负责管理与USB设备的连接和通信。通过USB管理服务，应用程序可以检测USB设备的连接与断开，管理USB设备的权限请求和设备配置，以及进行数据传输和设备控制。
@@ -15,7 +16,7 @@ format: md
 
 * 开发工具及配置：
 
-  DevEco Studio作为驱动开发工具，是进行驱动开发必备条件之一，开发者可以使用该工具进行开发、调试、打包等操作。请[下载安装](https://developer.huawei.com/consumer/cn/download/)该工具，并参考[DevEco Studio使用指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-tools-overview)中的[创建工程及运行](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-create-new-project)进行基本的操作验证，保证DevEco Studio可正常运行。
+  DevEco Studio作为驱动开发工具，是进行驱动开发必备条件之一，开发者可以使用该工具进行开发、调试、打包等操作。请[下载安装](https://developer.huawei.com/consumer/cn/download/)该工具，并参考[DevEco Studio使用指南](/docs/tools/coding-debug/ide-tools-overview)中的[创建工程及运行](/docs/tools/coding-debug/ide-create-new-project)进行基本的操作验证，保证DevEco Studio可正常运行。
 * SDK版本配置：
 
   扩展外设管理提供的ArkTS接口，所需SDK版本为API16及以上才可使用。

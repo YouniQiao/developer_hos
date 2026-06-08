@@ -3,9 +3,10 @@ title: "智慧调优"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-ai-profiler
 format: md
+upstream_id: tools/ai-assist/ide-ai-profiler
+last_sync: 2026-06-07
+sync_hash: 729a0f1d
 ---
-
-
 # 智慧调优
 
 DevEco Studio的Profiler工具中已集成智慧调优能力，支持通过自然语言交互，分析并解释当前实例或项目中存在的性能问题，帮助开发者快速定位影响性能的具体原因。

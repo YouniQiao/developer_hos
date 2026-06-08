@@ -2,8 +2,10 @@
 title: "违规及侵权内容"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/xiaoyi-ime-designer/information-for-developers-0000001311531612/complaint-handling-rules-0000001364091489/lllegal-and-infringing-content-0000001311371976
+upstream_id: distribute/content-dist/xiaoyi-ime-designer/information-for-developers-0000001311531612/complaint-handling-rules-0000001364091489/lllegal-and-infringing-content-0000001311371976
+last_sync: 2026-06-07
+sync_hash: 3cc1059f
 ---
-
 # 违规及侵权内容
 
 |  |  |

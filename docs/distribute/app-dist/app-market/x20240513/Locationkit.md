@@ -3,8 +3,10 @@ title: "华为定位服务协议"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x20240513/Locationkit
 format: md
+upstream_id: distribute/app-dist/app-market/x20240513/Locationkit
+last_sync: 2026-06-07
+sync_hash: d46716cb
 ---
-
 # 华为定位服务协议
 
 点击下载[华为定位服务协议](https://terms1.hicloud.com/agreementservice/developer/getAgreementTemplate?agrType=1166&country=cn&language=zh_cn&version=2021090805)

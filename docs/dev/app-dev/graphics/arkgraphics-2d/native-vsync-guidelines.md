@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "NativeVSync开发指导 (C/C++)"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/native-vsync-guidelines
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/native-vsync-guidelines
+last_sync: 2026-06-07
+sync_hash: ac627422
 ---
-
-
 ## 场景介绍
 
 NativeVSync模块用于获取系统VSync信号，提供OH\_NativeVSync实例的创建、销毁及设置VSync回调函数的功能。VSync信号触发时，将调用已设置的回调函数。

@@ -2,9 +2,10 @@
 title: "主动通知页面变化的场景"
 original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/proactively-notify-page-changes
 format: md
+upstream_id: dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/proactively-notify-page-changes
+last_sync: 2026-06-07
+sync_hash: 68422232
 ---
-
-
 ## 设计场景
 
 应用自定义的页面可以通过堆叠的方式覆盖在原页面上，实现页面切换的效果，但是系统无法自动识别到这种场景，可能会导致焦点丢失。此时，应用可以调用主动通知页面变化的接口，通知屏幕朗读在新页面上寻找节点聚焦。该接口支持指定新页面的根节点，如果指定了有效的根节点，则从该根节点开始找首焦点聚焦，如果未指定，则默认从当前窗口根节点开始找首焦点聚焦。

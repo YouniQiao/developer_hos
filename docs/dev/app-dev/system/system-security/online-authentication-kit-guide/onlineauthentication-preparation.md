@@ -2,9 +2,10 @@
 title: "开发准备"
 original_url: /docs/dev/app-dev/system/system-security/online-authentication-kit-guide/onlineauthentication-preparation
 format: md
+upstream_id: dev/app-dev/system/system-security/online-authentication-kit-guide/onlineauthentication-preparation
+last_sync: 2026-06-07
+sync_hash: ff5b4ed9
 ---
-
-
 ## FIDO开发准备
 
 开发者的业务需要接入符合FIDO UAF标准的协议，并部署符合FIDO UAF标准协议的FIDO服务端。FIDO网址：https://fidoalliance.org/ （见[网站链接免责声明](/docs/dev/app-dev/system/system-security/online-authentication-kit-guide/onlineauthentication-website-disclaimer)）。

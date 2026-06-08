@@ -2,9 +2,10 @@
 title: "AddDeviceInfo"
 original_url: /docs/distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-adddeviceinfo-0000002236201314
 format: md
+upstream_id: distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-adddeviceinfo-0000002236201314
+last_sync: 2026-06-07
+sync_hash: fbd23753
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | deviceName | M | String(100) | 设备名称。 |

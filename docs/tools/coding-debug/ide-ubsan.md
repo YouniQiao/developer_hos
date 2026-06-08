@@ -3,9 +3,10 @@ title: "使用UBSan检测未定义行为"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-ubsan
 format: md
+upstream_id: tools/coding-debug/ide-ubsan
+last_sync: 2026-06-07
+sync_hash: dccc88e2
 ---
-
-
 # 使用UBSan检测未定义行为
 
 代码中出现未定义行为，最初可能不会产生任何问题，但是随着代码的复杂度提高，未定义行为可能造成程序崩溃或发生错误，检测出根源会变得更加困难。UBSan（Undefined Behavior Sanitizer）可以检测代码中出现的未定义行为，帮助用户清除未定义行为引起的运行时错误。

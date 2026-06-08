@@ -3,8 +3,10 @@ title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-caiwujiesuanfaq-0000001877196320
 format: md
+upstream_id: monetize/promotion/ads-caiwujiesuanfaq-0000001877196320
+last_sync: 2026-06-07
+sync_hash: 6def541e
 ---
-
 # FAQ
 
 ## 充值与开票

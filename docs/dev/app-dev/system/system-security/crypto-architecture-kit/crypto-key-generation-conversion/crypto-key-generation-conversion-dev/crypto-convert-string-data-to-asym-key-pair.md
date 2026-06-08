@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "指定PEM格式字符串数据转换非对称密钥对(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-convert-string-data-to-asym-key-pair
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-convert-string-data-to-asym-key-pair
+last_sync: 2026-06-07
+sync_hash: 76849bb9
+upstream_hash: 6da9be2fc835
 ---
-
 
 以RSA为例，根据指定的非对称密钥字符串数据，生成非对称密钥对（KeyPair）。
 

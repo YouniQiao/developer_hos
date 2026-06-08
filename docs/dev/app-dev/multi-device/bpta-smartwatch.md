@@ -3,6 +3,10 @@ title: "智能穿戴应用开发"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-smartwatch
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-smartwatch
+last_sync: 2026-06-07
+sync_hash: d23177f4
+upstream_hash: ac894c0e3cff
 ---
 
 # 智能穿戴应用开发
@@ -46,7 +50,7 @@ format: md
 
 ###相机硬件信息
 
-部分智能穿戴设备（如儿童智能表超新星 X系列产品）配置前置和后置摄像头，在进行摄像头相关开发时需要关注镜头安装角度和预览流旋转角度。相关定义可参考[相机镜头安装角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#相机镜头安装角度)和[预览旋转角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#预览旋转角度)。镜头参数可参考下表。
+部分智能穿戴设备（如儿童智能表超新星 X系列产品）配置前置和后置摄像头，在进行摄像头相关开发时需要关注镜头安装角度和预览流旋转角度。相关定义可参考[相机镜头安装角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#相机镜头安装角度)和[预览旋转角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#预览旋转角度)。镜头参数可参考下表。
 
 |  |  |  |  |  |
 | --- | --- | --- | --- | --- |
@@ -576,7 +580,7 @@ aboutToDisappear(): void {
 
 解决方案：智能穿戴使用WIFI无线调试（支持自动签名），调试规范如下：
 
-1. 调试模式：智能穿戴设备推荐使用WiFi无线调试（支持自动签名）。无线调试内容可参考[使用无线连接方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device#section9315596477)。
+1. 调试模式：智能穿戴设备推荐使用WiFi无线调试（支持自动签名）。无线调试内容可参考[使用无线连接方式](/docs/tools/coding-debug/ide-run-device#section9315596477)。
 2. 调试稳定性：设备熄屏后WiFi调试连接会断开，建议在系统设置中延长自动熄屏时间，确保调试过程稳定。
 3. 设备授权：首次调试时，手表将弹出“信任设备”提示，需点击“信任”以允许IDE连接。
 

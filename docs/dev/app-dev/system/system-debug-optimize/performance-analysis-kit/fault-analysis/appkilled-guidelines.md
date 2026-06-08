@@ -2,9 +2,10 @@
 title: "App Killed（应用终止）检测"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appkilled-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appkilled-guidelines
+last_sync: 2026-06-07
+sync_hash: 0c709336
 ---
-
-
 ## 简介
 
 应用闪退指应用在使用过程中突然异常终止。当应用行为异常，比如消耗过多CPU、内存等系统资源时，系统为了保持整机健康状态，会按照规则挑选应用进行管控，通常通过服务进程向应用发送SIGKILL信号（信号值是9）来实施终止的。操作系统对SIGKILL的默认行为是不生成栈日志等维测信息的，导致应用闪退时faultlogger中无日志。

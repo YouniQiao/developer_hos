@@ -2,9 +2,10 @@
 title: "开发者群组使用细则"
 original_url: /docs/dev/game-dev/games-developer-group-0000002552942120
 format: md
+upstream_id: dev/game-dev/games-developer-group-0000002552942120
+last_sync: 2026-06-07
+sync_hash: 695aaf60
 ---
-
-
 本文约定了开发者及其关联公司在使用华为数字商品及联运服务（以下简称“服务”）时，通过开发者群组使用服务和开展活动的具体规则。
 
 **一、定义**

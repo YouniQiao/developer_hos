@@ -2,9 +2,10 @@
 title: "接入支付服务"
 original_url: /docs/dev/atomic-dev/ascf/develop-open-capabilities/develop-payment-access
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-open-capabilities/develop-payment-access
+last_sync: 2026-06-07
+sync_hash: e6bf9c7e
 ---
-
-
 ## 接入华为支付服务
 
 Payment Kit（华为支付服务）提供了方便、安全和快捷的支付方式，用户可在元服务内完成实物商品的购买并展示支付结果。

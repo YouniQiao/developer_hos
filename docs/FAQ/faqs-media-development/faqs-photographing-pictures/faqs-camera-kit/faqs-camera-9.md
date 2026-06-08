@@ -2,9 +2,10 @@
 format: md
 title: "如何实现相机关闭"
 original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-9
+upstream_id: FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-9
+last_sync: 2026-06-07
+sync_hash: 11f4cf2e
 ---
-
-
 实现相机关闭的参考代码如下：
 
 ```

@@ -2,7 +2,8 @@
 title: "如何收费"
 original_url: /docs/dev/game-dev/games-binary-optimization-pricing-0000002377148249
 format: md
+upstream_id: dev/game-dev/games-binary-optimization-pricing-0000002377148249
+last_sync: 2026-06-07
+sync_hash: 5fe38ebf
 ---
-
-
 目前服务处于免费阶段，期间华为承担服务器资源开销。后续如有政策调整，将会提前两个月通知，您可放心使用。

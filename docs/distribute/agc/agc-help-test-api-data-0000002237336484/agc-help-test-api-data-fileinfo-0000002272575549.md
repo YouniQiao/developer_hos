@@ -2,9 +2,10 @@
 title: "FileInfo"
 original_url: /docs/distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-fileinfo-0000002272575549
 format: md
+upstream_id: distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-fileinfo-0000002272575549
+last_sync: 2026-06-07
+sync_hash: 4bbb42f2
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | fileName | M | String(255) | 文件名称，包括文件的后缀名。 |

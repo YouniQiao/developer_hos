@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "数字商品服务器支持证书"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-19
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-19
+last_sync: 2026-06-07
+sync_hash: 3a96c3a7
 ---
-
-
 数字商品服务器内置了如下92个证书，请检查开发者证书链，确保证书链的完整性，同时确保证书链中的证书在数字商品服务器支持证书表格中。
 
 | # | Alias name | Subject DN | Issuer DN | Certificate Serial Number | Version | Valid From [GMT] | Valid To [GMT] | Thumbprint(SHA1) |

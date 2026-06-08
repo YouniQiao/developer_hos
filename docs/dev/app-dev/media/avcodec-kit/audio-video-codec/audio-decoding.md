@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "音频解码"
 original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/audio-decoding
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/audio-video-codec/audio-decoding
+last_sync: 2026-06-07
+sync_hash: 7288ab5a
 ---
-
-
 开发者可以调用本模块的Native API接口，完成音频解码，即将媒体数据解码为PCM码流。
 
 当前支持的解码能力请参考[AVCodec支持的格式](/docs/dev/app-dev/media/avcodec-kit/avcodec-support-formats#音频解码)。

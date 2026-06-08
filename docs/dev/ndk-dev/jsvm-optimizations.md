@@ -2,9 +2,10 @@
 title: "JSVM通用调优实践"
 original_url: /docs/dev/ndk-dev/jsvm-optimizations
 format: md
+upstream_id: dev/ndk-dev/jsvm-optimizations
+last_sync: 2026-06-07
+sync_hash: 952f5c1f
 ---
-
-
 ## JSVM调用结构
 
 小程序使用JSVM执行JS代码的过程可以分为 Native，JSVM-API，JSVM 三层：

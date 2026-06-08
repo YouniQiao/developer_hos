@@ -3,9 +3,10 @@ title: "@typescript-eslint/prefer-for-of"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_prefer-for-of
 format: md
+upstream_id: tools/coding-debug/ide_prefer-for-of
+last_sync: 2026-06-07
+sync_hash: 69f24215
 ---
-
-
 # @typescript-eslint/prefer-for-of
 
 强制使用“for-of”循环而不是标准“for”循环。

@@ -2,9 +2,10 @@
 title: "使用ECC压缩/非压缩公钥格式转换(C/C++)"
 original_url: /docs/dev/app-dev/system/crypto-convert-compressed-or-uncompressed-ecc-pubkey-ndk
 format: md
+upstream_id: dev/app-dev/system/crypto-convert-compressed-or-uncompressed-ecc-pubkey-ndk
+last_sync: 2026-06-07
+sync_hash: adb02d00
 ---
-
-
 可通过指定ECC公钥数据生成公钥对象（[PubKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-cryptoasymkeyapi-oh-cryptopubkey)），也可从公钥对象中获取ECC公钥数据。
 
 当前仅支持满足X509规范的ECC算法的压缩或非压缩格式的完整公钥数据。此处的公钥数据应当是完整的X509公钥，对于仅使用点数据的情况，请参考[使用ECC压缩/非压缩点格式转换](/docs/dev/app-dev/system/crypto-convert-compressed-or-uncompressed-ecc-point)。

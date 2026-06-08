@@ -2,9 +2,10 @@
 format: md
 title: "下载HarmonyOS SDK时提示网络连接错误"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-4
+upstream_id: FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-4
+last_sync: 2026-06-07
+sync_hash: f00afdef
 ---
-
-
 **问题现象**
 
 网络连接正常，但下载HarmonyOS SDK时提示网络连接错误。

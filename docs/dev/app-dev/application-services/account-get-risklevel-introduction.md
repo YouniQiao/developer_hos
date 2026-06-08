@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "概述"
 original_url: /docs/dev/app-dev/application-services/account-get-risklevel-introduction
 format: md
+upstream_id: dev/app-dev/application-services/account-get-risklevel-introduction
+last_sync: 2026-06-07
+sync_hash: f02ddc4d
 ---
-
-
 当应用需要获取用户风险等级时，可使用Account Kit提供的获取用户风险等级能力，用于以下恶意场景识别：
 
 1. 应用登录风控场景：应用使用华为账号关联登录时，获取华为账号风险等级，对高风险等级账号进行风控，提升应用的安全等级。

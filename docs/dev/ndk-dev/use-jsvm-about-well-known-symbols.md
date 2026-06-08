@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口进行Well-known symbols相关开发"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-well-known-symbols
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-well-known-symbols
+last_sync: 2026-06-07
+sync_hash: 34d4c26e
 ---
-
-
 ## 简介
 
 JSVM-API中Well-known symbols相关接口可以通过不同API直接获取对应的11个Well-known symbols。

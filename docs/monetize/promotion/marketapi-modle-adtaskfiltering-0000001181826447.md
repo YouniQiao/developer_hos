@@ -3,8 +3,10 @@ title: "AdTaskFiltering"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-adtaskfiltering-0000001181826447
 format: md
+upstream_id: monetize/promotion/marketapi-modle-adtaskfiltering-0000001181826447
+last_sync: 2026-06-07
+sync_hash: b27b4b62
 ---
-
 # AdTaskFiltering
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |

@@ -2,9 +2,10 @@
 title: "随机生成非对称密钥对(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-generate-asym-key-pair-randomly
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-generate-asym-key-pair-randomly
+last_sync: 2026-06-07
+sync_hash: 359edfb7
 ---
-
-
 以RSA和SM2为例，随机生成非对称密钥对（KeyPair），并获得二进制数据。
 
 非对称密钥对可用于后续加解密等操作，二进制数据可用于存储或传输。

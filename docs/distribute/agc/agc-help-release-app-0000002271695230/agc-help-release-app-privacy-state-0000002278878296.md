@@ -2,9 +2,10 @@
 title: "配置隐私声明"
 original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-privacy-state-0000002278878296
 format: md
+upstream_id: distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-privacy-state-0000002278878296
+last_sync: 2026-06-07
+sync_hash: 1ef7b912
 ---
-
-
 发布应用时，您需要提供隐私政策，便于用户了解应用的数据收集和使用情况。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。

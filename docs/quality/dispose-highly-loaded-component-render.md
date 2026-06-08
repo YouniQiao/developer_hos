@@ -1,8 +1,10 @@
 ---
 title: "高负载场景分帧渲染"
 original_url: /docs/quality/dispose-highly-loaded-component-render
+upstream_id: /docs/quality/dispose-highly-loaded-component-render
+last_sync: 2026-06-07
+sync_hash: da732367
 ---
-
 # 高负载场景分帧渲染
 
 ## 概述
@@ -90,7 +92,7 @@ export struct TransitionScene {
 * 上图是运行DevEco Studio中的Profiler工具结果Trace图，针对Frame运行的性能分析泳道。
 * Actual TimeLane：橙色块235970为页面渲染第一帧的过程，橙色块235972为渲染第二帧的过程。
 * Slice Details：应用渲染每帧的情况，Duration代表渲染此帧的耗时。如上图所示，第一帧耗时21ms，第二帧耗时4ms。
-* Trace图帧分析详情请参考：[Frame分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-frame)。
+* Trace图帧分析详情请参考：[Frame分析](/docs/tools/coding-debug/ide-insight-session-frame)。
 
 ### 优化代码
 

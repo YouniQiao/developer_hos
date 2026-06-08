@@ -3,10 +3,10 @@ title: "接入开屏广告"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_sdk-open-screen-0000001398053709
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_andriod_sdk-open-screen-0000001398053709
+last_sync: 2026-06-07
+sync_hash: f782005e
 ---
-
-
-
 #### 创建AdsContext对象
 
 ```

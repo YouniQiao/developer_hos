@@ -2,9 +2,10 @@
 format: md
 title: "Navigation自定义标题栏不生效，可能是什么原因"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-399
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-399
+last_sync: 2026-06-07
+sync_hash: 3f724178
 ---
-
-
 **问题描述**
 
 使用Navigation时，自定义标题栏布局，使用其中的title方法无效。

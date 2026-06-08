@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用ImagePacker完成多图对象编码"
 original_url: /docs/dev/app-dev/media/image-kit/image-arkts-dev/image-encoding-arts/image-picture-encoding
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-arkts-dev/image-encoding-arts/image-picture-encoding
+last_sync: 2026-06-07
+sync_hash: 42efdda1
 ---
-
-
 图片编码指将[Picture](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-picture)对象编码成不同格式的图片文件（当前仅支持编码为JPEG 和 HEIF 格式），用于后续处理，如保存、传输等。
 
 ## 开发步骤

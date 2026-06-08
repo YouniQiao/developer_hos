@@ -2,8 +2,11 @@
 title: "JSVM-API典型使用场景指导"
 original_url: /docs/dev/ndk-dev/jsvm-scenarios
 format: md
+upstream_id: dev/ndk-dev/jsvm-scenarios
+last_sync: 2026-06-07
+sync_hash: d7dbde04
+upstream_hash: 340b4c7253a0
 ---
-
 
 * **[JSVM-API调试&定位](/docs/dev/ndk-dev/jsvm-debugger-cpuprofiler-heapsnapshot)**
 * **[使用JSVM-API接口进行Trace相关开发](/docs/dev/ndk-dev/use-jsvm-about-trace)**

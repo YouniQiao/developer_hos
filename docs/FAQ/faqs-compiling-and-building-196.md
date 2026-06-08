@@ -2,9 +2,10 @@
 format: md
 title: "Deveco Studio中Cmake编译选项的优先级说明"
 original_url: /docs/FAQ/faqs-compiling-and-building-196
+upstream_id: FAQ/faqs-compiling-and-building-196
+last_sync: 2026-06-07
+sync_hash: 2541f77f
 ---
-
-
 1. 常见的Cmake编译选项如下：
    * Cmakelists.txt中通过CACHE FORCE设置的参数。
    * Cmakelists.txt中缓存的变量。

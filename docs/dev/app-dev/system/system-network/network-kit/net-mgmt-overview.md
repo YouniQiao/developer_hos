@@ -2,9 +2,10 @@
 title: "Network Kit简介"
 original_url: /docs/dev/app-dev/system/system-network/network-kit/net-mgmt-overview
 format: md
+upstream_id: dev/app-dev/system/system-network/network-kit/net-mgmt-overview
+last_sync: 2026-06-07
+sync_hash: 1efa8255
 ---
-
-
 Network Kit（网络服务）主要提供以下功能：
 
 * [HTTP数据请求](/docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/http-request)：通过HTTP发起一个数据请求。
@@ -17,7 +18,7 @@ Network Kit（网络服务）主要提供以下功能：
 
 Network Kit支持模拟器，但与真机存在差异，具体差异如下。
 
-* 通用差异：详情请参见“[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification#section1227613205203)”。
+* 通用差异：详情请参见“[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification#section1227613205203)”。
 * 模拟器不支持VPN功能。
 
 ## 约束与限制

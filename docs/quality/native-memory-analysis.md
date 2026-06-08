@@ -2,9 +2,10 @@
 title: "分析native内存"
 original_url: /docs/quality/native-memory-analysis
 format: md
+upstream_id: /docs/quality/native-memory-analysis
+last_sync: 2026-06-07
+sync_hash: 389d57b1
 ---
-
-
 # 分析native内存
 
 本文Native内存指的主要是代码中通过malloc、new、realloc、calloc函数申请的堆内存和通过mmap映射内存地址空间，Native内存是进程内存中占比较高，也是容易出泄漏问题的一种内存。分析Native内存分布与占用问题需要借助工具，以及一些测试，分析技巧。DevEco Studio Profiler插件的Allocation模板，通过对基础库的malloc，free等函数进行插桩记录，可以抓取Native内存分配释放记录，包括大小和堆栈等数据，用以分析native内存的占用问题。

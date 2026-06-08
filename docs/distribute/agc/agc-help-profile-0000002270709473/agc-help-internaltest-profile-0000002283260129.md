@@ -2,9 +2,10 @@
 title: "申请指定设备发布Profile"
 original_url: /docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-internaltest-profile-0000002283260129
 format: md
+upstream_id: distribute/agc/agc-help-profile-0000002270709473/agc-help-internaltest-profile-0000002283260129
+last_sync: 2026-06-07
+sync_hash: d0ba59c8
 ---
-
-
 ![](../img/agc-help-internaltest-profile-0000002283260129_0.png)
 
 申请ACL权限的入口已调整至项目下的“ACL权限”页签，创建Profile时仅支持添加已获取的ACL权限。如需使用ACL权限，请先参考[申请ACL权限](/docs/distribute/agc/agc-help-acl-0000002427651937/agc-help-apply-acl-0000002394212138)获取ACL权限，再创建Profile。

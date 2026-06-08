@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取Push Token"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token
+last_sync: 2026-06-07
+sync_hash: 7d920ccb
 ---
-
-
 ## 场景介绍
 
 ![](./img/b33ab264.png)

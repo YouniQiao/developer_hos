@@ -2,8 +2,11 @@
 title: "组合场景"
 original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-multicomponent
 format: md
+upstream_id: dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-multicomponent
+last_sync: 2026-06-07
+sync_hash: 29fddf45
+upstream_hash: 71b2e6db489d
 ---
-
 
 ## 设计场景
 

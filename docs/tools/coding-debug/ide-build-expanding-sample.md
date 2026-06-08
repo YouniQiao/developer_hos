@@ -3,9 +3,10 @@ title: "API使用示例"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-build-expanding-sample
 format: md
+upstream_id: tools/coding-debug/ide-build-expanding-sample
+last_sync: 2026-06-07
+sync_hash: 2f9d3ee7
 ---
-
-
 # API使用示例
 
 示例：在工程级hvigorfile.ts文件中分别注册工程级与模块级任务。

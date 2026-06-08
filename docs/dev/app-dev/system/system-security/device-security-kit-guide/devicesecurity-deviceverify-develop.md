@@ -2,9 +2,10 @@
 title: "应用设备状态检测"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-deviceverify-develop
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-deviceverify-develop
+last_sync: 2026-06-07
+sync_hash: d35ec449
 ---
-
-
 ## 场景介绍
 
 应用通过调用Device Security Kit的getDeviceToken接口获取到DeviceToken，应用的服务器使用DeviceToken到Device Security服务器查询和管理应用在该设备的使用状态，应用在无法获取到持久化设备标识的情况下也可以对设备的应用状态进行记录和查询。

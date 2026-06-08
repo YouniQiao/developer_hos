@@ -2,9 +2,10 @@
 title: "应用共享目录配置"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/share-app-file-configuration
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/app-file/share-app-file-configuration
+last_sync: 2026-06-07
+sync_hash: d4ff24a1
 ---
-
-
 从API version 23开始，系统新增支持共享目录配置功能。在[应用文件分享](/docs/dev/app-dev/application-framework/core-file-kit/app-file/share-app-file)场景中，开发者可配置共享目录范围，防止应用敏感数据泄露。
 
 ## 开发步骤

@@ -2,9 +2,10 @@
 title: "管理应用窗口（Stage模型）"
 original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/application-window-stage
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/window-manager/application-window-stage
+last_sync: 2026-06-07
+sync_hash: 397e7d2e
 ---
-
-
 ## 基本概念
 
 * 窗口沉浸式能力：指对状态栏、导航栏等系统窗口进行控制，减少状态栏导航栏等系统界面的突兀感，从而使用户获得最佳体验的能力。沉浸式能力只在应用主窗口作为全屏窗口时生效。通常情况下，应用的辅助窗口（子窗、全局悬浮窗等）和处于自由窗口下的应用主窗口无法使用沉浸式能力。

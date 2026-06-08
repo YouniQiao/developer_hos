@@ -2,9 +2,10 @@
 title: "聚合查询运动健康采样数据"
 original_url: /docs/dev/atomic-dev/health-app-dev-as/health-samplepoint-manage-as
 format: md
+upstream_id: dev/atomic-dev/health-app-dev-as/health-samplepoint-manage-as
+last_sync: 2026-06-07
+sync_hash: 14b5c51c
 ---
-
-
 ## 场景介绍
 
 运动健康采样数据，表示在某时刻（或一段时间）采集到的特定数据类型的样本，由时间、样本值及采样的数据源组成，支持聚合查询。

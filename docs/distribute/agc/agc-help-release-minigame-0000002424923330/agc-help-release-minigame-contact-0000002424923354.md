@@ -2,9 +2,10 @@
 title: "填写联系方式"
 original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-contact-0000002424923354
 format: md
+upstream_id: distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-contact-0000002424923354
+last_sync: 2026-06-07
+sync_hash: 716ff852
 ---
-
-
 若账号归属地为中国大陆，请填写小游戏负责人的联系方式，方便华为审核人员与您沟通小游戏上架的审核问题。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，选择待上架的小游戏。

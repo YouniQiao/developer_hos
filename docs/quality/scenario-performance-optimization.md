@@ -2,9 +2,10 @@
 title: "性能场景优化案例"
 original_url: /docs/quality/scenario-performance-optimization
 format: md
+upstream_id: /docs/quality/scenario-performance-optimization
+last_sync: 2026-06-07
+sync_hash: 1b409d10
 ---
-
-
 # 性能场景优化案例
 
 * **[界面渲染性能优化](/docs/quality/developing-high-performance-ui)**

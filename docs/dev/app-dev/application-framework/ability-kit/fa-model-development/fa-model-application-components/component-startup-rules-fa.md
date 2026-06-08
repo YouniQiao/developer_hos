@@ -2,9 +2,10 @@
 title: "组件启动规则（FA模型）"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/component-startup-rules-fa
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/component-startup-rules-fa
+last_sync: 2026-06-07
+sync_hash: 7c66e80c
 ---
-
-
 启动组件是指一切启动或连接应用组件的行为：
 
 * 启动PageAbility、ServiceAbility，如使用startAbility()等相关接口。

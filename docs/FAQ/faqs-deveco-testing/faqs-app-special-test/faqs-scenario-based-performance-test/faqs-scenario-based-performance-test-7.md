@@ -2,9 +2,10 @@
 format: md
 title: "卡顿率报了异常，丢帧卡顿次数为0，该如何理解"
 original_url: /docs/FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-scenario-based-performance-test/faqs-scenario-based-performance-test-7
+upstream_id: FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-scenario-based-performance-test/faqs-scenario-based-performance-test-7
+last_sync: 2026-06-07
+sync_hash: f701d567
 ---
-
-
 ![](./img/81d849d3.png "点击放大")
 
 卡顿率和丢帧的检测机制不同，没有必然联系，都需要关注。

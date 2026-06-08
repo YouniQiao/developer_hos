@@ -2,9 +2,10 @@
 title: "定时器"
 original_url: /docs/dev/atomic-dev/ascf/apis-basis/apis-timer
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-basis/apis-timer
+last_sync: 2026-06-07
+sync_hash: 863ecaaf
 ---
-
-
 ## setInterval
 
 setInterval(function callback, number delay, any rest): string

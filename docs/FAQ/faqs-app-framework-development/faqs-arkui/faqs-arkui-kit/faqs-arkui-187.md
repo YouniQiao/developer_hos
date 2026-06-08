@@ -2,9 +2,10 @@
 format: md
 title: "如何移除页面上Video组件"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-187
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-187
+last_sync: 2026-06-07
+sync_hash: 99f4f5dc
 ---
-
-
 **问题现象**
 
 ForEach刷新UI，数组中的Video组件移除了，但屏幕上还有之前的Video组件占着屏幕。

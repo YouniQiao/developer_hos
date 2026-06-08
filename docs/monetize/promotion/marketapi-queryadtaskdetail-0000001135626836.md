@@ -3,8 +3,10 @@ title: "推广任务详细信息查询"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-queryadtaskdetail-0000001135626836
 format: md
+upstream_id: monetize/promotion/marketapi-queryadtaskdetail-0000001135626836
+last_sync: 2026-06-07
+sync_hash: 903e9eeb
 ---
-
 # 推广任务详细信息查询
 
 ## 功能介绍

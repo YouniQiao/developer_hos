@@ -3,9 +3,10 @@ title: "卡片套装"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-preview-0000002396291182/themes-fa-spec-preview-detail-0000002396307148/themes-fa-spec-preview-detail3-0000002429946801
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-preview-0000002396291182/themes-fa-spec-preview-detail-0000002396307148/themes-fa-spec-preview-detail3-0000002429946801
+last_sync: 2026-06-07
+sync_hash: a6dadc86
 ---
-
-
 # 卡片套装
 
 <strong>样例图：</strong>

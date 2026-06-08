@@ -2,9 +2,10 @@
 title: "设置上架时间"
 original_url: /docs/distribute/agc/agc-help-release-atomic-0000002327731065/agc-help-release-atomic-review-time-0000002327731085
 format: md
+upstream_id: distribute/agc/agc-help-release-atomic-0000002327731065/agc-help-release-atomic-review-time-0000002327731085
+last_sync: 2026-06-07
+sync_hash: d8e74077
 ---
-
-
 #### 设置上架时间
 
 您可以选择让元服务审核通过后立即上架，也可以指定一个特定时间上架。

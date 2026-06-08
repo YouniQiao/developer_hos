@@ -3,9 +3,10 @@ title: "实用工具"
 displayed_sidebar: devecoTestingSidebar
 original_url: /docs/tools/deveco-testing/tool
 format: md
+upstream_id: tools/deveco-testing/tool
+last_sync: 2026-06-07
+sync_hash: 3b7cea18
 ---
-
-
 # 实用工具
 
 ![](./img/zh-cn_image_0000002503553988.png)

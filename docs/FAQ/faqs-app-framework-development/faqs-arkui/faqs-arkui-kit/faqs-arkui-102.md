@@ -2,9 +2,10 @@
 format: md
 title: "通过$r访问应用资源是否支持嵌套形式"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-102
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-102
+last_sync: 2026-06-07
+sync_hash: 015fcf98
 ---
-
-
 $r当前不支持嵌套。第二个参数需使用ResourceManager获取应用资源的字符串。参考代码如下：
 
 ```

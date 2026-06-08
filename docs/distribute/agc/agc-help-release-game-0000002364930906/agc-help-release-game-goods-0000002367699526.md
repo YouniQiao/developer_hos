@@ -2,9 +2,10 @@
 title: "配置应用内商品"
 original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-goods-0000002367699526
 format: md
+upstream_id: distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-goods-0000002367699526
+last_sync: 2026-06-07
+sync_hash: aea6f67b
 ---
-
-
 数字商品类型分为如下：
 
 | 商品类型 | 说明 |

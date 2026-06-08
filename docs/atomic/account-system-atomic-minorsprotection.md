@@ -2,9 +2,10 @@
 title: "元服务与系统联动切换未成年人模式"
 original_url: /docs/dev/atomic-dev/account-follow-atomic-minorsprotection/account-system-atomic-minorsprotection
 format: md
+upstream_id: dev/atomic-dev/account-follow-atomic-minorsprotection/account-system-atomic-minorsprotection
+last_sync: 2026-06-07
+sync_hash: 1fff1c17
 ---
-
-
 ## 场景介绍
 
 在未成年人模式下，元服务可通过以下两种方式获取系统未成年人模式状态，与系统未成年人模式进行联动：

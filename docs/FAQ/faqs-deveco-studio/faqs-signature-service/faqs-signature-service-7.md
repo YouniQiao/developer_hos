@@ -2,9 +2,10 @@
 format: md
 title: "DevEco Studio在登录授权时无法弹出浏览器窗口"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-7
+upstream_id: FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-7
+last_sync: 2026-06-07
+sync_hash: 442d937a
 ---
-
-
 **问题现象**
 
 在DevEco Studio中点击登录、帮助文档时，无法弹出浏览器窗口。

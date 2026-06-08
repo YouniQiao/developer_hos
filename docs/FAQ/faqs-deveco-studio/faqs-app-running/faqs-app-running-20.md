@@ -2,9 +2,10 @@
 format: md
 title: "模拟器在后台放置一段时间后会卡在加载状态，CPU占用率高"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-20
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-20
+last_sync: 2026-06-07
+sync_hash: 435d99a0
 ---
-
-
 **问题描述**
 
 ![](./img/4d2a9b2f.png)

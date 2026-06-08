@@ -2,9 +2,10 @@
 title: "查询当前状态场景"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-superprivacymode/devicesecurity-getsuperprivacymode
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-superprivacymode/devicesecurity-getsuperprivacymode
+last_sync: 2026-06-07
+sync_hash: 45c3e330
 ---
-
-
 ## 场景介绍
 
 从6.0.2(22)开始，新增了查询设备当前超级隐私模式状态的功能。

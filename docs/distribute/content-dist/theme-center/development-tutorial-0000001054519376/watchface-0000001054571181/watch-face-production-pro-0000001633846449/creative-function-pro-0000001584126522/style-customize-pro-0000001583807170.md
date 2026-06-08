@@ -3,8 +3,11 @@ title: "样式自定义"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/creative-function-pro-0000001584126522/style-customize-pro-0000001583807170
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/creative-function-pro-0000001584126522/style-customize-pro-0000001583807170
+last_sync: 2026-06-07
+sync_hash: 53d09346
+upstream_hash: 490d462d6669
 ---
-
 
 # 样式自定义
 

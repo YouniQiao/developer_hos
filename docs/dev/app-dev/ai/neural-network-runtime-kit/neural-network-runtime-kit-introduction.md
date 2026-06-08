@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Neural Network Runtime Kit简介"
 original_url: /docs/dev/app-dev/ai/neural-network-runtime-kit/neural-network-runtime-kit-introduction
 format: md
+upstream_id: dev/app-dev/ai/neural-network-runtime-kit/neural-network-runtime-kit-introduction
+last_sync: 2026-06-07
+sync_hash: 22e0f510
 ---
-
-
 ## 使用场景
 
 Neural Network Runtime（NNRt, 神经网络运行时）是面向AI领域的跨芯片推理计算运行时，作为中间桥梁连通上层AI推理框架和底层加速芯片，实现AI模型的跨芯片推理计算。

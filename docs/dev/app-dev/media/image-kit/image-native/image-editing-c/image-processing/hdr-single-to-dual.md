@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "单层HDR图片转换双层"
 original_url: /docs/dev/app-dev/media/image-kit/image-native/image-editing-c/image-processing/hdr-single-to-dual
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-native/image-editing-c/image-processing/hdr-single-to-dual
+last_sync: 2026-06-07
+sync_hash: f29ffe3f
 ---
-
-
 调用者可以调用本模块提供的[C API接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-imageprocessing)，实现Decompose单层HDR图片转双层HDR图片。
 
 该能力常用于图片分享中，如下图所示：

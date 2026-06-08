@@ -3,8 +3,10 @@ title: "授信账户"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-start-guest-recharge-credit-0000001379837545
 format: md
+upstream_id: monetize/promotion/bpos-start-guest-recharge-credit-0000001379837545
+last_sync: 2026-06-07
+sync_hash: 45a9bc1e
 ---
-
 # 授信账户
 
 ## 概述

@@ -2,8 +2,11 @@
 title: "ArkTS跨语言交互"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-cross-language-interaction
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-cross-language-interaction
+last_sync: 2026-06-07
+sync_hash: dbc7eefb
+upstream_hash: d3ed36e0221e
 ---
-
 
 除了支持使用ArkTS开发外，开发者还可以通过Node-API实现ArkTS与C/C++(Native)的跨语言交互能力。
 

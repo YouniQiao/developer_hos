@@ -3,9 +3,10 @@ title: "性能调优工具简介"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-insight-description
 format: md
+upstream_id: tools/coding-debug/ide-insight-description
+last_sync: 2026-06-07
+sync_hash: de56a350
 ---
-
-
 # 性能调优工具简介
 
 应用或元服务运行期间可能出现响应速度慢、动画播放不流畅、列表拖动卡顿、应用崩溃或耗电量过高、发烫、交互延迟等现象，这些现象表明应用或元服务可能存在性能问题。造成性能问题的原因可能是业务逻辑、应用代码对系统API的误用、对ArkTS对象的不合理持有导致内存泄漏等，引起对系统资源不合理使用，包括对CPU、内存、网络、文件、GPU以及其他外设器件的冗余占用，进而引发性能问题。

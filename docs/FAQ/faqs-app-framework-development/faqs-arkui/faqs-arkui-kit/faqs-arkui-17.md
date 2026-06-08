@@ -2,9 +2,10 @@
 format: md
 title: "如何实现Tabs页签导航栏切换时，下划线也随之滑动"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-17
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-17
+last_sync: 2026-06-07
+sync_hash: 4e4c851a
 ---
-
-
 可通过SubTabBarStyle子页签样式实现该效果，具体参考如下代码：
 
 ```

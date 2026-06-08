@@ -3,10 +3,10 @@ title: "AdAppInfo"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_api_if_adappinfo-0000001248246048
 format: md
+upstream_id: monetize/monetization/agd_pro_api_if_adappinfo-0000001248246048
+last_sync: 2026-06-07
+sync_hash: 3f0ac36a
 ---
-
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | appId | M | `String` | 应用AppID。 |

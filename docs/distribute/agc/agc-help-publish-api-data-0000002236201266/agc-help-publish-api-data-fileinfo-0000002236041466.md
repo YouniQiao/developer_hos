@@ -2,9 +2,10 @@
 title: "FileInfo"
 original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-fileinfo-0000002236041466
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-fileinfo-0000002236041466
+last_sync: 2026-06-07
+sync_hash: dff5dea9
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | deviceType | M | Integer(32) | 设备类型。  取值范围：   * 4：手机 * 5：平板 * 8：智慧屏 * 12：智能手表 * 14：运动手表 * 19：PC/2in1 |

@@ -1,8 +1,10 @@
 ---
 title: "Node-API开发规范"
 original_url: /docs/quality/stability-coding-standard-node
+upstream_id: /docs/quality/stability-coding-standard-node
+last_sync: 2026-06-07
+sync_hash: f0190040
 ---
-
 # Node-API开发规范
 
 ## 获取JS传入参数及其数量

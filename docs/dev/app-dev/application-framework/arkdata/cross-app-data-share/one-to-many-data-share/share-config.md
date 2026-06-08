@@ -2,9 +2,10 @@
 title: "应用间配置共享 (ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/cross-app-data-share/one-to-many-data-share/share-config
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/cross-app-data-share/one-to-many-data-share/share-config
+last_sync: 2026-06-07
+sync_hash: 62920bb8
 ---
-
-
 ## 场景介绍
 
 应用间配置共享通过集中管理公共配置信息，在不同应用间共享配置，提升协作效率。

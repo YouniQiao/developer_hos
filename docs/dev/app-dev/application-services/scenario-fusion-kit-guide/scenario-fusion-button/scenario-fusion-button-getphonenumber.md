@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "快速验证手机号Button"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-getphonenumber
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-getphonenumber
+last_sync: 2026-06-07
+sync_hash: e0d6bdc7
 ---
-
-
 ## 场景介绍
 
 快速验证手机号Button功能用于帮助开发者向用户发起手机号申请，应用在满足《[常见类型移动互联网应用程序必要个人信息范围规定](http://www.cac.gov.cn/2021-03/22/c_1617990997054277.htm)》（对第三方网站的内容，华为公司不承担任何责任）中使用手机号的必要业务场景，经用户同意后，应用可获取手机号，为用户提供相应服务（详见快速验证[场景介绍](/docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-phone/account-get-phonenumber#场景介绍)）。

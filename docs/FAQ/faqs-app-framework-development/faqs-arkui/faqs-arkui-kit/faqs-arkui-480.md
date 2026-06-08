@@ -2,9 +2,10 @@
 title: "如何实现护眼模式"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-480
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-480
+last_sync: 2026-06-07
+sync_hash: 1dd3c3d0
 ---
-
-
 **解决措施**
 
 当前实现护眼模式可以采用下面两种方式：

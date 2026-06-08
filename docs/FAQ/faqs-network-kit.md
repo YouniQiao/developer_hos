@@ -2,9 +2,10 @@
 format: md
 title: "网络（Network）"
 original_url: /docs/FAQ/faqs-network-kit
+upstream_id: FAQ/faqs-network-kit
+last_sync: 2026-06-07
+sync_hash: 7309d056
 ---
-
-
 * **[http网络请求中extraData支持的数据格式有哪些](/docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-1)**
 * **[http请求中response错误码返回6是什么意思](/docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-3)**
 * **[调用camera拍摄的照片如何上传到服务器](/docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-4)**

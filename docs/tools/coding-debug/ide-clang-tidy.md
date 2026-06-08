@@ -3,9 +3,10 @@ title: "Clang-Tidy代码检查"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-clang-tidy
 format: md
+upstream_id: tools/coding-debug/ide-clang-tidy
+last_sync: 2026-06-07
+sync_hash: c2ac1e67
 ---
-
-
 # Clang-Tidy代码检查
 
 DevEco Studio支持通过内置的Clang-Tidy对C/C++代码进行静态检查，以及支持配置检查规则，帮助开发者快速发现C++编码的问题。

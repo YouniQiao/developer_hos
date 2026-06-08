@@ -2,9 +2,10 @@
 title: "Web组件概述"
 original_url: /docs/dev/atomic-dev/atomic-web-development/atomicserviceweb-guidelines
 format: md
+upstream_id: dev/atomic-dev/atomic-web-development/atomicserviceweb-guidelines
+last_sync: 2026-06-07
+sync_hash: b9f95ef4
 ---
-
-
 ![](./img/458b4c19.png)
 
 除海外元服务可以使用ArkWeb外，其他场景的元服务内只能使用AtomicServiceEnhancedWeb组件，不允许使用ArkWeb。请您务必使用AtomicServiceEnhancedWeb开发元服务，避免上架被拦截。

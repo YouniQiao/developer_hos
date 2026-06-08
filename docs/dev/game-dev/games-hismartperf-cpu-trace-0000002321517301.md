@@ -2,9 +2,10 @@
 title: "CPU trace"
 original_url: /docs/dev/game-dev/games-hismartperf-cpu-trace-0000002321517301
 format: md
+upstream_id: dev/game-dev/games-hismartperf-cpu-trace-0000002321517301
+last_sync: 2026-06-07
+sync_hash: 62009902
 ---
-
-
 CPU trace展示CPU调度、频点、进程线程时间片、绘帧、perf等数据的性能功耗，展示方式为泳道图，支持图形用户界面GUI操作、分析数据。
 
 ![](./img/b5a7083c.png)

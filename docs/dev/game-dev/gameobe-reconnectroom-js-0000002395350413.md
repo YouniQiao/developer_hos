@@ -2,9 +2,10 @@
 title: "掉线重连"
 original_url: /docs/dev/game-dev/gameobe-reconnectroom-js-0000002395350413
 format: md
+upstream_id: dev/game-dev/gameobe-reconnectroom-js-0000002395350413
+last_sync: 2026-06-07
+sync_hash: f3ecfd5c
 ---
-
-
 在游戏过程中，因操作不当、网络状况不佳等原因，可能会导致意外掉线的情况，玩家可通过掉线重连方式重新进入原队伍/房间。
 
 ## 前提条件

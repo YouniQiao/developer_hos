@@ -3,8 +3,10 @@ title: 工具栏
 sidebar_label: 工具栏
 original_url: /docs/design/components/control-components/toolbar
 format: md
+upstream_id: design/components/control-components/toolbar
+last_sync: 2026-06-07
+sync_hash: fbcb65ba
 ---
-
 # 工具栏
 
 工具栏用于展示针对当前界面的操作选项。开发相关描述请参考 [Navigation/ToolBarItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#toolbarconfiguration10) 文档和高级组件 [ToolBar](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-toolbar) 文档。

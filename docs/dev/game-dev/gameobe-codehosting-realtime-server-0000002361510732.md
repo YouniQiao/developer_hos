@@ -2,9 +2,10 @@
 title: "托管代码到实时服务器"
 original_url: /docs/dev/game-dev/gameobe-codehosting-realtime-server-0000002361510732
 format: md
+upstream_id: dev/game-dev/gameobe-codehosting-realtime-server-0000002361510732
+last_sync: 2026-06-07
+sync_hash: 9ea48e75
 ---
-
-
 代码开发及本地调试完成后，需将代码托管到联机对战的实时服务器上。同时，在实时服务器的运行过程中，您还可以随时在AGC控制台查看服务器的运行日志。
 
 ## 上传代码到实时服务器

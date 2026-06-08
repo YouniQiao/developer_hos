@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "基础绘制效果（C/C++）"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/drawing-effect/basic-drawing-effect-c
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/drawing-effect/basic-drawing-effect-c
+last_sync: 2026-06-07
+sync_hash: 4e29bdf0
 ---
-
-
 ## 场景介绍
 
 在进行绘制时，可以进行一些基础效果的设置，比如设置填充颜色、设置抗锯齿、设置图形描边、设置图形线条连接样式等。

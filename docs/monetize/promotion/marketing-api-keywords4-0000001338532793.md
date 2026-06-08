@@ -3,8 +3,10 @@ title: "否定词绑定计划或任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-keywords4-0000001338532793
 format: md
+upstream_id: monetize/promotion/marketing-api-keywords4-0000001338532793
+last_sync: 2026-06-07
+sync_hash: 5b6dee9a
 ---
-
 # 否定词绑定计划或任务
 
 您通过本接口可以将否定词对计划和任务进行绑定。

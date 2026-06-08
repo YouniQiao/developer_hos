@@ -2,9 +2,10 @@
 format: md
 title: "如何修改代码工程所支持的C++语言版本"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-9
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-9
+last_sync: 2026-06-07
+sync_hash: 71a0a7c2
 ---
-
-
 **问题详情**
 
 如何修改C++语言版本？当前支持的C++标准有哪些？

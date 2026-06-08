@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "扩展屏投播开发指导"
 original_url: /docs/dev/app-dev/media/avsession-kit/distributed-avsession/distributed-playback/avsession-extended-screen
 format: md
+upstream_id: dev/app-dev/media/avsession-kit/distributed-avsession/distributed-playback/avsession-extended-screen
+last_sync: 2026-06-07
+sync_hash: eee7f044
 ---
-
-
 通过本节开发指导，可在系统镜像投屏后，获取投屏设备信息，实现扩展屏模式的投播，实现双屏协作的能力。
 
 ## 运作机制

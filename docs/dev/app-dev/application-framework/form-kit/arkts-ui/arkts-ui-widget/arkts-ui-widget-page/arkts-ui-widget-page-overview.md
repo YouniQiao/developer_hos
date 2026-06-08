@@ -2,9 +2,10 @@
 title: "ArkTS卡片界面开发概述"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-page/arkts-ui-widget-page-overview
 format: md
+upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-page/arkts-ui-widget-page-overview
+last_sync: 2026-06-07
+sync_hash: 59185060
 ---
-
-
 ArkTS卡片开发采用通用[ArkTS语言](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/learning-arkts)，开发者可以使用[ArkTS声明式开发范式](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-development-overview)开发ArkTS卡片页面。
 
 如下卡片页面由DevEco Studio模板自动生成，开发者可以根据自身的业务场景进行调整。

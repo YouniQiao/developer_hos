@@ -3,8 +3,10 @@ title: "修改定向包"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-targeting3-0000001286183190
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-targeting3-0000001286183190
+last_sync: 2026-06-07
+sync_hash: 56189c8e
 ---
-
 # 修改定向包
 
 您通过本接口可以修改定向包。

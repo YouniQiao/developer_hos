@@ -2,8 +2,11 @@
 title: "Function Flow Runtime串行队列(C)"
 original_url: /docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-c/ffrt-concurrency-serial-queue-c
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-c/ffrt-concurrency-serial-queue-c
+last_sync: 2026-06-07
+sync_hash: ee5af532
+upstream_hash: bb96dfd8dc37
 ---
-
 
 ## 概述
 

@@ -3,9 +3,10 @@ title: "原生元服务"
 sidebar_position: 1
 format: md
 original_url: /docs/dev/release-notes/overview
+upstream_id: dev/release-notes/overview
+last_sync: 2026-06-07
+sync_hash: 10e22630
 ---
-
-
 # 什么是元服务
 
 > **注意**

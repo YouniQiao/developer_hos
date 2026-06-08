@@ -3,8 +3,10 @@ title: 简洁高级
 sidebar_label: 简洁高级
 original_url: /docs/design/atomic-service-design/design-principles/concise
 format: md
+upstream_id: design/atomic-service-design/design-principles/concise
+last_sync: 2026-06-07
+sync_hash: d1bdf027
 ---
-
 # 简洁高级
 
 ### 可视愉悦，界面平衡

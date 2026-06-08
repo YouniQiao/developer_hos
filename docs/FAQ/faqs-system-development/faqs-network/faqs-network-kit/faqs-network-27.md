@@ -2,9 +2,10 @@
 format: md
 title: "http请求执行的线程是否可控"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-27
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-27
+last_sync: 2026-06-07
+sync_hash: ac1da570
 ---
-
-
 **问题现象**
 
 三方应用发起http请求时，其执行任务的线程是否可控？

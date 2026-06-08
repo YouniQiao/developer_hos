@@ -2,9 +2,10 @@
 title: "applySync/flushUpdates/flushUIUpdates接口：同步刷新"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-applysync-flushupdates-flushuiupdates
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-applysync-flushupdates-flushuiupdates
+last_sync: 2026-06-07
+sync_hash: f22c47b9
 ---
-
-
 为了实现状态管理V2与[animateTo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#animateto)等动效的同步刷新，开发者可以使用[applySync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#applysync22)、[flushUpdates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#flushupdates22)或[flushUIUpdates](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#flushuiupdates22)接口。
 
 ![](./img/2974ec6c.png)

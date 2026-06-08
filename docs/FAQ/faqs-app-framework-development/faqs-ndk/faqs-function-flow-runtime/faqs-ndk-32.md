@@ -2,9 +2,10 @@
 title: "如何在Native侧调用ArkTS侧异步方法，并获取异步计算结果到Native侧"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-32
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-32
+last_sync: 2026-06-07
+sync_hash: 76f5e7a7
 ---
-
-
 该场景可以通过在Native侧获取ArkTS侧的Promise对象来实现。具体步骤如下：
 
 * ArkTS侧实现：

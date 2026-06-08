@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用AES-WRAP算法对对称密钥加解密(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-aes-wrap-encrypt-decrypt-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-aes-wrap-encrypt-decrypt-ndk
+last_sync: 2026-06-07
+sync_hash: 2d8c48a2
 ---
-
-
 从API version 22开始，算法库支持使用该算法进行加密和解密操作。
 
 请查看[AES-WRAP加解密算法规格](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-spec/crypto-sym-encrypt-decrypt-spec#aes-wrap)。

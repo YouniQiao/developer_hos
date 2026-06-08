@@ -2,9 +2,10 @@
 title: "检查测试手机设置"
 original_url: /docs/distribute/agc/agc-help-poi-own-real-phone-testing-0000002382896597/agc-help-check-test-phone-settings-0000002408164645
 format: md
+upstream_id: distribute/agc/agc-help-poi-own-real-phone-testing-0000002382896597/agc-help-check-test-phone-settings-0000002408164645
+last_sync: 2026-06-07
+sync_hash: f033930f
 ---
-
-
 测试近场服务之前需要您开启手机相关权限，并且添加“小艺建议”到桌面，以便接收近场测试推送内容。
 
 1. 根据应用类型以及应用或元服务上架情况进行相应处理。

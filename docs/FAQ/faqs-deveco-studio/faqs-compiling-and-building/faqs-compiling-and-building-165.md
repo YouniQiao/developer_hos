@@ -2,8 +2,11 @@
 format: md
 title: "编译报错“In FormExtensionAbility, metadata must contain an object with its name set to 'ohos.extension.form' and resource set to a second-level resource reference.”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-165
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-165
+last_sync: 2026-06-07
+sync_hash: 5e4e3af8
+upstream_hash: c9781098d002
 ---
-
 
 **错误描述**
 

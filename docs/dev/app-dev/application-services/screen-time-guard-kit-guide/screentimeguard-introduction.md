@@ -3,16 +3,17 @@ displayed_sidebar: appDevSidebar
 title: "Screen Time Guard Kit简介"
 original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-introduction
 format: md
+upstream_id: dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-introduction
+last_sync: 2026-06-07
+sync_hash: 5c6f974c
 ---
-
-
 在应用安全隐私保护前提下，为开发者提供屏幕使用时间管控、应用使用限制等开放能力，满足不同用户对时间管理多样化诉求，更好的服务终端用户。
 
 ## 能力介绍
 
 [用户授权管理](/docs/dev/app-dev/application-services/screentimeguard-interface-call-auth-overview)：用来管理用户的授权信息，分别为请求用户授权访问，取消授权访问，授权情况查询。
 
-[应用选择页](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/screentimeguard-app-picker-overview)：提供接口拉起具有不同功能的半模态页面，用户可在页面中勾选想进行管理的应用、快速跳转到其它应用。
+[应用选择页](/docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-app-picker-pages/screentimeguard-app-picker-overview)：提供接口拉起具有不同功能的半模态页面，用户可在页面中勾选想进行管理的应用、快速跳转到其它应用。
 
 [守护策略管理](/docs/dev/app-dev/application-services/screentimeguard-guard-strategy-manage-overview)：提供接口实现时间策略的添加、修改、查询、删除、启动和停止操作。
 
@@ -43,4 +44,4 @@ guard strategy：守护策略，分为起止时间策略、总时长策略和共
 
 本Kit支持模拟器。
 
-模拟器与真机存在通用差异，详情请参见“[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification)”。
+模拟器与真机存在通用差异，详情请参见“[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification)”。

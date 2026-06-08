@@ -3,8 +3,10 @@ title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-intelligent-subcontract-faq-0000001284808804
 format: md
+upstream_id: monetize/promotion/bp-functions-intelligent-subcontract-faq-0000001284808804
+last_sync: 2026-06-07
+sync_hash: e8cd62dd
 ---
-
 # FAQ
 
 ## 为什么智能分包渠道乱码，非设置的渠道号？

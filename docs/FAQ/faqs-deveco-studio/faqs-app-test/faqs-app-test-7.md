@@ -2,9 +2,10 @@
 format: md
 title: "命令行方式执行Instrument Test堆栈路径打印错误"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-7
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-7
+last_sync: 2026-06-07
+sync_hash: a5c5849e
 ---
-
-
 **问题现象**
 
 在5.0.3.400版本下，通过命令行执行Instrument Test，堆栈信息中的文件路径和位置有误，出现“|”而不是“/”，升级到5.0.3.401及以上版本仍然有误。

@@ -2,9 +2,10 @@
 format: md
 title: "并行编译多个大型Hap/Hsp模块可能会导致DevEco Studio闪退"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-193
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-193
+last_sync: 2026-06-07
+sync_hash: e4018f95
 ---
-
-
 **问题现象**
 
 当应用包含了多个Hap/Hsp，每个模块的代码量都是100万行级别，直接点击DevEco Studio的构建（点击Build然后点击Build Hap(s)/APP(s)）之后DevEco Studio工具出现闪退。

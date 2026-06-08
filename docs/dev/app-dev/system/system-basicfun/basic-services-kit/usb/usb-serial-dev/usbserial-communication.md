@@ -2,9 +2,10 @@
 title: "USB串口通信管理"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-serial-dev/usbserial-communication
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-serial-dev/usbserial-communication
+last_sync: 2026-06-07
+sync_hash: b21ff57d
 ---
-
-
 ## 简介
 
 USB串口通信服务中通过Host设备的USB接口连接串口设备的串口进行串行数据传输，通信管理核心目标是实现设备间的高效、稳定数据传输与协同控制。主要使用在工业自动化与远程监控、物联网设备互联、医疗设备管理等场景。

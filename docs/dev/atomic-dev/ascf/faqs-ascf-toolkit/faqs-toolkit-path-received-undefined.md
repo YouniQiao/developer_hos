@@ -2,9 +2,10 @@
 title: "路径不可用报错"
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-path-received-undefined
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-path-received-undefined
+last_sync: 2026-06-07
+sync_hash: 14b7b2a2
 ---
-
-
 **问题现象**
 
 使用命令行转换工具时报错：“TypeError [ERR\_INVALID\_ARG\_TYPE]: The "path" argument must be of type string. Received undefined”

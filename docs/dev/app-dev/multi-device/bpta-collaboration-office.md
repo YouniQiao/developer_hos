@@ -3,8 +3,10 @@ title: "办公编辑全场景协同最佳实践"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-collaboration-office
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-collaboration-office
+last_sync: 2026-06-07
+sync_hash: 79137ad9
 ---
-
 # 办公编辑全场景协同最佳实践
 
 ## 概述
@@ -49,7 +51,7 @@ format: md
 | 跨设备拖拽 | HarmonyOS NEXT Developer Preview0 | 必须有电脑设备接入，或者部分支持PC模式的平板设备接入 | √ | √ | 双端在设置中开启“多设备协同 > **键鼠穿越**”功能 | / |
 | 切换设备继续编辑 | 应用接续 | HarmonyOS NEXT Developer Preview0以上 | 手机、平板、电脑 | √ | √ | 双端在设置中开启“多设备协同 > **接续**”功能 | / |
 | 分享协作 | 碰一碰邀请协同 | 5.0及以上，nova畅想系列不支持 | 手机或折叠手机直板态 | × | √ | 双端在设置中开启“多设备协同 > 华为分享 > 更多华为分享设置 > **启用华为分享服务**”功能 | 手机和电脑也可以进行链接分享，但双端需要登录同一个华为账号，且手机和电脑版本均需6.0及以上。 |
-| 隔空传送邀请协同 | [HarmonyOS 6.0.0 Beta1](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-600#section1836613212578)及以上版本 | 均支持 | × | × | 双端在设置中开启“多设备协同 > 华为分享 > 更多华为分享设置 > **启用华为分享服务**”功能 | 设备型号限制见[隔空传送支持的机型和版本说明](https://consumer.huawei.com/cn/support/content/zh-cn16074833/?source=weknow)。 |
+| 隔空传送邀请协同 | [HarmonyOS 6.0.0 Beta1](/docs/dev/release-notes/overview-600#section1836613212578)及以上版本 | 均支持 | × | × | 双端在设置中开启“多设备协同 > 华为分享 > 更多华为分享设置 > **启用华为分享服务**”功能 | 设备型号限制见[隔空传送支持的机型和版本说明](https://consumer.huawei.com/cn/support/content/zh-cn16074833/?source=weknow)。 |
 
 ## 插入其他设备的图文
 

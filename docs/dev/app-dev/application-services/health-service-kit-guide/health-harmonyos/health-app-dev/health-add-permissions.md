@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "管理用户授权"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-add-permissions
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-add-permissions
+last_sync: 2026-06-07
+sync_hash: 9cb4a80c
 ---
-
-
 ## 场景介绍
 
 应用拉起华为账号同步和授权界面，由用户授权相应的数据访问权限。用户可以自主选择授权的数据类型，可以只授权部分数据权限。

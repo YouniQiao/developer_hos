@@ -2,9 +2,10 @@
 title: "使用Node-API接口操作bigint类型值"
 original_url: /docs/dev/ndk-dev/use-napi-about-bigint
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-bigint
+last_sync: 2026-06-07
+sync_hash: 0d4dd62c
 ---
-
-
 ## 简介
 
 BigInt是ArkTS中用于表示任意精度整数的数据类型，它能够处理比Number类型更大范围的整数值。通过Node-API提供的接口，可以在Node-API模块中创建、获取和操作BigInt类型值，从而实现与BigInt相关的功能扩展。

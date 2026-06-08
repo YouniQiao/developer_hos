@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "更改地图位置"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-interaction/map-camera
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-interaction/map-camera
+last_sync: 2026-06-07
+sync_hash: 0f85ede0
 ---
-
-
 ## 场景介绍
 
 华为地图的移动是通过模拟相机移动的方式实现的，该相机可称为地图相机，您可以通过改变地图相机位置，来控制地图的可见区域，效果如图所示。

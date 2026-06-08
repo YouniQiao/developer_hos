@@ -2,9 +2,10 @@
 title: "计费说明"
 original_url: /docs/distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-price-0000002254933346
 format: md
+upstream_id: distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-price-0000002254933346
+last_sync: 2026-06-07
+sync_hash: d36c1696
 ---
-
-
 #### 计费方式说明
 
 自2022年5月23日起，云测试服务采用“赠送时长+套餐余额+按量付费”的方式进行结算。下表列举了云测试服务的计费方式，您可根据实际需求进行选择。

@@ -2,9 +2,9 @@
 title: "架构概览"
 sidebar_position: 1
 format: md
+upstream_id: _local
+last_sync: 2026-06-08
 ---
-
-
 # 架构概览
 
 

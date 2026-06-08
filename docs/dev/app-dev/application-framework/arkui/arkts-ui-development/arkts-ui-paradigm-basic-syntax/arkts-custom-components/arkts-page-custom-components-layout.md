@@ -2,9 +2,10 @@
 title: "自定义组件的自定义布局"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-page-custom-components-layout
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-page-custom-components-layout
+last_sync: 2026-06-07
+sync_hash: 9ea1f0cc
 ---
-
-
 如果系统提供的布局组件（如[Flex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-flex)，[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)，[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)等）无法满足复杂布局需求，或开发者希望自定义计算组件内子组件的大小和位置，建议在自定义组件中使用以下接口：
 
 * [onMeasureSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-layout#onmeasuresize10)：组件每次布局时触发，开发者可以在这个回调中增加自定义组件内子组件的大小的计算逻辑，返回自定义组件的尺寸信息，其执行时间先于onPlaceChildren。

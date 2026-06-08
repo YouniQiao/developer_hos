@@ -2,9 +2,10 @@
 title: "在NDK中保证多实例场景功能正常"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-scope-task
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-scope-task
+last_sync: 2026-06-07
+sync_hash: 83168c1d
 ---
-
-
 API version 20开始，ArkUI开发框架新增了[OH\_ArkUI\_RunTaskInScope](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#oh_arkui_runtaskinscope)接口，解决Native侧多实例场景下的组件操作问题。该功能通过动态切换执行上下文，确保跨实例组件属性设置的合法性，避免实例上下文不匹配导致的接口调用异常。
 
 在NDK多窗口开发时，可能会涉及到组件的跨实例设置属性等场景，使用该能力可确保在调用跨实例组件设置属性时的上下文正确性，避免跨实例接口调用失败。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "消息摘要计算SHA3(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-generate-message/crypto-generate-message-digest-dev/crypto-generate-message-digest-sha3
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-generate-message/crypto-generate-message-digest-dev/crypto-generate-message-digest-sha3
+last_sync: 2026-06-07
+sync_hash: 49ef4531
 ---
-
-
 从API version 22开始，算法库支持使用该算法进行摘要计算操作。
 
 对应的算法规格请查看[消息摘要计算算法规格](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-generate-message/crypto-generate-message-digest-overview#支持的算法与规格)。

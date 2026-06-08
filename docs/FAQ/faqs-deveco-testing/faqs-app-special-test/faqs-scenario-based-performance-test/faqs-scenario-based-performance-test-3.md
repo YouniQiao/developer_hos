@@ -2,7 +2,8 @@
 format: md
 title: "执行python.exe -m pip install --upgrade pip命令更新pip库时报错ValueError: Unable to find resource t64.exe in package pip._vendor.distlib"
 original_url: /docs/FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-scenario-based-performance-test/faqs-scenario-based-performance-test-3
+upstream_id: FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-scenario-based-performance-test/faqs-scenario-based-performance-test-3
+last_sync: 2026-06-07
+sync_hash: d7c58083
 ---
-
-
 输入python -m pip uninstall pip setuptools卸载setuptools，输入pip install --upgrade setuptools重新安装 setuptools，然后重新执行python -m pip install --upgrade pip更新pip库。

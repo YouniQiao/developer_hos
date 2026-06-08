@@ -2,9 +2,10 @@
 title: "在DevEco Studio调试运行ASCF元服务的时候报错"
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-plugin-debugging-error
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-plugin-debugging-error
+last_sync: 2026-06-07
+sync_hash: 20b0aa50
 ---
-
-
 **问题现象**
 
 在DevEco Studio调试运行ASCF元服务不成功，报错如下：

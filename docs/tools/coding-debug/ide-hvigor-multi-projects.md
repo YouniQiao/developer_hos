@@ -3,9 +3,10 @@ title: "多工程构建"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-multi-projects
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-multi-projects
+last_sync: 2026-06-07
+sync_hash: c5fac2a7
 ---
-
-
 # 多工程构建
 
 为降低大型应用多个团队协作开发的复杂度，提供多工程开发模式，提高协作开发效率。多工程开发能力支持将大型应用拆分为多个模块，每个模块对应一个单独工程。在每个工程分别编译生成HAP后，需统一打包生成一个APP，用于上架应用市场。

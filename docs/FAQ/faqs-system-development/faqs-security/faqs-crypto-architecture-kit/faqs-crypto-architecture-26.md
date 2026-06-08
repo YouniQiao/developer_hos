@@ -2,9 +2,10 @@
 title: "如何存储公钥"
 original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-26
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-26
+last_sync: 2026-06-07
+sync_hash: c71afec2
 ---
-
-
 1、可以将公钥转换为十六进制或Base64格式进行存储。
 
 2、获取公钥后，将其转换为数组。

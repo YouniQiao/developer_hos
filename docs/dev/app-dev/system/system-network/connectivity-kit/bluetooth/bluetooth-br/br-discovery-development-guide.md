@@ -2,9 +2,10 @@
 title: "查找设备"
 original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-br/br-discovery-development-guide
 format: md
+upstream_id: dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-br/br-discovery-development-guide
+last_sync: 2026-06-07
+sync_hash: c9b8b928
 ---
-
-
 ## 简介
 
 本指南主要提供了查找设备相关的开发指导，包括如何扫描周边设备、设置本机蓝牙扫描模式以及查找已配对设备信息。

@@ -3,8 +3,10 @@ title: "成功案例"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-physical-subcontract-faq-0000001288240548
 format: md
+upstream_id: monetize/promotion/bp-functions-physical-subcontract-faq-0000001288240548
+last_sync: 2026-06-07
+sync_hash: 3faca328
 ---
-
 # 成功案例
 
 ## 客户需求

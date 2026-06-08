@@ -2,9 +2,10 @@
 title: "下架个性化设置"
 original_url: /docs/dev/atomic-dev/instant-service-items/instant-service-items-pers-delist
 format: md
+upstream_id: dev/atomic-dev/instant-service-items/instant-service-items-pers-delist
+last_sync: 2026-06-07
+sync_hash: c1412066
 ---
-
-
 1. 对于已通过审核、服务状态为“已上架”的个性化设置，开发者可进行下架个性化设置的操作。
 
    ![](./img/849feffe.png "点击放大")

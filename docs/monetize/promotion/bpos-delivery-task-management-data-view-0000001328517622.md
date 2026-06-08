@@ -3,8 +3,10 @@ title: "数据查看"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-delivery-task-management-data-view-0000001328517622
 format: md
+upstream_id: monetize/promotion/bpos-delivery-task-management-data-view-0000001328517622
+last_sync: 2026-06-07
+sync_hash: 32b7b89a
 ---
-
 # 数据查看
 
 ## 在报表中查看数据

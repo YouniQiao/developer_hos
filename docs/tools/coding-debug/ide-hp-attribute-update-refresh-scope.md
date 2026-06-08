@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-use-attributeUpdater-control-refresh-scope"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hp-attribute-update-refresh-scope
 format: md
+upstream_id: tools/coding-debug/ide-hp-attribute-update-refresh-scope
+last_sync: 2026-06-07
+sync_hash: 9168c818
 ---
-
-
 # @performance/hp-arkui-use-attributeUpdater-control-refresh-scope
 
 建议使用attributeUpdater精准控制组件属性的刷新。

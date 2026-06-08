@@ -3,9 +3,11 @@ title: "优化提升篇"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/about-monetization-optimization-0000001446067144
 format: md
+upstream_id: monetize/monetization/about-monetization-optimization-0000001446067144
+last_sync: 2026-06-07
+sync_hash: 6d5db807
+upstream_hash: d3098cdd3046
 ---
-
-
 
 #### AppDownloadButton下载按钮控件
 

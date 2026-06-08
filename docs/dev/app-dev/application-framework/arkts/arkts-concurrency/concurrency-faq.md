@@ -2,9 +2,10 @@
 title: "并发常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/concurrency-faq
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/concurrency-faq
+last_sync: 2026-06-07
+sync_hash: 516fcc02
 ---
-
-
 ## TaskPool任务不执行快速定位指导
 
 开发者发现TaskPool任务不执行时，可按照以下步骤快速定位。

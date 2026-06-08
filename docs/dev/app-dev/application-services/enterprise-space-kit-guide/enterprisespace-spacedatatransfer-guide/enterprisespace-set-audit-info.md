@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "设置审批信息"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacedatatransfer-guide/enterprisespace-set-audit-info
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacedatatransfer-guide/enterprisespace-set-audit-info
+last_sync: 2026-06-07
+sync_hash: 52b41759
 ---
-
-
 ## 场景介绍
 
 当文件外发需经过审批流程控制时，Enterprise Space Kit为应用提供设置审批信息的能力，审批信息包括审批ID、用户ID、用户名称、审批时间、审批评论和文件审批状态。

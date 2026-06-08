@@ -3,9 +3,10 @@ title: "ArkTS API兼容性保护"
 displayed_sidebar: appCompatibilitySidebar
 original_url: /docs/design/app-compatibility/arkts-api-compatibility-warning-elim
 format: md
+upstream_id: design/app-compatibility/arkts-api-compatibility-warning-elim
+last_sync: 2026-06-07
+sync_hash: 726d8609
 ---
-
-
 # ArkTS API兼容性保护
 
 ## 简介

@@ -2,9 +2,10 @@
 format: md
 title: "自定义构建函数Builder与自定义组件component的使用区别以及限制是什么"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-375
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-375
+last_sync: 2026-06-07
+sync_hash: eba87487
 ---
-
-
 自定义构建函数（@Builder）和自定义组件的主要区别包括：
 
 * 自定义构建函数（@Builder）更轻量。它作为UI元素抽象的方法，实现和调用比自定义组件更简洁。

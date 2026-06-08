@@ -2,9 +2,10 @@
 title: "快游戏试玩"
 original_url: /docs/dev/game-dev/games-quickgame-playable-subpackage-0000002351893469
 format: md
+upstream_id: dev/game-dev/games-quickgame-playable-subpackage-0000002351893469
+last_sync: 2026-06-07
+sync_hash: ec9df04d
 ---
-
-
 快游戏试玩是一种独立于快游戏之外的形式，您可以截取游戏内的第一关或者最具吸引力、上手难度小的玩法，制作成游戏的试玩包，让用户提前体验游戏的玩法。
 
 ## 试玩分包要求

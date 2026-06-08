@@ -2,9 +2,10 @@
 title: "强密码填充"
 original_url: /docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autofill/passwordvault-autofill-strong-password
 format: md
+upstream_id: dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autofill/passwordvault-autofill-strong-password
+last_sync: 2026-06-07
+sync_hash: 3b3aa474
 ---
-
-
 密码保险箱可以在用户需要输入一个新密码时，自动生成一个高强度的密码。用户选择使用生成的强密码时可以将这个密码填充到新密码输入框。
 
 **触发条件及注意事项：**

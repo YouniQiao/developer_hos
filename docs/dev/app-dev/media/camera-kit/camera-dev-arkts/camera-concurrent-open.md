@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "多摄同开(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-concurrent-open
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-concurrent-open
+last_sync: 2026-06-07
+sync_hash: 495aaf18
 ---
-
-
 从API version 18开始支持多摄同开，即应用同时开启前置/后置相机进行预览和录像（前置/后置相机同时拍照功能待开放）。
 
 ![](./img/58032c8d.png)

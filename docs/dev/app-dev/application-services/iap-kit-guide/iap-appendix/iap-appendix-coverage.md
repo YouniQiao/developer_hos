@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "华为IAP范围覆盖"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-appendix/iap-appendix-coverage
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-appendix/iap-appendix-coverage
+last_sync: 2026-06-07
+sync_hash: 070d8a5e
+upstream_hash: 0b5c5f4ffbbd
 ---
-
 
 IAP已支持全球多个国家或地区，为当地的消费者和商户提供安全、便捷、高效的支付服务。
 

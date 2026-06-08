@@ -3,8 +3,10 @@ title: "查询商品库筛选条件取值"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-dpa2-0000001338502485
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-dpa2-0000001338502485
+last_sync: 2026-06-07
+sync_hash: 8d8c4a1a
 ---
-
 # 查询商品库筛选条件取值
 
 您通过本接口查询商品库筛选条件。

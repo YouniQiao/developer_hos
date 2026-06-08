@@ -2,8 +2,11 @@
 title: "批量修改商品"
 original_url: /docs/dev/game-dev/games-center-revise-0000002286076740
 format: md
+upstream_id: dev/game-dev/games-center-revise-0000002286076740
+last_sync: 2026-06-07
+sync_hash: a6392fa0
+upstream_hash: c212cb13c479
 ---
-
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要批量修改商品的应用。

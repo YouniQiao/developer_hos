@@ -2,9 +2,10 @@
 title: "设置embed模式的侧边栏"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-sidebar/ui-design-sidebar-enbed-mode
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-sidebar/ui-design-sidebar-enbed-mode
+last_sync: 2026-06-07
+sync_hash: 564c657c
 ---
-
-
 ## 场景介绍
 
 从6.0.0(20)版本开始，新增支持设置embed模式的侧边栏。

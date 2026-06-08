@@ -3,9 +3,10 @@ title: "万能卡片生成"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-codegenie-service-widget
 format: md
+upstream_id: tools/ai-assist/ide-codegenie-service-widget
+last_sync: 2026-06-07
+sync_hash: 91c7396b
 ---
-
-
 # 万能卡片生成
 
 基于AI大模型理解开发者的卡片需求信息，通过对话式的交互智能生成HarmonyOS万能卡片工程。

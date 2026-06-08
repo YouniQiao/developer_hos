@@ -2,9 +2,9 @@
 title: SDK 库
 sidebar_label: SDK 库
 format: md
+upstream_id: _local
+last_sync: 2026-06-08
 ---
-
-
 # SDK 库
 
 ## 华为生态市场SDK库

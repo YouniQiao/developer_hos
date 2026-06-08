@@ -2,9 +2,10 @@
 title: "日志打印"
 original_url: /docs/dev/game-dev/gameobe-log-real-time-server-0000002361510728
 format: md
+upstream_id: dev/game-dev/gameobe-log-real-time-server-0000002361510728
+last_sync: 2026-06-07
+sync_hash: d4d8924a
 ---
-
-
 您可以使用ActionArgs.SDK相关方法实现一些日志管理的业务逻辑，包括打印日志信息等使用场景。
 
 ## 打印日志信息

@@ -3,8 +3,10 @@ title: 账号
 sidebar_label: 账号
 original_url: /docs/design/atomic-service-design/best-practices/accounts
 format: md
+upstream_id: design/atomic-service-design/best-practices/accounts
+last_sync: 2026-06-07
+sync_hash: 2ee126b1
 ---
-
 # 账号
 
 ### 使用华为账号登录

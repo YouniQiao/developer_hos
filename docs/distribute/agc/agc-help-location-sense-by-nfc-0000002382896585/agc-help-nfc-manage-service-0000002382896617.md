@@ -2,9 +2,10 @@
 title: "管理服务"
 original_url: /docs/distribute/agc/agc-help-location-sense-by-nfc-0000002382896585/agc-help-nfc-manage-service-0000002382896617
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-by-nfc-0000002382896585/agc-help-nfc-manage-service-0000002382896617
+last_sync: 2026-06-07
+sync_hash: 498b5614
 ---
-
-
 #### 服务状态
 
 * 服务状态包括草稿、审核中、审核驳回、已上线、已下线5种状态。状态流转图如下：

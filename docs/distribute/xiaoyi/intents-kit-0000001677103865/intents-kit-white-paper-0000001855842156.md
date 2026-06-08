@@ -3,9 +3,10 @@ title: "意图框架白皮书"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/intents-kit-0000001677103865/intents-kit-white-paper-0000001855842156
 format: md
+upstream_id: distribute/xiaoyi/intents-kit-0000001677103865/intents-kit-white-paper-0000001855842156
+last_sync: 2026-06-07
+sync_hash: c3526021
 ---
-
-
 # 意图框架白皮书
 
 ![](./img/27b342ee992a.jpg "点击放大")

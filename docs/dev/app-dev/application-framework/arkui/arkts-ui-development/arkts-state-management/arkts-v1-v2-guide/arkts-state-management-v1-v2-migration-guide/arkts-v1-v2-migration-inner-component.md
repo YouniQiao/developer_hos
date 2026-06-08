@@ -2,9 +2,10 @@
 title: "组件内状态变量迁移"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-state-management-v1-v2-migration-guide/arkts-v1-v2-migration-inner-component
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-state-management-v1-v2-migration-guide/arkts-v1-v2-migration-inner-component
+last_sync: 2026-06-07
+sync_hash: 08dd8f8d
 ---
-
-
 本文档主要介绍组件内的状态变量的迁移场景，包含以下场景：
 
 | V1装饰器名 | V2装饰器名 |

@@ -2,8 +2,11 @@
 title: "使用嵌入式用户身份认证控件"
 original_url: /docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/user-auth-icon
 format: md
+upstream_id: dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/user-auth-icon
+last_sync: 2026-06-07
+sync_hash: cc5e8371
+upstream_hash: 7a7cf11598fc
 ---
-
 
 提供应用界面上展示的人脸、指纹认证图标，功能包括：
 

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Natural Language Kit简介"
 original_url: /docs/dev/app-dev/ai/natural-language-kit-guide/natural-language-introduction
 format: md
+upstream_id: dev/app-dev/ai/natural-language-kit-guide/natural-language-introduction
+last_sync: 2026-06-07
+sync_hash: 96b41a5a
 ---
-
-
 Natural Language Kit（自然语言理解服务）提供了多项文本语义理解相关的基础能力，帮助开发者更好地处理和分析文本数据。具体包括以下几个方面：
 
 1. 分词：可以将一段文本切分成独立的词语单元，识别出句子中的每个词汇。这是进行自然语言处理的基础步骤，为后续的语义分析、信息提取等任务奠定基础。

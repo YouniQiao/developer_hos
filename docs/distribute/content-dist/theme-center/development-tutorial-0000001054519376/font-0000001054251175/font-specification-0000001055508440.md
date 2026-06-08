@@ -3,9 +3,10 @@ title: "字体设计指导及规范"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/font-0000001054251175/font-specification-0000001055508440
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/font-0000001054251175/font-specification-0000001055508440
+last_sync: 2026-06-07
+sync_hash: 7dadd5ee
 ---
-
-
 # 字体设计指导及规范
 
 ## 1. 字体设计类型

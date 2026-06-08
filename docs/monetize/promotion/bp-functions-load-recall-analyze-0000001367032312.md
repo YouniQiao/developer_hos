@@ -3,8 +3,10 @@ title: "分析召回效果"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-load-recall-analyze-0000001367032312
 format: md
+upstream_id: monetize/promotion/bp-functions-load-recall-analyze-0000001367032312
+last_sync: 2026-06-07
+sync_hash: 02a14f73
 ---
-
 # 分析召回效果
 
 1. 登录[华为应用市场应用推广平台](https://developer.huawei.com/consumer/cn/service/apcs/app/home.html)，点击右上角“管理中心”，进入“管理中心”页面。

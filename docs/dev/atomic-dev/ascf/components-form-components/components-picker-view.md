@@ -2,8 +2,11 @@
 title: "picker-view"
 original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-picker-view
 format: md
+upstream_id: dev/atomic-dev/ascf/components-form-components/components-picker-view
+last_sync: 2026-06-07
+sync_hash: 6af621b7
+upstream_hash: 99f711e85429
 ---
-
 
 嵌入页面的滚动选择器。
 

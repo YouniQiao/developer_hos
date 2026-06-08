@@ -2,9 +2,10 @@
 title: "ArkData常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkdata/data-faq
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/data-faq
+last_sync: 2026-06-07
+sync_hash: edb885d2
 ---
-
-
 ## 如何查看关系型数据库详细的SQL执行异常信息
 
 可以调用[on('sqliteErrorOccurred')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-data-relationalstore-rdbstore#onsqliteerroroccurred20)获取SQL执行时出现的异常信息。

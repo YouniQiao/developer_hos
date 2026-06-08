@@ -2,9 +2,10 @@
 title: "FAQ"
 original_url: /docs/distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-faq-0000002334224101
 format: md
+upstream_id: distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-faq-0000002334224101
+last_sync: 2026-06-07
+sync_hash: 89477e6f
 ---
-
-
 #### 通用FAQ
 
 #### [h2]应用分析的所有报表什么时候刷新？

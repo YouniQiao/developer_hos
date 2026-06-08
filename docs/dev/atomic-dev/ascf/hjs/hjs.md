@@ -2,9 +2,10 @@
 title: "hjs"
 original_url: /docs/dev/atomic-dev/ascf/hjs/hjs
 format: md
+upstream_id: dev/atomic-dev/ascf/hjs/hjs
+last_sync: 2026-06-07
+sync_hash: e64dbad3
 ---
-
-
 hjs是ASCF框架的一套脚本语言，结合hxml一起来构建页面。
 
 hjs代码可以编写在hxml文件中的\&lt;hjs\&gt;标签内，也可以单独写在 .hjs 文件内。每一个\&lt;hjs\&gt;标签和.hjs文件都是一个单独的模块。

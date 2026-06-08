@@ -3,8 +3,10 @@ title: "服务商账户注册"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-fuwushangzhanghaozhuce-0000001861670469
 format: md
+upstream_id: monetize/promotion/ads-fuwushangzhanghaozhuce-0000001861670469
+last_sync: 2026-06-07
+sync_hash: 92a10d7b
 ---
-
 # 服务商账户注册
 
 鲸鸿动能秉承“资源共享、技术共创、合作共赢” 的理念面向业内招募服务商，各级服务商的服务范围和权益请参考[官网&gt;服务商](https://ads.huawei.com/usermgtportal/home/index.html#/agent)页面。

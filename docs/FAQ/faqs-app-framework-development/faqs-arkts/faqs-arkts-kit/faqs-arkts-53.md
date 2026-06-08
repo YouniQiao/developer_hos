@@ -2,9 +2,10 @@
 title: ".ets文件和.ts文件的区别及如何互相调用文件中定义的方法"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-53
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-53
+last_sync: 2026-06-07
+sync_hash: 6a3e25be
 ---
-
-
 ArkTS基于兼容了TS语法，继承了TS的所有特性，当前，ArkTS在TS的基础上主要扩展了声明式UI能力，让开发者能够以更简洁、更自然的方式开发高性能应用。推荐用ArkTS开发UI相关内容，TS可以用来开发业务逻辑相关内容。
 
 ts文件不支持调用ets文件中定义的方法。

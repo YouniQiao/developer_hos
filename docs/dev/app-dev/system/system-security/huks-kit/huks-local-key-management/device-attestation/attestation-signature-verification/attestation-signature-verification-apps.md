@@ -2,9 +2,10 @@
 title: "应用端开发"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/device-attestation-guidelines/device-attestation-apps
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/device-attestation-guidelines/device-attestation-apps
+last_sync: 2026-06-07
+sync_hash: 6b33232d
 ---
-
-
 ## 接口说明
 
 接口能力由[Universal Keystore Kit](/docs/dev/app-dev/system/system-security/huks-kit/huks-overview)提供，涉及的功能指导请参考：
@@ -23,9 +24,9 @@ format: md
 
 使用应用的私钥对业务请求进行签名的前提是已经创建应用公私钥和在服务器保存了应用公钥，相关开发指南请参考：
 
-* [查询应用公私钥对是否存在](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-apps#查询应用公私钥对是否存在)
-* [创建应用公私钥对](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-apps#创建应用公私钥对)
-* [对应用公钥和应用ID进行证明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-apps#对应用公钥和应用id进行证明)
+* [查询应用公私钥对是否存在](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/attestation-signature-verification/attestation-signature-verification-apps#查询应用公私钥对是否存在)
+* [创建应用公私钥对](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/attestation-signature-verification/attestation-signature-verification-apps#创建应用公私钥对)
+* [对应用公钥和应用ID进行证明](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/attestation-signature-verification/attestation-signature-verification-apps#对应用公钥和应用id进行证明)
 
 ## 使用应用私钥对业务请求进行签名
 

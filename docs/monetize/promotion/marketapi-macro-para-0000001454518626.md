@@ -3,8 +3,10 @@ title: "监测链接的宏参数说明"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-macro-para-0000001454518626
 format: md
+upstream_id: monetize/promotion/marketapi-macro-para-0000001454518626
+last_sync: 2026-06-07
+sync_hash: da06c9bf
 ---
-
 # 监测链接的宏参数说明
 
 <strong>监测链接的定义格式如下：</strong>
@@ -30,7 +32,7 @@ https://www.example.com?taskId=\_\_AID\_\_&taskName=\_\_AID\_NAME\_\_&appid=\_\_
 | \_\_GROUP\_NAME\_\_ | 定向包名称。  若非定向任务直接返回空。 |
 | \_\_GROUP\_ID\_\_ | 定向包ID。  若非定向任务直接返回空。 |
 | \_\_OAID\_\_ | 客户端采集上报的OAID信息。 |
-| \_\_ID\_TYPE\_\_ | 唯一标识类型。  取值范围：   - 0：表示系统低版本（安卓10版本以前）IMEI号作为唯一标识，MD5的32位小写加密。   注意：  获取用户设备识别号时，有OAID则回传OAID ，无OAID则回传IMEI（安卓10版本以前）。  具体回传机制请参见[回传用户行为数据接口](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/bp-functions-ocpd-interface-return-0000001238484400)。 |
+| \_\_ID\_TYPE\_\_ | 唯一标识类型。  取值范围：   - 0：表示系统低版本（安卓10版本以前）IMEI号作为唯一标识，MD5的32位小写加密。   注意：  获取用户设备识别号时，有OAID则回传OAID ，无OAID则回传IMEI（安卓10版本以前）。  具体回传机制请参见[回传用户行为数据接口](/docs/monetize/promotion/bp-functions-ocpd-interface-return-0000001238484400)。 |
 | \_\_UNIQUE\_ID\_\_ | 设备唯一标识的md5摘要。  32位小写加密。  注意：  仅支持安卓低版本。 |
 | \_\_ACTION\_TYPE\_\_ | 归因类型：   - IMP：对应精准曝光监测链接 - CLICK：对应点击上报监测链接 - DOWNLOAD：对应下载上报监测链接 - INSTALL：对应安装上报监测链接 - DEEPLINKCLICK：对应打开跳转deeplink上报监测链接 |
 | \_\_TS\_\_ | 以毫秒为单位时间戳（北京时间），例如：1625714142001。  不同事件TS对应的含义不同：   - 展示曝光：应用市场客户端推广位曝光时间 - 行为点击：用户点击的时间。具体口径：   - 点击icon   - 图片   - 视频   - 热词   - 安装按钮   - 打开按钮 - 下载完成：应用下载完成时间 - 安装完成：应用安装完成时间 - 应用打开：应用点击“打开”按钮的时间 |

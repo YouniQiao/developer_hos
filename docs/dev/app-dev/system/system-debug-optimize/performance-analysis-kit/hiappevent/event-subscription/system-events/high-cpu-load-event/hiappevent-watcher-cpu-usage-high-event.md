@@ -2,9 +2,10 @@
 title: "CPU高负载事件介绍"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/high-cpu-load-event/hiappevent-watcher-cpu-usage-high-event
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/high-cpu-load-event/hiappevent-watcher-cpu-usage-high-event
+last_sync: 2026-06-07
+sync_hash: 6dd3ae77
 ---
-
-
 ## 简介
 
 CPU高负载事件用于检测应用在前台或后台时，应用相关的进程使用CPU资源超过系统的门限，导致手机发热等问题。
@@ -21,7 +22,7 @@ CPU高负载事件包含以下3类：
 
 ![](./img/1715e5c8.png)
 
-CPU高负载事件不支持在[应用分身场景](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)或[元服务场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-create-faproject)使用HiAppEvent进行订阅，从API version 22开始支持在[输入法应用场景](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)下使用HiAppEvent进行订阅。
+CPU高负载事件不支持在[应用分身场景](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)或[元服务场景](/docs/tools/end-cloud/agc-harmonyos-create-faproject)使用HiAppEvent进行订阅，从API version 22开始支持在[输入法应用场景](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)下使用HiAppEvent进行订阅。
 
 ## 检测原理
 

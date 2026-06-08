@@ -1,8 +1,10 @@
 ---
 title: "应用内存占用优化"
 original_url: /docs/quality/memory-optimization
+upstream_id: /docs/quality/memory-optimization
+last_sync: 2026-06-07
+sync_hash: 358ddffc
 ---
-
 # 应用内存占用优化
 
 ## 概述

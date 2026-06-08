@@ -2,10 +2,10 @@
 title: "应用安全编码实践"
 original_url: /docs/security/security-encode
 format: md
+upstream_id: /docs/security/security-encode
+last_sync: 2026-06-07
+sync_hash: e5d4d4e7
 ---
-
-
-
 # 应用安全编码实践
 
 ## 通用组件安全

@@ -2,9 +2,10 @@
 title: "开通服务"
 original_url: /docs/distribute/agc/agc-help-auth-preparation-0000002236496826/agc-help-auth-enable-service-0000002271422405
 format: md
+upstream_id: distribute/agc/agc-help-auth-preparation-0000002236496826/agc-help-auth-enable-service-0000002271422405
+last_sync: 2026-06-07
+sync_hash: 6efdd810
 ---
-
-
 #### 前提条件
 
 * 您已经在AppGallery Connect上创建项目，详细操作请参见[创建项目](/docs/distribute/agc/agc-help-project-0000002270709469/agc-help-create-project-0000002242804048)。

@@ -2,9 +2,10 @@
 title: "小卡（2*2）"
 original_url: /docs/distribute/agc/agc-help-templates-manage-0000002467901652/agc-help-templates-for-xiaoyi-0000002475464058
 format: md
+upstream_id: distribute/agc/agc-help-templates-manage-0000002467901652/agc-help-templates-for-xiaoyi-0000002475464058
+last_sync: 2026-06-07
+sync_hash: 7c9d24c5
 ---
-
-
 #### 新增模板
 
 ![](../img/agc-help-templates-for-xiaoyi-0000002475464058_0.png)

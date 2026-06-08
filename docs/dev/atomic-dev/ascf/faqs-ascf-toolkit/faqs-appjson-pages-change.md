@@ -2,9 +2,10 @@
 title: "app.json配置pages字段重复报错"
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-appjson-pages-change
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-appjson-pages-change
+last_sync: 2026-06-07
+sync_hash: 6fc48e85
 ---
-
-
 **问题现象**
 
 工具链1.0.13版本开始，针对app.json配置中的pages字段加了重复性校验。如果pages字段有重复的元素，编译会报错，错误会提示具体哪两项重复。

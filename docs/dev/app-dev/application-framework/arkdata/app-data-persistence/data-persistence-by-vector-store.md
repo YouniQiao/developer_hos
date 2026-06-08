@@ -2,9 +2,10 @@
 title: "通过向量数据库实现数据持久化 (ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/app-data-persistence/data-persistence-by-vector-store
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/app-data-persistence/data-persistence-by-vector-store
+last_sync: 2026-06-07
+sync_hash: 4f286153
 ---
-
-
 ## 场景介绍
 
 向量数据库是一种支持存储、管理和检索向量数据的数据库，也支持标量的关系型数据处理。数据类型"floatvector"用来存储数据向量化的结果，从而实现对这些数据的快速检索和相似性搜索‌。

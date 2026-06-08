@@ -2,9 +2,10 @@
 format: md
 title: "Canvas绘制内容如何动态更新"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-225
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-225
+last_sync: 2026-06-07
+sync_hash: f9699bb2
 ---
-
-
 在声明式语法中，Canvas使用数据驱动UI刷新。可以将变化的数据通过@Watch监听，并绑定自定义的draw()方法。当数据刷新时，@Watch绑定的方法会执行绘制逻辑。
 
 参考代码如下：

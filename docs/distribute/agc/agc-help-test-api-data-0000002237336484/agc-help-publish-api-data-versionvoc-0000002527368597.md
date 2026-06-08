@@ -2,9 +2,10 @@
 title: "VersionVocReq"
 original_url: /docs/distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-publish-api-data-versionvoc-0000002527368597
 format: md
+upstream_id: distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-publish-api-data-versionvoc-0000002527368597
+last_sync: 2026-06-07
+sync_hash: 38adad70
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | versionId | M | String(32) | 版本号。 |

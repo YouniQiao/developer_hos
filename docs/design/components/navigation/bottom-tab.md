@@ -3,8 +3,10 @@ title: 底部页签
 sidebar_label: 底部页签
 original_url: /docs/design/components/navigation/bottom-tab
 format: md
+upstream_id: design/components/navigation/bottom-tab
+last_sync: 2026-06-07
+sync_hash: c20491fe
 ---
-
 # 底部页签
 
 移动设备中最常见的应用级导航控件，开发相关描述请参考 [Tabs/BottomTabBarStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs) 文档。

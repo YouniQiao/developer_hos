@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发音频通话功能"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-call/audio-call-development
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-call/audio-call-development
+last_sync: 2026-06-07
+sync_hash: 2da38ede
 ---
-
-
 在音频通话场景下，音频输出（播放对端声音）和音频输入（录制本端声音）会同时进行，应用可以通过使用AudioRenderer来实现音频输出，通过使用AudioCapturer来实现音频输入，同时使用AudioRenderer和AudioCapturer即可实现音频通话功能。
 
 在音频通话开始和结束时，应用可以自行检查当前的[音频场景模式](/docs/dev/app-dev/media/audio-kit/audio-call/audio-call-overview#音频场景模式)和[铃声模式](/docs/dev/app-dev/media/audio-kit/audio-call/audio-call-overview#铃声模式)，以便采取合适的音频管理及提示策略。

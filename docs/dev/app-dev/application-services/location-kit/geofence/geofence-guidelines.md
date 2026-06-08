@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "端侧GNSS围栏开发指导"
 original_url: /docs/dev/app-dev/application-services/location-kit/geofence/geofence-guidelines
 format: md
+upstream_id: dev/app-dev/application-services/location-kit/geofence/geofence-guidelines
+last_sync: 2026-06-07
+sync_hash: 60f76d77
 ---
-
-
 目前端侧仅支持构建圆形围栏，并且依赖GNSS芯片的地理围栏功能，仅在室外开阔区域才能准确识别用户进出围栏事件。
 
 应用场景举例：开发者可以使用地理围栏技术，在企业周围创建一个区域围栏，当用户进入这个区域，在移动设备上进行有针对性的提醒。

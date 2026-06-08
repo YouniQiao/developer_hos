@@ -2,9 +2,10 @@
 format: md
 title: "如何在自定义组件的构建流程里跟踪组件数据或者状态，如在build里增加日志跟踪状态变量等"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-50
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-50
+last_sync: 2026-06-07
+sync_hash: 6515cbfc
 ---
-
-
 使用@Watch回调来监测状态变量的变化。如果回调函数执行，说明在下一次VSync信号发送时，使用该状态变量的UI会刷新绘制。
 
 参考代码如下：

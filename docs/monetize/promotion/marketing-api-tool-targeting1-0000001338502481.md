@@ -3,8 +3,10 @@ title: "创建定向包"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-targeting1-0000001338502481
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-targeting1-0000001338502481
+last_sync: 2026-06-07
+sync_hash: dc197181
 ---
-
 # 创建定向包
 
 您通过本接口创建定向包，创建后的定向包，可以绑定同一广告主的多个任务。

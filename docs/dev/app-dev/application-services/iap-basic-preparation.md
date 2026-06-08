@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "基本准备工作"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation
+last_sync: 2026-06-07
+sync_hash: 2f4e626c
 ---
-
-
 * **[开通商户服务](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-enable-merchant-service)**
 * **[创建项目和应用](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-create-project-and-application)**
 * **[开启和激活应用内购买服务](/docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-enable-in-app-purchases)**

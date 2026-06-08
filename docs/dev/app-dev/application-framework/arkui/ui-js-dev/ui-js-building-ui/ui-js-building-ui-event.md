@@ -2,9 +2,10 @@
 title: "手势事件"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-building-ui/ui-js-building-ui-event
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-building-ui/ui-js-building-ui-event
+last_sync: 2026-06-07
+sync_hash: 2758f9d8
 ---
-
-
 手势表示由单个或多个事件识别的语义动作（例如：触摸、点击和长按）。一个完整的手势也可能由多个事件组成，对应手势的生命周期。支持的事件有：
 
 **触摸**

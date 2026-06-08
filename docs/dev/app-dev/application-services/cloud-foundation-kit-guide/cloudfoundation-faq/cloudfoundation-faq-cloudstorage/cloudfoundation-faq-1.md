@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用云存储上传文件失败，提示“404:Product does not exist”"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-faq/cloudfoundation-faq-cloudstorage/cloudfoundation-faq-1
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-faq/cloudfoundation-faq-cloudstorage/cloudfoundation-faq-1
+last_sync: 2026-06-07
+sync_hash: 064a333e
 ---
-
-
 **问题现象**
 
 使用云存储上传文件失败，HiLog提示“404:Product does not exist”。

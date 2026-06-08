@@ -2,9 +2,10 @@
 title: "ohpm-repo check_storage"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-check_storage
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-check_storage
+last_sync: 2026-06-07
+sync_hash: f6f1ccb2
 ---
-
-
 # ohpm-repo check\_storage
 
 检查sftp中存储包的完整性。

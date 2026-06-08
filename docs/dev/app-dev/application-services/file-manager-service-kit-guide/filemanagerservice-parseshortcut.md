@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "解析文件快捷方式"
 original_url: /docs/dev/app-dev/application-services/file-manager-service-kit-guide/filemanagerservice-parseshortcut
 format: md
+upstream_id: dev/app-dev/application-services/file-manager-service-kit-guide/filemanagerservice-parseshortcut
+last_sync: 2026-06-07
+sync_hash: 463bb648
 ---
-
-
 从6.1.0(23)版本开始，新增支持解析文件快捷方式。
 
 ## 场景介绍

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "网页接入密码保险箱"
 original_url: /docs/dev/app-dev/system/system-security/passwordvault/arkweb-access-password-safe
 format: md
+upstream_id: dev/app-dev/system/system-security/passwordvault/arkweb-access-password-safe
+last_sync: 2026-06-07
+sync_hash: 9aa87572
 ---
-
-
 网页中的登录表单，登录成功后，用户可将用户名和密码保存到系统密码保险箱中。再次打开该网页时，密码保险箱可以提供用户名、密码的自动填充。
 
 ## 手机使用场景

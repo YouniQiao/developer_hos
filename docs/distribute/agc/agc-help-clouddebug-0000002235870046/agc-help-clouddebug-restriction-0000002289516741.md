@@ -2,9 +2,10 @@
 title: "使用限制"
 original_url: /docs/distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-restriction-0000002289516741
 format: md
+upstream_id: distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-restriction-0000002289516741
+last_sync: 2026-06-07
+sync_hash: 0cf58dfd
 ---
-
-
 | 限制项 | 限制 |
 | --- | --- |
 | 截屏操作 | 当前仅支持HarmonyOS 5.0.0及以上版本的所有真机设备。 |

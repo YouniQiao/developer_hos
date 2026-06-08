@@ -2,9 +2,10 @@
 title: "FAQ"
 original_url: /docs/distribute/agc/agc-help-internal-test-0000002270709477/agc-help-internal-test-faq-0000002295372101
 format: md
+upstream_id: distribute/agc/agc-help-internal-test-0000002270709477/agc-help-internal-test-faq-0000002295372101
+last_sync: 2026-06-07
+sync_hash: 013aba42
 ---
-
-
 #### 点击应用提示“应用已过期”
 
 指定设备发布应用版本存在有效期，当前为90天。使用超过有效期后，该应用版本将无法启动，提示如下。请更新应用版本号后重新编译打包并部署，即可正常下载安装新版本应用。

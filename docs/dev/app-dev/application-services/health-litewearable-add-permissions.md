@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "管理用户授权"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-add-permissions
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-add-permissions
+last_sync: 2026-06-07
+sync_hash: 9cb4a80c
+upstream_hash: e514e9f181eb
 ---
-
 
 ## 场景介绍
 

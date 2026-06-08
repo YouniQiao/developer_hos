@@ -3,8 +3,10 @@ title: "页面布局场景"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-page-layout
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi-device-page-layout
+last_sync: 2026-06-07
+sync_hash: f63d7cba
 ---
-
 # 页面布局场景
 
 HarmonyOS基于“一次开发，多端部署”的理念设计了响应式布局，旨在帮助开发者高效构建适应不同设备的应用界面。系统通过统一的UI框架、响应式布局能力——断点和栅格，让应用页面能够根据代码的差异化实现自动适应从手机、折叠屏、平板到PC/2in1等各种终端形态。

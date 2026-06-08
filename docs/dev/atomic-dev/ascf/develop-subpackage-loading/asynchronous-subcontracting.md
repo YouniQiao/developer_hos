@@ -2,8 +2,11 @@
 title: "分包异步化"
 original_url: /docs/dev/atomic-dev/ascf/develop-subpackage-loading/asynchronous-subcontracting
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-subpackage-loading/asynchronous-subcontracting
+last_sync: 2026-06-07
+sync_hash: 5d786171
+upstream_hash: 44c10e321c02
 ---
-
 
 在元服务中，不同的分包对应不同的下载单元。因此，当分包之间共享引用了某个自定义组件或 **[require](#引用通用分包的-js)** 某个JS模块，最终这些组件和JS模块都会被打进**主包**，这样才能保证分包加载后功能都可以正常使用，但是这样处理**会增加主包的体积，从而影响启动性能。**
 

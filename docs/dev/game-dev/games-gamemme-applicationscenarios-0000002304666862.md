@@ -2,9 +2,10 @@
 title: "典型应用场景"
 original_url: /docs/dev/game-dev/games-gamemme-applicationscenarios-0000002304666862
 format: md
+upstream_id: dev/game-dev/games-gamemme-applicationscenarios-0000002304666862
+last_sync: 2026-06-07
+sync_hash: d4c4596a
 ---
-
-
 ## 对战开黑
 
 低延时、流畅的实时语音、小队语音等能力，为对战开黑的游戏玩家提供更好的语音体验。

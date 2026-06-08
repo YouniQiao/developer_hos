@@ -2,9 +2,10 @@
 title: "图文混排"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-text/arkts-text-image-layout
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-text/arkts-text-image-layout
+last_sync: 2026-06-07
+sync_hash: 87eef6bf
 ---
-
-
 图文混排是指图片与文字混合排列，文字可展示于图片四周。此排列方式能够直观呈现页面信息，增强视觉冲击力，使页面展示效果更加多样化。
 
 ## 使用Span和ImageSpan实现图文混排

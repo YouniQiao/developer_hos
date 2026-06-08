@@ -1,8 +1,10 @@
 ---
 title: "地址越界类问题优化建议"
 original_url: /docs/quality/stability-address-sanitizer-opt
+upstream_id: /docs/quality/stability-address-sanitizer-opt
+last_sync: 2026-06-07
+sync_hash: 29090d60
 ---
-
 # 地址越界类问题优化建议
 
 ## 优化建议1：增加返回值校验

@@ -2,9 +2,10 @@
 title: "多语言适配"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/l10n/l10n-multilingual-resources
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/l10n/l10n-multilingual-resources
+last_sync: 2026-06-07
+sync_hash: 43574c37
 ---
-
-
 ## 功能介绍
 
 当应用需要提供给不同国家和地区的用户使用时，为了满足这些用户在语言、文化方面的需求，需要将应用进行本地化定制，使应用加载和显示符合所在地域使用习惯的内容。本地化过程中需要对语言和地区名称、时间日期、数字单位、文本字符、图片、音频、视频等进行适配。

@@ -2,9 +2,10 @@
 title: "如何判断组件遮挡情况，并主动隐藏被遮挡的组件"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-485
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-485
+last_sync: 2026-06-07
+sync_hash: e21de4b0
 ---
-
-
 一般情况下，使用[onVisibleAreaChange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-component-visible-area-change-event#onvisibleareachange)即可。 在一些特殊场景下，例如使用了层叠布局，或者在线性布局中使用位置使得并排的兄弟组件之间产生了遮挡，由于onVisibleAreaChange的局限性，此种情况需要自己手动计算遮挡关系。推荐使用[UIInspector](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uiinspector)注册监听回调、[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)的getPositionToWindowWithTransform、getMeasuredSize获取组件的位置和宽高信息。
 
 场景1：页面的元素遮挡关系后续不再发生变化，可以在页面布局时判断遮挡关系，可以监听UIInspector的layout回调，避免频繁回调消耗性能。

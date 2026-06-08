@@ -3,8 +3,10 @@ title: "功能介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-creative-label-introduction-0000001403226173
 format: md
+upstream_id: monetize/promotion/bp-functions-creative-label-introduction-0000001403226173
+last_sync: 2026-06-07
+sync_hash: 56044146
 ---
-
 # 功能介绍
 
 创意标签是指用标签描述创意内容详细信息，如：创意核心宣传点、素材人物、物品分类等。细化创意标签有助于系统识别、理解创意，找到高潜人群展示您的创意，提升推广效果。

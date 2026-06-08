@@ -3,8 +3,10 @@ title: "查询账户充值记录"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-finance2-0000001286213492
 format: md
+upstream_id: monetize/promotion/marketing-api-finance2-0000001286213492
+last_sync: 2026-06-07
+sync_hash: 7c7b5697
 ---
-
 # 查询账户充值记录
 
 ![](./img/note_3.0-zh-cn_14d3955a6ee1.png) 

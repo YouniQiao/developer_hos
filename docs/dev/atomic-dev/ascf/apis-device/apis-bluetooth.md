@@ -2,9 +2,10 @@
 title: "蓝牙-通用"
 original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-bluetooth
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-device/apis-bluetooth
+last_sync: 2026-06-07
+sync_hash: 18670035
 ---
-
-
 ## has.startBluetoothDevicesDiscovery
 
 has.startBluetoothDevicesDiscovery(Object object)

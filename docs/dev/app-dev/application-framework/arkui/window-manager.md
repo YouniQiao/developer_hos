@@ -2,9 +2,10 @@
 title: "窗口管理"
 original_url: /docs/dev/app-dev/application-framework/arkui/window-manager
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/window-manager
+last_sync: 2026-06-07
+sync_hash: a5a74198
 ---
-
-
 * **[窗口开发概述](/docs/dev/app-dev/application-framework/arkui/window-manager/window-overview)**
 * **[管理应用窗口（Stage模型）](/docs/dev/app-dev/application-framework/arkui/window-manager/application-window-stage)**
 * **[管理应用窗口（FA模型）](/docs/dev/app-dev/application-framework/arkui/window-manager/application-window-fa)**

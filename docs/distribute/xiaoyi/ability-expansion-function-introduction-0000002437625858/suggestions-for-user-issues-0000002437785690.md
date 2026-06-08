@@ -3,9 +3,10 @@ title: "用户问题建议"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/suggestions-for-user-issues-0000002437785690
 format: md
+upstream_id: distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/suggestions-for-user-issues-0000002437785690
+last_sync: 2026-06-07
+sync_hash: 5f02cfc2
 ---
-
-
 # 用户问题建议
 
 【用户问题建议】开关打开后，在每次智能体回复后，会为用户提供问题建议。

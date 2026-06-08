@@ -3,9 +3,10 @@ title: "后台CPU占用峰值"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-peak-background-cpu-usage-0420
 format: md
+upstream_id: tools/coding-debug/ide-peak-background-cpu-usage-0420
+last_sync: 2026-06-07
+sync_hash: 622da8de
 ---
-
-
 # 后台CPU占用峰值
 
 #### 规则详情

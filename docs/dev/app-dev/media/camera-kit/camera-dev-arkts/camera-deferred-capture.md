@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "分段式拍照(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-deferred-capture
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-deferred-capture
+last_sync: 2026-06-07
+sync_hash: e3918df9
 ---
-
-
 分段式拍照是相机的重要功能之一，即应用下发拍照任务后，系统将分多阶段上报不同质量的图片。
 
 * 在第一阶段，系统快速上报轻量处理的图片，轻量处理的图片比全质量图低，出图速度快。应用通过回调会收到一个[PhotoAsset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-photoasset)对象，通过该对象可调用媒体库接口，读取图片或落盘图片。

@@ -1,8 +1,10 @@
 ---
 title: "Buffer低功耗优化"
 original_url: /docs/quality/buffer-power-optimization
+upstream_id: /docs/quality/buffer-power-optimization
+last_sync: 2026-06-07
+sync_hash: 3e59d2e6
 ---
-
 # Buffer低功耗优化
 
 ## 概述

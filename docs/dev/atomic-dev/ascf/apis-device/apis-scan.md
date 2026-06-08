@@ -2,9 +2,10 @@
 title: "扫码"
 original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-scan
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-device/apis-scan
+last_sync: 2026-06-07
+sync_hash: 182580d5
 ---
-
-
 ## has.scanCode
 
 has.scanCode(Object object)

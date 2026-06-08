@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "基于接口拉起方式"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-launch-third-party-payment/payment-launch-third-party-payment-sdk
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-launch-third-party-payment/payment-launch-third-party-payment-sdk
+last_sync: 2026-06-07
+sync_hash: cd0a6857
 ---
-
-
 ![](./img/174a5aa4.png)
 
 * 当前基于接口拉起方式拉起三方支付收银台支持的支付方式参见[PayMethod](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-third-payment-service#paymethod)。

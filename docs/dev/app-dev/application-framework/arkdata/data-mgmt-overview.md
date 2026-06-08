@@ -2,9 +2,10 @@
 title: "ArkData简介"
 original_url: /docs/dev/app-dev/application-framework/arkdata/data-mgmt-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/data-mgmt-overview
+last_sync: 2026-06-07
+sync_hash: 521ce2af
 ---
-
-
 ## 功能介绍
 
 ArkData （方舟数据管理）为开发者提供数据存储、数据管理和数据同步能力，比如联系人应用数据可以保存到数据库中，提供数据库的安全、可靠以及共享访问等管理机制，也支持与手表同步联系人信息。
@@ -36,7 +37,7 @@ ArkData （方舟数据管理）为开发者提供数据存储、数据管理和
 
 本Kit支持模拟器，但与真机存在部分能力差异，具体差异如下。
 
-* 通用差异：请参见[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification#section1227613205203)。
+* 通用差异：请参见[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification#section1227613205203)。
 * KV-Store只支持在模拟器使用本地数据库增删改查能力，其余能力不支持。
 * RelationalStore只支持在模拟器使用本地数据库增删改查能力，其余能力不支持。
 * DataObject端端能力依赖接续框架，当前接续框架在模拟器上只支持手机。

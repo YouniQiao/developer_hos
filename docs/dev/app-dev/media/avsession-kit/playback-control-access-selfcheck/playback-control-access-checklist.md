@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "应用接入播控自检表"
 original_url: /docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/playback-control-access-checklist
 format: md
+upstream_id: dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/playback-control-access-checklist
+last_sync: 2026-06-07
+sync_hash: f4f9e07c
 ---
-
-
 如接入AVSession，请按照下表根据应用的业务场景接入，应用上架前请根据此表格自检，以确保应用的体验。
 
 如果应用包含在后台/锁屏状态下播放音频等业务场景，开发者需要规范[接入AVSession](/docs/dev/app-dev/media/avsession-kit/local-avsession/avsession-access-scene)；如应用仅需在前台播放音视频，开发者可选择不接入AVSession。

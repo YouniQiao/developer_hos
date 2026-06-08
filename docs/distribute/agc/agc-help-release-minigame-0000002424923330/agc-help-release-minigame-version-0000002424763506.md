@@ -2,9 +2,10 @@
 title: "上传版号材料"
 original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-version-0000002424763506
 format: md
+upstream_id: distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-version-0000002424763506
+last_sync: 2026-06-07
+sync_hash: 3bac048a
 ---
-
-
 根据法律法规，要求小游戏上架时提供对应的小游戏版号材料。
 
 #### 前提条件

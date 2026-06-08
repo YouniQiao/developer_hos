@@ -2,9 +2,10 @@
 title: "应用终止事件介绍"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-killed-events/hiappevent-watcher-app-killed-events
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-killed-events/hiappevent-watcher-app-killed-events
+last_sync: 2026-06-07
+sync_hash: 68a50bff
 ---
-
-
 ## 概述
 
 从API version 20开始，HiAppEvent提供接口用于订阅应用终止事件。

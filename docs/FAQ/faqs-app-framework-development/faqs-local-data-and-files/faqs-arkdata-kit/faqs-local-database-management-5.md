@@ -2,9 +2,10 @@
 format: md
 title: "关于数据库存储的位置，以及存储的区别"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-5
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-5
+last_sync: 2026-06-07
+sync_hash: d6206c9e
 ---
-
-
 **问题现象**
 
 * 使用ArkTS建立的数据库，数据存储的位置是哪里？即database.db文件位于何处？

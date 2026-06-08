@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "删除应用内快捷方式"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-productview/appgallery-productview-shortcut/appgallery-productview-removeshortcut
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-productview/appgallery-productview-shortcut/appgallery-productview-removeshortcut
+last_sync: 2026-06-07
+sync_hash: 6e258814
 ---
-
-
 ![](./img/eb31f0ef.png)
 
 6.1.1(24)版本开始，新增删除桌面快捷方式接口，支持用户删除桌面快捷方式。

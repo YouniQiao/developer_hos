@@ -2,9 +2,10 @@
 title: "数据防泄漏服务开发指导(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/data-protection-kit/dlp/dlp-guidelines-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/data-protection-kit/dlp/dlp-guidelines-ndk
+last_sync: 2026-06-07
+sync_hash: f2a5f784
 ---
-
-
 数据防泄漏（Data Loss Prevention，DLP）是系统提供的系统级的数据防泄漏解决方案，提供跨设备的文件的权限管理、加密存储、授权访问等能力。
 
 * 权限管理：查询当前DLP沙箱的权限信息。

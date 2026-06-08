@@ -2,9 +2,10 @@
 format: md
 title: "创建任务时提示“ai模型暂未启动，请稍后再试”"
 original_url: /docs/FAQ/faqs-deveco-testing/faqs-publish-test/faqs-publish-test-1
+upstream_id: FAQ/faqs-deveco-testing/faqs-publish-test/faqs-publish-test-1
+last_sync: 2026-06-07
+sync_hash: 6525e691
 ---
-
-
 1.首次运行DevEco Testing 客户端时，正在加载AI模型，请等待3~4分钟后重新创建任务。
 
 2.若在等待3~4分钟后仍然报错“AI模型暂未启动，请稍后再试”，则请检查环境中是否有安装必要组件Microsoft Visual C++ Redistributable 2015及更高版本（仅Windows）

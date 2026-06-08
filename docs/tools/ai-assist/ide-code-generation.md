@@ -3,8 +3,11 @@ title: "知识问答"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-code-generation
 format: md
+upstream_id: tools/ai-assist/ide-code-generation
+last_sync: 2026-06-07
+sync_hash: ffc6bff5
+upstream_hash: 3c4e1188ccbb
 ---
-
 
 # 知识问答
 

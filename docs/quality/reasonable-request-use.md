@@ -1,8 +1,10 @@
 ---
 title: "后台上传下载合理使用"
 original_url: /docs/quality/reasonable-request-use
+upstream_id: /docs/quality/reasonable-request-use
+last_sync: 2026-06-07
+sync_hash: fc4bbce4
 ---
-
 # 后台上传下载合理使用
 
 应用上传下载时，应使用系统服务，不要申请长时任务。

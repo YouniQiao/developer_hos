@@ -2,9 +2,10 @@
 title: "配置应用隐私说明"
 original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-privacy-desc-0000002515400290
 format: md
+upstream_id: distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-privacy-desc-0000002515400290
+last_sync: 2026-06-07
+sync_hash: 895be3cd
 ---
-
-
 如果检测到您的应用中涉及获取敏感隐私权限或者使用受限开放权限，您需要填写“应用隐私说明”。
 
 ![](../img/agc-help-release-minigame-privacy-desc-0000002515400290_0.png)

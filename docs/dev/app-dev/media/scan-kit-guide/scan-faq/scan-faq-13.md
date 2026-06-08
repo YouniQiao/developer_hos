@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "H5场景如何接入扫码"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-13
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-13
+last_sync: 2026-06-07
+sync_hash: 49eb9b95
 ---
-
-
 **问题现象**
 
 Scan Kit没有提供H5的方案接入扫码。

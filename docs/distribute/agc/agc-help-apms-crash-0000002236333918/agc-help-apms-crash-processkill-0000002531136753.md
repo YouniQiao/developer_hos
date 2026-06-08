@@ -2,9 +2,10 @@
 title: "分析PROCESS KILL问题"
 original_url: /docs/distribute/agc/agc-help-apms-crash-0000002236333918/agc-help-apms-crash-processkill-0000002531136753
 format: md
+upstream_id: distribute/agc/agc-help-apms-crash-0000002236333918/agc-help-apms-crash-processkill-0000002531136753
+last_sync: 2026-06-07
+sync_hash: 3eed1c98
 ---
-
-
 在异常管理主界面，点击“PROCESS\_KILL”卡片，即可查看PROCESS KILL类型的问题。此类问题通常是系统根据整体资源使用情况主动发起的强制终止应用进程的行为，尤其是应用在后台运行时被强制终止，往往与应用自身无关。因此，在预览页卡片中，仅展示应用在前台运行时被系统强制终止进程的次数。
 
 ![](../img/agc-help-apms-crash-processkill-0000002531136753_0.png "点击放大")

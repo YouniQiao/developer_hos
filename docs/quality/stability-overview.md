@@ -2,9 +2,10 @@
 title: "稳定性概览"
 original_url: /docs/quality/stability-overview
 format: md
+upstream_id: /docs/quality/stability-overview
+last_sync: 2026-06-07
+sync_hash: 90ed1d59
 ---
-
-
 # 稳定性概览
 
 应用稳定性是影响用户体验的重要因素之一，常见的稳定性问题包括：崩溃、应用冻屏、内存泄漏、内存越界等。HarmonyOS提供了完善的稳定性治理框架，围绕着稳定性治理活动，HarmonyOS提供了丰富的工具，工具覆盖开发、调试、上线及运维全生命周期。

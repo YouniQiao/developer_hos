@@ -3,9 +3,10 @@ title: "Frame分析"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-insight-session-frame
 format: md
+upstream_id: tools/coding-debug/ide-insight-session-frame
+last_sync: 2026-06-07
+sync_hash: 8b85ec85
 ---
-
-
 # Frame分析
 
 开发应用或元服务过程中，如果发现有表单滑动不顺畅、页面交互延迟、动效不流畅等卡顿现象时，可以使用DevEco Profiler提供的Frame场景分析能力，录制卡顿过程中的关键数据进行分析，从而识别出导致卡顿丢帧的原因。

@@ -2,9 +2,10 @@
 title: "创建标签"
 original_url: /docs/distribute/agc/agc-help-by-harmonyoslabel-scan-0000002410592806/agc-help-harmonyoslabel-atomic-0000002349175960
 format: md
+upstream_id: distribute/agc/agc-help-by-harmonyoslabel-scan-0000002410592806/agc-help-harmonyoslabel-atomic-0000002349175960
+last_sync: 2026-06-07
+sync_hash: 2bb3035e
 ---
-
-
 #### 前提条件
 
 1. 您已开通[近场服务权限](/docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-apply-permission-0000002382902149#section1337155051819)。

@@ -3,8 +3,10 @@ title: "投放管理"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-delivery-task-management-trafficking-0000001379958189
 format: md
+upstream_id: monetize/promotion/bpos-delivery-task-management-trafficking-0000001379958189
+last_sync: 2026-06-07
+sync_hash: 94d94998
 ---
-
 # 投放管理
 
 ## 复制

@@ -2,9 +2,10 @@
 title: "工具下载"
 original_url: /docs/dev/game-dev/games-quickgame-tool-download-0000002351893589
 format: md
+upstream_id: dev/game-dev/games-quickgame-tool-download-0000002351893589
+last_sync: 2026-06-07
+sync_hash: d3f217d9
 ---
-
-
 ![](./img/69c73c82.png)
 
 仅15.0.2.300及以上版本的小游戏服务支持快游戏开发者工具运行调试。如需查看当前设备内小游戏服务的版本号，请打开手机“设置”APP的“应用与服务”页面，点击右上角四点![](./img/f04fecc0.png)打开“更多应用”页面，查找并点击“小游戏服务”即可查看小游戏服务的版本号。若版本号低于15.0.2.300，请更新小游戏服务版本，若无法手动更新，请打开“应用市场”APP的“闲时更新”功能或更新手机系统，小游戏服务将会自动更新至新版本。

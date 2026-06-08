@@ -3,9 +3,10 @@ title: "游戏道具商城"
 original_url: /docs/dev/game-dev/games-center-prop-mall-0000002363562394
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-center-prop-mall-0000002363562394
+last_sync: 2026-06-07
+sync_hash: aac73cc5
 ---
-
-
 ## 概述
 
 游戏道具商城是直接面向玩家的游戏虚拟商品直购平台，是以黏性型商品为核心的流量阵地，是应用内购买的增强。开发者可通过道具商城提供在应用外购买其合作游戏内游戏虚拟物品的应用外购买产品服务，丰富游戏的服务形式及玩家体验。

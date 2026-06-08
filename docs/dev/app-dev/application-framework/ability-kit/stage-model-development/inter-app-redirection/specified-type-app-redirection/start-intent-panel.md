@@ -2,9 +2,10 @@
 title: "拉起指定类型的应用概述"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-intent-panel
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-intent-panel
+last_sync: 2026-06-07
+sync_hash: 77e09ee9
 ---
-
-
 本章节主要介绍拉起方应用如何通过指定应用类型、而非某个具体的应用，来实现应用跳转。通常有以下几种方式：
 
 * [通过startAbilityByType接口拉起垂类应用选择框](#通过startabilitybytype接口拉起垂类应用选择框)：调用startAbilityByType接口拉起对应的垂类应用选择框（目前支持拉起导航、金融、邮件、航班、快递类应用）。选择框中将展示已接入的垂类应用，由用户选择打开指定的目标应用。

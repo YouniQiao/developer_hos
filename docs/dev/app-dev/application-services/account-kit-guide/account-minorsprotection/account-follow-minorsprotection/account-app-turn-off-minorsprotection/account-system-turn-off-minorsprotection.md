@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "关闭系统的未成年人模式"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-minorsprotection/account-follow-minorsprotection/account-app-turn-off-minorsprotection/account-system-turn-off-minorsprotection
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-minorsprotection/account-follow-minorsprotection/account-app-turn-off-minorsprotection/account-system-turn-off-minorsprotection
+last_sync: 2026-06-07
+sync_hash: f94a1d85
 ---
-
-
 ## 场景介绍
 
 系统的未成年人模式已开启。用户打开应用，在应用内关闭系统未成年人模式。

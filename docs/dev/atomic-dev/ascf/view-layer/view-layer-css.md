@@ -2,9 +2,10 @@
 title: "CSS"
 original_url: /docs/dev/atomic-dev/ascf/view-layer/view-layer-css
 format: md
+upstream_id: dev/atomic-dev/ascf/view-layer/view-layer-css
+last_sync: 2026-06-07
+sync_hash: 3a2bff88
 ---
-
-
 ASCF框架样式和网页CSS样式大体相同，用于描述hxml的组件样式，决定hxml的组件显示效果。
 
 为了更适合开发元服务，ASCF对CSS进行了扩充，扩充的特性有样式导入、全局样式与局部样式等。

@@ -2,9 +2,10 @@
 format: md
 title: "两个UIAbility之间可通过哪些方法实现数据传递"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-31
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-31
+last_sync: 2026-06-07
+sync_hash: 34139e2f
 ---
-
-
 两个UIAbility之间数据传递的方法如下，建议优先采用排序在前的方法。
 
 * 方法一：调用startAbility接口启动另一个UIAbility时，通过wantInfo添加启动参数。也可以使用startAbilityForResult接口，获取被调用方UIAbility在关闭时返回的信息。

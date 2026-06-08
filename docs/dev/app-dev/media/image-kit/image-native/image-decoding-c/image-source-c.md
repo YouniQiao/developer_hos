@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用Image_NativeModule完成图片解码"
 original_url: /docs/dev/app-dev/media/image-kit/image-native/image-decoding-c/image-source-c
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-native/image-decoding-c/image-source-c
+last_sync: 2026-06-07
+sync_hash: 49ca9e24
 ---
-
-
 创建ImageSource，获取位图的宽、高信息，以及释放ImageSource实例。
 
 从API version 22开始支持对部分专业相机格式图片的预览图解码，具体格式包括：CR2、CR3、ARW、NEF、RAF、NRW、ORF、RW2、PEF、SRW。

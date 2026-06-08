@@ -3,9 +3,10 @@ title: "检查变量"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-native-variables
 format: md
+upstream_id: tools/coding-debug/ide-debug-native-variables
+last_sync: 2026-06-07
+sync_hash: 10384759
 ---
-
-
 # 检查变量
 
 调试时，在“Variables”页面查看变量，支持查看全局/静态变量、寄存器变量和局部变量。

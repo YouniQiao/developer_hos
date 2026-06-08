@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "人体跟踪与骨骼关键点识别（ArkTS）"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-body/arengine-body
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/get-body/arengine-body
+last_sync: 2026-06-07
+sync_hash: 2da2174d
 ---
-
-
 ## 约束与限制
 
 从6.1.0(23)开始，管理AR会话能力支持部分Phone、部分Tablet、TV设备。请参考[硬件要求](/docs/dev/app-dev/graphics/arengine-preparations#硬件要求)判断设备是否支持人体骨骼点识别与跟踪特性（[ARENGINE\_FEATURE\_TYPE\_BODY](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#arfeaturetype)）。

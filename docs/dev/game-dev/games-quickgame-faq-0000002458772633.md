@@ -2,8 +2,11 @@
 title: "小游戏（快游戏）FAQ"
 original_url: /docs/dev/game-dev/games-quickgame-faq-0000002458772633
 format: md
+upstream_id: dev/game-dev/games-quickgame-faq-0000002458772633
+last_sync: 2026-06-07
+sync_hash: 801013b9
+upstream_hash: 80dc258a2072
 ---
-
 
 * **[核准（备案）](/docs/dev/game-dev/games-quickgame-faq-recordal-0000002425133922)**
 * **[账号](/docs/dev/game-dev/games-quickgame-faq-account-0000002425293754)**

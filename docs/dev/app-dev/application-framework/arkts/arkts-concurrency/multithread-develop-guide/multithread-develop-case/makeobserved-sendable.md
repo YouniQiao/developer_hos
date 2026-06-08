@@ -2,9 +2,10 @@
 title: "ArkUI数据更新场景"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/makeobserved-sendable
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/makeobserved-sendable
+last_sync: 2026-06-07
+sync_hash: 37f229c7
 ---
-
-
 当需要网络下载或者本地生成的数据需要发送到UI线程进行展示时，由于ArkUI的标注和[@Sendable装饰器](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable#sendable装饰器)不能同时修饰变量和对象，因此需要使用[makeObserved](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-makeobserved)在ArkUI中导入可观测的Sendable共享数据。
 
 本示例说明以下场景：

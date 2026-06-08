@@ -3,9 +3,10 @@ title: "ohpm info"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-info
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-info
+last_sync: 2026-06-07
+sync_hash: ace00ed8
 ---
-
-
 # ohpm info
 
 查询指定三方库的具体信息。

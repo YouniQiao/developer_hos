@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Function Flow Runtime任务伙伴(C++)"
 original_url: /docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-cpp/ffrt-concurrency-job-partner-cpp
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-cpp/ffrt-concurrency-job-partner-cpp
+last_sync: 2026-06-07
+sync_hash: da03125c
 ---
-
-
 ## 概述
 
 从API version 20开始，FFRT支持Job Partner功能。在实际业务中，可能会遇到某一个线程（比如UI绘制线程）耗时很长，难以充分利用CPU多核能力的情况。此时，将原有线程的大任务拆分为多个小任务交给其他线程去执行是解决该问题的有效方法。但是，在实践中，会遇到两个问题：

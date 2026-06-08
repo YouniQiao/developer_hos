@@ -2,9 +2,10 @@
 title: "用户管理"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-user-management
+upstream_id: tools/ohpm/repo/ide-ohpm-user-management
+last_sync: 2026-06-07
+sync_hash: a1cf1b3c
 ---
-
-
 # 用户管理
 
 用户管理页面可以新增用户、修改用户类型、重置用户密码，删除用户和搜索用户，页面效果如下图所示：

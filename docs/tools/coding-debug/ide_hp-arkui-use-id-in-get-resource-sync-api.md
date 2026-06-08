@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-use-id-in-get-resource-sync-api"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-use-id-in-get-resource-sync-api
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-use-id-in-get-resource-sync-api
+last_sync: 2026-06-07
+sync_hash: bd1042fb
 ---
-
-
 # @performance/hp-arkui-use-id-in-get-resource-sync-api
 
 在使用API getColorSync和getStringSync时建议带id版本。

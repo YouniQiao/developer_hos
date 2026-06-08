@@ -2,9 +2,10 @@
 title: "如何获取对象的所有方法"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-115
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-115
+last_sync: 2026-06-07
+sync_hash: abfe8acd
 ---
-
-
 可以使用Object.getOwnPropertyNames获取所有方法的字符串数组。注意，获取对象的原型prototype需要文件后缀为.ts。参考代码如下：
 
 1. 定义需要获取方法的类文件testClass.ts；

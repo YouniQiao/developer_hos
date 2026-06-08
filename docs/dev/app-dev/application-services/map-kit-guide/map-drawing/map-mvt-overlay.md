@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "矢量图层"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-mvt-overlay
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-drawing/map-mvt-overlay
+last_sync: 2026-06-07
+sync_hash: 34bdb40d
 ---
-
-
 ## 场景介绍
 
 新增矢量图层，用于在基础地图之上叠加矢量数据。

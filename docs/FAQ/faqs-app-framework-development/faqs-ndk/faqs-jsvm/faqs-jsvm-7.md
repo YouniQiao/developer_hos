@@ -2,9 +2,10 @@
 format: md
 title: "如何解决应用运行时OH_JSVM_CreateVM多线程创建发生竞争，导致VM内部的成员变量（array_buffer_allocator_）内存异常应用退出问题"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-jsvm/faqs-jsvm-7
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-jsvm/faqs-jsvm-7
+last_sync: 2026-06-07
+sync_hash: 595a6f92
 ---
-
-
 **问题现象**
 
 崩溃的调用栈如下：

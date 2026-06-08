@@ -3,8 +3,10 @@ title: 图案锁
 sidebar_label: 图案锁
 original_url: /docs/design/components/input-components/pattern-lock
 format: md
+upstream_id: design/components/input-components/pattern-lock
+last_sync: 2026-06-07
+sync_hash: ac9c0d66
 ---
-
 # 图案锁
 
 这是一种通过绘制图案的行为作为解锁方式的控件。开发能力相关可参考 [PatternLock](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-patternlock) 文档。

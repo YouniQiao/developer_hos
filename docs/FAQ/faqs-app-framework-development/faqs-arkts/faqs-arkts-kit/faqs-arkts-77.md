@@ -2,9 +2,10 @@
 title: "如何在ArkTS中实现运行时注解的能力"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-77
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-77
+last_sync: 2026-06-07
+sync_hash: 3ca057f9
 ---
-
-
 可以使用TS三方库reflect-metadata获得类似Java运行时注解的功能。参考[reflect-metadata](https://gitcode.com/openharmony-tpc/openharmony_tpc_samples/tree/master/reflect-metadata#https://gitee.com/openharmony-tpc/docs/blob/master/OpenHarmony_har_usage.md)
 
 reflect-metadata提供的装饰器允许对类、属性和方法进行标记，并提供了接口以在运行时获取这些标记信息。

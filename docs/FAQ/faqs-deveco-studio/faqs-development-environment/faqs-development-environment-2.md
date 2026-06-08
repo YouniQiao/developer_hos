@@ -2,8 +2,11 @@
 format: md
 title: "导入Sample时，提示连接Gitee超时"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-2
+upstream_id: FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-2
+last_sync: 2026-06-07
+sync_hash: 7e21a2fd
+upstream_hash: 55d7a97a9b76
 ---
-
 
 **问题现象**
 

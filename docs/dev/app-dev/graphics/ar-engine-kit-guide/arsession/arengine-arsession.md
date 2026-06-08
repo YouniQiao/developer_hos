@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "管理AR会话（ArkTS）"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/arsession/arengine-arsession
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/arsession/arengine-arsession
+last_sync: 2026-06-07
+sync_hash: 58cb84a5
 ---
-
-
 本章节给出了关键开发步骤，完整代码可以参考[示例代码](https://gitcode.com/HarmonyOS_Samples/arengine_samplecode_clientdemo_arkts)。
 
 ## 约束与限制

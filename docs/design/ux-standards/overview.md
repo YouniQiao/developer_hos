@@ -3,8 +3,10 @@ title: 概述
 sidebar_label: 概述
 original_url: /docs/design/ux-standards/overview
 format: md
+upstream_id: design/ux-standards/overview
+last_sync: 2026-06-07
+sync_hash: 7ef58cd9
 ---
-
 # 概述
 
 ### 范围

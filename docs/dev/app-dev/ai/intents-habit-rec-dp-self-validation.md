@@ -2,9 +2,10 @@
 title: "开发者测试"
 original_url: /docs/dev/app-dev/ai/intents-habit-rec-dp-self-validation
 format: md
+upstream_id: dev/app-dev/ai/intents-habit-rec-dp-self-validation
+last_sync: 2026-06-07
+sync_hash: 79e7b49a
 ---
-
-
 Intents Kit向开发者提供真机测试能力，即开发者可连接设备进行调测。开发者完成代码开发之后，功能正式上架应用市场前，可以在HarmonyOS 5及以上的设备上面进行自验证，打磨体验。真机测试分为三个步骤：基础信息提供，环境准备，联调验证。
 
 ## 基础信息提供

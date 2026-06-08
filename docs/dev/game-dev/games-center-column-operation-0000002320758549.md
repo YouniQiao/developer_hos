@@ -2,9 +2,10 @@
 title: "内容创作管理"
 original_url: /docs/dev/game-dev/games-center-column-operation-0000002320758549
 format: md
+upstream_id: dev/game-dev/games-center-column-operation-0000002320758549
+last_sync: 2026-06-07
+sync_hash: f9c7defc
 ---
-
-
 游戏中心精品内容专栏Tab展示优质游戏内容资讯。您可以在AGC控制台创建并管理自己游戏的相关内容，提交上线有机会展示到游戏中心内容专栏不同区位，让更多的玩家注意到您的游戏讯息，提升关注度。
 
 ## 展示效果

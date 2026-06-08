@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Account Kit常见问题"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-faq
+last_sync: 2026-06-07
+sync_hash: 2b6f8ae8
 ---
-
-
 * **[1001500001 应用指纹证书校验失败的可能原因和解决办法](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-1)**
 * **[1001502014 应用未申请scopes或permissions权限的可能原因和解决方法](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-2)**
 * **[一键登录场景下无法获取到匿名手机号如何解决](/docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-3)**

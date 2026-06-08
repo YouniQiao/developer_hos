@@ -2,9 +2,10 @@
 format: md
 title: "如何去除Tabs组件两侧的蒙层"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-56
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-56
+last_sync: 2026-06-07
+sync_hash: 2745d4e7
 ---
-
-
 Tabs组件的fadingEdge属性表示页签超过容器宽度时是否渐隐消失，默认值为true，设置为false时则直接截断显示，不产生任何渐变效果。
 
 ```

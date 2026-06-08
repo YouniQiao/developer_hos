@@ -2,9 +2,10 @@
 title: "列表与网格概述"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-list-and-grid/arkts-list-grid-development-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-list-and-grid/arkts-list-grid-development-overview
+last_sync: 2026-06-07
+sync_hash: 70610918
 ---
-
-
 许多应用存在滚动展示同类项目集合的需求，例如显示图片、视频、音乐、新闻、商品等。此类场景可以根据项目排列方式分别选择[List](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-list-and-grid/arkts-layout-development-create-list)、[Grid](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-list-and-grid/arkts-layout-development-create-grid)、[WaterFlow](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-list-and-grid/arkts-layout-development-create-waterflow)实现，在圆形屏幕推荐使用[ArcList](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-list-and-grid/arkts-layout-development-create-arclist)。
 
 ## 列表

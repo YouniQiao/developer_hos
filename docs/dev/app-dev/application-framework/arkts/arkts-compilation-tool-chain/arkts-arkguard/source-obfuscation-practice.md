@@ -2,9 +2,10 @@
 title: "不同包类型的源码混淆建议"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-practice
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-practice
+last_sync: 2026-06-07
+sync_hash: ac8623ef
 ---
-
-
 不同包类型的用途和构建流程存在差异，对不同包类型使用混淆时，开发者需要注意不同事项。本文针对[HAP](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package)、[HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package)和[HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp)三种包类型，分别提供混淆建议，帮助开发者高效使用混淆。简要对应关系如下：**HAP**为应用安装与运行的功能模块，适用于**应用端功能开发与发布**；**HAR**为静态共享包，适用于**组件化、能力沉淀与多模块/多工程复用**；**HSP**为应用内动态共享包，适用于**同一应用内多模块在运行时共享代码与资源**。
 
 为了对混淆在不同包类型下的行为有更清晰的理解，建议开发者在对不同包类型进行配置前，充分了解[混淆原理](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation)及[混淆开启流程](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-guide#开启混淆步骤)，并优先阅读[Stage模型应用程序包结构](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-structure-stage)（了解不同包类型之间的差异点）。
@@ -66,8 +67,8 @@ format: md
 
 解决方案：
 
-1. 使用[混淆助手配置保留选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-obfuscation#section19439175917123)，选择HAR对外暴露的接口场景，并将生成的白名单添加到HAR的consumer-rules.txt文件中。
-2. 将本地源码HAR改造为[字节码HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-har#section16598338112415)，单独编译生成对应的HAR包，然后依赖此HAR包。
+1. 使用[混淆助手配置保留选项](/docs/tools/coding-debug/ide-build-obfuscation#section19439175917123)，选择HAR对外暴露的接口场景，并将生成的白名单添加到HAR的consumer-rules.txt文件中。
+2. 将本地源码HAR改造为[字节码HAR](/docs/tools/coding-debug/ide-hvigor-build-har#section16598338112415)，单独编译生成对应的HAR包，然后依赖此HAR包。
 
 ### 发布态源码HAR包
 

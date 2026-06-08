@@ -2,9 +2,10 @@
 title: "修改Profile绑定的设备"
 original_url: /docs/distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-update-provision-0000002469198766
 format: md
+upstream_id: distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-update-provision-0000002469198766
+last_sync: 2026-06-07
+sync_hash: 353b5322
 ---
-
-
 #### 功能介绍
 
 此接口用于修改调试Profile绑定的调试设备，或者修改指定设备发布Profile绑定的测试设备。

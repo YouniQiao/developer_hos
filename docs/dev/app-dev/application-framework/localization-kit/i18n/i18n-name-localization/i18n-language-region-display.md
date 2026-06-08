@@ -2,9 +2,10 @@
 title: "本地化语言与地区名称"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-name-localization/i18n-language-region-display
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/i18n/i18n-name-localization/i18n-language-region-display
+last_sync: 2026-06-07
+sync_hash: 78739841
 ---
-
-
 ## 功能介绍
 
 本地化语言与地区名称是指语言和地区按照本地的语言习惯显示，确保用户可识别，主要在展示语言与地区名称的场景下使用。例如，在简体中文环境下，简体中文显示为“简体中文”，英文显示为“英文”；在英文环境下，简体中文显示为“Simplified Chinese”，英文显示为“English”。

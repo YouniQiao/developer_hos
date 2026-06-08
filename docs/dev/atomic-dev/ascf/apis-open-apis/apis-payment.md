@@ -2,9 +2,10 @@
 title: "支付"
 original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-payment
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-open-apis/apis-payment
+last_sync: 2026-06-07
+sync_hash: e976a206
 ---
-
-
 ## has.requestPayment
 
 has.requestPayment(Object object)

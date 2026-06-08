@@ -3,9 +3,10 @@ title: "@correctness/image-pixel-format-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-image-pixel-format-check
 format: md
+upstream_id: tools/coding-debug/ide-image-pixel-format-check
+last_sync: 2026-06-07
+sync_hash: 85776cd1
 ---
-
-
 # @correctness/image-pixel-format-check
 
 在使用Image组件[createPixelMap](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-f#imagecreatepixelmap8)接口时，建议不要选择RGB\_565档位，避免出现色阶问题。

@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-implied-eval"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-implied-eval
 format: md
+upstream_id: tools/coding-debug/ide_no-implied-eval
+last_sync: 2026-06-07
+sync_hash: ba4ddb99
 ---
-
-
 # @typescript-eslint/no-implied-eval
 
 禁止使用类似“eval()”的方法。

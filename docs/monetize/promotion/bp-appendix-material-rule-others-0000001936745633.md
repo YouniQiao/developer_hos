@@ -3,8 +3,10 @@ title: "其他"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-appendix-material-rule-others-0000001936745633
 format: md
+upstream_id: monetize/promotion/bp-appendix-material-rule-others-0000001936745633
+last_sync: 2026-06-07
+sync_hash: 1df6f179
 ---
-
 # 其他
 
 ## 短视频

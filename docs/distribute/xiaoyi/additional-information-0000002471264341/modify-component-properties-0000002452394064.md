@@ -3,9 +3,10 @@ title: "修改组件属性"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/additional-information-0000002471264341/modify-component-properties-0000002452394064
 format: md
+upstream_id: distribute/xiaoyi/additional-information-0000002471264341/modify-component-properties-0000002452394064
+last_sync: 2026-06-07
+sync_hash: f7e8668a
 ---
-
-
 # 修改组件属性
 
 提供以下组件，可修改其部分属性

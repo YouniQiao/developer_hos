@@ -2,9 +2,10 @@
 title: "个人数据处理说明"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-personal-data-processing-notic
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-personal-data-processing-notic
+last_sync: 2026-06-07
+sync_hash: 52b0114e
 ---
-
-
 华为是数据处理者，不是数据控制者，数据使用目的和方式由开发者决定。
 
 此文档针对华为作为最终用户数据处理者，开发者作为最终用户数据控制者的数据处理进行说明，包括：

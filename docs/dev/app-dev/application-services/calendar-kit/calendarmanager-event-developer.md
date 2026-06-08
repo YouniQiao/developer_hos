@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "日程管理"
 original_url: /docs/dev/app-dev/application-services/calendar-kit/calendarmanager-event-developer
 format: md
+upstream_id: dev/app-dev/application-services/calendar-kit/calendarmanager-event-developer
+last_sync: 2026-06-07
+sync_hash: 69b5f99b
 ---
-
-
 日程指特定的事件或者活动安排，日程管理即对这些事件、活动进行规划和控制，能更有效地利用相关资源、提高生产力和效率，使人们更好地管理时间和任务。
 
 Calendar Kit中的日程[Event](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-calendarmanager#event)归属于某个对应的日历账户[Calendar](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-calendarmanager#calendar)，一个日历账户下可以有多个日程，一个日程只属于一个Calendar。

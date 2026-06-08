@@ -2,9 +2,10 @@
 title: "配置应用审核信息"
 original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-review-0000002368317832
 format: md
+upstream_id: distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-review-0000002368317832
+last_sync: 2026-06-07
+sync_hash: a2f9ff79
 ---
-
-
 审核人员需要测试您的游戏。
 
 若游戏的部分功能需要玩家通过身份验证后才能使用，例如登录权限、在线购买。请为审核人员提供测试账号，以便审核人员使用测试账号测试受限功能。

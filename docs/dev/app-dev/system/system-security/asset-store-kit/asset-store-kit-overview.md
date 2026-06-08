@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Asset Store Kit简介"
 original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-store-kit-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/asset-store-kit/asset-store-kit-overview
+last_sync: 2026-06-07
+sync_hash: 83fc1cbb
 ---
-
-
 Asset Store Kit（关键资产存储服务，简称ASSET）包含了一系列开放接口，用于提供用户短敏感数据的安全存储及管理功能。这类短敏感数据包括但不限于密码类（账号/密码）、Token类（应用凭据）以及其他关键明文（如银行卡号）等长度较短的敏感信息。
 
 ## 基本概念
@@ -72,7 +73,7 @@ Asset Store Kit（关键资产存储服务，简称ASSET）包含了一系列开
 
 本Kit支持模拟器。
 
-模拟器与真机存在通用差异，详情请参见详情请参见[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification)。
+模拟器与真机存在通用差异，详情请参见详情请参见[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification)。
 
 ## 与相关Kit的关系
 

@@ -3,8 +3,10 @@ title: "鲸鸿动能竞价资源介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-jhdnggjjsmzyjs-0000002485600781
 format: md
+upstream_id: monetize/promotion/ads-jhdnggjjsmzyjs-0000002485600781
+last_sync: 2026-06-07
+sync_hash: f828dc01
 ---
-
 # 鲸鸿动能竞价资源介绍
 
 ![](./img/zh-cn_image_0000002568633690_fa78612ce5eb.png)

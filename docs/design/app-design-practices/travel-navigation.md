@@ -3,8 +3,10 @@ title: 出行导航类
 sidebar_label: 出行导航类
 original_url: /docs/design/app-design-practices/travel-navigation
 format: md
+upstream_id: design/app-design-practices/travel-navigation
+last_sync: 2026-06-07
+sync_hash: 85f3b730
 ---
-
 # 出行导航类
 
 |  |

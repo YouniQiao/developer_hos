@@ -2,9 +2,10 @@
 title: "意图调用"
 original_url: /docs/distribute/agc/agc-help-insight-config-beacon-0000002270752670/agc-help-call-intents-beacon-0000002443485897
 format: md
+upstream_id: distribute/agc/agc-help-insight-config-beacon-0000002270752670/agc-help-call-intents-beacon-0000002443485897
+last_sync: 2026-06-07
+sync_hash: d49f3d90
 ---
-
-
 您需要实现InsightIntentExecutor，并在对应回调中实现打开落地页（即点击小艺建议卡片跳转的界面）的能力。
 
 下文以“旅游”垂域下的“查看旅游攻略”意图场景为例，意图调用字段定义请参考[查看意图Schema](/docs/distribute/agc/agc-help-insight-config-beacon-0000002270752670/agc-help-confirm-intent-name-beacon-0000002443645837#section1557310291856)附件中的旅游垂类Schema。

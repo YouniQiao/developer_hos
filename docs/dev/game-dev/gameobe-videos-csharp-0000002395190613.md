@@ -2,9 +2,10 @@
 title: "开发实战课"
 original_url: /docs/dev/game-dev/gameobe-videos-csharp-0000002395190613
 format: md
+upstream_id: dev/game-dev/gameobe-videos-csharp-0000002395190613
+last_sync: 2026-06-07
+sync_hash: 3af37114
 ---
-
-
 针对如何在游戏中使用华为联机对战服务，并快速实现多人联机对战功能，您可以通过下面实战课视频进一步获得演示与指导。
 
 |  |  |

@@ -3,9 +3,10 @@ title: "查看Cpp Crash（进程崩溃）日志"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-faultlog-cppcrash
 format: md
+upstream_id: tools/coding-debug/ide-faultlog-cppcrash
+last_sync: 2026-06-07
+sync_hash: 26490655
 ---
-
-
 # 查看Cpp Crash（进程崩溃）日志
 
 从DevEco Studio 6.0.0 Beta1版本开始，支持对Cpp Crash类型的FaultLog，进行结构化展示和日志过滤。

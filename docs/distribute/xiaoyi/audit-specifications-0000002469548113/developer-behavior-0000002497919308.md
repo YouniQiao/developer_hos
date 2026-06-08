@@ -3,9 +3,10 @@ title: "内容合规信息中人工智能生成合成内容标识和大模型备
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/audit-specifications-0000002469548113/developer-behavior-0000002497919308
 format: md
+upstream_id: distribute/xiaoyi/audit-specifications-0000002469548113/developer-behavior-0000002497919308
+last_sync: 2026-06-07
+sync_hash: a214d2a0
 ---
-
-
 # 内容合规信息中人工智能生成合成内容标识和大模型备案FAQ
 
 为了帮助您的智能体尽可能顺利地通过审核，请查看下列可能会导致审核流程延误或审核不通过的常见问题：

@@ -2,9 +2,10 @@
 format: md
 title: "向用户申请授予权限但被用户拒绝后，如何处理才能避免应用二次进入时崩溃"
 original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-access-control/faqs-access-control-12
+upstream_id: FAQ/faqs-system-development/faqs-security/faqs-access-control/faqs-access-control-12
+last_sync: 2026-06-07
+sync_hash: adaaacf1
 ---
-
-
 **可能原因**
 
 * 业务功能所需的权限被用户拒绝后，直接返回结果。

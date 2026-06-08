@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "自定义界面扫码如何增加重试机制"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-17
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-17
+last_sync: 2026-06-07
+sync_hash: 2fc42d69
 ---
-
-
 **问题现象**
 
 调用customScan.[init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-customscan-api#customscaninit)成功后，调用customScan.[start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-customscan-api#customscanstart-1)启动相机流时抛出1000500001内部错误。

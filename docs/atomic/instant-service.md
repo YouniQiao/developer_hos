@@ -2,9 +2,10 @@
 title: "服务直达支持元服务"
 original_url: /docs/dev/atomic-dev/instant-service/instant-service
 format: md
+upstream_id: dev/atomic-dev/instant-service/instant-service
+last_sync: 2026-06-07
+sync_hash: 5224bba2
 ---
-
-
 * **[概览](/docs/dev/atomic-dev/instant-service/instant-service-overview)**
 * **[角色权限](/docs/dev/atomic-dev/instant-service/instant-service-role-permissions)**
 * **[通过界面接入服务直达](/docs/dev/atomic-dev/instant-service-gui/instant-service-gui)**

@@ -2,9 +2,10 @@
 format: md
 title: "签名密钥库文件口令错误"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-13
+upstream_id: FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-13
+last_sync: 2026-06-07
+sync_hash: f36ac42c
 ---
-
-
 **问题现象**
 
 打包签名提示“**Init keystore failed: keystore password was incorrect**”错误。

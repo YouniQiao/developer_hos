@@ -3,9 +3,10 @@ title: "aa工具"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/aa-tool
 format: md
+upstream_id: tools/cli-tools/aa-tool
+last_sync: 2026-06-07
+sync_hash: 1265cda2
 ---
-
-
 # aa工具
 
 Ability assistant（Ability助手，简称为aa），是用于启动应用和启动测试用例的工具，为开发者提供基本的应用调试和测试能力，例如启动应用组件、强制停止进程、打印应用组件相关信息等。

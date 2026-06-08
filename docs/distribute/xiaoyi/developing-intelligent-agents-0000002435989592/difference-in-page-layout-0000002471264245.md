@@ -3,9 +3,10 @@ title: "编排-模型选择&角色指令"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/developing-intelligent-agents-0000002435989592/difference-in-page-layout-0000002471264245
 format: md
+upstream_id: distribute/xiaoyi/developing-intelligent-agents-0000002435989592/difference-in-page-layout-0000002471264245
+last_sync: 2026-06-07
+sync_hash: 9e6b3af6
 ---
-
-
 # 编排-模型选择&角色指令
 
 在编排区域，开发者可以切换不同的智能体编排模式。不同的编排模式各模块支持能力范围有所不同，下面我们会对各能力项逐一进行讲解。

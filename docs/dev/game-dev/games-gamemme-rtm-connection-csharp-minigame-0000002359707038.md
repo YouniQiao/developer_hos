@@ -2,9 +2,10 @@
 title: "监听RTM连接状态"
 original_url: /docs/dev/game-dev/games-gamemme-rtm-connection-csharp-minigame-0000002359707038
 format: md
+upstream_id: dev/game-dev/games-gamemme-rtm-connection-csharp-minigame-0000002359707038
+last_sync: 2026-06-07
+sync_hash: 5d7376b6
 ---
-
-
 当玩家登录、登出或者网络连接发生变化时，RTM连接状态会发生改变。因此，为了保证消息收发顺畅，需实时监听RTM的连接状态变化，确保RTM处于连接状态。
 
 ## 前提条件

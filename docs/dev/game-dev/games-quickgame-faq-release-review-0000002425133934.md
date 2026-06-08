@@ -2,9 +2,10 @@
 title: "上架审核"
 original_url: /docs/dev/game-dev/games-quickgame-faq-release-review-0000002425133934
 format: md
+upstream_id: dev/game-dev/games-quickgame-faq-release-review-0000002425133934
+last_sync: 2026-06-07
+sync_hash: 89adcd6a
 ---
-
-
 ## 提交审核
 
 ### 快游戏提交审核后需要审核多久？

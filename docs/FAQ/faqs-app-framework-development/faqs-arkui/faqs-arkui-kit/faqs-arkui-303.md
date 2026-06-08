@@ -2,9 +2,10 @@
 title: "Toggle组件设置拖动的同时如何屏蔽其本身的点击手势"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-303
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-303
+last_sync: 2026-06-07
+sync_hash: 0ef557cb
 ---
-
-
 通过isDragging状态变量区分拖动与点击操作，在拖动过程中屏蔽toggleIsOn的状态变更，示例代码如下：
 
 ```

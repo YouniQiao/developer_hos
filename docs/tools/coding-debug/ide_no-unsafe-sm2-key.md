@@ -3,9 +3,10 @@ title: "@security/no-unsafe-sm2-key"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unsafe-sm2-key
 format: md
+upstream_id: tools/coding-debug/ide_no-unsafe-sm2-key
+last_sync: 2026-06-07
+sync_hash: 078e503d
 ---
-
-
 # @security/no-unsafe-sm2-key
 
 此规则禁止不安全的非对称密钥类型SM2算法。推荐使用SM2\_256|SHA256算法和RSA算法，算法详情参见：[非对称加解密算法](`https://`developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/aegis-encryption-and-decryption-asymmetric-0000001907932453)和[非对称密钥加解密算法规格](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-encrypt-decrypt-spec#rsa)。

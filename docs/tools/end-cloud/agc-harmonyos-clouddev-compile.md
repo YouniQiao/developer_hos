@@ -1,12 +1,12 @@
 ---
-
 title: "打包测试"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-compile
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-compile
+last_sync: 2026-06-07
+sync_hash: fbdd3d71
 ---
-
-
 # 打包测试
 
 端云两侧工程代码全部开发完成后，建议您在本地进行调试，以查看和验证应用/元服务运行效果，减少发布过程中可能遇到的问题，具体请参见[应用/服务调试](./ide-debug-device)。

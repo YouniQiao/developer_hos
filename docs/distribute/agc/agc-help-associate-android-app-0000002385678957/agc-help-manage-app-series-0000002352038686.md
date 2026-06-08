@@ -2,9 +2,10 @@
 title: "管理应用系列进行关联"
 original_url: /docs/distribute/agc/agc-help-associate-android-app-0000002385678957/agc-help-manage-app-series-0000002352038686
 format: md
+upstream_id: distribute/agc/agc-help-associate-android-app-0000002385678957/agc-help-manage-app-series-0000002352038686
+last_sync: 2026-06-07
+sync_hash: 39fe2d9e
 ---
-
-
 应用系列是指您可将同一应用的不同变体（如：HarmonyOS版本、Android版本、元服务等不同格式），关联在同一个应用系列里面，有助于提升您的应用分发量及用户跳转体验。
 
 当用户设备升级至HarmonyOS 5及以上版本时，可以通过应用系列里的关联关系，快速将设备上的Android应用自动替换为HarmonyOS应用，并完成用户数据迁移。

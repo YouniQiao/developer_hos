@@ -2,9 +2,10 @@
 title: "AppDomainConfig"
 original_url: /docs/distribute/agc/agc-help-domain-api-data-0000002237343328/agc-help-domain-api-data-appdomainconfig-0000002237503148
 format: md
+upstream_id: distribute/agc/agc-help-domain-api-data-0000002237343328/agc-help-domain-api-data-appdomainconfig-0000002237503148
+last_sync: 2026-06-07
+sync_hash: cf106331
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | appId | O | String(32) | 元服务的应用ID。 |

@@ -2,9 +2,10 @@
 title: "if/else：条件渲染"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-ifelse
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-ifelse
+last_sync: 2026-06-07
+sync_hash: f7eb6e62
 ---
-
-
 ArkTS提供了渲染控制能力。条件渲染可根据应用状态，使用if、else和else if渲染相应的UI内容。
 
 ![](./img/8f3e47a9.png)

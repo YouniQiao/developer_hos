@@ -2,9 +2,10 @@
 title: "状态刷新控制"
 original_url: /docs/quality/state-refresh
 format: md
+upstream_id: /docs/quality/state-refresh
+last_sync: 2026-06-07
+sync_hash: 125ec177
 ---
-
-
 # 状态刷新控制
 
 在声明式UI编程范式中，UI是应用程序状态的函数，应用程序状态的修改会更新相应的UI界面。ArkUI采用了[MVVM](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-mvvm)模式，其中ViewModel将数据与视图绑定在一起，更新数据的时候直接更新视图。如下图所示：

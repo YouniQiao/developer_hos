@@ -3,9 +3,10 @@ title: "@typescript-eslint/class-literal-property-style"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_class-literal-property-style
 format: md
+upstream_id: tools/coding-debug/ide_class-literal-property-style
+last_sync: 2026-06-07
+sync_hash: 29413525
 ---
-
-
 # @typescript-eslint/class-literal-property-style
 
 建议类中的字面量属性对外暴露时，保持一致的风格。

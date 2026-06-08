@@ -2,9 +2,10 @@
 title: "HarmonyOS ABI"
 original_url: /docs/dev/ndk-dev/ohos-abi
 format: md
+upstream_id: dev/ndk-dev/ohos-abi
+last_sync: 2026-06-07
+sync_hash: 49343ed9
 ---
-
-
 HarmonyOS系统支持丰富的设备形态，支持多种架构指令集，支持多种操作系统内核；HarmonyOS遵循“OHOS”ABI定义，保持与社区ABI的一致性。
 
 本文定义了"OHOS" ABI（Application Binary Interface）的基础标准，包含如下方面。

@@ -2,9 +2,10 @@
 title: "代码开发"
 original_url: /docs/dev/game-dev/gameobe-code-development-0000002361670588
 format: md
+upstream_id: dev/game-dev/gameobe-code-development-0000002361670588
+last_sync: 2026-06-07
+sync_hash: d91e65a0
 ---
-
-
 * **[接入流程](/docs/dev/game-dev/gameobe-flowchart-real-time-server-0000002395350533)**
 * **[消息通信](/docs/dev/game-dev/gameobe-gamedata-real-time-server-0000002361510720)**
 * **[房间管理](/docs/dev/game-dev/gameobe-room-real-time-server-0000002395190637)**

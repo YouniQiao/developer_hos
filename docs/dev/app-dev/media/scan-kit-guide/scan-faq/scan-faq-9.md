@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "自定义界面扫码黑屏现象"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-9
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-9
+last_sync: 2026-06-07
+sync_hash: b2fc1ceb
 ---
-
-
 **问题现象**
 
 自定义启动相机却显示黑屏现象。

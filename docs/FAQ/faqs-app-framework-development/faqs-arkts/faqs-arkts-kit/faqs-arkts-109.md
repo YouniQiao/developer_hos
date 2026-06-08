@@ -2,9 +2,10 @@
 format: md
 title: "ModuleManager模块加载流程是什么样的"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-109
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-109
+last_sync: 2026-06-07
+sync_hash: 875cef19
 ---
-
-
 napi\_module结构体包含模块注册所需的信息，具体定义如下：
 
 ```

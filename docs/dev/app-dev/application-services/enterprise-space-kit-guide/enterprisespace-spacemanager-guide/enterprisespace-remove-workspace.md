@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "移除工作空间"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-remove-workspace
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-remove-workspace
+last_sync: 2026-06-07
+sync_hash: a0f8d007
 ---
-
-
 ## 场景介绍
 
 Enterprise Space Kit为企业用户提供移除工作空间的能力。

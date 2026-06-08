@@ -2,9 +2,10 @@
 title: "应用间跳转实践概览"
 original_url: /docs/dev/app-dev/application-framework/inter-application-redirection
 format: md
+upstream_id: dev/app-dev/application-framework/inter-application-redirection
+last_sync: 2026-06-07
+sync_hash: 3e4cddc0
 ---
-
-
 ## 概述
 
 在移动生态中，用户常常需要跨多个应用完成一次完整任务（例如“浏览-下单-支付-分享”）。如果每一步都要手动切换应用，体验将被频繁中断。系统提供的“应用间跳转能力”通过统一的链接协议和系统级路由，实现“一键直达”的流畅体验，显著提升用户效率和满意度，从而提升应用转化率与用户留存率。

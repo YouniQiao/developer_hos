@@ -3,9 +3,10 @@ title: "产品文本"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-producttext-0000002396467016
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-producttext-0000002396467016
+last_sync: 2026-06-07
+sync_hash: 5c2949ca
 ---
-
-
 # 产品文本
 
 <strong>表1</strong>

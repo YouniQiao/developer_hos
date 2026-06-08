@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "区划选择"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-advanced-controls/map-location-division
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-advanced-controls/map-location-division
+last_sync: 2026-06-07
+sync_hash: 0be3eae4
 ---
-
-
 ## 场景介绍
 
 从6.1.1(24)开始，支持区划选择控件最大显示层级。

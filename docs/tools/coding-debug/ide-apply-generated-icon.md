@@ -2,9 +2,10 @@
 title: "生成单层图标"
 format: md
 original_url: /docs/tools/coding-debug/ide-apply-generated-icon
+upstream_id: tools/coding-debug/ide-apply-generated-icon
+last_sync: 2026-06-07
+sync_hash: 2ee6bcc7
 ---
-
-
 # 生成单层图标
 
 DevEco Studio支持Image Asset功能，帮助开发者生成适应不同设备、不同屏幕密度的图标，并展示图标在目录中的具体位置。Image Asset支持生成以下两种类型图标：

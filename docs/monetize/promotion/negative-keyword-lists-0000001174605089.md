@@ -3,8 +3,10 @@ title: "否定关键词管理列表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/negative-keyword-lists-0000001174605089
 format: md
+upstream_id: monetize/promotion/negative-keyword-lists-0000001174605089
+last_sync: 2026-06-07
+sync_hash: 9f124561
 ---
-
 # 否定关键词管理列表
 
 ## 概述

@@ -2,9 +2,10 @@
 format: md
 title: "预览功能使用过程中，可能无法使用帮助菜单压缩日志按钮收集日志"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-previewer-operating/faqs-previewer-operating-2
+upstream_id: FAQ/faqs-deveco-studio/faqs-previewer-operating/faqs-previewer-operating-2
+last_sync: 2026-06-07
+sync_hash: b90d3fcc
 ---
-
-
 **问题现象**
 
 当同时预览多个工程时，点击帮助菜单中的“压缩日志”按钮，可能会因日志文件被占用而无法压缩。

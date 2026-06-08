@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "画布的获取与绘制结果的显示（ArkTS）"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/canvas-get-result-draw/canvas-get-result-draw-arkts
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/canvas-get-result-draw/canvas-get-result-draw-arkts
+last_sync: 2026-06-07
+sync_hash: 24815176
 ---
-
-
 ## 场景介绍
 
 Canvas即画布，提供绘制基本图形的能力，用于在屏幕上绘制图形和处理图形。开发者可以通过Canvas实现自定义的绘图效果，增强应用的用户体验。

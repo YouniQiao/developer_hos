@@ -1,6 +1,10 @@
 ---
 title: "应用UX体验建议"
 original_url: /docs/experience-suggestions/experience-suggestions-ux
+upstream_id: experience-suggestions/experience-suggestions-ux
+last_sync: 2026-06-07
+sync_hash: 0d38bfa8
+upstream_hash: 4f192e703941
 ---
 
 import MergedTable from '@site/src/components/MergedTable';

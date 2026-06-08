@@ -2,9 +2,10 @@
 title: "管理应用账号"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/account-management/application-account/manage-application-account
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/account-management/application-account/manage-application-account
+last_sync: 2026-06-07
+sync_hash: cdfb752f
 ---
-
-
 应用开发者可以使用[@ohos.account.appAccount](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-appaccount)管理本应用的账号数据。
 
 能力限制：应用卸载场景下，被卸载应用的账号数据会被删除；本地账号删除场景下，被删除本地账号下的所有应用的账号数据会被删除。

@@ -1,16 +1,17 @@
 ---
 title: "跨线程序列化耗时问题分析"
 original_url: /docs/quality/threads-serialization-timeout-analysis
+upstream_id: /docs/quality/threads-serialization-timeout-analysis
+last_sync: 2026-06-07
+sync_hash: fc3a94e5
 ---
-
-
 # 跨线程序列化耗时问题分析
 
 ## 概述
 
 在应用开发中，涉及多线程并发场景时，开发者会频繁使用TaskPool/Worker的并发能力。对象和方法在跨线程传递时，需要进行序列化和反序列化。如果对象较大且结构复杂，序列化和反序列化的耗时会增加，影响应用的整体性能。开发者在分析性能问题时，无法感知系统是否触发了序列化或反序列化，也无法确认这些操作是否耗时。
 
-为了帮助开发者识别代码中潜在的主线程序列化/反序列化耗时点，并推动开发者在跨线程传递对象时改用[Sendable](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable)对象的方式，方舟调优和DevEco Studio联合开发并上线了应用主线程序列化/反序列化超时检测工具。该工具集成在[DevEco Profiler](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler)中，并可在开发者进行应用调优录制时同步开启。开发者可以在录制结果中的[Anomaly泳道](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-frame#section8198654142516)内查看到主线程序列化/反序列化超时的Tag点和相关超时信息，并通过与ArkTS Callstack泳道中当前调用栈的时间对齐，定位到序列化/反序列化耗时较长的代码，然后通过Sendable改造或者通信数据改造的方式（例如文件buffer改为文件path+偏移）进行优化，提升应用性能。
+为了帮助开发者识别代码中潜在的主线程序列化/反序列化耗时点，并推动开发者在跨线程传递对象时改用[Sendable](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/arkts-sendable)对象的方式，方舟调优和DevEco Studio联合开发并上线了应用主线程序列化/反序列化超时检测工具。该工具集成在[DevEco Profiler](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler)中，并可在开发者进行应用调优录制时同步开启。开发者可以在录制结果中的[Anomaly泳道](/docs/tools/coding-debug/ide-insight-session-frame#section8198654142516)内查看到主线程序列化/反序列化超时的Tag点和相关超时信息，并通过与ArkTS Callstack泳道中当前调用栈的时间对齐，定位到序列化/反序列化耗时较长的代码，然后通过Sendable改造或者通信数据改造的方式（例如文件buffer改为文件path+偏移）进行优化，提升应用性能。
 
 ## 工具介绍
 

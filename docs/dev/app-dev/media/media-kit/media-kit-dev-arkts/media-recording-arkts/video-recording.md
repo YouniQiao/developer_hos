@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用AVRecorder录制视频(ArkTS)"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-recording-arkts/video-recording
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-arkts/media-recording-arkts/video-recording
+last_sync: 2026-06-07
+sync_hash: 4a9cbaf8
 ---
-
-
 当前仅支持[AVRecorder](/docs/dev/app-dev/media/media-kit/media-kit-intro#avrecorder)开发视频录制，集成了音频捕获，音频编码，视频编码，音视频封装功能，适用于实现简单视频录制并直接得到视频本地文件的场景。
 
 本开发指导将以“开始录制-暂停录制-恢复录制-停止录制”的一次流程为示例，向开发者讲解如何使用AVRecorder进行视频录制。

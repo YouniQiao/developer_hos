@@ -2,9 +2,10 @@
 format: md
 title: "如何解决组件消失动画偏移闪烁"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-384
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-384
+last_sync: 2026-06-07
+sync_hash: 4a6ad36c
 ---
-
-
 **问题描述**
 
 运行下面demo，点击使色块消失时，会突然出现在左上角闪烁。

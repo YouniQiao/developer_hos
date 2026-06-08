@@ -2,9 +2,10 @@
 title: "使用Text组件"
 original_url: /docs/dev/app-dev/application-framework/ndk-use-text-component
 format: md
+upstream_id: dev/app-dev/application-framework/ndk-use-text-component
+last_sync: 2026-06-07
+sync_hash: 65275c13
 ---
-
-
 [ArkUI](/docs/dev/app-dev/application-framework/arkui/arkui-overview)开发框架在[NDK](/docs/dev/ndk-dev/ndk-development-overview)接口中提供了Text组件，用于显示文本内容。Text组件支持丰富的样式设置，包括字体、颜色、对齐方式、文字效果等，还支持多种子组件，如[Span](#添加span)、[ImageSpan](#添加imagespan)、[StyledString](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-build-text-ndk/ndk-styled-string)等，用于实现复杂的文本显示效果。
 
 ![](./img/c014ba98.png)

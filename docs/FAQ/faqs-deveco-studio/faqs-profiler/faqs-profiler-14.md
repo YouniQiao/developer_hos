@@ -2,9 +2,10 @@
 format: md
 title: "PC设备录制Allocation模板时，Graphic Memory泳道中OpenGL ES子泳道无数据"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-14
+upstream_id: FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-14
+last_sync: 2026-06-07
+sync_hash: a797e357
 ---
-
-
 **问题现象**
 
 在使用PC设备时，通过FP回栈模式录制Allocation模板，Graphic Memory泳道中的OpenGL ES子泳道无数据。

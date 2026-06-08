@@ -2,8 +2,11 @@
 title: "延迟任务(ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/background-task-kit/work-scheduler
 format: md
+upstream_id: dev/app-dev/application-framework/background-task-kit/work-scheduler
+last_sync: 2026-06-07
+sync_hash: 20089927
+upstream_hash: 4f15b65c9bb8
 ---
-
 
 ## 概述
 
@@ -217,7 +220,9 @@ format: md
 ```
 $ hidumper -s 1904 -a '-t com.example.application MyWorkSchedulerExtensionAbility'
 
--------------------------------[ability]-------------------------------
+---
+----------------------------[ability]-------------------------------
 
-----------------------------------WorkSchedule----------------------------------
+---
+-------------------------------WorkSchedule----------------------------------
 ```

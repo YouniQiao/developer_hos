@@ -2,9 +2,10 @@
 title: "拦截Web组件发起的网络请求"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-scheme-handler
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-scheme-handler
+last_sync: 2026-06-07
+sync_hash: 7ba4efb8
 ---
-
-
 应用可以通过[onInterceptRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#oninterceptrequest9)拦截Web组件发起的网络请求，也可以通过SchemeHandler来拦截Web组件发起的网络请求。SchemeHandler提供了ArkTS与NDK两套接口。
 
 ![](./img/195543f9.png)

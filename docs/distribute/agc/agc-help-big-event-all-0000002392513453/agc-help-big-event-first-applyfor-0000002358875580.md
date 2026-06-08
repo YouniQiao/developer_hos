@@ -2,9 +2,10 @@
 title: "首发"
 original_url: /docs/distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-first-applyfor-0000002358875580
 format: md
+upstream_id: distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-first-applyfor-0000002358875580
+last_sync: 2026-06-07
+sync_hash: a16840dd
 ---
-
-
 首发是指从未公开运营过的新游戏，首次面向用户公开正式运营。
 
 #### 前提条件

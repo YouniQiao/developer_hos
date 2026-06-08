@@ -3,9 +3,10 @@ title: "@previewer/mandatory-default-value-for-local-initialization"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_value-for-local-initialization
 format: md
+upstream_id: tools/coding-debug/ide_value-for-local-initialization
+last_sync: 2026-06-07
+sync_hash: 7c591aca
 ---
-
-
 # @previewer/mandatory-default-value-for-local-initialization
 
 如果组件的属性支持本地初始化，需要设置一个合法的不依赖运行时的默认值。

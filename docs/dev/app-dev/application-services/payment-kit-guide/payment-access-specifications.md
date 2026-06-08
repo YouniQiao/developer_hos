@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "接入规范学习"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-access-specifications
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-access-specifications
+last_sync: 2026-06-07
+sync_hash: 5308239e
 ---
-
-
 为了确保用户获得良好的支付体验，Payment Kit制定了相关接入规范，请开发者遵照执行，具体要求（非强制性）如下：
 
 ## 支付方式呈现

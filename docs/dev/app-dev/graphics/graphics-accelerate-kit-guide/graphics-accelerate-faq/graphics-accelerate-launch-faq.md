@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "游戏启动加速服务"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq
+last_sync: 2026-06-07
+sync_hash: 9782d364
 ---
-
-
 * **[通过加载内存镜像启动的游戏会全屏显示来电提醒，应该如何避免](/docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-1)**
 * **[游戏上划退出后，场景切换阶段存在振动，应该如何避免](/docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-2)**
 * **[快速启动的游戏存在三方SDK功能异常，应该如何排查](/docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-3)**

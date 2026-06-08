@@ -2,9 +2,10 @@
 format: md
 title: "程序访问控制"
 original_url: /docs/FAQ/faqs-access-control
+upstream_id: FAQ/faqs-access-control
+last_sync: 2026-06-07
+sync_hash: 96f978d5
 ---
-
-
 * **[权限申请被拒绝后，再次申请权限，是否出现申请权限弹窗](/docs/FAQ/faqs-system-development/faqs-security/faqs-access-control/faqs-access-control-1)**
 * **[用户更新app后是否还会弹出权限申请弹窗](/docs/FAQ/faqs-system-development/faqs-security/faqs-access-control/faqs-access-control-2)**
 * **[请求精准定位权限申请注意事项](/docs/FAQ/faqs-system-development/faqs-security/faqs-access-control/faqs-access-control-3)**

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "USB服务开发术语"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-glossary
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-glossary
+last_sync: 2026-06-07
+sync_hash: f7a442ed
 ---
-
-
 ## B
 
 ### Baud Rate（波特率）

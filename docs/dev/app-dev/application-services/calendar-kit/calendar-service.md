@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "注册并管理一键服务日程"
 original_url: /docs/dev/app-dev/application-services/calendar-kit/calendar-service
 format: md
+upstream_id: dev/app-dev/application-services/calendar-kit/calendar-service
+last_sync: 2026-06-07
+sync_hash: 0d2d4a13
 ---
-
-
 ## 场景介绍
 
 Calendar Kit提供日程一键服务功能，比如一键入会、一键追剧、一键购物、一键查看等。注册日程一键服务后，用户可通过点击对应按钮拉起跳转链接，一步直达服务落地页，方便快捷。

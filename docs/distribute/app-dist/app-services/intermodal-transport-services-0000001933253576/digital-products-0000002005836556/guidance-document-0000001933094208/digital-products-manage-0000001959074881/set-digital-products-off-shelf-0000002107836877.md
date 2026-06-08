@@ -3,9 +3,10 @@ title: "下架/重新上架数字商品"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/set-digital-products-off-shelf-0000002107836877
 format: md
+upstream_id: distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/set-digital-products-off-shelf-0000002107836877
+last_sync: 2026-06-07
+sync_hash: 7d6b93ea
 ---
-
-
 # 下架/重新上架数字商品
 
 当商品提交审核并通过后，则被开放购买，如需停止该商品的对外售卖，可选择下架该数字商品。

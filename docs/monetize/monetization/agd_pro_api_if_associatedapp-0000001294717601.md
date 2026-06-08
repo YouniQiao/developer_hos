@@ -3,9 +3,11 @@ title: "AssociatedApp"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_api_if_associatedapp-0000001294717601
 format: md
+upstream_id: monetize/monetization/agd_pro_api_if_associatedapp-0000001294717601
+last_sync: 2026-06-07
+sync_hash: 7a9b78af
+upstream_hash: 899d612bb961
 ---
-
-
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |

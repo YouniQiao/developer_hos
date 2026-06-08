@@ -2,9 +2,10 @@
 title: "管理网页交互"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-page-interaction
+last_sync: 2026-06-07
+sync_hash: a7263316
 ---
-
-
 * **[Web组件嵌套滚动](/docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-nested-scrolling)**
 * **[Web页面显示内容滚动](/docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-content-scrolling)**
 * **[Web组件对接软键盘](/docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-docking-softkeyboard)**

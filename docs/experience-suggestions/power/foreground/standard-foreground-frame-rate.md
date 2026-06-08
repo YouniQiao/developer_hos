@@ -2,9 +2,10 @@
 title: "前台帧率"
 original_url: /docs/experience-suggestions/power/foreground/standard-foreground-frame-rate
 format: md
+upstream_id: experience-suggestions/power/foreground/standard-foreground-frame-rate
+last_sync: 2026-06-07
+sync_hash: 0958a725
 ---
-
-
 # 前台帧率
 
 ### 高帧率场景帧率建议

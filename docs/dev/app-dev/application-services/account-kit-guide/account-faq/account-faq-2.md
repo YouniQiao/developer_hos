@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "1001502014 应用未申请scopes或permissions权限的可能原因和解决方法"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-2
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-2
+last_sync: 2026-06-07
+sync_hash: 8c07f440
 ---
-
-
 **问题现象**
 
 调用接口报错1001502014 应用未申请scopes或permissions权限。

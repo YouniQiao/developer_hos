@@ -2,8 +2,11 @@
 title: "前提条件"
 original_url: /docs/dev/game-dev/games-center-digital-products-pre-0000002320645997
 format: md
+upstream_id: dev/game-dev/games-center-digital-products-pre-0000002320645997
+last_sync: 2026-06-07
+sync_hash: 9b085a58
+upstream_hash: c27923ae091e
 ---
-
 
 * 请您确保当前登录的AGC账号，拥有“APP管理员”、“管理员”、“运营”的其中**任意一项****[角色](/docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-rolepermission-0000002271930352)**。若您想查询账号角色，请登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，进入“用户与访问 &gt; 用户 &gt; 个人信息 &gt; 角色管理”，即可看到当前账号的角色信息。
 

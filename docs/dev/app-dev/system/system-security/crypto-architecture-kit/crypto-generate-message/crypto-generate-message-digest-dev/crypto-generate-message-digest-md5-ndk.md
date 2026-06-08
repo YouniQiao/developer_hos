@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "消息摘要计算MD5(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-generate-message/crypto-generate-message-digest-dev/crypto-generate-message-digest-md5-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-generate-message/crypto-generate-message-digest-dev/crypto-generate-message-digest-md5-ndk
+last_sync: 2026-06-07
+sync_hash: 588b97d0
 ---
-
-
 对应的算法规格请查看[消息摘要计算算法规格](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-generate-message/crypto-generate-message-digest-overview#支持的算法与规格)。
 
 ## 在CMake脚本中链接相关动态库

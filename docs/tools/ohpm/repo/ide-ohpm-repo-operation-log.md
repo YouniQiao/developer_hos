@@ -2,9 +2,10 @@
 title: "操作日志"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-operation-log
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-operation-log
+last_sync: 2026-06-07
+sync_hash: 67b79c2c
 ---
-
-
 # 操作日志
 
 操作日志界面显示用户通过ohpm-repo管理界面进行的所有操作，以及通过ohpm命令行工具执行publish，unpublish和dist-tags等相关命令所记录的日志。操作日志界面分为两个部分：第一部分为筛选条件，第二部分是展示符合筛选条件的数据。

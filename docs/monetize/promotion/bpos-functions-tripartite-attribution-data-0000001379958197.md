@@ -3,8 +3,10 @@ title: "转化数据"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-functions-tripartite-attribution-data-0000001379958197
 format: md
+upstream_id: monetize/promotion/bpos-functions-tripartite-attribution-data-0000001379958197
+last_sync: 2026-06-07
+sync_hash: 23ae4e55
 ---
-
 # 转化数据
 
 ## 概述

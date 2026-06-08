@@ -2,9 +2,10 @@
 format: md
 title: "如何实现跨模块的页面跳转功能"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-39
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-39
+last_sync: 2026-06-07
+sync_hash: 3a762895
 ---
-
-
 在业务体系庞大或复杂的情况下，会将业务拆分成多个子业务模块，每个子业务模块为一个HAR/HSP。在该场景下，存在从主业务入口跳转到不同子页面模块，或从一个子业务模块A页面跳转到另一个子业务模块B页面的需求。例如，从应用首页跳转到登录子业务模块页面。针对该场景，有以下三种解决方案：
 
 * 方案一：使用router的命名路由接口router.pushNamedRoute()跳转。

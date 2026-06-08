@@ -2,9 +2,10 @@
 title: "日志"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-log
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-log
+last_sync: 2026-06-07
+sync_hash: 9cfe088c
 ---
-
-
 # 日志
 
 与任何web应用程序相同，ohpm-repo有一个内置的日志记录器，其定义了四种日志类型。

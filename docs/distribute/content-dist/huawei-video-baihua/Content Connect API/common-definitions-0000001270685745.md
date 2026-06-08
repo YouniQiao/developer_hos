@@ -3,9 +3,10 @@ title: "公共定义"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/huawei-video-baihua/Content Connect API/common-definitions-0000001270685745
 format: md
+upstream_id: distribute/content-dist/huawei-video-baihua/Content Connect API/common-definitions-0000001270685745
+last_sync: 2026-06-07
+sync_hash: 35091913
 ---
-
-
 # 公共定义
 
 <strong>接口协议</strong>

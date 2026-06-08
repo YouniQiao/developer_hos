@@ -2,9 +2,10 @@
 title: "生物特征认证交易"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-bio/devicesecurity-trustedauth-verifybybio
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-bio/devicesecurity-trustedauth-verifybybio
+last_sync: 2026-06-07
+sync_hash: 509d3730
 ---
-
-
 ## 场景介绍
 
 在完成对应生物特征认证能力开通后，用户即可通过已绑定的生物特征（人脸或指纹）完成认证交易。

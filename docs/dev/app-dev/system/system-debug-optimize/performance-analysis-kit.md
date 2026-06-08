@@ -2,9 +2,10 @@
 title: "Performance Analysis Kit（性能分析服务）"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit
+last_sync: 2026-06-07
+sync_hash: 1e1062fb
 ---
-
-
 * **[Performance Analysis Kit简介](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/performance-analysis-kit-overview)**
 * **[故障检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis)**
 * **[功耗检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/power-detection)**

@@ -2,9 +2,10 @@
 title: "JSVM-API 申请JIT权限指导"
 original_url: /docs/dev/ndk-dev/jsvm-apply-jit-profile
 format: md
+upstream_id: dev/ndk-dev/jsvm-apply-jit-profile
+last_sync: 2026-06-07
+sync_hash: 90f8b63b
 ---
-
-
 JIT(Just In Time) 即时编译功能会引入任意代码注入的安全风险，为保护应用安全、维护鸿蒙纯净生态，系统默认关闭JSVM的JIT功能，若开发者期望使用该功能， 需要向应用市场（AppGallery Connect，简称为AGC）提交ohos.permission.kernel.ALLOW\_EXECUTABLE\_FORT\_MEMORY受限ACL权限的申请， 并在附带材料中说明使用JSVM引擎JIT功能的具体场景。在权限审批通过后， 开发者可从AGC网站上更新profile证书， 并对应用重打包上架。权限申请及适配流程可参考《[申请使用受限权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl)》指导完成。
 
 ## 适配注意事项

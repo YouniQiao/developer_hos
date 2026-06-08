@@ -2,9 +2,10 @@
 format: md
 title: "安装VPN软件astrill后hdc访问不了设备"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-68
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-68
+last_sync: 2026-06-07
+sync_hash: a8a6a634
 ---
-
-
 **问题现象**
 
 hdc访问不了设备。hdc list targets -v出现unknown状态。

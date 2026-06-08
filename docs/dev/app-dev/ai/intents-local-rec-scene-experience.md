@@ -2,9 +2,10 @@
 title: "场景体验"
 original_url: /docs/dev/app-dev/ai/intents-local-rec-scene-experience
 format: md
+upstream_id: dev/app-dev/ai/intents-local-rec-scene-experience
+last_sync: 2026-06-07
+sync_hash: ed00ec3c
 ---
-
-
 ## 典型场景
 
 华为意图框架位置感知推荐能力主要支持室内位置推荐、室外近场位置推荐、跨域位置推荐等高确定性场景，结合华为智慧决策能力，在小艺建议入口推荐更贴心、更及时、更满足用户诉求的场景卡片。场景示例：

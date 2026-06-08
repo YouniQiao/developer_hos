@@ -3,8 +3,10 @@ title: "查看/修改账户基本信息"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-delivery-task-account-manage-information-0000001328357938
 format: md
+upstream_id: monetize/promotion/bpos-delivery-task-account-manage-information-0000001328357938
+last_sync: 2026-06-07
+sync_hash: 727ec7d8
 ---
-
 # 查看/修改账户基本信息
 
 - <strong>广告账户企业名称修改</strong>：登录[华为开发者联盟管理中心](https://developer.huawei.com/consumer/cn/console#/serviceCards/)&gt;“<strong>设置</strong>”&gt;“<strong>开发者信息</strong>”&gt;“<strong>更名</strong>”即可修改企业认证信息名称，具体可参考：[变更企业名称](https://developer.huawei.com/consumer/cn/doc/start/information-modification-0000001053145467)。

@@ -3,8 +3,10 @@ title: "精选推荐-影子投放-CPD任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/mktapi-adtask-top-shadow-cpd-0000001366205869
 format: md
+upstream_id: monetize/promotion/mktapi-adtask-top-shadow-cpd-0000001366205869
+last_sync: 2026-06-07
+sync_hash: d60756dc
 ---
-
 # 精选推荐-影子投放-CPD任务
 
 ## 功能介绍

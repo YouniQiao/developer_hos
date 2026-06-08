@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开通实况窗服务权益"
 original_url: /docs/dev/app-dev/application-services/live-view-kit-guide/liveview-preparations/liveview-rights
 format: md
+upstream_id: dev/app-dev/application-services/live-view-kit-guide/liveview-preparations/liveview-rights
+last_sync: 2026-06-07
+sync_hash: 6fe8a483
 ---
-
-
 若需完成应用的实况窗接入与调测，开发者需预先开通实况窗服务权益，可依据以下操作步骤提交申请，完成服务权益开通。
 
 ## 操作步骤
@@ -27,11 +28,11 @@ format: md
    ![](./img/1bae3f71.png)
 
    ![](./img/fc1710c0.png)
-6. 实况窗服务权限通过后，开发者需在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)选择“证书、APP ID和Profile”，点击左侧树形菜单的“Profile”页签，在页面右上角点击“添加”按钮，重新生成Profile文件，并将其下载至本地。在“[发布应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app)”时，将该Profile打包到应用包中。
+6. 实况窗服务权限通过后，开发者需在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)选择“证书、APP ID和Profile”，点击左侧树形菜单的“Profile”页签，在页面右上角点击“添加”按钮，重新生成Profile文件，并将其下载至本地。在“[发布应用](/docs/tools/coding-debug/ide-publish-app)”时，将该Profile打包到应用包中。
 
    ![](./img/3b4139ca.png)
 
-   Profile文件生成请参考“[管理Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-0000002270709473)”章节，Profile文件打包到应用包中请参考“[配置签名信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app#section280162182818)”。
+   Profile文件生成请参考“[管理Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-profile-0000002270709473)”章节，Profile文件打包到应用包中请参考“[配置签名信息](/docs/tools/coding-debug/ide-publish-app#section280162182818)”。
 
    ![](./img/c8a70651.png)
 

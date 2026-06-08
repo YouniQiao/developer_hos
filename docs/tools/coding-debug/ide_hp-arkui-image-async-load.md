@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-image-async-load"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-image-async-load
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-image-async-load
+last_sync: 2026-06-07
+sync_hash: e5000fef
 ---
-
-
 # @performance/hp-arkui-image-async-load
 
 建议大图片使用异步加载。

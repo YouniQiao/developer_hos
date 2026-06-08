@@ -3,8 +3,11 @@ title: "拆包工具"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/unpacking-tool
 format: md
+upstream_id: tools/cli-tools/unpacking-tool
+last_sync: 2026-06-07
+sync_hash: 0ff80eda
+upstream_hash: b45cb5eb2d0d
 ---
-
 
 # 拆包工具
 

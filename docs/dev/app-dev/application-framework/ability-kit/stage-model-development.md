@@ -2,9 +2,10 @@
 title: "Stage模型开发指导"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development
+last_sync: 2026-06-07
+sync_hash: 43d91408
 ---
-
-
 * **[Stage模型开发概述](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-development-overview)**
 * **[Stage模型应用组件](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components)**
 * **[应用间跳转](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection)**

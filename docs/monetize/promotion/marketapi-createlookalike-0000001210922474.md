@@ -3,8 +3,10 @@ title: "创建lookalike人群定向"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-createlookalike-0000001210922474
 format: md
+upstream_id: monetize/promotion/marketapi-createlookalike-0000001210922474
+last_sync: 2026-06-07
+sync_hash: cebd19ec
 ---
-
 # 创建lookalike人群定向
 
 ## 功能介绍

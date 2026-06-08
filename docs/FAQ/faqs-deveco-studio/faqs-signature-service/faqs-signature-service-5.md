@@ -2,9 +2,10 @@
 format: md
 title: "点击“允许”后，浏览器提示“无法访问此网站”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-5
+upstream_id: FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-5
+last_sync: 2026-06-07
+sync_hash: 0d0ade9c
 ---
-
-
 **问题现象**
 
 使用浏览器登录华为账号并点击“允许”按钮后，浏览器将跳转至`http://localhost:10101/xxx`，显示“无法访问此网站”。

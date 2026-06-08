@@ -2,9 +2,10 @@
 title: "事件捕获"
 original_url: /docs/dev/atomic-dev/ascf/logical-layer-events/logical-layer-event-capture
 format: md
+upstream_id: dev/atomic-dev/ascf/logical-layer-events/logical-layer-event-capture
+last_sync: 2026-06-07
+sync_hash: 9bfc978a
 ---
-
-
 捕获阶段位于冒泡阶段之前，且在捕获阶段中，事件到达节点的顺序与冒泡阶段相反。捕获阶段监听事件，可以采用capture-bind、capture-catch关键字，后者将中断捕获阶段和取消冒泡阶段。
 
 * **示例1：**

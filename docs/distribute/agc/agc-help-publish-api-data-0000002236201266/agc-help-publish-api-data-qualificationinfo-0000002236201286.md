@@ -2,9 +2,10 @@
 title: "QualificationInfo"
 original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-qualificationinfo-0000002236201286
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-qualificationinfo-0000002236201286
+last_sync: 2026-06-07
+sync_hash: 79e144bd
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | qualificationCode | M | String(32) | 资质编码，具体请参见[资质编码与资质文件对照表](/docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-qualificationcode-0000002422741790)。 |

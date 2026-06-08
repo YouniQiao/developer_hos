@@ -2,9 +2,10 @@
 title: "canvas"
 original_url: /docs/dev/atomic-dev/ascf/components-canvas-components/components-canvas
 format: md
+upstream_id: dev/atomic-dev/ascf/components-canvas-components/components-canvas
+last_sync: 2026-06-07
+sync_hash: dc147dac
 ---
-
-
 画布组件，用于自定义绘制图形。
 
 **起始版本：** 1.0.0

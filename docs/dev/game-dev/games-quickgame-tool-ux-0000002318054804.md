@@ -2,9 +2,10 @@
 title: "界面"
 original_url: /docs/dev/game-dev/games-quickgame-tool-ux-0000002318054804
 format: md
+upstream_id: dev/game-dev/games-quickgame-tool-ux-0000002318054804
+last_sync: 2026-06-07
+sync_hash: bcdf28c1
 ---
-
-
 ## 向导界面
 
 快游戏开发者工具向导界面有如下功能：

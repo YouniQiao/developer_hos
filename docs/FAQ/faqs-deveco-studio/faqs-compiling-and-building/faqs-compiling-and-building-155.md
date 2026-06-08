@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“Cannot depend on HAP modules outside of this project”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-155
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-155
+last_sync: 2026-06-07
+sync_hash: af68202f
 ---
-
-
 **错误描述**
 
 不要依赖项目外部的HAP模块。

@@ -2,9 +2,10 @@
 title: "如何获取窗口的宽度"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-200
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-200
+last_sync: 2026-06-07
+sync_hash: 22fd8f5c
 ---
-
-
 可以通过getWindowProperties接口获取窗口属性。窗口属性的windowRect表示窗口尺寸。参考代码如下：
 
 ```

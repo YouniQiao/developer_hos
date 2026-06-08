@@ -2,9 +2,10 @@
 format: md
 title: "如何在一个模块中使用另一个模块中编译出来的so"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-72
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-72
+last_sync: 2026-06-07
+sync_hash: 91240e94
 ---
-
-
 **问题场景**
 
 在a module的Native侧集成b module编译出来的so，可以按照以下步骤操作：

@@ -2,9 +2,10 @@
 format: md
 title: "报错“ENOENT: no such file or directory, uv_cwd”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-186
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-186
+last_sync: 2026-06-07
+sync_hash: d33435e2
 ---
-
-
 **问题现象**
 
 先构建一次项目，然后强制删除项目后手动恢复再重新构建，出现类似如下报错：

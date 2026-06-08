@@ -1,8 +1,10 @@
 ---
 title: "Camera Rotation Native"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation
+last_sync: 2026-06-07
+sync_hash: d79c9b8f
 ---
-
 import SourceLink from '@site/src/components/SourceLink';
 
 # Camera Rotation Native

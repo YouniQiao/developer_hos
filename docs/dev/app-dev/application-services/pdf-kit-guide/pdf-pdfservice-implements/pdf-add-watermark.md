@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "添加、删除水印"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-add-watermark
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-add-watermark
+last_sync: 2026-06-07
+sync_hash: bf876d08
+upstream_hash: 28114e3452b2
 ---
-
 
 对指定页面添加水印，包括文本水印或图片水印。
 

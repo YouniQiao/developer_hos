@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "多网状态监听(C/C++)"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide-c/networkboost-netmultipath-statechangecallback-c
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide-c/networkboost-netmultipath-statechangecallback-c
+last_sync: 2026-06-07
+sync_hash: 6b4326a0
 ---
-
-
 从6.0.2(22)开始，支持多网状态监听。
 
 ## 场景介绍

@@ -2,9 +2,10 @@
 title: "UI开发常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq
+last_sync: 2026-06-07
+sync_hash: 2b24b729
 ---
-
-
 * **[Navigation动画常见问题](/docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-navigation-animation-faq)**
 * **[自定义节点常见问题](/docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-user-defined-node-faq)**
 * **[按钮与选择组件常见问题](/docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-select-component-faq)**

@@ -2,9 +2,10 @@
 title: "使用HiCollie检测业务线程卡死卡顿问题（C/C++）"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hicollie/hicollie-guidelines-ndk
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hicollie/hicollie-guidelines-ndk
+last_sync: 2026-06-07
+sync_hash: 778b24e9
 ---
-
-
 ## 简介
 
 用户在使用应用时，如果出现点击无反应或应用无响应等情况，并且持续时间超过一定限制，就会被定义为[应用冻屏](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/appfreeze-guidelines)。本文面向开发者介绍HiCollie模块对外提供检测业务线程卡死、卡顿，以及上报卡死事件的能力。

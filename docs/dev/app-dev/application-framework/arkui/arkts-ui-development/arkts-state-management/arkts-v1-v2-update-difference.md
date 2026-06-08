@@ -2,8 +2,11 @@
 title: "状态管理V1和V2更新机制差异"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-update-difference
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-update-difference
+last_sync: 2026-06-07
+sync_hash: f2aee990
+upstream_hash: aab02db6febb
 ---
-
 
 ## V1状态管理演进到V2状态管理背景
 

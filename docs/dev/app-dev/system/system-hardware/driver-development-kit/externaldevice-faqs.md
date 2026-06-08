@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "常见问题"
 original_url: /docs/dev/app-dev/system/system-hardware/driver-development-kit/externaldevice-faqs
 format: md
+upstream_id: dev/app-dev/system/system-hardware/driver-development-kit/externaldevice-faqs
+last_sync: 2026-06-07
+sync_hash: eda4c2aa
 ---
-
-
 ## 编译或运行时无法找到头文件
 
 ### 问题现象

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "更新通知"
 original_url: /docs/dev/app-dev/application-services/notification-kit/notification-update
 format: md
+upstream_id: dev/app-dev/application-services/notification-kit/notification-update
+last_sync: 2026-06-07
+sync_hash: 7210d256
 ---
-
-
 从API version 18开始，支持应用只更新已发布的通知。主要用于上传下载进度更新、IM会话消息更新等场景。
 
 ## 接口说明

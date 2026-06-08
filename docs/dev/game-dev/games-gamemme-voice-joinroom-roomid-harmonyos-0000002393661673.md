@@ -2,9 +2,10 @@
 title: "加入房间"
 original_url: /docs/dev/game-dev/games-gamemme-voice-joinroom-roomid-harmonyos-0000002393661673
 format: md
+upstream_id: dev/game-dev/games-gamemme-voice-joinroom-roomid-harmonyos-0000002393661673
+last_sync: 2026-06-07
+sync_hash: f954da95
 ---
-
-
 当不同的玩家加入同一语音房间内，即可互相发送/接收实时音频数据。目前，游戏多媒体服务支持加入小队语音房间和国战语音房间。
 
 ![](./img/f3946375.png)

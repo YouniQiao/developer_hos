@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "应用接入状态栏"
 original_url: /docs/dev/app-dev/system/system-basicfun/status-bar-extension-kit-guide/statusbar-extension-guide
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/status-bar-extension-kit-guide/statusbar-extension-guide
+last_sync: 2026-06-07
+sync_hash: 2903ac6c
 ---
-
-
 应用接入状态栏之后，状态栏会显示应用自定义的图标，图标提供左键显示自定义弹窗以及右键显示菜单的功能；应用退出时，状态栏图标会随着应用进程的销毁而消失。
 
 * 从 6.1.1(24) 版本开始，右键菜单获得增强，菜单项支持分别设置默认图标与选中图标，并支持独立更新单个一级菜单项或二级菜单项的内容。

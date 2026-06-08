@@ -3,10 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "使用PBKDF2进行密钥派生(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-derivation/crypto-key-derivation-using-pbkdf2-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-derivation/crypto-key-derivation-using-pbkdf2-ndk
+last_sync: 2026-06-07
+sync_hash: 1a5973ae
 ---
-
-
-对应的算法规格请查看[密钥派生算法规格：PBKDF2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-derivation-overview#pbkdf2算法)。
+对应的算法规格请查看[密钥派生算法规格：PBKDF2](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-derivation/crypto-key-derivation-overview#pbkdf2算法)。
 
 ## 开发步骤
 

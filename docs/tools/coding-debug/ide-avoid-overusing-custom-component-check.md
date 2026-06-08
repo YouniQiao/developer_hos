@@ -3,8 +3,11 @@ title: "@performance/avoid-overusing-custom-component-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-avoid-overusing-custom-component-check
 format: md
+upstream_id: tools/coding-debug/ide-avoid-overusing-custom-component-check
+last_sync: 2026-06-07
+sync_hash: 24939b6e
+upstream_hash: 5576b528c6c5
 ---
-
 
 # @performance/avoid-overusing-custom-component-check
 

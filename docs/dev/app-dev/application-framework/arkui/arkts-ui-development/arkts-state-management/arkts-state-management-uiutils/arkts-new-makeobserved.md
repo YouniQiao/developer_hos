@@ -2,9 +2,10 @@
 title: "makeObserved接口：将非观察数据变为可观察数据"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-makeobserved
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-makeobserved
+last_sync: 2026-06-07
+sync_hash: fbf99f7f
 ---
-
-
 为了将普通不可观察数据变为可观察数据，开发者可以使用[makeObserved接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#makeobserved)。
 
 makeObserved可以在@Trace无法标记的情况下使用。在阅读本文档前，建议提前阅读：[@Trace](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)。

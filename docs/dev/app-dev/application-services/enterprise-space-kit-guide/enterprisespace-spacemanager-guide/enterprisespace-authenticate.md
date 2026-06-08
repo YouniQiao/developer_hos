@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "企业账号认证"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-authenticate
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-authenticate
+last_sync: 2026-06-07
+sync_hash: 9d9e7def
 ---
-
-
 ## 场景介绍
 
 从6.1.0(23)开始，支持企业认证的能力。

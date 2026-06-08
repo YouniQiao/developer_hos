@@ -2,9 +2,10 @@
 title: "Provisioning API指南"
 original_url: /docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-provision-api-guide-0000002271000601
 format: md
+upstream_id: distribute/agc/agc-help-connect-api-0000002236015554/agc-help-provision-api-guide-0000002271000601
+last_sync: 2026-06-07
+sync_hash: 1a7b9066
 ---
-
-
 您可以通过Provisioning API管理证书、Profile以及设备等，相比在AppGallery Connect页面中手动管理提升您的工作效率。
 
 与AppGallery Connect页面操作相同，支持如下API：

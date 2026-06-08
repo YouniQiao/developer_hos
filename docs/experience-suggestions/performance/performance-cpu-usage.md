@@ -2,9 +2,10 @@
 title: "CPU占用"
 original_url: /docs/experience-suggestions/performance/performance-cpu-usage
 format: md
+upstream_id: experience-suggestions/performance/performance-cpu-usage
+last_sync: 2026-06-07
+sync_hash: 4e8902cf
 ---
-
-
 # CPU占用
 
 ### 应用或元服务后台CPU占用峰值

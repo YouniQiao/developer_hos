@@ -3,6 +3,10 @@ title: "业务介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-physical-subcontract-introduction-0000001341160241
 format: md
+upstream_id: monetize/promotion/bp-functions-physical-subcontract-introduction-0000001341160241
+last_sync: 2026-06-07
+sync_hash: 73932aa2
+upstream_hash: 5b1cffadc97c
 ---
 
 # 业务介绍

@@ -1,8 +1,10 @@
 ---
 title: "应用闪屏解决方案"
 original_url: /docs/quality/screen-flicker-solution
+upstream_id: /docs/quality/screen-flicker-solution
+last_sync: 2026-06-07
+sync_hash: 1f8d9720
 ---
-
 # 应用闪屏解决方案
 
 ## 概述

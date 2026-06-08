@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口进行WebAssembly模块相关开发"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-wasm
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-wasm
+last_sync: 2026-06-07
+sync_hash: 7b6944b9
 ---
-
-
 ## 简介
 
 JSVM-API WebAssembly 接口提供了 WebAssembly 字节码编译、WebAssembly 函数优化、WebAssembly cache 序列化和反序列化的能力。

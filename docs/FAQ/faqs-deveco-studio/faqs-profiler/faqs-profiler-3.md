@@ -2,9 +2,10 @@
 format: md
 title: "内存占用率过高导致DevEco Studio无法正常运行"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-3
+upstream_id: FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-3
+last_sync: 2026-06-07
+sync_hash: 82650a18
 ---
-
-
 **问题现象****一**
 
 在Profiler数据分析过程中，如果DevEco Studio卡顿或停止响应，并显示“Low Memory”告警，说明内存不足。

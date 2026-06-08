@@ -2,9 +2,10 @@
 format: md
 title: "模拟器上部分视频无法正常播放"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-37
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-37
+last_sync: 2026-06-07
+sync_hash: b341c91b
 ---
-
-
 **问题现象**
 
 在模拟器播放视频时，可能会遇到视频有声音但无画面，或者播放卡顿的问题。

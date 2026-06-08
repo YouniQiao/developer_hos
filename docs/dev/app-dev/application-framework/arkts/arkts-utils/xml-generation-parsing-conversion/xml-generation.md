@@ -2,9 +2,10 @@
 title: "XML生成"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-utils/xml-generation-parsing-conversion/xml-generation
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-utils/xml-generation-parsing-conversion/xml-generation
+last_sync: 2026-06-07
+sync_hash: 49d3d608
 ---
-
-
 XML可以作为数据交换格式，被各种系统和应用程序支持。例如Web服务，可以将结构化数据以XML格式进行传递。
 
 XML还可以作为消息传递格式，用于分布式系统中不同节点的通信。

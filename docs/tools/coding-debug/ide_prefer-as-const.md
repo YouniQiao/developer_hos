@@ -3,9 +3,10 @@ title: "@typescript-eslint/prefer-as-const"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_prefer-as-const
 format: md
+upstream_id: tools/coding-debug/ide_prefer-as-const
+last_sync: 2026-06-07
+sync_hash: 6e6d5d4e
 ---
-
-
 # @typescript-eslint/prefer-as-const
 
 对于字面量类型，强制使用“as const”。

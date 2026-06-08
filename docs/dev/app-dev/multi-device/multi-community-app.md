@@ -3,8 +3,10 @@ title: "多设备社区评论界面"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/multi-community-app
 format: md
+upstream_id: dev/app-dev/multi-device/multi-community-app
+last_sync: 2026-06-07
+sync_hash: 27b94e3c
 ---
-
 # 多设备社区评论界面
 
 ## 概述

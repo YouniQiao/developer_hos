@@ -2,9 +2,10 @@
 title: "在玩服务魔方创意"
 original_url: /docs/distribute/agc/agc-help-playing-service-0000002359033492/agc-help-creatives-ideas-playing-0000002358873580
 format: md
+upstream_id: distribute/agc/agc-help-playing-service-0000002359033492/agc-help-creatives-ideas-playing-0000002358873580
+last_sync: 2026-06-07
+sync_hash: 1e676418
 ---
-
-
 在玩魔方创意是为[在玩服务](/docs/distribute/agc/agc-help-playing-service-0000002359033492/agc-help-playing-operation-0000002392513457#ZH-CN_TOPIC_0000002392513457)提供的在线制作、轻松上手、简单轻量的设计网站。该网站支持一键预览，支持复杂的交互或跳转，您可以自由搭配组件，一键复用优质内容，轻松设计在玩的可视化H5落地页。
 
 #### 编辑器界面

@@ -3,9 +3,10 @@ title: "toybox"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/toybox
 format: md
+upstream_id: tools/cli-tools/toybox
+last_sync: 2026-06-07
+sync_hash: bc4307b0
 ---
-
-
 # toybox
 
 toybox 是一个轻量级的Linux命令行工具集合，它将常用的Linux命令行工具合并到一个单独的可执行文件中。

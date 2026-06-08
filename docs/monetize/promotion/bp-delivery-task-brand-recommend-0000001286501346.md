@@ -3,8 +3,10 @@ title: "投放图文合约任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-task-brand-recommend-0000001286501346
 format: md
+upstream_id: monetize/promotion/bp-delivery-task-brand-recommend-0000001286501346
+last_sync: 2026-06-07
+sync_hash: aaa42686
 ---
-
 # 投放图文合约任务
 
 ## 背景信息

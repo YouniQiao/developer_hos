@@ -2,9 +2,10 @@
 title: "Node-API支持的数据类型和接口"
 original_url: /docs/dev/ndk-dev/napi-data-types-interfaces
 format: md
+upstream_id: dev/ndk-dev/napi-data-types-interfaces
+last_sync: 2026-06-07
+sync_hash: 7ce7e103
 ---
-
-
 ## Node-API的数据类型
 
 ### napi\_status

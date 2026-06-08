@@ -3,8 +3,10 @@ title: "申请推广评测"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-start-guest-apply-evaluation-0000001346654709
 format: md
+upstream_id: monetize/promotion/bp-start-guest-apply-evaluation-0000001346654709
+last_sync: 2026-06-07
+sync_hash: 13d25b5e
 ---
-
 # 申请推广评测
 
 您的应用在上架后开启推广功能，需先申请“推广评测权限”。

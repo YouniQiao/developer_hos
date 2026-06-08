@@ -3,8 +3,10 @@ title: "修改投放任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modifyadtask-0000001181946349
 format: md
+upstream_id: monetize/promotion/marketapi-modifyadtask-0000001181946349
+last_sync: 2026-06-07
+sync_hash: b58e0659
 ---
-
 # 修改投放任务
 
 ## 功能介绍

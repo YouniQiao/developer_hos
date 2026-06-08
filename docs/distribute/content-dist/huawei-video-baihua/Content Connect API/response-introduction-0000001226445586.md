@@ -3,8 +3,11 @@ title: "响应码说明"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/huawei-video-baihua/Content Connect API/response-introduction-0000001226445586
 format: md
+upstream_id: distribute/content-dist/huawei-video-baihua/Content Connect API/response-introduction-0000001226445586
+last_sync: 2026-06-07
+sync_hash: 7611f6fb
+upstream_hash: f8fdc8149c01
 ---
-
 
 # 响应码说明
 

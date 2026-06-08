@@ -2,9 +2,10 @@
 title: "打开半屏元服务"
 original_url: /docs/dev/atomic-dev/ascf/develop-open-capabilities/develop-open-embedded-atomicservice
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-open-capabilities/develop-open-embedded-atomicservice
+last_sync: 2026-06-07
+sync_hash: ae9c5db6
 ---
-
-
 ASCF框架提供[open-embedded-atomicservice](/docs/dev/atomic-dev/ascf/components-open-capabilities/components-open-embedded-atomicservice)组件，允许ASCF框架开发的元服务以半屏形式嵌入式拉起另一个元服务。
 
 ![](./img/28288af9.png)

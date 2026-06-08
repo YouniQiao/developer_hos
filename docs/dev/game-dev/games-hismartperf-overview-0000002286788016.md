@@ -2,9 +2,10 @@
 title: "业务介绍"
 original_url: /docs/dev/game-dev/games-hismartperf-overview-0000002286788016
 format: md
+upstream_id: dev/game-dev/games-hismartperf-overview-0000002286788016
+last_sync: 2026-06-07
+sync_hash: e2bd4350
 ---
-
-
 |  |  |
 | --- | --- |
 | 随着手机游戏的大规模发展，企业越来越关注应用的质量和性能，存在性能隐患的游戏对日活、留存会产生较严重的影响，对此，华为推出了游戏性能调优工具。工具依托华为在操作系统的技术积累，具备HarmonyOS 5.0及以上、HarmonyOS 3.1/4.0及以下、Android、快游戏平台性能的测试、分析能力，可通过工具监测，准确、高效地采集到游戏运行时的CPU、GPU等性能数据，了解游戏的性能状况。您可以使用工具测试游戏、查看报告、分析问题、调优程序，在游戏优化之后，使用工具再次验证优化收益。 |  |

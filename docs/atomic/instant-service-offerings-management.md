@@ -2,9 +2,10 @@
 title: "商品管理"
 original_url: /docs/dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-management
 format: md
+upstream_id: dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-management
+last_sync: 2026-06-07
+sync_hash: e90ab6b3
 ---
-
-
 * **[商品管理流程说明](/docs/dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-process)**
 * **[创建商品](/docs/dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-create)**
 * **[查询商品](/docs/dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-query)**

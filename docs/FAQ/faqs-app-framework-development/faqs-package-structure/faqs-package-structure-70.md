@@ -2,9 +2,10 @@
 title: "如何通过代码获取Hap包的打包时间"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-70
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-70
+last_sync: 2026-06-07
+sync_hash: 112944f5
 ---
-
-
 通过hvigor构建脚本实现，打包时将时间写入到一个Json文件，保存到rawfile目录下，然后在APP中直接读取这个文件的内容即可。hvigorfile.ts文件内容：
 
 ```

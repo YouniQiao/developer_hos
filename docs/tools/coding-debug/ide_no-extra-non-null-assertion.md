@@ -3,8 +3,11 @@ title: "@typescript-eslint/no-extra-non-null-assertion"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-extra-non-null-assertion
 format: md
+upstream_id: tools/coding-debug/ide_no-extra-non-null-assertion
+last_sync: 2026-06-07
+sync_hash: 8be7da58
+upstream_hash: 0a9b3a9c628c
 ---
-
 
 # @typescript-eslint/no-extra-non-null-assertion
 

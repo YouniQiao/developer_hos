@@ -3,8 +3,10 @@ title: "FixPositionContent"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-fixpositioncontent-0000001135467070
 format: md
+upstream_id: monetize/promotion/marketapi-modle-fixpositioncontent-0000001135467070
+last_sync: 2026-06-07
+sync_hash: 113b9a94
 ---
-
 # FixPositionContent
 
 | 字段 | 必选(M)/可选(O) | 类型 | 描述 |

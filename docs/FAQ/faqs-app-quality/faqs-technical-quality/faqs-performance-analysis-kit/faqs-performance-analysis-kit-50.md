@@ -2,9 +2,10 @@
 format: md
 title: "如何在HarmonyOS PC/2in1设备上查看MAC地址"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-50
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-50
+last_sync: 2026-06-07
+sync_hash: b86a78ce
 ---
-
-
 **问题场景**
 
 在“设置”或“关于”中未找到查看MAC地址的选项。要查看MAC地址，请按照以下步骤操作：

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "媒体资源使用指导"
 original_url: /docs/dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/photoaccesshelper-resource-guidelines
 format: md
+upstream_id: dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/photoaccesshelper-resource-guidelines
+last_sync: 2026-06-07
+sync_hash: 120f881f
 ---
-
-
 应用可以通过photoAccessHelper的接口，对媒体资源（图片、视频）进行相关操作。
 
 ![](./img/011da0e7.png)

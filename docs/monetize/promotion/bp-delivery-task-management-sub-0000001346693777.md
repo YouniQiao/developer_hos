@@ -3,8 +3,10 @@ title: "管理子任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-task-management-sub-0000001346693777
 format: md
+upstream_id: monetize/promotion/bp-delivery-task-management-sub-0000001346693777
+last_sync: 2026-06-07
+sync_hash: 07665e09
 ---
-
 # 管理子任务
 
 ## 操作步骤

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Ukey流程示例指导"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-best-dev
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-best-dev
+last_sync: 2026-06-07
+sync_hash: 216ceb00
 ---
-
-
 ## 开发模式选择
 
 当前针对双向SSL认证场景，通常有以下两种开发模式。

@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "NativeImage开发指导 (C/C++)"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/native-surface/native-image-guidelines
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/native-surface/native-image-guidelines
+last_sync: 2026-06-07
+sync_hash: 767cc5a2
+upstream_hash: 797d38c75d99
 ---
-
 
 ## 场景介绍
 

@@ -3,9 +3,10 @@ title: "应用测试"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/joint-operation-game-0000002024369570/joint-operation-test-release-0000002024211366/joint-operation-test-0000002049101240
 format: md
+upstream_id: distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/joint-operation-game-0000002024369570/joint-operation-test-release-0000002024211366/joint-operation-test-0000002049101240
+last_sync: 2026-06-07
+sync_hash: ca96ab97
 ---
-
-
 # 应用测试
 
 在应用测试阶段，开发者需测试[账号登录](#section4777116172014)、[商品支付](#section332162152011)、游戏功能等场景。
@@ -22,4 +23,4 @@ format: md
 
 此外，为了帮助开发者快速测试游戏的订阅场景，沙盒环境下的订阅续订时长会比正常情况要快，订阅换算时间为10秒/天，例如订阅周期为1周，游戏内商品将在首次购买成功70秒后发生续订。
 
-沙盒测试的具体操作请参见[沙盒测试](`https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-sandbox`)。
+沙盒测试的具体操作请参见[沙盒测试](`/docs/dev/app-dev/application-services/iap-kit-guide/iap-sandbox)。

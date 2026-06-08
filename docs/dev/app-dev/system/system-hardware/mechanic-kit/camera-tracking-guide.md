@@ -2,9 +2,10 @@
 title: "目标拍摄跟踪开发指南"
 original_url: /docs/dev/app-dev/system/system-hardware/mechanic-kit/camera-tracking-guide
 format: md
+upstream_id: dev/app-dev/system/system-hardware/mechanic-kit/camera-tracking-guide
+last_sync: 2026-06-07
+sync_hash: bf70e5ed
 ---
-
-
 从API version 20开始，支持使用机械体设备控制器，提供更丰富的拍摄体验，如目标跟踪和自动构图等专业功能，支持第三方应用。
 
 目标拍摄跟踪功能通过机械体设备实现人脸和物体的自动化跟踪，提升拍摄质量和用户体验，助力开发者构建更自动化、高效的拍摄解决方案。
@@ -33,7 +34,7 @@ format: md
 
 1. 支持Mechanic Kit协议的机械体设备。
 2. 若要验证目标跟踪功能，主设备的相机驱动必须支持人脸检测。
-3. 请将SDK更新到API 20或以上版本，具体操作参见[更新指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-software-install)。
+3. 请将SDK更新到API 20或以上版本，具体操作参见[更新指南](/docs/tools/coding-debug/ide-software-install)。
 4. 请确保机械体设备已通过蓝牙与主设备连接。
 
 ### 管理设备连接状态

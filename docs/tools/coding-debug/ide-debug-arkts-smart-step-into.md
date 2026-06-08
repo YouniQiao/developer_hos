@@ -3,9 +3,10 @@ title: "智能步入"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-arkts-smart-step-into
 format: md
+upstream_id: tools/coding-debug/ide-debug-arkts-smart-step-into
+last_sync: 2026-06-07
+sync_hash: 88f0665f
 ---
-
-
 # 智能步入
 
 当编辑器上一行存在多个函数嵌套或调用时，开发者可以通过Smart Step Into的能力来步入到想要调试的函数内，如果在调试时想跳过某些文件，也可以自定义需要跳过的文件列表。

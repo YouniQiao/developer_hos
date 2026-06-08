@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "检测环境中的平面（C/C++）"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-plane/arengine-c-get-plane
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/get-plane/arengine-c-get-plane
+last_sync: 2026-06-07
+sync_hash: f378ee7d
+upstream_hash: 234b25eaa42c
 ---
-
 
 ## 概要
 

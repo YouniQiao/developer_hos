@@ -2,9 +2,10 @@
 format: md
 title: "WebView中，双向交互可以使用JSBridge技术，也可以使用端口通信技术，这两者有什么区别"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-11
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-11
+last_sync: 2026-06-07
+sync_hash: 9b58a176
 ---
-
-
 **场景描述**
 
 1. 通过WebMessagePort可以进行消息的发送以及接收。

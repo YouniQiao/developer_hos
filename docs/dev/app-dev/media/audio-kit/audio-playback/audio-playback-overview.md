@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "音频播放开发概述"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-playback/audio-playback-overview
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-playback/audio-playback-overview
+last_sync: 2026-06-07
+sync_hash: 426635b1
 ---
-
-
 ## 如何选择音频播放开发方式
 
 系统提供了多样化的API，来帮助开发者完成音频播放的开发，不同的API适用于不同音频数据格式、音频资源来源、音频使用场景，甚至是不同开发语言。因此，选择合适的音频播放API，有助于降低开发工作量，实现更佳的音频播放效果。

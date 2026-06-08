@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "使用私钥对象获取公钥对象(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-prikey-to-get-pubkey
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-prikey-to-get-pubkey
+last_sync: 2026-06-07
+sync_hash: f99ae54f
+upstream_hash: 42deeb0c7bcb
 ---
-
 
 从API version 23开始，算法库支持从私钥对象中获取公钥对象的操作。
 

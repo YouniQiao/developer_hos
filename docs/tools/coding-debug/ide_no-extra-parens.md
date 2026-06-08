@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-extra-parens"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-extra-parens
 format: md
+upstream_id: tools/coding-debug/ide_no-extra-parens
+last_sync: 2026-06-07
+sync_hash: 96498248
 ---
-
-
 # @typescript-eslint/no-extra-parens
 
 禁止使用不必要的括号。

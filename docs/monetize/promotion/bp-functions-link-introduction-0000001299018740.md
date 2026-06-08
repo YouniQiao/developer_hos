@@ -3,8 +3,10 @@ title: "业务介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-link-introduction-0000001299018740
 format: md
+upstream_id: monetize/promotion/bp-functions-link-introduction-0000001299018740
+last_sync: 2026-06-07
+sync_hash: f5483d40
 ---
-
 # 业务介绍
 
 ![](./img/ce3bf0a33e64.png) 

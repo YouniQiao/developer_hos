@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "配置应用"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-enabling/store-iap-config-app
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-enabling/store-iap-config-app
+last_sync: 2026-06-07
+sync_hash: fe5da419
+upstream_hash: 9a3995447d6e
 ---
-
 
 接入数字商品服务前，需要先完成应用的bundleName配置和应用身份信息配置。
 

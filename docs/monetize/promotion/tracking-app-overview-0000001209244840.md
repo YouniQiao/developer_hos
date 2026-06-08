@@ -3,8 +3,10 @@ title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/tracking-app-overview-0000001209244840
 format: md
+upstream_id: monetize/promotion/tracking-app-overview-0000001209244840
+last_sync: 2026-06-07
+sync_hash: 8a3fd1c1
 ---
-
 # 概述
 
 ## 应用转化跟踪创建流程

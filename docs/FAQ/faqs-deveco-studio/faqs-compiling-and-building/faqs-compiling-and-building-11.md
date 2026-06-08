@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“Property xxx does not exist on type 'typeof BuildProfile'.”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-11
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-11
+last_sync: 2026-06-07
+sync_hash: 458e2ab6
 ---
-
-
 **问题现象****1**
 
 使用自定义参数BuildProfile时，编译过程中未出现异常，但编译构建失败，提示“Property xxx does not exist on type 'typeof BuildProfile'”。

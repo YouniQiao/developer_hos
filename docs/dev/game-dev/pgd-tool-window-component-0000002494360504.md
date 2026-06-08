@@ -2,9 +2,10 @@
 title: "Component窗口"
 original_url: /docs/dev/game-dev/pgd-tool-window-component-0000002494360504
 format: md
+upstream_id: dev/game-dev/pgd-tool-window-component-0000002494360504
+last_sync: 2026-06-07
+sync_hash: a7fba23a
 ---
-
-
 ## 功能介绍
 
 Component窗口支持展示工程中所定义组件在被选World下的实时信息。

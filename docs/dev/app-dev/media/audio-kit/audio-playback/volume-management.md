@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "播放音量管理"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-playback/volume-management
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-playback/volume-management
+last_sync: 2026-06-07
+sync_hash: dba3ab89
 ---
-
-
 本模块提供播放音量管理能力，包括对**系统音量**、**应用音量**和**音频流音量**的管理。
 
 **系统音量**是由HarmonyOS系统全局管理的音量设置，适用于所有应用程序和设备。HarmonyOS系统将音频分为不同的流类型，每种流类型有独立的系统音量控制。

@@ -2,9 +2,10 @@
 title: "模糊"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-effects/arkts-blur-effect
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-animation/arkts-animation-effects/arkts-blur-effect
+last_sync: 2026-06-07
+sync_hash: bd8aa8db
 ---
-
-
 动画效果可以丰富界面的细节，提升UI界面的真实感和品质感。例如，模糊和阴影效果可以让物体看起来更加立体，使得动画更加生动。ArkUI提供了丰富的效果接口，开发者可快速打造出精致、个性化的效果。本章主要介绍常用的模糊、阴影和色彩效果等接口。
 
 模糊效果可以体现界面空间的纵深感，区分前后元素的层级关系。

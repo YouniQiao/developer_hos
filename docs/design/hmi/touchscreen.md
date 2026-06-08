@@ -3,8 +3,10 @@ title: 手势
 sidebar_label: 手势
 original_url: /docs/design/hmi/touchscreen
 format: md
+upstream_id: design/hmi/touchscreen
+last_sync: 2026-06-07
+sync_hash: 3388f410
 ---
-
 # 手势
 
 ### 触屏手势

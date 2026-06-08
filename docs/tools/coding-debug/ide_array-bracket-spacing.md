@@ -3,9 +3,10 @@ title: "@hw-stylistic/array-bracket-spacing"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_array-bracket-spacing
 format: md
+upstream_id: tools/coding-debug/ide_array-bracket-spacing
+last_sync: 2026-06-07
+sync_hash: 675fc672
 ---
-
-
 # @hw-stylistic/array-bracket-spacing
 
 强制数组“[”之后和“]”之前不加空格。该规则仅检查.ets文件类型。

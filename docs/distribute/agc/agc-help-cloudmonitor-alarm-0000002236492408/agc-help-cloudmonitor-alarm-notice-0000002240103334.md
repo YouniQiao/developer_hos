@@ -2,9 +2,10 @@
 title: "告警通知"
 original_url: /docs/distribute/agc/agc-help-cloudmonitor-alarm-0000002236492408/agc-help-cloudmonitor-alarm-notice-0000002240103334
 format: md
+upstream_id: distribute/agc/agc-help-cloudmonitor-alarm-0000002236492408/agc-help-cloudmonitor-alarm-notice-0000002240103334
+last_sync: 2026-06-07
+sync_hash: b2ed3a01
 ---
-
-
 由于告警级别不同，系统发送告警通知时的接收人角色不同，故三种级别的告警通知信息会有所不同。
 
 * 当前支持的告警通知方式有：MAIL（邮件）、SMS（短信），新建告警时默认全部选中。

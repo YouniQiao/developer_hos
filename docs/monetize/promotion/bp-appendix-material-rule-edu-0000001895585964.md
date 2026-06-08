@@ -3,8 +3,10 @@ title: "教育"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-appendix-material-rule-edu-0000001895585964
 format: md
+upstream_id: monetize/promotion/bp-appendix-material-rule-edu-0000001895585964
+last_sync: 2026-06-07
+sync_hash: 8774839b
 ---
-
 # 教育
 
 ## 法律法规审核规范

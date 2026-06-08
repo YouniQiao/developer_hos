@@ -2,9 +2,10 @@
 title: "弱网感知判决"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide/networkboost-weaksignaljudge
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide/networkboost-weaksignaljudge
+last_sync: 2026-06-07
+sync_hash: cb638e5c
 ---
-
-
 通过[网络质量评估](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide/networkboost-qoscallback)和[网络场景识别](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide/networkboost-scenecallback)章节，弱网感知判决可归纳为3种方式获取：
 
 **监听系统实时判决**：

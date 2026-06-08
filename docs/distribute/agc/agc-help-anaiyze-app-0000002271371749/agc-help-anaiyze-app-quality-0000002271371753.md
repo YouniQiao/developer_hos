@@ -2,8 +2,11 @@
 title: "分析应用质量"
 original_url: /docs/distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-quality-0000002271371753
 format: md
+upstream_id: distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-quality-0000002271371753
+last_sync: 2026-06-07
+sync_hash: 2b0a6107
+upstream_hash: 1c6f453208bb
 ---
-
 
 #### 安装失败
 

@@ -3,9 +3,10 @@ title: "@security/no-unsafe-huks"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unsafe-huks
 format: md
+upstream_id: tools/coding-debug/ide_no-unsafe-huks
+last_sync: 2026-06-07
+sync_hash: 628fa787
 ---
-
-
 # @security/no-unsafe-huks
 
 此规则禁止在HUKS中使用不安全的加密模式ECB，不安全的摘要算法MD5、SHA1，填充算法NONE、PKCS1-V1\_5。推荐使用HUKS的AES-GCM算法，详情参见：[对称加解密算法](`https://`developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/aegis-encryption-and-decryption-symmetry-0000001861247310)。

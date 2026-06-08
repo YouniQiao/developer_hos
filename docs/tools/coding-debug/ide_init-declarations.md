@@ -3,9 +3,10 @@ title: "@typescript-eslint/init-declarations"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_init-declarations
 format: md
+upstream_id: tools/coding-debug/ide_init-declarations
+last_sync: 2026-06-07
+sync_hash: 518e71b1
 ---
-
-
 # @typescript-eslint/init-declarations
 
 禁止或者要求在变量声明中进行初始化。

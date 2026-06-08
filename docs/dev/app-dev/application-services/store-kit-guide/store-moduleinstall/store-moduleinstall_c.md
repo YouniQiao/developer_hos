@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "产品特性按需分发(C/C++)"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-moduleinstall/store-moduleinstall_c
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-moduleinstall/store-moduleinstall_c
+last_sync: 2026-06-07
+sync_hash: f2eeab8f
 ---
-
-
 ## 场景介绍
 
 随着HarmonyOS应用的持续发展，应用的功能将越来越丰富，实际上80%的用户使用时长都会集中在20%的特性上，其余的功能可能也仅仅是面向部分用户。为了避免用户首次下载应用耗时过长，及过多占用用户空间，应用市场服务提供按需分发的能力，支持用户按需动态下载自己所需的增强特性。

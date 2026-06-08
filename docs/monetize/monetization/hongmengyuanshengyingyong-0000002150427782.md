@@ -3,10 +3,10 @@ title: "鸿蒙应用"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/hongmengyuanshengyingyong-0000002150427782
 format: md
+upstream_id: monetize/monetization/hongmengyuanshengyingyong-0000002150427782
+last_sync: 2026-06-07
+sync_hash: 9738dcd8
 ---
-
-
-
 #### 鸿蒙应用
 
 鸿蒙应用流量变现服务，依托HarmonyOS NEXT系统让您无需集成SDK，轻松实现广告的接入。接入详情查看[《Ads Kit》](/docs/dev/app-dev/application-services/ads-kit-guide/ads-introduction)。

@@ -3,8 +3,10 @@ title: "删除商品库"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-dpa6-0000001286343138
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-dpa6-0000001286343138
+last_sync: 2026-06-07
+sync_hash: 9ea55ce4
 ---
-
 # 删除商品库
 
 您通过本接口可以删除商品库。

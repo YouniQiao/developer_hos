@@ -1,8 +1,10 @@
 ---
 title: "使用ASan检测内存错误"
 original_url: /docs/quality/stability-asan-detection
+upstream_id: /docs/quality/stability-asan-detection
+last_sync: 2026-06-07
+sync_hash: 0aa88672
 ---
-
 # 使用ASan检测内存错误
 
 ASan的能力概述和检测原理可参看[地址越界检测能力概述](/docs/quality/stability-address-sanitizer-overview)以及[ASan检测原理](/docs/quality/stability-address-sanitizer-principle#section159561141247)，适用于开发态调试压测场景。
@@ -58,7 +60,7 @@ handle_sigbus=0
 
 ### 在Run/Debug Configurations中配置环境变量
 
-具体请查看[配置环境变量](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-debug-configurations#section9413113717532)。
+具体请查看[配置环境变量](/docs/tools/coding-debug/ide-run-debug-configurations#section9413113717532)。
 
 表1 常用参数
 
@@ -95,7 +97,7 @@ handle_sigbus=0
 
 **流水线场景**
 
-在hvigorw命令后加上**ohos-debug-asan=true**的选项，执行hvigorw命令，更多options参考[hvigorw文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-commandline)
+在hvigorw命令后加上**ohos-debug-asan=true**的选项，执行hvigorw命令，更多options参考[hvigorw文档](/docs/tools/cli-tools/ide-hvigor-commandline)
 
 ```
 hvigorw [taskNames...] ohos-debug-asan=true  <options>
@@ -130,7 +132,7 @@ hvigorw [taskNames...] ohos-debug-asan=true  <options>
 
 **流水线场景**
 
-在AppScope/app.json5和模块build-profile.json5配置对应asan项后，可直接执行hvigorw命令，更多options参考[hvigorw文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-commandline)
+在AppScope/app.json5和模块build-profile.json5配置对应asan项后，可直接执行hvigorw命令，更多options参考[hvigorw文档](/docs/tools/cli-tools/ide-hvigor-commandline)
 
 ```
 hvigorw [taskNames...] ohos-debug-asan=true  <options>
@@ -161,7 +163,7 @@ llvm-readelf工具路径为：$&#123;DevEco Studio安装目录&#125;/sdk/default
 ## 运行ASan
 
 1. 运行或调试当前应用。
-2. 当程序出现内存错误时，弹出ASan log信息，点击信息中的链接即可跳转至引起内存错误的代码处（非release版本）。release版本本地无工程代码，可以使用[AnalyzeStackTrace功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-release-app-stack-analysis)，提供要解析堆栈的so，解析结果为源码地址。
+2. 当程序出现内存错误时，弹出ASan log信息，点击信息中的链接即可跳转至引起内存错误的代码处（非release版本）。release版本本地无工程代码，可以使用[AnalyzeStackTrace功能](/docs/tools/coding-debug/ide-release-app-stack-analysis)，提供要解析堆栈的so，解析结果为源码地址。
 
    ![](./img/7070a24f.png)
 

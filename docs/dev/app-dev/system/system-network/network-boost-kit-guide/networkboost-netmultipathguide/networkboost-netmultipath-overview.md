@@ -2,9 +2,10 @@
 title: "概述"
 original_url: /docs/dev/app-dev/system/system-security/online-authentication-kit-guide/onlineauthentication-passkey/onlineauthentication-passkey-intro
 format: md
+upstream_id: dev/app-dev/system/system-security/online-authentication-kit-guide/onlineauthentication-passkey/onlineauthentication-passkey-intro
+last_sync: 2026-06-07
+sync_hash: f5d4706d
 ---
-
-
 从6.0.0(20)版本开始，支持连接迁移（多网并发）功能。
 
 多网并发是系统提供接口可以建立多个网络通路，应用发起多网请求后，系统依据业务场景决定并发组合和实施相应的并发管控，并对并发做收益度量。使用多网并发功能的原则是应用申请（受限权限）、系统管控、最小化使用。

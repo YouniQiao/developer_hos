@@ -2,9 +2,10 @@
 title: "在新窗口中打开页面"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-open-in-new-window
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-open-in-new-window
+last_sync: 2026-06-07
+sync_hash: ba0f412d
 ---
-
-
 Web组件提供了在新窗口打开页面的能力，开发者可以通过[multiWindowAccess()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-attributes#multiwindowaccess9)接口来设置是否允许网页在新窗口打开。当有新窗口打开时，应用侧会在[onWindowNew()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onwindownew9)接口或[onWindowNewExt()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onwindownewext23)接口中收到Web组件新窗口事件。开发者需要在此接口事件中新建窗口来处理Web组件的窗口请求。
 
 ![](./img/a6b35439.png)

@@ -3,8 +3,10 @@ title: "链路测试"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-link-test-0000001352018577
 format: md
+upstream_id: monetize/promotion/bp-functions-link-test-0000001352018577
+last_sync: 2026-06-07
+sync_hash: b91627cb
 ---
-
 # 链路测试
 
 通过链路测试，可以对监测链接、数据回传进行联调测试。

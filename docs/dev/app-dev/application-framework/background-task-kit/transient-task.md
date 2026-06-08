@@ -2,9 +2,10 @@
 title: "短时任务(ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/background-task-kit/transient-task
 format: md
+upstream_id: dev/app-dev/application-framework/background-task-kit/transient-task
+last_sync: 2026-06-07
+sync_hash: 2d4485f1
 ---
-
-
 ## 概述
 
 应用退至后台一小段时间后，应用进程会被挂起，无法执行对应的任务。如果应用需在被挂起前，执行一些耗时不长的任务，如状态保存、消息发送等，可以通过本文申请短时任务，扩展应用在后台的运行时间。

@@ -2,9 +2,10 @@
 title: "概述"
 original_url: /docs/dev/app-dev/ai/intents-event-rec-introduction
 format: md
+upstream_id: dev/app-dev/ai/intents-event-rec-introduction
+last_sync: 2026-06-07
+sync_hash: e4be25e7
 ---
-
-
 事件推荐是应用/元服务有新的动态产生且满足推荐规则时给用户做出的主动推荐。实现事件推荐需要开发者将事件信息共享给意图框架，当满足事件推送规则时，会在小艺建议入口向指定用户推荐该事件提醒卡片，也支持通过对话或关键字搜索的方式查询事件内容状态。
 
 事件根据是否指定用户ID可分为两种：用户事件和公共事件。

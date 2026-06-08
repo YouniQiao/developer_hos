@@ -2,9 +2,10 @@
 title: "基于服务账号生成鉴权令牌"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-prepare/devicesecurity-deviceverify-token
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-prepare/devicesecurity-deviceverify-token
+last_sync: 2026-06-07
+sync_hash: 2500547a
 ---
-
-
 ![](./img/114db86a.png)
 
 只有使用应用设备状态检测服务时才需要配置此章节。

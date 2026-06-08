@@ -2,9 +2,10 @@
 format: md
 title: "编译异常，无具体错误日志，难以定位问题"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-136
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-136
+last_sync: 2026-06-07
+sync_hash: 33ded648
 ---
-
-
 **问题现象**
 
 出现Failed to execute es2abc错误，但未提供具体的错误日志，导致问题难以定位和分析。

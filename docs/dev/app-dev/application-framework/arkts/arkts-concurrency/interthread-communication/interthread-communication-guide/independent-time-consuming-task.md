@@ -2,9 +2,10 @@
 title: "使用TaskPool执行独立的耗时任务"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide/independent-time-consuming-task
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide/independent-time-consuming-task
+last_sync: 2026-06-07
+sync_hash: f233289a
 ---
-
-
 对于独立运行的耗时任务，任务完成后将结果返回给宿主线程。可采用以下方式实现。
 
 下面通过图片加载来说明。

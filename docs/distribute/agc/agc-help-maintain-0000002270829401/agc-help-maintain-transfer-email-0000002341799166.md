@@ -2,9 +2,10 @@
 title: "应用转移申请邮件模板"
 original_url: /docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-transfer-email-0000002341799166
 format: md
+upstream_id: distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-transfer-email-0000002341799166
+last_sync: 2026-06-07
+sync_hash: 70e655ff
 ---
-
-
 **收件人：**agconnect@huawei.com
 
 **主题：**HarmonyOS应用转移申请

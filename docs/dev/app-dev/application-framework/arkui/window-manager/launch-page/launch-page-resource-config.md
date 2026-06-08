@@ -2,9 +2,10 @@
 title: "启动页资源分类配置"
 original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/launch-page/launch-page-resource-config
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/window-manager/launch-page/launch-page-resource-config
+last_sync: 2026-06-07
+sync_hash: 96db2292
 ---
-
-
 启动页资源配置与其他资源配置相同，支持资源分类配置，可针对不同的场景配置不同资源，常用于在深色模式或不同设备类型上配置不同的启动页内容。
 
 ## 配置深色模式启动页

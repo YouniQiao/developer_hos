@@ -2,9 +2,10 @@
 title: "C#（小游戏）"
 original_url: /docs/dev/game-dev/games-gamemme-engine-csharp-minigame-0000002359706954
 format: md
+upstream_id: dev/game-dev/games-gamemme-engine-csharp-minigame-0000002359706954
+last_sync: 2026-06-07
+sync_hash: a6e77bb6
 ---
-
-
 调用相关接口需要先完成初始化，初始化是通过创建实例来实现的。
 
 ![](./img/de225340.png)

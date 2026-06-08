@@ -2,9 +2,10 @@
 title: "动态壁纸设计指导及规范"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/livewallpaper-0000001054851128/livewallpaper-specifications-0000001055029722
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/livewallpaper-0000001054851128/livewallpaper-specifications-0000001055029722
+last_sync: 2026-06-07
+sync_hash: d14f6817
 ---
-
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # 动态壁纸设计指导及规范

@@ -2,9 +2,10 @@
 title: "组队匹配"
 original_url: /docs/dev/game-dev/gameobe-groupmatch-csharp-0000002361670528
 format: md
+upstream_id: dev/game-dev/gameobe-groupmatch-csharp-0000002361670528
+last_sync: 2026-06-07
+sync_hash: 1f6992a7
 ---
-
-
 * **[创建队伍](/docs/dev/game-dev/gameobe-creategroup-csharp-0000002395350465)**
 * **[加入队伍](/docs/dev/game-dev/gameobe-joingroup-csharp-0000002361510660)**
 * **[管理队伍](/docs/dev/game-dev/gameobe-managegroup-csharp-0000002395190573)**

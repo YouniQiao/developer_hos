@@ -2,9 +2,10 @@
 title: "开放权限（系统授权）"
 original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-all
 format: md
+upstream_id: dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-all
+last_sync: 2026-06-07
+sync_hash: fc57488f
 ---
-
-
 此列表内所有权限均为系统授权（system\_grant）的开放权限，面向所有应用开放。
 
 应用申请了system\_grant权限后，系统将在用户安装应用时，自动把相应权限授予给应用。

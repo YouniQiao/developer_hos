@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "安全相机(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-secure-photo
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-secure-photo
+last_sync: 2026-06-07
+sync_hash: 4b5dab62
 ---
-
-
 安全相机主要为银行等有活体检测等安全诉求的应用提供，安全相机的使用需要加密算法框架及可信应用服务。
 
 应用具体使用步骤如下：

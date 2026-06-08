@@ -3,8 +3,11 @@ title: "堆栈解析工具（hstack）"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/ide-command-line-hstack
 format: md
+upstream_id: tools/cli-tools/ide-command-line-hstack
+last_sync: 2026-06-07
+sync_hash: 525e6e0a
+upstream_hash: 0055b36deaba
 ---
-
 
 # 堆栈解析工具（hstack）
 

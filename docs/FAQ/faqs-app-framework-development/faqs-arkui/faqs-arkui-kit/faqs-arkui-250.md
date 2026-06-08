@@ -2,9 +2,10 @@
 title: "如何实现列表既可以左右滑、又可以上下滑动"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-250
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-250
+last_sync: 2026-06-07
+sync_hash: fe17f009
 ---
-
-
 实现列表的上下、左右滑动，参考代码如下：
 
 1.代码页面布局部分

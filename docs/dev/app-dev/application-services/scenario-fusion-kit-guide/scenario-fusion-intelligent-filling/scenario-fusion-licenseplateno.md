@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "推荐车牌号场景"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-licenseplateno
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-licenseplateno
+last_sync: 2026-06-07
+sync_hash: decd1b2b
+upstream_hash: 8a124bbf96fd
 ---
-
 
 从5.1.0(18)开始，支持智能填充的推荐车牌号场景。
 

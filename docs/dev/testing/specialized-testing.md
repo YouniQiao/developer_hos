@@ -2,9 +2,10 @@
 title: "专项测试"
 original_url: /docs/dev/testing/specialized-testing
 format: md
+upstream_id: dev/testing/specialized-testing
+last_sync: 2026-06-07
+sync_hash: bf560302
 ---
-
-
 ![](./img/2f811444.png "点击放大")
 
 ## 性能基础质量测试
@@ -131,7 +132,7 @@ format: md
 * 测试结论：描述本次测试的结论，包括遍历时长、执行操作次数、发现问题数。
 * 报告对比：一键跳转到性能测试报告对比工具，从概览、指标达标率等多维度进行报告对比。
 * 性能报告自动分析：一键跳转到性能报告自动分析服务，对该报告中发现的问题进行自动分析。
-* 导出IDE体检文件：支持生成体检文件导入到DevEco Studio中进行问题分析定位。详细操作指导请查看[导入DevEco Testing的检测报告进行诊断](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer-testing)。
+* 导出IDE体检文件：支持生成体检文件导入到DevEco Studio中进行问题分析定位。详细操作指导请查看[导入DevEco Testing的检测报告进行诊断](/docs/tools/coding-debug/ide-app-analyzer-testing)。
 * 问题分布环形图：呈现本次任务发现的总问题数以及各指标性能问题的分布情况。
 * 操作类型和问题表单：统计遍历过程中，启动、点击、滑动、观看的操作次数，以及对应指标发现的问题数。
 * 一般体验：为了帮助提前识别可能影响应用日常使用的性能体验问题，将所有体验问题进行过滤，聚焦于明显影响用户体验的严重问题，问题数会比所有体验问题少。
@@ -332,7 +333,7 @@ format: md
 * 测试结论：描述本次测试的结论，包括执行用例个数、轮数、操作次数及发现问题数。
 * 报告对比：一键跳转到报告对比工具，从概览、指标优劣化、用例对比详情等多维度进行报告对比。
 * 性能报告自动分析：一键跳转到性能报告自动分析服务，对该报告中发现的问题进行自动分析。
-* 导出IDE体检文件：支持生成体检文件导入到DevEco Studio中进行问题分析定位。详细操作指导请查看[导入DevEco Testing的检测报告进行诊断](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer-testing)。
+* 导出IDE体检文件：支持生成体检文件导入到DevEco Studio中进行问题分析定位。详细操作指导请查看[导入DevEco Testing的检测报告进行诊断](/docs/tools/coding-debug/ide-app-analyzer-testing)。
 * 问题分布环形图：呈现本次任务发现的总问题数以及各指标性能问题的分布情况。
 * 用户场景和问题分布表单：执行状态表示用例场景多轮执行的状态，用例场景展示的是脚本中定义的场景用例名称，后面几列为对应指标发现的问题数。
 * 一般体验：为了帮助提前识别可能影响应用日常使用的性能体验问题，将所有体验问题进行过滤，聚焦于明显影响用户体验的严重问题，问题数会比所有体验问题少。

@@ -3,10 +3,10 @@ title: "创建媒体和展示位"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_quickapp_media-position-0000001368066693
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_quickapp_media-position-0000001368066693
+last_sync: 2026-06-07
+sync_hash: bc97466d
 ---
-
-
-
 #### 前提条件
 
 您的媒体应用已上架。

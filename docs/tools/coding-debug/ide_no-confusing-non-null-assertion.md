@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-confusing-non-null-assertion"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-confusing-non-null-assertion
 format: md
+upstream_id: tools/coding-debug/ide_no-confusing-non-null-assertion
+last_sync: 2026-06-07
+sync_hash: 8d4c7f29
 ---
-
-
 # @typescript-eslint/no-confusing-non-null-assertion
 
 不允许在可能产生混淆的位置使用非空断言。

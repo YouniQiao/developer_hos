@@ -2,9 +2,10 @@
 format: md
 title: "生成签名时报错删除 .p12 文件目录下的 material 文件夹，重新应用自动签名"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-80
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-80
+last_sync: 2026-06-07
+sync_hash: 9d784367
 ---
-
-
 **问题描述**
 
 点击生成签名时出现错误：

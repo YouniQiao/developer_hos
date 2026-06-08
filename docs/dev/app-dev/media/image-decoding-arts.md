@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "图片解码"
 original_url: /docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts
+last_sync: 2026-06-07
+sync_hash: 2dc6ffe2
 ---
-
-
 * **[使用ImageSource完成图片解码](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-decoding)**
 * **[使用ImageSource完成多图对象解码](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-picture-decoding)**
 * **[图片解码内存优化(ArkTS)](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts/image-allocator-type)**

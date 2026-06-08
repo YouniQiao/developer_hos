@@ -2,9 +2,10 @@
 title: "使用NDK接口实现画中画功能开发（C/C++）"
 original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/window-pipwindow/pipwindow-native
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/window-manager/window-pipwindow/pipwindow-native
+last_sync: 2026-06-07
+sync_hash: 86a01a99
 ---
-
-
 本文以视频播放为例，介绍通过NDK接口实现画中画功能的基本开发步骤。
 
 ![](./img/eab7e722.png)

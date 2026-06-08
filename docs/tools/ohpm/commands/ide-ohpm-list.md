@@ -3,9 +3,10 @@ title: "ohpm list"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-list
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-list
+last_sync: 2026-06-07
+sync_hash: 125eec36
 ---
-
-
 # ohpm list
 
 列出已安装的三方库。

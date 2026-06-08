@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取网格扫描信息（C/C++）"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-mesh/arengine-c-get-mesh
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/get-mesh/arengine-c-get-mesh
+last_sync: 2026-06-07
+sync_hash: 0f195d33
 ---
-
-
 本章节给出了关键开发步骤，完整代码可以参考[示例代码](https://gitcode.com/harmonyos_samples/arengine_-sample-code_-clientdemo_cpp)。
 
 ## 约束与限制

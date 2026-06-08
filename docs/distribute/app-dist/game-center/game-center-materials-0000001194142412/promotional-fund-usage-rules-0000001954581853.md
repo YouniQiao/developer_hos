@@ -3,9 +3,10 @@ title: "鸿飞计划推广金使用规则"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/promotional-fund-usage-rules-0000001954581853
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-materials-0000001194142412/promotional-fund-usage-rules-0000001954581853
+last_sync: 2026-06-07
+sync_hash: f4fccd6e
 ---
-
-
 # 鸿飞计划推广金使用规则
 
 <strong>政策周期：</strong>2026年1月1日-2026年6月30日。

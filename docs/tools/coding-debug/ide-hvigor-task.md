@@ -3,9 +3,10 @@ title: "开发Hvigor任务"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-task
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-task
+last_sync: 2026-06-07
+sync_hash: 354517b0
 ---
-
-
 # 开发Hvigor任务
 
 #### 了解任务

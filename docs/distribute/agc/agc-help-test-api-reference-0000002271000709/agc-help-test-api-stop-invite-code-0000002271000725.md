@@ -2,9 +2,10 @@
 title: "停止邀请码"
 original_url: /docs/distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-stop-invite-code-0000002271000725
 format: md
+upstream_id: distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-stop-invite-code-0000002271000725
+last_sync: 2026-06-07
+sync_hash: f22b6630
 ---
-
-
 #### 功能介绍
 
 此接口用于邀请测试停止邀请码。

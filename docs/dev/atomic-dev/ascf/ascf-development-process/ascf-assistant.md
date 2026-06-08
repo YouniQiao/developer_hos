@@ -2,9 +2,10 @@
 title: "使用ASCF助手开发"
 original_url: /docs/dev/atomic-dev/ascf/ascf-development-process/ascf-assistant
 format: md
+upstream_id: dev/atomic-dev/ascf/ascf-development-process/ascf-assistant
+last_sync: 2026-06-07
+sync_hash: 240b90eb
 ---
-
-
 为了方便使用VSCode的开发者，ASCF团队开发并维护了VSCode插件——[ASCF开发助手](https://marketplace.visualstudio.com/items?itemName=atomicservice.ascf-plugin-vscode)，提供了一键式项目创建快速转换及调试功能，帮助开发者开发元服务。
 
 ![](./img/f5674155.png)

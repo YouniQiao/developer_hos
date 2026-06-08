@@ -2,8 +2,11 @@
 title: "版本更新说明"
 original_url: /docs/dev/game-dev/games-gpm-releasenotes-0000002332907205
 format: md
+upstream_id: dev/game-dev/games-gpm-releasenotes-0000002332907205
+last_sync: 2026-06-07
+sync_hash: 27465ff8
+upstream_hash: 40b96a1344b1
 ---
-
 
 ## AGC控制台
 

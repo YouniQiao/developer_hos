@@ -2,9 +2,10 @@
 title: "线程模型及线程间通信"
 original_url: /docs/dev/game-dev/games-universal-interthead-communication-0000002299257040
 format: md
+upstream_id: dev/game-dev/games-universal-interthead-communication-0000002299257040
+last_sync: 2026-06-07
+sync_hash: 0d457953
 ---
-
-
 线程间通信指的是并发多线程间存在的数据交换行为。由于ArkTS语言兼容TS/JS，其运行时的实现与其它所有的JS引擎一样，都是基于Actor内存隔离的并发模型提供并发能力。
 
 对于不同的数据对象，在ArkTS线程间通信的行为是有差异的，比如普通JS对象、ArrayBuffer对象、SharedArrayBuffer对象等，跨线程的行为是不一致的，包括序列化反序列化拷贝、数据转移、数据共享等不同行为。

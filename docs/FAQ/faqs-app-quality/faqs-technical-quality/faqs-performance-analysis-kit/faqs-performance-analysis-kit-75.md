@@ -2,9 +2,10 @@
 format: md
 title: "hdc调试设备报错：hdc server port XXXX has been used，切换端口无效"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-75
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-75
+last_sync: 2026-06-07
+sync_hash: 6665923d
 ---
-
-
 **问题现象**
 
 hdc调试设备提示报错：hdc server port XXXX has been used，手动切换端口无法解决。

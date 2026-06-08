@@ -2,9 +2,10 @@
 title: "提升屏幕朗读无障碍体验"
 original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience
 format: md
+upstream_id: dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience
+last_sync: 2026-06-07
+sync_hash: 7f32051f
 ---
-
-
 * **[标注屏幕朗读内容的场景](/docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-screen-reading)**
 * **[禁用屏幕朗读焦点的场景](/docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-disable-screen-reading-focus)**
 * **[多维嵌套场景](/docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-multidimensional-nesting)**

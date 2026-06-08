@@ -2,9 +2,10 @@
 title: "批量变更商品"
 original_url: /docs/dev/atomic-dev/instant-service-app-offerings/instant-service-app-offerings-batch-update
 format: md
+upstream_id: dev/atomic-dev/instant-service-app-offerings/instant-service-app-offerings-batch-update
+last_sync: 2026-06-07
+sync_hash: e3fc5c8c
 ---
-
-
 在商品状态为“草稿”、“审核驳回”、“已上架”状态时，开发者可以通过“批量变更”操作更新商品信息并发起审核。
 
 1. 在服务直达主界面，选择“商品直达”页签，点击“商品状态”列筛选出“已上架”状态的商品。

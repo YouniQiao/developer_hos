@@ -2,9 +2,10 @@
 title: "下架/重新上架数字商品"
 original_url: /docs/dev/game-dev/games-center-set-digital-products-off-shelf-0000002320572929
 format: md
+upstream_id: dev/game-dev/games-center-set-digital-products-off-shelf-0000002320572929
+last_sync: 2026-06-07
+sync_hash: eb9ca277
 ---
-
-
 当商品提交审核并通过后，则被开放购买，如需停止该商品的对外售卖，可选择下架该数字商品。
 
 ## 下架单个数字商品

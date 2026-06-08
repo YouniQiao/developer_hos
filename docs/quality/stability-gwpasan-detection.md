@@ -2,9 +2,10 @@
 title: "使用GWP-ASan检测内存错误"
 original_url: /docs/quality/stability-gwpasan-detection
 format: md
+upstream_id: /docs/quality/stability-gwpasan-detection
+last_sync: 2026-06-07
+sync_hash: 22e4564d
 ---
-
-
 # 使用GWP-ASan检测内存错误
 
 GWP-ASan的能力概述和检测原理可参看[地址越界检测能力概述](/docs/quality/stability-address-sanitizer-overview)以及[GWP-ASan检测原理](/docs/quality/stability-address-sanitizer-principle#section555616291854)，适用于运行态商用场景。

@@ -2,9 +2,10 @@
 title: "Native如何调ArkTS的方法"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-30
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-30
+last_sync: 2026-06-07
+sync_hash: fc9dd693
 ---
-
-
 1. 在index.d.ts文件中提供 ArkTS 接口方法。
 
 ```

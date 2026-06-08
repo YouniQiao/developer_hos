@@ -2,9 +2,10 @@
 title: "版本升级错误码说明"
 original_url: /docs/distribute/agc/agc-help-appendix-0000002312305161/agc-help-update-errorcode-0000002322270833
 format: md
+upstream_id: distribute/agc/agc-help-appendix-0000002312305161/agc-help-update-errorcode-0000002322270833
+last_sync: 2026-06-07
+sync_hash: 433a2224
 ---
-
-
 | 错误码 | 错误详情 |
 | --- | --- |
 | [101](#section1528375913118) | 同版本升级，软件包的应用模型校验失败 |

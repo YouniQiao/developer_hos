@@ -2,9 +2,10 @@
 title: "ohpm-repo pack"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-pack
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-pack
+last_sync: 2026-06-07
+sync_hash: 3c8574c2
 ---
-
-
 # ohpm-repo pack
 
 打包ohpm-repo部署目录文件。

@@ -2,9 +2,10 @@
 title: "同步任务开发指导 (TaskPool和Worker)"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/time-consuming-task/sync-task-development
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/time-consuming-task/sync-task-development
+last_sync: 2026-06-07
+sync_hash: 1f8c37e0
 ---
-
-
 同步任务用于在多个线程间协调执行，确保任务按特定顺序和规则进行（如使用锁防止数据竞争）。
 
 同步任务的实现需要考虑多个线程之间的协作和同步，以确保数据的正确性和程序的正确执行。

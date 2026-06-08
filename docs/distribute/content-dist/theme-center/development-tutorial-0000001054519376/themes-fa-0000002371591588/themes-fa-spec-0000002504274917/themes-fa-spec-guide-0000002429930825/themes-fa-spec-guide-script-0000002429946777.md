@@ -3,9 +3,10 @@ title: "脚本设计"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/themes-fa-spec-guide-script-0000002429946777
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/themes-fa-spec-guide-script-0000002429946777
+last_sync: 2026-06-07
+sync_hash: aba4e7c3
 ---
-
-
 # 脚本设计
 
 创作者可基于主题引擎能力编写出各式各样动态效果的百变卡片，具体脚本写法参见HarmonyOS 5.0及以上版本主题引擎脚本规范。

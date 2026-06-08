@@ -2,9 +2,10 @@
 format: md
 title: "Webview accessBackward不符合预期的可能情况"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-88
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-88
+last_sync: 2026-06-07
+sync_hash: 50e04b37
 ---
-
-
 **背景**
 
 一般情况下，页面发生新的跳转时，前进后退栈会递增，此时accessBackward会返回true，表示存在后退历史节点。然而，在某些情况下，新的跳转不会新增历史节点，而是替换当前节点，比如当加载相同的URL，或者在初始URL加载过程中进行刷新时。

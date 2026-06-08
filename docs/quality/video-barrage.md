@@ -1,9 +1,10 @@
 ---
 title: "视频场景弹幕绘制低功耗规则"
 original_url: /docs/quality/video-barrage
+upstream_id: /docs/quality/video-barrage
+last_sync: 2026-06-07
+sync_hash: 72a7293d
 ---
-
-
 # 视频场景弹幕绘制低功耗规则
 
 ## 规则

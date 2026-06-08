@@ -2,9 +2,10 @@
 title: "问题反馈"
 original_url: /docs/dev/game-dev/games-hismartperf-feedback-0000002321404229
 format: md
+upstream_id: dev/game-dev/games-hismartperf-feedback-0000002321404229
+last_sync: 2026-06-07
+sync_hash: 51aee4b6
 ---
-
-
 在使用游戏性能调优工具过程中遇到问题，您可以直接在工具中反馈问题或者提出对工具的建议。
 
 1. 打开问题反馈界面。

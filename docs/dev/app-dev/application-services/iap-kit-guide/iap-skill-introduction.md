@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "接入Skill（可选）"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-skill-introduction
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-skill-introduction
+last_sync: 2026-06-07
+sync_hash: bdf0f3b6
+upstream_hash: 7b6769dc7ca2
 ---
-
 
 应用内支付服务接入Skill是基于IAP Kit文档沉淀标准流程与关键校验点，将“文档阅读”转化为“任务清单执行”，帮助开发者更快完成接入应用内支付服务的能力。
 

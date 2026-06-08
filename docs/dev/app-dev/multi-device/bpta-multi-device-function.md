@@ -3,6 +3,10 @@ title: "多设备功能开发"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-function
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi-device-function
+last_sync: 2026-06-07
+sync_hash: 8b785817
+upstream_hash: c1c92f786176
 ---
 
 # 多设备功能开发

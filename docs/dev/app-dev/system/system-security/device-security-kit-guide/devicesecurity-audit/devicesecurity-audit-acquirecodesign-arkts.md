@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "代码签名信息查询场景"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-audit/devicesecurity-audit-acquirecodesign-arkts
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-audit/devicesecurity-audit-acquirecodesign-arkts
+last_sync: 2026-06-07
+sync_hash: 68834a51
 ---
-
-
 从6.1.1(24)开始，新增提供文件代码签名信息查询接口，可以获取设备上已签名的文件签名信息。
 
 ## 场景介绍

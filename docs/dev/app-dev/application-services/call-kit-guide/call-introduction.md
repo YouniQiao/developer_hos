@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Call Service Kit简介"
 original_url: /docs/dev/app-dev/application-services/call-kit-guide/call-introduction
 format: md
+upstream_id: dev/app-dev/application-services/call-kit-guide/call-introduction
+last_sync: 2026-06-07
+sync_hash: 564a32cb
 ---
-
-
 Call Service Kit（通话服务）是HarmonyOS为开发者提供的应用内通话管理服务。
 
 开发者通过集成Call Service Kit，可以实现便捷的来电一键接听、横幅通知、静音与取消静音等功能，提升用户体验。

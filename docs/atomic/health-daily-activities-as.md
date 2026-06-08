@@ -2,9 +2,10 @@
 title: "日常活动"
 original_url: /docs/dev/atomic-dev/health-samplepoint-as/health-daily-activities-as
 format: md
+upstream_id: dev/atomic-dev/health-samplepoint-as/health-daily-activities-as
+last_sync: 2026-06-07
+sync_hash: 22dfdaeb
 ---
-
-
 此数据记录用户在一小段时间内的日常活动数据。
 
 * Harmony SDK类型常量：[samplePointHelper.dailyActivities.DATA\_TYPE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-samplepointhelper#常量-3)

@@ -3,8 +3,10 @@ title: 阔折叠
 sidebar_label: 阔折叠
 original_url: /docs/design/multi-device-design/folding-screen/flip
 format: md
+upstream_id: design/multi-device-design/folding-screen/flip
+last_sync: 2026-06-07
+sync_hash: 672136f9
 ---
-
 \{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 阔折叠

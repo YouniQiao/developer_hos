@@ -2,9 +2,10 @@
 title: "使用DevEco Studio静态检测编码规范"
 original_url: /docs/quality/stability-ide-static-detection
 format: md
+upstream_id: /docs/quality/stability-ide-static-detection
+last_sync: 2026-06-07
+sync_hash: f74dc795
 ---
-
-
 # 使用DevEco Studio静态检测编码规范
 
 ## 使用Clang-Tidy检测
@@ -68,7 +69,7 @@ https://clang.llvm.org/extra/clang-tidy/#using-clang-tidy
 
 **Code Linter代码检查**
 
-DevEco Studio集成了Code Linter，用于针对ArkTS/TS代码进行最佳实践/编程规范方面的检查。检查规则支持配置，配置方式请参考[配置代码检查规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter#section19310459444)。
+DevEco Studio集成了Code Linter，用于针对ArkTS/TS代码进行最佳实践/编程规范方面的检查。检查规则支持配置，配置方式请参考[配置代码检查规则](/docs/tools/coding-debug/ide-code-linter#section19310459444)。
 
 根据扫描结果中的告警提示，开发者可以手工修复代码缺陷，也可以执行一键式自动修复。这有助于在代码开发阶段确保代码质量。
 
@@ -239,7 +240,7 @@ Foo.bar();
 
 ![](./img/ae2878d5.png)
 
-如需在code-linter.json5文件中配置其他字段，请参见[配置代码检查规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter#section19310459444)。
+如需在code-linter.json5文件中配置其他字段，请参见[配置代码检查规则](/docs/tools/coding-debug/ide-code-linter#section19310459444)。
 
 执行代码检查
 

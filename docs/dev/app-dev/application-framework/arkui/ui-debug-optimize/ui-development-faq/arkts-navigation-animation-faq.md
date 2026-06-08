@@ -2,8 +2,11 @@
 title: "Navigation动画常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-navigation-animation-faq
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-navigation-animation-faq
+last_sync: 2026-06-07
+sync_hash: 7f57b8d3
+upstream_hash: 6ed1efe06261
 ---
-
 
 ## Dialog类型NavDestination蒙层动画不流畅
 

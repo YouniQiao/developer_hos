@@ -2,9 +2,10 @@
 title: "如何反馈位置信息"
 original_url: /docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-position-info-feedback-0000002349181500
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-position-info-feedback-0000002349181500
+last_sync: 2026-06-07
+sync_hash: 77aceacf
 ---
-
-
 当您注册信标或者POI位置时，如果提示**未查询到想要的位置信息**或者平台匹配的**位置信息有误**，您可通过花瓣地图或邮件两种方式反馈需要增加的位置。
 
 #### 通过花瓣地图反馈

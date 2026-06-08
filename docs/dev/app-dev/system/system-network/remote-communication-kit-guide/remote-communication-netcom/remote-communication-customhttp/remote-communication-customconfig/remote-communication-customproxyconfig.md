@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "ProxyConfiguration：定制代理"
 original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-customhttp/remote-communication-customconfig/remote-communication-customproxyconfig
 format: md
+upstream_id: dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-customhttp/remote-communication-customconfig/remote-communication-customproxyconfig
+last_sync: 2026-06-07
+sync_hash: 09245e7b
 ---
-
-
 ## 场景介绍
 
 在远场通信框架中，ProxyConfiguration配置会话代理设置，提供system、no-proxy和WebProxy三种选项。

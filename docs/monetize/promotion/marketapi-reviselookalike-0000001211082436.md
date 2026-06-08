@@ -3,8 +3,10 @@ title: "修改lookalike人群定向"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-reviselookalike-0000001211082436
 format: md
+upstream_id: monetize/promotion/marketapi-reviselookalike-0000001211082436
+last_sync: 2026-06-07
+sync_hash: 1d2b07cf
 ---
-
 # 修改lookalike人群定向
 
 ## 功能介绍

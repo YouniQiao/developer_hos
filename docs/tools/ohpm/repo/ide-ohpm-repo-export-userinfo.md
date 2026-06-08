@@ -2,9 +2,10 @@
 title: "ohpm-repo export_userinfo"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-export-userinfo
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-export-userinfo
+last_sync: 2026-06-07
+sync_hash: 1093da62
 ---
-
-
 # ohpm-repo export\_userinfo
 
 导出用户必要的DB数据。

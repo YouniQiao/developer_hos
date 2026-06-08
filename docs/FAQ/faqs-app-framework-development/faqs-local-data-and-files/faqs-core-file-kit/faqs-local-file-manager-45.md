@@ -2,9 +2,10 @@
 format: md
 title: "如何判断文件是不是目录"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-45
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-45
+last_sync: 2026-06-07
+sync_hash: b301c006
 ---
-
-
 判断文件是否为目录可以使用方法 fileIo.statSync(dirPath).isDirectory()。返回结果为 true 表示是目录。
 
 **参考链接**

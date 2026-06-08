@@ -2,9 +2,10 @@
 title: "Scan Kit常见问题"
 original_url: /docs/dev/atomic-dev/atomic-code-scan-development/atomic-scan-faq
 format: md
+upstream_id: dev/atomic-dev/atomic-code-scan-development/atomic-scan-faq
+last_sync: 2026-06-07
+sync_hash: 098d7fd7
 ---
-
-
 ## Scan Kit无法识别多个码图
 
 **问题现象**

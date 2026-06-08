@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "CA证书开发指导"
 original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certmanager/certmanager-ca-certs-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-security/device-certificate-kit/certmanager/certmanager-ca-certs-guidelines
+last_sync: 2026-06-07
+sync_hash: fdbdae8e
 ---
-
-
 ![](./img/b9bedffe.png)
 
 本开发指导需使用API version 12及以上版本SDK。

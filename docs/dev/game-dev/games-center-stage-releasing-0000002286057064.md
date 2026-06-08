@@ -2,9 +2,10 @@
 title: "分阶段发布"
 original_url: /docs/dev/game-dev/games-center-stage-releasing-0000002286057064
 format: md
+upstream_id: dev/game-dev/games-center-stage-releasing-0000002286057064
+last_sync: 2026-06-07
+sync_hash: 2597bbe5
 ---
-
-
 ![](./img/fcf59a56.png)
 
 本文档所述功能即将下线，当前页面仅作历史存档。新功能请参考[《分阶段发布（7天内自动更新）》](/docs/dev/game-dev/games-center-phased-releasing-7day-0000002488439705)。

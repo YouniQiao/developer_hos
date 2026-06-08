@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "支持的国家/地区"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution-appendix/appgallery-support-regions
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-attribution-appendix/appgallery-support-regions
+last_sync: 2026-06-07
+sync_hash: 1aff4c28
+upstream_hash: 420660c3bfec
 ---
-
 
 | 国家/地区 | 英文名称 |
 | --- | --- |

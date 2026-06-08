@@ -2,9 +2,10 @@
 title: "目标设备选择"
 original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/we-device-selection
 format: md
+upstream_id: dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/we-device-selection
+last_sync: 2026-06-07
+sync_hash: 0e691538
 ---
-
-
 当获取到的已连接设备列表中包含多个设备时，需要根据业务需求正确挑选目标设备。
 
 ## 选择某种类型的设备

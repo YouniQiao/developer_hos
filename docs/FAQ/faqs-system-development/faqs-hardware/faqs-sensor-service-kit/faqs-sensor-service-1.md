@@ -2,9 +2,10 @@
 format: md
 title: "如何解决振动模块接口调用报错，错误码201的问题"
 original_url: /docs/FAQ/faqs-system-development/faqs-hardware/faqs-sensor-service-kit/faqs-sensor-service-1
+upstream_id: FAQ/faqs-system-development/faqs-hardware/faqs-sensor-service-kit/faqs-sensor-service-1
+last_sync: 2026-06-07
+sync_hash: 9b93b4a2
 ---
-
-
 **问题现象**
 
 振动模块接口调用出现错误，错误码为201。

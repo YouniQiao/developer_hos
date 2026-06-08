@@ -2,9 +2,10 @@
 title: "创建测试态POI"
 original_url: /docs/distribute/agc/agc-help-beacon-apply-teststate-service-0000002456705193/agc-help-beacon-regist-testsate-poi-0000002423306402
 format: md
+upstream_id: distribute/agc/agc-help-beacon-apply-teststate-service-0000002456705193/agc-help-beacon-regist-testsate-poi-0000002423306402
+last_sync: 2026-06-07
+sync_hash: b34f30bf
 ---
-
-
 在您的全网态服务上线之前，您可以创建测试态POI来替代信标设备，并使用自有真机验证测试态服务的出卡效果。
 
 #### 创建单个POI

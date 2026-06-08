@@ -2,9 +2,10 @@
 title: "如何将JSON对象转换成HashMap"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-89
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-89
+last_sync: 2026-06-07
+sync_hash: 6985fe90
 ---
-
-
 可以参考如下示例代码：
 
 ```

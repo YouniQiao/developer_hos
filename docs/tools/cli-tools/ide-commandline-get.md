@@ -4,9 +4,10 @@ title: 获取命令行工具
 sidebar_position: 50
 original_url: /docs/tools/cli-tools/ide-commandline-get
 format: md
+upstream_id: tools/cli-tools/ide-commandline-get
+last_sync: 2026-06-07
+sync_hash: 8ab353b3
 ---
-
-
 # 获取命令行工具
 
 HarmonyOS 提供了命令行工具包，包含代码检查工具（codelinter）、三方依赖管理工具（ohpm）、堆栈解析工具（hstack）和命令行构建工具（hvigorw）等。你可以从华为开发者网站下载命令行工具包，并根据操作系统配置环境变量。

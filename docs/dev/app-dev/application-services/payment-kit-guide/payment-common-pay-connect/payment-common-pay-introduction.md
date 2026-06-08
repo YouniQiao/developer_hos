@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "业务规则说明"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-introduction
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-introduction
+last_sync: 2026-06-07
+sync_hash: da0df0df
 ---
-
-
 ![](./img/0128f589.png)
 
 接入通用收银台需先开通对应的产品，参见[产品开通操作](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-product-configuration#场景一产品开通操作)。

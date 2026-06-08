@@ -3,8 +3,11 @@ title: "加载丢帧：ArkWeb分析"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-profiler-arkweb
 format: md
+upstream_id: tools/coding-debug/ide-profiler-arkweb
+last_sync: 2026-06-07
+sync_hash: d1405eee
+upstream_hash: ab7eb21a0ea6
 ---
-
 
 # 加载丢帧：ArkWeb分析
 

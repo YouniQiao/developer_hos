@@ -2,9 +2,10 @@
 title: "文件准备"
 original_url: /docs/dev/game-dev/gams-binary-optimization-files-0000002377028341
 format: md
+upstream_id: dev/game-dev/gams-binary-optimization-files-0000002377028341
+last_sync: 2026-06-07
+sync_hash: eed84249
 ---
-
-
 ## 准备原始包
 
 准备游戏的release正式上架包或debug调试包。

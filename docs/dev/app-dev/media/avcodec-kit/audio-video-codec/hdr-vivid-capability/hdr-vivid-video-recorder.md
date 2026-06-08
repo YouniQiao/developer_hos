@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "HDR Vivid视频录制"
 original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/hdr-vivid-capability/hdr-vivid-video-recorder
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/audio-video-codec/hdr-vivid-capability/hdr-vivid-video-recorder
+last_sync: 2026-06-07
+sync_hash: 77fb805c
+upstream_hash: 4402db959c37
 ---
-
 
 开发者可以调用本模块的Native API接口，实现在视频录制中支持HDR Vivid标准。
 

@@ -2,9 +2,10 @@
 format: md
 title: "如何解决编译报错“Error: cJSON_Parse failed, please check the JSON file.”的问题"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-123
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-123
+last_sync: 2026-06-07
+sync_hash: d7df6b2a
 ---
-
-
 **问题现象**
 
 编译错误：“Error: cJSON\\_Parse failed”。请检查JSON文件。

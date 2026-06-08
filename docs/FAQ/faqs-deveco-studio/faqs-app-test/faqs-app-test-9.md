@@ -2,8 +2,11 @@
 format: md
 title: "ohosTest测试文件引用了启动页的导出方法，测试时报错“Load Page Failed: pages/Index”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-9
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-9
+last_sync: 2026-06-07
+sync_hash: 4a7744ff
+upstream_hash: d268e4de0f2f
 ---
-
 
 **问题现象**
 

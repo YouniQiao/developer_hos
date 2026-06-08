@@ -2,9 +2,10 @@
 title: "审核要求"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/education-center/educenter-checklist-0000001059678993
+upstream_id: distribute/content-dist/education-center/educenter-checklist-0000001059678993
+last_sync: 2026-06-07
+sync_hash: 84d61a23
 ---
-
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # 审核要求

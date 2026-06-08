@@ -2,9 +2,10 @@
 title: "Sendable使用规则与约束"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/sendable-constraints
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/sendable-object/sendable-constraints
+last_sync: 2026-06-07
+sync_hash: bb446ba6
 ---
-
-
 ## 继承规则
 
 ### Sendable类必须继承自Sendable类
@@ -426,7 +427,7 @@ class C {
 
 从API version 22开始，支持在Sendable class上叠加使用除@Sendable装饰器之外的其他自定义装饰器。
 
-通过在[工程级build-profile.json5文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app)的"buildOption"字段下的"strictMode"中增加"disableSendableCheckRules"字段，配置该能力。
+通过在[工程级build-profile.json5文件](/docs/tools/coding-debug/ide-hvigor-build-profile-app)的"buildOption"字段下的"strictMode"中增加"disableSendableCheckRules"字段，配置该能力。
 
 "disableSendableCheckRules"字段及其具体取值示例如下：
 

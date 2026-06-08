@@ -2,9 +2,10 @@
 title: "切换自定义认证"
 original_url: /docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/apply-custom-authentication
 format: md
+upstream_id: dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/apply-custom-authentication
+last_sync: 2026-06-07
+sync_hash: 271401fc
 ---
-
-
 若开发者定义了自定义认证方式，则用户进行生物认证失败点击导航按钮时，统一用户认证框架会结束系统认证流程并通知调用者拉起自定义认证界面。
 
 例如，在支付场景中，如果厂商自定义了支付密码认证的方式，当调用系统人脸或指纹认证失败后，用户可以选择切换支付密码认证。

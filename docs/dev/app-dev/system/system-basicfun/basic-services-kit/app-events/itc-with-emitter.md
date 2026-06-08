@@ -2,9 +2,10 @@
 title: "使用Emitter进行线程间通信"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/itc-with-emitter
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/app-events/itc-with-emitter
+last_sync: 2026-06-07
+sync_hash: 84f79b49
 ---
-
-
 Emitter是一种作用在进程内的事件处理机制，为应用程序提供订阅事件、发布事件、取消事件订阅的能力。
 
 ## 场景介绍

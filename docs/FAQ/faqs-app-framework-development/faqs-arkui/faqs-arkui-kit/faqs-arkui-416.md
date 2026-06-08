@@ -2,7 +2,8 @@
 format: md
 title: "Watch开发，ArcSwiper实现右滑退出"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-416
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-416
+last_sync: 2026-06-07
+sync_hash: ee9f3483
 ---
-
-
 通过[onGestureRecognizerJudgeBegin()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-blocking-enhancement#ongesturerecognizerjudgebegin13)函数识别滑动位置，该函数通过比较触摸起始坐标与移动坐标的差值来判断滑动方向，示例代码参考：[示例](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-arcswiper#示例)。

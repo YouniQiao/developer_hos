@@ -2,9 +2,10 @@
 format: md
 title: "TextInput按压态背景色如何修改"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-124
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-124
+last_sync: 2026-06-07
+sync_hash: 4a70ff2c
 ---
-
-
 可以使用动态属性进行设置。自定义class实现AttributeModifier接口，并给组件设置.attributeModifier()进行绑定即可。参考代码如下：
 
 ```

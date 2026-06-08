@@ -2,9 +2,10 @@
 title: "APM能力建设"
 original_url: /docs/quality/stability-operate-apm
 format: md
+upstream_id: /docs/quality/stability-operate-apm
+last_sync: 2026-06-07
+sync_hash: c804a385
 ---
-
-
 # APM能力建设
 
 APM作为应用性能管理平台，可线上监控应用质量。系统提供采集质量数据的能力，开发者可以收集这类数据构建APM平台。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通过直达应用市场能力跳转至应用市场下载详情页"
 original_url: /docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-direct-to-ag
 format: md
+upstream_id: dev/app-dev/application-services/app-linking-kit-guide/applinking-direct-to-ag
+last_sync: 2026-06-07
+sync_hash: 35c475b5
 ---
-
-
 ## 场景介绍
 
 从5.0.3(15)版本开始，新增支持直达应用市场能力。

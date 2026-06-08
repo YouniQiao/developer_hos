@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "查询密钥是否存在(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-check-key/huks-check-key-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-check-key/huks-check-key-ndk
+last_sync: 2026-06-07
+sync_hash: 8b84ea91
 ---
-
-
 HUKS提供了接口供应用查询指定密钥是否存在。
 
 从API 23开始支持[群组密钥](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-group-key/huks-group-key-overview)特性。

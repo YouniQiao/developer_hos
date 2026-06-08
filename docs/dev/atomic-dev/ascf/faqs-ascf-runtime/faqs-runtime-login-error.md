@@ -2,9 +2,10 @@
 title: "has.login接口运行报错"
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-runtime-login-error
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-runtime-login-error
+last_sync: 2026-06-07
+sync_hash: 1be8fe84
 ---
-
-
 **问题现象**
 
 has.login接口运行报错，报错信息主要为：

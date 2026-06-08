@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Game Service Kit简介"
 original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-introduction
 format: md
+upstream_id: dev/app-dev/application-services/game-service-kit-guide/gameservice-introduction
+last_sync: 2026-06-07
+sync_hash: d67f0b27
 ---
-
-
 ## 业务简介
 
 Game Service Kit（游戏服务）主要提供快速、低成本构建游戏基本能力与游戏场景优化服务，有效提升游戏开发效率，帮助游戏运营。

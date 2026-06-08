@@ -3,9 +3,10 @@ title: "@performance/no-high-loaded-frame-rate-range"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-high-loaded-frame-rate-range
 format: md
+upstream_id: tools/coding-debug/ide_no-high-loaded-frame-rate-range
+last_sync: 2026-06-07
+sync_hash: 9f76f382
 ---
-
-
 # @performance/no-high-loaded-frame-rate-range
 
 不允许锁定最高帧率运行。

@@ -3,8 +3,10 @@ title: 金融理财类
 sidebar_label: 金融理财类
 original_url: /docs/design/app-design-practices/finance
 format: md
+upstream_id: design/app-design-practices/finance
+last_sync: 2026-06-07
+sync_hash: fafda78b
 ---
-
 # 金融理财类
 
 金融理财类应用的目的是让用户更加便捷地办理金融业务。常见的有银行理财，股票，基金等类型的应用和业务场景，核心场景有数据查看、交易、财经资讯阅读等。

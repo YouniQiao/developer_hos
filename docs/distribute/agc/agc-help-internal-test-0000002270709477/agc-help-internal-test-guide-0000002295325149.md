@@ -2,9 +2,10 @@
 title: "测试流程"
 original_url: /docs/distribute/agc/agc-help-internal-test-0000002270709477/agc-help-internal-test-guide-0000002295325149
 format: md
+upstream_id: distribute/agc/agc-help-internal-test-0000002270709477/agc-help-internal-test-guide-0000002295325149
+last_sync: 2026-06-07
+sync_hash: 936b735d
 ---
-
-
 ![](../img/agc-help-internal-test-guide-0000002295325149_0.png)
 
 * 当前指定设备发布功能仅支持Stage模型开发的HarmonyOS应用，暂不支持元服务。

@@ -2,9 +2,10 @@
 title: "第三方SDK列表"
 original_url: /docs/dev/game-dev/quickgame-filing-sdk-list-0000001852131589
 format: md
+upstream_id: dev/game-dev/quickgame-filing-sdk-list-0000001852131589
+last_sync: 2026-06-07
+sync_hash: 9ec97c26
 ---
-
-
 我们会对SDK或其他类似的应用程序进行严格的安全检测，并要求合作伙伴采取严格的措施来保护您的个人信息。在满足新的服务需求及业务功能变更时，我们可能会调整我们接入的第三方SDK，并及时在本说明中向您公开说明接入第三方SDK的最新情况。请注意，第三方SDK可能因为版本升级、策略调整等原因导致数据类型存在一些变化，请以其公示的官方说明为准。目前本应用接入的第三方SDK如下:
 
 * **第三方****SDK****名称：**易道博识活体检测SDK。

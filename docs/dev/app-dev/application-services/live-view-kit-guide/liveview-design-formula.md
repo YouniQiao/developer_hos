@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "实况窗设计规范"
 original_url: /docs/dev/app-dev/application-services/live-view-kit-guide/liveview-design-formula
 format: md
+upstream_id: dev/app-dev/application-services/live-view-kit-guide/liveview-design-formula
+last_sync: 2026-06-07
+sync_hash: ca1132ee
 ---
-
-
 应用发送的实况窗需遵循实况窗设计规范，不符合设计规范的方案将不被予以开通正式权限。同时若应用实况窗上线后出现违反实况窗设计规范的行为，将被视为[违规](/docs/dev/app-dev/application-services/live-view-kit-guide/liveview-introduction#违规处罚)。
 
 ![](./img/30a02d11.png)

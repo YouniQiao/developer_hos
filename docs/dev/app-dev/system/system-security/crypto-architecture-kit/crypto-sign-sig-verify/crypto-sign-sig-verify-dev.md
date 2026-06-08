@@ -2,9 +2,10 @@
 title: "签名验签开发指导"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev
+last_sync: 2026-06-07
+sync_hash: a44add95
 ---
-
-
 * **[使用RSA密钥对（PKCS1模式）签名验签(ArkTS)](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-rsa-sign-sig-verify-pkcs1)**
 * **[使用RSA密钥对签名验签 (PKCS1模式)(C/C++)](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-rsa-sign-sig-verify-pkcs1-ndk)**
 * **[使用RSA密钥对（PKCS1模式）签名及签名恢复(ArkTS)](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-rsa-sign-sig-verify-recover-pkcs1)**

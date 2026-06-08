@@ -2,9 +2,10 @@
 title: "UIAbility组件基本用法"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-usage
+last_sync: 2026-06-07
+sync_hash: 82e54115
 ---
-
-
 本文主要介绍[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)组件的基本用法，包括：
 
 * 指定UIAbility的启动页面。

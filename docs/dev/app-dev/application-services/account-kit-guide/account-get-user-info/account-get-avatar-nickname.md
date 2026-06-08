@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取头像昵称"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-avatar-nickname
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-avatar-nickname
+last_sync: 2026-06-07
+sync_hash: 005974db
 ---
-
-
 ## 场景介绍
 
 当应用需要获取用户头像昵称信息，可使用Account Kit提供的头像昵称授权能力，用户允许应用获取头像昵称后，可快速完成个人信息填写。以下对Account Kit提供的头像昵称授权能力进行介绍。此外，开发者也可通过场景化控件中的[选择头像Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-chooseavatar)获取用户头像。

@@ -2,8 +2,11 @@
 title: "应用数据迁移适配指导"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/app-data-migration-adaptation
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/app-data-migration-adaptation
+last_sync: 2026-06-07
+sync_hash: 4b7e6d19
+upstream_hash: 3663ac6093ff
 ---
-
 
 ## 环境准备
 
@@ -12,14 +15,14 @@ format: md
 | 工具 | 版本 | 说明 |
 | --- | --- | --- |
 | “迁移调试”工具 | 205.0.0.115及之后版本 | 模拟验证数据迁移 |
-| DevEco Studio | DevEco Studio NEXT Developer Beta3及之后版本 | 请参考：[DevEco Studio使用指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-tools-overview)。 |
-| Compatible SDK | 5.0.0(12) | 请参考：[版本说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-allversion)。 |
+| DevEco Studio | DevEco Studio NEXT Developer Beta3及之后版本 | 请参考：[DevEco Studio使用指南](/docs/tools/coding-debug/ide-tools-overview)。 |
+| Compatible SDK | 5.0.0(12) | 请参考：[版本说明](/docs/dev/release-notes/overview-allversion)。 |
 
 ## 应用数据迁移适配流程
 
 ### 创建新工程
 
-本章节从[创建新工程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-create-new-project)开始，指导开发者接入“备份恢复框架”，已经创建工程的开发者可以跳过本节。
+本章节从[创建新工程](/docs/tools/coding-debug/ide-create-new-project)开始，指导开发者接入“备份恢复框架”，已经创建工程的开发者可以跳过本节。
 
 ### BackupExtensionAbility的实现
 

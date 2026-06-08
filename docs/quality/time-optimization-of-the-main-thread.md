@@ -2,9 +2,10 @@
 title: "主线程耗时操作优化"
 original_url: /docs/quality/time-optimization-of-the-main-thread
 format: md
+upstream_id: /docs/quality/time-optimization-of-the-main-thread
+last_sync: 2026-06-07
+sync_hash: 16dda2c1
 ---
-
-
 # 主线程耗时操作优化
 
 ## 概述
@@ -21,7 +22,7 @@ format: md
 
   ![](./img/e2825023.png)
 
-  建议开发者优先使用[Code Linter扫描工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)进行代码检查，重点关注[@performance/hp-arkui-avoid-empty-callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-avoid-empty-callback)规则。若扫描结果中出现该规则相关问题，可参考本章节提供的优化建议进行调整。
+  建议开发者优先使用[Code Linter扫描工具](/docs/tools/coding-debug/ide-code-linter)进行代码检查，重点关注[@performance/hp-arkui-avoid-empty-callback](/docs/tools/coding-debug/ide_hp-arkui-avoid-empty-callback)规则。若扫描结果中出现该规则相关问题，可参考本章节提供的优化建议进行调整。
 
 【反例】：release版本中冗余日志打印，Trace打点，以及无业务代码的空回调
 
@@ -849,7 +850,7 @@ struct PositiveOfProperty {
 
 ![](./img/5f2cfdf6.png)
 
-建议开发者优先使用[Code Linter扫描工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)进行代码检查，重点关注[@performance/hp-arkui-use-taskpool-for-web-request](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hp-arkui-use-taskpool-for-web-request)规则。若扫描结果中出现该规则相关问题，可参考本章节提供的优化建议进行调整。
+建议开发者优先使用[Code Linter扫描工具](/docs/tools/coding-debug/ide-code-linter)进行代码检查，重点关注[@performance/hp-arkui-use-taskpool-for-web-request](/docs/tools/coding-debug/ide-hp-arkui-use-taskpool-for-web-request)规则。若扫描结果中出现该规则相关问题，可参考本章节提供的优化建议进行调整。
 
 **ResourceManager**
 
@@ -991,7 +992,7 @@ getStringSync参数为资源信息时（1.956ms）比参数为资源ID值时（0
 
 ![](./img/a7358406.png)
 
-建议开发者优先使用[Code Linter扫描工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)进行代码检查，重点关注[@performance/hp-arkui-use-word-break-to-replace-zero-width-space](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-use-word-break-in-space)规则。若扫描结果中出现该规则相关问题，可参考本章节提供的优化建议进行调整。
+建议开发者优先使用[Code Linter扫描工具](/docs/tools/coding-debug/ide-code-linter)进行代码检查，重点关注[@performance/hp-arkui-use-word-break-to-replace-zero-width-space](/docs/tools/coding-debug/ide_hp-arkui-use-word-break-in-space)规则。若扫描结果中出现该规则相关问题，可参考本章节提供的优化建议进行调整。
 
 零宽空格（Zero Width Space, ZWSP）是一个特殊的Unicode字符。它是一个不可见的字符，其宽度为零，不占用任何可见空间。在文本处理系统中，尽管它在视觉上是不可见的，但它在文本中确实存在，并可以作为潜在的断点，即允许在此位置断开行。这意味着如果一行文本过长需要自动换行时，文本可以在零宽空格的位置进行折行，而不影响单词的完整性。
 

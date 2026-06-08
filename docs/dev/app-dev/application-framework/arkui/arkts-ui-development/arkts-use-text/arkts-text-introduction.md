@@ -2,9 +2,10 @@
 title: "文本概述"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-text/arkts-text-introduction
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-text/arkts-text-introduction
+last_sync: 2026-06-07
+sync_hash: fbb92a9e
 ---
-
-
 文本包含用户输入的信息、呈现的文本内容和小图标，这些元素共同构建了用户与系统间的交互界面，提升了操作的便捷性与信息展示的直观性。
 
 开发者可根据实际应用场景选择合适的文本组件进行页面开发。

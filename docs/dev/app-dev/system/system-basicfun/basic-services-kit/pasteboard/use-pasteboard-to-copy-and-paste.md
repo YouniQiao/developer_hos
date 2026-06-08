@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用剪贴板进行复制粘贴"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/use-pasteboard-to-copy-and-paste
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/use-pasteboard-to-copy-and-paste
+last_sync: 2026-06-07
+sync_hash: 318b4186
 ---
-
-
 ## 场景介绍
 
 [剪贴板](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pasteboard)为开发者提供数据的复制粘贴能力。当需要使用复制粘贴等功能时，例如：复制文字内容到备忘录中粘贴，复制图库照片到文件管理粘贴，就可以通过剪贴板来完成。

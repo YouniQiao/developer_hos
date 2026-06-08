@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-unsafe-assignment"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unsafe-assignment
 format: md
+upstream_id: tools/coding-debug/ide_no-unsafe-assignment
+last_sync: 2026-06-07
+sync_hash: 69bb49cd
 ---
-
-
 # @typescript-eslint/no-unsafe-assignment
 
 禁止将“any”类型的值赋值给变量和属性。

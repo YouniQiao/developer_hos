@@ -3,8 +3,10 @@ title: "配置普通Deeplink"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-commondeeplink-setup-0000002167242625
 format: md
+upstream_id: monetize/promotion/bp-functions-commondeeplink-setup-0000002167242625
+last_sync: 2026-06-07
+sync_hash: 30ae43df
 ---
-
 # 配置普通Deeplink
 
 在[华为应用市场应用推广平台](https://ads.huawei.com/cn/)创建推广任务并在“推广创意”中填写“应用打开”后的APP Deeplink。

@@ -3,9 +3,10 @@ title: "操作异常错误码"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-errorcode-00308
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-errorcode-00308
+last_sync: 2026-06-07
+sync_hash: 73f3723b
 ---
-
-
 # 操作异常错误码
 
 #### 00308001 删除文件失败

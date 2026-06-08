@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "多应用管控"
 original_url: /docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-multi-mdm
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-multi-mdm
+last_sync: 2026-06-07
+sync_hash: 16fd7681
+upstream_hash: 3bcdd50291a6
 ---
-
 
 ## 概述
 

@@ -1,8 +1,10 @@
 ---
 title: "后台系统资源合理使用"
 original_url: /docs/quality/reasonable-system-use
+upstream_id: /docs/quality/reasonable-system-use
+last_sync: 2026-06-07
+sync_hash: 9a0f749d
 ---
-
 # 后台系统资源合理使用
 
 无长时任务的应用退至后台后，应释放对应资源，避免阻止系统休眠。

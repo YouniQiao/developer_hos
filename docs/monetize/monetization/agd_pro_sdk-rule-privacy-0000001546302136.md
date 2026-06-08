@@ -3,10 +3,10 @@ title: "隐私声明"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk-rule-privacy-0000001546302136
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk-rule-privacy-0000001546302136
+last_sync: 2026-06-07
+sync_hash: da3c6784
 ---
-
-
-
 1. AGD Pro服务为了向用户投放更加精准的个性化广告，可能收集以下用户信息：
    * 设备及使用信息：设备标识符、操作系统的设置信息、设备的硬件信息、应用的基本信息及使用信息、网络信息、运营商信息、华为帐号信息。
    * 广告互动信息：对广告的浏览、点击、关闭和播放信息，打开和关闭应用的时间、应用使用频率、应用错误日志。

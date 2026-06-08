@@ -2,9 +2,10 @@
 title: "接入流程"
 original_url: /docs/distribute/agc/agc-help-location-sense-by-nfc-0000002382896585/agc-help-by-nfc-summary-0000002382896613
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-by-nfc-0000002382896585/agc-help-by-nfc-summary-0000002382896613
+last_sync: 2026-06-07
+sync_hash: 1e8cdad6
 ---
-
-
 目前身份确认的手段以传统NFC刷卡、刷身份证、人脸识别、刷二维码、人工验证等方式为主，操作复杂，效率低，且个人隐私存在泄漏风险。鉴于景区、交通、商业、政府单位、集团公司、房地产、酒店、核电、教育等行业普遍存在身份确认诉求，近场服务增加了NFC身份识别场景体验，开发者可在设备管理界面注册NFC设备，后续当HarmonyOS手机用户碰一碰NFC设备后，手机端会根据已注册NFC设备的不同状态结果直达开发者提供的服务内容，例如检票、点餐等，做到精准推荐，帮助用户减少操作步骤，提升用户体验。
 
 #### 接入流程

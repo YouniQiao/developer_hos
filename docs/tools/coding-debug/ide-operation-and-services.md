@@ -3,9 +3,10 @@ title: "运维服务"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-operation-and-services
 format: md
+upstream_id: tools/coding-debug/ide-operation-and-services
+last_sync: 2026-06-07
+sync_hash: a3df44a2
 ---
-
-
 # 运维服务
 
 DevEco Studio支持对崩溃问题进行定位以及对崩溃，卡顿，丢帧，能耗等异常进行数据分析。

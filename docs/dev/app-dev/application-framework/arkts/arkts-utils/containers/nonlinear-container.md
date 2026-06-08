@@ -2,9 +2,10 @@
 title: "非线性容器"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-utils/containers/nonlinear-container
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-utils/containers/nonlinear-container
+last_sync: 2026-06-07
+sync_hash: 7b1ec746
 ---
-
-
 非线性容器实现能快速查找的数据结构，其底层通过hash或者红黑树实现，包括HashMap、HashSet、TreeMap、TreeSet、LightWeightMap、LightWeightSet、PlainArray七种。非线性容器中的key及value的类型均满足ECMA标准。
 
 ## 各非线性容器类型特征对比

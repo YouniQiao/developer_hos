@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用剪贴板进行延迟复制粘贴"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/pasteboard-time-lapse-copy-and-paste
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/pasteboard-time-lapse-copy-and-paste
+last_sync: 2026-06-07
+sync_hash: fbabe57c
 ---
-
-
 ## 场景介绍
 
 [@ohos.pasteboard](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pasteboard)主要提供管理系统剪贴板的能力，为系统复制、粘贴功能提供支持。

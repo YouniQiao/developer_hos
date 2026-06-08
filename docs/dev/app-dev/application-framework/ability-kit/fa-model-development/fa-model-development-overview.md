@@ -2,9 +2,10 @@
 title: "FA模型开发概述"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-development-overview
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-development-overview
+last_sync: 2026-06-07
+sync_hash: e7e0fd52
 ---
-
-
 基于[FA模型](/docs/dev/app-dev/application-framework/ability-kit/ability-terminology#fa模型)开发应用时，在应用模型部分，涉及如下开发过程。
 
 **表1** FA模型开发流程

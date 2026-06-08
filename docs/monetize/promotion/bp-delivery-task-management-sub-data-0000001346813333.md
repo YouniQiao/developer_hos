@@ -3,8 +3,10 @@ title: "查询子任务数据报表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-task-management-sub-data-0000001346813333
 format: md
+upstream_id: monetize/promotion/bp-delivery-task-management-sub-data-0000001346813333
+last_sync: 2026-06-07
+sync_hash: 92092fa4
 ---
-
 # 查询子任务数据报表
 
 ## 操作步骤

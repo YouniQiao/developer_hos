@@ -2,9 +2,10 @@
 title: "VerifyCodeParam"
 original_url: /docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-verifycodeparam-0000002238777832
 format: md
+upstream_id: distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-verifycodeparam-0000002238777832
+last_sync: 2026-06-07
+sync_hash: 5bd76699
 ---
-
-
 获取验证码的相关参数类。
 
 #### Parameters

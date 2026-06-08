@@ -2,9 +2,10 @@
 title: "API"
 original_url: /docs/dev/game-dev/games-quickgame-faq-api-0000002425293762
 format: md
+upstream_id: dev/game-dev/games-quickgame-faq-api-0000002425293762
+last_sync: 2026-06-07
+sync_hash: d9bb18ce
 ---
-
-
 ## 帧率
 
 ### 快游戏如何修改帧率？

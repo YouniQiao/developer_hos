@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "滑动丢帧事件介绍"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/frame-drops-event-during-scrolling/hiappevent-watcher-scroll-jank-event
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/frame-drops-event-during-scrolling/hiappevent-watcher-scroll-jank-event
+last_sync: 2026-06-07
+sync_hash: 7ceb16c9
 ---
-
-
 ## 简介
 
 用户在使用应用时，如果出现滑动列表丢帧的情况，并且持续时间超过一定限制，就会被定义为滑动卡顿，并生成HiAppEvent日志，供应用开发者分析。
@@ -16,7 +17,7 @@ format: md
 
 ![](./img/0ab63eaf.png)
 
-滑动丢帧事件支持在[元服务场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-create-faproject)下使用HiAppEvent进行订阅。不支持在[应用分身场景](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)或[输入法应用场景](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)下使用HiAppEvent进行订阅。
+滑动丢帧事件支持在[元服务场景](/docs/tools/end-cloud/agc-harmonyos-create-faproject)下使用HiAppEvent进行订阅。不支持在[应用分身场景](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)或[输入法应用场景](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)下使用HiAppEvent进行订阅。
 
 ## 事件检测原理
 

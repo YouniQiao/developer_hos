@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "运动跟踪介绍"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-pose/arengine-get-pose-conversion
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/get-pose/arengine-get-pose-conversion
+last_sync: 2026-06-07
+sync_hash: 11f5b200
 ---
-
-
 AR Engine通过获取终端设备摄像头数据，结合图像特征和惯性传感器（IMU），计算设备位置（沿x、y、z轴方向位移）和姿态（绕x、y、z轴旋转），实现6自由度（6DoF）运动跟踪能力。
 
 设备位姿描述了物体在真实世界中的位置和朝向。通过AR Engine，开发者可以实时获取设备在空间中任意时刻的位姿。

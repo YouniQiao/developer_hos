@@ -2,9 +2,10 @@
 title: "如何解决应用键盘出现遮挡，输入框被拦截一半"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/ffaqs-arkui-489
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/ffaqs-arkui-489
+last_sync: 2026-06-07
+sync_hash: 3188a890
 ---
-
-
 为了避免组件覆盖，系统规格设计软键盘的[安全间距](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-expand-safe-area)为16vp。用[offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-componentutils#offset)方法设置16vp的间距，示例代码如下：
 
 ```

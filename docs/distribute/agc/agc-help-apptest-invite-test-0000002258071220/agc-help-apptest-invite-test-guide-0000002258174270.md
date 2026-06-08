@@ -2,9 +2,10 @@
 title: "测试流程"
 original_url: /docs/distribute/agc/agc-help-apptest-invite-test-0000002258071220/agc-help-apptest-invite-test-guide-0000002258174270
 format: md
+upstream_id: distribute/agc/agc-help-apptest-invite-test-0000002258071220/agc-help-apptest-invite-test-guide-0000002258174270
+last_sync: 2026-06-07
+sync_hash: b0c3510b
 ---
-
-
 ![](../img/agc-help-apptest-invite-test-guide-0000002258174270_0.png)
 
 AppTest邀请测试功能目前为受限开放，若您想要体验使用AppTest发布邀请测试任务，可以通过[在线工单系统](https://developer.huawei.com/consumer/cn/support/feedback/#/?channel=ICS0000)与我们联系。

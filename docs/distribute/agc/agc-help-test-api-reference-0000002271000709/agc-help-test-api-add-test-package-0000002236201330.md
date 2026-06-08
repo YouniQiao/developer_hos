@@ -2,9 +2,10 @@
 title: "添加软件包"
 original_url: /docs/distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-add-test-package-0000002236201330
 format: md
+upstream_id: distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-add-test-package-0000002236201330
+last_sync: 2026-06-07
+sync_hash: 4ff9313f
 ---
-
-
 #### 功能介绍
 
 此接口用于测试版本上传软件包。

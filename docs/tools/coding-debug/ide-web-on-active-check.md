@@ -3,9 +3,10 @@ title: "@performance/web-on-active-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-web-on-active-check
 format: md
+upstream_id: tools/coding-debug/ide-web-on-active-check
+last_sync: 2026-06-07
+sync_hash: e2499120
 ---
-
-
 # @performance/web-on-active-check
 
 使用了Web预渲染技术的应用，建议在预渲染完成后（onFirstMeaningfulPaint），调用停止渲染接口（onInactive）。

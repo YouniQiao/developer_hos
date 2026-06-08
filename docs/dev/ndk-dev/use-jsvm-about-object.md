@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口进行object相关开发"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-object
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-object
+last_sync: 2026-06-07
+sync_hash: 73b6fe84
 ---
-
-
 ## 简介
 
 使用JSVM-API接口进行object相关开发，处理JavaScript对象的基本操作，例如创建对象、获取原型、冻结和密封对象，检查对象的类型等。这些操作是在处理JavaScript对象时非常常见的，提供了一种与JavaScript对象交互的方式。

@@ -2,9 +2,10 @@
 title: "使用离线Web组件"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-offline-mode
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-offline-mode
+last_sync: 2026-06-07
+sync_hash: d369a41f
 ---
-
-
 Web组件能够实现在不同窗口的组件树上进行挂载或移除操作，这一能力使得开发者可以预先创建Web组件，从而实现性能优化。例如，Tab页为Web组件时，页面预先渲染，便于即时显示。
 
 离线Web组件基于自定义占位组件[NodeContainer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-nodecontainer)实现。基本原理是构建支持命令式创建的Web组件，此类组件创建后不会立即挂载到组件树中，状态为Hidden和Inactive，因此不会立即对用户呈现。开发者可以在后续使用中按需动态挂载这些组件，以实现更灵活的使用方式。

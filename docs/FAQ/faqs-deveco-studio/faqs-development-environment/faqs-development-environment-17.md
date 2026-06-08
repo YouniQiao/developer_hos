@@ -2,9 +2,10 @@
 format: md
 title: "打开工程，反复执行“Updating indexes”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-17
+upstream_id: FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-17
+last_sync: 2026-06-07
+sync_hash: 5f16570a
 ---
-
-
 **问题现象**
 
 在DevEco Studio 新建 / 打开工程，反复执行“Updating indexes”、“Indexing”。

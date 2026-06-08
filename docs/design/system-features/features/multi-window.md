@@ -3,8 +3,10 @@ title: 多窗口交互
 sidebar_label: 多窗口交互
 original_url: /docs/design/system-features/features/multi-window
 format: md
+upstream_id: design/system-features/features/multi-window
+last_sync: 2026-06-07
+sync_hash: b9058cda
 ---
-
 # 多窗口交互
 
 折叠屏展开态、平板等大屏幕设备，具有多任务并行和效率型任务处理的先天优势。

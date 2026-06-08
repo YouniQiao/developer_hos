@@ -2,9 +2,10 @@
 title: "上架预检"
 original_url: /docs/dev/testing/publish-testing
 format: md
+upstream_id: dev/testing/publish-testing
+last_sync: 2026-06-07
+sync_hash: 4bd19c9a
 ---
-
-
 ![](./img/dabc8db8.png "点击放大")
 
 ## 应用上架预检（本地）

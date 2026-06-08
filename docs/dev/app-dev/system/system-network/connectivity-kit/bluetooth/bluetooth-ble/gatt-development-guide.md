@@ -2,9 +2,10 @@
 title: "连接和传输数据"
 original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-ble/gatt-development-guide
 format: md
+upstream_id: dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-ble/gatt-development-guide
+last_sync: 2026-06-07
+sync_hash: c8ed3675
 ---
-
-
 ## 简介
 
 本指南主要提供了基于通用属性协议（Generic Attribute Profile，GATT）实现BLE设备间连接和传输数据的开发指导。当两个设备间进行GATT通信交互时，依据设备功能的不同，可区分为GATT客户端和GATT服务端，本指南将分别介绍客户端与服务端的实现方法。

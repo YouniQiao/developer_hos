@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-remove-redundant-state-var"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hp-arkui-remove-redundant-state-var
 format: md
+upstream_id: tools/coding-debug/ide-hp-arkui-remove-redundant-state-var
+last_sync: 2026-06-07
+sync_hash: 25920c77
 ---
-
-
 # @performance/hp-arkui-remove-redundant-state-var
 
 建议移除不关联UI组件的状态变量设置。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "证书链校验时从p12文件构造TrustAnchor对象数组"
 original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-trustanchor-from-p12
 format: md
+upstream_id: dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-trustanchor-from-p12
+last_sync: 2026-06-07
+sync_hash: ddd482f2
 ---
-
-
 证书链校验时从p12文件构造TrustAnchor对象数组。
 
 ## 开发步骤

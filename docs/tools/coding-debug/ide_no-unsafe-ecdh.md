@@ -3,9 +3,10 @@ title: "@security/no-unsafe-ecdh"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unsafe-ecdh
 format: md
+upstream_id: tools/coding-debug/ide_no-unsafe-ecdh
+last_sync: 2026-06-07
+sync_hash: 2469b738
 ---
-
-
 # @security/no-unsafe-ecdh
 
 此规则禁止使用不安全的非对称密钥类型ECC。推荐使用ECC256算法，详情参见：[密钥生成算法](`https://`developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/aegis-key-generation-0000001819355432)。

@@ -2,9 +2,10 @@
 title: "概述"
 original_url: /docs/distribute/agc/agc-help-associate-android-app-0000002385678957/agc-help-associate-android-app-overview-0000002351878886
 format: md
+upstream_id: distribute/agc/agc-help-associate-android-app-0000002385678957/agc-help-associate-android-app-overview-0000002351878886
+last_sync: 2026-06-07
+sync_hash: a1be5922
 ---
-
-
 当您开发了HarmonyOS应用，而此应用有对应的Android版本，您可以将两者进行关联，关联成功后，当用户设备升级至HarmonyOS 5及以上版本时，可以快速将设备上的Android应用自动替换为HarmonyOS应用，并完成用户数据迁移。
 
 关联Android应用需要满足如下条件：

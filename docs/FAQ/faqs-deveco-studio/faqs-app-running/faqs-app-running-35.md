@@ -2,9 +2,10 @@
 format: md
 title: "在模拟器上运行应用，应用生成的文件在哪个目录下"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-35
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-35
+last_sync: 2026-06-07
+sync_hash: 2d0c60b2
 ---
-
-
 **问题现象**
 
 模拟器上应用的沙箱路径与真实物理路径不一致，导致找不到文件。

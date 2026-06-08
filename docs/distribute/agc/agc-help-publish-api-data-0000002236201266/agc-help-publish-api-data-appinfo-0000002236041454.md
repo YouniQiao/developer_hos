@@ -2,9 +2,10 @@
 title: "AppInfo"
 original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-appinfo-0000002236041454
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-appinfo-0000002236041454
+last_sync: 2026-06-07
+sync_hash: 1c6b5e73
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | releaseState | O | Integer | 应用状态。  **releaseType**为1时，状态含义如下。  说明：  各状态间的转换请参见[全网发布的应用状态流转说明](/docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-application-status-0000002240477940#section1637119146108)。   * 0：已上架 * 1：上架审核不通过 * 2：已下架（含强制下架） * 3：待上架，预约上架 * 4：审核中 * 5：升级审核中 * 6：申请下架 * 7：草稿 * 8：升级审核不通过 * 9：下架审核不通过 * 10：应用被开发者下架 * 11：撤销上架 * 12：预审中 * 13：预审不通过   **releaseType**为6时，状态含义如下。  说明：  各状态间的转换请参见[测试发布的应用状态流转说明](/docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-application-status-0000002240477940#section994894212109)。   * 0：正在测试 * 1：审核不通过 * 2：已失效（运营停止测试） * 3：待生效 * 4：正在审核 * 7：准备提交 * 10：已失效（开发者停止测试） * 11：撤销审核 * 12：预审中 * 13：预审不通过 |

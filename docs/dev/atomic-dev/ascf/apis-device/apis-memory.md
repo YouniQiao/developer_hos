@@ -2,9 +2,10 @@
 title: "内存"
 original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-memory
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-device/apis-memory
+last_sync: 2026-06-07
+sync_hash: 83db5b8c
 ---
-
-
 ## has.onMemoryWarning
 
 has.onMemoryWarning(function callback)

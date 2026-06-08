@@ -2,9 +2,10 @@
 title: "PhoneVerifyCode"
 original_url: /docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-phoneverifycode-0000002273617149
 format: md
+upstream_id: distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-phoneverifycode-0000002273617149
+last_sync: 2026-06-07
+sync_hash: 830327f1
 ---
-
-
 手机验证码信息类。
 
 #### Parameters

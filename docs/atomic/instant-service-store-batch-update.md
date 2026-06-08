@@ -2,9 +2,10 @@
 title: "批量变更门店"
 original_url: /docs/dev/atomic-dev/instant-service-store/instant-service-store-batch-update
 format: md
+upstream_id: dev/atomic-dev/instant-service-store/instant-service-store-batch-update
+last_sync: 2026-06-07
+sync_hash: 9db7eaf7
 ---
-
-
 1. 在服务直达主界面，选择“门店管理”页签，根据门店状态或门店名称/编码筛选出需要变更的门店。
 
    ![](./img/450c0a5a.png "点击放大")

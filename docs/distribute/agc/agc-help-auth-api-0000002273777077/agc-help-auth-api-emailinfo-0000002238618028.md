@@ -2,9 +2,10 @@
 title: "EmailInfo"
 original_url: /docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-emailinfo-0000002238618028
 format: md
+upstream_id: distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-emailinfo-0000002238618028
+last_sync: 2026-06-07
+sync_hash: d864cbb6
 ---
-
-
 Email账号信息类，用于更新用户当前Email账号信息的操作。
 
 #### Parameters

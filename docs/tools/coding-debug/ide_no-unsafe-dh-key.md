@@ -3,9 +3,10 @@ title: "@security/no-unsafe-dh-key"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unsafe-dh-key
 format: md
+upstream_id: tools/coding-debug/ide_no-unsafe-dh-key
+last_sync: 2026-06-07
+sync_hash: d1e150d3
 ---
-
-
 # @security/no-unsafe-dh-key
 
 该规则禁止使用不安全的DH密钥，如DH模数长度小于2048bit。

@@ -2,9 +2,10 @@
 title: "User Authentication Kit术语"
 original_url: /docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-glossary
 format: md
+upstream_id: dev/app-dev/system/system-security/user-authentication-kit/user-authentication-glossary
+last_sync: 2026-06-07
+sync_hash: d68bb702
 ---
-
-
 ## 模系统弹窗
 
 模系统弹窗是系统级的弹窗，由应用拉起后，将固定居中显示于桌面且位置与源应用无关。在用户完成与模系统弹窗的交互之前，整个系统将被“模住”，即无法进行其他操作。

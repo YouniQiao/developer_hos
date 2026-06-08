@@ -3,9 +3,10 @@ title: "@hw-stylistic/curly"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_curly
 format: md
+upstream_id: tools/coding-debug/ide_curly
+last_sync: 2026-06-07
+sync_hash: 4f5c982b
 ---
-
-
 # @hw-stylistic/curly
 
 条件语句和循环语句的逻辑代码必须写在大括号中。该规则仅检查.ets文件类型。

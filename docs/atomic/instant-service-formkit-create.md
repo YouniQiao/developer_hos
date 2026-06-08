@@ -2,9 +2,10 @@
 title: "创建服务卡片（FormKit）"
 original_url: /docs/dev/atomic-dev/instant-service-formkit/instant-service-formkit-create
 format: md
+upstream_id: dev/atomic-dev/instant-service-formkit/instant-service-formkit-create
+last_sync: 2026-06-07
+sync_hash: 94d29446
 ---
-
-
 1. 在服务直达主界面，选择“服务卡片（FormKit）”页签，点击“新建”。
 
    ![](./img/303b3ee3.png "点击放大")

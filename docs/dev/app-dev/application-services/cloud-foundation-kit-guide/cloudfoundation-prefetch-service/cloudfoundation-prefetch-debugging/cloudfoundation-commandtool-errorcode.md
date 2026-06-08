@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "错误码"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-debugging/cloudfoundation-commandtool-errorcode
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-debugging/cloudfoundation-commandtool-errorcode
+last_sync: 2026-06-07
+sync_hash: c590437c
 ---
-
-
 | 错误码 | 描述 | 解决方法 |
 | --- | --- | --- |
 | 1008200005 | 周期性预加载执行失败。 | 请从以下方面进行排查：  - 检查设备网络连接情况。  - 确保周期性预加载配置正确。若配置不正确，请参考[配置预加载](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-config)重新配置。  - 确保云函数数据存储到中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。 |

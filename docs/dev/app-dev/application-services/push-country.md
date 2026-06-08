@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "支持的国家/地区"
 original_url: /docs/dev/app-dev/application-services/push-country
 format: md
+upstream_id: dev/app-dev/application-services/push-country
+last_sync: 2026-06-07
+sync_hash: 6d3de558
 ---
-
-
 ![](./img/e378f9f4.png)
 
 支持的设备中Wearable设备支持以下国家/地区，其他设备仅支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。

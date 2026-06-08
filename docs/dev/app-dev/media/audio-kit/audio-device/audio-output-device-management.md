@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "查询和监听音频输出设备"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-device/audio-output-device-management
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-device/audio-output-device-management
+last_sync: 2026-06-07
+sync_hash: 7ba196b0
 ---
-
-
 应用可通过以下两种方式管理全局音频输出设备：
 
 * 通常情况下，可以[通过AudioRoutingManager查询和监听音频输出设备](#通过audioroutingmanager查询和监听音频输出设备)。

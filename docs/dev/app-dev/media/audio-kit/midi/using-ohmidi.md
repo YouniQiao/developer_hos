@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用OH_MIDI进行MIDI开发(C/C++)"
 original_url: /docs/dev/app-dev/media/audio-kit/midi/using-ohmidi
 format: md
+upstream_id: dev/app-dev/media/audio-kit/midi/using-ohmidi
+last_sync: 2026-06-07
+sync_hash: 3b188125
 ---
-
-
 ## 场景介绍
 
 OH\_MIDI是系统提供的Native MIDI API，从API version 24开始用于在C/C++层实现MIDI应用开发。当应用需要与外接MIDI设备（如USB MIDI键盘、蓝牙MIDI设备）进行数据交互时，可以使用OH\_MIDI。典型使用场景包括：

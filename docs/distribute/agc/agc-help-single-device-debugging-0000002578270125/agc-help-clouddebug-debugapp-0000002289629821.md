@@ -2,8 +2,11 @@
 title: "调试应用"
 original_url: /docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-debugapp-0000002289629821
 format: md
+upstream_id: distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-debugapp-0000002289629821
+last_sync: 2026-06-07
+sync_hash: 72945ea3
+upstream_hash: aff6978521f8
 ---
-
 
 通过云调试服务，您可以在不同HarmonyOS 5及以上设备上调试HAP/APP格式的应用，从而提前发现并解决问题。
 

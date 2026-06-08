@@ -2,9 +2,10 @@
 title: "撤销审核"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-on-shelf-cancel-0000002271000637
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-on-shelf-cancel-0000002271000637
+last_sync: 2026-06-07
+sync_hash: 1845af74
 ---
-
-
 #### 功能介绍
 
 此接口用于HarmonyOS应用/元服务的撤销审核，当应用发布方式为“全网”时，只有处于“审核中”、“预审中”、“升级审核中”、“待上架/预约上架”、“申请下架”状态的应用可以撤销审核；当应用发布方式为“HarmonyOS测试发布方式（API>=10）”时，只有处于“正在审核”状态的应用可以撤销审核。

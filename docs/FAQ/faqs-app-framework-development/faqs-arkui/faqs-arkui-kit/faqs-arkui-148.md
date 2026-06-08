@@ -2,9 +2,10 @@
 title: "如何解决Web页面输入框拉起键盘后，页面头部被截断的问题"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-148
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-148
+last_sync: 2026-06-07
+sync_hash: 95ac70f8
 ---
-
-
 **问题现象**
 
 1. 通过子窗口实现弹窗，弹窗中嵌入Web页面。

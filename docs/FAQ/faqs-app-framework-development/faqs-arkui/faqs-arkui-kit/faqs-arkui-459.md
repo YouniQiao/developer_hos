@@ -2,9 +2,10 @@
 title: "FrameNode的isAttached接口是否可以判断FrameNode节点出现在屏幕上"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-459
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-459
+last_sync: 2026-06-07
+sync_hash: 20572ba0
 ---
-
-
 FrameNode的isAttached接口原本设计是节点是否被挂载到主节点树上，与其是否出现在屏幕上无关，不在屏幕上的节点也可能已挂载到主树上（例如用ForEach构建List场景），不建议使用该接口进行判断。
 
 如果当前想判断节点是否被挂载到主节点树上，可以使用以下替代方案：

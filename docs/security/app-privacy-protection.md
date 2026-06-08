@@ -2,10 +2,10 @@
 title: "应用隐私保护"
 original_url: /docs/security/app-privacy-protection
 format: md
+upstream_id: /docs/security/app-privacy-protection
+last_sync: 2026-06-07
+sync_hash: 54773018
 ---
-
-
-
 # 应用隐私保护
 
 ## 概述

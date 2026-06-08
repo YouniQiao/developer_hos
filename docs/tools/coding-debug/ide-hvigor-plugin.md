@@ -3,8 +3,11 @@ title: "开发Hvigor插件"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-plugin
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-plugin
+last_sync: 2026-06-07
+sync_hash: 19ab062b
+upstream_hash: c69466195b3d
 ---
-
 
 # 开发Hvigor插件
 

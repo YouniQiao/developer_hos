@@ -2,9 +2,10 @@
 title: "Web组件使用rawFile加载离线html时,如何在url后拼接参数"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-45
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-45
+last_sync: 2026-06-07
+sync_hash: d9a1cdff
 ---
-
-
 使用Web组件加载时，可直接在URL中拼接参数。加载后，H5侧获取并使用这些参数。
 
 **参考代码**

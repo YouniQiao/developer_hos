@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "游戏调用UnityEngine.Application.Quit侧滑退出时出现黑屏现象，应该如何避免"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-4
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-4
+last_sync: 2026-06-07
+sync_hash: 57bad3f2
 ---
-
-
 需根据“退出后是否希望继续使用**秒级启动**能力”选择不同的退出策略：
 
 1. **希望下次启动仍支持秒级启动**

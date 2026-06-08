@@ -3,8 +3,10 @@ title: "新建智能分包任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-intelligent-subcontract-create-task-0000001284811940
 format: md
+upstream_id: monetize/promotion/bp-functions-intelligent-subcontract-create-task-0000001284811940
+last_sync: 2026-06-07
+sync_hash: 43c9fd35
 ---
-
 # 新建智能分包任务
 
 1. 创建投放任务，并在任务中“归因监测”模块中将“智能分包”的“分包设置”任务设置项选择已创建的智能分包。

@@ -2,8 +2,11 @@
 format: md
 title: "如何解决List组件在不设置高度的情况下滑动不到底的问题"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-26
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-26
+last_sync: 2026-06-07
+sync_hash: 632a3891
+upstream_hash: 17a17de7c81f
 ---
-
 
 **原因**
 

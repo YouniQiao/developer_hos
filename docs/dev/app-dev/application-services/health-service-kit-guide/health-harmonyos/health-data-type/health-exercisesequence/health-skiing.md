@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "滑雪"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-skiing
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-skiing
+last_sync: 2026-06-07
+sync_hash: 5cfc477c
 ---
-
-
 ## 冬季两项
 
 ### 冬季两项相关锻炼记录类型如下：

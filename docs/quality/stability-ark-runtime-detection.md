@@ -2,9 +2,10 @@
 title: "方舟运行时检测"
 original_url: /docs/quality/stability-ark-runtime-detection
 format: md
+upstream_id: /docs/quality/stability-ark-runtime-detection
+last_sync: 2026-06-07
+sync_hash: 6370bcba
 ---
-
-
 # 方舟运行时检测
 
 ## 方舟多线程检测

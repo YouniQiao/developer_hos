@@ -2,9 +2,10 @@
 title: "ExtensionAbility如何与主进程通信"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-35
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-35
+last_sync: 2026-06-07
+sync_hash: de172ebd
 ---
-
-
 实现步骤：
 
 ExtensionAbility端发布事件：

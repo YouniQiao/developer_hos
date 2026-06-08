@@ -2,9 +2,10 @@
 format: md
 title: "当子组件触发触摸事件时，如果父组件也设置了触摸事件，如何解决父组件同时被触发的问题"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-244
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-244
+last_sync: 2026-06-07
+sync_hash: 04cc2800
 ---
-
-
 **问题现象**
 
 当子组件触发触摸事件时，如果父组件也设置了触摸事件，父组件同样会触发。

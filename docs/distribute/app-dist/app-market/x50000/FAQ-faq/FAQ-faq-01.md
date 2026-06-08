@@ -3,8 +3,10 @@ title: "1. 违规收集个人信息"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-01
 format: md
+upstream_id: distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-01
+last_sync: 2026-06-07
+sync_hash: 12946bc3
 ---
-
 # 1. 违规收集个人信息
 
 * 重点整治APP、SDK未告知用户收集个人信息的目的、方式、范围且未经用户同意，私自收集用户个人信息的行为。

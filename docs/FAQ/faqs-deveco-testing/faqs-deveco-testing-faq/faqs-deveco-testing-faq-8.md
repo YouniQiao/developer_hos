@@ -2,9 +2,10 @@
 format: md
 title: "测试指南和FAQ无法解决问题时，如何获取在线支持"
 original_url: /docs/FAQ/faqs-deveco-testing/faqs-deveco-testing-faq/faqs-deveco-testing-faq-8
+upstream_id: FAQ/faqs-deveco-testing/faqs-deveco-testing-faq/faqs-deveco-testing-faq-8
+last_sync: 2026-06-07
+sync_hash: 4d99c5e6
 ---
-
-
 **反馈方式1：**通过DevEco Testing客户端的“设置”-“问题反馈”功能，提交测试服务名称、异常任务信息、问题描述和问题截图，并开启日志上传开关。
 
 ![](./img/8e08bf65.png "点击放大")

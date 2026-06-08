@@ -2,9 +2,10 @@
 title: "接入方案"
 original_url: /docs/dev/app-dev/ai/intents-habit-rec-access-programme
 format: md
+upstream_id: dev/app-dev/ai/intents-habit-rec-access-programme
+last_sync: 2026-06-07
+sync_hash: 343b0dee
 ---
-
-
 ## 方案概述
 
 当用户在应用/元服务内使用功能时，开发者需要按照标准意图Schema向系统共享行为数据，并支持意图调用（空调用与传参调用），以实现用户点击模板卡后跳转回对应页面。

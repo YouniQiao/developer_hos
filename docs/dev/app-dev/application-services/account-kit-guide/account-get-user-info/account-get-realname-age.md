@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取实名年龄段"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-realname-age
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-get-user-info/account-get-realname-age
+last_sync: 2026-06-07
+sync_hash: c35cef8f
 ---
-
-
 ## 场景介绍
 
 当应用需要获取用户实名年龄段信息时，可使用Account Kit的年龄段授权能力。用户授权后，应用可快速获取实名年龄段信息。

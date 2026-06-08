@@ -2,9 +2,10 @@
 format: md
 title: "多so相互依赖场景下如何解耦"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-71
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-71
+last_sync: 2026-06-07
+sync_hash: 4ae830ea
 ---
-
-
 **问题现象**
 
 A模块包含a.so，B模块包含b.so。a.so调用b.so的函数，b.so也调用a.so的函数。按照正常编译步骤，无论先编译哪个so，都会编译失败。

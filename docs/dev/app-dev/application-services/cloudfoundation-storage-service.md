@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "云存储"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service
+last_sync: 2026-06-07
+sync_hash: 06aea454
 ---
-
-
 * **[设置云存储配置项](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service/cloudfoundation-storage-config)**
 * **[初始化全局应用上下文](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service/cloudfoundation-storage-initialize-context)**
 * **[初始化存储实例](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service/cloudfoundation-storage-initialize-bucket)**

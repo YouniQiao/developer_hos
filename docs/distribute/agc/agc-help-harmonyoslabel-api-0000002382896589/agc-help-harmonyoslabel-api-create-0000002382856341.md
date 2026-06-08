@@ -2,9 +2,10 @@
 title: "创建HarmonyOS标签"
 original_url: /docs/distribute/agc/agc-help-harmonyoslabel-api-0000002382896589/agc-help-harmonyoslabel-api-create-0000002382856341
 format: md
+upstream_id: distribute/agc/agc-help-harmonyoslabel-api-0000002382896589/agc-help-harmonyoslabel-api-create-0000002382856341
+last_sync: 2026-06-07
+sync_hash: b5dd9628
 ---
-
-
 #### еҠҹиғҪд»Ӣз»Қ
 
 жӯӨжҺҘеҸЈз”ЁдәҺдёәHarmonyOS NEXTеә”з”ЁжҲ–е…ғжңҚеҠЎеҲӣе»әHarmonyOSж ҮзӯҫгҖӮ

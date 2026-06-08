@@ -2,9 +2,10 @@
 title: "C#（Native）"
 original_url: /docs/dev/game-dev/games-gamemme-engine-csharp-native-0000002393227065
 format: md
+upstream_id: dev/game-dev/games-gamemme-engine-csharp-native-0000002393227065
+last_sync: 2026-06-07
+sync_hash: b616ad1d
 ---
-
-
 调用相关接口需要先完成初始化，初始化是通过创建实例来实现的。
 
 ![](./img/5a737329.png)

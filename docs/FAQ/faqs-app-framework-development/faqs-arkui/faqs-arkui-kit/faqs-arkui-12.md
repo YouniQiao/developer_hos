@@ -2,9 +2,10 @@
 format: md
 title: "如何在Navigation跳转页面时返回传参"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-12
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-12
+last_sync: 2026-06-07
+sync_hash: 84bfee84
 ---
-
-
 在页面跳转时使用[pushPath()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#pushpath12)，添加onPop回调接收入栈页面出栈时的返回结果。当页面返回时，通过[pop()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#pop11)设置result参数并传递给目标页面，由onPop回调接收返回参数。示例代码如下：
 
 ```

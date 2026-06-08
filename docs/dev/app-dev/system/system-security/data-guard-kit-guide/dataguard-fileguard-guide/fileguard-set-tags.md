@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "设置文件属性标签"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-set-tags
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-set-tags
+last_sync: 2026-06-07
+sync_hash: b5b63b1c
 ---
-
-
 ## 场景介绍
 
 Enterprise Data Guard Kit为应用提供对文件设置属性标签的能力，方便应用对管控文件进行标识、分类。

@@ -2,9 +2,10 @@
 title: "HiSmartPerf技术支持"
 original_url: /docs/dev/game-dev/games-hismartperf-support-0000002286788044
 format: md
+upstream_id: dev/game-dev/games-hismartperf-support-0000002286788044
+last_sync: 2026-06-07
+sync_hash: 71807e6f
 ---
-
-
 使用游戏性能调优工具遇到问题时，可以按照以下顺序寻求帮助。
 
 1. 请先仔细阅读文档，部分功能对设备和系统有限制。

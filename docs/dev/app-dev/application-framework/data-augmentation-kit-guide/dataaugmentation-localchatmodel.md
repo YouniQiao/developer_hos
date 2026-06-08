@@ -2,9 +2,10 @@
 title: "端侧问答模型"
 original_url: /docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-localchatmodel
 format: md
+upstream_id: dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-localchatmodel
+last_sync: 2026-06-07
+sync_hash: 7c29896f
 ---
-
-
 ## 概述
 
 当应用通过RAG接口进行知识问答时，系统会经过以下处理流程：问题分解、查询改写、知识检索和检索生成，该流程需要与大语言模型（LLM）进行多次交互。应用可选择两种部署方案：

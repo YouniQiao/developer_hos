@@ -2,9 +2,10 @@
 title: "ASCF Toolkit"
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-ascf-toolkit
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-ascf-toolkit
+last_sync: 2026-06-07
+sync_hash: 34254e62
 ---
-
-
 * **[转换小程序源码时报错Output path is error](/docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-output-path-error)**
 * **[路径不可用报错](/docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-path-received-undefined)**
 * **[报错ERROR: build-profile.json5 file not found](/docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-build-profile-not-found)**

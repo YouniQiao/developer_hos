@@ -2,9 +2,10 @@
 title: "XML转换"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-utils/xml-generation-parsing-conversion/xml-conversion
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-utils/xml-generation-parsing-conversion/xml-conversion
+last_sync: 2026-06-07
+sync_hash: e13f5aa5
 ---
-
-
 将XML文本转换为JavaScript对象，便于处理和操作数据，适用于JavaScript应用程序。
 
 语言基础类库提供ConvertXML类，将XML文本转换为JavaScript对象，输入为待转换的XML字符串及转换选项，输出为转换后的JavaScript对象。具体转换选项可见[API参考@ohos.convertxml](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-convertxml)。

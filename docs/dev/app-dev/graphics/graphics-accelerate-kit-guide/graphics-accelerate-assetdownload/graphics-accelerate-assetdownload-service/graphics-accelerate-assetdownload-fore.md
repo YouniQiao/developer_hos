@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "应用前台下载资源包"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-fore
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-fore
+last_sync: 2026-06-07
+sync_hash: a0219c75
 ---
-
-
 启动游戏后，为游戏提供管理、创建资源包下载任务功能。
 
 ## 业务流程

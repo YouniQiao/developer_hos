@@ -2,9 +2,10 @@
 title: "交互响应概述"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-interaction-capability-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-interaction-capability-overview
+last_sync: 2026-06-07
+sync_hash: 43537a16
 ---
-
-
 ArkUI框架提供了丰富的交互功能，支持直接处理基础输入事件，以及由这些事件驱动的手势系统，同时支持拖拽、焦点切换等复杂交互。
 
 ## 基础输入事件

@@ -2,9 +2,10 @@
 format: md
 title: "如何实现加载svga动画"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-392
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-392
+last_sync: 2026-06-07
+sync_hash: 9c8b7500
 ---
-
-
 **问题描述**
 
 在应用中存在多个页面会使用svga播放图片、动效、动画等。请问HarmonyOS怎么加载svga动画？

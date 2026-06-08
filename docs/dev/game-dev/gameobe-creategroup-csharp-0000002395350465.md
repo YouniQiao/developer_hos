@@ -2,9 +2,10 @@
 title: "创建队伍"
 original_url: /docs/dev/game-dev/gameobe-creategroup-csharp-0000002395350465
 format: md
+upstream_id: dev/game-dev/gameobe-creategroup-csharp-0000002395350465
+last_sync: 2026-06-07
+sync_hash: 8c64df4e
 ---
-
-
 队伍，是一个游戏对局的基本单元，玩家可通过组队的形式跟别的队伍进行PK。当玩家成功创建一个队伍时，即成为该队伍的队长，并默认自动加入到该队伍中。
 
 ## 前提条件

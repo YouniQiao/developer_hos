@@ -2,8 +2,11 @@
 format: md
 title: "DevEco Studio无法打开"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-6
+upstream_id: FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-6
+last_sync: 2026-06-07
+sync_hash: 41b57d78
+upstream_hash: cd3767583150
 ---
-
 
 **问题现象**
 

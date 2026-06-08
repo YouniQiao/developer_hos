@@ -3,9 +3,10 @@ title: "@typescript-eslint/explicit-function-return-type"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_explicit-function-return-type
 format: md
+upstream_id: tools/coding-debug/ide_explicit-function-return-type
+last_sync: 2026-06-07
+sync_hash: e274447e
 ---
-
-
 # @typescript-eslint/explicit-function-return-type
 
 函数和类方法需要显式的定义返回类型。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "崩溃事件介绍"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/crash-events/hiappevent-watcher-crash-events
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/crash-events/hiappevent-watcher-crash-events
+last_sync: 2026-06-07
+sync_hash: ac2000a3
 ---
-
-
 ## 简介
 
 崩溃是指应用进程非预期退出，以下两种场景会生成崩溃事件：
@@ -167,7 +168,7 @@ params是[AppEventInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-r
 | time | number | 事件触发时间，单位为ms。 |
 | crash\_type | string | 崩溃类型，支持NativeCrash（native代码异常）和JsError（js代码异常）两种类型。检测方法请参见[CppCrash（NativeCrash）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/cppcrash-guidelines)和[Js Crash（JsError）检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/jscrash-guidelines)。 |
 | foreground | boolean | 应用是否处于前台状态。true表示应用处于前台状态；false表示应用处于后台状态。 |
-| release\_type | string | 应用的版本类型。release表示应用为[release版本应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)，debug表示应用为[debug版本应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)。  **说明**：从API version 23开始支持。 |
+| release\_type | string | 应用的版本类型。release表示应用为[release版本应用](/docs/tools/coding-debug/ide-hvigor-compilation-options-customizing-guide#section192461528194916)，debug表示应用为[debug版本应用](/docs/tools/coding-debug/ide-hvigor-compilation-options-customizing-guide#section192461528194916)。  **说明**：从API version 23开始支持。 |
 | cpu\_abi | string | 二进制接口类型。  **说明**：从API version 23开始支持。 |
 | app\_running\_unique\_id | string | 应用运行时唯一关联的id。  **说明**：从API version 24开始支持该参数。 |
 | bundle\_version | string | 应用版本。 |

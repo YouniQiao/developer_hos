@@ -2,8 +2,11 @@
 title: "跨设备文件拷贝"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/distributed-fs/file-copy-across-devices
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/distributed-fs/file-copy-across-devices
+last_sync: 2026-06-07
+sync_hash: 4212c1a4
+upstream_hash: 0e6e88ba259e
 ---
-
 
 分布式文件系统为应用提供了跨设备文件拷贝的能力，开发者可以通过[基础文件接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)进行跨设备拷贝文件。例如：多设备数据流转的场景，设备组网互联之后，设备A上的应用可将沙箱文件拷贝到设备A的分布式目录下。设备B在粘贴时，从B设备的分布式目录下将文件拷贝到对应的沙箱文件中。
 

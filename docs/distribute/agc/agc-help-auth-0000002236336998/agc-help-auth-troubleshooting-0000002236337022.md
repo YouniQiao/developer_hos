@@ -2,9 +2,10 @@
 title: "异常处理"
 original_url: /docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-troubleshooting-0000002236337022
 format: md
+upstream_id: distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-troubleshooting-0000002236337022
+last_sync: 2026-06-07
+sync_hash: 1acc547e
 ---
-
-
 在某些情况下，程序无法按预想的情况正常执行，而是会发生异常。您可以根据[AGCAuthError](/docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-agcautherror-0000002273781653)实例对象或者AGCError实例对象返回的错误码定制实现自己的异常处理方案，给用户带来更友好体验。
 
 #### 处理异常

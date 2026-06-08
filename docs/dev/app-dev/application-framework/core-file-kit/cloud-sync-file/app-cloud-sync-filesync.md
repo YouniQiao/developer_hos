@@ -2,9 +2,10 @@
 title: "端云文件协同适配指导"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/cloud-sync-file/app-cloud-sync-filesync
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/cloud-sync-file/app-cloud-sync-filesync
+last_sync: 2026-06-07
+sync_hash: b8d70067
 ---
-
-
 为方便开发者使用端云文件协同的文件缓存、同步等能力，此篇指南介绍了环境准备、文件同步和文件缓存，并且在指南的最后提供了完整的应用工程示例。
 
 ## 环境准备
@@ -20,7 +21,7 @@ format: md
     }
   }
   ```
-* 安装应用：两部设备应用安装后，登录账号，在设置->云空间中找到开发应用同步开关，如下图中的端云协同demo，打开同步开关，可以借助IDE的[Device File Browser](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-device-file-explorer)浏览/data/storage/el2/cloud目录。
+* 安装应用：两部设备应用安装后，登录账号，在设置->云空间中找到开发应用同步开关，如下图中的端云协同demo，打开同步开关，可以借助IDE的[Device File Browser](/docs/tools/coding-debug/ide-device-file-explorer)浏览/data/storage/el2/cloud目录。
 
   ![](./img/ecd5c837.png)
 

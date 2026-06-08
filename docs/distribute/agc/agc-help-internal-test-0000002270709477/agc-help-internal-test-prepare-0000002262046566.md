@@ -2,12 +2,13 @@
 title: "准备打包所需配置文件"
 original_url: /docs/distribute/agc/agc-help-internal-test-0000002270709477/agc-help-internal-test-prepare-0000002262046566
 format: md
+upstream_id: distribute/agc/agc-help-internal-test-0000002270709477/agc-help-internal-test-prepare-0000002262046566
+last_sync: 2026-06-07
+sync_hash: 342b39cf
 ---
-
-
 为保证应用的完整性和来源的真实性，在打包时，您需要为应用进行签名。签名时，需要配置如下相关信息：
 
-* 密钥和证书请求文件：**密钥**格式为.p12，包含非对称加密中使用的公钥和私钥，存储在密钥库文件中，公钥和私钥对用于数字签名和验证；**证书请求文件**格式为.csr，全称为Certificate Signing Request，包含密钥对中的公钥和公共名称、组织名称、组织单位等信息，用于申请发布证书。详细生成过程请参见[生成密钥和证书请求文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section462703710326)。
+* 密钥和证书请求文件：**密钥**格式为.p12，包含非对称加密中使用的公钥和私钥，存储在密钥库文件中，公钥和私钥对用于数字签名和验证；**证书请求文件**格式为.csr，全称为Certificate Signing Request，包含密钥对中的公钥和公共名称、组织名称、组织单位等信息，用于申请发布证书。详细生成过程请参见[生成密钥和证书请求文件](/docs/tools/coding-debug/ide-signing#section462703710326)。
 
   ![](../img/agc-help-internal-test-prepare-0000002262046566_0.png)
 

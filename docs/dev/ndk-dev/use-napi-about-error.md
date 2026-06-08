@@ -2,9 +2,10 @@
 title: "使用Node-API接口进行错误处理开发"
 original_url: /docs/dev/ndk-dev/use-napi-about-error
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-error
+last_sync: 2026-06-07
+sync_hash: 89072449
 ---
-
-
 ## 简介
 
 使用Node-API接口进行错误处理，使得在Node-API模块中能够更好地管理和响应错误情况。通过合理使用这些函数，可以提高模块的稳定性和可靠性。

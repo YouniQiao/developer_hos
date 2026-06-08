@@ -2,9 +2,10 @@
 title: "为HarmonyOS 5.0及以上游戏创建加桌卡片"
 original_url: /docs/dev/game-dev/games-quickgame-interact-card-dev-app-0000002317894956
 format: md
+upstream_id: dev/game-dev/games-quickgame-interact-card-dev-app-0000002317894956
+last_sync: 2026-06-07
+sync_hash: bd93bc20
 ---
-
-
 在DevEco Studio中为您已有的HarmonyOS 5.0及以上游戏创建加桌卡片。
 
 ## 工作准备

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "应用评论服务"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/appgallery-comment
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/appgallery-comment
+last_sync: 2026-06-07
+sync_hash: c69fcbc9
 ---
-
-
 通过应用评论服务，用户无需进入应用市场应用详情页，可以直接在应用内进行评论。
 
 ![](./img/fb0f3113.png)

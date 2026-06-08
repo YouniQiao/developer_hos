@@ -2,9 +2,10 @@
 title: "注册/注销Provider(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-provider-management/huks-extension-registration-and-unregistration-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-provider-management/huks-extension-registration-and-unregistration-ndk
+last_sync: 2026-06-07
+sync_hash: 6904eaee
 ---
-
-
 从API 22开始，huksExternalCrypto提供Provider注册和注销功能接口。
 
 ## 注册Provider

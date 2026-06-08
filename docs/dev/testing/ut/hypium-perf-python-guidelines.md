@@ -2,9 +2,10 @@
 title: "自定义性能脚本测试（基于Python）"
 original_url: /docs/dev/testing/ut/hypium-perf-python-guidelines
 format: md
+upstream_id: dev/testing/ut/hypium-perf-python-guidelines
+last_sync: 2026-06-07
+sync_hash: 19710ea7
 ---
-
-
 ## **概述**
 
 DevEco Testing场景化的性能测试服务，基于Hypium自动化测试框架，为开发者提供性能测试能力，支持使用Python编写应用的性能测试脚本。本指南主要讲解性能测试脚本的开发。

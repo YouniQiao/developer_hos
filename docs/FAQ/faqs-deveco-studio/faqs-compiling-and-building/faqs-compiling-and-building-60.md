@@ -2,9 +2,10 @@
 format: md
 title: "如何控制编译过程的cpu使用"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-60
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-60
+last_sync: 2026-06-07
+sync_hash: 130e4c4e
 ---
-
-
 在模块级 build-profile.json5 的 buildOption.arguments 中添加相关配置，指定 CMake 编译参数。示例如下：
 
 ```

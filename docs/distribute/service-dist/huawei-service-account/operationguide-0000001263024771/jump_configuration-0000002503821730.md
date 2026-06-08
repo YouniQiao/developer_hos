@@ -3,9 +3,10 @@ title: "跳转配置"
 displayed_sidebar: serviceDistSidebar
 original_url: /docs/distribute/service-dist/huawei-service-account/operationguide-0000001263024771/jump_configuration-0000002503821730
 format: md
+upstream_id: distribute/service-dist/huawei-service-account/operationguide-0000001263024771/jump_configuration-0000002503821730
+last_sync: 2026-06-07
+sync_hash: 290f06e3
 ---
-
-
 # 跳转配置
 
 在自定义菜单、A级专区画廊模式主页背景图/商品图/banner、服务tab菜单、关联元服务列表、模板消息、图文消息、会话消息等位置都支持设置跳转目标。

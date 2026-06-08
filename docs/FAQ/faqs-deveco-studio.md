@@ -2,9 +2,10 @@
 format: md
 title: "DevEco Studio"
 original_url: /docs/FAQ/faqs-deveco-studio
+upstream_id: FAQ/faqs-deveco-studio
+last_sync: 2026-06-07
+sync_hash: 7d0b092f
 ---
-
-
 * **[环境准备](/docs/FAQ/faqs-development-environment)**
 * **[工程管理](/docs/FAQ/faqs-project-management)**
 * **[代码编辑](/docs/FAQ/faqs-coding)**

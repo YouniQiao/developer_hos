@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "HTTP缓存基本功能"
 original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-cache/remote-communication-cache-basic
 format: md
+upstream_id: dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-cache/remote-communication-cache-basic
+last_sync: 2026-06-07
+sync_hash: e28e2b11
 ---
-
-
 从6.0.0(20)开始，支持HTTP缓存。
 
 HTTP 缓存是一种在客户端存储网络资源副本的机制，当后续请求相同资源时，可直接从缓存中获取，无需再次向服务器发起完整请求。HTTP 缓存适用于静态资源（如图片、CSS）和高访问量内容，能有效提升网络资源获取性能。Remote Communication Kit模块提供HTTP缓存功能，遵循[RFC 9111](https://www.rfc-editor.org/rfc/rfc9111.html)协议，支持独立配置缓存策略与持久化存储路径，实现内存、磁盘双重缓存管理，并提供自定义缓存拦截器能力。

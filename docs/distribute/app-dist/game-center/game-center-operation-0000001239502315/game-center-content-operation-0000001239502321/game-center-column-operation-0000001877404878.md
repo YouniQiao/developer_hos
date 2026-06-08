@@ -3,9 +3,10 @@ title: "内容创作管理"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-content-operation-0000001239502321/game-center-column-operation-0000001877404878
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-content-operation-0000001239502321/game-center-column-operation-0000001877404878
+last_sync: 2026-06-07
+sync_hash: 28c37f25
 ---
-
-
 # 内容创作管理
 
 游戏中心精品内容专栏Tab展示优质游戏内容资讯。您可以在AGC控制台创建并管理自己游戏的相关内容，提交上线有机会展示到游戏中心内容专栏不同区位，让更多的玩家注意到您的游戏讯息，提升关注度。

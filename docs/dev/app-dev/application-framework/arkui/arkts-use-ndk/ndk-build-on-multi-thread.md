@@ -2,9 +2,10 @@
 title: "使用多线程NDK接口并行化构建UI页面"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-on-multi-thread
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-on-multi-thread
+last_sync: 2026-06-07
+sync_hash: 1e3378cc
 ---
-
-
 ## 概述
 
 在API version 22之前，UI组件的创建与属性设置等操作必须在应用的UI线程中执行。这导致开发者在使用NDK接口时，需将组件创建与属性设置等操作通过任务队列提交至UI线程执行，限制了组件创建过程的灵活性及应用的性能。

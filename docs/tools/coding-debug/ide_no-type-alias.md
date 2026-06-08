@@ -3,8 +3,11 @@ title: "@typescript-eslint/no-type-alias"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-type-alias
 format: md
+upstream_id: tools/coding-debug/ide_no-type-alias
+last_sync: 2026-06-07
+sync_hash: 401697a7
+upstream_hash: 7fcdfa7f6bd2
 ---
-
 
 # @typescript-eslint/no-type-alias
 

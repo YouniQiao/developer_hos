@@ -3,8 +3,10 @@ title: "删除预审创意"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/delete-preview-ideas-0000002394079777
 format: md
+upstream_id: monetize/promotion/delete-preview-ideas-0000002394079777
+last_sync: 2026-06-07
+sync_hash: cd31bbc0
 ---
-
 # 删除预审创意
 
 ## 功能介绍

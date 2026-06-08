@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "音视频编解码"
 original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/audio-video-codec
+last_sync: 2026-06-07
+sync_hash: b1a84b83
 ---
-
-
 * **[获取支持的编解码能力](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/obtain-supported-codecs)**
 * **[音频编码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/audio-encoding)**
 * **[音频编码同步模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/synchronous-audio-encoding)**

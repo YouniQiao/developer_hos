@@ -2,9 +2,10 @@
 title: "禁用屏幕朗读焦点的场景"
 original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-disable-screen-reading-focus
 format: md
+upstream_id: dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-disable-screen-reading-focus
+last_sync: 2026-06-07
+sync_hash: fc6fea3a
 ---
-
-
 ## 设计场景
 
 装饰性的控件一般为分隔符、占位符和美化图标等，这类图形元素仅仅起到调整页面布局或装饰性效果，并不会向用户传达有效的信息或提供交互功能，删除后不影响指引用户体验。可以设置控件的无障碍组accessibilityGroup、无障碍重要性accessibilityLevel、组件可见性visibility等属性将其设置为无障碍不可聚焦，这样在屏幕朗读模式下控件就不会获取焦点和朗读。

@@ -3,9 +3,10 @@ title: "预览数据模拟"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-previewer-mock
 format: md
+upstream_id: tools/coding-debug/ide-previewer-mock
+last_sync: 2026-06-07
+sync_hash: 65979acb
 ---
-
-
 # 预览数据模拟
 
 ![](./img/note_3.0-zh-cn.png)

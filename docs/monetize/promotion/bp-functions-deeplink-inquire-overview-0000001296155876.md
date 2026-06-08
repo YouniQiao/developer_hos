@@ -3,8 +3,10 @@ title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-deeplink-inquire-overview-0000001296155876
 format: md
+upstream_id: monetize/promotion/bp-functions-deeplink-inquire-overview-0000001296155876
+last_sync: 2026-06-07
+sync_hash: 53f64a9a
 ---
-
 # 概述
 
 延迟Deeplink的推广任务投放成功后，您可以通过<strong>[客户端(方式一)](/docs/monetize/promotion/bp-functions-deeplink-inquire-client-0000001348653289)</strong>和<strong>[API接口(方式二)](/docs/monetize/promotion/bp-functions-deeplink-inquire-api-0000001296132894)</strong>两种方式查询。

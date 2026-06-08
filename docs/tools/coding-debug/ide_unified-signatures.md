@@ -3,9 +3,10 @@ title: "@typescript-eslint/unified-signatures"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_unified-signatures
 format: md
+upstream_id: tools/coding-debug/ide_unified-signatures
+last_sync: 2026-06-07
+sync_hash: 8c545b60
 ---
-
-
 # @typescript-eslint/unified-signatures
 
 如果两个重载函数可以用联合类型参数（|）、可选参数（?）或者剩余参数（...）来重构为一个函数，不允许使用重载。

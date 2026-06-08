@@ -3,8 +3,10 @@ title: "关联广告账户"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/manager-associated-0000001126403164
 format: md
+upstream_id: monetize/promotion/manager-associated-0000001126403164
+last_sync: 2026-06-07
+sync_hash: d9524d22
 ---
-
 # 关联广告账户
 
 1. <strong>在经理账户中关联现有广告账户</strong>。

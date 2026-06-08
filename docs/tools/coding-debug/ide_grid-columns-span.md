@@ -3,9 +3,10 @@ title: "@cross-device-app-dev/grid-columns-span"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_grid-columns-span
 format: md
+upstream_id: tools/coding-debug/ide_grid-columns-span
+last_sync: 2026-06-07
+sync_hash: 4620c427
 ---
-
-
 # @cross-device-app-dev/grid-columns-span
 
 不推荐开发者将栅格中所有的GridCol子组件只设置span属性，且值与父组件的columns属性相等。这等效于子组件宽度始终为父容器的100%，栅格系统没有发挥作用，徒增页面组件树复杂度，影响性能。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "设置工作空间信息"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-set-workspace-info
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-set-workspace-info
+last_sync: 2026-06-07
+sync_hash: b8246783
 ---
-
-
 ## 场景介绍
 
 Enterprise Space Kit为应用提供设置工作空间信息的能力。在企业初始化阶段，设置工作空间信息，方便企业绑定域账号。

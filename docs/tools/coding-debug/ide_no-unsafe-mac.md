@@ -3,9 +3,10 @@ title: "@security/no-unsafe-mac"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unsafe-mac
 format: md
+upstream_id: tools/coding-debug/ide_no-unsafe-mac
+last_sync: 2026-06-07
+sync_hash: 380df5cc
 ---
-
-
 # @security/no-unsafe-mac
 
 该规则禁止在[MAC消息认证算法](`https://`developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/aegis-message-authentication-code-calculation-0000001907018769)中使用不安全的哈希算法，例如SHA1。

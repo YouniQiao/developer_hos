@@ -3,8 +3,11 @@ title: "JS（小游戏）"
 original_url: /docs/dev/game-dev/games-gamemme-integratingsdk-minigame-0000002393266905
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-gamemme-integratingsdk-minigame-0000002393266905
+last_sync: 2026-06-07
+sync_hash: 0c57c60e
+upstream_hash: 70bb93f9191d
 ---
-
 
 游戏多媒体JS SDK提供了实时信令、语音消息和语音转文本功能，支持Cocos Creator、Laya等主流游戏引擎。
 

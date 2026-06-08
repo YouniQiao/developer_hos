@@ -2,9 +2,10 @@
 title: "Node-API简介"
 original_url: /docs/dev/ndk-dev/napi-introduction
 format: md
+upstream_id: dev/ndk-dev/napi-introduction
+last_sync: 2026-06-07
+sync_hash: da0bb897
 ---
-
-
 ## 场景介绍
 
 HarmonyOS Node-API是基于Node.js 18.x LTS的[Node-API](https://nodejs.org/docs/latest-v12.x/api/n-api.html)规范扩展开发的机制，为开发者提供了ArkTS/JS与C/C++模块之间的交互能力。它提供了一组稳定的、跨平台的API，可以在不同的操作系统上使用。

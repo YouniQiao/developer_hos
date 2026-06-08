@@ -2,9 +2,10 @@
 title: "查询商品"
 original_url: /docs/dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-query
 format: md
+upstream_id: dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-query
+last_sync: 2026-06-07
+sync_hash: 1d1b7392
 ---
-
-
 ## 功能介绍
 
 该接口用于查询商品的详细信息，通过指定queryType查询类型，可选择获取线上生效的商品、管理态待生效商品（如草稿、审核中、审核拒绝状态）。

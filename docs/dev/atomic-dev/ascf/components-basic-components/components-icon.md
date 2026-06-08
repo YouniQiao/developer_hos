@@ -2,9 +2,10 @@
 title: "icon"
 original_url: /docs/dev/atomic-dev/ascf/components-basic-components/components-icon
 format: md
+upstream_id: dev/atomic-dev/ascf/components-basic-components/components-icon
+last_sync: 2026-06-07
+sync_hash: a515e968
 ---
-
-
 图标组件。
 
 **起始版本：** 1.0.0

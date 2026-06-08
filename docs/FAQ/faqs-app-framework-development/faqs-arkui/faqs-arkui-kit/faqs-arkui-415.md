@@ -2,9 +2,10 @@
 format: md
 title: "Navigation通过pushPathByName跳转页面为什么显示空白"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-415
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-415
+last_sync: 2026-06-07
+sync_hash: b41ffe29
 ---
-
-
 **常见原因及解决措施**
 
 **原因一：路由未正确配置**

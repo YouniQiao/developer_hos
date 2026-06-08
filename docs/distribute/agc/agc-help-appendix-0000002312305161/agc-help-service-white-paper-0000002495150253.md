@@ -2,9 +2,10 @@
 title: "AppGallery Connect服务白皮书"
 original_url: /docs/distribute/agc/agc-help-appendix-0000002312305161/agc-help-service-white-paper-0000002495150253
 format: md
+upstream_id: distribute/agc/agc-help-appendix-0000002312305161/agc-help-service-white-paper-0000002495150253
+last_sync: 2026-06-07
+sync_hash: e12fa836
 ---
-
-
 ![](../img/agc-help-service-white-paper-0000002495150253_0.png "点击放大")
 
 ![](../img/agc-help-service-white-paper-0000002495150253_1.png "点击放大")

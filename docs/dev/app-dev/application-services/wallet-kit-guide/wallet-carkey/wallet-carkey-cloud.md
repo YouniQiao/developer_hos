@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "云侧开发准备"
 original_url: /docs/dev/app-dev/application-services/wallet-kit-guide/wallet-carkey/wallet-carkey-cloud
 format: md
+upstream_id: dev/app-dev/application-services/wallet-kit-guide/wallet-carkey/wallet-carkey-cloud
+last_sync: 2026-06-07
+sync_hash: 534b09f7
+upstream_hash: 703f9cd12357
 ---
-
 
 ## Wallet Kit服务云侧接入基本信息配置
 

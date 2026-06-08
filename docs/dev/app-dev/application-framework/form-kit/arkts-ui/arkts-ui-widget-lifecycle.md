@@ -2,9 +2,10 @@
 title: "管理ArkTS卡片生命周期"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-lifecycle
 format: md
+upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-lifecycle
+last_sync: 2026-06-07
+sync_hash: 437da539
 ---
-
-
 创建ArkTS卡片，需实现[FormExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formextensionability)生命周期接口。
 
 1. 在EntryFormAbility.ets中，导入相关模块。

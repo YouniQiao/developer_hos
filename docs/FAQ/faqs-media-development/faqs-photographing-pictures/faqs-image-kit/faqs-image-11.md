@@ -2,9 +2,10 @@
 format: md
 title: "如何把ImageReceiver收到的视频帧数据保存到本地"
 original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-11
+upstream_id: FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-11
+last_sync: 2026-06-07
+sync_hash: 467dadef
 ---
-
-
 如示例代码所示，保存接收到的前3帧数据，可根据业务需求进行调整。
 
 ```

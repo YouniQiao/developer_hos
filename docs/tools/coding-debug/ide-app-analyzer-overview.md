@@ -3,9 +3,10 @@ title: "体检概述"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-app-analyzer-overview
 format: md
+upstream_id: tools/coding-debug/ide-app-analyzer-overview
+last_sync: 2026-06-07
+sync_hash: 05e46951
 ---
-
-
 # 体检概述
 
 DevEco Studio提供了应用与元服务体检工具AppAnalyzer，用于对应用和元服务进行本地测试体检，并给出体检报告、分析指导以及修改建议，帮助开发者提升应用与元服务质量。在体检过程中，工具会收集应用或元服务的trace信息、代码栈、内存快照以及应用或元服务页面的截屏，并保存在本地工程目录.appanalyzer下，帮助开发者快速进行问题分析定位。

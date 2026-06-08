@@ -2,9 +2,10 @@
 format: md
 title: "如何正确地在CMakeLists.txt文件中配置头文件搜索路径"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-43
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-43
+last_sync: 2026-06-07
+sync_hash: f357a1a6
 ---
-
-
 请按照以下示例进行配置：
 
 **例1****：**

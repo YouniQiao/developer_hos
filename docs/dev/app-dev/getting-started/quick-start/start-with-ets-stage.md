@@ -1,8 +1,10 @@
 ---
 title: "构建第一个HarmonyOS应用（ArkTS）"
 original_url: /docs/dev/app-dev/getting-started/quick-start/start-with-ets-stage
+upstream_id: dev/app-dev/getting-started/quick-start/start-with-ets-stage
+last_sync: 2026-06-07
+sync_hash: 620a55b5
 ---
-
 ![](./img/62c97aed.png)
 
 为确保运行效果，本文以使用[DevEco Studio 6.1.1 Release版本](https://developer.huawei.com/consumer/cn/download/)为例。
@@ -12,7 +14,7 @@ original_url: /docs/dev/app-dev/getting-started/quick-start/start-with-ets-stage
 1. 若首次打开**DevEco Studio**，请单击**Create Project**创建工程。如果已经打开了一个工程，请在菜单栏选择**File** > **New** > **Create Project**来创建一个新工程。
 2. 选择**Application**应用开发（本文以应用开发为例，[Atomic Service](/docs/dev/app-dev/getting-started/glossary/glossary#atomic-service元服务)对应为元服务开发），选择模板**Empty Ability**，单击**Next**进行下一步配置。
 
-   若开发者需要进行Native相关工程的开发，请选择**Native C++** 模板，更多模板的使用和说明请见[工程模板介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-template)。
+   若开发者需要进行Native相关工程的开发，请选择**Native C++** 模板，更多模板的使用和说明请见[工程模板介绍](/docs/tools/coding-debug/ide-template)。
 
    ![](./img/4b608fa3.png)
 3. 进入配置工程界面，**Compatible SDK**表示兼容的最低API Version，此处以选择**6.1.1(24)** 为例，其他参数保持默认设置即可。
@@ -35,7 +37,7 @@ original_url: /docs/dev/app-dev/getting-started/quick-start/start-with-ets-stage
   + **src > main > module.json5**：[模块](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-glossary#module)配置文件。主要包含HAP包的配置信息、应用/服务在具体设备上的配置信息以及应用/服务的全局配置信息。具体的配置文件说明，详见[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)。
   + **build-profile.json5**：当前的模块信息 、编译信息配置项，包括buildOption、targets配置等。
   + **hvigorfile.ts**：模块级编译构建任务脚本。
-  + **obfuscation-rules.txt**：混淆规则文件。混淆开启后，在使用Release模式进行编译时，会对代码进行编译、混淆及压缩处理，保护代码资产。详见[开启代码混淆](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-obfuscation)。
+  + **obfuscation-rules.txt**：混淆规则文件。混淆开启后，在使用Release模式进行编译时，会对代码进行编译、混淆及压缩处理，保护代码资产。详见[开启代码混淆](/docs/tools/coding-debug/ide-build-obfuscation)。
   + **oh-package.json5**：用来描述包名、版本、入口文件（类型声明文件）和依赖项等信息。
 * **oh\_modules**：用于存放三方库依赖信息。
 * **build-profile.json5**：工程级配置信息，包括签名signingConfigs、产品配置products等。其中products中可配置当前运行环境，默认为HarmonyOS。
@@ -290,8 +292,8 @@ original_url: /docs/dev/app-dev/getting-started/quick-start/start-with-ets-stage
 
 ## 使用真机运行应用
 
-1. 将搭载HarmonyOS系统的真机与电脑连接。具体指导及要求，可查看[使用本地真机运行应用/服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device)。
-2. 进入**File > Project Structure... > Project > Signing Configs**界面，勾选“**Automatically generate signature**”，即可完成签名。如果未登录，请先单击**Sign In**进行登录，然后自动完成签名。具体请见[配置调试签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section151231211105010)。如下图所示：
+1. 将搭载HarmonyOS系统的真机与电脑连接。具体指导及要求，可查看[使用本地真机运行应用/服务](/docs/tools/coding-debug/ide-run-device)。
+2. 进入**File > Project Structure... > Project > Signing Configs**界面，勾选“**Automatically generate signature**”，即可完成签名。如果未登录，请先单击**Sign In**进行登录，然后自动完成签名。具体请见[配置调试签名](/docs/tools/coding-debug/ide-signing#section151231211105010)。如下图所示：
 
    ![](./img/580f8715.png)
 3. 在编辑窗口右上角的工具栏，单击![](./img/de7a775d.png)按钮运行。效果如下图所示：

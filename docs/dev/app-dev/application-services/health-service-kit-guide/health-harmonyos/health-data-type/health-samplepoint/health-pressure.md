@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "压力"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-pressure
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-pressure
+last_sync: 2026-06-07
+sync_hash: ec2cc4a4
 ---
-
-
 此数据记录用户在某一刻的压力数据，每一条数据都代表该时刻的压力状态。
 
 * Harmony SDK类型常量：[samplePointHelper.stress.DATA\_TYPE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-samplepointhelper#常量-10)

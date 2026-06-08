@@ -2,9 +2,10 @@
 title: "发送邀请测试通知"
 original_url: /docs/distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-post-test-notify-0000002236041538
 format: md
+upstream_id: distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-post-test-notify-0000002236041538
+last_sync: 2026-06-07
+sync_hash: 33a34896
 ---
-
-
 #### еҠҹиғҪд»Ӣз»Қ
 
 жӯӨжҺҘеҸЈз”ЁдәҺз»ҷжөӢиҜ•з”ЁжҲ·еҸ‘йҖҒйӮҖиҜ·жөӢиҜ•зҡ„йҖҡзҹҘгҖӮ

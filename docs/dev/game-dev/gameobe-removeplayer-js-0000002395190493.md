@@ -2,9 +2,10 @@
 title: "移除队员"
 original_url: /docs/dev/game-dev/gameobe-removeplayer-js-0000002395190493
 format: md
+upstream_id: dev/game-dev/gameobe-removeplayer-js-0000002395190493
+last_sync: 2026-06-07
+sync_hash: b2ab412d
 ---
-
-
 在组队阶段，如果队长不希望某个玩家参与到游戏中，可以将指定玩家移除出小队。
 
 ## 前提条件

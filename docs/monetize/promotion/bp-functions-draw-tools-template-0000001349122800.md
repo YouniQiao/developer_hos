@@ -3,8 +3,10 @@ title: "使用模板制图功能"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-draw-tools-template-0000001349122800
 format: md
+upstream_id: monetize/promotion/bp-functions-draw-tools-template-0000001349122800
+last_sync: 2026-06-07
+sync_hash: 32514b9c
 ---
-
 # 使用模板制图功能
 
 1. 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)。

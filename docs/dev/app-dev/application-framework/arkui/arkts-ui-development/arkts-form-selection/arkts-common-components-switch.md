@@ -2,9 +2,10 @@
 title: "切换按钮 (Toggle)"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection/arkts-common-components-switch
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection/arkts-common-components-switch
+last_sync: 2026-06-07
+sync_hash: f96cbc85
 ---
-
-
 Toggle组件提供状态按钮样式、勾选框样式和开关样式，一般用于两种状态之间的切换。具体用法请参考[Toggle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toggle)。
 
 ## 创建切换按钮

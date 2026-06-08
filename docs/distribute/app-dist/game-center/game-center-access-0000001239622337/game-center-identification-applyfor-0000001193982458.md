@@ -3,9 +3,10 @@ title: "版署实名认证申请"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-access-0000001239622337/game-center-identification-applyfor-0000001193982458
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-access-0000001239622337/game-center-identification-applyfor-0000001193982458
+last_sync: 2026-06-07
+sync_hash: 86ec7f9d
 ---
-
-
 # 版署实名认证申请
 
 按照国家新闻出版署《关于开展网络游戏防沉迷实名认证系统接口对接工作的通知》，各游戏出版运营企业均须在2021年6月1日前完成国家新闻出版署的实名认证系统的接入。

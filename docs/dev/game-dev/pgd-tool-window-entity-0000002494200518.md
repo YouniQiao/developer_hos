@@ -2,9 +2,10 @@
 title: "Entity窗口"
 original_url: /docs/dev/game-dev/pgd-tool-window-entity-0000002494200518
 format: md
+upstream_id: dev/game-dev/pgd-tool-window-entity-0000002494200518
+last_sync: 2026-06-07
+sync_hash: c2755748
 ---
-
-
 ## 功能介绍
 
 Entity窗口支持实时展示被选World下的所有Entity列表，同时支持查看Entity内部的详细属性值、数据情况。

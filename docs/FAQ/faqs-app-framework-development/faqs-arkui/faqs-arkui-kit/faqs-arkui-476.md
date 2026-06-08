@@ -2,9 +2,10 @@
 format: md
 title: "aboutToReuse使用入参params刷新UI崩溃"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-476
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-476
+last_sync: 2026-06-07
+sync_hash: c629f2d3
 ---
-
-
 **问题描述**
 
 当一个可复用的自定义组件从复用缓存中重新加入到节点树时，触发aboutToReuse生命周期回调，并将组件的构造参数传递给aboutToReuse。

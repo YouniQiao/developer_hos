@@ -2,9 +2,10 @@
 title: "广告跳转"
 original_url: /docs/dev/app-dev/application-framework/ad-redirection
 format: md
+upstream_id: dev/app-dev/application-framework/ad-redirection
+last_sync: 2026-06-07
+sync_hash: 56c2ffe3
 ---
-
-
 ## 概述
 
 在移动应用或Web开发中，广告跳转是一种常见的商业模式，通过引导用户点击广告并跳转到目标页面（例如应用下载、商品详情、活动页等）来实现流量变现或推广。

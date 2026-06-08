@@ -1,8 +1,10 @@
 ---
 title: "应用冻屏类问题案例"
 original_url: /docs/quality/scenario-stability-app-freeze
+upstream_id: /docs/quality/scenario-stability-app-freeze
+last_sync: 2026-06-07
+sync_hash: 41da90bf
 ---
-
 # 应用冻屏类问题案例
 
 ## ThreadBlock类问题案例-未正确使用锁

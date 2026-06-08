@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "上传指定文件至云侧"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service/cloudfoundation-storage-upload-file
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service/cloudfoundation-storage-upload-file
+last_sync: 2026-06-07
+sync_hash: 7818880d
 ---
-
-
 开发者可以快速将本地设备上的文件上传至云侧，上传完后，可以前往AppGallery Connect的“云存储”页面，查看上传的文档内容。
 
 ## 约束与限制

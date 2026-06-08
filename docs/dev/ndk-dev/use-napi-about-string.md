@@ -2,9 +2,10 @@
 title: "使用Node-API接口创建和获取string值"
 original_url: /docs/dev/ndk-dev/use-napi-about-string
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-string
+last_sync: 2026-06-07
+sync_hash: 45c38cea
 ---
-
-
 ## 简介
 
 使用Node-API的八个关于string的接口，可以实现Node-API模块与ArkTS字符串的交互。

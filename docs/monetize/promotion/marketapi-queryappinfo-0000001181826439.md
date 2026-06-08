@@ -3,8 +3,10 @@ title: "查询APP列表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-queryappinfo-0000001181826439
 format: md
+upstream_id: monetize/promotion/marketapi-queryappinfo-0000001181826439
+last_sync: 2026-06-07
+sync_hash: 4f2074a6
 ---
-
 # 查询APP列表
 
 ## 功能介绍

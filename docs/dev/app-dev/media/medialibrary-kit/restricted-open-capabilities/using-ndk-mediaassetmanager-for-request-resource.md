@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用MediaAssetManager请求媒体资源(C/C++)"
 original_url: /docs/dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/using-ndk-mediaassetmanager-for-request-resource
 format: md
+upstream_id: dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/using-ndk-mediaassetmanager-for-request-resource
+last_sync: 2026-06-07
+sync_hash: c1cba855
 ---
-
-
 使用MediaAssetManager可以实现请求媒体资源到目标沙箱路径，本开发指导将以请求一张图片作为示例，向开发者讲解MediaAssetManager相关功能。
 
 请求图片资源的全流程包含：创建MediaAssetManager，设置请求资源，请求图片资源，取消本次请求(可选)。

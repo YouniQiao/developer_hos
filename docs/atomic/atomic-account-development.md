@@ -2,9 +2,10 @@
 title: "账号"
 original_url: /docs/dev/atomic-dev/atomic-account-development/atomic-account-development
 format: md
+upstream_id: dev/atomic-dev/atomic-account-development/atomic-account-development
+last_sync: 2026-06-07
+sync_hash: 3846a90a
 ---
-
-
 * **[Account Kit简介](/docs/dev/atomic-dev/atomic-account-development/account-guide-atomic-introduction)**
 * **[华为账号登录管理细则](/docs/dev/atomic-dev/atomic-account-development/account-guide-atomic-detailedrules)**
 * **[开发准备](/docs/dev/atomic-dev/account-guide-atomic-preparations/account-guide-atomic-preparations)**

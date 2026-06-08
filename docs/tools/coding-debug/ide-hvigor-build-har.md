@@ -3,9 +3,10 @@ title: "构建HAR"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-build-har
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-build-har
+last_sync: 2026-06-07
+sync_hash: 32857d4e
 ---
-
-
 # 构建HAR
 
 构建模式：DevEco Studio默认提供debug和release两种构建模式，同时支持开发者自定义构建模式。

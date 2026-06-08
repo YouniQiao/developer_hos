@@ -2,9 +2,10 @@
 title: "视频铃声设计指导及规范"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/video-ringtone-0000001054371158/video-ringtone-specifications-0000001054469755
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/video-ringtone-0000001054371158/video-ringtone-specifications-0000001054469755
+last_sync: 2026-06-07
+sync_hash: 1ee03446
 ---
-
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # 视频铃声设计指导及规范

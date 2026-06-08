@@ -3,9 +3,10 @@ title: "关联应用"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/related-applications-0000002437785706
 format: md
+upstream_id: distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/related-applications-0000002437785706
+last_sync: 2026-06-07
+sync_hash: 07695996
 ---
-
-
 # 关联应用
 
 ## 功能介绍及效果示例

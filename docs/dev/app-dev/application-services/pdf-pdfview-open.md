@@ -3,14 +3,15 @@ displayed_sidebar: appDevSidebar
 title: "打开和保存PDF文档"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-open-document
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-open-document
+last_sync: 2026-06-07
+sync_hash: e949fd7c
 ---
-
-
 ## 场景介绍
 
 通过加载本地路径的PDF文档，实现打开PDF文档的预览功能。当PDF文档做了批注等相关的信息时，可以使用保存功能。
 
-和pdfService的打开和保存能力相同，具体区别查看pdfService的[打开和保存PDF文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-open-document)的场景介绍。
+和pdfService的打开和保存能力相同，具体区别查看pdfService的[打开和保存PDF文档](/docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-open-document)的场景介绍。
 
 ## 接口说明
 

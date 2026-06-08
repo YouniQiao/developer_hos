@@ -2,9 +2,10 @@
 format: md
 title: "如何获知数据存储沙箱路径"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-33
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-33
+last_sync: 2026-06-07
+sync_hash: fc2d81cc
 ---
-
-
 关系型数据库：
 
 "/data/app/el2/100/database/(bundleName)/entry/rdb/"下的.db文件

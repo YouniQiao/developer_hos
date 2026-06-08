@@ -3,8 +3,10 @@ title: "精选推荐-系统投放-CPD任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/mktapi-adtask-top-sys-cpd-0000001313837264
 format: md
+upstream_id: monetize/promotion/mktapi-adtask-top-sys-cpd-0000001313837264
+last_sync: 2026-06-07
+sync_hash: 065c8ee0
 ---
-
 # 精选推荐-系统投放-CPD任务
 
 ## 功能介绍

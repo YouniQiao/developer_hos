@@ -2,9 +2,10 @@
 title: "如何将app.media.app_icon，转换为PixelMap"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-accessibility-localization/faqs-localization-kit/faqs-localization-9
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-accessibility-localization/faqs-localization-kit/faqs-localization-9
+last_sync: 2026-06-07
+sync_hash: e56e95f4
 ---
-
-
 使用getMediaContent获取媒体文件内容。使用createPixelMap创建PixelMap。
 
 参考代码如下：

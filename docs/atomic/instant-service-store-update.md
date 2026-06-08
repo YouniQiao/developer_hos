@@ -2,9 +2,10 @@
 title: "更新门店"
 original_url: /docs/dev/atomic-dev/instant-service-store-management/instant-service-store-update
 format: md
+upstream_id: dev/atomic-dev/instant-service-store-management/instant-service-store-update
+last_sync: 2026-06-07
+sync_hash: 584931ce
 ---
-
-
 ## 功能介绍
 
 本接口用于商家向平台提交门店信息更新申请。当门店的信息发生变更时，商家可通过本接口同步最新数据至平台。

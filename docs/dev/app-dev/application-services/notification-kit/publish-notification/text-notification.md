@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "发布文本类型通知"
 original_url: /docs/dev/app-dev/application-services/notification-kit/publish-notification/text-notification
 format: md
+upstream_id: dev/app-dev/application-services/notification-kit/publish-notification/text-notification
+last_sync: 2026-06-07
+sync_hash: c3b423cf
 ---
-
-
 文本类型通知主要应用于发送短信息、提示信息等，支持普通文本类型和多行文本类型。
 
 **表1** 基础类型通知中的内容分类

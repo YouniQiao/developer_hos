@@ -2,9 +2,10 @@
 format: md
 title: "DevEco Studio如何自动install依赖"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-9
+upstream_id: FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-9
+last_sync: 2026-06-07
+sync_hash: e72e3ac3
 ---
-
-
 DevEco Studio在以下三种场景会自动install依赖：
 
 1. 打开工程，自动install所有模块中的依赖。

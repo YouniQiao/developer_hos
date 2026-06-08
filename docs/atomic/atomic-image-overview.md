@@ -2,9 +2,10 @@
 title: "图片开发概述"
 original_url: /docs/dev/atomic-dev/atomic-image-development/atomic-image-overview
 format: md
+upstream_id: dev/atomic-dev/atomic-image-development/atomic-image-overview
+last_sync: 2026-06-07
+sync_hash: bb1c6057
 ---
-
-
 图片框架提供图片编解码能力，为Image组件及图库等应用提供支撑，其解码结果可以传给Image组件进行显示。
 
 应用开发中的图片开发是对图片像素数据进行解析、处理、构造的过程，达到目标图片效果，主要涉及图片解码、图片编码等。

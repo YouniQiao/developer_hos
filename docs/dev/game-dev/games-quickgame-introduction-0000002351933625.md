@@ -2,9 +2,10 @@
 title: "快游戏简介"
 original_url: /docs/dev/game-dev/games-quickgame-introduction-0000002351933625
 format: md
+upstream_id: dev/game-dev/games-quickgame-introduction-0000002351933625
+last_sync: 2026-06-07
+sync_hash: 4c2bc5d8
 ---
-
-
 ![](./img/96ca7396.png)
 
 儿童、教育类应用请参考[创建快应用](https://developer.huawei.com/consumer/cn/doc/quickApp-Guides/quickapp-create-quickapp-0000001079835824)。

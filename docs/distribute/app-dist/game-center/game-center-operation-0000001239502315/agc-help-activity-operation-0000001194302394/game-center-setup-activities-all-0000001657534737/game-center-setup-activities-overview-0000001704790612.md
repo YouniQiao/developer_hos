@@ -3,9 +3,10 @@ title: "概述"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-overview-0000001704790612
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-overview-0000001704790612
+last_sync: 2026-06-07
+sync_hash: 05dcc31a
 ---
-
-
 # 概述
 
 华为应用市场面向所有实名认证的联运应用及游戏开发者开放运营活动管理功能，您可自助创建运营活动，通过审核后即可在华为应用市场、游戏中心正式上线，实现拉新、促活、创收等经营目标。
@@ -26,11 +27,11 @@ format: md
 
 | 活动目的场景 | 活动目的简介 | 操作指南 |
 | --- | --- | --- |
-| 预约有奖 | 创建活动提升预约量 | [预约有奖活动指导](`https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-reservation-0000001657694701`) |
-| 安装有奖 | 创建活动提升安装量 | [安装有奖活动指导](`https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-install-0000001657934421`) |
-| 登录有奖 | 创建活动增加用户登录 | [登录有奖活动指导](`https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-login-0000001608734802`) |
-| 提升付费 | 创建活动提升用户充值付费 | [提升付费活动指导](`https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-increase-payment-0000001683109285`) |
-| 流失召回 | 创建活动召回流失用户 | [流失召回活动指导](`https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-loss-recall-0000001634589718`) |
+| 预约有奖 | 创建活动提升预约量 | [预约有奖活动指导](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-reservation-0000001657694701) |
+| 安装有奖 | 创建活动提升安装量 | [安装有奖活动指导](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-install-0000001657934421) |
+| 登录有奖 | 创建活动增加用户登录 | [登录有奖活动指导](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-login-0000001608734802) |
+| 提升付费 | 创建活动提升用户充值付费 | [提升付费活动指导](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-increase-payment-0000001683109285) |
+| 流失召回 | 创建活动召回流失用户 | [流失召回活动指导](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-loss-recall-0000001634589718) |
 
 ## 活动形式
 

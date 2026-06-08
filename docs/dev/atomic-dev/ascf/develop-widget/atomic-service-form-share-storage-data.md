@@ -2,9 +2,10 @@
 title: "元服务与卡片共享存储数据"
 original_url: /docs/dev/atomic-dev/ascf/develop-widget/atomic-service-form-share-storage-data
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-widget/atomic-service-form-share-storage-data
+last_sync: 2026-06-07
+sync_hash: 26819e4b
 ---
-
-
 当元服务需要与卡片互通数据时，可以参考以下指导开发。
 
 ## 场景描述

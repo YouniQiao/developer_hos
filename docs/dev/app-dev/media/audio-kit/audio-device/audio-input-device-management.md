@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "查询和监听音频输入设备"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-device/audio-input-device-management
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-device/audio-input-device-management
+last_sync: 2026-06-07
+sync_hash: 42f7fcc7
 ---
-
-
 本模块提供音频输入设备管理能力，包括查询输入设备信息、监听设备连接状态变化等。具体API说明可参考文档[AudioRoutingManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audioroutingmanager)。
 
 以下各步骤示例为片段代码，可通过示例代码右下方链接获取[完整示例](https://gitcode.com/openharmony/applications_app_samples/blob/master/code/DocsSample/Media/Audio/AudioRoutingManagerSampleJS)。

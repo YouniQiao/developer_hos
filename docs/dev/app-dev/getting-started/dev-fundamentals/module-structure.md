@@ -1,8 +1,10 @@
 ---
 title: "module对象内部结构"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/module-structure
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/module-structure
+last_sync: 2026-06-07
+sync_hash: 982a1cd8
 ---
-
 module对象包含HAP的配置信息。
 
 **表1** **module对象内部结构说明**

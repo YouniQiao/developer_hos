@@ -3,6 +3,10 @@ title: "多设备便捷生活界面"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/multi-convenient-life
 format: md
+upstream_id: dev/app-dev/multi-device/multi-convenient-life
+last_sync: 2026-06-07
+sync_hash: f4a19d16
+upstream_hash: a7303506d073
 ---
 
 # 多设备便捷生活界面

@@ -2,9 +2,10 @@
 title: "折叠屏主题设计指导及规范"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-0000001103278304/foldable-display-themes-0000001102979830
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-0000001103278304/foldable-display-themes-0000001102979830
+last_sync: 2026-06-07
+sync_hash: 7c67b9b8
 ---
-
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # 折叠屏主题设计指导及规范
@@ -72,7 +73,7 @@ import MergeTable from '@site/src/components/MergeTable';
 
 动态锁屏unlock文件夹下有一个lockscreen文件夹和一个theme.xml文件；lockscreen文件夹下有4个manifest.xml文件和素材资源。
 
-设计师可在manifest.xml文件中调用素材资源，使用脚本编写各式各样的动态效果，具体脚本写法参见[华为官方主题引擎脚本规范](https://developer.huawei.com/consumer/cn/doc/distribution/content/script_specifications-0000001055068447)。
+设计师可在manifest.xml文件中调用素材资源，使用脚本编写各式各样的动态效果，具体脚本写法参见[华为官方主题引擎脚本规范](/docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/themes-engine-introduction1-0000001305783677/script_specifications-0000001055068447)。
 
 ![](./img/d60958a821ce.png "点击放大")
 

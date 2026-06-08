@@ -2,9 +2,10 @@
 format: md
 title: "如何在Native侧直接使用其他模块的ArkTS方法"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-20
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-20
+last_sync: 2026-06-07
+sync_hash: caf66bfd
 ---
-
-
 **问题详情**
 
 在ArkTS侧已经定义了接口，但未实现对应的NDK接口。当使用C++代码实现业务逻辑时，可以直接使用已有的ArkTS接口。

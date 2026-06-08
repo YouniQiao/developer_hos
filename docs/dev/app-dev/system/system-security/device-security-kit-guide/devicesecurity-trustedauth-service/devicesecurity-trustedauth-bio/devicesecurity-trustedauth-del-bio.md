@@ -2,9 +2,10 @@
 title: "关闭指定生物类型认证能力"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-bio/devicesecurity-trustedauth-del-bio
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-bio/devicesecurity-trustedauth-del-bio
+last_sync: 2026-06-07
+sync_hash: cd6f0ca1
 ---
-
-
 ## 场景介绍
 
 当用户期望关闭指定生物特征认证能力时，可以通过指定已开通的生物特征信息，关闭指定的生物类型认证能力。

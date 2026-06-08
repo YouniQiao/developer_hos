@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "状态查询与订阅"
 original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_and_subscribe_status
 format: md
+upstream_id: dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_and_subscribe_status
+last_sync: 2026-06-07
+sync_hash: 6cfb50a6
 ---
-
-
 ![](./img/48644d18.png)
 
 该接口的调用需要在开发者联盟申请设备基础信息权限与穿戴用户状态权限（请参考[申请接入Wear Engine服务](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wearengine_preparation/wearengine_apply)），穿戴用户状态权限还需获得用户授权。

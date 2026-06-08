@@ -3,8 +3,10 @@ title: "多设备新闻阅读界面"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/multi-news-read
 format: md
+upstream_id: dev/app-dev/multi-device/multi-news-read
+last_sync: 2026-06-07
+sync_hash: c65e6ede
 ---
-
 # 多设备新闻阅读界面
 
 ## 概述

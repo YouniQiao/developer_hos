@@ -2,9 +2,10 @@
 format: md
 title: "如何通过PanGesture手势或者SwipeGesture手势实现自定义组件的惯性滚动效果"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-33
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-33
+last_sync: 2026-06-07
+sync_hash: 8fc9ec2f
 ---
-
-
 可以通过PanGesture绑定滑动手势事件，并使用[onActionEnd](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-gestures-pangesture#事件)回调里的[velocityY](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-gesture-common#gestureevent对象说明)字段生成离手惯性滚动动画。示例如下，具体滚动的速率可以通过调整参数达到预期效果。
 
 ```

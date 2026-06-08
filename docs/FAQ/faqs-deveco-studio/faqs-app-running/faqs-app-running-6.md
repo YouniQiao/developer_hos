@@ -2,9 +2,10 @@
 format: md
 title: "模拟器播放本地音频文件偶现卡顿"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-6
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-6
+last_sync: 2026-06-07
+sync_hash: 174a19f7
 ---
-
-
 **问题现象**
 
 在某些场景下，模拟器播放音频文件时可能出现卡顿。

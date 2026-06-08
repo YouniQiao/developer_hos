@@ -3,8 +3,10 @@ title: "创意数据"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-data-creative-0000001174557689
 format: md
+upstream_id: monetize/promotion/marketing-api-data-creative-0000001174557689
+last_sync: 2026-06-07
+sync_hash: be8668d3
 ---
-
 # 创意数据
 
 您通过本接口获取创意维度基本投放数据，包括花费、点击量、点击均价等。

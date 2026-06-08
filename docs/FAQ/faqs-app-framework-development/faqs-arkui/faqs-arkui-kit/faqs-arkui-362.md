@@ -2,8 +2,11 @@
 format: md
 title: "如何实现折叠屏折叠态不适配旋转，展示态适配旋转"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-362
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-362
+last_sync: 2026-06-07
+sync_hash: 46ae4cdb
+upstream_hash: 6c2e1b0d7e98
 ---
-
 
 1. 在module.json5添加属性"orientation": "unspecified"。
 

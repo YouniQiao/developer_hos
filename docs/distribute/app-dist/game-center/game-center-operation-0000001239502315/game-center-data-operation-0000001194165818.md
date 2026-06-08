@@ -2,6 +2,9 @@
 title: "数据运营"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-data-operation-0000001194165818
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-data-operation-0000001194165818
+last_sync: 2026-06-07
+sync_hash: cb8cd35e
 ---
 import MergeTable from "@site/src/components/MergeTable";
 

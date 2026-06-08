@@ -2,9 +2,10 @@
 title: "元服务内开启未成年人模式"
 original_url: /docs/dev/atomic-dev/account-follow-atomic-minorsprotection/account-atomic-turn-on-minorsprotection
 format: md
+upstream_id: dev/atomic-dev/account-follow-atomic-minorsprotection/account-atomic-turn-on-minorsprotection
+last_sync: 2026-06-07
+sync_hash: c7b903a3
 ---
-
-
 ## 场景介绍
 
 在元服务内增加引导开启系统未成年人模式的入口，当系统的未成年人模式未开启，可在元服务内开启系统未成年人模式。

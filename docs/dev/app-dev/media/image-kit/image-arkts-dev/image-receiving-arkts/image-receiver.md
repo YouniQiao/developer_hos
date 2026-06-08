@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用ImageReceiver完成图片接收"
 original_url: /docs/dev/app-dev/media/image-kit/image-arkts-dev/image-receiving-arkts/image-receiver
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-arkts-dev/image-receiving-arkts/image-receiver
+last_sync: 2026-06-07
+sync_hash: e402a47c
 ---
-
-
 图片接收类ImageReceiver用于获取组件SurfaceId，接收最新的图片和读取下一张图片，以及释放ImageReceiver实例。
 
 ![](./img/403f4a01.png)

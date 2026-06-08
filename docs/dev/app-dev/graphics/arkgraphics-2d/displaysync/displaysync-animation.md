@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "请求动画绘制帧率"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/displaysync/displaysync-animation
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/displaysync/displaysync-animation
+last_sync: 2026-06-07
+sync_hash: c9c9b680
 ---
-
-
 在应用开发中，[属性动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-animatorproperty)和[显式动画](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation)能够使用可选参数[ExpectedFrameRateRange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#expectedframeraterange11)，为不同的动画配置不同的期望绘制帧率。
 
 ## 请求属性动画的绘制帧率

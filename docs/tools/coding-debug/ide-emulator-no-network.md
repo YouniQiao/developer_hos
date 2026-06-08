@@ -3,9 +3,10 @@ title: "离线部署模拟器"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-emulator-no-network
 format: md
+upstream_id: tools/coding-debug/ide-emulator-no-network
+last_sync: 2026-06-07
+sync_hash: 6e4ae06e
 ---
-
-
 # 离线部署模拟器
 
 如果开发者所使用的电脑处于完全无网络的离线环境中，需要先在一台可访问网络的电脑上准备好DevEco Studio并下载模拟器镜像，将DevEco Studio和模拟器镜像文件拷贝到无网络电脑中。

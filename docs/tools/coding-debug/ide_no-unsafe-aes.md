@@ -3,8 +3,11 @@ title: "@security/no-unsafe-aes"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unsafe-aes
 format: md
+upstream_id: tools/coding-debug/ide_no-unsafe-aes
+last_sync: 2026-06-07
+sync_hash: e6126f7e
+upstream_hash: ccf865e9212a
 ---
-
 
 # @security/no-unsafe-aes
 

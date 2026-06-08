@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "高亮显示PDF文档"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-highlight
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-highlight
+last_sync: 2026-06-07
+sync_hash: 18cc0dba
 ---
-
-
 PDF文档在预览时，可以对页面的矩形区域或文本设置高亮显示，高亮颜色可以自定义。
 
 [setHighlightText](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#sethighlighttext)可以同时高亮多个不同的文本。

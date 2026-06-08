@@ -2,9 +2,10 @@
 format: md
 title: "如何让Grid组件在高度不确定的情况下，实现自适应高度"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-241
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-241
+last_sync: 2026-06-07
+sync_hash: bab74740
 ---
-
-
 **问题现象**
 
 页面中使用Grid组件，因为GridItem数量不固定，且不允许滚动，理想中Grid组件高度会被GridItem内容自动撑起，实际体验中发现：

@@ -2,9 +2,10 @@
 title: "元服务信息"
 original_url: /docs/dev/atomic-dev/ascf/apis-basis/apis-service-info
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-basis/apis-service-info
+last_sync: 2026-06-07
+sync_hash: 7a4843d8
 ---
-
-
 ## has.getServiceInfoSync
 
 has.getServiceInfoSync(): Object

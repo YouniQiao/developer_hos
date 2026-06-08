@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "HarmonyOS APK应用和HarmonyOS应用在一键登录场景下的用户数据如何互通"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-7
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-7
+last_sync: 2026-06-07
+sync_hash: 751ebeab
 ---
-
-
 终端设备从HarmonyOS 3.x/4.x（简称HarmonyOS）升级到HarmonyOS NEXT/5.0.x及之后版本（简称HarmonyOS NEXT）。
 
 1. HarmonyOS APK应用使用OpenID关联用户数据时，将用户数据关系切换成UnionID，具体切换指导可以参考：[通过OpenID获取UnionID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-get-unionid)。

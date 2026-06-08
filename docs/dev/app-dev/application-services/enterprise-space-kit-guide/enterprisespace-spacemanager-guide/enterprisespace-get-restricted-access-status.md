@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取系统服务进程不可访问的后台用户数据状态"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-get-restricted-access-status
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-get-restricted-access-status
+last_sync: 2026-06-07
+sync_hash: c91eb851
 ---
-
-
 ## 场景介绍
 
 从6.0.1(21)开始，支持获取系统服务进程不可访问的后台用户数据状态的能力。

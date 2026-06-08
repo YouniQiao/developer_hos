@@ -3,8 +3,9 @@ displayed_sidebar: appDevSidebar
 title: "添加卡券时商户服务器主要需要执行哪些步骤？"
 original_url: /docs/dev/app-dev/application-services/wallet-kit-guide/wallet-kit-faq/wallet-faq-5
 format: md
+upstream_id: dev/app-dev/application-services/wallet-kit-guide/wallet-kit-faq/wallet-faq-5
+last_sync: 2026-06-07
+sync_hash: 6b94244c
 ---
-
-
 1. 参考[钥匙开通](/docs/dev/app-dev/application-services/wallet-kit-guide/wallet-carkey/wallet-carkey-operation)推送模板数据至华为服务器。
 2. 用户点击“按钮”或“链接”时将实例加密成JWE数据后推送给华为服务器。

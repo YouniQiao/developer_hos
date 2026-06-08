@@ -2,10 +2,10 @@
 title: "加解密跨平台数据兼容性"
 original_url: /docs/security/cross-platform-compatibility
 format: md
+upstream_id: /docs/security/cross-platform-compatibility
+last_sync: 2026-06-07
+sync_hash: a45416dd
 ---
-
-
-
 # 加解密跨平台数据兼容性
 
 ## 概述

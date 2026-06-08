@@ -3,9 +3,10 @@ title: "@security/specified-interface-call-chain-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-specified-interface-call-chain-check
 format: md
+upstream_id: tools/coding-debug/ide-specified-interface-call-chain-check
+last_sync: 2026-06-07
+sync_hash: ad97aefe
 ---
-
-
 # @security/specified-interface-call-chain-check
 
 该规则旨在标识指定接口的调用链，方便接口管理，调用链最大数量为5000。

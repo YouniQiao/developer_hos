@@ -3,8 +3,10 @@ title: "素材制作规范"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-load-recall-specification-0000001417712349
 format: md
+upstream_id: monetize/promotion/bp-functions-load-recall-specification-0000001417712349
+last_sync: 2026-06-07
+sync_hash: 3bab997c
 ---
-
 # 素材制作规范
 
 卸载召回专区支持3个素材规格：图片、Gif、视频

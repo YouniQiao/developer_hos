@@ -2,9 +2,10 @@
 title: "配置AI功能声明"
 original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-ai-0000002485431261
 format: md
+upstream_id: distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-ai-0000002485431261
+last_sync: 2026-06-07
+sync_hash: aebece25
 ---
-
-
 按照法律法规要求，应用程序在上架或者上线审核时，应用程序服务提供者应说明是否提供人工智能生成合成服务。详细内容参见[人工智能生成合成内容标识常见问题](/docs/distribute/app-dist/app-market/x50000/x50111/x50111-10)。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。

@@ -3,8 +3,10 @@ title: "多设备适配屏幕差异"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-screen-diff
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi-device-screen-diff
+last_sync: 2026-06-07
+sync_hash: a490b31e
 ---
-
 # 多设备适配屏幕差异
 
 ## 概述

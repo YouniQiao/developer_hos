@@ -3,8 +3,10 @@ title: 滑动条
 sidebar_label: 滑动条
 original_url: /docs/design/components/selection-components/slider
 format: md
+upstream_id: design/components/selection-components/slider
+last_sync: 2026-06-07
+sync_hash: f24aad31
 ---
-
 # 滑动条
 
 滑动条是一种常见的移动端的进度控制类控件，用于在界面中选择一个数值或调节某个设置。它通常由一个长条形的轨道和一个可以沿轨道滑动的拖动块组成。拖动块的位置代表了当前选择的数值，滑动条可以是水平或垂直方向的。开发相关文档请参考 [Slider](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-slider) 文档。

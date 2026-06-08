@@ -3,8 +3,11 @@ title: "截屏"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-screenshot
 format: md
+upstream_id: tools/coding-debug/ide-screenshot
+last_sync: 2026-06-07
+sync_hash: eb44f0d0
+upstream_hash: 898627d29c77
 ---
-
 
 # 截屏
 

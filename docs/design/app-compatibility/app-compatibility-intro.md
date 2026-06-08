@@ -3,14 +3,15 @@ title: "关于应用兼容性的介绍"
 displayed_sidebar: appCompatibilitySidebar
 original_url: /docs/design/app-compatibility/app-compatibility-intro
 format: md
+upstream_id: design/app-compatibility/app-compatibility-intro
+last_sync: 2026-06-07
+sync_hash: a5c3da63
 ---
-
-
 # 关于应用兼容性的介绍
 
 HarmonyOS应用和元服务（为方便描述，下文简称为应用）的开发者通过开发套件所提供的HarmonyOS SDK进行功能开发，调用HarmonyOS SDK中的API来实现业务功能逻辑。终端用户从华为应用市场获取应用，并安装到终端设备的系统（即ROM）上，系统运行应用后将功能呈现给消费者。
 
-在这一流程中，开发应用时所使用的HarmonyOS SDK版本（简称SDK版本）、运行应用的设备ROM所搭载的API版本（可在HarmonyOS设备的“设置 > 点击设备名称 > 关于本机 > API版本”中查看）、以及应用中所定义的API/SDK版本兼容信息（如编译应用的SDK版本、应用运行的目标SDK版本、应用运行的最低SDK版本等，详见[影响应用兼容性的关键信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/app-compatibility-influence-factor)），共同决定了应用在现网不同设备上的运行情况。
+在这一流程中，开发应用时所使用的HarmonyOS SDK版本（简称SDK版本）、运行应用的设备ROM所搭载的API版本（可在HarmonyOS设备的“设置 > 点击设备名称 > 关于本机 > API版本”中查看）、以及应用中所定义的API/SDK版本兼容信息（如编译应用的SDK版本、应用运行的目标SDK版本、应用运行的最低SDK版本等，详见[影响应用兼容性的关键信息](/docs/design/app-compatibility/app-compatibility-influence-factor)），共同决定了应用在现网不同设备上的运行情况。
 
 这其中，对应用兼容性起到决定因素的是API版本。API版本是贯穿开发态和运行态非常关键的信息，也是HarmonyOS能力提供者和开发者之间的纽带。
 

@@ -2,9 +2,10 @@
 format: md
 title: "如何从数据库中获得特定类型的文件列表"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-7
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-7
+last_sync: 2026-06-07
+sync_hash: 8cdcd06f
 ---
-
-
 DataSharePredicates是开发者通过DataShare框架查询数据库中的数据所使用的筛选条件。它经常被应用在更新数据、删除数据和查询数据中。谓词的接口函数与数据库的筛选条件一一对应。
 
 **参考链接**

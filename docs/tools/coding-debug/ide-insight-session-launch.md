@@ -3,8 +3,11 @@ title: "Launch模板基本操作"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-insight-session-launch
 format: md
+upstream_id: tools/coding-debug/ide-insight-session-launch
+last_sync: 2026-06-07
+sync_hash: 78ceae62
+upstream_hash: 2df5850940c1
 ---
-
 
 # Launch模板基本操作
 

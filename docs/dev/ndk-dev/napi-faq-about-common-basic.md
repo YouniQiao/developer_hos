@@ -2,9 +2,10 @@
 title: "常见基本功能问题汇总"
 original_url: /docs/dev/ndk-dev/napi-faq-about-common-basic
 format: md
+upstream_id: dev/ndk-dev/napi-faq-about-common-basic
+last_sync: 2026-06-07
+sync_hash: f32a8a32
 ---
-
-
 ## 模块加载失败，报错信息显示Error message: is not callable.
 
 * 问题描述：

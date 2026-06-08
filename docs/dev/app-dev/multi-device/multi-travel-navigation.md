@@ -3,8 +3,10 @@ title: "多设备地图导航界面"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/multi-travel-navigation
 format: md
+upstream_id: dev/app-dev/multi-device/multi-travel-navigation
+last_sync: 2026-06-07
+sync_hash: 632439df
 ---
-
 # 多设备地图导航界面
 
 ## 概述

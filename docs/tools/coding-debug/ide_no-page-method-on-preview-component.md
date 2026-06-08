@@ -3,9 +3,10 @@ title: "@previewer/no-page-method-on-preview-component"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-page-method-on-preview-component
 format: md
+upstream_id: tools/coding-debug/ide_no-page-method-on-preview-component
+last_sync: 2026-06-07
+sync_hash: 6a7d1572
 ---
-
-
 # @previewer/no-page-method-on-preview-component
 
 禁止在非路由组件上实例化onPageShow、onPageHide、onBackPress等页面级方法。

@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "如何解决证书链不完整？"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-faq/iap-faq-14
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-faq/iap-faq-14
+last_sync: 2026-06-07
+sync_hash: 7795122f
+upstream_hash: 9691e6e6d5e6
 ---
-
 
 如果开发者提供的证书在IAP服务内置信任库中查询不到，则该证书不被IAP信任，需要构造完整的信任链以被IAP信任。
 

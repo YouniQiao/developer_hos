@@ -2,9 +2,10 @@
 title: "离开房间"
 original_url: /docs/dev/game-dev/games-gamemme-leaveroom-harmonyos-0000002393661677
 format: md
+upstream_id: dev/game-dev/games-gamemme-leaveroom-harmonyos-0000002393661677
+last_sync: 2026-06-07
+sync_hash: 43cd406c
 ---
-
-
 进入房间后，不论是否已进入游戏中，房间内玩家均可离开房间。
 
 ![](./img/cd63b8ce.png)

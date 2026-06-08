@@ -3,9 +3,10 @@ title: "数据区"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-profiler-data
 format: md
+upstream_id: tools/coding-debug/ide-profiler-data
+last_sync: 2026-06-07
+sync_hash: 848b24d2
 ---
-
-
 # 数据区
 
 在数据区域，DevEco Profiler提供了对性能数据的可视化呈现结果。由于每个场景化模板所提供的可视化能力各不相同，本章节对所有模板的通用能力展开介绍。

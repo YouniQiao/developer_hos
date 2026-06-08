@@ -2,9 +2,10 @@
 title: "图片"
 original_url: /docs/dev/atomic-dev/ascf/apis-media/apis-image
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-media/apis-image
+last_sync: 2026-06-07
+sync_hash: 61bc51eb
 ---
-
-
 ## has.saveImageToPhotosAlbum
 
 has.saveImageToPhotosAlbum(Object object)

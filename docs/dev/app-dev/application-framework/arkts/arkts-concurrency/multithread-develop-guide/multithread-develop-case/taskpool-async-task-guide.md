@@ -2,9 +2,10 @@
 title: "TaskPool指定任务并发度场景"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/taskpool-async-task-guide
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/taskpool-async-task-guide
+last_sync: 2026-06-07
+sync_hash: d287f411
 ---
-
-
 TaskPool支持使用异步队列来控制任务的并发度，能有效避免资源过载，减少任务阻塞，适用于网络请求、视频流处理和数据库操作等场景。
 
 此处提供使用TaskPool创建[异步队列](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-taskpool#asyncrunner18)的开发指导，以相机预览流采集数据处理的功能为例。

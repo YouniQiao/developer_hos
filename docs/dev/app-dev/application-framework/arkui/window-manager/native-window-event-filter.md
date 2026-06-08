@@ -2,9 +2,10 @@
 title: "使用WindowManager管理多模输入事件（C/C++）"
 original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/native-window-event-filter
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/window-manager/native-window-event-filter
+last_sync: 2026-06-07
+sync_hash: 417ec806
 ---
-
-
 ## 场景介绍
 
 [WindowManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-windowmanager)提供应用窗口的管理能力，可以用于管理多模输入事件。

@@ -3,8 +3,10 @@ title: 空白
 sidebar_label: 空白
 original_url: /docs/design/components/view-components/blank
 format: md
+upstream_id: design/components/view-components/blank
+last_sync: 2026-06-07
+sync_hash: 89cb4f9a
 ---
-
 # 空白
 
 空白填充组件，在容器主轴方向上，空白填充组件具有自动填充容器空余部分的能力。仅当父组件为 Row/Column/Flex 时生效。开发相关能力请参考 [Blank](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-blank) 文档。

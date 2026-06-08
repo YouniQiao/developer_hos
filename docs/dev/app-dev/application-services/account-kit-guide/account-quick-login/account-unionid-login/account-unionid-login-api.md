@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用自定义按钮登录"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-unionid-login/account-unionid-login-api
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-quick-login/account-unionid-login/account-unionid-login-api
+last_sync: 2026-06-07
+sync_hash: 69148b99
 ---
-
-
 ## 场景介绍
 
 应用应遵照[【华为账号登录】按钮](/docs/design/system-features/capabilities/huawei-id#section2624430102713)使用规则，在登录页面嵌入自定义华为账号登录按钮。当用户点击该按钮后，应用调用华为账号登录API获取Authorization Code，并通过服务端交互获取用户的UnionID、OpenID以完成登录。

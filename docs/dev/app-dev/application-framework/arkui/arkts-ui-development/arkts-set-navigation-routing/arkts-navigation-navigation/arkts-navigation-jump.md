@@ -2,9 +2,10 @@
 title: "Navigation页面路由"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-jump
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-jump
+last_sync: 2026-06-07
+sync_hash: e6075723
 ---
-
-
 [Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)路由相关操作均基于导航控制器[NavPathStack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#navpathstack10)提供的方法实现，每个Navigation都需要创建并传入一个NavPathStack对象，用于管理页面。NavPathStack主要提供了页面跳转、页面返回、页面替换、页面删除、参数获取、路由拦截等功能。
 
 在API version 9，Navigation需要配合[NavRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navrouter)组件实现页面路由。从API version 10开始，更推荐使用NavPathStack实现页面路由。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "自定义界面扫码预览画面出现拉伸"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-8
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-8
+last_sync: 2026-06-07
+sync_hash: 1309ee26
 ---
-
-
 **问题现象**
 
 [XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)的宽高比与自定义界面扫码接口中[ViewControl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scan-customscan-api#viewcontrol)的宽高比不一致，导致自定义界面扫码预览画面出现拉伸。

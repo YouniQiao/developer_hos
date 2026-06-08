@@ -2,9 +2,10 @@
 title: "音频规格"
 original_url: /docs/experience-suggestions/compatibility/system-features/audio-specification
 format: md
+upstream_id: experience-suggestions/compatibility/system-features/audio-specification
+last_sync: 2026-06-07
+sync_hash: e7061298
 ---
-
-
 # 音频规格
 
 ### 音频流类型与通路配置

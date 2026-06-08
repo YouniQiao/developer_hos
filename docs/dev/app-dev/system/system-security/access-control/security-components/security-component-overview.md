@@ -2,9 +2,10 @@
 title: "安全控件概述"
 original_url: /docs/dev/app-dev/system/system-security/access-control/security-components/security-component-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/access-control/security-components/security-component-overview
+last_sync: 2026-06-07
+sync_hash: 53714df8
 ---
-
-
 安全控件是系统提供的一组ArkUI基础组件，包括保存控件和粘贴控件。它们可以作为一种“特殊的按钮”融入应用页面，实现用户“点击即许可”的设计思路。
 
 相较于动态申请权限的方式，安全控件可基于场景化授权，简化开发者和用户的操作，主要优点有：

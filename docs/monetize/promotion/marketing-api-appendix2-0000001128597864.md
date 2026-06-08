@@ -3,8 +3,10 @@ title: "返回码"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-appendix2-0000001128597864
 format: md
+upstream_id: monetize/promotion/marketing-api-appendix2-0000001128597864
+last_sync: 2026-06-07
+sync_hash: 39092a92
 ---
-
 # 返回码
 
 | <strong>code</strong> | <strong>message</strong> | <strong>备注</strong> |

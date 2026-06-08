@@ -3,10 +3,10 @@ title: "快应用"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_quickapp-0000001316178670
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_quickapp-0000001316178670
+last_sync: 2026-06-07
+sync_hash: af1ce8e5
 ---
-
-
-
 * **[SDK接口的版本更新说明](/docs/monetize/monetization/agd_pro_sdk_quickapp_sdk-version-0000001316338170)**
 * **[典型应用场景](/docs/monetize/monetization/agd_pro_sdk_quickapp_scenario-0000001367666897)**
 * **[集成接入前准备](/docs/monetize/monetization/agd_pro_sdk_quickapp_prepare-0000001347615830)**

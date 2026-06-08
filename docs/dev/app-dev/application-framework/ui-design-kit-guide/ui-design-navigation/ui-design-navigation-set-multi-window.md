@@ -2,9 +2,10 @@
 title: "设置应用内多窗"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation/ui-design-navigation-set-multi-window
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation/ui-design-navigation-set-multi-window
+last_sync: 2026-06-07
+sync_hash: ec60510e
 ---
-
-
 ## 场景介绍
 
 从6.0.0(20)版本开始，新增支持应用内多窗。

@@ -2,9 +2,10 @@
 format: md
 title: "自定义组件间如何实现从底部滑入滑出的效果"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-179
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-179
+last_sync: 2026-06-07
+sync_hash: a37deb34
 ---
-
-
 **问题现象**
 
 页面底部默认显示自定义组件A。点击组件A，A消失，自定义组件B从底部出现。点击组件B，B消失，A从底部出现。如何实现这个效果？

@@ -2,9 +2,10 @@
 format: md
 title: "如何监听音频输出设备变更信息以作为应用处理自动暂停的依据"
 original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-17
+upstream_id: FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-17
+last_sync: 2026-06-07
+sync_hash: f48d8816
 ---
-
-
 **问题现象**
 
 使用audioRoutingManager.on('deviceChange')监听设备连接状态变化，导致正常播放时，应用无故自动暂停。

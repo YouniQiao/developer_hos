@@ -2,9 +2,10 @@
 title: "学习UI范式渲染控制"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control
+last_sync: 2026-06-07
+sync_hash: 8edfbf14
 ---
-
-
 * **[渲染控制概述](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-overview)**
 * **[if/else：条件渲染](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-ifelse)**
 * **[ForEach：循环渲染](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach)**

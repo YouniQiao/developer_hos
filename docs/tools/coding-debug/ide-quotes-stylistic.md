@@ -3,9 +3,10 @@ title: "@hw-stylistic/quotes"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-quotes-stylistic
 format: md
+upstream_id: tools/coding-debug/ide-quotes-stylistic
+last_sync: 2026-06-07
+sync_hash: cf915e85
 ---
-
-
 # @hw-stylistic/quotes
 
 强制字符串使用单引号。该规则仅检查.ets文件类型。

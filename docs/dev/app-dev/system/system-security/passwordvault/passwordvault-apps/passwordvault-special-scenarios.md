@@ -2,9 +2,10 @@
 title: "系统可适配的场景"
 original_url: /docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-special-scenarios
 format: md
+upstream_id: dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-special-scenarios
+last_sync: 2026-06-07
+sync_hash: d4e2d85e
 ---
-
-
 考虑到实际场景的多样性，除了上述接入示例中的场景外，密码保险箱针对部分场景的非标准场景进行了适配，可支持使用邮箱、手机号作为用户名登录、注册的场景。
 
 当页面上存在一个Password/NEW\_PASSWORD类型输入框，且页面上同时存在USER\_NAME、Email、PhoneNumber类型输入框中的一种时，会正常触发密码保险箱保存和填充的能力。

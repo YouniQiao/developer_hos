@@ -2,9 +2,10 @@
 title: "查询测试群组邀请码"
 original_url: /docs/distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-get-invite-code-0000002271160669
 format: md
+upstream_id: distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-get-invite-code-0000002271160669
+last_sync: 2026-06-07
+sync_hash: 4de0a30d
 ---
-
-
 #### 功能介绍
 
 此接口用于邀请测试查询测试群组邀请码信息。

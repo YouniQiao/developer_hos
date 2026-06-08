@@ -2,9 +2,10 @@
 format: md
 title: "napi_call_function调用时除了会有pending exception外，是否还有其他异常场景"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-69
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-69
+last_sync: 2026-06-07
+sync_hash: e1dd04db
 ---
-
-
 调用NAPI接口时可能会产生异常，因此在业务的关键流程中需要对接口调用的结果进行判断，以检查是否出现异常。例如：
 
 ```

@@ -2,9 +2,10 @@
 title: "应用UI进程空跑问题分析"
 original_url: /docs/quality/ui-skip-analysis
 format: md
+upstream_id: /docs/quality/ui-skip-analysis
+last_sync: 2026-06-07
+sync_hash: 936ad293
 ---
-
-
 # 应用UI进程空跑问题分析
 
 ## 应用UI进程空跑介绍

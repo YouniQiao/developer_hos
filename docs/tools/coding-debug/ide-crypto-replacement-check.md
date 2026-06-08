@@ -3,9 +3,10 @@ title: "@performance/crypto-replacement-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-crypto-replacement-check
 format: md
+upstream_id: tools/coding-debug/ide-crypto-replacement-check
+last_sync: 2026-06-07
+sync_hash: 4a165d65
 ---
-
-
 # @performance/crypto-replacement-check
 
 对于三方库@ohos/crypto-js所提供的大部分接口，SDK中若有对应的系统原生实现（@ohos.security.cryptoFramework），建议使用系统原生接口。

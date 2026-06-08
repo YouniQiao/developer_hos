@@ -2,9 +2,10 @@
 title: "AgentExtensionAbility配置文件说明"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/agent/agent-extension-configuration
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/agent/agent-extension-configuration
+last_sync: 2026-06-07
+sync_hash: 1db8df3e
 ---
-
-
 [AgentCard](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-agentcard)作为Agent的“名片”，主要用于描述Agent的能力。AgentCard的详细配置信息需要通过agent\_config.json配置文件来承载。
 
 该配置文件由开发者手动创建，通常位于Module的resources/base/profile/目录下。AgentExtensionAbility可以在metadata配置项中引用该资源文件，来绑定对应的AgentCard。一个agent\_config.json只能被一个AgentExtensionAbility引用。

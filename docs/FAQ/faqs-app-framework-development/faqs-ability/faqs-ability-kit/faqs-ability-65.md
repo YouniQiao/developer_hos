@@ -2,9 +2,10 @@
 format: md
 title: "UIAbility和UIExtensionAbility有什么区别？分别推荐在什么场景使用"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-65
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-65
+last_sync: 2026-06-07
+sync_hash: 0b7a67d4
 ---
-
-
 UIAbility 用于实现独立界面，UIExtensionAbility 用于功能扩展。
 
 * UIAbility组件包含UI，用于与用户交互。UIAbility运行时，任务列表中会显示对应的任务视图。建议在主界面、视频播放页、设置页面等场景下使用。

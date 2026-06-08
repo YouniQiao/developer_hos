@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "朗读控件"
 original_url: /docs/dev/app-dev/ai/speech-kit-guide/speech-textreader-guide
 format: md
+upstream_id: dev/app-dev/ai/speech-kit-guide/speech-textreader-guide
+last_sync: 2026-06-07
+sync_hash: ad7a3484
 ---
-
-
 ## 适用场景
 
 朗读控件应用广泛，例如在用户不方便或者无法查看屏幕文字的时候，为用户朗读新闻，提供资讯。

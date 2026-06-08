@@ -3,9 +3,10 @@ title: "@version"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-arktsdoc-version
 format: md
+upstream_id: tools/coding-debug/ide-arktsdoc-version
+last_sync: 2026-06-07
+sync_hash: 38a61992
 ---
-
-
 # @version
 
 @version标签用于记录项目的版本。

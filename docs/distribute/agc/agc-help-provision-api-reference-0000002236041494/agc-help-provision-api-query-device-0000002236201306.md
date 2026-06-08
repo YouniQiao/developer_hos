@@ -2,9 +2,10 @@
 title: "查询设备列表"
 original_url: /docs/distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-query-device-0000002236201306
 format: md
+upstream_id: distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-query-device-0000002236201306
+last_sync: 2026-06-07
+sync_hash: 96195af2
 ---
-
-
 #### 功能介绍
 
 此接口用于查询当前设备的信息。

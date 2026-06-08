@@ -2,9 +2,10 @@
 title: "应用被查杀问题检测方法"
 original_url: /docs/quality/stability-runtime-appkilled-detection
 format: md
+upstream_id: /docs/quality/stability-runtime-appkilled-detection
+last_sync: 2026-06-07
+sync_hash: 9433e244
 ---
-
-
 # 应用被查杀问题检测方法
 
 ## 概述

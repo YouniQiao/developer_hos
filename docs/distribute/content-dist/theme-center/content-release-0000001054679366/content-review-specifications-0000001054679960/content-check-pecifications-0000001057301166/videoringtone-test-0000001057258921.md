@@ -2,8 +2,10 @@
 title: "视频铃声"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/videoringtone-test-0000001057258921
+upstream_id: distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/videoringtone-test-0000001057258921
+last_sync: 2026-06-07
+sync_hash: 5991c5c4
 ---
-
 # 视频铃声
 
 ## 1. 界面检视

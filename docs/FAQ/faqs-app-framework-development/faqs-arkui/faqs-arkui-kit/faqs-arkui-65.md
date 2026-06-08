@@ -2,9 +2,10 @@
 format: md
 title: "SideBarContainer如何设置controlButton属性"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-65
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-65
+last_sync: 2026-06-07
+sync_hash: 20be3c06
 ---
-
-
 SideBarContainer组件提供侧边栏显示和隐藏功能。通过controlButton属性设置侧边栏控制按钮。参考代码如下：
 
 ```

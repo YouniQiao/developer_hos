@@ -3,9 +3,10 @@ title: "@performance/update-state-var-between-animatetos-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-update-state-var-between-animatetos-check
 format: md
+upstream_id: tools/coding-debug/ide-update-state-var-between-animatetos-check
+last_sync: 2026-06-07
+sync_hash: 218e9e08
 ---
-
-
 # @performance/update-state-var-between-animatetos-check
 
 如果多个animateTo之间存在状态更新，会导致执行下一个animateTo之前又存在需要更新的脏节点，可能造成冗余更新。因此不建议在两次animateTo之间进行状态变量更新。

@@ -2,7 +2,8 @@
 format: md
 title: "hdc shell命令是否支持schema uri模拟跳转"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-39
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-39
+last_sync: 2026-06-07
+sync_hash: 2bbd1f61
 ---
-
-
 不支持使用hdc shell命令根据schema uri进行模拟跳转。

@@ -2,9 +2,10 @@
 format: md
 title: "签名证书文件解析错误"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-14
+upstream_id: FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-14
+last_sync: 2026-06-07
+sync_hash: 15945030
 ---
-
-
 **问题现象**
 
 打包签名提示“**DerValue.getOID, not an OID 49 Detail: Please check the message from tools**”错误。

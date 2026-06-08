@@ -3,9 +3,10 @@ title: "@typescript-eslint/return-await"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_return-await
 format: md
+upstream_id: tools/coding-debug/ide_return-await
+last_sync: 2026-06-07
+sync_hash: 124e23dd
 ---
-
-
 # @typescript-eslint/return-await
 
 要求异步函数返回“await”。

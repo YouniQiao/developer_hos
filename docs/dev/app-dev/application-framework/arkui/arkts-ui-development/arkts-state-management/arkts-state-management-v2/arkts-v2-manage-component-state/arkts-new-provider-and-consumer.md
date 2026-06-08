@@ -2,9 +2,10 @@
 title: "@Provider装饰器和@Consumer装饰器：跨组件层级双向同步"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-provider-and-consumer
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-provider-and-consumer
+last_sync: 2026-06-07
+sync_hash: 42f06972
 ---
-
-
 @Provider和@Consumer用于跨组件层级数据双向同步，可以使得开发者不用拘泥于组件层级。
 
 @Provider和@Consumer属于状态管理V2装饰器，所以只能在@ComponentV2中才能使用，在@Component中使用会编译报错。

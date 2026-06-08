@@ -2,14 +2,15 @@
 title: "仅MDM应用可用权限"
 original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-mdm-apps
 format: md
+upstream_id: dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-mdm-apps
+last_sync: 2026-06-07
+sync_hash: de07e8d6
 ---
-
-
 以下权限仅对MDM（Mobile Device Management）设备管理应用开放。MDM应用的详细介绍，请参考[MDM Kit简介](/docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-intro)。
 
 ![](./img/099c110a.png)
 
-以下权限不支持自动签名，因此在调试和发布阶段，均需参照[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)的步骤，完成手动签名。
+以下权限不支持自动签名，因此在调试和发布阶段，均需参照[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)的步骤，完成手动签名。
 
 ## ohos.permission.ENTERPRISE\_GET\_DEVICE\_INFO
 

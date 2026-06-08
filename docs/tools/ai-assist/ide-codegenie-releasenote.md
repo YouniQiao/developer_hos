@@ -3,9 +3,10 @@ title: "版本说明"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-codegenie-releasenote
 format: md
+upstream_id: tools/ai-assist/ide-codegenie-releasenote
+last_sync: 2026-06-07
+sync_hash: 1c39abea
 ---
-
-
 # 版本说明
 
 ## 6.1.0.830

@@ -2,9 +2,10 @@
 title: "本地调试"
 original_url: /docs/dev/game-dev/gameobe-local-debugging-realtime-server-0000002395350541
 format: md
+upstream_id: dev/game-dev/gameobe-local-debugging-realtime-server-0000002395350541
+last_sync: 2026-06-07
+sync_hash: 20cdfe44
 ---
-
-
 实时服务器支持本地调试模式，建议您先在本地完成代码调试，再部署到现网生产环境。
 
 ![](./img/2b3c91d3.png)

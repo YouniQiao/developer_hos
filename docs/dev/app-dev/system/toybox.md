@@ -2,9 +2,10 @@
 title: "toybox"
 original_url: /docs/dev/app-dev/system/toybox
 format: md
+upstream_id: dev/app-dev/system/toybox
+last_sync: 2026-06-07
+sync_hash: fe885d57
 ---
-
-
 toybox 是一个轻量级的Linux命令行工具集合，它将常用的Linux命令行工具合并到一个单独的可执行文件中。
 
 ## 前置条件

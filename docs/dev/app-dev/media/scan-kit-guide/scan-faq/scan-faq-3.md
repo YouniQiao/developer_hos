@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Scan Kit无法识别多个码图"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-3
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-3
+last_sync: 2026-06-07
+sync_hash: c11a9543
 ---
-
-
 **问题现象**
 
 实时扫描多个码图时，只返回一个码图结果。

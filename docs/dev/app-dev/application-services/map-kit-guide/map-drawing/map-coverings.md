@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "覆盖物"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-coverings
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-drawing/map-coverings
+last_sync: 2026-06-07
+sync_hash: aa1f3519
 ---
-
-
 ## 场景介绍
 
 地图覆盖物是固定在地图上的图片，本章节将向您介绍如何为地图增加覆盖物。

@@ -2,9 +2,10 @@
 title: "分享"
 original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-share
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-open-apis/apis-share
+last_sync: 2026-06-07
+sync_hash: 994c6927
 ---
-
-
 ## has.showShareMenu
 
 has.showShareMenu(Object object)

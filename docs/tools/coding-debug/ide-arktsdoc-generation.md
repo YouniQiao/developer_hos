@@ -3,9 +3,10 @@ title: "文档生成"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-arktsdoc-generation
 format: md
+upstream_id: tools/coding-debug/ide-arktsdoc-generation
+last_sync: 2026-06-07
+sync_hash: 09626201
 ---
-
-
 # 文档生成
 
 DevEco Studio支持通过Generate ArkTSDoc功能，将代码文件中变量、方法、接口、类等需要对外暴露的信息快速生成相应的参考文档。

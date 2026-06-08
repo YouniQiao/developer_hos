@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "为通知添加自定义铃声"
 original_url: /docs/dev/app-dev/application-services/notification-kit/publish-notification/notification-customized-ringtone
 format: md
+upstream_id: dev/app-dev/application-services/notification-kit/publish-notification/notification-customized-ringtone
+last_sync: 2026-06-07
+sync_hash: 3fa17dd1
 ---
-
-
 从API version 12开始，应用发布通知时，可以使用自定义的通知铃声，该铃声的音频资源需要预置在应用中。从API version 24开始，系统增强了该字段的能力，应用可以使用非预置的音频资源作为通知铃声，比如从网络下载或者用户生成的音频资源。
 
 ## 接口说明

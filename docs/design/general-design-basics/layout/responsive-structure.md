@@ -3,8 +3,10 @@ title: 响应式应用架构
 sidebar_label: 响应式应用架构
 original_url: /docs/design/general-design-basics/layout/responsive-structure
 format: md
+upstream_id: design/general-design-basics/layout/responsive-structure
+last_sync: 2026-06-07
+sync_hash: f51c7b77
 ---
-
 # 响应式应用架构
 
 响应式布局方法也用于应用导航，当应用窗口发生变化时，应用导航方式也会随着窗口达到对应断点值而发生变化，通过导航方式的调整提高交互的易用性。

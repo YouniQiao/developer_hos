@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "秒级启动后，游戏出现类似UIContent is nullptr报错导致登录等异常，应该如何排查"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-7
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-7
+last_sync: 2026-06-07
+sync_hash: d68e6c60
 ---
-
-
 ![](./img/371f8f9f.png)
 
 该报错通常是由于游戏在秒级启动后未重新获取并更新[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext)，导致后续逻辑仍使用旧的Context对象。当[UIAbility](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability)被重新创建时，如果相关模块或三方SDK继续使用旧的UIAbilityContext，可能会导致接口调用异常、资源访问失败或SDK功能异常。

@@ -3,9 +3,10 @@ title: "ohpm list错误码"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/errorcode/ide-ohpm-list-errorcode
 format: md
+upstream_id: tools/ohpm/errorcode/ide-ohpm-list-errorcode
+last_sync: 2026-06-07
+sync_hash: 3f9f07bf
 ---
-
-
 # ohpm list错误码
 
 ## 00622014 parameterFile配置问题

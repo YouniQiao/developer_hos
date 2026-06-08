@@ -2,9 +2,10 @@
 title: "获取服务端授权"
 original_url: /docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661
 format: md
+upstream_id: distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-obtain-server-auth-0000002271134661
+last_sync: 2026-06-07
+sync_hash: 4972ba87
 ---
-
-
 要发起一个基本的AppGallery Connect API调用，您需要先获得AppGallery Connect服务端的授权。目前您可以通过以下方式获得授权：
 
 * **[（推荐）Service Account方式](#section104621343151212)**

@@ -2,9 +2,10 @@
 title: "获取指定房间信息"
 original_url: /docs/dev/game-dev/games-gamemme-getroom-csharp-0000002393266925
 format: md
+upstream_id: dev/game-dev/games-gamemme-getroom-csharp-0000002393266925
+last_sync: 2026-06-07
+sync_hash: 8ba93902
 ---
-
-
 进入语音房间后，您可通过获取全部房间信息，实现房间信息页面展示功能。如需实现定时刷新房间信息功能，可自行通过轮询调用接口实现。
 
 ## 前提条件

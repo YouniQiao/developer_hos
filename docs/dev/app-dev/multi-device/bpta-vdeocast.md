@@ -3,8 +3,10 @@ title: "视频投播"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-vdeocast
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-vdeocast
+last_sync: 2026-06-07
+sync_hash: 1897ff85
 ---
-
 # 视频投播
 
 ## 概述

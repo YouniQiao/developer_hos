@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口进行函数创建和调用"
 original_url: /docs/dev/ndk-dev/use-jsvm-function-call
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-function-call
+last_sync: 2026-06-07
+sync_hash: 14c84df1
 ---
-
-
 ## 简介
 
 函数调用允许开发者从JSVM模块中调用JavaScript函数，并传参，或者直接在JSVM模块中创建一个JavaScript函数。

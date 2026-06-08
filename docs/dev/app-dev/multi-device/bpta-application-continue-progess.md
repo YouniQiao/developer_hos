@@ -3,8 +3,10 @@ title: "常见接续最佳实践"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-application-continue-progess
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-application-continue-progess
+last_sync: 2026-06-07
+sync_hash: 9b188223
 ---
-
 # 常见接续最佳实践
 
 ## 概述

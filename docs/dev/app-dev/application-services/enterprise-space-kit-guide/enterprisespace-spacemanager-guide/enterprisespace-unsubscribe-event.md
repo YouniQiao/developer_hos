@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "取消订阅空间事件"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-unsubscribe-event
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-unsubscribe-event
+last_sync: 2026-06-07
+sync_hash: b0439b9b
 ---
-
-
 ## 场景介绍
 
 Enterprise Space Kit为应用提供取消订阅空间事件的能力，支持应用在特定场景下灵活管理空间事件的订阅状态。例如，当应用需要关闭、某个功能模块不再使用时，可通过调用该方法主动取消对特定空间事件的订阅。

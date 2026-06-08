@@ -2,9 +2,10 @@
 format: md
 title: "如何对相册图片进行编辑裁剪"
 original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-7
+upstream_id: FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-7
+last_sync: 2026-06-07
+sync_hash: d94abd43
 ---
-
-
 可以通过[图片处理](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-image)模块的[pixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)方法对图片进行编辑裁剪。
 
 其中包括但不限于：

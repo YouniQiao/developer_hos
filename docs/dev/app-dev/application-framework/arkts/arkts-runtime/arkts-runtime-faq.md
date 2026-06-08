@@ -2,9 +2,10 @@
 title: "ArkTS运行时常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-faq
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-faq
+last_sync: 2026-06-07
+sync_hash: b3da557f
 ---
-
-
 ## 正则运算与预期输出结果不一致场景
 
 如果使用正则运算时结果与期望不符，请检查以下场景。

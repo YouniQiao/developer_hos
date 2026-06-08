@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "订阅阻断类事件"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-audit/devicesecurity-audit-subscribe-arkts/devicesecurity-audit-subscribe-arkts-auth
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-audit/devicesecurity-audit-subscribe-arkts/devicesecurity-audit-subscribe-arkts-auth
+last_sync: 2026-06-07
+sync_hash: 6a46c278
 ---
-
-
 ## 场景介绍
 
 从6.0.0(20) 开始，新增提供统一的安全审计数据多客户端订阅/取消订阅、添加/删除过滤条件、阻断接口，应用可以获取设备上的安全审计数据（如下表），并按需进行订阅、过滤与阻断，以支撑审计相关业务。

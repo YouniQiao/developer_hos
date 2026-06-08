@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "展示数字商品"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-distribute/store-iap-distribute-query
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-distribute/store-iap-distribute-query
+last_sync: 2026-06-07
+sync_hash: eae67edd
+upstream_hash: 259dcf8a3a45
 ---
-
 
 数字商品服务为接入消耗型/非消耗型、非续期订阅商品、自动续期订阅商品购买能力的应用提供向用户展示可供购买的商品信息列表的能力。
 

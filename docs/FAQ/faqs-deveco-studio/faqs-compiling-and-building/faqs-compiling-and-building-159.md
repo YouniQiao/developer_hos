@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“The reason attribute are mandatory for user_grant permissions.”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-159
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-159
+last_sync: 2026-06-07
+sync_hash: 30937d74
 ---
-
-
 **错误描述**
 
 针对Har和Hsp模块，配置user\_grant权限时必须包含reason属性。

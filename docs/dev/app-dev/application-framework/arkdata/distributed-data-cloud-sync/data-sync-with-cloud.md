@@ -2,9 +2,10 @@
 title: "端云数据同步云侧环境部署指导"
 original_url: /docs/dev/app-dev/application-framework/arkdata/distributed-data-cloud-sync/data-sync-with-cloud
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/distributed-data-cloud-sync/data-sync-with-cloud
+last_sync: 2026-06-07
+sync_hash: 5a716bf5
 ---
-
-
 ## 场景介绍
 
 通过数据云同步功能，可将数据自动、及时存储至华为云空间，并在登录同一华为账号的设备间保持同步。该功能常用于满足以下体验诉求：

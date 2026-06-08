@@ -2,8 +2,11 @@
 format: md
 title: "如何使HSP包版本号统一"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-34
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-34
+last_sync: 2026-06-07
+sync_hash: c2ed8f32
+upstream_hash: 51ba1e047019
 ---
-
 
 **问题场景**
 

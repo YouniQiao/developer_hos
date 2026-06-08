@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "模拟点击增强检测"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-brid-develop/devicesecurity-detectsimulatedclickriskenhanced
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-brid-develop/devicesecurity-detectsimulatedclickriskenhanced
+last_sync: 2026-06-07
+sync_hash: 9fb82608
 ---
-
-
 ## 场景介绍
 
 从6.0.2(22) 版本开始，新增支持模拟点击增强检测。

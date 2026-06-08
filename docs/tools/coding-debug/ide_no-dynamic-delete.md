@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-dynamic-delete"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-dynamic-delete
 format: md
+upstream_id: tools/coding-debug/ide_no-dynamic-delete
+last_sync: 2026-06-07
+sync_hash: 605349ea
 ---
-
-
 # @typescript-eslint/no-dynamic-delete
 
 不允许在computed key表达式上使用“delete”运算符。

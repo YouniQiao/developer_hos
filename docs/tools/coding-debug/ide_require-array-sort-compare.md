@@ -3,9 +3,10 @@ title: "@typescript-eslint/require-array-sort-compare"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_require-array-sort-compare
 format: md
+upstream_id: tools/coding-debug/ide_require-array-sort-compare
+last_sync: 2026-06-07
+sync_hash: a0814cd9
 ---
-
-
 # @typescript-eslint/require-array-sort-compare
 
 要求调用“Array#sort”时，始终提供“compareFunction”。

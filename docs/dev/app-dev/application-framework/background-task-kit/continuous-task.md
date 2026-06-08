@@ -2,9 +2,10 @@
 title: "长时任务(ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/background-task-kit/continuous-task
 format: md
+upstream_id: dev/app-dev/application-framework/background-task-kit/continuous-task
+last_sync: 2026-06-07
+sync_hash: c15b6927
 ---
-
-
 ## 概述
 
 ### 功能介绍

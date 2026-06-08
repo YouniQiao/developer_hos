@@ -2,9 +2,10 @@
 title: "使用AppServiceExtensionAbility组件实现后台服务"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview/app-service-extension-ability
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview/app-service-extension-ability
+last_sync: 2026-06-07
+sync_hash: 0c10893f
 ---
-
-
 ## 概述
 
 从API version 20开始，支持开发者使用[AppServiceExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-appserviceextensionability)组件，为应用提供后台服务能力，其他三方应用可通过启动或连接该AppServiceExtensionAbility组件获取相应的服务。

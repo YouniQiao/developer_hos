@@ -3,8 +3,10 @@ title: "BidDetail"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-biddetail-0000001181826449
 format: md
+upstream_id: monetize/promotion/marketapi-modle-biddetail-0000001181826449
+last_sync: 2026-06-07
+sync_hash: 109f9564
 ---
-
 # BidDetail
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |

@@ -2,8 +2,10 @@
 title: "精品栏目推荐"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/top-quality-category-recommendation-0000001054359347
+upstream_id: distribute/content-dist/theme-center/top-quality-category-recommendation-0000001054359347
+last_sync: 2026-06-07
+sync_hash: 255cdd06
 ---
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # 精品栏目推荐

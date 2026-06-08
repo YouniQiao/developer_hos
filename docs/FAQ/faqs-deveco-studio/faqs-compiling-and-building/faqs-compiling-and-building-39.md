@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“Only one default card can be configured in the form_config.json file”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-39
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-39
+last_sync: 2026-06-07
+sync_hash: 01a8b0ad
 ---
-
-
 **问题现象**
 
 DevEco Studio编译失败。提示：Only one default card can be configured in the form\_config.json file。

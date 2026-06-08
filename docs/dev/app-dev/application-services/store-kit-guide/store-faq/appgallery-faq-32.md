@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "应用内快捷方式加桌返回401错误码"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/appgallery-faq-32
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-faq/appgallery-faq-32
+last_sync: 2026-06-07
+sync_hash: 9d119130
+upstream_hash: e42989025380
 ---
-
 
 **问题现象**
 

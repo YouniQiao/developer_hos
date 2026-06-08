@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "应用内开启未成年人模式"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-minorsprotection/account-follow-minorsprotection/account-app-turn-on-minorsprotection
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-minorsprotection/account-follow-minorsprotection/account-app-turn-on-minorsprotection
+last_sync: 2026-06-07
+sync_hash: 8fc04353
 ---
-
-
 ## 场景介绍
 
 在应用内提供引导开启系统未成年人模式的入口，当系统未成年人模式未开启时，可调用接口[leadToTurnOnMinorsMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection#leadtoturnonminorsmode)引导用户设置家长身份验证密码，以开启系统未成年人模式。

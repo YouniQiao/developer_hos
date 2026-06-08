@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "发放数字商品权益"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-distribute/store-iap-distribute-delivering
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-distribute/store-iap-distribute-delivering
+last_sync: 2026-06-07
+sync_hash: 06483ac1
 ---
-
-
 ## 场景介绍
 
 * 消耗型商品

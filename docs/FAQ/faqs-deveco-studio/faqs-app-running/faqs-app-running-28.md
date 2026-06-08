@@ -2,8 +2,11 @@
 format: md
 title: "在应用中如何区分真机和模拟器"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-28
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-28
+last_sync: 2026-06-07
+sync_hash: 6ea8fc68
+upstream_hash: 4fc2eb6bc4ce
 ---
-
 
 **问题现象**
 

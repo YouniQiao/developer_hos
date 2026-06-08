@@ -3,9 +3,10 @@ title: "debug启动调试"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-arkts-debug
 format: md
+upstream_id: tools/coding-debug/ide-debug-arkts-debug
+last_sync: 2026-06-07
+sync_hash: 40defe5d
 ---
-
-
 # debug启动调试
 
 可以按照如下方式启动调试会话。

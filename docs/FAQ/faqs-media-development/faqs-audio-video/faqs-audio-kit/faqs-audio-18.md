@@ -2,9 +2,10 @@
 format: md
 title: "如何在录制采集音频时获取麦克风的音量大小"
 original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-18
+upstream_id: FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-18
+last_sync: 2026-06-07
+sync_hash: 098fa5ff
 ---
-
-
 **问题现象**
 
 使用AVRecorder或者AudioCapturer录制音频时，如何实时获取麦克风的音量大小。

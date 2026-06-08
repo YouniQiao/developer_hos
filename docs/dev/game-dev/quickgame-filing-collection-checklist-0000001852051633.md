@@ -2,9 +2,10 @@
 title: "个人信息收集清单"
 original_url: /docs/dev/game-dev/quickgame-filing-collection-checklist-0000001852051633
 format: md
+upstream_id: dev/game-dev/quickgame-filing-collection-checklist-0000001852051633
+last_sync: 2026-06-07
+sync_hash: 8ef7b61d
 ---
-
-
 华为（以下简称“我们”）会严格遵从国家的法律法规要求，将合法合规融入产品设计和业务流程中，并采用业界先进的安全技术保证数据安全。同时我们非常重视您的个人信息和隐私保护，致力于捍卫每个人的隐私权利，为此我们坚持隐私保护5个基本原则：
 
 * 数据最小化：坚持仅采集实现业务功能所必须的个人数据，以服务于您的需求。

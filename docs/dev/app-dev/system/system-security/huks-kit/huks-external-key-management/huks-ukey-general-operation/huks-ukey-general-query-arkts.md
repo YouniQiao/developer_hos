@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通用查询(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-general-operation/huks-ukey-general-query-arkts
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-general-operation/huks-ukey-general-query-arkts
+last_sync: 2026-06-07
+sync_hash: 9ab3c6d4
 ---
-
-
 从API 22开始，huksExternalCrypto提供通用查询功能接口。该接口可以用于从UKey中获取设备标识、App标识以及其他通用属性信息，完成属性查询操作。具体的场景介绍请参考[获取属性介绍及规格](/docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-general-operation/huks-ukey-general-query-overview)。
 
 ## 开发步骤

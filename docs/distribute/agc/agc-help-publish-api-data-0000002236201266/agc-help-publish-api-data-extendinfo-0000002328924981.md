@@ -2,9 +2,10 @@
 title: "ExtendInfo"
 original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-extendinfo-0000002328924981
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-extendinfo-0000002328924981
+last_sync: 2026-06-07
+sync_hash: d5fa32e8
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | contactInfo | O | [ContactInfo](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-contactinfo-0000002328805225) | 联系方式详情。 |

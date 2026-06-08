@@ -2,9 +2,10 @@
 title: "图片解码"
 original_url: /docs/dev/atomic-dev/atomic-image-development/atomic-image-decoding
 format: md
+upstream_id: dev/atomic-dev/atomic-image-development/atomic-image-decoding
+last_sync: 2026-06-07
+sync_hash: 99087928
 ---
-
-
 图片解码指将所支持格式的图片文件解码成PixelMap，以便在应用或系统中显示或处理图片。当前支持的图片文件格式包括JPEG、PNG、GIF、WebP、BMP、SVG、ICO、DNG、HEIF。不同硬件设备的支持情况可能不同 。
 
 ## 开发步骤

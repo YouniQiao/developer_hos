@@ -2,9 +2,10 @@
 format: md
 title: "如何在ArkTS使用Reflect正确绑定this指针"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-113
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-113
+last_sync: 2026-06-07
+sync_hash: ffa60f99
 ---
-
-
 参考以下示例代码，注意只有对象的get/set方法才能绑定this指针。
 
 ```

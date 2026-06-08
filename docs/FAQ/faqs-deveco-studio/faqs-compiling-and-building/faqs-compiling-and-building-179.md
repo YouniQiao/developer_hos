@@ -2,9 +2,10 @@
 format: md
 title: "在.ts文件中使用“import { export } from 'xxx.so';”方式导入.so文件编译告警：“Currently module for 'xxx.so' is not verified. ”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-179
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-179
+last_sync: 2026-06-07
+sync_hash: a05b4bc7
 ---
-
-
 **问题现象**
 
 在.ts文件中，按照编辑器修复建议使用“import \{ export \} from 'xxx.so';”的方式导入.so文件后，编译告警（Currently module for 'xxx.so' is not verified. If you're importing napi, its verification will be enabled in later SDK version. Please make sure the corresponding .d.ts file is provided and the napis are correctly declared.）并出现相关类型报错。

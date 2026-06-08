@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "证书扩展信息对象的创建、解析和校验"
 original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-parse-verify-certextension-object
 format: md
+upstream_id: dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-parse-verify-certextension-object
+last_sync: 2026-06-07
+sync_hash: 1606d6d0
 ---
-
-
 以获取证书指定OID域段，并判断是否为CA证书为例，完成证书扩展信息对象的创建、解析和校验。
 
 ## 开发步骤

@@ -2,9 +2,10 @@
 title: "使用元服务链接跳转元服务"
 original_url: /docs/dev/atomic-dev/atomic-linking/atomic-applinking
 format: md
+upstream_id: dev/atomic-dev/atomic-linking/atomic-applinking
+last_sync: 2026-06-07
+sync_hash: 5ac555d0
 ---
-
-
 ## 简介
 
 元服务链接是专为元服务开发者设计的密文URL服务，可以直达元服务任意页面。作为开发者，您可以为自己的元服务生成并配置专属的元服务链接，同时设置其有效期，精准把握用户访问的时效与范围，将用户在时效内引导至元服务任意指定页面。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "推荐使用OHAudio开发音频录制功能(C/C++)"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-recording/using-ohaudio-for-recording
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-recording/using-ohaudio-for-recording
+last_sync: 2026-06-07
+sync_hash: 9996ce57
 ---
-
-
 OHAudio是系统在API version 10中引入的一套C API，此API在设计上实现归一，同时支持普通音频通路和低时延通路。仅支持PCM格式，适用于依赖Native层实现音频输入功能的场景。
 
 OHAudio音频录制状态变化示意图：

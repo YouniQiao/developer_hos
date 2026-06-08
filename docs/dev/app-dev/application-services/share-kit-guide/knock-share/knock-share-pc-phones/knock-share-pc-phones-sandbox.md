@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "分享内容直达应用界面"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/knock-share/knock-share-pc-phones/knock-share-pc-phones-sandbox
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/knock-share/knock-share-pc-phones/knock-share-pc-phones-sandbox
+last_sync: 2026-06-07
+sync_hash: 49656f1b
 ---
-
-
 从6.0.0(20)版本开始，沙箱接收能力支持PC/2in1设备；从6.1.0(23)版本开始，新增支持Tablet设备。
 
 PC/2in1、Tablet设备创新交互方案：支持手机轻贴屏幕即可将单/多文件快速传输至PC/2in1或Tablet设备应用沙箱，传输完成后通知目标应用接收文件列表，实现无缝预览与编辑。

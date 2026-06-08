@@ -2,9 +2,10 @@
 title: "个人数据处理说明"
 original_url: /docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-personal-data-0000002349021728
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-personal-data-0000002349021728
+last_sync: 2026-06-07
+sync_hash: 8a9c20be
 ---
-
-
 此章节针对华为作为最终用户数据处理者，您作为最终用户数据控制者的数据处理进行说明，包括：
 
 * 华为作为数据处理者需要处理的个人数据清单。

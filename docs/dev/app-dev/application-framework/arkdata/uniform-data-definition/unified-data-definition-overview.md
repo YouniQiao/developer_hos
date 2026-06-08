@@ -2,9 +2,10 @@
 title: "标准化数据定义概述"
 original_url: /docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/unified-data-definition-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/uniform-data-definition/unified-data-definition-overview
+last_sync: 2026-06-07
+sync_hash: 522b5584
 ---
-
-
 设备、应用交互的核心在于数据的互通，高效的数据互通基础是共识。为了降低应用/业务数据交互成本，促进数据生态建设，统一数据管理框架（UDMF）提供了标准化数据定义作为统一的HarmonyOS数据语言，用于构建跨应用、跨设备的统一数据标准与交互共识。
 
 UDMF标准化数据定义包括[标准化数据类型](/docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-type-descriptors)和[标准化数据结构](/docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-structure)。

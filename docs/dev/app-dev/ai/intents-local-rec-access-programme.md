@@ -2,9 +2,10 @@
 title: "接入方案"
 original_url: /docs/dev/app-dev/ai/intents-local-rec-access-programme
 format: md
+upstream_id: dev/app-dev/ai/intents-local-rec-access-programme
+last_sync: 2026-06-07
+sync_hash: 7b82157a
 ---
-
-
 ## 方案概述
 
 位置感知推荐能力支持开发者云侧共享位置信息与关联推荐的内容，结合实时位置、设备状态与习惯标签完成系统智慧决策，在小艺建议智慧推荐更符合用户诉求的内容信息。

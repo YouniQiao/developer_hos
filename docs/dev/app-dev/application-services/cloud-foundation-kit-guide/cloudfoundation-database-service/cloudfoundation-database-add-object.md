@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "新增对象类型"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-add-object
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-add-object
+last_sync: 2026-06-07
+sync_hash: 9ee546d4
 ---
-
-
 开发者需要基于AGC控制台创建对象类型。
 
 ## 前提条件

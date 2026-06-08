@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "相机基础动效(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-animation
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-animation
+last_sync: 2026-06-07
+sync_hash: 395cdbaa
 ---
-
-
 在使用相机过程中，当遇到相机模式切换、前后置镜头切换等场景时，会不可避免地出现预览流替换。为优化用户体验，可合理使用动效过渡。本文主要介绍如何使用预览流截图，并通过ArkUI提供的[animateToImmediately](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#animatetoimmediately23)接口触发显式动画功能，实现下方三种核心场景动效。
 
 * 模式切换动效，使用预览流截图做模糊动效过渡。

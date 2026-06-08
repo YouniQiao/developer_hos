@@ -2,14 +2,15 @@
 title: "申请发布Profile"
 original_url: /docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090
 format: md
+upstream_id: distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090
+last_sync: 2026-06-07
+sync_hash: 5edc8bed
 ---
-
-
 ![](../img/agc-help-release-profile-0000002248341090_0.png)
 
 申请ACL权限的入口已调整至项目下的“ACL权限”页签，创建Profile时仅支持添加已获取的ACL权限。如需使用ACL权限，请先参考[申请ACL权限](/docs/distribute/agc/agc-help-acl-0000002427651937/agc-help-apply-acl-0000002394212138)获取ACL权限，再创建Profile。
 
-在发布阶段，您需要使用发布证书和发布Profile重新手动签名后，才能编译构建正式发布包。请参考本文档申请并下载发布Profile，手动签名的完整操作请参考[配置签名信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app#section280162182818)。
+在发布阶段，您需要使用发布证书和发布Profile重新手动签名后，才能编译构建正式发布包。请参考本文档申请并下载发布Profile，手动签名的完整操作请参考[配置签名信息](/docs/tools/coding-debug/ide-publish-app#section280162182818)。
 
 ![](../img/agc-help-release-profile-0000002248341090_1.png)
 

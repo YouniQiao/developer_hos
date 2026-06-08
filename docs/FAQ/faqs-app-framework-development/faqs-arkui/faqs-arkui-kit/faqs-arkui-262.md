@@ -2,9 +2,10 @@
 format: md
 title: "如何使用Navigation的navPathStack参数"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-262
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-262
+last_sync: 2026-06-07
+sync_hash: 4e64154f
 ---
-
-
 在已通过navPathStack获取到NavDestination集合后，可通过以下方法查询参数：
 
 * 使用[getParamByIndex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#getparambyindex10)获取指定索引的NavDestination页面的参数信息；

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "查询工作空间策略"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-get-workspace-policy
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-get-workspace-policy
+last_sync: 2026-06-07
+sync_hash: 5ee8f28b
 ---
-
-
 ## 场景介绍
 
 从6.0.2(22)开始，支持查询工作空间策略的能力。

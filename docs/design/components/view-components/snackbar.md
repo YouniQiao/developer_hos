@@ -3,8 +3,10 @@ title: 即时操作
 sidebar_label: 即时操作
 original_url: /docs/design/components/view-components/snackbar
 format: md
+upstream_id: design/components/view-components/snackbar
+last_sync: 2026-06-07
+sync_hash: f235068a
 ---
-
 # 即时操作
 
 即时操作组件位于屏幕底部或固定位置，用于提供操作结果反馈、状态变更提示或轻量级通知。该组件支持自动关闭或手动关闭功能，确保不影响页面其他操作。

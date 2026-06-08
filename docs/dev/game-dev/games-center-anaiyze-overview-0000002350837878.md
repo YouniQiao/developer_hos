@@ -3,9 +3,10 @@ title: "应用分析总览"
 original_url: /docs/dev/game-dev/games-center-anaiyze-overview-0000002350837878
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-center-anaiyze-overview-0000002350837878
+last_sync: 2026-06-07
+sync_hash: b2282bba
 ---
-
-
 [应用分析总览](#section106851042192815)为您提供应用的分析总览数据；[应用分析概览](#section17943125854315)提供单个应用的关键KPI指标概览。
 
 ## 应用分析总览

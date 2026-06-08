@@ -3,9 +3,10 @@ title: "设置采集要求"
 original_url: /docs/dev/game-dev/games-hismartperf-setting-0000002321517289
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-hismartperf-setting-0000002321517289
+last_sync: 2026-06-07
+sync_hash: 06a794ae
 ---
-
-
 ## 设置采集参数
 
 游戏在采集数据前需在测试设置中自定义采集要求。

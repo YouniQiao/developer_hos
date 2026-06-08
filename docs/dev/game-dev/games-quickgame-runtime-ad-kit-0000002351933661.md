@@ -2,9 +2,10 @@
 title: "广告"
 original_url: /docs/dev/game-dev/games-quickgame-runtime-ad-kit-0000002351933661
 format: md
+upstream_id: dev/game-dev/games-quickgame-runtime-ad-kit-0000002351933661
+last_sync: 2026-06-07
+sync_hash: 3e7bf909
 ---
-
-
 鲸鸿动能流量变现服务（以下简称“流量变现服务）是华为推出的一项广告服务，依托华为强大的终端平台和数据能力，帮助您实现广告流量变现。接入广告服务后，您可以在游戏内向用户展示精准的、精美的以及高价值的广告内容，并从中获得对应的广告收益。接入广告服务服务的流程如下：
 
 ![](./img/ad71b826.png)
@@ -27,11 +28,11 @@ format: md
 
 ## 前提条件
 
-* 您已了解“流量变现服务”对接入主体、媒体、设备及服务区域都有一定的限制，限制详情请参见[流量变现服务受限说明](https://developer.huawei.com/consumer/cn/doc/distribution/monetize/shouxianshuoming-0000001085379360)。
-* 您已了解“流量变现服务”业务规范，规范详情请参见[业务规则](https://developer.huawei.com/consumer/cn/doc/distribution/monetize/yewuzongze-0000001132177047)。
-* 您已实名认证、开通商户服务、签署《鲸鸿动能媒体服务协议》，操作详情请参见[注册认证](https://developer.huawei.com/consumer/cn/doc/distribution/monetize/zhucerenzheng-0000001132395957)。
-* 快游戏已添加媒体，操作详情请参见[媒体管理](https://developer.huawei.com/consumer/cn/doc/distribution/monetize/meitiguanli-0000001132278779)。
-* 快游戏已添加广告展示位，操作详情请参见[展示位创建](https://developer.huawei.com/consumer/cn/doc/distribution/monetize/zhanshiweichuangjian-0000001132700049)。
+* 您已了解“流量变现服务”对接入主体、媒体、设备及服务区域都有一定的限制，限制详情请参见[流量变现服务受限说明](/docs/monetize/monetization/shouxianshuoming-0000001085379360)。
+* 您已了解“流量变现服务”业务规范，规范详情请参见[业务规则](/docs/monetize/monetization/yewuzongze-0000001132177047)。
+* 您已实名认证、开通商户服务、签署《鲸鸿动能媒体服务协议》，操作详情请参见[注册认证](/docs/monetize/monetization/zhucerenzheng-0000001132395957)。
+* 快游戏已添加媒体，操作详情请参见[媒体管理](/docs/monetize/monetization/meitiguanli-0000001132278779)。
+* 快游戏已添加广告展示位，操作详情请参见[展示位创建](/docs/monetize/monetization/zhanshiweichuangjian-0000001132700049)。
 
 ## 征求用户意见
 
@@ -186,7 +187,7 @@ format: md
 
 在进行自测前，您需要对测试环境进行自检：
 
-1. 使用华为手机进行调试，并使用测试广告位，获取测试广告位参见[如何获取广告测试id](https://developer.huawei.com/consumer/cn/doc/distribution/monetize/ceshiyanzhengjishangxian-0000001085219714)。
+1. 使用华为手机进行调试，并使用测试广告位，获取测试广告位参见[如何获取广告测试id](/docs/monetize/monetization/ceshiyanzhengjishangxian-0000001085219714)。
 
    ![](./img/1e6807c5.png)
 
@@ -237,7 +238,7 @@ format: md
     【错误做法】请求了原生广告却没有展示。
 16. 必须用户同意了用户隐私协议才能展示广告，不同意请勿请求和展示广告。
 
-自测和华为验收通过后，即可准备广告的商业上架，具体操作参见“[鲸鸿动能流量变现服务测试验证及上线](https://developer.huawei.com/consumer/cn/doc/distribution/monetize/ceshiyanzhengjishangxian-0000001085219714)”。
+自测和华为验收通过后，即可准备广告的商业上架，具体操作参见“[鲸鸿动能流量变现服务测试验证及上线](/docs/monetize/monetization/ceshiyanzhengjishangxian-0000001085219714)”。
 
 ## 示例代码
 

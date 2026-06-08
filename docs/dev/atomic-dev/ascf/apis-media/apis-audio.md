@@ -2,8 +2,11 @@
 title: "音频"
 original_url: /docs/dev/atomic-dev/ascf/apis-media/apis-audio
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-media/apis-audio
+last_sync: 2026-06-07
+sync_hash: 9a357605
+upstream_hash: b9271ee8e35a
 ---
-
 
 ## has.stopVoice
 

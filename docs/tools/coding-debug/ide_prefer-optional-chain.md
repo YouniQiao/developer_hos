@@ -3,9 +3,10 @@ title: "@typescript-eslint/prefer-optional-chain"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_prefer-optional-chain
 format: md
+upstream_id: tools/coding-debug/ide_prefer-optional-chain
+last_sync: 2026-06-07
+sync_hash: 513c400f
 ---
-
-
 # @typescript-eslint/prefer-optional-chain
 
 强制使用链式可选表达式，而不是链式逻辑与、否定逻辑或、或空对象。

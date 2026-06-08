@@ -2,9 +2,10 @@
 title: "C#（Native）"
 original_url: /docs/dev/game-dev/games-gamemme-voicetotext-csharp-native-0000002393267033
 format: md
+upstream_id: dev/game-dev/games-gamemme-voicetotext-csharp-native-0000002393267033
+last_sync: 2026-06-07
+sync_hash: f1c55e3f
 ---
-
-
 ## 前提条件
 
 * 您已[开启语音转文本功能](/docs/dev/game-dev/games-gamemme-console-servicemanagement-0000002338391901#section157881245131518)。

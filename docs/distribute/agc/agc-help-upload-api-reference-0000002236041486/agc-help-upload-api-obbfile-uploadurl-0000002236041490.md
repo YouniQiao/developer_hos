@@ -2,9 +2,10 @@
 title: "获取分片上传地址"
 original_url: /docs/distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-obbfile-uploadurl-0000002236041490
 format: md
+upstream_id: distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-obbfile-uploadurl-0000002236041490
+last_sync: 2026-06-07
+sync_hash: a5b6e640
 ---
-
-
 #### 功能介绍
 
 此接口用于获取文件所有分片的上传地址，调用此接口前必须先调用[分片上传初始化](/docs/distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-obbfile-init-0000002271000677)接口完成分片初始化。

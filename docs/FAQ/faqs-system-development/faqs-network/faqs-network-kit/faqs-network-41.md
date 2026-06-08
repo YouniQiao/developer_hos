@@ -2,9 +2,10 @@
 format: md
 title: "httpRequest.request请求https接口ssl证书验证失败"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-41
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-41
+last_sync: 2026-06-07
+sync_hash: 72b21b00
 ---
-
-
 **问题现象**
 
 https接口httpRequest.request请求报错：“SSL peer certificate or SSH remote key was not OK”。

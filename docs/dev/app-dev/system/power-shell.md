@@ -2,9 +2,10 @@
 title: "power-shell工具"
 original_url: /docs/dev/app-dev/system/power-shell
 format: md
+upstream_id: dev/app-dev/system/power-shell
+last_sync: 2026-06-07
+sync_hash: 589b9ca4
 ---
-
-
 power-shell是实现设备电源状态转换等功能的工具，为开发者提供基本的设备电源状态调试能力，例如：熄屏、唤醒、设置电源模式等。
 
 ## 环境要求

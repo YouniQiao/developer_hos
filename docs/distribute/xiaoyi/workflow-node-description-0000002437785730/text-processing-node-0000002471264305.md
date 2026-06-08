@@ -3,9 +3,10 @@ title: "文本处理节点"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/workflow-node-description-0000002437785730/text-processing-node-0000002471264305
 format: md
+upstream_id: distribute/xiaoyi/workflow-node-description-0000002437785730/text-processing-node-0000002471264305
+last_sync: 2026-06-07
+sync_hash: 976323a7
 ---
-
-
 # 文本处理节点
 
 文本处理节点用于将输入数据进行字符串处理，适用于内容二次总结、文本拼接、文本转义等场景，例如将关键字拼接为prompt。

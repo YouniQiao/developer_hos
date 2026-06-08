@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "振动开发概述"
 original_url: /docs/dev/app-dev/system/system-hardware/sensor-service-kit/vibrator/vibrator-overview
 format: md
+upstream_id: dev/app-dev/system/system-hardware/sensor-service-kit/vibrator/vibrator-overview
+last_sync: 2026-06-07
+sync_hash: 9260a3fd
 ---
-
-
 通过最大化开放马达器件能力，振动器模块服务拓展了马达服务，实现了振动与交互融合设计，从而打造出细腻精致的一体化振动体验和差异化体验，提升用户交互效率、易用性以及用户体验，并增强品牌竞争力。
 
 ## 运作机制

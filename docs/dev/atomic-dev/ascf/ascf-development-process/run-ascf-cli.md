@@ -2,9 +2,10 @@
 title: "使用ASCF命令行工具"
 original_url: /docs/dev/atomic-dev/ascf/ascf-development-process/run-ascf-cli
 format: md
+upstream_id: dev/atomic-dev/ascf/ascf-development-process/run-ascf-cli
+last_sync: 2026-06-07
+sync_hash: 8eabfe96
 ---
-
-
 ASCF为开发者提供了命令行工具，可用于控制ASCF工具的调试功能以及转换和编译行为。
 
 ## 安装命令行工具
@@ -57,7 +58,7 @@ ascf compile .\path\to\atomicservice-project
 ascf compile .\path\to\atomicservice-project --serve
 ```
 
-使用热重载功能前，请确保设备已开启“开发中元服务豁免管控”选项（可在[开发者选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode#section530763213432)中开启）。
+使用热重载功能前，请确保设备已开启“开发中元服务豁免管控”选项（可在[开发者选项](/docs/tools/coding-debug/ide-developer-mode#section530763213432)中开启）。
 
 ## 创建元服务模板项目
 

@@ -3,6 +3,10 @@ title: "任务数据"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-data-task-0000001128438070
 format: md
+upstream_id: monetize/promotion/marketing-api-data-task-0000001128438070
+last_sync: 2026-06-07
+sync_hash: 5cbef207
+upstream_hash: fd9f9dca321f
 ---
 
 # 任务数据

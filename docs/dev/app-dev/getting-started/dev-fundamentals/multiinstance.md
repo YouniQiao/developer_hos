@@ -1,8 +1,10 @@
 ---
 title: "创建应用多实例"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/multiinstance
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/multiinstance
+last_sync: 2026-06-07
+sync_hash: 3329e816
 ---
-
 应用多实例允许一个应用同时运行多个进程，实现多个账号同时登录使用，且互不影响。主要应用场景包括社交账户多开和游戏大小号多开等，无需切换账号从而避免频繁登录的繁琐操作。
 
 桌面上的多个应用实例都是独立的进程，各个进程的运行、通知等都是彼此独立的；各实例共享数据，可通过账号进行切换。

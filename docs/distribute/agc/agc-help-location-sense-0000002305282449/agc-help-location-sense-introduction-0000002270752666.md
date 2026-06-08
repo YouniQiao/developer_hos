@@ -2,9 +2,10 @@
 title: "业务介绍"
 original_url: /docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-introduction-0000002270752666
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-introduction-0000002270752666
+last_sync: 2026-06-07
+sync_hash: a5d74587
 ---
-
-
 近场服务旨在通过HarmonyOS手机用户（以下简称用户）的位置，经由小艺建议、花瓣地图等消息渠道精准推荐用户所需的服务，从而帮助开发者提升用户转化率和满意度。
 
 近场服务包含近场管理、近场测试、设备管理、标签服务四个模块，支持开发者管理可触达用户的位置（[POI](/docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-related-terms-0000002382861885)）或设备（[信标设备](/docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-related-terms-0000002382861885)、[HarmonyOS标签](/docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-related-terms-0000002382861885)），以及通过这些位置或设备向用户推荐内容。

@@ -2,8 +2,10 @@
 title: "表情规范"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/content-listing-specifications-0000001311529684/emoticon-specification-0000001364089549
+upstream_id: distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/content-listing-specifications-0000001311529684/emoticon-specification-0000001364089549
+last_sync: 2026-06-07
+sync_hash: 25ff81da
 ---
-
 # 表情规范
 
 |  |  |  |  |  |  |

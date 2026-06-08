@@ -2,9 +2,10 @@
 title: "应用深浅色适配"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-theme/ui-dark-light-color-adaptation
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-theme/ui-dark-light-color-adaptation
+last_sync: 2026-06-07
+sync_hash: 1e101173
 ---
-
-
 ## 概述
 
 当前系统存在深浅色两种显示模式，为了给用户更好的使用体验，应用应适配深浅色模式。从应用与系统配置关联的角度来看，适配深浅色模式可以分为下面两种情况：

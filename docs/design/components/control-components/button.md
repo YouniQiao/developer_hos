@@ -3,8 +3,10 @@ title: 按钮
 sidebar_label: 按钮
 original_url: /docs/design/components/control-components/button
 format: md
+upstream_id: design/components/control-components/button
+last_sync: 2026-06-07
+sync_hash: 268ccd3e
 ---
-
 # 按钮
 
 一种常用控件，点击可触发对应操作。开发相关描述请参考 [Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button) 文档。

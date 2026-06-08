@@ -2,8 +2,11 @@
 title: "二进制优化服务技术支持"
 original_url: /docs/dev/game-dev/games-binary-optimization-technical-support-0000002377028349
 format: md
+upstream_id: dev/game-dev/games-binary-optimization-technical-support-0000002377028349
+last_sync: 2026-06-07
+sync_hash: 55dce54f
+upstream_hash: 2fc7539d8012
 ---
-
 
 当您集成二进制优化服务遇到问题时，可以按照以下顺序寻求帮助。
 

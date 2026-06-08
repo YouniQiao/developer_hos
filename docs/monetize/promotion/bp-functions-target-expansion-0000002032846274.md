@@ -3,8 +3,10 @@ title: "智能扩展"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-target-expansion-0000002032846274
 format: md
+upstream_id: monetize/promotion/bp-functions-target-expansion-0000002032846274
+last_sync: 2026-06-07
+sync_hash: 2c73e75e
 ---
-
 # 智能扩展
 
 智能扩展是人群定向的一种方式。该能力通过算法和大数据能力，找到与开发者的种子人群（通常指有转化行为的价值用户）具有相似特征的人群，扩展种子人群量级，以满足推广定向投放需求。

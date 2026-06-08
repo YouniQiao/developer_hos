@@ -2,9 +2,10 @@
 format: md
 title: "启动C++调试时出现错误，提示“Failed to connect to unix-abstract-connect”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-25
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-25
+last_sync: 2026-06-07
+sync_hash: 7e2dbcab
 ---
-
-
 **问题现象**
 
 启动C++调试时出现错误，提示“Failed to connect to unix-abstract-connect://\\*\\*\\*\\*\\*\\*\\*\\*\\*.sock: Connection shut down by remote side while waiting for reply to initial handshake packet”。

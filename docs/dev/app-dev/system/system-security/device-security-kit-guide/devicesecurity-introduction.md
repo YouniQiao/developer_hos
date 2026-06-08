@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Device Security Kit简介"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-introduction
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-introduction
+last_sync: 2026-06-07
+sync_hash: aafa85c1
 ---
-
-
 Device Security Kit（设备安全服务）提供应用设备状态检测（DeviceVerify）、安全检测（SafetyDetect）、可信应用服务（TrustedAppService）、数字盾服务（TrustedAuthentication）、业务风险检测（BusinessRiskIntelligentDetection）、安全审计（SecurityAudit）、反诈选择器（AntifraudPicker）、防窥保护（DlpAntiPeep）、病毒防护服务管理（VirusProtectionServiceManager）和超级隐私模式（SuperPrivacyMode），可以保护应用程序免受安全威胁和保证应用的数据安全。
 
 ## 场景介绍

@@ -2,9 +2,10 @@
 title: "如何适配网页内播放器全屏"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-71
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-71
+last_sync: 2026-06-07
+sync_hash: 62d27aad
 ---
-
-
 在工程中的module.json5配置文件中添加网络访问权限ohos.permission.INTERNET。
 
 具体实现可参考如下代码

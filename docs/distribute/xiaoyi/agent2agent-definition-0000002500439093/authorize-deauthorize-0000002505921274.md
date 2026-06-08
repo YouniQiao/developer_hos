@@ -3,9 +3,10 @@ title: "授权登录/解授权"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/agent2agent-definition-0000002500439093/authorize-deauthorize-0000002505921274
 format: md
+upstream_id: distribute/xiaoyi/agent2agent-definition-0000002500439093/authorize-deauthorize-0000002505921274
+last_sync: 2026-06-07
+sync_hash: e52c1618
 ---
-
-
 # 授权登录/解授权
 
 Agent Client发送从账号获取的授权码给Agent Server：

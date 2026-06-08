@@ -3,8 +3,10 @@ title: "全域推荐-影子投放-CPD任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/mktapi-adtask-global-shadow-cpd-0000001366526321
 format: md
+upstream_id: monetize/promotion/mktapi-adtask-global-shadow-cpd-0000001366526321
+last_sync: 2026-06-07
+sync_hash: d07d2cff
 ---
-
 # 全域推荐-影子投放-CPD任务
 
 ## 功能介绍

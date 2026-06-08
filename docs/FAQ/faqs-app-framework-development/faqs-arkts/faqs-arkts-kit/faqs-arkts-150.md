@@ -2,9 +2,10 @@
 format: md
 title: "如何在URL编码时处理特殊字符"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-150
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-150
+last_sync: 2026-06-07
+sync_hash: 992b24fe
 ---
-
-
 由于URL只能包含特定的ASCII字符集（主要是字母、数字和部分保留符号），其他字符（如空格、中文、特殊符号等）必须经过编码才能在URL中正确传输。URL编码规则如下：
 
 * **非保留字符（Unreserved）**

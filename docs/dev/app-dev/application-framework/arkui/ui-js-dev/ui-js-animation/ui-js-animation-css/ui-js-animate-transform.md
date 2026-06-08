@@ -2,9 +2,10 @@
 title: "transform样式动画"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-animation/ui-js-animation-css/ui-js-animate-transform
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-animation/ui-js-animation-css/ui-js-animate-transform
+last_sync: 2026-06-07
+sync_hash: 5565719a
 ---
-
-
 设置transform属性对组件进行旋转、缩放、移动和倾斜。
 
 ## 设置静态动画

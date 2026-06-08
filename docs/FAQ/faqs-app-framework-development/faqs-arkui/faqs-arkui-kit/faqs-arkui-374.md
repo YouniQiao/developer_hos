@@ -2,8 +2,11 @@
 format: md
 title: "如何实现应用的屏幕自动旋转"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-374
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-374
+last_sync: 2026-06-07
+sync_hash: 22a42868
+upstream_hash: 7ca19c170842
 ---
-
 
 1. 在module.json5添加属性"orientation": "auto\_rotation"。
 

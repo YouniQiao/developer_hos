@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "音频录制"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-recording
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-recording
+last_sync: 2026-06-07
+sync_hash: d7ba919a
 ---
-
-
 * **[音频录制开发概述](/docs/dev/app-dev/media/audio-kit/audio-recording/audio-recording-overview)**
 * **[推荐使用OHAudio开发音频录制功能(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-recording/using-ohaudio-for-recording)**
 * **[使用AudioCapturer开发音频录制功能(ArkTS)](/docs/dev/app-dev/media/audio-kit/audio-recording/using-audiocapturer-for-recording)**

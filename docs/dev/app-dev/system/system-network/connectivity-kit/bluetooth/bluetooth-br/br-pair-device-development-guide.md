@@ -2,9 +2,10 @@
 title: "配对与连接设备"
 original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-br/br-pair-device-development-guide
 format: md
+upstream_id: dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-br/br-pair-device-development-guide
+last_sync: 2026-06-07
+sync_hash: 352fcd25
 ---
-
-
 ## 简介
 
 本指南主要提供了主动配对设备和连接设备可用profile能力的开发指导。

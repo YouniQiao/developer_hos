@@ -2,9 +2,10 @@
 title: "Mechanic Kit简介"
 original_url: /docs/dev/app-dev/system/system-hardware/mechanic-kit/mechanic-kit-intro
 format: md
+upstream_id: dev/app-dev/system/system-hardware/mechanic-kit/mechanic-kit-intro
+last_sync: 2026-06-07
+sync_hash: 802d0115
 ---
-
-
 Mechanic Kit 是机械体设备控制器提供的API集合。从API version 20起，应用可使用Mechanic Kit控制机械体设备。Mechanic Kit 提供了完整的三方机械体设备配件集成方案，满足手机与云台等设备间的交互需求。
 
 Mechanic Kit 通过 mechanicManager 模块，实现设备连接管理、目标追踪和状态监控，支持精准控制，帮助开发者构建高质量的设备交互应用。

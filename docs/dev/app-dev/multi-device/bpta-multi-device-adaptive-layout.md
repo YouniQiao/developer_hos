@@ -3,8 +3,10 @@ title: "自适应布局"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-adaptive-layout
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi-device-adaptive-layout
+last_sync: 2026-06-07
+sync_hash: 839e2976
 ---
-
 # 自适应布局
 
 针对常见的开发场景，方舟开发框架提炼了七种自适应布局能力，这些布局可以独立使用，也可多种布局叠加使用。

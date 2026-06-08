@@ -3,8 +3,11 @@ title: "自定义运行/调试配置"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-run-debug-configurations
 format: md
+upstream_id: tools/coding-debug/ide-run-debug-configurations
+last_sync: 2026-06-07
+sync_hash: 9ac3ae59
+upstream_hash: 6156e9de59f0
 ---
-
 
 # 自定义运行/调试配置
 

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用AVPlayer播放音频(ArkTS)"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/using-avplayer-for-playback
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/using-avplayer-for-playback
+last_sync: 2026-06-07
+sync_hash: 271389e5
 ---
-
-
 使用[AVPlayer](/docs/dev/app-dev/media/media-kit/media-kit-intro#avplayer)可以实现端到端播放原始媒体资源，本开发指导将以完整播放一首音乐作为示例，向开发者讲解AVPlayer音频播放相关功能。如需播放PCM音频数据，请使用[AudioRenderer](/docs/dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback)。
 
 播放的全流程包含：创建AVPlayer，设置播放资源，设置播放参数（音量/倍速/焦点模式），播放控制（播放/暂停/跳转/停止），重置，销毁资源。

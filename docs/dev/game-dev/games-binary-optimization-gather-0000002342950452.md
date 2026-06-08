@@ -2,9 +2,10 @@
 title: "执行二进制插桩"
 original_url: /docs/dev/game-dev/games-binary-optimization-gather-0000002342950452
 format: md
+upstream_id: dev/game-dev/games-binary-optimization-gather-0000002342950452
+last_sync: 2026-06-07
+sync_hash: a577f14f
 ---
-
-
 ![](./img/2ccc7537.png)
 
 若本次游戏版本较上次版本的改动较小，可跳过二进制插桩及采集profile数据操作 。

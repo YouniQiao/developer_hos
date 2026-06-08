@@ -3,8 +3,11 @@ title: "@typescript-eslint/no-array-constructor"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-array-constructor
 format: md
+upstream_id: tools/coding-debug/ide_no-array-constructor
+last_sync: 2026-06-07
+sync_hash: b92db57f
+upstream_hash: a4a2d701b214
 ---
-
 
 # @typescript-eslint/no-array-constructor
 

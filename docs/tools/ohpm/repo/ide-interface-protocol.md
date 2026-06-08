@@ -2,9 +2,10 @@
 title: "ohpm仓库接口协议"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-interface-protocol
+upstream_id: tools/ohpm/repo/ide-interface-protocol
+last_sync: 2026-06-07
+sync_hash: e1653191
 ---
-
-
 # ohpm仓库接口协议
 
 ## 概述

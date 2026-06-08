@@ -2,6 +2,9 @@
 title: "服务商财务管理"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-start-service-provider-financial-management-0000001328517614
+upstream_id: monetize/promotion/bpos-start-service-provider-financial-management-0000001328517614
+last_sync: 2026-06-07
+sync_hash: defcc874
 ---
 import MergeTable from '@site/src/components/MergeTable';
 
@@ -190,7 +193,7 @@ import MergeTable from '@site/src/components/MergeTable';
 
 ![](https://communityfile-drcn.op.dbankcloud.cn/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20250513090208.34408974915259606155356908093311:50001231000000:2800:3A62BB321B93FD75297D244E8892BE5B61D7F157D800B32D21F3E19014956794.png) 
 
-如果您需要使用此功能，需要申请[特性通行名单](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/addtongxing-0000001128278195)。
+如果您需要使用此功能，需要申请[特性通行名单](/docs/monetize/promotion/addtongxing-0000001128278195)。
 
 - 申请条件：
   - 只支持注册地为下述国家/地区的广告账户使用银行卡线上充值功能：

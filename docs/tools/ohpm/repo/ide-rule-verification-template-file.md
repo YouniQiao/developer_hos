@@ -2,9 +2,10 @@
 title: "模板文件"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-rule-verification-template-file
+upstream_id: tools/ohpm/repo/ide-rule-verification-template-file
+last_sync: 2026-06-07
+sync_hash: 1d1291d7
 ---
-
-
 # 模板文件
 
 模板文件中包含自定义元数据规则校验插件需要的三个文件：自定义规则校验函数模板文件checkField.ts，自定义规则校验配置模板文件CustomExtensionValidationConfig.json和ts编译为js的配置模板文件tsconfig.json。

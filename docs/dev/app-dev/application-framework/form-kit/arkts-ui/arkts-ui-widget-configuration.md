@@ -2,9 +2,10 @@
 title: "配置ArkTS卡片的配置文件"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration
 format: md
+upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration
+last_sync: 2026-06-07
+sync_hash: 6e97c825
 ---
-
-
 卡片相关的配置文件包括[FormExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formextensionability)配置和卡片配置。如果是[独立卡片包](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-creation#方式二独立包方式创建卡片)，还会包含[独立卡片包配置](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration#独立卡片包配置)。
 
 ![](./img/b1f176fc.png)

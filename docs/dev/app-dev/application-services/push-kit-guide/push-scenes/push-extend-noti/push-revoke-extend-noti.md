@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "撤回语音播报消息"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-extend-noti/push-revoke-extend-noti
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-scenes/push-extend-noti/push-revoke-extend-noti
+last_sync: 2026-06-07
+sync_hash: f4e245bc
 ---
-
-
 ## 场景介绍
 
 当推送的语音播报消息内容有误或者存在违规情况时，可能会引起用户投诉或监管部门处罚等不良后果。Push Kit为您提供消息撤回功能，降低此类推送可能造成的影响。

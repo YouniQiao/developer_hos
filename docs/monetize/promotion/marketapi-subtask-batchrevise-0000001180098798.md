@@ -3,8 +3,10 @@ title: "批量修改子任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-subtask-batchrevise-0000001180098798
 format: md
+upstream_id: monetize/promotion/marketapi-subtask-batchrevise-0000001180098798
+last_sync: 2026-06-07
+sync_hash: 6b46b7b6
 ---
-
 # 批量修改子任务
 
 ## 功能介绍

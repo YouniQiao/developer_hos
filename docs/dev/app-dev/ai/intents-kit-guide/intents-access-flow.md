@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Intents Kit接入流程"
 original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-access-flow
 format: md
+upstream_id: dev/app-dev/ai/intents-kit-guide/intents-access-flow
+last_sync: 2026-06-07
+sync_hash: dbff3af2
 ---
-
-
 ![](./img/92fa1aa9.png)
 
 **阶段一：意向**
@@ -35,7 +36,7 @@ format: md
 
 | **任务** | **任务描述** | **示例** | **指导文档** |
 | --- | --- | --- | --- |
-| 意图调试申请 | 申请能力通过后，开发者可根据审核成功的反馈提示，提供测试应用的信息，用于开通意图调试权限。 | 1. 应用名称：华为音乐。  2. 应用包名：com.xxxx。  3. 接入意图名称：“播放歌曲”。  4. 应用图标：jpg、png……。  5. APP ID：1234567。  6. Client ID：1234567。  7. 华为账号（UID）：1234567、7654321……。 | 见各特性类型  习惯推荐：[开发者测试](/docs/dev/app-dev/ai/intents-habit-rec-dp-self-validation)  事件推荐：[开发者测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/intents-event-rec-dp-self-validation)  技能调用：[开发者测试](/docs/dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-dp-self-validation/intents-skill-all-rec-dp-self-validation-con) |
+| 意图调试申请 | 申请能力通过后，开发者可根据审核成功的反馈提示，提供测试应用的信息，用于开通意图调试权限。 | 1. 应用名称：华为音乐。  2. 应用包名：com.xxxx。  3. 接入意图名称：“播放歌曲”。  4. 应用图标：jpg、png……。  5. APP ID：1234567。  6. Client ID：1234567。  7. 华为账号（UID）：1234567、7654321……。 | 见各特性类型  习惯推荐：[开发者测试](/docs/dev/app-dev/ai/intents-habit-rec-dp-self-validation)  事件推荐：[开发者测试](/docs/dev/app-dev/ai/intents-kit-guide/intents-event-rec/intents-event-rec-dp-self-validation)  技能调用：[开发者测试](/docs/dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-dp-self-validation/intents-skill-all-rec-dp-self-validation-con) |
 | 意图声明文件中注册意图 | 在DevEco Studio中开发时，注册对应的意图。 | 注册“播放歌曲”意图。 | [意图注册](/docs/dev/app-dev/ai/intents-habit-rec-access-programme#意图注册) |
 | 开发实现意图共享 | 开发应用/元服务的意图共享接口，使其可以通过HarmonyOS接口完成意图数据共享。 | 开发“播放歌曲”意图中的意图共享接口。 | [端侧意图共享](/docs/dev/app-dev/ai/intents-habit-rec-access-programme#端侧意图共享) |
 | 开发实现意图调用 | 开发应用/元服务的意图调用接口，使其可以通过HarmonyOS接口被正确调用。 | 开发“播放歌曲”意图中的意图调用接口。 | [端侧意图调用](/docs/dev/app-dev/ai/intents-habit-rec-access-programme#端侧意图调用) |

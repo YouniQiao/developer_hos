@@ -2,9 +2,10 @@
 title: "IPC与RPC通信开发指导(ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/ipc-kit/ipc-rpc-development-guideline
 format: md
+upstream_id: dev/app-dev/application-framework/ipc-kit/ipc-rpc-development-guideline
+last_sync: 2026-06-07
+sync_hash: 679e2151
 ---
-
-
 ## 场景介绍
 
 IPC/RPC的主要工作是跨进程建立对象通信的连接（客户端进程的Proxy和服务端进程的Stub建立一一对应关系），从而通过Proxy的接口可以和Stub进行IPC/RPC通信。

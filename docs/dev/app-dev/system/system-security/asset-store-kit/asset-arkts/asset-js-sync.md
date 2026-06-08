@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "同步（备份恢复）关键资产(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-sync
 format: md
+upstream_id: dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-sync
+last_sync: 2026-06-07
+sync_hash: 7b5e7756
 ---
-
-
 ## 新增支持同步的关键资产
 
 新增密码demo\_pwd（别名demo\_alias），附属信息为demo\_label，支持同步的关键资产。

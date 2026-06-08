@@ -2,9 +2,10 @@
 title: "框架说明"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview
+last_sync: 2026-06-07
+sync_hash: 3f220d05
 ---
-
-
 * **[文件组织](/docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-file)**
 * **[js标签配置](/docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-js-tag)**
 * **[app.js](/docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-js-file)**

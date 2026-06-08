@@ -2,9 +2,10 @@
 title: "image-animator开发指导"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-basic-components/ui-js-components-image-animator
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-basic-components/ui-js-components-image-animator
+last_sync: 2026-06-07
+sync_hash: 2a934df7
 ---
-
-
 image-animator组件为图片帧动画播放器。具体用法请参考[image-animator](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-basic-image-animator)。
 
 ## 创建image-animator组件

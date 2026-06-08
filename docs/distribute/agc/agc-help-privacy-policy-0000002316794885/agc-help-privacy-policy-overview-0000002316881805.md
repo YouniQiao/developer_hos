@@ -2,9 +2,10 @@
 title: "概述"
 original_url: /docs/distribute/agc/agc-help-privacy-policy-0000002316794885/agc-help-privacy-policy-overview-0000002316881805
 format: md
+upstream_id: distribute/agc/agc-help-privacy-policy-0000002316794885/agc-help-privacy-policy-overview-0000002316881805
+last_sync: 2026-06-07
+sync_hash: 8c8d139e
 ---
-
-
 发布应用/元服务时，您需要提供隐私政策，以便用户了解应用的数据收集和使用情况。
 
 * **HarmonyOS应用**：支持选择自定义隐私政策，或者使用隐私声明托管服务生成隐私声明。

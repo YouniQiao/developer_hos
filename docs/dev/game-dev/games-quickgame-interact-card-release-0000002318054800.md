@@ -2,9 +2,10 @@
 title: "发布上架"
 original_url: /docs/dev/game-dev/games-quickgame-interact-card-release-0000002318054800
 format: md
+upstream_id: dev/game-dev/games-quickgame-interact-card-release-0000002318054800
+last_sync: 2026-06-07
+sync_hash: 5a11df2e
 ---
-
-
 打包测试通过后，前往AGC控制台发布上架，为用户提供创新互动卡片服务。
 
 ## 了解上架规则

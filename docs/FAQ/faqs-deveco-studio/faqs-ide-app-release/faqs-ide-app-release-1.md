@@ -2,8 +2,11 @@
 format: md
 title: "上传软件包时，提示”No app with the specified package name is found under the team.”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-ide-app-release/faqs-ide-app-release-1
+upstream_id: FAQ/faqs-deveco-studio/faqs-ide-app-release/faqs-ide-app-release-1
+last_sync: 2026-06-07
+sync_hash: 55785d74
+upstream_hash: 218e90d029ad
 ---
-
 
 **问题现象**
 

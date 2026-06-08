@@ -2,9 +2,10 @@
 title: "应用冻屏问题排查方法"
 original_url: /docs/quality/stability-app-freeze-way
 format: md
+upstream_id: /docs/quality/stability-app-freeze-way
+last_sync: 2026-06-07
+sync_hash: 505dd9b7
 ---
-
-
 # 应用冻屏问题排查方法
 
 ![](./img/a59765fb.png)
@@ -19,7 +20,7 @@ format: md
 
 方式一：通过DevEco Studio获取日志
 
-DevEco Studio会收集设备的故障日志并归档到FaultLog下。具体可参考[FaultLog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-fault-log)。
+DevEco Studio会收集设备的故障日志并归档到FaultLog下。具体可参考[FaultLog](/docs/tools/coding-debug/ide-fault-log)。
 
 方式二：通过hiappevent获取
 

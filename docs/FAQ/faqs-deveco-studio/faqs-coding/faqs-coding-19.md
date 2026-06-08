@@ -2,9 +2,10 @@
 format: md
 title: "为什么ArkTS API接口注释中@since版本看起来比接口实际引入时间更晚"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-19
+upstream_id: FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-19
+last_sync: 2026-06-07
+sync_hash: 9fc34e2f
 ---
-
-
 **问题现象**
 
 在DevEco Studio中查看ArkTS API的接口注释，或鼠标悬停在ArkTS API调用处时，发现某些接口标注的@since版本较高（例如@since 20），但实际这些接口在更早的版本（如API 19）就已经存在。

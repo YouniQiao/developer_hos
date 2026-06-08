@@ -2,9 +2,10 @@
 format: md
 title: "安装HAP时提示“compatibleSdkVersion and releaseType of the app do not match the apiVersion and releaseType on the device.”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-22
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-22
+last_sync: 2026-06-07
+sync_hash: a851c804
 ---
-
-
 **问题现象**
 
 在启动调试或运行应用/服务时，安装HAP出现错误，提示“compatibleSdkVersion和releaseType与设备上的apiVersion和releaseType不匹配。”

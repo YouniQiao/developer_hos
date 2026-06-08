@@ -2,9 +2,10 @@
 title: "NearLink Kit常见问题"
 original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-faq
 format: md
+upstream_id: dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-faq
+last_sync: 2026-06-07
+sync_hash: 4e4cfbf1
 ---
-
-
 ## 连续进行数据传输时数据发送失败的问题
 
 连续多次调用[writeData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/nearlink-data-transfer-api#writedata)接口可能会导致发送队列拥塞，从而发送失败。

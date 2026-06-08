@@ -2,9 +2,10 @@
 format: md
 title: "如何申请多个长时任务"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-background-tasks-kit/faqs-background-tasks-4
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-background-tasks-kit/faqs-background-tasks-4
+last_sync: 2026-06-07
+sync_hash: 8e237ce3
 ---
-
-
 **问题现象**
 
 应用在后台运行多个任务，需申请多个长时任务。

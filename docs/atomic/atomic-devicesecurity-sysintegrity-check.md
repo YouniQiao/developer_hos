@@ -2,9 +2,10 @@
 title: "系统完整性检测"
 original_url: /docs/dev/atomic-dev/atomic-devicesecurity-safetydetect-develop/atomic-devicesecurity-sysintegrity-check
 format: md
+upstream_id: dev/atomic-dev/atomic-devicesecurity-safetydetect-develop/atomic-devicesecurity-sysintegrity-check
+last_sync: 2026-06-07
+sync_hash: 147931bc
 ---
-
-
 ## 场景介绍
 
 应用通过调用Device Security Kit的checkSysIntegrity接口获取系统完整性检测结果，用于判断设备环境是否安全，比如是否被越狱、非真实设备等。

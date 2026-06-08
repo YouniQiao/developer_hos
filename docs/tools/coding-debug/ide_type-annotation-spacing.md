@@ -3,9 +3,10 @@ title: "@typescript-eslint/type-annotation-spacing"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_type-annotation-spacing
 format: md
+upstream_id: tools/coding-debug/ide_type-annotation-spacing
+last_sync: 2026-06-07
+sync_hash: 20b9b439
 ---
-
-
 # @typescript-eslint/type-annotation-spacing
 
 类型注解前后需要一致的空格风格。

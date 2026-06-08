@@ -2,9 +2,10 @@
 title: "WebSocket"
 original_url: /docs/dev/atomic-dev/ascf/apis-network/apis-websocket
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-network/apis-websocket
+last_sync: 2026-06-07
+sync_hash: 0bf654dd
 ---
-
-
 ## has.connectSocket
 
 has.connectSocket(Object object): SocketTask

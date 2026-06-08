@@ -2,9 +2,10 @@
 title: "FAQ"
 original_url: /docs/distribute/agc/agc-help-privacy-policy-0000002316794885/agc-help-privacy-policy-faq-0000002342315628
 format: md
+upstream_id: distribute/agc/agc-help-privacy-policy-0000002316794885/agc-help-privacy-policy-faq-0000002342315628
+last_sync: 2026-06-07
+sync_hash: 069dcf0c
 ---
-
-
 #### 什么是标准化隐私声明托管服务？
 
 标准化隐私声明托管服务（简称“隐私托管”）是面向HarmonyOS应用和元服务提供的，帮助开发者管理隐私声明和隐私弹窗，提升隐私合规和用户体验的解决方案。同时，基于结构化的隐私声明文档，有助于缩短隐私检测时长，提升检测通过率，加快版本通过上架审核。

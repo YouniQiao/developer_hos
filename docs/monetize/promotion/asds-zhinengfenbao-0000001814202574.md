@@ -3,8 +3,10 @@ title: "智能分包跟踪"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/asds-zhinengfenbao-0000001814202574
 format: md
+upstream_id: monetize/promotion/asds-zhinengfenbao-0000001814202574
+last_sync: 2026-06-07
+sync_hash: 00620b8a
 ---
-
 # 智能分包跟踪
 
 ## 功能介绍

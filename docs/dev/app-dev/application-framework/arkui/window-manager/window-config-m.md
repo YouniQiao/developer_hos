@@ -2,9 +2,10 @@
 title: "窗口元数据配置"
 original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/window-config-m
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/window-manager/window-config-m
+last_sync: 2026-06-07
+sync_hash: 659d7b56
 ---
-
-
 ## metadata标签
 
 该标签标识HAP的自定义元信息，标签值为数组类型，包含name、value、resource三个子标签。

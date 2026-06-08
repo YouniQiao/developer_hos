@@ -3,9 +3,10 @@ title: "游戏预约魔方创意"
 original_url: /docs/dev/game-dev/games-center-creatives-ideas-pre-order-0000002320771741
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-center-creatives-ideas-pre-order-0000002320771741
+last_sync: 2026-06-07
+sync_hash: 97960bdf
 ---
-
-
 游戏预约魔方创意是为[游戏预约](/docs/dev/game-dev/games-center-pre-order-applyfor-0000002286057048)提供的在线制作、轻松上手、简单轻量的设计网站。该网站支持一键预览，支持复杂的交互或跳转，您可以自由搭配组件，一键复用优质内容，轻松设计游戏预约的可视化H5落地页。
 
 ## 编辑器界面

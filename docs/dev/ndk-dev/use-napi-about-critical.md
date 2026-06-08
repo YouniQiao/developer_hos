@@ -2,9 +2,10 @@
 title: "使用扩展的Node-API接口创建和销毁临界区作用域及访问字符串内容"
 original_url: /docs/dev/ndk-dev/use-napi-about-critical
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-critical
+last_sync: 2026-06-07
+sync_hash: 9e207e8f
 ---
-
-
 Node-API扩展接口napi\_open\_critical\_scope用于打开临界区作用域，napi\_close\_critical\_scope用于关闭临界区作用域。
 
 ![](./img/90a8c79f.png)

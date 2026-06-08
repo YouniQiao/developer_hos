@@ -2,9 +2,10 @@
 title: "如何获取网络类型：Wi-Fi，3G，4G等"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-connectivity-kit/faqs-connectivity-5
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-connectivity-kit/faqs-connectivity-5
+last_sync: 2026-06-07
+sync_hash: 45a93294
 ---
-
-
 先通过[getNetCapabilities](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#connectiongetnetcapabilities)去获取网络的类型，判断默认网络是Wi-Fi还是蜂窝。
 
 如果是Wi-Fi，则直接确认网络类型是Wi-Fi。如果是在蜂窝连接情况下，可以调用[radio.getSignalInformation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-radio#radiogetsignalinformation7)获取指定SIM卡槽对应的注册网络信号强度信息列表，返回[SignalInformation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-radio#signalinformation)对象的数组，其中，返回的signalType代表[网络类型NetworkType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-radio#networktype)，signalType的值对应网络类型如下：

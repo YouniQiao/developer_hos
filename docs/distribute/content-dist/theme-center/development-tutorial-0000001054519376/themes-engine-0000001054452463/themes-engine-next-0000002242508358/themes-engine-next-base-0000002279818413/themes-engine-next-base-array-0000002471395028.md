@@ -3,9 +3,10 @@ title: "变量：控件数组&lt;Array&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-array-0000002471395028
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-array-0000002471395028
+last_sync: 2026-06-07
+sync_hash: 0fa68590
 ---
-
-
 # 变量：控件数组&lt;Array&gt;
 
 ## 功能概述

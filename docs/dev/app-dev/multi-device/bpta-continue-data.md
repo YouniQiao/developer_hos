@@ -3,8 +3,10 @@ title: "应用接续数据迁移"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-continue-data
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-continue-data
+last_sync: 2026-06-07
+sync_hash: 55c6dcc2
 ---
-
 # 应用接续数据迁移
 
 ## 概述

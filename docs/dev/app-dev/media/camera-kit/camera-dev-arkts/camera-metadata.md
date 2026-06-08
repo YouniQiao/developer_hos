@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "元数据(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-metadata
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-metadata
+last_sync: 2026-06-07
+sync_hash: f162fd12
 ---
-
-
 在开发相机应用时，需要先[申请相关权限](/docs/dev/app-dev/media/camera-kit/camera-preparation)。
 
 元数据（Metadata）是对相机返回的图像信息的描述和上下文。针对图像信息，提供更详细的数据，如照片或视频中，识别人像的取景框坐标的信息等。

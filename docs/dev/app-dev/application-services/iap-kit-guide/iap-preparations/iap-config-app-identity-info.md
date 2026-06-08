@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "配置应用身份信息"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-config-app-identity-info
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-config-app-identity-info
+last_sync: 2026-06-07
+sync_hash: 907fc47f
 ---
-
-
 ## bundleName配置
 
 在工程“AppScope/app.json5”下的**bundleName**需要与开发者在应用开发准备中[创建应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview#创建应用)时的包名保持一致。

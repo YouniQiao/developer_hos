@@ -2,8 +2,11 @@
 title: "申请验证获取正式权限"
 original_url: /docs/dev/atomic-dev/health-harmonyos-as/health-verification-as
 format: md
+upstream_id: dev/atomic-dev/health-harmonyos-as/health-verification-as
+last_sync: 2026-06-07
+sync_hash: 0bc15192
+upstream_hash: b4658fc28216
 ---
-
 
 完成[申请运动健康服务](/docs/dev/atomic-dev/health-preparations-as/health-apply-as)后，审核通过的权限为测试权限，有100个用户数量的限制。为解除用户数的限制，应用开发完成后，在上架之前，请按照以下步骤提交验证申请，以获取正式权限。完成验证后，您的应用可支持正式大规模商用。
 

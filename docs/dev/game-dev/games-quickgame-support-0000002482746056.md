@@ -2,9 +2,10 @@
 title: "小游戏（快游戏）技术支持"
 original_url: /docs/dev/game-dev/games-quickgame-support-0000002482746056
 format: md
+upstream_id: dev/game-dev/games-quickgame-support-0000002482746056
+last_sync: 2026-06-07
+sync_hash: e2b10caf
 ---
-
-
 当您遇到问题时，可以按照以下顺序寻求帮助。
 
 1. 请先仔细阅读文档，部分功能可能有限制。

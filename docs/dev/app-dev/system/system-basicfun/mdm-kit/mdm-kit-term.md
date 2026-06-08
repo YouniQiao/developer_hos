@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "MDM Kit术语"
 original_url: /docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-term
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-term
+last_sync: 2026-06-07
+sync_hash: d9557c9a
 ---
-
-
 ## EDM
 
 Enterprise device manager 企业设备管理, EDM服务是企业设备管理框架中的核心底座。

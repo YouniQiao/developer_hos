@@ -2,9 +2,10 @@
 format: md
 title: "Linux环境下编译报错“JavaScript heap out of memory”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-2
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-2
+last_sync: 2026-06-07
+sync_hash: a67556a4
 ---
-
-
 **问题现象**
 
 在Linux环境下，系统内存为64G，Hvigorw脚本中配置--max-old-space-size=40960，但在编译构建时，实际在使用内存未达到配置的内存（例如使用到20G左右）就出现报错“JavaScript heap out of memory”。

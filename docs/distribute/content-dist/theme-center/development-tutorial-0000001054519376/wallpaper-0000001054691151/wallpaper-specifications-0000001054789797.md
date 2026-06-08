@@ -2,9 +2,10 @@
 title: "壁纸设计指导及规范"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/wallpaper-0000001054691151/wallpaper-specifications-0000001054789797
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/wallpaper-0000001054691151/wallpaper-specifications-0000001054789797
+last_sync: 2026-06-07
+sync_hash: e7dc90ed
 ---
-
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # 壁纸设计指导及规范

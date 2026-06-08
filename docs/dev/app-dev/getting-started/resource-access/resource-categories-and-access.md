@@ -1,8 +1,10 @@
 ---
 title: "资源分类与访问"
 original_url: /docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access
+upstream_id: dev/app-dev/getting-started/resource-access/resource-categories-and-access
+last_sync: 2026-06-07
+sync_hash: b5cddc1b
 ---
-
 ## 功能介绍
 
 在应用开发中，常需使用字符串、颜色、字体、间距和图标等资源。为了让应用在不同设备（如手机、平板、车机）和配置（如语言、屏幕密度、颜色模式）下都能提供最佳体验，系统支持通过资源动态匹配机制，自动为各类场景选取最合适的资源。本文档将介绍资源类型与组织方式，并提供资源开发指导。
@@ -36,7 +38,7 @@ resources
 ![](./img/e714b6cb.png)
 
 * 资源目录和资源组目录下的文件均被视为资源文件，在应用打包时不会进行混淆。
-* 非resources目录下资源打包策略请参考[copyCodeResource](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile#table1476161719356)描述。
+* 非resources目录下资源打包策略请参考[copyCodeResource](/docs/tools/coding-debug/ide-hvigor-build-profile#table1476161719356)描述。
 * Stage模型多工程情况下，共有的资源文件放到AppScope下的resources目录。
 * 在编译构建时，AppScope目录下的资源文件会合入到模块下面的资源文件中，如果两个目录下的相同资源目录和资源组目录下存在重名资源，按照以下优先级进行打包（优先级由高到低）：AppScope里面的资源，HAP包自身模块，依赖的HAR模块（依赖的多个HAR之间有资源冲突，会按照工程oh-package.json5中dependencies下的依赖顺序进行覆盖，依赖顺序在前的优先级较高）。
 
@@ -345,7 +347,7 @@ string资源配置attr属性示例如下，其中string1字符串被标记为不
 
 ![](./img/581f8faa.png)
 
-若在HAR模块访问HAR自身资源时，在API version 22及之前版本，中间码HAR、字节码HAR通过资源ID相关接口访问资源时，因ID无效会抛出异常；从API version 23开始，若将[compatibleSdkVersion](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section45865492619)配置为23及以上，则在当前Module的[AbilityStage](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/abilitystage)的onCreate()回调执行后，中间码HAR、字节码HAR通过资源ID相关接口可以正常访问资源。
+若在HAR模块访问HAR自身资源时，在API version 22及之前版本，中间码HAR、字节码HAR通过资源ID相关接口访问资源时，因ID无效会抛出异常；从API version 23开始，若将[compatibleSdkVersion](/docs/tools/coding-debug/ide-hvigor-build-profile-app#section45865492619)配置为23及以上，则在当前Module的[AbilityStage](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/abilitystage)的onCreate()回调执行后，中间码HAR、字节码HAR通过资源ID相关接口可以正常访问资源。
 
 ### 访问跨HAP/HSP包资源
 

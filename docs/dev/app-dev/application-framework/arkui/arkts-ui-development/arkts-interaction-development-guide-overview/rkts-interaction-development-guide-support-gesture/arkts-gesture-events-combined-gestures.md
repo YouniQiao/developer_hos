@@ -2,9 +2,10 @@
 title: "组合手势"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-combined-gestures
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/rkts-interaction-development-guide-support-gesture/arkts-gesture-events-combined-gestures
+last_sync: 2026-06-07
+sync_hash: df52af32
 ---
-
-
 组合手势由多种单一手势组合而成，通过在[GestureGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-combined-gestures)中使用不同的[GestureMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-combined-gestures#gesturemode枚举说明)来声明该组合手势的类型，支持[顺序识别](#顺序识别)、[并行识别](#并行识别)和[互斥识别](#互斥识别)三种类型。
 
 ```

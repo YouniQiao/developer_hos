@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“Invalid tag 'xxx' at 'xxx/xxx.json5'.”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-148
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-148
+last_sync: 2026-06-07
+sync_hash: fcda1b2a
 ---
-
-
 **错误描述**
 
 在xxx/xxx.json5文件中存在无效的tag标签“xxx”。

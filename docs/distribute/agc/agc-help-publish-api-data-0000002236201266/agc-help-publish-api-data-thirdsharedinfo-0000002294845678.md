@@ -2,9 +2,10 @@
 title: "ThirdSharedInfo"
 original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-thirdsharedinfo-0000002294845678
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-thirdsharedinfo-0000002294845678
+last_sync: 2026-06-07
+sync_hash: 30b85047
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | name | O | String(100) | 第三方名称。 |

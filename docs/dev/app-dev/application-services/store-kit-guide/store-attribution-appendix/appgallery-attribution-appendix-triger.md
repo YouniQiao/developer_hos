@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "标准化事件及应用归因签名"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution-appendix/appgallery-attribution-appendix-triger
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-attribution-appendix/appgallery-attribution-appendix-triger
+last_sync: 2026-06-07
+sync_hash: a7c5f701
 ---
-
-
 ## 标准转化事件信息
 
 | 定义值 | 回传值 | 含义说明 |

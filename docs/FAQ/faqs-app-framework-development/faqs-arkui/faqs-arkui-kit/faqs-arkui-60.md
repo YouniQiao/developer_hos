@@ -2,9 +2,10 @@
 format: md
 title: "Navigation的toolbar中设置大图标时被切断"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-60
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-60
+last_sync: 2026-06-07
+sync_hash: 17ca0f56
 ---
-
-
 当图片尺寸超过toolbar高度时，可通过scale属性进行缩放调整。参考代码如下：
 
 ```

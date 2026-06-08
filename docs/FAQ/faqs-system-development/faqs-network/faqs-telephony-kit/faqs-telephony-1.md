@@ -2,9 +2,10 @@
 title: "如何判断蜂窝信号强度"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-telephony-kit/faqs-telephony-1
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-telephony-kit/faqs-telephony-1
+last_sync: 2026-06-07
+sync_hash: 90f2603b
 ---
-
-
 可以通过radio.getSignalInformation()接口获取蜂窝信号强度，具体步骤如下：
 
 1. 导入相应的模块。

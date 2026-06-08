@@ -2,9 +2,10 @@
 format: md
 title: "Profiler工具对Wearable设备开启泳道录制时会存在概率异常"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-7
+upstream_id: FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-7
+last_sync: 2026-06-07
+sync_hash: f9037e78
 ---
-
-
 **问题现象**
 
 使用DevEco Profiler对Wearable设备上的应用进行性能分析时，由于Wearable设备内存较小，在低内存情况下同时开启多个泳道的录制，可能导致应用被杀死，造成录制异常。

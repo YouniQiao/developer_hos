@@ -2,9 +2,10 @@
 title: "端到端验证"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/app-data-migration-verification/e2e-verification
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/app-data-migration-verification/e2e-verification
+last_sync: 2026-06-07
+sync_hash: 2a997321
 ---
-
-
 应用适配完成并[上架到华为应用市场](https://developer.huawei.com/consumer/cn/doc/app/agc-help-releaseharmony-0000001933963166)之后，开发者需要模拟终端用户将终端设备从HarmonyOS升级到HarmonyOS NEXT的场景，端到端验证应用数据迁移结果。
 
 1. 在应用适配完成并上架到华为应用市场之后，开发者可以端到端验证应用数据迁移结果。当前开发者持有的终端设备为HarmonyOS NEXT。开发者在验证升级前，需要将设备从HarmonyOS NEXT回退到HarmonyOS。系统回退的入口为：**设置** > **系统** > **开发者选项** > **系统回退**。

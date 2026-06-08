@@ -3,9 +3,10 @@ title: "命令：运动健康数据刷新命令&lt;RefreshHealthyCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-refreshhealthy-0000002504275017
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-refreshhealthy-0000002504275017
+last_sync: 2026-06-07
+sync_hash: e9e19e33
 ---
-
-
 # 命令：运动健康数据刷新命令&lt;RefreshHealthyCommand&gt;
 
 ## 功能概述

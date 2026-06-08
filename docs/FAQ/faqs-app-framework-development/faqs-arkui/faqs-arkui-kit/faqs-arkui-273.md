@@ -2,9 +2,10 @@
 title: "如何在Navigation页面中实现侧滑事件拦截"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-273
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-273
+last_sync: 2026-06-07
+sync_hash: f7c1d264
 ---
-
-
 1. 因为功能以har形式集成在主工程中，没有@Entry修饰的组件，无法作为入口组件，也不能使用onBackPress生命周期函数。
 2. 在使用onBackPressed时，它是NavDestination的事件，需要与NavDestination组件配合使用。组件本身用于显示导航内容区，作为子页面的根容器。因此，若需拦截子页面的返回事件，可以使用onBackPressed回调。
 3. 在使用onBackPress时， 生命周期函数onBackPress只能在 @Entry 组件中使用，因此可以使用该函数拦截入口组件的返回事件。

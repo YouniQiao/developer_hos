@@ -2,9 +2,10 @@
 title: "应用事件打点开发指导"
 original_url: /docs/dev/atomic-dev/atomic-log-development/atomic-hiappevent-guidelines
 format: md
+upstream_id: dev/atomic-dev/atomic-log-development/atomic-hiappevent-guidelines
+last_sync: 2026-06-07
+sync_hash: 5ea62bfc
 ---
-
-
 元服务使用应用事件打点的开发方式与传统应用使用应用事件打点的开发方式相同，详见[HiAppEvent使用指导](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent)。
 
 ![](./img/62ed2024.png)

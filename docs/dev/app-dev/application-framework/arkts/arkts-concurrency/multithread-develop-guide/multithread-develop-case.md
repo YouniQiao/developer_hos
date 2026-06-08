@@ -2,9 +2,10 @@
 title: "应用多线程开发实践案例"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case
+last_sync: 2026-06-07
+sync_hash: 5e421017
 ---
-
-
 * **[批量数据写数据库场景](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/batch-database-operations-guide)**
 * **[业务模块并发加载场景](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/concurrent-loading-modules-guide)**
 * **[全局配置项功能场景](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/global-configuration-guide)**

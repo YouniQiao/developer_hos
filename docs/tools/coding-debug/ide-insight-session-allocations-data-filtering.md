@@ -3,9 +3,10 @@ title: "内存分析数据筛选"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-insight-session-allocations-data-filtering
 format: md
+upstream_id: tools/coding-debug/ide-insight-session-allocations-data-filtering
+last_sync: 2026-06-07
+sync_hash: 6b913721
 ---
-
-
 # 内存分析数据筛选
 
 Allocation分析过程中提供多种数据筛选方式，方便开发者缩小分析范围，更精确地定位问题所在。

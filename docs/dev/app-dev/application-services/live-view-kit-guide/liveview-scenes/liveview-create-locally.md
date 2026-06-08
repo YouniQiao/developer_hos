@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "构建本地实况窗"
 original_url: /docs/dev/app-dev/application-services/live-view-kit-guide/liveview-scenes/liveview-create-locally
 format: md
+upstream_id: dev/app-dev/application-services/live-view-kit-guide/liveview-scenes/liveview-create-locally
+last_sync: 2026-06-07
+sync_hash: 20fba80c
 ---
-
-
 ## 简介
 
 开发者可以通过[liveViewManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager)模块构建本地实况窗，完成实况窗的整个生命周期流程（包括创建、更新与结束）。请注意，只有应用在前台运行，即用户实际使用应用并且产生了服务合约的情况下，开发者才可以创建实况窗；与此同时，本地更新或结束实况窗依赖于开发者的应用进程，所以我们更推荐开发者在本地创建实况窗后使用Push Kit更新或结束实况窗。

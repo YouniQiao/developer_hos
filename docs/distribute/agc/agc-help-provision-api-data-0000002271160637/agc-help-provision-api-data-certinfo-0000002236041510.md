@@ -2,9 +2,10 @@
 title: "CertInfo"
 original_url: /docs/distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-certinfo-0000002236041510
 format: md
+upstream_id: distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-certinfo-0000002236041510
+last_sync: 2026-06-07
+sync_hash: 0c37ebe0
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | id | O | String | 证书ID。 |

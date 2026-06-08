@@ -2,9 +2,10 @@
 title: "资源泄漏类问题分析方法"
 original_url: /docs/quality/stability-leak-way
 format: md
+upstream_id: /docs/quality/stability-leak-way
+last_sync: 2026-06-07
+sync_hash: 0d133d4d
 ---
-
-
 # 资源泄漏类问题分析方法
 
 ## 概述
@@ -27,7 +28,7 @@ format: md
 
 **开发态-JS泄漏分析方法（适用于开发过程中特定场景下调优）**
 
-使用DevEco Studio Snapshot能力可抓取两次heapdump，请参考[使用Snapshot模板基本操作](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-snapshot-basic-operations)，通过比较两次heapdump的对象delta进行分析：
+使用DevEco Studio Snapshot能力可抓取两次heapdump，请参考[使用Snapshot模板基本操作](/docs/tools/coding-debug/ide-snapshot-basic-operations)，通过比较两次heapdump的对象delta进行分析：
 
 Summary功能可以用来查看全量内存信息，Comparison可以用来进行两份内存快照对比。
 

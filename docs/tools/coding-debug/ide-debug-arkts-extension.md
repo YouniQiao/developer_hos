@@ -3,9 +3,10 @@ title: "extension调试"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-arkts-extension
 format: md
+upstream_id: tools/coding-debug/ide-debug-arkts-extension
+last_sync: 2026-06-07
+sync_hash: 24498782
 ---
-
-
 # extension调试
 
 开发者可通过两种方式对[Extension Ability](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/extensionability-overview)生命周期函数进行调试。

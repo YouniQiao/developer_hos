@@ -2,9 +2,10 @@
 title: "同应用跨设备数据同步概述"
 original_url: /docs/dev/app-dev/application-framework/arkdata/distributed-data-sync/sync-app-data-across-devices-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/distributed-data-sync/sync-app-data-across-devices-overview
+last_sync: 2026-06-07
+sync_hash: 4c190d3d
 ---
-
-
 ## 场景介绍
 
 跨设备数据同步功能（即分布式功能）指将数据库中的数据同步到组网环境中的其他设备。该功能常用于在可信认证的不同设备间自由同步、修改和查询用户应用程序数据。

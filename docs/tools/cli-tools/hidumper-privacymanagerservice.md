@@ -3,9 +3,10 @@ title: "PrivacyManagerService"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/hidumper-privacymanagerservice
 format: md
+upstream_id: tools/cli-tools/hidumper-privacymanagerservice
+last_sync: 2026-06-07
+sync_hash: a64b105a
 ---
-
-
 # PrivacyManagerService
 
 PrivacyManagerService是访问控制基于[hidumper](./hidumper.md)增强开发的命令行能力，可显示访问控制基础信息，获取敏感权限使用记录。
@@ -25,9 +26,11 @@ hidumper -s PrivacyManagerService -a '-h'
 <strong>使用样例：</strong>
 
 ```
--------------------------------[ability]-------------------------------
+---
+----------------------------[ability]-------------------------------
 
-----------------------------------PrivacyManagerService----------------------------------
+---
+-------------------------------PrivacyManagerService----------------------------------
 Privacy Dump:
 Usage:
        -h: command help
@@ -49,9 +52,11 @@ hidumper -s PrivacyManagerService -a '-t <tokenId>'
 ```
 hidumper -s PrivacyManagerService -a '-t 536992218'
 
--------------------------------[ability]-------------------------------
+---
+----------------------------[ability]-------------------------------
 
-----------------------------------PrivacyManagerService----------------------------------
+---
+-------------------------------PrivacyManagerService----------------------------------
 Privacy Dump:
 {
   "permissionRecord": [

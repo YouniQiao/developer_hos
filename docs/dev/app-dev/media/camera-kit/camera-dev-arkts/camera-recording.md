@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "录像(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-recording
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-recording
+last_sync: 2026-06-07
+sync_hash: a7f015bc
 ---
-
-
 在开发相机应用时，需要先[申请相关权限](/docs/dev/app-dev/media/camera-kit/camera-preparation)。
 
 相机应用可通过调用和控制相机设备，完成预览、拍照和录像等基础操作。

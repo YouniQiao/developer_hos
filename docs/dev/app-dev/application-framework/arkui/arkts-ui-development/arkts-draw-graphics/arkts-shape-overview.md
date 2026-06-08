@@ -2,9 +2,10 @@
 title: "几何图形绘制概述"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-draw-graphics/arkts-shape-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-draw-graphics/arkts-shape-overview
+last_sync: 2026-06-07
+sync_hash: 3b5340d9
 ---
-
-
 绘制几何图形有两种方法：一是通过绘制组件[Shape](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-shape)直接绘制出几何图形；二是通过形状裁剪属性[clipShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sharp-clipping#clipshape12)将组件裁剪成几何图形。
 
 ## 使用场景

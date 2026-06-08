@@ -3,9 +3,10 @@ title: "提升付费"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-increase-payment-0000001683109285
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-increase-payment-0000001683109285
+last_sync: 2026-06-07
+sync_hash: b723abf1
 ---
-
-
 # 提升付费
 
 为了提升用户付费，增加收益，您可以创建提升付费活动。活动期间，在应用内充值到达指定金额的用户有机会获得奖励。

@@ -3,8 +3,10 @@ title: 应用状态栏接入
 sidebar_label: 应用状态栏接入
 original_url: /docs/design/multi-device-design/2in1/statusbar
 format: md
+upstream_id: design/multi-device-design/2in1/statusbar
+last_sync: 2026-06-07
+sync_hash: 5904480a
 ---
-
 \{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 应用接入状态栏

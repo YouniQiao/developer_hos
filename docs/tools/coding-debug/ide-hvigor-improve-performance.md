@@ -3,9 +3,10 @@ title: "并行构建"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-improve-performance
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-improve-performance
+last_sync: 2026-06-07
+sync_hash: 18433e50
 ---
-
-
 # 并行构建
 
 大部分工程都包含了多个子工程，其中一些子工程是相互独立的，也就是说，它们之间没有状态共享。在大多数情况下，通过并行构建可以有效地减少多个子工程的整体构建时间。然而，在特定的情况下，如子工程之间存在大量的依赖关系，可能无法显著缩短构建时间。节省的具体时间取决于您的工程结构和子工程之间的依赖关系。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取分享结果"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-share-completed
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-share-completed
+last_sync: 2026-06-07
+sync_hash: c9cb9688
 ---
-
-
 ## 场景介绍
 
 从5.1.0(18)版本开始，支持宿主应用获取用户分享结果。

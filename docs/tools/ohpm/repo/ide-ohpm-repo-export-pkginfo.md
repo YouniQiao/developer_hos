@@ -2,9 +2,10 @@
 title: "ohpm-repo export_pkginfo"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-export-pkginfo
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-export-pkginfo
+last_sync: 2026-06-07
+sync_hash: c59a41e2
 ---
-
-
 # ohpm-repo export\_pkginfo
 
 导出ohpm-repo或OpenHarmony三方库中心仓已上架的包列表。

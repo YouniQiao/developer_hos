@@ -2,9 +2,10 @@
 title: "查看免费配额的使用情况"
 original_url: /docs/distribute/agc/agc-help-service-price-0000002247180512/agc-help-check-quota-0000002278002937
 format: md
+upstream_id: distribute/agc/agc-help-service-price-0000002247180512/agc-help-check-quota-0000002278002937
+last_sync: 2026-06-07
+sync_hash: f05a1c78
 ---
-
-
 免费试用时，您可以在AppGallery Connect查询免费配额的使用情况，避免因配额用尽导致业务中断。
 
 ![](../img/agc-help-check-quota-0000002278002937_0.png)

@@ -2,9 +2,10 @@
 title: "Map"
 original_url: /docs/dev/atomic-dev/ascf/components-map-components/components-map
 format: md
+upstream_id: dev/atomic-dev/ascf/components-map-components/components-map
+last_sync: 2026-06-07
+sync_hash: 97c85aaa
 ---
-
-
 地图组件。
 
 使用前，需参考[开发准备](/docs/dev/app-dev/application-services/map-config-agc)完成基本准备工作。

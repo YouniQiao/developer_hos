@@ -2,8 +2,11 @@
 title: "元服务开发指导"
 original_url: /docs/dev/atomic-dev/atomic-service-development/atomic-service-development
 format: md
+upstream_id: dev/atomic-dev/atomic-service-development/atomic-service-development
+last_sync: 2026-06-07
+sync_hash: dbe6ca90
+upstream_hash: ddce15d4a25a
 ---
-
 
 * **[元服务开发准备](/docs/dev/atomic-dev/atomic-service-development/atomic-dev-preparation)**
 * **[元服务框架开发](/docs/dev/atomic-dev/atomic-service-framework-development/atomic-service-framework-development)**

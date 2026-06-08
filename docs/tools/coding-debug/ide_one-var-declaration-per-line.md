@@ -3,9 +3,10 @@ title: "@hw-stylistic/one-var-declaration-per-line"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_one-var-declaration-per-line
 format: md
+upstream_id: tools/coding-debug/ide_one-var-declaration-per-line
+last_sync: 2026-06-07
+sync_hash: 72e76590
 ---
-
-
 # @hw-stylistic/one-var-declaration-per-line
 
 变量声明时，要求一次仅声明一个变量。该规则仅检查.ets文件类型。

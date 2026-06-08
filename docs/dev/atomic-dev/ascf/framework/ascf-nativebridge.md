@@ -2,9 +2,10 @@
 title: "框架间通信"
 original_url: /docs/dev/atomic-dev/ascf/framework/ascf-nativebridge
 format: md
+upstream_id: dev/atomic-dev/ascf/framework/ascf-nativebridge
+last_sync: 2026-06-07
+sync_hash: 84c6608b
 ---
-
-
 当前，ASCF可调用的系统能力小于ArkTS中元服务可调用的系统能力，可通过打通ASCF到ArkTS的调用能力，以快速补充ASCF缺失的能力。开发者可通过在EntryAbility类中复写onNativeCalled或者onNativeCalledAsync接口，来调用系统能力实现自己的功能，然后在JS代码中调用has.callNative或者has.callNativeAsync来触发EntryAbility类中编写的调用系统能力的逻辑，实现在JS代码中调用ArkTS系统能力。
 
 ## AscfUIAbility.onNativeCalled

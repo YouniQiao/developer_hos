@@ -2,9 +2,10 @@
 format: md
 title: "如何解决mac启动DevEco Studio报错提示“DevEco Studio”意外退出问题"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-13
+upstream_id: FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-13
+last_sync: 2026-06-07
+sync_hash: f95905c3
 ---
-
-
 **问题描述**
 
 Mac启动DevEco Studio时，“DevEco Studio”意外退出。

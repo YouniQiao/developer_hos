@@ -3,10 +3,10 @@ title: "集成接入前准备"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_api_gett-started-0000001246419770
 format: md
+upstream_id: monetize/monetization/agd_pro_api_gett-started-0000001246419770
+last_sync: 2026-06-07
+sync_hash: b7396e7b
 ---
-
-
-
 #### 注册认证
 
 1. 注册华为帐号。
@@ -22,7 +22,7 @@ format: md
 
 #### 签署协议
 
-帐号注册完后，首次登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站时，请先签署首页弹出的华为AppGallery Connect服务协议。具体请参见[AppGallery Connect 协议签署指南](https://developer.huawei.com/consumer/cn/doc/distribution/app/signing-guide)。
+帐号注册完后，首次登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站时，请先签署首页弹出的华为AppGallery Connect服务协议。具体请参见[AppGallery Connect 协议签署指南](/docs/distribute/app-dist/app-market/x20240513/signing-guide)。
 
 #### 上架应用
 

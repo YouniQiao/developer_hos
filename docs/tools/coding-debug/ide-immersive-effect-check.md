@@ -3,9 +3,10 @@ title: "@cross-device-app-dev/immersive-effect-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-immersive-effect-check
 format: md
+upstream_id: tools/coding-debug/ide-immersive-effect-check
+last_sync: 2026-06-07
+sync_hash: e585a4d7
 ---
-
-
 # @cross-device-app-dev/immersive-effect-check
 
 若应用通过[setWindowLayoutFullScreen()](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowlayoutfullscreen9)接口设置窗口布局，建议调用[getWindowAvoidArea()](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#getwindowavoidarea9)和[on('avoidAreaChange')](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#onavoidareachange9)获取和动态监听避让区域的变更信息，使页面布局根据避让区域信息进行动态调整。

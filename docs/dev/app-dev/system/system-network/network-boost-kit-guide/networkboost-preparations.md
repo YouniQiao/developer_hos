@@ -2,9 +2,10 @@
 title: "开发准备"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-preparations
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-preparations
+last_sync: 2026-06-07
+sync_hash: ce230095
 ---
-
-
 ## 申请权限
 
 ### 场景概述
@@ -59,8 +60,8 @@ target_link_libraries(entry PUBLIC libnetwork_boost.so) #链接libnetwork_boost.
 
 ## 配置签名
 
-* 调试阶段需要在AGC中[申请调试证书](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-debugcert-0000001914263178)、[注册调试设备](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-device-0000001946142249)、[申请调试Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-debugprofile-0000001914423102)后，再[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)，或者通过DevEco Studio自动签名完成申请，在自动签名的过程中，将由DevEco Studio完成向AGC申请受限权限的步骤，开发者可直接使用，具体请参考[自动签名-操作步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section151231211105010)。
-* 发布阶段**必须在AGC中重新**[申请发布证书](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-releasecert-0000001946273961)、[发布Profile文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-releaseprofile-0000001914714796)，并完成[配置签名信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app#section280162182818)。
+* 调试阶段需要在AGC中[申请调试证书](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-debugcert-0000001914263178)、[注册调试设备](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-device-0000001946142249)、[申请调试Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-debugprofile-0000001914423102)后，再[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)，或者通过DevEco Studio自动签名完成申请，在自动签名的过程中，将由DevEco Studio完成向AGC申请受限权限的步骤，开发者可直接使用，具体请参考[自动签名-操作步骤](/docs/tools/coding-debug/ide-signing#section151231211105010)。
+* 发布阶段**必须在AGC中重新**[申请发布证书](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-releasecert-0000001946273961)、[发布Profile文件](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-releaseprofile-0000001914714796)，并完成[配置签名信息](/docs/tools/coding-debug/ide-publish-app#section280162182818)。
 
 ## 受限ACL权限申请
 
@@ -76,7 +77,7 @@ target_link_libraries(entry PUBLIC libnetwork_boost.so) #链接libnetwork_boost.
 4. 权限申请通过后在“已获取权限”中可以看到已申请的权限，勾选后点击确定。
 
    ![](./img/e8c95a22.png)
-5. 选择权限后点击“添加”生成新的Profile文件，下载后按[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)替换profile文件。
+5. 选择权限后点击“添加”生成新的Profile文件，下载后按[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)替换profile文件。
 6. 在工程中entry模块的module.json5文件中，在"requestPermissions"节点添加"ohos.permission.LINKTURBO"权限，如下所示：
 
 ```

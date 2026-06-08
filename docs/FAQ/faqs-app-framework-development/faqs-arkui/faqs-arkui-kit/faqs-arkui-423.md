@@ -2,9 +2,10 @@
 format: md
 title: "Navigation跨模块跳转报错"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-423
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-423
+last_sync: 2026-06-07
+sync_hash: 3b52c458
 ---
-
-
 **问题描述**
 
 Navigation路由到子模块报错，跨包跳转时失败，该怎么定位和分析。

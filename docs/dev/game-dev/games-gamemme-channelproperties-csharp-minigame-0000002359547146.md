@@ -2,9 +2,10 @@
 title: "自定义频道属性"
 original_url: /docs/dev/game-dev/games-gamemme-channelproperties-csharp-minigame-0000002359547146
 format: md
+upstream_id: dev/game-dev/games-gamemme-channelproperties-csharp-minigame-0000002359547146
+last_sync: 2026-06-07
+sync_hash: 7dcbb06a
 ---
-
-
 游戏多媒体实时信令功能支持设置频道自定义属性，例如频道标签、状态等。同时，还支持监听频道自定义属性的变更，及时感知频道属性的修改。
 
 ## 前提条件

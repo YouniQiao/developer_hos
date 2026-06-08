@@ -3,8 +3,10 @@ title: "一方数据人群"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/customized-audience-0000001182393560
 format: md
+upstream_id: monetize/promotion/customized-audience-0000001182393560
+last_sync: 2026-06-07
+sync_hash: 519c8e47
 ---
-
 # 一方数据人群
 
 ## 概述

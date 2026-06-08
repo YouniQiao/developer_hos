@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "自定义界面扫码如何连续扫码（customScan.rescan）"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-10
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-10
+last_sync: 2026-06-07
+sync_hash: f61f4e47
 ---
-
-
 **问题现象**
 
 自定义界面扫码扫到码值后，如何连续扫码？

@@ -2,9 +2,10 @@
 title: "业务介绍"
 original_url: /docs/distribute/agc/agc-help-apms-0000002235870062/agc-help-apms-introduction-0000002236333914
 format: md
+upstream_id: distribute/agc/agc-help-apms-0000002235870062/agc-help-apms-introduction-0000002236333914
+last_sync: 2026-06-07
+sync_hash: 8efdd011
 ---
-
-
 #### 简介
 
 应用性能监测服务（Application Performance Management Service，简称APMS）是AppGallery Connect（简称AGC）向开发者提供的一个现网质量监测解决方案。它能帮助您监测现网应用的崩溃（CPP CRASH、JS ERROR）、应用无响应（APP FREEZE）等稳定性指标，以及应用的启动、页面加载、耗电等性能指标。它提供每个问题发生时的环境信息、堆栈信息等分析数据，并支持基于堆栈关键行进行准确的同类异常汇聚，让您轻松准确快速发现、识别、定位和解决问题。它还支持问题标记、指标告警等辅助能力，帮助您更高效的监测、处理质量问题。

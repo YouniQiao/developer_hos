@@ -2,8 +2,11 @@
 title: "振动"
 original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-vibrator
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-device/apis-vibrator
+last_sync: 2026-06-07
+sync_hash: 7c68b3a9
+upstream_hash: 84cdab884ae4
 ---
-
 
 ## has.vibrateShort
 

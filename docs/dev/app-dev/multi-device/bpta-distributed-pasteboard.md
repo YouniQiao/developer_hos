@@ -3,8 +3,10 @@ title: "跨设备剪贴板常见场景"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-distributed-pasteboard
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-distributed-pasteboard
+last_sync: 2026-06-07
+sync_hash: 53310f98
 ---
-
 # 跨设备剪贴板常见场景
 
 ## 概述
@@ -60,7 +62,7 @@ await systemPasteboard.setData(pasteData);
 
 **读取剪贴板数据实现跳转**
 
-由于应用读取系统剪贴板的权限[ohos.permission.READ\_PASTEBOARD](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions#ohospermissionread_pasteboard)是受限访问的，因此需要先通过AGC平台申请此权限，才能获取系统剪贴板内的数据。具体申请权限的流程可参考[使用ACL的签名配置指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section89479413571)。
+由于应用读取系统剪贴板的权限[ohos.permission.READ\_PASTEBOARD](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions#ohospermissionread_pasteboard)是受限访问的，因此需要先通过AGC平台申请此权限，才能获取系统剪贴板内的数据。具体申请权限的流程可参考[使用ACL的签名配置指导](/docs/tools/coding-debug/ide-signing#section89479413571)。
 
 首先，应用在启动时或从后台进入前台时，在[onPageShow()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#onpageshow)生命周期中检查系统剪贴板中是否包含URI类型数据。URI类型数据存在时检查权限ohos.permission.READ\_PASTEBOARD是否已授权。确认权限授权后，使用[getData()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pasteboard#getdata9)方法获取系统剪贴板内的数据，并使用[getPrimaryUri()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-pasteboard#getprimaryuri7)方法获取单URI类型的数据。校验数据格式正确后，拉起弹窗询问用户是否需要执行跳转。
 

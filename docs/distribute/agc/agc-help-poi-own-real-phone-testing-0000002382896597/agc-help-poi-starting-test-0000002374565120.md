@@ -2,9 +2,10 @@
 title: "开始测试"
 original_url: /docs/distribute/agc/agc-help-poi-own-real-phone-testing-0000002382896597/agc-help-poi-starting-test-0000002374565120
 format: md
+upstream_id: distribute/agc/agc-help-poi-own-real-phone-testing-0000002382896597/agc-help-poi-starting-test-0000002374565120
+last_sync: 2026-06-07
+sync_hash: 6f071033
 ---
-
-
 建议在测试任务下发1小时后开始测试。测试时您需要携带测试手机进入测试POI的200米感应范围内，体验小艺建议出卡效果。
 
 * 如果小艺建议正常出卡，请按照[小艺建议出卡的验收要求](/docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-xiaoyi-requirements-for-card-out-0000002430663182)进行测试。

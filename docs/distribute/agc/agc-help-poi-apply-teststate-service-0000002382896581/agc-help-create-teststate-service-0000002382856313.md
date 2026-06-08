@@ -2,9 +2,10 @@
 title: "创建测试态服务"
 original_url: /docs/distribute/agc/agc-help-poi-apply-teststate-service-0000002382896581/agc-help-create-teststate-service-0000002382856313
 format: md
+upstream_id: distribute/agc/agc-help-poi-apply-teststate-service-0000002382896581/agc-help-create-teststate-service-0000002382856313
+last_sync: 2026-06-07
+sync_hash: b8f4fe84
 ---
-
-
 ![](../img/agc-help-create-teststate-service-0000002382856313_0.png)
 
 一个应用/元服务最多支持创建2000个近场服务。

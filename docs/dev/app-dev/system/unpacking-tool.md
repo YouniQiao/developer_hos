@@ -2,9 +2,10 @@
 title: "拆包工具"
 original_url: /docs/dev/app-dev/system/unpacking-tool
 format: md
+upstream_id: dev/app-dev/system/unpacking-tool
+last_sync: 2026-06-07
+sync_hash: a17c0d4d
 ---
-
-
 拆包工具是HarmonyOS提供的一种调测工具，支持通过命令行方式将HAP、HSP、App等文件解压成文件夹，并且提供Java接口对HAP、HSP、App等文件进行解析。
 
 拆包所用的app\_unpacking\_tool.jar，可以在本地下载的HarmonyOS的SDK库中找到。
@@ -267,7 +268,7 @@ java -jar app_unpacking_tool.jar --mode appqf --appqf-path <path> --out-path <pa
 | descriptions | HashMap\<String, String\> | 标识HAP的说明信息。 | NA |
 | compressedSize | long | 标识HAP包压缩后的大小，单位字节。 | NA |
 | originalSize | long | 标识HAP包的原始大小，单位字节。 | NA |
-| isModuleAbcCompressed | boolean | 标识[modules.abc](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-compile-build)文件是否为压缩状态。true表示压缩状态，false表示非压缩状态。 | NA |
+| isModuleAbcCompressed | boolean | 标识[modules.abc](/docs/tools/coding-debug/ide-compile-build)文件是否为压缩状态。true表示压缩状态，false表示非压缩状态。 | NA |
 | requiredDeviceFeatures | Map\<String, List<String\>> | 标识当前Module运行所需要的特定的设备特性。详细请参见[requiredDeviceFeatures标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#requireddevicefeatures标签) | 从API version 24开始支持。 |
 
 ### AbilityInfo结构体信息

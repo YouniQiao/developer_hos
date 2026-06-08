@@ -3,8 +3,10 @@ title: "多设备旅行订票界面"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/multi-travel-accommodation
 format: md
+upstream_id: dev/app-dev/multi-device/multi-travel-accommodation
+last_sync: 2026-06-07
+sync_hash: bf1e3f0b
 ---
-
 # 多设备旅行订票界面
 
 ## 概述

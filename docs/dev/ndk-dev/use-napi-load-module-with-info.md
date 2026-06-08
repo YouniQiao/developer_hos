@@ -2,9 +2,10 @@
 title: "使用Node-API接口进行模块加载"
 original_url: /docs/dev/ndk-dev/use-napi-load-module-with-info
 format: md
+upstream_id: dev/ndk-dev/use-napi-load-module-with-info
+last_sync: 2026-06-07
+sync_hash: 618ebc48
 ---
-
-
 Node-API中的napi\_load\_module\_with\_info接口的功能是进行模块的加载，当模块加载出来之后，可以使用函数napi\_get\_property获取模块导出的变量，也可以使用napi\_get\_named\_property获取模块导出的函数，该函数可以在[新创建的ArkTS基础运行时环境](/docs/dev/ndk-dev/use-napi-ark-runtime)中使用，即napi\_create\_ark\_runtime接口创建的运行时环境。
 
 ## 函数说明

@@ -2,9 +2,10 @@
 title: "核准（备案）"
 original_url: /docs/dev/game-dev/games-quickgame-faq-recordal-0000002425133922
 format: md
+upstream_id: dev/game-dev/games-quickgame-faq-recordal-0000002425133922
+last_sync: 2026-06-07
+sync_hash: 24c8e8e0
 ---
-
-
 ## 仅需在华为接入商核准（备案）快游戏，还是所有接入商都要核准（备案）？
 
 每个接入商都要单独核准（备案），例如在华为接入商核准（备案）快游戏成功后，还可以在其它接入商接入快游戏。

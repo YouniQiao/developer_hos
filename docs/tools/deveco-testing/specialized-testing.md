@@ -3,9 +3,10 @@ title: "专项测试"
 displayed_sidebar: devecoTestingSidebar
 original_url: /docs/tools/deveco-testing/specialized-testing
 format: md
+upstream_id: tools/deveco-testing/specialized-testing
+last_sync: 2026-06-07
+sync_hash: 5cd76835
 ---
-
-
 # 专项测试
 
 ![](./img/zh-cn_image_0000002503713790.png)

@@ -2,9 +2,10 @@
 title: "如何用已有证书做RSA的公钥加密"
 original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-23
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-23
+last_sync: 2026-06-07
+sync_hash: 5665cda1
 ---
-
-
 **问题场景**
 
 使用PEM格式证书中的公钥调用示例中的 `rsaPubKeyEncrypt()` 方法时，初始化失败。使用指南中示例的公钥可以成功加密，但加密后的数据转换为字符串后显示为乱码。

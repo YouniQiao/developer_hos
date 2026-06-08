@@ -3,9 +3,10 @@ title: "运营看板"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/observe-0000002521675110/operations-dashboard-0000002552835075
 format: md
+upstream_id: distribute/xiaoyi/observe-0000002521675110/operations-dashboard-0000002552835075
+last_sync: 2026-06-07
+sync_hash: 2073c27d
 ---
-
-
 # 运营看板
 
 ## 概述

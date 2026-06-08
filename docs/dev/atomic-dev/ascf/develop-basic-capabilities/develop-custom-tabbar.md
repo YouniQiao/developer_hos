@@ -2,9 +2,10 @@
 title: "自定义tabBar"
 original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-custom-tabbar
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-basic-capabilities/develop-custom-tabbar
+last_sync: 2026-06-07
+sync_hash: 9f82246f
 ---
-
-
 自定义tabBar可以让开发者更灵活地设置tabBar样式，以满足更多个性化的场景。
 
 在自定义tabBar模式下：

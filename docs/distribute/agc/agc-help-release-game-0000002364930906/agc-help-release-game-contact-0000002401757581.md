@@ -2,9 +2,10 @@
 title: "配置联系方式"
 original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-contact-0000002401757581
 format: md
+upstream_id: distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-contact-0000002401757581
+last_sync: 2026-06-07
+sync_hash: b466e29d
 ---
-
-
 若账号归属地为中国大陆，请填写游戏负责人的联系方式，方便审核人员与您沟通游戏上架的审核问题。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，选择待上架的游戏。

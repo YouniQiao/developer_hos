@@ -2,9 +2,10 @@
 title: "图片编码"
 original_url: /docs/dev/atomic-dev/atomic-image-development/atomic-image-encoding
 format: md
+upstream_id: dev/atomic-dev/atomic-image-development/atomic-image-encoding
+last_sync: 2026-06-07
+sync_hash: ba5e0bcb
 ---
-
-
 图片编码指将PixelMap编码成不同格式的存档图片（当前仅支持打包为JPEG、WebP 和 PNG格式），用于后续处理，如保存、传输等。
 
 ## 开发步骤

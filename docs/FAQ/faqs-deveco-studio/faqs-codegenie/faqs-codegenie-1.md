@@ -2,9 +2,10 @@
 format: md
 title: "应用UI生成插件解压缩APK文件时，提示“tar.exe: Tool-small extra data: Need at least 4 bytes, but only found 1 bytes”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-codegenie/faqs-codegenie-1
+upstream_id: FAQ/faqs-deveco-studio/faqs-codegenie/faqs-codegenie-1
+last_sync: 2026-06-07
+sync_hash: 5b68949f
 ---
-
-
 **问题现象**
 
 在Windows环境下使用应用UI生成插件时，选择完配置项信息（Install Package Path、SDK Path、Git Bash Path），点击Next按钮后，在应用UI生成插件的执行终端中提示“tar.exe: Tool-small extra data: Need at least 4 bytes, but only found 1 bytes”。

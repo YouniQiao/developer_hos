@@ -2,9 +2,10 @@
 title: "查询Profile列表"
 original_url: /docs/distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-query-provision-0000002236041506
 format: md
+upstream_id: distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-query-provision-0000002236041506
+last_sync: 2026-06-07
+sync_hash: 238ef4ea
 ---
-
-
 #### 功能介绍
 
 此接口用于查询申请的Profile。

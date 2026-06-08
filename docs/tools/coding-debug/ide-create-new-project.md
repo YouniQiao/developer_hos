@@ -2,9 +2,10 @@
 title: "创建一个新的工程"
 format: md
 original_url: /docs/tools/coding-debug/ide-create-new-project
+upstream_id: tools/coding-debug/ide-create-new-project
+last_sync: 2026-06-07
+sync_hash: c508b54b
 ---
-
-
 # 创建一个新的工程
 
 当您开始开发一个应用/元服务时，首先需要根据工程创建向导，创建一个新的工程，工具会自动生成对应的代码和资源模板。

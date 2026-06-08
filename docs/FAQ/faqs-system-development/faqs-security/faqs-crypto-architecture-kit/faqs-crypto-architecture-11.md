@@ -2,9 +2,10 @@
 title: "如何对大文件进行SM4加密"
 original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-11
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-11
+last_sync: 2026-06-07
+sync_hash: 404c7312
 ---
-
-
 使用分段加解密时，对于ECB和CBC模式，不论update传入的数据是否为分组长度的整数倍，都会以分组为单位进行加/解密，并输出本次update产生的新分组结果。当update积累的数据达到分组长度时产生输出，否则返回null。未加/解密的数据将保留，等待下一次update/doFinal时拼接继续处理。最后，doFinal会将剩余未加/解密的数据，根据创建cipher时设置的padding模式进行填充，补齐到分组的整数倍长度，再输出剩余加解密结果。
 
 参考代码如下：

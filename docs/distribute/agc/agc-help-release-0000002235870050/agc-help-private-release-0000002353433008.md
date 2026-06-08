@@ -2,9 +2,10 @@
 title: "定向应用发布"
 original_url: /docs/distribute/agc/agc-help-release-0000002235870050/agc-help-private-release-0000002353433008
 format: md
+upstream_id: distribute/agc/agc-help-release-0000002235870050/agc-help-private-release-0000002353433008
+last_sync: 2026-06-07
+sync_hash: 536ed5be
 ---
-
-
 #### 概述
 
 对于不适合面向所有用户公开分发，以及面向特定企业的私有化定制应用，您可以将应用的分发方式设置为“定向应用发布”，定向应用发布的应用不会出现在华为应用市场的任何类别、推荐、排行榜、搜索结果或其他列表中，仅能通过兑换码和链接供用户发现、下载和更新，且每个链接仅支持单次兑换下载。通过控制链接分发数量，实现安全可控分发。

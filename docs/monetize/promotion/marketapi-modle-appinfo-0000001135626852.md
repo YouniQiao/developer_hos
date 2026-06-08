@@ -3,6 +3,10 @@ title: "AppInfo"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-appinfo-0000001135626852
 format: md
+upstream_id: monetize/promotion/marketapi-modle-appinfo-0000001135626852
+last_sync: 2026-06-07
+sync_hash: c282aa14
+upstream_hash: 95560dbf90a5
 ---
 
 # AppInfo

@@ -3,9 +3,10 @@ title: "插件分类"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/develop-plug-ins-0000002435989648/plug-in-classification-0000002471344177
 format: md
+upstream_id: distribute/xiaoyi/develop-plug-ins-0000002435989648/plug-in-classification-0000002471344177
+last_sync: 2026-06-07
+sync_hash: c7f278da
 ---
-
-
 # 插件分类
 
 MCP插件：提供能力的是MCP服务，按MCP标准协议调用配置接口获取服务内容。

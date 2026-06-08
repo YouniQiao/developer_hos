@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "手电筒使用(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-torch-use
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-torch-use
+last_sync: 2026-06-07
+sync_hash: 82093dd1
 ---
-
-
 通过操作设备启用手电筒功能，可使设备的手电筒保持常亮状态。
 
 在使用相机应用并操作手电筒功能时，存在以下几种情况说明：

@@ -2,9 +2,10 @@
 format: md
 title: "卡片开发中如何实现数据持久化"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-6
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-6
+last_sync: 2026-06-07
+sync_hash: 838a6d55
 ---
-
-
 HarmonyOS提供三种主要数据持久化方案：用户首选项(Preferences)适用于轻量级键值存储，键值型数据库(KV-Store)支持分布式数据同步，关系型数据库(RelationalStore)提供SQLite关系型数据管理能力。
 
 * 用户首选项（Preferences）：将数据存入Preferences实例后，使用`flush()`方法实现数据持久化，建议在应用生命周期关键节点(如onBackground)主动调用以确保数据安全。

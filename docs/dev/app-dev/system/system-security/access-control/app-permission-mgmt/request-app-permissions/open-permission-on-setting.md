@@ -2,9 +2,10 @@
 title: "手动设置授权"
 original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/open-permission-on-setting
 format: md
+upstream_id: dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/open-permission-on-setting
+last_sync: 2026-06-07
+sync_hash: d5b4aa70
 ---
-
-
 当应用需要访问用户的隐私信息或使用敏感系统能力时，如拦截键盘输入事件，应向用户申请授权。这些权限属于[manual\_settings](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#manual_settings手动设置授权)权限。
 
 当应用申请manual\_settings权限时，需完成以下步骤：

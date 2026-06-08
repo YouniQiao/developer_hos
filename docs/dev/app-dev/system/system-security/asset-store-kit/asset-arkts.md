@@ -2,9 +2,10 @@
 title: "Asset Store Kit开发指导(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts
 format: md
+upstream_id: dev/app-dev/system/system-security/asset-store-kit/asset-arkts
+last_sync: 2026-06-07
+sync_hash: d6df25db
 ---
-
-
 * **[新增关键资产(ArkTS)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-add)**
 * **[删除关键资产(ArkTS)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-remove)**
 * **[更新关键资产(ArkTS)](/docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-update)**

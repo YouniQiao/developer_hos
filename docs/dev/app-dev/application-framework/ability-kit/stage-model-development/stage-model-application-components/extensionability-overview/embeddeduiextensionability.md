@@ -2,9 +2,10 @@
 title: "EmbeddedUIExtensionAbility"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview/embeddeduiextensionability
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview/embeddeduiextensionability
+last_sync: 2026-06-07
+sync_hash: dc77c5de
 ---
-
-
 ## 概述
 
 [EmbeddedUIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-embeddeduiextensionability)是EMBEDDED\_UI类型的[ExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-extensionability)组件，提供了跨进程界面嵌入的能力。

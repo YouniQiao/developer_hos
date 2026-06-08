@@ -2,14 +2,15 @@
 title: "视频分段上传"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/huawei-video-baihua/Content Connect API/video-management/video-multipart-upload-0000001270927645
+upstream_id: distribute/content-dist/huawei-video-baihua/Content Connect API/video-management/video-multipart-upload-0000001270927645
+last_sync: 2026-06-07
+sync_hash: 7cf8042b
 ---
-
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # 视频分段上传
 
-该接口用于获取上传视频到文件服务器的参数，拿到上传参数后需要自行上传视频到文件服务器，上传方法参照“[上传文件](https://developer.huawei.com/consumer/cn/doc/distribution/content/upload-file-0000001225965698)”。
+该接口用于获取上传视频到文件服务器的参数，拿到上传参数后需要自行上传视频到文件服务器，上传方法参照“[上传文件](/docs/distribute/content-dist/huawei-video-baihua/Content Connect API/upload-file-0000001225965698)”。
 
 Scope：https://www.huawei.com/contentconnect/video
 

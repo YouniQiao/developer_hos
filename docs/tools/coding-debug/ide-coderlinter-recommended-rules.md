@@ -3,9 +3,10 @@ title: "recommended推荐规则清单"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-coderlinter-recommended-rules
 format: md
+upstream_id: tools/coding-debug/ide-coderlinter-recommended-rules
+last_sync: 2026-06-07
+sync_hash: d5fddada
 ---
-
-
 # recommended推荐规则清单
 
 #### 通用规则推荐规则集@typescript-eslint/recommended

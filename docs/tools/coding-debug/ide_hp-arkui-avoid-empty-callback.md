@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-avoid-empty-callback"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-avoid-empty-callback
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-avoid-empty-callback
+last_sync: 2026-06-07
+sync_hash: 19ce8cc1
 ---
-
-
 # @performance/hp-arkui-avoid-empty-callback
 
 避免设置空的系统回调监听。

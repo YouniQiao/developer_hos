@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "打开应用功能跳转第三方应用失败"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button-frequently-asked-questions/scenario-fusion-faq-2
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button-frequently-asked-questions/scenario-fusion-faq-2
+last_sync: 2026-06-07
+sync_hash: bdf617e9
 ---
-
-
 **现象描述**
 
 日志报错示例：

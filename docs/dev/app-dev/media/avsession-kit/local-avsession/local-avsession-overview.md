@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "本地媒体会话概述"
 original_url: /docs/dev/app-dev/media/avsession-kit/local-avsession/local-avsession-overview
 format: md
+upstream_id: dev/app-dev/media/avsession-kit/local-avsession/local-avsession-overview
+last_sync: 2026-06-07
+sync_hash: 1d590188
+upstream_hash: da3a34def8a4
 ---
-
 
 ## 交互过程
 

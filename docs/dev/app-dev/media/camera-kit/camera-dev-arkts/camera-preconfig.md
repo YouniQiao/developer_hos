@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用相机预配置(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-preconfig
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-preconfig
+last_sync: 2026-06-07
+sync_hash: 29899867
 ---
-
-
 相机预配置（Preconfig），对常用的场景和分辨率进行了预配置集成，可简化开发相机应用流程，提高应用的开发效率。
 
 开发者在开发相机应用时，在获取到[CameraDevice](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-i#cameradevice)之后，如果遵循通用流程开发，步骤较为繁琐。需要先调用[CameraManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager)的[getSupportedOutputCapability](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-cameramanager#getsupportedoutputcapability11)来查询当前相机在指定模式下所支持的各类输出的配置信息，拿到[CameraOutputCapability](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-i#cameraoutputcapability)之后，应用开发者还需要对里面的各类数据进行解析，筛选，找到自己需要的配置数据[Profile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-i#profile)以及[VideoProfile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-i#videoprofile)。最后使用对应的Profile以及VideoProfile创建对应的[PreviewOutput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-previewoutput)、[PhotoOutput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-photooutput)以及[VideoOutput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-videooutput)。

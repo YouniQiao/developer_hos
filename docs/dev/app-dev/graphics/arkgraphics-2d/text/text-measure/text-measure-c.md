@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "文本测量（C/C++）"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/text-measure/text-measure-c
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/text/text-measure/text-measure-c
+last_sync: 2026-06-07
+sync_hash: 303dff60
 ---
-
-
 ## 场景介绍
 
 文本测量指的是在图形绘制中，对文本的尺寸和布局进行评估，计算文本在给定字体和样式下占用的空间（例如宽度、高度和其他相关信息）的过程。文本测量用于文本排版、布局、渲染以及调整文本显示的位置和大小等场景，便于更精准地控制与调整界面的布局和呈现，以达到设计预期。

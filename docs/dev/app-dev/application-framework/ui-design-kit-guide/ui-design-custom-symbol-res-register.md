@@ -2,9 +2,10 @@
 title: "应用加载自定义Symbol"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-custom-symbol-res-register
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-custom-symbol-res-register
+last_sync: 2026-06-07
+sync_hash: 30a41c50
 ---
-
-
 ## 场景介绍
 
 从5.1.1 (19)版本开始，新增支持资源注册。

@@ -3,8 +3,11 @@ title: "自定义提示词库（Prompts）配置"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-prompts
 format: md
+upstream_id: tools/ai-assist/ide-prompts
+last_sync: 2026-06-07
+sync_hash: 2ad33c8d
+upstream_hash: a19038e494dc
 ---
-
 
 # 自定义提示词库（Prompts）配置
 

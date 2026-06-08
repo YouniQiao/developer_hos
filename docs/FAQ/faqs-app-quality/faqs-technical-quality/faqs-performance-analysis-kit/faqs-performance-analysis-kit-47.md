@@ -2,9 +2,10 @@
 format: md
 title: "如何通过hdc命令关闭整个应用"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-47
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-47
+last_sync: 2026-06-07
+sync_hash: 923b738c
 ---
-
-
 可以通过以下命令结束应用：
 
 ```

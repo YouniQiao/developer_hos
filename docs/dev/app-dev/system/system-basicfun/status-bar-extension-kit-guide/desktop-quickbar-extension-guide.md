@@ -2,9 +2,10 @@
 title: "应用接入快捷栏"
 original_url: /docs/dev/app-dev/system/system-basicfun/status-bar-extension-kit-guide/desktop-quickbar-extension-guide
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/status-bar-extension-kit-guide/desktop-quickbar-extension-guide
+last_sync: 2026-06-07
+sync_hash: 8c5369fe
 ---
-
-
 从6.0.2(22)开始，支持应用接入快捷栏。
 
 ## 场景介绍

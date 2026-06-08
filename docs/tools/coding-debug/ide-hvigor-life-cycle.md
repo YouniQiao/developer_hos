@@ -3,8 +3,11 @@ title: "构建系统生命周期"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-life-cycle
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-life-cycle
+last_sync: 2026-06-07
+sync_hash: dda54305
+upstream_hash: 854a3c1c92a0
 ---
-
 
 # 构建系统生命周期
 

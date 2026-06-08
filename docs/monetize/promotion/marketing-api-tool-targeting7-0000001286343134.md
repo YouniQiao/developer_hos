@@ -3,8 +3,10 @@ title: "查询定向字典"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-targeting7-0000001286343134
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-targeting7-0000001286343134
+last_sync: 2026-06-07
+sync_hash: f3c07527
 ---
-
 # 查询定向字典
 
 您通过本接口可以查询定向字典。

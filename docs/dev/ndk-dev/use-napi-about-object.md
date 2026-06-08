@@ -2,9 +2,10 @@
 title: "使用Node-API接口进行object相关开发"
 original_url: /docs/dev/ndk-dev/use-napi-about-object
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-object
+last_sync: 2026-06-07
+sync_hash: 413f4ffb
 ---
-
-
 ## 简介
 
 Node-API提供了相关接口对object进行基本操作，例如创建对象、获取原型、冻结和密封对象，检查对象的类型等。

@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-suggest-use-get-anonymousid-async"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hp-arkui-sg-anonymousid-async
 format: md
+upstream_id: tools/coding-debug/ide-hp-arkui-sg-anonymousid-async
+last_sync: 2026-06-07
+sync_hash: f8bc38ac
 ---
-
-
 # @performance/hp-arkui-suggest-use-get-anonymousid-async
 
 建议在主线程中通过异步获取IFAA免密认证的匿名化ID。

@@ -2,9 +2,10 @@
 title: "获取want参数"
 original_url: /docs/dev/atomic-dev/instant-service-jump-link/instant-service-jump-link-want
 format: md
+upstream_id: dev/atomic-dev/instant-service-jump-link/instant-service-jump-link-want
+last_sync: 2026-06-07
+sync_hash: e21242eb
 ---
-
-
 Want参数是应用组件间通信的核心载体对象，作用为启动目标应用/元服务并传递信息。
 
 **图1** 常见Want用法示意图

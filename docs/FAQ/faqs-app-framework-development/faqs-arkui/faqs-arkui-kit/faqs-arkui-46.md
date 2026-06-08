@@ -2,9 +2,10 @@
 format: md
 title: "Text组件如何加载Unicode字符"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-46
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-46
+last_sync: 2026-06-07
+sync_hash: 7e867e76
 ---
-
-
 在Text组件的content参数中使用字符串，并在字符串中转义Unicode编码。示例代码如下：
 
 ```

@@ -3,9 +3,10 @@ title: "@typescript-eslint/member-ordering"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_member-ordering
 format: md
+upstream_id: tools/coding-debug/ide_member-ordering
+last_sync: 2026-06-07
+sync_hash: ee465679
 ---
-
-
 # @typescript-eslint/member-ordering
 
 要求类、接口和类型字面量中成员的排序方式保持一致的风格。

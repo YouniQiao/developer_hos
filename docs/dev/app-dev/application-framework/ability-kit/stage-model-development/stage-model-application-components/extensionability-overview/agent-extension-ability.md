@@ -2,9 +2,10 @@
 title: "使用AgentExtensionAbility组件实现智能体服务"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview/agent-extension-ability
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/extensionability-overview/agent-extension-ability
+last_sync: 2026-06-07
+sync_hash: 90fe7448
 ---
-
-
 ## 概述
 
 从API version 24开始，支持开发者使用[AgentExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-agent-agentextensionability)类型的组件提供智能体服务。系统应用可以连接其他应用实现的[AgentExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-agent-agentextensionability)组件，并使用相应的智能体服务。

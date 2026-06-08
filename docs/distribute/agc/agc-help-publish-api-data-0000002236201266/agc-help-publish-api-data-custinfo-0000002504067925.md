@@ -2,8 +2,11 @@
 title: "CustInfo"
 original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-custinfo-0000002504067925
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-custinfo-0000002504067925
+last_sync: 2026-06-07
+sync_hash: 5bd4c0aa
+upstream_hash: 2f9f5e2a52ca
 ---
-
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |

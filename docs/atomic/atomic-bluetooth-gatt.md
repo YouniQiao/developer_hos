@@ -2,9 +2,10 @@
 title: "通用属性协议开发指导"
 original_url: /docs/dev/atomic-dev/atomic-bluetooth/atomic-bluetooth-gatt
 format: md
+upstream_id: dev/atomic-dev/atomic-bluetooth/atomic-bluetooth-gatt
+last_sync: 2026-06-07
+sync_hash: 621145c6
 ---
-
-
 ## 简介
 
 通用属性协议是GATT（Generic Attribute）的缩写，它是一种用于在蓝牙低功耗设备之间传输数据的协议，定义了一套通用的属性和服务框架。通过GATT协议，蓝牙设备可以向其他设备提供服务，也可以从其他设备获取服务。

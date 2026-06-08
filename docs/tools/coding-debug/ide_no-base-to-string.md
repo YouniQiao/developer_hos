@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-base-to-string"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-base-to-string
 format: md
+upstream_id: tools/coding-debug/ide_no-base-to-string
+last_sync: 2026-06-07
+sync_hash: 45ddfe6a
 ---
-
-
 # @typescript-eslint/no-base-to-string
 
 要求当一个对象在字符串化时提供了有用的信息，才能调用“toString()”方法。

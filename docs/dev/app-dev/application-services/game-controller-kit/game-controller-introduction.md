@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Game Controller Kit简介"
 original_url: /docs/dev/app-dev/application-services/game-controller-kit/game-controller-introduction
 format: md
+upstream_id: dev/app-dev/application-services/game-controller-kit/game-controller-introduction
+last_sync: 2026-06-07
+sync_hash: 92a3852b
 ---
-
-
 Game Controller Kit（游戏控制器服务）支持游戏适配控制器外设（当前仅支持手柄），解决玩家操控性问题，保障用户体验。游戏开发者可通过接入该服务轻松实现游戏外设的上下线和按键及轴事件监听等功能。
 
 ## 能力范围

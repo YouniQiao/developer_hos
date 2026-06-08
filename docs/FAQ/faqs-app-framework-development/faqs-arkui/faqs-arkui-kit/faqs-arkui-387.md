@@ -2,9 +2,10 @@
 title: "使用Text嵌套Span或者使用属性字符串渲染文本，部分文本颜色显示异常"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-387
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-387
+last_sync: 2026-06-07
+sync_hash: 2a8ae783
 ---
-
-
 **问题现象**
 
 1、使用Text嵌套Span时，文本组合会导致后续文字的颜色无法正常渲染。

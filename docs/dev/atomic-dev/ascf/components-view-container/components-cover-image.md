@@ -2,9 +2,10 @@
 title: "cover-image"
 original_url: /docs/dev/atomic-dev/ascf/components-view-container/components-cover-image
 format: md
+upstream_id: dev/atomic-dev/ascf/components-view-container/components-cover-image
+last_sync: 2026-06-07
+sync_hash: 194ab772
 ---
-
-
 覆盖在系统组件之上的图片。
 
 可支持在[map](/docs/dev/atomic-dev/ascf/components-map-components/components-map)、[video](/docs/dev/atomic-dev/ascf/components-media-components/components-video)、[canvas](/docs/dev/atomic-dev/ascf/components-canvas-components/components-canvas)、[camera](/docs/dev/atomic-dev/ascf/components-media-components/components-camera)组件上使用。

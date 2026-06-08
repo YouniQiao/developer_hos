@@ -3,8 +3,10 @@ title: 元服务 UX 体验标准
 sidebar_label: 元服务 UX 体验标准
 original_url: /docs/design/ux-standards/atomic-service-ux
 format: md
+upstream_id: design/ux-standards/atomic-service-ux
+last_sync: 2026-06-07
+sync_hash: 955c449b
 ---
-
 \{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 元服务 UX 体验标准

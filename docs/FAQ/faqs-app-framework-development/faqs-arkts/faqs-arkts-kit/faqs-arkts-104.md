@@ -2,9 +2,10 @@
 format: md
 title: "如何处理大整数"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-104
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-104
+last_sync: 2026-06-07
+sync_hash: c0d0263a
 ---
-
-
 使用BigInt来处理大整数。
 
 BigInt可以表示任意大小的整数。使用BigInt时，在整数字面量后面添加n后缀或使用BigInt()构造函数。

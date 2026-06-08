@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "音频播放"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-playback
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-playback
+last_sync: 2026-06-07
+sync_hash: b78375bb
 ---
-
-
 * **[音频播放开发概述](/docs/dev/app-dev/media/audio-kit/audio-playback/audio-playback-overview)**
 * **[推荐使用OHAudio开发音频播放功能(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-ohaudio-for-playback)**
 * **[使用AudioRenderer开发音频播放功能(ArkTs)](/docs/dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback)**

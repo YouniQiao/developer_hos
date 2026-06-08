@@ -2,9 +2,10 @@
 title: "申请调试设备"
 original_url: /docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-applyequip-0000002254916518
 format: md
+upstream_id: distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-applyequip-0000002254916518
+last_sync: 2026-06-07
+sync_hash: 52a6aa4b
 ---
-
-
 单机调试场景下，每次申请一台设备进行调试，以验证应用在指定机型上的表现。
 
 ![](../img/agc-help-clouddebug-applyequip-0000002254916518_0.png)

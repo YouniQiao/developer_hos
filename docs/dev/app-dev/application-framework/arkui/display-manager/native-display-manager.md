@@ -2,9 +2,10 @@
 title: "使用OH_DisplayManager实现屏幕基础信息查询和状态监听 (C/C++)"
 original_url: /docs/dev/app-dev/application-framework/arkui/display-manager/native-display-manager
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/display-manager/native-display-manager
+last_sync: 2026-06-07
+sync_hash: 90222514
 ---
-
-
 ## 场景介绍
 
 [OH\_DisplayManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-displaymanager)屏幕管理模块用于提供屏幕的信息查询、屏幕状态变化监听、折叠设备的折叠状态变化监听等能力，应用可根据对应的屏幕信息、屏幕状态变化、屏幕折叠状态适配不同的UI界面显示。

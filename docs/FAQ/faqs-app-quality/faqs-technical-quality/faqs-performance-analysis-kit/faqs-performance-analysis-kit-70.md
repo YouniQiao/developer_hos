@@ -2,9 +2,10 @@
 format: md
 title: "Macbook(ARM芯片)HDC无法连接设备"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-70
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-70
+last_sync: 2026-06-07
+sync_hash: 4f528c2c
 ---
-
-
 **问题现象**
 
 Macbook(ARM芯片)系统上执行"hdc list targets"命令后结果为：[Empty]。

@@ -3,10 +3,10 @@ title: "查看后端转化"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_conversion-0000002151425065
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_andriod_conversion-0000002151425065
+last_sync: 2026-06-07
+sync_hash: feaae15d
 ---
-
-
-
 媒体接入AGD Pro应用变现服务后，可通过后端转化趋势了解媒体自身转化与大盘转化均值的对比情况，以及媒体分展示位/渠道号2个维度的后端转化趋势，便于及时调整流量策略，提升流量变现效率。具体查看方法如下：
 
 1. 进入“数据报表”模块>切换到“后端转化”Tab页

@@ -3,8 +3,10 @@ title: "华为预测服务协议"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x20240513/agc_Prediction
 format: md
+upstream_id: distribute/app-dist/app-market/x20240513/agc_Prediction
+last_sync: 2026-06-07
+sync_hash: 88751e12
 ---
-
 # 华为预测服务协议
 
 点击下载[华为预测服务协议](https://terms-dre.platform.hicloud.com/agreementservice/developer/getAgreementTemplate?agrType=1133&country=cn&language=zh_cn&version=2020090902)。

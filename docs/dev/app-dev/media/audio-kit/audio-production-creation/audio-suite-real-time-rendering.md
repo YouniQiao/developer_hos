@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "实时渲染(C/C++)"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-production-creation/audio-suite-real-time-rendering
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-production-creation/audio-suite-real-time-rendering
+last_sync: 2026-06-07
+sync_hash: 6af59d46
 ---
-
-
 从API version 22开始，[OHAudioSuite](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohaudiosuite)给开发者提供音频实时渲染能力，即音频实时播放时可进行自定义音效（仅支持均衡器节点）。例如，可以使用均衡器中预置的音效，改变音乐的风格。
 
 ## 开发基础配置

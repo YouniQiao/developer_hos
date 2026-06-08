@@ -2,9 +2,10 @@
 title: "WebView如何设置mixcontent策略，用以解决http与https混合加载的问题"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-67
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-67
+last_sync: 2026-06-07
+sync_hash: 674fcd09
 ---
-
-
 ArkWeb提供mixedMode(mixedMode: MixedMode)接口，用于设置是否允许加载HTTP和HTTPS混合内容。默认情况下，不允许加载混合内容。
 
 在工程的module.json5配置文件中添加网络访问权限ohos.permission.INTERNET。

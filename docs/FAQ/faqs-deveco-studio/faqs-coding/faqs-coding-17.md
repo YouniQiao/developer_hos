@@ -2,9 +2,10 @@
 format: md
 title: "server启动失败，进程意外退出"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-17
+upstream_id: FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-17
+last_sync: 2026-06-07
+sync_hash: caa83396
 ---
-
-
 **问题现象**
 
 server启动过程中，意外退出，弹框提示：

@@ -2,9 +2,10 @@
 format: md
 title: "应用自动签名失败，提示“calibrate the system time and sign again”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-29
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-29
+last_sync: 2026-06-07
+sync_hash: e11ba814
 ---
-
-
 **问题现象**
 
 应用在进行自动签名时，签名失败，提示“The signature does not take effect or has expired. The current system time may be inaccurate. Please calibrate the system time and sign again.”

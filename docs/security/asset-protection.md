@@ -2,10 +2,10 @@
 title: "应用资产保护设计"
 original_url: /docs/security/asset-protection
 format: md
+upstream_id: /docs/security/asset-protection
+last_sync: 2026-06-07
+sync_hash: 3c57b8af
 ---
-
-
-
 # 应用资产保护设计
 
 ## 概述
@@ -164,7 +164,7 @@ HarmonyOS系统整体代码资产保护策略：
 
 （3）设备运行时对应用进行解密处理。
 
-其中代码混淆和应用加密方案的介绍在<strong>[混淆加固](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-obfuscation)</strong>和<strong>[应用加密](/docs/dev/app-dev/system/system-security/code-protect)</strong>章节。
+其中代码混淆和应用加密方案的介绍在<strong>[混淆加固](/docs/tools/coding-debug/ide-build-obfuscation)</strong>和<strong>[应用加密](/docs/dev/app-dev/system/system-security/code-protect)</strong>章节。
 
 <strong>业务实现中的关键点</strong>
 

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Share Kit术语"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/share-terminology
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/share-terminology
+last_sync: 2026-06-07
+sync_hash: 068ad0c3
 ---
-
-
 ## Content area内容预览区
 
 负责显示分享内容标题、预览、是否选中等信息，供用户选择。

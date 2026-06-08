@@ -2,9 +2,10 @@
 title: "按钮与选择组件概述"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection/arkts-forms-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection/arkts-forms-overview
+last_sync: 2026-06-07
+sync_hash: e9f68a2d
 ---
-
-
 按钮与选择组件用于构建页面的基础元素，如按钮、开关。开发者可以根据实际应用场景选择合适的按钮与选择组件进行界面开发。
 
 | 按钮与选择组件名称 | 应用场景 |

@@ -2,9 +2,10 @@
 title: "检查页面布局"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-inspector-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-inspector-overview
+last_sync: 2026-06-07
+sync_hash: 9af835a5
 ---
-
-
 inspector用于检查页面布局，通过双向定位功能帮助开发者在DevEco Studio中快速定位组件、修改属性和调试组件，以提高开发效率。
 
 ArkUI获取当前显示页面中所有组件的信息，包括组件树的父子结构、尺寸、位置、样式、属性和状态。获取组件树信息后，生成并展示为Inspector组件树。DevEco Studio的使用具体可以参考[Inspector调试能力](/docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-inspector-profiler#inspector调试能力)。

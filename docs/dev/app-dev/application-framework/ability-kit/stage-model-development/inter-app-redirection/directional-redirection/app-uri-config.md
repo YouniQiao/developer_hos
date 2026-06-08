@@ -2,9 +2,10 @@
 title: "应用链接说明"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-uri-config
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-uri-config
+last_sync: 2026-06-07
+sync_hash: 00b4ba89
 ---
-
-
 ## uris标签说明
 
 当在[module.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)文件的[skills字段](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#skills标签)中声明uris时，主要包含如下字段。

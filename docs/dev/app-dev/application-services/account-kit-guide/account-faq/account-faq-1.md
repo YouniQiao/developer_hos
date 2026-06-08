@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "1001500001 应用指纹证书校验失败的可能原因和解决办法"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-1
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-1
+last_sync: 2026-06-07
+sync_hash: 4227f594
 ---
-
-
 **问题现象**
 
 调用接口报错1001500001 应用指纹证书校验失败。

@@ -2,9 +2,10 @@
 title: "SDK版本更新说明"
 original_url: /docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-releasenotes-0000002271496185
 format: md
+upstream_id: distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-releasenotes-0000002271496185
+last_sync: 2026-06-07
+sync_hash: a5530c78
 ---
-
-
 | 版本号 | 发布时间 | 更新说明 |
 | --- | --- | --- |
 | 1.0.5 | 2025-07-08 | ![](../img/agc-help-auth-releasenotes-0000002271496185_0.png)  修复已知问题。 |

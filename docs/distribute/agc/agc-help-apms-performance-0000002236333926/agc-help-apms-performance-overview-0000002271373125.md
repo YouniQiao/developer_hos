@@ -2,9 +2,10 @@
 title: "查看应用指标概览数据"
 original_url: /docs/distribute/agc/agc-help-apms-performance-0000002236333926/agc-help-apms-performance-overview-0000002271373125
 format: md
+upstream_id: distribute/agc/agc-help-apms-performance-0000002236333926/agc-help-apms-performance-overview-0000002271373125
+last_sync: 2026-06-07
+sync_hash: 6a5390df
 ---
-
-
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“开发与服务”。
 2. 在项目列表中找到您的项目，在项目下的应用列表中点击您的应用/元服务。
 3. 左侧导航栏选择“质量 > APMS > 性能管理”，进入性能管理主界面。

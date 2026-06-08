@@ -3,8 +3,10 @@ title: 动效属性
 sidebar_label: 动效属性
 original_url: /docs/design/general-design-basics/animation/attributes
 format: md
+upstream_id: design/general-design-basics/animation/attributes
+last_sync: 2026-06-07
+sync_hash: e4d45cd6
 ---
-
 # 动效属性
 
 任何类型的动效都包含三大基本的动效属性：时长、曲线、帧率。这些基本属性形成了动效不可缺少的基本要素。通过组合这些基本的动效属性，可以塑造产品动效的不同风格特点，例如稳重、活泼、轻盈、舒缓等。

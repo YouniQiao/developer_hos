@@ -2,9 +2,10 @@
 title: "屏幕管理简介"
 original_url: /docs/dev/app-dev/application-framework/arkui/display-manager/displaymanager-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/display-manager/displaymanager-overview
+last_sync: 2026-06-07
+sync_hash: 75fe9244
 ---
-
-
 屏幕管理主要是针对设备的各种屏幕（包括物理屏、虚拟屏、折叠屏）进行管理，管理其各种属性信息，并当作广播者，将监听到的信息广播给各个需要屏幕信息的订阅服务。
 
 屏幕管理主要包括以下几方面能力：

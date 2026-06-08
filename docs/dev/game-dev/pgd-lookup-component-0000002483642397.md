@@ -2,8 +2,11 @@
 title: "ComponentLookup"
 original_url: /docs/dev/game-dev/pgd-lookup-component-0000002483642397
 format: md
+upstream_id: dev/game-dev/pgd-lookup-component-0000002483642397
+last_sync: 2026-06-07
+sync_hash: 6799aa17
+upstream_hash: 3729a171a8fd
 ---
-
 
 ComponentLookup为world中的查询管理器，可以获取已经创建好的Lookup查询。
 

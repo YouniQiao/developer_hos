@@ -2,9 +2,10 @@
 title: "特别活动"
 original_url: /docs/distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-special-events-0000002392515481
 format: md
+upstream_id: distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-special-events-0000002392515481
+last_sync: 2026-06-07
+sync_hash: 214639a9
 ---
-
-
 特别活动是指游戏内的亮点活动。
 
 #### 前提条件

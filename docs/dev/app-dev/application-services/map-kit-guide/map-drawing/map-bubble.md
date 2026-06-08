@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "气泡"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-bubble
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-drawing/map-bubble
+last_sync: 2026-06-07
+sync_hash: 344f2818
 ---
-
-
 ## 场景介绍
 
 本章节将向您介绍如何在地图的指定位置添加气泡。

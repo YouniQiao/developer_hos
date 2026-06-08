@@ -2,9 +2,10 @@
 format: md
 title: "pc上，bindPopup设置了showInSubWindow:true时，气泡无法再弹出菜单"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-446
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-446
+last_sync: 2026-06-07
+sync_hash: f29925f9
 ---
-
-
 **问题背景**
 
 在PC端使用bindPopup组件时，当设置了showInSubWindow: true属性后，如果气泡内的组件再次绑定子窗口弹窗，会导致内层弹窗无法正常弹出，如何修改？

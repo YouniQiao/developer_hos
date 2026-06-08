@@ -2,9 +2,10 @@
 title: "内容风控服务介绍"
 original_url: /docs/dev/atomic-dev/content-moderation-service/content-moderation-service-intro
 format: md
+upstream_id: dev/atomic-dev/content-moderation-service/content-moderation-service-intro
+last_sync: 2026-06-07
+sync_hash: 9ae246da
 ---
-
-
 内容风控服务用于对终端用户提交的文本或图片内容进行合规性检查的服务，如识别暴力、色情等违法的信息，有效协助用户进行风险预警和违法内容拦截。
 
 该功能基于百万级样本库和多个文本、图片风控模型，结合多种文本、图片对抗方案等，通过分类模型、安全大模型等技术，高效识别违法违规内容；同时系统基于海量语料训练与实时误报纠偏体系，构建动态优化闭环，持续提升风险防控精度与模型鲁棒性。

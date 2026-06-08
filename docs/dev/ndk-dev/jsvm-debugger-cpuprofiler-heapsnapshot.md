@@ -2,9 +2,10 @@
 title: "JSVM-API调试&定位"
 original_url: /docs/dev/ndk-dev/jsvm-debugger-cpuprofiler-heapsnapshot
 format: md
+upstream_id: dev/ndk-dev/jsvm-debugger-cpuprofiler-heapsnapshot
+last_sync: 2026-06-07
+sync_hash: f8bc274e
 ---
-
-
 JSVM，即标准JS引擎，是严格遵守ECMAScript规范的JavaScript代码执行引擎。详情参考：[JSVM](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm)。
 
 基于JSVM的JS代码调试调优能力包括：Debugger、CPU Profiler、Heap Snapshot、Heap Statistics。涉及以下接口：

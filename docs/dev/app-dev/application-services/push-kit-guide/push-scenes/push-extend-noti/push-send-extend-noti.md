@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "发送语音播报消息"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-extend-noti/push-send-extend-noti
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-scenes/push-extend-noti/push-send-extend-noti
+last_sync: 2026-06-07
+sync_hash: df612e09
 ---
-
-
 ## 场景介绍
 
 当用户终端收到您发送的语音播报消息时：

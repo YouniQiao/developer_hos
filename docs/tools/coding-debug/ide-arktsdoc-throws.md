@@ -3,9 +3,10 @@ title: "@throws"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-arktsdoc-throws
 format: md
+upstream_id: tools/coding-debug/ide-arktsdoc-throws
+last_sync: 2026-06-07
+sync_hash: d3d24188
 ---
-
-
 # @throws
 
 @throws标签用于函数，记录函数可能引发的错误。可以在一个ArkTSDoc注释中多次使用@throws标记。

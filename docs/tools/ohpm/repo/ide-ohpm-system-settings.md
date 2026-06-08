@@ -2,9 +2,10 @@
 title: "系统设置"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-system-settings
+upstream_id: tools/ohpm/repo/ide-ohpm-system-settings
+last_sync: 2026-06-07
+sync_hash: 1cc862da
 ---
-
-
 # 系统设置
 
 系统设置是ohpm-repo系统层面的管理，当前支持"oh-package.json5检查规则"和"系统安全"两大功能。

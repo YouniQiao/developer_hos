@@ -2,9 +2,10 @@
 title: "Navigation转场动画"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-animation
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-navigation/arkts-navigation-animation
+last_sync: 2026-06-07
+sync_hash: 6e89ae49
 ---
-
-
 [Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)存在默认转场动画，此外也提供了自定义转场和共享元素转场能力。
 
 ## 系统默认转场

@@ -3,8 +3,10 @@ title: "上报上传结果"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-reportingresults-0000001800900938
 format: md
+upstream_id: monetize/promotion/marketapi-reportingresults-0000001800900938
+last_sync: 2026-06-07
+sync_hash: aad39d96
 ---
-
 # 上报上传结果
 
 ## 功能介绍

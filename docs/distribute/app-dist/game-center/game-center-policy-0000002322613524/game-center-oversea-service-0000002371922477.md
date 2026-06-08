@@ -3,9 +3,10 @@ title: "国际游戏联运服务"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-policy-0000002322613524/game-center-oversea-service-0000002371922477
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-policy-0000002322613524/game-center-oversea-service-0000002371922477
+last_sync: 2026-06-07
+sync_hash: 810cc2a5
 ---
-
-
 # 国际游戏联运服务
 
 ## 联运服务介绍

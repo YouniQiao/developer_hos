@@ -2,9 +2,10 @@
 title: "事件绑定和冒泡"
 original_url: /docs/dev/atomic-dev/ascf/logical-layer-events/logical-layer-event-binding-bubbling
 format: md
+upstream_id: dev/atomic-dev/ascf/logical-layer-events/logical-layer-event-binding-bubbling
+last_sync: 2026-06-07
+sync_hash: cd451d3e
 ---
-
-
 事件绑定的写法和组件的属性相同。
 
 * key以bind或catch开头，后面拼接事件的类型，如bindtap、catchtouchstart。bind和catch后也可以紧跟一个冒号，如bind:tap、catch:touchstart，作用一致。

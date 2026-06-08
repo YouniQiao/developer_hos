@@ -3,7 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "请求接口加签验证中，如果请求头“PayMercAuth”中bodySign字段为空值，会做验签吗？还是会先校验字段？"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-21
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-21
+last_sync: 2026-06-07
+sync_hash: 46a57884
+upstream_hash: 3e0e1a3e6b5d
 ---
-
 
 鉴权请求头“PayMercAuth”会先校验相关字段再做验签。bodySign字段设置为空值，Payment Kit服务器不会做验签，直接响应异常给商户。

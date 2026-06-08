@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "人脸核身实人验证场景"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-real-name-service/payment-real-name-face-verification
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-real-name-service/payment-real-name-face-verification
+last_sync: 2026-06-07
+sync_hash: a3966809
 ---
-
-
 ## 场景介绍
 
 从5.1.1(19)版本开始，新增支持人脸核身实人验证场景。

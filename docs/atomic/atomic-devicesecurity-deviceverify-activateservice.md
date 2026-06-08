@@ -2,9 +2,10 @@
 title: "开通Device Security服务"
 original_url: /docs/dev/atomic-dev/atomic-devicesecurity-prepare/atomic-devicesecurity-deviceverify-activateservice
 format: md
+upstream_id: dev/atomic-dev/atomic-devicesecurity-prepare/atomic-devicesecurity-deviceverify-activateservice
+last_sync: 2026-06-07
+sync_hash: ffabbbbe
 ---
-
-
 在开通Device Security服务前，请先参考“[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)”完成基本准备工作，再继续进行以下开发活动。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，选择开发与服务。

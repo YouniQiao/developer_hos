@@ -2,8 +2,11 @@
 format: md
 title: "Button组件如何设置渐变背景色"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-103
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-103
+last_sync: 2026-06-07
+sync_hash: 92b3f406
+upstream_hash: 8492ea6f2211
 ---
-
 
 将Button的默认背景色设置为全透明，以确保渐变颜色正常显示。参考代码如下：
 

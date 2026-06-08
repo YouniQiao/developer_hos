@@ -2,9 +2,10 @@
 title: "登出"
 original_url: /docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-logout-0000002236337014
 format: md
+upstream_id: distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-logout-0000002236337014
+last_sync: 2026-06-07
+sync_hash: d2af0177
 ---
-
-
 #### 前提条件
 
 * 您需要在AppGallery Connect[开通认证服务](/docs/distribute/agc/agc-help-auth-preparation-0000002236496826/agc-help-auth-enable-service-0000002271422405)。

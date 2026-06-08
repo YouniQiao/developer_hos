@@ -2,9 +2,10 @@
 title: "传感器开发指导(C/C++)"
 original_url: /docs/dev/app-dev/system/system-hardware/sensor-service-kit/sensor/sensor-guidelines-capi
 format: md
+upstream_id: dev/app-dev/system/system-hardware/sensor-service-kit/sensor/sensor-guidelines-capi
+last_sync: 2026-06-07
+sync_hash: 68800325
 ---
-
-
 ## 场景介绍
 
 当设备需要获取传感器数据时，可以使用sensor模块，例如：通过订阅方向传感器数据感知用户设备当前的朝向，通过订阅计步传感器数据统计用户的步数等。

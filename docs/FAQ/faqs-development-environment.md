@@ -2,9 +2,10 @@
 format: md
 title: "环境准备"
 original_url: /docs/FAQ/faqs-development-environment
+upstream_id: FAQ/faqs-development-environment
+last_sync: 2026-06-07
+sync_hash: b6dca91c
 ---
-
-
 * **[导入Sample时，提示连接Gitee超时](/docs/FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-2)**
 * **[导入Sample时，提示SSL证书校验错误](/docs/FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-3)**
 * **[下载HarmonyOS SDK时提示网络连接错误](/docs/FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-4)**

@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口进行JavaScript代码调试调优"
 original_url: /docs/dev/ndk-dev/m-heapstatistics-debugger-cpuprofiler-heapsnapshot
 format: md
+upstream_id: dev/ndk-dev/m-heapstatistics-debugger-cpuprofiler-heapsnapshot
+last_sync: 2026-06-07
+sync_hash: aa8e36a6
 ---
-
-
 ## 简介
 
 这些JSVM-API接口涵盖了虚拟机实例检索、内存分析、性能剖析和调试支持，为优化代码性能及提升开发效率提供了有力的支持。

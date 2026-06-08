@@ -2,9 +2,10 @@
 title: "扩展认证"
 original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-network-management/net-eap
 format: md
+upstream_id: dev/app-dev/system/system-network/network-kit/network-kit-network-management/net-eap
+last_sync: 2026-06-07
+sync_hash: e13032b9
 ---
-
-
 ## 简介
 
 部分企业用户的PC网络接入认证使用802.1X认证方式，认证客户端由第三方厂商提供。

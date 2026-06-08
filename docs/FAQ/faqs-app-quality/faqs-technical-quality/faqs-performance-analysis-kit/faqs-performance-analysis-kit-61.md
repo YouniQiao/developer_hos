@@ -2,9 +2,10 @@
 format: md
 title: "DevEco Device File Browser无法查看系统媒体文件目录"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-61
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-61
+last_sync: 2026-06-07
+sync_hash: 52a8adb5
 ---
-
-
 **问题现象**
 
 DevEco Device File Browser无法查看/storage/media/local/files/Photo 下的媒体文件，DevEco Studio上看不到图库相册里的文件，无法导出想要的媒体文件。

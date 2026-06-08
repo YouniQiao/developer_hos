@@ -1,6 +1,10 @@
 ---
 title: "deviceConfig内部结构"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/deviceconfig-structure
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/deviceconfig-structure
+last_sync: 2026-06-07
+sync_hash: 72853819
+upstream_hash: 5967572b20bc
 ---
 
 deviceConfig 包含设备上的应用配置信息，支持 default、tv、car、wearable 等属性。

@@ -3,8 +3,10 @@ title: 下拉按钮
 sidebar_label: 下拉按钮
 original_url: /docs/design/components/control-components/select
 format: md
+upstream_id: design/components/control-components/select
+last_sync: 2026-06-07
+sync_hash: 701783d3
 ---
-
 # 下拉按钮
 
 下拉按钮可让用户在多个选项之间选择。开发相关描述请参考 [Select](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-select) 文档。

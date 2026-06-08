@@ -2,9 +2,10 @@
 title: "关闭系统的未成年人模式"
 original_url: /docs/dev/atomic-dev/account-atomic-turn-off-minorsprotection/account-system-turn-off-atomic-minorsprotection
 format: md
+upstream_id: dev/atomic-dev/account-atomic-turn-off-minorsprotection/account-system-turn-off-atomic-minorsprotection
+last_sync: 2026-06-07
+sync_hash: 57da3ac5
 ---
-
-
 ## 场景介绍
 
 系统的未成年人模式已开启。用户打开元服务，在元服务内关闭系统未成年人模式。

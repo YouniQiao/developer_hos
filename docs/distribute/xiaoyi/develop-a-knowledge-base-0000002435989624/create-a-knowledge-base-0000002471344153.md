@@ -3,9 +3,10 @@ title: "创建知识库"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/develop-a-knowledge-base-0000002435989624/create-a-knowledge-base-0000002471344153
 format: md
+upstream_id: distribute/xiaoyi/develop-a-knowledge-base-0000002435989624/create-a-knowledge-base-0000002471344153
+last_sync: 2026-06-07
+sync_hash: 517238ef
 ---
-
-
 # 创建知识库
 
 在小艺智能体平台页面，通过【工作空间】-【知识库】-【新建知识库】，进入新建知识库流程。

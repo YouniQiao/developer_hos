@@ -2,9 +2,10 @@
 title: "跨应用数据共享概述"
 original_url: /docs/dev/app-dev/application-framework/arkdata/cross-app-data-share/data-share-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/cross-app-data-share/data-share-overview
+last_sync: 2026-06-07
+sync_hash: 62a045cb
 ---
-
-
 ## 功能简介
 
 跨应用数据共享提供了向其他应用共享以及管理其数据的方法，支持不同应用之间的数据协同。

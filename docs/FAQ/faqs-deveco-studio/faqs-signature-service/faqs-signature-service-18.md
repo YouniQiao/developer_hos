@@ -2,9 +2,10 @@
 format: md
 title: "配置调试签名异常"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-18
+upstream_id: FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-18
+last_sync: 2026-06-07
+sync_hash: fa238bff
 ---
-
-
 ## 提示"Bundle name \*\*\* does not exist."
 
 **报错原因**
@@ -57,7 +58,7 @@ original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature
 
 **报错原因****和解决措施**
 
-场景一：网络连通问题，请先检查和配置网络，再进行签名。配置网络具体请参考[配置Proxy代理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-environment-config#section10369436568)。
+场景一：网络连通问题，请先检查和配置网络，再进行签名。配置网络具体请参考[配置Proxy代理](/docs/tools/coding-debug/ide-environment-config#section10369436568)。
 
 场景二：应用没有开放能力管理和ACL权限设置项，需要重新创建应用，再进行签名。查看设置项和创建应用的操作如下：
 
@@ -74,6 +75,6 @@ original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature
 
 **报错原因****和解决措施**
 
-场景一：网络连通问题，请先检查和配置网络，再进行签名。配置网络具体请参考[配置Proxy代理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-environment-config#section10369436568)。
+场景一：网络连通问题，请先检查和配置网络，再进行签名。配置网络具体请参考[配置Proxy代理](/docs/tools/coding-debug/ide-environment-config#section10369436568)。
 
 场景二：在DevEco Studio退出登录，重新登录，再进行签名。

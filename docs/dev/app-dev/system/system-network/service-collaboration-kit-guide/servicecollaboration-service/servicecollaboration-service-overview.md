@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "跨设备互通特性简介"
 original_url: /docs/dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-service/servicecollaboration-service-overview
 format: md
+upstream_id: dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-service/servicecollaboration-service-overview
+last_sync: 2026-06-07
+sync_hash: 7a8f4fd3
 ---
-
-
 对于API 6.0.0(20)之前版本，仅支持匹配跨端拍照、文档扫描、图库选择器；对于API 6.0.0(20)及之后版本，支持匹配跨端拍照、文档扫描、图库选择器、视频选择器、图片和视频选择器；从API 6.1.0(23)开始，TV、Phone、Tablet或PC/2in1设备可调用具备如下能力的远程设备：支持拍照、扫描及图库（图片与视频）能力的Phone和Tablet，支持图库（图片与视频）能力的PC/2in1设备。
 
 跨设备互通提供相机、扫描以及图库（图片和视频）的跨设备调用能力，例如：Tablet或PC/2in1设备可以调用Phone的相机、扫描、图库等功能。

@@ -2,9 +2,10 @@
 title: "自定义节点常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-user-defined-node-faq
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-user-defined-node-faq
+last_sync: 2026-06-07
+sync_hash: cdbc54fb
 ---
-
-
 本文档介绍自定义节点的常见问题并提供参考。
 
 ## 自定义组件的aboutToDisappear回调异常

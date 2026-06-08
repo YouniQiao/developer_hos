@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "主动获取HiCar的连接状态"
 original_url: /docs/dev/app-dev/system/system-hardware/car-kit-guide/car-get-connect-status/car-check-application-start
 format: md
+upstream_id: dev/app-dev/system/system-hardware/car-kit-guide/car-get-connect-status/car-check-application-start
+last_sync: 2026-06-07
+sync_hash: 4c786c71
 ---
-
-
 ## 场景介绍
 
 生态应用可以通过主动获取智慧出行连接状态接口来获取HiCar的连接状态（如：判断应用是否在HiCar上拉起）。

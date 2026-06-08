@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口进行array相关开发"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-array
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-array
+last_sync: 2026-06-07
+sync_hash: a0df3bca
 ---
-
-
 ## 简介
 
 使用JSVM-API接口进行数组（array）相关开发时，在JSVM模块中可以调用相关接口直接操作和处理JavaScript中的数组。

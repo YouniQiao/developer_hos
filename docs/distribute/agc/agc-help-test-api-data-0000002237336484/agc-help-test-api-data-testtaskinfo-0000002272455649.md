@@ -2,9 +2,10 @@
 title: "TestTaskInfo"
 original_url: /docs/distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-testtaskinfo-0000002272455649
 format: md
+upstream_id: distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-testtaskinfo-0000002272455649
+last_sync: 2026-06-07
+sync_hash: f427e7a4
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | groupInfos | M | [GroupInfo](/docs/distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-groupinfo-0000002272575557) | 测试用户信息。  注意：  公开测试不支持修改。 |

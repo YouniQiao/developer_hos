@@ -2,9 +2,10 @@
 format: md
 title: "Web组件加载某个页面，出现白屏、页面显示不出来，如何解决和定位"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-19
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-19
+last_sync: 2026-06-07
+sync_hash: a617d2e1
 ---
-
-
 使用Web组件时确认以下条件：
 
 1. 若加载在线页面，需确保手机联网且网络畅通。

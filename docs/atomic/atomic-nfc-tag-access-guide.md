@@ -2,9 +2,10 @@
 title: "NFC标签读写开发指南"
 original_url: /docs/dev/atomic-dev/atomic-nfc/atomic-nfc-tag-access-guide
 format: md
+upstream_id: dev/atomic-dev/atomic-nfc/atomic-nfc-tag-access-guide
+last_sync: 2026-06-07
+sync_hash: 0ce6c0bc
 ---
-
-
 ## 简介
 
 近场通信(Near Field Communication，NFC)是一种短距高频的无线电技术，在13.56MHz频率运行，通信距离一般在10厘米距离内。电子设备可以通过NFC通信技术和NFC标签通信，从标签中读取数据，或写入数据到标签。

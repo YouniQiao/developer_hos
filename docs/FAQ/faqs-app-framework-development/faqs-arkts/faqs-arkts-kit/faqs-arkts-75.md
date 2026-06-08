@@ -2,9 +2,10 @@
 title: "如何解析JSON字符串为实例对象"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-75
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-75
+last_sync: 2026-06-07
+sync_hash: ff4311a7
 ---
-
-
 **问题背景**：
 
 需要将JSON数据转换成ArkTS中类的实例对象。可以使用实例对象的属性，调用实例对象的方法。支持嵌套对象的场景。

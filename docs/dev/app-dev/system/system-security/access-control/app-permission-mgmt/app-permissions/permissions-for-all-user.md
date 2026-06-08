@@ -2,9 +2,10 @@
 title: "开放权限（用户授权）"
 original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-all-user
 format: md
+upstream_id: dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-all-user
+last_sync: 2026-06-07
+sync_hash: 684e4abe
 ---
-
-
 此列表内所有权限均为用户授权（user\_grant）的开放权限，面向所有应用开放。
 
 该类型权限不仅需要在安装包中申请权限，还需要在应用动态运行时，通过发送弹窗的方式请求用户授权。在用户手动允许授权后，应用才会真正获取相应权限，从而成功访问操作目标对象。

@@ -3,9 +3,10 @@ title: "管理游戏大事件"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-content-operation-0000001239502321/game-center-big-event-all-0000001745923785/game-center-big-event-management-0000001989930840
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-content-operation-0000001239502321/game-center-big-event-all-0000001745923785/game-center-big-event-management-0000001989930840
+last_sync: 2026-06-07
+sync_hash: c1442091
 ---
-
-
 # 管理游戏大事件
 
 创建游戏大事件后，可以对已创建的游戏大事件进行查看、编辑等操作。游戏大事件列表“操作”列提供编辑、删除、撤销、下线等操作，“任务状态”列可以查看大事件当前的状态。

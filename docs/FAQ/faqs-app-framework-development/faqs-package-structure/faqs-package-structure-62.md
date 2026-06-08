@@ -2,9 +2,10 @@
 title: "如何判断应用程序是否安装"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-62
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-62
+last_sync: 2026-06-07
+sync_hash: d4416f4f
 ---
-
-
 为了应用A能判断设备上是否已安装应用B并决定是否引导用户下载应用B，需进行以下配置：
 
 在B应用entry模块的module.json5文件中，添加配置的具体标签路径如下：module -> abilities -> skills -> uris。

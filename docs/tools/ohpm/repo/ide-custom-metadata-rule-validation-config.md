@@ -2,9 +2,10 @@
 title: "自定义元数据规则校验插件配置"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-custom-metadata-rule-validation-config
+upstream_id: tools/ohpm/repo/ide-custom-metadata-rule-validation-config
+last_sync: 2026-06-07
+sync_hash: da023bd9
 ---
-
-
 # 自定义元数据规则校验插件配置
 
 ohpm-repo 5.1.3版本开始支持自定义元数据规则校验，允许通过插件对oh-package.json5中部分字段开发定制化的校验规则。

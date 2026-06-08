@@ -2,9 +2,10 @@
 title: "使用UBSan检测未定义行为"
 original_url: /docs/quality/stability-ubsan-detection
 format: md
+upstream_id: /docs/quality/stability-ubsan-detection
+last_sync: 2026-06-07
+sync_hash: f6eeeab9
 ---
-
-
 # 使用UBSan检测未定义行为
 
 ## 原理概述
@@ -31,7 +32,7 @@ ASan、TSan、UBSan 和 HWASan 不能同时开启，只能启用其中一个。
 
 **流水线场景**
 
-在hvigorw命令后加上**ohos-enable-ubsan=true**的选项，执行hvigorw命令，更多options参考[hvigorw文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-commandline)
+在hvigorw命令后加上**ohos-enable-ubsan=true**的选项，执行hvigorw命令，更多options参考[hvigorw文档](/docs/tools/cli-tools/ide-hvigor-commandline)
 
 ```
 hvigorw [taskNames...] ohos-enable-ubsan=true  <options>
@@ -51,7 +52,7 @@ hvigorw [taskNames...] ohos-enable-ubsan=true  <options>
 
 **流水线场景**
 
-在AppScope/app.json5和模块build-profile.json5配置对应UBSan项后，可直接执行hvigorw命令，更多options参考[hvigorw文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-commandline)
+在AppScope/app.json5和模块build-profile.json5配置对应UBSan项后，可直接执行hvigorw命令，更多options参考[hvigorw文档](/docs/tools/cli-tools/ide-hvigor-commandline)
 
 ```
 hvigorw [taskNames...]  <options>

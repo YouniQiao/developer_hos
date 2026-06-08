@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用AVPlayer添加视频外挂字幕(ArkTS)"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/video-subtitle
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/video-subtitle
+last_sync: 2026-06-07
+sync_hash: 108f8e37
 ---
-
-
 当前仅支持视频播放前设置外挂字幕。
 
 在进行应用开发的过程中，开发者可以通过AVPlayer的实例注册on('subtitleUpdate')方法监听字幕信息。

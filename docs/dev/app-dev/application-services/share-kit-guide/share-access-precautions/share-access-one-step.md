@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "目标设备接收分享数据一步直达体验"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/share-access-precautions/share-access-one-step
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/share-access-precautions/share-access-one-step
+last_sync: 2026-06-07
+sync_hash: baddcc4e
 ---
-
-
 为保证华为分享目标设备接收体验更优，规范分享数据接收时的直达体验，目标设备接收到分享数据后，将按照如下规则处理：
 
 | 接收能力 | 数据类型 | 存储位置 | 预览方式 |

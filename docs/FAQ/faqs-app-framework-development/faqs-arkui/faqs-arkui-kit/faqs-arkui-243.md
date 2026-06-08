@@ -2,9 +2,10 @@
 format: md
 title: "如何解决点击子组件模块区域会触发父组件的点击事件问题"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-243
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-243
+last_sync: 2026-06-07
+sync_hash: 21b9b0b0
 ---
-
-
 **问题现象**
 
 当enabled的值为false时，点击Button按钮会触发父组件的点击事件。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用PhotoPicker组件访问图片/视频"
 original_url: /docs/dev/app-dev/media/medialibrary-kit/component-guidelines-photoviewpicker
 format: md
+upstream_id: dev/app-dev/media/medialibrary-kit/component-guidelines-photoviewpicker
+last_sync: 2026-06-07
+sync_hash: 55d37fa6
 ---
-
-
 当应用需要读取用户图片时，开发者可以在应用界面中嵌入PhotoPicker组件，在用户选择所需要的图片资源后，直接返回该图片资源，而不需要授予应用读取图片文件的权限，即可完成图片或视频文件的访问和读取。
 
 界面效果如图所示。

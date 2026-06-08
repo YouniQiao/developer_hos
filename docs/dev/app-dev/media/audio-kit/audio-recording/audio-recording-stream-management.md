@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "查询和监听其他应用录制状态"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-recording/audio-recording-stream-management
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-recording/audio-recording-stream-management
+last_sync: 2026-06-07
+sync_hash: 766a49cf
 ---
-
-
 对于录制音频类的应用，开发者需要关注该应用的音频流的状态以做出相应的操作，比如监听到状态为结束时，及时提示用户录制已结束。
 
 以下各步骤示例为片段代码，可通过示例代码右下方链接获取[完整示例](https://gitcode.com/openharmony/applications_app_samples/blob/master/code/DocsSample/Media/Audio/AudioCaptureSampleJS)。

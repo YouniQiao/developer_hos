@@ -2,9 +2,10 @@
 title: "云端查看"
 original_url: /docs/dev/game-dev/games-hismartperf-cloudview-0000002321404213
 format: md
+upstream_id: dev/game-dev/games-hismartperf-cloudview-0000002321404213
+last_sync: 2026-06-07
+sync_hash: 40510ad7
 ---
-
-
 将本地测试报告上传至云端后，团队账号可共同查看测试报告。
 
 ![](./img/9ef5f465.png)

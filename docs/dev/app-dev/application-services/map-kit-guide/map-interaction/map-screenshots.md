@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "地图截图"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-interaction/map-screenshots
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-interaction/map-screenshots
+last_sync: 2026-06-07
+sync_hash: c15d5a21
 ---
-
-
 本章节将向您介绍如何实现地图截图功能。
 
 地图截图指对当前屏幕显示区域进行截屏，支持对地图、覆盖物、Logo进行屏幕截图。地图截图功能适用于需要将当前地图状态保存为图片的场景，如分享当前位置、生成导航路线图、记录特定视角的地图内容等。该功能可以帮助开发者快速实现地图内容的可视化输出，提升用户体验

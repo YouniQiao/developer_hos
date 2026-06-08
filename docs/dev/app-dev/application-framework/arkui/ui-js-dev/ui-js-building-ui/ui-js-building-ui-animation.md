@@ -2,8 +2,11 @@
 title: "动画"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-building-ui/ui-js-building-ui-animation
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-building-ui/ui-js-building-ui-animation
+last_sync: 2026-06-07
+sync_hash: 8fc07498
+upstream_hash: 3bf9a7c39208
 ---
-
 
 动画分为[静态动画](#静态动画)和[连续动画](#连续动画)。
 

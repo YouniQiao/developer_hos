@@ -2,9 +2,10 @@
 title: "定档"
 original_url: /docs/distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-scheduling-0000002359035472
 format: md
+upstream_id: distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-scheduling-0000002359035472
+last_sync: 2026-06-07
+sync_hash: 8cd71532
 ---
-
-
 定档是指游戏确定正式上线档期。
 
 #### 前提条件

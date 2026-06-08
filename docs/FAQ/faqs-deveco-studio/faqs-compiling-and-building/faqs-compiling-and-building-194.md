@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“failed with:Exit code 0xc0000043”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-194
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-194
+last_sync: 2026-06-07
+sync_hash: 9e9074c0
 ---
-
-
 **问题现象**
 
 编译构建Native C++模块时，出现报错“failed with:Exit code 0xc0000043”。

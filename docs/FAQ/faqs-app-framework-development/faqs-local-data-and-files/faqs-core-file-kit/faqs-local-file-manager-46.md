@@ -2,9 +2,10 @@
 format: md
 title: "解决冷启动picker选择器无权限问题"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-46
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-46
+last_sync: 2026-06-07
+sync_hash: f16b7ddc
 ---
-
-
 在APP冷启动后，由于没有uri的读取权限，可以通过保存草稿操作将对应的文件复制到沙箱路径下，然后在冷启动时获取这些文件。
 
 **参考链接**

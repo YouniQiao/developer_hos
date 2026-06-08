@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "人脸识别与跟踪介绍"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-face/arengine-face-conversion
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/get-face/arengine-face-conversion
+last_sync: 2026-06-07
+sync_hash: 3abf8090
 ---
-
-
 AR Engine提供人脸表情跟踪的能力，跟踪获取人脸图像信息，实时将其理解成人脸表情内容，并转化成各种表情参数。
 
 AR Engine提供了64种包含眼睛、眉毛、眼球、嘴巴、舌头等主要脸部器官的表情动作以及84个人脸拓扑点。

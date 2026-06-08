@@ -2,9 +2,10 @@
 title: "通过关系型数据库实现数据持久化 (ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/app-data-persistence/data-persistence-by-rdb-store
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/app-data-persistence/data-persistence-by-rdb-store
+last_sync: 2026-06-07
+sync_hash: 684ccf73
 ---
-
-
 ## 场景介绍
 
 关系型数据库基于SQLite组件，适用于存储包含复杂关系数据的场景，比如一个班级的学生信息，需要包括姓名、学号、各科成绩等，又或者公司的雇员信息，需要包括姓名、工号、职位等，由于数据之间有较强的对应关系，复杂程度比键值型数据更高，此时需要使用关系型数据库来持久化保存数据。

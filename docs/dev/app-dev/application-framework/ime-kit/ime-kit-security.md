@@ -2,9 +2,10 @@
 title: "输入法安全模式介绍"
 original_url: /docs/dev/app-dev/application-framework/ime-kit/ime-kit-security
 format: md
+upstream_id: dev/app-dev/application-framework/ime-kit/ime-kit-security
+last_sync: 2026-06-07
+sync_hash: 4c1da4cd
 ---
-
-
 为了保护用户数据安全，系统增加了输入法安全模式功能，包括基础模式和完整体验模式。在基础模式下，输入法扩展无法调用任何可能涉及访问或泄漏用户隐私数据的系统能力；而在完整体验模式下，则没有该限制。
 
 用户可以在设置应用中切换基础模式和完整体验模式。
@@ -66,7 +67,7 @@ format: md
          申请通过后，互动中心会发送通知给您，“申请中”会变为置灰显示的“申请”，同时，您将收到一个data-group-id。
 
          ![](./img/4f91f37a.png)
-   3. 待您收到data-group-id申请成功的回复后，重新生成[应用的profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-releaseprofile-0000001914714796)，新生成的profile里面包含本次申请到的data-group-id；并使用DevEco Studio[配置工程的签名信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app#section280162182818)，将新的profile配置到工程中。
+   3. 待您收到data-group-id申请成功的回复后，重新生成[应用的profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-add-releaseprofile-0000001914714796)，新生成的profile里面包含本次申请到的data-group-id；并使用DevEco Studio[配置工程的签名信息](/docs/tools/coding-debug/ide-publish-app#section280162182818)，将新的profile配置到工程中。
    4. 将您本次申请获取到的data-group-id，配置到InputMethodExtensionAbility所在的module.json5中的[dataGroupIds](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#extensionabilities标签)中。
 
    ![](./img/bdc2b940.png)

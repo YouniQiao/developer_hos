@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "添加、删除背景"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-add-background
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-add-background
+last_sync: 2026-06-07
+sync_hash: 0406a451
 ---
-
-
 对指定页面添加背景图片或背景颜色，并设置大小、旋转、透明度和位置等属性，支持图片格式：PNG、BMP、JPEG。
 
 ![](./img/c6266f36.png)

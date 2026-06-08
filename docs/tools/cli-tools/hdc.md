@@ -3,9 +3,10 @@ title: "hdc"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/hdc
 format: md
+upstream_id: tools/cli-tools/hdc
+last_sync: 2026-06-07
+sync_hash: 782ef943
 ---
-
-
 # hdc
 
 hdc（HarmonyOS Device Connector）是提供给开发人员的命令行调试工具，用于与设备进行交互调试、数据传输、日志查看以及应用安装等操作。该工具支持在Windows/Linux/MacOS系统上运行，为开发者提供高效，便捷的设备调试能力。
@@ -606,7 +607,8 @@ shell         39491      1 1 14:40:58 ?     00:00:00 hdcd
 
 # 查询全部可用命令。
 $ hdc shell help -a
----toybox---------------------------------------------------------------------
+---
+toybox---------------------------------------------------------------------
 
 usage: toybox [--long | --help | --version | [command] [arguments...]]
 
@@ -1083,14 +1085,16 @@ hdc bugreport [FILE]
 
 ```
 $ hdc bugreport
--------------------------------[base]-------------------------------
+---
+----------------------------[base]-------------------------------
 
 BuildId: xxx
 RleaseType: xxx
 OsVersion: default/default/default/default/xxx
 DeviceType: default
 Manufacture: default
------
+---
+--
 ```
 
 ## hdc调试日志

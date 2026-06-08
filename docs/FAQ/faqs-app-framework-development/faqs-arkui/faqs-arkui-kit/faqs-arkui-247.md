@@ -2,9 +2,10 @@
 format: md
 title: "ListItemGroup和LazyForEach如何结合使用"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-247
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-247
+last_sync: 2026-06-07
+sync_hash: 5224ea2f
 ---
-
-
 在List容器组件内可以将ListItemGroup和LazyForEach结合使用。参考代码如下：
 
 ```

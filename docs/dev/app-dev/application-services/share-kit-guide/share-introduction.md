@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Share Kit简介"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/share-introduction
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/share-introduction
+last_sync: 2026-06-07
+sync_hash: 84fad028
 ---
-
-
 Share Kit（分享服务）为应用提供文本、图片、视频等内容跨应用、跨端分享能力。
 
 应用把需要分享的内容和预览样式配置给Share Kit，Share Kit将根据不同的场景进行使用：
@@ -85,4 +86,4 @@ Share Kit（分享服务）提供的[SampleCode示例工程](https://gitcode.com
 
 本Kit支持模拟器。
 
-模拟器与真机存在通用差异，详情请参见“[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification)”。
+模拟器与真机存在通用差异，详情请参见“[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification)”。

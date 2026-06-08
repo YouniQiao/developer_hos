@@ -2,9 +2,10 @@
 format: md
 title: "应用开启禁止截屏之后，系统将如何处理用户的截屏和录屏操作"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-237
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-237
+last_sync: 2026-06-07
+sync_hash: cf8ff3c7
 ---
-
-
 设置窗口为隐私模式后，截屏、录屏、分享屏幕时，系统会阻止这些操作，同时显示灰色蒙层作为视觉提示。
 
 **参考链接**

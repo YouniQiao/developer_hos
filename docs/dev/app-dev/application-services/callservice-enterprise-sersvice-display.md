@@ -2,9 +2,10 @@
 title: "企业服务信息来去电页面显示"
 original_url: /docs/dev/app-dev/application-services/callservice-enterprise-sersvice-display
 format: md
+upstream_id: dev/app-dev/application-services/callservice-enterprise-sersvice-display
+last_sync: 2026-06-07
+sync_hash: 8c379ac6
 ---
-
-
 从6.1.1(24)版本开始，新增支持企业服务信息来去电页面显示。
 
 本功能仅供企业应用开发者接入。

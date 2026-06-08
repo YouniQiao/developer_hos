@@ -1,8 +1,10 @@
 ---
 title: "配置服务器域名"
 original_url: /docs/dev/atomic-dev/atomic-network-development/agc-help-harmonyos-server-domain
+upstream_id: dev/atomic-dev/atomic-network-development/agc-help-harmonyos-server-domain
+last_sync: 2026-06-07
+sync_hash: 7c614e45
 ---
-
 为规范元服务请求域名范围，提升元服务上架审核效率和平台合规经营安全性，支持开发者在元服务上架前申请开放使用的服务器域名。后续当用户使用元服务时，将根据该元服务的域名配置进行域名访问，为用户提供安全可靠的网络环境，从而提升用户信任度和满意度。并且域名管控支持定期自动导入全局禁止清单内的域名，实现域名数据的自动化更新，时刻确保网络的正常运行和信息的安全传输。
 
 ![](./img/cdfdf820.png)

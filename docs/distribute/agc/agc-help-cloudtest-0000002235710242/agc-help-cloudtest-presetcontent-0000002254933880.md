@@ -2,9 +2,10 @@
 title: "预置条件"
 original_url: /docs/distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-presetcontent-0000002254933880
 format: md
+upstream_id: distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-presetcontent-0000002254933880
+last_sync: 2026-06-07
+sync_hash: 0121a3a2
 ---
-
-
 在云测试自动化遍历测试过程中，您的应用可能需要登录才可以进入，或者您希望在测试过程中能够通过云测试点击某些控件、对某些控件执行文本输入，或者直接忽略掉某些控件，因此，云测试在创建测试任务时增加了预置条件的选项，以实现以上场景。您可以在创建测试任务的过程中新增预置条件，也可通过云测试主界面的“预置条件”页签新增预置条件，在需要时直接使用已预置的条件，省去反复输入的不便。
 
 #### 在创建测试任务的过程中预置条件

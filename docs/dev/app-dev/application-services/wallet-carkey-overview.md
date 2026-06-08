@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "概述"
 original_url: /docs/dev/app-dev/application-services/wallet-carkey-overview
 format: md
+upstream_id: dev/app-dev/application-services/wallet-carkey-overview
+last_sync: 2026-06-07
+sync_hash: 27540789
+upstream_hash: af63e32f9221
 ---
-
 
 华为数字车钥匙依托华为钱包数字车钥匙业务集成方案，基于华为手机“芯-端-云”一体化的安全能力，且满足ICCE标准，可快速实现手机模拟车钥匙的功能。
 

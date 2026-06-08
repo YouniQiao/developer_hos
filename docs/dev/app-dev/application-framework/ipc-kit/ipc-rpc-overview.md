@@ -2,9 +2,10 @@
 title: "IPC Kit简介"
 original_url: /docs/dev/app-dev/application-framework/ipc-kit/ipc-rpc-overview
 format: md
+upstream_id: dev/app-dev/application-framework/ipc-kit/ipc-rpc-overview
+last_sync: 2026-06-07
+sync_hash: 900a4c57
 ---
-
-
 ## 基本概念
 
 | 缩写 | 全称 | 中文描述 | 说明 |
@@ -37,4 +38,4 @@ IPC和RPC采用客户端-服务端（Client-Server）模型。在使用时，Cli
 
 本Kit支持模拟器。
 
-模拟器与真机存在通用差异，详情请参见“[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification#section1227613205203)”。
+模拟器与真机存在通用差异，详情请参见“[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification#section1227613205203)”。

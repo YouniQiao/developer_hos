@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "NativeDisplaySoloist开发指导 (C/C++)"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/displaysync/displaysoloist-native-guidelines
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/displaysync/displaysoloist-native-guidelines
+last_sync: 2026-06-07
+sync_hash: 62791774
 ---
-
-
 如果开发者想在独立线程中实现帧率控制的Native侧业务，可以通过DisplaySoloist来实现，如游戏、自绘制UI框架对接等场景。
 
 开发者可以选择多个DisplaySoloist实例共享一个线程，也可以选择每个DisplaySoloist实例独占一个线程。

@@ -2,9 +2,10 @@
 format: md
 title: "预览报错“Node service error detected.Reinstall DevEco Studio to fix the error. ”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-previewer-operating/faqs-previewer-operating-5
+upstream_id: FAQ/faqs-deveco-studio/faqs-previewer-operating/faqs-previewer-operating-5
+last_sync: 2026-06-07
+sync_hash: 631f1eb4
 ---
-
-
 **问题现象**
 
 预览启动失败，PreviewerLog窗口显示错误信息：“Node service error detected.Reinstall DevEco Studio to fix the error.”。

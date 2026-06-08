@@ -3,8 +3,10 @@ title: 文本
 sidebar_label: 文本
 original_url: /docs/design/components/view-components/text
 format: md
+upstream_id: design/components/view-components/text
+last_sync: 2026-06-07
+sync_hash: e894ec2f
 ---
-
 # 文本
 
 文本控件用于呈现一段信息，可以任意布局在界面中，并可作为段落文本用于界面功能中。文本基础属性设置参考 [Text](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text) 文档，富文本规格参考 [RichText](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-richtext) 文档。

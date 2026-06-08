@@ -2,8 +2,10 @@
 title: "注意事项"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-precautions-0000002504275099
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-precautions-0000002504275099
+last_sync: 2026-06-07
+sync_hash: abc5802c
 ---
-
 # 注意事项
 
 |  |  |

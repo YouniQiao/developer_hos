@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“no such file or directory, realpath 'xxx'”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-105
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-105
+last_sync: 2026-06-07
+sync_hash: aa288628
 ---
-
-
 **问题现象**
 
 DevEco Studio编译时出现错误，提示“no such file or directory, realpath 'xxx'”错误信息。![](./img/045ca6d9.png)

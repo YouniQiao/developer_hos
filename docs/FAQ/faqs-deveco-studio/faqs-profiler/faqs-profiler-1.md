@@ -2,9 +2,10 @@
 format: md
 title: "Profiler分析任务录制失败"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-1
+upstream_id: FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-1
+last_sync: 2026-06-07
+sync_hash: 57f8a8ff
 ---
-
-
 **问题现象**
 
 单击Profiler深度分析任务的启动录制按钮后，录制失败。

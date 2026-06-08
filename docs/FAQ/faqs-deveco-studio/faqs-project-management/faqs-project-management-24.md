@@ -2,9 +2,10 @@
 format: md
 title: "打开工程时左侧目录树不显示"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-24
+upstream_id: FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-24
+last_sync: 2026-06-07
+sync_hash: e7b4e40e
 ---
-
-
 **问题现象**
 
 左侧目录树不显示，如下图所示。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "适配相机旋转角度(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-angle-adaptation
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-angle-adaptation
+last_sync: 2026-06-07
+sync_hash: b8a9ae8d
 ---
-
-
 屏幕处于不同的屏幕状态时，原始图像需旋转不同的角度，以确保图像在合适的方向显示，效果如图所示。
 
 ![](./img/2fe27fd4.png)
@@ -61,9 +62,9 @@ format: md
 
 完成[会话创建](#创建会话)后，开发者可根据实际需求，配置输出流。
 
-1. 调用[PreviewOutput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-previewoutput)中的[getPreviewRotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-previewoutput#getpreviewrotation12)接口，获取[预览旋转角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#预览旋转角度)。
+1. 调用[PreviewOutput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-previewoutput)中的[getPreviewRotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-previewoutput#getpreviewrotation12)接口，获取[预览旋转角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#预览旋转角度)。
 
-   displayRotation：[显示设备的屏幕旋转角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#屏幕旋转角度)，可通过[display.getDefaultDisplaySync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#displaygetdefaultdisplaysync9)获取[Display](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#属性)对象并读取其rotation属性值，并将对应角度填入。
+   displayRotation：[显示设备的屏幕旋转角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#屏幕旋转角度)，可通过[display.getDefaultDisplaySync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#displaygetdefaultdisplaysync9)获取[Display](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#属性)对象并读取其rotation属性值，并将对应角度填入。
 
    例：Display.rotation = 1，表示显示设备屏幕顺时针旋转为90°，此处displayRotation填入90。
 
@@ -95,7 +96,7 @@ format: md
    该接口需要在session调用[commitConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-session#commitconfig11)完成配流后调用，如果多次调用，以最新调用设置的图像预览旋转角度为准。
 
    * previewRotation：预览旋转角度，取上一步[getPreviewRotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-previewoutput#getpreviewrotation12)的返回值。
-   * isDisplayLocked：可选入参，默认为false。当设置为false，即屏幕方向未锁定，[预览旋转角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#预览旋转角度)将根据[相机镜头角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#相机镜头安装角度)+[屏幕显示旋转角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#屏幕旋转角度)的值计算；当设置为true，Surface旋转锁定，不跟随窗口变化，旋转角度仅取相机镜头角度计算。
+   * isDisplayLocked：可选入参，默认为false。当设置为false，即屏幕方向未锁定，[预览旋转角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#预览旋转角度)将根据[相机镜头角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#相机镜头安装角度)+[屏幕显示旋转角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#屏幕旋转角度)的值计算；当设置为true，Surface旋转锁定，不跟随窗口变化，旋转角度仅取相机镜头角度计算。
 
    ```
    function setPreviewRotation(previewOutput: camera.PreviewOutput, previewRotation : camera.ImageRotation, isDisplayLocked: boolean): void {
@@ -312,7 +313,7 @@ async getCurrentDeviceDegree() : Promise<number> {
 
 ## 实现相机无损出图
 
-在部分折叠屏设备上，[不同折叠状态](/docs/dev/app-dev/multi-device/bpta-foldable-guide#section152264061715)下的[设备自然方向](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#设备自然方向)会发生改变，导致不同折叠状态下真实的[相机镜头安装角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#相机镜头安装角度)不同。为了屏蔽不同设备间的差异，使得不同折叠状态下的相机镜头安装角度一致，系统会自动调整部分折叠状态下的相机采集图像方向（通过旋转裁切的方式）和相机镜头安装角度，因此会存在视场角（Field of View, FOV）损失，可能会导致相机预览、拍照、录像可见范围降低，因此如果需要实现相机无损出图，可以通过[usePhysicalCameraOrientation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-camerainput#usephysicalcameraorientation22)接口来实现相机无损出图。具体方式如下：
+在部分折叠屏设备上，[不同折叠状态](/docs/dev/app-dev/multi-device/bpta-foldable-guide#section152264061715)下的[设备自然方向](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#设备自然方向)会发生改变，导致不同折叠状态下真实的[相机镜头安装角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#相机镜头安装角度)不同。为了屏蔽不同设备间的差异，使得不同折叠状态下的相机镜头安装角度一致，系统会自动调整部分折叠状态下的相机采集图像方向（通过旋转裁切的方式）和相机镜头安装角度，因此会存在视场角（Field of View, FOV）损失，可能会导致相机预览、拍照、录像可见范围降低，因此如果需要实现相机无损出图，可以通过[usePhysicalCameraOrientation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-camerainput#usephysicalcameraorientation22)接口来实现相机无损出图。具体方式如下：
 
 设备是否支持无损出图，首先需要确认设备的相机镜头安装角度是否可变，可以通过[isPhysicalCameraOrientationVariable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-camerainput#isphysicalcameraorientationvariable22)接口查询。
 

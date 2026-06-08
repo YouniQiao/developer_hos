@@ -2,9 +2,10 @@
 title: "翻译伪本地化测试"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/l10n-testing/pseudo-i18n-testing/pseudo-i18n-testing-translation
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/l10n-testing/pseudo-i18n-testing/pseudo-i18n-testing-translation
+last_sync: 2026-06-07
+sync_hash: 0e23daff
 ---
-
-
 ## 使用场景
 
 翻译伪本地化测试是模拟应用翻译的过程，提前识别应用翻译后可能出现的界面布局或文字显示异常等问题。

@@ -3,9 +3,10 @@ title: "应用集成三方库（har包）的兼容性指导"
 displayed_sidebar: appCompatibilitySidebar
 original_url: /docs/design/app-compatibility/app-compatibility-third-har
 format: md
+upstream_id: design/app-compatibility/app-compatibility-third-har
+last_sync: 2026-06-07
+sync_hash: e4bc712a
 ---
-
-
 # 应用集成三方库（har包）的兼容性指导
 
 在应用开发过程中，会依赖大量的三方库，应用hap和三方库har之间因为SDK版本属性字段的版本差异，会存在各种兼容性问题。

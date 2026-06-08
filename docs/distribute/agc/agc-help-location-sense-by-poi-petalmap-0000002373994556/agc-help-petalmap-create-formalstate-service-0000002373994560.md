@@ -2,9 +2,10 @@
 title: "创建全网态服务"
 original_url: /docs/distribute/agc/agc-help-location-sense-by-poi-petalmap-0000002373994556/agc-help-petalmap-create-formalstate-service-0000002373994560
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-by-poi-petalmap-0000002373994556/agc-help-petalmap-create-formalstate-service-0000002373994560
+last_sync: 2026-06-07
+sync_hash: 9ee7e00a
 ---
-
-
 ![](../img/agc-help-petalmap-create-formalstate-service-0000002373994560_0.png)
 
 一个应用/元服务最多支持创建2000个近场服务。

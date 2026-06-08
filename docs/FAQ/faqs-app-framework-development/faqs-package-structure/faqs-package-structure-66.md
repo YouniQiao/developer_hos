@@ -2,9 +2,10 @@
 format: md
 title: "使用HSP的多包场景下，直接崩溃并产生cppcrash异常日志，错误信息为resolveBufferCallback get buffer failed"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-66
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-66
+last_sync: 2026-06-07
+sync_hash: 7327604a
 ---
-
-
 该问题是由于HSP包解析失败导致的。常见的加载失败原因包括安装失败、文件丢失、缺少权限和安全内存校验失败。开发者可以根据关键日志进行排查。重新安装应用通常可以解决问题。
 
 | 已知关键错误日志 | 修改建议 |

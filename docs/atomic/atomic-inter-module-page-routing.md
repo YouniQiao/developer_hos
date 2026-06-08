@@ -2,9 +2,10 @@
 title: "跨模块页面路由"
 original_url: /docs/dev/atomic-dev/atomic-navigation-routing/atomic-inter-module-page-routing
 format: md
+upstream_id: dev/atomic-dev/atomic-navigation-routing/atomic-inter-module-page-routing
+last_sync: 2026-06-07
+sync_hash: a470db19
 ---
-
-
 当Navigation跳转的目标NavDestination在不同的hsp分包且该hsp包未被主包依赖时，由于首次运行元服务只会下载安装主包，需要使用NavPushPathHelper的接口进行路由跳转。NavPushPathHelper对Navigation路由栈NavPathStack的所有路由跳转接口进行了封装，在NavPushPathHelper中持有一个NavPathStack对象，在封装的跳转接口中去判断子包是否存在，如果不存在则进行动态下载子包，等结果返回后调用NavPathStack的相应的接口将指定的NavDestination页面信息入栈。
 
 ## 页面跳转操作

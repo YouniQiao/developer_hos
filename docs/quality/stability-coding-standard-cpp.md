@@ -2,9 +2,10 @@
 title: "C++编码规范"
 original_url: /docs/quality/stability-coding-standard-cpp
 format: md
+upstream_id: /docs/quality/stability-coding-standard-cpp
+last_sync: 2026-06-07
+sync_hash: 5f7e48cf
 ---
-
-
 # C++编码规范
 
 ## 基础要求

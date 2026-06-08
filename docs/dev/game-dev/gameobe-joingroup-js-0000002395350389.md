@@ -2,9 +2,10 @@
 title: "加入队伍"
 original_url: /docs/dev/game-dev/gameobe-joingroup-js-0000002395350389
 format: md
+upstream_id: dev/game-dev/gameobe-joingroup-js-0000002395350389
+last_sync: 2026-06-07
+sync_hash: 1ac4e345
 ---
-
-
 当队伍[成功创建](/docs/dev/game-dev/gameobe-creategroup-js-0000002361670448)后，其他玩家可以从队长那里获得队伍ID，然后加入到该队伍中并参与游戏。
 
 ## 前提条件

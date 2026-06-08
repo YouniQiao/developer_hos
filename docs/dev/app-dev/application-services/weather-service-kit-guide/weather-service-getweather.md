@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取天气数据"
 original_url: /docs/dev/app-dev/application-services/weather-service-kit-guide/weather-service-getweather
 format: md
+upstream_id: dev/app-dev/application-services/weather-service-kit-guide/weather-service-getweather
+last_sync: 2026-06-07
+sync_hash: 8c752189
 ---
-
-
 通过开发者提供的经纬度数据，获取天气数据，比如：实况数据、预警数据。
 
 ## 约束与限制

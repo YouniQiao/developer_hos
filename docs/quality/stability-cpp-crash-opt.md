@@ -1,9 +1,10 @@
 ---
 title: "CppCrash类问题优化建议"
 original_url: /docs/quality/stability-cpp-crash-opt
+upstream_id: /docs/quality/stability-cpp-crash-opt
+last_sync: 2026-06-07
+sync_hash: 29b43162
 ---
-
-
 # CppCrash类问题优化建议
 
 ## 优化建议1：使用map\vector\list\set等STL库时，要避免数据竞争

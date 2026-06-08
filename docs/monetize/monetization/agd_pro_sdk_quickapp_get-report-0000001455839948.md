@@ -3,10 +3,10 @@ title: "调试获取报表接口"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_quickapp_get-report-0000001455839948
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_quickapp_get-report-0000001455839948
+last_sync: 2026-06-07
+sync_hash: 3dcffe55
 ---
-
-
-
 #### 功能介绍
 
 此接口用于获取数据报表，向媒体按天提供曝光、点击、收益等统计数据。

@@ -3,9 +3,10 @@ title: "布局分析"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-arkui-inspector
 format: md
+upstream_id: tools/coding-debug/ide-arkui-inspector
+last_sync: 2026-06-07
+sync_hash: 69f45475
 ---
-
-
 # 布局分析
 
 开发者可以使用ArkUI Inspector，在DevEco Studio上查看应用在真机上的UI显示效果，并通过查看多次操作后的界面状态，快速分析定位UI界面存在的问题。

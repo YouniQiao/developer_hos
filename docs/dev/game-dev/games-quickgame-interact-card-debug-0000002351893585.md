@@ -2,9 +2,10 @@
 title: "打包测试"
 original_url: /docs/dev/game-dev/games-quickgame-interact-card-debug-0000002351893585
 format: md
+upstream_id: dev/game-dev/games-quickgame-interact-card-debug-0000002351893585
+last_sync: 2026-06-07
+sync_hash: cdcae71b
 ---
-
-
 ## 准备工作
 
 * [下载](/docs/dev/game-dev/games-quickgame-tool-download-0000002351893589)并安装最新的快游戏开发者工具。

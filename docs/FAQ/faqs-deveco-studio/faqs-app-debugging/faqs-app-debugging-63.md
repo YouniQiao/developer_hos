@@ -2,9 +2,10 @@
 format: md
 title: "2in1设备attach调试失败和增量调试失败"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-63
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-63
+last_sync: 2026-06-07
+sync_hash: 6dfdff02
 ---
-
-
 **问题现象**
 
 1、2in1设备应用调试失败，报错信息如下图所示。

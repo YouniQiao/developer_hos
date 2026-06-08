@@ -2,9 +2,10 @@
 title: "网络"
 original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-network-type
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-device/apis-network-type
+last_sync: 2026-06-07
+sync_hash: ecb19aba
 ---
-
-
 ## has.getNetworkType
 
 has.getNetworkType(Object object)

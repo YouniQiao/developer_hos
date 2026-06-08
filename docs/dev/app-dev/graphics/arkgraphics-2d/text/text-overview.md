@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "文本开发概述"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/text-overview
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/text/text-overview
+last_sync: 2026-06-07
+sync_hash: 7b8f90b5
 ---
-
-
 应用在开发和布局时，经常需要针对文本元素和内容进行排版、测量、绘制和显示等。字体引擎开发框架提供了一系列接口能力用于支持应用布局文本和管理字体。
 
 ## 能力范围

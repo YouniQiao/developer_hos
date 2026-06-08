@@ -3,9 +3,10 @@ title: "@correctness/audio-pause-or-mute-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-audio-pause-or-mute-check
 format: md
+upstream_id: tools/coding-debug/ide-audio-pause-or-mute-check
+last_sync: 2026-06-07
+sync_hash: b8b480d9
 ---
-
-
 # @correctness/audio-pause-or-mute-check
 
 建议应用在播放声音的场景下，监听音频发声设备变化。

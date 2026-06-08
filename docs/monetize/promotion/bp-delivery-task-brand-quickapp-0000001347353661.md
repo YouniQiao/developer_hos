@@ -3,8 +3,10 @@ title: "投放快应用任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-task-brand-quickapp-0000001347353661
 format: md
+upstream_id: monetize/promotion/bp-delivery-task-brand-quickapp-0000001347353661
+last_sync: 2026-06-07
+sync_hash: 6c4e0ad7
 ---
-
 # 投放快应用任务
 
 ## 背景信息

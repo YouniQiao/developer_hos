@@ -2,9 +2,10 @@
 title: "信息配置和运营"
 original_url: /docs/dev/game-dev/games-quickgame-faq-info-and-operation-0000002458692493
 format: md
+upstream_id: dev/game-dev/games-quickgame-faq-info-and-operation-0000002458692493
+last_sync: 2026-06-07
+sync_hash: 7ee98335
 ---
-
-
 ## 更换开发者联盟账号后，快游戏需要做哪些变更操作？
 
 更换开发者联盟账号appid不会变更，但是商户和cpid会改变。所以支付接口中相关参数都需要配套更新，修改后必须确保本地测试没有问题再提交上架审核。上架后如果玩家无法支付，建议尝试引导玩家清除历史缓存。

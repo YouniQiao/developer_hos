@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-wrap-waterflow-if-else-footer（已下线）"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hp-arkui-wrap-waterflow-if-else-footer
 format: md
+upstream_id: tools/coding-debug/ide-hp-arkui-wrap-waterflow-if-else-footer
+last_sync: 2026-06-07
+sync_hash: a27e20ee
 ---
-
-
 # @performance/hp-arkui-wrap-waterflow-if-else-footer（已下线）
 
 建议使用容器包裹waterflow中footer的if-else逻辑。

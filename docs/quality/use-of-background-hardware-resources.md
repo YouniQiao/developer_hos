@@ -2,9 +2,10 @@
 title: "后台硬件资源合理使用"
 original_url: /docs/quality/use-of-background-hardware-resources
 format: md
+upstream_id: /docs/quality/use-of-background-hardware-resources
+last_sync: 2026-06-07
+sync_hash: 258eccc2
 ---
-
-
 # 后台硬件资源合理使用
 
 * **[控制后台进程CPU使用率](/docs/quality/controlling-background-process-cpu)**

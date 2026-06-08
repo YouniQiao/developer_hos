@@ -2,9 +2,10 @@
 format: md
 title: "如何理解自定义弹窗（CustomDialog）中的gridCount参数"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-84
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-84
+last_sync: 2026-06-07
+sync_hash: 02686db7
 ---
-
-
 gridCount参数表示弹窗宽度占用的栅格列数。系统将窗口宽度等分为若干栅格列，不同设备的栅格列数不同。例如，手机屏幕密度值在320vp到600vp之间时，栅格列数为4，gridCount的有效值为1到4。
 
 **参考链接**

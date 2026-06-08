@@ -2,9 +2,10 @@
 format: md
 title: "Navigation组件，使用customNavContentTransition自定义转场动效，如何实现动效逻辑跟组件解耦"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-432
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-432
+last_sync: 2026-06-07
+sync_hash: 3ae7ef24
 ---
-
-
 **问题描述**
 
 使用Navigation作为路由框架之后，默认Component跳转是有右进右出的动画的。 但是dialog以及从dialog中再跳转其他page是没有动画的。

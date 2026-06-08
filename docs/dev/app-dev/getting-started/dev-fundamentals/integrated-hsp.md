@@ -1,8 +1,10 @@
 ---
 title: "集成态HSP"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/integrated-hsp
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/integrated-hsp
+last_sync: 2026-06-07
+sync_hash: 1181f0de
 ---
-
 集成态HSP是应用内HSP的中间编译产物，用于解决使用方的bundleName和签名之间的强耦合问题。
 
 ![](./img/9fbb2bb8.png)
@@ -21,7 +23,7 @@ HSP只能给bundleName一样的工程使用，集成态HSP可以给不同的bund
 
 * 集成态HSP只支持[Stage模型](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-structure-stage)。
 * 从API version 12开始，支持使用集成态HSP。
-* 使用集成态HSP要求使用标准化的OHMUrl格式。需要在工程级的[build-profile.json5文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app)中，将[strictMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section13181758123312)下的useNormalizedOHMUrl字段设置为true。
+* 使用集成态HSP要求使用标准化的OHMUrl格式。需要在工程级的[build-profile.json5文件](/docs/tools/coding-debug/ide-hvigor-build-profile-app)中，将[strictMode](/docs/tools/coding-debug/ide-hvigor-build-profile-app#section13181758123312)下的useNormalizedOHMUrl字段设置为true。
 
 ## 开发使用说明
 
@@ -59,7 +61,7 @@ HSP只能给bundleName一样的工程使用，集成态HSP可以给不同的bund
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/bmsSample/IntegratedHsp/build-profile.json5#L15-L77" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：build-profile.json5</a></div>
 
-2. 模块配置：修改模块级构建配置文件[build-profile.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile)，将integratedHsp配置项设置为true，指定构建的HSP模块为集成态HSP。
+2. 模块配置：修改模块级构建配置文件[build-profile.json5](/docs/tools/coding-debug/ide-hvigor-build-profile)，将integratedHsp配置项设置为true，指定构建的HSP模块为集成态HSP。
 
    ```
    // library/build-profile.json5
@@ -85,7 +87,7 @@ HSP只能给bundleName一样的工程使用，集成态HSP可以给不同的bund
 
 3. 打包配置（tgz包）。
 
-   (1) 配置项目签名信息，详情请参见[应用/元服务签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
+   (1) 配置项目签名信息，详情请参见[应用/元服务签名](/docs/tools/coding-debug/ide-signing)。
 
    (2) 配置release模式。
 
@@ -142,5 +144,5 @@ HSP只能给bundleName一样的工程使用，集成态HSP可以给不同的bund
 
 4. 配置签名。
 
-   安装和运行应用前，必须配置项目签名信息，详见[应用/元服务签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
-5. [安装和运行](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device)。
+   安装和运行应用前，必须配置项目签名信息，详见[应用/元服务签名](/docs/tools/coding-debug/ide-signing)。
+5. [安装和运行](/docs/tools/coding-debug/ide-run-device)。

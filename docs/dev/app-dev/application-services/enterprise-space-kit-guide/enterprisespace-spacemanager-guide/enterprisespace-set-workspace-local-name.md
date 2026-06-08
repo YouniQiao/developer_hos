@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "设置空间本地名称"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-set-workspace-local-name
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-set-workspace-local-name
+last_sync: 2026-06-07
+sync_hash: 480f8931
+upstream_hash: c5a2c284587c
 ---
-
 
 ## 场景介绍
 

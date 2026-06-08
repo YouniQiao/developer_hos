@@ -3,8 +3,10 @@ title: "查看账户信息"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-account-management-check-0000001293889870
 format: md
+upstream_id: monetize/promotion/bp-delivery-account-management-check-0000001293889870
+last_sync: 2026-06-07
+sync_hash: f94a979d
 ---
-
 # 查看账户信息
 
 投放端右上角，点击账户名称旁的下拉框，可以查看账户基本信息：账户ID和登录账户的UPID信息。

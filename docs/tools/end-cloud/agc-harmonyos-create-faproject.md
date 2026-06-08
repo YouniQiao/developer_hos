@@ -1,12 +1,12 @@
 ---
-
 title: "创建元服务工程"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-create-faproject
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-create-faproject
+last_sync: 2026-06-07
+sync_hash: 06bd1dc8
 ---
-
-
 # 创建元服务工程
 
 ## 新建工程

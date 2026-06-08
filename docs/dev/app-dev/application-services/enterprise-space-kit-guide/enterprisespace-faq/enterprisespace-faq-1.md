@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "编译失败，该如何解决？"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-faq/enterprisespace-faq-1
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-faq/enterprisespace-faq-1
+last_sync: 2026-06-07
+sync_hash: b7c482cb
 ---
-
-
 **问题现象**
 
 编译不通过，签名证书缺少所需权限，报错：install failed due to grant request permissions failed.

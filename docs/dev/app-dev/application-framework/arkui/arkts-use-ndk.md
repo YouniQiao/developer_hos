@@ -2,9 +2,10 @@
 title: "UI开发 (基于NDK构建UI)"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk
+last_sync: 2026-06-07
+sync_hash: 65d685e9
 ---
-
-
 * **[基于NDK构建UI概述](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-ui-overview)**
 * **[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)**
 * **[添加事件响应](/docs/dev/app-dev/application-framework/ndk-add-event-response)**

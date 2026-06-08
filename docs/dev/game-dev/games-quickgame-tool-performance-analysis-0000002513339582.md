@@ -2,9 +2,10 @@
 title: "性能分析"
 original_url: /docs/dev/game-dev/games-quickgame-tool-performance-analysis-0000002513339582
 format: md
+upstream_id: dev/game-dev/games-quickgame-tool-performance-analysis-0000002513339582
+last_sync: 2026-06-07
+sync_hash: 90154d82
 ---
-
-
 快游戏开发者工具内提供了可用于JavaScript性能分析的工具，并提供了Chart、Heavy (Bottom Up)和Tree (Top Down)三种模式，帮助您在调试时全面地分析快游戏的JavaScript性能问题，并进行针对性优化。
 
 ## JS-CPU-Profiler

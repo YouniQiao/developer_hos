@@ -2,9 +2,10 @@
 title: "为应用添加自动生成高强度密码的建议"
 original_url: /docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autofill/passwordvault-custom-strong-password-rules
 format: md
+upstream_id: dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autofill/passwordvault-custom-strong-password-rules
+last_sync: 2026-06-07
+sync_hash: a6a6a340
 ---
-
-
 在本文档中介绍的强密码特指，在密码保险箱强密码填充场景中，推荐用户使用的较强密码。强密码中一定包含大写字母、小写字母、数字三种字符。且强密码的复杂度高，破解难度大。
 
 当开发者没有指定密码规则，或是开发者指定的规则书写错误、不符合规范时，密码保险箱会根据[默认的规则](#默认强密码规则)生成符合开发者指定条件的强密码。开发者可以在允许的范围内指定强密码的规格，详见[开发者可自定义的强密码规则](#开发者可自定义的强密码规则)。

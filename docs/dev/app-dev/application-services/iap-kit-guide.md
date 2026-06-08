@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "IAP Kit（应用内支付服务）"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide
+last_sync: 2026-06-07
+sync_hash: 3da9c049
 ---
-
-
 * **[IAP Kit简介](/docs/dev/app-dev/application-services/iap-kit-guide/iap-introduction)**
 * **[IAP Kit接入规范](/docs/dev/app-dev/application-services/iap-kit-guide/iap-access-specifications)**
 * **[接入Skill（可选）](/docs/dev/app-dev/application-services/iap-kit-guide/iap-skill-introduction)**

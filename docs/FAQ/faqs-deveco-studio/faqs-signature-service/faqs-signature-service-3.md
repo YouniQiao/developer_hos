@@ -2,9 +2,10 @@
 format: md
 title: "输入华为账号后，未出现“允许”按钮，浏览器界面无跳转"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-3
+upstream_id: FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-3
+last_sync: 2026-06-07
+sync_hash: 49283807
 ---
-
-
 **问题现象**
 
 使用浏览器登录华为账号后，如果账号已实名认证但未出现授权的“允许”按钮，界面也未跳转或提示。

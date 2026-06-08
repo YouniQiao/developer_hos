@@ -2,9 +2,10 @@
 title: "ohpm-repo restart"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-restart
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-restart
+last_sync: 2026-06-07
+sync_hash: 57b655a0
 ---
-
-
 # ohpm-repo restart
 
 重新启动ohpm-repo服务。

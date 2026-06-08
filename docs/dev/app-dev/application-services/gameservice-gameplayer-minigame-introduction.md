@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "概述"
 original_url: /docs/dev/app-dev/application-services/gameservice-gameplayer-minigame-introduction
 format: md
+upstream_id: dev/app-dev/application-services/gameservice-gameplayer-minigame-introduction
+last_sync: 2026-06-07
+sync_hash: b8d0996e
 ---
-
-
 从6.0.1(21)版本开始，新增小游戏相关能力。
 
 小游戏是一种基于行业标准开发的新型免安装应用，无需安装，即点即玩，并且可以添加到设备桌面。开发者一次开发即可将小游戏分发到所有支持行业标准的设备运行。

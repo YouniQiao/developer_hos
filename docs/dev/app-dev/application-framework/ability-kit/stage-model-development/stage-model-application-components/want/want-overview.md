@@ -2,9 +2,10 @@
 title: "Want概述"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/want/want-overview
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/want/want-overview
+last_sync: 2026-06-07
+sync_hash: 1ac91598
 ---
-
-
 ## Want的定义与用途
 
 [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want)是一种对象，用于在应用组件之间传递信息。

@@ -3,9 +3,10 @@ title: "在玩服务魔方创意"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-0000001865677220
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-0000001865677220
+last_sync: 2026-06-07
+sync_hash: 137f5cc4
 ---
-
-
 # 在玩服务魔方创意
 
 在玩魔方创意是为[在玩服务](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-playing-operation-0000001870290961)提供的在线制作、轻松上手、简单轻量的设计网站。该网站支持一键预览，支持复杂的交互或跳转，您可以自由搭配组件，一键复用优质内容，轻松设计在玩的可视化H5落地页。

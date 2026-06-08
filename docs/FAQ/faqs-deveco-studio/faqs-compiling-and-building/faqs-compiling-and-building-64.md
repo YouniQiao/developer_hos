@@ -2,9 +2,10 @@
 title: "如何写har包的编译脚本"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-64
 format: md
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-64
+last_sync: 2026-06-07
+sync_hash: 81364009
 ---
-
-
 在har包目录下的hvigorfile.ts文件中编写代码如下：
 
 ```

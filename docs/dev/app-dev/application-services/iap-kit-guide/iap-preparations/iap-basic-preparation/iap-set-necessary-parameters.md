@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "（可选）配置应用内购买服务参数"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-set-necessary-parameters
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-preparations/iap-basic-preparation/iap-set-necessary-parameters
+last_sync: 2026-06-07
+sync_hash: dc9c62e6
 ---
-
-
 ## 配置订单/订阅通知接收地址
 
 IAP服务器支持[服务端关键事件通知](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-key-event-notifications)的能力。用户购买商品后，IAP服务器会在订单（消耗型/非消耗型商品）和订阅场景的某些关键事件发生时发送通知至开发者配置的订单/订阅通知接收地址，具体的通知接收地址配置请参见[激活服务和配置事件通知](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-serve-0000001931836308/parameters-0000001931995692)。

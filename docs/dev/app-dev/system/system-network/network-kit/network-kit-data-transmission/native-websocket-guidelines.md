@@ -2,9 +2,10 @@
 title: "使用WebSocket访问网络(C/C++)"
 original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/native-websocket-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/native-websocket-guidelines
+last_sync: 2026-06-07
+sync_hash: 3fa4fd2c
 ---
-
-
 ## 场景介绍
 
 通过WebSocket模块可以建立服务器与客户端的双向连接。

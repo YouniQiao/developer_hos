@@ -2,9 +2,10 @@
 title: "提交审核"
 original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-submit-0000002424763510
 format: md
+upstream_id: distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-submit-0000002424763510
+last_sync: 2026-06-07
+sync_hash: f4e0ed43
 ---
-
-
 完成游戏信息和版本信息的配置后，即可提交上架审核。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，选择待上架的小游戏。左侧导航栏选择“应用上架 > 版本信息”下待发布的版本，点击页面右上角的“提交审核”。

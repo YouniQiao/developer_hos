@@ -2,9 +2,10 @@
 title: "PGD World组件"
 original_url: /docs/dev/game-dev/pgd-tool-editor-world-0000002526500915
 format: md
+upstream_id: dev/game-dev/pgd-tool-editor-world-0000002526500915
+last_sync: 2026-06-07
+sync_hash: 0eee992d
 ---
-
-
 PGD World组件为World管理模块。
 
 通过创建该组件可以新建IECSWorld，实时显示World中的实体数量，并提供给PGD Entity等组件使用。

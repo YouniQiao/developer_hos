@@ -3,8 +3,10 @@ title: "BrowserContent"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-browsercontent-0000001135467058
 format: md
+upstream_id: monetize/promotion/marketapi-modle-browsercontent-0000001135467058
+last_sync: 2026-06-07
+sync_hash: 2f3d4b9a
 ---
-
 # BrowserContent
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |

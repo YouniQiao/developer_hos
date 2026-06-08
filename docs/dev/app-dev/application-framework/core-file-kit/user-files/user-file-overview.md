@@ -2,9 +2,10 @@
 title: "用户文件概述"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/user-files/user-file-overview
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/user-files/user-file-overview
+last_sync: 2026-06-07
+sync_hash: 5d4f4099
 ---
-
-
 用户文件：登录到该终端设备的用户所拥有的文件，包括用户私有的[图片、视频](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-overview)、音频、文档等。
 
 1. 用户文件存放在用户目录下，归属于该设备上登录的用户。

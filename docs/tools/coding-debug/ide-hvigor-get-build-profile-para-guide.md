@@ -3,9 +3,10 @@ title: "能力说明"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-get-build-profile-para-guide
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-get-build-profile-para-guide
+last_sync: 2026-06-07
+sync_hash: 2738ec41
 ---
-
-
 # 能力说明
 
 在编译构建时，Hvigor会生成BuildProfile类，开发者可以通过该类在运行时获取编译构建参数，也可以在build-profile.json5中通过buildProfileFields增加自定义字段，从而在运行时获取自定义的参数。

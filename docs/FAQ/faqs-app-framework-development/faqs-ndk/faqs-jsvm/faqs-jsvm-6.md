@@ -2,9 +2,10 @@
 format: md
 title: "如何解决Finalizer方法中执行JS代码崩溃问题"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-jsvm/faqs-jsvm-6
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-jsvm/faqs-jsvm-6
+last_sync: 2026-06-07
+sync_hash: e5142eaa
 ---
-
-
 **问题现象**
 
 崩溃的调用栈如下：

@@ -2,9 +2,10 @@
 format: md
 title: "如何解决DevEco Studio编译hsp和闭源har包的时候，生成声明文件时emit的耗时过长导致编译慢的问题"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-71
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-71
+last_sync: 2026-06-07
+sync_hash: 04260954
 ---
-
-
 ![](./img/5f0573e5.png)
 
 注：此方法为临时规避方案，后续将修复该问题，建议仅在阻塞时使用。

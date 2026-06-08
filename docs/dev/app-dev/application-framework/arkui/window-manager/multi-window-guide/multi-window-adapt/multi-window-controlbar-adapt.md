@@ -2,9 +2,10 @@
 title: "顶部窗口控制条避让适配智慧多窗"
 original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/multi-window-guide/multi-window-adapt/multi-window-controlbar-adapt
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/window-manager/multi-window-guide/multi-window-adapt/multi-window-controlbar-adapt
+last_sync: 2026-06-07
+sync_hash: 07800e0c
 ---
-
-
 顶部窗口控制条是应用窗口处于智慧多窗模式下，应用顶部的操作横条 ![](./img/f150c37f.png) 。
 
 顶部窗口控制条示意图如下所示：

@@ -2,9 +2,10 @@
 title: "ohpm-repo remove_instance"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-remove_instance
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-remove_instance
+last_sync: 2026-06-07
+sync_hash: 1279e24e
 ---
-
-
 # ohpm-repo remove\_instance
 
 删除本机实例信息。

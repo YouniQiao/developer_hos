@@ -2,8 +2,11 @@
 title: "取消订阅公共事件（C/C++）"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/native-common-event-unsubscription
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/native-common-event-unsubscription
+last_sync: 2026-06-07
+sync_hash: 0ba4c6e1
+upstream_hash: 28ffdb956a17
 ---
-
 
 ## 场景介绍
 

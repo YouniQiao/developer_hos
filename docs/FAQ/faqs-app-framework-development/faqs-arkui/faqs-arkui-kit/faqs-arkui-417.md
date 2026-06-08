@@ -2,8 +2,11 @@
 format: md
 title: "NavDestinationMode.DIALOG模式下，如何针对弹窗内容或者背景遮罩做转场动效"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-417
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-417
+last_sync: 2026-06-07
+sync_hash: 9e365383
+upstream_hash: da4ebbfca3f6
 ---
-
 
 **问题背景**
 

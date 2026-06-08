@@ -3,8 +3,11 @@ title: "@security/no-unsafe-rsa-sign"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unsafe-rsa-sign
 format: md
+upstream_id: tools/coding-debug/ide_no-unsafe-rsa-sign
+last_sync: 2026-06-07
+sync_hash: 01c31b8a
+upstream_hash: c192991c7d81
 ---
-
 
 # @security/no-unsafe-rsa-sign
 

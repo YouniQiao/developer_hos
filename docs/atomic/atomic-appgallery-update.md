@@ -2,9 +2,10 @@
 title: "应用市场更新功能"
 original_url: /docs/dev/atomic-dev/atomic-appgallery-development/atomic-appgallery-update
 format: md
+upstream_id: dev/atomic-dev/atomic-appgallery-development/atomic-appgallery-update
+last_sync: 2026-06-07
+sync_hash: 1f60e986
 ---
-
-
 应用市场更新功能为元服务开发者提供监听/取消监听元服务更新检查功能，实现当元服务有/无新版本时提醒元服务开发者的能力，并且在有新版本时能实现自动下载并通知开发者。
 
 ## 场景介绍

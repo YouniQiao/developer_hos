@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "管理通知角标"
 original_url: /docs/dev/app-dev/application-services/notification-kit/notification-badge
 format: md
+upstream_id: dev/app-dev/application-services/notification-kit/notification-badge
+last_sync: 2026-06-07
+sync_hash: fa7db865
+upstream_hash: 009e7f8bf14f
 ---
-
 
 针对未读的通知，系统提供了角标设置接口，将未读通知个数显示在桌面图标的右上角角标上。
 

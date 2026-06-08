@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "自动补全地址表单所在地区"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-autocomplete
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-autocomplete
+last_sync: 2026-06-07
+sync_hash: ad892bd2
 ---
-
-
 在填写地址表单场景时，当应用使用了所在地区的省市区选择器，需要开发者对表单中的地址字段进行开发。
 
 ![](./img/f9affc60.png)

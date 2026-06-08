@@ -2,9 +2,10 @@
 title: "检查测试手机设置"
 original_url: /docs/distribute/agc/agc-help-beacon-own-real-phone-testing-0000002456745305/agc-help-beacon-check-test-phone-settings-0000002423146554
 format: md
+upstream_id: distribute/agc/agc-help-beacon-own-real-phone-testing-0000002456745305/agc-help-beacon-check-test-phone-settings-0000002423146554
+last_sync: 2026-06-07
+sync_hash: c2b6312d
 ---
-
-
 测试近场服务之前需要您开启手机相关权限，并且添加“小艺建议”到桌面，以便接收近场测试推送内容。
 
 1. 根据应用类型以及应用或元服务上架情况进行相应处理。

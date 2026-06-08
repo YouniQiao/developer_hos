@@ -2,9 +2,10 @@
 title: "文件组织"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-file
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-file
+last_sync: 2026-06-07
+sync_hash: ea0d0bee
 ---
-
-
 ## 目录结构
 
 JS FA应用的JS模块（entry/src/main/js/module）的典型开发目录结构如下：

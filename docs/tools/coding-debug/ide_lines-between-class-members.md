@@ -3,9 +3,10 @@ title: "@typescript-eslint/lines-between-class-members"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_lines-between-class-members
 format: md
+upstream_id: tools/coding-debug/ide_lines-between-class-members
+last_sync: 2026-06-07
+sync_hash: ba67693e
 ---
-
-
 # @typescript-eslint/lines-between-class-members
 
 禁止或者要求类成员之间有空行分隔。

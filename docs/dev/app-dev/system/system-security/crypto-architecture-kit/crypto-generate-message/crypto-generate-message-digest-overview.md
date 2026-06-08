@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "消息摘要计算介绍及算法规格"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-generate-message/crypto-generate-message-digest-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-generate-message/crypto-generate-message-digest-overview
+last_sync: 2026-06-07
+sync_hash: b0eba9ce
 ---
-
-
 消息摘要算法是一种能将任意长度的输入消息，通过特定运算生成固定长度摘要的算法。消息摘要算法也被称为哈希算法或单向散列算法。
 
 在摘要算法相同时，生成的摘要值主要有下列特点：

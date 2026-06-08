@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取设备的位置信息开发指导(ArkTS)"
 original_url: /docs/dev/app-dev/application-services/location-kit/location-guidelines-index/location-guidelines
 format: md
+upstream_id: dev/app-dev/application-services/location-kit/location-guidelines-index/location-guidelines
+last_sync: 2026-06-07
+sync_hash: c48e7147
 ---
-
-
 ## 场景概述
 
 开发者可以调用HarmonyOS位置相关接口，获取设备实时位置，或者最近的历史位置，以及监听设备的位置变化。

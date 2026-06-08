@@ -2,8 +2,11 @@
 format: md
 title: "如何实现拖拽时列表项占位动画的效果"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-143
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-143
+last_sync: 2026-06-07
+sync_hash: 687b131d
+upstream_hash: f3cac454b925
 ---
-
 
 拖拽Grid时，列表项显示占位动画效果。实现步骤如下：
 

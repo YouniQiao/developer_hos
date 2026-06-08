@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "距离计算"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-calculation-tool/map-calculate-distance
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-calculation-tool/map-calculate-distance
+last_sync: 2026-06-07
+sync_hash: 5f9f1079
 ---
-
-
 ## 场景介绍
 
 根据用户指定的两个经纬度坐标点，计算这两个点间的直线距离，单位为米。

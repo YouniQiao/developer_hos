@@ -3,6 +3,10 @@ title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/partnerintroduction-0000001058473908
 format: md
+upstream_id: monetize/promotion/partnerintroduction-0000001058473908
+last_sync: 2026-06-07
+sync_hash: 926d3186
+upstream_hash: f25ba33cf770
 ---
 
 # 概述

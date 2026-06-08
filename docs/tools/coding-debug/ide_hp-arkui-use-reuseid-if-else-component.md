@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-suggest-reuseid-for-if-else-reusable-component"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-use-reuseid-if-else-component
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-use-reuseid-if-else-component
+last_sync: 2026-06-07
+sync_hash: 21b6c081
 ---
-
-
 # @performance/hp-arkui-suggest-reuseid-for-if-else-reusable-component
 
 建议使用reuseId标记不同结构的组件构成。

@@ -2,9 +2,10 @@
 format: md
 title: "Web开发（ArkWeb）"
 original_url: /docs/FAQ/faqs-arkweb-kit
+upstream_id: FAQ/faqs-arkweb-kit
+last_sync: 2026-06-07
+sync_hash: d602b478
 ---
-
-
 * **[Web组件的onLoadIntercept返回结果是否影响onInterceptRequest](/docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-2)**
 * **[为什么Web组件的onKeyEvent键盘事件不生效](/docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-3)**
 * **[onInterceptRequest拦截URL并自定义HTML文件，页面加载失败](/docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-4)**

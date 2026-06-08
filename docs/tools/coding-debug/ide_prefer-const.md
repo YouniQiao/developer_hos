@@ -3,9 +3,10 @@ title: "prefer-const"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_prefer-const
 format: md
+upstream_id: tools/coding-debug/ide_prefer-const
+last_sync: 2026-06-07
+sync_hash: 363417f7
 ---
-
-
 # prefer-const
 
 推荐声明后未修改值的变量用const关键字来声明。

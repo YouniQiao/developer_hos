@@ -2,9 +2,10 @@
 format: md
 title: "Release应用堆栈解析相关错误提示及解决措施"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-17
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-17
+last_sync: 2026-06-07
+sync_hash: ed786bc7
 ---
-
-
 在使用Release应用堆栈解析功能时，遇到的错误提示及解决措施如下所示。
 
 | 错误提示 | 问题原因 | 解决措施 |

@@ -2,9 +2,10 @@
 title: "新建测试版本"
 original_url: /docs/distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-add-test-version-0000002236041526
 format: md
+upstream_id: distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-add-test-version-0000002236041526
+last_sync: 2026-06-07
+sync_hash: 2efa6b36
 ---
-
-
 #### еҠҹиғҪд»Ӣз»Қ
 
 жӯӨжҺҘеҸЈз”ЁдәҺеҲӣе»әHarmonyOSеә”з”Ё/е…ғжңҚеҠЎзҡ„жөӢиҜ•зүҲжң¬гҖӮ

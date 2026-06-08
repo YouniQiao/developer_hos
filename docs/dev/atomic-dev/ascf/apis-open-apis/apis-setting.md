@@ -2,9 +2,10 @@
 title: "设置"
 original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-setting
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-open-apis/apis-setting
+last_sync: 2026-06-07
+sync_hash: c8462629
 ---
-
-
 ## has.openSetting
 
 has.openSetting(Object object)

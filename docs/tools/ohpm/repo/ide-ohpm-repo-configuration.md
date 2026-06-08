@@ -2,9 +2,10 @@
 title: "配置文件"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-configuration
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-configuration
+last_sync: 2026-06-07
+sync_hash: 8248ef08
 ---
-
-
 # 配置文件
 
 config.yaml是ohpm-repo的重要文件，可以在其中修改默认参数配置，启动插件和扩展功能。ohpm-repo私仓解压目录中的conf目录下带有一个默认配置文件config.yaml，ohpm-repo执行install命令时默认读取该文件。

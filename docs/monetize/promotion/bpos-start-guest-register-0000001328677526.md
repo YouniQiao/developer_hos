@@ -3,8 +3,10 @@ title: "直客账户注册"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-start-guest-register-0000001328677526
 format: md
+upstream_id: monetize/promotion/bpos-start-guest-register-0000001328677526
+last_sync: 2026-06-07
+sync_hash: e6e5135f
 ---
-
 # 直客账户注册
 
 ## 概述
@@ -40,7 +42,7 @@ format: md
    如果您的华为账号在华为开发者联盟开通了团队账号，那么您需要使用<strong>华为开发者联盟的主账号</strong>登录并完成注册流程。
 2. 选择投放区域。
 
-   选择<strong>全球（除中国大陆外）</strong>。如果您想要向投放中国大陆地区应用市场广告，请查阅[中国大陆地区白皮书](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/bp-introduction-0000001309070266)。
+   选择<strong>全球（除中国大陆外）</strong>。如果您想要向投放中国大陆地区应用市场广告，请查阅[中国大陆地区白皮书](/docs/monetize/promotion/bp-introduction-0000001309070266)。
 
    ![](./img/90484d577ffe.png "点击放大")
 
@@ -164,7 +166,7 @@ format: md
    如果您的华为账号在华为开发者联盟开通了团队账号，那么您需要使用<strong>华为开发者联盟的主账号</strong>登录并完成注册流程。
 2. 选择投放区域。
 
-   选择<strong>全球（除中国大陆外）</strong>。如果您想要向投放中国大陆地区应用市场广告，请查阅[中国大陆地区白皮书](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/bp-introduction-0000001309070266)。
+   选择<strong>全球（除中国大陆外）</strong>。如果您想要向投放中国大陆地区应用市场广告，请查阅[中国大陆地区白皮书](/docs/monetize/promotion/bp-introduction-0000001309070266)。
 
    ![](./img/9e2675b52c47.png "点击放大")
 
@@ -216,4 +218,4 @@ format: md
 
      - <strong>推广内容：</strong>推广产品填写您即将做广告的产品/服务。为了让审核更清楚地知道推广内容，您需要提供链接。
      - <strong>域名：</strong>如果您的产品有域名，请补充，如果没有请忽略。
-5. 签署[《华为合作伙伴付费服务协议》](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/ad-agreements-0000001169499170#zh-cn_topic_0000001206033939_table1643018414592)并进入鲸鸿动能广告账户，您可根据需要切换界面语言，支持中英俄三个语种<strong>。</strong>
+5. 签署[《华为合作伙伴付费服务协议》](/docs/monetize/promotion/ad-agreements-0000001169499170#zh-cn_topic_0000001206033939_table1643018414592)并进入鲸鸿动能广告账户，您可根据需要切换界面语言，支持中英俄三个语种<strong>。</strong>

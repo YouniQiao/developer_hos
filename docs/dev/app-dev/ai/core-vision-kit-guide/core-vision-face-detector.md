@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "人脸检测"
 original_url: /docs/dev/app-dev/ai/core-vision-kit-guide/core-vision-face-detector
 format: md
+upstream_id: dev/app-dev/ai/core-vision-kit-guide/core-vision-face-detector
+last_sync: 2026-06-07
+sync_hash: 6b9a28a8
+upstream_hash: 61e2d7b73f36
 ---
-
 
 ## 适用场景
 

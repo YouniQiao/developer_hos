@@ -2,9 +2,10 @@
 title: "组件导航"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation
+last_sync: 2026-06-07
+sync_hash: 9e7bf8fd
 ---
-
-
 * **[设置动态模糊样式](/docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation/ui-design-navigation-dynamic-blur)**
 * **[设置信息提醒](/docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation/ui-design-navigation-message-reminder)**
 * **[设置自定义区域](/docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation/ui-design-navigation-customized-area)**

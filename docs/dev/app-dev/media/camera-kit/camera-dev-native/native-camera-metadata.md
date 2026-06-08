@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "元数据(C/C++)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-metadata
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-native/native-camera-metadata
+last_sync: 2026-06-07
+sync_hash: 7771ead4
 ---
-
-
 元数据（Metadata）是对相机返回的图像信息的描述和上下文。针对图像信息，提供更详细的数据，如照片或视频中，识别人像的取景框坐标等信息。
 
 Metadata主要是通过一个TAG（Key），去找对应的Data（Value），用于传递参数和配置信息，减少内存拷贝操作。

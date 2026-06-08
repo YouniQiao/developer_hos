@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用SM4对称密钥（ECB模式）加解密(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-sm4-sym-encrypt-decrypt-ecb
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-sm4-sym-encrypt-decrypt-ecb
+last_sync: 2026-06-07
+sync_hash: 49e814bf
 ---
-
-
 对应的算法规格请查看[对称密钥加解密算法规格：SM4](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-spec/crypto-sym-encrypt-decrypt-spec#sm4)。
 
 **加密**

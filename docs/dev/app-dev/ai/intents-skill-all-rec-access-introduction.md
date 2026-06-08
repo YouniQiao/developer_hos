@@ -2,9 +2,10 @@
 title: "概述"
 original_url: /docs/dev/app-dev/ai/intents-skill-all-rec-access-introduction
 format: md
+upstream_id: dev/app-dev/ai/intents-skill-all-rec-access-introduction
+last_sync: 2026-06-07
+sync_hash: 8a0d1f0a
 ---
-
-
 方案根据不同场景可选择不同接入方式，具体如下：
 
 1. 任务执行类场景：适用于配置文件接入方式和装饰器接入方式。

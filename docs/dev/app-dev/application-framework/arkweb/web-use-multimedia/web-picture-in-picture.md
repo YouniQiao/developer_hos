@@ -2,9 +2,10 @@
 title: "Web组件支持画中画"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-use-multimedia/web-picture-in-picture
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-use-multimedia/web-picture-in-picture
+last_sync: 2026-06-07
+sync_hash: bdc9e525
 ---
-
-
 Web组件提供画中画功能支持，应用可利用W3C标准的Picture-in-Picture API在网页中创建浮动窗口以播放视频，使用户在浏览其他网页或与其他应用交互时，可通过该画中画窗口继续观看视频。
 
 若使用线上视频资源，则需在配置文件中设置网络权限。权限的添加方法请参考[在配置文件中声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions#在配置文件中声明权限)。

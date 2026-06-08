@@ -2,9 +2,10 @@
 title: "打开资源/关闭资源(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-resource-management/huks-open-close-resource-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-resource-management/huks-open-close-resource-ndk
+last_sync: 2026-06-07
+sync_hash: cf7456a7
 ---
-
-
 ## 打开资源
 
 从API 22开始，huksExternalCrypto提供打开/关闭资源功能接口。应用在密钥操作之前（密钥操作、通用操作、PIN码认证等），需要先调用[OH\_Huks\_OpenResource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-huks-external-crypto-api-h#oh_huks_openresource)打开资源。打开资源需要获取resourceId，resourceId通过调用证书管理系统能力提供的[证书选择接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-certmanagerdialog#certificatemanagerdialogopenauthorizedialog22)获取。

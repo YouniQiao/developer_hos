@@ -2,9 +2,10 @@
 format: md
 title: "Windows x86模拟器三方C/C++库使用限制"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-25
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-25
+last_sync: 2026-06-07
+sync_hash: 3cd4974c
 ---
-
-
 x86模拟器支持已x86化的C/C++三方库调试运行，未x86化的三方库开发者可以参考[tpc\_c\_cplusplus](https://gitcode.com/openharmony-sig/tpc_c_cplusplus)。
 
 目前已经x86化的三方库如下：

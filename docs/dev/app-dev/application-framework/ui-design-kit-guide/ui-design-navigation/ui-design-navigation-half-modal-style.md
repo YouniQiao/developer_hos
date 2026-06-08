@@ -2,9 +2,10 @@
 title: "半模态样式"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation/ui-design-navigation-half-modal-style
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation/ui-design-navigation-half-modal-style
+last_sync: 2026-06-07
+sync_hash: d2391ad5
 ---
-
-
 ## 场景介绍
 
 从6.0.0(20)版本开始，导航组件新增支持半模态中的标题栏样式，并在该样式下支持标题栏模糊效果。

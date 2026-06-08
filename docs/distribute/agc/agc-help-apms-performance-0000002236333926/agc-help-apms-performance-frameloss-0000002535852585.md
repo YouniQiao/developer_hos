@@ -2,9 +2,10 @@
 title: "分析应用丢帧"
 original_url: /docs/distribute/agc/agc-help-apms-performance-0000002236333926/agc-help-apms-performance-frameloss-0000002535852585
 format: md
+upstream_id: distribute/agc/agc-help-apms-performance-0000002236333926/agc-help-apms-performance-frameloss-0000002535852585
+last_sync: 2026-06-07
+sync_hash: b0fd7cbf
 ---
-
-
 “应用丢帧”页面为开发者提供应用运行过程中的整体丢帧数据及关键维度分析，帮助开发者快速掌握应用的丢帧性能，定位因丢帧引起的应用卡顿、流畅度不足等潜在问题。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“开发与服务”。

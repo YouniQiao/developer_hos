@@ -2,8 +2,11 @@
 title: "progress"
 original_url: /docs/dev/atomic-dev/ascf/components-basic-components/components-progress
 format: md
+upstream_id: dev/atomic-dev/ascf/components-basic-components/components-progress
+last_sync: 2026-06-07
+sync_hash: d632d7d1
+upstream_hash: ee39484404e5
 ---
-
 
 进度条。
 

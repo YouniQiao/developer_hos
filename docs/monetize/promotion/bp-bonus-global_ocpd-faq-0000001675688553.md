@@ -3,8 +3,10 @@ title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-bonus-global_ocpd-faq-0000001675688553
 format: md
+upstream_id: monetize/promotion/bp-bonus-global_ocpd-faq-0000001675688553
+last_sync: 2026-06-07
+sync_hash: d64f2217
 ---
-
 # FAQ
 
 ## 具体怎么定义保障周期？

@@ -3,9 +3,10 @@ title: "代码阅读"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-editer-overview
 format: md
+upstream_id: tools/coding-debug/ide-editer-overview
+last_sync: 2026-06-07
+sync_hash: 41c335f7
 ---
-
-
 # 代码阅读
 
 DevEco Studio支持使用多种语言进行应用/元服务的开发，包括ArkTS、JS和C/C++。在编写应用/元服务阶段，可以通过掌握代码编写的各种常用技巧，来提升编码效率。

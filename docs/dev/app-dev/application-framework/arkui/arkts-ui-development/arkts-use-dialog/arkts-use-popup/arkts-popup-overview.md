@@ -2,9 +2,10 @@
 title: "气泡提示概述"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-popup/arkts-popup-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-popup/arkts-popup-overview
+last_sync: 2026-06-07
+sync_hash: 85433cce
 ---
-
-
 气泡提示是一种用于给用户提供提示的弹窗，主要用于屏幕录制、信息弹出提醒等显示状态。
 
 ## 使用场景

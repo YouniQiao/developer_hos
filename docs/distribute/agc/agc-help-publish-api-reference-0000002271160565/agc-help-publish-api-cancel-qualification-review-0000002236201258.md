@@ -2,9 +2,10 @@
 title: "撤销资质审核任务"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-cancel-qualification-review-0000002236201258
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-cancel-qualification-review-0000002236201258
+last_sync: 2026-06-07
+sync_hash: 3d43d971
 ---
-
-
 #### 功能介绍
 
 此接口用于撤销元服务的资质审核任务。

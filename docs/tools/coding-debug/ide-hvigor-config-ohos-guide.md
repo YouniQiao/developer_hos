@@ -3,9 +3,10 @@ title: "能力说明"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-config-ohos-guide
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-config-ohos-guide
+last_sync: 2026-06-07
+sync_hash: 4ca2690b
 ---
-
-
 # 能力说明
 
 Hvigor支持在hvigorfile.ts里接收部分编译配置，以实现动态配置构建配置、并使能到构建的过程与结果中。

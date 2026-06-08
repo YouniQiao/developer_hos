@@ -3,8 +3,10 @@ title: "归因分析"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/attribution-analysis-0000001254764095
 format: md
+upstream_id: monetize/promotion/attribution-analysis-0000001254764095
+last_sync: 2026-06-07
+sync_hash: 2ef4f945
 ---
-
 # 归因分析
 
 ![](./img/note_3.0-zh-cn_f9c4f28663e0.png) 

@@ -2,9 +2,10 @@
 title: "ohpm-repo install"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-install
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-install
+last_sync: 2026-06-07
+sync_hash: c2beb1aa
 ---
-
-
 # ohpm-repo install
 
 安装ohpm-repo服务。

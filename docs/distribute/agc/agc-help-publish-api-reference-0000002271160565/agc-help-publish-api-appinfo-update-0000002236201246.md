@@ -2,9 +2,10 @@
 title: "更新应用基本信息"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-appinfo-update-0000002236201246
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-appinfo-update-0000002236201246
+last_sync: 2026-06-07
+sync_hash: 34cc54e4
 ---
-
-
 #### 功能介绍
 
 此接口用于更新指定HarmonyOS应用/元服务的应用详情。

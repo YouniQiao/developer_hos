@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“The version number of the module must be a string, but received a xxx.”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-152
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-152
+last_sync: 2026-06-07
+sync_hash: 8e96e286
 ---
-
-
 **错误描述**
 
 模块版本号必须为字符串类型。

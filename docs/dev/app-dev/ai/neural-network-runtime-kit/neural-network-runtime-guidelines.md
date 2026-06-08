@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Neural Network Runtime对接AI推理框架开发指导"
 original_url: /docs/dev/app-dev/ai/neural-network-runtime-kit/neural-network-runtime-guidelines
 format: md
+upstream_id: dev/app-dev/ai/neural-network-runtime-kit/neural-network-runtime-guidelines
+last_sync: 2026-06-07
+sync_hash: 240076ef
 ---
-
-
 ## 场景介绍
 
 Neural Network Runtime作为AI推理引擎和加速芯片的桥梁，为AI推理引擎提供精简的Native接口，满足推理引擎通过加速芯片执行端到端推理的需求。

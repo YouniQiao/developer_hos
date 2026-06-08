@@ -3,8 +3,11 @@ title: "启动加载完成快"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-quick-completion-for-boot
 format: md
+upstream_id: tools/coding-debug/ide-quick-completion-for-boot
+last_sync: 2026-06-07
+sync_hash: a0cfd8ba
+upstream_hash: 1ce4fc82d244
 ---
-
 
 # 启动加载完成快
 

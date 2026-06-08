@@ -3,8 +3,10 @@ title: "华为开发者基础服务协议"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x20240513/HWDBServiceAgreement
 format: md
+upstream_id: distribute/app-dist/app-market/x20240513/HWDBServiceAgreement
+last_sync: 2026-06-07
+sync_hash: 9662c440
 ---
-
 # 华为开发者基础服务协议
 
 点击下载[华为开发者基础服务协议](https://terms-drcn.platform.dbankcloud.cn/agreementservice/developer/getAgreementTemplate?agrType=1199&country=cn&language=zh_cn&version=2022071205)。
@@ -97,7 +99,7 @@ format: md
 
 6.2 安全声明：基于您的产品在您与用户之间发生的隐私安全保护问题，应由您负责与用户解决，与华为无关。华为为保障用户权益有权利但无义务向您提供隐私安全问题的解决意见和建议。若您的产品发生最终用户数据泄露事件，应立刻通知华为。如您违反本第6条约定，华为有权解除本协议（且不影响华为根据本协议所享有的权利和救济）。
 
-6.3 此外，为了提供创建调试应用、申请调试Profile文件等基础服务，我们将会收集您的**华为帐号信息**以及你主动提交的调试**设备信息**，以便您进行调试设备的注册和调试证书的获取，完成开发调试工作。同时，我们会将数据存放于您的帐号注册站点，在您注销华为帐号后，我们会立刻删除您华为帐号相关联的个人数据。此外，当我们的产品或服务发生停止运营的情形时，我们将以推送通知、公告等形式通知您，并在合理的期限内删除您的个人信息或进行匿名化处理。更多信息请详见[《关于AppGallery Connect与隐私的声明》](https://developer.huawei.com/consumer/cn/doc/distribution/app/AGCPrivacyStatement)。
+6.3 此外，为了提供创建调试应用、申请调试Profile文件等基础服务，我们将会收集您的**华为帐号信息**以及你主动提交的调试**设备信息**，以便您进行调试设备的注册和调试证书的获取，完成开发调试工作。同时，我们会将数据存放于您的帐号注册站点，在您注销华为帐号后，我们会立刻删除您华为帐号相关联的个人数据。此外，当我们的产品或服务发生停止运营的情形时，我们将以推送通知、公告等形式通知您，并在合理的期限内删除您的个人信息或进行匿名化处理。更多信息请详见[《关于AppGallery Connect与隐私的声明》](/docs/distribute/app-dist/app-market/x20240513/AGCPrivacyStatement)。
 
 ## **7. 赔偿**
 

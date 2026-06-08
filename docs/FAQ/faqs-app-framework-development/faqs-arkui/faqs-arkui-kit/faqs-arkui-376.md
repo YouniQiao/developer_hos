@@ -2,9 +2,10 @@
 format: md
 title: "如何实现ArkUI组件字符串变量拼接"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-376
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-376
+last_sync: 2026-06-07
+sync_hash: ed45d5a8
 ---
-
-
 **问题现象**
 
 例如：在Text组件中如何实现字符串与变量的拼接功能？

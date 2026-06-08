@@ -3,9 +3,10 @@ title: "真机测试"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/real-machine-testing-0000002471344145/list-of-user-groups-for-real-machine-testing-0000002471264273
 format: md
+upstream_id: distribute/xiaoyi/real-machine-testing-0000002471344145/list-of-user-groups-for-real-machine-testing-0000002471264273
+last_sync: 2026-06-07
+sync_hash: e8bc9649
 ---
-
-
 # 真机测试
 
 真机测试为开发者提供了在智能体上架前即可在端侧设备上体验智能体使用效果的能力。

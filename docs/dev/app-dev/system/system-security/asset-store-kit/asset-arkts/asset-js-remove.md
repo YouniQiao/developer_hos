@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "删除关键资产(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-remove
 format: md
+upstream_id: dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-remove
+last_sync: 2026-06-07
+sync_hash: 84b0e3ec
 ---
-
-
 ## 接口介绍
 
 开发者可以查阅API文档，获取关键资产删除接口的详细说明：[remove(query: AssetMap)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-asset#assetremove)、同步接口[removeSync(query: AssetMap)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-asset#assetremovesync12)。

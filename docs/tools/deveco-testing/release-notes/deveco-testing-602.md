@@ -2,9 +2,10 @@
 title: "DevEco Testing 6.0.2"
 format: md
 original_url: /docs/tools/deveco-testing/release-notes/deveco-testing-602
+upstream_id: tools/deveco-testing/release-notes/deveco-testing-602
+last_sync: 2026-06-07
+sync_hash: 8c8bfb61
 ---
-
-
 # DevEco Testing 6.0.2
 
 当前为 DevEco Testing 最新版本说明文档，如需查看 DevEco Testing 其它历史版本的功能新增、变更情况，请在左侧文档目录中选择相应版本。

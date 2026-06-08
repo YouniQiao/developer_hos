@@ -3,8 +3,10 @@ title: "批量修改任务投放时间/时段"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-deliverytime-0000001181826437
 format: md
+upstream_id: monetize/promotion/marketapi-deliverytime-0000001181826437
+last_sync: 2026-06-07
+sync_hash: 16394eae
 ---
-
 # 批量修改任务投放时间/时段
 
 ## 功能介绍

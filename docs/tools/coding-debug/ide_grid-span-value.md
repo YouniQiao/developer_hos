@@ -3,9 +3,10 @@ title: "@cross-device-app-dev/grid-span-value"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_grid-span-value
 format: md
+upstream_id: tools/coding-debug/ide_grid-span-value
+last_sync: 2026-06-07
+sync_hash: 443ae77f
 ---
-
-
 # @cross-device-app-dev/grid-span-value
 
 在栅格布局组件GridCol中，span和offset不建议使用小数。

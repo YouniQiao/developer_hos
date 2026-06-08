@@ -2,9 +2,10 @@
 title: "运行态性能检测"
 original_url: /docs/quality/performance-runtime-detection
 format: md
+upstream_id: /docs/quality/performance-runtime-detection
+last_sync: 2026-06-07
+sync_hash: 1d355ec7
 ---
-
-
 ## 启动耗时类问题检测方法
 
 ### 启动时延检测

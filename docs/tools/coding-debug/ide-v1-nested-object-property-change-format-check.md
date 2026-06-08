@@ -3,9 +3,10 @@ title: "@correctness/v1-nested-object-property-change-format-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-v1-nested-object-property-change-format-check
 format: md
+upstream_id: tools/coding-debug/ide-v1-nested-object-property-change-format-check
+last_sync: 2026-06-07
+sync_hash: b43e21e5
 ---
-
-
 # @correctness/v1-nested-object-property-change-format-check
 
 建议不要直接修改普通V1状态变量中嵌套对象的属性，应使用@Observed/@ObjectLink来观察嵌套对象的属性更改。

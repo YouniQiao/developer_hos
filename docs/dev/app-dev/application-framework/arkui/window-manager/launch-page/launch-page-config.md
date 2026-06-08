@@ -2,9 +2,10 @@
 title: "配置应用启动页"
 original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/launch-page/launch-page-config
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/window-manager/launch-page/launch-page-config
+last_sync: 2026-06-07
+sync_hash: d6bb1d6b
 ---
-
-
 ## 启动页的分类和实现方式
 
 启动页分为简易启动页和增强启动页，开发者通过在module.json5配置文件中的[abilities标签](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#abilities标签)配置启动页资源，涉及的对应字段及含义如下表所示。

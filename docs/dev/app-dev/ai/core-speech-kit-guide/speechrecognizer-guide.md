@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "语音识别"
 original_url: /docs/dev/app-dev/ai/core-speech-kit-guide/speechrecognizer-guide
 format: md
+upstream_id: dev/app-dev/ai/core-speech-kit-guide/speechrecognizer-guide
+last_sync: 2026-06-07
+sync_hash: fe2e321d
 ---
-
-
 将一段中文音频信息（中文、中文语境下的英文；短语音模式不超过60s，长语音模式不超过8h）转换为文本，音频信息可以为PCM音频文件或者实时语音。
 
 ## 场景介绍

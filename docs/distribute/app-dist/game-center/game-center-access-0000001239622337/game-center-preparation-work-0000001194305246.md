@@ -3,9 +3,10 @@ title: "准备工作"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-access-0000001239622337/game-center-preparation-work-0000001194305246
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-access-0000001239622337/game-center-preparation-work-0000001194305246
+last_sync: 2026-06-07
+sync_hash: 4730d0fc
 ---
-
-
 # 准备工作
 
 游戏接入前，您需要准备绑定华为渠道关系、注册账号、填写游戏基本信息、接入SDK。

@@ -2,8 +2,11 @@
 title: "对称密钥生成和转换规格"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-spec/crypto-sym-key-generation-conversion-spec
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-spec/crypto-sym-key-generation-conversion-spec
+last_sync: 2026-06-07
+sync_hash: b2d2b14e
+upstream_hash: 2a104f324be0
 ---
-
 
 当前章节将说明系统目前支持的算法及其对应的规格。
 

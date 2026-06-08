@@ -2,9 +2,10 @@
 title: "功耗分析"
 original_url: /docs/dev/game-dev/games-gpm-power-consumption-analysis-0000002298973088
 format: md
+upstream_id: dev/game-dev/games-gpm-power-consumption-analysis-0000002298973088
+last_sync: 2026-06-07
+sync_hash: 94749724
 ---
-
-
 游戏性能管理服务采集游戏现网运行功耗数据，为开发者提供专业功耗分析报表，以不同维度展示各器件功耗统计图表，帮助开发者识别、分析游戏性能问题。
 
 ![](./img/c326a55f.png)

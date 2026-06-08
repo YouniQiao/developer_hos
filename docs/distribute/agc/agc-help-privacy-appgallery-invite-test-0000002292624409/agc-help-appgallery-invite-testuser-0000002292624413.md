@@ -2,9 +2,10 @@
 title: "邀请用户参与测试"
 original_url: /docs/distribute/agc/agc-help-privacy-appgallery-invite-test-0000002292624409/agc-help-appgallery-invite-testuser-0000002292624413
 format: md
+upstream_id: distribute/agc/agc-help-privacy-appgallery-invite-test-0000002292624409/agc-help-appgallery-invite-testuser-0000002292624413
+last_sync: 2026-06-07
+sync_hash: 5538bc6f
 ---
-
-
 测试版本发布、且到达测试时间后，您便可以邀请用户参与测试。AGC提供了多种邀请方式：
 
 * [通过邮件邀请用户](#section17742145773218)：测试任务开始，被邀请的用户会收到邮件通知，用户点击邮件中的链接参与测试。

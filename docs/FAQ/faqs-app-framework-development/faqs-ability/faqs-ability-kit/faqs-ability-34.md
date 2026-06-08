@@ -2,8 +2,11 @@
 format: md
 title: "多个UIAbility是运行在一个进程还是多个进程中？三方应用是否支持应用运行在多个进程下？主进程结束了，会影响子进程的运行吗"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-34
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-34
+last_sync: 2026-06-07
+sync_hash: 4417c5ef
+upstream_hash: 76e2d93dda27
 ---
-
 
 **PC/2in1设备**
 

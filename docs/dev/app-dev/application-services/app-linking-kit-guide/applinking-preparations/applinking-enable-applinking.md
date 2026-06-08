@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开通App Linking服务"
 original_url: /docs/dev/app-dev/application-services/app-linking-kit-guide/applinking-preparations/applinking-enable-applinking
 format: md
+upstream_id: dev/app-dev/application-services/app-linking-kit-guide/applinking-preparations/applinking-enable-applinking
+last_sync: 2026-06-07
+sync_hash: 6db2a65c
 ---
-
-
 首次使用App Linking服务前，需要先开通此服务。如果已经开通，可跳过本章节。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“开发与服务”。

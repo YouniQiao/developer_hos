@@ -2,9 +2,10 @@
 title: "删除应用/元服务"
 original_url: /docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-delete-0000002271413701
 format: md
+upstream_id: distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-delete-0000002271413701
+last_sync: 2026-06-07
+sync_hash: ec3ab032
 ---
-
-
 若您选择的应用类型或设备类型有误，或者您的应用已下架且不再使用等，您可以删除应用。可通过“开发与服务 > 项目设置”和“分发 > 应用上架/元服务上架 > 应用信息”两个入口删除，处理逻辑相同，下文仅以“分发 > 应用上架/元服务上架 > 应用信息”入口删除应用为例说明。
 
 #### 前提条件

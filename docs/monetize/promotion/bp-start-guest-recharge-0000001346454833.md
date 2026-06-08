@@ -3,8 +3,10 @@ title: "充值及开票"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-start-guest-recharge-0000001346454833
 format: md
+upstream_id: monetize/promotion/bp-start-guest-recharge-0000001346454833
+last_sync: 2026-06-07
+sync_hash: 57917141
 ---
-
 # 充值及开票
 
 ## 充值推广基金

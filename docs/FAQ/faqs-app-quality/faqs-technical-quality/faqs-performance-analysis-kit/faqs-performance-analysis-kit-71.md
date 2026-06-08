@@ -2,9 +2,10 @@
 format: md
 title: "cd到SDK下toolchains目录，执行hdc list targets，错误提示command not found: hdc"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-71
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-71
+last_sync: 2026-06-07
+sync_hash: db2bd2fe
 ---
-
-
 **问题现象**
 
 在Linux/MacOS平台安装DevEco Studio工具，在安装目录下的toolchains子目录执行hdc命令提示command not found:hdc。

@@ -2,9 +2,10 @@
 title: "按钮与选择"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection
+last_sync: 2026-06-07
+sync_hash: 324a10d1
 ---
-
-
 * **[按钮与选择组件概述](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection/arkts-forms-overview)**
 * **[按钮 (Button)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection/arkts-common-components-button)**
 * **[弧形按钮 (ArcButton)(圆形屏幕推荐使用)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection/arkts-advanced-components-arcbutton)**

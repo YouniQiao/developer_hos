@@ -2,9 +2,10 @@
 format: md
 title: "半模态转场如何控制固定高度"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-142
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-142
+last_sync: 2026-06-07
+sync_hash: 611ef0a7
 ---
-
-
 通过设置bindSheet()的参数options对高度进行控制。参考代码如下：
 
 ```

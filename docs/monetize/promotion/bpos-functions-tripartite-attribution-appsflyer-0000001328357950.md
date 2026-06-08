@@ -3,8 +3,10 @@ title: "AppsFlyer"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-functions-tripartite-attribution-appsflyer-0000001328357950
 format: md
+upstream_id: monetize/promotion/bpos-functions-tripartite-attribution-appsflyer-0000001328357950
+last_sync: 2026-06-07
+sync_hash: 49539338
 ---
-
 # AppsFlyer
 
 ## 概述

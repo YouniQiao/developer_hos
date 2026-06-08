@@ -2,9 +2,10 @@
 title: "获取发票抬头"
 original_url: /docs/dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-select-invoice-title
 format: md
+upstream_id: dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-select-invoice-title
+last_sync: 2026-06-07
+sync_hash: 2c0406b1
 ---
-
-
 ## 场景介绍
 
 当元服务需要获取用户发票抬头时，可使用[选择发票抬头Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-invoice-title)，帮助用户打开发票抬头选择页面进行选择或管理发票抬头。

@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "B帧视频编码"
 original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding-b-frame
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding-b-frame
+last_sync: 2026-06-07
+sync_hash: 32426c4e
+upstream_hash: 603f388e8f6b
 ---
-
 
 从API version 20开始，支持B帧视频编码。
 

@@ -2,8 +2,11 @@
 format: md
 title: "Text组件设置maxLines后如何确定文本是否被隐藏"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-156
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-156
+last_sync: 2026-06-07
+sync_hash: 3c09e95a
+upstream_hash: 811e2187b211
 ---
-
 
 可以通过measureTextSize来判断Text文本的高度是否超出maxLines设置的高度进行判断。参考代码如下：
 

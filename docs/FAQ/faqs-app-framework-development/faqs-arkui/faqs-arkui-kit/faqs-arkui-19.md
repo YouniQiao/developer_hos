@@ -2,9 +2,10 @@
 format: md
 title: "如何解决两层Tabs出现滑动冲突的情况"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-19
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-19
+last_sync: 2026-06-07
+sync_hash: 9ed2aeb9
 ---
-
-
 通过给外层Tabs设置scrollable(false)实现两层Tabs嵌套底部导航+顶部导航的组合，参考代码如下：
 
 ```

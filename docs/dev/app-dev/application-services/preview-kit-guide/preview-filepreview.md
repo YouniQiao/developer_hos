@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "文件预览"
 original_url: /docs/dev/app-dev/application-services/preview-kit-guide/preview-filepreview
 format: md
+upstream_id: dev/app-dev/application-services/preview-kit-guide/preview-filepreview
+last_sync: 2026-06-07
+sync_hash: d91badf3
 ---
-
-
 当前Preview Kit的文件预览能力采用拉起新窗口的方式来实现，在新的窗口中展示需要预览的文件，并按照统一设计的界面进行展示，如果开发者需要使用Preview Kit的文件预览能力，需要注意以下事项：
 
 * 当前Preview Kit仅支持跳出应用进行文件的预览，暂不支持应用内预览。

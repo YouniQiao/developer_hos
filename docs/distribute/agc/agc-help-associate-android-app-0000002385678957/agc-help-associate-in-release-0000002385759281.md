@@ -2,9 +2,10 @@
 title: "发布时关联"
 original_url: /docs/distribute/agc/agc-help-associate-android-app-0000002385678957/agc-help-associate-in-release-0000002385759281
 format: md
+upstream_id: distribute/agc/agc-help-associate-android-app-0000002385678957/agc-help-associate-in-release-0000002385759281
+last_sync: 2026-06-07
+sync_hash: 1f5fba80
 ---
-
-
 ![](../img/agc-help-associate-in-release-0000002385759281_0.png)
 
 * 一个HarmonyOS应用仅能关联一个在架Android应用。

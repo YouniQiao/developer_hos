@@ -2,9 +2,10 @@
 title: "查看服务套餐详情"
 original_url: /docs/distribute/agc/agc-help-service-price-0000002247180512/agc-help-check-plans-0000002282243617
 format: md
+upstream_id: distribute/agc/agc-help-service-price-0000002247180512/agc-help-check-plans-0000002282243617
+last_sync: 2026-06-07
+sync_hash: 1930d21c
 ---
-
-
 您可以在AppGallery Connect查看当前项目下订阅的所有免费档和按量付费档套餐。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“开发与服务”。

@@ -2,9 +2,10 @@
 title: "配置提示词模板"
 original_url: /docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-rag/data-augmentation-rag-config/data-augmentation-config-prompt-template
 format: md
+upstream_id: dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-rag/data-augmentation-rag-config/data-augmentation-config-prompt-template
+last_sync: 2026-06-07
+sync_hash: 4492d302
 ---
-
-
 ## 功能介绍
 
 提示词模板采用结构化的固定格式，将“角色、任务、输入和输出要求”等要素清晰组织起来，使开发者只需填充关键信息，即可稳定、高效地引导模型生成预期结果。开发者可以通过在指定应用[资源目录](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access#资源目录)放置prompt\_template.json配置文件，导入自定义提示词模板。

@@ -2,9 +2,10 @@
 format: md
 title: "armeabi-v7a是否支持Neon指令扩展"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-91
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-91
+last_sync: 2026-06-07
+sync_hash: cc82a298
 ---
-
-
 **问题描述**
 
 使用CMake编译现有工程为armeabi-v7a架构时出现问题。

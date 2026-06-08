@@ -2,9 +2,10 @@
 title: "元服务框架开发"
 original_url: /docs/dev/atomic-dev/atomic-service-framework-development/atomic-service-framework-development
 format: md
+upstream_id: dev/atomic-dev/atomic-service-framework-development/atomic-service-framework-development
+last_sync: 2026-06-07
+sync_hash: 44219cf8
 ---
-
-
 ## 应用模型
 
 元服务的应用模型只支持Stage模型，参考[Stage模型开发指南](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-development-overview)。

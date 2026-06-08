@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-no-state-var-access-in-loop"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-no-state-var-access-in-loop
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-no-state-var-access-in-loop
+last_sync: 2026-06-07
+sync_hash: c5c22627
 ---
-
-
 # @performance/hp-arkui-no-state-var-access-in-loop
 
 避免在for、while等循环逻辑中频繁读取状态变量。

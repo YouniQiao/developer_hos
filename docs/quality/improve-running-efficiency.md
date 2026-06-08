@@ -1,8 +1,10 @@
 ---
 title: "运行效率提高"
 original_url: /docs/quality/improve-running-efficiency
+upstream_id: /docs/quality/improve-running-efficiency
+last_sync: 2026-06-07
+sync_hash: 1ff5b854
 ---
-
 # 运行效率提高
 
 在开发过程中，优化影响性能的代码片段，以提高运行效率。以下实践总结了一些高性能的写法和建议：
@@ -30,7 +32,7 @@ original_url: /docs/quality/improve-running-efficiency
 
 ## 通过路径展开提升运行效率
 
-传统HAR包导入即使只需要HAR包中单个变量，也会触发整个依赖链所有模块的加载和执行，造成性能浪费。ArkTS编译器提供expandImportPath（[工程级配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section111543473013)、[模块级配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile#section8368152412552)）配置项。通过修改配置项，编译器会将间接包名导入转换为精准的文件路径导入，跳过中间模块。该优化可消除冗余的模块解析和初始化，减少冷启动阶段不必要的资源消耗。
+传统HAR包导入即使只需要HAR包中单个变量，也会触发整个依赖链所有模块的加载和执行，造成性能浪费。ArkTS编译器提供expandImportPath（[工程级配置](/docs/tools/coding-debug/ide-hvigor-build-profile-app#section111543473013)、[模块级配置](/docs/tools/coding-debug/ide-hvigor-build-profile#section8368152412552)）配置项。通过修改配置项，编译器会将间接包名导入转换为精准的文件路径导入，跳过中间模块。该优化可消除冗余的模块解析和初始化，减少冷启动阶段不必要的资源消耗。
 
 ![](./img/e131d6a3.png)
 
@@ -154,7 +156,7 @@ oh-package.json如下增加模块依赖library包：
 
 **使用路径展开**
 
-开发者可通过配置expandImportPath（[工程级配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section111543473013)、[模块级配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile#section8368152412552)）来启用路径展开功能，并且将导入方式改为import &#123; typeNum &#125; from 'library'。使源码中的import语句在编译时指向被引用符号的实际定义文件。从下图Trace上看此时只执行TypeNum.ets，同时通过修改前后的Trace对比也可以看出冷启动性能得到提升。
+开发者可通过配置expandImportPath（[工程级配置](/docs/tools/coding-debug/ide-hvigor-build-profile-app#section111543473013)、[模块级配置](/docs/tools/coding-debug/ide-hvigor-build-profile#section8368152412552)）来启用路径展开功能，并且将导入方式改为import &#123; typeNum &#125; from 'library'。使源码中的import语句在编译时指向被引用符号的实际定义文件。从下图Trace上看此时只执行TypeNum.ets，同时通过修改前后的Trace对比也可以看出冷启动性能得到提升。
 
 ```ts
 // entry\src\main\ets\pages\Index.ets

@@ -3,8 +3,10 @@ title: 新事件标记
 sidebar_label: 新事件标记
 original_url: /docs/design/components/view-components/badge
 format: md
+upstream_id: design/components/view-components/badge
+last_sync: 2026-06-07
+sync_hash: 313cdd8d
 ---
-
 # 新事件标记
 
 应用中可能有需用户关注的新事件提醒，需要采用新事件标记来标识。开发能力相关请参考 [Badge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-badge) 文档。

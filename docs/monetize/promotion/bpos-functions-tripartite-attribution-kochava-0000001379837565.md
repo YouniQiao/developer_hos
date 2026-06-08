@@ -3,8 +3,10 @@ title: "Kochava"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-functions-tripartite-attribution-kochava-0000001379837565
 format: md
+upstream_id: monetize/promotion/bpos-functions-tripartite-attribution-kochava-0000001379837565
+last_sync: 2026-06-07
+sync_hash: 33ed0153
 ---
-
 # Kochava
 
 ## 概述

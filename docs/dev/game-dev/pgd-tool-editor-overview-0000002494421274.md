@@ -2,9 +2,10 @@
 title: "PGD Editor概述"
 original_url: /docs/dev/game-dev/pgd-tool-editor-overview-0000002494421274
 format: md
+upstream_id: dev/game-dev/pgd-tool-editor-overview-0000002494421274
+last_sync: 2026-06-07
+sync_hash: b6fc540e
 ---
-
-
 PGD Editor是一套以引擎编辑器为核心的PGD构建工具，支持游戏创作者使用熟悉的GameObject工作流程来完成基于PGD的游戏逻辑设计。包括如下组件：
 
 | 组件 | 说明 |

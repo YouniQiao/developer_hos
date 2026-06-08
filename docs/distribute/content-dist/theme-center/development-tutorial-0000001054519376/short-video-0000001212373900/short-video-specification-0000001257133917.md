@@ -3,9 +3,10 @@ title: "带货短视频发布规范及指导"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/short-video-0000001212373900/short-video-specification-0000001257133917
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/short-video-0000001212373900/short-video-specification-0000001257133917
+last_sync: 2026-06-07
+sync_hash: bd68fc1c
 ---
-
-
 # 带货短视频发布规范及指导
 
 华为主题社区支持在联盟上传带货短视频，用户在APP内通过刷短视频种草资源，点击视频页面的资源卡片实现一键购买。

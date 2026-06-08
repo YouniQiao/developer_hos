@@ -2,8 +2,11 @@
 format: md
 title: "NAPI执行上层回调时，如何获取env"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-29
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-29
+last_sync: 2026-06-07
+sync_hash: a5b523ff
+upstream_hash: 411b58167a79
 ---
-
 
 libuv处理方式是在注册JS回调时保存env。在callback中从env中获取对应的JS线程的loop，再调用libuv接口抛JS任务到loop中执行。
 

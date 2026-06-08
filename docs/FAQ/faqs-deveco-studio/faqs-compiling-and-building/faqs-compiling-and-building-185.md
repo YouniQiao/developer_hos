@@ -2,9 +2,10 @@
 format: md
 title: "升级react-native-openharmony编译出错"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-185
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-185
+last_sync: 2026-06-07
+sync_hash: 054929be
 ---
-
-
 **问题现象**
 
 升级react-native-openharmony编译出错，类似如下报错：

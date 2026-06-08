@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "功能搜索方案"
 original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-search-rec/intents-search-rec-access-programme/intents-skill-all-rec-function-search
 format: md
+upstream_id: dev/app-dev/ai/intents-kit-guide/intents-search-rec/intents-search-rec-access-programme/intents-skill-all-rec-function-search
+last_sync: 2026-06-07
+sync_hash: b0c4c53c
 ---
-
-
 ## 方案概述
 
 从5.1.0(18)开始，新增功能搜索接入方案，可通过该方案实现快速打开应用内功能页面。开发者将应用内的功能在意图声明文件中声明，并实现对应的意图调用，即可实现用户在小艺搜索入口直接搜索到应用内功能，点击后可直接拉起应用，直达功能页面。

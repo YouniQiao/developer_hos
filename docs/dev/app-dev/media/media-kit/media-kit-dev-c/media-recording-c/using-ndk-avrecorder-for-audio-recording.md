@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用AVRecorder录制音频(C/C++)"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-recording-c/using-ndk-avrecorder-for-audio-recording
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-c/media-recording-c/using-ndk-avrecorder-for-audio-recording
+last_sync: 2026-06-07
+sync_hash: eb1483c8
 ---
-
-
 AVRecorder支持开发音频或视频单独录制，集成了音频捕获，音频编码，视频编码，音视频封装功能，适用于实现简单音视频录制并直接得到本地媒体文件的场景。
 
 本开发指导将以“开始录制-暂停录制-恢复录制-停止录制”的一次流程为示例，向开发者讲解如何使用AVRecorder进行音频录制。

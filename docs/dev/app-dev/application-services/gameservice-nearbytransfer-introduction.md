@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "概述"
 original_url: /docs/dev/app-dev/application-services/gameservice-nearbytransfer-introduction
 format: md
+upstream_id: dev/app-dev/application-services/gameservice-nearbytransfer-introduction
+last_sync: 2026-06-07
+sync_hash: b8ee9eb4
 ---
-
-
 ## 功能说明
 
 从5.1.0(18)版本开始，新增游戏近场快传服务。从6.1.0(23)版本开始，近场快传服务支持安装包传输。

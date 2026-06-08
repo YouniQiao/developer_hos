@@ -2,9 +2,10 @@
 format: md
 title: "如何将类Java语言的线程模型（内存共享）的实现方式转换成在ArkTS的线程模型下（内存隔离）的实现方式"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-46
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-46
+last_sync: 2026-06-07
+sync_hash: b840d70a
 ---
-
-
 可以利用TaskPool接口转换，具体分为以下四个场景：
 
 * 场景一：主线程将独立任务放到子线程执行。代码示例：

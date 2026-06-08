@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "关于实况窗生命周期的问题"
 original_url: /docs/dev/app-dev/application-services/live-view-kit-guide/liveview-faq/liveview-faq-3
 format: md
+upstream_id: dev/app-dev/application-services/live-view-kit-guide/liveview-faq/liveview-faq-3
+last_sync: 2026-06-07
+sync_hash: 3ebb974e
 ---
-
-
 ## 如何实现“App关闭时，自动关闭构建的实况窗”
 
 当App关闭时，可以调用[liveViewManager.stopLiveView](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager#liveviewmanagerstopliveview)方法，设置参数[PrimaryData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/liveview-liveviewmanager#primarydata)实例的keepTime值为0，即可实现立即关闭实况窗。

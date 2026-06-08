@@ -2,9 +2,10 @@
 title: "提交已生效类型的数字商品"
 original_url: /docs/dev/game-dev/games-center-effective-digital-products-for-review-0000002320646005
 format: md
+upstream_id: dev/game-dev/games-center-effective-digital-products-for-review-0000002320646005
+last_sync: 2026-06-07
+sync_hash: 5e699679
 ---
-
-
 ## **提交单个数字商品**
 
 1. 点击[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。

@@ -2,9 +2,10 @@
 title: "权限说明"
 original_url: /docs/dev/atomic-dev/health-data-type-as/health-permission-description-as
 format: md
+upstream_id: dev/atomic-dev/health-data-type-as/health-permission-description-as
+last_sync: 2026-06-07
+sync_hash: 54b134b4
 ---
-
-
 运动健康数据读写需要相应的权限，权限申请参考[申请运动健康服务](/docs/dev/atomic-dev/health-preparations-as/health-apply-as)，数据类型对应权限如下：
 
 | 数据类型 | Harmony SDK类型常量 | 读权限 | 写权限 |

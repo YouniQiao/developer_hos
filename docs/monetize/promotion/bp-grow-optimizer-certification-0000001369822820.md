@@ -3,8 +3,10 @@ title: "增长优化师认证"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-grow-optimizer-certification-0000001369822820
 format: md
+upstream_id: monetize/promotion/bp-grow-optimizer-certification-0000001369822820
+last_sync: 2026-06-07
+sync_hash: 6728daab
 ---
-
 # 增长优化师认证
 
 ![](./img/bf7953e8f69d.jpg)

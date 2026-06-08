@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "复杂文本绘制与显示（C/C++）"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/draw-text-display/complex-text-c
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/text/draw-text-display/complex-text-c
+last_sync: 2026-06-07
+sync_hash: 0109c464
 ---
-
-
 在进行文本绘制时，可以通过选择合适的字体、大小和颜色完成简单文本的绘制与显示；此外，还支持通过设置其他丰富的样式、语言、段落等进行复杂文本的绘制。
 
 复杂文本绘制主要包含以下几个场景：

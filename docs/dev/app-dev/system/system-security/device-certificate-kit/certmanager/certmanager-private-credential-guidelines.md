@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "应用证书凭据开发指导"
 original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certmanager/certmanager-private-credential-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-security/device-certificate-kit/certmanager/certmanager-private-credential-guidelines
+last_sync: 2026-06-07
+sync_hash: 6bc6ec3d
+upstream_hash: a4697e03db1d
 ---
-
 
 ![](./img/2d9c1a1e.png)
 

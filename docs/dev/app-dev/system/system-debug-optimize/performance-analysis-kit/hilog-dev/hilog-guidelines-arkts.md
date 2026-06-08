@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用HiLog打印日志（ArkTS）"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hilog-dev/hilog-guidelines-arkts
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hilog-dev/hilog-guidelines-arkts
+last_sync: 2026-06-07
+sync_hash: 607e3db7
 ---
-
-
 在应用开发过程中，可在关键代码处输出日志信息。在运行应用后，通过查看日志信息来分析应用执行情况（如应用是否正常运行、代码运行时序、运行逻辑分支是否正常等）。
 
 系统提供不同的API供开发者调用并输出日志信息，即HiLog与Console。两个API在使用时略有差异，本文重点介绍HiLog的用法，Console的具体用法可查看API参考[Console](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-logs)。
@@ -62,9 +63,9 @@ debug版本应用下，setMinLogLevel()和setLogLevel()函数均不生效。
 * isLoggable()使用的level，应和具体日志打印接口级别保持一致。
 * isLoggable()返回值：如果指定的domain、tag、level日志可以打印则返回true；否则返回false。
 
-  [debug应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)：不做日志级别管控，所有级别日志都能够正常打印出来；
+  [debug应用](/docs/tools/coding-debug/ide-hvigor-compilation-options-customizing-guide#section192461528194916)：不做日志级别管控，所有级别日志都能够正常打印出来；
 
-  [release应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)：按照全局日志级别管控，当日志的级别不低于全局日志级别时，才能正常打印出来；
+  [release应用](/docs/tools/coding-debug/ide-hvigor-compilation-options-customizing-guide#section192461528194916)：按照全局日志级别管控，当日志的级别不低于全局日志级别时，才能正常打印出来；
 
   调试过程中，可手动修改日志级别，参考：[查看和设置日志级别](/docs/dev/app-dev/system/hilog#查看和设置日志级别)。
 

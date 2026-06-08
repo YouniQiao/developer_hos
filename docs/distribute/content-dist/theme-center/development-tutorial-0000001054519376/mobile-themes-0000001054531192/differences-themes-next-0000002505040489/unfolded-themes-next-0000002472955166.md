@@ -2,9 +2,10 @@
 title: "两折叠主题设计指导及规范"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-next-0000002505040489/unfolded-themes-next-0000002472955166
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/differences-themes-next-0000002505040489/unfolded-themes-next-0000002472955166
+last_sync: 2026-06-07
+sync_hash: 68087b01
 ---
-
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # 两折叠主题设计指导及规范

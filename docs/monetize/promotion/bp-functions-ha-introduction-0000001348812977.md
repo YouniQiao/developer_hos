@@ -3,8 +3,10 @@ title: "业务介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-ha-introduction-0000001348812977
 format: md
+upstream_id: monetize/promotion/bp-functions-ha-introduction-0000001348812977
+last_sync: 2026-06-07
+sync_hash: 87b63a82
 ---
-
 # 业务介绍
 
 华为分析（简称HA）作为监测平台为广告主呈现推广后端归因数据，广告主可通过HA便捷地进行推广归因，降低接入监测、回传归因操作成本。

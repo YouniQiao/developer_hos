@@ -3,8 +3,10 @@ title: "从一个例子开始"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-start
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi-device-start
+last_sync: 2026-06-07
+sync_hash: f64c2b17
 ---
-
 # 从一个例子开始
 
 本章通过一个天气应用，介绍一多应用的整体开发过程，包括UX设计、工程管理及调试、页面开发等。

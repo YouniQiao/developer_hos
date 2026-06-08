@@ -2,9 +2,10 @@
 title: "Telephony Kit简介"
 original_url: /docs/dev/app-dev/system/system-network/telephony-kit/telephony-overview
 format: md
+upstream_id: dev/app-dev/system/system-network/telephony-kit/telephony-overview
+last_sync: 2026-06-07
+sync_hash: 63fd4fa3
 ---
-
-
 Telephony Kit（蜂窝通信服务）提供一系列API帮助开发者开发通信类应用，包括：
 
 * call模块（拨打电话）：系统应用可以直接拨打电话，在应用界面显示通话；三方应用可以拉起系统电话应用，跳转至拨号界面，从而实现拨打电话的功能，具体可参考[拨打电话开发指导](/docs/dev/app-dev/system/system-network/telephony-kit/telephony-call)。除此之外，应用还可以通过call模块，实现格式化电话号码、判断是否紧急号码等功能，详情请参考[@ohos.telephony.call (拨打电话)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-call)文档。

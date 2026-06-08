@@ -3,9 +3,10 @@ title: "ohpm unpublish"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-unpublish
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-unpublish
+last_sync: 2026-06-07
+sync_hash: fa10b7df
 ---
-
-
 # ohpm unpublish
 
 下架已发布的三方库。

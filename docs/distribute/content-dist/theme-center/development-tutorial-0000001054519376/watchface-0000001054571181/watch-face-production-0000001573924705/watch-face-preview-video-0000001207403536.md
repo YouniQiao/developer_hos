@@ -2,6 +2,10 @@
 title: "预览视频"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/watch-face-preview-video-0000001207403536
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-0000001573924705/watch-face-preview-video-0000001207403536
+last_sync: 2026-06-07
+sync_hash: cc0b5c01
+upstream_hash: a9bf2314419e
 ---
 
 # 预览视频

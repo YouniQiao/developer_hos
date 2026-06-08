@@ -3,9 +3,10 @@ title: "《CG鉴赏家》栏目"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-content-operation-0000001239502321/game-center-cg-program-0000001239622345
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-content-operation-0000001239502321/game-center-cg-program-0000001239622345
+last_sync: 2026-06-07
+sync_hash: 7aecc2da
 ---
-
-
 # 《CG鉴赏家》栏目
 
 ## 栏目简介

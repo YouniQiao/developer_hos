@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "如何正确判断媒体资源类型"
 original_url: /docs/dev/app-dev/media/medialibrary-kit/media-library-kit-frequently-asked-questions/medialibrary-asset-judgment-faq
 format: md
+upstream_id: dev/app-dev/media/medialibrary-kit/media-library-kit-frequently-asked-questions/medialibrary-asset-judgment-faq
+last_sync: 2026-06-07
+sync_hash: 1e470ca3
 ---
-
-
 [Media Library Kit](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-overview)（媒体文件管理服务）提供了媒体资源的管理能力，开发者可以访问和管理相册中的媒体信息。针对不同的媒体资源类型，系统会提供相应的判断方式，本文档提供了相关示例方法以便开发者使用。
 
 ## 使用mimeType字段来判断资源类型

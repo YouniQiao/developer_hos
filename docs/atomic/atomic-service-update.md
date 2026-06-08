@@ -2,9 +2,10 @@
 title: "元服务更新"
 original_url: /docs/dev/atomic-dev/atomic-service-framework-development/atomic-service-update
 format: md
+upstream_id: dev/atomic-dev/atomic-service-framework-development/atomic-service-update
+last_sync: 2026-06-07
+sync_hash: 09302647
 ---
-
-
 在上传发布新版本的元服务后，系统将会在不同时机采用不同的方式去检查用户安装的元服务是否有可用的最新版本，并尝试下载更新最新的元服务包。
 
 ![](./img/cbe62d20.png)

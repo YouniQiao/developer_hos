@@ -2,9 +2,10 @@
 title: "CSS语法参考"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-syntax/js-framework-syntax-css
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-syntax/js-framework-syntax-css
+last_sync: 2026-06-07
+sync_hash: b73e5cab
 ---
-
-
 CSS是描述[HML](/docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-syntax/js-framework-syntax-hml)页面结构的样式语言。所有组件均存在系统默认样式，也可在页面CSS样式文件中对组件、页面自定义不同的样式。请参考[通用样式](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-common-styles)了解兼容JS的类Web开发范式支持的组件样式。
 
 ## 尺寸单位

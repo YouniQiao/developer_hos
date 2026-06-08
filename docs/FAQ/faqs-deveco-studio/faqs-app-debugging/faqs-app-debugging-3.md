@@ -2,9 +2,10 @@
 format: md
 title: "真机设备连接后，在DevEco Studio中无法识别设备"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-3
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-3
+last_sync: 2026-06-07
+sync_hash: 395c74fd
 ---
-
-
 **问题现象**
 
 调试运行时，安装HAP失败并提示“设备未找到或未连接”；或DevEco Studio设备列表显示“No device”（未识别设备）。
@@ -27,8 +28,8 @@ original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging
 
 **解决措施**
 
-1. 在设备上打开“[开发者选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode)”开关，打开“USB调试”开关或“无线调试”开关。
-2. 务必确认版本的配套关系是否与当前所使用的开发套件是一致的，可参考[版本概览](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-502-release)使用对应的配套版本。如无真机设备，可使用Device Manager模拟器。
+1. 在设备上打开“[开发者选项](/docs/tools/coding-debug/ide-developer-mode)”开关，打开“USB调试”开关或“无线调试”开关。
+2. 务必确认版本的配套关系是否与当前所使用的开发套件是一致的，可参考[版本概览](/docs/dev/release-notes/overview-502-release)使用对应的配套版本。如无真机设备，可使用Device Manager模拟器。
 
    ![](./img/ab357bb8.png)
 3. 请更换为符合USB2.0标准的数据线；建议直接连接，不要使用拓展坞。

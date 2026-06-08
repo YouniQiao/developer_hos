@@ -3,8 +3,10 @@ title: "设置回传转化数据"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-lending-industry-solutions-backhaul-0000001966047594
 format: md
+upstream_id: monetize/promotion/bp-functions-lending-industry-solutions-backhaul-0000001966047594
+last_sync: 2026-06-07
+sync_hash: f2b1bfcc
 ---
-
 # 设置回传转化数据
 
 1. 直客账户登录[AppGallery Connect网站](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“用户与访问”，创建API客户端，获取的“客户端ID”和“密钥”调用[获取Token](/docs/monetize/promotion/bp-functions-ocpd-interface-token-0000001238324536)接口到华为AppGallery Connect平台进行鉴权，鉴权通过后将获得用于访问AppGallery Connect API的Access Token，此步骤如前期已操作可省略。

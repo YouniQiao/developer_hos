@@ -2,9 +2,10 @@
 format: md
 title: "List控件加载的数据如何判断是否超过一屏"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-334
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-334
+last_sync: 2026-06-07
+sync_hash: 746969fb
 ---
-
-
 1.通过行高计算。
 
 ```

@@ -2,8 +2,11 @@
 format: md
 title: "Tabs组件，自定义tabBar切换动画有延迟，Tabs页面切换完才触发tabBar切换，如何修改"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-451
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-451
+last_sync: 2026-06-07
+sync_hash: aceb152a
+upstream_hash: dae38a9f79c0
 ---
-
 
 新增一个selectedIndex的索引用于标识被选择的tabBar，原来的currentIndex仍然用于TabContent页签显示的控制。然后selectedIndex在onAnimationStart事件中进行切换，就可以实现页签内容切换动画发生时，tabBar也同步切换。
 

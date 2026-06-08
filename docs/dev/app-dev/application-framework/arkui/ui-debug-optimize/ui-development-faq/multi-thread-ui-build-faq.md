@@ -2,9 +2,10 @@
 title: "UI并行化常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/multi-thread-ui-build-faq
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/multi-thread-ui-build-faq
+last_sync: 2026-06-07
+sync_hash: 804be5ea
 ---
-
-
 ## 如何获取和使用支持多线程调用的NDK接口
 
 从API version 22开始，[ArkUI\_NativeAPIVariantKind](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-interface-h#arkui_nativeapivariantkind)中新增ARKUI\_MULTI\_THREAD\_NATIVE\_NODE枚举。

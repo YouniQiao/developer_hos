@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-confusing-void-expression"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-confusing-void-expression
 format: md
+upstream_id: tools/coding-debug/ide_no-confusing-void-expression
+last_sync: 2026-06-07
+sync_hash: d0f6794b
 ---
-
-
 # @typescript-eslint/no-confusing-void-expression
 
 要求void类型的表达式出现在合适的位置。

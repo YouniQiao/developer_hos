@@ -2,9 +2,10 @@
 title: "navigator"
 original_url: /docs/dev/atomic-dev/ascf/components-navigation-components/components-navigator
 format: md
+upstream_id: dev/atomic-dev/ascf/components-navigation-components/components-navigator
+last_sync: 2026-06-07
+sync_hash: a795029c
 ---
-
-
 页面链接，通过组件的方式进行页面跳转。
 
 **起始版本：** 1.0.0

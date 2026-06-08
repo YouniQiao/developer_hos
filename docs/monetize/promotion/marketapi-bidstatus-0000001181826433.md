@@ -3,8 +3,10 @@ title: "竞价结果查询"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-bidstatus-0000001181826433
 format: md
+upstream_id: monetize/promotion/marketapi-bidstatus-0000001181826433
+last_sync: 2026-06-07
+sync_hash: f2a7e9fd
 ---
-
 # 竞价结果查询
 
 ## 功能介绍

@@ -2,9 +2,10 @@
 title: "创建全网态服务"
 original_url: /docs/distribute/agc/agc-help-location-sense-by-nfc-0000002382896585/agc-help-nfc-apply-service-0000002349016136
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-by-nfc-0000002382896585/agc-help-nfc-apply-service-0000002349016136
+last_sync: 2026-06-07
+sync_hash: 131647aa
 ---
-
-
 ![](../img/agc-help-nfc-apply-service-0000002349016136_0.png)
 
 * 创建近场服务之前，请确保您的应用/元服务已上架。

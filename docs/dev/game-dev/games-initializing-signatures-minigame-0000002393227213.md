@@ -2,9 +2,10 @@
 title: "JS（小游戏）"
 original_url: /docs/dev/game-dev/games-initializing-signatures-minigame-0000002393227213
 format: md
+upstream_id: dev/game-dev/games-initializing-signatures-minigame-0000002393227213
+last_sync: 2026-06-07
+sync_hash: 949809e4
 ---
-
-
 为了提升服务的安全性，您还可以选择使用签名初始化SDK的方式进行安全加固，增强数据防篡改能力。在您的服务器端，您需要通过游戏ID、游戏密钥、玩家openId等信息计算出游戏签名，然后发送给客户端。客户端在SDK初始化、掉线重连等场景中均会验证玩家签名信息。
 
 ## 前提条件

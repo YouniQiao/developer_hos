@@ -2,9 +2,10 @@
 title: "使用粘贴控件"
 original_url: /docs/dev/app-dev/system/system-security/access-control/security-components/pastebutton
 format: md
+upstream_id: dev/app-dev/system/system-security/access-control/security-components/pastebutton
+last_sync: 2026-06-07
+sync_hash: 60fab556
 ---
-
-
 粘贴控件是一种特殊的系统安全控件，它允许应用在用户的授权下静默读取剪贴板数据。
 
 集成粘贴控件后，单击该控件时，应用读取剪贴板数据不会弹窗提示。适用于任何需要读取剪贴板的应用场景，避免弹窗干扰用户。

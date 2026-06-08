@@ -2,14 +2,15 @@
 title: "验证签名"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-taas-dev/devicesecurity-taas-verify/devicesecurity-taas-verifysignature
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-taas-dev/devicesecurity-taas-verify/devicesecurity-taas-verifysignature
+last_sync: 2026-06-07
+sync_hash: f0de049a
 ---
-
-
 如果需要在端侧校验安全图像数据或安全地理位置数据签名的有效性，可以使用[Crypto Architecture Kit](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-architecture-kit-intro)，使用方法请参考“[使用ECDSA密钥对签名验签](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-ecdsa-sign-sig-verify)”章节。
 
 ![](./img/2533cfd5.png)
 
-推荐开发者在服务器端完成安全图像或安全地理位置的签名验证，请参考“[Device Certificate Kit 设备真实性证明服务器端开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-attestation-servers)”。
+推荐开发者在服务器端完成安全图像或安全地理位置的签名验证，请参考“[Device Certificate Kit 设备真实性证明服务器端开发](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/attestation-signature-verification/attestation-signature-verification-servers)”。
 
 ## 获取签名数据
 

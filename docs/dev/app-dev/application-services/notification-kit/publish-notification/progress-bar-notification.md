@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "发布进度条类型通知"
 original_url: /docs/dev/app-dev/application-services/notification-kit/publish-notification/progress-bar-notification
 format: md
+upstream_id: dev/app-dev/application-services/notification-kit/publish-notification/progress-bar-notification
+last_sync: 2026-06-07
+sync_hash: eb587f55
 ---
-
-
 进度条通知也是常见的通知类型，主要应用于文件下载、事务处理进度显示。当前系统提供了进度条模板，发布通知应用应设置好进度条模板的属性值，如模板名、模板数据，通过通知子系统发送到通知栏显示。
 
 目前系统模板仅支持进度条模板，通知模板[NotificationTemplate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationtemplate)中的data参数为用户自定义数据，用于显示与模块相关的数据。

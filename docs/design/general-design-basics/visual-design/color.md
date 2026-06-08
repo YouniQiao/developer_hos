@@ -3,8 +3,10 @@ title: 色彩
 sidebar_label: 色彩
 original_url: /docs/design/general-design-basics/visual-design/color
 format: md
+upstream_id: design/general-design-basics/visual-design/color
+last_sync: 2026-06-07
+sync_hash: f88cc9a7
 ---
-
 \{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 色彩

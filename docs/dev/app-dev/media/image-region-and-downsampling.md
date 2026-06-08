@@ -2,9 +2,10 @@
 title: "图片区域解码与下采样(ArkTS)"
 original_url: /docs/dev/app-dev/media/image-region-and-downsampling
 format: md
+upstream_id: dev/app-dev/media/image-region-and-downsampling
+last_sync: 2026-06-07
+sync_hash: 08959938
 ---
-
-
 应用在处理大尺寸图片时，直接解码整张图片可能导致内存占用过高和解码耗时较长。通过区域解码和下采样解码功能，可以有效优化这一场景：
 
 * **区域解码**：仅解码图片的指定矩形区域，适用于需要查看图片局部的场景。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "启动文件扫描任务"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-start-task
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-start-task
+last_sync: 2026-06-07
+sync_hash: c3b51f97
 ---
-
-
 ## 场景介绍
 
 Enterprise Data Guard Kit为应用提供公共路径和指定目录的扫描能力，获取对应目录下的文件列表。

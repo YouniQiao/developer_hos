@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "YUV拍照(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-yuv-shooting
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-yuv-shooting
+last_sync: 2026-06-07
+sync_hash: d6bf12e4
 ---
-
-
 从API version 23开始，相机框架提供YUV格式图片拍照能力。与普通拍照相比，YUV拍照获取到的是未经过编码的图像数据，完整保留了传感器捕获的原始亮度和色度信息，适用于视频编码或专业处理。同时，拍摄过程会产生更高的能耗开销，保存会占用更多的存储空间。
 
 ## 开发步骤

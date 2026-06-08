@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "图像跟踪（ArkTS）"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-image/arengine-image-track
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/get-image/arengine-image-track
+last_sync: 2026-06-07
+sync_hash: e470cca8
 ---
-
-
 本章节给出了关键开发步骤，完整代码可以参考[示例代码](https://gitcode.com/HarmonyOS_Samples/arengine_samplecode_clientdemo_arkts)。
 
 ## 约束与限制

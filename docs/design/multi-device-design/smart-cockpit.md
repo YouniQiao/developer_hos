@@ -3,8 +3,10 @@ title: 智能座舱
 sidebar_label: 智能座舱
 original_url: /docs/design/multi-device-design/smart-cockpit
 format: md
+upstream_id: design/multi-device-design/smart-cockpit
+last_sync: 2026-06-07
+sync_hash: 754e264d
 ---
-
 # 智能座舱
 
 ### 概述

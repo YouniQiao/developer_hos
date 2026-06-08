@@ -2,8 +2,11 @@
 title: "消息认证码计算HMAC(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-mac/crypto-compute-hmac
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-mac/crypto-compute-hmac
+last_sync: 2026-06-07
+sync_hash: b5803843
+upstream_hash: 73ce585886a3
 ---
-
 
 HMAC使用指定的摘要算法，以共享密钥和消息作为输入，生成固定长度的消息认证码，用于检验报文的完整性。HMAC在消息摘要算法基础上增加密钥输入，确保信息正确性。
 

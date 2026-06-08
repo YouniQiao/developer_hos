@@ -2,9 +2,10 @@
 title: "传感器开发指导"
 original_url: /docs/dev/atomic-dev/atomic-sensor/atomic-sensor-guidelines
 format: md
+upstream_id: dev/atomic-dev/atomic-sensor/atomic-sensor-guidelines
+last_sync: 2026-06-07
+sync_hash: 82c54c22
 ---
-
-
 ## 场景介绍
 
 当设备需要获取传感器数据时，可以使用sensor模块，例如：通过订阅方向传感器数据感知用户设备当前的朝向。

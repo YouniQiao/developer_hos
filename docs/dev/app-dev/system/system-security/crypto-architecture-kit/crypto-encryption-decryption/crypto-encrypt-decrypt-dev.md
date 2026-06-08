@@ -2,9 +2,10 @@
 title: "加解密开发指导"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev
+last_sync: 2026-06-07
+sync_hash: 31e9dc95
 ---
-
-
 * **[使用AES对称密钥（GCM模式）加解密(ArkTS)](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-aes-sym-encrypt-decrypt-gcm)**
 * **[使用AES对称密钥（GCM模式）加解密(C/C++)](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-aes-sym-encrypt-decrypt-gcm-ndk)**
 * **[使用AES对称密钥（CCM模式）加解密(ArkTS)](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-aes-sym-encrypt-decrypt-ccm)**

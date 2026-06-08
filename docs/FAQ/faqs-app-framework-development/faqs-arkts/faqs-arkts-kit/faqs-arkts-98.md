@@ -2,9 +2,10 @@
 format: md
 title: "如何使用Record"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-98
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-98
+last_sync: 2026-06-07
+sync_hash: b87ef3a3
 ---
-
-
 构造一个对象类型，其属性键为“Keys” ，其属性值为“Type”，可用于将一种类型的属性映射到另一种类型。
 
 示例如下：

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "人脸活体检测"
 original_url: /docs/dev/app-dev/ai/vision-kit-guide/vision-interactiveliveness
 format: md
+upstream_id: dev/app-dev/ai/vision-kit-guide/vision-interactiveliveness
+last_sync: 2026-06-07
+sync_hash: 13f8e3de
 ---
-
-
 ## 场景介绍
 
 人脸活体检测支持动作活体检测模式。

@@ -2,9 +2,10 @@
 title: "应用模型"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/application-models
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/application-models
+last_sync: 2026-06-07
+sync_hash: fbfcd934
 ---
-
-
 ## 应用模型的构成要素
 
 应用模型是系统为开发者提供的应用程序所需能力的抽象提炼，它提供了应用程序必备的组件和运行机制。有了应用模型，开发者可以基于一套统一的模型进行应用开发，使应用开发更简单、高效。

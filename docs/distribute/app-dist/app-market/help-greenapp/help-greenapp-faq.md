@@ -3,8 +3,10 @@ title: "绿色应用检测认证FAQ"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/help-greenapp/help-greenapp-faq
 format: md
+upstream_id: distribute/app-dist/app-market/help-greenapp/help-greenapp-faq
+last_sync: 2026-06-07
+sync_hash: 1df67a17
 ---
-
 # 华为绿色应用检测认证FAQ
 
 **[问题一]软件绿色联盟应用体验标准5.0是什么？**

@@ -2,9 +2,10 @@
 format: md
 title: "如何将ListItem的swipeAction滑动效果恢复到初始状态"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-277
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-277
+last_sync: 2026-06-07
+sync_hash: 313473b2
 ---
-
-
 使用 ListScroller 提供的 closeAllSwipeActions() 方法恢复滑动效果，示例代码如下：
 
 ```

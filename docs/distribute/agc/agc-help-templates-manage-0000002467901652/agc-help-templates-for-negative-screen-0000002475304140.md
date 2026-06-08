@@ -2,9 +2,10 @@
 title: "竖卡（4*3）"
 original_url: /docs/distribute/agc/agc-help-templates-manage-0000002467901652/agc-help-templates-for-negative-screen-0000002475304140
 format: md
+upstream_id: distribute/agc/agc-help-templates-manage-0000002467901652/agc-help-templates-for-negative-screen-0000002475304140
+last_sync: 2026-06-07
+sync_hash: 13123a26
 ---
-
-
 #### 新增模板
 
 ![](../img/agc-help-templates-for-negative-screen-0000002475304140_0.png)

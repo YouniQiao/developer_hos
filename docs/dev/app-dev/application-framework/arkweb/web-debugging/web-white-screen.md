@@ -2,8 +2,11 @@
 title: "定位与解决Web白屏问题"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-debugging/web-white-screen
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-debugging/web-white-screen
+last_sync: 2026-06-07
+sync_hash: 108c4ae9
+upstream_hash: dbbecd417e1b
 ---
-
 
 Web页面出现白屏的原因众多，本文列举了若干常见白屏问题的排查步骤，供开发者快速定位。
 

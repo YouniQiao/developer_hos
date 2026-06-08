@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "单击快速验证手机号按钮，无法拉起页面"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button-frequently-asked-questions/scenario-fusion-faq-1
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button-frequently-asked-questions/scenario-fusion-faq-1
+last_sync: 2026-06-07
+sync_hash: 4b29104b
 ---
-
-
 **现象描述**
 
 日志报错示例：

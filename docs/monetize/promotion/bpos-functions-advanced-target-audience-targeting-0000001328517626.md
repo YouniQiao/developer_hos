@@ -3,8 +3,10 @@ title: "受众人群定向"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-functions-advanced-target-audience-targeting-0000001328517626
 format: md
+upstream_id: monetize/promotion/bpos-functions-advanced-target-audience-targeting-0000001328517626
+last_sync: 2026-06-07
+sync_hash: 258daeb4
 ---
-
 # 受众人群定向
 
 ## 概述

@@ -2,8 +2,11 @@
 title: "开发第一个元服务概述"
 original_url: /docs/dev/atomic-dev/develop-first-atomic-service/atomic-service-start-overview
 format: md
+upstream_id: dev/atomic-dev/develop-first-atomic-service/atomic-service-start-overview
+last_sync: 2026-06-07
+sync_hash: dea49cb8
+upstream_hash: a5c584b34ab0
 ---
-
 
 本文档适用于HarmonyOS元服务开发的初学者。
 

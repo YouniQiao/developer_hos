@@ -3,8 +3,10 @@ title: "推荐-系统投放-CPC任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/mktapi-adtask-recommend-sys-cpc-0000002521841647
 format: md
+upstream_id: monetize/promotion/mktapi-adtask-recommend-sys-cpc-0000002521841647
+last_sync: 2026-06-07
+sync_hash: df7263d1
 ---
-
 # 推荐-系统投放-CPC任务
 
 ## 功能介绍

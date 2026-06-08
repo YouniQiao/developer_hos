@@ -2,9 +2,10 @@
 title: "配置业务域名"
 original_url: /docs/dev/atomic-dev/atomic-web-development/agc-help-harmonyos-business-domain
 format: md
+upstream_id: dev/atomic-dev/atomic-web-development/agc-help-harmonyos-business-domain
+last_sync: 2026-06-07
+sync_hash: b0cfa2c7
 ---
-
-
 为维护元服务生态，保证元服务合规经营，提升元服务上架审核效率，助力平台商业闭环，支持开发者在元服务上架前配置webview业务域名，助力开发者灵活开发。后续当用户使用元服务时，将根据该元服务的业务域名配置实现业务跳转，为用户提供安全可靠的网络环境，从而提升用户信任度和满意度。
 
 ![](./img/4dde0f96.png)

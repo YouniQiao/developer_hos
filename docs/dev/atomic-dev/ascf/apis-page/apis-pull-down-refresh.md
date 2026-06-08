@@ -2,9 +2,10 @@
 title: "下拉刷新"
 original_url: /docs/dev/atomic-dev/ascf/apis-page/apis-pull-down-refresh
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-page/apis-pull-down-refresh
+last_sync: 2026-06-07
+sync_hash: 7cc27dc5
 ---
-
-
 ## has.startPullDownRefresh
 
 has.startPullDownRefresh(Object object)

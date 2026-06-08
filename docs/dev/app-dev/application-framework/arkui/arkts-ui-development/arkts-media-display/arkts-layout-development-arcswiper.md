@@ -2,9 +2,10 @@
 title: "创建弧形轮播 (ArcSwiper)（圆形屏幕推荐使用）"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-media-display/arkts-layout-development-arcswiper
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-media-display/arkts-layout-development-arcswiper
+last_sync: 2026-06-07
+sync_hash: 7a0a2f66
 ---
-
-
 ArcSwiper是弧形轮播组件，在圆形屏幕场景下使用，提供弧形轮播显示能力。具体用法请参考[ArcSwiper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-arcswiper)。
 
 在使用ArcSwiper组件之前，需要在代码中先导入ArcSwiper模块。

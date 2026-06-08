@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取诈骗消息"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-antifraudpicker/devicesecurity-selectfraudmessage
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-antifraudpicker/devicesecurity-selectfraudmessage
+last_sync: 2026-06-07
+sync_hash: 7b342aa7
 ---
-
-
 ## 场景介绍
 
 应用通过调用Device Security Kit的接口获取诈骗消息信息，用于反诈业务，比如对诈骗消息进行举报。

@@ -2,9 +2,10 @@
 title: "如何将相册选择的图片生成PixelMap"
 original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-6
 format: md
+upstream_id: FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-6
+last_sync: 2026-06-07
+sync_hash: bd0f8646
 ---
-
-
 方法一：
 
 1. 创建图库选择器实例，调用select()接口拉起photoPicker界面选择图片。选择成功后，返回PhotoSelectResult结果集。

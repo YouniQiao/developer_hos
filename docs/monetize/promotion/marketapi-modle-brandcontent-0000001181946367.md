@@ -3,8 +3,10 @@ title: "BrandContent"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-brandcontent-0000001181946367
 format: md
+upstream_id: monetize/promotion/marketapi-modle-brandcontent-0000001181946367
+last_sync: 2026-06-07
+sync_hash: c97f481d
 ---
-
 # BrandContent
 
 | 字段 | 必选(M)/可选(O) | 类型 | 描述 |

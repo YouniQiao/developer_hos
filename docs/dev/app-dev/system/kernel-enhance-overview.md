@@ -2,9 +2,10 @@
 title: "Kernel Enhance Kit 简介"
 original_url: /docs/dev/app-dev/system/kernel-enhance-overview
 format: md
+upstream_id: dev/app-dev/system/kernel-enhance-overview
+last_sync: 2026-06-07
+sync_hash: b7d6e862
 ---
-
-
 ## 功能介绍
 
 Kernel Enhance Kit 为开发者提供内核增强能力，包括服务质量（QoS）调度、Purgeable 内存管理和格物端侧推理服务，帮助开发者优化应用性能、资源管理和用户体验。

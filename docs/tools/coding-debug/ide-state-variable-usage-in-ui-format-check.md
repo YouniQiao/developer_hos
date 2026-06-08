@@ -3,9 +3,10 @@ title: "@performance/state-variable-usage-in-ui-format-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-state-variable-usage-in-ui-format-check
 format: md
+upstream_id: tools/coding-debug/ide-state-variable-usage-in-ui-format-check
+last_sync: 2026-06-07
+sync_hash: 1df54eed
 ---
-
-
 # @performance/state-variable-usage-in-ui-format-check
 
 建议删除不使用的UI变量。

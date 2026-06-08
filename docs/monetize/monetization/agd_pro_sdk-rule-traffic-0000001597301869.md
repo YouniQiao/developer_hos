@@ -3,10 +3,10 @@ title: "流量规范"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk-rule-traffic-0000001597301869
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk-rule-traffic-0000001597301869
+last_sync: 2026-06-07
+sync_hash: 37ce70fb
 ---
-
-
-
 无效流量指通过作弊手段，导致广告客户费用或发布商收入虚增的下载、点击或展示。而导致无效流量产生的活动称为无效活动。平台禁止任何不正当方式制造虚假或无效流量、点击量、下载量，或违规嵌入等行为，包括但不限于以下形式：
 
 1. 违规推广流量

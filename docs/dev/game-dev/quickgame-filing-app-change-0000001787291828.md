@@ -2,9 +2,10 @@
 title: "变更核准（备案）"
 original_url: /docs/dev/game-dev/quickgame-filing-app-change-0000001787291828
 format: md
+upstream_id: dev/game-dev/quickgame-filing-app-change-0000001787291828
+last_sync: 2026-06-07
+sync_hash: d4958241
 ---
-
-
 ## 前提条件
 
 已前往应用市场下载最新版本的华为云App。

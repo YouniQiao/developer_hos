@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用PixelMap完成图像变换"
 original_url: /docs/dev/app-dev/media/image-kit/image-arkts-dev/image-editing-arkts/image-transformation
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-arkts-dev/image-editing-arkts/image-transformation
+last_sync: 2026-06-07
+sync_hash: 1c17447b
 ---
-
-
 图片处理指对PixelMap进行相关的操作，如获取图片信息、裁剪、缩放、偏移、旋转、翻转、设置透明度、读写像素数据等。图片处理主要包括图像变换、[位图操作](/docs/dev/app-dev/media/image-kit/image-arkts-dev/image-editing-arkts/image-pixelmap-operation)，本文介绍图像变换。
 
 ## 开发步骤

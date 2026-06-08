@@ -3,8 +3,10 @@ title: "查询日预算和次日预算"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-dailybudget-query-0000001192788600
 format: md
+upstream_id: monetize/promotion/marketapi-dailybudget-query-0000001192788600
+last_sync: 2026-06-07
+sync_hash: ef9cdcda
 ---
-
 # 查询日预算和次日预算
 
 ## 功能介绍

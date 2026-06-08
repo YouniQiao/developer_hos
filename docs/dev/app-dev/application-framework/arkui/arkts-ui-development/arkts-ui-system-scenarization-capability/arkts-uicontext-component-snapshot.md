@@ -2,9 +2,10 @@
 title: "使用组件截图（ComponentSnapshot）"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-uicontext-component-snapshot
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-uicontext-component-snapshot
+last_sync: 2026-06-07
+sync_hash: de2c13d6
 ---
-
-
 ## 能力介绍
 
 组件截图是将应用内一个组件节点树的渲染结果生成位图（[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)）的能力，支持两种方式：一种是对已挂树显示的组件进行截图，另一种是对通过Builder或ComponentContent实现的离线组件进行截图。

@@ -2,9 +2,10 @@
 title: "ArkTS中HTTP请求如何以JSON形式进行传输"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-36
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-36
+last_sync: 2026-06-07
+sync_hash: ed39dd08
 ---
-
-
 HTTP协议消息头中，Content-Type表示媒体类型。
 
 设置参数值为application/json。请求中的数据将以JSON形式传输。参考代码如下：

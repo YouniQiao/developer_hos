@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "订阅地址越界事件（C/C++）"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/address-sanitizer-events/hiappevent-watcher-address-sanitizer-events-ndk
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/address-sanitizer-events/hiappevent-watcher-address-sanitizer-events-ndk
+last_sync: 2026-06-07
+sync_hash: 99ea2c8a
 ---
-
-
 ## 接口说明
 
 API接口的具体使用说明（参数使用限制、具体取值范围等）请参考[hiappevent.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hiappevent-h)。

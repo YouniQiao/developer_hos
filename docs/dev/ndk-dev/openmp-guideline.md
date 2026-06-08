@@ -2,9 +2,10 @@
 title: "OpenMP应用构建和运行指南"
 original_url: /docs/dev/ndk-dev/openmp-guideline
 format: md
+upstream_id: dev/ndk-dev/openmp-guideline
+last_sync: 2026-06-07
+sync_hash: 64f5c44e
 ---
-
-
 HarmonyOS NDK中提供了OpenMP的动态库和静态库文件，支持开发者在Native应用中使用OpenMP。本文用于指导开发者在[DevEco Studio](https://developer.huawei.com/consumer/cn/deveco-studio/)中调用库文件使用OpenMP的并行化能力，更详细的使用示例和API标准请查看官方文档[clang-OpenMPSupport](https://clang.llvm.org/docs/OpenMPSupport.html)。
 
 ## 开发步骤

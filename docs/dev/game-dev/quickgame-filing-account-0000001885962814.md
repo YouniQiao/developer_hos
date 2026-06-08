@@ -2,8 +2,11 @@
 title: "账号管理"
 original_url: /docs/dev/game-dev/quickgame-filing-account-0000001885962814
 format: md
+upstream_id: dev/game-dev/quickgame-filing-account-0000001885962814
+last_sync: 2026-06-07
+sync_hash: 834a0cd8
+upstream_hash: 006ca0f1d550
 ---
-
 
 ## 简介
 

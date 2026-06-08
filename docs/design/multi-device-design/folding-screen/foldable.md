@@ -3,8 +3,10 @@ title: 双折叠
 sidebar_label: 双折叠
 original_url: /docs/design/multi-device-design/folding-screen/foldable
 format: md
+upstream_id: design/multi-device-design/folding-screen/foldable
+last_sync: 2026-06-07
+sync_hash: a7c49b61
 ---
-
 # 双折叠
 
 ### 概述

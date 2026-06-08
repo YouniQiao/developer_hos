@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "字块绘制（C/C++）"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/primitive-drawing/textblock-drawing-c
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/primitive-drawing/textblock-drawing-c
+last_sync: 2026-06-07
+sync_hash: 6036a3ce
 ---
-
-
 ## 场景介绍
 
 字块（TextBlob）是指文本的集合。无论是单个的文字还是大块的文本，都可以通过字块来绘制。

@@ -2,9 +2,10 @@
 title: "组件"
 original_url: /docs/dev/atomic-dev/ascf/components/components
 format: md
+upstream_id: dev/atomic-dev/ascf/components/components
+last_sync: 2026-06-07
+sync_hash: b9b7cc96
 ---
-
-
 * **[视图容器](/docs/dev/atomic-dev/ascf/components-view-container/components-view-container)**
 * **[基础内容](/docs/dev/atomic-dev/ascf/components-basic-components/components-basic-components)**
 * **[表单组件](/docs/dev/atomic-dev/ascf/components-form-components/components-form-components)**

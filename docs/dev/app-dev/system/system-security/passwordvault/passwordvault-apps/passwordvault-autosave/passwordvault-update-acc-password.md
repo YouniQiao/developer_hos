@@ -2,9 +2,10 @@
 title: "账号密码更新"
 original_url: /docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autosave/passwordvault-update-acc-password
 format: md
+upstream_id: dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autosave/passwordvault-update-acc-password
+last_sync: 2026-06-07
+sync_hash: 9fbe3aa4
 ---
-
-
 应用界面触发账号密码自动保存时，若密码保险箱中已存在同应用下与本次使用账号相同的账号，则弹出密码更新提示框，用户点击更新按钮，即可更新密码保险箱内对应账号的密码。
 
 ![](./img/2aa7d3ed.png)

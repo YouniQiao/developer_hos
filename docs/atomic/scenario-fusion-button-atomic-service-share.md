@@ -2,8 +2,11 @@
 title: "元服务分享Button"
 original_url: /docs/dev/atomic-dev/scenario-fusion-atomic-button/scenario-fusion-button-atomic-service-share
 format: md
+upstream_id: dev/atomic-dev/scenario-fusion-atomic-button/scenario-fusion-button-atomic-service-share
+last_sync: 2026-06-07
+sync_hash: 42002878
+upstream_hash: 8025209d581d
 ---
-
 
 ## 场景介绍
 

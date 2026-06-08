@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "游泳"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-swim
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-swim
+last_sync: 2026-06-07
+sync_hash: 76ddec0d
 ---
-
-
 ## 开放水域游泳
 
 ### 开放水域游泳相关锻炼记录类型如下：

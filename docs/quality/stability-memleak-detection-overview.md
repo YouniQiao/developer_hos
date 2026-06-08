@@ -2,9 +2,10 @@
 title: "内存泄漏类问题检测方法"
 original_url: /docs/quality/stability-memleak-detection-overview
 format: md
+upstream_id: /docs/quality/stability-memleak-detection-overview
+last_sync: 2026-06-07
+sync_hash: 32f60f56
 ---
-
-
 # 内存泄漏类问题检测方法
 
 ## 概述

@@ -2,9 +2,10 @@
 title: "ohpm-repo encrypt_password"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-encrypt_password
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-encrypt_password
+last_sync: 2026-06-07
+sync_hash: c1e28a5f
 ---
-
-
 # ohpm-repo encrypt\_password
 
 对键入的密码类型字符串进行加密。

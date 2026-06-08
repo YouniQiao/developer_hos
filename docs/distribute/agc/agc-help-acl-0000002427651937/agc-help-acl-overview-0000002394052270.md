@@ -2,9 +2,10 @@
 title: "概述"
 original_url: /docs/distribute/agc/agc-help-acl-0000002427651937/agc-help-acl-overview-0000002394052270
 format: md
+upstream_id: distribute/agc/agc-help-acl-0000002427651937/agc-help-acl-overview-0000002394052270
+last_sync: 2026-06-07
+sync_hash: 380d7a69
 ---
-
-
 ACL权限即允许普通应用使用ACL方式跨级别申请的system\_basic权限，又名受限开放权限。关于每个ACL权限的介绍、可用场景及其建议方案，请参考[受限开放权限列表](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions)。
 
 若应用/元服务确定使用ACL权限，请按如下流程操作：

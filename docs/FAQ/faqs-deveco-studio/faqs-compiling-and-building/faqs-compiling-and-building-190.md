@@ -2,9 +2,10 @@
 format: md
 title: "历史问题报错：“hvigor ERROR: Error: EINVAL: invalid argument, mkdir ‘D:xxxyyyzzzD:’/ 'C:xxxyyyzzzC:at Object.mkdirSync (node:fs:1391:3)”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-190
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-190
+last_sync: 2026-06-07
+sync_hash: 1f09bc90
 ---
-
-
 **问题现象**
 
 构建报错：“hvigor ERROR: Error: EINVAL: invalid argument, mkdir ‘D:xxx\yyy\zzz\D:’”

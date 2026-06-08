@@ -2,9 +2,10 @@
 title: "统计网络流量消耗"
 original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-network-management/net-statistics
 format: md
+upstream_id: dev/app-dev/system/system-network/network-kit/network-kit-network-management/net-statistics
+last_sync: 2026-06-07
+sync_hash: 78260568
 ---
-
-
 ## 简介
 
 流量管理提供了基于物理网络的数据流量统计能力，支持基于网卡/UID 的流量统计。

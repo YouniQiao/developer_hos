@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "潜水闭气训练"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-breath-holding-train
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-breath-holding-train
+last_sync: 2026-06-07
+sync_hash: c20f0d24
 ---
-
-
 潜水闭气训练相关锻炼记录类型如下：
 
 | **锻炼记录子类型常量** | **描述** | 数据来源 |

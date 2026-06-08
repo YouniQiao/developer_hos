@@ -2,9 +2,10 @@
 format: md
 title: "如何查看应用是否为系统应用"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-18
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-18
+last_sync: 2026-06-07
+sync_hash: 4afc91bf
 ---
-
-
 1. 连接设备。
 2. 执行以下命令打印日志（Bundle Name获取参考：[bundleManager.getBundleInfoForSelf](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundlemanager#bundlemanagergetbundleinfoforself)）：
 

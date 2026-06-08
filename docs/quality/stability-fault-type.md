@@ -2,8 +2,11 @@
 title: "故障类型"
 original_url: /docs/quality/stability-fault-type
 format: md
+upstream_id: /docs/quality/stability-fault-type
+last_sync: 2026-06-07
+sync_hash: 456927e7
+upstream_hash: 825682ad7e33
 ---
-
 
 # 故障类型
 

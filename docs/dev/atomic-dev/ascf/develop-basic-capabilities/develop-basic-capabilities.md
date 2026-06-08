@@ -2,9 +2,10 @@
 title: "基础能力"
 original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-basic-capabilities
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-basic-capabilities/develop-basic-capabilities
+last_sync: 2026-06-07
+sync_hash: a0fc0c64
 ---
-
-
 * **[访问网络](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-network-access)**
 * **[分包加载](/docs/dev/atomic-dev/ascf/develop-subpackage-loading/develop-subpackage-loading)**
 * **[画布](/docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-canvas)**

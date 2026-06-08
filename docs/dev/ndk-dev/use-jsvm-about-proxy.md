@@ -2,9 +2,10 @@
 title: "使用JSVM-API提供的proxy接口"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-proxy
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-proxy
+last_sync: 2026-06-07
+sync_hash: 762514b3
 ---
-
-
 ## 简介
 
 JSVM-API 提供了创建 Proxy、判断 JSVM\_Value 是否为 Proxy 类型和获取 Proxy 中的目标对象的接口。

@@ -2,9 +2,10 @@
 title: "卡片自动居中的场景"
 original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-card-automatically-centered
 format: md
+upstream_id: dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-card-automatically-centered
+last_sync: 2026-06-07
+sync_hash: 55ff377f
 ---
-
-
 ## 设计场景
 
 在横向滚动容器中，通过居中限位来突出中心卡片的详细信息和操作选项。为了确保屏幕朗读场景下聚焦卡片的可访问性，需要将获得焦点的卡片自动居中显示，以凸显其重要性。为此，需要应用通过[ForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-foreach)或[LazyForEach](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-lazyforeach)获取卡片索引，在可聚焦的卡片控件上注册无障碍聚焦回调函数[onAccessibilityFocus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-accessibility-event#onaccessibilityfocus)，在回调函数中调用滚动容器的[scrollToIndex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references-V5/ts-container-scroll-V5#scrolltoindex)接口并指定卡片索引，将聚焦的卡片控件居中显示。

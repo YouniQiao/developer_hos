@@ -2,9 +2,10 @@
 format: md
 title: "自动签名时提示“The signature does not take effect or has expired. It may be the current system time is inaccurate, please calibrate the system time and sign again”错误"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-14
+upstream_id: FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-14
+last_sync: 2026-06-07
+sync_hash: 438e8ee9
 ---
-
-
 **问题描述**
 
 自动生成签名失败。

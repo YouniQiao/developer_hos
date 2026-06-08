@@ -3,8 +3,10 @@ title: "通用合规要求"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-appendix-material-rule-universal-0000001894803116
 format: md
+upstream_id: monetize/promotion/bp-appendix-material-rule-universal-0000001894803116
+last_sync: 2026-06-07
+sync_hash: be874d95
 ---
-
 # 通用合规要求
 
 ## 授权及证明资质规范

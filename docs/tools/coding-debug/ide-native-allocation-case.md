@@ -3,9 +3,10 @@ title: "案例：Native内存泄漏分析"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-native-allocation-case
 format: md
+upstream_id: tools/coding-debug/ide-native-allocation-case
+last_sync: 2026-06-07
+sync_hash: db748295
 ---
-
-
 # 案例：Native内存泄漏分析
 
 本案例介绍如何判断应用存在Native内存泄漏。

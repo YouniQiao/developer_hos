@@ -2,9 +2,10 @@
 format: md
 title: "gbk字符串TextEncoder编码结果属性buffer长度为何比编码结果长度略大"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-137
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-137
+last_sync: 2026-06-07
+sync_hash: c993a46e
 ---
-
-
 **问题现象**
 
 TextEncoder编码字符串“你好abc”，格式是gbk，分别获取编码结果长度和编码结果属性buffer的长度。如下图显示：

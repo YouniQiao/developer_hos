@@ -2,8 +2,11 @@
 format: md
 title: "图片压缩API的quality参数与图片原始大小、压缩后大小的关系"
 original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-4
+upstream_id: FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-4
+last_sync: 2026-06-07
+sync_hash: 78bb4c25
+upstream_hash: f84ebdf7c4a0
 ---
-
 
 对于有损压缩图片格式（如JPEG），质量参数会影响压缩后的图片大小。对于无损压缩图片格式（如PNG），质量参数不会影响压缩后的图片大小。而且，需要注意的是：减小quality只能使得压缩后的图片文件更小，而不会改变图片的尺寸。
 

@@ -3,9 +3,10 @@ title: "表盘介绍"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/watch-face-introduction-0000001566918497
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/watch-face-introduction-0000001566918497
+last_sync: 2026-06-07
+sync_hash: 49285eff
 ---
-
-
 # 表盘介绍
 
 ## 表盘是什么

@@ -2,9 +2,10 @@
 title: "资源提前加载"
 original_url: /docs/quality/preloading-resources
 format: md
+upstream_id: /docs/quality/preloading-resources
+last_sync: 2026-06-07
+sync_hash: 7ed2030e
 ---
-
-
 # 资源提前加载
 
 ## 网络请求优化

@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-dupe-class-members"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-dupe-class-members
 format: md
+upstream_id: tools/coding-debug/ide_no-dupe-class-members
+last_sync: 2026-06-07
+sync_hash: 770cd244
 ---
-
-
 # @typescript-eslint/no-dupe-class-members
 
 不允许重复的类成员。如果类成员中有同名的声明，最后一个声明会覆盖其他声明，可能会导致意外行为。

@@ -2,9 +2,10 @@
 title: "Web组件对接软键盘"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-docking-softkeyboard
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-docking-softkeyboard
+last_sync: 2026-06-07
+sync_hash: 7adbe213
 ---
-
-
 开发者能够通过Web组件对接软键盘，来处理系统软键盘的显示与交互问题，同时实现软键盘的自定义功能。主要有以下场景：
 
 * 拉起系统软键盘输入文字：点击网页输入框时，屏幕下方将弹出系统默认的软键盘。开发者可以通过软键盘输入文字，输入的内容会显示在输入框中。

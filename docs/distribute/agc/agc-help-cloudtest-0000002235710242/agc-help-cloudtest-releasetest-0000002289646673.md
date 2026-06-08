@@ -2,9 +2,10 @@
 title: "上架测试"
 original_url: /docs/distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-releasetest-0000002289646673
 format: md
+upstream_id: distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-releasetest-0000002289646673
+last_sync: 2026-06-07
+sync_hash: 5cd25573
 ---
-
-
 上架测试按照应用市场应用上架的标准进行测试，为您的应用上架提供质量保证。上架测试可对应用进行兼容性测试、稳定性测试、性能测试、功耗测试、UX测试和隐私测试。
 
 ![](../img/agc-help-cloudtest-releasetest-0000002289646673_0.png)

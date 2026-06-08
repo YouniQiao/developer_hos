@@ -3,10 +3,10 @@ title: "DeviceInfo"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_api_if_deviceinfo-0000001294557021
 format: md
+upstream_id: monetize/monetization/agd_pro_api_if_deviceinfo-0000001294557021
+last_sync: 2026-06-07
+sync_hash: 3b2d02dc
 ---
-
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | oaid | O | `String` | 设备广告ID。  请按实际获取情况填写，如获取不到，请传入空值。  注意：  **oaid**字段不传的情况，可能会导致没有填充。 |

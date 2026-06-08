@@ -3,9 +3,10 @@ title: "服务消息中心"
 displayed_sidebar: serviceDistSidebar
 original_url: /docs/distribute/service-dist/huawei-service-account/entrance-0000001052924071/service_message_center-0000001151986766
 format: md
+upstream_id: distribute/service-dist/huawei-service-account/entrance-0000001052924071/service_message_center-0000001151986766
+last_sync: 2026-06-07
+sync_hash: 50828b50
 ---
-
-
 # 服务消息中心
 
 服务消息中心是聚合服务号消息的统一平台，支持一站式查看服务号信息和管理服务号关注，帮助用户便捷获取优质服务，目前提供最近使用列表“最近”、用户关注列表“我的关注”。

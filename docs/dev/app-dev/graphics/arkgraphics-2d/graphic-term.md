@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "图形开发术语"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-term
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/graphic-term
+last_sync: 2026-06-07
+sync_hash: cdb67642
 ---
-
-
 ## BlendMode
 
 BlendMode，混合模式，定义当前内容和已有内容如何相互作用产生新的效果，不同的混合模式相互作用叠加的计算方式和效果也会对应有所不同。

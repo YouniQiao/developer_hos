@@ -2,9 +2,10 @@
 title: "常驻任务开发指导 (Worker)"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/resident-task/resident-task-guide
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/resident-task/resident-task-guide
+last_sync: 2026-06-07
+sync_hash: f94af378
 ---
-
-
 提供使用Worker进行常驻任务的开发指导。Worker将持续执行任务，直到宿主线程发送终止指令。
 
 开发过程和示例如下：

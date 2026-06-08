@@ -2,9 +2,10 @@
 format: md
 title: "设备已连接，为什么设备列表中未显示该设备"
 original_url: /docs/FAQ/faqs-deveco-testing/faqs-deveco-testing-faq/faqs-deveco-testing-faq-2
+upstream_id: FAQ/faqs-deveco-testing/faqs-deveco-testing-faq/faqs-deveco-testing-faq-2
+last_sync: 2026-06-07
+sync_hash: df6de9f6
 ---
-
-
 需满足以下条件，才能使用DevEco Testing识别设备并进行测试。
 
 1. 设备系统版本为HarmonyOS 5.0及以上。
@@ -14,4 +15,4 @@ original_url: /docs/FAQ/faqs-deveco-testing/faqs-deveco-testing-faq/faqs-deveco-
 
 **参考链接**
 
-[开发者选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode)
+[开发者选项](/docs/tools/coding-debug/ide-developer-mode)

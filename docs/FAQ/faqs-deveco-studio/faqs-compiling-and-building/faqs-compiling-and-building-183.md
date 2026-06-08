@@ -2,9 +2,10 @@
 format: md
 title: "执行命令卡在起daemon的日志上或编译报错“ReferenceError, TransformStream is not defined in hvigorfile: XXX”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-183
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-183
+last_sync: 2026-06-07
+sync_hash: 386b3ab7
 ---
-
-
 **问题现象**
 
 流水线或命令行中执行命令后在起daemon的日志上：

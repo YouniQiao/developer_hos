@@ -2,9 +2,10 @@
 title: "服务配额"
 original_url: /docs/dev/atomic-dev/atomic-device-security-development/atomic-devicesecurity-quota
 format: md
+upstream_id: dev/atomic-dev/atomic-device-security-development/atomic-devicesecurity-quota
+last_sync: 2026-06-07
+sync_hash: 677097cc
 ---
-
-
 | 功能 | 配额说明 |
 | --- | --- |
 | 应用设备状态检测（DeviceVerify） | API限额：默认情况下，每个应用每天最多可以调用10万次的DeviceVerify Rest接口请求。如果您的应用需要修改服务配额，请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)申请修改配额。 |

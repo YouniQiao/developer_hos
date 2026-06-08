@@ -2,9 +2,10 @@
 title: "证书CMS解封装"
 original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-cms-decapsulation-object
 format: md
+upstream_id: dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-cms-decapsulation-object
+last_sync: 2026-06-07
+sync_hash: 4662309d
 ---
-
-
 从API 22开始，支持证书CMS解封装。
 
 PKCS#7是用于存储签名或加密数据的标准语法。CMS作为PKCS#7的扩展，支持的数据类型包括数据、签名数据、封装数据、签名和封装数据、摘要数据以及加密数据。该标准常用于保护数据的完整性和机密性。

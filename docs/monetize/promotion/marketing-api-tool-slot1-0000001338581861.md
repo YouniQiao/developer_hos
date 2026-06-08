@@ -3,8 +3,10 @@ title: "查询版位"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-slot1-0000001338581861
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-slot1-0000001338581861
+last_sync: 2026-06-07
+sync_hash: 32caf426
 ---
-
 # 查询版位
 
 您通过本接口可以查询版位信息。

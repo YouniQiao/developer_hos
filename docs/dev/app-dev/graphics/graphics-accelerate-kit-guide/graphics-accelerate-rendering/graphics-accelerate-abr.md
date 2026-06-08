@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "ABR功能开发"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-rendering/graphics-accelerate-abr
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-rendering/graphics-accelerate-abr
+last_sync: 2026-06-07
+sync_hash: 5317dd7c
 ---
-
-
 ## 业务流程
 
 基于相机运动感知策略的ABR主要业务流程如下：

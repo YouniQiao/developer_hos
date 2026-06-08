@@ -3,9 +3,10 @@ title: "汇编调试"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-native-disassembly
 format: md
+upstream_id: tools/coding-debug/ide-debug-native-disassembly
+last_sync: 2026-06-07
+sync_hash: 6cd4ceec
 ---
-
-
 # 汇编调试
 
 DevEco Studio支持查看汇编和汇编代码调试，此外，当程序中断到没有源码的位置时（如step into到一个没有调试信息的函数中），DevEco Studio会打开汇编视图，让您了解程序当前停住的地址及对应的汇编代码。

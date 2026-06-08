@@ -1,8 +1,10 @@
 ---
 title: "FA模型应用程序包结构"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/application-package-structure-fa
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/application-package-structure-fa
+last_sync: 2026-06-07
+sync_hash: 134e11e5
 ---
-
 基于[FA模型](/docs/dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-overview-fa)开发的应用，其应用程序包结构如下图应用程序包结构（FA模型）所示。开发者需要熟悉应用程序包结构相关的基本概念。
 
 ![](./img/92bcad60.png)

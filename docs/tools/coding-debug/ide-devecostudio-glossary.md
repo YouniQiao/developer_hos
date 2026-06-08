@@ -3,9 +3,10 @@ title: "DevEco Profiler术语"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-devecostudio-glossary
 format: md
+upstream_id: tools/coding-debug/ide-devecostudio-glossary
+last_sync: 2026-06-07
+sync_hash: 2763b7b7
 ---
-
-
 # DevEco Profiler术语
 
 #### 异步栈缝合

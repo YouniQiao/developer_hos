@@ -2,9 +2,10 @@
 title: "自动续期订阅商品"
 original_url: /docs/dev/game-dev/games-center-promotion-renewal-0000002286076744
 format: md
+upstream_id: dev/game-dev/games-center-promotion-renewal-0000002286076744
+last_sync: 2026-06-07
+sync_hash: 654a87c0
 ---
-
-
 在HarmonyOS应用数字商品服务中，针对自动续期订阅商品，支持您设置三种订阅优惠类型：新用户促销、自定义人群促销、退订挽留促销。
 
 **新用户促销：**用户未享受过同一订阅组的新用户促销价时可享受，由您在商品管理后台设置促销价格，平台自动判断是否满足条件。

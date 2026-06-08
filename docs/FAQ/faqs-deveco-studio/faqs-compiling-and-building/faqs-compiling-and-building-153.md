@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“This project is in the FA model and does not allow for external dependencies.”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-153
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-153
+last_sync: 2026-06-07
+sync_hash: 1a758bba
 ---
-
-
 **错误描述**
 
 FA模型项目不得依赖外部项目模块。

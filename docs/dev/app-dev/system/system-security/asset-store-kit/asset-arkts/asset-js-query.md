@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "查询关键资产(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-query
 format: md
+upstream_id: dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-query
+last_sync: 2026-06-07
+sync_hash: 5e8b785f
+upstream_hash: 96c43ddc6df6
 ---
-
 
 ## 接口介绍
 

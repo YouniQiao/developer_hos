@@ -2,9 +2,10 @@
 title: "picker"
 original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-picker
 format: md
+upstream_id: dev/atomic-dev/ascf/components-form-components/components-picker
+last_sync: 2026-06-07
+sync_hash: 317db56e
 ---
-
-
 滚动选择器。选择器包括一个或多个不同值的可滚动列表。
 
 **起始版本：** 1.0.0

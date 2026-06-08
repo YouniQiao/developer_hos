@@ -3,9 +3,10 @@ title: "命令：意图命令&lt;IntentCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-intentcommand-0000002471235064
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-intentcommand-0000002471235064
+last_sync: 2026-06-07
+sync_hash: bd7f6da4
 ---
-
-
 # 命令：Intent命令&lt;IntentCommand&gt;
 
 ## 功能概述

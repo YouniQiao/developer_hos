@@ -2,8 +2,11 @@
 title: "典型应用场景"
 original_url: /docs/distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-appscenarios-0000002289533589
 format: md
+upstream_id: distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-appscenarios-0000002289533589
+last_sync: 2026-06-07
+sync_hash: b6b6015a
+upstream_hash: 0de0de37b3c9
 ---
-
 
 #### 检测应用兼容性问题
 

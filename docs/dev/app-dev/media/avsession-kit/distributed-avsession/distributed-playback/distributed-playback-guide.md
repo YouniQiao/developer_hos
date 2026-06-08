@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "投播开发指导"
 original_url: /docs/dev/app-dev/media/avsession-kit/distributed-avsession/distributed-playback/distributed-playback-guide
 format: md
+upstream_id: dev/app-dev/media/avsession-kit/distributed-avsession/distributed-playback/distributed-playback-guide
+last_sync: 2026-06-07
+sync_hash: 2a066215
+upstream_hash: 7878c6d072a2
 ---
-
 
 系统提供了音视频发声设备统一投播组件AVCastPicker，作为播控中心系统级设备切换、投播能力选择入口。应用通过接入统一投播组件，可以实现在应用内及系统播控中心，将音视频资源通过Cast+协议/DLNA协议投播到远端设备。
 

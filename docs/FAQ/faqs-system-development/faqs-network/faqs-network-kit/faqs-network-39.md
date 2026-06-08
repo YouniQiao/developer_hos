@@ -2,9 +2,10 @@
 format: md
 title: "按照Axios三方库的下载安装步骤安装Axios，报错404如何解决"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-39
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-39
+last_sync: 2026-06-07
+sync_hash: 78e02fcb
 ---
-
-
 **问题现象**
 
 按照Axios三方库的下载安装步骤安装Axios，执行命令npm install @ohos/axios --save报错，错误码为404。
@@ -25,4 +26,4 @@ original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/fa
    ohpm install @ohos/axios
    ```
 
-OHPM代理配置可参考[配置OHPM代理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-environment-config#section10372836765)
+OHPM代理配置可参考[配置OHPM代理](/docs/tools/coding-debug/ide-environment-config#section10372836765)

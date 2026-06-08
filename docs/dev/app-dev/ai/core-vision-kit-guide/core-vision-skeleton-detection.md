@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "骨骼点检测"
 original_url: /docs/dev/app-dev/ai/core-vision-kit-guide/core-vision-skeleton-detection
 format: md
+upstream_id: dev/app-dev/ai/core-vision-kit-guide/core-vision-skeleton-detection
+last_sync: 2026-06-07
+sync_hash: 10e58f92
 ---
-
-
 ## 适用场景
 
 人体骨骼关键点检测，主要检测人体的一些关键点，通过关键点描述人体骨骼信息。具体应用主要集中在智能视频监控，病人监护系统，人机交互，虚拟现实，人体动画，智能家居，智能安防，运动员辅助训练等等。

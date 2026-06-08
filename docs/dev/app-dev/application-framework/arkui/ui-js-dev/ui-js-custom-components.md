@@ -2,9 +2,10 @@
 title: "自定义组件"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-custom-components
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-custom-components
+last_sync: 2026-06-07
+sync_hash: 7d07f393
 ---
-
-
 使用兼容JS的类Web开发范式的方舟开发框架支持自定义组件，用户可根据业务需求将已有的组件进行扩展，增加自定义的私有属性和事件，封装成新的组件，方便在工程中多次调用，提高页面布局代码的可读性。具体的封装方法示例如下：
 
 * 构建自定义组件

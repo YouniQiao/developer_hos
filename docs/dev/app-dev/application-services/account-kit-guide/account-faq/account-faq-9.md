@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "OpenID和UnionID的格式说明"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-9
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-9
+last_sync: 2026-06-07
+sync_hash: b5c065ee
 ---
-
-
 ## 长度
 
 为减少开发者接入和迁移成本，Account Kit在2023年09月21日对OpenID、UnionID的长度做出了如下调整：

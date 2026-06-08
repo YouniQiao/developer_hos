@@ -3,8 +3,11 @@ title: "使用断点"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-arkts-breakpoint
 format: md
+upstream_id: tools/coding-debug/ide-debug-arkts-breakpoint
+last_sync: 2026-06-07
+sync_hash: 39d3fa44
+upstream_hash: 97750a6a3cbf
 ---
-
 
 # 使用断点
 

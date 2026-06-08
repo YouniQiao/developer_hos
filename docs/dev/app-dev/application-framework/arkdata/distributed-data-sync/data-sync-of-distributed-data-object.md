@@ -2,9 +2,10 @@
 title: "分布式数据对象跨设备数据同步 (ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/distributed-data-sync/data-sync-of-distributed-data-object
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/distributed-data-sync/data-sync-of-distributed-data-object
+last_sync: 2026-06-07
+sync_hash: b2521ee2
 ---
-
-
 ## 场景介绍
 
 传统方式下，设备之间的数据同步，需要开发者完成消息处理逻辑，包括：建立通信链接、消息收发处理、错误重试、数据冲突解决等操作，工作量非常大。而且设备越多，调试复杂度也将同步增加。

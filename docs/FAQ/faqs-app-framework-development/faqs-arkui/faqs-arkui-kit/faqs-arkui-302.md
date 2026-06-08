@@ -2,9 +2,10 @@
 title: "如何获取组件渲染完成时间"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-302
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-302
+last_sync: 2026-06-07
+sync_hash: 7cd0586a
 ---
-
-
 可以通过@kit.ArkUI.inspector(绘制完成回调) 接口获取绘制完成回调的通知。 创建ComponentObserver实例 ，注册draw事件监听 ，在aboutToAppear中记录开始时间，在listener中监听绘制完成的回调，获取绘制完成的时间。时间差即为组件渲染时间。示例代码如下：
 
 ```

@@ -2,9 +2,10 @@
 title: "测试屏幕朗读功能"
 original_url: /docs/dev/app-dev/application-framework/accessibility-kit/test-app-accessibility/test-screen-reader
 format: md
+upstream_id: dev/app-dev/application-framework/accessibility-kit/test-app-accessibility/test-screen-reader
+last_sync: 2026-06-07
+sync_hash: 4f248a19
 ---
-
-
 屏幕朗读可以使用户无需查看屏幕即可与设备进行互动，视障用户在使用设备时可能需要依赖屏幕朗读来获取更便捷的操作体验。
 
 在完成屏幕朗读相关开发后，可以按照如下方式来进行功能验证。

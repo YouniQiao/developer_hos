@@ -2,9 +2,10 @@
 title: "查看元服务关键指标"
 original_url: /docs/distribute/agc/agc-help-anaiyze-atomic-0000002236332568/agc-help-anaiyze-atomic-keyindex-0000002236492396
 format: md
+upstream_id: distribute/agc/agc-help-anaiyze-atomic-0000002236332568/agc-help-anaiyze-atomic-keyindex-0000002236492396
+last_sync: 2026-06-07
+sync_hash: 1906f720
 ---
-
-
 [元服务分析总览](#section106851042192815)为您提供元服务的分析总览数据；[元服务分析概览](#section17943125854315)提供单个元服务的关键KPI指标概览。
 
 #### 元服务分析总览

@@ -3,8 +3,10 @@ title: "跨设备拖拽"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-distribute-drag-cast
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-distribute-drag-cast
+last_sync: 2026-06-07
+sync_hash: be6f3cf3
 ---
-
 # 跨设备拖拽
 
 跨端拖拽提供跨设备的键鼠共享能力，支持在平板或2in1类型的任意两台设备之间拖拽文本、图片、视频、PDF文档等文件。

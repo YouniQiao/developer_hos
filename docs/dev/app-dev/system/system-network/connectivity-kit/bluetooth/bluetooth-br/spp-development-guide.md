@@ -2,8 +2,11 @@
 title: "连接和传输数据"
 original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-br/spp-development-guide
 format: md
+upstream_id: dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-br/spp-development-guide
+last_sync: 2026-06-07
+sync_hash: 0d16c973
+upstream_hash: 26c9baad5d2f
 ---
-
 
 ## 简介
 

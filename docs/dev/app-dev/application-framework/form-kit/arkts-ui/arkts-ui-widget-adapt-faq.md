@@ -2,9 +2,10 @@
 title: "ArkTS卡片适配常见问题"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-adapt-faq
 format: md
+upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-adapt-faq
+last_sync: 2026-06-07
+sync_hash: 3534f29a
 ---
-
-
 ## ArkTS卡片开发是否支持V2装饰器？如何从V1到V2迁移？
 
 ArkTS卡片开发支持V2装饰器语法(如[@ObservedV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)、[@ComponentV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-custom-components/arkts-create-custom-components#componentv2))，建议开发者使用V2装饰器替代V1语法进行状态管理，以获得更优的组件渲染性能和状态同步能力。

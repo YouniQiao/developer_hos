@@ -2,9 +2,10 @@
 title: "业务场景设置"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide/networkboost-netmultipath-setscenedesc
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide/networkboost-netmultipath-setscenedesc
+last_sync: 2026-06-07
+sync_hash: ad8dfc0a
 ---
-
-
 ## 场景介绍
 
 应用在请求多网并发之前，通过设置业务场景，可以帮助系统进行多网并发管控和业务时长分析。

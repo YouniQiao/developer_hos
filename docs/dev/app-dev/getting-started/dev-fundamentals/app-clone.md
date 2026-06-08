@@ -1,8 +1,10 @@
 ---
 title: "创建应用分身"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/app-clone
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/app-clone
+last_sync: 2026-06-07
+sync_hash: 6ed9b2f3
 ---
-
 应用分身能在一个设备上安装多个相同的应用，实现多个账号同时登录并独立运行。主要应用场景有社交账号双开、游戏大小号双开等，无需账号切换，从而省去频繁登录的繁琐。
 
 创建应用分身之后，桌面上会出现多个相同图标的应用，其中带有下角标的应用图标表示分身应用。

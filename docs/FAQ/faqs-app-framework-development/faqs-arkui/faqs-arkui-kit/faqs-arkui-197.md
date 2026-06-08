@@ -2,9 +2,10 @@
 format: md
 title: "如何监听窗口大小的变化"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-197
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-197
+last_sync: 2026-06-07
+sync_hash: d810002d
 ---
-
-
 **问题现象**
 
 监听窗口大小的变化。

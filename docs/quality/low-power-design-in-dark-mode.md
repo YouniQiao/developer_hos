@@ -1,8 +1,10 @@
 ---
 title: "省电和深色模式下低功耗设计"
 original_url: /docs/quality/low-power-design-in-dark-mode
+upstream_id: /docs/quality/low-power-design-in-dark-mode
+last_sync: 2026-06-07
+sync_hash: fb450953
 ---
-
 # 省电和深色模式下低功耗设计
 
 ## 概述
@@ -47,7 +49,7 @@ DevEco Profiler 应用调优工具（以下简称 Profiler）已内置在 DevEco
 4. 进行应用程序操作：在设备上进行应用程序操作，如浏览网页、播放视频等。
 5. 查看结果：右侧区域展示时间窗内Energy资源的实时使用情况。将鼠标悬浮在统计图的任意位置，打开时间标线，左右移动鼠标，结合时间轴查看不同时间点的实时信息。
 
-Profiler耗电量示意图如下所示，详细信息及使用可参考[实时监控](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/realtime-monitor)。
+Profiler耗电量示意图如下所示，详细信息及使用可参考[实时监控](/docs/tools/coding-debug/realtime-monitor)。
 
 **图2** ProfilerEnergy模块示意图
 ![](./img/f03c2420.png "点击放大")

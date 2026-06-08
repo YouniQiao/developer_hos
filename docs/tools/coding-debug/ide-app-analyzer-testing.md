@@ -3,9 +3,10 @@ title: "导入DevEco Testing的检测报告进行诊断"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-app-analyzer-testing
 format: md
+upstream_id: tools/coding-debug/ide-app-analyzer-testing
+last_sync: 2026-06-07
+sync_hash: e5132691
 ---
-
-
 # 导入DevEco Testing的检测报告进行诊断
 
 从DevEco Studio 6.0.0 Beta3版本开始，支持在DevEco Testing中进行性能相关测试生成检测报告后，导入到AppAnalyzer进行诊断和分析，获得可能的故障原因并生成体检报告。

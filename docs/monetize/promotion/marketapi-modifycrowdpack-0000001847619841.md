@@ -3,8 +3,10 @@ title: "文件人群修改"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modifycrowdpack-0000001847619841
 format: md
+upstream_id: monetize/promotion/marketapi-modifycrowdpack-0000001847619841
+last_sync: 2026-06-07
+sync_hash: 6354501a
 ---
-
 # 文件人群修改
 
 ## 功能介绍

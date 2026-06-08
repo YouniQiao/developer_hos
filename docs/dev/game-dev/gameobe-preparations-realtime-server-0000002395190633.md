@@ -2,9 +2,10 @@
 title: "准备工作"
 original_url: /docs/dev/game-dev/gameobe-preparations-realtime-server-0000002395190633
 format: md
+upstream_id: dev/game-dev/gameobe-preparations-realtime-server-0000002395190633
+last_sync: 2026-06-07
+sync_hash: dd7f6e4e
 ---
-
-
 联机对战服务提供了实时服务器SDK，可用于服务端代码的开发。
 
 ![](./img/2154995e.png)

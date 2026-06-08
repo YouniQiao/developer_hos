@@ -2,8 +2,10 @@
 title: "智能体分类"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/developing-intelligent-agents-0000002435989592/differences-in-arrangement-modes-0000002471344117
+upstream_id: distribute/xiaoyi/developing-intelligent-agents-0000002435989592/differences-in-arrangement-modes-0000002471344117
+last_sync: 2026-06-07
+sync_hash: 50ab30b8
 ---
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # 智能体分类

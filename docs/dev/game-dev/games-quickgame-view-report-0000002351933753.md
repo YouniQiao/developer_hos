@@ -2,9 +2,10 @@
 title: "报表分析"
 original_url: /docs/dev/game-dev/games-quickgame-view-report-0000002351933753
 format: md
+upstream_id: dev/game-dev/games-quickgame-view-report-0000002351933753
+last_sync: 2026-06-07
+sync_hash: 4e093a9b
 ---
-
-
 ## 快游戏用户报表
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)。

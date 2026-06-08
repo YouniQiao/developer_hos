@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "分享文本"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios/share-utd-text
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/system-share/share-service-scenarios/share-utd-text
+last_sync: 2026-06-07
+sync_hash: f68c9650
 ---
-
-
 纯文本类型分享支持将一段文字分享到目标设备/目标应用。
 
 * 目标设备接收时，文本会转化为.txt文件保存在文件管理中。

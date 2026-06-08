@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "支付成功后没有收到回调？"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-6
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-6
+last_sync: 2026-06-07
+sync_hash: eb0ac1bf
 ---
-
-
 * 检查预下单传入的callbackUrl接口地址是否有效。
 * 检查服务器是否有允许清单等网络限制。
 * 加密套件不一致，目前华为支付支持的加密套件如下：

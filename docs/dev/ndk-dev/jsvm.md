@@ -2,9 +2,10 @@
 title: "使用JSVM-API实现JS与C/C++语言交互"
 original_url: /docs/dev/ndk-dev/jsvm
 format: md
+upstream_id: dev/ndk-dev/jsvm
+last_sync: 2026-06-07
+sync_hash: 22ca484f
 ---
-
-
 * **[JSVM-API简介](/docs/dev/ndk-dev/jsvm-introduction)**
 * **[JSVM-API 支持的数据类型和接口](/docs/dev/ndk-dev/jsvm-data-types-interfaces)**
 * **[使用JSVM-API实现JS与C/C++语言交互开发流程](/docs/dev/ndk-dev/use-jsvm-process)**

@@ -3,8 +3,10 @@ title: 数字加减
 sidebar_label: 数字加减
 original_url: /docs/design/components/input-components/counter
 format: md
+upstream_id: design/components/input-components/counter
+last_sync: 2026-06-07
+sync_hash: f7583530
 ---
-
 # 数字加减
 
 数字加减控件是一种常见的输入控件,用于在移动端应用中输入或调整数值。开发能力相关可参考 [Advance.Counter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-counter) 和 [Counter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-counter) 文档。

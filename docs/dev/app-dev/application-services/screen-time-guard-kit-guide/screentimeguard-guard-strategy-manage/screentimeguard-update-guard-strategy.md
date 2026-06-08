@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "修改策略"
 original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-guard-strategy-manage/screentimeguard-update-guard-strategy
 format: md
+upstream_id: dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-guard-strategy-manage/screentimeguard-update-guard-strategy
+last_sync: 2026-06-07
+sync_hash: 0dd143ce
+upstream_hash: 74bcced043af
 ---
-
 
 ## 场景介绍
 

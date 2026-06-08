@@ -2,9 +2,10 @@
 title: "ArkData术语"
 original_url: /docs/dev/app-dev/application-framework/arkdata/data-terminology
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/data-terminology
+last_sync: 2026-06-07
+sync_hash: 86721e97
 ---
-
-
 ## WAL模式
 
 WAL（Write Ahead Log）模式是SQLite日志模式中的一种，区别于传统的rollback journal（回滚日志）模式，用于提升并发性能和写入效率。

@@ -2,9 +2,10 @@
 title: "剪贴板"
 original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-clipboard
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-device/apis-clipboard
+last_sync: 2026-06-07
+sync_hash: 67d25e07
 ---
-
-
 ## has.setClipboardData
 
 has.setClipboardData(Object object)

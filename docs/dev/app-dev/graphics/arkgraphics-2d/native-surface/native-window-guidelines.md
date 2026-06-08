@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "NativeWindow开发指导 (C/C++)"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/native-surface/native-window-guidelines
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/native-surface/native-window-guidelines
+last_sync: 2026-06-07
+sync_hash: de51039c
 ---
-
-
 ## 场景介绍
 
 NativeWindow是**本地平台化窗口**，表示图形队列的生产者端。开发者可以通过NativeWindow接口进行申请和提交Buffer，配置Buffer属性信息。

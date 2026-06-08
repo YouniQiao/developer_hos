@@ -2,8 +2,11 @@
 title: "使用HTTP访问网络"
 original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/http-request
 format: md
+upstream_id: dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/http-request
+last_sync: 2026-06-07
+sync_hash: a1d56836
+upstream_hash: 22b69801a54d
 ---
-
 
 ## 场景介绍
 

@@ -3,8 +3,10 @@ title: "协作者管理"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-start-service-provider-collab-manage-0000001379837549
 format: md
+upstream_id: monetize/promotion/bpos-start-service-provider-collab-manage-0000001379837549
+last_sync: 2026-06-07
+sync_hash: a08275f4
 ---
-
 # 协作者管理
 
 ## 概述

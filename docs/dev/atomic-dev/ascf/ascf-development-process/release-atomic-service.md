@@ -2,13 +2,14 @@
 title: "发布元服务"
 original_url: /docs/dev/atomic-dev/ascf/ascf-development-process/release-atomic-service
 format: md
+upstream_id: dev/atomic-dev/ascf/ascf-development-process/release-atomic-service
+last_sync: 2026-06-07
+sync_hash: 7093f892
 ---
-
-
 发布元服务的基本流程如下：
 
 1. 了解[元服务审核指南](https://developer.huawei.com/consumer/cn/doc/distribution/app/50129)的要求，并完成发布前自检。
-2. [打包发布版本](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app)。
+2. [打包发布版本](/docs/tools/coding-debug/ide-publish-app)。
 3. （可选）在正式发布元服务前，您可以发布一个[邀请测试](https://developer.huawei.com/consumer/cn/doc/app/agc-help-invite-test-0000002270829393)版本，邀请部分用户提前体验新版本，并收集用户的反馈，以便提前发现问题进行改进，从而保证全网版本的质量，提升用户体验。
 4. 完成[元服务备案](/docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing)。
 5. [发布元服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-atomic-0000002327731065)。
@@ -45,14 +46,14 @@ format: md
 
 ## 如何构建发布包
 
-发布包需要使用[release签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app#section793484619307)，创建好签名后修改build-profile.json5中“app.signingConfigs”，增加name为release的签名。
+发布包需要使用[release签名](/docs/tools/coding-debug/ide-publish-app#section793484619307)，创建好签名后修改build-profile.json5中“app.signingConfigs”，增加name为release的签名。
 
 在IDE中构建发布包：
 
 1. 点击工具链设置按钮，设置“Build Mode”为“release”。
 
    ![](./img/ecb452d2.png "点击放大")
-2. 选择Build&gt;Build Hap(s)/APP(s)&gt;Build APP(s)，构建发布包。构建后结果位于build目录下，参考[发布应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app#section97874500234)指导完成发布。
+2. 选择Build&gt;Build Hap(s)/APP(s)&gt;Build APP(s)，构建发布包。构建后结果位于build目录下，参考[发布应用](/docs/tools/coding-debug/ide-publish-app#section97874500234)指导完成发布。
 
    ![](./img/8a6c70a7.png "点击放大")
 

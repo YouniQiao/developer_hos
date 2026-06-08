@@ -2,9 +2,10 @@
 title: "查询星闪开关状态"
 original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-getstate
 format: md
+upstream_id: dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-getstate
+last_sync: 2026-06-07
+sync_hash: 2dc00897
 ---
-
-
 ## 场景介绍
 
 使用星闪前需要在设置应用里手动打开星闪。可以通过主动查询或订阅通知方式获取星闪状态，星闪状态变化为STATE\_ON时可以进行相应的业务流程。

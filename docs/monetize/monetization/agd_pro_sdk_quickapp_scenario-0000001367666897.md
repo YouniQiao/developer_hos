@@ -3,10 +3,10 @@ title: "典型应用场景"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_quickapp_scenario-0000001367666897
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_quickapp_scenario-0000001367666897
+last_sync: 2026-06-07
+sync_hash: 41ac76d2
 ---
-
-
-
 快应用接入AGD Pro服务的SDK方式大致如下：
 
 1. 将SDK集成到快应用引擎中。

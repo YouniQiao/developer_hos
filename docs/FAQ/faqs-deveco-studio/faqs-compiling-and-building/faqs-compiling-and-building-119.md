@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“The useNormalizedOHMUrl settings of packages xxx and the project useNormalizedOHMUrl: xxx do not match”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-119
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-119
+last_sync: 2026-06-07
+sync_hash: 1c914b9b
 ---
-
-
 **问题现象**
 
 编译时出现错误：“packages xxx的useNormalizedOHMUrl设置与项目useNormalizedOHMUrl: xxx不匹配”。
@@ -49,4 +50,4 @@ useNormalizedOHMUrl为true的时候ohmurl使用的是新的拼接和解析方式
 
 **参考链接**
 
-[模块级build-profile.json5文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile)
+[模块级build-profile.json5文件](/docs/tools/coding-debug/ide-hvigor-build-profile)

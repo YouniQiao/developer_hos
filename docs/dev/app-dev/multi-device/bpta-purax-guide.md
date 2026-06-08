@@ -3,8 +3,10 @@ title: "阔折叠应用开发"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-purax-guide
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-purax-guide
+last_sync: 2026-06-07
+sync_hash: 65320714
 ---
-
 # 阔折叠应用开发
 
 ## 概述

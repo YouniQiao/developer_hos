@@ -3,9 +3,10 @@ title: "案例：ArkTS内存泄漏分析"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-arkts-memory-leak-analysis
 format: md
+upstream_id: tools/coding-debug/ide-arkts-memory-leak-analysis
+last_sync: 2026-06-07
+sync_hash: 6b67b0e4
 ---
-
-
 # 案例：ArkTS内存泄漏分析
 
 本案例介绍如何判断应用存在ArkTS泄漏，以及如何通过快照对比找出ArkTS内存泄漏的原因。

@@ -1,8 +1,10 @@
 ---
 title: "应用时延优化"
 original_url: /docs/quality/application-latency-optimization-cases
+upstream_id: /docs/quality/application-latency-optimization-cases
+last_sync: 2026-06-07
+sync_hash: 9d43decf
 ---
-
 # 应用时延优化
 
 ## 应用时延概述

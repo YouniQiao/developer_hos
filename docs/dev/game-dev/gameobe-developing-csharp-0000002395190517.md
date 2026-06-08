@@ -2,9 +2,10 @@
 title: "C# SDK使用指导"
 original_url: /docs/dev/game-dev/gameobe-developing-csharp-0000002395190517
 format: md
+upstream_id: dev/game-dev/gameobe-developing-csharp-0000002395190517
+last_sync: 2026-06-07
+sync_hash: e99c1930
 ---
-
-
 * **[接口调用流程](/docs/dev/game-dev/gameobe-flowchart-overview-csharp-0000002361670476)**
 * **[集成SDK](/docs/dev/game-dev/gameobe-integratingsdk-csharp-0000002395350421)**
 * **[初始化SDK](/docs/dev/game-dev/gameobe-initializing-csharp-0000002361510612)**

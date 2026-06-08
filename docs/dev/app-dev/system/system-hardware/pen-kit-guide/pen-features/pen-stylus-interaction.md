@@ -2,9 +2,10 @@
 title: "接入手写交互"
 original_url: /docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-features/pen-stylus-interaction
 format: md
+upstream_id: dev/app-dev/system/system-hardware/pen-kit-guide/pen-features/pen-stylus-interaction
+last_sync: 2026-06-07
+sync_hash: c052e805
 ---
-
-
 接入手写交互功能，对于需要接入支持双击/轻捏功能的手写笔的第三方应用，可以通过调用下面相应接口来监听手写笔双击/轻捏事件，从而触发自身应用内部回调，来执行指定操作。
 
 ## 接口说明

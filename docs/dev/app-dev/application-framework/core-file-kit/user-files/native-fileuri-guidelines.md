@@ -2,9 +2,10 @@
 title: "FileUri开发指导(C/C++)"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/user-files/native-fileuri-guidelines
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/user-files/native-fileuri-guidelines
+last_sync: 2026-06-07
+sync_hash: ccadd688
 ---
-
-
 ## 场景介绍
 
 FileUri提供了关于文件URI的基本操作，将URI转换成对应的沙箱路径、将应用沙箱路径转换成对应应用自己的URI、获取URI所在目录路径的URI等接口能力，方便应用对文件分享业务中URI的访问。

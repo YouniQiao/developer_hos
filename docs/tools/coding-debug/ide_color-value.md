@@ -3,9 +3,10 @@ title: "@cross-device-app-dev/color-value"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_color-value
 format: md
+upstream_id: tools/coding-debug/ide_color-value
+last_sync: 2026-06-07
+sync_hash: 795467b2
 ---
-
-
 # @cross-device-app-dev/color-value
 
 颜色值应当使用“$r”从color.json中引用，以适配不同的系统颜色模式，禁止使用固定的值。

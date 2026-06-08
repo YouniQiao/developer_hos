@@ -2,8 +2,11 @@
 title: "ContentSlot：混合开发"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-contentslot
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-contentslot
+last_sync: 2026-06-07
+sync_hash: 678f44e0
+upstream_hash: 85e7cb1c0f50
 ---
-
 
 用于渲染并管理Native层使用C-API创建的组件。
 

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "分布式设备管理开发指南"
 original_url: /docs/dev/app-dev/system/system-network/distributed-service-kit/devicemanager-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-network/distributed-service-kit/devicemanager-guidelines
+last_sync: 2026-06-07
+sync_hash: 0bfe60a5
 ---
-
-
 ## 分布式设备管理简介
 
 随着用户不同种类的终端设备数量不断增多，将不同设备作为本端设备能力的扩展，使设备之间协同合作完成各种复杂场景即为设备的分布式业务。

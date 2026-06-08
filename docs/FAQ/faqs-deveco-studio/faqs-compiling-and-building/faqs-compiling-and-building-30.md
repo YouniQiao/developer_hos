@@ -2,9 +2,10 @@
 format: md
 title: "工程编译告警提示“ArkTS:WARN: For details about ArkTS syntax errors”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-30
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-30
+last_sync: 2026-06-07
+sync_hash: b3e23c1e
 ---
-
-
 **问题现象**
 
 工程构建时，出现ArkTS语法告警提示，详情请参见FAQ。

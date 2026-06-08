@@ -3,9 +3,10 @@ title: "节点数超过500过多"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-render-node-limit-0430
 format: md
+upstream_id: tools/coding-debug/ide-render-node-limit-0430
+last_sync: 2026-06-07
+sync_hash: bfa53346
 ---
-
-
 # 节点数超过500过多
 
 如果使用DevEco Studio 6.0.1 Beta1以下版本，规则名称为：图形渲染服务处理节点数小于500。

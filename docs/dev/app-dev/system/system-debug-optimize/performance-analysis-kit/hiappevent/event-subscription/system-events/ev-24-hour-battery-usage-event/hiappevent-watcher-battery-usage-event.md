@@ -2,9 +2,10 @@
 title: "24h功耗器件分解统计事件介绍"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/ev-24-hour-battery-usage-event/hiappevent-watcher-battery-usage-event
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/ev-24-hour-battery-usage-event/hiappevent-watcher-battery-usage-event
+last_sync: 2026-06-07
+sync_hash: 51a30ed2
 ---
-
-
 ## 简介
 
 24h功耗器件分解统计事件用于统计应用在一天内的耗电统计信息，包含前后台使用时长以及耗电分解信息，每日0点统计应用耗电数据并上报。
@@ -15,7 +16,7 @@ format: md
 
 ![](./img/8dd5ea73.png)
 
-24h功耗器件分解统计事件不支持在[应用分身场景](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)或[元服务场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-create-faproject)使用HiAppEvent进行订阅，从API version 22开始支持在[输入法应用场景](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)下使用HiAppEvent进行订阅。
+24h功耗器件分解统计事件不支持在[应用分身场景](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)或[元服务场景](/docs/tools/end-cloud/agc-harmonyos-create-faproject)使用HiAppEvent进行订阅，从API version 22开始支持在[输入法应用场景](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)下使用HiAppEvent进行订阅。
 
 ## 检测原理
 

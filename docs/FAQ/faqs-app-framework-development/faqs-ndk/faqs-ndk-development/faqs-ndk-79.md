@@ -2,9 +2,10 @@
 title: "C侧如何打开文件"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-79
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-79
+last_sync: 2026-06-07
+sync_hash: e86519bc
 ---
-
-
 目前手机上不支持在C侧打开公共路径，仅支持在ArkTS侧打开后获取文件描述符（fd），再将fd传递到C侧进行打开。参考如下：
 
 1. 将公共路径的图片转存到沙箱目录：

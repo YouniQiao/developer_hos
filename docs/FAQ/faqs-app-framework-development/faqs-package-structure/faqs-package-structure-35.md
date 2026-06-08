@@ -2,8 +2,11 @@
 format: md
 title: "如何将多工程的HAP打包成一个App"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-35
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-35
+last_sync: 2026-06-07
+sync_hash: 11b49259
+upstream_hash: c22822569b29
 ---
-
 
 1. 分别对不同工程的模块进行打包，执行DevEco Studio中的Build Hap指令。在outputs文件夹下获取未签名的hap包和pack.info文件。
 2. 合并所有模块的pack.info文件，生成app级别的pack.info文件，格式如下。

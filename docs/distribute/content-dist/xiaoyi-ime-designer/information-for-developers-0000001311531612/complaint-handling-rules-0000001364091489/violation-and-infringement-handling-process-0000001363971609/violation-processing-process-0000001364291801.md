@@ -3,9 +3,10 @@ title: "违规处理流程"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/xiaoyi-ime-designer/information-for-developers-0000001311531612/complaint-handling-rules-0000001364091489/violation-and-infringement-handling-process-0000001363971609/violation-processing-process-0000001364291801
 format: md
+upstream_id: distribute/content-dist/xiaoyi-ime-designer/information-for-developers-0000001311531612/complaint-handling-rules-0000001364091489/violation-and-infringement-handling-process-0000001363971609/violation-processing-process-0000001364291801
+last_sync: 2026-06-07
+sync_hash: 879e79ef
 ---
-
-
 # 违规处理流程
 
 ![](./img/6aafafa3ff31.png)

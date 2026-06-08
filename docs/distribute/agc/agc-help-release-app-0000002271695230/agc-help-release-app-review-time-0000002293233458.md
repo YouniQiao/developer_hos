@@ -2,9 +2,10 @@
 title: "设置上架时间"
 original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-review-time-0000002293233458
 format: md
+upstream_id: distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-review-time-0000002293233458
+last_sync: 2026-06-07
+sync_hash: 29c67f04
 ---
-
-
 #### 设置上架时间
 
 您可以选择让应用审核通过后立即上架，也可以指定一个特定时间上架。

@@ -3,8 +3,10 @@ title: 菜单
 sidebar_label: 菜单
 original_url: /docs/design/components/control-components/menu
 format: md
+upstream_id: design/components/control-components/menu
+last_sync: 2026-06-07
+sync_hash: e8105f13
 ---
-
 # 菜单
 
 一种临时性弹出窗口，用于展示用户可执行的操作。开发相关描述请参考 [Menu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-menu) 文档。

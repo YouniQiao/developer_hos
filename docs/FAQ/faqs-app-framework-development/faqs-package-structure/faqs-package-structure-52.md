@@ -2,9 +2,10 @@
 title: "如何查询应用包的名称、供应商、版本号、版本文本、安装时间、更新时间等信息"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-52
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-52
+last_sync: 2026-06-07
+sync_hash: 2b43afee
 ---
-
-
 首先，通过 bundleManager.getBundleInfoForSelf() 接口获取应用包的名称、供应商、版本号、版本文本、安装时间和更新时间。具体可参考示例代码：
 
 ```

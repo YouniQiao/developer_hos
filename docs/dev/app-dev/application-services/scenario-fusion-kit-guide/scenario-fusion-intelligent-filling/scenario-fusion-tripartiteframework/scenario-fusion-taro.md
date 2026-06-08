@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Taro框架+H5接入智能填充"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-tripartiteframework/scenario-fusion-taro
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-tripartiteframework/scenario-fusion-taro
+last_sync: 2026-06-07
+sync_hash: a69a8e2e
 ---
-
-
 ![](./img/c5eb342b.png)
 
 目前仅支持已适配HarmonyOS的三方框架应用使用。

@@ -2,9 +2,10 @@
 title: "GPM技术支持"
 original_url: /docs/dev/game-dev/games-gpm-technical-support-0000002332867033
 format: md
+upstream_id: dev/game-dev/games-gpm-technical-support-0000002332867033
+last_sync: 2026-06-07
+sync_hash: 9fdea4cf
 ---
-
-
 当您接入游戏性能管理服务遇到问题时，可以按照以下顺序寻求帮助。
 
 1. 请先仔细阅读文档，部分功能对设备和系统有限制，请参见[使用限制](/docs/dev/game-dev/games-gpm-usage-restrictions-0000002298787836#ZH-CN_TOPIC_0000002348293636)。

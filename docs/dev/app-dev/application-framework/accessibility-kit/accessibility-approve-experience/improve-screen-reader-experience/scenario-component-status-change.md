@@ -2,9 +2,10 @@
 title: "控件状态变化场景"
 original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-component-status-change
 format: md
+upstream_id: dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/scenario-component-status-change
+last_sync: 2026-06-07
+sync_hash: ba193afd
 ---
-
-
 ## 开发实例
 
 例如下图，播放暂停按钮对应着两种状态，在状态切换时需要实时变化对应的标注信息。

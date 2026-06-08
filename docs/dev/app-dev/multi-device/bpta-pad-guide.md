@@ -3,8 +3,10 @@ title: "平板应用开发"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-pad-guide
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-pad-guide
+last_sync: 2026-06-07
+sync_hash: d25f9422
 ---
-
 # 平板应用开发
 
 ## 概述
@@ -65,7 +67,7 @@ MatePad Pro 13.2英寸 2025、MatePad Pro 12.2英寸 2025、MatePad Air 12英寸
 
 ###相机硬件信息
 
-平板相机有默认的[相机镜头安装角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#相机镜头安装角度)，在使用时需要考虑镜头角度和设备的旋转角度，具体定义可参考[预览旋转角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#预览旋转角度)。平板相机前置和后置镜头角度和需要设置的预览流旋转角度如下。
+平板相机有默认的[相机镜头安装角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#相机镜头安装角度)，在使用时需要考虑镜头角度和设备的旋转角度，具体定义可参考[预览旋转角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#预览旋转角度)。平板相机前置和后置镜头角度和需要设置的预览流旋转角度如下。
 
 |  |  |  |  |  |
 | --- | --- | --- | --- | --- |

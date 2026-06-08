@@ -2,9 +2,10 @@
 format: md
 title: "Tabs如何实现预加载特定的TabContent页"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-473
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-473
+last_sync: 2026-06-07
+sync_hash: efb7d751
 ---
-
-
 方案一：不论用ForEach还是LazyForEach循环渲染TabContent里面的内容都是一次渲染，故不能使用循环渲染。
 
 由于Tabs组件自带滑动切换页面动画，所以在点击TabBar切换页面时会从当前页面滑动到目标页面，导致当前页面和目标页面的中间页面也被加载。可以使用自定义切换动画去规避Tabs组件自带的动画导致多个TabContent加载的问题。参考customContentTransition使用说明。

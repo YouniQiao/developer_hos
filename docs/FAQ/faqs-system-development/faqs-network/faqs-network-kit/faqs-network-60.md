@@ -2,9 +2,10 @@
 title: "如何解决网络连接状态变化的公共事件返回内容为'NetType':1的问题"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-60
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-60
+last_sync: 2026-06-07
+sync_hash: 53d83a9a
 ---
-
-
 返回"NetType":1枚举值表示为NET\_CONN\_STATE\_IDLE网络空闲状态。
 
 如果是监听网络变化，建议使用@ohos.net.connection的能力，请参考[@ohos.net.connection (网络连接管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection)。

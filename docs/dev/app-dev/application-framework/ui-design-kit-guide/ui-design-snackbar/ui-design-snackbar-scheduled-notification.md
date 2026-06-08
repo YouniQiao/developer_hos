@@ -2,9 +2,10 @@
 title: "设置定时通知弹窗"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-snackbar/ui-design-snackbar-scheduled-notification
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-snackbar/ui-design-snackbar-scheduled-notification
+last_sync: 2026-06-07
+sync_hash: 3d5981e0
 ---
-
-
 ## 场景介绍
 
 从6.0.0(20)版本开始，新增支持设置定时通知弹窗。

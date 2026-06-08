@@ -2,9 +2,10 @@
 format: md
 title: "CPP编译报错“A 'undefined symbol' error has occurred”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-116
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-116
+last_sync: 2026-06-07
+sync_hash: 25dfd227
 ---
-
-
 **问题现象**
 
 在编译HarmonyOS C++ 项目时，报错提示“A 'undefined symbol' error has occurred”。

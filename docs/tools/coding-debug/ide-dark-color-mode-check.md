@@ -3,9 +3,10 @@ title: "@performance/dark-color-mode-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-dark-color-mode-check
 format: md
+upstream_id: tools/coding-debug/ide-dark-color-mode-check
+last_sync: 2026-06-07
+sync_hash: 0fc9c7dd
 ---
-
-
 # @performance/dark-color-mode-check
 
 通过启用深色模式，可以进一步实现能耗的降低。应用需要根据当前设备状态来适配深色模式。

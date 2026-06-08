@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Vision Kit（场景化视觉服务）"
 original_url: /docs/dev/app-dev/ai/vision-kit-guide
 format: md
+upstream_id: dev/app-dev/ai/vision-kit-guide
+last_sync: 2026-06-07
+sync_hash: 6c6ca1b6
 ---
-
-
 * **[Vision Kit简介](/docs/dev/app-dev/ai/vision-kit-guide/vision-introduction)**
 * **[人脸活体检测](/docs/dev/app-dev/ai/vision-kit-guide/vision-interactiveliveness)**
 * **[卡证识别](/docs/dev/app-dev/ai/vision-kit-guide/vision-cardrecognition)**

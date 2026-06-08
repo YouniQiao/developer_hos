@@ -2,9 +2,10 @@
 format: md
 title: "如何判断当前设备是手机还是折叠屏手机"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-340
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-340
+last_sync: 2026-06-07
+sync_hash: 91b3d079
 ---
-
-
 * 页面布局类问题：
 
   页面布局应基于窗口形态（如折叠态/展开态）、宽度和高宽比等动态属性，而非静态设备类型。例如折叠屏设备的折叠态窗口应使用与普通手机相同的布局规则，Mate X5展开态单独设计一套布局。详情可参考[断点](/docs/dev/app-dev/multi-device/bpta-multi-device-responsive-layout#section1532120147301)的使用。

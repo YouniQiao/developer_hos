@@ -3,8 +3,10 @@ title: "华为智能运营服务协议"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x20240513/Intelligentoperation
 format: md
+upstream_id: distribute/app-dist/app-market/x20240513/Intelligentoperation
+last_sync: 2026-06-07
+sync_hash: 34bb8c83
 ---
-
 # 华为智能运营服务协议
 
 点击下载[华为智能运营服务协议](https://terms1.hicloud.com/agreementservice/developer/getAgreementTemplate?agrType=1179&country=cn&language=zh_cn&version=2021092201)。

@@ -2,9 +2,10 @@
 title: "后台软件资源使用"
 original_url: /docs/experience-suggestions/power/background/standard-background-software
 format: md
+upstream_id: experience-suggestions/power/background/standard-background-software
+last_sync: 2026-06-07
+sync_hash: c74a55a8
 ---
-
-
 # 后台软件资源使用
 
 ### 后台上传下载合理使用

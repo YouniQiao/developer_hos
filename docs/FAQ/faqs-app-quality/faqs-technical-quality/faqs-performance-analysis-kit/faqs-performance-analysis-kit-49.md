@@ -2,9 +2,10 @@
 format: md
 title: "如何通过HDC命令截屏/获取相册"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-49
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-49
+last_sync: 2026-06-07
+sync_hash: 0ebbc14b
 ---
-
-
 1. 截屏功能：
 
    ```

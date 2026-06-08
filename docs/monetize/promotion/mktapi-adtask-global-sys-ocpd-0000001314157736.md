@@ -3,8 +3,10 @@ title: "全域推荐-系统投放-OCPD任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/mktapi-adtask-global-sys-ocpd-0000001314157736
 format: md
+upstream_id: monetize/promotion/mktapi-adtask-global-sys-ocpd-0000001314157736
+last_sync: 2026-06-07
+sync_hash: 51b99b3b
 ---
-
 # 全域推荐-系统投放-OCPD任务
 
 ## 功能介绍

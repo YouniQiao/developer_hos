@@ -3,9 +3,10 @@ title: "实践说明"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-customized-multi-targets-and-products-sample
 format: md
+upstream_id: tools/coding-debug/ide-customized-multi-targets-and-products-sample
+last_sync: 2026-06-07
+sync_hash: ba87bfab
 ---
-
-
 # 实践说明
 
 某对外发布应用共有两个版本：

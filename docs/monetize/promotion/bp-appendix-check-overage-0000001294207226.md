@@ -3,8 +3,10 @@ title: "如何在开发者联盟网站查看账户余额"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-appendix-check-overage-0000001294207226
 format: md
+upstream_id: monetize/promotion/bp-appendix-check-overage-0000001294207226
+last_sync: 2026-06-07
+sync_hash: 5310c4fa
 ---
-
 # 如何在开发者联盟网站查看账户余额
 
 因为账户都是在开发者联盟网站上创建的，所以可以在开发者联盟网站上查看账户余额。

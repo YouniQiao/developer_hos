@@ -2,9 +2,10 @@
 title: "大版本更新"
 original_url: /docs/distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-version-update-0000002392515473
 format: md
+upstream_id: distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-version-update-0000002392515473
+last_sync: 2026-06-07
+sync_hash: 5c2eca63
 ---
-
-
 大版本更新是指已上架游戏的重要更新版本，如上线新玩法、新地图等。
 
 #### 前提条件

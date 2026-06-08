@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "商户基础支付场景"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-payment-process
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-payment-process
+last_sync: 2026-06-07
+sync_hash: 08fdcb34
 ---
-
-
 ## 场景介绍
 
 从4.1.0(11)版本开始，新增支持商户基础支付场景。

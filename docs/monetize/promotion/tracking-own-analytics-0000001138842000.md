@@ -3,6 +3,10 @@ title: "自有分析工具"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/tracking-own-analytics-0000001138842000
 format: md
+upstream_id: monetize/promotion/tracking-own-analytics-0000001138842000
+last_sync: 2026-06-07
+sync_hash: 11092ca0
+upstream_hash: 7dfebb407e42
 ---
 
 # 自有分析工具

@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-unsafe-member-access"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unsafe-member-access
 format: md
+upstream_id: tools/coding-debug/ide_no-unsafe-member-access
+last_sync: 2026-06-07
+sync_hash: b2524631
 ---
-
-
 # @typescript-eslint/no-unsafe-member-access
 
 禁止成员访问“any”类型的值。

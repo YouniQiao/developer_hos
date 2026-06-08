@@ -1,9 +1,10 @@
 ---
 title: "视频场景ROM低功耗建议"
 original_url: /docs/quality/video-rom
+upstream_id: /docs/quality/video-rom
+last_sync: 2026-06-07
+sync_hash: db175e12
 ---
-
-
 # 视频场景ROM低功耗建议
 
 ## 建议

@@ -3,9 +3,10 @@ title: "智能体资质"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/audit-specifications-0000002469548113/intelligence-qualification-0000002437625986
 format: md
+upstream_id: distribute/xiaoyi/audit-specifications-0000002469548113/intelligence-qualification-0000002437625986
+last_sync: 2026-06-07
+sync_hash: 5dff3822
 ---
-
-
 # 智能体资质
 
 **生成式人工智能服务上线备案**

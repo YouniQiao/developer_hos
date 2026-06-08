@@ -3,9 +3,10 @@ title: "ohpm update"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-update
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-update
+last_sync: 2026-06-07
+sync_hash: e9a90435
 ---
-
-
 # ohpm update
 
 更新三方库。

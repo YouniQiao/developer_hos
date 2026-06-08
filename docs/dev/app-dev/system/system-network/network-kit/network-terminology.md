@@ -2,9 +2,10 @@
 title: "Network Kit术语"
 original_url: /docs/dev/app-dev/system/system-network/network-kit/network-terminology
 format: md
+upstream_id: dev/app-dev/system/system-network/network-kit/network-terminology
+last_sync: 2026-06-07
+sync_hash: 1ef19ae5
 ---
-
-
 ## D
 
 ### DNS

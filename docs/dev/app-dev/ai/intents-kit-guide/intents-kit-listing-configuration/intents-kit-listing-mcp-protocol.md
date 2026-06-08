@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "MCP协议上架指导"
 original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-kit-listing-configuration/intents-kit-listing-mcp-protocol
 format: md
+upstream_id: dev/app-dev/ai/intents-kit-guide/intents-kit-listing-configuration/intents-kit-listing-mcp-protocol
+last_sync: 2026-06-07
+sync_hash: 84500b58
 ---
-
-
 ## **意图注册配置操作步骤**
 
 1. 账号登录：

@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-floating-promises"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-floating-promises
 format: md
+upstream_id: tools/coding-debug/ide_no-floating-promises
+last_sync: 2026-06-07
+sync_hash: aa405828
 ---
-
-
 # @typescript-eslint/no-floating-promises
 
 要求正确处理Promise表达式。

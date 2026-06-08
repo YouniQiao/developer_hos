@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "验证应用请求真实性集成设计实践"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/device-attestation-practice
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/device-attestation-practice
+last_sync: 2026-06-07
+sync_hash: 950a81e4
 ---
-
-
 本文档提供了验证应用请求真实性的集成设计方案实践。
 
 ![](./img/0cfd2765.png)

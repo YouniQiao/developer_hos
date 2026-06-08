@@ -2,9 +2,10 @@
 title: "CPU特性"
 original_url: /docs/dev/ndk-dev/cpu-features
 format: md
+upstream_id: dev/ndk-dev/cpu-features
+last_sync: 2026-06-07
+sync_hash: 4e98e159
 ---
-
-
 CPU特性是CPU提供的一些硬件扩展。开发者可以通过调用指令，设置特殊寄存器来使用这些CPU特性，例如ARMv7a架构上的VFP-v32d32、NEON、IDIV、AES等CPU特性。很多CPU特性是可选的，不同厂商的CPU通常有不同的特性。
 
 在HarmonyOS原生库开发中，如何使用CPU特性？如何在代码中处理CPU特性相关的代码？本章节将提供一些方法，以便帮助开发者开发出既能保持兼容性，又能利用CPU特性能力的应用。

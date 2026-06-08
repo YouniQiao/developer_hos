@@ -2,9 +2,10 @@
 format: md
 title: "调用notificationManager.publish发布通知失败"
 original_url: /docs/FAQ/faqs-app-service-development/faqs-notification-kit/faqs-notification-kit-8
+upstream_id: FAQ/faqs-app-service-development/faqs-notification-kit/faqs-notification-kit-8
+last_sync: 2026-06-07
+sync_hash: 253b015e
 ---
-
-
 **问题现象**
 
 发布通知后，未生成错误日志信息，通知栏中未显示通知。

@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "删除数据"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-delete
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-delete
+last_sync: 2026-06-07
+sync_hash: 2f91959a
+upstream_hash: 26cdc3dabc03
 ---
-
 
 开发者可以通过[delete()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cloudfoundation-clouddatabase#delete)删除单个对象或者一组对象。删除数据时，云数据库会根据传入对象主键删除相应的数据，不会比对该对象其它属性与存储的数据是否一致。删除一组对象时，删除操作是原子性的，即对象列表中的对象要么全部删除成功，要么全部删除失败。
 

@@ -2,9 +2,10 @@
 format: md
 title: "如何保持屏幕常亮"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-196
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-196
+last_sync: 2026-06-07
+sync_hash: eb611cd2
 ---
-
-
 获取窗口实例对象后，调用setWindowKeepScreenOn方法可设置屏幕是否常亮。
 
 ```

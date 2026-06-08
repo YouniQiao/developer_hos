@@ -1,8 +1,10 @@
 ---
 title: "GPS资源合理使用"
 original_url: /docs/quality/reasonable-gps-use
+upstream_id: /docs/quality/reasonable-gps-use
+last_sync: 2026-06-07
+sync_hash: 6240273a
 ---
-
 # GPS资源合理使用
 
 无长时间任务的应用退到后台时，禁止使用定位服务。

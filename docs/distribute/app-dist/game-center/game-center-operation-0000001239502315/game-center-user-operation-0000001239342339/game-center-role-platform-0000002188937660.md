@@ -3,9 +3,10 @@ title: "华为角色交易平台"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-role-platform-0000002188937660
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-role-platform-0000002188937660
+last_sync: 2026-06-07
+sync_hash: 3a18a09d
 ---
-
-
 # 华为角色交易平台
 
 ## 平台介绍

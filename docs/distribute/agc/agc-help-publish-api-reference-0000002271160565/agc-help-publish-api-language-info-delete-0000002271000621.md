@@ -2,9 +2,10 @@
 title: "删除应用语言信息"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-language-info-delete-0000002271000621
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-language-info-delete-0000002271000621
+last_sync: 2026-06-07
+sync_hash: 87207b4a
 ---
-
-
 #### 功能介绍
 
 此接口用于删除指定HarmonyOS应用/元服务不需要的语言描述信息，默认语言不支持删除。

@@ -2,9 +2,10 @@
 title: "更新房间信息"
 original_url: /docs/dev/game-dev/gameobe-updateroomproperties-csharp-0000002395350489
 format: md
+upstream_id: dev/game-dev/gameobe-updateroomproperties-csharp-0000002395350489
+last_sync: 2026-06-07
+sync_hash: 55da9ae4
 ---
-
-
 通过本章的指导开发，您可实现对房间的信息（如房间名称、房间ID、房主ID、房间是否私有化、自定义房间属性、房间是否锁定等）进行更新操作。
 
 ## 前提条件

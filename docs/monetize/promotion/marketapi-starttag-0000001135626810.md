@@ -3,8 +3,10 @@ title: "启动定向"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-starttag-0000001135626810
 format: md
+upstream_id: monetize/promotion/marketapi-starttag-0000001135626810
+last_sync: 2026-06-07
+sync_hash: 52563f83
 ---
-
 # 启动定向
 
 ## 功能介绍

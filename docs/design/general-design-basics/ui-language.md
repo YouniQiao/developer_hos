@@ -3,8 +3,10 @@ title: 界面用语
 sidebar_label: 界面用语
 original_url: /docs/design/general-design-basics/ui-language
 format: md
+upstream_id: design/general-design-basics/ui-language
+last_sync: 2026-06-07
+sync_hash: 60ab34c3
 ---
-
 # 界面用语
 
 ### 写作原则

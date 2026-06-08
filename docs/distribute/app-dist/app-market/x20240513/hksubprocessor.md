@@ -3,8 +3,10 @@ title: "华为服务(香港)有限公司的子数据处理者"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x20240513/hksubprocessor
 format: md
+upstream_id: distribute/app-dist/app-market/x20240513/hksubprocessor
+last_sync: 2026-06-07
+sync_hash: 95388561
 ---
-
 # 华为服务(香港)有限公司的子数据处理者
 
 | 分类 | 序号 | 实体名称 | 公司所在地 | 描述信息 |

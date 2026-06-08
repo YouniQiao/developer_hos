@@ -3,9 +3,10 @@ title: "@correctness/avsession-buttons-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-avsession-buttons-check
 format: md
+upstream_id: tools/coding-debug/ide-avsession-buttons-check
+last_sync: 2026-06-07
+sync_hash: a633e861
 ---
-
-
 # @correctness/avsession-buttons-check
 
 建议音乐、视频、听书类应用通过AVSession监听播放、暂停、停止、下一首、上一首按键事件，并响应。

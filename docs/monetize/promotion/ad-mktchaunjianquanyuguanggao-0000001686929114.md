@@ -3,8 +3,10 @@ title: "通过Marketing API创建全域智投广告"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ad-mktchaunjianquanyuguanggao-0000001686929114
 format: md
+upstream_id: monetize/promotion/ad-mktchaunjianquanyuguanggao-0000001686929114
+last_sync: 2026-06-07
+sync_hash: 6bf14fd2
 ---
-
 # 通过Marketing API创建全域智投广告
 
 ## 功能简介

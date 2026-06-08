@@ -2,9 +2,10 @@
 title: "基础"
 original_url: /docs/dev/atomic-dev/ascf/apis-basis/apis-basis
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-basis/apis-basis
+last_sync: 2026-06-07
+sync_hash: f3bab18d
 ---
-
-
 * **[API可用判断](/docs/dev/atomic-dev/ascf/apis-basis/apis-caniuse)**
 * **[系统信息](/docs/dev/atomic-dev/ascf/apis-basis/apis-system-info)**
 * **[生命周期](/docs/dev/atomic-dev/ascf/apis-basis/apis-lifecycle)**

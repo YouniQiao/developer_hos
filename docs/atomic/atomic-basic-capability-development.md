@@ -2,9 +2,10 @@
 title: "基础能力开发"
 original_url: /docs/dev/atomic-dev/atomic-basic-capability-development/atomic-basic-capability-development
 format: md
+upstream_id: dev/atomic-dev/atomic-basic-capability-development/atomic-basic-capability-development
+last_sync: 2026-06-07
+sync_hash: c4fb1092
 ---
-
-
 * **[网络](/docs/dev/atomic-dev/atomic-network-development/atomic-network-development)**
 * **[数据](/docs/dev/atomic-dev/atomic-database/atomic-database)**
 * **[文件](/docs/dev/atomic-dev/atomic-file-development/atomic-file-development)**

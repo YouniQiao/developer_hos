@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "批注"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-annotation
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-annotation
+last_sync: 2026-06-07
+sync_hash: 71273b09
 ---
-
-
 进入批注模式，目前支持高亮、下划线和删除线类型批注。
 
 ## 接口说明

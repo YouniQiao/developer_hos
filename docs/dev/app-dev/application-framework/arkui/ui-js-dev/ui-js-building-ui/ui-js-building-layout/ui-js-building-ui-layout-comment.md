@@ -2,8 +2,11 @@
 title: "添加留言区域"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-building-ui/ui-js-building-layout/ui-js-building-ui-layout-comment
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-building-ui/ui-js-building-layout/ui-js-building-ui-layout-comment
+last_sync: 2026-06-07
+sync_hash: 34c733c5
+upstream_hash: c2272adf3cab
 ---
-
 
 留言框的功能为：用户输入留言后点击完成，留言区域即显示留言内容。用户点击右侧的删除按钮可删除当前留言内容并重新输入。
 

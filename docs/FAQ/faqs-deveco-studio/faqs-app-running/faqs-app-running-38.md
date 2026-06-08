@@ -2,8 +2,11 @@
 format: md
 title: "Windows X86模拟器使用过程中调整系统屏幕缩放比，模拟器显示异常"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-38
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-38
+last_sync: 2026-06-07
+sync_hash: 74de5775
+upstream_hash: a0aef98e2277
 ---
-
 
 **问题现象**
 
@@ -15,4 +18,4 @@ original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-38
 
 **解决措施**
 
-手动缩放模拟器即可恢复。缩放方式参见[移动和缩放模拟器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-move-and-zoom)。
+手动缩放模拟器即可恢复。缩放方式参见[移动和缩放模拟器](/docs/tools/coding-debug/ide-emulator-move-and-zoom)。

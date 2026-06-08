@@ -2,9 +2,10 @@
 title: "通过文本生成码图"
 original_url: /docs/dev/atomic-dev/atomic-scan-generate/atomic-scan-barcodegenerate
 format: md
+upstream_id: dev/atomic-dev/atomic-scan-generate/atomic-scan-barcodegenerate
+last_sync: 2026-06-07
+sync_hash: 6e6f4919
 ---
-
-
 ## 基本概念
 
 码图生成能力支持将字符串转换为自定义格式的码图。

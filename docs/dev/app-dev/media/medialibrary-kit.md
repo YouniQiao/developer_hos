@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Media Library Kit（媒体文件管理服务）"
 original_url: /docs/dev/app-dev/media/medialibrary-kit
 format: md
+upstream_id: dev/app-dev/media/medialibrary-kit
+last_sync: 2026-06-07
+sync_hash: 5d96410c
 ---
-
-
 * **[Media Library Kit 简介](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-overview)**
 * **[使用Picker选择媒体库资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-photoviewpicker)**
 * **[保存媒体库资源](/docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-savebutton)**

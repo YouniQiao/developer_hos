@@ -3,9 +3,10 @@ title: "编译报错智能分析"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-compilation-error-analysis
 format: md
+upstream_id: tools/ai-assist/ide-compilation-error-analysis
+last_sync: 2026-06-07
+sync_hash: 168ef650
 ---
-
-
 # 编译报错智能分析
 
 当DevEco Studio构建ArkTS工程出现失败时，CodeGenie仅能够对ArkTS语法相关的错误进行智能分析，提供错误原因及修复方案，帮助开发者快速解决编译构建问题。

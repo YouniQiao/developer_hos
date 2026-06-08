@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "基于AVCodec播放DRM节目(C/C++)"
 original_url: /docs/dev/app-dev/media/drm-kit/drm-avcodec-integration
 format: md
+upstream_id: dev/app-dev/media/drm-kit/drm-avcodec-integration
+last_sync: 2026-06-07
+sync_hash: 9ba27b4c
 ---
-
-
 ## 功能介绍
 
 开发者可以调用DRM Kit的Native API，完成DRM节目播放。

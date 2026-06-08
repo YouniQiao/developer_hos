@@ -2,9 +2,10 @@
 title: "AppLanguage"
 original_url: /docs/distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-applanguage-0000002237496312
 format: md
+upstream_id: distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-applanguage-0000002237496312
+last_sync: 2026-06-07
+sync_hash: b8cb15d9
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | language | M | String(20) | 应用支持的语言。 |

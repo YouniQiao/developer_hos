@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口进行任务队列相关开发"
 original_url: /docs/dev/ndk-dev/use-jsvm-execute_tasks
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-execute_tasks
+last_sync: 2026-06-07
+sync_hash: 4a53c1c3
 ---
-
-
 ## 简介
 
 在虚拟机内启动任务队列，检查队列中是否有待处理的微任务。任务队列可由外部事件循环执行。

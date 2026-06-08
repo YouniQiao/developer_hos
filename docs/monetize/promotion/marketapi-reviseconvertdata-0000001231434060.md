@@ -3,8 +3,10 @@ title: "使用转化行为数据修改人群定向"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-reviseconvertdata-0000001231434060
 format: md
+upstream_id: monetize/promotion/marketapi-reviseconvertdata-0000001231434060
+last_sync: 2026-06-07
+sync_hash: 0ee8edd2
 ---
-
 # 使用转化行为数据修改人群定向
 
 ## 功能介绍

@@ -2,8 +2,11 @@
 title: "选择设备类型"
 original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-devicetype-0000002424923334
 format: md
+upstream_id: distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-devicetype-0000002424923334
+last_sync: 2026-06-07
+sync_hash: 89d1e4d2
+upstream_hash: 9a54b5f7bf55
 ---
-
 
 请为小游戏选择发布设备，在小游戏成功上架至华为应用市场后，玩家可以在支持的设备上体验小游戏。
 

@@ -3,9 +3,10 @@ title: "管理商品营销"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-managing-product-marketing-0000001198744990
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-managing-product-marketing-0000001198744990
+last_sync: 2026-06-07
+sync_hash: 05a163d5
 ---
-
-
 # 管理商品营销
 
 商品营销是指开发者可以选择指定的商品进行营销包装，将商品宣传图、商品名称、商品描述展示在应用市场（10.2.0及以上所有版本）的应用详情页面。用户可以直接在应用市场的应用详情页面购买商品。
@@ -21,7 +22,7 @@ format: md
 
 ## 前提条件
 
-* 您已在商品管理[新增商品](`https://developer.huawei.com/consumer/cn/doc/app/game-center-creating-product-0000001239502323`)。
+* 您已在商品管理[新增商品](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-creating-product-0000001239502323)。
 * 您的应用分发地区包含中国大陆。
 * 您需准备1024\*1024px的JPG或PNG格式的图片，作为在应用市场的应用详情页面展示的商品营销宣传图。
 * 建议使用Google Chrome浏览器访问商品管理服务，最低版本为62.0.3202.62。

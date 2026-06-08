@@ -3,6 +3,10 @@ title: "使用转化行为数据创建人群定向"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-useconvertdata-0000001231274168
 format: md
+upstream_id: monetize/promotion/marketapi-useconvertdata-0000001231274168
+last_sync: 2026-06-07
+sync_hash: 46c836a9
+upstream_hash: 82b64ba179bc
 ---
 
 # 使用转化行为数据创建人群定向

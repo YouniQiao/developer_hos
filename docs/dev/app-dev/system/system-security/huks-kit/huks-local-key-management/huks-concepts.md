@@ -2,9 +2,10 @@
 title: "本地密钥管理基础概念"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-concepts
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-concepts
+last_sync: 2026-06-07
+sync_hash: 871f6893
 ---
-
-
 在使用通用密钥库完成应用开发前，开发者需要了解以下相关概念，以下概念将贯穿整个开发过程。
 
 ## 可信执行环境（TEE）

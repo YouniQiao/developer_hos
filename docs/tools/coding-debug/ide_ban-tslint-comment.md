@@ -3,9 +3,10 @@ title: "@typescript-eslint/ban-tslint-comment"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_ban-tslint-comment
 format: md
+upstream_id: tools/coding-debug/ide_ban-tslint-comment
+last_sync: 2026-06-07
+sync_hash: 1e8eaa2c
 ---
-
-
 # @typescript-eslint/ban-tslint-comment
 
 不允许使用`//tslint:<rule-flag>`格式的注释。

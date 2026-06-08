@@ -2,9 +2,10 @@
 title: "消息订阅"
 original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-message-subscription
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-open-apis/apis-message-subscription
+last_sync: 2026-06-07
+sync_hash: 71f7b593
 ---
-
-
 ## has.requestSubscribeMessage
 
 has.requestSubscribeMessage(Object object)

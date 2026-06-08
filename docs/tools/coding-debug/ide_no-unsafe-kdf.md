@@ -3,9 +3,10 @@ title: "@security/no-unsafe-kdf"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unsafe-kdf
 format: md
+upstream_id: tools/coding-debug/ide_no-unsafe-kdf
+last_sync: 2026-06-07
+sync_hash: d5d9d8da
 ---
-
-
 # @security/no-unsafe-kdf
 
 禁止使用不安全的KDF算法，包括PBKDF2|SHA1和HKDF|SHA1。推荐使用PBKDF2|SHA256和HKDF|SHA256，PBKDF2|SHA256算法描述详情参见：[密钥派生算法](`https://`developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/aegis-key-derivation-0000001861059318)。

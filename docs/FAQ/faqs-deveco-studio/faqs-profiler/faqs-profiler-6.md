@@ -2,9 +2,10 @@
 format: md
 title: "Profiler窗口无法加载"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-6
+upstream_id: FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-6
+last_sync: 2026-06-07
+sync_hash: d218941b
 ---
-
-
 **问题现象**
 
 Profiler窗口提示“There is already a Profiler running.”。

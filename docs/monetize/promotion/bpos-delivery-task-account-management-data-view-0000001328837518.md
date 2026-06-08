@@ -3,8 +3,10 @@ title: "数据查看"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-delivery-task-account-management-data-view-0000001328837518
 format: md
+upstream_id: monetize/promotion/bpos-delivery-task-account-management-data-view-0000001328837518
+last_sync: 2026-06-07
+sync_hash: 35e8ff9f
 ---
-
 # 数据查看
 
 支持服务商和子客服务商查看自己账户下关联账户的消耗：

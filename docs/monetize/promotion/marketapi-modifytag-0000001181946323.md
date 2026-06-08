@@ -3,8 +3,10 @@ title: "修改标签定向"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modifytag-0000001181946323
 format: md
+upstream_id: monetize/promotion/marketapi-modifytag-0000001181946323
+last_sync: 2026-06-07
+sync_hash: f7b701ba
 ---
-
 # 修改标签定向
 
 ## 功能介绍

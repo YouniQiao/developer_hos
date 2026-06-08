@@ -2,9 +2,10 @@
 title: "图文素材审核细则"
 original_url: /docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-card-design-detail-rules-0000002349181504
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-card-design-detail-rules-0000002349181504
+last_sync: 2026-06-07
+sync_hash: a6712d1b
 ---
-
-
 #### 文字及标点规范
 
 * 应当使用普通话和规范汉字。

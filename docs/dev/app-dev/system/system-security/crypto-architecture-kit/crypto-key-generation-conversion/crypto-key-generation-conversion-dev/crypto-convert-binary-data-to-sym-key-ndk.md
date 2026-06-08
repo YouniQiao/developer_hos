@@ -2,9 +2,10 @@
 title: "指定二进制数据转换对称密钥(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-convert-binary-data-to-sym-key-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-convert-binary-data-to-sym-key-ndk
+last_sync: 2026-06-07
+sync_hash: d818fcb3
 ---
-
-
 以3DES和HMAC为例，根据指定的对称密钥二进制数据生成密钥（OH\_CryptoSymKey），将外部或存储的二进制数据转换为算法库的密钥对象，该对象可用于后续的加解密操作。
 
 ## 在CMake脚本中链接相关动态库

@@ -2,9 +2,10 @@
 title: "范围语音"
 original_url: /docs/dev/game-dev/games-gamemme-rangeroom-harmonyos-0000002359901696
 format: md
+upstream_id: dev/game-dev/games-gamemme-rangeroom-harmonyos-0000002359901696
+last_sync: 2026-06-07
+sync_hash: f719decd
 ---
-
-
 “范围语音”指在一个范围语音房间内，玩家通过设置语音接收范围和不断上报更新自身和其他玩家位置信息，与一定距离内的其他玩家进行实时语音通话。为了保证范围语音房间内语音清晰，玩家最多只能听到离自己最近的14个其他玩家的声音。
 
 ![](./img/e3b1065f.png)

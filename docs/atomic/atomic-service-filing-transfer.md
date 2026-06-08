@@ -2,9 +2,10 @@
 title: "转移核准（备案）"
 original_url: /docs/dev/atomic-dev/atomic-service-cloud/atomic-service-filing-transfer
 format: md
+upstream_id: dev/atomic-dev/atomic-service-cloud/atomic-service-filing-transfer
+last_sync: 2026-06-07
+sync_hash: 47385604
 ---
-
-
 在华为云核准（备案系）统中将主体及主体下的互联网信息全部转移到目标账号下。操作步骤如下：
 
 1. 登录[华为云核准（备案）系统](https://beian.huaweicloud.com/?utm_source=HUAWEI%2BDeveloper&utm_adplace=AdPlace099034)，左侧菜单栏点击“我的核准（备案）”，右侧页面点击“转移核准（备案）”。

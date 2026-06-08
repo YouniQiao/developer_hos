@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "CryptoExtensionAbility适配开发指导"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-extension-ability-support/huks-extension-ability-support-dev
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-extension-ability-support/huks-extension-ability-support-dev
+last_sync: 2026-06-07
+sync_hash: 6281b706
 ---
-
-
 ## 适配指导
 
 本文档旨在指导驱动厂商如何继承实现[CryptoExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-cryptoextensionability)需要的接口能力，此处给出实现参考，其他实现依照业务需要依次调用driver封装的底层驱动函数。

@@ -3,8 +3,11 @@ title: "运行配置错误码"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-errorcode-00401
 format: md
+upstream_id: tools/coding-debug/ide-debug-errorcode-00401
+last_sync: 2026-06-07
+sync_hash: 115880cb
+upstream_hash: ec3d45bd66e0
 ---
-
 
 # 运行配置错误码
 

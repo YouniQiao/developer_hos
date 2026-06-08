@@ -2,9 +2,10 @@
 title: "元服务大屏设备适配指南"
 original_url: /docs/dev/atomic-dev/atomic-ui-development/atomic-service-large-screen-adaptation
 format: md
+upstream_id: dev/atomic-dev/atomic-ui-development/atomic-service-large-screen-adaptation
+last_sync: 2026-06-07
+sync_hash: c8f6a7d0
 ---
-
-
 为保证用户在大尺寸屏幕设备（如折叠屏、平板、PC）使用元服务也有流畅友好的体验，本指南将提供大屏设备适配的相关建议，开发者可主动适配，也可采用默认方案适配，实现一次开发，覆盖多端设备。
 
 ## 大屏设备主动适配

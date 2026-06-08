@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "视频解码支持HDRVivid2SDR"
 original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/hdr-vivid-capability/hdrvivid2sdr
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/audio-video-codec/hdr-vivid-capability/hdrvivid2sdr
+last_sync: 2026-06-07
+sync_hash: dbda5a96
 ---
-
-
 在视频分享或者编辑场景时，开发者有时需要将HDR Vivid视频转换为SDR视频，可以调用AVCodec能力实现该功能。
 
 ![](./img/60f2e996.png)

@@ -2,9 +2,10 @@
 title: "开发应用沉浸式效果"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development/arkts-develop-apply-immersive-effects
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development/arkts-develop-apply-immersive-effects
+last_sync: 2026-06-07
+sync_hash: ec3ef6a7
 ---
-
-
 ## 概述
 
 典型应用全屏窗口UI元素包括顶部[状态栏](/docs/design/system-features/features/status-bar)、应用界面和底部导航区域（根据用户设置可表现为[导航条](/docs/design/system-features/features/navigation-bar)或三键导航），其中状态栏和导航区域，通常在沉浸式布局下称为避让区；避让区之外的区域称为安全区。开发应用沉浸式效果主要指通过调整状态栏、应用界面和底部导航区域的显示效果来减少状态栏、导航条或三键导航等系统界面的突兀感，从而使用户获得最佳的UI体验。

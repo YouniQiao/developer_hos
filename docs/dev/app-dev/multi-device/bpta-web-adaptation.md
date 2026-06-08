@@ -3,8 +3,10 @@ title: "Web响应式布局"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-web-adaptation
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-web-adaptation
+last_sync: 2026-06-07
+sync_hash: 84316521
 ---
-
 # Web响应式布局
 
 ## 概述

@@ -3,9 +3,10 @@ title: "产品小图标"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-producticon-0000002396467004
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-producticon-0000002396467004
+last_sync: 2026-06-07
+sync_hash: 643951fa
 ---
-
-
 # 产品小图标
 
 <strong>表1</strong>

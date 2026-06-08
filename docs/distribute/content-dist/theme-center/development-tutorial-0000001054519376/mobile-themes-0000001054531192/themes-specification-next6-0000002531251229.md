@@ -2,9 +2,10 @@
 title: "HarmonyOS 5.0升级HarmonyOS 6.0指导"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-next6-0000002531251229
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-next6-0000002531251229
+last_sync: 2026-06-07
+sync_hash: bf82c9ce
 ---
-
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # HarmonyOS 5.0升级HarmonyOS 6.0指导

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "查询设备安全模式(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-securitymode
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-securitymode
+last_sync: 2026-06-07
+sync_hash: a54584c6
 ---
-
-
 ## 场景介绍
 
 Device Security Kit提供了系统安全模式的查询能力。通过调用Device Security Kit的接口，可以判断设备当前的安全模式（包含普通模式、坚盾守护模式），应用可根据设备当前的安全模式提供差异化的服务。

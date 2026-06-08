@@ -2,9 +2,10 @@
 title: "设置页签栏的悬浮样式"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-hds-tabs/ui-design-hds-tabs-bar-floating
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-hds-tabs/ui-design-hds-tabs-bar-floating
+last_sync: 2026-06-07
+sync_hash: bbf4dbbd
 ---
-
-
 ## 场景介绍
 
 从6.1.0(23) 版本开始，新增支持设置页签栏的悬浮样式以及迷你栏。

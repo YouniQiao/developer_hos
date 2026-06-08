@@ -3,9 +3,10 @@ title: "会话区"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-profiler-session
 format: md
+upstream_id: tools/coding-debug/ide-profiler-session
+last_sync: 2026-06-07
+sync_hash: 5d0e0bf6
 ---
-
-
 # 会话区
 
 ![](./img/zh-cn_image_0000002602186763.png "点击放大")

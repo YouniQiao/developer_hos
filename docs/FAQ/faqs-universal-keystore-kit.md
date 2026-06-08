@@ -2,9 +2,10 @@
 format: md
 title: "密钥管理（Universal Keystore）"
 original_url: /docs/FAQ/faqs-universal-keystore-kit
+upstream_id: FAQ/faqs-universal-keystore-kit
+last_sync: 2026-06-07
+sync_hash: 1b31dd59
 ---
-
-
 * **[HUKS生成的密钥在什么情况下会消失或被清理](/docs/FAQ/faqs-system-development/faqs-security/faqs-universal-keystore-kit/faqs-universal-keystore-1)**
 * **[HUKS初始向量是否必须为随机数？对生成的密钥有什么影响](/docs/FAQ/faqs-system-development/faqs-security/faqs-universal-keystore-kit/faqs-universal-keystore-2)**
 * **[并发场景下AES加密失败](/docs/FAQ/faqs-system-development/faqs-security/faqs-universal-keystore-kit/faqs-universal-keystore-3)**

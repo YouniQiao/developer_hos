@@ -3,8 +3,11 @@ title: "@typescript-eslint/prefer-namespace-keyword"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_prefer-namespace-keyword
 format: md
+upstream_id: tools/coding-debug/ide_prefer-namespace-keyword
+last_sync: 2026-06-07
+sync_hash: 56cc8cc5
+upstream_hash: e3ba926845e2
 ---
-
 
 # @typescript-eslint/prefer-namespace-keyword
 

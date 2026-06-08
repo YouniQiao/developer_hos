@@ -3,8 +3,10 @@ title: 深色模式
 sidebar_label: 深色模式
 original_url: /docs/design/system-features/features/dark-mode
 format: md
+upstream_id: design/system-features/features/dark-mode
+last_sync: 2026-06-07
+sync_hash: d264adf9
 ---
-
 # 深色模式
 
 深色模式满足更多个性化的需求，基于人因研究设计了深色模式下舒适的颜色范围。深色模式开启后，浅色主题应用界面背景会变成深色，而文字、图标等前景会变成浅色。深色模式的界面上内容更加突出、在 OLED 屏幕的设备上更加省电、能够给用户带来视觉舒适感和沉浸式体验。

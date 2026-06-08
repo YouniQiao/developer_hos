@@ -2,9 +2,10 @@
 title: "添加/删除关系"
 original_url: /docs/dev/game-dev/pgd-relation-manage-0000002530101213
 format: md
+upstream_id: dev/game-dev/pgd-relation-manage-0000002530101213
+last_sync: 2026-06-07
+sync_hash: 184ac5a2
 ---
-
-
 ## 添加关系
 
 以下示例代码中关系主体为entity，分别演示关系特性场景。

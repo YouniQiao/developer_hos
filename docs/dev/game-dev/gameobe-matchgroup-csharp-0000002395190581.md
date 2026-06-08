@@ -2,9 +2,10 @@
 title: "队伍匹配"
 original_url: /docs/dev/game-dev/gameobe-matchgroup-csharp-0000002395190581
 format: md
+upstream_id: dev/game-dev/gameobe-matchgroup-csharp-0000002395190581
+last_sync: 2026-06-07
+sync_hash: 44ead694
 ---
-
-
 玩家还可以先组建队伍，然后通过发起组队匹配的方式，并根据自定义规则中设置的等级、胜率等属性进行择优匹配。此种方式主要适用于好友组队开黑等玩法。
 
 ## 前提条件

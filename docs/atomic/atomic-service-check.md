@@ -2,9 +2,10 @@
 title: "元服务上架审核预检"
 original_url: /docs/dev/atomic-dev/atomic-running-debugging/atomic-service-check
 format: md
+upstream_id: dev/atomic-dev/atomic-running-debugging/atomic-service-check
+last_sync: 2026-06-07
+sync_hash: 63d4e3c6
 ---
-
-
 开发者在正式提交上架审核前，建议通过[AGC云测试服务](/docs/distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-introduction-0000002255036400)提供的[上架测试](/docs/distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-releasetest-0000002289646673)模式对元服务进行预检。AGC云测试服务可帮助开发者提升测试环节效率、降低测试成本，提供包括HarmonyOS设备在内的深度质量检测，按照元服务上架华为应用市场的标准，对元服务进行兼容性、稳定性、功耗、UX专项测试，快速出具专业且详细的测试报告，帮助开发者提前发现并精准定位、解决应用在设备上运行的问题。
 
 ![](./img/25b6dfd0.png)

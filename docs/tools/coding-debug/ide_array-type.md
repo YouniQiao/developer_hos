@@ -3,9 +3,10 @@ title: "@typescript-eslint/array-type"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_array-type
 format: md
+upstream_id: tools/coding-debug/ide_array-type
+last_sync: 2026-06-07
+sync_hash: 15d7945d
 ---
-
-
 # @typescript-eslint/array-type
 
 定义数组类型时，建议使用相同的样式。比如都使用T[]或者都使用Array&lt;T&gt;。

@@ -2,9 +2,10 @@
 title: "应用内状态变量迁移"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-state-management-v1-v2-migration-guide/arkts-v1-v2-migration-application
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-state-management-v1-v2-migration-guide/arkts-v1-v2-migration-application
+last_sync: 2026-06-07
+sync_hash: 58671cb2
 ---
-
-
 本文档主要介绍应用内状态变量迁移，包含以下场景。
 
 | V1装饰器名称/场景 | 迁移方案 |

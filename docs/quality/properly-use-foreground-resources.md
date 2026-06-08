@@ -2,9 +2,10 @@
 title: "前台资源合理使用"
 original_url: /docs/quality/properly-use-foreground-resources
 format: md
+upstream_id: /docs/quality/properly-use-foreground-resources
+last_sync: 2026-06-07
+sync_hash: e1a3639e
 ---
-
-
 # 前台资源合理使用
 
 前台应用使用系统资源不当，可能导致设备快速耗电和发热。本文提供前台资源使用的规则和建议，帮助开发者降低设备耗电，保障用户正常体验。

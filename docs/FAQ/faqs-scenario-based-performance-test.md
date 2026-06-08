@@ -2,9 +2,10 @@
 format: md
 title: "场景化性能测试"
 original_url: /docs/FAQ/faqs-scenario-based-performance-test
+upstream_id: FAQ/faqs-scenario-based-performance-test
+last_sync: 2026-06-07
+sync_hash: dde4d528
 ---
-
-
 * **[执行报告用例的其中一个步骤，在视频中动效为什么只录了一半](/docs/FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-scenario-based-performance-test/faqs-scenario-based-performance-test-1)**
 * **[Can't find component with [BY.text('XXX')] 的报错是什么原因](/docs/FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-scenario-based-performance-test/faqs-scenario-based-performance-test-2)**
 * **[执行python.exe -m pip install --upgrade pip命令更新pip库时报错ValueError: Unable to find resource t64.exe in package pip.\_vendor.distlib](/docs/FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-scenario-based-performance-test/faqs-scenario-based-performance-test-3)**

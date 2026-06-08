@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "生态查询服务场景中获取自身场景值为空"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-3
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-3
+last_sync: 2026-06-07
+sync_hash: 20ad16ca
 ---
-
-
 **问题现象**
 
 调用查询自身场景值接口返回场景值为空。

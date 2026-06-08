@@ -2,9 +2,10 @@
 title: "业务介绍"
 original_url: /docs/distribute/agc/agc-help-invite-test-0000002270829393/agc-help-invite-test-overview-0000002287701773
 format: md
+upstream_id: distribute/agc/agc-help-invite-test-0000002270829393/agc-help-invite-test-overview-0000002287701773
+last_sync: 2026-06-07
+sync_hash: d90dc644
 ---
-
-
 在正式版本发布之前，您可以选择特定用户群组来测试您的应用，以收集测试用户的反馈意见，助您提前发现问题，及时修复和优化版本体验。
 
 邀请测试和其他测试方式区别如下，您可以根据实际业务需求，选择合适的测试方式。

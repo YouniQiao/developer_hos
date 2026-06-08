@@ -3,8 +3,10 @@ title: "配置oCPD双目标出价"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-ocpd_2target_cfg-0000001476489166
 format: md
+upstream_id: monetize/promotion/bp-functions-ocpd_2target_cfg-0000001476489166
+last_sync: 2026-06-07
+sync_hash: 3d19eb77
 ---
-
 # 配置oCPD双目标出价
 
 ## oCPD双目标设置

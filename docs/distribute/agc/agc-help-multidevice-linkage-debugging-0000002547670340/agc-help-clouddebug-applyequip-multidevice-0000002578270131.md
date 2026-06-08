@@ -2,8 +2,11 @@
 title: "申请调试设备"
 original_url: /docs/distribute/agc/agc-help-multidevice-linkage-debugging-0000002547670340/agc-help-clouddebug-applyequip-multidevice-0000002578270131
 format: md
+upstream_id: distribute/agc/agc-help-multidevice-linkage-debugging-0000002547670340/agc-help-clouddebug-applyequip-multidevice-0000002578270131
+last_sync: 2026-06-07
+sync_hash: 3edd5501
+upstream_hash: 576423b45c4a
 ---
-
 
 如果您的应用支持在多种设备类型（如手机、平板）上安装和使用，可选择一帧多屏调试场景进行调试。
 

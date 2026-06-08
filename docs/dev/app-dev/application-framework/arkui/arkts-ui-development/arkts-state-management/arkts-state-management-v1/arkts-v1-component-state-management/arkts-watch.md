@@ -2,9 +2,10 @@
 title: "@Watch装饰器：状态变量更改通知"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-watch
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-watch
+last_sync: 2026-06-07
+sync_hash: 1e9cf6ae
 ---
-
-
 @Watch应用于对状态变量的监听。如果开发者需要关注某个状态变量的值是否改变，可以使用@Watch为状态变量设置回调函数。
 
 @Watch提供了状态变量的监听能力，@Watch仅能监听到可以观察到的变化。

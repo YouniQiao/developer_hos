@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "OH_MIDI概述(C/C++)"
 original_url: /docs/dev/app-dev/media/audio-kit/midi/midi-overview
 format: md
+upstream_id: dev/app-dev/media/audio-kit/midi/midi-overview
+last_sync: 2026-06-07
+sync_hash: 01ce39e0
 ---
-
-
 ## MIDI简介
 
 乐器数字接口（Musical Instrument Digital Interface）是一种用于电子乐器、计算机和其他设备之间进行通信的国际标准协议。同时定义了音符、控制信号等音乐数据的传输方式，广泛应用于音乐制作、舞台演出和游戏开发等领域。

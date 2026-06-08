@@ -2,9 +2,10 @@
 title: "WebSocket连接"
 original_url: /docs/dev/atomic-dev/atomic-network-development/atomic-websocket-connection
 format: md
+upstream_id: dev/atomic-dev/atomic-network-development/atomic-websocket-connection
+last_sync: 2026-06-07
+sync_hash: 3c1ccec4
 ---
-
-
 ## 场景介绍
 
 使用WebSocket建立服务器与客户端的双向连接，需要先通过createWebSocket()方法创建WebSocket对象，然后通过connect()方法连接到服务器。当连接成功后，客户端会收到open事件的回调，之后客户端就可以通过send()方法与服务器进行通信。当服务器发信息给客户端时，客户端会收到message事件的回调。当客户端不要此连接时，可以通过调用close()方法主动断开连接，之后客户端会收到close事件的回调。

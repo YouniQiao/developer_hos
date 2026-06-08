@@ -2,8 +2,11 @@
 title: "下发测试任务"
 original_url: /docs/distribute/agc/agc-help-beacon-own-real-phone-testing-0000002456745305/agc-help-beacon-distribute-testing-tasks-0000002423306406
 format: md
+upstream_id: distribute/agc/agc-help-beacon-own-real-phone-testing-0000002456745305/agc-help-beacon-distribute-testing-tasks-0000002423306406
+last_sync: 2026-06-07
+sync_hash: 7f1e1243
+upstream_hash: 9d2586c4f265
 ---
-
 
 在AppGallery Connect近场测试服务界面，选择您需要测试的近场服务，对测试手机下发测试任务，使测试手机接收近场服务推送的内容。
 

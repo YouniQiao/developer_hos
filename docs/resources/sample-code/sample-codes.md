@@ -2,9 +2,9 @@
 title: Sample Codes
 sidebar_label: Sample Codes
 format: md
+upstream_id: _local
+last_sync: 2026-06-08
 ---
-
-
 # Sample Codes
 
 HarmonyOS 示例代码是华为官方提供的**代码示例库**，涵盖 HarmonyOS 应用开发的各个技术领域，帮助开发者通过实际代码快速理解和上手各类开发场景。

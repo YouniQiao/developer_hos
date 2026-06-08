@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "1001502003 输入参数值无效的可能原因和解决办法"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-22
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-22
+last_sync: 2026-06-07
+sync_hash: dda5b57f
+upstream_hash: 11ad7cfff708
 ---
-
 
 **问题现象**
 

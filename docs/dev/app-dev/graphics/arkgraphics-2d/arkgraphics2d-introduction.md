@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "ArkGraphics 2D简介"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/arkgraphics2d-introduction
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/arkgraphics2d-introduction
+last_sync: 2026-06-07
+sync_hash: 11a02fed
 ---
-
-
 ArkGraphics 2D（方舟2D图形服务 ）主要提供图形绘制与显示相关的能力。开发者可以基于一套统一的图形接口进行应用开发，使应用开发更简单、高效。
 
 ## 能力范围
@@ -39,4 +40,4 @@ ArkGraphics 2D（方舟2D图形服务 ）主要提供图形绘制与显示相关
 * 模拟器上不支持HDR效果显示。
 * 模拟器上可变帧率的setExpectedFrameRateRange接口可能无法设置预期帧率。
 * 因模拟器与真机的绘制引擎不同，@ohos.graphics.drawing、NativeWindow、NativeBuffer、NativeImage、NativeVsync以及Drawing等模块的部分接口在模拟器与真机上会有显示效果差异。
-* 通用差异：请参见[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification#section1227613205203)。
+* 通用差异：请参见[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification#section1227613205203)。

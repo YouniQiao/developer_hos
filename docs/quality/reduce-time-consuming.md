@@ -2,9 +2,10 @@
 title: "耗时操作减少"
 original_url: /docs/quality/reduce-time-consuming
 format: md
+upstream_id: /docs/quality/reduce-time-consuming
+last_sync: 2026-06-07
+sync_hash: cf150fbd
 ---
-
-
 # 耗时操作减少
 
 在应用开发中，避免主线程执行冗余和耗时操作至关重要。这可以降低主线程负载，提升UI响应速度。

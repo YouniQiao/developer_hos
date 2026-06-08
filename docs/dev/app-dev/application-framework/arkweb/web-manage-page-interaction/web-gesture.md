@@ -2,8 +2,11 @@
 title: "使用Web组件的手势与应用交互"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-gesture
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-gesture
+last_sync: 2026-06-07
+sync_hash: 97063555
+upstream_hash: 21985e19db61
 ---
-
 
 在移动端或支持触控的Web应用中，用户通过触摸屏与页面交互，Web组件支持了常见的手势识别，例如长按、滑动、点击等，以支持丰富的用户交互体验。
 

@@ -3,8 +3,10 @@ title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-delivery-task-account-management-overview-0000001379557361
 format: md
+upstream_id: monetize/promotion/bpos-delivery-task-account-management-overview-0000001379557361
+last_sync: 2026-06-07
+sync_hash: df388f59
 ---
-
 # 概述
 
 投放端账户分直客账户和服务商账户两种类型：

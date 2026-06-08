@@ -2,9 +2,10 @@
 title: "卡片规格"
 original_url: /docs/experience-suggestions/compatibility/system-features/widget-specifications
 format: md
+upstream_id: experience-suggestions/compatibility/system-features/widget-specifications
+last_sync: 2026-06-07
+sync_hash: 62c54cbe
 ---
-
-
 # 卡片规格
 
 |  |  |

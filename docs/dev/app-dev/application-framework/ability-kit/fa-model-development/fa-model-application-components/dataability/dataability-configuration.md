@@ -2,9 +2,10 @@
 title: "DataAbility组件配置"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/dataability/dataability-configuration
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/dataability/dataability-configuration
+last_sync: 2026-06-07
+sync_hash: 1dfc81af
 ---
-
-
 ## URI介绍
 
 DataAbility的提供方和使用方都通过URI（Uniform Resource Identifier）来标识一个具体的数据，例如数据库中的某个表或磁盘上的某个文件。此处的URI仍基于URI通用标准，格式如下：

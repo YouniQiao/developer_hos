@@ -3,9 +3,10 @@ title: "使用环境"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-emulator-requirements
 format: md
+upstream_id: tools/coding-debug/ide-emulator-requirements
+last_sync: 2026-06-07
+sync_hash: c81a33bd
 ---
-
-
 # 使用环境
 
 模拟器在本地计算机上创建和运行，在运行和调试应用/元服务时可以保持良好的流畅性和稳定性，但是需要耗费一定的计算机资源，具体的运行环境要求如下。

@@ -2,9 +2,10 @@
 format: md
 title: "如何在ArkTS侧监听Native侧日志信息"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-64
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-64
+last_sync: 2026-06-07
+sync_hash: 9ad666cb
 ---
-
-
 **问题现象**
 
 通过ArkTS侧向Native侧注册日志监听接口，当在Native侧任一业务中调用日志接口时，日志将通过回调上报给ArkTS侧。是否可以提供一个示例？

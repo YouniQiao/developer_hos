@@ -2,9 +2,10 @@
 title: "Function Flow Runtime并发范式"
 original_url: /docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-concurrency-paradigm
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-concurrency-paradigm
+last_sync: 2026-06-07
+sync_hash: f4640f9d
 ---
-
-
 为了应对实际业务中，任务执行顺序固定、灵活优先级调度以及复杂的任务依赖关系等场景，FFRT支持串行队列、并发队列和图依赖三种不同的并发范式。
 
 ## 串行队列（Serial Queue）

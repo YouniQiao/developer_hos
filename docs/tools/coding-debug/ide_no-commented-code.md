@@ -3,9 +3,10 @@ title: "@security/no-commented-code"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-commented-code
 format: md
+upstream_id: tools/coding-debug/ide_no-commented-code
+last_sync: 2026-06-07
+sync_hash: 6184b1e9
 ---
-
-
 # @security/no-commented-code
 
 不使用的代码段建议直接删除，不允许通过注释的方式保留。

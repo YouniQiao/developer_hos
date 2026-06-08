@@ -2,8 +2,11 @@
 format: md
 title: "编译报错“Failed to get a resolved OhmUrl by filepath xx”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-10
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-10
+last_sync: 2026-06-07
+sync_hash: f25c0f5b
+upstream_hash: 4692bb693b17
 ---
-
 
 * **场景一：**
 
@@ -86,7 +89,7 @@ original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-comp
 
   **问题确认**
 
-  1. 检查yyy所在模块是否为[字节码HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-har#section16598338112415)，并查看工程级build-profile.json5的useNormalizedOHMUrl是否为true（缺省默认值为false）。如果为true，则默认构建字节码har。
+  1. 检查yyy所在模块是否为[字节码HAR](/docs/tools/coding-debug/ide-hvigor-build-har#section16598338112415)，并查看工程级build-profile.json5的useNormalizedOHMUrl是否为true（缺省默认值为false）。如果为true，则默认构建字节码har。
   2. 如果yyy模块是字节码har，请检查xxx依赖是否已配置在工程级oh-package.json5的dependencies中，但未配置在yyy模块级oh-package.json5的dependencies中。
 
   **处理措施**
@@ -98,7 +101,7 @@ original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-comp
 
 * **场景七：**
 
-  请确认当前使用的DevEco Studio和SDK版本是配套的，点击菜单栏**Help > About DevEco Studio**，**Help > About HarmonyOS SDK**分别查看DevEco Studio和SDK版本，版本配套关系请参考[版本概览](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-502-release)。
+  请确认当前使用的DevEco Studio和SDK版本是配套的，点击菜单栏**Help > About DevEco Studio**，**Help > About HarmonyOS SDK**分别查看DevEco Studio和SDK版本，版本配套关系请参考[版本概览](/docs/dev/release-notes/overview-502-release)。
 
   ![](./img/b78b92b0.png)
 * **场景八：**

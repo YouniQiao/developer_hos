@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "会话管理(C/C++)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-session-management
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-session-management
+last_sync: 2026-06-07
+sync_hash: 962956ea
 ---
-
-
 相机使用预览、拍照、录像、元数据功能前，均需要创建相机会话。
 
 在会话中，可以完成以下功能：

@@ -2,9 +2,10 @@
 format: md
 title: "自定义组件是否能通过容器保存"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-228
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-228
+last_sync: 2026-06-07
+sync_hash: 7c049bfa
 ---
-
-
 自定义组件是 struct 而非 class，因此无法直接存储在容器中。可以通过将自定义组件封装在 Builder 函数中，利用 Builder 的封装来实现存储。
 
 参考代码如下：

@@ -2,9 +2,10 @@
 format: md
 title: "在macOS上使用Profiler录制数据时，必现trace相关泳道显示“No Data”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-13
+upstream_id: FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-13
+last_sync: 2026-06-07
+sync_hash: c99e35eb
 ---
-
-
 **问题现象**
 
 在macOS上使用Profiler录制数据时，可能必现trace相关泳道显示“No Data”。

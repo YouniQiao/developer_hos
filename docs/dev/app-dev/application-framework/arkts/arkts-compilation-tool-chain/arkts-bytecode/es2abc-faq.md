@@ -2,9 +2,10 @@
 title: "方舟字节码生成常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/es2abc-faq
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode/es2abc-faq
+last_sync: 2026-06-07
+sync_hash: d460967e
 ---
-
-
 ## 字节码生成流程
 
 在ArkTS工程的构建流程中，方舟字节码（\*.abc）的生成由工具链中的es2abc编译器组件完成。
@@ -57,7 +58,7 @@ GenerateProgram Failed!
 
 常见触发原因包括：
 
-1. 在[工程级build-profile.json5文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app)中的useNormalizedOHMUrl配置为true。
+1. 在[工程级build-profile.json5文件](/docs/tools/coding-debug/ide-hvigor-build-profile-app)中的useNormalizedOHMUrl配置为true。
 
    当build-profile.json5中启用了该项时，工具链会对模块URL进行标准化处理；
 
@@ -71,9 +72,9 @@ GenerateProgram Failed!
 1. 使用跨模块导入方式时，build-profile.json5文件中的useNormalizedOHMUrl需配置为false。
 2. 清除ohpm和编译缓存，下载ohpm包并重新编译，操作如下：
 
-   * 点击菜单Build->Clean Project，或在控制台执行[ohpm clear](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-clean)。
+   * 点击菜单Build->Clean Project，或在控制台执行[ohpm clear](/docs/tools/ohpm/commands/ide-ohpm-clean)。
    * 点击菜单File->Invalidate Caches...，弹窗选项全选执行并重启。
-   * 在控制台执行[ohpm install](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpm-install)。
+   * 在控制台执行[ohpm install](/docs/tools/ohpm/commands/ide-ohpm-install)。
    * 点击菜单Build->Rebuild Project即可。
 
 ## 编译异常，无具体错误日志

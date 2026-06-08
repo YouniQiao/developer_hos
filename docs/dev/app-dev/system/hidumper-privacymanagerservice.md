@@ -2,9 +2,10 @@
 title: "PrivacyManagerService"
 original_url: /docs/dev/app-dev/system/hidumper-privacymanagerservice
 format: md
+upstream_id: dev/app-dev/system/hidumper-privacymanagerservice
+last_sync: 2026-06-07
+sync_hash: cb746cf9
 ---
-
-
 PrivacyManagerService是访问控制基于[hidumper](/docs/dev/app-dev/system/hidumper)增强开发的命令行能力，可显示访问控制基础信息，获取敏感权限使用记录。
 
 ## 环境准备
@@ -22,9 +23,11 @@ hidumper -s PrivacyManagerService -a '-h'
 **使用样例：**
 
 ```
--------------------------------[ability]-------------------------------
+---
+----------------------------[ability]-------------------------------
 
-----------------------------------PrivacyManagerService----------------------------------
+---
+-------------------------------PrivacyManagerService----------------------------------
 Privacy Dump:
 Usage:
        -h: command help
@@ -46,9 +49,11 @@ hidumper -s PrivacyManagerService -a '-t <tokenId>'
 ```
 hidumper -s PrivacyManagerService -a '-t 536992218'
 
--------------------------------[ability]-------------------------------
+---
+----------------------------[ability]-------------------------------
 
-----------------------------------PrivacyManagerService----------------------------------
+---
+-------------------------------PrivacyManagerService----------------------------------
 Privacy Dump:
 {
   "permissionRecord": [

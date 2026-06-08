@@ -2,9 +2,10 @@
 title: "加密导出导入密钥(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-wrap-key/huks-wrap-key-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-wrap-key/huks-wrap-key-ndk
+last_sync: 2026-06-07
+sync_hash: a96c35d9
 ---
-
-
 从API 20开始，支持加密导出导入密钥。
 
 ## 在CMake脚本中链接相关动态库

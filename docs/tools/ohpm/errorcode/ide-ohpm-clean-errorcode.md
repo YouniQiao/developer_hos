@@ -3,9 +3,10 @@ title: "ohpm clean错误码"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/errorcode/ide-ohpm-clean-errorcode
 format: md
+upstream_id: tools/ohpm/errorcode/ide-ohpm-clean-errorcode
+last_sync: 2026-06-07
+sync_hash: 0f343ee4
 ---
-
-
 # ohpm clean错误码
 
 ## 00626001 清理模块失败

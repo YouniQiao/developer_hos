@@ -2,9 +2,10 @@
 title: "语音变声"
 original_url: /docs/dev/game-dev/games-gamemme-voiceconversion-csharp-0000002393227101
 format: md
+upstream_id: dev/game-dev/games-gamemme-voiceconversion-csharp-0000002393227101
+last_sync: 2026-06-07
+sync_hash: d3f50f69
 ---
-
-
 游戏多媒体语音变声能力，通过对实时语音进行变声处理，可让聊天环境变得更加有趣，提升语音体验。目前，游戏多媒体服务提供了机器人、怪兽、萝莉等多款声音特效。
 
 ## 前提条件

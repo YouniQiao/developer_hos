@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "IFAA免密身份认证"
 original_url: /docs/dev/app-dev/system/system-security/online-authentication-kit-guide/onlineauthentication-ifaa
 format: md
+upstream_id: dev/app-dev/system/system-security/online-authentication-kit-guide/onlineauthentication-ifaa
+last_sync: 2026-06-07
+sync_hash: d6c85ba5
 ---
-
-
 ## 场景介绍
 
 * 开通：提供移动端开通生物特征（指纹/3D人脸）IFAA免密身份认证的能力。使用用户已有的生物特征类型进行开通，会开通移动端对应生物特征类型的IFAA免密身份认证能力。

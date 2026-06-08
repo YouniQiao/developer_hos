@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "媒体开发概览"
 original_url: /docs/dev/app-dev/media/multimedia-development-overview
 format: md
+upstream_id: dev/app-dev/media/multimedia-development-overview
+last_sync: 2026-06-07
+sync_hash: 9275f0d8
 ---
-
-
 HarmonyOS提供丰富的一站式媒体业务开放能力，开发者能够在系统上快速开发主流的媒体业务，满足常规高频使用场景，并提供优秀的性能表现。
 
 ## 媒体系统架构
@@ -104,7 +105,7 @@ AVPlayer提供功能齐全的一体化播放能力，支持多种音视频格式
 * [应用接入AVSession](/docs/dev/app-dev/media/avsession-kit/local-avsession/avsession-access-scene)
 * [应用接入播控自检](/docs/dev/app-dev/media/avsession-kit/playback-control-access-selfcheck)
 * [基于AVPlayer播放DRM节目(ArkTS)](/docs/dev/app-dev/media/drm-kit/drm-avplayer-arkts-integration)
-* [视频转码(ArkTS)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/media-transcoder-arkts)
+* [视频转码(ArkTS)](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-transcoder-arkts)
 * [在应用程序中使用画中画功能](/docs/dev/app-dev/application-framework/arkui/window-manager/window-pipwindow)
 
 **API参考**

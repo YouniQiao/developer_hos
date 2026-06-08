@@ -2,9 +2,10 @@
 title: "如何选择文件保存路径"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-media-library-kit/faqs-media-library-5
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-media-library-kit/faqs-media-library-5
+last_sync: 2026-06-07
+sync_hash: e601c146
 ---
-
-
 官网中保存用户文件提供的方法是FilePicker需要拉起系统应用，再由用户选择具体路径保存文件的，参考文档：[保存用户文件](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/save-user-file)。
 
 保存文件到媒体库时，使用SaveButton控件，示例如下：

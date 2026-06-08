@@ -2,9 +2,10 @@
 title: "测试"
 original_url: /docs/distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-special-test-0000002358875584
 format: md
+upstream_id: distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-special-test-0000002358875584
+last_sync: 2026-06-07
+sync_hash: c55268c0
 ---
-
-
 测试是指游戏在华为平台开启测试，如先锋测试、内测等。
 
 #### 前提条件

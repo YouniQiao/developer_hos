@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "地图选点Button"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-selecting-point
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-selecting-point
+last_sync: 2026-06-07
+sync_hash: 34eabc6d
 ---
-
-
 ## 场景介绍
 
 地图选点Button功能可以帮助开发者调用Button组件拉起Map Kit的地图选点页面，用户在地图中选择位置后，位置相关信息返回Button页面。

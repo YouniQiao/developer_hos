@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "打开文件"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-openfile
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-openfile
+last_sync: 2026-06-07
+sync_hash: f97b95b2
 ---
-
-
 ## 基本概念
 
 打开文件功能为安全防护类应用提供专用接口以获取文件描述符（fd）。

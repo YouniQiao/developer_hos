@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Subpass Shading"
 original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-subpass-shading
 format: md
+upstream_id: dev/app-dev/graphics/xengine-kit-guide/xengine-kit-subpass-shading
+last_sync: 2026-06-07
+sync_hash: 593a2a83
 ---
-
-
 随着游戏场景的复杂化，越来越多的光照效果被应用到游戏场景中，随之也带来大量的光照计算以及带宽消耗。目前通过Tile-Based Deferred Rendering（TBDR）和Forward+等方法可以解决大量光照的渲染时间消耗，但是大量带宽的占用问题还是没有解决，Subpass Shading能力主要减少计算过程中的读写从而减少带宽的占用。
 
 下图说明Subpass Shading节省渲染通道1和Compute Pass从Device memory上面的一次读写带宽。

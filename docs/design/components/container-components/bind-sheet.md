@@ -3,8 +3,10 @@ title: 半模态面板
 sidebar_label: 半模态面板
 original_url: /docs/design/components/container-components/bind-sheet
 format: md
+upstream_id: design/components/container-components/bind-sheet
+last_sync: 2026-06-07
+sync_hash: 3a68efce
 ---
-
 \{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 半模态面板

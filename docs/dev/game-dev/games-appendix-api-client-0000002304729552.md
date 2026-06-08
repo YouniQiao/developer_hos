@@ -2,9 +2,10 @@
 title: "创建API客户端"
 original_url: /docs/dev/game-dev/games-appendix-api-client-0000002304729552
 format: md
+upstream_id: dev/game-dev/games-appendix-api-client-0000002304729552
+last_sync: 2026-06-07
+sync_hash: a0ad0e5d
 ---
-
-
 API客户端是AppGallery Connect用于管理用户访问AppGallery Connect API的身份凭据，您可以给不同角色创建不同的API客户端，使不同角色可以访问对应权限的AppGallery Connect API。在访问某个API前，必须创建有权访问该API的API客户端。
 
 1. 登录[AppGallery Connect网站](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“用户与访问”。

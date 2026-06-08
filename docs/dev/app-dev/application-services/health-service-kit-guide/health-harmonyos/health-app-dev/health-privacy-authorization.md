@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "拉起运动健康App隐私授权"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-privacy-authorization
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-app-dev/health-privacy-authorization
+last_sync: 2026-06-07
+sync_hash: 9a7d254e
 ---
-
-
 ## 场景介绍
 
 用户在设备上首次使用运动健康服务时，需要用户同意运动健康服务隐私协议，当前隐私授权依赖运动健康App，需引导用户打开运动健康App并完成隐私授权。

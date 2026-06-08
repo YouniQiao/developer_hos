@@ -1,9 +1,10 @@
 ---
 title: "资源泄漏类问题优化建议"
 original_url: /docs/quality/stability-leak-opt
+upstream_id: /docs/quality/stability-leak-opt
+last_sync: 2026-06-07
+sync_hash: 59dcbfbf
 ---
-
-
 # 资源泄漏类问题优化建议
 
 ## 内存泄漏问题优化建议

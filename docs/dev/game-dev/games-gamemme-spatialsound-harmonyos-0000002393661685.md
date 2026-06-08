@@ -2,8 +2,11 @@
 title: "3D音效"
 original_url: /docs/dev/game-dev/games-gamemme-spatialsound-harmonyos-0000002393661685
 format: md
+upstream_id: dev/game-dev/games-gamemme-spatialsound-harmonyos-0000002393661685
+last_sync: 2026-06-07
+sync_hash: 88814ff2
+upstream_hash: 7505ae3e5a89
 ---
-
 
 3D音效可将一定空间范围内无方位感的声音进行方位和距离衰减的效果渲染，使之听起来更有沉浸感。同时您还需要了解的是，3D音效属于端侧的音频渲染能力，开启后会增加额外的功耗。
 

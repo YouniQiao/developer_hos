@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "如何更换回执服务器证书的问题"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-12
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-12
+last_sync: 2026-06-07
+sync_hash: 5f22ca9c
 ---
-
-
 * 场景1：新旧证书均为商用CA签发证书或自签证书但CA未改变。
 
   您只需更换回执服务器上的证书，不需要登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站做其他修改。

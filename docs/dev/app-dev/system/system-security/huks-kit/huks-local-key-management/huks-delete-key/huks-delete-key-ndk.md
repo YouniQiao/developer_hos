@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "密钥删除(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-delete-key/huks-delete-key-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-delete-key/huks-delete-key-ndk
+last_sync: 2026-06-07
+sync_hash: 0f99f2ee
+upstream_hash: 19dece899637
 ---
-
 
 为保证数据安全性，当不需要使用该密钥时，应该删除密钥。
 

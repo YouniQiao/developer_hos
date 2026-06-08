@@ -3,8 +3,10 @@ title: "刷新access_token"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-account1-0000001128597858
 format: md
+upstream_id: monetize/promotion/marketing-api-account1-0000001128597858
+last_sync: 2026-06-07
+sync_hash: 563913b8
 ---
-
 # 刷新access\_token
 
 用Refresh Token来获取新的Access Token。建议在Access Token即将过期的时候调用，Access Token存在有效期，建议定期刷新。

@@ -2,9 +2,10 @@
 title: "Resource Leak（资源泄漏）检测"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/resource-leak-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/resource-leak-guidelines
+last_sync: 2026-06-07
+sync_hash: 78693e1d
 ---
-
-
 ## 简介
 
 资源泄漏是指句柄、线程或内存等资源，在应用运行过程中没有被正确释放，导致资源被长期占用且无法被其他应用使用，如果某一类资源耗尽，系统可能出现卡死或重启等异常情况。为了应对资源泄漏问题，系统会提供资源泄漏检测、判决、维测日志抓取、日志上报的能力，为开发者提供详细的维测日志以辅助故障定位。本文将主要介绍[资源泄漏检测能力](#实现原理)以及[资源泄漏日志的规格](#日志获取)。
@@ -68,11 +69,11 @@ format: md
 
   ![](./img/7aabf6a2.png)
 
-  1. native内存泄漏的调用栈（memleak-native-[process\_name]-[pid]-[timestamp].txt）无法直接在DevEco Studio打开，需要修改后缀名为.nas，然后使用DevEco Studio-Profiler-打开并分析，详情见[内存分析及优化](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-allocations-memory)。
-  2. js泄漏的维测日志 memleak-js-[process\_name]-[pid]-[tid]-[timestamp].rawheap 为二进制内存快照文件，需要通过[translator工具](/docs/dev/app-dev/system/rawheap-translator)转换为.heapsnapshot文件，通过DevEco Studio或浏览器打开展示，详情见[Snapshot离线导入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-snapshot-basic-operations#section6760173514388)。
+  1. native内存泄漏的调用栈（memleak-native-[process\_name]-[pid]-[timestamp].txt）无法直接在DevEco Studio打开，需要修改后缀名为.nas，然后使用DevEco Studio-Profiler-打开并分析，详情见[内存分析及优化](/docs/tools/coding-debug/ide-insight-session-allocations-memory)。
+  2. js泄漏的维测日志 memleak-js-[process\_name]-[pid]-[tid]-[timestamp].rawheap 为二进制内存快照文件，需要通过[translator工具](/docs/dev/app-dev/system/rawheap-translator)转换为.heapsnapshot文件，通过DevEco Studio或浏览器打开展示，详情见[Snapshot离线导入](/docs/tools/coding-debug/ide-snapshot-basic-operations#section6760173514388)。
 * 方式二：通过DevEco Studio主动采集日志。
 
-  DevEco Studio的profiler模块提供[Allocation](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-allocations-memory)（获取native调用栈profiler）和 **[Snapshot](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arkts-memory-leak-analysis)** （获取JS层heapdump）两种采集方式：
+  DevEco Studio的profiler模块提供[Allocation](/docs/tools/coding-debug/ide-insight-session-allocations-memory)（获取native调用栈profiler）和 **[Snapshot](/docs/tools/coding-debug/ide-arkts-memory-leak-analysis)** （获取JS层heapdump）两种采集方式：
 
   ![](./img/cc807cb3.png)
 * 方式三：通过HiAppEvent接口订阅。
@@ -379,8 +380,8 @@ summary: 879
 **故障日志文件名：** memleak-js-[process\_name]-[pid]-[tid]-[timestamp].rawheap（**方式一**）或RESOURCE\_OVERLIMIT\_[TIMESTAMP]\_[PID].log（**方式三**）。
 
 * 该文件记录了对象堆内存的详细信息。
-* 日志文件需要将后缀名修改为.rawheap文件，再通过[translator工具](/docs/dev/app-dev/system/rawheap-translator)转换为.heapsnapshot文件，通过DevEco Studio或浏览器打开展示，详情见[Snapshot离线导入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-snapshot-basic-operations#section6760173514388)。
-* API14后，需要将日志文件后缀名修改为.rawheap后，将其导入DevEco Studio并展示，详情见[Raw Heap离线导入](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-snapshot-basic-operations#section6760173514388)。
+* 日志文件需要将后缀名修改为.rawheap文件，再通过[translator工具](/docs/dev/app-dev/system/rawheap-translator)转换为.heapsnapshot文件，通过DevEco Studio或浏览器打开展示，详情见[Snapshot离线导入](/docs/tools/coding-debug/ide-snapshot-basic-operations#section6760173514388)。
+* API14后，需要将日志文件后缀名修改为.rawheap后，将其导入DevEco Studio并展示，详情见[Raw Heap离线导入](/docs/tools/coding-debug/ide-snapshot-basic-operations#section6760173514388)。
 
 ### JS泄漏聚类规则
 
@@ -518,7 +519,8 @@ MemFree:                               1686056 kB
 ......
 
 LOGGER_MEMCHECK_SMAPS_INFO
--------------------------------[memory]-------------------------------
+---
+----------------------------[memory]-------------------------------
                                     Shared      Shared      Private     Private
 Size        Rss         Pss         Clean       Dirty       Clean       Dirty       Swap        SwapPss     Counts                        Name
 2048        0           0           0           0           0           0           0           0           1                             /dev/__parameters__/param_sec_dac
@@ -555,8 +557,10 @@ LOGGER_MEMCHECK_SAMPLE_NMD_INFO
 #### *********************
 LOGGER_MEMCHECK_PROC_INFO
 ASHMEM_PROCESS_INFO
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
+---
+------------------------------------------------------------------------------
+---
+------------------------------------------------------------------------------
 Process_name Process_ID Fd Cnode_idx Applicant_Pid Ashmem_name Virtual_size Physical_size magic
 XXXXX           816             22      328234  816     dev/ashmem/PolicyVolumeMap      541             4096            7
 #### ******** endl ********

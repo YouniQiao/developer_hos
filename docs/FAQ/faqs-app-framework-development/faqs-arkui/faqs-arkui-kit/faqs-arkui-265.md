@@ -2,8 +2,11 @@
 title: "如何实现点击输入框时会拉起软键盘，点击Button时软键盘关闭"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-265
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-265
+last_sync: 2026-06-07
+sync_hash: a03fe917
+upstream_hash: 3469c7a4b9f9
 ---
-
 
 可以通过调用输入法服务 @kit.IMEKit 的 stopInputSession()方法来隐藏软键盘。示例代码如下：
 

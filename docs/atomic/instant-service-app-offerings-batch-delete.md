@@ -2,9 +2,10 @@
 title: "批量删除商品"
 original_url: /docs/dev/atomic-dev/instant-service-app-offerings/instant-service-app-offerings-batch-delete
 format: md
+upstream_id: dev/atomic-dev/instant-service-app-offerings/instant-service-app-offerings-batch-delete
+last_sync: 2026-06-07
+sync_hash: 1c8aa212
 ---
-
-
 在商品状态为“已下架”状态时，您可以点击“删除”按钮或“批量删除”按钮，以完成删除商品操作。
 
 详细操作指导如下：

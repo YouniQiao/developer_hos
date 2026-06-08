@@ -1,12 +1,12 @@
 ---
-
 title: "开发云对象"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-cloudobj-coding
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-cloudobj-coding
+last_sync: 2026-06-07
+sync_hash: 26d6e6d6
 ---
-
-
 # 开发云对象
 
 云对象创建完成后，您便可以直接在云对象中编写需要实现的方法。例如，通过云对象实现add与subtract两个方法。

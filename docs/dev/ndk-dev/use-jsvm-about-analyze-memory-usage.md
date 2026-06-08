@@ -2,9 +2,10 @@
 title: "使用DevTools进行网页内存分析"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-analyze-memory-usage
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-analyze-memory-usage
+last_sync: 2026-06-07
+sync_hash: 51bf4098
 ---
-
-
 ## 开启DevTools
 
 DevTools为Chrome浏览器自带工具，[下载](https://www.google.com.hk/intl/en_uk/chrome/)并启动Chrome浏览器后，在需要进行内存分析的页面按下F12或者Shift+Ctrl+I启动DevTools开发者工具。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "邀请组队"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/knock-share/knock-share-between-phones/knock-share-between-phones-group
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/knock-share/knock-share-between-phones/knock-share-between-phones-group
+last_sync: 2026-06-07
+sync_hash: aa29609d
 ---
-
-
 ## 注册碰一碰事件
 
 在组队房间邀请界面注册碰一碰事件。

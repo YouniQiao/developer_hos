@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "业务概述"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-assetdownload-introduction
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-assetdownload-introduction
+last_sync: 2026-06-07
+sync_hash: 5e00e072
+upstream_hash: 3f009e713e69
 ---
-
 
 从5.1.0(18)版本开始，新增资源包后台下载。
 

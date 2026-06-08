@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "血压"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-blood-pressure
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-blood-pressure
+last_sync: 2026-06-07
+sync_hash: 5728047d
 ---
-
-
 此数据记录用户在某时刻的血压数据。
 
 Harmony SDK类型常量：[samplePointHelper.bloodPressure.DATA\_TYPE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-samplepointhelper#常量-1)

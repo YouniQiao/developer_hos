@@ -3,9 +3,10 @@ title: "模拟器错误码"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-emulator-faqs
 format: md
+upstream_id: tools/coding-debug/ide-emulator-faqs
+last_sync: 2026-06-07
+sync_hash: 1f6a055a
 ---
-
-
 # 模拟器错误码
 
 当模拟器运行出现错误时，您可以向我们提交错误信息。在扩展菜单栏打开<strong>Bug报告</strong>界面：

@@ -3,9 +3,10 @@ title: "插件参数设置"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/plug-in-2-0000002471344133/plugin-parameter-setting-0000002493084596
 format: md
+upstream_id: distribute/xiaoyi/plug-in-2-0000002471344133/plugin-parameter-setting-0000002493084596
+last_sync: 2026-06-07
+sync_hash: 66d12937
 ---
-
-
 # 插件参数设置
 
 添加插件后点击【插件参数设置】图标进入设置页面，支持执行设置、输入参数设置和输出参数设置：

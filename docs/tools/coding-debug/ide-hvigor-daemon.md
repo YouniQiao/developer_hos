@@ -3,9 +3,10 @@ title: "守护进程"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-daemon
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-daemon
+last_sync: 2026-06-07
+sync_hash: c3102ad9
 ---
-
-
 # 守护进程
 
 守护进程是作为后台进程运行而不是在交互式用户的直接控制下运行的计算机程序。Hvigor守护进程是一个持续存在的后台进程，可以减少运行构建所需的时间。

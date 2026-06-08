@@ -2,9 +2,10 @@
 title: "创建房间"
 original_url: /docs/dev/game-dev/gameobe-createjoinroom-js-0000002361670436
 format: md
+upstream_id: dev/game-dev/gameobe-createjoinroom-js-0000002361670436
+last_sync: 2026-06-07
+sync_hash: acaeaca6
 ---
-
-
 房间，是玩家进行对战的载体。因此，创建一个房间是开始游戏联机对战的前提。玩家成功创建一个对战房间后，即成为该房间的房主，并自动加入到该房间。需要注意的是，一个房间不建议长期循环使用，否则可能会被强制解散。
 
 ## 前提条件

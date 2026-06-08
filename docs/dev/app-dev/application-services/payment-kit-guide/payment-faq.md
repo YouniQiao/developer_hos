@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Payment Kit常见问题"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-faq
+last_sync: 2026-06-07
+sync_hash: a57511ea
 ---
-
-
 * **[接入开发时，请求参数的签名、结果验签在什么场景使用？](/docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-1)**
 * **[Payment Kit的签名公私钥怎么获取？](/docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-2)**
 * **[GET请求的bodySign是对谁签名得到的？](/docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-3)**

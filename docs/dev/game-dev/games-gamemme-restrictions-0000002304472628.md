@@ -2,9 +2,10 @@
 title: "使用限制"
 original_url: /docs/dev/game-dev/games-gamemme-restrictions-0000002304472628
 format: md
+upstream_id: dev/game-dev/games-gamemme-restrictions-0000002304472628
+last_sync: 2026-06-07
+sync_hash: d0cfaf1b
 ---
-
-
 本章节将为您详细介绍游戏多媒体服务在设备、配额方面的限制，这些限制可能会根据实际情况随时更新，请您注意文档变化。
 
 ## API 限制

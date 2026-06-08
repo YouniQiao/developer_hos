@@ -2,9 +2,10 @@
 title: "绘制文本"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-svg/ui-js-components-svg-text
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-svg/ui-js-components-svg-text
+last_sync: 2026-06-07
+sync_hash: 4246eafd
 ---
-
-
 svg组件还可以绘制文本。
 
 ## 文本

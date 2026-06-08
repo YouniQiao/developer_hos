@@ -2,9 +2,10 @@
 title: "意图注册"
 original_url: /docs/distribute/agc/agc-help-insight-config-poi-0000002349175932/agc-help-regist-intents-0000002409402350
 format: md
+upstream_id: distribute/agc/agc-help-insight-config-poi-0000002349175932/agc-help-regist-intents-0000002409402350
+last_sync: 2026-06-07
+sync_hash: 3dd57a39
 ---
-
-
 1. 确认需要使用的意图之后，工程中右击“entry”目录，选择“New > Insight Intent”新建意图。
 
    ![](../img/agc-help-regist-intents-0000002409402350_0.png)

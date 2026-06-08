@@ -2,9 +2,10 @@
 title: "内置对象的迁移"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-state-management-v1-v2-migration-guide/arkts-v1-v2-migration-inner-object
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-state-management-v1-v2-migration-guide/arkts-v1-v2-migration-inner-object
+last_sync: 2026-06-07
+sync_hash: a2b4c839
 ---
-
-
 本文档主要介绍组件内置对象从V1向V2的迁移，涉及如下装饰器。
 
 | V1装饰器名称/场景 | V2装饰器名称 |

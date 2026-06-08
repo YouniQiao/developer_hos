@@ -2,9 +2,10 @@
 title: "前台任务低功耗"
 original_url: /docs/quality/low-power-consumption-of-foreground-tasks
 format: md
+upstream_id: /docs/quality/low-power-consumption-of-foreground-tasks
+last_sync: 2026-06-07
+sync_hash: 1e1e89b8
 ---
-
-
 # 前台任务低功耗
 
 * **[省电和深色模式下低功耗设计](/docs/quality/low-power-design-in-dark-mode)**

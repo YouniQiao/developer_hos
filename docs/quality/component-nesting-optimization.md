@@ -1,8 +1,10 @@
 ---
 title: "组件嵌套优化"
 original_url: /docs/quality/component-nesting-optimization
+upstream_id: /docs/quality/component-nesting-optimization
+last_sync: 2026-06-07
+sync_hash: 3215d0a9
 ---
-
 # 组件嵌套优化
 
 本文通过原理概念、优化场景和实践数据对比三个角度，详细介绍了组件嵌套的优化，着重从优化场景角度为开发者阐明组件嵌套的优化场景以及优化策略。

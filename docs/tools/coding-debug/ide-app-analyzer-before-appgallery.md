@@ -3,9 +3,10 @@ title: "上架前体检"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-app-analyzer-before-appgallery
 format: md
+upstream_id: tools/coding-debug/ide-app-analyzer-before-appgallery
+last_sync: 2026-06-07
+sync_hash: b58a1eff
 ---
-
-
 # 上架前体检
 
 从DevEco Studio 6.0.0 Beta1版本开始，AppAnalyzer新增上架前体检，针对上架阻塞问题进行快速检测，提前发现可能影响上架的问题，检测完成之后可以选择上传检测结果，用于应用市场上架参考，提升上架效率。

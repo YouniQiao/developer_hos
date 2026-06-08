@@ -2,9 +2,10 @@
 title: "屏幕"
 original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-screen
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-device/apis-screen
+last_sync: 2026-06-07
+sync_hash: 4d008363
 ---
-
-
 ## has.setScreenBrightness
 
 has.setScreenBrightness (Object object)

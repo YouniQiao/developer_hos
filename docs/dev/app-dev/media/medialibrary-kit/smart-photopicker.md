@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用PhotoPicker推荐图片"
 original_url: /docs/dev/app-dev/media/medialibrary-kit/smart-photopicker
 format: md
+upstream_id: dev/app-dev/media/medialibrary-kit/smart-photopicker
+last_sync: 2026-06-07
+sync_hash: 4ed54226
 ---
-
-
 应用在调用PhotoPicker接口时，如果配置了PhotoPicker图片推荐参数，当设备中有满足图片推荐参数的图片，且设备中的图片已经分析完成时，PhotoPicker界面除了展示全量的图片外，还会展示符合条件的推荐图片供用户参考选择，从而缩短用户筛选图片的时间。
 
 * 选择特定类型（[RecommendationType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-photoaccesshelper-e#recommendationtype11)）的图片，如身份证、银行卡、驾驶证、行驶证、二维码等。当有符合应用指定类型的图片传入时，将显示对应的图片推荐页。

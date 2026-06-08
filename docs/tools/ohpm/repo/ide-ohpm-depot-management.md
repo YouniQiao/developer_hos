@@ -2,9 +2,10 @@
 title: "仓库管理"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-depot-management
+upstream_id: tools/ohpm/repo/ide-ohpm-depot-management
+last_sync: 2026-06-07
+sync_hash: 45b3b62b
 ---
-
-
 # 仓库管理
 
 仓库管理主要负责管理仓库信息，包括仓库中所有包权限管理，包的上传与下架和uplinks管理。

@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-magic-numbers"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-magic-numbers
 format: md
+upstream_id: tools/coding-debug/ide_no-magic-numbers
+last_sync: 2026-06-07
+sync_hash: 298f73e5
 ---
-
-
 # @typescript-eslint/no-magic-numbers
 
 禁止使用魔法数字。

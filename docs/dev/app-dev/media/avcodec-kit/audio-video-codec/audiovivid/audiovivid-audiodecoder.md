@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Audio Vivid解码"
 original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/audiovivid/audiovivid-audiodecoder
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/audio-video-codec/audiovivid/audiovivid-audiodecoder
+last_sync: 2026-06-07
+sync_hash: 3757c9d7
 ---
-
-
 获取解封装后的数据，送入解码器中，使用解码器获取PCM和Metadata元数据。详细的API请参考[AudioCodec模块](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-audiocodec)。
 
 Audio Vivid解码当前支持的规格如下表所示。

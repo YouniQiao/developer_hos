@@ -3,9 +3,10 @@ title: "意图装饰器生成和小艺智能体创建"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-insight-intent2
 format: md
+upstream_id: tools/ai-assist/ide-insight-intent2
+last_sync: 2026-06-07
+sync_hash: 11075833
 ---
-
-
 # 意图装饰器生成和小艺智能体创建
 
 通过装饰类或方法可以将应用的功能定义为"意图"，然后将应用功能以"意图"形式集成至系统入口。用户通过系统入口（如语音助手、智能推荐卡片）触发意图执行，即可便捷使用应用提供的功能。

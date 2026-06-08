@@ -2,9 +2,10 @@
 format: md
 title: "设备管理点击“新建模拟器”按钮无响应"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-29
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-29
+last_sync: 2026-06-07
+sync_hash: 8b11d4e4
 ---
-
-
 **问题现象**
 
 点击New Emulator按钮无响应。

@@ -2,9 +2,10 @@
 title: "创建轮播 (Swiper)"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-media-display/arkts-layout-development-create-looping
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-media-display/arkts-layout-development-create-looping
+last_sync: 2026-06-07
+sync_hash: fc258a90
 ---
-
-
 [Swiper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper)组件提供滑动轮播显示的能力。Swiper本身是一个容器组件，当设置了多个子组件后，可以对这些子组件进行轮播显示。通常，在一些应用首页显示推荐的内容时，需要用到轮播显示的能力。
 
 针对复杂页面场景，可以使用Swiper组件的预加载机制，利用主线程的空闲时间来提前构建和布局绘制组件，优化滑动体验。

@@ -2,9 +2,10 @@
 title: "如何读取指定文件内容，并转为具体对象"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-44
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-44
+last_sync: 2026-06-07
+sync_hash: 14add8fb
 ---
-
-
 可以使用[getRawFileContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager#getrawfilecontent9)方法，参考代码如下：
 
 ```

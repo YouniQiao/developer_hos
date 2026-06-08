@@ -2,9 +2,10 @@
 title: "ArkTS语言基础类库"
 original_url: /docs/dev/atomic-dev/atomic-basic-capability-development/atomic-arkts-utils
 format: md
+upstream_id: dev/atomic-dev/atomic-basic-capability-development/atomic-arkts-utils
+last_sync: 2026-06-07
+sync_hash: 2e78dcc7
 ---
-
-
 ArkTS是HarmonyOS应用开发的官方高级语言。
 
 ArkTS提供了[声明式UI范式](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-declarative-ui-description)、[状态管理](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-overview)、[渲染控制](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-overview)等相应的能力，让开发者能够以更简洁、更自然的方式开发应用。

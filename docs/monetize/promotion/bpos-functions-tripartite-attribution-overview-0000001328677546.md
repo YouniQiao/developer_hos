@@ -3,8 +3,10 @@ title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-functions-tripartite-attribution-overview-0000001328677546
 format: md
+upstream_id: monetize/promotion/bpos-functions-tripartite-attribution-overview-0000001328677546
+last_sync: 2026-06-07
+sync_hash: 58934ac5
 ---
-
 # 概述
 
 鲸鸿动能广告支持使用业界常用的监测平台进行转化效果跟踪，当前支持的监测平台如下：

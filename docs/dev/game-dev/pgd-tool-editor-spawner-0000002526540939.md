@@ -2,9 +2,10 @@
 title: "PGD Spawner组件"
 original_url: /docs/dev/game-dev/pgd-tool-editor-spawner-0000002526540939
 format: md
+upstream_id: dev/game-dev/pgd-tool-editor-spawner-0000002526540939
+last_sync: 2026-06-07
+sync_hash: 620e91be
 ---
-
-
 PGD Spawner组件用于对工程中的Prefab资产进行管理。
 
 通过与已创建好的PGD Entity组件进行映射配置绑定，实现基于对象池管理机制，并通过极简代码在运行时基于Prefab进行对象派生。

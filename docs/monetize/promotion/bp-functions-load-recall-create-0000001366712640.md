@@ -3,8 +3,10 @@ title: "创建卸载召回任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-load-recall-create-0000001366712640
 format: md
+upstream_id: monetize/promotion/bp-functions-load-recall-create-0000001366712640
+last_sync: 2026-06-07
+sync_hash: 293861b7
 ---
-
 # 创建卸载召回任务
 
 ## 背景信息

@@ -2,9 +2,10 @@
 title: "变更核准（备案）"
 original_url: /docs/dev/atomic-dev/atomic-service-cloud/atomic-service-filing-change
 format: md
+upstream_id: dev/atomic-dev/atomic-service-cloud/atomic-service-filing-change
+last_sync: 2026-06-07
+sync_hash: bd93cdae
 ---
-
-
 在华为云核准（备案）系统中可以同时修改主体信息和元服务信息。操作步骤如下：
 
 1. 登录[华为云核准（备案）系统](https://beian.huaweicloud.com/?utm_source=HUAWEI%2BDeveloper&utm_adplace=AdPlace099034)，左侧菜单栏点击“我的核准（备案）”，右侧页面点击“变更核准（备案）”。

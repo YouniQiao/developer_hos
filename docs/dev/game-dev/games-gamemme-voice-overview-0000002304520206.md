@@ -2,7 +2,8 @@
 title: "概述"
 original_url: /docs/dev/game-dev/games-gamemme-voice-overview-0000002304520206
 format: md
+upstream_id: dev/game-dev/games-gamemme-voice-overview-0000002304520206
+last_sync: 2026-06-07
+sync_hash: 76bd25dd
 ---
-
-
 实时语音功能主要用于实现不同客户端之间的实时语音对讲能力。借助“语音房间”这一虚拟的音频空间，将不同玩家加入到同一语音房间中，即可实现实时语音通话功能，在实时语音过程中还可以实现设置麦克风状态、调节扬声器播放音量、禁言、屏蔽等功能。同时，游戏多媒体SDK还支持范围语音、3D音效以及变声特性，主要用于实现玩家实时语音时模拟真实世界的空间音效，打造沉浸式的声音效果，并提升聊天趣味性。

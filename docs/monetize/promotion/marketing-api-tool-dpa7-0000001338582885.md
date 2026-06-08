@@ -3,8 +3,10 @@ title: "查询商品库入库失败记录"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-dpa7-0000001338582885
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-dpa7-0000001338582885
+last_sync: 2026-06-07
+sync_hash: 6696dfbb
 ---
-
 # 查询商品库入库失败记录
 
 您通过本接口可以查询商品库入库失败记录。

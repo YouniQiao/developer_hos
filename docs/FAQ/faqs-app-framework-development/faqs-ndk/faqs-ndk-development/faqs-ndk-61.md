@@ -2,9 +2,10 @@
 title: "传入自定义类型对象到Native侧时，index.d.ts文件如何声明"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-61
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-61
+last_sync: 2026-06-07
+sync_hash: a8e6a7cc
 ---
-
-
 此处以testCb为例
 
 ```

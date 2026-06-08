@@ -2,9 +2,10 @@
 title: "静态方式加载Native模块"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-import-native-module
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-import-native-module
+last_sync: 2026-06-07
+sync_hash: 62c7498c
 ---
-
-
 在ES6(ECMAScript 6.0)模块设计中，使用import语法加载其他文件导出的内容是ECMA规范所定义的语法规则。为支持开发者使用该功能导入Native模块（so）导出的内容，ArkTS进行了相关适配，并提供了以下几种支持写法。
 
 ## 直接导入

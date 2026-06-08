@@ -2,9 +2,10 @@
 title: "下载域名配置文件"
 original_url: /docs/distribute/agc/agc-help-domain-api-reference-0000002271160649/agc-help-domain-api-download-domain-config-0000002271160653
 format: md
+upstream_id: distribute/agc/agc-help-domain-api-reference-0000002271160649/agc-help-domain-api-download-domain-config-0000002271160653
+last_sync: 2026-06-07
+sync_hash: 74b209b1
 ---
-
-
 #### 功能介绍
 
 此接口用于以文件流的形式进行直接下载域名配置文件。

@@ -2,9 +2,10 @@
 title: "首次核准（备案）"
 original_url: /docs/dev/game-dev/quickgame-filing-app-first-0000001819107801
 format: md
+upstream_id: dev/game-dev/quickgame-filing-app-first-0000001819107801
+last_sync: 2026-06-07
+sync_hash: 83788d91
 ---
-
-
 ## 前提条件
 
 已前往应用市场下载最新版本的华为云App。

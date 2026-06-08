@@ -2,9 +2,10 @@
 title: "应用与网页共用账号密码"
 original_url: /docs/dev/app-dev/system/system-security/passwordvault/password-shared-apps-web-pages
 format: md
+upstream_id: dev/app-dev/system/system-security/passwordvault/password-shared-apps-web-pages
+last_sync: 2026-06-07
+sync_hash: db68a91a
 ---
-
-
 ## 简介
 
 密码保险箱支持在应用和网页中保存和填充账号密码，为了提供更好的密码管理体验，提供了应用和网页共用账号数据的能力。

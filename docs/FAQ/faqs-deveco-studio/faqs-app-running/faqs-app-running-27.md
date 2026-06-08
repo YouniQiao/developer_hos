@@ -2,9 +2,10 @@
 format: md
 title: "使用模拟器发起HTTPS请求时如何安装数字证书"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-27
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-27
+last_sync: 2026-06-07
+sync_hash: 4865adc4
 ---
-
-
 **问题现象**
 
 在使用网络代理发送HTTPS请求时，需要安装网站服务器的数字证书。

@@ -3,8 +3,10 @@ title: "功能调试"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-deeplink-debug-0000001348812981
 format: md
+upstream_id: monetize/promotion/bp-functions-deeplink-debug-0000001348812981
+last_sync: 2026-06-07
+sync_hash: f56538d6
 ---
-
 # 功能调试
 
 ## 前提条件

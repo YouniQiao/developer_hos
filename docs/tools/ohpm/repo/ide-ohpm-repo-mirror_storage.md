@@ -2,9 +2,10 @@
 title: "ohpm-repo mirror_storage"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-mirror_storage
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-mirror_storage
+last_sync: 2026-06-07
+sync_hash: 80771d7a
 ---
-
-
 # ohpm-repo mirror\_storage
 
 同步sftp存储的包。

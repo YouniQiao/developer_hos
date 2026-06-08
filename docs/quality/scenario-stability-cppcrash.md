@@ -1,6 +1,10 @@
 ---
 title: "CppCrash类问题案例"
 original_url: /docs/quality/scenario-stability-cppcrash
+upstream_id: /docs/quality/scenario-stability-cppcrash
+last_sync: 2026-06-07
+sync_hash: 885a2ad6
+upstream_hash: dcebce199b60
 ---
 
 # CppCrash类问题案例
@@ -92,7 +96,7 @@ ipc在线程2中使用先前保存的env,出现崩溃
 
 ### 建议与总结
 
-对于栈顶崩溃在libace\_napi.z.so、libark\_jsruntime.so等库操作env的问题，并且出现概率相对较高，在CppCrash日志的调用栈难以直接分析出崩溃原因情况下，可以考虑开启[多线程检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-multi-thread-check)帮助开发者快速定位问题。此外，在多线程操作STL容器（如vector、map、set等）的场景中，由于STL容器是非线程安全的，如果多线程进行添加和删除操作，容易出现SIGSEGV类崩溃，如果崩溃现场代码与STL容器相关，也可以考虑是多线程竞争问题。
+对于栈顶崩溃在libace\_napi.z.so、libark\_jsruntime.so等库操作env的问题，并且出现概率相对较高，在CppCrash日志的调用栈难以直接分析出崩溃原因情况下，可以考虑开启[多线程检测](/docs/tools/coding-debug/ide-multi-thread-check)帮助开发者快速定位问题。此外，在多线程操作STL容器（如vector、map、set等）的场景中，由于STL容器是非线程安全的，如果多线程进行添加和删除操作，容易出现SIGSEGV类崩溃，如果崩溃现场代码与STL容器相关，也可以考虑是多线程竞争问题。
 
 ## 案例3：内存访问类崩溃问题
 
@@ -115,7 +119,7 @@ ipc在线程2中使用先前保存的env,出现崩溃
 
 ### 分析步骤
 
-根据业务逻辑分析，node应该保存在堆上，node地址不可能落在libace\_napi\_ark.z.so的代码段。从问题的现象分析，大概率是踩内存问题。踩内存问题可使用[HWASan工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hwasan)排查问题。于是后续使用ASan版本进行压测复现，也找到了稳定必现的场景。ASan版本检测出来的问题也和上面崩溃栈反映的问题一致。ASan日志显示的踩内存类型是heap-use-after-free，根据日志信息弄清从内存申请、内存释放到使用已被释放的内存整个过程。经过分析后发现业务代码对同一个地址（0x003a375eb724）进行重复释放，在重复释放内存操作时，使用该地址去访问了其对象成员，因此报出了use-after-free（使用已经释放的内存）问题。
+根据业务逻辑分析，node应该保存在堆上，node地址不可能落在libace\_napi\_ark.z.so的代码段。从问题的现象分析，大概率是踩内存问题。踩内存问题可使用[HWASan工具](/docs/tools/coding-debug/ide-hwasan)排查问题。于是后续使用ASan版本进行压测复现，也找到了稳定必现的场景。ASan版本检测出来的问题也和上面崩溃栈反映的问题一致。ASan日志显示的踩内存类型是heap-use-after-free，根据日志信息弄清从内存申请、内存释放到使用已被释放的内存整个过程。经过分析后发现业务代码对同一个地址（0x003a375eb724）进行重复释放，在重复释放内存操作时，使用该地址去访问了其对象成员，因此报出了use-after-free（使用已经释放的内存）问题。
 
 ASan核心日志如下：
 

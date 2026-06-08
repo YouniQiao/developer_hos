@@ -2,9 +2,10 @@
 title: "getTarget接口：获取状态管理框架代理前的原始对象"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-gettarget
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-gettarget
+last_sync: 2026-06-07
+sync_hash: 001bcfba
 ---
-
-
 为了获取状态管理框架代理前的原始对象，开发者可以使用[getTarget接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#gettarget)。
 
 在阅读本文档前，建议提前阅读：[@Observed](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-observed-and-objectlink)、[@ObservedV2](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-data-object-state/arkts-new-observedv2-and-trace)。

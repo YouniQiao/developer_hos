@@ -2,9 +2,10 @@
 title: "使用WebGL绘制图形"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-webgl/webgl-2d-guidelines
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-webgl/webgl-2d-guidelines
+last_sync: 2026-06-07
+sync_hash: d8042a10
 ---
-
-
 ## 场景介绍
 
 WebGL的全称为Web Graphics Library（网页图形库），主要用于交互式渲染2D图形。目前HarmonyOS中使用的WebGL是基于OpenGL裁剪的OpenGL ES，可以在HTML5的Canvas元素对象中使用，无需使用插件，支持跨平台。WebGL程序是由JavaScript代码组成的，其中使用的API可以利用用户设备提供的GPU硬件完成图形渲染和加速。更多信息请参考[WebGL™标准](https://www.khronos.org/registry/webgl/specs/latest/1.0/)。

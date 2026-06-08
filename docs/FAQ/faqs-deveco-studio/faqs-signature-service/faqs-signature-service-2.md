@@ -2,9 +2,10 @@
 format: md
 title: "已实名认证，登录时还是提示用户需要进行实名认证"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-2
+upstream_id: FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-2
+last_sync: 2026-06-07
+sync_hash: 06457e40
 ---
-
-
 **问题现象**
 
 登录授权模拟器时，若提示华为账号需要实名制认证，请在账号中心检查账号状态。若状态显示“已实名”，请核对相关信息。

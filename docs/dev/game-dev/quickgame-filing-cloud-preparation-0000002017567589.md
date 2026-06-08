@@ -3,9 +3,10 @@ title: "华为云核准（备案）准备"
 original_url: /docs/dev/game-dev/quickgame-filing-cloud-preparation-0000002017567589
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/quickgame-filing-cloud-preparation-0000002017567589
+last_sync: 2026-06-07
+sync_hash: f4370108
 ---
-
-
 在“华为云核准（备案）系统”或“华为云App”提交快游戏核准（备案）申请前，需要做好核准（备案）准备工作。
 
 ## 注册账号与实名认证

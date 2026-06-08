@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "推送实况窗消息"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-update-liveview
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-scenes/push-update-liveview
+last_sync: 2026-06-07
+sync_hash: ede2a305
 ---
-
-
 ## 场景介绍
 
 实况窗是一种帮助用户聚焦正在进行的任务，方便快速查看和即时处理的通知形态。有关实况窗简介、权限申请、开放场景、设计规范等说明，请参见[Live View Kit简介](/docs/dev/app-dev/application-services/live-view-kit-guide/liveview-introduction)。

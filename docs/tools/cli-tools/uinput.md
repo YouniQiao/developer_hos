@@ -3,9 +3,10 @@ title: "uinput"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/uinput
 format: md
+upstream_id: tools/cli-tools/uinput
+last_sync: 2026-06-07
+sync_hash: 8b838438
 ---
-
-
 # uinput
 
 uinput 可模拟用户操作，例如鼠标、键盘、触控板等设备，适用于稳定性等压力测试。

@@ -2,9 +2,10 @@
 format: md
 title: "如何对多个C++源文件中接口进行导出声明"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-3
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-3
+last_sync: 2026-06-07
+sync_hash: e6d90ff6
 ---
-
-
 **问题现象**
 
 DevEco Studio创建的默认C++工程中是只有一个hello.cpp，想在C++侧加一个 a.cpp文件，并且希望可以从a.cpp文件中导出一个函数给ArkTS侧调用，具体如何实现？

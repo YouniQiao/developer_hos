@@ -3,9 +3,10 @@ title: "版本更新说明"
 original_url: /docs/dev/game-dev/games-hismartperf-releasenotes-0000002321517285
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-hismartperf-releasenotes-0000002321517285
+last_sync: 2026-06-07
+sync_hash: 8211ac2c
 ---
-
-
 ## Windows
 
 | 版本号 | 发布时间 | 更新对象 | 更新说明 |

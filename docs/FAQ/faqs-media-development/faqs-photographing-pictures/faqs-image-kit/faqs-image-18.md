@@ -2,8 +2,11 @@
 title: "如何将C++侧接收的PixelMap转换成cv::mat格式"
 original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-18
 format: md
+upstream_id: FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-18
+last_sync: 2026-06-07
+sync_hash: fcad413a
+upstream_hash: c9c7b33c59a8
 ---
-
 
 **解决措施：**
 

@@ -1,12 +1,12 @@
 ---
-
 title: "开发流程"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-functionprocess
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-functionprocess
+last_sync: 2026-06-07
+sync_hash: 346ce5df
 ---
-
-
 # 开发流程
 
 云函数是一项Serverless计算服务，可以根据函数的实际流量对函数进行弹性收缩。您只需聚焦业务逻辑，开发与上传业务模块相关的函数，云函数即可为您自动完成资源分配、代码部署、负载均衡等工作，既提高了开发和上线函数的速度，也保证了函数的高可用性。

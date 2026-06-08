@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "去电场景"
 original_url: /docs/dev/app-dev/application-services/call-kit-guide/outgoing-calls
 format: md
+upstream_id: dev/app-dev/application-services/call-kit-guide/outgoing-calls
+last_sync: 2026-06-07
+sync_hash: 5882511c
 ---
-
-
 ## 场景介绍
 
 应用主动发起音/视频通话，称为去电场景。

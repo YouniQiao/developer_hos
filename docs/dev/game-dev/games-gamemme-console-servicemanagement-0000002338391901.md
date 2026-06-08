@@ -2,9 +2,10 @@
 title: "开启功能开关"
 original_url: /docs/dev/game-dev/games-gamemme-console-servicemanagement-0000002338391901
 format: md
+upstream_id: dev/game-dev/games-gamemme-console-servicemanagement-0000002338391901
+last_sync: 2026-06-07
+sync_hash: af6cc2f4
 ---
-
-
 在游戏多媒体服务管理页面，游戏多媒体服务可以灵活控制[语音转文本](#section157881245131518)、[安全加固](#section92517364165)以及[内容检测](#section17288256144510)功能的开启或关闭。
 
 ## 开启语音转文本

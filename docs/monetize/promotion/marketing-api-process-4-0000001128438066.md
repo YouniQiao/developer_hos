@@ -3,8 +3,10 @@ title: "登录并获取access_token"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-process-4-0000001128438066
 format: md
+upstream_id: monetize/promotion/marketing-api-process-4-0000001128438066
+last_sync: 2026-06-07
+sync_hash: ff6b1146
 ---
-
 # 登录并获取access\_token
 
 1. 通过API获取授权码拼接地址

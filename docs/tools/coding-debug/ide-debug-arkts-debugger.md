@@ -3,9 +3,10 @@ title: "使用调试器"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-arkts-debugger
 format: md
+upstream_id: tools/coding-debug/ide-debug-arkts-debugger
+last_sync: 2026-06-07
+sync_hash: 8cd024fa
 ---
-
-
 # 使用调试器
 
 Debug界面有三个tab页，分别是“entry”、“entry(PandaDebugger)”和“entry(Native)”。

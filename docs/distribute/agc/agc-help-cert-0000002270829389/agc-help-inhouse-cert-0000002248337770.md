@@ -2,9 +2,10 @@
 title: "申请In-house发布证书"
 original_url: /docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-inhouse-cert-0000002248337770
 format: md
+upstream_id: distribute/agc/agc-help-cert-0000002270829389/agc-help-inhouse-cert-0000002248337770
+last_sync: 2026-06-07
+sync_hash: 509da28a
 ---
-
-
 在发布In-house应用时，您需要使用In-house发布证书和In-house发布Profile手动签名后，才能编译构建正式发布包。请参考本文档申请并下载In-house发布证书。
 
 ![](../img/agc-help-inhouse-cert-0000002248337770_0.png)
@@ -13,7 +14,7 @@ format: md
 
 #### 前提条件
 
-* 您已准备好[证书请求文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section462703710326)。
+* 您已准备好[证书请求文件](/docs/tools/coding-debug/ide-signing#section462703710326)。
 * 账号已完成[In-house分发资格申请并审核通过](/docs/distribute/agc/agc-help-release-0000002235870050/agc-help-inhouse-0000002281532696#section6267104872410)。
 * 您的账号角色已[获取“访问发布类证书”权限](/docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-manageaccount-0000002306610129#ZH-CN_TOPIC_0000002306610129__li626645853313)。
 

@@ -2,9 +2,10 @@
 title: "加入房间"
 original_url: /docs/dev/game-dev/gameobe-joinroom-js-0000002395350381
 format: md
+upstream_id: dev/game-dev/gameobe-joinroom-js-0000002395350381
+last_sync: 2026-06-07
+sync_hash: 7cd6927e
 ---
-
-
 当房主创建好房间后，其他玩家通过获取并传入房间ID或房间短码，即可加入到该房间中。此种方式主要适用于棋牌、格斗等游戏的好友约战游戏玩法。
 
 ## 前提条件

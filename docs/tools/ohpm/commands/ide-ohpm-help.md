@@ -3,9 +3,10 @@ title: "ohpm help"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-help
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-help
+last_sync: 2026-06-07
+sync_hash: 79b70604
 ---
-
-
 # ohpm help
 
 获取有关 ohpm 的帮助。

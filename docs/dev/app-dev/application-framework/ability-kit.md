@@ -2,9 +2,10 @@
 title: "Ability Kit（程序框架服务）"
 original_url: /docs/dev/app-dev/application-framework/ability-kit
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit
+last_sync: 2026-06-07
+sync_hash: a66ffd94
 ---
-
-
 * **[Ability Kit简介](/docs/dev/app-dev/application-framework/ability-kit/abilitykit-overview)**
 * **[应用模型](/docs/dev/app-dev/application-framework/ability-kit/application-models)**
 * **[Stage模型开发指导](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development)**

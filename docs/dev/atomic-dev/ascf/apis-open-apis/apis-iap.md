@@ -2,9 +2,10 @@
 title: "IAP"
 original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-iap
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-open-apis/apis-iap
+last_sync: 2026-06-07
+sync_hash: e8cf0ba4
 ---
-
-
 ## has.queryIapEnvStatus
 
 has.queryIapEnvStatus(Object object)

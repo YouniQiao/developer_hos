@@ -2,8 +2,11 @@
 title: "应用接入数据备份恢复"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-extension
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-extension
+last_sync: 2026-06-07
+sync_hash: f2cb1e56
+upstream_hash: 1f8206d74fb1
 ---
-
 
 应用接入数据备份恢复需要通过BackupExtensionAbility实现。
 

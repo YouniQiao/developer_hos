@@ -1,8 +1,10 @@
 ---
 title: "Push Preparations"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-preparations
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-preparations
+last_sync: 2026-06-07
+sync_hash: 60055e12
 ---
-
 import SourceLink from '@site/src/components/SourceLink';
 
 # Push Preparations

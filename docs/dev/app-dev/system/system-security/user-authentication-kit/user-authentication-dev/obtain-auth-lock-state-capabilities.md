@@ -2,9 +2,10 @@
 title: "查询指定认证类型的认证冻结状态"
 original_url: /docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/obtain-auth-lock-state-capabilities
 format: md
+upstream_id: dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/obtain-auth-lock-state-capabilities
+last_sync: 2026-06-07
+sync_hash: 36c3c4c5
 ---
-
-
 从API version 22开始，开发者可以参考下述开发指导，查询指定认证类型的认证冻结状态，以及剩余可认证次数或还需等待的认证冻结时间。
 
 ## 接口说明

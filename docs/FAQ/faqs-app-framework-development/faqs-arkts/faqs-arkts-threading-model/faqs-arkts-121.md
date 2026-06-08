@@ -2,9 +2,10 @@
 title: "如何在Worker中开启多级子线程"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-121
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-121
+last_sync: 2026-06-07
+sync_hash: 1cde84d0
 ---
-
-
 在Worker中开启多级子线程，具体可参考如下示例代码：
 
 ```

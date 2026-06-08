@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "添加元服务卡片至桌面"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-productview/appgallery-productview-loadservice
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-productview/appgallery-productview-loadservice
+last_sync: 2026-06-07
+sync_hash: 4748f356
 ---
-
-
 ## 场景介绍
 
 为了快速访问和管理元服务卡片信息，用户可以将常用的元服务卡片添加到桌面。应用可通过调用应用市场服务提供的[loadService](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-productviewmanager#productviewmanagerloadservice)接口来加载元服务卡片加桌页面，用户点击“添加至桌面”按钮，将元服务卡片添加至桌面。

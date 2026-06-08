@@ -2,9 +2,10 @@
 title: "物料准备"
 original_url: /docs/distribute/agc/agc-help-by-harmonyoslabel-touch-scan-0000002444192029/agc-help-by-harmonyoslabel-touch-scan-material-0000002410432942
 format: md
+upstream_id: distribute/agc/agc-help-by-harmonyoslabel-touch-scan-0000002444192029/agc-help-by-harmonyoslabel-touch-scan-material-0000002410432942
+last_sync: 2026-06-07
+sync_hash: 985fff73
 ---
-
-
 1. 准备碰扫合一标签物料，建议如下。
 
    | 物料名称 | 版式 | 建议尺寸 | 芯片 | HarmonyOS标签图案 |

@@ -3,9 +3,10 @@ title: "知识产权"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/audit-specifications-0000002469548113/intellectual-property-0000002471264365
 format: md
+upstream_id: distribute/xiaoyi/audit-specifications-0000002469548113/intellectual-property-0000002471264365
+last_sync: 2026-06-07
+sync_hash: b295c8ba
 ---
-
-
 # 知识产权
 
 请确保您的智能体及其内容具备完整权利或充分授权，不得侵犯他人知识产权（包括商标、版权、专利、商业秘密和其他专有权利）或其他合法权益。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "查询策略"
 original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-guard-strategy-manage/screentimeguard-query-guard-strategies
 format: md
+upstream_id: dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-guard-strategy-manage/screentimeguard-query-guard-strategies
+last_sync: 2026-06-07
+sync_hash: eb75210f
 ---
-
-
 ## 场景介绍
 
 当用户希望查看现有的屏幕时间守护规则时，可以调用查询管控策略的接口。通过成功调用查询策略接口，用户可以浏览已创建的所有管控策略，如查看各个应用的停用起止时间或可使用时长。

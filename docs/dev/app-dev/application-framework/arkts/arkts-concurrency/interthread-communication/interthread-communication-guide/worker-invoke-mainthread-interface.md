@@ -2,9 +2,10 @@
 title: "Worker同步调用宿主线程的接口"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide/worker-invoke-mainthread-interface
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide/worker-invoke-mainthread-interface
+last_sync: 2026-06-07
+sync_hash: 77a2be90
 ---
-
-
 如果一个接口已在宿主线程中实现，Worker可以通过以下方式调用该接口。
 
 以下示例展示了Worker同步调用宿主线程接口的方法，创建Worker的方法可参考[创建Worker的注意事项](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/worker-introduction#创建worker的注意事项)。

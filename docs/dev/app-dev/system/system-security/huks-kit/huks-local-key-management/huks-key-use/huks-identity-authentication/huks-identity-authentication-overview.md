@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "用户身份认证访问控制简介"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-identity-authentication/huks-identity-authentication-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-identity-authentication/huks-identity-authentication-overview
+last_sync: 2026-06-07
+sync_hash: 28522535
 ---
-
-
 HUKS提供了完备的密钥访问控制能力，以保证存储在HUKS中的密钥被合法正确地访问：
 
 * 业务只能访问属于自己的密钥，即只能访问业务自身通过HUKS生成或导入的密钥。

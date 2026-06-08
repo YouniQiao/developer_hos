@@ -3,9 +3,10 @@ title: "智能体广告"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/audit-specifications-0000002469548113/agent-advertisement-0000002520493294
 format: md
+upstream_id: distribute/xiaoyi/audit-specifications-0000002469548113/agent-advertisement-0000002520493294
+last_sync: 2026-06-07
+sync_hash: afdc7717
 ---
-
-
 # 智能体广告
 
 智能体广告被视作智能体的一部分，请确保您的智能体所展示的广告的投放行为以及内容符合适用的法律法规，并适合智能体的目标受众群体。智能体广告只应在智能体内展示，不得包含非法、误导性内容，且不得为恶意广告或干扰性广告。

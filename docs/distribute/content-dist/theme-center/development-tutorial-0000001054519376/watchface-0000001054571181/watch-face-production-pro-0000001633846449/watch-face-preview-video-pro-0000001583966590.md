@@ -2,8 +2,10 @@
 title: "预览视频"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/watch-face-preview-video-pro-0000001583966590
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/watch-face-preview-video-pro-0000001583966590
+last_sync: 2026-06-07
+sync_hash: a07e68c7
 ---
-
 # 预览视频
 
 表盘市场支持播放表盘预览视频，以让您的表盘作品被更好地展示，提高表盘销售。

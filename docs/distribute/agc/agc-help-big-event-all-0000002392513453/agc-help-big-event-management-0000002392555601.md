@@ -2,9 +2,10 @@
 title: "管理游戏大事件"
 original_url: /docs/distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-management-0000002392555601
 format: md
+upstream_id: distribute/agc/agc-help-big-event-all-0000002392513453/agc-help-big-event-management-0000002392555601
+last_sync: 2026-06-07
+sync_hash: ad26622c
 ---
-
-
 创建游戏大事件后，可以对已创建的游戏大事件进行查看、编辑等操作。游戏大事件列表“操作”列提供编辑、删除、撤销、下线等操作，“任务状态”列可以查看大事件当前的状态。
 
 #### 查看游戏大事件信息

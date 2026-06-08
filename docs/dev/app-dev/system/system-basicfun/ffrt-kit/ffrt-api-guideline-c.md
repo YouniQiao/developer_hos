@@ -2,9 +2,10 @@
 title: "Function Flow Runtime C API"
 original_url: /docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-api-guideline-c
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-api-guideline-c
+last_sync: 2026-06-07
+sync_hash: 8c1bf158
 ---
-
-
 ## 任务管理
 
 ### ffrt\_deps\_t

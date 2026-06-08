@@ -2,9 +2,10 @@
 title: "组件动画"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-animation/ui-js-animation-js/ui-js-animate-component
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-animation/ui-js-animation-js/ui-js-animate-component
+last_sync: 2026-06-07
+sync_hash: f6ee9fb5
 ---
-
-
 еңЁз»„д»¶дёҠеҲӣе»әе’ҢиҝҗиЎҢеҠЁз”»зҡ„еҝ«жҚ·ж–№ејҸгҖӮе…·дҪ“з”Ёжі•иҜ·еҸӮиҖғ[йҖҡз”Ёж–№жі•](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-common-methods)гҖӮ
 
 ## иҺ·еҸ–еҠЁз”»еҜ№иұЎ

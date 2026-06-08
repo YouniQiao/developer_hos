@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "识别平面语义（C/C++）"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-semantics/arengine-c-get-semantics
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/get-semantics/arengine-c-get-semantics
+last_sync: 2026-06-07
+sync_hash: 75fea916
+upstream_hash: 64a6e7b2a9be
 ---
-
 
 ## 约束与限制
 

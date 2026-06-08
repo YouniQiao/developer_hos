@@ -3,8 +3,10 @@ title: "查询整体数据报表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-task-management-overall-data-0000001294054000
 format: md
+upstream_id: monetize/promotion/bp-delivery-task-management-overall-data-0000001294054000
+last_sync: 2026-06-07
+sync_hash: 37843b6f
 ---
-
 # 查询整体数据报表
 
 ## 操作步骤

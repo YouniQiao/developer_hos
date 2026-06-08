@@ -2,9 +2,10 @@
 title: "硬件兼容性简介"
 original_url: /docs/dev/ndk-dev/hw-guide
 format: md
+upstream_id: dev/ndk-dev/hw-guide
+last_sync: 2026-06-07
+sync_hash: c930c3ca
 ---
-
-
 使用C/C++开发HarmonyOS应用原生库时，需要感知到硬件特性；HarmonyOS系统会运行在多种架构、多厂商的设备上，对于使用了HarmonyOS原生库的应用，如何保证其在不同设备上的兼容性以及体验的一致性是一个很大的挑战。
 
 本章节将介绍HarmonyOS应用二进制接口（Application Binary Interface，简称ABI），定义了当前HarmonyOS系统支持的[ABI标准](/docs/dev/ndk-dev/ohos-abi)；同时也提供了如何使用[CPU扩展特性](/docs/dev/ndk-dev/cpu-features)的指导，方便应用在不破坏兼容性的基础上更好的利用CPU硬件特性。最后通过一些简单的示例演示如何更好的使用[ARM Neon特性](/docs/dev/ndk-dev/neon-guide)。

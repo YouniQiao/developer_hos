@@ -3,8 +3,10 @@ title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-appendix-material-rule-faq-0000001936442685
 format: md
+upstream_id: monetize/promotion/bp-appendix-material-rule-faq-0000001936442685
+last_sync: 2026-06-07
+sync_hash: fffe7243
 ---
-
 # FAQ
 
 ## 审核时间

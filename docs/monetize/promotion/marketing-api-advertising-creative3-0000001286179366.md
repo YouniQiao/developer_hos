@@ -3,8 +3,10 @@ title: "编辑创意"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-advertising-creative3-0000001286179366
 format: md
+upstream_id: monetize/promotion/marketing-api-advertising-creative3-0000001286179366
+last_sync: 2026-06-07
+sync_hash: fa9ce0b9
 ---
-
 # 编辑创意
 
 您通过本接口可以编辑创意。

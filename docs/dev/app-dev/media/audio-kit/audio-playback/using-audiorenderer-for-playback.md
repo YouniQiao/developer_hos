@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用AudioRenderer开发音频播放功能(ArkTs)"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback
+last_sync: 2026-06-07
+sync_hash: e4deab25
 ---
-
-
 AudioRenderer是音频渲染器，用于播放PCM（Pulse Code Modulation）音频数据，相比[AVPlayer](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/using-avplayer-for-playback)而言，可以在输入前添加数据预处理，更适合有音频开发经验的开发者，以实现更灵活的播放功能。
 
 ## 开发指导

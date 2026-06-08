@@ -2,8 +2,11 @@
 title: "切换房间"
 original_url: /docs/dev/game-dev/games-gamemme-switchroom-csharp-0000002359706962
 format: md
+upstream_id: dev/game-dev/games-gamemme-switchroom-csharp-0000002359706962
+last_sync: 2026-06-07
+sync_hash: e49e4ea4
+upstream_hash: 4e3d113aa4aa
 ---
-
 
 玩家处于多房间状态下时，可通过切换语音房间实现进入不同房间发言。
 

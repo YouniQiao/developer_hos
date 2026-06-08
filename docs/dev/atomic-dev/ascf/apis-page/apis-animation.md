@@ -2,9 +2,10 @@
 title: "动画"
 original_url: /docs/dev/atomic-dev/ascf/apis-page/apis-animation
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-page/apis-animation
+last_sync: 2026-06-07
+sync_hash: b062b136
 ---
-
-
 ## has.createAnimation
 
 has.createAnimation(Object object): Animation

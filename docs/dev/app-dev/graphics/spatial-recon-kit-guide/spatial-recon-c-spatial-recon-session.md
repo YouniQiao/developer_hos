@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "管理Spatial Recon会话"
 original_url: /docs/dev/app-dev/graphics/spatial-recon-kit-guide/spatial-recon-c-spatial-recon-session
 format: md
+upstream_id: dev/app-dev/graphics/spatial-recon-kit-guide/spatial-recon-c-spatial-recon-session
+last_sync: 2026-06-07
+sync_hash: f893c301
 ---
-
-
 ## 概要
 
 从6.1.0(23)开始，对于任何需要使用空间重建能力的应用，都需要创建一个会话[HMS\_SpatialRecon\_Session](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-spatialrecon-hms-spatialrecon-session)，用于管理SpatialRecon Kit的系统状态。该会话需要应用开发者使用本Kit提供的API创建，并在相关任务结束后使用本Kit提供的API手动销毁。

@@ -3,8 +3,10 @@ title: "推广统计"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-tuiguangtongji-0000001901067241
 format: md
+upstream_id: monetize/promotion/ads-tuiguangtongji-0000001901067241
+last_sync: 2026-06-07
+sync_hash: a91dbcc5
 ---
-
 # 推广统计
 
 ## 一级服务商账户

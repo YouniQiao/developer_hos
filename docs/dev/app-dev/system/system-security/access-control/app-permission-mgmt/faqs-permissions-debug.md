@@ -2,9 +2,10 @@
 title: "抓包/调试权限常见问题"
 original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/faqs-permissions-debug
 format: md
+upstream_id: dev/app-dev/system/system-security/access-control/app-permission-mgmt/faqs-permissions-debug
+last_sync: 2026-06-07
+sync_hash: 7c9a716b
 ---
-
-
 ## ohos.permission.kernel.NET\_RAW权限使用说明
 
 **约束与限制：**

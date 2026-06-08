@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "请求自绘制内容绘制帧率"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/displaysync/displaysync-xcomponent
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/displaysync/displaysync-xcomponent
+last_sync: 2026-06-07
+sync_hash: 591e8fcf
 ---
-
-
 对于基于[XComponent](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-add-component/napi-xcomponent-guidelines)进行Native开发的业务，可以请求独立的绘制帧率进行内容开发，如游戏、自绘制UI框架对接等场景。
 
 ## 接口说明

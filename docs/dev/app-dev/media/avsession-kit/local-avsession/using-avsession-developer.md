@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "媒体会话提供方(ArkTS)"
 original_url: /docs/dev/app-dev/media/avsession-kit/local-avsession/using-avsession-developer
 format: md
+upstream_id: dev/app-dev/media/avsession-kit/local-avsession/using-avsession-developer
+last_sync: 2026-06-07
+sync_hash: 6a075e3a
 ---
-
-
 音视频应用在实现音视频功能的同时，需要作为媒体会话提供方接入媒体会话，在媒体会话控制方（例如播控中心）中展示媒体相关信息，并响应媒体会话控制方下发的播控命令。
 
 ## 基本概念

@@ -2,9 +2,10 @@
 title: "如何获取ArkTS状态管理框架代理前的原始对象"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-367
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-367
+last_sync: 2026-06-07
+sync_hash: 030143d7
 ---
-
-
 使用getTarget接口获取状态管理框架代理前的原始对象。
 
 参考示例如下：

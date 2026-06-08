@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "流场图层"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-flow-field
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-drawing/map-flow-field
+last_sync: 2026-06-07
+sync_hash: 314b7a1e
+upstream_hash: 7da36278be53
 ---
-
 
 ## 场景介绍
 

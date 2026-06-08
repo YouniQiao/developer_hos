@@ -2,9 +2,10 @@
 title: "配置Client ID"
 original_url: /docs/dev/atomic-dev/account-guide-atomic-preparations/account-atomic-client-id
 format: md
+upstream_id: dev/atomic-dev/account-guide-atomic-preparations/account-atomic-client-id
+last_sync: 2026-06-07
+sync_hash: 956b3cc3
 ---
-
-
 ## 获取Client ID和App ID
 
 在 AppGallery Connect（简称AGC）的[APP与元服务](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myApp)中，选择并点击需要申请对应权限的元服务，选择左侧导航栏的“基础服务 -&gt; 项目设置”，在“常规 &gt; 应用 ”下，找到元服务的Client ID和APP ID。

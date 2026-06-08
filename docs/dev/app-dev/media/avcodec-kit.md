@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "AVCodec Kit（音视频编解码服务）"
 original_url: /docs/dev/app-dev/media/avcodec-kit
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit
+last_sync: 2026-06-07
+sync_hash: bca0dd3d
 ---
-
-
 * **[AVCodec Kit简介](/docs/dev/app-dev/media/avcodec-kit/avcodec-kit-intro)**
 * **[AVCodec支持的格式](/docs/dev/app-dev/media/avcodec-kit/avcodec-support-formats)**
 * **[音视频编解码](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec)**

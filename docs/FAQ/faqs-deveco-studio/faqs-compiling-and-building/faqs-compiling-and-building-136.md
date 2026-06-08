@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“The required attribute: module-name is missing”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-136
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-136
+last_sync: 2026-06-07
+sync_hash: c95cc8d4
 ---
-
-
 **错误描述**
 
 缺少必需属性：module-name。
@@ -25,4 +26,4 @@ original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-comp
 
 **参考链接**
 
-[Hvigor脚本文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section810245135914)
+[Hvigor脚本文件](/docs/tools/coding-debug/ide-hvigor-life-cycle#section810245135914)

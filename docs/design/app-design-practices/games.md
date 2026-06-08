@@ -3,8 +3,10 @@ title: 游戏类
 sidebar_label: 游戏类
 original_url: /docs/design/app-design-practices/games
 format: md
+upstream_id: design/app-design-practices/games
+last_sync: 2026-06-07
+sync_hash: 667dc4ad
 ---
-
 # 游戏类
 
 游戏类应用注重用户的沉浸式体验，具有强互动性和操作性，在大屏设备上可以向用户展示更宽阔的游戏画面，提供更轻便高效的交互体验。

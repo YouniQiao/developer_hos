@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "预览(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-preview
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-preview
+last_sync: 2026-06-07
+sync_hash: 0b0a2c96
 ---
-
-
 在开发相机应用时，需要先[申请相关权限](/docs/dev/app-dev/media/camera-kit/camera-preparation)。
 
 预览是启动相机后看见的画面，通常在拍照和录像前执行。

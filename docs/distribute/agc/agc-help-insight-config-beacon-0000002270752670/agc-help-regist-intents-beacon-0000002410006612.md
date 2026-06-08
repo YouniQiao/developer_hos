@@ -2,9 +2,10 @@
 title: "意图注册"
 original_url: /docs/distribute/agc/agc-help-insight-config-beacon-0000002270752670/agc-help-regist-intents-beacon-0000002410006612
 format: md
+upstream_id: distribute/agc/agc-help-insight-config-beacon-0000002270752670/agc-help-regist-intents-beacon-0000002410006612
+last_sync: 2026-06-07
+sync_hash: f1151f23
 ---
-
-
 1. 确认需要使用的意图之后，工程中右击“entry”目录，选择“New > Insight Intent”新建意图。
 
    ![](../img/agc-help-regist-intents-beacon-0000002410006612_0.png)

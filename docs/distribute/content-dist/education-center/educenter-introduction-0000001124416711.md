@@ -3,9 +3,10 @@ title: "业务介绍"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/education-center/educenter-introduction-0000001124416711
 format: md
+upstream_id: distribute/content-dist/education-center/educenter-introduction-0000001124416711
+last_sync: 2026-06-07
+sync_hash: e10039e6
 ---
-
-
 # 业务介绍
 
 华为教育中心是以在线课程为主体的全学习周期智慧化教育服务平台，秉承“智慧学习，快乐成长”的理念，平台将持续依托HMS应用生态和“1+8+N”硬件生态所构建的全场景智慧生态矩阵，助力教育内容实现数字化转型，携手教育伙伴将优质内容高效分发给目标用户，共同构建教育商业生态闭环。

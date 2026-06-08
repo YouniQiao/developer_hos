@@ -3,9 +3,10 @@ title: "@typescript-eslint/unbound-method"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_unbound-method
 format: md
+upstream_id: tools/coding-debug/ide_unbound-method
+last_sync: 2026-06-07
+sync_hash: 53ee8260
 ---
-
-
 # @typescript-eslint/unbound-method
 
 强制类作用域中的方法在预期范围内调用。

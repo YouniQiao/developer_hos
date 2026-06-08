@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "概要"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-data-type-summary
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-data-type-summary
+last_sync: 2026-06-07
+sync_hash: 47a4aad2
 ---
-
-
 运动健康服务提供了一系列运动和健康数据类型，主要分三组：
 
 * 采样数据类型

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "动态调整预览帧率(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-framerate
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-framerate
+last_sync: 2026-06-07
+sync_hash: 46259df9
 ---
-
-
 动态调整帧率是直播、视频等场景下控制预览效果的重要能力之一。应用可通过此能力，显式地控制流输出帧率，以适应不同帧率下的业务目标。
 
 某些场景下降低帧率可在相机设备启用时降低功耗。

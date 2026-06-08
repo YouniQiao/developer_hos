@@ -2,9 +2,10 @@
 format: md
 title: "XComponent 怎么设置成透明"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-139
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-139
+last_sync: 2026-06-07
+sync_hash: 5a34b6b7
 ---
-
-
 XComponent显示的内容，可由开发者自定义绘制，通用属性中的背景设置、透明度设置和图像效果按照type有限支持。当type为TEXTURE时通用属性可以支持背景颜色设置、透明度设置和图像效果中的shadow属性，建议使用EGL/OpenGLES提供的接口设置相关内容。
 
 **参考链接**

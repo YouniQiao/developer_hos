@@ -2,9 +2,10 @@
 title: "应用间跳转"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection
+last_sync: 2026-06-07
+sync_hash: e50404cd
 ---
-
-
 * **[应用间跳转概述](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/link-between-apps-overview)**
 * **[拉起指定应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection)**
 * **[拉起指定类型的应用](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection)**

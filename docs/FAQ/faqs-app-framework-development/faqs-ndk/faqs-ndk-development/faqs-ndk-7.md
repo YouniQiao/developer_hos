@@ -2,9 +2,10 @@
 title: "如何导出C++自定义类，导出后如何在ArkTS侧进行类方法调用"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-7
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-7
+last_sync: 2026-06-07
+sync_hash: 4e5315c3
 ---
-
-
 可以通过 napi\_define\_class 建立 ArkTS 类与 C++ 侧的映射关系，并将对应的对象挂载到 export 上导出。在 index.d.ts 文件中定义 ArkTS 侧类接口，实现对类的调用。
 
 参考代码如下：

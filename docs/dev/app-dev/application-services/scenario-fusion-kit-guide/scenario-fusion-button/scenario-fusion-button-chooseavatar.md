@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "选择头像Button"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-chooseavatar
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-chooseavatar
+last_sync: 2026-06-07
+sync_hash: cdeb8873
+upstream_hash: f971885ffe67
 ---
-
 
 ## 场景介绍
 

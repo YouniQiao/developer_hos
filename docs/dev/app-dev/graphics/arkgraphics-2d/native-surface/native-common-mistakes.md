@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "图形缓冲区常见稳定性问题 (C/C++)"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/native-surface/native-common-mistakes
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/native-surface/native-common-mistakes
+last_sync: 2026-06-07
+sync_hash: 44657739
 ---
-
-
 本文档主要针对NativeWindow、NativeBuffer和NativeImage开发过程中的常见问题进行说明，帮助开发者及时避免或定位对应问题，提高应用稳定性。
 
 ## OHNativeWindow与NativeWindowBuffer

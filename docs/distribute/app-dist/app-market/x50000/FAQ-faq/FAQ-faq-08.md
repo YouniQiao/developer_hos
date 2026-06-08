@@ -3,8 +3,10 @@ title: "8. 违规获取个人信息"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-08
 format: md
+upstream_id: distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-08
+last_sync: 2026-06-07
+sync_hash: 86292043
 ---
-
 # 8. 违规获取个人信息
 
 * 重点整治非服务所必需或无合理场景，通过积分、奖励、优惠等方式欺骗误导用户提供身份证号码及个人生物特征信息的行为。

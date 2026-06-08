@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发带UI界面基础驱动"
 original_url: /docs/dev/app-dev/system/system-hardware/driver-development-kit/development-of-basic-drivers/externaldevice-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-hardware/driver-development-kit/development-of-basic-drivers/externaldevice-guidelines
+last_sync: 2026-06-07
+sync_hash: 2715a024
 ---
-
-
 ## 场景介绍
 
 开发者开发带UI界面的基础驱动，适用于各种复合设备，需要通过UI界面设置对应的独特驱动能力或者通过UI界面展示从设备侧获取的信息，例如带有侧键的鼠标，手写板，身份证读卡器等设备。
@@ -32,7 +33,7 @@ format: md
 
 开发示例如下（仅供参考）：为开发者提供的示例代码为同时开发客户端和服务端的Demo，并实现IPC通信。
 
-1. 创建新工程，请参考[创建一个新的工程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-create-new-project)，创建一个HarmonyOS工程。
+1. 创建新工程，请参考[创建一个新的工程](/docs/tools/coding-debug/ide-create-new-project)，创建一个HarmonyOS工程。
 
    ![](./img/1305eb70.png)
 
@@ -206,4 +207,4 @@ format: md
   2. HarmonyAppProvision配置文件中，修改acls字段，跨级别申请权限，可参考[申请使用受限权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl)。
   3. 在[AGC网站](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)菜单“证书、APP ID和Profile”->“Profile”中申请profile文件时，申请权限选择受限权限“ohos.permission.ACCESS\_DDK\_DRIVERS”，在该权限的输入框内填写你客户端需要连接的服务端的bundleName，多个服务端的bundleName以逗号分隔。
 
-完成权限配置后，可参考[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)对应用进行签名。
+完成权限配置后，可参考[自动签名](/docs/tools/coding-debug/ide-signing)对应用进行签名。

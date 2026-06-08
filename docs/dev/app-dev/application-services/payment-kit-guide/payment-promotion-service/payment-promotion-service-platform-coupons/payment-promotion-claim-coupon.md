@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "领券场景"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-promotion-service/payment-promotion-service-platform-coupons/payment-promotion-claim-coupon
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-promotion-service/payment-promotion-service-platform-coupons/payment-promotion-claim-coupon
+last_sync: 2026-06-07
+sync_hash: a6d0903e
+upstream_hash: 03f3a6f3f54c
 ---
-
 
 ## 场景介绍
 

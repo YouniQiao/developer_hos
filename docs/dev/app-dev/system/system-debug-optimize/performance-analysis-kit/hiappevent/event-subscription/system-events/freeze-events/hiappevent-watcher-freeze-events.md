@@ -2,9 +2,10 @@
 title: "应用冻屏事件介绍"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/freeze-events/hiappevent-watcher-freeze-events
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/freeze-events/hiappevent-watcher-freeze-events
+last_sync: 2026-06-07
+sync_hash: 90e9a730
 ---
-
-
 ## 简介
 
 用户在使用应用时，如果出现点击无反应或应用无响应等情况，并且持续时间超过一定限制，就会被定义为应用冻屏，也被称为应用无响应。为了应对应用冻屏问题，系统会提供应用冻屏检测、维测日志抓取、日志上报的能力，为开发者提供详细的维测日志以辅助故障定位。
@@ -68,7 +69,7 @@ hiAppEvent.configEventPolicy(policy).then(() => {
 | --- | --- | --- |
 | time | number | 事件触发时间，单位为ms。 |
 | foreground | boolean | 应用是否处于前台状态。true表示应用处于前台；false表示应用处于后台。 |
-| release\_type | string | 应用的版本类型。release表示应用为[release版本应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)，debug表示应用为[debug版本应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)。  **说明**：从API version 23开始支持 |
+| release\_type | string | 应用的版本类型。release表示应用为[release版本应用](/docs/tools/coding-debug/ide-hvigor-compilation-options-customizing-guide#section192461528194916)，debug表示应用为[debug版本应用](/docs/tools/coding-debug/ide-hvigor-compilation-options-customizing-guide#section192461528194916)。  **说明**：从API version 23开始支持 |
 | cpu\_abi | string | 二进制接口类型。  **说明**：从API version 23开始支持。 |
 | app\_running\_unique\_id | string | 应用运行时唯一关联的id。  **说明**：从API version 24开始支持该参数。 |
 | bundle\_version | string | 应用版本。 |

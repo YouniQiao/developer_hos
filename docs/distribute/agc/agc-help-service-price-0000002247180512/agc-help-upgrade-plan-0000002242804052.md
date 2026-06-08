@@ -2,9 +2,10 @@
 title: "升级到按量付费档套餐"
 original_url: /docs/distribute/agc/agc-help-service-price-0000002247180512/agc-help-upgrade-plan-0000002242804052
 format: md
+upstream_id: distribute/agc/agc-help-service-price-0000002247180512/agc-help-upgrade-plan-0000002242804052
+last_sync: 2026-06-07
+sync_hash: 72fd4d8d
 ---
-
-
 按量付费套餐指您使用收费服务时，如果服务的使用量超过免费额度，则可以将服务的订阅方式切换到按量付费模式，系统将允许您继续使用服务，您只需要对周期内超额使用的部分按照用多少付多少的模式进行付费。您超额使用的费用将自动从您的账户余额中扣除，您需要保证您的账户余额充足。
 
 #### 前提条件

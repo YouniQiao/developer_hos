@@ -3,8 +3,10 @@ title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/overview-guangaoshenheguifan-0000001188925990
 format: md
+upstream_id: monetize/promotion/overview-guangaoshenheguifan-0000001188925990
+last_sync: 2026-06-07
+sync_hash: 994bcec5
 ---
-
 # 概述
 
 |  |  |

@@ -1,13 +1,15 @@
 ---
 title: "HSP转HAR指导"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/hsp-to-har
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/hsp-to-har
+last_sync: 2026-06-07
+sync_hash: 7c8904b2
 ---
-
 HSP对bundleName和签名有一致性要求，在调试阶段需要先安装HSP包，这导致多模块集成开发场景下容易出现多种集成问题。在此场景下，建议使用HAR包来提供所需功能。本文通过配置项的变更将HSP工程变成HAR工程。
 
 ![](./img/15319158.png)
 
-阅读本文前，请开发者完成[HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp)、[HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package)、[module.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)、[hvigorfile.ts](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-config-ohos-guide)、[oh-package.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-oh-package-json5)、[build-profile.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app)学习。
+阅读本文前，请开发者完成[HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp)、[HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package)、[module.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)、[hvigorfile.ts](/docs/tools/coding-debug/ide-hvigor-config-ohos-guide)、[oh-package.json5](/docs/tools/ohpm/ide-oh-package-json5)、[build-profile.json5](/docs/tools/coding-debug/ide-hvigor-build-profile-app)学习。
 
 部分组件和模块在HAP、HSP、HAR中集成使用时存在差异，例如[加载HAR中Worker线程文件相比HSP存在单独的使用约束](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/worker-introduction#文件路径注意事项)，因此按照如下步骤完成HSP转HAR后，请关注对应组件和模块介绍并进行适配。
 

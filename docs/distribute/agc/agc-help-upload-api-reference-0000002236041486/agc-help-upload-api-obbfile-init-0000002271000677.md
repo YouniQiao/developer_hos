@@ -2,9 +2,10 @@
 title: "分片上传初始化"
 original_url: /docs/distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-obbfile-init-0000002271000677
 format: md
+upstream_id: distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-obbfile-init-0000002271000677
+last_sync: 2026-06-07
+sync_hash: c2d50648
 ---
-
-
 #### 功能介绍
 
 此接口用于分片信息初始化，在获取分片文件上传地址前调用。

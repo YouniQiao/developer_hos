@@ -1,9 +1,10 @@
 ---
 title: "Web加载性能优化"
 original_url: /docs/quality/web-develop-optimization
+upstream_id: /docs/quality/web-develop-optimization
+last_sync: 2026-06-07
+sync_hash: e3cf00b5
 ---
-
-
 # Web加载性能优化
 
 ## 概述
@@ -968,7 +969,7 @@ struct WebComponent {
 
 ![](./img/651f2fd8.png)
 
-建议开发者优先使用[Code Linter扫描工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)进行代码检查，重点关注[@performance/js-code-cache-by-precompile-check](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-js-code-cache-by-precompile-check)规则。若扫描结果中出现该规则相关问题，可参考本章节提供的优化建议进行调整。
+建议开发者优先使用[Code Linter扫描工具](/docs/tools/coding-debug/ide-code-linter)进行代码检查，重点关注[@performance/js-code-cache-by-precompile-check](/docs/tools/coding-debug/ide-js-code-cache-by-precompile-check)规则。若扫描结果中出现该规则相关问题，可参考本章节提供的优化建议进行调整。
 
 1. 仅HTTP或HTTPS协议请求的JavaScript文件可以预编译。
 2. 不支持ES6 Module语法的JavaScript文件生成预编译字节码缓存。
@@ -1113,7 +1114,7 @@ JavaScript的编译时间受文件大小和逻辑复杂度的影响。
 
 ![](./img/4d9dd793.png)
 
-建议开发者优先使用[Code Linter扫描工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)进行代码检查，重点关注[@performance/js-code-cache-by-interception-check](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-js-code-cache-by-interception-check)规则。若扫描结果中出现该规则相关问题，可参考本章节提供的优化建议进行调整
+建议开发者优先使用[Code Linter扫描工具](/docs/tools/coding-debug/ide-code-linter)进行代码检查，重点关注[@performance/js-code-cache-by-interception-check](/docs/tools/coding-debug/ide-js-code-cache-by-interception-check)规则。若扫描结果中出现该规则相关问题，可参考本章节提供的优化建议进行调整
 
 **图6** JS资源编译执行流程
 

@@ -2,9 +2,10 @@
 title: "网络场景识别"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide/networkboost-scenecallback
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide/networkboost-scenecallback
+last_sync: 2026-06-07
+sync_hash: 98c98dd5
 ---
-
-
 ## 场景介绍
 
 应用在订阅网络场景识别后，系统在网络场景实时信息或预测信息发生变化后回调给应用，回调的网络场景信息包括数据传输的链路类型、网络场景类型、数传策略建议、弱信号信息等。

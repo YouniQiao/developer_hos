@@ -2,8 +2,11 @@
 title: "企业恢复密钥"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey
+last_sync: 2026-06-07
+sync_hash: 346f982e
+upstream_hash: 56ff3e0229f0
 ---
-
 
 * **[获取解密硬盘数据的企业恢复密钥](/docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-getkeyfordecryptdata)**
 * **[获取重置锁屏密码的企业恢复密钥](/docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-getkeyforresetpin)**

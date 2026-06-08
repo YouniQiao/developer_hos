@@ -3,8 +3,10 @@ title: "新建物理分包任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-physical-subcontract-create-0000001340959821
 format: md
+upstream_id: monetize/promotion/bp-functions-physical-subcontract-create-0000001340959821
+last_sync: 2026-06-07
+sync_hash: cfbbbd75
 ---
-
 # 新建物理分包任务
 
 ## 前提条件

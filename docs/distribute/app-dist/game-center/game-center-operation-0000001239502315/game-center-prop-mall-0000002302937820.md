@@ -3,9 +3,10 @@ title: "游戏道具商城"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-prop-mall-0000002302937820
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-prop-mall-0000002302937820
+last_sync: 2026-06-07
+sync_hash: 371ddc5d
 ---
-
-
 # 游戏道具商城
 
 ## 概述
@@ -21,7 +22,7 @@ format: md
 ## 前提条件
 
 * 已创建游戏，且软件包类型为“RPK（快应用）”、“APK（Android应用）”、“APP（HarmonyOS应用）”，支持设备为“手机”。
-* 您已在商品管理[新增商品](`https://developer.huawei.com/consumer/cn/doc/app/game-center-creating-product-0000001239502323`)并[激活商品](`https://developer.huawei.com/consumer/cn/doc/app/game-center-deactivating-product-0000001239622347`)。
+* 您已在商品管理[新增商品](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-creating-product-0000001239502323)并[激活商品](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-deactivating-product-0000001239622347)。
 
 ## 准备道具素材
 

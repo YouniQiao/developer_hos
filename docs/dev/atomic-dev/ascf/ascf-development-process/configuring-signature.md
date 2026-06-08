@@ -2,12 +2,13 @@
 title: "签名配置"
 original_url: /docs/dev/atomic-dev/ascf/ascf-development-process/configuring-signature
 format: md
+upstream_id: dev/atomic-dev/ascf/ascf-development-process/configuring-signature
+last_sync: 2026-06-07
+sync_hash: ead3aa20
 ---
-
-
 元服务签名配置的方式根据开发方式分为三种：DevEco Studio，命令行工具以及ASCF助手。
 
-在DevEco studio中开发元服务配置签名可以参考：[配置调试签名-编写与调试应用 - 华为HarmonyOS开发者](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
+在DevEco studio中开发元服务配置签名可以参考：[配置调试签名-编写与调试应用 - 华为HarmonyOS开发者](/docs/tools/coding-debug/ide-signing)。
 
 下面将主要介绍在使用命令行工具或者ASCF助手开发过程中如何配置签名。
 

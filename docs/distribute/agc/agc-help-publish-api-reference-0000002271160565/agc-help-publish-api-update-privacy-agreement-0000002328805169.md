@@ -2,9 +2,10 @@
 title: "更新隐私政策协议"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-update-privacy-agreement-0000002328805169
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-update-privacy-agreement-0000002328805169
+last_sync: 2026-06-07
+sync_hash: c6189f39
 ---
-
-
 #### 功能介绍
 
 此接口用于更新HarmonyOS应用/元服务的隐私政策协议。接口调用者的角色：账号持有者、管理员、APP管理员、运营。

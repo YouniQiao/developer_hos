@@ -2,9 +2,10 @@
 title: "设置配置项"
 original_url: /docs/dev/game-dev/games-quickgame-authorization-free-0000002351893449
 format: md
+upstream_id: dev/game-dev/games-quickgame-authorization-free-0000002351893449
+last_sync: 2026-06-07
+sync_hash: 05a58a90
 ---
-
-
 ## 配置免授权登录
 
 打开快游戏需授权用户头像和昵称，但授权过程影响游戏的加载速度及玩家的使用体验，您可以为快游戏配置免授权登录，减少快游戏的授权频率，提升玩家的用户体验。

@@ -2,9 +2,10 @@
 title: "应用文件"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/app-file
+last_sync: 2026-06-07
+sync_hash: c2e0f00d
 ---
-
-
 * **[应用文件概述](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-overview)**
 * **[应用沙箱目录](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory)**
 * **[应用文件访问与管理](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management)**

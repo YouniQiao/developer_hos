@@ -3,9 +3,10 @@ title: "@typescript-eslint/restrict-template-expressions"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_restrict-template-expressions
 format: md
+upstream_id: tools/coding-debug/ide_restrict-template-expressions
+last_sync: 2026-06-07
+sync_hash: be5ab919
 ---
-
-
 # @typescript-eslint/restrict-template-expressions
 
 要求模板表达式中的变量为“string”类型。

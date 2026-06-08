@@ -2,9 +2,10 @@
 format: md
 title: "如何使用Charles工具抓包"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-55
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-55
+last_sync: 2026-06-07
+sync_hash: fb7ac634
 ---
-
-
 ![](./img/71ec9d2e.png)
 
 1. 配置环境时，在Charles弹出的窗口中选择Allow，以确保与手机连接。

@@ -2,9 +2,10 @@
 title: "支持单复数"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/l10n/l10n-translation/l10n-singular-plural
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/l10n/l10n-translation/l10n-singular-plural
+last_sync: 2026-06-07
+sync_hash: eff9e439
 ---
-
-
 翻译过程中，不同语言对于名词或单位表达式的单复数格式要求各不相同。有些语言不区分单复数，有些语言有两种形式，还有一些语言有多种形式。例如，在英语中，名词支持两种单复数形式；对于中文，名词不分单复数，通过量词表达数量的不同。
 
 国际上常通过如下类别区分单复数：

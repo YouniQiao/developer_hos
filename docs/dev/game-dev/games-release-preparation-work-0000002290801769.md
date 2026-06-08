@@ -2,9 +2,10 @@
 title: "准备工作"
 original_url: /docs/dev/game-dev/games-release-preparation-work-0000002290801769
 format: md
+upstream_id: dev/game-dev/games-release-preparation-work-0000002290801769
+last_sync: 2026-06-07
+sync_hash: 872568a1
 ---
-
-
 提前了解游戏的上架规则，并提前准备游戏素材，有助于快速通过游戏上架审核。
 
 ## 了解上架规则

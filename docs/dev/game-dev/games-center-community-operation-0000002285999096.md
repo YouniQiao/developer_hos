@@ -3,9 +3,10 @@ title: "社区管理"
 original_url: /docs/dev/game-dev/games-center-community-operation-0000002285999096
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-center-community-operation-0000002285999096
+last_sync: 2026-06-07
+sync_hash: 0fce31c4
 ---
-
-
 华为游戏中心社区是以用户为核心，内容为引导，不断聚集更多热爱游戏的玩家，实现玩家与玩家，玩家与开发者的交流互动阵地。我们诚邀各位开发者一起来加入游戏社区的运营，为玩家提供更多的内容、创建社区活动和进行互动，共同建立一个受玩家喜爱的游戏社区。
 
 ## 社区开版

@@ -3,9 +3,10 @@ title: "多模块管理"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-multi-module
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-multi-module
+last_sync: 2026-06-07
+sync_hash: 8ddbc6bf
 ---
-
-
 # 多模块管理
 
 模块是应用/元服务的基本功能单元，包含了源代码、资源文件、第三方库及应用/元服务配置文件，Hvigor支持工程多模块管理。您可在工程下的build-profile.json5配置文件中增加对应模块信息，即可对模块进行工程绑定和管理，或在hvigorconfig.ts脚本中动态添加或排除某个模块。同时也支持分模块配置、编译和打包。

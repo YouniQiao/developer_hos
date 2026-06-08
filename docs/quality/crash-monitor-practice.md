@@ -2,9 +2,10 @@
 title: "崩溃监测实践"
 original_url: /docs/quality/crash-monitor-practice
 format: md
+upstream_id: /docs/quality/crash-monitor-practice
+last_sync: 2026-06-07
+sync_hash: 76345c65
 ---
-
-
 # 崩溃监测实践
 
 ### 概述

@@ -3,9 +3,10 @@ title: "支持使用预览器的API清单"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-previewer-api-list
 format: md
+upstream_id: tools/coding-debug/ide-previewer-api-list
+last_sync: 2026-06-07
+sync_hash: b1803215
 ---
-
-
 # 支持使用预览器的API清单
 
 #### 组件

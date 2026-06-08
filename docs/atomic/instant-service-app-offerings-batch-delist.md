@@ -2,9 +2,10 @@
 title: "批量下架商品"
 original_url: /docs/dev/atomic-dev/instant-service-app-offerings/instant-service-app-offerings-batch-delist
 format: md
+upstream_id: dev/atomic-dev/instant-service-app-offerings/instant-service-app-offerings-batch-delist
+last_sync: 2026-06-07
+sync_hash: a308e707
 ---
-
-
 在商品状态为“已上架”或“已冻结”状态时，您可以通过“批量下架”操作完成商品下架。
 
 1. 在服务直达主界面，选择“商品直达”页签，点击“商品状态”列筛选出“已上架”或“已冻结”状态的商品。

@@ -2,9 +2,10 @@
 title: "分辨率与版本号"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-version-0000001252603441
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/basic-concepts-0000001207883464/resolution-version-0000001252603441
+last_sync: 2026-06-07
+sync_hash: f9a9da62
 ---
-
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # 分辨率与版本号

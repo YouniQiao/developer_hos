@@ -3,8 +3,10 @@ title: "监测链接跟踪"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads_gongjujiance_yy-0000001458784668
 format: md
+upstream_id: monetize/promotion/ads_gongjujiance_yy-0000001458784668
+last_sync: 2026-06-07
+sync_hash: 1d27d6ee
 ---
-
 # 监测链接跟踪
 
 ## 基本原理

@@ -3,8 +3,10 @@ title: "批量创建子任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-adsubtask-batchcreate-0000001225258453
 format: md
+upstream_id: monetize/promotion/marketapi-adsubtask-batchcreate-0000001225258453
+last_sync: 2026-06-07
+sync_hash: 4993785f
 ---
-
 # 批量创建子任务
 
 ## 功能介绍

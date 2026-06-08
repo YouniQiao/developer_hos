@@ -2,9 +2,10 @@
 title: "错误码"
 original_url: /docs/distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-errorcode-0000002271000681
 format: md
+upstream_id: distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-errorcode-0000002271000681
+last_sync: 2026-06-07
+sync_hash: d56f4351
 ---
-
-
 | 错误码（errorCode） | 错误描述（errorMsg） |
 | --- | --- |
 | 204144700 | 分片初始化失败。 |

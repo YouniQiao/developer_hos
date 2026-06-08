@@ -3,14 +3,15 @@ title: "广告"
 original_url: /docs/dev/game-dev/games-quickgame-faq-ads-0000002458692489
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-quickgame-faq-ads-0000002458692489
+last_sync: 2026-06-07
+sync_hash: 474e413d
 ---
-
-
 ## 接入广告
 
 ### 快游戏接入广告时，提示\&#123;"errCode":1004,"errMsg":"No suitable advertising."\&#125;，如何处理？
 
-先检查使用的广告id是不是测试id，正式id是无法在本地加载器测试的。测试id参见“鲸鸿动能媒体接入指南”的“[广告测试验证及上线](https://developer.huawei.com/consumer/cn/doc/distribution/monetize/ceshiyanzhengjishangxian-0000001085219714)”章节。
+先检查使用的广告id是不是测试id，正式id是无法在本地加载器测试的。测试id参见“鲸鸿动能媒体接入指南”的“[广告测试验证及上线](/docs/monetize/monetization/ceshiyanzhengjishangxian-0000001085219714)”章节。
 
 如果使用测试id，仍然出现该问题，则需要检查手机环境问题，需要满足以下条件：
 
@@ -150,8 +151,8 @@ rewardedVideoAd.onClose((res) => {
 
 自测阶段请使用测试广告ID，可通过如下途径获取测试ID：
 
-* 打开[广告测试验证及上线](https://developer.huawei.com/consumer/cn/doc/distribution/monetize/ceshiyanzhengjishangxian-0000001085219714)”，下载《RPK广告位信息表》，表格中有不同广告类型的测试广告位ID。
-* 打开[广告常见问题](https://developer.huawei.com/consumer/cn/doc/distribution/monetize/changjianwenti-0000001132481583)，在**Q4：测试ID是多少？**表格中获取不同广告类型的测试广告位ID。
+* 打开[广告测试验证及上线](/docs/monetize/monetization/ceshiyanzhengjishangxian-0000001085219714)”，下载《RPK广告位信息表》，表格中有不同广告类型的测试广告位ID。
+* 打开[广告常见问题](/docs/monetize/monetization/changjianwenti-0000001132481583)，在**Q4：测试ID是多少？**表格中获取不同广告类型的测试广告位ID。
 
 ![](./img/31e62979.png)
 

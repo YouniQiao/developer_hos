@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "申请开放能力权限指导"
 original_url: /docs/dev/app-dev/application-services/location-kit/location-preparation/location-apply-open-capability
 format: md
+upstream_id: dev/app-dev/application-services/location-kit/location-preparation/location-apply-open-capability
+last_sync: 2026-06-07
+sync_hash: 6648c61f
 ---
-
-
 ## 开放能力申请准备
 
 请先参考[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)完成基本准备工作，再继续以下开放能力准备项。

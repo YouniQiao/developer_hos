@@ -2,9 +2,10 @@
 title: "窗口开发常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/window-faqs
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/window-manager/window-faqs
+last_sync: 2026-06-07
+sync_hash: 0d3477f6
 ---
-
-
 ## 如何在应用A启动过程中拉起另一个应用B
 
 **解决措施**

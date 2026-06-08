@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "HiAppEvent介绍"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/hiappevent-intro
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/hiappevent-intro
+last_sync: 2026-06-07
+sync_hash: 9ab6955e
+upstream_hash: 92ae438546e5
 ---
-
 
 ## 简介
 

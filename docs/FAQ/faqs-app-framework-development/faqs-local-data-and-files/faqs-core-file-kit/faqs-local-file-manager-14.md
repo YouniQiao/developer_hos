@@ -2,9 +2,10 @@
 format: md
 title: "el1与el2文件之间的区别"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-14
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-14
+last_sync: 2026-06-07
+sync_hash: 754fe819
 ---
-
-
 三级目录el1/和el2/：代表不同文件加密类型。
 
 el1（设备级加密区）：设备开机后可访问的数据区。

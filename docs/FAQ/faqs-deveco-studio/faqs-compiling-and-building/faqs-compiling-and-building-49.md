@@ -2,9 +2,10 @@
 format: md
 title: "如何解决SDK与镜像不匹配导致abc文件无法正常运行的问题"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-49
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-49
+last_sync: 2026-06-07
+sync_hash: 5715b7ca
 ---
-
-
 **问题现象**
 
 当SDK版本与镜像版本不匹配时，应用将会闪退并出现jscrash错误，同时hilog中会记录相关日志。

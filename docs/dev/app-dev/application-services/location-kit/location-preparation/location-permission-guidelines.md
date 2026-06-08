@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "申请位置权限开发指导"
 original_url: /docs/dev/app-dev/application-services/location-kit/location-preparation/location-permission-guidelines
 format: md
+upstream_id: dev/app-dev/application-services/location-kit/location-preparation/location-permission-guidelines
+last_sync: 2026-06-07
+sync_hash: 795a7442
 ---
-
-
 ## 场景概述
 
 应用在使用Location Kit系统能力前，需要检查是否已经获取用户授权访问设备位置信息。如未获得授权，可以向用户申请需要的位置权限。

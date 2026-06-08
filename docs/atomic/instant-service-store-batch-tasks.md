@@ -2,9 +2,10 @@
 title: "批量任务管理"
 original_url: /docs/dev/atomic-dev/instant-service-store/instant-service-store-batch-tasks
 format: md
+upstream_id: dev/atomic-dev/instant-service-store/instant-service-store-batch-tasks
+last_sync: 2026-06-07
+sync_hash: c928c8ac
 ---
-
-
 1. 进入“门店管理”页签， 点击任务管理。
 
    ![](./img/5299a21e.png "点击放大")

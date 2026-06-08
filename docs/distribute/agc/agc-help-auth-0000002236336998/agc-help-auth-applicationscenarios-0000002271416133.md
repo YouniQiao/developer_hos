@@ -2,8 +2,11 @@
 title: "典型应用场景"
 original_url: /docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-applicationscenarios-0000002271416133
 format: md
+upstream_id: distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-applicationscenarios-0000002271416133
+last_sync: 2026-06-07
+sync_hash: e4fe531c
+upstream_hash: ddf0d6a27062
 ---
-
 
 #### 向用户提供多种登录方式
 

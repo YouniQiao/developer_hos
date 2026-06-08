@@ -2,9 +2,10 @@
 title: "使用新UI"
 format: md
 original_url: /docs/tools/coding-debug/ide-new-ui
+upstream_id: tools/coding-debug/ide-new-ui
+last_sync: 2026-06-07
+sync_hash: b41e68e5
 ---
-
-
 # 使用新UI
 
 从DevEco Studio 6.0.0 Beta1版本开始，IntelliJ 2024.3.3底座升级，提供全新的用户界面（User Interface，简称UI），简化工具布局，优化图标、窗口等显示效果，带来更简洁的外观及开发体验。

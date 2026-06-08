@@ -2,9 +2,10 @@
 title: "并发概述"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/concurrency-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/concurrency-overview
+last_sync: 2026-06-07
+sync_hash: 9aa1f804
 ---
-
-
 并发指在同一时间内，多个任务同时执行。在多核设备上，任务可以在不同CPU上并行执行。对于单核设备，尽管多个任务不会同时执行，但CPU会在某个任务休眠或进行I/O操作时切换任务，调度其他任务，提高CPU的资源利用率。
 
 为了提升应用的响应速度和帧率，避免耗时任务影响UI主线程，ArkTS提供了异步并发和多线程并发两种处理策略。

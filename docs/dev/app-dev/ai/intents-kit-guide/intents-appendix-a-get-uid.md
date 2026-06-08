@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "附录A：获取华为账号对应UID的方式"
 original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-appendix-a-get-uid
 format: md
+upstream_id: dev/app-dev/ai/intents-kit-guide/intents-appendix-a-get-uid
+last_sync: 2026-06-07
+sync_hash: ae2abd20
 ---
-
-
 1. 使用需要添加白名单的华为账号登录“[华为开发者联盟](https://developer.huawei.com/consumer/cn/)”。
 
    ![](./img/fccda121.png)

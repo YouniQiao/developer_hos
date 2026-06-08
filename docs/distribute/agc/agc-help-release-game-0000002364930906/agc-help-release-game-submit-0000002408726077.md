@@ -2,9 +2,10 @@
 title: "提交审核"
 original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-submit-0000002408726077
 format: md
+upstream_id: distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-submit-0000002408726077
+last_sync: 2026-06-07
+sync_hash: 98408bfc
 ---
-
-
 完成应用信息和版本信息的所有配置项后，您可以将游戏提交至审核人员。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，选择待上架的游戏。

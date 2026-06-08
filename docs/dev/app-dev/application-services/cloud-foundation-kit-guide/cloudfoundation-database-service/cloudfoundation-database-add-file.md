@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "引入对象类型文件"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-add-file
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-add-file
+last_sync: 2026-06-07
+sync_hash: 319b0bd6
+upstream_hash: db1cf4246e25
 ---
-
 
 ## 约束与限制
 

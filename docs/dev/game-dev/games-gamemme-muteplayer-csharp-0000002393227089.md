@@ -2,9 +2,10 @@
 title: "屏蔽其他玩家"
 original_url: /docs/dev/game-dev/games-gamemme-muteplayer-csharp-0000002393227089
 format: md
+upstream_id: dev/game-dev/games-gamemme-muteplayer-csharp-0000002393227089
+last_sync: 2026-06-07
+sync_hash: 3d7ac2c7
 ---
-
-
 在语音房间中，玩家如果不想接收房间内某个玩家的发言内容，可通过屏蔽其语音实现，但房间内其他玩家依然可以接收到被屏蔽语音玩家的发言。例如在同一房间内，玩家A屏蔽了玩家B的语音，其他玩家依然可以正常接收玩家B的发言。
 
 ## 前提条件

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开票"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-after-sales/iap-invoicing
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-after-sales/iap-invoicing
+last_sync: 2026-06-07
+sync_hash: 220a9d9b
 ---
-
-
 ## 用户申请开发票
 
 从6.1.0（23）开始，支持开发票功能。若用户购买应用内数字商品后需要申请开发票，可选择需要申请开票的订单后根据页面指引，提交开发票信息。

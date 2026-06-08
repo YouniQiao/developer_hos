@@ -2,9 +2,10 @@
 format: md
 title: "huks Native接口编译报错问题"
 original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-universal-keystore-kit/faqs-universal-keystore-9
+upstream_id: FAQ/faqs-system-development/faqs-security/faqs-universal-keystore-kit/faqs-universal-keystore-9
+last_sync: 2026-06-07
+sync_hash: 3d51a7b6
 ---
-
-
 **问题场景**
 
 使用huks密钥库的c接口生成密钥时编译报错，错误信息如下：

@@ -2,9 +2,10 @@
 title: "AddrSanitizer（地址越界）检测"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/address-sanitizer-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/address-sanitizer-guidelines
+last_sync: 2026-06-07
+sync_hash: f1d1b8fa
 ---
-
-
 ## 简介
 
 地址越界问题是指访问了不合法的地址，导致程序运行出现异常，通常表现为应用崩溃（Crash），其故障原因为释放后使用（use after free）、重复释放（double-free）、栈溢出（stack-overflow）、堆溢出（heap-overflow）等。由于应用崩溃日志信息有限且非崩溃第一现场，地址越界问题定位较为困难，一般依赖ASan、HWASan、GWP-ASan等检测工具以获取更多内存操作信息。从API13开始推荐[使用HWASan检测工具](/docs/quality/stability-hwasan-detection)进行地址越界问题的分析。
@@ -23,7 +24,7 @@ format: md
 
 **方式一：通过DevEco Studio获取日志**
 
-DevEco Studio会收集设备/data/log/faultlog/faultlogger/路径下的进程崩溃故障日志到FaultLog下，根据进程名和故障和时间分类显示。获取日志的方法参见：[DevEco Studio使用指南-FaultLog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-fault-log)。
+DevEco Studio会收集设备/data/log/faultlog/faultlogger/路径下的进程崩溃故障日志到FaultLog下，根据进程名和故障和时间分类显示。获取日志的方法参见：[DevEco Studio使用指南-FaultLog](/docs/tools/coding-debug/ide-fault-log)。
 
 **方式二：通过HiAppEvent接口订阅**
 

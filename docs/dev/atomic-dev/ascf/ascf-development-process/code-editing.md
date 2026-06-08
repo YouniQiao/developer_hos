@@ -2,9 +2,10 @@
 title: "代码编辑"
 original_url: /docs/dev/atomic-dev/ascf/ascf-development-process/code-editing
 format: md
+upstream_id: dev/atomic-dev/ascf/ascf-development-process/code-editing
+last_sync: 2026-06-07
+sync_hash: a5ebbd6e
 ---
-
-
 ## 支持文件类型
 
 工具当前支持hxml, js, hjs, css, json 等文件的编辑，支持基本的语法高亮和代码格式化等功能。

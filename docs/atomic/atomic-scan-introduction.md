@@ -2,9 +2,10 @@
 title: "Scan Kit简介"
 original_url: /docs/dev/atomic-dev/atomic-code-scan-development/atomic-scan-introduction
 format: md
+upstream_id: dev/atomic-dev/atomic-code-scan-development/atomic-scan-introduction
+last_sync: 2026-06-07
+sync_hash: 1faecaec
 ---
-
-
 Scan Kit（统一扫码服务）作为软硬协同的系统级扫码服务，帮助元服务快速构建面向各种场景的码图识别和码图生成能力。Scan Kit应用了多项计算机视觉技术和AI算法技术，不仅实现了远距离自动扫码，同时还针对多种复杂扫码场景（如暗光、污损、模糊、小角度、曲面码等）做了识别优化，提升扫码成功率与用户体验。
 
 ## 场景介绍
@@ -32,6 +33,6 @@ Scan Kit为元服务提供了默认界面扫码和码图生成两种能力。
 
 本Kit支持模拟器开发，但与真机存在部分能力差异，具体差异如下：
 
-* 通用差异：请参见“[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification#section1227613205203)”。
+* 通用差异：请参见“[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification#section1227613205203)”。
 * 从6.0.0(20)版本开始，模拟器支持默认界面扫码能力开发，模拟器中默认界面扫码的相机流存在镜像问题，且由于仅支持固定分辨率比例，画面会出现上下黑边。
 * 模拟器不支持码图生成能力。

@@ -2,9 +2,10 @@
 title: "启动应用目录文件扫描任务"
 original_url: /docs/dev/app-dev/system/system-security/enterprise-threat-protection-kit-guide/nterprisethreatprotection-virusremediation-content/enterprisethreatprotection-virusremediation-scan
 format: md
+upstream_id: dev/app-dev/system/system-security/enterprise-threat-protection-kit-guide/nterprisethreatprotection-virusremediation-content/enterprisethreatprotection-virusremediation-scan
+last_sync: 2026-06-07
+sync_hash: 13ebac95
 ---
-
-
 ## 基本概念
 
 启动应用目录文件扫描功能帮助安全防护类应用在开始扫描前获取应用文件列表。

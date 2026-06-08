@@ -2,9 +2,10 @@
 title: "配置发布国家或地区"
 original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-area-0000002313510997
 format: md
+upstream_id: distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-area-0000002313510997
+last_sync: 2026-06-07
+sync_hash: 5e83930d
 ---
-
-
 ![](../img/agc-help-release-app-area-0000002313510997_0.png)
 
 * 当前HarmonyOS NEXT应用仅为智能手表和运动手表设备提供全球地区的消费者服务。其他设备仅在中国大陆地区提供服务，发布至海外暂时无法提供客户端下载。

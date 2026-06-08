@@ -2,9 +2,10 @@
 title: "获取头像昵称概述"
 original_url: /docs/dev/atomic-dev/account-guide-atomic-get-avatar-nickname/account-guide-atomic-get-avatar-nickname-overview
 format: md
+upstream_id: dev/atomic-dev/account-guide-atomic-get-avatar-nickname/account-guide-atomic-get-avatar-nickname-overview
+last_sync: 2026-06-07
+sync_hash: ffe1388a
 ---
-
-
 当元服务需要获取用户头像昵称时，可使用下述能力：
 
 1、可使用Account Kit提供的头像昵称授权API接口能力，快速获取头像昵称。

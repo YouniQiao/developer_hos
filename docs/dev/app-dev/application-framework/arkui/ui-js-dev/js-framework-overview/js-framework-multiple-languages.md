@@ -2,9 +2,10 @@
 title: "多语言支持"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-multiple-languages
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-multiple-languages
+last_sync: 2026-06-07
+sync_hash: 00e328d1
 ---
-
-
 基于开发框架的应用会覆盖多个国家和地区，开发框架支持多语言能力后，可以让应用开发者无需开发多个不同语言的版本，就可以同时支持多种语言的切换，为项目维护带来便利。
 
 开发者仅需要通过[定义资源文件](#定义资源文件)和[引用资源](#引用资源)两个步骤，就可以使用开发框架的多语言能力；如果需要在应用中获取当前系统语言，请参考[获取语言](#获取语言)。

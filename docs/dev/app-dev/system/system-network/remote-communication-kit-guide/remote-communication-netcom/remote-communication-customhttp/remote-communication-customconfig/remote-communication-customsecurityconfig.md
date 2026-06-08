@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "SecurityConfiguration：定制安全传输行为"
 original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-customhttp/remote-communication-customconfig/remote-communication-customsecurityconfig
 format: md
+upstream_id: dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-customhttp/remote-communication-customconfig/remote-communication-customsecurityconfig
+last_sync: 2026-06-07
+sync_hash: 5513c160
+upstream_hash: a9e061c52e3d
 ---
-
 
 ## 场景介绍
 

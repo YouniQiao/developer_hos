@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "查询数据"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-query
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-query
+last_sync: 2026-06-07
+sync_hash: 1c1625db
 ---
-
-
 云数据库通过[query()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cloudfoundation-clouddatabase#query)方法查询对象，并提供了丰富的谓词查询，比如[equalTo()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cloudfoundation-clouddatabase#equalto)、[notEqualTo()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cloudfoundation-clouddatabase#notequalto)、[in()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cloudfoundation-clouddatabase#in)等。通过单个或者多个链式过滤条件，开发者可以从存储区查询到满足特定条件的对象，也可以通过排序谓词对查询结果排序，或者通过限定查询返回数量谓词限定查询结果返回的数量。详细的查询条件请参见[DatabaseQuery](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cloudfoundation-clouddatabase#databasequeryt-extends-databaseobject)。
 
 应用会直接从云侧存储区服务器查询数据，本地不会缓存数据。

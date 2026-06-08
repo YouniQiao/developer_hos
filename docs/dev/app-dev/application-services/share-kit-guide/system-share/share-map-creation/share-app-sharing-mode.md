@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "配置目标应用名单（仅对企业应用开放）"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-app-sharing-mode
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-app-sharing-mode
+last_sync: 2026-06-07
+sync_hash: 08c9f013
 ---
-
-
 ## 场景介绍
 
 该功能仅对企业应用开放。6.0.1(21)版本开始，支持宿主应用配置目标应用名单列表（最多支持50个应用）。配置成功后，仅名单内的目标可出现在系统分享面板的分享推荐区和分享方式区。

@@ -3,9 +3,10 @@ title: "游戏性能分析"
 original_url: /docs/dev/game-dev/games-gpm-game-performance-analysis-0000002332870901
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-gpm-game-performance-analysis-0000002332870901
+last_sync: 2026-06-07
+sync_hash: 4ec1e889
 ---
-
-
 您可切换机型、版本、场景为展示依据，查看各性能指标的统计图表。通过配置具体数据粒度，可查看各指标时间趋势、周同比趋势及日同比趋势折线图，同时支持按机型、版本等条件筛选过滤数据。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)， 点击“开发与服务”，在项目卡片列表选择项目及项目下的游戏。

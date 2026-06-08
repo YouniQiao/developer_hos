@@ -2,9 +2,10 @@
 title: "构建弹窗"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-pop-up-window
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-pop-up-window
+last_sync: 2026-06-07
+sync_hash: e887f633
 ---
-
-
 可以通过创建弹窗控制器和创建自定义弹窗的内容对象两种方法显示自定义弹窗，设置其样式和内容。
 
 [通过创建弹窗控制器显示自定义弹窗](#通过创建弹窗控制器显示自定义弹窗)：在命名为ArkUI\_NativeDialogAPI\_x （x表示版本）的结构体中，定义了弹窗接口集合，用于实现各种弹窗控制。从API version 12开始支持，使用方式可以参考[openCustomDialogWithController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-promptaction#opencustomdialogwithcontroller18)接口。
@@ -97,7 +98,7 @@ format: md
 
    ![](./img/fdb67180.png)
 
-   此示例的资源不在src > main > resource目录下，从DevEco Studio 6.0.0 Beta2开始，新建工程或者模块时，默认创建的模块不会对非resources目录下的资源进行打包，需使能相关开关：模块的build-profile.json5中buildOptions > resOptions > copyCodeResource > enable设置为true，详见[resOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile#table1476161719356)中相关介绍。
+   此示例的资源不在src > main > resource目录下，从DevEco Studio 6.0.0 Beta2开始，新建工程或者模块时，默认创建的模块不会对非resources目录下的资源进行打包，需使能相关开关：模块的build-profile.json5中buildOptions > resOptions > copyCodeResource > enable设置为true，详见[resOptions](/docs/tools/coding-debug/ide-hvigor-build-profile#table1476161719356)中相关介绍。
 
    ```
    ArkUI_NodeHandle CreateDialogContent()
@@ -355,7 +356,7 @@ registerOnWillAppear -> 弹窗显示动画开始 -> 弹窗显示动画结束 -> 
 
 ![](./img/a7b2b079.png)
 
-此示例的资源不在src > main > resource目录下，从DevEco Studio 6.0.0 Beta2开始，新建工程或者模块时，默认创建的模块不会对非resources目录下的资源进行打包，需使能相关开关：模块的build-profile.json5中buildOptions > resOptions > copyCodeResource > enable设置为true，详见[resOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile#table1476161719356)中相关介绍。
+此示例的资源不在src > main > resource目录下，从DevEco Studio 6.0.0 Beta2开始，新建工程或者模块时，默认创建的模块不会对非resources目录下的资源进行打包，需使能相关开关：模块的build-profile.json5中buildOptions > resOptions > copyCodeResource > enable设置为true，详见[resOptions](/docs/tools/coding-debug/ide-hvigor-build-profile#table1476161719356)中相关介绍。
 
 ```
 ArkUI_NodeHandle CreateDialogContent()

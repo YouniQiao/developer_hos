@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-unnecessary-condition"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unnecessary-condition
 format: md
+upstream_id: tools/coding-debug/ide_no-unnecessary-condition
+last_sync: 2026-06-07
+sync_hash: cc437c41
 ---
-
-
 # @typescript-eslint/no-unnecessary-condition
 
 不允许使用类型始终为真或始终为假的表达式作为判断条件。

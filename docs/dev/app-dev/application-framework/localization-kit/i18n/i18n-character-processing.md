@@ -2,9 +2,10 @@
 title: "字符处理"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-character-processing
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/i18n/i18n-character-processing
+last_sync: 2026-06-07
+sync_hash: 259fa293
 ---
-
-
 ## 功能介绍
 
 在不同语言中，字符规则差异较大。通过字符处理，可以保证在不同语言规则下，以相似的逻辑处理文本。

@@ -3,8 +3,10 @@ title: "文件定向包支持直客授权代理"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-target-authorization-0000002002585781
 format: md
+upstream_id: monetize/promotion/bp-functions-target-authorization-0000002002585781
+last_sync: 2026-06-07
+sync_hash: 77671ca2
 ---
-
 # 文件定向包支持直客授权代理
 
 ## 功能介绍

@@ -3,9 +3,10 @@ title: "回退版本"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-rolling-back-0000001239365229
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-rolling-back-0000001239365229
+last_sync: 2026-06-07
+sync_hash: e6cf64db
 ---
-
-
 # 回退版本
 
 您可以将当前在架的应用版本回退到上一个版本。版本回退是将当前在架版本回退到最近一次上架的应用版本，且只能按照版本发布顺序依次回退。如果您已回退到初始版本，您将无法继续回退。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "创建异步线程执行AVTranscoder视频转码(ArkTS)"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-transcoder-arkts/avtranscoder-practice
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-arkts/media-transcoder-arkts/avtranscoder-practice
+last_sync: 2026-06-07
+sync_hash: afc61f76
 ---
-
-
 在开发过程中，应用经常会创建异步线程执行视频转码任务以满足不同诉求，主要包括：
 
 * 节省存储空间。

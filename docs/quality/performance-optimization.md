@@ -2,9 +2,10 @@
 title: "性能优化"
 original_url: /docs/quality/performance-optimization
 format: md
+upstream_id: /docs/quality/performance-optimization
+last_sync: 2026-06-07
+sync_hash: 657a84c0
 ---
-
-
 # 性能优化
 
 本章节整理了应用开发过程中常见的一些性能优化方案，配合相关参考示例，帮助开发者解决许多性能问题。具体ArkUI性能优化文章合集可参阅[界面性能优化](/docs/quality/developing-high-performance-ui)。

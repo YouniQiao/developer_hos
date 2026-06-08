@@ -2,9 +2,10 @@
 title: "通过resourceManager.getStringResource接口获取HSP资源文件报“Resource id invalid”错误"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-18
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-18
+last_sync: 2026-06-07
+sync_hash: c4549065
 ---
-
-
 **问题现象**
 
 通过this.resourceManager.getStringResource($r('app.string.PlayCount').id)获取HSP资源文件时出现错误。

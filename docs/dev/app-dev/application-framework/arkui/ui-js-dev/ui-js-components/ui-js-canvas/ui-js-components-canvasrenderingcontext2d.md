@@ -2,9 +2,10 @@
 title: "CanvasRenderingContext2D对象"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-canvas/ui-js-components-canvasrenderingcontext2d
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-canvas/ui-js-components-canvasrenderingcontext2d
+last_sync: 2026-06-07
+sync_hash: e12b200a
 ---
-
-
 使用CanvasRenderingContext2D在Canvas画布组件上进行绘制，绘制对象可以是图形、文本、线段、图片等。具体请参考[CanvasRenderingContext2D对象](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-canvas-canvasrenderingcontext2d)。
 
 ## 画线段

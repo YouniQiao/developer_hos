@@ -2,8 +2,11 @@
 title: "扩展外设驱动开发术语"
 original_url: /docs/dev/app-dev/system/system-hardware/driver-development-kit/terms
 format: md
+upstream_id: dev/app-dev/system/system-hardware/driver-development-kit/terms
+last_sync: 2026-06-07
+sync_hash: a51b59b5
+upstream_hash: 7a31a173fe80
 ---
-
 
 ## A
 

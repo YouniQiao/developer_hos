@@ -2,9 +2,10 @@
 title: "Repeat：可复用的循环渲染"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-new-rendering-control-repeat
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-new-rendering-control-repeat
+last_sync: 2026-06-07
+sync_hash: 83f44fc5
 ---
-
-
 ![](./img/d289f7b4.png)
 
 * Repeat从API version 12开始支持。

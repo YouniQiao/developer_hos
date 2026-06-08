@@ -3,9 +3,10 @@ title: "版本说明"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-releasenote
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-releasenote
+last_sync: 2026-06-07
+sync_hash: 0c97f677
 ---
-
-
 # 版本说明
 
 #### DevEco Studio 6.1.1 Release

@@ -2,9 +2,10 @@
 title: "使用ImageSource获取RAW数据"
 original_url: /docs/dev/app-dev/media/image-raw-data
 format: md
+upstream_id: dev/app-dev/media/image-raw-data
+last_sync: 2026-06-07
+sync_hash: 6fcf1ba5
 ---
-
-
 图像的 RAW 数据是直接从图像传感器获取的原始数据，完整保留了所有传感器信息且无任何压缩损失。通过使用RAW数据，开发者可以获得最高质量的图像信息，并根据具体需求自定义图像处理算法，实现更灵活的图像处理和优化效果。
 
 从API version 24开始，支持将符合格式的图片文件解码为[ImageRawData](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-i#imagerawdata24)，以便在应用或系统中获取RAW数据。RAW数据包含图像缓冲区和像素位数。

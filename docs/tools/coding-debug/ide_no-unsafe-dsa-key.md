@@ -3,9 +3,10 @@ title: "@security/no-unsafe-dsa-key"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unsafe-dsa-key
 format: md
+upstream_id: tools/coding-debug/ide_no-unsafe-dsa-key
+last_sync: 2026-06-07
+sync_hash: 79aa0687
 ---
-
-
 # @security/no-unsafe-dsa-key
 
 该规则禁止使用不安全的DSA密钥，如DSA模数长度小于2048bit。

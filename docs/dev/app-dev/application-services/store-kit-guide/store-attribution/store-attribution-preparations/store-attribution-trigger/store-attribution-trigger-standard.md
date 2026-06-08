@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "标准转化事件"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-preparations/store-attribution-trigger/store-attribution-trigger-standard
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-preparations/store-attribution-trigger/store-attribution-trigger-standard
+last_sync: 2026-06-07
+sync_hash: 58fa8123
 ---
-
-
 接入应用归因服务前，请先明确转化事件。应用归因支持标准转化事件和自定义转化事件，建议开发者优先选用标准转化事件登记上报。若无法满足业务需求，开发者可自行创建[自定义转化事件](/docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-preparations/store-attribution-trigger/store-attribution-trigger-custom)用于后续的归因服务。
 
 **处于生效状态的开发者角色的合作伙伴在转化事件管理页面可以查看标准转化事件和自定义转化事件：**

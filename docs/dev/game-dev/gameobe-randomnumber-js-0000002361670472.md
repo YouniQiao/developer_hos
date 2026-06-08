@@ -2,9 +2,10 @@
 title: "伪随机数生成器"
 original_url: /docs/dev/game-dev/gameobe-randomnumber-js-0000002361670472
 format: md
+upstream_id: dev/game-dev/gameobe-randomnumber-js-0000002361670472
+last_sync: 2026-06-07
+sync_hash: d9e1e3fe
 ---
-
-
 联机对战SDK内部实现了线性同余（linear congruential）伪随机数生成器。在对战游戏中，双方对战经常涉及到随机掉落物品、攻击暴击等，帧同步服务器需要能够确保对战双方的随机数相同，即掉落物品相同、暴击伤害相同等。因此，需要SDK提供一个随机数种子，客户端通过调用随机数生成器，可以确保在整个战斗过程中，每次触发随机数产生的结果相同。
 
 ## 开发步骤

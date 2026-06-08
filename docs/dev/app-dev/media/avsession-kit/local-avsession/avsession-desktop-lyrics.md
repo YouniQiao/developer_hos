@@ -2,8 +2,11 @@
 title: "应用接入歌词组件"
 original_url: /docs/dev/app-dev/media/avsession-kit/local-avsession/avsession-desktop-lyrics
 format: md
+upstream_id: dev/app-dev/media/avsession-kit/local-avsession/avsession-desktop-lyrics
+last_sync: 2026-06-07
+sync_hash: 316164d9
+upstream_hash: 456182a556f0
 ---
-
 
 从API version 23开始，系统提供歌词组件功能。歌词组件以悬浮窗形式显示于系统桌面，支持歌词内容展示、组件隐藏、组件锁定等操作。暂不支持应用对组件进行自定义样式设置。本文将说明应用接入歌词组件的开发步骤。
 

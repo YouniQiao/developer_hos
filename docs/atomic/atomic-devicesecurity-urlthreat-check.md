@@ -2,9 +2,10 @@
 title: "URL检测"
 original_url: /docs/dev/atomic-dev/atomic-devicesecurity-safetydetect-develop/atomic-devicesecurity-urlthreat-check
 format: md
+upstream_id: dev/atomic-dev/atomic-devicesecurity-safetydetect-develop/atomic-devicesecurity-urlthreat-check
+last_sync: 2026-06-07
+sync_hash: ee45dd40
 ---
-
-
 ## 场景介绍
 
 应用通过调用Device Security Kit的checkUrlThreat接口检测URL是否为恶意的，并且根据检测结果来提示或拦截该URL。

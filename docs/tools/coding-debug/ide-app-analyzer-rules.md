@@ -3,9 +3,10 @@ title: "规则体检"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-app-analyzer-rules
 format: md
+upstream_id: tools/coding-debug/ide-app-analyzer-rules
+last_sync: 2026-06-07
+sync_hash: 18955a92
 ---
-
-
 # 规则体检
 
 规则体检支持兼容性、性能、功耗等多种测试类型，开发者可自主选择不同的规则进行测试。

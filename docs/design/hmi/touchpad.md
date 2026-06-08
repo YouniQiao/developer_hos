@@ -3,8 +3,10 @@ title: 触控板
 sidebar_label: 触控板
 original_url: /docs/design/hmi/touchpad
 format: md
+upstream_id: design/hmi/touchpad
+last_sync: 2026-06-07
+sync_hash: fb5c5ebc
 ---
-
 # 触控板
 
 触控板同时具备精细化指向型输入（鼠标）和多指触控手势输入（触屏） 的特性，使得触控板既适合用于对指点精度有较高要求的生产力应用，也适合用于基于触摸交互优化的用户界面。

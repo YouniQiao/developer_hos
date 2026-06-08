@@ -3,8 +3,11 @@ title: "智能步入"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-smart-step-into
 format: md
+upstream_id: tools/coding-debug/ide-smart-step-into
+last_sync: 2026-06-07
+sync_hash: 0edab1c7
+upstream_hash: 71cd8fd6b22c
 ---
-
 
 # 智能步入
 

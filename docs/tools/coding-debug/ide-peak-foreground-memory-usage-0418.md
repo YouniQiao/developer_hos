@@ -3,9 +3,10 @@ title: "前台场景内存峰值占用"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-peak-foreground-memory-usage-0418
 format: md
+upstream_id: tools/coding-debug/ide-peak-foreground-memory-usage-0418
+last_sync: 2026-06-07
+sync_hash: 75915857
 ---
-
-
 # 前台场景内存峰值占用
 
 #### 规则详情

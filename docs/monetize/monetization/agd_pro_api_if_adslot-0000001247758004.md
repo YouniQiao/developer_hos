@@ -3,10 +3,10 @@ title: "AdSlot"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_api_if_adslot-0000001247758004
 format: md
+upstream_id: monetize/monetization/agd_pro_api_if_adslot-0000001247758004
+last_sync: 2026-06-07
+sync_hash: b3224bdb
 ---
-
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | slotId | M | `String` | 展示位ID。  通过AGC管理台创建展示位时产生（当前原生广告仅支持国内）请从AGC界面复制，创建请参见[创建媒体及展示位](/docs/monetize/monetization/agd_pro_api_creat-media-display-position-0000001246432546)。 |

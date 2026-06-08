@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-avoid-update-auto-state-var-in-aboutToReuse"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-abouttoreuse
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-abouttoreuse
+last_sync: 2026-06-07
+sync_hash: ff40c9bc
 ---
-
-
 # @performance/hp-arkui-avoid-update-auto-state-var-in-aboutToReuse
 
 避免在aboutToReuse中对自动更新值的状态变量进行更新。

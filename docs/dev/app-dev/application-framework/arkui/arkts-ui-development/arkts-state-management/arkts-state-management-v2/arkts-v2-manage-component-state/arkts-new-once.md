@@ -2,8 +2,11 @@
 title: "@Once：初始化同步一次"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-once
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v2/arkts-v2-manage-component-state/arkts-new-once
+last_sync: 2026-06-07
+sync_hash: 811f5358
+upstream_hash: 8eb2129dd33a
 ---
-
 
 想要实现仅从外部初始化一次且不接受后续同步变化的能力，可以使用@Once装饰器搭配@Param装饰器。
 

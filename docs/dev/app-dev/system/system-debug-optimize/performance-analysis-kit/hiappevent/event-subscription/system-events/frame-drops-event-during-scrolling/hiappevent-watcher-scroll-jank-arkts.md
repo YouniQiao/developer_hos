@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "订阅滑动丢帧事件（ArkTS）"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/frame-drops-event-during-scrolling/hiappevent-watcher-scroll-jank-arkts
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/frame-drops-event-during-scrolling/hiappevent-watcher-scroll-jank-arkts
+last_sync: 2026-06-07
+sync_hash: 95eac27c
+upstream_hash: c4f9c71caaf3
 ---
-
 
 ## 接口说明
 

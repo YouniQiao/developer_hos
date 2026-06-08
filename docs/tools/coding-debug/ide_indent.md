@@ -3,9 +3,10 @@ title: "@hw-stylistic/indent"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_indent
 format: md
+upstream_id: tools/coding-debug/ide_indent
+last_sync: 2026-06-07
+sync_hash: e82d79b3
 ---
-
-
 # @hw-stylistic/indent
 
 强制switch语句中的case和default缩进一层。该规则仅检查.ets文件类型。

@@ -2,9 +2,10 @@
 title: "基本语法概述"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-basic-syntax-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax/arkts-basic-syntax-overview
+last_sync: 2026-06-07
+sync_hash: 244a374a
 ---
-
-
 在初步了解ArkTS语言后，本指南将以具体的示例来说明ArkTS的基本组成。
 
 如下图所示，点击“按钮”时，文本内容从“Hello World”变为“Hello ArkUI”。

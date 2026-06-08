@@ -1,8 +1,10 @@
 ---
 title: "Liveview Preparations"
 original_url: /docs/dev/app-dev/application-services/live-view-kit-guide/liveview-preparations
+upstream_id: dev/app-dev/application-services/live-view-kit-guide/liveview-preparations
+last_sync: 2026-06-07
+sync_hash: dbc65530
 ---
-
 import SourceLink from '@site/src/components/SourceLink';
 
 # Liveview Preparations

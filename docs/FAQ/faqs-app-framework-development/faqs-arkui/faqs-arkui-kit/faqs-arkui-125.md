@@ -2,8 +2,11 @@
 format: md
 title: "组件最大和最小宽度和高度如何设置"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-125
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-125
+last_sync: 2026-06-07
+sync_hash: ec2987ef
+upstream_hash: 87e2a43625bc
 ---
-
 
 可使用[constraintSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#constraintsize)设置组件的maxWidth、minWidth、maxHeight和minHeight。
 

@@ -2,9 +2,10 @@
 title: "模板文件"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-template-file
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-template-file
+last_sync: 2026-06-07
+sync_hash: 33fe4acc
 ---
-
-
 # 模板文件
 
 模板文件中包含自定义storage插件需要的两个文件：CustomStorage.ts和tsconfig.json。

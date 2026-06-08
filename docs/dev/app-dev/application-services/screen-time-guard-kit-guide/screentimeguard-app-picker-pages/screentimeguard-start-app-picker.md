@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "拉起应用选择页"
 original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-app-picker-pages/screentimeguard-start-app-picker
 format: md
+upstream_id: dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-app-picker-pages/screentimeguard-start-app-picker
+last_sync: 2026-06-07
+sync_hash: 8251495d
 ---
-
-
 ## 场景介绍
 
 在用户需要为特定应用设置使用时长或使用限制策略的场景下，开发者通过调用拉起应用选择页的接口拉起选择页后，使得用户能够选择目标应用。在用户选择完毕并点击完成按钮后，接口会返回应用的token。开发者获取到目标应用的token后，可以根据token为选定应用配置管控策略。

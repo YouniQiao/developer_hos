@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发无UI界面基础驱动"
 original_url: /docs/dev/app-dev/system/system-hardware/driver-development-kit/development-of-basic-drivers/driverextensionability
 format: md
+upstream_id: dev/app-dev/system/system-hardware/driver-development-kit/development-of-basic-drivers/driverextensionability
+last_sync: 2026-06-07
+sync_hash: bc082d12
 ---
-
-
 ## 场景介绍
 
 无UI界面的基础驱动，适用于不需要通过UI界面设置驱动能力的简单设备，例如鼠标、键盘等，保证设备的即插即用功能即可。开发者可以通过DriverExtensionAbility实现此类应用的开发。
@@ -26,7 +27,7 @@ format: md
 
 开发者在实现一个驱动时，需要在DevEco Studio工程中手动新建一个DriverExtensionAbility，具体步骤如下：
 
-1. 创建新工程，请参考[创建一个新的工程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-create-new-project)，创建一个HarmonyOS工程。（如果在[开发带UI界面基础驱动](/docs/dev/app-dev/system/system-hardware/driver-development-kit/development-of-basic-drivers/externaldevice-guidelines)已经创建，则此处不需要创建。）
+1. 创建新工程，请参考[创建一个新的工程](/docs/tools/coding-debug/ide-create-new-project)，创建一个HarmonyOS工程。（如果在[开发带UI界面基础驱动](/docs/dev/app-dev/system/system-hardware/driver-development-kit/development-of-basic-drivers/externaldevice-guidelines)已经创建，则此处不需要创建。）
 2. 在新创建的工程对应的ets目录下，右键选择“New > Directory”，新建一个目录并命名为driverextability。
 3. 在driverextability目录，右键选择“New > ArkTS File”，新建一个文件并命名为DriverExtAbility.ets。
 4. 在文件中导入相关Kit，并定义请求Code。
@@ -189,7 +190,7 @@ format: md
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/DriverDevelopmentKit/DriverDemo/entry/src/main/module.json5#L1-L86" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">\<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /\>\<polyline points="15 3 21 3 21 9" /\>\<line x1="10" y1="14" x2="21" y2="3" /\></svg> 查看源码：module.json5</a></div>
 
-8. 完成客户端和驱动示例代码开发后，请参考[使用本地真机运行应用/元服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device)，将Hap导入设备中，并点击hap中的Hello，查看是否会转变为Hello world，即实现ipc通信功能。
+8. 完成客户端和驱动示例代码开发后，请参考[使用本地真机运行应用/元服务](/docs/tools/coding-debug/ide-run-device)，将Hap导入设备中，并点击hap中的Hello，查看是否会转变为Hello world，即实现ipc通信功能。
 
 ## 扩展设备能力
 
@@ -214,4 +215,4 @@ format: md
   1. 在module.json5配置文件的requestPermissions标签中[声明权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions)。
   2. HarmonyAppProvision配置文件中，修改acls字段，跨级别申请权限，可参考[申请使用受限权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl)。
 
-完成权限配置后，可参考[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)对应用进行签名。
+完成权限配置后，可参考[自动签名](/docs/tools/coding-debug/ide-signing)对应用进行签名。

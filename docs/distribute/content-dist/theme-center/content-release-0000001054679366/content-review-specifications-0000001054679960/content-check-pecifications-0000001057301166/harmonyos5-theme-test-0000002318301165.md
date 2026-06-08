@@ -2,8 +2,10 @@
 title: "主题测试审核规范"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/harmonyos5-theme-test-0000002318301165
+upstream_id: distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/content-check-pecifications-0000001057301166/harmonyos5-theme-test-0000002318301165
+last_sync: 2026-06-07
+sync_hash: c87e3a80
 ---
-
 # 主题测试审核规范
 
 |  |  |  |  |

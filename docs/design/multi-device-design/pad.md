@@ -3,8 +3,10 @@ title: 平板
 sidebar_label: 平板
 original_url: /docs/design/multi-device-design/pad
 format: md
+upstream_id: design/multi-device-design/pad
+last_sync: 2026-06-07
+sync_hash: 7c98c62f
 ---
-
 # 平板
 
 平板是很多用户经常使用的设备，用户使用平板来影音娱乐，阅读学习以及办公创作，系统和应用的体验对用户至关重要。

@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-suggest-use-effectkit-blur"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hp-arkui-suggest-use-effectkit-blur
 format: md
+upstream_id: tools/coding-debug/ide-hp-arkui-suggest-use-effectkit-blur
+last_sync: 2026-06-07
+sync_hash: 637a81cb
 ---
-
-
 # @performance/hp-arkui-suggest-use-effectkit-blur
 
 建议使用effectKit.createEffect实现模糊效果。

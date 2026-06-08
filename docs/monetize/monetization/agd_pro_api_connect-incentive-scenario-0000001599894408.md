@@ -3,10 +3,10 @@ title: "对接激励场景解决方案"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_api_connect-incentive-scenario-0000001599894408
 format: md
+upstream_id: monetize/monetization/agd_pro_api_connect-incentive-scenario-0000001599894408
+last_sync: 2026-06-07
+sync_hash: 2175b484
 ---
-
-
-
 #### 前提条件
 
 已联系华为运营配置媒体的激励场景权限。

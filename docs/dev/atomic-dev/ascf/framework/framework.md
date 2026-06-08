@@ -2,9 +2,10 @@
 title: "框架"
 original_url: /docs/dev/atomic-dev/ascf/framework/framework
 format: md
+upstream_id: dev/atomic-dev/ascf/framework/framework
+last_sync: 2026-06-07
+sync_hash: 867b285a
 ---
-
-
 * **[文件结构](/docs/dev/atomic-dev/ascf/framework/file-structure)**
 * **[配置](/docs/dev/atomic-dev/ascf/config/config)**
 * **[视图层](/docs/dev/atomic-dev/ascf/view-layer/view-layer)**

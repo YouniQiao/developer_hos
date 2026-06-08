@@ -2,9 +2,10 @@
 title: "弹窗类控件走焦的场景"
 original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/pop-up-controls-focus
 format: md
+upstream_id: dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/pop-up-controls-focus
+last_sync: 2026-06-07
+sync_hash: 98dbad5c
 ---
-
-
 ## 设计场景
 
 根据用户交互操作场景，弹窗可分为模态弹窗和非模态弹窗两种类型，其区别在于用户是否必须对其做出响应。

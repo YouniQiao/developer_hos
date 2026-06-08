@@ -3,8 +3,11 @@ title: "@typescript-eslint/triple-slash-reference"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_triple-slash-reference
 format: md
+upstream_id: tools/coding-debug/ide_triple-slash-reference
+last_sync: 2026-06-07
+sync_hash: 16053dd4
+upstream_hash: 8a6d7867bc35
 ---
-
 
 # @typescript-eslint/triple-slash-reference
 

@@ -3,8 +3,10 @@ title: 图片
 sidebar_label: 图片
 original_url: /docs/design/components/view-components/image
 format: md
+upstream_id: design/components/view-components/image
+last_sync: 2026-06-07
+sync_hash: de007bc7
 ---
-
 \{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 图片

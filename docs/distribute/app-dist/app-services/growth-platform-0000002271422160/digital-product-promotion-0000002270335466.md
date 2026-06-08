@@ -3,9 +3,10 @@ title: "数字商品服务"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-services/growth-platform-0000002271422160/digital-product-promotion-0000002270335466
 format: md
+upstream_id: distribute/app-dist/app-services/growth-platform-0000002271422160/digital-product-promotion-0000002270335466
+last_sync: 2026-06-07
+sync_hash: 63d36bb4
 ---
-
-
 # 数字商品服务
 
 ## 概述
@@ -120,9 +121,9 @@ format: md
 
 2、商品管理：该应用在单框PMS中存在多少个生效状态的数字商品。商品管理系统操作指南详见：[管理数字商品](`https://developer.huawei.com/consumer/cn/doc/app/digital-products-manage-0000001959074881`)。
 
-3、对账结算：该应用的开发者在联盟侧-管理中心-收益是否存在待确认的数字商品服务结算单。财务结算操作指南详见：[财务结算](`https://developer.huawei.com/consumer/cn/doc/app/financial-settlement-0000001931995732`)。
+3、对账结算：该应用的开发者在联盟侧-管理中心-收益是否存在待确认的数字商品服务结算单。财务结算操作指南详见：[财务结算](`/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/financial-settlement-0000001931995732)。
 
-4、售后管理：该应用待处理的退款请求工单数量。订单售后管理操作指南详见：[退款管理](`https://developer.huawei.com/consumer/cn/doc/app/refund-management-0000002084083100`)。
+4、售后管理：该应用待处理的退款请求工单数量。订单售后管理操作指南详见：[退款管理](`/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/refund-management-0000002084083100)。
 
 ## 经营分析
 

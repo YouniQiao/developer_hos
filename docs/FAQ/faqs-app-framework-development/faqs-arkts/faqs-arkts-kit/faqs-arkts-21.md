@@ -2,9 +2,10 @@
 format: md
 title: "使用NAPI扩展TS接口时，常用属性和实现接口的基本用法"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-21
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-21
+last_sync: 2026-06-07
+sync_hash: 65343365
 ---
-
-
 1. env是使用NAPI的模块化编程，注册模块后，通过回调函数调用。
 
    ```

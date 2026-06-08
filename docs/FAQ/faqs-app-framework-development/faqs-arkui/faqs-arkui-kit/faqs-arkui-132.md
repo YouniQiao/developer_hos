@@ -2,9 +2,10 @@
 format: md
 title: "如何获取与设置屏幕亮度"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-132
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-132
+last_sync: 2026-06-07
+sync_hash: 4abfc94d
 ---
-
-
 获取与设置屏幕亮度可以通过如下两种方式：
 
 **1、通过使用settings实现屏幕亮度的获取与设置。**

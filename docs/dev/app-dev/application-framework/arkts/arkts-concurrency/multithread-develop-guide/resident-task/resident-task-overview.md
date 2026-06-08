@@ -2,9 +2,10 @@
 title: "常驻任务并发场景简介"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/resident-task/resident-task-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/resident-task/resident-task-overview
+last_sync: 2026-06-07
+sync_hash: 22359423
 ---
-
-
 在应用业务实现中，对于耗时较长（超过3分钟）且并发量较小的常驻任务，建议使用Worker在后台线程中执行这些操作，以避免阻塞UI主线程，防止出现丢帧、卡顿等影响用户体验的问题。
 
 常驻任务是指相比于短时任务，时间更长的任务，可能跟UI主线程生命周期一致。相比于长时任务，常驻任务更倾向于跟线程绑定的任务，单次运行时间更长（比如超过3分钟）。

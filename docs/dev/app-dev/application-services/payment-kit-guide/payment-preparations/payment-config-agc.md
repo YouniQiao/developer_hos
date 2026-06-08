@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开通支付服务"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-config-agc
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-config-agc
+last_sync: 2026-06-07
+sync_hash: 074b8661
 ---
-
-
 请先参考“[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)”完成基本准备工作及指纹配置，再继续进行以下开发活动。
 
 ![](./img/d989f777.png)

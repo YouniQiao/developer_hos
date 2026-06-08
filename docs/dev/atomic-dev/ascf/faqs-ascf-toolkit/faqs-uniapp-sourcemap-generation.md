@@ -2,9 +2,10 @@
 title: "uniapp调试生成sourcemap的问题"
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-uniapp-sourcemap-generation
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-uniapp-sourcemap-generation
+last_sync: 2026-06-07
+sync_hash: d62f50a5
 ---
-
-
 **问题现象**
 
 uniapp编译运行没有sourcemap，无法调试。

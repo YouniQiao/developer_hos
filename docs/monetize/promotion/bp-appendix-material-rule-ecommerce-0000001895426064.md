@@ -3,8 +3,10 @@ title: "电商"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-appendix-material-rule-ecommerce-0000001895426064
 format: md
+upstream_id: monetize/promotion/bp-appendix-material-rule-ecommerce-0000001895426064
+last_sync: 2026-06-07
+sync_hash: 9e55f91d
 ---
-
 # 电商
 
 ## 法律法规审核规范

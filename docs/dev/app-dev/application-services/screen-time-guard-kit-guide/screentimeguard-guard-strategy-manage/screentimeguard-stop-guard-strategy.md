@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "停止策略"
 original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-guard-strategy-manage/screentimeguard-stop-guard-strategy
 format: md
+upstream_id: dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-guard-strategy-manage/screentimeguard-stop-guard-strategy
+last_sync: 2026-06-07
+sync_hash: a419db54
 ---
-
-
 ## 场景介绍
 
 当用户希望停止某个管控规则时，可以调用停止管控策略的接口。根据参数中传入的策略名，应用可以停止对应管控策略。一旦策略被停止，系统将不再根据该规则对用户的屏幕使用行为进行监管。

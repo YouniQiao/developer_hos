@@ -2,9 +2,10 @@
 title: "组件绘制优化"
 original_url: /docs/quality/pptimized-component-drawing
 format: md
+upstream_id: /docs/quality/pptimized-component-drawing
+last_sync: 2026-06-07
+sync_hash: 7521c523
 ---
-
-
 # 组件绘制优化
 
 应用启动性能与FrameNode树的节点数量及属性相关，建议采取以下UI组件优化方案：

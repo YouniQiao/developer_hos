@@ -2,9 +2,10 @@
 format: md
 title: "DevEco Studio 6.0.0 Beta1 及以上版本DevEco Studio ARKUI-X工程构建app报错"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-188
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-188
+last_sync: 2026-06-07
+sync_hash: 58e43dc4
 ---
-
-
 **问题现象**
 
 构建app报错：“Could not open settings generic class cache for settings file”

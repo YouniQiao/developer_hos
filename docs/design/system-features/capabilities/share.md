@@ -3,8 +3,10 @@ title: 分享
 sidebar_label: 分享
 original_url: /docs/design/system-features/capabilities/share
 format: md
+upstream_id: design/system-features/capabilities/share
+last_sync: 2026-06-07
+sync_hash: 591fd7eb
 ---
-
 # 分享
 
 用户可通过“分享”操作，将当前内容分享给他人。

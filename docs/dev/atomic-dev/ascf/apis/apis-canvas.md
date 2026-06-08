@@ -2,9 +2,10 @@
 title: "画布"
 original_url: /docs/dev/atomic-dev/ascf/apis/apis-canvas
 format: md
+upstream_id: dev/atomic-dev/ascf/apis/apis-canvas
+last_sync: 2026-06-07
+sync_hash: db349061
 ---
-
-
 ## has.createCanvasContext
 
 has.createCanvasContext(string canvasId, Object this)

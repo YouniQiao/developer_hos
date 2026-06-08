@@ -2,9 +2,10 @@
 title: "创建瀑布流（WaterFlow）"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-list-and-grid/arkts-layout-development-create-waterflow
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-list-and-grid/arkts-layout-development-create-waterflow
+last_sync: 2026-06-07
+sync_hash: 179fbdec
 ---
-
-
 瀑布流[WaterFlow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-waterflow)常用于展示图片信息，尤其在购物和资讯类应用中。
 
 ArkUI提供了WaterFlow容器组件，用于构建瀑布流布局。WaterFlow组件支持条件渲染、循环渲染和懒加载等方式生成子组件。

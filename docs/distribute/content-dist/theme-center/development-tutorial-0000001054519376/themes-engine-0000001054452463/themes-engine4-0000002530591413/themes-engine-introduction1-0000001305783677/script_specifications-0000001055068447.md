@@ -3,9 +3,10 @@ title: "脚本规范"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/themes-engine-introduction1-0000001305783677/script_specifications-0000001055068447
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/themes-engine-introduction1-0000001305783677/script_specifications-0000001055068447
+last_sync: 2026-06-07
+sync_hash: a68c7818
 ---
-
-
 # 脚本规范
 
 1. <strong>参数值的内容不能为空</strong>

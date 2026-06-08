@@ -1,9 +1,10 @@
 ---
 title: "图片资源加载优化"
 original_url: /docs/quality/texture-compression-improve-performance
+upstream_id: /docs/quality/texture-compression-improve-performance
+last_sync: 2026-06-07
+sync_hash: 7da3de63
 ---
-
-
 # 图片资源加载优化
 
 ## 概述
@@ -54,7 +55,7 @@ filters：在filters属性中可配置method、files和exclude三个属性对象
 * files中的三个属性path、size和resolution分别指定按路径、大小和分辨率匹配的过滤条件。
 * 在exclude中列出的属性与files中相同，从files中移除不需要压缩的文件。
 
-基本编译配置项的类型及说明可参考[compression](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile#section2095319147103)。纹理压缩配置的示例代码如下：
+基本编译配置项的类型及说明可参考[compression](/docs/tools/coding-debug/ide-hvigor-build-profile#section2095319147103)。纹理压缩配置的示例代码如下：
 
 ```json
 "buildOption": {

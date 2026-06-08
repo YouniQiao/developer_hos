@@ -3,9 +3,10 @@ title: "上/下架、升级流程介绍"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/developing-intelligent-agents-0000002435989592/process-introduction-0000002509696971
 format: md
+upstream_id: distribute/xiaoyi/developing-intelligent-agents-0000002435989592/process-introduction-0000002509696971
+last_sync: 2026-06-07
+sync_hash: 4a5857c5
 ---
-
-
 # 上/下架、升级流程介绍
 
 执行上架操作，并且已经审核通过的智能体，才能被其他用户搜索并使用。

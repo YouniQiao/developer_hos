@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "OpenGL ES平台"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-fg-interpolation-gles
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-fg-interpolation-gles
+last_sync: 2026-06-07
+sync_hash: 66d87daa
 ---
-
-
 ## 业务流程
 
 基于OpenGL ES图形API平台，超帧内插模式的主要业务流程如下：

@@ -2,9 +2,10 @@
 title: "扫描工具"
 original_url: /docs/dev/app-dev/system/app-check-tool
 format: md
+upstream_id: dev/app-dev/system/app-check-tool
+last_sync: 2026-06-07
+sync_hash: c2571116
 ---
-
-
 ## 简介
 
 扫描工具可用于分析检测应用安装包，根据不同的参数设定，扫描指定路径的HAP、HSP、App包内容并输出检测结果报告，为开发者优化包结构或排查问题提供数据支撑。目前扫描工具支持以下几种分析统计：

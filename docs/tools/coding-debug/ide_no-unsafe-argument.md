@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-unsafe-argument"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unsafe-argument
 format: md
+upstream_id: tools/coding-debug/ide_no-unsafe-argument
+last_sync: 2026-06-07
+sync_hash: 8db6581a
 ---
-
-
 # @typescript-eslint/no-unsafe-argument
 
 不允许将any类型的值作为函数的参数传入。

@@ -2,9 +2,10 @@
 format: md
 title: "如何解决子组件全屏后margin不会生效的问题"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-32
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-32
+last_sync: 2026-06-07
+sync_hash: 556069d4
 ---
-
-
 父组件全屏显示，子组件默认撑满。设置左右margin值后，子组件可能会超出屏幕范围。可以使用`constraintSize`属性限制子组件的最大宽高。参考代码如下：
 
 ```

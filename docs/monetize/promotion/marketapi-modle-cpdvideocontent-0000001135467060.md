@@ -3,8 +3,10 @@ title: "CpdVideoContent"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-cpdvideocontent-0000001135467060
 format: md
+upstream_id: monetize/promotion/marketapi-modle-cpdvideocontent-0000001135467060
+last_sync: 2026-06-07
+sync_hash: 7f238601
 ---
-
 # CpdVideoContent
 
 | 字段 | 必选(M)/可选(O) | 类型 | 描述 |

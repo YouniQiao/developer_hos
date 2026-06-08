@@ -3,8 +3,10 @@ title: "查询分析工具关联关系"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-tracking4-0000001338383009
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-tracking4-0000001338383009
+last_sync: 2026-06-07
+sync_hash: ed86a91c
 ---
-
 # 查询分析工具关联关系
 
 您通过本接口可以查询分析工具关联关系。

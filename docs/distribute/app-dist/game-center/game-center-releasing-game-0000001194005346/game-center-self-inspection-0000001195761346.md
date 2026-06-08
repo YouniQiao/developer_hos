@@ -3,9 +3,10 @@ title: "上架前自检"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-releasing-game-0000001194005346/game-center-self-inspection-0000001195761346
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-releasing-game-0000001194005346/game-center-self-inspection-0000001195761346
+last_sync: 2026-06-07
+sync_hash: 5a0a3aad
 ---
-
-
 # 上架前自检
 
 华为游戏中心是华为移动应用分发平台，为用户提供游戏的推荐、搜索、安装、管理、分享等服务，帮助您在华为应用市场实现商业价值最大化。

@@ -3,9 +3,10 @@ title: "@typescript-eslint/strict-boolean-expressions"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_strict-boolean-expressions
 format: md
+upstream_id: tools/coding-debug/ide_strict-boolean-expressions
+last_sync: 2026-06-07
+sync_hash: 58f25ede
 ---
-
-
 # @typescript-eslint/strict-boolean-expressions
 
 不允许在布尔表达式中使用非布尔类型。

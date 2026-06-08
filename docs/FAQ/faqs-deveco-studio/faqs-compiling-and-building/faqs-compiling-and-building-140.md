@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“Cannot resolved import statement”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-140
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-140
+last_sync: 2026-06-07
+sync_hash: 4303c74e
 ---
-
-
 **错误描述**
 
 在编译过程中，提示“Cannot resolved import statement”错误信息。

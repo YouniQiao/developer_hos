@@ -2,9 +2,10 @@
 format: md
 title: "如何卸载debug包"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-40
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-40
+last_sync: 2026-06-07
+sync_hash: 59804c34
 ---
-
-
 可以通过以下两种方式实现：
 
 * 方式一：执行 hdc shell bm uninstall -n bundleName 命令。

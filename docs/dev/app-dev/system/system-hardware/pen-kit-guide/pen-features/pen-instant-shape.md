@@ -2,9 +2,10 @@
 title: "接入一笔成形"
 original_url: /docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-features/pen-instant-shape
 format: md
+upstream_id: dev/app-dev/system/system-hardware/pen-kit-guide/pen-features/pen-instant-shape
+last_sync: 2026-06-07
+sync_hash: 6282a240
 ---
-
-
 接入一笔成形功能，可以传入手写笔迹的点位信息、通过手写笔/手指在屏幕上停顿一定的时间后触发此功能，触发功能后将自动识别当前绘制的图形，并生成对应的图像信息。
 
 ## 场景介绍

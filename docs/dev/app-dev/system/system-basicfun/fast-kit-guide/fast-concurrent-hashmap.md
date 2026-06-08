@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用ConcurrentHashmap在多线程下完成键值信息的查找维护"
 original_url: /docs/dev/app-dev/system/system-basicfun/fast-kit-guide/fast-concurrent-hashmap
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/fast-kit-guide/fast-concurrent-hashmap
+last_sync: 2026-06-07
+sync_hash: d7de2351
 ---
-
-
 FAST Kit提供的Concurrent HashMap（并发哈希表）专为高并发场景下的键值对数据管理而设计。它通过细粒度的锁策略实现多线程环境下的安全存储、快速访问与高效更新，适用于对并发吞吐量和数据一致性要求较高的增删改查操作，典型场景包括单点插入、删除、查询及并发修改等。
 
 ## 接口说明

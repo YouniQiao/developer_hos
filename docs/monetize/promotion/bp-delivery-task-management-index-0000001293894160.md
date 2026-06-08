@@ -2,7 +2,12 @@
 title: "报表指标说明"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-task-management-index-0000001293894160
+upstream_id: monetize/promotion/bp-delivery-task-management-index-0000001293894160
+last_sync: 2026-06-07
+sync_hash: 06dc545d
+upstream_hash: 2b19099b0b6b
 ---
+
 import MergeTable from '@site/src/components/MergeTable';
 
 # 报表指标说明

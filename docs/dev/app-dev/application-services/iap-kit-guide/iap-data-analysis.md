@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "收益分析和报告"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-data-analysis
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-data-analysis
+last_sync: 2026-06-07
+sync_hash: 924c89fc
 ---
-
-
 ## 自助结算
 
 当销售商品后，可登录[开发者联盟](https://developer.huawei.com/consumer/cn/)，进入“管理中心”，点击“我的账户”，选择“收益”，进入自助结算页面，查看商品产生的收益结算单并申请结算，详情见[自助结算指南](https://developer.huawei.com/consumer/cn/doc/start/checkoutguide-0000001053128363)。

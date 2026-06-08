@@ -3,8 +3,10 @@ title: "创建解决方案任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-lending-industry-solutions-tasks-0000002002408413
 format: md
+upstream_id: monetize/promotion/bp-functions-lending-industry-solutions-tasks-0000002002408413
+last_sync: 2026-06-07
+sync_hash: 2659e0aa
 ---
-
 # 创建解决方案任务
 
 ## 新建贷款行业解决方案任务

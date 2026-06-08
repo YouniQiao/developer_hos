@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "添加、删除书签"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-add-bookmark
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-add-bookmark
+last_sync: 2026-06-07
+sync_hash: 0697f371
 ---
-
-
 PDF Kit支持添加和删除PDF文档书签。
 
 添加书签时，可设置标题、颜色，是否粗体、斜体、跳转信息等。

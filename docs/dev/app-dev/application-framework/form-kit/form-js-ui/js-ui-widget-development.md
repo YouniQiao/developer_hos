@@ -2,9 +2,10 @@
 title: "JS卡片开发指导（Stage模型）"
 original_url: /docs/dev/app-dev/application-framework/form-kit/form-js-ui/js-ui-widget-development
 format: md
+upstream_id: dev/app-dev/application-framework/form-kit/form-js-ui/js-ui-widget-development
+last_sync: 2026-06-07
+sync_hash: 67fd2571
 ---
-
-
 Stage模型是从API version 9开始支持，目前主推且会长期演进的模型。该模型采用面向对象的方式，将应用组件以类接口的形式开放给开发者，可以进行派生，利于扩展能力。
 
 ## 接口说明
@@ -49,7 +50,7 @@ Stage卡片开发，即基于[Stage模型](/docs/dev/app-dev/application-framewo
 
 ### 创建卡片FormExtensionAbility
 
-创建Stage模型的卡片，需实现FormExtensionAbility生命周期接口。先参考[DevEco Studio服务卡片开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-service-widget)生成服务卡片模板。
+创建Stage模型的卡片，需实现FormExtensionAbility生命周期接口。先参考[DevEco Studio服务卡片开发指南](/docs/tools/coding-debug/ide-service-widget)生成服务卡片模板。
 
 1. 在JsCardFormAbility.ets中，导入相关模块。
 

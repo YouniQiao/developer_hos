@@ -3,9 +3,10 @@ title: "@typescript-eslint/prefer-readonly"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_prefer-readonly
 format: md
+upstream_id: tools/coding-debug/ide_prefer-readonly
+last_sync: 2026-06-07
+sync_hash: 20ae8ea6
 ---
-
-
 # @typescript-eslint/prefer-readonly
 
 如果私有成员从未在构造函数之外进行修改，则要求将其标记为“只读”。

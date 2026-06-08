@@ -3,9 +3,10 @@ title: "@performance/hp-ffrt-no-use-std"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hp-ffrt-no-use-std
 format: md
+upstream_id: tools/coding-debug/ide-hp-ffrt-no-use-std
+last_sync: 2026-06-07
+sync_hash: 257268c2
 ---
-
-
 # @performance/hp-ffrt-no-use-std
 
 禁止在FFRT worker中使用std::xxx等同步接口。该规则仅对C/C++文件进行检查。

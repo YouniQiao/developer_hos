@@ -2,9 +2,10 @@
 title: "应用多线程开发实践"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide
+last_sync: 2026-06-07
+sync_hash: 78952d80
 ---
-
-
 * **[应用多线程开发概述](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-overview)**
 * **[耗时任务并发场景](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/time-consuming-task)**
 * **[长时任务并发场景](/docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/long-time-task)**

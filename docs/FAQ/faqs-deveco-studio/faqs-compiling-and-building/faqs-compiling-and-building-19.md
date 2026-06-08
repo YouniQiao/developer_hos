@@ -2,8 +2,11 @@
 format: md
 title: "编译报错“keystore password was incorrect”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-19
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-19
+last_sync: 2026-06-07
+sync_hash: 26f419c4
+upstream_hash: 89c21e31fc7e
 ---
-
 
 **问题现象**
 

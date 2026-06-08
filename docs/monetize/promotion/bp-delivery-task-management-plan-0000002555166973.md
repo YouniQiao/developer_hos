@@ -3,8 +3,10 @@ title: "管理推广计划"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-task-management-plan-0000002555166973
 format: md
+upstream_id: monetize/promotion/bp-delivery-task-management-plan-0000002555166973
+last_sync: 2026-06-07
+sync_hash: be589ac7
 ---
-
 # 管理推广计划
 
 ## 前提条件

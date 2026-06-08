@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "转码常见问题"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-transcoder-arkts/avtranscoder-faq
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-arkts/media-transcoder-arkts/avtranscoder-faq
+last_sync: 2026-06-07
+sync_hash: fb7de188
 ---
-
-
 ## 应用发送视频进行转码，音频编码格式为什么变化
 
 在转码过程中，若未指定音频轨道格式，系统默认将其转换为AAC编码格式。

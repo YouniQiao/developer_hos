@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用Picker选择媒体库资源"
 original_url: /docs/dev/app-dev/media/medialibrary-kit/photoaccesshelper-photoviewpicker
 format: md
+upstream_id: dev/app-dev/media/medialibrary-kit/photoaccesshelper-photoviewpicker
+last_sync: 2026-06-07
+sync_hash: aaefc391
 ---
-
-
 当用户需要分享图片、视频等文件时，开发者可以通过特定接口拉起系统图库，让用户自行选择待分享的资源，完成分享。此接口本身无需申请权限，目前适用于界面UIAbility，使用窗口组件触发。具体使用方式如下：
 
 ![](./img/d445bbd7.png)

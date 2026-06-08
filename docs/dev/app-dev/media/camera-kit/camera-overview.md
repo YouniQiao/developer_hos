@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Camera Kit简介"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-overview
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-overview
+last_sync: 2026-06-07
+sync_hash: c7a8d946
 ---
-
-
 开发者通过调用Camera Kit（相机服务）提供的接口可以开发相机应用，应用通过访问和操作相机硬件，实现基础操作，如预览、拍照和录像；还可以通过接口组合完成更多操作，如控制闪光灯和曝光时间、对焦或调焦等。
 
 ## 开发场景
@@ -42,5 +43,5 @@ format: md
 
 本Kit支持模拟器，但与真机存在部分能力差异，具体差异如下。
 
-* 通用差异：请参见[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification)。
+* 通用差异：请参见[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification)。
 * 模拟器仅支持1280\*720分辨率下的相机预览与拍照能力。

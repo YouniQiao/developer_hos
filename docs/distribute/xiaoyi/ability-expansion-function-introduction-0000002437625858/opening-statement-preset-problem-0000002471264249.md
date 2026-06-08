@@ -3,9 +3,10 @@ title: "开场对话&预置问题"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/opening-statement-preset-problem-0000002471264249
 format: md
+upstream_id: distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/opening-statement-preset-problem-0000002471264249
+last_sync: 2026-06-07
+sync_hash: 17793906
 ---
-
-
 # 开场对话&预置问题
 
 开场对话是用户首次进入智能体后自动展示的引导信息。它的主要目的是帮助用户理解智能体的用途或背景，以及如何与其进行交互。

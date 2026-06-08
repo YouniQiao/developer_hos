@@ -2,9 +2,10 @@
 format: md
 title: "测试结果中，指标值“0”和“-”有什么区别"
 original_url: /docs/FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-scenario-based-performance-test/faqs-scenario-based-performance-test-15
+upstream_id: FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-scenario-based-performance-test/faqs-scenario-based-performance-test-15
+last_sync: 2026-06-07
+sync_hash: 8d6136ac
 ---
-
-
 0：表示该指标项参与了检测，检测结果为 0。
 
 -：表示该指标项不需要或不支持检测，无需关注。

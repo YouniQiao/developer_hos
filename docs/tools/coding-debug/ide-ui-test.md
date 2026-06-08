@@ -3,9 +3,10 @@ title: "黑盒覆盖率测试"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-ui-test
 format: md
+upstream_id: tools/coding-debug/ide-ui-test
+last_sync: 2026-06-07
+sync_hash: 513e99f3
 ---
-
-
 # 黑盒覆盖率测试
 
 DevEco Studio支持黑盒覆盖率测试，不需要开发测试用例，将编译插桩的HAP包推到设备上，然后对该应用/元服务模拟用户操作，测试完成后可生成覆盖率报告，当前仅支持Stage模型。

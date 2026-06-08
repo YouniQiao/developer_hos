@@ -3,8 +3,10 @@ title: "多设备图片美化界面"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/multi-picture-app
 format: md
+upstream_id: dev/app-dev/multi-device/multi-picture-app
+last_sync: 2026-06-07
+sync_hash: edd95fb6
 ---
-
 # 多设备图片美化界面
 
 ## 概述

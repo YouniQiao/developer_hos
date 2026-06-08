@@ -3,9 +3,10 @@ title: "PreviewChecker检测规则"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-previewer-previewchecker
 format: md
+upstream_id: tools/coding-debug/ide-previewer-previewchecker
+last_sync: 2026-06-07
+sync_hash: fb5811c7
 ---
-
-
 # PreviewChecker检测规则
 
 DevEco Studio启动预览时将执行PreviewChecker，检测通过后才可进行预览，以确保在使用预览器前识别到已知的不支持预览的场景，若存在不支持预览的场景，将给出优化提示，以便于开发者根据提示的建议进行代码优化。

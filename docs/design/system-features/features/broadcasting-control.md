@@ -3,8 +3,10 @@ title: 播控中心
 sidebar_label: 播控中心
 original_url: /docs/design/system-features/features/broadcasting-control
 format: md
+upstream_id: design/system-features/features/broadcasting-control
+last_sync: 2026-06-07
+sync_hash: 025d9902
 ---
-
 # 播控中心
 
 ### 媒体播控

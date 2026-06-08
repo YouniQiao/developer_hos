@@ -3,9 +3,10 @@ title: "开发者行为"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/audit-specifications-0000002469548113/developer-behavior-0000002471264369
 format: md
+upstream_id: distribute/xiaoyi/audit-specifications-0000002469548113/developer-behavior-0000002471264369
+last_sync: 2026-06-07
+sync_hash: c59de6db
 ---
-
-
 # 开发者行为
 
 开发者在智能体发布和运营过程中扮演着最重要的角色。若您存在违规行为，华为公司有权对您的智能体进行下架、删除、断开相关服务、终止您与华为的协议和/或冻结、删除您的开发者账号，开发者需承担由此产生的所有法律责任及华为由此遭受的全部损失，包括但不限于华为向权利人或用户赔偿而产生的损失、因此支出的合理费用开支等。若智能体涉及侵害未成年人、诈骗等违法内容，除采取前述措施外，我们将向有关部门举报。

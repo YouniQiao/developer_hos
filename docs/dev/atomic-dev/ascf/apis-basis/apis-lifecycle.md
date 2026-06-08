@@ -2,9 +2,10 @@
 title: "生命周期"
 original_url: /docs/dev/atomic-dev/ascf/apis-basis/apis-lifecycle
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-basis/apis-lifecycle
+last_sync: 2026-06-07
+sync_hash: 92bafdb1
 ---
-
-
 ## has.getLaunchOptionsSync
 
 has.getLaunchOptionsSync(): Object

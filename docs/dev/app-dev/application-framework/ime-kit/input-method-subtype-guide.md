@@ -2,9 +2,10 @@
 title: "输入法子类型开发指南"
 original_url: /docs/dev/app-dev/application-framework/ime-kit/input-method-subtype-guide
 format: md
+upstream_id: dev/app-dev/application-framework/ime-kit/input-method-subtype-guide
+last_sync: 2026-06-07
+sync_hash: 91a4b910
 ---
-
-
 输入法子类型允许输入法展现不同的输入模式或语言，用户可以根据需要在不同模式和语言中切换。如输入法的中文键盘、英文键盘等，都属于输入法的子类型。
 
 ## 输入法子类型的配置与实现

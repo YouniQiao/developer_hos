@@ -2,9 +2,10 @@
 title: "发起认证"
 original_url: /docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/start-authentication
 format: md
+upstream_id: dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/start-authentication
+last_sync: 2026-06-07
+sync_hash: dc922cc1
 ---
-
-
 应用发起身份认证请求，获取身份认证结果，以访问受保护的系统、服务或应用的功能和数据，包括用户个人数据。
 
 ## 接口说明

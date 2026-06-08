@@ -2,9 +2,10 @@
 title: "快速验证"
 original_url: /docs/dev/atomic-dev/account-guide-atomic-get-phone/account-guide-atomic-get-phonenumber
 format: md
+upstream_id: dev/atomic-dev/account-guide-atomic-get-phone/account-guide-atomic-get-phonenumber
+last_sync: 2026-06-07
+sync_hash: 3e1f6f9f
 ---
-
-
 ## 场景介绍
 
 当元服务对获取的手机号时效性要求不高时，可调用Scenario Fusion Kit的[快速验证手机号Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-getphonenumber)，向用户发起手机号授权申请，Button组件实现了Account Kit手机号授权与快速验证功能。经用户同意后，元服务可获取手机号，为用户提供相应服务。

@@ -2,9 +2,10 @@
 title: "DeviceMaterial"
 original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-devicematerial-0000002236201274
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-devicematerial-0000002236201274
+last_sync: 2026-06-07
+sync_hash: 1c648c60
 ---
-
-
 | 参数名称 | 必选（M）/可选（O） | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | deviceType | M | Integer | 设备类型。  取值范围：   * 4：手机 * 5：平板 * 8：智慧屏 * 12：智能手表 * 14：运动手表 * 19：PC/2in1 |

@@ -3,9 +3,10 @@ title: "安装应用程序包和上传文件"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-emulator-install-upload
 format: md
+upstream_id: tools/coding-debug/ide-emulator-install-upload
+last_sync: 2026-06-07
+sync_hash: 8d272886
 ---
-
-
 # 安装应用程序包和上传文件
 
 * 安装应用程序包

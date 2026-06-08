@@ -2,9 +2,10 @@
 title: "按需注入和用时注入"
 original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/on-demand-render-time-injection
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-basic-capabilities/on-demand-render-time-injection
+last_sync: 2026-06-07
+sync_hash: 530e2b83
 ---
-
-
 在元服务启动的过程中，代码注入是一个主要的耗时环节。注入代码量的大小与内存占用与注入耗时正相关。
 
 利用“按需注入”和“用时注入”的特性，可以优化代码注入环节的耗时和内存占用。

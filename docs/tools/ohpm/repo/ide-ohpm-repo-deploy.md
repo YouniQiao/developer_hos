@@ -2,9 +2,10 @@
 title: "ohpm-repo deploy"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-deploy
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-deploy
+last_sync: 2026-06-07
+sync_hash: 7cda2cc5
 ---
-
-
 # ohpm-repo deploy
 
 使用备份文件部署新的ohpm-repo实例。

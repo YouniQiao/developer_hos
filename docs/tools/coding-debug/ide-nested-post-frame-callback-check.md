@@ -3,9 +3,10 @@ title: "@performance/nested-post-frame-callback-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-nested-post-frame-callback-check
 format: md
+upstream_id: tools/coding-debug/ide-nested-post-frame-callback-check
+last_sync: 2026-06-07
+sync_hash: 29c39c0b
 ---
-
-
 # @performance/nested-post-frame-callback-check
 
 postFrameCallback会请求vsync，循环嵌套调用postFrameCallback会导致一直请求vsync，从而引起无效渲染问题。

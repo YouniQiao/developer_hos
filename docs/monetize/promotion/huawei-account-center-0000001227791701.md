@@ -3,8 +3,10 @@ title: "华为账号中心"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/huawei-account-center-0000001227791701
 format: md
+upstream_id: monetize/promotion/huawei-account-center-0000001227791701
+last_sync: 2026-06-07
+sync_hash: 6df1cd75
 ---
-
 # 华为账号中心
 
 支持查看、修改华为账号信息，具体可参考[华为账号信息设置](https://developer.huawei.com/consumer/cn/doc/start/account-management-0000001052865467)。

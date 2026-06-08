@@ -2,9 +2,10 @@
 format: md
 title: "Target AOT编译，AP文件生成失败"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-29
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-29
+last_sync: 2026-06-07
+sync_hash: ce6e19b0
 ---
-
-
 **问题现象**
 
 Target AOT编译，AP文件生成失败，并报错提示“errno: 13”表示权限不足，如下图所示。

@@ -3,6 +3,10 @@ title: "组件布局场景"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-component-layout
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi-device-component-layout
+last_sync: 2026-06-07
+sync_hash: 704ab28e
+upstream_hash: 56bdf3efe131
 ---
 
 # 组件布局场景

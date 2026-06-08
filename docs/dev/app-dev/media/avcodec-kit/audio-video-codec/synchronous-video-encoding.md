@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "视频编码同步模式"
 original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/synchronous-video-encoding
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/audio-video-codec/synchronous-video-encoding
+last_sync: 2026-06-07
+sync_hash: 9aedc00a
 ---
-
-
 从API version 20开始，支持视频编码同步模式。
 
 开发者可以调用本模块的Native API接口，完成同步模式的视频编码。

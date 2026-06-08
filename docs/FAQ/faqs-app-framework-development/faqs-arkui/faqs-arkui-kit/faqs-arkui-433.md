@@ -2,9 +2,10 @@
 format: md
 title: "手表设备，熄屏2分钟才能收到onHidden回调"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-433
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-433
+last_sync: 2026-06-07
+sync_hash: 94c0f89b
 ---
-
-
 **问题描述**
 
 手表设备在系统熄屏后未收到onPageHide回调，屏亮时未收到onPageShow回调。

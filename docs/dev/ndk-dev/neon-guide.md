@@ -2,9 +2,10 @@
 title: "使用Neon指令扩展"
 original_url: /docs/dev/ndk-dev/neon-guide
 format: md
+upstream_id: dev/ndk-dev/neon-guide
+last_sync: 2026-06-07
+sync_hash: 489c8f62
 ---
-
-
 ARM Neon是ARM架构的SIMD（Single Instruction Multiple Data）扩展实现，提供一条指令处理多个数据的并行处理能力，广泛用于多媒体编解码、2D/3D图形处理等领域，提高执行性能。
 
 Neon扩展从ARMv7开始被采用，目前在Cortex-A7、Cortex-A12、Cortex-A15处理器中被设置为默认选项，但在其余的ARMv7 Cortex-A系列中是可选项。具体技术细节请参考《[Introducing NEON Development Article](https://developer.arm.com/documentation/dht0002/a/Introducing-NEON/What-is-SIMD-/ARM-SIMD-instructions?lang=en)》。

@@ -2,9 +2,10 @@
 title: "分析应用的近场数据"
 original_url: /docs/distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-location-sense-0000002511677079
 format: md
+upstream_id: distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-location-sense-0000002511677079
+last_sync: 2026-06-07
+sync_hash: b16e1c79
 ---
-
-
 #### 近场服务分析
 
 1. 在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)首页，点击“分析”。

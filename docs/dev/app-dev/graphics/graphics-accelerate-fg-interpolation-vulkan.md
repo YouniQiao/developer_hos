@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Vulkan平台"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-fg-interpolation-vulkan
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-fg-interpolation-vulkan
+last_sync: 2026-06-07
+sync_hash: 533ecdb9
 ---
-
-
 ## 业务流程
 
 基于Vulkan图形API平台，超帧内插模式的主要业务流程如下：

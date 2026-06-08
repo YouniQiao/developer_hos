@@ -1,8 +1,10 @@
 ---
 title: "应用冷启动时延优化"
 original_url: /docs/quality/application-cold-start-optimization
+upstream_id: /docs/quality/application-cold-start-optimization
+last_sync: 2026-06-07
+sync_hash: c5dcc91b
 ---
-
 # 应用冷启动时延优化
 
 ## 概述
@@ -170,7 +172,7 @@ AppAnalyzer详情报告中会显示动态检测可能导致冷启动完成时延
 
   ![](./img/8fc9a276.png "点击放大")
 
-  网络请求本身是否耗时可通过检测结果中的请求耗时时长来进行判断，时间越长，则网络请求本身耗时越久。详细分析请参考：[网络诊断：Network分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-network)。
+  网络请求本身是否耗时可通过检测结果中的请求耗时时长来进行判断，时间越长，则网络请求本身耗时越久。详细分析请参考：[网络诊断：Network分析](/docs/tools/coding-debug/ide-profiler-network)。
 
   网络请求本身耗时长，可对该URL请求进行预连接和预解析来优化网络传输速度，提前完成DNS查询和TCP/TLS握手，即在应用启动或空闲时提前建立并维护一个持久的连接池；还可以使用CDN来优化网络传输速度，即将静态资源部署到CDN上。
 * 网络请求发起太晚
@@ -206,7 +208,7 @@ AppAnalyzer详情报告中会显示动态检测可能导致冷启动完成时延
 
 开发者需要分析启动过程的耗时瓶颈，优化应用或服务的冷启动速度时，可使用Profiler的Launch场景分析功能，录制启动过程中的关键数据，识别启动缓慢的原因。Profiler Launch可拆解应用冷启动过程，抓取各阶段的耗时数据，帮助开发者快速分析冷启动过程的耗时瓶颈。Launch的具体使用方法参见[冷启动分析：Launch分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-launch-overview)。
 
-已录制一段Launch任务，具体操作步骤请参考[性能问题定位：深度录制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording)。
+已录制一段Launch任务，具体操作步骤请参考[性能问题定位：深度录制](/docs/tools/coding-debug/deep-recording)。
 
 ![](./img/6a2f7af8.png "点击放大")
 
@@ -603,7 +605,7 @@ export let number = computeTask();
 
 ![](./img/feb0782f.png)
 
-建议开发者优先使用[Code Linter扫描工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)进行代码检查，重点关注[@performance/start-window-icon-check](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-start-window-icon-check)规则。若扫描结果中出现该规则相关问题，可参考本章节提供的优化建议进行调整。
+建议开发者优先使用[Code Linter扫描工具](/docs/tools/coding-debug/ide-code-linter)进行代码检查，重点关注[@performance/start-window-icon-check](/docs/tools/coding-debug/ide-start-window-icon-check)规则。若扫描结果中出现该规则相关问题，可参考本章节提供的优化建议进行调整。
 
 **设置合适分辨率的startWindowIcon**
 

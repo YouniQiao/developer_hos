@@ -2,9 +2,10 @@
 title: "打包配置（C#）"
 original_url: /docs/dev/game-dev/packaging-configuration-csharp-0000002395350565
 format: md
+upstream_id: dev/game-dev/packaging-configuration-csharp-0000002395350565
+last_sync: 2026-06-07
+sync_hash: cefed3e7
 ---
-
-
 集成游戏联机对战C# SDK进行代码开发后，如果帧同步过程中使用UDP协议，您需要在游戏引擎导出的Android Studio工程（UDP协议当前仅支持Android平台下arm64-v8a架构）中进行如下配置。
 
 1. 将SDK中“Plugins &gt; Android &gt; libs”路径下的aar包，拷贝到已导出的Android Studio工程xxxxxLibrary/libs中。如已自动添加，可跳过此步骤。

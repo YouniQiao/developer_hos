@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "签名/验签介绍及算法规格"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-signing-signature-verification/huks-ukey-signing-signature-verification-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-signing-signature-verification/huks-ukey-signing-signature-verification-overview
+last_sync: 2026-06-07
+sync_hash: 669cb0e1
 ---
-
-
 Ukey PIN码认证之后，应用可以通过resourceId操作对应密钥执行签名操作。该能力通过HUKS提供的三段式接口实现，应用指定相应的算法参数即可(包括算法类型，目的，填充，摘要等)。
 
 ![](./img/251e4955.png)

@@ -3,8 +3,11 @@ title: "{@link}"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-arktsdoc-link
 format: md
+upstream_id: tools/coding-debug/ide-arktsdoc-link
+last_sync: 2026-06-07
+sync_hash: 86fa9b5a
+upstream_hash: fcd42bf8cade
 ---
-
 
 # `&#123;@link&#125;`
 

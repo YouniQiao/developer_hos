@@ -2,9 +2,10 @@
 format: md
 title: "触摸事件的TouchEvent调用stopPropagation时无法阻止事件分发"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-188
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-188
+last_sync: 2026-06-07
+sync_hash: bebb7928
 ---
-
-
 **问题现象**
 
 当Button嵌套在另一个Button中时，外部调用stopPropagation方法无法阻止内部Button的onTouch事件触发。

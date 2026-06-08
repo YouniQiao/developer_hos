@@ -3,8 +3,10 @@ title: "查询定向详情"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-querytagdetail-0000001135467020
 format: md
+upstream_id: monetize/promotion/marketapi-querytagdetail-0000001135467020
+last_sync: 2026-06-07
+sync_hash: e99ebb3f
 ---
-
 # 查询定向详情
 
 ## 功能介绍

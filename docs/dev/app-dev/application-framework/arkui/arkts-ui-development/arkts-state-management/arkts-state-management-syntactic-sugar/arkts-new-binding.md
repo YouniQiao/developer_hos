@@ -2,9 +2,10 @@
 title: "!!语法：双向绑定"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-syntactic-sugar/arkts-new-binding
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-syntactic-sugar/arkts-new-binding
+last_sync: 2026-06-07
+sync_hash: 04488b5c
 ---
-
-
 在状态管理V1中，推荐使用[$$](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-syntactic-sugar/arkts-two-way-sync)实现系统组件的双向绑定。
 
 在状态管理V2中，推荐使用!!语法糖统一处理双向绑定。

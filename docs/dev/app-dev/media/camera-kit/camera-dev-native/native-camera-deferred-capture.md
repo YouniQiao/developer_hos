@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "分段式拍照(C/C++)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-deferred-capture
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-native/native-camera-deferred-capture
+last_sync: 2026-06-07
+sync_hash: 7679e032
 ---
-
-
 分段式拍照是相机的最重要功能之一，相机输出低质量图用作快速显示，提升用户感知拍照速度，同时使用高质量图保证最后的成图质量达到系统相机的水平，既满足了后处理算法的需求，又不阻塞前台的拍照速度，构筑相机性能竞争力，提升了用户的体验。
 
 * 在第一阶段，系统快速上报轻量处理的图片，轻量处理的图片比全质量图低，出图速度快。应用通过回调会收到一个PhotoAsset对象，通过该对象可调用媒体库接口，读取图片或落盘图片。

@@ -2,9 +2,10 @@
 title: "配置策略"
 original_url: /docs/dev/game-dev/gameobe-policy-configuration-0000002395190469
 format: md
+upstream_id: dev/game-dev/gameobe-policy-configuration-0000002395190469
+last_sync: 2026-06-07
+sync_hash: 2998103c
 ---
-
-
 联机对战服务为每款游戏提供了房间管理功能，您可以在控制台对房间延时解散、玩家掉线重连时间进行设置。
 
 ## 前提条件

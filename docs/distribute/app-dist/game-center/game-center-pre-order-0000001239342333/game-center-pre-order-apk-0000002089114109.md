@@ -3,9 +3,10 @@ title: "游戏预约（APK）"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-pre-order-0000001239342333/game-center-pre-order-apk-0000002089114109
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-pre-order-0000001239342333/game-center-pre-order-apk-0000002089114109
+last_sync: 2026-06-07
+sync_hash: f48ecc41
 ---
-
-
 # 游戏预约（APK）
 
 游戏预约指在游戏首发前进行宣传，配合游戏论坛、资讯的持续更新曝光，保证首发前的游戏热度，为正式首发凝聚力量。当玩家对游戏感兴趣时会选择预约游戏，在游戏首发后，华为游戏中心会给已预约的用户发送通知，这些用户会有较高概率转化成游戏玩家，因此我们强烈推荐您使用游戏预约。游戏预约流程如下：
@@ -15,8 +16,8 @@ format: md
 ## 前提条件
 
 * 您已成功[创建游戏](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-createapp-0000001146718717`)，且软件包类型为“APK(Android应用)”，支持设备为“手机”。
-* （可选）您可以[开通游戏版块](`https://developer.huawei.com/consumer/cn/doc/app/game-center-community-operation-0000001194305462`)，宣传游戏内容，聚集核心用户。
-* （可选）您可以[申请预约活动](`https://developer.huawei.com/consumer/cn/doc/app/game-center-setup-activities-reservation-0000001657694701`)，对预约用户派发礼包、卡券等福利。
+* （可选）您可以[开通游戏版块](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)，宣传游戏内容，聚集核心用户。
+* （可选）您可以[申请预约活动](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-reservation-0000001657694701)，对预约用户派发礼包、卡券等福利。
 
 ## 选择预约方式
 
@@ -36,7 +37,7 @@ H5页面展示样式较丰富，上传图片、文字素材即可生成预约页
 
 ### 自定义页面预约（魔方创意页面）
 
-自定义页面展示样式较丰富，页面内容不受固定模块限制，可根据游戏自身特色开发各类模块，例如多视频、技能演示、小游戏等，以灵活多变的形式和丰富多彩的内容吸引预约用户。当前支持使用[魔方创意生成的H5内容化预约页](`https://developer.huawei.com/consumer/cn/doc/app/game-center-creatives-ideas-pre-order-0000002023298502`)或直接使用预约H5活动页面作为预约详情页。
+自定义页面展示样式较丰富，页面内容不受固定模块限制，可根据游戏自身特色开发各类模块，例如多视频、技能演示、小游戏等，以灵活多变的形式和丰富多彩的内容吸引预约用户。当前支持使用[魔方创意生成的H5内容化预约页](`/docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-pre-order-0000002023298502)或直接使用预约H5活动页面作为预约详情页。
 
 ![](./img/9838d771806e.png)
 
@@ -173,7 +174,7 @@ H5页面展示样式较丰富，上传图片、文字素材即可生成预约页
 
 | 配置项 | 说明 |
 | --- | --- |
-| 自定义H5链接 | 可直接填写由魔方创意生成并审核通过的H5活动页面链接，或前往魔方创意新建页面。点击“前往创建”前往魔方创意编辑并保存编辑页后，需要返回到当前页点击“生成链接”生成对应的H5链接，并完成提交预约申请，否则修改不生效。  说明：  若历史提交为zip包素材，更新提交时，若不涉及页面内容更新，此处可继续提交原zip包；若需更新页面内容，请使用魔方创意生成H5活动页面并完成提交。具体魔方创意操作请参见[游戏预约魔方创意](`https://developer.huawei.com/consumer/cn/doc/app/game-center-creatives-ideas-pre-order-0000002023298502`)。 |
+| 自定义H5链接 | 可直接填写由魔方创意生成并审核通过的H5活动页面链接，或前往魔方创意新建页面。点击“前往创建”前往魔方创意编辑并保存编辑页后，需要返回到当前页点击“生成链接”生成对应的H5链接，并完成提交预约申请，否则修改不生效。  说明：  若历史提交为zip包素材，更新提交时，若不涉及页面内容更新，此处可继续提交原zip包；若需更新页面内容，请使用魔方创意生成H5活动页面并完成提交。具体魔方创意操作请参见[游戏预约魔方创意](`/docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-pre-order-0000002023298502)。 |
 | 生效时间 | 请选择预约生效方式：   * 审核通过立即生效 * 指定时间生效 |
 | 云游戏试玩 | 请选择“不支持”。  说明：  根据国家出版署规定不能以任何形式给未成年人提供游戏，所以该配置项目前已失效。 |
 

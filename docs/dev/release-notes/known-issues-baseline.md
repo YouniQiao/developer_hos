@@ -2,9 +2,10 @@
 title: "已解决和已知的问题"
 format: md
 original_url: /docs/dev/release-notes/known-issues-baseline
+upstream_id: dev/release-notes/known-issues-baseline
+last_sync: 2026-06-07
+sync_hash: b958ce81
 ---
-
-
 # 已解决和已知的问题
 
 ## 已解决的问题

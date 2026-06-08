@@ -2,9 +2,10 @@
 title: "伪造篡改"
 original_url: /docs/experience-suggestions/security-privacy/pure/standard-pure-tampering
 format: md
+upstream_id: experience-suggestions/security-privacy/pure/standard-pure-tampering
+last_sync: 2026-06-07
+sync_hash: d8ccff86
 ---
-
-
 # 伪造篡改
 
 |  |  |

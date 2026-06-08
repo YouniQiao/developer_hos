@@ -3,9 +3,10 @@ title: "rawheap-translator工具"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/rawheap-translator
 format: md
+upstream_id: tools/cli-tools/rawheap-translator
+last_sync: 2026-06-07
+sync_hash: 5bca11e6
 ---
-
-
 # rawheap-translator工具
 
 ## 使用场景

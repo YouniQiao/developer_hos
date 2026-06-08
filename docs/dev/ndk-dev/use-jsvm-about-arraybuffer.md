@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口进行ArrayBuffer相关开发"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-arraybuffer
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-arraybuffer
+last_sync: 2026-06-07
+sync_hash: a2791fb3
 ---
-
-
 ## 简介
 
 ArrayBuffer 是 JavaScript 中的一种数据类型，用于表示通用的、固定长度的原始二进制数据缓冲区。它提供了一种在 JavaScript 中有效地表示和操作原始二进制数据的方式。

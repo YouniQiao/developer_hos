@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "概述"
 original_url: /docs/dev/app-dev/application-services/system-share-overview
 format: md
+upstream_id: dev/app-dev/application-services/system-share-overview
+last_sync: 2026-06-07
+sync_hash: 257e56c8
 ---
-
-
 ## 场景介绍
 
 在手机设备中，分享框通过模态弹窗方式被拉起，效果如下图所示。

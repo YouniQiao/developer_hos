@@ -2,9 +2,10 @@
 title: "安全配置指南"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-configuration-guide
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-configuration-guide
+last_sync: 2026-06-07
+sync_hash: 5aad1606
 ---
-
-
 # 安全配置指南
 
 为了保障用户在使用ohpm-repo过程中更加安全可靠，我们收集如下推荐安全配置项，用户可以根据自己的需要采纳配置。

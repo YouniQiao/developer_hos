@@ -2,9 +2,10 @@
 title: "升级兼容"
 original_url: /docs/experience-suggestions/compatibility/basic-compatibility/upgrade-compatible
 format: md
+upstream_id: experience-suggestions/compatibility/basic-compatibility/upgrade-compatible
+last_sync: 2026-06-07
+sync_hash: 50a922b6
 ---
-
-
 # 升级兼容
 
 |  |  |

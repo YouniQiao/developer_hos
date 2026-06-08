@@ -3,9 +3,10 @@ title: "@performance/reasonable-gps-use-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-reasonable-gps-use-check
 format: md
+upstream_id: tools/coding-debug/ide-reasonable-gps-use-check
+last_sync: 2026-06-07
+sync_hash: ca24d815
 ---
-
-
 # @performance/reasonable-gps-use-check
 
 无长时任务的应用退到后台时，禁止使用定位服务。

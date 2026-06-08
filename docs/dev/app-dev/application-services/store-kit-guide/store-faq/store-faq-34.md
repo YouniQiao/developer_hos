@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "按需加载场景中，是否支持同时存在多个任务？"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-34
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-34
+last_sync: 2026-06-07
+sync_hash: c82a16ca
 ---
-
-
 不支持，同一应用同时只能存在一个按需分发任务。
 
 **解决措施**

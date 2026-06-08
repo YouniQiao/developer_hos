@@ -2,9 +2,10 @@
 title: "缓存读写"
 original_url: /docs/dev/game-dev/gameobe-cache-real-time-server-0000002361670592
 format: md
+upstream_id: dev/game-dev/gameobe-cache-real-time-server-0000002361670592
+last_sync: 2026-06-07
+sync_hash: 929aeeee
 ---
-
-
 您可以使用ActionArgs.SDK相关方法实现一些缓存读写的业务逻辑，包括设置、获取以及删除缓存信息等使用场景。
 
 ## 设置缓存信息

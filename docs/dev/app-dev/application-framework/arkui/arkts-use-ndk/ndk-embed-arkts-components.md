@@ -2,9 +2,10 @@
 title: "嵌入ArkTS组件"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-embed-arkts-components
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-embed-arkts-components
+last_sync: 2026-06-07
+sync_hash: e558903e
 ---
-
-
 ArkUI在Native侧提供的能力作为ArkTS的子集，部分能力不会在Native侧提供，如声明式UI语法，自定义struct组件，UI高级组件。
 
 针对需要使用ArkTS侧独立能力的场景，ArkUI开发框架提供了Native侧嵌入ArkTS组件的能力，该能力依赖[ComponentContent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-componentcontent)机制，通过ComponentContent完成对ArkTS组件的封装，然后将封装对象传递到Native侧，通过Native侧的[OH\_ArkUI\_GetNodeHandleFromNapiValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-napi-h#oh_arkui_getnodehandlefromnapivalue)接口转化为ArkUI\_NodeHandle对象用于Native侧组件挂载使用。

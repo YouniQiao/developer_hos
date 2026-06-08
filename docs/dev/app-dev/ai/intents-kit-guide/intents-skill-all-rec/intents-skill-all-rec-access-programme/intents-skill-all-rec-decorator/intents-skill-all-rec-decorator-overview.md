@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "方案概述"
 original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-access-programme/intents-skill-all-rec-decorator/intents-skill-all-rec-decorator-overview
 format: md
+upstream_id: dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-access-programme/intents-skill-all-rec-decorator/intents-skill-all-rec-decorator-overview
+last_sync: 2026-06-07
+sync_hash: 29f59b5e
 ---
-
-
 从6.0.0(20)开始，支持通过装饰器开发意图，支持将现有功能通过装饰器快速集成至系统入口。开发者可自定义意图，通过添加装饰器方式实现意图快速接入，支持Link跳转、Page和函数等意图装饰器，方便开发者快速开放应用内功能。
 
 ![](./img/e929bcce.png)

@@ -2,9 +2,10 @@
 title: "物料准备"
 original_url: /docs/distribute/agc/agc-help-by-harmonyoslabel-touch-0000002444192013/agc-help-by-harmonyoslabel-touch-material-0000002410432930
 format: md
+upstream_id: distribute/agc/agc-help-by-harmonyoslabel-touch-0000002444192013/agc-help-by-harmonyoslabel-touch-material-0000002410432930
+last_sync: 2026-06-07
+sync_hash: ded919fd
 ---
-
-
 1. 准备NFC标签物料，建议如下。
 
    | 物料名称 | 版式 | 建议尺寸 | 芯片 |

@@ -2,9 +2,10 @@
 title: "互动卡片概述"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-liveform/arkts-ui-liveform-overview
 format: md
+upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-liveform/arkts-ui-liveform-overview
+last_sync: 2026-06-07
+sync_hash: 5a453087
 ---
-
-
 从API version 20开始，支持互动卡片。互动卡片提供卡片动效能力，例如卡片破框动效，丰富信息提醒、浅层交互功能，显著提升用户体验。
 
 ## 使用场景

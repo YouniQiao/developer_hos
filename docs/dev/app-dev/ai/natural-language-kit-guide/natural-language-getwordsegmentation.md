@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "分词"
 original_url: /docs/dev/app-dev/ai/natural-language-kit-guide/natural-language-getwordsegmentation
 format: md
+upstream_id: dev/app-dev/ai/natural-language-kit-guide/natural-language-getwordsegmentation
+last_sync: 2026-06-07
+sync_hash: f4b9c629
 ---
-
-
 ## 适用场景
 
 分词的目的是让文本文件的中文、英文、数字内容变成一个一个的单词或者词组，从而为后续的转变为词向量提供基础。使用场景例如搜索引擎会将用户输入的文本分词处理后提取关键词送搜索。

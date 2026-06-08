@@ -3,8 +3,10 @@ title: "业务介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-rta-introduction-0000001352138281
 format: md
+upstream_id: monetize/promotion/bp-functions-rta-introduction-0000001352138281
+last_sync: 2026-06-07
+sync_hash: 13e62ddb
 ---
-
 # 业务介绍
 
 Real Time API（简称RTA API）用于华为应用市场应用推广平台向开发者平台请求投放推广任务，开发者可实时选择投放人群，达到精准投放和降低成本的目的。详细的流程如下图所示。

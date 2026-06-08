@@ -2,9 +2,10 @@
 title: "降级到免费档套餐"
 original_url: /docs/distribute/agc/agc-help-service-price-0000002247180512/agc-help-downgrade-plan-0000002247204812
 format: md
+upstream_id: distribute/agc/agc-help-service-price-0000002247180512/agc-help-downgrade-plan-0000002247204812
+last_sync: 2026-06-07
+sync_hash: 0dad4cad
 ---
-
-
 升级到按量付费档套餐后，您也可以选择降级，将付费档关闭，仅使用免费配额。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“开发与服务”。

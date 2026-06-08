@@ -2,9 +2,10 @@
 title: "报错：Failed to execute 'createElement' on 'Document'"
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-failed-execute-createelement
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-failed-execute-createelement
+last_sync: 2026-06-07
+sync_hash: 85aedebb
 ---
-
-
 **问题现象**
 
 运行报错："Uncaught InvalidCharacterError: Failed to execute 'createElement' on 'Document': The tag name provided ('components/custom/index') is not a valid name."

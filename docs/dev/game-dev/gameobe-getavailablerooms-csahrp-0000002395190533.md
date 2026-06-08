@@ -2,9 +2,10 @@
 title: "获取可加入房间列表"
 original_url: /docs/dev/game-dev/gameobe-getavailablerooms-csahrp-0000002395190533
 format: md
+upstream_id: dev/game-dev/gameobe-getavailablerooms-csahrp-0000002395190533
+last_sync: 2026-06-07
+sync_hash: 6a62b20b
 ---
-
-
 除通过房间ID加入房间外，玩家还可以通过获取当前可加入的房间列表，选择加入其中某一个房间。
 
 ## 前提条件

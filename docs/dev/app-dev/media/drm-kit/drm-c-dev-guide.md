@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "数字版权保护(C/C++)"
 original_url: /docs/dev/app-dev/media/drm-kit/drm-c-dev-guide
 format: md
+upstream_id: dev/app-dev/media/drm-kit/drm-c-dev-guide
+last_sync: 2026-06-07
+sync_hash: a177e2a2
 ---
-
-
 ## 功能介绍
 
 开发者可以调用DRM Kit的C/C++接口实现DRM证书管理、DRM许可证管理、DRM节目授权、DRM节目解密等数字版权保护功能。

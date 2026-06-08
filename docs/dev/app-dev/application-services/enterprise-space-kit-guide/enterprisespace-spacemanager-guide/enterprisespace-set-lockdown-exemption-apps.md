@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "设置深度冻结豁免名单"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-set-lockdown-exemption-apps
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-set-lockdown-exemption-apps
+last_sync: 2026-06-07
+sync_hash: d623b4f4
 ---
-
-
 ## 场景介绍
 
 从6.0.2(22)开始，支持设置深度冻结豁免名单的能力。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "生理周期"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-healthsequence/health-menstrualcycle
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-healthsequence/health-menstrualcycle
+last_sync: 2026-06-07
+sync_hash: 0fef5e84
 ---
-
-
 记录用户在女性生理周期时间段（默认28天）内一天的身体状态，每一条数据代表该女性用户当天的状态。
 
 ![](./img/e60993e2.png)

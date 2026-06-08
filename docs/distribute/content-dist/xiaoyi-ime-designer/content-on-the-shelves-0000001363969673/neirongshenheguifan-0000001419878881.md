@@ -2,14 +2,17 @@
 title: "内容审核规范"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/neirongshenheguifan-0000001419878881
+upstream_id: distribute/content-dist/xiaoyi-ime-designer/content-on-the-shelves-0000001363969673/neirongshenheguifan-0000001419878881
+last_sync: 2026-06-07
+sync_hash: 9e24d3ed
+upstream_hash: 9b9ae07e1084
 ---
-
 
 import MergeTable from '@site/src/components/MergeTable';
 
 # 内容审核规范
 
-所有作品必须在符合[内容信息规范](https://developer.huawei.com/consumer/cn/doc/distribution/content/content-information-test-0000001057563280)、[设计元素规范](https://developer.huawei.com/consumer/cn/doc/distribution/content/design-elements-0000001057325102)及[测试规范](https://developer.huawei.com/consumer/cn/doc/distribution/content/theme-test-0000001055661259#section3698921142310)的基础上进行定价。
+所有作品必须在符合[内容信息规范](/docs/distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/contentreviewspecifications-0000001792709172/content-information-test-0000001057563280)、[设计元素规范](/docs/distribute/content-dist/theme-center/content-release-0000001054679366/content-review-specifications-0000001054679960/contentreviewspecifications-0000001792709172/design-elements-0000001057325102)及[测试规范](https://developer.huawei.com/consumer/cn/doc/distribution/content/theme-test-0000001055661259#section3698921142310)的基础上进行定价。
 
 <strong>1.1 皮肤内容定价规范</strong>
 

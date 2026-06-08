@@ -2,8 +2,11 @@
 title: "建立应用侧与前端页面数据通道(C/C++)"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/arkweb-ndk-page-data-channel
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/arkweb-ndk-page-data-channel
+last_sync: 2026-06-07
+sync_hash: db4ebe9f
+upstream_hash: 047d675dfb1f
 ---
-
 
 前端页面和应用侧之间可以使用Native方法实现两端通信（以下简称Native PostWebMessage），可解决ArkTS环境的冗余切换，同时允许发送消息、回调在非UI线程上运行，避免造成UI阻塞。当前只支持string和buffer数据类型。
 

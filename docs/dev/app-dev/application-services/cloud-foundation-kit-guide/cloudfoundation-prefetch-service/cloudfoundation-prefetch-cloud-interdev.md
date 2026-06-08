@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "开发预加载资源接口"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-cloud-interdev
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service/cloudfoundation-prefetch-cloud-interdev
+last_sync: 2026-06-07
+sync_hash: 28f9d469
+upstream_hash: ccf61c679ba3
 ---
-
 
 使用预加载服务之前，开发者需要完成云侧接口的开发，以提供预加载所需的资源数据。华为提供两种方式供开发者选择：云函数和开发者服务器，开发者可根据实际业务需要进行选择。
 
@@ -28,7 +31,7 @@ format: md
 
 ### 示例
 
-[端云一体化工程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-funccoding)预加载云函数示例如下。其中，axios依赖库为网络请求库，需要在“cloudfunctions/云函数名称/package.json”的“dependencies”中添加axios的1.7.7或以上版本依赖。
+[端云一体化工程](/docs/tools/end-cloud/agc-harmonyos-clouddev-funccoding)预加载云函数示例如下。其中，axios依赖库为网络请求库，需要在“cloudfunctions/云函数名称/package.json”的“dependencies”中添加axios的1.7.7或以上版本依赖。
 
 * 安装预加载
 

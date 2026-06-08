@@ -2,9 +2,10 @@
 title: "用户支付价格（含税）换算原则"
 original_url: /docs/dev/game-dev/games-center-conversion-0000002285973468
 format: md
+upstream_id: dev/game-dev/games-center-conversion-0000002285973468
+last_sync: 2026-06-07
+sync_hash: eb21be1d
 ---
-
-
 * 如果您设置的是“含税”类型的“汇率换算基准价格”，则用户支付价格（含税）保持现有计算规则：
   + 用户支付价格（含税）=汇率换算基准价格（含税）\*汇率
   + 税额=[用户支付价格（含税）/（1+税率）]\*税率

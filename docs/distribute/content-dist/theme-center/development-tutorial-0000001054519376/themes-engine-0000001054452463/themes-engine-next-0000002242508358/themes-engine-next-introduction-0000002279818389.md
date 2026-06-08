@@ -3,9 +3,10 @@ title: "引擎介绍"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-introduction-0000002279818389
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-introduction-0000002279818389
+last_sync: 2026-06-07
+sync_hash: c32e6bd6
 ---
-
-
 # 引擎介绍
 
 华为引擎制作锁屏，使用xml用特定的语法描述锁屏界面。在一定需求下可用于开发风格多变的用户界面。可方便地通过更换皮肤改变界面风格、动画甚至交互方式。框架支持动态帧率，不必按照固定帧率不停渲染，在没有动画和更新的时候停止渲染，此时仅占用极少资源，对于缓慢变化的动画使用低帧率渲染，高动态的动画开始后立即调整到高帧率全速渲染。全速渲染时全屏帧率基本可以达到60帧。合理使用可以既炫酷又不费电。

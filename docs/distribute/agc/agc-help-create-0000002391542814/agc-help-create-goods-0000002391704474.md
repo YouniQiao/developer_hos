@@ -2,9 +2,10 @@
 title: "批量添加商品"
 original_url: /docs/distribute/agc/agc-help-create-0000002391542814/agc-help-create-goods-0000002391704474
 format: md
+upstream_id: distribute/agc/agc-help-create-0000002391542814/agc-help-create-goods-0000002391704474
+last_sync: 2026-06-07
+sync_hash: 3ec68358
 ---
-
-
 #### 批量添加数字商品
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。

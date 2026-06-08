@@ -2,9 +2,10 @@
 format: md
 title: "编译报错：pnpm安装失败等问题汇总"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-195
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-195
+last_sync: 2026-06-07
+sync_hash: da5c23c3
 ---
-
-
 **问题现象**
 
 执行sync或构建命令时，编译报错：“ERROR: 003080xx Operation Error”。
@@ -119,7 +120,7 @@ hvigor-config.json5中dependencies字段中配置了test包，且使用离线安
 
 1、请检查离线包在迁移前是否已下载完整。
 
-2、参考[离线环境配置指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-no-network)。
+2、参考[离线环境配置指导](/docs/tools/coding-debug/ide-no-network)。
 
 **场景五：ERROR: 00308023 Operation Error**
 

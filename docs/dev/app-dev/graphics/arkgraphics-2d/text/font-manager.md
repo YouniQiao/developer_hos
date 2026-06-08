@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "字体管理"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/font-manager
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/text/font-manager
+last_sync: 2026-06-07
+sync_hash: 0d4eaa6c
 ---
-
-
 * **[使用主题字体（ArkTS）](/docs/dev/app-dev/graphics/arkgraphics-2d/text/font-manager/theme-font-arkts)**
 * **[自定义字体的注册和使用（ArkTS）](/docs/dev/app-dev/graphics/arkgraphics-2d/text/font-manager/custom-font-arkts)**
 * **[系统字体的信息获取和使用（ArkTS）](/docs/dev/app-dev/graphics/arkgraphics-2d/text/font-manager/system-font-arkts)**

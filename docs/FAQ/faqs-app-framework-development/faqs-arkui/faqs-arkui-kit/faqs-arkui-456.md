@@ -2,7 +2,8 @@
 format: md
 title: "页面存在透明的部分，使用组件截图保存为jpg图片，为什么变成了黑色"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-456
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-456
+last_sync: 2026-06-07
+sync_hash: a03f4a19
 ---
-
-
 jpg不支持透明通道，故透明部分变成了黑色，可将截图保存为png格式。

@@ -2,9 +2,10 @@
 title: "创建全网态POI"
 original_url: /docs/distribute/agc/agc-help-poi-apply-formalstate-service-0000002349016132/agc-help-xiaoyi-create-formalstate-poi-0000002376893188
 format: md
+upstream_id: distribute/agc/agc-help-poi-apply-formalstate-service-0000002349016132/agc-help-xiaoyi-create-formalstate-poi-0000002376893188
+last_sync: 2026-06-07
+sync_hash: d0ebfd37
 ---
-
-
 ![](../img/agc-help-xiaoyi-create-formalstate-poi-0000002376893188_0.png)
 
 每个应用/元服务最多支持添加2000个POI位置。

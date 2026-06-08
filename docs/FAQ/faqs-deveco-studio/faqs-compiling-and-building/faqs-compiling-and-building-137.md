@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“The required attribute module-srcPath is missing”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-137
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-137
+last_sync: 2026-06-07
+sync_hash: ecf2a881
 ---
-
-
 **错误描述**
 
 缺少必需属性：module-srcPath。

@@ -2,9 +2,10 @@
 title: "配置支持设备"
 original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-devicetype-0000002398650613
 format: md
+upstream_id: distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-devicetype-0000002398650613
+last_sync: 2026-06-07
+sync_hash: 4879d4f2
 ---
-
-
 发布时，您可以为游戏配置分发至多种设备，默认发布设备为您创建游戏时选择的设备类型，您可以根据实际情况进行修改。
 
 您只需发布一次，用户即可在多种设备上使用您的游戏。

@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-use-before-define"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-use-before-define
 format: md
+upstream_id: tools/coding-debug/ide_no-use-before-define
+last_sync: 2026-06-07
+sync_hash: eca3606a
 ---
-
-
 # @typescript-eslint/no-use-before-define
 
 禁止在变量声明之前使用变量。

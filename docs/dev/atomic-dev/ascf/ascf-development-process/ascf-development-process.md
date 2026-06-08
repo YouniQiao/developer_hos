@@ -2,9 +2,10 @@
 title: "开发流程"
 original_url: /docs/dev/atomic-dev/ascf/ascf-development-process/ascf-development-process
 format: md
+upstream_id: dev/atomic-dev/ascf/ascf-development-process/ascf-development-process
+last_sync: 2026-06-07
+sync_hash: d2e3c68f
 ---
-
-
 * **[在DevEco Studio中开发](/docs/dev/atomic-dev/ascf/use-ide/use-ide)**
 * **[开发兼容模式元服务](/docs/dev/atomic-dev/ascf/ascf-development-process/ascf-cross-atomicservice)**
 * **[使用ASCF命令行工具](/docs/dev/atomic-dev/ascf/ascf-development-process/run-ascf-cli)**

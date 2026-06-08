@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Multimodal Awareness Kit简介"
 original_url: /docs/dev/app-dev/system/system-hardware/multimodal-awareness-kit/multimodalawareness-kit-intro
 format: md
+upstream_id: dev/app-dev/system/system-hardware/multimodal-awareness-kit/multimodalawareness-kit-intro
+last_sync: 2026-06-07
+sync_hash: 89fc9456
 ---
-
-
 多模态融合感知是利用设备上的多种传感器数据，如加速度计和陀螺仪等，来识别活动、状态和姿态等信息，例如，判断设备是否处于静止状态。
 
 ## 运作机制

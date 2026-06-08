@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "场景体验"
 original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-event-rec/intents-event-rec-scene-experience
 format: md
+upstream_id: dev/app-dev/ai/intents-kit-guide/intents-event-rec/intents-event-rec-scene-experience
+last_sync: 2026-06-07
+sync_hash: c787bfb7
 ---
-
-
 ## 典型场景
 
 **功能搜索：** 开发者将应用内的功能接入Intents Kit后，在小艺搜索入口，搜索对应功能名或者应用名，可以将应用内功能直接搜出，比如视频应用接入“会员中心”功能后，用户可通过搜索应用名或功能名搜出具体功能，点击后直接拉起应用中的功能页面。

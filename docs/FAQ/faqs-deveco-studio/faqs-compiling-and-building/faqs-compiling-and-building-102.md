@@ -2,9 +2,10 @@
 format: md
 title: "如何以release编译类型编译HAR包"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-102
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-102
+last_sync: 2026-06-07
+sync_hash: bf9b4ba3
 ---
-
-
 **问题描述**
 
 要以release编译类型编译HAR包，请执行以下步骤：

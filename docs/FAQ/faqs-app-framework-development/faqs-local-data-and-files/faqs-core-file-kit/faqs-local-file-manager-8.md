@@ -2,8 +2,11 @@
 format: md
 title: "应用从远程服务器下载文件的下载路径"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-8
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-8
+last_sync: 2026-06-07
+sync_hash: 1c0c5060
+upstream_hash: 814741021a59
 ---
-
 
 应用仅能保存文件到“应用文件目录”下。根据使用规范和注意事项选择子目录。
 

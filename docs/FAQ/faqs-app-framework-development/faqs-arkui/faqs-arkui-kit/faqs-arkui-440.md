@@ -2,9 +2,10 @@
 format: md
 title: "如何给Swiper组件添加节流，控制Swiper的切换频率"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-440
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-440
+last_sync: 2026-06-07
+sync_hash: 1edd7a48
 ---
-
-
 **问题描述**
 
 Swiper组件可以添加节流么，快速滑动的话容易造成页面卡顿，请问如何添加节流控制Swiper的切换频率？

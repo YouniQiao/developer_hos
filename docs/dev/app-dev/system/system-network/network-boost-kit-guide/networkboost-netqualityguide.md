@@ -2,8 +2,11 @@
 title: "网络质量"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide
+last_sync: 2026-06-07
+sync_hash: a7f0d0a9
+upstream_hash: b39b4896c3fd
 ---
-
 
 * **[网络质量评估](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide/networkboost-qoscallback)**
 * **[网络场景识别](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide/networkboost-scenecallback)**

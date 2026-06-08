@@ -2,9 +2,10 @@
 format: md
 title: "安装HAP包报“failed to install bundle. install debug type not same”错误"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-57
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-57
+last_sync: 2026-06-07
+sync_hash: 38fd9a06
 ---
-
-
 **原因**
 
 HAP包与设备上已安装的HAP的debug信息不一致导致的问题。

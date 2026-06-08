@@ -2,9 +2,10 @@
 title: "查询已订阅频道列表"
 original_url: /docs/dev/game-dev/games-gamemme-getrtmsubscribedchannel-csharp-mini-0000002359707058
 format: md
+upstream_id: dev/game-dev/games-gamemme-getrtmsubscribedchannel-csharp-mini-0000002359707058
+last_sync: 2026-06-07
+sync_hash: 0b716037
 ---
-
-
 当订阅若干频道后，可通过查询已订阅的频道列表信息，查看频道的订阅情况。
 
 ## 前提条件

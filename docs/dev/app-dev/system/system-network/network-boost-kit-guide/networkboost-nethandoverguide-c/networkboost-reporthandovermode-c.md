@@ -2,8 +2,11 @@
 title: "迁移模式设置 (C/C++)"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-nethandoverguide-c/networkboost-reporthandovermode-c
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-nethandoverguide-c/networkboost-reporthandovermode-c
+last_sync: 2026-06-07
+sync_hash: 476e8277
+upstream_hash: f1b59979e6d2
 ---
-
 
 ## 场景介绍
 

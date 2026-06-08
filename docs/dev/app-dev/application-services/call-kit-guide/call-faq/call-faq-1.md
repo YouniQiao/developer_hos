@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "来电横幅无法拉起"
 original_url: /docs/dev/app-dev/application-services/call-kit-guide/call-faq/call-faq-1
 format: md
+upstream_id: dev/app-dev/application-services/call-kit-guide/call-faq/call-faq-1
+last_sync: 2026-06-07
+sync_hash: 81bd1557
 ---
-
-
 **问题现象**
 
 调用[voipCall.reportIncomingCall](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/call-voipcall#voipcallreportincomingcall)上报来电信息，但来电横幅无法显示。

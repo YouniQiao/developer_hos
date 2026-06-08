@@ -2,9 +2,10 @@
 title: "密钥生成与转换介绍"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-overview
+last_sync: 2026-06-07
+sync_hash: 47f9a4b0
 ---
-
-
 在以下场景中，经常需要使用密钥生成操作：
 
 1. 随机生成算法库密钥对象。该对象可用于后续的加解密等操作。

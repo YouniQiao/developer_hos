@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "订阅或取消订阅打印服务启动事件"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-print-startup-event
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-print-startup-event
+last_sync: 2026-06-07
+sync_hash: 257e5eb2
 ---
-
-
 ![](./img/25219093.png)
 
 从6.1.1(24)版本开始，新增订阅或取消订阅打印服务启动事件接口，帮助用户获取打印服务启动时机，便于及时注册水印回调，从而启用打印水印功能。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "网络游戏登录概述"
 original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin/gameservice-gameplayer-network/gameservice-network-introduction
 format: md
+upstream_id: dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin/gameservice-gameplayer-network/gameservice-network-introduction
+last_sync: 2026-06-07
+sync_hash: 995f2a2c
 ---
-
-
 网络游戏是指需要联网的游戏。
 
 接入基础游戏服务后，网络游戏支持用户在联合登录面板选择华为账号登录或游戏官方账号登录。

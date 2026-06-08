@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "鲸鸿动能Ads Kit个人数据处理说明"
 original_url: /docs/dev/app-dev/application-services/ads-kit-guide/description-of-personal-data
 format: md
+upstream_id: dev/app-dev/application-services/ads-kit-guide/description-of-personal-data
+last_sync: 2026-06-07
+sync_hash: c30af35d
 ---
-
-
 此文档针对华为作为最终用户数据控制者，对用户的数据处理进行说明，包括：
 
 * 华为处理的个人数据清单

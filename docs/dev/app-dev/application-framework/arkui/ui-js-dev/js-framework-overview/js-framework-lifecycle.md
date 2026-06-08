@@ -2,9 +2,10 @@
 title: "生命周期"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-lifecycle
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-lifecycle
+last_sync: 2026-06-07
+sync_hash: d3a52b6e
 ---
-
-
 ## 应用生命周期
 
 在app.js中可以定义如下应用生命周期函数：

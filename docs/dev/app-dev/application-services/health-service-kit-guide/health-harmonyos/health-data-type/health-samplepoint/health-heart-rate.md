@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "心率"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-heart-rate
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-heart-rate
+last_sync: 2026-06-07
+sync_hash: 0d19e6e1
 ---
-
-
 ## 动态心率
 
 此数据记录用户在一段时间内的动态心率。

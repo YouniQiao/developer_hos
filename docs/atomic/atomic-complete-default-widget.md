@@ -2,9 +2,10 @@
 title: "构建元服务页面"
 original_url: /docs/dev/atomic-dev/develop-first-atomic-service/atomic-complete-default-widget
 format: md
+upstream_id: dev/atomic-dev/develop-first-atomic-service/atomic-complete-default-widget
+last_sync: 2026-06-07
+sync_hash: c076a596
 ---
-
-
 下面我们将构建元服务的两个页面，并按预定的业务逻辑，实现页面间跳转。
 
 ## 构建元服务的第一个页面
@@ -167,7 +168,7 @@ format: md
      }
    }
    ```
-4. 将真机与电脑连接。具体指导及要求，请参见[运行应用/服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device)，第一个页面效果如下图所示。
+4. 将真机与电脑连接。具体指导及要求，请参见[运行应用/服务](/docs/tools/coding-debug/ide-run-device)，第一个页面效果如下图所示。
 
    ![](./img/ef5e3d62.png "点击放大")
 

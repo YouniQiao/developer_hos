@@ -3,8 +3,10 @@ title: "ConversionBehaviorInfo"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-conversionbehaviorinfo-0000001218572925
 format: md
+upstream_id: monetize/promotion/marketapi-modle-conversionbehaviorinfo-0000001218572925
+last_sync: 2026-06-07
+sync_hash: 32cc4986
 ---
-
 # ConversionBehaviorInfo
 
 | 字段 | 必选(M)/可选(O) | 类型 | 描述 |

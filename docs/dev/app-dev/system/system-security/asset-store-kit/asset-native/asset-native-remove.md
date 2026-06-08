@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "删除关键资产(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-remove
 format: md
+upstream_id: dev/app-dev/system/system-security/asset-store-kit/asset-native/asset-native-remove
+last_sync: 2026-06-07
+sync_hash: 6b3516c7
 ---
-
-
 ## 接口介绍
 
 开发者可以查阅API文档，获取关键资产删除接口的详细说明：[OH\_Asset\_Remove](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-asset-api-h#oh_asset_remove)。

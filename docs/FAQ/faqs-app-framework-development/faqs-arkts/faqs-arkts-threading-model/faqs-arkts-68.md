@@ -2,9 +2,10 @@
 title: "如何判断是否为主线程"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-68
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-68
+last_sync: 2026-06-07
+sync_hash: bc4a54d1
 ---
-
-
 通过Process获取当前的进程号和线程号。如果二者相同，表示当前执行环境为主线程。
 
 **参考代码：**

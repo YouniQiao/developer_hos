@@ -2,9 +2,10 @@
 title: "激励与扶持政策咨询"
 original_url: /docs/dev/game-dev/games-policy-support-0000002482666080
 format: md
+upstream_id: dev/game-dev/games-policy-support-0000002482666080
+last_sync: 2026-06-07
+sync_hash: 86816e1b
 ---
-
-
 当您遇到问题时，可以按照以下顺序咨询激励政策问题。
 
 1. 扫码加入社群。

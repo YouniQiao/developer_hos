@@ -2,9 +2,10 @@
 format: md
 title: "自定义组件如何实现类似系统组件的链式调用"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-231
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-231
+last_sync: 2026-06-07
+sync_hash: 9975d4b1
 ---
-
-
 目前ArkTS语法不支持这种链式调用，组件本身无法像普通对象一样调用方法，只能在组件声明时通过参数传递回调方法来修改组件的参数，无法直接使用链式调用来实现。若需要在自定义组件内实现类似系统组件的链式调用，推荐使用modifier用法，示例代码如下：
 
 ```

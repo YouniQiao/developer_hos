@@ -3,10 +3,10 @@ title: "SDK初始化"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_sdk-initial-0000001347933902
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_andriod_sdk-initial-0000001347933902
+last_sync: 2026-06-07
+sync_hash: e54c8fab
 ---
-
-
-
 #### 全局初始化
 
 ```

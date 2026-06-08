@@ -2,9 +2,10 @@
 title: "调试应用"
 original_url: /docs/distribute/agc/agc-help-multidevice-linkage-debugging-0000002547670340/agc-help-clouddebug-debugapp-multidevice-0000002542099656
 format: md
+upstream_id: distribute/agc/agc-help-multidevice-linkage-debugging-0000002547670340/agc-help-clouddebug-debugapp-multidevice-0000002542099656
+last_sync: 2026-06-07
+sync_hash: bd72eba2
 ---
-
-
 ![](../img/agc-help-clouddebug-debugapp-multidevice-0000002542099656_0.png)
 
 在本场景下，如无特殊说明，“应用”所指代的对象包括HarmonyOS 5及以上应用和元服务。

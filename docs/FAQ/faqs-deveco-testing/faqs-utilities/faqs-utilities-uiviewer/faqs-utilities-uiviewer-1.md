@@ -2,9 +2,10 @@
 format: md
 title: "如何处理UIViewer获取页面时，无论如何操作切换设备界面，UIViewer展示的都是同一个界面"
 original_url: /docs/FAQ/faqs-deveco-testing/faqs-utilities/faqs-utilities-uiviewer/faqs-utilities-uiviewer-1
+upstream_id: FAQ/faqs-deveco-testing/faqs-utilities/faqs-utilities-uiviewer/faqs-utilities-uiviewer-1
+last_sync: 2026-06-07
+sync_hash: 00e95626
 ---
-
-
 打开cmd窗口，在设备上执行hdc指令删除该文件：
 
 ```

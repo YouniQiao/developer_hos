@@ -2,6 +2,9 @@
 title: "宣传素材规范及示例"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-publicity-standard-0000001194462398
+upstream_id: distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-publicity-standard-0000001194462398
+last_sync: 2026-06-07
+sync_hash: e4fee01e
 ---
 import MergeTable from "@site/src/components/MergeTable";
 

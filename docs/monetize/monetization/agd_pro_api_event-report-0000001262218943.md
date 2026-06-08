@@ -3,10 +3,10 @@ title: "调试事件上报"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_api_event-report-0000001262218943
 format: md
+upstream_id: monetize/monetization/agd_pro_api_event-report-0000001262218943
+last_sync: 2026-06-07
+sync_hash: 296544c8
 ---
-
-
-
 广告曝光和用户点击后，您都需要将相关事件上报到AG。
 
 ![](./img/agd_pro_api_event-report-0000001262218943_0.png)

@@ -2,9 +2,10 @@
 title: "open-embedded-atomicservice"
 original_url: /docs/dev/atomic-dev/ascf/components-open-capabilities/components-open-embedded-atomicservice
 format: md
+upstream_id: dev/atomic-dev/ascf/components-open-capabilities/components-open-embedded-atomicservice
+last_sync: 2026-06-07
+sync_hash: a67aeac2
 ---
-
-
 当元服务需要打开另一个元服务让用户进行快捷操作时，可使用该组件将要打开的元服务以半屏形式跳转。
 
 **起始版本：** 1.0.17

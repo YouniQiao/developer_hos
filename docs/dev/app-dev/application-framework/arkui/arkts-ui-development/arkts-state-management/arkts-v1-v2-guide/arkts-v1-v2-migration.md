@@ -2,8 +2,11 @@
 title: "V1-V2迁移概述"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-v1-v2-migration
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-v1-v2-guide/arkts-v1-v2-migration
+last_sync: 2026-06-07
+sync_hash: 40cdc4d0
+upstream_hash: b004f29df584
 ---
-
 
 ## 概述
 

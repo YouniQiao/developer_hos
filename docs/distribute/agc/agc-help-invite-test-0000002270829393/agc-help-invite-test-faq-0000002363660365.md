@@ -2,9 +2,10 @@
 title: "FAQ"
 original_url: /docs/distribute/agc/agc-help-invite-test-0000002270829393/agc-help-invite-test-faq-0000002363660365
 format: md
+upstream_id: distribute/agc/agc-help-invite-test-0000002270829393/agc-help-invite-test-faq-0000002363660365
+last_sync: 2026-06-07
+sync_hash: c07286bb
 ---
-
-
 #### 申请邀请测试，应用需要先备案吗？
 
 不需要。

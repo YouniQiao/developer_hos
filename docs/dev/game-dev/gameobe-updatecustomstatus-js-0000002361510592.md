@@ -2,9 +2,10 @@
 title: "更新玩家自定义状态"
 original_url: /docs/dev/game-dev/gameobe-updatecustomstatus-js-0000002361510592
 format: md
+upstream_id: dev/game-dev/gameobe-updatecustomstatus-js-0000002361510592
+last_sync: 2026-06-07
+sync_hash: a6ad3de3
 ---
-
-
 通过对玩家的自定义状态进行更新，可用于实现房间内玩家准备和取消准备等功能。
 
 ## 前提条件

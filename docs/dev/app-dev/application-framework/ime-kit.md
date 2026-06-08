@@ -2,8 +2,11 @@
 title: "IME Kit（输入法开发服务）"
 original_url: /docs/dev/app-dev/application-framework/ime-kit
 format: md
+upstream_id: dev/app-dev/application-framework/ime-kit
+last_sync: 2026-06-07
+sync_hash: f4b690b8
+upstream_hash: a461bec1dbdf
 ---
-
 
 * **[IME Kit简介](/docs/dev/app-dev/application-framework/ime-kit/ime-kit-intro)**
 * **[实现一个输入法应用](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)**

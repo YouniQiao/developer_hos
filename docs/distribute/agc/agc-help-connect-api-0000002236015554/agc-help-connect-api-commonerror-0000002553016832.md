@@ -2,9 +2,10 @@
 title: "公共错误码"
 original_url: /docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-commonerror-0000002553016832
 format: md
+upstream_id: distribute/agc/agc-help-connect-api-0000002236015554/agc-help-connect-api-commonerror-0000002553016832
+last_sync: 2026-06-07
+sync_hash: 3fb9c33d
 ---
-
-
 | 错误码（errorCode） | 错误描述（errorMsg） |
 | --- | --- |
 | 0 | 成功。 |

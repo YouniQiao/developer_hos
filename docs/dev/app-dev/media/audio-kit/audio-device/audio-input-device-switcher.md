@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "实现音频输入设备路由切换"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-device/audio-input-device-switcher
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-device/audio-input-device-switcher
+last_sync: 2026-06-07
+sync_hash: 4debf65c
 ---
-
-
 从API version 21开始，支持音频输入设备路由切换。
 
 当应用进行音频输入时，系统会根据音频流类型选择对应的输入设备（SOURCE\_TYPE\_MIC：内置MIC录音；SOURCE\_TYPE\_VOICE\_COMMUNICATION：跟随当前输出设备）。若默认输入设备不满足应用需求，应用可通过[setBluetoothAndNearlinkPreferredRecordCategory](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiosessionmanager#setbluetoothandnearlinkpreferredrecordcategory21)或[selectMediaInputDevice](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-audiosessionmanager#selectmediainputdevice21)实现音频输入设备路由切换。

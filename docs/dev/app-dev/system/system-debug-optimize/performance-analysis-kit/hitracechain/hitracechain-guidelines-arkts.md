@@ -2,9 +2,10 @@
 title: "使用HiTraceChain打点（ArkTS）"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracechain/hitracechain-guidelines-arkts
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracechain/hitracechain-guidelines-arkts
+last_sync: 2026-06-07
+sync_hash: 73083c9d
 ---
-
-
 ## 接口说明
 
 分布式跟踪接口由HiTraceChain模块提供，详细API请参考[@ohos.hiTraceChain (分布式跟踪)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-hitracechain)。

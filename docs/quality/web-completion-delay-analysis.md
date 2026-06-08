@@ -2,9 +2,10 @@
 title: "Web加载完成时延分析"
 original_url: /docs/quality/web-completion-delay-analysis
 format: md
+upstream_id: /docs/quality/web-completion-delay-analysis
+last_sync: 2026-06-07
+sync_hash: a04d4091
 ---
-
-
 # Web加载完成时延分析
 
 ## 概述

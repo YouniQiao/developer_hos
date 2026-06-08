@@ -2,9 +2,10 @@
 title: "网络管理开发概述"
 original_url: /docs/dev/atomic-dev/atomic-network-development/atomic-net-mgmt-overview
 format: md
+upstream_id: dev/atomic-dev/atomic-network-development/atomic-net-mgmt-overview
+last_sync: 2026-06-07
+sync_hash: 05c4ca6f
 ---
-
-
 网络管理模块主要提供以下功能：
 
 * [HTTP数据请求](/docs/dev/atomic-dev/atomic-network-development/atomic-http-request)：通过HTTP发起一个数据请求。

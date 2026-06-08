@@ -3,8 +3,10 @@ title: "创建预审创意"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/create-preview-ideas-0000002360599810
 format: md
+upstream_id: monetize/promotion/create-preview-ideas-0000002360599810
+last_sync: 2026-06-07
+sync_hash: 53b6bed8
 ---
-
 # 创建预审创意
 
 ## 功能介绍

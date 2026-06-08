@@ -2,9 +2,10 @@
 title: "应用崩溃问题检测方法"
 original_url: /docs/quality/stability-runtime-crash-detection
 format: md
+upstream_id: /docs/quality/stability-runtime-crash-detection
+last_sync: 2026-06-07
+sync_hash: efd63a47
 ---
-
-
 # 应用崩溃问题检测方法
 
 应用崩溃是指应用进程在运行过程中发生不可恢复的异常，最终导致进程非预期的退出。目前有以下两类场景应用会发生崩溃：

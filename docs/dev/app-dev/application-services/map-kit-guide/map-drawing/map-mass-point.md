@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "海量点图层"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-mass-point
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-drawing/map-mass-point
+last_sync: 2026-06-07
+sync_hash: 2ba2457b
 ---
-
-
 ## 场景介绍
 
 新增海量点图层，用于批量展示坐标点数据。海量点图层支持处理的点数量级跨度较大，从几十个点至十万个点都可以应用海量点图层进行处理，本章节将向您介绍如何在地图上绘制海量点图层。

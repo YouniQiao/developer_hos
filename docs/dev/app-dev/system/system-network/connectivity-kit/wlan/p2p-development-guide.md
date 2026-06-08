@@ -2,8 +2,11 @@
 title: "P2P模式开发指南"
 original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/wlan/p2p-development-guide
 format: md
+upstream_id: dev/app-dev/system/system-network/connectivity-kit/wlan/p2p-development-guide
+last_sync: 2026-06-07
+sync_hash: 0adf3267
+upstream_hash: f44bfe7fb84c
 ---
-
 
 ## 简介
 

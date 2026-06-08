@@ -2,9 +2,10 @@
 format: md
 title: "HarmonyOS应用数据存储仍采用沙箱机制，各个APP有自己数据可见范围，为什么不将各APP产生的数据统一存储（同一个目录或者DB下）"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-37
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-37
+last_sync: 2026-06-07
+sync_hash: 4118dc25
 ---
-
-
 * 安全性问题：所有应用的数据存储在同一个位置，若某应用数据被攻击者窃取，其他应用的数据也可能受到影响，增加安全风险。
 * 隐私问题：应用数据统一存储可能使用户的个人隐私面临威胁，攻击者容易获取用户的所有数据。
 * 性能问题：所有应用的数据存储在同一个位置，访问数据时可能产生竞争，导致性能下降。

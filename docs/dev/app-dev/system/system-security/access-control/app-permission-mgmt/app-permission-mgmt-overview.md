@@ -2,9 +2,10 @@
 title: "应用权限管控概述"
 original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview
+last_sync: 2026-06-07
+sync_hash: 6718607d
 ---
-
-
 ## 简介
 
 系统提供一种通用权限访问方式，允许应用访问系统资源（如通讯录）和系统能力（如摄像头、麦克风），以保护系统数据（包括用户个人数据）和功能，防止不当或恶意使用。

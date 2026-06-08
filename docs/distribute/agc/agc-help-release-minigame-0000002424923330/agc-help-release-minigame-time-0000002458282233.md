@@ -2,9 +2,10 @@
 title: "设置上架时间"
 original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-time-0000002458282233
 format: md
+upstream_id: distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-time-0000002458282233
+last_sync: 2026-06-07
+sync_hash: 3f725b59
 ---
-
-
 #### 设置上架时间
 
 支持小游戏通过审核后立即上架，也支持小游戏在指定时间上架。

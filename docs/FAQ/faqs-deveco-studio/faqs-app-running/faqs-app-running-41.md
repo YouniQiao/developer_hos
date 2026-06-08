@@ -2,9 +2,10 @@
 format: md
 title: "存在多个DNS服务器时模拟器无法连接网络问题"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-41
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-41
+last_sync: 2026-06-07
+sync_hash: 983101b6
 ---
-
-
 **问题现象**
 
 计算机网络环境中配置了多个DNS服务器地址，HarmonyOS模拟器启动时只会选择其中一个地址用于DNS解析。当该地址无法解析某域名，但是主机备用DNS可以解析该域名时，这可能导致宿主机能够解析的域名，在模拟器中解析失败。

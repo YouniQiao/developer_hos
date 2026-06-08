@@ -3,9 +3,10 @@ title: "@returns"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-arktsdoc-returns
 format: md
+upstream_id: tools/coding-debug/ide-arktsdoc-returns
+last_sync: 2026-06-07
+sync_hash: dc8c5334
 ---
-
-
 # @returns
 
 @returns标签用于记录函数返回值。

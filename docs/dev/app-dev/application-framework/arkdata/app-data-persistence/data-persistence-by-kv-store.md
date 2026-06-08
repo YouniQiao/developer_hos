@@ -2,9 +2,10 @@
 title: "通过键值型数据库实现数据持久化 (ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/app-data-persistence/data-persistence-by-kv-store
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/app-data-persistence/data-persistence-by-kv-store
+last_sync: 2026-06-07
+sync_hash: 0a244d48
 ---
-
-
 ## 场景介绍
 
 键值型数据库存储键值对形式的数据，当需要存储的数据没有复杂的关系模型，比如存储商品名称及对应价格、员工工号及今日是否已出勤等，由于数据复杂度低，更容易兼容不同数据库版本和设备类型，因此推荐使用键值型数据库持久化此类数据。

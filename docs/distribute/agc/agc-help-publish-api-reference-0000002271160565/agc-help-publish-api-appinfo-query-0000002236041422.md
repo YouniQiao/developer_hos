@@ -2,9 +2,10 @@
 title: "查询应用信息"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-appinfo-query-0000002236041422
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-appinfo-query-0000002236041422
+last_sync: 2026-06-07
+sync_hash: d948913d
 ---
-
-
 #### 功能介绍
 
 此接口用于根据指定语言和应用ID查询HarmonyOS应用/元服务的详细信息。

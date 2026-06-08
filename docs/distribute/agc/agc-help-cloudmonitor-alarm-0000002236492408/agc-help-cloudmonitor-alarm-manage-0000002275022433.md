@@ -2,9 +2,10 @@
 title: "管理告警"
 original_url: /docs/distribute/agc/agc-help-cloudmonitor-alarm-0000002236492408/agc-help-cloudmonitor-alarm-manage-0000002275022433
 format: md
+upstream_id: distribute/agc/agc-help-cloudmonitor-alarm-0000002236492408/agc-help-cloudmonitor-alarm-manage-0000002275022433
+last_sync: 2026-06-07
+sync_hash: 81d07e37
 ---
-
-
 创建告警后，您可以在告警管理主界面查询告警、修改告警状态，以及对告警进行编辑、删除等操作。
 
 #### 查询告警

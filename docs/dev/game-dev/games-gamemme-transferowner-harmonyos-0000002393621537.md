@@ -2,9 +2,10 @@
 title: "转让房主身份"
 original_url: /docs/dev/game-dev/games-gamemme-transferowner-harmonyos-0000002393621537
 format: md
+upstream_id: dev/game-dev/games-gamemme-transferowner-harmonyos-0000002393621537
+last_sync: 2026-06-07
+sync_hash: 44a9d6a8
 ---
-
-
 如果房主想让出房主权限，可将房主身份转让给房间中的其他玩家。
 
 ## 前提条件

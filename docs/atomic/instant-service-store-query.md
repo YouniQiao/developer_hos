@@ -2,9 +2,10 @@
 title: "查询门店"
 original_url: /docs/dev/atomic-dev/instant-service-store-management/instant-service-store-query
 format: md
+upstream_id: dev/atomic-dev/instant-service-store-management/instant-service-store-query
+last_sync: 2026-06-07
+sync_hash: a83f4922
 ---
-
-
 ## 功能介绍
 
 本接口用于商家查询在平台注册的门店信息。商家可通过平台侧门店标识（venueId）查询指定门店的当前状态及详细信息。

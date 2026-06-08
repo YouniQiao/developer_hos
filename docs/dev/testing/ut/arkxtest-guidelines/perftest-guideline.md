@@ -2,9 +2,10 @@
 title: "白盒性能测试框架使用指导"
 original_url: /docs/dev/testing/ut/arkxtest-guidelines/perftest-guideline
 format: md
+upstream_id: dev/testing/ut/arkxtest-guidelines/perftest-guideline
+last_sync: 2026-06-07
+sync_hash: a0e010dc
 ---
-
-
 ## 简介
 
 白盒性能测试框架（PerfTest），提供了针对指定代码段运行时的白盒性能测试能力，用于度量指定应用进程的性能表现。框架通过多轮迭代执行机制和环境复位机制实现自动化测试，支持耗时、CPU使用率等基础数据和启动时延、滑动帧率等场景化性能数据的采集和度量。使用PerfTest接口的性能测试脚本需基于单元测试框架进行开发。

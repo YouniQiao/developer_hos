@@ -2,9 +2,10 @@
 title: "查看和导出日志"
 original_url: /docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-viewlog-0000002289629825
 format: md
+upstream_id: distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-viewlog-0000002289629825
+last_sync: 2026-06-07
+sync_hash: 653792e3
 ---
-
-
 云调试服务支持在线查看和导出日志，通过获取设备运行期间的系统日志、应用日志，帮助用户定位问题。
 
 #### 前提条件

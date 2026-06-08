@@ -2,9 +2,10 @@
 title: "Component"
 original_url: /docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-component
 format: md
+upstream_id: dev/atomic-dev/ascf/custom-components-overview/custom-components-component
+last_sync: 2026-06-07
+sync_hash: 4cb03da3
 ---
-
-
 开发者可以调用Component指定自定义组件的属性、数据、方法、生命周期函数等。
 
 ## Component

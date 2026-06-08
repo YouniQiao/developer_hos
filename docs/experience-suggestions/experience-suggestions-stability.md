@@ -2,9 +2,10 @@
 title: "应用稳定性体验建议"
 original_url: /docs/experience-suggestions/experience-suggestions-stability
 format: md
+upstream_id: experience-suggestions/experience-suggestions-stability
+last_sync: 2026-06-07
+sync_hash: c363c757
 ---
-
-
 # 应用稳定性体验建议
 
 ### 背景及目的

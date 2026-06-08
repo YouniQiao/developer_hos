@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用合适的音频流类型"
 original_url: /docs/dev/app-dev/media/audio-kit/using-right-streamusage-and-sourcetype
 format: md
+upstream_id: dev/app-dev/media/audio-kit/using-right-streamusage-and-sourcetype
+last_sync: 2026-06-07
+sync_hash: 7d356591
 ---
-
-
 [音频流](/docs/dev/app-dev/media/audio-kit/audio-kit-intro#音频流介绍)类型是定义音频数据播放和录制方式的关键属性。对于播放流，其类型由[StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)确定；对于录制流，则由[SourceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#sourcetype8)决定。音频流类型对音量控制、音频焦点管理以及输入/输出设备的选择具有决定性影响。
 
 为了确保音频行为符合预期并提供优质的用户体验，应用开发者应根据具体业务场景和实际需求，为音频选择恰当的流类型。

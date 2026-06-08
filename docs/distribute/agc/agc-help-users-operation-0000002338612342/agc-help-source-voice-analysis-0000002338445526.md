@@ -2,9 +2,10 @@
 title: "应用源声分析"
 original_url: /docs/distribute/agc/agc-help-users-operation-0000002338612342/agc-help-source-voice-analysis-0000002338445526
 format: md
+upstream_id: distribute/agc/agc-help-users-operation-0000002338612342/agc-help-source-voice-analysis-0000002338445526
+last_sync: 2026-06-07
+sync_hash: 5f2eda20
 ---
-
-
 应用源声分析为您展示来自各个渠道和维度的用户声音反馈，帮助您更有效地分析应用的舆情数据，评估问题风险，并及时解决问题。
 
 您可以在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)首页点击“APP与元服务”，从列表中选择您的应用，然后选择“运营 > 用户运营 > 应用源声分析”，进入应用源声分析页面，该页面包含[问题概览](#section1663094552810)和[问题明细](#section77161734442)。

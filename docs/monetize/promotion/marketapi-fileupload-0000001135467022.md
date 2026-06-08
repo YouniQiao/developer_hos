@@ -3,8 +3,10 @@ title: "文件上传"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-fileupload-0000001135467022
 format: md
+upstream_id: monetize/promotion/marketapi-fileupload-0000001135467022
+last_sync: 2026-06-07
+sync_hash: 57e0bab5
 ---
-
 # 文件上传
 
 ## 功能介绍

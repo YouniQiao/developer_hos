@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用“华为账号登录”按钮登录"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-unionid-login/account-unionid-login-button
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-quick-login/account-unionid-login/account-unionid-login-button
+last_sync: 2026-06-07
+sync_hash: 90d75693
 ---
-
-
 ## 场景介绍
 
 应用可以使用Account Kit提供的华为账号登录按钮组件及服务端交互获取华为账号用户身份标识UnionID、OpenID，通过UnionID、OpenID完成用户登录；或者与应用账号完成绑定，绑定后用于登录或者验证。

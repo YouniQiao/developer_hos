@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "更新关键资产(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-update
 format: md
+upstream_id: dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-update
+last_sync: 2026-06-07
+sync_hash: ffe7984e
+upstream_hash: 4cc91785aec2
 ---
-
 
 ## жҺҘеҸЈд»Ӣз»Қ
 

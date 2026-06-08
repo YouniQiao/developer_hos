@@ -2,9 +2,10 @@
 title: "audio"
 original_url: /docs/dev/atomic-dev/ascf/components-media-components/components-audio
 format: md
+upstream_id: dev/atomic-dev/ascf/components-media-components/components-audio
+last_sync: 2026-06-07
+sync_hash: e4352cbb
 ---
-
-
 用于播放音频文件并控制其播放状态的组件。
 
 **起始版本：** 1.0.16

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "更新安全管控策略"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-update-policy
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-update-policy
+last_sync: 2026-06-07
+sync_hash: d971a939
 ---
-
-
 ## 场景介绍
 
 Enterprise Data Guard Kit为应用提供下发管控策略的能力，相关策略会被分发到HarmonyOS系统中执行。

@@ -3,9 +3,10 @@ title: "配置CPP"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-cpp
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-cpp
+last_sync: 2026-06-07
+sync_hash: 2084f4a0
 ---
-
-
 # 配置CPP
 
 Hvigor集成CMake、Ninja为cpp代码的构建工具。在初始状态下，无需额外配置，您也可以添加以下自定义配置，定制cpp代码编译。

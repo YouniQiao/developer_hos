@@ -2,9 +2,10 @@
 title: "运行态功耗检测"
 original_url: /docs/quality/power-consumption-runtime-analysis
 format: md
+upstream_id: /docs/quality/power-consumption-runtime-analysis
+last_sync: 2026-06-07
+sync_hash: 36e3deae
 ---
-
-
 # 运行态功耗检测
 
 运行态功耗检测主要基于[HiAppEvent事件订阅](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent)，这是一种系统层面为应用开发者提供的事件打点机制，用于帮助应用记录运行过程中发生的故障信息、统计信息、安全信息及用户行为信息，支持开发者分析应用的运行状况。

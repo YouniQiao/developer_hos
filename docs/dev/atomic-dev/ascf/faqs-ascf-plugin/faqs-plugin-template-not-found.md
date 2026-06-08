@@ -2,9 +2,10 @@
 title: "在DevEco Studio中找不到创建ASCF元服务项目模板"
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-plugin-template-not-found
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-plugin-template-not-found
+last_sync: 2026-06-07
+sync_hash: a4a5a432
 ---
-
-
 **问题现象**
 
 在DevEco Studio中，在点击菜单Create Project &gt; Atomic Service弹窗的窗口中，找不到创建ASCF元服务项目图标。

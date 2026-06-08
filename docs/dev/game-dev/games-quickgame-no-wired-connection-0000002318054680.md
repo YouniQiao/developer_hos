@@ -2,9 +2,10 @@
 title: "快游戏无网专区"
 original_url: /docs/dev/game-dev/games-quickgame-no-wired-connection-0000002318054680
 format: md
+upstream_id: dev/game-dev/games-quickgame-no-wired-connection-0000002318054680
+last_sync: 2026-06-07
+sync_hash: 0c847496
 ---
-
-
 为满足用户在飞机/高铁等无网络环境下有游戏可玩的诉求，华为快游戏在花瓣轻游客户端内新增“无网专区”，将无网络环境下可玩的游戏以无网专区合集的方式呈现给游戏用户。如果想要在无网的情况下游玩无网快游戏，需要玩家先选择对应的快游戏缓存，缓存完成后才可在无网的情况下进行游玩。
 
 ![](./img/0dd67257.png)

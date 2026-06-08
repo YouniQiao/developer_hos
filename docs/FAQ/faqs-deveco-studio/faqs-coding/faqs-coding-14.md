@@ -2,8 +2,11 @@
 format: md
 title: "DevEco Studio上使用生成NAPI功能时， 提示“Failed to generate NAPI, check the napi_init.cpp file and try again. ”错误"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-14
+upstream_id: FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-14
+last_sync: 2026-06-07
+sync_hash: 8edea590
+upstream_hash: 95fe909544e1
 ---
-
 
 **问题现象**
 

@@ -3,8 +3,10 @@ title: "10. 开发者需提供真实有效的信息"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-09
 format: md
+upstream_id: distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-09
+last_sync: 2026-06-07
+sync_hash: 61c71109
 ---
-
 # 10. 开发者需提供真实有效的信息
 
 ## 10.1 APP应提供真实完整有效的开发者或运营者信息。

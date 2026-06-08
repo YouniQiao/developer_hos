@@ -2,9 +2,10 @@
 title: "checkbox"
 original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-checkbox
 format: md
+upstream_id: dev/atomic-dev/ascf/components-form-components/components-checkbox
+last_sync: 2026-06-07
+sync_hash: 7a60b598
 ---
-
-
 多选项。
 
 **起始版本：** 1.0.0

@@ -2,9 +2,10 @@
 title: "蓝牙设置开发指导"
 original_url: /docs/dev/atomic-dev/atomic-bluetooth/atomic-bluetooth-access
 format: md
+upstream_id: dev/atomic-dev/atomic-bluetooth/atomic-bluetooth-access
+last_sync: 2026-06-07
+sync_hash: c09a1294
 ---
-
-
 ## 简介
 
 蓝牙设置主要提供了开启蓝牙、关闭蓝牙、获取蓝牙状态、配对等方法，帮助开发者实现基本蓝牙功能。

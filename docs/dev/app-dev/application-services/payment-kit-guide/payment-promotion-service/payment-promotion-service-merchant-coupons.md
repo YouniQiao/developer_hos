@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "商家券场景"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-promotion-service/payment-promotion-service-merchant-coupons
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-promotion-service/payment-promotion-service-merchant-coupons
+last_sync: 2026-06-07
+sync_hash: eb4c244a
 ---
-
-
 ## 场景介绍
 
 商家券是华为支付为商户提供的电子优惠券解决方案，通过该产品实现商家优惠券创建、投放、领取、核销及券查询等管理操作，商家券优惠规则和玩法由商家自定义，商家可将自有营销体系的优惠券同步到华为流量场景（日日有礼、搜索、品牌专区、支付成功页等）和商家自有流量进行发放和运营。

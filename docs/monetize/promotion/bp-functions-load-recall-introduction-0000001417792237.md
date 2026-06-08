@@ -3,8 +3,10 @@ title: "业务介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-load-recall-introduction-0000001417792237
 format: md
+upstream_id: monetize/promotion/bp-functions-load-recall-introduction-0000001417792237
+last_sync: 2026-06-07
+sync_hash: 5afe808b
 ---
-
 # 业务介绍
 
 卸载召回解决方案是面向客户场景化营销的统一解决方案，相较于传统的投放方式有以下优势。

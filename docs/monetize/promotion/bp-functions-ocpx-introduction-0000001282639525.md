@@ -3,8 +3,10 @@ title: "业务介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-ocpx-introduction-0000001282639525
 format: md
+upstream_id: monetize/promotion/bp-functions-ocpx-introduction-0000001282639525
+last_sync: 2026-06-07
+sync_hash: 5ea36696
 ---
-
 # 业务介绍
 
 oCPX是一种任务投放形式，支持开发者以转化成本（如激活、注册）为目标智能出价。

@@ -3,8 +3,10 @@ title: "多设备游戏界面"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi_game
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi_game
+last_sync: 2026-06-07
+sync_hash: 9c819380
 ---
-
 # 多设备游戏界面
 
 ## 概述

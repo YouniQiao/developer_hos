@@ -2,9 +2,10 @@
 title: "管理设备"
 original_url: /docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-manageequip-0000002289516749
 format: md
+upstream_id: distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-manageequip-0000002289516749
+last_sync: 2026-06-07
+sync_hash: c53af0cb
 ---
-
-
 当您成功申请到调试设备后，您可在“我的信息”页签下查看或释放您的调试设备。
 
 #### 前提条件

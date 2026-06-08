@@ -2,9 +2,10 @@
 title: "游戏登录"
 original_url: /docs/dev/game-dev/games-quickgame-runtime-account-kit-0000002351893461
 format: md
+upstream_id: dev/game-dev/games-quickgame-runtime-account-kit-0000002351893461
+last_sync: 2026-06-07
+sync_hash: 5fb5e8f4
 ---
-
-
 华为账号服务为您提供了简单、安全的登录授权功能，方便用户快捷登录。用户不必输入账号、密码和繁琐验证，就可以通过“华为账号登录”方式快速登录，即刻打开您的快游戏。使用“华为账号登录”快游戏应遵守国家新闻出版署的相关规定。
 
 ## 前提条件

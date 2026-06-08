@@ -2,9 +2,10 @@
 title: "自定义无障碍滚动步数的场景"
 original_url: /docs/dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/accessibilityactionoptions-scrollstep
 format: md
+upstream_id: dev/app-dev/application-framework/accessibility-kit/accessibility-approve-experience/improve-screen-reader-experience/accessibilityactionoptions-scrollstep
+last_sync: 2026-06-07
+sync_hash: 2c69c281
 ---
-
-
 ## 设计场景
 
 可调节的滑动条支持长按拖拽调节，调节步长通常允许小于取值范围的1%，适用于视频进度等精细控制场景。然而，长按拖拽操作对视障用户不够友好。为此，当屏幕朗读功能开启时，系统额外支持了通过上下扫动手势调节已聚焦的滑动条，每次调节后自动播报当前状态值（默认为百分比格式）。为避免连续调节时重复播报相同状态值，需通过accessibilityActionOptions配置滑动条的无障碍操作步数，确保每次调节步长大于或等于取值范围的1%。

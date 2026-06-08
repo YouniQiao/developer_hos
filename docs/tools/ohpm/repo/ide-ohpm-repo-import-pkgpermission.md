@@ -2,9 +2,10 @@
 title: "ohpm-repo import_pkgPermission"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-import-pkgpermission
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-import-pkgpermission
+last_sync: 2026-06-07
+sync_hash: a4ac845c
 ---
-
-
 # ohpm-repo import\_pkgPermission
 
 ohpm-repo 5.4.0版本开始，支持导入包权限数据。

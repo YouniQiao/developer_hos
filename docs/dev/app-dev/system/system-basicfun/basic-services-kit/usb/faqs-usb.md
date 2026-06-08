@@ -2,9 +2,10 @@
 title: "常见问题"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/usb/faqs-usb
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/usb/faqs-usb
+last_sync: 2026-06-07
+sync_hash: 656c8f8f
 ---
-
-
 ## 手机USB连接个人电脑时使用usbManager.getDevices获取的设备列表为空
 
 ### 问题现象

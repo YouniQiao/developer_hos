@@ -2,7 +2,8 @@
 title: "Pen Kit手写套件是否支持自定义笔宽？"
 original_url: /docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-faq/pen-faq-2
 format: md
+upstream_id: dev/app-dev/system/system-hardware/pen-kit-guide/pen-faq/pen-faq-2
+last_sync: 2026-06-07
+sync_hash: f974884f
 ---
-
-
 Pen Kit当前支持设置5档笔宽范围，取值由华为笔宽算法决定，暂不支持自定义其他笔宽值。

@@ -3,8 +3,10 @@ title: "查询版位底价"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-slot3-0000001338501433
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-slot3-0000001338501433
+last_sync: 2026-06-07
+sync_hash: c2c2571d
 ---
-
 # 查询版位底价
 
 您通过本接口可以查询DSP版位底价。

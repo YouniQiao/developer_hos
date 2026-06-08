@@ -3,9 +3,10 @@ title: "@typescript-eslint/prefer-ts-expect-error"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_prefer-ts-expect-error
 format: md
+upstream_id: tools/coding-debug/ide_prefer-ts-expect-error
+last_sync: 2026-06-07
+sync_hash: 2a8d5304
 ---
-
-
 # @typescript-eslint/prefer-ts-expect-error
 
 强制使用“@ts-expect-error”而不是“@ts-ignore”。

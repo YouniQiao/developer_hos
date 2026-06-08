@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取设备的位置信息开发指导(C/C++)"
 original_url: /docs/dev/app-dev/application-services/location-kit/location-guidelines-index/location-guidelines-capi
 format: md
+upstream_id: dev/app-dev/application-services/location-kit/location-guidelines-index/location-guidelines-capi
+last_sync: 2026-06-07
+sync_hash: 1257c7cc
 ---
-
-
 ## 场景介绍
 
 开发者可以调用HarmonyOS位置相关接口，监听设备的位置变化。

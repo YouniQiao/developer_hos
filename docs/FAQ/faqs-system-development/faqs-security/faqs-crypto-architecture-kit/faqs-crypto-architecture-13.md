@@ -2,9 +2,10 @@
 title: "如何实现RSA的公钥PK加密一段文字"
 original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-13
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-13
+last_sync: 2026-06-07
+sync_hash: 0fafb954
 ---
-
-
 算法库目前提供了RSA加解密常用的三种模式：NoPadding、PKCS1 和 PKCS1\_OAEP。不同 RSA 密钥规格和不同填充方式支持加密的数据长度不同，详情见参考链接。
 
 参考代码如下：

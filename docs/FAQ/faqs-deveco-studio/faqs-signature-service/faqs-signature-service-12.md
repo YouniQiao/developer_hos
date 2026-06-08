@@ -2,9 +2,10 @@
 format: md
 title: "签名密钥库文件与JDK版本不兼容"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-12
+upstream_id: FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-12
+last_sync: 2026-06-07
+sync_hash: 3355a669
 ---
-
-
 **问题现象**
 
 打包签名提示“**init keystore failed : parseAlgParameters failed:ObjectIdentifier()**”错误。

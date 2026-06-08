@@ -3,9 +3,10 @@ title: "@correctness/avsession-metadata-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-avsession-metadata-check
 format: md
+upstream_id: tools/coding-debug/ide-avsession-metadata-check
+last_sync: 2026-06-07
+sync_hash: 7417f86b
 ---
-
-
 # @correctness/avsession-metadata-check
 
 建议音视频应用接入AVSession场景下，提供基础的媒体会话元数据和媒体会话播放状态，包含封面、标题、歌曲作者/副标题、时长、播放状态（暂停、播放）、播放位置。

@@ -3,8 +3,10 @@ title: "申请开通"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-task_compete_diagnosis-application-0000001824645056
 format: md
+upstream_id: monetize/promotion/bp-functions-task_compete_diagnosis-application-0000001824645056
+last_sync: 2026-06-07
+sync_hash: 0fca3f4f
 ---
-
 # 申请开通
 
 任务竞争力诊断功能为允许清单开通制，需要申请的开发者请联系相关运营或填写申请模板后发送邮件至[developer@huawei.com](mailto:developer@huawei.com)，审核人员评估后会在1-2个工作日内进行答复

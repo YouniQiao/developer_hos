@@ -3,9 +3,10 @@ title: "穿越动效&lt;MultiLayer&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-3d-0000002504355019/themes-engine-next-3d-multilayer-0000002490002442
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-3d-0000002504355019/themes-engine-next-3d-multilayer-0000002490002442
+last_sync: 2026-06-07
+sync_hash: dc4ed5ec
 ---
-
-
 # 穿越动效&lt;MultiLayer&gt;
 
 ## 功能概述

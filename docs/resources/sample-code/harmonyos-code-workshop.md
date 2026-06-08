@@ -2,9 +2,9 @@
 title: HarmonyOS 代码工坊
 sidebar_label: HarmonyOS 代码工坊
 format: md
+upstream_id: _local
+last_sync: 2026-06-08
 ---
-
-
 # HarmonyOS 代码工坊
 
 HarmonyOS 代码工坊是基于 HarmonyOS 生态的应用开发代码示例项目，托管在 [GitCode](https://gitcode.com/HarmonyOS_Samples/sample_in_harmonyos)，由 **HarmonyOS_Samples** 组织维护。

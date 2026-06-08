@@ -1,12 +1,12 @@
 ---
-
 title: "在端侧访问云数据库"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-invokeclouddatabase
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-invokeclouddatabase
+last_sync: 2026-06-07
+sync_hash: aafa7ff9
 ---
-
-
 # 在端侧访问云数据库
 
 ## 前提条件

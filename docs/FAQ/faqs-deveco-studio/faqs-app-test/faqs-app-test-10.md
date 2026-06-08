@@ -2,8 +2,11 @@
 format: md
 title: "DevEco Studio AppAnalyzer-安装Python依赖错误"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-10
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-10
+last_sync: 2026-06-07
+sync_hash: 8465e288
+upstream_hash: b9fafc1b5b94
 ---
-
 
 **问题现象**
 

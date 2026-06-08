@@ -2,9 +2,10 @@
 title: "内存占用"
 original_url: /docs/experience-suggestions/performance/performance-memory-usage
 format: md
+upstream_id: experience-suggestions/performance/performance-memory-usage
+last_sync: 2026-06-07
+sync_hash: e50697d7
 ---
-
-
 # 内存占用
 
 ### 应用或元服务动态内存峰值占用

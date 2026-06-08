@@ -2,9 +2,10 @@
 title: "同步方式动态加载Native模块"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/js-apis-load-native-module
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/js-apis-load-native-module
+last_sync: 2026-06-07
+sync_hash: 96d472a9
 ---
-
-
 [loadNativeModule (同步动态加载系统库接口)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-common-load-native-module)用于同步动态加载Native模块，目的是按需加载所需要的模块。使用该接口会增加加载so文件的时间，开发者需评估其对功能的影响。
 
 ## 函数说明

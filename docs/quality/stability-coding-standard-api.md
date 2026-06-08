@@ -2,8 +2,10 @@
 title: "易错API的使用规范"
 original_url: /docs/quality/stability-coding-standard-api
 format: 'md'
+upstream_id: /docs/quality/stability-coding-standard-api
+last_sync: 2026-06-07
+sync_hash: 65ddf3e6
 ---
-
 # 易错API的使用规范
 
 ## 视效API

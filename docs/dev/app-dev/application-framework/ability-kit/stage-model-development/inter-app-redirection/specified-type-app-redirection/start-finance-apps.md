@@ -2,9 +2,10 @@
 title: "拉起金融类应用（startAbilityByType）"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-finance-apps
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/specified-type-app-redirection/start-finance-apps
+last_sync: 2026-06-07
+sync_hash: 59ca46cf
 ---
-
-
 本章节介绍如何拉起金融类应用扩展面板。
 
 ## 金融类应用扩展面板参数说明

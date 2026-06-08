@@ -3,10 +3,10 @@ title: "测试验证及上线"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/harmonyosnextceshiyanzhengjishangxian-0000002185706917
 format: md
+upstream_id: monetize/monetization/harmonyosnextceshiyanzhengjishangxian-0000002185706917
+last_sync: 2026-06-07
+sync_hash: eeb48773
 ---
-
-
-
 商业上架前需进行广告的测试验证，包括媒体自测和鲸鸿动能验收两个步骤。
 
 #### 1. 自测

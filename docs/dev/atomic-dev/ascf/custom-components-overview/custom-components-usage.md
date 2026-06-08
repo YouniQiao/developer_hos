@@ -2,9 +2,10 @@
 title: "使用自定义组件"
 original_url: /docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-usage
 format: md
+upstream_id: dev/atomic-dev/ascf/custom-components-overview/custom-components-usage
+last_sync: 2026-06-07
+sync_hash: 438c07dd
 ---
-
-
 在页面的 json 文件中进行引用声明，即在 usingComponents 字段下设置标签名及对应的组件路径。
 
 ```

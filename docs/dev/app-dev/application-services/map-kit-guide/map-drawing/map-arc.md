@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "弧线"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-arc
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-drawing/map-arc
+last_sync: 2026-06-07
+sync_hash: e6f4e1f0
 ---
-
-
 ## 场景介绍
 
 本章节将向您介绍如何在地图上绘制弧线，通过[MapArcParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#maparcparams)类设置弧线的位置、宽度、颜色等参数。

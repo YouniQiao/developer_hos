@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "3D建筑"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-3dbuilding
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-drawing/map-3dbuilding
+last_sync: 2026-06-07
+sync_hash: a135229e
 ---
-
-
 ## 场景介绍
 
 本章节将向您介绍如何在地图上绘制3D建筑。

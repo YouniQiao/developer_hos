@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "纯外部支付场景"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-external
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-common-pay-external
+last_sync: 2026-06-07
+sync_hash: f522fe65
 ---
-
-
 ## 场景介绍
 
 从5.0.2(14)版本开始，新增支持通用收银台纯外部支付场景。

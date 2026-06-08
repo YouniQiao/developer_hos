@@ -2,6 +2,9 @@
 title: "商品管理国家/地区、语言、币种表"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/countries-overview-0000002071714318
+upstream_id: distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/countries-overview-0000002071714318
+last_sync: 2026-06-07
+sync_hash: 21a59fd6
 ---
 import MergeTable from "@site/src/components/MergeTable";
 

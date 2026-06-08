@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-no-high-freq-log（已下线）"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hp-arkui-no-high-freq-log
 format: md
+upstream_id: tools/coding-debug/ide-hp-arkui-no-high-freq-log
+last_sync: 2026-06-07
+sync_hash: f8531e08
 ---
-
-
 # @performance/hp-arkui-no-high-freq-log（已下线）
 
 建议在正式发布的版本中，注释掉或删除日志打印代码。该规则已于5.0.3.403版本下线。

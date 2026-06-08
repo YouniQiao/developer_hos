@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "如何主动通过手势缩放变焦比"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-14
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-14
+last_sync: 2026-06-07
+sync_hash: 3bd560e6
 ---
-
-
 **问题现象**
 
 自定义界面扫码如何主动通过手势缩放相机流。

@@ -2,9 +2,10 @@
 title: "Auth"
 original_url: /docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-auth-0000002273777093
 format: md
+upstream_id: distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-auth-0000002273777093
+last_sync: 2026-06-07
+sync_hash: 2b07b097
 ---
-
-
 AGC认证服务接口，使用auth获取服务。
 
 #### Method Summary

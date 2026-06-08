@@ -2,8 +2,11 @@
 title: "如何创建临时文件"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-47
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-47
+last_sync: 2026-06-07
+sync_hash: b12c65d5
+upstream_hash: 2fcd29b8785c
 ---
-
 
 可以参考如下示例：
 

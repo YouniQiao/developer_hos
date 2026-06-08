@@ -2,9 +2,10 @@
 title: "vocReportData"
 original_url: /docs/distribute/agc/agc-help-report-api-data-0000002273179781/agc-help-report-api-data-vocreportdata-0000002497658249
 format: md
+upstream_id: distribute/agc/agc-help-report-api-data-0000002273179781/agc-help-report-api-data-vocreportdata-0000002497658249
+last_sync: 2026-06-07
+sync_hash: fb425820
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | date | O | String | 用户声音反馈日期。 |

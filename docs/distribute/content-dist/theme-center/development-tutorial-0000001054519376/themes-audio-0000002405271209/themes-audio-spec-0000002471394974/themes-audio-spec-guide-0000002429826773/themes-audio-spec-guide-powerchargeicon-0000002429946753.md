@@ -3,9 +3,10 @@ title: "电量充电图标"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-powerchargeicon-0000002429946753
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-powerchargeicon-0000002429946753
+last_sync: 2026-06-07
+sync_hash: 29a1faa4
 ---
-
-
 # 电量充电图标
 
 <strong>表1</strong>

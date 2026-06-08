@@ -3,8 +3,10 @@ title: "团队管理"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-delivery-task-account-management-team-0000001328677534
 format: md
+upstream_id: monetize/promotion/bpos-delivery-task-account-management-team-0000001328677534
+last_sync: 2026-06-07
+sync_hash: 98ca42e9
 ---
-
 # 团队管理
 
 ## 概述

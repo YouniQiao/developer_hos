@@ -3,8 +3,10 @@ title: 即时反馈
 sidebar_label: 即时反馈
 original_url: /docs/design/components/view-components/toast
 format: md
+upstream_id: design/components/view-components/toast
+last_sync: 2026-06-07
+sync_hash: 26314acb
 ---
-
 # 即时反馈
 
 用于在屏幕底部或中部显示一个操作的轻量级反馈。开发相关能力请参照 [PromptAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-promptaction#showtoast) 文档中的 showToast 用法。

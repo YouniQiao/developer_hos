@@ -2,9 +2,10 @@
 format: md
 title: "Windows电脑上启动模拟器，提示可申请内存不足"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-39
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-39
+last_sync: 2026-06-07
+sync_hash: d98b0949
 ---
-
-
 **问题现象**
 
 启动模拟器时，如果系统提示“当前可申请的内存不足”，表示Windows电脑内存不足。

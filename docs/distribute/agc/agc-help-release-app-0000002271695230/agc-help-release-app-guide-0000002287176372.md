@@ -2,9 +2,10 @@
 title: "发布指引"
 original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-guide-0000002287176372
 format: md
+upstream_id: distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-guide-0000002287176372
+last_sync: 2026-06-07
+sync_hash: 8c2bf8b4
 ---
-
-
 为了给用户提供良好、安全、可靠的应用体验，在应用正式发布到华为应用市场前，我们会审核您提交的所有信息，请了解发布应用的要求、需要提供的信息，以便尽可能顺利通过发布审核。
 
 * **提前了解发布规则，准备材料**

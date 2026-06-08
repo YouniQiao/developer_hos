@@ -2,9 +2,10 @@
 title: "向用户申请授权"
 original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization
 format: md
+upstream_id: dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/request-user-authorization
+last_sync: 2026-06-07
+sync_hash: dc7b1c5a
 ---
-
-
 当应用需要访问用户的隐私信息或使用系统能力时，如获取位置信息、访问日历、使用相机拍摄照片或录制视频等，应向用户申请授权。这些权限属于user\_grant权限。
 
 当应用申请user\_grant权限时，需完成以下步骤：

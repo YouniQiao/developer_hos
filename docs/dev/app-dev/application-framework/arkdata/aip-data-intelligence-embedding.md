@@ -2,9 +2,10 @@
 title: "应用数据向量化 (ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/aip-data-intelligence-embedding
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/aip-data-intelligence-embedding
+last_sync: 2026-06-07
+sync_hash: 3c700f62
 ---
-
-
 ## 场景介绍
 
 在数字化向智能化演进的关键阶段，构建智慧化服务已成为应用开发者提升产品竞争力的必然选择。

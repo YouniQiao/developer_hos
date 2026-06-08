@@ -2,8 +2,11 @@
 title: "UI Design Kit（UI设计套件）"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide
+last_sync: 2026-06-07
+sync_hash: e04406e9
+upstream_hash: 29a346acf843
 ---
-
 
 * **[UI Design Kit简介](/docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-introduction)**
 * **[图标处理](/docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-icon-process)**

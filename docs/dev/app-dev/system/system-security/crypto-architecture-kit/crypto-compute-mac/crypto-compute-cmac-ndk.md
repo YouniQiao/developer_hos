@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "消息认证码计算CMAC(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-mac/crypto-compute-cmac-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-mac/crypto-compute-cmac-ndk
+last_sync: 2026-06-07
+sync_hash: dbe07851
+upstream_hash: 8c7797ad5076
 ---
-
 
 CMAC通过使用分组密码（如AES）和一个密钥来生成认证码，确保消息在传输过程中未被篡改。
 

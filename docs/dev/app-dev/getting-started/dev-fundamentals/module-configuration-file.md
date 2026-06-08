@@ -1,8 +1,10 @@
 ---
 title: "module.json5配置文件"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/module-configuration-file
+last_sync: 2026-06-07
+sync_hash: 3df43bdd
 ---
-
 模块级配置文件，包含模块的基本配置信息、UIAbility组件和ExtensionAbility组件信息，以及应用运行过程中需要的权限信息，用于向编译工具、操作系统和应用市场提供应用的基本信息。每个模块下必须包括一个module.json5配置文件，文件所在目录为工程名称/模块名称（例如entry）/src/main/module.json5。
 
 ![](./img/c959d0e4.png)

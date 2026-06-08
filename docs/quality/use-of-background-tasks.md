@@ -2,9 +2,10 @@
 title: "后台任务合理使用"
 original_url: /docs/quality/use-of-background-tasks
 format: md
+upstream_id: /docs/quality/use-of-background-tasks
+last_sync: 2026-06-07
+sync_hash: c28029ce
 ---
-
-
 # 后台任务合理使用
 
 应用退至后台后，继续活动会导致设备耗电加快、用户界面卡顿。为降低耗电速度，保障使用流畅，系统将对后台应用进行管控，包括进程挂起和终止。为确保后台音乐播放、日历提醒等功能正常，系统提供规范内受约束的后台任务，延长应用后台运行时间。

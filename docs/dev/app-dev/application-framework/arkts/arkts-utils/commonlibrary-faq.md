@@ -2,9 +2,10 @@
 title: "基础库常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-utils/commonlibrary-faq
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-utils/commonlibrary-faq
+last_sync: 2026-06-07
+sync_hash: 1d935a79
 ---
-
-
 ## 解析大文件xml发生内存溢出（Out of Memory）
 
 由于ArkTS侧提供的XML解析接口暂不支持流式解析模式，建议通过Native工程调用第三方C/C++库来实现。推荐使用**libxml2**库，该库具有成熟稳定、性能优越的特点，能够支持SAX等流式解析方式，有效降低内存占用。

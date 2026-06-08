@@ -3,9 +3,10 @@ title: "点击操作响应快"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-quick-response-for-click-0403
 format: md
+upstream_id: tools/coding-debug/ide-quick-response-for-click-0403
+last_sync: 2026-06-07
+sync_hash: 383a957c
 ---
-
-
 # 点击操作响应快
 
 #### 规则详情

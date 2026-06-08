@@ -2,9 +2,10 @@
 format: md
 title: "Stack布局设置Alignment.Bottom没有生效"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-160
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-160
+last_sync: 2026-06-07
+sync_hash: 0ffb3428
 ---
-
-
 **问题现象**
 
 在build()中使用Stack作为容器，设置alignContent为Alignment.Bottom，同时设置align为Alignment.Center。但alignContent为Alignment.Bottom未生效。

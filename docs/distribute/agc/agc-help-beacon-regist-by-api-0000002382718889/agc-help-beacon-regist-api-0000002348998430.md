@@ -2,9 +2,10 @@
 title: "同步设备信息"
 original_url: /docs/distribute/agc/agc-help-beacon-regist-by-api-0000002382718889/agc-help-beacon-regist-api-0000002348998430
 format: md
+upstream_id: distribute/agc/agc-help-beacon-regist-by-api-0000002382718889/agc-help-beacon-regist-api-0000002348998430
+last_sync: 2026-06-07
+sync_hash: 5df61801
 ---
-
-
 #### 功能介绍
 
 此接口用于注册或更新第三方服务商的Beacon信标设备信息至AGC。

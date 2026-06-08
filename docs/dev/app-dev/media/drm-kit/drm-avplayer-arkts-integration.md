@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "基于AVPlayer播放DRM节目(ArkTS)"
 original_url: /docs/dev/app-dev/media/drm-kit/drm-avplayer-arkts-integration
 format: md
+upstream_id: dev/app-dev/media/drm-kit/drm-avplayer-arkts-integration
+last_sync: 2026-06-07
+sync_hash: d28c68ee
 ---
-
-
 开发者可以调用DRM Kit和Media Kit的ArkTS接口实现AVPlayer播放器，完成DRM节目播放。
 
 ## 开发步骤

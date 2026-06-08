@@ -3,9 +3,10 @@ title: "ohpm clean"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-clean
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-clean
+last_sync: 2026-06-07
+sync_hash: 6a0c30a2
 ---
-
-
 # ohpm clean
 
 清理工程下所有模块的ohpm安装产物。

@@ -2,9 +2,10 @@
 format: md
 title: "如何解决Windows系统使用DevEco Studio时SDK卸载失败，报“Unable to rename the file. Cause:Unable to delete D:xxxdefault”错误"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-15
+upstream_id: FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-15
+last_sync: 2026-06-07
+sync_hash: 73eec32f
 ---
-
-
 **问题描述**
 
 Windows系统使用DevEco Studio时，SDK卸载失败，提示错误信息。

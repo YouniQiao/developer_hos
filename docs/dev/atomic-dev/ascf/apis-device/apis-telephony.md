@@ -2,9 +2,10 @@
 title: "电话"
 original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-telephony
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-device/apis-telephony
+last_sync: 2026-06-07
+sync_hash: bef72b9f
 ---
-
-
 ## has.makePhoneCall
 
 has.makePhoneCall(Object object)

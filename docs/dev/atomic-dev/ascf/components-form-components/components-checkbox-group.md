@@ -2,9 +2,10 @@
 title: "checkbox-group"
 original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-checkbox-group
 format: md
+upstream_id: dev/atomic-dev/ascf/components-form-components/components-checkbox-group
+last_sync: 2026-06-07
+sync_hash: faf0d72d
 ---
-
-
 多项选择器，内部由多个checkbox组成。
 
 **起始版本：** 1.0.0

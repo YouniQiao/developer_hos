@@ -2,9 +2,10 @@
 format: md
 title: "如何使用ListItemGroup和LazyForEach结合并实现组件复用"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-321
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-321
+last_sync: 2026-06-07
+sync_hash: 59924a23
 ---
-
-
 可参考如下代码：
 
 ```

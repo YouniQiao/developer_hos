@@ -3,8 +3,10 @@ title: "一方数据回传"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-ocpx-return-others-0000002586173947
 format: md
+upstream_id: monetize/promotion/bp-functions-ocpx-return-others-0000002586173947
+last_sync: 2026-06-07
+sync_hash: 4298cd8a
 ---
-
 # 一方数据回传
 
 ## 业务介绍

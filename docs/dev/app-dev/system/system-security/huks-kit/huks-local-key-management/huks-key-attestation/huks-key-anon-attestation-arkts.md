@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "匿名密钥证明(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-attestation/huks-key-anon-attestation-arkts
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-attestation/huks-key-anon-attestation-arkts
+last_sync: 2026-06-07
+sync_hash: 4cd67453
 ---
-
-
 在使用本功能时，需确保网络通畅。
 
 ## 开发步骤

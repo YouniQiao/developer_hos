@@ -2,9 +2,10 @@
 title: "Native侧如何访问ArkTS侧系统定义的异步方法"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-19
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-19
+last_sync: 2026-06-07
+sync_hash: 8caacaba
 ---
-
-
 **问题详情**
 
 系统仅提供ArkTS异步接口，未提供NDK接口。当使用C++代码实现业务逻辑时，部分系统能力需要依赖ArkTS异步接口。

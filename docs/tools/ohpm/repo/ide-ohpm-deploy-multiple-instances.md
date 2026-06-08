@@ -2,9 +2,10 @@
 title: "多实例部署"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-deploy-multiple-instances
+upstream_id: tools/ohpm/repo/ide-ohpm-deploy-multiple-instances
+last_sync: 2026-06-07
+sync_hash: 2684de96
 ---
-
-
 # 多实例部署
 
 ![](./img/0cd1f528.png)

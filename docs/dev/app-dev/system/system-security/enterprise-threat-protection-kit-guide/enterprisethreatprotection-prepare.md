@@ -2,9 +2,10 @@
 title: "开发准备"
 original_url: /docs/dev/app-dev/system/system-security/enterprise-threat-protection-kit-guide/enterprisethreatprotection-prepare
 format: md
+upstream_id: dev/app-dev/system/system-security/enterprise-threat-protection-kit-guide/enterprisethreatprotection-prepare
+last_sync: 2026-06-07
+sync_hash: 4a458f43
 ---
-
-
 ## 申请资质
 
 在开发应用前，需要在AppGallery Connect中配置项目和应用信息。包括：

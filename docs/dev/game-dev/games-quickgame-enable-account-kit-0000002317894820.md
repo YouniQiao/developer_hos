@@ -2,9 +2,10 @@
 title: "准备游戏信息"
 original_url: /docs/dev/game-dev/games-quickgame-enable-account-kit-0000002317894820
 format: md
+upstream_id: dev/game-dev/games-quickgame-enable-account-kit-0000002317894820
+last_sync: 2026-06-07
+sync_hash: 15da806d
 ---
-
-
 ## 获取APP ID
 
 APP ID是快游戏的唯一标识，在AGC控制台创建快游戏后生成。APP ID将在多个服务中使用，您需提前记录下APP ID。

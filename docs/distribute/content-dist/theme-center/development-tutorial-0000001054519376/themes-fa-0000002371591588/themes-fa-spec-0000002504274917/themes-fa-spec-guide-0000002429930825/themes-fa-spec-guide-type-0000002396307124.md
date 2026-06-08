@@ -3,9 +3,10 @@ title: "分类定义"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/themes-fa-spec-guide-type-0000002396307124
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-guide-0000002429930825/themes-fa-spec-guide-type-0000002396307124
+last_sync: 2026-06-07
+sync_hash: bfc8df67
 ---
-
-
 # 分类定义
 
 百变卡片分为单卡-中卡、单卡-大卡和卡片套装，一个百变卡片作品归属其中一种分类。

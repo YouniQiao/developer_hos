@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“CMake Error: The following variables are used in this project, but they are set to NOTFOUND”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-33
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-33
+last_sync: 2026-06-07
+sync_hash: ca65d1f1
 ---
-
-
 **问题现象**
 
 Native工程使用find\_path时出现报错。因find\_path未在CMAKE\_SYSROOT限定路径中找到目标文件而触发该报错。

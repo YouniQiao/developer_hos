@@ -3,9 +3,10 @@ title: 应用开发
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/release-notes/overview
 format: md
+upstream_id: dev/release-notes/overview
+last_sync: 2026-06-07
+sync_hash: 98921936
 ---
-
-
 # 应用开发
 
 HarmonyOS 应用开发指南，涵盖以下六大核心领域：

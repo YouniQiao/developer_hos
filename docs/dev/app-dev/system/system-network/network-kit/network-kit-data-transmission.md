@@ -2,9 +2,10 @@
 title: "访问网络"
 original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission
 format: md
+upstream_id: dev/app-dev/system/system-network/network-kit/network-kit-data-transmission
+last_sync: 2026-06-07
+sync_hash: f0e258d6
 ---
-
-
 * **[使用HTTP访问网络](/docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/http-request)**
 * **[使用WebSocket访问网络](/docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/websocket-connection)**
 * **[使用WebSocket访问网络(C/C++)](/docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/native-websocket-guidelines)**

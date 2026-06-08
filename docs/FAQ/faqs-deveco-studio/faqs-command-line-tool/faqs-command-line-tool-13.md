@@ -2,8 +2,10 @@
 format: md
 title: "如何使用ohpm引入三四方库"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-command-line-tool/faqs-command-line-tool-13
+upstream_id: FAQ/faqs-deveco-studio/faqs-command-line-tool/faqs-command-line-tool-13
+last_sync: 2026-06-07
+sync_hash: 75d6295f
 ---
-
 * 方式一：
   1. 打开Terminal窗口，通过如下指令进入到entry目录。
 

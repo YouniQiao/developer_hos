@@ -2,9 +2,10 @@
 title: "预览服务卡片（FormKit）"
 original_url: /docs/dev/atomic-dev/instant-service-formkit/instant-service-formkit-preview
 format: md
+upstream_id: dev/atomic-dev/instant-service-formkit/instant-service-formkit-preview
+last_sync: 2026-06-07
+sync_hash: 31b419f9
 ---
-
-
 1. 在服务卡片（FormKit）界面，选择“草稿”或“待审核”卡片，点击提交预览，即可在负一屏探索流看到此卡，并进行预览测试。
 
    ![](./img/b04ddd3f.png "点击放大")

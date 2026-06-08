@@ -3,9 +3,10 @@ title: "ohpm info错误码"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/errorcode/ide-ohpm-info-errorcode
 format: md
+upstream_id: tools/ohpm/errorcode/ide-ohpm-info-errorcode
+last_sync: 2026-06-07
+sync_hash: 77b4dc43
 ---
-
-
 # ohpm info错误码
 
 ## 00639001 获取包失败

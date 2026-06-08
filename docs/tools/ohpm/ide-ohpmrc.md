@@ -3,9 +3,10 @@ title: "ohpmrc"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/ide-ohpmrc
 format: md
+upstream_id: tools/ohpm/ide-ohpmrc
+last_sync: 2026-06-07
+sync_hash: b21180af
 ---
-
-
 # ohpmrc
 
 ohpm配置文件。

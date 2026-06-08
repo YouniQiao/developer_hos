@@ -2,9 +2,10 @@
 title: "系统语言与区域"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-language-user-preferences/i18n-system-language-region
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/i18n/i18n-language-user-preferences/i18n-system-language-region
+last_sync: 2026-06-07
+sync_hash: 8a6e7dc4
 ---
-
-
 ## 实现原理
 
 在设置的“语言和地区”中可以添加多种语言，多种语言形成的列表称为语言列表，列表中的第一个语言称为系统语言。系统区域是依据区域ID划分的特定地区。

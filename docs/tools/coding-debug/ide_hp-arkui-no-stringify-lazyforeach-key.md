@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-no-stringify-in-lazyforeach-key-generator"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-no-stringify-lazyforeach-key
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-no-stringify-lazyforeach-key
+last_sync: 2026-06-07
+sync_hash: e126b966
 ---
-
-
 # @performance/hp-arkui-no-stringify-in-lazyforeach-key-generator
 
 在使用LazyForEach进行组件复用的key生成器函数里，不要使用stringify。

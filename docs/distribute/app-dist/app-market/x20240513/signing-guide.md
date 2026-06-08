@@ -3,8 +3,10 @@ title: "AppGallery Connect 协议签署指南"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x20240513/signing-guide
 format: md
+upstream_id: distribute/app-dist/app-market/x20240513/signing-guide
+last_sync: 2026-06-07
+sync_hash: 6db80ebf
 ---
-
 # AppGallery Connect 协议签署指南
 
 ## **1、分发服务**

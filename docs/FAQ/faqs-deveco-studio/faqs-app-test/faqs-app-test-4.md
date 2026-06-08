@@ -2,9 +2,10 @@
 format: md
 title: "出现“container is not running”错误"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-4
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-4
+last_sync: 2026-06-07
+sync_hash: 7874ddb9
 ---
-
-
 **问题现象**
 
 在HarmonyOS设备上运行命令“hdc -n shell param set persist.ace.testmode.enabled 1”时，出现错误提示“container is not running”。

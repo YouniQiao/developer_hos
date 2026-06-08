@@ -3,9 +3,10 @@ title: "@correctness/listen-default-network-change"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_listen-default-network-change
 format: md
+upstream_id: tools/coding-debug/ide_listen-default-network-change
+last_sync: 2026-06-07
+sync_hash: 163606bd
 ---
-
-
 # @correctness/listen-default-network-change
 
 建议应用监听默认网络的变化，关闭原有网络的数据传输，并使用新网络建立数据传输。

@@ -3,9 +3,10 @@ title: "@typescript-eslint/prefer-string-starts-ends-with"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_prefer-string-starts-ends-with
 format: md
+upstream_id: tools/coding-debug/ide_prefer-string-starts-ends-with
+last_sync: 2026-06-07
+sync_hash: f756c70d
 ---
-
-
 # @typescript-eslint/prefer-string-starts-ends-with
 
 强制使用“String#startsWith”和“String#endsWith”而不是其他检查子字符串的等效方法。

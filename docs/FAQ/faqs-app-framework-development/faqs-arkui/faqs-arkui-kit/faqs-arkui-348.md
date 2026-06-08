@@ -2,9 +2,10 @@
 format: md
 title: "如何实现List的折叠动画效果"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-348
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-348
+last_sync: 2026-06-07
+sync_hash: 5f979b5f
 ---
-
-
 可以使用显式动画animateTo结合条件渲染if控制 ListItem内容区域的展开和收起，示例代码如下：
 
 ```

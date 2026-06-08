@@ -2,8 +2,11 @@
 title: "房间管理"
 original_url: /docs/dev/game-dev/gameobe-room-real-time-server-0000002395190637
 format: md
+upstream_id: dev/game-dev/gameobe-room-real-time-server-0000002395190637
+last_sync: 2026-06-07
+sync_hash: 3a05a0d1
+upstream_hash: 89b1eb55e918
 ---
-
 
 您可以使用ActionArgs.SDK相关方法实现一些房间管理的业务逻辑，包括获取房间信息、修改房间属性、移除房间内玩家以及解散房间等使用场景。
 

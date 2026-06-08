@@ -2,9 +2,10 @@
 title: "System概述"
 original_url: /docs/dev/game-dev/pgd-system-overview-0000002456414238
 format: md
+upstream_id: dev/game-dev/pgd-system-overview-0000002456414238
+last_sync: 2026-06-07
+sync_hash: 67fb200c
 ---
-
-
 System（系统）是PGD架构中处理游戏逻辑的核心组件。系统负责在每个游戏循环中对符合特定条件的实体进行处理，实现游戏的各种功能逻辑，如移动、碰撞检测、伤害计算等。
 
 ## 核心特性

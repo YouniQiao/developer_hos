@@ -3,8 +3,10 @@ title: "投放创意任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-task-create-0000001345794602
 format: md
+upstream_id: monetize/promotion/bp-delivery-task-create-0000001345794602
+last_sync: 2026-06-07
+sync_hash: 0c7974c9
 ---
-
 # 投放创意任务
 
 ## 背景信息

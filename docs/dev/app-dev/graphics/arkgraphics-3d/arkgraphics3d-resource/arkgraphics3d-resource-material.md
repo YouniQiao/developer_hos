@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "创建并使用材质资源"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-3d/arkgraphics3d-resource/arkgraphics3d-resource-material
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-3d/arkgraphics3d-resource/arkgraphics3d-resource-material
+last_sync: 2026-06-07
+sync_hash: cd414ff6
 ---
-
-
 材质（Material）：材质是用于定义物体表面视觉效果的重要资源。材质决定了物体如何与光线交互，从而影响其最终的渲染效果，如颜色、金属感、粗糙度等外观属性。
 
 ArkGraphics 3D采用基于物理的渲染（PBR, Physically-Based Rendering）模型，其材质实现遵循通用的PBR原理。开发者既可以使用标准材质快速实现真实感效果，也可以通过自定义Shader材质灵活控制渲染逻辑。

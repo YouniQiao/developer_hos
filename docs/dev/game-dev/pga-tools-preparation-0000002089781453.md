@@ -2,9 +2,10 @@
 title: "工具配置"
 original_url: /docs/dev/game-dev/pga-tools-preparation-0000002089781453
 format: md
+upstream_id: dev/game-dev/pga-tools-preparation-0000002089781453
+last_sync: 2026-06-07
+sync_hash: a5f91bd4
 ---
-
-
 ## 本地工具配置
 
 ### 项目工程导入PGA工具

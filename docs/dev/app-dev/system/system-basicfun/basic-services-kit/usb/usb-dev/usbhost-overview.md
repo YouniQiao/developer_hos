@@ -2,9 +2,10 @@
 title: "USB服务开发概述"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-dev/usbhost-overview
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-dev/usbhost-overview
+last_sync: 2026-06-07
+sync_hash: b2d34f62
 ---
-
-
 ## 基本概念
 
 USB服务是应用访问底层的一种设备抽象概念，分为主机（Host）、设备（Device）。

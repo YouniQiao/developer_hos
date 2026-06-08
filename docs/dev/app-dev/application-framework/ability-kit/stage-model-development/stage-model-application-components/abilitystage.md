@@ -2,9 +2,10 @@
 title: "AbilityStage组件管理器"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/abilitystage
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/abilitystage
+last_sync: 2026-06-07
+sync_hash: e3223a7a
 ---
-
-
 ## 概述
 
 [AbilityStage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-abilitystage)是一个[Module](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-overview#应用的多module设计机制)级别的组件管理器，应用的[HAP](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package)在首次加载时会创建一个AbilityStage实例，可以对该Module进行初始化等操作。AbilityStage与HAP一一对应，即每个HAP拥有一个AbilityStage实例。

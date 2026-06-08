@@ -2,9 +2,10 @@
 title: "ohpm-repo batch_download"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-batch-download
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-batch-download
+last_sync: 2026-06-07
+sync_hash: ca41dbff
 ---
-
-
 # ohpm-repo batch\_download
 
 批量下载ohpm-repo或OpenHarmony三方库中心仓的包文件。

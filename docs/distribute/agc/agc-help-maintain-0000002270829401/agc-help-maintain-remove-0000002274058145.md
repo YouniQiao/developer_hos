@@ -2,9 +2,10 @@
 title: "下架应用/元服务"
 original_url: /docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-remove-0000002274058145
 format: md
+upstream_id: distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-remove-0000002274058145
+last_sync: 2026-06-07
+sync_hash: 820c4c68
 ---
-
-
 如果您当前在架的应用版本存在问题需要下架，或是不想再上架当前应用，您可以申请从华为应用市场下架该应用。应用下架后，用户将无法从华为应用市场搜索到该应用，此时应用会进入草稿状态。如果您想重新上架应用，可以直接在此草稿状态的应用版本基础上编辑、修改，然后重新发布。
 
 ![](../img/agc-help-maintain-remove-0000002274058145_0.png)

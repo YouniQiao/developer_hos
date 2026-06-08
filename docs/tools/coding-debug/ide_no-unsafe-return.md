@@ -3,8 +3,11 @@ title: "@typescript-eslint/no-unsafe-return"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unsafe-return
 format: md
+upstream_id: tools/coding-debug/ide_no-unsafe-return
+last_sync: 2026-06-07
+sync_hash: 158c430a
+upstream_hash: 57b95cc62b8d
 ---
-
 
 # @typescript-eslint/no-unsafe-return
 

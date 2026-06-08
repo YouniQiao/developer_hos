@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "接入购买"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-purchases/iap-nonrenewable/iap-integrate-nonrenewable
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-purchases/iap-nonrenewable/iap-integrate-nonrenewable
+last_sync: 2026-06-07
+sync_hash: cf750506
 ---
-
-
 ## 场景介绍
 
 用户在购买非续期订阅商品后，可以在一段时间访问App的增值功能或内容，周期结束后禁止访问，除非再次购买自动续期订阅或非续期订阅商品。

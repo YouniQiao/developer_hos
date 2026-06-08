@@ -3,9 +3,10 @@ title: "本地知识库配置"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-ocal-knowledge
 format: md
+upstream_id: tools/ai-assist/ide-ocal-knowledge
+last_sync: 2026-06-07
+sync_hash: 749fcb28
 ---
-
-
 # 本地知识库配置
 
 从DevEco Studio 6.0.0 Beta5开始，CodeGenie允许用户导入设计文档和代码等文件形成文档集，多个文档集组合成本地知识库。智能问答时，根据用户输入内容检索本地知识库以提升AI生成的能力。

@@ -3,9 +3,10 @@ title: "调试失败错误码"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-errorcode-00403
 format: md
+upstream_id: tools/coding-debug/ide-debug-errorcode-00403
+last_sync: 2026-06-07
+sync_hash: 480dc4fe
 ---
-
-
 # 调试失败错误码
 
 #### 00403001 离线日志解析失败

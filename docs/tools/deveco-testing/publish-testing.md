@@ -3,9 +3,10 @@ title: "上架预检"
 displayed_sidebar: devecoTestingSidebar
 original_url: /docs/tools/deveco-testing/publish-testing
 format: md
+upstream_id: tools/deveco-testing/publish-testing
+last_sync: 2026-06-07
+sync_hash: 921de12c
 ---
-
-
 # 上架预检
 
 ![](./img/zh-cn_image_0000002524623381.png)

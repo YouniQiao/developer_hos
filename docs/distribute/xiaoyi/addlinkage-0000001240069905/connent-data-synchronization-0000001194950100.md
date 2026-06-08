@@ -2,8 +2,10 @@
 title: "内容数据同步接口"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/addlinkage-0000001240069905/connent-data-synchronization-0000001194950100
+upstream_id: distribute/xiaoyi/addlinkage-0000001240069905/connent-data-synchronization-0000001194950100
+last_sync: 2026-06-07
+sync_hash: 2c364216
 ---
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # 内容数据同步接口

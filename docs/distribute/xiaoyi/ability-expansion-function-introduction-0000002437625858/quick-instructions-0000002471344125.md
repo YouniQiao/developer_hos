@@ -2,8 +2,10 @@
 title: "快捷指令"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/quick-instructions-0000002471344125
+upstream_id: distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/quick-instructions-0000002471344125
+last_sync: 2026-06-07
+sync_hash: f595e3ca
 ---
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # 快捷指令

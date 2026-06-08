@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "打开设备侧隔空传送开关"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/gestures-share/gestures-share-open
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/gestures-share/gestures-share-open
+last_sync: 2026-06-07
+sync_hash: f4c9c60d
 ---
-
-
 使用隔空传送功能前，需要先打开隔空传送开关。
 
 开启路径：设置 > 系统 > 快捷启动和手势 > 隔空传送。

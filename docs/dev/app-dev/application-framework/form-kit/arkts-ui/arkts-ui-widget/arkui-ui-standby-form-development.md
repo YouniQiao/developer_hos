@@ -2,9 +2,10 @@
 title: "ArkTS待机屏保卡片开发指导"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkui-ui-standby-form-development
 format: md
+upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkui-ui-standby-form-development
+last_sync: 2026-06-07
+sync_hash: 6d56a785
 ---
-
-
 从API version 23开始，Form Kit提供在设备待机屏保界面（即横屏充电锁屏状态下显示的界面）上显示卡片的能力，用以展示重要信息，旨在待机下也可陪伴用户。待机屏保卡片用于展示天气、日历等信息，并支持用户个性化定制。
 
 本文介绍了待机屏保卡片的使用步骤、约束限制，并给出开发指导。
@@ -59,7 +60,7 @@ format: md
 
 待机屏保卡片会展示在设备的待机屏保界面，开发者需申请上架开放能力，用以保护数据隐私安全。
 
-因此在应用调试或发布时，必须使用[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)，并在手动签名[申请Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)过程中[创建HarmonyOS应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)，创建应用时参考如下指导为应用接入开放能力。
+因此在应用调试或发布时，必须使用[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)，并在手动签名[申请Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)过程中[创建HarmonyOS应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)，创建应用时参考如下指导为应用接入开放能力。
 
 1. 登录AppGallery Connect，选择“开发与服务”。
 

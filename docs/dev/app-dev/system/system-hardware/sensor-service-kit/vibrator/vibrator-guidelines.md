@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "振动开发指导(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-hardware/sensor-service-kit/vibrator/vibrator-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-hardware/sensor-service-kit/vibrator/vibrator-guidelines
+last_sync: 2026-06-07
+sync_hash: bfae78d1
 ---
-
-
 ## 场景介绍
 
 当设备需要设置不同的振动效果时，可以调用Vibrator模块，例如：设备的按键可以设置不同强度和不同时长的振动，闹钟和来电可以设置不同强度和时长的单次或周期振动。

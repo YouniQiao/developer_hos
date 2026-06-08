@@ -2,9 +2,10 @@
 title: "查询频道信息"
 original_url: /docs/dev/game-dev/games-gamemme-getrtmchannelinfo-csharp-native-0000002359707030
 format: md
+upstream_id: dev/game-dev/games-gamemme-getrtmchannelinfo-csharp-native-0000002359707030
+last_sync: 2026-06-07
+sync_hash: 36816bf9
 ---
-
-
 订阅频道的过程中，如需查看指定频道的详细信息，如订阅玩家数量、玩家信息（RTM连接状态、属性等），可通过查询频道信息获取。
 
 ## 前提条件

@@ -2,9 +2,10 @@
 title: "振动开发指导"
 original_url: /docs/dev/atomic-dev/atomic-vibrator/atomic-vibrator-guidelines
 format: md
+upstream_id: dev/atomic-dev/atomic-vibrator/atomic-vibrator-guidelines
+last_sync: 2026-06-07
+sync_hash: 0119d2ba
 ---
-
-
 ## 场景介绍
 
 当设备需要振动固定时长时，可以调用Vibrator模块，例如：设备的按键可以设置不同时长的振动。

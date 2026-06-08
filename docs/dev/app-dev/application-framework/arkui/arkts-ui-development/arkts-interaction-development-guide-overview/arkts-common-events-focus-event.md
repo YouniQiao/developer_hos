@@ -2,9 +2,10 @@
 title: "支持焦点处理"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-common-events-focus-event
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-interaction-development-guide-overview/arkts-common-events-focus-event
+last_sync: 2026-06-07
+sync_hash: 12cf1229
 ---
-
-
 ## 基础概念与规范
 
 ### 基础概念

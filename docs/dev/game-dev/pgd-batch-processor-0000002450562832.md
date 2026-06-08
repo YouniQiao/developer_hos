@@ -2,9 +2,10 @@
 title: "BatchProcessor实体修改批处理"
 original_url: /docs/dev/game-dev/pgd-batch-processor-0000002450562832
 format: md
+upstream_id: dev/game-dev/pgd-batch-processor-0000002450562832
+last_sync: 2026-06-07
+sync_hash: 10756109
 ---
-
-
 BatchProcessor用于对已有实体进行批量修改操作，包括添加/移除组件和标签。
 
 与逐个修改相比，批处理将所有变更合并为一次结构性改变。

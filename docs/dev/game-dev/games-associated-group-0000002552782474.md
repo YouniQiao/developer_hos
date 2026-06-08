@@ -3,9 +3,10 @@ title: "关联账号组"
 original_url: /docs/dev/game-dev/games-associated-group-0000002552782474
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-associated-group-0000002552782474
+last_sync: 2026-06-07
+sync_hash: 04e72393
 ---
-
-
 开发者及其关联公司在使用华为数字商品及联运服务时，需关联账号组。
 
 请开发者前往[华为开发者联盟官网-管理中心](https://developer.huawei.com/consumer/cn/console/overview)将开发者账号关联账号组：

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开通云函数服务"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-preparations/cloudfoundation-enable-function
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-preparations/cloudfoundation-enable-function
+last_sync: 2026-06-07
+sync_hash: 3fd056cb
 ---
-
-
 首次使用云函数服务前，需要先开通此服务。如果已经启用，可跳过本步骤。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“开发与服务”。

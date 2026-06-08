@@ -3,8 +3,10 @@ title: "账号管理"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/fusion-level2-management-0000002499177793
 format: md
+upstream_id: monetize/promotion/fusion-level2-management-0000002499177793
+last_sync: 2026-06-07
+sync_hash: 2c9751e7
 ---
-
 # 账号管理
 
 账号管理包含账户信息、发票信息、操作日志、消息设置等入口。

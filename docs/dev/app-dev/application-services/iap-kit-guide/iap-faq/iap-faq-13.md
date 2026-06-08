@@ -3,7 +3,8 @@ displayed_sidebar: appDevSidebar
 title: "IAP服务器支持的加密套件范围"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-faq/iap-faq-13
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-faq/iap-faq-13
+last_sync: 2026-06-07
+sync_hash: 57733c10
 ---
-
-
 具体见[加密套件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-rest-common-statement#加密套件)。

@@ -3,9 +3,10 @@ title: "构建任务说明"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-task-process
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-task-process
+last_sync: 2026-06-07
+sync_hash: e74e8ce4
 ---
-
-
 # 构建任务说明
 
 本章节将对构建的任务进行说明，可以更直观地了解到构建的任务流程。

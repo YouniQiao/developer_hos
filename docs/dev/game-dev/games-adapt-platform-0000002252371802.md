@@ -2,8 +2,11 @@
 title: "游戏的系统适配"
 original_url: /docs/dev/game-dev/games-adapt-platform-0000002252371802
 format: md
+upstream_id: dev/game-dev/games-adapt-platform-0000002252371802
+last_sync: 2026-06-07
+sync_hash: 98e153be
+upstream_hash: 8bc2c860c662
 ---
-
 
 * **[Cocos Creator引擎游戏的系统适配](/docs/dev/game-dev/games-adapt-creator-0000002252490816)**
 * **[Cocos2d-x引擎游戏的系统适配](/docs/dev/game-dev/games-adapt-2dx-0000002287068061)**

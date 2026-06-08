@@ -3,8 +3,10 @@ title: "新增子客账户"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-start-service-provider-increase-sub-0000001379677853
 format: md
+upstream_id: monetize/promotion/bpos-start-service-provider-increase-sub-0000001379677853
+last_sync: 2026-06-07
+sync_hash: 5a4a9179
 ---
-
 # 新增子客账户
 
 ## 概述
@@ -152,7 +154,7 @@ format: md
 
     授权模板中，公章与法人签字可二选一，若两者都不提供则授权无效。
 
-    如果未要求您提供授权文件，此时您需要阅读并勾选[鲸鸿动能广告主授权确认函](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/ad-agreements-0000001169499170#ZH-CN_TOPIC_0000001169499170__li16322105618244)。
+    如果未要求您提供授权文件，此时您需要阅读并勾选[鲸鸿动能广告主授权确认函](/docs/monetize/promotion/ad-agreements-0000001169499170#ZH-CN_TOPIC_0000001169499170__li16322105618244)。
   - <strong>授权有效期</strong>：您可以查看您上级服务商的授权时间，子客授权结束时间应小于子客服务商授权结束时间。
 
 - <strong>行业资质：</strong>按照您的产品选择对应的行业即可，此时您需要阅读并勾选Industries That Are Prohibited Or Restricted。
@@ -166,6 +168,6 @@ format: md
   - <strong>职位</strong>：请填写您的职位信息。
   - <strong>联系人电话</strong>：请填写联系人的手机号，系统的通知短信会发送到此电话，请确保号码可以正常接收短信。此处的电话不作为子客账户登录凭证。
   - <strong>联系人邮箱</strong>：请填写联系人的邮箱，系统的通知邮件会发送到此邮箱，请确保邮箱可以正常接收邮件。此处的邮箱不作为子客账户登录凭证。
-  - 此时您需要阅读并勾选[鲸鸿动能广告服务商声明](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/ad-agreements-0000001169499170#ZH-CN_TOPIC_0000001169499170__li11624185952416)。
+  - 此时您需要阅读并勾选[鲸鸿动能广告服务商声明](/docs/monetize/promotion/ad-agreements-0000001169499170#ZH-CN_TOPIC_0000001169499170__li11624185952416)。
 
 4. 提交审核，审核通过后即可进入子客账户。

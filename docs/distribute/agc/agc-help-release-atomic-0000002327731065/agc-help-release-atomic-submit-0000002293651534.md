@@ -2,9 +2,10 @@
 title: "提交审核"
 original_url: /docs/distribute/agc/agc-help-release-atomic-0000002327731065/agc-help-release-atomic-submit-0000002293651534
 format: md
+upstream_id: distribute/agc/agc-help-release-atomic-0000002327731065/agc-help-release-atomic-submit-0000002293651534
+last_sync: 2026-06-07
+sync_hash: 1f81c6cc
 ---
-
-
 完成所有应用信息和版本信息的配置后，您即可将元服务提交至华为方进行发布审核。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“快速开始”中的“元服务一站式平台”卡片。

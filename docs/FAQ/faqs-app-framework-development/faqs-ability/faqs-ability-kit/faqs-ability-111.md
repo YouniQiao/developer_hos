@@ -2,9 +2,10 @@
 title: "如何通过resourceManager获取rawFile路径下的文件"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-111
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-111
+last_sync: 2026-06-07
+sync_hash: 4d3bac54
 ---
-
-
 **解决方案**
 
 可以通过[@ohos.resourceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager)中的[getRawFileList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager#getrawfilelist10)方法获取RawFile路径下的所有文件。参考代码如下：

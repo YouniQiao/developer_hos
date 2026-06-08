@@ -2,9 +2,10 @@
 title: "创建意图框架"
 format: md
 original_url: /docs/tools/coding-debug/ide-insight-intent
+upstream_id: tools/coding-debug/ide-insight-intent
+last_sync: 2026-06-07
+sync_hash: 33e9a245
 ---
-
-
 # 创建意图框架
 
 DevEco Studio支持创建意图框架，帮助应用理解用户意图，并提供相应的服务和体验。

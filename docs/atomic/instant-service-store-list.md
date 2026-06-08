@@ -2,9 +2,10 @@
 title: "查询门店列表"
 original_url: /docs/dev/atomic-dev/instant-service-store-management/instant-service-store-list
 format: md
+upstream_id: dev/atomic-dev/instant-service-store-management/instant-service-store-list
+last_sync: 2026-06-07
+sync_hash: 6c85f3ca
 ---
-
-
 ## 功能介绍
 
 本接口用于商家系统定期从平台侧拉取其名下所有门店的完整列表，支持分页查询。

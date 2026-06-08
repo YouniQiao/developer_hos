@@ -3,9 +3,10 @@ title: "@hw-stylistic/max-len"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_max-len
 format: md
+upstream_id: tools/coding-debug/ide_max-len
+last_sync: 2026-06-07
+sync_hash: eace76e0
 ---
-
-
 # @hw-stylistic/max-len
 
 强制代码行最大长度为120个字符。该规则仅检查.ets文件类型。

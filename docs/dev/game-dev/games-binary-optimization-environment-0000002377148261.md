@@ -2,9 +2,10 @@
 title: "环境准备"
 original_url: /docs/dev/game-dev/games-binary-optimization-environment-0000002377148261
 format: md
+upstream_id: dev/game-dev/games-binary-optimization-environment-0000002377148261
+last_sync: 2026-06-07
+sync_hash: 97ed52bf
 ---
-
-
 | 设备 | 要求 | 用途 |
 | --- | --- | --- |
 | PC | Windows系统 7/10（无特殊要求） | 连接手机，抓取和导出profile数据。 |

@@ -3,8 +3,10 @@ title: "使用空白规则创建"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-customize-create-blank-0000001362109145
 format: md
+upstream_id: monetize/promotion/bp-functions-customize-create-blank-0000001362109145
+last_sync: 2026-06-07
+sync_hash: aabbe9f7
 ---
-
 # 使用空白规则创建
 
 ## 前提条件

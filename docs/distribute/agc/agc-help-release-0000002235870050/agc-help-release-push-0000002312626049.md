@@ -2,9 +2,10 @@
 title: "催促/加急/撤销审核"
 original_url: /docs/distribute/agc/agc-help-release-0000002235870050/agc-help-release-push-0000002312626049
 format: md
+upstream_id: distribute/agc/agc-help-release-0000002235870050/agc-help-release-push-0000002312626049
+last_sync: 2026-06-07
+sync_hash: 049ef2e9
 ---
-
-
 #### 催促审核
 
 如果您等待了几天后发现提交审核的应用版本仍未被审核，可以在AppGallery Connect中督促华为审核人员进行审核。收到您的催审信息后，华为审核人员会尽快为您审核，请您耐心等待。

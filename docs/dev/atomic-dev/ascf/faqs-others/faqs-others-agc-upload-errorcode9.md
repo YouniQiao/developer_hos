@@ -2,9 +2,10 @@
 title: "在AGC上传ASCF元服务app包不通过返回错误码9"
 original_url: /docs/dev/atomic-dev/ascf/faqs-others/faqs-others-agc-upload-errorcode9
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-others/faqs-others-agc-upload-errorcode9
+last_sync: 2026-06-07
+sync_hash: 4d0a22be
 ---
-
-
 **问题现象**
 
 在AGC上传ASCF元服务app包不通过，返回的错误码为：9。

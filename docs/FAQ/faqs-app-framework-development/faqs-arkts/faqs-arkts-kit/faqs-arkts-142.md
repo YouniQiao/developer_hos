@@ -2,8 +2,11 @@
 format: md
 title: "如何在调用处实现接口中的方法"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-142
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-142
+last_sync: 2026-06-07
+sync_hash: 120045f6
+upstream_hash: 1de78f27a1f0
 ---
-
 
 示例代码如下：
 

@@ -1,12 +1,12 @@
 ---
-
 title: "(可选）一键生成Model Class"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-modelclass
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-modelclass
+last_sync: 2026-06-07
+sync_hash: f6fa2092
 ---
-
-
 # (可选）一键生成Model Class
 
 云数据库支持从端侧或者云侧云函数（含云对象）访问云数据库，代码涉及调用云数据库时，需引入对应云数据库对象类型的Model Class。当前支持为对象类型一键生成Server Model与Client Model，供您在端侧及云侧云函数（含云对象）开发时引用。

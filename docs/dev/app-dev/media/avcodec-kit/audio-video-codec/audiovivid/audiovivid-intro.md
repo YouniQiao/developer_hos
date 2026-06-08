@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Audio Vivid能力介绍"
 original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/audiovivid/audiovivid-intro
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/audio-video-codec/audiovivid/audiovivid-intro
+last_sync: 2026-06-07
+sync_hash: 8c55e026
 ---
-
-
 Audio Vivid（菁彩三维声）是全球首个基于AI技术的音频编解码标准，由世界超高清视频产业联盟（UWA联盟）与数字音视频编解码技术标准工作组（AVS）联合制定，共同发布。包含音频PCM数据以及元数据的音频格式，相比传统立体声音源，Audio Vivid包含音频内容源的元数据信息，能够还原物理和感知世界中的真实听感，打造极致的沉浸式听觉体验。
 
 HarmonyOS打造全链路高清空间音频系统，包含Audio Vivid编解码、空间音频渲染算法等关键能力，并在各类终端产品逐步构建全场景空间音频特性，从传统立体声升级到三维声，获得更好的音质、更沉浸的空间感。

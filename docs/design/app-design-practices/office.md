@@ -3,8 +3,10 @@ title: 办公类
 sidebar_label: 办公类
 original_url: /docs/design/app-design-practices/office
 format: md
+upstream_id: design/app-design-practices/office
+last_sync: 2026-06-07
+sync_hash: 78e6d5e4
 ---
-
 # 办公类
 
 商务办公类应用一般效率优先，用于日常文档处理、日程会议管理等场景，满足撰写文档、团队协作、日常管理等需求。此类应用有以下特征：

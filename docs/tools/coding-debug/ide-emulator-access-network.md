@@ -3,9 +3,10 @@ title: "模拟器访问网络"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-emulator-access-network
 format: md
+upstream_id: tools/coding-debug/ide-emulator-access-network
+last_sync: 2026-06-07
+sync_hash: f88aa0fa
 ---
-
-
 # 模拟器访问网络
 
 #### 模拟器访问互联网

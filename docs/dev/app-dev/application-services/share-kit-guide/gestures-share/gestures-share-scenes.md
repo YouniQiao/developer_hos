@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "分享App Linking直达应用"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/gestures-share/gestures-share-scenes
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/gestures-share/gestures-share-scenes
+last_sync: 2026-06-07
+sync_hash: 5b2ea471
+upstream_hash: beea15c2390f
 ---
-
 
 提供如何通过隔空传送分享实现直达应用，应用需接入App Linking以确保端到端完整的体验。参考：[使用App Linking实现应用间跳转](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-linking-startup)。
 

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "压力管控(C/C++)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-system-pressure
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-native/native-camera-system-pressure
+last_sync: 2026-06-07
+sync_hash: 8721c398
 ---
-
-
 从API version 20开始，相机框架提供对系统压力等级的监听。
 
 在长时间使用相机的场景（如直播业务）中，相机应用可以通过监听系统压力等级变化，动态调整画质（如帧率、分辨率等），平衡功耗、发热和系统负载，保证功能长时间可用。

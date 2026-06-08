@@ -3,9 +3,10 @@ title: "概述"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-previewer-overview
 format: md
+upstream_id: tools/coding-debug/ide-previewer-overview
+last_sync: 2026-06-07
+sync_hash: 381d8921
 ---
-
-
 # 概述
 
 DevEco Studio为开发者提供了UI界面预览功能，可以查看UI界面效果，方便开发者随时调整界面UI布局。预览器支持界面代码的实时预览，只需要将开发的源代码进行保存，就可以通过预览器实时查看组件/界面运行效果，方便开发者随时调整代码。

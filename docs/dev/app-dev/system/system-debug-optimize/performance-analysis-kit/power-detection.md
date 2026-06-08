@@ -2,8 +2,11 @@
 title: "功耗检测"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/power-detection
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/power-detection
+last_sync: 2026-06-07
+sync_hash: fee95112
+upstream_hash: 59e9367688ea
 ---
-
 
 ## 简介
 

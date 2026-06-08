@@ -2,9 +2,10 @@
 title: "NFC服务开发概述"
 original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/nfc/nfc-overview
 format: md
+upstream_id: dev/app-dev/system/system-network/connectivity-kit/nfc/nfc-overview
+last_sync: 2026-06-07
+sync_hash: de01031e
 ---
-
-
 ## 概述
 
 NFC英文全称Near Field Communication，是一种短距高频的无线电技术，在13.56MHz频率运行，通信距离一般在10厘米距离内。NFC服务提供NFC开关控制、NFC标签读写、NFC卡模拟等业务功能。

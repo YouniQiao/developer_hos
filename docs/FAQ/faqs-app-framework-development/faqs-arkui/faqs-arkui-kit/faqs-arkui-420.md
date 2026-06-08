@@ -2,9 +2,10 @@
 format: md
 title: "Navigation页面参数如何管理？如：传递参数、参数返回、参数获取"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-420
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-420
+last_sync: 2026-06-07
+sync_hash: 91ad5918
 ---
-
-
 * 传递参数：
   1. Navigation路由跳转api（[页面跳转](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-routing#页面跳转)相关接口：pushPath、pushPathByName、pushDestination和pushDestinationByName）支持参数传递，开发者可直接使用相关接口进行传参。
   2. 开发者可通过AppStorage自行管理参数。例如：在跳转发生时存参数，并通知目标页面取用参数。

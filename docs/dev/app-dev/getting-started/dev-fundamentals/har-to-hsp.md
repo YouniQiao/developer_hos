@@ -1,8 +1,10 @@
 ---
 title: "HAR转HSP指导"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/har-to-hsp
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/har-to-hsp
+last_sync: 2026-06-07
+sync_hash: fd137597
 ---
-
 目前HAR的使用存在打包多份，包膨胀的问题，导致整体应用包的体积很大，HSP可以很好地解决该问题，本文介绍如何通过配置项的变更将HAR工程转换为HSP工程。
 
 ![](./img/28e10d29.png)

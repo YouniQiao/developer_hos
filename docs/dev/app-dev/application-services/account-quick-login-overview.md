@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "概述"
 original_url: /docs/dev/app-dev/application-services/account-quick-login-overview
 format: md
+upstream_id: dev/app-dev/application-services/account-quick-login-overview
+last_sync: 2026-06-07
+sync_hash: c7768ee3
 ---
-
-
 Account Kit提供了[华为账号一键登录](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-phone-unionid-login)、[华为账号登录](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-unionid-login/account-unionid-login-button)、[静默登录](/docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-silent-login)等多种登录方式，其中华为账号一键登录**仅支持企业开发者**使用，华为账号登录和静默登录**既支持企业开发者也支持个人开发者**使用，应用可根据实际场景选择使用其中一种或多种方式进行账号登录。
 
 ## 基础概念

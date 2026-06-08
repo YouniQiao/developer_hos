@@ -3,9 +3,10 @@ title: "Terminal环境变量说明"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-environment-variable
 format: md
+upstream_id: tools/coding-debug/ide-environment-variable
+last_sync: 2026-06-07
+sync_hash: e36140a4
 ---
-
-
 # Terminal环境变量说明
 
 在DevEco Studio的Terminal中执行hvigor、ohpm等命令时，默认使用内置的环境变量，无需额外配置。

@@ -3,9 +3,10 @@ title: "核准（备案）准备"
 original_url: /docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing-preparation
 has_merged_cells: true
 format: md
+upstream_id: dev/atomic-dev/atomic-service-filing/atomic-service-filing-preparation
+last_sync: 2026-06-07
+sync_hash: 336b94cc
 ---
-
-
 ## 注册账号与实名认证
 
 若在[华为云核准（备案）系统](https://beian.huaweicloud.com/?utm_source=HUAWEI%2BDeveloper&utm_adplace=AdPlace099034)中核准（备案）过网站、APP、元服务等，您无需注册新的华为云账号，请继续使用以前的华为云账号核准（备案）元服务。

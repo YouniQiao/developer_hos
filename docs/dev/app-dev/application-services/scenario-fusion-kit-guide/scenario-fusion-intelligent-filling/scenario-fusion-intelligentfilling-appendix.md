@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "ContentType使用场景说明"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-appendix
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-appendix
+last_sync: 2026-06-07
+sync_hash: e4887e93
 ---
-
-
 华为账号昵称
 
 | 名称 | 说明 |

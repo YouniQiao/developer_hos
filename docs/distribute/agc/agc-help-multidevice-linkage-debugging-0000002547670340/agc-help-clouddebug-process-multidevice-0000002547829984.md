@@ -2,9 +2,10 @@
 title: "调试流程"
 original_url: /docs/distribute/agc/agc-help-multidevice-linkage-debugging-0000002547670340/agc-help-clouddebug-process-multidevice-0000002547829984
 format: md
+upstream_id: distribute/agc/agc-help-multidevice-linkage-debugging-0000002547670340/agc-help-clouddebug-process-multidevice-0000002547829984
+last_sync: 2026-06-07
+sync_hash: 3571851d
 ---
-
-
 本章节介绍一帧多屏调试流程。
 
 | 序号 | 步骤 | 详情 |

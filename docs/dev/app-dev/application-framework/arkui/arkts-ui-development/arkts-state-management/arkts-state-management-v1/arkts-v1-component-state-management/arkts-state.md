@@ -2,9 +2,10 @@
 title: "@State装饰器：组件内状态"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-component-state-management/arkts-state
+last_sync: 2026-06-07
+sync_hash: 0f3f9e8b
 ---
-
-
 被状态变量装饰器装饰的变量称为状态变量，使普通变量具备状态属性。当状态变量改变时，会触发其直接绑定的UI组件渲染更新。
 
 在状态变量相关装饰器中，@State是最基础的装饰器，也是大部分状态变量的数据源。

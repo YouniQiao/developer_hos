@@ -2,8 +2,11 @@
 title: "配置版权信息"
 original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-copyright-0000002401259413
 format: md
+upstream_id: distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-copyright-0000002401259413
+last_sync: 2026-06-07
+sync_hash: 3ba50b00
+upstream_hash: 58ee552a7d46
 ---
-
 
 根据法律法规，要求游戏上架时提供对应的游戏版权材料。
 

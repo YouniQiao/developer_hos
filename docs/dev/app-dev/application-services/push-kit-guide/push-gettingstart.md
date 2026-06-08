@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用入门"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-gettingstart
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-gettingstart
+last_sync: 2026-06-07
+sync_hash: d66fca32
 ---
-
-
 ## 示例代码
 
 开发者可以参考**服务端**[示例代码](https://gitcode.com/harmonyos_samples/push-kit_-sample-code_-server-demo_-java)，了解推送Push场景化消息的过程。参考**客户端**[示例代码](https://gitcode.com/harmonyos_samples/push-kit-sample-code-clientdemo-arkts)，了解生成Push Token和接收Push场景化消息的功能和流程。
@@ -16,7 +17,7 @@ format: md
 
 | 序号 | 步骤 | 说明 |
 | --- | --- | --- |
-| 1 | [开通推送服务](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-config-setting) | 在开发应用前，请先参考[操作步骤](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-config-setting#操作步骤)开通推送服务。其中**配置签名信息**时，请使用**手动签名**方式。  DevEco Studio 6.0.0 Beta5版本开始，新增[自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)方式。 |
+| 1 | [开通推送服务](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-config-setting) | 在开发应用前，请先参考[操作步骤](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-config-setting#操作步骤)开通推送服务。其中**配置签名信息**时，请使用**手动签名**方式。  DevEco Studio 6.0.0 Beta5版本开始，新增[自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)方式。 |
 | 2 | [申请通知消息自分类权益](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-apply-right#申请通知消息自分类权益) | · 请根据[通知消息分类标准](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-apply-right#通知消息分类标准与提醒方式)，申请对应场景化消息权益。不同类型的消息有对应的通知消息分类标准与提醒方式和[通知消息推送数量管理规则](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-apply-right#通知消息推送数量管理规则)。  · 若未开通权益，或开通的权益类型与[调用REST API推送场景化消息](/docs/dev/app-dev/application-services/push-kit-guide/push-server/push-scenes-send)时，请求体中携带的[category](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#notification)字段值不一致，消息将会默认归为**资讯营销类消息**，则会受到“单个应用每日每设备推送数量为2条或5条”的[频控](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-apply-right#通知消息推送数量管理规则)限制。若超出限制，设备将会收不到该条消息。  · 调测阶段建议设置[testMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param#pushoptions)为true，以防发送成功的消息被[频控](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-msg-freq-control)，设备将会收不到该条消息。  · 若消息被频控，请参考[频控FAQ](/docs/dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-5)进行问题排查。 |
 | 3 | **客户端**获取Push Token | [调用Push Kit REST API](/docs/dev/app-dev/application-services/push-kit-guide/push-server/push-jwt-token#调用push-kit-rest-api)时，需要设置token参数，对应的参数值参考[获取Push Token](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token)进行获取。注意[Push Token变化的场景](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-get-token#场景介绍)，若设备的Push Token发生变化但服务端调用Push Kit REST API时未更新token的值，将会导致设备收不到该条消息。 |
 | 4 | **客户端**请求通知授权 | 为确保应用可正常收到消息，应用发送通知前需调用[requestEnableNotification](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationmanager#notificationmanagerrequestenablenotification10-1)()方法弹出提醒，告知用户需要允许接收通知消息。示例代码参见[开发步骤](/docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-alert/push-send-alert#开发步骤)中第2步。 |

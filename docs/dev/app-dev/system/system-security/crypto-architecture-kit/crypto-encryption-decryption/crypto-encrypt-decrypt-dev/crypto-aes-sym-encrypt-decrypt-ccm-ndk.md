@@ -2,9 +2,10 @@
 title: "使用AES对称密钥（CCM模式）加解密(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-aes-sym-encrypt-decrypt-ccm-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-aes-sym-encrypt-decrypt-ccm-ndk
+last_sync: 2026-06-07
+sync_hash: d7d5f826
 ---
-
-
 请查看[对称密钥加解密算法规格：AES](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-spec/crypto-sym-encrypt-decrypt-spec#aes)。
 
 ## 在CMake脚本中链接相关动态库

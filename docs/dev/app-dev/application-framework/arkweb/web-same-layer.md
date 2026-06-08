@@ -2,8 +2,11 @@
 title: "同层渲染"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-same-layer
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-same-layer
+last_sync: 2026-06-07
+sync_hash: 65e701a7
+upstream_hash: 0cce848024dd
 ---
-
 
 在系统中，应用可以使用Web组件加载Web网页。当非系统框架的UI组件功能或性能不如系统组件时，可使用同层渲染技术，通过ArkUI组件渲染这些组件（简称为同层组件）。
 

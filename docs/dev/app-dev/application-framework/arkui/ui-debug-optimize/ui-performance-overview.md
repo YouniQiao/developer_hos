@@ -2,9 +2,10 @@
 title: "UI高性能开发"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-performance-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-performance-overview
+last_sync: 2026-06-07
+sync_hash: ace02bc7
 ---
-
-
 优化应用的性能对于提升用户体验至关重要。当发现性能问题后，一般可按照以下步骤进行分析：
 
 1. 复现问题：根据用户的反馈复现性能问题是分析的第一步，开发者可通过回访用户或在应用中增加自己的性能监测埋点来获得性能问题的发生场景和复现步骤。
@@ -19,7 +20,7 @@ format: md
 性能优化的过程中使用数据而非直觉指导优化方向是提升优化效率的关键。当前DevEco Studio中提供了两个性能分析工具，可以进行UI的性能分析，帮助我们高效的进行性能问题定位：
 
 1. CPU Profiler：用于在运行过程中抓取trace和调用栈对耗时点进行分析，使用方法可以参考[CPU Profiler的使用指导](/docs/quality/optimization-overview)分析的思路可以参考[常用Trace的含义](/docs/quality/optimization-overview#section085643405116)。
-2. ArkUI Inspector：用于可视化的展示UI组件树，分析UI的布局层次和参数，使用方法可以参考[ArkUI Inspector使用说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arkui-inspector)。
+2. ArkUI Inspector：用于可视化的展示UI组件树，分析UI的布局层次和参数，使用方法可以参考[ArkUI Inspector使用说明](/docs/tools/coding-debug/ide-arkui-inspector)。
 
    在分析性能问题的过程中，应当先通过CPU Profiler工具发现实际的性能瓶颈点，再针对性的进行优化。
 

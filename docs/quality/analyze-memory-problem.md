@@ -2,8 +2,11 @@
 title: "分析内存占用问题"
 original_url: /docs/quality/analyze-memory-problem
 format: md
+upstream_id: /docs/quality/analyze-memory-problem
+last_sync: 2026-06-07
+sync_hash: 3e71cc8a
+upstream_hash: 4557d6076e42
 ---
-
 
 # 分析内存占用问题
 

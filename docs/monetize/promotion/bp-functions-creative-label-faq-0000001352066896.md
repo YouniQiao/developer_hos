@@ -3,6 +3,10 @@ title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-creative-label-faq-0000001352066896
 format: md
+upstream_id: monetize/promotion/bp-functions-creative-label-faq-0000001352066896
+last_sync: 2026-06-07
+sync_hash: 00ecc47b
+upstream_hash: c01c5adc13a2
 ---
 
 # FAQ

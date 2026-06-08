@@ -2,9 +2,10 @@
 title: "注销核准（备案）"
 original_url: /docs/dev/game-dev/quickgame-filing-pc-terminate-0000001761919188
 format: md
+upstream_id: dev/game-dev/quickgame-filing-pc-terminate-0000001761919188
+last_sync: 2026-06-07
+sync_hash: 96200061
 ---
-
-
 ## 注销主体
 
 注销主体将在工信部删除主体及主体下的网站/APP/快应用/快游戏的核准（备案）信息，届时互联网信息服务将不可使用。操作步骤如下：

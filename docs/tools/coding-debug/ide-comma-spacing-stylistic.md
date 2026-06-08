@@ -3,9 +3,10 @@ title: "@hw-stylistic/comma-spacing"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-comma-spacing-stylistic
 format: md
+upstream_id: tools/coding-debug/ide-comma-spacing-stylistic
+last_sync: 2026-06-07
+sync_hash: 2de6b187
 ---
-
-
 # @hw-stylistic/comma-spacing
 
 强制数组元素和函数中多个参数之间的逗号后面加空格，逗号前不加空格。该规则仅检查.ets文件类型。

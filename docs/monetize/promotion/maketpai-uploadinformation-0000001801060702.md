@@ -3,8 +3,10 @@ title: "获取上传信息"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/maketpai-uploadinformation-0000001801060702
 format: md
+upstream_id: monetize/promotion/maketpai-uploadinformation-0000001801060702
+last_sync: 2026-06-07
+sync_hash: 774bedfc
 ---
-
 # 获取上传信息
 
 ## 功能介绍

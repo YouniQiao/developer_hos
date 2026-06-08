@@ -3,8 +3,10 @@ title: "应用市场应用推广评测"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-delivery-task-promotion-evaluation-0000001379837553
 format: md
+upstream_id: monetize/promotion/bpos-delivery-task-promotion-evaluation-0000001379837553
+last_sync: 2026-06-07
+sync_hash: a519fb8b
 ---
-
 # 应用市场应用推广评测
 
 ## 概述

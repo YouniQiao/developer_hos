@@ -3,8 +3,11 @@ title: "@performance/hp-performance-no-dynamic-cls-func"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-performance-no-dynamic-cls-func
 format: md
+upstream_id: tools/coding-debug/ide_hp-performance-no-dynamic-cls-func
+last_sync: 2026-06-07
+sync_hash: 18c72e07
+upstream_hash: 8f08a0922af9
 ---
-
 
 # @performance/hp-performance-no-dynamic-cls-func
 

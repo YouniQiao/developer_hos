@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "用户相册资源使用指导"
 original_url: /docs/dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/photoaccesshelper-useralbum-guidelines
 format: md
+upstream_id: dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/photoaccesshelper-useralbum-guidelines
+last_sync: 2026-06-07
+sync_hash: 162838ad
+upstream_hash: 416a7e257218
 ---
-
 
 photoAccessHelper提供用户相册相关的接口，支持查询和重命名相册，以及添加和删除相册中的图片和视频资源。
 

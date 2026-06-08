@@ -2,9 +2,10 @@
 title: "选择游戏内资费"
 original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-pay-0000002458362105
 format: md
+upstream_id: distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-pay-0000002458362105
+last_sync: 2026-06-07
+sync_hash: 48dd89a2
 ---
-
-
 若小游戏涉及付费，要求按照业务场景选择小游戏内的资费类型，用于标识玩家在小游戏内的付费类型。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，选择待上架的小游戏。

@@ -2,9 +2,10 @@
 title: "使用Node-API接口处理异步操作"
 original_url: /docs/dev/ndk-dev/use-napi-about-promise
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-promise
+last_sync: 2026-06-07
+sync_hash: 8fc428f9
 ---
-
-
 ## 简介
 
 使用Node-API接口处理异步操作。异步操作是指需要一定时间才能完成的操作，例如从网络下载数据或读取大型文件。与同步操作不同，异步操作不会阻塞主线程，而是会在后台执行。将异步操作完成后的事件放入任务队列，等待主线程空闲时执行。

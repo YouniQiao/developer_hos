@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "一键登录场景下无法获取到明文手机号如何解决"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-4
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-4
+last_sync: 2026-06-07
+sync_hash: fd214361
 ---
-
-
 阅读此章节前请先保证已在华为账号一键登录场景成功获取到匿名手机号。在华为账号一键登录场景下无法获取到明文手机号时，建议通过以下步骤排查解决：
 
 1. 华为账号未绑定手机号，该异常场景应用需要展示其他登录方式。

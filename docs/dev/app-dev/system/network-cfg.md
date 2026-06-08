@@ -2,9 +2,10 @@
 title: "network-cfg工具"
 original_url: /docs/dev/app-dev/system/network-cfg
 format: md
+upstream_id: dev/app-dev/system/network-cfg
+last_sync: 2026-06-07
+sync_hash: af0b8243
 ---
-
-
 network-cfg是为开发人员提供的用于设置网络相关参数的工具（其中"cfg"为"config"的缩写），例如给Wi-Fi设置代理等。
 
 ![](./img/d272b751.png)

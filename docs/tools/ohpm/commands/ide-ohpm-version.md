@@ -3,8 +3,11 @@ title: "ohpm version"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-version
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-version
+last_sync: 2026-06-07
+sync_hash: 1459acd1
+upstream_hash: f3ea4bb7404b
 ---
-
 
 # ohpm version
 

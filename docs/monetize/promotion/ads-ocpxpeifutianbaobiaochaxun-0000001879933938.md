@@ -3,8 +3,10 @@ title: "ocpx赔付天报表查询"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-ocpxpeifutianbaobiaochaxun-0000001879933938
 format: md
+upstream_id: monetize/promotion/ads-ocpxpeifutianbaobiaochaxun-0000001879933938
+last_sync: 2026-06-07
+sync_hash: 76c7e633
 ---
-
 # ocpx赔付天报表查询
 
 【简介】广告主通过广告主ID、任务ID查询Ocpx结算天报表数据。

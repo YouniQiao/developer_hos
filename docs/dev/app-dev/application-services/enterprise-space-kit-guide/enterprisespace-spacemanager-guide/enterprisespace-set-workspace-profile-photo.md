@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "设置工作空间资料照片"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-set-workspace-profile-photo
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-set-workspace-profile-photo
+last_sync: 2026-06-07
+sync_hash: 2ef0fb26
+upstream_hash: 654de55c11c5
 ---
-
 
 ## 场景介绍
 

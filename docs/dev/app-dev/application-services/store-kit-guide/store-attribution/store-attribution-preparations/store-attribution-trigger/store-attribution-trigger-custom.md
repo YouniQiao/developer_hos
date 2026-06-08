@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "自定义转化事件"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-preparations/store-attribution-trigger/store-attribution-trigger-custom
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-preparations/store-attribution-trigger/store-attribution-trigger-custom
+last_sync: 2026-06-07
+sync_hash: adcbca3b
 ---
-
-
 **开发者角色的合作伙伴在转化事件管理页面可以做如下操作**：
 
 新增、修改、删除、查看自定义转化事件。

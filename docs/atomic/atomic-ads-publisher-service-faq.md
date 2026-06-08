@@ -2,9 +2,10 @@
 title: "流量变现服务常见问题"
 original_url: /docs/dev/atomic-dev/atomic-ads-publisher-service-dev/atomic-ads-publisher-service-faq
 format: md
+upstream_id: dev/atomic-dev/atomic-ads-publisher-service-dev/atomic-ads-publisher-service-faq
+last_sync: 2026-06-07
+sync_hash: 40a6df9d
 ---
-
-
 ## 展示广告时显示白屏
 
 展示广告时出现白屏可能原因为展示的广告样式与UI展示页面不匹配，横幅广告使用[AutoAdComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-autoadcomponent)组件展示；原生广告、贴片广告使用[AdComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-adcomponent)组件展示；激励广告、插屏广告调用[showAd](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#advertisingshowad)接口展示。

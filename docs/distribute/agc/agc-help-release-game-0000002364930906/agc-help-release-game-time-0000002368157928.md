@@ -2,8 +2,11 @@
 title: "配置上架时间"
 original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-time-0000002368157928
 format: md
+upstream_id: distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-time-0000002368157928
+last_sync: 2026-06-07
+sync_hash: eeeb4764
+upstream_hash: dd5b2792895a
 ---
-
 
 #### 设置上架时间
 

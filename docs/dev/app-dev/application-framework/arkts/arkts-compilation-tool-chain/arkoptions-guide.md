@@ -2,12 +2,13 @@
 title: "在build-profile.json5中配置arkOptions"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkoptions-guide
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkoptions-guide
+last_sync: 2026-06-07
+sync_hash: aa275036
 ---
-
-
 ## 概述
 
-arkOptions主要提供ArkTS编译相关配置，当前文档介绍arkOptions中types配置类型、maxFlowDepth配置控制流分析最大深度等，arkOptions中的其他配置项请参考[build-profile.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-configuration-file-overview)。
+arkOptions主要提供ArkTS编译相关配置，当前文档介绍arkOptions中types配置类型、maxFlowDepth配置控制流分析最大深度等，arkOptions中的其他配置项请参考[build-profile.json5](/docs/tools/coding-debug/ide-hvigor-configuration-file-overview)。
 
 ## types
 

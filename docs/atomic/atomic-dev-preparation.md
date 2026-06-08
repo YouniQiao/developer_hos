@@ -2,8 +2,11 @@
 title: "元服务开发准备"
 original_url: /docs/dev/atomic-dev/atomic-service-development/atomic-dev-preparation
 format: md
+upstream_id: dev/atomic-dev/atomic-service-development/atomic-dev-preparation
+last_sync: 2026-06-07
+sync_hash: 0807ff86
+upstream_hash: 1fc861c36ebf
 ---
-
 
 在开始元服务开发前，需要先完成以下准备工作。
 
@@ -17,7 +20,7 @@ format: md
 
 ## 安装配置DevEco Studio
 
-安装最新版[DevEco Studio](https://developer.huawei.com/consumer/cn/download/)。具体安装指导请参见[安装DevEco Studio](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-software-install)。
+安装最新版[DevEco Studio](https://developer.huawei.com/consumer/cn/download/)。具体安装指导请参见[安装DevEco Studio](/docs/tools/coding-debug/ide-software-install)。
 
 ## 使用DevEco Studio创建元服务工程
 
@@ -29,8 +32,8 @@ format: md
 
 目前提供了两种签名方式，请根据实际情况选择：
 
-* [自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section18815157237)：如果您只需要使用一台调试设备，建议使用DevEco Studio提供的自动签名。
-* 手动签名：如果您使用多台调试设备或者会在断网情况下调试，您需要在AGC中[申请调试证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-debug-cert-0000002283256797)、[注册调试设备](/docs/distribute/agc/agc-help-device-0000002235870042/agc-help-add-device-0000002283189937)、[申请调试Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)后，再[手动配置签名信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+* [自动签名](/docs/tools/coding-debug/ide-signing#section18815157237)：如果您只需要使用一台调试设备，建议使用DevEco Studio提供的自动签名。
+* 手动签名：如果您使用多台调试设备或者会在断网情况下调试，您需要在AGC中[申请调试证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-debug-cert-0000002283256797)、[注册调试设备](/docs/distribute/agc/agc-help-device-0000002235870042/agc-help-add-device-0000002283189937)、[申请调试Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)后，再[手动配置签名信息](/docs/tools/coding-debug/ide-signing#section297715173233)。
 
 ## （条件必选）添加公钥指纹
 

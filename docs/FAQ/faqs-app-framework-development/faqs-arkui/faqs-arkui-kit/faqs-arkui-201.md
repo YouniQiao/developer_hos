@@ -2,9 +2,10 @@
 title: "如何解决window创建的模态窗口默认焦点不在界面上，导致不响应返回事件的问题"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-201
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-201
+last_sync: 2026-06-07
+sync_hash: 1868b9b0
 ---
-
-
 **问题现象**
 
 通过window创建的窗口默认焦点不在界面上，导致不响应返回事件。

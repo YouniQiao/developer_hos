@@ -3,8 +3,10 @@ title: "应用接续概述"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-continue-cast
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-continue-cast
+last_sync: 2026-06-07
+sync_hash: f0f0f931
 ---
-
 # 应用接续概述
 
 ## 概述

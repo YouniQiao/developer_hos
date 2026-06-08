@@ -3,8 +3,10 @@ title: 概述
 sidebar_label: 概述
 original_url: /docs/design/hmi/overview
 format: md
+upstream_id: design/hmi/overview
+last_sync: 2026-06-07
+sync_hash: 92fef961
 ---
-
 # 概述
 
 在全场景的数字体验中，越来越多类型的智能终端设备分布在用户的日常生活中，可交互的用户界面广泛存在于智能手机、平板、电脑、智能穿戴、电视、车机、虚拟现实（VR）和增强现实（AR）等设备上。应用可能在多种设备上运行或在单一设备上被用户通过多种输入方式操控，这需要其用户界面能够自动识别和支持不同的输入设备，以便用户以习惯的、舒适的方法与其进行交互。

@@ -2,9 +2,10 @@
 title: "应用声明支持智慧多窗"
 original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/multi-window-guide/multi-window-adapt/multi-window-support
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/window-manager/multi-window-guide/multi-window-adapt/multi-window-support
+last_sync: 2026-06-07
+sync_hash: 29c03e12
 ---
-
-
 当应用需要智慧多窗的能力时，可以通过在[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中对应标签添加相关字段声明支持。
 
 ## 声明支持悬浮窗

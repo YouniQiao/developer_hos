@@ -1,9 +1,10 @@
 ---
 title: "瀑布流加载丢帧优化"
 original_url: /docs/quality/waterflow-performance-optimization
+upstream_id: /docs/quality/waterflow-performance-optimization
+last_sync: 2026-06-07
+sync_hash: 50e901bf
 ---
-
-
 # 瀑布流加载丢帧优化
 
 ## 概述

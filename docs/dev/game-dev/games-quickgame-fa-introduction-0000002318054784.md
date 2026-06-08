@@ -2,9 +2,10 @@
 title: "业务介绍"
 original_url: /docs/dev/game-dev/games-quickgame-fa-introduction-0000002318054784
 format: md
+upstream_id: dev/game-dev/games-quickgame-fa-introduction-0000002318054784
+last_sync: 2026-06-07
+sync_hash: e7dd4c13
 ---
-
-
 ## 服务卡片
 
 HarmonyOS是一款面向万物互联时代的、全新的分布式操作系统。运行在HarmonyOS的应用分为两种形态：

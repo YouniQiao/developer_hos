@@ -3,9 +3,10 @@ title: "@performance/number-init-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-number-init-check
 format: md
+upstream_id: tools/coding-debug/ide-number-init-check
+last_sync: 2026-06-07
+sync_hash: 089baba3
 ---
-
-
 # @performance/number-init-check
 
 该规则将检查number是否正确使用。

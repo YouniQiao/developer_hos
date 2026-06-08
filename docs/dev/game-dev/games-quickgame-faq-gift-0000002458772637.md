@@ -2,9 +2,10 @@
 title: "礼包"
 original_url: /docs/dev/game-dev/games-quickgame-faq-gift-0000002458772637
 format: md
+upstream_id: dev/game-dev/games-quickgame-faq-gift-0000002458772637
+last_sync: 2026-06-07
+sync_hash: 30dc7d2f
 ---
-
-
 ## 兑换直达礼包签名在服务器侧验证不通过，应该如何处理？
 
 请对以下项目进行自检：

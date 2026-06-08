@@ -2,9 +2,10 @@
 title: "接入流程"
 original_url: /docs/dev/game-dev/games-quickgame-dev-runtimegame-guide-0000002317894824
 format: md
+upstream_id: dev/game-dev/games-quickgame-dev-runtimegame-guide-0000002317894824
+last_sync: 2026-06-07
+sync_hash: bcfcabe3
 ---
-
-
 ## 准备开发环境
 
 开发快游戏前需要完成一些准备工作，详情请参见[开发环境准备](/docs/dev/game-dev/games-quickgame-environment-preparation-0000002351893453)。

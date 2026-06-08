@@ -2,9 +2,10 @@
 format: md
 title: "如何禁用Refresh组件的下拉刷新"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-386
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-386
+last_sync: 2026-06-07
+sync_hash: 73d1f9fb
 ---
-
-
 **问题现象**
 
 在使用Refresh组件时，开发者需要控制Refresh组件的下拉刷新功能，实现临时禁用或者开启下拉刷新。

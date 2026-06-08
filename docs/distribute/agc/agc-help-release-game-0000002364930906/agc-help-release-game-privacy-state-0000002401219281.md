@@ -2,9 +2,10 @@
 title: "配置隐私声明"
 original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-privacy-state-0000002401219281
 format: md
+upstream_id: distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-privacy-state-0000002401219281
+last_sync: 2026-06-07
+sync_hash: 9aa7e70f
 ---
-
-
 游戏要求提供隐私声明网站，便于玩家了解游戏收集、使用隐私数据的情况。
 
 #### 方式一：自定义隐私政策

@@ -3,9 +3,10 @@ title: "自定义智能体（Agent）配置和调用"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-agent-use
 format: md
+upstream_id: tools/ai-assist/ide-agent-use
+last_sync: 2026-06-07
+sync_hash: 176a1a4e
 ---
-
-
 # 自定义智能体（Agent）配置和调用
 
 从DevEco Studio 6.0.1 Beta1开始，CodeGenie支持用户添加模型和自定义Agent，增强AI问答能力，提升AI辅助编程和分析能力。

@@ -2,9 +2,10 @@
 title: "查看应用信息"
 original_url: /docs/distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569
 format: md
+upstream_id: distribute/agc/agc-help-app-0000002235710234/agc-help-view-app-info-0000002282674569
+last_sync: 2026-06-07
+sync_hash: 311ae33c
 ---
-
-
 创建HarmonyOS应用/元服务后，您可以查看其相关信息，如Developer ID、Client ID、APP ID等。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)，点击“开发与服务”。

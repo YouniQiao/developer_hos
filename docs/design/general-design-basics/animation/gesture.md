@@ -3,8 +3,10 @@ title: 手势动效
 sidebar_label: 手势动效
 original_url: /docs/design/general-design-basics/animation/gesture
 format: md
+upstream_id: design/general-design-basics/animation/gesture
+last_sync: 2026-06-07
+sync_hash: 9343f038
 ---
-
 # 手势动效
 
 是指手势在终端屏幕上或者触摸板等输入设备上进行跟手操作的动效，大致分为滑动、点击、拖拽、捏合等持续操作动效，比如手势导航上滑、捏合照片等动效。我们主张无阻塞感的动效设计，结合运用HarmonyOS动效物理引擎，将自然属性运用到界面的操作中，比如摩擦力、弹性、碰撞影响等。

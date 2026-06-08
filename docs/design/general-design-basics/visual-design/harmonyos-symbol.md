@@ -3,8 +3,10 @@ title: HarmonyOS Symbol
 sidebar_label: HarmonyOS Symbol
 original_url: /docs/design/general-design-basics/visual-design/harmonyos-symbol
 format: md
+upstream_id: design/general-design-basics/visual-design/harmonyos-symbol
+last_sync: 2026-06-07
+sync_hash: 876446ca
 ---
-
 # HarmonyOS Symbol
 
 ### HarmonyOS Symbol

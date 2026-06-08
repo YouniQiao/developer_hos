@@ -2,9 +2,10 @@
 title: "独立分包"
 original_url: /docs/dev/game-dev/games-quickgame-independent-subpackage-0000002351933645
 format: md
+upstream_id: dev/game-dev/games-quickgame-independent-subpackage-0000002351933645
+last_sync: 2026-06-07
+sync_hash: 2a253b72
 ---
-
-
 独立分包是一种特殊类型的分包，可以独立于主包和其他分包运行。以独立分包路径启动快游戏时，仅会下载独立分包并启动快游戏，而不会下载主包，以实现部分场景下快游戏的快速启动。您可以根据需求将某些玩法片段或有一定功能独立性的页面配置到独立分包中，达到快速打开的效果。当前独立分包能力主要用于[快游戏试玩分包](/docs/dev/game-dev/games-quickgame-playable-subpackage-0000002351893469)的制作。
 
 ![](./img/b29c0398.png)

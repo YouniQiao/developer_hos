@@ -3,9 +3,10 @@ title: "制作工具下载"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-tools-0000001104440212/themes-design-tools-0000001054531194
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-tools-0000001104440212/themes-design-tools-0000001054531194
+last_sync: 2026-06-07
+sync_hash: ba1fd4a9
 ---
-
-
 # 制作工具下载
 
 ## Theme Studio Pro

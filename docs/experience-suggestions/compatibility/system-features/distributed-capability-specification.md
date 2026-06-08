@@ -2,9 +2,10 @@
 title: "自由流转规格"
 original_url: /docs/experience-suggestions/compatibility/system-features/distributed-capability-specification
 format: md
+upstream_id: experience-suggestions/compatibility/system-features/distributed-capability-specification
+last_sync: 2026-06-07
+sync_hash: 6b34b18c
 ---
-
-
 # 自由流转规格
 
 |  |  |

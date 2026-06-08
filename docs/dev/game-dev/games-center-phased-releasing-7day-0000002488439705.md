@@ -2,9 +2,10 @@
 title: "分阶段发布（7天内自动更新）"
 original_url: /docs/dev/game-dev/games-center-phased-releasing-7day-0000002488439705
 format: md
+upstream_id: dev/game-dev/games-center-phased-releasing-7day-0000002488439705
+last_sync: 2026-06-07
+sync_hash: e13cf388
 ---
-
-
 ![](./img/5fdbf1b6.png)
 
 若您在当前版本中无法找到本文档描述的功能，可以通过[在线工单系统](https://developer.huawei.com/consumer/cn/support/feedback/#/)与我们联系，工单问题分类请选择【华为应用分发】&gt;【应用市场】&gt;【应用发布】。

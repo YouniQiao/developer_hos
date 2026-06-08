@@ -2,9 +2,10 @@
 format: md
 title: "程序包结构"
 original_url: /docs/FAQ/faqs-package-structure
+upstream_id: FAQ/faqs-package-structure
+last_sync: 2026-06-07
+sync_hash: e5fc1239
 ---
-
-
 * **[HSP打包后，为什么会生成HAR包，它是否会导致App包大小膨胀](/docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-2)**
 * **[从包管理的角度，保证代码安全的措施有哪些](/docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-4)**
 * **[如何理解App、HAP、HAR、HSP的关系](/docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-5)**

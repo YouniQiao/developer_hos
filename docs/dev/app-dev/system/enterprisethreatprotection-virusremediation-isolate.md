@@ -2,9 +2,10 @@
 title: "文件隔离"
 original_url: /docs/dev/app-dev/system/enterprisethreatprotection-virusremediation-isolate
 format: md
+upstream_id: dev/app-dev/system/enterprisethreatprotection-virusremediation-isolate
+last_sync: 2026-06-07
+sync_hash: e2666fcf
 ---
-
-
 ## 基本概念
 
 文件隔离是指将检测到的威胁文件转移到安全隔离区。

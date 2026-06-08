@@ -2,9 +2,10 @@
 title: "认领核准（备案）"
 original_url: /docs/dev/game-dev/quickgame-filing-pc-claim-0000001887387029
 format: md
+upstream_id: dev/game-dev/quickgame-filing-pc-claim-0000001887387029
+last_sync: 2026-06-07
+sync_hash: a0d7021e
 ---
-
-
 在华为云核准（备案）系统中认领华为原核准（备案）系统核准（备案）的主体信息和快游戏信息。操作步骤如下：
 
 1. 登录[华为云核准（备案）系统](https://beian.huaweicloud.com/?utm_source=HUAWEI%2BDeveloper&utm_adplace=AdPlace099034)，填写主办单位信息、互联网信息，完成后点击“验证备案类型”。在弹出的窗口中点击“下一步”。

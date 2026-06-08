@@ -2,9 +2,10 @@
 title: "如何设置Task优先级"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-26
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-26
+last_sync: 2026-06-07
+sync_hash: 7464cde0
 ---
-
-
 设置任务优先级，示例如下：
 
 ```

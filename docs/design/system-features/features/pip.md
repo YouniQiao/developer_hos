@@ -3,8 +3,10 @@ title: 画中画
 sidebar_label: 画中画
 original_url: /docs/design/system-features/features/pip
 format: md
+upstream_id: design/system-features/features/pip
+last_sync: 2026-06-07
+sync_hash: 4c4d7fbc
 ---
-
 # 画中画
 
 画中画是一种视频内容或视频通话的显示方式，利用“画中画”可以在使用其他应用的同时，观看视频内容或使用视频通话，覆盖场景包括视频播放、直播、视频通话、视频会议等。

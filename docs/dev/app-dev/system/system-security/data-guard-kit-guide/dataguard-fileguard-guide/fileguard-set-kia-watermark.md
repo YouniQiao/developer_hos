@@ -2,9 +2,10 @@
 title: "设置KIA文件水印图片"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-set-kia-watermark
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-set-kia-watermark
+last_sync: 2026-06-07
+sync_hash: 0c6f1dce
 ---
-
-
 ## 场景介绍
 
 为应用提供设置KIA文件水印图片能力。

@@ -2,9 +2,10 @@
 format: md
 title: "在docker或者wsl系统中，无USB设备节点，hdc执行后无返回信息"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-66
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-66
+last_sync: 2026-06-07
+sync_hash: dfbe536b
 ---
-
-
 **问题现象**
 
 1. 运行hdc命令没有任何回显或存在Connect server failed.

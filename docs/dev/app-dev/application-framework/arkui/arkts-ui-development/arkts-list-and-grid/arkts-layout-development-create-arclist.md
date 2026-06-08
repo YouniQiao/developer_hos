@@ -2,9 +2,10 @@
 title: "弧形列表 (ArcList)（圆形屏幕推荐使用）"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-list-and-grid/arkts-layout-development-create-arclist
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-list-and-grid/arkts-layout-development-create-arclist
+last_sync: 2026-06-07
+sync_hash: 08f821e0
 ---
-
-
 从API version 18开始支持弧形列表。弧形列表是一种专为圆形屏幕设备设计的特殊列表，它能够以结构化、可滚动的形式高效展示信息。具体用法可参考[ArcList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-arclist)。
 
 使用弧形列表可以通过在[ArcList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-arclist)组件中按垂直方向线性排列子组件[ArcListItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-arclistitem)，可以为弧形列表中的每一项提供独立视图。此外，可以使用[循环渲染](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach)来迭代一组列表项，或结合任意数量的单个视图与[ForEach](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-foreach)结构，构建复杂的弧形列表。[ArcList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-arclist)组件支持多种[渲染控制](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-overview)方式，包括条件渲染、循环渲染和懒加载，以生成子组件。

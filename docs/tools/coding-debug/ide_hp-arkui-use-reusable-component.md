@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-use-reusable-component"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-use-reusable-component
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-use-reusable-component
+last_sync: 2026-06-07
+sync_hash: 0f6553df
 ---
-
-
 # @performance/hp-arkui-use-reusable-component
 
 建议复杂组件的定义，尽量使用组件复用。

@@ -3,9 +3,10 @@ title: "选项组组件用法"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/custom-card-editing-0000002471264337/choice-group-component-0000002509817009
 format: md
+upstream_id: distribute/xiaoyi/custom-card-editing-0000002471264337/choice-group-component-0000002509817009
+last_sync: 2026-06-07
+sync_hash: 861c1ef0
 ---
-
-
 # 选项组组件用法
 
 选项组（DualSelect）是容纳选项（DualSelectItem）的容器。

@@ -2,9 +2,10 @@
 format: md
 title: "如何实现窗口、页面和组件的一键置灰功能（灰色模式）"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-275
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-275
+last_sync: 2026-06-07
+sync_hash: 9e6c52e4
 ---
-
-
 **实现窗口的一键置灰**
 
 可以通过窗口的[setWindowGrayScale()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowgrayscale12)接口实现窗口的一键置灰。

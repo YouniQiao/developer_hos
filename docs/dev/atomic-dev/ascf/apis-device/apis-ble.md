@@ -2,9 +2,10 @@
 title: "蓝牙-低功耗中心设备"
 original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-ble
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-device/apis-ble
+last_sync: 2026-06-07
+sync_hash: 8ce47e96
 ---
-
-
 ## has.createBLEConnection
 
 has.createBLEConnection(Object object)

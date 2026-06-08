@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "启动策略"
 original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-guard-strategy-manage/screentimeguard-start-guard-strategy
 format: md
+upstream_id: dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-guard-strategy-manage/screentimeguard-start-guard-strategy
+last_sync: 2026-06-07
+sync_hash: 44bb53b1
 ---
-
-
 ## 场景介绍
 
 当应用希望启动某个管控规则时，可以调用启动管控策略的接口。根据参数中传入的策略名，应用可以启动对应管控策略。一旦策略被创建并启用，系统将根据规则对用户的屏幕使用行为进行监管。

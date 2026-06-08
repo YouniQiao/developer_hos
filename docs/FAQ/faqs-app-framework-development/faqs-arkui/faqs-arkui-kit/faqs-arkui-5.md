@@ -2,8 +2,11 @@
 format: md
 title: "如何自定义Tabs页签导航栏及其对齐方式"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-5
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-5
+last_sync: 2026-06-07
+sync_hash: ee9b7727
+upstream_hash: 22880477aea7
 ---
-
 
 可以自定义页签，并设置页签的对齐方式。具体操作可参考代码：
 

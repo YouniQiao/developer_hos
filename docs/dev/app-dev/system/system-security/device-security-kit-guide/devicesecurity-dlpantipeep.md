@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "防窥保护"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-dlpantipeep
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-dlpantipeep
+last_sync: 2026-06-07
+sync_hash: 14ac2327
+upstream_hash: 14329eb67b5d
 ---
-
 
 ## 场景介绍
 

@@ -2,9 +2,10 @@
 format: md
 title: "如何实现通过侧滑手势关闭打开的悬浮框"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-366
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-366
+last_sync: 2026-06-07
+sync_hash: df6163a5
 ---
-
-
 在页面的onBackPress()生命周期函数中隐藏子窗口。示例如下：
 
 1. 在EntryAbility的onWindowStageCreate方法中创建子窗口。

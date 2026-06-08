@@ -2,9 +2,10 @@
 format: md
 title: "应用静态快捷方式如何接入X键"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-71
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-71
+last_sync: 2026-06-07
+sync_hash: 8f7c2c5e
 ---
-
-
 **现有机制：**
 
 X键当前已经支持将应用的静态快捷方式，添加至X键的九宫格面板，后续用户可以通过单击X键呼出九宫格面板后，点击已添加进来的静态快捷方式图标，快速启动，一键直达。注：当前X键九宫格面板对所有应用开放静态快捷方式，X键双击/长按列表中只对部分应用开放静态快捷方式。

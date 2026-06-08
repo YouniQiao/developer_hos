@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "视频解码"
 original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding
+last_sync: 2026-06-07
+sync_hash: bdd931af
 ---
-
-
 视频解码是多媒体处理的核心环节，功能是将压缩的视频码流解码为原始像素数据。视频解码支持同步模式与异步模式两种运行机制，两者主要区别为buffer获取方式的同异步之分，开发者可根据自身业务选择适合的接口调用模式。
 
 本文档主要介绍异步模式视频解码的实现流程，同步模式视频解码请参考[视频解码同步模式](/docs/dev/app-dev/media/avcodec-kit/audio-video-codec/synchronous-video-decoding)。根据解码后数据处理方式的不同，视频解码支持Surface模式和Buffer模式两种输出模式，适用于不同的应用场景。

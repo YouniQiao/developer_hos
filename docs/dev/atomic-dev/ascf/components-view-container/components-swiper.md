@@ -2,9 +2,10 @@
 title: "swiper"
 original_url: /docs/dev/atomic-dev/ascf/components-view-container/components-swiper
 format: md
+upstream_id: dev/atomic-dev/ascf/components-view-container/components-swiper
+last_sync: 2026-06-07
+sync_hash: 8a39b035
 ---
-
-
 滑块视图容器。其中只可放置swiper-item组件，否则会导致未定义的行为。
 
 **起始版本：** 1.0.0

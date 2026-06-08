@@ -2,9 +2,10 @@
 title: "属性样式动画"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-animation/ui-js-animation-css/ui-js-animate-attribute-style
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-animation/ui-js-animation-css/ui-js-animate-attribute-style
+last_sync: 2026-06-07
+sync_hash: c5b22a60
 ---
-
-
 在关键帧（Keyframes）中动态设置父组件的width和height，实现组件变大缩小。子组件设置scale属性使父子组件同时缩放，再设置opacity实现父子组件的显示与隐藏。
 
 ```

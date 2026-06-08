@@ -2,9 +2,10 @@
 title: "阻断式更新"
 original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-blocked-update
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-basic-capabilities/develop-blocked-update
+last_sync: 2026-06-07
+sync_hash: c2c998d9
 ---
-
-
 如果希望在用户使用元服务过程中进行版本更新，可以使用阻断式更新的方式进行更新。使用[监听元服务更新检查接口](/docs/dev/atomic-dev/ascf/apis-basis/apis-updatemanager#updatemanageroncheckforupdate)，然后在[监听元服务新版本下载完成事件接口](/docs/dev/atomic-dev/ascf/apis-basis/apis-updatemanager#updatemanageronupdateready)的回调函数中调用[重启元服务接口](/docs/dev/atomic-dev/ascf/apis-basis/apis-updatemanager#updatemanagerapplyupdate)的方式触发更新。
 
 ![](./img/8c7e0d30.png)

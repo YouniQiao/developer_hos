@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "椭圆机"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-elliptical
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-elliptical
+last_sync: 2026-06-07
+sync_hash: cac34cbb
 ---
-
-
 椭圆机相关锻炼记录类型如下：
 
 | **锻炼记录子类型常量** | **描述** | 数据来源 |

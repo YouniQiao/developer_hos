@@ -3,9 +3,10 @@ title: "仪器测试错误码"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-instrument-test-errorcode
 format: md
+upstream_id: tools/coding-debug/ide-instrument-test-errorcode
+last_sync: 2026-06-07
+sync_hash: 59d8101a
 ---
-
-
 # 仪器测试错误码
 
 #### 00501001 测试套件名称含有变量

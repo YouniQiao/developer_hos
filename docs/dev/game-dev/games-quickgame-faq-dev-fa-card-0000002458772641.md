@@ -2,9 +2,10 @@
 title: "快游戏服务卡片"
 original_url: /docs/dev/game-dev/games-quickgame-faq-dev-fa-card-0000002458772641
 format: md
+upstream_id: dev/game-dev/games-quickgame-faq-dev-fa-card-0000002458772641
+last_sync: 2026-06-07
+sync_hash: 9f7004b4
 ---
-
-
 ## 如何查看华为手机的HarmonyOS版本号？
 
 1. 打开手机设备的“开发者模式”，并连接手机与电脑，在终端输入命令行查看手机设备的序列号。若显示设备序列号，表示您已成功连接手机设备。

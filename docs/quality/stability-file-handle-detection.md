@@ -1,9 +1,10 @@
 ---
 title: "文件句柄泄漏类问题检测方法"
 original_url: /docs/quality/stability-file-handle-detection
+upstream_id: /docs/quality/stability-file-handle-detection
+last_sync: 2026-06-07
+sync_hash: 9488b1bd
 ---
-
-
 # 文件句柄泄漏类问题检测方法
 
 ## 概述

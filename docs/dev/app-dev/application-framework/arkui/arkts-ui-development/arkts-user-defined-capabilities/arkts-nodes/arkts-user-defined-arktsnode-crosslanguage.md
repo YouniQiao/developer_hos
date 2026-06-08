@@ -2,9 +2,10 @@
 title: "设置自定义节点跨语言属性"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-nodes/arkts-user-defined-arktsnode-crosslanguage
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-nodes/arkts-user-defined-arktsnode-crosslanguage
+last_sync: 2026-06-07
+sync_hash: d0cb5a81
 ---
-
-
 ## 概述
 
 ArkUI支持在前端使用ArkTS语言创建命令式节点，即[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)节点，也可以在Native侧使用C语言创建命令式节点，并且可以混合使用两类节点构建页面。

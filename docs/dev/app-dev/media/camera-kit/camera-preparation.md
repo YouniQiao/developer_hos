@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "申请相机开发的权限"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-preparation
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-preparation
+last_sync: 2026-06-07
+sync_hash: f56c2ae1
 ---
-
-
 相机应用开发的主要流程包含开发准备、设备输入、会话管理、预览、拍照和录像等。
 
 在开发相机应用时，需要先申请相机相关权限，确保应用拥有访问相机硬件及其他功能的权限，需要的权限如下表。在申请权限前，请保证符合[权限使用的基本原则](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#权限使用的基本原则)。

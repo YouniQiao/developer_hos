@@ -2,9 +2,10 @@
 title: "业务介绍"
 original_url: /docs/distribute/agc/agc-help-internal-test-0000002270709477/agc-help-internal-test-overview-0000002253054942
 format: md
+upstream_id: distribute/agc/agc-help-internal-test-0000002270709477/agc-help-internal-test-overview-0000002253054942
+last_sync: 2026-06-07
+sync_hash: 7684e255
 ---
-
-
 在开发过程中，您可能需要在开发团队内共享应用或进行内部测试，此时您可以使用华为提供的指定设备发布功能。
 
 使用指定设备发布，您可以将应用发布上传至您的服务器或者第三方云上，团队参与测试的人员可以将应用下载到授权的设备上测试。您可以更灵活发布版本和限定测试范围，助您提前发现问题，及时修复问题并优化版本体验。

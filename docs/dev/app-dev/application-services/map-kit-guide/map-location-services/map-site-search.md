@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "POI搜索"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-location-services/map-site-search
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-location-services/map-site-search
+last_sync: 2026-06-07
+sync_hash: 335c636a
+upstream_hash: 7b4b01f1b11c
 ---
-
 
 ## 场景介绍
 

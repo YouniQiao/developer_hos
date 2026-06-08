@@ -1,8 +1,10 @@
 ---
 title: "网络资源合理使用"
 original_url: /docs/quality/reasonable-network-use
+upstream_id: /docs/quality/reasonable-network-use
+last_sync: 2026-06-07
+sync_hash: de21816d
 ---
-
 # 网络资源合理使用
 
 无长时任务的应用退到后台时，主动断开TCP和UDP连接。

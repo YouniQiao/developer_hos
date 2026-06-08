@@ -2,9 +2,10 @@
 title: "IPC跨进程通信中是否支持异步返回数据"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ipc-kit/faqs-ipc-1
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ipc-kit/faqs-ipc-1
+last_sync: 2026-06-07
+sync_hash: ace07cde
 ---
-
-
 支持将服务端的onRemoteMessageRequest函数使用async设置为异步。具体可以参考：API参考[onRemoteMessageRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-rpc#onremotemessagerequest9)中的“重载onRemoteMessageRequest方法异步处理请求示例”。
 
 参考代码如下：

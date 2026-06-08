@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Desktop Extension Kit简介"
 original_url: /docs/dev/app-dev/system/system-basicfun/status-bar-extension-kit-guide/statusbar-extension-introduction
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/status-bar-extension-kit-guide/statusbar-extension-introduction
+last_sync: 2026-06-07
+sync_hash: 12bfe97e
 ---
-
-
 Desktop Extension Kit（桌面拓展服务）提供系统级统一的操作入口，支持应用快捷功能接入桌面。
 
 ## 场景介绍

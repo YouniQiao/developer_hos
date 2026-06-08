@@ -3,8 +3,10 @@ title: "上传文件"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/maketpai-uploadfile-0000002039733017
 format: md
+upstream_id: monetize/promotion/maketpai-uploadfile-0000002039733017
+last_sync: 2026-06-07
+sync_hash: 063492ed
 ---
-
 # 上传文件
 
 ## 功能介绍

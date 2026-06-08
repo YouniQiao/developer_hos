@@ -2,8 +2,11 @@
 format: md
 title: "如何解决混淆之后的静态引用异常问题"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-93
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-93
+last_sync: 2026-06-07
+sync_hash: 747a32f4
+upstream_hash: 9d29359faa3f
 ---
-
 
 **问题描述**
 

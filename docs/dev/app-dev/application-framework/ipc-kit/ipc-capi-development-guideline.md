@@ -2,8 +2,11 @@
 title: "IPC与RPC通信开发指导(C/C++)"
 original_url: /docs/dev/app-dev/application-framework/ipc-kit/ipc-capi-development-guideline
 format: md
+upstream_id: dev/app-dev/application-framework/ipc-kit/ipc-capi-development-guideline
+last_sync: 2026-06-07
+sync_hash: ac183702
+upstream_hash: 912e4f6a281b
 ---
-
 
 ## 场景介绍
 

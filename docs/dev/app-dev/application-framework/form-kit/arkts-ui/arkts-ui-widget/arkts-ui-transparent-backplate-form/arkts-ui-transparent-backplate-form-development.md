@@ -2,9 +2,10 @@
 title: "背板透明卡片开发指导"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-transparent-backplate-form/arkts-ui-transparent-backplate-form-development
 format: md
+upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-transparent-backplate-form/arkts-ui-transparent-backplate-form-development
+last_sync: 2026-06-07
+sync_hash: c443b1e6
 ---
-
-
 从API version 22开始，Form Kit提供卡片背板元素透明显示的能力，满足更丰富的UI设计以及美观诉求。
 
 ![](./img/d88847e5.png)
@@ -204,7 +205,7 @@ format: md
      mWallpaperType: number;
    }
    ```
-4. 在应用调试或发布时，进行[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)后运行。
+4. 在应用调试或发布时，进行[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)后运行。
 5. 用户可在卡片中心-卡片管理页面，点击“添加至桌面”，此时在桌面即可看到新添加的背板透明卡片。结果示例如下。
 
    ![](./img/cb6c30f6.gif)

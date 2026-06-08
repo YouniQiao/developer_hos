@@ -2,9 +2,10 @@
 format: md
 title: "Web使用vh适配网页被缩小"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-99
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-99
+last_sync: 2026-06-07
+sync_hash: b35fd172
 ---
-
-
 **问题现象**
 
 ArkWeb加载的前端页面中使用vh单位进行网页自适应适配时，页面出现异常缩小。

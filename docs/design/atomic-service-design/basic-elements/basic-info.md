@@ -3,8 +3,10 @@ title: 基础信息
 sidebar_label: 基础信息
 original_url: /docs/design/atomic-service-design/basic-elements/basic-info
 format: md
+upstream_id: design/atomic-service-design/basic-elements/basic-info
+last_sync: 2026-06-07
+sync_hash: 5c858afc
 ---
-
 # 基础信息
 
 每个元服务有独立的图标、名称。基础信息将根据场景在元服务市场、元服务面板等界面展示。

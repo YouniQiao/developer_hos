@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通过App Linking应用链接拉起指定应用"
 original_url: /docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp
 format: md
+upstream_id: dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp
+last_sync: 2026-06-07
+sync_hash: c0088837
 ---
-
-
 ## 场景介绍
 
 使用App Linking应用链接进行跳转时，系统会根据接口传入的uri信息（HTTPS链接）将用户引导至目标应用中的特定内容，无论应用是否已安装，用户都可以访问到链接对应的内容，跳转体验相比Deep Linking方式更加顺畅。
@@ -218,7 +219,7 @@ export default class EntryAbility extends UIAbility {
 
 ## 验证应用被拉起效果
 
-1. 对应用进行[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+1. 对应用进行[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)。
 
    不能使用DevEco Studio的自动签名功能，必须使用手动签名，否则无法拉起应用。
 2. 编译打包，并安装应用至调试设备。
@@ -354,7 +355,7 @@ BundleName:
   1. 检查消息中的appIdentifier是否与AGC中的APP ID一致。
   2. 检查在AGC配置的域名发布是否成功。
 * 如果存在http\_unknown消息，请确保设备可以访问网络，并重新安装应用。
-* 如果存在其他消息，请联系[技术支持](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/support)获取帮助。
+* 如果存在其他消息，请联系[技术支持](/docs/dev/release-notes/support)获取帮助。
 
 ### 设备首次启动，若无法通过App Linking拉起系统预装应用，如何处理？
 

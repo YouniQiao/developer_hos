@@ -3,8 +3,10 @@ title: "6. 自启动&关联启动"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-06
 format: md
+upstream_id: distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-06
+last_sync: 2026-06-07
+sync_hash: 64ffe78b
 ---
-
 # 6. 自启动&关联启动
 
 * 重点整治APP未向用户告知且未经用户同意，或无合理的使用场景，频繁自启动或关联启动第三方APP的行为。

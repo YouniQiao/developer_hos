@@ -3,8 +3,10 @@ title: "星火计划2026活动介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-campaigns-spark-introduction-0000001362029581
 format: md
+upstream_id: monetize/promotion/bp-campaigns-spark-introduction-0000001362029581
+last_sync: 2026-06-07
+sync_hash: 37ac5e88
 ---
-
 # 星火计划2026活动介绍
 
 “星火计划2026”是华为应用市场应用推广平台推出的，面向“直客”提供的一系列新客专项扶持和激励政策，希望帮助新加入应用推广的合作伙伴在华为应用市场更快、更好地获量。

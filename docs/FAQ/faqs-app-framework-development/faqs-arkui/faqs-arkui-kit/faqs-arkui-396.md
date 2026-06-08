@@ -2,9 +2,10 @@
 format: md
 title: "如何实现在图片进行绘制马赛克的效果"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-396
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-396
+last_sync: 2026-06-07
+sync_hash: 3e3215a9
 ---
-
-
 在图片上进行绘制马赛克的效果可通过以下步骤来实现。
 
 1. 给画布添加移动手势。

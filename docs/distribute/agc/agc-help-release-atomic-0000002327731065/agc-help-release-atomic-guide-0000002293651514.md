@@ -2,9 +2,10 @@
 title: "发布指引"
 original_url: /docs/distribute/agc/agc-help-release-atomic-0000002327731065/agc-help-release-atomic-guide-0000002293651514
 format: md
+upstream_id: distribute/agc/agc-help-release-atomic-0000002327731065/agc-help-release-atomic-guide-0000002293651514
+last_sync: 2026-06-07
+sync_hash: 0021bfdb
 ---
-
-
 为了给用户提供良好、安全、可靠的应用体验，在元服务正式发布到华为应用市场前，我们会审核您提交的所有信息，请了解发布元服务的要求、需要提供的信息，以便尽可能顺利通过发布审核。
 
 * **提前了解发布规则，准备材料**

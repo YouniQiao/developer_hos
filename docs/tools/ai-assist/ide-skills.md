@@ -3,9 +3,10 @@ title: "技能（Skills）配置"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-skills
 format: md
+upstream_id: tools/ai-assist/ide-skills
+last_sync: 2026-06-07
+sync_hash: 026ce2ab
 ---
-
-
 # 技能（Skills）配置
 
 ## 功能介绍

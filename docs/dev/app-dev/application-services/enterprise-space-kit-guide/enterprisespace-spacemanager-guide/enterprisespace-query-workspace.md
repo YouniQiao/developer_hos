@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "查询工作空间"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-query-workspace
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-query-workspace
+last_sync: 2026-06-07
+sync_hash: ebad525f
+upstream_hash: 44a4e3f0c633
 ---
-
 
 ## 场景介绍
 

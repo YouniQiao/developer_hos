@@ -2,9 +2,10 @@
 title: "SceneItem"
 original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-sceneitem-0000002294845634
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-sceneitem-0000002294845634
+last_sync: 2026-06-07
+sync_hash: bfb73288
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | dataItems | O | `List&lt;[DataItem](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-dataitem-0000002328924933)>` | 数据信息。  数组长度不超过200。 |

@@ -3,8 +3,10 @@ title: "业务介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-fa-introduction-0000001349288420
 format: md
+upstream_id: monetize/promotion/bp-functions-fa-introduction-0000001349288420
+last_sync: 2026-06-07
+sync_hash: e3cae0d8
 ---
-
 # 业务介绍
 
 开发者在华为应用市场推广平台创建<strong>鸿蒙万能卡片（简称万能卡片）</strong>推广任务后，用户通过应用下载/更新等多种场景加桌，将万能卡片展示于用户手机桌面，提供一键直达应用核心内容/功能的便捷入口。

@@ -2,8 +2,11 @@
 format: md
 title: "如何解决编译报错“Property xxx does not exist on type 'typeof BuildProfile'”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-69
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-69
+last_sync: 2026-06-07
+sync_hash: 0b671679
+upstream_hash: 9cc1847cf236
 ---
-
 
 **问题场景一：**
 

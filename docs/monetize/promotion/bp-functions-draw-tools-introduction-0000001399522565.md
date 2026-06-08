@@ -3,8 +3,10 @@ title: "功能介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-draw-tools-introduction-0000001399522565
 format: md
+upstream_id: monetize/promotion/bp-functions-draw-tools-introduction-0000001399522565
+last_sync: 2026-06-07
+sync_hash: c858be27
 ---
-
 # 功能介绍
 
 制图工具作为开发者便捷高效的创意助手，旨在帮助开发者激发创意灵感、简化创意素材产出流程、提升创意素材制作效率。 “制图工具”涵盖“模板制图”、“图片自适应衍生”两种功能。

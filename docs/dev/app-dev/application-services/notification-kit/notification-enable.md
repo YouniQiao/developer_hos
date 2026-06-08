@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "请求通知授权"
 original_url: /docs/dev/app-dev/application-services/notification-kit/notification-enable
 format: md
+upstream_id: dev/app-dev/application-services/notification-kit/notification-enable
+last_sync: 2026-06-07
+sync_hash: 9b3b1748
 ---
-
-
 应用需要获取用户授权才能发送通知。在通知发布前调用[requestEnableNotification()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationmanager#notificationmanagerrequestenablenotification10-1)接口，弹窗让用户选择是否允许发送通知。当用户拒绝授权后，将无法通过该接口再次拉起弹窗。如果应用需要向用户再次申请通知授权，则可以使用[openNotificationSettings](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationmanager#notificationmanageropennotificationsettings13)接口拉起通知管理半模态弹窗。
 
 ## 接口说明

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "识别平面语义（ArkTS）"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-semantics/arengine-get-semantics
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/get-semantics/arengine-get-semantics
+last_sync: 2026-06-07
+sync_hash: 3901e71b
 ---
-
-
 ## 约束与限制
 
 从5.1.0(18)开始，识别平面语义能力支持部分Phone、部分Tablet设备。请参考[硬件要求](/docs/dev/app-dev/graphics/arengine-preparations#硬件要求)判断设备是否支持平面及物体语义特性（[ARENGINE\_FEATURE\_TYPE\_SEMANTIC](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#arfeaturetype)）。

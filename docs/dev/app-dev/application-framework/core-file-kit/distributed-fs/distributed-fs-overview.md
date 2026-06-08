@@ -2,9 +2,10 @@
 title: "分布式文件系统概述"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/distributed-fs/distributed-fs-overview
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/distributed-fs/distributed-fs-overview
+last_sync: 2026-06-07
+sync_hash: b25eac65
 ---
-
-
 分布式文件系统（hmdfs，HarmonyOS Distributed File System）提供跨设备的文件访问能力，适用于以下场景：
 
 * 两台设备组网，用户可以利用一台设备上的编辑软件编辑另外一台设备上的文档。

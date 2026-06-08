@@ -2,9 +2,10 @@
 format: md
 title: "Worker和TaskPool的线程数量是否有限制"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-28
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-28
+last_sync: 2026-06-07
+sync_hash: ce5793df
 ---
-
-
 TaskPool会动态调整线程数量，不支持手动设置。只需将任务添加到线程池，确保高优先级任务及时执行。
 
 Worker的线程个数最多为64个。如果超出此限制，创建将失败。

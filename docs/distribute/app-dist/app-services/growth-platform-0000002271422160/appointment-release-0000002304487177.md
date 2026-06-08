@@ -3,9 +3,10 @@ title: "预约发布"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-services/growth-platform-0000002271422160/appointment-release-0000002304487177
 format: md
+upstream_id: distribute/app-dist/app-services/growth-platform-0000002271422160/appointment-release-0000002304487177
+last_sync: 2026-06-07
+sync_hash: 702b3803
 ---
-
-
 # 预约发布
 
 ## 概述

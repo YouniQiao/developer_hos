@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通行密钥身份认证（ArkTS）"
 original_url: /docs/dev/app-dev/system/system-security/online-authentication-kit-guide/onlineauthentication-passkey/onlineauthentication-passkey-arkts
 format: md
+upstream_id: dev/app-dev/system/system-security/online-authentication-kit-guide/onlineauthentication-passkey/onlineauthentication-passkey-arkts
+last_sync: 2026-06-07
+sync_hash: 51acabbd
 ---
-
-
 ## 接口说明
 
 通行密钥服务主要接口如下表。

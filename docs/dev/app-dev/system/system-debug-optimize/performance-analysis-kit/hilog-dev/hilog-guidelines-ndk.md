@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用HiLog打印日志（C/C++）"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hilog-dev/hilog-guidelines-ndk
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hilog-dev/hilog-guidelines-ndk
+last_sync: 2026-06-07
+sync_hash: 7dabddff
 ---
-
-
 在应用开发过程中，可在关键代码处输出日志信息。在运行应用后，通过查看日志信息来分析应用执行情况（如应用是否正常运行、代码运行时序、运行逻辑分支是否正常等）。
 
 HiLog日志系统，提供给系统框架、服务、以及应用，用于打印日志，记录用户操作、系统运行状态等。

@@ -2,9 +2,10 @@
 title: "FilePartInfo"
 original_url: /docs/distribute/agc/agc-help-upload-api-data-0000002272457913/agc-help-upload-api-data-filepartinfo-0000002237498540
 format: md
+upstream_id: distribute/agc/agc-help-upload-api-data-0000002272457913/agc-help-upload-api-data-filepartinfo-0000002237498540
+last_sync: 2026-06-07
+sync_hash: 5324eed3
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | sha256 | O | String(64) | 分片文件的sha256值。 |

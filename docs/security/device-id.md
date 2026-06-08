@@ -2,9 +2,10 @@
 title: "设备标识使用推荐"
 original_url: /docs/security/device-id
 format: md
+upstream_id: /docs/security/device-id
+last_sync: 2026-06-07
+sync_hash: 3dac8250
 ---
-
-
 # 设备标识使用推荐
 
 ## 概述

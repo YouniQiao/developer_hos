@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "事件交互"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-interaction/map-listening
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-interaction/map-listening
+last_sync: 2026-06-07
+sync_hash: ba4e42d8
 ---
-
-
 本章节包含地图的点击和长按、相机移动（华为地图的移动是通过模拟相机移动的方式实现的）、以及“我的位置”按钮点击等事件监听。
 
 ## 接口说明

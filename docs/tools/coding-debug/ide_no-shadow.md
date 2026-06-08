@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-shadow"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-shadow
 format: md
+upstream_id: tools/coding-debug/ide_no-shadow
+last_sync: 2026-06-07
+sync_hash: af81ad1b
 ---
-
-
 # @typescript-eslint/no-shadow
 
 禁止声明与外部作用域变量同名的变量。

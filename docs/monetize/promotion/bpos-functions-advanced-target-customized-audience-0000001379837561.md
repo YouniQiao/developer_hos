@@ -3,8 +3,10 @@ title: "一方数据人群"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-functions-advanced-target-customized-audience-0000001379837561
 format: md
+upstream_id: monetize/promotion/bpos-functions-advanced-target-customized-audience-0000001379837561
+last_sync: 2026-06-07
+sync_hash: 5e992c9c
 ---
-
 # 一方数据人群
 
 ## 概述
@@ -47,7 +49,7 @@ format: md
    - 用户行为组：
      - ![](./img/f32eb7bf5b31.png "点击放大")交集：如果您增加了多个行为，系统将同时匹配所有行为中重合的数据。
      - ![](./img/ae0155b5155b.png "点击放大")并集：如果您增加了多个行为，系统将会任意匹配其中一个行为。
-     - 用户行为：目前支持16种用户行为，如果您想了解每个行为的含义，您可以参考[自定义列指标](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/tracking-shu-0000001139892541#ZH-CN_TOPIC_0000001139892541__table10838115914391)。
+     - 用户行为：目前支持16种用户行为，如果您想了解每个行为的含义，您可以参考[自定义列指标](/docs/monetize/promotion/tracking-shu-0000001139892541#ZH-CN_TOPIC_0000001139892541__table10838115914391)。
    - 设置时间范围：
      - 按起止日期：支持选择过去3个月的时间范围。
      - 按过去一段时间：您可以自己设置过去的时间范围，最多输入90天。
@@ -68,7 +70,7 @@ format: md
       - Partner name：选择“Huawei”
       - Connection name：填写名称。
       - Log in with HUAWEI：点击“Log in with HUAWEI”，登录您的广告账户。
-      - Set user identifiers：设置[用户标识符](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/glossary-0000001064019898)，通过用户标识符将人群同步给鲸鸿动能广告，只有符合您的用户标识符的数据才会成功同步。您需要选择OAID。
+      - Set user identifiers：设置[用户标识符](/docs/monetize/promotion/glossary-0000001064019898)，通过用户标识符将人群同步给鲸鸿动能广告，只有符合您的用户标识符的数据才会成功同步。您需要选择OAID。
    2. 点击“Audiences”，点击“New Audience”，新建受众人群。
 
       ![](./img/b05873001604.png "点击放大")

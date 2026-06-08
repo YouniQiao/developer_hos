@@ -2,9 +2,10 @@
 format: md
 title: "如何管理JSVM_CallbackStruct生命周期"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-jsvm/faqs-jsvm-1
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-jsvm/faqs-jsvm-1
+last_sync: 2026-06-07
+sync_hash: a7c75ba6
 ---
-
-
 **问题现象**
 
 1. 使用 OH\_JSVM\_CreateFunction 创建的 JavaScript 函数在调用时导致应用崩溃。

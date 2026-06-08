@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "FAST Kit（算法加速服务）"
 original_url: /docs/dev/app-dev/system/system-basicfun/fast-kit-guide
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/fast-kit-guide
+last_sync: 2026-06-07
+sync_hash: 0bcaa413
 ---
-
-
 * **[FAST Kit简介](/docs/dev/app-dev/system/system-basicfun/fast-kit-guide/fast-introduction)**
 * **[使用SegmentMap查询维护区间信息](/docs/dev/app-dev/system/system-basicfun/fast-kit-guide/fast-segment-map)**
 * **[使用RectPartition求解矩形划分](/docs/dev/app-dev/system/system-basicfun/fast-kit-guide/fast-rect-partition)**

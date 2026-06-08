@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "深度估计介绍"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-depth/arengine-get-depth-conversion
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/get-depth/arengine-get-depth-conversion
+last_sync: 2026-06-07
+sync_hash: 3cda3ce0
 ---
-
-
 AR Engine支持持续输出周围环境相对终端设备的深度信息，利用这些深度信息，可以实现更加自然、无缝的虚实体验。
 
 本功能提供的深度信息是指从终端设备摄像头到显示场景中各点的深度值，每个像素点都有深度值、置信度信息，开发者可自行根据应用需求根据置信度选择更稠密或者更精确的深度信息。

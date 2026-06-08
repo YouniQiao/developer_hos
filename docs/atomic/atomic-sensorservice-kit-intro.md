@@ -2,9 +2,10 @@
 title: "Sensor Service Kit简介"
 original_url: /docs/dev/atomic-dev/atomic-device-management/atomic-sensorservice-kit-intro
 format: md
+upstream_id: dev/atomic-dev/atomic-device-management/atomic-sensorservice-kit-intro
+last_sync: 2026-06-07
+sync_hash: 5c56c3e8
 ---
-
-
 ## 使用场景
 
 Sensor Service Kit（传感器服务）使应用程序能够从传感器获取原始数据，并提供振感控制能力。

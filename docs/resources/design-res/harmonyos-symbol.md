@@ -2,9 +2,9 @@
 title: HarmonyOS Symbol
 sidebar_label: HarmonyOS Symbol
 format: md
+upstream_id: _local
+last_sync: 2026-06-08
 ---
-
-
 # HarmonyOS Symbol
 
 HarmonyOS Symbol 是华为官方提供的**主题图标库**，为 HarmonyOS 应用开发者提供海量高质量的图标素材，所有图标均可免费下载使用。

@@ -2,9 +2,10 @@
 title: "其他"
 original_url: /docs/experience-suggestions/security-privacy/pure/standard-pure-others
 format: md
+upstream_id: experience-suggestions/security-privacy/pure/standard-pure-others
+last_sync: 2026-06-07
+sync_hash: c0d61dd3
 ---
-
-
 # 其他
 
 |  |  |

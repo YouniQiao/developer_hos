@@ -2,8 +2,11 @@
 format: md
 title: "能否通过httpResponse的result拿到一个加密内容的数据"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-43
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-43
+last_sync: 2026-06-07
+sync_hash: 33d99d01
+upstream_hash: 19c566be861d
 ---
-
 
 使用HTTP请求传递加密数据，可以在result中获取到结果。
 

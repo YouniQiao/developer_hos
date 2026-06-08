@@ -2,9 +2,10 @@
 title: "账号"
 original_url: /docs/dev/game-dev/games-quickgame-faq-account-0000002425293754
 format: md
+upstream_id: dev/game-dev/games-quickgame-faq-account-0000002425293754
+last_sync: 2026-06-07
+sync_hash: b308e6db
 ---
-
-
 ## 调用登录接口
 
 ### 调用登录接口时，出现“auth fail -1”的错误，如何处理？

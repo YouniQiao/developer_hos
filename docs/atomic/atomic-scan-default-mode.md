@@ -2,9 +2,10 @@
 title: "默认界面扫码"
 original_url: /docs/dev/atomic-dev/atomic-code-scan-development/atomic-scan-default-mode
 format: md
+upstream_id: dev/atomic-dev/atomic-code-scan-development/atomic-scan-default-mode
+last_sync: 2026-06-07
+sync_hash: b3edff66
 ---
-
-
 ## 基本概念
 
 默认界面扫码能力提供系统级体验一致的扫码界面，包含相机预览流，相册扫码入口，暗光环境闪光灯开启提示。Scan Kit默认界面扫码对系统相机权限进行了预授权且调用期间处于安全访问状态，无需开发者再次申请相机权限。适用于不同扫码场景的元服务开发。

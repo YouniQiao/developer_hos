@@ -3,9 +3,10 @@ title: "@performance/hp-performance-no-closures"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-performance-no-closures
 format: md
+upstream_id: tools/coding-debug/ide_hp-performance-no-closures
+last_sync: 2026-06-07
+sync_hash: 53e0557d
 ---
-
-
 # @performance/hp-performance-no-closures
 
 建议函数内部变量尽量使用参数传递。

@@ -3,9 +3,10 @@ title: "@typescript-eslint/keyword-spacing"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_keyword-spacing
 format: md
+upstream_id: tools/coding-debug/ide_keyword-spacing
+last_sync: 2026-06-07
+sync_hash: 132b8b2f
 ---
-
-
 # @typescript-eslint/keyword-spacing
 
 强制在关键字之前和关键字之后保持一致的空格风格。

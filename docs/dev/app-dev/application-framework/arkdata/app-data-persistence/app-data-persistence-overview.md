@@ -2,9 +2,10 @@
 title: "应用数据持久化概述"
 original_url: /docs/dev/app-dev/application-framework/arkdata/app-data-persistence/app-data-persistence-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/app-data-persistence/app-data-persistence-overview
+last_sync: 2026-06-07
+sync_hash: f982abec
 ---
-
-
 应用数据持久化是指应用将内存中的数据通过文件或数据库的形式保存到设备上。内存中的数据形态通常是任意的数据结构或数据对象，存储介质上的数据形态可能是文本、数据库、二进制文件等。
 
 HarmonyOS标准系统支持典型的存储数据形态，包括用户首选项、键值型数据库和关系型数据库。

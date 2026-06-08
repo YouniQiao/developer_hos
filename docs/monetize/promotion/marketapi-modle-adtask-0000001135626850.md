@@ -3,8 +3,10 @@ title: "AdTask"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-adtask-0000001135626850
 format: md
+upstream_id: monetize/promotion/marketapi-modle-adtask-0000001135626850
+last_sync: 2026-06-07
+sync_hash: b250f2bf
 ---
-
 # AdTask
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |

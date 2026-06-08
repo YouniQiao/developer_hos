@@ -2,9 +2,10 @@
 title: "canBeObserved接口：判断对象是否可被观察"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-canbeobserved
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-canbeobserved
+last_sync: 2026-06-07
+sync_hash: f373821a
 ---
-
-
 为了判断对象是否为可被观察对象和获取对象关联的组件信息，开发者可以使用[canBeObserved](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#canbeobserved23)。
 
 在使用该接口前，建议开发者对状态管理框架有基本的了解。提前阅读：[状态管理概述](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-overview)。

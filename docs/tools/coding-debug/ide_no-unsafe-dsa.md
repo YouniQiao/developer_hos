@@ -3,9 +3,10 @@ title: "@security/no-unsafe-dsa"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unsafe-dsa
 format: md
+upstream_id: tools/coding-debug/ide_no-unsafe-dsa
+last_sync: 2026-06-07
+sync_hash: d0bcb628
 ---
-
-
 # @security/no-unsafe-dsa
 
 该规则禁止使用不安全的DSA签名算法，如DSA模数长度小于2048bit、摘要中使用不安全的SHA1哈希算法。

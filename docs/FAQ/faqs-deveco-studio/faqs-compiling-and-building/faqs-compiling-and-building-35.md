@@ -2,9 +2,10 @@
 format: md
 title: "更新Hvigor版本时，配置了依赖却在build init时报未找到此依赖"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-35
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-35
+last_sync: 2026-06-07
+sync_hash: 9e2dcd42
 ---
-
-
 **问题现象**
 
 ![](./img/9d663a8f.png)

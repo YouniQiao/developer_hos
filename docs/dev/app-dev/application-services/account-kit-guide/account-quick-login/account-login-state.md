@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "订阅华为账号的登录/登出事件"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-login-state
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-quick-login/account-login-state
+last_sync: 2026-06-07
+sync_hash: 4a755a5d
 ---
-
-
 ## 场景介绍
 
 应用在前台时可以订阅Account Kit提供的华为账号登录/登出广播事件，来感知华为账号的登录状态，实现用户登录/登出应用的逻辑。应用也可通过[getHuaweiIDState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#gethuaweiidstate)实时查询华为账号登录状态。

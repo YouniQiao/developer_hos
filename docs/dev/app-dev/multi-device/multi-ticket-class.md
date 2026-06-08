@@ -3,8 +3,10 @@ title: "多设备股票类界面"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/multi-ticket-class
 format: md
+upstream_id: dev/app-dev/multi-device/multi-ticket-class
+last_sync: 2026-06-07
+sync_hash: 3ee4f433
 ---
-
 # 多设备股票类界面
 
 ## 概述

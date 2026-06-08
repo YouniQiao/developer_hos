@@ -2,9 +2,10 @@
 title: "Enterprise Data Guard Kit权限获取失败"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-faq/dataguard-faq-1
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-faq/dataguard-faq-1
+last_sync: 2026-06-07
+sync_hash: 75645860
 ---
-
-
 **问题现象**
 
 DevEco Studio编译不通过，报错：install failed due to grant request permissions failed。

@@ -3,9 +3,10 @@ title: "代码智能解读"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-explain-code
 format: md
+upstream_id: tools/ai-assist/ide-explain-code
+last_sync: 2026-06-07
+sync_hash: 7c468743
 ---
-
-
 # 代码智能解读
 
 CodeGenie提供智能AI能力对框选的代码片段进行逐条解释，总结代码段含义，帮助开发者提升阅读代码的速度和效率。

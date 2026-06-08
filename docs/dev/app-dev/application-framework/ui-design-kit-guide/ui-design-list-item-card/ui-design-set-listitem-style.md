@@ -2,9 +2,10 @@
 title: "设置列表卡片样式"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-list-item-card/ui-design-set-listitem-style
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-list-item-card/ui-design-set-listitem-style
+last_sync: 2026-06-07
+sync_hash: 78fb872f
 ---
-
-
 ## 场景介绍
 
 从6.0.0(20)版本开始，新增支持设置列表卡片样式。

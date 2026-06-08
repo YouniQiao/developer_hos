@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "分享详情页处理分享内容"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-target-application/share-sec-panel
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/system-share/share-target-application/share-sec-panel
+last_sync: 2026-06-07
+sync_hash: 305b369f
 ---
-
-
 分享详情页能力基于[UIExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiextensionability)界面嵌入能力。目标应用可以通过[ShareExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-shareextensionability)构建接收分享内容的分享详情页，并将应用显示到分享面板应用推荐区内，通过分享详情页便捷的处理分享内容。开发时需要接入方实现[ShareExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-shareextensionability)并于module.json5中注册支持分享内容的能力。
 
 通过此方式注册的应用，点击时将跳转到分享详情页，也可返回分享面板。参见：[分享详情页面](/docs/design/system-features/capabilities/share#section27599419404)。

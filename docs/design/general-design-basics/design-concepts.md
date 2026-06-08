@@ -3,8 +3,10 @@ title: 设计理念
 sidebar_label: 设计理念
 original_url: /docs/design/general-design-basics/design-concepts
 format: md
+upstream_id: design/general-design-basics/design-concepts
+last_sync: 2026-06-07
+sync_hash: e0ecb1d6
 ---
-
 # 设计理念
 
 在万物互联的时代，我们每天都会接触到很多不同形态的设备，每种设备在特定的场景下能够为我们解决一些特定的问题，表面看起来我们能够做到的事情更多了，但每种设备在使用时都是孤立的，提供的服务也都局限于特定的设备，我们的生活并没有变得更好更便捷，反而变得非常复杂。HarmonyOS 的诞生旨在解决这些问题，在纷繁复杂的世界中回归本源，建立平衡，连接万物。

@@ -2,9 +2,10 @@
 title: "采集profile数据"
 original_url: /docs/dev/game-dev/games-binary-optimization-profile-0000002377028345
 format: md
+upstream_id: dev/game-dev/games-binary-optimization-profile-0000002377028345
+last_sync: 2026-06-07
+sync_hash: d15f6970
 ---
-
-
 ## 前提条件
 
 * 已[配置hdc工具](/docs/dev/game-dev/games-binary-optimization-tool-config-0000002343110256)。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "附录"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/arengine-appendix
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/arengine-appendix
+last_sync: 2026-06-07
+sync_hash: f0938557
 ---
-
-
 ## AR Engine深度估计功能技术局限性及免责声明
 
 1. 技术局限性声明：本功能提供的能力，涉及深度估计精度可能受以下因素影响：

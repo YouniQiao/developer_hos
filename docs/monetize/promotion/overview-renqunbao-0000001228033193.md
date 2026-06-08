@@ -3,8 +3,10 @@ title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/overview-renqunbao-0000001228033193
 format: md
+upstream_id: monetize/promotion/overview-renqunbao-0000001228033193
+last_sync: 2026-06-07
+sync_hash: beb5da25
 ---
-
 # 概述
 
 ## 概述

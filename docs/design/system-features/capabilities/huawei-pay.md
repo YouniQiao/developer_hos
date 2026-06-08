@@ -3,8 +3,10 @@ title: 华为支付
 sidebar_label: 华为支付
 original_url: /docs/design/system-features/capabilities/huawei-pay
 format: md
+upstream_id: design/system-features/capabilities/huawei-pay
+last_sync: 2026-06-07
+sync_hash: 3f44298a
 ---
-
 # 华为支付
 
 华为支付是一种方便、安全和快捷的支付方式。

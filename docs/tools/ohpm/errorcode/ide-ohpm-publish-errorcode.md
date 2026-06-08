@@ -3,9 +3,10 @@ title: "ohpm publish错误码"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/errorcode/ide-ohpm-publish-errorcode
 format: md
+upstream_id: tools/ohpm/errorcode/ide-ohpm-publish-errorcode
+last_sync: 2026-06-07
+sync_hash: 47a73978
 ---
-
-
 # ohpm publish错误码
 
 ## 00609001 依赖声明缺失

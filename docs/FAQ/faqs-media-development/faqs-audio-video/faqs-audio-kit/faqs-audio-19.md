@@ -2,9 +2,10 @@
 title: "如何拦截系统音量调节的上下键"
 original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-19
 format: md
+upstream_id: FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-19
+last_sync: 2026-06-07
+sync_hash: 9fbe6f6d
 ---
-
-
 **问题现象**
 
 在特定业务场景中，开发者需要拦截设备音量调节键的事件上报，以完成业务特定功能，比如阅读场景中，通过按音量上下键实现翻页的功能。

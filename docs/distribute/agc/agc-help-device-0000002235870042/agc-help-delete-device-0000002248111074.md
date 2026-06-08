@@ -2,9 +2,10 @@
 title: "删除设备"
 original_url: /docs/distribute/agc/agc-help-device-0000002235870042/agc-help-delete-device-0000002248111074
 format: md
+upstream_id: distribute/agc/agc-help-device-0000002235870042/agc-help-delete-device-0000002248111074
+last_sync: 2026-06-07
+sync_hash: 3742c330
 ---
-
-
 当后续不再使用某个已注册的设备时，您可以将该设备从列表中删除。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“证书、APP ID和Profile”。

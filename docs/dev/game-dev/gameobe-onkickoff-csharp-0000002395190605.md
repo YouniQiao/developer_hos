@@ -2,9 +2,10 @@
 title: "多端登录导致下线"
 original_url: /docs/dev/game-dev/gameobe-onkickoff-csharp-0000002395190605
 format: md
+upstream_id: dev/game-dev/gameobe-onkickoff-csharp-0000002395190605
+last_sync: 2026-06-07
+sync_hash: d486dacf
 ---
-
-
 使用同一个玩家账号在不同终端设备上登录时，新登录的设备会将之前登录的旧设备已登录的账号踢下线，旧设备上登录的玩家将会收到离线通知。如需使用当前玩家账号继续在旧设备上游戏，则需要重新登录。
 
 ## 前提条件

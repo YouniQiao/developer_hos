@@ -2,9 +2,10 @@
 title: "元服务命名规范"
 original_url: /docs/dev/atomic-dev/atomic-service-specifications/atomic-service-naming-conversion
 format: md
+upstream_id: dev/atomic-dev/atomic-service-specifications/atomic-service-naming-conversion
+last_sync: 2026-06-07
+sync_hash: 99312c7d
 ---
-
-
 元服务名称作为用户使用元服务的第一印象，在命名上需要体现其业务特性，让用户得以迅速辨识。为规范元服务名称的命名与使用，向用户提供更好的搜索与浏览体验，特别制定本命名规范指导，帮助开发者更好地经营元服务。
 
 ## 命名规范

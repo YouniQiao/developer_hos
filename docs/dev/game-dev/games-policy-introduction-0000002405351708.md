@@ -2,9 +2,10 @@
 title: "激励与扶持政策概述"
 original_url: /docs/dev/game-dev/games-policy-introduction-0000002405351708
 format: md
+upstream_id: dev/game-dev/games-policy-introduction-0000002405351708
+last_sync: 2026-06-07
+sync_hash: 54a5475d
 ---
-
-
 ![](./img/2f32bd52.png)
 
 为便利您查看相关激励政策内容，本页面信息根据现有激励政策汇总，详情以该激励政策正式发布的官网公示信息为准；激励政策存在时效性，请您注意及时前往相关页面查看。

@@ -2,8 +2,11 @@
 title: "概述"
 original_url: /docs/dev/app-dev/ai/intents-habit-rec-introduction
 format: md
+upstream_id: dev/app-dev/ai/intents-habit-rec-introduction
+last_sync: 2026-06-07
+sync_hash: d08985b2
+upstream_hash: 7d26b0022887
 ---
-
 
 习惯推荐是HarmonyOS学习用户的行为习惯后做出的主动预测推荐。
 

@@ -2,9 +2,10 @@
 title: "组织管理"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-organization
+upstream_id: tools/ohpm/repo/ide-ohpm-organization
+last_sync: 2026-06-07
+sync_hash: d40673a1
 ---
-
-
 # 组织管理
 
 在ohpm中包的命名格式为@`<group>`/`<package\_name>`或者`<package\_name>`。

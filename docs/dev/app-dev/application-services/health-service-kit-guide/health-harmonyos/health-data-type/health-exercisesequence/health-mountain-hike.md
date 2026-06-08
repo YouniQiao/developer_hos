@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "登山"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-mountain-hike
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-mountain-hike
+last_sync: 2026-06-07
+sync_hash: 3deb2a66
 ---
-
-
 登山相关锻炼记录类型如下：
 
 | **锻炼记录子类型常量** | **描述** | 数据来源 |

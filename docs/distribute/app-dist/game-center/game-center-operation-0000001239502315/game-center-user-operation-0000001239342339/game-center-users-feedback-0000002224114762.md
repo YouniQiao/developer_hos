@@ -3,9 +3,10 @@ title: "用户反馈管理"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-users-feedback-0000002224114762
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-users-feedback-0000002224114762
+last_sync: 2026-06-07
+sync_hash: 6f30caee
 ---
-
-
 # 用户反馈管理
 
 开发移动应用需经历一系列阶段，包括：创意、设计、开发、发布、反馈收集、修改、重新设计等等，目的是确保以最低的成本成功开发应用。用户反馈是产品生命周期中不可或缺的一部分，通过用户反馈，了解用户真实需求，并为之改进是决定产品演进的基础。快速及时地答复用户的反馈则有利于培养用户对产品的好感度，提升用户体验。

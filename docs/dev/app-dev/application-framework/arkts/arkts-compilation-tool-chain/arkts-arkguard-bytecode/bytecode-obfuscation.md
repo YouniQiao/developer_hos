@@ -2,9 +2,10 @@
 title: "ArkGuard字节码混淆原理及功能"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation
+last_sync: 2026-06-07
+sync_hash: bf853c24
 ---
-
-
 ## 术语清单
 
 | 名词 | 释义 |

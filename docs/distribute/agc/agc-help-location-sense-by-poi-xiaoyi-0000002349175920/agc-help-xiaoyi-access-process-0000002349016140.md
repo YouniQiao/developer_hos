@@ -2,9 +2,10 @@
 title: "接入流程"
 original_url: /docs/distribute/agc/agc-help-location-sense-by-poi-xiaoyi-0000002349175920/agc-help-xiaoyi-access-process-0000002349016140
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-by-poi-xiaoyi-0000002349175920/agc-help-xiaoyi-access-process-0000002349016140
+last_sync: 2026-06-07
+sync_hash: b0e2d0c6
 ---
-
-
 基于您创建近场服务时选择的服务开放范围，近场服务形态分为测试态和全网态两种。测试态服务用于服务正式上线前的调测，服务申请提交后不需要人工审核直接上线。调测完成后，您即可创建全网态服务并提交服务上线申请，华为运营人员审核通过后，服务将正式上线。
 
 #### 接入流程

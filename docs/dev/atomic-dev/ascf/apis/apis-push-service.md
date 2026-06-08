@@ -2,8 +2,11 @@
 title: "推送服务"
 original_url: /docs/dev/atomic-dev/ascf/apis/apis-push-service
 format: md
+upstream_id: dev/atomic-dev/ascf/apis/apis-push-service
+last_sync: 2026-06-07
+sync_hash: d9aa4316
+upstream_hash: 1f7ec4bb0815
 ---
-
 
 ## has.getAAID
 

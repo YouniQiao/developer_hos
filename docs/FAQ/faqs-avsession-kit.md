@@ -2,9 +2,10 @@
 format: md
 title: "音视频播控（AVSession）"
 original_url: /docs/FAQ/faqs-avsession-kit
+upstream_id: FAQ/faqs-avsession-kit
+last_sync: 2026-06-07
+sync_hash: 96d7330a
 ---
-
-
 * **[如何响应播控中心的播放模式切换](/docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avsession-kit/faqs-avsession-1)**
 * **[应用如何更新进度条](/docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avsession-kit/faqs-avsession-2)**
 * **[为什么接入播控后，播控中心部分按钮是灰色的，不可点击](/docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avsession-kit/faqs-avsession-3)**

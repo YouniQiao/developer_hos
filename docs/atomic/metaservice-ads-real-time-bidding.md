@@ -2,9 +2,10 @@
 title: "实时竞价"
 original_url: /docs/dev/atomic-dev/atomic-ads-publisher-service-dev/metaservice-ads-real-time-bidding
 format: md
+upstream_id: dev/atomic-dev/atomic-ads-publisher-service-dev/metaservice-ads-real-time-bidding
+last_sync: 2026-06-07
+sync_hash: 7ed94eaa
 ---
-
-
 ## 场景介绍
 
 实时竞价是指用户在访问媒体产生曝光机会时，众多家DSP（Demand Side Platform，需求方平台）根据曝光的上下文以及用户属性实时地评估曝光价值并给出报价，出价最高的DSP胜出，赢得此次曝光机会。

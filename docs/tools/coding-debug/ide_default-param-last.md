@@ -3,9 +3,10 @@ title: "@typescript-eslint/default-param-last"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_default-param-last
 format: md
+upstream_id: tools/coding-debug/ide_default-param-last
+last_sync: 2026-06-07
+sync_hash: f6d35dca
 ---
-
-
 # @typescript-eslint/default-param-last
 
 强制默认参数位于参数列表的最后一个。

@@ -3,8 +3,10 @@ title: "账号管理"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-zhanghaoguanli-0000001900947773
 format: md
+upstream_id: monetize/promotion/ads-zhanghaoguanli-0000001900947773
+last_sync: 2026-06-07
+sync_hash: 4a109e44
 ---
-
 # 账号管理
 
 ## 一级服务商账户

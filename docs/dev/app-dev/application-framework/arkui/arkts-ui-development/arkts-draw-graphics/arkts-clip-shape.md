@@ -2,9 +2,10 @@
 title: "形状裁剪（clipShape）"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-draw-graphics/arkts-clip-shape
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-draw-graphics/arkts-clip-shape
+last_sync: 2026-06-07
+sync_hash: 97ff276e
 ---
-
-
 可利用[clipShape](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sharp-clipping#clipshape12)接口将组件裁剪为所需的形状。调用该接口后，可以保留该形状覆盖的组件部分，同时移除组件的其余部分。裁剪形状本身是不可见的。
 
 ![](./img/c46d39c6.png)

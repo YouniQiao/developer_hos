@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-unnecessary-type-arguments"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unnecessary-type-arguments
 format: md
+upstream_id: tools/coding-debug/ide_no-unnecessary-type-arguments
+last_sync: 2026-06-07
+sync_hash: 5f9e3bc6
 ---
-
-
 # @typescript-eslint/no-unnecessary-type-arguments
 
 当类型参数和默认值相同时，不允许显式使用。

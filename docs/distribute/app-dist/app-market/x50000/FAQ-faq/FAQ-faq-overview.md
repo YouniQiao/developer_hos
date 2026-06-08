@@ -3,8 +3,10 @@ title: "概述"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-overview
 format: md
+upstream_id: distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-overview
+last_sync: 2026-06-07
+sync_hash: df588e17
 ---
-
 # 概述
 
 为帮助开发者更好地履行保护用户个人信息的责任与义务，落实《中华人民共和国网络安全法》、《中华人民共和国个人信息保护法》、《移动互联网应用程序信息服务管理规定》、《App违法违规收集使用个人信息行为认定方法》、《关于开展APP侵害用户权益专项整治工作的通知》、《关于开展纵深推进APP侵害用户权益专项整治行动的通知》、《信息安全技术 个人信息安全规范》、《APP用户权益保护评测规范》、《常见类型移动互联网应用程序必要个人信息范围规定》等法规政策要求，华为应用市场整理出以下常见的APP个人信息保护合规问题及修改指引，携手开发者全力开展APP个人信息保护工作，共同促进移动互联网的良性发展，为用户提供更安全、更优质的服务。

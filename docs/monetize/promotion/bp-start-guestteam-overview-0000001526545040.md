@@ -3,8 +3,10 @@ title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-start-guestteam-overview-0000001526545040
 format: md
+upstream_id: monetize/promotion/bp-start-guestteam-overview-0000001526545040
+last_sync: 2026-06-07
+sync_hash: d0d7e5ea
 ---
-
 # 概述
 
 ## 直客团队体系特点

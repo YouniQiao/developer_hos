@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "配置Client ID"
 original_url: /docs/dev/app-dev/application-services/account-client-id
 format: md
+upstream_id: dev/app-dev/application-services/account-client-id
+last_sync: 2026-06-07
+sync_hash: a5e1d8f4
 ---
-
-
 ## 获取Client ID和APP ID
 
 在 AppGallery Connect（简称AGC）的[开发与服务](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myProject)中，选择对应的项目和对应的应用，在“常规 > 应用 ”下，找到**应用**的Client ID和APP ID。

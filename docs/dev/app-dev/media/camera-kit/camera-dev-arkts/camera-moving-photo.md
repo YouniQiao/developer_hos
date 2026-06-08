@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "动态照片拍摄(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-moving-photo
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-moving-photo
+last_sync: 2026-06-07
+sync_hash: 6ea39f41
 ---
-
-
 相机框架提供动态照片拍摄能力，业务应用可以类似拍摄普通照片一样，一键式拍摄得到动态照片。
 
 应用开发动态照片主要分为以下步骤：

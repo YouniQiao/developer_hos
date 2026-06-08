@@ -3,8 +3,10 @@ title: 分段按钮
 sidebar_label: 分段按钮
 original_url: /docs/design/components/selection-components/segment-button
 format: md
+upstream_id: design/components/selection-components/segment-button
+last_sync: 2026-06-07
+sync_hash: b6f5aade
 ---
-
 # 分段按钮
 
 分段按钮用于对内容进行组别分类。也可以在多个选项中激活一个或多个按钮的控件。开发相关描述请参考 [SegmentButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-segmentbutton) 文档。

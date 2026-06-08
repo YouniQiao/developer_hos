@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "文本转语音"
 original_url: /docs/dev/app-dev/ai/core-speech-kit-guide/texttospeech-guide
 format: md
+upstream_id: dev/app-dev/ai/core-speech-kit-guide/texttospeech-guide
+last_sync: 2026-06-07
+sync_hash: 89caf305
 ---
-
-
 Core Speech Kit支持将一篇不超过10000字符数的中英文文本（简体中文、繁体中文、数字、英文）合成为语音，并以选定音色进行播报。
 
 开发者可对播报的策略进行设置，包括单词播报、数字播报、静音停顿、汉字发音策略。

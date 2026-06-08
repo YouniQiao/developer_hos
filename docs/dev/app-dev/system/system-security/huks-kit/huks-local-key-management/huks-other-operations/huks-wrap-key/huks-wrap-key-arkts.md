@@ -2,9 +2,10 @@
 title: "加密导出导入密钥(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-wrap-key/huks-wrap-key-arkts
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-wrap-key/huks-wrap-key-arkts
+last_sync: 2026-06-07
+sync_hash: 58e8b1f0
 ---
-
-
 从API 20开始，支持加密导出导入密钥。
 
 当前指导提供以下加密导出导入密钥示例：

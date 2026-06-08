@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用PixelMap完成位图操作"
 original_url: /docs/dev/app-dev/media/image-kit/image-arkts-dev/image-editing-arkts/image-pixelmap-operation
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-arkts-dev/image-editing-arkts/image-pixelmap-operation
+last_sync: 2026-06-07
+sync_hash: c449d2f0
 ---
-
-
 当需要对目标图片中的部分区域进行处理时，可以使用位图操作功能。此功能常用于图片美化等操作。
 
 如下图所示，一张图片中，将指定的矩形区域像素数据读取出来，进行修改后，再写回原图片对应区域。

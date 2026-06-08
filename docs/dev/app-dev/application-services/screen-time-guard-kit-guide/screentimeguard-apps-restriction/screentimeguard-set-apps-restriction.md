@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "设置应用访问限制"
 original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-apps-restriction/screentimeguard-set-apps-restriction
 format: md
+upstream_id: dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-apps-restriction/screentimeguard-set-apps-restriction
+last_sync: 2026-06-07
+sync_hash: 24e5ef50
 ---
-
-
 ## 场景介绍
 
 当用户希望限制用户访问某些特定应用时，可以调用限制应用访问的接口。根据参数中传入的token以及限制类型（允许/禁用），可以限制用户对禁用名单中应用的访问，或只允许用户访问允许清单中的应用。

@@ -2,8 +2,11 @@
 title: "PDF预览如何隐藏PDF操作按钮栏"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-54
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-54
+last_sync: 2026-06-07
+sync_hash: c957b35a
+upstream_hash: 6530f58a064d
 ---
-
 
 **解决措施**
 

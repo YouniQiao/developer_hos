@@ -2,9 +2,10 @@
 format: md
 title: "编译过程内存过高"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-106
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-106
+last_sync: 2026-06-07
+sync_hash: 71745f63
 ---
-
-
 **问题现象**
 
 编译构建时，内存或CPU占用过高，导致DevEco Studio运行卡顿和延迟。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用MovingPhotoView播放动态照片"
 original_url: /docs/dev/app-dev/media/medialibrary-kit/movingphoto/movingphotoview-guidelines
 format: md
+upstream_id: dev/app-dev/media/medialibrary-kit/movingphoto/movingphotoview-guidelines
+last_sync: 2026-06-07
+sync_hash: 43ab27e3
 ---
-
-
 系统提供了MovingPhotoView组件，在一些社交类、图库类应用中，可用于播放动态照片文件。
 
 ## 约束与限制

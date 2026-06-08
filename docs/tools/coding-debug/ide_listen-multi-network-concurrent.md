@@ -3,9 +3,10 @@ title: "@correctness/listen-multi-network-concurrent"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_listen-multi-network-concurrent
 format: md
+upstream_id: tools/coding-debug/ide_listen-multi-network-concurrent
+last_sync: 2026-06-07
+sync_hash: 59024384
 ---
-
-
 # @correctness/listen-multi-network-concurrent
 
 建议应用订阅连接迁移通知，可在WiFi/蜂窝连接切换前后获取切换状态通知。

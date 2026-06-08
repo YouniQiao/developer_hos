@@ -3,8 +3,10 @@ title: "企业信用卡后付费"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-start-guest-recharge-credit-card-0000001379557357
 format: md
+upstream_id: monetize/promotion/bpos-start-guest-recharge-credit-card-0000001379557357
+last_sync: 2026-06-07
+sync_hash: 87933950
 ---
-
 # 企业信用卡后付费
 
 ## 概述

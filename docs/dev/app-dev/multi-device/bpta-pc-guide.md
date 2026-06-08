@@ -3,8 +3,10 @@ title: "电脑应用开发"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-pc-guide
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-pc-guide
+last_sync: 2026-06-07
+sync_hash: 07e07b64
 ---
-
 # 电脑应用开发
 
 ## 概述
@@ -49,7 +51,7 @@ format: md
 
 ###相机硬件信息
 
-电脑的相机预设了默认的[相机镜头安装角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#相机镜头安装角度)。使用时，需考虑镜头角度与设备的旋转角度，具体定义可参考[预览旋转角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#预览旋转角度)。当屏幕方向一致时，前置镜头安装角度与需设置的预览流旋转角度如下。当前电脑（以MateBook Pro设备为例）的摄像头不支持旋转。
+电脑的相机预设了默认的[相机镜头安装角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#相机镜头安装角度)。使用时，需考虑镜头角度与设备的旋转角度，具体定义可参考[预览旋转角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#预览旋转角度)。当屏幕方向一致时，前置镜头安装角度与需设置的预览流旋转角度如下。当前电脑（以MateBook Pro设备为例）的摄像头不支持旋转。
 
 |  |  |  |  |  |
 | --- | --- | --- | --- | --- |
@@ -63,7 +65,7 @@ format: md
 
 ###性能优化
 
-电脑应用的性能优化，直接关系到用户体验、运行效率和硬件资源利用率。HarmonyOS为开发者提供[DevEco Profiler](/docs/quality/optimization-overview#section2012922312284)工具，可实现全维度性能监控（CPU/GPU/内存/帧率/能耗/网络等），并支持代码级问题定位分析，协助开发者快速发现并优化性能瓶颈。性能工具使用指导可参考[性能调优工具简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-description)，性能场景优化案例可参考[性能场景优化案例](/docs/quality/scenario-performance-optimization)。
+电脑应用的性能优化，直接关系到用户体验、运行效率和硬件资源利用率。HarmonyOS为开发者提供[DevEco Profiler](/docs/quality/optimization-overview#section2012922312284)工具，可实现全维度性能监控（CPU/GPU/内存/帧率/能耗/网络等），并支持代码级问题定位分析，协助开发者快速发现并优化性能瓶颈。性能工具使用指导可参考[性能调优工具简介](/docs/tools/coding-debug/ide-insight-description)，性能场景优化案例可参考[性能场景优化案例](/docs/quality/scenario-performance-optimization)。
 
 对于电脑中的关键线程，可以通过提升任务调度优先级，确保其获得充足的连续执行时长和资源，从而保障应用流畅运行，优化用户体验。详情可参考[高负载场景线程优先级设置](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-thread-priority-setting)。
 

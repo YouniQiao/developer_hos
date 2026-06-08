@@ -2,9 +2,10 @@
 title: "CommonUrlInfo"
 original_url: /docs/distribute/agc/agc-help-upload-api-data-0000002272457913/agc-help-upload-api-data-commonurlinfo-0000002272577809
 format: md
+upstream_id: distribute/agc/agc-help-upload-api-data-0000002272457913/agc-help-upload-api-data-commonurlinfo-0000002272577809
+last_sync: 2026-06-07
+sync_hash: 21c4b7a4
 ---
-
-
 | هڈ‚و•°هگچç§° | ه؟…é€‰(M)/هڈ¯é€‰(O) | ç±»ه‍‹ | هڈ‚و•°è¯´وکژ |
 | --- | --- | --- | --- |
 | objectId | M | String | و–‡ن»¶هœ¨و–‡ن»¶وœچهٹ،ه™¨ن¸­çڑ„ه¯¹è±،IDم€‚ |

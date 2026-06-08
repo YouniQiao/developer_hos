@@ -3,8 +3,10 @@ title: "全域推荐-RTA投放-CPD任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/mktapi-adtask-global-rat-cpd-0000001366366345
 format: md
+upstream_id: monetize/promotion/mktapi-adtask-global-rat-cpd-0000001366366345
+last_sync: 2026-06-07
+sync_hash: c347913b
 ---
-
 # 全域推荐-RTA投放-CPD任务
 
 ## 功能介绍

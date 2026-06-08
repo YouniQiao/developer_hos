@@ -2,9 +2,10 @@
 title: "查询和操作自定义节点"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-node-query-operate
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-node-query-operate
+last_sync: 2026-06-07
+sync_hash: c6f8fc58
 ---
-
-
 NDK提供一系列节点查询、遍历、操作能力，通过使用以下接口，开发者可以高效地访问和操控节点。
 
 以下场景基于[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)章节，创建前置工程。

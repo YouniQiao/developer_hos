@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用MindSpore Lite实现图像分类（ArkTS）"
 original_url: /docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-guidelines-based-js
 format: md
+upstream_id: dev/app-dev/ai/mindspore-lite-kit/mindspore-guidelines-based-js
+last_sync: 2026-06-07
+sync_hash: ef1825fa
 ---
-
-
 ## 场景说明
 
 开发者可以使用[@ohos.ai.mindSporeLite](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-mindsporelite)，在UI代码中集成MindSpore Lite能力，快速部署AI算法，进行AI模型推理，实现图像分类的应用。

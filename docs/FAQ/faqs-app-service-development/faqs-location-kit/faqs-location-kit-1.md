@@ -2,9 +2,10 @@
 title: "如何申请精确定位"
 original_url: /docs/FAQ/faqs-app-service-development/faqs-location-kit/faqs-location-kit-1
 format: md
+upstream_id: FAQ/faqs-app-service-development/faqs-location-kit/faqs-location-kit-1
+last_sync: 2026-06-07
+sync_hash: 1a9bd9e9
 ---
-
-
 **问题场景**
 
 在获取定位权限的场景中，申请了模糊定位和精准定位的权限['ohos.permission.APPROXIMATELY\_LOCATION', 'ohos.permission.LOCATION']。模糊定位会弹出权限框，点击同意后，再申请精准定位时，精准定位结果grantStatus返回2表示什么？

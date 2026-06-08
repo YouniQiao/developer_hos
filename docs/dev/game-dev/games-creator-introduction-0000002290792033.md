@@ -2,9 +2,10 @@
 title: "使用Cocos Creator概述"
 original_url: /docs/dev/game-dev/games-creator-introduction-0000002290792033
 format: md
+upstream_id: dev/game-dev/games-creator-introduction-0000002290792033
+last_sync: 2026-06-07
+sync_hash: a8e2c3d0
 ---
-
-
 使用Cocos Creator **2.4.15**及以上版本或Cocos Creator **3.8.6**及以上版本开发的游戏均支持适配HarmonyOS 5.0及以上平台。
 
 ## 适配原理

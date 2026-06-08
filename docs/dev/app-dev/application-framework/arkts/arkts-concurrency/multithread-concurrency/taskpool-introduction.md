@@ -2,9 +2,10 @@
 title: "TaskPool简介"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/taskpool-introduction
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/taskpool-introduction
+last_sync: 2026-06-07
+sync_hash: d17a6e24
 ---
-
-
 TaskPool为应用程序提供多线程环境，降低资源消耗并提高系统性能。无需管理线程生命周期。具体接口信息及使用方法，请参见[TaskPool](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-taskpool)。
 
 ## TaskPool运作机制

@@ -2,9 +2,10 @@
 title: "组件截图（ComponentSnapshot）返回错误码100001，可能原因为截图尺寸过大，文档说明其与具体硬件限制有关，如何查看具体限制是多少"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-481
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-481
+last_sync: 2026-06-07
+sync_hash: bfacbee2
 ---
-
-
 硬件限制因平台而异，可以通过如下命令进行查看：
 
 ```

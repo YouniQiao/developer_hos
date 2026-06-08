@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "测试数字商品服务"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-sandbox
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-sandbox
+last_sync: 2026-06-07
+sync_hash: 0312a0a4
 ---
-
-
 沙盒测试允许开发者在接入数字商品服务的调测过程中无需真实付款即可完成数字商品的购买等相关测试。
 
 ![](./img/687cad3a.png)
@@ -34,7 +35,7 @@ format: md
   接入的应用必须是debug签名的应用。构建debug签名应用步骤如下：
 
 1. 参见[手动签名方式调试HarmonyOS应用/元服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-debug-app-0000001914423098)，申请应用调试证书->注册调试设备->申请调试Profile。
-2. 参见[配置签名信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app#section280162182818)，在DevEco Studio侧配置签名信息。
+2. 参见[配置签名信息](/docs/tools/coding-debug/ide-publish-app#section280162182818)，在DevEco Studio侧配置签名信息。
 3. 在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中[配置应用签名证书指纹](https://developer.huawei.com/consumer/cn/doc/app/agc-help-signature-info-0000001628566748#section5181019153511)。
 
 ## 沙盒测试能力未生效自检

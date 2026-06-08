@@ -2,9 +2,10 @@
 title: "获取可加入房间列表"
 original_url: /docs/dev/game-dev/gameobe-getavailablerooms-js-0000002361510572
 format: md
+upstream_id: dev/game-dev/gameobe-getavailablerooms-js-0000002361510572
+last_sync: 2026-06-07
+sync_hash: 1c7ab02a
 ---
-
-
 除通过房间ID加入房间外，玩家还可以通过获取当前可加入的房间列表，选择加入某一个房间。
 
 ## 前提条件

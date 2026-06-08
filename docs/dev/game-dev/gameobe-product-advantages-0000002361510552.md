@@ -2,9 +2,10 @@
 title: "产品优势"
 original_url: /docs/dev/game-dev/gameobe-product-advantages-0000002361510552
 format: md
+upstream_id: dev/game-dev/gameobe-product-advantages-0000002361510552
+last_sync: 2026-06-07
+sync_hash: 15589d57
 ---
-
-
 ## 便捷的接入方式
 
 您只需要简单调用几个接口，即可实现多人联机功能。

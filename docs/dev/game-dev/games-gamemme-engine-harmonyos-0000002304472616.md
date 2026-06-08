@@ -2,9 +2,10 @@
 title: "HarmonyOS 5.0及以上"
 original_url: /docs/dev/game-dev/games-gamemme-engine-harmonyos-0000002304472616
 format: md
+upstream_id: dev/game-dev/games-gamemme-engine-harmonyos-0000002304472616
+last_sync: 2026-06-07
+sync_hash: a7e11757
 ---
-
-
 调用相关接口需要先完成初始化，初始化是通过创建实例来实现的。
 
 ![](./img/22a6b700.png)

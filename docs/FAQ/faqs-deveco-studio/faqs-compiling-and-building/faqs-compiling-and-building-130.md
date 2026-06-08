@@ -2,9 +2,10 @@
 format: md
 title: "如何解决编译报错“ERROR: ArkTS Compiler Error ERROR: /bin/sh: 'xxxx/es2abc': Operation not permitted”的问题"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-130
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-130
+last_sync: 2026-06-07
+sync_hash: b5f02f33
 ---
-
-
 **问题现象**
 
 编译报错“ERROR: ArkTS Compiler Error ERROR: /bin/sh: "xxxx/es2abc": Operation not permitted”。

@@ -2,9 +2,10 @@
 title: "获取收货地址"
 original_url: /docs/dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-choose-address
 format: md
+upstream_id: dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-choose-address
+last_sync: 2026-06-07
+sync_hash: 1515dd22
 ---
-
-
 ## 场景介绍
 
 当元服务需要获取用户收货地址时，可使用[选择收货地址Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-ship-to)，引导用户添加或选择已有的收货地址，并最终获取用户的收货地址。
@@ -32,7 +33,7 @@ format: md
 
 ![](./img/828daaa7.png)
 
-如果在权限申请前已完成“配置签名和指纹”，则需要重新[申请调试Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)，并重新[手动配置签名信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+如果在权限申请前已完成“配置签名和指纹”，则需要重新[申请调试Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)，并重新[手动配置签名信息](/docs/tools/coding-debug/ide-signing#section297715173233)。
 
 2、是否完成[配置签名和指纹](/docs/dev/atomic-dev/account-guide-atomic-preparations/account-atomic-sign-fingerprints)、[配置Client ID](/docs/dev/atomic-dev/account-guide-atomic-preparations/account-atomic-client-id)，未配置调用获取收货地址API，将返回[1008100004 应用指纹证书校验失败](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-error-code#section1008100004-应用指纹证书校验失败)错误码，无法获取收货地址。
 

@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-use-scale-to-replace-attr-animateto"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-use-scale-to-replace-attr-animateto
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-use-scale-to-replace-attr-animateto
+last_sync: 2026-06-07
+sync_hash: 45e961d2
 ---
-
-
 # @performance/hp-arkui-use-scale-to-replace-attr-animateto
 
 建议组件布局改动时使用图形变换属性动画。

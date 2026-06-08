@@ -3,8 +3,10 @@ title: "批量更新任务预算"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-updatebudget-batch-0000001263215157
 format: md
+upstream_id: monetize/promotion/marketapi-updatebudget-batch-0000001263215157
+last_sync: 2026-06-07
+sync_hash: 2fdc6de6
 ---
-
 # 批量更新任务预算
 
 ## 功能介绍

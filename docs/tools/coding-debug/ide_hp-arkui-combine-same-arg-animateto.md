@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-combine-same-arg-animateto"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-combine-same-arg-animateto
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-combine-same-arg-animateto
+last_sync: 2026-06-07
+sync_hash: c2cc028b
 ---
-
-
 # @performance/hp-arkui-combine-same-arg-animateto
 
 建议动画参数相同时使用同一个animateTo。

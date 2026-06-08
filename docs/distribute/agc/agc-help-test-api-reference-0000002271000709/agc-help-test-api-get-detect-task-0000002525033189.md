@@ -2,9 +2,10 @@
 title: "查询上架自检报告信息"
 original_url: /docs/distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-get-detect-task-0000002525033189
 format: md
+upstream_id: distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-get-detect-task-0000002525033189
+last_sync: 2026-06-07
+sync_hash: 0199191b
 ---
-
-
 #### 功能介绍
 
 此接口用于查询邀请测试进行上架自检的报告信息。如果自检未通过，可以从返回参数reportUrl中获取自检报告。

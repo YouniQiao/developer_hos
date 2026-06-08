@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Wallet Kit常见问题"
 original_url: /docs/dev/app-dev/application-services/wallet-kit-guide/wallet-kit-faq
 format: md
+upstream_id: dev/app-dev/application-services/wallet-kit-guide/wallet-kit-faq
+last_sync: 2026-06-07
+sync_hash: e2ddfcf6
 ---
-
-
 * **[开发者应用使用Wallet Kit，是否需要集成华为Account Kit？](/docs/dev/app-dev/application-services/wallet-kit-guide/wallet-kit-faq/wallet-faq-2)**
 * **[如果用户没有登录华为账号，添加卡券时如何处理？](/docs/dev/app-dev/application-services/wallet-kit-guide/wallet-kit-faq/wallet-faq-3)**
 * **[现有提供的几种接入方式中，比较常用的是哪种？](/docs/dev/app-dev/application-services/wallet-kit-guide/wallet-kit-faq/wallet-faq-4)**

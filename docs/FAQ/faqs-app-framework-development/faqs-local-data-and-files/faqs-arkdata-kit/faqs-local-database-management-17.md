@@ -2,9 +2,10 @@
 title: "如何通过谓词查询方式获取数据"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-17
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-17
+last_sync: 2026-06-07
+sync_hash: 2c197f69
 ---
-
-
 [getEntries()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-distributedkvstore#getentries-3)可以使用谓词查询，根据谓词查询的方式批量获取value，如使用like，unlike，isnull等方法。
 
 参考代码如下：

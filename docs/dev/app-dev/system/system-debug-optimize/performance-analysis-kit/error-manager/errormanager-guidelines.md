@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "错误管理开发指导"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/error-manager/errormanager-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/error-manager/errormanager-guidelines
+last_sync: 2026-06-07
+sync_hash: c30dc2d9
 ---
-
-
 ## 场景介绍
 
 当应用的代码存在规范问题或错误时，会在运行中产生异常和错误，如应用未捕获异常等。在错误产生后，应用会异常退出。错误日志通常会保存在用户本地存储设备中，不方便开发者定位问题。所以，应用开发者可以使用错误管理的接口，在应用退出前，及时将相关错误及日志上报到开发者的服务平台来定位问题。

@@ -3,8 +3,10 @@ title: "多设备银行理财界面"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/multi-financial-app
 format: md
+upstream_id: dev/app-dev/multi-device/multi-financial-app
+last_sync: 2026-06-07
+sync_hash: c70f2549
 ---
-
 # 多设备银行理财界面
 
 ## 概述

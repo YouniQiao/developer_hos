@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "沙盒测试"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-sandbox
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-sandbox
+last_sync: 2026-06-07
+sync_hash: f6bfa7f5
 ---
-
-
 沙盒测试允许开发者在接入华为应用内支付调测过程中对订单进行虚拟支付。
 
 推荐您在提交数字商品审核前、即商品处于草稿/待提交状态下，使用沙盒测试进行调测。您可以通过设置沙盒测试账户，来模拟真实环境下数字商品的交易过程，在测试期间发现问题可以及时进行修复，这样确保了在商品上架生效以后可以提供给用户稳定流畅的商品购买体验。
@@ -35,7 +36,7 @@ format: md
 
   接入的应用必须是debug签名的应用。构建debug签名应用步骤如下：
 
-  1.手动签名：您需要在AGC中[申请调试证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-debug-cert-0000002283256797)、[注册调试设备](/docs/distribute/agc/agc-help-device-0000002235870042/agc-help-add-device-0000002283189937)、[申请调试Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)后，再[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+  1.手动签名：您需要在AGC中[申请调试证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-debug-cert-0000002283256797)、[注册调试设备](/docs/distribute/agc/agc-help-device-0000002235870042/agc-help-add-device-0000002283189937)、[申请调试Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)后，再[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)。
 
   2.在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中[配置公钥指纹](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-cert-fingerprint-0000002278002933)。
 

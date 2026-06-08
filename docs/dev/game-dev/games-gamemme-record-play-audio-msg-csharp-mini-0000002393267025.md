@@ -2,9 +2,10 @@
 title: "C#（小游戏）"
 original_url: /docs/dev/game-dev/games-gamemme-record-play-audio-msg-csharp-mini-0000002393267025
 format: md
+upstream_id: dev/game-dev/games-gamemme-record-play-audio-msg-csharp-mini-0000002393267025
+last_sync: 2026-06-07
+sync_hash: 3199d8f9
 ---
-
-
 ## 前提条件
 
 * 您已[集成游戏多媒体SDK](/docs/dev/game-dev/games-gamemme-integratingsdk-csharp-minigame-0000002359706946)。

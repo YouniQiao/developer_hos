@@ -2,9 +2,10 @@
 title: "隐私托管"
 original_url: /docs/dev/atomic-dev/ascf/develop-open-capabilities/develop-privacy-hosting
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-open-capabilities/develop-privacy-hosting
+last_sync: 2026-06-07
+sync_hash: 620d14f8
 ---
-
-
 为了统一用户体验并使上架审核过程更加高效和省心，元服务须接入平台的隐私托管服务，由平台统一向用户展示隐私协议弹窗。
 
 ![](./img/b0bb9bf4.png)

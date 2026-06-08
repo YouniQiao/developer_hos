@@ -2,9 +2,10 @@
 title: "分析RESOURCE LEAK问题"
 original_url: /docs/distribute/agc/agc-help-apms-crash-0000002236333918/agc-help-apms-crash-resourceleak-0000002499298410
 format: md
+upstream_id: distribute/agc/agc-help-apms-crash-0000002236333918/agc-help-apms-crash-resourceleak-0000002499298410
+last_sync: 2026-06-07
+sync_hash: 9c79a486
 ---
-
-
 资源泄漏是指句柄、线程或内存等资源，在应用运行过程中没有被正确释放，导致资源被长期占用且无法被其他应用使用，如果某一类资源耗尽，系统可能出现卡死或重启等异常情况。为了应对资源泄漏问题，APMS会提供资源泄漏检测、判决、维测日志抓取、日志上报的能力，为开发者提供详细的维测日志以辅助故障定位。
 
 #### 查看RESOURCE LEAK基本数据

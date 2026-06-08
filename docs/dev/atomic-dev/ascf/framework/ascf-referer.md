@@ -2,9 +2,10 @@
 title: "防盗链能力"
 original_url: /docs/dev/atomic-dev/ascf/framework/ascf-referer
 format: md
+upstream_id: dev/atomic-dev/ascf/framework/ascf-referer
+last_sync: 2026-06-07
+sync_hash: e24cca87
 ---
-
-
 ASCF元服务中所有网络请求的请求头中referer字段都不可设置，包括网络请求接口、涉及网络请求的组件（如image组件、video组件）。
 
 ## 防盗链配置

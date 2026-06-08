@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "PDF页面文本、图片和批注"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-add-txt-img-annot
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-add-txt-img-annot
+last_sync: 2026-06-07
+sync_hash: 54d029ca
 ---
-
-
 支持编辑PDF页面内容，包括：
 
 * 添加、删除文本。

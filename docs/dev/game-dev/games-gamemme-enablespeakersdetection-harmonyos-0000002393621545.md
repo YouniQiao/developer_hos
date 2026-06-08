@@ -2,9 +2,10 @@
 title: "获取当前发言玩家列表"
 original_url: /docs/dev/game-dev/games-gamemme-enablespeakersdetection-harmonyos-0000002393621545
 format: md
+upstream_id: dev/game-dev/games-gamemme-enablespeakersdetection-harmonyos-0000002393621545
+last_sync: 2026-06-07
+sync_hash: ef6aba3b
 ---
-
-
 通过本章的开发指导，您可实现获取房间内当前发言玩家列表以及对应的音量分贝的功能。
 
 ## 前提条件

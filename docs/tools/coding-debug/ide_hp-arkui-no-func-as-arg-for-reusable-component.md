@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-no-func-as-arg-for-reusable-component"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-no-func-as-arg-for-reusable-component
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-no-func-as-arg-for-reusable-component
+last_sync: 2026-06-07
+sync_hash: ec2ddcad
 ---
-
-
 # @performance/hp-arkui-no-func-as-arg-for-reusable-component
 
 避免使用函数作为复用的自定义组件创建时的入参。

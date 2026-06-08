@@ -2,9 +2,10 @@
 title: "获取SDK配置信息"
 original_url: /docs/distribute/agc/agc-help-auth-preparation-0000002236496826/agc-help-auth-obtain-files-0000002236343310
 format: md
+upstream_id: distribute/agc/agc-help-auth-preparation-0000002236496826/agc-help-auth-obtain-files-0000002236343310
+last_sync: 2026-06-07
+sync_hash: fd5eca52
 ---
-
-
 #### 获取agconnect-services.json文件
 
 为了简化您的配置步骤，AppGallery Connect为您提供了应用配置信息，您只需要将配置信息添加到您的项目中。

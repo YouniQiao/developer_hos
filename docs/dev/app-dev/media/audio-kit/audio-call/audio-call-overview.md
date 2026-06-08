@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "音频通话开发概述"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-call/audio-call-overview
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-call/audio-call-overview
+last_sync: 2026-06-07
+sync_hash: b76b6966
 ---
-
-
 常用的音频通话模式包括VoIP通话和蜂窝通话。
 
 * VoIP通话：

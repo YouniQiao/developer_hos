@@ -2,8 +2,11 @@
 title: "感知组件可见性"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-manage-components-visibility
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-manage-components-visibility
+last_sync: 2026-06-07
+sync_hash: f519e352
+upstream_hash: fb7da7f98b76
 ---
-
 
 ## 概述
 

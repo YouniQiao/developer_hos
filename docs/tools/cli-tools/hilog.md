@@ -3,9 +3,10 @@ title: "hilog"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/hilog
 format: md
+upstream_id: tools/cli-tools/hilog
+last_sync: 2026-06-07
+sync_hash: ff26b412
 ---
-
-
 # hilog
 
 HiLog日志系统，提供给系统框架、服务、以及应用，用于打印日志，记录用户操作、系统运行状态等。开发者可以通过hilog命令行查询相关日志信息。
@@ -557,7 +558,8 @@ INFO lines: 101795(74%), length: 6.1M(76%)
 WARN lines: 10268(7.5%), length: 719.9K(8.8%)
 ERROR lines: 25452(19%), length: 1.2M(15%)
 FATAL lines: 2(0.0015%), length: 259.0B(0.0031%)
-------------------------------------------------------------
+---
+---------------------------------------------------------
 Domain Table:
 LOGTYPE- DOMAIN---- TAG----------------------------- MAX_FREQ-- TIME---------------- MAX_TP---- TIME---------------- LINES----- LENGTH---- DROPPED---
 app----- 0xf00----- -------------------------------- 924.00---- 11-15 16:04:25.594-- 111975.00- 11-15 16:04:25.594-- 3386------ 371.5K---- 0---------

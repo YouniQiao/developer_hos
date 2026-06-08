@@ -2,9 +2,10 @@
 title: "查询已申请的受限ACL权限"
 original_url: /docs/distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-getacl-0000002465770113
 format: md
+upstream_id: distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-getacl-0000002465770113
+last_sync: 2026-06-07
+sync_hash: 80f79678
 ---
-
-
 #### 功能介绍
 
 此接口用于查询申请的受限ACL权限信息。

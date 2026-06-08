@@ -2,8 +2,11 @@
 title: "DeviceTypeInfo"
 original_url: /docs/distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-devicetypeinfo-0000002237336488
 format: md
+upstream_id: distribute/agc/agc-help-test-api-data-0000002237336484/agc-help-test-api-data-devicetypeinfo-0000002237336488
+last_sync: 2026-06-07
+sync_hash: 31b61ea7
+upstream_hash: 0550bfed5105
 ---
-
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |

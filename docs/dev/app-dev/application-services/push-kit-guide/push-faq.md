@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Push Kit常见问题"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-faq
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-faq
+last_sync: 2026-06-07
+sync_hash: 85b2ffab
 ---
-
-
 * **[如何处理推送消息时遇到的问题](/docs/dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-1)**
 * **[关于云侧接口推送成功但设备收不到推送消息的问题](/docs/dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-2)**
 * **[如何处理误分类问题](/docs/dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-3)**

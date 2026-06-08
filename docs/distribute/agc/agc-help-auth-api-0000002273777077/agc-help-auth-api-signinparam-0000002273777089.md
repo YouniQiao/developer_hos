@@ -2,9 +2,10 @@
 title: "SignInParam"
 original_url: /docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-signinparam-0000002273777089
 format: md
+upstream_id: distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-signinparam-0000002273777089
+last_sync: 2026-06-07
+sync_hash: 61b81d3d
 ---
-
-
 登录操作的参数类。
 
 #### Parameters

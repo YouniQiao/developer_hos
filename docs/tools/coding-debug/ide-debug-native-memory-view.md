@@ -3,8 +3,11 @@ title: "查看内存信息"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-native-memory-view
 format: md
+upstream_id: tools/coding-debug/ide-debug-native-memory-view
+last_sync: 2026-06-07
+sync_hash: 75ab945f
+upstream_hash: 82a71a1e7a5b
 ---
-
 
 # 查看内存信息
 

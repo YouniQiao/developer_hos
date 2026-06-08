@@ -2,9 +2,10 @@
 title: "推包调试报错“Error message:cannot find record '&XXX/src/main/ets/YYY&x.y.z', please check the request path.'ZZZ.abc'.”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-182
 format: md
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-182
+last_sync: 2026-06-07
+sync_hash: 012461bb
 ---
-
-
 **问题现象**
 
 在使用DevEco Studio推包到设备进行调试时，如果遇到jscrash报错，FaultLog中显示“Error message: cannot find record '&XXX/src/main/ets/YYY&x.y.z'，请检查请求路径 'ZZZ.abc'”。
@@ -15,7 +16,7 @@ format: md
 
 **场景一**
 
-字节码HAR（H）使用的依赖包XXX未配置在本模块的oh-package.json5的dependencies或dynamicDependencies中（错误地配置在了工程级oh-package.json5中），请参考[字节码HAR约束条件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-har#section38518561610)。
+字节码HAR（H）使用的依赖包XXX未配置在本模块的oh-package.json5的dependencies或dynamicDependencies中（错误地配置在了工程级oh-package.json5中），请参考[字节码HAR约束条件](/docs/tools/coding-debug/ide-hvigor-build-har#section38518561610)。
 
 **解决措施**
 
@@ -23,7 +24,7 @@ format: md
 
 **场景二**
 
-用户在工程级oh-package.json5和模块级oh-package.json5中同时依赖了XXX包的不同版本，请参考[字节码HAR约束条件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-har#section38518561610)。
+用户在工程级oh-package.json5和模块级oh-package.json5中同时依赖了XXX包的不同版本，请参考[字节码HAR约束条件](/docs/tools/coding-debug/ide-hvigor-build-har#section38518561610)。
 
 **解决措施：**
 
@@ -49,7 +50,7 @@ format: md
 
 **场景****五**
 
-应用依赖了包XXX，该XXX包在构建时使用了[增量构建](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-incremental-build)的方式，且同时修改了模块级oh-package.json5中的version字段，导致了XXX包中部分文件在寻址时还是用老的版本号去寻址，进而导致找不到相关文件。
+应用依赖了包XXX，该XXX包在构建时使用了[增量构建](/docs/tools/coding-debug/ide-hvigor-incremental-build)的方式，且同时修改了模块级oh-package.json5中的version字段，导致了XXX包中部分文件在寻址时还是用老的版本号去寻址，进而导致找不到相关文件。
 
 **解决措施**
 

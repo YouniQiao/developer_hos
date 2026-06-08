@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "登记归因来源及转化"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-developmentguide
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-developmentguide
+last_sync: 2026-06-07
+sync_hash: f513a536
 ---
-
-
 ![](./img/d6af9331.png)
 
 6.0.2(22)版本开始，登记归因转化接口新增属性timestamp、serviceTag，支持设置转化事件时间及开发者关注的业务信息。

@@ -2,7 +2,8 @@
 format: md
 title: "Navigation如何取消单双栏切换动效"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-412
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-412
+last_sync: 2026-06-07
+sync_hash: 3431abfd
 ---
-
-
 从API15后，Navigation提供[enableModeChangeAnimation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#enablemodechangeanimation15)属性控制模式切换动画（true启用/false禁用）。

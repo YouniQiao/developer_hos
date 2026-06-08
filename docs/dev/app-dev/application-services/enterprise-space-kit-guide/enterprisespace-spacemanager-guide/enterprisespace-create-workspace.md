@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "创建工作空间"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-create-workspace
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-create-workspace
+last_sync: 2026-06-07
+sync_hash: b0ff2d33
+upstream_hash: ed65764e15ea
 ---
-
 
 ## 场景介绍
 

@@ -3,9 +3,10 @@ title: "三方库源码调试"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-source-code-debugging
 format: md
+upstream_id: tools/coding-debug/ide-source-code-debugging
+last_sync: 2026-06-07
+sync_hash: e6edcb56
 ---
-
-
 # 三方库源码调试
 
 三方共享包分为静态共享包HAR和动态共享包HSP，两种共享包的源码调试方式有所区别，具体请查看以下指导。

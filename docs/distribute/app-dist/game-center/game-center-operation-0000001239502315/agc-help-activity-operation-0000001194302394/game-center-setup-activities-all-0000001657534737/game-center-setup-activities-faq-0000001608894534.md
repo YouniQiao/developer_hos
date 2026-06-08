@@ -3,9 +3,10 @@ title: "FAQ"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-faq-0000001608894534
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-faq-0000001608894534
+last_sync: 2026-06-07
+sync_hash: b072e00a
 ---
-
-
 # FAQ
 
 ## 为什么活动管理平台的活动目的置灰？

@@ -3,8 +3,10 @@ title: "批量添加商品"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-dpa9-0000001338502489
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-dpa9-0000001338502489
+last_sync: 2026-06-07
+sync_hash: 6dbea11f
 ---
-
 # 批量添加商品
 
 您通过本接口可以批量添加商品。

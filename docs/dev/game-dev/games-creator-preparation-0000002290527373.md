@@ -2,9 +2,10 @@
 title: "适配准备"
 original_url: /docs/dev/game-dev/games-creator-preparation-0000002290527373
 format: md
+upstream_id: dev/game-dev/games-creator-preparation-0000002290527373
+last_sync: 2026-06-07
+sync_hash: c6295e43
 ---
-
-
 ## 工具准备
 
 ### 安装DevEco Studio

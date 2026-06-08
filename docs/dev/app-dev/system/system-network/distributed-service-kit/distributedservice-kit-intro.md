@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Distributed Service Kit简介"
 original_url: /docs/dev/app-dev/system/system-network/distributed-service-kit/distributedservice-kit-intro
 format: md
+upstream_id: dev/app-dev/system/system-network/distributed-service-kit/distributedservice-kit-intro
+last_sync: 2026-06-07
+sync_hash: 0138454b
 ---
-
-
 Distributed Service Kit（分布式管理服务）实现了分布式设备管理、分布式硬件管理、分布式键鼠穿越、分布式组件管理等能力。
 
 应用开发者可以通过分布式设备管理进行周边设备的发现、认证、信息查询、状态监听等，该能力是分布式业务的入口功能，即只有完成认证后的设备之间才可以进行分布式业务。

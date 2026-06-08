@@ -2,9 +2,10 @@
 format: md
 title: "如何自排查OOM(v8::FatalProcessOutOfMemory)错误"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-jsvm/faqs-jsvm-4
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-jsvm/faqs-jsvm-4
+last_sync: 2026-06-07
+sync_hash: 214d4a94
 ---
-
-
 **问题现象**
 
 当应用内部申请的内存达到v8内存上限时，会触发OOM(v8::FatalProcessOutOfMemory)问题。对应的Crash栈信息如下:

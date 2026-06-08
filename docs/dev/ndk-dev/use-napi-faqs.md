@@ -2,9 +2,10 @@
 title: "Node-API常见问题"
 original_url: /docs/dev/ndk-dev/use-napi-faqs
 format: md
+upstream_id: dev/ndk-dev/use-napi-faqs
+last_sync: 2026-06-07
+sync_hash: accafc1f
 ---
-
-
 ## 稳定性
 
 1. [应用运行过程中出现高概率闪退，出现cppcrash栈，栈顶为系统库libark\_jsruntime.so，崩溃栈前几帧也有libace\_napi.z.so，怎么进行定位解决](/docs/dev/ndk-dev/napi-faq-about-stability#应用运行过程中出现高概率闪退怎么进行定位解决)

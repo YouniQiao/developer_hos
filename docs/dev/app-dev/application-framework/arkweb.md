@@ -2,9 +2,10 @@
 title: "ArkWeb（方舟Web）"
 original_url: /docs/dev/app-dev/application-framework/arkweb
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb
+last_sync: 2026-06-07
+sync_hash: ec63c2ac
 ---
-
-
 * **[ArkWeb简介](/docs/dev/app-dev/application-framework/arkweb/web-component-overview)**
 * **[ArkWeb进程](/docs/dev/app-dev/application-framework/arkweb/web_component_process)**
 * **[Web组件的生命周期](/docs/dev/app-dev/application-framework/arkweb/web-event-sequence)**

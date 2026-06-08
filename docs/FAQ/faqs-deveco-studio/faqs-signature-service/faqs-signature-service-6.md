@@ -2,9 +2,10 @@
 format: md
 title: "登录时浏览器提示不安全，“你的连接不是私密连接”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-6
+upstream_id: FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-6
+last_sync: 2026-06-07
+sync_hash: be0999aa
 ---
-
-
 **问题现象**
 
 使用模拟器时，需通过浏览器登录授权。如果浏览器提示网站“不安全”或“连接不是私密连接”，请检查网络连接或联系技术支持。

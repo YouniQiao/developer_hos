@@ -2,9 +2,10 @@
 title: "远端状态订阅开发实例"
 original_url: /docs/dev/app-dev/application-framework/ipc-kit/subscribe-remote-state
 format: md
+upstream_id: dev/app-dev/application-framework/ipc-kit/subscribe-remote-state
+last_sync: 2026-06-07
+sync_hash: c1fe50b8
 ---
-
-
 IPC/RPC提供了订阅远端Stub对象状态的机制。当远端Stub对象死亡时，可以自动触发本端Proxy注册的死亡通知。这种死亡通知订阅需要调用指定接口[registerDeathRecipient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-rpc#registerdeathrecipient9-1)完成。不再需要订阅时，也需要调用指定接口[unregisterDeathRecipient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-rpc#unregisterdeathrecipient9-1)取消订阅。
 
 使用这种订阅机制的用户需要继承死亡通知类[DeathRecipient](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-rpc#deathrecipient)，并实现[onRemoteDied](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-rpc#onremotedied)方法清理资源。该方法会在远端Stub对象所在进程退出或当前RPC通信依赖的软总线连接断开时被回调。

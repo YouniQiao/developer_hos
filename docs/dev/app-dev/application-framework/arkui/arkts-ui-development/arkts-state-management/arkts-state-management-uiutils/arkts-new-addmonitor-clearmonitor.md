@@ -2,8 +2,11 @@
 title: "addMonitor/clearMonitor接口：动态添加/取消监听"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-addmonitor-clearmonitor
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-addmonitor-clearmonitor
+last_sync: 2026-06-07
+sync_hash: 6e5da89b
+upstream_hash: 4d21b7ad1e59
 ---
-
 
 为了动态添加或删除状态管理V2的状态变量的监听函数，开发者可以使用[addMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#addmonitor20)或[clearMonitor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-statemanagement#clearmonitor20)。
 

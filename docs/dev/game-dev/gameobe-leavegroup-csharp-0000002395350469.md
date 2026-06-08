@@ -2,9 +2,10 @@
 title: "离开队伍"
 original_url: /docs/dev/game-dev/gameobe-leavegroup-csharp-0000002395350469
 format: md
+upstream_id: dev/game-dev/gameobe-leavegroup-csharp-0000002395350469
+last_sync: 2026-06-07
+sync_hash: 6969ac9c
 ---
-
-
 当游戏未开始时，进入队伍的玩家均可选择离开当前队伍。
 
 ## 前提条件

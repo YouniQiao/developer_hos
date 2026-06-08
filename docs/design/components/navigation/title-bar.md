@@ -3,8 +3,10 @@ title: 标题栏
 sidebar_label: 标题栏
 original_url: /docs/design/components/navigation/title-bar
 format: md
+upstream_id: design/components/navigation/title-bar
+last_sync: 2026-06-07
+sync_hash: 4784decb
 ---
-
 # 标题栏
 
 标题栏是布局在界面顶部的导航类控件，用于呈现界面名称和操作入口。开发相关描述请参考 [Navigation/Title](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#title) 文档。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "管理麦克风静音状态"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-recording/mic-management
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-recording/mic-management
+last_sync: 2026-06-07
+sync_hash: 4e80f79f
 ---
-
-
 因为在录制过程中需要使用麦克风录制相关音频数据，所以建议开发者在调用录制接口前查询麦克风状态，并在录制过程中监听麦克风的状态变化，避免影响录制效果。
 
 在音频录制过程中，用户可以将麦克风静音，此时录音过程正常进行，录制生成的数据文件的大小随录制时长递增，但写入文件的数据均为0，即无声数据（空白数据）。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "ROI视频编码"
 original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding-roi
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding-roi
+last_sync: 2026-06-07
+sync_hash: c3858814
 ---
-
-
 ## 基础概念
 
 从API version 20开始支持ROI视频编码（Region Of Interest Video Coding），该功能是基于硬件H.264/H.265编码能力扩展的高级优化技术。其核心逻辑为对画面中指定的重点区域分配更多编码资源实现高画质编码。在有限带宽条件下保障ROI区域内容清晰呈现，显著提升整体视觉体验。

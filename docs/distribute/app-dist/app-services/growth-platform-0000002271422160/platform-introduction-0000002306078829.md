@@ -3,9 +3,10 @@ title: "登录指南"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-services/growth-platform-0000002271422160/platform-introduction-0000002306078829
 format: md
+upstream_id: distribute/app-dist/app-services/growth-platform-0000002271422160/platform-introduction-0000002306078829
+last_sync: 2026-06-07
+sync_hash: 7f4fb48c
 ---
-
-
 # 登录指南
 
 ## 概述

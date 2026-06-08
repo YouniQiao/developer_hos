@@ -2,9 +2,10 @@
 title: "SharedComponent基础操作"
 original_url: /docs/dev/game-dev/pgd-sharedcomponent-foundation-0000002530101211
 format: md
+upstream_id: dev/game-dev/pgd-sharedcomponent-foundation-0000002530101211
+last_sync: 2026-06-07
+sync_hash: cbc4fb91
 ---
-
-
 共享组件的增、删、改、判断操作。
 
 ```

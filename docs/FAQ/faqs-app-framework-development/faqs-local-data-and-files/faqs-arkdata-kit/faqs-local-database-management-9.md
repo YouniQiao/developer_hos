@@ -2,8 +2,11 @@
 format: md
 title: "如何使用Sqlite全文检索能力"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-9
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-9
+last_sync: 2026-06-07
+sync_hash: 5b97afd3
+upstream_hash: 20717e4149e1
 ---
-
 
 **解决措施**
 

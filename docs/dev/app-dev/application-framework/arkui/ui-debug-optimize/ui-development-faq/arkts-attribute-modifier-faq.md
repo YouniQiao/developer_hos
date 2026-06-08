@@ -2,8 +2,11 @@
 title: "动态属性设置常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-attribute-modifier-faq
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-attribute-modifier-faq
+last_sync: 2026-06-07
+sync_hash: 611c9401
+upstream_hash: 88d458b33b39
 ---
-
 
 本文档介绍动态属性设置的常见问题并提供参考。
 

@@ -2,9 +2,10 @@
 title: "应用功耗分析"
 original_url: /docs/quality/application-power-analysis
 format: md
+upstream_id: /docs/quality/application-power-analysis
+last_sync: 2026-06-07
+sync_hash: 4b218f75
 ---
-
-
 # 应用功耗分析
 
 * **[CPU 高负载分析](/docs/quality/high-cpu-load-analysis)**

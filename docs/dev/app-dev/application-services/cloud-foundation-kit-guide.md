@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Cloud Foundation Kit（云开发服务）"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide
+last_sync: 2026-06-07
+sync_hash: fba0c7a3
 ---
-
-
 * **[Cloud Foundation Kit简介](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-introduction)**
 * **[开发准备](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-preparations)**
 * **[云函数](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service)**

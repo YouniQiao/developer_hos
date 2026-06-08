@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "购买数字商品"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-distribute/store-iap-distribute-purchase
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-distribute/store-iap-distribute-purchase
+last_sync: 2026-06-07
+sync_hash: 9e9ae0b1
 ---
-
-
 ## 场景介绍
 
 在应用内数字商品的购买场景中，用户会以一次性付款的方式购买消耗型商品或非消耗型商品。

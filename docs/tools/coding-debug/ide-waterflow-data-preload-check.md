@@ -3,9 +3,10 @@ title: "@performance/waterflow-data-preload-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-waterflow-data-preload-check
 format: md
+upstream_id: tools/coding-debug/ide-waterflow-data-preload-check
+last_sync: 2026-06-07
+sync_hash: 5312a806
 ---
-
-
 # @performance/waterflow-data-preload-check
 
 建议对waterflow子组件进行数据预加载。

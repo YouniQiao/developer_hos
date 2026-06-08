@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“The local dependency below in module %s is invalid”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-143
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-143
+last_sync: 2026-06-07
+sync_hash: 85d061ad
 ---
-
-
 **错误描述**
 
 模块内添加本地依赖项无效。

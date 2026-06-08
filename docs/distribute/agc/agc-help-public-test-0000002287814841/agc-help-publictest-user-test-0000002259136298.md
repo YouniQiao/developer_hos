@@ -2,9 +2,10 @@
 title: "用户参与测试"
 original_url: /docs/distribute/agc/agc-help-public-test-0000002287814841/agc-help-publictest-user-test-0000002259136298
 format: md
+upstream_id: distribute/agc/agc-help-public-test-0000002287814841/agc-help-publictest-user-test-0000002259136298
+last_sync: 2026-06-07
+sync_hash: 9a107c4c
 ---
-
-
 测试版本发布、且到达测试时间后，用户便可以参与公开测试。AGC提供了多种参与测试的方式。
 
 * [在AppGallery客户端测试专区下载安装测试版本](#section1329995241112)：公开测试版本在AppGallery客户端测试专区（即“应用尝鲜”专区）面向全网所有用户展示，用户前往专区下载安装。

@@ -2,8 +2,11 @@
 title: "底部页签"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-hds-tabs
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-hds-tabs
+last_sync: 2026-06-07
+sync_hash: ea36cd88
+upstream_hash: 2b79fdf1ab02
 ---
-
 
 * **[设置页签栏的分割线](/docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-hds-tabs/ui-design-hds-tabs-split-line)**
 * **[设置页签栏的模糊样式](/docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-hds-tabs/ui-design-hds-tabs-fuzzy-style)**

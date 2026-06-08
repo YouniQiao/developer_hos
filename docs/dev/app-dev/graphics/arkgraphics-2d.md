@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "ArkGraphics 2D（方舟2D图形服务）"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d
+last_sync: 2026-06-07
+sync_hash: 197e8e23
 ---
-
-
 * **[ArkGraphics 2D简介](/docs/dev/app-dev/graphics/arkgraphics-2d/arkgraphics2d-introduction)**
 * **[使用可变帧率能力定制不同内容的绘制帧率](/docs/dev/app-dev/graphics/arkgraphics-2d/displaysync)**
 * **[过度绘制调试使用指导](/docs/dev/app-dev/graphics/arkgraphics-2d/overdraw-dfx-guidelines)**

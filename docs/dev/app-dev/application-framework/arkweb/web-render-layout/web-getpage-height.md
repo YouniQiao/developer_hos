@@ -2,9 +2,10 @@
 title: "获取网页内容高度"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-render-layout/web-getpage-height
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-render-layout/web-getpage-height
+last_sync: 2026-06-07
+sync_hash: 26e6f5dc
 ---
-
-
 通过调用[getPageHeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#getpageheight)可获取当前网页内容的实际高度，开发者可以根据具体需求选择合适的方法。
 
 ## 使用场景

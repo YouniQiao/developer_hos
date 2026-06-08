@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Scan Kit常见问题"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-faq
+last_sync: 2026-06-07
+sync_hash: cb051300
 ---
-
-
 * **[如何添加“扫码直达”服务的快速入口](/docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-1)**
 * **[扫码直达跳转失败](/docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-2)**
 * **[Scan Kit无法识别多个码图](/docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-3)**

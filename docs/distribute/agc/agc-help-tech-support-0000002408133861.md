@@ -2,9 +2,10 @@
 title: "技术支持"
 original_url: /docs/distribute/agc/agc-help-tech-support-0000002408133861
 format: md
+upstream_id: distribute/agc/agc-help-tech-support-0000002408133861
+last_sync: 2026-06-07
+sync_hash: adb116f8
 ---
-
-
 当您使用AppGallery Connect遇到问题时，可以按照以下顺序寻求帮助。
 
 1. 请先仔细阅读文档中的说明和注意事项，检查是否满足限制条件。

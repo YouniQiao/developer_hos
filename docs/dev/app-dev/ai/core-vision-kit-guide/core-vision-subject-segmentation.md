@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "主体分割"
 original_url: /docs/dev/app-dev/ai/core-vision-kit-guide/core-vision-subject-segmentation
 format: md
+upstream_id: dev/app-dev/ai/core-vision-kit-guide/core-vision-subject-segmentation
+last_sync: 2026-06-07
+sync_hash: c32710b1
 ---
-
-
 ## 适用场景
 
 主体分割，可以检测出图片中区别于背景的前景物体或区域（即"显著主体"），并将其从背景中分离出来，适用于需要识别和提取图像主要信息的场景，广泛使用于前景目标检测和前景主体分离的场景。例如：

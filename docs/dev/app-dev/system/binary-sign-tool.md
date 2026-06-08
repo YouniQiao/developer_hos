@@ -2,9 +2,10 @@
 title: "二进制签名工具"
 original_url: /docs/dev/app-dev/system/binary-sign-tool
 format: md
+upstream_id: dev/app-dev/system/binary-sign-tool
+last_sync: 2026-06-07
+sync_hash: 7a12c32c
 ---
-
-
 Binary Sign Tool（二进制签名工具），用于对二进制文件进行代码签名，支持通过命令行的方式对标准ELF文件进行代码签名或打印已签名ELF的权限、证书信息。
 
 ## 命令行工具获取

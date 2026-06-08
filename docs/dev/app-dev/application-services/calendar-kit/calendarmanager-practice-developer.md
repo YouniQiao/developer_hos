@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "日历服务实践案例"
 original_url: /docs/dev/app-dev/application-services/calendar-kit/calendarmanager-practice-developer
 format: md
+upstream_id: dev/app-dev/application-services/calendar-kit/calendarmanager-practice-developer
+last_sync: 2026-06-07
+sync_hash: 0a15a8d1
+upstream_hash: 9e331e81c369
 ---
-
 
 ## 场景介绍
 

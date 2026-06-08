@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口设置JavaScript对象的属性"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-property
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-property
+last_sync: 2026-06-07
+sync_hash: 6e35457e
 ---
-
-
 ## 简介
 
 使用JSVM-API接口获取和设置JavaScript对象的属性。通过合理使用这些函数，实现更复杂的功能和逻辑。

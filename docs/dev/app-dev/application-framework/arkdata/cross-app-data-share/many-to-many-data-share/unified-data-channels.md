@@ -2,9 +2,10 @@
 title: "通过标准化数据通路实现数据共享 (ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/cross-app-data-share/many-to-many-data-share/unified-data-channels
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/cross-app-data-share/many-to-many-data-share/unified-data-channels
+last_sync: 2026-06-07
+sync_hash: 5b8a9413
 ---
-
-
 ## 场景介绍
 
 在多对多跨应用数据共享的场景下，需要提供一条数据通路能够写入多个不同应用的数据并共享给其他应用进行读取。

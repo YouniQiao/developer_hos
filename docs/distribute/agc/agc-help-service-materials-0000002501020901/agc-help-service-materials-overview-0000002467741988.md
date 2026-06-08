@@ -2,9 +2,10 @@
 title: "概述"
 original_url: /docs/distribute/agc/agc-help-service-materials-0000002501020901/agc-help-service-materials-overview-0000002467741988
 format: md
+upstream_id: distribute/agc/agc-help-service-materials-0000002501020901/agc-help-service-materials-overview-0000002467741988
+last_sync: 2026-06-07
+sync_hash: 6cbb7f94
 ---
-
-
 ![](../img/agc-help-service-materials-overview-0000002467741988_0.png)
 
 * 服务素材能力仅对“支持设备”设置为“手机”、“平板”或“智能手表”的应用或元服务开放使用。

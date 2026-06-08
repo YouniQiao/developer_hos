@@ -2,9 +2,10 @@
 title: "下架商品"
 original_url: /docs/dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-delist
 format: md
+upstream_id: dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-delist
+last_sync: 2026-06-07
+sync_hash: 67d2113e
 ---
-
-
 ## 功能介绍
 
 下架商品接口用于商家主动将已在平台上线并处于“上架中”状态的商品下架。调用该接口后，商品将不再对外展示。

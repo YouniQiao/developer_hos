@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用DNS解析域名"
 original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/net-dns
 format: md
+upstream_id: dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/net-dns
+last_sync: 2026-06-07
+sync_hash: b99b06bb
 ---
-
-
 ## 场景介绍
 
 域名解析（DNS, Domain Name System）功能允许应用将主机名（域名）转换为IP地址。支持中文字符与ASCII码之间的转换、获取指定域名的IP地址列表、以及在不同网络环境下进行域名解析。

@@ -2,9 +2,10 @@
 title: "配置安全"
 original_url: /docs/experience-suggestions/security-privacy/security/standard-security-update
 format: md
+upstream_id: experience-suggestions/security-privacy/security/standard-security-update
+last_sync: 2026-06-07
+sync_hash: 5da20641
 ---
-
-
 # 配置安全
 
 |  |  |

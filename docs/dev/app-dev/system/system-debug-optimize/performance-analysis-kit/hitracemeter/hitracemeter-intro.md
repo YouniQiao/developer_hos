@@ -2,9 +2,10 @@
 title: "HiTraceMeter介绍"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracemeter/hitracemeter-intro
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracemeter/hitracemeter-intro
+last_sync: 2026-06-07
+sync_hash: d2aa7194
 ---
-
-
 本文介绍HiTraceMeter接口的使用方法。开发者可以在代码中调用HiTraceMeter接口进行trace打点，然后可使用[hitrace](/docs/dev/app-dev/system/hitrace)命令行工具或者[hidebug](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hidebug/hidebug-guidelines#获取应用trace记录信息)提供的trace采集接口，获取程序运行时产生的打点信息，了解程序运行的进程、线程、时间戳、CPU等信息，以帮助开发者进行问题分析和性能调优。
 
 HiTraceMeter提供ArkTS和C/C++两种接口，按需选择。

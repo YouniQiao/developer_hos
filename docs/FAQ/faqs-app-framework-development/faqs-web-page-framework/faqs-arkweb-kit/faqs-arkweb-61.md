@@ -2,9 +2,10 @@
 format: md
 title: "如何解决webview每次调试都需要寻找进程号问题"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-61
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-61
+last_sync: 2026-06-07
+sync_hash: 328ee813
 ---
-
-
 **问题背景：**
 
 在应用开发过程中，调试Web页面时，每次启动DevTools都需要重新映射端口。

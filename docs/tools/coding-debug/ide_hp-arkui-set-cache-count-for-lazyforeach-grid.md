@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-set-cache-count-for-lazyforeach-grid"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-set-cache-count-for-lazyforeach-grid
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-set-cache-count-for-lazyforeach-grid
+last_sync: 2026-06-07
+sync_hash: 31c07b69
 ---
-
-
 # @performance/hp-arkui-set-cache-count-for-lazyforeach-grid
 
 建议在Grid下使用LazyForEach时设置合理的cacheCount。

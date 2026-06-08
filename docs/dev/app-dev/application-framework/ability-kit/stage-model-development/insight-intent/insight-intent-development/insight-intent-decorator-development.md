@@ -2,9 +2,10 @@
 title: "使用装饰器开发意图"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-development/insight-intent-decorator-development
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-development/insight-intent-decorator-development
+last_sync: 2026-06-07
+sync_hash: 3a03086e
 ---
-
-
 ## 使用场景
 
 从 API version 20开始，支持通过装饰器开发意图，支持将现有功能通过装饰器快速集成至系统入口。典型场景介绍如下。

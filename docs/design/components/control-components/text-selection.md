@@ -3,8 +3,10 @@ title: 文本选择菜单
 sidebar_label: 文本选择菜单
 original_url: /docs/design/components/control-components/text-selection
 format: md
+upstream_id: design/components/control-components/text-selection
+last_sync: 2026-06-07
+sync_hash: d779bfb3
 ---
-
 \{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 文本选择菜单

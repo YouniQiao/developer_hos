@@ -2,9 +2,10 @@
 title: "首曝"
 original_url: /docs/dev/game-dev/games-center-big-event-first-exposure-0000002285953806
 format: md
+upstream_id: dev/game-dev/games-center-big-event-first-exposure-0000002285953806
+last_sync: 2026-06-07
+sync_hash: bde6540a
 ---
-
-
 首曝是指游戏首次向玩家发布PV、实机视频等内容。
 
 ## 前提条件

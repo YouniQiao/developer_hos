@@ -2,9 +2,10 @@
 title: "数据库备份与恢复 (ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/data-reliability-security/data-backup-and-restore
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/data-reliability-security/data-backup-and-restore
+last_sync: 2026-06-07
+sync_hash: d5e0b6fe
 ---
-
-
 ## 场景介绍
 
 如果操作或存储的过程中出现问题，开发者可以使用恢复功能，将数据库恢复到之前的状态，重新对数据库进行操作。

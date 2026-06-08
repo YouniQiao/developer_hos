@@ -2,9 +2,10 @@
 format: md
 title: "编译报错 “Unknown resource name”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-36
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-36
+last_sync: 2026-06-07
+sync_hash: 933b6ca0
 ---
-
-
 **场景一：**
 
 **问题现象**

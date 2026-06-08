@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "地图不显示"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-faq/map-faq-1
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-faq/map-faq-1
+last_sync: 2026-06-07
+sync_hash: 402570bc
 ---
-
-
 **现象描述**
 
 无法加载地图。

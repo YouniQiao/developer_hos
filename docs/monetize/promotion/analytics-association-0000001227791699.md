@@ -3,8 +3,10 @@ title: "分析工具管理"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/analytics-association-0000001227791699
 format: md
+upstream_id: monetize/promotion/analytics-association-0000001227791699
+last_sync: 2026-06-07
+sync_hash: 4c0c50ef
 ---
-
 # 分析工具管理
 
 ## 概述

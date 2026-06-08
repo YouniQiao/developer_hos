@@ -2,9 +2,10 @@
 title: "NDK开发导读"
 original_url: /docs/dev/ndk-dev/ndk-development-overview
 format: md
+upstream_id: dev/ndk-dev/ndk-development-overview
+last_sync: 2026-06-07
+sync_hash: f4991d1b
 ---
-
-
 NDK（Native Development Kit）是HarmonyOS SDK提供的Native API、相应编译脚本和编译工具链的集合，方便开发者使用C或C++语言实现应用的关键功能。NDK只覆盖了HarmonyOS一些基础的底层能力，如C运行时基础库libc、图形库、窗口系统、多媒体、压缩库、面向ArkTS/JS与C跨语言的Node-API等，没有提供ArkTS/JS API的完整能力。
 
 运行状态，开发者可以使用NDK中的Node-API接口，访问、创建、操作JS对象；也允许JS对象使用Native动态库。

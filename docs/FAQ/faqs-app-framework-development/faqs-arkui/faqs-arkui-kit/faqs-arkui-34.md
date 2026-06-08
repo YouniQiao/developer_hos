@@ -2,9 +2,10 @@
 title: "如何监听当前屏幕的横竖屏状态？如何实现页面跟随屏幕横竖屏自动旋转"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-34
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-34
+last_sync: 2026-06-07
+sync_hash: 2aee95ad
 ---
-
-
 应用可以使用 display.on 监听屏幕状态的变化。
 
 页面跟随屏幕旋转的方法如下：

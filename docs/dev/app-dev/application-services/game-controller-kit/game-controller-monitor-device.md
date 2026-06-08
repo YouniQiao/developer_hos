@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "监听设备上下线（C/C++）"
 original_url: /docs/dev/app-dev/application-services/game-controller-kit/game-controller-monitor-device
 format: md
+upstream_id: dev/app-dev/application-services/game-controller-kit/game-controller-monitor-device
+last_sync: 2026-06-07
+sync_hash: 60a949d2
 ---
-
-
 ## 功能介绍
 
 Game Controller Kit提供设备上下线事件监听和查询在线设备信息的功能。注册监听事件后，设备拔插时可获取实时回调通知，同时支持查询当前所有在线设备的具体信息。

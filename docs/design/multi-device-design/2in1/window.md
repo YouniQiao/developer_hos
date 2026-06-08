@@ -3,8 +3,10 @@ title: 窗口框架
 sidebar_label: 窗口框架
 original_url: /docs/design/multi-device-design/2in1/window
 format: md
+upstream_id: design/multi-device-design/2in1/window
+last_sync: 2026-06-07
+sync_hash: 72b6a5ee
 ---
-
 # 窗口框架
 
 窗口是系统中各个应用的载体，用户通过窗口对应用内容进行查看和交互。在电脑上，窗口可作为一个单独对象进行查看和操作，通常支持打开、关闭、调整尺寸，支持最小化、最大化和分屏显示。

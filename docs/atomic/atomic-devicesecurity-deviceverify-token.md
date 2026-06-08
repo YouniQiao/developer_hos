@@ -2,9 +2,10 @@
 title: "基于服务账号生成鉴权令牌"
 original_url: /docs/dev/atomic-dev/atomic-devicesecurity-prepare/atomic-devicesecurity-deviceverify-token
 format: md
+upstream_id: dev/atomic-dev/atomic-devicesecurity-prepare/atomic-devicesecurity-deviceverify-token
+last_sync: 2026-06-07
+sync_hash: 51ff18b9
 ---
-
-
 ## 概述
 
 服务账号（Service Account）是一种可实现服务器与服务器之间接口鉴权的账号，在华为开发者联盟的[API Console](https://developer.huawei.com/consumer/cn/console/overview)上创建服务账号，您可根据返回的公私钥在业务应用中生成鉴权令牌，调用支持此类鉴权的华为公开API。

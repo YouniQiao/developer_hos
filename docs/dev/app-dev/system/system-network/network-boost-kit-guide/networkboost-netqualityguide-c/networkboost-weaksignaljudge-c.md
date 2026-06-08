@@ -2,9 +2,10 @@
 title: "弱网感知判决 (C/C++)"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide-c/networkboost-weaksignaljudge-c
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide-c/networkboost-weaksignaljudge-c
+last_sync: 2026-06-07
+sync_hash: b112c609
 ---
-
-
 通过[网络质量评估（C++）](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide-c/networkboost-qoscallback-c)和[网络场景识别（C++）](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide-c/networkboost-scenecallback-c)章节，弱网感知判决可归纳为3种方式获取：
 
 **监听系统实时判决**：

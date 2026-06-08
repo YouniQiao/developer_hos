@@ -1,11 +1,13 @@
 ---
-
 title: "创建对象类型"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-objecttype
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-objecttype
+last_sync: 2026-06-07
+sync_hash: c6ad12e8
+upstream_hash: 490ad1c9e0df
 ---
-
 
 # 创建对象类型
 

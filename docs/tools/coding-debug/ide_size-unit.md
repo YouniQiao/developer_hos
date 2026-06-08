@@ -3,9 +3,10 @@ title: "@cross-device-app-dev/size-unit"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_size-unit
 format: md
+upstream_id: tools/coding-debug/ide_size-unit
+last_sync: 2026-06-07
+sync_hash: 45ed331b
 ---
-
-
 # @cross-device-app-dev/size-unit
 
 组件通用属性width、height和size，应当使用vp作为单位，以适配不同设备屏幕宽度。

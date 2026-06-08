@@ -2,9 +2,10 @@
 format: md
 title: "DevEco Studio中如何设置超长日志自动换行"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-15
+upstream_id: FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-15
+last_sync: 2026-06-07
+sync_hash: 3d3a8b1d
 ---
-
-
 启用Soft-Wrap功能以实现日志消息的自动换行。
 
 ![](./img/d2bfaeb6.png "点击放大")

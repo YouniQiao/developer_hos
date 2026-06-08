@@ -3,9 +3,10 @@ title: "场景化体检"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-app-analyzer-scenes
 format: md
+upstream_id: tools/coding-debug/ide-app-analyzer-scenes
+last_sync: 2026-06-07
+sync_hash: e014c4d4
 ---
-
-
 # 场景化体检
 
 场景化体检支持页面滑动、页面间转场、冷启动等多种测试场景，开发者可以基于实际的应用场景进行测试。

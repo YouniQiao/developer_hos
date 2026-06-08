@@ -3,6 +3,10 @@ title: "修改交并差定向"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modifyexpression-0000001135626808
 format: md
+upstream_id: monetize/promotion/marketapi-modifyexpression-0000001135626808
+last_sync: 2026-06-07
+sync_hash: 04403ceb
+upstream_hash: 567484952cc1
 ---
 
 # 修改交并差定向

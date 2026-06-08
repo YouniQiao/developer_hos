@@ -3,8 +3,11 @@ title: "分享"
 original_url: /docs/dev/atomic-dev/operations-fulfillment-capability-development/atomic-share-development
 has_merged_cells: true
 format: md
+upstream_id: dev/atomic-dev/operations-fulfillment-capability-development/atomic-share-development
+last_sync: 2026-06-07
+sync_hash: c78abf06
+upstream_hash: f95a28ab096b
 ---
-
 
 ## 场景介绍
 

@@ -2,9 +2,10 @@
 title: "停止PageAbility"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/stop-pageability
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/stop-pageability
+last_sync: 2026-06-07
+sync_hash: 64287d30
 ---
-
-
 停止PageAbility通过featureAbility中的terminateSelf接口实现。
 
 **表1** featureAbility接口说明

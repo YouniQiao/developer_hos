@@ -2,9 +2,10 @@
 title: "使用Node-API接口在主线程中进行模块加载"
 original_url: /docs/dev/ndk-dev/use-napi-load-module
 format: md
+upstream_id: dev/ndk-dev/use-napi-load-module
+last_sync: 2026-06-07
+sync_hash: c9cec167
 ---
-
-
 ## 场景介绍
 
 Node-API中的napi\_load\_module接口的功能是在主线程中进行模块的加载，当模块加载出来之后，可以使用函数napi\_get\_property获取模块导出的变量，也可以使用napi\_get\_named\_property获取模块导出的函数。

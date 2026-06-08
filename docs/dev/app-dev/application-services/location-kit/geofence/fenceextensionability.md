@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "云侧围栏开发指导"
 original_url: /docs/dev/app-dev/application-services/location-kit/geofence/fenceextensionability
 format: md
+upstream_id: dev/app-dev/application-services/location-kit/geofence/fenceextensionability
+last_sync: 2026-06-07
+sync_hash: 6ca5b68a
 ---
-
-
 ## 概述
 
 云侧围栏是指开发者直接使用云侧公共围栏，当用户进入这个区域，在移动设备上进行有针对性的提醒。

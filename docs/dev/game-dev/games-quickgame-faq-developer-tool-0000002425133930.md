@@ -2,9 +2,10 @@
 title: "快游戏开发者工具"
 original_url: /docs/dev/game-dev/games-quickgame-faq-developer-tool-0000002425133930
 format: md
+upstream_id: dev/game-dev/games-quickgame-faq-developer-tool-0000002425133930
+last_sync: 2026-06-07
+sync_hash: c022f1a2
 ---
-
-
 ## 如何使用工具自带的adb
 
 * **问题描述**

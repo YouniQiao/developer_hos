@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "传感器开发概述"
 original_url: /docs/dev/app-dev/system/system-hardware/sensor-service-kit/sensor/sensor-overview
 format: md
+upstream_id: dev/app-dev/system/system-hardware/sensor-service-kit/sensor/sensor-overview
+last_sync: 2026-06-07
+sync_hash: f4f94e0d
 ---
-
-
 ## 传感器类型
 
 系统传感器是应用访问底层硬件传感器的一种设备抽象概念。开发者根据传感器提供的[@ohos.sensor (传感器)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sensor)，可以查询设备上的传感器，订阅传感器数据，并根据传感器数据定制相应的算法开发各类应用，比如指南针、运动健康、游戏等。

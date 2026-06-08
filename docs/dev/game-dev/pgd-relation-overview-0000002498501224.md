@@ -2,9 +2,10 @@
 title: "Relation概述"
 original_url: /docs/dev/game-dev/pgd-relation-overview-0000002498501224
 format: md
+upstream_id: dev/game-dev/pgd-relation-overview-0000002498501224
+last_sync: 2026-06-07
+sync_hash: baca2f4c
 ---
-
-
 Relation是用于表示实体与目标的关系，在PGD中可通过该模块自定义关系。
 
 方便后续说明，引入A -R-&gt; B（V）为表示一个关系对，说明A与B之间存在某种关系R，关系对中存在值V，其中V可以为空。

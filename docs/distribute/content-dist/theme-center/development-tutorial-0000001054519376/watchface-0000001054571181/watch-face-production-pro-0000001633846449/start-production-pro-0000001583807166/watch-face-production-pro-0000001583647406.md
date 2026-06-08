@@ -2,9 +2,10 @@
 title: "制作表盘"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/start-production-pro-0000001583807166/watch-face-production-pro-0000001583647406
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/start-production-pro-0000001583807166/watch-face-production-pro-0000001583647406
+last_sync: 2026-06-07
+sync_hash: ab6b089e
 ---
-
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # 制作表盘

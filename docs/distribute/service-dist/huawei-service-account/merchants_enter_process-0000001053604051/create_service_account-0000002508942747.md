@@ -3,9 +3,10 @@ title: "步骤4 创建服务号"
 displayed_sidebar: serviceDistSidebar
 original_url: /docs/distribute/service-dist/huawei-service-account/merchants_enter_process-0000001053604051/create_service_account-0000002508942747
 format: md
+upstream_id: distribute/service-dist/huawei-service-account/merchants_enter_process-0000001053604051/create_service_account-0000002508942747
+last_sync: 2026-06-07
+sync_hash: 1e3ce8ff
 ---
-
-
 # 步骤4 创建服务号
 
 ## 进入服务号列表页

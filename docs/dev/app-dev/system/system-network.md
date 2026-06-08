@@ -2,8 +2,11 @@
 title: "网络"
 original_url: /docs/dev/app-dev/system/system-network
 format: md
+upstream_id: dev/app-dev/system/system-network
+last_sync: 2026-06-07
+sync_hash: 9ebfd7c4
+upstream_hash: 43bd072a0875
 ---
-
 
 * **[Connectivity Kit（短距通信服务）](/docs/dev/app-dev/system/system-network/connectivity-kit)**
 * **[Distributed Service Kit（分布式管理服务）](/docs/dev/app-dev/system/system-network/distributed-service-kit)**

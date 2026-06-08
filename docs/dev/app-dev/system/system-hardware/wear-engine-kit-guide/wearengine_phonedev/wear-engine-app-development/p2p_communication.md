@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "应用间消息通信"
 original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/p2p_communication
 format: md
+upstream_id: dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/p2p_communication
+last_sync: 2026-06-07
+sync_hash: 5612ab54
 ---
-
-
 ## 约束与限制
 
 * 使用该功能前，请确保对端设备侧已有对应的应用。

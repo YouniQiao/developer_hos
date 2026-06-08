@@ -2,9 +2,10 @@
 format: md
 title: "XComponent组件如何设置背景颜色"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-126
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-126
+last_sync: 2026-06-07
+sync_hash: e0e01e70
 ---
-
-
 XComponent组件仅在XComponentType为TEXTURE时支持设置，XComponentType为SURFACE类型时不支持通用属性包括背景颜色设置，需采用EGL/OpenGLES或子组件内容设置。
 
 **参考链接**

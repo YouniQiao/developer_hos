@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "相机启动恢复实践(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-background-recovery
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-background-recovery
+last_sync: 2026-06-07
+sync_hash: c878dfc8
 ---
-
-
 当前示例提供完整的相机应用从后台切换至前台启动恢复的流程介绍，方便开发者了解完整的接口调用顺序。
 
 相机应用在前后台切换过程中的状态变化说明：

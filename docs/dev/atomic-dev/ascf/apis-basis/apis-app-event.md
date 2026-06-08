@@ -2,9 +2,10 @@
 title: "应用级事件"
 original_url: /docs/dev/atomic-dev/ascf/apis-basis/apis-app-event
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-basis/apis-app-event
+last_sync: 2026-06-07
+sync_hash: 978bf4f9
 ---
-
-
 ## has.onAppShow
 
 has.onAppShow(function callback)

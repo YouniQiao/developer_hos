@@ -2,9 +2,10 @@
 title: "知识问答"
 original_url: /docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-rag/data-augmentation-rag-development
 format: md
+upstream_id: dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-rag/data-augmentation-rag-development
+last_sync: 2026-06-07
+sync_hash: d587c22d
 ---
-
-
 知识问答是通过检索增强生成（RAG）技术，从数据源中精准提取信息并生成答案的智能交互方式。可用于企业客服、医疗辅助、IT支持等领域。
 
 ## 约束限制

@@ -2,9 +2,10 @@
 title: "合并分片"
 original_url: /docs/distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-obbfile-compose-0000002271160625
 format: md
+upstream_id: distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-obbfile-compose-0000002271160625
+last_sync: 2026-06-07
+sync_hash: a81f2a17
 ---
-
-
 #### 功能介绍
 
 此接口用于将已经上传成功后的分片合并为一个文件。

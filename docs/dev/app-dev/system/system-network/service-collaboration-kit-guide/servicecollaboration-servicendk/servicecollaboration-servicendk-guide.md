@@ -2,9 +2,10 @@
 title: "跨设备互通NDK开发指导"
 original_url: /docs/dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-servicendk/servicecollaboration-servicendk-guide
 format: md
+upstream_id: dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-servicendk/servicecollaboration-servicendk-guide
+last_sync: 2026-06-07
+sync_hash: 6c39c136
 ---
-
-
 跨设备互通提供相机、扫描以及图库（图片和视频）的跨设备调用能力，TV、Tablet或PC/2in1设备可以调用Phone的相机、扫描、图库等功能，并且在6.1.0(23)之后支持TV、Phone、Tablet或PC/2in1设备调用支持拍照、扫描、选择图库中图片与视频能力的Phone，支持拍照、扫描、选择图库中图片与视频能力的Tablet，以及支持选择图库中图片与视频能力的PC/2in1设备。
 
 ## 场景介绍

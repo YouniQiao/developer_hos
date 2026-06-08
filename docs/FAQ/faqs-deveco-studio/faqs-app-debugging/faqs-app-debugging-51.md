@@ -2,9 +2,10 @@
 format: md
 title: "如何解决调试启动时，一直卡在Waiting for application to come online notification的问题"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-51
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-51
+last_sync: 2026-06-07
+sync_hash: dde6d30a
 ---
-
-
 这种情况可能是由以下条件触发的：
 
 * 调试侧拿到的还是旧的进程pid

@@ -2,9 +2,10 @@
 title: "启用认证方式"
 original_url: /docs/distribute/agc/agc-help-auth-preparation-0000002236496826/agc-help-auth-enable-authentication-method-0000002383148278
 format: md
+upstream_id: distribute/agc/agc-help-auth-preparation-0000002236496826/agc-help-auth-enable-authentication-method-0000002383148278
+last_sync: 2026-06-07
+sync_hash: d1abeaf9
 ---
-
-
 开通认证服务后，您可以进入“认证方式”页签，点击需要启用的认证方式所在行的“启用”。
 
 ![](../img/agc-help-auth-enable-authentication-method-0000002383148278_0.png)

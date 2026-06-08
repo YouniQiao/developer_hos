@@ -2,9 +2,10 @@
 title: "提交发布"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-app-submit-0000002271160585
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-app-submit-0000002271160585
+last_sync: 2026-06-07
+sync_hash: 8275c8ab
 ---
-
-
 #### 功能介绍
 
 此接口用于提交HarmonyOS应用/元服务审核，调用本接口前必须保证应用信息已补充完整，应用软件包已经上传。

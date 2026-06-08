@@ -3,8 +3,10 @@ title: "创建合约广告"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-heyueguangaochaungjian-0000001790031397
 format: md
+upstream_id: monetize/promotion/ads-heyueguangaochaungjian-0000001790031397
+last_sync: 2026-06-07
+sync_hash: 3f1cd722
 ---
-
 # 创建合约广告
 
 ## 投放流程

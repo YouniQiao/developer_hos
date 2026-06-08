@@ -2,9 +2,10 @@
 format: md
 title: "如何提高代码混淆率"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-89
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-89
+last_sync: 2026-06-07
+sync_hash: bbf930a4
 ---
-
-
 **问题描述**
 
 闭源库如何确保其闭源性和安全性？

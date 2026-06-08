@@ -2,9 +2,10 @@
 title: "配置用户协议"
 original_url: /docs/distribute/agc/agc-help-privacy-policy-0000002316794885/agc-help-privacy-user-agreement-0000002282265450
 format: md
+upstream_id: distribute/agc/agc-help-privacy-policy-0000002316794885/agc-help-privacy-user-agreement-0000002282265450
+last_sync: 2026-06-07
+sync_hash: 63571cad
 ---
-
-
 配置的用户协议会在首次使用HarmonyOS应用/元服务时弹框展示。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。

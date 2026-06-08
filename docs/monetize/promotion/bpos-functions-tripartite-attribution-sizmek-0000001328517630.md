@@ -3,8 +3,10 @@ title: "Sizmek"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-functions-tripartite-attribution-sizmek-0000001328517630
 format: md
+upstream_id: monetize/promotion/bpos-functions-tripartite-attribution-sizmek-0000001328517630
+last_sync: 2026-06-07
+sync_hash: d8ae29ab
 ---
-
 # Sizmek
 
 ## 概述

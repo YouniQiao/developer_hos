@@ -2,9 +2,10 @@
 title: "使用SM4对称密钥（GCM模式）分段加解密(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-sm4-sym-encrypt-decrypt-gcm-by-segment
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-sm4-sym-encrypt-decrypt-gcm-by-segment
+last_sync: 2026-06-07
+sync_hash: fa62ad6d
 ---
-
-
 对应的算法规格请查看[对称密钥加解密算法规格：SM4](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-spec/crypto-sym-encrypt-decrypt-spec#sm4)。
 
 **加密**

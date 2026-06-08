@@ -2,9 +2,10 @@
 title: "激励广告"
 original_url: /docs/dev/atomic-dev/atomic-ads-publisher-service-dev/atomic-ads-publisher-service-reward
 format: md
+upstream_id: dev/atomic-dev/atomic-ads-publisher-service-dev/atomic-ads-publisher-service-reward
+last_sync: 2026-06-07
+sync_hash: c15a857a
 ---
-
-
 ## 场景介绍
 
 激励广告是一种全屏幕的视频广告，用户可以选择点击观看，以换取相应奖励。
@@ -513,7 +514,7 @@ format: md
 
 ## 测试激励广告
 
-激励广告测试广告位ID，仅可用于调测激励广告功能，不可用于广告变现，在应用正式发布前需替换为正式的激励广告位ID。您应在应用发布前先进入[流量变现官网](https://developer.huawei.com/consumer/cn/monetize)，点击“开始变现”，登录[鲸鸿动能媒体服务平台](https://developer.huawei.com/consumer/cn/service/ads/publisher/html/index.html?lang=zh)，申请正式的广告位ID并替换测试广告位ID，具体操作详情请参见[展示位创建](https://developer.huawei.com/consumer/cn/doc/distribution/monetize/zhanshiweichuangjian-0000001132700049)。
+激励广告测试广告位ID，仅可用于调测激励广告功能，不可用于广告变现，在应用正式发布前需替换为正式的激励广告位ID。您应在应用发布前先进入[流量变现官网](https://developer.huawei.com/consumer/cn/monetize)，点击“开始变现”，登录[鲸鸿动能媒体服务平台](https://developer.huawei.com/consumer/cn/service/ads/publisher/html/index.html?lang=zh)，申请正式的广告位ID并替换测试广告位ID，具体操作详情请参见[展示位创建](/docs/monetize/monetization/zhanshiweichuangjian-0000001132700049)。
 
 激励广告测试广告位ID列表如下：
 

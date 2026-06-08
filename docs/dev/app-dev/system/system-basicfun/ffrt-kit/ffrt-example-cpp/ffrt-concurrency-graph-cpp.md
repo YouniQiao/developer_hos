@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Function Flow Runtime图依赖并发(C++)"
 original_url: /docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-cpp/ffrt-concurrency-graph-cpp
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-cpp/ffrt-concurrency-graph-cpp
+last_sync: 2026-06-07
+sync_hash: 386497aa
 ---
-
-
 ## 概述
 
 FFRT图依赖并发范式支持任务依赖和数据依赖两种方式构建任务依赖图。任务依赖图中每个节点表示一个任务，边表示任务之间的依赖关系。任务依赖分为输入依赖in\_deps和输出依赖out\_deps。

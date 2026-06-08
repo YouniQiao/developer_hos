@@ -3,8 +3,10 @@ title: "客户投放伙伴主账户（一级服务商）"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-start-customer-partner-master-0000001293695534
 format: md
+upstream_id: monetize/promotion/bp-start-customer-partner-master-0000001293695534
+last_sync: 2026-06-07
+sync_hash: 625bbf83
 ---
-
 # 客户投放伙伴主账户（一级服务商）
 
 ## 账号注册

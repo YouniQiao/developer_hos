@@ -2,9 +2,10 @@
 title: "个人数据处理说明"
 original_url: /docs/dev/atomic-dev/health-harmonyos-as/health-personal-data-atomicservice-as
 format: md
+upstream_id: dev/atomic-dev/health-harmonyos-as/health-personal-data-atomicservice-as
+last_sync: 2026-06-07
+sync_hash: ea9542b2
 ---
-
-
 华为是数据处理者，不是数据控制者，数据使用目的和方式由用户自己决定。
 
 此文档针对华为作为最终用户数据处理者，开发者作为最终用户数据控制者的数据处理进行说明，包括：

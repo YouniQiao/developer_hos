@@ -2,9 +2,10 @@
 format: md
 title: "如何实现类似keyframes的效果"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-157
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-157
+last_sync: 2026-06-07
+sync_hash: d29913e7
 ---
-
-
 可以通过设置动画的延迟播放时间（delay）或在onFinish回调中启动新动画来实现类似效果。参考代码如下：
 
 ```

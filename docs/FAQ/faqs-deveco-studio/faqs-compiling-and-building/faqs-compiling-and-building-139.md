@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“Method setProperty validate failed in hvigorfile.ts”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-139
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-139
+last_sync: 2026-06-07
+sync_hash: 341e9587
 ---
-
-
 **错误描述**
 
 setProperty方法在hvigorfile.ts中校验失败。

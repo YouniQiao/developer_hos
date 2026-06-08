@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用AVScreenCapture录屏写文件(C/C++)"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-recording-c/using-avscreencapture-for-file
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-c/media-recording-c/using-avscreencapture-for-file
+last_sync: 2026-06-07
+sync_hash: 4986ddbd
 ---
-
-
 屏幕录制主要为主屏幕录屏功能。
 
 开发者可以调用[AVScreenCapture](/docs/dev/app-dev/media/media-kit/media-kit-intro#avscreencapture)模块的C API接口，完成屏幕录制，采集设备内、麦克风等的音视频源数据。可以调用录屏模块获取音视频文件，然后通过文件的形式流转到其他模块进行播放或处理，达成文件形式分享屏幕内容的场景。

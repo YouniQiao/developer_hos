@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "任务执行类场景方案（配置文件接入方式）"
 original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-access-programme/intents-skill-all-rec-configuration
 format: md
+upstream_id: dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-access-programme/intents-skill-all-rec-configuration
+last_sync: 2026-06-07
+sync_hash: 942fed6a
 ---
-
-
 ## 方案概述
 
 开发者需要按照意图定义，进行意图注册并实现意图调用；用户通过对小艺对话进行自然语言输入，小艺理解语义转换成意图调用（含意图参数），执行意图调用实现对应交互体验。

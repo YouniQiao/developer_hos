@@ -2,9 +2,10 @@
 title: "上传文件"
 original_url: /docs/distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-upload-file-0000002271160621
 format: md
+upstream_id: distribute/agc/agc-help-upload-api-reference-0000002236041486/agc-help-upload-api-upload-file-0000002271160621
+last_sync: 2026-06-07
+sync_hash: 3fa23335
 ---
-
-
 #### 功能介绍
 
 客户端或服务器向AppGallery Connect上传相关文件接口。

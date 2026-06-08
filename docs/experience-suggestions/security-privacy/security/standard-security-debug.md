@@ -2,8 +2,11 @@
 title: "WebView安全"
 original_url: /docs/experience-suggestions/security-privacy/security/standard-security-debug
 format: md
+upstream_id: experience-suggestions/security-privacy/security/standard-security-debug
+last_sync: 2026-06-07
+sync_hash: 4de35870
+upstream_hash: 8fcd96557119
 ---
-
 
 # WebView安全
 

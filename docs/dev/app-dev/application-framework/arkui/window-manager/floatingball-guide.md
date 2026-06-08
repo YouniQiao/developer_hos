@@ -2,8 +2,11 @@
 title: "全局闪控球开发指导"
 original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/floatingball-guide
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/window-manager/floatingball-guide
+last_sync: 2026-06-07
+sync_hash: 67d4476a
+upstream_hash: a566f07c0195
 ---
-
 
 ## 场景介绍
 

@@ -2,9 +2,10 @@
 title: "定义Lookup组件"
 original_url: /docs/dev/game-dev/pgd-lookup-definition-0000002483642393
 format: md
+upstream_id: dev/game-dev/pgd-lookup-definition-0000002483642393
+last_sync: 2026-06-07
+sync_hash: 28dc9986
 ---
-
-
 ## 基本Lookup组件
 
 继承ILookup接口的Component。

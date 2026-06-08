@@ -2,9 +2,10 @@
 title: "媒体查询 (@ohos.mediaquery)"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-layout-development-media-query
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-layout-development-media-query
+last_sync: 2026-06-07
+sync_hash: 08f798da
 ---
-
-
 ## 概述
 
 [媒体查询](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-mediaquery)作为响应式设计的核心，在移动设备上应用十分广泛。媒体查询可根据不同设备类型或同设备不同状态修改应用的样式。媒体查询常用于下面两种场景：

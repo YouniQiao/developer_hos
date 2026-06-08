@@ -2,9 +2,10 @@
 format: md
 title: "如何在Native侧往用户目录写临时文件"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-11
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-11
+last_sync: 2026-06-07
+sync_hash: fa5dd1c8
 ---
-
-
 **问题详情**
 
 应用目录中，用户可以将临时文件写入以下目录。请查看native层写文件的代码示例：

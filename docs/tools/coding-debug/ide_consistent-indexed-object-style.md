@@ -3,9 +3,10 @@ title: "@typescript-eslint/consistent-indexed-object-style"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_consistent-indexed-object-style
 format: md
+upstream_id: tools/coding-debug/ide_consistent-indexed-object-style
+last_sync: 2026-06-07
+sync_hash: 43dddfc9
 ---
-
-
 # @typescript-eslint/consistent-indexed-object-style
 
 允许或禁止使用“Record”类型。

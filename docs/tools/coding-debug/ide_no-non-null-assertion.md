@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-non-null-assertion"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-non-null-assertion
 format: md
+upstream_id: tools/coding-debug/ide_no-non-null-assertion
+last_sync: 2026-06-07
+sync_hash: c19534c8
 ---
-
-
 # @typescript-eslint/no-non-null-assertion
 
 禁止以感叹号作为后缀的方式使用非空断言。

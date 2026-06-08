@@ -2,8 +2,10 @@
 title: "文件上传下载优化"
 original_url: /docs/quality/file-upload-and-download-performance
 format: md
+upstream_id: /docs/quality/file-upload-and-download-performance
+last_sync: 2026-06-07
+sync_hash: 4a6fa676
 ---
-
 # 文件上传下载优化
 
 ## 概述

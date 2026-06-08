@@ -2,9 +2,10 @@
 title: "使用瀑布流"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-list-and-grid-ndk/ndk-waterflow
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-list-and-grid-ndk/ndk-waterflow
+last_sync: 2026-06-07
+sync_hash: 7d134550
 ---
-
-
 ArkUI开发框架在NDK接口提供了瀑布流容器组件，通过瀑布流自身的排列规则，将不同大小的"项目"自上而下如瀑布般紧密布局。
 
 ## 接入ArkTS页面

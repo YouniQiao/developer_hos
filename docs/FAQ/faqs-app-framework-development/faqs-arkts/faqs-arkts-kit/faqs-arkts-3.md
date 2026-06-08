@@ -2,9 +2,10 @@
 format: md
 title: "如何使用正则表达式"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-3
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-3
+last_sync: 2026-06-07
+sync_hash: a0f5b7a8
 ---
-
-
 首先使用new RegExp()定义一个正则表达式：
 
 ```

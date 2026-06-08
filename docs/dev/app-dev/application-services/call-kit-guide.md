@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Call Service Kit（通话服务）"
 original_url: /docs/dev/app-dev/application-services/call-kit-guide
 format: md
+upstream_id: dev/app-dev/application-services/call-kit-guide
+last_sync: 2026-06-07
+sync_hash: e42eebe4
 ---
-
-
 * **[Call Service Kit简介](/docs/dev/app-dev/application-services/call-kit-guide/call-introduction)**
 * **[开发准备](/docs/dev/app-dev/application-services/call-preparations)**
 * **[来电场景](/docs/dev/app-dev/application-services/call-kit-guide/incoming-calls)**

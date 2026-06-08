@@ -2,9 +2,10 @@
 title: "Content Embed Kit术语"
 original_url: /docs/dev/app-dev/application-framework/content-embed-kit/content-embed-kit-terminology
 format: md
+upstream_id: dev/app-dev/application-framework/content-embed-kit/content-embed-kit-terminology
+last_sync: 2026-06-07
+sync_hash: e7c7a388
 ---
-
-
 本文介绍Content Embed Kit相关术语。
 
 ## OE

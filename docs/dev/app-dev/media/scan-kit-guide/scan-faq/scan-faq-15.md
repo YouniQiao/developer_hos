@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "自定义界面扫码如何实现扫码框"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-15
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-15
+last_sync: 2026-06-07
+sync_hash: b06f15d2
 ---
-
-
 **问题现象**
 
 扫码界面没有类似扫码框呈现。

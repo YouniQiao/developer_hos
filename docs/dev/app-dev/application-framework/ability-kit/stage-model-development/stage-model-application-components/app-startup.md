@@ -2,9 +2,10 @@
 title: "应用启动框架AppStartup"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/app-startup
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/app-startup
+last_sync: 2026-06-07
+sync_hash: 238980e9
 ---
-
-
 ## 概述
 
 应用启动时通常需要执行一系列初始化启动任务，如果将启动任务都放在[HAP](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package)的[UIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability)组件的[onCreate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-uiability#oncreate)生命周期中，那么只能在主线程中依次执行，不但影响应用的启动速度，而且当启动任务过多时，任务之间复杂的依赖关系还会使得代码难以维护。

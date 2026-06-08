@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "智能填充服务"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling
+last_sync: 2026-06-07
+sync_hash: aff0e35b
 ---
-
-
 * **[智能填充概述](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-introduction-to-smart-fill)**
 * **[典型场景展示](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-introduction-typical-scenario)**
 * **[动态修改ContentType值](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-amend)**

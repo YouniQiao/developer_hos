@@ -2,9 +2,10 @@
 title: "认领核准（备案）"
 original_url: /docs/dev/game-dev/quickgame-filing-app-claim-0000001900078324
 format: md
+upstream_id: dev/game-dev/quickgame-filing-app-claim-0000001900078324
+last_sync: 2026-06-07
+sync_hash: 4a40426e
 ---
-
-
 ## 前提条件
 
 已前往应用市场下载最新版本的华为云App。

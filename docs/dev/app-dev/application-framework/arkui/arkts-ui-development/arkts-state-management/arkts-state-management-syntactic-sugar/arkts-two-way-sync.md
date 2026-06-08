@@ -2,9 +2,10 @@
 title: "$$语法：系统组件双向同步"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-syntactic-sugar/arkts-two-way-sync
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-syntactic-sugar/arkts-two-way-sync
+last_sync: 2026-06-07
+sync_hash: 3c508b14
 ---
-
-
 $$运算符为系统组件提供TS变量的引用，使得TS变量和系统组件的内部状态保持同步。
 
 内部状态的具体含义取决于组件。例如，[TextInput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput)组件的text参数。

@@ -3,9 +3,10 @@ title: "@typescript-eslint/prefer-nullish-coalescing"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_prefer-nullish-coalescing
 format: md
+upstream_id: tools/coding-debug/ide_prefer-nullish-coalescing
+last_sync: 2026-06-07
+sync_hash: 1b2c0e31
 ---
-
-
 # @typescript-eslint/prefer-nullish-coalescing
 
 强制使用空值合并运算符（??）而不是逻辑运算符。

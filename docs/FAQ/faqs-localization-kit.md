@@ -2,9 +2,10 @@
 format: md
 title: "本地化开发（Localization）"
 original_url: /docs/FAQ/faqs-localization-kit
+upstream_id: FAQ/faqs-localization-kit
+last_sync: 2026-06-07
+sync_hash: 6dcccca2
 ---
-
-
 * **[如何读取rawfile中的xml文件并转化为string类型](/docs/FAQ/faqs-app-framework-development/faqs-accessibility-localization/faqs-localization-kit/faqs-localization-3)**
 * **[如何获取resource目录下的资源](/docs/FAQ/faqs-app-framework-development/faqs-accessibility-localization/faqs-localization-kit/faqs-localization-4)**
 * **[如何将Resource资源对象转成string类型](/docs/FAQ/faqs-app-framework-development/faqs-accessibility-localization/faqs-localization-kit/faqs-localization-7)**

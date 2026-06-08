@@ -2,9 +2,10 @@
 format: md
 title: "录制成功但回放效果不符合预期"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-13
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-13
+last_sync: 2026-06-07
+sync_hash: 0dcabb0d
 ---
-
-
 **问题现象**
 
 录制成功但回放效果不符合预期，未按照录制时的操作正确回放。

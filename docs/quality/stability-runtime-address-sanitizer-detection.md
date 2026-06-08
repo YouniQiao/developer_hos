@@ -2,9 +2,10 @@
 title: "地址越界类问题检测方法"
 original_url: /docs/quality/stability-runtime-address-sanitizer-detection
 format: md
+upstream_id: /docs/quality/stability-runtime-address-sanitizer-detection
+last_sync: 2026-06-07
+sync_hash: 31154396
 ---
-
-
 # 地址越界类问题检测方法
 
 ## 地址越界定义

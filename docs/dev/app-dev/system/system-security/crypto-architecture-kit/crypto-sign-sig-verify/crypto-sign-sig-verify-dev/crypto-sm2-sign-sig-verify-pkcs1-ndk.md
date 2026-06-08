@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用SM2密钥对签名验签 (C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-sm2-sign-sig-verify-pkcs1-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-sm2-sign-sig-verify-pkcs1-ndk
+last_sync: 2026-06-07
+sync_hash: 7f02f75d
 ---
-
-
 对应的算法规格请查看[签名验签算法规格：SM2](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-overview#sm2)。
 
 ## 在CMake脚本中链接相关动态库

@@ -3,9 +3,10 @@ title: "Local Test"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-local-test
 format: md
+upstream_id: tools/coding-debug/ide-local-test
+last_sync: 2026-06-07
+sync_hash: c87cb380
 ---
-
-
 # Local Test
 
 ![](./img/note_3.0-zh-cn.png)

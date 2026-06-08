@@ -3,6 +3,10 @@ title: "精选推荐-系统投放-OCPD任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/mktapi-adtask-top-sys-ocpd-0000001366046005
 format: md
+upstream_id: monetize/promotion/mktapi-adtask-top-sys-ocpd-0000001366046005
+last_sync: 2026-06-07
+sync_hash: d0e142ec
+upstream_hash: 56e70b26a68e
 ---
 
 # 精选推荐-系统投放-OCPD任务

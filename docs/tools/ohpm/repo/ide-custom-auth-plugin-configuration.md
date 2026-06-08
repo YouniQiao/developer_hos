@@ -2,9 +2,10 @@
 title: "自定义认证插件配置"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-custom-auth-plugin-configuration
+upstream_id: tools/ohpm/repo/ide-custom-auth-plugin-configuration
+last_sync: 2026-06-07
+sync_hash: c8449283
 ---
-
-
 # 自定义认证插件配置
 
 ohpm-repo从2.3.0版本开始支持自定义认证插件（需配套使用1.8.0及以上版本ohpm命令行工具），允许您使用AccessToken认证，开发定制化的认证插件来对接开发者自己的用户信息系统。

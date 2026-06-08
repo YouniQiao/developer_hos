@@ -2,9 +2,10 @@
 title: "使用运动和方向传感器监测设备状态"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-sensor
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-sensor
+last_sync: 2026-06-07
+sync_hash: 2499970b
 ---
-
-
 ## 概述
 
 运动和方向传感器，如加速度计、陀螺仪等，能够监测设备的运动状态和方向变化，例如设备的旋转、倾斜等。

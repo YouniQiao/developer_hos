@@ -2,9 +2,10 @@
 title: "首发"
 original_url: /docs/dev/game-dev/games-center-big-event-first-applyfor-0000002320553305
 format: md
+upstream_id: dev/game-dev/games-center-big-event-first-applyfor-0000002320553305
+last_sync: 2026-06-07
+sync_hash: 8967304c
 ---
-
-
 首发是指从未公开运营过的新游戏，首次面向用户公开正式运营。
 
 ## 前提条件

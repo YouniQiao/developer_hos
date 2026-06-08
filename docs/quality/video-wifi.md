@@ -2,9 +2,10 @@
 title: "视频场景Wi-Fi加载低功耗建议"
 original_url: /docs/quality/video-wifi
 format: md
+upstream_id: /docs/quality/video-wifi
+last_sync: 2026-06-07
+sync_hash: 4e78e435
 ---
-
-
 # 视频场景Wi-Fi加载低功耗建议
 
 ## 建议

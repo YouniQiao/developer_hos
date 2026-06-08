@@ -2,9 +2,10 @@
 title: "消息摘要计算MD5(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-generate-message/crypto-generate-message-digest-dev/crypto-generate-message-digest-md5
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-generate-message/crypto-generate-message-digest-dev/crypto-generate-message-digest-md5
+last_sync: 2026-06-07
+sync_hash: a730fe20
 ---
-
-
 对应的算法规格请查看[消息摘要计算算法规格](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-generate-message/crypto-generate-message-digest-overview#支持的算法与规格)。
 
 ![](./img/699d6194.png)

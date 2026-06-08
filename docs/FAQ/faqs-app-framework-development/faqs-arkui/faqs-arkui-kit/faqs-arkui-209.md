@@ -2,9 +2,10 @@
 format: md
 title: "ArkUI有没有在组件刷新后的回调事件"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-209
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-209
+last_sync: 2026-06-07
+sync_hash: 7ffc7ee4
 ---
-
-
 当组件状态变量改变时，会刷新组件。具体分为以下两种情况：
 
 1. 如果是组件的属性刷新，可以将属性存储为状态变量，并使用@Watch监听状态变量的变化。

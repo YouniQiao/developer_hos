@@ -3,8 +3,10 @@ title: "业务介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-intelligent-subcontract-introduction-0000001285128664
 format: md
+upstream_id: monetize/promotion/bp-functions-intelligent-subcontract-introduction-0000001285128664
+last_sync: 2026-06-07
+sync_hash: a299856b
 ---
-
 # 业务介绍
 
 ![](./img/e64c31dc1a84.png) 

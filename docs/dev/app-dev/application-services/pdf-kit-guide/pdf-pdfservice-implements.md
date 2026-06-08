@@ -3,10 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "pdfService能力"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements
+last_sync: 2026-06-07
+sync_hash: 45b59e80
 ---
-
-
-* **[打开和保存PDF文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/pdf-open-document)**
+* **[打开和保存PDF文档](/docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-open-document)**
 * **[添加、删除PDF页](/docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-add-delete-page)**
 * **[PDF页面文本、图片和批注](/docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-add-txt-img-annot)**
 * **[转换PDF文档为图片](/docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-doc-to-imgs)**

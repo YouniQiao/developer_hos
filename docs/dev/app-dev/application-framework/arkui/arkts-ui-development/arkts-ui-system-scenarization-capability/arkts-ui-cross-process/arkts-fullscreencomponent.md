@@ -2,9 +2,10 @@
 title: "全屏启动元服务组件（FullScreenLaunchComponent）"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-ui-cross-process/arkts-fullscreencomponent
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-ui-cross-process/arkts-fullscreencomponent
+last_sync: 2026-06-07
+sync_hash: 96e97fa2
 ---
-
-
 FullScreenLaunchComponent允许开发者以全屏方式拉起元服务，使得应用能够提供更友好的用户体验。
 
 ![](./img/6a15b2e9.png)

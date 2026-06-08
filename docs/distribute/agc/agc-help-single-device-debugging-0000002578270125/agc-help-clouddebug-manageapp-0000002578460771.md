@@ -2,9 +2,10 @@
 title: "管理应用"
 original_url: /docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-manageapp-0000002578460771
 format: md
+upstream_id: distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-manageapp-0000002578460771
+last_sync: 2026-06-07
+sync_hash: f620226b
 ---
-
-
 在云调试服务主界面，选择“我的信息”页签，您可以在下方“应用”页签上传、删除应用，或是查看已上传应用的相关信息。
 
 * 上传应用：点击“本地上传”区域，从本地上传HAP或APP格式的应用。

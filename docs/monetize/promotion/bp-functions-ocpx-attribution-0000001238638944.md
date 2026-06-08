@@ -3,8 +3,10 @@ title: "对接归因"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-ocpx-attribution-0000001238638944
 format: md
+upstream_id: monetize/promotion/bp-functions-ocpx-attribution-0000001238638944
+last_sync: 2026-06-07
+sync_hash: 7217e2ac
 ---
-
 # 对接归因
 
 根据需要选择您的归因对接方案，建议您优先使用监测链接进行对接。

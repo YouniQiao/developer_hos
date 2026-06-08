@@ -2,9 +2,10 @@
 title: "创建门店"
 original_url: /docs/dev/atomic-dev/instant-service-store-management/instant-service-store-create
 format: md
+upstream_id: dev/atomic-dev/instant-service-store-management/instant-service-store-create
+last_sync: 2026-06-07
+sync_hash: cf85c391
 ---
-
-
 ## 功能介绍
 
 本接口用于商家向平台提交门店创建申请。商家通过传入门店信息，请求在平台侧注册新门店。平台接收到请求后，将进行数据校验并启动审核流程。

@@ -3,8 +3,10 @@ title: "国家/地区数据"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-data-country-0000001174597589
 format: md
+upstream_id: monetize/promotion/marketing-api-data-country-0000001174597589
+last_sync: 2026-06-07
+sync_hash: 9eeb87d5
 ---
-
 # 国家/地区数据
 
 您通过本接口查询计划或任务国家维度统计报表，包括各个国家的花费、点击量、点击均价等。

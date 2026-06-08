@@ -3,9 +3,10 @@ title: "上传任务管理"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/education-center/educenter-content-0000001145356855/educenter-uploadtask-0000001052357079
 format: md
+upstream_id: distribute/content-dist/education-center/educenter-content-0000001145356855/educenter-uploadtask-0000001052357079
+last_sync: 2026-06-07
+sync_hash: 7c5303b7
 ---
-
-
 # 上传任务管理
 
 为提升开发者上传内容的效率，方便用户快速创建多个章节或多个课程而不被上传文件阻塞。当您添加或编辑课程时，添加课程文件或章节文件后文件随即开始上传。

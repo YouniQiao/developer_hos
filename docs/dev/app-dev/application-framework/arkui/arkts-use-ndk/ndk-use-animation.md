@@ -2,9 +2,10 @@
 title: "使用动画"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-use-animation
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-use-animation
+last_sync: 2026-06-07
+sync_hash: 1fd23954
 ---
-
-
 ## 使用属性动画
 
 [ArkUI](/docs/dev/app-dev/application-framework/arkui/arkui-overview)开发框架在[NDK](/docs/dev/ndk-dev/ndk-development-overview)接口主要提供属性动画，实现组件出现/消失转场。同时，可以通过Node-API桥接[ArkTS](/docs/dev/app-dev/application-framework/arkts/arkts-overview)侧帧动画能力，实现Native侧的动画效果。

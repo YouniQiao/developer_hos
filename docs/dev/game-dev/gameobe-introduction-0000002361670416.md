@@ -3,9 +3,10 @@ title: "业务概述"
 original_url: /docs/dev/game-dev/gameobe-introduction-0000002361670416
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/gameobe-introduction-0000002361670416
+last_sync: 2026-06-07
+sync_hash: 02975cf8
 ---
-
-
 |  |  |
 | --- | --- |
 | 联机对战服务为多人联机游戏提供了房间管理、玩家匹配、队伍管理、消息通信等功能，具备优质的联网和服务端能力。您的游戏只需要接入SDK即可快速实现多人联机对战，提升游戏体验，并降低游戏开发成本。联机对战服务主要适用于回合制（棋牌类）、实时对战（休闲对战、[MOBA](#ZH-CN_TOPIC_0000002361670416__p881611376159)、[FPS](#ZH-CN_TOPIC_0000002361670416__p87268417152)类）等类型游戏。 |  |

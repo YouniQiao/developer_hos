@@ -1,8 +1,10 @@
 ---
 title: "导航定位场景低功耗规则"
 original_url: /docs/quality/navigation-scenarios
+upstream_id: /docs/quality/navigation-scenarios
+last_sync: 2026-06-07
+sync_hash: 8b13b141
 ---
-
 # 导航定位场景低功耗规则
 
 ## 规则

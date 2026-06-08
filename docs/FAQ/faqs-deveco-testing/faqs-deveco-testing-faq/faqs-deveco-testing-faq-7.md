@@ -2,9 +2,10 @@
 format: md
 title: "使用DevEco Testing/DevEco Testing Hypium有疑问，如何自助查阅资料及指南"
 original_url: /docs/FAQ/faqs-deveco-testing/faqs-deveco-testing-faq/faqs-deveco-testing-faq-7
+upstream_id: FAQ/faqs-deveco-testing/faqs-deveco-testing-faq/faqs-deveco-testing-faq-7
+last_sync: 2026-06-07
+sync_hash: 3b97236e
 ---
-
-
 **DevEco Testing资料查询：**
 
 方式1：访问DevEco Testing客户端的任务创建页面，在右下角查看各测试服务的使用指南。

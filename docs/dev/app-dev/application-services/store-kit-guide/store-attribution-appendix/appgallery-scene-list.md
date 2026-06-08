@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "场景值"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution-appendix/appgallery-scene-list
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-attribution-appendix/appgallery-scene-list
+last_sync: 2026-06-07
+sync_hash: 5e9750a9
 ---
-
-
 ## 元服务场景值
 
 元服务的场景值用来描述用户进入元服务的路径。您可以遵循此场景值规则来实现进入元服务场景的归因功能。

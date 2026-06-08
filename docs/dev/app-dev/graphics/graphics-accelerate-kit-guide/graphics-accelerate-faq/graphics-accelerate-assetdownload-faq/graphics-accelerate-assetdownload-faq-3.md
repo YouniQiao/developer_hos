@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "集成了游戏资源加速ExtensionAbility方法，未配置网络权限，导致功能未生效"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-assetdownload-faq/graphics-accelerate-assetdownload-faq-3
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-assetdownload-faq/graphics-accelerate-assetdownload-faq-3
+last_sync: 2026-06-07
+sync_hash: a191d4c1
+upstream_hash: 28c36c66798d
 ---
-
 
 未配置网络权限将出现如下异常日志：
 

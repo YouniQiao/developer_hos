@@ -2,9 +2,10 @@
 title: "更新商品"
 original_url: /docs/dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-update
 format: md
+upstream_id: dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-update
+last_sync: 2026-06-07
+sync_hash: 067fe997
 ---
-
-
 ## 功能介绍
 
 本接口用于商家对已在平台创建的商品进行信息更新。调用该接口仅修改商品的管理态数据（即草稿数据），不影响当前线上展示内容。更新后的管理态商品需经平台审核通过后，其数据才会覆盖线上态数据，正式对外生效。

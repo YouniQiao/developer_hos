@@ -2,9 +2,10 @@
 title: "命令式节点常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-arkui-framenode-faq
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-arkui-framenode-faq
+last_sync: 2026-06-07
+sync_hash: c1467695
 ---
-
-
 本文档介绍命令式节点的常见问题并提供参考。
 
 ## FrameNode节点运行时出现jscrash

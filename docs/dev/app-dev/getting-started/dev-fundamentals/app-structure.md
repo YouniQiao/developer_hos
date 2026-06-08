@@ -1,8 +1,10 @@
 ---
 title: "app对象内部结构"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/app-structure
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/app-structure
+last_sync: 2026-06-07
+sync_hash: b06ba5b8
 ---
-
 app对象包含应用全局配置信息，内部结构如下：
 
 **表1** **app对象内部结构说明**

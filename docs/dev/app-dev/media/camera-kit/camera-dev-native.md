@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发相机应用基础能力(C/C++)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-native
+last_sync: 2026-06-07
+sync_hash: eb491e42
 ---
-
-
 * **[预览(C/C++)](/docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-preview)**
 * **[预览流二次处理(C/C++)](/docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-preview-imagereceiver)**
 * **[拍照(C/C++)](/docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-shooting)**

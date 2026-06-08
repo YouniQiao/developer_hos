@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "摄像头被遮挡一段时间后再放开，输出的位姿有跳变"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/arengine-faq/arengine-faq-2
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/arengine-faq/arengine-faq-2
+last_sync: 2026-06-07
+sync_hash: da8a413f
+upstream_hash: 57778b6861d5
 ---
-
 
 ## 现象描述
 

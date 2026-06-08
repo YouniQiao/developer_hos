@@ -3,8 +3,10 @@ title: "查询任务创意详情"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-creative-querydetail-0000001179448922
 format: md
+upstream_id: monetize/promotion/marketapi-creative-querydetail-0000001179448922
+last_sync: 2026-06-07
+sync_hash: 09fed949
 ---
-
 # 查询任务创意详情
 
 ## 功能介绍

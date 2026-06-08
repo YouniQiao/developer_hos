@@ -2,9 +2,10 @@
 title: "帧同步"
 original_url: /docs/dev/game-dev/gameobe-sync-csharp-0000002395190601
 format: md
+upstream_id: dev/game-dev/gameobe-sync-csharp-0000002395190601
+last_sync: 2026-06-07
+sync_hash: 846ca4ce
 ---
-
-
 您可以通过调用联机对战服务相关接口，实现帧同步，保证端与端之间的稳定通信。同时，联机对战服务还提供了两种补帧方式，可用于补帧相关使用场景。
 
 ## 前提条件

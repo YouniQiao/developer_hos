@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "绘制效果"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/drawing-effect
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/drawing-effect
+last_sync: 2026-06-07
+sync_hash: e68d85e3
 ---
-
-
 * **[绘制效果概述](/docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/drawing-effect/drawing-effect-overview)**
 * **[基础绘制效果（ArkTS）](/docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/drawing-effect/basic-drawing-effect-arkts)**
 * **[复杂绘制效果（ArkTS）](/docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/drawing-effect/complex-drawing-effect-arkts)**

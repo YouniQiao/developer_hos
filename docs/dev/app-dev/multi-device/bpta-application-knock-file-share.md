@@ -3,8 +3,10 @@ title: "碰一碰文件分享"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-application-knock-file-share
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-application-knock-file-share
+last_sync: 2026-06-07
+sync_hash: 5622910d
 ---
-
 # 碰一碰文件分享
 
 ## 概述

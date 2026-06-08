@@ -2,8 +2,11 @@
 format: md
 title: "List的下拉加载如何回滚到当前展示位置"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-268
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-268
+last_sync: 2026-06-07
+sync_hash: 43bc9fde
+upstream_hash: fec1c962ce0a
 ---
-
 
 **需求描述：**
 

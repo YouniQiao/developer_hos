@@ -1,12 +1,12 @@
 ---
-
 title: "开发准备"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-prepare
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-prepare
+last_sync: 2026-06-07
+sync_hash: d5fed9f0
 ---
-
-
 # 开发准备
 
 ## 注册华为开发者账号并实名认证

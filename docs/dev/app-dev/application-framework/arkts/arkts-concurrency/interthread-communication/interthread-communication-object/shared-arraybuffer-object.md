@@ -2,9 +2,10 @@
 title: "SharedArrayBuffer对象"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/shared-arraybuffer-object
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/shared-arraybuffer-object
+last_sync: 2026-06-07
+sync_hash: a737d3b3
 ---
-
-
 SharedArrayBuffer内部包含一块Native内存，其JS对象壳被分配在虚拟机本地堆（LocalHeap）。支持跨并发实例间共享Native内存，但是对共享Native内存的访问及修改需要采用Atomics类，防止数据竞争。SharedArrayBuffer可用于多个并发实例间的状态或数据共享。通信过程如下图所示：
 
 ![](./img/e5e7010e.png)

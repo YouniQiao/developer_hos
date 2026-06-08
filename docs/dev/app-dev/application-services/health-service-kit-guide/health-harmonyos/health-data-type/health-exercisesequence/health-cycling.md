@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "骑行"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-cycling
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-cycling
+last_sync: 2026-06-07
+sync_hash: f16a5bdf
 ---
-
-
 йӘ‘иЎҢзӣёе…ій”»зӮји®°еҪ•зұ»еһӢеҰӮдёӢпјҡ
 
 | **й”»зӮји®°еҪ•еӯҗзұ»еһӢеёёйҮҸ** | **жҸҸиҝ°** | ж•°жҚ®жқҘжәҗ |

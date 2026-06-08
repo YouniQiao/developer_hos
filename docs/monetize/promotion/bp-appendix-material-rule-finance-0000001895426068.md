@@ -3,8 +3,10 @@ title: "金融"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-appendix-material-rule-finance-0000001895426068
 format: md
+upstream_id: monetize/promotion/bp-appendix-material-rule-finance-0000001895426068
+last_sync: 2026-06-07
+sync_hash: 835b7ea2
 ---
-
 # 金融
 
 ## 金融行业通用审核规范

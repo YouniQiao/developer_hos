@@ -3,9 +3,10 @@ title: "命令：全景换肤&lt; StyleCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-stylecommand-0000002471235086
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-stylecommand-0000002471235086
+last_sync: 2026-06-07
+sync_hash: c779b37c
 ---
-
-
 # 命令：全景换肤&lt; StyleCommand&gt;
 
 ## 功能概述

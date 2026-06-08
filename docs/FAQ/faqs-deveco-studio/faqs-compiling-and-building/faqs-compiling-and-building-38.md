@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“The reason and usedScene attributes are mandatory for user_grant permissions”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-38
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-38
+last_sync: 2026-06-07
+sync_hash: 13dfd52d
 ---
-
-
 **问题现象**
 
 DevEco Studio编译失败，提示“The reason and usedScene attributes are mandatory for user\_grant permissions”。

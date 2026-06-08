@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "地点选取"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-advanced-controls/map-location-selecting
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-advanced-controls/map-location-selecting
+last_sync: 2026-06-07
+sync_hash: dd959957
 ---
-
-
 ## 场景介绍
 
 本章节将向您介绍如何集成地点选取控件，您无需自己开发地图页面，可快速实现地点选取的能力。该控件不支持在智能表设备中调用。

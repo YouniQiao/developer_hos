@@ -3,9 +3,10 @@ title: "互动评论"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-interaction-comments-0000001239182361
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-interaction-comments-0000001239182361
+last_sync: 2026-06-07
+sync_hash: 5ef0e743
 ---
-
-
 # 互动评论
 
 为了提供更加便利、优质的服务，进一步优化用户体验，互动评论已经迁移到应用市场统一开放平台AppGallery Connect，进入AppGallery Connect，选择您需要查看的应用即可进入互动评论界面。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取游戏密钥"
 original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-appendix/gameservice-key
 format: md
+upstream_id: dev/app-dev/application-services/game-service-kit-guide/gameservice-appendix/gameservice-key
+last_sync: 2026-06-07
+sync_hash: e12aa1bf
 ---
-
-
 在开发者服务器加签或验签时，请开发者前往AppGallery Connect获取游戏私钥或游戏公钥。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，在“开发与服务”下选择项目及项目下的游戏。

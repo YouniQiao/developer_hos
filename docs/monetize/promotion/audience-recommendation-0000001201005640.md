@@ -3,8 +3,10 @@ title: "推荐受众人群"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/audience-recommendation-0000001201005640
 format: md
+upstream_id: monetize/promotion/audience-recommendation-0000001201005640
+last_sync: 2026-06-07
+sync_hash: 286e1a32
 ---
-
 # 推荐受众人群
 
 ## 概述

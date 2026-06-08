@@ -2,9 +2,10 @@
 format: md
 title: "app.json5文件与工程级build-profile.json5文件的区别"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-88
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-88
+last_sync: 2026-06-07
+sync_hash: 79d840eb
 ---
-
-
 使用场景和优先级存在差异。
 
 * app.json5 文件用于定义应用的全局配置信息，包括 Bundle 名称、开发厂商和版本号等。如果在应用中使用 app.json5 文件进行全局配置，这些配置会被 build-profile.json5 文件中相同包名的配置覆盖。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "订阅应用终止事件（C/C++）"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-killed-events/hiappevent-watcher-app-killed-events-ndk
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-killed-events/hiappevent-watcher-app-killed-events-ndk
+last_sync: 2026-06-07
+sync_hash: 07fe0ad3
 ---
-
-
 ## 应用终止事件规格说明
 
 请参考[应用终止事件介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/app-killed-events/hiappevent-watcher-app-killed-events)。

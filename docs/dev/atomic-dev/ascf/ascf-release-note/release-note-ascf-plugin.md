@@ -2,9 +2,10 @@
 title: "ASCF Plugin"
 original_url: /docs/dev/atomic-dev/ascf/ascf-release-note/release-note-ascf-plugin
 format: md
+upstream_id: dev/atomic-dev/ascf/ascf-release-note/release-note-ascf-plugin
+last_sync: 2026-06-07
+sync_hash: abcdae20
 ---
-
-
 ## 1.0.4.305
 
 **发布日期**：2026/4/30

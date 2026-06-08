@@ -2,9 +2,10 @@
 title: "避免硬编码与拼接"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/l10n/l10n-translation/l10n-hard-coding-concatenate
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/l10n/l10n-translation/l10n-hard-coding-concatenate
+last_sync: 2026-06-07
+sync_hash: 16bfa99e
 ---
-
-
 ## 使用场景
 
 本地化的关键操作是资源文件的翻译，为提升翻译可行性在开发过程中应避免硬编码与拼接。

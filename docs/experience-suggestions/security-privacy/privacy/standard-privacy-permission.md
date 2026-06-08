@@ -2,9 +2,10 @@
 title: "数据主体访问"
 original_url: /docs/experience-suggestions/security-privacy/privacy/standard-privacy-permission
 format: md
+upstream_id: experience-suggestions/security-privacy/privacy/standard-privacy-permission
+last_sync: 2026-06-07
+sync_hash: 93db9c53
 ---
-
-
 # 数据主体访问
 
 |  |  |

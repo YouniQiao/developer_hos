@@ -2,9 +2,10 @@
 title: "使用TaskPool执行多个耗时任务"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide/multi-time-consuming-tasks
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide/multi-time-consuming-tasks
+last_sync: 2026-06-07
+sync_hash: b73db6b3
 ---
-
-
 多个任务同时执行时，由于任务复杂度不同，执行时间和返回数据的时间也会不同。如果宿主线程需要所有任务执行完毕的数据，可以通过[TaskGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-taskpool#taskgroup10)的方式实现。
 
 除了以上情况，如果需要处理的数据量较大，例如一个列表中有10000条数据，将这些数据放在一个Task中处理会非常耗时。那么就可以将原始数据拆分成多个子列表，为每个子列表分配一个独立的Task执行，等待全部Task执行完成后合并结果形成完整的数据，这样可以节省处理时间，提升用户体验。

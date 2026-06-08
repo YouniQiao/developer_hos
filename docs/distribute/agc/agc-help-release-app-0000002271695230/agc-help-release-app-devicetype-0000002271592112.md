@@ -2,9 +2,10 @@
 title: "配置支持设备"
 original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-devicetype-0000002271592112
 format: md
+upstream_id: distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-devicetype-0000002271592112
+last_sync: 2026-06-07
+sync_hash: 69578073
 ---
-
-
 发布时，您可以为应用配置分发至多种设备，默认发布设备为您创建应用时选择的设备类型，您可以根据实际情况进行修改。您只需发布一次，用户即可在多种设备上使用您的应用。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。

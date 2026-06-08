@@ -3,9 +3,10 @@ title: "@performance/multiple-associations-state-var-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-multi-associations-state-var-check
 format: md
+upstream_id: tools/coding-debug/ide-multi-associations-state-var-check
+last_sync: 2026-06-07
+sync_hash: bcc76579
 ---
-
-
 # @performance/multiple-associations-state-var-check
 
 多个组件关联同一数据时，建议在组件中使用@Watch装饰器添加更新条件，避免不必要的组件更新。

@@ -2,9 +2,10 @@
 title: "应用功耗体验"
 original_url: /docs/quality/power-consumption-experience
 format: md
+upstream_id: /docs/quality/power-consumption-experience
+last_sync: 2026-06-07
+sync_hash: 91d8614d
 ---
-
-
 # 应用功耗体验
 
 ## 应用功耗体验建议

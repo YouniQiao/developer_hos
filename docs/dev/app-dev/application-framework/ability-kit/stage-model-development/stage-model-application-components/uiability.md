@@ -2,9 +2,10 @@
 title: "UIAbility组件"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability
+last_sync: 2026-06-07
+sync_hash: 7cc0909c
 ---
-
-
 * **[UIAbility组件概述](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-overview)**
 * **[UIAbility组件生命周期](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-lifecycle)**
 * **[UIAbility组件启动模式](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/uiability/uiability-launch-type)**

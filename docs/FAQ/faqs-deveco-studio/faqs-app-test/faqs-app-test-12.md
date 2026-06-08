@@ -2,9 +2,10 @@
 format: md
 title: "录制结束时提示录制失败，无录制文件生成"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-12
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-12
+last_sync: 2026-06-07
+sync_hash: a05dd9dd
 ---
-
-
 **可能原因**
 
 录制能力依赖的uitest检测能力被其他程序占用。

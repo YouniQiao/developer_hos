@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Scan Kit（统一扫码服务）"
 original_url: /docs/dev/app-dev/media/scan-kit-guide
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide
+last_sync: 2026-06-07
+sync_hash: 192f34a3
 ---
-
-
 * **[Scan Kit简介](/docs/dev/app-dev/media/scan-kit-guide/scan-introduction)**
 * **[开发准备](/docs/dev/app-dev/media/scan-kit-guide/scan-config-agc)**
 * **[接入“扫码直达”服务](/docs/dev/app-dev/media/scan-kit-guide/scan-directservice)**

@@ -2,9 +2,10 @@
 format: md
 title: "如何给UI组件设置不同情况下的属性"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-8
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-8
+last_sync: 2026-06-07
+sync_hash: 47658173
 ---
-
-
 使用if/else条件渲染设置组件属性值。具体可参考示例代码：
 
 ```

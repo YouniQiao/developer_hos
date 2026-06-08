@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-implicit-any-catch"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-implicit-any-catch
 format: md
+upstream_id: tools/coding-debug/ide_no-implicit-any-catch
+last_sync: 2026-06-07
+sync_hash: 4c7fc3df
 ---
-
-
 # @typescript-eslint/no-implicit-any-catch
 
 禁止在 catch 表达式中使用隐式“any”类型。

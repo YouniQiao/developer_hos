@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "瓦片图层"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-tile
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-drawing/map-tile
+last_sync: 2026-06-07
+sync_hash: 0d206fae
 ---
-
-
 ## 场景介绍
 
 新增瓦片图层（TileOverlay）, 该图层支持添加自有瓦片数据，包括在线下载和本地加载两种方式。该图层可随地图的平移、缩放、旋转等操作做相应的变换，它仅位于底图之上（即瓦片图层将会遮挡底图，不遮挡其他图层），瓦片图层的添加顺序不会影响其他图层的叠加关系。

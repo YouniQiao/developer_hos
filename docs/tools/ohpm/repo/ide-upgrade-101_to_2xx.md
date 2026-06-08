@@ -2,9 +2,10 @@
 title: "1.0.1升级至2.X.X/5.X.X版本"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-upgrade-101_to_2xx
+upstream_id: tools/ohpm/repo/ide-upgrade-101_to_2xx
+last_sync: 2026-06-07
+sync_hash: 1738f4bf
 ---
-
-
 # 1.0.1升级至2.X.X/5.X.X版本
 
 升级至2.X.X版本与升级至5.X.X版本步骤一致，本文以升级至2.X.X版本为例。

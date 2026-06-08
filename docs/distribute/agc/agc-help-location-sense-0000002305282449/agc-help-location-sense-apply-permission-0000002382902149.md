@@ -2,9 +2,10 @@
 title: "申请开通权限"
 original_url: /docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-apply-permission-0000002382902149
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-apply-permission-0000002382902149
+last_sync: 2026-06-07
+sync_hash: 546cf630
 ---
-
-
 #### 近场服务权限
 
 目前近场服务处于灰度开放阶段，使用服务之前，请先发送邮件申请开通该权限。申请邮件格式要求如下，华为方收到邮件后，将在15个工作日内完成审核，并邮件告知您审核结果。

@@ -2,9 +2,10 @@
 title: "用户偏好"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-language-user-preferences/i18n-user-preferences
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/i18n/i18n-language-user-preferences/i18n-user-preferences
+last_sync: 2026-06-07
+sync_hash: 34b1b800
 ---
-
-
 ## 使用场景
 
 除区域设置和应用偏好语言设置外，系统还可以设置用户偏好，当前支持本地数字和时制两种偏好。用户偏好设置会保存到系统区域及应用偏好语言中，最终体现在用户界面的国际化特性上。

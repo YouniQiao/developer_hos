@@ -2,9 +2,10 @@
 format: md
 title: "一个HSP模块如何快速切换成HAR模块"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-49
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-49
+last_sync: 2026-06-07
+sync_hash: d6f696cb
 ---
-
-
 **解决方案**
 
 1.在HSP下的module.json5中，把"type": "shared"修改为"type": "har"，删除"deliveryWithInstall"、"pages"字段。

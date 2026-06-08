@@ -3,12 +3,13 @@ displayed_sidebar: appDevSidebar
 title: "使用X963KDF进行密钥派生(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-derivation/crypto-key-derivation-using-x963kdf
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-derivation/crypto-key-derivation-using-x963kdf
+last_sync: 2026-06-07
+sync_hash: 27929f31
 ---
-
-
 从API version 22开始，算法库支持使用该算法进行密钥派生操作。
 
-对应的算法规格请查看[密钥派生算法规格：X963KDF](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-derivation-overview#x963kdf算法)。
+对应的算法规格请查看[密钥派生算法规格：X963KDF](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-derivation/crypto-key-derivation-overview#x963kdf算法)。
 
 ## 开发步骤
 

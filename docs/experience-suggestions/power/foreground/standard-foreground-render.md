@@ -2,9 +2,10 @@
 title: "前台绘制渲染"
 original_url: /docs/experience-suggestions/power/foreground/standard-foreground-render
 format: md
+upstream_id: experience-suggestions/power/foreground/standard-foreground-render
+last_sync: 2026-06-07
+sync_hash: ee75e8fc
 ---
-
-
 # 前台绘制渲染
 
 ### 内容布局使用建议

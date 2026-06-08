@@ -2,9 +2,10 @@
 title: "Stationary开发指导"
 original_url: /docs/dev/app-dev/system/system-hardware/multimodal-awareness-kit/stationary-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-hardware/multimodal-awareness-kit/stationary-guidelines
+last_sync: 2026-06-07
+sync_hash: abaf41df
 ---
-
-
 ## 场景介绍
 
 当应用需要获取当前设备状态时，可以调用Stationary模块，例如：需要判断当前设备处于绝对静止状态或者相对静止状态。

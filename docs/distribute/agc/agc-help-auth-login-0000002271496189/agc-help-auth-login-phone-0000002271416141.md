@@ -2,9 +2,10 @@
 title: "手机号码"
 original_url: /docs/distribute/agc/agc-help-auth-login-0000002271496189/agc-help-auth-login-phone-0000002271416141
 format: md
+upstream_id: distribute/agc/agc-help-auth-login-0000002271496189/agc-help-auth-login-phone-0000002271416141
+last_sync: 2026-06-07
+sync_hash: 8db18457
 ---
-
-
 您可以在应用中集成手机账号认证方式，您的用户可以使用“手机号码+密码”或者“手机号码+验证码”的方式来登录您的应用。
 
 #### 前提条件

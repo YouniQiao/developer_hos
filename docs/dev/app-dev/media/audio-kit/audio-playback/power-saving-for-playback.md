@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "低功耗音频播放"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-playback/power-saving-for-playback
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-playback/power-saving-for-playback
+last_sync: 2026-06-07
+sync_hash: 64a5db37
 ---
-
-
 从API version 11开始支持低功耗音频播放。
 
 低功耗音频播放是一种通过软硬芯协同设计实现的音频渲染方案。其核心机制是增大音频渲染器的内部缓存，使系统能够一次性填充大量音频数据，从而允许主处理器长时间休眠，减少频繁处理音频数据的功耗，显著降低系统级功耗负载。

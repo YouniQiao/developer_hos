@@ -2,9 +2,10 @@
 title: "查看POI测试范围"
 original_url: /docs/distribute/agc/agc-help-beacon-own-real-phone-testing-0000002456745305/agc-help-beacon-view-poi-testing-scope-0000002456705201
 format: md
+upstream_id: distribute/agc/agc-help-beacon-own-real-phone-testing-0000002456745305/agc-help-beacon-view-poi-testing-scope-0000002456705201
+last_sync: 2026-06-07
+sync_hash: bfd13079
 ---
-
-
 如下界面可辅助您查看POI地理围栏范围，以及测试手机是否进入测试POI的200米感应范围内。
 
 当您在“测试位置”下拉框选择需要测试的POI位置后，红色虚线即表示POI的测试范围，距离POI点位大约200米范围内。

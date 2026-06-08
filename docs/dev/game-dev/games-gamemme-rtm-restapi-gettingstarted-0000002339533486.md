@@ -2,9 +2,10 @@
 title: "使用入门"
 original_url: /docs/dev/game-dev/games-gamemme-rtm-restapi-gettingstarted-0000002339533486
 format: md
+upstream_id: dev/game-dev/games-gamemme-rtm-restapi-gettingstarted-0000002339533486
+last_sync: 2026-06-07
+sync_hash: 6b2ad87b
 ---
-
-
 游戏多媒体服务实时信令提供了标准定义的Restful API，支持通过使用Restful API接口向华为RTM服务器发送消息，并广播给指定玩家或频道订阅用户，例如发送游戏公告、消息通知等游戏使用场景。
 
 ## 创建API客户端

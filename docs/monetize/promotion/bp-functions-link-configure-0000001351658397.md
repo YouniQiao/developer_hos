@@ -3,8 +3,10 @@ title: "配置监测链接"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-link-configure-0000001351658397
 format: md
+upstream_id: monetize/promotion/bp-functions-link-configure-0000001351658397
+last_sync: 2026-06-07
+sync_hash: 7b92a395
 ---
-
 # 配置监测链接
 
 ## 操作步骤

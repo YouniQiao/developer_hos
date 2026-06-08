@@ -2,9 +2,10 @@
 title: "rcp模块发起请求时如何设置超时时间"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-remote-communication/faqs-remote-communication-1
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-remote-communication/faqs-remote-communication-1
+last_sync: 2026-06-07
+sync_hash: 35ee05c7
 ---
-
-
 rcp模块发起请求如需要设置超时时间，可在建立session会话前设置SessionConfiguration内有关参数。
 
 相关示例如下：

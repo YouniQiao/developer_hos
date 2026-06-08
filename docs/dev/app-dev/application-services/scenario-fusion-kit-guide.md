@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Scenario Fusion Kit（融合场景服务）"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide
+last_sync: 2026-06-07
+sync_hash: ce7b4e32
 ---
-
-
 * **[Scenario Fusion Kit简介](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-introduction)**
 * **[开发准备](/docs/dev/app-dev/application-services/scenario-fusion-preparations)**
 * **[场景化Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button)**

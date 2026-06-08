@@ -2,9 +2,10 @@
 title: "受限开放权限"
 original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions
 format: md
+upstream_id: dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/restricted-permissions
+last_sync: 2026-06-07
+sync_hash: 869bcc3e
 ---
-
-
 ## 申请方式
 
 当前仅少量符合特殊场景的应用可在通过审批后，使用受限权限，其申请方式请参考：[申请使用受限权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions-in-acl)。

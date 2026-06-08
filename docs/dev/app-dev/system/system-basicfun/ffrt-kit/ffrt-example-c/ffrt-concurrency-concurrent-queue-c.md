@@ -2,9 +2,10 @@
 title: "Function Flow Runtime并发队列(C)"
 original_url: /docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-c/ffrt-concurrency-concurrent-queue-c
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-c/ffrt-concurrency-concurrent-queue-c
+last_sync: 2026-06-07
+sync_hash: 57eb6e98
 ---
-
-
 ## 概述
 
 FFRT并发队列提供了设置任务优先级（Priority）和队列并发度的能力，使得队列中的任务能同时在多个线程上执行，获得更高的并行效果。

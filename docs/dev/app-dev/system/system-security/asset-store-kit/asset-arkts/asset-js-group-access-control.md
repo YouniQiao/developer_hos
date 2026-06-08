@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "管理群组关键资产(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-group-access-control
 format: md
+upstream_id: dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-group-access-control
+last_sync: 2026-06-07
+sync_hash: 95ab7031
+upstream_hash: 5300e9ccdb79
 ---
-
 
 以下为管理群组关键资产使用示例，请先查看开发指导：
 

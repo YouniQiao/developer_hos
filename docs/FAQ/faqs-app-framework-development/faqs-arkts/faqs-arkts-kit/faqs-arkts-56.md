@@ -2,9 +2,10 @@
 format: md
 title: "如何访问类的静态变量和方法"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-56
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-56
+last_sync: 2026-06-07
+sync_hash: 83812103
 ---
-
-
 在ArkTS中，静态变量和方法属于类自身，无法通过this访问，因为this指向类的实例。 若要在类中访问静态变量和方法，需要使用类名。
 
 ```

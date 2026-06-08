@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "潜水"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-diving
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-diving
+last_sync: 2026-06-07
+sync_hash: ecbf9738
 ---
-
-
 ## 自由潜水
 
 ### 自由潜水相关锻炼记录类型如下：

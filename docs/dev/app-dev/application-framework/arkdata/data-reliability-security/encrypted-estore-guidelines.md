@@ -2,9 +2,10 @@
 title: "E类加密数据库的使用 (ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/data-reliability-security/encrypted-estore-guidelines
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/data-reliability-security/encrypted-estore-guidelines
+last_sync: 2026-06-07
+sync_hash: ec272a1d
 ---
-
-
 ## 场景介绍
 
 从安全角度考虑，为满足部分敏感数据的安全特性，提供了E类加密数据库的方案以提高锁屏下数据的安全性。存有敏感信息的应用在申请ohos.permission.PROTECT\_SCREEN\_LOCK\_DATA权限后会在[EL5](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-contextconstant#areamode)路径下创建一个E类数据库。在锁屏的情况下（未调用Access接口获取保留文件密钥）会触发文件密钥的销毁，此时E类数据库不可读写。当锁屏解锁后，密钥会恢复，E类数据库恢复正常读写操作。这样的设计可以有效防止用户数据的泄露。

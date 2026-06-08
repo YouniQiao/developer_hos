@@ -3,9 +3,10 @@ title: "@typescript-eslint/prefer-includes"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_prefer-includes
 format: md
+upstream_id: tools/coding-debug/ide_prefer-includes
+last_sync: 2026-06-07
+sync_hash: 470fd209
 ---
-
-
 # @typescript-eslint/prefer-includes
 
 强制使用“includes”方法而不是“indexOf”方法。

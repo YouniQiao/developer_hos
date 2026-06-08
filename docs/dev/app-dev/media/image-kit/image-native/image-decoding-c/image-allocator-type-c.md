@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "图片解码内存优化(C/C++)"
 original_url: /docs/dev/app-dev/media/image-kit/image-native/image-decoding-c/image-allocator-type-c
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-native/image-decoding-c/image-allocator-type-c
+last_sync: 2026-06-07
+sync_hash: acfd0eda
 ---
-
-
 应用在进行图片解码操作时，需要申请对应内存。内存占用的大小与内存分配类型和像素格式密切相关。当前指导将介绍不同的内存类型、像素格式，以及如何组合使用以达到最优的解码性能。
 
 应用侧通过解码API接口获取PixelMap，并将其传递给Image组件以进行显示。

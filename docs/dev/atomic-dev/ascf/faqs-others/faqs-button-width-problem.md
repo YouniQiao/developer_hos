@@ -2,9 +2,10 @@
 title: "button组件width和实际不一致问题"
 original_url: /docs/dev/atomic-dev/ascf/faqs-others/faqs-button-width-problem
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-others/faqs-button-width-problem
+last_sync: 2026-06-07
+sync_hash: 889d03a2
 ---
-
-
 button存在max-width默认样式，值为448px，若button组件宽度需要超过448px，可设置max-width为none或把值设足够大覆盖默认样式。
 
 **示例：**

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "多目标识别"
 original_url: /docs/dev/app-dev/ai/core-vision-kit-guide/core-vision-object-detection
 format: md
+upstream_id: dev/app-dev/ai/core-vision-kit-guide/core-vision-object-detection
+last_sync: 2026-06-07
+sync_hash: cd71cc8b
 ---
-
-
 ## 适用场景
 
 可同时检测出给定图片中的各种物体，包括风景、动物、植物、建筑、人脸、表格、文本等位置，并框选出物体。

@@ -3,9 +3,10 @@ title: "@correctness/audio-interrupt-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-audio-interrupt-check
 format: md
+upstream_id: tools/coding-debug/ide-audio-interrupt-check
+last_sync: 2026-06-07
+sync_hash: 8260a87e
 ---
-
-
 # @correctness/audio-interrupt-check
 
 建议应用在播放或录制音频的场景中，监听音频焦点中断回调事件，并响应。

@@ -3,8 +3,10 @@ title: "ocpx赔付汇总报表查询"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-hwocpxpfhzbbcx-0000001880115242
 format: md
+upstream_id: monetize/promotion/ads-hwocpxpfhzbbcx-0000001880115242
+last_sync: 2026-06-07
+sync_hash: bba6a6cb
 ---
-
 # ocpx赔付汇总报表查询
 
 您通过本接口通过广告主ID、任务ID查询Ocpx赔付报表数据。

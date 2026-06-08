@@ -3,6 +3,10 @@ title: "SubTaskDetail"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-subtaskdetail-0000001181826459
 format: md
+upstream_id: monetize/promotion/marketapi-modle-subtaskdetail-0000001181826459
+last_sync: 2026-06-07
+sync_hash: 9a85b4af
+upstream_hash: 6b7427ceeb1b
 ---
 
 # SubTaskDetail

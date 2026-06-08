@@ -2,9 +2,10 @@
 format: md
 title: "http是否支持连接复用"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-30
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-30
+last_sync: 2026-06-07
+sync_hash: ec6f21ea
 ---
-
-
 HTTP请求时，底层建立的TCP/IP连接支持连接复用。
 
 **参考链接**

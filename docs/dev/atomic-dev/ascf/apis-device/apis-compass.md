@@ -2,9 +2,10 @@
 title: "罗盘"
 original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-compass
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-device/apis-compass
+last_sync: 2026-06-07
+sync_hash: 65aa2748
 ---
-
-
 ## has.startCompass
 
 has.startCompass(Object object)

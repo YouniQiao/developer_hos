@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "支付并签约场景"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-password-free-pay/payment-pay-and-sign
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-password-free-pay/payment-pay-and-sign
+last_sync: 2026-06-07
+sync_hash: 126cd57b
 ---
-
-
 ## 场景介绍
 
 从4.1.0(11)版本开始，新增支持支付并签约场景。

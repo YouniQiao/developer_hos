@@ -2,8 +2,11 @@
 title: "JS Crash（进程崩溃）检测"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/jscrash-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis/crash-detection/jscrash-guidelines
+last_sync: 2026-06-07
+sync_hash: 5c793c9b
+upstream_hash: 0138f45a7905
 ---
-
 
 ## 简介
 
@@ -28,7 +31,7 @@ format: md
 
 **方式一：通过DevEco Studio获取日志**
 
-DevEco Studio会收集设备/data/log/faultlog/faultlogger/路径下的进程崩溃故障日志到FaultLog中，根据进程名、故障和时间分类显示。获取日志的方法参见：[DevEco Studio使用指南-FaultLog](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-fault-log)。
+DevEco Studio会收集设备/data/log/faultlog/faultlogger/路径下的进程崩溃故障日志到FaultLog中，根据进程名、故障和时间分类显示。获取日志的方法参见：[DevEco Studio使用指南-FaultLog](/docs/tools/coding-debug/ide-fault-log)。
 
 **方式二：通过HiAppEvent接口订阅**
 
@@ -54,7 +57,7 @@ hdc file recv /data/log/faultlog/faultlogger 本地路径
 | Fingerprint | 故障特征，聚类同类问题的哈希值 | 8 | 是 | - |
 | Timestamp | 时间戳 | 8 | 是 | - |
 | Module name | 包名/进程名 | 8 | 是 | - |
-| ReleaseType | 应用的版本类型。release表示应用为[release版本应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)，debug表示应用为[debug版本应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)。 | 23 | 是 | - |
+| ReleaseType | 应用的版本类型。release表示应用为[release版本应用](/docs/tools/coding-debug/ide-hvigor-compilation-options-customizing-guide#section192461528194916)，debug表示应用为[debug版本应用](/docs/tools/coding-debug/ide-hvigor-compilation-options-customizing-guide#section192461528194916)。 | 23 | 是 | - |
 | CpuAbi | 二进制接口类型 | 23 | 是 | - |
 | Version | hap版本 | 8 | 是 | - |
 | VersionCode | 版本编码 | 8 | 是 | - |
@@ -236,7 +239,7 @@ at onPageShow (entry|har1|1.0.0|src/main/ets/pages/Index.ts:7:13)
 2. 执行方法名：onPageShow表示触发该异常的调用方法名称。
 3. 编译产物结构如下：
 
-   * 编译产物路径：详见[异常堆栈解析原理 sourcemap结构：key字段介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-exception-stack-parsing-principle#section1145914292713)。
+   * 编译产物路径：详见[异常堆栈解析原理 sourcemap结构：key字段介绍](/docs/tools/coding-debug/ide-exception-stack-parsing-principle#section1145914292713)。
    * 文件类型：文件扩展名为.ts文件后缀（.js文件无需 SourceMap 映射可直接定位异常）。
 4. 行列号：发生异常的具体行数和这一行的列数，以“:”为分隔符分隔。
 

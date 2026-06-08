@@ -2,9 +2,10 @@
 format: md
 title: "HAR和HSP的使用场景介绍"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-48
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-48
+last_sync: 2026-06-07
+sync_hash: f903b305
 ---
-
-
 HAR主要使用场景：二方库和三方库。
 
 HSP主要使用场景：元服务分包预加载、按需加载。

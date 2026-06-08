@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "推送卡片刷新消息"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-form-update
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-scenes/push-form-update
+last_sync: 2026-06-07
+sync_hash: d8be9030
 ---
-
-
 ## 场景介绍
 
 如今衣食住行娱乐影音应用占据了大多数人的手机，一部手机可以满足日常大多需求，但对需要经常查看或进行简单操作的应用来说，总需要用户点开应用体验较繁琐。针对此种场景，HarmonyOS提供了[Form Kit（卡片开发服务）](/docs/dev/app-dev/application-framework/form-kit)，您可以将应用的重要信息或操作前置到卡片，以达到服务直达、减少体验层级的目的。

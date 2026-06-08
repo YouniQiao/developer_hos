@@ -1,8 +1,10 @@
 ---
 title: "点击响应时延分析"
 original_url: /docs/quality/click-to-click-response-optimization
+upstream_id: /docs/quality/click-to-click-response-optimization
+last_sync: 2026-06-07
+sync_hash: e176f5a4
 ---
-
 # 点击响应时延分析
 
 ## 响应优化概述
@@ -21,9 +23,9 @@ original_url: /docs/quality/click-to-click-response-optimization
 影响点击响应性能的因素很多，使用DevEco Studio集成的分析工具，可以收集系统数据，自动执行重复任务，建立统一优化标准和流程，减少个人差异和误操作的可能性，帮助开发者了解性能瓶颈和优化潜力。分析优化过程中，可能用到以下工具中的一个或多个。
 
 * [AppAnalyzer](/docs/quality/performance-detection#section135451444171)：用于测试和诊断HarmonyOS应用或元服务的质量，快速提供诊断结果和改进建议。使用体检工具在开发阶段发现可能影响上架的兼容性、性能、功耗、稳定性等问题，并支持场景化检测，提升应用基础体验及上架成功率。
-* [ArkUI Inspector](/docs/quality/optimization-overview#section1465143164111)：开发者可以使用[Inspector双向预览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-inspector)，在DevEco Studio上查看应用在真机上的组件布局，并通过查看多次操作后的界面状态，快速分析定位状态变量、组件嵌套层次、UI界面布局存在的问题等。
+* [ArkUI Inspector](/docs/quality/optimization-overview#section1465143164111)：开发者可以使用[Inspector双向预览](/docs/tools/coding-debug/ide-previewer-inspector)，在DevEco Studio上查看应用在真机上的组件布局，并通过查看多次操作后的界面状态，快速分析定位状态变量、组件嵌套层次、UI界面布局存在的问题等。
 * [DevEco Testing](/docs/quality/performance-detection#section3783182023119)：是一款专项集成测试工具，提供了多项测试能力。DevEco Testing将测试能力以测试服务卡片的形式呈现给用户，无需复杂的配置，即可一键执行测试任务，同时提供了测试报告和分析，辅助开发者发现应用和产品问题，提升应用质量。
-* [Profiler Frame](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-frame)：用于深度分析应用或服务卡顿丢帧的原因。Frame用于录制GPU数据信息，录制完成的子泳道对应录制过程中各个进程的帧数据，主要用于深度分析应用或服务卡顿丢帧的原因。
+* [Profiler Frame](/docs/tools/coding-debug/ide-insight-session-frame)：用于深度分析应用或服务卡顿丢帧的原因。Frame用于录制GPU数据信息，录制完成的子泳道对应录制过程中各个进程的帧数据，主要用于深度分析应用或服务卡顿丢帧的原因。
 
 ## 问题定位流程
 
@@ -132,7 +134,7 @@ original_url: /docs/quality/click-to-click-response-optimization
 
    ![](./img/de1f39d1.png "点击放大")
 
-更多使用方法参考[《Frame分析》](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-frame)。
+更多使用方法参考[《Frame分析》](/docs/tools/coding-debug/ide-insight-session-frame)。
 
 ## 响应时延解决方案
 

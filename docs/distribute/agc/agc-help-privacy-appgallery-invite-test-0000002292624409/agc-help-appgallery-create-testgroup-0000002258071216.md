@@ -2,9 +2,10 @@
 title: "创建测试群组"
 original_url: /docs/distribute/agc/agc-help-privacy-appgallery-invite-test-0000002292624409/agc-help-appgallery-create-testgroup-0000002258071216
 format: md
+upstream_id: distribute/agc/agc-help-privacy-appgallery-invite-test-0000002292624409/agc-help-appgallery-create-testgroup-0000002258071216
+last_sync: 2026-06-07
+sync_hash: 7018f001
 ---
-
-
 在创建测试版本前，您需要提前确定需要参与测试的用户。测试用户在AGC中以测试群组的形式来管理，您可以将测试用户添加到测试群组中，在发布测试版本时选择分发到指定的测试群组。
 
 最多可创建300个外部测试群组，所有外部测试群组的测试用户累计去重总数不超过10000个。

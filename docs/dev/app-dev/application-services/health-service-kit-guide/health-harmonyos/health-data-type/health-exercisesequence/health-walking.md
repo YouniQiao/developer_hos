@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "健走"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-walking
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-exercisesequence/health-walking
+last_sync: 2026-06-07
+sync_hash: c685e348
 ---
-
-
 健走相关锻炼记录类型如下：
 
 | **锻炼记录子类型常量** | **描述** | 数据来源 |

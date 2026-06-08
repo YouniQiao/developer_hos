@@ -2,14 +2,15 @@
 title: "打包工具"
 original_url: /docs/dev/app-dev/system/packing-tool
 format: md
+upstream_id: dev/app-dev/system/packing-tool
+last_sync: 2026-06-07
+sync_hash: 716950ca
 ---
-
-
 打包工具用于在程序编译完成后，对编译出的文件等进行打包，以供安装发布。开发者可以使用DevEco Studio进行打包，也可使用打包工具的JAR包进行打包，JAR包通常存放在SDK路径下的toolchains目录中。
 
 打包工具支持生成：Ability类型的模块包（HAP）、动态共享包（HSP）、应用程序包（App）、快速修复模块包（HQF）、快速修复包（APPQF）。
 
-打包指令中的文件来源于[DevEco Studio编译构建产物](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-compile-build)，文件路径查看操作如下。
+打包指令中的文件来源于[DevEco Studio编译构建产物](/docs/tools/coding-debug/ide-compile-build)，文件路径查看操作如下。
 
 1. 在DevEco Studio工程根目录下的/hvigor/hvigor-config.json5文件中，修改"logging"下的"level"字段为"debug"。
 2. 在DevEco Studio菜单栏，依次选择"构建 -> 清理项目"。
@@ -20,7 +21,7 @@ format: md
 
 **表1** module.json与配置文件属性的对照表
 
-| module.json属性 | 含义 | [module.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#配置文件标签)配置项 | [app.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file#配置文件标签)配置项 | [工程级build-profile.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app)配置项 |
+| module.json属性 | 含义 | [module.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#配置文件标签)配置项 | [app.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/app-configuration-file#配置文件标签)配置项 | [工程级build-profile.json5](/docs/tools/coding-debug/ide-hvigor-build-profile-app)配置项 |
 | --- | --- | --- | --- | --- |
 | bundleName | 应用的Bundle名称。 | - | bundleName | - |
 | bundleType | 应用的Bundle类型。 | - | bundleType | - |
@@ -181,7 +182,7 @@ java -jar app_packing_tool.jar --mode app [--hap-path <path>] [--hsp-path <path>
 | --pack-res-path | 否 | NA | pack.res快照文件路径。 |
 | --force | 否 | boolean | 当目标文件路径已存在时，控制是否强制执行覆盖。当--out-path目标文件打包前已存在，该参数为true时，覆盖写入；为false时，终止打包过程并报错。当--out-path目标文件打包前不存在，正常打包，该参数无效。默认值为false。 |
 | --encrypt-path | 否 | NA | 文件名必须为encrypt.json 。 |
-| --pac-json-path | 否 | NA | [pac.json](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-pac)文件路径，文件名必须为pac.json。  从API version 20开始支持该参数。 |
+| --pac-json-path | 否 | NA | [pac.json](/docs/tools/coding-debug/agc-pac)文件路径，文件名必须为pac.json。  从API version 20开始支持该参数。 |
 | --atomic-service-entry-size-limit | 否 | NA | 设置元服务entry包大小（包含其依赖包的大小）限制，仅Stage模型应用且bundleType为atomicService时生效。取值范围为[0,4194304]的整数，取值为0表示不限制大小，单位KB。不设置该参数时默认值为2048KB。如果entry包是release模式（module.json5文件中type字段值为entry，且app.json5中debug字段的值为false），该限制作用于打包app时压缩后的entry包大小（包含其依赖包的大小）。 |
 | --atomic-service-non-entry-size-limit | 否 | NA | 设置元服务非entry包大小（包含其依赖包的大小）限制，仅Stage模型应用且bundleType为atomicService时生效。取值范围为[0,4194304]的整数，取值为0表示不限制大小，单位KB。不设置该参数时默认值为2048KB。如果非entry包是release模式（module.json5文件中type字段值不是entry，且app.json5中debug字段的值为false），该限制作用于打包app时压缩后的非entry包大小（包含其依赖包的大小）。 |
 | --replace-pack-info | 否 | boolean | 打包APP时，是否使用由--pack-info-path参数指定的pack.info文件替换HAP、HSP包中的pack.info文件。如果为true表示替换，false表示不替换，默认值为true。  从API version 22开始支持该参数。 |
@@ -227,14 +228,14 @@ java -jar app_packing_tool.jar --mode multiApp [--hap-list <path>] [--hsp-list <
 | --out-path | 是 | NA | 目标文件路径，文件名必须以.app为后缀。 |
 | --force | 否 | boolean | 当目标文件路径已存在时，控制是否强制执行覆盖。当--out-path目标文件打包前已存在，该参数为true时，覆盖写入；为false时，终止打包过程并报错。当--out-path目标文件打包前不存在，正常打包，该参数无效。默认值为false。 |
 | --encrypt-path | 否 | encrypt.json的路径 | 文件名必须为encrypt.json。 |
-| --pac-json-path | 否 | NA | [pac.json](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-pac)文件路径，文件名必须为pac.json。  最终app产物中pac.json文件只来源于该参数，不配置的话，最终app产物不包含该文件。  --app-list参数指定的app包中的pac.json不会打包进最终app。  从API version 20开始支持该参数。 |
+| --pac-json-path | 否 | NA | [pac.json](/docs/tools/coding-debug/agc-pac)文件路径，文件名必须为pac.json。  最终app产物中pac.json文件只来源于该参数，不配置的话，最终app产物不包含该文件。  --app-list参数指定的app包中的pac.json不会打包进最终app。  从API version 20开始支持该参数。 |
 | --atomic-service-entry-size-limit | 否 | NA | 设置元服务entry包大小（包含其依赖包的大小）限制，仅Stage模型应用且bundleType为atomicService时生效。取值范围为[0,4194304]的整数，取值为0表示不限制大小，单位KB。不设置该参数时默认值为2048KB。如果entry包是release模式（module.json5文件中type字段值为entry，且app.json5中debug字段的值为false），该限制作用于打包app时压缩后的entry包大小（包含其依赖包的大小）。 |
 | --atomic-service-non-entry-size-limit | 否 | NA | 设置元服务非entry包大小（包含其依赖包的大小）限制，仅Stage模型应用且bundleType为atomicService时生效。取值范围为[0,4194304]的整数，取值为0表示不限制大小，单位KB。不设置该参数时默认值为2048KB。如果非entry包是release模式（module.json5文件中type字段值不是entry，且app.json5中debug字段的值为false），该限制作用于打包app时压缩后的非entry包大小（包含其依赖包的大小）。 |
 | --stat-duplicate | 否 | boolean | 打包完成后，是否扫描重复so文件，该参数可用于识别重复so，以减小包大小。取值为true时，执行扫描，扫描完成会在--out-path参数指定的输出文件所在目录下生成scan\_report目录，其中包含文件名为scan\_result的[重复so文件扫描报告](#扫描重复so文件)，并在告警中打印scan\_report目录路径。取值为false时，不执行扫描。默认值为false。  从API version 23开始支持该参数。 |
 
 ## HQF打包指令
 
-HQF包适用于[增量调试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-incremental-debugging)场景。开发者可以使用打包工具的jar包对应用进行打包，通过传入打包选项、文件路径，生成所需的HQF包。
+HQF包适用于[增量调试](/docs/tools/coding-debug/ide-incremental-debugging)场景。开发者可以使用打包工具的jar包对应用进行打包，通过传入打包选项、文件路径，生成所需的HQF包。
 
 ![](./img/8eee4067.png)
 
@@ -251,7 +252,7 @@ java -jar app_packing_tool.jar --mode hqf --json-path <path> [--lib-path <path>]
 | 指令 | 是否必选项 | 选项 | 描述 |
 | --- | --- | --- | --- |
 | --mode | 是 | hqf | 打包类型。 |
-| --json-path | 是 | NA | .json文件路径，文件名必须为[patch.json](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-incremental-debugging#section28031446182019)。 |
+| --json-path | 是 | NA | .json文件路径，文件名必须为[patch.json](/docs/tools/coding-debug/ide-incremental-debugging#section28031446182019)。 |
 | --lib-path | 否 | NA | lib库文件的路径。 |
 | --ets-path | 否 | NA | 存放ets文件目录路径。 |
 | --resources-path | 否 | NA | resources资源包路径。 |
@@ -264,7 +265,7 @@ APPQF包由一个或多个HQF文件组成。这些HQF包在应用市场会从APP
 
 **APPQF打包合法性校验**
 
-* 在打包生成APPQF包时，确保每个HQF的[patch.json文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-incremental-debugging#section28031446182019)中的versionName、versionCode、patchVersionName、patchVersionCode保持一致。
+* 在打包生成APPQF包时，确保每个HQF的[patch.json文件](/docs/tools/coding-debug/ide-incremental-debugging#section28031446182019)中的versionName、versionCode、patchVersionName、patchVersionCode保持一致。
 * 所有HQF不得重复。HQF重复是指同时满足以下两个条件：
   1. 两个HQF的patch.json文件中module下的name字段相同。
   2. 两个HQF的patch.json文件中module下的deviceTypes属性相交（至少存在一个相同的设备类型）。
@@ -428,7 +429,7 @@ java -jar app_packing_tool.jar --mode fastApp [--hap-path <path>] [--hsp-path <p
 | --pack-res-path | 否 | NA | pack.res快照文件路径。 |
 | --force | 否 | boolean | 当目标文件路径已存在时，控制是否强制执行覆盖。当--out-path目标文件打包前已存在，该参数为true时，覆盖写入；为false时，终止打包过程并报错。当--out-path目标文件打包前不存在，正常打包，该参数无效。默认值为false。 |
 | --encrypt-path | 否 | NA | 文件名必须为encrypt.json。 |
-| --pac-json-path | 否 | NA | [pac.json](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-pac)文件路径，文件名必须为pac.json。  从API version 20开始支持该参数。 |
+| --pac-json-path | 否 | NA | [pac.json](/docs/tools/coding-debug/agc-pac)文件路径，文件名必须为pac.json。  从API version 20开始支持该参数。 |
 | --atomic-service-entry-size-limit | 否 | NA | 设置元服务entry包大小（包含其依赖包的大小）限制，仅Stage模型应用且bundleType为atomicService时生效。取值范围为[0,4194304]的整数，取值为0表示不限制大小，单位KB。不设置该参数时默认值为2048KB。如果entry包是release模式（module.json5文件中type字段值为entry，且app.json5中debug字段的值为false），该限制作用于打包app时压缩后的entry包大小（包含其依赖包的大小）。 |
 | --atomic-service-non-entry-size-limit | 否 | NA | 设置元服务非entry包大小（包含其依赖包的大小）限制，仅Stage模型应用且bundleType为atomicService时生效。取值范围为[0,4194304]的整数，取值为0表示不限制大小，单位KB。不设置该参数时默认值为2048KB。如果非entry包是release模式（module.json5文件中type字段值不是entry，且app.json5中debug字段的值为false），该限制作用于打包app时压缩后的非entry包大小（包含其依赖包的大小）。 |
 | --stat-duplicate | 否 | boolean | 打包完成后，是否扫描重复so文件，该参数可用于识别重复so，以减小包大小。取值为true时，执行扫描，扫描完成会在--out-path参数指定的输出文件所在目录下生成scan\_report目录，其中包含文件名为scan\_result的[重复so文件扫描报告](#扫描重复so文件)，并在告警中打印scan\_report目录路径。取值为false时，不执行扫描。默认值为false。  从API version 23开始支持该参数。 |
@@ -1270,7 +1271,7 @@ IO exception when compress app.
 
 **可能原因**
 
-打包App时，应用的[pack.info](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section03812484215)文件覆盖HAP或HSP包内pack.info文件时抛I/O异常。
+打包App时，应用的[pack.info](/docs/tools/coding-debug/ide-hvigor-build-profile-app#section03812484215)文件覆盖HAP或HSP包内pack.info文件时抛I/O异常。
 
 **处理步骤**
 
@@ -1400,7 +1401,7 @@ res打包模式下，解析moduleName失败。
 
 **可能原因**
 
-res打包模式下，--pack-info-path指定的[pack.info](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section03812484215)文件缺失moduleName标签或moduleName标签值为空。
+res打包模式下，--pack-info-path指定的[pack.info](/docs/tools/coding-debug/ide-hvigor-build-profile-app#section03812484215)文件缺失moduleName标签或moduleName标签值为空。
 
 **处理步骤**
 
@@ -1667,7 +1668,7 @@ Check deduplicateHar field failed.
 
 **错误描述**
 
-打包HSP/HAP时，校验[deduplicateHar](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section03812484215)属性失败。
+打包HSP/HAP时，校验[deduplicateHar](/docs/tools/coding-debug/ide-hvigor-build-profile-app#section03812484215)属性失败。
 
 **可能原因**
 
@@ -2428,7 +2429,7 @@ Check two distroFilter policy disjoint invalid.
 
 **错误描述**
 
-[HAP唯一性校验](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-verification-rule)需要判断分发策略是否相交，由于分发策略配置错误，导致无法判断分发策略是否相交。
+[HAP唯一性校验](/docs/tools/coding-debug/ide-hvigor-verification-rule)需要判断分发策略是否相交，由于分发策略配置错误，导致无法判断分发策略是否相交。
 
 **可能原因**
 
@@ -2512,7 +2513,7 @@ Check entry module invalid.
 
 **处理步骤**
 
-参考[HAP唯一性校验](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-verification-rule)，调整工程中的Entry类型HAP配置。
+参考[HAP唯一性校验](/docs/tools/coding-debug/ide-hvigor-verification-rule)，调整工程中的Entry类型HAP配置。
 
 ### 10016008 检查dependency属性无效
 

@@ -2,9 +2,10 @@
 title: "C#（Native）"
 original_url: /docs/dev/game-dev/games-export-csharp-native-0000002359547198
 format: md
+upstream_id: dev/game-dev/games-export-csharp-native-0000002359547198
+last_sync: 2026-06-07
+sync_hash: 601226cb
 ---
-
-
 ![](./img/de907ef4.png)
 
 GMME SDK 支持IL2CPP编译。

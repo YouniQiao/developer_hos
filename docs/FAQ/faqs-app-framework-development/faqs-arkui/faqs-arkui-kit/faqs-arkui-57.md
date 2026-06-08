@@ -2,9 +2,10 @@
 format: md
 title: "如何获取Text组件中文字的宽度"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-57
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-57
+last_sync: 2026-06-07
+sync_hash: becc287d
 ---
-
-
 使用@ohos.measure中的measureText()方法计算指定文本单行布局下的宽度。具体可参考如下代码：
 
 ```

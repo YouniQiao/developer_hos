@@ -3,9 +3,10 @@ title: "打印表达式"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-arkts-evaluate-log
 format: md
+upstream_id: tools/coding-debug/ide-debug-arkts-evaluate-log
+last_sync: 2026-06-07
+sync_hash: 2216ed78
 ---
-
-
 # 打印表达式
 
 开发者可以通过Evaluate and log能力在代码执行到断点行时打印开发者指定的表达式。

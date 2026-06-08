@@ -3,9 +3,10 @@ title: "查看ArkTS/JS预览效果"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-previewer-arkts-js
 format: md
+upstream_id: tools/coding-debug/ide-previewer-arkts-js
+last_sync: 2026-06-07
+sync_hash: e6ff71ff
 ---
-
-
 # 查看ArkTS/JS预览效果
 
 预览器支持ArkTS/JS应用/元服务“实时预览”和“动态预览”。

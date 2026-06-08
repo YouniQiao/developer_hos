@@ -2,9 +2,10 @@
 title: "预览告警“There are properties not initialized”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-previewer-operating/faqs-previewer-operating-4
 format: md
+upstream_id: FAQ/faqs-deveco-studio/faqs-previewer-operating/faqs-previewer-operating-4
+last_sync: 2026-06-07
+sync_hash: 9d3c9c46
 ---
-
-
 **问题现象**
 
 启动预览后，预览窗口白屏，并显示错误信息：“Preview failed. View details in the PreviewerLog window.”。

@@ -2,9 +2,10 @@
 title: "蓝牙"
 original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth
 format: md
+upstream_id: dev/app-dev/system/system-network/connectivity-kit/bluetooth
+last_sync: 2026-06-07
+sync_hash: 82aac42f
 ---
-
-
 * **[蓝牙服务开发概述](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-overview)**
 * **[蓝牙设置](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/br-development-guide)**
 * **[传统蓝牙](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-br)**

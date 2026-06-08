@@ -2,9 +2,10 @@
 format: md
 title: "@Watch是否有粘性的概念"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-184
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-184
+last_sync: 2026-06-07
+sync_hash: 3533b20c
 ---
-
-
 不支持。@Watch绑定的回调函数仅在状态变量值发生变更时触发，初始化赋值操作不会触发回调。
 
 **参考链接**

@@ -2,9 +2,10 @@
 title: "声明权限"
 original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions
 format: md
+upstream_id: dev/app-dev/system/system-security/access-control/app-permission-mgmt/request-app-permissions/declare-permissions
+last_sync: 2026-06-07
+sync_hash: 1c549c8b
 ---
-
-
 应用在申请权限时，需在项目的配置文件中逐个声明所需权限，否则无法获取授权，并可能导致应用上架申请被驳回。
 
 ## 在配置文件中声明权限

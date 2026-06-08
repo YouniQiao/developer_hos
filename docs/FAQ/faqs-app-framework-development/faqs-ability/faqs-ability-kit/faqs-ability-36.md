@@ -2,9 +2,10 @@
 format: md
 title: "如何在页面中订阅UIAbility实例的生命周期变化"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-36
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-36
+last_sync: 2026-06-07
+sync_hash: 6d06c538
 ---
-
-
 通过ApplicationContext模块提供的ApplicationContext.on()方法，可以订阅进程内UIAbility的生命周期变化。
 
 **参考链接**

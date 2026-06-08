@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "个人数据处理说明"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-personal-data
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-personal-data
+last_sync: 2026-06-07
+sync_hash: 9610a579
 ---
-
-
 Weather Service Kit基于调用方提供的位置信息查询对应位置的天气预报数据，不主动采集用户的位置信息。
 
 ![](./img/6c7df60b.png)

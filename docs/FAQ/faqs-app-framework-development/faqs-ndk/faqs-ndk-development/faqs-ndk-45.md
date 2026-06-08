@@ -2,9 +2,10 @@
 format: md
 title: "如何在Native侧构建一个ArkTS对象"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-45
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-45
+last_sync: 2026-06-07
+sync_hash: 2aaa0ea5
 ---
-
-
 1. 调用接口napi\_create\_object创建对象。
 
    ```

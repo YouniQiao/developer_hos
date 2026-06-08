@@ -2,9 +2,10 @@
 title: "容器类对象"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/container-object
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-object/container-object
+last_sync: 2026-06-07
+sync_hash: 54419c80
 ---
-
-
 容器类对象在跨线程传递时，可通过序列化的机制，确保跨线程间的数据一致，从而实现跨线程数据传递。
 
 支持序列化的容器类对象和支持的初始版本可以参考[容器类对象支持情况](#容器类对象支持情况)。

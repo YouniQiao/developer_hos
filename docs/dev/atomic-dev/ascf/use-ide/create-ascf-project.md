@@ -2,9 +2,10 @@
 title: "全新创建ASCF项目"
 original_url: /docs/dev/atomic-dev/ascf/use-ide/create-ascf-project
 format: md
+upstream_id: dev/atomic-dev/ascf/use-ide/create-ascf-project
+last_sync: 2026-06-07
+sync_hash: 62f4b4b4
 ---
-
-
 开发者也可以在DevEco Studio中创建新工程，来构建元服务。
 
 1. 打开DevEco Studio，在欢迎页单击**Create Project**，创建一个新工程。
@@ -13,7 +14,7 @@ format: md
    ![](./img/2c142dc4.png)
 
    也可以自行选择对应的行业模板进行体验开发。当前已提供教育、电商、新闻、阅读和外卖模板。
-3. 填写工程相关信息，单击**Finish**。关于各个参数的详细介绍，请参考[创建一个新的工程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-create-new-project)。
+3. 填写工程相关信息，单击**Finish**。关于各个参数的详细介绍，请参考[创建一个新的工程](/docs/tools/coding-debug/ide-create-new-project)。
 
    ![](./img/ab070f65.png "点击放大")
 

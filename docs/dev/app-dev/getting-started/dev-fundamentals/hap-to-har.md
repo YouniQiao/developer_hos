@@ -1,8 +1,10 @@
 ---
 title: "HAP转HAR指导"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/hap-to-har
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/hap-to-har
+last_sync: 2026-06-07
+sync_hash: abec2bb4
 ---
-
 HAP不支持导出接口或ArkUI组件给其他模块或应用使用，如果需要导出模块中的接口或ArkUI组件，并将模块作为二方库、三方库共享给其他模块或应用，可以使用HAR。本文介绍如何通过配置项的变更将HAP工程变成HAR工程。
 
 ![](./img/4696440d.png)
@@ -14,7 +16,7 @@ HAP不支持导出接口或ArkUI组件给其他模块或应用使用，如果需
 1. 修改HAP模块下的[module.json5](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)文件，具体操作如下：
 
    * 将type标签值改为har，删除mainElement、deliveryWithInstall、installationFree和pages标签。
-   * 由于API version 17及之前版本HAR不支持创建任何ExtensionAbility，从API version 18开始HAR仅支持创建[两种ExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-add-new-ability#section18891639459)，因此在API version 18及之后版本但未配置为支持的两种ExtensionAbility、或在API version 17及之前版本，需要删除extensionAbilities标签，并将关联的ExtensionAbility组件删除或迁移到其他HAP模块中。
+   * 由于API version 17及之前版本HAR不支持创建任何ExtensionAbility，从API version 18开始HAR仅支持创建[两种ExtensionAbility](/docs/tools/coding-debug/ide-add-new-ability#section18891639459)，因此在API version 18及之后版本但未配置为支持的两种ExtensionAbility、或在API version 17及之前版本，需要删除extensionAbilities标签，并将关联的ExtensionAbility组件删除或迁移到其他HAP模块中。
    * 由于HAR模块在API version 13及以下不支持UIAbility，因此在API version 13及以前的版本，需要删除abilities标签，并将关联的UIAbility组件删除或迁移到其他HAP模块中。
 
    ```
@@ -64,4 +66,4 @@ HAP不支持导出接口或ArkUI组件给其他模块或应用使用，如果需
 
 <div class="source-link-wrapper"><a href="https://gitcode.com/HarmonyOS_Samples/guide-snippets/blob/HarmonyOS-feature-20260402/bmsSample/HapToHar/entry/oh-package.json5#L16-L30" target="_blank" rel="noopener noreferrer" class="source-link"><svg class="source-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg> 查看源码：oh-package.json5</a></div>
 
-5. 修改项目级的配置文件[build-profile.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app)，在 modules 标签下找到HAP的配置信息，并删除HAP配置下的 targets。
+5. 修改项目级的配置文件[build-profile.json5](/docs/tools/coding-debug/ide-hvigor-build-profile-app)，在 modules 标签下找到HAP的配置信息，并删除HAP配置下的 targets。

@@ -2,9 +2,10 @@
 title: "背景音频"
 original_url: /docs/dev/atomic-dev/ascf/apis-media/apis-background-audio
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-media/apis-background-audio
+last_sync: 2026-06-07
+sync_hash: 6172dd95
 ---
-
-
 ## has.playBackgroundAudio
 
 has.playBackgroundAudio(Object object)

@@ -2,9 +2,10 @@
 title: "协助修改核准（备案）信息在线服务条款"
 original_url: /docs/dev/game-dev/quickgame-filing-legal-terms-0000001805077830
 format: md
+upstream_id: dev/game-dev/quickgame-filing-legal-terms-0000001805077830
+last_sync: 2026-06-07
+sync_hash: 10c1b43d
 ---
-
-
 《协助修改核准（备案）信息在线服务条款》是华为软件技术有限公司为了帮助您在满足核准（备案）主体所在省市通信管理局审核要求的前提下，尽快完成核准（备案），避免反复退回修改，提高核准（备案）效率而提供的免费服务。当您选择同意《协助修改核准（备案）信息在线服务条款》，我们将按照条款协助您修改提交有误的核准（备案）信息。
 
 协助修改核准（备案）信息在线服务条款：

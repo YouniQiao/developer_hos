@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "（可选）特定场景配置操作"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-product-configuration
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-product-configuration
+last_sync: 2026-06-07
+sync_hash: d2218a11
 ---
-
-
 如涉及以下场景，需提前完成相关产品的开通或配置操作。如不涉及，请直接跳转[下一章节](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-config-agc)。
 
 ## 场景一：产品开通操作

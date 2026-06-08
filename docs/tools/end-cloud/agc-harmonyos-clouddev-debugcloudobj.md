@@ -1,12 +1,12 @@
 ---
-
 title: "调试云对象"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-debugcloudobj
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-debugcloudobj
+last_sync: 2026-06-07
+sync_hash: 52007601
 ---
-
-
 # 调试云对象
 
 云对象开发完成后，您可以对其进行调试，以验证云对象代码运行是否正常。

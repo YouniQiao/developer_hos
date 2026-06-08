@@ -3,9 +3,10 @@ title: "调试概述"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-device
 format: md
+upstream_id: tools/coding-debug/ide-debug-device
+last_sync: 2026-06-07
+sync_hash: e2f54963
 ---
-
-
 # 调试概述
 
 DevEco Studio提供了丰富的HarmonyOS应用/元服务调试能力，支持JS、ArkTS、C/C++单语言调试和ArkTS/JS+C/C++跨语言调试能力，并且支持三方库源码调试，帮助开发者更方便、高效地调试应用/元服务。

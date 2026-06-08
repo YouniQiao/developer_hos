@@ -3,9 +3,10 @@ title: "日志上传"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-log-postback
 format: md
+upstream_id: tools/coding-debug/ide-log-postback
+last_sync: 2026-06-07
+sync_hash: b9708d27
 ---
-
-
 # 日志上传
 
 ![](./img/note_3.0-zh-cn.png)

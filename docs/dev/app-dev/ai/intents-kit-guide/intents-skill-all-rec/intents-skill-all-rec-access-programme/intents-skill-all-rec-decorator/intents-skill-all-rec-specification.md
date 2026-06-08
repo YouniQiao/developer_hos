@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "自定义意图相关信息定义规范"
 original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-access-programme/intents-skill-all-rec-decorator/intents-skill-all-rec-specification
 format: md
+upstream_id: dev/app-dev/ai/intents-kit-guide/intents-skill-all-rec/intents-skill-all-rec-access-programme/intents-skill-all-rec-decorator/intents-skill-all-rec-specification
+last_sync: 2026-06-07
+sync_hash: 5f199d86
 ---
-
-
 Intents Kit支持开发者自定义意图，开发者可通过在其代码上添加自然语言装饰器接入，装饰器中相关信息建议参考以下规范，以便于大模型更好的理解和分发调用。
 
 1. **意图名称**

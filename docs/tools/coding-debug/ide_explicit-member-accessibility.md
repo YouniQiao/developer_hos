@@ -3,9 +3,10 @@ title: "@typescript-eslint/explicit-member-accessibility"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_explicit-member-accessibility
 format: md
+upstream_id: tools/coding-debug/ide_explicit-member-accessibility
+last_sync: 2026-06-07
+sync_hash: cf38dd5d
 ---
-
-
 # @typescript-eslint/explicit-member-accessibility
 
 在类属性和方法上需要显式定义访问修饰符。

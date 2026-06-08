@@ -3,8 +3,10 @@ title: "查询账户余额"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-finance1-0000001286533062
 format: md
+upstream_id: monetize/promotion/marketing-api-finance1-0000001286533062
+last_sync: 2026-06-07
+sync_hash: d3d23e6d
 ---
-
 # 查询账户余额
 
 您通过本接口可以查询广告账户的余额，包括现金、赠送、返利账户分别有多少钱和当日的支出数据。

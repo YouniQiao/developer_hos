@@ -2,9 +2,10 @@
 title: "系统信息"
 original_url: /docs/dev/atomic-dev/ascf/apis-basis/apis-system-info
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-basis/apis-system-info
+last_sync: 2026-06-07
+sync_hash: 2e4e47a9
 ---
-
-
 ## has.env
 
 has.env: Object

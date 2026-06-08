@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "动态轨迹"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-dyntrajectories
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-drawing/map-dyntrajectories
+last_sync: 2026-06-07
+sync_hash: 43103985
 ---
-
-
 ## 场景介绍
 
 本章节将向您介绍如何在地图上绘制动态轨迹。

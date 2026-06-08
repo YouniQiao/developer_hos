@@ -2,9 +2,10 @@
 title: "发布与接受频道消息"
 original_url: /docs/dev/game-dev/games-gamemme-channelmessage-publish-harmonyos-0000002338703689
 format: md
+upstream_id: dev/game-dev/games-gamemme-channelmessage-publish-harmonyos-0000002338703689
+last_sync: 2026-06-07
+sync_hash: e4ef8a36
 ---
-
-
 通过向指定频道内的一个或多个订阅用户发布频道消息，可用于实现游戏内实时通信和聊天室消息等场景。当前支持发布文本和二进制两种类型的消息。其中，文本消息可用于聊天等场景。二进制消息可传递游戏状态数据，用于信令同步等场景。同时，支持对文本消息内容进行风控审核和广告识别。
 
 ## 前提条件

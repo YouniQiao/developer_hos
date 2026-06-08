@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Notification Kit（用户通知服务）"
 original_url: /docs/dev/app-dev/application-services/notification-kit
 format: md
+upstream_id: dev/app-dev/application-services/notification-kit
+last_sync: 2026-06-07
+sync_hash: 0093e52f
 ---
-
-
 * **[Notification Kit简介](/docs/dev/app-dev/application-services/notification-kit/notification-overview)**
 * **[请求通知授权](/docs/dev/app-dev/application-services/notification-kit/notification-enable)**
 * **[管理通知角标](/docs/dev/app-dev/application-services/notification-kit/notification-badge)**

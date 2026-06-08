@@ -2,9 +2,10 @@
 title: "界面镜像伪本地化测试"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/l10n-testing/pseudo-i18n-testing/pseudo-i18n-testing-mirror
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/l10n-testing/pseudo-i18n-testing/pseudo-i18n-testing-mirror
+last_sync: 2026-06-07
+sync_hash: 05a4ac28
 ---
-
-
 ## 使用场景
 
 界面镜像测试主要检查文字阅读顺序是否出现问题。一些语言的阅读顺序不是从左到右。例如，在阿拉伯语中，界面的阅读顺序是从右到左（RTL）。

@@ -2,9 +2,10 @@
 title: "用户文件URI介绍"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/user-files/user-file-uri-intro
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/user-files/user-file-uri-intro
+last_sync: 2026-06-07
+sync_hash: 726408c4
 ---
-
-
 用户文件URI是文件的唯一标识，在对用户文件进行访问与修改等操作时往往都会使用到URI，不建议开发者解析URI中的片段用于业务代码开发，不同类型的URI使用方式将在下文详细介绍。
 
 ## URI的类型

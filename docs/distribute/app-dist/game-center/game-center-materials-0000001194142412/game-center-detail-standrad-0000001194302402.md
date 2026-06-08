@@ -3,9 +3,10 @@ title: "详情页素材规范及示例"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-detail-standrad-0000001194302402
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-detail-standrad-0000001194302402
+last_sync: 2026-06-07
+sync_hash: d0ad9d0a
 ---
-
-
 # 详情页素材规范及示例
 
 华为应用市场/游戏中心的游戏详情页的素材主要有置顶图、置顶视频、游戏图标、横/竖向游戏介绍截图，主要有如下几种组合的游戏详情页。
@@ -16,7 +17,7 @@ format: md
 
 ### 适用范围
 
-* 仅开放给[联运服务](`https://developer.huawei.com/consumer/cn/doc/promotion/service-introduction-0000001062607577`)项目使用。
+* 仅开放给[联运服务](`/docs/monetize/promotion/service-introduction-0000001062607577)项目使用。
 * 适用于客户端10.5版本以上。
 
 ### 规范及示例
@@ -33,7 +34,7 @@ format: md
 
 ### 适用范围
 
-* 仅开放给[联运服务](`https://developer.huawei.com/consumer/cn/doc/promotion/service-introduction-0000001062607577`)项目使用。
+* 仅开放给[联运服务](`/docs/monetize/promotion/service-introduction-0000001062607577)项目使用。
 * 适用于客户端10.5版本以上。
 
 ### 规范及示例

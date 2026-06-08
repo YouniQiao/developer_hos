@@ -3,8 +3,10 @@ title: "Adjust"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-functions-tripartite-attribution-adjust-0000001379677869
 format: md
+upstream_id: monetize/promotion/bpos-functions-tripartite-attribution-adjust-0000001379677869
+last_sync: 2026-06-07
+sync_hash: d20cde2f
 ---
-
 # Adjust
 
 ## 概述

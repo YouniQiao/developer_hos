@@ -2,9 +2,10 @@
 format: md
 title: "真机设备连接后，执行“hdc list targets”命令结果为“[Empty]”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-performance-analysis-kit-32
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-performance-analysis-kit-32
+last_sync: 2026-06-07
+sync_hash: acf99bc7
 ---
-
-
 **问题现象**
 
 执行hdc list targets命令后返回空列表[Empty]，设备未正常识别。

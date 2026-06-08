@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "交通卡删卡"
 original_url: /docs/dev/app-dev/application-services/wallet-kit-guide/wallet-transport/wallet-transport-delete
 format: md
+upstream_id: dev/app-dev/application-services/wallet-kit-guide/wallet-transport/wallet-transport-delete
+last_sync: 2026-06-07
+sync_hash: cf99bba2
 ---
-
-
 交通卡的删卡过程分为：卡片展示、生成删卡业务订单和发起删卡三个步骤，整体流程如下图，相关接口定义请参照[钱包服务API](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-wallettransitcard)。
 
 ![](./img/90978b73.png)

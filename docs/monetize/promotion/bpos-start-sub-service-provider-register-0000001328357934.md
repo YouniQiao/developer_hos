@@ -3,8 +3,10 @@ title: "子客服务商注册"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-start-sub-service-provider-register-0000001328357934
 format: md
+upstream_id: monetize/promotion/bpos-start-sub-service-provider-register-0000001328357934
+last_sync: 2026-06-07
+sync_hash: 5204ce2d
 ---
-
 # 子客服务商注册
 
 ## 概述
@@ -71,7 +73,7 @@ format: md
      - <strong>法人代表人身份证</strong>：请上传营业执照中法人的身份证正反面，文件大小不能超过5M，格式为png、jpg、jpeg。
      - <strong>授权文件</strong>：您需要下载并填写授权模板，授权模板中，甲方为子客服务商，乙方为服务商，当您的服务商和子客服务商为同一个公司时，授权书甲方、乙方可以一致。
 
-       如果未要求您提供授权文件，此时您需要阅读并勾选[鲸鸿动能广告服务商授权确认函](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/ad-agreements-0000001169499170#ZH-CN_TOPIC_0000001169499170__li435903419247)。
+       如果未要求您提供授权文件，此时您需要阅读并勾选[鲸鸿动能广告服务商授权确认函](/docs/monetize/promotion/ad-agreements-0000001169499170#ZH-CN_TOPIC_0000001169499170__li435903419247)。
      - <strong>授权有效期</strong>：您可以查看您上级服务商的授权时间，子客服务商授权结束时间应小于服务商授权结束时间。
    - 联系人信息：
 
@@ -81,8 +83,8 @@ format: md
      - <strong>联系人邮箱：</strong>请填写联系人的邮箱，系统的通知邮件会发送到此邮箱，请确保邮箱可以正常接收邮件。此处的邮箱不作为鲸鸿动能广告账户登录凭证。
      - <strong>联系人手机：</strong>请填写联系人的手机号，系统的通知短信会发送到此电话，请确保号码可以正常接收短信。此处的电话不作为鲸鸿动能广告账户登录凭证。
      - <strong>QQ：</strong>此项为选填，您可以补充QQ号。
-     - 勾选我已阅读并同意《[鲸鸿动能广告服务商声明](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/ad-agreements-0000001169499170#ZH-CN_TOPIC_0000001169499170__li157883022414)》。
-     - 勾选我已阅读并同意《[鲸鸿动能广告服务商承诺函](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/ad-agreements-0000001169499170#ZH-CN_TOPIC_0000001169499170__li1155411325244)》。
+     - 勾选我已阅读并同意《[鲸鸿动能广告服务商声明](/docs/monetize/promotion/ad-agreements-0000001169499170#ZH-CN_TOPIC_0000001169499170__li157883022414)》。
+     - 勾选我已阅读并同意《[鲸鸿动能广告服务商承诺函](/docs/monetize/promotion/ad-agreements-0000001169499170#ZH-CN_TOPIC_0000001169499170__li1155411325244)》。
 
 4. 进入子客服务商账户。
 
@@ -158,7 +160,7 @@ format: md
 
    授权模板中，公章与法人签字可二选一，若两者都不提供则授权无效。
 
-   如果未要求您提供授权文件，此时您需要阅读并勾选[鲸鸿动能广告服务商授权确认函](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/ad-agreements-0000001169499170#ZH-CN_TOPIC_0000001169499170__li191931552172413)。
+   如果未要求您提供授权文件，此时您需要阅读并勾选[鲸鸿动能广告服务商授权确认函](/docs/monetize/promotion/ad-agreements-0000001169499170#ZH-CN_TOPIC_0000001169499170__li191931552172413)。
 
    - <strong>授权有效期</strong>：您可以查看您上级服务商的授权时间，子客服务商授权结束时间应小于服务商授权结束时间。
    - <strong>联系人信息</strong>：
@@ -169,7 +171,7 @@ format: md
      - <strong>职位</strong>：请填写您的职位信息。
      - <strong>联系人电话</strong>：请填写联系人的手机号，系统的通知短信会发送到此电话，请确保号码可以正常接收短信。此处的电话不作为子客服务商账户登录凭证。
      - <strong>联系人邮箱</strong>：请填写联系人的邮箱，系统的通知邮件会发送到此邮箱，请确保号码可以正常接收邮件。此处的邮箱不作为子客服务商账户登录凭证。
-     - 此时您需要阅读并勾选[鲸鸿动能广告服务商声明](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/ad-agreements-0000001169499170#ZH-CN_TOPIC_0000001169499170__li14545411245)，子客服务商注册完成。
+     - 此时您需要阅读并勾选[鲸鸿动能广告服务商声明](/docs/monetize/promotion/ad-agreements-0000001169499170#ZH-CN_TOPIC_0000001169499170__li14545411245)，子客服务商注册完成。
 
 ## 子客管理
 

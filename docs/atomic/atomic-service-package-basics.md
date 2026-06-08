@@ -2,9 +2,10 @@
 title: "元服务程序包基础知识"
 original_url: /docs/dev/atomic-dev/atomic-service/atomic-service-package-basics
 format: md
+upstream_id: dev/atomic-dev/atomic-service/atomic-service-package-basics
+last_sync: 2026-06-07
+sync_hash: 4c615fee
 ---
-
-
 元服务的程序包结构与传统[应用程序包](/docs/dev/app-dev/getting-started/dev-fundamentals/application-package-structure-stage)相同，也是以App Pack（.app）形式发布到应用市场。
 
 但元服务相对于需要安装的应用形态更加轻量、便捷，其程序包也具备一些独有特征，如免安装、分包、预加载、老化。

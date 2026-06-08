@@ -2,9 +2,10 @@
 title: "查询应用软件包信息"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-query-package-info-0000002328848469
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-query-package-info-0000002328848469
+last_sync: 2026-06-07
+sync_hash: a501adb9
 ---
-
-
 #### 功能介绍
 
 此接口用于查询HarmonyOS应用/元服务的软件包信息。

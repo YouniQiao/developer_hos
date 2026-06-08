@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取云侧文件的元数据"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service/cloudfoundation-storage-getmetadata
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service/cloudfoundation-storage-getmetadata
+last_sync: 2026-06-07
+sync_hash: 66270405
 ---
-
-
 文件元数据包含云侧文件名、文件大小、文件类型等常用属性，也包括用户自定义的文件属性。
 
 文件上传至云侧后，开发者可以在下载文件前获取指定云侧文件的元数据，来决定是否下载此文件。

@@ -3,8 +3,10 @@ title: "监测链接接入指导"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-hm-monitoring-link-0000002481479774
 format: md
+upstream_id: monetize/promotion/bp-hm-monitoring-link-0000002481479774
+last_sync: 2026-06-07
+sync_hash: 83c4f260
 ---
-
 # 监测链接接入指导
 
 ## 业务介绍

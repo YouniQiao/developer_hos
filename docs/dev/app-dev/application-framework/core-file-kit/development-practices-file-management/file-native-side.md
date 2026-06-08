@@ -2,9 +2,10 @@
 title: "Native侧实现文件访问"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/development-practices-file-management/file-native-side
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/development-practices-file-management/file-native-side
+last_sync: 2026-06-07
+sync_hash: b800ad5d
 ---
-
-
 ## 概述
 
 在对文件处理性能要求高的场景中，Native侧访问文件处理数据比在ArkTS侧操作文件（详见[应用文件访问(ArkTS)](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-access-management/app-file-access)）有更高的效率和更快的响应，例如处理大文件、复杂的文件操作以及实时通信等低时延场景。根据文件位置的不同，应用在Native侧访问文件可以分为以下两种类型：

@@ -2,9 +2,10 @@
 title: "联系人"
 original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-contact
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-device/apis-contact
+last_sync: 2026-06-07
+sync_hash: 614d89f7
 ---
-
-
 ## has.chooseContact
 
 has.chooseContact(Object object)

@@ -2,9 +2,10 @@
 title: "Remote Communication Kit术语"
 original_url: /docs/dev/app-dev/system/remote-communication-glossary
 format: md
+upstream_id: dev/app-dev/system/remote-communication-glossary
+last_sync: 2026-06-07
+sync_hash: 6017a679
 ---
-
-
 ## C
 
 * **Cache Interceptor；缓存拦截器**

@@ -3,8 +3,10 @@ title: "相机硬件差异"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-camera
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi-device-camera
+last_sync: 2026-06-07
+sync_hash: 0c50e488
 ---
-
 # 相机硬件差异
 
 ## 概述

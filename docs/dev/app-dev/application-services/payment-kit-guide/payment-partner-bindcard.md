@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "引导用户绑卡场景"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-partner-bindcard
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-partner-bindcard
+last_sync: 2026-06-07
+sync_hash: 961822af
 ---
-
-
 ## 场景介绍
 
 从5.0.5(17)版本开始，新增支持引导用户绑卡场景。

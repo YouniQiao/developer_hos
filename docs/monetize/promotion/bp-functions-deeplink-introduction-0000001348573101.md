@@ -3,6 +3,10 @@ title: "业务介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-deeplink-introduction-0000001348573101
 format: md
+upstream_id: monetize/promotion/bp-functions-deeplink-introduction-0000001348573101
+last_sync: 2026-06-07
+sync_hash: 1826fc0e
+upstream_hash: 1d1cc4b63b62
 ---
 
 # 业务介绍

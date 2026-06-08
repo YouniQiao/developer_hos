@@ -2,9 +2,10 @@
 title: "页面切换日志"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/perf-detection/pageswitch-log
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/perf-detection/pageswitch-log
+last_sync: 2026-06-07
+sync_hash: 6b1cee93
 ---
-
-
 ## 简介
 
 页面切换日志用于记录应用页面切换栈，比如窗口创建销毁、页面切换等信息，帮助开发者通过该日志分析故障发生前用户操作，提高问题定位效率。

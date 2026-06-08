@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "如何处理误分类问题"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-3
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-3
+last_sync: 2026-06-07
+sync_hash: 2d24bc4c
 ---
-
-
 ## 如何处理应用类别误分类
 
 未发布应用，可以登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，点击“应用上架”，在应用列表中找到您的应用，修改应用分类。关于应用分类信息，请参见[华为应用市场应用分类示例](https://developer.huawei.com/consumer/cn/doc/app/classify-1)。

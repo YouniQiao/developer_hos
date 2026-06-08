@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "60180007 服务端通过Authorization Code无法获取到华为账号一键登录手机号如何解决"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-21
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-21
+last_sync: 2026-06-07
+sync_hash: 4b7a18c3
+upstream_hash: e5f0c40abf26
 ---
-
 
 **问题现象**
 

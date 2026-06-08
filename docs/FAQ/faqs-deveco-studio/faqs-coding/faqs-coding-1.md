@@ -2,9 +2,10 @@
 format: md
 title: "编辑器自动联想、跳转等功能失效"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-1
+upstream_id: FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-1
+last_sync: 2026-06-07
+sync_hash: a931de3e
 ---
-
-
 **问题现象**
 
 DevEco Studio上代码自动联想、跳转等功能失效。

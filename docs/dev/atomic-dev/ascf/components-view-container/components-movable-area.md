@@ -2,8 +2,11 @@
 title: "movable-area"
 original_url: /docs/dev/atomic-dev/ascf/components-view-container/components-movable-area
 format: md
+upstream_id: dev/atomic-dev/ascf/components-view-container/components-movable-area
+last_sync: 2026-06-07
+sync_hash: 81af9507
+upstream_hash: d27ff3453797
 ---
-
 
 [movable-view](/docs/dev/atomic-dev/ascf/components-view-container/components-movable-view)的可移动区域。
 

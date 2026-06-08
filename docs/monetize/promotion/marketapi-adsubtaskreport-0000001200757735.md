@@ -3,8 +3,10 @@ title: "查询推广子任务统计报表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-adsubtaskreport-0000001200757735
 format: md
+upstream_id: monetize/promotion/marketapi-adsubtaskreport-0000001200757735
+last_sync: 2026-06-07
+sync_hash: 87673b88
 ---
-
 # 查询推广子任务统计报表
 
 ## 功能介绍

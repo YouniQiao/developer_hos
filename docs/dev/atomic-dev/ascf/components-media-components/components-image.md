@@ -2,9 +2,10 @@
 title: "image"
 original_url: /docs/dev/atomic-dev/ascf/components-media-components/components-image
 format: md
+upstream_id: dev/atomic-dev/ascf/components-media-components/components-image
+last_sync: 2026-06-07
+sync_hash: f9267fa5
 ---
-
-
 图片。
 
 **起始版本：** 1.0.0

@@ -3,9 +3,10 @@ title: "桌面&lt;Wallpaper&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-scope-0000002279698481/themes-engine-next-home-0000002244819386
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-scope-0000002279698481/themes-engine-next-home-0000002244819386
+last_sync: 2026-06-07
+sync_hash: ec99f4d2
 ---
-
-
 # 桌面&lt;Wallpaper&gt;
 
 ## 功能概述

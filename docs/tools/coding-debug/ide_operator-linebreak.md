@@ -3,9 +3,10 @@ title: "@hw-stylistic/operator-linebreak"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_operator-linebreak
 format: md
+upstream_id: tools/coding-debug/ide_operator-linebreak
+last_sync: 2026-06-07
+sync_hash: 655c45f9
 ---
-
-
 # @hw-stylistic/operator-linebreak
 
 强制运算符位于代码行末。该规则仅检查.ets文件类型。

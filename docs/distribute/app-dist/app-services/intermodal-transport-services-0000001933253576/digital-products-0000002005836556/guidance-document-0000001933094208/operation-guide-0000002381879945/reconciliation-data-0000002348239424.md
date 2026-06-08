@@ -3,9 +3,10 @@ title: "获取对账结算数据"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/operation-guide-0000002381879945/reconciliation-data-0000002348239424
 format: md
+upstream_id: distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/operation-guide-0000002381879945/reconciliation-data-0000002348239424
+last_sync: 2026-06-07
+sync_hash: eb4db7c4
 ---
-
-
 # 获取对账结算数据
 
 ## 功能介绍

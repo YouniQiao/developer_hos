@@ -2,9 +2,10 @@
 title: "设置自定义区域"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation/ui-design-navigation-customized-area
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation/ui-design-navigation-customized-area
+last_sync: 2026-06-07
+sync_hash: 52064e63
 ---
-
-
 ## 场景介绍
 
 从6.0.0(20)版本开始，导航组件支持设置标题栏的[stackBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdsnavigation#titlebarcontentoptions)和[bottomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdsnavigation#titlebarcontentoptions)，允许开发者自定义标题栏样式，以匹配应用的视觉风格。

@@ -3,8 +3,10 @@ title: "调用业务接口"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-process-5-0000001174557685
 format: md
+upstream_id: monetize/promotion/marketing-api-process-5-0000001174557685
+last_sync: 2026-06-07
+sync_hash: 8976fe85
 ---
-
 # 调用业务接口
 
 调用单个广告账户的频次：所有接口调用总数为每分钟最多1200次；每天最多360,000次。

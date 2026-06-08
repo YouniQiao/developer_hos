@@ -2,9 +2,10 @@
 title: "MDM Kit开发指南"
 original_url: /docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-guide
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-guide
+last_sync: 2026-06-07
+sync_hash: 0942082e
 ---
-
-
 ## 功能介绍
 
 MDM Kit为[MDM应用](/docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-term#mdm应用设备管理应用)提供设备管理能力，包括企业设备管理与事件监听、应用管理、禁用管理、安全管理、设备设置、设备控制、设备信息获取、硬件外设管理、系统管理、网络通信管理等，具体API接口说明详见[API参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/mdm-arkts)。

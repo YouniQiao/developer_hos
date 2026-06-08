@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "更新企业公钥证书"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-update
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-update
+last_sync: 2026-06-07
+sync_hash: ce857863
 ---
-
-
 ## 场景介绍
 
 为应用提供更新企业公钥证书的能力，用于在证书泄漏、证书失效等场景及时更新企业公钥证书。

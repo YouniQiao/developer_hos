@@ -2,9 +2,10 @@
 title: "弧形按钮 (ArcButton)(圆形屏幕推荐使用)"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection/arkts-advanced-components-arcbutton
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-form-selection/arkts-advanced-components-arcbutton
+last_sync: 2026-06-07
+sync_hash: eaa75d7a
 ---
-
-
 从API version 18开始支持ArcButton。ArcButton是弧形按钮组件，推荐用于圆形屏幕。为用户提供强调、普通、警告等样式按钮。具体用法请参考[ArcButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-arcbutton)。
 
 ## 创建按钮

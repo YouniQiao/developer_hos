@@ -2,9 +2,10 @@
 format: md
 title: "运行时提示“TypeError：Cannot read property xxx of undefined”错误"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-14
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-14
+last_sync: 2026-06-07
+sync_hash: 1274167f
 ---
-
-
 **问题现象**
 
 在启动调试或运行C++应用/服务时，安装HAP出现错误，提示“error: install parse native so failed”错误信息，或者运行时提示“TypeError：Cannot read property xxx of undefined”错误。

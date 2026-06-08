@@ -2,9 +2,10 @@
 title: "地址越界检测能力概述"
 original_url: /docs/quality/stability-address-sanitizer-overview
 format: md
+upstream_id: /docs/quality/stability-address-sanitizer-overview
+last_sync: 2026-06-07
+sync_hash: 32372a00
 ---
-
-
 # 地址越界检测能力概述
 
 地址越界检测功能主要用于帮助开发者在调试和压力测试阶段发现内存非法访问问题，如越界读写、Use-After-Free、Double-Free等。这些问题通常难以通过崩溃日志直接确定根本原因。为此，DevEco Studio提供了ASan（Address Sanitizer）、HWASan（Hardware-Assisted Address Sanitizer）、MemDebug（Memory Debug）、GWP-ASan等多种检测工具，在运行时监控内存访问行为，及时捕获并报告潜在的地址越界问题，提高问题发现的效率和定位的准确性。这些工具在检测精度、性能开销和适用场景上各有侧重，分别适用于开发调试和商用发布的不同阶段。

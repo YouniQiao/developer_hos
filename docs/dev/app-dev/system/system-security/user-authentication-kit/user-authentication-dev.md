@@ -2,9 +2,10 @@
 title: "用户身份认证开发指导"
 original_url: /docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev
 format: md
+upstream_id: dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev
+last_sync: 2026-06-07
+sync_hash: 0e395c9b
 ---
-
-
 * **[开发准备](/docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/prerequisites)**
 * **[查询支持的认证能力](/docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/obtain-supported-authentication-capabilities)**
 * **[发起认证](/docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/start-authentication)**

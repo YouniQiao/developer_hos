@@ -2,9 +2,10 @@
 title: "Buffer与FastBuffer"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-utils/buffer
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-utils/buffer
+last_sync: 2026-06-07
+sync_hash: 595f45ff
 ---
-
-
 ## 场景介绍
 
 Buffer和FastBuffer模块将内存区域抽象为可读写、修改的逻辑对象，提供高效的二进制数据处理接口。每个Buffer实例是连续的字节序列，支持创建自定义大小的内存块，用于存储和操作序列化后的数据。

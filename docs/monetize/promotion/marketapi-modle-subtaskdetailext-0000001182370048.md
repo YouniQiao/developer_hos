@@ -3,8 +3,10 @@ title: "SubTaskDetailExt"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-subtaskdetailext-0000001182370048
 format: md
+upstream_id: monetize/promotion/marketapi-modle-subtaskdetailext-0000001182370048
+last_sync: 2026-06-07
+sync_hash: e1e3df53
 ---
-
 # SubTaskDetailExt
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |

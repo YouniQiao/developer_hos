@@ -2,9 +2,10 @@
 title: "使用Web组件上传文件"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-upload-download/web-file-upload
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-upload-download/web-file-upload
+last_sync: 2026-06-07
+sync_hash: 3dc309a1
 ---
-
-
 Web组件支持前端页面选择文件上传功能，应用开发者可以使用[onShowFileSelector()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onshowfileselector9)接口来处理前端页面文件上传的请求，如果应用开发者不做任何处理，ArkWeb会提供默认行为来处理前端页面文件上传的请求。应用开发者也可以通过获取到的前端数据，自定义拉起Picker。
 
 ## 使用onShowFileSelector拉起文件管理器

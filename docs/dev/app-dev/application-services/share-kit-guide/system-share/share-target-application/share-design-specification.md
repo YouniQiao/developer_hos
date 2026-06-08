@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "目标应用设计规范"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-target-application/share-design-specification
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/system-share/share-target-application/share-design-specification
+last_sync: 2026-06-07
+sync_hash: d78a4e07
 ---
-
-
 本章节主要介绍目标应用接入系统分享面板时，所涉及的设计规范要求。具体参见：[设计指南-分享方式区](/docs/design/system-features/capabilities/share#section132401520173711)
 
 ## 应用名称和图标规范

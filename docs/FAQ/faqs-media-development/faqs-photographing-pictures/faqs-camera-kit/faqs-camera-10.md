@@ -2,9 +2,10 @@
 format: md
 title: "预览流黑屏但无报错信息该怎么解决"
 original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-10
+upstream_id: FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-10
+last_sync: 2026-06-07
+sync_hash: 92ad0685
 ---
-
-
 **可能原因**
 
 * 未正确获取相机权限的情况下，进行相机初始化和相机输入流获取等操作。

@@ -2,8 +2,11 @@
 title: "如何利用worker子线程调用napi实现loop改写变量"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-76
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-76
+last_sync: 2026-06-07
+sync_hash: 5eeef531
+upstream_hash: af052e38a1d0
 ---
-
 
 **问题现象**
 

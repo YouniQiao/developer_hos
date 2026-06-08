@@ -2,9 +2,10 @@
 title: "个人中心主页"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-web-user-center
+upstream_id: tools/ohpm/repo/ide-ohpm-web-user-center
+last_sync: 2026-06-07
+sync_hash: e33a0d50
 ---
-
-
 # 个人中心主页
 
 个人中心主页是ohpm-repo私仓的核心管理页面，整个系统在此进行集中管理和操作，页面效果如下图所示：

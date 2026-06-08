@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取企业应用访问令牌"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-get-access-token
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-get-access-token
+last_sync: 2026-06-07
+sync_hash: f7fbad07
 ---
-
-
 ## 场景介绍
 
 从6.1.0(23)开始，支持企业应用获取访问令牌的能力。

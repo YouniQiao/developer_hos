@@ -2,9 +2,10 @@
 title: "修改测试态服务"
 original_url: /docs/distribute/agc/agc-help-beacon-own-real-phone-testing-0000002456745305/agc-help-beacon-modify-teststate-service-0000002485691553
 format: md
+upstream_id: distribute/agc/agc-help-beacon-own-real-phone-testing-0000002456745305/agc-help-beacon-modify-teststate-service-0000002485691553
+last_sync: 2026-06-07
+sync_hash: a6e023ab
 ---
-
-
 当您创建的测试态服务已过生效时段或需要调整POI点位、测试用户、卡片内容等时，您可以尝试修改测试态服务。
 
 ![](../img/agc-help-beacon-modify-teststate-service-0000002485691553_0.png)

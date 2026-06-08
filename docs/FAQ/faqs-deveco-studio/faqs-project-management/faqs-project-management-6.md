@@ -2,9 +2,10 @@
 format: md
 title: "如何将HSP（动态共享包）转为HAR（静态共享包）"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-6
+upstream_id: FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-6
+last_sync: 2026-06-07
+sync_hash: b7020df7
 ---
-
-
 [HSP](/docs/dev/app-dev/getting-started/dev-fundamentals/in-app-hsp)转换成[HAR](/docs/dev/app-dev/getting-started/dev-fundamentals/har-package)可参考如下步骤：
 
 1. 在HSP下的module.json5中，把"type": "shared"修改为"type": "har"，删除"deliveryWithInstall"、"pages"字段。

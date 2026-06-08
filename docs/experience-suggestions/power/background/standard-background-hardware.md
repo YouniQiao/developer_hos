@@ -2,9 +2,10 @@
 title: "后台硬件资源使用"
 original_url: /docs/experience-suggestions/power/background/standard-background-hardware
 format: md
+upstream_id: experience-suggestions/power/background/standard-background-hardware
+last_sync: 2026-06-07
+sync_hash: 2a42192e
 ---
-
-
 # 后台硬件资源使用
 
 ### 后台进程CPU负载约束（长时任务）

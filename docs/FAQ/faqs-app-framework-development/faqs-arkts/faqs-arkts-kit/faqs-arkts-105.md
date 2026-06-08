@@ -2,9 +2,10 @@
 format: md
 title: "如何通过判断函数入参类型实现不同代码逻辑"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-105
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-105
+last_sync: 2026-06-07
+sync_hash: ae75c608
 ---
-
-
 可参考如下示例：
 
 ```

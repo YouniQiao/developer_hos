@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用AVPlayer设置播放URL(ArkTS)"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/playback-url-setting-method
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/playback-url-setting-method
+last_sync: 2026-06-07
+sync_hash: e5f08325
 ---
-
-
 本开发指导将介绍如何使用AVPlayer开发播放功能，在不同的场景下如何设置URL。
 
 当前指导仅介绍播放URL设置方法，其他场景及完整示例代码，请参考[视频播放](/docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/video-playback)。

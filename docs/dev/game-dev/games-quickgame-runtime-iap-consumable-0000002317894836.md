@@ -2,9 +2,10 @@
 title: "消耗型商品"
 original_url: /docs/dev/game-dev/games-quickgame-runtime-iap-consumable-0000002317894836
 format: md
+upstream_id: dev/game-dev/games-quickgame-runtime-iap-consumable-0000002317894836
+last_sync: 2026-06-07
+sync_hash: 5957ff15
 ---
-
-
 消耗型商品仅能使用一次，消耗使用后即刻失效，需再次购买，例如游戏中额外生命、游戏货币等。
 
 ## 前提条件

@@ -2,9 +2,10 @@
 title: "变更核准（备案）"
 original_url: /docs/dev/game-dev/quickgame-filing-pc-change-0000001761815056
 format: md
+upstream_id: dev/game-dev/quickgame-filing-pc-change-0000001761815056
+last_sync: 2026-06-07
+sync_hash: 3eac5298
 ---
-
-
 ## 变更核准（备案）
 
 在华为云核准（备案）系统中可以同时修改主体信息和快游戏信息。操作步骤如下：

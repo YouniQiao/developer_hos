@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "密钥派生介绍及算法规格"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-derivation/crypto-key-derivation-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-derivation/crypto-key-derivation-overview
+last_sync: 2026-06-07
+sync_hash: f13f92e1
+upstream_hash: a1d400a6a102
 ---
-
 
 在密码学中，密钥派生函数（Key derivation function，KDF）使用伪随机函数从诸如主密码或密码的秘密值中派生出一个或多个密钥。
 

@@ -2,9 +2,10 @@
 format: md
 title: "hilog日志导致应用性能异常如何定位优化"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-63
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-63
+last_sync: 2026-06-07
+sync_hash: bb7c233c
 ---
-
-
 如果发现hilog导致应用性能异常，一般有三个原因：
 
 **原因一**

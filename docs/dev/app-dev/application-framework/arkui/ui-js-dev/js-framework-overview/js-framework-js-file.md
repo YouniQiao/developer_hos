@@ -2,8 +2,11 @@
 title: "app.js"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-js-file
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/js-framework-overview/js-framework-js-file
+last_sync: 2026-06-07
+sync_hash: 128ec678
+upstream_hash: ae87ac1a5d85
 ---
-
 
 ## 应用生命周期
 

@@ -2,9 +2,10 @@
 format: md
 title: "鸿蒙电脑拖拽悬浮窗至扩展显示器时，如何保证悬浮窗布局不出现异常"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-487
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-487
+last_sync: 2026-06-07
+sync_hash: 0cecb6ba
 ---
-
-
 **问题原理**
 
 vp与px转换公式：px = vp \* 显示设备逻辑像素的密度。

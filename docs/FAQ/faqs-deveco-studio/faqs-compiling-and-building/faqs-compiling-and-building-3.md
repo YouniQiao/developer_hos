@@ -2,9 +2,10 @@
 title: "编译告警“The re-export name 'xx' need to be marked as type”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-3
 format: md
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-3
+last_sync: 2026-06-07
+sync_hash: 4aeb8269
 ---
-
-
 **问题现象**
 
 升级DevEco Studio至3.1 Beta2 Release版本后，API 9的Stage工程编译时出现告警，提示“The re-export name 'T' need to be marked as type, please use 'export type'”。

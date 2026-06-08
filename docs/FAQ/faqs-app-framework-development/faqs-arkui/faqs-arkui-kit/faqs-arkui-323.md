@@ -2,9 +2,10 @@
 format: md
 title: "如何在Text组件关闭bindSelection自定义菜单时，取消文本的选中状态"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-323
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-323
+last_sync: 2026-06-07
+sync_hash: 6bd937f0
 ---
-
-
 **问题现象**
 
 当Text组件通过bindSelectionMenu绑定自定义菜单时，长按操作会弹出菜单，但调用closeSelectionMenu关闭菜单后，文本选中状态仍会保持。

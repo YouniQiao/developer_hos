@@ -2,9 +2,10 @@
 format: md
 title: "Navigation如何设置默认页"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-409
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-409
+last_sync: 2026-06-07
+sync_hash: d06776b6
 ---
-
-
 **问题描述**
 
 初始横屏时，Navigation会分栏显示，由于此时没有页面在路由栈中，分栏右侧无内容显示，如何为右侧增加一个默认页。

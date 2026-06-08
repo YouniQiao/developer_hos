@@ -3,8 +3,10 @@ title: 子标题
 sidebar_label: 子标题
 original_url: /docs/design/components/view-components/subheader
 format: md
+upstream_id: design/components/view-components/subheader
+last_sync: 2026-06-07
+sync_hash: fefaadec
 ---
-
 # 子标题
 
 用来组织界面内容，根据层级将其划成区块，并概括该区块内容。子标题样式及属性配置信息请参考 [SubHeader](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-subheader) 文档。

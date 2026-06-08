@@ -2,9 +2,10 @@
 format: md
 title: "工程中存在多处-Wunused-command-line-argument告警，影响查看有效日志"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-21
+upstream_id: FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-21
+last_sync: 2026-06-07
+sync_hash: 1bde5c81
 ---
-
-
 **问题描述**
 
 ```

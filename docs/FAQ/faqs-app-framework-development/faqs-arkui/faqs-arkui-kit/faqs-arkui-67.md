@@ -2,9 +2,10 @@
 title: "如何设置窗口旋转"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-67
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-67
+last_sync: 2026-06-07
+sync_hash: d1b929c5
 ---
-
-
 步骤一：通过[getLastWindow()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-f#windowgetlastwindow9)、[createWindow()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-f#windowcreatewindow9)、[findWindow()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-f#windowfindwindow9)中的任一方法获取到Window实例。
 
 步骤二：通过设置[setPreferredOrientation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setpreferredorientation9)属性来设置窗口的显示方向属性，使用callback异步回调。参数[Orientation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#orientation10)提供了窗口显示方向类型枚举。

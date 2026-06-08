@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通过配置Configuration优化传输性能"
 original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-cpo
 format: md
+upstream_id: dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-cpo
+last_sync: 2026-06-07
+sync_hash: db60a216
 ---
-
-
 ## 约束与限制
 
 通过配置Configuration优化传输性能能力支持Phone、2in1、Tablet、Wearable设备。并且从5.1.1(19)开始，新增支持TV设备。

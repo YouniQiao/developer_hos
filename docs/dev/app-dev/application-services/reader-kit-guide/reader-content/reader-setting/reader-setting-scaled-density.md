@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "监听文本缩放因子变化"
 original_url: /docs/dev/app-dev/application-services/reader-kit-guide/reader-content/reader-setting/reader-setting-scaled-density
 format: md
+upstream_id: dev/app-dev/application-services/reader-kit-guide/reader-content/reader-setting/reader-setting-scaled-density
+last_sync: 2026-06-07
+sync_hash: 3cbc5702
 ---
-
-
 在[智慧多窗](/docs/dev/app-dev/application-framework/arkui/window-manager/multi-window-guide/multi-window-intro)等场景时，文本缩放因子[Display.scaledDensity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)属性会发生变化。如果文本缩放因子的值与当前值不符，开发者需要更新[ReaderSetting](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-read-core#readersetting)的scaledDensity属性，触发ReaderComponentController组件控制器的setPageConfig接口重新进行页面排版。
 
 ## 接口说明

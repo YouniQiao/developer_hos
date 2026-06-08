@@ -2,9 +2,10 @@
 title: "HarmonyOS 4及以下版本的元服务适配指南"
 original_url: /docs/dev/atomic-dev/ascf/ascf-development-guide/ascf-cross-guide
 format: md
+upstream_id: dev/atomic-dev/ascf/ascf-development-guide/ascf-cross-guide
+last_sync: 2026-06-07
+sync_hash: 27fc690d
 ---
-
-
 ![](./img/9fcfaffb.png)
 
 当前适配接入为公测阶段，如有任何问题，请联系atomicservice@huawei.com。

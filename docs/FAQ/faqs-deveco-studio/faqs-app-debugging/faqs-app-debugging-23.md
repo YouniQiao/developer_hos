@@ -2,9 +2,10 @@
 format: md
 title: "安装HAP时提示“error: failed to start ability”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-23
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-23
+last_sync: 2026-06-07
+sync_hash: a7007915
 ---
-
-
 **问题现象**
 
 启动调试或运行应用/服务时，如果安装HAP出错，提示“error: failed to start ability. error: ability visible false deny request”，请检查应用的可见性设置。

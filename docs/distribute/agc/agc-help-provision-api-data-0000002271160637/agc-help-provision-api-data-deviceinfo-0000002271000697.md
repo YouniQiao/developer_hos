@@ -2,9 +2,10 @@
 title: "DeviceInfo"
 original_url: /docs/distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-deviceinfo-0000002271000697
 format: md
+upstream_id: distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-deviceinfo-0000002271000697
+last_sync: 2026-06-07
+sync_hash: eacc45bc
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | id | O | String(32) | 设备信息的ID。 |

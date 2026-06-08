@@ -2,9 +2,10 @@
 title: "应用状态说明"
 original_url: /docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-application-status-0000002240477940
 format: md
+upstream_id: distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-application-status-0000002240477940
+last_sync: 2026-06-07
+sync_hash: aaec6a8d
 ---
-
-
 Publishing API中涉及使用**releaseType**字段标识**应用状态**，在不同**releaseType**字段值即应用的**发布方式**。
 
 * **releaseType**为1，即全网发布。

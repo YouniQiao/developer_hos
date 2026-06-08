@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "卡证识别"
 original_url: /docs/dev/app-dev/ai/vision-kit-guide/vision-cardrecognition
 format: md
+upstream_id: dev/app-dev/ai/vision-kit-guide/vision-cardrecognition
+last_sync: 2026-06-07
+sync_hash: becb19b5
 ---
-
-
 从6.1.1(24)开始，新增支持对港澳居民来往内地通行证、台湾居民来往大陆通行证的识别。
 
 ## 场景介绍

@@ -3,9 +3,10 @@ title: "ohpm install错误码"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/errorcode/ide-ohpm-install-errorcode
 format: md
+upstream_id: tools/ohpm/errorcode/ide-ohpm-install-errorcode
+last_sync: 2026-06-07
+sync_hash: 50d81c74
 ---
-
-
 # ohpm install错误码
 
 ## 00604001 无匹配版本

@@ -2,9 +2,10 @@
 title: "使用Node-API进行扩展能力功能开发"
 original_url: /docs/dev/ndk-dev/use-napi-about-extension
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-extension
+last_sync: 2026-06-07
+sync_hash: 6b08b79c
 ---
-
-
 ## 简介
 
 [扩展能力](/docs/dev/ndk-dev/napi-data-types-interfaces#扩展能力)接口进一步扩展了Node-API的功能，提供了一些额外的接口，用于在Node-API模块中与ArkTS进行更灵活的交互和定制，这些接口可以用于创建自定义ArkTS对象等场景。

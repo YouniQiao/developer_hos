@@ -3,8 +3,10 @@ title: "ChannelPkgInfo"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-channelpkginfo-0000001135626854
 format: md
+upstream_id: monetize/promotion/marketapi-modle-channelpkginfo-0000001135626854
+last_sync: 2026-06-07
+sync_hash: 863ebf5e
 ---
-
 # ChannelPkgInfo
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |

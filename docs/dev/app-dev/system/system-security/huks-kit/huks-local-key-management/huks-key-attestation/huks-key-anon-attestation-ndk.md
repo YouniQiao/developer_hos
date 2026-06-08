@@ -2,9 +2,10 @@
 title: "匿名密钥证明(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-attestation/huks-key-anon-attestation-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-attestation/huks-key-anon-attestation-ndk
+last_sync: 2026-06-07
+sync_hash: 4a44f8cd
 ---
-
-
 在使用本功能时，需确保网络通畅。
 
 ## 在CMake脚本中链接相关动态库

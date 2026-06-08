@@ -3,9 +3,10 @@ title: "回归测试"
 displayed_sidebar: devecoTestingSidebar
 original_url: /docs/tools/deveco-testing/regression-test
 format: md
+upstream_id: tools/deveco-testing/regression-test
+last_sync: 2026-06-07
+sync_hash: 3aa6d6a4
 ---
-
-
 # 回归测试
 
 ![](./img/zh-cn_image_0000002492343756.png)

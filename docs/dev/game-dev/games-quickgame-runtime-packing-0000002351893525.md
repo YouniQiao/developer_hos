@@ -2,9 +2,10 @@
 title: "打包快游戏"
 original_url: /docs/dev/game-dev/games-quickgame-runtime-packing-0000002351893525
 format: md
+upstream_id: dev/game-dev/games-quickgame-runtime-packing-0000002351893525
+last_sync: 2026-06-07
+sync_hash: 7c893321
 ---
-
-
 ## Cocos Creator
 
 菜单选择“项目 &gt; 构建发布”，在“构建发布”窗口填写发布信息后点击“构建”即可在快游戏项目的\build\huawei\dist路径下生成RPK文件。

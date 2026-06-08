@@ -3,8 +3,10 @@ title: 智慧屏
 sidebar_label: 智慧屏
 original_url: /docs/design/multi-device-design/vision
 format: md
+upstream_id: design/multi-device-design/vision
+last_sync: 2026-06-07
+sync_hash: a4014248
 ---
-
 # 智慧屏
 
 智慧屏作为家居场景下的核心设备，采用了自然简单，符合直觉的设计原则，让全家人轻松简单的使用智慧屏。努力为家庭用户带来更加智慧、沉浸、无缝的娱乐体验。

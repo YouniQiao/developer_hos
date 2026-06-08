@@ -2,9 +2,10 @@
 format: md
 title: "Grid组件的scrollBar是否支持自定义"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-136
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-136
+last_sync: 2026-06-07
+sync_hash: a6bc2e2a
 ---
-
-
 Grid组件的默认滑动条scrollBar不支持自定义样式。
 
 可以通过隐藏默认滑动条并绑定ScrollBar组件来满足该场景。参考代码如下：

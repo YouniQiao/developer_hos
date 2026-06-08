@@ -3,9 +3,10 @@ title: "@performance/typed-array-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-typed-array-check
 format: md
+upstream_id: tools/coding-debug/ide-typed-array-check
+last_sync: 2026-06-07
+sync_hash: a590502c
 ---
-
-
 # @performance/typed-array-check
 
 数值数组推荐使用TypedArray。

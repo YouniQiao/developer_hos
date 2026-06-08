@@ -2,9 +2,10 @@
 title: "使用HTTP全局拦截器 (C/C++)"
 original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/native-httpinterceptor-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-network/network-kit/network-kit-data-transmission/native-httpinterceptor-guidelines
+last_sync: 2026-06-07
+sync_hash: fe9db434
 ---
-
-
 ## 场景介绍
 
 从API version 24开始，通过HTTP全局拦截器，开发者可以监控HTTP流量，实现日志记录功能。

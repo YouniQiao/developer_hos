@@ -2,9 +2,10 @@
 title: "分享报告"
 original_url: /docs/dev/game-dev/games-hismartperf-share-0000002286844726
 format: md
+upstream_id: dev/game-dev/games-hismartperf-share-0000002286844726
+last_sync: 2026-06-07
+sync_hash: 78aeb26a
 ---
-
-
 工具支持在本地或云端分享测试报告。
 
 ![](./img/5d4067a5.png)

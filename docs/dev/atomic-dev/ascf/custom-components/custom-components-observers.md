@@ -2,9 +2,10 @@
 title: "数据监听器observers"
 original_url: /docs/dev/atomic-dev/ascf/custom-components/custom-components-observers
 format: md
+upstream_id: dev/atomic-dev/ascf/custom-components/custom-components-observers
+last_sync: 2026-06-07
+sync_hash: 7be8081d
 ---
-
-
 数据监听器用于监听和响应任何属性和数据字段的变化。
 
 ## 使用方法

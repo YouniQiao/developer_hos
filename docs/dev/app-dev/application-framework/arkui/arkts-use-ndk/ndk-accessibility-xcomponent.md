@@ -2,8 +2,11 @@
 title: "通过自绘制接入无障碍"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-accessibility-xcomponent
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-accessibility-xcomponent
+last_sync: 2026-06-07
+sync_hash: 75f75d1a
+upstream_hash: 9ee4067600ed
 ---
-
 
 通过[自定义绘制](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-user-defined-draw)接入的第三方框架平台，NDK提供了对接无障碍服务的接口函数，使三方框架组件能够支持ArkUI中的基本无障碍功能，包括焦点获取、获取无障碍节点和操作响应。
 

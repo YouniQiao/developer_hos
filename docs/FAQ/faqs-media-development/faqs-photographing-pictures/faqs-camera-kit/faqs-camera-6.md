@@ -2,9 +2,10 @@
 title: "如何读取相机的预览图"
 original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-6
 format: md
+upstream_id: FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-6
+last_sync: 2026-06-07
+sync_hash: 328dbca0
 ---
-
-
 开发步骤：
 
 1. 导入image接口。

@@ -2,9 +2,10 @@
 title: "读取实时三环数据"
 original_url: /docs/dev/atomic-dev/health-app-dev-as/health-three-ring-read-as
 format: md
+upstream_id: dev/atomic-dev/health-app-dev-as/health-three-ring-read-as
+last_sync: 2026-06-07
+sync_hash: efb25a4f
 ---
-
-
 ## 场景介绍
 
 实时三环数据，包括实时步数、活动热量、锻炼时长、活动小时数以及目标类数据。

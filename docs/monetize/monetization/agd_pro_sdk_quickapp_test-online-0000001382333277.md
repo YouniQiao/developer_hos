@@ -3,10 +3,10 @@ title: "自测验收"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_quickapp_test-online-0000001382333277
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_quickapp_test-online-0000001382333277
+last_sync: 2026-06-07
+sync_hash: 45c843e4
 ---
-
-
-
 在正式以SDK方式接入AGD Pro服务前，您需要对集成后业务进行自测，自测完成后再提交给华为验收。
 
 ![](./img/agd_pro_sdk_quickapp_test-online-0000001382333277_0.png)

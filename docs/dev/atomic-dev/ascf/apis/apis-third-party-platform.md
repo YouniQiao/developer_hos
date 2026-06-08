@@ -2,9 +2,10 @@
 title: "三方平台"
 original_url: /docs/dev/atomic-dev/ascf/apis/apis-third-party-platform
 format: md
+upstream_id: dev/atomic-dev/ascf/apis/apis-third-party-platform
+last_sync: 2026-06-07
+sync_hash: 089dcc37
 ---
-
-
 ## has.getExtConfig
 
 has.getExtConfig(Object object)

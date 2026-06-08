@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "隔离查询"
 original_url: /docs/dev/app-dev/system/system-security/enterprise-threat-protection-kit-guide/nterprisethreatprotection-virusremediation-content/enterprisethreatprotection-virusremediation-query
 format: md
+upstream_id: dev/app-dev/system/system-security/enterprise-threat-protection-kit-guide/nterprisethreatprotection-virusremediation-content/enterprisethreatprotection-virusremediation-query
+last_sync: 2026-06-07
+sync_hash: 4b0fb60e
 ---
-
-
 ## 基本概念
 
 隔离查询功能帮助安全防护类应用获取当前用户下由该应用隔离的处于隔离状态的文件信息列表。

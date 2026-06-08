@@ -2,8 +2,11 @@
 title: "分析内核态内存"
 original_url: /docs/quality/kernel-memory-analysis
 format: md
+upstream_id: /docs/quality/kernel-memory-analysis
+last_sync: 2026-06-07
+sync_hash: 4b0f794d
+upstream_hash: 699f443a89bb
 ---
-
 
 # 分析内核态内存
 

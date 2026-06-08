@@ -2,9 +2,10 @@
 title: "WLAN服务开发概述"
 original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/wlan/wlan-overview
 format: md
+upstream_id: dev/app-dev/system/system-network/connectivity-kit/wlan/wlan-overview
+last_sync: 2026-06-07
+sync_hash: fd294d2f
 ---
-
-
 ## 概述
 
 无线局域网（Wireless Local Area Networks，WLAN），是通过无线电、红外光信号或者其他技术发送和接收数据的局域网，用户可以通过WLAN实现节点之间无物理连接的网络通讯。常用于用户携带可移动终端的办公、公众环境中。

@@ -2,9 +2,10 @@
 title: "导入和引用模块"
 format: md
 original_url: /docs/tools/coding-debug/ide-import-module
+upstream_id: tools/coding-debug/ide-import-module
+last_sync: 2026-06-07
+sync_hash: 058ac9c8
 ---
-
-
 # 导入和引用模块
 
 DevEco Studio支持通过以下两种方式导入其他工程下的模块：

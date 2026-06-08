@@ -3,8 +3,10 @@ title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/manual-conversion-testing-0000001221434335
 format: md
+upstream_id: monetize/promotion/manual-conversion-testing-0000001221434335
+last_sync: 2026-06-07
+sync_hash: 2a972509
 ---
-
 # 概述
 
 ## 概述

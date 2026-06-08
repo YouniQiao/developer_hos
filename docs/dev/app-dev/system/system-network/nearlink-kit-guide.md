@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "NearLink Kit（星闪服务）"
 original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide
 format: md
+upstream_id: dev/app-dev/system/system-network/nearlink-kit-guide
+last_sync: 2026-06-07
+sync_hash: a0936baf
 ---
-
-
 * **[NearLink Kit简介](/docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-introduction)**
 * **[NearLink Kit术语](/docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-terminology)**
 * **[开发准备](/docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-preparations)**

@@ -2,9 +2,10 @@
 title: "元服务特征及使用场景"
 original_url: /docs/dev/atomic-dev/atomic-service/atomic-service-features
 format: md
+upstream_id: dev/atomic-dev/atomic-service/atomic-service-features
+last_sync: 2026-06-07
+sync_hash: d50333c9
 ---
-
-
 元服务区别于传统应用，具备如下特征，并适用于如下典型场景。
 
 * 秒开直达，纯净清爽

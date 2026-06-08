@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "交通卡充值"
 original_url: /docs/dev/app-dev/application-services/wallet-kit-guide/wallet-transport/wallet-transport-recharge
 format: md
+upstream_id: dev/app-dev/application-services/wallet-kit-guide/wallet-transport/wallet-transport-recharge
+last_sync: 2026-06-07
+sync_hash: 0beac301
 ---
-
-
 交通卡的充值过程分为：卡片展示、生成并支付充值订单和发起充值三个步骤，整体流程如下图，相关接口定义请参照[钱包服务API](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-wallettransitcard)。
 
 ![](./img/567b9579.png)

@@ -3,8 +3,10 @@ title: "成功案例"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-target-success-0000001284982350
 format: md
+upstream_id: monetize/promotion/bp-functions-target-success-0000001284982350
+last_sync: 2026-06-07
+sync_hash: 0a8b1a1d
 ---
-
 # 成功案例
 
 ## 客户需求

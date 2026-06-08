@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "地址越界事件介绍"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/address-sanitizer-events/hiappevent-watcher-address-sanitizer-events
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/address-sanitizer-events/hiappevent-watcher-address-sanitizer-events
+last_sync: 2026-06-07
+sync_hash: e07a7f5f
 ---
-
-
 ## 概述
 
 地址越界问题是指访问了不合法的地址，导致程序运行出现异常，通常表现为应用崩溃。

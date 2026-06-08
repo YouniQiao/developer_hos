@@ -2,9 +2,10 @@
 title: "批量修改商品"
 original_url: /docs/distribute/agc/agc-help-revise-0000002425262569/agc-help-revise-goods-0000002391704482
 format: md
+upstream_id: distribute/agc/agc-help-revise-0000002425262569/agc-help-revise-goods-0000002391704482
+last_sync: 2026-06-07
+sync_hash: 42fc6762
 ---
-
-
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要批量修改商品的应用。
 3. 在“运营”页签下的左侧导航栏中，选择“产品运营>商品管理”。

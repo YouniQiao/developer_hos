@@ -2,9 +2,10 @@
 title: "修改测试态服务"
 original_url: /docs/distribute/agc/agc-help-poi-own-real-phone-testing-0000002382896597/agc-help-poi-modify-teststate-service-0000002452517690
 format: md
+upstream_id: distribute/agc/agc-help-poi-own-real-phone-testing-0000002382896597/agc-help-poi-modify-teststate-service-0000002452517690
+last_sync: 2026-06-07
+sync_hash: 4ea3dbf7
 ---
-
-
 当您创建的测试态服务已过生效时段或需要调整POI点位、测试用户、卡片内容等时，您可以尝试修改测试态服务。
 
 ![](../img/agc-help-poi-modify-teststate-service-0000002452517690_0.png)

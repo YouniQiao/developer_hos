@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "小游戏支付"
 original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-minigame/gameservice-gameplayer-minigame-pay
 format: md
+upstream_id: dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-minigame/gameservice-gameplayer-minigame-pay
+last_sync: 2026-06-07
+sync_hash: 817fcaae
+upstream_hash: 9a0d398d6dd7
 ---
-
 
 小游戏接入基础游戏服务的小游戏支付API后，支持在小游戏内提供付费商品，玩家可以在小游戏内进行购买。
 

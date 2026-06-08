@@ -2,9 +2,10 @@
 format: md
 title: "如何在C++调用从ArkTS传递过来的function"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-26
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-26
+last_sync: 2026-06-07
+sync_hash: 22cf29d6
 ---
-
-
 1. 在index.d.ts文件中，提供ArkTS侧的接口方法。
 
    ```

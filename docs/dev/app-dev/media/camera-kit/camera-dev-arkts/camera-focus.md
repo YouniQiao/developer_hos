@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "对焦(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-focus
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-focus
+last_sync: 2026-06-07
+sync_hash: f4704950
 ---
-
-
 相机框架提供对设备对焦的能力，业务应用可以根据使用场景进行对焦模式和对焦点的设置。
 
 ## 开发步骤

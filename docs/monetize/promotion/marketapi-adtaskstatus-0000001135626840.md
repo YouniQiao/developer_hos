@@ -3,8 +3,10 @@ title: "批量修改任务状态"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-adtaskstatus-0000001135626840
 format: md
+upstream_id: monetize/promotion/marketapi-adtaskstatus-0000001135626840
+last_sync: 2026-06-07
+sync_hash: 56d1c453
 ---
-
 # 批量修改任务状态
 
 ## 功能介绍

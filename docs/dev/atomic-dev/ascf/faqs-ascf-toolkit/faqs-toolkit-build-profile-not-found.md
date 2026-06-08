@@ -2,9 +2,10 @@
 title: "报错ERROR: build-profile.json5 file not found"
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-build-profile-not-found
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-build-profile-not-found
+last_sync: 2026-06-07
+sync_hash: 88bde2dd
 ---
-
-
 **问题现象**
 
 使用命令行转换工具时报错：“ERROR: build-profile.json5 file not found.”

@@ -2,9 +2,10 @@
 title: "开通服务通知并选用订阅模板"
 original_url: /docs/dev/atomic-dev/push-as-subscription/push-as-service-noti
 format: md
+upstream_id: dev/atomic-dev/push-as-subscription/push-as-service-noti
+last_sync: 2026-06-07
+sync_hash: 3b7f6a0b
 ---
-
-
 ## 功能介绍
 
 为了向用户提供更好的服务和更优的体验，Push Kit为元服务提供了基于账号的消息订阅能力。

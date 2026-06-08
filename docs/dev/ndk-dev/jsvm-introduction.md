@@ -2,9 +2,10 @@
 title: "JSVM-API简介"
 original_url: /docs/dev/ndk-dev/jsvm-introduction
 format: md
+upstream_id: dev/ndk-dev/jsvm-introduction
+last_sync: 2026-06-07
+sync_hash: 0d39273d
 ---
-
-
 ## 场景介绍
 
 HarmonyOS JSVM-API基于标准JS引擎提供了一套稳定的API，支持创建和销毁引擎、执行JS代码、JS与C++的交互等关键功能。

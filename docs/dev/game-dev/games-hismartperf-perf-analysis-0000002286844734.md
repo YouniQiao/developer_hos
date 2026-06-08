@@ -2,9 +2,10 @@
 title: "性能分析"
 original_url: /docs/dev/game-dev/games-hismartperf-perf-analysis-0000002286844734
 format: md
+upstream_id: dev/game-dev/games-hismartperf-perf-analysis-0000002286844734
+last_sync: 2026-06-07
+sync_hash: 52448166
 ---
-
-
 ## CPU Counter统计
 
 CPU Counter是CPU硬件内部的计数，其数据项可以用来监控和分析CPU的性能。您可以采集并查看CPU Counter统计数据。

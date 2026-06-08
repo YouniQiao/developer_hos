@@ -2,9 +2,10 @@
 title: "Web组件支持视频沉浸式全屏播放"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-use-multimedia/web_full_screen
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-use-multimedia/web_full_screen
+last_sync: 2026-06-07
+sync_hash: cfcc6718
 ---
-
-
 Web组件提供了视频进入全屏和退出全屏的事件功能，应用可通过监听这些事件实现进入和退出沉浸式全屏模式。
 
 Web组件引用第三方H5页面加载的视频，当单击视频全屏时，视频仅扩展至整个Web组件区域，无法实现系统全屏显示（如图2所示）。若要达到系统全屏的沉浸式视频播放效果（如图3所示），则需应用监听进入全屏的事件并调整界面其他组件的属性。

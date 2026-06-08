@@ -3,9 +3,10 @@ title: "录屏"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-screen-recording
 format: md
+upstream_id: tools/coding-debug/ide-screen-recording
+last_sync: 2026-06-07
+sync_hash: 8096795f
 ---
-
-
 # 录屏
 
 在应用开发过程中，可以使用录屏功能录制应用的运行状态，并通过录屏文件向他人展示正在开发的应用的各种功能效果。

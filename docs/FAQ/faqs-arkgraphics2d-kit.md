@@ -2,9 +2,10 @@
 format: md
 title: "2D图形（ArkGraphics 2D）"
 original_url: /docs/FAQ/faqs-arkgraphics2d-kit
+upstream_id: FAQ/faqs-arkgraphics2d-kit
+last_sync: 2026-06-07
+sync_hash: 81a9244b
 ---
-
-
 * **[如何使用EGL绘制自定义动画？请提供一个简单示例](/docs/FAQ/faqs-graphic-development/faqs-arkgraphics2d-kit/faqs-arkgraphics-2d-1)**
 * **[多线程调用OH\_Drawing\_CreateFontCollection崩溃](/docs/FAQ/faqs-graphic-development/faqs-arkgraphics2d-kit/faqs-arkgraphics-2d-3)**
 * **[EGL绘制是否支持多线程？如何在多线程的场景下同时操作一块buffer进行图形绘制](/docs/FAQ/faqs-graphic-development/faqs-arkgraphics2d-kit/faqs-arkgraphics-2d-6)**

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "预览流二次处理(C/C++)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-preview-imagereceiver
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-native/native-camera-preview-imagereceiver
+last_sync: 2026-06-07
+sync_hash: 517536b3
 ---
-
-
 通过ImageReceiver创建预览输出，获取预览流实时数据，以供后续进行图像二次处理，比如应用可以对其添加滤镜算法等。
 
 ## 开发步骤

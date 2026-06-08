@@ -2,9 +2,10 @@
 title: "交互"
 original_url: /docs/dev/atomic-dev/ascf/apis-page/apis-interaction
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-page/apis-interaction
+last_sync: 2026-06-07
+sync_hash: 07191946
 ---
-
-
 ## has.showToast
 
 has.showToast(Object object)

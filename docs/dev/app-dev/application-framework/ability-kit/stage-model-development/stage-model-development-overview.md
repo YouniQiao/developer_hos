@@ -2,9 +2,10 @@
 title: "Stage模型开发概述"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-development-overview
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-development-overview
+last_sync: 2026-06-07
+sync_hash: 85c8b108
 ---
-
-
 ## 基本概念
 
 下图展示了[Stage模型](/docs/dev/app-dev/application-framework/ability-kit/ability-terminology#stage模型)中的基本概念。

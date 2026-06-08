@@ -3,8 +3,10 @@ title: "枚举值"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-appendix1-0000001174597591
 format: md
+upstream_id: monetize/promotion/marketing-api-appendix1-0000001174597591
+last_sync: 2026-06-07
+sync_hash: ddcdeebf
 ---
-
 # 枚举值
 
 ## 计划/任务/创意操作状态

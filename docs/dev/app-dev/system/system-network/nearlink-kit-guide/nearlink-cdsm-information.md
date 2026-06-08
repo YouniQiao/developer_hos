@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取星闪合作设备集合信息"
 original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-cdsm-information
 format: md
+upstream_id: dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-cdsm-information
+last_sync: 2026-06-07
+sync_hash: 6017f02f
 ---
-
-
 ## 场景介绍
 
 从6.1.1(24)开始支持获取星闪合作设备集合信息。

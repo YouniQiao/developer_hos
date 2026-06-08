@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "添加桌面快捷方式"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-productview/appgallery-productview-shortcut/appgallery-productview-addshortcut
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-productview/appgallery-productview-shortcut/appgallery-productview-addshortcut
+last_sync: 2026-06-07
+sync_hash: f713d4b2
 ---
-
-
 ## 场景介绍
 
 应用内快捷方式为用户提供了一种快速访问应用功能和内容的便捷方式。通过静态资源和自定义资源方式创建桌面快捷方式，并向用户展示确认弹窗。用户确认后，快捷方式将添加至桌面。静态快捷方式适用于常用功能，如创建新播放列表，而自定义快捷方式适用于特定的、临时内容，如添加最新的新闻文章。

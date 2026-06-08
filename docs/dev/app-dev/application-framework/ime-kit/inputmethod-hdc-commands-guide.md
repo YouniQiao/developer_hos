@@ -2,9 +2,10 @@
 title: "Ime工具"
 original_url: /docs/dev/app-dev/application-framework/ime-kit/inputmethod-hdc-commands-guide
 format: md
+upstream_id: dev/app-dev/application-framework/ime-kit/inputmethod-hdc-commands-guide
+last_sync: 2026-06-07
+sync_hash: 0e83517f
 ---
-
-
 ![](./img/62a16ab5.png)
 
 Ime工具从API version 20开始支持。

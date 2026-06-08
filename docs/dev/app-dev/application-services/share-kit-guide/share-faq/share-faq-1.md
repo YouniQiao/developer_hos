@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "拉起系统分享框失败"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/share-faq/share-faq-1
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/share-faq/share-faq-1
+last_sync: 2026-06-07
+sync_hash: b6a076ee
 ---
-
-
 **现象描述：**
 
 无法拉起系统分享框

@@ -2,9 +2,10 @@
 title: "使用Node-API接口创建ArkTS运行时环境"
 original_url: /docs/dev/ndk-dev/use-napi-ark-runtime
 format: md
+upstream_id: dev/ndk-dev/use-napi-ark-runtime
+last_sync: 2026-06-07
+sync_hash: df5cc22d
 ---
-
-
 ## 场景介绍
 
 开发者通过pthread\_create创建新线程后，可以通过napi\_create\_ark\_runtime来创建一个新的ArkTS基础运行时环境，并通过该运行时环境加载ArkTS模块。当使用结束后，开发者需要通过napi\_destroy\_ark\_runtime来销毁所创建的ArkTS基础运行时环境。

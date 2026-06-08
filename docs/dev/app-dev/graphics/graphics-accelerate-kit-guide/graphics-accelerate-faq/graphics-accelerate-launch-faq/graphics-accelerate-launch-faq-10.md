@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "游戏接入秒级启动后无法热更应该如何处理"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-10
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-faq/graphics-accelerate-launch-faq/graphics-accelerate-launch-faq-10
+last_sync: 2026-06-07
+sync_hash: 7a7de7ce
 ---
-
-
 **问题原因**：秒级启动是基于游戏上次退出的状态下进行的镜像恢复，因此往往会跳过游戏引擎启动过程中的一些场景，例如游戏资源加载和游戏资源更新环节。
 
 **解决方案**：可类比游戏长时间挂后台，再切回前台场景。

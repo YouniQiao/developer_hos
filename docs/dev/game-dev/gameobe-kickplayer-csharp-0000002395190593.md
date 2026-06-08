@@ -2,9 +2,10 @@
 title: "移除房间内玩家"
 original_url: /docs/dev/game-dev/gameobe-kickplayer-csharp-0000002395190593
 format: md
+upstream_id: dev/game-dev/gameobe-kickplayer-csharp-0000002395190593
+last_sync: 2026-06-07
+sync_hash: 8d4d8ea8
 ---
-
-
 在房间中，如果房主不希望某个玩家参与到联机游戏中，可以将指定玩家踢出房间。
 
 ## 前提条件

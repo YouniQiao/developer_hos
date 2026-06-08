@@ -2,9 +2,10 @@
 title: "配置开发者服务信息"
 original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-devinfo-0000002306311925
 format: md
+upstream_id: distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-devinfo-0000002306311925
+last_sync: 2026-06-07
+sync_hash: cf2ac7c8
 ---
-
-
 您作为开发者的相关信息将面向应用发布区域的用户公开，其中客服联系方式可能会提供给用户，用于咨询相关问题。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。

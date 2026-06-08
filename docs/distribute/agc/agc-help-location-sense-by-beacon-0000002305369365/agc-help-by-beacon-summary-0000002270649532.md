@@ -2,8 +2,11 @@
 title: "接入流程"
 original_url: /docs/distribute/agc/agc-help-location-sense-by-beacon-0000002305369365/agc-help-by-beacon-summary-0000002270649532
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-by-beacon-0000002305369365/agc-help-by-beacon-summary-0000002270649532
+last_sync: 2026-06-07
+sync_hash: 26d138a6
+upstream_hash: 021b97764832
 ---
-
 
 开发者可以通过近场服务提供的设备管理模块注册信标设备，并对其进行管理。除基础的设备管理能力之外，平台为已认证信标设备提供了附加的管控能力，例如在线配置、电量监控等。未认证设备不具备上述附加能力。
 

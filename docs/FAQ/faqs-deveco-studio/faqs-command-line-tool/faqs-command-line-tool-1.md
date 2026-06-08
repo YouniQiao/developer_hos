@@ -2,9 +2,10 @@
 format: md
 title: "通过命令行或终端可以正常发布，在Git Bash上发布时提示错误：私钥路径中的私钥内容错误"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-command-line-tool/faqs-command-line-tool-1
+upstream_id: FAQ/faqs-deveco-studio/faqs-command-line-tool/faqs-command-line-tool-1
+last_sync: 2026-06-07
+sync_hash: 72084f4d
 ---
-
-
 **问题现象**
 
 通过命令行或终端可以正常发布，但在Git Bash上发布时出现错误。

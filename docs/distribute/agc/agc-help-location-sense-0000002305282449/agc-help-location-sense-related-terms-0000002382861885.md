@@ -2,9 +2,10 @@
 title: "术语"
 original_url: /docs/distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-related-terms-0000002382861885
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-0000002305282449/agc-help-location-sense-related-terms-0000002382861885
+last_sync: 2026-06-07
+sync_hash: eb8cc945
 ---
-
-
 | 术语 | 说明 |
 | --- | --- |
 | Beacon | 也称为信标设备，它能够通过蓝牙通信实现位置感应，感应距离通常在5~30米。与POI相比，服务推荐更为精准。 |

@@ -3,9 +3,10 @@ title: "动态内存峰值占用"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-peak-dynamic-memory-usage-0417
 format: md
+upstream_id: tools/coding-debug/ide-peak-dynamic-memory-usage-0417
+last_sync: 2026-06-07
+sync_hash: 6a647dea
 ---
-
-
 # 动态内存峰值占用
 
 #### 规则详情

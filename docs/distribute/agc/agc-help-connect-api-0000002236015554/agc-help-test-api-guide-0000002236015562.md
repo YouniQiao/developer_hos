@@ -2,9 +2,10 @@
 title: "Testing API指南"
 original_url: /docs/distribute/agc/agc-help-connect-api-0000002236015554/agc-help-test-api-guide-0000002236015562
 format: md
+upstream_id: distribute/agc/agc-help-connect-api-0000002236015554/agc-help-test-api-guide-0000002236015562
+last_sync: 2026-06-07
+sync_hash: 3f9d13a9
 ---
-
-
 在正式发布前，您通过Testing API可以对HarmonyOS应用/元服务版本进行测试，还可以先邀请部分测试用户进行体验，并收集用户的使用意见。
 
 具体流程如下：

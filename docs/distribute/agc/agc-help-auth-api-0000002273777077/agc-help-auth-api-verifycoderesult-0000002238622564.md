@@ -2,9 +2,10 @@
 title: "VerifyCodeResult"
 original_url: /docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-verifycoderesult-0000002238622564
 format: md
+upstream_id: distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-verifycoderesult-0000002238622564
+last_sync: 2026-06-07
+sync_hash: 4f10b4bc
 ---
-
-
 验证码申请结果信息。
 
 #### Method Summary

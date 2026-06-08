@@ -2,9 +2,10 @@
 title: "DevicePermission"
 original_url: /docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-devicepermission-0000002294845674
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-devicepermission-0000002294845674
+last_sync: 2026-06-07
+sync_hash: e1dc33b2
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | permissions | O | `List&lt;[Permission](/docs/distribute/agc/agc-help-publish-api-data-0000002236201266/agc-help-publish-api-data-permission-0000002328924977)>` | 权限详情。  数组长度为1~200。 |

@@ -2,9 +2,10 @@
 title: "创建全网态服务"
 original_url: /docs/distribute/agc/agc-help-location-sense-by-beacon-0000002305369365/agc-help-beacon-apply-service-0000002270649536
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-by-beacon-0000002305369365/agc-help-beacon-apply-service-0000002270649536
+last_sync: 2026-06-07
+sync_hash: e217d8cf
 ---
-
-
 当您的应用/元服务已上架，并且使用自有真机测试通过，您就可以创建全网态近场服务。
 
 ![](../img/agc-help-beacon-apply-service-0000002270649536_0.png)

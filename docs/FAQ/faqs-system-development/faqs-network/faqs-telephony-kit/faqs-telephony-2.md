@@ -2,9 +2,10 @@
 format: md
 title: "如何发送短信"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-telephony-kit/faqs-telephony-2
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-telephony-kit/faqs-telephony-2
+last_sync: 2026-06-07
+sync_hash: 11ffc908
 ---
-
-
 通过短信服务实现相关功能。发送短信时，请求服务端，服务端调用短信接口，使用[sms.sendShortMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sms#smssendshortmessage10)发送短信。
 
 **参考链接**

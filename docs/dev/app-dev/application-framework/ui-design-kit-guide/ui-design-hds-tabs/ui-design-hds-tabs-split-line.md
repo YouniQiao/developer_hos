@@ -2,8 +2,11 @@
 title: "设置页签栏的分割线"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-hds-tabs/ui-design-hds-tabs-split-line
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-hds-tabs/ui-design-hds-tabs-split-line
+last_sync: 2026-06-07
+sync_hash: efa382f6
+upstream_hash: 7c4f4f756f9a
 ---
-
 
 ## 场景介绍
 

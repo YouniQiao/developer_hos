@@ -3,8 +3,10 @@ title: "批量更新商品价格"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-dpa11-0000001286183198
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-dpa11-0000001286183198
+last_sync: 2026-06-07
+sync_hash: 47b752c9
 ---
-
 # 批量更新商品价格
 
 您通过本接口可以批量更新商品价格。

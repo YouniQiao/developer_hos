@@ -3,7 +3,8 @@ displayed_sidebar: appDevSidebar
 title: "如何获取指定城市的天气数据"
 original_url: /docs/dev/app-dev/application-services/weather-service-kit-guide/weather-service-faq/weather-service-faq-1
 format: md
+upstream_id: dev/app-dev/application-services/weather-service-kit-guide/weather-service-faq/weather-service-faq-1
+last_sync: 2026-06-07
+sync_hash: 42696e0c
 ---
-
-
 先调用[getAddressesFromLocationName](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocationmanager#geolocationmanagergetaddressesfromlocationname-1)方法获取指定城市的经纬度信息，然后根据返回的经纬度数据调用[getWeather](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/weather-service-weatherservice#weatherservicegetweather)方法获取天气数据。

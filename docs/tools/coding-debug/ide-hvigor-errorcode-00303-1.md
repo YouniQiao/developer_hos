@@ -3,9 +3,10 @@ title: "配置错误码"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-errorcode-00303-1
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-errorcode-00303-1
+last_sync: 2026-06-07
+sync_hash: 8920e318
 ---
-
-
 # 配置错误码
 
 #### 00303002 找不到某个任务对应的模块

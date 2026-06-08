@@ -2,9 +2,10 @@
 title: "毕昇编译器"
 original_url: /docs/dev/ndk-dev/bisheng-compiler
 format: md
+upstream_id: dev/ndk-dev/bisheng-compiler
+last_sync: 2026-06-07
+sync_hash: d02bfc39
 ---
-
-
 ## 毕昇编译器简介
 
 毕昇编译器是基于LLVM开源软件开发的一款用于C/C++等语言的native编译器，能将C/C++代码工程编译链接成可以在设备上运行的二进制。在无需改动用户代码的条件下，相比业界主流的开源LLVM或GCC编译器，毕昇编译器能提供更强大的优化能力，使编译链接出来的二进制的运行时长更短、指令数更少，帮助提升应用在设备上的运行流畅度。

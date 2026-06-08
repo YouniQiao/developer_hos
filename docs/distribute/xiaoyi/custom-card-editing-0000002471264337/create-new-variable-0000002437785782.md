@@ -3,9 +3,10 @@ title: "编辑变量"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/custom-card-editing-0000002471264337/create-new-variable-0000002437785782
 format: md
+upstream_id: distribute/xiaoyi/custom-card-editing-0000002471264337/create-new-variable-0000002437785782
+last_sync: 2026-06-07
+sync_hash: d04ec65f
 ---
-
-
 # 编辑变量
 
 卡片可能需要根据场景动态调整参数，所以需要新建变量用于在卡片中绑定动态变化的内容，真实的值通过调用时传入。

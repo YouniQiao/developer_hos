@@ -2,9 +2,10 @@
 title: "查询需要用户认证的关键资产(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-query-auth
 format: md
+upstream_id: dev/app-dev/system/system-security/asset-store-kit/asset-arkts/asset-js-query-auth
+last_sync: 2026-06-07
+sync_hash: 50c64567
 ---
-
-
 ## 接口介绍
 
 可通过API文档查看此功能的相关接口：

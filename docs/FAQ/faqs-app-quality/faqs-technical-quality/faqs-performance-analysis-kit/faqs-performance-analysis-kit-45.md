@@ -2,9 +2,10 @@
 format: md
 title: "如何通过hdc命令拉起指定的UIAbility"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-45
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-45
+last_sync: 2026-06-07
+sync_hash: 407b97c4
 ---
-
-
 使用命令拉起指定UIAbility：
 
 ```

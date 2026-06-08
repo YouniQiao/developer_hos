@@ -2,9 +2,10 @@
 title: "流式传输"
 original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-streamreq/remote-communication-syncstreamreq
 format: md
+upstream_id: dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-streamreq/remote-communication-syncstreamreq
+last_sync: 2026-06-07
+sync_hash: 6eacc736
 ---
-
-
 ## 场景介绍
 
 HTTP流式传输（Streaming）允许客户端与服务器之间以流的形式进行数据交互，而无需等待所有数据准备完毕，能显著提升用户体验。流式传输适用于大文件的上传下载、直播、实时数据更新等场景。

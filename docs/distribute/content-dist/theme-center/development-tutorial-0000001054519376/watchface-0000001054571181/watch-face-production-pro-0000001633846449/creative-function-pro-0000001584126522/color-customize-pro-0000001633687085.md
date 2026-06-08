@@ -3,9 +3,10 @@ title: "颜色自定义"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/creative-function-pro-0000001584126522/color-customize-pro-0000001633687085
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/watchface-0000001054571181/watch-face-production-pro-0000001633846449/creative-function-pro-0000001584126522/color-customize-pro-0000001633687085
+last_sync: 2026-06-07
+sync_hash: 21b50de5
 ---
-
-
 # 颜色自定义
 
 ## 功能介绍

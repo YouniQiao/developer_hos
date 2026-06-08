@@ -2,9 +2,10 @@
 title: "标准化数据类型 (ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-type-descriptors
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-type-descriptors
+last_sync: 2026-06-07
+sync_hash: 1f08ba80
 ---
-
-
 ## 场景介绍
 
 标准化数据类型（Uniform Type Descriptor，简称UTD）旨在解决数据类型描述的歧义问题。例如，JPEG图片可能被描述为image/jpeg、.jpg、.jpeg或image/picture等不同形式，导致跨系统传输时，接收方需依赖复杂的兼容逻辑（如扩展名匹配、MIME类型检测）才能识别数据类型，甚至可能因描述不一致而失败。UTD通过统一类型标识，确保数据能被准确、高效地解析和处理。

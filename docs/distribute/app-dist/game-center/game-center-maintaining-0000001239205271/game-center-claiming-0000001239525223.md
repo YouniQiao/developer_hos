@@ -3,8 +3,11 @@ title: "应用认领"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-claiming-0000001239525223
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-claiming-0000001239525223
+last_sync: 2026-06-07
+sync_hash: 4427b35f
+upstream_hash: 16fc23f0a69f
 ---
-
 
 # 应用认领
 

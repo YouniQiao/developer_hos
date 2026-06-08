@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "受限ACL权限申请"
 original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-preparations/screentimeguard-permission-application
 format: md
+upstream_id: dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-preparations/screentimeguard-permission-application
+last_sync: 2026-06-07
+sync_hash: aa9433c5
 ---
-
-
 1. 在 [申请调试Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)和[发布Profile文件](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)之前，需要[申请相应的ACL权限](/docs/distribute/agc/agc-help-acl-0000002427651937/agc-help-apply-acl-0000002394212138)。
 2. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)，点击“开发与服务”，在项目列表中找到对应的项目，并点击选择您需要申请ACL权限的应用。在“项目设置”页面，选择“ACL权限”页签，开始为应用申请ACL权限。
 
@@ -20,7 +21,7 @@ format: md
 6. 在弹出的“选择受限ACL权限”窗口可以看到已申请的权限，勾选后点击确定。
 
    ![](./img/b6d200ee.png)
-7. 选择权限后点击“添加”生成新的Profile文件，下载后按[手动配置签名信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)替换profile文件。
+7. 选择权限后点击“添加”生成新的Profile文件，下载后按[手动配置签名信息](/docs/tools/coding-debug/ide-signing#section297715173233)替换profile文件。
 8. 在工程中entry模块的module.json5文件中添加"ohos.permission.MANAGE\_SCREEN\_TIME\_GUARD"权限，如下所示：
 
    ```

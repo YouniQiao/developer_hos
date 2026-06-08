@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“The metadata field in FormExtensionAbility cannot be left blank or as an empty array”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-164
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-164
+last_sync: 2026-06-07
+sync_hash: f5c17ef7
 ---
-
-
 **错误描述**
 
 FormExtensionAbility中的metadata字段必须非空且不为数组。

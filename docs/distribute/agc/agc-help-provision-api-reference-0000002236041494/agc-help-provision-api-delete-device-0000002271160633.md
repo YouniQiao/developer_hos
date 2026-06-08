@@ -2,9 +2,10 @@
 title: "删除设备"
 original_url: /docs/distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-delete-device-0000002271160633
 format: md
+upstream_id: distribute/agc/agc-help-provision-api-reference-0000002236041494/agc-help-provision-api-delete-device-0000002271160633
+last_sync: 2026-06-07
+sync_hash: 99706bec
 ---
-
-
 #### 功能介绍
 
 此接口用于删除已添加的设备。

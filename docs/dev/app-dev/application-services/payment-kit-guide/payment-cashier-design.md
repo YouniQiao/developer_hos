@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "收银台设计规范"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-cashier-design
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-cashier-design
+last_sync: 2026-06-07
+sync_hash: 4a6826a8
 ---
-
-
 ## 功能需求
 
 开发者可在应用项目中实现支付收银台。应用项目由配置文件（module.json5）、页面代码（ets文件）以及资源文件（图片、字符串等）组成，实现的收银台包含以下功能：展示商户信息、金额、支付方式列表（用户选择的支付方式会变成选中状态）和支付按钮。

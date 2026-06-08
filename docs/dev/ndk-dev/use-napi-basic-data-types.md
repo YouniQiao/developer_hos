@@ -2,8 +2,11 @@
 title: "使用Node-API接口创建基本数据类型"
 original_url: /docs/dev/ndk-dev/use-napi-basic-data-types
 format: md
+upstream_id: dev/ndk-dev/use-napi-basic-data-types
+last_sync: 2026-06-07
+sync_hash: 8c668c15
+upstream_hash: 0bf76b19d3da
 ---
-
 
 ## 简介
 

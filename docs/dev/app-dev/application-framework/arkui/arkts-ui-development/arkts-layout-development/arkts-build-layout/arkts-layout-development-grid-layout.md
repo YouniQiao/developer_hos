@@ -2,9 +2,10 @@
 title: "栅格布局 (GridRow/GridCol)"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development/arkts-build-layout/arkts-layout-development-grid-layout
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-layout-development/arkts-build-layout/arkts-layout-development-grid-layout
+last_sync: 2026-06-07
+sync_hash: 7d7f0430
 ---
-
-
 ## 概述
 
 栅格布局是一种通用的辅助定位工具，对移动设备的界面设计有较好的借鉴作用。主要优势包括：

@@ -3,8 +3,10 @@ title: "查询转化助攻报表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-task-management-help-0000002524167080
 format: md
+upstream_id: monetize/promotion/bp-delivery-task-management-help-0000002524167080
+last_sync: 2026-06-07
+sync_hash: 9788a258
 ---
-
 # 查询转化助攻报表
 
 1. 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)，在顶部菜单栏点击【报表】页签，确认推广范围为“应用市场应用推广” ，选择“转化助攻”页签。

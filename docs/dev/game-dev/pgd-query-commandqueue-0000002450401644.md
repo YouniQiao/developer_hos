@@ -2,9 +2,10 @@
 title: "CommandQueue延迟执行系统"
 original_url: /docs/dev/game-dev/pgd-query-commandqueue-0000002450401644
 format: md
+upstream_id: dev/game-dev/pgd-query-commandqueue-0000002450401644
+last_sync: 2026-06-07
+sync_hash: 467fdc88
 ---
-
-
 ## 获取CommandQueue
 
 ```

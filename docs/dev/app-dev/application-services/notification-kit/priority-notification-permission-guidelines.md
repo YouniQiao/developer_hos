@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "申请优先通知权益"
 original_url: /docs/dev/app-dev/application-services/notification-kit/priority-notification-permission-guidelines
 format: md
+upstream_id: dev/app-dev/application-services/notification-kit/priority-notification-permission-guidelines
+last_sync: 2026-06-07
+sync_hash: 2c899733
 ---
-
-
 当用户终端收到携带[priorityNotificationType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-notification-notificationrequest)字段的通知消息时，系统会将其识别为优先通知并优先显示。
 
 申请优先通知权益存在以下限制：
@@ -37,7 +38,7 @@ format: md
    ![](./img/afbf806b.png)
 
    ![](./img/021fb684.png)
-6. 优先通知权益申请通过后，须在“证书、APP ID和Profile”页面下左侧树形菜单的“Profile”页签，点击“添加”重新生成Profile文件，并下载Profile文件到本地，然后在“[发布应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app)”时，须将该Profile打包到应用包中。
+6. 优先通知权益申请通过后，须在“证书、APP ID和Profile”页面下左侧树形菜单的“Profile”页签，点击“添加”重新生成Profile文件，并下载Profile文件到本地，然后在“[发布应用](/docs/tools/coding-debug/ide-publish-app)”时，须将该Profile打包到应用包中。
 
    ![](./img/3f95b525.png)
 

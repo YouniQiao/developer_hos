@@ -3,9 +3,10 @@ title: "网格化-水波纹&lt;MeshImage-SinMotion&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/meshimage-0000001074342444/meshimage-sinmotion-0000001074662024
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/x2d-advanced-animation-0000001055668422/meshimage-0000001074342444/meshimage-sinmotion-0000001074662024
+last_sync: 2026-06-07
+sync_hash: 4dfcc890
 ---
-
-
 # 网格化-水波纹&lt;MeshImage-SinMotion&gt;
 
 ## 动效概述

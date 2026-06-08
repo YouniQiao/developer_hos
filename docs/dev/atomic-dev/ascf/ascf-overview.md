@@ -2,9 +2,10 @@
 title: "ASCF框架概述"
 original_url: /docs/dev/atomic-dev/ascf/ascf-overview
 format: md
+upstream_id: dev/atomic-dev/ascf/ascf-overview
+last_sync: 2026-06-07
+sync_hash: a7cc80bb
 ---
-
-
 ## 了解元服务
 
 在万物互联时代，人均持有设备量不断攀升，设备种类和使用场景更加多样，使得应用开发、应用入口变得更加复杂。在此背景下，应用提供方和用户迫切需要一种新的服务提供方式，使应用开发更简单、服务（如听音乐、打车等）的获取和使用更便捷。为此，HarmonyOS除支持传统的需要安装的应用（以下简称传统应用）外，还支持更加方便快捷的免安装的应用，即元服务。

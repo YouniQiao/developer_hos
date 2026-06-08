@@ -3,8 +3,10 @@ title: "双折叠应用开发"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-foldable-guide
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-foldable-guide
+last_sync: 2026-06-07
+sync_hash: 36a371b4
 ---
-
 # 双折叠应用开发
 
 相对于直板机，双折叠有以下明显特点：
@@ -64,7 +66,7 @@ format: md
 
 ###相机硬件信息
 
-双折叠有默认的[相机镜头安装角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#相机镜头安装角度)，在使用时需要考虑镜头角度和设备的旋转角度，具体定义可参考[预览旋转角度](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/camera-rotation-term#预览旋转角度)。双折叠相机前置和后置镜头角度以及需要设置的预览流旋转角度如下，折叠态和展开态下的相机参数一致。
+双折叠有默认的[相机镜头安装角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#相机镜头安装角度)，在使用时需要考虑镜头角度和设备的旋转角度，具体定义可参考[预览旋转角度](/docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-term#预览旋转角度)。双折叠相机前置和后置镜头角度以及需要设置的预览流旋转角度如下，折叠态和展开态下的相机参数一致。
 
 **折叠态相机硬件信息**
 

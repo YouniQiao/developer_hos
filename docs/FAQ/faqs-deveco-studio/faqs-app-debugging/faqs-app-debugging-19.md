@@ -2,9 +2,10 @@
 format: md
 title: "运行时提示“Hdc server port XXXX has been used”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-19
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-19
+last_sync: 2026-06-07
+sync_hash: dae1df25
 ---
-
-
 **问题现象**
 
 在设备中运行HAP时，提示“Hdc server port XXXX已被使用。请配置环境变量‘OHOS\_HDC\_SERVER\_PORT’并重启DevEco Studio。”

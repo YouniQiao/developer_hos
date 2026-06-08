@@ -3,8 +3,10 @@ title: "搜索-系统投放-OCPC任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/mktapi-adtask-search-sys-ocpc-0000002521961647
 format: md
+upstream_id: monetize/promotion/mktapi-adtask-search-sys-ocpc-0000002521961647
+last_sync: 2026-06-07
+sync_hash: 36653524
 ---
-
 # 搜索-系统投放-OCPC任务
 
 ## 功能介绍

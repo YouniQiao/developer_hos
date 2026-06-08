@@ -2,9 +2,10 @@
 title: "自动续期订阅商品"
 original_url: /docs/distribute/agc/agc-help-revise-product-0000002425264349/agc-help-revise-auto-subscription-0000002425144501
 format: md
+upstream_id: distribute/agc/agc-help-revise-product-0000002425264349/agc-help-revise-auto-subscription-0000002425144501
+last_sync: 2026-06-07
+sync_hash: fb8a9f5f
 ---
-
-
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要修改商品的应用。
 3. 在“运营”页签下的左侧导航栏中，选择“产品运营 > 商品管理”。

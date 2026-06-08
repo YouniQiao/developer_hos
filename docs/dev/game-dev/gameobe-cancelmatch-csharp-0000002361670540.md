@@ -2,9 +2,10 @@
 title: "取消匹配"
 original_url: /docs/dev/game-dev/gameobe-cancelmatch-csharp-0000002361670540
 format: md
+upstream_id: dev/game-dev/gameobe-cancelmatch-csharp-0000002361670540
+last_sync: 2026-06-07
+sync_hash: 799ce70d
 ---
-
-
 当玩家发起匹配后，中途若需要停止匹配，可以调用取消匹配接口来完成取消匹配的操作。
 
 ![](./img/b2f4caf8.png)

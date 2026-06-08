@@ -2,9 +2,10 @@
 title: "企业类应用可用权限"
 original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-enterprise-apps
 format: md
+upstream_id: dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions/permissions-for-enterprise-apps
+last_sync: 2026-06-07
+sync_hash: 4244a200
 ---
-
-
 以下权限面向企业类应用开放。
 
 企业类应用包括企业普通应用和MDM（Mobile Device Management）设备管理应用。
@@ -19,7 +20,7 @@ format: md
 
 ![](./img/f3b423bf.png)
 
-以下权限不支持自动签名，因此在调试和发布阶段，均需参照[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)的步骤，完成手动签名。
+以下权限不支持自动签名，因此在调试和发布阶段，均需参照[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)的步骤，完成手动签名。
 
 ## ohos.permission.SET\_FILE\_GUARD\_POLICY
 

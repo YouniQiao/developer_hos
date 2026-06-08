@@ -3,8 +3,10 @@ title: "一次开发，多端部署概览"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-multi-device-overview
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-multi-device-overview
+last_sync: 2026-06-07
+sync_hash: b51be04b
 ---
-
 # 一次开发，多端部署概览
 
 本文介绍了“一次开发，多端部署”（后文中简称为“一多”）的定义、目标等，同时从体验设计、页面开发、功能开发等角度，端到端的给出了指导，帮助开发者快速开发出适配多种类型设备的应用。在应用开发前，开发者应尽可能全面考虑应用支持多设备的情况，避免在后期加入新的类型设备时对应用架构进行大幅调整。

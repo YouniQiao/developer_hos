@@ -2,9 +2,10 @@
 title: "设置消费提醒"
 original_url: /docs/distribute/agc/agc-help-account-0000002270829385/agc-help-set-spending-notify-0000002242112054
 format: md
+upstream_id: distribute/agc/agc-help-account-0000002270829385/agc-help-set-spending-notify-0000002242112054
+last_sync: 2026-06-07
+sync_hash: 7970cb00
 ---
-
-
 AppGallery Connect支持您设置消费提醒，以便在您每月的消费金额达到设定的阈值时给您发送邮件提醒，避免支出超过预算。
 
 #### 前提条件

@@ -2,9 +2,10 @@
 title: "查询HarmonyOS标签"
 original_url: /docs/distribute/agc/agc-help-harmonyoslabel-api-0000002382896589/agc-help-harmonyoslabel-api-query-0000002349016172
 format: md
+upstream_id: distribute/agc/agc-help-harmonyoslabel-api-0000002382896589/agc-help-harmonyoslabel-api-query-0000002349016172
+last_sync: 2026-06-07
+sync_hash: 8042463e
 ---
-
-
 #### 功能介绍
 
 此接口用于查询HarmonyOS NEXT应用或元服务的HarmonyOS标签信息。

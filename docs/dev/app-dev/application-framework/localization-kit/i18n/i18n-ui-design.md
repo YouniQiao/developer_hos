@@ -2,9 +2,10 @@
 title: "国际化界面设计"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-ui-design
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/i18n/i18n-ui-design
+last_sync: 2026-06-07
+sync_hash: c36d1237
 ---
-
-
 一套有效的国际化界面布局设计规则，既可以树立产品在国际化设计中产品调性，还可以保证操作的一致性，遵循以下设计规则可有效提升应用全球化质量。
 
 ## 界面空间预留与灵活布局

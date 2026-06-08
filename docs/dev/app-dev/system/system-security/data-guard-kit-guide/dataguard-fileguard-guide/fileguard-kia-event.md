@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "订阅或取消订阅KIA文件拷贝、重命名和压缩事件"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-kia-event
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-kia-event
+last_sync: 2026-06-07
+sync_hash: 9eb42d79
 ---
-
-
 ## 场景介绍
 
 为应用提供监听或取消监听KIA文件拷贝、重命名和压缩事件的能力，当KIA文件发生变种时，通过回调函数，返回KIA变种信息。

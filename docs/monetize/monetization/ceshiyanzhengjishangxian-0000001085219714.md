@@ -3,10 +3,10 @@ title: "测试验证及上线"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/ceshiyanzhengjishangxian-0000001085219714
 format: md
+upstream_id: monetize/monetization/ceshiyanzhengjishangxian-0000001085219714
+last_sync: 2026-06-07
+sync_hash: 7b890741
 ---
-
-
-
 商业上架前需进行广告的测试验证，包括媒体自测和鲸鸿动能验收两个步骤。
 
 #### 1. 自测

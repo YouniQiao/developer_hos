@@ -2,8 +2,11 @@
 title: "错误码"
 original_url: /docs/distribute/agc/agc-help-report-api-reference-0000002236201354/agc-help-report-api-errorcode-0000002271160685
 format: md
+upstream_id: distribute/agc/agc-help-report-api-reference-0000002236201354/agc-help-report-api-errorcode-0000002271160685
+last_sync: 2026-06-07
+sync_hash: 489a16e5
+upstream_hash: 804ced711439
 ---
-
 
 | 错误码（errorCode） | 错误描述（errorMsg） |
 | --- | --- |

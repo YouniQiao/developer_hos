@@ -3,6 +3,10 @@ title: "查询任务数据报表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-ocpd-inquire-task-0000001238164548
 format: md
+upstream_id: monetize/promotion/bp-functions-ocpd-inquire-task-0000001238164548
+last_sync: 2026-06-07
+sync_hash: 78f98807
+upstream_hash: dfeecd352962
 ---
 
 # 查询任务数据报表

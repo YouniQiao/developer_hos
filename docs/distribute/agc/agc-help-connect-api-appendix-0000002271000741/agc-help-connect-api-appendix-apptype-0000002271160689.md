@@ -2,9 +2,10 @@
 title: "应用游戏分类"
 original_url: /docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-apptype-0000002271160689
 format: md
+upstream_id: distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-apptype-0000002271160689
+last_sync: 2026-06-07
+sync_hash: 3cfc06f2
 ---
-
-
 #### HarmonyOS应用（应用类）
 
 | 一级分类 | 一级分类ID | 二级分类 | 二级分类ID | 标签 | **标签ID** |

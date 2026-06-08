@@ -2,9 +2,10 @@
 title: "免审更新商品"
 original_url: /docs/dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-direct-update
 format: md
+upstream_id: dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-direct-update
+last_sync: 2026-06-07
+sync_hash: cd7fc540
 ---
-
-
 ## 功能介绍
 
 为提升商家运营效率，平台提供免审更新商品接口。该接口允许商家在无需重新走完整审核流程的前提下，直接对商品的关键可变字段进行实时更新，变更后立即生效。

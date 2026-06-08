@@ -1,8 +1,10 @@
 ---
 title: "Health Preparations"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-preparations
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-preparations
+last_sync: 2026-06-07
+sync_hash: aa04d8a1
 ---
-
 import SourceLink from '@site/src/components/SourceLink';
 
 # Health Preparations

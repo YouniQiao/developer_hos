@@ -2,9 +2,10 @@
 title: "概述"
 original_url: /docs/experience-suggestions/performance/performance-overview
 format: md
+upstream_id: experience-suggestions/performance/performance-overview
+last_sync: 2026-06-07
+sync_hash: 0095142e
 ---
-
-
 # 概述
 
 ### 背景及目的

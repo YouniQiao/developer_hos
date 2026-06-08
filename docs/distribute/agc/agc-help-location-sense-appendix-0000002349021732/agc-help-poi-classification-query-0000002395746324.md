@@ -2,9 +2,10 @@
 title: "POI分类"
 original_url: /docs/distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-poi-classification-query-0000002395746324
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-appendix-0000002349021732/agc-help-poi-classification-query-0000002395746324
+last_sync: 2026-06-07
+sync_hash: 2fb5fee0
 ---
-
-
 为了方便开发者更准确地定位POI的分类，以下列举出POI的一级分类和二级分类，供开发者参考：
 
 | 一级分类 | 二级分类 |

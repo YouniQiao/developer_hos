@@ -2,9 +2,10 @@
 title: "控制后台进程CPU使用率"
 original_url: /docs/quality/controlling-background-process-cpu
 format: md
+upstream_id: /docs/quality/controlling-background-process-cpu
+last_sync: 2026-06-07
+sync_hash: fc29ab7d
 ---
-
-
 # 控制后台进程CPU使用率
 
 CPU使用率表示进程在CPU上的运行时间占总时间的百分比，计算公式为：CPU使用率 = 运行时间 / 总时间。单核CPU使用率的最大值为100%，多核CPU使用率的最大值为核数乘以100%。例如，8核CPU使用率的最大值为800%。

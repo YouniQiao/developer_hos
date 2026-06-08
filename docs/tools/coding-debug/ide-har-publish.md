@@ -2,9 +2,10 @@
 title: "发布共享包"
 format: md
 original_url: /docs/tools/coding-debug/ide-har-publish
+upstream_id: tools/coding-debug/ide-har-publish
+last_sync: 2026-06-07
+sync_hash: 1a53c429
 ---
-
-
 # 发布共享包
 
 发布打包的HAR，可供其他开发者安装和引用。接下来将介绍如何发布HAR共享包。

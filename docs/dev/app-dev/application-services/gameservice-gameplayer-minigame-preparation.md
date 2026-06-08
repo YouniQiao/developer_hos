@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: /docs/dev/app-dev/application-services/gameservice-gameplayer-minigame-preparation
 format: md
+upstream_id: dev/app-dev/application-services/gameservice-gameplayer-minigame-preparation
+last_sync: 2026-06-07
+sync_hash: 21641bc1
 ---
-
-
 ## 创建小游戏
 
 在华为应用市场发布小游戏，要求前往AppGallery Connect创建小游戏类元服务，具体操作请参见[创建小游戏](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-minigame-0000002434138360)。其中：
@@ -33,8 +34,8 @@ format: md
 
 数字证书和Profile文件等签名信息可以确保小游戏的完整性：
 
-* 调试阶段：[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)、[申请调试证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-debug-cert-0000002283256797)、[申请调试Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)。
-* 发布阶段：[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)、[申请发布证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-release-cert-0000002283336729)、[申请发布Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)。
+* 调试阶段：[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)、[申请调试证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-debug-cert-0000002283256797)、[申请调试Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)。
+* 发布阶段：[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)、[申请发布证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-release-cert-0000002283336729)、[申请发布Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)。
 
 ## 配置签名证书指纹
 

@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“The srcPath is not a relative path：xxx”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-138
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-138
+last_sync: 2026-06-07
+sync_hash: 2449cad5
 ---
-
-
 **错误描述**
 
 srcPath字段配置值必须为相对路径。
@@ -21,4 +22,4 @@ srcPath字段配置值必须为相对路径。
 
 **参考链接**
 
-[Hvigor脚本文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section810245135914)
+[Hvigor脚本文件](/docs/tools/coding-debug/ide-hvigor-life-cycle#section810245135914)

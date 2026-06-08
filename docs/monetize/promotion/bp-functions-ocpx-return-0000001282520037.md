@@ -3,8 +3,10 @@ title: "回传转化数据"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-ocpx-return-0000001282520037
 format: md
+upstream_id: monetize/promotion/bp-functions-ocpx-return-0000001282520037
+last_sync: 2026-06-07
+sync_hash: 9b897790
 ---
-
 # 回传转化数据
 
 ## 前提条件

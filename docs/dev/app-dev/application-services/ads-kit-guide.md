@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Ads Kit（广告服务）"
 original_url: /docs/dev/app-dev/application-services/ads-kit-guide
 format: md
+upstream_id: dev/app-dev/application-services/ads-kit-guide
+last_sync: 2026-06-07
+sync_hash: 1ebf4ba3
 ---
-
-
 * **[Ads Kit简介](/docs/dev/app-dev/application-services/ads-kit-guide/ads-introduction)**
 * **[Ads Kit术语](/docs/dev/app-dev/application-services/ads-kit-guide/ads-kit-glossary)**
 * **[开发准备](/docs/dev/app-dev/application-services/development-preparation)**

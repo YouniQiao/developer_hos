@@ -3,8 +3,10 @@ title: "智能穿戴导航协同"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-smartwatchnavigation
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-smartwatchnavigation
+last_sync: 2026-06-07
+sync_hash: ac42a0a8
 ---
-
 # 智能穿戴导航协同
 
 ## 概述
@@ -319,7 +321,7 @@ private onMsgCallback: Callback<wearEngine.P2pMessage> = (data: wearEngine.P2pMe
 
 ![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/11/v3/KCt_xt6vQeOEPxhY4YBbwA/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260606T074247Z&HW-CC-Expire=86400&HW-CC-Sign=7E236CB3C48DA7DDCAB55556E2BD319C8BB124013FE9651186279E5E07FA9C5C)
 
-手机手表互联通信的具体实现，详情可参考[智能穿戴应用开发](/docs/dev/app-dev/multi-device/bpta-smartwatch)与[应用间消息通信](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/p2p_communication)。
+手机手表互联通信的具体实现，详情可参考[智能穿戴应用开发](/docs/dev/app-dev/multi-device/bpta-smartwatch)与[应用间消息通信](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/p2p_communication)。
 
 ###消息通知
 

@@ -2,8 +2,11 @@
 format: md
 title: "Image无法使用bindContextMenu"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-61
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-61
+last_sync: 2026-06-07
+sync_hash: 6fca8e0b
+upstream_hash: 2d9e7d535f1d
 ---
-
 
 Image组件默认启用长按拖拽功能，会与bindContextMenu的长按弹出菜单冲突，需显式设置draggable(false)来禁用拖拽。参考代码如下：
 

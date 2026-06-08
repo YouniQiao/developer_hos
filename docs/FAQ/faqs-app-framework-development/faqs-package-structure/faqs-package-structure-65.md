@@ -2,9 +2,10 @@
 format: md
 title: "使用发布证书进行调试时出现安装错误: Install Failed: error: failed to install bundle."
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-65
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-65
+last_sync: 2026-06-07
+sync_hash: 5a72028b
 ---
-
-
 应用市场发布的证书无法通过非应用市场渠道安装。 若要测试发布证书应用，可以参考以下2种方式：
 
 * API ≤ 9 的应用请使用[开放式测试](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/agc-betatest-introduction-0000001071477284)。

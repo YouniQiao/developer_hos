@@ -3,8 +3,10 @@ title: "批量编辑任务状态"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-advertising-task4-0000001338258529
 format: md
+upstream_id: monetize/promotion/marketing-api-advertising-task4-0000001338258529
+last_sync: 2026-06-07
+sync_hash: 3e69ea07
 ---
-
 # 批量编辑任务状态
 
 您通过本接口可以批量编辑任务状态。

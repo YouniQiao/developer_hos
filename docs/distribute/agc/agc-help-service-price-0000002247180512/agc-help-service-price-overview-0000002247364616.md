@@ -2,9 +2,10 @@
 title: "概述"
 original_url: /docs/distribute/agc/agc-help-service-price-0000002247180512/agc-help-service-price-overview-0000002247364616
 format: md
+upstream_id: distribute/agc/agc-help-service-price-0000002247180512/agc-help-service-price-overview-0000002247364616
+last_sync: 2026-06-07
+sync_hash: 333a6f5f
 ---
-
-
 AppGallery Connect为您提供的服务分为免费和收费两种类别：
 
 * 免费服务：用户不需要开通结算账户，也不需要签署付费服务协议就能使用的服务。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "接入Skill说明"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-skill-introduction
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-skill-introduction
+last_sync: 2026-06-07
+sync_hash: f98d06aa
 ---
-
-
 鸿蒙支付服务接入Skill是一套面向开发者/外部商户接入的能力，基于Payment Kit文档沉淀标准流程与关键校验点，将“文档阅读”转化为“任务清单执行”，帮助开发者更快完成鸿蒙支付服务接入的能力。
 
 接入Skill能力可获得：

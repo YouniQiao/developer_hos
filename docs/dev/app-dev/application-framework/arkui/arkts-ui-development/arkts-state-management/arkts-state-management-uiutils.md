@@ -2,9 +2,10 @@
 title: "辅助接口"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils
+last_sync: 2026-06-07
+sync_hash: 21bfd175
 ---
-
-
 * **[getTarget接口：获取状态管理框架代理前的原始对象](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-gettarget)**
 * **[makeObserved接口：将非观察数据变为可观察数据](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-makeobserved)**
 * **[canBeObserved接口：判断对象是否可被观察](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-uiutils/arkts-new-canbeobserved)**

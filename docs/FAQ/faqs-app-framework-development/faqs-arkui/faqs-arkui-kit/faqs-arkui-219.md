@@ -2,9 +2,10 @@
 format: md
 title: "ForEach键值生成规则是怎样的"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-219
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-219
+last_sync: 2026-06-07
+sync_hash: 82692ee0
 ---
-
-
 键值的生成规则与itemGenerator和keyGenerator有关：
 
 * 如果keyGenerator函数缺省，生成规则由框架确定，item和index拼接生成规则为(item: any, index: number)=>\{ return index +'\_'+ JSON.stringify(item); \}。

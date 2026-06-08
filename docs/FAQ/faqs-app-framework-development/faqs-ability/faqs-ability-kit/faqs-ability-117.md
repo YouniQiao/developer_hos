@@ -2,9 +2,10 @@
 format: md
 title: "HarmonyOS Next系统属于大端还是小端"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-117
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-117
+last_sync: 2026-06-07
+sync_hash: b8611b57
 ---
-
-
 属于小端序，可以通过以下代码验证：
 
 ```

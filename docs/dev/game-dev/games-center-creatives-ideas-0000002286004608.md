@@ -2,9 +2,10 @@
 title: "魔方创意"
 original_url: /docs/dev/game-dev/games-center-creatives-ideas-0000002286004608
 format: md
+upstream_id: dev/game-dev/games-center-creatives-ideas-0000002286004608
+last_sync: 2026-06-07
+sync_hash: a697b828
 ---
-
-
 魔方创意是一个在线制作、轻松上手、简单轻量的设计网站，为您提升营销物料的内容质量和传播频次。魔方创意支持一键预览，支持复杂的交互或跳转，您可以自由搭配组件，一键复用优质内容，轻松设计运营活动的可视化H5落地页，高效解决内容生产问题，大大节省了沟通、设计和人力成本。
 
 ## 编辑器界面

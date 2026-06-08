@@ -3,8 +3,10 @@ title: "业务介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/service-introduction-0000001062607577
 format: md
+upstream_id: monetize/promotion/service-introduction-0000001062607577
+last_sync: 2026-06-07
+sync_hash: 35e5b396
 ---
-
 # 业务介绍
 
 华为应用市场与开发者联合运营应用，并为此提供能力接入、数据报表、活动运营、用户运营等一系列服务。联运服务的合作模式包括但不限于付费应用与应用内购买业务。

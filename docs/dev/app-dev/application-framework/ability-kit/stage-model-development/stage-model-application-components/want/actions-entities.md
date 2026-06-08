@@ -2,8 +2,11 @@
 title: "常见action与entities（不推荐使用）"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/want/actions-entities
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/want/actions-entities
+last_sync: 2026-06-07
+sync_hash: bc371124
+upstream_hash: 5f23c7e5c2bd
 ---
-
 
 ![](./img/0c735854.png)
 

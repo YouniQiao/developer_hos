@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: ".shader资源文件格式要求"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-3d/arkgraphics3d-resource/arkgraphics3d-shader-resource
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-3d/arkgraphics3d-resource/arkgraphics3d-shader-resource
+last_sync: 2026-06-07
+sync_hash: 78eef585
 ---
-
-
 ArkGraphics 3D中支持的.shader文件基于JSON格式，书写.shader文件时需符合JSON语法要求。文件包含以下部分：
 
 ## compatibility\_info

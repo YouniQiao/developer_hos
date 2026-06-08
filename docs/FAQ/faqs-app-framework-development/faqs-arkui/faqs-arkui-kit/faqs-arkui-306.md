@@ -2,9 +2,10 @@
 format: md
 title: "如何识别双击手势时忽视单击手势"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-306
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-306
+last_sync: 2026-06-07
+sync_hash: ddcbd156
 ---
-
-
 使用组合手势GestureGroup的互斥识别。双击事件应置于单击事件之前，互斥识别按排列顺序进行。如果单击事件在前，则只会识别单击事件。参考代码如下：
 
 ```

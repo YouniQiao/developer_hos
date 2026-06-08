@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "某些特殊场景下（如附近存在磁场干扰、手机发烫或扫描到重复纹理等），出现平面漂移或者位姿数据跳变现象"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/arengine-faq/arengine-faq-4
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/arengine-faq/arengine-faq-4
+last_sync: 2026-06-07
+sync_hash: e02e66dd
 ---
-
-
 ## 现象描述
 
 某些特殊场景下，如使用环境附近存在强磁场，手机处于高负载场景下（后台开启很多应用或长时间使用导致手机发烫），或者扫描到重复纹理（见下图）时，可能出现识别到的平面无法锚定到现实世界中，或者通过[HMS\_AREngine\_ARCamera\_GetPose](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-capi-arengine#hms_arengine_arcamera_getpose)接口获取的位姿信息出现大幅度跳变等现象。

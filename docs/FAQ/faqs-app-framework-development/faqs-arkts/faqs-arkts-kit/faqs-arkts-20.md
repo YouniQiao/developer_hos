@@ -2,9 +2,10 @@
 format: md
 title: "如何生成UUID的字符串"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-20
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-20
+last_sync: 2026-06-07
+sync_hash: c0c93eb4
 ---
-
-
 使用util工具的generateRandomUUID函数可以生成字符串类型的UUID，示例如下：
 
 ```

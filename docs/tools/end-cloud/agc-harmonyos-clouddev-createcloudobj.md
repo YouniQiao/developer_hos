@@ -1,12 +1,12 @@
 ---
-
 title: "创建云对象"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-createcloudobj
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-createcloudobj
+last_sync: 2026-06-07
+sync_hash: 7400874b
 ---
-
-
 # 创建云对象
 
 首先您需要在云侧工程下创建云对象。

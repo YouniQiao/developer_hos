@@ -3,9 +3,10 @@ title: "页面生成"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-page-generation
 format: md
+upstream_id: tools/ai-assist/ide-page-generation
+last_sync: 2026-06-07
+sync_hash: 6eb0e061
 ---
-
-
 # 页面生成
 
 CodeGenie当前支持生成美食、旅游、购物、新闻和教育五大垂域的页面。通过自由输入、快捷模板、上传页面参考图片的方式生成应用/元服务可用的页面代码，生成结果支持实时预览，帮助开发者快速完成页面搭建。

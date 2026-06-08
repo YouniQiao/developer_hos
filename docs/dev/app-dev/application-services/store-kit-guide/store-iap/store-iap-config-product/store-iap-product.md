@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "数字商品介绍"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-config-product/store-iap-product
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-config-product/store-iap-product
+last_sync: 2026-06-07
+sync_hash: 13f20513
+upstream_hash: 07be95c83fc8
 ---
-
 
 数字商品服务为接入应用内购买的应用提供了[展示数字商品](/docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-distribute/store-iap-distribute-query)、[购买数字商品](/docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-distribute/store-iap-distribute-purchase)、[发放数字商品权益](/docs/dev/app-dev/application-services/store-kit-guide/store-iap/store-iap-distribute/store-iap-distribute-delivering)的功能。
 

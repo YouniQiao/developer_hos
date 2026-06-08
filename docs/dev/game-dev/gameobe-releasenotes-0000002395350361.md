@@ -2,9 +2,10 @@
 title: "版本更新说明"
 original_url: /docs/dev/game-dev/gameobe-releasenotes-0000002395350361
 format: md
+upstream_id: dev/game-dev/gameobe-releasenotes-0000002395350361
+last_sync: 2026-06-07
+sync_hash: e3df97c5
 ---
-
-
 ![](./img/bcbf7cf8.png)
 
 JS SDK（13.6.2.300版本起）、C# SDK（13.8.2.300版本起）支持发布HarmonyOS 5.0及以上平台游戏。

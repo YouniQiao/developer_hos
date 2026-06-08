@@ -3,9 +3,10 @@ title: "网络诊断：Network分析"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-profiler-network
 format: md
+upstream_id: tools/coding-debug/ide-profiler-network
+last_sync: 2026-06-07
+sync_hash: 9c00249b
 ---
-
-
 # 网络诊断：Network分析
 
 DevEco Profiler提供Network模板，帮助用户在应用运行过程中查看http协议栈网络信息和网络流量信息，http协议栈包括请求分段耗时以及请求具体内容，方便对网络问题进行调优。请求耗时按照以下五种阶段进行划分：DNS 解析、TCP连接、TLS连接、请求等待、接收响应，分别展示在各阶段的耗时，可以针对性的优化时延问题。同时，详情信息将展示每个请求中携带的信息，包含request、response侧及其携带的header、body、cookie信息，方便网络问题定位。

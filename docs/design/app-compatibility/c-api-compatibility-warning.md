@@ -3,9 +3,10 @@ title: "CAPI兼容性保护高阶用法"
 displayed_sidebar: appCompatibilitySidebar
 original_url: /docs/design/app-compatibility/c-api-compatibility-warning
 format: md
+upstream_id: design/app-compatibility/c-api-compatibility-warning
+last_sync: 2026-06-07
+sync_hash: 919002d1
 ---
-
-
 # CAPI兼容性保护高阶用法
 
 ![](./img/b8d90560.png) 

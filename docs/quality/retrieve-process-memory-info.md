@@ -2,9 +2,10 @@
 title: "获取进程内存信息"
 original_url: /docs/quality/retrieve-process-memory-info
 format: md
+upstream_id: /docs/quality/retrieve-process-memory-info
+last_sync: 2026-06-07
+sync_hash: 65ce5b8c
 ---
-
-
 # 获取进程内存信息
 
 ## 通过HiDumper查看内存信息

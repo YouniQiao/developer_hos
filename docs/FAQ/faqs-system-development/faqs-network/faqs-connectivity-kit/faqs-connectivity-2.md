@@ -2,9 +2,10 @@
 title: "如何扫描Wi-Fi列表"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-connectivity-kit/faqs-connectivity-2
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-connectivity-kit/faqs-connectivity-2
+last_sync: 2026-06-07
+sync_hash: 8047bc5d
 ---
-
-
 使用wifiManager.getScanInfoList方法获取扫描Wi-Fi结果，需要权限：ohos.permission.GET\_WIFI\_INFO。参考代码如下：
 
 ```

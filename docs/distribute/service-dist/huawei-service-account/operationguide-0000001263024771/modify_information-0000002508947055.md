@@ -3,9 +3,10 @@ title: "修改服务号基本信息"
 displayed_sidebar: serviceDistSidebar
 original_url: /docs/distribute/service-dist/huawei-service-account/operationguide-0000001263024771/modify_information-0000002508947055
 format: md
+upstream_id: distribute/service-dist/huawei-service-account/operationguide-0000001263024771/modify_information-0000002508947055
+last_sync: 2026-06-07
+sync_hash: 2b96edb7
 ---
-
-
 # 修改服务号基本信息
 
 1）进入服务号管理页面

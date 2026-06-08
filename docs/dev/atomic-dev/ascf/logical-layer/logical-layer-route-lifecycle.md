@@ -2,9 +2,10 @@
 title: "路由和生命周期"
 original_url: /docs/dev/atomic-dev/ascf/logical-layer/logical-layer-route-lifecycle
 format: md
+upstream_id: dev/atomic-dev/ascf/logical-layer/logical-layer-route-lifecycle
+last_sync: 2026-06-07
+sync_hash: f255eacf
 ---
-
-
 在ASCF框架中所有页面的路由全部由框架进行管理。
 
 ## 页面栈

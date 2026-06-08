@@ -2,9 +2,10 @@
 title: "manifest配置文件"
 original_url: /docs/dev/game-dev/games-quickgame-manifest-0000002351944509
 format: md
+upstream_id: dev/game-dev/games-quickgame-manifest-0000002351944509
+last_sync: 2026-06-07
+sync_hash: fc4b471c
 ---
-
-
 ## manifestж–Үд»¶
 
 manifest.jsonй…ҚзҪ®ж–Үд»¶еҢ…еҗ«дәҶеҝ«жёёжҲҸжҸҸиҝ°гҖҒжҺҘеҸЈеЈ°жҳҺгҖҒйЎөйқўи·Ҝз”ұзӯүдҝЎжҒҜгҖӮ

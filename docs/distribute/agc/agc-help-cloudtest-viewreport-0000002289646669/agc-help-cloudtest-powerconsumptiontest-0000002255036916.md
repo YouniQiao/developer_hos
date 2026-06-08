@@ -2,9 +2,10 @@
 title: "功耗测试"
 original_url: /docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-powerconsumptiontest-0000002255036916
 format: md
+upstream_id: distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-powerconsumptiontest-0000002255036916
+last_sync: 2026-06-07
+sync_hash: 6b8f8a52
 ---
-
-
 云测试提供应用或元服务在真机设备上的功耗测试功能，检测影响应用或元服务功耗的前台资源占用和后台资源占用的各项关键指标。
 
 #### 前提条件

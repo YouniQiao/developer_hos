@@ -2,9 +2,10 @@
 format: md
 title: "选择测试包后报错提示“测试包解析失败，请查看测试指南排查失败原因”"
 original_url: /docs/FAQ/faqs-deveco-testing/faqs-regression-test/faqs-regression-test-12
+upstream_id: FAQ/faqs-deveco-testing/faqs-regression-test/faqs-regression-test-12
+last_sync: 2026-06-07
+sync_hash: 19fd5c27
 ---
-
-
 出现该报错有以下两种原因：
 
 1. 用户选择的测试包中没有可执行测试用例，请参考测试指南和基于Python的应用UI测试编写测试用例。

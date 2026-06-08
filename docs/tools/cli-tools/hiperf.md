@@ -3,9 +3,10 @@ title: "hiperf"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/hiperf
 format: md
+upstream_id: tools/cli-tools/hiperf
+last_sync: 2026-06-07
+sync_hash: 9b4400d3
 ---
-
-
 # hiperf
 
 hiperf是一款集成多种性能分析功能的命令行工具，可用于分析系统性能瓶颈、定位软件热点及优化代码效率，支持采集和统计程序运行时的性能数据。

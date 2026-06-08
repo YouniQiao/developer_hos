@@ -2,9 +2,10 @@
 title: "ArkWeb术语"
 original_url: /docs/dev/app-dev/application-framework/arkweb-glossary
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb-glossary
+last_sync: 2026-06-07
+sync_hash: 712af6f8
 ---
-
-
 ## A
 
 ### ArkUI Gestures；ArkUI手势

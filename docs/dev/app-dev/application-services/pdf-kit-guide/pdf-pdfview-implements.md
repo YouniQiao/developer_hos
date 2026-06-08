@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "PdfView预览组件"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements
+last_sync: 2026-06-07
+sync_hash: c059a397
 ---
-
-
 * **[预览PDF文档](/docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-component)**
 * **[打开和保存PDF文档](/docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfservice-implements/pdf-open-document)**
 * **[设置PDF文档预览效果](/docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-preview-method)**

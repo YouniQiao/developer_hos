@@ -2,9 +2,10 @@
 title: "通过字节数组生成码图"
 original_url: /docs/dev/atomic-dev/atomic-scan-generate/atomic-scan-generatearray
 format: md
+upstream_id: dev/atomic-dev/atomic-scan-generate/atomic-scan-generatearray
+last_sync: 2026-06-07
+sync_hash: 470f6332
 ---
-
-
 ## 基本概念
 
 码图生成能力支持将字节数组转换为自定义格式的码图。

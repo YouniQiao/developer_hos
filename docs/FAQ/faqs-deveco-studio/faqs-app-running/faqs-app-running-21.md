@@ -2,9 +2,10 @@
 format: md
 title: "模拟器应用运行时崩溃退出"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-21
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-21
+last_sync: 2026-06-07
+sync_hash: 1812f0b3
 ---
-
-
 **问题现象**
 
 应用在模拟器启动调试或运行过程中异常退出。

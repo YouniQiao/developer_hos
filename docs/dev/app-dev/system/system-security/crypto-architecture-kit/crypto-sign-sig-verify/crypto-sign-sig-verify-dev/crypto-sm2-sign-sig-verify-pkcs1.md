@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "使用SM2密钥对签名验签(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-sm2-sign-sig-verify-pkcs1
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-sm2-sign-sig-verify-pkcs1
+last_sync: 2026-06-07
+sync_hash: dd76b0a9
+upstream_hash: bcb4320062d8
 ---
-
 
 对应的算法规格请查看[签名验签算法规格：SM2](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-overview#sm2)。
 

@@ -2,9 +2,10 @@
 title: "（推荐）分层图标处理"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-icon-process/ui-design-layered-process
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-icon-process/ui-design-layered-process
+last_sync: 2026-06-07
+sync_hash: 360813ab
 ---
-
-
 ## 场景介绍
 
 从5.0.0(12)版本开始， Hds支持分层图标处理能力。

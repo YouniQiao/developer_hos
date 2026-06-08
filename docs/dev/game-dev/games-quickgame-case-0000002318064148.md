@@ -2,9 +2,10 @@
 title: "小游戏（快游戏）案例"
 original_url: /docs/dev/game-dev/games-quickgame-case-0000002318064148
 format: md
+upstream_id: dev/game-dev/games-quickgame-case-0000002318064148
+last_sync: 2026-06-07
+sync_hash: a7e17b81
 ---
-
-
 ## 使用qg.downloadFile下载和解压远程压缩文件失败
 
 **现象描述**

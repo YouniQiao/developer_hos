@@ -2,9 +2,10 @@
 title: "AppGallery Connect API"
 original_url: /docs/distribute/agc/agc-help-agcapi-overview-0000002235900876
 format: md
+upstream_id: distribute/agc/agc-help-agcapi-overview-0000002235900876
+last_sync: 2026-06-07
+sync_hash: b2e4c561
 ---
-
-
 您不仅可以登录AppGallery Connect使用相关功能，还可以通过AppGallery Connect API定制AppGallery Connect提供的能力，实现流程自动化，提高您的工作效率。
 
 在使用API前，您需要先获取AppGallery Connect的授权，您可以基于使用场景选择不同的授权方式：

@@ -2,9 +2,10 @@
 title: "Relationship Window概述"
 original_url: /docs/dev/game-dev/pgd-tool-window-overview-0000002526434903
 format: md
+upstream_id: dev/game-dev/pgd-tool-window-overview-0000002526434903
+last_sync: 2026-06-07
+sync_hash: ff9f3b3f
 ---
-
-
 Relationship Window是一套专为PGD设计的可视化调试与分析工具。该工具包含以下特性：
 
 * 逻辑可视化：清晰展示System（系统）通过Query（查询）筛选和处理的数据集合。

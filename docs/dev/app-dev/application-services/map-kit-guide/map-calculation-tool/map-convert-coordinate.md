@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "坐标纠偏"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-calculation-tool/map-convert-coordinate
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-calculation-tool/map-convert-coordinate
+last_sync: 2026-06-07
+sync_hash: 04f60d21
 ---
-
-
 ## 坐标系知识介绍
 
 华为地图涉及2种坐标系：

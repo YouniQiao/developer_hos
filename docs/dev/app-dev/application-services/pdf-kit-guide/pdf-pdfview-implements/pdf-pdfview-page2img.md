@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "PDF缩略图转换为图片"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-page2img
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-page2img
+last_sync: 2026-06-07
+sync_hash: 0ad8506c
 ---
-
-
 ## 场景介绍
 
 调用[getPagePixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/pdf-arkts-pdfviewmanage#getpagepixelmap)方法，将指定PDF缩略图转化为图片。

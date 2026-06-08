@@ -2,9 +2,10 @@
 title: "如何在Index.ets中导出默认导出的对象"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-145
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-145
+last_sync: 2026-06-07
+sync_hash: 45b8a8dc
 ---
-
-
 **问题现象**
 
 ```

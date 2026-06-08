@@ -2,9 +2,10 @@
 format: md
 title: "三方库@ohos/axios中发起post请求，如何以queryParams形式传递参数"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-35
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-35
+last_sync: 2026-06-07
+sync_hash: 7dbd3139
 ---
-
-
 * 方式一：使用axios.post接口时，Url.URLParams需要转换为字符串并拼接到URL后面。
 
   ```

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "如何获取图片的旋转角度信息"
 original_url: /docs/dev/app-dev/media/image-kit/image-faqs/image-rotate-faq
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-faqs/image-rotate-faq
+last_sync: 2026-06-07
+sync_hash: 03fd7c46
 ---
-
-
 ## 图片旋转角度介绍
 
 在数码摄影中，拍摄设备（如手机、相机）会将图片的旋转角度（方向）信息保存在图片的Exif（Exchangeable image file format）数据的Orientation字段。

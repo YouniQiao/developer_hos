@@ -2,9 +2,10 @@
 title: "后台任务使用"
 original_url: /docs/experience-suggestions/power/background/standard-background-task
 format: md
+upstream_id: experience-suggestions/power/background/standard-background-task
+last_sync: 2026-06-07
+sync_hash: 240e15c7
 ---
-
-
 # 后台任务使用
 
 ### 应用或元服务应合理使用长时任务

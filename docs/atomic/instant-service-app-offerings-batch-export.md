@@ -2,9 +2,10 @@
 title: "批量导出商品"
 original_url: /docs/dev/atomic-dev/instant-service-app-offerings/instant-service-app-offerings-batch-export
 format: md
+upstream_id: dev/atomic-dev/instant-service-app-offerings/instant-service-app-offerings-batch-export
+last_sync: 2026-06-07
+sync_hash: a6376a3f
 ---
-
-
 1. 在服务直达主界面，选择“商品直达”页签，根据商品状态或商品名称筛选出需要导出的商品。
 
    ![](./img/2989889d.png "点击放大")

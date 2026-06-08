@@ -2,9 +2,9 @@
 title: 组件
 sidebar_label: 组件
 format: md
+upstream_id: _local
+last_sync: 2026-06-08
 ---
-
-
 # 组件
 
 UI 组件库为开发者提供开箱即用的界面组件，基于 ArkUI 框架开发，适配手机、平板、智慧屏等多种设备形态。

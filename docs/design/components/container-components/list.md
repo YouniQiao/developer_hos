@@ -3,8 +3,10 @@ title: 列表
 sidebar_label: 列表
 original_url: /docs/design/components/container-components/list
 format: md
+upstream_id: design/components/container-components/list
+last_sync: 2026-06-07
+sync_hash: 23ca6b6f
 ---
-
 \{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 列表

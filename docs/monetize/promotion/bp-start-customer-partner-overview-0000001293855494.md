@@ -3,8 +3,10 @@ title: "概述"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-start-customer-partner-overview-0000001293855494
 format: md
+upstream_id: monetize/promotion/bp-start-customer-partner-overview-0000001293855494
+last_sync: 2026-06-07
+sync_hash: f5194932
 ---
-
 # 概述
 
 ## 客户投放伙伴体系特点

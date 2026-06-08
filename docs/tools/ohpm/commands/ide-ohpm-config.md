@@ -3,9 +3,10 @@ title: "ohpm config"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-config
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-config
+last_sync: 2026-06-07
+sync_hash: f5243653
 ---
-
-
 # ohpm config
 
 设置ohpm用户级配置项。

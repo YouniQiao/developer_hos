@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "点聚合"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-aggregate
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-drawing/map-aggregate
+last_sync: 2026-06-07
+sync_hash: 29317a2a
 ---
-
-
 ## 场景介绍
 
 本章节将详细介绍如何基于地图数据实现点聚合功能。

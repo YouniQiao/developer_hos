@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "接入“扫码直达”服务"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-directservice
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-directservice
+last_sync: 2026-06-07
+sync_hash: 457cca8d
 ---
-
-
 ![](./img/b6026fc0.png)
 
 扫码直达能力仅支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）接入使用。

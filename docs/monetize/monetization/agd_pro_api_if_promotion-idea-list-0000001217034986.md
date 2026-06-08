@@ -3,10 +3,10 @@ title: "推广创意列表"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_api_if_promotion-idea-list-0000001217034986
 format: md
+upstream_id: monetize/monetization/agd_pro_api_if_promotion-idea-list-0000001217034986
+last_sync: 2026-06-07
+sync_hash: ef9209b0
 ---
-
-
-
 ![](./img/agd_pro_api_if_promotion-idea-list-0000001217034986_0.png)
 
 注意根据类型及对应的素材尺寸和宽高比进行适配。

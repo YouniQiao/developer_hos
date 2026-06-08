@@ -2,9 +2,10 @@
 title: "Native侧如何获取ArkTS侧类实例"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-53
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-53
+last_sync: 2026-06-07
+sync_hash: b660d405
 ---
-
-
 在ArkTS创建一个类并传递给Native侧，Native侧通过napi\_call\_function接口调用ArkTS侧的类函数。
 
 ```

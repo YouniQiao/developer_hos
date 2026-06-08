@@ -2,8 +2,11 @@
 format: md
 title: "HarmonyOS应用自动化签名时提示“Provision number exceeds limit”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-4
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-4
+last_sync: 2026-06-07
+sync_hash: 25fa4132
+upstream_hash: 96cf6e04dfdc
 ---
-
 
 **问题现象**
 
@@ -13,7 +16,7 @@ original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging
 
 **解决措施**
 
-AGC（AppGallery Connect）限制了自动化签名的使用次数。同一开发者账号在最近30天内使用自动化签名功能的次数不能超过150次。可使用手动签名方案，详情参考[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+AGC（AppGallery Connect）限制了自动化签名的使用次数。同一开发者账号在最近30天内使用自动化签名功能的次数不能超过150次。可使用手动签名方案，详情参考[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)。
 
 如需继续使用自动签名，可通过如下几种方式进行解决：
 

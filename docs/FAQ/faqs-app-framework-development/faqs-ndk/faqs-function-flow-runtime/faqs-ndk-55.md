@@ -2,9 +2,10 @@
 format: md
 title: "napi_env、napi_value实例是否可以跨worker线程共享"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-55
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-55
+last_sync: 2026-06-07
+sync_hash: 7dd4c6bc
 ---
-
-
 **问题现象**
 
 napi\_env、napi\_value这些实例跨worker应该都是不共享的吧？如果在Native侧静态持有这些对象，而且主线程和worker都会走到这段逻辑的话，那napi\_env、napi\_value不是会乱掉吗？

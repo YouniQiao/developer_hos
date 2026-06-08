@@ -2,9 +2,10 @@
 title: "如何保存faultLogger"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-19
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-19
+last_sync: 2026-06-07
+sync_hash: 1c6a7ffe
 ---
-
-
 **参考代码**
 
 ```

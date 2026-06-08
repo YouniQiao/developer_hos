@@ -2,8 +2,11 @@
 format: md
 title: "如何使用DevEco Studio上的Git工具进行多远程仓管理"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-19
+upstream_id: FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-19
+last_sync: 2026-06-07
+sync_hash: 9fe3b507
+upstream_hash: 9e0cc711d18d
 ---
-
 
 添加新的远程仓库：
 

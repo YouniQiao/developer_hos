@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "配置空间互传单双通策略"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacedatatransfer-guide/enterprisespace-policy-push
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacedatatransfer-guide/enterprisespace-policy-push
+last_sync: 2026-06-07
+sync_hash: f6d08315
 ---
-
-
 ## 场景介绍
 
 Enterprise Space Kit支持HEM配置空间互传单双通策略。空间初始化时，通过调用接口配置空间互传应用文件外发策略。具体而言，单通表示只允许个人空间向企业空间发送文件，不允许企业空间向个人空间发送文件；双通表示允许个人空间和企业空间互相发送文件。

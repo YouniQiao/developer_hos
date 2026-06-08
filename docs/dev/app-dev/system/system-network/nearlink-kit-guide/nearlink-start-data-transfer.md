@@ -2,9 +2,10 @@
 title: "使用星闪传输数据"
 original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-start-data-transfer
 format: md
+upstream_id: dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-start-data-transfer
+last_sync: 2026-06-07
+sync_hash: 95389c02
 ---
-
-
 提供星闪数传相关的端口通道建立和数据传输等功能，同一设备可以同时承担数据发送端和接收端的角色。
 
 ## 场景介绍

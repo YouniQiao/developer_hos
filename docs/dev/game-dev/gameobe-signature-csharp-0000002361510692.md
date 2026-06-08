@@ -2,9 +2,10 @@
 title: "使用签名初始化SDK"
 original_url: /docs/dev/game-dev/gameobe-signature-csharp-0000002361510692
 format: md
+upstream_id: dev/game-dev/gameobe-signature-csharp-0000002361510692
+last_sync: 2026-06-07
+sync_hash: 231323c4
 ---
-
-
 为了提升服务的安全性，在初始化SDK时，您还可以选择使用签名的方式进行安全加固，增强数据防篡改能力。在您的服务器端，您需要通过游戏ID、游戏密钥、玩家openId等信息计算出游戏签名，然后发送给游戏客户端。客户端在SDK初始化、掉线重连等场景中均会验证玩家签名信息。
 
 ## 前提条件
@@ -88,7 +89,8 @@ function buildInputStr(appId, nonce, openId, timestamp) {
 function sha256withRSA(inputString, gameSecret) {
   const privateKey = `-----BEGIN PRIVATE KEY-----
 ${gameSecret}
------END PRIVATE KEY-----`;
+---
+--END PRIVATE KEY-----`;
   const signature = crypto.createSign("RSA-SHA256");
   signature.update(inputString, "utf-8");
   const sign = signature.sign({

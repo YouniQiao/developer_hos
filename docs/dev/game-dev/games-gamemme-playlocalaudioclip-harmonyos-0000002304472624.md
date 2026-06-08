@@ -2,9 +2,10 @@
 title: "HarmonyOS 5.0及以上"
 original_url: /docs/dev/game-dev/games-gamemme-playlocalaudioclip-harmonyos-0000002304472624
 format: md
+upstream_id: dev/game-dev/games-gamemme-playlocalaudioclip-harmonyos-0000002304472624
+last_sync: 2026-06-07
+sync_hash: e7338022
 ---
-
-
 ## 前提条件
 
 * 您已[集成游戏多媒体基础SDK和实时语音模块](/docs/dev/game-dev/games-gamemme-integratingsdk-harmonyos-0000002304632332#ZH-CN_TOPIC_0000002382173737__zh-cn_topic_0000001717945166_li16904125719267)。

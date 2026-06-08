@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "宿主应用发起分享"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation
+last_sync: 2026-06-07
+sync_hash: f285bf17
 ---
-
-
 * **[宿主应用接入模式](/docs/dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-access-mode)**
 * **[通过分享面板发起分享](/docs/dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-mobilephone-app-share)**
 * **[配置目标应用名单（仅对企业应用开放）](/docs/dev/app-dev/application-services/share-kit-guide/system-share/share-map-creation/share-app-sharing-mode)**

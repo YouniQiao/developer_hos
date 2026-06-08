@@ -3,8 +3,10 @@ title: "编辑任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-advertising-task3-0000001338377353
 format: md
+upstream_id: monetize/promotion/marketing-api-advertising-task3-0000001338377353
+last_sync: 2026-06-07
+sync_hash: cca135fa
 ---
-
 # 编辑任务
 
 您通过本接口可以编辑任务。

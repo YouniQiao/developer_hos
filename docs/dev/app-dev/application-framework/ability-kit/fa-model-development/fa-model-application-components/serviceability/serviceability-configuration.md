@@ -2,9 +2,10 @@
 title: "ServiceAbility组件配置"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/serviceability/serviceability-configuration
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/serviceability/serviceability-configuration
+last_sync: 2026-06-07
+sync_hash: 532d22a3
 ---
-
-
 与PageAbility类似，ServiceAbility的相关配置在config.json配置文件的"module"对象的"abilities"对象中，与PageAbility的区别在于"type"属性及"backgroundModes"属性。
 
 **表1** ServiceAbility部分配置项说明

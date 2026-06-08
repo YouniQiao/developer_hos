@@ -3,9 +3,10 @@ title: "命令行构建工具（hvigorw）"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/ide-hvigor-commandline
 format: md
+upstream_id: tools/cli-tools/ide-hvigor-commandline
+last_sync: 2026-06-07
+sync_hash: 8f965a21
 ---
-
-
 # 命令行构建工具（hvigorw）
 
 hvigorw作为Hvigor的wrapper包装工具，支持自动安装Hvigor构建工具和相关插件依赖，以及执行Hvigor构建命令。

@@ -3,11 +3,12 @@ displayed_sidebar: appDevSidebar
 title: "文件分级管控"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide
 format: md
+upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide
+last_sync: 2026-06-07
+sync_hash: 2f7bb253
 ---
-
-
 * **[启动文件扫描任务](/docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-start-task)**
-* **[打开文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/fileguard-openfile)**
+* **[打开文件](/docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-openfile)**
 * **[设置文件属性标签](/docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-set-tags)**
 * **[获取文件属性标签](/docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-query-tags)**
 * **[获取文件URI](/docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-get-file-url)**

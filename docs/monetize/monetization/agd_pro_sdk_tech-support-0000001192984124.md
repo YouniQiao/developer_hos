@@ -3,10 +3,10 @@ title: "技术支持"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_tech-support-0000001192984124
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_tech-support-0000001192984124
+last_sync: 2026-06-07
+sync_hash: 2dea85a4
 ---
-
-
-
 当您接入AGD Pro服务遇到问题时，可以按照以下顺序需求帮助。
 
 1. 请先仔细阅读文档，部分功能对设备和系统有限制，请参见[使用限制](/docs/monetize/monetization/agd_pro_sdk_restriction-0000001237824085)。

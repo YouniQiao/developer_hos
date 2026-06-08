@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "下车步行导航流转"
 original_url: /docs/dev/app-dev/system/system-hardware/car-kit-guide/car-implement-navi-hop/car-walk-navi-hop
 format: md
+upstream_id: dev/app-dev/system/system-hardware/car-kit-guide/car-implement-navi-hop/car-walk-navi-hop
+last_sync: 2026-06-07
+sync_hash: f757a73d
 ---
-
-
 支持将车机指定的地图应用的步行导航数据流转至手机。
 
 ## 场景介绍

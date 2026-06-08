@@ -2,9 +2,10 @@
 title: "使用Node-API接口进行buffer相关开发"
 original_url: /docs/dev/ndk-dev/use-napi-about-buffer
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-buffer
+last_sync: 2026-06-07
+sync_hash: 39a190c3
 ---
-
-
 ## 简介
 
 在ArkTS中，Buffer是一种用于处理二进制数据的数据类型。

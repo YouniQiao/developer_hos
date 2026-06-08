@@ -2,9 +2,10 @@
 format: md
 title: "如何在Native侧集成三方库Curl，并进行HTTP数据请求"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-31
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-31
+last_sync: 2026-06-07
+sync_hash: 9a502160
 ---
-
-
 可以将Curl移植到HarmonyOS，并在Native侧开发时直接使用Curl的C++库实现。具体的移植方法请参考相关链接。
 
 具体使用步骤如下：

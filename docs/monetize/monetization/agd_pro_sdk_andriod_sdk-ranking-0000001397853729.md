@@ -3,10 +3,10 @@ title: "接入应用榜单广告"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_andriod_sdk-ranking-0000001397853729
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_andriod_sdk-ranking-0000001397853729
+last_sync: 2026-06-07
+sync_hash: e8ff9286
 ---
-
-
-
 #### 创建AdsContext对象
 
 ```

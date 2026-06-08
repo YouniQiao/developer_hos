@@ -2,9 +2,10 @@
 title: "地址越界类问题案例"
 original_url: /docs/quality/scenario-stability-address-sanitizer
 format: md
+upstream_id: /docs/quality/scenario-stability-address-sanitizer
+last_sync: 2026-06-07
+sync_hash: bf04a8f8
 ---
-
-
 # 地址越界类问题案例
 
 本文按照[地址越界类问题分析方法](/docs/quality/stability-address-illegal-way)的流程展开，以实际案例的形式指导开发者如何从CppCrash日志出发，分析、定位，修复地址越界问题。开发者可阅读[地址越界类问题检测](/docs/quality/stability-ram-detection)了解系统检测地址越界问题的原理和机制。

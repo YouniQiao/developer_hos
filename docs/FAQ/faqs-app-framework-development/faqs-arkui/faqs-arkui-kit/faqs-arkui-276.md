@@ -2,9 +2,10 @@
 format: md
 title: "如何实现List内拖拽交换子组件位置"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-276
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-276
+last_sync: 2026-06-07
+sync_hash: da0a2c0f
 ---
-
-
 1. 在onItemDragStart回调中设置拖拽过程中显示的内容。
 2. 在onItemDrop中通过itemIndex获取拖拽起始位置，insertIndex获取目标位置，并在onItemDrop中调用changeListItemIndex函数交换数组中的元素位置。
 

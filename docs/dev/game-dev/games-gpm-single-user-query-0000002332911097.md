@@ -2,9 +2,10 @@
 title: "单用户查询"
 original_url: /docs/dev/game-dev/games-gpm-single-user-query-0000002332911097
 format: md
+upstream_id: dev/game-dev/games-gpm-single-user-query-0000002332911097
+last_sync: 2026-06-07
+sync_hash: 99741ed1
 ---
-
-
 您可在此处查看用户维度的性能数据，支持设置时间跨度，具体用户ID，指标范围及机型、版本等条件筛选过滤数据。同时每条数据提供详情页展示详细性能数据。
 
 ![](./img/bb39c3ae.png)

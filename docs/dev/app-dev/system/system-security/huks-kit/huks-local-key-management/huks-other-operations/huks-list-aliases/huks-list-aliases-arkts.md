@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "查询密钥别名集(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-list-aliases/huks-list-aliases-arkts
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-list-aliases/huks-list-aliases-arkts
+last_sync: 2026-06-07
+sync_hash: cfb311f4
 ---
-
-
 HUKS提供了接口供应用查询密钥别名集。
 
 ![](./img/1c280094.png)

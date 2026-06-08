@@ -2,9 +2,10 @@
 title: "业务介绍"
 original_url: /docs/distribute/agc/agc-help-public-test-0000002287814841/agc-help-public-test-overview-0000002259136294
 format: md
+upstream_id: distribute/agc/agc-help-public-test-0000002287814841/agc-help-public-test-overview-0000002259136294
+last_sync: 2026-06-07
+sync_hash: 74046cb7
 ---
-
-
 在正式版本发布之前，您可以面向全网公开招募部分用户测试您的应用，以收集测试用户的反馈意见，助您提前发现问题，及时修复问题和优化版本体验。
 
 公开测试会把您的应用上架至AppGallery，面向全网招募测试用户。公开测试和其他测试方式区别如下，您可以根据实际业务需求，选择合适的测试方式。

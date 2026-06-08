@@ -3,9 +3,10 @@ title: "消耗型/非消耗型/非续期订阅商品"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/revise-digital-products-0000001959074889/single-0000001931995708/revise-non-subscription-0000001931836328
 format: md
+upstream_id: distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/revise-digital-products-0000001959074889/single-0000001931995708/revise-non-subscription-0000001931836328
+last_sync: 2026-06-07
+sync_hash: ed983fc4
 ---
-
-
 # 消耗型/非消耗型/非续期订阅商品
 
 1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。

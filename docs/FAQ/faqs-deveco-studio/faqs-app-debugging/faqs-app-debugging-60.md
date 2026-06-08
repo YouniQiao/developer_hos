@@ -2,9 +2,10 @@
 format: md
 title: "DevEco Studio安装HAP时报错“FileTransfer Failed: [Fail]Error opening file: no such file or directory”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-60
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-60
+last_sync: 2026-06-07
+sync_hash: 3d118495
 ---
-
-
 **问题现象**
 
 DevEco Studio安装HAP时报错“FileTransfer Failed: [Fail]Error opening file: no such file or directory”。

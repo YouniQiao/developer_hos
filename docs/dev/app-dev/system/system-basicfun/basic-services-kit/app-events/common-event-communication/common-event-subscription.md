@@ -2,9 +2,10 @@
 title: "动态订阅公共事件"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/common-event-subscription
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/common-event-subscription
+last_sync: 2026-06-07
+sync_hash: aec2ce93
 ---
-
-
 ## 场景介绍
 
 动态订阅是指当应用在运行状态时对某个公共事件进行订阅，在运行期间如果有订阅的事件发布，订阅了这个事件的应用将会收到该事件及其传递的参数。

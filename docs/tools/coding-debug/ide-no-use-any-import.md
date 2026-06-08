@@ -3,9 +3,10 @@ title: "@performance/no-use-any-import"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-no-use-any-import
 format: md
+upstream_id: tools/coding-debug/ide-no-use-any-import
+last_sync: 2026-06-07
+sync_hash: 0c61c5e1
 ---
-
-
 # @performance/no-use-any-import
 
 使用import的方式引入对应的模块时，建议按需引用使用到的变量代替“import \*”的方式，以减少.ets文件的执行耗时和文件中所有export变量的初始化过程。

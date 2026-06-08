@@ -2,9 +2,10 @@
 title: "管理游戏大事件"
 original_url: /docs/dev/game-dev/games-center-big-event-management-0000002285953810
 format: md
+upstream_id: dev/game-dev/games-center-big-event-management-0000002285953810
+last_sync: 2026-06-07
+sync_hash: 659c3fbc
 ---
-
-
 创建游戏大事件后，可以对已创建的游戏大事件进行查看、编辑等操作。游戏大事件列表“操作”列提供编辑、删除、撤销、下线等操作，“任务状态”列可以查看大事件当前的状态。
 
 ## 查看游戏大事件信息

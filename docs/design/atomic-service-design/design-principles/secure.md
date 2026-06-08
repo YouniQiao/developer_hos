@@ -3,8 +3,10 @@ title: 安全可靠
 sidebar_label: 安全可靠
 original_url: /docs/design/atomic-service-design/design-principles/secure
 format: md
+upstream_id: design/atomic-service-design/design-principles/secure
+last_sync: 2026-06-07
+sync_hash: 9bb48aa4
 ---
-
 # 安全可靠
 
 感知到的安全是积极体验的驱动力，应提供给用户一个可感知、可控制、易使用的安全体验。

@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“File 'string.json' is missing the required property 'string'.”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-147
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-147
+last_sync: 2026-06-07
+sync_hash: 149740b0
 ---
-
-
 **错误描述**
 
 资源文件“string.json”缺少必需属性“string”。

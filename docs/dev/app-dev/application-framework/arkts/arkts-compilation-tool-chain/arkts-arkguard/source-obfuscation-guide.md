@@ -2,9 +2,10 @@
 title: "ArkGuard混淆开启指南"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-guide
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation-guide
+last_sync: 2026-06-07
+sync_hash: 1b1bcab9
 ---
-
-
 ## 开启源码混淆
 
 ### 开启混淆步骤
@@ -65,10 +66,10 @@ format: md
 
   开启混淆后，代码中的方法、属性或路径被混淆。但是在程序运行时，如果访问未混淆的方法、属性或路径，可能导致功能不可用。因此需要根据不同的场景配置保留选项。关于保留选项的排查场景和配置方法，参考[保留选项](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard/source-obfuscation#保留选项)。
 
-  排查场景和配置字段时，推荐使用[混淆助手配置保留选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-obfuscation#section19439175917123)，快速识别需要配置的保留选项和白名单字段。
+  排查场景和配置字段时，推荐使用[混淆助手配置保留选项](/docs/tools/coding-debug/ide-build-obfuscation#section19439175917123)，快速识别需要配置的保留选项和白名单字段。
 * 指定release编译
 
-  源码混淆仅支持release编译，不支持debug编译。开启混淆开关后，release编译会进行混淆，debug编译则不会。开发者可参考[指定构建模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)查看和修改构建模式。
+  源码混淆仅支持release编译，不支持debug编译。开启混淆开关后，release编译会进行混淆，debug编译则不会。开发者可参考[指定构建模式](/docs/tools/coding-debug/ide-hvigor-compilation-options-customizing-guide#section192461528194916)查看和修改构建模式。
 
   ![](./img/0695914e.png)
 
@@ -172,7 +173,7 @@ format: md
    1. 若代码中有动态import语句，如const path = './filePath'; import(path)，会出现文件引用失败的情况，需要使用-keep-file-name filePath来保留这个文件名。
    2. 若应用中有描述路由表信息的[routerMap配置](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file#routermap标签)，其中的pageSourceFile字段标记页面在模块的路径，需要使用-keep-file-name来保留这个路径。
    3. 若代码中有传入ohmUrl进行页面跳转，如router.pushUrl(\{url: '@bundle:com.example.routerPage/Library/Index'\})，使用-keep-file-name来保留这个路径。
-   4. 验证应用功能，排查遗漏的场景。若应用出现功能异常，且报错栈中的路径为混淆后的路径，可以在模块中的build/default/[...]/release/obfuscation/nameCache.json文件中查询到原始路径，进而找到源码文件。另外，[插件hstack](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-command-line-hstack)支持自动还原混淆后的报错堆栈。在定位到需要保留的路径后，使用-keep-file-name来保留此路径。
+   4. 验证应用功能，排查遗漏的场景。若应用出现功能异常，且报错栈中的路径为混淆后的路径，可以在模块中的build/default/[...]/release/obfuscation/nameCache.json文件中查询到原始路径，进而找到源码文件。另外，[插件hstack](/docs/tools/cli-tools/ide-command-line-hstack)支持自动还原混淆后的报错堆栈。在定位到需要保留的路径后，使用-keep-file-name来保留此路径。
 
 ### 说明
 
@@ -193,7 +194,7 @@ format: md
 
 ## 报错栈还原
 
-经过混淆的应用程序，代码名称会更改，导致crash时打印的报错栈难以理解。可使用DevEco Studio命令工具Command Line Tools中的[hstack插件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-command-line-hstack)还原源码堆栈，进而分析问题。
+经过混淆的应用程序，代码名称会更改，导致crash时打印的报错栈难以理解。可使用DevEco Studio命令工具Command Line Tools中的[hstack插件](/docs/tools/cli-tools/ide-command-line-hstack)还原源码堆栈，进而分析问题。
 
 请备份应用编译过程中生成的sourceMaps.map文件和混淆名称映射文件nameCache.json，反混淆工具需要这些文件。
 

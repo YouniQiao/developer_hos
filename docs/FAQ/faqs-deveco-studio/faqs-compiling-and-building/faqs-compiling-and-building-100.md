@@ -2,16 +2,17 @@
 format: md
 title: "打包体积大如何配置优化包体积问题"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-100
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-100
+last_sync: 2026-06-07
+sync_hash: 4a95683f
 ---
-
-
 **问题描述**
 
 程序包当前打包后的体积为16MB，远超预期。
 
 **解决措施**
 
-1.首先查看打包的类型，debug编译打包含有调试信息相对于release包的体积较大。可以通过配置"strip": true来去除so中的debug信息减小so体积。该配置需要配置在hap和hsp模块，release和debug模式下都可以[配置CPP](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-cpp) :
+1.首先查看打包的类型，debug编译打包含有调试信息相对于release包的体积较大。可以通过配置"strip": true来去除so中的debug信息减小so体积。该配置需要配置在hap和hsp模块，release和debug模式下都可以[配置CPP](/docs/tools/coding-debug/ide-hvigor-cpp) :
 
 ```
 "nativeLib": {

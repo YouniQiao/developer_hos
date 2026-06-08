@@ -2,9 +2,10 @@
 title: "使用隐私模式"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-incognito-mode
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-set-attributes-events/web-incognito-mode
+last_sync: 2026-06-07
+sync_hash: b42b9dbc
 ---
-
-
 开发者在创建Web组件时，可以将可选参数[incognitoMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-i#weboptions)设置为true，来开启Web组件的隐私模式。使用隐私模式浏览网页时，Cookie、缓存等数据不会写入本地持久化存储；隐私模式的Web组件销毁后，这些数据将被清除，不会保留。
 
 * 创建隐私模式的[Web组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web)。

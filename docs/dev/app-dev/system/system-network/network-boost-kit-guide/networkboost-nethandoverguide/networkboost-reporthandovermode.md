@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "迁移模式设置"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-nethandoverguide/networkboost-reporthandovermode
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-nethandoverguide/networkboost-reporthandovermode
+last_sync: 2026-06-07
+sync_hash: 3d0aebef
 ---
-
-
 ## 场景介绍
 
 应用可通过该接口变更连接迁移模式，包括委托模式由系统发起连接迁移，和自主模式由应用发起连接迁移。

@@ -2,8 +2,10 @@
 title: "开发者管理规范"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/developer-notes-0000001054559367/management-specification-0000001321642033
+upstream_id: distribute/content-dist/theme-center/developer-notes-0000001054559367/management-specification-0000001321642033
+last_sync: 2026-06-07
+sync_hash: 85e9f4d0
 ---
-
 # 开发者管理规范
 
 ## 1. 行为管理

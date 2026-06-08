@@ -2,9 +2,10 @@
 title: "ArkTS卡片页面交互概述"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-event/arkts-ui-widget-event-overview
 format: md
+upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-event/arkts-ui-widget-event-overview
+last_sync: 2026-06-07
+sync_hash: 8f72b398
 ---
-
-
 ArkTS卡片提供页面交互能力，包括卡片与卡片提供方（例如：应用）的页面跳转、卡片拉起卡片提供方进程、卡片与卡片提供方的消息传递。其中[动态卡片](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-form-overview#动态卡片)可以使用[postCardAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-postcardaction#postcardaction-1)接口、[静态卡片](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-form-overview#静态卡片)使用[FormLink](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-formlink)实现页面交互功能。并且postCardAction和FormLink，均支持router、message和call三种类型的事件，具体使用场景如下：
 
 * [router事件](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-event/arkts-ui-widget-event-router)：可以使用router事件跳转到指定UIAbility，以完成点击卡片跳转至应用内页面的功能。对于非系统应用仅支持跳转到自己应用内的UIAbility。

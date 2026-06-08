@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "多网发起和释放"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide/networkboost-netmultipath-request-release
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide/networkboost-netmultipath-request-release
+last_sync: 2026-06-07
+sync_hash: fdbbc648
 ---
-
-
 ## 场景介绍
 
 应用可根据自身业务的需要，以及系统的建议来发起多网络加速的请求，并在使用结束后及时释放。支持WiFi和蜂窝并发以及主卡和副卡并发，不支持开发者指定并发组合，并发组合由系统决定。

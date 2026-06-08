@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "设备状态感知开发指导"
 original_url: /docs/dev/app-dev/system/system-hardware/multimodal-awareness-kit/devicestatus-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-hardware/multimodal-awareness-kit/devicestatus-guidelines
+last_sync: 2026-06-07
+sync_hash: 83d457fb
 ---
-
-
 DeviceStatus（设备状态感知）模块提供设备状态感知能力，可以获取到设备的信息，例如：获取设备静止姿态感知状态（支架态）。
 
 详细的接口介绍请参考[@ohos.multimodalAwareness.deviceStatus (设备状态感知)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-awareness-devicestatus)。

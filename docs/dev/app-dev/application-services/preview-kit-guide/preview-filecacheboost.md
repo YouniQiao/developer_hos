@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通用文件缓存加速（C/C++）"
 original_url: /docs/dev/app-dev/application-services/preview-kit-guide/preview-filecacheboost
 format: md
+upstream_id: dev/app-dev/application-services/preview-kit-guide/preview-filecacheboost
+last_sync: 2026-06-07
+sync_hash: bef4c591
 ---
-
-
 从6.1.0(23)版本开始，新增通用文件缓存加速功能。提供了缓存机制将文件的解码数据缓存到磁盘中，后续用户再次打开或浏览该文件，应用无需执行解码流程，可直接从磁盘中获取缓存的解码数据，省去耗时的解码时间。
 
 ## 接口说明

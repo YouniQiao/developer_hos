@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-invalid-this"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-invalid-this
 format: md
+upstream_id: tools/coding-debug/ide_no-invalid-this
+last_sync: 2026-06-07
+sync_hash: ae13ed80
 ---
-
-
 # @typescript-eslint/no-invalid-this
 
 禁止在this值为undefined的上下文中使用this。

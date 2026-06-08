@@ -2,9 +2,10 @@
 title: "菜单"
 original_url: /docs/dev/atomic-dev/ascf/apis-page/apis-menu
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-page/apis-menu
+last_sync: 2026-06-07
+sync_hash: 4c8659d8
 ---
-
-
 ## has.getMenuButtonBoundingClientRect
 
 has.getMenuButtonBoundingClientRect(): Object

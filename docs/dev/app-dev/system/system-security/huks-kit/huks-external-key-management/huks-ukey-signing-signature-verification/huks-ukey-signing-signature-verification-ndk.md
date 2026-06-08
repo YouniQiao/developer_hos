@@ -2,8 +2,11 @@
 title: "签名/验签(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-signing-signature-verification/huks-ukey-signing-signature-verification-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-signing-signature-verification/huks-ukey-signing-signature-verification-ndk
+last_sync: 2026-06-07
+sync_hash: 0bec1846
+upstream_hash: 794bf63e6356
 ---
-
 
 以密钥算法为RSA、摘要算法为SHA384、填充模式为PSS的密钥为例，完成签名、验签：
 

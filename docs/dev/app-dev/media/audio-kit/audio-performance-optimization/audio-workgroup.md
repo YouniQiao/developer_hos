@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "音频工作组管理"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-performance-optimization/audio-workgroup
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-performance-optimization/audio-workgroup
+last_sync: 2026-06-07
+sync_hash: 0781233d
 ---
-
-
 音频工作组是一套通过标记来帮助系统识别应用内音频关键线程的接口，系统通过应用提供的关键音频线程以及工作组运行信息可以让音频线程的运行状态更加健康。
 
 以下各步骤示例为片段代码，可通过示例代码右下方链接获取[完整示例](https://gitcode.com/openharmony/applications_app_samples/blob/master/code/DocsSample/Media/Audio/AudioRendererSampleC)。

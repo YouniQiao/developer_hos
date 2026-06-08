@@ -2,9 +2,10 @@
 format: md
 title: "如何实现类似插槽的功能"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-31
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-31
+last_sync: 2026-06-07
+sync_hash: 6108bb58
 ---
-
-
 * ArkUI 提供了一种轻量的 UI 元素复用机制 @Builder。使用 @Builder装饰的函数需遵循 build()函数的语法规则。开发者可以将重复使用的 UI 元素抽象成一个方法，并在build方法中调用。
 * ArkUI 引入了 @BuilderParam 装饰器，用于装饰指向 @Builder 方法的变量。开发者在初始化自定义组件时，可以对此属性进行赋值，为自定义组件增加特定功能。该装饰器用于声明任意 UI 描述的元素，类似于 slot 占位符。具体代码示例如下：
 

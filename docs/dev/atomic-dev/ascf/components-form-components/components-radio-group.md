@@ -2,9 +2,10 @@
 title: "radio-group"
 original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-radio-group
 format: md
+upstream_id: dev/atomic-dev/ascf/components-form-components/components-radio-group
+last_sync: 2026-06-07
+sync_hash: 2f142621
 ---
-
-
 单项选择器，内部由多个radio组成。
 
 **起始版本：** 1.0.0

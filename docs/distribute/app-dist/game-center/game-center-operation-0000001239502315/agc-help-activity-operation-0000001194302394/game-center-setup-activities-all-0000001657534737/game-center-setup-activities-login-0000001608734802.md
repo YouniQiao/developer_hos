@@ -3,9 +3,10 @@ title: "登录有奖"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-login-0000001608734802
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-login-0000001608734802
+last_sync: 2026-06-07
+sync_hash: cc3098bb
 ---
-
-
 # 登录有奖
 
 为了提升用户新增注册量和活跃度，您可以创建登录有奖活动。在活动期间，首次使用华为账号登录应用的新用户或者使用同一华为账号连续登录指定天数的用户有机会获得奖励。

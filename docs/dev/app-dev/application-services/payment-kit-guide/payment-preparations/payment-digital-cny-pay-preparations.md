@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "（可选）数字人民币接入准备"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-digital-cny-pay-preparations
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-digital-cny-pay-preparations
+last_sync: 2026-06-07
+sync_hash: 620ec71f
 ---
-
-
 如不接入数字人民币支付能力或已完成运营机构或受理服务机构商户入网并获取了商户号和APPID，可跳过该步骤。
 
 数字人民币支付仅支持通过运营机构或受理服务机构申请的商户接入，在开发前需要先完成商户入网（可拨打数字人民币客服热线956196根据指引完成商户入网）。

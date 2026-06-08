@@ -2,7 +2,12 @@
 title: "智能信息"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-promotion-0000001193982446/game-center-intelligence-message-0000001372361253
+upstream_id: distribute/app-dist/game-center/game-center-promotion-0000001193982446/game-center-intelligence-message-0000001372361253
+last_sync: 2026-06-07
+sync_hash: 7e8b4f3a
+upstream_hash: d58811395022
 ---
+
 import MergeTable from "@site/src/components/MergeTable";
 
 

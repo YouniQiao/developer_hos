@@ -3,10 +3,10 @@ title: "MediaReportInfo"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk_if_mediareportinfo-0000001456000112
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk_if_mediareportinfo-0000001456000112
+last_sync: 2026-06-07
+sync_hash: 761077d4
 ---
-
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | mediaPkgName | M | `String` | 媒体包名。 |

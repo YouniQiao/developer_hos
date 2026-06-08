@@ -3,8 +3,10 @@ title: "通过客户端查询(方式一)"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-deeplink-inquire-client-0000001348653289
 format: md
+upstream_id: monetize/promotion/bp-functions-deeplink-inquire-client-0000001348653289
+last_sync: 2026-06-07
+sync_hash: d5f084e2
 ---
-
 # 通过客户端查询(方式一)
 
 ## 开发步骤

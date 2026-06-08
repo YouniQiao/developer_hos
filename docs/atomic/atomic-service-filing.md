@@ -2,9 +2,10 @@
 title: "元服务核准（备案）"
 original_url: /docs/dev/atomic-dev/atomic-service-filing/atomic-service-filing
 format: md
+upstream_id: dev/atomic-dev/atomic-service-filing/atomic-service-filing
+last_sync: 2026-06-07
+sync_hash: a0c91b12
 ---
-
-
 本指导文档是基于华为云核准（备案）平台上特为元服务提供的核准（备案）通道编制而成，请基于此指导前往[华为云核准（备案）平台](https://beian.huaweicloud.com/?utm_source=HUAWEI%2BDeveloper&utm_adplace=AdPlace099034)开展元服务核准（备案）。
 
 ## 核准（备案）流程

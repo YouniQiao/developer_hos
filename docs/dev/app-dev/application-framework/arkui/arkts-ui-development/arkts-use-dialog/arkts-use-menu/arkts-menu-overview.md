@@ -2,9 +2,10 @@
 title: "菜单概述"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-menu/arkts-menu-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-menu/arkts-menu-overview
+last_sync: 2026-06-07
+sync_hash: 13fe39c9
 ---
-
-
 菜单是一种用于给用户提供可执行的操作的弹窗，一般用于鼠标右键弹窗、点击弹窗等。
 
 ## 使用场景

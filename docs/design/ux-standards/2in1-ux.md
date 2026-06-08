@@ -3,8 +3,10 @@ title: 电脑应用 UX 体验标准
 sidebar_label: 电脑应用 UX 体验标准
 original_url: /docs/design/ux-standards/2in1-ux
 format: md
+upstream_id: design/ux-standards/2in1-ux
+last_sync: 2026-06-07
+sync_hash: 6426f2fc
 ---
-
 \{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 
 # 电脑应用 UX 体验标准

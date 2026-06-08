@@ -1,9 +1,10 @@
 ---
 title: "静态场景低功耗规则"
 original_url: /docs/quality/static-scenarios
+upstream_id: /docs/quality/static-scenarios
+last_sync: 2026-06-07
+sync_hash: 3994a9de
 ---
-
-
 # 静态场景低功耗规则
 
 ## 规则

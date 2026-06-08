@@ -3,8 +3,10 @@ title: "查询创意数据报表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-task-management-creative-data-0000001346814453
 format: md
+upstream_id: monetize/promotion/bp-delivery-task-management-creative-data-0000001346814453
+last_sync: 2026-06-07
+sync_hash: 4f583f36
 ---
-
 # 查询创意数据报表
 
 1. 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)，在顶部菜单栏点击【报表】页签，确认推广范围为“应用市场应用推广” ，选择“创意数据”页签。

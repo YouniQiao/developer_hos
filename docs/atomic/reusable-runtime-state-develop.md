@@ -3,9 +3,10 @@ title: "开发指导"
 original_url: /docs/dev/atomic-dev/reusable-runtime-state/reusable-runtime-state-develop
 has_merged_cells: true
 format: md
+upstream_id: dev/atomic-dev/reusable-runtime-state/reusable-runtime-state-develop
+last_sync: 2026-06-07
+sync_hash: e4161747
 ---
-
-
 在用户实际使用应用的过程中，可能会遇到需要通过另外一个元服务承载服务的情况。考虑到跳转打开新的元服务对用户使用体验的影响，可以使用嵌入式拉起元服务的方式来实现这种效果。
 
 ![](./img/1e648bc0.png)
@@ -137,7 +138,7 @@ format: md
 ### 规格约束
 
 * 开发者需要注意在实现被嵌入式运行时，提供方元服务存在一些API无法使用。
-* 仅在API 20及以上版本，开发者无需对提供方元服务做状态栏避让适配。如果需要在API 20以下版本支持嵌入式运行元服务，请参考[状态栏避让适配](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/changelogs-ux-6001#ch2025050666880)。
+* 仅在API 20及以上版本，开发者无需对提供方元服务做状态栏避让适配。如果需要在API 20以下版本支持嵌入式运行元服务，请参考[状态栏避让适配](/docs/dev/release-notes/changelogs-ux-6001#ch2025050666880)。
 
 * 在已嵌入式拉起元服务的状态下，不允许创建任何子窗口覆盖到提供方窗口上。
 * 在已嵌入式拉起元服务的状态下，不允许宿主方应用切换提供方元服务UIAbility。

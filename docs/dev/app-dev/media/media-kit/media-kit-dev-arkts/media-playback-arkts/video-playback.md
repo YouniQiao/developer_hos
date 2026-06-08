@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用AVPlayer播放视频(ArkTS)"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/video-playback
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/video-playback
+last_sync: 2026-06-07
+sync_hash: d92da044
 ---
-
-
 当前提供两种视频播放开发的方案：
 
 * [AVPlayer](/docs/dev/app-dev/media/media-kit/media-kit-intro#avplayer)：功能较完善的音视频播放ArkTS/JS API，集成了流媒体和本地资源解析，媒体资源解封装，视频解码和渲染功能，适用于对媒体资源进行端到端播放的场景，可直接播放mp4、mkv等格式的视频文件。

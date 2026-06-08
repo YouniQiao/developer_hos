@@ -2,9 +2,10 @@
 title: "地图"
 original_url: /docs/dev/atomic-dev/ascf/apis-media/apis-map
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-media/apis-map
+last_sync: 2026-06-07
+sync_hash: fdf2966a
 ---
-
-
 ## has.createMapContext
 
 has.createMapContext(string mapId): MapContext

@@ -3,8 +3,10 @@ title: "推广不合作应用类型"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-appendix-not-cooperating-0000001346574993
 format: md
+upstream_id: monetize/promotion/bp-appendix-not-cooperating-0000001346574993
+last_sync: 2026-06-07
+sync_hash: 58c1e6a1
 ---
-
 # 推广不合作应用类型
 
 华为应用市场推广服务暂不合作应用类型如下表所示：

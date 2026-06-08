@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“ninja: error: mkdir(xxx): No such file or directory”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-31
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-31
+last_sync: 2026-06-07
+sync_hash: dca94553
 ---
-
-
 **问题现象**
 
 Native工程编译时出现以下告警和报错信息。

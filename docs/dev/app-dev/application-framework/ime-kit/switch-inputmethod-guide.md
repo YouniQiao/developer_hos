@@ -2,9 +2,10 @@
 title: "切换输入法应用"
 original_url: /docs/dev/app-dev/application-framework/ime-kit/switch-inputmethod-guide
 format: md
+upstream_id: dev/app-dev/application-framework/ime-kit/switch-inputmethod-guide
+last_sync: 2026-06-07
+sync_hash: ddc7e694
 ---
-
-
 输入法框架服务提供了切换输入法应用的API，支持切换输入法、切换输入法和子类型、切换当前输入法的子类型。
 
 ![](./img/ef10f86d.png)

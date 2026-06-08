@@ -3,9 +3,10 @@ title: "异常堆栈解析原理"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-exception-stack-parsing-principle
 format: md
+upstream_id: tools/coding-debug/ide-exception-stack-parsing-principle
+last_sync: 2026-06-07
+sync_hash: ebbdf4b0
 ---
-
-
 # 异常堆栈解析原理
 
 #### 构建产物介绍

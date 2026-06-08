@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "文本开发常见问题"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/text-faqs
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/text/text-faqs
+last_sync: 2026-06-07
+sync_hash: 16a92d70
 ---
-
-
 ## 如何对找不到字形的字符进行显示优化
 
 目前对于找不到字形的字符默认显示为空白，可能让用户感到困惑。

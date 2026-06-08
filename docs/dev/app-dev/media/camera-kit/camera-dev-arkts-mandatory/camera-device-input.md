@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "设备输入(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-input
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-input
+last_sync: 2026-06-07
+sync_hash: a2958d57
+upstream_hash: 84bfe3b3f7e6
 ---
-
 
 在开发相机应用时，需要先[申请相关权限](/docs/dev/app-dev/media/camera-kit/camera-preparation)。
 

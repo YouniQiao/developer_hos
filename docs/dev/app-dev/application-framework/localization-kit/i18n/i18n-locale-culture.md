@@ -2,9 +2,10 @@
 title: "区域ID与文化习惯划分"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-locale-culture
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/i18n/i18n-locale-culture
+last_sync: 2026-06-07
+sync_hash: 700581dd
 ---
-
-
 ## 功能介绍
 
 广义地讲，区域ID是指通过数字、字母、符号或其组合，作为唯一标识识别特定地理区域。

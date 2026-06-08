@@ -2,8 +2,10 @@
 title: "权限与能力列表说明"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/huawei-video-baihua/Content Connect API/access-guide/permission-introduction-0000001270805933
+upstream_id: distribute/content-dist/huawei-video-baihua/Content Connect API/access-guide/permission-introduction-0000001270805933
+last_sync: 2026-06-07
+sync_hash: 06e0f4b7
 ---
-
 # 权限与能力列表说明
 
 百花号开放平台具体权限介绍如下：

@@ -2,9 +2,10 @@
 format: md
 title: "如何将设备中的截屏图片导出到本地"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-28
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-28
+last_sync: 2026-06-07
+sync_hash: 1a026612
 ---
-
-
 使用DevEco Studio的截图功能。
 
 1. 连接设备到电脑。

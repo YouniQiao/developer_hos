@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发适用USB协议的设备驱动"
 original_url: /docs/dev/app-dev/system/system-hardware/driver-development-kit/specialized-driver-development/usb-ddk-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-hardware/driver-development-kit/specialized-driver-development/usb-ddk-guidelines
+last_sync: 2026-06-07
+sync_hash: 5dc1b56d
 ---
-
-
 ## 简介
 
 UsbDdk（USB Driver Development Kit）是为开发者提供的USB驱动程序开发套件，支持开发者基于用户态，在应用层开发USB设备驱动。提供了一系列主机侧访问设备的接口，包括主机侧打开和关闭接口、管道同步异步读写通信、控制传输、中断传输等。

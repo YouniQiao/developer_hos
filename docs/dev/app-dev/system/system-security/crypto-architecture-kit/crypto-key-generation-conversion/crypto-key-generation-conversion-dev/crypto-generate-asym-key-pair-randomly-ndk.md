@@ -2,8 +2,11 @@
 title: "随机生成非对称密钥对(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-generate-asym-key-pair-randomly-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-generate-asym-key-pair-randomly-ndk
+last_sync: 2026-06-07
+sync_hash: 25d09153
+upstream_hash: 1349ca33c790
 ---
-
 
 以RSA和SM2为例，随机生成非对称密钥对（OH\_CryptoKeyPair），并获得二进制数据。
 

@@ -2,9 +2,10 @@
 title: "ASCF运行时"
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-ascf-runtime
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-ascf-runtime
+last_sync: 2026-06-07
+sync_hash: a8cad044
 ---
-
-
 * **[has.login接口运行报错](/docs/dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-runtime-login-error)**
 * **[自定义组件未定义properties属性，传参为空](/docs/dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-runtime-properties-not-defined)**
 * **[使用热重载功能元服务无法启动](/docs/dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-runtime-hot-reload)**

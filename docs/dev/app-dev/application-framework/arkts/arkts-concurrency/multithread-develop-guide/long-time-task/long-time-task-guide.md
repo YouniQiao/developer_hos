@@ -2,9 +2,10 @@
 title: "长时任务开发指导 (TaskPool)"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/long-time-task/long-time-task-guide
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/long-time-task/long-time-task-guide
+last_sync: 2026-06-07
+sync_hash: 59102bab
 ---
-
-
 此处提供使用TaskPool进行长时任务的开发指导，以定期采集传感器数据为例。
 
 ## 使用TaskPool进行传感器数据监听

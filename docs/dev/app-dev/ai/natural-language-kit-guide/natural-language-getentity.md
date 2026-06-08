@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "实体抽取"
 original_url: /docs/dev/app-dev/ai/natural-language-kit-guide/natural-language-getentity
 format: md
+upstream_id: dev/app-dev/ai/natural-language-kit-guide/natural-language-getentity
+last_sync: 2026-06-07
+sync_hash: f2b409ad
 ---
-
-
 ## 适用场景
 
 实体抽取是自然语言处理服务的一项关键能力。通过综合分析上下文信息，从文本中准确识别出多种类型的实体：

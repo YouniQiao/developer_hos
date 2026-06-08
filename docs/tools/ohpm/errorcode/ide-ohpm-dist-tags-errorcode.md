@@ -3,9 +3,10 @@ title: "ohpm dist-tags错误码"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/errorcode/ide-ohpm-dist-tags-errorcode
 format: md
+upstream_id: tools/ohpm/errorcode/ide-ohpm-dist-tags-errorcode
+last_sync: 2026-06-07
+sync_hash: 4d5d6eab
 ---
-
-
 # ohpm dist-tags错误码
 
 ## 00623001 tag标签无效

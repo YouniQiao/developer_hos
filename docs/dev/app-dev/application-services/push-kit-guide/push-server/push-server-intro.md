@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "端云调试概述"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-server/push-server-intro
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-server/push-server-intro
+last_sync: 2026-06-07
+sync_hash: 3439ef5e
 ---
-
-
 [推送场景化消息](/docs/dev/app-dev/application-services/push-kit-guide/push-server/push-scenes-send)章节中囊括了Push Kit的所有推送场景，每个推送场景的开发可大致分为两大步骤：
 
 1. 获取Push Token，完成端侧基于推送场景的ArkTS代码开发。

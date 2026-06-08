@@ -2,9 +2,10 @@
 title: "UI开发 (ArkTS声明式开发范式)"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development
+last_sync: 2026-06-07
+sync_hash: 16e121fc
 ---
-
-
 * **[UI开发（ArkTS声明式开发范式）概述](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-development-overview)**
 * **[学习UI范式基本语法](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-paradigm-basic-syntax)**
 * **[学习UI范式状态管理](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management)**

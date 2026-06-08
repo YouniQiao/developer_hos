@@ -2,9 +2,10 @@
 title: "OS兼容"
 original_url: /docs/experience-suggestions/compatibility/basic-compatibility/os-compatible
 format: md
+upstream_id: experience-suggestions/compatibility/basic-compatibility/os-compatible
+last_sync: 2026-06-07
+sync_hash: 3ebf0f95
 ---
-
-
 # OS兼容
 
 |  |  |

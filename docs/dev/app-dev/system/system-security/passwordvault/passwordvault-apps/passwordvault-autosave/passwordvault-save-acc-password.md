@@ -2,8 +2,11 @@
 title: "账号密码保存"
 original_url: /docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autosave/passwordvault-save-acc-password
 format: md
+upstream_id: dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autosave/passwordvault-save-acc-password
+last_sync: 2026-06-07
+sync_hash: 95d77966
+upstream_hash: df1244ee9e0f
 ---
-
 
 密码保险箱在应用的登录、注册、修改密码等场景中具备自动保存用户名和密码的能力。
 

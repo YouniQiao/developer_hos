@@ -2,9 +2,10 @@
 format: md
 title: "Native侧的napi_env是否支持延迟调用或者异步调用"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-75
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-75
+last_sync: 2026-06-07
+sync_hash: 2f7a9734
 ---
-
-
 **问题现象**
 
 1. 对于同一个ArkTS线程对应的c++对象，将env保存起来，并在一段时间后使用，是否存在潜在问题？

@@ -2,9 +2,10 @@
 title: "switch"
 original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-switch
 format: md
+upstream_id: dev/atomic-dev/ascf/components-form-components/components-switch
+last_sync: 2026-06-07
+sync_hash: d1f1b315
 ---
-
-
 开关选择器。
 
 **起始版本：** 1.0.0

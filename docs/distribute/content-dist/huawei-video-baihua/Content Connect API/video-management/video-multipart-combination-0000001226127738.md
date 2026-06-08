@@ -2,9 +2,10 @@
 title: "视频分段上传合并"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/huawei-video-baihua/Content Connect API/video-management/video-multipart-combination-0000001226127738
+upstream_id: distribute/content-dist/huawei-video-baihua/Content Connect API/video-management/video-multipart-combination-0000001226127738
+last_sync: 2026-06-07
+sync_hash: fe29fde0
 ---
-
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # 视频分段上传合并

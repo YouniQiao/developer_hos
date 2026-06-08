@@ -2,9 +2,10 @@
 title: "通过云函数扩展"
 original_url: /docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-extension-0000002237645842
 format: md
+upstream_id: distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-extension-0000002237645842
+last_sync: 2026-06-07
+sync_hash: 5346c87f
 ---
-
-
 认证服务为您提供了基于云函数的扩展机制，您可以通过为云函数配置相应事件类型的认证服务触发器来接收用户的注册、登录等关键事件，并在云函数中扩展您的处理。
 
 比如，您可以创建函数并监听用户注册事件以便进行用户业务数据的初始化，您也可以创建函数并监听用户销户事件以便进行用户业务数据的清理。

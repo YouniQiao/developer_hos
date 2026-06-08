@@ -2,9 +2,10 @@
 title: "如何设置沉浸式窗口"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-199
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-199
+last_sync: 2026-06-07
+sync_hash: fb6af406
 ---
-
-
 在EntryAbility的onWindowStageCreate方法中通过windowStage获取window，然后分别调用setWindowLayoutFullScreen和setWindowSystemBarEnable方法。参考代码如下：
 
 ```

@@ -2,9 +2,10 @@
 format: md
 title: "运行时出现Import DevEco Studio Settings弹窗"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-16
+upstream_id: FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-16
+last_sync: 2026-06-07
+sync_hash: 003c5b7b
 ---
-
-
 **问题现象**
 
 问题出现包含两种场景：

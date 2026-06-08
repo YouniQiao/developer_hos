@@ -2,9 +2,10 @@
 format: md
 title: "无法调试，DevEco Studio提示“ The target can not be empty. Check the build-profile.json5 file of the project root directory and make sure the targets of the modules in configuration is set to specified product: default in applyToProducts.”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-43
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-43
+last_sync: 2026-06-07
+sync_hash: 63a5aa40
 ---
-
-
 **问题现象**
 
 ![](./img/e9df95b0.png "点击放大")

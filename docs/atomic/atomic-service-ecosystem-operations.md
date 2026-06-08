@@ -2,9 +2,10 @@
 title: "元服务生态运营规范"
 original_url: /docs/dev/atomic-dev/atomic-service-specifications/atomic-service-ecosystem-operations
 format: md
+upstream_id: dev/atomic-dev/atomic-service-specifications/atomic-service-ecosystem-operations
+last_sync: 2026-06-07
+sync_hash: 69da1688
 ---
-
-
 ## 元服务运营原则
 
 HarmonyOS是一款全新的面向全场景的分布式操作系统，将人、设备、场景、服务有机地连接，旨在创造一个极速发现、极速连接、软硬协同、数字孪生、万物互联的世界。

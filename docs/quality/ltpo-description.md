@@ -1,8 +1,10 @@
 ---
 title: "基于LTPO的低功耗设计"
 original_url: /docs/quality/ltpo-description
+upstream_id: /docs/quality/ltpo-description
+last_sync: 2026-06-07
+sync_hash: 958f08d6
 ---
-
 # 基于LTPO的低功耗设计
 
 ## 概述

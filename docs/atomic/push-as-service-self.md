@@ -2,9 +2,10 @@
 title: "自助测试和自助分析"
 original_url: /docs/dev/atomic-dev/push-as-subscription/push-as-service-self
 format: md
+upstream_id: dev/atomic-dev/push-as-subscription/push-as-service-self
+last_sync: 2026-06-07
+sync_hash: 267b3001
 ---
-
-
 ## 自助测试
 
 自助测试支持开发者模拟服务器推送基于账号的订阅消息，并且生成请求参数报文用于开发者构造发送请求使用。

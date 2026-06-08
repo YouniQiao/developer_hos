@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-redeclare"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-redeclare
 format: md
+upstream_id: tools/coding-debug/ide_no-redeclare
+last_sync: 2026-06-07
+sync_hash: 537f486b
 ---
-
-
 # @typescript-eslint/no-redeclare
 
 禁止变量重复声明。

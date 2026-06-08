@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通过文本生成码图"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-generate/scan-barcodegenerate
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-generate/scan-barcodegenerate
+last_sync: 2026-06-07
+sync_hash: 455280ed
 ---
-
-
 ## 基本概念
 
 码图生成能力支持将字符串转换为自定义格式的码图。

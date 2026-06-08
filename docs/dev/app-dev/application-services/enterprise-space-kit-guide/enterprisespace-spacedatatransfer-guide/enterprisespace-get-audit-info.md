@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取审批信息"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacedatatransfer-guide/enterprisespace-get-audit-info
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacedatatransfer-guide/enterprisespace-get-audit-info
+last_sync: 2026-06-07
+sync_hash: bb6312e3
 ---
-
-
 ## 场景介绍
 
 Enterprise Space Kit为应用提供获取审批信息的能力。文件外发需经过审批流程控制，通过调用审批状态同步接口实时获取审批结果，审批完成后允许文件外发至个人空间，若审批被拒绝或撤销则禁止外发。

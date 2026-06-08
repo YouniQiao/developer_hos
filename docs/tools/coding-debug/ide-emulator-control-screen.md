@@ -3,9 +3,10 @@ title: "操控屏幕"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-emulator-control-screen
 format: md
+upstream_id: tools/coding-debug/ide-emulator-control-screen
+last_sync: 2026-06-07
+sync_hash: fa3ef4b3
 ---
-
-
 # 操控屏幕
 
 当模拟器运行时，您可以使用鼠标来模拟手指和设备屏幕进行交互，同时可以结合键盘来实现高级的屏幕操作，对应关系如下：

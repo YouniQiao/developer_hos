@@ -2,9 +2,10 @@
 title: "查看版本历史记录"
 original_url: /docs/dev/game-dev/games-version-history-0000002382084265
 format: md
+upstream_id: dev/game-dev/games-version-history-0000002382084265
+last_sync: 2026-06-07
+sync_hash: 033e2cf5
 ---
-
-
 版本历史记录是AppGallery Connect（以下简称AGC）对应用进行版本信息管理的信息资料库。您可以查看应用下所有的版本历史记录信息，也可以打开指定版本了解详细的软件包信息、新版本特征说明、提交及审核信息等。
 
 ## 查询版本历史记录

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "为通知添加行为意图"
 original_url: /docs/dev/app-dev/application-services/notification-kit/publish-notification/notification-with-wantagent
 format: md
+upstream_id: dev/app-dev/application-services/notification-kit/publish-notification/notification-with-wantagent
+last_sync: 2026-06-07
+sync_hash: 13d773fe
 ---
-
-
 应用向Ability Kit申请[WantAgent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-wantagent)，并将WantAgent封装至通知中。当发布通知时，用户便可以通过点击通知栏中的消息或按钮，拉起目标应用组件或发布公共事件。
 
 携带了actionButtons的通知示意图如下。

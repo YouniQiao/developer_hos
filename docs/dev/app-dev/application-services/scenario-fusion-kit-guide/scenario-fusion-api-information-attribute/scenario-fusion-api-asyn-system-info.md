@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通过API异步获取系统信息属性"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-api-information-attribute/scenario-fusion-api-asyn-system-info
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-api-information-attribute/scenario-fusion-api-asyn-system-info
+last_sync: 2026-06-07
+sync_hash: 59bbc24d
 ---
-
-
 ## 场景介绍
 
 Scenario Fusion Kit提供获取系统信息属性API，调用该接口可以获取设备、网络状态、屏幕、语言、主题等系统信息属性。

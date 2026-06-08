@@ -2,8 +2,11 @@
 format: md
 title: "如何通过hdc命令唤醒设备和查看屏幕状态"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-52
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-52
+last_sync: 2026-06-07
+sync_hash: 1a2cf09d
+upstream_hash: c9c112f091b6
 ---
-
 
 唤醒设备：hdc shell power-shell wakeup。
 

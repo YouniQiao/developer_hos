@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-use-object-link-to-replace-prop"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-use-object-link-to-replace-prop
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-use-object-link-to-replace-prop
+last_sync: 2026-06-07
+sync_hash: 665238d0
 ---
-
-
 # @performance/hp-arkui-use-object-link-to-replace-prop
 
 建议使用@ObjectLink代替@Prop减少不必要的深拷贝。

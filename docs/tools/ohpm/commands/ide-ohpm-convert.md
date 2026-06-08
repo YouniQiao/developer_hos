@@ -3,9 +3,10 @@ title: "ohpm convert"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-convert
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-convert
+last_sync: 2026-06-07
+sync_hash: ce208107
 ---
-
-
 # ohpm convert
 
 将npm三方库转换为ohpm三方库。因为语法差异，转换时仅对文件进行格式转换，不修改原npm包的代码逻辑。若HAR包在转换后出现代码不兼容的报错，开发者需修改原npm包的代码做适配。

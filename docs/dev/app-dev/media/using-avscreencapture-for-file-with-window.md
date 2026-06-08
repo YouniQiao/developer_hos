@@ -2,8 +2,11 @@
 title: "使用AVScreenCapture实现窗口级录屏(C/C++)"
 original_url: /docs/dev/app-dev/media/using-avscreencapture-for-file-with-window
 format: md
+upstream_id: dev/app-dev/media/using-avscreencapture-for-file-with-window
+last_sync: 2026-06-07
+sync_hash: 67389d10
+upstream_hash: 928db9efabcf
 ---
-
 
 从API version 10开始，开发者可通过AVScreenCapture模块的C API接口实现窗口/屏幕录制，采集麦克风和设备的音视频源数据。
 

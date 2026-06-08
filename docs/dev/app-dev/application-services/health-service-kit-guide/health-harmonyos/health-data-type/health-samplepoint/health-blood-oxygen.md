@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "血氧"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-blood-oxygen
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-blood-oxygen
+last_sync: 2026-06-07
+sync_hash: fc3695c1
 ---
-
-
 жӯӨж•°жҚ®и®°еҪ•з”ЁжҲ·еңЁжҹҗж—¶еҲ»зҡ„иЎҖж°§пјҢжҜҸдёҖжқЎж•°жҚ®йғҪд»ЈиЎЁиҜҘж—¶еҲ»зҡ„иЎҖж°§еҖјгҖӮжҜҸжқЎж•°жҚ®дёҚиғҪеӯҳеңЁдәӨеҸүпјҢеҗҺдёҖжқЎж•°жҚ®зҡ„ејҖе§Ӣж—¶й—ҙеә”иҜҘеӨ§дәҺжҲ–зӯүдәҺеүҚдёҖжқЎж•°жҚ®зҡ„з»“жқҹж—¶й—ҙгҖӮ
 
 * Harmony SDKзұ»еһӢеёёйҮҸпјҡ[samplePointHelper.bloodOxygenSaturation.DATA\_TYPE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-samplepointhelper#еёёйҮҸ)

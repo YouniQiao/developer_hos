@@ -2,9 +2,10 @@
 title: "查看应用关键指标"
 original_url: /docs/distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-keyindex-0000002236332564
 format: md
+upstream_id: distribute/agc/agc-help-anaiyze-app-0000002271371749/agc-help-anaiyze-app-keyindex-0000002236332564
+last_sync: 2026-06-07
+sync_hash: 27bf7881
 ---
-
-
 [应用分析总览](#section106851042192815)为您提供应用的分析总览数据；[应用分析概览](#section17943125854315)提供单个应用的关键KPI指标概览。
 
 #### 应用分析总览

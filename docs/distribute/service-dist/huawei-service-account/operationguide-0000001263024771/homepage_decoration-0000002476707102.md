@@ -3,9 +3,10 @@ title: "装修服务号主页"
 displayed_sidebar: serviceDistSidebar
 original_url: /docs/distribute/service-dist/huawei-service-account/operationguide-0000001263024771/homepage_decoration-0000002476707102
 format: md
+upstream_id: distribute/service-dist/huawei-service-account/operationguide-0000001263024771/homepage_decoration-0000002476707102
+last_sync: 2026-06-07
+sync_hash: 59c350df
 ---
-
-
 # 装修服务号主页
 
 服务号主页是用户与服务号交互的重要入口，通过装修服务号主页，可以提升用户体验和服务效率，装修完成的服务号主页可以通过链接、二维码等方式用于推广。

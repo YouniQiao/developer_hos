@@ -3,9 +3,10 @@ title: "游戏预约（APP）"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-pre-order-0000001239342333/game-center-pre-order-app-0000002053113676
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-pre-order-0000001239342333/game-center-pre-order-app-0000002053113676
+last_sync: 2026-06-07
+sync_hash: 519f35cb
 ---
-
-
 # 游戏预约（APP）
 
 游戏预约指在游戏首发前进行宣传，配合游戏论坛、资讯的持续更新曝光，保证首发前的游戏热度，为正式首发凝聚力量。当用户对游戏感兴趣时会选择预约游戏，在游戏首发后，华为游戏中心会给已预约的用户发送通知，这些用户会有较高概率转化成游戏玩家，因此我们强烈推荐您使用游戏预约。游戏预约流程如下：
@@ -14,8 +15,8 @@ format: md
 
 ## 前提条件
 
-* 您已成功[创建游戏](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506`)，且软件包类型为“APP(HarmonyOS应用)”，支持设备为“手机”。
-* （可选）您可以[开通游戏版块](`https://developer.huawei.com/consumer/cn/doc/app/game-center-community-operation-0000001194305462`)，宣传游戏内容，聚集核心用户。
+* 您已成功[创建游戏](`/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)，且软件包类型为“APP(HarmonyOS应用)”，支持设备为“手机”。
+* （可选）您可以[开通游戏版块](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)，宣传游戏内容，聚集核心用户。
 
 ## 准备预约素材
 
@@ -105,7 +106,7 @@ format: md
 
 ## 预约审核与上架
 
-您提交审核后，华为工作人员完成审核需要1~3个工作日。您可以前往[互动中心](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-interaction-center-0000002276985946`)页面或在“预约申请”页面的“提交预约申请”卡片查看完整的审核结果。
+您提交审核后，华为工作人员完成审核需要1~3个工作日。您可以前往[互动中心](`/docs/distribute/agc/agc-help-interaction-center-0000002276985946)页面或在“预约申请”页面的“提交预约申请”卡片查看完整的审核结果。
 
 ![](./img/255e00b84b6e.png)
 

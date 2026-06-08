@@ -2,9 +2,10 @@
 title: "获取可管理用户"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/huawei-video-baihua/Content Connect API/user-management/get-manageable-users-0000001225967782
+upstream_id: distribute/content-dist/huawei-video-baihua/Content Connect API/user-management/get-manageable-users-0000001225967782
+last_sync: 2026-06-07
+sync_hash: d01d5ce7
 ---
-
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # 获取可管理用户

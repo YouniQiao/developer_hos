@@ -2,9 +2,10 @@
 title: "批量变更子服务"
 original_url: /docs/dev/atomic-dev/instant-service-items/instant-service-items-batch-update
 format: md
+upstream_id: dev/atomic-dev/instant-service-items/instant-service-items-batch-update
+last_sync: 2026-06-07
+sync_hash: d697224e
 ---
-
-
 在子服务状态为“已上架”、“草稿”、“审核驳回”、“已冻结”、“已下架”状态时，开发者可以通过“批量变更”操作更新子服务信息并发起审核。
 
 1. 在服务直达主界面，选择“子服务”页签，筛选出需要变更的子服务。

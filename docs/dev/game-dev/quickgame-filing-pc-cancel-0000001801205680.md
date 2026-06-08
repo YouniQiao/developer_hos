@@ -2,9 +2,10 @@
 title: "取消接入"
 original_url: /docs/dev/game-dev/quickgame-filing-pc-cancel-0000001801205680
 format: md
+upstream_id: dev/game-dev/quickgame-filing-pc-cancel-0000001801205680
+last_sync: 2026-06-07
+sync_hash: 85c8c5ac
 ---
-
-
 取消接入将在工信部删除快游戏在华为接入商的核准（备案）信息，若快游戏服务还需使用，建议在新的接入商完成核准（备案）后再取消接入，否则快游戏可能会被通管局清理。操作步骤如下：
 
 1. 登录[华为云核准（备案）系统](https://beian.huaweicloud.com/?utm_source=HUAWEI%2BDeveloper&utm_adplace=AdPlace099034)，左侧菜单栏点击“我的备案”，右侧页面选择“更多 &gt; 取消接入”。

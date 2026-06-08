@@ -2,8 +2,11 @@
 title: "授权持久化(C/C++)"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/native-fileshare-guidelines
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/native-fileshare-guidelines
+last_sync: 2026-06-07
+sync_hash: 17c4caf9
+upstream_hash: f5481e75a3b2
 ---
-
 
 ## 场景介绍
 

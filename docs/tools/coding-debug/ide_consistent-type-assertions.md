@@ -3,9 +3,10 @@ title: "@typescript-eslint/consistent-type-assertions"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_consistent-type-assertions
 format: md
+upstream_id: tools/coding-debug/ide_consistent-type-assertions
+last_sync: 2026-06-07
+sync_hash: 5b466740
 ---
-
-
 # @typescript-eslint/consistent-type-assertions
 
 强制使用一致的类型断言。

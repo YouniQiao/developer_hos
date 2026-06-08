@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通知订阅扩展能力开发步骤"
 original_url: /docs/dev/app-dev/application-services/notification-kit/notification-subscriber-extension/notification-subscriber-extension-ability-development-steps
 format: md
+upstream_id: dev/app-dev/application-services/notification-kit/notification-subscriber-extension/notification-subscriber-extension-ability-development-steps
+last_sync: 2026-06-07
+sync_hash: 0fa79c70
 ---
-
-
 ## 接口说明
 
 | 接口名 | 描述 |
@@ -20,7 +21,7 @@ format: md
 
 ## 开发步骤
 
-开发者在实现[NotificationSubscriberExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationsubscriberextensionability)提供方时，需在[DevEco Studio](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-tools-overview)工程中新建一个NotificationSubscriberExtensionAbility。具体步骤如下。
+开发者在实现[NotificationSubscriberExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationsubscriberextensionability)提供方时，需在[DevEco Studio](/docs/tools/coding-debug/ide-tools-overview)工程中新建一个NotificationSubscriberExtensionAbility。具体步骤如下。
 
 1. 在entry/src/main/ets/创建目录extensionability。
 2. 在entry/src/main/ets/extensionability目录下创建NotificationSubscriberExtAbility.ets，其内容如下。

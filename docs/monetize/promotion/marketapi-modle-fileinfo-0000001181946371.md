@@ -3,8 +3,10 @@ title: "FileInfo"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-fileinfo-0000001181946371
 format: md
+upstream_id: monetize/promotion/marketapi-modle-fileinfo-0000001181946371
+last_sync: 2026-06-07
+sync_hash: e0c6ae4c
 ---
-
 # FileInfo
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |

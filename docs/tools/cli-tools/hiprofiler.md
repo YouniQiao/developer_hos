@@ -3,9 +3,10 @@ title: "hiprofiler"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/hiprofiler
 format: md
+upstream_id: tools/cli-tools/hiprofiler
+last_sync: 2026-06-07
+sync_hash: 38257676
 ---
-
-
 # hiprofiler
 
 ## Hiprofiler简介

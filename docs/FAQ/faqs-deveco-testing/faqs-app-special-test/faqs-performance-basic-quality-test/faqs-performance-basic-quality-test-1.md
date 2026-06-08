@@ -2,9 +2,10 @@
 format: md
 title: "报告中为什么会出现未执行检测"
 original_url: /docs/FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-performance-basic-quality-test/faqs-performance-basic-quality-test-1
+upstream_id: FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-performance-basic-quality-test/faqs-performance-basic-quality-test-1
+last_sync: 2026-06-07
+sync_hash: 9bc5cecf
 ---
-
-
 如遇到以下几种场景，将不执行检测项。
 
 场景1：在应用测试过程中，如果测试用例的执行条件不满足，则不会执行相关测试场景。例如，如果应用页面仅有一屏且不支持滑动，则本次遍历中，滑动相关指标将无数据；如果某些指标检测动效场景，而在遍历过程中未遇到动效场景，则流畅相关指标将无数据。

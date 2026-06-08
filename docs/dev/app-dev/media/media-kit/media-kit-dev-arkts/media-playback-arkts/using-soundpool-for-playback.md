@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "使用SoundPool播放短音频(ArkTS)"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/using-soundpool-for-playback
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts/using-soundpool-for-playback
+last_sync: 2026-06-07
+sync_hash: 9c59d95e
+upstream_hash: 83778feb9d8b
 ---
-
 
 使用[SoundPool](/docs/dev/app-dev/media/media-kit/media-kit-intro#soundpool)（音频池）提供的接口，可以实现低时延短音播放。
 

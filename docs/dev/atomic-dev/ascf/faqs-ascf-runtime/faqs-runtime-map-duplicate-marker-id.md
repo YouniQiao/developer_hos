@@ -2,9 +2,10 @@
 title: "地图组件标记点id重复导致功能异常"
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-runtime-map-duplicate-marker-id
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-runtime-map-duplicate-marker-id
+last_sync: 2026-06-07
+sync_hash: 3137f6f2
 ---
-
-
 **问题现象**
 
 地图组件的marker通过id属性来唯一标识每个标记点。当多个标记点被设置了相同id时，虽然所有标记点仍会在地图上显示，但部分操作可能导致非预期内的行为，具体表现为：

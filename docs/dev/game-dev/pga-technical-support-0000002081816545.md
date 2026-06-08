@@ -2,9 +2,10 @@
 title: "PGA技术支持"
 original_url: /docs/dev/game-dev/pga-technical-support-0000002081816545
 format: md
+upstream_id: dev/game-dev/pga-technical-support-0000002081816545
+last_sync: 2026-06-07
+sync_hash: e424b5ae
 ---
-
-
 当您使用PGA遇到问题时，可以按照以下顺序寻求帮助。
 
 1. 请先仔细阅读文档，部分功能对设备和系统有限制。

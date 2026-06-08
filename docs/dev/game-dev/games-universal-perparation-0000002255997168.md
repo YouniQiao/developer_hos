@@ -2,9 +2,10 @@
 title: "适配准备"
 original_url: /docs/dev/game-dev/games-universal-perparation-0000002255997168
 format: md
+upstream_id: dev/game-dev/games-universal-perparation-0000002255997168
+last_sync: 2026-06-07
+sync_hash: 58b88313
 ---
-
-
 ## 知识准备
 
 ### 学习ArkTS语言

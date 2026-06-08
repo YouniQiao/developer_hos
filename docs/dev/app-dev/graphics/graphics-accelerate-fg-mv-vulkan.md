@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Vulkan平台"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-fg-mv-vulkan
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-fg-mv-vulkan
+last_sync: 2026-06-07
+sync_hash: fdf68747
 ---
-
-
 ## 业务流程
 
 基于Vulkan图形API平台，超帧顶点标记的主要业务流程如下：

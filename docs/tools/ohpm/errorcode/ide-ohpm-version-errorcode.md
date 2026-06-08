@@ -3,9 +3,10 @@ title: "ohpm version错误码"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/errorcode/ide-ohpm-version-errorcode
 format: md
+upstream_id: tools/ohpm/errorcode/ide-ohpm-version-errorcode
+last_sync: 2026-06-07
+sync_hash: 84f56327
 ---
-
-
 # ohpm version错误码
 
 ## 00607001 参数无效

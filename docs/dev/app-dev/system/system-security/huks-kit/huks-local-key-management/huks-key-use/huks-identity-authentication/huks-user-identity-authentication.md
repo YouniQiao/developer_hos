@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "用户身份认证访问控制开发指导"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-identity-authentication/huks-user-identity-authentication
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-identity-authentication/huks-user-identity-authentication
+last_sync: 2026-06-07
+sync_hash: f207636e
 ---
-
-
 场景介绍及相关概念说明请参考[用户身份认证访问控制简介](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-identity-authentication/huks-identity-authentication-overview)。
 
 ## 开发步骤

@@ -3,9 +3,10 @@ title: "动态壁纸&视频铃声"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/content-release-0000001054679366/uploadguide-0000001054359939/livewallpaper-upload-0000001055068451
 format: md
+upstream_id: distribute/content-dist/theme-center/content-release-0000001054679366/uploadguide-0000001054359939/livewallpaper-upload-0000001055068451
+last_sync: 2026-06-07
+sync_hash: 28da07fe
 ---
-
-
 # 动态壁纸&视频铃声
 
 ## 1. 动态壁纸&视频铃声上传

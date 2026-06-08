@@ -3,9 +3,10 @@ title: "滑动操作响应快"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-quick-response-for-swipe-0405
 format: md
+upstream_id: tools/coding-debug/ide-quick-response-for-swipe-0405
+last_sync: 2026-06-07
+sync_hash: 338d6b58
 ---
-
-
 # 滑动操作响应快
 
 #### 规则详情

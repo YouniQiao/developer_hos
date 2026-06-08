@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用Image_NativeModule完成多图对象编码"
 original_url: /docs/dev/app-dev/media/image-kit/image-native/image-encoding-c/image-packer-picture-c
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-native/image-encoding-c/image-packer-picture-c
+last_sync: 2026-06-07
+sync_hash: 698e4cbb
 ---
-
-
 图像编码类，用于创建以及释放ImagePacker实例，并编码多图对象。
 
 ## 开发步骤

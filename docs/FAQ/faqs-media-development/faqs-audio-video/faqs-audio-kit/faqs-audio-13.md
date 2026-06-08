@@ -2,9 +2,10 @@
 format: md
 title: "音频焦点如何适配"
 original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-13
+upstream_id: FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-13
+last_sync: 2026-06-07
+sync_hash: 38ca2cf2
 ---
-
-
 为确保应用提供良好的音频焦点体验，需要注意：
 
 （1）应用在启动播放或录制前，需根据音频用途，正确指定StreamUsage或SourceType。

@@ -2,9 +2,10 @@
 title: "创建DataAbility"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/dataability/create-dataability
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/dataability/create-dataability
+last_sync: 2026-06-07
+sync_hash: 96594c7d
 ---
-
-
 实现DataAbility中Insert、Query、Update、Delete接口的业务内容。保证能够满足数据库存储业务的基本需求。BatchInsert与ExecuteBatch接口已经在系统中实现遍历逻辑，依赖Insert、Query、Update、Delete接口逻辑，来实现数据的批量处理。
 
 创建DataAbility的代码示例如下：

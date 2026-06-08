@@ -3,8 +3,10 @@ title: "删除素材"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-asset4-0000001286342086
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-asset4-0000001286342086
+last_sync: 2026-06-07
+sync_hash: 8b7b4d4b
 ---
-
 # 删除素材
 
 您通过本接口可以删除素材。

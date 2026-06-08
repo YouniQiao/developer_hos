@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "签名/验签(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-signing-signature-verification/huks-ukey-signing-signature-verification-arkts
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-external-key-management/huks-ukey-signing-signature-verification/huks-ukey-signing-signature-verification-arkts
+last_sync: 2026-06-07
+sync_hash: d6655c0d
 ---
-
-
 当前指导提供以下示例，供开发者参考完成签名、验签开发：
 
 * [密钥算法为RSA、摘要算法为SHA256、填充模式为PSS](#rsasha256pss)

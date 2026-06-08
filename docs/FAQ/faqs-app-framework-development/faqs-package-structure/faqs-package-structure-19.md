@@ -2,9 +2,10 @@
 format: md
 title: "HAP/HAR/HSP的关系是什么？是否都可以声明注册Ability和Page？三种类型分别推荐哪些的使用场景？选择原则是什么"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-19
+upstream_id: FAQ/faqs-app-framework-development/faqs-package-structure/faqs-package-structure-19
+last_sync: 2026-06-07
+sync_hash: 59881470
 ---
-
-
 **HAP：应用安装和运行的基本单元**。支持在配置文件中声明abilities、extensionAbilities组件，支持在配置文件中声明pages页面。
 
 主要使用场景：

@@ -2,9 +2,10 @@
 title: "动画帧率优化"
 original_url: /docs/quality/animation-frame
 format: md
+upstream_id: /docs/quality/animation-frame
+last_sync: 2026-06-07
+sync_hash: 127a3774
 ---
-
-
 # 动画帧率优化
 
 动画在应用开发中扮演着重要角色，能够提升用户体验、传达信息、引导用户操作、提升应用品质和增加视觉吸引力。动画的性能表现也至关重要，优化可以从属性更新和布局方面入手，减少冗余刷新。通过这些优化手段的使用，可以提升动画帧率、减少应用卡顿，从而提升性能和用户体验。

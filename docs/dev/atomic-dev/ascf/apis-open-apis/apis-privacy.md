@@ -2,9 +2,10 @@
 title: "隐私"
 original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-privacy
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-open-apis/apis-privacy
+last_sync: 2026-06-07
+sync_hash: b224522c
 ---
-
-
 ## has.onPrivacyStateChanged
 
 has.onPrivacyStateChanged(function callback)

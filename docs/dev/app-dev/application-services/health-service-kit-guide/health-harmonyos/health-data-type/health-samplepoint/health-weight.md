@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "体重"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-weight
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/health-weight
+last_sync: 2026-06-07
+sync_hash: cf79c6b0
 ---
-
-
 此数据记录用户在某时刻的体重数据。
 
 Harmony SDK类型常量：[samplePointHelper.weight.DATA\_TYPE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-samplepointhelper#常量-11)

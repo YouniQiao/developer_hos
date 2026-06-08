@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "发送星闪广播"
 original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-send-advertising
 format: md
+upstream_id: dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-send-advertising
+last_sync: 2026-06-07
+sync_hash: 2ba4997c
 ---
-
-
 ## 场景介绍
 
 发送星闪广播，广播数据可以被支持星闪能力的中心设备扫描到。

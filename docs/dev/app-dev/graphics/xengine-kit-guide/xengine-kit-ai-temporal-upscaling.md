@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "时域AI超分"
 original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-ai-temporal-upscaling
 format: md
+upstream_id: dev/app-dev/graphics/xengine-kit-guide/xengine-kit-ai-temporal-upscaling
+last_sync: 2026-06-07
+sync_hash: 31ff953e
 ---
-
-
 从6.0.0(20) 版本开始，新增支持OpenGL ES协议。
 
 XEngine Kit提供时域AI超分能力，利用相机的抖动获取不同位置的采样信息，融合时域实现超采样率和超分辨率功能，并利用神经网络达到抗锯齿效果，建议超分倍率为[1.25, 2.0]。

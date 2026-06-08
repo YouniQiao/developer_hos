@@ -2,9 +2,10 @@
 format: md
 title: "网络问题导致image组件加载在线图片失败"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-98
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-98
+last_sync: 2026-06-07
+sync_hash: 3cd8a448
 ---
-
-
 **问题现象**
 
 image组件加载在线图片失败，在onError回调中收到网络请求相关报错。

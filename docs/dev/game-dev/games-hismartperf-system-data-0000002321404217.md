@@ -2,9 +2,10 @@
 title: "系统数据"
 original_url: /docs/dev/game-dev/games-hismartperf-system-data-0000002321404217
 format: md
+upstream_id: dev/game-dev/games-hismartperf-system-data-0000002321404217
+last_sync: 2026-06-07
+sync_hash: 1dafea21
 ---
-
-
 ## FPS数据
 
 FPS（Frames Per Second）即每秒能显示的画面数量，用以衡量游戏画面的流畅度，帧率越高，流畅度越高。

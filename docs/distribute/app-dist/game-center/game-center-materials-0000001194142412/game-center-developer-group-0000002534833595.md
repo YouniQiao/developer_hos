@@ -3,9 +3,10 @@ title: "开发者群组使用细则"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-developer-group-0000002534833595
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-developer-group-0000002534833595
+last_sync: 2026-06-07
+sync_hash: 24656b89
 ---
-
-
 # 开发者群组使用细则
 
 本文约定了开发者及其关联公司在使用华为数字商品及联运服务（以下简称“服务”）时，通过开发者群组使用服务和开展活动的具体规则。
@@ -34,4 +35,4 @@ format: md
 
 <strong>五、操作指导</strong>
 
-请参见[关联账号组](`https://developer.huawei.com/consumer/cn/doc/app/game-center-associated-group-0000002521616574`)。
+请参见[关联账号组](`/docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-associated-group-0000002521616574)。

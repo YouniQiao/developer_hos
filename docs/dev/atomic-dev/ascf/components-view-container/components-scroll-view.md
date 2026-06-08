@@ -2,9 +2,10 @@
 title: "scroll-view"
 original_url: /docs/dev/atomic-dev/ascf/components-view-container/components-scroll-view
 format: md
+upstream_id: dev/atomic-dev/ascf/components-view-container/components-scroll-view
+last_sync: 2026-06-07
+sync_hash: d581305c
 ---
-
-
 可滚动视图区域，相当于web中设置了overflow属性的div元素。
 
 **起始版本：** 1.0.0

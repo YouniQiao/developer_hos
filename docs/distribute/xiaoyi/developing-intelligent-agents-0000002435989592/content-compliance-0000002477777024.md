@@ -3,9 +3,10 @@ title: "配置-内容合规"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/developing-intelligent-agents-0000002435989592/content-compliance-0000002477777024
 format: md
+upstream_id: distribute/xiaoyi/developing-intelligent-agents-0000002435989592/content-compliance-0000002477777024
+last_sync: 2026-06-07
+sync_hash: 2e9c0fdf
 ---
-
-
 # 配置-内容合规
 
 ## 概述

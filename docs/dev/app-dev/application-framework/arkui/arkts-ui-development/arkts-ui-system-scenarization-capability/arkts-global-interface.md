@@ -2,9 +2,10 @@
 title: "使用UI上下文接口操作界面（UIContext）"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-global-interface
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-ui-system-scenarization-capability/arkts-global-interface
+last_sync: 2026-06-07
+sync_hash: 46e20893
 ---
-
-
 本文主要介绍了多UI实例涉及的概念，以及使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)的方法替换全局接口的原因，并提供了相应的替换方案。
 
 ## 基本概念

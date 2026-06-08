@@ -2,9 +2,10 @@
 title: "常用事件使用方式"
 original_url: /docs/dev/atomic-dev/ascf/logical-layer-events/logical-layer-event-usage
 format: md
+upstream_id: dev/atomic-dev/ascf/logical-layer-events/logical-layer-event-usage
+last_sync: 2026-06-07
+sync_hash: c525a54f
 ---
-
-
 在组件中绑定一个事件处理函数，如bindtap="handleTap"。
 
 ```

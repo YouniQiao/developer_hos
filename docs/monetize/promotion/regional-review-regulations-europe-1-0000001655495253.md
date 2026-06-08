@@ -3,8 +3,10 @@ title: "区域审核规范（欧洲）"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/regional-review-regulations-europe-1-0000001655495253
 format: md
+upstream_id: monetize/promotion/regional-review-regulations-europe-1-0000001655495253
+last_sync: 2026-06-07
+sync_hash: 5c261a51
 ---
-
 # 区域审核规范（欧洲）
 
 <strong>Petal Ads Industry Admission Policy</strong>

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "管理AR会话（C/C++）"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/arsession/arengine-c-arsession
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/arsession/arengine-c-arsession
+last_sync: 2026-06-07
+sync_hash: 34f4bb01
 ---
-
-
 本章节给出了关键开发步骤，完整代码可以参考[示例代码](https://gitcode.com/harmonyos_samples/arengine_-sample-code_-clientdemo_cpp)。
 
 ## 约束与限制

@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "查询密钥别名集(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-list-aliases/huks-list-aliases-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-other-operations/huks-list-aliases/huks-list-aliases-ndk
+last_sync: 2026-06-07
+sync_hash: fde504dd
+upstream_hash: 42134dedc2de
 ---
-
 
 HUKS提供了接口供应用查询密钥别名集。
 

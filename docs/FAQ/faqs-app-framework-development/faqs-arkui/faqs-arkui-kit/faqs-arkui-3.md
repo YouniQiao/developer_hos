@@ -2,9 +2,10 @@
 title: "如何实现防截屏功能"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-3
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-3
+last_sync: 2026-06-07
+sync_hash: 082320ef
 ---
-
-
 设置窗口隐私模式，禁止截屏或录屏。此接口适用于禁止截屏/录屏的场景。
 
 方式一：进入页面开启隐私模式，离开页面取消，具体可参考以下步骤：

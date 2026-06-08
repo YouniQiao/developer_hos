@@ -2,9 +2,10 @@
 title: "接入流程"
 original_url: /docs/dev/atomic-dev/atomic-health-service-development/health-application-access-as
 format: md
+upstream_id: dev/atomic-dev/atomic-health-service-development/health-application-access-as
+last_sync: 2026-06-07
+sync_hash: 9339e7e1
 ---
-
-
 ![](./img/8c5bb324.png)
 
 接入运动健康服务主要包含以下环节：

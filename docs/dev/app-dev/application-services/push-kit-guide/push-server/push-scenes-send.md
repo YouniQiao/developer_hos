@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "推送场景化消息"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-server/push-scenes-send
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-server/push-scenes-send
+last_sync: 2026-06-07
+sync_hash: dfeb34bd
 ---
-
-
 ## 场景介绍
 
 Push Kit支持您使用HTTPS协议接入云侧，使用场景化V3接口发送场景化消息，并将不同场景定义为不同push-type。

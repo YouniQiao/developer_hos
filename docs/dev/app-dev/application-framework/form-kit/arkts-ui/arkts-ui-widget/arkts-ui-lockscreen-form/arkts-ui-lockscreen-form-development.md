@@ -2,9 +2,10 @@
 title: "锁屏卡片开发指导"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-lockscreen-form/arkts-ui-lockscreen-form-development
 format: md
+upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-lockscreen-form/arkts-ui-lockscreen-form-development
+last_sync: 2026-06-07
+sync_hash: 77973fc2
 ---
-
-
 从API version 18开始，Form Kit提供在设备锁屏界面上显示卡片的能力，用以展示重要信息或快捷操作，旨在让用户无需解锁即可获取关键资讯或执行常用功能。锁屏卡片常用于展示天气、时钟等内容，并支持用户个性化定制。
 
 本文介绍了锁屏卡片的使用步骤、约束限制，并给出开发指导。
@@ -104,7 +105,7 @@ format: md
 
 因为锁屏卡片会展示在设备的锁屏界面，出于数据隐私安全考虑，需要开发者申请上架开放能力。
 
-因此在应用调试或发布时，必须使用[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)，并在手动签名[申请Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)过程中[创建HarmonyOS应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)，创建应用时参考如下指导为应用接入开放能力。
+因此在应用调试或发布时，必须使用[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)，并在手动签名[申请Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278)过程中[创建HarmonyOS应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)，创建应用时参考如下指导为应用接入开放能力。
 
 1. 在“开放能力接入”页面，点击锁屏卡片对应的申请按钮。
 

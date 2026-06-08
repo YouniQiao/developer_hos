@@ -2,9 +2,10 @@
 title: "FAQ"
 original_url: /docs/distribute/agc/agc-help-anaiyze-atomic-0000002236332568/agc-help-anaiyze-atomic-faq-0000002334144281
 format: md
+upstream_id: distribute/agc/agc-help-anaiyze-atomic-0000002236332568/agc-help-anaiyze-atomic-faq-0000002334144281
+last_sync: 2026-06-07
+sync_hash: 64857f72
 ---
-
-
 #### 通用FAQ
 
 #### [h2]元服务分析的所有报表什么时候刷新？

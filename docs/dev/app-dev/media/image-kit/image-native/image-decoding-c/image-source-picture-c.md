@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用Image_NativeModule完成多图对象解码"
 original_url: /docs/dev/app-dev/media/image-kit/image-native/image-decoding-c/image-source-picture-c
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-native/image-decoding-c/image-source-picture-c
+last_sync: 2026-06-07
+sync_hash: 7c3afad9
 ---
-
-
 创建ImageSource实例，将所支持格式的图片文件解码成Picture多图对象，以便在应用或系统中进行HDR图片显示、辅助图处理等操作。当前支持的图片文件格式包括JPEG、HEIF。
 
 Picture是包含主图、辅助图和元数据的多图对象。主图包含主要图像信息，辅助图用于存储与主图相关的附加信息（如HDR增益图GAINMAP），元数据用于存储与图片相关的其他信息。Picture适用于HDR图片处理、HEIF专业格式解码等场景。

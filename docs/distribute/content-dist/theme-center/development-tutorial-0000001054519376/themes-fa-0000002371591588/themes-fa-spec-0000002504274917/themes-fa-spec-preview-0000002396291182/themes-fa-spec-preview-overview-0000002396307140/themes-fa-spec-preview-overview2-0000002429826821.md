@@ -3,9 +3,10 @@ title: "单卡-大卡"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-preview-0000002396291182/themes-fa-spec-preview-overview-0000002396307140/themes-fa-spec-preview-overview2-0000002429826821
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-fa-0000002371591588/themes-fa-spec-0000002504274917/themes-fa-spec-preview-0000002396291182/themes-fa-spec-preview-overview-0000002396307140/themes-fa-spec-preview-overview2-0000002429826821
+last_sync: 2026-06-07
+sync_hash: 45952a8a
 ---
-
-
 # 单卡-大卡
 
 ## （1）1:1封面图

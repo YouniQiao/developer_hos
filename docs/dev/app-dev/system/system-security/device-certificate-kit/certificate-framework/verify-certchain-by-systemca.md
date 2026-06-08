@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用系统预置CA证书校验证书链"
 original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/verify-certchain-by-systemca
 format: md
+upstream_id: dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/verify-certchain-by-systemca
+last_sync: 2026-06-07
+sync_hash: e98fd059
 ---
-
-
 从API 20开始，支持使用系统预置CA证书校验证书链。
 
 以校验证书链为例，完成证书链对象的创建，使用系统预置CA证书对证书链进行校验。

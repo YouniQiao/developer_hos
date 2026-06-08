@@ -3,18 +3,19 @@ displayed_sidebar: appDevSidebar
 title: "AppGallery Kit常见问题"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-faq
+last_sync: 2026-06-07
+sync_hash: 4a927216
 ---
-
-
 * **[AppGallery Connect中可以配置多个订阅关键事件回调地址吗？](/docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-9)**
-* **[AppGallery Connect获取的IAP公钥最大长度是多少？便于用户存储设置的最大长度是多少？](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-10)**
-* **[AppGallery Connect商品管理页面，商品价格编辑界面的默认价格表示什么意思？](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-11)**
-* **[在AppGallery Connect中单独修改商品在某个地区的价格，以后汇率变动，是否会影响应用内的商品价格？](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-12)**
-* **[AppGallery Connect商品管理页面中，价格展示是否做了数字调整？比如小数点第二位6/9等调整？](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-13)**
-* **[是否必须使用SHA256的证书才能通过验签？](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-14)**
-* **[签名校验是否可以都在服务端执行？](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-15)**
+* **[AppGallery Connect获取的IAP公钥最大长度是多少？便于用户存储设置的最大长度是多少？](/docs/dev/app-dev/application-services/iap-faq-3)**
+* **[AppGallery Connect商品管理页面，商品价格编辑界面的默认价格表示什么意思？](/docs/dev/app-dev/application-services/iap-faq-4)**
+* **[在AppGallery Connect中单独修改商品在某个地区的价格，以后汇率变动，是否会影响应用内的商品价格？](/docs/dev/app-dev/application-services/iap-faq-5)**
+* **[AppGallery Connect商品管理页面中，价格展示是否做了数字调整？比如小数点第二位6/9等调整？](/docs/dev/app-dev/application-services/iap-faq-6)**
+* **[是否必须使用SHA256的证书才能通过验签？](/docs/dev/app-dev/application-services/iap-faq-7)**
+* **[签名校验是否可以都在服务端执行？](/docs/dev/app-dev/application-services/iap-faq-8)**
 * **[支付界面是否仅有一种UI设计？是否存在其他支付界面方案？](/docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-16)**
-* **[是否能在删除商品后添加具有相同productId的商品？](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/store-faq-18)**
+* **[是否能在删除商品后添加具有相同productId的商品？](/docs/dev/app-dev/application-services/iap-faq-11)**
 * **[数字商品服务器支持证书](/docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-19)**
 * **[数字商品服务器支持加密套件](/docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-20)**
 * **[数字商品服务中订单订购状态有哪些？](/docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-22)**

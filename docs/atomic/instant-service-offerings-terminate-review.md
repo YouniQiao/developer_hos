@@ -2,8 +2,11 @@
 title: "撤回商品审核"
 original_url: /docs/dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-terminate-review
 format: md
+upstream_id: dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-terminate-review
+last_sync: 2026-06-07
+sync_hash: ceb96662
+upstream_hash: fa61936080a3
 ---
-
 
 ## 功能介绍
 

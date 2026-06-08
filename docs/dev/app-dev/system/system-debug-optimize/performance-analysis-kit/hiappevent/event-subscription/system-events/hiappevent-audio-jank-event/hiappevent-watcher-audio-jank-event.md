@@ -2,9 +2,10 @@
 title: "音频卡顿事件介绍"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/hiappevent-audio-jank-event/hiappevent-watcher-audio-jank-event
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/hiappevent-audio-jank-event/hiappevent-watcher-audio-jank-event
+last_sync: 2026-06-07
+sync_hash: 5f5a7e7a
 ---
-
-
 ## 简介
 
 从API version 21开始，支持订阅音频卡顿事件。音频卡顿事件是指音频流卡顿导致的音频播放不流畅，音频卡顿发生场景可以分为应用进程问题卡顿、系统问题卡顿。当出现音频长时间无数据时被定义为音频卡顿事件，并生成HiAppEvent日志，供应用开发者分析。如何使用HiAppEvent订阅音频卡顿事件可参见以下文档：
@@ -14,7 +15,7 @@ format: md
 
 ![](./img/b68d2a8f.png)
 
-音频卡顿事件不支持在[应用分身场景](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)、[输入法应用场景](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)或[元服务场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-create-faproject)下使用HiAppEvent进行订阅。
+音频卡顿事件不支持在[应用分身场景](/docs/dev/app-dev/getting-started/dev-fundamentals/app-clone)、[输入法应用场景](/docs/dev/app-dev/application-framework/ime-kit/inputmethod-application-guide)或[元服务场景](/docs/tools/end-cloud/agc-harmonyos-create-faproject)下使用HiAppEvent进行订阅。
 
 ## 检测原理
 

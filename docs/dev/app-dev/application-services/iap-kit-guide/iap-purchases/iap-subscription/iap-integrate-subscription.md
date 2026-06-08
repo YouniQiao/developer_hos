@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "接入自动续期订阅"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-purchases/iap-subscription/iap-integrate-subscription
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-purchases/iap-subscription/iap-integrate-subscription
+last_sync: 2026-06-07
+sync_hash: ece03c9e
 ---
-
-
 ## 约束与限制
 
 自动续期订阅能力支持Phone、Tablet、PC/2in1设备，并且从5.1.1(19）版本开始，新增支持TV设备。

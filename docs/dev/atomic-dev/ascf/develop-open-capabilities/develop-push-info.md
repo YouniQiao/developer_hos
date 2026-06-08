@@ -2,9 +2,10 @@
 title: "向用户推送信息"
 original_url: /docs/dev/atomic-dev/ascf/develop-open-capabilities/develop-push-info
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-open-capabilities/develop-push-info
+last_sync: 2026-06-07
+sync_hash: 543385f7
 ---
-
-
 开发者可以通过推送服务，向用户推送信息。
 
 ## 开发准备

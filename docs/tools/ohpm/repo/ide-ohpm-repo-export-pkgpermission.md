@@ -2,9 +2,10 @@
 title: "ohpm-repo export_pkgPermission"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-export-pkgpermission
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-export-pkgpermission
+last_sync: 2026-06-07
+sync_hash: a05c0415
 ---
-
-
 # ohpm-repo export\_pkgPermission
 
 ohpm-repo 5.4.0版本开始，支持导出包权限数据。

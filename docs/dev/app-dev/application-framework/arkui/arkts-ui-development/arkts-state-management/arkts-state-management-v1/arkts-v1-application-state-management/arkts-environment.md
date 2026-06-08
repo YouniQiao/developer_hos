@@ -2,9 +2,10 @@
 title: "Environment：设备环境查询"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-environment
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-environment
+last_sync: 2026-06-07
+sync_hash: eb9e3b92
 ---
-
-
 如果开发者需要获取应用程序运行设备的环境参数（如多语言、深浅色模式等）以进行不同的场景判断，可以使用Environment设备环境查询。
 
 Environment是ArkUI框架在应用程序启动时创建的单例对象，为[AppStorage](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-v1/arkts-v1-application-state-management/arkts-appstorage)提供应用程序运行状态的属性。所有属性都是不可变的简单类型。

@@ -3,9 +3,10 @@ title: "多页签组件用法"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/custom-card-editing-0000002471264337/multiple-tabs-component-0000002477617044
 format: md
+upstream_id: distribute/xiaoyi/custom-card-editing-0000002471264337/multiple-tabs-component-0000002477617044
+last_sync: 2026-06-07
+sync_hash: e9dfc4f2
 ---
-
-
 # 多页签组件用法
 
 一、子页签个数允许设置固定个数和绑定变量。

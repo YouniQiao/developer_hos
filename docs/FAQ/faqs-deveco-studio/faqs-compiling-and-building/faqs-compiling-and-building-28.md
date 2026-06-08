@@ -2,9 +2,10 @@
 format: md
 title: "ArkUI-X工程编译报错“The ArkUI-X project's structure has been changed”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-28
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-28
+last_sync: 2026-06-07
+sync_hash: 0d528f70
 ---
-
-
 **问题现象**
 
 使用DevEco Studio 4.0.0.700及以上版本打开ArkUI-X历史工程时，工程同步或构建会提示“ERROR: The ArkUI-X project's structure has been changed. Migrate and adapt the project as instructed in FAQs.”。

@@ -3,9 +3,10 @@ title: "应用集成「集成态hsp」的兼容性指导"
 displayed_sidebar: appCompatibilitySidebar
 original_url: /docs/design/app-compatibility/app-compatibility-share-hsp
 format: md
+upstream_id: design/app-compatibility/app-compatibility-share-hsp
+last_sync: 2026-06-07
+sync_hash: 5418e5fa
 ---
-
-
 # 应用集成"集成态hsp"的兼容性指导
 
 # 应用集成“集成态hsp”的兼容性指导

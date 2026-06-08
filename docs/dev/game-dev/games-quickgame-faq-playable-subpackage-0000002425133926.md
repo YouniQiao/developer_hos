@@ -2,9 +2,10 @@
 title: "试玩分包"
 original_url: /docs/dev/game-dev/games-quickgame-faq-playable-subpackage-0000002425133926
 format: md
+upstream_id: dev/game-dev/games-quickgame-faq-playable-subpackage-0000002425133926
+last_sync: 2026-06-07
+sync_hash: 7091e6e7
 ---
-
-
 ## 如何使用快游戏开发者工具进行试玩调试？
 
 1. 在电脑上安装最新版本快游戏开发者工具（版本号大于等于15.0.2）。

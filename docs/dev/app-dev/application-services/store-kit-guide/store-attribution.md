@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "应用归因服务"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-attribution
+last_sync: 2026-06-07
+sync_hash: 1d271d57
 ---
-
-
 * **[开发概述](/docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-introduction)**
 * **[开发准备](/docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-preparations)**
 * **[登记归因来源及转化](/docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-developmentguide)**

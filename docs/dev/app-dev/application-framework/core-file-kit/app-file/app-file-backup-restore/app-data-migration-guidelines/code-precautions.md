@@ -2,9 +2,10 @@
 title: "应用升级过程代码开发注意事项"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/code-precautions
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/code-precautions
+last_sync: 2026-06-07
+sync_hash: 9b4fe1ea
 ---
-
-
 ## 区分升级场景和克隆场景
 
 开发者需要区分升级场景和克隆场景时，可以重写BackupExtensionAbility中的onRestoreEx方法，通过restoreInfo预留字段进行场景区分。onRestoreEx方法详细使用指导请参考：[BackupExtensionAbility API参考](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-application-backupextensionability#backupextensionability)。

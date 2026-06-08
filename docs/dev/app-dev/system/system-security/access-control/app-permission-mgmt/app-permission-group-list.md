@@ -2,9 +2,10 @@
 title: "应用权限组列表"
 original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-group-list
 format: md
+upstream_id: dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-group-list
+last_sync: 2026-06-07
+sync_hash: 9da88064
 ---
-
-
 ## 使用须知
 
 * 在申请目标权限前，建议开发者先阅读[应用权限管控概述-权限组和子权限](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#权限组和子权限)，了解相关概念，再合理申请对应的权限组。

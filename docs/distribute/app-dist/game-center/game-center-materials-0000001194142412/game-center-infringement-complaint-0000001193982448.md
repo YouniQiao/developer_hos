@@ -3,9 +3,10 @@ title: "游戏侵权投诉方案"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-infringement-complaint-0000001193982448
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-infringement-complaint-0000001193982448
+last_sync: 2026-06-07
+sync_hash: 9f1e409b
 ---
-
-
 # 游戏侵权投诉方案
 
 在华为应用市场/游戏中心上架的游戏均是由个人开发者或企业开发者提供的，为了保护您的版权、隐私、商标、专利等合法权益，华为应用市场制定侵权投诉通知和反通知方案，具体流程如下：

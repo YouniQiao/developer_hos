@@ -1,8 +1,10 @@
 ---
 title: "应用程序包概述"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/application-package-overview
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/application-package-overview
+last_sync: 2026-06-07
+sync_hash: 62b54177
 ---
-
 在基于[Stage模型](/docs/dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-overview-stage)开发应用之前，开发者需要了解应用的设计机制、应用程序包结构等基础知识。
 
 ## 应用与应用程序包

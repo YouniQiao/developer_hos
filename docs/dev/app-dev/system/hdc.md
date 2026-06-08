@@ -2,8 +2,11 @@
 title: "hdc"
 original_url: /docs/dev/app-dev/system/hdc
 format: md
+upstream_id: dev/app-dev/system/hdc
+last_sync: 2026-06-07
+sync_hash: 1b160e9f
+upstream_hash: 880e68350bef
 ---
-
 
 hdc（HarmonyOS Device Connector）是提供给开发人员的命令行调试工具，用于与设备进行交互调试、数据传输、日志查看以及应用安装等操作。该工具支持在Windows/Linux/MacOS系统上运行，为开发者提供高效，便捷的设备调试能力。
 
@@ -33,7 +36,7 @@ hdc可以选择以下任意一种方式获取：
 
 2.通过[Command Line Tools](https://developer.huawei.com/consumer/cn/download/)工具中的sdk目录获取相关工具。hdc程序默认安装在Command Line Tools/sdk/default/openharmony/toolchains路径下。
 
-hdc支持USB和无线两种连接调试方式。在设备的设置>系统>开发者选项中开启或关闭调试开关 ，无需重启设备即可生效。如果设备未启用“开发者选项”，可参考[开发者选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-developer-mode#section530763213432)进行启用。具体调试连接方式及操作步骤请参考[USB连接场景](#usb连接场景)和[TCP连接场景](#tcp连接场景)。
+hdc支持USB和无线两种连接调试方式。在设备的设置>系统>开发者选项中开启或关闭调试开关 ，无需重启设备即可生效。如果设备未启用“开发者选项”，可参考[开发者选项](/docs/tools/coding-debug/ide-developer-mode#section530763213432)进行启用。具体调试连接方式及操作步骤请参考[USB连接场景](#usb连接场景)和[TCP连接场景](#tcp连接场景)。
 
 ### （可选）命令行直接执行hdc程序
 
@@ -575,7 +578,7 @@ hdc shell [-b bundlename] [command]
 
 | 参数 | 说明 |
 | --- | --- |
-| -b bundlename | 3.1.0e版本新增参数。指定可调试应用包名，在可调试应用数据目录内，以非交互式模式执行命令。  [命令行方式访问应用沙箱](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-device-file-explorer#section48216711204)。  此参数当前仅支持以非交互式模式执行命令，不支持缺省command参数执行命令进入交互式shell会话。  未配置此参数时，默认执行路径为系统根目录。 |
+| -b bundlename | 3.1.0e版本新增参数。指定可调试应用包名，在可调试应用数据目录内，以非交互式模式执行命令。  [命令行方式访问应用沙箱](/docs/tools/coding-debug/ide-device-file-explorer#section48216711204)。  此参数当前仅支持以非交互式模式执行命令，不支持缺省command参数执行命令进入交互式shell会话。  未配置此参数时，默认执行路径为系统根目录。 |
 | command | 需要在设备上执行的单次命令，不同类型或版本的系统支持的command命令有所差异，可以通过hdc shell ls /system/bin查阅支持的命令列表。当前大多数命令都是由[toybox](/docs/dev/app-dev/system/toybox)提供，可通过 hdc shell toybox --help 获取命令帮助。  缺省该参数，hdc将会启动一个交互式的shell会话，开发者可以在命令提示符下输入命令，比如 ls、cd、pwd 等。 |
 
 ![](./img/8cc42ccf.png)
@@ -603,7 +606,8 @@ shell         39491      1 1 14:40:58 ?     00:00:00 hdcd
 
 # 查询全部可用命令。
 $ hdc shell help -a
----toybox---------------------------------------------------------------------
+---
+toybox---------------------------------------------------------------------
 
 usage: toybox [--long | --help | --version | [command] [arguments...]]
 
@@ -776,7 +780,7 @@ hdc file send [-a|-sync|-z|-m|-cwd path|-b bundlename] SOURCE DEST
 | -z | 通过LZ4格式压缩传输，此功能未开放，请勿使用。 |
 | -m | 文件传输时同步文件DAC权限，uid，gid，MAC权限。  DAC（Discretionary Access Control）：自主访问控制，  uid（User identifier）：用户标识符（或用户ID），  gid（Group identifier）：组标识符（或组ID），  MAC（Mandatory Access Control）：强制访问控制（或非自主访问控制）。 |
 | -cwd | 修改工作目录。  用于在文件传输时，切换SOURCE到指定path。例如，初始发送文件为test，所在目录为/data，实际发送文件路径为/data/test；如果使用-cwd "/user/"，实际发送文件路径为/user/test。 |
-| -b | 3.1.0e版本新增参数（低版本使用会提示[Fail]Unknown file option: -b），用于指定可调试应用包名。  使用方法可参考[通过命令往应用沙箱目录中发送文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-device-file-explorer#section48216711204)。 |
+| -b | 3.1.0e版本新增参数（低版本使用会提示[Fail]Unknown file option: -b），用于指定可调试应用包名。  使用方法可参考[通过命令往应用沙箱目录中发送文件](/docs/tools/coding-debug/ide-device-file-explorer#section48216711204)。 |
 | bundlename | 指定可调试应用包名。 |
 
 **返回信息**：
@@ -821,7 +825,7 @@ hdc file recv [-a|-sync|-z|-m|-cwd path|-b bundlename] DEST SOURCE
 | -z | 通过LZ4格式压缩传输，此功能未开放，请勿使用。 |
 | -m | 文件传输时同步文件DAC权限，uid，gid，MAC权限。  DAC（Discretionary Access Control）：自主访问控制，  uid（User identifier）：用户标识符（或用户ID），  gid（Group identifier）：组标识符（或组ID），  MAC（Mandatory Access Control）：强制访问控制（或非自主访问控制）。 |
 | -cwd | 修改工作目录。  用于在文件传输时，切换SOURCE到指定path。例如，初始接收文件目录为/data/，如果使用-cwd "/user/"，实际接收文件目录为/user/。 |
-| -b | 3.1.0e版本新增参数，用于传输指定的可调试应用进程应用数据目录下的文件。  使用方法可参考[从沙箱目录中下载文件到本地计算机](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-device-file-explorer#section48216711204)。 |
+| -b | 3.1.0e版本新增参数，用于传输指定的可调试应用进程应用数据目录下的文件。  使用方法可参考[从沙箱目录中下载文件到本地计算机](/docs/tools/coding-debug/ide-device-file-explorer#section48216711204)。 |
 | bundlename | 可调试应用进程的包名。 |
 
 **返回信息**：
@@ -1350,14 +1354,16 @@ hdc bugreport [FILE]
 
 ```
 $ hdc bugreport
--------------------------------[base]-------------------------------
+---
+----------------------------[base]-------------------------------
 
 BuildId: xxx
 RleaseType: xxx
 OsVersion: default/default/default/default/xxx
 DeviceType: default
 Manufacture: default
------
+---
+--
 ```
 
 ## hdc调试日志

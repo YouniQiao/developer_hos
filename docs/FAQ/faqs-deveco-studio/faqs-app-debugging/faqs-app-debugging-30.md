@@ -2,8 +2,11 @@
 format: md
 title: "如何强制重启设备"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-30
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-30
+last_sync: 2026-06-07
+sync_hash: 4bf4883c
+upstream_hash: 5d8fb54690a7
 ---
-
 
 可以通过以下几种方法重启设备。
 

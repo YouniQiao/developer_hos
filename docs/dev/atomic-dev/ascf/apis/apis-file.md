@@ -2,9 +2,10 @@
 title: "文件"
 original_url: /docs/dev/atomic-dev/ascf/apis/apis-file
 format: md
+upstream_id: dev/atomic-dev/ascf/apis/apis-file
+last_sync: 2026-06-07
+sync_hash: 4e05ae58
 ---
-
-
 ## has.openDocument
 
 has.openDocument(Object object)

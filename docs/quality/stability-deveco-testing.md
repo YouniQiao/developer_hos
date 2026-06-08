@@ -2,9 +2,10 @@
 title: "使用DevEco Testing进行稳定性测试"
 original_url: /docs/quality/stability-deveco-testing
 format: md
+upstream_id: /docs/quality/stability-deveco-testing
+last_sync: 2026-06-07
+sync_hash: ec0ffdc9
 ---
-
-
 # 使用DevEco Testing进行稳定性测试
 
 本文介绍DevEco Testing为HarmonyOS NEXT应用开发者提供的稳定性测试服务，涵盖稳定性基础质量测试和应用探索测试。稳定性基础质量测试依据HarmonyOS NEXT稳定性测试建议，提供应用稳定性基础检测能力，帮助开发者快速上手稳定性测试。应用探索测试采用基于专家经验的智能遍历方法，驱动测试高效执行，构建应用专属测试模型，帮助开发者有效识别应用故障。

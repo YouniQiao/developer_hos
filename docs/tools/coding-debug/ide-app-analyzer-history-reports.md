@@ -3,9 +3,10 @@ title: "管理体检报告"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-app-analyzer-history-reports
 format: md
+upstream_id: tools/coding-debug/ide-app-analyzer-history-reports
+last_sync: 2026-06-07
+sync_hash: a0481420
 ---
-
-
 # 管理体检报告
 
 AppAnalyzer支持查看、导出、导入体检报告，具体如下。

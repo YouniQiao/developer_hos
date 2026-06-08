@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "多边形"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-polygon
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-drawing/map-polygon
+last_sync: 2026-06-07
+sync_hash: e00247f0
 ---
-
-
 ## 场景介绍
 
 本章节将向您介绍如何在地图上绘制多边形。

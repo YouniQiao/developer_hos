@@ -2,9 +2,10 @@
 title: "Web和应用的跳转与拉起"
 original_url: /docs/dev/app-dev/application-framework/navigating-between-web-and-apps
 format: md
+upstream_id: dev/app-dev/application-framework/navigating-between-web-and-apps
+last_sync: 2026-06-07
+sync_hash: 8a5f39a8
 ---
-
-
 ## 概述
 
 在使用ArkTS与ArkWeb进行混合开发时，应用内的部分页面使用了前端相关能力进行了开发，结合Web组件进行了页面加载，在这种场景下涉及到从ArkWeb加载的页面向其他页面跳转，以及从ArkWeb页面拉起应用。

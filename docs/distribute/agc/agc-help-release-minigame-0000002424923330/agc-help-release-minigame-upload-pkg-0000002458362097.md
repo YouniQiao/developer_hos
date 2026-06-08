@@ -2,9 +2,10 @@
 title: "上传软件包"
 original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-upload-pkg-0000002458362097
 format: md
+upstream_id: distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-upload-pkg-0000002458362097
+last_sync: 2026-06-07
+sync_hash: 14b56b87
 ---
-
-
 上传用于小游戏测试或正式上架的软件包后，AppGallery Connect会对软件包自动检测合法性，您可以根据报告或者错误码修复软件包问题。
 
 #### 前提条件

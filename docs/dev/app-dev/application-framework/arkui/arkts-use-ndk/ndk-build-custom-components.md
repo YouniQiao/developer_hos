@@ -2,9 +2,10 @@
 title: "构建自定义组件"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-custom-components
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-build-custom-components
+last_sync: 2026-06-07
+sync_hash: bdb890ea
 ---
-
-
 ArkUI开发框架在NDK接口提供了自定义UI组件的能力，这些能力包括自定义测算，自定义布局和自定义绘制。开发者通过注册相关自定义回调事件接入ArkUI开发框架的布局渲染流程，这些事件需要使用[registerNodeCustomEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativenodeapi-1#registernodecustomevent)来进行声明，并通过[addNodeCustomEventReceiver](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-nativenodeapi-1#addnodecustomeventreceiver)函数添加组件自定义事件的监听器，在该监听器的回调函数中处理相关自定义测算，自定义布局和自定义绘制逻辑。
 
 ![](./img/6630f10d.png)

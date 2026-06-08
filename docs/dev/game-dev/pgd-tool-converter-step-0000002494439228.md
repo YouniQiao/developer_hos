@@ -2,9 +2,10 @@
 title: "基本转换步骤"
 original_url: /docs/dev/game-dev/pgd-tool-converter-step-0000002494439228
 format: md
+upstream_id: dev/game-dev/pgd-tool-converter-step-0000002494439228
+last_sync: 2026-06-07
+sync_hash: 24611c43
 ---
-
-
 ## 第一步：选择目录
 
 1. 在顶部菜单栏选择“Window &gt; PGD &gt; ECS Converter”，打开“ECS Converter”窗口。

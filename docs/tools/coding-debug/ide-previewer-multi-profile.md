@@ -3,9 +3,10 @@ title: "查看多端设备预览效果"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-previewer-multi-profile
 format: md
+upstream_id: tools/coding-debug/ide-previewer-multi-profile
+last_sync: 2026-06-07
+sync_hash: efafb458
 ---
-
-
 # 查看多端设备预览效果
 
 DevEco Studio支持HarmonyOS分布式应用/元服务开发，同一个应用/元服务可以运行在多个设备上。在HarmonyOS分布式应用/元服务的开发阶段，因不同设备的屏幕分辨率、形状、大小等不同，开发者需要在不同的设备上查看应用/元服务的UI布局和交互效果，此时便可以使用多端设备预览器功能，方便开发者在应用/元服务开发过程中，随时查看不同设备上的界面显示效果。

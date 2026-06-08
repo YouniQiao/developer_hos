@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "显示自定义地图"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-creation/map-style
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-creation/map-style
+last_sync: 2026-06-07
+sync_hash: fb2b250b
+upstream_hash: d71c62c4a340
 ---
-
 
 ## 场景介绍
 

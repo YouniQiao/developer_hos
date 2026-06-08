@@ -3,8 +3,11 @@ title: "@performance/hp-arkui-replace-nested-reusable-component-by-builder"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui--replace-reusable-by-builder
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui--replace-reusable-by-builder
+last_sync: 2026-06-07
+sync_hash: 62b97992
+upstream_hash: d9e876776ecc
 ---
-
 
 # @performance/hp-arkui-replace-nested-reusable-component-by-builder
 

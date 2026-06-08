@@ -2,9 +2,10 @@
 title: "qrcode开发指导"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-basic-components/ui-js-components-qrcode
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-basic-components/ui-js-components-qrcode
+last_sync: 2026-06-07
+sync_hash: 1f74b01c
 ---
-
-
 生成并显示二维码，具体用法请参考[qrcode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-basic-qrcode)。
 
 ## 创建qrcode组件

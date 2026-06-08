@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "按需加载场景中，用户在加载指定模块后是否可以卸载，然后重新发起请求？"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-30
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-faq/store-faq-30
+last_sync: 2026-06-07
+sync_hash: 910f864f
 ---
-
-
 可以卸载指定模块后重新调用[fetchModules](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/store-moduleinstallmanager#moduleinstallmanagerfetchmodules)接口发起按需加载请求。
 
 使用hdc指令卸载指定应用的指定模块后重新发起请求，卸载命令请参考：hdc shell bm uninstall -n com.xxxx.instantdownloaddemo -m modulelibName。

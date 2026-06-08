@@ -2,9 +2,10 @@
 format: md
 title: "如何跨Hap模块调用C++ API"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-56
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-56
+last_sync: 2026-06-07
+sync_hash: 354e7bb4
 ---
-
-
 **问题现象**
 
 开发者在使用Native Module进行C++开发时，若需在C++ NativeSDK Module A中调用C++ NativeSDK Module B中的代码，并支持源码调试，应按照以下步骤配置依赖关系：

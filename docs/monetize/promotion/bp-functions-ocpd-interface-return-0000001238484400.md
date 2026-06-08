@@ -3,8 +3,10 @@ title: "回传用户行为数据接口"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-ocpd-interface-return-0000001238484400
 format: md
+upstream_id: monetize/promotion/bp-functions-ocpd-interface-return-0000001238484400
+last_sync: 2026-06-07
+sync_hash: e637a13f
 ---
-
 # 回传用户行为数据接口
 
 ## 功能介绍

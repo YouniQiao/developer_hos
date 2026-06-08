@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Vulkan平台"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-rendering/graphics-accelerate-fg/graphics-accelerate-fg-systempresent/graphics-accelerate-fg-systempresent-vulkan
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-rendering/graphics-accelerate-fg/graphics-accelerate-fg-systempresent/graphics-accelerate-fg-systempresent-vulkan
+last_sync: 2026-06-07
+sync_hash: f2f70bdf
 ---
-
-
 ## 业务流程
 
 AI超帧调用流程上依赖系统送显模式功能，但与基本的系统送显模式相比，无需调用新方法，只需要在传输帧信息的时候不传输深度信息即可。

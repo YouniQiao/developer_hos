@@ -2,9 +2,10 @@
 format: md
 title: "如何在ArkTS中使用闭包"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-117
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-117
+last_sync: 2026-06-07
+sync_hash: 69cd2cb1
 ---
-
-
 **问题描述**
 
 ArkTS是否支持TypeScript中的闭包函数？

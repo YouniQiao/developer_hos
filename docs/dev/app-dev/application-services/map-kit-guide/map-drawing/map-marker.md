@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "标记"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-drawing/map-marker
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-drawing/map-marker
+last_sync: 2026-06-07
+sync_hash: 8286078b
 ---
-
-
 ## 场景介绍
 
 本章节将向您介绍如何在地图的指定位置添加标记以标识位置、商家、建筑等。

@@ -2,9 +2,10 @@
 title: "编译打包应用"
 original_url: /docs/distribute/agc/agc-help-internal-test-0000002270709477/agc-help-internal-test-build-app-0000002295372093
 format: md
+upstream_id: distribute/agc/agc-help-internal-test-0000002270709477/agc-help-internal-test-build-app-0000002295372093
+last_sync: 2026-06-07
+sync_hash: c96c64ed
 ---
-
-
 [准备好打包所需配置文件](/docs/distribute/agc/agc-help-internal-test-0000002270709477/agc-help-internal-test-prepare-0000002262046566)后，即可准备编译打包应用。
 
 1. 打开DevEco Studio，在顶部菜单栏选择“File > Project Structure”，进入“Project Structure”界面。

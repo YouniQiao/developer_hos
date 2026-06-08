@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "无法获取到头像昵称如何解决"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-8
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-faq/account-faq-8
+last_sync: 2026-06-07
+sync_hash: 6958f96d
 ---
-
-
 1. 确认获取authorizationCode时，调用[AuthorizationWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authorizationwithhuaweiidrequest)接口是否传入正确的scope：'profile'。
 
    ```

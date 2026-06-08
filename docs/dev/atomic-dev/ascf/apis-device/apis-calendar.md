@@ -2,9 +2,10 @@
 title: "日历"
 original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-calendar
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-device/apis-calendar
+last_sync: 2026-06-07
+sync_hash: bc41edc9
 ---
-
-
 ## has.addPhoneCalendar
 
 has.addPhoneCalendar(Object object)

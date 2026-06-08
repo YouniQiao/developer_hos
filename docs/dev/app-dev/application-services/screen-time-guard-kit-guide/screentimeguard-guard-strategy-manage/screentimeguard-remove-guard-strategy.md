@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "删除策略"
 original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-guard-strategy-manage/screentimeguard-remove-guard-strategy
 format: md
+upstream_id: dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-guard-strategy-manage/screentimeguard-remove-guard-strategy
+last_sync: 2026-06-07
+sync_hash: 901a7517
 ---
-
-
 ## 场景介绍
 
 当应用希望删除现有的屏幕时间守护规则时，可以调用删除管控策略的接口。根据参数中传入的策略名删除对应的策略。一旦策略被删除，系统将不再根据该规则对用户的屏幕使用行为进行监管。

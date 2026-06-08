@@ -3,8 +3,10 @@ title: "选择创意优选"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-creative-prefer-choose-0000001402986645
 format: md
+upstream_id: monetize/promotion/bp-functions-creative-prefer-choose-0000001402986645
+last_sync: 2026-06-07
+sync_hash: 214a0265
 ---
-
 # 选择创意优选
 
 1. 创建或修改推广任务时，若该任务支持推广创意功能，勾选“编辑辅助创意”。

@@ -3,8 +3,10 @@ title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-deeplink-faq-0000001295973262
 format: md
+upstream_id: monetize/promotion/bp-functions-deeplink-faq-0000001295973262
+last_sync: 2026-06-07
+sync_hash: f315ad6b
 ---
-
 # FAQ
 
 ## 客户端查询延迟Deeplink对手机设备是否有要求，是否仅支持华为手机？

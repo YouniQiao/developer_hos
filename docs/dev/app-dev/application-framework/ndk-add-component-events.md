@@ -2,9 +2,10 @@
 title: "添加事件监听"
 original_url: /docs/dev/app-dev/application-framework/ndk-add-component-events
 format: md
+upstream_id: dev/app-dev/application-framework/ndk-add-component-events
+last_sync: 2026-06-07
+sync_hash: e6eddc3d
 ---
-
-
 NDK接口为组件提供了事件监听能力。本文介绍组件事件监听、布局和绘制送显事件监听以及深浅色变更事件监听的使用方法。
 
 ## 监听组件事件

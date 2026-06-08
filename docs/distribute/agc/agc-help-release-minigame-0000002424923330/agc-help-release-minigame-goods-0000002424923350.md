@@ -2,9 +2,10 @@
 title: "添加数字商品"
 original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-goods-0000002424923350
 format: md
+upstream_id: distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-goods-0000002424923350
+last_sync: 2026-06-07
+sync_hash: 5501ae27
 ---
-
-
 数字商品类型分为消耗型、非消耗型、自动续期订阅、非续期订阅。
 
 首次提审或追加新类型的数字商品时，必须同时提交新的小游戏版本，不能单独提交商品审核。

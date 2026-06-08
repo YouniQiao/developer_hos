@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通过Push Kit更新实况窗"
 original_url: /docs/dev/app-dev/application-services/live-view-kit-guide/liveview-scenes/liveview-update-by-push
 format: md
+upstream_id: dev/app-dev/application-services/live-view-kit-guide/liveview-scenes/liveview-update-by-push
+last_sync: 2026-06-07
+sync_hash: 81d6f509
 ---
-
-
 ## 场景介绍
 
 本地实况窗的更新依赖于应用进程的存活，为了让实况窗在生命周期内正常完成更新和结束，我们更推荐开发者使用Push Kit实时更新实况窗状态。

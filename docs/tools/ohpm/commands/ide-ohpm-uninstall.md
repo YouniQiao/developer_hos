@@ -3,9 +3,10 @@ title: "ohpm uninstall"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-uninstall
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-uninstall
+last_sync: 2026-06-07
+sync_hash: 2578386a
 ---
-
-
 # ohpm uninstall
 
 卸载三方库。

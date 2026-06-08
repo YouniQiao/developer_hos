@@ -2,9 +2,10 @@
 title: "HarmonyOS 2.0主题设计指导及规范"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-0000001160896163
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/mobile-themes-0000001054531192/themes-specification-0000001160896163
+last_sync: 2026-06-07
+sync_hash: 66480fcc
 ---
-
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # HarmonyOS 2.0主题设计指导及规范

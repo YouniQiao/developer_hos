@@ -3,8 +3,10 @@ title: "AccountDailyBudget"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-accountdailybudget-0000001195432366
 format: md
+upstream_id: monetize/promotion/marketapi-modle-accountdailybudget-0000001195432366
+last_sync: 2026-06-07
+sync_hash: 881804d4
 ---
-
 # AccountDailyBudget
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |

@@ -3,8 +3,10 @@ title: "查询数据源"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-ocpd-inquire-data-source-0000001282844469
 format: md
+upstream_id: monetize/promotion/bp-functions-ocpd-inquire-data-source-0000001282844469
+last_sync: 2026-06-07
+sync_hash: d26b8178
 ---
-
 # 查询数据源
 
 1. 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)。

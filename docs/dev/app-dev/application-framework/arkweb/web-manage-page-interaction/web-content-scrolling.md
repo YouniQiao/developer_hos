@@ -2,9 +2,10 @@
 title: "Web页面显示内容滚动"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-content-scrolling
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-content-scrolling
+last_sync: 2026-06-07
+sync_hash: 97d04840
 ---
-
-
 当Web页面的内容高度或宽度超过可视区域时，页面才能滚动。Web页面滚动有多种方式，包括使用外接设备、ArkTS侧接口调用和JS侧接口调用。
 
 ## 使用外接设备控制Web页面滚动

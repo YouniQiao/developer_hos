@@ -1,8 +1,10 @@
 ---
 title: "操作延时触发"
 original_url: /docs/quality/delayed-trigger-operation
+upstream_id: /docs/quality/delayed-trigger-operation
+last_sync: 2026-06-07
+sync_hash: fab0b9fa
 ---
-
 # 操作延时触发
 
 #### **延迟加载Lazy-Import与动态加载await import**

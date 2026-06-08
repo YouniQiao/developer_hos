@@ -2,9 +2,10 @@
 title: "使用Cocos2d-x概述"
 original_url: /docs/dev/game-dev/games-2dx-introduction-0000002256151836
 format: md
+upstream_id: dev/game-dev/games-2dx-introduction-0000002256151836
+last_sync: 2026-06-07
+sync_hash: 4293ad0d
 ---
-
-
 本文主要介绍基于Cocos2d-x架构的游戏适配HarmonyOS 5.0及以上系统的适配方案。
 
 ## 适配原理

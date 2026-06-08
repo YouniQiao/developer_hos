@@ -3,8 +3,10 @@ title: "查询归因报表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-ocpd-inquire-attribution-0000001282724829
 format: md
+upstream_id: monetize/promotion/bp-functions-ocpd-inquire-attribution-0000001282724829
+last_sync: 2026-06-07
+sync_hash: 3e389abf
 ---
-
 # 查询归因报表
 
 创建oCPD任务后，您可以在归因报表中查看您的归因转化报表数据。

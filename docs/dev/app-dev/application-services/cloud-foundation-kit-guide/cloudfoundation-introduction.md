@@ -3,12 +3,13 @@ displayed_sidebar: appDevSidebar
 title: "Cloud Foundation Kit简介"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-introduction
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-introduction
+last_sync: 2026-06-07
+sync_hash: 815a6f67
 ---
-
-
 Cloud Foundation Kit（云开发服务）可以按需为应用提供云函数、云数据库、云存储、预加载等云端服务。应用运行所需的服务器和环境均可由云端平台提供，开发者只需关注应用的业务逻辑，而无需关心基础设施（例如：服务器、操作系统、容器等）。
 
-DevEco Studio中还提供了[端云一体化开发](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/agc-harmonyos-clouddev-overview)的开发体验，开发者可以基于统一的技术栈，高效、协同地完成端、云代码的编写、调试、编译和部署，极大提高构建HarmonyOS应用和元服务的效率。
+DevEco Studio中还提供了[端云一体化开发](/docs/tools/end-cloud/agc-harmonyos-clouddev-overview)的开发体验，开发者可以基于统一的技术栈，高效、协同地完成端、云代码的编写、调试、编译和部署，极大提高构建HarmonyOS应用和元服务的效率。
 
 ## 优势
 
@@ -80,13 +81,13 @@ Cloud Foundation Kit能根据业务访问量快速自动扩容，规避业务高
 
 ### 支持的签名方式
 
-支持[关联注册应用进行自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section20943184413328)（DevEco Studio 6.0.0 Beta5及以上版本）和[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)两种方式。
+支持[关联注册应用进行自动签名](/docs/tools/coding-debug/ide-signing#section20943184413328)（DevEco Studio 6.0.0 Beta5及以上版本）和[手动签名](/docs/tools/coding-debug/ide-signing#section297715173233)两种方式。
 
 ## 模拟器支持情况
 
 从6.0.0(20) Beta5版本开始，本Kit支持模拟器，但与真机存在部分能力差异，具体差异如下：
 
-* 通用差异：请参见[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification#section1227613205203)。
+* 通用差异：请参见[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification#section1227613205203)。
 * 仅云函数、云数据库、云存储服务支持模拟器。关于如何使用模拟器调试，请参见[使用模拟器调试](/docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-emulator)。
 
 ## 计费说明

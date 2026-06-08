@@ -2,9 +2,10 @@
 title: "添加和删除模块"
 format: md
 original_url: /docs/tools/coding-debug/ide-add-new-module
+upstream_id: tools/coding-debug/ide-add-new-module
+last_sync: 2026-06-07
+sync_hash: d113a399
 ---
-
-
 # 添加和删除模块
 
 模块（Module）是应用/元服务的基本功能单元，包含了源代码、资源文件、第三方库及应用/元服务配置文件。一个应用/元服务通常会包含一个或多个模块，因此，可以在工程中创建多个模块。模块支持entry、feature（仅应用工程支持创建）、har、shared四种类型，具体请参考[module.json5配置文件](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#配置文件标签).

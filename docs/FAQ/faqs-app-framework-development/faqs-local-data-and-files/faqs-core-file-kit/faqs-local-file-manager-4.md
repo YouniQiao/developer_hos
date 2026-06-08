@@ -2,8 +2,11 @@
 title: "如何解决文件的中文乱码问题"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-4
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-4
+last_sync: 2026-06-07
+sync_hash: d0adab0e
+upstream_hash: 2d40612ffdac
 ---
-
 
 读取文件内容的buffer数据后，通过TextDecoder对文件内容进行解码。
 

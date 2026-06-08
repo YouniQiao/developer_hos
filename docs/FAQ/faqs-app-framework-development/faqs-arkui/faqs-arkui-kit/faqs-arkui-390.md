@@ -2,9 +2,10 @@
 format: md
 title: "Navigation跳转页面白屏，可能原因是什么"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-390
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-390
+last_sync: 2026-06-07
+sync_hash: 197aac34
 ---
-
-
 **可能原因一**
 
 跨模块跳转配置错误。

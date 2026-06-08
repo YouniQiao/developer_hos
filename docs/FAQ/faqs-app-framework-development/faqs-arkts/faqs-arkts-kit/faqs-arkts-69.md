@@ -2,9 +2,10 @@
 format: md
 title: "是否支持开发者自行管理线程数量"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-69
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-69
+last_sync: 2026-06-07
+sync_hash: f5933d5d
 ---
-
-
 ArkTS 侧不支持，而 Native 侧没有限制。
 
 **线程上限：**

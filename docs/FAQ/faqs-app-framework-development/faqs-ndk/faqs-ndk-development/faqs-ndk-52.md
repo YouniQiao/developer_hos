@@ -2,9 +2,10 @@
 title: "Native侧如何获取ArkTS侧的Uint8Array实例"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-52
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-52
+last_sync: 2026-06-07
+sync_hash: 12a394f0
 ---
-
-
 ArkTS Uint8Array的传递方式与其他类型相同。
 
 ```

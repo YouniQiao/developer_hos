@@ -3,9 +3,10 @@ title: "HAP唯一性校验逻辑"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-verification-rule
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-verification-rule
+last_sync: 2026-06-07
+sync_hash: ad2269f7
 ---
-
-
 # HAP唯一性校验逻辑
 
 HAP是应用安装的基本单位，在DevEco Studio工程目录中，一个HAP对应一个Module。应用打包时，每个Module生成一个.hap文件。

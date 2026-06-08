@@ -2,9 +2,10 @@
 title: "配置内容分级"
 original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-rating-0000002400329549
 format: md
+upstream_id: distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-rating-0000002400329549
+last_sync: 2026-06-07
+sync_hash: 5fd27d14
 ---
-
-
 ![](../img/agc-help-release-game-rating-0000002400329549_0.png)
 
 * 年龄分级问卷可能会不定期更新。如果年龄分级问卷内容发生变更，系统会提醒您“问卷已更新，请重新填写调查问卷”，您需重新填写年龄分级问卷，才可以提交游戏上架申请。

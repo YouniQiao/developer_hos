@@ -2,8 +2,11 @@
 title: "Network Boost Kit（网络加速服务）"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide
+last_sync: 2026-06-07
+sync_hash: 0af8d915
+upstream_hash: e5cfa654f2ef
 ---
-
 
 * **[Network Boost Kit简介](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-introduction)**
 * **[开发准备](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-preparations)**

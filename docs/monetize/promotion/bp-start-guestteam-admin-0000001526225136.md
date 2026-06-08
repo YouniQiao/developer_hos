@@ -3,8 +3,10 @@ title: "直客管理者账户"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-start-guestteam-admin-0000001526225136
 format: md
+upstream_id: monetize/promotion/bp-start-guestteam-admin-0000001526225136
+last_sync: 2026-06-07
+sync_hash: 11518de5
 ---
-
 # 直客管理者账户
 
 ## 直客账户升级直客管理者账户

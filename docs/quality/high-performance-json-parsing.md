@@ -2,9 +2,10 @@
 title: "高性能JSON解析"
 original_url: /docs/quality/high-performance-json-parsing
 format: md
+upstream_id: /docs/quality/high-performance-json-parsing
+last_sync: 2026-06-07
+sync_hash: 375e2743
 ---
-
-
 # 高性能JSON解析
 
 ## 概述

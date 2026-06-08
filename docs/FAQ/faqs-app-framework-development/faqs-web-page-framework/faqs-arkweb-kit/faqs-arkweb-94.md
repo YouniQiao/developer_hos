@@ -2,8 +2,11 @@
 format: md
 title: "Web页面切换软键盘意外弹出"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-94
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-94
+last_sync: 2026-06-07
+sync_hash: aa3e873f
+upstream_hash: 1ba2c299c142
 ---
-
 
 **问题描述**
 

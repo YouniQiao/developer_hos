@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "创建并使用图片资源"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-3d/arkgraphics3d-resource/arkgraphics3d-resource-image
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-3d/arkgraphics3d-resource/arkgraphics3d-resource-image
+last_sync: 2026-06-07
+sync_hash: 1a6ae8cc
 ---
-
-
 图片（Image）：图片本质上是一个储存信息的二维内存块(buffer)，用于储存3D渲染计算过程需要的相关信息，比如基础颜色、法线等等。
 
 ArkGraphics 3D提供基于png、jpg、ktx格式创建Image资源的能力，支持用户自定义需要的Image资源。

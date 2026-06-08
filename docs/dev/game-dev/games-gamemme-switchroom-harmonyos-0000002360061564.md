@@ -2,9 +2,10 @@
 title: "切换房间"
 original_url: /docs/dev/game-dev/games-gamemme-switchroom-harmonyos-0000002360061564
 format: md
+upstream_id: dev/game-dev/games-gamemme-switchroom-harmonyos-0000002360061564
+last_sync: 2026-06-07
+sync_hash: 9c0d2d0f
 ---
-
-
 玩家处于多房间状态下时，可通过切换语音房间实现进入不同房间发言。
 
 ![](./img/92e79b17.png)

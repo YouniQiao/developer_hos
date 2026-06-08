@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "AR Engine简介"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/arengine-overview
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/arengine-overview
+last_sync: 2026-06-07
+sync_hash: c2a77a29
 ---
-
-
 AR Engine（AR引擎服务）是一个用于在HarmonyOS上构建增强现实应用的引擎，提供了运动跟踪、环境跟踪等空间计算能力。
 
 ## 能力介绍

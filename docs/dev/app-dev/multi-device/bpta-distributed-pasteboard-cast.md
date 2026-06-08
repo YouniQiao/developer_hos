@@ -3,8 +3,10 @@ title: "跨设备剪贴板"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-distributed-pasteboard-cast
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-distributed-pasteboard-cast
+last_sync: 2026-06-07
+sync_hash: 95aefd34
 ---
-
 # 跨设备剪贴板
 
 剪贴板分为本地剪贴板和跨设备剪贴板，本地剪贴板提供设备内的内容复制粘贴，跨设备剪贴板提供跨设备的内容复制粘贴。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "权限说明"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-permission-description
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-permission-description
+last_sync: 2026-06-07
+sync_hash: 6cb2c1fa
 ---
-
-
 运动健康数据读写以及运动联动接口调用需要相应的权限，权限申请参考[申请运动健康服务](/docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-preparations/health-apply)，数据类型对应权限如下：
 
 ## Wearable

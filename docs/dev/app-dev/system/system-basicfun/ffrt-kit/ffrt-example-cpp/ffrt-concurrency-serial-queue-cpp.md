@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Function Flow Runtime串行队列(C++)"
 original_url: /docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-cpp/ffrt-concurrency-serial-queue-cpp
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-cpp/ffrt-concurrency-serial-queue-cpp
+last_sync: 2026-06-07
+sync_hash: 98b7dd2a
 ---
-
-
 ## 概述
 
 FFRT串行队列基于协程调度模型实现，提供高效的消息队列功能，支持异步通信、流量削峰、无锁化状态和资源管理以及架构解耦等多种业务场景。FFRT串行队列支持以下功能：

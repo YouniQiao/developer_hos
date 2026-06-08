@@ -2,9 +2,10 @@
 title: "对称密钥加解密算法规格"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-spec/crypto-sym-encrypt-decrypt-spec
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-spec/crypto-sym-encrypt-decrypt-spec
+last_sync: 2026-06-07
+sync_hash: ec56e791
 ---
-
-
 当前章节将说明系统目前支持的算法及其对应的规格。
 
 对于每种算法采用支持的加密模式，将会在具体的每个算法规格中介绍。

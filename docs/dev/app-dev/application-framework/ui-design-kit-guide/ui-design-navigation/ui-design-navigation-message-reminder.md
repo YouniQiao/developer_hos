@@ -2,9 +2,10 @@
 title: "设置信息提醒"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation/ui-design-navigation-message-reminder
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-navigation/ui-design-navigation-message-reminder
+last_sync: 2026-06-07
+sync_hash: 820d66a7
 ---
-
-
 ## 场景介绍
 
 从5.1.0(18)版本开始，导航组件新增支持菜单栏设置信息提醒能力。

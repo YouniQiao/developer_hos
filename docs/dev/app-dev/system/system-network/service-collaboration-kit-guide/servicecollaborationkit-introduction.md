@@ -2,9 +2,10 @@
 title: "Service Collaboration Kit简介"
 original_url: /docs/dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaborationkit-introduction
 format: md
+upstream_id: dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaborationkit-introduction
+last_sync: 2026-06-07
+sync_hash: d0d9804d
 ---
-
-
 Service Collaboration Kit（协同服务）提供了同账号下多端设备协同的能力。
 
 ## 场景介绍

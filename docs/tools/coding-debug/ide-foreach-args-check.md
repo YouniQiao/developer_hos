@@ -3,9 +3,10 @@ title: "@performance/foreach-args-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-foreach-args-check
 format: md
+upstream_id: tools/coding-debug/ide-foreach-args-check
+last_sync: 2026-06-07
+sync_hash: 3717fdd0
 ---
-
-
 # @performance/foreach-args-check
 
 建议在ForEach参数中设置keyGenerator。

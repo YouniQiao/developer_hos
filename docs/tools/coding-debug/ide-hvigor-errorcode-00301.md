@@ -3,9 +3,10 @@ title: "依赖错误码"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-errorcode-00301
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-errorcode-00301
+last_sync: 2026-06-07
+sync_hash: db1282d5
 ---
-
-
 # 依赖错误码
 
 #### 00301001 SDK中找不到签名工具

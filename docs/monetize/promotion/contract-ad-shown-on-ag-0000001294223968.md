@@ -3,8 +3,10 @@ title: "创建应用市场合约广告"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/contract-ad-shown-on-ag-0000001294223968
 format: md
+upstream_id: monetize/promotion/contract-ad-shown-on-ag-0000001294223968
+last_sync: 2026-06-07
+sync_hash: 5c44c7f8
 ---
-
 # 创建应用市场合约广告
 
 ## 概述

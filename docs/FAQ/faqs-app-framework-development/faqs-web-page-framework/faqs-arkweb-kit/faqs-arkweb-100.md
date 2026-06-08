@@ -2,9 +2,10 @@
 format: md
 title: "同层渲染场景下控件使能沉浸光感效果变透明"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-100
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-100
+last_sync: 2026-06-07
+sync_hash: 85e9c060
 ---
-
-
 **问题现象**
 
 同层渲染场景下将ArkUI的控件设置沉浸光感效果时，发现控件背景变透明。

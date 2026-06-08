@@ -3,9 +3,10 @@ title: "端插件权限管控"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/end-plug-in-0000002471264313/end-plug-in-permissions-0000002437785766
 format: md
+upstream_id: distribute/xiaoyi/end-plug-in-0000002471264313/end-plug-in-permissions-0000002437785766
+last_sync: 2026-06-07
+sync_hash: cc92835d
 ---
-
-
 # 端插件权限管控
 
 在智能体或工作流中添加需要配置权限的端插件时，需增加权限用途说明:

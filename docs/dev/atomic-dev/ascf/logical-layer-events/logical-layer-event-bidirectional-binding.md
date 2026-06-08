@@ -2,9 +2,10 @@
 title: "双向绑定"
 original_url: /docs/dev/atomic-dev/ascf/logical-layer-events/logical-layer-event-bidirectional-binding
 format: md
+upstream_id: dev/atomic-dev/ascf/logical-layer-events/logical-layer-event-bidirectional-binding
+last_sync: 2026-06-07
+sync_hash: 473e83db
 ---
-
-
 在部分场景中，需要在用户输入的同时改变service层对应的字段值，此时可以使用引擎提供的双向绑定能力，例如：
 
 在对应项目之前加入model: 前缀，这样，如果输入框的值被改变了，this.data.value也会同时改变。同时，hxml中所有绑定了value的位置也会被一起更新，数据监听器也会被正常触发。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "IAP服务器支持的证书范围"
 original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-faq/iap-faq-12
 format: md
+upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-faq/iap-faq-12
+last_sync: 2026-06-07
+sync_hash: 44162e38
 ---
-
-
 请检查开发者证书链，确保证书链的完整性，同时确保证书链中的证书在IAP服务器内置的如下92个证书中。如果证书链存在问题，请参见[如何解决证书链不完整](/docs/dev/app-dev/application-services/iap-kit-guide/iap-faq/iap-faq-14)。
 
 | # | Alias name | Subject DN | Issuer DN | Certificate Serial Number | Version | Valid From [GMT] | Valid To [GMT] | Thumbprint(SHA1) |

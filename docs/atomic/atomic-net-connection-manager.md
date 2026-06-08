@@ -2,9 +2,10 @@
 title: "网络连接管理"
 original_url: /docs/dev/atomic-dev/atomic-network-development/atomic-net-connection-manager
 format: md
+upstream_id: dev/atomic-dev/atomic-network-development/atomic-net-connection-manager
+last_sync: 2026-06-07
+sync_hash: 72d658af
 ---
-
-
 ## 简介
 
 网络连接管理提供管理网络一些基础能力，包括Wi-Fi/蜂窝/Ethernet等多网络连接优先级管理、网络质量评估、订阅默认/指定网络连接状态变化、查询网络连接信息、DNS解析等功能。

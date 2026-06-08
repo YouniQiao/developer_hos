@@ -3,8 +3,10 @@ title: 变更说明
 sidebar_label: 变更说明
 original_url: /docs/design/changelog/whats-new
 format: md
+upstream_id: design/changelog/whats-new
+last_sync: 2026-06-07
+sync_hash: 6aaab42c
 ---
-
 # 变更说明
 
 ### 2026年2月5日

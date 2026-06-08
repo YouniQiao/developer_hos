@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "发送通知消息"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-scenes/push-alert/push-send-alert
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-scenes/push-alert/push-send-alert
+last_sync: 2026-06-07
+sync_hash: 25073492
 ---
-
-
 ## 场景介绍
 
 通知消息通过Push Kit通道直接下发，可在终端设备的通知中心、锁屏、横幅等展示，用户点击后拉起应用。您可以通过[设置通知消息样式](#设置通知消息样式)来吸引用户。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Function Flow Runtime开发指导"
 original_url: /docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-development-guideline
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-development-guideline
+last_sync: 2026-06-07
+sync_hash: 26f62cef
 ---
-
-
 ## 介绍
 
 FFRT编程模型是一种基于任务和数据驱动的并发编程模型，允许开发者通过任务及其依赖关系描述的方式进行应用开发。

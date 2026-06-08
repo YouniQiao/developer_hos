@@ -2,9 +2,10 @@
 title: "组件安全"
 original_url: /docs/experience-suggestions/security-privacy/security/standard-security-base
 format: md
+upstream_id: experience-suggestions/security-privacy/security/standard-security-base
+last_sync: 2026-06-07
+sync_hash: db67a1ef
 ---
-
-
 # 组件安全
 
 |  |  |

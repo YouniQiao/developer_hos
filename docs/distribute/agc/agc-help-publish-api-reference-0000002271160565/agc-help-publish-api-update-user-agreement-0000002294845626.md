@@ -2,9 +2,10 @@
 title: "更新用户协议"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-update-user-agreement-0000002294845626
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-update-user-agreement-0000002294845626
+last_sync: 2026-06-07
+sync_hash: 89b917bc
 ---
-
-
 #### 功能介绍
 
 此接口用于更新HarmonyOS应用/元服务的用户协议信息。

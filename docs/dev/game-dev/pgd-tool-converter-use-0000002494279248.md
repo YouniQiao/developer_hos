@@ -2,8 +2,11 @@
 title: "使用须知"
 original_url: /docs/dev/game-dev/pgd-tool-converter-use-0000002494279248
 format: md
+upstream_id: dev/game-dev/pgd-tool-converter-use-0000002494279248
+last_sync: 2026-06-07
+sync_hash: 36b0ac26
+upstream_hash: a83e92a0465d
 ---
-
 
 * 请勿在转换时修改脚本。
 * 请勿在转换过程中频繁关闭窗口或退出编辑器。在日志尚未出现Conversion completed!或明显错误结论前，请不要关闭ECS Converter窗口或强制退出编辑器，以免生成的日志和输出不完整。

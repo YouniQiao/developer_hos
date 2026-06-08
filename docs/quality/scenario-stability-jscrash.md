@@ -1,8 +1,10 @@
 ---
 title: "JS Crash类问题案例"
 original_url: /docs/quality/scenario-stability-jscrash
+upstream_id: /docs/quality/scenario-stability-jscrash
+last_sync: 2026-06-07
+sync_hash: 6662f6c9
 ---
-
 # JS Crash类问题案例
 
 本文将基于当前开发者所遇到的高频JS Crash故障进行案例介绍。开发者可阅读[应用崩溃类问题检测方法](/docs/quality/stability-runtime-crash-detection)了解系统检测JS Crash问题的原理和机制，阅读[JS Crash类问题分析方法](/docs/quality/stability-app-crash-js-way)了解分析JS Crash问题的一般步骤。
@@ -51,7 +53,7 @@ Cannot get SourceMap info, dump raw stack:
 1. 提取日志关键信息
    * 通过日志信息可以确定为Type Error类问题，由异常信息得知是在读取needRenderTranslate对象时报错，该对象为undefined。
    * 可以通过异常代码调用栈，获取错误产生位置。
-   * Cannot get SourceMap info, dump raw stack信息表示该应用为release包安装，JS栈转换ETS行列号失败，可考虑使用[堆栈轨迹分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-release-app-stack-analysis)来解析行号。
+   * Cannot get SourceMap info, dump raw stack信息表示该应用为release包安装，JS栈转换ETS行列号失败，可考虑使用[堆栈轨迹分析](/docs/tools/coding-debug/ide-release-app-stack-analysis)来解析行号。
 2. 定位到具体代码
 
    通过以上报错堆栈和报错信息，能够定位到具体代码示例如下：
@@ -434,7 +436,7 @@ export class Animal {
 
 ### 修复方法
 
-循环依赖的检测方法：安全规则[@security/no-cycle](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_no-cycle)。
+循环依赖的检测方法：安全规则[@security/no-cycle](/docs/tools/coding-debug/ide_no-cycle)。
 
 ### 建议与总结
 
@@ -487,7 +489,7 @@ Cannot get SourceMap info, dump raw stack:
 
 1. 提取日志关键信息
 
-   通过日志信息可以确定为Error类问题，为代码主动抛出的异常。可以通过异常代码调用栈，获取错误产生位置。Cannot get SourceMap info, dump raw stack信息表示该应用为release包安装，JS栈转换eTS行列号失败，可考虑使用[堆栈轨迹分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-release-app-stack-analysis)来解析行号。
+   通过日志信息可以确定为Error类问题，为代码主动抛出的异常。可以通过异常代码调用栈，获取错误产生位置。Cannot get SourceMap info, dump raw stack信息表示该应用为release包安装，JS栈转换eTS行列号失败，可考虑使用[堆栈轨迹分析](/docs/tools/coding-debug/ide-release-app-stack-analysis)来解析行号。
 2. 定位到具体代码
 
    通过以上 JS 堆栈，能够定位到NetSpeedController.ts文件中具体代码片段如下，异常抛出位置为wifiManager.on函数调用。
@@ -565,7 +567,7 @@ Cannot get SourceMap info, dump raw stack:
 
 1. 开发态Snapshot内存占用分析
 
-   在开发态存在泄露场景，可使用DevEco Studio的Snapshot功能，应用拉起时拍摄一次内存快照，进行多次操作，操作完后退回到初始的页面，再次拍摄一次内存快照，将两次的快照进行对比，操作步骤参考[Snapshot模板基本操作](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-snapshot-basic-operations)。
+   在开发态存在泄露场景，可使用DevEco Studio的Snapshot功能，应用拉起时拍摄一次内存快照，进行多次操作，操作完后退回到初始的页面，再次拍摄一次内存快照，将两次的快照进行对比，操作步骤参考[Snapshot模板基本操作](/docs/tools/coding-debug/ide-snapshot-basic-operations)。
 2. 运维态OOM内存占用分析
 
    现网：

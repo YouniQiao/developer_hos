@@ -2,9 +2,10 @@
 title: "隐私保护能力"
 original_url: /docs/experience-suggestions/security-privacy/privacy/standard-privacy-deregister
 format: md
+upstream_id: experience-suggestions/security-privacy/privacy/standard-privacy-deregister
+last_sync: 2026-06-07
+sync_hash: 9ec66d29
 ---
-
-
 # 隐私保护能力
 
 |  |  |

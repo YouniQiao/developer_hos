@@ -2,9 +2,10 @@
 format: md
 title: "给组件设置responseRegion属性向上下扩展热区，为什么上半部分可以响应点击，下半部分不能响应点击"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-382
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-382
+last_sync: 2026-06-07
+sync_hash: 80b87e56
 ---
-
-
 **可能原因**
 
 Blank组件默认会拦截触摸事件，导致下方热区无法响应，下半部分可能设置了Blank等组件导致遮挡住了下半部分扩展的热区，类似Stack内元素的zIndex遮挡。如下示例代码

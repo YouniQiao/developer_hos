@@ -2,8 +2,11 @@
 title: "实时服务器开发指导"
 original_url: /docs/dev/game-dev/gameobe-server-guides-0000002395350529
 format: md
+upstream_id: dev/game-dev/gameobe-server-guides-0000002395350529
+last_sync: 2026-06-07
+sync_hash: 90dae8b2
+upstream_hash: 110a4cdb7731
 ---
-
 
 * **[业务概述](/docs/dev/game-dev/gameobe-realtime-server-0000002361510716)**
 * **[准备工作](/docs/dev/game-dev/gameobe-preparations-realtime-server-0000002395190633)**

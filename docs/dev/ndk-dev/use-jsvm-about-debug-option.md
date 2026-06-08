@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口进行debug操作"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-debug-option
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-debug-option
+last_sync: 2026-06-07
+sync_hash: d20a95ea
 ---
-
-
 ## 简介
 
 JSVM-API中提供接口，可以启用/禁用特定JSVM\_Env下的指定debug选项。目前支持的debug选项有JSVM\_SCOPE\_CHECK。

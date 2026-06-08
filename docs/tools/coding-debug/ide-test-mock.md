@@ -3,8 +3,11 @@ title: "Mock能力"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-test-mock
 format: md
+upstream_id: tools/coding-debug/ide-test-mock
+last_sync: 2026-06-07
+sync_hash: 303b6606
+upstream_hash: 13cb2f9c7435
 ---
-
 
 # Mock能力
 

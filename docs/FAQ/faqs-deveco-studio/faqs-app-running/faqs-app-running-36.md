@@ -2,9 +2,10 @@
 format: md
 title: "播放音频的过程中拔插耳机后，无法继续播放音频"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-36
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-36
+last_sync: 2026-06-07
+sync_hash: a4b3dcc1
 ---
-
-
 **问题现象**
 
 拔掉USB接口的耳机，再重新插上后，模拟器的音频播放功能将失效。

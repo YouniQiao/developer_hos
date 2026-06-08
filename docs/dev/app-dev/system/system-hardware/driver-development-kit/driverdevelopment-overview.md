@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Driver Development Kit简介"
 original_url: /docs/dev/app-dev/system/system-hardware/driver-development-kit/driverdevelopment-overview
 format: md
+upstream_id: dev/app-dev/system/system-hardware/driver-development-kit/driverdevelopment-overview
+last_sync: 2026-06-07
+sync_hash: 906f0a7b
 ---
-
-
 Driver Development Kit（驱动开发套件）为外设驱动开发者提供高效、安全、丰富的扩展外设驱动开发解决方案ArkTS-API和C-API，支持外设驱动开发者为消费者带来外设即插即用的极致体验。
 
 ## 使用场景

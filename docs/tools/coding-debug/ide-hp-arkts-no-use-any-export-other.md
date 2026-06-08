@@ -3,9 +3,10 @@ title: "@performance/hp-arkts-no-use-any-export-other"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hp-arkts-no-use-any-export-other
 format: md
+upstream_id: tools/coding-debug/ide-hp-arkts-no-use-any-export-other
+last_sync: 2026-06-07
+sync_hash: 931573f7
 ---
-
-
 # @performance/hp-arkts-no-use-any-export-other
 
 避免使用export \* 导出其他模块中定义的类型和数据。

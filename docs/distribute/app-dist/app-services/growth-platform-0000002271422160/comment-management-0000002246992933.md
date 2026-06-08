@@ -3,9 +3,10 @@ title: "评论与评分"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-services/growth-platform-0000002271422160/comment-management-0000002246992933
 format: md
+upstream_id: distribute/app-dist/app-services/growth-platform-0000002271422160/comment-management-0000002246992933
+last_sync: 2026-06-07
+sync_hash: 8d62cdae
 ---
-
-
 # 评论与评分
 
 ## 概述
@@ -49,7 +50,7 @@ format: md
 * 功能使用建议：
   1. 产品优化：通过关键词分析（如 “卡顿”“闪退”“功能缺失”），定位高频问题，优先纳入版本迭代计划。
   2. 用户分层运营：根据用户评分与评论内容，划分忠诚用户、潜在流失用户、问题用户，针对性制定运营策略。
-  3. 搜索优化：提取用户常用描述关键词，优化应用关键词/标签（推荐使用[应用市场搜索优化服务](`https://developer.huawei.com/consumer/cn/doc/app/search-0000002414572264`)），提升搜索曝光。
+  3. 搜索优化：提取用户常用描述关键词，优化应用关键词/标签（推荐使用[应用市场搜索优化服务](`/docs/distribute/app-dist/app-services/growth-platform-0000002271422160/search-0000002414572264)），提升搜索曝光。
   4. 客服培训：分析用户常见咨询问题，完善客服知识库，提升客服响应效率与解决问题能力。
 
 ### 开发者发布官方评论
@@ -72,7 +73,7 @@ format: md
 开发者可通过集成鸿蒙应用市场提供的SDK，在应用内特定场景（如用户完成核心功能体验、使用应用满一定时长、版本更新后）触发评分弹窗，引导用户直接在弹窗中提交评分（1-5 星）与评论，简化用户评价流程，提升主动评价量。弹窗触发需遵循平台规则，避免频繁打扰用户（同一用户一年内最多触发3次）。
 
 * 操作路径：
-  1. 应用[调用接口](`https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-comment`)拉起应用评论弹窗。
+  1. 应用[调用接口](`/docs/dev/app-dev/application-services/store-kit-guide/appgallery-comment)拉起应用评论弹窗。
   2. AppGalleryKit返回接口调用结果给应用。
   3. 应用返回评论窗口给用户。
 

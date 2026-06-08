@@ -3,6 +3,10 @@ title: "绑定定向包"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-targeting5-0000001338263145
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-targeting5-0000001338263145
+last_sync: 2026-06-07
+sync_hash: 63b1e0b1
+upstream_hash: ae7089eaa1ad
 ---
 
 # 绑定定向包

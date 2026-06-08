@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "录屏常见问题"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-recording-c/using-avscreencapture-for-buffer/avscreencapture-faqs
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-c/media-recording-c/using-avscreencapture-for-buffer/avscreencapture-faqs
+last_sync: 2026-06-07
+sync_hash: 188964fe
+upstream_hash: 0c329dba6ade
 ---
-
 
 ## 录屏启动报错AV\_SCREEN\_CAPTURE\_ERR\_OPERATE\_NOT\_PERMIT
 

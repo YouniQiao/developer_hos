@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发使用SCSI协议的设备驱动"
 original_url: /docs/dev/app-dev/system/system-hardware/driver-development-kit/specialized-driver-development/scsi-peripheral-ddk-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-hardware/driver-development-kit/specialized-driver-development/scsi-peripheral-ddk-guidelines
+last_sync: 2026-06-07
+sync_hash: f71dca62
 ---
-
-
 ## 简介
 
 在企业级存储解决方案和工业应用场景中，对SCSI（Small Computer System Interface，小型计算机系统接口）设备的使用需求广泛存在，例如：磁盘阵列、磁带库以及特定类型的存储服务器等。当操作系统中缺乏针对这些设备的适配驱动时，会导致设备连接后无法被识别或正常使用。ScsiPeripheralDDK（SCSI Peripheral Driver Development Kit）是为开发者提供的专门用于开发SCSI设备驱动程序的套件，支持开发者基于用户态，在应用层进行SCSI设备驱动的开发。

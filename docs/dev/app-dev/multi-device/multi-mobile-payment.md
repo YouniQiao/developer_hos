@@ -3,8 +3,10 @@ title: "多设备移动支付界面"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/multi-mobile-payment
 format: md
+upstream_id: dev/app-dev/multi-device/multi-mobile-payment
+last_sync: 2026-06-07
+sync_hash: ceed6473
 ---
-
 # 多设备移动支付界面
 
 ## 概述

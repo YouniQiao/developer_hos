@@ -2,14 +2,15 @@
 title: "发布上架"
 original_url: /docs/dev/game-dev/games-quickgame-release-fa-card-0000002351933769
 format: md
+upstream_id: dev/game-dev/games-quickgame-release-fa-card-0000002351933769
+last_sync: 2026-06-07
+sync_hash: 3ed6ec6a
 ---
-
-
 在真机设备上反复验证功能后，您可以正式在AGC控制台上架元服务，并分发至服务中心，为用户提供对应的游戏服务。
 
 ## 配置签名信息
 
-在DevEco Studio中配置工程的数字签名信息可以保证元服务的完整性和安全性。正式上架元服务仅支持手动签名方式，您需要手动申请并填写证书、文件信息，详细配置步骤请参见[手动配置签名信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+在DevEco Studio中配置工程的数字签名信息可以保证元服务的完整性和安全性。正式上架元服务仅支持手动签名方式，您需要手动申请并填写证书、文件信息，详细配置步骤请参见[手动配置签名信息](/docs/tools/coding-debug/ide-signing#section297715173233)。
 
 ## 选择build Variants
 

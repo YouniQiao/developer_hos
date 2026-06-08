@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "配置签名和指纹"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-preparations/account-sign-fingerprints
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-preparations/account-sign-fingerprints
+last_sync: 2026-06-07
+sync_hash: 549b343d
 ---
-
-
 请参考“[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)”章节，完成以下操作步骤：
 
 1. 创建项目和工程（如已完成，请跳过此步骤）。
@@ -14,7 +15,7 @@ format: md
 
    ![](./img/b87c5237.png)
 
-   **发布阶段**，请参考[发布流程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-publish-app#section6406135115814)章节，重新配置用于应用发布的签名信息、添加公钥指纹（必选）。
+   **发布阶段**，请参考[发布流程](/docs/tools/coding-debug/ide-publish-app#section6406135115814)章节，重新配置用于应用发布的签名信息、添加公钥指纹（必选）。
 
    * 检查是否需要配置公钥指纹：应用仅接入未成年人模式或compatibleSdkVersion>=20不需要配置公钥指纹，其他场景均需配置。
 

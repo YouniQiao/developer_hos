@@ -2,9 +2,10 @@
 title: "认证过程中取消认证"
 original_url: /docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/cancel-authentication
 format: md
+upstream_id: dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/cancel-authentication
+last_sync: 2026-06-07
+sync_hash: f04d738a
 ---
-
-
 统一用户认证框架提供了cancel接口，当应用在认证过程中，需要取消认证时可调用该接口。
 
 ## 接口说明

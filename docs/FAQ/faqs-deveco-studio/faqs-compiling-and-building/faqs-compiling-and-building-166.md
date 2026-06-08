@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“byteCodeHar not supported when useNormalizedOHMUrl is not true.”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-166
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-166
+last_sync: 2026-06-07
+sync_hash: 70440b14
 ---
-
-
 **错误描述**
 
 当useNormalizedOHMUrl配置为false时，不支持编译字节码HAR。
@@ -23,4 +24,4 @@ original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-comp
 
 **参考链接**
 
-[strictMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section13181758123312)
+[strictMode](/docs/tools/coding-debug/ide-hvigor-build-profile-app#section13181758123312)

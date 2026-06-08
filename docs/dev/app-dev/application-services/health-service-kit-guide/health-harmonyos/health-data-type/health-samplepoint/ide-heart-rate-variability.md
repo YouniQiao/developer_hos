@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "心率变异性"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/ide-heart-rate-variability
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-type/health-samplepoint/ide-heart-rate-variability
+last_sync: 2026-06-07
+sync_hash: e04b6eab
 ---
-
-
 此数据记录用户在某时刻的心率变异性数据。
 
 Harmony SDK类型常量：[samplePointHelper.heartRateVariability.DATA\_TYPE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-samplepointhelper#常量-6)

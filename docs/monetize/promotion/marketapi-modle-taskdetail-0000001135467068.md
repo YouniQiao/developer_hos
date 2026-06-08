@@ -3,8 +3,10 @@ title: "TaskDetail"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-taskdetail-0000001135467068
 format: md
+upstream_id: monetize/promotion/marketapi-modle-taskdetail-0000001135467068
+last_sync: 2026-06-07
+sync_hash: ccd1a0d5
 ---
-
 # TaskDetail
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |

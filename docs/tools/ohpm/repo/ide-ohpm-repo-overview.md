@@ -2,9 +2,10 @@
 title: "概述"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-overview
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-overview
+last_sync: 2026-06-07
+sync_hash: 6dca971f
 ---
-
-
 # 概述
 
 ohpm-repo是一个搭建轻量级的ohpm私仓服务的工具。它与ohpm包管理器兼容，并按需缓存所有依赖项，加速私有网络中的安装。

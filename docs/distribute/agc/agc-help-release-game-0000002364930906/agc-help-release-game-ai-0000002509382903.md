@@ -2,9 +2,10 @@
 title: "配置AI功能声明"
 original_url: /docs/distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-ai-0000002509382903
 format: md
+upstream_id: distribute/agc/agc-help-release-game-0000002364930906/agc-help-release-game-ai-0000002509382903
+last_sync: 2026-06-07
+sync_hash: ae3bdba9
 ---
-
-
 按照法律法规，游戏在提交上架时，需要声明是否在游戏中使用人工智能生成合成服务。
 
 请根据[人工智能生成合成内容标识常见问题](/docs/distribute/app-dist/app-market/x50000/x50111/x50111-10)，识别并上传AI生成标识材料和相关资质材料。

@@ -2,9 +2,9 @@
 title: "模块化设计"
 sidebar_position: 3
 format: md
+upstream_id: _local
+last_sync: 2026-06-08
 ---
-
-
 # 模块化设计
 
 
@@ -156,7 +156,7 @@ HarmonyOS应用的业务逻辑需要通过[UIAbility组件](/docs/dev/app-dev/ap
 >      import \{ funcResult \} from 'har_common';
 >      ```
 
-> 使用[Launch模板](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-launch)，对优化前后启动性能进行对比分析。
+> 使用[Launch模板](/docs/tools/coding-debug/ide-insight-session-launch)，对优化前后启动性能进行对比分析。
 
 > 分析阶段的起点为启动Ability（即H:void OHOS::AppExecFwk::MainThread::HandleLaunchAbility的开始点），阶段终点为应用第一次接到vsync（即H:ReceiveVsync dataCount:24Bytes now:timestamp expectedEnd:timestamp vsyncId:int的开始点）。
 >

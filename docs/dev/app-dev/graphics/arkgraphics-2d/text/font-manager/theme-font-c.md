@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用主题字体（C/C++）"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/font-manager/theme-font-c
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/text/font-manager/theme-font-c
+last_sync: 2026-06-07
+sync_hash: 29bce902
 ---
-
-
 ## 场景介绍
 
 主题字体，特指系统**主题应用**中能使用的字体，属于一种特殊的自定义字体。可以通过相关接口调用使能主题应用中的主题字体。

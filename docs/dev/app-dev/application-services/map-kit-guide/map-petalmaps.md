@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通过地图应用实现导航等能力"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-petalmaps
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-petalmaps
+last_sync: 2026-06-07
+sync_hash: 20ed0a52
 ---
-
-
 ## 场景介绍
 
 从5.0.3(15)开始，支持地图应用首页、搜索地点、查看地点详情、规划路线和进行导航功能；从6.0.1(21)开始，支持地图应用发起打车功能；从6.1.1(24)开始，打开地图应用查看地点详情支持终点描述，支持拉起地图应用离线地图管理页面。

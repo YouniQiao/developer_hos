@@ -2,9 +2,10 @@
 title: "开发适用HID协议的设备驱动"
 original_url: /docs/dev/app-dev/system/system-hardware/driver-development-kit/specialized-driver-development/hid-ddk-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-hardware/driver-development-kit/specialized-driver-development/hid-ddk-guidelines
+last_sync: 2026-06-07
+sync_hash: 88fb8dbf
 ---
-
-
 ## 简介
 
 HidDdk（HID Driver Development Kit）是为开发者提供的HID设备驱动程序开发套件，支持开发者基于用户态，在应用层开发HID设备驱动。提供了一系列主机侧访问设备的接口，包括创建设备、向设备发送事件、销毁设备、打开关闭设备、读取写入报告、获取设备信息等。

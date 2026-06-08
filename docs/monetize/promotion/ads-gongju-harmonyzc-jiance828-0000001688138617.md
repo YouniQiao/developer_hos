@@ -3,8 +3,10 @@ title: "专属监测工具跟踪"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-gongju-harmonyzc-jiance828-0000001688138617
 format: md
+upstream_id: monetize/promotion/ads-gongju-harmonyzc-jiance828-0000001688138617
+last_sync: 2026-06-07
+sync_hash: cb28becd
 ---
-
 # 专属监测工具跟踪
 
 ## 基本原理

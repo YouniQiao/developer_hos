@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "通用文字识别"
 original_url: /docs/dev/app-dev/ai/core-vision-kit-guide/core-vision-text-recognition
 format: md
+upstream_id: dev/app-dev/ai/core-vision-kit-guide/core-vision-text-recognition
+last_sync: 2026-06-07
+sync_hash: 9db6f303
+upstream_hash: c3d838572531
 ---
-
 
 ## 适用场景
 

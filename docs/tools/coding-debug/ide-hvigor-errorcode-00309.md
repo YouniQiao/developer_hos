@@ -3,9 +3,10 @@ title: "ArkTS编译错误码"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-errorcode-00309
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-errorcode-00309
+last_sync: 2026-06-07
+sync_hash: f3d677a6
 ---
-
-
 # ArkTS编译错误码
 
 #### 00309001 禁止使用相对路径导入模块以外的文件

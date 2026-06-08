@@ -2,9 +2,10 @@
 title: "无障碍开发指导"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-support-accessibility-friendliness/arkts-universal-attributes-accessibility
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-support-accessibility-friendliness/arkts-universal-attributes-accessibility
+last_sync: 2026-06-07
+sync_hash: d0b2b3e4
 ---
-
-
 ## 概述
 
 无障碍服务是为保障所有人在任何情况下都能平等、便捷地获取和利用信息打造的系统级无障碍能力体系。其中为视障用户提供的屏幕朗读功能会将设备屏幕上的可见信息转化为语音播报，助力视障用户使用电子设备完成信息的获取和交互。

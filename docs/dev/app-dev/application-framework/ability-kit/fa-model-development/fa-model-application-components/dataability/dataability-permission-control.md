@@ -2,9 +2,10 @@
 title: "DataAbility权限控制"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/dataability/dataability-permission-control
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/dataability/dataability-permission-control
+last_sync: 2026-06-07
+sync_hash: bafe40fb
 ---
-
-
 DataAbility提供数据服务，并不是所有的Ability都有权限读写它，DataAbility有一套权限控制机制来保证数据安全。分为静态权限控制和动态权限控制两部分。
 
 ## 静态权限控制

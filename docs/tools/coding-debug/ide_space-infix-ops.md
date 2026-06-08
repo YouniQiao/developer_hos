@@ -3,9 +3,10 @@ title: "@typescript-eslint/space-infix-ops"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_space-infix-ops
 format: md
+upstream_id: tools/coding-debug/ide_space-infix-ops
+last_sync: 2026-06-07
+sync_hash: d266662b
 ---
-
-
 # @typescript-eslint/space-infix-ops
 
 运算符前后要求有空格。

@@ -3,9 +3,10 @@ title: "@correctness/image-interpolation-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-image-interpolation-check
 format: md
+upstream_id: tools/coding-debug/ide-image-interpolation-check
+last_sync: 2026-06-07
+sync_hash: 46372ea7
 ---
-
-
 # @correctness/image-interpolation-check
 
 在使用Image组件[interpolation](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image#interpolation)接口时，建议不要使用最邻近插值，避免出现明显锯齿问题。

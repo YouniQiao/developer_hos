@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "CMAC(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-cmac/huks-cmac-arkts
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-cmac/huks-cmac-arkts
+last_sync: 2026-06-07
+sync_hash: b6775f8d
 ---
-
-
 CMAC是基于对称密钥分组加密算法的消息认证码（Cipher-based Message Authentication Code），目前支持3DES加密算法的消息认证方法。
 
 ![](./img/236102e7.png)

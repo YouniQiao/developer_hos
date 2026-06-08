@@ -2,9 +2,10 @@
 title: "SignInResult"
 original_url: /docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-signinresult-0000002273777081
 format: md
+upstream_id: distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-signinresult-0000002273777081
+last_sync: 2026-06-07
+sync_hash: 01dcdb5d
 ---
-
-
 登录结果信息。
 
 #### Method Summary

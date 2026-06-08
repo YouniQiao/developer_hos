@@ -2,9 +2,10 @@
 format: md
 title: "Native侧代码与ArkTS侧的代码线程关系以及线程使用限制"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-54
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-54
+last_sync: 2026-06-07
+sync_hash: 40a84d25
 ---
-
-
 **问题现象**
 
 1. 主界面调用ArkTS接口到Native侧代码的加载是否都在一个线程里面？

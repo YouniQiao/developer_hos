@@ -2,9 +2,10 @@
 title: "通过关系型数据库实现数据持久化 (C/C++)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/app-data-persistence/native-relational-store-guidelines
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/app-data-persistence/native-relational-store-guidelines
+last_sync: 2026-06-07
+sync_hash: 74f66f5f
 ---
-
-
 ## 场景介绍
 
 RelationalStore提供了一套完整的对本地数据库进行管理的机制，对外提供了一系列的增、删、改、查等接口，也可以直接运行用户输入的SQL语句来满足复杂的场景需要。

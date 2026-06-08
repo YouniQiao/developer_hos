@@ -2,9 +2,10 @@
 title: "回退版本"
 original_url: /docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-rollback-0000002236334578
 format: md
+upstream_id: distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-rollback-0000002236334578
+last_sync: 2026-06-07
+sync_hash: 2cd64bc6
 ---
-
-
 您可以将当前在架的应用版本回退到上一个版本。版本回退是将当前在架版本回退到最近一次上架的应用版本，且只能按照版本发布顺序依次回退。如果您已回退到初始版本，您将无法继续回退。
 
 ![](../img/agc-help-maintain-rollback-0000002236334578_0.png)

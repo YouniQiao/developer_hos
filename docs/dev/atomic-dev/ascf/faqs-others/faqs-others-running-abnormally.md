@@ -2,9 +2,10 @@
 title: "转换为ASCF框架后运行白屏或异常"
 original_url: /docs/dev/atomic-dev/ascf/faqs-others/faqs-others-running-abnormally
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-others/faqs-others-running-abnormally
+last_sync: 2026-06-07
+sync_hash: 80bba5aa
 ---
-
-
 **问题现象**
 
 从小程序转换或是三方框架调用ASCF接口，出现运行异常或者白屏等问题。

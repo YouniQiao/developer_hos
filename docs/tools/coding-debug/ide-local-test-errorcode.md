@@ -3,9 +3,10 @@ title: "本地测试错误码"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-local-test-errorcode
 format: md
+upstream_id: tools/coding-debug/ide-local-test-errorcode
+last_sync: 2026-06-07
+sync_hash: b50148cf
 ---
-
-
 # 本地测试错误码
 
 #### 00521001 测试用例名称存在非法字符

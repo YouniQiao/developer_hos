@@ -2,9 +2,10 @@
 title: "模块化运行简介"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/module-principle
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/module-principle
+last_sync: 2026-06-07
+sync_hash: d79c2bd0
 ---
-
-
 为了解决大型或复杂应用开发过程中，部分代码编译时被多次拷贝导致包体积增大、文件依赖、代码与资源共享困难以及单例和全局变量污染等问题，ArkTS支持应用模块化编译、打包和运行，简化代码的编写与维护。
 
 模块化是将ArkTS/TS/JS模块（一个文件对应一个模块）以及so模块通过编译工具或运行时机制将这些[模块加载](#模块化运行加载流程)、解析、组合并执行的过程。

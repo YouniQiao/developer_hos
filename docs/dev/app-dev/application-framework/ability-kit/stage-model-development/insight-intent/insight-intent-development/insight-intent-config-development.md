@@ -2,9 +2,10 @@
 title: "使用配置文件开发意图"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-development/insight-intent-config-development
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-development/insight-intent-config-development
+last_sync: 2026-06-07
+sync_hash: f45ceaef
 ---
-
-
 ## 简介
 
 从API version 11及以上版本，支持通过配置文件开发意图。主要包含两个环节：

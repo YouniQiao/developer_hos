@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "密钥生成和转换开发指导"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev
+last_sync: 2026-06-07
+sync_hash: eac32519
 ---
-
-
 * **[随机生成对称密钥(ArkTS)](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-generate-sym-key-randomly)**
 * **[随机生成对称密钥(C/C++)](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-generate-sym-key-randomly-ndk)**
 * **[指定二进制数据转换对称密钥(ArkTS)](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-convert-binary-data-to-sym-key)**

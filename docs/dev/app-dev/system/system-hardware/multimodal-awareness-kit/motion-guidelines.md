@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取用户动作开发指导"
 original_url: /docs/dev/app-dev/system/system-hardware/multimodal-awareness-kit/motion-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-hardware/multimodal-awareness-kit/motion-guidelines
+last_sync: 2026-06-07
+sync_hash: 66b267db
 ---
-
-
 ## 场景介绍
 
 当应用需要获取用户动作时，可以调用motion模块，例如判断用户当前是用左手还是右手操作设备屏幕。

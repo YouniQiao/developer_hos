@@ -2,9 +2,10 @@
 format: md
 title: "应用/服务的启动界面信息缺失，提示“Schema validate failed”报错"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-16
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-16
+last_sync: 2026-06-07
+sync_hash: cc20a561
 ---
-
-
 **问题现象**
 
 在工程同步或编译构建时，出现“Schema validate failed”的错误提示。

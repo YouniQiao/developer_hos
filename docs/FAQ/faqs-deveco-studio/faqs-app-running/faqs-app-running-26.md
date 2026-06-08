@@ -2,13 +2,14 @@
 format: md
 title: "模拟器无法连接网络"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-26
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-26
+last_sync: 2026-06-07
+sync_hash: 587772e1
 ---
-
-
 **问题现象**
 
 开发者在模拟器中开启WLAN选项并连接到VirtWifi后，仍无法访问网站。
 
 **解决措施**
 
-是否连接VirtWifi与模拟器能否访问互联网无关。VirtWifi仅用于在模拟器中判断WLAN的连接状态。模拟器访问网络实际上利用的是本地计算机的以太网或者WLAN，与本地计算机共享同一网络资源。如出现无法连接网络的情况，请开发者确认本地网络访问是否受到了限制（如使用公司内网）。如果对网络访问进行了限制，则需要在模拟器上配置网络代理。参见[网络代理](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-more-features#section206461549731)。
+是否连接VirtWifi与模拟器能否访问互联网无关。VirtWifi仅用于在模拟器中判断WLAN的连接状态。模拟器访问网络实际上利用的是本地计算机的以太网或者WLAN，与本地计算机共享同一网络资源。如出现无法连接网络的情况，请开发者确认本地网络访问是否受到了限制（如使用公司内网）。如果对网络访问进行了限制，则需要在模拟器上配置网络代理。参见[网络代理](/docs/tools/coding-debug/ide-emulator-more-features#section206461549731)。

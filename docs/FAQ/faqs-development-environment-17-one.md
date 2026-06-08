@@ -2,9 +2,10 @@
 format: md
 title: "环境中配置使用JDK25，打包失败报错，错误码：00303153 Configuration Error"
 original_url: /docs/FAQ/faqs-development-environment-17-one
+upstream_id: FAQ/faqs-development-environment-17-one
+last_sync: 2026-06-07
+sync_hash: 0fdb91ef
 ---
-
-
 **问题现象**
 
 在使用6.0.2.640版本的DevEco Studio和Command Line Tools时，若系统环境中配置使用JDK25，在命令行中执行打包命令会导致打包失败，报错信息如下图所示：

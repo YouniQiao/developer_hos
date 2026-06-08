@@ -2,9 +2,10 @@
 title: "手机和轻量级智能穿戴设备通信，提示错误码206"
 original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_faq/wearengine_faq-6
 format: md
+upstream_id: dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_faq/wearengine_faq-6
+last_sync: 2026-06-07
+sync_hash: 56387c38
 ---
-
-
 * 手机和穿戴设备的包名或证书指纹不匹配
 
   + 轻量级智能穿戴设备侧：需要把手机的包名和指纹信息放到白名单中

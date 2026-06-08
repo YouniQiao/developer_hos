@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "设置地图Logo始终显示"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-faq/map-faq-4
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-faq/map-faq-4
+last_sync: 2026-06-07
+sync_hash: 8b8152f1
 ---
-
-
 **现象描述**
 
 Map Kit地图Logo不可见。

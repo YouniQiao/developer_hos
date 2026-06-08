@@ -2,9 +2,10 @@
 format: md
 title: "如何实现事件透传"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-155
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-155
+last_sync: 2026-06-07
+sync_hash: c7595afe
 ---
-
-
 **问题现象**
 
 在Stack中，如果有两个兄弟组件，组件A被组件B覆盖，用户点击组件B时，是否可以将点击事件透传给组件A，触发组件A的onClick回调，而不触发组件B的onClick回调。

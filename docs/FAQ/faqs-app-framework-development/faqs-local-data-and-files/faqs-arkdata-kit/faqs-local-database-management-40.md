@@ -2,9 +2,10 @@
 format: md
 title: "数据管理如何保证数据安全"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-40
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-40
+last_sync: 2026-06-07
+sync_hash: 9a12867e
 ---
-
-
 **问题描述**
 
 在系统运行过程中，如遇存储损坏、存储空间不足、文件系统权限问题或系统断电等情况，均可能导致数据库故障。数据管理应如何确保数据安全？

@@ -2,9 +2,10 @@
 format: md
 title: "如何通过C接口使用网络相关功能"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-66
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-66
+last_sync: 2026-06-07
+sync_hash: b1b031bd
 ---
-
-
 以下模块提供了C接口：自定义DNS解析、证书校验、WebSocket。
 
 对于未直接提供C接口的模块，可以通过AKI机制调用ArkTS接口。

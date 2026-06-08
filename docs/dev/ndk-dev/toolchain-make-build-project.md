@@ -2,9 +2,10 @@
 title: "Make构建工程配置HarmonyOS编译工具链"
 original_url: /docs/dev/ndk-dev/toolchain-make-build-project
 format: md
+upstream_id: dev/ndk-dev/toolchain-make-build-project
+last_sync: 2026-06-07
+sync_hash: 1b76d159
 ---
-
-
 ## 概述
 
 Make是一个标准的Unix构建工具，用于自动化编译过程。它可以读取Makefile中的规则和依赖项，并根据这些规则来构建源代码，Make会检查源代码文件的时间戳，以确定哪些文件需要重新编译。Make会自动解决依赖关系并按正确的顺序编译源文件，通过在终端中运行Make命令，Make将根据Makefile中的指令逐步构建代码，生成最终的可执行程序或库文件。

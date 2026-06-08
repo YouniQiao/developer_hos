@@ -2,9 +2,10 @@
 format: md
 title: "Tabs如何设置页面margin，使得边距空白跟随页面滑动"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-442
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-442
+last_sync: 2026-06-07
+sync_hash: d65b1fab
 ---
-
-
 **问题背景**
 
 为Tabs设置了外边距，但在页签滑动时边距没有跟随页面滑动。

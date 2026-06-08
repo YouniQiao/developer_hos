@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "音频解码同步模式"
 original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/synchronous-audio-decoding
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/audio-video-codec/synchronous-audio-decoding
+last_sync: 2026-06-07
+sync_hash: 2e3f3d5a
 ---
-
-
 从API version 20开始，支持音频解码同步模式。
 
 开发者可以调用本模块的Native API接口，完成同步模式的音频解码，即将媒体数据解码为PCM码流。

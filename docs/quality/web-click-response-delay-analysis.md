@@ -2,9 +2,10 @@
 title: "Web点击响应时延分析"
 original_url: /docs/quality/web-click-response-delay-analysis
 format: md
+upstream_id: /docs/quality/web-click-response-delay-analysis
+last_sync: 2026-06-07
+sync_hash: 92ecde9a
 ---
-
-
 # Web点击响应时延分析
 
 下图为在ArkTS侧使用Web组件加载Web页面时的效果。当用户点击字块后，动画效果延迟较长时间才触发。点击操作响应时延的性能指标衡量起点为用户点击应用元素的时间，终点为应用界面开始发生变化的时间，变化时间应控制在100ms以内，以确保操作响应及时，维持用户流畅体验。开发者可以通过录屏辅助测试，使用DevEco Profiler工具量化点击响应时延，判断是否存在需要优化的问题。
@@ -35,7 +36,7 @@ format: md
 
 ### 使用DevEco Profiler工具抓取Trace
 
-使用Profiler工具分析卡顿和丢帧场景的方法可以参考[Frame分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-frame)。对于响应时延类问题，首先确认响应的起止点，确定区域位置和具体操作。
+使用Profiler工具分析卡顿和丢帧场景的方法可以参考[Frame分析](/docs/tools/coding-debug/ide-insight-session-frame)。对于响应时延类问题，首先确认响应的起止点，确定区域位置和具体操作。
 
 1. 确认起点：如果是由点击触发，则首先定位到应用侧的DispatchTouchEvent，如下图虚线所示：
 

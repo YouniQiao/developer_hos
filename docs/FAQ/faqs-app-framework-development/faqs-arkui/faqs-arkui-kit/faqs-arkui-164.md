@@ -2,9 +2,10 @@
 format: md
 title: "如何获取router.back传递的参数"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-164
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-164
+last_sync: 2026-06-07
+sync_hash: 2a81abcd
 ---
-
-
 在 onPageShow 回调方法中使用 Router模块的getParams方法来获取传递过来的参数。参考代码如下：
 
 ```

@@ -2,9 +2,10 @@
 format: md
 title: "TaskPool里面是否可以使用EventHub"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-38
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-38
+last_sync: 2026-06-07
+sync_hash: 7af5f51e
 ---
-
-
 EventHub仅支持在主线程中使用，不支持在TaskPool中使用。
 
 **参考链接**

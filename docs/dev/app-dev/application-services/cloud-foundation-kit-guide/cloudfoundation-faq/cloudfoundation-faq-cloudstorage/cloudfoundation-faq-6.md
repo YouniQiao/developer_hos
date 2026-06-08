@@ -2,9 +2,10 @@
 title: "调用云存储业务接口失败，app日志提示“'state':65”，upload进程日志提示“404 Not Found”"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-faq/cloudfoundation-faq-cloudstorage/cloudfoundation-faq-6
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-faq/cloudfoundation-faq-cloudstorage/cloudfoundation-faq-6
+last_sync: 2026-06-07
+sync_hash: a9891ab1
 ---
-
-
 **问题现象**
 
 通过“使用指定的实例”方式初始化云存储实例时，调用业务接口（如调用uploadFile接口上传文件）失败，出现如下错误提示：

@@ -2,8 +2,11 @@
 title: "数据缓存"
 original_url: /docs/dev/atomic-dev/ascf/apis/apis-data-storage
 format: md
+upstream_id: dev/atomic-dev/ascf/apis/apis-data-storage
+last_sync: 2026-06-07
+sync_hash: f84e3861
+upstream_hash: f7c0a798ffc1
 ---
-
 
 ## has.setStorageSync
 

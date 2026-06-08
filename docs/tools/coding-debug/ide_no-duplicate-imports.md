@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-duplicate-imports"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-duplicate-imports
 format: md
+upstream_id: tools/coding-debug/ide_no-duplicate-imports
+last_sync: 2026-06-07
+sync_hash: 5a66b65b
 ---
-
-
 # @typescript-eslint/no-duplicate-imports
 
 禁止重复的模块导入。

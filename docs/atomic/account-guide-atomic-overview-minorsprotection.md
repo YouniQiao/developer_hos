@@ -2,9 +2,10 @@
 title: "概述"
 original_url: /docs/dev/atomic-dev/account-guide-atomic-minorsprotection/account-guide-atomic-overview-minorsprotection
 format: md
+upstream_id: dev/atomic-dev/account-guide-atomic-minorsprotection/account-guide-atomic-overview-minorsprotection
+last_sync: 2026-06-07
+sync_hash: 9819ed65
 ---
-
-
 未成年人模式用于帮助元服务与系统联动提供未成年人网络保护。元服务通过接入Account Kit提供的[未成年人模式能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-minorsprotection)与系统联动，可快速实现自动切换未成年人模式状态，简化了家长用户的设置步骤，为未成年人提供安全、健康的网络环境。
 
 ## 基本概念

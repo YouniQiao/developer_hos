@@ -3,9 +3,10 @@ title: "代码重构"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-code-refactoring
 format: md
+upstream_id: tools/coding-debug/ide-code-refactoring
+last_sync: 2026-06-07
+sync_hash: 2ef68ddc
 ---
-
-
 # 代码重构
 
 #### ArkTS/TS代码重构

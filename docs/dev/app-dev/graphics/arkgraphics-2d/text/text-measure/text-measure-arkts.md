@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "文本测量（ArkTS）"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/text-measure/text-measure-arkts
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/text/text-measure/text-measure-arkts
+last_sync: 2026-06-07
+sync_hash: 5da0fb5a
+upstream_hash: 2ecb63338b96
 ---
-
 
 ## 场景介绍
 

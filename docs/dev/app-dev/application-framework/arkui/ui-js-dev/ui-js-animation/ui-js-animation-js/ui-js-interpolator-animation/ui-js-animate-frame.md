@@ -2,9 +2,10 @@
 title: "动画帧"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-animation/ui-js-animation-js/ui-js-interpolator-animation/ui-js-animate-frame
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-animation/ui-js-animation-js/ui-js-interpolator-animation/ui-js-animate-frame
+last_sync: 2026-06-07
+sync_hash: 87f1686f
 ---
-
-
 ## 请求动画帧
 
 请求动画帧时通过requestAnimationFrame函数逐帧回调，传入一个回调函数。

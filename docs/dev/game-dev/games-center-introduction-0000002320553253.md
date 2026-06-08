@@ -2,9 +2,10 @@
 title: "鸿蒙游戏服务介绍"
 original_url: /docs/dev/game-dev/games-center-introduction-0000002320553253
 format: md
+upstream_id: dev/game-dev/games-center-introduction-0000002320553253
+last_sync: 2026-06-07
+sync_hash: 7175404d
 ---
-
-
 鸿蒙游戏服务是在游戏立项、研发、测试、推广、运营全生命周期为开发者提供一站式的解决方案，详细方案可参见[游戏行业解决方案](https://developer.huawei.com/consumer/cn/game-center/)，以强大的社交能力、精细化的营销能力，帮助开发者做“好”游戏，助力游戏产品快速成长并获得丰厚回报。
 
 ## 强大的分发能力

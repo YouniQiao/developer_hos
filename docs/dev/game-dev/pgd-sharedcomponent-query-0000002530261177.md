@@ -2,9 +2,10 @@
 title: "SharedComponent查询"
 original_url: /docs/dev/game-dev/pgd-sharedcomponent-query-0000002530261177
 format: md
+upstream_id: dev/game-dev/pgd-sharedcomponent-query-0000002530261177
+last_sync: 2026-06-07
+sync_hash: 5005ec55
 ---
-
-
 查询SharedComponent需要创建专门的共享组件查询体，IQuery、QueryFilter等结构均有SharedComponent专用接口。
 
 ## 创建共享组件集合

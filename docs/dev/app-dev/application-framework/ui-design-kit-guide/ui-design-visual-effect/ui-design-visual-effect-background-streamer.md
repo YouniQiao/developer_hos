@@ -2,9 +2,10 @@
 title: "背景流光"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-visual-effect/ui-design-visual-effect-background-streamer
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-visual-effect/ui-design-visual-effect-background-streamer
+last_sync: 2026-06-07
+sync_hash: 48989f6b
 ---
-
-
 ## 场景介绍
 
 从6.0.0(20)版本开始，新增支持[背景流光](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdseffect#effecttype)。

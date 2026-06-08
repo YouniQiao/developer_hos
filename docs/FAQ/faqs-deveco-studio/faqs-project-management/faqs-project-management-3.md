@@ -2,9 +2,10 @@
 format: md
 title: "环境诊断、创建工程/模块界面全部显示空白"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-3
+upstream_id: FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-3
+last_sync: 2026-06-07
+sync_hash: 5ce1f3ae
 ---
-
-
 **问题现象**
 
 打开环境诊断界面，选择工程或模块模板时，界面显示为空；工程预览界面同样为空。

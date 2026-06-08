@@ -2,9 +2,10 @@
 title: "取消动态订阅公共事件"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/common-event-unsubscription
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/app-events/common-event-communication/common-event-unsubscription
+last_sync: 2026-06-07
+sync_hash: 45582253
 ---
-
-
 ## 场景介绍
 
 动态订阅者完成业务需求后，应主动取消订阅。通过调用[unsubscribe()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-commoneventmanager#commoneventmanagerunsubscribe)方法，取消订阅事件。

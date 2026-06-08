@@ -2,9 +2,10 @@
 title: "使用Node-API接口关联数据，使其生命周期与当前环境的生命周期相关联"
 original_url: /docs/dev/ndk-dev/use-napi-about-environmental-life-cycle
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-environmental-life-cycle
+last_sync: 2026-06-07
+sync_hash: ffe4306a
 ---
-
-
 ## 简介
 
 在Node-API模块中，可以使用Node-API接口将特定数据与当前环境相关联，并在需要时检索该数据。

@@ -3,8 +3,10 @@ title: 实况窗
 sidebar_label: 实况窗
 original_url: /docs/design/system-features/features/live-view
 format: md
+upstream_id: design/system-features/features/live-view
+last_sync: 2026-06-07
+sync_hash: 1ab8a7e9
 ---
-
 # 实况窗
 
 实况窗是一种帮助用户聚焦进行中任务、方便快速查看和即时处理的消息提醒。包含卡片态、胶囊态、沉浸态。

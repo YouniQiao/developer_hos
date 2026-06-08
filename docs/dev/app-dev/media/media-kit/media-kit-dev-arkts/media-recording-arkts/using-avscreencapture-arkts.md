@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用AVScreenCaptureRecorder录屏写文件(ArkTS)"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-recording-arkts/using-avscreencapture-arkts
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-arkts/media-recording-arkts/using-avscreencapture-arkts
+last_sync: 2026-06-07
+sync_hash: 866c71fe
 ---
-
-
 屏幕录制主要为主屏幕录屏功能。
 
 开发者可以调用录屏（[AVScreenCaptureRecorder](/docs/dev/app-dev/media/media-kit/media-kit-intro#avscreencapture)）模块的ArkTs接口，完成屏幕录制，采集设备内、麦克风等的音视频源数据。可以调用录屏模块获取音视频文件，然后通过文件的形式流转到其他模块进行播放或处理，达成文件形式分享屏幕内容的场景。

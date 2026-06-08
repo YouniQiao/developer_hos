@@ -2,9 +2,10 @@
 title: "预览子服务卡"
 original_url: /docs/dev/atomic-dev/instant-service-items/preview-sub-service-card
 format: md
+upstream_id: dev/atomic-dev/instant-service-items/preview-sub-service-card
+last_sync: 2026-06-07
+sync_hash: 63f3f443
 ---
-
-
 1. 在子服务直达界面，选择“草稿”或“待审核”卡片，点击提交预览，即可在负一屏探索流看到此卡，并进行预览测试。
 
    ![](./img/8ce81026.png "点击放大")

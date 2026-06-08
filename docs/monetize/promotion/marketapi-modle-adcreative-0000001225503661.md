@@ -3,8 +3,10 @@ title: "AdCreative"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-adcreative-0000001225503661
 format: md
+upstream_id: monetize/promotion/marketapi-modle-adcreative-0000001225503661
+last_sync: 2026-06-07
+sync_hash: 27b180c1
 ---
-
 # AdCreative
 
 | <strong>参数</strong> | <strong>必选(M)/可选(O)</strong> | <strong>类型</strong> | <strong>描述</strong> |

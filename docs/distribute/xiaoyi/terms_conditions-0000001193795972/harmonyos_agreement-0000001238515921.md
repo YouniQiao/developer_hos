@@ -3,9 +3,10 @@ title: "小艺开放平台合作协议"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/terms_conditions-0000001193795972/harmonyos_agreement-0000001238515921
 format: md
+upstream_id: distribute/xiaoyi/terms_conditions-0000001193795972/harmonyos_agreement-0000001238515921
+last_sync: 2026-06-07
+sync_hash: fa57bdbc
 ---
-
-
 # 小艺开放平台合作协议
 
 **点击查看：****[协议变更点](/docs/distribute/xiaoyi/terms_conditions-0000001193795972/protocol-variation-0000001323720125)**

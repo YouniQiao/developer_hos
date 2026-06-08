@@ -2,9 +2,10 @@
 title: "swiper开发指导"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-container-components/ui-js-components-swiper
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-components/ui-js-container-components/ui-js-components-swiper
+last_sync: 2026-06-07
+sync_hash: c6e2a78f
 ---
-
-
 swiper为滑动容器，提供切换显示子组件的能力。具体用法请参考[swiper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-container-swiper)。
 
 ## 创建swiper组件

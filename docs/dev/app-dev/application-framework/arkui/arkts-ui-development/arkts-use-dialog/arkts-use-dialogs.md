@@ -2,9 +2,10 @@
 title: "弹出框 (Dialog)"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs
+last_sync: 2026-06-07
+sync_hash: ba0fdd20
 ---
-
-
 * **[弹出框概述](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-base-dialog-overview)**
 * **[不依赖UI组件的全局自定义弹出框 (openCustomDialog)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-uicontext-custom-dialog)**
 * **[基础自定义弹出框 (CustomDialog)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-use-dialog/arkts-use-dialogs/arkts-common-components-custom-dialog)**

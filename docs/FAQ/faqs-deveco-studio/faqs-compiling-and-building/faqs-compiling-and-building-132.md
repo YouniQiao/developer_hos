@@ -2,9 +2,10 @@
 format: md
 title: "编译初始化报错“resource busy or locked, open 'xxxoutputsbuild-logsbuild.log'”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-132
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-132
+last_sync: 2026-06-07
+sync_hash: 62c15099
 ---
-
-
 **问题现象**
 
 在升级DevEco Studio至5.0.3.403版本后，打开旧工程时，可能会遇到以下错误：resource busy or locked, open 'xxx\outputs\build-logs\build.log'。

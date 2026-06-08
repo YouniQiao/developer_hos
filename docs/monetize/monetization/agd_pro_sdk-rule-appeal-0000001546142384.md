@@ -3,10 +3,10 @@ title: "申诉流程"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk-rule-appeal-0000001546142384
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk-rule-appeal-0000001546142384
+last_sync: 2026-06-07
+sync_hash: 906a76dd
 ---
-
-
-
 当您收到我们发送的违规处罚通知后，可以在5个工作日之内，按照平台的规则和要求将申诉材料发送至申诉邮箱**developer@huawei.com**，我们会在收到申诉邮件后尽快对申诉材料进行复核并给出回复。
 
 申诉邮件标题格式：**AGD Pro应用变现服务申诉-***产品名称*

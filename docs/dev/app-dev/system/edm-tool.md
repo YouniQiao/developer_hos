@@ -2,9 +2,10 @@
 title: "edm工具"
 original_url: /docs/dev/app-dev/system/edm-tool
 format: md
+upstream_id: dev/app-dev/system/edm-tool
+last_sync: 2026-06-07
+sync_hash: 2b1b567c
 ---
-
-
 Enterprise Device Manager（企业设备管理工具，简称为edm），为设备管理应用提供调试和测试能力，例如激活企业设备管理拓展能力、解除激活企业设备管理拓展能力。
 
 ## 环境要求

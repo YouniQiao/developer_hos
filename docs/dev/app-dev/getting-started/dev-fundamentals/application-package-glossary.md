@@ -1,8 +1,10 @@
 ---
 title: "应用程序包术语"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/application-package-glossary
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/application-package-glossary
+last_sync: 2026-06-07
+sync_hash: 40d42644
 ---
-
 ## A
 
 ### APP

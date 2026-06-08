@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "空间管理"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide
+last_sync: 2026-06-07
+sync_hash: 38a2e2a7
 ---
-
-
 * **[创建工作空间](/docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-create-workspace)**
 * **[使能工作空间](/docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-enable-workspace)**
 * **[查询工作空间](/docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-query-workspace)**

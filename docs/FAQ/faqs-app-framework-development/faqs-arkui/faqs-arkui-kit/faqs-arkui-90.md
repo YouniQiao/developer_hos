@@ -2,9 +2,10 @@
 format: md
 title: "如何获取可滚动组件的当前滚动偏移量"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-90
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-90
+last_sync: 2026-06-07
+sync_hash: 48c60e15
 ---
-
-
 1. 可滚动组件在初始化时可设置scroller参数，绑定滚动控制器。
 2. 通过控制器的currentOffset方法可获取水平和竖直方向的滚动偏移量。
 

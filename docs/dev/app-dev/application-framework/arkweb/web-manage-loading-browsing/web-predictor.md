@@ -2,9 +2,10 @@
 title: "加速Web页面的访问"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-predictor
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-loading-browsing/web-predictor
+last_sync: 2026-06-07
+sync_hash: 4b6567e3
 ---
-
-
 当Web页面加载缓慢时，可以使用预连接、预加载和预获取POST请求的能力加速Web页面的访问。
 
 针对Web页面加载性能优化的详细内容请参考[Web页面加载优化性能指导](/docs/quality/web-develop-optimization#section128761465256)。

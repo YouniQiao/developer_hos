@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "图片动态元数据生成"
 original_url: /docs/dev/app-dev/media/image-kit/image-native/image-editing-c/image-processing/image-dynamic-metadata-generation
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-native/image-editing-c/image-processing/image-dynamic-metadata-generation
+last_sync: 2026-06-07
+sync_hash: ec44b628
 ---
-
-
 调用者可以调用本模块提供的[C API接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-imageprocessing)，实现HDR图片动态元数据生成。
 
 该能力常用于图片编辑中，如下图所示：

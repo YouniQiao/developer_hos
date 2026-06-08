@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "应用恢复开发指导"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/error-manager/apprecovery-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/error-manager/apprecovery-guidelines
+last_sync: 2026-06-07
+sync_hash: 3d76d59a
 ---
-
-
 ## 场景介绍
 
 应用在运行中不可避免会产生一些非预期的行为，如运行时抛出未处理的异常和错误，违反框架的调用/运行约束等。

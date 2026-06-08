@@ -2,16 +2,17 @@
 title: "JS内存泄漏问题检测方法"
 original_url: /docs/quality/stability-js-memleak-detection
 format: md
+upstream_id: /docs/quality/stability-js-memleak-detection
+last_sync: 2026-06-07
+sync_hash: 9ed1ed9b
 ---
-
-
 # JS内存泄漏问题检测方法
 
 ## 使用Snapshot检测虚拟机内存泄漏
 
 ### 查看快照详情
 
-1. 创建Snapshot场景调优分析任务，操作方法可参考[性能问题定位：深度录制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording)。
+1. 创建Snapshot场景调优分析任务，操作方法可参考[性能问题定位：深度录制](/docs/tools/coding-debug/deep-recording)。
 
    ![](./img/c7af5c1c.png)
 

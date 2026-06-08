@@ -3,9 +3,10 @@ title: "@typescript-eslint/prefer-reduce-type-parameter"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_prefer-reduce-type-parameter
 format: md
+upstream_id: tools/coding-debug/ide_prefer-reduce-type-parameter
+last_sync: 2026-06-07
+sync_hash: 81e2bbc5
 ---
-
-
 # @typescript-eslint/prefer-reduce-type-parameter
 
 调用“Array#reduce”时推荐使用类型参数而不是类型断言。

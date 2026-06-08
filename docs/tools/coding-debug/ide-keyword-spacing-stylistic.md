@@ -3,9 +3,10 @@ title: "@hw-stylistic/keyword-spacing"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-keyword-spacing-stylistic
 format: md
+upstream_id: tools/coding-debug/ide-keyword-spacing-stylistic
+last_sync: 2026-06-07
+sync_hash: 345c2d9c
 ---
-
-
 # @hw-stylistic/keyword-spacing
 
 在关键字前后强制加空格。该规则仅检查.ets文件类型。

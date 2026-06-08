@@ -2,9 +2,10 @@
 title: "TaskPool和Worker的对比 (TaskPool和Worker)"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/taskpool-vs-worker
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/taskpool-vs-worker
+last_sync: 2026-06-07
+sync_hash: 43a1b8a1
 ---
-
-
 TaskPool和Worker的作用是为应用程序提供多线程运行环境，用于处理耗时计算任务或其他密集型任务，避免任务阻塞宿主线程，提高系统性能和资源利用率。
 
 本文将从[实现特点](#实现特点对比)和[适用场景](#适用场景对比)两个方面比较TaskPool与Worker。

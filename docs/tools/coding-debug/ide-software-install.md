@@ -2,9 +2,10 @@
 title: "下载与安装DevEco Studio"
 format: md
 original_url: /docs/tools/coding-debug/ide-software-install
+upstream_id: tools/coding-debug/ide-software-install
+last_sync: 2026-06-07
+sync_hash: 8bfd1028
 ---
-
-
 # 下载与安装DevEco Studio
 
 ## 下载软件

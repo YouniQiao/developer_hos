@@ -3,8 +3,10 @@ title: "查询智能分包列表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-cxzhinengfenbaoliebiao-0000001926859329
 format: md
+upstream_id: monetize/promotion/ads-cxzhinengfenbaoliebiao-0000001926859329
+last_sync: 2026-06-07
+sync_hash: c862022e
 ---
-
 # 查询智能分包列表
 
 【简介】通过此接口可以查询智能分包列表

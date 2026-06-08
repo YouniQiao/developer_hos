@@ -2,8 +2,11 @@
 title: "消息认证码计算CMAC(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-mac/crypto-compute-cmac
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-compute-mac/crypto-compute-cmac
+last_sync: 2026-06-07
+sync_hash: fd409ec2
+upstream_hash: 9d76dc84f069
 ---
-
 
 CMAC通过使用分组密码（如AES）和一个密钥生成认证码，确保消息在传输过程中未被篡改。
 

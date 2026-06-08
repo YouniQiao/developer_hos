@@ -3,9 +3,10 @@ title: "ArkUI分析"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-arkui-analysis
 format: md
+upstream_id: tools/coding-debug/ide-arkui-analysis
+last_sync: 2026-06-07
+sync_hash: 8c53ee20
 ---
-
-
 # ArkUI分析
 
 ArkUI分析用于定位由于组件耗时、页面布局、状态变量更新导致的卡顿问题。常见场景包含：

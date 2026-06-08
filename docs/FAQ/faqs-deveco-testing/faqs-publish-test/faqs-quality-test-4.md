@@ -2,9 +2,10 @@
 format: md
 title: "应用上架预检测试问题定位，可以参考哪些资料"
 original_url: /docs/FAQ/faqs-deveco-testing/faqs-publish-test/faqs-quality-test-4
+upstream_id: FAQ/faqs-deveco-testing/faqs-publish-test/faqs-quality-test-4
+last_sync: 2026-06-07
+sync_hash: 0ef80c08
 ---
-
-
 稳定性基础质量测试：[应用稳定性体验建议](/docs/experience-suggestions/experience-suggestions-stability)及[CppCrash类问题分析方法](/docs/quality/stability-app-crash-cpp-way)
 
 UX基础质量测试：[应用UX体验建议](/docs/experience-suggestions/experience-suggestions-ux)

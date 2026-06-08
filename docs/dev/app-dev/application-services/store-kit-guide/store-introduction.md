@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "AppGallery Kit简介"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-introduction
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-introduction
+last_sync: 2026-06-07
+sync_hash: 41e436a9
+upstream_hash: 34364d79ec08
 ---
-
 
 AppGallery Kit（应用市场服务）提供应用市场业务的对外开放能力，可以更好地支持应用的下载、推荐和分发等场景以提高在应用市场上的曝光度，以及为开发者提供便捷高效的数字商品服务的接入流程和交互体验，助力开发者商业变现。
 
@@ -55,14 +58,14 @@ AppGallery Kit（应用市场服务）提供应用市场业务的对外开放能
 | 应用归因服务 | 只支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。 |
 | 隐私管理服务 | 只支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。 |
 | 应用评论服务 | 只支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。 |
-| 应用市场更新功能 | 请参见[支持的国家/地区](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-support-regions)。 |
-| 图标管理服务 | 请参见[支持的国家/地区](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-support-regions)。 |
+| 应用市场更新功能 | 请参见[支持的国家/地区](/docs/dev/app-dev/application-services/scenario-fusion-appendix-support-regions)。 |
+| 图标管理服务 | 请参见[支持的国家/地区](/docs/dev/app-dev/application-services/scenario-fusion-appendix-support-regions)。 |
 
 ## 模拟器支持情况
 
 本Kit支持模拟器，但与真机存在部分能力差异，具体差异如下：
 
-* 通用差异：请参见“[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification#section1227613205203)”。
+* 通用差异：请参见“[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification#section1227613205203)”。
 * 不支持数字商品服务、应用市场推荐、生态查询服务、应用市场更新功能、应用评论服务、图标管理服务，不支持端云交互。
 
 ## 示例代码

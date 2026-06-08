@@ -2,9 +2,10 @@
 format: md
 title: "DevEco Studio AppAnalyzer反复提示未配置python环境，无法进入卡片页"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-12
+upstream_id: FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-12
+last_sync: 2026-06-07
+sync_hash: ea210871
 ---
-
-
 **问题现象**
 
 新用户使用6.0.1 beta及之前的版本, 可能有以下问题：

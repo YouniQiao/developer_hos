@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "数据类型转换说明"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/arengine-faq/arengine-arraybuffer-info
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/arengine-faq/arengine-arraybuffer-info
+last_sync: 2026-06-07
+sync_hash: 513d9962
 ---
-
-
 在开发AR应用时，部分数据类型需要转换才能使用，以下进行汇总及示例。
 
 ## ArrayBuffer

@@ -2,9 +2,10 @@
 title: "授权持久化"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/file-persistpermission
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/file-persistpermission
+last_sync: 2026-06-07
+sync_hash: c872f125
 ---
-
-
 ## 场景介绍
 
 应用可以通过Picker[选择文件](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/select-user-file)或[保存文件](/docs/dev/app-dev/application-framework/core-file-kit/user-files/select-save-user-file/save-user-file)获取到临时授权，临时授权在应用退出后或者设备重启后会清除。如果应用重启或者设备重启后需要直接访问之前已访问过的文件，则需要对文件进行持久化授权。

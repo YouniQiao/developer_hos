@@ -2,9 +2,10 @@
 title: "典型应用场景"
 original_url: /docs/distribute/agc/agc-help-apms-0000002235870062/agc-help-apms-scenarios-0000002271373113
 format: md
+upstream_id: distribute/agc/agc-help-apms-0000002235870062/agc-help-apms-scenarios-0000002271373113
+last_sync: 2026-06-07
+sync_hash: 4a1420d5
 ---
-
-
 #### 定位应用/游戏的闪退问题
 
 应用质量对于用户体验至关重要，如果应用发生闪退等问题，可能直接导致应用评分下降。当应用发生崩溃事件时，利用异常管理模块提供的丰富的崩溃问题的详细信息进行处理，可以帮助您分析问题根因，快速修复，提升应用质量和用户体验。

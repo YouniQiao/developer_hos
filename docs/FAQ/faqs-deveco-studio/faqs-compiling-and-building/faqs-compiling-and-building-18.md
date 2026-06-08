@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“No available entry module found”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-18
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-18
+last_sync: 2026-06-07
+sync_hash: 99b164f9
 ---
-
-
 **问题现象**
 
 DevEco Studio编译时出现“No available entry module found”错误。

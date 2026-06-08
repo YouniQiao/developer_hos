@@ -2,9 +2,10 @@
 title: "保活拉活"
 original_url: /docs/experience-suggestions/security-privacy/pure/standard-pure-retain
 format: md
+upstream_id: experience-suggestions/security-privacy/pure/standard-pure-retain
+last_sync: 2026-06-07
+sync_hash: 93af5b48
 ---
-
-
 # 保活拉活
 
 |  |  |

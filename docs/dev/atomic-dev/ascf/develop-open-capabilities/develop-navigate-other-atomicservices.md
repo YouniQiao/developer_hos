@@ -2,9 +2,10 @@
 title: "跳转"
 original_url: /docs/dev/atomic-dev/ascf/develop-open-capabilities/develop-navigate-other-atomicservices
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-open-capabilities/develop-navigate-other-atomicservices
+last_sync: 2026-06-07
+sync_hash: 5f56b23e
 ---
-
-
 ## 跳转到元服务
 
 ASCF框架提供接口，允许ASCF框架下开发的元服务跳转到其他的元服务。详情请参考：[跳转](/docs/dev/atomic-dev/ascf/apis/apis-navigate)。

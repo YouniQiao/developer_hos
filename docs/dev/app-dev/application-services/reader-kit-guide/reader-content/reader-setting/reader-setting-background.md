@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "自定义页面背景"
 original_url: /docs/dev/app-dev/application-services/reader-kit-guide/reader-content/reader-setting/reader-setting-background
 format: md
+upstream_id: dev/app-dev/application-services/reader-kit-guide/reader-content/reader-setting/reader-setting-background
+last_sync: 2026-06-07
+sync_hash: c5854bc2
 ---
-
-
 当应用需要支持自定义背景时，开发者可通过[ReaderSetting](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/reader-read-core#readersetting)的themeColor及themeBgImg属性，实现对阅读内容自定义背景色及背景图片的实时修改。
 
 更改页面背景色，可能会涉及到字体颜色和深色模式的适配。比如：设置了白色背景，但是当前是深色模式，字体颜色也是白色，这样会导致内容看不清楚。

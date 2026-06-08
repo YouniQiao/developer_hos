@@ -2,9 +2,10 @@
 title: "AirtouchConfig"
 original_url: /docs/distribute/agc/agc-help-harmonyoslabel-api-data-model-0000002349175964/agc-help-harmonyoslabel-api-airtouchconfig-0000002349016176
 format: md
+upstream_id: distribute/agc/agc-help-harmonyoslabel-api-data-model-0000002349175964/agc-help-harmonyoslabel-api-airtouchconfig-0000002349016176
+last_sync: 2026-06-07
+sync_hash: b85fc3bc
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | spId | O | String | 商家ID。 |

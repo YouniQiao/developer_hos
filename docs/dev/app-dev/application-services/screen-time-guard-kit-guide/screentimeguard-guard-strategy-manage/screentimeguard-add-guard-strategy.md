@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "添加策略"
 original_url: /docs/dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-guard-strategy-manage/screentimeguard-add-guard-strategy
 format: md
+upstream_id: dev/app-dev/application-services/screen-time-guard-kit-guide/screentimeguard-guard-strategy-manage/screentimeguard-add-guard-strategy
+last_sync: 2026-06-07
+sync_hash: 366ee324
 ---
-
-
 ## 场景介绍
 
 当用户希望创建新的屏幕时间守护规则时，可以调用添加管控策略的接口。根据参数中传入的策略，用户可以添加各种策略，如设置各个应用的停用起止时间。一旦策略被创建并启用，系统将根据规则对用户的屏幕使用行为进行监管。

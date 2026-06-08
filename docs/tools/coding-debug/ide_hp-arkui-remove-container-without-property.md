@@ -3,8 +3,11 @@ title: "@performance/hp-arkui-remove-container-without-property"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-remove-container-without-property
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-remove-container-without-property
+last_sync: 2026-06-07
+sync_hash: 75e8c543
+upstream_hash: 1b21d6c78674
 ---
-
 
 # @performance/hp-arkui-remove-container-without-property
 

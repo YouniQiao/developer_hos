@@ -2,9 +2,10 @@
 title: "工具概述"
 format: md
 original_url: /docs/tools/coding-debug/ide-tools-overview
+upstream_id: tools/coding-debug/ide-tools-overview
+last_sync: 2026-06-07
+sync_hash: 050c6fe2
 ---
-
-
 # 工具概述
 
 ## HarmonyOS应用/元服务开发

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "重建三维场景（C/C++）"
 original_url: /docs/dev/app-dev/graphics/spatial-recon-kit-guide/spatial-recon-c-spatial-recon-pipeline
 format: md
+upstream_id: dev/app-dev/graphics/spatial-recon-kit-guide/spatial-recon-c-spatial-recon-pipeline
+last_sync: 2026-06-07
+sync_hash: f7b07e77
 ---
-
-
 ## 概要
 
 从6.1.0(23)开始，Spatial Recon Kit支持通过视觉输入对三维场景进行重建。使用本Kit进行重建，分为以下几个步骤。

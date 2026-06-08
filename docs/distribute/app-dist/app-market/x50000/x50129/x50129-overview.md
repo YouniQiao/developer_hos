@@ -3,8 +3,10 @@ title: "概述"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x50000/x50129/x50129-overview
 format: md
+upstream_id: distribute/app-dist/app-market/x50000/x50129/x50129-overview
+last_sync: 2026-06-07
+sync_hash: acaa8a85
 ---
-
 # 元服务审核指南
 
 ## 概述

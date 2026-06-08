@@ -2,9 +2,10 @@
 format: md
 title: "fileIo.write是否支持utf-8之外的编码格式"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-11
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-11
+last_sync: 2026-06-07
+sync_hash: f0268c54
 ---
-
-
 **问题描述**
 
 1.希望fileIo.write支持utf-8之外的编码格式，目前只支持utf-8。

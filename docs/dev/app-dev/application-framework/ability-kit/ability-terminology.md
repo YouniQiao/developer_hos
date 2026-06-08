@@ -2,9 +2,10 @@
 title: "Ability Kit术语"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/ability-terminology
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/ability-terminology
+last_sync: 2026-06-07
+sync_hash: e6df3547
 ---
-
-
 ## A
 
 ### AbilityStage

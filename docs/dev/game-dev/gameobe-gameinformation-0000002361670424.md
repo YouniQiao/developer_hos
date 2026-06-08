@@ -2,9 +2,10 @@
 title: "准备游戏信息"
 original_url: /docs/dev/game-dev/gameobe-gameinformation-0000002361670424
 format: md
+upstream_id: dev/game-dev/gameobe-gameinformation-0000002361670424
+last_sync: 2026-06-07
+sync_hash: f6fe2424
 ---
-
-
 1. 在项目列表中选择您的项目，进入“项目设置”的“常规”页签。
 2. 记录项目下的“Client ID”和“Client Secret”，以及应用下的“APP ID”信息。
 

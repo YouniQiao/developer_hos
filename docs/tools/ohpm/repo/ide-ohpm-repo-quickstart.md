@@ -2,9 +2,10 @@
 title: "快速开始"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-quickstart
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-quickstart
+last_sync: 2026-06-07
+sync_hash: 747b746b
 ---
-
-
 # 快速开始
 
 ![](./img/22b711a3.png)

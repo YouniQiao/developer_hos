@@ -2,9 +2,10 @@
 title: "发布准备工作"
 original_url: /docs/distribute/agc/agc-help-release-atomic-0000002327731065/agc-help-release-atomic-prepare-0000002327610825
 format: md
+upstream_id: distribute/agc/agc-help-release-atomic-0000002327731065/agc-help-release-atomic-prepare-0000002327610825
+last_sync: 2026-06-07
+sync_hash: cadc4dd1
 ---
-
-
 发布元服务前，请详细了解华为应用市场的审核要求与上架规则，并提前准备发布所需的文件与资源，以便您能顺利、快速通过发布审核流程。
 
 #### 了解上架规则
@@ -19,7 +20,7 @@ format: md
 | --- | --- |
 | APP包签名 | 在DevEco Studio中编译发布包时，签名使用的是[发布证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-release-cert-0000002283336729)和[发布Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-release-profile-0000002248341090)。 |
 | APP包大小 | 不超过10MB。 |
-| APP包中各模块大小 | * Stage模型   + 元服务内任意类型的单个包大小都不超过2MB。   + 单个包加上其采用dependency方式依赖的[动态共享包（Harmony Shared Package, HSP）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hsp)，总大小不超过2MB。 说明：  **若一个HSP包同时被entry包和分包依赖，则该HSP包仅计入entry包大小，不再重复计入分包大小。**例如，元服务包含entry包和分包1，entry包依赖HSP包1和HSP包2，而分包1依赖HSP包1和HSP包3，则：entry包大小 = entry包本身 + 依赖的HSP包1 + 依赖的HSP包2；分包1大小 = 分包1本身 + 依赖的HSP包3。   + 元服务内同一设备类型下所有包大小总和不得超过10MB。 * FA模型：单个HAP包不得超过10MB。 |
+| APP包中各模块大小 | * Stage模型   + 元服务内任意类型的单个包大小都不超过2MB。   + 单个包加上其采用dependency方式依赖的[动态共享包（Harmony Shared Package, HSP）](/docs/tools/coding-debug/ide-hsp)，总大小不超过2MB。 说明：  **若一个HSP包同时被entry包和分包依赖，则该HSP包仅计入entry包大小，不再重复计入分包大小。**例如，元服务包含entry包和分包1，entry包依赖HSP包1和HSP包2，而分包1依赖HSP包1和HSP包3，则：entry包大小 = entry包本身 + 依赖的HSP包1 + 依赖的HSP包2；分包1大小 = 分包1本身 + 依赖的HSP包3。   + 元服务内同一设备类型下所有包大小总和不得超过10MB。 * FA模型：单个HAP包不得超过10MB。 |
 | APP包中HAP包类型 | 元服务包内所有HAP包都必须是免安装类型，即：  * 如元服务为Stage模型，需保证AppScope/app.json5文件的“bundleType”字段值为“atomicService”。 * 如元服务为FA模型，需保证每个HAP包的src/main/config.json文件中“installationFree”字段值均为“true”。 |
 | APP包中各模块数量 | * Stage模型：同一设备类型下仅允许有一个entry包，可以有0-N个feature包或HSP包。 * FA模型：同一设备类型下仅允许有一个entry包，不能有任何feature包或HSP包。 |
 | API Level | APP包使用的API Level ≥ 10。 |

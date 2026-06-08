@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "音频会话管理"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-session/audio-session-management
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-session/audio-session-management
+last_sync: 2026-06-07
+sync_hash: 0b004c18
 ---
-
-
 对于涉及多个音频流并发的场景，系统已预设了默认的[音频焦点策略](/docs/dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency#音频焦点策略)，该策略将对所有音频流（包括播放和录制）实施统一的焦点管理。
 
 当系统提供的默认焦点策略不能满足应用需求时，应用可利用音频会话管理提供的接口，管理应用内音频流的焦点，自定义音频流的焦点策略，调整音频流释放焦点的时机，以满足特定需求。该篇文章的示例代码均为ArkTS，如果需要使用OHAudio开发请参考[使用OHAudio开发音频会话功能(C/C++)](/docs/dev/app-dev/media/audio-kit/audio-session/using-ohaudio-for-session)。

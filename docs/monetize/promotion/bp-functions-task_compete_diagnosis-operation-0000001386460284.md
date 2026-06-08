@@ -3,8 +3,10 @@ title: "综合诊断任务竞争力"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-task_compete_diagnosis-operation-0000001386460284
 format: md
+upstream_id: monetize/promotion/bp-functions-task_compete_diagnosis-operation-0000001386460284
+last_sync: 2026-06-07
+sync_hash: 953ea5a1
 ---
-
 # 综合诊断任务竞争力
 
 1. 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)，在顶部菜单栏点击【推广】页签，确认推广范围为“应用市场应用推广”。选择“任务”，点击右侧的“自定义列”。

@@ -3,8 +3,10 @@ title: "音频投播"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/bpta-audio-cast
 format: md
+upstream_id: dev/app-dev/multi-device/bpta-audio-cast
+last_sync: 2026-06-07
+sync_hash: 9f142731
 ---
-
 # 音频投播
 
 ## 概述

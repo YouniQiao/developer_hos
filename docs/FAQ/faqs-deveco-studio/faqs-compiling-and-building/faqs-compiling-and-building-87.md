@@ -2,8 +2,11 @@
 format: md
 title: "编译报错：platform/OHOS to use this system, please post your config file on discourse.cmake.org so it"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-87
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-87
+last_sync: 2026-06-07
+sync_hash: 4bb4edcb
+upstream_hash: 086182b84fb3
 ---
-
 
 **问题描述**
 

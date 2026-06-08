@@ -2,9 +2,10 @@
 title: "Rawfile开发指导"
 original_url: /docs/dev/ndk-dev/rawfile-guidelines
 format: md
+upstream_id: dev/ndk-dev/rawfile-guidelines
+last_sync: 2026-06-07
+sync_hash: 7969af51
 ---
-
-
 ## 场景介绍
 
 开发者可以通过本指导了解在HarmonyOS应用中，如何使用Native Rawfile接口操作Rawfile目录和文件。功能包括文件列表遍历、文件打开、搜索、读取和关闭Rawfile。

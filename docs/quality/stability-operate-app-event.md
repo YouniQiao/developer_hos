@@ -2,9 +2,10 @@
 title: "应用事件"
 original_url: /docs/quality/stability-operate-app-event
 format: md
+upstream_id: /docs/quality/stability-operate-app-event
+last_sync: 2026-06-07
+sync_hash: b2584936
 ---
-
-
 # 应用事件
 
 ### 概述

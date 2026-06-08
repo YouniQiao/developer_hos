@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发者使用Account Kit的登录能力的管理细则"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-detailedrules
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-detailedrules
+last_sync: 2026-06-07
+sync_hash: 6c60f658
 ---
-
-
 为了保护用户隐私信息，确保用户获得良好的登录体验，根据[《华为开发者服务协议》](https://developer.huawei.com/consumer/cn/doc/start/agreement-0000001052728169)、[《华为APIs使用协议》](/docs/distribute/app-dist/app-market/x20240513/x20209)、[《应用审核指南》](/docs/distribute/app-dist/app-market/x50000/x50104/x50104-overview)、[《元服务审核指南》](/docs/distribute/app-dist/app-market/x50000/x50129/x50129-overview)等相关协议条款及现行法律法规，平台制定了华为账号登录管理细则，使用华为账号登录的应用请遵照执行，具体要求如下：
 
 ## 上架审核要求

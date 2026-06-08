@@ -2,9 +2,10 @@
 title: "游戏发布技术支持"
 original_url: /docs/dev/game-dev/games-relesase-support-0000002514786053
 format: md
+upstream_id: dev/game-dev/games-relesase-support-0000002514786053
+last_sync: 2026-06-07
+sync_hash: 7efe42ff
 ---
-
-
 当您在游戏上架过程中遇到问题时，可以按照以下顺序寻求帮助。
 
 1. 通过[智能客服](https://developer.huawei.com/consumer/cn/customerService/#/bot-dev-top/faq-top/faq-talk-top)查找问题解决方案。

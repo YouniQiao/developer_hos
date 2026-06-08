@@ -2,9 +2,10 @@
 title: "发布指引"
 original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-guide-0000002458282213
 format: md
+upstream_id: distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-guide-0000002458282213
+last_sync: 2026-06-07
+sync_hash: 037b97b7
 ---
-
-
 为了给玩家提供良好、安全、可靠的游戏体验，在小游戏正式上架到华为应用市场前，华为工作人员会审核提交的小游戏信息。
 
 * **了解上架规则，准备小游戏素材**

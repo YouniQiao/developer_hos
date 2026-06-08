@@ -2,9 +2,10 @@
 title: "AppGallery Kit简介"
 original_url: /docs/dev/atomic-dev/atomic-appgallery-development/atomic-appgallery-introduction
 format: md
+upstream_id: dev/atomic-dev/atomic-appgallery-development/atomic-appgallery-introduction
+last_sync: 2026-06-07
+sync_hash: e0bb6cae
 ---
-
-
 AppGallery Kit（应用市场服务）提供应用市场业务的对外开放能力，可以更好地支持元服务的能力。
 
 使用AppGallery Kit为您的元服务提供以下功能和服务：
@@ -28,5 +29,5 @@ AppGallery Kit（应用市场服务）提供应用市场业务的对外开放能
 
 | 能力 | 支持的国家/地区 |
 | --- | --- |
-| 应用市场更新功能 | 请参见[支持的国家/地区](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/appgallery-support-regions)。 |
+| 应用市场更新功能 | 请参见[支持的国家/地区](/docs/dev/app-dev/application-services/scenario-fusion-appendix-support-regions)。 |
 | 隐私管理服务 | 只支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。 |

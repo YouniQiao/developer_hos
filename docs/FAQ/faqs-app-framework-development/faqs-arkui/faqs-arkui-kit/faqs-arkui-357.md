@@ -2,9 +2,10 @@
 title: "状态栏与页面内容发生重叠，如何解决"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-357
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-357
+last_sync: 2026-06-07
+sync_hash: efd225aa
 ---
-
-
 **问题描述**
 
 状态栏与页面内容发生重叠问题存在以下两种场景：

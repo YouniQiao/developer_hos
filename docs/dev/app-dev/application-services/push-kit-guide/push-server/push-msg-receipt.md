@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "（可选）开发消息回执"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-server/push-msg-receipt
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-server/push-msg-receipt
+last_sync: 2026-06-07
+sync_hash: 20909bea
 ---
-
-
 ## 场景介绍
 
 消息回执是指Push Kit服务端将消息推送到用户终端之后，端侧会给Push服务端反馈送达结果，与此同时，Push服务端会将消息送达状态以回执消息形式发送给您的应用回执服务端，方便您获取消息下达端侧后的状态，定位问题等。

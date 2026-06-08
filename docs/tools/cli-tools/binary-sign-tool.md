@@ -3,8 +3,11 @@ title: "二进制签名工具"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/binary-sign-tool
 format: md
+upstream_id: tools/cli-tools/binary-sign-tool
+last_sync: 2026-06-07
+sync_hash: 5f923579
+upstream_hash: 628e9599d8f7
 ---
-
 
 # 二进制签名工具
 

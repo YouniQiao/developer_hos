@@ -3,9 +3,10 @@ title: "@deprecated"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-arktsdoc-deprecated
 format: md
+upstream_id: tools/coding-debug/ide-arktsdoc-deprecated
+last_sync: 2026-06-07
+sync_hash: f44c03f2
 ---
-
-
 # @deprecated
 
 @deprecated标签指明一个标识在代码中已经被弃用。

@@ -2,9 +2,10 @@
 title: "组件导航和页面路由概述"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-introduction
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-set-navigation-routing/arkts-navigation-introduction
+last_sync: 2026-06-07
+sync_hash: da82d4d2
 ---
-
-
 页面是指由布局、组件、交互逻辑等构成的可视化交互单元，承载着特定功能逻辑与信息展示，是用户与应用进行操作交互的核心界面载体。一个完整的应用往往由多个页面组成，组件导航（[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)）和页面路由（[@ohos.router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)）均提供了应用内的页面跳转能力。
 
 * 在组件导航（Navigation）框架下，“页面”通过[NavDestination](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navdestination)组件承载，特指一个NavDestination组件包含的内容。

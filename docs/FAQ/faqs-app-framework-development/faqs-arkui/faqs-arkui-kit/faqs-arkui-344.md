@@ -2,8 +2,11 @@
 title: "如何在Tabs的tabBar中添加其他组件"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-344
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-344
+last_sync: 2026-06-07
+sync_hash: ac788012
+upstream_hash: d6b16f52f7e7
 ---
-
 
 标准Tabs组件不支持在tabBar中添加其他组件，但通过自定义Tabs可实现该需求。
 

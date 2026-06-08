@@ -2,9 +2,10 @@
 format: md
 title: "DevEco Studio启动报错：“Scan files to index fail”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-16
+upstream_id: FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-16
+last_sync: 2026-06-07
+sync_hash: b3e21bb9
 ---
-
-
 **问题现象**
 
 在DevEco Studio上打开项目工程时，启动缓慢，且一会儿后报错：“Scan files to index fail”。

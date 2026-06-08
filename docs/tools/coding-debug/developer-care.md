@@ -3,8 +3,11 @@ title: "开发者关怀"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/developer-care
 format: md
+upstream_id: tools/coding-debug/developer-care
+last_sync: 2026-06-07
+sync_hash: c507acce
+upstream_hash: 9438231986cf
 ---
-
 
 # 开发者关怀
 

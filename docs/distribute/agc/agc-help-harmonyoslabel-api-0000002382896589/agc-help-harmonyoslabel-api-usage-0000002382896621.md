@@ -2,9 +2,10 @@
 title: "HarmonyOS标签开发流程"
 original_url: /docs/distribute/agc/agc-help-harmonyoslabel-api-0000002382896589/agc-help-harmonyoslabel-api-usage-0000002382896621
 format: md
+upstream_id: distribute/agc/agc-help-harmonyoslabel-api-0000002382896589/agc-help-harmonyoslabel-api-usage-0000002382896621
+last_sync: 2026-06-07
+sync_hash: ecfaaa9a
 ---
-
-
 您可以使用HarmonyOS标签服务API实现批量创建和查询HarmonyOS NEXT应用标签或元服务标签。
 
 #### 前提条件

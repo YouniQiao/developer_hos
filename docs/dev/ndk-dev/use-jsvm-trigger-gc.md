@@ -2,9 +2,10 @@
 title: "使用JSVM-API感知JSVM引擎生命周期管理"
 original_url: /docs/dev/ndk-dev/use-jsvm-trigger-gc
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-trigger-gc
+last_sync: 2026-06-07
+sync_hash: d202f912
 ---
-
-
 ## 简介
 
 JSVM-API提供了注册回调函数的能力，用于监测JavaScript虚拟机的内存GC。开发者可以在垃圾回收前后添加自定义逻辑，从而在垃圾回收时执行优化、调试或性能监控操作。

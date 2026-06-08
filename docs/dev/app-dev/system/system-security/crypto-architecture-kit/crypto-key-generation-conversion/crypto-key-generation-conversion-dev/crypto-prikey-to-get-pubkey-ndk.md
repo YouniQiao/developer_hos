@@ -2,9 +2,10 @@
 title: "使用私钥对象获取公钥对象(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-prikey-to-get-pubkey-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-generation-conversion/crypto-key-generation-conversion-dev/crypto-prikey-to-get-pubkey-ndk
+last_sync: 2026-06-07
+sync_hash: 263258dc
 ---
-
-
 从API version 23开始，算法库支持从私钥对象中获取公钥对象的操作。
 
 以RSA为例，根据私钥对象获取公钥对象。

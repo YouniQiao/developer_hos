@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "数字信封密钥(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-import/huks-import-envelop-key-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-import/huks-import-envelop-key-ndk
+last_sync: 2026-06-07
+sync_hash: bde1189c
+upstream_hash: 938a3d7be200
 ---
-
 
 从API 23开始支持[数字信封](/docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-generation-import/huks-key-import/huks-key-import-overview#数字信封导入)特性。
 

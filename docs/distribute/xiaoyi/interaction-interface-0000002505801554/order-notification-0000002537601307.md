@@ -3,9 +3,10 @@ title: "订单通知接口"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/interaction-interface-0000002505801554/order-notification-0000002537601307
 format: md
+upstream_id: distribute/xiaoyi/interaction-interface-0000002505801554/order-notification-0000002537601307
+last_sync: 2026-06-07
+sync_hash: e8883d85
 ---
-
-
 # 订单通知接口
 
 **功能介绍**

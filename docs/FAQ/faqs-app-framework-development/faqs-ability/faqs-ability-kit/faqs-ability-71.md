@@ -2,9 +2,10 @@
 format: md
 title: "如何获取App版本号，版本名，屏幕分辨率等信息"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-71
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-71
+last_sync: 2026-06-07
+sync_hash: 952dc240
 ---
-
-
 1. 通过@kit.AbilityKit中的bundleManager模块查询bundleInfo，其中包含App版本号和版本名。
 
    ```

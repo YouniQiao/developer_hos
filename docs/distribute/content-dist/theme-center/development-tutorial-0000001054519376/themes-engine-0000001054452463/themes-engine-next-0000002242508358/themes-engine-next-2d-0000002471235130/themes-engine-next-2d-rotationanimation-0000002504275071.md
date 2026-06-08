@@ -3,9 +3,10 @@ title: "旋转动画&lt;RotationAnimation&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2d-0000002471235130/themes-engine-next-2d-rotationanimation-0000002504275071
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2d-0000002471235130/themes-engine-next-2d-rotationanimation-0000002504275071
+last_sync: 2026-06-07
+sync_hash: 29f4257c
 ---
-
-
 # 旋转动画&lt;RotationAnimation&gt;
 
 ## 功能概述

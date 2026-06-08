@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "阅读进度通知"
 original_url: /docs/dev/app-dev/application-services/reader-kit-guide/reader-interaction/reader-progress
 format: md
+upstream_id: dev/app-dev/application-services/reader-kit-guide/reader-interaction/reader-progress
+last_sync: 2026-06-07
+sync_hash: ecc07c32
 ---
-
-
 当页面展示时，会通过页面展示回调接口返回页面渲染信息。页面渲染信息提供用于阅读进度跳转的domPos及resourceIndex属性，开发者可将属性缓存到数据库当中，用于阅读进度的恢复。
 
 ## 接口说明

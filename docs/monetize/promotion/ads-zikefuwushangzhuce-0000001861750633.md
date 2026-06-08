@@ -3,8 +3,10 @@ title: "子客服务商注册"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-zikefuwushangzhuce-0000001861750633
 format: md
+upstream_id: monetize/promotion/ads-zikefuwushangzhuce-0000001861750633
+last_sync: 2026-06-07
+sync_hash: c1f28360
 ---
-
 # 子客服务商注册
 
 ## 子客服务商账户开通步骤

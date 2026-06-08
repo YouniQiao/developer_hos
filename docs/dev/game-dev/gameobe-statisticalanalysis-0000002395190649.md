@@ -2,9 +2,10 @@
 title: "统计分析"
 original_url: /docs/dev/game-dev/gameobe-statisticalanalysis-0000002395190649
 format: md
+upstream_id: dev/game-dev/gameobe-statisticalanalysis-0000002395190649
+last_sync: 2026-06-07
+sync_hash: ea269618
 ---
-
-
 联机对战服务使用后，AGC控制台会自动统计DAU、房间数、用户停留时长、匹配结果、错误码、登录成功率以及延时趋势等数据。您可以通过查看相关数据统计图，了解联机对战服务的使用效果。
 
 ## 前提条件

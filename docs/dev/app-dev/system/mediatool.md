@@ -2,9 +2,10 @@
 title: "媒体库资源访问工具"
 original_url: /docs/dev/app-dev/system/mediatool
 format: md
+upstream_id: dev/app-dev/system/mediatool
+last_sync: 2026-06-07
+sync_hash: 0562db2b
 ---
-
-
 开发者可通过[mediatool工具](#mediatool工具)或[hdc命令](#hdc命令)操作媒体库资源。媒体库为图库提供和管理数据，媒体库中的图片视频会在图库界面呈现。
 
 ## mediatool工具

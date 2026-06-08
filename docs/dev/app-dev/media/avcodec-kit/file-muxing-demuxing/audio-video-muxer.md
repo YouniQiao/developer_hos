@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "媒体数据封装"
 original_url: /docs/dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-muxer
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-muxer
+last_sync: 2026-06-07
+sync_hash: 11ebc2d3
 ---
-
-
 开发者可以调用本模块的Native API接口，完成音视频封装，即将音频、视频等编码后的媒体数据，按一定的格式存储到文件里。
 
 当前支持的封装能力请参考AVCodec支持的格式中的[媒体数据封装](/docs/dev/app-dev/media/avcodec-kit/avcodec-support-formats#媒体数据封装)。

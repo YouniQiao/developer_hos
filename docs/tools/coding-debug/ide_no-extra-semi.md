@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-extra-semi"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-extra-semi
 format: md
+upstream_id: tools/coding-debug/ide_no-extra-semi
+last_sync: 2026-06-07
+sync_hash: aef45cfc
 ---
-
-
 # @typescript-eslint/no-extra-semi
 
 禁止使用不必要的分号。

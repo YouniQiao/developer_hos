@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用入门"
 original_url: /docs/dev/app-dev/application-services/iap-dev-guide
 format: md
+upstream_id: dev/app-dev/application-services/iap-dev-guide
+last_sync: 2026-06-07
+sync_hash: 2dd83119
 ---
-
-
 ## 快速上手体验
 
 在正式开发应用之前，开发者可以通过[Codelab](https://developer.huawei.com/consumer/cn/codelabsPortal/carddetails/tutorials_IAPKit-ArkTS)快速体验一个应用的开发过程。

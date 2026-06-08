@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "Map Kit（地图服务）"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide
+last_sync: 2026-06-07
+sync_hash: c19a7e1c
+upstream_hash: 021c174b5772
 ---
-
 
 * **[Map Kit简介](/docs/dev/app-dev/application-services/map-kit-guide/map-introduction)**
 * **[开发准备](/docs/dev/app-dev/application-services/map-config-agc)**

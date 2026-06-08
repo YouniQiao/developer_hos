@@ -2,9 +2,10 @@
 title: "aa工具"
 original_url: /docs/dev/app-dev/system/aa-tool
 format: md
+upstream_id: dev/app-dev/system/aa-tool
+last_sync: 2026-06-07
+sync_hash: bfc7e402
 ---
-
-
 Ability assistant（Ability助手，简称为aa），是用于启动应用和启动测试用例的工具，为开发者提供基本的应用调试和测试能力，例如启动应用组件、强制停止进程、打印应用组件相关信息等。
 
 ## 环境要求
@@ -1142,4 +1143,4 @@ Cannot debug applications using a release certificate.
 
 使用Debug签名证书重新签名，安装新签名出的HAP后，再尝试执行该命令。
 
-签名工具及签名证书的生成方式可以参考：[签名工具指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
+签名工具及签名证书的生成方式可以参考：[签名工具指导](/docs/tools/coding-debug/ide-signing)。

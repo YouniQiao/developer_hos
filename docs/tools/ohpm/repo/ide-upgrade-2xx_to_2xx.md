@@ -2,9 +2,10 @@
 title: "2.X.X/5.X.X升级至更高版本"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-upgrade-2xx_to_2xx
+upstream_id: tools/ohpm/repo/ide-upgrade-2xx_to_2xx
+last_sync: 2026-06-07
+sync_hash: b237018a
 ---
-
-
 # 2.X.X/5.X.X升级至更高版本
 
 如需将ohpm-repo版本2.X.X/5.X.X版本升级到更高版本，可参考此文档。

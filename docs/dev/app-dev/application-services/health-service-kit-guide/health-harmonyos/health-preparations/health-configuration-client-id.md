@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "配置Client ID"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-preparations/health-configuration-client-id
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-preparations/health-configuration-client-id
+last_sync: 2026-06-07
+sync_hash: 789c71f4
 ---
-
-
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)平台，在“开发与服务”中选择目标应用，获取“项目设置 > 常规 > 应用”的Client ID。
 
    ![](./img/b1899d5a.png)

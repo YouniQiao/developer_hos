@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "管理归因角色"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-preparations/store-attribution-register
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-preparations/store-attribution-register
+last_sync: 2026-06-07
+sync_hash: 59a741f8
+upstream_hash: f6f5794c2849
 ---
-
 
 应用生态伙伴通过应用归因服务云端管理台注册归因角色及配置信息，包括：角色、名称、回传地址（用于接收归因结果回传的URL）、公钥。注册成功后平台生成归因角色ID。
 

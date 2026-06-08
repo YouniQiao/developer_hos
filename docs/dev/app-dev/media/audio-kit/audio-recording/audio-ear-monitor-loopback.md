@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "实现音频低时延耳返"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-recording/audio-ear-monitor-loopback
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-recording/audio-ear-monitor-loopback
+last_sync: 2026-06-07
+sync_hash: 3af423e7
 ---
-
-
 从API version 20开始，支持音频低时延耳返。
 
 AudioLoopback是音频返听器，可将音频以更低时延的方式实时传输到耳机中，让用户可以实时听到自己或者其他的相关声音。

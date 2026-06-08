@@ -2,9 +2,10 @@
 format: md
 title: "双层嵌套list，如何使用LazyForEach起作用"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-337
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-337
+last_sync: 2026-06-07
+sync_hash: 97757080
 ---
-
-
 **问题场景**
 
 在外层ListA中，每个ListItem包含一个内层List，内层List使用LazyForEach实现懒加载效果。设置外层ListItem高度会导致内层LazyForEach失效（所有项一次性加载），而不设置高度时虽可正常懒加载，但可能导致内层列表数据显示不全。

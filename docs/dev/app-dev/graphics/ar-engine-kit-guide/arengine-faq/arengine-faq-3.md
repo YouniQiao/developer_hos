@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "反光、光线暗或者弱纹理场景（输入图像颜色变化小）下无法识别平面"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/arengine-faq/arengine-faq-3
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/arengine-faq/arengine-faq-3
+last_sync: 2026-06-07
+sync_hash: 37fe0302
+upstream_hash: c0298c68b133
 ---
-
 
 ## 现象描述
 

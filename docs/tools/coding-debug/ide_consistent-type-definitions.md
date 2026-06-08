@@ -3,9 +3,10 @@ title: "@typescript-eslint/consistent-type-definitions"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_consistent-type-definitions
 format: md
+upstream_id: tools/coding-debug/ide_consistent-type-definitions
+last_sync: 2026-06-07
+sync_hash: 0cd4890c
 ---
-
-
 # @typescript-eslint/consistent-type-definitions
 
 强制使用一致的类型声明样式，仅使用“interface”或者仅使用“type”。

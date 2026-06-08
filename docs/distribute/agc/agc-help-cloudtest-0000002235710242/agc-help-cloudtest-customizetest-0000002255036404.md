@@ -2,9 +2,10 @@
 title: "自定义测试"
 original_url: /docs/distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-customizetest-0000002255036404
 format: md
+upstream_id: distribute/agc/agc-help-cloudtest-0000002235710242/agc-help-cloudtest-customizetest-0000002255036404
+last_sync: 2026-06-07
+sync_hash: a0e4a780
 ---
-
-
 您可以选择您关注的测试专项，例如兼容性、稳定性、性能、功耗、UX或隐私进行测试。系统会默认选择当前最新和热门的机型，帮助您提前发现问题，提升用户侧应用体验。
 
 #### 前提条件

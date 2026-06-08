@@ -3,8 +3,10 @@ title: "推荐-系统投放-OCPC任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/mktapi-adtask-recommend-sys-ocpc-0000002489881848
 format: md
+upstream_id: monetize/promotion/mktapi-adtask-recommend-sys-ocpc-0000002489881848
+last_sync: 2026-06-07
+sync_hash: 6f84185b
 ---
-
 # 推荐-系统投放-OCPC任务
 
 ## 功能介绍

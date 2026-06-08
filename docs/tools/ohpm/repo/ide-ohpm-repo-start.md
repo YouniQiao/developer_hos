@@ -2,9 +2,10 @@
 title: "ohpm-repo start"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-start
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-start
+last_sync: 2026-06-07
+sync_hash: 87dbefff
 ---
-
-
 # ohpm-repo start
 
 启动ohpm-repo服务。

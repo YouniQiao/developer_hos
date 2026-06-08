@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "应用开发者申请资质说明"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-application-qualifications
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-application-qualifications
+last_sync: 2026-06-07
+sync_hash: 8869017f
 ---
-
-
 ## 个人开发者接入资质审核要求
 
 * 个人开发者应用需上架至华为应用市场。个人开发者应用未上架华为应用市场，暂不开放Health Service Kit数据。

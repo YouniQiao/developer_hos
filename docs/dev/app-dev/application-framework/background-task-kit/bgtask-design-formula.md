@@ -2,9 +2,10 @@
 title: "Background Tasks Kit接入规范"
 original_url: /docs/dev/app-dev/application-framework/background-task-kit/bgtask-design-formula
 format: md
+upstream_id: dev/app-dev/application-framework/background-task-kit/bgtask-design-formula
+last_sync: 2026-06-07
+sync_hash: 73b6974a
 ---
-
-
 ## 接入规范
 
 为维护华为通知生态秩序，保障用户合法权益和良好的使用体验，根据现行法律法规及[《华为开发者服务协议》](https://developer.huawei.com/consumer/cn/doc/start/agreement-0000001052728169)、[《华为APIs使用协议》](https://developer.huawei.com/consumer/cn/doc/20209)、[《应用审核指南》](https://developer.huawei.com/consumer/cn/doc/50104)、[《元服务审核指南》](/docs/distribute/app-dist/app-market/x50000/x50129/x50129-overview)，特制定本规范。所有发布上架到华为应用市场且使用后台任务的HarmonyOS应用、联运应用及元服务（以下简称应用）应当遵守本规范。

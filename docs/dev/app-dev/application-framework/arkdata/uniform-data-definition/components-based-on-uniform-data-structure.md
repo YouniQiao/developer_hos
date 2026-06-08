@@ -2,9 +2,10 @@
 title: "基于标准化数据结构的控件 (ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/components-based-on-uniform-data-structure
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/uniform-data-definition/components-based-on-uniform-data-structure
+last_sync: 2026-06-07
+sync_hash: 26570937
 ---
-
-
 ## 场景介绍
 
 我们提供了部分标准化数据结构的预置卡片，当需要展示标准化数据结构数据时，可以直接引用提供的预置卡片，快捷地展示数据。

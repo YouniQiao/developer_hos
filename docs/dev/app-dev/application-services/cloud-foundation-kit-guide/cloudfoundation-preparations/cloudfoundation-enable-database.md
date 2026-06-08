@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开通云数据库服务"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-preparations/cloudfoundation-enable-database
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-preparations/cloudfoundation-enable-database
+last_sync: 2026-06-07
+sync_hash: 62b3c758
 ---
-
-
 首次使用云数据库服务前，需要先开通此服务。如果已经开通，可跳过本步骤。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“开发与服务”。

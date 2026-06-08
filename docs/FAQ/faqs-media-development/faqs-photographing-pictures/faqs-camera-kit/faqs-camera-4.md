@@ -2,9 +2,10 @@
 title: "如何检测当前相机服务的状态"
 original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-4
 format: md
+upstream_id: FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-4
+last_sync: 2026-06-07
+sync_hash: 54616e61
 ---
-
-
 设置状态回调以返回相机状态。
 
 ```

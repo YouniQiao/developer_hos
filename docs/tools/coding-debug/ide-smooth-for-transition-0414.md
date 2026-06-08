@@ -3,9 +3,10 @@ title: "转场操作流畅"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-smooth-for-transition-0414
 format: md
+upstream_id: tools/coding-debug/ide-smooth-for-transition-0414
+last_sync: 2026-06-07
+sync_hash: b54c79cb
 ---
-
-
 # 转场操作流畅
 
 #### 规则详情

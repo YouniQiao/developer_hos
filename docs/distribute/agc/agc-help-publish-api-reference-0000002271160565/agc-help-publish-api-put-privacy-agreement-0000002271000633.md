@@ -2,9 +2,10 @@
 title: "提交隐私政策协议"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-put-privacy-agreement-0000002271000633
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-put-privacy-agreement-0000002271000633
+last_sync: 2026-06-07
+sync_hash: cdf0d0b0
 ---
-
-
 #### 功能介绍
 
 此接口用于提交HarmonyOS应用/元服务的隐私政策协议。

@@ -2,9 +2,10 @@
 format: md
 title: "在Native侧如何精准获取ArkTS侧传入的字符串长度"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-1
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-1
+last_sync: 2026-06-07
+sync_hash: f5c177bd
 ---
-
-
 **问题现象**
 
 在Native侧，转换ArkTS侧的字符串到char[]数组时无法准确获取字符串长度。频繁使用NAPI\_AUTO\_LENGTH宏定义会增加内存开销，影响性能。

@@ -2,9 +2,10 @@
 format: md
 title: "常见问题"
 original_url: /docs/FAQ/faqs-deveco-testing-faq
+upstream_id: FAQ/faqs-deveco-testing-faq
+last_sync: 2026-06-07
+sync_hash: e56d094c
 ---
-
-
 * **[针对 HarmonyOS 应用测试，DevEco Testing提供了哪些配套测试能力](/docs/FAQ/faqs-deveco-testing/faqs-deveco-testing-faq/faqs-deveco-testing-faq-1)**
 * **[设备已连接，为什么设备列表中未显示该设备](/docs/FAQ/faqs-deveco-testing/faqs-deveco-testing-faq/faqs-deveco-testing-faq-2)**
 * **[测试任务执行时，避免PC进入睡眠状态，如何设置](/docs/FAQ/faqs-deveco-testing/faqs-deveco-testing-faq/faqs-deveco-testing-faq-3)**

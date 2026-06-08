@@ -3,8 +3,10 @@ title: "AppGallery隐私标签介绍"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/privacy-label
 format: md
+upstream_id: distribute/app-dist/app-market/privacy-label
+last_sync: 2026-06-07
+sync_hash: 9b8efd15
 ---
-
 # AppGallery隐私标签服务说明
 
 为了帮助终端用户在下载应用前方便快捷的了解您的应用使用其个人数据的情况，您在AppGallery Connect上架应用时，需要填写应用及应用中集成的第三方组件所需收集的个人数据项和数据使用目的，以便用户在AppGallery客户端应用详情中查看。

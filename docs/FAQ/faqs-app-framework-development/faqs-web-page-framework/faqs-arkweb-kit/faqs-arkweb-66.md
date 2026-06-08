@@ -2,9 +2,10 @@
 format: md
 title: "web拦截如何处理文件"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-66
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-66
+last_sync: 2026-06-07
+sync_hash: 67fc3c08
 ---
-
-
 **问题描述**
 
 当拦截到图片请求时，可以通过response.setResponseData()方法返回本地沙盒内的图片文件。由于setResponseData方法仅支持string | number和Resource参数，因此需要将沙盒内的图片文件转换为Resource对象。

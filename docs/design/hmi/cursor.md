@@ -3,8 +3,10 @@ title: 光标交互
 sidebar_label: 光标交互
 original_url: /docs/design/hmi/cursor
 format: md
+upstream_id: design/hmi/cursor
+last_sync: 2026-06-07
+sync_hash: e6d033af
 ---
-
 # 光标交互
 
 当用户使用指向设备 (鼠标、触摸板、 AR/VR 手柄等) 与应用程序进行间接交互时，光标指向的对象和光标本身应提供适当的视觉反馈以表达对象的可交互性。同时，应考虑相比手指触摸的交互，利用光标精细化操作和悬浮操作的特性，以提升应用生产力、简化交互任务和增强信息展示。本节规范主要适用于使用鼠标和触摸板来操作平面光标的场景，基本设计原则可推广至 AR/VR 手柄等空间交互场景。

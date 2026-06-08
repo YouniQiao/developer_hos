@@ -2,9 +2,10 @@
 title: "使用Web组件显示网页弹框"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-dialog
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-page-interaction/web-dialog
+last_sync: 2026-06-07
+sync_hash: 45f5d7ef
 ---
-
-
 在HTML中，可以使用JavaScript创建三种类型的弹框：警告框window.alert(message)、确认框window.confirm(message)和提示框window.prompt(message, defaultValue)。这些弹框可以用于向用户传递信息、确认操作或请求输入。
 
 当前，ArkWeb暂未提供默认的应用弹框。如果需要网页的弹框能够正常使用，应用需要通过[onAlert](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onalert)、[onConfirm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onconfirm)和[onPrompt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onprompt9)接口自定义弹框功能。

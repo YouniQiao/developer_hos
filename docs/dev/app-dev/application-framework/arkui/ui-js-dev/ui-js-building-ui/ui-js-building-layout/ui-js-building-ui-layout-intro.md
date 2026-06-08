@@ -2,9 +2,10 @@
 title: "布局说明"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-building-ui/ui-js-building-layout/ui-js-building-ui-layout-intro
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-building-ui/ui-js-building-layout/ui-js-building-ui-layout-intro
+last_sync: 2026-06-07
+sync_hash: 6e6cc093
 ---
-
-
 设备的基准宽度为720px（px为逻辑像素，非物理像素），实际显示效果会根据实际屏幕宽度进行缩放。
 
 其换算关系如下：

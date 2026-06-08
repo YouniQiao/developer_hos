@@ -2,8 +2,11 @@
 title: "AGCAuthError"
 original_url: /docs/distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-agcautherror-0000002273781653
 format: md
+upstream_id: distribute/agc/agc-help-auth-api-0000002273777077/agc-help-auth-api-agcautherror-0000002273781653
+last_sync: 2026-06-07
+sync_hash: a0a05067
+upstream_hash: cb591ac2bc05
 ---
-
 
 异常行为枚举类。
 

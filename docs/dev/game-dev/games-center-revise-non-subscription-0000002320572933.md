@@ -2,9 +2,10 @@
 title: "消耗型/非消耗型/非续期订阅商品"
 original_url: /docs/dev/game-dev/games-center-revise-non-subscription-0000002320572933
 format: md
+upstream_id: dev/game-dev/games-center-revise-non-subscription-0000002320572933
+last_sync: 2026-06-07
+sync_hash: 7a17abd9
 ---
-
-
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要修改商品的应用。
 3. 在“运营”页签下的左侧导航栏中，选择“产品运营 &gt; 商品管理”。

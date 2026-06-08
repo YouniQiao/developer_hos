@@ -2,9 +2,10 @@
 format: md
 title: "DevEco Studio安装HAP时报错“FileTransfer Failed: [Fail]Error opening file: operation not permitted”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-61
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-61
+last_sync: 2026-06-07
+sync_hash: 9452095d
 ---
-
-
 **问题现象**
 
 DevEco Studio安装HAP时报错“FileTransfer Failed: [Fail]Error opening file: operation not permitted”。

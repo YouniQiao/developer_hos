@@ -2,9 +2,10 @@
 format: md
 title: "如何在Web请求时添加header头"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-37
+upstream_id: FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-37
+last_sync: 2026-06-07
+sync_hash: 602150d5
 ---
-
-
 可以通过loadUrl方法设置headers。该方法接收两个参数：url表示需要加载的URL，headers为数组类型表示附加的HTTP请求头。
 
 ```

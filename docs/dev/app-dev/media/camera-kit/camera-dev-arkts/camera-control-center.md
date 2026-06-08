@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "相机控制器(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-control-center
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-control-center
+last_sync: 2026-06-07
+sync_hash: 505d3f00
 ---
-
-
 从API version 20开始，相机框架通过相机控制器，为应用在直播场景提供美颜、虚化等能力。
 
 相机控制器为直播和视频通话场景设计，目前仅支持在前置镜头的录像模式下使用，最高可支持1080P分辨率和30fps帧率。

@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "播放"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts
+last_sync: 2026-06-07
+sync_hash: f8434fde
+upstream_hash: 36bb47968f33
 ---
-
 
 * **[使用AVPlayer播放音频(C/C++)](/docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-playback-c/using-ndk-avplayer-for-playback)**
 * **[使用AVPlayer播放视频(C/C++)](/docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-playback-c/using-ndk-avplayer-for-video-playback)**

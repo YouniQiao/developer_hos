@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "系统字体的信息获取和使用（C/C++）"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/font-manager/system-font-c
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/text/font-manager/system-font-c
+last_sync: 2026-06-07
+sync_hash: da124d51
 ---
-
-
 ## 场景介绍
 
 系统字体是指操作系统预设的字体，用于在没有指定自定义字体时显示文本，确保文本的可读性和一致性。默认的系统字体为“HarmonyOS Sans”。

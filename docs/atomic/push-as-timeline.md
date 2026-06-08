@@ -3,9 +3,10 @@ title: "推送基于账号的服务动态消息"
 original_url: /docs/dev/atomic-dev/atomic-push-development/push-as-timeline
 has_merged_cells: true
 format: md
+upstream_id: dev/atomic-dev/atomic-push-development/push-as-timeline
+last_sync: 2026-06-07
+sync_hash: 7d4a1b89
 ---
-
-
 ## 场景介绍
 
 服务动态消息是提供给开发者的B2C（Business-to-Customer）消息能力，通过服务动态消息，开发者可以基于华为支付订单号或用户前端场景化button获取到的code，向用户推送关键节点的动态消息，及时提醒用户订单进度，帮助用户聚焦正在进行的任务，方便快速查看和即时处理的通知形态。

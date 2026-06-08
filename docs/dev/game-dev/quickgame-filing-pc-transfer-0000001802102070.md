@@ -2,9 +2,10 @@
 title: "转移核准（备案）"
 original_url: /docs/dev/game-dev/quickgame-filing-pc-transfer-0000001802102070
 format: md
+upstream_id: dev/game-dev/quickgame-filing-pc-transfer-0000001802102070
+last_sync: 2026-06-07
+sync_hash: 039ebef6
 ---
-
-
 ![](./img/bbd47331.png)
 
 若主账号[开启“账号管理功能”开关](/docs/dev/game-dev/quickgame-filing-account-0000001885962814#ZH-CN_TOPIC_0000001885962814__li1536716016483)，该核准（备案）方式仅限在主账号下操作。

@@ -2,9 +2,9 @@
 title: 字体图标组件
 sidebar_label: 字体图标组件
 format: md
+upstream_id: _local
+last_sync: 2026-06-08
 ---
-
-
 # 字体图标组件
 
 HarmonyOS 设计资源库，包含字体、图标、组件库、机框等丰富的设计素材，帮助设计师快速准确地完成 HarmonyOS 应用设计。

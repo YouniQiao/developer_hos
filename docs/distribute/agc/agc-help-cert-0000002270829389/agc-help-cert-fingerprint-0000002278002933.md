@@ -2,9 +2,10 @@
 title: "配置公钥指纹"
 original_url: /docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-cert-fingerprint-0000002278002933
 format: md
+upstream_id: distribute/agc/agc-help-cert-0000002270829389/agc-help-cert-fingerprint-0000002278002933
+last_sync: 2026-06-07
+sync_hash: 06f4062d
 ---
-
-
 公钥指纹是应用签名证书（.cer文件）的摘要信息，用于校验应用的真实性。如您的应用当前集成的华为相关服务（如华为账号服务）依赖公钥指纹，您需要在应用调试或上架前将公钥指纹配置到AppGallery Connect。
 
 ![](../img/agc-help-cert-fingerprint-0000002278002933_0.png)

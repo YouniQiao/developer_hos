@@ -2,9 +2,10 @@
 title: "建立应用侧与前端页面数据通道"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/web-app-page-data-channel
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-use-frontend-page-js/web-app-page-data-channel
+last_sync: 2026-06-07
+sync_hash: 4837b177
 ---
-
-
 前端页面和应用侧之间可以用[createWebMessagePorts()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#createwebmessageports)接口创建消息端口来实现两端的通信。
 
 在下面的示例中，应用侧页面中通过createWebMessagePorts方法创建两个消息端口，再把其中一个端口通过[postMessage()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#postmessage)接口发送到前端页面，便可以在前端页面和应用侧之间互相发送消息。端口使用完毕后或Webview对象销毁前通过[close](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webmessageport#close)接口关闭端口。

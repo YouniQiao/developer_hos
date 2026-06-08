@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-explicit-any"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-explicit-any
 format: md
+upstream_id: tools/coding-debug/ide_no-explicit-any
+last_sync: 2026-06-07
+sync_hash: 9a4b5827
 ---
-
-
 # @typescript-eslint/no-explicit-any
 
 不允许使用“any”类型。

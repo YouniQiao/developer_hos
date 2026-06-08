@@ -2,9 +2,10 @@
 title: "新游首发"
 original_url: /docs/dev/game-dev/games-quickgame-first-applyfor-0000002317894940
 format: md
+upstream_id: dev/game-dev/games-quickgame-first-applyfor-0000002317894940
+last_sync: 2026-06-07
+sync_hash: c3be904f
 ---
-
-
 快游戏首发是指您的快游戏首次在华为渠道正式上架。华为渠道将为首发游戏提供推广资源，这可以让新游戏在第一时间获得相应的曝光量，并在短期内为您带来一定的用户量，若是优质的快游戏将获得更好的首发推广资源。
 
 ## 首发资源位

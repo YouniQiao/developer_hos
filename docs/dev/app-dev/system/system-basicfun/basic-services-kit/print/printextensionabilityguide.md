@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "打印扩展能力"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/print/printextensionabilityguide
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/print/printextensionabilityguide
+last_sync: 2026-06-07
+sync_hash: 0f608d8d
 ---
-
-
 ## 概述
 
 打印扩展能力从API version 14开始支持。打印扩展能力是对系统打印功能的扩展，允许开发者以软件的方式模拟打印机行为，实现与上层应用的打印交互。通过该扩展能力，开发者可以实现特殊场景下的定制化打印逻辑，在统一框架下灵活开发差异化功能，提升解决方案的适应性与可维护性。

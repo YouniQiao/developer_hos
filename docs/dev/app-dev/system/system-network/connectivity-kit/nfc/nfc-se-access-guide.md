@@ -2,9 +2,10 @@
 title: "安全单元访问开发指南"
 original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/nfc/nfc-se-access-guide
 format: md
+upstream_id: dev/app-dev/system/system-network/connectivity-kit/nfc/nfc-se-access-guide
+last_sync: 2026-06-07
+sync_hash: e586e5c6
 ---
-
-
 ## 简介
 
 电子设备上可能存在一个或多个安全单元（SecureElement，简称SE），比如有eSE(Embedded SE)和SIM卡。安全单元的访问控制，通过GPAC（GlobalPlatform Access Control）规范实现。

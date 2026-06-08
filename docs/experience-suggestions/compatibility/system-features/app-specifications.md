@@ -2,9 +2,10 @@
 title: "应用规格"
 original_url: /docs/experience-suggestions/compatibility/system-features/app-specifications
 format: md
+upstream_id: experience-suggestions/compatibility/system-features/app-specifications
+last_sync: 2026-06-07
+sync_hash: 7554afd1
 ---
-
-
 # 应用规格
 
 |  |  |

@@ -2,9 +2,10 @@
 title: "Web帧率问题分析"
 original_url: /docs/quality/web-frame-rate-performance-analysis
 format: md
+upstream_id: /docs/quality/web-frame-rate-performance-analysis
+last_sync: 2026-06-07
+sync_hash: 1e9c6de2
 ---
-
-
 # Web帧率问题分析
 
 ## 概述

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "自定义界面扫码"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-customscan
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-customscan
+last_sync: 2026-06-07
+sync_hash: f283a9cc
 ---
-
-
 ## 基本概念
 
 自定义界面扫码能力提供了相机流控制接口，可根据自身需求自定义扫码界面，适用于对扫码界面有定制化需求的应用开发。

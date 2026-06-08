@@ -2,9 +2,10 @@
 format: md
 title: "应用框架开发"
 original_url: /docs/FAQ/faqs-app-framework-development
+upstream_id: FAQ/faqs-app-framework-development
+last_sync: 2026-06-07
+sync_hash: 5b9f4c8b
 ---
-
-
 * **[程序包结构](/docs/FAQ/faqs-package-structure)**
 * **[程序框架](/docs/FAQ/faqs-ability)**
 * **[ArkTS语言](/docs/FAQ/faqs-arkts)**

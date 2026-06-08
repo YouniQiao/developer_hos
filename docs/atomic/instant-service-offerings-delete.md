@@ -2,9 +2,10 @@
 title: "删除商品"
 original_url: /docs/dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-delete
 format: md
+upstream_id: dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-delete
+last_sync: 2026-06-07
+sync_hash: c4ae80bb
 ---
-
-
 ## 功能介绍
 
 “删除商品”功能用于彻底移除平台中已不再需要的商品信息。该操作仅对状态为“草稿”或“已下架”的商品生效，调用成功后，商品将从平台中被删除，所有相关信息不可恢复。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用剪贴板进行复制粘贴 (C/C++)"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/native-use-pasteboard
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/native-use-pasteboard
+last_sync: 2026-06-07
+sync_hash: f324c318
 ---
-
-
 ## 场景介绍
 
 剪贴板为开发者提供数据的复制粘贴能力。支持对纯文本、超文本、URI等内容的操作。

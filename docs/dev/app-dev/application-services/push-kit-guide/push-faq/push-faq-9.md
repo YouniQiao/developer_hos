@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "应用处于后台时应用内如何接收消息"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-9
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-9
+last_sync: 2026-06-07
+sync_hash: 3eea234f
 ---
-
-
 应用处于后台时仅有如下两个场景可以在应用内接收消息：
 
 * 若应用需要实现语音播报等能力时，服务端可发送**语音播报消息**（即[push-type](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-intro#场景介绍)为**2**）。该场景中客户端应用内消息接收请参考RemoteNotificationExtensionAbility中[接口调用示例](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-remote-notification-extension-ability#onreceivemessage)。

@@ -2,9 +2,10 @@
 title: "删除测试版本"
 original_url: /docs/distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-delete-test-version-0000002236201346
 format: md
+upstream_id: distribute/agc/agc-help-test-api-reference-0000002271000709/agc-help-test-api-delete-test-version-0000002236201346
+last_sync: 2026-06-07
+sync_hash: d9536bc7
 ---
-
-
 #### 功能介绍
 
 此接口用于删除测试版本。

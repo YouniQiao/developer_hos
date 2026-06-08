@@ -3,9 +3,10 @@ title: "跨语言代码编辑"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-cross-language-code-editing
 format: md
+upstream_id: tools/coding-debug/ide-cross-language-code-editing
+last_sync: 2026-06-07
+sync_hash: 806dc033
 ---
-
-
 # 跨语言代码编辑
 
 #### 生成胶水代码函数框架

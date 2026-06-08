@@ -2,9 +2,10 @@
 title: "视频编解码宽高、跨距与裁剪信息说明"
 original_url: /docs/dev/app-dev/media/video-dimension-guide
 format: md
+upstream_id: dev/app-dev/media/video-dimension-guide
+last_sync: 2026-06-07
+sync_hash: f1b16fa3
 ---
-
-
 ## 概述
 
 在视频编解码（Video Codec）开发中，图像的**宽度**和**高度**存在多种表示形式，同时硬件处理通常需要内存对齐（跨距），解码输出还可能涉及**裁剪区域**。本文档系统梳理视频编解码API中涉及的尺寸相关参数及其关系，帮助开发者正确理解和使用这些参数。

@@ -3,8 +3,10 @@ title: "查询创意"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-advertising-creative2-0000001338379165
 format: md
+upstream_id: monetize/promotion/marketing-api-advertising-creative2-0000001338379165
+last_sync: 2026-06-07
+sync_hash: f266c1dd
 ---
-
 # 查询创意
 
 您通过本接口可以查询创意的列表数据。

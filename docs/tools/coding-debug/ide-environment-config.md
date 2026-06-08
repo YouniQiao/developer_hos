@@ -3,9 +3,10 @@ title: "配置代理"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-environment-config
 format: md
+upstream_id: tools/coding-debug/ide-environment-config
+last_sync: 2026-06-07
+sync_hash: a2a09781
 ---
-
-
 # 配置代理
 
 DevEco Studio开发环境依赖于网络环境，需要连接上网络才能确保工具的正常使用。

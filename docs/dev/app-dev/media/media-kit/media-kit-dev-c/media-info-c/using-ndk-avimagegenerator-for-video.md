@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用AVImageGenerator获取视频帧(C/C++)"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-info-c/using-ndk-avimagegenerator-for-video
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-c/media-info-c/using-ndk-avimagegenerator-for-video
+last_sync: 2026-06-07
+sync_hash: ec32a0ea
 ---
-
-
 使用AVImageGenerator可以实现从原始媒体资源中获取指定时间的视频帧，本开发指导将以获取视频帧作为示例，向开发者讲解AVImageGenerator相关功能。
 
 获取视频帧的全流程包含：创建AVImageGenerator对象、设置资源、获取视频帧、销毁资源。

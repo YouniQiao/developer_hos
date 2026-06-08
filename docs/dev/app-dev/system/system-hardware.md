@@ -2,9 +2,10 @@
 title: "硬件"
 original_url: /docs/dev/app-dev/system/system-hardware
 format: md
+upstream_id: dev/app-dev/system/system-hardware
+last_sync: 2026-06-07
+sync_hash: 0654a1eb
 ---
-
-
 * **[Car Kit（车服务）](/docs/dev/app-dev/system/system-hardware/car-kit-guide)**
 * **[Driver Development Kit（驱动开发服务）](/docs/dev/app-dev/system/system-hardware/driver-development-kit)**
 * **[Multimodal Awareness Kit（多模态融合感知服务）](/docs/dev/app-dev/system/system-hardware/multimodal-awareness-kit)**

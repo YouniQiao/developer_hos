@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "传输安装包"
 original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-nearbytransfer-dev/gameservice-nearbytransfer-access-procedure/gameservice-nearbytransfer-installation-package
 format: md
+upstream_id: dev/app-dev/application-services/game-service-kit-guide/gameservice-nearbytransfer-dev/gameservice-nearbytransfer-access-procedure/gameservice-nearbytransfer-installation-package
+last_sync: 2026-06-07
+sync_hash: cf566371
 ---
-
-
 游戏近场快传支持已安装游戏的玩家通过碰一碰或隔空传送将游戏安装包传输给未安装游戏的玩家，实现游戏传播效率的提升。
 
 ![](./img/f8f38ebe.png)

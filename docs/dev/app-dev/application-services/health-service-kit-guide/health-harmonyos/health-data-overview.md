@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "数据开放总览"
 original_url: /docs/dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-overview
 format: md
+upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-harmonyos/health-data-overview
+last_sync: 2026-06-07
+sync_hash: 6f84b6a4
 ---
-
-
 当前提供如下Health Service Kit数据，开发者可申请对应数据权限进行应用开发。开放等级中，![](./img/f6404efc.png)表示该数据权限为高阶数据，暂不对个人开发者开放。如需使用，请使用企业账号重新注册并申请权限；![](./img/fdbb81ca.png)表示该数据权限为基础数据，个人及企业开发者均可申请查询/使用。
 
 ![](./img/66ca9eb9.png)

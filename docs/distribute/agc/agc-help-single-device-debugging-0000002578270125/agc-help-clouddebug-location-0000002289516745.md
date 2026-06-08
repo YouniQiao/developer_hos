@@ -2,9 +2,10 @@
 title: "使用控制面板调试"
 original_url: /docs/distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-location-0000002289516745
 format: md
+upstream_id: distribute/agc/agc-help-single-device-debugging-0000002578270125/agc-help-clouddebug-location-0000002289516745
+last_sync: 2026-06-07
+sync_hash: c72f35d5
 ---
-
-
 当前控制面板支持以下操作：
 
 * [Shell脚本操作](#section9863820161614)：您可以通过输入hdc shell命令对HarmonyOS 5及以上设备执行操作，例如回到主页等。

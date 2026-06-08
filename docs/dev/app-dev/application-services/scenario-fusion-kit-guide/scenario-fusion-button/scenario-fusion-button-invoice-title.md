@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "选择发票抬头Button"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-invoice-title
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-invoice-title
+last_sync: 2026-06-07
+sync_hash: 044d1609
 ---
-
-
 ## 场景介绍
 
 选择发票抬头Button功能可以帮助开发者调用对应Button组件跳转发票抬头选择页面，供用户完成已保存发票抬头的选择。

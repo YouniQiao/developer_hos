@@ -2,8 +2,11 @@
 title: "如何通过AOP统计方法执行时间"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-99
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-99
+last_sync: 2026-06-07
+sync_hash: 96beaf0a
+upstream_hash: f422154006ce
 ---
-
 
 为了统计执行时间，可以使用addBefore记录开始时间，使用addAfter记录结束时间。
 

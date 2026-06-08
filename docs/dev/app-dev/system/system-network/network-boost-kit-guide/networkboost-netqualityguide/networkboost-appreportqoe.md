@@ -2,9 +2,10 @@
 title: "应用传输体验反馈"
 original_url: /docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide/networkboost-appreportqoe
 format: md
+upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide/networkboost-appreportqoe
+last_sync: 2026-06-07
+sync_hash: df2092bf
 ---
-
-
 ## 场景介绍
 
 当应用传输体验发生变化时，应用将传输体验和传输的业务类型信息通过实时反馈接口传输给系统网络业务模块，系统网络业务模块进行精细化调度，实现网络加速。

@@ -2,9 +2,10 @@
 title: "运营分析"
 original_url: /docs/dev/game-dev/games-center-anaiyze-app-sale-0000002384065345
 format: md
+upstream_id: dev/game-dev/games-center-anaiyze-app-sale-0000002384065345
+last_sync: 2026-06-07
+sync_hash: ce83fc54
 ---
-
-
 ## 数字商品服务分析
 
 1. 在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)首页，点击“分析”。

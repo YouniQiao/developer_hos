@@ -3,9 +3,10 @@ title: "预览视频"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-preview-0000002429946765/themes-audio-spec-preview-video-0000002396352166
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-preview-0000002429946765/themes-audio-spec-preview-video-0000002396352166
+last_sync: 2026-06-07
+sync_hash: 2a9a69e9
 ---
-
-
 # 预览视频
 
 视频尺寸为1440×1800 px。

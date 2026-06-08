@@ -2,9 +2,10 @@
 title: "预览子服务卡"
 original_url: /docs/dev/atomic-dev/instant-service-app-items/instant-service-app-items-preview
 format: md
+upstream_id: dev/atomic-dev/instant-service-app-items/instant-service-app-items-preview
+last_sync: 2026-06-07
+sync_hash: c8c4bb45
 ---
-
-
 1. 在子服务直达界面，按服务状态选择“草稿”或“待审核的”卡片，点击提交预览。
 
    ![](./img/62ce3d82.png "点击放大")

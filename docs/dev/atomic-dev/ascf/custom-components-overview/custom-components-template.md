@@ -2,9 +2,10 @@
 title: "组件模板与数据绑定"
 original_url: /docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-template
 format: md
+upstream_id: dev/atomic-dev/ascf/custom-components-overview/custom-components-template
+last_sync: 2026-06-07
+sync_hash: 7f5c8f4e
 ---
-
-
 ## 组件模板
 
 语法和页面模板相同。组件模板与组件数据结合后生成的节点树，在引用位置上渲染。

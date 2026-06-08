@@ -2,9 +2,10 @@
 title: "画中画开发概述"
 original_url: /docs/dev/app-dev/application-framework/arkui/window-manager/window-pipwindow/pipwindow-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/window-manager/window-pipwindow/pipwindow-overview
+last_sync: 2026-06-07
+sync_hash: 4f9d35b6
 ---
-
-
 ## 场景介绍
 
 应用在视频播放、视频会议、视频通话等场景下，可以使用画中画能力将视频内容以小窗（画中画）模式呈现。切换为小窗（画中画）模式后，用户可以进行其他界面操作，提升使用体验。

@@ -2,9 +2,10 @@
 title: "rich-text"
 original_url: /docs/dev/atomic-dev/ascf/components-basic-components/components-rich-text
 format: md
+upstream_id: dev/atomic-dev/ascf/components-basic-components/components-rich-text
+last_sync: 2026-06-07
+sync_hash: a227ccf3
 ---
-
-
 富文本容器。文本内容直接写在标签内容区。
 
 **起始版本：** 1.0.0

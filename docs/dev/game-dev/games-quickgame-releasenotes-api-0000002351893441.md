@@ -2,9 +2,10 @@
 title: "快游戏API更新说明"
 original_url: /docs/dev/game-dev/games-quickgame-releasenotes-api-0000002351893441
 format: md
+upstream_id: dev/game-dev/games-quickgame-releasenotes-api-0000002351893441
+last_sync: 2026-06-07
+sync_hash: af1682c1
 ---
-
-
 | 发布时间 | 更新说明 |
 | --- | --- |
 | 2025-04-25 | ![](./img/edee3f72.png)  快游戏支持[碰一碰分享](https://developer.huawei.com/consumer/cn/doc/games-references/games-api-quickgame-runtime-knock-share-0000002366156896)。 |

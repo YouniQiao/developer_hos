@@ -2,9 +2,10 @@
 title: "填写游戏审核信息"
 original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-review-0000002458362113
 format: md
+upstream_id: distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-review-0000002458362113
+last_sync: 2026-06-07
+sync_hash: 277e385a
 ---
-
-
 若小游戏的部分功能限制玩家通过身份验证后才能使用，例如，登录权限、在线购买，请为上架审核员提供测试账号，以便审核人员使用测试账号测试受限功能。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，选择待上架的小游戏。

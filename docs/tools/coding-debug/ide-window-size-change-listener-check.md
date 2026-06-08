@@ -3,9 +3,10 @@ title: "@cross-device-app-dev/window-size-change-listener-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-window-size-change-listener-check
 format: md
+upstream_id: tools/coding-debug/ide-window-size-change-listener-check
+last_sync: 2026-06-07
+sync_hash: 2a5addc6
 ---
-
-
 # @cross-device-app-dev/window-size-change-listener-check
 
 应用代码中如果创建了window实例，建议开启窗口尺寸变化（'windowSizeChange'）的监听。

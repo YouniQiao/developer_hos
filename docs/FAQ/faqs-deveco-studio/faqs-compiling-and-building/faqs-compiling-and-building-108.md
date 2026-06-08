@@ -2,9 +2,10 @@
 format: md
 title: "构建报错'Cannot read properties of undefined(reading 'XXX')'"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-108
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-108
+last_sync: 2026-06-07
+sync_hash: 24be2f48
 ---
-
-
 请先根据XXX的值从以下场景排查，没解决问题再参考最终方案。
 
 * **场景一：**
@@ -39,7 +40,7 @@ original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-comp
 
   **参考链接**
 
-  [生命周期及hook点](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section746253616316)
+  [生命周期及hook点](/docs/tools/coding-debug/ide-hvigor-life-cycle#section746253616316)
 * **场景二：**
 
   **问题现象**

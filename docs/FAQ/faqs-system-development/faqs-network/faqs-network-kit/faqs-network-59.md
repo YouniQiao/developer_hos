@@ -2,9 +2,10 @@
 title: "如何将Axios获取GBK格式的网络数据转换UTF-8格式"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-59
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-59
+last_sync: 2026-06-07
+sync_hash: 98f896d7
 ---
-
-
 通过[@ohos.util (util工具函数)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-util)实现GBK转换UTF-8格式，实现思路如下：
 
 1. 引入axios和util。

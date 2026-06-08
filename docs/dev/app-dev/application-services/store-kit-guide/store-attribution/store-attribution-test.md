@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "接入调试功能"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-test
 format: md
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-test
+last_sync: 2026-06-07
+sync_hash: a8d951f7
 ---
-
-
 应用归因服务为开发者提供接入调试能力，支持开发者在接入过程中进行自助调试，通过调用调试接口验证接入的准确性及归因结果回传等基础能力，从而提升接入效率。
 
 ## 场景介绍

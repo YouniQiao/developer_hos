@@ -2,9 +2,10 @@
 title: "Node-API开发规范"
 original_url: /docs/dev/ndk-dev/napi-guidelines
 format: md
+upstream_id: dev/ndk-dev/napi-guidelines
+last_sync: 2026-06-07
+sync_hash: 51ef14bd
 ---
-
-
 ## 获取JS传入参数及其数量
 
 **【规则】** 当传入napi\_get\_cb\_info的argv不为nullptr时，argv的长度必须大于等于传入argc声明的大小。

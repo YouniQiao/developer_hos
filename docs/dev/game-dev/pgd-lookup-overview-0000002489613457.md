@@ -2,9 +2,10 @@
 title: "Lookup概述"
 original_url: /docs/dev/game-dev/pgd-lookup-overview-0000002489613457
 format: md
+upstream_id: dev/game-dev/pgd-lookup-overview-0000002489613457
+last_sync: 2026-06-07
+sync_hash: 6c0a654c
 ---
-
-
 Lookup（查找系统）是PGD提供的高性能索引机制，用于基于组件值快速查找实体。传统的ECS查询基于组件类型，而Lookup系统允许基于组件的实际值进行查询，大幅提升特定场景下的查询性能。
 
 ## 核心特性

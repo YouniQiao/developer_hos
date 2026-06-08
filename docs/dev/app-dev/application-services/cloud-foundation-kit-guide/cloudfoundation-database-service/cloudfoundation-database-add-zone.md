@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "新增存储区"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-add-zone
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-database-service/cloudfoundation-database-add-zone
+last_sync: 2026-06-07
+sync_hash: f315fcae
 ---
-
-
 此章节以建立一个“存储区名称”为“QuickStartDemo”的存储区举例说明。
 
 ## 前提条件

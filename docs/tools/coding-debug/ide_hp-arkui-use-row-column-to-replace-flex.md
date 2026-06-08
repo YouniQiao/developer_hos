@@ -3,8 +3,11 @@ title: "@performance/hp-arkui-use-row-column-to-replace-flex"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-use-row-column-to-replace-flex
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-use-row-column-to-replace-flex
+last_sync: 2026-06-07
+sync_hash: a8a75836
+upstream_hash: 01b70b3ea728
 ---
-
 
 # @performance/hp-arkui-use-row-column-to-replace-flex
 

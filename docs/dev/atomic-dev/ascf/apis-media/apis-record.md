@@ -2,9 +2,10 @@
 title: "录音"
 original_url: /docs/dev/atomic-dev/ascf/apis-media/apis-record
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-media/apis-record
+last_sync: 2026-06-07
+sync_hash: 6d34e257
 ---
-
-
 ## has.stopRecord
 
 has.stopRecord(Object object)

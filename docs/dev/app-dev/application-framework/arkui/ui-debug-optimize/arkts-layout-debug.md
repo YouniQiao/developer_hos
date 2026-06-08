@@ -2,9 +2,10 @@
 title: "UI显示异常调试"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/arkts-layout-debug
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-debug-optimize/arkts-layout-debug
+last_sync: 2026-06-07
+sync_hash: 22704b79
 ---
-
-
 本章节主要介绍UI显示异常问题的调试方法，并结合案例讲解具体的解决步骤。
 
 ## 定位UI显示异常问题

@@ -2,8 +2,11 @@
 title: "游戏性能诊断（HiSmartPerf）"
 original_url: /docs/dev/game-dev/games-hismartperf-tool-0000002287085461
 format: md
+upstream_id: dev/game-dev/games-hismartperf-tool-0000002287085461
+last_sync: 2026-06-07
+sync_hash: 84422408
+upstream_hash: ce3508609537
 ---
-
 
 * **[业务介绍](/docs/dev/game-dev/games-hismartperf-overview-0000002286788016)**
 * **[版本更新说明](/docs/dev/game-dev/games-hismartperf-releasenotes-0000002321517285)**

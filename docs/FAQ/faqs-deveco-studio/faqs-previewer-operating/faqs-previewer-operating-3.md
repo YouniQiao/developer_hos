@@ -2,9 +2,10 @@
 format: md
 title: "预览告警“@Consume/@Link decorated property <propertyName> not initialized”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-previewer-operating/faqs-previewer-operating-3
+upstream_id: FAQ/faqs-deveco-studio/faqs-previewer-operating/faqs-previewer-operating-3
+last_sync: 2026-06-07
+sync_hash: e7fbd138
 ---
-
-
 **问题现象**
 
 启动预览后，预览窗口显示白屏，上方出现错误信息：“Preview failed. View details in the PreviewerLog window.”

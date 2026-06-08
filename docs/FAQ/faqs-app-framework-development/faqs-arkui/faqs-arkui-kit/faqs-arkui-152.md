@@ -2,9 +2,10 @@
 format: md
 title: "如何设置子组件宽度使其不超过父组件的大小"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-152
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-152
+last_sync: 2026-06-07
+sync_hash: 9325727d
 ---
-
-
 使用calc()函数计算并动态设置子组件宽度。参考代码如下：
 
 ```

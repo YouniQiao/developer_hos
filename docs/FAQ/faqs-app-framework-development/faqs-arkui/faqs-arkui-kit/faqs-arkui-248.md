@@ -2,9 +2,10 @@
 format: md
 title: "如何设置Text的字体，可以不受系统设置里显示大小缩放的影响"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-248
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-248
+last_sync: 2026-06-07
+sync_hash: 68dd6818
 ---
-
-
 目前，px2fp()和px2vp()等方法在修改系统显示大小后不会实时更新。字体的默认单位是 fp，界面像素单位是 px，可以使用像素单位来设置字体大小。参考如下：
 
 ```

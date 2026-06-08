@@ -2,9 +2,10 @@
 format: md
 title: "如何定制构建多目标产物"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-65
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-65
+last_sync: 2026-06-07
+sync_hash: 9dfb61f4
 ---
-
-
 **问题场景：**
 
 根据不同的部署环境、目标人群和运行环境，定制构建多目标产物，将同一应用定制为不同版本。

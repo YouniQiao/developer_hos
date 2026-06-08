@@ -3,8 +3,11 @@ title: "权限错误码"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-errorcode-00307
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-errorcode-00307
+last_sync: 2026-06-07
+sync_hash: 90232157
+upstream_hash: beaf874434c4
 ---
-
 
 # 权限错误码
 

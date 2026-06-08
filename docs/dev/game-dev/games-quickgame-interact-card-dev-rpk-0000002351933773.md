@@ -2,9 +2,10 @@
 title: "将快游戏改造成创新互动卡片"
 original_url: /docs/dev/game-dev/games-quickgame-interact-card-dev-rpk-0000002351933773
 format: md
+upstream_id: dev/game-dev/games-quickgame-interact-card-dev-rpk-0000002351933773
+last_sync: 2026-06-07
+sync_hash: e8af0207
 ---
-
-
 您需要将已有的快游戏改造成带有[独立分包](/docs/dev/game-dev/games-quickgame-independent-subpackage-0000002351933645)的创新互动卡片。
 
 ## 开发准备

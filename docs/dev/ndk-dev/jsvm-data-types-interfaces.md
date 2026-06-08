@@ -2,9 +2,10 @@
 title: "JSVM-API 支持的数据类型和接口"
 original_url: /docs/dev/ndk-dev/jsvm-data-types-interfaces
 format: md
+upstream_id: dev/ndk-dev/jsvm-data-types-interfaces
+last_sync: 2026-06-07
+sync_hash: d24047fa
 ---
-
-
 ## JSVM-API 的数据类型
 
 ### JSVM\_Status

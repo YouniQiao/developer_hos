@@ -1,12 +1,12 @@
 ---
-
 title: "部署函数"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-deployfunc
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-deployfunc
+last_sync: 2026-06-07
+sync_hash: 43db8e7f
 ---
-
-
 # 部署函数
 
 完成函数代码开发后，您可将函数部署到AGC云端，支持单个部署和批量部署。

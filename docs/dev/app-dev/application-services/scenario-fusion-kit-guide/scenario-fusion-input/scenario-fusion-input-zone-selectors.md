@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "省市区选择器Input"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-input/scenario-fusion-input-zone-selectors
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-input/scenario-fusion-input-zone-selectors
+last_sync: 2026-06-07
+sync_hash: 1f22c7f8
 ---
-
-
 ## 场景介绍
 
 从5.1.0(18)开始，支持省市区选择器Input功能。

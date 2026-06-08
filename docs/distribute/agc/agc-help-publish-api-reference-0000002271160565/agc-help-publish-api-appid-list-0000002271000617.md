@@ -2,9 +2,10 @@
 title: "查询应用包名对应的appid"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-appid-list-0000002271000617
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-appid-list-0000002271000617
+last_sync: 2026-06-07
+sync_hash: a45d431c
 ---
-
-
 #### 功能介绍
 
 此接口用于根据HarmonyOS应用/元服务的应用包名查询对应的应用ID，支持一次查询多个应用包名。

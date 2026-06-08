@@ -2,9 +2,10 @@
 title: "界面"
 original_url: /docs/dev/atomic-dev/ascf/apis-page/apis-page
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-page/apis-page
+last_sync: 2026-06-07
+sync_hash: 69f74835
 ---
-
-
 * **[交互](/docs/dev/atomic-dev/ascf/apis-page/apis-interaction)**
 * **[导航栏](/docs/dev/atomic-dev/ascf/apis-page/apis-navigation)**
 * **[Tab Bar](/docs/dev/atomic-dev/ascf/apis-page/apis-tab-bar)**

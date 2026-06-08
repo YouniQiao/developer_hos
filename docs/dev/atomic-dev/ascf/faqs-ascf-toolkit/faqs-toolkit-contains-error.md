@@ -2,9 +2,10 @@
 title: "报错ERROR: XXX contains error, please check it."
 original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-contains-error
 format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-contains-error
+last_sync: 2026-06-07
+sync_hash: d22ee6cb
 ---
-
-
 **问题现象**
 
 使用命令行转换工具时报错：“ERROR: XXX contains error, please check it.”

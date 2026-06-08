@@ -3,8 +3,10 @@ title: 导航条
 sidebar_label: 导航条
 original_url: /docs/design/system-features/features/navigation-bar
 format: md
+upstream_id: design/system-features/features/navigation-bar
+last_sync: 2026-06-07
+sync_hash: 3445b07b
 ---
-
 # 导航条
 
 导航条是 HarmonyOS 系统的典型特征，是手势导航等重要功能的提示入口，是应用必须适配的要求。

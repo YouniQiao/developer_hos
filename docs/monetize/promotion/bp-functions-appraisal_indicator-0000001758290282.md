@@ -3,8 +3,10 @@ title: "考核指标"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-appraisal_indicator-0000001758290282
 format: md
+upstream_id: monetize/promotion/bp-functions-appraisal_indicator-0000001758290282
+last_sync: 2026-06-07
+sync_hash: 5ec6332e
 ---
-
 # 考核指标
 
 ## 功能介绍

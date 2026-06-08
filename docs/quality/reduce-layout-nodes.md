@@ -2,9 +2,10 @@
 title: "布局节点减少"
 original_url: /docs/quality/reduce-layout-nodes
 format: md
+upstream_id: /docs/quality/reduce-layout-nodes
+last_sync: 2026-06-07
+sync_hash: 679889e5
 ---
-
-
 # 布局节点减少
 
 在进行页面布局开发时，应该尽量减少布局节点，避免系统绘制更多的布局组件，达到优化渲染性能、减少内存占用的目的。具体提高渲染性能的优化原理请参阅[ArkUI框架执行流程](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-improve-layout-performance#section16114121365117)。

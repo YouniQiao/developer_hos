@@ -2,9 +2,10 @@
 title: "创建测试态服务"
 original_url: /docs/distribute/agc/agc-help-beacon-apply-teststate-service-0000002456705193/agc-help-beacon-create-teststate-service-0000002456705197
 format: md
+upstream_id: distribute/agc/agc-help-beacon-apply-teststate-service-0000002456705193/agc-help-beacon-create-teststate-service-0000002456705197
+last_sync: 2026-06-07
+sync_hash: c2468cbd
 ---
-
-
 ![](../img/agc-help-beacon-create-teststate-service-0000002456705197_0.png)
 
 一个应用/元服务最多支持创建2000个近场服务。

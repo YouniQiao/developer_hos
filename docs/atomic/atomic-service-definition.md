@@ -2,9 +2,10 @@
 title: "什么是元服务"
 original_url: /docs/dev/atomic-dev/atomic-service/atomic-service-definition
 format: md
+upstream_id: dev/atomic-dev/atomic-service/atomic-service-definition
+last_sync: 2026-06-07
+sync_hash: ab5076b4
 ---
-
-
 ![](./img/fb629a50.png)
 
 从HarmonyOS NEXT Developer Preview1（对应API 11）版本开始：

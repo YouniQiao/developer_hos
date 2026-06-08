@@ -3,8 +3,10 @@ title: "鲸鸿动能服务商管理制度"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-jinhondongnfuwushanguanlizhidu-0000001861670477
 format: md
+upstream_id: monetize/promotion/ads-jinhondongnfuwushanguanlizhidu-0000001861670477
+last_sync: 2026-06-07
+sync_hash: 83f0385e
 ---
-
 # 鲸鸿动能服务商管理制度
 
 <strong>生效日期：2026年4月1日</strong>

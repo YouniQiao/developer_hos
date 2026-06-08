@@ -2,9 +2,10 @@
 title: "如何对公钥和私钥进行加解密"
 original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-20
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-20
+last_sync: 2026-06-07
+sync_hash: fef55b4d
 ---
-
-
 使用 `@kit.CryptoArchitectureKit` 提供的密码学能力，可实现非对称加密中“公钥加密、私钥解密”的典型场景。
 
 首先，通过 `[Base64Helper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-util#base64helper9)` 对预先定义的“公钥”和“私钥”字符串进行解码，得到原始字节数据，并将其转换为十六进制字符串，为后续密钥生成做准备。

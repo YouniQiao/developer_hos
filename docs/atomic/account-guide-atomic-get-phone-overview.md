@@ -2,9 +2,10 @@
 title: "获取手机号概述"
 original_url: /docs/dev/atomic-dev/account-guide-atomic-get-phone/account-guide-atomic-get-phone-overview
 format: md
+upstream_id: dev/atomic-dev/account-guide-atomic-get-phone/account-guide-atomic-get-phone-overview
+last_sync: 2026-06-07
+sync_hash: aed7feaf
 ---
-
-
 当元服务需要获取用户手机号时，可通过调用Scenario Fusion Kit提供的Button组件，引导用户完成手机号授权。
 
 Scenario Fusion Kit通过提供[快速验证手机号Button](/docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-getphonenumber)实现了Account Kit快速验证手机号授权功能：

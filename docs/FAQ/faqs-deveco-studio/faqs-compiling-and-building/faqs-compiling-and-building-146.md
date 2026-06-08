@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“Invalid form name 'xxx'.”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-146
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-146
+last_sync: 2026-06-07
+sync_hash: 8d4c300a
 ---
-
-
 **错误描述**
 
 卡片名称无效。

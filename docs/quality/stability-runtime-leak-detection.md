@@ -2,9 +2,10 @@
 title: "资源泄漏类问题检测方法"
 original_url: /docs/quality/stability-runtime-leak-detection
 format: md
+upstream_id: /docs/quality/stability-runtime-leak-detection
+last_sync: 2026-06-07
+sync_hash: 68b77e60
 ---
-
-
 # 资源泄漏类问题检测方法
 
 ## 概述

@@ -2,9 +2,10 @@
 title: "画布"
 original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-canvas
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-basic-capabilities/develop-canvas
+last_sync: 2026-06-07
+sync_hash: 951ef634
 ---
-
-
 canvas组件提供了绘制界面，开发者可以在上面任意绘制。具体步骤如下：
 
 1. 在HXML中添加 canvas 组件。

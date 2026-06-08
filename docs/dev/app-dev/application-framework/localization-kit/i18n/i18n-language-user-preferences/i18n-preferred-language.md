@@ -2,9 +2,10 @@
 title: "应用偏好语言"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-language-user-preferences/i18n-preferred-language
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/i18n/i18n-language-user-preferences/i18n-preferred-language
+last_sync: 2026-06-07
+sync_hash: 99456215
 ---
-
-
 ## 功能介绍
 
 对于多语言用户，通常会将系统语言设置为一种语言（如中文），将特定应用的语言设置为另一种语言（如英语）。应用界面加载资源时，显示应用设置的语言。开发过程中，设置应用国际化特性区域为偏好语言，确保应用界面的国际化特性和加载的资源一致。当前，应用仅支持设置一种语言。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: /docs/dev/app-dev/application-services/call-preparations
 format: md
+upstream_id: dev/app-dev/application-services/call-preparations
+last_sync: 2026-06-07
+sync_hash: 958e1a43
 ---
-
-
 在开通应用内通话服务之前，请先参考“[应用开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-overview)”完成基本准备工作，再继续进行以下开发活动。
 
 ## 开通Push Kit（推送服务）

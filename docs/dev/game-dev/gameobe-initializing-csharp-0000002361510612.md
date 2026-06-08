@@ -2,9 +2,10 @@
 title: "初始化SDK"
 original_url: /docs/dev/game-dev/gameobe-initializing-csharp-0000002361510612
 format: md
+upstream_id: dev/game-dev/gameobe-initializing-csharp-0000002361510612
+last_sync: 2026-06-07
+sync_hash: caa888ed
 ---
-
-
 进入房间前，需要先完成初始化联机对战SDK。
 
 ## 前提条件

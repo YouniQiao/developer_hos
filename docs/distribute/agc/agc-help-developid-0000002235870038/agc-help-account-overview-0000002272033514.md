@@ -2,9 +2,10 @@
 title: "账号与权限概述"
 original_url: /docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-account-overview-0000002272033514
 format: md
+upstream_id: distribute/agc/agc-help-developid-0000002235870038/agc-help-account-overview-0000002272033514
+last_sync: 2026-06-07
+sync_hash: 7fe7adcd
 ---
-
-
 #### 账号持有者
 
 “账号持有者”是一种特殊的角色，当您完成华为开发者账号注册时，您的账号将自动成为“账号持有者”。“账号持有者”拥有该账号在AppGallery Connect下所有资源的权限，包括用户与权限管理、应用的管理和上架、运营活动管理、协议签署等。一个账号只能有一个“账号持有者”，那就是该账号本身。

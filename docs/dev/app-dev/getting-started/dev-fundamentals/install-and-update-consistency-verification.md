@@ -1,8 +1,10 @@
 ---
 title: "应用安装与更新一致性校验"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/install-and-update-consistency-verification
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/install-and-update-consistency-verification
+last_sync: 2026-06-07
+sync_hash: ef844ca8
 ---
-
 随着应用发展越来越复杂，应用也被拆成多个模块进行开发维护，不同的团队负责单个或者多个模块，应用在安装更新过程中会针对不同的字段进行一致性校验和验证，保证应用的安全合法性。本文介绍多模块安装或更新时，签名证书、配置文件的一致性校验规则。
 
 ![](./img/5f669134.png)

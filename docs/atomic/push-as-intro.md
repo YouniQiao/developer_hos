@@ -2,9 +2,10 @@
 title: "Push Kit简介"
 original_url: /docs/dev/atomic-dev/atomic-push-development/push-as-intro
 format: md
+upstream_id: dev/atomic-dev/atomic-push-development/push-as-intro
+last_sync: 2026-06-07
+sync_hash: 62600c3b
 ---
-
-
 Push Kit（推送服务）是华为提供的消息推送平台，建立了从云端到终端的消息推送通道。所有HarmonyOS元服务可通过集成Push Kit，实现向元服务实时推送消息，使消息易见，构筑良好的用户关系，提升用户的感知度和活跃度。
 
 ## 产品优势

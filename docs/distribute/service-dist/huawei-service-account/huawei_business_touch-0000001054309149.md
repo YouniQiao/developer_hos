@@ -3,9 +3,10 @@ title: "华为服务号介绍"
 displayed_sidebar: serviceDistSidebar
 original_url: /docs/distribute/service-dist/huawei-service-account/huawei_business_touch-0000001054309149
 format: md
+upstream_id: distribute/service-dist/huawei-service-account/huawei_business_touch-0000001054309149
+last_sync: 2026-06-07
+sync_hash: 8ac003be
 ---
-
-
 # 华为服务号介绍
 
 

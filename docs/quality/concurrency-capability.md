@@ -2,9 +2,10 @@
 title: "并发能力使用"
 original_url: /docs/quality/concurrency-capability
 format: md
+upstream_id: /docs/quality/concurrency-capability
+last_sync: 2026-06-07
+sync_hash: 81521bc8
 ---
-
-
 # 并发能力使用
 
 应用中的并发优化是在响应用户操作时，确保主线程仅执行UI绘制任务，将非UI的耗时任务分配给其他线程或延迟处理。通过多线程异步技术，充分利用多核处理器的能力，提高应用程序的并发处理能力，减少用户等待时间，确保用户界面的响应流畅。

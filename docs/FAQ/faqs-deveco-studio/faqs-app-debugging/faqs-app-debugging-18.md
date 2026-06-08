@@ -2,9 +2,10 @@
 format: md
 title: "entry引用本地library时，没有ASan日志输出"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-18
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-debugging/faqs-app-debugging-18
+last_sync: 2026-06-07
+sync_hash: 30684d25
 ---
-
-
 **问题现象**
 
 entry引用本地library时，已经勾选ASan选择项，没有ASan日志输出。

@@ -2,9 +2,10 @@
 title: "基于Dockerfile部署ohpm-repo私仓"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-dockerfile
+upstream_id: tools/ohpm/repo/ide-ohpm-dockerfile
+last_sync: 2026-06-07
+sync_hash: 77509b2b
 ---
-
-
 # 基于Dockerfile部署ohpm-repo私仓
 
 Dockerfile是构建Docker镜像的文本文件，其中包含了构建镜像的命令和说明，可以实现如下功能：

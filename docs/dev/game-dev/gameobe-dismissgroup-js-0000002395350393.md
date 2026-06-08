@@ -2,9 +2,10 @@
 title: "解散队伍"
 original_url: /docs/dev/game-dev/gameobe-dismissgroup-js-0000002395350393
 format: md
+upstream_id: dev/game-dev/gameobe-dismissgroup-js-0000002395350393
+last_sync: 2026-06-07
+sync_hash: 1a62f3d1
 ---
-
-
 当游戏未开始时，队长可以解散当前所处的队伍。
 
 ## 前提条件

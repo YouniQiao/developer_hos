@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口进行Date相关开发"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-date
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-date
+last_sync: 2026-06-07
+sync_hash: 388d1236
 ---
-
-
 ## 简介
 
 JSVM-API中date相关接口用于处理JavaScript Date对象，并在JSVM模块和JavaScript代码之间进行日期数据的转换和处理。这对于在JSVM模块中处理时间和日期相关逻辑非常有用。

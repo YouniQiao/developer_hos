@@ -2,9 +2,10 @@
 title: "restool工具"
 original_url: /docs/dev/app-dev/system/restool
 format: md
+upstream_id: dev/app-dev/system/restool
+last_sync: 2026-06-07
+sync_hash: b503a0ec
 ---
-
-
 ## 简介
 
 restool是一种应用工程资源编译工具，通过编译资源文件创建资源索引、解析资源，开发者可以调用[资源管理接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager)获取到对应资源。restool工具保存在sdk安装目录下的toolchains子目录。
@@ -83,7 +84,7 @@ Locale匹配规则：Locale匹配需满足以下三条规则。
 
 **--compressed-config参数说明**
 
-在DevEco Studio配置[纹理压缩](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile#section2095319147103)的编译配置参数，编译后会在模块的build\default\intermediates\res\default下生成restool的纹理压缩配置文件opt-compression.json，文件结构如下：
+在DevEco Studio配置[纹理压缩](/docs/tools/coding-debug/ide-hvigor-build-profile#section2095319147103)的编译配置参数，编译后会在模块的build\default\intermediates\res\default下生成restool的纹理压缩配置文件opt-compression.json，文件结构如下：
 
 ```
 {

@@ -2,9 +2,10 @@
 title: "如何在构建任务中执行shell脚本"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-104
 format: md
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-104
+last_sync: 2026-06-07
+sync_hash: 6e0b0c94
 ---
-
-
 在hvigorfile.ts文件中执行如下示例：
 
 ```

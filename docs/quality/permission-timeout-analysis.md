@@ -2,9 +2,10 @@
 title: "分析任务执行超时问题"
 original_url: /docs/quality/permission-timeout-analysis
 format: md
+upstream_id: /docs/quality/permission-timeout-analysis
+last_sync: 2026-06-07
+sync_hash: eb53eda3
 ---
-
-
 # 分析任务执行超时问题
 
 在应用开发过程中，开发者希望某段业务逻辑能在预期时间内完成执行。如果该业务逻辑的执行时间超过了预期，即被视为任务超时。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "来电场景"
 original_url: /docs/dev/app-dev/application-services/call-kit-guide/incoming-calls
 format: md
+upstream_id: dev/app-dev/application-services/call-kit-guide/incoming-calls
+last_sync: 2026-06-07
+sync_hash: e355f497
 ---
-
-
 ## 场景介绍
 
 应用接收到来自网络的音/视频通话，称为来电场景。

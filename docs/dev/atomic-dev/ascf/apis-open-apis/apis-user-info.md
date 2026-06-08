@@ -2,9 +2,10 @@
 title: "用户信息"
 original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-user-info
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-open-apis/apis-user-info
+last_sync: 2026-06-07
+sync_hash: d1ee120a
 ---
-
-
 ## has.getUserProfile
 
 has.getUserProfile(Object object)

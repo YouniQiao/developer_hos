@@ -3,6 +3,10 @@ title: "进入认证中心完成开户"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/fusion-complete-account-0000002499137873
 format: md
+upstream_id: monetize/promotion/fusion-complete-account-0000002499137873
+last_sync: 2026-06-07
+sync_hash: 9a856b24
+upstream_hash: da98dfc9cee6
 ---
 
 # 进入认证中心完成开户

@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“Init keystore failed: parseAlgParameters failed: ObjectIdentifier()”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-113
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-113
+last_sync: 2026-06-07
+sync_hash: 55aa1a00
 ---
-
-
 **问题现象**
 
 编译构建时，出现错误：Init keystore failed: parseAlgParameters failed: ObjectIdentifier()

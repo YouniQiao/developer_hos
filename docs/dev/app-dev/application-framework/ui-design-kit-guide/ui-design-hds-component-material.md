@@ -2,9 +2,10 @@
 title: "沉浸光感"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-hds-component-material
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-hds-component-material
+last_sync: 2026-06-07
+sync_hash: cc452dd9
 ---
-
-
 ## 场景介绍
 
 从6.1.0(23) 版本开始，新增支持HDS组件的沉浸光感材质能力。

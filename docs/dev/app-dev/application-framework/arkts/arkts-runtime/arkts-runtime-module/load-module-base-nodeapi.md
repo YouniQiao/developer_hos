@@ -2,9 +2,10 @@
 title: "基于Node-API加载模块"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/load-module-base-nodeapi
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/load-module-base-nodeapi
+last_sync: 2026-06-07
+sync_hash: a20bed21
 ---
-
-
 Node-API中有多种方式支持开发者在C++侧加载工程内模块及文件。推荐使用napi\_load\_module\_with\_info接口。
 
 ## napi\_load\_module\_with\_info

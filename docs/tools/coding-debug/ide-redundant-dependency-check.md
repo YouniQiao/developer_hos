@@ -3,9 +3,10 @@ title: "@correctness/redundant-dependency-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-redundant-dependency-check
 format: md
+upstream_id: tools/coding-debug/ide-redundant-dependency-check
+last_sync: 2026-06-07
+sync_hash: b8589212
 ---
-
-
 # @correctness/redundant-dependency-check
 
 建议删除冗余的依赖配置。冗余依赖会增加依赖加载和解析时间，影响代码质量。

@@ -3,10 +3,10 @@ title: "违规处罚"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_sdk-rule-violate-0000001546462100
 format: md
+upstream_id: monetize/monetization/agd_pro_sdk-rule-violate-0000001546462100
+last_sync: 2026-06-07
+sync_hash: a7b31c2b
 ---
-
-
-
 为了保护整个平台业务的合法、诚信、有序开展，我们会仔细监控和分析广告的下载、点击和展示等数据，结合自动系统和人工审核手段，剔除数据中虚增广告客户费用或发布商收入的无效活动的数据，保证广告客户只为真实的消耗付费。
 
 * 我们的自动系统，利用专业技术手段，根据储备的无效流量禁用清单库，分析下载、点击和展示数据，过滤掉大部分的无效下载、点击和展示。

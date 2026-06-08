@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Ads Kit术语"
 original_url: /docs/dev/app-dev/application-services/ads-kit-guide/ads-kit-glossary
 format: md
+upstream_id: dev/app-dev/application-services/ads-kit-guide/ads-kit-glossary
+last_sync: 2026-06-07
+sync_hash: d1e75b9e
 ---
-
-
 ## Banner Ad 横幅广告
 
 横幅广告又名Banner广告，是在应用程序顶部、中部或底部占据一个位置的矩形图片，广告内容每隔一段时间会自动刷新。

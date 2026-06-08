@@ -2,9 +2,10 @@
 title: "PageAbility组件配置"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/pageability-configuration
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/pageability-configuration
+last_sync: 2026-06-07
+sync_hash: 35282e3b
 ---
-
-
 PageAbility的相关配置在config.json配置文件的"module"对象的"abilities"对象中，"icon"属性表示Ability图标资源文件的索引，"label"属性表示Ability对用户显示的名称，"skills"属性表示Ability能够接收的want的特征。
 
 **表1** PageAbility部分配置项说明

@@ -3,9 +3,10 @@ title: "@performance/lazyforeach-args-check（已下线）"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-lazyforeach-args-check
 format: md
+upstream_id: tools/coding-debug/ide-lazyforeach-args-check
+last_sync: 2026-06-07
+sync_hash: 0c678715
 ---
-
-
 # @performance/lazyforeach-args-check（已下线）
 
 建议在LazyForEach参数中设置keyGenerator。该规则已于5.0.3.500版本下线。

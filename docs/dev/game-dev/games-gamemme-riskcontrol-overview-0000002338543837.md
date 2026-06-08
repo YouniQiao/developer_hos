@@ -2,9 +2,10 @@
 title: "概述"
 original_url: /docs/dev/game-dev/games-gamemme-riskcontrol-overview-0000002338543837
 format: md
+upstream_id: dev/game-dev/games-gamemme-riskcontrol-overview-0000002338543837
+last_sync: 2026-06-07
+sync_hash: 8889d27d
 ---
-
-
 为了保障和谐健康的游戏环境，游戏多媒体服务提供了内容检测功能，对涉及广告、色情、辱骂等各类违规内容进行批量检测与精准识别。通过AGC控制台即可查看到相关检测结果，然后您可根据业务逻辑在游戏服务端进行后续处理（如玩家禁言或封号等），同时支持人工复审，以保证内容风控的准确性。游戏多媒体内容检测支持实时语音、实时信令文本消息和语音消息三种类型内容的检测，并且提供了自动和人工两种送检方式。
 
 ## 自动送检

@@ -3,8 +3,10 @@ title: "设置账户日预算"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-account-management-budget-0000001346492069
 format: md
+upstream_id: monetize/promotion/bp-delivery-account-management-budget-0000001346492069
+last_sync: 2026-06-07
+sync_hash: 85251206
 ---
-
 # 设置账户日预算
 
 - 概览页-日预算模块

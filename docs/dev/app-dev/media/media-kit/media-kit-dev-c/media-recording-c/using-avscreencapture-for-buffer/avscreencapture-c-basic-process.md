@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "AVScreenCapture录屏基础流程"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/media-recording-c/using-avscreencapture-for-buffer/avscreencapture-c-basic-process
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-c/media-recording-c/using-avscreencapture-for-buffer/avscreencapture-c-basic-process
+last_sync: 2026-06-07
+sync_hash: 03fb1ce6
 ---
-
-
 屏幕录制功能支持开发者获取屏幕数据，适用于屏幕录制、会议共享、直播等场景。开发者可通过调用[AVScreenCapture](/docs/dev/app-dev/media/media-kit/media-kit-intro#avscreencapture)模块的C API，采集设备内外的音视频数据源。该模块需与窗口管理（Window）、图形处理（Graphic）等模块协同工作，以完成完整的视频采集流程。
 
 从API version 22开始，在PC/2in1设备上录屏时新增如下能力：

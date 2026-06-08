@@ -2,12 +2,13 @@
 title: "查看HiTraceMeter日志"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracemeter/hitracemeter-view
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracemeter/hitracemeter-view
+last_sync: 2026-06-07
+sync_hash: b1708703
 ---
-
-
 ## 通过DevEco Studio可视化界面查看
 
-使用DevEco Studio Profiler工具可以可视化展示HiTraceMeter日志内容，分析应用或服务的CPU使用率和线程运行状态，查看指定时间段内程序在CPU上的执行耗时。具体使用指导请参考[CPU活动分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-cpu)。
+使用DevEco Studio Profiler工具可以可视化展示HiTraceMeter日志内容，分析应用或服务的CPU使用率和线程运行状态，查看指定时间段内程序在CPU上的执行耗时。具体使用指导请参考[CPU活动分析](/docs/tools/coding-debug/ide-insight-session-cpu)。
 
 ## 通过命令行工具查看
 
@@ -33,7 +34,7 @@ format: md
 
      在DevEco Studio Profiler的会话区选择“Open File”，将HiTraceMeter文本日志导入DevEco Studio。
 
-     具体分析可参考[CPU活动分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-cpu)文档。
+     具体分析可参考[CPU活动分析](/docs/tools/coding-debug/ide-insight-session-cpu)文档。
    * 通过[Smartperf\_Host](https://gitcode.com/openharmony/developtools_smartperf_host/blob/master/smartperf_host/README_zh.md)工具进行分析。
 
 ## 用户态trace格式说明

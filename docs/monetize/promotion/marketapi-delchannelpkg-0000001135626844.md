@@ -3,8 +3,10 @@ title: "删除智能分包"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-delchannelpkg-0000001135626844
 format: md
+upstream_id: monetize/promotion/marketapi-delchannelpkg-0000001135626844
+last_sync: 2026-06-07
+sync_hash: f95f3c55
 ---
-
 # 删除智能分包
 
 ## 功能介绍

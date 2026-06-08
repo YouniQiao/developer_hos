@@ -2,9 +2,10 @@
 format: md
 title: "报错“the parameters check fails this is fail path”如何解决"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-31
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-core-file-kit/faqs-local-file-manager-31
+last_sync: 2026-06-07
+sync_hash: b64ec1c0
 ---
-
-
 **问题现象**
 
 ```

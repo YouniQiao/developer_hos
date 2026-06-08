@@ -3,9 +3,10 @@ title: "创建活动"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-app-0000002111387918/game-center-setup-activities-app-create-0000002182557856
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-app-0000002111387918/game-center-setup-activities-app-create-0000002182557856
+last_sync: 2026-06-07
+sync_hash: 094bb675
 ---
-
-
 # 创建活动
 
 华为应用市场面向所有实名认证的联运应用及游戏开发者开放运营活动管理功能，您可自助创建运营活动，通过审核后即可在华为应用市场、游戏中心正式上线，实现拉新、促活、创收等经营目标。

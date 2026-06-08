@@ -2,9 +2,10 @@
 format: md
 title: "将rawfile中json格式的字符串转换成对应的object对象后，调用实例方法后程序崩溃"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-1
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-1
+last_sync: 2026-06-07
+sync_hash: cb658f1c
 ---
-
-
 **问题现象**
 
 系统将直接报告错误：“jscrash happened in xxxxxxxxx”，崩溃日志中的错误信息为：“Error message: Unexpected Object in JSON”。

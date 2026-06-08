@@ -2,9 +2,10 @@
 title: "GPM使用限制"
 original_url: /docs/dev/game-dev/games-gpm-usage-restrictions-0000002298787836
 format: md
+upstream_id: dev/game-dev/games-gpm-usage-restrictions-0000002298787836
+last_sync: 2026-06-07
+sync_hash: d01b35ce
 ---
-
-
 本章节将为您详细介绍游戏性能管理SDK在设备等方面的限制，这些限制可能会根据实际情况随时更新，请您注意文档变化。
 
 ## 设备限制

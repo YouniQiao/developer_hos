@@ -2,9 +2,10 @@
 title: "概述"
 original_url: /docs/experience-suggestions/compatibility/compatibility-overview
 format: md
+upstream_id: experience-suggestions/compatibility/compatibility-overview
+last_sync: 2026-06-07
+sync_hash: e3010b7d
 ---
-
-
 # 概述
 
 ### 背景及目的

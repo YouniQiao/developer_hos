@@ -2,9 +2,10 @@
 format: md
 title: "在Windows电脑上启动模拟器，提示未开启Hyper-V"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-10
+upstream_id: FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-10
+last_sync: 2026-06-07
+sync_hash: d5131634
 ---
-
-
 **问题现象**一
 
 启动模拟器时，如果未开启Hyper-V，或在虚拟环境中使用模拟器，会弹窗提示“Hyper-V not enabled”。
@@ -13,7 +14,7 @@ original_url: /docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-10
 
 **解决措施**
 
-1. 请确保模拟器的[使用环境](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-requirements)符合要求。
+1. 请确保模拟器的[使用环境](/docs/tools/coding-debug/ide-emulator-requirements)符合要求。
 2. 如果CPU支持虚拟化，打开控制面板 > 程序 > 程序与功能 > 启动或关闭Windows功能（对于Windows 11系统，需打开系统 > 可选功能，在相关设置中点击更多Windows功能），找到并勾选“Hyper-V”、“Windows虚拟机监控程序平台”和“虚拟机平台”，点击确定并重启电脑。若勾选后启动模拟器仍提示错误，需以管理员权限打开命令行窗口，执行 `bcdedit /set hypervisorlaunchtype auto`，然后重启电脑。
 
    ![](./img/7ebbc813.png)

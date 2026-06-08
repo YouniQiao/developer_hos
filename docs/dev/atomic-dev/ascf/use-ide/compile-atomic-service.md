@@ -2,8 +2,11 @@
 title: "编译元服务"
 original_url: /docs/dev/atomic-dev/ascf/use-ide/compile-atomic-service
 format: md
+upstream_id: dev/atomic-dev/ascf/use-ide/compile-atomic-service
+last_sync: 2026-06-07
+sync_hash: 5c1b0fe6
+upstream_hash: 8359a61a50ca
 ---
-
 
 开发者点击右上角运行按钮，就可以自动编译运行元服务。重新构建也会重新编译元服务。
 
@@ -19,7 +22,7 @@ ASCF构建后会将ascf/ascf\_src的内容编译到entry/src/main/resources/rawf
 
 ![](./img/27fac685.png)
 
-* ASCF构建产物为HarmonyOS元服务的HAP/HSP/APP包，产物遵循HarmonyOS的[注意事项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-compile-build)。
+* ASCF构建产物为HarmonyOS元服务的HAP/HSP/APP包，产物遵循HarmonyOS的[注意事项](/docs/tools/coding-debug/ide-compile-build)。
 * 请注意代码资产保护。ascf/ascf\_src目录编译时会被打包进rawfile产物中，由于构建产物中包含JS源码，因此请勿将敏感信息存放在该目录下。
 * 以debug模式构建的包中的js默认会包含sourcemap内容，可以使用命令行指令中devtool参数关闭。请勿将debug包发给不信任的人，避免源码泄露。
 

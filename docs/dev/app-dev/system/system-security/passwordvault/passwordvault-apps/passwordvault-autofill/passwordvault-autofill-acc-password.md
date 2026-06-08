@@ -2,9 +2,10 @@
 title: "账号密码填充"
 original_url: /docs/dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autofill/passwordvault-autofill-acc-password
 format: md
+upstream_id: dev/app-dev/system/system-security/passwordvault/passwordvault-apps/passwordvault-autofill/passwordvault-autofill-acc-password
+last_sync: 2026-06-07
+sync_hash: 507ac142
 ---
-
-
 密码保险箱可以在登录或修改密码时，自动填充已保存的用户名和密码。
 
 **触发条件及注意事项：**

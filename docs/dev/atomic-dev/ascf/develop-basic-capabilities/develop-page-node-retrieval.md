@@ -2,9 +2,10 @@
 title: "获取页面节点信息"
 original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-page-node-retrieval
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-basic-capabilities/develop-page-node-retrieval
+last_sync: 2026-06-07
+sync_hash: d17afa15
 ---
-
-
 当开发需要指定目标节点的属性，位置等信息前，需要获取页面节点信息，当前开发指导提供获取页面节点信息的方法。
 
 ## HXML节点信息

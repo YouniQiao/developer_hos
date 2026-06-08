@@ -3,8 +3,10 @@ title: 开关
 sidebar_label: 开关
 original_url: /docs/design/components/selection-components/toggle-switch
 format: md
+upstream_id: design/components/selection-components/toggle-switch
+last_sync: 2026-06-07
+sync_hash: 172bcf5e
 ---
-
 # 开关
 
 通过开关，开启或关闭某个功能。开发相关描述请参考 [Toggle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-toggle#toggletype枚举说明) 文档。

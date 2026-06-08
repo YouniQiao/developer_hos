@@ -2,9 +2,10 @@
 title: "分析崩溃问题"
 original_url: /docs/distribute/agc/agc-help-apms-crash-0000002236333918/agc-help-apms-crash-analyse-0000002271413041
 format: md
+upstream_id: distribute/agc/agc-help-apms-crash-0000002236333918/agc-help-apms-crash-analyse-0000002271413041
+last_sync: 2026-06-07
+sync_hash: 33a94c8e
 ---
-
-
 在发生崩溃后，异常管理模块会将崩溃数据上报到AGC，您可以在AGC中查看崩溃问题的详细信息，分析崩溃发生的原因。崩溃问题主要涉及CPP\_CRASH、JS\_ERROR、OOM三项指标，本章节将介绍它们的基本定位方法。
 
 #### 查看崩溃基本数据

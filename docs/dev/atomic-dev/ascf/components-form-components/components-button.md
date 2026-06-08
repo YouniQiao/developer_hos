@@ -2,9 +2,10 @@
 title: "button"
 original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-button
 format: md
+upstream_id: dev/atomic-dev/ascf/components-form-components/components-button
+last_sync: 2026-06-07
+sync_hash: f4d64667
 ---
-
-
 按钮。
 
 **起始版本：** 1.0.0

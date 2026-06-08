@@ -2,9 +2,10 @@
 title: "云函数"
 original_url: /docs/distribute/agc/agc-help-cloudmonitor-overall-0000002271371761/agc-help-cloudmonitor-overall-cloudfunction-0000002236332576
 format: md
+upstream_id: distribute/agc/agc-help-cloudmonitor-overall-0000002271371761/agc-help-cloudmonitor-overall-cloudfunction-0000002236332576
+last_sync: 2026-06-07
+sync_hash: 7631fca0
 ---
-
-
 您可以在监控大盘的云函数详情页查看函数级和实例级两个维度的监控指标详情，然后根据指标统计数据判断是否需要优化函数实现。
 
 #### 前提条件

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "订阅状态改变事件场景"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-superprivacymode/devicesecurity-subscribe-superprivacymode
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-superprivacymode/devicesecurity-subscribe-superprivacymode
+last_sync: 2026-06-07
+sync_hash: 0a6ae3d0
 ---
-
-
 ## 场景介绍
 
 从6.0.2(22)开始，新增订阅超级隐私模式状态改变事件。

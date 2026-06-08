@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "系统后台切应用前台接续下载资源包"
 original_url: /docs/dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-back-fore
 format: md
+upstream_id: dev/app-dev/graphics/graphics-accelerate-kit-guide/graphics-accelerate-assetdownload/graphics-accelerate-assetdownload-service/graphics-accelerate-assetdownload-back-fore
+last_sync: 2026-06-07
+sync_hash: e653a6a2
+upstream_hash: cb364a2ea71f
 ---
-
 
 系统后台静默下载过程中启动游戏，应用前台将接管系统后台下载任务，资源包下载任务将在应用前台接续执行。
 

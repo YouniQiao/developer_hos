@@ -3,9 +3,10 @@ title: "@compatibility/api-compatibility-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-api-compatibility-check
 format: md
+upstream_id: tools/coding-debug/ide-api-compatibility-check
+last_sync: 2026-06-07
+sync_hash: 9191ef7c
 ---
-
-
 # @compatibility/api-compatibility-check
 
 从DevEco Studio 6.0.1 Beta1开始，Code Linter新增版本兼容性规则扫描。

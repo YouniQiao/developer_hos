@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“Schema validate failed”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-17
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-17
+last_sync: 2026-06-07
+sync_hash: cd297ec8
 ---
-
-
 **问题现象**
 
 DevEco Studio编译时出现“Schema validate failed”错误。

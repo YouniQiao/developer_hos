@@ -3,8 +3,10 @@ title: "MaterialFormat"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-materialformat-0000001227735035
 format: md
+upstream_id: monetize/promotion/marketapi-modle-materialformat-0000001227735035
+last_sync: 2026-06-07
+sync_hash: a15d5dc1
 ---
-
 # MaterialFormat
 
 | 字段 | 必选(M)/可选(O) | 类型 | 描述 |

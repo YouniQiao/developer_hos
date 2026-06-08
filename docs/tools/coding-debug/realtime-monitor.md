@@ -3,9 +3,10 @@ title: "性能问题定界：实时监控"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/realtime-monitor
 format: md
+upstream_id: tools/coding-debug/realtime-monitor
+last_sync: 2026-06-07
+sync_hash: 46199748
 ---
-
-
 # 性能问题定界：实时监控
 
 解决性能问题，首先对当前应用的运行情况以及设备的资源消耗进行监测，以初步确定可能存在的性能问题以及问题出现的位置。

@@ -2,9 +2,10 @@
 title: "HmCodeOpenInfo"
 original_url: /docs/distribute/agc/agc-help-harmonyoslabel-api-data-model-0000002349175964/agc-help-harmonyoslabel-api-hmcodeinfo-0000002382856349
 format: md
+upstream_id: distribute/agc/agc-help-harmonyoslabel-api-data-model-0000002349175964/agc-help-harmonyoslabel-api-hmcodeinfo-0000002382856349
+last_sync: 2026-06-07
+sync_hash: 99ab4f50
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | codeId | M | Integer | HarmonyOS标签ID，唯一标识。 |

@@ -2,6 +2,9 @@
 title: "游戏转移"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-transferring-0000001194325290
+upstream_id: distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-transferring-0000001194325290
+last_sync: 2026-06-07
+sync_hash: a9246148
 ---
 import MergeTable from "@site/src/components/MergeTable";
 

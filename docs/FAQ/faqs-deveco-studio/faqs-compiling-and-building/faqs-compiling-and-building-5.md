@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“ERROR: Failed :entry:default@CompileResource”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-5
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-5
+last_sync: 2026-06-07
+sync_hash: ad5da77f
 ---
-
-
 **问题现象**
 
 在构建依赖HSP的HAP模块时，如果出现“ERROR: Failed :entry:default@CompileResource”错误，提示某资源文件不存在，但该资源文件实际存在于HSP内，请检查以下几点：

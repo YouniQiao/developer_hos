@@ -3,8 +3,10 @@ title: "创建商品库"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-dpa4-0000001286183194
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-dpa4-0000001286183194
+last_sync: 2026-06-07
+sync_hash: 7377c441
 ---
-
 # 创建商品库
 
 您通过本接口可以创建商品库。

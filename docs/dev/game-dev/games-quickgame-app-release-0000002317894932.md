@@ -2,9 +2,10 @@
 title: "提交上架申请"
 original_url: /docs/dev/game-dev/games-quickgame-app-release-0000002317894932
 format: md
+upstream_id: dev/game-dev/games-quickgame-app-release-0000002317894932
+last_sync: 2026-06-07
+sync_hash: c62a1a9f
 ---
-
-
 ## 准备资质文件
 
 首次申请上架的快游戏，需准备如下资质文件：

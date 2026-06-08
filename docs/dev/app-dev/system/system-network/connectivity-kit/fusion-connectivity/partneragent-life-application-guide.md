@@ -2,9 +2,10 @@
 title: "伙伴设备与HarmonyOS设备互通的开发指南"
 original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/fusion-connectivity/partneragent-life-application-guide
 format: md
+upstream_id: dev/app-dev/system/system-network/connectivity-kit/fusion-connectivity/partneragent-life-application-guide
+last_sync: 2026-06-07
+sync_hash: b5e38b81
 ---
-
-
 ## 简介
 
 伙伴设备需要与HarmonyOS设备互通，比如以下主要场景：

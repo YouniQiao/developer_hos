@@ -2,9 +2,10 @@
 title: "如何实现跨文件样式复用"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-271
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-271
+last_sync: 2026-06-07
+sync_hash: 8602a74c
 ---
-
-
 在应用开发中，需要使用相同功能和样式的ArkUI组件，例如购物页面中会使用相同样式的Button、Text等组件。常用的方法是抽取公共样式或封装成一个自定义组件，添加到公共组件库中，以减少冗余代码。
 
 需要提供单一组件的样式定制效果时，推荐使用跨文件样式复用方案。具体步骤如下：

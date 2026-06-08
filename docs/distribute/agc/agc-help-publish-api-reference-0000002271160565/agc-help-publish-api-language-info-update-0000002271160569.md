@@ -2,9 +2,10 @@
 title: "更新应用语言信息"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-language-info-update-0000002271160569
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-language-info-update-0000002271160569
+last_sync: 2026-06-07
+sync_hash: bb7c4a2d
 ---
-
-
 #### 功能介绍
 
 此接口用于更新指定的HarmonyOS应用/元服务的语言描述信息，如果当前没有语言描述信息则新增。

@@ -3,8 +3,10 @@ title: "查看相关数据"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-bonus-global_ocpd-report-0000001626648992
 format: md
+upstream_id: monetize/promotion/bp-bonus-global_ocpd-report-0000001626648992
+last_sync: 2026-06-07
+sync_hash: 6050abf4
 ---
-
 # 查看相关数据
 
 ## 查看子任务数据报表

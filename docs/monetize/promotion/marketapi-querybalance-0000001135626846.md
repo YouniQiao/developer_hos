@@ -3,8 +3,10 @@ title: "查询账户余额"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-querybalance-0000001135626846
 format: md
+upstream_id: monetize/promotion/marketapi-querybalance-0000001135626846
+last_sync: 2026-06-07
+sync_hash: 87277216
 ---
-
 # 查询账户余额
 
 ## 功能介绍

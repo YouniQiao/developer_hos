@@ -2,9 +2,10 @@
 title: "UI开发调试调优"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-debug-optimize
+last_sync: 2026-06-07
+sync_hash: fd365506
 ---
-
-
 * **[UI稳定性故障调试](/docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-stability)**
 * **[UI显示异常调试](/docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/arkts-layout-debug)**
 * **[UI上下文异常调试](/docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/arkts-wrong-uicontext-debug)**

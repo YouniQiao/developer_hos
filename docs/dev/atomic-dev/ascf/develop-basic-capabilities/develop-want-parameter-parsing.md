@@ -2,9 +2,10 @@
 title: "want参数解析"
 original_url: /docs/dev/atomic-dev/ascf/develop-basic-capabilities/develop-want-parameter-parsing
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-basic-capabilities/develop-want-parameter-parsing
+last_sync: 2026-06-07
+sync_hash: be05cf04
 ---
-
-
 Want参数是应用组件间通信的核心载体对象，作用为启动目标应用/元服务并传递信息。
 
 **图 1** Want用法示意图

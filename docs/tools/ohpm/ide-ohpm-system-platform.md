@@ -1,12 +1,12 @@
 ---
-
 title: "ohpm概述"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/ide-ohpm-system-platform
 format: md
+upstream_id: tools/ohpm/ide-ohpm-system-platform
+last_sync: 2026-06-07
+sync_hash: 53dae660
 ---
-
-
 # ohpm概述
 
 ## 什么是 ohpm

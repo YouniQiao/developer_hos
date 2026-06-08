@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“Error: open 'xxxlibimage_transcoder_shared.dll' failed”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-181
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-181
+last_sync: 2026-06-07
+sync_hash: a9516914
 ---
-
-
 **问题现象**
 
 Windows下编译工程出现错误，提示“Error: open 'xxx\deveco-studio\sdk\default\hms\toolchains\lib\libimage\_transcoder\_shared.dll' failed”，加载dll失败。

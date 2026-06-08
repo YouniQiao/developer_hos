@@ -3,8 +3,10 @@ title: 设计原则
 sidebar_label: 设计原则
 original_url: /docs/design/general-design-basics/animation/principles
 format: md
+upstream_id: design/general-design-basics/animation/principles
+last_sync: 2026-06-07
+sync_hash: 7fdc7ff1
 ---
-
 # 设计原则
 
 在设计动效过程中，要清楚地理解动效在系统中承载的作用，动效能体现页面的流畅过渡、对象的明确提示、元素的层级关系、产品的品牌印象等。动效要始终围绕操作符合用户心理预期，物体运动符合真实世界，元素表现形态凸显产品的品牌与调性。

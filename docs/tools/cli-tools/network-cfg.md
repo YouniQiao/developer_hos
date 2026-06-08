@@ -3,9 +3,10 @@ title: "network-cfg工具"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/network-cfg
 format: md
+upstream_id: tools/cli-tools/network-cfg
+last_sync: 2026-06-07
+sync_hash: 46bf56c9
 ---
-
-
 # network-cfg工具
 
 network-cfg是为开发人员提供的用于设置网络相关参数的工具（其中"cfg"为"config"的缩写），例如给Wi-Fi设置代理等。

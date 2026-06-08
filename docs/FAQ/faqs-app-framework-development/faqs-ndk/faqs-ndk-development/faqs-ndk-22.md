@@ -2,9 +2,10 @@
 format: md
 title: "如何在Native侧访问应用包内Rawfile资源"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-22
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-22
+last_sync: 2026-06-07
+sync_hash: 81a98e87
 ---
-
-
 **解决措施**
 
 使用Native Rawfile接口操作Rawfile目录和文件，可以访问应用包内的资源。

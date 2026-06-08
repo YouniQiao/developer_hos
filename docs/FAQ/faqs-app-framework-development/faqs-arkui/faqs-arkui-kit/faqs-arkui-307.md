@@ -2,9 +2,10 @@
 format: md
 title: "如何查看触摸热区范围"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-307
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-307
+last_sync: 2026-06-07
+sync_hash: 527fcbb3
 ---
-
-
 通过自定义方式设置responseRegion属性值，参考代码如下：
 
 ```

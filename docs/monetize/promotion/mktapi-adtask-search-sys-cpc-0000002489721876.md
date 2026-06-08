@@ -3,8 +3,10 @@ title: "搜索-系统投放-CPC任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/mktapi-adtask-search-sys-cpc-0000002489721876
 format: md
+upstream_id: monetize/promotion/mktapi-adtask-search-sys-cpc-0000002489721876
+last_sync: 2026-06-07
+sync_hash: 6c336895
 ---
-
 # 搜索-系统投放-CPC任务
 
 ## 功能介绍

@@ -2,9 +2,10 @@
 title: "组件样式及隔离策略"
 original_url: /docs/dev/atomic-dev/ascf/custom-components-overview/custom-components-style-isolation
 format: md
+upstream_id: dev/atomic-dev/ascf/custom-components-overview/custom-components-style-isolation
+last_sync: 2026-06-07
+sync_hash: bef3b728
 ---
-
-
 组件对应 css 文件的样式，只对组件 hxml 内的节点生效。编写组件样式时，需要注意以下几点：
 
 * 继承样式，如 font 、 color ，会从组件外继承到组件内。

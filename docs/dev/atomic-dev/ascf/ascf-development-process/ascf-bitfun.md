@@ -2,9 +2,10 @@
 title: "使用鸿蒙电脑版DevEco Studio ASCF助手开发"
 original_url: /docs/dev/atomic-dev/ascf/ascf-development-process/ascf-bitfun
 format: md
+upstream_id: dev/atomic-dev/ascf/ascf-development-process/ascf-bitfun
+last_sync: 2026-06-07
+sync_hash: 09f08db9
 ---
-
-
 ASCF开发助手推出了适配鸿蒙电脑版DevEco Studio的版本，旨在为元服务（HarmonyOS元服务）开发者提供高效、便捷的一站式开发体验。该助手集成了项目创建、代码转换、热更新，调试等核心功能。
 
 ## 环境要求
@@ -42,7 +43,7 @@ ASCF开发助手推出了适配鸿蒙电脑版DevEco Studio的版本，旨在为
    参考[ASCF助手配置项目信息](/docs/dev/atomic-dev/ascf/ascf-development-process/ascf-assistant#新建项目)。
 3. 签名。
 
-   构建元服务需要先配置好签名，可以使用自动签名或手动方式完成签名，详情请参见[签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
+   构建元服务需要先配置好签名，可以使用自动签名或手动方式完成签名，详情请参见[签名](/docs/tools/coding-debug/ide-signing)。
 
    ![](./img/c30919b8.png)
 

@@ -2,9 +2,10 @@
 format: md
 title: "Native如何创建子线程，有什么约束，与主线程如何通信"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-68
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-68
+last_sync: 2026-06-07
+sync_hash: 46305236
 ---
-
-
 请参照下面的代码，通过C++子线程调用arkts侧的函数：
 
 ```

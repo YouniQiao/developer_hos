@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "如何将码图背景颜色设置成透明色"
 original_url: /docs/dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-19
 format: md
+upstream_id: dev/app-dev/media/scan-kit-guide/scan-faq/scan-faq-19
+last_sync: 2026-06-07
+sync_hash: 7f0c4cf3
 ---
-
-
 **问题现象**
 
 当前码图生成不支持设置背景颜色为透明色。

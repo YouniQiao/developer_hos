@@ -2,9 +2,10 @@
 title: "签名验签识别真实请求"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/attestation-signature-verification
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/attestation-signature-verification
+last_sync: 2026-06-07
+sync_hash: bfab010a
 ---
-
-
 ## 概述
 
 您的应用服务器在接收到来自应用的请求时，如果没有有效的完整性校验手段，可能会接收到被篡改或者伪造的应用请求。但是应用可以使用应用私钥对重要的业务请求进行签名，并在服务器使用保存的应用公钥进行验签，以此**识别被篡改或伪造的应用请求**。

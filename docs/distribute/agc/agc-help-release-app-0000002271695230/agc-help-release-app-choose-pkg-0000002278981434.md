@@ -2,9 +2,10 @@
 title: "选择待发布软件包"
 original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-choose-pkg-0000002278981434
 format: md
+upstream_id: distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-choose-pkg-0000002278981434
+last_sync: 2026-06-07
+sync_hash: a078a39c
 ---
-
-
 从上传的版本中选择需要发布的软件包。
 
 #### 前提条件

@@ -3,10 +3,10 @@ title: "概述"
 displayed_sidebar: monetizationSidebar
 original_url: /docs/monetize/monetization/agd_pro_api_overview-0000001214348458
 format: md
+upstream_id: monetize/monetization/agd_pro_api_overview-0000001214348458
+last_sync: 2026-06-07
+sync_hash: 2453b24f
 ---
-
-
-
 AGD Pro应用变现服务（简称AGD Pro服务）是华为应用市场（AppGallery，以下简称AG）针对内媒或者外部媒体提供的应用推荐搜索服务，媒体可以通过集成AGD Pro服务提供的API接口，从华为应用市场请求获取App广告信息，并且将App的广告队列数据通过json体返回给媒体，媒体自行渲染、展示，用户下载后实现流量的变现与收入分成。
 
 #### 接入流程

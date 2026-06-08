@@ -2,9 +2,10 @@
 title: "应用沙箱目录"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/app-file/app-sandbox-directory
+last_sync: 2026-06-07
+sync_hash: 5264f415
 ---
-
-
 应用沙箱是一种以安全防护为目的的隔离机制，避免数据受到恶意路径穿越访问。在这种沙箱的保护机制下，应用可见的目录范围即为“应用沙箱目录”。
 
 * 对于每个应用，系统会在内部存储空间映射出一个专属的“应用沙箱目录”，它是“[应用文件目录](#应用文件目录与应用文件路径)”与一部分系统文件（应用运行必需的少量系统文件）所在的目录组成的集合。

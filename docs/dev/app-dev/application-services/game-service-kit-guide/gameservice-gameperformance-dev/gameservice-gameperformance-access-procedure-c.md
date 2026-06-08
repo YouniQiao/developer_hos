@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "开发指导(C/C++)"
 original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameperformance-dev/gameservice-gameperformance-access-procedure-c
 format: md
+upstream_id: dev/app-dev/application-services/game-service-kit-guide/gameservice-gameperformance-dev/gameservice-gameperformance-access-procedure-c
+last_sync: 2026-06-07
+sync_hash: 461c3a54
+upstream_hash: 828b0359d229
 ---
-
 
 游戏场景感知包括：
 

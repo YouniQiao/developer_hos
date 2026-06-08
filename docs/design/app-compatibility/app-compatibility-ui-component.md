@@ -3,9 +3,10 @@ title: "UI自定义组件兼容性指导"
 displayed_sidebar: appCompatibilitySidebar
 original_url: /docs/design/app-compatibility/app-compatibility-ui-component
 format: md
+upstream_id: design/app-compatibility/app-compatibility-ui-component
+last_sync: 2026-06-07
+sync_hash: 4884a7e1
 ---
-
-
 # UI自定义组件兼容性指导
 
 在UI自定义组件中，状态管理装饰器需要通过自定义组件进行API版本隔离。

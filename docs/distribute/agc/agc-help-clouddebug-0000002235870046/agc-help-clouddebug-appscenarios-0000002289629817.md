@@ -2,9 +2,10 @@
 title: "典型应用场景"
 original_url: /docs/distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-appscenarios-0000002289629817
 format: md
+upstream_id: distribute/agc/agc-help-clouddebug-0000002235870046/agc-help-clouddebug-appscenarios-0000002289629817
+last_sync: 2026-06-07
+sync_hash: 51c66963
 ---
-
-
 #### 应用调试
 
 您选择设备并从本地上传应用后，应用将被自动安装至真机设备，您即可对应用进行调试，帮助您提前发现问题。

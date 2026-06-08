@@ -2,9 +2,10 @@
 title: "如何实现字符串编解码"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-19
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-19
+last_sync: 2026-06-07
+sync_hash: b0d9d2dd
 ---
-
-
 TextEncoder用于将字符串编码为字节数组，支持utf-8、utf-16le/be等编码格式。
 
 TextDecoder用于将字节数组解码为字符串，支持多种编码格式，如utf-8、utf-16le/be、iso-8859和windows-1251。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发后自检"
 original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin/gameservice-check
 format: md
+upstream_id: dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin/gameservice-check
+last_sync: 2026-06-07
+sync_hash: 7e566d99
 ---
-
-
 为减少提交审核后被驳回的概率，请参考如下自检CheckList进行自检。
 
 自检通过后，再前往AppGallery Connect提交游戏上架审核，具体操作请参见[发布HarmonyOS游戏](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-0000002364930906)。

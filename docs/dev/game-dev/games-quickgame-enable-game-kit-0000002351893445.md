@@ -2,9 +2,10 @@
 title: "打开API开关"
 original_url: /docs/dev/game-dev/games-quickgame-enable-game-kit-0000002351893445
 format: md
+upstream_id: dev/game-dev/games-quickgame-enable-game-kit-0000002351893445
+last_sync: 2026-06-07
+sync_hash: ec51316e
 ---
-
-
 您需在AppGallery Connect控制台打开对应服务的API开关：
 
 * 快游戏必须打开**游戏服务**API开关。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取手机号和风险等级Button"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-get-risklevel
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-button/scenario-fusion-button-get-risklevel
+last_sync: 2026-06-07
+sync_hash: 99a8e860
 ---
-
-
 ## 场景介绍
 
 从6.0.2(22)开始，支持获取手机号和风险等级Button功能。

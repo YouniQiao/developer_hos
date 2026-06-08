@@ -2,9 +2,10 @@
 title: "Data Augmentation Kit简介"
 original_url: /docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-introduction
 format: md
+upstream_id: dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-introduction
+last_sync: 2026-06-07
+sync_hash: b9032945
 ---
-
-
 Data Augmentation Kit（数据增强套件）提供知识库、知识检索、RAG（检索增强生成）、端侧问答模型能力，打造个性化智慧数据平台，实现个性化智慧体验。
 
 ## 能力范围

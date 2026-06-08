@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发指导(ArkTS)"
 original_url: /docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameperformance-dev/gameservice-gameperformance-access-procedure
 format: md
+upstream_id: dev/app-dev/application-services/game-service-kit-guide/gameservice-gameperformance-dev/gameservice-gameperformance-access-procedure
+last_sync: 2026-06-07
+sync_hash: 34dc797a
 ---
-
-
 游戏场景感知包括：
 
 * Game Service Kit通过游戏提供的精细化场景信息、配置信息和网络信息等数据，以及当前负载情况使用不同策略优化系统资源调度。

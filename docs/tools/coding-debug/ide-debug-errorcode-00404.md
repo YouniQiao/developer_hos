@@ -3,9 +3,10 @@ title: "hdc命令失败错误码"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-errorcode-00404
 format: md
+upstream_id: tools/coding-debug/ide-debug-errorcode-00404
+last_sync: 2026-06-07
+sync_hash: e2e07514
 ---
-
-
 # hdc命令失败错误码
 
 #### 00404035 安装hap包超时

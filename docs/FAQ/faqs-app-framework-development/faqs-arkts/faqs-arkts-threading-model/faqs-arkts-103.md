@@ -2,9 +2,10 @@
 format: md
 title: "ArkTS实现多Worker实例"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-103
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-103
+last_sync: 2026-06-07
+sync_hash: c0f13e02
 ---
-
-
 实现多Worker并进行消息传递，使用registerGlobalCallObject方法传递对象及调用函数，获取缓冲区。注意：callGlobalCallObjectMethod方法在主线程中运行。
 
 1. 在MultipleWorkerInstances.ets文件中调用自定义函数。

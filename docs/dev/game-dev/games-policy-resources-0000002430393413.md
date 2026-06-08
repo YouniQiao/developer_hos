@@ -3,9 +3,10 @@ title: "全场景接入与创新能力（资源激励）"
 original_url: /docs/dev/game-dev/games-policy-resources-0000002430393413
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-policy-resources-0000002430393413
+last_sync: 2026-06-07
+sync_hash: b363a2a2
 ---
-
-
 ## 一、全场景接入资源政策
 
 有意接入华为全场景的游戏，仅需简单调整手机端包体的配置，使游戏上架后同时适配PC、智慧屏，部分操作类游戏还需适配操控方式。

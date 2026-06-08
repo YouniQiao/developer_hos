@@ -3,9 +3,10 @@ title: "初始化/初始化完成"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/agent2agent-definition-0000002500439093/initialize-initialized-0000002537681161
 format: md
+upstream_id: distribute/xiaoyi/agent2agent-definition-0000002500439093/initialize-initialized-0000002537681161
+last_sync: 2026-06-07
+sync_hash: 5be95489
 ---
-
-
 # 初始化/初始化完成
 
 Agent Client通知Agent Server服务器-服务器之间通信初始化：

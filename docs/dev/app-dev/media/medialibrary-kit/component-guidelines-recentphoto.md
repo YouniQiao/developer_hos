@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用RecentPhoto组件获取最近一张图片"
 original_url: /docs/dev/app-dev/media/medialibrary-kit/component-guidelines-recentphoto
 format: md
+upstream_id: dev/app-dev/media/medialibrary-kit/component-guidelines-recentphoto
+last_sync: 2026-06-07
+sync_hash: eea4a8ed
 ---
-
-
 应用可以在布局中嵌入最近图片组件，通过此组件，应用无需申请权限，即可指定配置访问公共目录中最近的一个图片或视频文件。授予的权限仅包含只读权限。
 
 界面效果如图所示。

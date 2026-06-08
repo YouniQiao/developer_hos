@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-unnecessary-qualifier"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-unnecessary-qualifier
 format: md
+upstream_id: tools/coding-debug/ide_no-unnecessary-qualifier
+last_sync: 2026-06-07
+sync_hash: 65a37d8e
 ---
-
-
 # @typescript-eslint/no-unnecessary-qualifier
 
 禁止不必要的命名空间限定符。

@@ -2,9 +2,10 @@
 format: md
 title: "如何在命令行使用ohpm"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-9
+upstream_id: FAQ/faqs-deveco-studio/faqs-development-environment/faqs-development-environment-9
+last_sync: 2026-06-07
+sync_hash: b07e01d3
 ---
-
-
 ![](./img/d1b70f79.png)
 
 安装node.js 18.x及以上版本，并配置环境变量。

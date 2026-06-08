@@ -2,9 +2,10 @@
 title: "拉起其他元服务"
 original_url: /docs/dev/atomic-dev/atomic-service-framework-development/start-other-atomicservices
 format: md
+upstream_id: dev/atomic-dev/atomic-service-framework-development/start-other-atomicservices
+last_sync: 2026-06-07
+sync_hash: 916d81fe
 ---
-
-
 开发者可以通过不同的方式从外部拉起元服务，包括使用App Linking链接以及openAtomicService接口等。每种方法都有其独特的优势和适用场景，开发者可以根据具体需求选择合适的方式，以实现元服务的快速启动和使用。
 
 ## 拉起元服务的方式介绍

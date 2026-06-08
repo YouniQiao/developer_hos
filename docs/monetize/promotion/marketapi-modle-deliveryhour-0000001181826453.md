@@ -3,8 +3,10 @@ title: "DeliveryHour"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-deliveryhour-0000001181826453
 format: md
+upstream_id: monetize/promotion/marketapi-modle-deliveryhour-0000001181826453
+last_sync: 2026-06-07
+sync_hash: 183e1805
 ---
-
 # DeliveryHour
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |

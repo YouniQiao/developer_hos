@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "内容搜索方案"
 original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-search-rec/intents-search-rec-access-programme/intents-skill-all-rec-content-search
 format: md
+upstream_id: dev/app-dev/ai/intents-kit-guide/intents-search-rec/intents-search-rec-access-programme/intents-skill-all-rec-content-search
+last_sync: 2026-06-07
+sync_hash: 3f118191
 ---
-
-
 ## 方案概述
 
 当用户使用应用/元服务时，开发者可以按照标准意图Schema（具体意图详见[各垂域意图Schema](/docs/distribute/xiaoyi/intents-kit-0000001677103865/intents-schema-0000001901962713)）向系统共享数据（数据包含用户行为和内容实体），并实现意图调用（空调用与传参调用）。已实现用户点击卡片后，可后台执行功能（例如播放指定歌曲）或跳转至指定内容页面（例如指定的歌曲播放页面）。

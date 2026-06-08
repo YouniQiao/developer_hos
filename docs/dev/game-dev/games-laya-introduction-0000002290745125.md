@@ -2,8 +2,11 @@
 title: "使用Laya引擎概述"
 original_url: /docs/dev/game-dev/games-laya-introduction-0000002290745125
 format: md
+upstream_id: dev/game-dev/games-laya-introduction-0000002290745125
+last_sync: 2026-06-07
+sync_hash: 5d995bbf
+upstream_hash: f1528086fcc4
 ---
-
 
 本文主要介绍基于Laya架构的游戏适配HarmonyOS 5.0及以上系统的适配方案。
 

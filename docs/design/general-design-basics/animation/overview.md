@@ -3,8 +3,10 @@ title: 概述
 sidebar_label: 概述
 original_url: /docs/design/general-design-basics/animation/overview
 format: md
+upstream_id: design/general-design-basics/animation/overview
+last_sync: 2026-06-07
+sync_hash: 47290443
 ---
-
 # 概述
 
 ### 引力动效体系

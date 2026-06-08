@@ -2,9 +2,10 @@
 title: "使用Node-API接口进行Date相关开发"
 original_url: /docs/dev/ndk-dev/use-napi-about-date
 format: md
+upstream_id: dev/ndk-dev/use-napi-about-date
+last_sync: 2026-06-07
+sync_hash: 6580959d
 ---
-
-
 ## 简介
 
 Node-API中date相关接口用于处理ArkTS Date对象，并在Node-API模块和ArkTS代码之间进行日期数据的转换和处理。这对于在Node-API模块中处理时间和日期相关逻辑非常有用。

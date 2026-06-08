@@ -2,9 +2,10 @@
 format: md
 title: "Marquee组件的文字滚动，第一次滚动出现大量空白，如何避免空白出现"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-338
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-338
+last_sync: 2026-06-07
+sync_hash: 0653e778
 ---
-
-
 **问题现象**
 
 Marquee组件在文本滚动时，文本滚动到控件的开头，会造成大量空白，如何实现让文本末尾滚动到控件末尾时停止，避免空白出现。

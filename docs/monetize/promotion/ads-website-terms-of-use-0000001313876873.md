@@ -3,8 +3,10 @@ title: "鲸鸿动能广告网站使用条款"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-website-terms-of-use-0000001313876873
 format: md
+upstream_id: monetize/promotion/ads-website-terms-of-use-0000001313876873
+last_sync: 2026-06-07
+sync_hash: 4e599032
 ---
-
 # 鲸鸿动能广告网站使用条款
 
 <strong>鲸鸿动能广告</strong> <strong>网站使用条款</strong>

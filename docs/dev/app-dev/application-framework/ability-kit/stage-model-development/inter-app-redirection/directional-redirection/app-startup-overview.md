@@ -2,9 +2,10 @@
 title: "拉起指定应用概述"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-startup-overview
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/app-startup-overview
+last_sync: 2026-06-07
+sync_hash: add716d2
 ---
-
-
 本章节主要介绍如何通过应用链接跳转的方式拉起指定应用。
 
 ![](./img/7742d894.png)

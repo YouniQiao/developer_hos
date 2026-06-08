@@ -2,9 +2,10 @@
 title: "线性容器"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-utils/containers/linear-container
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-utils/containers/linear-container
+last_sync: 2026-06-07
+sync_hash: 72b9d267
 ---
-
-
 线性容器实现能按顺序访问的数据结构，其底层主要通过数组实现，包括ArrayList、Vector、List、LinkedList、Deque、Queue和Stack。
 
 线性容器优化了数据访问速度，运行时（Runtime）通过一条字节码指令即可完成增、删、改、查等操作。

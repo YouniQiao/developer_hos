@@ -2,8 +2,11 @@
 title: "模拟点击检测"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-brid-develop/devicesecurity-simulatedclickdetection
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-brid-develop/devicesecurity-simulatedclickdetection
+last_sync: 2026-06-07
+sync_hash: 822b3b0e
+upstream_hash: fb00dc94c748
 ---
-
 
 ## 场景介绍
 

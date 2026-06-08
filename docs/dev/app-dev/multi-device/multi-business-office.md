@@ -3,8 +3,10 @@ title: "多设备商务办公界面"
 displayed_sidebar: appDevSidebar
 original_url: /docs/dev/app-dev/multi-device/multi-business-office
 format: md
+upstream_id: dev/app-dev/multi-device/multi-business-office
+last_sync: 2026-06-07
+sync_hash: c1b897df
 ---
-
 # 多设备商务办公界面
 
 ## 概述

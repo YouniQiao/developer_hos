@@ -2,9 +2,10 @@
 title: "地址流转至车机"
 original_url: /docs/dev/app-dev/system/system-hardware/car-kit-guide/car-implement-navi-hop/car-address-hop
 format: md
+upstream_id: dev/app-dev/system/system-hardware/car-kit-guide/car-implement-navi-hop/car-address-hop
+last_sync: 2026-06-07
+sync_hash: a17e7cad
 ---
-
-
 将手机应用的地址文本流转至车机指定地图应用的能力。
 
 ## 场景介绍

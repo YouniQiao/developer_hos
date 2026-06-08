@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "GPU/CPU内存访问同步操作开发指南 (C/C++)"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/native-surface/native-fence-guidelines
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/native-surface/native-fence-guidelines
+last_sync: 2026-06-07
+sync_hash: 4cf061e8
 ---
-
-
 ## 场景介绍
 
 NativeFence是管理fenceFd同步状态的模块。开发者可通过其接口实现以下功能：设置阻塞时间、永久阻塞、关闭fenceFd以及检查其有效性。

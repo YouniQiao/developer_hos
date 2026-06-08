@@ -2,9 +2,10 @@
 title: "事件订阅（C/C++）"
 original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/hiappevent-watcher-app-events-ndk
 format: md
+upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/hiappevent-watcher-app-events-ndk
+last_sync: 2026-06-07
+sync_hash: 1ee79261
 ---
-
-
 HiAppEvent提供了事件订阅接口，用于订阅并接收应用产生的事件。
 
 ## 接口说明

@@ -3,9 +3,10 @@ title: "@performance/js-code-cache-by-precompile-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-js-code-cache-by-precompile-check
 format: md
+upstream_id: tools/coding-debug/ide-js-code-cache-by-precompile-check
+last_sync: 2026-06-07
+sync_hash: e935a9b8
 ---
-
-
 # @performance/js-code-cache-by-precompile-check
 
 建议通过预编译生成JavaScript字节码缓存，可以降低Web页面第一次和第二次的加载时间。

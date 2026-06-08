@@ -3,8 +3,11 @@ title: "CPU活动分析"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-insight-session-cpu
 format: md
+upstream_id: tools/coding-debug/ide-insight-session-cpu
+last_sync: 2026-06-07
+sync_hash: 25d6660a
+upstream_hash: a4eb2d068bae
 ---
-
 
 # CPU活动分析
 

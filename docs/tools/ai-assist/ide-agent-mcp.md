@@ -3,9 +3,10 @@ title: "模型上下文协议（MCP）配置"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-agent-mcp
 format: md
+upstream_id: tools/ai-assist/ide-agent-mcp
+last_sync: 2026-06-07
+sync_hash: df69bf22
 ---
-
-
 # 模型上下文协议（MCP）配置
 
 ## 功能介绍

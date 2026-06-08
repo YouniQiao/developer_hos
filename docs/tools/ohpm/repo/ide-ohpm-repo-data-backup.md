@@ -2,9 +2,10 @@
 title: "数据备份"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-data-backup
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-data-backup
+last_sync: 2026-06-07
+sync_hash: 7e74e7cb
 ---
-
-
 # 数据备份
 
 数据迁移或者版本升级之前请务必进行数据备份，以免重要数据丢失，无法回滚。备份的内容包括**ohpm-repo**中**`<deploy\_root**>`部署根目录内的数据、db元数据以及store三方包数据。

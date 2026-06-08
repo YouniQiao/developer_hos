@@ -2,8 +2,11 @@
 format: md
 title: "编译时DevEco Studio报错App Launch: To run and debug the Harmony device, configure the HarmonyOS runtime"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-41
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-41
+last_sync: 2026-06-07
+sync_hash: 84b215e8
+upstream_hash: c29ce9014fe4
 ---
-
 
 **问题现象**
 

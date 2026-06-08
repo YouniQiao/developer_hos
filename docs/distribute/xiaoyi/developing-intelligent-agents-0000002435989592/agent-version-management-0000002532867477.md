@@ -3,9 +3,10 @@ title: "智能体版本管理"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/developing-intelligent-agents-0000002435989592/agent-version-management-0000002532867477
 format: md
+upstream_id: distribute/xiaoyi/developing-intelligent-agents-0000002435989592/agent-version-management-0000002532867477
+last_sync: 2026-06-07
+sync_hash: 719d93fd
 ---
-
-
 # 智能体版本管理
 
 智能体的版本管理功能，包括查看、回退到历史版本。版本记录中包括智能体上下架及撤回审核时的版本。

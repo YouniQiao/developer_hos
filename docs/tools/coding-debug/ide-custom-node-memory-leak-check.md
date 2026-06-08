@@ -3,9 +3,10 @@ title: "@performance/custom-node-memory-leak-check"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-custom-node-memory-leak-check
 format: md
+upstream_id: tools/coding-debug/ide-custom-node-memory-leak-check
+last_sync: 2026-06-07
+sync_hash: cdb1327c
 ---
-
-
 # @performance/custom-node-memory-leak-check
 
 建议在Component中新建自定义节点时主动释放节点，避免因未释放节点导致的内存泄露。

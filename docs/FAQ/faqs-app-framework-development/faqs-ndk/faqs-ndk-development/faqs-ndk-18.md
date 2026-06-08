@@ -2,9 +2,10 @@
 format: md
 title: "如何在Native侧调用ArkTS侧的系统能力"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-18
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-18
+last_sync: 2026-06-07
+sync_hash: 8e14aa9a
 ---
-
-
 **问题详情**
 
 系统提供了 ArkTS 接口，但未提供对应的 NAPI 接口。使用 C++ 代码实现业务逻辑时，部分系统能力需要依赖 ArkTS 接口。

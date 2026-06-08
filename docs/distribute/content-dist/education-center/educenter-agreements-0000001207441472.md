@@ -3,9 +3,10 @@ title: "华为教育中心服务协议"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/education-center/educenter-agreements-0000001207441472
 format: md
+upstream_id: distribute/content-dist/education-center/educenter-agreements-0000001207441472
+last_sync: 2026-06-07
+sync_hash: a9011734
 ---
-
-
 # 华为教育中心服务协议
 
 点击下载[华为教育中心服务协议](https://terms-drcn.platform.dbankcloud.cn/agreementservice/developer/getAgreementTemplate?agrType=1163&country=cn&language=zh_cn&version=2022012801)。
@@ -46,7 +47,7 @@ format: md
 
 3.1 您自行负责您的课程创建、上传、管理等工作。您可以选择通过登录华为开发者联盟网站上传课程内容，也可以选择接入华为教育中心标准接口（CourseKit）上传课程内容。您使用华为教育中心标准接口接入合作时，应配合华为进行接口联调，通过接入测试后，方可上传课程内容。
 
-3.2 您上传的课程内容，需遵守课程内容的[约定要求](https://developer.huawei.com/consumer/cn/doc/distribution/content/educenter-cource-0000001050782860)，并确保课程可以在华为教育中心安全、稳定的运营。华为审核通过后，课程内容将在本协议约定的分发区域内，通过包括但不限于华为自营平台（如：“华为教育中心”）或华为合作平台进行分发和推广。
+3.2 您上传的课程内容，需遵守课程内容的[约定要求](/docs/distribute/content-dist/education-center/educenter-content-0000001145356855/educenter-cource-0000001050782860)，并确保课程可以在华为教育中心安全、稳定的运营。华为审核通过后，课程内容将在本协议约定的分发区域内，通过包括但不限于华为自营平台（如：“华为教育中心”）或华为合作平台进行分发和推广。
 
 3.3 您不得在课程内宣传与课程内容无关的任何其他信息，包括但不限于广告、其他课程产品等。
 

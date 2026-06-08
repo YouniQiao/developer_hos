@@ -3,8 +3,10 @@ title: "投放搜索任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bpos-delivery-task-search-0000001379958185
 format: md
+upstream_id: monetize/promotion/bpos-delivery-task-search-0000001379958185
+last_sync: 2026-06-07
+sync_hash: 445c2b55
 ---
-
 # 投放搜索任务
 
 ## 概述
@@ -17,7 +19,7 @@ format: md
 
 ## 操作步骤
 
-1. 在[应用管理](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/appmanagement-0000001182393586)中添加应用并申请推广国家。
+1. 在[应用管理](/docs/monetize/promotion/appmanagement-0000001182393586)中添加应用并申请推广国家。
 2. 创建广告计划。
 
    点击![](./img/aae1ac884732.png)，选择“创建计划”。
@@ -32,7 +34,7 @@ format: md
    - <strong>推广计划名称：</strong>设置一个清晰易懂的计划名称，方便您在广告账户中轻松找到这个计划，例如：推广产品 + 营销目标 + 投放网络 + 目标人群。
 
 3. 创建广告任务。
-   - <strong>推广应用ID：</strong>从下拉列表中选择要推广的应用。列表中仅展示已经成功添加到“应用管理”并通过推广审核的应用。如果需要推广的应用不在下拉列表中，您需要先添加应用，详情请参考[应用管理](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/appmanagement-0000001182393586)。
+   - <strong>推广应用ID：</strong>从下拉列表中选择要推广的应用。列表中仅展示已经成功添加到“应用管理”并通过推广审核的应用。如果需要推广的应用不在下拉列表中，您需要先添加应用，详情请参考[应用管理](/docs/monetize/promotion/appmanagement-0000001182393586)。
    - <strong>定向：</strong>设置您希望推广的国家/地区，只支持从此应用已经[广告审核](/docs/monetize/promotion/bpos-delivery-task-promotion-evaluation-0000001379837553)的国家中进行选择，同一任务中可以选择多个国家/地区进行投放，详情参考[应用市场应用推广任务支持基础定向功能](/docs/monetize/promotion/bpos-functions-base-target-0000001328677542)。
    - <strong>版位：</strong>选择App search。
    - <strong>投放日期：</strong>不限制日期：如果您希望广告一直投放，您可以设置一个起始日期，起始日期默认是您创建广告的当天，您也可以指定未来的某一个日期进行投放。选择日期范围：如果您希望广告在某一段日期内投放，您可以为广告设置指定的日期。
@@ -52,7 +54,7 @@ format: md
 
     通过设置关键词出价，您可以更精确的控制对不同用户的出价，以便在一些高潜用户的竞价上通过高出价提高转化率。 例如：HUAWEI Watch 3 pro的用户是潜在的高价值用户，您可以对Watch 3 pro给出更高出价，以便提高在搜索watch 3 pro时的转化率。
   - 关键词可以分批次增加，最多添加200个，添加的时候，您可以用逗号分隔多个关键词。
-- <strong>否定关键词</strong>：设置否定关键词后，在用户搜索的内容匹配上您设置的任意否定关键词时，您的广告都不会被展示。以便帮您屏蔽一些不希望展示的场景。若您想更便捷的管理您的关键词，您可以添加一个否定关键词包，然后运用到你想要使用的计划或者任务中，具体您可以参考[否定关键词管理列表](https://developer.huawei.com/consumer/cn/doc/distribution/promotion/negative-keyword-lists-0000001174605089)。
+- <strong>否定关键词</strong>：设置否定关键词后，在用户搜索的内容匹配上您设置的任意否定关键词时，您的广告都不会被展示。以便帮您屏蔽一些不希望展示的场景。若您想更便捷的管理您的关键词，您可以添加一个否定关键词包，然后运用到你想要使用的计划或者任务中，具体您可以参考[否定关键词管理列表](/docs/monetize/promotion/negative-keyword-lists-0000001174605089)。
 
   <strong>工具—&gt;投放辅助—&gt;否定词包管理</strong>
 

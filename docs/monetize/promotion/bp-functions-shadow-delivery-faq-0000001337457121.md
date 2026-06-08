@@ -3,8 +3,10 @@ title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-shadow-delivery-faq-0000001337457121
 format: md
+upstream_id: monetize/promotion/bp-functions-shadow-delivery-faq-0000001337457121
+last_sync: 2026-06-07
+sync_hash: 5f7bec22
 ---
-
 # FAQ
 
 ## 如何判断影子投放成功？

@@ -2,9 +2,10 @@
 title: "发送服务端消息"
 original_url: /docs/dev/game-dev/gameobe-sendtoserver-csharp-0000002395350497
 format: md
+upstream_id: dev/game-dev/gameobe-sendtoserver-csharp-0000002395350497
+last_sync: 2026-06-07
+sync_hash: 65d08a5f
 ---
-
-
 如需实现客户端与实时服务器的交互，可通过发送消息给实时服务器的方式来实现。
 
 ## 前提条件

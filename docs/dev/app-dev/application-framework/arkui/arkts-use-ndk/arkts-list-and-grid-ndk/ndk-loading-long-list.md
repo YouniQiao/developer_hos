@@ -2,9 +2,10 @@
 title: "使用列表"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-list-and-grid-ndk/ndk-loading-long-list
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-use-ndk/arkts-list-and-grid-ndk/ndk-loading-long-list
+last_sync: 2026-06-07
+sync_hash: ddd044e1
 ---
-
-
 ArkUI开发框架在NDK接口提供了列表组件，使用列表可以轻松高效地显示结构化、可滚动的信息。列表组件支持控制滚动位置、支持分组显示内容、支持使用[NodeAdapter](#nodeadapter介绍)实现懒加载以提升列表创建性能。
 
 ## 创建列表

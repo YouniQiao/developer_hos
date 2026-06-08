@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "下载云侧文件至本地"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service/cloudfoundation-storage-download-file
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-storage-service/cloudfoundation-storage-download-file
+last_sync: 2026-06-07
+sync_hash: aa8b814d
 ---
-
-
 文件上传至云侧后，开发者可以将云侧文件下载到本地设备中。
 
 ## 约束与限制

@@ -1,8 +1,10 @@
 ---
 title: "点击完成时延分析"
 original_url: /docs/quality/click-to-complete-delay-analysis
+upstream_id: /docs/quality/click-to-complete-delay-analysis
+last_sync: 2026-06-07
+sync_hash: ad11de1b
 ---
-
 # 点击完成时延分析
 
 ## 完成时延优化概述
@@ -33,7 +35,7 @@ original_url: /docs/quality/click-to-complete-delay-analysis
 * [DevEco Testing](/docs/quality/performance-detection#section3783182023119)：DevEco Testing是一款专项集成测试工具，提供了多项测试能力。旨在帮助开发者高效完成应用的功能、兼容性、性能和稳定性测试，确保应用质量。
 
   具体使用可参考[《DevEco Testing》](/docs/quality/performance-detection#section3783182023119)。
-* [Profiler Frame](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-frame)：性能调优深入分析工具，支持冷启动、卡顿丢帧、状态变量、并行化、网络耗时、ArkWeb、内存优化等场景化调优能力。其中Frame分析可以帮助开发者深度分析性能问题，通过录制应用运行过程中的关键数据，从而识别卡顿丢帧、耗时长等问题的原因所在。
+* [Profiler Frame](/docs/tools/coding-debug/ide-insight-session-frame)：性能调优深入分析工具，支持冷启动、卡顿丢帧、状态变量、并行化、网络耗时、ArkWeb、内存优化等场景化调优能力。其中Frame分析可以帮助开发者深度分析性能问题，通过录制应用运行过程中的关键数据，从而识别卡顿丢帧、耗时长等问题的原因所在。
 
   具体使用可参考[《DevEco Profiler》](/docs/quality/optimization-overview#section2012922312284)。
 
@@ -143,7 +145,7 @@ original_url: /docs/quality/click-to-complete-delay-analysis
 
      ![](./img/a113e6ca.png "点击放大")
 
-     网络请求本身是否耗时可通过检测结果中的请求耗时时长来进行判断，时间越长，则网络请求本身耗时越久。详细分析请参考：[网络诊断：Network分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-network)。
+     网络请求本身是否耗时可通过检测结果中的请求耗时时长来进行判断，时间越长，则网络请求本身耗时越久。详细分析请参考：[网络诊断：Network分析](/docs/tools/coding-debug/ide-profiler-network)。
 
      网络请求本身耗时长，可对该URL请求进行预连接和预解析来优化网络传输速度，提前完成DNS查询和TCP/TLS握手，即在应用启动或空闲时提前建立并维护一个持久的连接池；还可以使用CDN来优化网络传输速度，将静态资源部署到CDN上。
    * 网络请求发起太晚
@@ -282,7 +284,7 @@ original_url: /docs/quality/click-to-complete-delay-analysis
 
 开发者可以使用录屏辅助测试，通过录屏分析工具确定点击完成时延的起止点，从而判断是否存在需要优化的时延问题。
 
-DevEco Profiler工具分使用方式可以参考[Frame分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-frame)。下面介绍如何使用DevEco Profiler工具确定点击完成时延Trace的起止点。
+DevEco Profiler工具分使用方式可以参考[Frame分析](/docs/tools/coding-debug/ide-insight-session-frame)。下面介绍如何使用DevEco Profiler工具确定点击完成时延Trace的起止点。
 
 1. 搜索"H:DispatchTouchEvent"标签，找到type=1的那个DispatchTouchEvent，就是点击离手起点，将该时间戳设为起点。
 

@@ -2,9 +2,10 @@
 title: "元服务规格"
 original_url: /docs/experience-suggestions/compatibility/system-features/atomic-specifications
 format: md
+upstream_id: experience-suggestions/compatibility/system-features/atomic-specifications
+last_sync: 2026-06-07
+sync_hash: 64648008
 ---
-
-
 # 元服务规格
 
 |  |  |

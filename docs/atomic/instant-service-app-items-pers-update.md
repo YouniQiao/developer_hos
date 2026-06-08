@@ -2,9 +2,10 @@
 title: "更新个性化设置"
 original_url: /docs/dev/atomic-dev/instant-service-app-items/instant-service-app-items-pers-update
 format: md
+upstream_id: dev/atomic-dev/instant-service-app-items/instant-service-app-items-pers-update
+last_sync: 2026-06-07
+sync_hash: 236a5ed5
 ---
-
-
 对于已通过审核、个性化设置状态为“已上架”的个性化设置，开发者可进行更新个性化设置的操作。
 
 ![](./img/8684f5fa.png "点击放大")

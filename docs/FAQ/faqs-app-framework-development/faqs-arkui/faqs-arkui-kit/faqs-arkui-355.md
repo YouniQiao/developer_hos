@@ -2,9 +2,10 @@
 title: "汉字转拼音如何去掉声调符号"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-355
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-355
+last_sync: 2026-06-07
+sync_hash: 1cc978fb
 ---
-
-
 可以使用“Any-Latn”将汉字内容转写为拼音，再使用“Latin-ASCII”去除声调符号。示例代码如下：
 
 ```

@@ -2,9 +2,10 @@
 title: "频道消息"
 original_url: /docs/dev/game-dev/games-gamemme-rtm-channelmessage-minigame-0000002393227109
 format: md
+upstream_id: dev/game-dev/games-gamemme-rtm-channelmessage-minigame-0000002393227109
+last_sync: 2026-06-07
+sync_hash: b5110723
 ---
-
-
 * **[订阅与取消订阅频道](/docs/dev/game-dev/games-gamemme-channel-subscribe-minigame-0000002359706994)**
 * **[发布与接收频道消息](/docs/dev/game-dev/games-gamemme-channelmessage-publish-minigame-0000002393266961)**
 * **[自定义玩家属性](/docs/dev/game-dev/games-gamemme-channelplayerproperties-minigame-0000002359547098)**

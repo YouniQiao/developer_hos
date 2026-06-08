@@ -2,9 +2,10 @@
 title: "批量数据写数据库场景"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/batch-database-operations-guide
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-develop-guide/multithread-develop-case/batch-database-operations-guide
+last_sync: 2026-06-07
+sync_hash: bb328579
 ---
-
-
 ## 使用TaskPool进行频繁数据库操作
 
 对于需要频繁数据库操作的场景，由于读写数据库存在耗时，因此推荐在子线程中操作，避免阻塞UI线程。

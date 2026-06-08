@@ -2,7 +2,8 @@
 format: md
 title: "request.downloadFile使用报错，err number=8属于什么问题"
 original_url: /docs/FAQ/faqs-system-development/faqs-basic-functions/faqs-basic-services-kit/faq-basics-service-kit-13
+upstream_id: FAQ/faqs-system-development/faqs-basic-functions/faqs-basic-services-kit/faq-basics-service-kit-13
+last_sync: 2026-06-07
+sync_hash: 22f24e1a
 ---
-
-
 目前err num=8表示未知错误，更多错误码详情请参见[错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-request#常量)。

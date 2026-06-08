@@ -2,9 +2,10 @@
 title: "应用跳转陌生号码和信息识别页面"
 original_url: /docs/dev/app-dev/application-services/callservice-enterprise-app-redirection
 format: md
+upstream_id: dev/app-dev/application-services/callservice-enterprise-app-redirection
+last_sync: 2026-06-07
+sync_hash: b4e49eb0
 ---
-
-
 从6.1.0(23)版本开始，新增支持从应用直接跳转到“电话 > 更多 > 设置 > 陌生号码和信息识别"。
 
 通过[Deep Linking](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/deep-linking-startup)方式应用可以直接跳转“陌生号码和信息识别”页面。

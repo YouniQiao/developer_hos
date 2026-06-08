@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "Spatial Recon Kit术语"
 original_url: /docs/dev/app-dev/graphics/spatial-recon-kit-guide/spatial-recon-glossary
 format: md
+upstream_id: dev/app-dev/graphics/spatial-recon-kit-guide/spatial-recon-glossary
+last_sync: 2026-06-07
+sync_hash: bde34712
+upstream_hash: fac684ade10e
 ---
-
 
 ## 颜色抖动
 

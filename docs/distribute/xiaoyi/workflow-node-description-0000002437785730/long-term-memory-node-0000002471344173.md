@@ -3,9 +3,10 @@ title: "长期记忆节点"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/workflow-node-description-0000002437785730/long-term-memory-node-0000002471344173
 format: md
+upstream_id: distribute/xiaoyi/workflow-node-description-0000002437785730/long-term-memory-node-0000002471344173
+last_sync: 2026-06-07
+sync_hash: 142b77dd
 ---
-
-
 # 长期记忆节点
 
 长期记忆节点需要召回智能体存储的长期记忆数据，所以试运行长期记忆节点或包含长期记忆节点的工作流时，需要关联一个已开启长期记忆功能的智能体。

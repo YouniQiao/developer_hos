@@ -3,9 +3,10 @@ title: "@typescript-eslint/prefer-function-type"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_prefer-function-type
 format: md
+upstream_id: tools/coding-debug/ide_prefer-function-type
+last_sync: 2026-06-07
+sync_hash: 22c6109c
 ---
-
-
 # @typescript-eslint/prefer-function-type
 
 强制使用函数类型而不是带有签名的对象类型。

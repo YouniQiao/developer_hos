@@ -2,9 +2,10 @@
 format: md
 title: "解决linux18.04 首次安装hdc无法执行问题"
 original_url: /docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-73
+upstream_id: FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-73
+last_sync: 2026-06-07
+sync_hash: d81bf0c9
 ---
-
-
 **问题现象**
 
 首次下载Command Line Tools for Linux解压后在sdk/default/openharmony/toolchains目录下执行hdc -v提示错误：

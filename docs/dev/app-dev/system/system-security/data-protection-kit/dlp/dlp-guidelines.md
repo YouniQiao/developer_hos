@@ -2,9 +2,10 @@
 title: "数据防泄漏服务开发指导(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/data-protection-kit/dlp/dlp-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-security/data-protection-kit/dlp/dlp-guidelines
+last_sync: 2026-06-07
+sync_hash: c45225bf
 ---
-
-
 DLP是系统提供的系统级的数据防泄漏解决方案，提供一种称为DLP的文件格式。后缀格式为“原始文件名（包含原始文件后缀）.dlp”，例如“test.docx.dlp”，文件由授权凭证和原始文件密文组成。
 
 通过端云协同认证（需要联网）来获取文件的访问授权，授权类型包含只读、编辑、文件拥有者三种。

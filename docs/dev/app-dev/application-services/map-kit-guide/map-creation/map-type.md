@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "切换地图类型"
 original_url: /docs/dev/app-dev/application-services/map-kit-guide/map-creation/map-type
 format: md
+upstream_id: dev/app-dev/application-services/map-kit-guide/map-creation/map-type
+last_sync: 2026-06-07
+sync_hash: 31ae747a
 ---
-
-
 ## 场景介绍
 
 从6.0.0(20)开始，支持卫星图和混合地图功能。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "AR Engine（AR引擎服务）"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide
+last_sync: 2026-06-07
+sync_hash: 39afe9b6
 ---
-
-
 * **[AR Engine简介](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arengine-overview)**
 * **[开发准备](/docs/dev/app-dev/graphics/arengine-preparations)**
 * **[管理AR会话](/docs/dev/app-dev/graphics/ar-engine-kit-guide/arsession)**

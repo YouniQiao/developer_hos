@@ -3,8 +3,10 @@ title: "HA回传接口"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-ha-interface-illustrate-return-0000001348932565
 format: md
+upstream_id: monetize/promotion/bp-functions-ha-interface-illustrate-return-0000001348932565
+last_sync: 2026-06-07
+sync_hash: dbb0305c
 ---
-
 # HA回传接口
 
 HA平台可以通过此章节调用接口，回传转化事件到华为应用市场应用推广平台，广告主仅做了解即可。

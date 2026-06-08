@@ -3,8 +3,10 @@ title: "查询搜索数据报表"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-task-management-search-data-0000001347053877
 format: md
+upstream_id: monetize/promotion/bp-delivery-task-management-search-data-0000001347053877
+last_sync: 2026-06-07
+sync_hash: 0ce78d20
 ---
-
 # 查询搜索数据报表
 
 1. 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)，在顶部菜单栏点击【报表】页签，确认推广范围为“应用市场应用推广” ，选择“搜索数据”页签。

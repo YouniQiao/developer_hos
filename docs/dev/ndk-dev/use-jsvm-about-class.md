@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口进行class相关开发"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-class
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-class
+last_sync: 2026-06-07
+sync_hash: caa65d39
 ---
-
-
 ## 简介
 
 使用JSVM-API接口进行class相关开发，处理JavaScript中的类，例如定义类、构造实例等。

@@ -2,9 +2,10 @@
 title: "下架应用"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-app-shelf-off-0000002236041450
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-app-shelf-off-0000002236041450
+last_sync: 2026-06-07
+sync_hash: 6f4da2c4
 ---
-
-
 #### 功能介绍
 
 此接口用于对已经上架的应用进行下架处理。

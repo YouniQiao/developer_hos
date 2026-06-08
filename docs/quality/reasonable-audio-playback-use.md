@@ -1,8 +1,10 @@
 ---
 title: "后台音频播放合理使用"
 original_url: /docs/quality/reasonable-audio-playback-use
+upstream_id: /docs/quality/reasonable-audio-playback-use
+last_sync: 2026-06-07
+sync_hash: 69088bef
 ---
-
 # 后台音频播放合理使用
 
 申请音频播放长时任务的应用退到后台后，禁止不写入数据或写入静音数据等恶意行为。

@@ -2,9 +2,10 @@
 format: md
 title: "在Native侧如何集成三方SO库"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-5
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-5
+last_sync: 2026-06-07
+sync_hash: 2e44cd96
 ---
-
-
 开发过程可分为两个部分：
 
 1. 系统编译生成so库。

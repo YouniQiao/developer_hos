@@ -2,9 +2,10 @@
 title: "消耗型/非消耗型/非续期订阅商品"
 original_url: /docs/dev/game-dev/games-center-non-subscription-0000002285973444
 format: md
+upstream_id: dev/game-dev/games-center-non-subscription-0000002285973444
+last_sync: 2026-06-07
+sync_hash: 9c19bf3b
 ---
-
-
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要新增商品的应用。
 

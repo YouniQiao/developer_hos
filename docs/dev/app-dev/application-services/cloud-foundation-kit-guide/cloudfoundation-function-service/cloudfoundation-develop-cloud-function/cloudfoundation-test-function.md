@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "测试函数"
 original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-develop-cloud-function/cloudfoundation-test-function
 format: md
+upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-function-service/cloudfoundation-develop-cloud-function/cloudfoundation-test-function
+last_sync: 2026-06-07
+sync_hash: e4c2bcb1
 ---
-
-
 ![](./img/150d0e2f.png)
 
 下文以函数latest版本为例介绍测试方法。如果需要测试函数的已发布版本，可在已发布版本详情页面选择“函数代码”页签，参考方式二进行测试。

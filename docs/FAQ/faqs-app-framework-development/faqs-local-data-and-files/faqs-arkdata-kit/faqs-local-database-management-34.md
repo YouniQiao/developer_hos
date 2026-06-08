@@ -2,9 +2,10 @@
 format: md
 title: "插入数据之后，RDB数据库的WAL文件体积异常"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-34
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-34
+last_sync: 2026-06-07
+sync_hash: 108b5ad4
 ---
-
-
 **解决措施**
 
 在开启读事务或结果集未关闭的情况下持续执行增删改操作，会导致WAL文件大小超过默认上限，此时系统会抛出错误码14800047。

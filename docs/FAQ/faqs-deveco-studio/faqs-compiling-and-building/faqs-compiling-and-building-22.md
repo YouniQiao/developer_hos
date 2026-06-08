@@ -2,9 +2,10 @@
 format: md
 title: "C/C++项目三方依赖库未打包到HAP"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-22
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-22
+last_sync: 2026-06-07
+sync_hash: c74b4301
 ---
-
-
 **问题现象**
 
 C/C++项目依赖三方so时，在打包生成HAP后，发现三方so未打包到HAP中。

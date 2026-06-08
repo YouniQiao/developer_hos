@@ -3,8 +3,10 @@ title: 子页签
 sidebar_label: 子页签
 original_url: /docs/design/components/navigation/chips-group
 format: md
+upstream_id: design/components/navigation/chips-group
+last_sync: 2026-06-07
+sync_hash: 96fd8c91
 ---
-
 # 子页签
 
 子页签控件是展示在应用程序顶部的切换类控件，主要用于在一个组件内切换不同页面内容。在移动端产品上，页签名称应简洁明了，清晰描述分类的内容。在系统中我们提供了传统的下划线样式子页签，开发相关可参考 [Tabs/SubTabBarStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabs) 文档，此外，还有新增胶囊形态子页签，可定义样式及交互规格更丰富，可参阅 [ChipGroup](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-arkui-advanced-chipgroup) 描述文档。

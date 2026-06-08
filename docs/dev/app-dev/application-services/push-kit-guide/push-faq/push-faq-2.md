@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "关于云侧接口推送成功但设备收不到推送消息的问题"
 original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-2
 format: md
+upstream_id: dev/app-dev/application-services/push-kit-guide/push-faq/push-faq-2
+last_sync: 2026-06-07
+sync_hash: edea5148
 ---
-
-
 云侧消息下发成功后，可能会因为消息频控、通知开关未打开等原因，导致端侧消息未展示。
 
 ## 收不到推送消息的可能原因

@@ -2,9 +2,10 @@
 format: md
 title: "使用BuilderParam在父组件调用this的方法报错：Error message: undefined is not callable"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-229
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-229
+last_sync: 2026-06-07
+sync_hash: 42b21a66
 ---
-
-
 **问题场景**
 
 在子组件Child中使用@BuilderParam参数时，如果在父组件中将父组件的builder函数传递给子组件，并在builder函数中调用父组件的方法，可能会出现Error message: undefined is not callable的错误。

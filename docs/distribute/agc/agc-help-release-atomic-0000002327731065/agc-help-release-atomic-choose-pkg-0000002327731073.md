@@ -2,9 +2,10 @@
 title: "选择待发布软件包"
 original_url: /docs/distribute/agc/agc-help-release-atomic-0000002327731065/agc-help-release-atomic-choose-pkg-0000002327731073
 format: md
+upstream_id: distribute/agc/agc-help-release-atomic-0000002327731065/agc-help-release-atomic-choose-pkg-0000002327731073
+last_sync: 2026-06-07
+sync_hash: 58fda68e
 ---
-
-
 从上传的版本中选择需要发布的软件包。
 
 #### 前提条件

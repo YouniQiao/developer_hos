@@ -2,9 +2,10 @@
 title: "C#（Native）"
 original_url: /docs/dev/game-dev/games-gamemme-playlocalaudioclip-csharp-native-0000002359547166
 format: md
+upstream_id: dev/game-dev/games-gamemme-playlocalaudioclip-csharp-native-0000002359547166
+last_sync: 2026-06-07
+sync_hash: b0e2ca07
 ---
-
-
 ## 前提条件
 
 * 您已[集成游戏多媒体基础SDK和实时语音模块](/docs/dev/game-dev/games-gamemme-integratingsdk-csharp-native-0000002393227057)。

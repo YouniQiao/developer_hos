@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "订阅空间事件"
 original_url: /docs/dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-subscribe-event
 format: md
+upstream_id: dev/app-dev/application-services/enterprise-space-kit-guide/enterprisespace-spacemanager-guide/enterprisespace-subscribe-event
+last_sync: 2026-06-07
+sync_hash: 2a05e7c0
 ---
-
-
 ## 场景介绍
 
 Enterprise Space Kit为应用提供订阅空间事件的能力，当前支持订阅空间切换事件。应用订阅空间切换事件后，当空间切换时，会告知应用，并执行应用自定义的动作。

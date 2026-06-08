@@ -3,9 +3,10 @@ title: "工具概述"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-codegenie
 format: md
+upstream_id: tools/ai-assist/ide-codegenie
+last_sync: 2026-06-07
+sync_hash: 6e50df5b
 ---
-
-
 # 工具概述
 
 DevEco CodeGenie是DevEco Studio AI辅助编程工具，支持智能问答、代码生成、页面生成、万能卡片生成、单元测试用例生成、代码智能解读、编译报错智能分析、智慧调优、应用UI生成、意图装饰器生成、小艺智能体创建、自定义Agent等能力，帮助开发者更高效地开发应用。

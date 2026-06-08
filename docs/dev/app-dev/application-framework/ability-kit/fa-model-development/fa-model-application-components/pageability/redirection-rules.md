@@ -2,9 +2,10 @@
 title: "跳转规则"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/redirection-rules
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/redirection-rules
+last_sync: 2026-06-07
+sync_hash: 8d6fb869
 ---
-
-
 一般情况下，应用中的界面跳转由用户触发，应用本身通过startAbility启动跳转其他界面。
 
 PageAbility作为可见Ability，可以通过startAbility启动有界面的且对外可见的Ability。

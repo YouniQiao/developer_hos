@@ -2,8 +2,11 @@
 title: "Connectivity Kit术语"
 original_url: /docs/dev/app-dev/system/system-network/connectivity-kit/terminology
 format: md
+upstream_id: dev/app-dev/system/system-network/connectivity-kit/terminology
+last_sync: 2026-06-07
+sync_hash: 6d8be1c7
+upstream_hash: 738884776abc
 ---
-
 
 ## A
 

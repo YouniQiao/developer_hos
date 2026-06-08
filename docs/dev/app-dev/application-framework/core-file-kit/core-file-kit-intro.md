@@ -2,8 +2,11 @@
 title: "Core File Kit简介"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/core-file-kit-intro
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/core-file-kit-intro
+last_sync: 2026-06-07
+sync_hash: 89156355
+upstream_hash: e2b2a1f6713a
 ---
-
 
 Core File Kit（文件基础服务）为开发者提供一套访问和管理应用文件和用户文件的能力。帮助用户更高效地管理、查找和备份各类文件，使用户能够轻松应对各种文件管理的需求。
 
@@ -105,4 +108,4 @@ Ability Kit：Core File Kit中用户文件访问框架依赖Ability Kit提供的
 * [分布式文件系统](/docs/dev/app-dev/application-framework/core-file-kit/distributed-fs)不支持模拟器开发。
 * [端云文件协同](/docs/dev/app-dev/application-framework/core-file-kit/cloud-sync-file)不支持模拟器开发。
 
-通用差异：请参见[模拟器与真机的差异](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-specification#section1227613205203)。
+通用差异：请参见[模拟器与真机的差异](/docs/tools/coding-debug/ide-emulator-specification#section1227613205203)。

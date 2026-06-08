@@ -2,10 +2,10 @@
 title: "应用代码混淆"
 original_url: /docs/security/code-obfuscation
 format: md
+upstream_id: /docs/security/code-obfuscation
+last_sync: 2026-06-07
+sync_hash: bac314df
 ---
-
-
-
 # 应用代码混淆
 
 ## 概述
@@ -47,7 +47,7 @@ enable默认为false，默认不开启代码混淆功能。
 
 如果工程或模块是Static Library，则该工程或模块是一个HAR。
 
-构建[字节码HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-har#section16598338112415)时有以下三种方式：
+构建[字节码HAR](/docs/tools/coding-debug/ide-hvigor-build-har#section16598338112415)时有以下三种方式：
 
 1. 以Debug模式构建HAR，会直接打包源码，不进行代码混淆。
 2. 以Release模式构建HAR，会编译、混淆并压缩代码。
@@ -141,7 +141,7 @@ DevEco Studio混淆现有选项及功能描述如下：
 
 ### 反混淆工具hstack
 
-hstack需要将Node.js配置到环境变量中，详细使用说明请参考[堆栈解析工具（hstack）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-command-line-hstack)。
+hstack需要将Node.js配置到环境变量中，详细使用说明请参考[堆栈解析工具（hstack）](/docs/tools/cli-tools/ide-command-line-hstack)。
 
 ### 常见报错案例
 

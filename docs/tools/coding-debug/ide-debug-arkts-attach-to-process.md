@@ -3,9 +3,10 @@ title: "等待调试"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-arkts-attach-to-process
 format: md
+upstream_id: tools/coding-debug/ide-debug-arkts-attach-to-process
+last_sync: 2026-06-07
+sync_hash: 6faf024e
 ---
-
-
 # 等待调试
 
 开发者可以通过将某个应用设置为“等待调试模式”，然后当开发者需要对应用进行调试时，拉起应用即可快速进入调试。

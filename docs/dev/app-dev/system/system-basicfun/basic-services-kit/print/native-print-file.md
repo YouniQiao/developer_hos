@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "文件打印（C/C++）"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/print/native-print-file
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/print/native-print-file
+last_sync: 2026-06-07
+sync_hash: b71f4551
 ---
-
-
 ## HarmonyOS提供的两种打印方式
 
 [方式一](#步骤4-通过接口拉起系统打印预览界面下发任务)：应用通过接口拉起系统打印预览界面。适合没有实现打印预览能力的应用。

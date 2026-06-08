@@ -2,8 +2,10 @@
 title: "AirTouch格式说明"
 displayed_sidebar: serviceDistSidebar
 original_url: /docs/distribute/service-dist/AirTouch/make-label-0000002140931465/format-description-0000002112248816
+upstream_id: distribute/service-dist/AirTouch/make-label-0000002140931465/format-description-0000002112248816
+last_sync: 2026-06-07
+sync_hash: d25adabf
 ---
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # AirTouch格式说明

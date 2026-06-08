@@ -3,8 +3,10 @@ title: "直客协作者账户"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-start-guestteam-partner-0000001576544969
 format: md
+upstream_id: monetize/promotion/bp-start-guestteam-partner-0000001576544969
+last_sync: 2026-06-07
+sync_hash: d8533f37
 ---
-
 # 直客协作者账户
 
 ## 前提条件

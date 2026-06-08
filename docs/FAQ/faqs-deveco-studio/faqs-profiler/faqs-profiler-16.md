@@ -2,9 +2,10 @@
 format: md
 title: "录制Allocation模板时，Memory泳道和Native Allocation泳道内存不一致"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-16
+upstream_id: FAQ/faqs-deveco-studio/faqs-profiler/faqs-profiler-16
+last_sync: 2026-06-07
+sync_hash: 13f51a4e
 ---
-
-
 **问题现象**
 
 录制Allocation模板时，Memory泳道和Native Allocation泳道内存不一致。

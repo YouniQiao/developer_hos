@@ -2,9 +2,10 @@
 format: md
 title: "应用通过对象字面量初始化class实例导致编译失败的原因和修改方案"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-148
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-148
+last_sync: 2026-06-07
+sync_hash: 7c068584
 ---
-
-
 **编译失败原因**
 
 **复现方法**

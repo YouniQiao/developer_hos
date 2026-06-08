@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "获取文件图标"
 original_url: /docs/dev/app-dev/application-services/file-manager-service-kit-guide/filemanagerservice-getfileicon
 format: md
+upstream_id: dev/app-dev/application-services/file-manager-service-kit-guide/filemanagerservice-getfileicon
+last_sync: 2026-06-07
+sync_hash: d6c22ea8
+upstream_hash: cf65ee69c5c8
 ---
-
 
 ## 场景介绍
 

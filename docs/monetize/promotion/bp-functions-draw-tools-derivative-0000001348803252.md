@@ -3,8 +3,10 @@ title: "使用图片自适应衍生功能"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-draw-tools-derivative-0000001348803252
 format: md
+upstream_id: monetize/promotion/bp-functions-draw-tools-derivative-0000001348803252
+last_sync: 2026-06-07
+sync_hash: 1cc306c1
 ---
-
 # 使用图片自适应衍生功能
 
 1. 登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)。

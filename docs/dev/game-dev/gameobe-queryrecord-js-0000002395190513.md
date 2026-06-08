@@ -2,9 +2,10 @@
 title: "查询与回放对战录像"
 original_url: /docs/dev/game-dev/gameobe-queryrecord-js-0000002395190513
 format: md
+upstream_id: dev/game-dev/gameobe-queryrecord-js-0000002395190513
+last_sync: 2026-06-07
+sync_hash: 3c5aa4a8
 ---
-
-
 在AGC控制台开启录像保存功能后，近7天内所有的游戏对战数据将会以记录文件的形式在云侧自动保存（过期自动清理），可根据相关接口查询玩家自己所有的对战记录列表信息，或他人分享的对战记录。同时，支持下载对战记录文件，用于后续录像回放功能的实现。
 
 ## 前提条件

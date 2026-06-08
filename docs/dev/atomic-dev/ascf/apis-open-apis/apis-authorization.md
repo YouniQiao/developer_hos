@@ -2,9 +2,10 @@
 title: "授权"
 original_url: /docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-open-apis/apis-authorization
+last_sync: 2026-06-07
+sync_hash: 90dea334
 ---
-
-
 ## has.authorize
 
 has.authorize(Object object)

@@ -2,9 +2,10 @@
 title: "获取Token（项目级）"
 original_url: /docs/dev/game-dev/games-appendix-token-0000002304569840
 format: md
+upstream_id: dev/game-dev/games-appendix-token-0000002304569840
+last_sync: 2026-06-07
+sync_hash: 93f82a00
 ---
-
-
 ## 功能介绍
 
 获取有效的Client ID以及Client Secret后，在您的服务器中编写一段调用此接口的代码来获取Access Token，然后在初始化客户端SDK时即可携带该Access Token进行身份验证。

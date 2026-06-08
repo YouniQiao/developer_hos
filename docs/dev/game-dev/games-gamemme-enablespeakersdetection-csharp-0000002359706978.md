@@ -2,9 +2,10 @@
 title: "获取当前发言玩家列表"
 original_url: /docs/dev/game-dev/games-gamemme-enablespeakersdetection-csharp-0000002359706978
 format: md
+upstream_id: dev/game-dev/games-gamemme-enablespeakersdetection-csharp-0000002359706978
+last_sync: 2026-06-07
+sync_hash: d729bdc6
 ---
-
-
 通过本章的开发指导，您可实现获取房间内当前发言玩家列表的功能。
 
 ## 前提条件

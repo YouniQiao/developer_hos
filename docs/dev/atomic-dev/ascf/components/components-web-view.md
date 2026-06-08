@@ -2,9 +2,10 @@
 title: "web-view"
 original_url: /docs/dev/atomic-dev/ascf/components/components-web-view
 format: md
+upstream_id: dev/atomic-dev/ascf/components/components-web-view
+last_sync: 2026-06-07
+sync_hash: 49872df3
 ---
-
-
 承载网页的容器。
 
 此组件会自动铺满整个页面，每个页面只允许添加一个web-view组件。

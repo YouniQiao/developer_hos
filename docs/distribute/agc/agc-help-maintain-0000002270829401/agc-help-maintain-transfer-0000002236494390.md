@@ -2,9 +2,10 @@
 title: "转移应用/元服务"
 original_url: /docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-transfer-0000002236494390
 format: md
+upstream_id: distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-transfer-0000002236494390
+last_sync: 2026-06-07
+sync_hash: 92af43cc
 ---
-
-
 应用转移是指将AppGallery Connect中的应用（含游戏）从一个账号转移到另一个账号进行维护。
 
 应用转移后，该应用的应用层面信息不会发生改变，相关信息如下图标识的内容，包括：包名、APP ID、公钥指纹、OAuth 2.0客户端ID和之前配置的回调地址。

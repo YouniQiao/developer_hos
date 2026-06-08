@@ -3,9 +3,10 @@ title: "ohpm run"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-run
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-run
+last_sync: 2026-06-07
+sync_hash: 60717093
 ---
-
-
 # ohpm run
 
 执行用户自定义脚本。

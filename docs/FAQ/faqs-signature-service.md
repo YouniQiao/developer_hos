@@ -2,9 +2,10 @@
 format: md
 title: "签名服务"
 original_url: /docs/FAQ/faqs-signature-service
+upstream_id: FAQ/faqs-signature-service
+last_sync: 2026-06-07
+sync_hash: a7ff2105
 ---
-
-
 * **[登录超时说明](/docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-1)**
 * **[已实名认证，登录时还是提示用户需要进行实名认证](/docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-2)**
 * **[输入华为账号后，未出现“允许”按钮，浏览器界面无跳转](/docs/FAQ/faqs-deveco-studio/faqs-signature-service/faqs-signature-service-3)**

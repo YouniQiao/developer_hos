@@ -3,9 +3,10 @@ title: "配置匹配规则"
 original_url: /docs/dev/game-dev/gameobe-ruleconfiguration-0000002361670428
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/gameobe-ruleconfiguration-0000002361670428
+last_sync: 2026-06-07
+sync_hash: d67c1de7
 ---
-
-
 ## 匹配机制
 
 | 概念 | 说明 |

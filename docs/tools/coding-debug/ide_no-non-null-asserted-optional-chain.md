@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-non-null-asserted-optional-chain"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-non-null-asserted-optional-chain
 format: md
+upstream_id: tools/coding-debug/ide_no-non-null-asserted-optional-chain
+last_sync: 2026-06-07
+sync_hash: d351731f
 ---
-
-
 # @typescript-eslint/no-non-null-asserted-optional-chain
 
 禁止在可选链表达式之后使用非空断言。

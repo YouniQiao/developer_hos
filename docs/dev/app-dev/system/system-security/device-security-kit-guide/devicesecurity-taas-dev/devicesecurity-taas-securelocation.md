@@ -2,9 +2,10 @@
 title: "安全地理位置场景"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-taas-dev/devicesecurity-taas-securelocation
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-taas-dev/devicesecurity-taas-securelocation
+last_sync: 2026-06-07
+sync_hash: 9cd2aac4
 ---
-
-
 ## 场景介绍
 
 在安全地理位置场景中，通过创建证明密钥、打开证明会话的方式，对从GPS硬件或网络位置获取到的地理位置信息进行签名，确保地理位置信息的真实性和完整性。

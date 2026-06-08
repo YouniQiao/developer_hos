@@ -2,9 +2,10 @@
 title: "text"
 original_url: /docs/dev/atomic-dev/ascf/components-basic-components/components-text
 format: md
+upstream_id: dev/atomic-dev/ascf/components-basic-components/components-text
+last_sync: 2026-06-07
+sync_hash: e3eb4050
 ---
-
-
 文本。
 
 **起始版本：** 1.0.0

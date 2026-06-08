@@ -2,9 +2,10 @@
 title: "TaskPool任务与宿主线程通信"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide/taskpool-communicates-with-mainthread
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/interthread-communication/interthread-communication-guide/taskpool-communicates-with-mainthread
+last_sync: 2026-06-07
+sync_hash: 83c8692d
 ---
-
-
 如果Task不仅需要返回最终执行结果，还需定时通知宿主线程状态和数据变化，或分段返回大量数据（如从数据库读取大量数据），可按以下方式实现。
 
 下面以多个图片加载任务结果实时返回为例说明。

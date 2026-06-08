@@ -2,9 +2,10 @@
 format: md
 title: "命令行工具"
 original_url: /docs/FAQ/faqs-command-line-tool
+upstream_id: FAQ/faqs-command-line-tool
+last_sync: 2026-06-07
+sync_hash: ab0b46dd
 ---
-
-
 * **[通过命令行或终端可以正常发布，在Git Bash上发布时提示错误：私钥路径中的私钥内容错误](/docs/FAQ/faqs-deveco-studio/faqs-command-line-tool/faqs-command-line-tool-1)**
 * **[ohpm-repo私有化后删除上传包及审核上传包步骤](/docs/FAQ/faqs-deveco-studio/faqs-command-line-tool/faqs-command-line-tool-2)**
 * **[编译时DevEco Studio报“ohpm ERROR: EINSTALL install failed, Error: Dependency node build failed Install failed”错](/docs/FAQ/faqs-deveco-studio/faqs-command-line-tool/faqs-command-line-tool-3)**

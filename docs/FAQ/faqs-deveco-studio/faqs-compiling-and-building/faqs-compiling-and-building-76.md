@@ -2,9 +2,10 @@
 format: md
 title: "如何解决搭建流水线时commandline-tools-linux中sdkmgr下载开发包报错"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-76
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-76
+last_sync: 2026-06-07
+sync_hash: 3dd03803
 ---
-
-
 **问**
 
 使用 commandline-tools 工具在 Linux 上时，如果提示“Failed to request URL https://devecostudio-dre.op.hicloud.com/sdkmanager/v5/hos/getSdkList”，请检查网络连接是否正常，确保可以访问该 URL。如果网络无问题，尝试更新 commandline-tools到最新版本。

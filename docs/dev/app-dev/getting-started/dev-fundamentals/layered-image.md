@@ -1,8 +1,10 @@
 ---
 title: "配置应用图标和名称"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/layered-image
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/layered-image
+last_sync: 2026-06-07
+sync_hash: 836a8724
 ---
-
 本页面提供应用图标和名称的配置指导。应用图标分为单层图标和分层图标。单层图标包含一个图片，分层图标包含前景图和背景图。图标规范详见[图标资源规范](/docs/design/general-design-basics/visual-design/app-icon#section634668113212)，图标和名称配置约束详见[图标和名称配置](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/application-component-configuration-stage#应用图标和名称配置)。
 
 ## 使用场景

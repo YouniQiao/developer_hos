@@ -2,9 +2,10 @@
 title: "创建服务卡片"
 format: md
 original_url: /docs/tools/coding-debug/ide-service-widget
+upstream_id: tools/coding-debug/ide-service-widget
+last_sync: 2026-06-07
+sync_hash: 88735052
 ---
-
-
 # 创建服务卡片
 
 ## 概述

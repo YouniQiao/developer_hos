@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "管理网络连接"
 original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-network-connecttion/net-connection-manager
 format: md
+upstream_id: dev/app-dev/system/system-network/network-kit/network-kit-network-connecttion/net-connection-manager
+last_sync: 2026-06-07
+sync_hash: ce98c383
 ---
-
-
 ## 简介
 
 网络连接管理提供管理网络的一些基础能力，包括WiFi/蜂窝/Ethernet等多网络连接优先级管理、网络质量评估、订阅默认/指定网络连接状态变化、查询网络连接信息、DNS解析等功能。

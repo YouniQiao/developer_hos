@@ -3,9 +3,10 @@ title: "记忆（Memory）配置"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-memory
 format: md
+upstream_id: tools/ai-assist/ide-memory
+last_sync: 2026-06-07
+sync_hash: 09a5818e
 ---
-
-
 # 记忆（Memory）配置
 
 ## 功能介绍

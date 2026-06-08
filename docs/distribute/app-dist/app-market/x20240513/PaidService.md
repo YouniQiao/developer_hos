@@ -3,8 +3,10 @@ title: "AppGallery Connect付费服务协议"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x20240513/PaidService
 format: md
+upstream_id: distribute/app-dist/app-market/x20240513/PaidService
+last_sync: 2026-06-07
+sync_hash: afd113d8
 ---
-
 # AppGallery Connect付费服务协议
 
 点击下载[AppGallery Connect付费服务协议](https://terms-drcn.platform.dbankcloud.cn/agreementservice/developer/getAgreementTemplate?agrType=1108&country=cn&language=zh_cn&version=2022101901)。

@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "流量变现服务开发概述"
 original_url: /docs/dev/app-dev/application-services/ads-kit-guide/ads-publisher-service-dev/ads-publisher-service-dev-overview
 format: md
+upstream_id: dev/app-dev/application-services/ads-kit-guide/ads-publisher-service-dev/ads-publisher-service-dev-overview
+last_sync: 2026-06-07
+sync_hash: 6628e2ef
+upstream_hash: a8134b335aae
 ---
-
 
 流量变现服务是依托华为终端强大的平台与数据能力为您提供的App流量变现服务，依托HarmonyOS系统让您无需集成SDK，轻松实现广告的接入，您通过该服务可以在自己的App中获取并向用户展示精美的、高价值的广告内容，并从中获得广告收益，帮助您解决流量变现的难题。
 

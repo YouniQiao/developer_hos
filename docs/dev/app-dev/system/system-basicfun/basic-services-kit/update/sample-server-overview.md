@@ -2,9 +2,10 @@
 title: "示例服务器开发概述"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/update/sample-server-overview
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/update/sample-server-overview
+last_sync: 2026-06-07
+sync_hash: e9a0ebd0
 ---
-
-
 示例服务器提供一个简易的升级包部署的服务器实例参考，用于搭建升级服务子系统的辅助验证环境。
 
 ## 场景介绍

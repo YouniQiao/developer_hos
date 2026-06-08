@@ -1,6 +1,10 @@
 ---
 title: "并行化性能优化"
 original_url: /docs/quality/concurrent-optimization
+upstream_id: /docs/quality/concurrent-optimization
+last_sync: 2026-06-07
+sync_hash: 342862df
+upstream_hash: a63528ffa802
 ---
 
 # 并行化性能优化

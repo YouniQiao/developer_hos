@@ -3,9 +3,10 @@ title: "快速插入场景化代码片段"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-kit-assistant
 format: md
+upstream_id: tools/coding-debug/ide-kit-assistant
+last_sync: 2026-06-07
+sync_hash: ff7b3cd2
 ---
-
-
 # 快速插入场景化代码片段
 
 DevEco Studio提供Kit Assistant能力，支持通过拖拽方式将基础的场景化的控件/代码片段插入ArkTS工程中，减少高频场景代码的编写时间。

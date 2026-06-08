@@ -3,9 +3,10 @@ title: "规则总览"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-app-analyzer-all-rules
 format: md
+upstream_id: tools/coding-debug/ide-app-analyzer-all-rules
+last_sync: 2026-06-07
+sync_hash: 90198e88
 ---
-
-
 # 规则总览
 
 以下是AppAnalyzer规则体检的所有规则，对应用/元服务进行体检的指导请参考[应用与元服务体检](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer)。

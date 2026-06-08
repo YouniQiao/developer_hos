@@ -2,9 +2,10 @@
 title: "C#（Native）"
 original_url: /docs/dev/game-dev/games-gamemme-record-play-audio-msg-csharp-native-0000002359707070
 format: md
+upstream_id: dev/game-dev/games-gamemme-record-play-audio-msg-csharp-native-0000002359707070
+last_sync: 2026-06-07
+sync_hash: 274c513a
 ---
-
-
 ![](./img/f9da52e1.png)
 
 语音消息文件会占用一部分本地存储空间，建议您销毁实例时，删除本地存储的语音文件以释放存储空间。

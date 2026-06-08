@@ -3,8 +3,10 @@ title: "创建oCPD任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-ocpx-create-ocpd-0000001282723545
 format: md
+upstream_id: monetize/promotion/bp-functions-ocpx-create-ocpd-0000001282723545
+last_sync: 2026-06-07
+sync_hash: 9062a27c
 ---
-
 # 创建oCPD任务
 
 ## 前提条件

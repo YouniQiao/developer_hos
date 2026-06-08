@@ -2,9 +2,10 @@
 title: "准备游戏信息"
 original_url: /docs/dev/game-dev/games-gamemme-gameinformation-0000002304472612
 format: md
+upstream_id: dev/game-dev/games-gamemme-gameinformation-0000002304472612
+last_sync: 2026-06-07
+sync_hash: 8a24712f
 ---
-
-
 1. 在项目列表中选择您的项目，进入“项目设置”的“常规”页签。
 2. 记录项目下的“Client ID”、“Client Secret”和“API密钥（凭据）”，以及应用下的“APP ID”信息。
 

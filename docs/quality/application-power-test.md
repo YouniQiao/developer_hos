@@ -2,9 +2,10 @@
 title: "场景功耗测试"
 original_url: /docs/quality/application-power-test
 format: md
+upstream_id: /docs/quality/application-power-test
+last_sync: 2026-06-07
+sync_hash: a1670c3f
 ---
-
-
 # 场景功耗测试
 
 场景功耗测试用于评估应用在静态场景（如界面静置，不进行任何操作）和动态场景（如视频播放、页面滑动浏览）下的功耗水平。该测试旨在衡量应用在实际使用中的耗电情况，为开发者提供持续优化应用功耗的依据，从而提升用户的续航体验。此外，通过在相似场景下进行对比测试，有助于开发出更具竞争力的产品。本节将详细介绍两种常用的功耗及热影响检测工具。

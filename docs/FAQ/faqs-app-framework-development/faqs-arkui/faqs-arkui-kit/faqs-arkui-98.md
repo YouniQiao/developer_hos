@@ -2,9 +2,10 @@
 format: md
 title: "如何设置组件不同状态下的样式"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-98
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-98
+last_sync: 2026-06-07
+sync_hash: f1cc32df
 ---
-
-
 使用多态样式，在组件的StateStyles接口中，定义组件不同状态下的样式。参考代码如下：
 
 ```

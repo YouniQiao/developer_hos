@@ -3,8 +3,10 @@ title: "FAQ"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-marketing_api-faq-0000001435753217
 format: md
+upstream_id: monetize/promotion/bp-functions-marketing_api-faq-0000001435753217
+last_sync: 2026-06-07
+sync_hash: ef0e3020
 ---
-
 # FAQ
 
 ## 为什么创建API客户端时报错403？

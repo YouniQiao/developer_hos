@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "日历账户管理"
 original_url: /docs/dev/app-dev/application-services/calendar-kit/calendarmanager-calendar-developer
 format: md
+upstream_id: dev/app-dev/application-services/calendar-kit/calendarmanager-calendar-developer
+last_sync: 2026-06-07
+sync_hash: 391c2e5e
 ---
-
-
 日历账户‌用于存储和管理个人或团队的日程，通过日历账户，用户可以方便地查看、编辑和共享日程信息。
 
 日历管理器[CalendarManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-calendarmanager#calendarmanager)用于管理日历账户[Calendar](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-calendarmanager#calendar)。日历账户主要包含账户信息[CalendarAccount](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-calendarmanager#calendaraccount)和配置信息[CalendarConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-calendarmanager#calendarconfig)。

@@ -3,8 +3,10 @@ title: "创建创意"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-advertising-creative1-0000001338498645
 format: md
+upstream_id: monetize/promotion/marketing-api-advertising-creative1-0000001338498645
+last_sync: 2026-06-07
+sync_hash: f9178c44
 ---
-
 # 创建创意
 
 您通过本接口可以创建创意。

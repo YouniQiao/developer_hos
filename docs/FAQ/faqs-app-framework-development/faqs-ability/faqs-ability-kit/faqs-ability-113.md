@@ -2,9 +2,10 @@
 format: md
 title: "HarmonyOS提供了两种页面加载方式，两者有何区别，怎么选择"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-113
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-113
+last_sync: 2026-06-07
+sync_hash: 12611f7d
 ---
-
-
 **问题描述**
 
 HarmonyOS提供了两种页面加载方式，一种是一个UIAbility绑定多个页面，页面之间可以实现跳转；另一种是一个 UIAbility 绑定一个页面，通过跳转 UIAbility 实现页面加载。请问这两种方式有什么区别？一般怎么做选择？

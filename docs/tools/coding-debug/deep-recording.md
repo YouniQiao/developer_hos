@@ -3,9 +3,10 @@ title: "性能问题定位：深度录制"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/deep-recording
 format: md
+upstream_id: tools/coding-debug/deep-recording
+last_sync: 2026-06-07
+sync_hash: b73d74cd
 ---
-
-
 # 性能问题定位：深度录制
 
 开发者可针对不同的性能问题场景选择不同模式的分析任务，对应用/元服务进行深度分析。当前支持以下调优场景：

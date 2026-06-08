@@ -2,9 +2,10 @@
 title: "使用AudioCapturer开发音频录制功能(ArkTS)"
 original_url: /docs/dev/app-dev/media/audio-kit/audio-recording/using-audiocapturer-for-recording
 format: md
+upstream_id: dev/app-dev/media/audio-kit/audio-recording/using-audiocapturer-for-recording
+last_sync: 2026-06-07
+sync_hash: dc62c895
 ---
-
-
 AudioCapturer是音频采集器，用于录制PCM（Pulse Code Modulation）音频数据，适合有音频开发经验的开发者实现更灵活的录制功能。
 
 ## 开发指导

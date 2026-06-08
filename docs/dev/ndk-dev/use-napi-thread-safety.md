@@ -2,8 +2,11 @@
 title: "使用Node-API接口进行线程安全开发"
 original_url: /docs/dev/ndk-dev/use-napi-thread-safety
 format: md
+upstream_id: dev/ndk-dev/use-napi-thread-safety
+last_sync: 2026-06-07
+sync_hash: 27cad222
+upstream_hash: 0b1aa331729f
 ---
-
 
 ## 场景介绍
 

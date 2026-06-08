@@ -2,9 +2,10 @@
 format: md
 title: "如何监听Tabs里面TabContent页面显示"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-454
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-454
+last_sync: 2026-06-07
+sync_hash: 1125e1e5
 ---
-
-
 **背景知识**
 
 TabContent将要显示的时候触发onWillShow回调。场景包括：

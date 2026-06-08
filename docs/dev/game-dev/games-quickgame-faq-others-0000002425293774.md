@@ -2,9 +2,10 @@
 title: "其他开发问题"
 original_url: /docs/dev/game-dev/games-quickgame-faq-others-0000002425293774
 format: md
+upstream_id: dev/game-dev/games-quickgame-faq-others-0000002425293774
+last_sync: 2026-06-07
+sync_hash: 5696aab7
 ---
-
-
 ## 快游戏
 
 ### 快游戏运行加载场景动态效果时出现抖动、重影、闪烁等现象，如何处理？

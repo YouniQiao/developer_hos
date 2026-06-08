@@ -2,8 +2,11 @@
 title: "启动本地PageAbility"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/start-local-pageability
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/fa-model-development/fa-model-application-components/pageability/start-local-pageability
+last_sync: 2026-06-07
+sync_hash: 96dde342
+upstream_hash: ea5c91f899a1
 ---
-
 
 PageAbility相关的能力通过featureAbility提供，启动本地Ability通过featureAbility中的startAbility接口实现。
 

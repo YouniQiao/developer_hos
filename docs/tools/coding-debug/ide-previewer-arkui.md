@@ -3,9 +3,10 @@ title: "查看ArkUI预览效果"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-previewer-arkui
 format: md
+upstream_id: tools/coding-debug/ide-previewer-arkui
+last_sync: 2026-06-07
+sync_hash: b57b5ec6
 ---
-
-
 # 查看ArkUI预览效果
 
 ArkUI预览支持页面预览、组件预览和卡片预览，下图中左侧图标![](./img/zh-cn_image_0000002571387466.png)为页面预览，右侧图标![](./img/zh-cn_image_0000002571547098.png)为组件预览，卡片预览在创建卡片文件后可直接预览。

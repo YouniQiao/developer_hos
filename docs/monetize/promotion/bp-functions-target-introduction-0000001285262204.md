@@ -3,8 +3,10 @@ title: "业务介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-target-introduction-0000001285262204
 format: md
+upstream_id: monetize/promotion/bp-functions-target-introduction-0000001285262204
+last_sync: 2026-06-07
+sync_hash: 0d03870e
 ---
-
 # 业务介绍
 
 为满足开发者精细化的推广需求，华为应用市场应用推广平台在千人千面的推荐算法上，推出人群定向功能。创建定向包有5种方式，具体如下。

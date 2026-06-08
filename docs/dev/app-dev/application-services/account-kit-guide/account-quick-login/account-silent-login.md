@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "静默登录"
 original_url: /docs/dev/app-dev/application-services/account-kit-guide/account-quick-login/account-silent-login
 format: md
+upstream_id: dev/app-dev/application-services/account-kit-guide/account-quick-login/account-silent-login
+last_sync: 2026-06-07
+sync_hash: e9ecc425
 ---
-
-
 ## 场景介绍
 
 在应用卸载重装、用户换机等场景，如登录的华为账号与应用重装、换机前一致，应用可通过Account Kit提供的静默登录方式即不需要用户点击登录/注册按钮，即可获取用户的身份标识UnionID/OpenID，完成用户的静默登录。

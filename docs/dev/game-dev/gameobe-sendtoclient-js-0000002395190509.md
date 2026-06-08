@@ -2,9 +2,10 @@
 title: "发送客户端消息"
 original_url: /docs/dev/game-dev/gameobe-sendtoclient-js-0000002395190509
 format: md
+upstream_id: dev/game-dev/gameobe-sendtoclient-js-0000002395190509
+last_sync: 2026-06-07
+sync_hash: fb84e3c8
 ---
-
-
 如需和房间内其他玩家进行通信，玩家可通过发送自定义消息的方式实现。
 
 ## 前提条件

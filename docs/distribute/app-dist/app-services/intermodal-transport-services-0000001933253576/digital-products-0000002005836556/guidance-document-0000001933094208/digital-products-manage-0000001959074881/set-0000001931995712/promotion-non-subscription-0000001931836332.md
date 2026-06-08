@@ -3,9 +3,10 @@ title: "消耗型/非消耗型/非续期订阅商品"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/set-0000001931995712/promotion-non-subscription-0000001931836332
 format: md
+upstream_id: distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/set-0000001931995712/promotion-non-subscription-0000001931836332
+last_sync: 2026-06-07
+sync_hash: 64588124
 ---
-
-
 # 消耗型/非消耗型/非续期订阅商品
 
 在HarmonyOS应用数字商品服务中，针对消耗型/非消耗型/非续期订阅商品，支持您设置两种订阅优惠类型，包含自定义人群促销、设置商品的临时价格调整计划。

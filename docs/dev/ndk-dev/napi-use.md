@@ -2,9 +2,10 @@
 title: "Node-API使用指导"
 original_url: /docs/dev/ndk-dev/napi-use
 format: md
+upstream_id: dev/ndk-dev/napi-use
+last_sync: 2026-06-07
+sync_hash: d40eb383
 ---
-
-
 * **[使用Node-API进行扩展能力功能开发](/docs/dev/ndk-dev/use-napi-about-extension)**
 * **[使用Node-API接口进行array相关开发](/docs/dev/ndk-dev/use-napi-about-array)**
 * **[使用Node-API接口进行ArrayBuffer相关开发](/docs/dev/ndk-dev/use-napi-about-arraybuffer)**

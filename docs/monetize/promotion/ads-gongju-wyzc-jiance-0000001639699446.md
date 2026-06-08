@@ -3,6 +3,10 @@ title: "专属监测工具跟踪"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-gongju-wyzc-jiance-0000001639699446
 format: md
+upstream_id: monetize/promotion/ads-gongju-wyzc-jiance-0000001639699446
+last_sync: 2026-06-07
+sync_hash: 6127c8a8
+upstream_hash: 5bd4cec11248
 ---
 
 # 专属监测工具跟踪

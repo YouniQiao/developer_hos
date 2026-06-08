@@ -3,8 +3,10 @@ title: "创建推广产品"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-advertising-product1-0000001338259305
 format: md
+upstream_id: monetize/promotion/marketing-api-advertising-product1-0000001338259305
+last_sync: 2026-06-07
+sync_hash: 84ba69d7
 ---
-
 # 创建推广产品
 
 您通过本接口可以推广产品。

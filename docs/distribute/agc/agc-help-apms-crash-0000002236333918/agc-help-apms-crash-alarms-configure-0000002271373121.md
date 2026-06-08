@@ -2,9 +2,10 @@
 title: "配置告警"
 original_url: /docs/distribute/agc/agc-help-apms-crash-0000002236333918/agc-help-apms-crash-alarms-configure-0000002271373121
 format: md
+upstream_id: distribute/agc/agc-help-apms-crash-0000002236333918/agc-help-apms-crash-alarms-configure-0000002271373121
+last_sync: 2026-06-07
+sync_hash: 006dccda
 ---
-
-
 告警提醒是APMS基于云监控服务实现的异常问题告警功能，一旦系统监测到异常情况并触发预设的告警阈值，云监控将及时通过短信或邮件形式向您发送告警通知，确保您能够第一时间知晓并迅速响应，及时处理潜在问题，保障应用稳定运行。
 
 1. 登录AppGallery Connect，点击“开发与服务”。

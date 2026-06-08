@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "视频动态元数据生成"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-c/videoprocessing-guidelines/generate-video-dynamic-metadata
 format: md
+upstream_id: dev/app-dev/media/media-kit/media-kit-dev-c/videoprocessing-guidelines/generate-video-dynamic-metadata
+last_sync: 2026-06-07
+sync_hash: 96c7cc0b
 ---
-
-
 调用者可以调用本模块提供的[C API接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-videoprocessing)，实现HDRVivid标准动态元数据生成。
 
 该能力常用于视频编辑中，如下图所示：

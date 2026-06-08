@@ -2,6 +2,9 @@
 title: "合作伙伴分级权益规则"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-bonus-cooperation-0000001309230226
+upstream_id: monetize/promotion/bp-bonus-cooperation-0000001309230226
+last_sync: 2026-06-07
+sync_hash: 4bcbd655
 ---
 import MergeTable from '@site/src/components/MergeTable';
 

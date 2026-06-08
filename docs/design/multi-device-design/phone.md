@@ -3,8 +3,10 @@ title: 手机
 sidebar_label: 手机
 original_url: /docs/design/multi-device-design/phone
 format: md
+upstream_id: design/multi-device-design/phone
+last_sync: 2026-06-07
+sync_hash: f84fff18
 ---
-
 # 手机
 
 手机是用户最常使用的设备，用户使用手机来进行社交、娱乐、购物、理财等各项活动，手机已经渗透到用户工作和生活中的方方面面，系统、应用和服务体验的好坏对用户至关重要。

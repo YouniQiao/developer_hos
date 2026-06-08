@@ -2,9 +2,10 @@
 title: "获取位置信息"
 original_url: /docs/dev/atomic-dev/ascf/develop-open-capabilities/develop-location-retrieval
 format: md
+upstream_id: dev/atomic-dev/ascf/develop-open-capabilities/develop-location-retrieval
+last_sync: 2026-06-07
+sync_hash: 46ef2672
 ---
-
-
 位置子系统使用多种定位技术提供服务，如GNSS定位、基站定位、WLAN/蓝牙定位（基站定位、WLAN/蓝牙定位后续统称“网络定位技术”）；通过这些定位技术，无论用户设备在室内或是户外，都可以准确地确定设备位置。
 
 * 坐标

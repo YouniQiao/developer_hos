@@ -3,9 +3,10 @@ title: "自定义卡片演示案例"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/custom-card-editing-0000002471264337/example-of-using-custom-cards-0000002471344209
 format: md
+upstream_id: distribute/xiaoyi/custom-card-editing-0000002471264337/example-of-using-custom-cards-0000002471344209
+last_sync: 2026-06-07
+sync_hash: dc92ecc9
 ---
-
-
 # 自定义卡片演示案例
 
 **华为商城卡片**

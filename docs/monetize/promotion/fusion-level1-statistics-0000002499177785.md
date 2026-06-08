@@ -3,8 +3,10 @@ title: "推广统计"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/fusion-level1-statistics-0000002499177785
 format: md
+upstream_id: monetize/promotion/fusion-level1-statistics-0000002499177785
+last_sync: 2026-06-07
+sync_hash: a1579139
 ---
-
 # 推广统计
 
 原客投主账户的数据管理界面，整合后入口：服务商管理平台——推广统计——消耗统计，可查看维度不变。

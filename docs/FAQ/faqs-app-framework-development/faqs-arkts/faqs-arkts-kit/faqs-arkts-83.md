@@ -2,9 +2,10 @@
 format: md
 title: "ArkTS是否支持反射调用类的静态成员函数和实例成员函数"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-83
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-83
+last_sync: 2026-06-07
+sync_hash: 02b4f44d
 ---
-
-
 ArkTS 可以通过动态 import 实现反射功能，支持根据类名和方法名调用类中的静态成员函数和实例成员函数。示例如下：
 
 在harlibrary中定义类及其成员函数和全局函数，并进行导出。

@@ -3,9 +3,10 @@ title: "财务结算"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/financial-settlement-0000001931995732
 format: md
+upstream_id: distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/financial-settlement-0000001931995732
+last_sync: 2026-06-07
+sync_hash: d31e926a
 ---
-
-
 # 财务结算
 
 ## 概览

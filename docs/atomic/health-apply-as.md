@@ -2,9 +2,10 @@
 title: "申请运动健康服务"
 original_url: /docs/dev/atomic-dev/health-preparations-as/health-apply-as
 format: md
+upstream_id: dev/atomic-dev/health-preparations-as/health-apply-as
+last_sync: 2026-06-07
+sync_hash: acd8b0ba
 ---
-
-
 申请运动健康服务前，请先参考[应用开发准备](/docs/dev/atomic-dev/atomic-service-development/atomic-dev-preparation)，确认开发环境并完成[创建项目](/docs/distribute/agc/agc-help-project-0000002270709469/agc-help-create-project-0000002242804048)、[创建元服务](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-atomic-service-0000002247795706)、[添加公钥指纹](/docs/dev/atomic-dev/atomic-service-development/atomic-dev-preparation#section53459230820)等基本准备工作，再继续进行以下开发活动。
 
 1. 登录[开发者联盟网站](https://developer.huawei.com/consumer/cn/)，单击进入“管理中心”。

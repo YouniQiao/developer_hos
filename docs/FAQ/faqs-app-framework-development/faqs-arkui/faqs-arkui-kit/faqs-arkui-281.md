@@ -2,9 +2,10 @@
 format: md
 title: "自定义键盘和系统键盘如何切换"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-281
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-281
+last_sync: 2026-06-07
+sync_hash: e581288c
 ---
-
-
 声明状态变量，动态控制customKeyboard属性的值，实现自定义键盘与系统键盘的切换。示例代码如下：
 
 ```

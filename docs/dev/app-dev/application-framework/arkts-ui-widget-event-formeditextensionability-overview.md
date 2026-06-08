@@ -2,9 +2,10 @@
 title: "ArkTS卡片编辑概述"
 original_url: /docs/dev/app-dev/application-framework/arkts-ui-widget-event-formeditextensionability-overview
 format: md
+upstream_id: dev/app-dev/application-framework/arkts-ui-widget-event-formeditextensionability-overview
+last_sync: 2026-06-07
+sync_hash: 7873fdc2
 ---
-
-
 ArkTS卡片提供卡片页面编辑能力，支持实现用户自定义卡片内容的功能，例如：编辑联系人卡片、修改卡片中展示的联系人、编辑天气卡片等。
 
 卡片页面编辑分为半模态卡片编辑和全屏卡片编辑两种方式，从API version 18开始，支持半模态卡片编辑。

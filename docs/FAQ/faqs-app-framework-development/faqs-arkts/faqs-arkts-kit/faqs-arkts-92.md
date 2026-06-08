@@ -2,9 +2,10 @@
 title: "如何进行base64编码"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-92
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-92
+last_sync: 2026-06-07
+sync_hash: 0013f886
 ---
-
-
 可使用util中的Base64Helper()方法进行base64编码，参考代码如下：
 
 ```

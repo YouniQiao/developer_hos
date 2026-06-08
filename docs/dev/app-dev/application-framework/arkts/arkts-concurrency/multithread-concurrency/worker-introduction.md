@@ -2,9 +2,10 @@
 title: "Worker简介"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/worker-introduction
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-concurrency/multithread-concurrency/worker-introduction
+last_sync: 2026-06-07
+sync_hash: ca4391cf
 ---
-
-
 Worker的主要作用是为应用程序提供一个多线程的运行环境，实现应用程序执行过程与宿主线程分离。通过在后台线程运行脚本处理耗时操作，避免计算密集型或高延迟任务阻塞宿主线程。具体接口信息及使用方法详情请见[Worker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-worker)。
 
 ## Worker运作机制
@@ -131,7 +132,7 @@ const workerInstance4: worker.ThreadWorker = new worker.ThreadWorker('../../work
 
 * 当开发者加载entry、[feature](/docs/dev/app-dev/getting-started/dev-fundamentals/hap-package)及hsp包的Worker线程文件时，不建议采用写法三，推荐使用写法一，此写法无需拼接路径，可实现Worker的快速创建。
 * Worker线程文件的路径后缀（.ets/.ts）可以省略。
-* 跨源码HSP/HAR的场景下，需在创建Worker的模块包对应的oh-package.json5文件中，配置所需HSP/HAR包的依赖项，详见[引用共享包](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-har-import)。
+* 跨源码HSP/HAR的场景下，需在创建Worker的模块包对应的oh-package.json5文件中，配置所需HSP/HAR包的依赖项，详见[引用共享包](/docs/tools/coding-debug/ide-har-import)。
 * 当feature模块需加载其他模块的Worker线程文件时，应先完成对feature模块的调用。
 * 当开启useNormalizedOHMUrl（在工程目录中与entry同级别的应用级build-profile.json5文件中，将strictMode属性下的useNormalizedOHMUrl字段配置为true）或HAR包被打包成三方包使用时，HAR包中使用Worker仅支持通过相对路径的加载形式创建。
 

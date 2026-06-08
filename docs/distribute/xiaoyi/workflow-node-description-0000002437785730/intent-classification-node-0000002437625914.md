@@ -3,9 +3,10 @@ title: "意图分类节点"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/workflow-node-description-0000002437785730/intent-classification-node-0000002437625914
 format: md
+upstream_id: distribute/xiaoyi/workflow-node-description-0000002437785730/intent-classification-node-0000002437625914
+last_sync: 2026-06-07
+sync_hash: 5fb68b2f
 ---
-
-
 # 意图分类节点
 
 意图分类节点能够让智能体识别用户输入的意图，并将不同的意图流转至工作流不同的分支处理，提高用户体验，增强智能体的落地效果。

@@ -2,9 +2,10 @@
 format: md
 title: "应用测试"
 original_url: /docs/FAQ/faqs-app-test
+upstream_id: FAQ/faqs-app-test
+last_sync: 2026-06-07
+sync_hash: 7a234cff
 ---
-
-
 * **[升级DevEco Studio后执行测试任务失败](/docs/FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-2)**
 * **[运行测试用例时，结果树始终处于加载状态](/docs/FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-3)**
 * **[出现“container is not running”错误](/docs/FAQ/faqs-deveco-studio/faqs-app-test/faqs-app-test-4)**

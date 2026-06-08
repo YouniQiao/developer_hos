@@ -3,10 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "使用DH进行密钥协商(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-agreement/crypto-key-agreement-dev/crypto-key-agreement-using-dh-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-agreement/crypto-key-agreement-dev/crypto-key-agreement-using-dh-ndk
+last_sync: 2026-06-07
+sync_hash: 48f0f2ad
 ---
-
-
-对应的算法规格请查看[密钥协商算法规格：DH](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-agreement-overview#dh)。
+对应的算法规格请查看[密钥协商算法规格：DH](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-agreement/crypto-key-agreement-overview#dh)。
 
 ## 开发步骤
 

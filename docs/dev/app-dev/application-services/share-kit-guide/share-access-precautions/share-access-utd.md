@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "宿主应用发起分享需使用精细化的utd类型"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/share-access-precautions/share-access-utd
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/share-access-precautions/share-access-utd
+last_sync: 2026-06-07
+sync_hash: ac9dccd2
 ---
-
-
 utd类型指分享数据的数据类型，精准的数据类型有助于帮助宿主应用匹配到精确的目标应用，让分享内容更好的传递。
 
 当构造分享数据时，推荐宿主应用填写精准的utd类型，可通过以下两种方式获取：

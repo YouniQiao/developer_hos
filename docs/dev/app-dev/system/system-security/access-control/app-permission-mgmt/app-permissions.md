@@ -2,9 +2,10 @@
 title: "应用权限列表"
 original_url: /docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions
 format: md
+upstream_id: dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions
+last_sync: 2026-06-07
+sync_hash: 41d76a23
 ---
-
-
 根据权限的开放范围和授权方式不同，申请对应权限的方式也不同。
 
 系统当前存在以下权限列表，开发者可根据实际需求进行检索，并确定对应权限的申请方式。

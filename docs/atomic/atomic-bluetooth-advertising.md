@@ -2,9 +2,10 @@
 title: "广播开发指导"
 original_url: /docs/dev/atomic-dev/atomic-bluetooth/atomic-bluetooth-advertising
 format: md
+upstream_id: dev/atomic-dev/atomic-bluetooth/atomic-bluetooth-advertising
+last_sync: 2026-06-07
+sync_hash: 197f3367
 ---
-
-
 ## 简介
 
 广播与扫描，主要提供了蓝牙设备的开启广播、关闭广播、开启扫描、关闭扫描方法，通过广播和扫描发现对端蓝牙设备，实现低功耗的通信。

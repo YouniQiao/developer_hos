@@ -2,9 +2,10 @@
 format: md
 title: "CPP编译报错“A 'unknown type name' error has occurred”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-117
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-117
+last_sync: 2026-06-07
+sync_hash: d1a88f22
 ---
-
-
 **问题现象**
 
 在编译HarmonyOS C++ 项目时，报错提示“A 'unknown type name' error has occurred”。

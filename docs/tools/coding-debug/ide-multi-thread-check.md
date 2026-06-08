@@ -3,8 +3,11 @@ title: "方舟运行时检测"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-multi-thread-check
 format: md
+upstream_id: tools/coding-debug/ide-multi-thread-check
+last_sync: 2026-06-07
+sync_hash: ea0ff58d
+upstream_hash: b143a8649e36
 ---
-
 
 # 方舟运行时检测
 

@@ -2,9 +2,10 @@
 title: "更新子服务"
 original_url: /docs/dev/atomic-dev/instant-service-items/instant-service-items-update
 format: md
+upstream_id: dev/atomic-dev/instant-service-items/instant-service-items-update
+last_sync: 2026-06-07
+sync_hash: a24171b4
 ---
-
-
 1. 对于已通过审核、子服务状态为“已上架”的子服务，开发者可进行更新子服务的操作。
 
    ![](./img/8260d4f0.png "点击放大")

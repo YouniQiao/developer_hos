@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "时域可分层视频编码"
 original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding-temporal-scalability
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding-temporal-scalability
+last_sync: 2026-06-07
+sync_hash: e741e1bf
 ---
-
-
 ## 基础概念
 
 ### 时域可分层视频编码介绍

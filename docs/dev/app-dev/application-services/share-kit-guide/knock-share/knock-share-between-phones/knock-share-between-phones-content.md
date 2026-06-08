@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "内容分享"
 original_url: /docs/dev/app-dev/application-services/share-kit-guide/knock-share/knock-share-between-phones/knock-share-between-phones-content
 format: md
+upstream_id: dev/app-dev/application-services/share-kit-guide/knock-share/knock-share-between-phones/knock-share-between-phones-content
+last_sync: 2026-06-07
+sync_hash: cb56e8b8
 ---
-
-
 ## 注册碰一碰事件
 
 当用户进入支持碰一碰分享的界面或场景时，给出适当的引导和提示，可有效提升用户分享意愿。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-prepare
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-prepare
+last_sync: 2026-06-07
+sync_hash: 32b6295e
 ---
-
-
 应用在使用Car Kit能力前，开发者需要完成的配置：配置编译模式、配置权限、配置能力。
 
 ## 配置编译模式

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用RSA密钥对分段签名验签 (PKCS1模式)(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-rsa-sign-sig-verify-pkcs1-by-segment-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-dev/crypto-rsa-sign-sig-verify-pkcs1-by-segment-ndk
+last_sync: 2026-06-07
+sync_hash: 7dced82b
 ---
-
-
 对应的算法规格请查看[签名验签算法规格：RSA](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-sign-sig-verify/crypto-sign-sig-verify-overview#rsa)。
 
 ## 在CMake脚本中链接相关动态库

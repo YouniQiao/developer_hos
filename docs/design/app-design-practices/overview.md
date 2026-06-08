@@ -3,8 +3,10 @@ title: 概述
 sidebar_label: 概述
 original_url: /docs/design/app-design-practices/overview
 format: md
+upstream_id: design/app-design-practices/overview
+last_sync: 2026-06-07
+sync_hash: f2beb6a2
 ---
-
 # 概述
 
 ![](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/8E5C66E49099.png "点击放大")

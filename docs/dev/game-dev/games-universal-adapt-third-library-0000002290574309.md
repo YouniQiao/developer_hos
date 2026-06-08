@@ -2,9 +2,10 @@
 title: "三方库适配"
 original_url: /docs/dev/game-dev/games-universal-adapt-third-library-0000002290574309
 format: md
+upstream_id: dev/game-dev/games-universal-adapt-third-library-0000002290574309
+last_sync: 2026-06-07
+sync_hash: ae5683bd
 ---
-
-
 三方库一般是软件作者为了发布方便、替换方便或者二次开发的目的，而发布的一组可以单独于应用程序进行compile time或者runtime链接的二进制可重定位目标码文件。从本质上来说库是一种可执行代码的二进制形式，由于不同操作系统的本质不同，因此库的二进制是不兼容的。因此需要针对不同的操作系统对三方库进行编译。
 
 ## 三方库编译方式

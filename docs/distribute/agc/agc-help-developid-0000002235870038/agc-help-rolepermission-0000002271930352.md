@@ -2,8 +2,11 @@
 title: "角色与权限"
 original_url: /docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-rolepermission-0000002271930352
 format: md
+upstream_id: distribute/agc/agc-help-developid-0000002235870038/agc-help-rolepermission-0000002271930352
+last_sync: 2026-06-07
+sync_hash: 15087668
+upstream_hash: 8916eb71907a
 ---
-
 
 账号所属角色决定了账号在AppGallery Connect执行任务的权限。AppGallery Connect中主要角色及其权限如下表所示。
 

@@ -3,9 +3,10 @@ title: "视频分段上传初始化"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/huawei-video-baihua/Content Connect API/video-management/video-multipart-initialization-0000001270807809
 format: md
+upstream_id: distribute/content-dist/huawei-video-baihua/Content Connect API/video-management/video-multipart-initialization-0000001270807809
+last_sync: 2026-06-07
+sync_hash: d86df045
 ---
-
-
 # 视频分段上传初始化
 
 该接口用于分段上传视频到文件服务器，先初始化上传获取videoId。
@@ -33,7 +34,7 @@ POST /mosopenapi/v2/foruser/video/part/init
 | upResourceId | string | UP主的id标识，upResourceId和tpUserCode不能同时为空。 | 492456389055106944  为/list/users接口获取的upInfos中的upResourceId。 | false |
 | tpUserCode | string | UP主的第三方标识，upResourceId和tpUserCode不能同时为空。 | hwvrmgjxmt | false |
 | fileName | string | 文件名称，必须带文件后缀，后缀仅支持mp4和mov。 | 123.mp4 | true |
-| sha256 | string | 文件生成的签名，签名生成算法参见“[算法介绍](https://developer.huawei.com/consumer/cn/doc/distribution/content/algorithm-introduction-0000001270645741)”。 | 34b234424d98dcb064a71a862835527ff3b5d38ec06cd98a3289c0028108322f | true |
+| sha256 | string | 文件生成的签名，签名生成算法参见“[算法介绍](/docs/distribute/content-dist/huawei-video-baihua/Content Connect API/algorithm-introduction-0000001270645741)”。 | 34b234424d98dcb064a71a862835527ff3b5d38ec06cd98a3289c0028108322f | true |
 | length | string | 文件大小，单位为Bytes。 | 1024 | true |
 
 <strong>请求样例</strong>

@@ -2,9 +2,10 @@
 title: "删除门店"
 original_url: /docs/dev/atomic-dev/instant-service-store-management/instant-service-store-delete
 format: md
+upstream_id: dev/atomic-dev/instant-service-store-management/instant-service-store-delete
+last_sync: 2026-06-07
+sync_hash: f935786b
 ---
-
-
 ## 功能介绍
 
 本接口用于商家删除指定门店。调用成功后，门店将即时从平台下线，用户端不可见。

@@ -2,9 +2,10 @@
 title: "HarmonyOS 5.0及以上"
 original_url: /docs/dev/game-dev/games-gamemme-record-play-audio-msg-harmonyos-0000002304632336
 format: md
+upstream_id: dev/game-dev/games-gamemme-record-play-audio-msg-harmonyos-0000002304632336
+last_sync: 2026-06-07
+sync_hash: 47ae8c62
 ---
-
-
 ![](./img/ed5a9b60.png)
 
 语音消息文件会占用一部分本地存储空间，建议您销毁实例时，删除本地存储的语音文件以释放存储空间。

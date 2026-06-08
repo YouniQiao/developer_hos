@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用Image_NativeModule完成图片编码"
 original_url: /docs/dev/app-dev/media/image-kit/image-native/image-encoding-c/image-packer-c
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-native/image-encoding-c/image-packer-c
+last_sync: 2026-06-07
+sync_hash: 24db5345
 ---
-
-
 图像编码类，用于创建以及释放ImagePacker实例。
 
 ## 开发步骤

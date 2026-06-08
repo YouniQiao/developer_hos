@@ -2,8 +2,11 @@
 title: "GC垃圾回收"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-runtime/gc-introduction
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-runtime/gc-introduction
+last_sync: 2026-06-07
+sync_hash: 16825fd0
+upstream_hash: 97ea69271752
 ---
-
 
 GC（全称 Garbage Collection），即垃圾回收。在计算机领域，GC是指识别并释放内存中的不再使用的对象，以回收内存空间。目前广泛使用的编程语言实现的GC算法主要分为两大类：引用计数和对象追踪（即Tracing GC）。
 
@@ -495,8 +498,8 @@ GC稳定性问题主要由两种异常引起：一是非法多线程操作导致
 
 可以通过线程名称和堆栈中的方法来识别GC任务：OS\_GC\_Thread线程主要执行GC任务和PGO相关任务（采集型任务）；或者通过堆栈中包含GCTask等关键词识别GC任务。GC任务上报地址异常类型的崩溃时，开发者应首先排查非法多线程问题和内存访问问题。
 
-* 检测非法多线程操作：[方舟运行时检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-multi-thread-check)。
-* 检测踩内存问题：[HWASan检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hwasan)。
+* 检测非法多线程操作：[方舟运行时检测](/docs/tools/coding-debug/ide-multi-thread-check)。
+* 检测踩内存问题：[HWASan检测](/docs/tools/coding-debug/ide-hwasan)。
 
 以下示例列举部分情况，实际问题上报的地址异常类型多样，不再赘述。
 

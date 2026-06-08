@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "推荐数据源及推荐逻辑说明"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-explain
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-intelligent-filling/scenario-fusion-intelligentfilling-explain
+last_sync: 2026-06-07
+sync_hash: 24df2454
 ---
-
-
 智能填充将从华为账号、剪贴板、最近日程、联系人和历史表单输入获取数据，以提供填充建议。
 
 | 名称 | 说明 |

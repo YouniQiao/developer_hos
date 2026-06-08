@@ -2,9 +2,10 @@
 title: "跨设备互通NDK特性概述"
 original_url: /docs/dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-servicendk/servicecollaboration-servicendk-description
 format: md
+upstream_id: dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-servicendk/servicecollaboration-servicendk-description
+last_sync: 2026-06-07
+sync_hash: bad0e72f
 ---
-
-
 跨设备互通提供相机、扫描以及图库（图片和视频）的跨设备调用能力，TV、Tablet或PC/2in1设备可以调用Phone的相机、扫描、图库等功能。
 
 ![](./img/d450fa27.png)

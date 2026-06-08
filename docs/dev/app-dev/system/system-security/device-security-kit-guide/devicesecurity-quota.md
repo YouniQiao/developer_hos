@@ -2,8 +2,11 @@
 title: "服务配额"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-quota
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-quota
+last_sync: 2026-06-07
+sync_hash: ff284069
+upstream_hash: a99c4959bee0
 ---
-
 
 | 功能 | 配额说明 |
 | --- | --- |

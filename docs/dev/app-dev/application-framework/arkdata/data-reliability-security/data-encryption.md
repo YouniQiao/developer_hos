@@ -2,9 +2,10 @@
 title: "数据库加密 (ArkTS)"
 original_url: /docs/dev/app-dev/application-framework/arkdata/data-reliability-security/data-encryption
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/data-reliability-security/data-encryption
+last_sync: 2026-06-07
+sync_hash: 7894d34f
 ---
-
-
 ## 场景介绍
 
 为了增强数据库的安全性，数据库提供了一个安全适用的数据库加密能力，从而对数据库存储的内容实施有效保护。通过数据库加密等安全方法实现了数据库数据存储的保密性和完整性要求，使得数据库以密文方式存储并在密态方式下工作，确保了数据安全。

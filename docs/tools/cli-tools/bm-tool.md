@@ -3,9 +3,10 @@ title: "bm工具"
 displayed_sidebar: cliToolsSidebar
 original_url: /docs/tools/cli-tools/bm-tool
 format: md
+upstream_id: tools/cli-tools/bm-tool
+last_sync: 2026-06-07
+sync_hash: 92872ada
 ---
-
-
 # bm工具
 
 Bundle Manager（包管理工具，简称bm）是实现应用安装、卸载、更新、查询等功能的工具，bm为开发者提供基本的应用安装包的调试能力。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "空域AI超分"
 original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-ai-spatial-upscaling
 format: md
+upstream_id: dev/app-dev/graphics/xengine-kit-guide/xengine-kit-ai-spatial-upscaling
+last_sync: 2026-06-07
+sync_hash: 98c6e71d
 ---
-
-
 XEngine Kit提供空域AI超分能力，基于单帧图像使用AI推理生成滤波参数进行超采样，通过GPU、NPU协同工作，实现比空域GPU超分更好的画质，建议超分倍率在1.5倍以下时使用。
 
 ## 约束与限制

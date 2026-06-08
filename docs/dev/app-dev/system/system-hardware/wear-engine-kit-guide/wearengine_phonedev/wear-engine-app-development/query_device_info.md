@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "穿戴设备信息查询"
 original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_device_info
 format: md
+upstream_id: dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_device_info
+last_sync: 2026-06-07
+sync_hash: b15bd9ac
 ---
-
-
 ```
 // 在使用Wear Engine服务前，请导入WearEngine与相关模块
 import { wearEngine } from '@kit.WearEngine';

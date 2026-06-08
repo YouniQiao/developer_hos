@@ -2,9 +2,10 @@
 format: md
 title: "数据存储方案如何选择"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-38
+upstream_id: FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-38
+last_sync: 2026-06-07
+sync_hash: 29136eb7
 ---
-
-
 **问题描述**
 
 HarmonyOS标准系统支持典型的存储数据形态，包括用户首选项、键值型数据库、关系型数据库。

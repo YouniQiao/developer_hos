@@ -3,9 +3,10 @@ title: "@typescript-eslint/typedef"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_typedef
 format: md
+upstream_id: tools/coding-debug/ide_typedef
+last_sync: 2026-06-07
+sync_hash: 5ed51213
 ---
-
-
 # @typescript-eslint/typedef
 
 在某些位置需要类型注释。

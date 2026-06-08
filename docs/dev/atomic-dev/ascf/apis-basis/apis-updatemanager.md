@@ -2,9 +2,10 @@
 title: "更新"
 original_url: /docs/dev/atomic-dev/ascf/apis-basis/apis-updatemanager
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-basis/apis-updatemanager
+last_sync: 2026-06-07
+sync_hash: 3893da3d
 ---
-
-
 ## has.getUpdateManager
 
 has.getUpdateManager(): UpdateManager

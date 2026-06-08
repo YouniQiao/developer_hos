@@ -2,9 +2,10 @@
 title: "证书集合及证书吊销列表集合对象的创建和获取"
 original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-get-cert-crl-object
 format: md
+upstream_id: dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-get-cert-crl-object
+last_sync: 2026-06-07
+sync_hash: 7f6a043f
 ---
-
-
 从输入的证书集合和证书吊销列表集合中选择满足条件的证书或者证书吊销列表。
 
 ## 开发步骤

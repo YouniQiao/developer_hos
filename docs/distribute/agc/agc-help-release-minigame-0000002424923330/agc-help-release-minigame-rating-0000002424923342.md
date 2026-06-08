@@ -2,9 +2,10 @@
 title: "配置内容分级"
 original_url: /docs/distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-rating-0000002424923342
 format: md
+upstream_id: distribute/agc/agc-help-release-minigame-0000002424923330/agc-help-release-minigame-rating-0000002424923342
+last_sync: 2026-06-07
+sync_hash: fa37c4ac
 ---
-
-
 内容分级用于标识小游戏适宜的年龄分级，年龄分级在应用市场的游戏详情页向玩家展示，帮助玩家找到适合其年龄段的小游戏，从而为未成年人玩家打造纯净的游戏环境。
 
 AppGallery Connect平台提供了调查问卷，根据小游戏实际情况如实填写后自动生成年龄分级，并结合小游戏内基于《网络游戏适龄提示》团体标准标注的适龄提示标识，最终选择小游戏的年龄分级。

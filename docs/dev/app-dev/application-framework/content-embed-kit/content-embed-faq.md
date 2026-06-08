@@ -2,9 +2,10 @@
 title: "Content Embed Kit常见问题"
 original_url: /docs/dev/app-dev/application-framework/content-embed-kit/content-embed-faq
 format: md
+upstream_id: dev/app-dev/application-framework/content-embed-kit/content-embed-faq
+last_sync: 2026-06-07
+sync_hash: 9928e1b6
 ---
-
-
 ## 如何根据需求选择链接或嵌入模式来创建OE文档
 
 客户端开发者在调用[OH\_ContentEmbed\_CreateDocumentByFile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-content-embed-document-h#oh_contentembed_createdocumentbyfile)创建OE文档时，可根据是否需要同步源文件变更来设置isLinking参数。

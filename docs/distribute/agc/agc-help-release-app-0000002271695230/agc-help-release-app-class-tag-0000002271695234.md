@@ -2,9 +2,10 @@
 title: "配置应用分类、标签"
 original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-class-tag-0000002271695234
 format: md
+upstream_id: distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-class-tag-0000002271695234
+last_sync: 2026-06-07
+sync_hash: 850f4106
 ---
-
-
 用户会通过应用市场上的类别来发现他们想要的应用，设置的类别将影响到应用的曝光度。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。

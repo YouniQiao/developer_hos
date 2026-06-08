@@ -2,9 +2,10 @@
 title: "如何同时获取屏幕方向orientation和系统规避区avoidAreaChange信息"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-369
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-369
+last_sync: 2026-06-07
+sync_hash: 5c3ec68d
 ---
-
-
 以折叠屏形态变化时触发为示例，可以在EntryAbility.ets文件中通过[on('avoidAreaChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#onavoidareachange9)接口监听窗口系统规避区的变化，在callback中获取avoidAreaChange信息，并通过Display实例获取屏幕方向orientation等信息。
 
 ```

@@ -2,9 +2,10 @@
 title: "JSVM-API使用规范"
 original_url: /docs/dev/ndk-dev/jsvm-guidelines
 format: md
+upstream_id: dev/ndk-dev/jsvm-guidelines
+last_sync: 2026-06-07
+sync_hash: 16782ccf
 ---
-
-
 ## 生命周期管理
 
 **【规则】** 合理使用OH\_JSVM\_OpenHandleScope和OH\_JSVM\_CloseHandleScope管理JSVM\_Value的生命周期，做到生命周期最小化，避免发生内存泄漏问题。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "物体摆放（ArkTS）"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/arworld/arengine-arworld
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/arworld/arengine-arworld
+last_sync: 2026-06-07
+sync_hash: eb90b6e2
 ---
-
-
 本章节给出了关键开发步骤，完整代码可以参考[示例代码](https://gitcode.com/HarmonyOS_Samples/arengine_samplecode_clientdemo_arkts)。
 
 ## 约束与限制

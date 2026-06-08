@@ -2,9 +2,10 @@
 title: "恶意霸屏"
 original_url: /docs/experience-suggestions/security-privacy/pure/standard-pure-occupy
 format: md
+upstream_id: experience-suggestions/security-privacy/pure/standard-pure-occupy
+last_sync: 2026-06-07
+sync_hash: a2b819d9
 ---
-
-
 # 恶意霸屏
 
 |  |  |

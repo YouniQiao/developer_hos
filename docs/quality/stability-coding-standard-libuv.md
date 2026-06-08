@@ -1,8 +1,10 @@
 ---
 title: "libuv使用规范及案例"
 original_url: /docs/quality/stability-coding-standard-libuv
+upstream_id: /docs/quality/stability-coding-standard-libuv
+last_sync: 2026-06-07
+sync_hash: a20ff627
 ---
-
 # libuv使用规范及案例
 
 ## 前言

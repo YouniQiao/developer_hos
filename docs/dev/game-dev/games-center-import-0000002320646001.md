@@ -2,9 +2,10 @@
 title: "批量添加商品"
 original_url: /docs/dev/game-dev/games-center-import-0000002320646001
 format: md
+upstream_id: dev/game-dev/games-center-import-0000002320646001
+last_sync: 2026-06-07
+sync_hash: 7dd92ac2
 ---
-
-
 ## 批量添加数字商品
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。

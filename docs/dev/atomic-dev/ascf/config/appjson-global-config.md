@@ -2,9 +2,10 @@
 title: "app.json全局配置"
 original_url: /docs/dev/atomic-dev/ascf/config/appjson-global-config
 format: md
+upstream_id: dev/atomic-dev/ascf/config/appjson-global-config
+last_sync: 2026-06-07
+sync_hash: c805d93b
 ---
-
-
 app.json用于描述整个工程的配置信息，基本配置示例如下：
 
 ```

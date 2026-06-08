@@ -2,9 +2,10 @@
 title: "使用Web组件保存前端页面为PDF"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-process-page-content/web-createpdf
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-process-page-content/web-createpdf
+last_sync: 2026-06-07
+sync_hash: 3e2ff4ac
 ---
-
-
 从API version 14开始，支持使用Web组件的[createPdf](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#createpdf14)方法，为应用提供了保存前端页面为PDF的功能。
 
 使用[createPdf](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#createpdf14)生成实例后，调用pdfArrayBuffer方法获取二进制数据流，再使用[fileIo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs)方法将二进制数据流保存为PDF文件。用户可以将前端页面内容保存为PDF以便分享或保存。例如，生成报告、发票等，方便用户保存和传输。

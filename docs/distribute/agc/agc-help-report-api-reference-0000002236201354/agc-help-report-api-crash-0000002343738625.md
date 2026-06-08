@@ -2,9 +2,10 @@
 title: "获取Crash指标"
 original_url: /docs/distribute/agc/agc-help-report-api-reference-0000002236201354/agc-help-report-api-crash-0000002343738625
 format: md
+upstream_id: distribute/agc/agc-help-report-api-reference-0000002236201354/agc-help-report-api-crash-0000002343738625
+last_sync: 2026-06-07
+sync_hash: 1dc38f80
 ---
-
-
 #### 功能介绍
 
 获取某一应用指定时间段内的Crash指标数据，指标查询结果包括Crash类型（JS\_ERROR | CPP\_CRASH | OOM | PROCESS\_KILL）、Crash发生时间、Crash次数、Crash设备数及Fingerprint等。

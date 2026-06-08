@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "个人数据处理说明"
 original_url: /docs/dev/app-dev/application-services/health-personal-data-processing
 format: md
+upstream_id: dev/app-dev/application-services/health-personal-data-processing
+last_sync: 2026-06-07
+sync_hash: cf0593bf
 ---
-
-
 最后修改时间： 2024/5/16
 
 华为是数据处理者，不是数据控制者，数据使用目的和方式由用户自己决定。

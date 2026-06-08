@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "导航流转至车机"
 original_url: /docs/dev/app-dev/system/system-hardware/car-kit-guide/car-implement-navi-hop/car-navi-hop
 format: md
+upstream_id: dev/app-dev/system/system-hardware/car-kit-guide/car-implement-navi-hop/car-navi-hop
+last_sync: 2026-06-07
+sync_hash: 67309918
+upstream_hash: e74e1c2dc0d6
 ---
-
 
 ## 场景介绍
 

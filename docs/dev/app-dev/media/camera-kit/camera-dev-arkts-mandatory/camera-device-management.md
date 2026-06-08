@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "相机管理(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-management
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-management
+last_sync: 2026-06-07
+sync_hash: e94860ce
 ---
-
-
 在开发一个相机应用前，需要先通过调用相机接口来创建一个相机管理实例。
 
 ## 开发步骤

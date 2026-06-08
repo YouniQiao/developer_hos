@@ -2,9 +2,10 @@
 title: "适配准备"
 original_url: /docs/dev/game-dev/games-laya-preparation-0000002290574301
 format: md
+upstream_id: dev/game-dev/games-laya-preparation-0000002290574301
+last_sync: 2026-06-07
+sync_hash: 85447b46
 ---
-
-
 ## 引擎适配准备
 
 * Laya1.0：引擎IDE升级到[1.8.16及以上版本](https://ldc.layabox.com/layadownload/?type=layaairide-LayaAir IDE 1.8.16)。

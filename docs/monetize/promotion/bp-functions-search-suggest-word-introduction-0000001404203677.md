@@ -3,6 +3,10 @@ title: "功能介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-search-suggest-word-introduction-0000001404203677
 format: md
+upstream_id: monetize/promotion/bp-functions-search-suggest-word-introduction-0000001404203677
+last_sync: 2026-06-07
+sync_hash: 30cdd7a6
+upstream_hash: 5b4483f7e9d1
 ---
 
 # 功能介绍

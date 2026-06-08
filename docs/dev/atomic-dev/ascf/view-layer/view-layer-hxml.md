@@ -2,9 +2,10 @@
 title: "hxml"
 original_url: /docs/dev/atomic-dev/ascf/view-layer/view-layer-hxml
 format: md
+upstream_id: dev/atomic-dev/ascf/view-layer/view-layer-hxml
+last_sync: 2026-06-07
+sync_hash: a42a7532
 ---
-
-
 传统网页开发采用的是HTML + CSS + JS的组合，其中 HTML 是用来描述当前这个页面的结构，CSS 用来描述页面的样式，JS 用于编写页面逻辑和交互。
 
 ASCF框架中也是类似的，差异在于ASCF框架中用 hxml 替代了HTML。

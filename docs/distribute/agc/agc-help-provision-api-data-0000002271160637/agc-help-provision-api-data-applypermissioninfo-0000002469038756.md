@@ -2,9 +2,10 @@
 title: "OpenApplyPermissionInfo"
 original_url: /docs/distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-applypermissioninfo-0000002469038756
 format: md
+upstream_id: distribute/agc/agc-help-provision-api-data-0000002271160637/agc-help-provision-api-data-applypermissioninfo-0000002469038756
+last_sync: 2026-06-07
+sync_hash: e5427281
 ---
-
-
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
 | name | M | String(256) | 受限ACL权限名称。 |

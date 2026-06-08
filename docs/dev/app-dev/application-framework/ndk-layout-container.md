@@ -2,9 +2,10 @@
 title: "使用布局组件"
 original_url: /docs/dev/app-dev/application-framework/ndk-layout-container
 format: md
+upstream_id: dev/app-dev/application-framework/ndk-layout-container
+last_sync: 2026-06-07
+sync_hash: 8894ac12
 ---
-
-
 从API version 12开始，ArkUI在NDK中提供了常用布局组件[Flex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-flex)、[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)、[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)、[Stack](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-stack)对应的节点类型和属性设置接口。Flex用于弹性布局，Row和Column用于线性布局，Stack用于层叠布局，对应节点类型和属性设置枚举可参考[ArkUI\_NodeType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-node-h#arkui_nodetype)。
 
 本文以弹性组件Flex为例，提供NDK下布局组件接入和属性设置的开发指导。本示例仅展示核心功能代码，完整示例请参考[NDKFlexSample](https://gitcode.com/HarmonyOS_Samples/guide-snippets/tree/master/ArkUISample/NDKFlexSample)；实现前需要先接入ArkTS页面，具体接入方式可参考[接入ArkTS页面](/docs/dev/app-dev/application-framework/arkui/arkts-use-ndk/ndk-access-the-arkts-page)。

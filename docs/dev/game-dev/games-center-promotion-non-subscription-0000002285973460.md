@@ -2,9 +2,10 @@
 title: "消耗型/非消耗型/非续期订阅商品"
 original_url: /docs/dev/game-dev/games-center-promotion-non-subscription-0000002285973460
 format: md
+upstream_id: dev/game-dev/games-center-promotion-non-subscription-0000002285973460
+last_sync: 2026-06-07
+sync_hash: ab601ee7
 ---
-
-
 在HarmonyOS应用数字商品服务中，针对消耗型/非消耗型/非续期订阅商品，支持您设置两种订阅优惠类型，包含自定义人群促销、设置商品的临时价格调整计划。
 
 **自定义人群促销：**请提前在商品管理系统中针对商品设置自定义人群促销价格，由您自行根据用户画像判断用户是否满足促销优惠条件。在发起购买前，通过调用查询商品信息接口，获取[promotionalOffers](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-iap#section446812293465)，查询该商品的优惠活动信息；在最终发起购买时，通过将优惠活动信息（[promotionalOfferId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-iap#section1340120344598)）传递到华为IAP Kit，最终将优惠活动信息展示给用户。

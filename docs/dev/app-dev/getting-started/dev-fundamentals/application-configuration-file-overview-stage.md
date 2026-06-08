@@ -1,8 +1,10 @@
 ---
 title: "应用配置文件概述（Stage模型）"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-overview-stage
+upstream_id: dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-overview-stage
+last_sync: 2026-06-07
+sync_hash: a4bf4b6e
 ---
-
 每个应用项目的代码目录下必须包含应用配置文件，这些配置文件会向编译工具、操作系统和应用市场提供应用的基本信息。
 
 在基于Stage模型开发的应用项目代码下，都存在一个app.json5配置文件、以及一个或多个module.json5配置文件。

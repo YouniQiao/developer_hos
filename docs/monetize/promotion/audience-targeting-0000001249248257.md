@@ -3,8 +3,10 @@ title: "细分受众人群"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/audience-targeting-0000001249248257
 format: md
+upstream_id: monetize/promotion/audience-targeting-0000001249248257
+last_sync: 2026-06-07
+sync_hash: 4c6462ef
 ---
-
 # 细分受众人群
 
 ## 概述

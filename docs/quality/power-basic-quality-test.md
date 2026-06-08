@@ -2,9 +2,10 @@
 title: "功耗基础质量测试"
 original_url: /docs/quality/power-basic-quality-test
 format: md
+upstream_id: /docs/quality/power-basic-quality-test
+last_sync: 2026-06-07
+sync_hash: 8d8d55b3
 ---
-
-
 # 功耗基础质量测试
 
 功耗基础质量测试的适用场景：保障HarmonyOS应用功耗质量和体验满足商用要求，识别应用存在的明显功耗异常，应用上架时，应用市场也会进行功耗基础质量测试，避免应用上架后出现因高耗电导致设备快速发热、续航缩短的严重问题。常用的工具有DevEco Studio开发工具中Tools->AppAnalyzer、[DevEco Testing](/docs/dev/testing/deveco-testing)，开发者也可以在上架前进行基础质量测试，提高应用上架的效率。

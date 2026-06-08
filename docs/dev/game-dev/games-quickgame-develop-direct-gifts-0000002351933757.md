@@ -2,9 +2,10 @@
 title: "直达礼包"
 original_url: /docs/dev/game-dev/games-quickgame-develop-direct-gifts-0000002351933757
 format: md
+upstream_id: dev/game-dev/games-quickgame-develop-direct-gifts-0000002351933757
+last_sync: 2026-06-07
+sync_hash: b94ca06b
 ---
-
-
 直达礼包为用户提供了方便快捷的礼包领取体验，同时降低了礼包被刷的风险。
 
 ## 前提条件

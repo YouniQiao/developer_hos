@@ -3,8 +3,10 @@ title: "SearchAdTaskReportFiltering"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-searchadtaskreportfiltering-0000001181946373
 format: md
+upstream_id: monetize/promotion/marketapi-modle-searchadtaskreportfiltering-0000001181946373
+last_sync: 2026-06-07
+sync_hash: 906cbaf3
 ---
-
 # SearchAdTaskReportFiltering
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |

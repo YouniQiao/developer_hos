@@ -2,9 +2,10 @@
 title: "MDNS管理"
 original_url: /docs/dev/atomic-dev/atomic-network-development/atomic-net-mdns
 format: md
+upstream_id: dev/atomic-dev/atomic-network-development/atomic-net-mdns
+last_sync: 2026-06-07
+sync_hash: 9d943692
 ---
-
-
 ## 简介
 
 MDNS即多播DNS（Multicast DNS），提供局域网内的本地服务添加、移除、发现、解析等能力。

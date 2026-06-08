@@ -3,8 +3,11 @@ title: "电量电池图标"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-powercon-0000002429826785
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-audio-0000002405271209/themes-audio-spec-0000002471394974/themes-audio-spec-guide-0000002429826773/themes-audio-spec-guide-powercon-0000002429826785
+last_sync: 2026-06-07
+sync_hash: b4585090
+upstream_hash: 23f0b4bbad4d
 ---
-
 
 # 电量电池图标
 

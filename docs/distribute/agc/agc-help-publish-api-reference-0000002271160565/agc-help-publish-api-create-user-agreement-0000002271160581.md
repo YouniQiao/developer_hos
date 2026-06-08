@@ -2,9 +2,10 @@
 title: "新建用户协议"
 original_url: /docs/distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-create-user-agreement-0000002271160581
 format: md
+upstream_id: distribute/agc/agc-help-publish-api-reference-0000002271160565/agc-help-publish-api-create-user-agreement-0000002271160581
+last_sync: 2026-06-07
+sync_hash: ee947123
 ---
-
-
 #### 功能介绍
 
 此接口用于新建HarmonyOS应用/元服务的用户协议。

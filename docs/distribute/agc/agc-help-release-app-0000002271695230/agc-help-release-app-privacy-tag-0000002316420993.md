@@ -2,9 +2,10 @@
 title: "配置隐私标签信息"
 original_url: /docs/distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-privacy-tag-0000002316420993
 format: md
+upstream_id: distribute/agc/agc-help-release-app-0000002271695230/agc-help-release-app-privacy-tag-0000002316420993
+last_sync: 2026-06-07
+sync_hash: c55c7366
 ---
-
-
 隐私标签将展示在应用详情页面，帮助用户提前了解应用使用个人数据的情况。
 
 只有支持手机、平板、PC/2in1或智慧屏的HarmonyOS应用才需要配置此信息。

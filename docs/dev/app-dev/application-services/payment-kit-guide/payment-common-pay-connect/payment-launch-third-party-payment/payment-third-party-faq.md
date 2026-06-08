@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "三方支付问题处理"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-launch-third-party-payment/payment-third-party-faq
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-common-pay-connect/payment-launch-third-party-payment/payment-third-party-faq
+last_sync: 2026-06-07
+sync_hash: 1cc77c95
 ---
-
-
 ## 接入微信H5 支付，支付完成后会停留在微信里面，没有自动返回应用，需要用户手动返回？
 
 支付完成需回调页面可参见[这里](https://pay.weixin.qq.com/doc/v2/merchant/4011936869)。

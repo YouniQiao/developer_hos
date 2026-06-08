@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "文件隔离删除"
 original_url: /docs/dev/app-dev/system/system-security/enterprise-threat-protection-kit-guide/nterprisethreatprotection-virusremediation-content/enterprisethreatprotection-virusremediation-remove
 format: md
+upstream_id: dev/app-dev/system/system-security/enterprise-threat-protection-kit-guide/nterprisethreatprotection-virusremediation-content/enterprisethreatprotection-virusremediation-remove
+last_sync: 2026-06-07
+sync_hash: f32f0d43
 ---
-
-
 ## 基本概念
 
 **隔离区**：是指系统中临时存放被识别为威胁的文件的区域。

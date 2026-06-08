@@ -2,9 +2,10 @@
 title: "radio"
 original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-radio
 format: md
+upstream_id: dev/atomic-dev/ascf/components-form-components/components-radio
+last_sync: 2026-06-07
+sync_hash: 73177e70
 ---
-
-
 单选按钮。
 
 **起始版本：** 1.0.0

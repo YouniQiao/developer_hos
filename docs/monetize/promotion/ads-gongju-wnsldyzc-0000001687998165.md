@@ -3,8 +3,10 @@ title: "维纳斯落地页资产"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/ads-gongju-wnsldyzc-0000001687998165
 format: md
+upstream_id: monetize/promotion/ads-gongju-wnsldyzc-0000001687998165
+last_sync: 2026-06-07
+sync_hash: abc5c0fa
 ---
-
 # 维纳斯落地页资产
 
 ## 基本原理

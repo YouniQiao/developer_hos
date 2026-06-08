@@ -2,9 +2,10 @@
 format: md
 title: "如何在App启动时让各种权限弹窗的申请自动弹出"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-92
+upstream_id: FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-92
+last_sync: 2026-06-07
+sync_hash: c6684af6
 ---
-
-
 将requestPermissionsFromUser接口放到EntryAbility.ets文件的loadContent回调中，参考代码如下：
 
 ```

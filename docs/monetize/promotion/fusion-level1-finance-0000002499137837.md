@@ -3,6 +3,10 @@ title: "财务管理"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/fusion-level1-finance-0000002499137837
 format: md
+upstream_id: monetize/promotion/fusion-level1-finance-0000002499137837
+last_sync: 2026-06-07
+sync_hash: a33f2ca0
+upstream_hash: 10c370495394
 ---
 
 # 财务管理

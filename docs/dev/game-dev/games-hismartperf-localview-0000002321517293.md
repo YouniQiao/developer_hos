@@ -2,9 +2,10 @@
 title: "本地查看"
 original_url: /docs/dev/game-dev/games-hismartperf-localview-0000002321517293
 format: md
+upstream_id: dev/game-dev/games-hismartperf-localview-0000002321517293
+last_sync: 2026-06-07
+sync_hash: 778e8b02
 ---
-
-
 测试报告生成并保存到本地后，支持在报告列表中点击并在报告详情页查看相关数据。
 
 1. 在主界面右侧点击“测试报告”进入报告列表页面。

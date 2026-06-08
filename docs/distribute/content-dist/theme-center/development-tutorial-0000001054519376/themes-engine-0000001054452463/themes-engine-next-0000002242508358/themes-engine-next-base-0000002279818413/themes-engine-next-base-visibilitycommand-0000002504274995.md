@@ -3,9 +3,10 @@ title: "命令：可见性命令&lt;VisibilityCommand&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-visibilitycommand-0000002504274995
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-visibilitycommand-0000002504274995
+last_sync: 2026-06-07
+sync_hash: ef88f5a9
 ---
-
-
 # 命令：可见性命令&lt;VisibilityCommand&gt;
 
 ## 功能概述

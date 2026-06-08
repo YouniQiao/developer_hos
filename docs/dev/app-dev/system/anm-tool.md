@@ -2,9 +2,10 @@
 title: "anm工具"
 original_url: /docs/dev/app-dev/system/anm-tool
 format: md
+upstream_id: dev/app-dev/system/anm-tool
+last_sync: 2026-06-07
+sync_hash: 6557f0b0
 ---
-
-
 Advanced Notification Manager（通知管理工具，简称anm）是实现通知打印、设置通知参数等功能的工具，为开发者提供基本的通知调试和测试能力，例如打印已发布通知详细信息、设置通知缓存个数、使能通知等。
 
 ## 环境要求

@@ -2,9 +2,10 @@
 title: "在DevEco Studio中开发"
 original_url: /docs/dev/atomic-dev/ascf/use-ide/use-ide
 format: md
+upstream_id: dev/atomic-dev/ascf/use-ide/use-ide
+last_sync: 2026-06-07
+sync_hash: f708191d
 ---
-
-
 * **[全新创建ASCF项目](/docs/dev/atomic-dev/ascf/use-ide/create-ascf-project)**
 * **[导入小程序资源](/docs/dev/atomic-dev/ascf/use-ide/convert-atomic-service-resources)**
 * **[编译元服务](/docs/dev/atomic-dev/ascf/use-ide/compile-atomic-service)**

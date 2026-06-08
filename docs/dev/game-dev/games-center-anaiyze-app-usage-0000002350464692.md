@@ -3,9 +3,10 @@ title: "分发分析"
 original_url: /docs/dev/game-dev/games-center-anaiyze-app-usage-0000002350464692
 has_merged_cells: true
 format: md
+upstream_id: dev/game-dev/games-center-anaiyze-app-usage-0000002350464692
+last_sync: 2026-06-07
+sync_hash: a6006299
 ---
-
-
 您可以在“分发分析”页签下查看HarmonyOS应用的使用情况数据：
 
 通过“[下载安装](#section14231122115416)”、“[游戏新增与留存](#section53361428183912)”、“[用户分析](#section3905133110302)”衡量用户安装及持续使用HarmonyOS应用的情况。

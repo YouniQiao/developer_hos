@@ -2,9 +2,10 @@
 title: "mk转换CMake（可选）"
 original_url: /docs/dev/game-dev/games-2dx-mk-convert-cmake-0000002296283530
 format: md
+upstream_id: dev/game-dev/games-2dx-mk-convert-cmake-0000002296283530
+last_sync: 2026-06-07
+sync_hash: 169708e8
 ---
-
-
 HarmonyOS 5.0及以上工程使用Deveco Studio进行开发，以Hvigor作为构建工具，其C++部分通过CMake构建。如果当前游戏工程已经使用CMake构建，可跳过本章节。
 
 如果游戏当前的Android工程使用Android.mk构建，在进行HarmonyOS 5.0及以上的系统的适配时需要自行生成CMake构建文件。为了减少工作量，可以基于Android的构建逻辑生成HarmonyOS 5.0及以上的构建文件。您可以使用我们提供的CMake**转换工具**进行构建。

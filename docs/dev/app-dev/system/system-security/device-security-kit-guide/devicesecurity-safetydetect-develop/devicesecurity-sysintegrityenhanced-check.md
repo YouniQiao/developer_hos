@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "系统完整性增强检测"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-safetydetect-develop/devicesecurity-sysintegrityenhanced-check
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-safetydetect-develop/devicesecurity-sysintegrityenhanced-check
+last_sync: 2026-06-07
+sync_hash: 3b6d13b1
 ---
-
-
 ## 场景介绍
 
 应用通过调用Device Security Kit的checkSysIntegrityEnhanced接口获取系统完整性增强检测结果，用于判断设备环境是否安全，比如是否被越狱、非真实设备等。

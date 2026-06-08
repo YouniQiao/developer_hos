@@ -2,9 +2,10 @@
 title: "安全摄像头场景"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-taas-dev/devicesecurity-taas-securecamera
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-taas-dev/devicesecurity-taas-securecamera
+last_sync: 2026-06-07
+sync_hash: 9c083028
 ---
-
-
 ## 场景介绍
 
 在安全摄像头场景中，通过创建证明密钥、打开证明会话的方式，对安全摄像头捕捉到的图像数据进行签名，确保图像数据的真实性和完整性。

@@ -3,8 +3,10 @@ title: "管理素材库"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-material-library-manage-0000001399525717
 format: md
+upstream_id: monetize/promotion/bp-functions-material-library-manage-0000001399525717
+last_sync: 2026-06-07
+sync_hash: 0c731f6b
 ---
-
 # 管理素材库
 
 素材库内素材支持删除、修改名称、预览等操作，请参考如下操作进行管理。

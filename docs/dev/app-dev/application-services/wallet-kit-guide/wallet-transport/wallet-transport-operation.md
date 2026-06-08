@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "交通卡开通"
 original_url: /docs/dev/app-dev/application-services/wallet-kit-guide/wallet-transport/wallet-transport-operation
 format: md
+upstream_id: dev/app-dev/application-services/wallet-kit-guide/wallet-transport/wallet-transport-operation
+last_sync: 2026-06-07
+sync_hash: 3a42fcd1
 ---
-
-
 交通卡的开通过程分为：获取卡片开通入口、确认卡片是否支持添加、生成并支付订单和完成开卡四个步骤，整体流程如下图，相关接口定义请参考[钱包服务API](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wallet-wallettransitcard)。
 
 ![](./img/63592b1c.png)

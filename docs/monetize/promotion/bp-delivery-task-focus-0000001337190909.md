@@ -3,8 +3,10 @@ title: "投放焦点展台任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-task-focus-0000001337190909
 format: md
+upstream_id: monetize/promotion/bp-delivery-task-focus-0000001337190909
+last_sync: 2026-06-07
+sync_hash: adb294d6
 ---
-
 # 投放焦点展台任务
 
 ## 背景信息

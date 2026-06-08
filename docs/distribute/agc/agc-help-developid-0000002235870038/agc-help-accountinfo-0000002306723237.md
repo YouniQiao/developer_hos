@@ -2,9 +2,10 @@
 title: "管理开发者账号"
 original_url: /docs/distribute/agc/agc-help-developid-0000002235870038/agc-help-accountinfo-0000002306723237
 format: md
+upstream_id: distribute/agc/agc-help-developid-0000002235870038/agc-help-accountinfo-0000002306723237
+last_sync: 2026-06-07
+sync_hash: 41c5503a
 ---
-
-
 如果您需要更新自己的华为开发者账号信息，可以通过AppGallery Connect进行更改。
 
 #### 查看和编辑个人信息

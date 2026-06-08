@@ -3,9 +3,10 @@ title: "内存分析介绍"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-insight-session-allocations-memory
 format: md
+upstream_id: tools/coding-debug/ide-insight-session-allocations-memory
+last_sync: 2026-06-07
+sync_hash: 7168dab8
 ---
-
-
 # 内存分析介绍
 
 应用在开发过程中，可能因API使用错误、变量未及时释放、异常频繁创建/释放内存等情况引发各种内存问题。

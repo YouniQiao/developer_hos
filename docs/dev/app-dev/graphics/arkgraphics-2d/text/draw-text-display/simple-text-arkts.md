@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "简单文本绘制与显示（ArkTS）"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/text/draw-text-display/simple-text-arkts
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/text/draw-text-display/simple-text-arkts
+last_sync: 2026-06-07
+sync_hash: 0b4f22c0
 ---
-
-
 ## 场景介绍
 
 在一个简单的用户界面中，可能只需要展示几行静态文本，例如标签、按钮上的文字、菜单项或状态栏中的提示信息。此时，开发者只需要选择合适的字体、大小和颜色即可完成渲染。

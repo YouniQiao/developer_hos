@@ -3,8 +3,10 @@ title: 汽车类
 sidebar_label: 汽车类
 original_url: /docs/design/app-design-practices/cars
 format: md
+upstream_id: design/app-design-practices/cars
+last_sync: 2026-06-07
+sync_hash: 0acfee67
 ---
-
 # 汽车类
 
 汽车类应用主要包括首页、汽车详情、3D 看车、车辆对比等核心的应用场景。在此类场景中，用户能够选择其感兴趣的汽车品牌和其车型，在页面中观看各种参数、配件、功能等，甚至还能看 3D 汽车模型或者是更换喜欢的配色进行观察。此类应用旨在让用户在选车看车时，使用大屏设备有更优的体验。

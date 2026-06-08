@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取目录列表"
 original_url: /docs/dev/app-dev/application-services/reader-kit-guide/reader-parser/reader-catalog-list
 format: md
+upstream_id: dev/app-dev/application-services/reader-kit-guide/reader-parser/reader-catalog-list
+last_sync: 2026-06-07
+sync_hash: b93012c9
 ---
-
-
 当应用需要展示书籍目录列表时，开发者可通过解析能力获取目录节点列表，实现目录列表中章节名称按顺序、层级的展示。当用户点击目录节点时，开发者也需要获取目录位置及资源信息，用于跳转到指定位置。
 
 ## 业务流程

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "证书CMS签名"
 original_url: /docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-cms-sign-object
 format: md
+upstream_id: dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-cms-sign-object
+last_sync: 2026-06-07
+sync_hash: d57e43a8
 ---
-
-
 从API 18开始，支持证书CMS签名。
 
 从API 22开始，支持证书CMS封装。

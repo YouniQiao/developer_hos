@@ -3,9 +3,10 @@ title: "@performance/hp-arkts-no-use-any-export-current"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hp-arkts-no-use-any-export-current
 format: md
+upstream_id: tools/coding-debug/ide-hp-arkts-no-use-any-export-current
+last_sync: 2026-06-07
+sync_hash: 72c329f5
 ---
-
-
 # @performance/hp-arkts-no-use-any-export-current
 
 避免使用export \* 导出当前module中定义的类型和数据。

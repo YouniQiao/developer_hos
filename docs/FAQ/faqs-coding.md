@@ -2,9 +2,10 @@
 format: md
 title: "代码编辑"
 original_url: /docs/FAQ/faqs-coding
+upstream_id: FAQ/faqs-coding
+last_sync: 2026-06-07
+sync_hash: 35fc18b5
 ---
-
-
 * **[编辑器自动联想、跳转等功能失效](/docs/FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-1)**
 * **[DevEco Studio中是否有一键检查未引用资源的功能](/docs/FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-2)**
 * **[在DevEco Studio中提交代码时，如何自动格式化修改过的代码](/docs/FAQ/faqs-deveco-studio/faqs-coding/faqs-coding-3)**

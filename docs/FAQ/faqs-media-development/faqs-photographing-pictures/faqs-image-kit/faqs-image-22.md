@@ -2,9 +2,10 @@
 title: "如何从图库选择图片并上传到服务器"
 original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-22
 format: md
+upstream_id: FAQ/faqs-media-development/faqs-photographing-pictures/faqs-image-kit/faqs-image-22
+last_sync: 2026-06-07
+sync_hash: 03596870
 ---
-
-
 上传图片到服务器需要申请网络权限：ohos.permission.INTERNET。
 
 从图库选择图片并上传到服务器，可参考以下示例代码。

@@ -3,8 +3,10 @@ title: 应用图标
 sidebar_label: 应用图标
 original_url: /docs/design/general-design-basics/visual-design/app-icon
 format: md
+upstream_id: design/general-design-basics/visual-design/app-icon
+last_sync: 2026-06-07
+sync_hash: 680ca4ad
 ---
-
 # 应用图标
 
 应用图标设计的核心是简洁、高效和品牌识别度。一个好的图标可以准确传达应用相关信息，也可以帮助用户快速定位你的应用。HarmonyOS NEXT图标设计旨在回归本源，通过现代化的语义表达，准确传达功能、服务和品牌。视觉上兼顾美观性和识别性；形式上兼收并蓄，和而不同。如果你需要一些图标设计的帮助，我们提供了相关的设计模版资源，请参阅[设计模板和资源](#section152211481332)。

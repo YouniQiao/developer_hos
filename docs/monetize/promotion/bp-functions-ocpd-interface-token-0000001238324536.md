@@ -3,8 +3,10 @@ title: "获取Token"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-ocpd-interface-token-0000001238324536
 format: md
+upstream_id: monetize/promotion/bp-functions-ocpd-interface-token-0000001238324536
+last_sync: 2026-06-07
+sync_hash: 373aebae
 ---
-
 # 获取Token
 
 ## 功能介绍

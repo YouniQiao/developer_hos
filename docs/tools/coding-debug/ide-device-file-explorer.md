@@ -3,9 +3,10 @@ title: "访问设备文件"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-device-file-explorer
 format: md
+upstream_id: tools/coding-debug/ide-device-file-explorer
+last_sync: 2026-06-07
+sync_hash: 9e9e86ab
 ---
-
-
 # 访问设备文件
 
 开发者可以使用Device File Browser，在DevEco Studio上如PC端操作一样，对设备文件进行新建、删除、上传、下载等操作，而无需使用命令行，提升开发效率，当前支持普通文件视图与应用沙箱视图两种模式。

@@ -2,9 +2,10 @@
 title: "使用Web组件的下载能力"
 original_url: /docs/dev/app-dev/application-framework/arkweb/web-manage-upload-download/web-download
 format: md
+upstream_id: dev/app-dev/application-framework/arkweb/web-manage-upload-download/web-download
+last_sync: 2026-06-07
+sync_hash: 07cd9316
 ---
-
-
 当需要通过Web页面进行文件下载时，可以通过此方式调用Web接口。
 
 ## 监听页面触发的下载

@@ -2,9 +2,10 @@
 title: "使用Node-API接口进行异步任务开发"
 original_url: /docs/dev/ndk-dev/use-napi-asynchronous-task
 format: md
+upstream_id: dev/ndk-dev/use-napi-asynchronous-task
+last_sync: 2026-06-07
+sync_hash: cd0942d2
 ---
-
-
 ## 场景介绍
 
 [napi\_create\_async\_work](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/napi#napi_create_async_work)是Node-API接口之一，用于创建一个异步工作对象。在需要执行耗时操作的场景中使用，避免阻塞env所在的ArkTS线程，确保应用程序的性能和响应速度。例如以下场景：

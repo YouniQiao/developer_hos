@@ -2,9 +2,10 @@
 title: "应用数据备份恢复验证指导"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-dataclone
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-dataclone
+last_sync: 2026-06-07
+sync_hash: 57de9a5b
 ---
-
-
 为方便开发者验证[应用接入数据备份恢复](/docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-file-backup-extension)结果，此篇指南介绍了在鸿蒙设备上通过数据克隆应用触发数据备份恢复，以及常见问题说明。
 
 ## 环境准备

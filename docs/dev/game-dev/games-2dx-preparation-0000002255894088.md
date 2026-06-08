@@ -2,9 +2,10 @@
 title: "适配准备"
 original_url: /docs/dev/game-dev/games-2dx-preparation-0000002255894088
 format: md
+upstream_id: dev/game-dev/games-2dx-preparation-0000002255894088
+last_sync: 2026-06-07
+sync_hash: 1220c70e
 ---
-
-
 ## 引擎适配准备
 
 1. 访问Cocos2d-x的[GitHub页面](https://github.com/cocos2d/cocos2d-x/) ，选择合适的HarmonyOS 5.0及以上版本的引擎分支，可以通过git clone命令来获取。

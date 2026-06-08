@@ -2,9 +2,10 @@
 title: "常见问题与异常处理"
 original_url: /docs/dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/app-data-migration-faqs
 format: md
+upstream_id: dev/app-dev/application-framework/core-file-kit/app-file/app-file-backup-restore/app-data-migration-guidelines/app-data-migration-faqs
+last_sync: 2026-06-07
+sync_hash: 66b39794
 ---
-
-
 ## 应用数据迁移暂停
 
 **问题现象1**

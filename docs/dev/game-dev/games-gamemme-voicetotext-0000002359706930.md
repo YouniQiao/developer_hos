@@ -2,9 +2,10 @@
 title: "语音转文本"
 original_url: /docs/dev/game-dev/games-gamemme-voicetotext-0000002359706930
 format: md
+upstream_id: dev/game-dev/games-gamemme-voicetotext-0000002359706930
+last_sync: 2026-06-07
+sync_hash: 1f715d2d
 ---
-
-
 * **[概述](/docs/dev/game-dev/games-gamemme-voicetotext-overview-0000002394130049)**
 * **[HarmonyOS 5.0及以上](/docs/dev/game-dev/games-gamemme-voicetotext-harmonyos-0000002338511705)**
 * **[JS（小游戏）](/docs/dev/game-dev/games-gamemme-voicetotext-minigame-0000002393227189)**

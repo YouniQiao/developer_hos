@@ -2,9 +2,10 @@
 title: "视效"
 original_url: /docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-visual-effect
 format: md
+upstream_id: dev/app-dev/application-framework/ui-design-kit-guide/ui-design-visual-effect
+last_sync: 2026-06-07
+sync_hash: a7a44318
 ---
-
-
 * **[点光源效果](/docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-visual-effect/ui-design-visual-effect-point-light)**
 * **[按压阴影](/docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-visual-effect/ui-design-visual-effect-background-color)**
 * **[双边边缘流光](/docs/dev/app-dev/application-framework/ui-design-kit-guide/ui-design-visual-effect/ui-design-visual-effect-double-edge-streamer)**

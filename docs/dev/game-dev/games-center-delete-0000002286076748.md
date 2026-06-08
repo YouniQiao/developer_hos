@@ -2,9 +2,10 @@
 title: "删除数字商品"
 original_url: /docs/dev/game-dev/games-center-delete-0000002286076748
 format: md
+upstream_id: dev/game-dev/games-center-delete-0000002286076748
+last_sync: 2026-06-07
+sync_hash: 869b088b
 ---
-
-
 如果您想将冗余的商品从商品列表中去除，您可以选择删除该商品。
 
 ![](./img/e8d85fff.png)

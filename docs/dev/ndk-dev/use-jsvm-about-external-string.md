@@ -2,9 +2,10 @@
 title: "使用JSVM-API接口提供Latin1/UTF16格式字符串相关开发"
 original_url: /docs/dev/ndk-dev/use-jsvm-about-external-string
 format: md
+upstream_id: dev/ndk-dev/use-jsvm-about-external-string
+last_sync: 2026-06-07
+sync_hash: 5bbc8311
 ---
-
-
 ## 简介
 
 JSVM-API中新增创建和使用外部字符串的接口。

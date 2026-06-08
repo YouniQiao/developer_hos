@@ -2,9 +2,10 @@
 title: "自定义关系"
 original_url: /docs/dev/game-dev/pgd-relation-definition-0000002498341248
 format: md
+upstream_id: dev/game-dev/pgd-relation-definition-0000002498341248
+last_sync: 2026-06-07
+sync_hash: 38c350a6
 ---
-
-
 IGenericRelation和IEntityRelation两个关系接口，可自行选择实现。
 
 * 实现IGenericRelation定义的关系对应的关系目标没有强制要求。

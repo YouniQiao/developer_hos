@@ -2,9 +2,10 @@
 title: "UI相关应用崩溃常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-stability/arkts-stability-crash-issues
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-stability/arkts-stability-crash-issues
+last_sync: 2026-06-07
+sync_hash: 150506c6
 ---
-
-
 本文档收集整理了一些常见的会导致应用崩溃的ArkUI API错误用法，旨在帮助开发者了解这些会导致应用崩溃问题的错误用法，从而避免在实际应用开发过程中犯类似错误。
 
 ## OH\_NativeXComponent注册的回调函数对象被提前释放

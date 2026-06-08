@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用RSA非对称密钥分段加解密(ArkTS)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-rsa-asym-encrypt-decrypt-by-segment
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-dev/crypto-rsa-asym-encrypt-decrypt-by-segment
+last_sync: 2026-06-07
+sync_hash: 560eeefc
 ---
-
-
 对应的算法规格请查看[非对称密钥加解密算法规格：RSA](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-encryption-decryption/crypto-encrypt-decrypt-spec/crypto-asym-encrypt-decrypt-spec#rsa)。
 
 **加密**

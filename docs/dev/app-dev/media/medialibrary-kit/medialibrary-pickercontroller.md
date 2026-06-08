@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用PickerController将编辑后的图片替换原图"
 original_url: /docs/dev/app-dev/media/medialibrary-kit/medialibrary-pickercontroller
 format: md
+upstream_id: dev/app-dev/media/medialibrary-kit/medialibrary-pickercontroller
+last_sync: 2026-06-07
+sync_hash: 3f73165c
 ---
-
-
 ## 替换PhotoPicker中显示的图片/视频
 
 应用可获得用户从Picker选择的图片、视频的访问权限，读取图片、视频后进行编辑、修改。完成编辑修改后的图片/视频缓存到应用沙箱后，可调用本API，将编辑结果文件发送给PhotoPicker，并指定替换显示的原图。Picker根据指定将接收的编辑结果文件替换原图片进行显示。

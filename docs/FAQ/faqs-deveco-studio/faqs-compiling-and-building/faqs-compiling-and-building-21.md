@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“Failed to generate test project build system”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-21
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-21
+last_sync: 2026-06-07
+sync_hash: 88c2c640
 ---
-
-
 **问题现象**
 
 执行多模块Native模块构建时，出现“Failed to generate test project build system.”错误信息。

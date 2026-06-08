@@ -2,9 +2,10 @@
 title: "ArkTS卡片提供方开发指导"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget
 format: md
+upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget
+last_sync: 2026-06-07
+sync_hash: e6a33e1c
 ---
-
-
 * **[ArkTS卡片UI界面开发](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-page)**
 * **[ArkTS卡片页面刷新](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-interaction)**
 * **[ArkTS卡片页面交互](/docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget/arkts-ui-widget-event)**

@@ -3,9 +3,10 @@ title: "查看AppFreeze（应用冻屏）日志"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-faultlog-appfreeze
 format: md
+upstream_id: tools/coding-debug/ide-faultlog-appfreeze
+last_sync: 2026-06-07
+sync_hash: d7019594
 ---
-
-
 # 查看AppFreeze（应用冻屏）日志
 
 从DevEco Studio 6.0.0 Beta2版本开始，支持对AppFreeze类型的FaultLog，进行结构化展示和日志过滤。关于AppFreeze日志的检测原理、日志规格等信息请查看[AppFreeze（应用冻屏）检测](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/appfreeze-guidelines)。

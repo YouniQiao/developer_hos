@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "使用Image_NativeModule编辑图片Exif信息"
 original_url: /docs/dev/app-dev/media/image-kit/image-native/image-editing-c/image-tool-c
 format: md
+upstream_id: dev/app-dev/media/image-kit/image-native/image-editing-c/image-tool-c
+last_sync: 2026-06-07
+sync_hash: c8186798
 ---
-
-
 Image Kit提供图片Exif信息的读取与编辑能力。
 
 Exif（Exchangeable image file format）是专门为数码相机的照片设定的文件格式，可以记录数码照片的属性信息和拍摄数据。当前支持JPEG、PNG、HEIF、WEBP23+、DNG23+格式，且需要图片包含Exif信息。

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "SSAP服务端"
 original_url: /docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-ssap-connect/nearlink-ssap-server-connect
 format: md
+upstream_id: dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-ssap-connect/nearlink-ssap-server-connect
+last_sync: 2026-06-07
+sync_hash: 833bb3be
 ---
-
-
 提供SSAP（SparkLink Service Access Protocol）服务端相关的连接、数据传输和服务管理功能。
 
 ![](./img/2814c73f.png)

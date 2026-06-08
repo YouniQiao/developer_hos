@@ -2,9 +2,10 @@
 title: "感知和调整认证过程"
 original_url: /docs/dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/perceive-adjust-authentication-process
 format: md
+upstream_id: dev/app-dev/system/system-security/user-authentication-kit/user-authentication-dev/perceive-adjust-authentication-process
+last_sync: 2026-06-07
+sync_hash: 99a70dcf
 ---
-
-
 从API version 20开始，在应用发起身份认证时，可通过接口调整认证过程，以及感知认证过程。
 
 调整认证过程：应用发起认证时通过[AuthParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-useriam-userauth#authparam10)参数的skipLockedBiometricAuth属性控制是否跳过已禁用的生物认证。

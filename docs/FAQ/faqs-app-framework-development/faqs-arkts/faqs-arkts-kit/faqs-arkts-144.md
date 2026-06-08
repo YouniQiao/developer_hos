@@ -2,9 +2,10 @@
 format: md
 title: "ArkTS类型转换方法，除了使用as是否有其他方法"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-144
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-kit/faqs-arkts-144
+last_sync: 2026-06-07
+sync_hash: bd2df4d3
 ---
-
-
 **问题描述**
 
 一个any对象，用as转换成一个具体的Class，但实际上并不一定是这个Class，后续直接调用这个指针会触发崩溃。有没有更安全的类型转换方法？

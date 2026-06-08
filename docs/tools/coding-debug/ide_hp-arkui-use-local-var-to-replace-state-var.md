@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-use-local-var-to-replace-state-var"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-use-local-var-to-replace-state-var
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-use-local-var-to-replace-state-var
+last_sync: 2026-06-07
+sync_hash: 9e422593
 ---
-
-
 # @performance/hp-arkui-use-local-var-to-replace-state-var
 
 т╗║У««Сй┐ућеСИ┤ТЌХтЈўжЄЈТЏ┐ТЇбуіХТђЂтЈўжЄЈсђѓ

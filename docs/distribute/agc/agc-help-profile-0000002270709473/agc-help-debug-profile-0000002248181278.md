@@ -2,14 +2,15 @@
 title: "申请调试Profile"
 original_url: /docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278
 format: md
+upstream_id: distribute/agc/agc-help-profile-0000002270709473/agc-help-debug-profile-0000002248181278
+last_sync: 2026-06-07
+sync_hash: ac875d70
 ---
-
-
 ![](../img/agc-help-debug-profile-0000002248181278_0.png)
 
 申请ACL权限的入口已调整至项目下的“ACL权限”页签，创建Profile时仅支持添加已获取的ACL权限。如需使用ACL权限，请先参考[申请ACL权限](/docs/distribute/agc/agc-help-acl-0000002427651937/agc-help-apply-acl-0000002394212138)获取ACL权限，再创建Profile。
 
-在调试阶段，如果您需要使用手动签名，必须配置调试Profile。请参考本文档申请并下载调试Profile，手动签名的完整操作请参考[配置调试签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)。
+在调试阶段，如果您需要使用手动签名，必须配置调试Profile。请参考本文档申请并下载调试Profile，手动签名的完整操作请参考[配置调试签名](/docs/tools/coding-debug/ide-signing#section297715173233)。
 
 ![](../img/agc-help-debug-profile-0000002248181278_1.png)
 

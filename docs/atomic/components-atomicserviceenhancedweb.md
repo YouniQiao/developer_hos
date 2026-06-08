@@ -2,9 +2,10 @@
 title: "AtomicServiceEnhancedWeb组件参考"
 original_url: /docs/dev/atomic-dev/atomic-web-development/components-atomicserviceenhancedweb
 format: md
+upstream_id: dev/atomic-dev/atomic-web-development/components-atomicserviceenhancedweb
+last_sync: 2026-06-07
+sync_hash: 5654407a
 ---
-
-
 为开发者提供满足定制化诉求的Web高阶组件，屏蔽ArkWeb组件中无需关注的接口，并提供JS扩展能力。
 
 ![](./img/dc5a8d4c.png)

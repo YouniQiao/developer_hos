@@ -2,9 +2,10 @@
 title: "电量"
 original_url: /docs/dev/atomic-dev/ascf/apis-device/apis-battery-info
 format: md
+upstream_id: dev/atomic-dev/ascf/apis-device/apis-battery-info
+last_sync: 2026-06-07
+sync_hash: 04dd930b
 ---
-
-
 ## has.getBatteryInfoSync
 
 has.getBatteryInfoSync(): Object

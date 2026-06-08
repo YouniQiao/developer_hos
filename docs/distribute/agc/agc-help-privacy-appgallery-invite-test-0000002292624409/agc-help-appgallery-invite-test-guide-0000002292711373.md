@@ -2,9 +2,10 @@
 title: "测试流程"
 original_url: /docs/distribute/agc/agc-help-privacy-appgallery-invite-test-0000002292624409/agc-help-appgallery-invite-test-guide-0000002292711373
 format: md
+upstream_id: distribute/agc/agc-help-privacy-appgallery-invite-test-0000002292624409/agc-help-appgallery-invite-test-guide-0000002292711373
+last_sync: 2026-06-07
+sync_hash: eac0c70b
 ---
-
-
 您可以将应用上架至华为应用市场，然后通过邮件或邀请码的形式，选择特定用户群组来测试您的应用。具体测试流程如下：
 
 **第一步：[创建测试群组](/docs/distribute/agc/agc-help-privacy-appgallery-invite-test-0000002292624409/agc-help-appgallery-create-testgroup-0000002258071216)**

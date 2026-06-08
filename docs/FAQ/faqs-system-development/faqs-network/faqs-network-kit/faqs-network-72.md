@@ -2,8 +2,11 @@
 format: md
 title: "多种网络同时连接时如何优先使用wifi网络"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-72
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-72
+last_sync: 2026-06-07
+sync_hash: 443b4025
+upstream_hash: 38e140a9c28c
 ---
-
 
 **问题现象**
 

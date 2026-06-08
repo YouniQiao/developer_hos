@@ -3,8 +3,10 @@ title: 文本框
 sidebar_label: 文本框
 original_url: /docs/design/components/input-components/text-input
 format: md
+upstream_id: design/components/input-components/text-input
+last_sync: 2026-06-07
+sync_hash: 8817cada
 ---
-
 # 文本框
 
 文本框允许用户输入文本、选择文本。支持输入文本、数字或者混合格式的数据。单行文本输入类组件相关能力请参考 [TextInput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput) 文档，多行场景请参考 [TextArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textarea) 文档。

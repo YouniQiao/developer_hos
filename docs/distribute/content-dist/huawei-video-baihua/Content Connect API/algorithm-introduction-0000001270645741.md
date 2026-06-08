@@ -3,8 +3,11 @@ title: "算法介绍"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/huawei-video-baihua/Content Connect API/algorithm-introduction-0000001270645741
 format: md
+upstream_id: distribute/content-dist/huawei-video-baihua/Content Connect API/algorithm-introduction-0000001270645741
+last_sync: 2026-06-07
+sync_hash: e78d6bf4
+upstream_hash: 86e668e69c00
 ---
-
 
 # 算法介绍
 

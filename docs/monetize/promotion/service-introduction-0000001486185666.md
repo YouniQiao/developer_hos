@@ -3,8 +3,10 @@ title: "业务介绍"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/service-introduction-0000001486185666
 format: md
+upstream_id: monetize/promotion/service-introduction-0000001486185666
+last_sync: 2026-06-07
+sync_hash: e36450b1
 ---
-
 # 业务介绍
 
 ## 简介

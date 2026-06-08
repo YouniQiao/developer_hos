@@ -2,9 +2,10 @@
 title: "语言类型"
 original_url: /docs/distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-langtype-0000002236041558
 format: md
+upstream_id: distribute/agc/agc-help-connect-api-appendix-0000002271000741/agc-help-connect-api-appendix-langtype-0000002236041558
+last_sync: 2026-06-07
+sync_hash: 6e9cbf83
 ---
-
-
 | 语言代码 | 语言描述 |
 | --- | --- |
 | ar | Arabic |

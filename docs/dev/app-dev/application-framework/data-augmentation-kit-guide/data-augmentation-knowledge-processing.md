@@ -2,9 +2,10 @@
 title: "知识加工"
 original_url: /docs/dev/app-dev/application-framework/data-augmentation-kit-guide/data-augmentation-knowledge-processing
 format: md
+upstream_id: dev/app-dev/application-framework/data-augmentation-kit-guide/data-augmentation-knowledge-processing
+last_sync: 2026-06-07
+sync_hash: 7ff24ac6
 ---
-
-
 知识加工是指根据实际业务数据生成知识库的能力，主要包含以下两个方面：
 
 * 通过配置schema生成知识加工的产物（如倒排表、向量库、向量表），这些产物最终用于知识问答过程中的检索。schema的配置应基于实际业务使用的数据库及数据表结构。知识加工和检索对中文处理进行了优化，因此中文问答的效果优于英文。

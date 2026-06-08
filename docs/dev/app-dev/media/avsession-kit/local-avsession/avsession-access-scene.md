@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "应用接入AVSession场景介绍"
 original_url: /docs/dev/app-dev/media/avsession-kit/local-avsession/avsession-access-scene
 format: md
+upstream_id: dev/app-dev/media/avsession-kit/local-avsession/avsession-access-scene
+last_sync: 2026-06-07
+sync_hash: 1d051453
 ---
-
-
 音视频应用在实现音视频功能的同时，需要接入媒体会话即AVSession Kit，下文将提供一些典型的接入AVSession的展示和控制场景，方便开发者根据场景进行适配。
 
 对于不同的场景，将会在系统的播控中心看到不同的UI呈现。同时，在不同的场景下，应用的接入处理也需要遵循不同的规范约束。

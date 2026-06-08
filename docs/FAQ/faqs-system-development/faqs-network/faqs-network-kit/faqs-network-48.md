@@ -2,9 +2,10 @@
 title: "如何实现http长连接"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-48
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-48
+last_sync: 2026-06-07
+sync_hash: 318a7768
 ---
-
-
 可使用定时HTTP请求模拟长连接。参考代码如下：
 
 ```

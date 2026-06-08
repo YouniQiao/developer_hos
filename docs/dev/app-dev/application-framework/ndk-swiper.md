@@ -2,9 +2,10 @@
 title: "使用滑块视图容器 (Swiper)"
 original_url: /docs/dev/app-dev/application-framework/ndk-swiper
 format: md
+upstream_id: dev/app-dev/application-framework/ndk-swiper
+last_sync: 2026-06-07
+sync_hash: c7f67749
 ---
-
-
 ## 概述
 
 ArkUI开发框架支持在NDK接口使用滑块视图容器Swiper，提供子组件滑动轮播显示的能力。本文介绍NDK接口的开发指导，ArkTS指南请参考[创建轮播 (Swiper)](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-media-display/arkts-layout-development-create-looping)。

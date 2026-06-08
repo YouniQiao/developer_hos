@@ -2,9 +2,10 @@
 title: "集成SDK"
 original_url: /docs/dev/game-dev/gameobe-integratingsdk-js-0000002361670432
 format: md
+upstream_id: dev/game-dev/gameobe-integratingsdk-js-0000002361670432
+last_sync: 2026-06-07
+sync_hash: 537548dc
 ---
-
-
 使用联机对战服务相关功能，必须集成联机对战SDK。
 
 ## 开发准备

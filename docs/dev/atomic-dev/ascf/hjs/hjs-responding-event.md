@@ -2,9 +2,10 @@
 title: "响应事件"
 original_url: /docs/dev/atomic-dev/ascf/hjs/hjs-responding-event
 format: md
+upstream_id: dev/atomic-dev/ascf/hjs/hjs-responding-event
+last_sync: 2026-06-07
+sync_hash: 05210ba1
 ---
-
-
 在页面上频繁交互时，为了减少逻辑层和视图层的通信次数，使用hjs函数用来直接响应页面事件。响应事件代码可以编写在hxml文件中的\&lt;hjs\&gt;标签内，也可以单独写在.hjs文件内。
 
 ## getComputedStyle

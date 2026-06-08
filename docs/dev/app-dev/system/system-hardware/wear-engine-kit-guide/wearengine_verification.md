@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "调测验证"
 original_url: /docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_verification
 format: md
+upstream_id: dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_verification
+last_sync: 2026-06-07
+sync_hash: 9079953c
 ---
-
-
 按照预置条件进行分类。
 
 **预置条件一：**

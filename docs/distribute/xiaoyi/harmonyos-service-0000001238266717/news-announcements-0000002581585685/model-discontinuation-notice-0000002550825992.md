@@ -3,9 +3,10 @@ title: "大模型下线通知"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/harmonyos-service-0000001238266717/news-announcements-0000002581585685/model-discontinuation-notice-0000002550825992
 format: md
+upstream_id: distribute/xiaoyi/harmonyos-service-0000001238266717/news-announcements-0000002581585685/model-discontinuation-notice-0000002550825992
+last_sync: 2026-06-07
+sync_hash: 2b3c1133
 ---
-
-
 # 大模型下线通知
 
 ## 概述

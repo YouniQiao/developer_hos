@@ -3,9 +3,10 @@ title: "预约有奖"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-reservation-0000001657694701
 format: md
+upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-reservation-0000001657694701
+last_sync: 2026-06-07
+sync_hash: 80b92896
 ---
-
-
 # 预约有奖
 
 为了提升用户预约量，您可以创建预约有奖活动。在活动期间，首次预约游戏的用户有机会获得奖励。

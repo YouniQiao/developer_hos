@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "获取网格扫描信息（ArkTS）"
 original_url: /docs/dev/app-dev/graphics/ar-engine-kit-guide/get-mesh/arengine-get-mesh
 format: md
+upstream_id: dev/app-dev/graphics/ar-engine-kit-guide/get-mesh/arengine-get-mesh
+last_sync: 2026-06-07
+sync_hash: c4f608a1
 ---
-
-
 本章节给出了关键开发步骤，完整代码可以参考[示例代码](https://gitcode.com/HarmonyOS_Samples/arengine_samplecode_clientdemo_arkts)。
 
 ## 约束与限制

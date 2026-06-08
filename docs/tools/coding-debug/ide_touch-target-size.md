@@ -3,9 +3,10 @@ title: "@cross-device-app-dev/touch-target-size"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_touch-target-size
 format: md
+upstream_id: tools/coding-debug/ide_touch-target-size
+last_sync: 2026-06-07
+sync_hash: 080f55ba
 ---
-
-
 # @cross-device-app-dev/touch-target-size
 
 组件通用属性responseRegion点击热区需满足最小尺寸要求。

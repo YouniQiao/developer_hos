@@ -2,9 +2,10 @@
 title: "门店头图管理"
 original_url: /docs/dev/atomic-dev/instant-service-store/instant-service-store-cover-management
 format: md
+upstream_id: dev/atomic-dev/instant-service-store/instant-service-store-cover-management
+last_sync: 2026-06-07
+sync_hash: b7364b56
 ---
-
-
 在HarmonyOS公域流量场，平台可基于用户地理位置，推荐最近的门店给用户，您需要在此配置及管理头图，用于卡片的推广。
 
 1. 在服务直达主界面，选择 "门店管理" 页签，点击 "门店头图管理"。

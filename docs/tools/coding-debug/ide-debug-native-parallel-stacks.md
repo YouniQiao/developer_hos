@@ -3,9 +3,10 @@ title: "堆栈可视化"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-debug-native-parallel-stacks
 format: md
+upstream_id: tools/coding-debug/ide-debug-native-parallel-stacks
+last_sync: 2026-06-07
+sync_hash: db053752
 ---
-
-
 # 堆栈可视化
 
 在native调试窗口中，点击<strong>Layout Settings</strong>![](./img/zh-cn_image_0000002571546762.png)，勾选<strong>Parallel Stacks</strong>，打开并行栈视图。

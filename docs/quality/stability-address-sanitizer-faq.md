@@ -2,9 +2,10 @@
 title: "适配常见问题"
 original_url: /docs/quality/stability-address-sanitizer-faq
 format: md
+upstream_id: /docs/quality/stability-address-sanitizer-faq
+last_sync: 2026-06-07
+sync_hash: a816fe0b
 ---
-
-
 # 适配常见问题
 
 ## HWASan napi int64转换时存在精度丢失

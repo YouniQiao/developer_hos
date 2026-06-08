@@ -2,9 +2,10 @@
 title: "附录：标准意图接入规范"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-development/insight-intent-access-specifications
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/insight-intent/insight-intent-development/insight-intent-access-specifications
+last_sync: 2026-06-07
+sync_hash: 59eca72f
 ---
-
-
 ## 影音垂域（MediaDomain）
 
 ### 播放视频

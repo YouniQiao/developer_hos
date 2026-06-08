@@ -2,9 +2,10 @@
 title: "应用内状态管理和其他常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-faq/arkts-state-management-faq-application-and-others
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-state-management/arkts-state-management-faq/arkts-state-management-faq-application-and-others
+last_sync: 2026-06-07
+sync_hash: 595b751d
 ---
-
-
 本文将介绍应用内状态管理的常见问题以及其他常见问题。
 
 ## 在并发线程中使用ArkUI装饰器导致报错

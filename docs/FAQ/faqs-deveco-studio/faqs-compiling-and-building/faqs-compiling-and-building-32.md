@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“(is the command line too long?)”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-32
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-32
+last_sync: 2026-06-07
+sync_hash: 2a3c503a
 ---
-
-
 **问题现象**
 
 Native工程编译报错，出现告警和报错信息。

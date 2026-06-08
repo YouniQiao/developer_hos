@@ -2,9 +2,10 @@
 title: "业务概述"
 original_url: /docs/dev/game-dev/games-binary-optimization-introduction-0000002377028317
 format: md
+upstream_id: dev/game-dev/games-binary-optimization-introduction-0000002377028317
+last_sync: 2026-06-07
+sync_hash: adca45a2
 ---
-
-
 |  |  |
 | --- | --- |
 | 为了解决手机游戏中可能存在的响应速度慢、动作不流畅、画面卡顿等性能、功耗问题，华为推出了“二进制优化服务”，该服务主要运用程序的时间/空间局部性原理、结合处理器动态运行信息对C++编译的二进制程序（加壳/加密程序除外）进行优化，优化过程中无需修改任何源码，即可改善程序的CPU性能与功耗。 |  |

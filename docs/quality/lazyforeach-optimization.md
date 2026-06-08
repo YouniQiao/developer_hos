@@ -1,8 +1,10 @@
 ---
 title: "懒加载优化性能"
 original_url: /docs/quality/lazyforeach-optimization
+upstream_id: /docs/quality/lazyforeach-optimization
+last_sync: 2026-06-07
+sync_hash: 5398fdc9
 ---
-
 # 懒加载优化性能
 
 ## 概述
@@ -49,7 +51,7 @@ LazyForEach实现了按需加载，针对列表数据量大、列表组件复杂
 
 ![](./img/4ffffee8.png)
 
-建议开发者优先使用[Code Linter扫描工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)进行代码检查，重点关注[@performance/hp-arkui-no-stringify-in-lazyforeach-key-generator](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide_hp-arkui-no-stringify-lazyforeach-key)规则。若扫描结果中出现该规则相关问题，可参考本章节提供的优化建议进行调整。
+建议开发者优先使用[Code Linter扫描工具](/docs/tools/coding-debug/ide-code-linter)进行代码检查，重点关注[@performance/hp-arkui-no-stringify-in-lazyforeach-key-generator](/docs/tools/coding-debug/ide_hp-arkui-no-stringify-lazyforeach-key)规则。若扫描结果中出现该规则相关问题，可参考本章节提供的优化建议进行调整。
 
 在使用LazyForEach时，我们需要分别实现数据源dataSource、键值生成函数keyGenerator、子组件生成函数itemGenerator。其中，数据源为[IDataSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-rendering-control-lazyforeach#idatasource)类型，需要开发者实现该接口。keyGenerator是一个函数，用于为每个item生成一个唯一且持久的键值以标识对应的组件，开发者可以通过它自定义键值的生成规则，关于键值生成规则，详情可参考[键值生成规则](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach#键值生成规则)。LazyForEach的itemGenerator函数会根据键值生成规则为数据源的每个数组项创建组件，组件的创建分为首次渲染和非首次渲染两种情况，详情可参考[组件创建规则](/docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-rendering-control/arkts-rendering-control-lazyforeach#组件创建规则)。
 

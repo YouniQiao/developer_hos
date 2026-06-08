@@ -2,9 +2,10 @@
 title: "单元测试框架使用指导"
 original_url: /docs/dev/testing/ut/arkxtest-guidelines/unittest-guidelines
 format: md
+upstream_id: dev/testing/ut/arkxtest-guidelines/unittest-guidelines
+last_sync: 2026-06-07
+sync_hash: 7aaed934
 ---
-
-
 ## 概述
 
 单元测试框架（JsUnit），是自动化测试框架基础底座，提供测试脚本识别、调度、执行和结果汇总的能力。开发者可在测试脚本中调用UI测试框架和白盒性能测试框架接口编写测试用例。
@@ -29,7 +30,7 @@ format: md
 
 ## 单元测试框架发布方式
 
-单元测试框架以ohpm包独立发布，版本信息详见[服务组件官网](https://ohpm.openharmony.cn/#/cn/detail/@ohos%2Fhypium)。开发者下载DevEco Studio后，在应用工程中的[oh-package.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-oh-package-json5)文件中devDependencies节点中配置版本号即可使用对应版本框架功能。
+单元测试框架以ohpm包独立发布，版本信息详见[服务组件官网](https://ohpm.openharmony.cn/#/cn/detail/@ohos%2Fhypium)。开发者下载DevEco Studio后，在应用工程中的[oh-package.json5](/docs/tools/ohpm/ide-oh-package-json5)文件中devDependencies节点中配置版本号即可使用对应版本框架功能。
 
 **配置示例**
 
@@ -47,7 +48,7 @@ format: md
 
 ### 新建测试脚本
 
-参考[DevEco Studio指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-instrument-test#section36049271219)创建ArkTS测试用例。
+参考[DevEco Studio指导](/docs/tools/coding-debug/ide-instrument-test#section36049271219)创建ArkTS测试用例。
 
 ### 编写单元测试脚本
 
@@ -103,7 +104,7 @@ export default function abilityTest() {
 3. 测试套级别执行，即执行describe接口中定义的全部测试用例。
 4. 测试用例级别执行，即执行指定it接口也就是单条测试用例。
 
-下面给出测试类级别即测试文件执行示例，其他请参考[运行模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-instrument-test#section1574003717165)。
+下面给出测试类级别即测试文件执行示例，其他请参考[运行模式](/docs/tools/coding-debug/ide-instrument-test#section1574003717165)。
 
 ![](./img/5a679812.png)
 
@@ -115,7 +116,7 @@ export default function abilityTest() {
 
 * 查看测试用例覆盖率
 
-执行测试用例后可以查看测试用例覆盖率，具体操作请参考[覆盖率统计模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-instrument-test#section1989615417457)章节内的内容。
+执行测试用例后可以查看测试用例覆盖率，具体操作请参考[覆盖率统计模式](/docs/tools/coding-debug/ide-instrument-test#section1989615417457)章节内的内容。
 
 ### 命令行执行测试脚本
 
@@ -644,7 +645,7 @@ interface PromiseInfo {
 
 ![](./img/9e5ea03c.png)
 
-仅支持Mock应用工程中自定义对象，不支持Mock系统API对象。如需Mock系统API，请参考[系统模块Mock指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-test-mock#section8353132513310)。
+仅支持Mock应用工程中自定义对象，不支持Mock系统API对象。如需Mock系统API，请参考[系统模块Mock指南](/docs/tools/coding-debug/ide-test-mock#section8353132513310)。
 
 **基础类**
 

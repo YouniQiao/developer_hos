@@ -2,9 +2,10 @@
 format: md
 title: "如何避免预览流产生畸变"
 original_url: /docs/FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-12
+upstream_id: FAQ/faqs-media-development/faqs-photographing-pictures/faqs-camera-kit/faqs-camera-12
+last_sync: 2026-06-07
+sync_hash: ac6e304d
 ---
-
-
 使用下列代码获取设备支持的宽和高，然后根据手机屏幕的宽高设置最合适的预览流分辨率，并使surface和XComponent的宽高一致。
 
 ```

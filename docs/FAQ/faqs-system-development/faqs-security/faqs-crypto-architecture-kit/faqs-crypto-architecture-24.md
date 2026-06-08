@@ -2,9 +2,10 @@
 title: "如何使用SM3算法进行消息鉴别码计算"
 original_url: /docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-24
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-24
+last_sync: 2026-06-07
+sync_hash: 08b000a9
 ---
-
-
 1. 设置算法，通过createMac接口生成消息鉴别码实例。
 2. 接收对称密钥，通过init接口初始化Mac。
 3. 接收数据，通过update接口更新Mac。此步骤可重复。

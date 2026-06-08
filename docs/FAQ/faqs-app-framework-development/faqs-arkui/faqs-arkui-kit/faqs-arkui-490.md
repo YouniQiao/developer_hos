@@ -2,9 +2,10 @@
 format: md
 title: "自定义键盘如何设置可与输入框贴边"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-490
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-490
+last_sync: 2026-06-07
+sync_hash: 78e5c5b0
 ---
-
-
 自定义键盘可以通过自定义弹窗来实现，自定义弹窗默认位置会和底部保持距离，可以通过设置offset来实现贴边，设置keyboardAvoidDistance来实现和键盘贴边。参考代码：
 
 ```

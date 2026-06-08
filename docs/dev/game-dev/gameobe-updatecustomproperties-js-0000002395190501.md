@@ -2,9 +2,10 @@
 title: "更新玩家自定义属性"
 original_url: /docs/dev/game-dev/gameobe-updatecustomproperties-js-0000002395190501
 format: md
+upstream_id: dev/game-dev/gameobe-updatecustomproperties-js-0000002395190501
+last_sync: 2026-06-07
+sync_hash: fe10c467
 ---
-
-
 通过更新玩家的自定义属性，可用于实现玩家自定义信息（如玩家昵称、等级等）的更新。
 
 ## 前提条件

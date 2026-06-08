@@ -2,9 +2,10 @@
 format: md
 title: "如何获取系统支持的编解码能力"
 original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avcodec-kit/faqs-avcodec-4
+upstream_id: FAQ/faqs-media-development/faqs-audio-video/faqs-avcodec-kit/faqs-avcodec-4
+last_sync: 2026-06-07
+sync_hash: 8f98f625
 ---
-
-
 提供两种方法来获取音视频编解码能力实例：
 
 方式一：通过OH\_AVCodec\_GetCapability获取系统推荐的音视频编解码器能力实例。该接口的推荐策略与OH\_XXX\_CreateByMime系列接口一致。

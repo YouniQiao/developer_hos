@@ -3,9 +3,10 @@ title: "@performance/hp-arkui-use-onAnimationStart-for-swiper-preload"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_hp-arkui-use-onanimationstart-in-swiper
 format: md
+upstream_id: tools/coding-debug/ide_hp-arkui-use-onanimationstart-in-swiper
+last_sync: 2026-06-07
+sync_hash: 1e218d50
 ---
-
-
 # @performance/hp-arkui-use-onAnimationStart-for-swiper-preload
 
 建议Swiper预加载机制搭配 OnAnimationStart 接口回调使用。

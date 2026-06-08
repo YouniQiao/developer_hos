@@ -3,8 +3,11 @@ title: "应用UI生成"
 displayed_sidebar: aiAssistSidebar
 original_url: /docs/tools/ai-assist/ide-ui-generator
 format: md
+upstream_id: tools/ai-assist/ide-ui-generator
+last_sync: 2026-06-07
+sync_hash: 6a2c19cc
+upstream_hash: 5c219b1e290a
 ---
-
 
 # 应用UI生成
 

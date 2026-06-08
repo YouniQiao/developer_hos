@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "画布操作及状态处理（ArkTS）"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/canvas-operation-state/canvas-operation-state-arkts
 format: md
+upstream_id: dev/app-dev/graphics/arkgraphics-2d/graphic-drawing-and-display/canvas-operation-state/canvas-operation-state-arkts
+last_sync: 2026-06-07
+sync_hash: e1105dec
 ---
-
-
 ## 场景介绍
 
 创建或获取Canvas画布之后，可以基于画布进一步地进行图形操作和状态处理。画布操作属于可选操作，开发者可以根据场景需要进行。需要先进行画布操作，再进行后续绘制，只有这样画布操作才有效果。

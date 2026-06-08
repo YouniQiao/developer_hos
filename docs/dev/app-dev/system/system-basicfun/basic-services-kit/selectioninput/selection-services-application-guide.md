@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "实现一个划词扩展能力"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/selectioninput/selection-services-application-guide
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/selectioninput/selection-services-application-guide
+last_sync: 2026-06-07
+sync_hash: 3fc9630d
 ---
-
-
 ## 接口说明
 
 | 名称 | 描述 |

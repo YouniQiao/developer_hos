@@ -3,6 +3,10 @@ title: "查询关联关系分析密钥"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-tracking9-0000001286023242
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-tracking9-0000001286023242
+last_sync: 2026-06-07
+sync_hash: 37bb91ac
+upstream_hash: 1fc39d9f4e6c
 ---
 
 # 查询关联关系分析密钥

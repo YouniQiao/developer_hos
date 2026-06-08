@@ -1,8 +1,10 @@
 ---
 title: "内存泄漏定制能力开放使用指导"
 original_url: /docs/quality/malloc-dispatch-table
+upstream_id: /docs/quality/malloc-dispatch-table
+last_sync: 2026-06-07
+sync_hash: 625d3080
 ---
-
 # 内存泄漏定制能力开放使用指导
 
 ## 概述

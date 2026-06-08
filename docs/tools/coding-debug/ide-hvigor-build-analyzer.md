@@ -3,9 +3,10 @@ title: "分析构建过程"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hvigor-build-analyzer
 format: md
+upstream_id: tools/coding-debug/ide-hvigor-build-analyzer
+last_sync: 2026-06-07
+sync_hash: c9d48136
 ---
-
-
 # 分析构建过程
 
 Build Analyzer可以展示编译构建过程的重要信息，开发者能够通过Build Analyzer的可视化分析来排查构建过程中的性能和内存问题。

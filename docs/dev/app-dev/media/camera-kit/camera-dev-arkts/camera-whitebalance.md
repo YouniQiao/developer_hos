@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "白平衡设置(ArkTS)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-whitebalance
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-whitebalance
+last_sync: 2026-06-07
+sync_hash: e606539b
 ---
-
-
 从API version 20开始，支持设置白平衡效果。白平衡是相机的色彩校正技术，通过设置白平衡，使照片产生不同的效果。目前白平衡效果支持：拍照（[PhotoSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-photosession)）、录像（[VideoSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-videosession)）和安全相机模式（[SecureSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-securesession)）。
 
 ## 开发步骤

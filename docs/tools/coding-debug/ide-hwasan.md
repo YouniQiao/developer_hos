@@ -3,8 +3,11 @@ title: "使用HWASan检测内存错误"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide-hwasan
 format: md
+upstream_id: tools/coding-debug/ide-hwasan
+last_sync: 2026-06-07
+sync_hash: d678d954
+upstream_hash: f6eb6be0f23a
 ---
-
 
 # 使用HWASan检测内存错误
 

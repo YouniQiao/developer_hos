@@ -2,9 +2,10 @@
 title: "注册信标设备"
 original_url: /docs/distribute/agc/agc-help-location-sense-by-beacon-0000002305369365/agc-help-beacon-regist-0000002305369369
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-by-beacon-0000002305369365/agc-help-beacon-regist-0000002305369369
+last_sync: 2026-06-07
+sync_hash: 962b1e54
 ---
-
-
 ![](../img/agc-help-beacon-regist-0000002305369369_0.png)
 
 * 您团队账号下的所有项目均可使用注册的信标设备。

@@ -2,9 +2,10 @@
 title: "（可选）使用canOpenLink判断应用是否可访问"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/canopenlink
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/inter-app-redirection/directional-redirection/canopenlink
+last_sync: 2026-06-07
+sync_hash: 62b96c8a
 ---
-
-
 ## 使用场景
 
 在应用A想要拉起应用B的场景中，应用A可先调用canOpenLink接口判断应用B是否可访问，如果可访问，再拉起应用B。

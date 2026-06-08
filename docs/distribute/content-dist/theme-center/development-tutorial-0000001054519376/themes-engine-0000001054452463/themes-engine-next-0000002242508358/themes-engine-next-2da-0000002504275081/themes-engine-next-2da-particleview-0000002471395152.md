@@ -3,9 +3,10 @@ title: "跟手粒子&lt;ParticleView&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-particleview-0000002471395152
 format: md
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-2da-0000002504275081/themes-engine-next-2da-particleview-0000002471395152
+last_sync: 2026-06-07
+sync_hash: 3a6dac78
 ---
-
-
 # 跟手粒子&lt;ParticleView&gt;
 
 ## 功能概述

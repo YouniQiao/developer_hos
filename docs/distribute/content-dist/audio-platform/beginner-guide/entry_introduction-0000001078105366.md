@@ -3,9 +3,10 @@ title: "业务介绍"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/audio-platform/beginner-guide/entry_introduction-0000001078105366
 format: md
+upstream_id: distribute/content-dist/audio-platform/beginner-guide/entry_introduction-0000001078105366
+last_sync: 2026-06-07
+sync_hash: b3d0d1b9
 ---
-
-
 # 业务介绍
 
 ## 1.简介

@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "免密代扣说明"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-password-free-pay/payment-password-free-pay-overview
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-password-free-pay/payment-password-free-pay-overview
+last_sync: 2026-06-07
+sync_hash: 28f68850
+upstream_hash: 57c8df4c6b2e
 ---
-
 
 免密代扣包括支付并签约以及签约代扣场景。
 

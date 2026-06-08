@@ -2,9 +2,10 @@
 format: md
 title: "LABEL_VALUE_ERROR处理指导"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-15
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-15
+last_sync: 2026-06-07
+sync_hash: c8bffdd2
 ---
-
-
 **问题现象**
 
 在工程同步、编译构建过程中，提示**LABEL\_VALUE\_ERROR**错误信息。

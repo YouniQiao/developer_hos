@@ -2,9 +2,10 @@
 title: "Device Security Kit简介"
 original_url: /docs/dev/atomic-dev/atomic-device-security-development/atomic-devicesecurity-introduction
 format: md
+upstream_id: dev/atomic-dev/atomic-device-security-development/atomic-devicesecurity-introduction
+last_sync: 2026-06-07
+sync_hash: f7f29bca
 ---
-
-
 Device Security Kit（设备安全服务）提供应用设备状态检测（DeviceVerify）、安全检测（SafetyDetect）、可信应用服务（TrustedAppService），可以保护应用程序免受安全威胁和保证应用的数据安全。
 
 ## 场景介绍

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "典型场景的视频编码配置"
 original_url: /docs/dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding-configuration-typical-scenarios
 format: md
+upstream_id: dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding-configuration-typical-scenarios
+last_sync: 2026-06-07
+sync_hash: aaf5fa29
 ---
-
-
 此文档描述了AVCodec视频编码能力在不同应用场景下的推荐配置参数，供开发者根据实际应用场景进行视频编码应用的开发。
 
 视频编码在短距投屏（通常指10米以内的多个设备间进行屏幕编码投递）、视频通话、视频会议、直播、视频编辑、视频分享等场景均有广泛使用，按照体验要求，上述场景可归纳划分为低时延、实时流媒体、离线编码三大类别应用场景。

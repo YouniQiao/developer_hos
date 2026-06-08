@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "阻止系统闲时进入睡眠开发指南"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/powermgr/running-dev/runninglock-dev
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/powermgr/running-dev/runninglock-dev
+last_sync: 2026-06-07
+sync_hash: 180ec91f
 ---
-
-
 ## 场景介绍
 
 当计算机在一段时间内没有检测到用户活动（如键盘或鼠标输入）时，系统会自动尝试进入睡眠，使用RunningLockType.BACKGROUND\_USER\_IDLE运行锁，保证在持锁过程中系统不会进入自动睡眠，保证业务正常运行。
@@ -16,7 +17,7 @@ format: md
 
 * 开发工具及配置：
 
-  [DevEco Studio](https://developer.huawei.com/consumer/cn/download/)是HarmonyOS应用开发的推荐IDE工具。开发者可以使用该工具进行开发、调试、打包等操作。请下载安装该工具，并参考[DevEco Studio使用指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-tools-overview)中的[创建工程及运行](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-create-new-project)进行基本的操作验证，保证在DevEco Studio可正常运行。
+  [DevEco Studio](https://developer.huawei.com/consumer/cn/download/)是HarmonyOS应用开发的推荐IDE工具。开发者可以使用该工具进行开发、调试、打包等操作。请下载安装该工具，并参考[DevEco Studio使用指南](/docs/tools/coding-debug/ide-tools-overview)中的[创建工程及运行](/docs/tools/coding-debug/ide-create-new-project)进行基本的操作验证，保证在DevEco Studio可正常运行。
 * SDK版本配置：
 
   RunningLockType.BACKGROUND\_USER\_IDLE类型的运行锁，所需SDK版本为API version 23及以上才可使用。

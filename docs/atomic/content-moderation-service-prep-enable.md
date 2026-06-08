@@ -2,9 +2,10 @@
 title: "开通内容风控服务"
 original_url: /docs/dev/atomic-dev/content-moderation-service-prep/content-moderation-service-prep-enable
 format: md
+upstream_id: dev/atomic-dev/content-moderation-service-prep/content-moderation-service-prep-enable
+last_sync: 2026-06-07
+sync_hash: 49b2e575
 ---
-
-
 如果您未开通内容风控服务，将无法使用该服务对文本和图片进行安全合规审核。因此，在创建内容风控服务官方连接器之前，您需要先开通内容风控服务。如果已经开通，可跳过本步骤。
 
 您可在创建元服务的过程中开通元服务内容风控服务，也可在元服务创建完成后，按照下文的步骤申请接入。

@@ -2,9 +2,10 @@
 title: "更新应用信息"
 original_url: /docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-update-0000002271413697
 format: md
+upstream_id: distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-update-0000002271413697
+last_sync: 2026-06-07
+sync_hash: a5c95c00
 ---
-
-
 若您想提升应用的下载转化率和市场曝光度，建议您时常更新在架应用详情。您无需更换软件包，通过升级同版本的方式即可更新应用的基本信息。升级审核通过后，应用详情更新成功。
 
 ![](../img/agc-help-maintain-update-0000002271413697_0.png)

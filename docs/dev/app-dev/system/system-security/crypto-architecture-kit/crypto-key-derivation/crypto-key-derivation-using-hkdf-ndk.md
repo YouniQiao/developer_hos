@@ -2,10 +2,11 @@
 title: "使用HKDF进行密钥派生(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-derivation/crypto-key-derivation-using-hkdf-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-derivation/crypto-key-derivation-using-hkdf-ndk
+last_sync: 2026-06-07
+sync_hash: 881aadae
 ---
-
-
-对应算法规格请查看[密钥派生算法规格：HKDF](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-key-derivation-overview#hkdf算法)。
+对应算法规格请查看[密钥派生算法规格：HKDF](/docs/dev/app-dev/system/system-security/crypto-architecture-kit/crypto-key-derivation/crypto-key-derivation-overview#hkdf算法)。
 
 ## 开发步骤
 

@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Payment Kit的退款操作，除了通过接入指导中的退款接口退款，还有财务功能相关平台吗？能从这个平台进行退款？"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-23
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-faq/payment-faq-23
+last_sync: 2026-06-07
+sync_hash: 4cd5f69c
 ---
-
-
 除接入指导文档中提供给商户的退款接口进行退款，商户也可以登录[华为支付商户平台](https://petalpay-merchant.cloud.huawei.com/)，选择“交易中心 > 交易明细 > 订单详情”页面，在操作菜单中点击退款发起退款操作。
 
 这个功能商户不需要对接联调，可以直接使用，支持发起部分退款和全额退款。

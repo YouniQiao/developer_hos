@@ -2,9 +2,10 @@
 title: "ArkGuard字节码混淆常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation-questions
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-arkguard-bytecode/bytecode-obfuscation-questions
+last_sync: 2026-06-07
+sync_hash: 19718584
 ---
-
-
 ## 字节码混淆与源码混淆差异
 
 ### 混淆范围差异

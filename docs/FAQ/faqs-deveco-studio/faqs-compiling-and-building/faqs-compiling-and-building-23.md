@@ -2,9 +2,10 @@
 format: md
 title: "Static Library模块中src/main/cpp目录下的文件未打包进HAR"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-23
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-23
+last_sync: 2026-06-07
+sync_hash: 3ae9edfa
 ---
-
-
 **问题现象**
 
 点击**Build > Make Module $\{libraryName\}**编译构建生成HAR后，发现构建产物中未出现cpp目录下的文件。

@@ -2,8 +2,11 @@
 format: md
 title: "如何获取resource目录下的资源"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-accessibility-localization/faqs-localization-kit/faqs-localization-4
+upstream_id: FAQ/faqs-app-framework-development/faqs-accessibility-localization/faqs-localization-kit/faqs-localization-4
+last_sync: 2026-06-07
+sync_hash: 4b4a8edc
+upstream_hash: 60b952e19973
 ---
-
 
 可以使用以下两种方法获取资源文件：
 

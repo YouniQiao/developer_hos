@@ -2,9 +2,10 @@
 title: "延迟加载 (lazy import)"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-lazy-import
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-runtime/arkts-runtime-module/arkts-lazy-import
+last_sync: 2026-06-07
+sync_hash: 578d774c
 ---
-
-
 随着应用程序功能的扩展，冷启动时间显著增加，主要是因为启动初期加载了大量未实际执行的模块。这不仅延长了应用的初始化时间，还浪费了资源。需要精简加载流程，剔除非必需的文件执行，优化冷启动性能，确保用户体验流畅。
 
 ![](./img/4325f5a1.png)
@@ -19,7 +20,7 @@ format: md
 
 ## 使用方式
 
-开发者可以参考[Launch模板基本操作](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-launch)、[可延迟加载文件检测](#可延迟加载文件检测)、常用Trace使用指导，利用工具或日志记录等手段，识别冷启动期间未被实际调用的文件，分析方法可参考[延迟加载lazy-import使用指导](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-arkts-high-performance#section12861143418213)。通过对这些数据的分析，开发者可以精准定位启动阶段不必预先加载的文件列表，并在这些文件的调用点增加lazy标识。但需要注意，后续执行的加载是同步加载，可能阻塞任务执行（如单击任务，触发了延迟加载，那么运行时会去执行冷启动未加载的文件，从而增加耗时），因此是否使用lazy需要开发者自行评估。
+开发者可以参考[Launch模板基本操作](/docs/tools/coding-debug/ide-insight-session-launch)、[可延迟加载文件检测](#可延迟加载文件检测)、常用Trace使用指导，利用工具或日志记录等手段，识别冷启动期间未被实际调用的文件，分析方法可参考[延迟加载lazy-import使用指导](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-arkts-high-performance#section12861143418213)。通过对这些数据的分析，开发者可以精准定位启动阶段不必预先加载的文件列表，并在这些文件的调用点增加lazy标识。但需要注意，后续执行的加载是同步加载，可能阻塞任务执行（如单击任务，触发了延迟加载，那么运行时会去执行冷启动未加载的文件，从而增加耗时），因此是否使用lazy需要开发者自行评估。
 
 ![](./img/cf5f7169.png)
 

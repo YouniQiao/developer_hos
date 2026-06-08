@@ -3,8 +3,10 @@ title: "关键词出价修改"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-keywords2-0000001338613217
 format: md
+upstream_id: monetize/promotion/marketing-api-keywords2-0000001338613217
+last_sync: 2026-06-07
+sync_hash: eb3deaee
 ---
-
 # 关键词出价修改
 
 您通过本接口可以批量修改关键词的出价信息。

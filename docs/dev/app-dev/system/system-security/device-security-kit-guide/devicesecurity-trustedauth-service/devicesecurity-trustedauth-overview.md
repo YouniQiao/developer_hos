@@ -2,9 +2,10 @@
 title: "数字盾服务概述"
 original_url: /docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-trustedauth-service/devicesecurity-trustedauth-overview
+last_sync: 2026-06-07
+sync_hash: 425cde5b
 ---
-
-
 数字盾服务通过可信用户交互（TUI, Trusted User Interface）为金融应用的大额转账交易提供端到端安全防护，其主要利用了TUI以下核心功能：
 
 1. 数据隔离性：所有密码信息的输入、传输及验证均在TEE安全沙箱内完成，完全隔离于普通执行环境（REE），防止REE侧恶意程序窃取。

@@ -2,9 +2,10 @@
 format: md
 title: "Image或者ImageSpan传入一个string类型的路径时无法加载图片"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-153
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-153
+last_sync: 2026-06-07
+sync_hash: 39bc6096
 ---
-
-
 **解决措施**
 
 string类型的路径图片无法加载的可能情况以及对应的解决方案如下：

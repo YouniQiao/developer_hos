@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: /docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations
 format: md
+upstream_id: dev/app-dev/application-services/payment-kit-guide/payment-preparations
+last_sync: 2026-06-07
+sync_hash: 5d569c41
 ---
-
-
 * **[商户入网和获取商户号](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-merc-regist-apply)**
 * **[（可选）特定场景配置操作](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-product-configuration)**
 * **[开通支付服务](/docs/dev/app-dev/application-services/payment-kit-guide/payment-preparations/payment-config-agc)**

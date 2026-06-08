@@ -2,8 +2,10 @@
 title: "智慧分发特性"
 displayed_sidebar: xiaoyiSidebar
 original_url: /docs/distribute/xiaoyi/intents-kit-0000001677103865/intents-ai-distribution-characteristic-0000001901922213
+upstream_id: distribute/xiaoyi/intents-kit-0000001677103865/intents-ai-distribution-characteristic-0000001901922213
+last_sync: 2026-06-07
+sync_hash: dd1f180b
 ---
-
 import MergeTable from '@site/src/components/MergeTable';
 
 # 智慧分发特性

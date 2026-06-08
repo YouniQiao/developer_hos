@@ -3,8 +3,10 @@ title: "查询指定定向包详情"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketing-api-tool-targeting6-0000001286023246
 format: md
+upstream_id: monetize/promotion/marketing-api-tool-targeting6-0000001286023246
+last_sync: 2026-06-07
+sync_hash: fefdb568
 ---
-
 # 查询指定定向包详情
 
 您通过本接口可以查询公共定向包或私有定向包详情。

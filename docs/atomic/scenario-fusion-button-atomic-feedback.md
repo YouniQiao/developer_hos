@@ -2,9 +2,10 @@
 title: "反馈与投诉Button"
 original_url: /docs/dev/atomic-dev/scenario-fusion-atomic-button/scenario-fusion-button-atomic-feedback
 format: md
+upstream_id: dev/atomic-dev/scenario-fusion-atomic-button/scenario-fusion-button-atomic-feedback
+last_sync: 2026-06-07
+sync_hash: 1278bb34
 ---
-
-
 ## 场景介绍
 
 从6.0.0(20)开始，支持反馈与投诉Button功能。

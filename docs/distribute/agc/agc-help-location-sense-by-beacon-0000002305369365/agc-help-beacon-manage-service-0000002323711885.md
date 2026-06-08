@@ -2,9 +2,10 @@
 title: "管理服务"
 original_url: /docs/distribute/agc/agc-help-location-sense-by-beacon-0000002305369365/agc-help-beacon-manage-service-0000002323711885
 format: md
+upstream_id: distribute/agc/agc-help-location-sense-by-beacon-0000002305369365/agc-help-beacon-manage-service-0000002323711885
+last_sync: 2026-06-07
+sync_hash: e9b112a2
 ---
-
-
 * 服务状态包括草稿、审核中、审核驳回、已上线、已下线5种状态。状态流转图如下：
 
   ![](../img/agc-help-beacon-manage-service-0000002323711885_0.jpg "点击放大")

@@ -2,8 +2,11 @@
 title: "访问控制概述"
 original_url: /docs/dev/app-dev/system/system-security/access-control/access-token-overview
 format: md
+upstream_id: dev/app-dev/system/system-security/access-control/access-token-overview
+last_sync: 2026-06-07
+sync_hash: 0a7725cc
+upstream_hash: b77243bd16f1
 ---
-
 
 访问控制是一种限制应用访问系统资源的机制。默认情况下，应用只能访问有限的系统资源。若需扩展功能，应用必须通过系统提供的接口访问额外的系统数据和功能。
 

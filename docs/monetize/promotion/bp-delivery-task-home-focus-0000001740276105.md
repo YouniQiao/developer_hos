@@ -3,8 +3,10 @@ title: "投放首页焦点图任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-delivery-task-home-focus-0000001740276105
 format: md
+upstream_id: monetize/promotion/bp-delivery-task-home-focus-0000001740276105
+last_sync: 2026-06-07
+sync_hash: 6b7ca0c5
 ---
-
 # 投放首页焦点图任务
 
 ## 背景信息

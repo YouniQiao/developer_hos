@@ -2,9 +2,10 @@
 title: "优先响应系统功能键开发指导"
 original_url: /docs/dev/app-dev/system/system-basicfun/input-kit/keypressed-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/input-kit/keypressed-guidelines
+last_sync: 2026-06-07
+sync_hash: b3990de9
 ---
-
-
 ## 场景介绍
 
 每个系统功能键均具有默认功能，由系统固定实现，比如音量键是用来调节设备音量，但是部分应用在特定场景下期望定制这部分按键的功能，本篇指导用于支撑这部分应用的诉求达成。

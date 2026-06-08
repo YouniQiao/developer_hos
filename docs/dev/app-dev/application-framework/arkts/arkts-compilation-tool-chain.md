@@ -2,9 +2,10 @@
 title: "ArkTS编译工具链"
 original_url: /docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain
 format: md
+upstream_id: dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain
+last_sync: 2026-06-07
+sync_hash: 1bbba809
 ---
-
-
 * **[ArkTS编译工具链概述](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/compilation-tool-chain-overview)**
 * **[方舟字节码](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/arkts-bytecode)**
 * **[Disassembler反汇编工具](/docs/dev/app-dev/application-framework/arkts/arkts-compilation-tool-chain/tool-disassembler)**

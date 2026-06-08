@@ -2,9 +2,10 @@
 title: "form"
 original_url: /docs/dev/atomic-dev/ascf/components-form-components/components-form
 format: md
+upstream_id: dev/atomic-dev/ascf/components-form-components/components-form
+last_sync: 2026-06-07
+sync_hash: 94d5cdf1
 ---
-
-
 表单。用于提交组件内的用户输入的[switch](/docs/dev/atomic-dev/ascf/components-form-components/components-switch)、[input](/docs/dev/atomic-dev/ascf/components-form-components/components-input)、[checkbox](/docs/dev/atomic-dev/ascf/components-form-components/components-checkbox)、[slider](/docs/dev/atomic-dev/ascf/components-form-components/components-slider)、[radio](/docs/dev/atomic-dev/ascf/components-form-components/components-radio)、[picker](/docs/dev/atomic-dev/ascf/components-form-components/components-picker)。
 
 当点击form表单中，“form-type”为“submit”的button组件时，会将表单组件中的value值进行提交，需要在表单组件中加上name来作为key。

@@ -2,9 +2,10 @@
 title: "技术支持"
 original_url: /docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-support-0000002271416161
 format: md
+upstream_id: distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-support-0000002271416161
+last_sync: 2026-06-07
+sync_hash: c43dceae
 ---
-
-
 当您集成AGC相关服务遇到问题时，可以按照以下顺序寻求帮助。
 
 1. 请先仔细阅读文档，部分功能对设备和系统有限制，请参见[使用限制](/docs/distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-restrict-0000002236337002)。

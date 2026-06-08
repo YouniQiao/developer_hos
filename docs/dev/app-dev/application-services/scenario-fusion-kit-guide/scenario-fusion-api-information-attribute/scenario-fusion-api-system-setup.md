@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "通过API获取系统设置属性"
 original_url: /docs/dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-api-information-attribute/scenario-fusion-api-system-setup
 format: md
+upstream_id: dev/app-dev/application-services/scenario-fusion-kit-guide/scenario-fusion-api-information-attribute/scenario-fusion-api-system-setup
+last_sync: 2026-06-07
+sync_hash: a7600f29
 ---
-
-
 ## 场景介绍
 
 Scenario Fusion Kit提供获取系统设置属性API，调用该接口可以获取蓝牙、定位、Wi-Fi开关信息，以及设备方向信息等系统信息属性。

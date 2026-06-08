@@ -2,9 +2,10 @@
 title: "UTD预置列表"
 original_url: /docs/dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-type-list
 format: md
+upstream_id: dev/app-dev/application-framework/arkdata/uniform-data-definition/uniform-data-type-list
+last_sync: 2026-06-07
+sync_hash: 4401db40
 ---
-
-
 标准化数据类型（Uniform Type Descriptor，简称UTD）用于解决系统中的类型模糊问题，即针对同一种数据类型，存在不同的类型描述方式：MIME Type、文件扩展名等。例如描述jpg/jpeg类型图片时，可以使用image/jpeg、.jpg、.jpeg或image/picture等方式进行描述，详情可见[UTD基础类型](#基础类型)表格。
 
 当相关类型的数据进行跨应用、跨设备传输时，目标端应用/设备需要进行多方面的适配，才能够对数据内容进行相关处理，且存在无法识别的情况。

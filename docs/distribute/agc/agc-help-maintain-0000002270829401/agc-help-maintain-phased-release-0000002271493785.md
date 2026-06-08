@@ -2,9 +2,10 @@
 title: "分阶段发布"
 original_url: /docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-phased-release-0000002271493785
 format: md
+upstream_id: distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-phased-release-0000002271493785
+last_sync: 2026-06-07
+sync_hash: fca7ad3b
 ---
-
-
 ![](../img/agc-help-maintain-phased-release-0000002271493785_0.png)
 
 本文档所述功能即将下线，当前页面仅作历史存档。新功能请参考[《分阶段发布（7天内自动更新）》](/docs/distribute/agc/agc-help-maintain-0000002270829401/agc-help-maintain-phased-release-7day-0000002279615726)。

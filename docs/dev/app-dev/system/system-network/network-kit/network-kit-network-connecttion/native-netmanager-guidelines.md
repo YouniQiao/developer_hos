@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "管理网络连接(C/C++)"
 original_url: /docs/dev/app-dev/system/system-network/network-kit/network-kit-network-connecttion/native-netmanager-guidelines
 format: md
+upstream_id: dev/app-dev/system/system-network/network-kit/network-kit-network-connecttion/native-netmanager-guidelines
+last_sync: 2026-06-07
+sync_hash: 294a33b8
 ---
-
-
 ## 场景介绍
 
 NetConnection模块提供了常用网络信息查询的能力。

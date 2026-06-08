@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“Unrecognized archive format in parameterFile”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-157
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-157
+last_sync: 2026-06-07
+sync_hash: 045ba566
 ---
-
-
 **错误描述**
 
 parameterFile中包含无法识别的格式。

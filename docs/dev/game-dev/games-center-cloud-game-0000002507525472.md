@@ -2,9 +2,10 @@
 title: "畅游"
 original_url: /docs/dev/game-dev/games-center-cloud-game-0000002507525472
 format: md
+upstream_id: dev/game-dev/games-center-cloud-game-0000002507525472
+last_sync: 2026-06-07
+sync_hash: 51448dd9
 ---
-
-
 游戏中心【畅游】专区游戏基于云端技术实现云侧游戏部署，将游戏运行在服务端，玩家只需联网即可畅玩，无需高端硬件也能流畅运行大型游戏。游戏中心【畅游】专区汇聚众多精彩游戏，无需下载安装，即点即玩。
 
 ## 前提条件

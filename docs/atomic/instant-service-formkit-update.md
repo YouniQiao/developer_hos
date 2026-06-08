@@ -2,9 +2,10 @@
 title: "更新服务卡片（FormKit）"
 original_url: /docs/dev/atomic-dev/instant-service-formkit/instant-service-formkit-update
 format: md
+upstream_id: dev/atomic-dev/instant-service-formkit/instant-service-formkit-update
+last_sync: 2026-06-07
+sync_hash: 2943899c
 ---
-
-
 1. 对于状态为“已上架”、“已下架”、“审核驳回”、“草稿”的FormKit卡可被编辑，点击列表操作列“编辑”后进入编辑页中，开发者可以对子服务的信息进行更新。
 
    ![](./img/2ab7c148.png "点击放大")

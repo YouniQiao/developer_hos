@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "优化PDF文档切换体验"
 original_url: /docs/dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-switch-optimize
 format: md
+upstream_id: dev/app-dev/application-services/pdf-kit-guide/pdf-pdfview-implements/pdf-pdfview-switch-optimize
+last_sync: 2026-06-07
+sync_hash: a0b4d3a1
 ---
-
-
 ## 场景介绍
 
 在应用中进行多文档切换时，为了提供更加流畅和清晰的视觉体验，推荐结合状态管理来控制PdfView的渲染时机。

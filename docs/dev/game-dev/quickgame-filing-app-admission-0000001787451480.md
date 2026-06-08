@@ -2,8 +2,11 @@
 title: "新增接入"
 original_url: /docs/dev/game-dev/quickgame-filing-app-admission-0000001787451480
 format: md
+upstream_id: dev/game-dev/quickgame-filing-app-admission-0000001787451480
+last_sync: 2026-06-07
+sync_hash: 4d307d3d
+upstream_hash: 685a821a4506
 ---
-
 
 ## 前提条件
 

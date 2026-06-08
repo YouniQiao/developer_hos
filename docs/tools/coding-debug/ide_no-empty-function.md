@@ -3,9 +3,10 @@ title: "@typescript-eslint/no-empty-function"
 displayed_sidebar: toolsSidebar
 original_url: /docs/tools/coding-debug/ide_no-empty-function
 format: md
+upstream_id: tools/coding-debug/ide_no-empty-function
+last_sync: 2026-06-07
+sync_hash: ad054605
 ---
-
-
 # @typescript-eslint/no-empty-function
 
 不允许使用空函数。

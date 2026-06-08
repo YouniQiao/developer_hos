@@ -3,9 +3,10 @@ title: "ohpm dependency-check"
 displayed_sidebar: ohpmSidebar
 original_url: /docs/tools/ohpm/commands/ide-ohpm-dependency-check
 format: md
+upstream_id: tools/ohpm/commands/ide-ohpm-dependency-check
+last_sync: 2026-06-07
+sync_hash: 088b436a
 ---
-
-
 # ohpm dependency-check
 
 从ohpm 6.1.1.830版本开始，ohpm命令支持查询三方库的版本更新信息。
@@ -144,7 +145,8 @@ ohpm dc --all -c -l
 
 ```
 package                installed   wanted      latest  type   description     dependedBy  dependencyType  homepage
-----------------------------------------------------------------------------------------------------------------------
+---
+-------------------------------------------------------------------------------------------------------------------
 checkupdate_pkgc3      1.2.0       1.2.0       1.2.0   match  update to date  library     prod            http://a.c
 checkupdate_pkgc5      0.1.1       0.1.1       0.1.2   match  update to date  library     prod            http://a.c
 checkupdate_pkgc2      2.0.0       2.0.0       2.0.0   match  update to date  library     prod            http://a.c
@@ -176,7 +178,8 @@ ohpm dc --all -c
 
 ```
 package                installed   wanted      latest  type     dependedBy
-----------------------------------------------------------------------------
+---
+-------------------------------------------------------------------------
 checkupdate_pkgc3      1.2.0       1.2.0       1.2.0   match    library
 checkupdate_pkgc5      0.1.1       0.1.1       0.1.2   match    library
 checkupdate_pkgc2      2.0.0       2.0.0       2.0.0   match    library

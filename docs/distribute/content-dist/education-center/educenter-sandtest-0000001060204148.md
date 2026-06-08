@@ -3,9 +3,10 @@ title: "沙盒测试"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/education-center/educenter-sandtest-0000001060204148
 format: md
+upstream_id: distribute/content-dist/education-center/educenter-sandtest-0000001060204148
+last_sync: 2026-06-07
+sync_hash: b12b1760
 ---
-
-
 # 沙盒测试
 
 在将课程、套餐权益和专辑提交教育中心正式审核前，您可以通过沙盒测试功能进行从发布到使用的端到端测试。您可以调试包括但不限于课程购买、课程跳转、账号引导绑定、学情同步等流程，调试效果与课程上架后的效果一致。

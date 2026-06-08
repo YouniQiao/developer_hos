@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "拍照实践(C/C++)"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-shooting-case
 format: md
+upstream_id: dev/app-dev/media/camera-kit/camera-dev-native/native-camera-shooting-case
+last_sync: 2026-06-07
+sync_hash: e281fc8c
 ---
-
-
 在开发相机应用时，需要先[申请相关权限](/docs/dev/app-dev/media/camera-kit/camera-preparation)。
 
 当前示例提供完整的拍照流程及其接口调用顺序的介绍。对于单个流程（如设备输入、会话管理、拍照）的介绍请参考[相机开发指导(Native)](/docs/dev/app-dev/media/camera-kit/camera-dev-native-mandatory/native-camera-device-management)的具体章节。

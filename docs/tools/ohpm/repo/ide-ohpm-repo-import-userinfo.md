@@ -2,9 +2,10 @@
 title: "ohpm-repo import_userinfo"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-import-userinfo
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-import-userinfo
+last_sync: 2026-06-07
+sync_hash: ffdc356e
 ---
-
-
 # ohpm-repo import\_userinfo
 
 导入用户DB数据。

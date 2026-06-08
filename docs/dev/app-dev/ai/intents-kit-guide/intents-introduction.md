@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Intents Kit简介"
 original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-introduction
 format: md
+upstream_id: dev/app-dev/ai/intents-kit-guide/intents-introduction
+last_sync: 2026-06-07
+sync_hash: 635567e7
 ---
-
-
 Intents Kit（意图框架服务）是HarmonyOS级的意图标准体系 ，意图连接了应用/元服务内的业务功能。
 
 意图框架能帮开发者将应用/元服务内的业务功能，智能分发到各系统入口，这个过程即智慧分发。其中系统入口包括：小艺对话、小艺搜索、小艺建议。

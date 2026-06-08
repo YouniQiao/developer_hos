@@ -1,8 +1,10 @@
 ---
 title: "Store Attribution Preparations"
 original_url: /docs/dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-preparations
+upstream_id: dev/app-dev/application-services/store-kit-guide/store-attribution/store-attribution-preparations
+last_sync: 2026-06-07
+sync_hash: f0ddc119
 ---
-
 import SourceLink from '@site/src/components/SourceLink';
 
 # Store Attribution Preparations

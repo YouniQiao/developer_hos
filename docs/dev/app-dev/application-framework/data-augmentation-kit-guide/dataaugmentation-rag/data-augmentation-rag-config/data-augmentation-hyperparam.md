@@ -2,9 +2,10 @@
 title: "配置超参"
 original_url: /docs/dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-rag/data-augmentation-rag-config/data-augmentation-hyperparam
 format: md
+upstream_id: dev/app-dev/application-framework/data-augmentation-kit-guide/dataaugmentation-rag/data-augmentation-rag-config/data-augmentation-hyperparam
+last_sync: 2026-06-07
+sync_hash: a7ba5941
 ---
-
-
 ## 功能介绍
 
 超参是RAG工作流的配置参数，用于控制工作流的行为与组件结构。超参可由开发者根据任务需求、数据特性及经验进行配置，合理的超参设置对RAG的性能和效果有重要影响。开发者可以通过在指定应用[资源目录](/docs/dev/app-dev/getting-started/resource-access/resource-categories-and-access#资源目录)放置hyper\_param.json配置文件，实现自定义超参导入。

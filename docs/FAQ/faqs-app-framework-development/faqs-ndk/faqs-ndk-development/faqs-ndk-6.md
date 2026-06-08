@@ -2,9 +2,10 @@
 format: md
 title: "ArkTS侧与Native侧如何进行map数据交互"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-6
+upstream_id: FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-6
+last_sync: 2026-06-07
+sync_hash: cae4f6d7
 ---
-
-
 当前没有专门的接口用于在ArkTS侧与Native侧之间转换map。要实现map（二维数组）的数据交互，可以读取map中的数据并传递到Native侧进行重组。
 
 参考代码如下：

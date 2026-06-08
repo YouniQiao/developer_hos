@@ -2,8 +2,11 @@
 title: "background-position样式动画"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-animation/ui-js-animation-css/ui-js-animate-background-position-style
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-js-dev/ui-js-animation/ui-js-animation-css/ui-js-animate-background-position-style
+last_sync: 2026-06-07
+sync_hash: b073ac2e
+upstream_hash: 159597fb3e0f
 ---
-
 
 通过改变background-position属性（第一个值为X轴的位置，第二个值为Y轴的位置）移动背景图片位置，若背景图位置超出组件则超出部分的背景图不显示。
 

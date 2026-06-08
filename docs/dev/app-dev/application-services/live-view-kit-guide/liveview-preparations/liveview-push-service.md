@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "开通推送服务权益"
 original_url: /docs/dev/app-dev/application-services/live-view-kit-guide/liveview-preparations/liveview-push-service
 format: md
+upstream_id: dev/app-dev/application-services/live-view-kit-guide/liveview-preparations/liveview-push-service
+last_sync: 2026-06-07
+sync_hash: ba2d0584
+upstream_hash: 6b7242dffc44
 ---
-
 
 若开发者需要通过push云侧创建、更新和结束实况窗，在开通实况窗权益前，开发者需要首先为项目开通“推送服务”权益，详情请参见[开通推送服务](/docs/dev/app-dev/application-services/push-kit-guide/push-preparations/push-config-setting)。
 

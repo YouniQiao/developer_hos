@@ -2,9 +2,10 @@
 title: "使用限制"
 original_url: /docs/dev/game-dev/gameobe-restrictions-0000002395350545
 format: md
+upstream_id: dev/game-dev/gameobe-restrictions-0000002395350545
+last_sync: 2026-06-07
+sync_hash: 87f6cdee
 ---
-
-
 ## 设备限制
 
 设备限制是指联机对战SDK对用户终端的限制。

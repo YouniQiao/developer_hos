@@ -2,6 +2,9 @@
 title: "创建RTA任务"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/bp-functions-rta-create-0000001351897861
+upstream_id: monetize/promotion/bp-functions-rta-create-0000001351897861
+last_sync: 2026-06-07
+sync_hash: eaa49171
 ---
 import MergeTable from '@site/src/components/MergeTable';
 

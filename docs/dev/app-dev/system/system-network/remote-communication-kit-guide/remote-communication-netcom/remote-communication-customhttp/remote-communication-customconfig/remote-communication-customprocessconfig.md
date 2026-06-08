@@ -3,8 +3,11 @@ displayed_sidebar: appDevSidebar
 title: "ProcessingConfiguration：定制处理行为"
 original_url: /docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-customhttp/remote-communication-customconfig/remote-communication-customprocessconfig
 format: md
+upstream_id: dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-customhttp/remote-communication-customconfig/remote-communication-customprocessconfig
+last_sync: 2026-06-07
+sync_hash: 544a5941
+upstream_hash: 5a7f8e1e6442
 ---
-
 
 ## 场景介绍
 

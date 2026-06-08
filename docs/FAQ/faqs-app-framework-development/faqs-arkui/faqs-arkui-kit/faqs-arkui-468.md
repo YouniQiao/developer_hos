@@ -2,8 +2,11 @@
 title: "如何实现Tabs切换页签，强制重新刷新页面数据"
 original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-468
 format: md
+upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-468
+last_sync: 2026-06-07
+sync_hash: 3a017d8e
+upstream_hash: 03d48ec68fa2
 ---
-
 
 **问题描述**
 

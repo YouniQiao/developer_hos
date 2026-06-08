@@ -1,8 +1,10 @@
 ---
 title: "开发准备"
 original_url: /docs/dev/app-dev/getting-started/quick-start/start-overview
+upstream_id: dev/app-dev/getting-started/quick-start/start-overview
+last_sync: 2026-06-07
+sync_hash: 86571bac
 ---
-
 本文档适用于HarmonyOS应用开发的初学者。通过构建一个简单的具有页面跳转/返回功能的应用（如下图所示），快速了解工程目录的主要文件，熟悉HarmonyOS应用开发流程。
 
 ![](./img/e94393e9.png)
@@ -39,6 +41,6 @@ FA模型和Stage模型的整体架构和设计思想等更多区别，请见[应
 
 ## 工具准备
 
-请下载并安装[最新版DevEco Studio](https://developer.huawei.com/consumer/cn/download/)，具体可参照[下载与安装DevEco Studio](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-software-install)，更多工具使用指导可见[工具概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-tools-overview)。
+请下载并安装[最新版DevEco Studio](https://developer.huawei.com/consumer/cn/download/)，具体可参照[下载与安装DevEco Studio](/docs/tools/coding-debug/ide-software-install)，更多工具使用指导可见[工具概述](/docs/tools/coding-debug/ide-tools-overview)。
 
 完成上述操作及基本概念的理解后，可参照[构建第一个HarmonyOS应用（ArkTS）](/docs/dev/app-dev/getting-started/quick-start/start-with-ets-stage)进行下一步体验和学习。

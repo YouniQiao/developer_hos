@@ -3,8 +3,10 @@ title: "CreateSubTask"
 displayed_sidebar: promotionSidebar
 original_url: /docs/monetize/promotion/marketapi-modle-createsubtask-0000001135626856
 format: md
+upstream_id: monetize/promotion/marketapi-modle-createsubtask-0000001135626856
+last_sync: 2026-06-07
+sync_hash: 5adb29df
 ---
-
 # CreateSubTask
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |

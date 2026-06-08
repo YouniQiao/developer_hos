@@ -2,9 +2,10 @@
 title: "使用文本常见问题"
 original_url: /docs/dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-text-faq
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/ui-debug-optimize/ui-development-faq/arkts-text-faq
+last_sync: 2026-06-07
+sync_hash: 40c02e21
 ---
-
-
 本文档介绍使用文本的常见问题并提供参考。
 
 ## 文本显示（Text/Span）常见问题

@@ -2,9 +2,10 @@
 format: md
 title: "编译报错“generate SignerBlock failed”"
 original_url: /docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-114
+upstream_id: FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-114
+last_sync: 2026-06-07
+sync_hash: 408f5c33
 ---
-
-
 **问题现象**
 
 编译构建时，出现错误：生成 SignerBlock 失败。

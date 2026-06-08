@@ -2,8 +2,11 @@
 title: "自定义声明式节点 (BuilderNode)"
 original_url: /docs/dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-nodes/arkts-user-defined-arktsnode-buildernode
 format: md
+upstream_id: dev/app-dev/application-framework/arkui/arkts-ui-development/arkts-user-defined-capabilities/arkts-nodes/arkts-user-defined-arktsnode-buildernode
+last_sync: 2026-06-07
+sync_hash: 0e15e73b
+upstream_hash: 4fb76b156d42
 ---
-
 
 ## 概述
 

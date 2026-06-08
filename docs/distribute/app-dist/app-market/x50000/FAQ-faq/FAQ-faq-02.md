@@ -3,8 +3,10 @@ title: "2. 超范围收集个人信息"
 displayed_sidebar: appDistSidebar
 original_url: /docs/distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-02
 format: md
+upstream_id: distribute/app-dist/app-market/x50000/FAQ-faq/FAQ-faq-02
+last_sync: 2026-06-07
+sync_hash: 9c3b96c7
 ---
-
 # 2. 超范围收集个人信息
 
 * 重点整治APP、SDK非服务所必需或无合理应用场景，特别是在静默状态下或后台运行时，超范围收集个人信息。

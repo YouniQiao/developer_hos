@@ -2,8 +2,11 @@
 title: "命令：碰一碰&lt;CollaborationCommands&gt;"
 displayed_sidebar: contentDistSidebar
 original_url: /docs/distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-collaboration-0000002489842474
+upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine-next-0000002242508358/themes-engine-next-base-0000002279818413/themes-engine-next-base-collaboration-0000002489842474
+last_sync: 2026-06-07
+sync_hash: 4276912c
+upstream_hash: b3aaa4e6140e
 ---
-
 
 import MergeTable from '@site/src/components/MergeTable';
 

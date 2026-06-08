@@ -2,9 +2,10 @@
 title: "常见问题FAQ"
 format: md
 original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-faq
+upstream_id: tools/ohpm/repo/ide-ohpm-repo-faq
+last_sync: 2026-06-07
+sync_hash: e3d4835a
 ---
-
-
 # 常见问题FAQ
 
 ## ohpm-repo私仓工具获取与升级

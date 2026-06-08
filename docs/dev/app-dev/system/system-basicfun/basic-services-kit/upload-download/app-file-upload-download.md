@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "应用文件上传下载"
 original_url: /docs/dev/app-dev/system/system-basicfun/basic-services-kit/upload-download/app-file-upload-download
 format: md
+upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/upload-download/app-file-upload-download
+last_sync: 2026-06-07
+sync_hash: 4c482496
 ---
-
-
 应用支持将文件上传到网络服务器，也支持从网络服务器下载资源文件到本地目录。
 
 ## 上传应用文件

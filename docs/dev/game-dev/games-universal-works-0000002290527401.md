@@ -2,8 +2,11 @@
 title: "游戏核心模块适配"
 original_url: /docs/dev/game-dev/games-universal-works-0000002290527401
 format: md
+upstream_id: dev/game-dev/games-universal-works-0000002290527401
+last_sync: 2026-06-07
+sync_hash: f134c0ce
+upstream_hash: 64db8f805d7e
 ---
-
 
 * **[生命周期适配](/docs/dev/game-dev/games-universal-uiability-lifecycle-0000002333176745)**
 * **[线程模型及线程间通信](/docs/dev/game-dev/games-universal-interthead-communication-0000002299257040)**

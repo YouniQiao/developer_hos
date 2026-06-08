@@ -3,9 +3,10 @@ displayed_sidebar: appDevSidebar
 title: "Spatial Recon Kit简介"
 original_url: /docs/dev/app-dev/graphics/spatial-recon-kit-guide/spatial-recon-introduction
 format: md
+upstream_id: dev/app-dev/graphics/spatial-recon-kit-guide/spatial-recon-introduction
+last_sync: 2026-06-07
+sync_hash: 9e25498a
 ---
-
-
 Spatial Recon Kit（空间建模套件）集成了3DGS（3D Gaussian Splatting）模型的渲染、运算等能力。便于用户对三维模型实现自定义操作。
 
 ## 功能介绍

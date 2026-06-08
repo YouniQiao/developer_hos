@@ -1,11 +1,13 @@
 ---
-
 title: "开发流程"
 displayed_sidebar: cloudDevSidebar
 original_url: /docs/tools/end-cloud/agc-harmonyos-clouddev-cloudobjprocess
 format: md
+upstream_id: tools/end-cloud/agc-harmonyos-clouddev-cloudobjprocess
+last_sync: 2026-06-07
+sync_hash: 7a029957
+upstream_hash: 5d41a52314fb
 ---
-
 
 # 开发流程
 

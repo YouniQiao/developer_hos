@@ -3,9 +3,10 @@ title: "常见问题"
 displayed_sidebar: devecoTestingSidebar
 original_url: /docs/tools/deveco-testing/faq
 format: md
+upstream_id: tools/deveco-testing/faq
+last_sync: 2026-06-07
+sync_hash: 01d7e847
 ---
-
-
 # 常见问题
 
 <strong>Q1：执行过程中，设备断连重连后，任务能否继续执行？</strong>

@@ -2,9 +2,10 @@
 title: "时区"
 original_url: /docs/dev/app-dev/application-framework/localization-kit/i18n/i18n-time-zone-dst/i18n-time-zone
 format: md
+upstream_id: dev/app-dev/application-framework/localization-kit/i18n/i18n-time-zone-dst/i18n-time-zone
+last_sync: 2026-06-07
+sync_hash: ccdcda8d
 ---
-
-
 ## 使用场景
 
 全球各国家和地区的经度不同，地方时间也有所不同，因此划分了不同的时区。例如，英国采用0时区，中国采用东8时区，中国时间要比英国快8小时，中国北京中午12:00，对应英国伦敦是凌晨4:00。时区模块可用于获取时区列表，应用可基于该列表实现业务逻辑，如双时钟应用。

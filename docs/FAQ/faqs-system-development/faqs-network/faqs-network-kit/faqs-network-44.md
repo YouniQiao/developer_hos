@@ -2,9 +2,10 @@
 title: "使用SocketServer时，如何解决较高概率接收不到 client.on('message', (value: SocketInfo) 中的回调问题"
 original_url: /docs/FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-44
 format: md
+upstream_id: FAQ/faqs-system-development/faqs-network/faqs-network-kit/faqs-network-44
+last_sync: 2026-06-07
+sync_hash: 6954cde4
 ---
-
-
 **原因**
 
 客户端的socket被回收释放而导致较高概率接收不到client.on("message", (value: SocketInfo) 中的回调。

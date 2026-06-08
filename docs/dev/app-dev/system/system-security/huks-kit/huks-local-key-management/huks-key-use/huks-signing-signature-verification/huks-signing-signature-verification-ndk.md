@@ -2,9 +2,10 @@
 title: "签名/验签(C/C++)"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-ndk
 format: md
+upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/huks-key-use/huks-signing-signature-verification/huks-signing-signature-verification-ndk
+last_sync: 2026-06-07
+sync_hash: ac2927f5
 ---
-
-
 当前指导提供以下示例，供开发者参考完成签名、验签开发：
 
 * 密钥算法为ECC256、摘要算法为SHA256，请见开发案例：[ECC256/SHA256](#ecc256sha256)

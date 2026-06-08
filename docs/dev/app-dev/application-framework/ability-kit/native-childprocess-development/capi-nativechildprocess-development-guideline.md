@@ -2,9 +2,10 @@
 title: "创建/终止Native子进程（C/C++）"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/native-childprocess-development/capi-nativechildprocess-development-guideline
 format: md
+upstream_id: dev/app-dev/application-framework/ability-kit/native-childprocess-development/capi-nativechildprocess-development-guideline
+last_sync: 2026-06-07
+sync_hash: 91ac1d17
 ---
-
-
 本模块提供了两种创建[Native子进程](/docs/dev/app-dev/application-framework/ability-kit/ability-terminology#native子进程)的方式，以及一种终止子进程的方式。
 
 * [创建支持IPC通信的Native子进程](#创建支持ipc通信的native子进程)：创建子进程，并在父子进程间建立IPC通道，适用于父子进程需要IPC通信的场景。对[IPCKit](/docs/dev/app-dev/application-framework/ipc-kit/ipc-capi-development-guideline)存在依赖。
