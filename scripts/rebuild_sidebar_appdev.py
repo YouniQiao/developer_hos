@@ -180,7 +180,37 @@ def build_from_catalog(node, rel_dir, parent_search=None, depth=0):
     
     return items
 
-def gen_entry_catalog(label, rel_dir):
+# Which kits use catalog vs filesystem generation
+# Original kits (already in sidebar before this PR) use filesystem to preserve curated structure
+FS_ONLY_KITS = {
+    'Ability Kit（程序框架服务）', 'ArkTS（方舟编程语言）', 'ArkWeb（方舟Web）',
+    'Background Tasks Kit（后台任务开发服务）', 'Content Embed Kit（内容嵌入服务）',
+    'Core File Kit（文件基础服务）', 'Data Augmentation Kit（数据增强服务）',
+    'IME Kit（输入法开发服务）', 'IPC Kit（进程间通信服务）',
+    'Localization Kit（本地化开发服务）',
+    # Original media kits
+    'Audio Kit（音频服务）', 'AVCodec Kit（音视频编解码服务）',
+    'AVSession Kit（音视频播控服务）', 'DRM Kit（数字版权保护服务）',
+    'Media Kit（媒体服务）', 'Ringtone Kit（铃声服务）', 'Scan Kit（统一扫码服务）',
+    # Original graphics kits
+    'ArkGraphics 2D（方舟2D图形服务）', 'ArkGraphics 3D（方舟3D图形）',
+    'Spatial Recon Kit（空间建模服务）', 'XEngine Kit（GPU加速引擎服务）',
+    # Original 应用服务 kits
+    'Calendar Kit（日历服务）', 'Contacts Kit（联系人服务）',
+    'File Manager Service Kit（文件管理服务）', 'Game Controller Kit（游戏控制器服务）',
+    'Live View Kit（实况窗服务）', 'Payment Kit（鸿蒙支付服务）',
+    'Preview Kit（文件预览服务）', 'Reader Kit（阅读服务）',
+    # Original AI kits
+    'Agent Framework Kit（智能体框架服务）', 'Core Vision Kit（基础视觉服务）',
+    'MindSpore Lite Kit（昇思推理框架服务）', 'Natural Language Kit（自然语言理解服务）',
+    'Neural Network Runtime Kit（Neural Network运行时服务）', 'Speech Kit（场景化语音服务）',
+}
+
+def gen_entry(label, rel_dir):
+    """Generate entry: filesystem for original kits, catalog for new ones."""
+    if label in FS_ONLY_KITS:
+        return gen_entry_fs(label, rel_dir)
+def gen_entry(label, rel_dir):
     """Generate a sidebar entry from the Huawei catalog tree."""
     cat_node = find_catalog_node(label)
     if not cat_node:
@@ -401,7 +431,7 @@ lines.append("      collapsed: true,")
 lines.append("      items: [")
 appfw_entries = []
 for label, rel_dir in SECTIONS['应用框架']:
-    e = gen_entry_catalog(label, rel_dir)
+    e = gen_entry(label, rel_dir)
     if e:
         appfw_entries.append("        " + e)
         print(f"  ✓ {label}")
@@ -421,7 +451,7 @@ sys_entries = []
 # 安全
 sec_lines = []
 for label, rel_dir in SECTIONS['系统/安全']:
-    e = gen_entry_catalog(label, rel_dir)
+    e = gen_entry(label, rel_dir)
     if e:
         sec_lines.append("            " + e)
         print(f"  ✓ 安全/{label}")
@@ -455,7 +485,7 @@ for section in ['媒体', '图形', '应用服务', 'AI']:
     lines.append("      items: [")
     sec_entries = []
     for label, rel_dir in SECTIONS[section]:
-        e = gen_entry_catalog(label, rel_dir)
+        e = gen_entry(label, rel_dir)
         if e:
             sec_entries.append("        " + e)
             print(f"  ✓ {section}/{label}")
