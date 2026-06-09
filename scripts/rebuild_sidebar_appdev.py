@@ -171,35 +171,39 @@ def build_from_catalog(node, rel_dir, parent_search=None, depth=0):
     return items
 
 def gen_entry(label, rel_dir):
-    """Generate entry: catalog order + filesystem structure."""
+    """Generate entry: catalog ordering + labels, filesystem structure."""
     cat_node = find_catalog_node(label)
-    # Build catalog-order map for this kit
     order_map = {}
+    label_map = {}
     if cat_node:
-        _build_order_map(cat_node, order_map)
+        _build_catalog_maps(cat_node, order_map, label_map)
     
     if not order_map:
         print(f"  ⚠ {label}: no catalog order, using filesystem alphabetical")
     
-    return gen_entry_fs(label, rel_dir, order_map)
+    return gen_entry_fs(label, rel_dir, order_map, label_map)
 
 
-def _build_order_map(node, order_map, counter=[0]):
-    """Walk catalog tree and assign position indices to relateDocument IDs."""
+def _build_catalog_maps(node, order_map, label_map, counter=[0]):
+    """Walk catalog tree: position indices + nodeName labels."""
     for child in node.get('children', []):
         doc = child.get('relateDocument', '')
-        if doc and doc not in order_map:
-            order_map[doc] = counter[0]
-            counter[0] += 1
+        name = child.get('nodeName', '')
+        if doc:
+            if doc not in order_map:
+                order_map[doc] = counter[0]
+                counter[0] += 1
+            if name and doc not in label_map:
+                label_map[doc] = name
         if child.get('children'):
-            _build_order_map(child, order_map, counter)
+            _build_catalog_maps(child, order_map, label_map, counter)
 
 # ========== FILESYSTEM FALLBACK ==========
 def path_to_doc_id(fpath):
     rel = os.path.relpath(fpath, BASE)
     return re.sub(r'\.(md|mdx)$', '', rel)
 
-def build_items_fs(dirpath, order_map=None):
+def build_items_fs(dirpath, order_map=None, label_map=None):
     items = []
     try:
         entries = os.listdir(dirpath)
@@ -208,6 +212,8 @@ def build_items_fs(dirpath, order_map=None):
     
     if order_map is None:
         order_map = {}
+    if label_map is None:
+        label_map = {}
     
     subdirs, files = [], []
     for e in entries:
@@ -231,9 +237,10 @@ def build_items_fs(dirpath, order_map=None):
         items.append(path_to_doc_id(os.path.join(dirpath, f)))
     for d in subdirs:
         dpath = os.path.join(dirpath, d)
-        children = build_items_fs(dpath, order_map)
+        children = build_items_fs(dpath, order_map, label_map)
         if children:
-            label = d.replace('-', ' ').title()
+            # Use catalog label if available, else generated label
+            label = label_map.get(d, d.replace('-', ' ').title())
             cat = {'type': 'category', 'label': label, 'collapsed': True, 'items': children}
             for lid in [path_to_doc_id(os.path.join(dpath, d)),
                         path_to_doc_id(os.path.join(dpath, d + '-overview'))]:
@@ -243,11 +250,11 @@ def build_items_fs(dirpath, order_map=None):
             items.append(cat)
     return items
 
-def gen_entry_fs(label, rel_dir, order_map=None):
+def gen_entry_fs(label, rel_dir, order_map=None, label_map=None):
     dirpath = os.path.join(BASE, 'dev/app-dev', rel_dir)
     if not os.path.isdir(dirpath):
         return None
-    items = build_items_fs(dirpath, order_map or {})
+    items = build_items_fs(dirpath, order_map or {}, label_map or {})
     if not items:
         return None
     return json.dumps({'type': 'category', 'label': label, 'collapsed': True, 'items': items},
@@ -335,15 +342,15 @@ SECTIONS = {
     '系统/安全': [
         ('程序访问控制', 'system/system-security/access-control'),
         ('Asset Store Kit（关键资产存储服务）', 'system/system-security/asset-store-kit'),
-        ('Crypto Architecture Kit（加解密系统框架）', 'system/system-security/crypto-architecture-kit'),
-        ('Data Guard Kit（数据防泄漏服务）', 'system/system-security/data-guard-kit-guide'),
+        ('Crypto Architecture Kit（加解密算法框架服务）', 'system/system-security/crypto-architecture-kit'),
+        ('Enterprise Data Guard Kit（企业数据保护服务）', 'system/system-security/data-guard-kit-guide'),
         ('Data Protection Kit（数据保护服务）', 'system/system-security/data-protection-kit'),
         ('Device Certificate Kit（设备证书服务）', 'system/system-security/device-certificate-kit'),
         ('Device Security Kit（设备安全服务）', 'system/system-security/device-security-kit-guide'),
         ('Enterprise Threat Protection Kit（企业威胁防护服务）', 'system/system-security/enterprise-threat-protection-kit-guide'),
-        ('HUKS Kit（通用密钥库服务）', 'system/system-security/huks-kit'),
+        ('Universal Keystore Kit（密钥管理服务）', 'system/system-security/huks-kit'),
         ('Online Authentication Kit（在线认证服务）', 'system/system-security/online-authentication-kit-guide'),
-        ('Password Vault Kit（密码保险箱服务）', 'system/system-security/passwordvault'),
+        ('密码自动填充服务', 'system/system-security/passwordvault'),
         ('User Authentication Kit（用户认证服务）', 'system/system-security/user-authentication-kit'),
     ],
 }
