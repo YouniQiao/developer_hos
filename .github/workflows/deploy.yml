@@ -39,7 +39,7 @@ jobs:
         run: |
           sudo swapoff /swapfile 2>/dev/null || true
           sudo rm -f /swapfile
-          sudo fallocate -l 16G /swapfile
+          sudo fallocate -l 20G /swapfile
           sudo chmod 600 /swapfile
           sudo mkswap /swapfile
           sudo swapon /swapfile
@@ -47,7 +47,7 @@ jobs:
       - name: Build
         run: npx docusaurus build --no-minify
         env:
-          NODE_OPTIONS: '--max-old-space-size=16384'
+          NODE_OPTIONS: '--max-old-space-size=10240'
           DOCUSAURUS_SSG_CONCURRENCY: '1'
 
       - name: Sync to preview site (local Nginx)
