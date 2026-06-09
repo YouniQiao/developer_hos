@@ -30,7 +30,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '24'
+          node-version: '20'
 
       - name: Install deps
         run: npm ci
@@ -39,33 +39,16 @@ jobs:
         run: |
           sudo swapoff /swapfile 2>/dev/null || true
           sudo rm -f /swapfile
-          sudo fallocate -l 20G /swapfile
+          sudo fallocate -l 16G /swapfile
           sudo chmod 600 /swapfile
           sudo mkswap /swapfile
           sudo swapon /swapfile
 
       - name: Build
-        run: |
-          echo "=== Memory before build ==="
-          free -h
-          echo "=== Node version ==="
-          node --version
-          npx docusaurus build --no-minify 2>&1 | tee /tmp/build.log
-          echo "EXIT=${PIPESTATUS[0]}"
+        run: npx docusaurus build --no-minify
         env:
-          NODE_OPTIONS: '--max-old-space-size=12288'
+          NODE_OPTIONS: '--max-old-space-size=8192'
           DOCUSAURUS_SSG_CONCURRENCY: '1'
-
-      - name: Build log diagnostics
-        if: failure()
-        run: |
-          echo "=== Build failed, checking logs ==="
-          echo "=== Last 50 lines of build log ==="
-          tail -50 /tmp/build.log 2>/dev/null || echo "(no build log)"
-          echo "=== Memory after build ==="
-          free -h
-          echo "=== dmesg (OOM) ==="
-          dmesg | grep -i 'oom\|killed' | tail -20 || echo "(no OOM messages)"
 
       - name: Sync to preview site (local Nginx)
         if: success()
