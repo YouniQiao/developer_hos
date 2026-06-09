@@ -50,7 +50,14 @@ export default function DesignSubNav() {
   const location = useLocation();
 
   function isActive(item) {
-    return location.pathname.startsWith(item.match);
+    // 找最长前缀匹配的项，避免父级误激活（如 /docs/design 匹配到 /docs/design/app-compatibility）
+    const best = NAV_ITEMS.reduce((best, it) => {
+      if (location.pathname.startsWith(it.match) && it.match.length > best.match.length) {
+        return it;
+      }
+      return best;
+    }, { match: '' });
+    return best === item;
   }
 
   return (
