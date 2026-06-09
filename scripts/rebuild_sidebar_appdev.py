@@ -122,30 +122,20 @@ KIT_TO_RELDIR = {
 
 def resolve_doc_id(relate_document, parent_search=None, rel_dir=None):
     """Resolve a relateDocument string to a local doc ID.
-    
-    Strategy: try multiple path resolutions.
+    Returns None if no local file exists.
     """
-    # Build candidate paths
+    if not relate_document:
+        return None
     candidates = []
     base = f'dev/app-dev/{rel_dir}'
-    
-    # 1. Exact match: parentSearch/relateDocument
     if parent_search:
         candidates.append(f'{base}/{parent_search}/{relate_document}')
-    
-    # 2. In the root of rel_dir
     candidates.append(f'{base}/{relate_document}')
-    
-    # 3. Try with -overview suffix variations
-    # (the doc might be named differently)
-    
     for cand in candidates:
         for ext in ['.md', '.mdx']:
             if os.path.exists(os.path.join(BASE, cand + ext)):
                 return cand
-    
-    # Fallback: return the most likely path
-    return candidates[0] if candidates else f'{base}/{relate_document}'
+    return None
 
 def build_from_catalog(node, rel_dir, parent_search=None, depth=0):
     """Recursively build sidebar items from a catalog tree node."""
@@ -161,7 +151,8 @@ def build_from_catalog(node, rel_dir, parent_search=None, depth=0):
         if is_leaf:
             # Leaf node → doc ID
             doc_id = resolve_doc_id(doc, pf, rel_dir)
-            items.append(doc_id)
+            if doc_id:
+                items.append(doc_id)
         else:
             # Category node → recurse
             sub_items = build_from_catalog(child, rel_dir, pf, depth+1)
@@ -172,9 +163,8 @@ def build_from_catalog(node, rel_dir, parent_search=None, depth=0):
                     'collapsed': True,
                     'items': sub_items,
                 }
-                # Try to find a listing doc for this category
                 listing = resolve_doc_id(doc, pf, rel_dir)
-                if os.path.exists(os.path.join(BASE, listing + '.md')) or os.path.exists(os.path.join(BASE, listing + '.mdx')):
+                if listing:
                     cat['link'] = {'type': 'doc', 'id': listing}
                 items.append(cat)
     
@@ -210,19 +200,15 @@ def gen_entry(label, rel_dir):
     """Generate entry: filesystem for original kits, catalog for new ones."""
     if label in FS_ONLY_KITS:
         return gen_entry_fs(label, rel_dir)
-def gen_entry(label, rel_dir):
-    """Generate a sidebar entry from the Huawei catalog tree."""
+    # New kits: try catalog tree, fallback to filesystem
     cat_node = find_catalog_node(label)
     if not cat_node:
-        print(f"  ⚠ {label}: not found in catalog tree, falling back to filesystem")
-        # Fallback to filesystem-based generation
+        print(f"  ⚠ {label}: not found in catalog, falling back to filesystem")
         return gen_entry_fs(label, rel_dir)
-    
     items = build_from_catalog(cat_node, rel_dir)
     if not items:
         print(f"  ⚠ {label}: empty catalog, falling back to filesystem")
         return gen_entry_fs(label, rel_dir)
-    
     entry = {
         'type': 'category',
         'label': label,
