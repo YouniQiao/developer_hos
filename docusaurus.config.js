@@ -178,11 +178,6 @@ const config = {
             ],
           },
           {
-            to: '/update',
-            label: '更新记录与计划',
-            position: 'right',
-          },
-          {
             href: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-references/development-intro-api',
             label: 'API参考',
             position: 'right',
