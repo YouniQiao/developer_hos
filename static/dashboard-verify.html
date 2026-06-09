@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>内容同步仪表盘 — 本地验证</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f9fafb; color: #111827; padding: 32px 24px; max-width: 1200px; margin: 0 auto; }
+h1 { margin-bottom: 8px; }
+h2 { margin-top: 48px; margin-bottom: 16px; }
+.meta { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; }
+.card { background: #fff; border-radius: 8px; padding: 16px; border: 1px solid #e5e7eb; }
+.card .label { font-size: 13px; color: #6b7280; }
+.card .value { font-size: 28px; font-weight: 700; }
+.bar-row { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+.bar-label { width: 140px; font-size: 14px; font-weight: 600; text-align: right; flex-shrink: 0; }
+.bar-track { flex: 1; height: 24px; background: #f3f4f6; border-radius: 4px; overflow: hidden; }
+.bar-fill { height: 100%; background: #6366f1; border-radius: 4px; transition: width 0.3s; }
+.bar-num { font-size: 13px; color: #6b7280; min-width: 40px; }
+.bar-extra { font-size: 12px; min-width: 60px; }
+.filters { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; }
+.filters select, .filters input { padding: 6px 12px; border-radius: 6px; border: 1px solid #d1d5db; font-size: 13px; }
+.filters input { flex: 1; min-width: 160px; }
+.filters .count { font-size: 13px; color: #6b7280; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { padding: 8px 12px; text-align: left; cursor: pointer; border-bottom: 2px solid #e5e7eb; }
+td { padding: 6px 12px; border-bottom: 1px solid #f3f4f6; }
+td.path { color: #6b7280; max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+td.uid { color: #9ca3af; font-size: 12px; max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; color: #fff; margin-right: 4px; }
+.loading { text-align: center; padding: 40px; color: #6b7280; }
+.error { text-align: center; padding: 40px; color: #ef4444; }
+</style>
+</head>
+<body>
+<h1>📊 内容同步仪表盘</h1>
+<div class="meta" id="meta"></div>
+<div id="app"><div class="loading">加载中...</div></div>
+
+<script>
+const STATUS_COLORS = {
+  mirror: '#22c55e', local: '#a78bfa', upstream_deleted_pending: '#f97316',
+  upstream_deleted: '#ef4444', rewritten: '#3b82f6', split_root: '#8b5cf6',
+  split_child: '#6366f1', merged: '#06b6d4',
+};
+
+let data = null;
+let filterSection = '', filterStatus = '', searchTitle = '', sortKey = 'path';
+
+fetch('/content-map.json')
+  .then(r => r.json())
+  .then(d => { data = d; render(); })
+  .catch(e => { document.getElementById('app').innerHTML = `<div class="error">加载失败: ${e.message}</div>`; });
+
+function render() {
+  const { summary, docs, generated_at } = data;
+
+  // Meta
+  document.getElementById('meta').textContent = `数据更新时间: ${generated_at || '未知'}  |  总文档: ${summary.total_docs.toLocaleString()}`;
+
+  // Sections
+  const sections = buildSections(docs);
+  const maxTotal = Math.max(...sections.map(s => s.total), 1);
+  const hasChanges = summary.with_upstream_changes > 0;
+
+  let html = '';
+
+  // Cards
+  html += '<div class="cards">';
+  html += card('总文档', summary.total_docs, '#6366f1');
+  html += card('镜像', summary.by_status.mirror || 0, '#22c55e');
+  html += card(hasChanges ? '🔄 有变更' : '有变更', summary.with_upstream_changes, hasChanges ? '#f59e0b' : '#6b7280');
+  html += card('待确认已删', summary.upstream_deleted_pending || 0, '#f97316');
+  html += card('本地', summary.by_status.local || 0, '#a78bfa');
+  html += '</div>';
+
+  // Bar chart
+  html += '<h2>🗂️ 板块分布</h2>';
+  for (const s of sections) {
+    html += `<div class="bar-row">
+      <span class="bar-label">${s.name}</span>
+      <div class="bar-track"><div class="bar-fill" style="width:${(s.total/maxTotal)*100}%"></div></div>
+      <span class="bar-num">${s.total}</span>`;
+    if (s.changed > 0) html += `<span class="bar-extra" style="color:#f59e0b">🔄${s.changed}</span>`;
+    if (s.deleted > 0) html += `<span class="bar-extra" style="color:#f97316">⚠️${s.deleted}</span>`;
+    html += '</div>';
+  }
+
+  // Filters
+  const secOpts = sections.map(s => `<option value="${s.name}">${s.name} (${s.total})</option>`).join('');
+  html += `<h2>📋 文档列表</h2>
+    <div class="filters">
+      <select id="filterSection"><option value="">全部板块</option>${secOpts}</select>
+      <select id="filterStatus">
+        <option value="">全部状态</option>
+        <option value="mirror">镜像</option>
+        <option value="upstream_deleted_pending">待确认已删</option>
+        <option value="local">本地</option>
+      </select>
+      <input id="searchTitle" type="text" placeholder="搜索标题...">
+      <span class="count" id="rowCount"></span>
+    </div>
+    <table id="docTable"><thead><tr>
+      <th data-sort="path">路径 ▾</th><th data-sort="title">标题 ▸</th><th data-sort="status">状态 ▸</th><th>标识</th>
+    </tr></thead><tbody></tbody></table>`;
+
+  document.getElementById('app').innerHTML = html;
+
+  // Bind events
+  document.getElementById('filterSection').addEventListener('change', e => { filterSection = e.target.value; renderTable(); });
+  document.getElementById('filterStatus').addEventListener('change', e => { filterStatus = e.target.value; renderTable(); });
+  document.getElementById('searchTitle').addEventListener('input', e => { searchTitle = e.target.value; renderTable(); });
+  document.querySelectorAll('#docTable th').forEach(th => {
+    th.addEventListener('click', () => { sortKey = th.dataset.sort; renderTable(); });
+  });
+
+  renderTable();
+}
+
+function card(label, value, color) {
+  return `<div class="card"><div class="label">${label}</div><div class="value" style="color:${color}">${value.toLocaleString()}</div></div>`;
+}
+
+function buildSections(docs) {
+  const map = {};
+  for (const [, info] of Object.entries(docs)) {
+    const parts = info.path.split('/');
+    const section = parts.length >= 2 ? parts[1] : '(root)';
+    if (!map[section]) map[section] = { name: section, total: 0, changed: 0, deleted: 0 };
+    map[section].total++;
+    if (info.has_upstream_changes) map[section].changed++;
+    if (info.status === 'upstream_deleted_pending') map[section].deleted++;
+  }
+  return Object.values(map).sort((a, b) => b.total - a.total);
+}
+
+function renderTable() {
+  let entries = Object.entries(data.docs);
+  if (filterSection) entries = entries.filter(([, info]) => info.path.startsWith('docs/' + filterSection + '/'));
+  if (filterStatus) entries = entries.filter(([, info]) => info.status === filterStatus);
+  if (searchTitle) {
+    const q = searchTitle.toLowerCase();
+    entries = entries.filter(([, info]) => info.title.toLowerCase().includes(q));
+  }
+  entries.sort((a, b) => {
+    const va = a[1][sortKey] || '';
+    const vb = b[1][sortKey] || '';
+    return va.localeCompare(vb);
+  });
+
+  document.getElementById('rowCount').textContent = `共 ${entries.length} 篇`;
+  const slice = entries.slice(0, 500);
+  const tbody = document.querySelector('#docTable tbody');
+  tbody.innerHTML = slice.map(([uid, info]) => {
+    const badge = `<span class="badge" style="background:${STATUS_COLORS[info.status]||'#6b7280'}">${info.status}</span>`;
+    const changeIcon = info.has_upstream_changes ? '<span style="color:#f59e0b;margin-left:4px">🔄</span>' : '';
+    return `<tr>
+      <td class="path">${info.path}</td>
+      <td>${info.title}</td>
+      <td>${badge}${changeIcon}</td>
+      <td class="uid">${uid}</td>
+    </tr>`;
+  }).join('');
+}
+</script>
+</body>
+</html>
