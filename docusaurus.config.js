@@ -35,7 +35,7 @@ const config = {
     v4: {
       removeLegacyPostBuildHeadAttribute: true,
     },
-    faster: true,
+    faster: false,
   },
 
   // Set the production url of your site here
