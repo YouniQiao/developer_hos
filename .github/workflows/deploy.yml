@@ -2,7 +2,7 @@ name: Deploy to Netlify
 
 on:
   schedule:
-    - cron: '0 17 * * *'   # 北京时间凌晨1点
+    - cron: '0 18 * * *'   # 北京时间凌晨2点
   workflow_dispatch:
 
 concurrency:
