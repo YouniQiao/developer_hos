@@ -1,16 +1,11 @@
 // @ts-check
-// Dev sidebar — 命令行工具预览。
+// Dev sidebar — 应用开发预览。
 
-const toolsSidebar = require('./sidebars-tools.js');
+const appdevSidebar = require('./sidebars-appdev.js');
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  cliToolsSidebar: toolsSidebar.cliToolsSidebar,
-  toolsSidebar: toolsSidebar.toolsSidebar,
-  aiAssistSidebar: toolsSidebar.aiAssistSidebar,
-  devecoTestingSidebar: toolsSidebar.devecoTestingSidebar,
-  ohpmSidebar: toolsSidebar.ohpmSidebar,
-  cloudDevSidebar: toolsSidebar.cloudDevSidebar,
+  appDevSidebar: appdevSidebar.appDevSidebar,
 };
 
 module.exports = sidebars;

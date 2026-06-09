@@ -170,64 +170,45 @@ def build_from_catalog(node, rel_dir, parent_search=None, depth=0):
     
     return items
 
-# Which kits use catalog vs filesystem generation
-# Original kits (already in sidebar before this PR) use filesystem to preserve curated structure
-FS_ONLY_KITS = {
-    'Ability Kit（程序框架服务）', 'ArkTS（方舟编程语言）', 'ArkWeb（方舟Web）',
-    'Background Tasks Kit（后台任务开发服务）', 'Content Embed Kit（内容嵌入服务）',
-    'Core File Kit（文件基础服务）', 'Data Augmentation Kit（数据增强服务）',
-    'IME Kit（输入法开发服务）', 'IPC Kit（进程间通信服务）',
-    'Localization Kit（本地化开发服务）',
-    # Original media kits
-    'Audio Kit（音频服务）', 'AVCodec Kit（音视频编解码服务）',
-    'AVSession Kit（音视频播控服务）', 'DRM Kit（数字版权保护服务）',
-    'Media Kit（媒体服务）', 'Ringtone Kit（铃声服务）', 'Scan Kit（统一扫码服务）',
-    # Original graphics kits
-    'ArkGraphics 2D（方舟2D图形服务）', 'ArkGraphics 3D（方舟3D图形）',
-    'Spatial Recon Kit（空间建模服务）', 'XEngine Kit（GPU加速引擎服务）',
-    # Original 应用服务 kits
-    'Calendar Kit（日历服务）', 'Contacts Kit（联系人服务）',
-    'File Manager Service Kit（文件管理服务）', 'Game Controller Kit（游戏控制器服务）',
-    'Live View Kit（实况窗服务）', 'Payment Kit（鸿蒙支付服务）',
-    'Preview Kit（文件预览服务）', 'Reader Kit（阅读服务）',
-    # Original AI kits
-    'Agent Framework Kit（智能体框架服务）', 'Core Vision Kit（基础视觉服务）',
-    'MindSpore Lite Kit（昇思推理框架服务）', 'Natural Language Kit（自然语言理解服务）',
-    'Neural Network Runtime Kit（Neural Network运行时服务）', 'Speech Kit（场景化语音服务）',
-}
-
 def gen_entry(label, rel_dir):
-    """Generate entry: filesystem for original kits, catalog for new ones."""
-    if label in FS_ONLY_KITS:
-        return gen_entry_fs(label, rel_dir)
-    # New kits: try catalog tree, fallback to filesystem
+    """Generate entry: catalog order + filesystem structure."""
     cat_node = find_catalog_node(label)
-    if not cat_node:
-        print(f"  ⚠ {label}: not found in catalog, falling back to filesystem")
-        return gen_entry_fs(label, rel_dir)
-    items = build_from_catalog(cat_node, rel_dir)
-    if not items:
-        print(f"  ⚠ {label}: empty catalog, falling back to filesystem")
-        return gen_entry_fs(label, rel_dir)
-    entry = {
-        'type': 'category',
-        'label': label,
-        'collapsed': True,
-        'items': items,
-    }
-    return json.dumps(entry, ensure_ascii=False, separators=(',', ':'))
+    # Build catalog-order map for this kit
+    order_map = {}
+    if cat_node:
+        _build_order_map(cat_node, order_map)
+    
+    if not order_map:
+        print(f"  ⚠ {label}: no catalog order, using filesystem alphabetical")
+    
+    return gen_entry_fs(label, rel_dir, order_map)
+
+
+def _build_order_map(node, order_map, counter=[0]):
+    """Walk catalog tree and assign position indices to relateDocument IDs."""
+    for child in node.get('children', []):
+        doc = child.get('relateDocument', '')
+        if doc and doc not in order_map:
+            order_map[doc] = counter[0]
+            counter[0] += 1
+        if child.get('children'):
+            _build_order_map(child, order_map, counter)
 
 # ========== FILESYSTEM FALLBACK ==========
 def path_to_doc_id(fpath):
     rel = os.path.relpath(fpath, BASE)
     return re.sub(r'\.(md|mdx)$', '', rel)
 
-def build_items_fs(dirpath):
+def build_items_fs(dirpath, order_map=None):
     items = []
     try:
-        entries = sorted(os.listdir(dirpath))
+        entries = os.listdir(dirpath)
     except:
         return items
+    
+    if order_map is None:
+        order_map = {}
+    
     subdirs, files = [], []
     for e in entries:
         epath = os.path.join(dirpath, e)
@@ -237,11 +218,20 @@ def build_items_fs(dirpath):
             subdirs.append(e)
         elif e.endswith(('.md', '.mdx')):
             files.append(e)
+    
+    # Sort files by catalog order, then alphabetical for items not in catalog
+    def sort_key(name):
+        stem = re.sub(r'\.(md|mdx)$', '', name)
+        return (order_map.get(stem, 999999), name.lower())
+    
+    files.sort(key=sort_key)
+    subdirs.sort(key=sort_key)
+    
     for f in files:
         items.append(path_to_doc_id(os.path.join(dirpath, f)))
     for d in subdirs:
         dpath = os.path.join(dirpath, d)
-        children = build_items_fs(dpath)
+        children = build_items_fs(dpath, order_map)
         if children:
             label = d.replace('-', ' ').title()
             cat = {'type': 'category', 'label': label, 'collapsed': True, 'items': children}
@@ -253,11 +243,11 @@ def build_items_fs(dirpath):
             items.append(cat)
     return items
 
-def gen_entry_fs(label, rel_dir):
+def gen_entry_fs(label, rel_dir, order_map=None):
     dirpath = os.path.join(BASE, 'dev/app-dev', rel_dir)
     if not os.path.isdir(dirpath):
         return None
-    items = build_items_fs(dirpath)
+    items = build_items_fs(dirpath, order_map or {})
     if not items:
         return None
     return json.dumps({'type': 'category', 'label': label, 'collapsed': True, 'items': items},
