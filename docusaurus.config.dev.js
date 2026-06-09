@@ -53,7 +53,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars-dev.js'),
-          include: ['dev/app-dev/getting-started/**', 'dev/app-dev/multi-device/**', 'quality/**', 'security/**'],
+          include: ['dev/app-dev/**'],
           routeBasePath: 'docs',
           exclude: ['**/img/**', '**/_category_**'],
           editUrl:
