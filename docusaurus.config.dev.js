@@ -53,7 +53,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars-dev.js'),
-          include: ['dev/app-dev/**'],
+          include: ['tools/**'],
           routeBasePath: 'docs',
           exclude: ['**/img/**', '**/_category_**'],
           editUrl:
@@ -166,7 +166,7 @@ const config = {
             rel: 'noopener noreferrer',
           },
           {
-            to: '/docs/tools/coding-debug/ide-tools-overview',
+            to: '/docs/tools/cli-tools/command-line-tools-overview',
             label: '工具',
             position: 'right',
           },
