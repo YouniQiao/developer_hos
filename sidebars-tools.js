@@ -1004,8 +1004,6 @@ cliToolsSidebar: [
 'tools/cli-tools/unpacking-tool',
 'tools/cli-tools/packing-unpacking',
 'tools/cli-tools/app-check-tool',
-'tools/cli-tools/hap-sign-tool',
-'tools/cli-tools/app-sign-tool',
 'tools/cli-tools/cem-tool',
 'tools/cli-tools/anm-tool',
 'tools/cli-tools/edm-tool',
