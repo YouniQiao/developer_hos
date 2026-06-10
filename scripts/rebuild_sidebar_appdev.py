@@ -215,40 +215,86 @@ def build_items_fs(dirpath, order_map=None, label_map=None):
     if label_map is None:
         label_map = {}
     
-    subdirs, files = [], []
+    # Collect files and directories into a unified list, sorted by catalog order
+    # so they're interleaved correctly (catalog order mixes files and dirs)
+    def sort_key(name):
+        stem = re.sub(r'\.(md|mdx)$', '', name)
+        return (order_map.get(stem, 999999), name.lower())
+    
+    entries_list = []
     for e in entries:
         epath = os.path.join(dirpath, e)
         if e.startswith('.') or e == 'img' or e == '_category_.json':
             continue
         if os.path.isdir(epath):
-            subdirs.append(e)
+            entries_list.append(('dir', e))
         elif e.endswith(('.md', '.mdx')):
-            files.append(e)
+            entries_list.append(('file', e))
     
-    # Sort files by catalog order, then alphabetical for items not in catalog
-    def sort_key(name):
-        stem = re.sub(r'\.(md|mdx)$', '', name)
-        return (order_map.get(stem, 999999), name.lower())
+    entries_list.sort(key=lambda x: sort_key(x[1]))
     
-    files.sort(key=sort_key)
-    subdirs.sort(key=sort_key)
-    
-    for f in files:
-        items.append(path_to_doc_id(os.path.join(dirpath, f)))
-    for d in subdirs:
-        dpath = os.path.join(dirpath, d)
-        children = build_items_fs(dpath, order_map, label_map)
-        if children:
-            # Use catalog label if available, else generated label
-            label = label_map.get(d, d.replace('-', ' ').title())
-            cat = {'type': 'category', 'label': label, 'collapsed': True, 'items': children}
-            for lid in [path_to_doc_id(os.path.join(dpath, d)),
-                        path_to_doc_id(os.path.join(dpath, d + '-overview'))]:
-                if os.path.exists(os.path.join(BASE, lid + '.md')) or os.path.exists(os.path.join(BASE, lid + '.mdx')):
-                    cat['link'] = {'type': 'doc', 'id': lid}
-                    break
-            items.append(cat)
+    for etype, e in entries_list:
+        if etype == 'file':
+            # Skip stub link-list files that have a corresponding directory
+            # (these are redundant index pages; their dir handles navigation)
+            stem = re.sub(r'\.(md|mdx)$', '', e)
+            dpath = os.path.join(dirpath, stem)
+            if os.path.isdir(dpath):
+                # Check if this file is a link-only stub
+                fpath = os.path.join(dirpath, e)
+                if _is_link_only_page(fpath):
+                    continue  # skip — the directory category replaces it
+            items.append(path_to_doc_id(os.path.join(dirpath, e)))
+        else:
+            dpath = os.path.join(dirpath, e)
+            children = build_items_fs(dpath, order_map, label_map)
+            if children:
+                # Use catalog label if available, else generated label
+                label = label_map.get(e, e.replace('-', ' ').title())
+                cat = {'type': 'category', 'label': label, 'collapsed': True, 'items': children}
+                # Try to find a landing page for this category
+                # Skip link-only stubs; prefer content pages
+                for lid_cand in [path_to_doc_id(os.path.join(dpath, e)),
+                                 path_to_doc_id(os.path.join(dpath, e + '-overview'))]:
+                    for ext in ['.md', '.mdx']:
+                        lid_path = os.path.join(BASE, lid_cand + ext)
+                        if os.path.exists(lid_path) and not _is_link_only_page(lid_path):
+                            cat['link'] = {'type': 'doc', 'id': lid_cand}
+                            break
+                    if 'link' in cat:
+                        break
+                items.append(cat)
     return items
+
+
+def _is_link_only_page(filepath):
+    """Check if a .md/.mdx page contains only a list of links (no real content)."""
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read()
+    except:
+        return False
+    if not content.startswith('---'):
+        return False
+    parts = content.split('---', 2)
+    if len(parts) < 3:
+        return False
+    body = parts[2].strip()
+    if not body:
+        return True  # empty body
+    lines = [l.strip() for l in body.split('\n') if l.strip()]
+    if not lines:
+        return True
+    # Every non-empty line must be a markdown link bullet.
+    # Handles: * [text](url), * **[text](url)**, ** [text](url), etc.
+    link_pattern = re.compile(r'^(\*{1,3}|\-)\s+\*{0,2}\[.+\]\(.+\)\*{0,2}$')
+    heading_pattern = re.compile(r'^#{1,6}\s+')  # heading lines are content, not link-only
+    for l in lines:
+        if heading_pattern.match(l):
+            return False
+        if not link_pattern.match(l):
+            return False
+    return True
 
 def gen_entry_fs(label, rel_dir, order_map=None, label_map=None):
     dirpath = os.path.join(BASE, 'dev/app-dev', rel_dir)
