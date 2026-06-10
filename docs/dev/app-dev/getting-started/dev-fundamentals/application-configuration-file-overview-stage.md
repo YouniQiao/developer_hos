@@ -1,5 +1,5 @@
 ---
-title: "应用配置文件概述（Stage模型）"
+title: "应用配置文件概述"
 original_url: /docs/dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-overview-stage
 upstream_id: dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-overview-stage
 last_sync: 2026-06-07

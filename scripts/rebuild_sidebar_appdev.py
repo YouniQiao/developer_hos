@@ -513,6 +513,27 @@ for section in ['媒体', '图形', '应用服务', 'AI']:
     lines.append("      collapsed: true,")
     lines.append("      items: [")
     sec_entries = []
+    # Insert section-level overview page if it exists
+    overview_doc_id = f'dev/app-dev/{section.lower()}-overview' if section == '媒体' else None
+    if overview_doc_id:
+        from pathlib import Path as _Path
+        found_overview = False
+        for _ext in ['.md', '.mdx']:
+            if os.path.exists(os.path.join(BASE, overview_doc_id + _ext)):
+                found_overview = True
+                break
+        # Also check specific known overview pages
+        if not found_overview:
+            # Try multimedia-development-overview for 媒体
+            alt_id = 'dev/app-dev/media/multimedia-development-overview'
+            for _ext in ['.md', '.mdx']:
+                if os.path.exists(os.path.join(BASE, alt_id + _ext)):
+                    overview_doc_id = alt_id
+                    found_overview = True
+                    break
+        if found_overview:
+            sec_entries.append(f'        "{overview_doc_id}"')
+            print(f"  ✓ {section}/概览")
     for label, rel_dir in SECTIONS[section]:
         e = gen_entry(label, rel_dir)
         if e:

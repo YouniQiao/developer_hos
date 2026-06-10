@@ -5,13 +5,13 @@ module.exports = {
       type: 'category',
       label: '入门与准备',
       collapsed: true,
-      link: { type: 'doc', id: 'dev/app-dev/getting-started/quick-start/quick-start' },
+      link: { type: 'doc', id: 'dev/app-dev/getting-started/quick-start/start-overview' },
       items: [
         {
           type: 'category',
           label: '快速入门',
           collapsed: true,
-          link: { type: 'doc', id: 'dev/app-dev/getting-started/quick-start/quick-start' },
+          link: { type: 'doc', id: 'dev/app-dev/getting-started/quick-start/start-overview' },
           items: [
             'dev/app-dev/getting-started/quick-start/start-overview',
             'dev/app-dev/getting-started/quick-start/start-with-ets-stage'
@@ -19,78 +19,57 @@ module.exports = {
         },
         {
           type: 'category',
-          label: '开发基础知识',
+          label: '开发基础',
           collapsed: true,
-          link: { type: 'doc', id: 'dev/app-dev/getting-started/dev-fundamentals/development-fundamentals' },
+          link: { type: 'doc', id: 'dev/app-dev/getting-started/dev-fundamentals/arkts-quickstart' },
           items: [
+            'dev/app-dev/getting-started/dev-fundamentals/arkts-quickstart',
+            'dev/app-dev/getting-started/dev-fundamentals/ui-quickstart',
             {
               type: 'category',
-              label: '应用程序包基础知识',
+              label: '应用配置文件',
               collapsed: true,
-              link: { type: 'doc', id: 'dev/app-dev/getting-started/dev-fundamentals/application-package-fundamentals' },
-              items: [
-                'dev/app-dev/getting-started/dev-fundamentals/application-package-overview',
-                {
-                  type: 'category',
-                  label: '应用程序包结构',
-                  collapsed: true,
-                  link: { type: 'doc', id: 'dev/app-dev/getting-started/dev-fundamentals/application-package-structure' },
-                  items: [
-                    'dev/app-dev/getting-started/dev-fundamentals/application-package-structure-stage',
-                    'dev/app-dev/getting-started/dev-fundamentals/application-package-structure-fa'
-                  ]
-                },
-                {
-                  type: 'category',
-                  label: '应用程序包开发与使用',
-                  collapsed: true,
-                  link: { type: 'doc', id: 'dev/app-dev/getting-started/dev-fundamentals/application-package-dev' },
-                  items: [
-                    'dev/app-dev/getting-started/dev-fundamentals/hap-package',
-                    'dev/app-dev/getting-started/dev-fundamentals/har-package',
-                    'dev/app-dev/getting-started/dev-fundamentals/in-app-hsp'
-                  ]
-                },
-                {
-                  type: 'category',
-                  label: '应用程序包安装卸载与更新',
-                  collapsed: true,
-                  link: { type: 'doc', id: 'dev/app-dev/getting-started/dev-fundamentals/application-package-install' },
-                  items: [
-                    'dev/app-dev/getting-started/dev-fundamentals/application-package-install-uninstall',
-                    'dev/app-dev/getting-started/dev-fundamentals/install-and-update-consistency-verification'
-                  ]
-                }
-              ]
-            },
-            {
-              type: 'category',
-              label: '应用配置文件（Stage模型）',
-              collapsed: true,
-              link: { type: 'doc', id: 'dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-stage' },
+              link: { type: 'doc', id: 'dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-overview-stage' },
               items: [
                 'dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-overview-stage',
                 'dev/app-dev/getting-started/dev-fundamentals/app-configuration-file',
                 'dev/app-dev/getting-started/dev-fundamentals/module-configuration-file'
               ]
             },
+            'dev/app-dev/getting-started/dev-fundamentals/resource-and-adaptation'
+          ]
+        },
+        {
+          type: 'category',
+          label: '工程与打包',
+          collapsed: true,
+          link: { type: 'doc', id: 'dev/app-dev/getting-started/dev-fundamentals/application-package-overview' },
+          items: [
+            'dev/app-dev/getting-started/dev-fundamentals/application-package-overview',
+            'dev/app-dev/getting-started/dev-fundamentals/application-package-structure-stage',
             {
               type: 'category',
-              label: '应用配置文件（FA模型）',
+              label: '多模块使用',
               collapsed: true,
-              link: { type: 'doc', id: 'dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-fa' },
               items: [
-                'dev/app-dev/getting-started/dev-fundamentals/application-configuration-file-overview-fa',
-                'dev/app-dev/getting-started/dev-fundamentals/app-structure',
-                'dev/app-dev/getting-started/dev-fundamentals/deviceconfig-structure',
-                'dev/app-dev/getting-started/dev-fundamentals/module-structure'
+                'dev/app-dev/getting-started/dev-fundamentals/hap-package',
+                'dev/app-dev/getting-started/dev-fundamentals/har-package',
+                'dev/app-dev/getting-started/dev-fundamentals/in-app-hsp'
               ]
             },
             {
               type: 'category',
-              label: '典型场景的开发指导',
+              label: '安装卸载与更新',
               collapsed: true,
-              link: { type: 'doc', id: 'dev/app-dev/getting-started/dev-fundamentals/application-typical-scenarios' },
+              items: [
+                'dev/app-dev/getting-started/dev-fundamentals/application-package-install-uninstall',
+                'dev/app-dev/getting-started/dev-fundamentals/install-and-update-consistency-verification'
+              ]
+            },
+            {
+              type: 'category',
+              label: '典型场景',
+              collapsed: true,
               items: [
                 'dev/app-dev/getting-started/dev-fundamentals/typical-scenario-configuration',
                 'dev/app-dev/getting-started/dev-fundamentals/app-clone',
@@ -106,7 +85,6 @@ module.exports = {
             'dev/app-dev/getting-started/dev-fundamentals/application-package-glossary'
           ]
         },
-        'dev/app-dev/getting-started/resource-access/resource-categories-and-access',
         'dev/app-dev/getting-started/glossary/glossary'
       ]
     },
@@ -167,6 +145,7 @@ module.exports = {
       label: '媒体',
       collapsed: true,
       items: [
+        "dev/app-dev/media/multimedia-development-overview",
         {"type":"category","label":"Audio Kit（音频服务）","collapsed":true,"items":["dev/app-dev/media/audio-kit/audio-kit-intro","dev/app-dev/media/audio-kit/using-right-streamusage-and-sourcetype",{"type":"category","label":"音频焦点和音频会话管理","collapsed":true,"items":["dev/app-dev/media/audio-kit/audio-session/audio-playback-concurrency","dev/app-dev/media/audio-kit/audio-session/audio-session-management","dev/app-dev/media/audio-kit/audio-session/using-ohaudio-for-session"]},{"type":"category","label":"音频播放","collapsed":true,"items":["dev/app-dev/media/audio-kit/audio-playback/audio-playback-overview","dev/app-dev/media/audio-kit/audio-playback/using-ohaudio-for-playback","dev/app-dev/media/audio-kit/audio-playback/using-audiorenderer-for-playback","dev/app-dev/media/audio-kit/audio-playback/audio-fast-playback","dev/app-dev/media/audio-kit/audio-playback/power-saving-for-playback","dev/app-dev/media/audio-kit/audio-playback/using-audiohaptic-for-playback","dev/app-dev/media/audio-kit/audio-playback/using-soundplayer-for-playback","dev/app-dev/media/audio-kit/audio-playback/volume-management","dev/app-dev/media/audio-kit/audio-playback/public-audio-spatialization-management","dev/app-dev/media/audio-kit/audio-playback/audio-playback-stream-management"],"link":{"type":"doc","id":"dev/app-dev/media/audio-kit/audio-playback/audio-playback-overview"}},{"type":"category","label":"音频录制","collapsed":true,"items":["dev/app-dev/media/audio-kit/audio-recording/audio-recording-overview","dev/app-dev/media/audio-kit/audio-recording/using-ohaudio-for-recording","dev/app-dev/media/audio-kit/audio-recording/using-audiocapturer-for-recording","dev/app-dev/media/audio-kit/audio-recording/audio-fast-recording","dev/app-dev/media/audio-kit/audio-recording/mic-management","dev/app-dev/media/audio-kit/audio-recording/audio-recording-stream-management","dev/app-dev/media/audio-kit/audio-recording/audio-recording-concurrency","dev/app-dev/media/audio-kit/audio-recording/audio-ear-monitor","dev/app-dev/media/audio-kit/audio-recording/audio-ear-monitor-loopback"],"link":{"type":"doc","id":"dev/app-dev/media/audio-kit/audio-recording/audio-recording-overview"}},{"type":"category","label":"音频设备路由管理","collapsed":true,"items":["dev/app-dev/media/audio-kit/audio-device/audio-input-device-management","dev/app-dev/media/audio-kit/audio-device/audio-output-device-management","dev/app-dev/media/audio-kit/audio-device/audio-input-device-switcher","dev/app-dev/media/audio-kit/audio-device/audio-output-device-switcher","dev/app-dev/media/audio-kit/audio-device/audio-output-device-change"]},{"type":"category","label":"音频通话","collapsed":true,"items":["dev/app-dev/media/audio-kit/audio-call/audio-call-overview","dev/app-dev/media/audio-kit/audio-call/audio-call-development"],"link":{"type":"doc","id":"dev/app-dev/media/audio-kit/audio-call/audio-call-overview"}},{"type":"category","label":"音频性能调优","collapsed":true,"items":["dev/app-dev/media/audio-kit/audio-performance-optimization/audio-performance","dev/app-dev/media/audio-kit/audio-performance-optimization/audio-workgroup"]},{"type":"category","label":"音频编创","collapsed":true,"items":["dev/app-dev/media/audio-kit/audio-production-creation/audio-suite","dev/app-dev/media/audio-kit/audio-production-creation/audio-suite-manual-rendering","dev/app-dev/media/audio-kit/audio-production-creation/audio-suite-real-time-rendering"]},{"type":"category","label":"MIDI设备通信","collapsed":true,"items":["dev/app-dev/media/audio-kit/midi/midi-overview","dev/app-dev/media/audio-kit/midi/using-ohmidi"],"link":{"type":"doc","id":"dev/app-dev/media/audio-kit/midi/midi-overview"}},{"type":"category","label":"OpenSL ES开发指导(不再推荐)","collapsed":true,"items":["dev/app-dev/media/audio-kit/not-recommended/replace-opensles-by-ohaudio","dev/app-dev/media/audio-kit/not-recommended/using-opensl-es-for-playback","dev/app-dev/media/audio-kit/not-recommended/using-opensl-es-for-recording"]}]},
         {"type":"category","label":"AVCodec Kit（音视频编解码服务）","collapsed":true,"items":["dev/app-dev/media/avcodec-kit/avcodec-kit-intro","dev/app-dev/media/avcodec-kit/avcodec-support-formats",{"type":"category","label":"音视频编解码","collapsed":true,"items":["dev/app-dev/media/avcodec-kit/audio-video-codec/obtain-supported-codecs","dev/app-dev/media/avcodec-kit/audio-video-codec/audio-encoding","dev/app-dev/media/avcodec-kit/audio-video-codec/synchronous-audio-encoding","dev/app-dev/media/avcodec-kit/audio-video-codec/audio-decoding","dev/app-dev/media/avcodec-kit/audio-video-codec/synchronous-audio-decoding","dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding","dev/app-dev/media/avcodec-kit/audio-video-codec/synchronous-video-encoding","dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding-temporal-scalability","dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding-b-frame","dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding-configuration-typical-scenarios","dev/app-dev/media/avcodec-kit/audio-video-codec/video-encoding-roi","dev/app-dev/media/avcodec-kit/audio-video-codec/video-decoding","dev/app-dev/media/avcodec-kit/audio-video-codec/synchronous-video-decoding","dev/app-dev/media/avcodec-kit/audio-video-codec/video-variable-refreshrate",{"type":"category","label":"Audio Vivid能力","collapsed":true,"items":["dev/app-dev/media/avcodec-kit/audio-video-codec/audiovivid/audiovivid-intro","dev/app-dev/media/avcodec-kit/audio-video-codec/audiovivid/audiovivid-avdemuxer","dev/app-dev/media/avcodec-kit/audio-video-codec/audiovivid/audiovivid-audiodecoder","dev/app-dev/media/avcodec-kit/audio-video-codec/audiovivid/audiovivid-audiorenderer"]},{"type":"category","label":"HDR Vivid能力","collapsed":true,"items":["dev/app-dev/media/avcodec-kit/audio-video-codec/hdr-vivid-capability/hdr-vivid-video-player","dev/app-dev/media/avcodec-kit/audio-video-codec/hdr-vivid-capability/hdr-vivid-video-recorder","dev/app-dev/media/avcodec-kit/audio-video-codec/hdr-vivid-capability/hdrvivid2sdr"]},"dev/app-dev/media/avcodec-kit/audio-video-codec/parallel-decoding-nativewindow"]},{"type":"category","label":"媒体数据封装与解析","collapsed":true,"items":["dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-muxer","dev/app-dev/media/avcodec-kit/file-muxing-demuxing/audio-video-demuxer"]}]},
         {"type":"category","label":"AVSession Kit（音视频播控服务）","collapsed":true,"items":["dev/app-dev/media/avsession-kit/avsession-overview",{"type":"category","label":"本地媒体会话","collapsed":true,"items":["dev/app-dev/media/avsession-kit/local-avsession/local-avsession-overview","dev/app-dev/media/avsession-kit/local-avsession/using-avsession-developer","dev/app-dev/media/avsession-kit/local-avsession/using-ohavsession-developer","dev/app-dev/media/avsession-kit/local-avsession/avsession-access-scene","dev/app-dev/media/avsession-kit/local-avsession/avsession-background-scene","dev/app-dev/media/avsession-kit/local-avsession/avsession-desktop-lyrics"],"link":{"type":"doc","id":"dev/app-dev/media/avsession-kit/local-avsession/local-avsession-overview"}},{"type":"category","label":"分布式媒体会话","collapsed":true,"items":["dev/app-dev/media/avsession-kit/distributed-avsession/using-switch-call-devices",{"type":"category","label":"使用投播组件","collapsed":true,"items":["dev/app-dev/media/avsession-kit/distributed-avsession/distributed-playback/distributed-playback-overview","dev/app-dev/media/avsession-kit/distributed-avsession/distributed-playback/distributed-playback-guide","dev/app-dev/media/avsession-kit/distributed-avsession/distributed-playback/avsession-extended-screen"],"link":{"type":"doc","id":"dev/app-dev/media/avsession-kit/distributed-avsession/distributed-playback/distributed-playback-overview"}}]},{"type":"category","label":"应用接入播控自检","collapsed":true,"items":["dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/playback-control-access-checklist",{"type":"category","label":"应用接入播控检查项详细说明","collapsed":true,"items":["dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/basic-playback-control","dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/quick-playback","dev/app-dev/media/avsession-kit/playback-control-access-selfcheck/access-checklist/avcastpicker"]}]},"dev/app-dev/media/avsession-kit/avsession-recommendation",{"type":"category","label":"音频模板","collapsed":true,"items":["dev/app-dev/media/avsession-kit/music-template/using-avsession-avmusictemplate"]}]},
@@ -424,6 +403,7 @@ module.exports = {
             }],
         }],
     }
+  
   
   
   

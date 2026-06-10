@@ -97,7 +97,7 @@ const config = {
           {
             label: '开发与测试',
             type: 'dropdown',
-            to: '/docs/dev/app-dev/getting-started/quick-start/',
+            to: '/docs/dev/app-dev/getting-started/quick-start/start-overview',
             className: 'mega-dropdown',
             items: [
               {

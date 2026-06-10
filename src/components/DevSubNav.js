@@ -16,7 +16,7 @@ const NAV_ITEMS = [
   },
   {
     label: '应用开发',
-    path: '/docs/dev/app-dev/getting-started/quick-start/',
+    path: '/docs/dev/app-dev/getting-started/quick-start/start-overview',
     match: '/docs/dev/app-dev',
     desc: '原生鸿蒙应用开发指南',
   },
