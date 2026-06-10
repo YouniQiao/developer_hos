@@ -1,5 +1,5 @@
 ---
-title: "Stage模型应用配置文件"
+title: "应用配置文件"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/config-file-stage
 format: md
 upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/config-file-stage

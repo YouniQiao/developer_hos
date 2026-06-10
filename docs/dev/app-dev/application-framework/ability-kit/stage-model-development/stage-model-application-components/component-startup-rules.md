@@ -1,5 +1,5 @@
 ---
-title: "组件启动规则（Stage模型）"
+title: "组件启动规则"
 original_url: /docs/dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/component-startup-rules
 format: md
 upstream_id: dev/app-dev/application-framework/ability-kit/stage-model-development/stage-model-application-components/component-startup-rules

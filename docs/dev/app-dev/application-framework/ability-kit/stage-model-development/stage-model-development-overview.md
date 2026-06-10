@@ -41,29 +41,6 @@ sync_hash: 85c8b108
 
   Bundle是应用在安装部署阶段的静态文件，包含了所有HAP、HSP及相关资源；当其被安装并启动后，便形成了在运行期的动态实例Application。
 
-## 构成要素
-
-在[应用模型](/docs/dev/app-dev/application-framework/ability-kit/application-models)章节中介绍了应用模型的构成要素，主要包含应用组件、配置文件、进程模型、线程模型和任务管理模型。下面我们以Demo.app这个应用为例，从应用的开发阶段和运行阶段分别展开介绍，帮助开发者更好地理解Stage模型的构成要素。
-
-该Demo应用主要实现了如下功能：
-
-* 实现了两个独立的带界面的窗口（UIAbilityA、UIAbilityB），可以与用户交互。
-* 实现了卡片功能，便于用户将应用的卡片添加到桌面上。
-
-**图2** Stage模型构成要素
-
-![](./img/6f01a8f3.png)
-
-**开发阶段** ：需要通过Stage模型提供的应用组件（UIAbility组件和ExtensionAbility组件）开发应用功能，并在应用的配置文件（app.json5和module.json5）中注册应用的相关信息。
-
-* 应用组件：本例中使用UIAbility组件开发带界面的与用户交互的模块，使用FormExtensionAbility组件开发卡片模块，实现卡片的添加、删除、更新功能。为了减少不同功能模块间的依赖和耦合，将UIAbility和FormExtensionAbility的实现分别放在不同的HAP包中，同时，将两者共同依赖的一些通用功能放在HSP包中。
-* 配置文件：开发者可以在app.json5中配置应用的应用名、版本号、应用图标等，在module.json5中配置该HAP包下的组件清单、组件权限等信息。这些配置信息会在应用安装时注册到系统，便于系统和其他模块获取这个应用的详细信息，与应用进行交互。
-
-**运行阶段**：当应用安装到设备运行时，系统通过一套应用进程和线程的管理机制，确保功能的有序运行。
-
-* 进程模型：在本例中，UIAbility组件默认运行在主进程中，FormExtensionAbility组件运行在独立进程中，UIAbility和FormExtensionAbility组件之间是进程隔离的。更多详情可参考[进程模型](/docs/dev/app-dev/application-framework/ability-kit/stage-model-development/process-model-stage)。
-* 线程模型：Stage模型提供了worker、taskpool等机制支撑应用多线程开发场景。应用如果有复杂的耗时逻辑需要处理，可以通过创建worker的方式开启worker线程，交由worker线程处理。
-
 ## 开发流程
 
 基于Stage模型开发应用时，在应用模型部分，涉及如下开发过程。
