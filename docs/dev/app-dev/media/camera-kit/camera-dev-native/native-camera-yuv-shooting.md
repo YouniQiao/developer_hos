@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "YUV拍照(C/C++)"
+title: "YUV拍照"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-yuv-shooting
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-native/native-camera-yuv-shooting

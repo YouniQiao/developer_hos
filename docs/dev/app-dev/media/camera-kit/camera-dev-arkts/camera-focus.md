@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "对焦(ArkTS)"
+title: "对焦"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-focus
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-focus

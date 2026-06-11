@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "双路预览(ArkTS)"
+title: "双路预览"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-dual-channel-preview
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-dual-channel-preview

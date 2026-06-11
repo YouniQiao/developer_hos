@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "预览(C/C++)"
+title: "预览"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-preview
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-native/native-camera-preview

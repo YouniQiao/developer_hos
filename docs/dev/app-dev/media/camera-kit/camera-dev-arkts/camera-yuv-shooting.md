@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "YUV拍照(ArkTS)"
+title: "YUV拍照"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-yuv-shooting
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-yuv-shooting

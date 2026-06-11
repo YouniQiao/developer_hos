@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "HDR Vivid相机拍照(ArkTS)"
+title: "HDR Vivid相机拍照"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-hdr-shooting
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-hdr-shooting

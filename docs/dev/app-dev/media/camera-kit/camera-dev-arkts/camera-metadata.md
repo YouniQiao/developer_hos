@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "元数据(ArkTS)"
+title: "元数据"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-metadata
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-metadata

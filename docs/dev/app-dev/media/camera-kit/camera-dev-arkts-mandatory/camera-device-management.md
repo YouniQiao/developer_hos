@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "相机管理(ArkTS)"
+title: "相机管理"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-management
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-management

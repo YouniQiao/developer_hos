@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "元数据(C/C++)"
+title: "元数据"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-metadata
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-native/native-camera-metadata

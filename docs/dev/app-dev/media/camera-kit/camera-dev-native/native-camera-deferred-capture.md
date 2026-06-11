@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "分段式拍照(C/C++)"
+title: "分段式拍照"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-deferred-capture
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-native/native-camera-deferred-capture

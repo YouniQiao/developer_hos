@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "多摄同开(C/C++)"
+title: "多摄同开"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-concurrent-open
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-native/native-camera-concurrent-open

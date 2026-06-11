@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "动态照片拍摄(ArkTS)"
+title: "动态照片拍摄"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-moving-photo
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-moving-photo

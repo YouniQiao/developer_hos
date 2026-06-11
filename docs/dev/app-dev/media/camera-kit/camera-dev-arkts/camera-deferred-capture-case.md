@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "分段式拍照实践(ArkTS)"
+title: "分段式拍照实践"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-deferred-capture-case
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-deferred-capture-case

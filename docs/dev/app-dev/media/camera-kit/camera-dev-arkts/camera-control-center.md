@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "相机控制器(ArkTS)"
+title: "相机控制器"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-control-center
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-control-center

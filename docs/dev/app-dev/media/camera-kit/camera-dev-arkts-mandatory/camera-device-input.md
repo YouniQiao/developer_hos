@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "设备输入(ArkTS)"
+title: "设备输入"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-input
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts-mandatory/camera-device-input

@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "动态调整预览帧率(C/C++)"
+title: "动态调整预览帧率"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/camera-setframerate-native
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-native/camera-setframerate-native

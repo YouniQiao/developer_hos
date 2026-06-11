@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "微距能力设置(ArkTS)"
+title: "微距能力设置"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-macro
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-macro

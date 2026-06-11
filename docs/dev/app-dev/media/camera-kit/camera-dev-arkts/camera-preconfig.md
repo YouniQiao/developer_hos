@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "使用相机预配置(ArkTS)"
+title: "使用相机预配置"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-preconfig
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-preconfig

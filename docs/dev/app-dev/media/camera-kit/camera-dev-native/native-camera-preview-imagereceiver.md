@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "预览流二次处理(C/C++)"
+title: "预览流二次处理"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-preview-imagereceiver
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-native/native-camera-preview-imagereceiver

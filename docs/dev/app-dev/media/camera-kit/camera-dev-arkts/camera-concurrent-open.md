@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "多摄同开(ArkTS)"
+title: "多摄同开"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-concurrent-open
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-concurrent-open

@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "拍照实践(C/C++)"
+title: "拍照实践"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-native/native-camera-shooting-case
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-native/native-camera-shooting-case

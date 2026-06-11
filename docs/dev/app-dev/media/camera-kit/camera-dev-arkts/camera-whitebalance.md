@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "白平衡设置(ArkTS)"
+title: "白平衡设置"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-whitebalance
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-whitebalance

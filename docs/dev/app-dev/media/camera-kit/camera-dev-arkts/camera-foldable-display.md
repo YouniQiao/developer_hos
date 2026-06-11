@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "适配不同折叠状态的摄像头变更(ArkTS)"
+title: "适配不同折叠状态的摄像头变更"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-foldable-display
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-foldable-display

@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "适配相机旋转角度(ArkTS)"
+title: "适配相机旋转角度"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-angle-adaptation
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation/camera-rotation-angle-adaptation

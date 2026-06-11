@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "在Worker线程中使用相机(ArkTS)"
+title: "在Worker线程中使用相机"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-worker
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-worker

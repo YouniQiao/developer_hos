@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "手电筒使用(ArkTS)"
+title: "手电筒使用"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-torch-use
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-torch-use

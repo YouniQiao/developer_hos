@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "相机基础动效(ArkTS)"
+title: "相机基础动效"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-animation
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-animation

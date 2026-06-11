@@ -1,5 +1,5 @@
 ---
-title: "Camera Rotation Native"
+title: "相机旋转"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-rotation
 last_sync: 2026-06-07

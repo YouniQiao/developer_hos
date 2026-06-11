@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "安全相机(ArkTS)"
+title: "安全相机"
 original_url: /docs/dev/app-dev/media/camera-kit/camera-dev-arkts/camera-secure-photo
 format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-secure-photo
