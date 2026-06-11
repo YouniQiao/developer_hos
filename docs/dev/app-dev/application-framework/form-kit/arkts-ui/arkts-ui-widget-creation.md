@@ -1,5 +1,5 @@
 ---
-title: "创建ArkTS卡片"
+title: "创建卡片"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-creation
 format: md
 upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-creation

@@ -1,5 +1,5 @@
 ---
-title: "ArkTS卡片进程模型"
+title: "进程模型"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-process
 format: md
 upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-process

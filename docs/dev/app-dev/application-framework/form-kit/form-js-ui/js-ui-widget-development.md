@@ -1,5 +1,5 @@
 ---
-title: "JS卡片开发指导（Stage模型）"
+title: "JS卡片开发指导"
 original_url: /docs/dev/app-dev/application-framework/form-kit/form-js-ui/js-ui-widget-development
 format: md
 upstream_id: dev/app-dev/application-framework/form-kit/form-js-ui/js-ui-widget-development

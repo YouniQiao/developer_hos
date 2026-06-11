@@ -1,5 +1,5 @@
 ---
-title: "ArkTS卡片概述"
+title: "卡片概述"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-form-overview
 format: md
 upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-form-overview

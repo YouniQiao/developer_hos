@@ -1,5 +1,5 @@
 ---
-title: "配置ArkTS卡片的配置文件"
+title: "配置卡片"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration
 format: md
 upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-configuration

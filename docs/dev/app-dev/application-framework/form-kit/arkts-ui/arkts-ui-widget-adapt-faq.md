@@ -1,5 +1,5 @@
 ---
-title: "ArkTS卡片适配常见问题"
+title: "常见问题"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-adapt-faq
 format: md
 upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-adapt-faq

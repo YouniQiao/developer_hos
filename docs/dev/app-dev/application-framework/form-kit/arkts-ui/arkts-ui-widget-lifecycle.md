@@ -1,5 +1,5 @@
 ---
-title: "管理ArkTS卡片生命周期"
+title: "生命周期"
 original_url: /docs/dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-lifecycle
 format: md
 upstream_id: dev/app-dev/application-framework/form-kit/arkts-ui/arkts-ui-widget-lifecycle
