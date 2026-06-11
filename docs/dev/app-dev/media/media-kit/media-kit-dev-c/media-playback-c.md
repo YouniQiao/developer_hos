@@ -1,14 +1,17 @@
 ---
-title: "Media Playback C"
+title: "播放"
 original_url: /docs/dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts
 upstream_id: dev/app-dev/media/media-kit/media-kit-dev-arkts/media-playback-arkts
-last_sync: 2026-06-07
-sync_hash: 4538a381
-upstream_hash: 36bb47968f33
+last_sync: 2026-06-12
+sync_hash: 4e81bc62
 ---
 
 import SourceLink from '@site/src/components/SourceLink';
 
-# Media Playback C
+播放
+==
 
-本文档内容请参考华为官方文档。
+* **[使用AVPlayer播放音频(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-playback "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-playback")**
+* **[使用AVPlayer播放视频(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-video-playback "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-video-playback")**
+* **[使用AVPlayer播放流媒体(C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-streaming "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-avplayer-for-streaming")**
+* **[使用LPP播放器播放视频 (C/C++)](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-lpp-for-playback "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/using-ndk-lpp-for-playback")**
