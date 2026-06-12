@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "ArkGraphics Editor插件及编辑器的下载与安装"
+title: "Editor插件及编辑器的下载与安装"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-3d/arkgraphics-editor
 format: md
 upstream_id: dev/app-dev/graphics/arkgraphics-3d/arkgraphics-editor

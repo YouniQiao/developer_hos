@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "ArkGraphics 3D场景动画控制以及管理"
+title: "场景动画控制以及管理"
 original_url: /docs/dev/app-dev/graphics/arkgraphics-3d/arkgraphics3d-animation
 format: md
 upstream_id: dev/app-dev/graphics/arkgraphics-3d/arkgraphics3d-animation
