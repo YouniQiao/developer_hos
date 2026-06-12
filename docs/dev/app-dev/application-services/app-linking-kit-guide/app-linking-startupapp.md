@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "通过App Linking应用链接拉起指定应用"
+title: "通过应用链接拉起指定应用"
 original_url: /docs/dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp
 format: md
 upstream_id: dev/app-dev/application-services/app-linking-kit-guide/app-linking-startupapp
