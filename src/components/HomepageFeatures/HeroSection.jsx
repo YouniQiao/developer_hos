@@ -21,7 +21,7 @@ export default function HeroSection() {
           </p>
           <div className="mt-8 flex flex-col gap-4 lg:flex-row">
             <Link
-              to="/docs/dev/app-dev/getting-started/overview"
+              to="/docs/dev/app-dev/getting-started/quick-start/start-overview"
               className="rounded-sm bg-primary px-12 py-2.5 text-center font-semibold text-white hover:text-white"
             >
               快速开始
