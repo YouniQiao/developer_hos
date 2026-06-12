@@ -1,6 +1,6 @@
 ---
 displayed_sidebar: appDevSidebar
-title: "高性能GPU排序"
+title: "高性能GPU排序（Maleoon API）"
 original_url: /docs/dev/app-dev/graphics/xengine-kit-guide/xengine-kit-maleoon-api/xengine-kit-high-performance-gpu-sorting
 format: md
 upstream_id: dev/app-dev/graphics/xengine-kit-guide/xengine-kit-maleoon-api/xengine-kit-high-performance-gpu-sorting
