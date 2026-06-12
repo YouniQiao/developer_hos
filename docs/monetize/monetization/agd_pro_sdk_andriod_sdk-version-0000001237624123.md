@@ -6,6 +6,7 @@ format: md
 upstream_id: monetize/monetization/agd_pro_sdk_andriod_sdk-version-0000001237624123
 last_sync: 2026-06-07
 sync_hash: 70862193
+upstream_status: upstream_deleted_pending
 ---
 | 版本号 | 发布时间 | 更新说明 |
 | --- | --- | --- |

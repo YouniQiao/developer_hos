@@ -5,6 +5,7 @@ original_url: /docs/dev/release-notes/deveco-studio-new-features-600
 upstream_id: dev/release-notes/deveco-studio-new-features-600
 last_sync: 2026-06-07
 sync_hash: f980db84
+upstream_status: upstream_deleted_pending
 ---
 # DevEco Studio 版本说明 — 6.0.0(20)
 

@@ -6,6 +6,7 @@ upstream_id: dev/game-dev/gameobe-server-guides-0000002395350529
 last_sync: 2026-06-07
 sync_hash: 90dae8b2
 upstream_hash: 110a4cdb7731
+upstream_status: upstream_deleted_pending
 ---
 
 * **[业务概述](/docs/dev/game-dev/gameobe-realtime-server-0000002361510716)**

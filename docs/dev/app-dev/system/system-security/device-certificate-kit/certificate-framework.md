@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-security/device-certificate-kit/certificate-framework
 last_sync: 2026-06-07
 sync_hash: a5add096
+upstream_status: upstream_deleted_pending
 ---
 * **[证书算法库框架概述](/docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/certificate-framework-overview)**
 * **[证书对象的创建、解析和校验](/docs/dev/app-dev/system/system-security/device-certificate-kit/certificate-framework/create-parse-verify-cert-object)**

@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/system/system-basicfun/fast-kit-guide
 last_sync: 2026-06-07
 sync_hash: 0bcaa413
+upstream_status: upstream_deleted_pending
 ---
 * **[FAST Kit简介](/docs/dev/app-dev/system/system-basicfun/fast-kit-guide/fast-introduction)**
 * **[使用SegmentMap查询维护区间信息](/docs/dev/app-dev/system/system-basicfun/fast-kit-guide/fast-segment-map)**

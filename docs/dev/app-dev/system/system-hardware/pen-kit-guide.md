@@ -6,6 +6,7 @@ upstream_id: dev/app-dev/system/system-hardware/pen-kit-guide
 last_sync: 2026-06-07
 sync_hash: e6648c5d
 upstream_hash: 2f7798fde74b
+upstream_status: upstream_deleted_pending
 ---
 
 * **[Pen Kit简介](/docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-introduction)**

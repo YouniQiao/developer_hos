@@ -4,6 +4,7 @@ original_url: /docs/dev/app-dev/system/system-debug-optimize/performance-analysi
 upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/ev-24-hour-battery-usage-event
 last_sync: 2026-06-07
 sync_hash: aadb150e
+upstream_status: upstream_deleted_pending
 ---
 import SourceLink from '@site/src/components/SourceLink';
 

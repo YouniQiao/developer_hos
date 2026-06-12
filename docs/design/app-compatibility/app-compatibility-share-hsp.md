@@ -6,6 +6,7 @@ format: md
 upstream_id: design/app-compatibility/app-compatibility-share-hsp
 last_sync: 2026-06-07
 sync_hash: 5418e5fa
+upstream_status: upstream_deleted_pending
 ---
 # 应用集成"集成态hsp"的兼容性指导
 

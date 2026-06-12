@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/atomic-basic-capability-development/atomic-basic-capability-development
 last_sync: 2026-06-07
 sync_hash: c4fb1092
+upstream_status: upstream_deleted_pending
 ---
 * **[网络](/docs/dev/atomic-dev/atomic-network-development/atomic-network-development)**
 * **[数据](/docs/dev/atomic-dev/atomic-database/atomic-database)**

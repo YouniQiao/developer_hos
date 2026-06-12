@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/instant-service-app-store/instant-service-app-store-batch-update
 last_sync: 2026-06-07
 sync_hash: 832e9a8a
+upstream_status: upstream_deleted_pending
 ---
 1. 在服务直达主界面，选择“门店管理”页签，根据门店状态或门店名称/编码筛选出需要变更的门店。
 

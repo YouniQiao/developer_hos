@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-hardware
 last_sync: 2026-06-07
 sync_hash: 0654a1eb
+upstream_status: upstream_deleted_pending
 ---
 * **[Car Kit（车服务）](/docs/dev/app-dev/system/system-hardware/car-kit-guide)**
 * **[Driver Development Kit（驱动开发服务）](/docs/dev/app-dev/system/system-hardware/driver-development-kit)**

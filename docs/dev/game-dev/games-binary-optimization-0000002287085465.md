@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-binary-optimization-0000002287085465
 last_sync: 2026-06-07
 sync_hash: af9071ec
+upstream_status: upstream_deleted_pending
 ---
 * **[业务介绍](/docs/dev/game-dev/games-binary-optimization-overview-0000002377148237)**
 * **[下载工具包](/docs/dev/game-dev/games-binary-optimization-download-tool-0000002377028329)**

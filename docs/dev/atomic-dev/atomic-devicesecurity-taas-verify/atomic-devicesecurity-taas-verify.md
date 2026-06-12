@@ -5,5 +5,6 @@ format: md
 upstream_id: dev/atomic-dev/atomic-devicesecurity-taas-verify/atomic-devicesecurity-taas-verify
 last_sync: 2026-06-07
 sync_hash: c0c1e702
+upstream_status: upstream_deleted_pending
 ---
 # 签名验证

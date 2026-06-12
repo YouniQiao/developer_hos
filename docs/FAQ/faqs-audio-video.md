@@ -6,6 +6,7 @@ upstream_id: FAQ/faqs-audio-video
 last_sync: 2026-06-07
 sync_hash: d1fff68b
 upstream_hash: 13e2931218b1
+upstream_status: upstream_deleted_pending
 ---
 
 * **[音频（Audio）](/docs/FAQ/faqs-audio-kit)**

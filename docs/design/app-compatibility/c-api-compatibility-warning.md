@@ -6,6 +6,7 @@ format: md
 upstream_id: design/app-compatibility/c-api-compatibility-warning
 last_sync: 2026-06-07
 sync_hash: 919002d1
+upstream_status: upstream_deleted_pending
 ---
 # CAPI兼容性保护高阶用法
 

@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/resource-and-storage-optimization
 last_sync: 2026-06-07
 sync_hash: a6c50fa2
+upstream_status: upstream_deleted_pending
 ---
 # 资源与存储优化
 

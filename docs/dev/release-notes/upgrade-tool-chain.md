@@ -5,5 +5,6 @@ original_url: /docs/dev/release-notes/upgrade-tool-chain
 upstream_id: dev/release-notes/upgrade-tool-chain
 last_sync: 2026-06-07
 sync_hash: 9eedbf08
+upstream_status: upstream_deleted_pending
 ---
 # 开发工具链升级

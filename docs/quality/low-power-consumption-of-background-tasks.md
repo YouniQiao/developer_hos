@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/low-power-consumption-of-background-tasks
 last_sync: 2026-06-07
 sync_hash: 9f82d2c8
+upstream_status: upstream_deleted_pending
 ---
 # 后台任务低功耗
 

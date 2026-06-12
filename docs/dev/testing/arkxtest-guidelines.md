@@ -6,6 +6,7 @@ upstream_id: dev/testing/arkxtest-guidelines
 last_sync: 2026-06-07
 sync_hash: 6de52124
 upstream_hash: c198a8bd1f14
+upstream_status: upstream_deleted_pending
 ---
 
 * **[单元测试框架使用指导](/docs/dev/testing/ut/arkxtest-guidelines/unittest-guidelines)**

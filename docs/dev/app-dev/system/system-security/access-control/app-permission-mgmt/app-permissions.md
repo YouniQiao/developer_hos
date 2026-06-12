@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permissions
 last_sync: 2026-06-07
 sync_hash: 41d76a23
+upstream_status: upstream_deleted_pending
 ---
 根据权限的开放范围和授权方式不同，申请对应权限的方式也不同。
 

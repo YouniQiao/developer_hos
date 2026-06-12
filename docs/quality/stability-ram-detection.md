@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/stability-ram-detection
 last_sync: 2026-06-07
 sync_hash: ea223ab5
+upstream_status: upstream_deleted_pending
 ---
 # 地址越界类问题检测
 

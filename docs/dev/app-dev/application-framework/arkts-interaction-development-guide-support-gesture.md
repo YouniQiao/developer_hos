@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/application-framework/arkts-interaction-development-guide-support-gesture
 last_sync: 2026-06-07
 sync_hash: 89106a12
+upstream_status: upstream_deleted_pending
 ---
 当用户的操作符合某个手势的特征时，系统会将其识别为该手势，这一过程称为手势识别。为了响应某一个手势，需在组件上添加对应的手势对象，以便系统可以收集并进行处理。
 

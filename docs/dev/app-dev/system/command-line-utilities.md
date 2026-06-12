@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/command-line-utilities
 last_sync: 2026-06-07
 sync_hash: f1caeff1
+upstream_status: upstream_deleted_pending
 ---
 * **[toybox](/docs/dev/app-dev/system/toybox)**
 * **[媒体库资源访问工具](/docs/dev/app-dev/system/mediatool)**

@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/atomic-account-development/account-guide-atomic-sub-pro-userinfo-change
 last_sync: 2026-06-07
 sync_hash: ad148755
+upstream_status: upstream_deleted_pending
 ---
 ## 概述
 

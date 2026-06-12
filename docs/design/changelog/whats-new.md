@@ -6,6 +6,7 @@ format: md
 upstream_id: design/changelog/whats-new
 last_sync: 2026-06-07
 sync_hash: 6aaab42c
+upstream_status: upstream_deleted_pending
 ---
 # 变更说明
 

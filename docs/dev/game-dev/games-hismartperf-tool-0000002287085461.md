@@ -6,6 +6,7 @@ upstream_id: dev/game-dev/games-hismartperf-tool-0000002287085461
 last_sync: 2026-06-07
 sync_hash: 84422408
 upstream_hash: ce3508609537
+upstream_status: upstream_deleted_pending
 ---
 
 * **[业务介绍](/docs/dev/game-dev/games-hismartperf-overview-0000002286788016)**

@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/testing/ut
 last_sync: 2026-06-07
 sync_hash: 13bb59fd
+upstream_status: upstream_deleted_pending
 ---
 * **[自动化测试框架使用指导](/docs/dev/testing/arkxtest-guidelines)**
 * **[应用UI测试（基于Python）](/docs/dev/testing/ut/hypium-python-guidelines)**

@@ -5,5 +5,6 @@ format: md
 upstream_id: dev/atomic-dev/atomic-service-filing/atomic-service-filing
 last_sync: 2026-06-07
 sync_hash: fc3450a1
+upstream_status: upstream_deleted_pending
 ---
 # 元服务核准（备案）

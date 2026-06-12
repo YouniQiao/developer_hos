@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/atomic-service-cloud/atomic-service-cloud
 last_sync: 2026-06-07
 sync_hash: 7cfd7437
+upstream_status: upstream_deleted_pending
 ---
 * **[首次核准（备案）](/docs/dev/atomic-dev/atomic-service-cloud/atomic-service-filing-first)**
 * **[新增互联网信息](/docs/dev/atomic-dev/atomic-service-cloud/atomic-service-filing-internet-info)**

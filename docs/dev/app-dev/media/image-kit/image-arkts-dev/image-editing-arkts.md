@@ -4,6 +4,7 @@ original_url: /docs/dev/app-dev/media/image-kit/image-arkts-dev/image-editing-ar
 upstream_id: dev/app-dev/media/image-kit/image-arkts-dev/image-editing-arkts
 last_sync: 2026-06-07
 sync_hash: 11e3c577
+upstream_status: upstream_deleted_pending
 ---
 import SourceLink from '@site/src/components/SourceLink';
 

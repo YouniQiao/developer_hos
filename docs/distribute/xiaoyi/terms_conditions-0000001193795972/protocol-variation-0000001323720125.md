@@ -6,6 +6,7 @@ format: md
 upstream_id: distribute/xiaoyi/terms_conditions-0000001193795972/protocol-variation-0000001323720125
 last_sync: 2026-06-07
 sync_hash: 31e1a60b
+upstream_status: upstream_deleted_pending
 ---
 # 协议变更点
 

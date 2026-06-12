@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-network/telephony-kit
 last_sync: 2026-06-07
 sync_hash: 10d4d654
+upstream_status: upstream_deleted_pending
 ---
 * **[Telephony Kit简介](/docs/dev/app-dev/system/system-network/telephony-kit/telephony-overview)**
 * **[拨打电话](/docs/dev/app-dev/system/system-network/telephony-kit/telephony-call)**

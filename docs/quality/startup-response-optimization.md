@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/startup-response-optimization
 last_sync: 2026-06-07
 sync_hash: 4114e0d9
+upstream_status: upstream_deleted_pending
 ---
 # 应用启动与响应优化
 

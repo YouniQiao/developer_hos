@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-network/network-kit/network-kit-network-connecttion
 last_sync: 2026-06-07
 sync_hash: 0be30cde
+upstream_status: upstream_deleted_pending
 ---
 * **[管理网络连接](/docs/dev/app-dev/system/system-network/network-kit/network-kit-network-connecttion/net-connection-manager)**
 * **[管理网络连接(C/C++)](/docs/dev/app-dev/system/system-network/network-kit/network-kit-network-connecttion/native-netmanager-guidelines)**

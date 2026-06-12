@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-media-kit
 upstream_id: FAQ/faqs-media-kit
 last_sync: 2026-06-07
 sync_hash: b24b8838
+upstream_status: upstream_deleted_pending
 ---
 * **[使用AVPlayer播放器概率性报错5400104、5400103要怎么处理](/docs/FAQ/faqs-media-development/faqs-audio-video/faqs-media-kit/faqs-media-1)**
 * **[系统播放器AVPlayer支持的流媒体协议与功能](/docs/FAQ/faqs-media-development/faqs-audio-video/faqs-media-kit/faqs-media-2)**

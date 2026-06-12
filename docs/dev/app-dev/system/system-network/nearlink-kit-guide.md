@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/system/system-network/nearlink-kit-guide
 last_sync: 2026-06-07
 sync_hash: a0936baf
+upstream_status: upstream_deleted_pending
 ---
 * **[NearLink Kit简介](/docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-introduction)**
 * **[NearLink Kit术语](/docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-terminology)**

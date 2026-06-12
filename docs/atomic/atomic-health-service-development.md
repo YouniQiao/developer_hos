@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/atomic-health-service-development/atomic-health-service-development
 last_sync: 2026-06-07
 sync_hash: 93d6aecd
+upstream_status: upstream_deleted_pending
 ---
 * **[Health Service Kit简介](/docs/dev/atomic-dev/atomic-health-service-development/health-service-kit-ability-as)**
 * **[接入流程](/docs/dev/atomic-dev/atomic-health-service-development/health-application-access-as)**

@@ -5,5 +5,6 @@ format: md
 upstream_id: dev/atomic-dev/account-guide-atomic-get-phone/account-guide-atomic-get-phone
 last_sync: 2026-06-07
 sync_hash: a2efc1d9
+upstream_status: upstream_deleted_pending
 ---
 # 获取手机号

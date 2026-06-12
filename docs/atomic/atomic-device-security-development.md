@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/atomic-device-security-development/atomic-device-security-development
 last_sync: 2026-06-07
 sync_hash: c7a80d9e
+upstream_status: upstream_deleted_pending
 ---
 * **[Device Security Kit简介](/docs/dev/atomic-dev/atomic-device-security-development/atomic-devicesecurity-introduction)**
 * **[服务配额](/docs/dev/atomic-dev/atomic-device-security-development/atomic-devicesecurity-quota)**

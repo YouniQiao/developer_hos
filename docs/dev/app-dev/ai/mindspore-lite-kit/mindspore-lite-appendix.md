@@ -4,6 +4,7 @@ original_url: /docs/dev/app-dev/ai/mindspore-lite-kit/mindspore-lite-appendix
 upstream_id: dev/app-dev/ai/mindspore-lite-kit/mindspore-lite-appendix
 last_sync: 2026-06-07
 sync_hash: 43f96d10
+upstream_status: upstream_deleted_pending
 ---
 import SourceLink from '@site/src/components/SourceLink';
 

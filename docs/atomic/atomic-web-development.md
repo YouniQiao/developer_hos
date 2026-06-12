@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/atomic-web-development/atomic-web-development
 last_sync: 2026-06-07
 sync_hash: c53ec7b5
+upstream_status: upstream_deleted_pending
 ---
 * **[Web组件概述](/docs/dev/atomic-dev/atomic-web-development/atomicserviceweb-guidelines)**
 * **[AtomicServiceEnhancedWeb组件开发指南](/docs/dev/atomic-dev/atomic-web-development/develop-atomicserviceenhancedweb)**

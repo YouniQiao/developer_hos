@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/ndk-dev/coding
 last_sync: 2026-06-07
 sync_hash: 12cf429a
+upstream_status: upstream_deleted_pending
 ---
 * **[代码开发概述](/docs/dev/ndk-dev/develop-code-overview)**
 * **[C/C++标准库](/docs/dev/ndk-dev/c-cpp)**

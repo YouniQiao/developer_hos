@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-service
 last_sync: 2026-06-07
 sync_hash: 3569f50c
+upstream_status: upstream_deleted_pending
 ---
 * **[跨设备互通特性简介](/docs/dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-service/servicecollaboration-service-overview)**
 * **[跨设备互通开发指导](/docs/dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-service/servicecollaboration-dev-guides)**

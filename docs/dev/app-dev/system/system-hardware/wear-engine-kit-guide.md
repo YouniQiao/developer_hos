@@ -7,6 +7,7 @@ upstream_id: dev/app-dev/system/system-hardware/wear-engine-kit-guide
 last_sync: 2026-06-07
 sync_hash: fbef8316
 upstream_hash: e5b8f553eb7b
+upstream_status: upstream_deleted_pending
 ---
 
 * **[Wear Engine Kit简介](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_introduction)**

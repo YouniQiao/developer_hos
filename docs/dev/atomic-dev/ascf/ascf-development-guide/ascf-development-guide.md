@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/ascf/ascf-development-guide/ascf-development-guide
 last_sync: 2026-06-07
 sync_hash: f2d1df72
+upstream_status: upstream_deleted_pending
 ---
 ASCF框架支持采用类似小程序开发技术开发元服务，详情请参考[ASCF框架概述](/docs/dev/atomic-dev/ascf/ascf-overview)。在开始开发前，请先确保已[获取并安装ASCF插件](/docs/dev/atomic-dev/ascf/ascf-plugin)。
 

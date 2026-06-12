@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/stability-ark-detection
 last_sync: 2026-06-07
 sync_hash: 8c5d68c2
+upstream_status: upstream_deleted_pending
 ---
 # 方舟类问题检测
 

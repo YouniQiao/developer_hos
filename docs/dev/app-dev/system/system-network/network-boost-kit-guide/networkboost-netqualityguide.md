@@ -6,6 +6,7 @@ upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkbo
 last_sync: 2026-06-07
 sync_hash: a7f0d0a9
 upstream_hash: b39b4896c3fd
+upstream_status: upstream_deleted_pending
 ---
 
 * **[网络质量评估](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide/networkboost-qoscallback)**

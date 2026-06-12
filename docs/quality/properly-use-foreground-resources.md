@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/properly-use-foreground-resources
 last_sync: 2026-06-07
 sync_hash: e1a3639e
+upstream_status: upstream_deleted_pending
 ---
 # 前台资源合理使用
 

@@ -6,6 +6,7 @@ upstream_id: dev/atomic-dev/account-follow-atomic-minorsprotection/account-follo
 last_sync: 2026-06-07
 sync_hash: f172e88c
 upstream_hash: 120ccb833878
+upstream_status: upstream_deleted_pending
 ---
 
 * **[元服务与系统联动切换未成年人模式](/docs/dev/atomic-dev/account-follow-atomic-minorsprotection/account-system-atomic-minorsprotection)**

@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-ascf-plugin
 last_sync: 2026-06-07
 sync_hash: 084bd97e
+upstream_status: upstream_deleted_pending
 ---
 * **[在DevEco Studio中找不到创建ASCF元服务项目模板](/docs/dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-plugin-template-not-found)**
 * **[在DevEco Studio调试运行ASCF元服务的时候报错](/docs/dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-plugin-debugging-error)**

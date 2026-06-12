@@ -5,5 +5,6 @@ format: md
 upstream_id: dev/atomic-dev/atomic-media-library-development/atomic-media-library-development
 last_sync: 2026-06-07
 sync_hash: dd52998b
+upstream_status: upstream_deleted_pending
 ---
 # 媒体库

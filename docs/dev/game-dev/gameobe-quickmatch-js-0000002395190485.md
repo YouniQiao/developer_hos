@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/gameobe-quickmatch-js-0000002395190485
 last_sync: 2026-06-07
 sync_hash: edd417c3
+upstream_status: upstream_deleted_pending
 ---
 * **[接口调用流程](/docs/dev/game-dev/gameobe-flowchart-match-js-0000002361670444)**
 * **[房间匹配](/docs/dev/game-dev/gameobe-matchroom-js-0000002395350385)**

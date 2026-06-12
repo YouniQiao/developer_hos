@@ -5,5 +5,6 @@ format: md
 upstream_id: dev/atomic-dev/atomic-ui-development/atomic-ui-development
 last_sync: 2026-06-07
 sync_hash: 3dc745a3
+upstream_status: upstream_deleted_pending
 ---
 # UI开发

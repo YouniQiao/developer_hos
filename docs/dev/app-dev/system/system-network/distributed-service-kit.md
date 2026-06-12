@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/system/system-network/distributed-service-kit
 last_sync: 2026-06-07
 sync_hash: 9df60f61
+upstream_status: upstream_deleted_pending
 ---
 * **[Distributed Service Kit简介](/docs/dev/app-dev/system/system-network/distributed-service-kit/distributedservice-kit-intro)**
 * **[分布式设备管理开发指南](/docs/dev/app-dev/system/system-network/distributed-service-kit/devicemanager-guidelines)**

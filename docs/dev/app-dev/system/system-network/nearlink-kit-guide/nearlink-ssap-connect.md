@@ -7,6 +7,7 @@ upstream_id: dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-ssap-
 last_sync: 2026-06-07
 sync_hash: d32e9ae5
 upstream_hash: 19c692675ce4
+upstream_status: upstream_deleted_pending
 ---
 
 * **[SSAP服务端](/docs/dev/app-dev/system/system-network/nearlink-kit-guide/nearlink-ssap-connect/nearlink-ssap-server-connect)**

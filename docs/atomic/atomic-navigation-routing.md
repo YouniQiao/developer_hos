@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/atomic-navigation-routing/atomic-navigation-routing
 last_sync: 2026-06-07
 sync_hash: f540104d
+upstream_status: upstream_deleted_pending
 ---
 Navigation是路由容器组件，一般作为首页的根容器，适用于模块内和跨模块的路由切换。Navigation子页是NavDestination包含的子组件，使用NavPathStack实现页面路由。
 

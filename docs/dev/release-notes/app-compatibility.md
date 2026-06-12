@@ -5,6 +5,7 @@ original_url: /docs/dev/release-notes/app-compatibility
 upstream_id: dev/release-notes/app-compatibility
 last_sync: 2026-06-07
 sync_hash: 6af88435
+upstream_status: upstream_deleted_pending
 ---
 # 应用兼容性说明
 

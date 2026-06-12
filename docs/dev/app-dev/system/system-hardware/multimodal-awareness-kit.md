@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/system/system-hardware/multimodal-awareness-kit
 last_sync: 2026-06-07
 sync_hash: 045bb145
+upstream_status: upstream_deleted_pending
 ---
 * **[Multimodal Awareness Kit简介](/docs/dev/app-dev/system/system-hardware/multimodal-awareness-kit/multimodalawareness-kit-intro)**
 * **[Stationary开发指导](/docs/dev/app-dev/system/system-hardware/multimodal-awareness-kit/stationary-guidelines)**

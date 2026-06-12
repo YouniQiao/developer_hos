@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/debugging-commands
 last_sync: 2026-06-07
 sync_hash: e40ac913
+upstream_status: upstream_deleted_pending
 ---
 * **[SDK命令行工具简介](/docs/dev/app-dev/system/command-line-tools-overview)**
 * **[hdc](/docs/dev/app-dev/system/hdc)**

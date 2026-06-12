@@ -5,5 +5,6 @@ format: md
 upstream_id: dev/app-dev/system/general-log
 last_sync: 2026-06-07
 sync_hash: bded03da
+upstream_status: upstream_deleted_pending
 ---
 * **[页面切换日志](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/perf-detection/pageswitch-log)**

@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-hismartperf-editor-0000002286844718
 last_sync: 2026-06-07
 sync_hash: e501e4b2
+upstream_status: upstream_deleted_pending
 ---
 * **[准备工作](/docs/dev/game-dev/games-hismartperf-preparation-0000002286788020)**
 * **[设置采集要求](/docs/dev/game-dev/games-hismartperf-setting-0000002321517289)**

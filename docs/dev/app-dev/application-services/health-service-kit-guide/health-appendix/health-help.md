@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-appendix/health-help
 last_sync: 2026-06-07
 sync_hash: b0090818
+upstream_status: upstream_deleted_pending
 ---
 建议优先查找官方文档，快速获取所需指导。查阅文档后，仍不能解决的问题，可以通过以下方式进行反馈。
 

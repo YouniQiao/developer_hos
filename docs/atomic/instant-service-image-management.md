@@ -5,5 +5,6 @@ format: md
 upstream_id: dev/atomic-dev/instant-service-image-management/instant-service-image-management
 last_sync: 2026-06-07
 sync_hash: ee35d344
+upstream_status: upstream_deleted_pending
 ---
 * **[上传图片](/docs/dev/atomic-dev/instant-service-image-management/instant-service-image-upload)**

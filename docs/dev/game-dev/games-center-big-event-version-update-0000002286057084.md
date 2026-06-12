@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-center-big-event-version-update-0000002286057084
 last_sync: 2026-06-07
 sync_hash: 8b777d06
+upstream_status: upstream_deleted_pending
 ---
 大版本更新是指已上架游戏的重要更新版本，如上线新玩法、新地图等。
 

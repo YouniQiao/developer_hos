@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/media/medialibrary-kit/restricted-open-capabilities/photoaccesshelper-notify-guidelines
 last_sync: 2026-06-07
 sync_hash: a4332b2d
+upstream_status: upstream_deleted_pending
 ---
 photoAccessHelper提供监听指定媒体资源变更的接口。
 

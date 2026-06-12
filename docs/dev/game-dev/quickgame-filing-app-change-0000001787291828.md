@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/quickgame-filing-app-change-0000001787291828
 last_sync: 2026-06-07
 sync_hash: d4958241
+upstream_status: upstream_deleted_pending
 ---
 ## 前提条件
 

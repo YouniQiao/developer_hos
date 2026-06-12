@@ -6,6 +6,7 @@ upstream_id: dev/game-dev/games-center-operation-0000002286057072
 last_sync: 2026-06-07
 sync_hash: 7c15c598
 upstream_hash: 49a437815594
+upstream_status: upstream_deleted_pending
 ---
 
 * **[活动运营](/docs/dev/game-dev/games-center-agc-help-operation-0000002320553293)**

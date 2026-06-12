@@ -7,6 +7,7 @@ upstream_id: dev/app-dev/system/system-network/remote-communication-kit-guide/re
 last_sync: 2026-06-07
 sync_hash: d3b1a757
 upstream_hash: 6aeb3da75be3
+upstream_status: upstream_deleted_pending
 ---
 
 * **[DnsConfiguration：定制DNS](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-customhttp/remote-communication-customconfig/remote-communication-customdnsconfig)**

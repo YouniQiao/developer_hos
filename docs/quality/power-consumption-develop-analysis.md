@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/power-consumption-develop-analysis
 last_sync: 2026-06-07
 sync_hash: 72a6992c
+upstream_status: upstream_deleted_pending
 ---
 # 开发态功耗检测
 

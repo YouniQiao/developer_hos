@@ -5,5 +5,6 @@ format: md
 upstream_id: dev/game-dev/games-center-agc-help-operation-0000002320553293
 last_sync: 2026-06-07
 sync_hash: 03760eb8
+upstream_status: upstream_deleted_pending
 ---
 * **[活动管理](/docs/dev/game-dev/games-center-setup-activities-0000002320626353)**

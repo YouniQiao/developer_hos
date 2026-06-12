@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-local-data-and-files
 upstream_id: FAQ/faqs-local-data-and-files
 last_sync: 2026-06-07
 sync_hash: 07330aa7
+upstream_status: upstream_deleted_pending
 ---
 * **[本地数据库管理](/docs/FAQ/faqs-arkdata-kit)**
 * **[本地文件管理](/docs/FAQ/faqs-core-file-kit)**

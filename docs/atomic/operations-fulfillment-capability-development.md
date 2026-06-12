@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/operations-fulfillment-capability-development/operations-fulfillment-capability-development
 last_sync: 2026-06-07
 sync_hash: 162b80b9
+upstream_status: upstream_deleted_pending
 ---
 * **[账号](/docs/dev/atomic-dev/atomic-account-development/atomic-account-development)**
 * **[推送](/docs/dev/atomic-dev/atomic-push-development/atomic-push-development)**

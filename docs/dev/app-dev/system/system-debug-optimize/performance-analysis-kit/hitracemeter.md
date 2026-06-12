@@ -6,6 +6,7 @@ upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/h
 last_sync: 2026-06-07
 sync_hash: 07f6deb3
 upstream_hash: e2cc820029a0
+upstream_status: upstream_deleted_pending
 ---
 
 * **[HiTraceMeter介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracemeter/hitracemeter-intro)**

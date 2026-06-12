@@ -6,6 +6,7 @@ upstream_id: dev/atomic-dev/instant-service-getting-started/instant-service-gett
 last_sync: 2026-06-07
 sync_hash: 07168489
 upstream_hash: 91c9dd744e7f
+upstream_status: upstream_deleted_pending
 ---
 
 # 入门指引

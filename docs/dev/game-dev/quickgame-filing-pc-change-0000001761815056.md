@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/quickgame-filing-pc-change-0000001761815056
 last_sync: 2026-06-07
 sync_hash: 3eac5298
+upstream_status: upstream_deleted_pending
 ---
 ## 变更核准（备案）
 

@@ -5,6 +5,7 @@ original_url: /docs/tools/coding-debug/release-notes/deveco-studio-610
 upstream_id: tools/coding-debug/release-notes/deveco-studio-610
 last_sync: 2026-06-07
 sync_hash: dda0af68
+upstream_status: upstream_deleted_pending
 ---
 # DevEco Studio 6.1.0
 

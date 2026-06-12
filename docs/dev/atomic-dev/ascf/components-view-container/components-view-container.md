@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/ascf/components-view-container/components-view-container
 last_sync: 2026-06-07
 sync_hash: 815475c5
+upstream_status: upstream_deleted_pending
 ---
 * **[movable-area](/docs/dev/atomic-dev/ascf/components-view-container/components-movable-area)**
 * **[movable-view](/docs/dev/atomic-dev/ascf/components-view-container/components-movable-view)**

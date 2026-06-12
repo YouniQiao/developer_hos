@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit
 last_sync: 2026-06-07
 sync_hash: 944a101b
+upstream_status: upstream_deleted_pending
 ---
 * **[Basic Services Kit简介](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/basic-services-kit-overview)**
 * **[进程线程通信](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/app-events)**

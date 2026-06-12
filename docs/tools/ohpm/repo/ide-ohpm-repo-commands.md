@@ -5,6 +5,7 @@ original_url: /docs/tools/ohpm/repo/ide-ohpm-repo-commands
 upstream_id: tools/ohpm/repo/ide-ohpm-repo-commands
 last_sync: 2026-06-07
 sync_hash: 65dddec6
+upstream_status: upstream_deleted_pending
 ---
 # ohpm-repo 命令参考
 

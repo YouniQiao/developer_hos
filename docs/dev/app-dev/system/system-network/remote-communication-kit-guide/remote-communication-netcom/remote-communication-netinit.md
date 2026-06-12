@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-netinit
 last_sync: 2026-06-07
 sync_hash: a9f50300
+upstream_status: upstream_deleted_pending
 ---
 * **[发送网络请求（ArkTS）](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-netinit/remote-communication-netsend-arkts)**
 * **[取消网络请求（ArkTS）](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-netinit/remote-communication-netcancle-arkts)**

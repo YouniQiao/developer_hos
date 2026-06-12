@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-adapt-creator-0000002252490816
 last_sync: 2026-06-07
 sync_hash: 62dfdae2
+upstream_status: upstream_deleted_pending
 ---
 * **[使用Cocos Creator概述](/docs/dev/game-dev/games-creator-introduction-0000002290792033)**
 * **[适配准备](/docs/dev/game-dev/games-creator-preparation-0000002290527373)**

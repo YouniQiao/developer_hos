@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-ndk-development
 upstream_id: FAQ/faqs-ndk-development
 last_sync: 2026-06-07
 sync_hash: 14eb2a11
+upstream_status: upstream_deleted_pending
 ---
 * **[在Native侧如何精准获取ArkTS侧传入的字符串长度](/docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-1)**
 * **[在Native侧如何处理ArkTS侧传入的字符串被截断的异常场景](/docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-ndk-development/faqs-ndk-2)**

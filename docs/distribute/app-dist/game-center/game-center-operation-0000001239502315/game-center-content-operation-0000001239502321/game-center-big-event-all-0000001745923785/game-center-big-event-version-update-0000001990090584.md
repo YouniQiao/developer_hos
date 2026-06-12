@@ -7,6 +7,7 @@ upstream_id: distribute/app-dist/game-center/game-center-operation-0000001239502
 last_sync: 2026-06-07
 sync_hash: 50d2e06a
 upstream_hash: e7ec9bfa8fac
+upstream_status: upstream_deleted_pending
 ---
 
 # 大版本更新

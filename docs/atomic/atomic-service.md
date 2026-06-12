@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/atomic-service/atomic-service
 last_sync: 2026-06-07
 sync_hash: 0c7357ec
+upstream_status: upstream_deleted_pending
 ---
 * **[什么是元服务](/docs/dev/atomic-dev/atomic-service/atomic-service-definition)**
 * **[元服务特征及使用场景](/docs/dev/atomic-dev/atomic-service/atomic-service-features)**

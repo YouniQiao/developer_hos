@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-arkdata-kit
 upstream_id: FAQ/faqs-arkdata-kit
 last_sync: 2026-06-07
 sync_hash: 4edf596d
+upstream_status: upstream_deleted_pending
 ---
 * **[如何将PixelMap的数据存储到数据库中](/docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-3)**
 * **[多个相同BundleName的HAP包，使用preference数据如何共享](/docs/FAQ/faqs-app-framework-development/faqs-local-data-and-files/faqs-arkdata-kit/faqs-local-database-management-4)**

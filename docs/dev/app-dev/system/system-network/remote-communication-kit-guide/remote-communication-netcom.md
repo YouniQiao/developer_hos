@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom
 last_sync: 2026-06-07
 sync_hash: 1dd848e5
+upstream_status: upstream_deleted_pending
 ---
 * **[发起HTTP请求，获取响应](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-netinit)**
 * **[实现HTTP请求定制](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-netcom/remote-communication-customhttp)**

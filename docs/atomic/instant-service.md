@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/instant-service/instant-service
 last_sync: 2026-06-07
 sync_hash: 5224bba2
+upstream_status: upstream_deleted_pending
 ---
 * **[概览](/docs/dev/atomic-dev/instant-service/instant-service-overview)**
 * **[角色权限](/docs/dev/atomic-dev/instant-service/instant-service-role-permissions)**

@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/stability-operate-event
 last_sync: 2026-06-07
 sync_hash: 1ebbf86c
+upstream_status: upstream_deleted_pending
 ---
 # 稳定性事件接入
 

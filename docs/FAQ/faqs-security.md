@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-security
 upstream_id: FAQ/faqs-security
 last_sync: 2026-06-07
 sync_hash: 509f5bce
+upstream_status: upstream_deleted_pending
 ---
 * **[程序访问控制](/docs/FAQ/faqs-access-control)**
 * **[数据安全存储（Data Prevention）](/docs/FAQ/faqs-data-prevention)**

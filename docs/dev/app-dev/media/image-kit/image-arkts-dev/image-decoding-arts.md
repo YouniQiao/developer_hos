@@ -4,6 +4,7 @@ original_url: /docs/dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-a
 upstream_id: dev/app-dev/media/image-kit/image-arkts-dev/image-decoding-arts
 last_sync: 2026-06-07
 sync_hash: 81925d8b
+upstream_status: upstream_deleted_pending
 ---
 import SourceLink from '@site/src/components/SourceLink';
 

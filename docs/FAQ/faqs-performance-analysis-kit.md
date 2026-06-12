@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-performance-analysis-kit
 upstream_id: FAQ/faqs-performance-analysis-kit
 last_sync: 2026-06-07
 sync_hash: 6599c413
+upstream_status: upstream_deleted_pending
 ---
 * **[hilog日志如何落盘存储](/docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-1)**
 * **[hilog日志如何设置为只打印当前应用的日志](/docs/FAQ/faqs-app-quality/faqs-technical-quality/faqs-performance-analysis-kit/faqs-performance-analysis-kit-2)**

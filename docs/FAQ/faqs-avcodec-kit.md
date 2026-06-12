@@ -6,6 +6,7 @@ upstream_id: FAQ/faqs-avcodec-kit
 last_sync: 2026-06-07
 sync_hash: 6c8c5b0a
 upstream_hash: 022f475e1f7d
+upstream_status: upstream_deleted_pending
 ---
 
 * **[VideoDecoder支持的包装方式是AVCC还是AnnexB](/docs/FAQ/faqs-media-development/faqs-audio-video/faqs-avcodec-kit/faqs-avcodec-1)**

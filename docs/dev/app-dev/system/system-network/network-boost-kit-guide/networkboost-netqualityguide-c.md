@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide-c
 last_sync: 2026-06-07
 sync_hash: 05d7f2e3
+upstream_status: upstream_deleted_pending
 ---
 * **[网络质量评估 (C/C++)](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide-c/networkboost-qoscallback-c)**
 * **[网络场景识别 (C/C++)](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netqualityguide-c/networkboost-scenecallback-c)**

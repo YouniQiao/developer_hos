@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/ndk-dev/build-toolchain
 last_sync: 2026-06-07
 sync_hash: 00761dd4
+upstream_status: upstream_deleted_pending
 ---
 * **[GN构建工程配置HarmonyOS编译工具链](/docs/dev/ndk-dev/toolchain-gn-build-project)**
 * **[CMake构建工程配置HarmonyOS编译工具链](/docs/dev/ndk-dev/toolchain-cmake-build-project)**

@@ -6,6 +6,7 @@ format: md
 upstream_id: design/app-compatibility/compatibility-warning-suppress
 last_sync: 2026-06-07
 sync_hash: 8cfadb40
+upstream_status: upstream_deleted_pending
 ---
 # 兼容性告警屏蔽
 

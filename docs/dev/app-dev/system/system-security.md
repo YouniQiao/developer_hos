@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-security
 last_sync: 2026-06-07
 sync_hash: 0ced7d2e
+upstream_status: upstream_deleted_pending
 ---
 * **[程序访问控制](/docs/dev/app-dev/system/system-security/access-control)**
 * **[密码自动填充服务](/docs/dev/app-dev/system/system-security/passwordvault)**

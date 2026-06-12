@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/atomic-connectivity/atomic-connectivity
 last_sync: 2026-06-07
 sync_hash: 54a38019
+upstream_status: upstream_deleted_pending
 ---
 * **[蓝牙](/docs/dev/atomic-dev/atomic-bluetooth/atomic-bluetooth)**
 * **[NFC](/docs/dev/atomic-dev/atomic-nfc/atomic-nfc)**

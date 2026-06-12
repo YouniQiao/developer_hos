@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/ascf/faqs-others/faqs-others
 last_sync: 2026-06-07
 sync_hash: 958357ae
+upstream_status: upstream_deleted_pending
 ---
 * **[在AGC上传ASCF元服务app包不通过返回错误码9](/docs/dev/atomic-dev/ascf/faqs-others/faqs-others-agc-upload-errorcode9)**
 * **[转换为ASCF框架后运行白屏或异常](/docs/dev/atomic-dev/ascf/faqs-others/faqs-others-running-abnormally)**

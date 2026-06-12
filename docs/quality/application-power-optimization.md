@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/application-power-optimization
 last_sync: 2026-06-07
 sync_hash: 4ccb7235
+upstream_status: upstream_deleted_pending
 ---
 # 应用功耗优化
 

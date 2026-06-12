@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/instant-service-apis/instant-service-apis
 last_sync: 2026-06-07
 sync_hash: b9cd2ddc
+upstream_status: upstream_deleted_pending
 ---
 * **[入门指引](/docs/dev/atomic-dev/instant-service-getting-started/instant-service-getting-started)**
 * **[图片管理](/docs/dev/atomic-dev/instant-service-image-management/instant-service-image-management)**

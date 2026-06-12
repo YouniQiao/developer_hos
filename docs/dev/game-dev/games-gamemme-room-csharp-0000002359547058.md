@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-gamemme-room-csharp-0000002359547058
 last_sync: 2026-06-07
 sync_hash: f072f715
+upstream_status: upstream_deleted_pending
 ---
 * **[加入房间](/docs/dev/game-dev/games-gamemme-voice-joinroom-roomid-csharp-0000002393227073)**
 * **[切换房间](/docs/dev/game-dev/games-gamemme-switchroom-csharp-0000002359706962)**

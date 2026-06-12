@@ -6,6 +6,7 @@ upstream_id: FAQ/faqs-notification-kit
 last_sync: 2026-06-07
 sync_hash: cafeeda2
 upstream_hash: a730d16f4996
+upstream_status: upstream_deleted_pending
 ---
 
 * **[如何让事件只在一个UIAbility实例中传递](/docs/FAQ/faqs-app-service-development/faqs-notification-kit/faqs-notification-kit-2)**

@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-purax
 upstream_id: FAQ/faqs-purax
 last_sync: 2026-06-07
 sync_hash: 094cf9bd
+upstream_status: upstream_deleted_pending
 ---
 * **[Pura X外屏展示申请前，需要做什么](/docs/FAQ/faqs-multi-device-scenario/faq-phone/faqs-purax/faqs-purax-2)**
 * **[Pura X外屏适配申请提交后，多长时间能完成审核](/docs/FAQ/faqs-multi-device-scenario/faq-phone/faqs-purax/faqs-purax-1)**

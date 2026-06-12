@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-center-data-operation-0000002320626373
 last_sync: 2026-06-07
 sync_hash: b1d16f82
+upstream_status: upstream_deleted_pending
 ---
 * **[应用分析总览](/docs/dev/game-dev/games-center-anaiyze-overview-0000002350837878)**
 * **[分发分析](/docs/dev/game-dev/games-center-anaiyze-app-usage-0000002350464692)**

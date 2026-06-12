@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/scenario-stability-exception-exit
 last_sync: 2026-06-07
 sync_hash: dd044b19
+upstream_status: upstream_deleted_pending
 ---
 # 应用异常退出类问题案例
 

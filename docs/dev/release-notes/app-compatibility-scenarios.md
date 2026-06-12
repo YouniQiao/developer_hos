@@ -5,6 +5,7 @@ original_url: /docs/dev/release-notes/app-compatibility-scenarios
 upstream_id: dev/release-notes/app-compatibility-scenarios
 last_sync: 2026-06-07
 sync_hash: d23443f4
+upstream_status: upstream_deleted_pending
 ---
 # 应用开发中的兼容性场景开发指导
 

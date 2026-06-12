@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/atomic-service-cloud/atomic-service-filing-change
 last_sync: 2026-06-07
 sync_hash: bd93cdae
+upstream_status: upstream_deleted_pending
 ---
 在华为云核准（备案）系统中可以同时修改主体信息和元服务信息。操作步骤如下：
 

@@ -5,5 +5,6 @@ format: md
 upstream_id: dev/atomic-dev/atomic-security-development/atomic-security-development
 last_sync: 2026-06-07
 sync_hash: ce5daf03
+upstream_status: upstream_deleted_pending
 ---
 # 安全

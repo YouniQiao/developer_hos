@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/app-atomic-service-reusable/app-atomic-service-reusable
 last_sync: 2026-06-07
 sync_hash: fabd67a4
+upstream_status: upstream_deleted_pending
 ---
 我们提供了两种可复用设计模式来帮助开发者实现应用和元服务间的代码或者功能复用：
 

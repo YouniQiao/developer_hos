@@ -6,6 +6,7 @@ format: md
 upstream_id: design/app-compatibility/app-compatibility-ui-component
 last_sync: 2026-06-07
 sync_hash: 4884a7e1
+upstream_status: upstream_deleted_pending
 ---
 # UI自定义组件兼容性指导
 

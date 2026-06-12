@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/usb
 last_sync: 2026-06-07
 sync_hash: e83782c9
+upstream_status: upstream_deleted_pending
 ---
 * **[开发USB服务](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-dev)**
 * **[开发USB串口通信服务](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/usb/usb-serial-dev)**

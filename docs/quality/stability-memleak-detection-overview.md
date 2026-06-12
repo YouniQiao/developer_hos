@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/stability-memleak-detection-overview
 last_sync: 2026-06-07
 sync_hash: 32f60f56
+upstream_status: upstream_deleted_pending
 ---
 # 内存泄漏类问题检测方法
 

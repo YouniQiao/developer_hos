@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/ascf/hjs/hjs
 last_sync: 2026-06-07
 sync_hash: e64dbad3
+upstream_status: upstream_deleted_pending
 ---
 hjs是ASCF框架的一套脚本语言，结合hxml一起来构建页面。
 

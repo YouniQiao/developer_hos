@@ -5,6 +5,7 @@ format: md
 upstream_id: distribute/agc/agc-help-releasenotes-0000002271020145
 last_sync: 2026-06-07
 sync_hash: 949c3c85
+upstream_status: upstream_deleted_pending
 ---
 #### 16.4.1
 

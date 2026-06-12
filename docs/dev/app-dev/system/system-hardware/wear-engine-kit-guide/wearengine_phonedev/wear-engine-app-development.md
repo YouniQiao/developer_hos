@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development
 last_sync: 2026-06-07
 sync_hash: 0f087192
+upstream_status: upstream_deleted_pending
 ---
 * **[已连接穿戴设备查询](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/query_connected_devices)**
 * **[请求用户授权](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_phonedev/wear-engine-app-development/request_user_authorization)**

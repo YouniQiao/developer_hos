@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/gameobe-groupmatch-js-0000002395190489
 last_sync: 2026-06-07
 sync_hash: 00725096
+upstream_status: upstream_deleted_pending
 ---
 * **[创建队伍](/docs/dev/game-dev/gameobe-creategroup-js-0000002361670448)**
 * **[加入队伍](/docs/dev/game-dev/gameobe-joingroup-js-0000002395350389)**

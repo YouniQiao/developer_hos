@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_faq
 last_sync: 2026-06-07
 sync_hash: 31f31ae5
+upstream_status: upstream_deleted_pending
 ---
 * **[如果工程已有APP ID，是否需要重新申请，填写新的APP ID](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_faq/wearengine_faq-1)**
 * **[使用AppInfo时，如何获取应用身份标识](/docs/dev/app-dev/system/system-hardware/wear-engine-kit-guide/wearengine_faq/wearengine_faq-9)**

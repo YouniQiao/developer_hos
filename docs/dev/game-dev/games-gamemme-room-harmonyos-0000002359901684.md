@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-gamemme-room-harmonyos-0000002359901684
 last_sync: 2026-06-07
 sync_hash: e5a99a4f
+upstream_status: upstream_deleted_pending
 ---
 * **[加入房间](/docs/dev/game-dev/games-gamemme-voice-joinroom-roomid-harmonyos-0000002393661673)**
 * **[切换房间](/docs/dev/game-dev/games-gamemme-switchroom-harmonyos-0000002360061564)**

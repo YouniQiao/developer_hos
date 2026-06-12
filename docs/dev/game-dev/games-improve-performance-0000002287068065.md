@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-improve-performance-0000002287068065
 last_sync: 2026-06-07
 sync_hash: 7b00a301
+upstream_status: upstream_deleted_pending
 ---
 * **[游戏性能诊断（HiSmartPerf）](/docs/dev/game-dev/games-hismartperf-tool-0000002287085461)**
 * **[游戏场景感知](/docs/dev/game-dev/games-gameperformance-0000002287198517)**

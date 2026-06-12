@@ -5,5 +5,6 @@ format: md
 upstream_id: dev/atomic-dev/atomic-nfc/atomic-nfc
 last_sync: 2026-06-07
 sync_hash: 3fddf5fd
+upstream_status: upstream_deleted_pending
 ---
 # NFC

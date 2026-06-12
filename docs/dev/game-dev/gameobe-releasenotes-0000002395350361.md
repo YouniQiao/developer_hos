@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/gameobe-releasenotes-0000002395350361
 last_sync: 2026-06-07
 sync_hash: e3df97c5
+upstream_status: upstream_deleted_pending
 ---
 ![](./img/bcbf7cf8.png)
 

@@ -6,6 +6,7 @@ upstream_id: dev/game-dev/games-universal-works-0000002290527401
 last_sync: 2026-06-07
 sync_hash: f134c0ce
 upstream_hash: 64db8f805d7e
+upstream_status: upstream_deleted_pending
 ---
 
 * **[生命周期适配](/docs/dev/game-dev/games-universal-uiability-lifecycle-0000002333176745)**

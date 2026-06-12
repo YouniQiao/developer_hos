@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/use-of-background-software-resources
 last_sync: 2026-06-07
 sync_hash: 663711f7
+upstream_status: upstream_deleted_pending
 ---
 # 后台软件资源合理使用
 

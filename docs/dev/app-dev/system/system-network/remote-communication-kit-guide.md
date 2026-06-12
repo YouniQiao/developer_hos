@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-network/remote-communication-kit-guide
 last_sync: 2026-06-07
 sync_hash: 12f6e1ab
+upstream_status: upstream_deleted_pending
 ---
 * **[Remote Communication Kit简介](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-introduction)**
 * **[开发准备](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-preparations)**

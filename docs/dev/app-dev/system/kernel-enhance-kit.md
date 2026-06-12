@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/kernel-enhance-kit
 last_sync: 2026-06-07
 sync_hash: 9baa9dda
+upstream_status: upstream_deleted_pending
 ---
 * **[Kernel Enhance Kit 简介](/docs/dev/app-dev/system/kernel-enhance-overview)**
 * **[QoS 开发指导](/docs/dev/app-dev/system/qos-guidelines)**

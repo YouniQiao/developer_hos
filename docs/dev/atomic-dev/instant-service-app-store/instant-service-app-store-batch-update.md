@@ -6,6 +6,7 @@ upstream_id: dev/atomic-dev/instant-service-app-store/instant-service-app-store-
 last_sync: 2026-06-07
 sync_hash: 05e9a876
 upstream_hash: 11d2da4eb4c0
+upstream_status: upstream_deleted_pending
 ---
 
 # 批量变更门店

@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/system/system-network/service-collaboration-kit-guide
 last_sync: 2026-06-07
 sync_hash: 5c3ec894
+upstream_status: upstream_deleted_pending
 ---
 * **[Service Collaboration Kit简介](/docs/dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaborationkit-introduction)**
 * **[跨设备互通（ArkTS）](/docs/dev/app-dev/system/system-network/service-collaboration-kit-guide/servicecollaboration-service)**

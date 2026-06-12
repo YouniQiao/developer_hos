@@ -6,6 +6,7 @@ format: md
 upstream_id: design/app-compatibility/app-compatibility-third-har
 last_sync: 2026-06-07
 sync_hash: e4bc712a
+upstream_status: upstream_deleted_pending
 ---
 # 应用集成三方库（har包）的兼容性指导
 

@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit
 upstream_id: FAQ/faqs-app-framework-development/faqs-arkui/faqs-arkui-kit/faqs-arkui-478
 last_sync: 2026-06-07
 sync_hash: bd9feeb9
+upstream_status: upstream_deleted_pending
 ---
 **问题描述**
 

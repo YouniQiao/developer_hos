@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/ndk-dev/napi-scenarios
 last_sync: 2026-06-07
 sync_hash: 7b46f0ae
+upstream_status: upstream_deleted_pending
 ---
 * **[使用Node-API接口进行异步任务开发](/docs/dev/ndk-dev/use-napi-asynchronous-task)**
 * **[使用Node-API接口进行线程安全开发](/docs/dev/ndk-dev/use-napi-thread-safety)**

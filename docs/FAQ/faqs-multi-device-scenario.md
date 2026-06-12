@@ -5,5 +5,6 @@ original_url: /docs/FAQ/faqs-multi-device-scenario
 upstream_id: FAQ/faqs-multi-device-scenario
 last_sync: 2026-06-07
 sync_hash: bf6b20b9
+upstream_status: upstream_deleted_pending
 ---
 * **[手机](/docs/FAQ/faq-phone)**

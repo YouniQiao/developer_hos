@@ -6,6 +6,7 @@ format: md
 upstream_id: design/app-compatibility/arkts-api-compatibility-warning-elim
 last_sync: 2026-06-07
 sync_hash: 726d8609
+upstream_status: upstream_deleted_pending
 ---
 # ArkTS API兼容性保护
 

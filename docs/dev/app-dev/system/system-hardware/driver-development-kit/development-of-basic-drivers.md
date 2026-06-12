@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/system/system-hardware/driver-development-kit/development-of-basic-drivers
 last_sync: 2026-06-07
 sync_hash: cc7d180b
+upstream_status: upstream_deleted_pending
 ---
 * **[开发无UI界面基础驱动](/docs/dev/app-dev/system/system-hardware/driver-development-kit/development-of-basic-drivers/driverextensionability)**
 * **[开发带UI界面基础驱动](/docs/dev/app-dev/system/system-hardware/driver-development-kit/development-of-basic-drivers/externaldevice-guidelines)**

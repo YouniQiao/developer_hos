@@ -6,6 +6,7 @@ original_url: /docs/dev/release-notes/overview
 upstream_id: dev/release-notes/overview
 last_sync: 2026-06-07
 sync_hash: 10e22630
+upstream_status: upstream_deleted_pending
 ---
 # 什么是元服务
 

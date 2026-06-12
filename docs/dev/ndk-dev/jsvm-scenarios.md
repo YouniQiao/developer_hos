@@ -6,6 +6,7 @@ upstream_id: dev/ndk-dev/jsvm-scenarios
 last_sync: 2026-06-07
 sync_hash: d7dbde04
 upstream_hash: 340b4c7253a0
+upstream_status: upstream_deleted_pending
 ---
 
 * **[JSVM-API调试&定位](/docs/dev/ndk-dev/jsvm-debugger-cpuprofiler-heapsnapshot)**

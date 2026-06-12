@@ -6,6 +6,7 @@ upstream_id: /docs/quality/analyze-memory-problem
 last_sync: 2026-06-07
 sync_hash: 3e71cc8a
 upstream_hash: 4557d6076e42
+upstream_status: upstream_deleted_pending
 ---
 
 # 分析内存占用问题

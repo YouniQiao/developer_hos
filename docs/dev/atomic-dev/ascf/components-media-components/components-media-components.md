@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/ascf/components-media-components/components-media-components
 last_sync: 2026-06-07
 sync_hash: 025c8661
+upstream_status: upstream_deleted_pending
 ---
 * **[image](/docs/dev/atomic-dev/ascf/components-media-components/components-image)**
 * **[video](/docs/dev/atomic-dev/ascf/components-media-components/components-video)**

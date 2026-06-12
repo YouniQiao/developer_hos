@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/ascf/components-form-components/components-form-components
 last_sync: 2026-06-07
 sync_hash: 87e4bc6c
+upstream_status: upstream_deleted_pending
 ---
 * **[button](/docs/dev/atomic-dev/ascf/components-form-components/components-button)**
 * **[checkbox](/docs/dev/atomic-dev/ascf/components-form-components/components-checkbox)**

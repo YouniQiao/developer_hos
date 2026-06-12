@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-hardware/pen-kit-guide/pen-features
 last_sync: 2026-06-07
 sync_hash: 8df9d33a
+upstream_status: upstream_deleted_pending
 ---
 * **[接入手写套件](/docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-features/pen-suite)**
 * **[接入报点预测](/docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-features/pen-point-prediction)**

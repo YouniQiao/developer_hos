@@ -6,6 +6,7 @@ format: md
 upstream_id: monetize/monetization/agd_pro_api_integrate-api-0000001461035201
 last_sync: 2026-06-07
 sync_hash: 1e562d5c
+upstream_status: upstream_deleted_pending
 ---
 * **[调试获取广告接口](/docs/monetize/monetization/agd_pro_api_get-ads-0000001216778368)**
 * **[场景处理](/docs/monetize/monetization/agd_pro_api_scenario-handle-0000001262378977)**

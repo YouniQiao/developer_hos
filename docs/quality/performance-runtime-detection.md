@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/performance-runtime-detection
 last_sync: 2026-06-07
 sync_hash: 1d355ec7
+upstream_status: upstream_deleted_pending
 ---
 ## 启动耗时类问题检测方法
 

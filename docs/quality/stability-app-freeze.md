@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/stability-app-freeze
 last_sync: 2026-06-07
 sync_hash: 14173cc1
+upstream_status: upstream_deleted_pending
 ---
 # 应用冻屏类问题分析方法
 

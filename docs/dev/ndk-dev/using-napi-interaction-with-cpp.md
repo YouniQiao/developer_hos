@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/ndk-dev/using-napi-interaction-with-cpp
 last_sync: 2026-06-07
 sync_hash: fc6e6e4a
+upstream_status: upstream_deleted_pending
 ---
 * **[Node-API简介](/docs/dev/ndk-dev/napi-introduction)**
 * **[Node-API接口返回状态码介绍](/docs/dev/ndk-dev/napi_status_introduction)**

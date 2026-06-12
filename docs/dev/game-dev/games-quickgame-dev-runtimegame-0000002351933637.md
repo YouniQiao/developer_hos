@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-quickgame-dev-runtimegame-0000002351933637
 last_sync: 2026-06-07
 sync_hash: 8e3a9ae1
+upstream_status: upstream_deleted_pending
 ---
 * **[接入流程](/docs/dev/game-dev/games-quickgame-dev-runtimegame-guide-0000002317894824)**
 * **[开发环境准备](/docs/dev/game-dev/games-quickgame-environment-preparation-0000002351893453)**

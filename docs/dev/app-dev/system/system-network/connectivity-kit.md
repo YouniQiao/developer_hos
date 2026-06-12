@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-network/connectivity-kit
 last_sync: 2026-06-07
 sync_hash: 54c20ae5
+upstream_status: upstream_deleted_pending
 ---
 * **[Connectivity Kit简介](/docs/dev/app-dev/system/system-network/connectivity-kit/connectivity-kit-intro)**
 * **[蓝牙](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth)**

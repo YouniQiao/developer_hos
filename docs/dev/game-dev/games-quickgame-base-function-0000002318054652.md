@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-quickgame-base-function-0000002318054652
 last_sync: 2026-06-07
 sync_hash: d61150b9
+upstream_status: upstream_deleted_pending
 ---
 * **[文件系统](/docs/dev/game-dev/games-quickgame-file-system-0000002351933641)**
 * **[分包加载](/docs/dev/game-dev/games-quickgame-subpackage-0000002317894828)**

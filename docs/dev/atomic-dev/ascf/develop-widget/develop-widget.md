@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/ascf/develop-widget/develop-widget
 last_sync: 2026-06-07
 sync_hash: 5f1971da
+upstream_status: upstream_deleted_pending
 ---
 ASCF框架元服务支持开发服务卡片，与元服务本身服务卡片开发方法相同：
 

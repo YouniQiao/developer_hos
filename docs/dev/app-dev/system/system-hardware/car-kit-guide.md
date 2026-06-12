@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/system/system-hardware/car-kit-guide
 last_sync: 2026-06-07
 sync_hash: b67fc06c
+upstream_status: upstream_deleted_pending
 ---
 * **[Car Kit简介](/docs/dev/app-dev/system/system-hardware/car-kit-guide/car-introduction)**
 * **[开发准备](/docs/dev/app-dev/system/system-security/device-security-kit-guide/devicesecurity-prepare)**

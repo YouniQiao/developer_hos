@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/instant-service-app-gui/instant-service-app-gui
 last_sync: 2026-06-07
 sync_hash: 215911f9
+upstream_status: upstream_deleted_pending
 ---
 * **[概览](/docs/dev/atomic-dev/instant-service-app-gui/instant-service-app-gui-overview)**
 * **[角色权限](/docs/dev/atomic-dev/instant-service-app-gui/instant-service-app-role-permissions)**

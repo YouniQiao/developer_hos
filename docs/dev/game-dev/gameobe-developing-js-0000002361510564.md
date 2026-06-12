@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/gameobe-developing-js-0000002361510564
 last_sync: 2026-06-07
 sync_hash: dad2497d
+upstream_status: upstream_deleted_pending
 ---
 * **[接口调用流程](/docs/dev/game-dev/gameobe-flowchart-overview-js-0000002395190477)**
 * **[集成SDK](/docs/dev/game-dev/gameobe-integratingsdk-js-0000002361670432)**

@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-ascf-toolkit
 last_sync: 2026-06-07
 sync_hash: 34254e62
+upstream_status: upstream_deleted_pending
 ---
 * **[转换小程序源码时报错Output path is error](/docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-output-path-error)**
 * **[路径不可用报错](/docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-path-received-undefined)**

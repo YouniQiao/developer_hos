@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-cache
 last_sync: 2026-06-07
 sync_hash: 720d6f59
+upstream_status: upstream_deleted_pending
 ---
 * **[HTTP缓存基本功能](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-cache/remote-communication-cache-basic)**
 * **[Session间缓存共享](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-cache/remote-communication-cache-shared)**

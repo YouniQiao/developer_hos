@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-center-restore-0000002320572941
 last_sync: 2026-06-07
 sync_hash: bd236770
+upstream_status: upstream_deleted_pending
 ---
 * **[前提条件](/docs/dev/game-dev/games-center-delete-prerequisites-0000002285973464)**
 * **[删除数字商品](/docs/dev/game-dev/games-center-delete-0000002286076748)**

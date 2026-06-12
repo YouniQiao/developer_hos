@@ -6,6 +6,7 @@ upstream_id: FAQ/faqs-arkui
 last_sync: 2026-06-07
 sync_hash: c40e4428
 upstream_hash: d731474c32cc
+upstream_status: upstream_deleted_pending
 ---
 
 * **[方舟UI框架（ArkUI）](/docs/FAQ/faqs-arkui-kit)**

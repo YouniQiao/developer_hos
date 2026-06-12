@@ -5,5 +5,6 @@ format: md
 upstream_id: dev/atomic-dev/atomic-service-framework-development/atomic-service-framework-development
 last_sync: 2026-06-07
 sync_hash: 25e60da3
+upstream_status: upstream_deleted_pending
 ---
 # 元服务框架开发

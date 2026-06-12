@@ -5,6 +5,7 @@ upstream_id: dev/app-dev/application-services/health-service-kit-guide/health-ha
 last_sync: 2026-06-07
 sync_hash: 86cb6022
 upstream_hash: 23b165a6ddb5
+upstream_status: upstream_deleted_pending
 ---
 
 import SourceLink from '@site/src/components/SourceLink';

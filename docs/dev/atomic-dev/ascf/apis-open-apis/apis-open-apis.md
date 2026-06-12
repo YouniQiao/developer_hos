@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/ascf/apis-open-apis/apis-open-apis
 last_sync: 2026-06-07
 sync_hash: c5767704
+upstream_status: upstream_deleted_pending
 ---
 * **[账号](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-account)**
 * **[授权](/docs/dev/atomic-dev/ascf/apis-open-apis/apis-authorization)**

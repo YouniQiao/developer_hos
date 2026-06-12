@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/ascf/ascf-release-note/release-note-ascf-vscode
 last_sync: 2026-06-07
 sync_hash: eb6951ca
+upstream_status: upstream_deleted_pending
 ---
 ## 1.0.10
 

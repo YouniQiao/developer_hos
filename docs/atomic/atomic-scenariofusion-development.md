@@ -6,6 +6,7 @@ upstream_id: dev/atomic-dev/atomic-scenariofusion-development/atomic-scenariofus
 last_sync: 2026-06-07
 sync_hash: 8112bd50
 upstream_hash: 391a28309388
+upstream_status: upstream_deleted_pending
 ---
 
 * **[Scenario Fusion Kit概述](/docs/dev/atomic-dev/atomic-scenariofusion-development/scenario-fusion-atomic-introduction)**

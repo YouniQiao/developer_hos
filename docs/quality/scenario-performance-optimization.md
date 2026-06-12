@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/scenario-performance-optimization
 last_sync: 2026-06-07
 sync_hash: 1b409d10
+upstream_status: upstream_deleted_pending
 ---
 # 性能场景优化案例
 

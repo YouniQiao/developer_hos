@@ -5,6 +5,7 @@ format: md
 upstream_id: distribute/agc/agc-help-beacon-regist-by-api-0000002382718889/agc-help-beacon-regist-by-api-changenotes-0000002349158194
 last_sync: 2026-06-07
 sync_hash: 99bc629c
+upstream_status: upstream_deleted_pending
 ---
 | 版本号 | 发布时间 | 更新说明 |
 | --- | --- | --- |

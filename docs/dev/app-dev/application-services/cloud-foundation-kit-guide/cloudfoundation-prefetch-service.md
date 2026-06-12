@@ -4,6 +4,7 @@ original_url: /docs/dev/app-dev/application-services/cloud-foundation-kit-guide/
 upstream_id: dev/app-dev/application-services/cloud-foundation-kit-guide/cloudfoundation-prefetch-service
 last_sync: 2026-06-07
 sync_hash: c8ca3c5e
+upstream_status: upstream_deleted_pending
 ---
 import SourceLink from '@site/src/components/SourceLink';
 

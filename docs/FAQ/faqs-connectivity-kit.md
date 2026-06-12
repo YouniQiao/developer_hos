@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-connectivity-kit
 upstream_id: FAQ/faqs-connectivity-kit
 last_sync: 2026-06-07
 sync_hash: a5c090dc
+upstream_status: upstream_deleted_pending
 ---
 * **[三方应用如何获取蓝牙MAC地址](/docs/FAQ/faqs-system-development/faqs-network/faqs-connectivity-kit/faqs-connectivity-1)**
 * **[如何扫描Wi-Fi列表](/docs/FAQ/faqs-system-development/faqs-network/faqs-connectivity-kit/faqs-connectivity-2)**

@@ -6,6 +6,7 @@ upstream_id: dev/atomic-dev/atomic-service-development/atomic-service-developmen
 last_sync: 2026-06-07
 sync_hash: dbe6ca90
 upstream_hash: ddce15d4a25a
+upstream_status: upstream_deleted_pending
 ---
 
 * **[元服务开发准备](/docs/dev/atomic-dev/atomic-service-development/atomic-dev-preparation)**

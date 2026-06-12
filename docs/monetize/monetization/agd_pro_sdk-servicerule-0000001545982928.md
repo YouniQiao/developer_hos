@@ -7,6 +7,7 @@ upstream_id: monetize/monetization/agd_pro_sdk-servicerule-0000001545982928
 last_sync: 2026-06-07
 sync_hash: d549fcd7
 upstream_hash: eedc9a6557d9
+upstream_status: upstream_deleted_pending
 ---
 
 * **[业务总则](/docs/monetize/monetization/agd_pro_sdk-rule-total-0000001597142081)**

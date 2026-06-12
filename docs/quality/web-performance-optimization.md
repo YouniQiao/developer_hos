@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/web-performance-optimization
 last_sync: 2026-06-07
 sync_hash: f55f713a
+upstream_status: upstream_deleted_pending
 ---
 # Web性能优化
 

@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-network/connectivity-kit/bluetooth
 last_sync: 2026-06-07
 sync_hash: 82aac42f
+upstream_status: upstream_deleted_pending
 ---
 * **[蓝牙服务开发概述](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/bluetooth-overview)**
 * **[蓝牙设置](/docs/dev/app-dev/system/system-network/connectivity-kit/bluetooth/br-development-guide)**

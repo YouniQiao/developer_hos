@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/media/camera-kit/camera-dev-arkts/camera-foldable-display
 last_sync: 2026-06-07
 sync_hash: 8374194f
+upstream_status: upstream_deleted_pending
 ---
 折叠设备形态各异，在相机应用的开发过程中需要统一的摄像头切换方案，以确保用户在拍照、录像过程中获得更好的体验。
 

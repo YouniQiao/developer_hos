@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/object-serialization-performance
 last_sync: 2026-06-07
 sync_hash: d7d4ace4
+upstream_status: upstream_deleted_pending
 ---
 # 对象序列化性能优化
 

@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide-c
 last_sync: 2026-06-07
 sync_hash: 0ca61aac
+upstream_status: upstream_deleted_pending
 ---
 * **[业务场景设置(C/C++)](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide-c/networkboost-netmultipath-setscenedesc-c)**
 * **[多网状态监听(C/C++)](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide-c/networkboost-netmultipath-statechangecallback-c)**

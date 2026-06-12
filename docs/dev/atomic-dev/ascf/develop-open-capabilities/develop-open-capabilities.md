@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/ascf/develop-open-capabilities/develop-open-capabilities
 last_sync: 2026-06-07
 sync_hash: e3ee5d58
+upstream_status: upstream_deleted_pending
 ---
 当应用需要使用开放能力时，为正常调试运行应用，需要预先添加公钥指纹。添加公钥指纹的步骤如下。
 

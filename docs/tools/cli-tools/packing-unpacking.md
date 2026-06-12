@@ -6,6 +6,7 @@ format: md
 upstream_id: tools/cli-tools/packing-unpacking
 last_sync: 2026-06-07
 sync_hash: 3d66b0e9
+upstream_status: upstream_deleted_pending
 ---
 # 打包拆包工具
 

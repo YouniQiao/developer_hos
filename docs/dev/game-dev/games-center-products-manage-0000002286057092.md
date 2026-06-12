@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-center-products-manage-0000002286057092
 last_sync: 2026-06-07
 sync_hash: 7dd12b23
+upstream_status: upstream_deleted_pending
 ---
 * **[创建数字商品](/docs/dev/game-dev/games-center-create-digital-products-0000002286076724)**
 * **[提交数字商品审核](/docs/dev/game-dev/games-center-submit-digital-products-for-review-0000002320572925)**

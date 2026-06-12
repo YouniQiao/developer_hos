@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-basicfun/ffrt-kit
 last_sync: 2026-06-07
 sync_hash: 6ad623b5
+upstream_status: upstream_deleted_pending
 ---
 * **[Function Flow Runtime Kit概述](/docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-overview)**
 * **[Function Flow Runtime并发范式](/docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-concurrency-paradigm)**

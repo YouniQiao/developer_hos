@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-audio-kit
 upstream_id: FAQ/faqs-audio-kit
 last_sync: 2026-06-07
 sync_hash: f7ffb3fd
+upstream_status: upstream_deleted_pending
 ---
 * **[如何后台播放音乐](/docs/FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-1)**
 * **[创建多个视频组件无法播放](/docs/FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-2)**

@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-background-tasks-kit
 upstream_id: FAQ/faqs-background-tasks-kit
 last_sync: 2026-06-07
 sync_hash: 37c2bd85
+upstream_status: upstream_deleted_pending
 ---
 * **[如何在Stage模型中创建后台任务](/docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-background-tasks-kit/faqs-background-tasks-1)**
 * **[应用在后台如何继续执行业务](/docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-background-tasks-kit/faqs-background-tasks-2)**

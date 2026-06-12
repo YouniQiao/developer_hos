@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-deveco-studio
 upstream_id: FAQ/faqs-deveco-studio
 last_sync: 2026-06-07
 sync_hash: 7d0b092f
+upstream_status: upstream_deleted_pending
 ---
 * **[环境准备](/docs/FAQ/faqs-development-environment)**
 * **[工程管理](/docs/FAQ/faqs-project-management)**

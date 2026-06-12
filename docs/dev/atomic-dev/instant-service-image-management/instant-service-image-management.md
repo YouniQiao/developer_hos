@@ -5,5 +5,6 @@ format: md
 upstream_id: dev/atomic-dev/instant-service-image-management/instant-service-image-management
 last_sync: 2026-06-07
 sync_hash: cb219c14
+upstream_status: upstream_deleted_pending
 ---
 # 图片管理

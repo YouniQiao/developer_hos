@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/health-harmonyos-as/health-harmonyos-as
 last_sync: 2026-06-07
 sync_hash: 6652c66a
+upstream_status: upstream_deleted_pending
 ---
 * **[数据开放总览](/docs/dev/atomic-dev/health-harmonyos-as/health-data-overview-as)**
 * **[开发准备](/docs/dev/atomic-dev/health-preparations-as/health-preparations-as)**

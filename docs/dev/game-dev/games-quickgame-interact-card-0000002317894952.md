@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-quickgame-interact-card-0000002317894952
 last_sync: 2026-06-07
 sync_hash: 5cb2f696
+upstream_status: upstream_deleted_pending
 ---
 * **[业务概述](/docs/dev/game-dev/games-quickgame-interact-card-overview-0000002351893581)**
 * **[开发指导](/docs/dev/game-dev/games-quickgame-interact-card-dev-0000002318054796)**

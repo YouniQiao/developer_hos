@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/testing/deveco-testing
 last_sync: 2026-06-07
 sync_hash: 03f9ba37
+upstream_status: upstream_deleted_pending
 ---
 * **[快速上手](/docs/dev/testing/get-familiar)**
 * **[专项测试](/docs/dev/testing/specialized-testing)**

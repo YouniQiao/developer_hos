@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-app-running
 upstream_id: FAQ/faqs-app-running
 last_sync: 2026-06-07
 sync_hash: c86897c4
+upstream_status: upstream_deleted_pending
 ---
 * **[登录华为开发者账号后，提示需要实名认证](/docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-1)**
 * **[在本地模拟器中卸载应用显示成功，但实际未卸载成功](/docs/FAQ/faqs-deveco-studio/faqs-app-running/faqs-app-running-4)**

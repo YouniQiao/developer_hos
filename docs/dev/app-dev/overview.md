@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/release-notes/overview
 last_sync: 2026-06-07
 sync_hash: 98921936
+upstream_status: upstream_deleted_pending
 ---
 # 应用开发
 

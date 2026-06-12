@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp
 last_sync: 2026-06-07
 sync_hash: 22b6d670
+upstream_status: upstream_deleted_pending
 ---
 * **[基于TracingConfiguration实现性能维测](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-tpms)**
 * **[通过配置Configuration优化传输性能](/docs/dev/app-dev/system/system-network/remote-communication-kit-guide/remote-communication-hpp/remote-communication-cpo)**

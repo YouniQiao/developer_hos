@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/stability-develop-detection
 last_sync: 2026-06-07
 sync_hash: c781f083
+upstream_status: upstream_deleted_pending
 ---
 # 开发态稳定性检测
 

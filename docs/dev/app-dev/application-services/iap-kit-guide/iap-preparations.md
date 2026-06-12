@@ -4,6 +4,7 @@ original_url: /docs/dev/app-dev/application-services/iap-kit-guide/iap-preparati
 upstream_id: dev/app-dev/application-services/iap-kit-guide/iap-preparations
 last_sync: 2026-06-07
 sync_hash: 8edfa417
+upstream_status: upstream_deleted_pending
 ---
 import SourceLink from '@site/src/components/SourceLink';
 

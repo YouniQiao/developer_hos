@@ -5,5 +5,6 @@ original_url: /docs/dev/release-notes/changelogs-for-all-apps-b106
 upstream_id: dev/release-notes/changelogs-for-all-apps-b106
 last_sync: 2026-06-07
 sync_hash: 2039f18f
+upstream_status: upstream_deleted_pending
 ---
 # OS平台API行为的变更

@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/ascf/ascf-release-note/release-note-ascf-bitfun
 last_sync: 2026-06-07
 sync_hash: 628c60f1
+upstream_status: upstream_deleted_pending
 ---
 ## 1.0.0-beta.1
 

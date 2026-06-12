@@ -6,6 +6,7 @@ format: md
 upstream_id: design/app-compatibility/app-compatibility-upgrade
 last_sync: 2026-06-07
 sync_hash: 175d11f8
+upstream_status: upstream_deleted_pending
 ---
 # 应用升级targetSDKVersion兼容低版本指导
 

@@ -5,6 +5,7 @@ format: md
 upstream_id: distribute/agc/agc-help-auth-0000002236336998/agc-help-auth-releasenotes-0000002271496185
 last_sync: 2026-06-07
 sync_hash: a5530c78
+upstream_status: upstream_deleted_pending
 ---
 | 版本号 | 发布时间 | 更新说明 |
 | --- | --- | --- |

@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/instant-service-store-management/instant-service-store-management
 last_sync: 2026-06-07
 sync_hash: 8fd8dd9f
+upstream_status: upstream_deleted_pending
 ---
 * **[门店管理流程说明](/docs/dev/atomic-dev/instant-service-store-management/instant-service-store-process)**
 * **[创建门店](/docs/dev/atomic-dev/instant-service-store-management/instant-service-store-create)**

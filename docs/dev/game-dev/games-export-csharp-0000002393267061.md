@@ -6,6 +6,7 @@ upstream_id: dev/game-dev/games-export-csharp-0000002393267061
 last_sync: 2026-06-07
 sync_hash: 3a71a417
 upstream_hash: 65c7a1f21603
+upstream_status: upstream_deleted_pending
 ---
 
 * **[C#（Native）](/docs/dev/game-dev/games-export-csharp-native-0000002359547198)**

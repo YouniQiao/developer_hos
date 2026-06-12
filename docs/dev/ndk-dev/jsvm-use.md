@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/ndk-dev/jsvm-use
 last_sync: 2026-06-07
 sync_hash: 3e445b71
+upstream_status: upstream_deleted_pending
 ---
 * **[使用JSVM-API接口进行任务队列相关开发](/docs/dev/ndk-dev/use-jsvm-execute_tasks)**
 * **[使用JSVM-API接口进行虚拟机快照相关开发](/docs/dev/ndk-dev/use-jsvm-create-snapshot)**

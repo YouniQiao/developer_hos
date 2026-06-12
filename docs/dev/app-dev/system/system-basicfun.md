@@ -7,6 +7,7 @@ upstream_id: dev/app-dev/system/system-basicfun
 last_sync: 2026-06-07
 sync_hash: 74647d86
 upstream_hash: 28233759433a
+upstream_status: upstream_deleted_pending
 ---
 
 * **[Basic Services Kit（基础服务）](/docs/dev/app-dev/system/system-basicfun/basic-services-kit)**

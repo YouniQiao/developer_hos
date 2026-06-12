@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription
 last_sync: 2026-06-07
 sync_hash: 9eeff461
+upstream_status: upstream_deleted_pending
 ---
 * **[事件订阅简介](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/event-subscription-overview)**
 * **[事件订阅（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/hiappevent-watcher-app-events-arkts)**

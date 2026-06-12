@@ -5,6 +5,7 @@ original_url: /docs/dev/release-notes/known-issues-baseline
 upstream_id: dev/release-notes/known-issues-baseline
 last_sync: 2026-06-07
 sync_hash: b958ce81
+upstream_status: upstream_deleted_pending
 ---
 # 已解决和已知的问题
 

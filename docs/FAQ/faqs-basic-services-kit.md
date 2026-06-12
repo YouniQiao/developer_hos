@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-basic-services-kit
 upstream_id: FAQ/faqs-basic-services-kit
 last_sync: 2026-06-07
 sync_hash: 0136d4bd
+upstream_status: upstream_deleted_pending
 ---
 * **[如何获取系统时间戳](/docs/FAQ/faqs-system-development/faqs-basic-functions/faqs-basic-services-kit/faq-basics-service-kit-1)**
 * **[是否支持获取用户手机上所有的App列表](/docs/FAQ/faqs-system-development/faqs-basic-functions/faqs-basic-services-kit/faq-basics-service-kit-6)**

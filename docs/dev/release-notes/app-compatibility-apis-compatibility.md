@@ -5,6 +5,7 @@ original_url: /docs/dev/release-notes/app-compatibility-apis-compatibility
 upstream_id: dev/release-notes/app-compatibility-apis-compatibility
 last_sync: 2026-06-07
 sync_hash: 5857d959
+upstream_status: upstream_deleted_pending
 ---
 # API兼容性保护和告警屏蔽
 

@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/stability-fault-log
 last_sync: 2026-06-07
 sync_hash: 41ecd16a
+upstream_status: upstream_deleted_pending
 ---
 # 稳定性故障类型及日志规格说明
 

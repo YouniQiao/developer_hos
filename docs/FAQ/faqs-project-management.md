@@ -6,6 +6,7 @@ upstream_id: FAQ/faqs-project-management
 last_sync: 2026-06-07
 sync_hash: 033fec12
 upstream_hash: cfb7b6225ef9
+upstream_status: upstream_deleted_pending
 ---
 
 * **[工程检查报错，提示“Incorrect settings found in the build-profile.json5 file”](/docs/FAQ/faqs-deveco-studio/faqs-project-management/faqs-project-management-2)**

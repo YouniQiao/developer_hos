@@ -6,6 +6,7 @@ upstream_id: dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard
 last_sync: 2026-06-07
 sync_hash: 7429a782
 upstream_hash: 39f5f9de2370
+upstream_status: upstream_deleted_pending
 ---
 
 * **[申请访问剪贴板权限](/docs/dev/app-dev/system/system-basicfun/basic-services-kit/pasteboard/get-pastedata-permission-guidelines)**

@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-arkweb-kit
 upstream_id: FAQ/faqs-arkweb-kit
 last_sync: 2026-06-07
 sync_hash: d602b478
+upstream_status: upstream_deleted_pending
 ---
 * **[Web组件的onLoadIntercept返回结果是否影响onInterceptRequest](/docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-2)**
 * **[为什么Web组件的onKeyEvent键盘事件不生效](/docs/FAQ/faqs-app-framework-development/faqs-web-page-framework/faqs-arkweb-kit/faqs-arkweb-3)**

@@ -5,6 +5,7 @@ original_url: /docs/dev/release-notes/overview
 upstream_id: dev/release-notes/overview
 last_sync: 2026-06-07
 sync_hash: 969dd37c
+upstream_status: upstream_deleted_pending
 ---
 # 所有HarmonyOS版本
 

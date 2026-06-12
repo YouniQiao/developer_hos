@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/application-services/account-kit-guide/subscribe-process-userinfo-change
 last_sync: 2026-06-07
 sync_hash: f5ed8a5d
+upstream_status: upstream_deleted_pending
 ---
 ## 概述
 

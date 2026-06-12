@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/low-power-consumption-of-foreground-tasks
 last_sync: 2026-06-07
 sync_hash: 1e1e89b8
+upstream_status: upstream_deleted_pending
 ---
 # 前台任务低功耗
 

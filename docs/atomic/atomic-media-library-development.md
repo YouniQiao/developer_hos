@@ -5,5 +5,6 @@ format: md
 upstream_id: dev/atomic-dev/atomic-media-library-development/atomic-media-library-development
 last_sync: 2026-06-07
 sync_hash: 7c8b3beb
+upstream_status: upstream_deleted_pending
 ---
 * **[使用Picker选择媒体库资源](/docs/dev/atomic-dev/atomic-media-library-development/atomic-medialibrary-photoviewpicker)**

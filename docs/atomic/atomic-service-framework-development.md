@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/atomic-service-framework-development/atomic-service-framework-development
 last_sync: 2026-06-07
 sync_hash: 44219cf8
+upstream_status: upstream_deleted_pending
 ---
 ## 应用模型
 

@@ -6,6 +6,7 @@ format: md
 upstream_id: tools/coding-debug/ide-codelinter-rules-change
 last_sync: 2026-06-07
 sync_hash: 916c4879
+upstream_status: upstream_deleted_pending
 ---
 # 规则变更说明
 

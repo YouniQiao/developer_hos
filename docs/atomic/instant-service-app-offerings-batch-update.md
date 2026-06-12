@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/instant-service-app-offerings/instant-service-app-offerings-batch-update
 last_sync: 2026-06-07
 sync_hash: e3fc5c8c
+upstream_status: upstream_deleted_pending
 ---
 在商品状态为“草稿”、“审核驳回”、“已上架”状态时，开发者可以通过“批量变更”操作更新商品信息并发起审核。
 

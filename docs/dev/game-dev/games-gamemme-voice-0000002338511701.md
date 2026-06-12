@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-gamemme-voice-0000002338511701
 last_sync: 2026-06-07
 sync_hash: 00b090c3
+upstream_status: upstream_deleted_pending
 ---
 * **[概述](/docs/dev/game-dev/games-gamemme-voice-overview-0000002304520206)**
 * **[HarmonyOS 5.0及以上](/docs/dev/game-dev/games-gamemme-voice-harmonyos-0000002393621533)**

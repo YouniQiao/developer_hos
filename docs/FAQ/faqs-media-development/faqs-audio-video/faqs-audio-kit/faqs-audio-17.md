@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/f
 upstream_id: FAQ/faqs-media-development/faqs-audio-video/faqs-audio-kit/faqs-audio-17
 last_sync: 2026-06-07
 sync_hash: f48d8816
+upstream_status: upstream_deleted_pending
 ---
 **问题现象**
 

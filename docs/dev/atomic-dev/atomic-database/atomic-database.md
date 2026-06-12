@@ -5,5 +5,6 @@ format: md
 upstream_id: dev/atomic-dev/atomic-database/atomic-database
 last_sync: 2026-06-07
 sync_hash: cd997789
+upstream_status: upstream_deleted_pending
 ---
 # 数据

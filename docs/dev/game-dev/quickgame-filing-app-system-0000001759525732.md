@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/quickgame-filing-app-system-0000001759525732
 last_sync: 2026-06-07
 sync_hash: df999a19
+upstream_status: upstream_deleted_pending
 ---
 * **[首次核准（备案）](/docs/dev/game-dev/quickgame-filing-app-first-0000001819107801)**
 * **[新增互联网信息](/docs/dev/game-dev/quickgame-filing-app-addition-0000001834211037)**

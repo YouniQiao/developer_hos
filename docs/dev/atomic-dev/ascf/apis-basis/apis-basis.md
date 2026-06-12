@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/ascf/apis-basis/apis-basis
 last_sync: 2026-06-07
 sync_hash: f3bab18d
+upstream_status: upstream_deleted_pending
 ---
 * **[API可用判断](/docs/dev/atomic-dev/ascf/apis-basis/apis-caniuse)**
 * **[系统信息](/docs/dev/atomic-dev/ascf/apis-basis/apis-system-info)**

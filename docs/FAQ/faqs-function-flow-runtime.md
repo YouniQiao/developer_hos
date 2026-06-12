@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-function-flow-runtime
 upstream_id: FAQ/faqs-function-flow-runtime
 last_sync: 2026-06-07
 sync_hash: 2b074a4d
+upstream_status: upstream_deleted_pending
 ---
 * **[如何在Native侧C++子线程直接调用ArkTS接口，不用通过ArkTS侧触发回调](/docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-8)**
 * **[ArkTS层调用Native层接口时的线程相关问题](/docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-function-flow-runtime/faqs-ndk-14)**

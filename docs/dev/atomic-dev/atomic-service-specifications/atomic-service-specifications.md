@@ -5,5 +5,6 @@ format: md
 upstream_id: dev/atomic-dev/atomic-service-specifications/atomic-service-specifications
 last_sync: 2026-06-07
 sync_hash: fbcf228c
+upstream_status: upstream_deleted_pending
 ---
 # 元服务规范

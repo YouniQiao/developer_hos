@@ -5,5 +5,6 @@ format: md
 upstream_id: dev/atomic-dev/instant-service/instant-service
 last_sync: 2026-06-07
 sync_hash: 6f2c125d
+upstream_status: upstream_deleted_pending
 ---
 # 服务直达支持元服务

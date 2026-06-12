@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-basicfun/mdm-kit
 last_sync: 2026-06-07
 sync_hash: 56fa0150
+upstream_status: upstream_deleted_pending
 ---
 * **[MDM Kit简介](/docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-intro)**
 * **[MDM Kit开发指南](/docs/dev/app-dev/system/system-basicfun/mdm-kit/mdm-kit-guide)**

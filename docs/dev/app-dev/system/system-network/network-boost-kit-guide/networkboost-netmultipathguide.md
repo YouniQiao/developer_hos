@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide
 last_sync: 2026-06-07
 sync_hash: 68168d60
+upstream_status: upstream_deleted_pending
 ---
 * **[概述](/docs/dev/app-dev/system/system-security/online-authentication-kit-guide/onlineauthentication-passkey/onlineauthentication-passkey-intro)**
 * **[业务场景设置](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-netmultipathguide/networkboost-netmultipath-setscenedesc)**

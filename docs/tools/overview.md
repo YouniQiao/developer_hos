@@ -6,6 +6,7 @@ format: md
 upstream_id: tools/overview
 last_sync: 2026-06-07
 sync_hash: cd516de1
+upstream_status: upstream_deleted_pending
 ---
 # 工具
 

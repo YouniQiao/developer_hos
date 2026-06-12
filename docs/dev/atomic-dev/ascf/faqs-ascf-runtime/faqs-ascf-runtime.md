@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-ascf-runtime
 last_sync: 2026-06-07
 sync_hash: a8cad044
+upstream_status: upstream_deleted_pending
 ---
 * **[has.login接口运行报错](/docs/dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-runtime-login-error)**
 * **[自定义组件未定义properties属性，传参为空](/docs/dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-runtime-properties-not-defined)**

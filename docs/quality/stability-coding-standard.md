@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/stability-coding-standard
 last_sync: 2026-06-07
 sync_hash: ad66b77e
+upstream_status: upstream_deleted_pending
 ---
 # 稳定性编码规范
 

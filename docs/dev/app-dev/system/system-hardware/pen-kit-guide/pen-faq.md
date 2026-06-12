@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-hardware/pen-kit-guide/pen-faq
 last_sync: 2026-06-07
 sync_hash: 8b6ccc7a
+upstream_status: upstream_deleted_pending
 ---
 * **[Pen Kit手写套件是否支持自定义笔刷？](/docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-faq/pen-faq-1)**
 * **[Pen Kit手写套件是否支持自定义笔宽？](/docs/dev/app-dev/system/system-hardware/pen-kit-guide/pen-faq/pen-faq-2)**

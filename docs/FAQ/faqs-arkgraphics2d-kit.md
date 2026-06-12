@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-arkgraphics2d-kit
 upstream_id: FAQ/faqs-arkgraphics2d-kit
 last_sync: 2026-06-07
 sync_hash: 81a9244b
+upstream_status: upstream_deleted_pending
 ---
 * **[如何使用EGL绘制自定义动画？请提供一个简单示例](/docs/FAQ/faqs-graphic-development/faqs-arkgraphics2d-kit/faqs-arkgraphics-2d-1)**
 * **[多线程调用OH\_Drawing\_CreateFontCollection崩溃](/docs/FAQ/faqs-graphic-development/faqs-arkgraphics2d-kit/faqs-arkgraphics-2d-3)**

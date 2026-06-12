@@ -5,5 +5,6 @@ format: md
 upstream_id: dev/atomic-dev/scenario-fusion-atomic-button/scenario-fusion-atomic-button
 last_sync: 2026-06-07
 sync_hash: 803801f7
+upstream_status: upstream_deleted_pending
 ---
 # 场景化Button

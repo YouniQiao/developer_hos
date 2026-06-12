@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-jsvm
 upstream_id: FAQ/faqs-jsvm
 last_sync: 2026-06-07
 sync_hash: 22e49916
+upstream_status: upstream_deleted_pending
 ---
 * **[如何管理JSVM\_CallbackStruct生命周期](/docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-jsvm/faqs-jsvm-1)**
 * **[如何自排查\_Bool类型没有找到的编译问题](/docs/FAQ/faqs-app-framework-development/faqs-ndk/faqs-jsvm/faqs-jsvm-2)**

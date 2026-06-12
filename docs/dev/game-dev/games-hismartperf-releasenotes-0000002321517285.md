@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/game-dev/games-hismartperf-releasenotes-0000002321517285
 last_sync: 2026-06-07
 sync_hash: 8211ac2c
+upstream_status: upstream_deleted_pending
 ---
 ## Windows
 

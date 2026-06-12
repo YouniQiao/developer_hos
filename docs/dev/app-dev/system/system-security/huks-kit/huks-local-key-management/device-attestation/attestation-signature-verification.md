@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/attestation-signature-verification
 last_sync: 2026-06-07
 sync_hash: bfab010a
+upstream_status: upstream_deleted_pending
 ---
 ## 概述
 

@@ -6,6 +6,7 @@ upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide/networkbo
 last_sync: 2026-06-07
 sync_hash: e879e4b5
 upstream_hash: f73107afb042
+upstream_status: upstream_deleted_pending
 ---
 
 * **[连接迁移通知 (C/C++)](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-nethandoverguide-c/networkboost-nethandovercallback-c)**

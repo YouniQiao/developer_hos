@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/ascf/components/components
 last_sync: 2026-06-07
 sync_hash: b9b7cc96
+upstream_status: upstream_deleted_pending
 ---
 * **[视图容器](/docs/dev/atomic-dev/ascf/components-view-container/components-view-container)**
 * **[基础内容](/docs/dev/atomic-dev/ascf/components-basic-components/components-basic-components)**

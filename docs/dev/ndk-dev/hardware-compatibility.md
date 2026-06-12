@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/ndk-dev/hardware-compatibility
 last_sync: 2026-06-07
 sync_hash: 4e9709b3
+upstream_status: upstream_deleted_pending
 ---
 * **[硬件兼容性简介](/docs/dev/ndk-dev/hw-guide)**
 * **[HarmonyOS ABI](/docs/dev/ndk-dev/ohos-abi)**

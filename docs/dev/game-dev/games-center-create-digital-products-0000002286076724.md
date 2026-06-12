@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-center-create-digital-products-0000002286076724
 last_sync: 2026-06-07
 sync_hash: 5f9c6de1
+upstream_status: upstream_deleted_pending
 ---
 您可以通过华为商品管理系统（PMS）将您的应用商品信息托管在华为侧，方便您的应用商品价格国际化管理，助力您的应用进行全球化推广。
 

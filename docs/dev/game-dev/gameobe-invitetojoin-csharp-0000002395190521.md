@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/gameobe-invitetojoin-csharp-0000002395190521
 last_sync: 2026-06-07
 sync_hash: 9d6fd02a
+upstream_status: upstream_deleted_pending
 ---
 * **[接口调用流程](/docs/dev/game-dev/gameobe-flowchart-createandjoinroom-csharp-0000002361670480)**
 * **[创建房间](/docs/dev/game-dev/gameobe-createjoinroom-csharp-0000002395350425)**

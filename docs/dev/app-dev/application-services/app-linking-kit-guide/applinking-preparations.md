@@ -4,6 +4,7 @@ original_url: /docs/dev/app-dev/application-services/app-linking-kit-guide/appli
 upstream_id: dev/app-dev/application-services/app-linking-kit-guide/applinking-preparations
 last_sync: 2026-06-07
 sync_hash: 7e1140c4
+upstream_status: upstream_deleted_pending
 ---
 import SourceLink from '@site/src/components/SourceLink';
 

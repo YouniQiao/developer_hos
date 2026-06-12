@@ -5,5 +5,6 @@ format: md
 upstream_id: dev/atomic-dev/atomic-scan-generate/atomic-scan-generate
 last_sync: 2026-06-07
 sync_hash: 7d0d370f
+upstream_status: upstream_deleted_pending
 ---
 # 码图生成

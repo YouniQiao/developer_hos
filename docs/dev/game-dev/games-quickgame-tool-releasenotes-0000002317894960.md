@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-quickgame-tool-releasenotes-0000002317894960
 last_sync: 2026-06-07
 sync_hash: 1254e6f3
+upstream_status: upstream_deleted_pending
 ---
 ## Windows
 

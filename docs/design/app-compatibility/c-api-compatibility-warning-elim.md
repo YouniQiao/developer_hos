@@ -7,6 +7,7 @@ upstream_id: design/app-compatibility/c-api-compatibility-warning-elim
 last_sync: 2026-06-07
 sync_hash: 1c1147b0
 upstream_hash: 87690a9813fc
+upstream_status: upstream_deleted_pending
 ---
 
 # C API兼容性保护

@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-cpp
 last_sync: 2026-06-07
 sync_hash: a0012337
+upstream_status: upstream_deleted_pending
 ---
 * **[Function Flow Runtime串行队列(C++)](/docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-cpp/ffrt-concurrency-serial-queue-cpp)**
 * **[Function Flow Runtime并发队列(C++)](/docs/dev/app-dev/system/system-basicfun/ffrt-kit/ffrt-example-cpp/ffrt-concurrency-concurrent-queue-cpp)**

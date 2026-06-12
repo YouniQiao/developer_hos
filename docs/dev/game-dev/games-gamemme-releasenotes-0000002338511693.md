@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-gamemme-releasenotes-0000002338511693
 last_sync: 2026-06-07
 sync_hash: 8e378385
+upstream_status: upstream_deleted_pending
 ---
 ## µ£Ćµ¢░ńēłµ£¼
 

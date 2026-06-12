@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-hismartperf-analysis-0000002321517297
 last_sync: 2026-06-07
 sync_hash: 0ceb6795
+upstream_status: upstream_deleted_pending
 ---
 * **[系统数据](/docs/dev/game-dev/games-hismartperf-system-data-0000002321404217)**
 * **[GPU counter](/docs/dev/game-dev/games-hismartperf-gpu-counter-0000002286844730)**

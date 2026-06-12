@@ -6,6 +6,7 @@ upstream_id: dev/game-dev/games-quickgame-faq-0000002458772633
 last_sync: 2026-06-07
 sync_hash: 801013b9
 upstream_hash: 80dc258a2072
+upstream_status: upstream_deleted_pending
 ---
 
 * **[核准（备案）](/docs/dev/game-dev/games-quickgame-faq-recordal-0000002425133922)**

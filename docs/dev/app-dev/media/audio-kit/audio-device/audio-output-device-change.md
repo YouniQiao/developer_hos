@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/media/audio-kit/audio-device/audio-output-device-change
 last_sync: 2026-06-07
 sync_hash: 80772c93
+upstream_status: upstream_deleted_pending
 ---
 开发者可以了解音频流输出设备变更信息，并完成相应适配，比如：应用在播放音乐时发现输出设备下线，为避免打扰用户，应该立即暂停音乐。
 

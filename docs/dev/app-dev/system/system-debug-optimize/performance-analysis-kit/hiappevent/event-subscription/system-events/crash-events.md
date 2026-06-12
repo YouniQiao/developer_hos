@@ -6,6 +6,7 @@ format: md
 upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/crash-events
 last_sync: 2026-06-07
 sync_hash: c551ffeb
+upstream_status: upstream_deleted_pending
 ---
 * **[崩溃事件介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/crash-events/hiappevent-watcher-crash-events)**
 * **[订阅崩溃事件（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hiappevent/event-subscription/system-events/crash-events/hiappevent-watcher-crash-events-arkts)**

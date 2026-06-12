@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/stability-app-crash
 last_sync: 2026-06-07
 sync_hash: 5d75cf5d
+upstream_status: upstream_deleted_pending
 ---
 # 应用异常退出类问题分析方法
 

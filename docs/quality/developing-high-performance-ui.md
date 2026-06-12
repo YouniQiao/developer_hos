@@ -6,6 +6,7 @@ upstream_id: /docs/quality/developing-high-performance-ui
 last_sync: 2026-06-07
 sync_hash: 8615a313
 upstream_hash: c81cece41ad1
+upstream_status: upstream_deleted_pending
 ---
 
 # 界面渲染性能优化

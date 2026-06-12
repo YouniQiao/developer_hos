@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/ascf/apis-device/apis-device
 last_sync: 2026-06-07
 sync_hash: ba6fa425
+upstream_status: upstream_deleted_pending
 ---
 * **[网络](/docs/dev/atomic-dev/ascf/apis-device/apis-network-type)**
 * **[电话](/docs/dev/atomic-dev/ascf/apis-device/apis-telephony)**

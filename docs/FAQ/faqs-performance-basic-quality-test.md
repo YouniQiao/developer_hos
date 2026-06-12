@@ -6,6 +6,7 @@ upstream_id: FAQ/faqs-performance-basic-quality-test
 last_sync: 2026-06-07
 sync_hash: 0b23154d
 upstream_hash: 33b1f8b25c6b
+upstream_status: upstream_deleted_pending
 ---
 
 * **[报告中为什么会出现未执行检测](/docs/FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-performance-basic-quality-test/faqs-performance-basic-quality-test-1)**

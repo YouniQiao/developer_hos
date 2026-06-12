@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/atomic-dev/atomic-bluetooth/atomic-bluetooth
 last_sync: 2026-06-07
 sync_hash: 5c76a0e4
+upstream_status: upstream_deleted_pending
 ---
 * **[蓝牙设置开发指导](/docs/dev/atomic-dev/atomic-bluetooth/atomic-bluetooth-access)**
 * **[广播开发指导](/docs/dev/atomic-dev/atomic-bluetooth/atomic-bluetooth-advertising)**

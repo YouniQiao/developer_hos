@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/quickgame-filing-pc-system-0000001850185173
 last_sync: 2026-06-07
 sync_hash: 2701052a
+upstream_status: upstream_deleted_pending
 ---
 * **[首次核准（备案）](/docs/dev/game-dev/quickgame-filing-pc-first-0000001761656100)**
 * **[新增互联网信息](/docs/dev/game-dev/quickgame-filing-pc-addition-0000001808815505)**

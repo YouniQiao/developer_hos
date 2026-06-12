@@ -6,6 +6,7 @@ upstream_id: dev/atomic-dev/instant-service-items/instant-service-items-batch-up
 last_sync: 2026-06-07
 sync_hash: e9184f8e
 upstream_hash: cbac647693d5
+upstream_status: upstream_deleted_pending
 ---
 
 # 批量变更子服务

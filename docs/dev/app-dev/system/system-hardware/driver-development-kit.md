@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-hardware/driver-development-kit
 last_sync: 2026-06-07
 sync_hash: 4ec0898f
+upstream_status: upstream_deleted_pending
 ---
 * **[Driver Development Kit简介](/docs/dev/app-dev/system/system-hardware/driver-development-kit/driverdevelopment-overview)**
 * **[环境准备](/docs/dev/app-dev/system/system-hardware/driver-development-kit/environmental-preparation)**

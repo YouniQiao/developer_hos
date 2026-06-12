@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-adapt-universal-engine-0000002290377053
 last_sync: 2026-06-07
 sync_hash: 066f5a42
+upstream_status: upstream_deleted_pending
 ---
 * **[使用自己的引擎概述](/docs/dev/game-dev/games-universal-introduction-0000002256254902)**
 * **[适配准备](/docs/dev/game-dev/games-universal-perparation-0000002255997168)**

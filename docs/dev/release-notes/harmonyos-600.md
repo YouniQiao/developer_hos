@@ -5,6 +5,7 @@ original_url: /docs/dev/release-notes/harmonyos-600
 upstream_id: dev/release-notes/harmonyos-600
 last_sync: 2026-06-07
 sync_hash: e83f7d7e
+upstream_status: upstream_deleted_pending
 ---
 # HarmonyOS 6.0.0(20)
 

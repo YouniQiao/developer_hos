@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/stability-operate
 last_sync: 2026-06-07
 sync_hash: 5fe40145
+upstream_status: upstream_deleted_pending
 ---
 # 稳定性运维
 

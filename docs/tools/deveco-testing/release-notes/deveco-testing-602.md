@@ -5,6 +5,7 @@ original_url: /docs/tools/deveco-testing/release-notes/deveco-testing-602
 upstream_id: tools/deveco-testing/release-notes/deveco-testing-602
 last_sync: 2026-06-07
 sync_hash: 8c8bfb61
+upstream_status: upstream_deleted_pending
 ---
 # DevEco Testing 6.0.2
 

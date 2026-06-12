@@ -5,5 +5,6 @@ format: md
 upstream_id: dev/atomic-dev/instant-service-access-credentials/instant-service-access-credentials
 last_sync: 2026-06-07
 sync_hash: fe5f1ff0
+upstream_status: upstream_deleted_pending
 ---
 # 配置接口访问凭证

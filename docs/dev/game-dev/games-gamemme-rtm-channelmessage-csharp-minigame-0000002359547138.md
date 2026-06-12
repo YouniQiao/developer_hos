@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-gamemme-rtm-channelmessage-csharp-minigame-0000002359547138
 last_sync: 2026-06-07
 sync_hash: 34ad7cdc
+upstream_status: upstream_deleted_pending
 ---
 * **[订阅与取消订阅频道](/docs/dev/game-dev/games-gamemme-channel-subscribe-csharp-minigame-0000002393227161)**
 * **[发布与接收频道消息](/docs/dev/game-dev/games-gamemme-channelmessage-publish-csharp-mini-0000002359707050)**

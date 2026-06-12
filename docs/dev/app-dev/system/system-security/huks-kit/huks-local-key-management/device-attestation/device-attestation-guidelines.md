@@ -6,6 +6,7 @@ upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-manageme
 last_sync: 2026-06-07
 sync_hash: ae0e0559
 upstream_hash: c4b1e743657c
+upstream_status: upstream_deleted_pending
 ---
 
 ## 概述

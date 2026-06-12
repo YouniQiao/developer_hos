@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracechain
 last_sync: 2026-06-07
 sync_hash: 306db750
+upstream_status: upstream_deleted_pending
 ---
 * **[HiTraceChain介绍](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracechain/hitracechain-intro)**
 * **[使用HiTraceChain打点（ArkTS）](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/hitracechain/hitracechain-guidelines-arkts)**

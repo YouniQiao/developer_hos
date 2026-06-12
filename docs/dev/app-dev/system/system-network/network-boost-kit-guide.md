@@ -6,6 +6,7 @@ upstream_id: dev/app-dev/system/system-network/network-boost-kit-guide
 last_sync: 2026-06-07
 sync_hash: 0af8d915
 upstream_hash: e5cfa654f2ef
+upstream_status: upstream_deleted_pending
 ---
 
 * **[Network Boost Kit简介](/docs/dev/app-dev/system/system-network/network-boost-kit-guide/networkboost-introduction)**

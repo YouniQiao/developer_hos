@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-improve-performance-gpm-0000002252508218
 last_sync: 2026-06-07
 sync_hash: d4d57eee
+upstream_status: upstream_deleted_pending
 ---
 * **[业务介绍](/docs/dev/game-dev/games-gpm-overview-0000002332867021)**
 * **[版本更新说明](/docs/dev/game-dev/games-gpm-releasenotes-0000002332907205)**

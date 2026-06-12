@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/scenario-power-optimization
 last_sync: 2026-06-07
 sync_hash: 6ef50f89
+upstream_status: upstream_deleted_pending
 ---
 # 功耗场景优化案例
 

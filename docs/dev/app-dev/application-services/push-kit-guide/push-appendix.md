@@ -4,6 +4,7 @@ original_url: /docs/dev/app-dev/application-services/push-kit-guide/push-appendi
 upstream_id: dev/app-dev/application-services/push-kit-guide/push-appendix
 last_sync: 2026-06-07
 sync_hash: 597389fc
+upstream_status: upstream_deleted_pending
 ---
 import SourceLink from '@site/src/components/SourceLink';
 

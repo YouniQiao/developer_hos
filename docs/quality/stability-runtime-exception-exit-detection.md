@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/stability-runtime-exception-exit-detection
 last_sync: 2026-06-07
 sync_hash: ce938615
+upstream_status: upstream_deleted_pending
 ---
 # 应用异常退出类问题检测方法
 

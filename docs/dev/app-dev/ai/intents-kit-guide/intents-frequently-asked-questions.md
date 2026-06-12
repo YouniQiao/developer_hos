@@ -4,6 +4,7 @@ original_url: /docs/dev/app-dev/ai/intents-kit-guide/intents-frequently-asked-qu
 upstream_id: dev/app-dev/ai/intents-kit-guide/intents-frequently-asked-questions
 last_sync: 2026-06-07
 sync_hash: 53df8747
+upstream_status: upstream_deleted_pending
 ---
 import SourceLink from '@site/src/components/SourceLink';
 

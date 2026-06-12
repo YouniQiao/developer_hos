@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/stability-leak-detection
 last_sync: 2026-06-07
 sync_hash: fa916ec1
+upstream_status: upstream_deleted_pending
 ---
 # 资源泄漏类问题检测
 

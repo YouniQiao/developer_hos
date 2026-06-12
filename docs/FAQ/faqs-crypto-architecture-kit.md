@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-crypto-architecture-kit
 upstream_id: FAQ/faqs-crypto-architecture-kit
 last_sync: 2026-06-07
 sync_hash: 70de8335
+upstream_status: upstream_deleted_pending
 ---
 * **[如何获取应用签名证书的hash值](/docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-2)**
 * **[如何使用服务端下发的RSA公钥（字符串）对明文数据进行加密](/docs/FAQ/faqs-system-development/faqs-security/faqs-crypto-architecture-kit/faqs-crypto-architecture-3)**

@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-ability-kit
 upstream_id: FAQ/faqs-ability-kit
 last_sync: 2026-06-07
 sync_hash: 0982a17b
+upstream_status: upstream_deleted_pending
 ---
 * **[如何获取设备屏幕方向的状态变化通知](/docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-1)**
 * **[如何使用AbilityStage的生命周期函数](/docs/FAQ/faqs-app-framework-development/faqs-ability/faqs-ability-kit/faqs-ability-2)**

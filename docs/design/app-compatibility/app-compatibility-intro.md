@@ -6,6 +6,7 @@ format: md
 upstream_id: design/app-compatibility/app-compatibility-intro
 last_sync: 2026-06-07
 sync_hash: a5c3da63
+upstream_status: upstream_deleted_pending
 ---
 # 关于应用兼容性的介绍
 

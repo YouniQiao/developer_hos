@@ -6,6 +6,7 @@ format: md
 upstream_id: design/app-compatibility/app-compatibility-influence-factor
 last_sync: 2026-06-07
 sync_hash: 5ac55e5e
+upstream_status: upstream_deleted_pending
 ---
 # 影响应用兼容性的关键信息
 

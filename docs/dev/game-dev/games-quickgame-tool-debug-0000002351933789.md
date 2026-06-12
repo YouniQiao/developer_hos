@@ -6,6 +6,7 @@ upstream_id: dev/game-dev/games-quickgame-tool-debug-0000002351933789
 last_sync: 2026-06-07
 sync_hash: 2062fde7
 upstream_hash: b9f0ffcb8917
+upstream_status: upstream_deleted_pending
 ---
 
 * **[快游戏调试](/docs/dev/game-dev/games-quickgame-tool-debug-quickgame-0000002544859545)**

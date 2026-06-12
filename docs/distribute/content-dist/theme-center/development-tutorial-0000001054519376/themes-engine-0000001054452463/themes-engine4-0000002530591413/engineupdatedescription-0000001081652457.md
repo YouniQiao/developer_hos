@@ -6,6 +6,7 @@ format: md
 upstream_id: distribute/content-dist/theme-center/development-tutorial-0000001054519376/themes-engine-0000001054452463/themes-engine4-0000002530591413/engineupdatedescription-0000001081652457
 last_sync: 2026-06-07
 sync_hash: e23d5ec7
+upstream_status: upstream_deleted_pending
 ---
 # 版本更新说明
 

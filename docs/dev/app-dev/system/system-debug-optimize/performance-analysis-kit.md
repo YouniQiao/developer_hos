@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/system/system-debug-optimize/performance-analysis-kit
 last_sync: 2026-06-07
 sync_hash: 1e1062fb
+upstream_status: upstream_deleted_pending
 ---
 * **[Performance Analysis Kit简介](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/performance-analysis-kit-overview)**
 * **[故障检测](/docs/dev/app-dev/system/system-debug-optimize/performance-analysis-kit/fault-analysis)**

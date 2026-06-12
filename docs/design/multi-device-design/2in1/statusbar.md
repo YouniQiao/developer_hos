@@ -6,6 +6,7 @@ format: md
 upstream_id: design/multi-device-design/2in1/statusbar
 last_sync: 2026-06-07
 sync_hash: 5904480a
+upstream_status: upstream_deleted_pending
 ---
 \{/* TODO: 含合并单元格的表格已降级为标准Markdown表格，建议使用\<MergedTable\>组件还原 */\}
 

@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-arkts-threading-model
 upstream_id: FAQ/faqs-arkts-threading-model
 last_sync: 2026-06-07
 sync_hash: 14d7dccc
+upstream_status: upstream_deleted_pending
 ---
 * **[有哪些创建线程的方式](/docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-2)**
 * **[应该如何设计大量线程并发方案](/docs/FAQ/faqs-app-framework-development/faqs-arkts/faqs-arkts-threading-model/faqs-arkts-25)**

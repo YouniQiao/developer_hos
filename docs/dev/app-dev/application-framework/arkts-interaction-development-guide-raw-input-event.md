@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/app-dev/application-framework/arkts-interaction-development-guide-raw-input-event
 last_sync: 2026-06-07
 sync_hash: dec102d3
+upstream_status: upstream_deleted_pending
 ---
 不同的输入设备会产生不同的事件类型。只有在用户操作特定输入设备和工具时，才会触发基础事件。通过输入设备和工具类型，可以区分这些事件。
 

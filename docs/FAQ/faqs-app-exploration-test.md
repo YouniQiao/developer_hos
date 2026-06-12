@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-app-exploration-test
 upstream_id: FAQ/faqs-app-exploration-test
 last_sync: 2026-06-07
 sync_hash: 0a71f85c
+upstream_status: upstream_deleted_pending
 ---
 * **[测试过程中，为什么测试页面截图会出现页面切换状态](/docs/FAQ/faqs-deveco-testing/faqs-exploratory-test/faqs-app-exploration-test/faqs-app-exploration-test-1)**
 * **[测试过程中，控件语义识别中的“XXX的项”、“XXX的列”应如何理解](/docs/FAQ/faqs-deveco-testing/faqs-exploratory-test/faqs-app-exploration-test/faqs-app-exploration-test-2)**

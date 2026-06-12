@@ -5,6 +5,7 @@ original_url: /docs/FAQ/faqs-compiling-and-building
 upstream_id: FAQ/faqs-compiling-and-building
 last_sync: 2026-06-07
 sync_hash: 72ecdd42
+upstream_status: upstream_deleted_pending
 ---
 * **[编译报错“JS heap out of memory”](/docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-1)**
 * **[Linux环境下编译报错“JavaScript heap out of memory”](/docs/FAQ/faqs-deveco-studio/faqs-compiling-and-building/faqs-compiling-and-building-2)**

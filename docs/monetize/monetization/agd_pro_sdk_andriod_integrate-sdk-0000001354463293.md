@@ -6,6 +6,7 @@ format: md
 upstream_id: monetize/monetization/agd_pro_sdk_andriod_integrate-sdk-0000001354463293
 last_sync: 2026-06-07
 sync_hash: b2d21598
+upstream_status: upstream_deleted_pending
 ---
 * **[快速集成](/docs/monetize/monetization/agd_pro_sdk_andriod_demo-0000001461263141)**
 * **[前置要求](/docs/monetize/monetization/agd_pro_sdk_andriod_prerequisite-0000001354663501)**

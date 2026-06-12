@@ -5,6 +5,7 @@ format: md
 upstream_id: /docs/quality/power-consumption-analysis
 last_sync: 2026-06-07
 sync_hash: f921ef37
+upstream_status: upstream_deleted_pending
 ---
 # 应用功耗检测
 

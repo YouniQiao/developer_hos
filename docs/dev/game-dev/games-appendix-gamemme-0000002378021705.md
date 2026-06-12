@@ -5,6 +5,7 @@ format: md
 upstream_id: dev/game-dev/games-appendix-gamemme-0000002378021705
 last_sync: 2026-06-07
 sync_hash: d1d75ef2
+upstream_status: upstream_deleted_pending
 ---
 * **[创建API客户端](/docs/dev/game-dev/games-appendix-api-client-0000002304729552)**
 * **[获取Token（项目级）](/docs/dev/game-dev/games-appendix-token-0000002304569840)**
