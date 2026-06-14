@@ -4,22 +4,24 @@ title: "获取重置锁屏密码的企业恢复密钥"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-getkeyforresetpin
 format: md
 upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-getkeyforresetpin
-last_sync: 2026-06-07
-sync_hash: 14f76ab4
+last_sync: 2026-06-13
+sync_hash: fdace1c7
 ---
+
+
 ## 场景介绍
 
 为企业用户提供获取企业恢复密钥的能力，可以在用户忘记锁屏密码时，使用该企业恢复密钥重置用户的锁屏密码。
 
 ## 接口说明
 
-详细接口说明可参考[接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey)。
+详细接口说明可参考[接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey")。
 
 | 接口名 | 描述 |
 | --- | --- |
-| [verifyUserIdentityEnterprise](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuseridentityenterprise)(userId: number, userType: number, pinCode: string): Promise\<void\> | 使用Promise方式验证用户锁屏密码。 |
-| [verifyUserByDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuserbydialog)(userId: number): Promise\<void\> | 通过Dialog弹框验证用户锁屏密码。 |
-| [getEnterpriseRecoveryKeyForResettingPin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getenterpriserecoverykeyforresettingpin)(userId: number, userType: number): Promise[EnterpriseRecoveryKeyInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#enterpriserecoverykeyinfo) | 使用Promise方式获取用于重置锁屏密码的企业恢复密钥。 |
+| [verifyUserIdentityEnterprise](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuseridentityenterprise "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuseridentityenterprise")(userId: number, userType: number, pinCode: string): Promise<void> | 使用Promise方式验证用户锁屏密码。 |
+| [verifyUserByDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuserbydialog "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuserbydialog")(userId: number): Promise<void> | 通过Dialog弹框验证用户锁屏密码。 |
+| [getEnterpriseRecoveryKeyForResettingPin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getenterpriserecoverykeyforresettingpin "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getenterpriserecoverykeyforresettingpin")(userId: number, userType: number): Promise<[EnterpriseRecoveryKeyInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#enterpriserecoverykeyinfo "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#enterpriserecoverykeyinfo")> | 使用Promise方式获取用于重置锁屏密码的企业恢复密钥。 |
 
 ## 开发步骤
 
@@ -30,7 +32,7 @@ sync_hash: 14f76ab4
    import { BusinessError, osAccount } from '@kit.BasicServicesKit';
    import { recoveryKey } from '@kit.EnterpriseDataGuardKit';
    ```
-2. 通过验证锁屏密码，获取重置锁屏密码的恢复密钥。调用接口[verifyUserIdentityEnterprise](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuseridentityenterprise)验证用户的锁屏密码，需提供用户ID、用户类型及用户锁屏密码，并在30秒内调用接口[getEnterpriseRecoveryKeyForResettingPin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuserbydialog)以获取用于重置锁屏密码的企业恢复密钥。若超时后调用，系统会返回异常代码[1014400001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-error-code#section1014400001-系统内部错误)。
+2. 通过验证锁屏密码，获取重置锁屏密码的恢复密钥。调用接口[verifyUserIdentityEnterprise](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuseridentityenterprise "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuseridentityenterprise")验证用户的锁屏密码，需提供用户ID、用户类型及用户锁屏密码，并在30秒内调用接口[getEnterpriseRecoveryKeyForResettingPin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuserbydialog "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuserbydialog")以获取用于重置锁屏密码的企业恢复密钥。若超时后调用，系统会返回异常代码[1014400001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprise-dataguard#section1014400001-系统内部错误 "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprise-dataguard#section1014400001-系统内部错误")。
 
    ```
    /**
@@ -67,7 +69,7 @@ sync_hash: 14f76ab4
      }
    }
    ```
-3. 通过弹框验证锁屏密码，获取重置锁屏密码的恢复密钥。调用接口[verifyUserByDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuserbydialog)，通过Dialog弹框在5分钟内输入锁屏密码，点击确认后，并在30秒内调用接口[getEnterpriseRecoveryKeyForResettingPin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuserbydialog)以获取用于重置锁屏密码的企业恢复密钥。若超时后调用，系统会返回异常代码[1014400001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-error-code#section1014400001-系统内部错误)。
+3. 通过弹框验证锁屏密码，获取重置锁屏密码的恢复密钥。调用接口[verifyUserByDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuserbydialog "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuserbydialog")，通过Dialog弹框在5分钟内输入锁屏密码，点击确认后，并在30秒内调用接口[getEnterpriseRecoveryKeyForResettingPin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuserbydialog "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#verifyuserbydialog")以获取用于重置锁屏密码的企业恢复密钥。若超时后调用，系统会返回异常代码[1014400001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprise-dataguard#section1014400001-系统内部错误 "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-enterprise-dataguard#section1014400001-系统内部错误")。
 
    ```
    async function testGetEnterpriseRecoveryKeyForPinByDialog() {

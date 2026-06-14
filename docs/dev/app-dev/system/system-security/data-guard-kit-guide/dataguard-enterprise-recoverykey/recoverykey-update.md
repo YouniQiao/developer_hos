@@ -4,20 +4,22 @@ title: "更新企业公钥证书"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-update
 format: md
 upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-update
-last_sync: 2026-06-07
-sync_hash: ce857863
+last_sync: 2026-06-13
+sync_hash: 473c2180
 ---
+
+
 ## 场景介绍
 
 为应用提供更新企业公钥证书的能力，用于在证书泄漏、证书失效等场景及时更新企业公钥证书。
 
 ## 接口说明
 
-详细接口说明可参考[接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey)。
+详细接口说明可参考[接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey")。
 
 | 接口名 | 描述 |
 | --- | --- |
-| [updateEnterpriseCertificate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#updateenterprisecertificate)(signature: Uint8Array, cert: Uint8Array): Promise\<number\> | 使用Promise方式更新证书。 |
+| [updateEnterpriseCertificate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#updateenterprisecertificate "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#updateenterprisecertificate")(signature: Uint8Array, cert: Uint8Array): Promise<number> | 使用Promise方式更新证书。 |
 
 ## 开发步骤
 
@@ -27,7 +29,7 @@ sync_hash: ce857863
    import { recoveryKey } from '@kit.EnterpriseDataGuardKit';
    import { BusinessError } from '@kit.BasicServicesKit';
    ```
-2. 先调用接口[getAuthChallenge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getauthchallenge)，获取挑战值并[签名](/docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-signature)，传入挑战值的签名和企业公钥证书，再调用接口[updateEnterpriseCertificate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#updateenterprisecertificate)，更新企业公钥证书。
+2. 先调用接口[getAuthChallenge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getauthchallenge "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getauthchallenge")，获取挑战值并[签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-signature "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-signature")，传入挑战值的签名和企业公钥证书，再调用接口[updateEnterpriseCertificate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#updateenterprisecertificate "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#updateenterprisecertificate")，更新企业公钥证书。
 
    ```
    function testUpdateEnterpriseCertificate() {

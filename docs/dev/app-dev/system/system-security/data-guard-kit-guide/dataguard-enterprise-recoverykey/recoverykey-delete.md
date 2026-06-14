@@ -4,20 +4,22 @@ title: "删除企业恢复密钥"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-delete
 format: md
 upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-delete
-last_sync: 2026-06-07
-sync_hash: 49bb5ef5
+last_sync: 2026-06-13
+sync_hash: c139f5dc
 ---
+
+
 ## 场景介绍
 
 为应用提供删除企业恢复密钥的能力，用于在企业恢复密钥发生泄漏、禁用企业恢复密钥时删除相关数据，使之前导出的企业恢复密钥失效。
 
 ## 接口说明
 
-详细接口说明可参考[接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey)。
+详细接口说明可参考[接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey")。
 
 | 接口名 | 描述 |
 | --- | --- |
-| [deleteEnterpriseRecoveryKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#deleteenterpriserecoverykey)(userId: number, signature: Uint8Array): Promise\<number\> | 使用Promise方式删除企业恢复密钥相关数据。 |
+| [deleteEnterpriseRecoveryKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#deleteenterpriserecoverykey "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#deleteenterpriserecoverykey")(userId: number, signature: Uint8Array): Promise<number> | 使用Promise方式删除企业恢复密钥相关数据。 |
 
 ## 开发步骤
 
@@ -27,7 +29,7 @@ sync_hash: 49bb5ef5
    import { recoveryKey } from '@kit.EnterpriseDataGuardKit';
    import { BusinessError, osAccount } from '@kit.BasicServicesKit';
    ```
-2. 先调用接口[getAuthChallenge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getauthchallenge)，获取挑战值并[签名](/docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-signature)，传入需要删除企业恢复密钥的用户ID和挑战值的签名，再调用接口[deleteEnterpriseRecoveryKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#deleteenterpriserecoverykey)，删除企业恢复密钥相关数据。
+2. 先调用接口[getAuthChallenge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getauthchallenge "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getauthchallenge")，获取挑战值并[签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-signature "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/recoverykey-signature")，传入需要删除企业恢复密钥的用户ID和挑战值的签名，再调用接口[deleteEnterpriseRecoveryKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#deleteenterpriserecoverykey "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#deleteenterpriserecoverykey")，删除企业恢复密钥相关数据。
 
    ```
    async function testDeleteEnterpriseRecoveryKey() {

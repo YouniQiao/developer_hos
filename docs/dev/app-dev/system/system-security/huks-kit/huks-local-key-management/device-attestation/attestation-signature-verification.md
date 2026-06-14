@@ -1,11 +1,10 @@
 ---
-title: "签名验签识别真实请求"
+title: "流程说明"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/attestation-signature-verification
 format: md
 upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/attestation-signature-verification
 last_sync: 2026-06-07
 sync_hash: bfab010a
-upstream_status: upstream_deleted_pending
 ---
 ## 概述
 

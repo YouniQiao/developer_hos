@@ -1,12 +1,11 @@
 ---
-title: "创建密钥确立可信凭证"
+title: "流程说明"
 original_url: /docs/dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/device-attestation-guidelines
 format: md
 upstream_id: dev/app-dev/system/system-security/huks-kit/huks-local-key-management/device-attestation/device-attestation-guidelines
 last_sync: 2026-06-07
 sync_hash: ae0e0559
 upstream_hash: c4b1e743657c
-upstream_status: upstream_deleted_pending
 ---
 
 ## 概述

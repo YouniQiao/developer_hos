@@ -1,28 +1,31 @@
 ---
+displayed_sidebar: appDevSidebar
 title: "添加、删除和获取放通应用列表"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-unrestricted-app-list
 format: md
 upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-unrestricted-app-list
-last_sync: 2026-06-07
-sync_hash: e46f28d2
+last_sync: 2026-06-13
+sync_hash: 9c2c40dc
 ---
-![](./img/ed12ada6.png)
+
+
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/26/v3/44LID7rVTGqj2-IBuw304g/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260613T014335Z&HW-CC-Expire=86400&HW-CC-Sign=77743C4A9D479568A3380B9037F3241549E8EA44EB1476AF5FF25D1ECCFC9DA5) 
 
 从6.1.1(24)版本开始，新增添加、删除和获取放通应用列表的接口，支持用户维护放通应用列表。
 
 ## 场景介绍
 
-为应用提供添加、删除和获取放通应用列表的能力，添加到列表中的应用将不受[updatePolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#updatepolicy)接口下发的网络、U盘、蓝牙、星闪、Samba客户端和服务端策略管控，但打印管控策略仍会受到限制。
+为应用提供添加、删除和获取放通应用列表的能力，添加到列表中的应用将不受[updatePolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#updatepolicy "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#updatepolicy")接口下发的网络、U盘、蓝牙、星闪、Samba客户端和服务端策略管控，但打印管控策略仍会受到限制。
 
 ## 接口说明
 
-详细接口说明可参考[接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard)。
+详细接口说明可参考[接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard")。
 
 | 接口名 | 描述 |
 | --- | --- |
-| [addUnrestrictedApplicationList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#addunrestrictedapplicationlist)(appIds: Array\<string\>, userId?: number): Promise\<void\> | 使用Promise方式添加放通应用列表。 |
-| [removeUnrestrictedApplicationList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#removeunrestrictedapplicationlist)(appIds: Array\<string\>, userId?: number): Promise\<void\> | 使用Promise方式删除放通应用列表。 |
-| [getUnrestrictedApplicationList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#getunrestrictedapplicationlist)(userId?: number): Promise\<Array<string\>> | 使用Promise方式获取放通应用列表。 |
+| [addUnrestrictedApplicationList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#addunrestrictedapplicationlist "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#addunrestrictedapplicationlist")(appIds: Array<string>, userId?: number): Promise<void> | 使用Promise方式添加放通应用列表。 |
+| [removeUnrestrictedApplicationList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#removeunrestrictedapplicationlist "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#removeunrestrictedapplicationlist")(appIds: Array<string>, userId?: number): Promise<void> | 使用Promise方式删除放通应用列表。 |
+| [getUnrestrictedApplicationList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#getunrestrictedapplicationlist "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#getunrestrictedapplicationlist")(userId?: number): Promise<Array<string>> | 使用Promise方式获取放通应用列表。 |
 
 ## 开发步骤
 
@@ -33,7 +36,7 @@ sync_hash: e46f28d2
    import { osAccount, BusinessError } from '@kit.BasicServicesKit';
    import { bundleManager } from '@kit.AbilityKit';
    ```
-2. 初始化[FileGuard](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#fileguard)对象guard，调用接口[addUnrestrictedApplicationList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#addunrestrictedapplicationlist)，添加放通应用列表。
+2. 初始化[FileGuard](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#fileguard "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#fileguard")对象guard，调用接口[addUnrestrictedApplicationList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#addunrestrictedapplicationlist "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#addunrestrictedapplicationlist")，添加放通应用列表。
 
    ```
    async function testAddUnrestrictedApplicationList() {
@@ -57,7 +60,7 @@ sync_hash: e46f28d2
      }
    }
    ```
-3. 初始化[FileGuard](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#fileguard)对象guard，调用接口[getUnrestrictedApplicationList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#getunrestrictedapplicationlist)，可以查看放通应用列表。
+3. 初始化[FileGuard](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#fileguard "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#fileguard")对象guard，调用接口[getUnrestrictedApplicationList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#getunrestrictedapplicationlist "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#getunrestrictedapplicationlist")，可以查看放通应用列表。
 
    ```
    async function testGetUnrestrictedApplicationList() {
@@ -76,7 +79,7 @@ sync_hash: e46f28d2
      }
    }
    ```
-4. 初始化[FileGuard](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#fileguard)对象guard，调用接口[removeUnrestrictedApplicationList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#removeunrestrictedapplicationlist)，可以删除放通应用列表。
+4. 初始化[FileGuard](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#fileguard "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#fileguard")对象guard，调用接口[removeUnrestrictedApplicationList](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#removeunrestrictedapplicationlist "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#removeunrestrictedapplicationlist")，可以删除放通应用列表。
 
    ```
    async function testRemoveUnrestrictedApplicationList() {

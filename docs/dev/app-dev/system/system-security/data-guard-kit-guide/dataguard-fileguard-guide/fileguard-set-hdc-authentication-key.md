@@ -1,12 +1,15 @@
 ---
+displayed_sidebar: appDevSidebar
 title: "设置HDC鉴权密钥"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-set-hdc-authentication-key
 format: md
 upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-fileguard-guide/fileguard-set-hdc-authentication-key
-last_sync: 2026-06-07
-sync_hash: 8854de88
+last_sync: 2026-06-13
+sync_hash: 9c4119c5
 ---
-![](./img/876931ac.png)
+
+
+![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/5d/v3/S1yPD_pcQSGgsHZEogyLjw/note_3.0-zh-cn.png?HW-CC-KV=V1&HW-CC-Date=20260613T014334Z&HW-CC-Expire=86400&HW-CC-Sign=FFCADFC609F8E2928BE4F35EC86C39DE5A8ED7E3E61045B2655895437DCC51B9) 
 
 从6.1.1(24)版本开始，新增HDC鉴权密钥设置接口，支持用户在企业设备上开展安全调试，进一步强化设备安全性。
 
@@ -16,11 +19,11 @@ sync_hash: 8854de88
 
 ## 接口说明
 
-详细接口说明可参考[接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard)。
+详细接口说明可参考[接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard")。
 
 | 接口名 | 描述 |
 | --- | --- |
-| [setHdcAuthenticationKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#sethdcauthenticationkey)(devType: AuthenticateDeviceType, keyType: AuthenticateKeyType, key: Uint8Array): Promise\<void\> | 使用Promise方式设置上下位机间的HDC鉴权密钥。 |
+| [setHdcAuthenticationKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#sethdcauthenticationkey "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#sethdcauthenticationkey")(devType: AuthenticateDeviceType, keyType: AuthenticateKeyType, key: Uint8Array): Promise<void> | 使用Promise方式设置上下位机间的HDC鉴权密钥。 |
 
 ## 开发步骤
 
@@ -42,7 +45,7 @@ sync_hash: 8854de88
    ```
    import { fileGuard } from '@kit.EnterpriseDataGuardKit';
    ```
-3. 初始化[FileGuard](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#fileguard)对象guard，调用接口[setHdcAuthenticationKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#sethdcauthenticationkey)，设置上下位机之间的HDC鉴权密钥。上位机需要下发私钥，下位机下发公钥，从而实现上位机对下位机的安全调试。
+3. 初始化[FileGuard](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#fileguard "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#fileguard")对象guard，调用接口[setHdcAuthenticationKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#sethdcauthenticationkey "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-fileguard#sethdcauthenticationkey")，设置上下位机之间的HDC鉴权密钥。上位机需要下发私钥，下位机下发公钥，从而实现上位机对下位机的安全调试。
 
    ```
    function testSetHdcAuthenticationKey() {

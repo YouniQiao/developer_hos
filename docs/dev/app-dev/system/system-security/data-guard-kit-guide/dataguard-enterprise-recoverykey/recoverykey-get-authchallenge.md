@@ -4,20 +4,22 @@ title: "获取挑战值"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-get-authchallenge
 format: md
 upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-enterprise-recoverykey/recoverykey-get-authchallenge
-last_sync: 2026-06-07
-sync_hash: de84a344
+last_sync: 2026-06-13
+sync_hash: 2aff278c
 ---
+
+
 ## 场景介绍
 
 请求获取挑战值，在发起更新企业公钥证书、删除已有企业恢复密钥流程前，需要获取挑战值，并进行签名，以确认企业身份。
 
 ## 接口说明
 
-详细接口说明可参考[接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey)。
+详细接口说明可参考[接口文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey")。
 
 | 接口名 | 描述 |
 | --- | --- |
-| [getAuthChallenge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getauthchallenge)(): Promise\<Uint8Array\> | 使用Promise方式获取挑战值。 |
+| [getAuthChallenge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getauthchallenge "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getauthchallenge")(): Promise<Uint8Array> | 使用Promise方式获取挑战值。 |
 
 ## 开发步骤
 
@@ -27,7 +29,7 @@ sync_hash: de84a344
    import { recoveryKey } from '@kit.EnterpriseDataGuardKit';
    import { BusinessError } from '@kit.BasicServicesKit';
    ```
-2. 调用接口[getAuthChallenge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getauthchallenge)，获取挑战值。
+2. 调用接口[getAuthChallenge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getauthchallenge "https://developer.huawei.com/consumer/cn/doc/harmonyos-references/dataguard-recoverykey#getauthchallenge")，获取挑战值。
 
    ```
    function testGetAuthChallenge() {

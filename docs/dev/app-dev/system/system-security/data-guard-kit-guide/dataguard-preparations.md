@@ -1,11 +1,14 @@
 ---
+displayed_sidebar: appDevSidebar
 title: "开发准备"
 original_url: /docs/dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-preparations
 format: md
 upstream_id: dev/app-dev/system/system-security/data-guard-kit-guide/dataguard-preparations
-last_sync: 2026-06-07
-sync_hash: d4beb008
+last_sync: 2026-06-13
+sync_hash: 562211ae
 ---
+
+
 ## 环境准备
 
 * HarmonyOS系统：HarmonyOS NEXT Developer Beta1及以上。
@@ -16,13 +19,13 @@ sync_hash: d4beb008
 
 在开发应用前，需要在AppGallery Connect中配置项目和应用信息。包括：
 
-* [注册账号](https://developer.huawei.com/consumer/cn/doc/start/registration-and-verification-0000001053628148)和[企业开发者实名认证](https://developer.huawei.com/consumer/cn/doc/start/edrna-0000001062678489)。
-* [创建项目](/docs/distribute/agc/agc-help-project-0000002270709469/agc-help-create-project-0000002242804048)和[创建HarmonyOS应用](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)。
-* [申请企业MDM应用发布证书](/docs/distribute/agc/agc-help-cert-0000002270829389/agc-help-enterprise-mdm-cert-0000002283256801)和[申请企业MDM应用发布Profile](/docs/distribute/agc/agc-help-profile-0000002270709473/agc-help-enterprise-mdm-profile-0000002248341094)。
+* [注册账号](https://developer.huawei.com/consumer/cn/doc/start/registration-and-verification-0000001053628148 "https://developer.huawei.com/consumer/cn/doc/start/registration-and-verification-0000001053628148")和[企业开发者实名认证](https://developer.huawei.com/consumer/cn/doc/start/edrna-0000001062678489 "https://developer.huawei.com/consumer/cn/doc/start/edrna-0000001062678489")。
+* [创建项目](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-project-0000002242804048 "https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-project-0000002242804048")和[创建HarmonyOS应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506 "https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-app-0000002247955506")。
+* [申请企业MDM应用发布证书](https://developer.huawei.com/consumer/cn/doc/app/agc-help-enterprise-mdm-cert-0000002283256801 "https://developer.huawei.com/consumer/cn/doc/app/agc-help-enterprise-mdm-cert-0000002283256801")和[申请企业MDM应用发布Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-enterprise-mdm-profile-0000002248341094 "https://developer.huawei.com/consumer/cn/doc/app/agc-help-enterprise-mdm-profile-0000002248341094")。
 
 ## 申请权限
 
-在申请权限前，请确保符合[权限使用的基本原则](/docs/dev/app-dev/system/system-security/access-control/app-permission-mgmt/app-permission-mgmt-overview#权限使用的基本原则)。然后在工程模块对应的[module.json5配置文件](/docs/dev/app-dev/getting-started/dev-fundamentals/module-configuration-file)中"requestPermissions"标签下申请实际所需的开发权限。
+在申请权限前，请确保符合[权限使用的基本原则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#权限使用的基本原则 "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#权限使用的基本原则")。然后在工程模块对应的[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file")中"requestPermissions"标签下申请实际所需的开发权限。
 
 | 应用能力 | 需要权限 |
 | --- | --- |
