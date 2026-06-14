@@ -4,7 +4,7 @@ Usage: python3 fill_section.py <section_name>
   section_name: ascf | ndk | game | atomic | industry | testing | faq
 """
 
-import httpx, json, os, re, subprocess, hashlib, html as html_mod, sys
+import httpx, json, os, re, subprocess, hashlib, html as html_mod, sys, argparse, shutil
 from pathlib import Path
 from urllib.parse import urlparse
 from bs4 import BeautifulSoup
@@ -155,15 +155,29 @@ def log(msg):
     print(f"[{time.strftime('%H:%M:%S')}] {msg}", flush=True)
 
 
-def collect_docs(nodes):
-    docs = []
+def collect_docs(nodes, intermediates_by_id=None):
+    """Collect docs from catalog tree. Returns (leaf_docs, intermediate_docs).
+    leaf_docs: [{id, name}] — pages with no children
+    intermediate_docs: [{id, name, children_count}] — nodes that are both a page AND a container
+    """
+    if intermediates_by_id is None:
+        intermediates_by_id = {}
+    leaf_docs = []
     for n in nodes:
         rd = n.get("relateDocument")
+        children = n.get("children")
         if rd:
-            docs.append({"id": rd, "name": n.get("nodeName", "")})
-        if n.get("children"):
-            docs.extend(collect_docs(n["children"]))
-    return docs
+            if children:
+                # Intermediate node: has page content AND children
+                intermediates_by_id[rd] = {
+                    "id": rd, "name": n.get("nodeName", ""),
+                    "children_count": len(children)
+                }
+            else:
+                leaf_docs.append({"id": rd, "name": n.get("nodeName", "")})
+        if children:
+            leaf_docs.extend(collect_docs(children, intermediates_by_id))
+    return leaf_docs
 
 
 def get_catalog_tree(catalog_name, object_id):
@@ -364,31 +378,181 @@ def get_output_path(doc_id, doc_name, section_cfg, all_catalog_docs):
         return local_dir / f"{doc_id}.md"
 
 
+def print_report(results):
+    """Print a structured box-drawing report to terminal."""
+    n_new_leaf = len(results["new_leaf"])
+    n_new_inter = len(results["new_intermediate"])
+    n_updated = len(results["updated"])
+    n_skipped = len(results["skipped"])
+    n_orphan = len(results["orphaned"])
+    n_failed = len(results["failed"])
+    n_images = results["images"]
+
+    # Build title
+    kit = results.get("kit")
+    title = kit or results["section"]
+    short_title = kit.split("（")[0] if kit and "（" in kit else title
+    header = f" {short_title} 同步报告 "
+    bar = "═" * 46
+    line = f"\n╔{bar}╗\n║{header.center(46)}║\n╠{bar}╣"
+
+    rows = [
+        ("🆕 新增叶页面", n_new_leaf),
+        ("📁 新增中间节点", n_new_inter),
+        ("🔄 内容更新", n_updated),
+        ("⏭️ 跳过(太薄)", n_skipped),
+        ("🗑️ 孤儿清理", n_orphan),
+        ("❌ 失败", n_failed),
+        ("📷 图片下载", n_images),
+    ]
+    for label, count in rows:
+        if count > 0 or label in ("❌ 失败",):
+            line += f"\n║  {label:<16} {count:<26}║"
+
+    line += f"\n╚{bar}╝"
+
+    # Details
+    def fmt_items(label, items):
+        if not items:
+            return ""
+        out = f"\n{label} ({len(items)})\n"
+        for item in items:
+            if len(item) == 3:
+                oid, name, path = item
+                out += f"   📄 {name}\n      → {path}\n"
+            else:
+                out += f"   {item}\n"
+        return out
+
+    details = ""
+    details += fmt_items("🆕 新增叶页面", results["new_leaf"])
+    details += fmt_items("📁 新增中间节点", results["new_intermediate"])
+    details += fmt_items("🔄 内容更新", results["updated"])
+    details += fmt_items("⏭️ 跳过", results["skipped"])
+    details += fmt_items("❌ 失败", results["failed"])
+    if results["orphaned"]:
+        details += "\n"
+        details += f"🗑️ 清理 ({len(results['orphaned'])}):"
+        for o in results["orphaned"][:10]:
+            details += f"\n   {o}"
+        if len(results["orphaned"]) > 10:
+            details += f"\n   ... +{len(results['orphaned']) - 10} more"
+
+    print(line)
+    if details:
+        print(details)
+    print()
+
+
+def save_report(results):
+    """Save a markdown report to .hermes/sync-reports/."""
+    report_dir = REPO / ".hermes" / "sync-reports"
+    report_dir.mkdir(parents=True, exist_ok=True)
+
+    ts = time.strftime("%Y%m%d_%H%M%S")
+    kit = results.get("kit")
+    tag = kit.split("（")[0].replace(" ", "-").lower() if kit else results["section"]
+    filename = f"{ts}_{tag}.md"
+    filepath = report_dir / filename
+
+    lines = []
+    title = kit or results["section"]
+    lines.append(f"# {title} 同步报告")
+    lines.append(f"**时间:** {time.strftime('%Y-%m-%d %H:%M:%S')}")
+    lines.append(f"**分类:** {results['section']}")
+    if kit:
+        lines.append(f"**Kit:** {kit}")
+    lines.append("")
+
+    sections = [
+        ("## 🆕 新增叶页面", results["new_leaf"]),
+        ("## 📁 新增中间节点", results["new_intermediate"]),
+        ("## 🔄 内容更新", results["updated"]),
+        ("## ⏭️ 跳过", results["skipped"]),
+        ("## ❌ 失败", results["failed"]),
+    ]
+
+    for heading, items in sections:
+        if items:
+            lines.append(heading)
+            lines.append("")
+            for item in items:
+                if len(item) == 3:
+                    oid, name, path = item
+                    lines.append(f"- **{name}** (`{oid}`) → `{path}`")
+                else:
+                    lines.append(f"- {item}")
+            lines.append("")
+
+    if results["orphaned"]:
+        lines.append("## 🗑️ 孤儿清理")
+        lines.append("")
+        for o in results["orphaned"]:
+            lines.append(f"- {o}")
+        lines.append("")
+
+    stats = f"""## 📊 统计
+
+| 类型 | 数量 |
+|------|------|
+| 新增叶页面 | {len(results['new_leaf'])} |
+| 新增中间节点 | {len(results['new_intermediate'])} |
+| 内容更新 | {len(results['updated'])} |
+| 跳过 | {len(results['skipped'])} |
+| 孤儿清理 | {len(results['orphaned'])} |
+| 失败 | {len(results['failed'])} |
+| 图片 | {results['images']} |
+"""
+    lines.append(stats)
+
+    filepath.write_text("\n".join(lines), encoding="utf-8")
+    log(f"📝 Report saved: {filepath}")
+
+
 def main():
-    section = sys.argv[1] if len(sys.argv) > 1 else "ascf"
+    parser = argparse.ArgumentParser(description="Fill content from Huawei API")
+    parser.add_argument("section", nargs="?", default="ascf",
+                        help=f"Section name: {list(SECTIONS.keys())}")
+    parser.add_argument("--kit", help="Kit name within parent section (e.g. 'Account Kit（华为账号服务）')")
+    args = parser.parse_args()
+
+    section = args.section
     if section not in SECTIONS:
         print(f"Unknown section: {section}. Available: {list(SECTIONS.keys())}")
         sys.exit(1)
 
     cfg = SECTIONS[section]
-    log(f"Starting section: {section} ({cfg['catalog_name']})")
+    kit_hint = f" > {args.kit}" if args.kit else ""
+    log(f"Starting section: {section}{kit_hint} ({cfg['catalog_name']})")
 
     # Get catalog tree
     tree = get_catalog_tree(cfg["catalog_name"], cfg["catalog_obj"])
 
     # For sections that target a sub-node, find the parent node
+    intermediates = {}  # {id: {id, name, children_count}}
     if cfg.get("parent_node_name"):
         parent_node = find_node(tree, cfg["parent_node_name"])
         if parent_node:
-            catalog_docs = collect_docs([parent_node])
+            if args.kit:
+                # Drill into specific Kit
+                kit_node = find_node(parent_node.get("children", []), args.kit)
+                if kit_node:
+                    target_nodes = [kit_node]
+                    log(f"Found kit: {args.kit}")
+                else:
+                    log(f"WARNING: kit '{args.kit}' not found, falling back to parent")
+                    target_nodes = [parent_node]
+            else:
+                target_nodes = [parent_node]
+            catalog_docs = collect_docs(target_nodes, intermediates)
             log(f"Found parent node '{cfg['parent_node_name']}', docs: {len(catalog_docs)}")
         else:
             log(f"WARNING: parent node '{cfg['parent_node_name']}' not found, using full tree")
-            catalog_docs = collect_docs(tree)
+            catalog_docs = collect_docs(tree, intermediates)
     else:
-        catalog_docs = collect_docs(tree)
+        catalog_docs = collect_docs(tree, intermediates)
 
-    log(f"Catalog docs: {len(catalog_docs)}")
+    log(f"Catalog leaf docs: {len(catalog_docs)}, intermediates: {len(intermediates)}")
 
     # Build index of local files by title (for shell-matching sections)
     local_dir = REPO / cfg["local_dir"]
@@ -396,6 +560,9 @@ def main():
     local_paths_set = set()
     if local_dir.exists():
         for md_file in local_dir.rglob("*.md"):
+            # Skip _index.md files (intermediate node pages)
+            if md_file.name == "_index.md":
+                continue
             local_paths_set.add(md_file)
             content = md_file.read_text(encoding="utf-8")
             title = None
@@ -424,7 +591,6 @@ def main():
 
         local_path = None
         displayed_sidebar = None
-        match_method = None  # 'stem' or 'title' or None
 
         # 1) Try exact stem match first (most reliable)
         stem_match = local_by_stem.get(oid)
@@ -437,51 +603,110 @@ def main():
                 if line.startswith("displayed_sidebar:"):
                     displayed_sidebar = line.split("displayed_sidebar:", 1)[1].strip()
                     break
-            match_method = 'stem'
         else:
-            # 2) Try title match as fallback (for truncated/shell filenames)
-            # ONLY if the title is unique in the catalog — otherwise create new
+            # 2) Try title match as fallback
             title_match = local_by_title.get(doc_name)
             if title_match:
                 candidate_path, cand_sidebar = title_match
-                # Check if the matched file's stem matches our doc_id
-                # If NOT, this is a title collision — create a new file instead
                 if candidate_path.stem == oid:
                     local_path = candidate_path
                     displayed_sidebar = cand_sidebar
                     matched_paths.add(local_path)
-                # else: title collision, fall through to create new file
 
         if local_path:
             # Check if it's a shell (needs filling)
             content = local_path.read_text(encoding="utf-8")
             if content.startswith("---"):
                 end = content.find("---", 3)
-                body = content[end + 3 :] if end > 0 else content
+                body = content[end + 3:] if end > 0 else content
             else:
                 body = content
             body_text = re.sub(r"^#+\s.*$", "", body, flags=re.MULTILINE).strip()
             if len(body_text) < 50:
                 to_process.append({"doc": doc, "path": local_path, "source_url": source_url,
-                                    "is_new": False, "displayed_sidebar": displayed_sidebar})
+                                    "is_new": False, "is_intermediate": False, "displayed_sidebar": displayed_sidebar})
         else:
             # 3) Create new file
             new_path = get_output_path(oid, doc_name, cfg, catalog_docs)
             to_process.append({"doc": doc, "path": new_path, "source_url": source_url,
-                                "is_new": True, "displayed_sidebar": None})
+                                "is_new": True, "is_intermediate": False, "displayed_sidebar": None})
+
+    # 4) Handle intermediate nodes: create _index.md if substantial content
+    #    Place in the correct directory based on stem matching
+    intermediate_to_process = []
+    for iid, inode in intermediates.items():
+        stem_match = local_by_stem.get(iid)
+        if stem_match:
+            # Already exists as a file, check if shell
+            matched_paths.add(stem_match)
+            content = stem_match.read_text(encoding="utf-8")
+            body = content.split("---", 2)[2] if content.count("---") >= 2 else content
+            body_text = re.sub(r"^#+\s.*$", "", body, flags=re.MULTILINE).strip()
+            if len(body_text) < 50:
+                intermediate_to_process.append({"doc": {"id": iid, "name": inode["name"]},
+                    "path": stem_match, "source_url": cfg["source_prefix"] + iid,
+                    "is_new": False, "is_intermediate": True, "displayed_sidebar": None})
+        else:
+            # Find matching directory: search for directory named after this ID
+            dir_path = None
+            for d in local_dir.rglob(iid):
+                if d.is_dir():
+                    dir_path = d
+                    break
+            if not dir_path:
+                # Try under local_dir top-level
+                dir_path = local_dir / iid
+            dir_path.mkdir(parents=True, exist_ok=True)
+            index_path = dir_path / "_index.md"
+            intermediate_to_process.append({"doc": {"id": iid, "name": inode["name"]},
+                "path": index_path, "source_url": cfg["source_prefix"] + iid,
+                "is_new": True, "is_intermediate": True, "displayed_sidebar": None})
+
+    to_process.extend(intermediate_to_process)
 
     # Delete local files that don't match any catalog doc (cleanup shells)
-    for local_path in local_paths_set - matched_paths:
-        log(f"  🗑️  Deleting orphan: {local_path.relative_to(local_dir)}")
-        local_path.unlink()
+    # When --kit is specified, skip orphan cleanup to avoid affecting other Kits
+    orphaned_paths = []
+    if not args.kit:
+        for local_path in local_paths_set - matched_paths:
+            content = local_path.read_text(encoding="utf-8")
+            # Skip hand-written content: no original_url in frontmatter
+            has_original = "original_url:" in content[:500]
+            if not has_original and len(content) > 200:
+                log(f"  ⚠️  SKIP orphan (looks hand-written): {local_path.relative_to(local_dir)}")
+                continue
+            # Soft-delete to trash directory
+            trash_dir = REPO / ".trash" / time.strftime("%Y%m%d_%H%M%S")
+            trash_dir.mkdir(parents=True, exist_ok=True)
+            relocated = trash_dir / local_path.name
+            log(f"  🗑️  Trash orphan: {local_path.relative_to(local_dir)} → .trash/")
+            shutil.move(str(local_path), str(relocated))
+            orphaned_paths.append(str(local_path.relative_to(local_dir)))
+    else:
+        log("Skipping orphan cleanup (--kit mode: scoped to selected Kit only)")
 
     new_count = sum(1 for d in to_process if d["is_new"])
     update_count = sum(1 for d in to_process if not d["is_new"])
-    log(f"To process: {new_count} new + {update_count} update = {len(to_process)} total")
+    inter_count = sum(1 for d in to_process if d["is_intermediate"])
+    log(f"To process: {new_count} new + {update_count} update ({inter_count} intermediate) = {len(to_process)} total")
+
+    # Track results for report
+    results = {
+        "new_leaf": [],       # (id, name, path)
+        "new_intermediate": [],  # (id, name, path)
+        "updated": [],        # (id, name, path)
+        "skipped": [],        # (id, name, reason)
+        "failed": [],         # (id, name, error)
+        "orphaned": orphaned_paths,
+        "images": 0,
+        "section": section,
+        "kit": args.kit,
+    }
 
     # Process each document
     success = 0
     failed = 0
+    skipped = 0
     images_total = 0
 
     for i, item in enumerate(to_process):
@@ -489,23 +714,34 @@ def main():
         oid = doc["id"]
         out_path = item["path"]
         source_url = item["source_url"]
+        name = doc["name"]
 
         try:
-            log(f"  [{i + 1}/{len(to_process)}] {doc['name'][:40]} ({oid[:40]})")
+            prefix = " 📁" if item["is_intermediate"] else ""
+            log(f"  [{i + 1}/{len(to_process)}]{prefix} {name[:40]} ({oid[:40]})")
 
             # Fetch
             fetched = fetch_doc(oid, cfg["catalog_name"])
+            fetched_html = (fetched or {}).get("html") or ""
+
+            # For intermediate nodes: skip if content is too thin
+            if item["is_intermediate"] and len(fetched_html) < 500:
+                log(f"    ⏭️  Skip thin intermediate (HTML={len(fetched_html)} chars)")
+                skipped += 1
+                results["skipped"].append((oid, name, f"HTML too thin ({len(fetched_html)} chars)"))
+                continue
 
             # Process HTML (images + merged cells + codehub source links)
             img_dir = out_path.parent / "img"
-            html, has_merged, codehub_links = process_html(fetched["html"], img_dir, oid)
+            html, has_merged, codehub_links = process_html(fetched_html, img_dir, oid)
 
             # Count images
             img_count = len(list(img_dir.glob("*"))) if img_dir.exists() else 0
             images_total += img_count
 
             # Convert to MD
-            md_content = html_to_md(html, fetched["title"], source_url, has_merged, codehub_links)
+            fetched_title = (fetched or {}).get("title", "")
+            md_content = html_to_md(html, fetched_title, source_url, has_merged, codehub_links)
 
             # Preserve displayed_sidebar from shell frontmatter
             displayed_sidebar = item.get("displayed_sidebar")
@@ -521,14 +757,44 @@ def main():
             out_path.write_text(md_content, encoding="utf-8")
 
             success += 1
+            # Categorize result
+            rel_path = str(out_path.relative_to(local_dir))
+            if item["is_new"]:
+                if item["is_intermediate"]:
+                    results["new_intermediate"].append((oid, name, rel_path))
+                else:
+                    results["new_leaf"].append((oid, name, rel_path))
+            else:
+                results["updated"].append((oid, name, rel_path))
         except Exception as e:
             log(f"  ❌ Failed: {e}")
+            traceback.print_exc()
             failed += 1
+            results["failed"].append((oid, name, str(e)))
 
         # Rate limit
         time.sleep(0.5)
 
-    log(f"✅ Done! Success: {success}, Failed: {failed}, Images: {images_total}")
+    results["images"] = images_total
+    results["success"] = success
+    results["failed_count"] = failed
+    results["skipped_count"] = skipped
+
+    # Generate report
+    print_report(results)
+    save_report(results)
+
+    # Rebuild content-map.json so new pages are tracked
+    log("Rebuilding content-map.json...")
+    map_script = REPO / "scripts" / "content_map.py"
+    if map_script.exists():
+        result = subprocess.run([sys.executable, str(map_script)], capture_output=True, text=True, timeout=60)
+        if result.returncode == 0:
+            log("✅ content-map.json rebuilt")
+        else:
+            log(f"⚠️  content-map rebuild failed: {result.stderr[:200]}")
+    else:
+        log("⚠️  content_map.py not found, skip rebuild")
 
 
 if __name__ == "__main__":

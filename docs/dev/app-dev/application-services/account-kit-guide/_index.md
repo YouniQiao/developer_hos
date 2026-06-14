@@ -1,0 +1,17 @@
+---
+title: "Account Kit（华为账号服务）"
+original_url: https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-kit-guide
+---
+
+* **[Account Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-introduction)**
+* **[开发者使用Account Kit的登录能力的管理细则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-detailedrules)**
+* **[开发准备](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-preparations)**
+* **[登录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-quick-login)**
+* **[获取华为账号用户信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-user-info)**
+* **[未成年人模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-minorsprotection)**
+* **[Account Kit Skill能力开放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-skill)**
+* **[订阅和处理用户信息变更](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/subscribe-process-userinfo-change)**
+* **[Account Kit常见问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq)**
+* **[Account Kit术语](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-glossary)**
+* **[个人数据处理说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-personal-data-processing-description)**
+* **[附录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-appendix)**
