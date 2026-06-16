@@ -27,10 +27,10 @@ const NAV_ITEMS = [
     desc: '智能问答、代码生成、页面生成、调优',
   },
   {
-    label: 'DevEco Testing指南',
-    path: '/docs/tools/deveco-testing/get-familiar',
-    match: '/docs/tools/deveco-testing',
-    desc: '专项测试、上架预检、探索测试、回归测试',
+    label: 'DevEco Code/CLI',
+    path: '/docs/tools/deveco-code/overview',
+    match: '/docs/tools/deveco-code',
+    desc: 'DevEco Code AI Agent 工具 与 DevEco CLI 命令行入口',
   },
   {
     label: 'ohpm包管理工具',

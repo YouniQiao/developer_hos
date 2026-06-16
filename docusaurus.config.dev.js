@@ -53,7 +53,14 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars-dev.js'),
-          include: ['dev/testing/**', 'distribute/xiaoyi/**'],
+          include: [
+            'tools/deveco-code/**',
+            'tools/coding-debug/ide-tools-overview',
+            'tools/end-cloud/agc-harmonyos-clouddev-overview',
+            'tools/ai-assist/ide-codegenie',
+            'tools/ohpm/ide-ohpm-system-platform',
+            'tools/cli-tools/command-line-tools-overview',
+          ],
           routeBasePath: 'docs',
           exclude: ['**/img/**', '**/_category_**'],
           editUrl:

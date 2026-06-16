@@ -974,6 +974,11 @@ aiAssistSidebar: [
 'tools/ai-assist/ide-ocal-knowledge'
 ],
 
+devecoCodeSidebar: [
+  'tools/deveco-code/overview',
+  'tools/deveco-code/deveco-cli',
+],
+
 cliToolsSidebar: [
 {
   type: 'category',
