@@ -54,6 +54,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars-dev.js'),
           include: [
+            'resources/cross-platform/**',
             'tools/deveco-code/**',
             'tools/coding-debug/ide-tools-overview',
             'tools/end-cloud/agc-harmonyos-clouddev-overview',
