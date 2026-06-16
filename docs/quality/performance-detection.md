@@ -117,7 +117,7 @@ Testing测试报告导入体检工具分析的过程主要包括以下步骤。
 
 1. **DevEco Testing测试**
 
-   使用DevEco Testing进行场景化性能测试，支持编写测试脚本和自定义测试场景对应用性能进行评估。具体使用方法和指导请见：[场景化性能测试](/docs/dev/testing/specialized-testing#section8642101711299)。
+   使用DevEco Testing进行场景化性能测试，支持编写测试脚本和自定义测试场景对应用性能进行评估。具体使用方法和指导请见：[场景化性能测试](/docs/dev/testing/specialized-test#section8642101711299)。
 
    ![](./img/4851e84b.png "点击放大")
 

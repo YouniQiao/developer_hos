@@ -21,7 +21,7 @@ upstream_status: upstream_deleted_pending
 
 | 模块 | 测试服务 | 模拟器 | 元服务 |
 | --- | --- | --- | --- |
-| [专项测试](/docs/dev/testing/specialized-testing) | 性能基础质量测试 | 不支持 | 支持 |
+| [专项测试](/docs/dev/testing/specialized-test) | 性能基础质量测试 | 不支持 | 支持 |
 | 场景化性能测试 | 不支持 | 不支持 |
 | UX基础质量测试 | 支持 | 支持 |
 | 稳定性基础质量测试 | 支持 | 支持 |
@@ -42,13 +42,13 @@ upstream_status: upstream_deleted_pending
 
 ****新增特性：****
 
-图谱管理工具新增定义指定入口功能。具体请参考[应用探索测试](/docs/dev/testing/exploratory-testing#section12324184817324)或[稳定性基础质量测试](/docs/dev/testing/specialized-testing#section9290138152218)。
+图谱管理工具新增定义指定入口功能。具体请参考[应用探索测试](/docs/dev/testing/exploratory-testing#section12324184817324)或[稳定性基础质量测试](/docs/dev/testing/specialized-test#section9290138152218)。
 
 ****表2**** ****DevEco Testing测试服务应用兼容性配套关系****
 
 | 模块 | 测试服务 | 模拟器 | 元服务 |
 | --- | --- | --- | --- |
-| [专项测试](/docs/dev/testing/specialized-testing) | 性能基础质量测试 | 不支持 | 支持 |
+| [专项测试](/docs/dev/testing/specialized-test) | 性能基础质量测试 | 不支持 | 支持 |
 | 场景化性能测试 | 不支持 | 不支持 |
 | UX基础质量测试 | 支持 | 支持 |
 | 稳定性基础质量测试 | 支持 | 支持 |

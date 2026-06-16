@@ -9,6 +9,6 @@ upstream_hash: c198a8bd1f14
 upstream_status: upstream_deleted_pending
 ---
 
-* **[单元测试框架使用指导](/docs/dev/testing/ut/arkxtest-guidelines/unittest-guidelines)**
-* **[UI测试框架使用指导](/docs/dev/testing/ut/arkxtest-guidelines/uitest-guidelines)**
-* **[白盒性能测试框架使用指导](/docs/dev/testing/ut/arkxtest-guidelines/perftest-guideline)**
+* **[单元测试框架使用指导](/docs/dev/testing/unit-test/guidelines)**
+* **[UI测试框架使用指导](/docs/dev/testing/ui-test/arkts)**
+* **[白盒性能测试框架使用指导](/docs/dev/testing/tools/perftest-guideline)**

@@ -324,7 +324,7 @@ aa test -b <bundleName> [-m <module-name>] [-p <package-name>] [-s class <test-c
 
 ![](./img/b05f0d94.png)
 
-关于class、level、size、testType等参数的详细说明请参见[命令行执行测试脚本](/docs/dev/testing/ut/arkxtest-guidelines/unittest-guidelines#命令行执行测试脚本)。
+关于class、level、size、testType等参数的详细说明请参见[命令行执行测试脚本](/docs/dev/testing/unit-test/guidelines#命令行执行测试脚本)。
 
 **启动测试框架命令参数列表**
 

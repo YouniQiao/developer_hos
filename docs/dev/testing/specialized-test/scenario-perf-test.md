@@ -1,6 +1,6 @@
 ---
 title: "场景化性能测试"
-original_url: /docs/dev/testing/specialized-testing
+original_url: /docs/dev/testing/specialized-test
 format: md
 upstream_id: dev/testing/specialized-testing
 last_sync: 2026-06-07
@@ -24,7 +24,7 @@ sync_hash: bf560302
 
 **脚本写作**
 
-请参考[自定义性能脚本测试（基于Python)](/docs/dev/testing/ut/hypium-perf-python-guidelines)。
+请参考[自定义性能脚本测试（基于Python)](/docs/dev/testing/tools/hypium-perf-python-guidelines)。
 
 **任务创建：**
 

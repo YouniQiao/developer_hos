@@ -1,6 +1,6 @@
 ---
 title: "wukong稳定性工具使用指导"
-original_url: /docs/dev/testing/test-service/wukong-guidelines
+original_url: /docs/dev/testing/tools/wukong-guidelines
 format: md
 upstream_id: dev/testing/test-service/wukong-guidelines
 last_sync: 2026-06-07

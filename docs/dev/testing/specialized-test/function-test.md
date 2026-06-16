@@ -1,6 +1,6 @@
 ---
 title: "功能体验基础质量测试"
-original_url: /docs/dev/testing/specialized-testing
+original_url: /docs/dev/testing/specialized-test
 format: md
 upstream_id: dev/testing/specialized-testing
 last_sync: 2026-06-07

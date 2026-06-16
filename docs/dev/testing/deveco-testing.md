@@ -8,7 +8,7 @@ sync_hash: 03f9ba37
 upstream_status: upstream_deleted_pending
 ---
 * **[快速上手](/docs/dev/testing/get-familiar)**
-* **[专项测试](/docs/dev/testing/specialized-testing)**
+* **[专项测试](/docs/dev/testing/specialized-test)**
 * **[上架预检](/docs/dev/testing/publish-testing)**
 * **[探索测试](/docs/dev/testing/exploratory-testing)**
 * **[回归测试](/docs/dev/testing/regression-test)**

@@ -21,7 +21,7 @@ sync_hash: c8ca8f44
 
 ## 开发前准备
 
-* 创建智能体，具体请参见[快速创建智能体](/docs/distribute/xiaoyi/developer-guide-0000002469667881/quick-start-0000002469548009)。
+* 创建智能体，具体请参见[快速创建智能体](/docs/distribute/xiaoyi/quick-start-0000002469548009)。
 * 关联应用，具体请参见[关联应用](/docs/distribute/xiaoyi/ability-expansion-function-introduction-0000002437625858/related-applications-0000002437785706)。
 * 确保已在终端设备上登录华为账号，并且处于联网状态。
 

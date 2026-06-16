@@ -6,6 +6,6 @@ upstream_id: FAQ/faqs-deveco-testing/faqs-app-special-test/faqs-scenario-based-p
 last_sync: 2026-06-07
 sync_hash: 8d220865
 ---
-请检查环境是否正确，PyCharm所引用的python版本是否引用hypium及hypium\_perf的全部版本，可尝试参考[场景化性能测试](/docs/dev/testing/specialized-testing#section8642101711299)章节手动安装并检查依赖包完整性。
+请检查环境是否正确，PyCharm所引用的python版本是否引用hypium及hypium\_perf的全部版本，可尝试参考[场景化性能测试](/docs/dev/testing/specialized-test#section8642101711299)章节手动安装并检查依赖包完整性。
 
 更新场景化性能测试服务后，如果本地调试失败，请检查当前依赖包版本是否与安装包中的版本一致。

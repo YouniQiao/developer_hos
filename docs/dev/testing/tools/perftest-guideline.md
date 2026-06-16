@@ -1,6 +1,6 @@
 ---
 title: "白盒性能测试框架使用指导"
-original_url: /docs/dev/testing/ut/arkxtest-guidelines/perftest-guideline
+original_url: /docs/dev/testing/tools/perftest-guideline
 format: md
 upstream_id: dev/testing/ut/arkxtest-guidelines/perftest-guideline
 last_sync: 2026-06-07

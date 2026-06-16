@@ -16,4 +16,4 @@ sync_hash: 3b97236e
 
 **DevEco Testing Hypium资料查询：**
 
-访问华为开发者联盟官网，查看指南-应用测试-单元测试和UI测试中的[应用UI测试（基于Python）](/docs/dev/testing/ut/hypium-python-guidelines)。
+访问华为开发者联盟官网，查看指南-应用测试-单元测试和UI测试中的[应用UI测试（基于Python）](/docs/dev/testing/ui-test/python)。

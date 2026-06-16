@@ -16,7 +16,7 @@ sync_hash: 33899303
 | **类型** | 规则 |
 | **适用设备** | 手机，折叠屏，平板，2in1 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-testing#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |
+| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-test#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |
 
 ### 应用或元服务启动过程流畅
 
@@ -26,7 +26,7 @@ sync_hash: 33899303
 | **类型** | 规则 |
 | **适用设备** | 手机，平板，PC/2in1，车机，手表 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-testing#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |
+| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-test#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |
 
 ### 应用或元服务应用内滑动过程不丢帧
 
@@ -36,7 +36,7 @@ sync_hash: 33899303
 | **类型** | 规则 |
 | **适用设备** | 手机，平板，PC/2in1，智慧屏，车机，手表 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-testing#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |
+| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-test#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |
 
 ### 应用或元服务应用内滑动过程流畅
 
@@ -46,7 +46,7 @@ sync_hash: 33899303
 | **类型** | 规则 |
 | **适用设备** | 手机，平板，PC/2in1，车机，穿戴 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-testing#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |
+| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-test#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |
 
 ### 应用或元服务应用内转场操作不丢帧
 
@@ -56,7 +56,7 @@ sync_hash: 33899303
 | **类型** | 规则 |
 | **适用设备** | 手机，平板，PC/2in1，智慧屏，车机，手表 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-testing#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |
+| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-test#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |
 
 ### 应用或元服务应用内转场操作流畅
 
@@ -66,7 +66,7 @@ sync_hash: 33899303
 | **类型** | 规则 |
 | **适用设备** | 手机，平板，PC/2in1，车机，手表 |
 | **应用形态适用性** | 鸿蒙应用，鸿蒙元服务 |
-| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-testing#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |
+| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-test#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |
 
 ### 应用在线流媒体播放弹幕滚动不丢帧
 
@@ -76,7 +76,7 @@ sync_hash: 33899303
 | **类型** | 规则 |
 | **适用设备** | 手机，平板，PC/2in1，智慧屏，车机 |
 | **应用形态适用性** | 鸿蒙应用 |
-| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-testing#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |
+| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-test#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |
 
 ### 应用在线流媒体播放过程流畅
 
@@ -86,7 +86,7 @@ sync_hash: 33899303
 | **类型** | 规则 |
 | **适用设备** | 手机，平板，PC/2in1，智慧屏，车机 |
 | **应用形态适用性** | 鸿蒙应用 |
-| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-testing#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |
+| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-test#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |
 
 ### 应用在线流媒体播放声画同步体验
 
@@ -96,4 +96,4 @@ sync_hash: 33899303
 | **类型** | 规则 |
 | **适用设备** | 手机，平板，PC/2in1，智慧屏，车机 |
 | **应用形态适用性** | 鸿蒙应用 |
-| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-testing#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |
+| **说明** | [开发自测试：DevEco Studio AppAnalyzer 性能分析诊断](/docs/quality/performance-detection#section135451444171)  [本地自测试：DevEco Testing 性能测试](/docs/dev/testing/specialized-test#section12324184817324)  [云端自测试：AppGallery Connect 云测试性能检测](/docs/distribute/agc/agc-help-cloudtest-viewreport-0000002289646669/agc-help-cloudtest-performancetest-0000002289647209) |

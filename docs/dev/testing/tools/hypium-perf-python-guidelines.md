@@ -1,6 +1,6 @@
 ---
 title: "自定义性能脚本测试（基于Python）"
-original_url: /docs/dev/testing/ut/hypium-perf-python-guidelines
+original_url: /docs/dev/testing/tools/hypium-perf-python-guidelines
 format: md
 upstream_id: dev/testing/ut/hypium-perf-python-guidelines
 last_sync: 2026-06-07
@@ -10,9 +10,9 @@ sync_hash: 19710ea7
 
 DevEco Testing场景化的性能测试服务，基于Hypium自动化测试框架，为开发者提供性能测试能力，支持使用Python编写应用的性能测试脚本。本指南主要讲解性能测试脚本的开发。
 
-Hypium基本API接口功能介绍，请参考指导：[Hypium框架-API使用方法](/docs/dev/testing/ut/hypium-python-guidelines#section1141818121333)。
+Hypium基本API接口功能介绍，请参考指导：[Hypium框架-API使用方法](/docs/dev/testing/ui-test/python#section1141818121333)。
 
-测试服务执行测试脚本详情介绍，请参考指导：[场景化性能测试](/docs/dev/testing/specialized-testing#section8642101711299)。
+测试服务执行测试脚本详情介绍，请参考指导：[场景化性能测试](/docs/dev/testing/specialized-test#section8642101711299)。
 
 ## **环境搭建**
 
@@ -42,7 +42,7 @@ Hypium基本API接口功能介绍，请参考指导：[Hypium框架-API使用方
 
 **安装Python及Hypium**
 
-参考指导：[应用UI测试-安装指导](/docs/dev/testing/ut/hypium-python-guidelines)。
+参考指导：[应用UI测试-安装指导](/docs/dev/testing/ui-test/python)。
 
 **安装hypium\_perf**
 
@@ -326,7 +326,7 @@ class BrowseHuaweiVideo(ModelBase):  # 原子用例统一继承ModelBase
 
 性能测试框架作为Hypium自动化测试框架的增强能力，其设备操作API与Hypium保持一致。该框架主要负责性能自动化测试模型的流程控制，管理测试过程中的trace资源和视频资源采集，并提供自动化测试完成后的指标分析功能。
 
-Hypium基本API接口功能介绍，请参考指导：[Hypium框架-API使用方法](/docs/dev/testing/ut/hypium-python-guidelines#section1141818121333)。
+Hypium基本API接口功能介绍，请参考指导：[Hypium框架-API使用方法](/docs/dev/testing/ui-test/python#section1141818121333)。
 
 注：若测试场景包含隐私界面则无法录屏进行测试，例如银行类应用、密码界面等。
 
@@ -825,4 +825,4 @@ action\_testsuite.json示例
 
 ## **性能脚本测试执行**
 
-性能脚本本地调试验证成功后，可在DevEco Testing创建性能测试任务，请查看文档：[场景化性能测试-任务创建](/docs/dev/testing/specialized-testing#section8642101711299)。
+性能脚本本地调试验证成功后，可在DevEco Testing创建性能测试任务，请查看文档：[场景化性能测试-任务创建](/docs/dev/testing/specialized-test#section8642101711299)。

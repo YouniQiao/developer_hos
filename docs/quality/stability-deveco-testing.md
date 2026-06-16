@@ -70,7 +70,7 @@ sync_hash: ec0ffdc9
 
 ## 其他专项测试
 
-请参考：[专项测试](/docs/dev/testing/specialized-testing)。
+请参考：[专项测试](/docs/dev/testing/specialized-test)。
 
 ## 探索测试
 

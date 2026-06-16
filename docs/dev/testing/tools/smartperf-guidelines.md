@@ -1,6 +1,6 @@
 ---
 title: "HiSmartPerf Device性能使用指导"
-original_url: /docs/dev/testing/test-service/smartperf-guidelines
+original_url: /docs/dev/testing/tools/smartperf-guidelines
 format: md
 upstream_id: dev/testing/test-service/smartperf-guidelines
 last_sync: 2026-06-07

@@ -189,9 +189,9 @@ hdc支持和其他调试工具配套使用，工具列表如下：
 | [uinput](/docs/dev/app-dev/system/uinput) | 模拟操作工具 |
 | [arkdata](/docs/dev/app-dev/application-framework/arkdata/arkdata-debug-tool) | arkdata数据库调试工具 |
 | [sqlite](/docs/dev/app-dev/application-framework/arkdata/sqlite-database-debug-tool) | SQLite调试工具指导 |
-| [wukong](/docs/dev/testing/test-service/wukong-guidelines) | wukong稳定性工具 |
-| [UItest](/docs/dev/testing/ut/arkxtest-guidelines/uitest-guidelines) | UI测试框架 |
-| [HiSmartPerf Device daemon](/docs/dev/testing/test-service/smartperf-guidelines#hismartperf-device-daemon端) | HiSmartPerf Device-daemon端工具命令 |
+| [wukong](/docs/dev/testing/tools/wukong-guidelines) | wukong稳定性工具 |
+| [UItest](/docs/dev/testing/ui-test/arkts) | UI测试框架 |
+| [HiSmartPerf Device daemon](/docs/dev/testing/tools/smartperf-guidelines#hismartperf-device-daemon端) | HiSmartPerf Device-daemon端工具命令 |
 
 ### 获取帮助
 

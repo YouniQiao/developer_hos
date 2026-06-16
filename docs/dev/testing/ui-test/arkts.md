@@ -1,6 +1,6 @@
 ---
 title: "UI测试（基于ArkTS）"
-original_url: /docs/dev/testing/ut/arkxtest-guidelines/uitest-guidelines
+original_url: /docs/dev/testing/ui-test/arkts
 format: md
 upstream_id: dev/testing/ut/arkxtest-guidelines/uitest-guidelines
 last_sync: 2026-06-07
@@ -41,7 +41,7 @@ UITest分为客户端和服务端。
 
 本章节介绍UI测试框架ArkTS API的具体使用方法。
 
-UI测试是在[单元测试](/docs/dev/testing/ut/arkxtest-guidelines/unittest-guidelines)基础上进行UITest接口调用，接口的详细定义与参数说明可参考[API文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-uitest)。
+UI测试是在[单元测试](/docs/dev/testing/unit-test/guidelines)基础上进行UITest接口调用，接口的详细定义与参数说明可参考[API文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-uitest)。
 
 ### UI测试示例
 
@@ -49,7 +49,7 @@ UI测试是在[单元测试](/docs/dev/testing/ut/arkxtest-guidelines/unittest-g
 
 1. 调用[程序框架服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-abilitydelegator)能力，启动目标被测应用，并确认应用运行状态。
 2. 调用UI测试框架能力，页面中执行点击操作。
-3. 通过[添加断言](/docs/dev/testing/ut/arkxtest-guidelines/unittest-guidelines#断言能力)，验证操作后当前页面的实际变化是否与预期结果一致。
+3. 通过[添加断言](/docs/dev/testing/unit-test/guidelines#断言能力)，验证操作后当前页面的实际变化是否与预期结果一致。
 
 开发步骤如下:
 
