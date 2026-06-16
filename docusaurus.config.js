@@ -167,7 +167,7 @@ const config = {
           {
             label: '更多资源',
             type: 'dropdown',
-            to: '/docs/resources/design-res/overview',
+            to: '/docs/resources/cross-platform/overview',
             className: 'mega-dropdown',
             items: [
               {
