@@ -1,10 +1,7 @@
 ---
 title: "元服务规范"
-original_url: /docs/dev/atomic-dev/atomic-service-specifications/atomic-service-specifications
-format: md
-upstream_id: dev/atomic-dev/atomic-service-specifications/atomic-service-specifications
-last_sync: 2026-06-07
-sync_hash: fbcf228c
-upstream_status: upstream_deleted_pending
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-specifications
 ---
-# 元服务规范
+
+* **[元服务生态运营规范](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-ecosystem-operations)**
+* **[元服务命名规范](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-naming-conversion)**

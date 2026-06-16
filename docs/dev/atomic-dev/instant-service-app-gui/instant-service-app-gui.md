@@ -1,10 +1,10 @@
 ---
 title: "通过界面接入服务直达"
-original_url: /docs/dev/atomic-dev/instant-service-app-gui/instant-service-app-gui
-format: md
-upstream_id: dev/atomic-dev/instant-service-app-gui/instant-service-app-gui
-last_sync: 2026-06-07
-sync_hash: a0ee5844
-upstream_status: upstream_deleted_pending
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-gui
 ---
-# 通过界面接入服务直达
+
+* **[概览](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-gui-overview)**
+* **[角色权限](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-role-permissions)**
+* **[门店](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-store)**
+* **[子服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-items)**
+* **[商品](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-app-offerings)**

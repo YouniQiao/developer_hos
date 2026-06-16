@@ -1,9 +1,8 @@
 ---
 title: "图片"
-original_url: /docs/dev/atomic-dev/atomic-image-development/atomic-image-development
-format: md
-upstream_id: dev/atomic-dev/atomic-image-development/atomic-image-development
-last_sync: 2026-06-07
-sync_hash: 657fa4de
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-image-development
 ---
-# 图片
+
+* **[图片开发概述](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-image-overview)**
+* **[图片解码](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-image-decoding)**
+* **[图片编码](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-image-encoding)**

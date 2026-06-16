@@ -1,12 +1,8 @@
 ---
 title: "入门指引"
-original_url: /docs/dev/atomic-dev/instant-service-getting-started/instant-service-getting-started
-format: md
-upstream_id: dev/atomic-dev/instant-service-getting-started/instant-service-getting-started
-last_sync: 2026-06-07
-sync_hash: 07168489
-upstream_hash: 91c9dd744e7f
-upstream_status: upstream_deleted_pending
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-getting-started
 ---
 
-# 入门指引
+* **[服务商接入服务直达](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-service-providers)**
+* **[商家直接接入服务直达](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-merchants)**
+* **[配置接口访问凭证](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-access-credentials)**

@@ -1,10 +1,7 @@
 ---
 title: "配置接口访问凭证"
-original_url: /docs/dev/atomic-dev/instant-service-access-credentials/instant-service-access-credentials
-format: md
-upstream_id: dev/atomic-dev/instant-service-access-credentials/instant-service-access-credentials
-last_sync: 2026-06-07
-sync_hash: fe5f1ff0
-upstream_status: upstream_deleted_pending
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-access-credentials
 ---
-# 配置接口访问凭证
+
+* **[服务商接入鉴权方式](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-provider-authentication)**
+* **[商家直接接入鉴权方式](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-merchant-authentication)**

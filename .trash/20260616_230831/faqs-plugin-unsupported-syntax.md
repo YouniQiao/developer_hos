@@ -1,0 +1,19 @@
+---
+title: "不支持ASCF的语法检查和提示"
+original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-plugin-unsupported-syntax
+format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-plugin-unsupported-syntax
+last_sync: 2026-06-07
+sync_hash: 8bd22923
+---
+**问题现象**
+
+在DevEco Studio中不支持对ASCF源码的语法检查和提示。
+
+**可能原因**
+
+ASCF Plugin插件当前支持hxml, js, hjs, css, json 等文件的编辑，支持基本的语法高亮和代码格式化等功能。当前还没有对语法检查和提示等功能做完整的适配。
+
+**解决措施**
+
+ASCF Plugin插件还在不断的完善，后续会持续补充和完善语法检查和提示等功能。

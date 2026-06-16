@@ -1,10 +1,11 @@
 ---
 title: "门店管理"
-original_url: /docs/dev/atomic-dev/instant-service-store-management/instant-service-store-management
-format: md
-upstream_id: dev/atomic-dev/instant-service-store-management/instant-service-store-management
-last_sync: 2026-06-07
-sync_hash: 221b96d3
-upstream_status: upstream_deleted_pending
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-management
 ---
-# 门店管理
+
+* **[门店管理流程说明](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-process)**
+* **[创建门店](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-create)**
+* **[查询门店](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-query)**
+* **[更新门店](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-update)**
+* **[删除门店](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-delete)**
+* **[查询门店列表](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-list)**

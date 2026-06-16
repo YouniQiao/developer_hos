@@ -1,0 +1,29 @@
+---
+title: "require的用法，出现功能失效的情况。"
+original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-require-invalid
+format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-require-invalid
+last_sync: 2026-06-07
+sync_hash: a66d6c5c
+---
+**问题现象**
+
+下面是一个简单的示例代码
+
+```
+function test(require) { // require作为函数参数引入
+  let a = require('./test.js');
+  let b = a(1, 2);
+  this.setData({
+    value: b
+  });
+}
+```
+
+运行点击调用JS失效。
+
+原因：Webpack静态分析依赖require作为全局标识符，一旦它被函数参数遮蔽（shadowed），就会彻底失效。
+
+**解决措施**
+
+可以参考：把require调用挪出参数列表，回到可被静态识别的位置即可。

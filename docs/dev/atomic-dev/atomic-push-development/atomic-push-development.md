@@ -1,10 +1,9 @@
 ---
 title: "推送"
-original_url: /docs/dev/atomic-dev/atomic-push-development/atomic-push-development
-format: md
-upstream_id: dev/atomic-dev/atomic-push-development/atomic-push-development
-last_sync: 2026-06-07
-sync_hash: c3c02d87
-upstream_status: upstream_deleted_pending
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-push-development
 ---
-# 推送
+
+* **[Push Kit简介](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-intro)**
+* **[开发准备](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-prepare)**
+* **[推送基于账号的服务通知订阅消息](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-subscription)**
+* **[推送基于账号的服务动态消息](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-timeline)**

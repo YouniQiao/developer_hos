@@ -1,12 +1,8 @@
 ---
 title: "应用开发"
-original_url: /docs/dev/atomic-dev/health-app-dev-as/health-app-dev-as
-format: md
-upstream_id: dev/atomic-dev/health-app-dev-as/health-app-dev-as
-last_sync: 2026-06-07
-sync_hash: 42f5db84
-upstream_hash: b0650761824c
-upstream_status: upstream_deleted_pending
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-app-dev-as
 ---
 
-# 应用开发
+* **[管理用户授权](https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-add-permissions-as)**
+* **[聚合查询运动健康采样数据](https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-samplepoint-manage-as)**
+* **[读取实时三环数据](https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-three-ring-read-as)**

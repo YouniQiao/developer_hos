@@ -1,10 +1,7 @@
 ---
 title: "获取手机号"
-original_url: /docs/dev/atomic-dev/account-guide-atomic-get-phone/account-guide-atomic-get-phone
-format: md
-upstream_id: dev/atomic-dev/account-guide-atomic-get-phone/account-guide-atomic-get-phone
-last_sync: 2026-06-07
-sync_hash: a2efc1d9
-upstream_status: upstream_deleted_pending
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-phone
 ---
-# 获取手机号
+
+* **[获取手机号概述](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-phone-overview)**
+* **[快速验证](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-phonenumber)**

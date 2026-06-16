@@ -1,10 +1,7 @@
 ---
 title: "场景化组件"
-original_url: /docs/dev/atomic-dev/atomic-scenariofusion-development/atomic-scenariofusion-development
-format: md
-upstream_id: dev/atomic-dev/atomic-scenariofusion-development/atomic-scenariofusion-development
-last_sync: 2026-06-07
-sync_hash: e63ba975
-upstream_status: upstream_deleted_pending
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scenariofusion-development
 ---
-# 场景化组件
+
+* **[Scenario Fusion Kit概述](https://developer.huawei.com/consumer/cn/doc/atomic-guides/scenario-fusion-atomic-introduction)**
+* **[场景化Button](https://developer.huawei.com/consumer/cn/doc/atomic-guides/scenario-fusion-atomic-button)**

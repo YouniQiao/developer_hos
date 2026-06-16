@@ -1,9 +1,24 @@
 ---
 title: "个人数据处理说明"
-original_url: /docs/dev/atomic-dev/health-harmonyos-as/health-personal-data-atomicservice-as
-format: md
-upstream_id: dev/atomic-dev/health-harmonyos-as/health-personal-data-atomicservice-as
-last_sync: 2026-06-07
-sync_hash: 7323a136
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-personal-data-atomicservice-as
 ---
-# 个人数据处理说明
+
+华为是数据处理者，不是数据控制者，数据使用目的和方式由用户自己决定。
+
+此文档针对华为作为最终用户数据处理者，开发者作为最终用户数据控制者的数据处理进行说明，包括：
+
+* 华为处理的个人数据清单。
+* 指导开发者如何帮助最终用户实现对数据的控制。
+
+## 华为处理的个人数据清单
+
+| 个人数据 | 使用目的 | 存留期 |
+| --- | --- | --- |
+| 运动数据：日常活动（步数、热量、距离、中高强度、爬高、活动小时数） | Health Service Kit为用户提供数据存储和共享的平台，不会主动处理任何用户数据。所有的数据显示和运动健康服务由开发者为用户提供，数据来源于华为运动健康App与三方服务写入，数据存储在运动健康服务本地数据库，会随端云同步到运动健康服务云侧。 | 用户删除华为账号后，其所有个人数据会删除。 |
+| 华为账号ID | 最终用户的华为账号绑定三方服务时的用户标识符。 | 用户删除华为账号后，其所有个人数据会删除。 |
+
+## 指导开发者如何帮助最终用户实现对数据的控制
+
+**如何清除最终用户数据**
+
+用户可以通过删除华为账号来删除个人数据，该账号下的所有个人数据将会被删除。

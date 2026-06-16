@@ -55,12 +55,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars-dev.js'),
           include: [
             'resources/cross-platform/**',
-            'tools/deveco-code/**',
-            'tools/coding-debug/ide-tools-overview',
-            'tools/end-cloud/agc-harmonyos-clouddev-overview',
-            'tools/ai-assist/ide-codegenie',
-            'tools/ohpm/ide-ohpm-system-platform',
-            'tools/cli-tools/command-line-tools-overview',
+            'dev/atomic-dev/**',
           ],
           routeBasePath: 'docs',
           exclude: ['**/img/**', '**/_category_**'],

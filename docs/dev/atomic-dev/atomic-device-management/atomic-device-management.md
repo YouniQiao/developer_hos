@@ -1,10 +1,8 @@
 ---
 title: "设备管理"
-original_url: /docs/dev/atomic-dev/atomic-device-management/atomic-device-management
-format: md
-upstream_id: dev/atomic-dev/atomic-device-management/atomic-device-management
-last_sync: 2026-06-07
-sync_hash: 73ff27a8
-upstream_status: upstream_deleted_pending
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-device-management
 ---
-# 设备管理
+
+* **[Sensor Service Kit简介](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-sensorservice-kit-intro)**
+* **[传感器](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-sensor)**
+* **[振动](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-vibrator)**

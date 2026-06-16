@@ -1,9 +1,11 @@
 ---
 title: "扫码"
-original_url: /docs/dev/atomic-dev/atomic-code-scan-development/atomic-code-scan-development
-format: md
-upstream_id: dev/atomic-dev/atomic-code-scan-development/atomic-code-scan-development
-last_sync: 2026-06-07
-sync_hash: 3e5b12b1
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-code-scan-development
 ---
-# 扫码
+
+* **[Scan Kit简介](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scan-introduction)**
+* **[开发准备](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scan-config-agc)**
+* **[默认界面扫码](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scan-default-mode)**
+* **[图像识码](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scan-imagerecognition)**
+* **[码图生成](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scan-generate)**
+* **[Scan Kit常见问题](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scan-faq)**

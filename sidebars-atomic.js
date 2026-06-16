@@ -4,21 +4,21 @@ const atomicSidebar = [
     type: 'category',
     label: 'ASCF框架',
     collapsed: true,
+    link: {type: 'doc', id: 'dev/atomic-dev/ascf/ascf-overview'},
     items: [
-      'dev/atomic-dev/ascf/ascf-overview',
       'dev/atomic-dev/ascf/ascf-plugin',
       {
         type: 'category',
         label: '开发流程',
         collapsed: true,
+        link: {type: 'doc', id: 'dev/atomic-dev/ascf/ascf-development-process/ascf-development-process'},
         items: [
-          'dev/atomic-dev/ascf/ascf-development-process/ascf-development-process',
           {
             type: 'category',
             label: '在DevEco Studio中开发',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/ascf/use-ide/use-ide'},
             items: [
-              'dev/atomic-dev/ascf/use-ide/use-ide',
               'dev/atomic-dev/ascf/use-ide/create-ascf-project',
               'dev/atomic-dev/ascf/use-ide/convert-atomic-service-resources',
               'dev/atomic-dev/ascf/use-ide/compile-atomic-service',
@@ -40,21 +40,21 @@ const atomicSidebar = [
         type: 'category',
         label: '开发指南',
         collapsed: true,
+        link: {type: 'doc', id: 'dev/atomic-dev/ascf/ascf-development-guide/ascf-development-guide'},
         items: [
-          'dev/atomic-dev/ascf/ascf-development-guide/ascf-development-guide',
           {
             type: 'category',
             label: '基础能力',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/ascf/develop-basic-capabilities/develop-basic-capabilities'},
             items: [
-              'dev/atomic-dev/ascf/develop-basic-capabilities/develop-basic-capabilities',
               'dev/atomic-dev/ascf/develop-basic-capabilities/develop-network-access',
               {
                 type: 'category',
                 label: '分包加载',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/ascf/develop-subpackage-loading/develop-subpackage-loading'},
                 items: [
-                  'dev/atomic-dev/ascf/develop-subpackage-loading/develop-subpackage-loading',
                   'dev/atomic-dev/ascf/develop-subpackage-loading/develop-subpackages',
                   'dev/atomic-dev/ascf/develop-subpackage-loading/develop-preloading',
                   'dev/atomic-dev/ascf/develop-subpackage-loading/asynchronous-subcontracting',
@@ -70,7 +70,6 @@ const atomicSidebar = [
                 label: '安全',
                 collapsed: true,
                 items: [
-                  'dev/atomic-dev/ascf/develop-security/develop-security',
                   'dev/atomic-dev/ascf/develop-security/content-moderation-service',
                 ],
               },
@@ -88,8 +87,8 @@ const atomicSidebar = [
             type: 'category',
             label: '开放能力',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/ascf/develop-open-capabilities/develop-open-capabilities'},
             items: [
-              'dev/atomic-dev/ascf/develop-open-capabilities/develop-open-capabilities',
               'dev/atomic-dev/ascf/develop-open-capabilities/develop-huawei-id-retrieval',
               'dev/atomic-dev/ascf/develop-open-capabilities/develop-location-retrieval',
               'dev/atomic-dev/ascf/develop-open-capabilities/develop-push-info',
@@ -105,8 +104,8 @@ const atomicSidebar = [
             type: 'category',
             label: '开发服务卡片',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/ascf/develop-widget/develop-widget'},
             items: [
-              'dev/atomic-dev/ascf/develop-widget/develop-widget',
               'dev/atomic-dev/ascf/develop-widget/atomic-service-form-share-storage-data',
             ],
           },
@@ -118,20 +117,19 @@ const atomicSidebar = [
         label: 'API参考',
         collapsed: true,
         items: [
-          'dev/atomic-dev/ascf/ascf-references/ascf-references',
           {
             type: 'category',
             label: '框架',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/ascf/framework/framework'},
             items: [
-              'dev/atomic-dev/ascf/framework/framework',
               'dev/atomic-dev/ascf/framework/file-structure',
               {
                 type: 'category',
                 label: '配置',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/ascf/config/config'},
                 items: [
-                  'dev/atomic-dev/ascf/config/config',
                   'dev/atomic-dev/ascf/config/appjson-global-config',
                   'dev/atomic-dev/ascf/config/page-json-config',
                   'dev/atomic-dev/ascf/config/project-json-config',
@@ -142,7 +140,6 @@ const atomicSidebar = [
                 label: '视图层',
                 collapsed: true,
                 items: [
-                  'dev/atomic-dev/ascf/view-layer/view-layer',
                   'dev/atomic-dev/ascf/view-layer/view-layer-hxml',
                   'dev/atomic-dev/ascf/view-layer/view-layer-css',
                 ],
@@ -151,8 +148,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '逻辑层',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/ascf/logical-layer/logical-layer'},
                 items: [
-                  'dev/atomic-dev/ascf/logical-layer/logical-layer',
                   'dev/atomic-dev/ascf/logical-layer/logical-layer-js',
                   'dev/atomic-dev/ascf/logical-layer/logical-layer-app',
                   'dev/atomic-dev/ascf/logical-layer/logical-layer-page',
@@ -161,8 +158,8 @@ const atomicSidebar = [
                     type: 'category',
                     label: '事件系统',
                     collapsed: true,
+                    link: {type: 'doc', id: 'dev/atomic-dev/ascf/logical-layer-events/logical-layer-events'},
                     items: [
-                      'dev/atomic-dev/ascf/logical-layer-events/logical-layer-events',
                       'dev/atomic-dev/ascf/logical-layer-events/logical-layer-event-usage',
                       'dev/atomic-dev/ascf/logical-layer-events/logical-layer-event-responding-hjs',
                       'dev/atomic-dev/ascf/logical-layer-events/logical-layer-event-category',
@@ -178,14 +175,14 @@ const atomicSidebar = [
                 type: 'category',
                 label: '自定义组件',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/ascf/custom-components/custom-components'},
                 items: [
-                  'dev/atomic-dev/ascf/custom-components/custom-components',
                   {
                     type: 'category',
                     label: '介绍',
                     collapsed: true,
+                    link: {type: 'doc', id: 'dev/atomic-dev/ascf/custom-components-overview/custom-components-overview'},
                     items: [
-                      'dev/atomic-dev/ascf/custom-components-overview/custom-components-overview',
                       'dev/atomic-dev/ascf/custom-components-overview/custom-components-template',
                       'dev/atomic-dev/ascf/custom-components-overview/custom-components-hxml-slot',
                       'dev/atomic-dev/ascf/custom-components-overview/custom-components-style-isolation',
@@ -204,8 +201,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: 'hjs',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/ascf/hjs/hjs'},
                 items: [
-                  'dev/atomic-dev/ascf/hjs/hjs',
                   'dev/atomic-dev/ascf/hjs/hjs-responding-event',
                 ],
               },
@@ -217,14 +214,14 @@ const atomicSidebar = [
             type: 'category',
             label: '组件',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/ascf/components/components'},
             items: [
-              'dev/atomic-dev/ascf/components/components',
               {
                 type: 'category',
                 label: '视图容器',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/ascf/components-view-container/components-view-container'},
                 items: [
-                  'dev/atomic-dev/ascf/components-view-container/components-view-container',
                   'dev/atomic-dev/ascf/components-view-container/components-movable-area',
                   'dev/atomic-dev/ascf/components-view-container/components-movable-view',
                   'dev/atomic-dev/ascf/components-view-container/components-scroll-view',
@@ -239,8 +236,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '基础内容',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/ascf/components-basic-components/components-basic-components'},
                 items: [
-                  'dev/atomic-dev/ascf/components-basic-components/components-basic-components',
                   'dev/atomic-dev/ascf/components-basic-components/components-icon',
                   'dev/atomic-dev/ascf/components-basic-components/components-progress',
                   'dev/atomic-dev/ascf/components-basic-components/components-rich-text',
@@ -251,8 +248,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '表单组件',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/ascf/components-form-components/components-form-components'},
                 items: [
-                  'dev/atomic-dev/ascf/components-form-components/components-form-components',
                   'dev/atomic-dev/ascf/components-form-components/components-button',
                   'dev/atomic-dev/ascf/components-form-components/components-checkbox',
                   'dev/atomic-dev/ascf/components-form-components/components-checkbox-group',
@@ -275,7 +272,6 @@ const atomicSidebar = [
                 label: '导航',
                 collapsed: true,
                 items: [
-                  'dev/atomic-dev/ascf/components-navigation-components/components-navigation-components',
                   'dev/atomic-dev/ascf/components-navigation-components/components-navigator',
                 ],
               },
@@ -283,8 +279,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '媒体组件',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/ascf/components-media-components/components-media-components'},
                 items: [
-                  'dev/atomic-dev/ascf/components-media-components/components-media-components',
                   'dev/atomic-dev/ascf/components-media-components/components-image',
                   'dev/atomic-dev/ascf/components-media-components/components-video',
                   'dev/atomic-dev/ascf/components-media-components/components-camera',
@@ -296,7 +292,6 @@ const atomicSidebar = [
                 label: '地图',
                 collapsed: true,
                 items: [
-                  'dev/atomic-dev/ascf/components-map-components/components-map-components',
                   'dev/atomic-dev/ascf/components-map-components/components-map',
                 ],
               },
@@ -305,7 +300,6 @@ const atomicSidebar = [
                 label: '画布',
                 collapsed: true,
                 items: [
-                  'dev/atomic-dev/ascf/components-canvas-components/components-canvas-components',
                   'dev/atomic-dev/ascf/components-canvas-components/components-canvas',
                 ],
               },
@@ -315,7 +309,6 @@ const atomicSidebar = [
                 label: '开放能力',
                 collapsed: true,
                 items: [
-                  'dev/atomic-dev/ascf/components-open-capabilities/components-open-capabilities',
                   'dev/atomic-dev/ascf/components-open-capabilities/components-open-embedded-atomicservice',
                 ],
               },
@@ -325,14 +318,14 @@ const atomicSidebar = [
             type: 'category',
             label: 'API',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/ascf/apis/apis'},
             items: [
-              'dev/atomic-dev/ascf/apis/apis',
               {
                 type: 'category',
                 label: '基础',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/ascf/apis-basis/apis-basis'},
                 items: [
-                  'dev/atomic-dev/ascf/apis-basis/apis-basis',
                   'dev/atomic-dev/ascf/apis-basis/apis-caniuse',
                   'dev/atomic-dev/ascf/apis-basis/apis-system-info',
                   'dev/atomic-dev/ascf/apis-basis/apis-lifecycle',
@@ -351,8 +344,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '界面',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/ascf/apis-page/apis-page'},
                 items: [
-                  'dev/atomic-dev/ascf/apis-page/apis-page',
                   'dev/atomic-dev/ascf/apis-page/apis-interaction',
                   'dev/atomic-dev/ascf/apis-page/apis-navigation',
                   'dev/atomic-dev/ascf/apis-page/apis-tab-bar',
@@ -369,8 +362,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '网络',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/ascf/apis-network/apis-network'},
                 items: [
-                  'dev/atomic-dev/ascf/apis-network/apis-network',
                   'dev/atomic-dev/ascf/apis-network/apis-request',
                   'dev/atomic-dev/ascf/apis-network/apis-download',
                   'dev/atomic-dev/ascf/apis-network/apis-upload',
@@ -382,8 +375,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '媒体',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/ascf/apis-media/apis-media'},
                 items: [
-                  'dev/atomic-dev/ascf/apis-media/apis-media',
                   'dev/atomic-dev/ascf/apis-media/apis-map',
                   'dev/atomic-dev/ascf/apis-media/apis-image',
                   'dev/atomic-dev/ascf/apis-media/apis-video',
@@ -401,8 +394,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '开放接口',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/ascf/apis-open-apis/apis-open-apis'},
                 items: [
-                  'dev/atomic-dev/ascf/apis-open-apis/apis-open-apis',
                   'dev/atomic-dev/ascf/apis-open-apis/apis-account',
                   'dev/atomic-dev/ascf/apis-open-apis/apis-authorization',
                   'dev/atomic-dev/ascf/apis-open-apis/apis-setting',
@@ -421,8 +414,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '设备',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/ascf/apis-device/apis-device'},
                 items: [
-                  'dev/atomic-dev/ascf/apis-device/apis-device',
                   'dev/atomic-dev/ascf/apis-device/apis-network-type',
                   'dev/atomic-dev/ascf/apis-device/apis-telephony',
                   'dev/atomic-dev/ascf/apis-device/apis-device-orientation',
@@ -452,7 +445,6 @@ const atomicSidebar = [
                 label: 'AI',
                 collapsed: true,
                 items: [
-                  'dev/atomic-dev/ascf/apis-ai/apis-ai',
                   'dev/atomic-dev/ascf/apis-ai/apis-ai-face-liveness-detection',
                 ],
               },
@@ -464,14 +456,14 @@ const atomicSidebar = [
         type: 'category',
         label: '常见问题',
         collapsed: true,
+        link: {type: 'doc', id: 'dev/atomic-dev/ascf/faqs/faqs'},
         items: [
-          'dev/atomic-dev/ascf/faqs/faqs',
           {
             type: 'category',
             label: 'ASCF Plugin',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-ascf-plugin'},
             items: [
-              'dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-ascf-plugin',
               'dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-plugin-template-not-found',
               'dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-plugin-debugging-error',
               'dev/atomic-dev/ascf/faqs-ascf-plugin/faqs-plugin-not-upgraded',
@@ -483,8 +475,8 @@ const atomicSidebar = [
             type: 'category',
             label: 'ASCF Toolkit',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-ascf-toolkit'},
             items: [
-              'dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-ascf-toolkit',
               'dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-output-path-error',
               'dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-path-received-undefined',
               'dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-toolkit-build-profile-not-found',
@@ -506,8 +498,8 @@ const atomicSidebar = [
             type: 'category',
             label: 'ASCF运行时',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-ascf-runtime'},
             items: [
-              'dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-ascf-runtime',
               'dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-runtime-login-error',
               'dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-runtime-properties-not-defined',
               'dev/atomic-dev/ascf/faqs-ascf-runtime/faqs-runtime-hot-reload',
@@ -520,8 +512,8 @@ const atomicSidebar = [
             type: 'category',
             label: '其他问题',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/ascf/faqs-others/faqs-others'},
             items: [
-              'dev/atomic-dev/ascf/faqs-others/faqs-others',
               'dev/atomic-dev/ascf/faqs-others/faqs-others-agc-upload-errorcode9',
               'dev/atomic-dev/ascf/faqs-others/faqs-others-running-abnormally',
               'dev/atomic-dev/ascf/faqs-others/faqs-others-hot-reload',
@@ -537,8 +529,8 @@ const atomicSidebar = [
         type: 'category',
         label: '版本变更说明',
         collapsed: true,
+        link: {type: 'doc', id: 'dev/atomic-dev/ascf/ascf-release-note/ascf-release-note'},
         items: [
-          'dev/atomic-dev/ascf/ascf-release-note/ascf-release-note',
           'dev/atomic-dev/ascf/ascf-release-note/release-note-ascf-runtime',
           'dev/atomic-dev/ascf/ascf-release-note/release-note-ascf-plugin',
           'dev/atomic-dev/ascf/ascf-release-note/release-note-ascf-toolkit',
@@ -557,8 +549,8 @@ const atomicSidebar = [
         type: 'category',
         label: '元服务概述',
         collapsed: true,
+        link: {type: 'doc', id: 'dev/atomic-dev/atomic-service/atomic-service'},
         items: [
-          'dev/atomic-dev/atomic-service/atomic-service',
           'dev/atomic-dev/atomic-service/atomic-service-definition',
           'dev/atomic-dev/atomic-service/atomic-service-features',
           'dev/atomic-dev/atomic-service/atomic-service-package-basics',
@@ -569,8 +561,8 @@ const atomicSidebar = [
         type: 'category',
         label: '开发第一个元服务',
         collapsed: true,
+        link: {type: 'doc', id: 'dev/atomic-dev/develop-first-atomic-service/develop-first-atomic-service'},
         items: [
-          'dev/atomic-dev/develop-first-atomic-service/develop-first-atomic-service',
           'dev/atomic-dev/develop-first-atomic-service/atomic-service-start-overview',
           'dev/atomic-dev/develop-first-atomic-service/atomic-service-create-project',
           'dev/atomic-dev/develop-first-atomic-service/atomic-service-icon-generation',
@@ -583,21 +575,20 @@ const atomicSidebar = [
         type: 'category',
         label: '元服务开发指导',
         collapsed: true,
+        link: {type: 'doc', id: 'dev/atomic-dev/atomic-service-development/atomic-service-development'},
         items: [
-          'dev/atomic-dev/atomic-service-development/atomic-service-development',
           'dev/atomic-dev/atomic-service-development/atomic-dev-preparation',
           {
             type: 'category',
             label: '元服务框架开发',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/atomic-service-framework-development/atomic-service-framework-development'},
             items: [
-              'dev/atomic-dev/atomic-service-framework-development/atomic-service-framework-development',
               {
                 type: 'category',
                 label: '分包加载',
                 collapsed: true,
                 items: [
-                  'dev/atomic-dev/atomic-subpackage-loading/atomic-subpackage-loading',
                   'dev/atomic-dev/atomic-subpackage-loading/atomic-subcontract',
                   'dev/atomic-dev/atomic-subpackage-loading/atomic-preparing-for-loading',
                 ],
@@ -606,14 +597,14 @@ const atomicSidebar = [
                 type: 'category',
                 label: '跳转',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/atomic-service-routing/atomic-service-routing'},
                 items: [
-                  'dev/atomic-dev/atomic-service-routing/atomic-service-routing',
                   {
                     type: 'category',
                     label: 'Navigation路由跳转',
                     collapsed: true,
+                    link: {type: 'doc', id: 'dev/atomic-dev/atomic-navigation-routing/atomic-navigation-routing'},
                     items: [
-                      'dev/atomic-dev/atomic-navigation-routing/atomic-navigation-routing',
                       'dev/atomic-dev/atomic-navigation-routing/atomic-intra-module-page-routing',
                       'dev/atomic-dev/atomic-navigation-routing/atomic-inter-module-page-routing',
                     ],
@@ -623,7 +614,6 @@ const atomicSidebar = [
                     label: '使用App Linking跳转元服务',
                     collapsed: true,
                     items: [
-                      'dev/atomic-dev/atomic-linking/atomic-linking',
                       'dev/atomic-dev/atomic-linking/atomic-applinking',
                       'dev/atomic-dev/atomic-linking/atomic-qrlinking',
                     ],
@@ -638,8 +628,8 @@ const atomicSidebar = [
             type: 'category',
             label: 'UI开发',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/atomic-ui-development/atomic-ui-development'},
             items: [
-              'dev/atomic-dev/atomic-ui-development/atomic-ui-development',
               'dev/atomic-dev/atomic-ui-development/atomic-service-large-screen-adaptation',
             ],
           },
@@ -648,14 +638,14 @@ const atomicSidebar = [
             type: 'category',
             label: '基础能力开发',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/atomic-basic-capability-development/atomic-basic-capability-development'},
             items: [
-              'dev/atomic-dev/atomic-basic-capability-development/atomic-basic-capability-development',
               {
                 type: 'category',
                 label: '网络',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/atomic-network-development/atomic-network-development'},
                 items: [
-                  'dev/atomic-dev/atomic-network-development/atomic-network-development',
                   'dev/atomic-dev/atomic-network-development/atomic-net-mgmt-overview',
                   'dev/atomic-dev/atomic-network-development/atomic-http-request',
                   'dev/atomic-dev/atomic-network-development/atomic-net-connection-manager',
@@ -669,7 +659,6 @@ const atomicSidebar = [
                 label: '数据',
                 collapsed: true,
                 items: [
-                  'dev/atomic-dev/atomic-database/atomic-database',
                   'dev/atomic-dev/atomic-database/atomic-data-persistence-by-preferences',
                 ],
               },
@@ -677,14 +666,13 @@ const atomicSidebar = [
                 type: 'category',
                 label: '文件',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/atomic-file-development/atomic-file-development'},
                 items: [
-                  'dev/atomic-dev/atomic-file-development/atomic-file-development',
                   {
                     type: 'category',
                     label: '文件管理服务',
                     collapsed: true,
                     items: [
-                      'dev/atomic-dev/atomic-file-management-service/atomic-file-management-service',
                       'dev/atomic-dev/atomic-file-management-service/atomic-app-file-access',
                     ],
                   },
@@ -699,7 +687,6 @@ const atomicSidebar = [
                 label: '媒体库',
                 collapsed: true,
                 items: [
-                  'dev/atomic-dev/atomic-media-library-development/atomic-media-library-development',
                   'dev/atomic-dev/atomic-media-library-development/atomic-medialibrary-photoviewpicker',
                 ],
               },
@@ -707,8 +694,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '图片',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/atomic-image-development/atomic-image-development'},
                 items: [
-                  'dev/atomic-dev/atomic-image-development/atomic-image-development',
                   'dev/atomic-dev/atomic-image-development/atomic-image-overview',
                   'dev/atomic-dev/atomic-image-development/atomic-image-decoding',
                   'dev/atomic-dev/atomic-image-development/atomic-image-encoding',
@@ -719,7 +706,6 @@ const atomicSidebar = [
                 label: '窗口',
                 collapsed: true,
                 items: [
-                  'dev/atomic-dev/atomic-window-development/atomic-window-development',
                   'dev/atomic-dev/atomic-window-development/atomic-application-window',
                 ],
               },
@@ -727,15 +713,14 @@ const atomicSidebar = [
                 type: 'category',
                 label: '设备管理',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/atomic-device-management/atomic-device-management'},
                 items: [
-                  'dev/atomic-dev/atomic-device-management/atomic-device-management',
                   'dev/atomic-dev/atomic-device-management/atomic-sensorservice-kit-intro',
                   {
                     type: 'category',
                     label: '传感器',
                     collapsed: true,
                     items: [
-                      'dev/atomic-dev/atomic-sensor/atomic-sensor',
                       'dev/atomic-dev/atomic-sensor/atomic-sensor-overview',
                       'dev/atomic-dev/atomic-sensor/atomic-sensor-guidelines',
                     ],
@@ -744,8 +729,8 @@ const atomicSidebar = [
                     type: 'category',
                     label: '振动',
                     collapsed: true,
+                    link: {type: 'doc', id: 'dev/atomic-dev/atomic-vibrator/atomic-vibrator'},
                     items: [
-                      'dev/atomic-dev/atomic-vibrator/atomic-vibrator',
                       'dev/atomic-dev/atomic-vibrator/atomic-vibrator-overview',
                       'dev/atomic-dev/atomic-vibrator/atomic-vibrator-guidelines',
                     ],
@@ -757,13 +742,12 @@ const atomicSidebar = [
                 label: '基础通信',
                 collapsed: true,
                 items: [
-                  'dev/atomic-dev/atomic-connectivity/atomic-connectivity',
                   {
                     type: 'category',
                     label: '蓝牙',
                     collapsed: true,
+                    link: {type: 'doc', id: 'dev/atomic-dev/atomic-bluetooth/atomic-bluetooth'},
                     items: [
-                      'dev/atomic-dev/atomic-bluetooth/atomic-bluetooth',
                       'dev/atomic-dev/atomic-bluetooth/atomic-bluetooth-access',
                       'dev/atomic-dev/atomic-bluetooth/atomic-bluetooth-advertising',
                       'dev/atomic-dev/atomic-bluetooth/atomic-bluetooth-gatt',
@@ -773,8 +757,8 @@ const atomicSidebar = [
                     type: 'category',
                     label: 'NFC',
                     collapsed: true,
+                    link: {type: 'doc', id: 'dev/atomic-dev/atomic-nfc/atomic-nfc'},
                     items: [
-                      'dev/atomic-dev/atomic-nfc/atomic-nfc',
                       'dev/atomic-dev/atomic-nfc/atomic-nfc-tag-access-guide',
                       'dev/atomic-dev/atomic-nfc/atomic-nfc-hce-guide',
                     ],
@@ -786,7 +770,6 @@ const atomicSidebar = [
                 label: '联系人',
                 collapsed: true,
                 items: [
-                  'dev/atomic-dev/atomic-contacts/atomic-contacts',
                   'dev/atomic-dev/atomic-contacts/atomic-contacts-intro',
                 ],
               },
@@ -794,8 +777,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: 'Web',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/atomic-web-development/atomic-web-development'},
                 items: [
-                  'dev/atomic-dev/atomic-web-development/atomic-web-development',
                   'dev/atomic-dev/atomic-web-development/atomicserviceweb-guidelines',
                   'dev/atomic-dev/atomic-web-development/develop-atomicserviceenhancedweb',
                   'dev/atomic-dev/atomic-web-development/components-atomicserviceenhancedweb',
@@ -807,8 +790,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: 'AI能力',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/atomic-ai-development/atomic-ai-development'},
                 items: [
-                  'dev/atomic-dev/atomic-ai-development/atomic-ai-development',
                   'dev/atomic-dev/atomic-ai-development/atomic-vision-development',
                   'dev/atomic-dev/atomic-ai-development/atomic-intents-development',
                   'dev/atomic-dev/atomic-ai-development/atomic-agent-framework-development',
@@ -818,8 +801,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '运动健康',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/atomic-health-service-development/atomic-health-service-development'},
                 items: [
-                  'dev/atomic-dev/atomic-health-service-development/atomic-health-service-development',
                   'dev/atomic-dev/atomic-health-service-development/health-service-kit-ability-as',
                   'dev/atomic-dev/atomic-health-service-development/health-application-access-as',
                   'dev/atomic-dev/atomic-health-service-development/health-application-qualifications-as',
@@ -827,15 +810,15 @@ const atomicSidebar = [
                     type: 'category',
                     label: '开发接入',
                     collapsed: true,
+                    link: {type: 'doc', id: 'dev/atomic-dev/health-harmonyos-as/health-harmonyos-as'},
                     items: [
-                      'dev/atomic-dev/health-harmonyos-as/health-harmonyos-as',
                       'dev/atomic-dev/health-harmonyos-as/health-data-overview-as',
                       {
                         type: 'category',
                         label: '开发准备',
                         collapsed: true,
+                        link: {type: 'doc', id: 'dev/atomic-dev/health-preparations-as/health-preparations-as'},
                         items: [
-                          'dev/atomic-dev/health-preparations-as/health-preparations-as',
                           'dev/atomic-dev/health-preparations-as/health-apply-as',
                           'dev/atomic-dev/health-preparations-as/health-configuration-client-id-as',
                         ],
@@ -844,8 +827,8 @@ const atomicSidebar = [
                         type: 'category',
                         label: '应用开发',
                         collapsed: true,
+                        link: {type: 'doc', id: 'dev/atomic-dev/health-app-dev-as/health-app-dev-as'},
                         items: [
-                          'dev/atomic-dev/health-app-dev-as/health-app-dev-as',
                           'dev/atomic-dev/health-app-dev-as/health-add-permissions-as',
                           'dev/atomic-dev/health-app-dev-as/health-samplepoint-manage-as',
                           'dev/atomic-dev/health-app-dev-as/health-three-ring-read-as',
@@ -855,15 +838,14 @@ const atomicSidebar = [
                         type: 'category',
                         label: '数据类型',
                         collapsed: true,
+                        link: {type: 'doc', id: 'dev/atomic-dev/health-data-type-as/health-data-type-as'},
                         items: [
-                          'dev/atomic-dev/health-data-type-as/health-data-type-as',
                           'dev/atomic-dev/health-data-type-as/health-permission-description-as',
                           {
                             type: 'category',
                             label: '采样数据',
                             collapsed: true,
                             items: [
-                              'dev/atomic-dev/health-samplepoint-as/health-samplepoint-as',
                               'dev/atomic-dev/health-samplepoint-as/health-daily-activities-as',
                             ],
                           },
@@ -878,7 +860,6 @@ const atomicSidebar = [
                     label: '附录',
                     collapsed: true,
                     items: [
-                      'dev/atomic-dev/health-appendix-as/health-appendix-as',
                       'dev/atomic-dev/health-appendix-as/health-logo-usage-regulations-as',
                     ],
                   },
@@ -889,8 +870,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '安全',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/atomic-security-development/atomic-security-development'},
                 items: [
-                  'dev/atomic-dev/atomic-security-development/atomic-security-development',
                   'dev/atomic-dev/atomic-security-development/atomic-huks-guidelines',
                   'dev/atomic-dev/atomic-security-development/atomic-online-auth-development',
                   'dev/atomic-dev/atomic-security-development/atomic-cryptoframework-guidelines',
@@ -900,16 +881,16 @@ const atomicSidebar = [
                     type: 'category',
                     label: '设备安全',
                     collapsed: true,
+                    link: {type: 'doc', id: 'dev/atomic-dev/atomic-device-security-development/atomic-device-security-development'},
                     items: [
-                      'dev/atomic-dev/atomic-device-security-development/atomic-device-security-development',
                       'dev/atomic-dev/atomic-device-security-development/atomic-devicesecurity-introduction',
                       'dev/atomic-dev/atomic-device-security-development/atomic-devicesecurity-quota',
                       {
                         type: 'category',
                         label: '开发准备',
                         collapsed: true,
+                        link: {type: 'doc', id: 'dev/atomic-dev/atomic-devicesecurity-prepare/atomic-devicesecurity-prepare'},
                         items: [
-                          'dev/atomic-dev/atomic-devicesecurity-prepare/atomic-devicesecurity-prepare',
                           'dev/atomic-dev/atomic-devicesecurity-prepare/atomic-devicesecurity-deviceverify-activateservice',
                           'dev/atomic-dev/atomic-devicesecurity-prepare/atomic-devicesecurity-deviceverify-token',
                         ],
@@ -919,8 +900,8 @@ const atomicSidebar = [
                         type: 'category',
                         label: '安全检测',
                         collapsed: true,
+                        link: {type: 'doc', id: 'dev/atomic-dev/atomic-devicesecurity-safetydetect-develop/atomic-devicesecurity-safetydetect-develop'},
                         items: [
-                          'dev/atomic-dev/atomic-devicesecurity-safetydetect-develop/atomic-devicesecurity-safetydetect-develop',
                           'dev/atomic-dev/atomic-devicesecurity-safetydetect-develop/atomic-devicesecurity-sysintegrityenhanced-check',
                           'dev/atomic-dev/atomic-devicesecurity-safetydetect-develop/atomic-devicesecurity-sysintegrity-check',
                           'dev/atomic-dev/atomic-devicesecurity-safetydetect-develop/atomic-devicesecurity-urlthreat-check',
@@ -930,15 +911,15 @@ const atomicSidebar = [
                         type: 'category',
                         label: '可信app-services',
                         collapsed: true,
+                        link: {type: 'doc', id: 'dev/atomic-dev/atomic-devicesecurity-taas-dev/atomic-devicesecurity-taas-dev'},
                         items: [
-                          'dev/atomic-dev/atomic-devicesecurity-taas-dev/atomic-devicesecurity-taas-dev',
                           'dev/atomic-dev/atomic-devicesecurity-taas-dev/atomic-devicesecurity-taas-securelocation',
                           {
                             type: 'category',
                             label: '签名验证',
                             collapsed: true,
+                            link: {type: 'doc', id: 'dev/atomic-dev/atomic-devicesecurity-taas-verify/atomic-devicesecurity-taas-verify'},
                             items: [
-                              'dev/atomic-dev/atomic-devicesecurity-taas-verify/atomic-devicesecurity-taas-verify',
                               'dev/atomic-dev/atomic-devicesecurity-taas-verify/atomic-devicesecurity-taas-verifycertchain',
                               'dev/atomic-dev/atomic-devicesecurity-taas-verify/atomic-devicesecurity-taas-verifysignature',
                             ],
@@ -950,7 +931,6 @@ const atomicSidebar = [
                         label: '附录',
                         collapsed: true,
                         items: [
-                          'dev/atomic-dev/atomic-devicesecurity-appendix/atomic-devicesecurity-appendix',
                           'dev/atomic-dev/atomic-devicesecurity-appendix/atomic-devicesecurity-appendix-region',
                         ],
                       },
@@ -960,15 +940,15 @@ const atomicSidebar = [
                     type: 'category',
                     label: '内容风控服务',
                     collapsed: true,
+                    link: {type: 'doc', id: 'dev/atomic-dev/content-moderation-service/content-moderation-service'},
                     items: [
-                      'dev/atomic-dev/content-moderation-service/content-moderation-service',
                       'dev/atomic-dev/content-moderation-service/content-moderation-service-intro',
                       {
                         type: 'category',
                         label: '开发准备',
                         collapsed: true,
+                        link: {type: 'doc', id: 'dev/atomic-dev/content-moderation-service-prep/content-moderation-service-prep'},
                         items: [
-                          'dev/atomic-dev/content-moderation-service-prep/content-moderation-service-prep',
                           'dev/atomic-dev/content-moderation-service-prep/content-moderation-service-prep-enable',
                           'dev/atomic-dev/content-moderation-service-prep/content-moderation-service-prep-connector-create',
                         ],
@@ -985,8 +965,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '日志',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/atomic-log-development/atomic-log-development'},
                 items: [
-                  'dev/atomic-dev/atomic-log-development/atomic-log-development',
                   'dev/atomic-dev/atomic-log-development/atomic-hiappevent-guidelines',
                   'dev/atomic-dev/atomic-log-development/atomic-hilog-development',
                 ],
@@ -999,22 +979,22 @@ const atomicSidebar = [
             type: 'category',
             label: '经营履约能力开发',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/operations-fulfillment-capability-development/operations-fulfillment-capability-development'},
             items: [
-              'dev/atomic-dev/operations-fulfillment-capability-development/operations-fulfillment-capability-development',
               {
                 type: 'category',
                 label: '账号',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/atomic-account-development/atomic-account-development'},
                 items: [
-                  'dev/atomic-dev/atomic-account-development/atomic-account-development',
                   'dev/atomic-dev/atomic-account-development/account-guide-atomic-introduction',
                   'dev/atomic-dev/atomic-account-development/account-guide-atomic-detailedrules',
                   {
                     type: 'category',
                     label: '开发准备',
                     collapsed: true,
+                    link: {type: 'doc', id: 'dev/atomic-dev/account-guide-atomic-preparations/account-guide-atomic-preparations'},
                     items: [
-                      'dev/atomic-dev/account-guide-atomic-preparations/account-guide-atomic-preparations',
                       'dev/atomic-dev/account-guide-atomic-preparations/account-guide-atomic-permissions',
                       'dev/atomic-dev/account-guide-atomic-preparations/account-atomic-sign-fingerprints',
                       'dev/atomic-dev/account-guide-atomic-preparations/account-atomic-client-id',
@@ -1025,15 +1005,15 @@ const atomicSidebar = [
                     type: 'category',
                     label: '获取华为账号用户信息',
                     collapsed: true,
+                    link: {type: 'doc', id: 'dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-get-user-info'},
                     items: [
-                      'dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-get-user-info',
                       'dev/atomic-dev/account-guide-atomic-get-user-info/account-guide-atomic-get-user-info-overview',
                       {
                         type: 'category',
                         label: '获取头像昵称',
                         collapsed: true,
+                        link: {type: 'doc', id: 'dev/atomic-dev/account-guide-atomic-get-avatar-nickname/account-guide-atomic-get-avatar-nickname'},
                         items: [
-                          'dev/atomic-dev/account-guide-atomic-get-avatar-nickname/account-guide-atomic-get-avatar-nickname',
                           'dev/atomic-dev/account-guide-atomic-get-avatar-nickname/account-guide-atomic-get-avatar-nickname-overview',
                           'dev/atomic-dev/account-guide-atomic-get-avatar-nickname/account-guide-atomic-get-avatar-nickname-api',
                           'dev/atomic-dev/account-guide-atomic-get-avatar-nickname/account-guide-atomic-get-avatar-nickname-button',
@@ -1043,8 +1023,8 @@ const atomicSidebar = [
                         type: 'category',
                         label: '获取手机号',
                         collapsed: true,
+                        link: {type: 'doc', id: 'dev/atomic-dev/account-guide-atomic-get-phone/account-guide-atomic-get-phone'},
                         items: [
-                          'dev/atomic-dev/account-guide-atomic-get-phone/account-guide-atomic-get-phone',
                           'dev/atomic-dev/account-guide-atomic-get-phone/account-guide-atomic-get-phone-overview',
                           'dev/atomic-dev/account-guide-atomic-get-phone/account-guide-atomic-get-phonenumber',
                         ],
@@ -1058,23 +1038,23 @@ const atomicSidebar = [
                     type: 'category',
                     label: '未成年人模式',
                     collapsed: true,
+                    link: {type: 'doc', id: 'dev/atomic-dev/account-guide-atomic-minorsprotection/account-guide-atomic-minorsprotection'},
                     items: [
-                      'dev/atomic-dev/account-guide-atomic-minorsprotection/account-guide-atomic-minorsprotection',
                       'dev/atomic-dev/account-guide-atomic-minorsprotection/account-guide-atomic-overview-minorsprotection',
                       {
                         type: 'category',
                         label: '元服务与系统实现未成年人模式联动',
                         collapsed: true,
+                        link: {type: 'doc', id: 'dev/atomic-dev/account-follow-atomic-minorsprotection/account-follow-atomic-minorsprotection'},
                         items: [
-                          'dev/atomic-dev/account-follow-atomic-minorsprotection/account-follow-atomic-minorsprotection',
                           'dev/atomic-dev/account-follow-atomic-minorsprotection/account-system-atomic-minorsprotection',
                           'dev/atomic-dev/account-follow-atomic-minorsprotection/account-atomic-turn-on-minorsprotection',
                           {
                             type: 'category',
                             label: '元服务内关闭未成年人模式',
                             collapsed: true,
+                            link: {type: 'doc', id: 'dev/atomic-dev/account-atomic-turn-off-minorsprotection/account-atomic-turn-off-minorsprotection'},
                             items: [
-                              'dev/atomic-dev/account-atomic-turn-off-minorsprotection/account-atomic-turn-off-minorsprotection',
                               'dev/atomic-dev/account-atomic-turn-off-minorsprotection/account-atomicself-turn-off-minorsprotection',
                               'dev/atomic-dev/account-atomic-turn-off-minorsprotection/account-system-turn-off-atomic-minorsprotection',
                             ],
@@ -1093,16 +1073,16 @@ const atomicSidebar = [
                 type: 'category',
                 label: '推送',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/atomic-push-development/atomic-push-development'},
                 items: [
-                  'dev/atomic-dev/atomic-push-development/atomic-push-development',
                   'dev/atomic-dev/atomic-push-development/push-as-intro',
                   'dev/atomic-dev/atomic-push-development/push-as-prepare',
                   {
                     type: 'category',
                     label: '推送基于账号的服务通知订阅消息',
                     collapsed: true,
+                    link: {type: 'doc', id: 'dev/atomic-dev/push-as-subscription/push-as-subscription'},
                     items: [
-                      'dev/atomic-dev/push-as-subscription/push-as-subscription',
                       'dev/atomic-dev/push-as-subscription/push-as-service-noti',
                       'dev/atomic-dev/push-as-subscription/push-as-service-self',
                       'dev/atomic-dev/push-as-subscription/push-as-request-sub',
@@ -1117,8 +1097,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '扫码',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/atomic-code-scan-development/atomic-code-scan-development'},
                 items: [
-                  'dev/atomic-dev/atomic-code-scan-development/atomic-code-scan-development',
                   'dev/atomic-dev/atomic-code-scan-development/atomic-scan-introduction',
                   'dev/atomic-dev/atomic-code-scan-development/atomic-scan-config-agc',
                   'dev/atomic-dev/atomic-code-scan-development/atomic-scan-default-mode',
@@ -1126,8 +1106,8 @@ const atomicSidebar = [
                     type: 'category',
                     label: '码图生成',
                     collapsed: true,
+                    link: {type: 'doc', id: 'dev/atomic-dev/atomic-scan-generate/atomic-scan-generate'},
                     items: [
-                      'dev/atomic-dev/atomic-scan-generate/atomic-scan-generate',
                       'dev/atomic-dev/atomic-scan-generate/atomic-scan-barcodegenerate',
                       'dev/atomic-dev/atomic-scan-generate/atomic-scan-generatearray',
                     ],
@@ -1143,16 +1123,16 @@ const atomicSidebar = [
                 type: 'category',
                 label: '广告',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/ads-kit-atomicservice/ads-kit-atomicservice'},
                 items: [
-                  'dev/atomic-dev/ads-kit-atomicservice/ads-kit-atomicservice',
                   'dev/atomic-dev/ads-kit-atomicservice/atomic-ads-introduction',
                   'dev/atomic-dev/ads-kit-atomicservice/development-preparation',
                   {
                     type: 'category',
                     label: '流量变现服务开发',
                     collapsed: true,
+                    link: {type: 'doc', id: 'dev/atomic-dev/atomic-ads-publisher-service-dev/atomic-ads-publisher-service-dev'},
                     items: [
-                      'dev/atomic-dev/atomic-ads-publisher-service-dev/atomic-ads-publisher-service-dev',
                       'dev/atomic-dev/atomic-ads-publisher-service-dev/atomic-ads-publisher-service-dev-overview',
                       'dev/atomic-dev/atomic-ads-publisher-service-dev/atomic-ads-publisher-service-banner',
                       'dev/atomic-dev/atomic-ads-publisher-service-dev/atomic-ads-publisher-service-native',
@@ -1169,15 +1149,15 @@ const atomicSidebar = [
                 type: 'category',
                 label: '场景化组件',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/atomic-scenariofusion-development/atomic-scenariofusion-development'},
                 items: [
-                  'dev/atomic-dev/atomic-scenariofusion-development/atomic-scenariofusion-development',
                   'dev/atomic-dev/atomic-scenariofusion-development/scenario-fusion-atomic-introduction',
                   {
                     type: 'category',
                     label: '场景化Button',
                     collapsed: true,
+                    link: {type: 'doc', id: 'dev/atomic-dev/scenario-fusion-atomic-button/scenario-fusion-atomic-button'},
                     items: [
-                      'dev/atomic-dev/scenario-fusion-atomic-button/scenario-fusion-atomic-button',
                       'dev/atomic-dev/scenario-fusion-atomic-button/scenario-fusion-button-atomic-getservicecode',
                       'dev/atomic-dev/scenario-fusion-atomic-button/scenario-fusion-button-atomic-service-share',
                       'dev/atomic-dev/scenario-fusion-atomic-button/scenario-fusion-button-atomic-feedback',
@@ -1189,8 +1169,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '应用市场',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/atomic-appgallery-development/atomic-appgallery-development'},
                 items: [
-                  'dev/atomic-dev/atomic-appgallery-development/atomic-appgallery-development',
                   'dev/atomic-dev/atomic-appgallery-development/atomic-appgallery-introduction',
                   'dev/atomic-dev/atomic-appgallery-development/atomic-appgallery-update',
                 ],
@@ -1201,14 +1181,14 @@ const atomicSidebar = [
             type: 'category',
             label: '应用和元服务可复用设计',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/app-atomic-service-reusable/app-atomic-service-reusable'},
             items: [
-              'dev/atomic-dev/app-atomic-service-reusable/app-atomic-service-reusable',
               {
                 type: 'category',
                 label: '开发态可复用设计',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/reusable-develop-state/reusable-develop-state'},
                 items: [
-                  'dev/atomic-dev/reusable-develop-state/reusable-develop-state',
                   'dev/atomic-dev/reusable-develop-state/reusable-develop-state-design',
                   'dev/atomic-dev/reusable-develop-state/reusable-develop-state-develop',
                 ],
@@ -1217,8 +1197,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '运行态可复用设计',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/reusable-runtime-state/reusable-runtime-state'},
                 items: [
-                  'dev/atomic-dev/reusable-runtime-state/reusable-runtime-state',
                   'dev/atomic-dev/reusable-runtime-state/reusable-runtime-state-design',
                   'dev/atomic-dev/reusable-runtime-state/reusable-runtime-state-develop',
                 ],
@@ -1231,8 +1211,8 @@ const atomicSidebar = [
         type: 'category',
         label: '运行调试元服务',
         collapsed: true,
+        link: {type: 'doc', id: 'dev/atomic-dev/atomic-running-debugging/atomic-running-debugging'},
         items: [
-          'dev/atomic-dev/atomic-running-debugging/atomic-running-debugging',
           'dev/atomic-dev/atomic-running-debugging/atomic-service-appanalyzer',
           'dev/atomic-dev/atomic-running-debugging/atomic-service-check',
         ],
@@ -1241,15 +1221,15 @@ const atomicSidebar = [
         type: 'category',
         label: '元服务核准（备案）',
         collapsed: true,
+        link: {type: 'doc', id: 'dev/atomic-dev/atomic-service-filing/atomic-service-filing'},
         items: [
-          'dev/atomic-dev/atomic-service-filing/atomic-service-filing',
           'dev/atomic-dev/atomic-service-filing/atomic-service-filing-preparation',
           {
             type: 'category',
             label: '在华为云核准（备案）系统备案',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/atomic-service-cloud/atomic-service-cloud'},
             items: [
-              'dev/atomic-dev/atomic-service-cloud/atomic-service-cloud',
               'dev/atomic-dev/atomic-service-cloud/atomic-service-filing-first',
               'dev/atomic-dev/atomic-service-cloud/atomic-service-filing-internet-info',
               'dev/atomic-dev/atomic-service-cloud/atomic-service-filing-transfer',
@@ -1266,22 +1246,22 @@ const atomicSidebar = [
         type: 'category',
         label: '服务直达支持元服务',
         collapsed: true,
+        link: {type: 'doc', id: 'dev/atomic-dev/instant-service/instant-service'},
         items: [
-          'dev/atomic-dev/instant-service/instant-service',
           'dev/atomic-dev/instant-service/instant-service-overview',
           'dev/atomic-dev/instant-service/instant-service-role-permissions',
           {
             type: 'category',
             label: '通过界面接入服务直达',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/instant-service-gui/instant-service-gui'},
             items: [
-              'dev/atomic-dev/instant-service-gui/instant-service-gui',
               {
                 type: 'category',
                 label: '门店',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/instant-service-store/instant-service-store'},
                 items: [
-                  'dev/atomic-dev/instant-service-store/instant-service-store',
                   'dev/atomic-dev/instant-service-store/instant-service-store-batch-create',
                   'dev/atomic-dev/instant-service-store/instant-service-store-batch-update',
                   'dev/atomic-dev/instant-service-store/instant-service-store-cover-management',
@@ -1294,8 +1274,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '子服务',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/instant-service-items/instant-service-items'},
                 items: [
-                  'dev/atomic-dev/instant-service-items/instant-service-items',
                   'dev/atomic-dev/instant-service-items/instant-service-items-create-pers',
                   'dev/atomic-dev/instant-service-items/preview-sub-service-card',
                   'dev/atomic-dev/instant-service-items/instant-service-items-update',
@@ -1310,8 +1290,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '服务卡片（FormKit）',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/instant-service-formkit/instant-service-formkit'},
                 items: [
-                  'dev/atomic-dev/instant-service-formkit/instant-service-formkit',
                   'dev/atomic-dev/instant-service-formkit/instant-service-formkit-create',
                   'dev/atomic-dev/instant-service-formkit/instant-service-formkit-preview',
                   'dev/atomic-dev/instant-service-formkit/instant-service-formkit-update',
@@ -1322,8 +1302,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '商品',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/instant-service-offerings/instant-service-offerings'},
                 items: [
-                  'dev/atomic-dev/instant-service-offerings/instant-service-offerings',
                   'dev/atomic-dev/instant-service-offerings/instant-service-offerings-batch-create',
                   'dev/atomic-dev/instant-service-offerings/instant-service-offerings-batch-update',
                   'dev/atomic-dev/instant-service-offerings/instant-service-offerings-batch-export',
@@ -1337,22 +1317,22 @@ const atomicSidebar = [
             type: 'category',
             label: '通过API接入服务直达',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/instant-service-apis/instant-service-apis'},
             items: [
-              'dev/atomic-dev/instant-service-apis/instant-service-apis',
               {
                 type: 'category',
                 label: '入门指引',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/instant-service-getting-started/instant-service-getting-started'},
                 items: [
-                  'dev/atomic-dev/instant-service-getting-started/instant-service-getting-started',
                   'dev/atomic-dev/instant-service-getting-started/instant-service-service-providers',
                   'dev/atomic-dev/instant-service-getting-started/instant-service-merchants',
                   {
                     type: 'category',
                     label: '配置接口访问凭证',
                     collapsed: true,
+                    link: {type: 'doc', id: 'dev/atomic-dev/instant-service-access-credentials/instant-service-access-credentials'},
                     items: [
-                      'dev/atomic-dev/instant-service-access-credentials/instant-service-access-credentials',
                       'dev/atomic-dev/instant-service-access-credentials/instant-service-provider-authentication',
                       'dev/atomic-dev/instant-service-access-credentials/instant-service-merchant-authentication',
                     ],
@@ -1364,7 +1344,6 @@ const atomicSidebar = [
                 label: '图片管理',
                 collapsed: true,
                 items: [
-                  'dev/atomic-dev/instant-service-image-management/instant-service-image-management',
                   'dev/atomic-dev/instant-service-image-management/instant-service-image-upload',
                 ],
               },
@@ -1372,8 +1351,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '门店管理',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/instant-service-store-management/instant-service-store-management'},
                 items: [
-                  'dev/atomic-dev/instant-service-store-management/instant-service-store-management',
                   'dev/atomic-dev/instant-service-store-management/instant-service-store-process',
                   'dev/atomic-dev/instant-service-store-management/instant-service-store-create',
                   'dev/atomic-dev/instant-service-store-management/instant-service-store-query',
@@ -1386,8 +1365,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '商品管理',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-management'},
                 items: [
-                  'dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-management',
                   'dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-process',
                   'dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-create',
                   'dev/atomic-dev/instant-service-offerings-management/instant-service-offerings-query',
@@ -1411,7 +1390,6 @@ const atomicSidebar = [
             label: '获取跳转链接',
             collapsed: true,
             items: [
-              'dev/atomic-dev/instant-service-jump-link/instant-service-jump-link',
               'dev/atomic-dev/instant-service-jump-link/instant-service-jump-link-want',
             ],
           },
@@ -1422,21 +1400,20 @@ const atomicSidebar = [
         label: '服务直达支持应用',
         collapsed: true,
         items: [
-          'dev/atomic-dev/instant-service-app/instant-service-app',
           {
             type: 'category',
             label: '通过界面接入服务直达',
             collapsed: true,
+            link: {type: 'doc', id: 'dev/atomic-dev/instant-service-app-gui/instant-service-app-gui'},
             items: [
-              'dev/atomic-dev/instant-service-app-gui/instant-service-app-gui',
               'dev/atomic-dev/instant-service-app-gui/instant-service-app-gui-overview',
               'dev/atomic-dev/instant-service-app-gui/instant-service-app-role-permissions',
               {
                 type: 'category',
                 label: '门店',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/instant-service-app-store/instant-service-app-store'},
                 items: [
-                  'dev/atomic-dev/instant-service-app-store/instant-service-app-store',
                   'dev/atomic-dev/instant-service-app-store/instant-service-app-store-batch-create',
                   'dev/atomic-dev/instant-service-app-store/instant-service-app-store-batch-export',
                   'dev/atomic-dev/instant-service-app-store/instant-service-app-store-batch-update',
@@ -1448,8 +1425,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '子服务',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/instant-service-app-items/instant-service-app-items'},
                 items: [
-                  'dev/atomic-dev/instant-service-app-items/instant-service-app-items',
                   'dev/atomic-dev/instant-service-app-items/instant-service-app-items-create-pers',
                   'dev/atomic-dev/instant-service-app-items/instant-service-app-items-preview',
                   'dev/atomic-dev/instant-service-app-items/instant-service-app-items-update',
@@ -1462,8 +1439,8 @@ const atomicSidebar = [
                 type: 'category',
                 label: '商品',
                 collapsed: true,
+                link: {type: 'doc', id: 'dev/atomic-dev/instant-service-app-offerings/instant-service-app-offerings'},
                 items: [
-                  'dev/atomic-dev/instant-service-app-offerings/instant-service-app-offerings',
                   'dev/atomic-dev/instant-service-app-offerings/instant-service-app-offerings-batch-create',
                   'dev/atomic-dev/instant-service-app-offerings/instant-service-app-offerings-batch-update',
                   'dev/atomic-dev/instant-service-app-offerings/instant-service-app-offerings-batch-export',
@@ -1479,8 +1456,8 @@ const atomicSidebar = [
         type: 'category',
         label: '元服务规范',
         collapsed: true,
+        link: {type: 'doc', id: 'dev/atomic-dev/atomic-service-specifications/atomic-service-specifications'},
         items: [
-          'dev/atomic-dev/atomic-service-specifications/atomic-service-specifications',
           'dev/atomic-dev/atomic-service-specifications/atomic-service-ecosystem-operations',
           'dev/atomic-dev/atomic-service-specifications/atomic-service-naming-conversion',
         ],

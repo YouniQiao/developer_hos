@@ -1,9 +1,16 @@
 ---
 title: "批量导出门店"
-original_url: /docs/dev/atomic-dev/instant-service-store/instant-service-store-batch-export
-format: md
-upstream_id: dev/atomic-dev/instant-service-store/instant-service-store-batch-export
-last_sync: 2026-06-07
-sync_hash: 4d312e7a
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-batch-export
 ---
-# 批量导出门店
+
+1. 在服务直达主界面，选择“门店管理”页签，根据门店状态或门店名称/编码筛选出需要导出的门店。
+
+   ![](./img/a2ca7434.png "点击放大")
+2. 点击“导出”。
+   * 没有勾选项时，点击“导出”可导出全部门店。
+   * 存在已勾选的门店时，点击“导出”仅导出已勾选门店。
+
+   ![](./img/b0e4a6d9.png "点击放大")
+3. 导出完成后，点击“任务管理”，下载导出结果。
+
+   ![](./img/e98671d7.png "点击放大")

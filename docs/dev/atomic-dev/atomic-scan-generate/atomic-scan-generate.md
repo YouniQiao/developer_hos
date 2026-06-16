@@ -1,10 +1,7 @@
 ---
 title: "码图生成"
-original_url: /docs/dev/atomic-dev/atomic-scan-generate/atomic-scan-generate
-format: md
-upstream_id: dev/atomic-dev/atomic-scan-generate/atomic-scan-generate
-last_sync: 2026-06-07
-sync_hash: 7d0d370f
-upstream_status: upstream_deleted_pending
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scan-generate
 ---
-# 码图生成
+
+* **[通过文本生成码图](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scan-barcodegenerate)**
+* **[通过字节数组生成码图](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-scan-generatearray)**

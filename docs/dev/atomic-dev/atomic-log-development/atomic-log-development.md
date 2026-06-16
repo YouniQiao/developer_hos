@@ -1,9 +1,7 @@
 ---
 title: "日志"
-original_url: /docs/dev/atomic-dev/atomic-log-development/atomic-log-development
-format: md
-upstream_id: dev/atomic-dev/atomic-log-development/atomic-log-development
-last_sync: 2026-06-07
-sync_hash: 2d830cfe
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-log-development
 ---
-# 日志
+
+* **[应用事件打点开发指导](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-hiappevent-guidelines)**
+* **[HiLog开发指导](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-hilog-development)**

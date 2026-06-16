@@ -1,12 +1,7 @@
 ---
 title: "运行态可复用设计"
-original_url: /docs/dev/atomic-dev/reusable-runtime-state/reusable-runtime-state
-format: md
-upstream_id: dev/atomic-dev/reusable-runtime-state/reusable-runtime-state
-last_sync: 2026-06-07
-sync_hash: 26468478
-upstream_hash: 52605f4bfbb9
-upstream_status: upstream_deleted_pending
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/reusable-runtime-state
 ---
 
-# 运行态可复用设计
+* **[方案设计](https://developer.huawei.com/consumer/cn/doc/atomic-guides/reusable-runtime-state-design)**
+* **[开发指导](https://developer.huawei.com/consumer/cn/doc/atomic-guides/reusable-runtime-state-develop)**

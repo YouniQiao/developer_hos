@@ -1,9 +1,10 @@
 ---
 title: "角色权限"
-original_url: /docs/dev/atomic-dev/instant-service/instant-service-role-permissions
-format: md
-upstream_id: dev/atomic-dev/instant-service/instant-service-role-permissions
-last_sync: 2026-06-07
-sync_hash: 9127d3ec
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-role-permissions
 ---
-# 角色权限
+
+1.登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“用户与访问”。
+
+2.在“用户>所有用户”，点击新增，前往添加团队成员，且需要分配应用市场开发或者运营权限。
+
+![](./img/60da6d2a.png "点击放大")

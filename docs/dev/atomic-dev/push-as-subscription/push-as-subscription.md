@@ -1,10 +1,9 @@
 ---
 title: "推送基于账号的服务通知订阅消息"
-original_url: /docs/dev/atomic-dev/push-as-subscription/push-as-subscription
-format: md
-upstream_id: dev/atomic-dev/push-as-subscription/push-as-subscription
-last_sync: 2026-06-07
-sync_hash: b6445c4a
-upstream_status: upstream_deleted_pending
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-subscription
 ---
-# 推送基于账号的服务通知订阅消息
+
+* **[开通服务通知并选用订阅模板](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-service-noti)**
+* **[自助测试和自助分析](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-service-self)**
+* **[发起基于账号的订阅请求](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-request-sub)**
+* **[推送基于账号的订阅消息](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-send-sub-noti)**

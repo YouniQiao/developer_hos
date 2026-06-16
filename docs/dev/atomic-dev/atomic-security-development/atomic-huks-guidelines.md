@@ -1,9 +1,10 @@
 ---
 title: "密钥管理"
-original_url: /docs/dev/atomic-dev/atomic-security-development/atomic-huks-guidelines
-format: md
-upstream_id: dev/atomic-dev/atomic-security-development/atomic-huks-guidelines
-last_sync: 2026-06-07
-sync_hash: 14783544
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-huks-guidelines
 ---
-# 密钥管理
+
+元服务密钥管理的开发方式与传统应用密钥管理的开发方式相同，详见[密钥管理服务开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/huks-overview)。
+
+![](./img/7c0a7fae.png)
+
+元服务仅支持使用ArkTS的接口及其开发指导。

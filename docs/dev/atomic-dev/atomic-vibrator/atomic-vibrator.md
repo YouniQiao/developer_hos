@@ -1,9 +1,7 @@
 ---
 title: "振动"
-original_url: /docs/dev/atomic-dev/atomic-vibrator/atomic-vibrator
-format: md
-upstream_id: dev/atomic-dev/atomic-vibrator/atomic-vibrator
-last_sync: 2026-06-07
-sync_hash: fe5cf6ef
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-vibrator
 ---
-# 振动
+
+* **[振动开发概述](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-vibrator-overview)**
+* **[振动开发指导](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-vibrator-guidelines)**

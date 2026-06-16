@@ -1,10 +1,7 @@
 ---
 title: "开发态可复用设计"
-original_url: /docs/dev/atomic-dev/reusable-develop-state/reusable-develop-state
-format: md
-upstream_id: dev/atomic-dev/reusable-develop-state/reusable-develop-state
-last_sync: 2026-06-07
-sync_hash: b83e4b27
-upstream_status: upstream_deleted_pending
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/reusable-develop-state
 ---
-# 开发态可复用设计
+
+* **[方案设计](https://developer.huawei.com/consumer/cn/doc/atomic-guides/reusable-develop-state-design)**
+* **[开发指导](https://developer.huawei.com/consumer/cn/doc/atomic-guides/reusable-develop-state-develop)**

@@ -1,9 +1,7 @@
 ---
 title: "开发准备"
-original_url: /docs/dev/atomic-dev/health-preparations-as/health-preparations-as
-format: md
-upstream_id: dev/atomic-dev/health-preparations-as/health-preparations-as
-last_sync: 2026-06-07
-sync_hash: 4343f7eb
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-preparations-as
 ---
-# 开发准备
+
+* **[申请运动健康服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-apply-as)**
+* **[配置Client ID](https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-configuration-client-id-as)**

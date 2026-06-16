@@ -1,9 +1,7 @@
 ---
 title: "跳转"
-original_url: /docs/dev/atomic-dev/atomic-service-routing/atomic-service-routing
-format: md
-upstream_id: dev/atomic-dev/atomic-service-routing/atomic-service-routing
-last_sync: 2026-06-07
-sync_hash: 7201519c
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-service-routing
 ---
-# 跳转
+
+* **[Navigation路由跳转](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-navigation-routing)**
+* **[使用App Linking跳转元服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-linking)**

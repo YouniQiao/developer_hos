@@ -1,14 +1,14 @@
 // @ts-check
-// Dev sidebar — DevEco Code/CLI + 跨平台框架预览。
+// Dev sidebar — 跨平台框架 + 元服务开发 预览。
 
-const devecoCodeSidebar = require('./sidebars-tools.js').devecoCodeSidebar;
+const crossPlatformSidebar = [
+  'resources/cross-platform/overview',
+];
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  devecoCodeSidebar,
-  crossPlatformSidebar: [
-    'resources/cross-platform/overview',
-  ],
+  crossPlatformSidebar,
+  atomicSidebar: require('./sidebars-atomic.js').atomicSidebar,
 };
 
 module.exports = sidebars;

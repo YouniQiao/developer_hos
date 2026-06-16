@@ -1,9 +1,10 @@
 ---
 title: "权限说明"
-original_url: /docs/dev/atomic-dev/health-data-type-as/health-permission-description-as
-format: md
-upstream_id: dev/atomic-dev/health-data-type-as/health-permission-description-as
-last_sync: 2026-06-07
-sync_hash: 86fb25ea
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-permission-description-as
 ---
-# 权限说明
+
+运动健康数据读写需要相应的权限，权限申请参考[申请运动健康服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/health-apply-as)，数据类型对应权限如下：
+
+| 数据类型 | Harmony SDK类型常量 | 读权限 | 写权限 |
+| --- | --- | --- | --- |
+| 日常活动 | [samplePointHelper.dailyActivities.DATA\_TYPE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-samplepointhelper#常量-3) | 日常活动数据（读） | 日常活动数据（写） |

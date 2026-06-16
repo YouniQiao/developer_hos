@@ -1,10 +1,10 @@
 ---
-title: "通过API接入服务直达"
-original_url: /docs/dev/atomic-dev/instant-service-apis/instant-service-apis
-format: md
-upstream_id: dev/atomic-dev/instant-service-apis/instant-service-apis
-last_sync: 2026-06-07
-sync_hash: 0fb2673d
-upstream_status: upstream_deleted_pending
+title: "服务直达API接入指南"
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-apis
 ---
-# 通过API接入服务直达
+
+* **[入门指引](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-getting-started)**
+* **[图片管理](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-image-management)**
+* **[门店管理](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store-management)**
+* **[商品管理](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-offerings-management)**
+* **[API错误码说明](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-error-code)**

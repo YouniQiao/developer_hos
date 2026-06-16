@@ -1,9 +1,7 @@
 ---
 title: "应用市场"
-original_url: /docs/dev/atomic-dev/atomic-appgallery-development/atomic-appgallery-development
-format: md
-upstream_id: dev/atomic-dev/atomic-appgallery-development/atomic-appgallery-development
-last_sync: 2026-06-07
-sync_hash: 3eddcd74
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-appgallery-development
 ---
-# 应用市场
+
+* **[AppGallery Kit简介](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-appgallery-introduction)**
+* **[应用市场更新功能](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-appgallery-update)**

@@ -1,11 +1,26 @@
 ---
 title: "开发准备"
-original_url: /docs/dev/atomic-dev/atomic-push-development/push-as-prepare
-format: md
-upstream_id: dev/atomic-dev/atomic-push-development/push-as-prepare
-last_sync: 2026-06-07
-sync_hash: 4343f7eb
-upstream_hash: 473d866240bf
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-prepare
 ---
 
-# 开发准备
+在阅读本章节前，请先参考“[元服务开发准备](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-dev-preparation)”完成基本准备工作，再继续进行以下开发活动。
+
+![](./img/719f3171.png)
+
+从HarmonyOS NEXT Developer Beta2起，开发者无需配置公钥指纹和Client ID。
+
+## 开通推送服务
+
+![](./img/743f5ea2.png)
+
+推送服务权益为项目级，若您已有开通过推送服务的项目，当您在项目中添加新的元服务时，无需再次开通推送服务。
+
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，选择“开发与服务”。
+
+   ![](./img/a1c70770.png "点击放大")
+2. 在项目列表中找到您的项目，在项目下的应用列表中选择需要配置推送服务参数的元服务。
+
+   ![](./img/6252e6b3.png "点击放大")
+3. 在左侧导航栏选择“增长 > 推送服务”，点击“立即开通”，在弹出的提示框中点击“确定”。至此，您已开通推送服务。
+
+   ![](./img/8d5ca690.png "点击放大")

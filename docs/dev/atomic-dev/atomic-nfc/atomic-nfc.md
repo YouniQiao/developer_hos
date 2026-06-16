@@ -1,10 +1,7 @@
 ---
 title: "NFC"
-original_url: /docs/dev/atomic-dev/atomic-nfc/atomic-nfc
-format: md
-upstream_id: dev/atomic-dev/atomic-nfc/atomic-nfc
-last_sync: 2026-06-07
-sync_hash: 3fddf5fd
-upstream_status: upstream_deleted_pending
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-nfc
 ---
-# NFC
+
+* **[NFC标签读写开发指南](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-nfc-tag-access-guide)**
+* **[HCE卡模拟开发指南](https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-nfc-hce-guide)**

@@ -1,9 +1,6 @@
 ---
 title: "地图"
-original_url: /docs/dev/atomic-dev/operations-fulfillment-capability-development/atomic-map-development
-format: md
-upstream_id: dev/atomic-dev/operations-fulfillment-capability-development/atomic-map-development
-last_sync: 2026-06-07
-sync_hash: 7a80647a
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/atomic-map-development
 ---
-# 地图
+
+元服务Map Kit的开发方式与传统应用Map Kit的开发方式相同，详见[Map Kit开发指南](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/map-introduction)。

@@ -1,0 +1,19 @@
+---
+title: "异步引用主包或本包组件，无法显示"
+original_url: /docs/dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-referenced-asynchronously-displayed
+format: md
+upstream_id: dev/atomic-dev/ascf/faqs-ascf-toolkit/faqs-referenced-asynchronously-displayed
+last_sync: 2026-06-07
+sync_hash: ba3e336d
+---
+**问题现象**
+
+在使用本包或者主包的组件时，给组件加了占位符，运行组件显示不了。
+
+**可能原因**
+
+主包的组件或者是普通分包的组件，不支持异步使用。
+
+**解决措施**
+
+去掉占位符即可，主包的组件或者是普通分包是可以不需要异步使用主包或者本包的组件。

@@ -1,10 +1,9 @@
 ---
 title: "通过界面接入服务直达"
-original_url: /docs/dev/atomic-dev/instant-service-gui/instant-service-gui
-format: md
-upstream_id: dev/atomic-dev/instant-service-gui/instant-service-gui
-last_sync: 2026-06-07
-sync_hash: a0ee5844
-upstream_status: upstream_deleted_pending
+original_url: https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-gui
 ---
-# 通过界面接入服务直达
+
+* **[门店](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-store)**
+* **[子服务](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-items)**
+* **[服务卡片（FormKit）](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-formkit)**
+* **[商品](https://developer.huawei.com/consumer/cn/doc/atomic-guides/instant-service-offerings)**
