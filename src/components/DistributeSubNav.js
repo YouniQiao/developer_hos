@@ -16,7 +16,7 @@ const NAV_ITEMS = [
   },
   {
     label: '小艺开放平台',
-    path: '/docs/distribute/xiaoyi/update1-0000001238499957',
+    path: '/docs/distribute/xiaoyi/harmonyos-service-0000001238266717/introduction-0000001193306784',
     match: '/docs/distribute/xiaoyi',
     desc: '小艺智能体开发与开放平台',
   },

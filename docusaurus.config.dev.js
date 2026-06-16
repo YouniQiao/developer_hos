@@ -53,7 +53,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars-dev.js'),
-          include: ['dev/app-dev/**', 'dev/testing/**'],
+          include: ['distribute/xiaoyi/**'],
           routeBasePath: 'docs',
           exclude: ['**/img/**', '**/_category_**'],
           editUrl:

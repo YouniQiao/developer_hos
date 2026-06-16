@@ -378,11 +378,17 @@ def get_output_path(doc_id, doc_name, section_cfg, all_catalog_docs):
         return local_dir / f"{doc_id}.md"
 
 
+def html_signature(html):
+    """Compute content fingerprint for change detection (same as sync_diff.py)."""
+    if not html:
+        return ""
+    text = re.sub(r"<[^>]+>", "", html)
+    text = re.sub(r"\s+", " ", text).strip()
+    return hashlib.md5(text.encode()).hexdigest()[:12]
+
+
 def print_report(results):
     """Print a structured box-drawing report to terminal."""
-    n_new_leaf = len(results["new_leaf"])
-    n_new_inter = len(results["new_intermediate"])
-    n_updated = len(results["updated"])
     n_skipped = len(results["skipped"])
     n_orphan = len(results["orphaned"])
     n_failed = len(results["failed"])
@@ -392,18 +398,20 @@ def print_report(results):
     kit = results.get("kit")
     title = kit or results["section"]
     short_title = kit.split("（")[0] if kit and "（" in kit else title
-    header = f" {short_title} 同步报告 "
+    suffix = " (DRY RUN)" if results.get("dry_run") else " 同步报告"
+    header = f" {short_title}{suffix} "
     bar = "═" * 46
     line = f"\n╔{bar}╗\n║{header.center(46)}║\n╠{bar}╣"
 
     rows = [
-        ("🆕 新增叶页面", n_new_leaf),
-        ("📁 新增中间节点", n_new_inter),
-        ("🔄 内容更新", n_updated),
-        ("⏭️ 跳过(太薄)", n_skipped),
-        ("🗑️ 孤儿清理", n_orphan),
-        ("❌ 失败", n_failed),
-        ("📷 图片下载", n_images),
+        ("🆕 新增叶页面", len(results["new_leaf"]) + (0 if results.get("dry_run") else 0)),
+        ("📁 新增中间节点", len(results["new_intermediate"])),
+        ("🔄 内容变更", len(results.get("content_changed", []))),
+        ("📝 内容更新", len(results["updated"]) if not results.get("dry_run") else 0),
+        ("⏭️ 跳过(太薄)", n_skipped if not results.get("dry_run") else 0),
+        ("🗑️ 孤儿清理", n_orphan if not results.get("dry_run") else 0),
+        ("❌ 失败", n_failed if not results.get("dry_run") else 0),
+        ("📷 图片下载", n_images if not results.get("dry_run") else 0),
     ]
     for label, count in rows:
         if count > 0 or label in ("❌ 失败",):
@@ -427,7 +435,9 @@ def print_report(results):
     details = ""
     details += fmt_items("🆕 新增叶页面", results["new_leaf"])
     details += fmt_items("📁 新增中间节点", results["new_intermediate"])
-    details += fmt_items("🔄 内容更新", results["updated"])
+    if results.get("content_changed"):
+        details += fmt_items("🔄 内容变更（hash不同）", results["content_changed"])
+    details += fmt_items("📝 内容更新", results["updated"])
     details += fmt_items("⏭️ 跳过", results["skipped"])
     details += fmt_items("❌ 失败", results["failed"])
     if results["orphaned"]:
@@ -457,20 +467,27 @@ def save_report(results):
 
     lines = []
     title = kit or results["section"]
-    lines.append(f"# {title} 同步报告")
+    suffix = " (DRY RUN)" if results.get("dry_run") else " 同步报告"
+    lines.append(f"# {title}{suffix}")
     lines.append(f"**时间:** {time.strftime('%Y-%m-%d %H:%M:%S')}")
     lines.append(f"**分类:** {results['section']}")
     if kit:
         lines.append(f"**Kit:** {kit}")
+    if results.get("dry_run"):
+        lines.append("**模式:** 预览（未修改任何文件）")
     lines.append("")
 
     sections = [
         ("## 🆕 新增叶页面", results["new_leaf"]),
         ("## 📁 新增中间节点", results["new_intermediate"]),
-        ("## 🔄 内容更新", results["updated"]),
+    ]
+    if results.get("content_changed"):
+        sections.append(("## 🔄 内容变更（hash不同）", results["content_changed"]))
+    sections.extend([
+        ("## 📝 内容更新", results["updated"]),
         ("## ⏭️ 跳过", results["skipped"]),
         ("## ❌ 失败", results["failed"]),
-    ]
+    ])
 
     for heading, items in sections:
         if items:
@@ -497,6 +514,7 @@ def save_report(results):
 |------|------|
 | 新增叶页面 | {len(results['new_leaf'])} |
 | 新增中间节点 | {len(results['new_intermediate'])} |
+| 内容变更 | {len(results.get('content_changed', []))} |
 | 内容更新 | {len(results['updated'])} |
 | 跳过 | {len(results['skipped'])} |
 | 孤儿清理 | {len(results['orphaned'])} |
@@ -514,6 +532,8 @@ def main():
     parser.add_argument("section", nargs="?", default="ascf",
                         help=f"Section name: {list(SECTIONS.keys())}")
     parser.add_argument("--kit", help="Kit name within parent section (e.g. 'Account Kit（华为账号服务）')")
+    parser.add_argument("--dry-run", action="store_true",
+                        help="Preview changes only: detect new/changed pages without writing files")
     args = parser.parse_args()
 
     section = args.section
@@ -584,6 +604,14 @@ def main():
         for md_file in local_dir.rglob("*.md"):
             local_by_stem[md_file.stem] = md_file
 
+    # Track results (defined early for hash comparison in matching loop)
+    results = {
+        "new_leaf": [], "new_intermediate": [], "updated": [],
+        "content_changed": [], "skipped": [], "failed": [],
+        "orphaned": [], "images": 0,
+        "section": section, "kit": args.kit, "dry_run": args.dry_run,
+    }
+
     for doc in catalog_docs:
         oid = doc["id"]
         doc_name = doc["name"]
@@ -625,6 +653,29 @@ def main():
             if len(body_text) < 50:
                 to_process.append({"doc": doc, "path": local_path, "source_url": source_url,
                                     "is_new": False, "is_intermediate": False, "displayed_sidebar": displayed_sidebar})
+                continue
+
+            # Existing page with content — check if upstream changed
+            # Extract upstream_hash from frontmatter
+            old_hash = ""
+            for line in content.split("\n")[:15]:
+                if line.startswith("upstream_hash:"):
+                    old_hash = line.split("upstream_hash:", 1)[1].strip()
+                    break
+            if old_hash:
+                # Fetch current content for hash comparison
+                try:
+                    fetched = fetch_doc(oid, cfg["catalog_name"])
+                    new_hash = html_signature((fetched or {}).get("html", ""))
+                    if new_hash and old_hash != new_hash:
+                        if args.dry_run:
+                            results["content_changed"].append((oid, doc_name, str(local_path.relative_to(local_dir))))
+                        else:
+                            to_process.append({"doc": doc, "path": local_path, "source_url": source_url,
+                                "is_new": False, "is_intermediate": False, "displayed_sidebar": displayed_sidebar,
+                                "hash_changed": True})
+                except Exception:
+                    pass  # hash check failure is non-fatal
         else:
             # 3) Create new file
             new_path = get_output_path(oid, doc_name, cfg, catalog_docs)
@@ -654,7 +705,6 @@ def main():
                     dir_path = d
                     break
             if not dir_path:
-                # Try under local_dir top-level
                 dir_path = local_dir / iid
             dir_path.mkdir(parents=True, exist_ok=True)
             index_path = dir_path / "_index.md"
@@ -690,20 +740,28 @@ def main():
     inter_count = sum(1 for d in to_process if d["is_intermediate"])
     log(f"To process: {new_count} new + {update_count} update ({inter_count} intermediate) = {len(to_process)} total")
 
-    # Track results for report
-    results = {
-        "new_leaf": [],       # (id, name, path)
-        "new_intermediate": [],  # (id, name, path)
-        "updated": [],        # (id, name, path)
-        "skipped": [],        # (id, name, reason)
-        "failed": [],         # (id, name, error)
-        "orphaned": orphaned_paths,
-        "images": 0,
-        "section": section,
-        "kit": args.kit,
-    }
+    # Merge orphaned paths into results and start processing
+    results["orphaned"] = orphaned_paths
 
     # Process each document
+    if args.dry_run:
+        # Populate results from the matching phase
+        for item in to_process:
+            if item.get("hash_changed"):
+                results["content_changed"].append((item["doc"]["id"], item["doc"]["name"], str(item["path"].relative_to(local_dir))))
+            elif item["is_new"]:
+                if item["is_intermediate"]:
+                    results["new_intermediate"].append((item["doc"]["id"], item["doc"]["name"], str(item["path"].relative_to(local_dir))))
+                else:
+                    results["new_leaf"].append((item["doc"]["id"], item["doc"]["name"], str(item["path"].relative_to(local_dir))))
+            else:
+                results["updated"].append((item["doc"]["id"], item["doc"]["name"], str(item["path"].relative_to(local_dir))))
+
+        log(f"🔍 DRY RUN — no files will be written\n")
+        print_report(results)
+        save_report(results)
+        return
+
     success = 0
     failed = 0
     skipped = 0
@@ -759,7 +817,9 @@ def main():
             success += 1
             # Categorize result
             rel_path = str(out_path.relative_to(local_dir))
-            if item["is_new"]:
+            if item.get("hash_changed"):
+                results["content_changed"].append((oid, name, rel_path))
+            elif item["is_new"]:
                 if item["is_intermediate"]:
                     results["new_intermediate"].append((oid, name, rel_path))
                 else:
