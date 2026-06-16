@@ -3,29 +3,38 @@
 module.exports = {
   testingSidebar: [
     'dev/testing/app-testing-overview',
+    'dev/testing/unit-test/guidelines',
     {
       type: 'category',
-      label: '单元测试和UI测试',
+      label: 'UI测试',
       items: [
-        {
-          type: 'category',
-          label: '自动化测试框架使用指导',
-          items: [
-            'dev/testing/ut/arkxtest-guidelines/unittest-guidelines',
-            'dev/testing/ut/arkxtest-guidelines/uitest-guidelines',
-            'dev/testing/ut/arkxtest-guidelines/perftest-guideline',
-          ],
-        },
-        'dev/testing/ut/hypium-python-guidelines',
-        'dev/testing/ut/hypium-perf-python-guidelines',
+        'dev/testing/ui-test/arkts',
+        'dev/testing/ui-test/python',
       ],
     },
     {
       type: 'category',
       label: '专项测试',
       items: [
-        'dev/testing/test-service/smartperf-guidelines',
-        'dev/testing/test-service/wukong-guidelines',
+        'dev/testing/specialized-test/overview',
+        'dev/testing/specialized-test/performance-test',
+        'dev/testing/specialized-test/scenario-perf-test',
+        'dev/testing/specialized-test/stability-test',
+        'dev/testing/specialized-test/performance-monitor',
+        'dev/testing/specialized-test/ux-test',
+        'dev/testing/specialized-test/security-test',
+        'dev/testing/specialized-test/function-test',
+        'dev/testing/specialized-test/power-test',
+      ],
+    },
+    {
+      type: 'category',
+      label: '测试工具',
+      items: [
+        'dev/testing/tools/smartperf-guidelines',
+        'dev/testing/tools/wukong-guidelines',
+        'dev/testing/tools/perftest-guideline',
+        'dev/testing/tools/hypium-perf-python-guidelines',
       ],
     },
   ],

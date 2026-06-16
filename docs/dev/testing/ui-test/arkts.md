@@ -1,5 +1,5 @@
 ---
-title: "UI测试框架使用指导"
+title: "UI测试（基于ArkTS）"
 original_url: /docs/dev/testing/ut/arkxtest-guidelines/uitest-guidelines
 format: md
 upstream_id: dev/testing/ut/arkxtest-guidelines/uitest-guidelines

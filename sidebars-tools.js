@@ -987,7 +987,6 @@ devecoTestingSidebar: [
     ]
   },
 'tools/deveco-testing/get-familiar',
-'tools/deveco-testing/specialized-testing',
 'tools/deveco-testing/publish-testing',
 'tools/deveco-testing/exploratory-testing',
 'tools/deveco-testing/regression-test',
