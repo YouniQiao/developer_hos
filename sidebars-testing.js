@@ -31,6 +31,30 @@ module.exports = {
       type: 'category',
       label: '测试工具',
       items: [
+        {
+          type: 'category',
+          label: 'DevEco Testing 指南',
+          collapsed: true,
+          items: [
+            {
+              type: 'category',
+              label: '版本说明',
+              collapsed: true,
+              items: [
+                'dev/testing/deveco-testing/release-notes/deveco-testing-610',
+                'dev/testing/deveco-testing/release-notes/deveco-testing-602',
+                'dev/testing/deveco-testing/release-notes/deveco-testing-601',
+                'dev/testing/deveco-testing/release-notes/deveco-testing-600',
+              ],
+            },
+            'dev/testing/deveco-testing/get-familiar',
+            'dev/testing/deveco-testing/publish-testing',
+            'dev/testing/deveco-testing/exploratory-testing',
+            'dev/testing/deveco-testing/regression-test',
+            'dev/testing/deveco-testing/tool',
+            'dev/testing/deveco-testing/faq',
+          ],
+        },
         'dev/testing/tools/smartperf-guidelines',
         'dev/testing/tools/wukong-guidelines',
         'dev/testing/tools/perftest-guideline',

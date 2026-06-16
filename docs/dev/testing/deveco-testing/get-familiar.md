@@ -1,6 +1,6 @@
 ---
 title: "快速上手"
-displayed_sidebar: devecoTestingSidebar
+displayed_sidebar: testingSidebar
 original_url: /docs/tools/deveco-testing/get-familiar
 format: md
 upstream_id: tools/deveco-testing/get-familiar

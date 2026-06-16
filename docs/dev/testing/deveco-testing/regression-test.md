@@ -1,6 +1,6 @@
 ---
 title: "回归测试"
-displayed_sidebar: devecoTestingSidebar
+displayed_sidebar: testingSidebar
 original_url: /docs/tools/deveco-testing/regression-test
 format: md
 upstream_id: tools/deveco-testing/regression-test

@@ -1,6 +1,6 @@
 ---
 title: "实用工具"
-displayed_sidebar: devecoTestingSidebar
+displayed_sidebar: testingSidebar
 original_url: /docs/tools/deveco-testing/tool
 format: md
 upstream_id: tools/deveco-testing/tool

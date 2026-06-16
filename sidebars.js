@@ -18,7 +18,6 @@ const experienceSuggestionsSidebar = require('./sidebars-experience-suggestions.
 const testingSidebar = require('./sidebars-testing.js').testingSidebar;
 const toolsSidebar = require('./sidebars-tools.js').toolsSidebar;
 const aiAssistSidebar = require('./sidebars-tools.js').aiAssistSidebar;
-const devecoTestingSidebar = require('./sidebars-tools.js').devecoTestingSidebar;
 const cliToolsSidebar = require('./sidebars-tools.js').cliToolsSidebar;
 const ohpmSidebar = require('./sidebars-tools.js').ohpmSidebar;
 const cloudDevSidebar = require('./sidebars-tools.js').cloudDevSidebar;
@@ -56,7 +55,6 @@ const sidebars = {
   appCompatibilitySidebar,
   toolsSidebar,
   aiAssistSidebar,
-  devecoTestingSidebar,
   cliToolsSidebar,
   ohpmSidebar,
   cloudDevSidebar,

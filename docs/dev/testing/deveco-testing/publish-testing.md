@@ -1,6 +1,6 @@
 ---
 title: "上架预检"
-displayed_sidebar: devecoTestingSidebar
+displayed_sidebar: testingSidebar
 original_url: /docs/tools/deveco-testing/publish-testing
 format: md
 upstream_id: tools/deveco-testing/publish-testing

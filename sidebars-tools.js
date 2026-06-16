@@ -974,26 +974,6 @@ aiAssistSidebar: [
 'tools/ai-assist/ide-ocal-knowledge'
 ],
 
-devecoTestingSidebar: [
-{
-    type: 'category',
-    label: '版本说明',
-    collapsed: true,
-    items: [
-'tools/deveco-testing/release-notes/deveco-testing-610',
-'tools/deveco-testing/release-notes/deveco-testing-602',
-'tools/deveco-testing/release-notes/deveco-testing-601',
-'tools/deveco-testing/release-notes/deveco-testing-600'
-    ]
-  },
-'tools/deveco-testing/get-familiar',
-'tools/deveco-testing/publish-testing',
-'tools/deveco-testing/exploratory-testing',
-'tools/deveco-testing/regression-test',
-'tools/deveco-testing/tool',
-'tools/deveco-testing/faq'
-],
-
 cliToolsSidebar: [
 {
   type: 'category',
