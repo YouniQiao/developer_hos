@@ -33,8 +33,8 @@ sync_hash: 093d0e64
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | country\_code | string | 否 | 商品广告任务属性中的国家码，当landing\_page\_style = VENUS\_STYLE\_DYNAMIC时必填。 |
-  | landing\_page\_style | string | 否 | 落地页风格，详见[维纳斯落地页风格类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1383720253110)。 |
-  | landing\_page\_type | string | 否 | 落地页类型，详见[维纳斯落地页类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section5421169153111)。 |
+  | landing\_page\_style | string | 否 | 落地页风格，详见[维纳斯落地页风格类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#维纳斯落地页风格类型)。 |
+  | landing\_page\_type | string | 否 | 落地页类型，详见[维纳斯落地页类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#维纳斯落地页类型)。 |
 
   - <strong>请求示例</strong>
 
@@ -72,8 +72,8 @@ sync_hash: 093d0e64
     | landing\_page\_id | string | 维纳斯落地页id。 |
     | landing\_page\_name | string | 维纳斯落地页名称。 |
     | landing\_page\_url | string | 落地页链接地址。 |
-    | landing\_page\_style | string | 落地页风格，详见[维纳斯落地页风格类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1383720253110)。 |
-    | landing\_page\_type | string | 落地页类型，详见[维纳斯落地页类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section5421169153111)。 |
+    | landing\_page\_style | string | 落地页风格，详见[维纳斯落地页风格类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#维纳斯落地页风格类型)。 |
+    | landing\_page\_type | string | 落地页类型，详见[维纳斯落地页类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#维纳斯落地页类型)。 |
     | create\_time | string | 落地页创建时间。 |
     | update\_time | string | 落地页最后更新时间。 |
   - <strong>应答示例</strong>

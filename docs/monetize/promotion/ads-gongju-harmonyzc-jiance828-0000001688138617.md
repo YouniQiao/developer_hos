@@ -110,6 +110,6 @@ sync_hash: cb28becd
 
 ## 数据回传
 
-为验证端到端数据链路，建议广告主在正式投放之前都进行试投放（搭配[智能跟踪](/docs/monetize/promotion/ads_gongju08-0000001469108293#section8351192033415)与[自动激活](/docs/monetize/promotion/ads_gongju08-0000001469108293#section8351192033415)），确保数据回传无误。
+为验证端到端数据链路，建议广告主在正式投放之前都进行试投放（搭配[智能跟踪](/docs/monetize/promotion/ads_gongju08-0000001469108293#相关名词定义详解)与[自动激活](/docs/monetize/promotion/ads_gongju08-0000001469108293#相关名词定义详解)），确保数据回传无误。
 
 请参考[鲸鸿动能转化跟踪接口对接说明(中国大陆)v2.1.6](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260529160257.01972236509982451053624945144299:20260531101417:2800:95020910EC03B9F2F2CC5D7FD2F90E7B72CCA3F55901E0099BEE6ACB6A5B156F.pdf?needInitFileName=true)

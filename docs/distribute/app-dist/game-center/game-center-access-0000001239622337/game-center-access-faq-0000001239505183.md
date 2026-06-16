@@ -45,7 +45,7 @@ import MergeTable from "@site/src/components/MergeTable";
 提供以下自检工具：
 
 * 参考[自检工具](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-self-check-0000001100158786)对待上架的游戏进行自检，并根据自检报告修改。
-* 参考[自检Checklist](/docs/monetize/promotion/access-guide-0000001063305339#section206152022153813)排查是否满足上架要求，减少您提交审核后被打回的概率。
+* 参考[自检Checklist](/docs/monetize/promotion/access-guide-0000001063305339#h2联运游戏上架前checklist)排查是否满足上架要求，减少您提交审核后被打回的概率。
 
 ## 华为侧是否支持游戏强更？
 

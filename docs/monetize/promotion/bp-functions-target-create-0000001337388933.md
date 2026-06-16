@@ -14,7 +14,7 @@ sync_hash: 4480937d
 
    ![](./img/note_3.0-zh-cn_d2218e69e40b.png) 
 
-   任务信息按需填写，详细步骤可参照：[推荐任务操作步骤](/docs/monetize/promotion/bp-delivery-task-recommend-0000001337110797#section931210367197)。
+   任务信息按需填写，详细步骤可参照：[推荐任务操作步骤](/docs/monetize/promotion/bp-delivery-task-recommend-0000001337110797#操作步骤)。
 
    ![](./img/zh-cn_image_0000002524897788_73086018db41.png)
 3. 在“场景投放”设置模块，点击子任务的操作按钮“编辑”，进入页面：新建用户定向任务。

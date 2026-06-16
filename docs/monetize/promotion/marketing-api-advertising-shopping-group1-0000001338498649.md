@@ -97,7 +97,7 @@ sync_hash: 81a2ad6a
     | dimension\_value | string | 商品分组的细分依据取值；  根节点名称固定为All；  商品分组同级的排他商品组名称固定为Others。 |
     | price | float | 商品分组的出价。 |
     | is\_leaf | boolean | 商品分组是否为叶子节点，只有叶子节点才允许设置出价。 |
-    | status | string | 商品分组状态，详见[商品分组状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section7332135573017)。 |
+    | status | string | 商品分组状态，详见[商品分组状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#商品分组状态)。 |
   - <strong>应答示例</strong>
 
     HTTPS/1.1 200 OK

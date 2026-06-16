@@ -27,11 +27,11 @@ sync_hash: f9178c44
   | advertiser\_id | long | 否 | 广告主ID，对于经理账户或您的多个广告主账户共用一个华为账号，此字段必填。 |
   | adgroup\_id | long | 是 | 任务ID。 |
   | creative\_name | string | 是 | 创意名称，最大长度不超过100，支持名称里含有\n符号， 同一个广告主下同一任务下不能重复。 |
-  | dyn\_ad\_text\_flag | string | 否 | 动态词包标识。  限制条件：  creative\_size\_sub\_type != APP\_ICON和campaign\_type=CAMPAIGN\_TYPE\_SHOPPING  详见[动态词包标识](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section2505524161413)。创意文案、摘要等创意元素支持动态词包拼接：比如日期地点性别动态拼接。 |
+  | dyn\_ad\_text\_flag | string | 否 | 动态词包标识。  限制条件：  creative\_size\_sub\_type != APP\_ICON和campaign\_type=CAMPAIGN\_TYPE\_SHOPPING  详见[动态词包标识](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#动态词包标识)。创意文案、摘要等创意元素支持动态词包拼接：比如日期地点性别动态拼接。 |
   | content\_struct | Struct3 | 是 | 创意详情。 |
-  | creative\_size\_sub\_type | string | 是 | 版位子形式，详见[版位子样式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section97194512155)。 |
+  | creative\_size\_sub\_type | string | 是 | 版位子形式，详见[版位子样式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#版位子样式)。 |
   | creative\_size | string | 是 | 尺寸。 |
-  | creative\_mode | string | 否 | 创意模式，当campaign\_type=CAMPAIGN\_TYPE\_SHOPPING必填，详见[创意模式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1049832113283)。  通过【查询商品库】接口响应中的creative\_mode字段进行取值。  查询到creative\_mode的与创建创意中请求参数creative\_mode的映射关系：  1. TEMPLATE -&gt; TEMPLATE\_MODE 2. DIRECT -&gt; DIRECT\_INVESTMENT\_MODE 3. TEMPLATE\_AND\_DIRECT -&gt; TEMPLATE\_MODE或DIRECT\_INVESTMENT\_MODE |
+  | creative\_mode | string | 否 | 创意模式，当campaign\_type=CAMPAIGN\_TYPE\_SHOPPING必填，详见[创意模式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#创意模式)。  通过【查询商品库】接口响应中的creative\_mode字段进行取值。  查询到creative\_mode的与创建创意中请求参数creative\_mode的映射关系：  1. TEMPLATE -&gt; TEMPLATE\_MODE 2. DIRECT -&gt; DIRECT\_INVESTMENT\_MODE 3. TEMPLATE\_AND\_DIRECT -&gt; TEMPLATE\_MODE或DIRECT\_INVESTMENT\_MODE |
 
   content\_struct(Struct3)定义
 
@@ -71,7 +71,7 @@ sync_hash: f9178c44
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | landing\_page | string | 是 | 落地页地址 最长2048。  当任务中的推广产品为ANDROID\_APP且定向中installed\_apps\_struct不为空时，此字段可填空、自定义落地页、维纳斯落地页。  例如：  landing\_page：  landing\_page：自定义落地页  landing\_page：维纳斯落地页。 |
-  | landing\_page\_type | string | 是 | 落地页类型，详见[落地页类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section5467205171914)。 |
+  | landing\_page\_type | string | 是 | 落地页类型，详见[落地页类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#落地页类型)。 |
 
   deeplink(Struct7)定义
 

@@ -28,16 +28,16 @@ sync_hash: cca135fa
   | adgroup\_id | long | 是 | 任务ID。 |
   | adgroup\_name | string | 否 | 任务名称必填。  最大长度不得超100；  不能使用“^”,“|”特殊字符，  同一个计划下的任务名称不能重复。 |
   | targeting\_package\_id | long | 否 | 定向包ID，即创建定向包接口中返回的targeting\_id；  当campaign\_type=CAMPAIGN\_TYPE\_SHOPPING，此字段不能填写，详见[创建定向包](/docs/monetize/promotion/marketing-api-tool-targeting1-0000001338502481)。 |
-  | targeting\_package\_scope | string | 否 | 定向类型，详见[定向类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1090712128282)。  campaign\_type=CAMPAIGN\_TYPE\_SHOPPING该字段取值为PRIVATE。 |
+  | targeting\_package\_scope | string | 否 | 定向类型，详见[定向类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#定向类型)。  campaign\_type=CAMPAIGN\_TYPE\_SHOPPING该字段取值为PRIVATE。 |
   | adgroup\_begin\_date | string | 否 | 投放开始日期，格式：YYYY-MM-DD，如：2020-01-01。  注：原始开始时间小于当前时间并且原始结束时间大于当前时间，说明任务已经开始，不能修改开始时间，只能修改结束时间；  修改的开始时间不能早于当天。 |
   | adgroup\_end\_date | string | 否 | 投放结束日期，格式：YYYY-MM-DD，为空表示长期投放，如：2020-01-02。  注：结束时间不能早于开始时间，也不能早于当前时间；原始结束时间小于当前时间说明任务已经结束，不能修改任何时间。 |
-  | time\_period\_type | string | 否 | 时间段类型，可以从三种类型中根据自己需要选择一个。  time\_period为空时，时间段类型不得为TIME\_PERIOD\_DAY\_SPECIFIC或TIME\_PERIOD\_HOUR\_SPECIFIC，详见[时间段类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section548205815206)。 |
+  | time\_period\_type | string | 否 | 时间段类型，可以从三种类型中根据自己需要选择一个。  time\_period为空时，时间段类型不得为TIME\_PERIOD\_DAY\_SPECIFIC或TIME\_PERIOD\_HOUR\_SPECIFIC，详见[时间段类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#时间段类型)。 |
   | time\_period | string | 否 | time\_period\_type为TIME\_PERIOD\_DAY\_SPECIFIC、TIME\_PERIOD\_HOUR\_SPECIFIC时必填。  按照特定时间段投放时，01010100010010……表示指定特殊时段，半小时为粒度，用0、1标识是否选中，1为选中，0为未选中。一天24小时，即每天24\*2=48位，共7天，即共48\*7=336位  如果time\_period\_type为TIME\_PERIOD\_ALL，则表示一周内每天的特定小时，需要每48个值都重复。  注：时间段要与任务的日期区间有交集。  例：如果任务开始时间是2020-06-22（周一），结束时间是2020-06-24（周三），且选择的类型是TIME\_PERIOD\_DAY\_SPECIFIC或TIME\_PERIOD\_HOUR\_SPECIFIC，那time\_period的入参需要与任务的时间段有交集；若用户想在22/23/24的每天早上6点到9点投放任务，则time\_period的参数可表示为00000000000011111100…0000…(共336位)。 |
   | price | float | 否 | 出价，整数位不得超过9位，小数位不得超2位。注：范围在计划日限额和对应出价方式查询版位底价之间，版位底价通过[查询版位底价](/docs/monetize/promotion/marketing-api-tool-slot3-0000001338501433)。  日限额和深度转化价格比值应在合理的范围内。 |
   | conversion\_cost | float | 否 | 期望转化成本，price\_type为PRICING\_OCPC时专用，暂支持App和网页，整数位不得超过9位，小数位不得超2位，出价方式由CPX切换成OCPC时必填，取值区间在出价与计划日预算之间。  日限额和深度转化价格比值应在合理的范围内。 |
   | tracking\_id | long | 否 | 转化跟踪指标ID，price\_type为PRICING\_OCPC、PRICING\_CPA时必填，详见[查询转化跟踪目标](/docs/monetize/promotion/marketing-api-tool-tracking1-0000001286023238)。 |
-  | price\_type | string | 否 | 付费方式，允许切换成ocpc的任务才可以填写，详见[付费方式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1158173811189)。 |
-  | ocpc\_strategy | string | 否 | 投放策略 price\_type 为 PRICING\_OCPC时必填 详见[投放策略](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section5377193122418)。 |
+  | price\_type | string | 否 | 付费方式，允许切换成ocpc的任务才可以填写，详见[付费方式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#付费方式)。 |
+  | ocpc\_strategy | string | 否 | 投放策略 price\_type 为 PRICING\_OCPC时必填 详见[投放策略](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#投放策略)。 |
   | troas | float | 否 | 目标广告支出回报率 ，取值范围：0.01-1000000。 |
   | dpa\_filter | Struct1[] | 否 | 商品任务过滤条件。 |
   | fc\_days | long | 否 | 多日频控N天M次中的N，取值1-5。 |
@@ -51,7 +51,7 @@ sync_hash: cca135fa
   |  |  |  |  |
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
-  | dimension\_type | string | 是 | 需要查询的商品广告投放过滤维度，取值见[商品广告投放过滤维度](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section13141944162816)枚举值。 |
+  | dimension\_type | string | 是 | 需要查询的商品广告投放过滤维度，取值见[商品广告投放过滤维度](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#商品广告投放过滤维度)枚举值。 |
   | dimension\_values | Struct3 | 是 | 商品库筛选条件设置的取值列表。 |
 
   dimension\_values(Struct3)定义

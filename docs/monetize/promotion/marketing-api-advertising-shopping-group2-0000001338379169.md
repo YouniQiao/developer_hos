@@ -36,7 +36,7 @@ sync_hash: 7fd0f91b
   | dimension\_type | string | 是 | 商品分组的细分依据，详见[查询商品库筛选条件取值](/docs/monetize/promotion/marketing-api-tool-dpa2-0000001338502485)。 |
   | dimension\_value | string | 是 | 商品分组的细分依据取值，详见[查询商品库筛选条件取值](/docs/monetize/promotion/marketing-api-tool-dpa2-0000001338502485)。 |
   | price | float | 否 | 商品分组的出价。 |
-  | status | string | 否 | 商品分组状态，详见[商品分组状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section7332135573017)，ACTIVE（默认值）。 |
+  | status | string | 否 | 商品分组状态，详见[商品分组状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#商品分组状态)，ACTIVE（默认值）。 |
   | child\_item\_groups | Struct1[] | 否 | 商品分组节点的下级节点。 |
 
   - <strong>请求示例</strong>

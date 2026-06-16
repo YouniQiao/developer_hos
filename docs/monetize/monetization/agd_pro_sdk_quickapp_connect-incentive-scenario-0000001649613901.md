@@ -17,7 +17,7 @@ sync_hash: 548304e8
 
 仅快应用的原生广告支持对接激励场景解决方案。
 
-登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)，修改展示位配置，开启激励发放功能，具体请参考[原生创意广告展示位](/docs/monetize/monetization/agd_pro_sdk_quickapp_media-position-0000001368066693#section127028509202)或[原生图标广告展示位](/docs/monetize/monetization/agd_pro_sdk_quickapp_media-position-0000001368066693#section10497154414121)。
+登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)，修改展示位配置，开启激励发放功能，具体请参考[原生创意广告展示位](/docs/monetize/monetization/agd_pro_sdk_quickapp_media-position-0000001368066693#h2添加原生创意广告展示位)或[原生图标广告展示位](/docs/monetize/monetization/agd_pro_sdk_quickapp_media-position-0000001368066693#h2添加原生图标广告展示位)。
 
 #### 重新请求广告并下载
 

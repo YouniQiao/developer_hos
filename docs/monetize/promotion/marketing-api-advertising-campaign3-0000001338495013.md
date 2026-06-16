@@ -27,16 +27,16 @@ sync_hash: e26006af
   | advertiser\_id | long | 否 | 广告主ID，对于经理账户或您的多个广告主账户共用一个华为账号，此字段必填。 |
   | campaign\_id | string | 是 | 计划ID，长度为1到50。 |
   | campaign\_name | string | 否 | 编辑后的名称，  最大长度不得超100位；  不能使用“^”,“|”特殊字符不能等于原来计划值且不能重复。 |
-  | daily\_budget | Struct1 | 否 | 日预算，修改后的值不能与原值重复，详见[修改限额约束](/docs/monetize/promotion/marketing-api-appendix5-0000001338486113#section1543192018918)。 |
-  | campaign\_status | string | 否 | 计划需要设置的状态，详见[操作类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section6618155418172)。 |
+  | daily\_budget | Struct1 | 否 | 日预算，修改后的值不能与原值重复，详见[修改限额约束](/docs/monetize/promotion/marketing-api-appendix5-0000001338486113#修改限额约束)。 |
+  | campaign\_status | string | 否 | 计划需要设置的状态，详见[操作类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#操作类型)。 |
 
   daily\_budget(Struct1)定义
 
   |  |  |  |  |
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
-  | daily\_budget | integer | 是 | 日预算，修改后的值不能与原值重复，详见[修改限额约束](/docs/monetize/promotion/marketing-api-appendix5-0000001338486113#section1543192018918)。 |
-  | daily\_budget\_op\_type | string | 是 | 计划修改日预算操作类型，详见[计划修改日限额操作类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section2030619466205)。 |
+  | daily\_budget | integer | 是 | 日预算，修改后的值不能与原值重复，详见[修改限额约束](/docs/monetize/promotion/marketing-api-appendix5-0000001338486113#修改限额约束)。 |
+  | daily\_budget\_op\_type | string | 是 | 计划修改日预算操作类型，详见[计划修改日限额操作类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#计划日限额操作类型)。 |
 
   - <strong>请求示例</strong>
 

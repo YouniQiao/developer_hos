@@ -35,7 +35,7 @@ sync_hash: 774bedfc
 | file-content-sha256 | M | String | 对象内容的sha256的哈希值（该值需和上传文件匹配） |
 | file-content-length | M | String | 对象内容的大小(0，1073741824 ],单位：字节 |
 | trace-id | O | String | Trace id，只支持[a-zA-Z0-9\_]和‘-’ |
-| client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agcapi-getstarted-0000001111845114#section103mcpsimp)。 |
+| client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agcapi-getstarted-0000001111845114#h2创建api客户端)。 |
 | Authorization | M | String | 认证信息，格式为“Authorization: Bearer $\\{access\_token\\}”。access\_token的获取方式请参见[获取Token](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-obtain_token-0000001158365043)。 |
 
 ![](./img/e0787c7ce312.png) 

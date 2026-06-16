@@ -28,9 +28,9 @@ sync_hash: cddc4b9c
   | agency\_id | long | 否 | 服务商ID，服务商登录时，可选填写该字段  1、若一级服务商登录：  i.传自身或不传，则查询一级服务商的所有消耗（同时不传advertiser\_id）  ii.传子客服务商，则查询子客服务商的所有消耗（同时不传advertiser\_id）  2、若子客服务商登录：  i.传自身或不传，则查询子客服务商的所有消耗（同时不传advertiser\_id） |
   | start\_date | string | 是 | 起始时间 yyyy-MM-dd。 |
   | end\_date | string | 是 | 结束时间 yyyy-MM-dd，时间跨度最大一年。 |
-  | account\_type | string | 是 | 账户类型标识，详见[资金账户类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section8668656173214)。 |
-  | account\_media\_type | string | 否 | 虚拟账户类型，详见[虚拟账户类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section16548154953218)。 |
-  | sign\_party | string | 否 | 签约主体（不传查全部），详见[签约主体](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section2048145892417)。 |
+  | account\_type | string | 是 | 账户类型标识，详见[资金账户类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#资金账户类型)。 |
+  | account\_media\_type | string | 否 | 虚拟账户类型，详见[虚拟账户类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#虚拟账户类型)。 |
+  | sign\_party | string | 否 | 签约主体（不传查全部），详见[签约主体](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#签约主体)。 |
 
   - <strong>请求示例</strong>
 
@@ -70,18 +70,18 @@ sync_hash: cddc4b9c
     | consume | bigdecimal | 当日支出。 |
     | currency | string | 币种。 |
     | consume\_detail | Struct2[] | 分账户支出信息。 |
-    | account\_media\_type | string | 适用媒体范围  详见[虚拟账户类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section16548154953218) |
+    | account\_media\_type | string | 适用媒体范围  详见[虚拟账户类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#虚拟账户类型) |
 
     Struct2定义
 
     |  |  |  |
     | --- | --- | --- |
     | <strong>参数名称</strong> | <strong>类型</strong> | <strong>描述</strong> |
-    | account\_type | string | 账户类型标识，详见[资金账户类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section8668656173214)。 |
+    | account\_type | string | 账户类型标识，详见[资金账户类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#资金账户类型)。 |
     | consume | bigdecimal | 当日支出。 |
     | currency | string | 币种。 |
     | sign\_party | string | 签约主体（不传查全部），详见[签约主体](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#ZH-CN_TOPIC_0000001174597591__section9556743173214)。 |
-    | gift\_type | string | 赠送金类型，详见[赠送金类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section133552313316)。 |
+    | gift\_type | string | 赠送金类型，详见[赠送金类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#赠送金类型)。 |
   - <strong>应答示例</strong>
 
     HTTPS/1.1 200 OK

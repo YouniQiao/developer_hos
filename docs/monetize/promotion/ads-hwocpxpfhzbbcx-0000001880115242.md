@@ -38,8 +38,8 @@ sync_hash: bba6a6cb
 
 | <strong>参数名称</strong> | 类型 | 是否必选 | 描述 |
 | --- | --- | --- | --- |
-| shallow\_event\_type | string | 否 | [浅层转化目标](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section125615641916) |
-| deep\_event\_type | string | 否 | [深层转化目标](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1042612114174) |
+| shallow\_event\_type | string | 否 | [浅层转化目标](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#转化目标) |
+| deep\_event\_type | string | 否 | [深层转化目标](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#深度转化目标) |
 | deep\_optimize\_type | integer | 否 | 深度优化类型  1-双出价；  2-双阶段；  3-单目标加强点 |
 
 - <strong>请求示例</strong>

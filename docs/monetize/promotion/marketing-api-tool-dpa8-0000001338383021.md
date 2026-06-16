@@ -35,7 +35,7 @@ sync_hash: 0e849942
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | template\_ids | string[] | 否 | 模板Id，最多10个。 |
-  | creative\_type | string | 否 | 创意类型详见[动态创意类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section337503512310)。 |
+  | creative\_type | string | 否 | 创意类型详见[动态创意类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#动态创意类型)。 |
   | creative\_size\_width | string | 否 | 创意宽度。 |
   | creative\_size\_height | string | 否 | 创意高度。 |
 
@@ -87,14 +87,14 @@ sync_hash: 0e849942
     | template\_name | string | 模板名称。 |
     | template\_width | string | 模板宽度。 |
     | template\_height | string | 模板高度。 |
-    | template\_type | string | 商品库模板类型，详见[模板类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section7424129182910)。 |
+    | template\_type | string | 商品库模板类型，详见[模板类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#模板类型)。 |
     | solution | string | 模板方案。 |
     | preview\_content\_url | string | 内容url。 |
     | creative\_type | string | 创意类型。 |
     | creative\_size\_width | string | 创意宽度大小。 |
     | creative\_size\_height | string | 创意高度大小。 |
-    | creative\_size\_subtype | string | 创意大小子样式，详见[版位子样式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section97194512155)。 |
-    | creative\_size\_type | string | 创意大小样式，详见[版位形式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1772223181512)。 |
+    | creative\_size\_subtype | string | 创意大小子样式，详见[版位子样式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#版位子样式)。 |
+    | creative\_size\_type | string | 创意大小样式，详见[版位形式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#版位形式)。 |
   - <strong>应答示例</strong>
 
     HTTPS/1.1 200 OK

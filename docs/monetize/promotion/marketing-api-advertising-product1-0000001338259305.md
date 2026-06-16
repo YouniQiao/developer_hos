@@ -25,8 +25,8 @@ sync_hash: 84ba69d7
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | advertiser\_id | long | 否 | 广告主ID，对于经理账户或您的多个广告主账户共用一个华为账号，此字段必填。 |
-  | product\_type | string | 是 | 推广产品，详见[推广产品类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section396354212216)。 |
-  | ag\_app\_type | string | 否 | 推广应用类型，当product\_type = ANDROID\_APP时必填，详见[推广应用类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section166083016284)。 |
+  | product\_type | string | 是 | 推广产品，详见[推广产品类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#推广产品类型)。 |
+  | ag\_app\_type | string | 否 | 推广应用类型，当product\_type = ANDROID\_APP时必填，详见[推广应用类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#推广应用类型)。 |
   | product\_info | Struct1 | 是 | 推广产品信息。 |
 
   product\_info(Struct1)定义

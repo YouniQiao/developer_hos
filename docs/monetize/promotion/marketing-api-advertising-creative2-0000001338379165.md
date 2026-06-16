@@ -36,14 +36,14 @@ sync_hash: f266c1dd
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | adgroup\_id | long | 否 | 任务ID。 |
   | creative\_ids | long[] | 否 | 创意ID集合。 |
-  | approved\_status | string | 否 | 创意审核状态，详见[创意审核状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1749811142159)。 |
+  | approved\_status | string | 否 | 创意审核状态，详见[创意审核状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#创意审核状态)。 |
   | updated\_begin\_time | string | 否 | 创意更新的开始时间，格式:"yyyy-MM-dd HH:mm:ss"。 |
   | updated\_end\_time | string | 否 | 创意更新的结束时间，格式:"yyyy-MM-dd HH:mm:ss"。 |
   | created\_begin\_time | string | 否 | 创意创建的开始日期，格式："yyyy-MM-dd HH:mm:ss"。 |
   | created\_end\_time | string | 否 | 创意创建的结束日期，格式："yyyy-MM-dd HH:mm:ss"。 |
-  | show\_status | string | 否 | 创意展示状态，详见[创意显示状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section870681931619)。 |
+  | show\_status | string | 否 | 创意展示状态，详见[创意显示状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#创意显示状态)。 |
   | creative\_name | string | 否 | 创意名称。 |
-  | campaign\_type | string | 否 | 计划类型，详见[计划类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1119111358231)。 |
+  | campaign\_type | string | 否 | 计划类型，详见[计划类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#计划类型)。 |
 
   - <strong>请求示例</strong>
 
@@ -81,23 +81,23 @@ sync_hash: f266c1dd
     |  |  |  |
     | --- | --- | --- |
     | <strong>参数名称</strong> | <strong>类型</strong> | <strong>描述</strong> |
-    | approved\_status | string | 创意审核状态，详见[创意审核状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1749811142159)。 |
-    | show\_status | string | 创意显示状态，详见[创意显示状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section870681931619)。 |
+    | approved\_status | string | 创意审核状态，详见[创意审核状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#创意审核状态)。 |
+    | show\_status | string | 创意显示状态，详见[创意显示状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#创意显示状态)。 |
     | creative\_id | long | 创意ID。 |
     | campaign\_id | string | 推广计划ID。 |
     | adgroup\_id | long | 任务ID。 |
     | creative\_name | string | 创意名称。 |
-    | creative\_size\_type | string | 版位形式，详见[版位形式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1772223181512)。 |
-    | creative\_size\_sub\_type | string | 版位子形式，详见[版位子样式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section97194512155)。 |
+    | creative\_size\_type | string | 版位形式，详见[版位形式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#版位形式)。 |
+    | creative\_size\_sub\_type | string | 版位子形式，详见[版位子样式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#版位子样式)。 |
     | creative\_size\_id | long | 版位ID。 |
-    | creative\_status | string | 操作状态，详见[计划/任务/创意操作状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section9341472176)。 |
+    | creative\_status | string | 操作状态，详见[计划/任务/创意操作状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#计划任务创意操作状态)。 |
     | approved\_message | string | 审核信息。 |
-    | dyn\_ad\_text\_flag | string | 动态词包标识，详见[动态词包标识](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section2505524161413)。 |
+    | dyn\_ad\_text\_flag | string | 动态词包标识，详见[动态词包标识](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#动态词包标识)。 |
     | content\_struct | Struct3 | 创意详情。 |
     | creative\_score | integer | 创意打分字段，打分范围在0-50之间。 |
     | creative\_comment | string | 评分意见。 |
     | created\_time | string | 创意创建的时间，格式如下："yyyy-MM-dd HH:mm:ss"。 |
-    | creative\_mode | string | 创意模式，详见[创意模式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1049832113283)。 |
+    | creative\_mode | string | 创意模式，详见[创意模式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#创意模式)。 |
 
     content\_struct(Struct3)定义
 
@@ -151,7 +151,7 @@ sync_hash: f266c1dd
     | --- | --- | --- |
     | <strong>参数名称</strong> | <strong>类型</strong> | <strong>描述</strong> |
     | landing\_page | string | 落地页地址。 |
-    | landing\_page\_type | string | 落地页类型，详见[落地页类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section5467205171914)。 |
+    | landing\_page\_type | string | 落地页类型，详见[落地页类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#落地页类型)。 |
 
     deeplink(Struct7)定义
 

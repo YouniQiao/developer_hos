@@ -59,11 +59,11 @@ sync_hash: 62fdfeb5
     | <strong>参数名称</strong> | <strong>类型</strong> | <strong>描述</strong> |
     | provider\_id | long | 工具提供商Id。 |
     | provider\_name | string | 工具提供商名称。 |
-    | self\_attribution | string | 是否自归因，取值见[是否自归因](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section4161450315)枚举值。 |
+    | self\_attribution | string | 是否自归因，取值见[是否自归因](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#是否自归因)枚举值。 |
     | available\_urls | String[] | 工具提供商的监测链接地址的前缀。 |
     | channel | string | 应用分析工具提供商channel。 |
     | is\_owner | string | 是否归属广告主 ，取值为：  YES  NO |
-    | analyse\_tool\_type | string | 分析工具类型，取值见[分析工具类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section35342093211)枚举值。 |
+    | analyse\_tool\_type | string | 分析工具类型，取值见[分析工具类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#分析工具类型)枚举值。 |
   - <strong>应答示例</strong>
 
     HTTPS/1.1 200 OK

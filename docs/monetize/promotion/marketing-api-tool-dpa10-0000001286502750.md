@@ -33,8 +33,8 @@ sync_hash: 1ee85a4c
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | country | string | 是 | 投放国家的编码。 |
-  | flow\_resources | string[] | 是 | 资源类型，详见[投放网络](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1178164162818)。 |
-  | dimension\_category | Integer | 是 | 筛选条件类别，详见[筛选条件类别](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section131497188312)。 |
+  | flow\_resources | string[] | 是 | 资源类型，详见[投放网络](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#投放网络)。 |
+  | dimension\_category | Integer | 是 | 筛选条件类别，详见[筛选条件类别](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#筛选条件类别)。 |
   | dimension\_values | Struct2[] | 是 | 需要查询的商品过滤维度。 |
 
   Struct2定义
@@ -42,7 +42,7 @@ sync_hash: 1ee85a4c
   |  |  |  |  |
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
-  | dimension\_type | string | 是 | 商品过滤维度，详见[商品过滤维度](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section164841617202910)。  CATEGORY和ORIGINALCATEGORY支持树形结构，其他支持取值列表。 |
+  | dimension\_type | string | 是 | 商品过滤维度，详见[商品过滤维度](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#商品过滤维度)。  CATEGORY和ORIGINALCATEGORY支持树形结构，其他支持取值列表。 |
   | dimension\_values | Struct3 | 是 | 商品库中的筛选条件列表。 |
 
   dimension\_values(Struct3)定义

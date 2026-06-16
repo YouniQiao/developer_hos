@@ -26,7 +26,7 @@ sync_hash: 3e69ea07
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | advertiser\_id | long | 否 | 广告主ID，对于经理账户或您的多个广告主账户共用一个华为账号，此字段必填。 |
   | adgroup\_ids | long[] | 是 | 任务ID数组,最大50个任务id。 |
-  | op\_type | string | 是 | 操作类型，详见[操作类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section6618155418172)。  注：1.如果任务已是删除状态，则会提示任务已删除，不可更新操作；  2.任务下无审核通过的有效素材，不能进行修改任务状态操作；  3.已结束的任务不支持修改状态操作；  4.启动操作需要保证任务原状态是暂停状态  5.暂停操作需要保证任务是启动状态。 |
+  | op\_type | string | 是 | 操作类型，详见[操作类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#操作类型)。  注：1.如果任务已是删除状态，则会提示任务已删除，不可更新操作；  2.任务下无审核通过的有效素材，不能进行修改任务状态操作；  3.已结束的任务不支持修改状态操作；  4.启动操作需要保证任务原状态是暂停状态  5.暂停操作需要保证任务是启动状态。 |
 
   - <strong>请求示例</strong>
 

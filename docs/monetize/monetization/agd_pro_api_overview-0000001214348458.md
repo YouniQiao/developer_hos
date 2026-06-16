@@ -23,8 +23,8 @@ AGD Pro应用变现服务（简称AGD Pro服务）是华为应用市场（AppGal
 ![](./img/agd_pro_api_overview-0000001214348458_0.png)
 
 1. 广告请求：您需要先通过服务器请求广告，如希望通过端侧直接请求广告，建议使用SDK方式接入。
-2. 曝光上报：App将广告展示给用户后，App必须实时、直接向AppGallery（简称AG）上报曝光，不允许通过服务器上报，具体请参见[曝光事件上报](/docs/monetize/monetization/agd_pro_api_event-report-0000001262218943#section19744105116289)。
-3. 点击上报：用户点击广告后，App必须实时、直接向AG上报点击，不允许通过服务器上报，具体请参见[点击事件上报](/docs/monetize/monetization/agd_pro_api_event-report-0000001262218943#section19264141592910)。
+2. 曝光上报：App将广告展示给用户后，App必须实时、直接向AppGallery（简称AG）上报曝光，不允许通过服务器上报，具体请参见[曝光事件上报](/docs/monetize/monetization/agd_pro_api_event-report-0000001262218943#曝光事件上报)。
+3. 点击上报：用户点击广告后，App必须实时、直接向AG上报点击，不允许通过服务器上报，具体请参见[点击事件上报](/docs/monetize/monetization/agd_pro_api_event-report-0000001262218943#点击事件上报)。
 
 #### 产品形态说明
 

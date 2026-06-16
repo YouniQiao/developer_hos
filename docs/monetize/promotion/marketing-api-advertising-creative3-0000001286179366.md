@@ -27,7 +27,7 @@ sync_hash: fa9ce0b9
   | advertiser\_id | long | 否 | 广告主ID，对于经理账户或您的多个广告主账户共用一个华为账号，此字段必填。 |
   | creative\_id | long | 是 | 创意ID。 |
   | creative\_name | string | 否 | 创意名称，最大长度不超过100，支持换行 同一个广告主下同一任务下不能重复。 |
-  | dyn\_ad\_text\_flag | string | 否 | 动态词包标识，  限制条件：  creative\_size\_sub\_type != APP\_ICON和campaign\_type=CAMPAIGN\_TYPE\_SHOPPING，详见[动态词包标识](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section2505524161413)，创意文案、摘要等创意元素支持动态词包拼接：比如日期地点性别动态拼接。 |
+  | dyn\_ad\_text\_flag | string | 否 | 动态词包标识，  限制条件：  creative\_size\_sub\_type != APP\_ICON和campaign\_type=CAMPAIGN\_TYPE\_SHOPPING，详见[动态词包标识](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#动态词包标识)，创意文案、摘要等创意元素支持动态词包拼接：比如日期地点性别动态拼接。 |
   | content\_struct | Struct3 | 否 | 创意详情。 |
 
   content\_struct (Struct3)定义
@@ -75,7 +75,7 @@ sync_hash: fa9ce0b9
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | landing\_page | string | 是 | 落地页地址 ，最长2048。 |
-  | landing\_page\_type | string | 是 | 落地页类型，详见[落地页类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section5467205171914)。 |
+  | landing\_page\_type | string | 是 | 落地页类型，详见[落地页类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#落地页类型)。 |
 
   deeplink(Struct7)定义
 

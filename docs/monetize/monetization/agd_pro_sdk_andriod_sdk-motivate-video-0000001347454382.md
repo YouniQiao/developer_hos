@@ -92,7 +92,7 @@ adsContext.loadRewardVideoAd(adSlot, new RewardLoadListener() {
 });
 ```
 
-加载失败错误码，具体请参见[错误码](/docs/monetize/monetization/agd_pro_sdk_andriod_errcode-0000001354582769#section198514419559)。
+加载失败错误码，具体请参见[错误码](/docs/monetize/monetization/agd_pro_sdk_andriod_errcode-0000001354582769#加载失败错误码)。
 
 #### 配置相关事件监听
 
@@ -142,7 +142,7 @@ adsContext.loadRewardVideoAd(adSlot, new RewardLoadListener() {
    });
    ```
 
-   展示失败错误码，具体请参见[错误码](/docs/monetize/monetization/agd_pro_sdk_andriod_errcode-0000001354582769#section43513273549)。
+   展示失败错误码，具体请参见[错误码](/docs/monetize/monetization/agd_pro_sdk_andriod_errcode-0000001354582769#展示失败错误码)。
 
    **RewardInfo激励信息具体说明如下表所示。**
 

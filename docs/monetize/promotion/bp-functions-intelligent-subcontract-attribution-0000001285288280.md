@@ -40,7 +40,7 @@ upstream_hash: 680d5f2ed1ec
      | INDEX\_ENTER\_AG\_TIME | 1 | 在推广位点击安装按钮的时间。  单位：秒  示例：1632811393 |
      | INDEX\_INSTALLED\_FINISH\_TIME | 2 | 应用安装完成的时间。  单位：秒  示例：1632811393  **说明：**请务必解析存储该时间，此时间是归因回传时间窗的参照时间。 |
      | INDEX\_START\_DOWNLOAD\_TIME | 3 | 应用开始下载的时间。  单位：秒  示例：1632811393 |
-     | INDEX\_TRACKID | 4 | 应用推广的归因信息。  归因信息trackId（json结构，可扩展），当前包含：  - channel：由开发者运营在华为投放系统针对推广任务绑定的智能分包渠道号，如"channel12345"。 - callback：回传参数，用于oCPD对接，如"security:CD40F6\*\*\*\*\*C7A9F4"。 - taskid：任务ID，如"200052202"。 - subTaskId：子任务ID，如"200037037"。 - RTAID：RTAID，如"123556"。 可能获取到的归因信息种类请参考[FAQ](/docs/monetize/promotion/bp-functions-intelligent-subcontract-faq-0000001284808804#section6680148121416)。 |
+     | INDEX\_TRACKID | 4 | 应用推广的归因信息。  归因信息trackId（json结构，可扩展），当前包含：  - channel：由开发者运营在华为投放系统针对推广任务绑定的智能分包渠道号，如"channel12345"。 - callback：回传参数，用于oCPD对接，如"security:CD40F6\*\*\*\*\*C7A9F4"。 - taskid：任务ID，如"200052202"。 - subTaskId：子任务ID，如"200037037"。 - RTAID：RTAID，如"123556"。 可能获取到的归因信息种类请参考[FAQ](/docs/monetize/promotion/bp-functions-intelligent-subcontract-faq-0000001284808804#index_trackid中获取到的归因信息分别有哪几种)。 |
      | INDEX\_REFERRER\_EX | 5 | 下载链接地址中设置的referrer参数。 |
 
      ![](./img/614804ff839e.png) 
@@ -53,7 +53,7 @@ upstream_hash: 680d5f2ed1ec
 
    ![](./img/37f7e6917020.png) 
 
-   首次对接测试智能分包，老版本应用不具备查询能力，推广位下载APP（调测从推广位下载APP，请参考[FAQ](/docs/monetize/promotion/bp-functions-intelligent-subcontract-faq-0000001284808804#section5850152919125)）后请直接使用**adb install -r** ***xxx*****.apk**（您的新版本安装包）进行升级，切勿卸载后再安装，否则会导致归因信息丢失。
+   首次对接测试智能分包，老版本应用不具备查询能力，推广位下载APP（调测从推广位下载APP，请参考[FAQ](/docs/monetize/promotion/bp-functions-intelligent-subcontract-faq-0000001284808804#首次对接进行调测时如何从推广位下载应用)）后请直接使用**adb install -r** ***xxx*****.apk**（您的新版本安装包）进行升级，切勿卸载后再安装，否则会导致归因信息丢失。
 
 ## 相关参考-示例代码
 

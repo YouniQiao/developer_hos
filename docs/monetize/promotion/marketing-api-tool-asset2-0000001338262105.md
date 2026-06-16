@@ -40,9 +40,9 @@ upstream_hash: dc93724c5224
   | height | integer | 否 | 素材高度。 |
   | asset\_id | long | 否 | 素材ID。 |
   | asset\_name | string | 否 | 素材名称。 |
-  | asset\_type | string | 否 | 素材类型，详见[素材类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1346462516198)。 |
+  | asset\_type | string | 否 | 素材类型，详见[素材类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#素材类型)。 |
   | file\_hash\_sha256 | string | 否 | SHA256摘要，用于端侧校验。 |
-  | asset\_status | string | 否 | 素材状态，详见[素材状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section20198250101918)。 |
+  | asset\_status | string | 否 | 素材状态，详见[素材状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#素材状态)。 |
 
   - <strong>请求示例</strong>
 
@@ -93,10 +93,10 @@ upstream_hash: dc93724c5224
     | height | integer | 素材高。 |
     | video\_play\_duration | integer | 播放时长。 |
     | file\_size | integer | 文件大小，单位bytes。 |
-    | file\_format | string | 详见[素材类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1346462516198)。 |
-    | asset\_type | string | 素材类型，详见[素材类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1346462516198)。 |
+    | file\_format | string | 详见[素材类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#素材类型)。 |
+    | asset\_type | string | 素材类型，详见[素材类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#素材类型)。 |
     | file\_hash\_sha256 | string | 文件SHA256摘要。 |
-    | asset\_status | string | 素材状态，详见[素材状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section20198250101918)。 |
+    | asset\_status | string | 素材状态，详见[素材状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#素材状态)。 |
   - <strong>应答示例</strong>
 
     HTTPS/1.1 200 OK

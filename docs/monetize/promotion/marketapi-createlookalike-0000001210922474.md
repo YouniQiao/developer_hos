@@ -28,7 +28,7 @@ sync_hash: cebd19ec
 
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
-| client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agcapi-getstarted-0000001111845114#section103mcpsimp)。 |
+| client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agcapi-getstarted-0000001111845114#h2创建api客户端)。 |
 | Authorization | M | String | 认证信息，格式为“Authorization: Bearer $\\{access\_token\\}”。access\_token的获取方式请参见[获取Token](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-obtain_token-0000001158365043)。 |
 
 ![](./img/caution_3.0-zh-cn_e3013e970e4b.png) 
@@ -43,7 +43,7 @@ sync_hash: cebd19ec
 | groupName | M | String | 定向包名称。  最大长度50。 |
 | extendedMagnitude | M | Integer | 扩展推广人群量级。  单位：万 |
 | customerId | O | String | 授权合作伙伴投放时必须携带，该字段请使用<strong>投放操作账户</strong>登录[华为应用市场应用推广平台](https://ads.huawei.com/cn/)后在“我的账号信息”中查看到的“华为账号”。 |
-| groupId | M | String | 定向包ID，由[新增标签定向](/docs/monetize/promotion/marketapi-addtag-0000001181826407#section21761435152419)时返回。 |
+| groupId | M | String | 定向包ID，由[新增标签定向](/docs/monetize/promotion/marketapi-addtag-0000001181826407#响应参数)时返回。 |
 
 ## 请求示例
 

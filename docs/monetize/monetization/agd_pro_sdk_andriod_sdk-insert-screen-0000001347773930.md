@@ -91,7 +91,7 @@ adsContext.loadInterstitialAds(adSlot, new InterstitialLoadListener() {
 });
 ```
 
-加载失败错误码，具体请参见[错误码](/docs/monetize/monetization/agd_pro_sdk_andriod_errcode-0000001354582769#section198514419559)。
+加载失败错误码，具体请参见[错误码](/docs/monetize/monetization/agd_pro_sdk_andriod_errcode-0000001354582769#加载失败错误码)。
 
 #### 配置相关事件监听
 
@@ -129,7 +129,7 @@ adsContext.loadInterstitialAds(adSlot, new InterstitialLoadListener() {
    });
    ```
 
-   渲染失败错误码，具体请参见[错误码](/docs/monetize/monetization/agd_pro_sdk_andriod_errcode-0000001354582769#section6398122931218)。
+   渲染失败错误码，具体请参见[错误码](/docs/monetize/monetization/agd_pro_sdk_andriod_errcode-0000001354582769#渲染失败错误码)。
 2. 配置用户点击关闭广告回调事件监听器。
 
    ```

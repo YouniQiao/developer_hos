@@ -24,7 +24,7 @@ sync_hash: 5b6dee9a
   |  |  |  |  |
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
-  | association\_object\_level | string | 是 | 否定词关联对象类型，详见[否定词关联对象所属类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section131282713013)。 |
+  | association\_object\_level | string | 是 | 否定词关联对象类型，详见[否定词关联对象所属类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#否定词关联对象所属类型)。 |
   | association\_objects | string[] | 是 | 关联对象的id列表，计划id或者任务id。 |
   | keywords | Struct1[] | 是 | 否定词列表。 |
 

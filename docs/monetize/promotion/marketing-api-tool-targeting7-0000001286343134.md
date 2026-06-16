@@ -26,7 +26,7 @@ sync_hash: f3c07527
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | advertiser\_id | long | 否 | 广告主ID，对于经理账户或您的多个广告主账户共用一个华为账号，此字段必填。 |
-  | targeting\_list | string[] | 是 | 用户查询哪些定向包集合，详见[定向包集合](/docs/monetize/promotion/marketing-api-appendix5-0000001338486113#section1755261710100)。 |
+  | targeting\_list | string[] | 是 | 用户查询哪些定向包集合，详见[定向包集合](/docs/monetize/promotion/marketing-api-appendix5-0000001338486113#定向包集合)。 |
   | language | string | 否 | 语言码，支持zh\_CN,en\_US,ru\_RU三种。 |
 
   - <strong>请求示例</strong>

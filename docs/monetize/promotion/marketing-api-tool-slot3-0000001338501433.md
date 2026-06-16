@@ -33,7 +33,7 @@ sync_hash: c2c2571d
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | creative\_size\_id | long | 是 | 版位id。 |
-  | price\_type | string | 是 | 付费方式，详见[付费方式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1158173811189)。 |
+  | price\_type | string | 是 | 付费方式，详见[付费方式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#付费方式)。 |
   | country\_list | string | 否 | 国家列表。 |
 
   - <strong>请求示例</strong>

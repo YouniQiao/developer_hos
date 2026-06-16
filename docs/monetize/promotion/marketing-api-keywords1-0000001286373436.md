@@ -36,8 +36,8 @@ sync_hash: f3d9a84e
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | flow\_resources | string[] | 否 | 投放网络。 |
   | keyword\_ids | long[] | 否 | 关键词ID。 |
-  | status | string | 否 | 关键词状态类型，详见[关键词查询状态类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section595274716303)。 |
-  | keyword\_type | string | 否 | 关键词类型，详见[关键词类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section27631713113012)，不传默认是KEYWORD。 |
+  | status | string | 否 | 关键词状态类型，详见[关键词查询状态类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#关键词查询状态类型)。 |
+  | keyword\_type | string | 否 | 关键词类型，详见[关键词类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#关键词类型)，不传默认是KEYWORD。 |
   | app\_id | string | 否 | 应用市场的应用id。 |
   | adgroup\_id | string | 否 | 任务id。 |
   | adgroup\_name | string | 否 | 任务名称。 |
@@ -95,16 +95,16 @@ sync_hash: f3d9a84e
     | keyword\_name | string | 关键词名称。 |
     | campaign\_id | string | 计划id。 |
     | adgroup\_id | Long | 任务id。 |
-    | keyword\_status | string | 关键词当前状态，详见[关键词当前状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section511813407306)。 |
-    | approved\_status | string | 关键词审核状态，详见[关键词审核状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section17921103403010)。 |
+    | keyword\_status | string | 关键词当前状态，详见[关键词当前状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#关键词当前状态)。 |
+    | approved\_status | string | 关键词审核状态，详见[关键词审核状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#关键词审核状态)。 |
     | support\_campaign | string | 否定词是否适用于计划下所有任务。  YES：适用该广告计划下的所有任务；  NO：仅适用当前广告，默认值。 |
-    | association\_object\_level | string | 关键词关联对象所属层级，详见[关键词查询状态类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section595274716303)。 |
+    | association\_object\_level | string | 关键词关联对象所属层级，详见[关键词查询状态类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#关键词查询状态类型)。 |
     | match\_type | string | 【匹配模式】MATCH\_TYPE\_EXACT：精确匹配。 |
-    | price\_type | string | 出价方式，详见[付费方式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1158173811189)。 |
+    | price\_type | string | 出价方式，详见[付费方式](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#付费方式)。 |
     | price | BigDecimal | 搜索排名出价，如果不填使用任务上的价格。 |
     | created\_time | string | 创建时间，格式yyyy-MM-dd HH:mm:ss。 |
     | updated\_time | string | 更新时间，格式yyyy-MM-dd HH:mm:ss。 |
-    | keyword\_type | string | 关键词类型，详见[关键词类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section27631713113012)。 |
+    | keyword\_type | string | 关键词类型，详见[关键词类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#关键词类型)。 |
     | adgroup\_name | string | 任务名称。 |
     | campaign\_name | string | 计划名称。 |
     | app\_id | string | 应用市场应用id。 |

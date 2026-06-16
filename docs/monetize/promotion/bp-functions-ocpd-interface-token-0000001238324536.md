@@ -29,8 +29,8 @@ sync_hash: 373aebae
 | 参数名称 | 必选(M)/可选(O) | 数据类型 | 参数说明 |
 | --- | --- | --- | --- |
 | grant\_type | M | String(256) | 固定传入“client\_credentials”。 |
-| client\_id | M | String(256) | 客户端ID，即[创建API客户端](/docs/monetize/promotion/bp-functions-ocpx-return-0000001282520037#section103mcpsimp)中生成的“客户端ID”。 |
-| client\_secret | M | String(2048) | 客户端密钥，即[创建API客户端](/docs/monetize/promotion/bp-functions-ocpx-return-0000001282520037#section103mcpsimp)中生成的“密钥”。 |
+| client\_id | M | String(256) | 客户端ID，即[创建API客户端](/docs/monetize/promotion/bp-functions-ocpx-return-0000001282520037#h2创建api客户端)中生成的“客户端ID”。 |
+| client\_secret | M | String(2048) | 客户端密钥，即[创建API客户端](/docs/monetize/promotion/bp-functions-ocpx-return-0000001282520037#h2创建api客户端)中生成的“密钥”。 |
 
 ## 请求示例
 

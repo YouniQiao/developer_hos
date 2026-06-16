@@ -35,8 +35,8 @@ sync_hash: 9eeb87d5
   | dimension\_type | Struct2 | 否 | 维度细分。 |
   | flow\_resource | integer | 否 | 投放网络。 |
   | campaign\_type | integer | 否 | 计划类型：1.展示广告；2.关键词广告；3.推送广告；4.商品类广告。 |
-  | time\_line | string | 否 | 时间口径，详见[时间口径](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1584012297133)。 |
-  | time\_granularity | string | 是 | "STAT\_TIME\_GRANULARITY\_DAILY"天粒度，详见[时间粒度](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section482444972216)。 |
+  | time\_line | string | 否 | 时间口径，详见[时间口径](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#时间口径)。 |
+  | time\_granularity | string | 是 | "STAT\_TIME\_GRANULARITY\_DAILY"天粒度，详见[时间粒度](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#时间粒度)。 |
   | target\_country | list | 否 | 国家编码，如["AF", "AE"]  只有time\_granularity= "STAT\_TIME\_GRANULARITY\_SUMMARY"时生效。 |
 
   filtering(Struct1)参数：

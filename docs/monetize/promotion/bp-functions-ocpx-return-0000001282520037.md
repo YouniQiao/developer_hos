@@ -65,7 +65,7 @@ sync_hash: 9b897790
 
    ![](./img/d61de848c177.png)
 
-4. 客户端创建成功后在API客户端列表中记录“客户端ID”和“密钥”的值，提供给开发人员用于[回传转化数据](#section124415554469) 。
+4. 客户端创建成功后在API客户端列表中记录“客户端ID”和“密钥”的值，提供给开发人员用于[回传转化数据](#回传转化数据) 。
 
    ![](./img/0919acfc846a.png "点击放大")
 
@@ -73,5 +73,5 @@ sync_hash: 9b897790
 
 开发者需要将自有归因系统匹配到的转化行为通过数据回传接口进行回传 ，回传步骤如下：
 
-1. 根据[创建API客户端](#section103mcpsimp)中获取的“客户端ID”和“密钥”调用[获取Token](/docs/monetize/promotion/bp-functions-ocpd-interface-token-0000001238324536)接口到华为AppGallery Connect平台进行鉴权，鉴权通过后将获得用于访问AppGallery Connect API的Access Token。
+1. 根据[创建API客户端](#h2创建api客户端)中获取的“客户端ID”和“密钥”调用[获取Token](/docs/monetize/promotion/bp-functions-ocpd-interface-token-0000001238324536)接口到华为AppGallery Connect平台进行鉴权，鉴权通过后将获得用于访问AppGallery Connect API的Access Token。
 2. 通过已获取的Access Token作为请求参数，调用[回传用户行为数据接口](/docs/monetize/promotion/bp-functions-ocpd-interface-return-0000001238484400)进行数据回传。

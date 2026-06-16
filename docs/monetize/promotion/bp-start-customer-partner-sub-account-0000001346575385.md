@@ -11,7 +11,7 @@ sync_hash: 02be0a83
 
 ## 前提条件
 
-- 已完成[新建客户投放伙伴子账户（子客服务商）](/docs/monetize/promotion/bp-start-customer-partner-master-0000001293695534#section13769103814386)。
+- 已完成[新建客户投放伙伴子账户（子客服务商）](/docs/monetize/promotion/bp-start-customer-partner-master-0000001293695534#新建客户投放伙伴子账户子客服务商)。
 - 子客服务商已完成开户并绑定持有人。如需一级服务商给子客服务商绑定账户持有人，操作详见[子客服务商持有人绑定或更改](/docs/monetize/promotion/bp-start-customer-partner-master-0000001293695534)。
 
 ## 新建投放操作账户

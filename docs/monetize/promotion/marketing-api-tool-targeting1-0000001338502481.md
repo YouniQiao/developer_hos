@@ -27,7 +27,7 @@ sync_hash: dc197181
   | advertiser\_id | long | 否 | 广告主ID，对于经理账户或您的多个广告主账户共用一个华为账号，此字段必填。 |
   | targeting\_name | string | 是 | 定向包名称，最大长度不超过100必填。 |
   | targeting\_description | string | 否 | 定向包描述，最大长度不超过100。 |
-  | targeting\_type | string | 是 | 定向包类型，包含应用类、非应用类，详见[【定向包类型】](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section14680439191)。 |
+  | targeting\_type | string | 是 | 定向包类型，包含应用类、非应用类，详见[【定向包类型】](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#定向包类型)。 |
   | gender\_struct | Struct2 | 否 | 性别定向，值为gender定向中的value。  单选值，不支持复选。 |
   | age\_struct | Struct2 | 否 | 年龄定向，值为age定向中的value。  可同时选择不同年龄段的值。 |
   | series\_type\_struct | Struct2 | 否 | 手机系列定向，值为series\_type定向中的value。 |
@@ -47,11 +47,11 @@ sync_hash: dc197181
   | unlimit\_app\_interest\_struct | Struct2 | 否 | App兴趣。值为app\_interest中的value、unlimit\_app\_interest\_struct、normal\_app\_interest\_struct、high\_app\_interest\_struct，只能选择填写一个。 |
   | normal\_app\_interest\_struct | Struct2 | 否 | App兴趣中兴趣的用户。值为app\_interest中的value、unlimit\_app\_interest\_struct、normal\_app\_interest\_struct、high\_app\_interest\_struct，只能选择填写一个。 |
   | high\_app\_interest\_struct | Struct2 | 否 | App兴趣高兴趣的用户。值为app\_interest中的value、unlimit\_app\_interest\_struct、normal\_app\_interest\_struct、high\_app\_interest\_struct，只能选择填写一个。 |
-  | ai\_target | Struct2 | 否 | 智能扩量。  如果填值不为空，智能扩量开关ai\_target\_flag必须打开，取值详见[【智能扩量】](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1559243472919)。 |
-  | ai\_target\_flag | string | 否 | 智能扩量开关：开关打开ai\_target字段如果不填就是默认突破，取值详见[【智能扩量开关】](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section9173164110290)。 |
+  | ai\_target | Struct2 | 否 | 智能扩量。  如果填值不为空，智能扩量开关ai\_target\_flag必须打开，取值详见[【智能扩量】](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#智能扩量)。 |
+  | ai\_target\_flag | string | 否 | 智能扩量开关：开关打开ai\_target字段如果不填就是默认突破，取值详见[【智能扩量开关】](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#智能扩量开关)。 |
   | app\_category\_of\_media\_struct | Struct2 | 否 | 投放媒体类型定向  value值如果需要选择所有的子节点的话，可以只传入父节点 |
   | not\_app\_category\_of\_media\_struct | Struct2 | 否 | 投放媒体类型排除定向 |
-  | accept\_roaming\_flag | string | 否 | 漫游流量开关：选择地域定向时生效，字段不填时默认打开。  取值详见[漫游流量开关](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section16966142714578) |
+  | accept\_roaming\_flag | string | 否 | 漫游流量开关：选择地域定向时生效，字段不填时默认打开。  取值详见[漫游流量开关](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#漫游流量开关) |
 
   Struct2定义
 

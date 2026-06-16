@@ -19,7 +19,7 @@ sync_hash: 5c44c7f8
 
 ## 应用市场合约广告操作步骤
 
-1. 联系[鲸鸿动能运营](/docs/monetize/promotion/customerservice-0000001052264359#section676133614717)确认合作信息。
+1. 联系[鲸鸿动能运营](/docs/monetize/promotion/customerservice-0000001052264359#在线提单)确认合作信息。
 2. 鲸鸿动能运营创建合约广告任务。
 3. 广告主上传创意。
 

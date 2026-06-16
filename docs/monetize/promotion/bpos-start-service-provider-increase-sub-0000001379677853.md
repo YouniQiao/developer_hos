@@ -69,7 +69,7 @@ sync_hash: 5a4a9179
 
 3. 选择认证方式。
 
-   您完成华为账号注册之后，需要进行实名认证，认证方式可选“[对公银行打款认证](/docs/monetize/promotion/bpos-start-guest-register-0000001328677526#section3669mcpsimp)”或“[企业资料人工审核认证](/docs/monetize/promotion/bpos-start-guest-register-0000001328677526#section3608mcpsimp)”，建议您优先选择“<strong>企业资料人工审核认证</strong>”方式。认证方式提交后不可修改。
+   您完成华为账号注册之后，需要进行实名认证，认证方式可选“[对公银行打款认证](/docs/monetize/promotion/bpos-start-guest-register-0000001328677526#对公银行打款认证)”或“[企业资料人工审核认证](/docs/monetize/promotion/bpos-start-guest-register-0000001328677526#企业资料人工审核认证)”，建议您优先选择“<strong>企业资料人工审核认证</strong>”方式。认证方式提交后不可修改。
 
 4. 提交审核，审核通过后即可进入子客账户。
 

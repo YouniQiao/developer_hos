@@ -26,7 +26,7 @@ sync_hash: 8efba0c2
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| client\_id | M | `String` | 客户端ID，获取方法请参见[创建API客户端](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agcapi-getstarted-0000001111845114#section103mcpsimp)。 |
+| client\_id | M | `String` | 客户端ID，获取方法请参见[创建API客户端](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agcapi-getstarted-0000001111845114#h2创建api客户端)。 |
 | Authorization | M | `String` | 认证信息，格式为"Authorization: Bearer ***"access\_token的获取方式请参见[获取Token](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-References/agcapi-obtain_token-0000001158365043)。 |
 
 #### Body
@@ -73,7 +73,7 @@ client_id: *******
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| rtnCode | M | `Integer` | 返回码。  具体返回码请参见[报表接口错误码](/docs/monetize/monetization/agd_pro_api_if_error-code-0000001263223153#section414716403407)。 |
+| rtnCode | M | `Integer` | 返回码。  具体返回码请参见[报表接口错误码](/docs/monetize/monetization/agd_pro_api_if_error-code-0000001263223153#报表接口错误码)。 |
 | rtnDesc | M | `String` | 返回描述。 |
 | requestId | M | `String` | 请求参数原值返回。 |
 | reportInfos | M | Iist [MediaReportInfo](/docs/monetize/monetization/agd_pro_api_if_mediareportinfo-0000001481190353) | 报表信息。 |

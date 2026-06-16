@@ -25,8 +25,8 @@ sync_hash: 52f9cf63
   | --- | --- | --- | --- |
   | <strong>参数名称</strong> | <strong>类型</strong> | <strong>是否必选</strong> | <strong>描述</strong> |
   | keyword\_ids | long[] | 是 | 关键词id列表，最多100个。 |
-  | keyword\_type | string | 是 | 关键词类型，详见[关键词类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section27631713113012)。 |
-  | status | string | 是 | 关键词操作状态，详见[关键词状态操作类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section181642020203020)。 |
+  | keyword\_type | string | 是 | 关键词类型，详见[关键词类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#关键词类型)。 |
+  | status | string | 是 | 关键词操作状态，详见[关键词状态操作类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#关键词状态操作类型)。 |
 
   - <strong>请求示例</strong>
 

@@ -34,7 +34,7 @@ HA平台可以通过此章节调用接口，回传转化事件到华为应用市
 
 | 参数名称 | 必选(M)/可选(O) | 类型 | 参数说明 |
 | --- | --- | --- | --- |
-| client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](/docs/monetize/promotion/bp-functions-ocpx-return-0000001282520037#section103mcpsimp)。 |
+| client\_id | M | String | 客户端ID，获取方法参考[创建API客户端](/docs/monetize/promotion/bp-functions-ocpx-return-0000001282520037#h2创建api客户端)。 |
 | Authorization | M | String | 认证信息，格式为“Authorization: Bearer $\\{access\_token\\}”。获取access\_token请参见[获取Token](/docs/monetize/promotion/bp-functions-ocpd-interface-token-0000001238324536)。 |
 
 ### Body

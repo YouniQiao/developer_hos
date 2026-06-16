@@ -11,7 +11,7 @@ sync_hash: 77860661
 
 ## 前提条件
 
-- 已完成[新建投放操作账户（子客账户）](/docs/monetize/promotion/bp-start-customer-partner-sub-account-0000001346575385#section15799173145410)。
+- 已完成[新建投放操作账户（子客账户）](/docs/monetize/promotion/bp-start-customer-partner-sub-account-0000001346575385#新建投放操作账户)。
 - 投放操作子账户已绑定账户持有人。
 - 开发者账户名下的应用授权给投放操作账户，具体授权操作请参见[(可选)授权客户投放伙伴管理账户](/docs/monetize/promotion/bp-start-guest-authorize-0000001346774281)。
 

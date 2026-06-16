@@ -44,8 +44,8 @@ sync_hash: 56189c8e
   | unlimit\_app\_interest\_struct | Struct2 | 否 | App兴趣，值为app\_interest中的value。 |
   | normal\_app\_interest\_struct | Struct2 | 否 | App兴趣中兴趣的用户，值为app\_interest中的value。 |
   | high\_app\_interest\_struct | Struct2 | 否 | App兴趣高兴趣的用户，值为app\_interest中的value。 |
-  | ai\_target | Struct2 | 否 | 智能扩量如果填值不为空，智能扩量开关ai\_target\_flag必须打开，取值详见[智能扩量](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section1559243472919)。 |
-  | ai\_target\_flag | string | 否 | 智能扩量开关：开关打开ai\_target字段如果不填就是默认突破，取值详见[智能扩量开关](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section9173164110290)。 |
+  | ai\_target | Struct2 | 否 | 智能扩量如果填值不为空，智能扩量开关ai\_target\_flag必须打开，取值详见[智能扩量](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#智能扩量)。 |
+  | ai\_target\_flag | string | 否 | 智能扩量开关：开关打开ai\_target字段如果不填就是默认突破，取值详见[智能扩量开关](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#智能扩量开关)。 |
   | app\_category\_of\_media\_struct | Struct2 | 否 | 投放媒体类型定向  value值如果需要选择所有的子节点的话，可以只传入父节点 |
   | not\_app\_category\_of\_media\_struct | Struct2 | 否 | 投放媒体类型排除定向 |
 

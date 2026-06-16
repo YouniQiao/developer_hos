@@ -87,7 +87,7 @@ sync_hash: ed86a91c
     | tracking\_url\_id | string | 分析工具关联关系Id。 |
     | provider\_id | long | 工具提供商Id。 |
     | provider\_name | string | 工具提供商名称。 |
-    | product\_type | string | 推广产品，详见[推广产品类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section396354212216)定义。 |
+    | product\_type | string | 推广产品，详见[推广产品类型](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#推广产品类型)定义。 |
     | product\_name | string | 产品名称。 |
     | product\_unique\_flag | string | 产品标识，应用类型为App时该字段为应用包名。 |
     | app\_id | string | 华为应用市场App ID，应用类型为App时该字段填写。 |

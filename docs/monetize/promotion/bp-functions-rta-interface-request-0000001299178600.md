@@ -40,7 +40,7 @@ sync_hash: ec7114d6
 | 参数 | 必选(M)/可选(O) | 类型 | 描述 |
 | --- | --- | --- | --- |
 | X-Requestor | M | String(64) | 固定传入<strong>AppPromote</strong>。 |
-| Authorization | M | String(512) | 鉴权信息，格式为：\\{*prefix*\\}:\\{*Digest(body)*\\}   - \\{prefix\\}为固定字符串"<strong>security</strong>"。 - \\{Digest(body)\\}：HMAC-SHA256(http-body)；   字符串不区分大小写，冒号前后没有空格。  【示例】security:78c2395236bbf4262cae4f1172a327c2929ae63eaa0395961a49debc3b6f8339  为防止请求被篡改，开发者可以按照HmacSHA256(<strong>requestId</strong>+<strong>requestTime</strong>+<strong>devId</strong>, <strong>secretKey</strong>)算法生成待验证的签名字符串（参考[验签示例](#section13779174482714)），然后验证是否与<strong>Authorization</strong>中的签名字符串一致。如果一致，表示请求消息未被篡改。  其中<strong>secretKey</strong>为华为应用市场应用推广平台生成的鉴权密钥，华为会将其转成base64编码后由华为运营人员传递给开发者平台。拿到密钥后，需要进行base64解码后才能使用。 |
+| Authorization | M | String(512) | 鉴权信息，格式为：\\{*prefix*\\}:\\{*Digest(body)*\\}   - \\{prefix\\}为固定字符串"<strong>security</strong>"。 - \\{Digest(body)\\}：HMAC-SHA256(http-body)；   字符串不区分大小写，冒号前后没有空格。  【示例】security:78c2395236bbf4262cae4f1172a327c2929ae63eaa0395961a49debc3b6f8339  为防止请求被篡改，开发者可以按照HmacSHA256(<strong>requestId</strong>+<strong>requestTime</strong>+<strong>devId</strong>, <strong>secretKey</strong>)算法生成待验证的签名字符串（参考[验签示例](#验签示例)），然后验证是否与<strong>Authorization</strong>中的签名字符串一致。如果一致，表示请求消息未被篡改。  其中<strong>secretKey</strong>为华为应用市场应用推广平台生成的鉴权密钥，华为会将其转成base64编码后由华为运营人员传递给开发者平台。拿到密钥后，需要进行base64解码后才能使用。 |
 | Content-Type | M | String(32) | 对象内容的类型，固定传入<strong>application/json</strong>。 |
 | Timestamp | M | String(32) | 发起请求消息头的UTC时间戳。 |
 

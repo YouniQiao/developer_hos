@@ -31,8 +31,8 @@ sync_hash: 47b752c9
   | advertiser\_id | long | 否 | 广告主ID，对于经理账户或您的多个广告主账户共用一个华为账号，此字段必填。 |
   | product\_ids | string[] | 是 | 商品ID列表，最大100个。 |
   | store\_id | long | 是 | 商品库ID，请登录华为商品广告系统-商品库列表页面获取。 |
-  | inventory\_status | string | 否 | 库存状态，详见[商品库库存状态（适用于DPA）](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section14542448142316)，默认值：INVENTORY\_STATUS\_YES。 |
-  | status | string | 否 | 是否可投放，详见[投放状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#section4424554122317)，默认为LAUNCH\_STATUS\_YES。 |
+  | inventory\_status | string | 否 | 库存状态，详见[商品库库存状态（适用于DPA）](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#商品库库存状态适用于dpa)，默认值：INVENTORY\_STATUS\_YES。 |
+  | status | string | 否 | 是否可投放，详见[投放状态](/docs/monetize/promotion/marketing-api-appendix1-0000001174597591#投放状态)，默认为LAUNCH\_STATUS\_YES。 |
   | discount | double | 否 | 商品折扣，0.1 ~ 1.0，默认值1。 |
   | disprice | double | 否 | 限时价格。 |
   | inventory\_volume | integer | 否 | 库存数量。 |
