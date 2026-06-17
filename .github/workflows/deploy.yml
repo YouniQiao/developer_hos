@@ -48,7 +48,7 @@ jobs:
         run: npx docusaurus build --no-minify
         env:
           NODE_OPTIONS: '--max-old-space-size=16384'
-          DOCUSAURUS_SSG_CONCURRENCY: '16'
+          DOCUSAURUS_SSG_CONCURRENCY: '32'
 
       - name: Sync to preview site (local Nginx)
         if: success()
