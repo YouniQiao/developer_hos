@@ -11,7 +11,7 @@ sync_hash: cee78ed8
 
 ## 前提条件
 
-* 您已在商品管理[新增商品](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-creating-product-0000001239502323)。
+* 您已在商品管理[新增商品](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-creating-product-0000001239502323)。
 * 建议使用Google Chrome浏览器访问商品管理服务，最低版本为62.0.3202.62。
 
 ## 删除商品
@@ -20,9 +20,9 @@ sync_hash: cee78ed8
 
 ![](./img/57181bae503a.png)
 
-待删除的商品应处于失效状态，否则无法删除该商品，商品的失效操作具体请参考[失效商品](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-deactivating-product-0000001239622347#section1851819158336`)。
+待删除的商品应处于失效状态，否则无法删除该商品，商品的失效操作具体请参考[失效商品](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-deactivating-product-0000001239622347#section1851819158336)。
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要删除的商品的应用。
 3. 在“运营”页签下的左侧导航栏中，选择“产品运营 &gt; 商品管理”。
 4. 在商品列表中，点击待删除商品对应“操作”列下的“编辑”。
@@ -46,7 +46,7 @@ sync_hash: cee78ed8
 
 目前，仅支持90天（含）内已删除商品的还原操作。
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要被还原的商品的应用。
 3. 在“运营”页签下的左侧导航栏中，选择“产品运营 &gt; 商品管理”。
 4. 点击页面右上角![](./img/82162b78863e.png)下拉选项中“还原商品”。

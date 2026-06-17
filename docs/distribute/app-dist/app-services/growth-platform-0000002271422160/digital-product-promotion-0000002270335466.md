@@ -15,7 +15,7 @@ sync_hash: 63d36bb4
 
 ## 创建商品推广任务
 
-* 您可以通过“[应用推广引擎](`https://developer.huawei.com/consumer/cn/service/apcs/aggrowth/chassis/home`)”首页点击进入“[数字商品](`https://developer.huawei.com/consumer/cn/service/apcs/aggrowth/chassis/digitalProduct/resources/promotion/serviceMgt`)”后，点击“推广管理”页面， 进入数字商品管理台。
+* 您可以通过“[应用推广引擎](https://developer.huawei.com/consumer/cn/service/apcs/aggrowth/chassis/home)”首页点击进入“[数字商品](https://developer.huawei.com/consumer/cn/service/apcs/aggrowth/chassis/digitalProduct/resources/promotion/serviceMgt)”后，点击“推广管理”页面， 进入数字商品管理台。
 
 ![](./img/8943ca88025d.png "点击放大")
 
@@ -25,7 +25,7 @@ sync_hash: 63d36bb4
 
 1、仅支持已签署数字商品服务协议的HarmonyOS应用（不支持元服务&Android应用），请在AppGallery Connect内开通应用内购买后使用。
 
-2、如登录账号为主账户，旗下在[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/`)创建的所有应用均默认为【推广已授权的应用】。
+2、如登录账号为主账户，旗下在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)创建的所有应用均默认为【推广已授权的应用】。
 
 3、如登录账号为协作者账户（子账户），需通过主账户应用授权后，即可支持数字商品推广任务管理。
 
@@ -61,7 +61,7 @@ sync_hash: 63d36bb4
 
 ![](./img/f9a7d5904622.png)
 
-[创建数字商品操作指南](`https://developer.huawei.com/consumer/cn/doc/app/create-digital-products-0000001958955105`)
+[创建数字商品操作指南](https://developer.huawei.com/consumer/cn/doc/app/create-digital-products-0000001958955105)
 
 <strong>1、</strong><strong>创意名称：</strong>用于标识该推广卡片创意，便于您后续进行管理，不会展示在应用市场上。建议包含该推广卡片内容关键词（如功能/场景/营销节点等），长度控制在50个字以内。
 
@@ -117,13 +117,13 @@ sync_hash: 63d36bb4
 
 ![](./img/9d6778949c1a.png)
 
-1、启用服务：如果该应用已在AGC-我的项目-应用内购买服务页面上激活服务，则此处状态为“已启用”，否则为“未启用”。应用启用数字商品服务的指南详见：[配置数字商品服务](`https://developer.huawei.com/consumer/cn/doc/app/digital-products-serve-0000001931836308`)。
+1、启用服务：如果该应用已在AGC-我的项目-应用内购买服务页面上激活服务，则此处状态为“已启用”，否则为“未启用”。应用启用数字商品服务的指南详见：[配置数字商品服务](https://developer.huawei.com/consumer/cn/doc/app/digital-products-serve-0000001931836308)。
 
-2、商品管理：该应用在单框PMS中存在多少个生效状态的数字商品。商品管理系统操作指南详见：[管理数字商品](`https://developer.huawei.com/consumer/cn/doc/app/digital-products-manage-0000001959074881`)。
+2、商品管理：该应用在单框PMS中存在多少个生效状态的数字商品。商品管理系统操作指南详见：[管理数字商品](https://developer.huawei.com/consumer/cn/doc/app/digital-products-manage-0000001959074881)。
 
-3、对账结算：该应用的开发者在联盟侧-管理中心-收益是否存在待确认的数字商品服务结算单。财务结算操作指南详见：[财务结算](`/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/financial-settlement-0000001931995732)。
+3、对账结算：该应用的开发者在联盟侧-管理中心-收益是否存在待确认的数字商品服务结算单。财务结算操作指南详见：[财务结算](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/financial-settlement-0000001931995732)。
 
-4、售后管理：该应用待处理的退款请求工单数量。订单售后管理操作指南详见：[退款管理](`/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/refund-management-0000002084083100)。
+4、售后管理：该应用待处理的退款请求工单数量。订单售后管理操作指南详见：[退款管理](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/refund-management-0000002084083100)。
 
 ## 经营分析
 
@@ -135,6 +135,6 @@ sync_hash: 63d36bb4
 
 ![](./img/460b02494ce6.png "点击放大")
 
-选择单个应用，点击左上角“更多数据”，跳转[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/`)-分析-数字商品服务分析-概览。
+选择单个应用，点击左上角“更多数据”，跳转[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)-分析-数字商品服务分析-概览。
 
 ![](./img/37f63987510c.png "点击放大")

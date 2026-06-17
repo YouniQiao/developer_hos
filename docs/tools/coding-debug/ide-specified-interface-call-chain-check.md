@@ -13,7 +13,7 @@ sync_hash: ad97aefe
 
 ![](./img/note_3.0-zh-cn.png)
 
-code-linter.json5配置文件中的[overrides](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter#section19310459444)字段对该规则不生效。
+code-linter.json5配置文件中的[overrides](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter#section19310459444)字段对该规则不生效。
 
 #### 规则配置
 
@@ -114,4 +114,4 @@ testClass.func1();
 plugin:@security/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

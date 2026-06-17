@@ -13,11 +13,11 @@ sync_hash: 528711f2
 
 #### 进行体检
 
-1. 确保[DevEco Studio与真机设备已连接](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device)，并对应用进行[签名](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
+1. 确保[DevEco Studio与真机设备已连接](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device)，并对应用进行[签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
 2. 通过以下任意一种方式，打开AppAnalyzer。
    * 单击菜单栏<strong>Tools &gt;</strong> <strong>AppAnalyzer</strong>，打开AppAnalyzer页面。
    * 在编辑窗口右侧的工具栏，点击<strong>AppAnalyzer</strong>或![](./img/zh-cn_image_0000002602186205.png)，打开AppAnalyzer页面。
-3. 点击右上角![](./img/zh-cn_image_0000002602186207.png)图标选择Product、Target和构建模式，点击<strong>Apply</strong>后，在AppAnalyzer的首页中可查看对应的编译产物和构建模式。关于Product、Target、构建模式的介绍请参考[配置多目标产物](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-guides)和[指定构建模式](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)。
+3. 点击右上角![](./img/zh-cn_image_0000002602186207.png)图标选择Product、Target和构建模式，点击<strong>Apply</strong>后，在AppAnalyzer的首页中可查看对应的编译产物和构建模式。关于Product、Target、构建模式的介绍请参考[配置多目标产物](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-guides)和[指定构建模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)。
 
    ![](./img/zh-cn_image_0000002571546670.png)
 4. 在<strong>AppAnalyzer</strong>页面，选择<strong>上架合规体检</strong>，选择预置的体检卡片，或根据需要自定义卡片。

@@ -486,7 +486,7 @@ The path XXX does not exist. Check whether the hap/hsp package is signed.
 
 <strong>处理步骤</strong>
 
-检查hap/hsp包是否已签名，如果未签名，请参考[配置调试签名](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
+检查hap/hsp包是否已签名，如果未签名，请参考[配置调试签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
 
 #### 00507002 scope参数值不合法
 
@@ -703,7 +703,7 @@ report failed, error: XXX.
 
 <strong>处理步骤</strong>
 
-1. 参考[使用本地真机运行应用](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device)连接设备，并打开开发者选项中的USB调试。
+1. 参考[使用本地真机运行应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device)连接设备，并打开开发者选项中的USB调试。
 2. 移除多余的设备，确保只连接一个设备。
 
 #### 00508010 覆盖率报告生成失败

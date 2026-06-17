@@ -48,7 +48,7 @@ sync_hash: 8096795f
 
 #### 通过命令行方式录屏
 
-hdc是可以用于调试的命令行工具，通过该工具可以实现录屏功能。更多关于命令行工具hdc的说明请参见[hdc工具使用指导](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)。
+hdc是可以用于调试的命令行工具，通过该工具可以实现录屏功能。更多关于命令行工具hdc的说明请参见[hdc工具使用指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)。
 
 1. 启动录屏。
 

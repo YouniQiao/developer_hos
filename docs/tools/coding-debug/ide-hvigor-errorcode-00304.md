@@ -300,7 +300,7 @@ pkgContextInfoPath是一个中间文件，文件不存在。
 
 <strong>处理步骤</strong>
 
-检查pkgContextInfoPath对应的文件是否存在，如果不存在，重新[下载DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+检查pkgContextInfoPath对应的文件是否存在，如果不存在，重新[下载DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00304019 包名称不存在
 
@@ -664,7 +664,7 @@ SDK缺少该文件。
 
 <strong>处理步骤</strong>
 
-检查报错信息中的文件是否存在，如果不存在，在官网上重新下载[DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+检查报错信息中的文件是否存在，如果不存在，在官网上重新下载[DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00304050 模块配置无效
 
@@ -923,7 +923,7 @@ cpp产物软链接源文件XXX丢失。
 <strong>处理步骤</strong>
 
 1. 点击<strong>Build &gt; Clean Project</strong>删除缓存后重新构建，检查文件是否生成。
-2. 如果文件仍未生成，通过[在线提单](`https://`developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+2. 如果文件仍未生成，通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 00304067 找不到app.json5文件
 

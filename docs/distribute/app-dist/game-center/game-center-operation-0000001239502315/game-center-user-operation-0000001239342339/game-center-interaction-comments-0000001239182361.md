@@ -17,7 +17,7 @@ sync_hash: 5ef0e743
 
 ## 进入互动评论
 
-1. 登录[AppGallery Connect网站](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”。
+1. 登录[AppGallery Connect网站](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。
 2. 选择“运营 &gt; 用户运营 &gt; 互动评论”，进入互动评论页面。
 
    ![](./img/2140cc6fb100.png)
@@ -73,9 +73,9 @@ sync_hash: 5ef0e743
 
 ### 请问可以在哪里看评论和回复评论？
 
-为了提供更加便利、优质的服务，进一步优化用户体验，互动评论已经迁移到应用市场统一开放平台[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/`)，进入AppGallery Connect，选择您需要查看的应用即可进入互动评论界面。
+为了提供更加便利、优质的服务，进一步优化用户体验，互动评论已经迁移到应用市场统一开放平台[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)，进入AppGallery Connect，选择您需要查看的应用即可进入互动评论界面。
 
-功能入口：[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/`)&gt; 我的应用&gt; 运营 &gt; 用户运营 &gt; 互动评论。
+功能入口：[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)&gt; 我的应用&gt; 运营 &gt; 用户运营 &gt; 互动评论。
 
 使用开发者账号在后台进行评论回复，回复内容可直接外显。
 
@@ -97,15 +97,15 @@ sync_hash: 5ef0e743
 
 ### 恶意差评怎么办？
 
-关于恶意评论，可通过[互动中心](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-interaction-center-0000001146518763`)或通过developer@huawei.com(应用类)，game.business@huawei.com(游戏类)邮箱申请，如果被判定为恶意评论则可以屏蔽。
+关于恶意评论，可通过[互动中心](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-interaction-center-0000001146518763)或通过developer@huawei.com(应用类)，game.business@huawei.com(游戏类)邮箱申请，如果被判定为恶意评论则可以屏蔽。
 
 ### 申请删除恶意差评
 
-您好，如应用被恶意差评，请提供评论截图含用户昵称及时间，您的应用名称及APPID及申请删除的理由，通过[互动中心](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-interaction-center-0000001146518763`)或邮件反馈至developer@huawei.com(应用类)，game.business@huawei.com(游戏类)。
+您好，如应用被恶意差评，请提供评论截图含用户昵称及时间，您的应用名称及APPID及申请删除的理由，通过[互动中心](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-interaction-center-0000001146518763)或邮件反馈至developer@huawei.com(应用类)，game.business@huawei.com(游戏类)。
 
 ### 如何申请评论置顶（精彩评论）？
 
-您好，请提供APPID+需要置顶的评论截图（最多3条，且为一个月内的评论）通过[互动中心](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-interaction-center-0000001146518763`)或发邮件到developer@huawei.com(应用类)，game.business@huawei.com(游戏类)申请。
+您好，请提供APPID+需要置顶的评论截图（最多3条，且为一个月内的评论）通过[互动中心](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-interaction-center-0000001146518763)或发邮件到developer@huawei.com(应用类)，game.business@huawei.com(游戏类)申请。
 
 ### 评论里“热门”、“精彩”以及“最新”的排序逻辑是什么呢？
 

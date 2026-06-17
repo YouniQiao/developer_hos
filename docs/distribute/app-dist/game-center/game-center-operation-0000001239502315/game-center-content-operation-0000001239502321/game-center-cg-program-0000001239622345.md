@@ -19,7 +19,7 @@ sync_hash: 7aecc2da
 
 ### 游戏视频贴创建
 
-1. 打开[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/`)-登录账号 - 进入管理中心 - 社区管理板块。
+1. 打开[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)-登录账号 - 进入管理中心 - 社区管理板块。
 2. 在社区管理详情页输入并点击“进入版块”。
 
    ![](./img/5a92bf714787.png)
@@ -44,7 +44,7 @@ sync_hash: 7aecc2da
 
 1. 填写申请表
 
-   下载“[华为CG鉴赏家栏目申请+游戏名称.xlsx](`https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251217151647.53402672739020663881845210985590%3A50001231000000%3A2800%3AC08F1D434F1CA71BFB817ADA0C4B92DB65E7B1DA14F35810BFD34A01B773C976.xlsx?needInitFileName=true`)”申请表，并仔细填写必填内容。未按照要求填写的申请将不予受理。
+   下载“[华为CG鉴赏家栏目申请+游戏名称.xlsx](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251217151647.53402672739020663881845210985590%3A50001231000000%3A2800%3AC08F1D434F1CA71BFB817ADA0C4B92DB65E7B1DA14F35810BFD34A01B773C976.xlsx?needInitFileName=true)”申请表，并仔细填写必填内容。未按照要求填写的申请将不予受理。
 2. 视频内容评估
 
    华为运营人员将会对申请游戏视频内容、论坛维护质量及游戏运营状况进行综合评估。

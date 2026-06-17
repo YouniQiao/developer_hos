@@ -21,7 +21,7 @@ sync_hash: b59efd87
 * NONE：关闭充电按钮，此时停止充电。
 * FULL：开启充电按钮，且电量为100%，电量已充满。
 
-在应用中，您可以通过[@ohos.batteryInfo](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-battery-info)模块查询模拟器的剩余电量以及充电状态。
+在应用中，您可以通过[@ohos.batteryInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-battery-info)模块查询模拟器的剩余电量以及充电状态。
 
 ![](./img/zh-cn_image_0000002602064803.gif "点击放大")
 
@@ -37,13 +37,13 @@ sync_hash: b59efd87
 
   场景模拟功能仅支持中国境内（香港特别行政区、澳门特别行政区、中国台湾除外）。
 
-在应用中，您可以通过[@ohos.geoLocationManager](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocationmanager)模块获取模拟器的位置信息。
+在应用中，您可以通过[@ohos.geoLocationManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-geolocationmanager)模块获取模拟器的位置信息。
 
 ![](./img/zh-cn_image_0000002571545350.gif "点击放大")
 
 #### 虚拟传感器
 
-模拟器提供了虚拟传感器来模拟硬件传感器的能力。在扩展菜单上点击![](./img/zh-cn_image_0000002602184859.png)打开虚拟传感器界面。在该界面，您可以调节不同的传感器来测试您的应用，使用[@ohos.sensor](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sensor)模块监听传感器值的变化。模拟器提供以下虚拟传感器：
+模拟器提供了虚拟传感器来模拟硬件传感器的能力。在扩展菜单上点击![](./img/zh-cn_image_0000002602184859.png)打开虚拟传感器界面。在该界面，您可以调节不同的传感器来测试您的应用，使用[@ohos.sensor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sensor)模块监听传感器值的变化。模拟器提供以下虚拟传感器：
 
 * 计步传感器：用于测量步数，对应的SensorId为PEDOMETER。
 * 环境光传感器：用于测量光照强度，对应的SensorId为AMBIENT\_LIGHT。
@@ -67,7 +67,7 @@ sync_hash: b59efd87
 
 模拟器提供以下三种代理模式：
 
-* <strong>使用DevEco Studio代理：</strong>读取并应用[DevEco Studio上的网络代理配置](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-environment-config#section10369436568)。
+* <strong>使用DevEco Studio代理：</strong>读取并应用[DevEco Studio上的网络代理配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-environment-config#section10369436568)。
 
   ![](./img/note_3.0-zh-cn.png)
 
@@ -78,7 +78,7 @@ sync_hash: b59efd87
 * <strong>无代理：</strong>不使用代理，即发送网络请求时会直接去请求目标服务器。
 * <strong>手工配置代理：</strong>配置代理服务器的信息，将网络请求代理到代理服务器上。
 
-配置代理后，可以点击<strong>Check Connection</strong>对当前的代理配置进行校验，并点击<strong>Apply</strong>按钮进行保存。在发起https请求时，需要安装网站的数字证书，请参考[使用模拟器发起https请求时如何安装数字证书](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-27)。
+配置代理后，可以点击<strong>Check Connection</strong>对当前的代理配置进行校验，并点击<strong>Apply</strong>按钮进行保存。在发起https请求时，需要安装网站的数字证书，请参考[使用模拟器发起https请求时如何安装数字证书](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-27)。
 
 <strong>DNS设置</strong>
 
@@ -88,7 +88,7 @@ sync_hash: b59efd87
 
 #### 摇一摇
 
-模拟器可以模拟用户对设备的摇一摇操作。点击工具栏上的![](./img/zh-cn_image_0000002602064811.png)，您可以模拟时长为1s的摇一摇操作。您的应用可以通过[@ohos.sensor](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sensor)模块监听加速度传感器变化，当加速度传感器的变化量达到设定阈值时，触发摇一摇对应的业务逻辑。
+模拟器可以模拟用户对设备的摇一摇操作。点击工具栏上的![](./img/zh-cn_image_0000002602064811.png)，您可以模拟时长为1s的摇一摇操作。您的应用可以通过[@ohos.sensor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-sensor)模块监听加速度传感器变化，当加速度传感器的变化量达到设定阈值时，触发摇一摇对应的业务逻辑。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -124,7 +124,7 @@ sync_hash: b59efd87
 
    ![](./img/note_3.0-zh-cn.png)
 
-   使用模拟器开发相机时，[相机配置信息](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-i#profile)请使用：RGBA\_8888格式、1280 \* 720分辨率。
+   使用模拟器开发相机时，[相机配置信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-i#profile)请使用：RGBA\_8888格式、1280 \* 720分辨率。
 
 #### 表冠
 
@@ -172,7 +172,7 @@ sync_hash: b59efd87
    默认情况下，所有的屏幕是整体拖动和缩放的，如需单独拖动和缩放单个屏幕，请勾选界面上的<strong>每个副屏在独立窗口中显示</strong>，并点击<strong>应用</strong>按钮。从DevEco Studio 6.0.1 Beta1版本开始支持。
 
    ![](./img/zh-cn_image_0000002571545320.png "点击放大")
-3. 如需在多个屏幕上同时启动应用，请按界面提示，将module.json5中的launchType字段配置为multiton，具体请参考[UIAbility组件启动模式](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-launch-type)。
+3. 如需在多个屏幕上同时启动应用，请按界面提示，将module.json5中的launchType字段配置为multiton，具体请参考[UIAbility组件启动模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-launch-type)。
 
    ![](./img/zh-cn_image_0000002571545334.png "点击放大")
 

@@ -24,7 +24,7 @@ sync_hash: 949b9d0c
 
 #### 选项
 
-详情请参考[@typescript-eslint/semi选项](`https://`eslint.nodejs.cn/docs/rules/semi#选项)。
+详情请参考[@typescript-eslint/semi选项](https://eslint.nodejs.cn/docs/rules/semi#选项)。
 
 #### 正例
 
@@ -54,4 +54,4 @@ export class Foo {
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

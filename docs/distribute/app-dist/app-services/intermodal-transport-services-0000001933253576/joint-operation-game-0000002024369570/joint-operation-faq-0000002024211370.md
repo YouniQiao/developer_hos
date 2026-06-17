@@ -11,5 +11,5 @@ sync_hash: 6577c21c
 
 | 业务 | FAQ |
 | --- | --- |
-| 基础游戏服务 | Game Service Kit FAQ请参见[Game Service Kit常见问题](`/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-faq/gameservice-faq-unlogin)。 |
-| 应用内支付服务 | IAP Kit FAQ请参见[IAP Kit常见问题](`/docs/dev/app-dev/application-services/iap-kit-guide/iap-faq)。 |
+| 基础游戏服务 | Game Service Kit FAQ请参见[Game Service Kit常见问题](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-faq/gameservice-faq-unlogin)。 |
+| 应用内支付服务 | IAP Kit FAQ请参见[IAP Kit常见问题](/docs/dev/app-dev/application-services/iap-kit-guide/iap-faq)。 |

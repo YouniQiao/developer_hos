@@ -24,7 +24,7 @@ sync_hash: 45ddfe6a
 
 #### 选项
 
-详情请参考[@typescript-eslint/no-base-to-string选项](`https://`typescript-eslint.nodejs.cn/rules/no-base-to-string/#options)。
+详情请参考[@typescript-eslint/no-base-to-string选项](https://typescript-eslint.nodejs.cn/rules/no-base-to-string/#options)。
 
 #### 正例
 
@@ -65,4 +65,4 @@ export const v4 = obj.toString();
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

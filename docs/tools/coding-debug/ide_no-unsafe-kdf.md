@@ -9,7 +9,7 @@ sync_hash: d5d9d8da
 ---
 # @security/no-unsafe-kdf
 
-禁止使用不安全的KDF算法，包括PBKDF2|SHA1和HKDF|SHA1。推荐使用PBKDF2|SHA256和HKDF|SHA256，PBKDF2|SHA256算法描述详情参见：[密钥派生算法](`https://`developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/aegis-key-derivation-0000001861059318)。
+禁止使用不安全的KDF算法，包括PBKDF2|SHA1和HKDF|SHA1。推荐使用PBKDF2|SHA256和HKDF|SHA256，PBKDF2|SHA256算法描述详情参见：[密钥派生算法](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/aegis-key-derivation-0000001861059318)。
 
 #### 规则配置
 
@@ -52,4 +52,4 @@ cryptoFramework.createKdf('HKDF|SHA1');
 plugin:@security/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

@@ -11,7 +11,7 @@ sync_hash: 7417f86b
 
 建议音视频应用接入AVSession场景下，提供基础的媒体会话元数据和媒体会话播放状态，包含封面、标题、歌曲作者/副标题、时长、播放状态（暂停、播放）、播放位置。
 
-改善[音视频播放](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-access-scene#设置元数据)体验场景下，建议优先修改。
+改善[音视频播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-access-scene#设置元数据)体验场景下，建议优先修改。
 
 #### 规则配置
 
@@ -181,4 +181,4 @@ avSession.createAVSession(context, tag, "audio", (err: BusinessError, data: avSe
 plugin:@correctness/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

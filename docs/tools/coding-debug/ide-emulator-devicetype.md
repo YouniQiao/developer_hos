@@ -26,4 +26,4 @@ sync_hash: ad2df348
 
 ![](./img/note_3.0-zh-cn.png)
 
-使用x86模拟器时，C++工程及三方库需要编译出x86\_64版本的so，请在工程级或模块级build-profile.json5的externalNativeOptions/abiFilters的值中增加"x86\_64"，具体编译配置请参见[externalNativeOptions](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-cpp#section0721057575)。
+使用x86模拟器时，C++工程及三方库需要编译出x86\_64版本的so，请在工程级或模块级build-profile.json5的externalNativeOptions/abiFilters的值中增加"x86\_64"，具体编译配置请参见[externalNativeOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-cpp#section0721057575)。

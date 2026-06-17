@@ -68,7 +68,7 @@ upstream_hash: 9438231986cf
 
    在电脑端访问AGC网站【开发与服务】-&gt;【质量】-&gt;【开发者关怀】页面，上传解锁申请文件panic.json，获取解锁凭据文件。
 
-   * AGC网址：[AppGallery Connect](`https://`developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myProject/461323198430420904/97458334310914890?extrainfo=)，登录您的华为开发者账户，进入后选择或者创建一个项目。
+   * AGC网址：[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myProject/461323198430420904/97458334310914890?extrainfo=)，登录您的华为开发者账户，进入后选择或者创建一个项目。
      + 登录AGC网站后，选择【开发与服务】页面，如果您之前没有创建过项目，请点击【添加项目】，输入项目名称后点击【完成】。
 
        ![](./img/zh-cn_image_0000002602065991.png "点击放大")

@@ -61,8 +61,8 @@ C++代码增量调试支持API Version 11及以上版本Stage模型的工程；A
    hvigorw --mode module -p module=entry@default,library@default -p product=default assembleHap assembleHsp --info --no-daemon
    ```
 
-   关于命令行的使用指导请参考[hvigorw](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-commandline)。
-3. 执行hdc命令安装HAP、HSP，关于hdc工具的使用指导请参考[hdc](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)。
+   关于命令行的使用指导请参考[hvigorw](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-commandline)。
+3. 执行hdc命令安装HAP、HSP，关于hdc工具的使用指导请参考[hdc](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)。
 
    ```
    $ hdc shell mkdir data/local/tmp/99c24fdc44694c05be12491d0a48e139
@@ -119,7 +119,7 @@ C++代码增量调试支持API Version 11及以上版本Stage模型的工程；A
    hdc bm install {hap_path} // 安装包在电脑上，使用该命令，hap_path是安装包路径
    hdc shell bm install -p {hap_path}  // 安装包在设备上，使用该命令
    ```
-2. 开发者通过独立的构建流程，识别出希望构建增量hqf包的so，根据ABI编译环境（可查看build-profile.json5的[abiFilters](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-cpp#section0721057575)字段），汇总到某一目录下，例如汇总在change\_test目录下，编译环境是arm64-v8a，示例如下。
+2. 开发者通过独立的构建流程，识别出希望构建增量hqf包的so，根据ABI编译环境（可查看build-profile.json5的[abiFilters](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-cpp#section0721057575)字段），汇总到某一目录下，例如汇总在change\_test目录下，编译环境是arm64-v8a，示例如下。
 
    ![](./img/zh-cn_image_0000002602066399.png)
 3. （可选）进行资源文件修改。如果修改了HAP/HSP模块的rawfile或resfile目录下的资源文件，则需要在对应模块的build/default/intermediates/patch/default目录下新建changedFileList.json并写入修改的文件；如果修改了HAR模块的资源文件，则需要在依赖该HAR的模块下写入修改的文件，示例如下。
@@ -167,7 +167,7 @@ C++代码增量调试支持API Version 11及以上版本Stage模型的工程；A
        }
    }
    ```
-6. 在hqf[打包工具](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/packing-tool#hqf打包指令)目录下（默认在DevEco Studio安装目录\sdk\default\openharmony\toolchains\lib下），执行命令打包，示例如下。
+6. 在hqf[打包工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/packing-tool#hqf打包指令)目录下（默认在DevEco Studio安装目录\sdk\default\openharmony\toolchains\lib下），执行命令打包，示例如下。
 
    ```
    java -jar app_packing_tool.jar --mode hqf --json-path D:\MyApplication\entry\patch.json --lib-path D:\MyApplication\entry\change_test --resources-path D:\MyApplication\entry\src\main\resources --out-path entry-default-unsigned.hqf --force true

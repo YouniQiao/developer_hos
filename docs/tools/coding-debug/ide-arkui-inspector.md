@@ -100,7 +100,7 @@ ArkUI Inspector支持导出及导入应用UI界面快照，脱离设备查看应
 
 #### 查看窗口交互事件
 
-从DevEco Studio 6.1.0 Beta1版本开始，支持查看[窗口交互事件](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-capability-overview)，包括触屏、鼠标、按键、滚轮、窗口焦点变化事件，帮助开发者定位窗口发生失焦、获焦、重绘等问题。
+从DevEco Studio 6.1.0 Beta1版本开始，支持查看[窗口交互事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-capability-overview)，包括触屏、鼠标、按键、滚轮、窗口焦点变化事件，帮助开发者定位窗口发生失焦、获焦、重绘等问题。
 
 选择<strong>WindowEvents</strong>页签，点击Start按钮![](./img/zh-cn_image_0000002602186009.png)，开始上报事件消息，包括事件时间戳、窗口ID、事件类型、坐标等，支持按事件类型过滤。点击Stop按钮![](./img/zh-cn_image_0000002602065977.png)，即可停止上报事件。
 

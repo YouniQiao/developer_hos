@@ -34,7 +34,7 @@ upstream_hash: 8a6d7867bc35
 
 #### 选项
 
-详情请参考[@typescript-eslint/triple-slash-reference选项](`https://`typescript-eslint.nodejs.cn/rules/triple-slash-reference/#options)。
+详情请参考[@typescript-eslint/triple-slash-reference选项](https://typescript-eslint.nodejs.cn/rules/triple-slash-reference/#options)。
 
 #### 正例
 
@@ -57,4 +57,4 @@ globalThis.value;
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

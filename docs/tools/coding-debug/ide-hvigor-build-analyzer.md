@@ -117,7 +117,7 @@ Build Analyzer不会全部显示构建操作中的所有任务，而是重点显
   hvigorw assembleHap --analyze=normal --config properties.hvigor.analyzeHtml=true
   ```
 
-* 通过[hvigor-config.json5](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-set-options)配置文件中properties.hvigor.analyzeHtml字段生成构建可视化html文件：
+* 通过[hvigor-config.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-set-options)配置文件中properties.hvigor.analyzeHtml字段生成构建可视化html文件：
 
   ```
   {

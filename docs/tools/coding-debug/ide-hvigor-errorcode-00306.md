@@ -178,7 +178,7 @@ API 11及以上工程支持意图框架。
 
 <strong>处理步骤</strong>
 
-在官网上下载新版本的[DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+在官网上下载新版本的[DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00306010 SDK版本不支持ArkData
 
@@ -196,7 +196,7 @@ The current SDK version does not support ArkData. At file: XXX.
 
 <strong>处理步骤</strong>
 
-在官网上下载新版本的[DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+在官网上下载新版本的[DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00306011 SDK版本不支持UI语法
 
@@ -214,7 +214,7 @@ The current SDK version does not support uiSyntax. At file: XXX.
 
 <strong>处理步骤</strong>
 
-在官网上下载新版本的[DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+在官网上下载新版本的[DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00306012 不支持动态导入
 
@@ -599,8 +599,8 @@ Worker terminated due to reaching memory limit: JS heap out of memory.
 
 <strong>处理步骤</strong>
 
-1. 在[hvigor-config.json5](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-set-options)中调整线程相关配置：hvigor.pool.maxSize、ohos.arkCompile.maxSize、hvigor.enableMemoryCache。
-2. 执行任务时关闭[parallel模式](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-improve-performance)。
+1. 在[hvigor-config.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-set-options)中调整线程相关配置：hvigor.pool.maxSize、ohos.arkCompile.maxSize、hvigor.enableMemoryCache。
+2. 执行任务时关闭[parallel模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-improve-performance)。
 
 #### 00306045 当compatibleSdkVersion为5.0.0(12)及以上时useNormalizedOHMUrl才可配置为true
 
@@ -654,7 +654,7 @@ Found HSPs that have the same HAR.
 
 <strong>处理步骤</strong>
 
-参考[最佳实践：模块化设计](`https://`developer.huawei.com/consumer/cn/doc/best-practices/bpta-modular-design)。
+参考[最佳实践：模块化设计](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-modular-design)。
 
 #### 00306048 当前API版本不支持配置autoLazyImport
 
@@ -697,7 +697,7 @@ Duplicated files found in module XXX. This may cause unexpected errors at runtim
 
 * 确保每个.so文件名都是唯一的。
 
-* 通过[pickFirsts、pickLasts或select字段](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-cpp#section17675528161517)设置.so文件的优先级。
+* 通过[pickFirsts、pickLasts或select字段](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-cpp#section17675528161517)设置.so文件的优先级。
 
 #### 00306050 FA模型的项目不允许依赖外部项目模块
 
@@ -765,7 +765,7 @@ ohpm安装依赖失败。
 
 <strong>可能原因</strong>
 
-网络不通，或[ohpm镜像仓库地址](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpmrc#zh-cn_topic_0000001792216397_默认配置项)、oh-package.json5中依赖的包名、版本号不正确。
+网络不通，或[ohpm镜像仓库地址](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ohpmrc#zh-cn_topic_0000001792216397_默认配置项)、oh-package.json5中依赖的包名、版本号不正确。
 
 <strong>处理步骤</strong>
 
@@ -826,7 +826,7 @@ hvigor守护进程异常退出，可在XXX文件中查看日志。
 <strong>处理步骤</strong>
 
 1. 修改hvigor-config.json5中nodeOptions下的maxOldSpaceSize，增加守护进程的内存。
-2. [关闭守护进程](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-daemon)后重新编译，验证该问题是否与守护进程有关。
+2. [关闭守护进程](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-daemon)后重新编译，验证该问题是否与守护进程有关。
 
 #### 00306057 executableBinaryPaths-path的值应该是相对路径
 

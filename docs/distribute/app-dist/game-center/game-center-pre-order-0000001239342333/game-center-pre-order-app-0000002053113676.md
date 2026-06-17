@@ -15,8 +15,8 @@ sync_hash: 519f35cb
 
 ## 前提条件
 
-* 您已成功[创建游戏](`/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)，且软件包类型为“APP(HarmonyOS应用)”，支持设备为“手机”。
-* （可选）您可以[开通游戏版块](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)，宣传游戏内容，聚集核心用户。
+* 您已成功[创建游戏](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)，且软件包类型为“APP(HarmonyOS应用)”，支持设备为“手机”。
+* （可选）您可以[开通游戏版块](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)，宣传游戏内容，聚集核心用户。
 
 ## 准备预约素材
 
@@ -27,11 +27,11 @@ sync_hash: 519f35cb
 
 ## 配置应用基本信息
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。
 2. 在应用列表中点击需要申请预约的游戏，选择“分发 &gt; 服务 &gt; 预约申请”，进入预约申请界面。
 
    ![](./img/4a0e00b70d67.png)
-3. 若“填写应用信息”卡片内显示“未完成填写”，请点击“前往填写”，优先完成[配置应用信息](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-0000002271695230`)，否则无法提交预约申请。若卡片内显示“已完成填写”，可直接[提交预约申请](#section5204152220572)；如需修改，请点击“前往更新”重新[配置应用信息](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-0000002271695230`)。
+3. 若“填写应用信息”卡片内显示“未完成填写”，请点击“前往填写”，优先完成[配置应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-0000002271695230)，否则无法提交预约申请。若卡片内显示“已完成填写”，可直接[提交预约申请](#section5204152220572)；如需修改，请点击“前往更新”重新[配置应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-app-0000002271695230)。
 
    ![](./img/8ecd59a5ca30.png)
 
@@ -41,7 +41,7 @@ sync_hash: 519f35cb
 
 ## 提交预约申请
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。
 2. 在应用列表中点击需要申请预约的游戏，选择“分发 &gt; 服务 &gt; 预约申请”，在“提交预约申请”卡片点击“填写”，按照提示填写信息。
 
    ![](./img/f36bfb294c66.png)
@@ -106,7 +106,7 @@ sync_hash: 519f35cb
 
 ## 预约审核与上架
 
-您提交审核后，华为工作人员完成审核需要1~3个工作日。您可以前往[互动中心](`/docs/distribute/agc/agc-help-interaction-center-0000002276985946)页面或在“预约申请”页面的“提交预约申请”卡片查看完整的审核结果。
+您提交审核后，华为工作人员完成审核需要1~3个工作日。您可以前往[互动中心](/docs/distribute/agc/agc-help-interaction-center-0000002276985946)页面或在“预约申请”页面的“提交预约申请”卡片查看完整的审核结果。
 
 ![](./img/255e00b84b6e.png)
 

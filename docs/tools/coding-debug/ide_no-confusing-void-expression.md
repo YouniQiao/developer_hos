@@ -26,7 +26,7 @@ void指要被忽略的函数返回，如果将void类型的表达式作为值使
 
 #### 选项
 
-详情请参考[@typescript-eslint/no-confusing-void-expression选项](`https://`typescript-eslint.nodejs.cn/rules/no-confusing-void-expression/#options)。
+详情请参考[@typescript-eslint/no-confusing-void-expression选项](https://typescript-eslint.nodejs.cn/rules/no-confusing-void-expression/#options)。
 
 #### 正例
 
@@ -52,4 +52,4 @@ console.info(func());
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

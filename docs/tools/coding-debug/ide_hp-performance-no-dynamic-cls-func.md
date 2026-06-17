@@ -13,7 +13,7 @@ upstream_hash: 8f08a0922af9
 
 避免动态声明function与class，仅适用于js/ts。
 
-根据[ArkTS编程规范](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-high-performance-programming)，建议修改。
+根据[ArkTS编程规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-high-performance-programming)，建议修改。
 
 #### 规则配置
 
@@ -72,4 +72,4 @@ function foo(f: boolean, a: number, b: number): number {
 plugin:@performance/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

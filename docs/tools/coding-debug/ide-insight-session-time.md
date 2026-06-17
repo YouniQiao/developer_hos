@@ -15,10 +15,10 @@ sync_hash: fcac84a2
 
 在设备连接完成后，可按照如下方法查看耗时分析结果：
 
-1. 构建应用前请参考[模块级build-profile.json5文件](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile)，增加strip字段并赋值为false（strip：是否移除当前模块.so文件中的符号表、调试信息，配置为false代表不移除）。采集函数栈解析符号需要附带符号表信息，无符号表信息可能采集不到函数名称，或ArkTS Callstack泳道无法关联到Native调用栈，因此请按照下图进行配置。
+1. 构建应用前请参考[模块级build-profile.json5文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile)，增加strip字段并赋值为false（strip：是否移除当前模块.so文件中的符号表、调试信息，配置为false代表不移除）。采集函数栈解析符号需要附带符号表信息，无符号表信息可能采集不到函数名称，或ArkTS Callstack泳道无法关联到Native调用栈，因此请按照下图进行配置。
 
    ![](./img/zh-cn_image_0000002571547258.png)
-2. 创建Time任务并录制相关数据，操作方法可参考[性能问题定位：深度录制](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording)。或在会话区选择<strong>Open File</strong>，导入历史数据。
+2. 创建Time任务并录制相关数据，操作方法可参考[性能问题定位：深度录制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording)。或在会话区选择<strong>Open File</strong>，导入历史数据。
 
    Time分析任务支持在录制前单击![](./img/zh-cn_image_0000002602186799.png "点击放大")指定要录制的泳道：
 
@@ -45,7 +45,7 @@ sync_hash: fcac84a2
    * 在任务分析窗口，可以通过“Ctrl+[ ”向前选中时间段的时间标签，通过“Ctrl+]”向后选中时间段的时间标签。
    * 将鼠标置于ArkTS Callstack泳道和Callstack泳道任意位置，可查看到对应时间点的CPU使用率。
    * 单击任意泳道名称后方的![](./img/zh-cn_image_0000002571387618.png "点击放大")可将其置顶。
-   * Time分析支持Energy泳道，请参见[能耗诊断：Energy分析](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-energy)。
+   * Time分析支持Energy泳道，请参见[能耗诊断：Energy分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-energy)。
 3. 在“ArkTS Callstack”泳道和“ArkTS Callstack”子泳道上长按鼠标左键并拖拽，框选要分析的时间段。
 
    <strong>Details</strong>区域会显示所选时间段内的函数栈耗时分布情况，<strong>Heaviest Stack</strong>区域会展示出“Details”区域选择节点所处的耗时最长的完整调用栈。

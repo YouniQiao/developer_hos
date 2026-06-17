@@ -24,7 +24,7 @@ sync_hash: 0cb6d9ce
 
 #### 选项
 
-详情请参考[@typescript-eslint/naming-convention选项](`https://`typescript-eslint.nodejs.cn/rules/naming-convention/#options)。
+详情请参考[@typescript-eslint/naming-convention选项](https://typescript-eslint.nodejs.cn/rules/naming-convention/#options)。
 
 #### 正例
 
@@ -62,4 +62,4 @@ export function Foo() {
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

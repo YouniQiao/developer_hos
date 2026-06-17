@@ -28,7 +28,7 @@ sync_hash: 8edf5abb
 
 #### 选项
 
-详情请参考[@typescript-eslint/no-inferrable-types选项](`https://`typescript-eslint.io/rules/no-inferrable-types/#options)。
+详情请参考[@typescript-eslint/no-inferrable-types选项](https://typescript-eslint.io/rules/no-inferrable-types/#options)。
 
 #### 正例
 
@@ -76,4 +76,4 @@ export function fn(a: number = num, b: boolean = true): void {
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

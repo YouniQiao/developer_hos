@@ -13,14 +13,14 @@ sync_hash: 08dca46d
 
 FaultLog由系统自动从设备进行收集，包括如下几类故障信息：
 
-* [AppFreeze](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-faultlog-appfreeze)
+* [AppFreeze](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-faultlog-appfreeze)
 * CPP Crash
 * JS Crash
 * System Freeze
-* [ASan](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-asan)
-* [HWASan](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hwasan)
-* [TSan](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-tsan)
-* [UBSan](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ubsan)
+* [ASan](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-asan)
+* [HWASan](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hwasan)
+* [TSan](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-tsan)
+* [UBSan](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ubsan)
 
 ![](./img/note_3.0-zh-cn.png)
 

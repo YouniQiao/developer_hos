@@ -11,7 +11,7 @@ sync_hash: 045d6c2c
 
 DevEco Studio支持C++和ArkTS的跨语言调试，可以同时调试这两种语言。整体操作体验与单一语言调试一致，无需额外在对应语言去手动添加断点，提升了使用两种语言混合开发的调试效率。
 
-1. 将DevEco Studio与设备进行连接。如果使用真机设备，请先对应用/元服务进行签名，具体请参考[为应用/元服务进行签名](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
+1. 将DevEco Studio与设备进行连接。如果使用真机设备，请先对应用/元服务进行签名，具体请参考[为应用/元服务进行签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
 2. 在菜单栏单击<strong>Run &gt; Edit Configurations</strong>，选择<strong>Application</strong>下的模块名（如entry），然后在右侧窗口中选择<strong>Debugger</strong>，将<strong>Debug type</strong>设置为“Dual(ArkTS/JS + Native)”。
 
    ![](./img/zh-cn_image_0000002602066569.png)

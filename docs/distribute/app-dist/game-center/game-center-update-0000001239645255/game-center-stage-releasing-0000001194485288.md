@@ -25,7 +25,7 @@ sync_hash: 88150fc8
 
 ## 提交分阶段发布申请
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。
 2. 在应用列表选择待升级应用或者元服务，进入应用详情页面。
 
 3. 选择“分发 &gt; 应用上架 &gt; 版本信息”，在页面右上角点击“升级”。
@@ -35,7 +35,7 @@ sync_hash: 88150fc8
 
    ![](./img/07aea1022db1.png "点击放大")
 
-5. 如需修改应用信息，点击左侧导航栏“应用信息”或者右侧“应用信息”进行编辑，详情请参见[配置应用信息](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyos-releaseapp-non-next-0000002179322402#section242410559206`)。完成后点击“下一步”，将再次跳转至“新版本-准备提交”页面。
+5. 如需修改应用信息，点击左侧导航栏“应用信息”或者右侧“应用信息”进行编辑，详情请参见[配置应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyos-releaseapp-non-next-0000002179322402#section242410559206)。完成后点击“下一步”，将再次跳转至“新版本-准备提交”页面。
 
    ![](./img/f08ca99e85cc.png)
 
@@ -43,7 +43,7 @@ sync_hash: 88150fc8
 
    ![](./img/8423a0759b9b.png)
 
-   如需发布开放式测试版本，请参考[上架开放式测试版本](`https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agc-betatest-release-0000001071228673`)。
+   如需发布开放式测试版本，请参考[上架开放式测试版本](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agc-betatest-release-0000001071228673)。
 
    ![](./img/07b8f4fdc020.png)
 7. 在“软件版本”区域点击“软件包管理”（若为HarmonyOS应用/元服务，则点击“版本选取”），在弹出的窗口中上传或者选取软件包。

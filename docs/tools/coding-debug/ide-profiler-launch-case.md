@@ -11,7 +11,7 @@ sync_hash: 286c2633
 
 应用冷启动首帧完成时延是指从用户点击桌面应用图标离手开始，到应用进程首帧绘制结束的时间。本案例介绍如何找到应用冷启动首帧完成时延起止点，以及如何通过调用栈和trace信息分析应用运行逻辑，定位应用冷启动首帧完成时延超预期的原因。
 
-应用冷启动分析基础功能请参考[Launch模板基本操作](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-launch)。
+应用冷启动分析基础功能请参考[Launch模板基本操作](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-launch)。
 
 #### 分析步骤
 
@@ -107,4 +107,4 @@ sync_hash: 286c2633
 
 ![](./img/zh-cn_image_0000002602186321.png)
 
-更多应用冷启动优化方案，请参考[应用冷启动时延优化](`https://`developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-cold-start-optimization)。
+更多应用冷启动优化方案，请参考[应用冷启动时延优化](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-cold-start-optimization)。

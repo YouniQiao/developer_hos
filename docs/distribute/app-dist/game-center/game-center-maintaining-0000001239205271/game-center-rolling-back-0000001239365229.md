@@ -21,7 +21,7 @@ sync_hash: e6cf64db
 
 ## 提交回退申请
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击待回退的应用版本链接，进入该版本的“版本信息”页面。
 3. 点击右上角的“版本回退”，在弹出框中填写回退原因，并点击“确认”。
 
@@ -31,6 +31,6 @@ sync_hash: e6cf64db
 
    ![](./img/1c2654125a3e.png)
 
-   当您的应用从版本2回退到版本1后，如果您想再次对版本1升级，您需要确保您提交的应用签名与版本2的应用签名一致，否则选取软件包时会弹出错误提示框。相关内容参见[软件包签名不一致处理](`/docs/distribute/app-dist/game-center/game-center-update-0000001239645255/game-center-upgrade-version-0000001194325288#section15339193186`)。
+   当您的应用从版本2回退到版本1后，如果您想再次对版本1升级，您需要确保您提交的应用签名与版本2的应用签名一致，否则选取软件包时会弹出错误提示框。相关内容参见[软件包签名不一致处理](/docs/distribute/app-dist/game-center/game-center-update-0000001239645255/game-center-upgrade-version-0000001194325288#section15339193186)。
 
    ![](./img/cebf02c651fc.png)

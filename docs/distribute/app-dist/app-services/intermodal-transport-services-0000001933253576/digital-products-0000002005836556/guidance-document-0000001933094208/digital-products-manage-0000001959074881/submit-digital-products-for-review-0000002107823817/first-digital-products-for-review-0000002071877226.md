@@ -9,7 +9,7 @@ sync_hash: 535f423f
 ---
 # 首次提交数字商品或新增数字商品类型
 
-1. 点击[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
+1. 点击[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要提交商品的应用。
 3. 在“分发”页签下的左侧导航栏中，选择“应用上架 &gt; 版本信息”。
 4. 下滑至“应用内商品”部分，点击“添加商品”，选择要提交的数字商品并确认。![](./img/d4419ff1b561.png)

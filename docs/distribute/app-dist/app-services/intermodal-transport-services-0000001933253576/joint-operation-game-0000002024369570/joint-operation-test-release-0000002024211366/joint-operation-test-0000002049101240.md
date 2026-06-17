@@ -23,4 +23,4 @@ sync_hash: ca96ab97
 
 此外，为了帮助开发者快速测试游戏的订阅场景，沙盒环境下的订阅续订时长会比正常情况要快，订阅换算时间为10秒/天，例如订阅周期为1周，游戏内商品将在首次购买成功70秒后发生续订。
 
-沙盒测试的具体操作请参见[沙盒测试](`/docs/dev/app-dev/application-services/iap-kit-guide/iap-sandbox)。
+沙盒测试的具体操作请参见[沙盒测试](/docs/dev/app-dev/application-services/iap-kit-guide/iap-sandbox)。

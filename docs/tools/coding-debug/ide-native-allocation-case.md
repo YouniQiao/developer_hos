@@ -11,18 +11,18 @@ sync_hash: db748295
 
 本案例介绍如何判断应用存在Native内存泄漏。
 
-从[6.1.0(23) Beta1](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-610#section174491130173414)开始，通过Native Allocation泳道找出Native内存泄漏的原因。
+从[6.1.0(23) Beta1](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-610#section174491130173414)开始，通过Native Allocation泳道找出Native内存泄漏的原因。
 
-[6.1.0(23) Beta1](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-610#section174491130173414)及以上版本，通过All Heap泳道找出Native内存泄漏的原因。
+[6.1.0(23) Beta1](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-610#section174491130173414)及以上版本，通过All Heap泳道找出Native内存泄漏的原因。
 
 #### 初步识别内存问题
 
-1. 使用[实时监控功能](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/realtime-monitor)对应用的内存资源进行监控。正常操作应用，观察运行过程中Memory泳道的变化。
+1. 使用[实时监控功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/realtime-monitor)对应用的内存资源进行监控。正常操作应用，观察运行过程中Memory泳道的变化。
 
    当在一段时间内应用内存没有明显增加或者在内存上涨后又逐渐回落至正常水平，则基本可以排除应用存在内存问题；反之，在一段时间内不断上涨且无回落或者内存占用明显增长超出预期，那么则可初步判断应用可能存在内存问题。
 
    ![](./img/zh-cn_image_0000002602185993.png "点击放大")
-2. 当从实时监控页面初步判断应用可能存在内存问题后，通过[深度录制](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording)抓取应用内存在问题场景下的详细数据，初步定界问题出现的位置。Memory泳道存在Allocation或Snapshot模板中，使用Allocation或Snapshot模板录制均可。
+2. 当从实时监控页面初步判断应用可能存在内存问题后，通过[深度录制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording)抓取应用内存在问题场景下的详细数据，初步定界问题出现的位置。Memory泳道存在Allocation或Snapshot模板中，使用Allocation或Snapshot模板录制均可。
 3. 以Allocation模板为例，创建模板后，将模板中的其余泳道去除勾选，仅录制Memory泳道的数据。
 
    ![](./img/note_3.0-zh-cn.png)
@@ -79,7 +79,7 @@ sync_hash: db748295
    ![](./img/note_3.0-zh-cn.png)
 
    * Category中亮色代表开发者调用栈，灰色代表系统调用栈。
-   * 栈帧中主要为Native栈，为便于开发者分析Native的函数热点，工具提供了符号导入的能力，若需要查看这部分信息，需要导入相应版本的带符号的so库（具体参考[离线符号解析](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-data#section11376118192614)）。
+   * 栈帧中主要为Native栈，为便于开发者分析Native的函数热点，工具提供了符号导入的能力，若需要查看这部分信息，需要导入相应版本的带符号的so库（具体参考[离线符号解析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-data#section11376118192614)）。
 
 #### 使用Allocation模板分析Native内存问题（DevEco Studio 6.1.0 Beta1以下版本）
 
@@ -119,4 +119,4 @@ sync_hash: db748295
    ![](./img/note_3.0-zh-cn.png)
 
    * Category中亮色代表开发者调用栈，灰色代表系统调用栈。
-   * 栈帧中主要为 Native 栈，除了应用本身编译的一些so及带有部分接口信息的so信息外，其他系统库部分仅展示so库与函数偏移信息，若需要查看这部分信息，需要导入相应版本的带符号的 so 库（具体参考[离线符号解析](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-data#section11376118192614)）。
+   * 栈帧中主要为 Native 栈，除了应用本身编译的一些so及带有部分接口信息的so信息外，其他系统库部分仅展示so库与函数偏移信息，若需要查看这部分信息，需要导入相应版本的带符号的 so 库（具体参考[离线符号解析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-data#section11376118192614)）。

@@ -170,7 +170,7 @@ ASan堆栈解析：
 
 #### 反混淆解析原理
 
-代码混淆配置请参考[代码混淆](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-obfuscation)。
+代码混淆配置请参考[代码混淆](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-obfuscation)。
 
 #### 代码混淆产物介绍
 

@@ -454,7 +454,7 @@ module.json文件内容错误。
 <strong>处理步骤</strong>
 
 1. 检查json内容结构是否符合格式规范。
-2. 在module.json中添加hnp文件描述，参考[开发指导](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#hnppackages标签)。
+2. 在module.json中添加hnp文件描述，参考[开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#hnppackages标签)。
 
 #### 11112003 ELF文件错误
 

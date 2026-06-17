@@ -22,7 +22,7 @@ sync_hash: ad0a3223
    * <strong>Destination package</strong>：测试文件存放的位置，建议存放在待测试模块的test目录下。
 
    ![](./img/zh-cn_image_0000002602066535.png)
-3. DevEco Studio在ohosTest/ets/test目录下自动生成对应的测试类。在测试类中，DevEco Studio会生成对应方法的用例模板，具体测试代码需要开发者根据业务逻辑进行开发，具体请参考[自动化测试框架使用指导](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkxtest-guidelines)。
+3. DevEco Studio在ohosTest/ets/test目录下自动生成对应的测试类。在测试类中，DevEco Studio会生成对应方法的用例模板，具体测试代码需要开发者根据业务逻辑进行开发，具体请参考[自动化测试框架使用指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkxtest-guidelines)。
 
    ![](./img/note_3.0-zh-cn.png)
 
@@ -51,7 +51,7 @@ sync_hash: ad0a3223
    * resources目录 &gt; base目录 &gt; element目录 &gt; color.json文件
    * resources目录 &gt; base目录 &gt; element目录 &gt; string.json文件
    * resources目录 &gt; base目录 &gt; profile目录 &gt; test\_pages.json文件
-2. 在module.json5文件中补充ability配置字段mainElement、pages、abilities，关于字段的具体说明请参考[module.json5配置文件](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)。
+2. 在module.json5文件中补充ability配置字段mainElement、pages、abilities，关于字段的具体说明请参考[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file)。
 
    ```
    {
@@ -88,7 +88,7 @@ sync_hash: ad0a3223
 
 #### 运行模式
 
-使用DevEco Studio运行测试用例前，需要将设备与电脑进行连接，将工程编译成带签名信息的HAP，再安装到真机设备或模拟器上运行，具体请参考[使用本地真机运行应用](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device)或[使用模拟器运行应用](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-emulator)。
+使用DevEco Studio运行测试用例前，需要将设备与电脑进行连接，将工程编译成带签名信息的HAP，再安装到真机设备或模拟器上运行，具体请参考[使用本地真机运行应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device)或[使用模拟器运行应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-emulator)。
 
 可以采用运行工程目录（test）、测试文件（如Ability.test.ets）、测试套件（describe）、测试方法（it）的方式来运行测试用例：
 
@@ -136,7 +136,7 @@ DevEco Studio支持设置调试代码类型，具体请参考[设置调试代码
 
 在Instrument Test运行的基础上支持代码覆盖率统计。
 
-开发者可以自定义需要参与覆盖率测试的文件，具体配置方法请参考[配置覆盖率过滤文件](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ui-test#section13756446154)。
+开发者可以自定义需要参与覆盖率测试的文件，具体配置方法请参考[配置覆盖率过滤文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ui-test#section13756446154)。
 
 可以采用运行工程目录（test）、测试文件（如Ability.test.ets）、测试套件（describe）、测试方法（it）的方式来启动代码覆盖率的统计。
 
@@ -153,7 +153,7 @@ DevEco Studio支持设置调试代码类型，具体请参考[设置调试代码
 
 ![](./img/zh-cn_image_0000002602066553.png)
 
-点击链接可打开报告，查看ArkTS代码覆盖率详情，关于覆盖率的计算方式请参考[查看覆盖率报告](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ui-test#section10394362109)。
+点击链接可打开报告，查看ArkTS代码覆盖率详情，关于覆盖率的计算方式请参考[查看覆盖率报告](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ui-test#section10394362109)。
 
 ![](./img/zh-cn_image_0000002602066557.png)
 
@@ -221,7 +221,7 @@ DevEco Studio支持设置调试代码类型，具体请参考[设置调试代码
 
 #### ASan检测
 
-Instrument Test针对C/C++方法提供ASan检测能力，关于ASan的介绍请参考[ASan检测](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-asan)，当前不支持JS语言。
+Instrument Test针对C/C++方法提供ASan检测能力，关于ASan的介绍请参考[ASan检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-asan)，当前不支持JS语言。
 
 1. 在运行/调试配置窗口，选择对应的Instrument Test，点击<strong>Diagnostics</strong>页签，勾选<strong>Address Sanitizer</strong>选项，勾选后，测试包和源码包均开启ASan能力。
 
@@ -333,7 +333,7 @@ hvigorw onDeviceTest -p module={moduleName} -p coverage={true|false} -p scope={s
 ```
 
 * module：执行测试的模块，缺省默认是执行所有模块的用例。
-* coverage：是否生成覆盖率报告，缺省默认是true，在&lt;module-path&gt;/.test/default/outputs/ohosTest/reports路径下生成两份报告，一份是html格式（index.html），一份是json格式（coverageReport.json），具体参考[查看覆盖率报告](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ui-test#section10394362109)。
+* coverage：是否生成覆盖率报告，缺省默认是true，在&lt;module-path&gt;/.test/default/outputs/ohosTest/reports路径下生成两份报告，一份是html格式（index.html），一份是json格式（coverageReport.json），具体参考[查看覆盖率报告](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ui-test#section10394362109)。
 
   如果开启了C++代码覆盖率测试，会生成C++代码的覆盖率报告，路径：&lt;module-path&gt;/.test/default/outputs/ohosTest/cpp\_reports/index.html
 * scope：格式为`&#123;suiteName&#125;`#`&#123;methodName&#125;`或`&#123;suiteName&#125;`，分别表示测试用例级别或测试套件级别的测试，缺省默认是执行当前模块的所有用例。

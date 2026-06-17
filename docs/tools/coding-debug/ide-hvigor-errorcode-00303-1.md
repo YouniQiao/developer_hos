@@ -115,7 +115,7 @@ XXX corresponding to the parameterFile is not find, Check the parameterFile is v
 
 <strong>处理步骤</strong>
 
-1、确保在工程级oh-package.json5中正确配置[parameterFile](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-oh-package-json5#section122411462820)字段。
+1、确保在工程级oh-package.json5中正确配置[parameterFile](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-oh-package-json5#section122411462820)字段。
 
 2、确保parameterFile文件存在且命名正确。
 
@@ -297,7 +297,7 @@ The project structure and configuration need to be upgraded before use.
 
 <strong>处理步骤</strong>
 
-参考[一体化工程迁移](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides-V14/ide-integrated-project-migration-V14)，对历史工程进行迁移。
+参考[一体化工程迁移](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V14/ide-integrated-project-migration-V14)，对历史工程进行迁移。
 
 #### 00303025 hvigor的modelVersion类型不兼容
 
@@ -721,7 +721,7 @@ Invalid version: XXX in parameterFile, the version must comply with the semver s
 
 <strong>错误描述</strong>
 
-parameterFile中的版本XXX无效，版本必须符合[semver](`https://`semver.org/)规范。
+parameterFile中的版本XXX无效，版本必须符合[semver](https://semver.org/)规范。
 
 <strong>可能原因</strong>
 
@@ -1146,7 +1146,7 @@ Hvigor和SDK版本不配套<strong>。</strong>
 <strong>处理步骤</strong>
 
 1. 从NEXT Developer Beta1开始，DevEco Studio提供了开箱即用的开发体验，将SDK、Node.js、Hvigor、Ohpm等工具链打包在一起，简化了DevEco Studio的安装和配置过程，并提供历史工程迁移的能力，帮助您快速完成工程转换。
-2. [下载](`https://`developer.huawei.com/consumer/cn/download/)一体化DevEco Studio工具。
+2. [下载](https://developer.huawei.com/consumer/cn/download/)一体化DevEco Studio工具。
 
 #### 00303083 SDK版本号配置错误
 
@@ -1579,7 +1579,7 @@ HarmonyOS工程中，abiFilters字段配置为armeabi-v7a。
 
 <strong>处理步骤</strong>
 
-确保[abiFilters](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-cpp#section0721057575)配置的是有效值。
+确保[abiFilters](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-cpp#section0721057575)配置的是有效值。
 
 #### 00303115 armeabi-v7a不能是OpenHarmony工程的唯一配置
 
@@ -1922,7 +1922,7 @@ XXX file version format is not compliant, please check.
 
 <strong>可能原因</strong>
 
-模块级oh-package.json5的version字段不符合[semver](`https://`semver.org/)规范。
+模块级oh-package.json5的version字段不符合[semver](https://semver.org/)规范。
 
 <strong>处理步骤</strong>
 
@@ -2164,7 +2164,7 @@ SDK组件缺失。
 <strong>处理步骤</strong>
 
 * 确保SDK路径正确：$DevEco Studio安装目录/sdk/default。
-* 重新[下载DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/)。
+* 重新[下载DevEco Studio](https://developer.huawei.com/consumer/cn/download/)。
 
 #### 00303169 har模块中找不到对应的target
 
@@ -2524,7 +2524,7 @@ Missing or invalid config of parameterFile in the project-level oh-package.json5
 
 <strong>处理步骤</strong>
 
-在工程级oh-package.json5文件中添加[parameterFile](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-oh-package-json5#section122411462820)字段，并确保配置正确。
+在工程级oh-package.json5文件中添加[parameterFile](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-oh-package-json5#section122411462820)字段，并确保配置正确。
 
 #### 00303198 build-profile.json5文件不符合schema规范
 
@@ -2876,7 +2876,7 @@ The reason and usedScene attributes are mandatory for user\_grant permissions.
 
 <strong>处理步骤</strong>
 
-具体配置方式请参考[声明权限](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)，需要满足以下条件：
+具体配置方式请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)，需要满足以下条件：
 
 1. 对于HAP模块，在module.json5文件的requestPermissions中添加reason和usedScene字段。
 2. 对于HAR/HSP模块，在module.json5文件的requestPermissions中添加reason字段。
@@ -2953,7 +2953,7 @@ The reason attribute are mandatory for user\_grant permissions.
 
 <strong>处理步骤</strong>
 
-具体配置方式请参考[声明权限](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)，需要满足以下条件：
+具体配置方式请参考[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)，需要满足以下条件：
 
 1. 对于HAP模块，在module.json5文件的requestPermissions中添加reason和usedScene字段。
 2. 对于HAR/HSP模块，在module.json5文件的requestPermissions中添加reason字段。
@@ -2974,7 +2974,7 @@ module.json5中type为form的ExtensionAbility中的metadata字段为空或者空
 
 <strong>处理步骤</strong>
 
-在module.json5中type为form的ExtensionAbility中配置[metadata字段](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration)。
+在module.json5中type为form的ExtensionAbility中配置[metadata字段](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration)。
 
 #### 00303224 FormExtensionAbility中的metadata必须包含ohos.extension.form
 
@@ -2992,7 +2992,7 @@ module.json5中type为form的ExtensionAbility中的metadata缺少name为“ohos.
 
 <strong>处理步骤</strong>
 
-在module.json5中type为form的ExtensionAbility中增加metadata字段，补充一个name为“ohos.extension.form”的对象值，并配置对应的resource值，具体配置方式参考[配置卡片的配置文件](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration)。
+在module.json5中type为form的ExtensionAbility中增加metadata字段，补充一个name为“ohos.extension.form”的对象值，并配置对应的resource值，具体配置方式参考[配置卡片的配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration)。
 
 #### 00303225 “Module-Abilities”对象的名称重复
 
@@ -3084,7 +3084,7 @@ The required attribute: module-name is missing.
 <strong>处理步骤</strong>
 
 1. 检查项目根目录下的build-profile.json5文件，确保modules下的name字段存在且非空。
-2. 检查项目根目录下的[hvigorconfig.ts文件](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section810245135914)，确保includeNode方法的参数name字段存在且非空。
+2. 检查项目根目录下的[hvigorconfig.ts文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section810245135914)，确保includeNode方法的参数name字段存在且非空。
 
 #### 00303230 找不到模块的srcPath
 
@@ -3104,7 +3104,7 @@ The required attribute module-srcPath is missing.
 <strong>处理步骤</strong>
 
 1. 检查项目根目录下的build-profile.json5文件，确保modules下的srcPath字段存在且非空。
-2. 检查项目根目录下的[hvigorconfig.ts文件](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section810245135914)，确保includeNode方法的参数srcPath字段存在且非空。
+2. 检查项目根目录下的[hvigorconfig.ts文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section810245135914)，确保includeNode方法的参数srcPath字段存在且非空。
 
 #### 00303231 srcPath属性值不是相对路径
 
@@ -3122,7 +3122,7 @@ hvigorconfig.ts动态添加模块时srcPath属性值不是相对路径。
 
 <strong>处理步骤</strong>
 
-检查项目根目录下的[hvigorconfig.ts文件](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section810245135914)，确保includeNode方法的参数srcPath字段为相对路径。
+检查项目根目录下的[hvigorconfig.ts文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section810245135914)，确保includeNode方法的参数srcPath字段为相对路径。
 
 #### 00303232 设置任务依赖时找不到模块
 
@@ -3759,7 +3759,7 @@ The har module must be set to byte code har when building customized har. At fil
 
 <strong>处理步骤</strong>
 
-将当前har模块配置为[字节码har](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-har#section16598338112415)。
+将当前har模块配置为[字节码har](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-har#section16598338112415)。
 
 #### 00303277 构建定制化har时，ohos.compile.lib.entryfile不能设置为true
 
@@ -3894,7 +3894,7 @@ hvigor命令行参数buildVersion不符合要求。
 
 <strong>处理步骤</strong>
 
-确保buildVersion是一个有效值，具体要求请参考[app.json5的buildVersion](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file#配置文件标签)。
+确保buildVersion是一个有效值，具体要求请参考[app.json5的buildVersion](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-configuration-file#配置文件标签)。
 
 #### 00303286 executableBinaryPaths-path的值不是文件
 

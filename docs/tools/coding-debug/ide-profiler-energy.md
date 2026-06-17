@@ -17,7 +17,7 @@ TV设备暂不支持使用Energy模板进行应用性能分析。
 
 #### 定位能耗问题
 
-1. 创建Energy模板任务并录制相关数据，操作方法可参考[性能问题定位：深度录制](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording)，或在会话区选择<strong>Open File</strong>，导入历史数据。
+1. 创建Energy模板任务并录制相关数据，操作方法可参考[性能问题定位：深度录制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording)，或在会话区选择<strong>Open File</strong>，导入历史数据。
 2. 录制结束等待处理数据完成。默认包含Energy Anomaly、Temperature以及Energy三条能耗相关泳道：
    * Energy Anomaly泳道：展示能耗相关的异常帧信息。该泳道暂不支持在Wearable设备上进行应用性能分析；
    * Temperature泳道：展示整机的温度信息。该泳道暂不支持在2in1设备上进行应用性能分析；
@@ -36,7 +36,7 @@ TV设备暂不支持使用Energy模板进行应用性能分析。
    * 2in1设备暂不支持查看RS Empty Run和GPU Consumption。
 
    ![](./img/zh-cn_image_0000002571386996.png "点击放大")
-6. 点击对应的异常类型数据（RS Empty Run、UI Empty Run和GPU Consumption），右侧More区域展示该异常帧信息，包括帧编号、RS VsyncId、帧持续时间。点击右侧跳转按钮可以跳转到Frame泳道中对应的具体帧，可以根据[查看指定Frame页面布局信息](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-frame#section58691959194312)详细查看页面组件的布局情况，以及识别存在能耗问题的组件。
+6. 点击对应的异常类型数据（RS Empty Run、UI Empty Run和GPU Consumption），右侧More区域展示该异常帧信息，包括帧编号、RS VsyncId、帧持续时间。点击右侧跳转按钮可以跳转到Frame泳道中对应的具体帧，可以根据[查看指定Frame页面布局信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-frame#section58691959194312)详细查看页面组件的布局情况，以及识别存在能耗问题的组件。
 
    ![](./img/zh-cn_image_0000002571386998.png "点击放大")
 7. 点击CPU高负载异常数据，右侧More区域展示该异常帧信息，包括进程ID、线程ID、负载值。点击右侧跳转按钮可以跳转到对应线程调用栈。

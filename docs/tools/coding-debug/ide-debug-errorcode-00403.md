@@ -43,7 +43,7 @@ Failed to parse the HiLog file: XXX.
 
 <strong>处理步骤</strong>
 
-参考[Release应用堆栈解析相关错误提示及解决措施](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-17)。
+参考[Release应用堆栈解析相关错误提示及解决措施](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-debugging-17)。
 
 #### 00403028 应用程序意外退出
 
@@ -225,7 +225,7 @@ Jerry adapter file not found.
 
 <strong>处理步骤</strong>
 
-在官网上重新[下载DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+在官网上重新[下载DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00403047 node路径无效
 
@@ -243,7 +243,7 @@ Node路径无效。
 
 <strong>处理步骤</strong>
 
-检查DevEco Studio安装目录的tools目录下是否存在node工具，如果不存在，在官网上重新[下载DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+检查DevEco Studio安装目录的tools目录下是否存在node工具，如果不存在，在官网上重新[下载DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00403048 无法启动webpack
 
@@ -279,7 +279,7 @@ The Previewer plugin not fully installed. Please verify.
 
 <strong>处理步骤</strong>
 
-在官网上重新[下载DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+在官网上重新[下载DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00403050 Jerry适配器无法连接到服务器
 

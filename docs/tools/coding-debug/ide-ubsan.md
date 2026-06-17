@@ -47,10 +47,10 @@ ASan、TSan、UBSan、HWASan不能同时开启，只能开启其中一个。
 #### 使用UBSan
 
 1. 运行或调试当前应用。
-2. 当检测出未定义行为时，弹出UBSan log信息，点击信息中的链接即可跳转到未定义行为的代码处。日志中的异常检测类型请参考[UBSan异常检测类型](`https://`developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-ubsan-detection#section124211321406)。
+2. 当检测出未定义行为时，弹出UBSan log信息，点击信息中的链接即可跳转到未定义行为的代码处。日志中的异常检测类型请参考[UBSan异常检测类型](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-ubsan-detection#section124211321406)。
 
    ![](./img/note_3.0-zh-cn.png)
 
-   无论[编译模式](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)是debug或release，均有链接可直接跳转至源码。
+   无论[编译模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)是debug或release，均有链接可直接跳转至源码。
 
 ![](./img/zh-cn_image_0000002602066139.png)

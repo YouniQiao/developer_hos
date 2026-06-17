@@ -24,7 +24,7 @@ sync_hash: db058e8f
 
 #### 选项
 
-详情请参考[eslint/eqeqeq选项](`https://`eslint.nodejs.cn/docs/latest/rules/eqeqeq#选项)。
+详情请参考[eslint/eqeqeq选项](https://eslint.nodejs.cn/docs/latest/rules/eqeqeq#选项)。
 
 #### 正例
 
@@ -49,4 +49,4 @@ export function test(a: string, b: string) {
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

@@ -11,7 +11,7 @@ sync_hash: 285a5953
 
 在资源拦截场景下，建议生成JavaScript字节码缓存，可以降低Web页面非首次的加载时间。
 
-[Web完成时延](`https://`developer.huawei.com/consumer/cn/doc/best-practices/bpta-web-develop-optimization#section1495115588211)场景下，建议优先修改。
+[Web完成时延](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-web-develop-optimization#section1495115588211)场景下，建议优先修改。
 
 #### 规则配置
 
@@ -229,4 +229,4 @@ struct JsCodeCacheByInterceptionCheckReport2 {
 plugin:@performance/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

@@ -9,7 +9,7 @@ sync_hash: 85776cd1
 ---
 # @correctness/image-pixel-format-check
 
-在使用Image组件[createPixelMap](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-f#imagecreatepixelmap8)接口时，建议不要选择RGB\_565档位，避免出现色阶问题。
+在使用Image组件[createPixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-f#imagecreatepixelmap8)接口时，建议不要选择RGB\_565档位，避免出现色阶问题。
 
 #### 规则配置
 
@@ -115,4 +115,4 @@ export class AodFailTask {
 plugin:@correctness/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

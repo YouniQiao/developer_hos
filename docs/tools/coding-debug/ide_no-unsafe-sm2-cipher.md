@@ -11,7 +11,7 @@ upstream_hash: 04459f765ac0
 
 # @security/no-unsafe-sm2-cipher
 
-此规则禁止在SM2算法中使用不安全的消息摘要算法MD5和SHA1。推荐使用SM2\_256|SHA256算法和RSA算法，算法详情参见：[非对称加解密算法](`https://`developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/aegis-encryption-and-decryption-asymmetric-0000001907932453)和[非对称密钥加解密算法规格](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-encrypt-decrypt-spec#rsa)。
+此规则禁止在SM2算法中使用不安全的消息摘要算法MD5和SHA1。推荐使用SM2\_256|SHA256算法和RSA算法，算法详情参见：[非对称加解密算法](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/aegis-encryption-and-decryption-asymmetric-0000001907932453)和[非对称密钥加解密算法规格](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/crypto-asym-encrypt-decrypt-spec#rsa)。
 
 #### 规则配置
 
@@ -49,4 +49,4 @@ cryptoFramework.createCipher('SM2_256|MD5')
 plugin:@security/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

@@ -35,4 +35,4 @@ sync_hash: 24656b89
 
 <strong>五、操作指导</strong>
 
-请参见[关联账号组](`/docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-associated-group-0000002521616574)。
+请参见[关联账号组](/docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-associated-group-0000002521616574)。

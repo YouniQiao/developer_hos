@@ -10,7 +10,7 @@ sync_hash: 693b7ee7
 
 ## 应用程序包基础知识
 
-开发应用前，请先了解应用程序包相关基础知识，具体请参考[应用程序包概述](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-overview).
+开发应用前，请先了解应用程序包相关基础知识，具体请参考[应用程序包概述](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-package-overview).
 
 ## 切换工程视图
 

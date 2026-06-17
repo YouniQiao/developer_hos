@@ -13,7 +13,7 @@ sync_hash: e5132691
 
 #### 前置操作
 
-体检前，请先在DevEco Testing中测试并导出检测报告，具体操作方式请参考[性能基础质量测试](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/specialized-testing#section12324184817324)或[场景化性能测试](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/specialized-testing#section8642101711299)。
+体检前，请先在DevEco Testing中测试并导出检测报告，具体操作方式请参考[性能基础质量测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/specialized-testing#section12324184817324)或[场景化性能测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/specialized-testing#section8642101711299)。
 
 #### 进行体检
 

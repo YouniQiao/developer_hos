@@ -22,7 +22,7 @@ sync_hash: 8caf8bce
 
 ## 功能入口
 
-[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`) &gt; APP与元服务 &gt; 运营 &gt; 用户运营 &gt; 开发者的话。
+[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html) &gt; APP与元服务 &gt; 运营 &gt; 用户运营 &gt; 开发者的话。
 
 ![](./img/aee3224a32ec.png)
 

@@ -49,7 +49,7 @@ sync_hash: 9e9e86ab
 
 #### 可访问目录
 
-Device File Browser可访问的文件夹有五种类型：[应用沙箱目录](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)、一般暂存区目录、日志目录、设备公共目录、媒体库目录。
+Device File Browser可访问的文件夹有五种类型：[应用沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory)、一般暂存区目录、日志目录、设备公共目录、媒体库目录。
 
 ![](./img/zh-cn_image_0000002571546824.png)
 
@@ -83,7 +83,7 @@ Device File Browser可访问的文件夹有五种类型：[应用沙箱目录](`
 
   在应用沙箱视图下，el1和el2目录下的文件均支持新建、删除、上传、下载操作。
 
-  从DevEco Studio 6.0.1 Release版本开始，新增云空间目录/data/storage/el2/cloud，具体使用方式请参考[端云文件协同](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloud-sync-file-overview)。
+  从DevEco Studio 6.0.1 Release版本开始，新增云空间目录/data/storage/el2/cloud，具体使用方式请参考[端云文件协同](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloud-sync-file-overview)。
 
 #### 一般暂存区目录
 
@@ -95,7 +95,7 @@ Device File Browser可访问的文件夹有五种类型：[应用沙箱目录](`
 
 应用运行时的日志通过HiLog工具实时输出，此工具的输出缓存区一般为256K，超出大小的历史日志将会以压缩包的形式保存在/data/log/hilog/路径下。
 
-当需要查看历史日志时，需要将此目录下的压缩包文件和数据字典压缩包文件hilog\_dict.XXX.zip下载到本地计算机，然后使用[hilogtool工具](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-tool)解析出对应的日志原文件。
+当需要查看历史日志时，需要将此目录下的压缩包文件和数据字典压缩包文件hilog\_dict.XXX.zip下载到本地计算机，然后使用[hilogtool工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-tool)解析出对应的日志原文件。
 
 ![](./img/zh-cn_image_0000002602066301.png)
 
@@ -190,9 +190,9 @@ Wearable设备不支持媒体库目录。
 
 #### 命令行方式访问应用沙箱
 
-可以通过命令行的方式访问debug应用的[沙箱目录](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系)。
+可以通过命令行的方式访问debug应用的[沙箱目录](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-sandbox-directory#应用沙箱路径和真实物理路径的对应关系)。
 
-* 从API 15开始，支持通过hdc工具访问debug应用的沙箱目录，推荐开发者使用此种方式。更多关于命令行工具hdc的说明请参见[hdc工具使用指导](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)。
+* 从API 15开始，支持通过hdc工具访问debug应用的沙箱目录，推荐开发者使用此种方式。更多关于命令行工具hdc的说明请参见[hdc工具使用指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)。
   1. 在设备侧启动应用。
 
      ```

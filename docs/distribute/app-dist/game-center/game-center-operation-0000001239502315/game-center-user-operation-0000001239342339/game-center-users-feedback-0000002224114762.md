@@ -13,8 +13,8 @@ sync_hash: 6f30caee
 
 ## 应用反馈管理
 
-1. 功能入口：[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)&gt; APP与元服务 &gt; 运营 &gt; 用户运营 &gt; 用户反馈管理。
-2. 接入[浮标](`https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/game-buoy-0000001050121528`)API的联运应用（包含游戏）可以使用问题反馈；在EMUI9.0及以上的设备上，未接入浮标API的应用也可以使用问题反馈，要求AppGallery（华为应用市场）9.0.0及以上、HMS Core 2.6.2及以上。
+1. 功能入口：[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)&gt; APP与元服务 &gt; 运营 &gt; 用户运营 &gt; 用户反馈管理。
+2. 接入[浮标](https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/game-buoy-0000001050121528)API的联运应用（包含游戏）可以使用问题反馈；在EMUI9.0及以上的设备上，未接入浮标API的应用也可以使用问题反馈，要求AppGallery（华为应用市场）9.0.0及以上、HMS Core 2.6.2及以上。
 
    ![](./img/e64da8bbb181.png)
 3. 用户在您的应用内打开浮标，点击右上角问题反馈图标打开页面进行反馈，用户可提交截图、日志。开发者则可以在后台设置快捷答复，并可对答复内容自定义化。
@@ -34,7 +34,7 @@ sync_hash: 6f30caee
 
 ## 元服务反馈管理
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)网站，点击“APP与元服务”，在应用列表页的“HarmonyOS”页签，选择需查看用户反馈的元服务。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，点击“APP与元服务”，在应用列表页的“HarmonyOS”页签，选择需查看用户反馈的元服务。
 2. 选择“运营 &gt; 用户运营 &gt; 用户反馈管理”，进入用户反馈页面。
 
    ![](./img/a1d509fb6937.png)

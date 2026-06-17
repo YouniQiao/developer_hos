@@ -44,7 +44,7 @@ sync_hash: 95fc95df
 
 ### 上传单个素材内容
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”，在应用列表页面选择需要新增营销素材的应用。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在应用列表页面选择需要新增营销素材的应用。
 2. 选择“运营 &gt; 内容运营 &gt; 营销素材管理”，在页面右侧点击“新增”。
 
    ![](./img/a9e6cb4a0743.png)
@@ -67,7 +67,7 @@ sync_hash: 95fc95df
    | 标题 | 不超过28个字符，汉字占2个字符。 |
    | 文案 | 不超过60个字符，汉字占2个字符。 |
    | 展示标签（可选） | 不超过30个字符，汉字占2个字符。 |
-   | 落地页 | 落地页类型 | 您可以选择如下一种落地页类型：  * 应用详情页：游戏详情页。 * 原生落地页：投放在杂志锁屏的原生免解锁落地页。点击“新建”或“编辑”将前往[魔方创意](`/docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-0000001429732169)设计落地页。 说明：  “进行中”的营销素材再次编辑落地页后需再次审核。 |
+   | 落地页 | 落地页类型 | 您可以选择如下一种落地页类型：  * 应用详情页：游戏详情页。 * 原生落地页：投放在杂志锁屏的原生免解锁落地页。点击“新建”或“编辑”将前往[魔方创意](/docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-0000001429732169)设计落地页。 说明：  “进行中”的营销素材再次编辑落地页后需再次审核。 |
    | 资质证明 | 资质证明（可选） | 上传可用于验证素材使用权的资质证明，要求大小不超过50MB的Zip包，如肖像使用授权书等文件。 |
 4. 华为工作人员审核营销素材预计需要1~3个工作日，请耐心等待，审核结果可在“审核结果”栏查看。
 
@@ -75,7 +75,7 @@ sync_hash: 95fc95df
 
 ### 批量上传素材内容
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”，在应用列表页面选择需要新增营销素材的应用。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在应用列表页面选择需要新增营销素材的应用。
 2. 选择“运营 &gt; 内容运营 &gt; 营销素材管理”，在页面右侧点击“批量新增”。
 
    ![](./img/e8ff88c6f9e0.png)
@@ -100,7 +100,7 @@ sync_hash: 95fc95df
    | 标题 | 不超过28个字符，汉字占2个字符。 |
    | 文案 | 不超过60个字符，汉字占2个字符。 |
    | 展示标签（可选） | 不超过30个字符，汉字占2个字符。 |
-   | 落地页 | 落地页类型 | 您可以选择如下一种落地页类型：  * 应用详情页：游戏详情页。 * 原生落地页：投放在杂志锁屏的原生免解锁落地页。点击“新建”或“编辑”将前往[魔方创意](`/docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-0000001429732169)设计落地页。 说明：  “进行中”的营销素材再次编辑落地页后需再次审核。 |
+   | 落地页 | 落地页类型 | 您可以选择如下一种落地页类型：  * 应用详情页：游戏详情页。 * 原生落地页：投放在杂志锁屏的原生免解锁落地页。点击“新建”或“编辑”将前往[魔方创意](/docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-0000001429732169)设计落地页。 说明：  “进行中”的营销素材再次编辑落地页后需再次审核。 |
    | 资质证明 | 资质证明（可选） | 上传可用于验证素材使用权的资质证明，要求大小不超过50MB的Zip包，如肖像使用授权书等文件。 |
    |  | 详情复用（可选） | 可将当前素材所填写的标题、文案、落地页类型复用至所选中的素材详情中，如果其他素材已填写了内容，将会直接覆盖。 |
 5. 华为工作人员审核营销素材预计需要1~3个工作日，请耐心等待，审核结果可在“审核结果”栏查看。
@@ -129,7 +129,7 @@ sync_hash: 95fc95df
 
 为了给您带来高品质的营销体验，帮助您了解不同营销素材的使用效果，洞察行业市场的营销趋势，您可以实时查看推广平台的用户行为与分析数据。
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“分析”，在应用列表页面选择需要查看报表的应用，选择“运营分析 &gt; 营销素材分析”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“分析”，在应用列表页面选择需要查看报表的应用，选择“运营分析 &gt; 营销素材分析”。
 2. 在“营销素材分析”页面，您可以筛选素材属性、分析指标后，查看对应的营销素材报表。
 
    ![](./img/594157cae252.png)

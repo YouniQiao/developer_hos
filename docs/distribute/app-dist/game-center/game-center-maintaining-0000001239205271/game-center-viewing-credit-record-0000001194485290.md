@@ -17,7 +17,7 @@ sync_hash: 8e69564b
 
 ## 查询应用信用记录
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。
 2. 在应用列表中点击您的应用，选择“分发 &gt; 记录查询 &gt; 应用信用记录”。
 
    ![](./img/6ad9e3f26769.png)
@@ -27,7 +27,7 @@ sync_hash: 8e69564b
      + 联运违规：联运应用的违规行为。
      + 刷量违规：所有应用（联运、非联运）恶意刷量刷榜行为，例如：刷下载量、流水、搜索等冒充用户行为以提高相关数据等。
      + 刷评论违规：所有应用（联运、非联运）刷评论，冒充用户评论以提高相关数据的行为。
-     + 其他违规：包括但不限于游戏蹭量、换皮、应用的侵权投诉（参见[《华为应用市场侵权投诉通知和反通知流程》](`https://developer.huawei.com/consumer/cn/doc/50120`)），具体内容可从“违规详情”处获知。
+     + 其他违规：包括但不限于游戏蹭量、换皮、应用的侵权投诉（参见[《华为应用市场侵权投诉通知和反通知流程》](https://developer.huawei.com/consumer/cn/doc/50120)），具体内容可从“违规详情”处获知。
 
        ![](./img/8cbddb70ed2c.png)
    * 违规日期：选择起止日期。

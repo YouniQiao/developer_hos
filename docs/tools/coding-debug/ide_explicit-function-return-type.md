@@ -48,7 +48,7 @@ type Options = [
 }
 ```
 
-其余配置详情请参考[@typescript-eslint/explicit-function-return-type选项](`https://`typescript-eslint.nodejs.cn/rules/explicit-function-return-type/#options)。
+其余配置详情请参考[@typescript-eslint/explicit-function-return-type选项](https://typescript-eslint.nodejs.cn/rules/explicit-function-return-type/#options)。
 
 #### 正例
 
@@ -109,4 +109,4 @@ plugin:@typescript-eslint/recommended
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

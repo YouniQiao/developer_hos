@@ -26,7 +26,7 @@ sync_hash: eca3606a
 
 #### 选项
 
-详情请参考[@typescript-eslint/no-use-before-define选项](`https://`eslint.nodejs.cn/docs/rules/no-use-before-define#选项)。
+详情请参考[@typescript-eslint/no-use-before-define选项](https://eslint.nodejs.cn/docs/rules/no-use-before-define#选项)。
 
 #### 正例
 
@@ -64,4 +64,4 @@ const foo = '1';
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

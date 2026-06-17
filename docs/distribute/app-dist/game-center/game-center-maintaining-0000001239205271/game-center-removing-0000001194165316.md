@@ -13,7 +13,7 @@ sync_hash: b2993350
 
 ![](./img/04a196ef8c05.png)
 
-下架应用仍会占据包名，只有[删除应用](`/docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-deleting-0000001239645257#ZH-CN_TOPIC_0000001239645257`)才会释放包名。
+下架应用仍会占据包名，只有[删除应用](/docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-deleting-0000001239645257#ZH-CN_TOPIC_0000001239645257)才会释放包名。
 
 ![](./img/61df48209d6b.png)
 
@@ -23,13 +23,13 @@ sync_hash: b2993350
 
 ## 提交下架申请
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要下架的在架应用版本链接，系统进入该版本的“版本信息”页面。
 3. 点击右上角的“申请下架”。
 
    ![](./img/1dfffed63a80.png)
 
-   发布的开放式测试版本不需要“申请下架”，如需下架开放式测试版本，请参考[下架开放式测试版本](`https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/agc-betatest-removerelease-0000001503531537`)。
+   发布的开放式测试版本不需要“申请下架”，如需下架开放式测试版本，请参考[下架开放式测试版本](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/agc-betatest-removerelease-0000001503531537)。
 
    ![](./img/493aedba75b2.png)
 4. 在弹出对话框中填写下架原因、备注（可选）后，点击“确认”。
@@ -89,7 +89,7 @@ sync_hash: b2993350
 
 ![](./img/1aebc4e42d49.png)
 
-您需要确保重新上架的APK应用签名与之前下架的APK应用签名一致，否则当您选取软件包时，会弹出错误提示框。相关内容参见[软件包签名不一致处理](`/docs/distribute/app-dist/game-center/game-center-update-0000001239645255/game-center-upgrade-version-0000001194325288#section15339193186`)。
+您需要确保重新上架的APK应用签名与之前下架的APK应用签名一致，否则当您选取软件包时，会弹出错误提示框。相关内容参见[软件包签名不一致处理](/docs/distribute/app-dist/game-center/game-center-update-0000001239645255/game-center-upgrade-version-0000001194325288#section15339193186)。
 
 ![](./img/9157935d4305.png)
 

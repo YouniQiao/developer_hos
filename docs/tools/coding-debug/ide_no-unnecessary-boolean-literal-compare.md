@@ -26,7 +26,7 @@ upstream_hash: 47fe23e50bc6
 
 #### 选项
 
-详情请参考[@typescript-eslint/no-unnecessary-boolean-literal-compare选项](`https://`typescript-eslint.nodejs.cn/rules/no-unnecessary-boolean-literal-compare/#options)。
+详情请参考[@typescript-eslint/no-unnecessary-boolean-literal-compare选项](https://typescript-eslint.nodejs.cn/rules/no-unnecessary-boolean-literal-compare/#options)。
 
 #### 正例
 
@@ -59,4 +59,4 @@ if (someCondition === true) {
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

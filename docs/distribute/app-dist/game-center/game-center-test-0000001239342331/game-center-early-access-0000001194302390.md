@@ -15,14 +15,14 @@ sync_hash: 0ada7257
 
 ## 前提条件
 
-* 您已成功[创建游戏](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-createapp-0000001146718717`)，且软件包类型为“APK(Android应用)”，支持设备为“手机”。
-* 您已[配置应用基本信息](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-releaseapkrpk-0000001106463276#section27070410361`)，且游戏分类不包括“斗地主”、“捕鱼”、“纸牌 ”和“麻将”。
+* 您已成功[创建游戏](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-createapp-0000001146718717)，且软件包类型为“APK(Android应用)”，支持设备为“手机”。
+* 您已[配置应用基本信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-releaseapkrpk-0000001106463276#section27070410361)，且游戏分类不包括“斗地主”、“捕鱼”、“纸牌 ”和“麻将”。
 * 为了提升内测包的通过率，您需要提前自检游戏接入参数、游戏登录体验、游戏支付体验等。
-* （可选）您可以[开通社区论坛](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)，用于宣传游戏内容，聚集核心用户。
+* （可选）您可以[开通社区论坛](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)，用于宣传游戏内容，聚集核心用户。
 
 ## 提交内测申请
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”，在应用列表页面选择需要申请内测的游戏。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在应用列表页面选择需要申请内测的游戏。
 2. 选择“分发 &gt; 服务 &gt; 测试申请”，在页面右侧点击“申请”。
 
    ![](./img/03d5aa8d6d2f.png)
@@ -38,7 +38,7 @@ sync_hash: 0ada7257
    | 类别 | 参数 | 说明 |
    | --- | --- | --- |
    | 游戏基本信息 | 测试类型 | 请选择“内测”。 |
-   | 测试时间 | 游戏内测的时间段。若有调整请及时更新。  说明：  * 建议单次内测时间为7~30天，内测结束时间为23:59:00，每两次内测间隔时间需超过7天。 * 若您已申请新游预约，请确保内测结束时间必须早于预约的[首发精确时间](`/docs/distribute/app-dist/game-center/game-center-pre-order-0000001239342333/game-center-pre-order-apk-0000002089114109#ZH-CN_TOPIC_0000002089114109__p108342217437`)。 |
+   | 测试时间 | 游戏内测的时间段。若有调整请及时更新。  说明：  * 建议单次内测时间为7~30天，内测结束时间为23:59:00，每两次内测间隔时间需超过7天。 * 若您已申请新游预约，请确保内测结束时间必须早于预约的[首发精确时间](/docs/distribute/app-dist/game-center/game-center-pre-order-0000001239342333/game-center-pre-order-apk-0000002089114109#ZH-CN_TOPIC_0000002089114109__p108342217437)。 |
    | 预计首发时间 | 游戏首次正式上架时间。  说明：  游戏正式首发前8天必须结束游戏内测。 |
    | 是否删档 | 内测结束后，是否清空当前内测的玩家数据。  说明：  同一个游戏不删档情况最多内测2次。 |
    | 是否计费 | 游戏内是否包含付费功能。  说明：  同一个游戏不计费情况最多内测2次。 |
@@ -66,8 +66,8 @@ sync_hash: 0ada7257
 * 请至少提前5个工作日提交内测包审核，预留时间修改问题，确保内测包顺利上架。
 * 建议每次内测申请后都重新提交内测包。
 
-1. 登录[AppGallery Connect网站](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/`)，点击“APP与元服务”。
-2. 在应用列表中点击需要提交内测包的游戏，选择“分发 &gt; 应用上架 &gt; 版本信息”，在“版本信息”页面提交内测包，接入要求、流程与[发布应用(APK)](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-releaseapkrpk-0000001106463276`)一致。
+1. 登录[AppGallery Connect网站](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)，点击“APP与元服务”。
+2. 在应用列表中点击需要提交内测包的游戏，选择“分发 &gt; 应用上架 &gt; 版本信息”，在“版本信息”页面提交内测包，接入要求、流程与[发布应用(APK)](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-releaseapkrpk-0000001106463276)一致。
 
    ![](./img/4aa1e5c4263d.png)
 
@@ -78,7 +78,7 @@ sync_hash: 0ada7257
    * 若内测游戏有付费功能，则“应用内资费”应勾选相应的资费类型。
    * 建议内测包的上架时间和内测开始时间保持一致。
    * 是否为开放式测试版本，请选择“否”。
-3. 内测包的审核预计需要3~5个工作日，请耐心等待。审核结果可在“版本信息”页面或[互动中心](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/interactive`)查看。
+3. 内测包的审核预计需要3~5个工作日，请耐心等待。审核结果可在“版本信息”页面或[互动中心](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/interactive)查看。
 
 ## 内测游戏上架
 
@@ -113,7 +113,7 @@ sync_hash: 0ada7257
 
 内测结束后24小时可在页面查看日报告，七日后可下载汇总报告。报告提供“曝光”、“下载”、“留存”等多维度指标的图表及详细数据，同时展示基于游戏分类的行业数据，可助力您调优游戏产品、节省测试成本，提升新游测试效率。
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。
 2. 在应用列表中选择查看报告的应用，选择“分析 &gt; 服务 &gt; 测试申请”，在页面右侧点击对应申请“操作”列的“报告”。
 
    ![](./img/3e3ee4112440.png)
@@ -166,7 +166,7 @@ sync_hash: 0ada7257
 |  |  |
 | --- | --- |
 | 邮件标题 | 您的游戏名称+优化测试 |
-| 邮件内容 | * 优化测试原因。 * APP ID：查询方法可参见[查询应用基本信息](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-appinfo-0000001100014694`)。 * 版本更新列表。 |
+| 邮件内容 | * 优化测试原因。 * APP ID：查询方法可参见[查询应用基本信息](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-appinfo-0000001100014694)。 * 版本更新列表。 |
 | 收件邮箱 | game.business@huawei.com |
 
 ![](./img/c6ca73d86d2b.png)
@@ -200,4 +200,4 @@ sync_hash: 0ada7257
 
 ### 游戏内测对资质是否有要求？
 
-游戏内测对资质的要求可参考[准备游戏资质](`/docs/distribute/app-dist/game-center/game-center-access-0000001239622337/game-center-preparation-work-0000001194305246#section5818191119155`)。
+游戏内测对资质的要求可参考[准备游戏资质](/docs/distribute/app-dist/game-center/game-center-access-0000001239622337/game-center-preparation-work-0000001194305246#section5818191119155)。

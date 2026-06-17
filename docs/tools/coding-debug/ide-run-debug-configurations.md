@@ -19,7 +19,7 @@ upstream_hash: 6156e9de59f0
    * true：应用支持调试。
    * false：应用不支持调试。
 2. 如果没有配置debug字段，则根据build-profile.json5的debuggable字段判断应用是否支持调试。
-   * true：应用支持调试。当[编译模式](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)不是release时，debuggable的缺省值是true，即支持调试。
+   * true：应用支持调试。当[编译模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)不是release时，debuggable的缺省值是true，即支持调试。
    * false：应用不支持调试。当编译模式为release时，debuggable的缺省值是false，即不支持调试。
 
 #### 设置调试代码类型
@@ -61,8 +61,8 @@ upstream_hash: 6156e9de59f0
 ![](./img/zh-cn_image_0000002602066379.png)
 
 * Installation Options
-  + DebugLine Support：勾选Enable DebugLine表示在build产物中系统组件增加debugline属性，用于开启[ArkUI Inspector源码跳转](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arkui-inspector#section1226015494335)功能。
-  + Install Flags：输入bm install命令相关的选项，请参见[bm install 参数](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/bm-tool#安装命令install)。如可以设置“-w 360”，表示将超时等待时间设置为360秒。
+  + DebugLine Support：勾选Enable DebugLine表示在build产物中系统组件增加debugline属性，用于开启[ArkUI Inspector源码跳转](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arkui-inspector#section1226015494335)功能。
+  + Install Flags：输入bm install命令相关的选项，请参见[bm install 参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bm-tool#安装命令install)。如可以设置“-w 360”，表示将超时等待时间设置为360秒。
 * Launch Options
   + Launch：指定在安装应用后启动的Ability。
 
@@ -75,10 +75,10 @@ upstream_hash: 6156e9de59f0
       * FA模型：config.json文件中配置了“skills”属性的第一个ability；若无配置“skills”属性的ability，则取“mainAbility”指定的ability（该ability需存在于“abilities”数组内）；若“mainAbility”未指定，则取“abilities”数组内的第一个ability。
     - Specified Ability：工程中的UIAbility或ExtensionAbility。
 
-      您可以在工程中添加UIAbility或ExtensionAbility，详细请查看[UIAbility开发指导](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability)或[ExtensionAbility开发指导](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/extensionability-overview)。
+      您可以在工程中添加UIAbility或ExtensionAbility，详细请查看[UIAbility开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability)或[ExtensionAbility开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/extensionability-overview)。
 
       ![](./img/zh-cn_image_0000002602066383.png)
-  + Launch Flags：输入aa start命令相关的选项，请参见[aa start 参数](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/aa-tool)。
+  + Launch Flags：输入aa start命令相关的选项，请参见[aa start 参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/aa-tool)。
 
 #### 配置环境变量
 
@@ -88,7 +88,7 @@ upstream_hash: 6156e9de59f0
 
 点击![](./img/zh-cn_image_0000002571387286.png)按钮，新增一行配置项。当前支持以下配置项：
 
-* ASAN\_OPTIONS：在运行时配置ASan的行为，包括设置检测级别、输出格式、内存错误报告的详细程度等，具体可配置的value请参见[配置参数](`https://`developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-asan-detection#section1496994494018)。若开发者未配置log\_exe\_name、abort\_on\_error，DevEco Studio将自动填充。ASAN\_OPTIONS是应用级别的，只在entry和feature模块中配置生效，HAR/HSP模块配置不生效。
+* ASAN\_OPTIONS：在运行时配置ASan的行为，包括设置检测级别、输出格式、内存错误报告的详细程度等，具体可配置的value请参见[配置参数](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-stability-asan-detection#section1496994494018)。若开发者未配置log\_exe\_name、abort\_on\_error，DevEco Studio将自动填充。ASAN\_OPTIONS是应用级别的，只在entry和feature模块中配置生效，HAR/HSP模块配置不生效。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -100,7 +100,7 @@ upstream_hash: 6156e9de59f0
 
 #### 自动映射WebView调试链接
 
-当应用中含有需要调试的WebView组件页面时，可以通过浏览器的DevTools工具进行页面调试，具体可参考[使用DevTools工具调试前端页面](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-debugging-with-devtools)。调试WebView组件需要执行转发端口等繁琐的命令行操作，因此可以在DevEco Studio中勾选<strong>Auto WebView Debug</strong>，该操作会在应用启动后两分钟内自动监听可调试的WebView进程并完成端口转发。
+当应用中含有需要调试的WebView组件页面时，可以通过浏览器的DevTools工具进行页面调试，具体可参考[使用DevTools工具调试前端页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-debugging-with-devtools)。调试WebView组件需要执行转发端口等繁琐的命令行操作，因此可以在DevEco Studio中勾选<strong>Auto WebView Debug</strong>，该操作会在应用启动后两分钟内自动监听可调试的WebView进程并完成端口转发。
 
 该功能从DevEco Studio 5.0.5 Release版本开始支持。
 

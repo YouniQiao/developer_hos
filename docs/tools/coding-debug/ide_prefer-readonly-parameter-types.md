@@ -11,7 +11,7 @@ upstream_hash: e55ead2e1b1d
 
 # @typescript-eslint/prefer-readonly-parameter-types
 
-要求将函数参数解析为“只读”类型，以防止参数被修改而产生一些副作用，更多规则详情请参考[prefer-readonly-parameter-types](`https://`typescript-eslint.nodejs.cn/rules/prefer-readonly-parameter-types)。
+要求将函数参数解析为“只读”类型，以防止参数被修改而产生一些副作用，更多规则详情请参考[prefer-readonly-parameter-types](https://typescript-eslint.nodejs.cn/rules/prefer-readonly-parameter-types)。
 
 该规则校验比较严格，由开发者自主判断是否需要修复告警。
 
@@ -28,7 +28,7 @@ upstream_hash: e55ead2e1b1d
 
 #### 选项
 
-详情请参考[@typescript-eslint/prefer-readonly-parameter-types选项](`https://`typescript-eslint.nodejs.cn/rules/prefer-readonly-parameter-types/#options)。
+详情请参考[@typescript-eslint/prefer-readonly-parameter-types选项](https://typescript-eslint.nodejs.cn/rules/prefer-readonly-parameter-types/#options)。
 
 #### 正例
 
@@ -96,4 +96,4 @@ export function array4(arg: [string[], number]): void {
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

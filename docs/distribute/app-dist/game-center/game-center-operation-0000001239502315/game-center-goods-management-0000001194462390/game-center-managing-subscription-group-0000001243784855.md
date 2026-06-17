@@ -13,12 +13,12 @@ sync_hash: cfb52754
 
 ## 前提条件
 
-* 您已在商品管理[新增商品](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-creating-product-0000001239502323)。
+* 您已在商品管理[新增商品](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-creating-product-0000001239502323)。
 * 建议使用Google Chrome浏览器访问商品管理服务，最低版本为62.0.3202.62。
 
 ## 新增订阅组
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要新增订阅组的应用。
 3. 选择“运营”页签，在左侧导航栏选择“产品运营 &gt; 商品管理”。
 4. 选择“订阅组列表”页签，点击“添加订阅组”。

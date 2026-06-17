@@ -9,14 +9,14 @@ sync_hash: 24498782
 ---
 # extension调试
 
-开发者可通过两种方式对[Extension Ability](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/extensionability-overview)生命周期函数进行调试。
+开发者可通过两种方式对[Extension Ability](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/extensionability-overview)生命周期函数进行调试。
 
 * 应用安装到设备上后，通过等待调试方式进行调试。
 * 修改运行调试配置项，指定当前运行或调试的Ability为Extension Ability。
 
 #### 等待调试方式
 
-1. 参考[等待调试](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-arkts-attach-to-process)对当前调试工程进行调试。
+1. 参考[等待调试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-debug-arkts-attach-to-process)对当前调试工程进行调试。
 
    ![](./img/zh-cn_image_0000002602186643.png)
 2. 在Extension Ability生命周期内设置断点。

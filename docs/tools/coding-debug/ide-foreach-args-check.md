@@ -11,7 +11,7 @@ sync_hash: 3717fdd0
 
 建议在ForEach参数中设置keyGenerator。
 
-[滑动丢帧场景](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach#键值生成规则)下，建议优先修改。
+[滑动丢帧场景](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-rendering-control-foreach#键值生成规则)下，建议优先修改。
 
 #### 规则配置
 
@@ -86,4 +86,4 @@ plugin:@performance/recommended
 plugin:@performance/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

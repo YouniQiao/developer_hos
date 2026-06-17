@@ -33,7 +33,7 @@ sync_hash: f698afaa
 
 ### 申请链接前缀
 
-链接前缀是指聚合链接地址中包含的网址，其格式为`https://`域名。创建聚合链接前，需要申请链接前缀。
+链接前缀是指聚合链接地址中包含的网址，其格式为https://域名。创建聚合链接前，需要申请链接前缀。
 
 1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“开发与服务”。
 2. 在项目列表中点击HarmonyOS应用所在的项目（请确保所有平台的应用在同一项目下）。

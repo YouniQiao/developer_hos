@@ -13,7 +13,7 @@ sync_hash: 702b3803
 
 您的应用在鸿蒙应用市场上首次发布之前，您可以通过预约发布服务，实现用户从预约到安装应用的全链路闭环，高效触达目标用户。
 
-如果您的鸿蒙应用提供预约发布服务，首先需要在[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/`)上创建应用的简要版本，补充应用信息，再在[应用推广引擎](`https://developer.huawei.com/consumer/cn/service/apcs/aggrowth/chassis/resources/scheduledService/mgt`)使用预约发布服务，以便在发布之前吸引用户预约下载该应用。
+如果您的鸿蒙应用提供预约发布服务，首先需要在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)上创建应用的简要版本，补充应用信息，再在[应用推广引擎](https://developer.huawei.com/consumer/cn/service/apcs/aggrowth/chassis/resources/scheduledService/mgt)使用预约发布服务，以便在发布之前吸引用户预约下载该应用。
 
 发布当日，您的鸿蒙应用会自动下载到预约用户的设备上，以便立即开始体验您的应用。
 
@@ -25,13 +25,13 @@ sync_hash: 702b3803
 
 ## 前提条件
 
-1. 已在AppGallery Connect创建鸿蒙应用；若未创建，请参考[创建HarmonyOS应用/元服务](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-createharmonyapp-0000001945392297`)开始创建。
-2. 已在AppGallery Connect补充完整鸿蒙应用的应用信息；若未补充，请参考[配置应用信息](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyos-releaseapp-non-next-0000002179322402#section242410559206`)，并前往[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/`)补充应用信息，其中"应用信息"界面的语言，应用名称，应用图标，应用分类，应用标签为必填项。
+1. 已在AppGallery Connect创建鸿蒙应用；若未创建，请参考[创建HarmonyOS应用/元服务](https://developer.huawei.com/consumer/cn/doc/app/agc-help-createharmonyapp-0000001945392297)开始创建。
+2. 已在AppGallery Connect补充完整鸿蒙应用的应用信息；若未补充，请参考[配置应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyos-releaseapp-non-next-0000002179322402#section242410559206)，并前往[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)补充应用信息，其中"应用信息"界面的语言，应用名称，应用图标，应用分类，应用标签为必填项。
 3. 您的鸿蒙应用未在鸿蒙应用市场发布。
 
 ## 创建预约发布任务
 
-1. 登录[应用推广引擎](`https://developer.huawei.com/consumer/cn/service/apcs/aggrowth/chassis/resources/scheduledService/mgt`)，进入预约发布服务页面，点击“新增发布”。
+1. 登录[应用推广引擎](https://developer.huawei.com/consumer/cn/service/apcs/aggrowth/chassis/resources/scheduledService/mgt)，进入预约发布服务页面，点击“新增发布”。
 
    ![](./img/a4a36fe2586a.png "点击放大")
 2. 选择未上架应用创建发布项目，填写相关信息。提交审核，待通过后即可开始预约发布。
@@ -58,7 +58,7 @@ sync_hash: 702b3803
 | 版本号 | 必填项，应用的版本号。 |
 | 隐私政策网址 | 必填项，应用的隐私政策网址 。 |
 | 应用涉及获取的权限 | 必填项，应用涉及获取的权限。 |
-| 年龄分级 | 必填项，应用的年龄分级。  您在[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/`)填写的应用分类，将决定哪些年龄分级可供选择。 |
+| 年龄分级 | 必填项，应用的年龄分级。  您在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)填写的应用分类，将决定哪些年龄分级可供选择。 |
 | 内容标题 | 必填项，关于预约应用的内容标题，不超过30个中文。<strong>该标题不可与应用名称重复。</strong> |
 | 内容简短文案 | 必填项，关于预约应用的内容简短描述，不超过50个中文。 |
 | 内容完整文案 | 必填项，关于预约应用的内容详细描述，不超过120个中文。 |
@@ -119,7 +119,7 @@ sync_hash: 702b3803
 
 ## 数据分析
 
-您可以在[数据分析](`https://developer.huawei.com/consumer/cn/service/apcs/aggrowth/chassis/resources/scheduledService/analysis`)页面，对已创建的预约发布任务进行数据分析和导出。当前支持应用、日期、任务维度的检索，查询预约量、展示量、取消预约量以及预约率的数据和趋势。
+您可以在[数据分析](https://developer.huawei.com/consumer/cn/service/apcs/aggrowth/chassis/resources/scheduledService/analysis)页面，对已创建的预约发布任务进行数据分析和导出。当前支持应用、日期、任务维度的检索，查询预约量、展示量、取消预约量以及预约率的数据和趋势。
 
 ![](./img/7504284c3e09.png "点击放大")
 

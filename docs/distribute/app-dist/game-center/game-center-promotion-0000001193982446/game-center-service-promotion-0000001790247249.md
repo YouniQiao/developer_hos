@@ -11,7 +11,7 @@ sync_hash: 7fed256f
 
 ![](./img/325f12ecbb41.png)
 
-[服务介绍链接：游戏中心介绍总览](`/docs/distribute/app-dist/game-center/game-center-introduction-0000001193266912)
+[服务介绍链接：游戏中心介绍总览](/docs/distribute/app-dist/game-center/game-center-introduction-0000001193266912)
 
 ## 游戏中心客户端-在玩
 
@@ -27,7 +27,7 @@ sync_hash: 7fed256f
 
 ![](./img/2bdd898cb2f5.png)
 
-[游戏中心在玩Tab规范.pdf](`https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260115193444.49227859886352701724916092295621%3A50001231000000%3A2800%3A447AAAE16CF302062AF11A273F1A34C3050E860FD5CF1065C610DFFF0D8C31FD.pdf?needInitFileName=true`)
+[游戏中心在玩Tab规范.pdf](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260115193444.49227859886352701724916092295621%3A50001231000000%3A2800%3A447AAAE16CF302062AF11A273F1A34C3050E860FD5CF1065C610DFFF0D8C31FD.pdf?needInitFileName=true)
 
 ## 游戏中心客户端信息流
 
@@ -53,7 +53,7 @@ sync_hash: 7fed256f
 
 ![](./img/8df9baf2a8ae.png)
 
-[服务介绍链接：AGC-社区管理操作指南](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)
+[服务介绍链接：AGC-社区管理操作指南](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)
 
 ![](./img/e90ac011f283.png)
 
@@ -61,15 +61,15 @@ sync_hash: 7fed256f
 
 |  |  |
 | --- | --- |
-| [服务介绍链接：AGC-互动评论操作指南](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-interaction-comments-0000001239182361) | [服务介绍链接：AGC-开发者的话操作指南](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-developers-message-0000001194302396) |
+| [服务介绍链接：AGC-互动评论操作指南](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-interaction-comments-0000001239182361) | [服务介绍链接：AGC-开发者的话操作指南](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-developers-message-0000001194302396) |
 
 ![](./img/391e60bb1a42.png)
 
-[服务介绍链接：游戏内嵌社区](`https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/pgsmoment-introduction-0000001244369204`)
+[服务介绍链接：游戏内嵌社区](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/pgsmoment-introduction-0000001244369204)
 
 ![](./img/2e7235b5aaf6.png)
 
-[百花号入驻开播指南.pdf](`https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260115193444.22238824634018749173870395229614%3A50001231000000%3A2800%3A8DF5D9F7A30E182C896B1434FCEA5486883EB26DAA395323577272B3885055BC.pdf?needInitFileName=true`)
+[百花号入驻开播指南.pdf](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20260115193444.22238824634018749173870395229614%3A50001231000000%3A2800%3A8DF5D9F7A30E182C896B1434FCEA5486883EB26DAA395323577272B3885055BC.pdf?needInitFileName=true)
 
 ![](./img/f897e075137a.png)
 
@@ -93,23 +93,23 @@ sync_hash: 7fed256f
 
 ![](./img/706a5a69189b.png)
 
-[服务介绍链接：AGC-开版指南](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)
+[服务介绍链接：AGC-开版指南](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)
 
 ![](./img/007df32377a8.png)
 
-[服务介绍链接：AGC-首发申请](`/docs/distribute/app-dist/game-center/game-center-first-applyfor-0000001239502317)
+[服务介绍链接：AGC-首发申请](/docs/distribute/app-dist/game-center/game-center-first-applyfor-0000001239502317)
 
 ![](./img/b4e0af8c3519.png)
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| <strong>操作指导</strong> | [点击查看](`https://developer.huawei.com/consumer/cn/doc/app/game-center-pre-order-0000001239342333`) |  |  |
+| <strong>操作指导</strong> | [点击查看](https://developer.huawei.com/consumer/cn/doc/app/game-center-pre-order-0000001239342333) |  |  |
 
 ![](./img/75da45fc5425.png)
 
 |  |  |
 | --- | --- |
-| [服务介绍链接：AGC-活动管理](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-reservation-0000001657694701) | [服务介绍链接：AGC-奖品管理](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-reservation-0000001657694701#section3160112618266`) |
+| [服务介绍链接：AGC-活动管理](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-reservation-0000001657694701) | [服务介绍链接：AGC-奖品管理](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-reservation-0000001657694701#section3160112618266) |
 
 ![](./img/fbcf77035196.png)
 
@@ -141,7 +141,7 @@ sync_hash: 7fed256f
 
 ![](./img/05717ca1cfe8.png)
 
-[服务介绍链接：AGC-营销素材管理](`/docs/distribute/app-dist/game-center/game-center-promotion-0000001193982446/game-center-marketing-material-0000001193982454)
+[服务介绍链接：AGC-营销素材管理](/docs/distribute/app-dist/game-center/game-center-promotion-0000001193982446/game-center-marketing-material-0000001193982454)
 
 ![](./img/523194f2a3b8.png)
 

@@ -23,7 +23,7 @@ import { hvigor } from '@ohos/hvigor';
 
 getRootNode(): HvigorNode
 
-获取根项目的节点对象。在[nodesInitialized和之后的阶段](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section746253616316)才能使用，否则会报错。
+获取根项目的节点对象。在[nodesInitialized和之后的阶段](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section746253616316)才能使用，否则会报错。
 
 <strong>起始版本：</strong>Hvigor 4.3.0
 
@@ -168,7 +168,7 @@ configEvaluated(fn: (HvigorConfig) =&gt; \{\}): void
 
 ![](./img/note_3.0-zh-cn.png)
 
-此API写在[hvigorconfig.ts文件](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section810245135914)中才会生效，在构建生命周期的初始化阶段被执行。
+此API写在[hvigorconfig.ts文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section810245135914)中才会生效，在构建生命周期的初始化阶段被执行。
 
 <strong>示例：</strong>注册configEvaluated hook。
 
@@ -196,7 +196,7 @@ beforeNodeEvaluate(fn: (HvigorNode) =&gt; \{\}): void
 
 ![](./img/note_3.0-zh-cn.png)
 
-此API写在[hvigorconfig.ts文件](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section810245135914)中才会生效，在构建生命周期的初始化阶段被执行。
+此API写在[hvigorconfig.ts文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section810245135914)中才会生效，在构建生命周期的初始化阶段被执行。
 
 <strong>示例：</strong>注册beforeNodeEvaluate hook。
 
@@ -247,7 +247,7 @@ nodesInitialized(fn: (Hvigor) =&gt; \{\}): void
 
 ![](./img/note_3.0-zh-cn.png)
 
-此API写在[hvigorconfig.ts文件](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section810245135914)中才会生效，在构建生命周期的初始化阶段被执行。
+此API写在[hvigorconfig.ts文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section810245135914)中才会生效，在构建生命周期的初始化阶段被执行。
 
 <strong>示例：</strong>注册nodesInitialized hook。
 
@@ -598,7 +598,7 @@ includeNode(name: string, srcPath: string, extraOptions?: Record&lt;string, any&
 
 ![](./img/note_3.0-zh-cn.png)
 
-此API写在[hvigorconfig.ts文件](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section810245135914)中才会生效，在构建生命周期的初始化阶段被执行。
+此API写在[hvigorconfig.ts文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section810245135914)中才会生效，在构建生命周期的初始化阶段被执行。
 
 <strong>示例1：</strong>添加一个名为exampleNodeName且无额外信息的node。
 
@@ -641,7 +641,7 @@ excludeNodeByName(name: string): void
 
 通过name排除一个Node。
 
-从DevEco Studio 6.0.0 Beta3版本开始，支持排除工程中不存在的模块，具体请参考[通过Hvigor执行ohpm install](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-experimental-properties#section11663628141317)。
+从DevEco Studio 6.0.0 Beta3版本开始，支持排除工程中不存在的模块，具体请参考[通过Hvigor执行ohpm install](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-experimental-properties#section11663628141317)。
 
 <strong>起始版本：</strong>Hvigor 5.4.0
 
@@ -653,7 +653,7 @@ excludeNodeByName(name: string): void
 
 ![](./img/note_3.0-zh-cn.png)
 
-此API写在[hvigorconfig.ts文件](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section810245135914)中才会生效，在构建生命周期的初始化阶段被执行。
+此API写在[hvigorconfig.ts文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section810245135914)中才会生效，在构建生命周期的初始化阶段被执行。
 
 <strong>示例：</strong>排除名为exampleNodeName的Node。
 
@@ -727,7 +727,7 @@ console.log(`rootNode name: ${entryNodeDescriptor.getRootNode().name}`);
 
 #### Product
 
-HarmonyOS应用工程级配置中的Product信息接口。在调用Product的接口前，可以先通过OhosAppContext的[getCurrentProduct](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-expanding-context#section962214395515)方法来获取本对象。
+HarmonyOS应用工程级配置中的Product信息接口。在调用Product的接口前，可以先通过OhosAppContext的[getCurrentProduct](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-expanding-context#section962214395515)方法来获取本对象。
 
 #### 导入模块
 
@@ -2194,7 +2194,7 @@ dependencies?: (() =&gt; string[]) | string[]
 
 ![](./img/note_3.0-zh-cn.png)
 
-依赖其他模块的任务时，建议将任务注册操作放在[hook-nodesEvaluated](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section746253616316)中，否则注册时其他模块的任务可能还未被初始化，导致当前任务无法注册。
+依赖其他模块的任务时，建议将任务注册操作放在[hook-nodesEvaluated](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section746253616316)中，否则注册时其他模块的任务可能还未被初始化，导致当前任务无法注册。
 
 <strong>示例一：</strong>依赖本模块的任务。
 
@@ -2277,7 +2277,7 @@ postDependencies?: (() =&gt; string[]) | string[]
 
 ![](./img/note_3.0-zh-cn.png)
 
-依赖其他模块的任务时，建议将任务注册操作放在[hook-nodesEvaluated](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section746253616316)中，否则注册时其他模块的任务可能还未被初始化，导致当前任务无法注册。
+依赖其他模块的任务时，建议将任务注册操作放在[hook-nodesEvaluated](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section746253616316)中，否则注册时其他模块的任务可能还未被初始化，导致当前任务无法注册。
 
 <strong>示例一：</strong>依赖本模块的任务。
 
@@ -2919,7 +2919,7 @@ export default {
 
 #### SdkDetails
 
-应用工程使用的SDK相关的信息。在调用SdkDetails的接口前，可以先通过OhosAppContext的[getSdkDetails](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-expanding-context#section085712212299)方法来获取本对象。
+应用工程使用的SDK相关的信息。在调用SdkDetails的接口前，可以先通过OhosAppContext的[getSdkDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-expanding-context#section085712212299)方法来获取本对象。
 
 #### 导入模块
 

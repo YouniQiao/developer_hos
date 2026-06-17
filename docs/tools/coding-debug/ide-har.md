@@ -8,7 +8,7 @@ sync_hash: 24b1e85a
 ---
 # 开发静态共享包
 
-[HAR（Harmony Archive）](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package)是静态共享包，可以包含代码、C++库、资源和配置文件。通过HAR可以实现多个模块或多个工程共享ArkUI组件、资源等相关代码。HAR不同于HAP，不能独立安装运行在设备上，只能作为应用模块的依赖项被引用。本文将介绍如何创建HAR模块、如何编译共享包.
+[HAR（Harmony Archive）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/har-package)是静态共享包，可以包含代码、C++库、资源和配置文件。通过HAR可以实现多个模块或多个工程共享ArkUI组件、资源等相关代码。HAR不同于HAP，不能独立安装运行在设备上，只能作为应用模块的依赖项被引用。本文将介绍如何创建HAR模块、如何编译共享包.
 
 HAR模块的工程结构如下图所示：
 
@@ -58,4 +58,4 @@ HAR模块的工程结构如下图所示：
 
 * 编译构建HAR的过程中，不会将模块中的C++代码直接打包进.har文件中，而是将C++代码编译成动态依赖库.so文件放置在.har文件中的libs目录下。
 * 在编译构建HAR的过程中，会生成资源文件ResourceTable.txt，以便编辑器可以对HAR中的资源文件进行联想。因此，如果不使用DevEco Studio对HAR进行构建，则DevEco Studio的编辑器会无法联想HAR中的资源。
-* 如果使用的Hvigor为2.5.0-s及以上版本，在编译构建HAR的过程中，会将dependencies内处于本模块路径下的本地依赖也打包进.har文件中，如果在打包后发现缺少部分本地依赖（如cpp/types目录）请参见[FAQ](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-23).
+* 如果使用的Hvigor为2.5.0-s及以上版本，在编译构建HAR的过程中，会将dependencies内处于本模块路径下的本地依赖也打包进.har文件中，如果在打包后发现缺少部分本地依赖（如cpp/types目录）请参见[FAQ](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-23).

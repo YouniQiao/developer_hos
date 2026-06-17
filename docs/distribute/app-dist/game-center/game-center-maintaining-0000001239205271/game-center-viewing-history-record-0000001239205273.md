@@ -13,7 +13,7 @@ sync_hash: b134c3e0
 
 ## 查询版本历史记录
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中选择待查看版本历史记录的应用，进入应用详情页。
 3. 选择“分发 &gt; 记录查询 &gt; 版本历史记录”，在“版本历史记录”页面默认展示显示应用的各个历史版本信息。
 

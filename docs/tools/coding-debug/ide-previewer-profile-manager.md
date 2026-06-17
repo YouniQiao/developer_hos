@@ -15,7 +15,7 @@ sync_hash: 67ef2b38
 
 ![](./img/zh-cn_image_0000002571546440.png)
 
-同时，Profile Manager还支持多设备预览功能，具体请参考[查看多端设备预览效果](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-multi-profile)。
+同时，Profile Manager还支持多设备预览功能，具体请参考[查看多端设备预览效果](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-multi-profile)。
 
 下面以自定义一款Phone设备为例，介绍设备Profile Manager的使用方法。
 

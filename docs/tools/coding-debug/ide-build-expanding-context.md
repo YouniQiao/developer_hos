@@ -170,7 +170,7 @@ getCurrentProduct: () =&gt; Product
 
 | 类型 | 说明 |
 | --- | --- |
-| [Product](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-api#section1553414254713) | 当前构建指定的product对象 |
+| [Product](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-api#section1553414254713) | 当前构建指定的product对象 |
 
 <strong>示例：</strong>
 
@@ -841,7 +841,7 @@ getSdkDetails: () =&gt; SdkDetails
 
 | 类型 | 说明 |
 | --- | --- |
-| [SdkDetails](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-api#section1463642114714) | SDK相关的信息 |
+| [SdkDetails](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-api#section1463642114714) | SDK相关的信息 |
 
 <strong>示例：</strong>
 
@@ -1041,7 +1041,7 @@ targets: (callbackfn: (target: Target) =&gt; void) =&gt; void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | (target: [Target](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-api#section12392182963714)) =&gt; void | 是 | 入参类型为Target，返回类型为void的函数 |
+| callback | (target: [Target](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-api#section12392182963714)) =&gt; void | 是 | 入参类型为Target，返回类型为void的函数 |
 
 <strong>示例：</strong>
 

@@ -9,7 +9,7 @@ sync_hash: 90198e88
 ---
 # 规则总览
 
-以下是AppAnalyzer规则体检的所有规则，对应用/元服务进行体检的指导请参考[应用与元服务体检](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer)。
+以下是AppAnalyzer规则体检的所有规则，对应用/元服务进行体检的指导请参考[应用与元服务体检](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer)。
 
 #### DevEco Studio 6.0.1 Beta1及以上版本
 
@@ -48,17 +48,17 @@ sync_hash: 90198e88
 | 体检规则 | 规则详情 | 应用或元服务规则 |
 | --- | --- | --- |
 | 页面内UI容器组件超出屏幕过多 | 避免滑动类容器组件区域超出屏幕显示范围10%。  滑动类容器组件的渲染范围与容器大小相同，超出屏幕的不可见部分为冗余渲染。  在页面切换的场景，过多的冗余渲染，可能会让用户觉得页面切换慢，响应不及时。  建议将滑动类容器组件的大小和位置限定在屏幕显示范围内。  如果因为嵌套滚动等效果，必须超出屏幕的，可以考虑使用分帧多次加载数据的方式，优先渲染可见部分，提升页面切换性能。 | 应用 |
-| [动态内存峰值占用](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-peak-dynamic-memory-usage-0417) | 应用/元服务完成操作后，各类应用在后台的内存占用峰值应≤ 1300MB；应用完成操作后切换到后台，静置3min以后采集内存占用。 | 应用，元服务 |
-| [前台场景内存峰值占用](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-peak-foreground-memory-usage-0418) | 应用/元服务前台场景峰值内存占用：应用在前台且亮屏使用规程的内存占用应≤ 1500MB。 | 应用，元服务 |
-| [后台CPU占用峰值](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-peak-background-cpu-usage-0420) | 应用/元服务后台CPU占用峰值：应用/元服务切换到后台等待3min后，开始采集3min内CPU Load &lt; 5%。 | 应用，元服务 |
-| [点击操作完成快](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-completion-for-click-0404) | 应用内点击操作完成时延应≤ 900ms；时间起点：点击离手；时间终点：转场页面所有占位符加载完成。 | 应用，元服务 |
-| [滑动过程流畅](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-smooth-for-swipe-0413) | 应用的滑动过程卡顿率≤ 5ms/s；满帧30FPS的游戏类、地图类和视频类的应用帧率应≥ 29FPS。 | 应用，元服务 |
-| [转场操作流畅](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-smooth-for-transition-0414) | 应用的应用内转场过程卡顿率≤ 0ms/s；滑动过程卡顿率：动效时间内累计丢帧时间/动效时长。 | 应用，元服务 |
-| [节点数超过500过多](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-render-node-limit-0430) | 后端Render Server在每帧数据里处理的节点数不应该超过500，否则会造成CPU使用过高，引发帧时延过高，从而导致丢帧。 | 应用，元服务 |
-| [点击操作响应快](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-response-for-click-0403) | 应用内点击操作响应时延应≤ 100ms；时间起点：点击离手；时间终点：界面发生变化。 | 应用，元服务 |
-| [滑动操作响应快](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-response-for-swipe-0405) | 应用内滑动操作响应时延应≤ 80ms；时间起点：手指滑动；时间终点：界面发生变化。 | 应用，元服务 |
+| [动态内存峰值占用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-peak-dynamic-memory-usage-0417) | 应用/元服务完成操作后，各类应用在后台的内存占用峰值应≤ 1300MB；应用完成操作后切换到后台，静置3min以后采集内存占用。 | 应用，元服务 |
+| [前台场景内存峰值占用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-peak-foreground-memory-usage-0418) | 应用/元服务前台场景峰值内存占用：应用在前台且亮屏使用规程的内存占用应≤ 1500MB。 | 应用，元服务 |
+| [后台CPU占用峰值](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-peak-background-cpu-usage-0420) | 应用/元服务后台CPU占用峰值：应用/元服务切换到后台等待3min后，开始采集3min内CPU Load &lt; 5%。 | 应用，元服务 |
+| [点击操作完成快](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-completion-for-click-0404) | 应用内点击操作完成时延应≤ 900ms；时间起点：点击离手；时间终点：转场页面所有占位符加载完成。 | 应用，元服务 |
+| [滑动过程流畅](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-smooth-for-swipe-0413) | 应用的滑动过程卡顿率≤ 5ms/s；满帧30FPS的游戏类、地图类和视频类的应用帧率应≥ 29FPS。 | 应用，元服务 |
+| [转场操作流畅](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-smooth-for-transition-0414) | 应用的应用内转场过程卡顿率≤ 0ms/s；滑动过程卡顿率：动效时间内累计丢帧时间/动效时长。 | 应用，元服务 |
+| [节点数超过500过多](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-render-node-limit-0430) | 后端Render Server在每帧数据里处理的节点数不应该超过500，否则会造成CPU使用过高，引发帧时延过高，从而导致丢帧。 | 应用，元服务 |
+| [点击操作响应快](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-response-for-click-0403) | 应用内点击操作响应时延应≤ 100ms；时间起点：点击离手；时间终点：界面发生变化。 | 应用，元服务 |
+| [滑动操作响应快](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-response-for-swipe-0405) | 应用内滑动操作响应时延应≤ 80ms；时间起点：手指滑动；时间终点：界面发生变化。 | 应用，元服务 |
 | 序列化反序列化耗时长 | 使用TaskPool/Worker并发能力时候，会检测对象和方法在跨线程传递时序列化和反序列化的耗时；序列化和反序列化耗时应 ≤ 8ms。 | 应用，元服务 |
-| [启动加载完成快](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-completion-for-boot) | 各类应用的冷启动首帧完成时延应 ≤ 1100ms；时间起点：桌面图标点击离手；时间终点：应用首页铺满全屏并且所有占位符加载完成。 | 应用，元服务 |
+| [启动加载完成快](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-completion-for-boot) | 各类应用的冷启动首帧完成时延应 ≤ 1100ms；时间起点：桌面图标点击离手；时间终点：应用首页铺满全屏并且所有占位符加载完成。 | 应用，元服务 |
 | 组件树节点数目过大 | 避免过大组件树节点数目。建议一个页面使用少于1000个组件树节点，节点树深度少于30层，子节点数不大于60个。 | 应用，元服务 |
 | 执行函数耗时过长 | 避免执行函数耗时过长。函数执行时间是指函数在一次同步执行中消耗的时间，比如生命周期回调、事件处理函数的同步执行时间。建议单个函数执行周期内运行时间不超过15ms。 | 应用，元服务 |
 | 渲染界面耗时过长 | 避免渲染界面耗时过长。建议单次渲染时间不超过500ms。渲染界面的耗时过长会让用户觉得卡顿，体验较差，出现这一情况时，需要校验下是否同时渲染的区域太大；页面中单个组件的渲染时间不超过15ms。 | 应用，元服务 |
@@ -188,15 +188,15 @@ UX测试支持以下设备：
 
 | 体检规则 | 规则详情 | 应用或元服务规则 | 权重 |
 | --- | --- | --- | --- |
-| [应用/元服务内点击操作响应快](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-response-for-click-0403) | 起点：点击离手；  终点：界面发生变化；  应用/元服务内点击操作响应时延应≤ 100ms。 | 应用，元服务 | 3 |
-| [应用/元服务内点击操作完成快](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-completion-for-click-0404) | 时间起点：点击离手；  时间终点：转场页面所有占位符加载完成；  应用/元服务内点击操作完成时延应≤ 1600ms。 | 应用，元服务 | 3 |
-| [应用/元服务内滑动操作响应快](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-response-for-swipe-0405) | 时间起点：手指滑动；  时间终点：界面发生变化；  应用/元服务内滑动操作响应时延应≤ 80ms。 | 应用，元服务 | 3 |
-| [应用/元服务内滑动过程流畅](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-smooth-for-swipe-0413) | 应用/元服务的滑动过程卡顿率≤ 5ms/s；  满帧30FPS的游戏类、地图类和视频类的应用帧率应≥ 29FPS。 | 应用，元服务 | 3 |
-| [应用/元服务内转场操作流畅](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-smooth-for-transition-0414) | 应用/元服务内转场过程卡顿率≤ 0ms/s；  滑动过程卡顿率：动效时间内累计丢帧时间/动效时长。 | 应用，元服务 | 3 |
-| [应用/元服务动态内存峰值占用](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-peak-dynamic-memory-usage-0417) | 应用/元服务完成操作后，各类应用在后台的内存占用峰值应≤ 1300MB；  应用完成操作后切换到后台，静置3min以后采集内存占用。 | 应用，元服务 | 3 |
-| [应用/元服务前台场景内存峰值占用](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-peak-foreground-memory-usage-0418) | 应用/元服务前台场景峰值内存占用：应用在前台且亮屏使用过程的内存占用应≤ 1500MB。 | 应用，元服务 | 3 |
-| [应用/元服务后台CPU占用峰值](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-peak-background-cpu-usage-0420) | 应用/元服务后台CPU占用峰值：应用切换到后台等待3min后，开始采集3min内CPU Load &lt; 5%。 | 应用，元服务 | 3 |
-| [图形渲染服务处理节点数小于500](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-render-node-limit-0430) | 后端Render Server在每帧数据里处理的节点数不应该超过500，否则会造成CPU使用过高，引发帧时延过高，从而导致丢帧。 | 应用，元服务 | 1 |
+| [应用/元服务内点击操作响应快](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-response-for-click-0403) | 起点：点击离手；  终点：界面发生变化；  应用/元服务内点击操作响应时延应≤ 100ms。 | 应用，元服务 | 3 |
+| [应用/元服务内点击操作完成快](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-completion-for-click-0404) | 时间起点：点击离手；  时间终点：转场页面所有占位符加载完成；  应用/元服务内点击操作完成时延应≤ 1600ms。 | 应用，元服务 | 3 |
+| [应用/元服务内滑动操作响应快](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-response-for-swipe-0405) | 时间起点：手指滑动；  时间终点：界面发生变化；  应用/元服务内滑动操作响应时延应≤ 80ms。 | 应用，元服务 | 3 |
+| [应用/元服务内滑动过程流畅](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-smooth-for-swipe-0413) | 应用/元服务的滑动过程卡顿率≤ 5ms/s；  满帧30FPS的游戏类、地图类和视频类的应用帧率应≥ 29FPS。 | 应用，元服务 | 3 |
+| [应用/元服务内转场操作流畅](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-smooth-for-transition-0414) | 应用/元服务内转场过程卡顿率≤ 0ms/s；  滑动过程卡顿率：动效时间内累计丢帧时间/动效时长。 | 应用，元服务 | 3 |
+| [应用/元服务动态内存峰值占用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-peak-dynamic-memory-usage-0417) | 应用/元服务完成操作后，各类应用在后台的内存占用峰值应≤ 1300MB；  应用完成操作后切换到后台，静置3min以后采集内存占用。 | 应用，元服务 | 3 |
+| [应用/元服务前台场景内存峰值占用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-peak-foreground-memory-usage-0418) | 应用/元服务前台场景峰值内存占用：应用在前台且亮屏使用过程的内存占用应≤ 1500MB。 | 应用，元服务 | 3 |
+| [应用/元服务后台CPU占用峰值](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-peak-background-cpu-usage-0420) | 应用/元服务后台CPU占用峰值：应用切换到后台等待3min后，开始采集3min内CPU Load &lt; 5%。 | 应用，元服务 | 3 |
+| [图形渲染服务处理节点数小于500](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-render-node-limit-0430) | 后端Render Server在每帧数据里处理的节点数不应该超过500，否则会造成CPU使用过高，引发帧时延过高，从而导致丢帧。 | 应用，元服务 | 1 |
 
 #### 最佳实践
 

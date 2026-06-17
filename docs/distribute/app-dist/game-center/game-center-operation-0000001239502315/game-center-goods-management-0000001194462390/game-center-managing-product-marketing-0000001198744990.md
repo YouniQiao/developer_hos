@@ -22,14 +22,14 @@ sync_hash: 05a163d5
 
 ## 前提条件
 
-* 您已在商品管理[新增商品](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-creating-product-0000001239502323)。
+* 您已在商品管理[新增商品](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-creating-product-0000001239502323)。
 * 您的应用分发地区包含中国大陆。
 * 您需准备1024\*1024px的JPG或PNG格式的图片，作为在应用市场的应用详情页面展示的商品营销宣传图。
 * 建议使用Google Chrome浏览器访问商品管理服务，最低版本为62.0.3202.62。
 
 ## 操作步骤
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要设置商品营销管理的应用。
 3. 选择“运营”页签，在左侧导航栏选择“产品运营 &gt; 商品管理”，选择“商品营销列表”页签，点击“选择营销商品”。
 

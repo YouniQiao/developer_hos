@@ -26,7 +26,7 @@ sync_hash: 298f73e5
 
 #### 选项
 
-详情请参考[@typescript-eslint/no-magic-numbers选项](`https://`typescript-eslint.nodejs.cn/rules/no-magic-numbers#选项)。
+详情请参考[@typescript-eslint/no-magic-numbers选项](https://typescript-eslint.nodejs.cn/rules/no-magic-numbers#选项)。
 
 #### 正例
 
@@ -51,4 +51,4 @@ export const dataLast = data[2];
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

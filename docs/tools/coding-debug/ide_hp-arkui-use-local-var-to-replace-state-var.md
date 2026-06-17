@@ -73,4 +73,4 @@ plugin:@performance/recommended
 plugin:@performance/all
 ```
 
-Code LinterС╗БуаЂТБђТЪЦУДётѕЎуџёжЁЇуй«ТїЄт»╝У»итЈѓУђЃ[Code LinterС╗БуаЂТБђТЪЦ](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)сђѓ
+Code LinterС╗БуаЂТБђТЪЦУДётѕЎуџёжЁЇуй«ТїЄт»╝У»итЈѓУђЃ[Code LinterС╗БуаЂТБђТЪЦ](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)сђѓ

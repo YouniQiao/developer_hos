@@ -26,7 +26,7 @@ sync_hash: 9a4b5827
 
 #### 选项
 
-详情请参考[@typescript-eslint/no-explicit-any选项](`https://`typescript-eslint.nodejs.cn/rules/no-explicit-any#options)。
+详情请参考[@typescript-eslint/no-explicit-any选项](https://typescript-eslint.nodejs.cn/rules/no-explicit-any#options)。
 
 #### 正例
 
@@ -91,4 +91,4 @@ plugin:@typescript-eslint/recommended
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

@@ -38,7 +38,7 @@ sync_hash: 1edf369f
 
 当前部分Kit在模拟器上使用时，和真机存在差异，具体请参考对应Kit简介。
 
-如遇到因Kit能力不支持导致的应用闪退问题，可以尝试使用[动态引入Kit](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dynamic-import#动态import实现方案介绍)的方式规避此异常问题。
+如遇到因Kit能力不支持导致的应用闪退问题，可以尝试使用[动态引入Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-dynamic-import#动态import实现方案介绍)的方式规避此异常问题。
 
 Kit不支持导致的报错信息如：
 
@@ -57,8 +57,8 @@ LastFatalMessage:[default] [LoadJSPandaFile:00] resolveBufferCallback get hsp bu
 | 蓝牙 | 不支持蓝牙设备扫描、连接、数据传输 |
 | 星闪 | 不支持星闪设备扫描、连接、数据传输、分布式能力 |
 | NFC | 不支持NFC卡片读写、刷卡 |
-| TEE（Trusted Execution Environment，可信执行环境） | 不支持安全GPS、设备证书等，部分安全相关Kit暂不支持，详情参考[安全Kit简介](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-security) |
-| NPU | 部分AI相关Kit暂不支持，详情参考[AI Kit简介](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/hmaf-introduction) |
+| TEE（Trusted Execution Environment，可信执行环境） | 不支持安全GPS、设备证书等，部分安全相关Kit暂不支持，详情参考[安全Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/system-security) |
+| NPU | 部分AI相关Kit暂不支持，详情参考[AI Kit简介](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hmaf-introduction) |
 | 生物识别 | 不支持指纹、人脸认证等 |
 | 摄像头/麦克风 | 依赖电脑设备，不支持多摄像头切换（广角/长焦）、闪光灯、降噪算法等 |
 | 电源 | 模拟电源，不支持温控、快充等场景 |

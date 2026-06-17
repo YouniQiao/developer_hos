@@ -22,7 +22,7 @@ sync_hash: 2d57b403
 
 #### 选择日志级别
 
-您可以使用命令行中的日志选项开关来控制输出不同的日志级别，还可通过配置[hvigor-config.json5](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-set-options)中日志选项logging.level来设置。在stacktrace命令选项中，您可以找到影响堆栈跟踪记录的命令开关，当然，你也可以通过配置[hvigor-config.json5](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-set-options)中日志选项debugging.stacktrace来设置堆栈跟踪日志开关。
+您可以使用命令行中的日志选项开关来控制输出不同的日志级别，还可通过配置[hvigor-config.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-set-options)中日志选项logging.level来设置。在stacktrace命令选项中，您可以找到影响堆栈跟踪记录的命令开关，当然，你也可以通过配置[hvigor-config.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-set-options)中日志选项debugging.stacktrace来设置堆栈跟踪日志开关。
 
 #### 日志级别命令行选项
 

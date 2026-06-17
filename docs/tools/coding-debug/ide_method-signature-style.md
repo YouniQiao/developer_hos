@@ -28,7 +28,7 @@ sync_hash: 6bbe23c9
 
 #### 选项
 
-详情请参考[@typescript-eslint/method-signature-style选项](`https://`typescript-eslint.nodejs.cn/rules/method-signature-style/#options)。
+详情请参考[@typescript-eslint/method-signature-style选项](https://typescript-eslint.nodejs.cn/rules/method-signature-style/#options)。
 
 #### 正例
 
@@ -54,4 +54,4 @@ export interface T1 {
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

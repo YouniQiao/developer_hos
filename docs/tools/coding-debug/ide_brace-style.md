@@ -26,7 +26,7 @@ upstream_hash: 9f786bf23a4f
 
 #### 选项
 
-详情请参考[@typescript-eslint/brace-style选项](`https://`eslint.nodejs.cn/docs/rules/brace-style#选项)。
+详情请参考[@typescript-eslint/brace-style选项](https://eslint.nodejs.cn/docs/rules/brace-style#选项)。
 
 #### 正例
 
@@ -77,4 +77,4 @@ export { C };
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

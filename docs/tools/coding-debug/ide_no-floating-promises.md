@@ -26,7 +26,7 @@ floating-promise是指在创建Promise时，没有使用任何代码来处理它
 
 #### 选项
 
-详情请参考[@typescript-eslint/no-floating-promises选项](`https://`typescript-eslint.nodejs.cn/rules/no-floating-promises/#options)。
+详情请参考[@typescript-eslint/no-floating-promises选项](https://typescript-eslint.nodejs.cn/rules/no-floating-promises/#options)。
 
 #### 正例
 
@@ -74,4 +74,4 @@ export async function bar() {
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

@@ -15,19 +15,19 @@ sync_hash: 5a0a3aad
 
 为了帮助您尽可能顺利地通过游戏审核，请查收下方审核标准等相关审核事项：
 
-* 游戏审核标准请参考[华为应用市场审核指南](`https://developer.huawei.com/consumer/cn/doc/distribution/app/50104`)。
-* 游戏版权、版号要求请参考[版权资质审核要求](`/docs/distribute/app-dist/app-market/x50000/x80301#h1-1584931854487-2`)。
+* 游戏审核标准请参考[华为应用市场审核指南](https://developer.huawei.com/consumer/cn/doc/distribution/app/50104)。
+* 游戏版权、版号要求请参考[版权资质审核要求](/docs/distribute/app-dist/app-market/x50000/x80301#h1-1584931854487-2)。
 
 ## 自检工具
 
-* 参考[接入检测](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-self-check-0000001100158786`)对游戏进行自检，并根据自检报告优化游戏。
-* 参考[自检Checklist](`https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/pre-release-check-0000001050121544`)排查是否满足上架要求，减少您提交审核后被打回的概率。
+* 参考[接入检测](https://developer.huawei.com/consumer/cn/doc/app/agc-help-self-check-0000001100158786)对游戏进行自检，并根据自检报告优化游戏。
+* 参考[自检Checklist](https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/pre-release-check-0000001050121544)排查是否满足上架要求，减少您提交审核后被打回的概率。
 
 ## FAQ
 
 ### 游戏包提交后台后，审核时间一般多久？如何查看审核意见？
 
-华为工作人员需要1~3个工作日完成游戏包的审核工作。您可以在“版本信息”页面查看审核结果。审核结束后，系统将自动发送审核结果邮件至您的预留邮箱，请及时查看。若需催审，请登录[互动中心](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-interaction-center-0000001146518763`)联系华为工作人员。
+华为工作人员需要1~3个工作日完成游戏包的审核工作。您可以在“版本信息”页面查看审核结果。审核结束后，系统将自动发送审核结果邮件至您的预留邮箱，请及时查看。若需催审，请登录[互动中心](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-interaction-center-0000001146518763)联系华为工作人员。
 
 ![](./img/d83dba82dfdb.png)
 
@@ -65,7 +65,7 @@ sync_hash: 5a0a3aad
 
 ### 消耗型商品购买成功后出现掉单时，如何补单？
 
-补单请参考[消耗型商品补单流程](`https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/redelivering-consumables-0000001051356573`)。
+补单请参考[消耗型商品补单流程](https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/redelivering-consumables-0000001051356573)。
 
 ### 未安装华为移动服务(HMS Core APK)的手机是否可以正常进入游戏？
 
@@ -73,4 +73,4 @@ sync_hash: 5a0a3aad
 
 ### 进入默认登录华为账号的游戏需要拉起欢迎栏吗？
 
-需要，游戏需要调用登录接口，登录成功后拉起欢迎栏，详情请参见[游戏登录](`https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/game-login-0000001050121526`)。
+需要，游戏需要调用登录接口，登录成功后拉起欢迎栏，详情请参见[游戏登录](https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/game-login-0000001050121526)。

@@ -24,7 +24,7 @@ sync_hash: 132b8b2f
 
 #### 选项
 
-详情请参考[@typescript-eslint/keyword-spacing选项](`https://`eslint.nodejs.cn/docs/rules/keyword-spacing#选项)。
+详情请参考[@typescript-eslint/keyword-spacing选项](https://eslint.nodejs.cn/docs/rules/keyword-spacing#选项)。
 
 #### 正例
 
@@ -72,4 +72,4 @@ if (isSatisfy1()) {
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

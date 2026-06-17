@@ -11,7 +11,7 @@ sync_hash: 2084f4a0
 
 Hvigor集成CMake、Ninja为cpp代码的构建工具。在初始状态下，无需额外配置，您也可以添加以下自定义配置，定制cpp代码编译。
 
-CPP配置包含externalNativeOptions和nativeLib，除特殊说明外，在工程级和模块级build-profile.json5文件中均支持配置，工程级配置会与模块级配置进行合并，模块级配置优先，具体合并规则和优先级请参考[合并编译选项规则](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section1727865610255)。
+CPP配置包含externalNativeOptions和nativeLib，除特殊说明外，在工程级和模块级build-profile.json5文件中均支持配置，工程级配置会与模块级配置进行合并，模块级配置优先，具体合并规则和优先级请参考[合并编译选项规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section1727865610255)。
 
 #### externalNativeOptions
 
@@ -24,8 +24,8 @@ externalNativeOptions是Native编译配置项。
 | path | 字符串 | 可选 | CMake构建脚本地址，即CMakeLists.txt文件地址。 |
 | abiFilters | 字符串数组 | 可选 | HarmonyOS当前支持的ABI编译环境，包括：   * arm64-v8a * x86\_64   如不配置该参数，编译时默认为arm64-v8a。 |
 | arguments | 字符串/字符串数组 | 可选 | CMake编译参数。  Hvigor将会把此处的自定义参数传递给CMake构建工具，您可通过CMake官方文档查找您所需的编译参数，同时它也将覆盖默认同名参数。 |
-| cppFlags | 字符串 | 可选 | C++编译器参数。  从DevEco Studio 6.0.1 Beta1版本开始，新增"-iclang"参数，提升编译效率，具体请参考[通过IClang提升C++增量编译效率](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-experimental-properties#section324586847)。 |
-| cFlags | 字符串 | 可选 | C编译参数。仅模块级build-profile.json5文件支持配置。  从DevEco Studio 6.0.1 Beta1版本开始，新增"-iclang"参数，提升编译效率，具体请参考[通过IClang提升C++增量编译效率](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-experimental-properties#section324586847)。 |
+| cppFlags | 字符串 | 可选 | C++编译器参数。  从DevEco Studio 6.0.1 Beta1版本开始，新增"-iclang"参数，提升编译效率，具体请参考[通过IClang提升C++增量编译效率](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-experimental-properties#section324586847)。 |
+| cFlags | 字符串 | 可选 | C编译参数。仅模块级build-profile.json5文件支持配置。  从DevEco Studio 6.0.1 Beta1版本开始，新增"-iclang"参数，提升编译效率，具体请参考[通过IClang提升C++增量编译效率](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-experimental-properties#section324586847)。 |
 | targets | 字符串数组 | 可选 | 指定hvigor应构建的CMake项目中的库和可执行目标。仅模块级build-profile.json5文件支持配置。 |
 
 #### nativeLib
@@ -36,18 +36,18 @@ nativeLib是Native库（.so）相关配置。
 
 | 字段名称 | 类型 | 可选/必选 | 含义 |
 | --- | --- | --- | --- |
-| [filter](#section17675528161517) | 对象 | 可选 | Native 库（.so）文件的筛选选项。配置后优先级高于[napiLibFilterOption](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section1488712919295)。 |
+| [filter](#section17675528161517) | 对象 | 可选 | Native 库（.so）文件的筛选选项。配置后优先级高于[napiLibFilterOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section1488712919295)。 |
 | [debugSymbol](#section2182144382320) | 对象 | 可选 | 移除.so文件中的符号表、调试信息。 |
 | headerPath | 字符串/字符串数组 | 可选 | 指定要导出的头文件路径。  注意：  请勿将源码等文件放置在该路径下，可能会被打包到产物中，请谨慎配置。 |
 | collectAllLibs | 布尔值 | 可选 | 对libs目录收集打包时，是否收集所有后缀的文件。   * true：不限制后缀，即收集所有文件（包括无后缀文件）。 * false（缺省默认值）：限制后缀为.so，即只收集后缀为.so的文件。 |
 | excludeFromHar | 布尔值 | 可选 | 构建HAR时，是否排除依赖HAR模块中的.so文件，排除时，依赖HAR模块的.so文件不会被打包到产物中。   * true（缺省默认值）：排除。 * false：不排除。   说明：  仅针对HAR模块生效。 |
-| excludeSoFromInterfaceHar | 布尔值 | 可选 | [编译HSP模块](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hsp#section1833373964217)时，打包的HAR产物是否排除.so文件，减少.tgz包体积大小。   * true：排除。HAR产物不包含.so文件，HSP产物包含.so文件。 * false（缺省默认值）：不排除。HAR产物和HSP产物都包含.so文件。   说明：  * 仅针对HSP模块生效。 * 当HSP模块的工程级或模块级build-profile.json5文件中配置headerPath字段时，excludeSoFromInterfaceHar字段不生效。 |
-| excludeSoFromBinXO | 字符串数组 | 可选 | 开启BinXO检测时，指定不需要进行二进制插桩的无源码so文件，支持正则匹配，具体使用方式请参考[使用HWASan检测内存错误](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hwasan)。  从DevEco Studio 6.1.0 Beta1版本开始支持。 |
+| excludeSoFromInterfaceHar | 布尔值 | 可选 | [编译HSP模块](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hsp#section1833373964217)时，打包的HAR产物是否排除.so文件，减少.tgz包体积大小。   * true：排除。HAR产物不包含.so文件，HSP产物包含.so文件。 * false（缺省默认值）：不排除。HAR产物和HSP产物都包含.so文件。   说明：  * 仅针对HSP模块生效。 * 当HSP模块的工程级或模块级build-profile.json5文件中配置headerPath字段时，excludeSoFromInterfaceHar字段不生效。 |
+| excludeSoFromBinXO | 字符串数组 | 可选 | 开启BinXO检测时，指定不需要进行二进制插桩的无源码so文件，支持正则匹配，具体使用方式请参考[使用HWASan检测内存错误](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hwasan)。  从DevEco Studio 6.1.0 Beta1版本开始支持。 |
 | [librariesInfo](#section969845819510) | 对象数组 | 可选 | 声明so的透传依赖信息。仅模块级build-profile.json5文件支持配置。 |
 
 #### filter
 
-filter是Native 库（.so）文件的筛选选项。配置后优先级高于[napiLibFilterOption](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section1488712919295)。
+filter是Native 库（.so）文件的筛选选项。配置后优先级高于[napiLibFilterOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section1488712919295)。
 
 <strong>表3</strong> filter字段说明
 

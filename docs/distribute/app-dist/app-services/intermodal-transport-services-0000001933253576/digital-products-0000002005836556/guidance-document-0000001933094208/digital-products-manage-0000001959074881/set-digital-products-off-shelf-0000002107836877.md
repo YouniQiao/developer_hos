@@ -13,7 +13,7 @@ sync_hash: 7d6b93ea
 
 ## 下架单个数字商品
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要下架数字商品的应用。
 3. 在“运营”页签下的左侧导航栏中，选择“产品运营 &gt; 商品管理”。
 4. 在“商品列表”页签，找到要下架的数字商品，并点击“下架”。

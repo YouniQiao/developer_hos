@@ -34,7 +34,7 @@ OpenHarmony三方库中心仓仅支持HAR共享包发布，不支持HSP共享包
    1. ~/.ssh\_ohpm/mykey 为私钥文件 mykey 的文件路径，按照实际情况指定。指定的私钥存储目录必须存在。
    2. 追加了.pub后缀的相应公钥文件会存放在和私钥相同的目录下。
    3. OHPM包管理器只支持加密密钥认证，请在生成公私钥时输入密码。
-4. 登录[OpenHarmony三方库中心仓](`https://`ohpm.openharmony.cn/#/cn/home)官网，单击主页右上角的**个人中心，*. 新增OHPM公钥，将公钥文件（mykey.pub）的内容粘贴到公钥输入框中。
+4. 登录[OpenHarmony三方库中心仓](https://ohpm.openharmony.cn/#/cn/home)官网，单击主页右上角的**个人中心，*. 新增OHPM公钥，将公钥文件（mykey.pub）的内容粘贴到公钥输入框中。
 
    ![](./img/b4f12f70.png)
 5. 打开命令行工具，将对应私钥文件路径配置到 .ohpmrc 文件中 key\_path 字段上，可执行以下命令进行配置：
@@ -42,7 +42,7 @@ OpenHarmony三方库中心仓仅支持HAR共享包发布，不支持HSP共享包
    ```
    ohpm config set key_path  ~/.ssh_ohpm/mykey
    ```
-6. 登录[OpenHarmony三方库中心仓](`https://`ohpm.openharmony.cn)官网，单击主页右上角的<strong>个人中心</strong>，复制发布码，获取发布码并配置到 .ohpmrc 文件中，可执行如下命令：
+6. 登录[OpenHarmony三方库中心仓](https://ohpm.openharmony.cn)官网，单击主页右上角的<strong>个人中心</strong>，复制发布码，获取发布码并配置到 .ohpmrc 文件中，可执行如下命令：
 
    ```
    ohpm config set publish_id your_publish_id

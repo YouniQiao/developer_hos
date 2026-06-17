@@ -17,12 +17,12 @@ sync_hash: d0ad9d0a
 
 ### 适用范围
 
-* 仅开放给[联运服务](`/docs/monetize/promotion/service-introduction-0000001062607577)项目使用。
+* 仅开放给[联运服务](/docs/monetize/promotion/service-introduction-0000001062607577)项目使用。
 * 适用于客户端10.5版本以上。
 
 ### 规范及示例
 
-登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”，在“应用信息”页面上传横向的介绍视频。若您上传了多个横向视频，将展示第一个介绍视频。
+登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在“应用信息”页面上传横向的介绍视频。若您上传了多个横向视频，将展示第一个介绍视频。
 
 ![](./img/516d526ab9e3.png)
 
@@ -34,12 +34,12 @@ sync_hash: d0ad9d0a
 
 ### 适用范围
 
-* 仅开放给[联运服务](`/docs/monetize/promotion/service-introduction-0000001062607577)项目使用。
+* 仅开放给[联运服务](/docs/monetize/promotion/service-introduction-0000001062607577)项目使用。
 * 适用于客户端10.5版本以上。
 
 ### 规范及示例
 
-登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”，在“配置沉浸式详情”页面上传沉浸式竖/横屏图片。
+登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在“配置沉浸式详情”页面上传沉浸式竖/横屏图片。
 
 ![](./img/01760f1aec05.png)
 
@@ -50,7 +50,7 @@ sync_hash: d0ad9d0a
 
 ## 游戏图标
 
-登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”，在“应用信息”页面上传图标。
+登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在“应用信息”页面上传图标。
 
 ![](./img/feb36d6ced28.png)
 
@@ -60,7 +60,7 @@ sync_hash: d0ad9d0a
 
 ## 游戏介绍截图
 
-登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”，在“应用信息”页面上传横/竖向介绍截图。
+登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在“应用信息”页面上传横/竖向介绍截图。
 
 ![](./img/77cb724d7bf1.png)
 

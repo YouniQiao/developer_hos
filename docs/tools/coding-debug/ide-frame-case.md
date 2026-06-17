@@ -11,7 +11,7 @@ sync_hash: 9ebaf421
 
 本案例介绍如何判断应用存在卡顿帧，再通过调用栈和trace信息分析应用运行逻辑，找出应用卡顿的原因。
 
-应用卡顿分析基础功能请参考[Frame分析](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-frame)。
+应用卡顿分析基础功能请参考[Frame分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-frame)。
 
 #### 分析步骤
 

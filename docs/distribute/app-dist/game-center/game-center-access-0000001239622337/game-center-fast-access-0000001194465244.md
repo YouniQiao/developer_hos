@@ -31,4 +31,4 @@ sync_hash: c0248cf6
 
 ## 接入指导
 
-开发华为快游戏的具体流程请参见官方文档[华为快游戏开发指南](`https://developer.huawei.com/consumer/cn/doc/quickApp-Guides/quickgame-doc-introduction-0000001073124845`)。
+开发华为快游戏的具体流程请参见官方文档[华为快游戏开发指南](https://developer.huawei.com/consumer/cn/doc/quickApp-Guides/quickgame-doc-introduction-0000001073124845)。

@@ -405,7 +405,7 @@ Profiler分配的内存已达到上限，导致无法正常运行。
 
 <strong>处理步骤</strong>
 
-在DevEco Studio的配置文件中手动修改虚拟机可使用的最大内存，具体请参考[内存占用率过高导致DevEco Studio无法正常运行](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-3)。
+在DevEco Studio的配置文件中手动修改虚拟机可使用的最大内存，具体请参考[内存占用率过高导致DevEco Studio无法正常运行](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-profiler-3)。
 
 #### 00703204 录制的数据与当前DevEco Studio窗口打开的源码工程不匹配
 

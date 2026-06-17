@@ -9,7 +9,7 @@ sync_hash: d70e1d41
 ---
 # @security/no-unsafe-sm4
 
-此规则禁止不安全的SM4算法，如加密模式ECB。推荐使用SM4\_CBC\_PKCS5Padding等不同算法，详情参见：[对称加解密算法](`https://`developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/aegis-encryption-and-decryption-symmetry-0000001861247310)。
+此规则禁止不安全的SM4算法，如加密模式ECB。推荐使用SM4\_CBC\_PKCS5Padding等不同算法，详情参见：[对称加解密算法](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/aegis-encryption-and-decryption-symmetry-0000001861247310)。
 
 #### 规则配置
 
@@ -46,4 +46,4 @@ cryptoFramework.createCipher('SM4_128|ECB|PKCS7')
 plugin:@security/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

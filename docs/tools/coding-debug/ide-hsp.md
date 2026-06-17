@@ -8,7 +8,7 @@ sync_hash: 1e3632b3
 ---
 # 开发动态共享包
 
-DevEco Studio支持开发动态共享包[HSP（Harmony Shared Package）](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)。在应用/元服务开发过程中部分功能按需动态下载，或开发元服务场景时需要分包加载，可使用HSP实现相应功能。当有多个安装包需要资源共享时，也可利用HSP减少公共资源和代码重复打包.
+DevEco Studio支持开发动态共享包[HSP（Harmony Shared Package）](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)。在应用/元服务开发过程中部分功能按需动态下载，或开发元服务场景时需要分包加载，可使用HSP实现相应功能。当有多个安装包需要资源共享时，也可利用HSP减少公共资源和代码重复打包.
 
 ![](./img/d7fefb0d.png)
 
@@ -47,7 +47,7 @@ DevEco Studio支持开发动态共享包[HSP（Harmony Shared Package）](`https
 
 如果HSP未开启[混淆](./ide-build-obfuscation)，则后续HSP被集成使用时，将不会再对HSP包进行混淆。
 
-参考[应用内HSP开发指导](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)开发完HSP模块后，选中模块名，然后通过DevEco Studio菜单栏的**Build &gt; Make Module `$&#123;libraryName&#125;`**进行编译构建，生成HSP。
+参考[应用内HSP开发指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/in-app-hsp)开发完HSP模块后，选中模块名，然后通过DevEco Studio菜单栏的**Build &gt; Make Module `$&#123;libraryName&#125;`**进行编译构建，生成HSP。
 
 ![](./img/94e03471.png)
 

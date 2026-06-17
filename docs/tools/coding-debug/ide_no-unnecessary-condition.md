@@ -24,7 +24,7 @@ sync_hash: cc437c41
 
 #### 选项
 
-详情请参考[@typescript-eslint/no-unnecessary-condition选项](`https://`typescript-eslint.nodejs.cn/rules/no-unnecessary-condition/#options)。
+详情请参考[@typescript-eslint/no-unnecessary-condition选项](https://typescript-eslint.nodejs.cn/rules/no-unnecessary-condition/#options)。
 
 #### 正例
 
@@ -82,4 +82,4 @@ export function bar(arg: string) {
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

@@ -22,7 +22,7 @@ sync_hash: 371ddc5d
 ## 前提条件
 
 * 已创建游戏，且软件包类型为“RPK（快应用）”、“APK（Android应用）”、“APP（HarmonyOS应用）”，支持设备为“手机”。
-* 您已在商品管理[新增商品](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-creating-product-0000001239502323)并[激活商品](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-deactivating-product-0000001239622347)。
+* 您已在商品管理[新增商品](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-creating-product-0000001239502323)并[激活商品](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-deactivating-product-0000001239622347)。
 
 ## 准备道具素材
 
@@ -34,7 +34,7 @@ sync_hash: 371ddc5d
 
 ### 新增游戏道具
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”，在应用列表中选择需要新增道具的游戏。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在应用列表中选择需要新增道具的游戏。
 2. 选择“运营 &gt; 产品运营 &gt; 游戏道具商城”，进入游戏道具商城页面，点击“道具管理”页签的“新增道具”。
 
    ![](./img/9a2d7b6a541c.png)
@@ -47,7 +47,7 @@ sync_hash: 371ddc5d
    | 类型 | 参数 | 说明 |
    | --- | --- | --- |
    | 基础信息 | 发货方式 | 选择“游戏内发放”。 |
-   | 道具ID | 下拉选择可上架已发布商品，新增商品前往[商品管理台](`https://developer.huawei.com/consumer/cn/doc/app/game-center-goods-management-0000001194462390`)创建。 |
+   | 道具ID | 下拉选择可上架已发布商品，新增商品前往[商品管理台](https://developer.huawei.com/consumer/cn/doc/app/game-center-goods-management-0000001194462390)创建。 |
    | 道具名称 | 由道具ID搜索而来。 |
    | 道具价格 | 由道具ID搜索而来。 |
    | 折扣信息 | 关联在商品管理台配置的促销信息，下拉选择折扣价格。折扣标签，请输入具体的折扣描述，如“半价”、“85折”，标签将在道具商城面向用户展示，若未输入标签，则默认展示“折后”标签。 |
@@ -99,7 +99,7 @@ sync_hash: 371ddc5d
 
 配置查询玩家区服角色接口和下单接口的地址，供华为服务器调用接入接口获取信息。
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”，在应用列表中选择需要新增道具的游戏。
-2. 选择“运营 &gt; 产品运营 &gt; 游戏道具商城”，进入游戏道具商城页面，点击“接入配置”页签，配置查询区服角色的地址以及用户下单后用于查询用户下单信息的地址，供华为服务器调用[查询玩家区服角色接口](`https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-propapi-getroleinfo-0000002355255377`)和[下单接口](`https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-propapi-order-0000002321296666`)。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在应用列表中选择需要新增道具的游戏。
+2. 选择“运营 &gt; 产品运营 &gt; 游戏道具商城”，进入游戏道具商城页面，点击“接入配置”页签，配置查询区服角色的地址以及用户下单后用于查询用户下单信息的地址，供华为服务器调用[查询玩家区服角色接口](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-propapi-getroleinfo-0000002355255377)和[下单接口](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-propapi-order-0000002321296666)。
 
    ![](./img/f709285d17e9.png)

@@ -60,7 +60,7 @@ db:
   + custom\_field：自定义字段，通过引入ohpm-repo解压包中libs/common/getStorageConfigInfo.js的getStorageConfigInfo方法获取自定义字段的值。
   + server: 本地仓库下载地址。
     - 当配置项[listen](./ide-ohpm-repo-configuration)的host不为0.0.0.0时，则默认取listen的完整格式，例如listen为127.0.0.1:8088，故server默认值为`https://127.0.0.1:8088`。
-    - 如果配置项[listen](./ide-ohpm-repo-configuration)的host为0.0.0.0，则server中的host默认为localhost，如`https://localhost:8088`。建议手动修改host为本机的ip/域名，例如listen为0.0.0.0:8088，故server需配置为`https://``<本机ip/域名>``:8088`；
+    - 如果配置项[listen](./ide-ohpm-repo-configuration)的host为0.0.0.0，则server中的host默认为localhost，如`https://localhost:8088`。建议手动修改host为本机的ip/域名，例如listen为0.0.0.0:8088，故server需配置为https://`<本机ip/域名>``:8088`；
     - 如果需要通过反向代理来访问ohpm-repo服务，则该字段须配置为反向代理服务器的域名地址。多实例部署ohpm-repo时必须配置反向代理服务器，且需要配置[use\_reverse\_proxy](./ide-ohpm-repo-configuration#section1074004784011)值为true。
 
 参考配置如下：

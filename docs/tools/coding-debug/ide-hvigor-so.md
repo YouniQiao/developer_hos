@@ -30,7 +30,7 @@ sync_hash: fc26d580
 
 #### 预构建库
 
-在工程中引用了共享包/本地依赖模块中的so库，编译时，Hvigor会生成cmake [Config-file Packages](`https://`cmake.org/cmake/help/latest/manual/cmake-packages.7.html#config-file-packages)，自动通过cmake [find\_package](`https://`cmake.org/cmake/help/latest/command/find_package.html#find-package)引入这些so。开发者只需根据此依赖模块的模块名、so库名，在CMakeLists.txt脚本中以$`&#123;moduleName::soName&#125;`库名称的形式来声明链接。
+在工程中引用了共享包/本地依赖模块中的so库，编译时，Hvigor会生成cmake [Config-file Packages](https://cmake.org/cmake/help/latest/manual/cmake-packages.7.html#config-file-packages)，自动通过cmake [find\_package](https://cmake.org/cmake/help/latest/command/find_package.html#find-package)引入这些so。开发者只需根据此依赖模块的模块名、so库名，在CMakeLists.txt脚本中以$`&#123;moduleName::soName&#125;`库名称的形式来声明链接。
 
 例如工程依赖了curl共享包，共享包中存在libcurl.so，在oh-package.json5中添加依赖。
 

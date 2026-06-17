@@ -29,13 +29,13 @@ upstream_hash: 2df5850940c1
 
 #### 查看启动过程中各阶段的耗时情况
 
-1. 创建Launch场景调优分析任务并录制相关数据，操作方法可参考[性能问题定位：深度录制](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording)，或在会话区选择<strong>Open File</strong>，导入历史数据。
+1. 创建Launch场景调优分析任务并录制相关数据，操作方法可参考[性能问题定位：深度录制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording)，或在会话区选择<strong>Open File</strong>，导入历史数据。
 
    ![](./img/note_3.0-zh-cn.png)
 
-   * 在任务分析窗口中，可通过[快捷键](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-shortcut-key)缩放时间轴、移动时间轴、添加时间标签等。
-   * Launch分析支持离线符号解析能力，请参见[离线符号解析](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-time#section186881175012)。
-   * Launch分析支持动效场景调优，请参见[支持动效场景调优](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-frame#section258014238619)。
+   * 在任务分析窗口中，可通过[快捷键](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-shortcut-key)缩放时间轴、移动时间轴、添加时间标签等。
+   * Launch分析支持离线符号解析能力，请参见[离线符号解析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-time#section186881175012)。
+   * Launch分析支持动效场景调优，请参见[支持动效场景调优](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-frame#section258014238619)。
 
    Launch分析任务支持在录制前单击![](./img/zh-cn_image_0000002571546548.png "点击放大")指定要录制的泳道。“Launch”泳道显示启动生命周期各阶段的耗时分布情况。
 2. 单击“Launch”泳道上的单个阶段，或框选多个阶段，在下方的“Details”页签中，可查看到所选阶段的耗时统计情况。

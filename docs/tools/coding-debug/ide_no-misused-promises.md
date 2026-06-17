@@ -24,7 +24,7 @@ sync_hash: dba2fa37
 
 #### 选项
 
-详情请参考[@typescript-eslint/no-misused-promises选项](`https://`typescript-eslint.nodejs.cn/rules/no-misused-promises/#options)。
+详情请参考[@typescript-eslint/no-misused-promises选项](https://typescript-eslint.nodejs.cn/rules/no-misused-promises/#options)。
 
 #### 正例
 
@@ -73,4 +73,4 @@ export async function func(): Promise<void>{
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

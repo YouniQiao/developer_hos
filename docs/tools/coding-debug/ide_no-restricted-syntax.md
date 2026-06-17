@@ -34,7 +34,7 @@ sync_hash: 9b4e6499
 
 #### 选项
 
-详情请参考[@typescript-eslint/no-restricted-syntax选项](`https://`eslint.nodejs.cn/docs/latest/rules/no-restricted-syntax#选项)。
+详情请参考[@typescript-eslint/no-restricted-syntax选项](https://eslint.nodejs.cn/docs/latest/rules/no-restricted-syntax#选项)。
 
 #### 正例
 
@@ -64,4 +64,4 @@ export class CC {
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

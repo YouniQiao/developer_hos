@@ -13,12 +13,12 @@ sync_hash: b072e00a
 
 * 当前应用版本未上架
 
-  您可在[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)管理台“分发 &gt; 版本信息”中对应用进行上架提交，审核通过后方可进行活动创建。
+  您可在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)管理台“分发 &gt; 版本信息”中对应用进行上架提交，审核通过后方可进行活动创建。
 
   ![](./img/468387f7e921.png)
 * 当前应用未开通游戏服务
 
-  您可在[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)管理台“开发与服务 &gt; 项目设置 &gt; API管理”页面开通“游戏服务”，成功开通后方可进行活动创建。
+  您可在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)管理台“开发与服务 &gt; 项目设置 &gt; API管理”页面开通“游戏服务”，成功开通后方可进行活动创建。
 
   ![](./img/f5da7a0ad1b8.png)
 

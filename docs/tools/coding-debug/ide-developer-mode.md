@@ -28,7 +28,7 @@ HarmonyOS系统上的“设置”包含开发者选项的界面，用于辅助Ha
 
 * <strong>USB调试</strong>：如果开发者希望通过计算机侧命令对移动设备进行调测，需要启用USB调试，同时通过设备授权确认。开启并授权后，HarmonyOS设备才能连接到计算机进行调试，可用于在计算机和设备之间复制数据、在设备上安装或卸载调试应用、以及读取日志数据等。
 
-* <strong>无线调试</strong>：通过Wi-Fi进行设备连接从而实现设备的调测，在开启无线调试后，可以查看设备的IP地址和端口，通过[DevEco Studio或hdc命令](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device#section9315596477)进行设备连接。使用过程中需要确保您的设备与计算机在同一个Wi-Fi网络中，初次连接需要进行设备授权确认。
+* <strong>无线调试</strong>：通过Wi-Fi进行设备连接从而实现设备的调测，在开启无线调试后，可以查看设备的IP地址和端口，通过[DevEco Studio或hdc命令](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device#section9315596477)进行设备连接。使用过程中需要确保您的设备与计算机在同一个Wi-Fi网络中，初次连接需要进行设备授权确认。
 
   ![](./img/zh-cn_image_0000002571387186.png "点击放大")
 * 清除受信任设备：针对之前授权过的所有计算机，撤销USB/无线调试的访问权限。
@@ -51,7 +51,7 @@ DFX稳定性配置选项包括：
 
 #### 网络
 
-* <strong>网络领航员</strong>：开启网络领航员后，开发者可以选择预置的网络模拟场景或者自定义网络模拟场景进行网络验证，提升APP体验的测试及验证效率，具体使用方式请参考[网络领航员](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-navigator)。
+* <strong>网络领航员</strong>：开启网络领航员后，开发者可以选择预置的网络模拟场景或者自定义网络模拟场景进行网络验证，提升APP体验的测试及验证效率，具体使用方式请参考[网络领航员](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/network-navigator)。
 
 #### 输入
 

@@ -9,7 +9,7 @@ sync_hash: 380df5cc
 ---
 # @security/no-unsafe-mac
 
-该规则禁止在[MAC消息认证算法](`https://`developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/aegis-message-authentication-code-calculation-0000001907018769)中使用不安全的哈希算法，例如SHA1。
+该规则禁止在[MAC消息认证算法](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/aegis-message-authentication-code-calculation-0000001907018769)中使用不安全的哈希算法，例如SHA1。
 
 #### 规则配置
 
@@ -51,4 +51,4 @@ plugin:@security/recommended
 plugin:@security/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

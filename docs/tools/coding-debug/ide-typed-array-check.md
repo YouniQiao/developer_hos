@@ -11,7 +11,7 @@ sync_hash: a590502c
 
 数值数组推荐使用TypedArray。
 
-根据[ArkTS高性能编程实践](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-high-performance-programming)，建议修改。
+根据[ArkTS高性能编程实践](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-high-performance-programming)，建议修改。
 
 #### 规则配置
 
@@ -56,4 +56,4 @@ for (let i = 0; i < 3; i++) {
 plugin:@performance/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

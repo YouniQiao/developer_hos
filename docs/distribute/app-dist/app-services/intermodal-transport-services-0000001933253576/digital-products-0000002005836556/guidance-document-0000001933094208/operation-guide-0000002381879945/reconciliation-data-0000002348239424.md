@@ -29,7 +29,7 @@ sync_hash: eb4db7c4
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | Content-Type | 是 | String | 取值为：application/json;charset=UTF-8 |
-| Authorization | 是 | String | 认证信息，使用JWT进行鉴权，具体请参见[Authorization说明。](`https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/open-platform-service-account-0000001053509221`) |
+| Authorization | 是 | String | 认证信息，使用JWT进行鉴权，具体请参见[Authorization说明。](https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/open-platform-service-account-0000001053509221) |
 
 ![](./img/d7dfa542d51f.png)
 

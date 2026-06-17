@@ -41,7 +41,7 @@ Debugger窗格有多个按钮：
 | ![](./img/zh-cn_image_0000002571547216.png) | Step Out | <strong>Shift+F8</strong>（macOS为<strong>Shift+F8</strong>） | 在单步调试执行到子函数内时，单击Step Out会执行完子函数剩余部分，并跳出返回到上一层函数。 |
 | ![](./img/zh-cn_image_0000002602066693.png) | Stop | <strong>Ctrl+F2</strong>（macOS为<strong>Command+F2</strong>） | 停止调试任务。 |
 | ![](./img/zh-cn_image_0000002602186747.png) | Run To Cursor | <strong>Alt+F9</strong>（macOS为<strong>Option+F9</strong>） | 断点执行到鼠标停留处。 |
-| ![](./img/zh-cn_image_0000002602186775.png) | JSVM Debug Port | 无 | 转发JSVM调试的端口，转发后可以在浏览器的DevTools工具上进行[JSVM-API调试](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-debugger-cpuprofiler-heapsnapshot)。  说明：  仅Native调试器中支持该按钮。 |
+| ![](./img/zh-cn_image_0000002602186775.png) | JSVM Debug Port | 无 | 转发JSVM调试的端口，转发后可以在浏览器的DevTools工具上进行[JSVM-API调试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-debugger-cpuprofiler-heapsnapshot)。  说明：  仅Native调试器中支持该按钮。 |
 
 #### Resume Program
 
@@ -85,7 +85,7 @@ Debugger窗格有多个按钮：
 
 #### JSVM Debug Port
 
-点击JSVM Debug Port![](./img/zh-cn_image_0000002602066725.png)，弹出输入转发端口的面板，输入端口并点击<strong>OK</strong>后会开始转发，转发成功后会有弹窗提示，打开对应的URL即可对JS代码进行调试。关于如何调试C++拉起的JS代码，请查阅[JSVM-API调试&定位](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-debugger-cpuprofiler-heapsnapshot)。
+点击JSVM Debug Port![](./img/zh-cn_image_0000002602066725.png)，弹出输入转发端口的面板，输入端口并点击<strong>OK</strong>后会开始转发，转发成功后会有弹窗提示，打开对应的URL即可对JS代码进行调试。关于如何调试C++拉起的JS代码，请查阅[JSVM-API调试&定位](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/jsvm-debugger-cpuprofiler-heapsnapshot)。
 
 该功能从DevEco Studio 5.1.0 Release版本开始支持。
 

@@ -11,7 +11,7 @@ sync_hash: a633e861
 
 建议音乐、视频、听书类应用通过AVSession监听播放、暂停、停止、下一首、上一首按键事件，并响应。
 
-改善[音视频播放](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-access-scene#注册控制命令)体验场景下，建议优先修改。
+改善[音视频播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/avsession-access-scene#注册控制命令)体验场景下，建议优先修改。
 
 #### 规则配置
 
@@ -183,4 +183,4 @@ avSession.createAVSession(context, tag, "audio").then((data: avSession.AVSession
 plugin:@correctness/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

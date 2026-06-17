@@ -11,12 +11,12 @@ sync_hash: 863cd7ba
 
 DevEco Studio原先默认开启源码混淆功能，会对API 10及以上的Stage工程，且编译模式是release时，自动进行简单的源码混淆，仅对参数名和局部变量名进行混淆。
 
-从DevEco Studio NEXT Developer Beta3（5.0.3.600）版本开始，新建工程及模块默认关闭源码混淆功能，如果在模块级build-profile.json5配置文件中开启源码混淆，则混淆规则配置文件obfuscation-rules.txt中默认开启推荐的混淆规则，包含-enable-property-obfuscation、-enable-toplevel-obfuscation、-enable-filename-obfuscation、-enable-export-obfuscation四项混淆项，开发者可进一步在obfuscation-rules.txt文件中选择开启的混淆项，关于混淆项的介绍请查看[混淆规则](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#混淆选项)。
+从DevEco Studio NEXT Developer Beta3（5.0.3.600）版本开始，新建工程及模块默认关闭源码混淆功能，如果在模块级build-profile.json5配置文件中开启源码混淆，则混淆规则配置文件obfuscation-rules.txt中默认开启推荐的混淆规则，包含-enable-property-obfuscation、-enable-toplevel-obfuscation、-enable-filename-obfuscation、-enable-export-obfuscation四项混淆项，开发者可进一步在obfuscation-rules.txt文件中选择开启的混淆项，关于混淆项的介绍请查看[混淆规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#混淆选项)。
 
 #### 使用约束
 
 * 仅支持Stage工程。
-* 在[构建模式](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)为release模式时生效。
+* 在[构建模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)为release模式时生效。
 * 模块及模块依赖的HAR和HSP均未关闭混淆。
 
 #### 字段说明
@@ -27,8 +27,8 @@ DevEco Studio原先默认开启源码混淆功能，会对API 10及以上的Stag
 | --- | --- | --- | --- | --- |
 | ruleOptions | | 对象 | 否 | 混淆规则配置。 |
 |  | enable | 布尔值 | 是 | 是否启用源码混淆：   * true：启用。 * false（默认值）：不启用。   说明：  从DevEco Studio NEXT Developer Beta3（5.0.3.600）版本开始，默认值由true改为false。 |
-| files | 字符串数组 | 否 | 配置混淆规则文件的相对路径，默认使用obfuscation-rules.txt文件。文件中配置的混淆规则仅在本模块编译时生效（包含依赖代码）。  说明：  * 规则文件中支持配置所有[混淆规则](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation)。 * 支持配置多个文件，文件名称支持自定义，当存在多个混淆规则文件时，规则合并以及合并后的作用范围可参考[混淆规则合并策略](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#混淆规则合并策略)。 |
-| consumerFiles | | 字符串/字符串数组 | 否 | 仅HAR/HSP模块可配置，配置传递给集成方的混淆规则文件的相对路径，支持配置多个文件，文件名称支持自定义。  说明：  * 为保证HAR/HSP模块可被正确集成使用，若有不希望被集成方混淆的内容，建议在规则文件中配置对应的[保留选项](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#保留选项)，例如HAR/HSP模块中导出的变量或函数。  * 规则文件中配置的[混淆选项](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#混淆选项)会与集成方的混淆规则进行合并，进而影响集成方的编译混淆，因此，建议仅配置[保留选项](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#保留选项)。 * 从DevEco Studio 5.1.0 Release版本开始支持在HSP模块中配置该字段。 |
+| files | 字符串数组 | 否 | 配置混淆规则文件的相对路径，默认使用obfuscation-rules.txt文件。文件中配置的混淆规则仅在本模块编译时生效（包含依赖代码）。  说明：  * 规则文件中支持配置所有[混淆规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation)。 * 支持配置多个文件，文件名称支持自定义，当存在多个混淆规则文件时，规则合并以及合并后的作用范围可参考[混淆规则合并策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#混淆规则合并策略)。 |
+| consumerFiles | | 字符串/字符串数组 | 否 | 仅HAR/HSP模块可配置，配置传递给集成方的混淆规则文件的相对路径，支持配置多个文件，文件名称支持自定义。  说明：  * 为保证HAR/HSP模块可被正确集成使用，若有不希望被集成方混淆的内容，建议在规则文件中配置对应的[保留选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#保留选项)，例如HAR/HSP模块中导出的变量或函数。  * 规则文件中配置的[混淆选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#混淆选项)会与集成方的混淆规则进行合并，进而影响集成方的编译混淆，因此，建议仅配置[保留选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#保留选项)。 * 从DevEco Studio 5.1.0 Release版本开始支持在HSP模块中配置该字段。 |
 
 #### 使能混淆
 
@@ -48,7 +48,7 @@ DevEco Studio原先默认开启源码混淆功能，会对API 10及以上的Stag
 
 ![](./img/note_3.0-zh-cn.png)
 
-使用[release模式](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)编译发布时，建议开启混淆，需要正确配置混淆规则，否则可能会有[运行时问题](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-questions)。
+使用[release模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)编译发布时，建议开启混淆，需要正确配置混淆规则，否则可能会有[运行时问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation-questions)。
 
 #### 使能高阶混淆
 
@@ -80,15 +80,15 @@ DevEco Studio原先默认开启源码混淆功能，会对API 10及以上的Stag
      ...
    }
    ```
-2. 打开模块目录内的obfuscation-rules.txt文件配置混淆规则，具体的配置规则请参见[配置混淆规则](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation)，对于不需要混淆的内容，请配置[保留选项](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#保留选项)。
+2. 打开模块目录内的obfuscation-rules.txt文件配置混淆规则，具体的配置规则请参见[配置混淆规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation)，对于不需要混淆的内容，请配置[保留选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#保留选项)。
 
-   当存在多个混淆规则文件时，规则合并以及合并后的作用范围可参考[混淆规则合并策略](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#混淆规则合并策略)。
+   当存在多个混淆规则文件时，规则合并以及合并后的作用范围可参考[混淆规则合并策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#混淆规则合并策略)。
 
    ![](./img/zh-cn_image_0000002602066727.png)
 
 #### HAR/HSP配置保留选项
 
-为保证HAR/HSP模块可被正确集成使用，若有不希望被集成方混淆的内容，建议在规则文件中配置对应的[保留选项](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#保留选项)，例如HAR/HSP模块中导出的变量或函数。
+为保证HAR/HSP模块可被正确集成使用，若有不希望被集成方混淆的内容，建议在规则文件中配置对应的[保留选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#保留选项)，例如HAR/HSP模块中导出的变量或函数。
 
 1. 打开模块级build-profile.json5文件，在"consumerFiles"字段下配置传递给集成方的混淆规则文件的相对路径，支持配置多个文件，默认为./consumer-rules.txt，对应编译后HAR包中的obfuscation.txt文件。
 
@@ -117,15 +117,15 @@ DevEco Studio原先默认开启源码混淆功能，会对API 10及以上的Stag
      ...
    }
    ```
-2. 打开模块目录内的consumer-rules.txt文件配置[保留选项](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#保留选项)。
+2. 打开模块目录内的consumer-rules.txt文件配置[保留选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#保留选项)。
 
-   当存在多个混淆规则文件时，规则合并以及合并后的作用范围可参考[混淆规则合并策略](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#混淆规则合并策略)。
+   当存在多个混淆规则文件时，规则合并以及合并后的作用范围可参考[混淆规则合并策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#混淆规则合并策略)。
 
    ![](./img/zh-cn_image_0000002602066767.png)
 
 #### 通过混淆助手配置保留选项
 
-开启混淆后，代码中的方法、属性或路径被混淆，但运行的时候访问的是未混淆的方法、属性或路径，可能导致功能不可用，因此需要将对应的字段配置保留选项。关于保留选项的排查场景及配置方式请参考[保留选项](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#保留选项)。
+开启混淆后，代码中的方法、属性或路径被混淆，但运行的时候访问的是未混淆的方法、属性或路径，可能导致功能不可用，因此需要将对应的字段配置保留选项。关于保留选项的排查场景及配置方式请参考[保留选项](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation#保留选项)。
 
 需要排查的场景和配置的字段有很多，因此DevEco Studio提供了混淆助手工具（ObfuscationHelper），可以根据模块和场景对源码进行扫描，快速[识别需要配置的保留选项和白名单字段](#section3989185975217)，开发者可以一键生成白名单混淆规则文件。由于某些场景是动态访问名称、属性，需要在运行的时候才能确定的字段，ObfuscationHelper会识别该类场景，开发者需要根据业务进一步[排查识别白名单后进行配置](#section42331014105310)。
 
@@ -307,7 +307,7 @@ DevEco Studio原先默认开启源码混淆功能，会对API 10及以上的Stag
 
 #### 扫描任务
 
-以下是ObfuscationHelper的扫描任务，关于保留选项的原理介绍和排查场景请参考[混淆规则](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation)。
+以下是ObfuscationHelper的扫描任务，关于保留选项的原理介绍和排查场景请参考[混淆规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/source-obfuscation)。
 
 <strong>属性混淆</strong>
 
@@ -374,7 +374,7 @@ DevEco Studio原先默认开启源码混淆功能，会对API 10及以上的Stag
   ```
 * <strong>C++侧访问/操作ArkTS对象属性</strong>
 
-  开发者需要根据C++接口来排查与其相关的ArkTS中的属性字符串，并手动加入白名单中，涉及的C++接口参考[使用Node-API接口设置ArkTS对象的属性](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-property)。
+  开发者需要根据C++接口来排查与其相关的ArkTS中的属性字符串，并手动加入白名单中，涉及的C++接口参考[使用Node-API接口设置ArkTS对象的属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/use-napi-about-property)。
 
   ```
   //index.ets

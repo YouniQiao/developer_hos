@@ -11,7 +11,7 @@ sync_hash: ef33feb9
 
 ## <strong>提交单个数字商品</strong>
 
-1. 点击[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
+1. 点击[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要提交商品的应用。
 3. 在“运营”页签下的左侧导航栏中，选择“产品运营 &gt; 商品管理”。
 4. 在右侧商品列表页，找到要提交的数字商品，点按旁边的“提交审核”。
@@ -29,7 +29,7 @@ sync_hash: ef33feb9
 
 ## 批量提交数字商品
 
-1. 点击[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
+1. 点击[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要提交商品的应用。
 3. 在“运营”页签下的左侧导航栏中，选择“产品运营 &gt; 商品管理”。
 4. 在右侧商品列表页，找到要提交的数字商品，勾选要提交审核的数字商品，点击“批量操作&gt;提交审核”。

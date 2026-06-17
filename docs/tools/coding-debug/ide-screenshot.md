@@ -28,7 +28,7 @@ upstream_hash: 898627d29c77
 
 #### 通过命令行方式截屏
 
-hdc是可以用于调试的命令行工具，通过该工具可以实现截屏功能。更多关于命令行工具hdc的说明请参见[hdc工具使用指导](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)。
+hdc是可以用于调试的命令行工具，通过该工具可以实现截屏功能。更多关于命令行工具hdc的说明请参见[hdc工具使用指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)。
 
 #### 方式一：hdc shell snapshot\_display
 
@@ -39,7 +39,7 @@ hdc file recv /data/local/tmp/0.jpeg  // 将图片从设备发送到本地目录
 
 #### 方式二：hdc shell wukong special -p
 
-wukong是系统稳定性测试工具，通过指定参数-p可以实现截图功能。更多关于稳定性测试工具wukong的说明请参见[wukong工具使用指导](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/wukong-guidelines)。
+wukong是系统稳定性测试工具，通过指定参数-p可以实现截图功能。更多关于稳定性测试工具wukong的说明请参见[wukong工具使用指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wukong-guidelines)。
 
 ```
 hdc shell wukong special -p

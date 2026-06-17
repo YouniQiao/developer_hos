@@ -60,7 +60,7 @@ DevEco Profiler工具提供了各种丰富的时间轴操作功能：
 
 ![](./img/zh-cn_image_0000002602066375.png)：时间轴调整按钮（快捷键为S或使用Ctrl+鼠标滚轮），点击后时间轴所展示的时长将变大，更易于观测整体数据趋势。
 
-拖动泳道区域下方的滑条（快捷键为A/D或使用Shift+鼠标滚轮），开发者可以调整时间轴所示的时间范围；拖动泳道右侧滑条（或者滑动鼠标滚轮），可以调整泳道单元上下滚动。具体快捷键使用方式请参见[快捷键](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-shortcut-key)。
+拖动泳道区域下方的滑条（快捷键为A/D或使用Shift+鼠标滚轮），开发者可以调整时间轴所示的时间范围；拖动泳道右侧滑条（或者滑动鼠标滚轮），可以调整泳道单元上下滚动。具体快捷键使用方式请参见[快捷键](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-shortcut-key)。
 
 ![](./img/note_3.0-zh-cn.png)
 

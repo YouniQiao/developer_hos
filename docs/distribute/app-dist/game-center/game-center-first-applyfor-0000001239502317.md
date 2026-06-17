@@ -17,13 +17,13 @@ sync_hash: 37313e7e
 
 ## 前提条件
 
-* 您已成功[创建游戏](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-createapp-0000001146718717`)，且软件包类型为“APK(Android应用)”或“RPK(快应用)”，支持设备为“手机”。
-* 您已完成[配置应用基本信息](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-releaseapkrpk-0000001106463276#section27070410361`)。
+* 您已成功[创建游戏](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-createapp-0000001146718717)，且软件包类型为“APK(Android应用)”或“RPK(快应用)”，支持设备为“手机”。
+* 您已完成[配置应用基本信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-releaseapkrpk-0000001106463276#section27070410361)。
 * 为了提升游戏版本包的通过率，您需要提前自检游戏接入参数、游戏登录体验、游戏支付体验等。
 
 ## 提交首发申请
 
-1. 登录[AppGallery Connect网站](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/`)，点击“APP与元服务”。
+1. 登录[AppGallery Connect网站](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)，点击“APP与元服务”。
 2. 在应用列表页面点击需要提交首发申请的游戏，选择“分发 &gt; 服务 &gt; 首发申请”，在页面右上角点击“申请首发”。
 
    ![](./img/599c7b37e383.png)
@@ -73,12 +73,12 @@ sync_hash: 37313e7e
 * RPK游戏版本的上架时间建议早于首发时间一周。
 * 请在游戏上架时间之前，提前至少3个工作日提交游戏的版本审核，预留时间修改问题，保证新游顺利首发。
 
-1. 登录[AppGallery Connect网站](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/`)，点击“APP与元服务”。
+1. 登录[AppGallery Connect网站](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)，点击“APP与元服务”。
 2. 在应用列表点击需要提交版本包的游戏。
-3. 选择“分发 &gt; 应用上架 &gt; 版本信息”，配置游戏的版本信息，详情请参见[发布应用（APK）](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-releaseapkrpk-0000001106463276`)或[发布应用（RPK）](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help--release-fastapp-0000001099836868`)，完成后点击“提交审核”。
+3. 选择“分发 &gt; 应用上架 &gt; 版本信息”，配置游戏的版本信息，详情请参见[发布应用（APK）](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-releaseapkrpk-0000001106463276)或[发布应用（RPK）](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help--release-fastapp-0000001099836868)，完成后点击“提交审核”。
 
    ![](./img/246ac120138f.png)
-4. 版本审核预计需要1~3个工作日，请耐心等待。审核结果可在版本信息页面或[互动中心](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-interaction-center-0000001146518763`)查看。
+4. 版本审核预计需要1~3个工作日，请耐心等待。审核结果可在版本信息页面或[互动中心](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-interaction-center-0000001146518763)查看。
 
    ![](./img/0045fde1c7ac.png)
 5. 游戏审核通过后，将根据您设定的时间或默认时间上架，玩家可在华为应用市场或游戏中心下载、花瓣轻游打开。
@@ -97,12 +97,12 @@ sync_hash: 37313e7e
 
 以上工作完成后，到达首发时间，游戏即可正常上架。为取得更好的首发效果，我们强烈建议您进行以下工作：
 
-1. 若您想要获取更好的首发推广资源，建议您在首发申请之前进行[游戏内测](`/docs/distribute/app-dist/game-center/game-center-test-0000001239342331/game-center-early-access-0000001194302390)（RPK游戏暂不支持）。
-2. 若您的新游首发需要申请首发活动，建议首发前1个月进行沟通，具体请参见[游戏营销活动申请指南](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-overview-0000001704790612)。
-3. 若您的新游首发具备礼包功能，建议给华为渠道用户不低于其他分发渠道的礼包金额与数量，建议首发前7天完成礼包的配置，具体请参考：[游戏礼包配置流程和规则](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-gifts-0000001239505383#section13584522142810`)。
-4. 若您想要聚集核心用户，形成玩家交流阵地，实时对用户问题和建议进行实时维护，建议您开通[申请论坛](`https://developer.huawei.com/consumer/cn/doc/5020401`)。
-5. 若您想要第一时间了解用户反馈，监控舆情，您可以查看/回复/举报用户在游戏评论区的评论，建议您开通[互动评论](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-interaction-comments-0000001239182361)。
-6. 若您想在首发前获取用户对不同素材的市场反馈，以选择转化效果较好的素材内容应用于全网，可在游戏上线后[申请开通素材测试功能](`https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/agc-materialmanage-applywhitelist-0000001128107381`)。
+1. 若您想要获取更好的首发推广资源，建议您在首发申请之前进行[游戏内测](/docs/distribute/app-dist/game-center/game-center-test-0000001239342331/game-center-early-access-0000001194302390)（RPK游戏暂不支持）。
+2. 若您的新游首发需要申请首发活动，建议首发前1个月进行沟通，具体请参见[游戏营销活动申请指南](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-overview-0000001704790612)。
+3. 若您的新游首发具备礼包功能，建议给华为渠道用户不低于其他分发渠道的礼包金额与数量，建议首发前7天完成礼包的配置，具体请参考：[游戏礼包配置流程和规则](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-gifts-0000001239505383#section13584522142810)。
+4. 若您想要聚集核心用户，形成玩家交流阵地，实时对用户问题和建议进行实时维护，建议您开通[申请论坛](https://developer.huawei.com/consumer/cn/doc/5020401)。
+5. 若您想要第一时间了解用户反馈，监控舆情，您可以查看/回复/举报用户在游戏评论区的评论，建议您开通[互动评论](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-interaction-comments-0000001239182361)。
+6. 若您想在首发前获取用户对不同素材的市场反馈，以选择转化效果较好的素材内容应用于全网，可在游戏上线后[申请开通素材测试功能](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/agc-materialmanage-applywhitelist-0000001128107381)。
 
 ## FAQ
 

@@ -94,7 +94,7 @@ upstream_hash: 13cb2f9c7435
 
 #### 使用hamock/hypium插件包的mock接口
 
-以下例子通过mock接口模拟本地模块的某个方法，关于Mock的更多说明可以参考[mock能力](`https://`gitcode.com/openharmony/testfwk_arkxtest#mock能力)。
+以下例子通过mock接口模拟本地模块的某个方法，关于Mock的更多说明可以参考[mock能力](https://gitcode.com/openharmony/testfwk_arkxtest#mock能力)。
 
 1. 在src/main/ets目录下新建一个ArkTS文件，例如ClassForMock.ets，并在其中导出一个类。
 

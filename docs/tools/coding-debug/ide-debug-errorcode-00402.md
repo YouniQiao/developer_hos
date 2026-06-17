@@ -25,7 +25,7 @@ Install the SDK first.
 
 <strong>处理步骤</strong>
 
-检查DevEco Studio安装目录下sdk/default/openharmony路径下面是否有ets目录，如果不存在，在官网上重新[下载DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+检查DevEco Studio安装目录下sdk/default/openharmony路径下面是否有ets目录，如果不存在，在官网上重新[下载DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00402002 热重载只支持STAGE模型工程
 
@@ -61,7 +61,7 @@ node路径不存在。
 
 <strong>处理步骤</strong>
 
-检查DevEco Studio安装目录的tools目录下是否存在node工具，如果不存在，在官网上重新[下载DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+检查DevEco Studio安装目录的tools目录下是否存在node工具，如果不存在，在官网上重新[下载DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00402004 当前修改不支持热重载
 
@@ -79,7 +79,7 @@ The current modification does not support hot reload. Please reinstall and resta
 
 <strong>处理步骤</strong>
 
-请根据当前热重载的[使用约束](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hot-reload#section995453874915)检查当前修改是否支持，如果不支持，需要先点击运行或调试后，再重新启动热重载。
+请根据当前热重载的[使用约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hot-reload#section995453874915)检查当前修改是否支持，如果不支持，需要先点击运行或调试后，再重新启动热重载。
 
 #### 00402005 热重载仅支持文件修改，不支持文件的新增或删除
 
@@ -115,7 +115,7 @@ The nodejs path configured in the IDE is invalid or not found.
 
 <strong>处理步骤</strong>
 
-检查DevEco Studio安装目录的tools目录下是否存在node工具，如果不存在，在官网上重新[下载DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+检查DevEco Studio安装目录的tools目录下是否存在node工具，如果不存在，在官网上重新[下载DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00402007 热重载运行超时
 
@@ -169,7 +169,7 @@ Failed to sign the patch package, please check the signingConfigs in build-profi
 
 <strong>处理步骤</strong>
 
-请检查build-profile.json5文件中的signingConfigs签名配置是否正确，如果不正确，[重新签名](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)后重试。
+请检查build-profile.json5文件中的signingConfigs签名配置是否正确，如果不正确，[重新签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)后重试。
 
 #### 00402010 构建未生成补丁abc文件
 
@@ -225,8 +225,8 @@ Reloaded XXX files failed. Please reinstall and restart.
 
 可检查以下几方面：
 
-1. 检查工程签名是否正确，热重载需要使用调试证书签名，不支持使用发布证书签名，具体参考[配置调试签名](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
-2. 检查工程的构建模式，热重载需要使用debug模式，不支持release模式，具体参考[指定构建模式](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)。
+1. 检查工程签名是否正确，热重载需要使用调试证书签名，不支持使用发布证书签名，具体参考[配置调试签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
+2. 检查工程的构建模式，热重载需要使用debug模式，不支持release模式，具体参考[指定构建模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)。
 
 #### 00402013 执行Apply Changes超时
 
@@ -517,7 +517,7 @@ Failed to obtain the node script for file comparison. Please reinstall the IDE.
 
 <strong>处理步骤</strong>
 
-重新[下载安装DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+重新[下载安装DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00402032 以下更改无法进行热重载和热重启
 
@@ -535,7 +535,7 @@ Hot reload and hot restart unavailable for the following changes.
 
 <strong>处理步骤</strong>
 
-请根据当前热重载和热重启的[使用约束](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hot-reload#section995453874915)检查当前修改是否支持，如果不支持，需要先点击运行或调试后，再重新启动热重载或热重启。
+请根据当前热重载和热重启的[使用约束](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hot-reload#section995453874915)检查当前修改是否支持，如果不支持，需要先点击运行或调试后，再重新启动热重载或热重启。
 
 #### 00402033 ChangedFileList.json为空或不存在
 
@@ -571,7 +571,7 @@ Hot reload unavailable for the following changes.
 
 <strong>处理步骤</strong>
 
-[打开热重启开关](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hot-reload#section1724105718289)后，点击运行或调试，再重新启动热重载。
+[打开热重启开关](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hot-reload#section1724105718289)后，点击运行或调试，再重新启动热重载。
 
 #### 00402035 release模式下不支持热重载
 

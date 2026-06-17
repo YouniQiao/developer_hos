@@ -16,9 +16,9 @@ sync_hash: e014c4d4
 1. 通过以下任意一种方式，打开AppAnalyzer。
    * 单击菜单栏<strong>Tools &gt;</strong> <strong>AppAnalyzer</strong>，打开AppAnalyzer页面。
    * 在编辑窗口右侧的工具栏，点击<strong>AppAnalyzer</strong>或![](./img/zh-cn_image_0000002571387070.png)，打开AppAnalyzer页面。
-2. 连接设备或启动模拟器，并对应用进行[签名](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
-   * 真机：参考[使用本地真机运行应用](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device)连接真机。
-   * 模拟器：在AppAnalyzer首页创建或启动模拟器，具体请参考[管理模拟器](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-management)。
+2. 连接设备或启动模拟器，并对应用进行[签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
+   * 真机：参考[使用本地真机运行应用](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-device)连接真机。
+   * 模拟器：在AppAnalyzer首页创建或启动模拟器，具体请参考[管理模拟器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-management)。
 3. 如果使用DevEco Studio 6.0.1版本，未配置Python环境时，请根据界面提示，下载Python及三方库。或者点击AppAnalyzer底部<strong>Python 配置</strong>按钮进行配置。
 4. 如果使用DevEco Studio 6.0.0 Beta2之前的版本，需要先编译生成HAP或HSP。使用Beta2及以上的版本，无需提前编译。
 
@@ -26,7 +26,7 @@ sync_hash: e014c4d4
 
 #### DevEco Studio 6.0.1 Beta1及以上版本
 
-1. 点击右上角![](./img/zh-cn_image_0000002602066183.png)图标选择Product、Target和构建模式，点击<strong>Apply</strong>后，在AppAnalyzer的首页中可查看对应的编译产物和构建模式。关于Product、Target、构建模式的介绍请参考[配置多目标产物](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-guides)和[指定构建模式](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)。
+1. 点击右上角![](./img/zh-cn_image_0000002602066183.png)图标选择Product、Target和构建模式，点击<strong>Apply</strong>后，在AppAnalyzer的首页中可查看对应的编译产物和构建模式。关于Product、Target、构建模式的介绍请参考[配置多目标产物](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-guides)和[指定构建模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)。
 
    ![](./img/zh-cn_image_0000002571387072.png)
 2. 在<strong>AppAnalyzer</strong>页面，选择<strong>场景化体检</strong>，选择预置的体检卡片，或根据需要自定义卡片。
@@ -42,13 +42,13 @@ sync_hash: e014c4d4
 
    从DevEco Studio 6.0.2 Beta1版本开始，如果在体检中遇到问题，可点击报告右上角的<strong>User Feedback</strong>向我们反馈。
 
-   从DevEco Studio 6.1.0 Release版本开始，支持导出报告，以实现报告的共享，具体可查看[导出报告](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer-history-reports#section78017171818)。
+   从DevEco Studio 6.1.0 Release版本开始，支持导出报告，以实现报告的共享，具体可查看[导出报告](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer-history-reports#section78017171818)。
 
    ![](./img/zh-cn_image_0000002602186239.png)
 
 #### DevEco Studio 6.0.1 Beta1以下版本
 
-1. 如果使用DevEco Studio 6.0.0 Beta2及以上的版本，支持在体检过程中自动编译构建打包。点击右上角![](./img/zh-cn_image_0000002571387060.png)图标选择Product、Target和构建模式，关于Product、Target、构建模式的介绍请参考[配置多目标产物](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-guides)和[指定构建模式](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)。
+1. 如果使用DevEco Studio 6.0.0 Beta2及以上的版本，支持在体检过程中自动编译构建打包。点击右上角![](./img/zh-cn_image_0000002571387060.png)图标选择Product、Target和构建模式，关于Product、Target、构建模式的介绍请参考[配置多目标产物](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-guides)和[指定构建模式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-compilation-options-customizing-guide#section192461528194916)。
 2. 在<strong>AppAnalyzer</strong>页面，选择<strong>场景化体检</strong>，选择<strong>自动</strong>或<strong>手动</strong>方式，<strong>模块</strong>选择框选择HarmonyOS应用/元服务工程模块。
    * 自动方式：体检时无需手动遍历，AppAnalyzer会自动检测。自动方式下还需要选择具体的运行时长。
    * 手动方式：体检时需要根据提示手动遍历HarmonyOS应用/元服务的功能。
@@ -82,42 +82,42 @@ sync_hash: e014c4d4
 
 | 场景 | 子场景 | 检测指标/检测项 | 应用或元服务场景 | 自动或手动方式 |
 | --- | --- | --- | --- | --- |
-| 页面间转场 | router或者navigation页面跳转 | [点击响应时延](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section118706211961) | 应用，元服务 | 自动，手动 |
-| [点击完成时延](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section2406192820717) |
-| [转场卡顿率](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-frame-rate#section1591383182619) |
-| [起播时延](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section1140562816186) |
-| 页面滑动 | 页面滑动（仅支持List、Grid、WaterFlow这三个组件实现的页面滑动） | [滑动响应时延](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section1767913186810) | 应用，元服务 | 自动，手动 |
-| [滑动卡顿率](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-frame-rate#section159268494256) |
-| 冷启动 | 冷启动 | [完成时延](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section58771582411) | 应用，元服务 | 自动，手动 |
-| 页面内转场 | swiper滑动转场 | [滑动响应时延](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section1767913186810) | 应用，元服务 | 自动，手动 |
-| [滑动卡顿率](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-frame-rate#section159268494256) |
-| [起播时延](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section1140562816186) |
-| tabs点击转场 | [点击响应时延](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section118706211961) |
-| [点击完成时延](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section2406192820717) |
-| [转场卡顿率](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-frame-rate#section1591383182619) |
-| tabs滑动转场 | [滑动响应时延](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section1767913186810) |
-| [滑动卡顿率](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-frame-rate#section159268494256) |
-| [起播时延](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section1140562816186) |
-| swiper点击转场  （从DevEco Studio 6.0.2 Beta1版本开始支持） | [点击响应时延](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section118706211961) |
-| [点击完成时延](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section2406192820717) |
-| [转场卡顿率](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-frame-rate#section1591383182619) |
-| web场景  （从DevEco Studio 6.0.0 Beta2版本开始支持） | web页面跳转 | [点击响应时延](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section118706211961) | 应用，元服务 | 自动，手动 |
-| [点击完成时延](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section2406192820717) |
-| web页面滑动 | [滑动响应时延](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section1767913186810) |
-| [滑动卡顿率](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-frame-rate#section159268494256) |
+| 页面间转场 | router或者navigation页面跳转 | [点击响应时延](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section118706211961) | 应用，元服务 | 自动，手动 |
+| [点击完成时延](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section2406192820717) |
+| [转场卡顿率](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-frame-rate#section1591383182619) |
+| [起播时延](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section1140562816186) |
+| 页面滑动 | 页面滑动（仅支持List、Grid、WaterFlow这三个组件实现的页面滑动） | [滑动响应时延](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section1767913186810) | 应用，元服务 | 自动，手动 |
+| [滑动卡顿率](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-frame-rate#section159268494256) |
+| 冷启动 | 冷启动 | [完成时延](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section58771582411) | 应用，元服务 | 自动，手动 |
+| 页面内转场 | swiper滑动转场 | [滑动响应时延](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section1767913186810) | 应用，元服务 | 自动，手动 |
+| [滑动卡顿率](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-frame-rate#section159268494256) |
+| [起播时延](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section1140562816186) |
+| tabs点击转场 | [点击响应时延](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section118706211961) |
+| [点击完成时延](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section2406192820717) |
+| [转场卡顿率](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-frame-rate#section1591383182619) |
+| tabs滑动转场 | [滑动响应时延](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section1767913186810) |
+| [滑动卡顿率](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-frame-rate#section159268494256) |
+| [起播时延](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section1140562816186) |
+| swiper点击转场  （从DevEco Studio 6.0.2 Beta1版本开始支持） | [点击响应时延](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section118706211961) |
+| [点击完成时延](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section2406192820717) |
+| [转场卡顿率](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-frame-rate#section1591383182619) |
+| web场景  （从DevEco Studio 6.0.0 Beta2版本开始支持） | web页面跳转 | [点击响应时延](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section118706211961) | 应用，元服务 | 自动，手动 |
+| [点击完成时延](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section2406192820717) |
+| web页面滑动 | [滑动响应时延](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-delay#section1767913186810) |
+| [滑动卡顿率](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/performance-frame-rate#section159268494256) |
 
 #### 功能兼容性
 
 | 场景 | 子场景 | 检测指标/检测项 | 应用或元服务场景 | 自动或手动方式 |
 | --- | --- | --- | --- | --- |
-| 音频播控服务  （从DevEco Studio 5.1.0 Release版本开始支持） | 播控中心音频控制场景 | [播控中心控制音频播放检测](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) | 应用 | 手动 |
-| [播控中心控制音频暂停检测](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) |
-| [播控中心控制歌曲切换上一首检测](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) |
-| [播控中心控制歌曲切换下一首检测](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) |
-| [播控中心控制歌曲播放进度条拖动检测](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) |
-| [播控中心控制歌曲循环播放检测](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) |
-| [播控中心控制歌曲收藏检测](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) |
-| 音频焦点切换  （从DevEco Studio 5.1.0 Release版本开始支持） | 来电接听场景 | [音频焦点变化事件响应检测](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section256142914530) | 应用 | 手动 |
+| 音频播控服务  （从DevEco Studio 5.1.0 Release版本开始支持） | 播控中心音频控制场景 | [播控中心控制音频播放检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) | 应用 | 手动 |
+| [播控中心控制音频暂停检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) |
+| [播控中心控制歌曲切换上一首检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) |
+| [播控中心控制歌曲切换下一首检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) |
+| [播控中心控制歌曲播放进度条拖动检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) |
+| [播控中心控制歌曲循环播放检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) |
+| [播控中心控制歌曲收藏检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) |
+| 音频焦点切换  （从DevEco Studio 5.1.0 Release版本开始支持） | 来电接听场景 | [音频焦点变化事件响应检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section256142914530) | 应用 | 手动 |
 | VoIP通话场景 |
 | 闹钟场景 |
 | 导航场景 |
@@ -125,13 +125,13 @@ sync_hash: e014c4d4
 | 静音播放场景 |
 | 非静音播放场景 |
 | 普通录音场景 |
-| 音频设备控制  （从DevEco Studio 5.1.0 Release版本开始支持） | 耳机控制音频场景 | [耳机控制音频播放检测](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) | 应用 | 手动 |
-| [耳机控制音频暂停检测](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) |
-| [耳机控制歌曲切换上一首检测](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) |
-| [耳机控制歌曲切换下一首检测](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) |
-| 耳机断开场景 | [耳机断开事件响应检测](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section256142914530) |
-| 运行异常  （从DevEco Studio 6.1.0 Beta1版本开始支持） | 运行异常 | [运行无兼容性问题](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer-all-rules#section202813103565) | 应用，元服务 | 自动 |
-| [API兼容性问题](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-api-compatibility-check) |
+| 音频设备控制  （从DevEco Studio 5.1.0 Release版本开始支持） | 耳机控制音频场景 | [耳机控制音频播放检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) | 应用 | 手动 |
+| [耳机控制音频暂停检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) |
+| [耳机控制歌曲切换上一首检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) |
+| [耳机控制歌曲切换下一首检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section12303131815311) |
+| 耳机断开场景 | [耳机断开事件响应检测](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-specification#section256142914530) |
+| 运行异常  （从DevEco Studio 6.1.0 Beta1版本开始支持） | 运行异常 | [运行无兼容性问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer-all-rules#section202813103565) | 应用，元服务 | 自动 |
+| [API兼容性问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-api-compatibility-check) |
 
 #### 多设备
 
@@ -142,13 +142,13 @@ sync_hash: e014c4d4
 
 | 场景 | 检测指标/检测项 | 应用或元服务场景 | 自动或手动方式 |
 | --- | --- | --- | --- |
-| 折叠开合  （从DevEco Studio 6.0.2 Beta1版本开始支持） | 参考[UX规则](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer-all-rules#section68461625141414) | 应用，元服务 | 手动 |
+| 折叠开合  （从DevEco Studio 6.0.2 Beta1版本开始支持） | 参考[UX规则](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-app-analyzer-all-rules#section68461625141414) | 应用，元服务 | 手动 |
 
 #### 功耗
 
 | 场景 | 子场景 | 检测指标/检测项 | 应用或元服务场景 | 自动或手动方式 |
 | --- | --- | --- | --- | --- |
-| 前台静置  （从DevEco Studio 6.1.0 Beta1版本开始支持） | 前台静置 | [前台不可见动效](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-foreground-render#section12791152171) | 应用 | 自动，手动 |
-| [UI空跑](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-foreground-resource#section169882223810) |
-| [未使用硬件合成](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-foreground-render#section18911148816) |
-| [CPU负载异常](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-foreground-resource#section177973203218) |
+| 前台静置  （从DevEco Studio 6.1.0 Beta1版本开始支持） | 前台静置 | [前台不可见动效](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-foreground-render#section12791152171) | 应用 | 自动，手动 |
+| [UI空跑](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-foreground-resource#section169882223810) |
+| [未使用硬件合成](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-foreground-render#section18911148816) |
+| [CPU负载异常](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/standard-foreground-resource#section177973203218) |

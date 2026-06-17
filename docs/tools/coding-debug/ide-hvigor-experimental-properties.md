@@ -98,7 +98,7 @@ sync_hash: aeab848f
 
 * FA模型。
 * 覆盖率测试。
-* [在release模式下，开启混淆构建包含js中间码的HAR](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-har#section19788284410)。
+* [在release模式下，开启混淆构建包含js中间码的HAR](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-har#section19788284410)。
 * LiteWearable设备对应的工程。
 
 #### 增量判断模块级跳过
@@ -132,7 +132,7 @@ sync_hash: aeab848f
 
 <strong>使用场景</strong>一
 
-开启开关后，可通过[excludeNodeByName方法](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-api#section14183309272)排除一个不存在的模块。
+开启开关后，可通过[excludeNodeByName方法](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-api#section14183309272)排除一个不存在的模块。
 
 1. 按照以上方式开启开关<strong>Enable ohpm execution by hvigor</strong>。
 2. 在工程级build-profile.json5的module字段下，添加工程中不存在的模块，如testModule。
@@ -145,7 +145,7 @@ sync_hash: aeab848f
 
 <strong>使用场景二</strong>
 
-调用[setDependenciesOpt](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-expanding-context#section18789410129)、[setOverrides](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-expanding-context#section469812496459)等方法动态修改oh-package.json5中的依赖信息后，执行sync或build等操作时，DevEco Studio会执行两次ohpm install操作，开启开关后，Hvigor仅执行一次ohpm install，可提升构建的效率。
+调用[setDependenciesOpt](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-expanding-context#section18789410129)、[setOverrides](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-build-expanding-context#section469812496459)等方法动态修改oh-package.json5中的依赖信息后，执行sync或build等操作时，DevEco Studio会执行两次ohpm install操作，开启开关后，Hvigor仅执行一次ohpm install，可提升构建的效率。
 
 ![](./img/zh-cn_image_0000002571386944.png)
 
@@ -153,7 +153,7 @@ sync_hash: aeab848f
 
 <strong>使用场景：</strong>
 
-从DevEco Studio 6.0.1 Beta1版本开始，如果需要频繁修改某个cpp源文件，可开启IClang相关的开关，提升C++增量编译效率。IClang是一项C++函数级增量编译优化技术，详细介绍请参考[毕昇编译器](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/bisheng-compiler#主要编译优化特性)。
+从DevEco Studio 6.0.1 Beta1版本开始，如果需要频繁修改某个cpp源文件，可开启IClang相关的开关，提升C++增量编译效率。IClang是一项C++函数级增量编译优化技术，详细介绍请参考[毕昇编译器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/bisheng-compiler#主要编译优化特性)。
 
 <strong>使用约束：</strong>
 

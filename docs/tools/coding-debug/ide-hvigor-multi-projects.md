@@ -21,7 +21,7 @@ sync_hash: c5fac2a7
    }
    ```
 2. 准备好HAP打包工具app\_packing\_tool.jar（在 $DevEco Studio安装目录/sdk/default/openharmony/toolchains/lib下）。
-3. 在HAP打包工具目录下，执行命令将多个HAP进行打包，示例如下。更多关于打包工具的使用请参考[打包工具](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/packing-tool#多工程打包指令)。
+3. 在HAP打包工具目录下，执行命令将多个HAP进行打包，示例如下。更多关于打包工具的使用请参考[打包工具](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/packing-tool#多工程打包指令)。
 
    ```
    java -jar app_packing_tool.jar --mode multiApp --hap-list D:\project\MyApplication\1.hap,D:\project\MyApplication1\2.hap --out-path D:\project\final.app

@@ -57,5 +57,5 @@ ArkUI分析用于定位由于组件耗时、页面布局、状态变量更新导
 
 ![](./img/note_3.0-zh-cn.png)
 
-* 如需查看其他泳道信息，请参考[Frame分析](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-frame)。
+* 如需查看其他泳道信息，请参考[Frame分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-frame)。
 * 由于隐私安全政策，已上架应用市场的应用不支持录制ArkUI State泳道。

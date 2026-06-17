@@ -11,7 +11,7 @@ sync_hash: 5e3667c3
 
 从DevEco Studio 6.0.2 Beta1版本开始，新增Database Inspector，支持在DevEco Studio上执行SQL语句查看、修改应用数据库，无需将应用数据库先导出到本地，提升开发调试效率，当前支持SQLite和向量数据库。
 
-开发者也可以通过命令行工具调试数据库，具体操作方式请参考[vector-store数据库调试工具指导](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/vector-store-debug-tool)、[SQLite调试工具指导](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/sqlite-database-debug-tool)。
+开发者也可以通过命令行工具调试数据库，具体操作方式请参考[vector-store数据库调试工具指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/vector-store-debug-tool)、[SQLite调试工具指导](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/sqlite-database-debug-tool)。
 
 #### 使用场景
 

@@ -11,7 +11,7 @@ sync_hash: bcc76579
 
 多个组件关联同一数据时，建议在组件中使用@Watch装饰器添加更新条件，避免不必要的组件更新。
 
-[通用丢帧场景](`https://`developer.huawei.com/consumer/cn/doc/best-practices/bpta-status-management#section117631443131915)下，建议优先修改。
+[通用丢帧场景](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-status-management#section117631443131915)下，建议优先修改。
 
 #### 规则配置
 
@@ -231,4 +231,4 @@ struct CompC {
 plugin:@performance/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

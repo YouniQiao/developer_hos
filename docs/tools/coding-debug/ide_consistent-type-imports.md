@@ -26,7 +26,7 @@ sync_hash: 4ea5fed6
 
 #### 选项
 
-详情请参考[@typescript-eslint/consistent-type-imports选项](`https://`typescript-eslint.nodejs.cn/rules/consistent-type-imports/#options)。
+详情请参考[@typescript-eslint/consistent-type-imports选项](https://typescript-eslint.nodejs.cn/rules/consistent-type-imports/#options)。
 
 #### 正例
 
@@ -55,4 +55,4 @@ plugin:@typescript-eslint/recommended
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

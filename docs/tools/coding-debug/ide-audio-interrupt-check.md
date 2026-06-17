@@ -11,7 +11,7 @@ sync_hash: 8260a87e
 
 建议应用在播放或录制音频的场景中，监听音频焦点中断回调事件，并响应。
 
-改善[音视频播放](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency#处理音频焦点变化)体验场景下，建议优先修改。
+改善[音视频播放](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/audio-playback-concurrency#处理音频焦点变化)体验场景下，建议优先修改。
 
 #### 规则配置
 
@@ -127,4 +127,4 @@ export class AudioInterruptReport {
 plugin:@correctness/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

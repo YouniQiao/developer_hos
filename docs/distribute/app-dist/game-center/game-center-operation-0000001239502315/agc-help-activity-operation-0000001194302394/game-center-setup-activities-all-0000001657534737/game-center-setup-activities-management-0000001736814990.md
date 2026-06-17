@@ -13,7 +13,7 @@ sync_hash: 2071259a
 
 ## 查看活动列表
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”，在应用列表中选择应用。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在应用列表中选择应用。
 2. 选择“运营 &gt; 活动管理”，查看活动列表。
 
    ![](./img/8876d01f3e3b.png)
@@ -24,7 +24,7 @@ sync_hash: 2071259a
 
 * 活动数据
 
-  进入“优惠券活动”页面，查看添加“华为优惠券”奖品的活动数据，详见[查看活动数据分析](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-results-0000001657854465#section9589153010419`)。
+  进入“优惠券活动”页面，查看添加“华为优惠券”奖品的活动数据，详见[查看活动数据分析](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-results-0000001657854465#section9589153010419)。
 * 审批记录
 
   查看活动审批记录。

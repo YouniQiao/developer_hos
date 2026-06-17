@@ -271,7 +271,7 @@ SDK中缺少必要的组件。
 
 <strong>处理步骤</strong>
 
-重新[安装DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+重新[安装DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00523003 找不到modules.abc文件
 
@@ -383,7 +383,7 @@ product配置不正确。
 
 <strong>处理步骤</strong>
 
-检查工程级build-profile.json5文件中对应模块的applyToProducts配置是否正确，详细配置可以参考[构建定义的目标产物](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-guides#section2554174114463)。
+检查工程级build-profile.json5文件中对应模块的applyToProducts配置是否正确，详细配置可以参考[构建定义的目标产物](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-guides#section2554174114463)。
 
 #### 00526010 运行时获取不到target
 
@@ -401,4 +401,4 @@ The target can not be empty. Check the build-profile.json5 file of the project r
 
 <strong>处理步骤</strong>
 
-检查工程级build-profile.json5文件中对应模块的applyToProducts配置是否正确，详细配置可以参考[构建定义的目标产物](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-guides#section2554174114463)。
+检查工程级build-profile.json5文件中对应模块的applyToProducts配置是否正确，详细配置可以参考[构建定义的目标产物](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-guides#section2554174114463)。

@@ -9,7 +9,7 @@ sync_hash: c082e2a6
 ---
 # 自定义屏幕配置
 
-从DevEco Studio 6.0.0 Beta1版本开始，模拟器支持自定义屏幕配置，支持在创建新的模拟器时自定义，具体请参考[创建模拟器](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-create)，或者对已创建的模拟器进行修改，具体参考以下步骤。
+从DevEco Studio 6.0.0 Beta1版本开始，模拟器支持自定义屏幕配置，支持在创建新的模拟器时自定义，具体请参考[创建模拟器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-create)，或者对已创建的模拟器进行修改，具体参考以下步骤。
 
 #### 使用约束
 

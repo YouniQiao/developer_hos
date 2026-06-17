@@ -13,9 +13,9 @@ sync_hash: f88aa0fa
 
 模拟器可以通过本地计算机的网络直接访问互联网。
 
-模拟器访问互联网实际上利用的是本地计算机的以太网或者WLAN，与本地计算机共享同一网络资源。如果无法连接网络，请确认本地网络访问是否受到了限制（如使用公司内网）。如果网络访问受到限制，则需要在模拟器上配置网络代理，请参考[网络代理设置](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-more-features#section206461549731)。
+模拟器访问互联网实际上利用的是本地计算机的以太网或者WLAN，与本地计算机共享同一网络资源。如果无法连接网络，请确认本地网络访问是否受到了限制（如使用公司内网）。如果网络访问受到限制，则需要在模拟器上配置网络代理，请参考[网络代理设置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-more-features#section206461549731)。
 
-如果访问网络时需要安装数字证书，请参考[使用模拟器发起https请求时如何安装数字证书](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-27)。
+如果访问网络时需要安装数字证书，请参考[使用模拟器发起https请求时如何安装数字证书](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-27)。
 
 ![](./img/note_3.0-zh-cn.png)
 

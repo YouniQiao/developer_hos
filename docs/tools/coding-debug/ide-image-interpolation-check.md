@@ -9,7 +9,7 @@ sync_hash: 46372ea7
 ---
 # @correctness/image-interpolation-check
 
-在使用Image组件[interpolation](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image#interpolation)接口时，建议不要使用最邻近插值，避免出现明显锯齿问题。
+在使用Image组件[interpolation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image#interpolation)接口时，建议不要使用最邻近插值，避免出现明显锯齿问题。
 
 #### 规则配置
 
@@ -121,4 +121,4 @@ export struct AppIcon {
 plugin:@correctness/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

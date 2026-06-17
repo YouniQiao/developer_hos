@@ -9,7 +9,7 @@ sync_hash: 06c66cfc
 ---
 # @correctness/multimedia-use-stride-in-image-receiver
 
-在使用ImageReceiver组件中[readNextImage](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagereceiver#readnextimage9)接口时，建议设置且调用rowStride属性，避免出现相机获取预览流数据异常的问题。
+在使用ImageReceiver组件中[readNextImage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagereceiver#readnextimage9)接口时，建议设置且调用rowStride属性，避免出现相机获取预览流数据异常的问题。
 
 #### 规则配置
 
@@ -111,4 +111,4 @@ function onImageArrival(receiver: image.ImageReceiver): void {
 plugin:@correctness/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

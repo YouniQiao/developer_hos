@@ -29,7 +29,7 @@ DevEco Studio支持界面配置Build Mode配置选项，点击右上角![](./img
 
 ![](./img/note_3.0-zh-cn.png)
 
-* DevEco Studio界面设置或命令行中指定的buildMode构建模式，只代表当前选择的buildMode的名称，最终编译产物是否是Debug应用取决于buildOption配置中的debuggable字段，构建模式使用的具体buildOption配置信息，请参见[模块级buildOption](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile#section1010733210421)。
+* DevEco Studio界面设置或命令行中指定的buildMode构建模式，只代表当前选择的buildMode的名称，最终编译产物是否是Debug应用取决于buildOption配置中的debuggable字段，构建模式使用的具体buildOption配置信息，请参见[模块级buildOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile#section1010733210421)。
 * LiteWearable设备使用标准JS运行时，因此对应的应用开发在release模式下的构建产物中包含JS源码，请注意代码资产保护。
 
 #### 命令行设置
@@ -59,15 +59,15 @@ Hvigor支持定制构建模式，采用buildOption字段声明编译选项，并
 | --- | --- | --- | --- | --- |
 | buildModeSet | | 对象数组 | 否 | 构建模式合集，可配置多个。 |
 |  | name | 字符串 | 是 | 构建模式名称。  内置三种类型，此三项无需用户显性配置：   * debug：开发、调试推荐选项 * release：打包、发布推荐选项 * test：运行ohosTest测试套件推荐选项 说明：  1. 项目中全局唯一，不区分大小写  2. 仅允许在工程级build-profile.json5中声明、定义  3. 相同的buildMode会被覆盖，按照配置顺序，后者覆盖前者  4. 三种模式均支持开发者自定义 |
-| buildOption | 对象 | 否 | 构建模式使用的具体配置信息，详情请参见[工程级buildOption](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section14222051575)。 |
-| products | | 对象数组 | 否 | 产品品类，可配置多个。如需配置多个，相关说明请参见[配置多目标产物](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products)章节。 |
-|  | buildOption | 对象 | 否 | 产品的编译构建配置，详情请参见[工程级buildOption](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section14222051575)。  说明：  product的buildOption会对buildMode的buildOption继承覆写，即相同配置项product的优先级更高。 |
+| buildOption | 对象 | 否 | 构建模式使用的具体配置信息，详情请参见[工程级buildOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section14222051575)。 |
+| products | | 对象数组 | 否 | 产品品类，可配置多个。如需配置多个，相关说明请参见[配置多目标产物](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products)章节。 |
+|  | buildOption | 对象 | 否 | 产品的编译构建配置，详情请参见[工程级buildOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile-app#section14222051575)。  说明：  product的buildOption会对buildMode的buildOption继承覆写，即相同配置项product的优先级更高。 |
 
 <strong>模块级build-profile.json5文件：</strong>
 
 | 字段 | | | 类型 | 是否必填 | 说明 |
 | --- | --- | --- | --- | --- | --- |
-| buildOption | | | 对象 | 否 | 构建模式使用的具体配置信息，详情请参见[模块级buildOption](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile#section1010733210421)，其中不支持配置name、debuggable和copyFrom字段。 |
+| buildOption | | | 对象 | 否 | 构建模式使用的具体配置信息，详情请参见[模块级buildOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile#section1010733210421)，其中不支持配置name、debuggable和copyFrom字段。 |
 | buildOptionSet | | | 对象数组 | 否 | buildOption的集合，定义可用的底层配置选项集。 |
 |  | name | | 字符串 | 是 | buildOption的名称。  当前模块级build-profile.json5中已有顶层独立的buildOption配置，buildOptionSet优先级比buildOption更高。  说明：  1. 同模块中唯一，不区分大小写。 2. 相同的名称会被覆盖，按照配置顺序，后者覆盖前者。 3. 内置三种：default、debug、release。 |
 | copyFrom | | 字符串 | 否 | 配置已定义的buildOption的name，表示从本模块已有的buildOption复制配置，然后再覆写。  说明：  1. 仅限在同一模块的build-profile.json5中复制。 2. 目标buildOption不存在时，构建告警，回落为从内置的default选项中复制。 |
@@ -76,7 +76,7 @@ Hvigor支持定制构建模式，采用buildOption字段声明编译选项，并
 | mappings | | 对象数组 | 否 | 绑定target使用的buildOption。 |
 |  | targetName | 字符串 | 是 | 指定待绑定的target。  说明：  仅在本模块选择。 |
 | buildOptionName | 字符串 | 是 | 指定待绑定的buildOption。  说明：  仅在本模块选择。 |
-| targets | config | buildOption | 对象 | 否 | 构建模式使用的具体配置信息，详情请参见[模块级buildOption](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile#section1010733210421)，其中不支持配置name、debuggable和copyFrom字段，优先级比buildOptionSet更高。 |
+| targets | config | buildOption | 对象 | 否 | 构建模式使用的具体配置信息，详情请参见[模块级buildOption](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-build-profile#section1010733210421)，其中不支持配置name、debuggable和copyFrom字段，优先级比buildOptionSet更高。 |
 
 #### 合并编译选项规则
 

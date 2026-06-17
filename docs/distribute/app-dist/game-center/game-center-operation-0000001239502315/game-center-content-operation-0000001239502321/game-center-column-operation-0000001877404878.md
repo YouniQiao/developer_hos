@@ -24,7 +24,7 @@ sync_hash: 28c37f25
 
 ### 创建内容
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，在首页选择“全部服务”，并搜索“游戏内容创作”，点击进入“游戏内容创作 &gt; 内容管理”页面。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，在首页选择“全部服务”，并搜索“游戏内容创作”，点击进入“游戏内容创作 &gt; 内容管理”页面。
 2. 点击“发布”，选择“写文章”或“发视频”创建图文内容或视频内容。
 
    ![](./img/2547fe83e644.png)
@@ -57,7 +57,7 @@ sync_hash: 28c37f25
 
 ### 管理内容
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，在首页选择“全部服务”，并搜索“游戏内容创作”，点击进入“游戏内容创作 &gt; 内容管理”页面。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，在首页选择“全部服务”，并搜索“游戏内容创作”，点击进入“游戏内容创作 &gt; 内容管理”页面。
 2. 页面展示已创建的内容列表，可切换页签查看文章内容和视频内容。点击操作列的“编辑”和“删除”可对内容进行二次编辑或删除操作。
 
    ![](./img/484f6a6e3e37.png)

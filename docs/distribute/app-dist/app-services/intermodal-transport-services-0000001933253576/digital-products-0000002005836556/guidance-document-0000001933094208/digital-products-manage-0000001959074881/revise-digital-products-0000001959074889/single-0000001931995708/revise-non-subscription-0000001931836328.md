@@ -9,7 +9,7 @@ sync_hash: ed983fc4
 ---
 # 消耗型/非消耗型/非续期订阅商品
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要修改商品的应用。
 3. 在“运营”页签下的左侧导航栏中，选择“产品运营 &gt; 商品管理”。
 4. 在商品列表中，点击待编辑的非订阅类商品对应“操作”列的“编辑”。

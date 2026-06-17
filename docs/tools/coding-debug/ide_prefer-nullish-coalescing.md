@@ -24,7 +24,7 @@ sync_hash: 1b2c0e31
 
 #### 选项
 
-详情请参考[@typescript-eslint/prefer-nullish-coalescing选项](`https://`typescript-eslint.nodejs.cn/rules/prefer-nullish-coalescing/#options)。
+详情请参考[@typescript-eslint/prefer-nullish-coalescing选项](https://typescript-eslint.nodejs.cn/rules/prefer-nullish-coalescing/#options)。
 
 #### 正例
 
@@ -59,4 +59,4 @@ export const c = a || b;
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

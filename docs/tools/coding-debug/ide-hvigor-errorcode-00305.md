@@ -151,7 +151,7 @@ A 'undefined symbol' error has occurred.
 
 <strong>处理步骤</strong>
 
-参考[CPP编译报错"A 'undefined symbol' error has occurred"](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-116)。
+参考[CPP编译报错"A 'undefined symbol' error has occurred"](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-116)。
 
 #### 00305012 CMake任务执行失败
 
@@ -207,7 +207,7 @@ A 'unknown type name' error has occurred.
 
 <strong>处理步骤</strong>
 
-根据以下指导排查：[CPP编译报错“A 'unknown type name' error has occurred”](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-117)。
+根据以下指导排查：[CPP编译报错“A 'unknown type name' error has occurred”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-compiling-and-building-117)。
 
 #### 00305015 解析错误
 

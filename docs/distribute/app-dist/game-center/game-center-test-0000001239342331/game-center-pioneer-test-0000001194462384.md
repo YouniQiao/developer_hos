@@ -18,14 +18,14 @@ sync_hash: 84095590
 
 ## 前提条件
 
-* 您已成功[创建游戏](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-createapp-0000001146718717`)，且软件包类型为“APK(Android应用)”，支持设备为“手机”。
+* 您已成功[创建游戏](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-createapp-0000001146718717)，且软件包类型为“APK(Android应用)”，支持设备为“手机”。
 
   ![](./img/61a7ff4d50e9.png)
 
   + “斗地主”、“捕鱼”、“纸牌 ”和“麻将”类型游戏不支持先锋测试。
   + 已有在架包体的游戏不支持先锋测试。若需使用“体验服”测试，请重新创建游戏后向华为工作人员提供APPID。
 * 为了提升测试包的通过率，您需要提前自检游戏接入参数、游戏登录体验、游戏支付体验等。
-* （可选）您可以[开通游戏版块](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)，用于宣传游戏内容，聚集核心用户。
+* （可选）您可以[开通游戏版块](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)，用于宣传游戏内容，聚集核心用户。
 
 ## 操作流程
 
@@ -50,7 +50,7 @@ sync_hash: 84095590
 | 信息 | 说明 |
 | --- | --- |
 | 游戏名称 | 申请先锋测试的游戏名称。 |
-| APP ID | 游戏的唯一标识，可参考[查询应用基本信息](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-appinfo-0000001100014694`)。 |
+| APP ID | 游戏的唯一标识，可参考[查询应用基本信息](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-appinfo-0000001100014694)。 |
 | 招募时间 | 用户完成测试资格申请的时间段。 |
 | 测试时间 | 获得测试资格的先锋用户正式安装并体验游戏的时间段。 |
 | 测试内容 | 您想要先锋玩家反馈的优化内容，例如游戏核心玩法或美术风格。 |
@@ -62,23 +62,23 @@ sync_hash: 84095590
 
 ### 创建问卷
 
-正式申请先锋测试前，您需要[创建](`/docs/distribute/app-dist/game-center/game-center-setup-project-0000001194142410/game-center-questionnaire-0000001194144428#section113061322132311`)“先锋测试”类型的问卷，感兴趣的用户可填写问卷以申请游戏测试的资格。
+正式申请先锋测试前，您需要[创建](/docs/distribute/app-dist/game-center/game-center-setup-project-0000001194142410/game-center-questionnaire-0000001194144428#section113061322132311)“先锋测试”类型的问卷，感兴趣的用户可填写问卷以申请游戏测试的资格。
 
 ![](./img/15d2cbf6128d.png)
 
 * “先锋测试”类型的调查问卷无需审核。
-* 建议先锋测试的问卷标题加上游戏ID，可参考[查看应用基本信息](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-appinfo-0000001100014694`)。
-* 建议问卷创建后，点击[预览](`/docs/distribute/app-dist/game-center/game-center-setup-project-0000001194142410/game-center-questionnaire-0000001194144428#section54421040112713`)查看问卷效果。
+* 建议先锋测试的问卷标题加上游戏ID，可参考[查看应用基本信息](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-appinfo-0000001100014694)。
+* 建议问卷创建后，点击[预览](/docs/distribute/app-dist/game-center/game-center-setup-project-0000001194142410/game-center-questionnaire-0000001194144428#section54421040112713)查看问卷效果。
 
 ### 配置应用基本信息
 
-您需要提前完善游戏的基本信息，例如游戏图标、游戏类型等，详情可参见[配置应用基本信息](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-releaseapkrpk-0000001106463276#section27070410361`)。
+您需要提前完善游戏的基本信息，例如游戏图标、游戏类型等，详情可参见[配置应用基本信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-releaseapkrpk-0000001106463276#section27070410361)。
 
 ### 创建礼包
 
 请决定体验您的游戏是否需要激活码：
 
-* 若需要激活码，您需要[创建“礼包”类型的奖品](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-reservation-0000001657694701#section3160112618266`)，用户持有激活码才能进入游戏。
+* 若需要激活码，您需要[创建“礼包”类型的奖品](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-reservation-0000001657694701#section3160112618266)，用户持有激活码才能进入游戏。
 
   ![](./img/2e78147d96e5.png)
 
@@ -91,9 +91,9 @@ sync_hash: 84095590
 ![](./img/2e5bd60eb2ba.png)
 
 * 请在招募开始前至少提前5天申请先锋测试，预留时间修改问题。
-* 请勿同时提交“先锋测试”和“[内测](`/docs/distribute/app-dist/game-center/game-center-test-0000001239342331/game-center-early-access-0000001194302390)”申请。
+* 请勿同时提交“先锋测试”和“[内测](/docs/distribute/app-dist/game-center/game-center-test-0000001239342331/game-center-early-access-0000001194302390)”申请。
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”，在应用列表页面选择需要申请先锋测试的游戏。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在应用列表页面选择需要申请先锋测试的游戏。
 2. 选择“分发 &gt; 服务 &gt; 测试申请”，在页面右侧点击“申请”。
 
    ![](./img/cd6999203f77.png)
@@ -104,7 +104,7 @@ sync_hash: 84095590
    | 类别 | 参数 | 说明 |
    | --- | --- | --- |
    | 游戏基本信息 | 测试类型 | 请选择“先锋测试”。 |
-   | 测试时间 | 获得测试资格的用户体验游戏的时间段。  说明：  * 若您已申请新游预约，请确保先锋测试结束时间必须早于预约的[首发精确时间](`/docs/distribute/app-dist/game-center/game-center-pre-order-0000001239342333/game-center-pre-order-apk-0000002089114109#ZH-CN_TOPIC_0000002089114109__p108342217437`)。 * 建议单次先锋测试时间7~30天。 * 建议先锋测试的招募结束至测试开始的时间间隔大于1天且小于7天。 * 游戏开始招募后需要修改招募时间或测试时间需[发送更新申请邮件](#section7102135875312)。 |
+   | 测试时间 | 获得测试资格的用户体验游戏的时间段。  说明：  * 若您已申请新游预约，请确保先锋测试结束时间必须早于预约的[首发精确时间](/docs/distribute/app-dist/game-center/game-center-pre-order-0000001239342333/game-center-pre-order-apk-0000002089114109#ZH-CN_TOPIC_0000002089114109__p108342217437)。 * 建议单次先锋测试时间7~30天。 * 建议先锋测试的招募结束至测试开始的时间间隔大于1天且小于7天。 * 游戏开始招募后需要修改招募时间或测试时间需[发送更新申请邮件](#section7102135875312)。 |
    | 是否外显测试开始时间 | 选择是否外显测试开始时间。选择“否”会在华为应用市场、游戏中心的先锋测试详情页的时间处展示：“待定”。 |
    | 是否外显测试结束时间 | 选择是否外显测试结束时间。选择“否”会在华为应用市场、游戏中心的先锋测试详情页的时间处展示：“待定”。 |
    | 是否删档 | 测试结束后，是否清空所有玩家的数据。 |
@@ -112,9 +112,9 @@ sync_hash: 84095590
    | 是否集成华为ID | 游戏内是否接入华为账号SDK。 |
    | （可选）创建开通社区申请 | 展示在游戏详情页。社区论坛可宣传游戏相关内容，聚集核心用户。 |
    | 测试发布范围 | 发布范围 | 游戏上架后是否展示在“先锋测试”专题区：  * 公开发布：表示游戏上架后展示在专题区，且搜索可见。 * 非公开发布：表示游戏上架后不展示在专题区，且搜索不可见。获得测试资格的用户可以通过推送消息安装并体验游戏。 说明：  建议面向全部用户招募的测试选择“公开发布”。针对小范围用户的保密测试选择“非公开发布”。 |
-   | 是否匿名厂商 | 请决定是否在先锋测试详情页展示您的企业名称：  * 是：不展示。 * 否：继续展示。 说明：  * 若在先锋测试详情页隐匿您的企业名称，且后续将申请[新游预约](`https://developer.huawei.com/consumer/cn/doc/app/game-center-pre-order-0000001239342333`)，建议选择[H5页面预约](`/docs/distribute/app-dist/game-center/game-center-pre-order-0000001239342333/game-center-pre-order-apk-0000002089114109#section4655536919`)方式。 * 对于审核通过的先锋测试，仅允许未到招募时间的先锋测试修改当前参数。 |
+   | 是否匿名厂商 | 请决定是否在先锋测试详情页展示您的企业名称：  * 是：不展示。 * 否：继续展示。 说明：  * 若在先锋测试详情页隐匿您的企业名称，且后续将申请[新游预约](https://developer.huawei.com/consumer/cn/doc/app/game-center-pre-order-0000001239342333)，建议选择[H5页面预约](/docs/distribute/app-dist/game-center/game-center-pre-order-0000001239342333/game-center-pre-order-apk-0000002089114109#section4655536919)方式。 * 对于审核通过的先锋测试，仅允许未到招募时间的先锋测试修改当前参数。 |
    | 测试名额 | 获得测试资格的用户数量。请根据实际情况填写。 |
-   | 参与测试条件 | 申请测试游戏的要求：  * 勾选“预约游戏”，表示只有预约用户才能参与填写问卷以申请测试资格。 * 未勾选“预约游戏”，表示对游戏感兴趣的用户可以直接填写问卷以申请测试资格。 说明：  只有您创建过[游戏预约](`https://developer.huawei.com/consumer/cn/doc/app/game-center-pre-order-0000001239342333`)且已审核通过上架后，此处才会出现“预约游戏”选项，勾选该选项后用户可在游戏详情页先预约游戏再填写问卷。 |
+   | 参与测试条件 | 申请测试游戏的要求：  * 勾选“预约游戏”，表示只有预约用户才能参与填写问卷以申请测试资格。 * 未勾选“预约游戏”，表示对游戏感兴趣的用户可以直接填写问卷以申请测试资格。 说明：  只有您创建过[游戏预约](https://developer.huawei.com/consumer/cn/doc/app/game-center-pre-order-0000001239342333)且已审核通过上架后，此处才会出现“预约游戏”选项，勾选该选项后用户可在游戏详情页先预约游戏再填写问卷。 |
    | 使用问卷 | 招募开始后，对游戏感兴趣的用户申请测试资格时填写的问卷：  * 您可以创建新的问卷。 * 您也可以选择已有的问卷。 注意：  用户招募时间开始后，禁止更换调查问卷。 |
    | 测试用户招募时间 | 对游戏感兴趣的用户完成测试资格申请的时间段。  说明：  * 建议先锋测试的招募时间小于7天。 * 在游戏招募期间，用户无法下载测试游戏。 * 游戏开始招募后需要修改招募时间或测试时间需[发送更新申请邮件](#section7102135875312)。 |
    | 是否外显招募结束时间 | 选择是否外显招募结束时间。选择“否”会在华为应用市场、游戏中心的先锋测试详情页的时间处展示：“待定”。 |
@@ -140,8 +140,8 @@ sync_hash: 84095590
 
 若测试开始前还未上传测试包或测试包审核未通过，获得测试资格的用户无法在应用市场/游戏中心正常下载该游戏。
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”，在应用列表页面选择先锋测试游戏。
-2. 选择“分发 &gt; 应用上架 &gt; 版本信息”，在“版本信息”页面上传测试包，相关的接入要求、流程与[发布应用(APK)](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-releaseapkrpk-0000001106463276`)一致。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在应用列表页面选择先锋测试游戏。
+2. 选择“分发 &gt; 应用上架 &gt; 版本信息”，在“版本信息”页面上传测试包，相关的接入要求、流程与[发布应用(APK)](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-releaseapkrpk-0000001106463276)一致。
 
    ![](./img/51734f66ab3f.png)
 
@@ -149,7 +149,7 @@ sync_hash: 84095590
    * 若游戏内包含[计费功能](#ZH-CN_TOPIC_0000001194462384__p527154118297)，则“应用内资费”应勾选相应的资费类型。
    * 上传测试包前，请必须勾选“先锋测试版本”。
    * 测试包的发布区域请选择“中国大陆”。
-3. 华为工作员审核测试包预计需要3~5个工作日，请耐心等待。审核结果可在“版本信息”页面或[互动中心](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/interactive`)查看。
+3. 华为工作员审核测试包预计需要3~5个工作日，请耐心等待。审核结果可在“版本信息”页面或[互动中心](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/interactive)查看。
 4. 若测试包审核通过且到达测试时间后，获得测试资格的用户可前往华为应用市场/游戏中心安装并体验您的游戏。
 
    ![](./img/6114dbf7c1bb.png)
@@ -160,7 +160,7 @@ sync_hash: 84095590
 
 先锋游戏招募结束后，您可以选择符合条件的用户测试您的游戏。
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”，在应用列表页面选择先锋测试游戏。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在应用列表页面选择先锋测试游戏。
 2. 选择“分发 &gt; 服务 &gt; 测试申请”，在列表对应的操作列点击“筛选用户”。
 
    ![](./img/370a8d2e24f6.png)
@@ -196,7 +196,7 @@ sync_hash: 84095590
 * 先锋测试报告仅保留一年，在有效期内，您可以查看或下载。
 * 先锋测试报告支持中文、英文与俄文三种语言。
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“分析”，在应用列表选择先锋测试游戏。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“分析”，在应用列表选择先锋测试游戏。
 2. 选择“分发分析 &gt; 测试报告”，选择测试类型为“先锋测试”，点击“查看报告”。
 3. 在页面查看日报告或点击右上方“报告下载”下载汇总报告。
 
@@ -248,5 +248,5 @@ sync_hash: 84095590
 |  |  |
 | --- | --- |
 | 邮件标题 | *[您的游戏名称]*-先锋测试更新招募时间/测试时间 |
-| 邮件内容 | * 游戏名称。 * APPID，可参考[查询应用基本信息](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-appinfo-0000001100014694`)。 * 修改招募时间/测试时间原因。 * 修改后的招募时间/测试时间。 |
+| 邮件内容 | * 游戏名称。 * APPID，可参考[查询应用基本信息](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-appinfo-0000001100014694)。 * 修改招募时间/测试时间原因。 * 修改后的招募时间/测试时间。 |
 | 收件邮箱 | game.business@huawei.com |

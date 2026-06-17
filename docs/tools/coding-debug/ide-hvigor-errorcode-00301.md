@@ -25,7 +25,7 @@ SDK中缺少签名工具。
 
 <strong>处理步骤</strong>
 
-根据报错信息检查对应目录下是否存在签名工具，如果不存在，在官网上重新下载[DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+根据报错信息检查对应目录下是否存在签名工具，如果不存在，在官网上重新下载[DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00301002 SDK版本过低
 
@@ -43,7 +43,7 @@ SDK版本过低。
 
 <strong>处理步骤</strong>
 
-在官网上下载新版本的[DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+在官网上下载新版本的[DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00301003 SDK版本错误
 
@@ -61,7 +61,7 @@ Unsupported SDK version for using AOT compiling. Current SDK version is XXX, but
 
 <strong>处理步骤</strong>
 
-在官网上下载新版本的[DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+在官网上下载新版本的[DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00301004 SDK版本错误
 
@@ -79,7 +79,7 @@ Current version of SDK has a bug when using AOT compiling. The compiling will co
 
 <strong>处理步骤</strong>
 
-在官网上下载新版本的[DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+在官网上下载新版本的[DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00301005 API版本低于12时不支持字节码har
 

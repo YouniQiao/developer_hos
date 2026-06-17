@@ -24,7 +24,7 @@ sync_hash: cf38dd5d
 
 #### 选项
 
-详情请参考[@typescript-eslint/explicit-member-accessibility选项](`https://`typescript-eslint.nodejs.cn/rules/explicit-member-accessibility)。
+详情请参考[@typescript-eslint/explicit-member-accessibility选项](https://typescript-eslint.nodejs.cn/rules/explicit-member-accessibility)。
 
 #### 正例
 
@@ -86,4 +86,4 @@ export class Animal {
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

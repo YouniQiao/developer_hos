@@ -24,7 +24,7 @@ sync_hash: af81ad1b
 
 #### 选项
 
-详情请参考[@typescript-eslint/no-shadow选项](`https://`typescript-eslint.nodejs.cn/rules/no-shadow/#options)。
+详情请参考[@typescript-eslint/no-shadow选项](https://typescript-eslint.nodejs.cn/rules/no-shadow/#options)。
 
 #### 正例
 
@@ -68,4 +68,4 @@ console.info(a);
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

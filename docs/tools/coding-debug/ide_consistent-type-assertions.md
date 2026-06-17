@@ -24,7 +24,7 @@ sync_hash: 5b466740
 
 #### 选项
 
-详情请参考[@typescript-eslint/consistent-type-assertions选项](`https://`typescript-eslint.nodejs.cn/rules/consistent-type-assertions/#options)。
+详情请参考[@typescript-eslint/consistent-type-assertions选项](https://typescript-eslint.nodejs.cn/rules/consistent-type-assertions/#options)。
 
 #### 正例
 
@@ -58,4 +58,4 @@ export const y = <object>x;
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

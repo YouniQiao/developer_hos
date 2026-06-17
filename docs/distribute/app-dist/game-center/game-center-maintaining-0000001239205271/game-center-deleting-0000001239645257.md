@@ -21,9 +21,9 @@ upstream_hash: 486817c440c9
 
 若需要删除处于“已上架”、“正在审核”或“下架处理中”状态的应用，请按照如下引导进行操作：
 
-* 对于“已上架”状态的应用，您可[提交下架申请](`/docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-removing-0000001194165316#section516715913203`)，并可根据审批进度进行[催审](`/docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-removing-0000001194165316#section1431432482017`)，应用下架成功变为“已下架”状态后再删除应用。
-* 对于“正在审核”状态的应用，您可提交[撤销审核](`/docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-push-check-0000001194005348#section18227759939`)申请，审核通过变为“已撤销上架”状态后再删除应用。
-* 对于“下架处理中”状态的应用，您可进行[催审](`/docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-removing-0000001194165316#section1431432482017`)，审核通过变为“已下架”状态后再删除应用。
+* 对于“已上架”状态的应用，您可[提交下架申请](/docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-removing-0000001194165316#section516715913203)，并可根据审批进度进行[催审](/docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-removing-0000001194165316#section1431432482017)，应用下架成功变为“已下架”状态后再删除应用。
+* 对于“正在审核”状态的应用，您可提交[撤销审核](/docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-push-check-0000001194005348#section18227759939)申请，审核通过变为“已撤销上架”状态后再删除应用。
+* 对于“下架处理中”状态的应用，您可进行[催审](/docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-removing-0000001194165316#section1431432482017)，审核通过变为“已下架”状态后再删除应用。
 
 ## 操作步骤
 
@@ -35,7 +35,7 @@ upstream_hash: 486817c440c9
 
 ### HarmonyOS应用
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。
 2. 在应用列表页的“HarmonyOS”页签，点击待删除应用的应用名称，进入应用详情页。
 3. 在左侧导航栏选择“分发 &gt; 应用上架 &gt; 应用信息”，点击页面底部的“删除应用”。
 
@@ -59,7 +59,7 @@ upstream_hash: 486817c440c9
         + 内容：按照样例格式，详细说明下删除应用的原因。
 
         ![](./img/ef9696b22886.png "点击放大")
-     2. 申诉工单提交后，您可进入[互动中心](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-interaction-center-0000001146518763#ZH-CN_TOPIC_0000001146518763`)查看工单处理进展，华为运营人员审核后会进行答复。
+     2. 申诉工单提交后，您可进入[互动中心](https://developer.huawei.com/consumer/cn/doc/app/agc-help-interaction-center-0000001146518763#ZH-CN_TOPIC_0000001146518763)查看工单处理进展，华为运营人员审核后会进行答复。
         + 如果审核未通过，请根据工单回复结论进行相应处理。
         + 如果审核通过，您便可重新执行步骤[3](#ZH-CN_TOPIC_0000001239645257__zh-cn_topic_0000001146716617_li1033752255115)删除应用。
    * 删除应用前，应用尚未全网上架，也不存在正在发布的测试版本
@@ -70,7 +70,7 @@ upstream_hash: 486817c440c9
 
 ### 元服务/Windows应用
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。
 2. 根据应用类型选择对应页签，在应用列表中选择待删除应用，进入应用详情页。
 3. 在左侧导航栏选择“分发 &gt; 应用上架 &gt; 应用信息”，点击页面底部的“删除应用”。
 
@@ -91,7 +91,7 @@ upstream_hash: 486817c440c9
 
 ### Android应用/快应用
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。
 2. 选择“Android”页签，在应用列表中选择待删除应用，进入应用详情页。
 3. 在左侧导航栏选择“分发 &gt; 应用上架 &gt; 应用信息”，点击页面底部的“删除应用”。
 
@@ -126,4 +126,4 @@ upstream_hash: 486817c440c9
         不能关闭的服务以“服务名称+服务编号”的形式列出。
 
         ![](./img/5605139b8b47.png)
-     3. 应用删除失败，您可以通过[互动中心](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/interactive/feedback`)或者[在线工单系统](`https://developer.huawei.com/consumer/cn/support/feedback/#/add/2?level2=97`)与我们联系，关闭服务后再进行删除应用操作。
+     3. 应用删除失败，您可以通过[互动中心](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/interactive/feedback)或者[在线工单系统](https://developer.huawei.com/consumer/cn/support/feedback/#/add/2?level2=97)与我们联系，关闭服务后再进行删除应用操作。

@@ -9,4 +9,4 @@ sync_hash: 72f45c31
 ---
 # 开发后自检
 
-为了让游戏尽快通过华为渠道的上架审核，请根据CheckList进行游戏自检，详情请参见[开发后自检](`/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin/gameservice-check)。
+为了让游戏尽快通过华为渠道的上架审核，请根据CheckList进行游戏自检，详情请参见[开发后自检](/docs/dev/app-dev/application-services/game-service-kit-guide/gameservice-gameplayer-dev/gameservice-gameplayer-gamelogin/gameservice-check)。

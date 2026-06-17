@@ -40,7 +40,7 @@ DevEco Studio提供的<strong>Simulator</strong>可以运行和调试Lite Wearab
 
 #### 传感器
 
-仿真器提供了虚拟传感器来模拟硬件传感器的能力。在该界面，您可以调节不同的传感器来测试您的应用，使用[@system.sensor](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-system-sensor)模块监听传感器值的变化，使用[@system.geolocation](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-system-location)模块监听地理位置的变化。仿真器提供以下虚拟传感器：
+仿真器提供了虚拟传感器来模拟硬件传感器的能力。在该界面，您可以调节不同的传感器来测试您的应用，使用[@system.sensor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-system-sensor)模块监听传感器值的变化，使用[@system.geolocation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-system-location)模块监听地理位置的变化。仿真器提供以下虚拟传感器：
 
 * <strong>On-body status</strong>：传感器所在设备穿戴状态，包括已穿戴和未穿戴。
 * <strong>Barometer：</strong>气压传感器用于测量环境气压，单位为Pa。
@@ -52,7 +52,7 @@ DevEco Studio提供的<strong>Simulator</strong>可以运行和调试Lite Wearab
 
 #### 电池
 
-您可以通过仿真器模拟不同的电池状态，包括以下三种充电状态，也可以手动输入或拖动滑动条来改变电量大小。在应用中，您可以通过[@system.battery](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-system-battery)模块查询仿真器的剩余电量以及充电状态。
+您可以通过仿真器模拟不同的电池状态，包括以下三种充电状态，也可以手动输入或拖动滑动条来改变电量大小。在应用中，您可以通过[@system.battery](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-system-battery)模块查询仿真器的剩余电量以及充电状态。
 
 * Not charging：未充电。
 * Charging：正在充电。

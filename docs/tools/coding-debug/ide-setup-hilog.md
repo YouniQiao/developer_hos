@@ -11,7 +11,7 @@ sync_hash: 11164f9e
 
 ![](./img/note_3.0-zh-cn.png)
 
-打印日志请查看[使用HiLog打印日志](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-guidelines-arkts)。
+打印日志请查看[使用HiLog打印日志](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-guidelines-arkts)。
 
 DevEco Studio提供了“Log &gt; HiLog”窗口查看设备当前所有应用实时打印的日志信息。HiLog默认显示的日志为以下6个部分。
 
@@ -227,7 +227,7 @@ HiLog窗口显示的日志信息保存在此窗口的缓存中，缓存的大小
 
 #### 查看/导出设备离线日志
 
-DevEco Studio提供查看设备离线日志的功能，支持查看设备中/data/log/hilog路径中的日志，离线日志窗口中展示的是经过[解析](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-tool)和DevEco Studio格式化之后的日志。
+DevEco Studio提供查看设备离线日志的功能，支持查看设备中/data/log/hilog路径中的日志，离线日志窗口中展示的是经过[解析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hilog-tool)和DevEco Studio格式化之后的日志。
 
 点击HiLog窗口左上角New，随后点击Offline Log即可打开离线日志窗口。
 

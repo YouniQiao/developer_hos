@@ -50,4 +50,4 @@ sync_hash: b41e68e5
 
 ![](./img/9e3c8a9e.png)
 
-更多新用户界面变化详情，请参见[new UI](`https://`www.jetbrains.com.cn/en-us/help/idea/2024.3/new-ui.html).
+更多新用户界面变化详情，请参见[new UI](https://www.jetbrains.com.cn/en-us/help/idea/2024.3/new-ui.html).

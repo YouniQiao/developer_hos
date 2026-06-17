@@ -13,8 +13,8 @@ sync_hash: 86ec7f9d
 
 为落实您和华为游戏中心联运的游戏执行通知要求，您需要完成如下2步才能完成国家新闻出版署实名认证系统的接入：
 
-1. 向当地新闻出版局申请接入[网络游戏防沉迷实名认证系统](`https://wlc.nppa.gov.cn/fcm_company/index.html#/login?redirect=/`)，并获取“bizID（游戏备案识别码）”。
-2. 在华为[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)提交bizID信息，并通过华为运营人员的审核。
+1. 向当地新闻出版局申请接入[网络游戏防沉迷实名认证系统](https://wlc.nppa.gov.cn/fcm_company/index.html#/login?redirect=/)，并获取“bizID（游戏备案识别码）”。
+2. 在华为[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)提交bizID信息，并通过华为运营人员的审核。
 
 华为游戏服务提供了华为账号登录时的实名认证功能，完成上述2步后，您的游戏将自动对接国家新闻出版署的实名认证系统并开启强制实名认证，无需您进行额外的开发。
 
@@ -22,7 +22,7 @@ sync_hash: 86ec7f9d
 
 在华为AppGallery Connect提交bizID信息的前提条件如下：
 
-* 您已在[网络游戏防沉迷实名认证系统](`https://wlc.nppa.gov.cn/fcm_company/index.html#/login?redirect=/`)上勾选“实名认证”和“数据上报”权限，填写渠道商名称为“华为软件技术有限公司”，并获取“bizID（游戏备案识别码）”，bizID为6-14位的整数数字。
+* 您已在[网络游戏防沉迷实名认证系统](https://wlc.nppa.gov.cn/fcm_company/index.html#/login?redirect=/)上勾选“实名认证”和“数据上报”权限，填写渠道商名称为“华为软件技术有限公司”，并获取“bizID（游戏备案识别码）”，bizID为6-14位的整数数字。
 
   ![](./img/13581f61e45b.png "点击放大")
 
@@ -34,7 +34,7 @@ sync_hash: 86ec7f9d
 
 在华为AppGallery Connect提交bizID信息的操作步骤如下：
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”，在应用列表选择需要申请版署实名认证的游戏。选择“运营 &gt; 产品运营 &gt; 版署实名认证申请”，在页面右侧点击“创建申请”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在应用列表选择需要申请版署实名认证的游戏。选择“运营 &gt; 产品运营 &gt; 版署实名认证申请”，在页面右侧点击“创建申请”。
 
    ![](./img/dcfcd805cfcc.png)
 2. 在“创建申请”窗口中根据提示填写信息，完成后点击“提交”。

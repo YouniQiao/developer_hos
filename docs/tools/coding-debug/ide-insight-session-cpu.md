@@ -15,7 +15,7 @@ upstream_hash: a4eb2d068bae
 
 #### 查看各CPU使用情况
 
-1. 创建CPU分析任务并录制相关数据，操作方法可参考[性能问题定位：深度录制](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording)，或在会话区选择<strong>Open File</strong>，导入历史数据。
+1. 创建CPU分析任务并录制相关数据，操作方法可参考[性能问题定位：深度录制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording)，或在会话区选择<strong>Open File</strong>，导入历史数据。
 
    CPU分析任务支持在录制前单击![](./img/zh-cn_image_0000002602066341.png "点击放大")指定要录制的泳道。
 2. “CPU Core”泳道显示当前选择调优应用或元服务的CPU的使用率。
@@ -53,7 +53,7 @@ upstream_hash: a4eb2d068bae
 * 鼠标框选要关注的时间段，可以通过“Shift+M”添加时间段的时间标签。
 * 在任务分析窗口，可以通过“Ctrl+, ”向前选中单点的时间标签，通过“Ctrl+. ”向后选中单点的时间标签。
 * 在任务分析窗口，可以通过“Ctrl+[ ”向前选中时间段的时间标签，通过“Ctrl+]”向后选中时间段的时间标签。
-* CPU分析支持能耗分析，请参见[能耗诊断：Energy分析](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-energy)。
+* CPU分析支持能耗分析，请参见[能耗诊断：Energy分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-energy)。
 
 #### 查询进程详情
 

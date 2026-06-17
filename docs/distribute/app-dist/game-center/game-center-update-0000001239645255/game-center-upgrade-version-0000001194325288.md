@@ -23,7 +23,7 @@ sync_hash: 85d47973
 
 在AGC提交版本升级申请前，请先创建新版本。
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击待升级的应用“状态”链接，系统进入该版本的“版本信息”页面。
 3. 点击右上角“升级”，左侧导航栏新增“新版本 - 准备提交”页面。
 
@@ -35,7 +35,7 @@ sync_hash: 85d47973
 
 ## 更新应用信息
 
-如需修改应用信息，点击左侧导航栏“应用信息”进行编辑，详见[配置应用信息](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyos-releaseapp-non-next-0000002179322402#section242410559206`)。完成后点击“下一步”，进入“新版本 - 准备提交”页面。
+如需修改应用信息，点击左侧导航栏“应用信息”进行编辑，详见[配置应用信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-harmonyos-releaseapp-non-next-0000002179322402#section242410559206)。完成后点击“下一步”，进入“新版本 - 准备提交”页面。
 
 ![](./img/98dca16218f7.png)
 
@@ -56,7 +56,7 @@ sync_hash: 85d47973
 如当前上架版本为全网发布，本次升级您可选择全网发布或分阶段发布。
 
 * 如您选择全网发布，设置“发布类型”为“全网发布”。
-* 如您选择分阶段发布，设置“发布类型”为“分阶段发布"，然后填写相关参数，具体参见[分阶段发布应用](`/docs/distribute/app-dist/game-center/game-center-update-0000001239645255/game-center-stage-releasing-0000001194485288#ZH-CN_TOPIC_0000001194485288`)。
+* 如您选择分阶段发布，设置“发布类型”为“分阶段发布"，然后填写相关参数，具体参见[分阶段发布应用](/docs/distribute/app-dist/game-center/game-center-update-0000001239645255/game-center-stage-releasing-0000001194485288#ZH-CN_TOPIC_0000001194485288)。
 
 ![](./img/76d1e638088a.png)
 
@@ -66,14 +66,14 @@ sync_hash: 85d47973
 
 ![](./img/355f271bdae4.png)
 
-* 集成升级应用的SDK后，该功能才生效。非游戏应用可参考[应用升级SDK帮助文档](`https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/appgallerykit-app-update-0000001055118286`)，游戏应用可参考[游戏升级SDK帮助文档](`https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/appgallerykit-game-update-0000001055756860`)。
+* 集成升级应用的SDK后，该功能才生效。非游戏应用可参考[应用升级SDK帮助文档](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/appgallerykit-app-update-0000001055118286)，游戏应用可参考[游戏升级SDK帮助文档](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/appgallerykit-game-update-0000001055756860)。
 * 分阶段发布不支持强制更新，此选项不生效。
 
 ![](./img/2742abef46b8.png)
 
 ## 更新其他版本信息
 
-如需更新其他版本信息，请参考[发布应用](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-overview-0000001272395372`)下对应应用类型的发布指导。
+如需更新其他版本信息，请参考[发布应用](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-overview-0000001272395372)下对应应用类型的发布指导。
 
 ![](./img/d6ef0844836a.png)
 
@@ -107,7 +107,7 @@ sync_hash: 85d47973
 * 若您发布的应用为游戏应用，在弹出的提示框中点击“确定”后，返回“软件包管理”窗口。此时，您需要重新上传与在架版本签名一致的应用版本。
 
   若您无法获取在架版本签名，请根据应用分发地选择不同渠道进行反馈。
-  + 游戏应用分发地为中国大陆地区时，请进入[互动中心](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-interaction-center-0000001146518763`)反馈。
+  + 游戏应用分发地为中国大陆地区时，请进入[互动中心](https://developer.huawei.com/consumer/cn/doc/app/agc-help-interaction-center-0000001146518763)反馈。
 
     ![](./img/f30c89284ea8.png)
   + 游戏应用分发地为中国大陆以外地区时，请发送邮件至gamesupport@huawei.com反馈。

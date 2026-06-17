@@ -19,7 +19,7 @@ sync_hash: fe39d9ea
 
 ### 操作步骤
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要催促审核的应用版本链接，系统进入该版本的“版本信息”页面。
 3. 点击右上方的“催审”。
 
@@ -29,7 +29,7 @@ sync_hash: fe39d9ea
 
 ## 审核加急
 
-多数应用的上架申请会在24小时内完成审核，如果遇到紧急情况，例如需要修复严重问题或者发布紧急活动，您可以申请[审核加急](`https://developer.huawei.com/consumer/cn/service/apcs/aggrowth/chassis/developerService/expeditedReview`)，加快上架进度。
+多数应用的上架申请会在24小时内完成审核，如果遇到紧急情况，例如需要修复严重问题或者发布紧急活动，您可以申请[审核加急](https://developer.huawei.com/consumer/cn/service/apcs/aggrowth/chassis/developerService/expeditedReview)，加快上架进度。
 
 ![](./img/279c7832804d.png)
 
@@ -45,7 +45,7 @@ sync_hash: fe39d9ea
 
 ### 操作步骤
 
-1. 点击[审核加急](`https://developer.huawei.com/consumer/cn/service/apcs/aggrowth/chassis/developerService/expeditedReview`)，进入“审核加急”申请页面。
+1. 点击[审核加急](https://developer.huawei.com/consumer/cn/service/apcs/aggrowth/chassis/developerService/expeditedReview)，进入“审核加急”申请页面。
 2. 在“应用信息”区域选择需要审核加急的App名称和版本号。
 3. 点击页面下方的“提交”。
 
@@ -65,7 +65,7 @@ sync_hash: fe39d9ea
 
 ### 操作步骤
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要撤销审核的应用版本链接，系统进入该版本的“版本信息”页面。
 3. 点击右上方的“撤销审核”。
 

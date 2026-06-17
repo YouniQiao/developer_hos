@@ -13,17 +13,17 @@ sync_hash: 666999ee
 
 ## 前提条件
 
-* 您已成功[创建游戏](`/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)，且软件包类型为“APP（HarmonyOS应用）”，支持设备为“手机”。
-* 您已[配置应用基本信息](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-0000002364930906`)，且游戏分类不包括“斗地主”、“捕鱼”、“纸牌 ”和“麻将”。
+* 您已成功[创建游戏](/docs/distribute/agc/agc-help-app-0000002235710234/agc-help-create-app-0000002247955506)，且软件包类型为“APP（HarmonyOS应用）”，支持设备为“手机”。
+* 您已[配置应用基本信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-0000002364930906)，且游戏分类不包括“斗地主”、“捕鱼”、“纸牌 ”和“麻将”。
 * 为了提升内测包的通过率，您需要提前自检游戏接入参数、游戏登录体验、游戏支付体验等。
-* （可选）您可以[开通社区论坛](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)，用于宣传游戏内容，聚集核心用户。
+* （可选）您可以[开通社区论坛](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)，用于宣传游戏内容，聚集核心用户。
 
 ## 提交内测版本
 
 提交内测申请前，您需先提交内测版本审核。
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”，在应用列表页面选择需要申请内测的游戏。
-2. 在“分发 &gt; 应用测试 &gt; 版本列表”页面提交内测包，添加测试用户以及创建测试版本的接入要求、流程请参见[邀请测试](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-apptest-invite-test-0000002258071220`)。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在应用列表页面选择需要申请内测的游戏。
+2. 在“分发 &gt; 应用测试 &gt; 版本列表”页面提交内测包，添加测试用户以及创建测试版本的接入要求、流程请参见[邀请测试](https://developer.huawei.com/consumer/cn/doc/app/agc-help-apptest-invite-test-0000002258071220)。
 
    ![](./img/ff81ab9d080b.png)
 
@@ -38,7 +38,7 @@ sync_hash: 666999ee
 
 提交内测版本并审核通过后，您可以提交内测申请。
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”，在应用列表页面选择需要申请内测的游戏。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”，在应用列表页面选择需要申请内测的游戏。
 2. 选择“分发 &gt; 应用测试 &gt; 游戏测试计划”，在页面右侧点击“新建测试计划”。
 
    ![](./img/0f1641a3773f.png)
@@ -85,7 +85,7 @@ sync_hash: 666999ee
 
 ### 需要补充用户数量怎么办？
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)中选择申请内测的应用，在“分发 &gt; 应用测试 &gt; 测试用户”页面[创建测试群组](`/docs/distribute/agc/agc-help-privacy-appgallery-invite-test-0000002292624409/agc-help-appgallery-create-testgroup-0000002258071216)，并添加测试用户。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中选择申请内测的应用，在“分发 &gt; 应用测试 &gt; 测试用户”页面[创建测试群组](/docs/distribute/agc/agc-help-privacy-appgallery-invite-test-0000002292624409/agc-help-appgallery-create-testgroup-0000002258071216)，并添加测试用户。
 2. 在“分发 &gt; 应用测试 &gt; 版本列表”页面版本列表中选择需要补充用户数量的测试版本，配置测试发布中的测试用户，添加新增的用户群组。
 
 ![](./img/916d98cdc514.png)

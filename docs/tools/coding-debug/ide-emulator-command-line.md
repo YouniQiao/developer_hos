@@ -152,8 +152,8 @@ Emulator -create {模拟器名称} -deviceType {模拟器类型} -osVersion {模
 | -osVersion | 必选参数，指定模拟器镜像版本。  如果是release版本，和下载镜像的-osVersion参数一致，例如"HarmonyOS 6.0.1(21)"。如果不是release版本，需要在DevEco Studio中创建模拟器时查看，例如"HarmonyOS 6.0.2(22) Beta1"。 |
 | -instancePath/-path | 可选参数，指定模拟器实例路径。如果不指定，默认使用DevEco Studio中的模拟器实例路径。 |
 | -imageRoot | 可选参数，指定模拟器镜像路径。如果不指定，默认使用DevEco Studio中的模拟器镜像路径。 |
-| -screenProfile | 可选参数，指定模拟器的设备型号，如"Mate 70 Pro"，支持的设备型号可通过[screenProfileList命令](#section5418426125015)查询。如果不指定，默认使用当前产品类型最新的设备型号。  如同时设置了-screen参数，以-screen参数为准。  仅在支持自定义屏幕的模拟器类型中可用，具体请参考[自定义模拟器屏幕配置](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-customize-screen-configuration)。 |
-| -screen | 可选参数，用于自定义模拟器屏幕配置，包括屏幕尺寸、分辨率、DPI，格式为"宽度(px) 高度(px) DPI 屏幕对角线长度(inch)"，如-screen "1316 2832 560 6.9"。  如果是双折叠模拟器，需要输入2组屏幕参数，分别对应展开态和折叠态屏幕，例如-screen "2200 2480 480 7.8" "1080 2480 480 6.4"。  仅在支持自定义屏幕的模拟器类型中可用，具体请参考[自定义模拟器屏幕配置](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-customize-screen-configuration)。 |
+| -screenProfile | 可选参数，指定模拟器的设备型号，如"Mate 70 Pro"，支持的设备型号可通过[screenProfileList命令](#section5418426125015)查询。如果不指定，默认使用当前产品类型最新的设备型号。  如同时设置了-screen参数，以-screen参数为准。  仅在支持自定义屏幕的模拟器类型中可用，具体请参考[自定义模拟器屏幕配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-customize-screen-configuration)。 |
+| -screen | 可选参数，用于自定义模拟器屏幕配置，包括屏幕尺寸、分辨率、DPI，格式为"宽度(px) 高度(px) DPI 屏幕对角线长度(inch)"，如-screen "1316 2832 560 6.9"。  如果是双折叠模拟器，需要输入2组屏幕参数，分别对应展开态和折叠态屏幕，例如-screen "2200 2480 480 7.8" "1080 2480 480 6.4"。  仅在支持自定义屏幕的模拟器类型中可用，具体请参考[自定义模拟器屏幕配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-customize-screen-configuration)。 |
 | -storage | 可选参数，模拟器存储空间，可选范围2-1023（单位G），默认6G。 |
 | -memory | 可选参数，模拟器运行内存，可选范围2-32（单位G），默认4G。 |
 
@@ -323,7 +323,7 @@ Emulator -unset instancePath
 
 从DevEco Studio 6.1.0 Beta1版本开始，支持查看模拟器的产品列表，包括设备型号和对应的屏幕参数（DPI、屏幕的宽和高、屏幕对角线长度）。
 
-仅在支持自定义屏幕的模拟器类型中可用，具体请参考[自定义模拟器屏幕配置](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-customize-screen-configuration)。
+仅在支持自定义屏幕的模拟器类型中可用，具体请参考[自定义模拟器屏幕配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-customize-screen-configuration)。
 
 ```
 Emulator -screenProfileList -deviceType {模拟器类型} -details -update -http_proxy {网络代理配置}

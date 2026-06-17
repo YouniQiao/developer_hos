@@ -79,4 +79,4 @@ sync_hash: 88735052
 
 ![](./img/0803e932.png)
 
-关于预览器的使用详细说明请参考[界面预览](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-01).
+关于预览器的使用详细说明请参考[界面预览](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-01).

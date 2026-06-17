@@ -15,9 +15,9 @@ sync_hash: f48ecc41
 
 ## 前提条件
 
-* 您已成功[创建游戏](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-createapp-0000001146718717`)，且软件包类型为“APK(Android应用)”，支持设备为“手机”。
-* （可选）您可以[开通游戏版块](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)，宣传游戏内容，聚集核心用户。
-* （可选）您可以[申请预约活动](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-reservation-0000001657694701)，对预约用户派发礼包、卡券等福利。
+* 您已成功[创建游戏](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-createapp-0000001146718717)，且软件包类型为“APK(Android应用)”，支持设备为“手机”。
+* （可选）您可以[开通游戏版块](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-user-operation-0000001239342339/game-center-community-operation-0000001194305462)，宣传游戏内容，聚集核心用户。
+* （可选）您可以[申请预约活动](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/agc-help-activity-operation-0000001194302394/game-center-setup-activities-all-0000001657534737/game-center-setup-activities-reservation-0000001657694701)，对预约用户派发礼包、卡券等福利。
 
 ## 选择预约方式
 
@@ -37,7 +37,7 @@ H5页面展示样式较丰富，上传图片、文字素材即可生成预约页
 
 ### 自定义页面预约（魔方创意页面）
 
-自定义页面展示样式较丰富，页面内容不受固定模块限制，可根据游戏自身特色开发各类模块，例如多视频、技能演示、小游戏等，以灵活多变的形式和丰富多彩的内容吸引预约用户。当前支持使用[魔方创意生成的H5内容化预约页](`/docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-pre-order-0000002023298502)或直接使用预约H5活动页面作为预约详情页。
+自定义页面展示样式较丰富，页面内容不受固定模块限制，可根据游戏自身特色开发各类模块，例如多视频、技能演示、小游戏等，以灵活多变的形式和丰富多彩的内容吸引预约用户。当前支持使用[魔方创意生成的H5内容化预约页](/docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-pre-order-0000002023298502)或直接使用预约H5活动页面作为预约详情页。
 
 ![](./img/9838d771806e.png)
 
@@ -71,7 +71,7 @@ H5页面展示样式较丰富，上传图片、文字素材即可生成预约页
 | --- | --- |
 | 预约大图 | 展示在预约专题栏的预约图，作为预约页的入口。要求宽\*高为1280px\*720px，不超过2MB的JPG/PNG图片。 |
 | 介绍视频（可选） | 展示在预约专题栏的介绍视频。要求分辨率为1280\*720，宽高比为16:9，不超过500MB且视频长度15秒~2分钟的MP4/MOV视频。 |
-| 全局背景颜色 | 以#开头的6位十六进制颜色值，颜色值可参照[颜色码对照表](`https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251217151636.77136823140306973003732938561071%3A50001231000000%3A2800%3A3A16ADBAF49B159639A96C6D8D6B5455430AD9ED5DAA32D1BB1C40A4717B1E4F.xlsx?needInitFileName=true`)。  说明：  “黑色”的十六进制颜色值为“#000000”；“白色”的十六进制颜色值为“#ffffff”。 |
+| 全局背景颜色 | 以#开头的6位十六进制颜色值，颜色值可参照[颜色码对照表](https://alliance-communityfile-drcn.dbankcdn.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20251217151636.77136823140306973003732938561071%3A50001231000000%3A2800%3A3A16ADBAF49B159639A96C6D8D6B5455430AD9ED5DAA32D1BB1C40A4717B1E4F.xlsx?needInitFileName=true)。  说明：  “黑色”的十六进制颜色值为“#000000”；“白色”的十六进制颜色值为“#ffffff”。 |
 | 头部图片 | 展示在预约页顶部。要求宽\*高为1080px\*1146px，不超过500KB的JPG/PNG图片。 |
 | 进入社区的按钮底图（发布中国大陆时可选） | 社区论坛的入口按钮。要求宽\*高为360px\*120px，不超过500KB的JPG/PNG图片。 |
 | 应用简介底图 | 游戏简介版块的背景图。要求宽\*高为1080px\*684px，不超过200KB的JPG/PNG图片。 |
@@ -102,7 +102,7 @@ H5页面展示样式较丰富，上传图片、文字素材即可生成预约页
 
 ## 配置应用基本信息
 
-在提交游戏的预约申请前，您必须优先[配置应用基本信息](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-releaseapkrpk-0000001106463276#section27070410361`)，否则无法提交预约申请。配置基本信息需要的素材规范请参考[应用素材要求](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-app-material-requirement-0000001146534651`)。
+在提交游戏的预约申请前，您必须优先[配置应用基本信息](https://developer.huawei.com/consumer/cn/doc/app/agc-help-releaseapkrpk-0000001106463276#section27070410361)，否则无法提交预约申请。配置基本信息需要的素材规范请参考[应用素材要求](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-app-material-requirement-0000001146534651)。
 
 ![](./img/c0e2eb500471.png)
 
@@ -113,7 +113,7 @@ H5页面展示样式较丰富，上传图片、文字素材即可生成预约页
 
 ## 提交预约申请
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。
 2. 在应用列表中点击需要申请预约的游戏，选择“分发 &gt; 服务 &gt; 预约申请”，在页面右侧点击“新建预约”。
 
    ![](./img/1262b8aeaeed.png)
@@ -128,7 +128,7 @@ H5页面展示样式较丰富，上传图片、文字素材即可生成预约页
    | 配置项 | 说明 |
    | --- | --- |
    | 预约应用包名 | 预约包名请以 “.huawei”或“.HUAWEI”结尾。 |
-   | 首发精确时间 | 游戏首次上架时间，若有调整请及时更新。  说明：  若您已提交内测申请，请确保新游的首发时间必须晚于[内测结束时间](`/docs/distribute/app-dist/game-center/game-center-test-0000001239342331/game-center-early-access-0000001194302390#ZH-CN_TOPIC_0000001194302390__p13448133315204`)。 |
+   | 首发精确时间 | 游戏首次上架时间，若有调整请及时更新。  说明：  若您已提交内测申请，请确保新游的首发时间必须晚于[内测结束时间](/docs/distribute/app-dist/game-center/game-center-test-0000001239342331/game-center-early-access-0000001194302390#ZH-CN_TOPIC_0000001194302390__p13448133315204)。 |
    | 联系人及联系方式 | 填写联系人和联系人QQ、联系电话、邮箱，要求1~100字符。 |
    | 发布国家及地区 | 游戏预约分发的国家及地区，需和“版本信息”页面保持一致，否则可能导致用户无法下载游戏。  说明：  华为运营人员在审核应用时会检查您的游戏是否符合对应国家或地区的政策、宗教文化等要求。若不符合，运营人员会将该国家或地区从分发区域中去除 。 |
    | 备注（可选） | 可补充其他说明信息。要求1~200个字符。 |
@@ -174,7 +174,7 @@ H5页面展示样式较丰富，上传图片、文字素材即可生成预约页
 
 | 配置项 | 说明 |
 | --- | --- |
-| 自定义H5链接 | 可直接填写由魔方创意生成并审核通过的H5活动页面链接，或前往魔方创意新建页面。点击“前往创建”前往魔方创意编辑并保存编辑页后，需要返回到当前页点击“生成链接”生成对应的H5链接，并完成提交预约申请，否则修改不生效。  说明：  若历史提交为zip包素材，更新提交时，若不涉及页面内容更新，此处可继续提交原zip包；若需更新页面内容，请使用魔方创意生成H5活动页面并完成提交。具体魔方创意操作请参见[游戏预约魔方创意](`/docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-pre-order-0000002023298502)。 |
+| 自定义H5链接 | 可直接填写由魔方创意生成并审核通过的H5活动页面链接，或前往魔方创意新建页面。点击“前往创建”前往魔方创意编辑并保存编辑页后，需要返回到当前页点击“生成链接”生成对应的H5链接，并完成提交预约申请，否则修改不生效。  说明：  若历史提交为zip包素材，更新提交时，若不涉及页面内容更新，此处可继续提交原zip包；若需更新页面内容，请使用魔方创意生成H5活动页面并完成提交。具体魔方创意操作请参见[游戏预约魔方创意](/docs/distribute/app-dist/game-center/game-center-materials-0000001194142412/game-center-creatives-ideas-pre-order-0000002023298502)。 |
 | 生效时间 | 请选择预约生效方式：   * 审核通过立即生效 * 指定时间生效 |
 | 云游戏试玩 | 请选择“不支持”。  说明：  根据国家出版署规定不能以任何形式给未成年人提供游戏，所以该配置项目前已失效。 |
 
@@ -194,7 +194,7 @@ H5页面展示样式较丰富，上传图片、文字素材即可生成预约页
 
 ## 预约审核与上架
 
-您提交预约申请后，华为工作人员完成审核需要1~3个工作日。您可以前往[互动中心](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-interaction-center-0000001146518763`)页面或在“预约申请”页面查看完整的审核结果和意见。
+您提交预约申请后，华为工作人员完成审核需要1~3个工作日。您可以前往[互动中心](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-interaction-center-0000001146518763)页面或在“预约申请”页面查看完整的审核结果和意见。
 
 ![](./img/21c6bf0bbe69.png)
 
@@ -206,14 +206,14 @@ H5页面展示样式较丰富，上传图片、文字素材即可生成预约页
 
 ![](./img/45a0810f50b8.png)
 
-* 预约申请发生更新、取消、失效等提交操作时，您的[素材测试实验](`https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/agc-materialtest-create-exper-0000001081085046`)（如有）将会自动失效。
+* 预约申请发生更新、取消、失效等提交操作时，您的[素材测试实验](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/agc-materialtest-create-exper-0000001081085046)（如有）将会自动失效。
 * 若在预约上架后取消该预约，系统将不再保存原有的预约用户。
 
 ## 查看预约数据
 
 您的预约上架后会产生相关的预约数据，具体查看路径如下：
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“分析”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“分析”。
 2. 在应用列表页面，选择您已成功申请预约的游戏，选择“分发分析 &gt; 预约 ”，查看您应用的预约数据。
 
    ![](./img/f129cca95682.png)

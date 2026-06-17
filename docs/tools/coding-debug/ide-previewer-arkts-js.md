@@ -16,7 +16,7 @@ sync_hash: e6ff71ff
 * 预览支持Phone、Tablet、2in1、Car、Wearable、TV设备的ArkTS工程，支持LiteWearable和Wearable设备的JS工程。
 * 预览器功能依赖于电脑显卡的OpenGL版本，OpenGL版本要求为3.2及以上。
 * 预览时将不会运行Ability生命周期。
-* 从DevEco Studio 6.0.0 Beta3版本开始，HAP/HSP引用HSP时支持预览，HAR模块引用HSP不支持预览，请直接在HSP内预览或为该HSP[设置Mock实现](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-mock)。
+* 从DevEco Studio 6.0.0 Beta3版本开始，HAP/HSP引用HSP时支持预览，HAR模块引用HSP不支持预览，请直接在HSP内预览或为该HSP[设置Mock实现](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-mock)。
 * 预览场景下，不支持通过相对路径及绝对路径的方式访问resources目录下的文件。
 * 预览不支持组件拖拽。
 * 部分API不支持预览，如Ability、App、MultiMedia等模块。

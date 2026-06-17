@@ -24,7 +24,7 @@ sync_hash: c87cb380
    * <strong>Destination package</strong>：测试文件存放的位置，建议存放在待测试模块的test目录下。
 
    ![](./img/zh-cn_image_0000002602186731.png)
-3. DevEco Studio在test目录下自动生成对应的测试类。在测试类中，DevEco Studio会生成对应方法的用例模板，具体测试代码需要开发者根据业务逻辑进行开发，具体请参考[单元测试框架](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/unittest-guidelines)。
+3. DevEco Studio在test目录下自动生成对应的测试类。在测试类中，DevEco Studio会生成对应方法的用例模板，具体测试代码需要开发者根据业务逻辑进行开发，具体请参考[单元测试框架](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/unittest-guidelines)。
 
    ![](./img/note_3.0-zh-cn.png)
 
@@ -82,7 +82,7 @@ sync_hash: c87cb380
 
 在LocalTest运行的基础上支持代码覆盖率统计，当前仅支持ArkTS工程。
 
-开发者可以自定义需要参与覆盖率测试的文件，具体配置方法请参考[配置覆盖率过滤文件](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ui-test#section13756446154)。
+开发者可以自定义需要参与覆盖率测试的文件，具体配置方法请参考[配置覆盖率过滤文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ui-test#section13756446154)。
 
 如前所述，覆盖率统计模式也有多级别入口，以文件级别为例，有两种方式启动测试：
 
@@ -98,7 +98,7 @@ sync_hash: c87cb380
 
 ![](./img/zh-cn_image_0000002602186733.png)
 
-点击链接可打开报告，查看代码覆盖率详情，关于覆盖率的计算方式请参考[查看覆盖率报告](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ui-test#section10394362109)。
+点击链接可打开报告，查看代码覆盖率详情，关于覆盖率的计算方式请参考[查看覆盖率报告](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ui-test#section10394362109)。
 
 ![](./img/zh-cn_image_0000002602186739.png)
 
@@ -127,7 +127,7 @@ hvigorw test -p module={moduleName} -p coverage={true | false} -p scope={suiteNa
 ```
 
 * module：执行测试的模块。缺省默认是执行所有模块的用例。
-* coverage：是否生成覆盖率报告，缺省默认是true，在&lt;module-path&gt;/.test/default/outputs/test/reports路径下生成两份报告，一份是html格式（index.html），一份是json格式（coverageReport.json），具体参考[查看覆盖率报告](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ui-test#section10394362109)。
+* coverage：是否生成覆盖率报告，缺省默认是true，在&lt;module-path&gt;/.test/default/outputs/test/reports路径下生成两份报告，一份是html格式（index.html），一份是json格式（coverageReport.json），具体参考[查看覆盖率报告](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-ui-test#section10394362109)。
 * scope：格式为`&#123;suiteName&#125;`#`&#123;methodName&#125;`或`&#123;suiteName&#125;`，分别表示测试用例级别或测试套件级别的测试，缺省默认是执行当前模块的所有用例。
 
 ![](./img/note_3.0-zh-cn.png)

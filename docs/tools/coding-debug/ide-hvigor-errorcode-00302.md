@@ -61,7 +61,7 @@ The root node is not yet available for build.
 
 <strong>处理步骤</strong>
 
-在hvigorfile.ts中调用API，确保符合[Hvigor生命周期的执行顺序](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section746253616316)。
+在hvigorfile.ts中调用API，确保符合[Hvigor生命周期的执行顺序](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-life-cycle#section746253616316)。
 
 #### 00302014 hvigorConfig还没准备好用于构建
 
@@ -79,7 +79,7 @@ hvigorConfig还没准备好用于构建。
 
 <strong>处理步骤</strong>
 
-通过[在线提单](`https://`developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
 
 #### 00302015 调用内部hook函数时出现异常
 
@@ -97,7 +97,7 @@ XXX in hvigorfile at XXX.
 
 <strong>处理步骤</strong>
 
-参考[扩展API文档](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-apis)，确保调用的API正确。
+参考[扩展API文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-hvigor-apis)，确保调用的API正确。
 
 #### 00302016 Stage模型工程hvigorfile缺少系统插件
 

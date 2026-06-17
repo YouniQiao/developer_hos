@@ -9,4 +9,4 @@ sync_hash: 1576c5a7
 ---
 # 提交上架
 
-前往AppGallery Connect提交游戏上架审核，具体操作请参见[发布HarmonyOS游戏](`https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-0000002364930906`)。
+前往AppGallery Connect提交游戏上架审核，具体操作请参见[发布HarmonyOS游戏](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-game-0000002364930906)。

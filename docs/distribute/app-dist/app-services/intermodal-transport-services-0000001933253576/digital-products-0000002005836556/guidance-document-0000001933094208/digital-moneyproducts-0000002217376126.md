@@ -9,11 +9,11 @@ sync_hash: 6607c499
 ---
 # 付费下载应用
 
-如果您想要在鸿蒙应用市场上架付费下载的HarmonyOS应用，您可以在[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/`)中发布应用时将应用设置为付费应用。
+如果您想要在鸿蒙应用市场上架付费下载的HarmonyOS应用，您可以在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)中发布应用时将应用设置为付费应用。
 
 ![](./img/da141f467973.png)
 
-若您需要开通付费下载功能，请您先[开通商户服务](`/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-serve-0000001931836308/open-0000001959074873)并通过官方渠道[联系我们](`/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/service-0000001959074917)签署《华为数字商品及联运服务协议》。
+若您需要开通付费下载功能，请您先[开通商户服务](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-serve-0000001931836308/open-0000001959074873)并通过官方渠道[联系我们](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/service-0000001959074917)签署《华为数字商品及联运服务协议》。
 
 如您有Harmony OS 5以下或安卓应用，与 Harmony OS 5及以上的应用相对应，需要做用户的权益映射（已有权益的用户无需重复购买），请联系客服developer@huawei.com。
 
@@ -30,7 +30,7 @@ sync_hash: 6607c499
 
 ## 创建应用
 
-您可以在[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/`)上，参考[创建项目和HarmonyOS应用](`/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/business-activation-0000001958955081#section104021121114213`)完成HarmonyOS应用的创建，从而使用各类服务。
+您可以在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/)上，参考[创建项目和HarmonyOS应用](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/business-activation-0000001958955081#section104021121114213)完成HarmonyOS应用的创建，从而使用各类服务。
 
 ## 设置应用价格
 
@@ -65,7 +65,7 @@ sync_hash: 6607c499
 
 ![](./img/ad7dca27d587.png)
 
-* 当您在设置完“汇率换算基准价格”并点击刷新后，系统会自动根据汇率（及[税率](`https://developer.huawei.com/consumer/en/doc/start/merchant-service-0000001053025967#section154132916309`)）和相应币种美化/更正规则计算出所选国家/地区应用的用户支付价格（含税），具体请参考[换算规则描述](`https://developer.huawei.com/consumer/cn/doc/app/describe-0000001958955133`)。
+* 当您在设置完“汇率换算基准价格”并点击刷新后，系统会自动根据汇率（及[税率](https://developer.huawei.com/consumer/en/doc/start/merchant-service-0000001053025967#section154132916309)）和相应币种美化/更正规则计算出所选国家/地区应用的用户支付价格（含税），具体请参考[换算规则描述](https://developer.huawei.com/consumer/cn/doc/app/describe-0000001958955133)。
 * 您还可以根据不同国家/地区的应用价格策略，手动编辑应用价格表中指定国家/地区的价格，保存后将以此价格作为应用在该国家/地区的用户支付价格（含税）。
 * 在使用汇率刷新不同国家/地区应用的用户支付价格（含税）时，如出现币种兑换查无汇率的警告，则您需要手动填写该国家/地区应用的用户支付价格（含税）。
 * 华为汇率每日刷新，但是不会更改您已经保存的应用价格，如果您需要刷新应用价格，可以手动根据当前最新汇率刷新。
@@ -77,11 +77,11 @@ sync_hash: 6607c499
 
 | <strong>参数</strong> | <strong>说明</strong> |
 | --- | --- |
-| 汇率换算基准价格 | 应用价格的汇率换算基准价格。目前，支持填入“含税”或“不含税”两种类型的基准价格，默认为“含税”类型。   * 含税：汇率换算基准价格中含有税额。 * 不含税：汇率换算基准价格中不含税额。 说明：  系统会根据汇率换算基准价格计算出应用的用户支付价格（含税），具体请参考[换算规则描述](`https://developer.huawei.com/consumer/cn/doc/app/describe-0000001958955133`)。   由于不同国家/地区的币种不同，系统会根据您输入的汇率换算基准价格进行如下规则的自动调整：   * 通用币种要求国家/地区：支持整数或小数（均保留两位小数）作为输入价格，如输入1.34，则将1.34作为该应用的输入价格； * 特殊币种要求国家/地区（详见下表）：   – 仅支持整数（保留两位小数）的国家/地区，以整数或向上取整的值（均保留两位小数）作为输入价格，如输入5.02，则默认选取6.00作为该应用的输入价格。  – 仅以五分之一为最小单位（保留两位小数）的国家/地区，以整数或向上取符合五分之一要求的数值（均保留两位小数）作为输入价格，如输入1.23，则默认选取1.40作为该应用的输入价格。 |
+| 汇率换算基准价格 | 应用价格的汇率换算基准价格。目前，支持填入“含税”或“不含税”两种类型的基准价格，默认为“含税”类型。   * 含税：汇率换算基准价格中含有税额。 * 不含税：汇率换算基准价格中不含税额。 说明：  系统会根据汇率换算基准价格计算出应用的用户支付价格（含税），具体请参考[换算规则描述](https://developer.huawei.com/consumer/cn/doc/app/describe-0000001958955133)。   由于不同国家/地区的币种不同，系统会根据您输入的汇率换算基准价格进行如下规则的自动调整：   * 通用币种要求国家/地区：支持整数或小数（均保留两位小数）作为输入价格，如输入1.34，则将1.34作为该应用的输入价格； * 特殊币种要求国家/地区（详见下表）：   – 仅支持整数（保留两位小数）的国家/地区，以整数或向上取整的值（均保留两位小数）作为输入价格，如输入5.02，则默认选取6.00作为该应用的输入价格。  – 仅以五分之一为最小单位（保留两位小数）的国家/地区，以整数或向上取符合五分之一要求的数值（均保留两位小数）作为输入价格，如输入1.23，则默认选取1.40作为该应用的输入价格。 |
 | 排序规则 | 国家/地区的排序规则。   * 按字母A-Z顺序排序 * 按地理区域分组排序 |
 | 置顶国家/地区 | 置顶汇率换算国家/地区，方便您查看或编辑应用价格，可选。   * 当国家/地区按字母A-Z顺序排序时，您可以在下拉选项中选择您要置顶的国家/地区。 * 当国家/地区按地理区域分组排序时，您可以在下拉选项中选择您要置顶的区域。 |
 
-特殊币种要求国家/地区详见[应用管理国家/地区、语言、币种表](`/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/countries-overview-0000002071714318)。
+特殊币种要求国家/地区详见[应用管理国家/地区、语言、币种表](/docs/distribute/app-dist/app-services/intermodal-transport-services-0000001933253576/digital-products-0000002005836556/guidance-document-0000001933094208/digital-products-manage-0000001959074881/countries-overview-0000002071714318)。
 
 <strong>5、</strong><strong>价格调整</strong>
 

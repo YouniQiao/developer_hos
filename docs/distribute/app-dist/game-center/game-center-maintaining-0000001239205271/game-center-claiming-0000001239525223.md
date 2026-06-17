@@ -17,7 +17,7 @@ upstream_hash: 16fc23f0a69f
 
 * 如果认领的应用原本是在架状态，认领成功后应用会被下架。
 * 应用认领后，原有的所有服务将无法使用，且不保留历史下载量和评论数据，即仅认领应用软件包，请谨慎操作。
-* 如果您只需要更换主体，建议选择[应用转移](`/docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-transferring-0000001194325290#ZH-CN_TOPIC_0000001194325290`)，以防应用下架以及数据的丢失。
+* 如果您只需要更换主体，建议选择[应用转移](/docs/distribute/app-dist/game-center/game-center-maintaining-0000001239205271/game-center-transferring-0000001194325290#ZH-CN_TOPIC_0000001194325290)，以防应用下架以及数据的丢失。
 
 ## 前提条件
 
@@ -25,7 +25,7 @@ upstream_hash: 16fc23f0a69f
 
 ## 提交应用认领申请
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，点击“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，点击“APP与元服务”。
 2. 在应用列表中选择待提交应用认领申请的应用，进入应用详情页。
 3. 在上传软件包处上传您想要认领的软件包。
 4. 在弹出的“包名重复”提示框中点击“应用认领”。
@@ -60,7 +60,7 @@ upstream_hash: 16fc23f0a69f
 
 ## RPK包获取方法
 
-1. 请参考[快应用IDE操作指南](`https://developer.huawei.com/consumer/cn/doc/Tools-Guides/ide-overview-0000001147936547`)下载并安装[华为快应用IDE](`https://developer.huawei.com/consumer/cn/doc/Tools-Library/quickapp-ide-download-0000001101172926`)。
+1. 请参考[快应用IDE操作指南](https://developer.huawei.com/consumer/cn/doc/Tools-Guides/ide-overview-0000001147936547)下载并安装[华为快应用IDE](https://developer.huawei.com/consumer/cn/doc/Tools-Library/quickapp-ide-download-0000001101172926)。
 2. 点击菜单栏“新建项目 &gt; 快应用”后，点击“下一步”。
 
    ![](./img/1060f4adb7e9.png)

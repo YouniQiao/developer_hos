@@ -19,7 +19,7 @@ upstream_hash: 1ce4fc82d244
 
 #### 检测逻辑
 
-启动后，缓存本次冷启动过程中的截图，检测启动过程中的广告页面和加载完成页面。广告页面通过使用真实应用训练的广告检测AI模型进行检测，页面加载检测逻辑参考[DevEco Studio 6.0.1 Beta1及以上版本的点击操作完成快](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-completion-for-click-0404#section15922054151911)。
+启动后，缓存本次冷启动过程中的截图，检测启动过程中的广告页面和加载完成页面。广告页面通过使用真实应用训练的广告检测AI模型进行检测，页面加载检测逻辑参考[DevEco Studio 6.0.1 Beta1及以上版本的点击操作完成快](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-completion-for-click-0404#section15922054151911)。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -39,7 +39,7 @@ upstream_hash: 1ce4fc82d244
 
 #### 检测逻辑
 
-启动后，缓存本次冷启动过程中的截图，检测启动过程中的广告页面和加载完成页面。广告页面通过使用真实应用训练的广告检测AI模型进行检测，页面加载检测逻辑参考[DevEco Studio 6.0.1 Beta1以下版本的点击操作完成快](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-completion-for-click-0404#section191984031815)。
+启动后，缓存本次冷启动过程中的截图，检测启动过程中的广告页面和加载完成页面。广告页面通过使用真实应用训练的广告检测AI模型进行检测，页面加载检测逻辑参考[DevEco Studio 6.0.1 Beta1以下版本的点击操作完成快](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-quick-completion-for-click-0404#section191984031815)。
 
 #### 计算逻辑
 

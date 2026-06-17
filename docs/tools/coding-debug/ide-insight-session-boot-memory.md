@@ -18,4 +18,4 @@ sync_hash: 08d6f9bb
 
 具体操作方法为：在任务列表中单击Allocation任务后的![](./img/zh-cn_image_0000002571546538.png "点击放大")按钮。
 
-在分析结束后，呈现出的数据类型以及相应的处理方法，与非启动过程的分析相同，请参考[内存分析介绍](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-allocations-memory)、[内存分析数据筛选](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-allocations-data-filtering)。
+在分析结束后，呈现出的数据类型以及相应的处理方法，与非启动过程的分析相同，请参考[内存分析介绍](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-allocations-memory)、[内存分析数据筛选](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-allocations-data-filtering)。

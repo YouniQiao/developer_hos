@@ -45,7 +45,7 @@ attach调试获取不到product。
 
 <strong>处理步骤</strong>
 
-检查工程级build-profile.json5文件中对应模块的applyToProducts配置是否正确，详细配置可以参考[构建定义的目标产物](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-guides#section2554174114463)。
+检查工程级build-profile.json5文件中对应模块的applyToProducts配置是否正确，详细配置可以参考[构建定义的目标产物](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-guides#section2554174114463)。
 
 #### 00401002 attach调试获取不到target
 
@@ -63,7 +63,7 @@ attach调试获取不到target。
 
 <strong>处理步骤</strong>
 
-检查工程级build-profile.json5文件中对应模块的applyToProducts配置是否正确，详细配置可以参考[构建定义的目标产物](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-guides#section2554174114463)。
+检查工程级build-profile.json5文件中对应模块的applyToProducts配置是否正确，详细配置可以参考[构建定义的目标产物](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-guides#section2554174114463)。
 
 #### 00401003 启动调试失败
 
@@ -208,7 +208,7 @@ The target can not be empty. Check the build-profile.json5 file of the project r
 
 <strong>处理步骤</strong>
 
-检查工程级build-profile.json5文件中对应模块的applyToProducts配置是否正确，详细配置可以参考[构建定义的目标产物](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-guides#section2554174114463)。
+检查工程级build-profile.json5文件中对应模块的applyToProducts配置是否正确，详细配置可以参考[构建定义的目标产物](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-guides#section2554174114463)。
 
 #### 00401010 运行获取不到product
 
@@ -226,7 +226,7 @@ product配置不正确。
 
 <strong>处理步骤</strong>
 
-检查工程级build-profile.json5文件中对应模块的applyToProducts配置是否正确，详细配置可以参考[构建定义的目标产物](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-guides#section2554174114463)。
+检查工程级build-profile.json5文件中对应模块的applyToProducts配置是否正确，详细配置可以参考[构建定义的目标产物](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-customized-multi-targets-and-products-guides#section2554174114463)。
 
 #### 00401011 没有启动任何Ability时，无法运行或调试应用
 
@@ -571,7 +571,7 @@ FA工程模型不支持debugLine。
 
 <strong>处理步骤</strong>
 
-在运行/调试配置面板取消勾选\<strong\>[Enable DebugLine](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-debug-configurations#section21619254511)</strong>。
+在运行/调试配置面板取消勾选\<strong\>[Enable DebugLine](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-run-debug-configurations#section21619254511)</strong>。
 
 #### 00401029 获取SDK版本失败
 
@@ -607,7 +607,7 @@ SDK版本太低，不支持DebugLine，需要升级SDK版本到4.1.0.21及以上
 
 <strong>处理步骤</strong>
 
-在官网上重新[下载DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+在官网上重新[下载DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00401031 获取Hvigor版本失败
 
@@ -625,7 +625,7 @@ DevEco Studio中缺少hvigor工具。
 
 <strong>处理步骤</strong>
 
-检查DevEco Studio安装目录的tools目录下是否有hvigor工具，如果不存在，在官网上重新[下载DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+检查DevEco Studio安装目录的tools目录下是否有hvigor工具，如果不存在，在官网上重新[下载DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00401032 Hvigor版本太低，不支持DebugLine
 
@@ -643,7 +643,7 @@ DevEco Studio版本太低。
 
 <strong>处理步骤</strong>
 
-在官网上重新[下载DevEco Studio](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)。
+在官网上重新[下载DevEco Studio](https://developer.huawei.com/consumer/cn/download/deveco-studio)。
 
 #### 00401033 当前SDK版本不支持Tsan
 
@@ -769,7 +769,7 @@ HAP包不存在，检查签名HAP包是否打包成功。
 
 <strong>处理步骤</strong>
 
-确保签名HAP包打包成功后再运行，签名请参考[配置调试签名](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
+确保签名HAP包打包成功后再运行，签名请参考[配置调试签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing)。
 
 #### 00401061 权限不足无法访问HAP包所在路径
 

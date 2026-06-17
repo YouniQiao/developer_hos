@@ -20,7 +20,7 @@ upstream_hash: 703f9cd12357
 | 服务名称 | xxx数字车钥匙服务（xxx可为公司名称/产品名称）。该字段仅用于方便开发者区分自己配置的多个服务，没有其他用途。 |
 | 服务号 | ICCE车钥匙卡片的发卡机构，用于唯一表明某一发卡机构。hwpass.stdcarkey.xxx.xxx（xxx可为公司/产品名称，总长度不超过32个英文小写字符，请严格按照此规则定义）。钱包可根据此值进行发卡机构的管控；在预置模板、生成钥匙卡片以及开通激活过程的请求体中会携带该值。 |
 | 接入方式 | 云端接入 |
-| 回调地址 | 用于用户添加/删除卡券时回调通知发卡机构的地址，注意：地址必须使用https。示例：`https://`商户服务器地址/v1/passes/nfccallback。 |
+| 回调地址 | 用于用户添加/删除卡券时回调通知发卡机构的地址，注意：地址必须使用https。示例：https://商户服务器地址/v1/passes/nfccallback。 |
 | 用户公钥 | 按照[创建Wallet Kit服务](/docs/dev/app-dev/application-services/wallet-kit-guide/wallet-preparations)步骤5提供的生成方式，并将生成的公钥内容粘贴在此处。 |
 
 | NFC参数名称 | 参数值 |

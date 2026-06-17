@@ -8,7 +8,7 @@ sync_hash: d113a399
 ---
 # 添加和删除模块
 
-模块（Module）是应用/元服务的基本功能单元，包含了源代码、资源文件、第三方库及应用/元服务配置文件。一个应用/元服务通常会包含一个或多个模块，因此，可以在工程中创建多个模块。模块支持entry、feature（仅应用工程支持创建）、har、shared四种类型，具体请参考[module.json5配置文件](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#配置文件标签).
+模块（Module）是应用/元服务的基本功能单元，包含了源代码、资源文件、第三方库及应用/元服务配置文件。一个应用/元服务通常会包含一个或多个模块，因此，可以在工程中创建多个模块。模块支持entry、feature（仅应用工程支持创建）、har、shared四种类型，具体请参考[module.json5配置文件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#配置文件标签).
 
 从DevEco Studio 6.0.1 Beta1开始，创建Native C++模块或Library模板时支持选择C++版本。
 
@@ -32,7 +32,7 @@ sync_hash: d113a399
      ![](./img/bf3b1a8a.png)
 
      + 同一工程通过新增模块仅支持创建一个entry模块。如需构建entry类型模块，可在module.json5文件中修改相应module下的type字段。
-     + 如果同一类型的设备已经存在entry模块，出现新的entry模块后，还需要[配置分发策略](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#distributionfilter标签).
+     + 如果同一类型的设备已经存在entry模块，出现新的entry模块后，还需要[配置分发策略](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#distributionfilter标签).
    * <strong>Device type</strong>：选择模块的设备类型，如果新建模块的Module type为feature，则只能选择该工程原有的设备类型；如果Module type为entry，可以选择该模块支持的其他设备类型。
    * <strong>Enable native</strong>：仅Library模板存在，将创建一个可以调用C/C++的共享包。
    * <strong>C++ Standard：</strong>C++标准库，取值包括：Toolchain Default、C++11、C++14。从DevEco Studio 6.0.1 Beta1开始支持。

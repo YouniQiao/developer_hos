@@ -9,7 +9,7 @@ sync_hash: 0ec6f3dc
 ---
 # 换算规则描述
 
-编辑商品（或应用）价格时，当您在设置完“汇率换算基准价格”并点击刷新后，系统会根据当时汇率（及[税率](`https://developer.huawei.com/consumer/en/doc/start/merchant-service-0000001053025967#section154132916309`)）和如下币种美化/更正规则换算出所选国家/地区商品的用户支付价格（含税）。
+编辑商品（或应用）价格时，当您在设置完“汇率换算基准价格”并点击刷新后，系统会根据当时汇率（及[税率](https://developer.huawei.com/consumer/en/doc/start/merchant-service-0000001053025967#section154132916309)）和如下币种美化/更正规则换算出所选国家/地区商品的用户支付价格（含税）。
 
 ## 用户支付价格（含税）换算规则
 
@@ -47,4 +47,4 @@ sync_hash: 0ec6f3dc
 
   ![](./img/1d683a833e4b.png)
 
-  如需查看特殊币种要求的国家或地区，请参见[特殊币种要求国家/地区](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-creating-product-0000001239502323#ZH-CN_TOPIC_0000001239502323__zh-cn_topic_0000001064472502_p4835122835815`)。
+  如需查看特殊币种要求的国家或地区，请参见[特殊币种要求国家/地区](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-creating-product-0000001239502323#ZH-CN_TOPIC_0000001239502323__zh-cn_topic_0000001064472502_p4835122835815)。

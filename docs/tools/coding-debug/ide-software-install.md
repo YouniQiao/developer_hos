@@ -10,7 +10,7 @@ sync_hash: 8bfd1028
 
 ## 下载软件
 
-请前往[下载中心](`https://`developer.huawei.com/consumer/cn/download/deveco-studio)，登录华为账号后下载DevEco Studio，并根据下载中心页面<strong>工具完整性</strong>指导进行完整性校验。
+请前往[下载中心](https://developer.huawei.com/consumer/cn/download/deveco-studio)，登录华为账号后下载DevEco Studio，并根据下载中心页面<strong>工具完整性</strong>指导进行完整性校验。
 
 DevEco Studio支持Windows和macOS系统，下面将针对两种操作系统的软件安装方式分别进行介绍。
 

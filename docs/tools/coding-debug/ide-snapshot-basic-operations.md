@@ -21,7 +21,7 @@ sync_hash: 5bf322d4
 
 #### 查看快照详情
 
-1. 创建Snapshot场景调优分析任务，操作方法可参考[性能问题定位：深度录制](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording)。
+1. 创建Snapshot场景调优分析任务，操作方法可参考[性能问题定位：深度录制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording)。
 2. 设置Snapshot泳道。单击任务左上角的![](./img/zh-cn_image_0000002602066447.png "点击放大")筛选泳道，再次单击此按钮可关闭设置并生效。
 3. 单击ArkTS Snapshot泳道的“options”下拉列表，可以设置是否需要抓取基础类型number的数据。默认不抓取。
 
@@ -201,7 +201,7 @@ DevEco Profiler支持离线导入内存快照功能，可导入一个或多个.h
 
 #### 解析内存对象
 
-从DevEco Studio 6.1.0 Beta2开始，DevEco Profiler支持导入[代码混淆产物nameCache](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-exception-stack-parsing-principle#section19215122372720)文件和[ArkTS调试产物sourceMap](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-exception-stack-parsing-principle#section666114451518)文件，还原文件名称和文件路径。
+从DevEco Studio 6.1.0 Beta2开始，DevEco Profiler支持导入[代码混淆产物nameCache](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-exception-stack-parsing-principle#section19215122372720)文件和[ArkTS调试产物sourceMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-exception-stack-parsing-principle#section666114451518)文件，还原文件名称和文件路径。
 
 以nameCache文件为例，文件导入前，Class为d8。
 

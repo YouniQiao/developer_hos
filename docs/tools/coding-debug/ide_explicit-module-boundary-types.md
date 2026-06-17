@@ -26,7 +26,7 @@ sync_hash: cee27e0f
 
 #### 选项
 
-详情请参考[@typescript-eslint/explicit-module-boundary-types选项](`https://`typescript-eslint.nodejs.cn/rules/explicit-module-boundary-types/#options)。
+详情请参考[@typescript-eslint/explicit-module-boundary-types选项](https://typescript-eslint.nodejs.cn/rules/explicit-module-boundary-types/#options)。
 
 #### 正例
 
@@ -87,4 +87,4 @@ plugin:@typescript-eslint/recommended
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

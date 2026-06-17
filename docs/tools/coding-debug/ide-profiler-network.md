@@ -23,7 +23,7 @@ DevEco Profiler提供Network模板，帮助用户在应用运行过程中查看h
 
 #### 查看网络请求各阶段耗时
 
-1. 创建Network模板任务并录制相关数据，操作方法可参考[性能问题定位：深度录制](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording)，或在会话区选择<strong>Open File</strong>，导入历史数据。
+1. 创建Network模板任务并录制相关数据，操作方法可参考[性能问题定位：深度录制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording)，或在会话区选择<strong>Open File</strong>，导入历史数据。
 2. 录制结束等待处理数据完成。点击Network Request泳道，可在下方数据区查看录制过程中发生的网络请求数量变化。Summary区域可查看按照域名(Domain)维度统计展示网络请求耗时，展示信息包含Domain、线程名称、数量、平均耗时、最大耗时、DNS解析/TCP连接/TLS连接/等待响应/接收数据平均耗时、DNS解析/TCP连接/TLS连接/等待响应/接收数据最大耗时。
 
    ![](./img/zh-cn_image_0000002602065997.png "点击放大")

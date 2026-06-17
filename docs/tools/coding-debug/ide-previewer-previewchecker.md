@@ -229,7 +229,7 @@ struct Index {
 
 #### @previewer/no-page-import-unmocked-hsp
 
-由于能力缺失，预览器无法确保HSP是可以正常运行的。界面代码调用HSP可能会在预览运行时无法按预期执行，未正确初始化的接口调用可能会导致运行异常，从而影响界面渲染结果。建议待预览的组件及其依赖的组件避免引用HSP，或为该HSP设置Mock实现，更多关于Mock实现的介绍请参考[预览数据模拟](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-mock)。
+由于能力缺失，预览器无法确保HSP是可以正常运行的。界面代码调用HSP可能会在预览运行时无法按预期执行，未正确初始化的接口调用可能会导致运行异常，从而影响界面渲染结果。建议待预览的组件及其依赖的组件避免引用HSP，或为该HSP设置Mock实现，更多关于Mock实现的介绍请参考[预览数据模拟](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-mock)。
 
 <strong>反例</strong>
 

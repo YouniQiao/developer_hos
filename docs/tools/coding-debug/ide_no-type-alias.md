@@ -28,7 +28,7 @@ upstream_hash: 7fcdfa7f6bd2
 
 #### 选项
 
-详情请参考[@typescript-eslint/no-type-alias选项](`https://`typescript-eslint.nodejs.cn/rules/no-type-alias/#options)。
+详情请参考[@typescript-eslint/no-type-alias选项](https://typescript-eslint.nodejs.cn/rules/no-type-alias/#options)。
 
 #### 正例
 
@@ -65,4 +65,4 @@ export function addPerson(person: Person): Person {
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

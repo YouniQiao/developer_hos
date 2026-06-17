@@ -28,7 +28,7 @@ upstream_hash: 079260b272ea
 
 #### 选项
 
-详情请参考[@typescript-eslint/no-this-alias选项](`https://`typescript-eslint.nodejs.cn/rules/no-this-alias/#options)。
+详情请参考[@typescript-eslint/no-this-alias选项](https://typescript-eslint.nodejs.cn/rules/no-this-alias/#options)。
 
 #### 正例
 
@@ -65,4 +65,4 @@ plugin:@typescript-eslint/recommended
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

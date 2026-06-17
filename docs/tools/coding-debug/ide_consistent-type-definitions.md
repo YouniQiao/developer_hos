@@ -26,7 +26,7 @@ sync_hash: 0cd4890c
 
 #### 选项
 
-详情请参考[@typescript-eslint/consistent-type-definitions选项](`https://`typescript-eslint.nodejs.cn/rules/consistent-type-definitions/#options)。
+详情请参考[@typescript-eslint/consistent-type-definitions选项](https://typescript-eslint.nodejs.cn/rules/consistent-type-definitions/#options)。
 
 #### 正例
 
@@ -55,4 +55,4 @@ type T = { x: number };
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

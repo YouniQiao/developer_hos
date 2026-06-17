@@ -11,7 +11,7 @@ upstream_hash: 1e9ad6d49291
 
 # @typescript-eslint/no-extraneous-class
 
-不允许将类用作命名空间，更多规则详情可参考[no-extraneous-class](`https://`typescript-eslint.nodejs.cn/rules/no-extraneous-class)。
+不允许将类用作命名空间，更多规则详情可参考[no-extraneous-class](https://typescript-eslint.nodejs.cn/rules/no-extraneous-class)。
 
 #### 规则配置
 
@@ -26,7 +26,7 @@ upstream_hash: 1e9ad6d49291
 
 #### 选项
 
-详情请参考[@typescript-eslint/no-extraneous-class选项](`https://`typescript-eslint.nodejs.cn/rules/no-extraneous-class/#options)。
+详情请参考[@typescript-eslint/no-extraneous-class选项](https://typescript-eslint.nodejs.cn/rules/no-extraneous-class/#options)。
 
 #### 正例
 
@@ -66,4 +66,4 @@ export class HelloWorldLogger {
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

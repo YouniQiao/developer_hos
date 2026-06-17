@@ -24,7 +24,7 @@ sync_hash: 8c545b60
 
 #### 选项
 
-详情请参考[@typescript-eslint/unified-signatures选项](`https://`typescript-eslint.nodejs.cn/rules/unified-signatures/#options)。
+详情请参考[@typescript-eslint/unified-signatures选项](https://typescript-eslint.nodejs.cn/rules/unified-signatures/#options)。
 
 #### 正例
 
@@ -49,4 +49,4 @@ export declare function y(...a: readonly number[]): void;
 plugin:@typescript-eslint/all
 ```
 
-Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。
+Code Linter代码检查规则的配置指导请参考[Code Linter代码检查](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-code-linter)。

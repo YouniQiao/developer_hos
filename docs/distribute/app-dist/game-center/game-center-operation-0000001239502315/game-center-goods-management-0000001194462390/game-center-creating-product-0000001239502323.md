@@ -11,7 +11,7 @@ sync_hash: 9c935820
 
 |  |  |
 | --- | --- |
-| 您可以通过华为商品管理系统（PMS）将您的应用商品信息托管在华为侧，方便您的应用商品价格国际化管理，助力您的应用进行全球化推广。还可以在[商品营销](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-managing-product-marketing-0000001198744990)中，让您的应用在应用市场详情页获得更多的资源曝光。  新增商品共有三种方式，一种是通过在AGC控制台[新增单个商品](#section873719282516)的方式，一种是通过在AGC控制台[批量导入商品](#section173850553264)的方式，除此之外，您还可以通过创建商品接口创建单个商品或者通过批量创建商品接口批量创建商品，具体请参见[创建商品](`https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/agcapi-pms-add_product-0000001115868326`)。 |  |
+| 您可以通过华为商品管理系统（PMS）将您的应用商品信息托管在华为侧，方便您的应用商品价格国际化管理，助力您的应用进行全球化推广。还可以在[商品营销](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-managing-product-marketing-0000001198744990)中，让您的应用在应用市场详情页获得更多的资源曝光。  新增商品共有三种方式，一种是通过在AGC控制台[新增单个商品](#section873719282516)的方式，一种是通过在AGC控制台[批量导入商品](#section173850553264)的方式，除此之外，您还可以通过创建商品接口创建单个商品或者通过批量创建商品接口批量创建商品，具体请参见[创建商品](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/agcapi-pms-add_product-0000001115868326)。 |  |
 
 商品类型分为非订阅类商品和自动续期订阅商品：
 
@@ -35,7 +35,7 @@ sync_hash: 9c935820
 
 ### 非订阅类商品
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要新增商品的应用。
 
    ![](./img/f07eeee43966.png)
@@ -69,7 +69,7 @@ sync_hash: 9c935820
 
    ![](./img/880a9384c51c.png)
 
-   * 当您在设置完“汇率换算基准价格”并点击刷新后，系统会自动根据汇率（及[税率](`https://developer.huawei.com/consumer/en/doc/start/merchant-service-0000001053025967#section154132916309`)）和相应币种美化/更正规则计算出所选国家/地区商品的用户支付价格（含税），具体请参考[换算规则描述](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-conversion-rule-description-0000001239182363)。
+   * 当您在设置完“汇率换算基准价格”并点击刷新后，系统会自动根据汇率（及[税率](https://developer.huawei.com/consumer/en/doc/start/merchant-service-0000001053025967#section154132916309)）和相应币种美化/更正规则计算出所选国家/地区商品的用户支付价格（含税），具体请参考[换算规则描述](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-conversion-rule-description-0000001239182363)。
    * 您还可以根据不同国家/地区的商品价格策略，手动编辑商品价格表中指定国家/地区的价格，保存后将以此价格作为商品在该国家/地区的用户支付价格（含税）。
    * 在使用汇率刷新不同国家/地区商品的用户支付价格（含税）时，如出现币种兑换查无汇率的警告，则您需要手动填写该国家/地区商品的用户支付价格（含税）。
    * 华为汇率每日刷新，但是不会更改您已经保存的商品价格，如果您需要刷新商品价格，可以手动根据当前最新汇率刷新。
@@ -81,7 +81,7 @@ sync_hash: 9c935820
 
    | 参数 | 说明 |
    | --- | --- |
-   | 汇率换算基准价格 | 商品价格的汇率换算基准价格。目前，支持填入“含税”或“不含税”两种类型的基准价格，默认为“含税”类型。  * 含税：汇率换算基准价格中含有税额。 * 不含税：汇率换算基准价格中不含税额。 说明：  系统会根据汇率换算基准价格计算出商品的用户支付价格（含税），具体请参考[换算规则描述](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-conversion-rule-description-0000001239182363)。  由于不同国家/地区的币种不同，系统会根据您输入的汇率换算基准价格进行如下规则的自动调整：  * 通用币种要求国家/地区：支持整数或小数（均保留两位小数）作为输入价格，如输入1.34，则将1.34作为该商品的输入价格。 * 特殊币种要求国家/地区（详见下表）： – 仅支持整数（保留两位小数）的国家/地区，以整数或向上取整的值（均保留两位小数）作为输入价格，如输入5.02，则默认选取6.00作为该商品的输入价格。  – 仅以五分之一为最小单位（保留两位小数）的国家/地区，以整数或向上取符合五分之一要求的数值（均保留两位小数）作为输入价格，如输入1.23，则默认选取1.40作为该商品的输入价格。 |
+   | 汇率换算基准价格 | 商品价格的汇率换算基准价格。目前，支持填入“含税”或“不含税”两种类型的基准价格，默认为“含税”类型。  * 含税：汇率换算基准价格中含有税额。 * 不含税：汇率换算基准价格中不含税额。 说明：  系统会根据汇率换算基准价格计算出商品的用户支付价格（含税），具体请参考[换算规则描述](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-conversion-rule-description-0000001239182363)。  由于不同国家/地区的币种不同，系统会根据您输入的汇率换算基准价格进行如下规则的自动调整：  * 通用币种要求国家/地区：支持整数或小数（均保留两位小数）作为输入价格，如输入1.34，则将1.34作为该商品的输入价格。 * 特殊币种要求国家/地区（详见下表）： – 仅支持整数（保留两位小数）的国家/地区，以整数或向上取整的值（均保留两位小数）作为输入价格，如输入5.02，则默认选取6.00作为该商品的输入价格。  – 仅以五分之一为最小单位（保留两位小数）的国家/地区，以整数或向上取符合五分之一要求的数值（均保留两位小数）作为输入价格，如输入1.23，则默认选取1.40作为该商品的输入价格。 |
    | 排序规则 | 国家/地区的排序规则。  * 按字母A-Z顺序排序 * 按地理区域分组排序 |
    | 置顶国家/地区 | 置顶汇率换算国家/地区，方便您查看或编辑商品价格，可选。  * 当国家/地区按字母A-Z顺序排序时，您可以在下拉选项中选择您要置顶的国家/地区。 * 当国家/地区按地理区域分组排序时，您可以在下拉选项中选择您要置顶的区域。 |
 
@@ -110,16 +110,16 @@ sync_hash: 9c935820
    | 19 | 智利 | CLP | 仅支持整数（保留两位小数），如5.00 |
 
 7. 点击“保存”，并在弹框中点击“确定”。
-8. 如需使该商品生效，返回商品列表，点击该商品对应“操作”列的“激活”即可，具体请参考[激活应用内商品](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-deactivating-product-0000001239622347#section8229172719335`)。
+8. 如需使该商品生效，返回商品列表，点击该商品对应“操作”列的“激活”即可，具体请参考[激活应用内商品](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-deactivating-product-0000001239622347#section8229172719335)。
 
 ![](./img/2967c347d8df.png)
 
 * 单个应用创建商品的上限是50000个。
-* 除了在AGC界面可以新增商品，您还可以通过[创建商品](`https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-addproduct-android-0000002171407001`)接口创建单个商品或者通过[批量创建商品](`https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-batchaddproduct-android-0000002171288605`)接口批量创建商品。
+* 除了在AGC界面可以新增商品，您还可以通过[创建商品](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-addproduct-android-0000002171407001)接口创建单个商品或者通过[批量创建商品](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-batchaddproduct-android-0000002171288605)接口批量创建商品。
 
 ### 自动续期订阅商品
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要新增商品的应用。
 
    ![](./img/1d3d9e07e11b.png)
@@ -147,7 +147,7 @@ sync_hash: 9c935820
    | 商品名称 | 不能为空，最长55个字符，不支持以下特殊字符 | |
    | 商品简介 | 不能为空，最长100个字符，不支持以下特殊字符 | |
    | 自动续期周期 | 该参数只有在“类型”选择“自动续期订阅”时才会展示。  系统将按此周期自动扣除订阅商品价格。除非用户主动取消或商品涨价后用户未确认自动取消或用户账号多次扣费失败自动取消，否则会自动按此周期续期。  当前支持的续期周期为1周、1个月、2个月、3个月、6个月、1年、30天（上次订阅日期+30天）、31天（上次订阅日期+31天）。 |
-   | 所属订阅组 | 该参数只有在“类型”选择“自动续期订阅”时才会展示。  自动续期订阅商品所属的订阅组，必须提前创建。创建订阅组的具体步骤请参见[新增订阅组](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-manage-subscription-group-0000001100174674`)。 |
+   | 所属订阅组 | 该参数只有在“类型”选择“自动续期订阅”时才会展示。  自动续期订阅商品所属的订阅组，必须提前创建。创建订阅组的具体步骤请参见[新增订阅组](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-manage-subscription-group-0000001100174674)。 |
    | 商品销售范围 | 点击“设置国家/地区”，设置商品可供用户购买的国家/地区，不能为空，销售范围至少选择1个销售国家/地区。  说明：  勾选“新国家或地区”后，华为应用市场会对未来新增的国家或地区自动提供您的商品，届时以您设置的全球商品定价为准。 |
    | 商品价格 | 点击“查看编辑”，为商品选择合适的价格。  说明：  此价格为展示给用户查看和支付的应用内商品价格（含税），华为将根据当地税率，扣税后与开发者分成，分成以对账单为准。 |
 
@@ -157,7 +157,7 @@ sync_hash: 9c935820
 
    ![](./img/8a20fa9568d7.png)
 
-   * 当您在设置完“汇率换算基准价格”并点击刷新后，系统会自动根据汇率（及[税率](`https://developer.huawei.com/consumer/en/doc/start/merchant-service-0000001053025967#section154132916309`)）和相应币种美化/更正规则计算出您所选国家/地区商品的用户支付价格（含税），具体请参考[换算规则描述](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-conversion-rule-description-0000001239182363)。
+   * 当您在设置完“汇率换算基准价格”并点击刷新后，系统会自动根据汇率（及[税率](https://developer.huawei.com/consumer/en/doc/start/merchant-service-0000001053025967#section154132916309)）和相应币种美化/更正规则计算出您所选国家/地区商品的用户支付价格（含税），具体请参考[换算规则描述](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-conversion-rule-description-0000001239182363)。
    * 您还可以根据不同国家/地区的商品的价格策略，手动编辑商品价格表中指定国家/地区的价格，保存后将以此价格作为商品在该国家/地区的用户支付价格（含税）。
    * 在使用汇率刷新不同国家/地区商品的用户支付价格（含税）时，如出现币种兑换查无汇率异常场景的警告，则您需要手动填写该国家/地区商品的用户支付价格（含税）。
    * 华为汇率每日刷新，但是不会更改您已经保存的商品价格，如果您需要刷新商品价格，可以手动根据当前最新汇率刷新。
@@ -169,7 +169,7 @@ sync_hash: 9c935820
 
    | 参数 | 说明 |
    | --- | --- |
-   | 汇率换算基准价格 | 商品价格的汇率换算基准价格。目前，支持填入“含税”或“不含税”两种类型的基准价格。  * 含税：汇率换算基准价格中含有税额。 * 不含税：汇率换算基准价格中不含税额。 说明：  系统会根据汇率换算基准价格计算出商品的用户支付价格（含税），具体请参考[换算规则描述](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-conversion-rule-description-0000001239182363)。  由于不同国家/地区的币种不同，系统会根据您输入的汇率换算基准价格进行如下规则的自动调整：  * 通用币种要求国家/地区：支持整数或小数（均保留两位小数）作为输入价格，如输入1.34，则将1.34作为该商品的输入价格。 * 特殊币种要求国家/地区（详见下表）： – 仅支持整数（保留两位小数）的国家/地区，以整数或向上取整的值（均保留两位小数）作为输入价格，如输入5.02，则默认选取6.00作为该商品的输入价格。  – 仅以五分之一为最小单位（保留两位小数）的国家/地区，以整数或向上取符合五分之一要求的数值（均保留两位小数）作为输入价格，如输入1.23，则默认选取1.40作为该商品的输入价格。 |
+   | 汇率换算基准价格 | 商品价格的汇率换算基准价格。目前，支持填入“含税”或“不含税”两种类型的基准价格。  * 含税：汇率换算基准价格中含有税额。 * 不含税：汇率换算基准价格中不含税额。 说明：  系统会根据汇率换算基准价格计算出商品的用户支付价格（含税），具体请参考[换算规则描述](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-conversion-rule-description-0000001239182363)。  由于不同国家/地区的币种不同，系统会根据您输入的汇率换算基准价格进行如下规则的自动调整：  * 通用币种要求国家/地区：支持整数或小数（均保留两位小数）作为输入价格，如输入1.34，则将1.34作为该商品的输入价格。 * 特殊币种要求国家/地区（详见下表）： – 仅支持整数（保留两位小数）的国家/地区，以整数或向上取整的值（均保留两位小数）作为输入价格，如输入5.02，则默认选取6.00作为该商品的输入价格。  – 仅以五分之一为最小单位（保留两位小数）的国家/地区，以整数或向上取符合五分之一要求的数值（均保留两位小数）作为输入价格，如输入1.23，则默认选取1.40作为该商品的输入价格。 |
    | 排序规则 | 国家/地区的排序规则。  * 按字母A-Z顺序排序 * 按地理区域分组排序 |
    | 置顶国家/地区 | 置顶汇率换算国家/地区，方便您查看或编辑商品价格，可选。  * 当国家/地区按字母A-Z顺序排序时，您可以在下拉选项中选择您要置顶的国家/地区。 * 当国家/地区按地理区域分组排序时，您可以在下拉选项中选择您要置顶的区域。 |
 
@@ -198,23 +198,23 @@ sync_hash: 9c935820
    | 19 | 智利 | CLP | 仅支持整数（保留两位小数），如5.00 |
 
 7. 点击“保存”，并在弹框中点击“确定”。
-8. 如需使该商品生效，返回商品列表，点击该商品对应“操作”列的“激活”即可，具体请参考[激活应用内商品](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-deactivating-product-0000001239622347#section8229172719335`)。
+8. 如需使该商品生效，返回商品列表，点击该商品对应“操作”列的“激活”即可，具体请参考[激活应用内商品](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-deactivating-product-0000001239622347#section8229172719335)。
 
 ![](./img/5c5db4aadbb1.png)
 
 * 单个应用创建商品的上限是50000个。
-* 除了在AGC界面可以新增商品，您还可以通过[创建商品](`https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-addproduct-android-0000002171407001`)接口创建单个商品或者通过[批量创建商品](`https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-batchaddproduct-android-0000002171288605`)接口批量创建商品，具体请参见[创建商品](`https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/agcapi-pms-add_product-0000001115868326`)。
+* 除了在AGC界面可以新增商品，您还可以通过[创建商品](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-addproduct-android-0000002171407001)接口创建单个商品或者通过[批量创建商品](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-References/agcapi-batchaddproduct-android-0000002171288605)接口批量创建商品，具体请参见[创建商品](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/agcapi-pms-add_product-0000001115868326)。
 
 ## 批量导入商品
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要导入商品的应用。
 3. 在“运营”页签下的左侧导航栏中，选择“产品运营 &gt; 商品管理”。
 4. 在“商品列表”页签中，点击页面右上角![](./img/a536f1bf23ed.png)下载商品模板，在下载的模板中按要求填写商品信息。
 
    ![](./img/5cf42d006e3d.png)
 
-   “商品模板”中支持填写的国家/地区、语言、币种等商品信息，具体可参见[国家/地区、语言、币种列表](`https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-supported-countries-overview-0000001146718725`)。
+   “商品模板”中支持填写的国家/地区、语言、币种等商品信息，具体可参见[国家/地区、语言、币种列表](https://developer.huawei.com/consumer/cn/doc/distribution/app/agc-help-supported-countries-overview-0000001146718725)。
 
    ![](./img/af5f07ef7418.png)
 
@@ -241,7 +241,7 @@ sync_hash: 9c935820
 * 如分发地未包含中国大陆，“配置虚拟商品库存”入口默认隐藏。
 * 已设置商品营销Deeplink或发货通知地址，则不能再配置虚拟商品库存。
 
-1. 登录[AppGallery Connect](`https://developer.huawei.com/consumer/cn/service/josp/agc/index.html`)，选择“APP与元服务”。
+1. 登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)，选择“APP与元服务”。
 2. 在应用列表中点击需要配置虚拟商品的应用。
 
 3. 在“运营”页签下的左侧导航栏中，选择“产品运营 &gt; 商品管理”。
@@ -284,7 +284,7 @@ sync_hash: 9c935820
 
     ![](./img/415dcadb08ce.png)
 
-11. 上架成功后，页面将跳转至商品营销列表，具体配置步骤请参见[管理商品营销](`/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-managing-product-marketing-0000001198744990)。
+11. 上架成功后，页面将跳转至商品营销列表，具体配置步骤请参见[管理商品营销](/docs/distribute/app-dist/game-center/game-center-operation-0000001239502315/game-center-goods-management-0000001194462390/game-center-managing-product-marketing-0000001198744990)。
 
     ![](./img/1ec61f2fbeff.png)
 

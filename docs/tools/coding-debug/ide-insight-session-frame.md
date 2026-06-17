@@ -15,13 +15,13 @@ sync_hash: 8b85ec85
 
 ![](./img/note_3.0-zh-cn.png)
 
-* 在任务分析窗口中，可通过[快捷键](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-shortcut-key)缩放时间轴、移动时间轴、添加时间标签等。
-* Frame分析支持离线符号解析能力，请参见[离线符号解析](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-time#section186881175012)。
-* Frame分析支持Energy泳道，请参见[定位能耗问题](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-energy#section889733410010)。
+* 在任务分析窗口中，可通过[快捷键](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-shortcut-key)缩放时间轴、移动时间轴、添加时间标签等。
+* Frame分析支持离线符号解析能力，请参见[离线符号解析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-time#section186881175012)。
+* Frame分析支持Energy泳道，请参见[定位能耗问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-profiler-energy#section889733410010)。
 
 #### 查看GPU使用情况
 
-1. 创建Frame分析任务并录制相关数据，操作方法可参考[性能问题定位：深度录制](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording)，或在会话区选择<strong>Open File</strong>，导入历史数据。
+1. 创建Frame分析任务并录制相关数据，操作方法可参考[性能问题定位：深度录制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/deep-recording)，或在会话区选择<strong>Open File</strong>，导入历史数据。
 2. “Frame”泳道显示当前设备的GPU的使用率，将其展开，子泳道显示Render Service侧帧数据和App侧帧数据。
 
    ![](./img/note_3.0-zh-cn.png)
@@ -29,7 +29,7 @@ sync_hash: 8b85ec85
    * 一帧的绘制，一般需要由App侧提交渲染到Render Service侧，然后Render Service侧再提交给硬件进行合成渲染，因此App侧的帧和Render Service侧的帧存在关联的情况。并且可能多个APP侧的帧/同一APP侧的多个帧提交到同一个Render Service侧帧上，出现帧之间的一对多的关联情况。
    * 一帧绘制的期望耗时，与fps的大小有关，一般情况下fps为60，对应的Vsync周期为16.6ms，即App侧/Render Service侧的帧耗时，一般需要在16.6ms以内。App侧帧/Render Service侧帧判断卡顿的标准为帧的实际结束时间晚于帧的期望结束时间。
    * 在“RS Frame”和“App Frame”标签的泳道中，正常完成渲染的帧显示为绿色，出现卡顿的帧显示为红色。
-   * 除“RS Frame”和“App Frame”泳道外的“ArkTS Callstack”、“Callstack”、“CPU Core”等泳道信息，请参考[基础耗时：Time分析](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-time)、[CPU活动分析](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-cpu)。
+   * 除“RS Frame”和“App Frame”泳道外的“ArkTS Callstack”、“Callstack”、“CPU Core”等泳道信息，请参考[基础耗时：Time分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-time)、[CPU活动分析](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-insight-session-cpu)。
 
    ![](./img/zh-cn_image_0000002602186189.png "点击放大")
 
@@ -54,7 +54,7 @@ sync_hash: 8b85ec85
 
 暂不支持在Wearable设备上查看指定Frame页面布局信息。
 
-1. 单击RS Frame泳道或APP Frame泳道中任意一帧，“Details”区域中会展示该帧具体信息。点击<strong>Open Layout</strong>按钮，将在ArkUI Inspector中直接打开相应arkli文件；点击<strong>Download Layout</strong>将arkli文件下载到指定目录，之后可手动导入[ArkUI Inspector](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arkui-inspector)查看页面布局信息。
+1. 单击RS Frame泳道或APP Frame泳道中任意一帧，“Details”区域中会展示该帧具体信息。点击<strong>Open Layout</strong>按钮，将在ArkUI Inspector中直接打开相应arkli文件；点击<strong>Download Layout</strong>将arkli文件下载到指定目录，之后可手动导入[ArkUI Inspector](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-arkui-inspector)查看页面布局信息。
 
    ![](./img/note_3.0-zh-cn.png)
 
@@ -201,4 +201,4 @@ Frame泳道中的App Frame泳道和RS Frame泳道在框选时新增fps标记。R
 
    ![](./img/zh-cn_image_0000002571546656.png "点击放大")
 
-更多性能调优最佳实践，请参考[点击响应时延分析](`https://`developer.huawei.com/consumer/cn/doc/best-practices/bpta-click-to-click-response-optimization)、[点击完成时延分析](`https://`developer.huawei.com/consumer/cn/doc/best-practices/bpta-click-to-complete-delay-analysis)、[帧率问题分析](`https://`developer.huawei.com/consumer/cn/doc/best-practices/bpta-zhenlv)、[Web点击响应时延分析](`https://`developer.huawei.com/consumer/cn/doc/best-practices/bpta-web-click-response-delay-analysis)、[Web加载完成时延分析](`https://`developer.huawei.com/consumer/cn/doc/best-practices/bpta-web-completion-delay-analysis)。
+更多性能调优最佳实践，请参考[点击响应时延分析](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-click-to-click-response-optimization)、[点击完成时延分析](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-click-to-complete-delay-analysis)、[帧率问题分析](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-zhenlv)、[Web点击响应时延分析](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-web-click-response-delay-analysis)、[Web加载完成时延分析](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-web-completion-delay-analysis)。

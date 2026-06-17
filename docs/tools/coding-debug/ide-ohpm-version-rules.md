@@ -11,7 +11,7 @@ upstream_hash: 0b23a80b00fe
 
 # OHPM版本号规则
 
-ohpm管理的三方包的版本号遵循[语义化版本控制](`https://`semver.org/lang/zh-CN/)（SemVer 2.0.0）规则。
+ohpm管理的三方包的版本号遵循[语义化版本控制](https://semver.org/lang/zh-CN/)（SemVer 2.0.0）规则。
 
 #### 版本号格式
 

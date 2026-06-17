@@ -9,11 +9,11 @@ sync_hash: e28a2826
 ---
 # 创建模拟器
 
-有网络环境可参考以下步骤创建模拟器，如果是无网络环境，请查看[离线部署模拟器](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-no-network)。
+有网络环境可参考以下步骤创建模拟器，如果是无网络环境，请查看[离线部署模拟器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-no-network)。
 
 ![](./img/note_3.0-zh-cn.png)
 
-在macOS中，您可能在活动监视器中发现模拟器进程占用的内存超过设置的内存。实际上，活动监视器中的<strong>Memory</strong>并不代表模拟器进程实际使用的物理内存，更多详情请参考[macOS上活动监视器中显示模拟器内存偏高](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-23)。
+在macOS中，您可能在活动监视器中发现模拟器进程占用的内存超过设置的内存。实际上，活动监视器中的<strong>Memory</strong>并不代表模拟器进程实际使用的物理内存，更多详情请参考[macOS上活动监视器中显示模拟器内存偏高](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs/faqs-app-running-23)。
 
 #### 使用预置的模拟器
 
@@ -47,7 +47,7 @@ sync_hash: e28a2826
    ![](./img/zh-cn_image_0000002571545328.png)
 3. 单击<strong>Next</strong>，设置设备相关的参数。
    * <strong>Name</strong>：设置模拟器的名称。
-   * <strong>Screen Profile</strong>：从DevEco Studio 6.0.0 Beta1版本开始，部分设备支持选择预置的机型配置或自定义屏幕配置，具体支持的设备请参考[自定义屏幕配置](`https://`developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-customize-screen-configuration)。可点击下拉框选择预置的机型配置，也可点击<strong>Customize</strong>自定义配置，在自定义配置的情况下可以对屏幕尺寸、分辨率和DPI进行修改，取值范围参考界面提示。
+   * <strong>Screen Profile</strong>：从DevEco Studio 6.0.0 Beta1版本开始，部分设备支持选择预置的机型配置或自定义屏幕配置，具体支持的设备请参考[自定义屏幕配置](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-emulator-customize-screen-configuration)。可点击下拉框选择预置的机型配置，也可点击<strong>Customize</strong>自定义配置，在自定义配置的情况下可以对屏幕尺寸、分辨率和DPI进行修改，取值范围参考界面提示。
      + <strong>Screen size：</strong>屏幕的对角线长度，单位为inch。
      + <strong>Resolution</strong>：分辨率，包括宽度和高度，单位为px。
      + <strong>DPI</strong>：像素密度，DPI 越高，UI组件占用的像素点越多，从而提供更精细的显示效果。
