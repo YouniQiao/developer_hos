@@ -22,3 +22,7 @@ yarn-error.log*
 # --- All split build configs are now tracked in repo ---
 docs-inline-comments/
 scripts/oauth-proxy.js
+
+# Agent & trash
+.hermes/
+.trash/
