@@ -54,8 +54,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars-dev.js'),
           include: [
-            'resources/cross-platform/**',
-            'dev/atomic-dev/**',
+            'distribute/agc/**',
           ],
           routeBasePath: 'docs',
           exclude: ['**/img/**', '**/_category_**'],

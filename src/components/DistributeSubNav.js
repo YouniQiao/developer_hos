@@ -10,7 +10,7 @@ import styles from '@site/src/components/SubNav.module.css';
 const NAV_ITEMS = [
   {
     label: 'AppGallery Connect',
-    path: '/docs/distribute/agc/agc-help-releasenotes-0000002271020145',
+    path: '/docs/distribute/agc/agc-help-introduction-0000002270860209',
     match: '/docs/distribute/agc',
     desc: 'AppGallery Connect 一站式服务平台',
   },
