@@ -51,9 +51,12 @@ jobs:
       - name: Configure nginx
         run: |
           for conf in /etc/nginx/sites-enabled/homs /etc/nginx/sites-enabled/preview; do
-            if [ -f "$conf" ] && ! grep -q "location /mcp" "$conf" 2>/dev/null; then
+            if [ -f "$conf" ]; then
+              # Remove any previous MCP include lines
+              sed -i '/include.*nginx-mcp.conf/d' "$conf"
+              # Add fresh include before closing brace
               sed -i '/^}$/i\    include /opt/mcp-harmonyos/nginx-mcp.conf;' "$conf"
-              echo "MCP proxy added to $(basename $conf)"
+              echo "MCP proxy configured in $(basename $conf)"
             fi
           done
           nginx -t && systemctl reload nginx
