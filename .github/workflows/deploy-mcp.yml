@@ -1,0 +1,48 @@
+name: Deploy MCP Server
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'mcp-server/**'
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, linux, x64]
+    timeout-minutes: 5
+    env:
+      HTTP_PROXY: 'http://127.0.0.1:7890'
+      HTTPS_PROXY: 'http://127.0.0.1:7890'
+
+    steps:
+      - name: Checkout
+        run: |
+          cd /opt/actions-runner/_work/developer_hos/developer_hos
+          git fetch origin master --depth=1
+          git reset --hard origin/master
+
+      - name: Sync MCP code
+        run: |
+          mkdir -p /opt/mcp-harmonyos
+          rsync -a --delete \
+            /opt/actions-runner/_work/developer_hos/developer_hos/mcp-server/ \
+            /opt/mcp-harmonyos/
+
+      - name: Setup venv & install deps
+        run: |
+          python3 -m venv /opt/mcp-harmonyos/venv
+          /opt/mcp-harmonyos/venv/bin/pip install --upgrade pip
+          /opt/mcp-harmonyos/venv/bin/pip install -r /opt/mcp-harmonyos/requirements.txt
+
+      - name: Install systemd service
+        run: |
+          cp /opt/mcp-harmonyos/mcp-harmonyos.service /etc/systemd/system/
+          systemctl daemon-reload
+          systemctl enable mcp-harmonyos
+          systemctl restart mcp-harmonyos
+
+      - name: Verify
+        run: |
+          sleep 2
+          systemctl status mcp-harmonyos --no-pager
+          curl -s http://127.0.0.1:8765/sse 2>&1 | head -5 || echo "SSE endpoint check done"

@@ -1,0 +1,17 @@
+[Unit]
+Description=HarmonyOS Developer Docs MCP Server
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/mcp-harmonyos
+Environment=DOCS_ROOT=/opt/actions-runner/_work/developer_hos/developer_hos/docs
+Environment=MCP_HOST=127.0.0.1
+Environment=MCP_PORT=8765
+ExecStart=/opt/mcp-harmonyos/venv/bin/python /opt/mcp-harmonyos/server.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
