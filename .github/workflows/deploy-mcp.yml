@@ -50,14 +50,14 @@ jobs:
 
       - name: Configure nginx
         run: |
-          NGINX_CONF=/etc/nginx/sites-enabled/homs
-          if ! grep -q "location /mcp" "$NGINX_CONF" 2>/dev/null; then
-            sed -i '/^}$/i\    include /opt/mcp-harmonyos/nginx-mcp.conf;' "$NGINX_CONF"
-            nginx -t && systemctl reload nginx
-            echo "Nginx MCP proxy added"
-          else
-            echo "Nginx MCP proxy already configured"
-          fi
+          for conf in /etc/nginx/sites-enabled/homs /etc/nginx/sites-enabled/preview; do
+            if [ -f "$conf" ] && ! grep -q "location /mcp" "$conf" 2>/dev/null; then
+              sed -i '/^}$/i\    include /opt/mcp-harmonyos/nginx-mcp.conf;' "$conf"
+              echo "MCP proxy added to $(basename $conf)"
+            fi
+          done
+          nginx -t && systemctl reload nginx
+          echo "Nginx reloaded"
 
       - name: Verify
         run: |
