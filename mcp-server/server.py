@@ -11,7 +11,10 @@ from mcp.server.fastmcp import FastMCP
 
 DOCS_ROOT = os.environ.get("DOCS_ROOT", "/opt/actions-runner/_work/developer_hos/developer_hos/docs")
 
-mcp = FastMCP("HarmonyOS Developer Docs")
+MCP_HOST = os.environ.get("MCP_HOST", "127.0.0.1")
+MCP_PORT = int(os.environ.get("MCP_PORT", "8765"))
+
+mcp = FastMCP("HarmonyOS Developer Docs", host=MCP_HOST, port=MCP_PORT)
 
 # ── helpers ────────────────────────────────────────────────
 
@@ -163,9 +166,7 @@ def list_sections() -> str:
 # ── entry ───────────────────────────────────────────────────
 
 def main():
-    host = os.environ.get("MCP_HOST", "0.0.0.0")
-    port = int(os.environ.get("MCP_PORT", "8765"))
-    mcp.run(transport="streamable-http", host=host, port=port)
+    mcp.run(transport="streamable-http")
 
 
 if __name__ == "__main__":
