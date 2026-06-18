@@ -28,11 +28,18 @@ jobs:
             /opt/actions-runner/_work/developer_hos/developer_hos/mcp-server/ \
             /opt/mcp-harmonyos/
 
+      - name: Install system deps
+        run: |
+          apt-get update -qq
+          apt-get install -y -qq python3-venv python3-pip
+
       - name: Setup venv & install deps
         run: |
           python3 -m venv /opt/mcp-harmonyos/venv
-          /opt/mcp-harmonyos/venv/bin/pip install --upgrade pip
-          /opt/mcp-harmonyos/venv/bin/pip install -r /opt/mcp-harmonyos/requirements.txt
+          /opt/mcp-harmonyos/venv/bin/pip install --upgrade pip \
+            -i https://pypi.tuna.tsinghua.edu.cn/simple
+          /opt/mcp-harmonyos/venv/bin/pip install -r /opt/mcp-harmonyos/requirements.txt \
+            -i https://pypi.tuna.tsinghua.edu.cn/simple
 
       - name: Install systemd service
         run: |
