@@ -75,5 +75,6 @@ jobs:
           curl -s http://127.0.0.1:8765/sse 2>&1 | head -5 || echo "SSE endpoint check done"
           echo "=== nginx config ==="
           nginx -t 2>&1 || true
-          ls /etc/nginx/sites-enabled/ 2>/dev/null || ls /etc/nginx/conf.d/ 2>/dev/null
-          grep -r "developer.harmonyos.cool" /etc/nginx/ 2>/dev/null | head -5
+          cat /etc/nginx/sites-enabled/homs 2>/dev/null | head -40
+          echo "==="
+          cat /etc/nginx/sites-enabled/preview 2>/dev/null | head -40
