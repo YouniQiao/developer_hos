@@ -219,6 +219,7 @@ const config = {
             title: 'About',
             items: [
               { label: '博客', to: '/blog' },
+              { label: '留言板', to: '/guestbook' },
             ],
           },
           {
