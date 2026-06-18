@@ -63,10 +63,11 @@ jobs:
         run: |
           sleep 2
           systemctl status mcp-harmonyos --no-pager
-          echo "=== MCP endpoint test ==="
-          for path in "/" "/sse" "/messages/" "/mcp" "/mcp/sse"; do
-            code=$(curl -s --max-time 2 -o /dev/null -w "%{http_code}" "http://127.0.0.1:8765$path" 2>/dev/null || echo "fail")
-            echo "  $path → $code"
-          done
+          echo "=== nginx preview config ==="
+          cat /etc/nginx/sites-enabled/preview
+          echo "=== nginx-mcp.conf ==="
+          cat /opt/mcp-harmonyos/nginx-mcp.conf
+          echo "=== test ==="
+          curl -sv --max-time 3 http://127.0.0.1:8000/mcp 2>&1 | head -20
           echo "---"
-          echo "MCP available at: http://36.134.158.99:8000/mcp/"
+          echo "MCP available at: http://36.134.158.99:8000/mcp"
