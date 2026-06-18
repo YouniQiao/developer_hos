@@ -73,3 +73,7 @@ jobs:
           sleep 2
           systemctl status mcp-harmonyos --no-pager
           curl -s http://127.0.0.1:8765/sse 2>&1 | head -5 || echo "SSE endpoint check done"
+          echo "=== nginx config ==="
+          nginx -t 2>&1 || true
+          ls /etc/nginx/sites-enabled/ 2>/dev/null || ls /etc/nginx/conf.d/ 2>/dev/null
+          grep -r "developer.harmonyos.cool" /etc/nginx/ 2>/dev/null | head -5
