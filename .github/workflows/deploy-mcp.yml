@@ -63,5 +63,10 @@ jobs:
         run: |
           sleep 2
           systemctl status mcp-harmonyos --no-pager
+          echo "=== MCP endpoint test ==="
+          for path in "/" "/sse" "/messages/" "/mcp" "/mcp/sse"; do
+            code=$(curl -s --max-time 2 -o /dev/null -w "%{http_code}" "http://127.0.0.1:8765$path" 2>/dev/null || echo "fail")
+            echo "  $path → $code"
+          done
           echo "---"
-          echo "MCP available at: http://homs.coolfinds.cool/mcp/"
+          echo "MCP available at: http://36.134.158.99:8000/mcp/"
