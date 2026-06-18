@@ -61,7 +61,9 @@ const config = {
           editUrl:
             'https://github.com/YouniQiao/developer_hos/tree/master/',
         },
-        blog: false,
+        blog: {
+          showReadingTime: true,
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
