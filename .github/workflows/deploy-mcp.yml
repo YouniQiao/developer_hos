@@ -52,4 +52,7 @@ jobs:
         run: |
           sleep 2
           systemctl status mcp-harmonyos --no-pager
+          echo "=== journal ==="
+          journalctl -u mcp-harmonyos --no-pager -n 20
+          echo "=== curl ==="
           curl -s http://127.0.0.1:8765/sse 2>&1 | head -5 || echo "SSE endpoint check done"
