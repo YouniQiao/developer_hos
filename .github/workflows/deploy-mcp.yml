@@ -48,33 +48,31 @@ jobs:
           systemctl enable mcp-harmonyos
           systemctl restart mcp-harmonyos
 
+      - name: Configure nginx
+        run: |
+          # Add MCP proxy to the homs site config (homs.coolfinds.cool)
+          NGINX_CONF=/etc/nginx/sites-enabled/homs
+          if ! grep -q "location /mcp" "$NGINX_CONF" 2>/dev/null; then
+            sed -i '/^}$/i\
+            \
+            \    # MCP Server proxy\
+            \    location /mcp/ {\
+            \        proxy_pass http://127.0.0.1:8765/;\
+            \        proxy_http_version 1.1;\
+            \        proxy_set_header Host \$host;\
+            \        proxy_set_header X-Real-IP \$remote_addr;\
+            \        proxy_read_timeout 86400s;\
+            \        proxy_buffering off;\
+            \    }' "$NGINX_CONF"
+            nginx -t && systemctl reload nginx
+            echo "Nginx MCP proxy added"
+          else
+            echo "Nginx MCP proxy already configured"
+          fi
+
       - name: Verify
         run: |
-          systemctl stop mcp-harmonyos 2>/dev/null || true
-          echo "=== test import ==="
-          /opt/mcp-harmonyos/venv/bin/python -c "from mcp.server.fastmcp import FastMCP; print('FastMCP OK')" 2>&1
-          echo "=== inspect run() ==="
-          cat > /tmp/inspect_mcp.py << 'PYEOF'
-          import inspect
-          from mcp.server.fastmcp import FastMCP
-          sig = inspect.signature(FastMCP.run)
-          print('FastMCP.run', sig)
-          sig2 = inspect.signature(FastMCP.__init__)
-          print('FastMCP.__init__', sig2)
-          m = FastMCP('test')
-          print('settings:', type(m.settings))
-          print('settings dir:', [x for x in dir(m.settings) if not x.startswith('_')])
-          PYEOF
-          /opt/mcp-harmonyos/venv/bin/python /tmp/inspect_mcp.py 2>&1
-          echo "=== test run (5s timeout) ==="
-          timeout 5 /opt/mcp-harmonyos/venv/bin/python /opt/mcp-harmonyos/server.py 2>&1 || true
-          echo "=== start service ==="
-          systemctl start mcp-harmonyos
           sleep 2
           systemctl status mcp-harmonyos --no-pager
-          curl -s http://127.0.0.1:8765/sse 2>&1 | head -5 || echo "SSE endpoint check done"
-          echo "=== nginx config ==="
-          nginx -t 2>&1 || true
-          cat /etc/nginx/sites-enabled/homs 2>/dev/null | head -40
-          echo "==="
-          cat /etc/nginx/sites-enabled/preview 2>/dev/null | head -40
+          echo "---"
+          echo "MCP available at: http://homs.coolfinds.cool/mcp/"
