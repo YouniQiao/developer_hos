@@ -1,0 +1,28 @@
+---
+title: "syscap_ndk.h"
+upstream_id: "harmonyos-references/syscap__ndk_8h"
+catalog: "harmonyos-references"
+synced_at: "2026-06-24T20:54:02.016089"
+---
+
+# syscap_ndk.h
+
+#### 概述
+
+查询单个系统能力是否被支持的API。
+
+起始版本：
+
+8
+
+相关模块：
+
+[Init](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/init)
+
+#### 汇总
+
+#### [h2]函数
+
+| 名称 | 描述 |
+| --- | --- |
+| [canIUse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/init#caniuse) (const char *cap) | 查询指定的系统能力是否被支持。 系统能力（SystemCapability，简称SysCap），指操作系统中每一个相对独立的特性。不同的设备对应不同的系统能力集，每个系统能力对应一个或多个API。开发者可根据系统能力来判断是否可以使用某接口。 |

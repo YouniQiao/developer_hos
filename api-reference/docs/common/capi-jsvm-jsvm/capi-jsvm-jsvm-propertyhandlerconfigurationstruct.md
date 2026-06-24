@@ -1,0 +1,126 @@
+---
+title: "JSVM_PropertyHandlerConfigurationStruct"
+upstream_id: "harmonyos-references/capi-jsvm-jsvm-propertyhandlerconfigurationstruct"
+catalog: "harmonyos-references"
+synced_at: "2026-06-24T20:54:03.213347"
+---
+
+# JSVM_PropertyHandlerConfigurationStruct
+
+```
+typedef struct {...} JSVM_PropertyHandlerConfigurationStruct
+```
+
+#### 概述
+
+当执行对象的getter、setter、deleter和enumerator操作时，该结构体中对应的函数回调将会触发。
+
+使用场景： 需要拦截和处理JavaScript对象属性操作的场景，实现动态属性访问控制，构建代理对象或属性监听机制。
+
+解决的问题： 提供了一种机制来拦截和自定义对象的属性操作行为，允许在属性读写删除等操作时执行自定义逻辑。
+
+收益： 增强对象操作的灵活性和可控性，简化属性拦截的实现逻辑。
+
+系统能力： SystemCapability.ArkCompiler.JSVM
+
+起始版本： 12
+
+相关模块： [JSVM](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm)
+
+所在头文件： [jsvm_types.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-types-h)
+
+#### 汇总
+
+#### [h2]成员变量
+
+| 名称 | 描述 |
+| --- | --- |
+| [JSVM_Value](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-jsvm-value--8h) namedPropertyData | 命名属性回调使用的数据。 |
+| [JSVM_Value](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-jsvm-jsvm-value--8h) indexedPropertyData | 索引属性回调使用的数据。 |
+
+#### [h2]回调函数成员
+
+| 名称 | 描述 |
+| --- | --- |
+| [JSVM_Value (JSVM_CDECL* genericNamedPropertyGetterCallback)(JSVM_Env env,JSVM_Value name,JSVM_Value thisArg,JSVM_Value namedPropertyData)](#genericnamedpropertygettercallback) | 通过获取实例对象的命名属性而触发的回调函数。 |
+| [JSVM_Value (JSVM_CDECL* genericNamedPropertySetterCallback)(JSVM_Env env,JSVM_Value name,JSVM_Value property,JSVM_Value thisArg,JSVM_Value namedPropertyData)](#genericnamedpropertysettercallback) | 通过设置实例对象的命名属性而触发的回调函数。 |
+| [JSVM_Value (JSVM_CDECL* genericNamedPropertyDeleterCallback)(JSVM_Env env,JSVM_Value name,JSVM_Value thisArg,JSVM_Value namedPropertyData)](#genericnamedpropertydeletercallback) | 通过删除实例对象的命名属性而触发的回调函数。 |
+| [JSVM_Value (JSVM_CDECL* genericNamedPropertyEnumeratorCallback)(JSVM_Env env,JSVM_Value thisArg,JSVM_Value namedPropertyData)](#genericnamedpropertyenumeratorcallback) | 通过获取对象上的所有命名属性而触发的回调函数。 |
+| [JSVM_Value (JSVM_CDECL* genericIndexedPropertyGetterCallback)(JSVM_Env env,JSVM_Value index,JSVM_Value thisArg,JSVM_Value indexedPropertyData)](#genericindexedpropertygettercallback) | 通过获取实例对象的索引属性而触发的回调函数。 |
+| [JSVM_Value (JSVM_CDECL* genericIndexedPropertySetterCallback)(JSVM_Env env,JSVM_Value index,JSVM_Value property,JSVM_Value thisArg,JSVM_Value indexedPropertyData)](#genericindexedpropertysettercallback) | 通过设置实例对象的索引属性而触发的回调函数。 |
+| [JSVM_Value (JSVM_CDECL* genericIndexedPropertyDeleterCallback)(JSVM_Env env,JSVM_Value index,JSVM_Value thisArg,JSVM_Value indexedPropertyData)](#genericindexedpropertydeletercallback) | 通过删除实例对象的索引属性而触发的回调函数。 |
+| [JSVM_Value (JSVM_CDECL* genericIndexedPropertyEnumeratorCallback)(JSVM_Env env,JSVM_Value thisArg,JSVM_Value indexedPropertyData)](#genericindexedpropertyenumeratorcallback) | 通过获取对象上的所有索引属性而触发的回调函数。 |
+
+#### 回调函数成员说明
+
+#### [h2]genericNamedPropertyGetterCallback()
+
+```
+JSVM_Value (JSVM_CDECL* genericNamedPropertyGetterCallback)(JSVM_Env env,JSVM_Value name,JSVM_Value thisArg,JSVM_Value namedPropertyData)
+```
+ 描述
+
+通过获取实例对象的命名属性而触发的回调函数。
+
+#### [h2]genericNamedPropertySetterCallback()
+
+```
+JSVM_Value (JSVM_CDECL* genericNamedPropertySetterCallback)(JSVM_Env env,JSVM_Value name,JSVM_Value property,JSVM_Value thisArg,JSVM_Value namedPropertyData)
+```
+ 描述
+
+通过设置实例对象的命名属性而触发的回调函数。
+
+#### [h2]genericNamedPropertyDeleterCallback()
+
+```
+JSVM_Value (JSVM_CDECL* genericNamedPropertyDeleterCallback)(JSVM_Env env,JSVM_Value name,JSVM_Value thisArg,JSVM_Value namedPropertyData)
+```
+ 描述
+
+通过删除实例对象的命名属性而触发的回调函数。
+
+#### [h2]genericNamedPropertyEnumeratorCallback()
+
+```
+JSVM_Value (JSVM_CDECL* genericNamedPropertyEnumeratorCallback)(JSVM_Env env,JSVM_Value thisArg,JSVM_Value namedPropertyData)
+```
+ 描述
+
+通过获取对象上的所有命名属性而触发的回调函数。
+
+#### [h2]genericIndexedPropertyGetterCallback()
+
+```
+JSVM_Value (JSVM_CDECL* genericIndexedPropertyGetterCallback)(JSVM_Env env,JSVM_Value index,JSVM_Value thisArg,JSVM_Value indexedPropertyData)
+```
+ 描述
+
+通过获取实例对象的索引属性而触发的回调函数。
+
+#### [h2]genericIndexedPropertySetterCallback()
+
+```
+JSVM_Value (JSVM_CDECL* genericIndexedPropertySetterCallback)(JSVM_Env env,JSVM_Value index,JSVM_Value property,JSVM_Value thisArg,JSVM_Value indexedPropertyData)
+```
+ 描述
+
+通过设置实例对象的索引属性而触发的回调函数。
+
+#### [h2]genericIndexedPropertyDeleterCallback()
+
+```
+JSVM_Value (JSVM_CDECL* genericIndexedPropertyDeleterCallback)(JSVM_Env env,JSVM_Value index,JSVM_Value thisArg,JSVM_Value indexedPropertyData)
+```
+ 描述
+
+通过删除实例对象的索引属性而触发的回调函数。
+
+#### [h2]genericIndexedPropertyEnumeratorCallback()
+
+```
+JSVM_Value (JSVM_CDECL* genericIndexedPropertyEnumeratorCallback)(JSVM_Env env,JSVM_Value thisArg,JSVM_Value indexedPropertyData)
+```
+ 描述
+
+通过获取对象上的所有索引属性而触发的回调函数。
