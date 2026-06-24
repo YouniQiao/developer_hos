@@ -10,7 +10,7 @@ import styles from '@site/src/components/SubNav.module.css';
 const NAV_ITEMS = [
   {
     label: '推广',
-    path: '/docs/monetize/promotion/ads-ggtfzstp-0000002285988928',
+    path: '/docs/monetize/promotion',
     match: '/docs/monetize/promotion',
     desc: '鲸鸿动能广告投放全流程指南',
   },

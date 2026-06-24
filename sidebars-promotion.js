@@ -14,8 +14,6 @@ promotionSidebar: [
 
   items: [
 
-    'monetize/promotion/ads-ggtfzstp-0000002285988928',
-
     'monetize/promotion/ads-ptkx-0000002222366726',
 
     'monetize/promotion/adsxinggongnengsudi-0000001780141116',
