@@ -1,0 +1,27 @@
+[Unit]
+Description=文档同步审批工作台 (sync-panel)
+Documentation=https://sync.developer.harmonyos.cool
+After=network.target
+
+[Service]
+Type=simple
+# 生产环境建议创建专用用户并赋权；此处保持简单，默认以 root 运行。
+# 如需专用用户：先 useradd -r syncpanel，再取消下面两行注释并 chown -R syncpanel /opt/sync-panel
+#User=syncpanel
+#Group=syncpanel
+WorkingDirectory=/opt/sync-panel/backend
+ExecStart=/usr/bin/python3 main.py
+
+# 必改：登录密码
+Environment=SYNC_PANEL_PASSWORD=changeme
+# 飞书机器人 webhook（不配则不发通知）
+Environment=FEISHU_WEBHOOK_URL=
+
+# 如需覆盖 config.py 中的路径，可在此处用 Environment 覆盖（需配合 config.py 读取环境变量）
+# Environment=REPO_DIR=/opt/developer_hos
+
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
