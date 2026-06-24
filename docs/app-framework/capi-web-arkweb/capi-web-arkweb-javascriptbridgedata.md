@@ -1,0 +1,31 @@
+---
+title: "ArkWeb_JavaScriptBridgeData"
+upstream_id: "harmonyos-references/capi-web-arkweb-javascriptbridgedata"
+catalog: "harmonyos-references"
+synced_at: "2026-06-24T20:50:08.950645"
+---
+
+# ArkWeb_JavaScriptBridgeData
+
+```
+typedef struct {...} ArkWeb_JavaScriptBridgeData
+```
+
+#### 概述
+
+定义JavaScript Bridge数据的基础结构。
+
+起始版本： 12
+
+相关模块： [Web](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-web)
+
+所在头文件： [arkweb_type.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-type-h)
+
+#### 汇总
+
+#### [h2]成员变量
+
+| 名称 | 描述 |
+| --- | --- |
+| const uint8_t* buffer | 指向传输数据的指针。仅支持前端传入String和ArrayBuffer类型，其余类型会被json序列化后，以String类型传递。 |
+| size_t size | 传输数据的长度。 |

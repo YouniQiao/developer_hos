@@ -1,0 +1,499 @@
+---
+title: "Interfaces (其他)"
+upstream_id: "harmonyos-references/arkts-apis-image-i"
+catalog: "harmonyos-references"
+synced_at: "2026-06-24T20:52:24.211962"
+---
+
+# Interfaces (其他)
+
+![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 6开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+
+#### PositionArea7+
+
+表示图片指定区域内的数据。
+
+卡片能力： 从API version 12开始，该接口支持在ArkTS卡片中使用。
+
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Multimedia.Image.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| pixels | ArrayBuffer | 否 | 否 | 像素。仅支持BGRA_8888格式的图像像素数据。 |
+| offset | number | 否 | 否 | 偏移量。单位：字节（byte）。 |
+| stride | number | 否 | 否 | 跨距，内存中每行像素所占的空间。单位：字节（byte）。stride >= region.size.width*4。 |
+| region | [Region](#region8) | 否 | 否 | 区域，按照区域读写。写入的区域宽度加X坐标不能大于原图的宽度，写入的区域高度加Y坐标不能大于原图的高度。 |
+
+#### ImageInfo
+
+表示图片信息。
+
+系统能力： SystemCapability.Multimedia.Image.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| size | [Size](#size) | 否 | 否 | 图片大小。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 |
+| density9+ | number | 否 | 否 | 像素密度，单位为ppi。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 |
+| stride11+ | number | 否 | 否 | 跨距，内存中每行像素所占的空间。单位：字节（byte）。stride >= region.size.width*4 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 |
+| pixelFormat12+ | [PixelMapFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#pixelmapformat7) | 否 | 否 | 像素格式。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 |
+| alphaType12+ | [AlphaType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#alphatype9) | 否 | 否 | 透明度。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 |
+| mimeType12+ | string | 否 | 否 | 图片真实格式（MIME type）。 图片解码和图片编码支持格式的范围不同，请避免直接将解码得到的图片真实格式作为图片编码时[PackingOption](#packingoption)的format。 可以使用ImageSource[属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagesource#属性)中的supportedFormats和ImagePacker[属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagepacker#属性)中的supportedFormats查看解码和编码支持的格式范围。 |
+| isHdr12+ | boolean | 否 | 否 | true表示图片为高动态范围（HDR），false表示图片非高动态范围（SDR）。对于[ImageSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagesource)，代表源图片是否为HDR；对于[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)，代表解码后的pixelmap是否为HDR。 |
+
+#### Size
+
+表示图片尺寸。
+
+卡片能力： 从API version 12开始，该接口支持在ArkTS卡片中使用。
+
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Multimedia.Image.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| height | number | 否 | 否 | 输出图片的高，单位：像素（px）。 |
+| width | number | 否 | 否 | 输出图片的宽，单位：像素（px）。 |
+
+#### HdrComposeOptions23+
+
+Picture合成HDR时可配置的参数选项。
+
+模型约束：此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Image.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| desiredPixelFormat | [PixelMapFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#pixelmapformat7) | 否 | 是 | 用于合成图像的像素格式，支持RGBA_1010102、YCBCR_P010和YCRCB_P010格式。 |
+
+#### AuxiliaryPictureInfo13+
+
+表示辅助图图像信息。
+
+系统能力： SystemCapability.Multimedia.Image.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| auxiliaryPictureType | [AuxiliaryPictureType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#auxiliarypicturetype13) | 否 | 否 | 辅助图的图像类型。 |
+| size | [Size](#size) | 否 | 否 | 图片大小。 |
+| rowStride | number | 否 | 否 | 行距。单位为字节（byte）。 |
+| pixelFormat | [PixelMapFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#pixelmapformat7) | 否 | 否 | 像素格式。 |
+| colorSpace | [colorSpaceManager.ColorSpaceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-colorspacemanager#colorspacemanager) | 否 | 否 | 目标色彩空间。 |
+
+#### SourceOptions9+
+
+ImageSource的初始化选项。
+
+卡片能力： 从API version 12开始，该接口支持在ArkTS卡片中使用。
+
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Multimedia.Image.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| sourceDensity | number | 否 | 否 | 图片资源像素密度，单位为ppi。 在解码参数[DecodingOptions](#decodingoptions7)未设置desiredSize的前提下，当前参数SourceOptions.sourceDensity与DecodingOptions.fitDensity非零时将对解码输出的pixelmap进行缩放。 缩放后宽计算公式如下(高同理)：(width * fitDensity + (sourceDensity >> 1)) / sourceDensity。 |
+| sourcePixelFormat | [PixelMapFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#pixelmapformat7) | 否 | 是 | 图片像素格式，默认值为UNKNOWN。 |
+| sourceSize | [Size](#size) | 否 | 是 | 图像像素大小，默认值为空。 |
+
+#### InitializationOptions8+
+
+PixelMap的初始化选项。
+
+系统能力： SystemCapability.Multimedia.Image.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| alphaType9+ | [AlphaType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#alphatype9) | 否 | 是 | 透明度。默认值为IMAGE_ALPHA_TYPE_PREMUL。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 |
+| editable | boolean | 否 | 是 | 图像像素是否可被编辑。true表示可被编辑，false表示不可被编辑。设为false时，可提升图像的渲染和传输性能。默认值为false。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 |
+| srcPixelFormat12+ | [PixelMapFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#pixelmapformat7) | 否 | 是 | 传入的buffer数据的像素格式。默认值为BGRA_8888。 |
+| pixelFormat | [PixelMapFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#pixelmapformat7) | 否 | 是 | 生成的pixelMap的像素格式。默认值为RGBA_8888。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 |
+| scaleMode9+ | [ScaleMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#scalemode9) | 否 | 是 | 缩放模式。默认值为0。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 |
+| size | [Size](#size) | 否 | 否 | 创建图片大小。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 |
+
+#### DecodingOptions7+
+
+图像解码设置选项。
+
+系统能力： SystemCapability.Multimedia.Image.ImageSource
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| sampleSize | number | 否 | 是 | 缩略图采样大小，默认值为1。当前只能取1。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 |
+| rotate | number | 否 | 是 | 旋转角度。单位为角度（deg）。默认值为0。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 |
+| editable | boolean | 否 | 是 | 像素是否可被编辑。true表示可被编辑，false表示不可被编辑，默认值为false。 当取值为false时，可提升图片的渲染和传输性能，但是图片不可被二次编辑。例如，writePixels操作将失败。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 |
+| desiredSize | [Size](#size) | 否 | 是 | 期望输出大小，必须为正整数，若与原尺寸比例不一致，则会进行拉伸/缩放到指定尺寸，默认为原始尺寸。 注意：若解码接口同时传入了desiredSize参数与desiredRegion参数，需进一步传入cropAndScaleStrategy参数指定缩放与裁剪的先后顺序，推荐设置CROP_FIRST。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 |
+| desiredRegion | [Region](#region8) | 否 | 是 | 解码图像中由Region指定的矩形区域，当原始图像很大而只需要解码图像的一部分时，可以设置该参数，有助于提升性能，默认为原始大小。 注意：若解码接口同时传入了desiredSize参数与desiredRegion参数，需进一步传入cropAndScaleStrategy参数指定缩放与裁剪的先后顺序，推荐设置CROP_FIRST。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 |
+| desiredPixelFormat | [PixelMapFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#pixelmapformat7) | 否 | 是 | 解码的像素格式。默认值为RGBA_8888。仅支持设置：RGBA_8888、BGRA_8888和RGB_565。有透明通道图片格式不支持设置RGB_565，如PNG、GIF、ICO和WEBP。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 |
+| index | number | 否 | 是 | 解码图片序号。默认值为0，表示第一张图片。当取值为N时，表示第N+1张图片。单帧图片场景中index取值只能为0，动图等多帧图片场景中index的取值范围为：[0, (帧数-1)]。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 |
+| fitDensity9+ | number | 否 | 是 | 图像像素密度，单位为ppi。默认值为0。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 |
+| desiredColorSpace11+ | [colorSpaceManager.ColorSpaceManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-colorspacemanager#colorspacemanager) | 否 | 是 | 目标色彩空间。默认值为UNKNOWN。 |
+| desiredDynamicRange12+ | [DecodingDynamicRange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#decodingdynamicrange12) | 否 | 是 | 目标动态范围，默认值为SDR。 通过[CreateIncrementalSource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-f#imagecreateincrementalsource9)创建的imagesource不支持设置此属性，默认解码为SDR内容。 如果平台不支持HDR，设置无效，默认解码为SDR内容。 |
+| cropAndScaleStrategy18+ | [CropAndScaleStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#cropandscalestrategy18) | 否 | 是 | 解码参数如果同时设置desiredRegion与desiredSize，由此决定裁剪与缩放操作的先后策略。 仅支持设置：SCALE_FIRST、CROP_FIRST。 |
+
+#### DecodingOptionsForPicture13+
+
+图像解码设置选项。
+
+系统能力： SystemCapability.Multimedia.Image.ImageSource
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| desiredAuxiliaryPictures | Array | 否 | 否 | 设置AuxiliaryPicture类型，当未指定或传入空的Array时，系统会解码所有可用的AuxiliaryPicture类型。 如果不希望解码任何辅助图，可以直接解码为PixelMap，使用PixelMap创建仅包含主图的Picture。 |
+| desiredSizeForMainPixelMap24+ | [Size](#size) | 否 | 是 | 期望输出主图大小（必须为正整数），默认为主图原始尺寸，单位为像素（px）。 若主图原始尺寸与指定尺寸不一致，则会进行拉伸/缩放到指定尺寸。 辅助图的宽度与高度均与主图按照同比例进行相应拉伸/缩放。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| desiredPixelFormat24+ | [PixelMapFormat](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#pixelmapformat7) | 否 | 是 | 解码的像素格式。默认值为RGBA_8888。 仅支持设置：RGBA_8888、BGRA_8888、RGB_565、NV12及NV21。 当设置其他不支持的像素格式时，返回解码失败。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+
+#### DecodingOptionsForThumbnail
+
+缩略图解码参数选项。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Image.ImageSource
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| generateThumbnailIfAbsent | boolean | 否 | 是 | 指定图像无缩略图时是否生成缩略图。true表示生成，false表示不生成。默认值为true。 当图片文件中无缩略图且generateThumbnailIfAbsent为false时，返回undefined（抛出错误码[7700303 图片不包含缩略图数据](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-image#section7700303-图片不包含缩略图数据)）。 |
+| maxGeneratedPixelDimension | number | 否 | 是 | 用于指定生成缩略图的最大边长（宽和高中较大的那一边），较短的一边会根据长边的缩放比例进行缩放。此参数仅在generateThumbnailIfAbsent设置为true时生效。 该值应为整数，默认值为512。生成后的缩略图，宽和高都会限制在maxGeneratedPixelDimension以内。 若按该参数计算后，缩略图的宽或高小于1像素（取整后为0），则不会生成缩略图。 单位为像素（px）。 |
+
+#### Region8+
+
+表示区域信息。
+
+卡片能力： 从API version 12开始，该接口支持在ArkTS卡片中使用。
+
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
+
+系统能力： SystemCapability.Multimedia.Image.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| size7+ | [Size](#size) | 否 | 否 | 区域大小。 |
+| x7+ | number | 否 | 否 | 区域左上角横坐标。单位为像素（px）。 |
+| y7+ | number | 否 | 否 | 区域左上角纵坐标。单位为像素（px）。 |
+
+#### PackingOption
+
+表示图片编码选项。
+
+系统能力： SystemCapability.Multimedia.Image.ImagePacker
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| format | string | 否 | 否 | 目标格式。 - 当[输入为ImageSource或PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-encoding)时，支持"image/jpeg"、"image/webp"、"image/png"和"image/heic（或者image/heif）"12+、"image/sdr_astc_4x4"18+、"image/sdr_sut_superfast_4x4"18+（不同硬件设备支持情况不同）、"image/hdr_astc_4x4"20+。 - 当[输入为Picture](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/image-picture-encoding)时，仅支持"image/jpeg"和"image/heic（或者image/heif）"12+。 - gif图片编码需要输入多个PixelMap，并指定format为"image/gif"，使用[packToDataFromPixelmapSequence](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagepacker#packtodatafrompixelmapsequence18)或[packToFileFromPixelmapSequence](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagepacker#packtofilefrompixelmapsequence18)接口进行编码。 **说明：** 因为jpeg不支持透明通道，若使用带透明通道的数据编码jpeg格式，透明色将变为黑色。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| quality | number | 否 | 否 | 1. 编码中设定输出图片质量的参数，该参数仅对JPEG图片和HEIF图片生效。取值范围：[0, 100]。0质量最低，100质量最高，质量越高生成图片所占空间越大。WebP、PNG等图片均为无损编码。 2.sdr_astc_4x4编码中，可以设定输出图片质量的参数，可选参数：92、85。 3. sut编码中，设定输出图片质量可选参数：92。 4. （API version 20支持）hdr_astc_4x4编码中，可以设定输出图片质量的参数，可选参数：85。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| bufferSize9+ | number | 否 | 是 | 接收编码数据的缓冲区大小，单位为Byte。如果不设置大小，默认为25M。如果编码图片超过25M，需要指定大小。bufferSize需大于编码后图片大小。使用[packToFile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-imagepacker#packtofile11)不受此参数限制。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| desiredDynamicRange12+ | [PackingDynamicRange](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#packingdynamicrange12) | 否 | 是 | 目标动态范围。默认值为SDR。 |
+| needsPackProperties12+ | boolean | 否 | 是 | 是否需要编码图片属性信息，例如EXIF。true表示需要，false表示不需要。默认值为false。 |
+| maxEmbedThumbnailDimension | number | 否 | 是 | 用于指定编码过程中生成缩略图的最大边长（宽和高中较大的那一边），较短的一边会根据长边的缩放比例进行缩放。此参数仅在needsPackProperties设置为true时有效。 该值应为整数，默认值为0。 若未指定此参数，或根据该尺寸计算出生成的缩略图宽/高为0，则编码过程中不会生成缩略图。 单位为像素（px）。 **起始版本：** 26.0.0 **模型约束：** 此接口仅可在Stage模型下使用。 |
+
+#### PackingOptionsForSequence18+
+
+描述动图编码参数的选项。
+
+系统能力： SystemCapability.Multimedia.Image.ImagePacker
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| frameCount | number | 否 | 否 | GIF编码中指定的帧数。 |
+| delayTimeList | Array | 否 | 否 | GIF编码中设定每帧输出图像的延迟时间，取值需大于0。 - 单位为10毫秒（ms）。例如，取值为10时，实际单帧延迟是100毫秒。 - 如果长度小于frameCount，不足的部分将使用delayTimeList中的最后一个值进行填充。 |
+| disposalTypes | Array | 否 | 是 | GIF编码中设定每帧输出图像的帧过渡模式，如果长度小于frameCount，不足的部分将使用disposalTypes中的最后一个值进行填充，可取值如下： - 0：不需要任何操作。 - 1：保持图形不变。 - 2：恢复背景色。 - 3：恢复到之前的状态。 |
+| loopCount | number | 否 | 是 | 表示在GIF编码中输出图片循环播放次数，取值范围为[0，65535]。 0表示无限循环；若无此字段，则表示不循环播放。 |
+
+#### ImagePropertyOptions11+
+
+表示查询图片属性的索引。
+
+系统能力： SystemCapability.Multimedia.Image.ImageSource
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| index | number | 否 | 是 | 图片序号。默认值为0。 |
+| defaultValue | string | 否 | 是 | 默认属性值。默认值为空。 |
+
+#### Component9+
+
+描述图像颜色分量。
+
+系统能力： SystemCapability.Multimedia.Image.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| componentType | [ComponentType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#componenttype9) | 是 | 否 | 组件类型。 |
+| rowStride | number | 是 | 否 | 行距。单位为字节（Byte）。读取相机预览流数据时，需要按stride进行读取，使用详情请参考[相机预览花屏解决方案](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-deal-stride-solution)。 |
+| pixelStride | number | 是 | 否 | 像素间距。单位为字节（Byte）。 |
+| byteBuffer | ArrayBuffer | 是 | 否 | 组件缓冲区。 |
+
+#### HdrStaticMetadata12+
+
+静态元数据值，[HdrMetadataKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#hdrmetadatakey12)中HDR_STATIC_METADATA关键字对应的值。
+
+系统能力： SystemCapability.Multimedia.Image.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| displayPrimariesX | Array | 否 | 否 | 归一化后显示设备三基色的X坐标，数组的长度为3，以0.00002为单位，范围[0.0, 1.0]。 |
+| displayPrimariesY | Array | 否 | 否 | 归一化后显示设备三基色的Y坐标，数组的长度为3，以0.00002为单位，范围[0.0, 1.0]。 |
+| whitePointX | number | 否 | 否 | 归一化后白点值的X坐标，以0.00002为单位，范围[0.0, 1.0]。 |
+| whitePointY | number | 否 | 否 | 归一化后白点值的Y坐标，以0.00002为单位，范围[0.0, 1.0]。 |
+| maxLuminance | number | 否 | 否 | 图像主监视器最大亮度。单位为尼特（nit），最大值为65535。 |
+| minLuminance | number | 否 | 否 | 图像主监视器最小亮度。单位为尼特（nit），实际值 = 存储值 × 0.0001，最大值为6.5535。 |
+| maxContentLightLevel | number | 否 | 否 | 显示内容的最大亮度。单位为尼特（nit），最大值为65535。 |
+| maxFrameAverageLightLevel | number | 否 | 否 | 显示内容的最大平均亮度。单位为尼特（nit），最大值为65535。 |
+
+#### GainmapChannel12+
+
+Gainmap图单个通道的数据内容，参考ISO 21496-1。
+
+系统能力： SystemCapability.Multimedia.Image.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| gainmapMax | number | 否 | 否 | 增强图像的最大值，参考ISO 21496-1。 |
+| gainmapMin | number | 否 | 否 | 增强图像的最小值，参考ISO 21496-1。 |
+| gamma | number | 否 | 否 | gamma值，参考ISO 21496-1。 |
+| baseOffset | number | 否 | 否 | 基础图的偏移，参考ISO 21496-1。 |
+| alternateOffset | number | 否 | 否 | 提取的可选择图像偏移量，参考ISO 21496-1。 |
+
+#### ImageMetadata23+
+
+图像的元数据集。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Image.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| exifMetadata | [ExifMetadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-exifmetadata) | 否 | 是 | Exif元数据。 |
+| makerNoteHuaweiMetadata | [MakerNoteHuaweiMetadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-makernotehuaweimetadata) | 否 | 是 | 来自Huawei相机的照片元数据。 |
+| heifsMetadata | [HeifsMetadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-heifsmetadata) | 否 | 是 | HEIF序列图像元数据类，用于存储图像的元数据。 |
+| webPMetadata24+ | [WebPMetadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-webpmetadata) | 否 | 是 | WebP图像元数据类，用于存储图像的元数据。 |
+| dngMetadata24+ | [DngMetadata](#dngmetadata24) | 否 | 是 | DNG图像元数据。 |
+| gifMetadata | [GifMetadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-gifmetadata) | 否 | 是 | GIF图像元数据。 **起始版本：** 26.0.0 |
+| tiffMetadata | [TiffMetadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-tiffmetadata) | 否 | 是 | TIFF图像元数据。 **起始版本：** 26.0.0 |
+| jfifMetadata | [JfifMetadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-jfifmetadata) | 否 | 是 | JFIF图像元数据。 **起始版本：** 26.0.0 |
+| pngMetadata | [PngMetadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pngmetadata) | 否 | 是 | PNG图像元数据。 **起始版本：** 26.0.0 |
+| xmpMetadata | [XMPMetadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-xmpmetadata) | 否 | 是 | XMP元数据。 **起始版本：** 26.0.0 |
+| avisMetadata | [AvisMetadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-avismetadata) | 否 | 是 | AVIS图像元数据。 **起始版本：** 26.0.0 |
+
+#### DngMetadata24+
+
+Dng图像元数据类，用于存储图像的元数据。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Image.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| dngVersion | number[] | 是 | 是 | DNG图片的版本号。 |
+| dngBackwardVersion | number[] | 是 | 是 | DNG文件向后兼容的最低版本号。 |
+| uniqueCameraModel | string | 是 | 是 | 相机的唯一型号标识，用于区分不同设备。 |
+| localizedCameraModel | string | 是 | 是 | 本地化后的相机型号名称。 |
+| cfaPlaneColor | number[] | 是 | 是 | CFA（Color Filter Array）各平面的颜色通道定义。 |
+| cfaLayout | number | 是 | 是 | CFA（Color Filter Array）布局类型。 |
+| linearizationTable | number[] | 是 | 是 | 线性化查找表，用于将原始传感器值映射为线性光强度。 |
+| blackLevelRepeatDim | number[] | 是 | 是 | 黑电平重复维度。 |
+| blackLevel | number[] | 是 | 是 | 零光照下的编码电平。 |
+| blackLevelDeltaH | number[] | 是 | 是 | 水平方向黑电平校正增量。 |
+| blackLevelDeltaV | number[] | 是 | 是 | 垂直方向黑电平校正增量。 |
+| whiteLevel | number[] | 是 | 是 | 白电平，表示传感器最大有效输出。 |
+| defaultScale | number[] | 是 | 是 | 默认缩放比例。格式为[水平缩放比例, 垂直缩放比例]。 |
+| defaultCropOrigin | number[] | 是 | 是 | 默认裁剪区域的左上角坐标（x, y）。 |
+| defaultCropSize | number[] | 是 | 是 | 默认裁剪区域的宽度和高度。 |
+| colorMatrix1 | number[] | 是 | 是 | 第一校准光源下的色彩变换矩阵。 |
+| colorMatrix2 | number[] | 是 | 是 | 第二校准光源下的色彩变换矩阵。 |
+| cameraCalibration1 | number[] | 是 | 是 | 第一校准光源下的相机校准矩阵。 |
+| cameraCalibration2 | number[] | 是 | 是 | 第二校准光源下的相机校准矩阵。 |
+| reductionMatrix1 | number[] | 是 | 是 | 第一校准光源下的降维矩阵。 |
+| reductionMatrix2 | number[] | 是 | 是 | 第二校准光源下的降维矩阵。 |
+| analogBalance | number[] | 是 | 是 | 模拟增益平衡系数。 |
+| asShotNeutral | number[] | 是 | 是 | 拍摄时的中性白点。 |
+| asShotWhiteXY | number[] | 是 | 是 | 拍摄时白点的CIE（1931色彩空间） x-y色度坐标。 |
+| baselineExposure | number | 是 | 是 | 基准曝光补偿值，单位：EV。 |
+| baselineNoise | number | 是 | 是 | 基准噪声水平。 |
+| baselineSharpness | number | 是 | 是 | 基准锐度增益。 |
+| bayerGreenSplit | number | 是 | 是 | Bayer图像中两个绿色通道的分离程度。 |
+| linearResponseLimit | number | 是 | 是 | 线性响应上限。 |
+| cameraSerialNumber | string | 是 | 是 | 相机序列号。 |
+| lensInfo | number[] | 是 | 是 | 镜头信息。 |
+| chromaBlurRadius | number | 是 | 是 | 色度模糊半径，单位为像素（px）。 |
+| antiAliasStrength | number | 是 | 是 | 抗锯齿滤波器强度。 |
+| shadowScale | number | 是 | 是 | 阴影区域缩放因子。 |
+| dngPrivateData | ArrayBuffer | 是 | 是 | 厂商私有数据块。 |
+| makerNoteSafety | boolean | 是 | 是 | EXIF MakerNote是否安全可保留。true表示安全，false表示不安全。 |
+| calibrationIlluminant1 | number | 是 | 是 | 第一校准光源类型。 |
+| calibrationIlluminant2 | number | 是 | 是 | 第二校准光源类型。 |
+| bestQualityScale | number | 是 | 是 | 最佳画质缩放比例。 |
+| rawDataUniqueID | string | 是 | 是 | 原始图像数据的唯一标识符。 |
+| originalRawFileName | string | 是 | 是 | 原始RAW文件名。 |
+| originalRawFileData | ArrayBuffer | 是 | 是 | 原始RAW文件的完整数据。 |
+| activeArea | number[] | 是 | 是 | 有效图像区域。 |
+| maskedAreas | number[] | 是 | 是 | 被遮蔽区域列表。 |
+| asShotICCProfile | ArrayBuffer | 是 | 是 | 拍摄时使用的ICC色彩配置文件。 |
+| asShotPreProfileMatrix | number[] | 是 | 是 | 应用ICC配置文件前的预变换矩阵。 |
+| currentICCProfile | ArrayBuffer | 是 | 是 | 当前使用的ICC色彩配置文件。 |
+| currentPreProfileMatrix | number[] | 是 | 是 | 当前ICC配置文件前的预变换矩阵。 |
+| colorimetricReference | number | 是 | 是 | 色度参考标准。 |
+| cameraCalibrationSignature | string | 是 | 是 | 相机校准签名。 |
+| profileCalibrationSignature | string | 是 | 是 | 配置文件校准签名。 |
+| extraCameraProfiles | number[] | 是 | 是 | 额外相机配置文件索引列表。 |
+| asShotProfileName | string | 是 | 是 | 拍摄时使用的配置文件名称。 |
+| noiseReductionApplied | number | 是 | 是 | 已应用的降噪强度级别。 |
+| profileName | string | 是 | 是 | 色彩配置文件名称。 |
+| profileHueSatMapDims | number[] | 是 | 是 | 色调/饱和度映射表维度。 |
+| profileHueSatMapData1 | number[] | 是 | 是 | 第一组色调/饱和度映射表数据。 |
+| profileHueSatMapData2 | number[] | 是 | 是 | 第二组色调/饱和度映射表数据。 |
+| profileToneCurve | number[] | 是 | 是 | 配置文件色调曲线。 |
+| profileEmbedPolicy | number | 是 | 是 | 配置文件嵌入策略。 |
+| profileCopyright | string | 是 | 是 | 配置文件版权信息。 |
+| forwardMatrix1 | number[] | 是 | 是 | 第一前向变换矩阵。 |
+| forwardMatrix2 | number[] | 是 | 是 | 第二前向变换矩阵。 |
+| previewApplicationName | string | 是 | 是 | 预览图生成应用程序名称。 |
+| previewApplicationVersion | string | 是 | 是 | 预览图生成应用程序版本。 |
+| previewSettingsName | string | 是 | 是 | 预览图处理设置名称。 |
+| previewSettingsDigest | string | 是 | 是 | 预览图设置的MD5摘要。 |
+| previewColorSpace | number | 是 | 是 | 预览图色彩空间。 |
+| previewDateTime | string | 是 | 是 | 预览图生成时间。 |
+| rawImageDigest | string | 是 | 是 | 原始图像数据的MD5摘要。 |
+| originalRawFileDigest | string | 是 | 是 | 原始RAW文件数据的MD5摘要。 |
+| subTileBlockSize | number[] | 是 | 是 | 图像分块存储，定义块的长和宽。 |
+| rowInterleaveFactor | number | 是 | 是 | 行交织因子。 |
+| profileLookTableDims | number[] | 是 | 是 | ProfileLookTableData的维度。 |
+| profileLookTableData | number[] | 是 | 是 | 色彩表数据。 |
+| opcodeList1 | ArrayBuffer | 是 | 是 | 第一操作码列表。 |
+| opcodeList2 | ArrayBuffer | 是 | 是 | 第二操作码列表。 |
+| opcodeList3 | ArrayBuffer | 是 | 是 | 第三操作码列表。 |
+| noiseProfile | number[] | 是 | 是 | 噪声剖面参数。 |
+| originalDefaultFinalSize | number[] | 是 | 是 | 原始默认最终输出尺寸。 |
+| originalBestQualityFinalSize | number[] | 是 | 是 | 原始最佳画质输出尺寸。 |
+| originalDefaultCropSize | number[] | 是 | 是 | 原始默认裁剪尺寸。 |
+| profileHueSatMapEncoding | number | 是 | 是 | 色调/饱和度映射表编码方式。 |
+| profileLookTableEncoding | number | 是 | 是 | 色彩表编码方式。 |
+| baselineExposureOffset | number | 是 | 是 | 基准曝光偏移量，单位：EV。 |
+| defaultBlackRender | number | 是 | 是 | 默认黑场渲染方式。 |
+| newRawImageDigest | string | 是 | 是 | 修改后原始图像数据的新MD5摘要。 |
+| rawToPreviewGain | number | 是 | 是 | 主RAW图与预览图之间的增益比。 |
+| defaultUserCrop | number[] | 是 | 是 | 默认用户裁剪区域。 |
+
+#### HdrGainmapMetadata12+
+
+Gainmap使用的元数据值，[HdrMetadataKey](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#hdrmetadatakey12)中HDR_GAINMAP_METADATA关键字对应的值，参考ISO 21496-1。
+
+系统能力： SystemCapability.Multimedia.Image.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| writerVersion | number | 否 | 否 | 元数据编写器使用的版本。 |
+| miniVersion | number | 否 | 否 | 元数据解析需要理解的最小版本。 |
+| gainmapChannelCount | number | 否 | 否 | Gainmap的颜色通道数，值为3时RGB通道的元数据值不同，值为1时各通道元数据值相同，参考ISO 21496-1。 |
+| useBaseColorFlag | boolean | 否 | 否 | 是否使用基础图的色彩空间，参考ISO 21496-1。true表示是，false表示否。 |
+| baseHeadroom | number | 否 | 否 | 基础图提亮比，参考ISO 21496-1。 |
+| alternateHeadroom | number | 否 | 否 | 提取的可选择图像提亮比，参考ISO 21496-1。 |
+| channels | Array | 否 | 否 | 各通道的数据，长度为3，参考ISO 21496-1。 |
+
+#### ImageReceiverOptions23+
+
+ImageReceiver的初始化选项。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Image.ImageReceiver
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| size | [Size](#size) | 否 | 是 | 图像的大小，包括宽与高，且值都大于0，单位为像素（px）。 该参数不会影响接收到的图片大小，实际返回大小由生产者决定，如相机。 |
+| capacity | number | 否 | 是 | 可同时访问的最大图像数量。该值必须为正整数，且小于或等于64张。 该参数仅作为期望值，实际capacity由设备硬件决定。 |
+
+#### ImageBufferData23+
+
+保存图像缓冲区数据的指针、不同颜色分量的行间距与像素间距信息。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Image.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| rowStride | number[] | 是 | 否 | 颜色分量的行间距，单位为字节（byte）。 对于编码后的图片如JPEG，该属性无意义。 读取相机预览流数据时，需要按stride进行读取，使用详情请参考[相机预览花屏解决方案](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-deal-stride-solution)。 |
+| pixelStride | number[] | 是 | 否 | 颜色分量的像素间距，单位为字节（byte）。 对于编码后的图片如JPEG，该属性无意义。 |
+| byteBuffer | ArrayBuffer | 是 | 否 | 图像缓冲区。 |
+
+#### ImageRawData24+
+
+图像的RAW数据。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Image.ImageSource
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| buffer | ArrayBuffer | 否 | 否 | 图像缓冲区。 |
+| bitsPerPixel | number | 否 | 否 | 每个像素在缓冲区数据中实际占用的位数，单位为比特（bit）。 |
+
+#### XMPTag
+
+表示XMP标签信息。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Image.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| xmpNamespace | [XMPNamespace](#xmpnamespace) | 否 | 否 | XMP命名空间。 |
+| name | string | 否 | 否 | XMP标签名称。 |
+| type | [XMPTagType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-e#xmptagtype) | 否 | 否 | XMP标签类型。 |
+| value | string | 否 | 是 | XMP标签值。 |
+
+#### XMPNamespace
+
+表示XMP命名空间。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Image.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| uri | string | 否 | 否 | XMP命名空间URI。 |
+| prefix | string | 否 | 否 | XMP命名空间前缀。 |
+
+#### XMPEnumerateOptions
+
+表示XMP枚举选项。
+
+起始版本： 26.0.0
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.Multimedia.Image.Core
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| isRecursive | boolean | 否 | 是 | 表示是否进行递归遍历。 true表示进行递归遍历。false表示仅遍历直接子节点。默认为false。 |
+| onlyQualifier | boolean | 否 | 是 | 表示是否仅遍历限定符节点。 true表示仅遍历限定符节点。false表示遍历所有节点。默认为false。 |
+
+#### GetImagePropertyOptions(deprecated)
+
+表示查询图片属性的索引。
+
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 11开始废弃，建议使用[ImagePropertyOptions](#imagepropertyoptions11)代替。
+
+系统能力： SystemCapability.Multimedia.Image.ImageSource
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| index | number | 否 | 是 | 图片序号。默认值为0。 |
+| defaultValue | string | 否 | 是 | 默认属性值。默认值为空。 |

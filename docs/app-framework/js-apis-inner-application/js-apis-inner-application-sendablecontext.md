@@ -1,0 +1,29 @@
+---
+title: "SendableContext"
+upstream_id: "harmonyos-references/js-apis-inner-application-sendablecontext"
+catalog: "harmonyos-references"
+synced_at: "2026-06-24T20:46:54.480574"
+---
+
+# SendableContext
+
+SendableContext符合[Sendable协议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable#sendable协议)，继承自[lang.ISendable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkts-lang#langisendable)。
+
+![](./img/note_3.0-zh-cn.png)
+
+- 本模块首批接口从API version 12 开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
+- 本模块接口仅可在Stage模型下使用。
+
+#### 导入模块
+
+```
+import { sendableContextManager } from '@kit.AbilityKit';
+```
+
+#### SendableContext
+
+SendableContext符合[Sendable协议](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-sendable#sendable协议)，可以与Context对象相互转换，用于ArkTS并发实例间（包括主线程、TaskPool&Worker工作线程）的数据传递。
+
+系统能力：SystemCapability.Ability.AbilityRuntime.Core
+
+元服务API：从API version 12开始，该接口支持在元服务中使用。

@@ -1,0 +1,65 @@
+---
+title: "焦点错误码"
+upstream_id: "harmonyos-references/errorcode-focus"
+catalog: "harmonyos-references"
+synced_at: "2026-06-24T20:50:00.311021"
+---
+
+# 焦点错误码
+
+![](./img/note_3.0-zh-cn.png) 以下仅介绍本模块特有错误码，通用错误码请参考[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+
+#### 150001 节点无法获得焦点
+
+错误信息
+
+the component cannot be focused.
+
+错误描述
+
+当前节点无法获得焦点。
+
+可能原因
+
+节点默认无法获焦、开发者通过focusable等属性方法设置等。
+
+处理步骤
+
+检查当前节点是否支持获焦、是否设置focusable为true。
+
+#### 150002 祖先节点无法获得焦点
+
+错误信息
+
+This component has an unfocusable ancestor.
+
+错误描述
+
+当前节点对应的祖先节点中存在无法获焦节点。
+
+可能原因
+
+祖先节点默认无法获焦、开发者通过focusable等属性方法设置等。
+
+处理步骤
+
+检查祖先节点是否支持获焦、是否设置focusable为true。
+
+#### 150003 节点不存在
+
+错误信息
+
+the component is not on tree or does not exist.
+
+错误描述
+
+传入的id指向不存在、未挂树或者不可见节点。
+
+可能原因
+
+- 传入id错误、节点已经被销毁等。
+- 对不具有获焦能力的组件请求焦点。具体组件可查询[组件获焦能力说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-common-events-focus-event#组件获焦能力说明)。
+
+处理步骤
+
+使用正确的id或节点。
