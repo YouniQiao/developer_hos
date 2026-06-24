@@ -9,6 +9,9 @@ from pathlib import Path
 from mcp.server.fastmcp import FastMCP
 
 DOCS_ROOT = os.environ.get("DOCS_ROOT", "/opt/actions-runner/_work/developer_hos/developer_hos/docs")
+API_REFS_ROOT = os.environ.get("API_REFS_ROOT", "/opt/harmonyos-api-refs/docs")
+
+DOCS_ROOTS = [DOCS_ROOT, API_REFS_ROOT]
 
 MCP_HOST = os.environ.get("MCP_HOST", "127.0.0.1")
 MCP_PORT = int(os.environ.get("MCP_PORT", "8765"))
@@ -18,17 +21,45 @@ mcp = FastMCP("HarmonyOS Developer Docs", host=MCP_HOST, port=MCP_PORT)
 # ── helpers ────────────────────────────────────────────────
 
 def _md_files() -> list[Path]:
-    """Return all .md / .mdx files under DOCS_ROOT."""
-    root = Path(DOCS_ROOT)
-    if not root.exists():
-        return []
-    files = list(root.rglob("*.md")) + list(root.rglob("*.mdx"))
+    """Return all .md / .mdx files under all DOCS_ROOTS."""
+    files = []
+    for root_dir in DOCS_ROOTS:
+        root = Path(root_dir)
+        if root.exists():
+            files.extend(list(root.rglob("*.md")) + list(root.rglob("*.mdx")))
     return sorted(files)
 
 
 def _relative(p: Path) -> str:
-    """Path relative to DOCS_ROOT, without extension."""
-    return str(p.relative_to(DOCS_ROOT)).rsplit(".", 1)[0]
+    """Path relative to its DOCS_ROOT, without extension, prefixed by source."""
+    for root_dir in DOCS_ROOTS:
+        rp = Path(root_dir)
+        try:
+            rel = str(p.relative_to(rp)).rsplit(".", 1)[0]
+            # 标记来源
+            source = "api" if str(rp) == str(Path(API_REFS_ROOT)) else "guide"
+            return f"[{source}] {rel}"
+        except ValueError:
+            pass
+    return str(p).rsplit(".", 1)[0]
+
+
+def _find_doc(path: str) -> Path | None:
+    """在多个 DOCS_ROOTS 中查找文档。"""
+    for root_dir in DOCS_ROOTS:
+        full = Path(root_dir) / f"{path}.md"
+        if full.exists():
+            return full
+        full = Path(root_dir) / f"{path}.mdx"
+        if full.exists():
+            return full
+    # 模糊匹配
+    for root_dir in DOCS_ROOTS:
+        candidates = list(Path(root_dir).rglob(f"{path}*.md")) + \
+                      list(Path(root_dir).rglob(f"{path}*.mdx"))
+        if candidates:
+            return candidates[0]
+    return None
 
 
 def _read_stripped(p: Path) -> str:
@@ -140,16 +171,9 @@ def get_doc(path: str, chunk: int = 0) -> str:
         path: 文档相对路径（不含扩展名），如 'distribute/agc/agc-help-introduction'
         chunk: 分块编号。0=返回全文，1=第一块，N=第N块
     """
-    full = Path(DOCS_ROOT) / f"{path}.md"
-    if not full.exists():
-        full = Path(DOCS_ROOT) / f"{path}.mdx"
-    if not full.exists():
-        candidates = list(Path(DOCS_ROOT).rglob(f"{path}*.md")) + \
-                      list(Path(DOCS_ROOT).rglob(f"{path}*.mdx"))
-        if candidates:
-            full = candidates[0]
-        else:
-            return f"未找到文档: {path}"
+    full = _find_doc(path)
+    if not full:
+        return f"未找到文档: {path}"
 
     content = _read_stripped(full)
     if not content:
@@ -184,16 +208,9 @@ def get_doc_outline(path: str) -> str:
     Args:
         path: 文档相对路径（不含扩展名），如 'distribute/agc/agc-help-introduction'
     """
-    full = Path(DOCS_ROOT) / f"{path}.md"
-    if not full.exists():
-        full = Path(DOCS_ROOT) / f"{path}.mdx"
-    if not full.exists():
-        candidates = list(Path(DOCS_ROOT).rglob(f"{path}*.md")) + \
-                      list(Path(DOCS_ROOT).rglob(f"{path}*.mdx"))
-        if candidates:
-            full = candidates[0]
-        else:
-            return f"未找到文档: {path}"
+    full = _find_doc(path)
+    if not full:
+        return f"未找到文档: {path}"
 
     content = _read_stripped(full)
     if not content:
@@ -214,27 +231,31 @@ def get_doc_outline(path: str) -> str:
 
 @mcp.tool()
 def list_sections() -> str:
-    """列出文档的目录结构（一级和二级目录）。"""
-    root = Path(DOCS_ROOT)
-    if not root.exists():
-        return "错误：文档目录不存在。"
-
-    sections = sorted(
-        [d for d in root.iterdir() if d.is_dir() and not d.name.startswith(".")],
-        key=lambda d: d.name,
-    )
-
+    """列出文档的目录结构（一级和二级目录），标注来源（指南/API参考）。"""
     out = ["# HarmonyOS 开发者文档目录\n"]
-    for sec in sections:
-        subs = sorted(
-            [d for d in sec.iterdir() if d.is_dir()],
+    
+    for root_dir in DOCS_ROOTS:
+        root = Path(root_dir)
+        if not root.exists():
+            continue
+        
+        source = "API参考" if str(root) == str(Path(API_REFS_ROOT)) else "指南"
+        sections = sorted(
+            [d for d in root.iterdir() if d.is_dir() and not d.name.startswith(".")],
             key=lambda d: d.name,
         )
-        out.append(f"## {sec.name} ({len(subs)} 个子目录)")
-        for sub in subs:
-            md_count = len(list(sub.rglob("*.md"))) + len(list(sub.rglob("*.mdx")))
-            out.append(f"  - {sub.name} ({md_count} 篇文档)")
-        out.append("")
+        
+        out.append(f"## {source}\n")
+        for sec in sections:
+            subs = sorted(
+                [d for d in sec.iterdir() if d.is_dir()],
+                key=lambda d: d.name,
+            )
+            out.append(f"### {sec.name} ({len(subs)} 个子目录)")
+            for sub in subs:
+                md_count = len(list(sub.rglob("*.md"))) + len(list(sub.rglob("*.mdx")))
+                out.append(f"  - {sub.name} ({md_count} 篇文档)")
+            out.append("")
 
     return "\n".join(out)
 
