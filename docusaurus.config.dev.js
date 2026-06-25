@@ -127,7 +127,7 @@ const config = {
           {
             label: '推广与变现',
             type: 'dropdown',
-            to: '/docs/monetize/promotion',
+            to: '/docs/monetize/promotion/ads-ptkx-0000002222366726',
             className: 'mega-dropdown',
             items: [
               {
