@@ -102,6 +102,13 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      algolia: {
+        appId: 'WZ5X8NC59R',
+        apiKey: '3d8abdfeecf7798f80951def220eed3d',
+        indexName: 'developer_hos',
+        contextualSearch: true,
+        searchParameters: {},
+      },
       colorMode: {
         defaultMode: 'dark',
       },
@@ -176,6 +183,10 @@ const config = {
                 className: 'mega-dropdown',
               },
             ],
+          },
+          {
+            type: 'search',
+            position: 'right',
           },
           {
             to: '/docs/tools/coding-debug/ide-tools-overview',
