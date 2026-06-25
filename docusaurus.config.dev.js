@@ -186,6 +186,12 @@ const config = {
             ],
           },
           {
+            title: 'AI',
+            items: [
+              { label: 'MCP Server', to: '/blog/harmonyos-docs-mcp' },
+            ],
+          },
+          {
             title: 'About',
             items: [
               { label: '博客', to: '/blog' },
