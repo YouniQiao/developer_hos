@@ -178,20 +178,6 @@ const config = {
             ],
           },
           {
-            href: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-references/development-intro-api',
-            label: 'API参考',
-            position: 'right',
-            target: '_blank',
-            rel: 'noopener noreferrer',
-          },
-          {
-            href: 'https://arkts.cool/',
-            label: 'ArkTS',
-            position: 'right',
-            target: '_blank',
-            rel: 'noopener noreferrer',
-          },
-          {
             to: '/docs/tools/coding-debug/ide-tools-overview',
             label: '工具',
             position: 'right',
@@ -228,6 +214,14 @@ const config = {
               {
                 label: 'HarmonyOS开发者官网',
                 href: 'https://developer.huawei.com/consumer/cn/',
+              },
+              {
+                label: 'API参考',
+                href: 'https://developer.huawei.com/consumer/cn/doc/harmonyos-references/development-intro-api',
+              },
+              {
+                label: 'ArkTS语言',
+                href: 'https://arkts.cool',
               },
             ],
           },
