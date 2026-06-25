@@ -185,12 +185,12 @@ const config = {
             ],
           },
           {
-            type: 'search',
+            to: '/docs/tools/coding-debug/ide-tools-overview',
+            label: '工具',
             position: 'right',
           },
           {
-            to: '/docs/tools/coding-debug/ide-tools-overview',
-            label: '工具',
+            type: 'search',
             position: 'right',
           },
           {

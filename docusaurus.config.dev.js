@@ -158,12 +158,12 @@ const config = {
             ],
           },
           {
-            type: 'search',
+            to: '/docs/tools/cli-tools/command-line-tools-overview',
+            label: '工具',
             position: 'right',
           },
           {
-            to: '/docs/tools/cli-tools/command-line-tools-overview',
-            label: '工具',
+            type: 'search',
             position: 'right',
           },
           {
