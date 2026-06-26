@@ -13,11 +13,12 @@ HarmonyOS已面向开发者发布的所有版本清单如下：
 
 | 原始API版本 | IDE版本 | 发布时间 | 新开发应用 | 已开发应用 |
 | --- | --- | --- | --- | --- |
-| [6.1.1(24) Beta1](/docs/dev/release-notes/overview-611) | DevEco Studio 6.1.1 Beta1 | 2026/04/30发布Beta版本 | 按需使用。  如需体验尝鲜6.1.1(24)带来的新增特性，可使用此版本创建应用工程。 | 按需升级。  如需体验尝鲜6.1.1(24)带来的新增特性，可使用此版本创建应用工程。 |
-| [6.1.0(23)](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/overview-610) | DevEco Studio 6.1.0 Release | 2026/04/20 | 按需使用。  如需体验尝鲜6.1.0(23)带来的新增特性，可使用此版本创建应用工程。 | 按需升级。  如需体验尝鲜6.1.0(23)带来的新增特性，可使用此版本创建应用工程。 |
-| [6.0.2(22)](/docs/dev/release-notes/overview-602) | DevEco Studio 6.0.2 Release | 2026/01/21 | 按需使用。  如需体验尝鲜6.0.2(22)带来的新增特性，可使用此版本创建应用工程。 | 按需升级。  如需体验尝鲜6.0.2(22)带来的新增特性，可使用此版本创建应用工程。 |
-| [6.0.1(21)](/docs/dev/release-notes/overview-601) | DevEco Studio 6.0.1 Release | 2025/11/20 | 按需使用。  如需体验尝鲜6.0.1(21)带来的新增特性，可使用此版本创建应用工程。 | 按需升级。  如需体验尝鲜6.0.1(21)带来的新增特性，可使用此版本创建应用工程。 |
-| [6.0.0(20)](/docs/dev/release-notes/overview-600) | DevEco Studio 6.0.0 Release | 2025/09/25 | 推荐使用。 | 推荐升级。 |
+| [26.0.0 Beta1](/docs/dev/release-notes/harmonyos-2600) | DevEco Studio 26.0.0 Beta1 | 2026/06/12 | 按需使用。  如需体验尝鲜26.0.0 Beta1带来的新增特性，可使用此版本创建应用工程。 | 按需升级。  如需体验尝鲜26.0.0 Beta1带来的新增特性，可使用此版本创建应用工程。 |
+| [6.1.1(24)](/docs/dev/release-notes/harmonyos-611) | DevEco Studio 6.1.1 Release | 2026/05/26 | 按需使用。  如需体验尝鲜6.1.1(24)带来的新增特性，可使用此版本创建应用工程。 | 按需升级。  如需体验尝鲜6.1.1(24)带来的新增特性，可使用此版本创建应用工程。 |
+| [6.1.0(23)](/docs/dev/release-notes/harmonyos-610) | DevEco Studio 6.1.0 Release | 2026/04/20 | 按需使用。  如需体验尝鲜6.1.0(23)带来的新增特性，可使用此版本创建应用工程。 | 按需升级。  如需体验尝鲜6.1.0(23)带来的新增特性，可使用此版本创建应用工程。 |
+| [6.0.2(22)](/docs/dev/release-notes/harmonyos-602) | DevEco Studio 6.0.2 Release | 2026/01/21 | 按需使用。  如需体验尝鲜6.0.2(22)带来的新增特性，可使用此版本创建应用工程。 | 按需升级。  如需体验尝鲜6.0.2(22)带来的新增特性，可使用此版本创建应用工程。 |
+| [6.0.1(21)](/docs/dev/release-notes/harmonyos-601) | DevEco Studio 6.0.1 Release | 2025/11/20 | 按需使用。  如需体验尝鲜6.0.1(21)带来的新增特性，可使用此版本创建应用工程。 | 按需升级。  如需体验尝鲜6.0.1(21)带来的新增特性，可使用此版本创建应用工程。 |
+| [6.0.0(20)](/docs/dev/release-notes/harmonyos-600) | DevEco Studio 6.0.0 Release | 2025/09/25 | 推荐使用。 | 推荐升级。 |
 | [5.1.1(19)](https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/511) | DevEco Studio 5.1.1 Release | 2025/06/30 | NA | 如需升级，建议直接升级至6.0.0(20)。 |
 | [5.1.0(18)](/docs/dev/release-notes/overview-510) | DevEco Studio 5.1.0 Release | 2025/06/11 | NA | 如需升级，建议直接升级至6.0.0(20)。 |
 | [5.0.5(17)](/docs/dev/release-notes/overview-505-release) | DevEco Studio 5.0.5 Release | 2025/05/14 | NA | 如需升级，建议直接升级至6.0.0(20)。 |
