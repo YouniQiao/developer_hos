@@ -28,7 +28,8 @@ interface FilterState {
 
 const VERSIONS = [
   { slug: '7001', label: '26.0.0 Beta1' },
-  { slug: '611', label: '6.1.1(24)' },
+  { slug: '6112', label: '6.1.1(24) Release' },
+  { slug: '6111', label: '6.1.1(24) Beta1' },
   { slug: '610', label: '6.1.0(23)' },
   { slug: '602', label: '6.0.2(22)' },
   { slug: '601', label: '6.0.1(21)' },

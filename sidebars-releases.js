@@ -2,6 +2,7 @@
 /** @type {import("@docusaurus/plugin-content-docs").SidebarsConfig} */
 const releaseNotesSidebar = [
   "dev/release-notes/overview",
+  "dev/release-notes/harmonyos-2600",
   "dev/release-notes/harmonyos-611",
   "dev/release-notes/harmonyos-610",
   "dev/release-notes/harmonyos-602",
