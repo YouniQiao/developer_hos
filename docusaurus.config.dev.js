@@ -54,7 +54,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars-dev.js'),
           include: [
-            'distribute/agc/**',
+            'dev/release-notes/**',
           ],
           routeBasePath: 'docs',
           exclude: ['**/img/**', '**/_category_**'],

@@ -27,6 +27,7 @@ interface FilterState {
 // ---- Constants ----
 
 const VERSIONS = [
+  { slug: '7001', label: '26.0.0 Beta1' },
   { slug: '611', label: '6.1.1(24)' },
   { slug: '610', label: '6.1.0(23)' },
   { slug: '602', label: '6.0.2(22)' },
@@ -56,7 +57,7 @@ function ApiDiffSearch(): JSX.Element {
   const [page, setPage] = useState(0);
 
   const [filters, setFilters] = useState<FilterState>({
-    version: '611',
+    version: '7001',
     search: '',
     kit: '',
     operation: '',

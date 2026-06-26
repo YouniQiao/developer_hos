@@ -43,6 +43,7 @@ HEADERS = {
 
 # Known version suffixes and their display names
 VERSIONS = [
+    ("7001", "26.0.0 Beta1"),
     ("611", "6.1.1(24)"),
     ("610", "6.1.0(23)"),
     ("602", "6.0.2(22)"),
@@ -83,10 +84,23 @@ def get_catalog_tree(catalog_name, object_id):
 
 
 def find_node(tree, name):
-    """Recursively find a node by nodeName (partial match)."""
+    """Recursively find a node by nodeName (exact match, then partial match)."""
+    # First try exact match
+    result = None
+    for node in tree:
+        if node.get("nodeName", "") == name:
+            return node
+    # Then try partial match
     for node in tree:
         if name in node.get("nodeName", ""):
-            return node
+            # But for version search, prefer shorter node names over long ones
+            # to avoid matching "26.0.0 Beta1引入的API" when looking for "26.0.0"
+            if result is None or len(node.get("nodeName", "")) < len(result.get("nodeName", "")):
+                result = node
+    if result:
+        return result
+    # Recursive for partial matches
+    for node in tree:
         children = node.get("children", [])
         if children:
             found = find_node(children, name)
@@ -190,7 +204,15 @@ def scrape_version(version_slug, version_name):
 
     # Find the specific version node first
     major_minor = version_name.split("(")[0].strip()  # "6.1.1", "6.0.2", etc.
-    version_node = find_node(full_tree, major_minor)
+    
+    # For versions like "26.0.0 Beta1", strip beta suffix first for exact catalog match
+    version_node = None
+    fallback = re.sub(r'\s*(Beta|Preview|RC)\d*.*$', '', version_name).strip()
+    if fallback != version_name:
+        version_node = find_node(full_tree, fallback)
+    
+    if not version_node:
+        version_node = find_node(full_tree, major_minor)
     
     if not version_node:
         print(f"  ⚠️  Version node not found for {version_name}")
@@ -198,7 +220,7 @@ def scrape_version(version_slug, version_name):
 
     # From the version node, find the API diff section
     apidiff_node = None
-    
+
     def find_apidiff(nodes):
         nonlocal apidiff_node
         for node in nodes:

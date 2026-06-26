@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 5173,
+    allowedHosts: ['sync.local.harmonyos.cool', 'local.harmonyos.cool'],
     proxy: {
       '/api': {
         target: 'http://localhost:8766',

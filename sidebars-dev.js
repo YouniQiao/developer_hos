@@ -3,7 +3,7 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  agcSidebar: require('./sidebars-agc.js').agcSidebar,
+  releaseNotesSidebar: require('./sidebars-releases.js').releaseNotesSidebar,
 };
 
 module.exports = sidebars;

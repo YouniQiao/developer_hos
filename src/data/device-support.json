@@ -1,6 +1,48 @@
 {
-  "updateTime": "2026-04-30",
+  "updateTime": "2026-06-08",
   "devices": [
+    {
+      "v": "26.0.0 Beta1",
+      "t": "Phone",
+      "n": "Mate 80 Pro",
+      "m": "SGT-AL00 SGT-AL50"
+    },
+    {
+      "v": "26.0.0 Beta1",
+      "t": "Phone",
+      "n": "Pura 90 Pro Max",
+      "m": "SCA-AL00"
+    },
+    {
+      "v": "26.0.0 Beta1",
+      "t": "Phone",
+      "n": "Mate X7",
+      "m": "DEL-AL10"
+    },
+    {
+      "v": "26.0.0 Beta1",
+      "t": "Phone",
+      "n": "Mate XTs 非凡大师",
+      "m": "GRL-AL20"
+    },
+    {
+      "v": "26.0.0 Beta1",
+      "t": "Phone",
+      "n": "Pura X",
+      "m": "VDE-AL00"
+    },
+    {
+      "v": "26.0.0 Beta1",
+      "t": "Phone",
+      "n": "Pura X 典藏版",
+      "m": "VDE-AL10"
+    },
+    {
+      "v": "26.0.0 Beta1",
+      "t": "Phone",
+      "n": "nova 15 pro",
+      "m": "KLE-AL00U"
+    },
     {
       "v": "6.1.0(23)",
       "t": "Phone",

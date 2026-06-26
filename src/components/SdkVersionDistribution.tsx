@@ -11,23 +11,24 @@ interface VersionData {
 }
 
 const DATA: VersionData[] = [
-  { version: '6.1.0(24) Beta', percentage: 0.08, display: '0.08%', isDominant: false },
-  { version: '6.1.0(23)', percentage: 84.94, display: '84.94%', isDominant: true },
-  { version: '6.0.2(22)', percentage: 12.61, display: '12.61%', isDominant: false },
-  { version: '6.0.1(21)', percentage: 0.95, display: '0.95%', isDominant: false },
-  { version: '6.0.0(20)', percentage: 0.27, display: '0.27%', isDominant: false },
-  { version: '5.1.1(19)', percentage: 0.28, display: '0.28%', isDominant: false },
-  { version: '5.1.0(18)', percentage: 0.13, display: '0.13%', isDominant: false },
-  { version: '5.0.5(17)', percentage: 0.54, display: '0.54%', isDominant: false },
-  { version: '5.0.4(16)', percentage: 0.01, display: '0.01%', isDominant: false },
+  { version: '26.0.0 Beta1', percentage: 0.17, display: '0.17%', isDominant: false },
+  { version: '6.1.1(24)', percentage: 34.40, display: '34.40%', isDominant: false },
+  { version: '6.1.0(23)', percentage: 60.20, display: '60.20%', isDominant: true },
+  { version: '6.0.2(22)', percentage: 3.67, display: '3.67%', isDominant: false },
+  { version: '6.0.1(21)', percentage: 0.72, display: '0.72%', isDominant: false },
+  { version: '6.0.0(20)', percentage: 0.08, display: '0.08%', isDominant: false },
+  { version: '5.1.1(19)', percentage: 0.21, display: '0.21%', isDominant: false },
+  { version: '5.1.0(18)', percentage: 0.11, display: '0.11%', isDominant: false },
+  { version: '5.0.5(17)', percentage: 0.42, display: '0.42%', isDominant: false },
+  { version: '5.0.4(16)', percentage: 0.00, display: '0.00%', isDominant: false },
   { version: '5.0.3(15)', percentage: -1, display: '<0.01%', isDominant: false },
   { version: '5.0.2(14)', percentage: -1, display: '<0.01%', isDominant: false },
   { version: '5.0.1(13)', percentage: 0, display: '0%', isDominant: false },
   { version: '5.0.0(12)', percentage: 0, display: '0%', isDominant: false },
 ];
 
-const UPDATE_TIME = '2026-05-19 17:15';
-const DATA_DATE = '2026年5月17日';
+const UPDATE_TIME = '2026-06-22 10:31';
+const DATA_DATE = '2026年6月19日';
 const SOURCE_URL = 'https://developer.huawei.com/consumer/cn/doc/harmonyos-releases/sdk-version-percentage';
 
 // ---- Color palette ----
@@ -45,6 +46,7 @@ const COLORS = [
   '#f97316',
   '#84cc16',
   '#a855f7',
+  '#dc2626',
   '#64748b',
 ];
 
@@ -108,7 +110,7 @@ function PieChart() {
         })}
         <circle cx={cx} cy={cy} r={r * 0.55} fill="rgb(25, 25, 25)" />
         <text x={cx} y={cy - 8} textAnchor="middle" style={{ fill: '#3b82f6', fontSize: '22px', fontWeight: 700 }}>
-          84.94%
+          60.20%
         </text>
         <text x={cx} y={cy + 16} textAnchor="middle" style={{ fill: '#999', fontSize: '12px' }}>
           6.1.0(23)
