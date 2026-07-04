@@ -1,9 +1,10 @@
 // @ts-check
-// Dev sidebar — AGC 分发文档预览。
+// Dev sidebar — 设计指南预览。
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  releaseNotesSidebar: require('./sidebars-releases.js').releaseNotesSidebar,
+  designSidebar: require('./sidebars-design.js').designSidebar,
+  appCompatibilitySidebar: require('./sidebars-compatibility.js').appCompatibilitySidebar,
 };
 
 module.exports = sidebars;

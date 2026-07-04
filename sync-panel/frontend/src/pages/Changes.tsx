@@ -80,12 +80,16 @@ export default function Changes() {
   const [refreshKey, setRefreshKey] = useState(0)
   const [sectionOptions, setSectionOptions] = useState<{ value: string; label: string }[]>([{ value: '', label: '全部板块' }])
 
-  // 加载板块选项
+  // 加载板块选项（随 type 筛选变化）
   useEffect(() => {
     let cancelled = false
     async function loadSections() {
       try {
-        const res = await api.get<{ value: string; count: number }[]>('/api/changes/sections')
+        const params = new URLSearchParams()
+        if (type) params.set('type', type)
+        const qs = params.toString()
+        const url = `/api/changes/sections${qs ? '?' + qs : ''}`
+        const res = await api.get<{ value: string; count: number }[]>(url)
         if (cancelled) return
         const opts = [{ value: '', label: '全部板块' }, ...res.map((s) => ({ value: s.value, label: `${s.value} (${s.count})` }))]
         setSectionOptions(opts)
@@ -95,7 +99,7 @@ export default function Changes() {
     }
     loadSections()
     return () => { cancelled = true }
-  }, [refreshKey])
+  }, [type, refreshKey])
 
   // keep input synced when URL search changes externally
   useEffect(() => {

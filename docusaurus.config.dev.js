@@ -1,5 +1,5 @@
 // @ts-check
-// Dev Docusaurus config — 快速构建预览（仅入门与准备 + 多设备开发）。
+// Dev Docusaurus config — 快速构建预览（设计指南）。
 // Usage: npx docusaurus build --config docusaurus.config.dev.js --no-minify
 
 const { themes } = require('prism-react-renderer');
@@ -54,7 +54,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars-dev.js'),
           include: [
-            'dev/release-notes/**',
+            'design/**',
           ],
           routeBasePath: 'docs',
           exclude: ['**/img/**', '**/_category_**'],

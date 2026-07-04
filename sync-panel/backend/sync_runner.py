@@ -299,12 +299,14 @@ def _detect_added_deleted(registry):
         if nht:
             same_cat = cat_title_index.get((nht, cat), [])
             if same_cat:
-                # 从 oid 提取 slug 前缀（去掉尾部数字 ID）
+                # 同 catalog 内唯一同名 → 直接匹配，无需 slug 验证
+                if len(same_cat) == 1:
+                    matched.add(same_cat[0])
+                    continue
+                # 多个同名 → 从 oid 提取 slug 前缀做消歧
                 oid_slug = re.sub(r"-\d+$", "", oid).lower()
                 has_alpha = any(c.isalpha() for c in oid_slug)
-
                 if has_alpha:
-                    # oid 含字母 → 用完整路径 slug 做 suffix 精确匹配
                     slug_matches = []
                     for uid in same_cat:
                         uid_full_slug = uid.replace("/", "-").lower()
@@ -314,11 +316,7 @@ def _detect_added_deleted(registry):
                         matched.add(slug_matches[0])
                         continue
                     # 0 或多个匹配 → 不确定，作为新增候选
-                elif len(same_cat) == 1:
-                    # oid 纯数字，同 catalog 内唯一同名 → 匹配
-                    matched.add(same_cat[0])
-                    continue
-                # 其他情况 → 新增候选（excluded 节点除外）
+                # has_alpha=False 且多个同名 → 无法消歧，作为新增候选
         if excluded:
             continue
         # 未匹配 → 新增候选

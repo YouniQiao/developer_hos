@@ -186,13 +186,19 @@ def list_changes_api(
 
 
 @app.get("/api/changes/sections")
-def list_sections():
-    """返回所有变更中出现的板块列表（按数量降序）。"""
+def list_sections(change_type: Optional[str] = Query(default=None, alias="type")):
+    """返回所有变更中出现的板块列表（按数量降序），可选按 type 筛选。"""
     with models.get_db() as conn:
+        where = "WHERE section IS NOT NULL AND section != ''"
+        args = []
+        if change_type:
+            where += " AND change_type = ?"
+            args.append(change_type)
         rows = conn.execute(
-            "SELECT section, COUNT(*) AS cnt "
-            "FROM changes WHERE section IS NOT NULL AND section != '' "
-            "GROUP BY section ORDER BY cnt DESC"
+            f"SELECT section, COUNT(*) AS cnt "
+            f"FROM changes {where} "
+            f"GROUP BY section ORDER BY cnt DESC",
+            args,
         ).fetchall()
     return [{"value": r["section"], "count": r["cnt"]} for r in rows]
 
