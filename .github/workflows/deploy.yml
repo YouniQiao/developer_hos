@@ -28,14 +28,37 @@ jobs:
               https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git .
           fi
 
+      - name: Check if already built
+        id: cache-sha
+        run: |
+          SHA=$(git rev-parse HEAD)
+          echo "sha=$SHA" >> $GITHUB_OUTPUT
+          echo "Current HEAD: $SHA"
+
+      - name: Restore build cache
+        id: restore-build
+        uses: actions/cache@v4
+        with:
+          path: .build-cache-marker
+          key: built-master-${{ steps.cache-sha.outputs.sha }}
+
+      - name: Skip if no changes
+        if: steps.restore-build.outputs.cache-hit == 'true'
+        run: |
+          echo "📭 No new commits since last successful build. Skipping."
+          exit 0
+
       - uses: actions/setup-node@v4
+        if: steps.restore-build.outputs.cache-hit != 'true'
         with:
           node-version: '24'
 
       - name: Install deps
+        if: steps.restore-build.outputs.cache-hit != 'true'
         run: npm ci
 
       - name: Setup swap
+        if: steps.restore-build.outputs.cache-hit != 'true'
         run: |
           sudo swapoff /swapfile 2>/dev/null || true
           sudo rm -f /swapfile
@@ -45,13 +68,18 @@ jobs:
           sudo swapon /swapfile
 
       - name: Build
+        if: steps.restore-build.outputs.cache-hit != 'true'
         run: npx docusaurus build --no-minify
         env:
           NODE_OPTIONS: '--max-old-space-size=16384'
           DOCUSAURUS_SSG_CONCURRENCY: '32'
 
+      - name: Mark as built
+        if: steps.restore-build.outputs.cache-hit != 'true' && success()
+        run: echo "${{ steps.cache-sha.outputs.sha }}" > .build-cache-marker
+
       - name: Sync to preview site (local Nginx)
-        if: success()
+        if: steps.restore-build.outputs.cache-hit != 'true' && success()
         run: |
           echo "📦 同步构建产物到预览站..."
           rm -rf /var/www/preview/*
@@ -59,6 +87,7 @@ jobs:
           echo "✅ 预览站已更新: http://$(hostname -I | awk '{print $1}')"
 
       - name: Deploy to Netlify
+        if: steps.restore-build.outputs.cache-hit != 'true' && success()
         run: |
           if ! command -v netlify &> /dev/null; then
             npm install -g netlify-cli
