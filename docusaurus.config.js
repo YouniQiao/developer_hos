@@ -112,6 +112,14 @@ const config = {
       colorMode: {
         defaultMode: 'dark',
       },
+      announcementBar: {
+        id: 'unofficial_notice',
+        content:
+          '本站非鸿蒙开发者官方文档，内容更新可能滞后，建议访问<a href="https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-guide" target="_blank" rel="noopener noreferrer">华为开发者官网</a>。',
+        backgroundColor: '#1b3a5c',
+        textColor: '#d0dfee',
+        isCloseable: true,
+      },
       navbar: {
         title: 'Developer',
         logo: {

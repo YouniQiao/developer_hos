@@ -1,6 +1,8 @@
 name: Deploy to Netlify
 
 on:
+  schedule:
+    - cron: '0 16 * * *'  # 每天北京时间凌晨 12:00 (UTC 16:00)
   workflow_dispatch:
 
 concurrency:
