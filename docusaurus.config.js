@@ -251,7 +251,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} HarmonyOS Developer. Built with Docusaurus. Theme from Dyte.`,
+        copyright: `<span class="footer__disclaimer">⚠ 本站非鸿蒙开发者官方文档，内容更新可能滞后，建议访问<a href="https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-dev-guide" target="_blank" rel="noopener noreferrer">华为开发者官网</a>。</span><br />Copyright © ${new Date().getFullYear()} HarmonyOS Developer. Built with Docusaurus. Theme from Dyte.`,
       },
       prism: {
         theme: lightCodeTheme,

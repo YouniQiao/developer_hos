@@ -360,6 +360,13 @@ nav.menu {
   @apply text-text-400;
 }
 
+.footer__disclaimer {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 8px;
+  @apply text-text-400;
+}
+
 .footer__row {
   display: flex;
 }
