@@ -65,10 +65,41 @@
   setupAll();
   fixIndexLinks();
 
-  // 监听 DOM 变化（处理 React hydration 替换 DOM）
+  // 动态计算 mega menu 的 top 位置（公告栏显隐时自动适配）
+  function updateMegaMenuTop() {
+    var announceBar = document.querySelector('[class*="announcementBar"]');
+    var navbar = document.querySelector('.navbar');
+    var total = 0;
+    // 公告栏可见才计入高度
+    if (announceBar && getComputedStyle(announceBar).display !== 'none') {
+      total += announceBar.offsetHeight;
+    }
+    if (navbar) {
+      total += navbar.offsetHeight;
+    }
+    if (total > 0) {
+      document.documentElement.style.setProperty('--mega-menu-top', total + 'px');
+    }
+  }
+
+  updateMegaMenuTop();
+
+  // 监听公告栏关闭按钮
+  document.addEventListener('click', function (e) {
+    if (e.target.closest('.announcementBarContent_custom-close, button[aria-label="Close"]')) {
+      // 等动画结束后更新
+      setTimeout(updateMegaMenuTop, 350);
+    }
+  });
+
+  // 窗口大小变化时也有可能要更新
+  window.addEventListener('resize', updateMegaMenuTop);
+
+  // 监听 DOM 变化（处理 React hydration 替换 DOM + 公告栏消失）
   var observer = new MutationObserver(function () {
     setupAll();
     fixIndexLinks();
+    updateMegaMenuTop();
   });
   observer.observe(document.body, { childList: true, subtree: true });
 })();

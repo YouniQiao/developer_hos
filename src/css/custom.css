@@ -1188,7 +1188,7 @@ article ul {
   position: fixed !important;
   left: 0 !important;
   right: 0 !important;
-  top: var(--ifm-navbar-height) !important;
+  top: var(--mega-menu-top, var(--ifm-navbar-height)) !important;
   /* 默认隐藏 */
   visibility: hidden;
   opacity: 0;
