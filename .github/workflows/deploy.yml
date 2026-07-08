@@ -57,21 +57,11 @@ jobs:
         if: steps.restore-build.outputs.cache-hit != 'true'
         run: npm ci
 
-      - name: Setup swap
-        if: steps.restore-build.outputs.cache-hit != 'true'
-        run: |
-          sudo swapoff /swapfile 2>/dev/null || true
-          sudo rm -f /swapfile
-          sudo fallocate -l 16G /swapfile
-          sudo chmod 600 /swapfile
-          sudo mkswap /swapfile
-          sudo swapon /swapfile
-
       - name: Build
         if: steps.restore-build.outputs.cache-hit != 'true'
         run: npx docusaurus build --no-minify
         env:
-          NODE_OPTIONS: '--max-old-space-size=16384'
+          NODE_OPTIONS: '--max-old-space-size=32768'
           DOCUSAURUS_SSG_CONCURRENCY: '32'
 
       - name: Mark as built
