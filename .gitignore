@@ -26,3 +26,5 @@ scripts/oauth-proxy.js
 # Agent & trash
 .hermes/
 .trash/
+.sync-backup/
+__pycache__/

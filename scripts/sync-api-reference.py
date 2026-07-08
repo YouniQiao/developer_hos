@@ -43,8 +43,8 @@ API_HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; HarmonyOS-API-Syncer/1.0)",
 }
 
-CONCURRENCY = 4
-REQUEST_TIMEOUT = 30
+CONCURRENCY = 8
+REQUEST_TIMEOUT = 15
 TREE_TIMEOUT = 60
 
 # ── 路径映射（一级分类中文→英文）────────────────────
