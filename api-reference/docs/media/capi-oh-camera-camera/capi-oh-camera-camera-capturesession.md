@@ -2,7 +2,8 @@
 title: "Camera_CaptureSession"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-capturesession"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:17.924998"
+content_hash: "5998ebc56cdd"
+synced_at: "2026-07-09T01:00:26.825626"
 ---
 
 # Camera_CaptureSession

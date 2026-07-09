@@ -2,7 +2,8 @@
 title: "OH_NativeXComponent Native XComponent"
 upstream_id: "harmonyos-references/capi-oh-nativexcomponent-native-xcomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:31.616676"
+content_hash: "305939ceb775"
+synced_at: "2026-07-09T00:58:32.101472"
 ---
 
 # OH_NativeXComponent Native XComponent

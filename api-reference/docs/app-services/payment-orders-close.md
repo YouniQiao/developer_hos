@@ -1,9 +1,12 @@
 ---
+
 title: "关闭订单"
 upstream_id: "harmonyos-references/payment-orders-close"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:39.069036"
+synced_at: "2026-07-09T01:01:29.887171"
+content_hash: "11562bab2864"
 ---
+
 
 # 关闭订单
 

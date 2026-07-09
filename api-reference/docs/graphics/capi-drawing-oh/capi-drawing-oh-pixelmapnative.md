@@ -2,7 +2,8 @@
 title: "OH_PixelmapNative"
 upstream_id: "harmonyos-references/capi-drawing-oh-pixelmapnative"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:07.766192"
+content_hash: "48ad09dbec29"
+synced_at: "2026-07-09T01:01:02.116288"
 ---
 
 # OH_PixelmapNative

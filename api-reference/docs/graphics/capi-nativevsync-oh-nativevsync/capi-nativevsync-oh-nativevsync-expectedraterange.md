@@ -2,7 +2,8 @@
 title: "OH_NativeVSync_ExpectedRateRange"
 upstream_id: "harmonyos-references/capi-nativevsync-oh-nativevsync-expectedraterange"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:07.301923"
+content_hash: "deecff94c2b2"
+synced_at: "2026-07-09T01:01:01.750500"
 ---
 
 # OH_NativeVSync_ExpectedRateRange

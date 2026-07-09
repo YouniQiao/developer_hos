@@ -2,7 +2,8 @@
 title: "输入事件注入错误码"
 upstream_id: "harmonyos-references/errorcode-inputeventclient"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:21.372667"
+content_hash: "6489374f1bf0"
+synced_at: "2026-07-09T00:59:51.035878"
 ---
 
 # 输入事件注入错误码

@@ -2,7 +2,8 @@
 title: "ArkUI_GestureEventTargetInfo"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-gestureeventtargetinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:46.947055"
+content_hash: "02765449ea71"
+synced_at: "2026-07-09T00:58:40.236357"
 ---
 
 # ArkUI_GestureEventTargetInfo

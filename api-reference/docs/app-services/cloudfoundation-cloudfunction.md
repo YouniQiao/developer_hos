@@ -2,7 +2,8 @@
 title: "cloudFunction (云函数模块)"
 upstream_id: "harmonyos-references/cloudfoundation-cloudfunction"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:23.515620"
+content_hash: "f36c08c29fd5"
+synced_at: "2026-07-09T01:01:16.512441"
 ---
 
 # cloudFunction (云函数模块)

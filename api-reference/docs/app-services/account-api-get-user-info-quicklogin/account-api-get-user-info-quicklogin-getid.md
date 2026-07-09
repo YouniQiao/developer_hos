@@ -2,7 +2,8 @@
 title: "一键登录获取华为账号绑定号码和UnionID/OpenID（不推荐）"
 upstream_id: "harmonyos-references/account-api-get-user-info-quicklogin-getid"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:21.008109"
+content_hash: "1048735091c5"
+synced_at: "2026-07-09T01:01:13.919673"
 ---
 
 # 一键登录获取华为账号绑定号码和UnionID/OpenID（不推荐）

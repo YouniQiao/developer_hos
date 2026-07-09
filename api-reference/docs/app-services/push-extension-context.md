@@ -2,7 +2,8 @@
 title: "PushExtensionContext（推送扩展Context）"
 upstream_id: "harmonyos-references/push-extension-context"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:49.497681"
+content_hash: "12aa9360b8be"
+synced_at: "2026-07-09T01:01:37.541584"
 ---
 
 # PushExtensionContext（推送扩展Context）

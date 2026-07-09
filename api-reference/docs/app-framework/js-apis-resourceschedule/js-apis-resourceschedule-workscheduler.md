@@ -2,7 +2,8 @@
 title: "@ohos.resourceschedule.workScheduler (延迟任务调度)"
 upstream_id: "harmonyos-references/js-apis-resourceschedule-workscheduler"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:10.011334"
+content_hash: "1506459f4c9a"
+synced_at: "2026-07-09T00:58:57.231923"
 ---
 
 # @ohos.resourceschedule.workScheduler (延迟任务调度)

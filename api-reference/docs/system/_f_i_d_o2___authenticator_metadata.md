@@ -2,7 +2,8 @@
 title: "FIDO2_AuthenticatorMetadata"
 upstream_id: "harmonyos-references/_f_i_d_o2___authenticator_metadata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:39.514449"
+content_hash: "775e8ec0e19d"
+synced_at: "2026-07-09T00:59:18.212014"
 ---
 
 # FIDO2_AuthenticatorMetadata

@@ -2,7 +2,8 @@
 title: "OH_NativeImage"
 upstream_id: "harmonyos-references/capi-oh-nativeimage"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:57.474106"
+content_hash: "df54b3947d89"
+synced_at: "2026-07-09T01:00:53.836860"
 ---
 
 # OH_NativeImage

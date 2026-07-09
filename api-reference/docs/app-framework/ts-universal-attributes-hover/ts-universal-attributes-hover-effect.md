@@ -1,9 +1,12 @@
 ---
+
 title: "悬浮态效果"
 upstream_id: "harmonyos-references/ts-universal-attributes-hover-effect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:42.299454"
+synced_at: "2026-07-09T00:57:40.878426"
+content_hash: "5c5bc761ea5d"
 ---
+
 
 # 悬浮态效果
 

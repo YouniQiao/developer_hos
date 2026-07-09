@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-wallet"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:54.238136"
+content_hash: "d96703085cdd"
+synced_at: "2026-07-09T01:01:40.448188"
 ---
 
 # ArkTS API错误码

@@ -2,7 +2,8 @@
 title: "Print_Resolution"
 upstream_id: "harmonyos-references/capi-oh-print-print-resolution"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:12.594331"
+content_hash: "c2ea3b9493d6"
+synced_at: "2026-07-09T00:59:44.221840"
 ---
 
 # Print_Resolution

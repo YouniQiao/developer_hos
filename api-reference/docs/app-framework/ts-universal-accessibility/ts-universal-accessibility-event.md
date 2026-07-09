@@ -1,9 +1,12 @@
 ---
+
 title: "无障碍控制操作"
 upstream_id: "harmonyos-references/ts-universal-accessibility-event"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:33.856623"
+synced_at: "2026-07-09T00:57:37.176170"
+content_hash: "23f6005b8ca5"
 ---
+
 
 # 无障碍控制操作
 

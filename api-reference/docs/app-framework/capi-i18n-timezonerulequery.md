@@ -2,7 +2,8 @@
 title: "TimeZoneRuleQuery"
 upstream_id: "harmonyos-references/capi-i18n-timezonerulequery"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:24.720165"
+content_hash: "577b690e7154"
+synced_at: "2026-07-09T00:59:08.688388"
 ---
 
 # TimeZoneRuleQuery
@@ -27,8 +28,8 @@ typedef struct TimeZoneRuleQuery {...} TimeZoneRuleQuery
 
 | 名称 | 描述 |
 | --- | --- |
-| double base | 查询的基准时间。 |
-| int32_t prevRawOffset | 上一次的时区原始偏移量。 |
-| int32_t prevDSTSavings | 上一次的夏令时偏移量。 |
+| double base | 查询的基准时间，单位为毫秒（ms），采用Unix时间戳格式。 |
+| int32_t prevRawOffset | 上一次的时区原始偏移量，单位为毫秒（ms）。 |
+| int32_t prevDSTSavings | 上一次的夏令时偏移量，单位为毫秒（ms）。 |
 | bool inclusive | 查询结果是否包含基准时间。true：查询结果包含基准时间；false：查询结果不包含基准时间。 |
-| double result | 查询结果。 |
+| double result | 查询结果，单位为毫秒（ms），采用Unix时间戳格式。 |

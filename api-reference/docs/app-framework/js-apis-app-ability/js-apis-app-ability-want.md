@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.Want (Want)"
 upstream_id: "harmonyos-references/js-apis-app-ability-want"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:50.995344"
+content_hash: "d53e8c6f977b"
+synced_at: "2026-07-09T00:57:07.445240"
 ---
 
 # @ohos.app.ability.Want (Want)

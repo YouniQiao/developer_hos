@@ -2,7 +2,8 @@
 title: "Rcp_Exclusions"
 upstream_id: "harmonyos-references/_rcp___exclusions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:00.265922"
+content_hash: "2b37e580b473"
+synced_at: "2026-07-09T00:59:34.345855"
 ---
 
 # Rcp_Exclusions

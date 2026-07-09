@@ -2,7 +2,8 @@
 title: "OH_AVCapability"
 upstream_id: "harmonyos-references/capi-avcapability-oh-avcapability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:03.638418"
+content_hash: "0020dd805d56"
+synced_at: "2026-07-09T01:00:15.373418"
 ---
 
 # OH_AVCapability

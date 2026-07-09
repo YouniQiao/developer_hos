@@ -2,7 +2,8 @@
 title: "ArkUI_UIInputEvent"
 upstream_id: "harmonyos-references/capi-arkui-eventmodule-arkui-uiinputevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:56.160117"
+content_hash: "f05026826cfd"
+synced_at: "2026-07-09T00:58:45.587600"
 ---
 
 # ArkUI_UIInputEvent

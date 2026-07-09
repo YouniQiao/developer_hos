@@ -2,7 +2,8 @@
 title: "@ohos.inputMethod (输入法框架)"
 upstream_id: "harmonyos-references/js-apis-inputmethod"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:18.975251"
+content_hash: "875cf8275e2b"
+synced_at: "2026-07-09T00:59:04.832853"
 ---
 
 # @ohos.inputMethod (输入法框架)

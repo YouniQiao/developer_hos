@@ -2,7 +2,8 @@
 title: "OH_Drawing_BitmapFormat"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-bitmapformat"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:05.757017"
+content_hash: "21cfc5972dd7"
+synced_at: "2026-07-09T01:01:00.366913"
 ---
 
 # OH_Drawing_BitmapFormat

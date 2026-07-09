@@ -2,7 +2,8 @@
 title: "deferredLink (延迟链接能力)"
 upstream_id: "harmonyos-references/applinking-deferredlink-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:22.844523"
+content_hash: "c311b3c1297a"
+synced_at: "2026-07-09T01:01:15.521471"
 ---
 
 # deferredLink (延迟链接能力)
@@ -50,6 +51,6 @@ deferredLink.popDeferredLink().then((link: string) => {
   }
 }).catch(() => {
   // 发生未知错误
-  hilog.error(0x0000, 'testTag', `Failed to get deferred link.`);
+  hilog.error(0x0000, 'testTag', 'Failed to get deferred link.');
 })
 ```

@@ -2,7 +2,8 @@
 title: "媒体查询"
 upstream_id: "harmonyos-references/js-components-common-mediaquery"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:01.739892"
+content_hash: "101a86f1218b"
+synced_at: "2026-07-09T00:58:20.065587"
 ---
 
 # 媒体查询

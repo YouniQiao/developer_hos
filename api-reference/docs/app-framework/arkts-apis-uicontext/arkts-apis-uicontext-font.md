@@ -2,7 +2,8 @@
 title: "Class (Font)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-font"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:21.283363"
+content_hash: "be7d2f03f290"
+synced_at: "2026-07-09T00:57:28.901528"
 ---
 
 # Class (Font)

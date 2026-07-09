@@ -2,7 +2,8 @@
 title: "数据类型说明"
 upstream_id: "harmonyos-references/iap-server-data-model"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:29.873612"
+content_hash: "ee3bf3b61db6"
+synced_at: "2026-07-09T01:01:22.367579"
 ---
 
 # 数据类型说明
@@ -19,7 +20,7 @@ synced_at: "2026-06-24T20:53:29.873612"
 | applicationId | 是 | String | 应用ID，获取方式参见[配置应用身份信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-app-identity-info)。 |
 | productId | 是 | String | 商品ID。 |
 | productType | 是 | String | 商品类型。具体取值如下： 0：消耗型商品 1：非消耗型商品 2：自动续期订阅商品 3：非续期订阅商品 |
-| quantity | 否 | Long | 购买的商品数量。仅适用于消耗型商品和非续期订阅型商品的批量购买场景。 **说明：** 如果开发者使用了quantity参数以支持商品的批量购买，则需要在发货时校验下单的商品数量和最终发货商品数量是否一致，避免造成漏发、多发的情况。 **元服务API：** 从版本5.0.3(15)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.3(15) |
+| quantity | 否 | Long | 购买的商品数量。仅适用于消耗型商品和非续期订阅型商品的批量购买场景。 一次请求数量不超过10个。 **说明：** 如果开发者使用了quantity参数以支持商品的批量购买，则需要在发货时校验下单的商品数量和最终发货商品数量是否一致，避免造成漏发、多发的情况。 **元服务API：** 从版本5.0.3(15)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.3(15) |
 | purchaseTime | 是 | Long | 购买时间，UTC时间戳，以毫秒为单位。 如果没有完成购买，则没有值。 |
 | finishStatus | 否 | String | 发货状态。具体取值如下： 1：已发货 2：未发货 |
 | needFinish | 否 | Boolean | 是否需要确认发货，完成购买。具体取值如下： - true：必须确认发货，完成购买 - false：可选确认发货，完成购买 |
@@ -58,7 +59,7 @@ synced_at: "2026-06-24T20:53:29.873612"
 
 | 参数 | 是否必选 | 类型 | 说明 |
 | --- | --- | --- | --- |
-| applicationId | 是 | String | APP ID，获取方式参见[配置应用身份信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-app-identity-info)。 |
+| applicationId | 是 | String | 应用ID，获取方式参见[配置应用身份信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-app-identity-info)。 |
 | productId | 是 | String | 商品ID。 |
 
 #### OfferInfo

@@ -2,7 +2,8 @@
 title: "OH_Rdb_CryptoParam"
 upstream_id: "harmonyos-references/capi-rdb-oh-rdb-cryptoparam"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:09.789499"
+content_hash: "fb0db78400ce"
+synced_at: "2026-07-09T00:57:21.109051"
 ---
 
 # OH_Rdb_CryptoParam

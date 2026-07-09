@@ -2,7 +2,8 @@
 title: "Types"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:45.454303"
+content_hash: "28b81ab9ce8e"
+synced_at: "2026-07-09T01:00:47.402581"
 ---
 
 # Types

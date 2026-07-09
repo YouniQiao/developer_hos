@@ -2,7 +2,8 @@
 title: "EmbeddedComponent"
 upstream_id: "harmonyos-references/ts-container-embedded-component"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:38.962266"
+content_hash: "f0c3189f9f85"
+synced_at: "2026-07-09T00:58:06.711643"
 ---
 
 # EmbeddedComponent
@@ -256,4 +257,4 @@ struct Extension {
     └── module.json5
 ```
 
-- 示例图如下： ![](./img/zh-cn_image_0000002626230714.png)
+- 示例图如下： ![](./img/zh-cn_image_0000002631253714.png)

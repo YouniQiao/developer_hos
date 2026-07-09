@@ -2,7 +2,8 @@
 title: "NetConn_NetSpecifier"
 upstream_id: "harmonyos-references/capi-netconnection-netconn-netspecifier"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:54.235371"
+content_hash: "4d857a2aec74"
+synced_at: "2026-07-09T00:59:29.541503"
 ---
 
 # NetConn_NetSpecifier

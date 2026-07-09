@@ -2,7 +2,8 @@
 title: "XEG_DDGICreateInfo"
 upstream_id: "harmonyos-references/xengine-kit-xeg-ddgicreateinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:16.427836"
+content_hash: "9e41993faeb3"
+synced_at: "2026-07-09T01:01:10.229023"
 ---
 
 # XEG_DDGICreateInfo

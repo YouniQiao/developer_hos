@@ -2,7 +2,8 @@
 title: "Class (PointUtils)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-pointutils"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:54.108029"
+content_hash: "29becfdad14d"
+synced_at: "2026-07-09T01:00:52.346710"
 ---
 
 # Class (PointUtils)

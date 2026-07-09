@@ -2,7 +2,8 @@
 title: "OpenGL"
 upstream_id: "harmonyos-references/opengl"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:04.971322"
+content_hash: "4b5ac16e8a7a"
+synced_at: "2026-07-09T01:01:48.684064"
 ---
 
 # OpenGL

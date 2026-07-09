@@ -2,7 +2,8 @@
 title: "HiAI_SingleOpExecutorConvolutionParam"
 upstream_id: "harmonyos-references/cannkit-sopexec-convparam"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:55.698522"
+content_hash: "15ed94fb0dc0"
+synced_at: "2026-07-09T01:01:41.002493"
 ---
 
 # HiAI_SingleOpExecutorConvolutionParam

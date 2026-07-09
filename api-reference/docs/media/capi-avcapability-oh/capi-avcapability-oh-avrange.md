@@ -2,7 +2,8 @@
 title: "OH_AVRange"
 upstream_id: "harmonyos-references/capi-avcapability-oh-avrange"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:03.512246"
+content_hash: "6ea775424882"
+synced_at: "2026-07-09T01:00:15.369147"
 ---
 
 # OH_AVRange

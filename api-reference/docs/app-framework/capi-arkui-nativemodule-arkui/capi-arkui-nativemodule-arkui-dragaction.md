@@ -2,7 +2,8 @@
 title: "ArkUI_DragAction"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-dragaction"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:44.010077"
+content_hash: "a56f935464b5"
+synced_at: "2026-07-09T00:58:38.482917"
 ---
 
 # ArkUI_DragAction

@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.DriverExtensionAbility (驱动程序扩展能力)"
 upstream_id: "harmonyos-references/js-apis-app-ability-driverextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:30.058396"
+content_hash: "6588f12f7ed2"
+synced_at: "2026-07-09T00:59:54.056536"
 ---
 
 # @ohos.app.ability.DriverExtensionAbility (驱动程序扩展能力)

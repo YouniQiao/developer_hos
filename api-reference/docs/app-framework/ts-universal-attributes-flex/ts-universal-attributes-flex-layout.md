@@ -2,7 +2,8 @@
 title: "Flex布局"
 upstream_id: "harmonyos-references/ts-universal-attributes-flex-layout"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:36.991420"
+content_hash: "caa7758236ee"
+synced_at: "2026-07-09T00:57:38.217824"
 ---
 
 # Flex布局
@@ -202,4 +203,4 @@ struct FlexExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070260.png)
+ ![](./img/zh-cn_image_0000002631413048.png)

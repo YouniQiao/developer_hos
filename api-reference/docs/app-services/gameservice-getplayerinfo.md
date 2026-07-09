@@ -1,9 +1,12 @@
 ---
+
 title: "获取玩家标识"
 upstream_id: "harmonyos-references/gameservice-getplayerinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:25.727525"
+synced_at: "2026-07-09T01:01:19.219418"
+content_hash: "621fdcbc9497"
 ---
+
 
 # 获取玩家标识
 

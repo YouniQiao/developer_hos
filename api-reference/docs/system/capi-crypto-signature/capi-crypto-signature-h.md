@@ -2,7 +2,8 @@
 title: "crypto_signature.h"
 upstream_id: "harmonyos-references/capi-crypto-signature-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:32.029542"
+content_hash: "3090be07dec6"
+synced_at: "2026-07-09T00:59:13.043202"
 ---
 
 # crypto_signature.h
@@ -112,7 +113,7 @@ OH_Crypto_ErrCode OH_CryptoVerify_Create(const char *algoName, OH_CryptoVerify *
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：参数无效。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_OPERATION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：参数无效。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
 
 #### [h2]OH_CryptoVerify_Init()
 
@@ -136,7 +137,7 @@ OH_Crypto_ErrCode OH_CryptoVerify_Init(OH_CryptoVerify *ctx, OH_CryptoPubKey *pu
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：参数无效。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_OPERATION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：参数无效。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
 
 参考：
 
@@ -166,7 +167,7 @@ OH_Crypto_ErrCode OH_CryptoVerify_Update(OH_CryptoVerify *ctx, Crypto_DataBlob *
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：参数无效。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_INVALID_CALL：（从API版本26.0.0开始支持）无效的函数调用。 CRYPTO_OPERATION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：参数无效。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_INVALID_CALL：（从API版本26.0.0开始支持）无效的函数调用。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
 
 参考：
 
@@ -230,7 +231,7 @@ OH_Crypto_ErrCode OH_CryptoVerify_Recover(OH_CryptoVerify *ctx, Crypto_DataBlob 
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：参数无效。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_INVALID_CALL：（从API版本26.0.0开始支持）无效的函数调用。 CRYPTO_OPERATION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：参数无效。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_INVALID_CALL：（从API版本26.0.0开始支持）无效的函数调用。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
 
 #### [h2]OH_CryptoVerify_GetAlgoName()
 
@@ -278,7 +279,7 @@ OH_Crypto_ErrCode OH_CryptoVerify_SetParam(OH_CryptoVerify *ctx, CryptoSignature
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：参数无效。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_OPERATION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：参数无效。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
 
 #### [h2]OH_CryptoVerify_GetParam()
 
@@ -305,7 +306,7 @@ OH_Crypto_ErrCode OH_CryptoVerify_GetParam(OH_CryptoVerify *ctx, CryptoSignature
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：参数无效。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_OPERATION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_INVALID_PARAMS：参数无效。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
 
 #### [h2]OH_CryptoVerify_Destroy()
 
@@ -348,7 +349,7 @@ OH_Crypto_ErrCode OH_CryptoSign_Create(const char *algoName, OH_CryptoSign **sig
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERATION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
 
 #### [h2]OH_CryptoSign_Init()
 
@@ -372,7 +373,7 @@ OH_Crypto_ErrCode OH_CryptoSign_Init(OH_CryptoSign *ctx, OH_CryptoPrivKey *privK
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERATION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
 
 参考：
 
@@ -402,7 +403,7 @@ OH_Crypto_ErrCode OH_CryptoSign_Update(OH_CryptoSign *ctx, const Crypto_DataBlob
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_INVALID_CALL：（从API版本26.0.0开始支持）无效的函数调用。 CRYPTO_OPERATION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_INVALID_CALL：（从API版本26.0.0开始支持）无效的函数调用。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
 
 参考：
 
@@ -435,7 +436,7 @@ OH_Crypto_ErrCode OH_CryptoSign_Final(OH_CryptoSign *ctx, const Crypto_DataBlob 
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERATION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
 
 参考：
 
@@ -489,7 +490,7 @@ OH_Crypto_ErrCode OH_CryptoSign_SetParam(OH_CryptoSign *ctx, CryptoSignature_Par
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERATION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
 
 #### [h2]OH_CryptoSign_GetParam()
 
@@ -516,7 +517,7 @@ OH_Crypto_ErrCode OH_CryptoSign_GetParam(OH_CryptoSign *ctx, CryptoSignature_Par
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERATION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
 
 #### [h2]OH_CryptoSign_Destroy()
 
@@ -559,7 +560,7 @@ OH_Crypto_ErrCode OH_CryptoEccSignatureSpec_Create(Crypto_DataBlob *eccSignature
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERATION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
 
 #### [h2]OH_CryptoEccSignatureSpec_GetRAndS()
 
@@ -586,7 +587,7 @@ OH_Crypto_ErrCode OH_CryptoEccSignatureSpec_GetRAndS(OH_CryptoEccSignatureSpec *
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERATION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
 
 #### [h2]OH_CryptoEccSignatureSpec_SetRAndS()
 
@@ -611,7 +612,7 @@ OH_Crypto_ErrCode OH_CryptoEccSignatureSpec_SetRAndS(OH_CryptoEccSignatureSpec *
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERATION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
 
 #### [h2]OH_CryptoEccSignatureSpec_Encode()
 
@@ -637,7 +638,7 @@ OH_Crypto_ErrCode OH_CryptoEccSignatureSpec_Encode(OH_CryptoEccSignatureSpec *sp
 
 | 类型 | 说明 |
 | --- | --- |
-| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERATION_ERROR：调用三方算法库API出错。 |
+| [OH_Crypto_ErrCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-crypto-common-h#oh_crypto_errcode) | CRYPTO_SUCCESS：操作成功。 CRYPTO_NOT_SUPPORTED：操作不支持。 CRYPTO_MEMORY_ERROR：内存错误。 CRYPTO_PARAMETER_CHECK_FAILED：参数检查失败。 CRYPTO_OPERTION_ERROR：调用三方算法库API出错。 |
 
 #### [h2]OH_CryptoEccSignatureSpec_Destroy()
 

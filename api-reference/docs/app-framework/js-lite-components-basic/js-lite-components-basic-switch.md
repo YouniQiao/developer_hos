@@ -2,7 +2,8 @@
 title: "switch"
 upstream_id: "harmonyos-references/js-lite-components-basic-switch"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:20.999172"
+content_hash: "b5800d451b2f"
+synced_at: "2026-07-09T00:58:28.388089"
 ---
 
 # switch
@@ -96,4 +97,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626231112.gif)
+ ![](./img/zh-cn_image_0000002631414008.gif)

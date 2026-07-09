@@ -2,7 +2,8 @@
 title: "轴事件"
 upstream_id: "harmonyos-references/ts-universal-events-axis"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:31.866687"
+content_hash: "7d2a7ef33923"
+synced_at: "2026-07-09T00:57:35.658528"
 ---
 
 # 轴事件
@@ -190,7 +191,7 @@ struct AxisEventExample {
 ```
  鼠标滚轮滚动时：
 
-![](./img/zh-cn_image_0000002626230136.png)
+![](./img/zh-cn_image_0000002661612305.png)
 
 #### [h2]示例2（获取组件实时位置）
 
@@ -224,4 +225,4 @@ struct GetCurrentLocalPositionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349549.gif)
+ ![](./img/zh-cn_image_0000002631253122.gif)

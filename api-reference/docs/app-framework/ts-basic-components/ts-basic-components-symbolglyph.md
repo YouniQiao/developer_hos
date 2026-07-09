@@ -2,7 +2,8 @@
 title: "SymbolGlyph"
 upstream_id: "harmonyos-references/ts-basic-components-symbolglyph"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:19.051752"
+content_hash: "2a7b69124a05"
+synced_at: "2026-07-09T00:57:58.209366"
 ---
 
 # SymbolGlyph
@@ -44,7 +45,7 @@ SymbolGlyph(value?: Resource)
 
 fontColor(value: Array<ResourceColor>)
 
-设置SymbolGlyph组件颜色。
+设置SymbolGlyph组件字体颜色。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 12开始，该接口支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
@@ -58,13 +59,13 @@ fontColor(value: Array<ResourceColor>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | Array | 是 | SymbolGlyph组件颜色。 当value为undefined时，使用图标的默认颜色，默认颜色跟随主题。 |
+| value | Array | 是 | SymbolGlyph组件字体颜色。 当value为undefined时，使用图标的默认颜色，默认颜色跟随主题。 |
 
 #### [h2]fontColor
 
 fontColor(value: Array<ResourceColor | ColorMetrics> | undefined)
 
-设置SymbolGlyph组件的颜色，相比[fontColor](#fontcolor)接口，本接口支持传入[ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12)类型参数。
+设置SymbolGlyph组件的字体颜色，相比[fontColor](#fontcolor)接口，本接口支持传入[ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12)类型参数。
 
 ![](./img/note_3.0-zh-cn.png) 该接口支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
@@ -82,13 +83,13 @@ fontColor(value: Array<ResourceColor | ColorMetrics> | undefined)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | Array | undefined | 是 | SymbolGlyph组件颜色。支持传入ResourceColor或ColorMetrics类型的数组。 当value为undefined时，使用图标的默认颜色，默认颜色跟随主题。 |
+| value | Array | undefined | 是 | SymbolGlyph组件字体颜色。支持传入ResourceColor或ColorMetrics类型的数组。 当value为undefined时，使用图标的默认颜色，默认颜色跟随主题。 |
 
 #### [h2]fontSize
 
 fontSize(value: number | string | Resource)
 
-设置SymbolGlyph组件大小。设置string类型时，支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。
+设置SymbolGlyph组件字体大小。设置string类型时，支持number类型取值的字符串形式，可以附带单位，例如"10"、"10fp"。
 
 组件的图标显示大小由fontSize控制，设置width或height后，其他通用属性仅对组件的占位大小生效。
 
@@ -104,13 +105,13 @@ fontSize(value: number | string | Resource)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | SymbolGlyph组件大小。 默认值：16fp 单位：[fp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units#基本像素单位) 不支持设置百分比字符串。 |
+| value | number | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 是 | SymbolGlyph组件字体大小。 默认值：16fp 单位：[fp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units#基本像素单位) 不支持设置百分比字符串。 |
 
 #### [h2]fontWeight
 
 fontWeight(value: number | FontWeight | string)
 
-设置SymbolGlyph组件粗细。number类型取值[100,900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如“400”，以及“bold”、“bolder”、“lighter”、“regular” 、“medium”分别对应FontWeight中相应的枚举值。
+设置SymbolGlyph组件字体粗细。number类型取值[100,900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如"400"，以及"bold"、"bolder"、"lighter"、"regular" 、"medium"分别对应FontWeight中相应的枚举值。
 
 sys.symbol.ohos_lungs图标不支持设置fontWeight。
 
@@ -126,7 +127,7 @@ sys.symbol.ohos_lungs图标不支持设置fontWeight。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | string | 是 | SymbolGlyph组件粗细。 默认值：FontWeight.Normal |
+| value | number | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | string | 是 | SymbolGlyph组件字体粗细。 默认值：FontWeight.Normal |
 
 #### [h2]renderingStrategy
 
@@ -150,7 +151,7 @@ renderingStrategy(value: SymbolRenderingStrategy)
 
 不同渲染策略效果可参考以下示意图。
 
-![](./img/zh-cn_image_0000002626070596.png)
+![](./img/zh-cn_image_0000002661732625.png)
 
 #### [h2]effectStrategy
 
@@ -709,7 +710,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230508.gif)
+ ![](./img/zh-cn_image_0000002631413398.gif)
 
 #### [h2]示例2（设置动效和阴影）
 
@@ -812,7 +813,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070598.gif)
+ ![](./img/zh-cn_image_0000002661732627.gif)
 
 #### [h2]示例3（设置颜色渐变）
 
@@ -952,7 +953,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469875.jpeg)
+ ![](./img/zh-cn_image_0000002631253506.jpeg)
 
 #### [h2]示例4（设置SymbolGlyph颜色）
 
@@ -1002,4 +1003,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349923.jpeg)
+ ![](./img/zh-cn_image_0000002661612689.jpeg)

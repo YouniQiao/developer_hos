@@ -2,7 +2,8 @@
 title: "Camera_MetadataObject"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-metadataobject"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:16.963886"
+content_hash: "0241a82f4e97"
+synced_at: "2026-07-09T01:00:26.156683"
 ---
 
 # Camera_MetadataObject

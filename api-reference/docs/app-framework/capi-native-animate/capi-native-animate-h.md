@@ -2,7 +2,8 @@
 title: "native_animate.h"
 upstream_id: "harmonyos-references/capi-native-animate-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:33.642600"
+content_hash: "68fbfcfd240a"
+synced_at: "2026-07-09T00:58:33.989191"
 ---
 
 # native_animate.h

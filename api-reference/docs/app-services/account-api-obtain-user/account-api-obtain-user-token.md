@@ -2,7 +2,8 @@
 title: "获取用户级凭证"
 upstream_id: "harmonyos-references/account-api-obtain-user-token"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:18.713805"
+content_hash: "6fdfc222882e"
+synced_at: "2026-07-09T01:01:12.719842"
 ---
 
 # 获取用户级凭证

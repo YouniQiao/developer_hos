@@ -2,7 +2,8 @@
 title: "context_constant.h"
 upstream_id: "harmonyos-references/capi-context-constant-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:58.035555"
+content_hash: "ea76c5252343"
+synced_at: "2026-07-09T00:57:12.263036"
 ---
 
 # context_constant.h

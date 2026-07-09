@@ -2,7 +2,8 @@
 title: "@ohos.application.NotificationSubscriberExtensionContext (通知订阅扩展上下文)"
 upstream_id: "harmonyos-references/js-apis-notificationsubscriberextensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:37.131309"
+content_hash: "e40e9e6bb099"
+synced_at: "2026-07-09T01:01:28.059019"
 ---
 
 # @ohos.application.NotificationSubscriberExtensionContext (通知订阅扩展上下文)

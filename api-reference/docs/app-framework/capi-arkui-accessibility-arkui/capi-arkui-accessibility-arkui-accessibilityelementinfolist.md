@@ -2,7 +2,8 @@
 title: "ArkUI_AccessibilityElementInfoList"
 upstream_id: "harmonyos-references/capi-arkui-accessibility-arkui-accessibilityelementinfolist"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:48.675751"
+content_hash: "92ed2ca07d1b"
+synced_at: "2026-07-09T00:58:41.018636"
 ---
 
 # ArkUI_AccessibilityElementInfoList

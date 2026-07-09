@@ -2,7 +2,8 @@
 title: "Rcp_QuicIoVec"
 upstream_id: "harmonyos-references/_rcp___quic_io_vec"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:02.921733"
+content_hash: "4d601aa8b58e"
+synced_at: "2026-07-09T00:59:36.505660"
 ---
 
 # Rcp_QuicIoVec

@@ -2,7 +2,8 @@
 title: "@ohos.multimodalAwareness.userStatus (用户状态感知)"
 upstream_id: "harmonyos-references/js-apis-awareness-userstatus"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:37.310646"
+content_hash: "6c8fed878fce"
+synced_at: "2026-07-09T00:59:58.288854"
 ---
 
 # @ohos.multimodalAwareness.userStatus (用户状态感知)

@@ -2,7 +2,8 @@
 title: "@ohos.file.AlbumPickerComponent (Album Picker组件)"
 upstream_id: "harmonyos-references/ohos-file-albumpickercomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:45.876988"
+content_hash: "7ed29f18dc76"
+synced_at: "2026-07-09T01:00:47.453014"
 ---
 
 # @ohos.file.AlbumPickerComponent (Album Picker组件)

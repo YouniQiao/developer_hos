@@ -2,12 +2,13 @@
 title: "AAID（应用匿名标识符）"
 upstream_id: "harmonyos-references/push-aaid-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:48.994000"
+content_hash: "6e36d5b8b35d"
+synced_at: "2026-07-09T01:01:37.329474"
 ---
 
 # AAID（应用匿名标识符）
 
-AAID（Anonymous Application Identifier）是应用匿名标识符，标识运行在移动智能终端设备上的应用实例，只有该应用实例才能访问该标识符，它只存在于应用的安装期，总长度36位。与无法重置的设备级硬件ID相比，AAID具有更好的隐私权属性。
+AAID（Anonymous Application Identifier）是应用匿名标识符，标识运行在移动智能终端设备上的应用实例，只有该应用实例才能访问该标识符，它只存在于应用的安装期，总长度36个字符。与无法重置的设备级硬件ID相比，AAID具有更好的隐私权属性。
 
 AAID具有以下特性：
 
@@ -58,7 +59,7 @@ getAAID(callback: AsyncCallback<string>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。当获取AAID成功，err为undefined，data为获取到的AAID，字符长度为36；否则为错误对象。 |
+| callback | AsyncCallback | 是 | 回调函数。当获取AAID成功，err为undefined，aaid为获取到的AAID，字符长度为36；否则为错误对象。 |
 
 错误码：
 
@@ -330,7 +331,7 @@ deleteAAID(): Promise<void>
 
 ```
 import { AAID } from '@kit.PushKit';
-import { AbilityConstant, UIAbility, Want } from '@kit.AbilityKit';
+import { UIAbility } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 

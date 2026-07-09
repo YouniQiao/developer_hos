@@ -2,7 +2,8 @@
 title: "HML语法参考"
 upstream_id: "harmonyos-references/js-service-widget-syntax-hml"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:22.598101"
+content_hash: "23735fea7d66"
+synced_at: "2026-07-09T00:58:29.205430"
 ---
 
 # HML语法参考

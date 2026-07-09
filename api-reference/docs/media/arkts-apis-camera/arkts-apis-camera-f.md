@@ -2,7 +2,8 @@
 title: "Functions"
 upstream_id: "harmonyos-references/arkts-apis-camera-f"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:10.010384"
+content_hash: "f0134037decc"
+synced_at: "2026-07-09T01:00:20.691200"
 ---
 
 # Functions

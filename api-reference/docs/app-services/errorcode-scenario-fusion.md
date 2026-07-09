@@ -2,7 +2,8 @@
 title: "ArkTS组件错误码"
 upstream_id: "harmonyos-references/errorcode-scenario-fusion"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:52.630419"
+content_hash: "990f7ca1a8cd"
+synced_at: "2026-07-09T01:01:39.145151"
 ---
 
 # ArkTS组件错误码

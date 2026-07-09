@@ -2,7 +2,8 @@
 title: "FIDO2_PublicKeyCredentialHintArray"
 upstream_id: "harmonyos-references/_f_i_d_o2___public_key_credential_hint_array"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:40.431520"
+content_hash: "cf06bc6836a8"
+synced_at: "2026-07-09T00:59:18.916914"
 ---
 
 # FIDO2_PublicKeyCredentialHintArray

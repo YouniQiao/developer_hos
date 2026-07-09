@@ -2,7 +2,8 @@
 title: "ffrt_mutexattr_t"
 upstream_id: "harmonyos-references/capi-ffrt-ffrt-mutexattr-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:16.990106"
+content_hash: "2131a038802f"
+synced_at: "2026-07-09T00:59:47.791144"
 ---
 
 # ffrt_mutexattr_t

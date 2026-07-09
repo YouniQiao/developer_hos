@@ -2,7 +2,8 @@
 title: "ArkUI_DialogDismissEvent"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-dialogdismissevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:46.387643"
+content_hash: "6df432616f77"
+synced_at: "2026-07-09T00:58:39.780437"
 ---
 
 # ArkUI_DialogDismissEvent

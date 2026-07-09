@@ -2,7 +2,8 @@
 title: "RawFile64"
 upstream_id: "harmonyos-references/capi-rawfile-rawfile64"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:24.302149"
+content_hash: "661fc04d4114"
+synced_at: "2026-07-09T00:59:08.297480"
 ---
 
 # RawFile64

@@ -2,7 +2,8 @@
 title: "AgentExtensionContext (智能体扩展组件上下文)"
 upstream_id: "harmonyos-references/js-apis-inner-application-agentextensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:52.561268"
+content_hash: "30d7ec51f161"
+synced_at: "2026-07-09T00:57:08.688351"
 ---
 
 # AgentExtensionContext (智能体扩展组件上下文)

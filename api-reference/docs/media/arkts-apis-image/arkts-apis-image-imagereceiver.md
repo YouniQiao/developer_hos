@@ -2,7 +2,8 @@
 title: "Interface (ImageReceiver)"
 upstream_id: "harmonyos-references/arkts-apis-image-imagereceiver"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:22.655594"
+content_hash: "ad6c21392aed"
+synced_at: "2026-07-09T01:00:29.851167"
 ---
 
 # Interface (ImageReceiver)

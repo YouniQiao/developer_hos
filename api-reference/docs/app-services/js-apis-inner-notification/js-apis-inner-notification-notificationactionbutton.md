@@ -2,7 +2,8 @@
 title: "NotificationActionButton"
 upstream_id: "harmonyos-references/js-apis-inner-notification-notificationactionbutton"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:37.156556"
+content_hash: "7b32195a4119"
+synced_at: "2026-07-09T01:01:28.098789"
 ---
 
 # NotificationActionButton

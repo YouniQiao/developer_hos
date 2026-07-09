@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.hyperSnapManager (应用快启管理)"
 upstream_id: "harmonyos-references/js-apis-app-ability-hypersnapmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:50.827535"
+content_hash: "38d015cb7a27"
+synced_at: "2026-07-09T00:57:07.407872"
 ---
 
 # @ohos.app.ability.hyperSnapManager (应用快启管理)
@@ -17,7 +18,7 @@ synced_at: "2026-06-24T20:46:50.827535"
 
 图1 快启启动流程
 
-![](./img/zh-cn_image_0000002656469431.png)
+![](./img/zh-cn_image_0000002661612231.png)
 
 #### 导入模块
 

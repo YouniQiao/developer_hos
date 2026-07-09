@@ -2,7 +2,8 @@
 title: "@ohos.data.rdb（关系型数据库）"
 upstream_id: "harmonyos-references/js-apis-data-rdb"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:04.967769"
+content_hash: "788cdb31db47"
+synced_at: "2026-07-09T00:57:17.895323"
 ---
 
 # @ohos.data.rdb（关系型数据库）

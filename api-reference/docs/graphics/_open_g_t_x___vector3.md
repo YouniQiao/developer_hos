@@ -2,7 +2,8 @@
 title: "OpenGTX_Vector3"
 upstream_id: "harmonyos-references/_open_g_t_x___vector3"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:14.238808"
+content_hash: "2d8e93a33b4b"
+synced_at: "2026-07-09T01:01:08.273599"
 ---
 
 # OpenGTX_Vector3

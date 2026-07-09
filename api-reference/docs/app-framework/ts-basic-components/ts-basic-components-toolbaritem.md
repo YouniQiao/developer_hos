@@ -2,7 +2,8 @@
 title: "ToolBarItem"
 upstream_id: "harmonyos-references/ts-basic-components-toolbaritem"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:03.618513"
+content_hash: "6194e376c76c"
+synced_at: "2026-07-09T00:57:50.695202"
 ---
 
 # ToolBarItem

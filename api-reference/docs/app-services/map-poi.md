@@ -2,7 +2,8 @@
 title: "POI类型值"
 upstream_id: "harmonyos-references/map-poi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:36.028011"
+content_hash: "4436b20488e1"
+synced_at: "2026-07-09T01:01:28.463812"
 ---
 
 # POI类型值

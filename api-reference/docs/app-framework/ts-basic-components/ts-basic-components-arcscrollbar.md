@@ -2,7 +2,8 @@
 title: "ArcScrollBar"
 upstream_id: "harmonyos-references/ts-basic-components-arcscrollbar"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:00.391754"
+content_hash: "cdb52a4a87cf"
+synced_at: "2026-07-09T00:57:49.634173"
 ---
 
 # ArcScrollBar
@@ -91,4 +92,4 @@ struct ArcScrollBarExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349753.png)
+ ![](./img/zh-cn_image_0000002661612515.png)

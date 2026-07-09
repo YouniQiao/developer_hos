@@ -2,7 +2,8 @@
 title: "opengtx_base.h"
 upstream_id: "harmonyos-references/opengtx__base_8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:12.968237"
+content_hash: "4d057cd4d012"
+synced_at: "2026-07-09T01:01:06.897452"
 ---
 
 # opengtx_base.h

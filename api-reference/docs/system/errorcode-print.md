@@ -2,7 +2,8 @@
 title: "打印服务错误码"
 upstream_id: "harmonyos-references/errorcode-print"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:13.776206"
+content_hash: "9fcd47d980dd"
+synced_at: "2026-07-09T00:59:45.016819"
 ---
 
 # 打印服务错误码

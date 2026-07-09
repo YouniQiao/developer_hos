@@ -2,7 +2,8 @@
 title: "Scan_ScannerDevice"
 upstream_id: "harmonyos-references/capi-oh-scan-scan-scannerdevice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:12.911162"
+content_hash: "a3e976ce6964"
+synced_at: "2026-07-09T00:59:44.376089"
 ---
 
 # Scan_ScannerDevice

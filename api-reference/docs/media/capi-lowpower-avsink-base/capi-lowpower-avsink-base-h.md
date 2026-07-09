@@ -2,7 +2,8 @@
 title: "lowpower_avsink_base.h"
 upstream_id: "harmonyos-references/capi-lowpower-avsink-base-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:37.621387"
+content_hash: "e30ca70f7bc3"
+synced_at: "2026-07-09T01:00:41.545287"
 ---
 
 # lowpower_avsink_base.h

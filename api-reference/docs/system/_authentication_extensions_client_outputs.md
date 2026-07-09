@@ -2,7 +2,8 @@
 title: "AuthenticationExtensionsClientOutputs"
 upstream_id: "harmonyos-references/_authentication_extensions_client_outputs"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:39.310971"
+content_hash: "093ce3eb6ba5"
+synced_at: "2026-07-09T00:59:17.978407"
 ---
 
 # AuthenticationExtensionsClientOutputs

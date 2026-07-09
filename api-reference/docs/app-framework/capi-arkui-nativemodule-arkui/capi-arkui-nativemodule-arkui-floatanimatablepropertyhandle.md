@@ -2,7 +2,8 @@
 title: "ArkUI_FloatAnimatablePropertyHandle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-floatanimatablepropertyhandle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:57.636049"
+content_hash: "aa38227f4be4"
+synced_at: "2026-07-09T00:58:46.668667"
 ---
 
 # ArkUI_FloatAnimatablePropertyHandle

@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-dataaugmentation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:16.778274"
+content_hash: "86cd5a2a9680"
+synced_at: "2026-07-09T00:59:02.572471"
 ---
 
 # ArkTS API错误码

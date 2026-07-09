@@ -2,7 +2,8 @@
 title: "Interface (AudioRenderer)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audiorenderer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:52.511130"
+content_hash: "2ee61913141f"
+synced_at: "2026-07-09T01:00:08.278506"
 ---
 
 # Interface (AudioRenderer)

@@ -2,7 +2,8 @@
 title: "旋转表冠事件监听"
 upstream_id: "harmonyos-references/js-components-common-monitorcrownevents"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:14.968270"
+content_hash: "188889a1ac7a"
+synced_at: "2026-07-09T00:58:25.987179"
 ---
 
 # 旋转表冠事件监听

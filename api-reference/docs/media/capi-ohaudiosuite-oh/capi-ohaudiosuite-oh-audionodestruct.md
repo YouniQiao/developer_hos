@@ -2,7 +2,8 @@
 title: "OH_AudioNodeStruct"
 upstream_id: "harmonyos-references/capi-ohaudiosuite-oh-audionodestruct"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:59.754063"
+content_hash: "9f06022282e6"
+synced_at: "2026-07-09T01:00:12.255321"
 ---
 
 # OH_AudioNodeStruct

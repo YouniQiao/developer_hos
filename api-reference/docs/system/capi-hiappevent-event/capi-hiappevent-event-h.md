@@ -2,7 +2,8 @@
 title: "hiappevent_event.h"
 upstream_id: "harmonyos-references/capi-hiappevent-event-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:47.372137"
+content_hash: "10b2f5df5281"
+synced_at: "2026-07-09T01:00:03.864825"
 ---
 
 # hiappevent_event.h

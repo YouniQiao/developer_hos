@@ -2,7 +2,8 @@
 title: "DRM_Statistics"
 upstream_id: "harmonyos-references/capi-drm-drm-statistics"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:20.807151"
+content_hash: "9b1adf3326be"
+synced_at: "2026-07-09T01:00:28.512052"
 ---
 
 # DRM_Statistics

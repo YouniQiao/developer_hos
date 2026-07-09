@@ -2,7 +2,8 @@
 title: "Interface (Flash)"
 upstream_id: "harmonyos-references/arkts-apis-camera-flash"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:11.309835"
+content_hash: "0893e3809cb4"
+synced_at: "2026-07-09T01:00:21.651523"
 ---
 
 # Interface (Flash)

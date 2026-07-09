@@ -2,7 +2,8 @@
 title: "ContentEmbed_StorageElements"
 upstream_id: "harmonyos-references/capi-contentembed-contentembed-storageelements"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:11.983080"
+content_hash: "fe4c7de9e2ef"
+synced_at: "2026-07-09T00:58:58.552459"
 ---
 
 # ContentEmbed_StorageElements

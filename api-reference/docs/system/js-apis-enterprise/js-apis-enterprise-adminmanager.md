@@ -2,7 +2,8 @@
 title: "@ohos.enterprise.adminManager（admin权限管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-adminmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:21.797643"
+content_hash: "2a0adb098848"
+synced_at: "2026-07-09T00:59:51.979876"
 ---
 
 # @ohos.enterprise.adminManager（admin权限管理）

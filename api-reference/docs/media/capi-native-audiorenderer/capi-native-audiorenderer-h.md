@@ -2,7 +2,8 @@
 title: "native_audiorenderer.h"
 upstream_id: "harmonyos-references/capi-native-audiorenderer-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:55.605971"
+content_hash: "170ffae15652"
+synced_at: "2026-07-09T01:00:10.064103"
 ---
 
 # native_audiorenderer.h

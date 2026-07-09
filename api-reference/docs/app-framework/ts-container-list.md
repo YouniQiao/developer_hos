@@ -2,7 +2,8 @@
 title: "List"
 upstream_id: "harmonyos-references/ts-container-list"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:54.269698"
+content_hash: "d5fd8b4a23e6"
+synced_at: "2026-07-09T00:57:47.730827"
 ---
 
 # List
@@ -1639,7 +1640,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469651.gif)
+ ![](./img/zh-cn_image_0000002661732397.gif)
 
 #### [h2]示例2（设置子元素对齐）
 
@@ -1694,7 +1695,7 @@ struct ListLanesExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349699.gif)
+ ![](./img/zh-cn_image_0000002631253278.gif)
 
 #### [h2]示例3（设置编辑模式）
 
@@ -1757,7 +1758,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230286.gif)
+ ![](./img/zh-cn_image_0000002661612461.gif)
 
 #### [h2]示例4（设置限位对齐）
 
@@ -1815,7 +1816,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070376.gif)
+ ![](./img/zh-cn_image_0000002631413170.gif)
 
 #### [h2]示例5（跳转准确）
 
@@ -1891,7 +1892,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469653.gif)
+ ![](./img/zh-cn_image_0000002661732399.gif)
 
 #### [h2]示例6（获得子组件索引信息）
 
@@ -2049,7 +2050,7 @@ interface TimeTable {
   projects: string[];
 }
 ```
- ![](./img/zh-cn_image_0000002656349701.gif)
+ ![](./img/zh-cn_image_0000002631253280.gif)
 
 #### [h2]示例7（设置边缘渐隐）
 
@@ -2087,7 +2088,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230288.gif)
+ ![](./img/zh-cn_image_0000002661612463.gif)
 
 #### [h2]示例8（单边边缘效果）
 
@@ -2125,7 +2126,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070378.gif)
+ ![](./img/zh-cn_image_0000002631413172.gif)
 
 #### [h2]示例9（设置折行走焦）
 
@@ -2171,7 +2172,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469655.gif)
+ ![](./img/zh-cn_image_0000002661732401.gif)
 
 #### [h2]示例10（设置显示区域外插入数据时，保持显示内容不变）
 
@@ -2216,7 +2217,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349703.gif)
+ ![](./img/zh-cn_image_0000002631253282.gif)
 
 #### [h2]示例11（设置滚动条的边距）
 
@@ -2259,7 +2260,7 @@ struct ListScrollBarMarginExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230290.gif)
+ ![](./img/zh-cn_image_0000002661612465.gif)
 
 #### [h2]示例12（使用OnMove进行拖拽）
 
@@ -2302,7 +2303,7 @@ struct ForEachSort {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070380.gif)
+ ![](./img/zh-cn_image_0000002631413174.gif)
 
 #### [h2]示例13（基于断点配置lanes）
 
@@ -2343,15 +2344,15 @@ struct ListExample {
 ```
  List宽度属于sm及更小的断点区间时显示2列。
 
-![](./img/zh-cn_image_0000002656469657.png)
+![](./img/zh-cn_image_0000002661732403.png)
 
 List宽度属于md断点区间时显示3列。
 
-![](./img/zh-cn_image_0000002656349705.png)
+![](./img/zh-cn_image_0000002631253284.png)
 
 List宽度属于lg及更大的断点区间时显示5列。
 
-![](./img/zh-cn_image_0000002626230292.png)
+![](./img/zh-cn_image_0000002661612467.png)
 
 #### [h2]示例14（获取内容总大小）
 
@@ -2412,7 +2413,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070382.gif)
+ ![](./img/zh-cn_image_0000002631413176.gif)
 
 #### [h2]示例15（在两个列表之间实现拖拽功能）
 
@@ -2531,7 +2532,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469659.gif)
+ ![](./img/zh-cn_image_0000002661732405.gif)
 
 #### [h2]示例16（实现ListItemGroup中点击项的居中效果）
 
@@ -2634,7 +2635,7 @@ struct ContactsList {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349707.gif)
+ ![](./img/zh-cn_image_0000002631253286.gif)
 
 #### [h2]示例17（设置多选聚拢动画）
 
@@ -2732,4 +2733,4 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230294.gif)
+ ![](./img/zh-cn_image_0000002661612469.gif)

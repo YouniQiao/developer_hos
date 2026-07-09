@@ -2,7 +2,8 @@
 title: "@ohos.userIAM.userAuth (用户认证)"
 upstream_id: "harmonyos-references/js-apis-useriam-userauth"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:44.927246"
+content_hash: "0d55da9fd974"
+synced_at: "2026-07-09T00:59:22.169038"
 ---
 
 # @ohos.userIAM.userAuth (用户认证)

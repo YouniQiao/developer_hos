@@ -2,7 +2,8 @@
 title: "OHIPCDeathRecipient"
 upstream_id: "harmonyos-references/capi-ohipcremoteobject-ohipcdeathrecipient"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:22.004123"
+content_hash: "80f0b63b09bf"
+synced_at: "2026-07-09T00:59:06.439907"
 ---
 
 # OHIPCDeathRecipient

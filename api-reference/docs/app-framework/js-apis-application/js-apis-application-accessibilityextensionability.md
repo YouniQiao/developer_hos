@@ -2,7 +2,8 @@
 title: "@ohos.application.AccessibilityExtensionAbility (辅助功能扩展能力)"
 upstream_id: "harmonyos-references/js-apis-application-accessibilityextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:01.262076"
+content_hash: "7f36b687d28e"
+synced_at: "2026-07-09T00:57:14.887461"
 ---
 
 # @ohos.application.AccessibilityExtensionAbility (辅助功能扩展能力)

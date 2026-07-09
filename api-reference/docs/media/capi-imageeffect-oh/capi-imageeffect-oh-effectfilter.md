@@ -2,7 +2,8 @@
 title: "OH_EffectFilter"
 upstream_id: "harmonyos-references/capi-imageeffect-oh-effectfilter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:31.760266"
+content_hash: "18727ef24be0"
+synced_at: "2026-07-09T01:00:36.713810"
 ---
 
 # OH_EffectFilter

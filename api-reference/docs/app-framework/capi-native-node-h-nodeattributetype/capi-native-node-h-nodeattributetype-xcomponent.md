@@ -2,7 +2,8 @@
 title: "ArkUI_NodeAttributeType（XComponent组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-xcomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:39.446331"
+content_hash: "195d608a0ede"
+synced_at: "2026-07-09T00:58:36.006153"
 ---
 
 # ArkUI_NodeAttributeType（XComponent组件相关属性）

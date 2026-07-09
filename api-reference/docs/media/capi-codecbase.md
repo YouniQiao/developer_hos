@@ -2,7 +2,8 @@
 title: "CodecBase"
 upstream_id: "harmonyos-references/capi-codecbase"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:01.150268"
+content_hash: "67535318d330"
+synced_at: "2026-07-09T01:00:13.618348"
 ---
 
 # CodecBase

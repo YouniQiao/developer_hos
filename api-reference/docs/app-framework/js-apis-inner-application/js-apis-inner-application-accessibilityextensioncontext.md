@@ -2,7 +2,8 @@
 title: "AccessibilityExtensionContext (辅助功能扩展上下文)"
 upstream_id: "harmonyos-references/js-apis-inner-application-accessibilityextensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:01.701318"
+content_hash: "dc6f6ddfa40a"
+synced_at: "2026-07-09T00:57:15.253133"
 ---
 
 # AccessibilityExtensionContext (辅助功能扩展上下文)

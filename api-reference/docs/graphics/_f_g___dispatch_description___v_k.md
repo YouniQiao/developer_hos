@@ -2,7 +2,8 @@
 title: "FG_DispatchDescription_VK"
 upstream_id: "harmonyos-references/_f_g___dispatch_description___v_k"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:13.455170"
+content_hash: "0634cd7f31d6"
+synced_at: "2026-07-09T01:01:07.556445"
 ---
 
 # FG_DispatchDescription_VK

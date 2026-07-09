@@ -2,7 +2,8 @@
 title: "Interface (PreviewOutput)"
 upstream_id: "harmonyos-references/arkts-apis-camera-previewoutput"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:12.800454"
+content_hash: "329a14ae68a1"
+synced_at: "2026-07-09T01:00:23.297753"
 ---
 
 # Interface (PreviewOutput)

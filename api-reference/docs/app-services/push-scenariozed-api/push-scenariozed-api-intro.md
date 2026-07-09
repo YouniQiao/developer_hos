@@ -1,9 +1,12 @@
 ---
+
 title: "功能介绍"
 upstream_id: "harmonyos-references/push-scenariozed-api-intro"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:49.712596"
+synced_at: "2026-07-09T01:01:37.885909"
+content_hash: "ede73265deb1"
 ---
+
 
 # 功能介绍
 

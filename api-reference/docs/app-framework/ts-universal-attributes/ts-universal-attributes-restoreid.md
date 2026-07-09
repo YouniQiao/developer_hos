@@ -1,9 +1,12 @@
 ---
+
 title: "分布式迁移标识"
 upstream_id: "harmonyos-references/ts-universal-attributes-restoreid"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:34.812382"
+synced_at: "2026-07-09T00:57:37.512727"
+content_hash: "b2dbfacfd20c"
 ---
+
 
 # 分布式迁移标识
 

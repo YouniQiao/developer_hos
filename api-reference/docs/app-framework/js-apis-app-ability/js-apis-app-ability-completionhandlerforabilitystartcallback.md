@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.CompletionHandlerForAbilityStartCallback (拉起应用结果回调的操作类)"
 upstream_id: "harmonyos-references/js-apis-app-ability-completionhandlerforabilitystartcallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:46.571297"
+content_hash: "77df6fc4deb1"
+synced_at: "2026-07-09T00:57:04.085209"
 ---
 
 # @ohos.app.ability.CompletionHandlerForAbilityStartCallback (拉起应用结果回调的操作类)

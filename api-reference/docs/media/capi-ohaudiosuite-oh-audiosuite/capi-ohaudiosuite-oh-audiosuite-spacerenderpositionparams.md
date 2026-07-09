@@ -2,7 +2,8 @@
 title: "OH_AudioSuite_SpaceRenderPositionParams"
 upstream_id: "harmonyos-references/capi-ohaudiosuite-oh-audiosuite-spacerenderpositionparams"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:59.874308"
+content_hash: "a62410d6979e"
+synced_at: "2026-07-09T01:00:12.266711"
 ---
 
 # OH_AudioSuite_SpaceRenderPositionParams

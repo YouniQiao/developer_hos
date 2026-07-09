@@ -2,7 +2,8 @@
 title: "OH_AudioRendererStruct"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audiorendererstruct"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:58.898847"
+content_hash: "be963df20c08"
+synced_at: "2026-07-09T01:00:11.762579"
 ---
 
 # OH_AudioRendererStruct

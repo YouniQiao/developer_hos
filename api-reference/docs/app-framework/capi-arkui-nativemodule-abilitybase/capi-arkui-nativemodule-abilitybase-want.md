@@ -2,7 +2,8 @@
 title: "AbilityBase_Want"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-abilitybase-want"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:53.757408"
+content_hash: "1602ef05ab5b"
+synced_at: "2026-07-09T00:58:43.921693"
 ---
 
 # AbilityBase_Want

@@ -2,7 +2,8 @@
 title: "fast_dsp_transform.h"
 upstream_id: "harmonyos-references/fast-kit-fast-dsp-transform-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:14.688886"
+content_hash: "19783dac3c45"
+synced_at: "2026-07-09T00:59:45.946002"
 ---
 
 # fast_dsp_transform.h

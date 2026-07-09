@@ -2,7 +2,8 @@
 title: "Types"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-types"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:14.257170"
+content_hash: "f663d64d369e"
+synced_at: "2026-07-09T00:57:24.291579"
 ---
 
 # Types

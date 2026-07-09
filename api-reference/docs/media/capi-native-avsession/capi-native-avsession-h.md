@@ -2,7 +2,8 @@
 title: "native_avsession.h"
 upstream_id: "harmonyos-references/capi-native-avsession-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:08.258321"
+content_hash: "51500f06bd93"
+synced_at: "2026-07-09T01:00:19.892780"
 ---
 
 # native_avsession.h
@@ -46,7 +47,7 @@ synced_at: "2026-06-24T20:52:08.258321"
 | [AVSession_ErrCode OH_AVSession_Activate(OH_AVSession* avsession)](#oh_avsession_activate) | - | 激活会话。 |
 | [AVSession_ErrCode OH_AVSession_Deactivate(OH_AVSession* avsession)](#oh_avsession_deactivate) | - | 取消激活媒体会话。 |
 | [AVSession_ErrCode OH_AVSession_GetSessionType(OH_AVSession* avsession, AVSession_Type* sessionType)](#oh_avsession_getsessiontype) | - | 获取会话类型。 |
-| [AVSession_ErrCode OH_AVSession_GetSessionId(OH_AVSession* avsession, const char** sessionId)](#oh_avsession_getsessionid) | - | 获取会话id。 |
+| [AVSession_ErrCode OH_AVSession_GetSessionId(OH_AVSession* avsession, const char** sessionId)](#oh_avsession_getsessionid) | - | 获取会话ID。 |
 | [AVSession_ErrCode OH_AVSession_SetAVMetadata(OH_AVSession* avsession, OH_AVMetadata* avmetadata)](#oh_avsession_setavmetadata) | - | 设置媒体元数据。 |
 | [AVSession_ErrCode OH_AVSession_SetPlaybackState(OH_AVSession* avsession, AVSession_PlaybackState playbackState)](#oh_avsession_setplaybackstate) | - | 设置播放状态。 |
 | [AVSession_ErrCode OH_AVSession_SetPlaybackPosition(OH_AVSession* avsession, AVSession_PlaybackPosition* playbackPosition)](#oh_avsession_setplaybackposition) | - | 设置播放位置。 |
@@ -170,7 +171,7 @@ AVSession_ErrCode OH_AVSession_Create(AVSession_Type sessionType, const char* se
 | [AVSession_Type](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avsession-base-h#avsession_type) sessionType | 会话类型[AVSession_Type](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-avsession-base-h#avsession_type)。 |
 | const char* sessionTag | 会话标签。 |
 | const char* bundleName | 创建会话的包名。 |
-| const char* abilityName | 创建会话的ability名。 |
+| const char* abilityName | 创建会话的Ability组件名。 |
 | [OH_AVSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession)** avsession | 返回的媒体会话对象。 |
 
 返回：
@@ -279,7 +280,7 @@ AVSession_ErrCode OH_AVSession_GetSessionId(OH_AVSession* avsession, const char*
 ```
  描述
 
-获取会话id。
+获取会话ID。
 
 起始版本： 13
 
@@ -288,7 +289,7 @@ AVSession_ErrCode OH_AVSession_GetSessionId(OH_AVSession* avsession, const char*
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AVSession](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession)* avsession | 媒体会话对象。 |
-| const char** sessionId | 返回的会话类型id。 |
+| const char** sessionId | 返回的会话ID。 |
 
 返回：
 

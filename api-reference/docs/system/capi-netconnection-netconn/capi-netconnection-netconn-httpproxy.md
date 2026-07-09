@@ -2,7 +2,8 @@
 title: "NetConn_HttpProxy"
 upstream_id: "harmonyos-references/capi-netconnection-netconn-httpproxy"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:54.061179"
+content_hash: "1a5c12f99940"
+synced_at: "2026-07-09T00:59:29.464930"
 ---
 
 # NetConn_HttpProxy

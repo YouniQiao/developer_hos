@@ -2,7 +2,8 @@
 title: "fast_ads_segment_map.h"
 upstream_id: "harmonyos-references/fast-kit-fast-ads-segment-map-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:14.406649"
+content_hash: "4a89770d9943"
+synced_at: "2026-07-09T00:59:45.646156"
 ---
 
 # fast_ads_segment_map.h

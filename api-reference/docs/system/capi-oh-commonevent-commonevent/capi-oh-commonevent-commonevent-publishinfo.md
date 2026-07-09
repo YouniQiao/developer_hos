@@ -2,7 +2,8 @@
 title: "CommonEvent_PublishInfo"
 upstream_id: "harmonyos-references/capi-oh-commonevent-commonevent-publishinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:11.747234"
+content_hash: "e3a6f6927f6b"
+synced_at: "2026-07-09T00:59:43.430809"
 ---
 
 # CommonEvent_PublishInfo

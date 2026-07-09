@@ -2,7 +2,8 @@
 title: "native_avmuxer.h"
 upstream_id: "harmonyos-references/capi-native-avmuxer-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:03.315490"
+content_hash: "3aeca2fac336"
+synced_at: "2026-07-09T01:00:15.054695"
 ---
 
 # native_avmuxer.h

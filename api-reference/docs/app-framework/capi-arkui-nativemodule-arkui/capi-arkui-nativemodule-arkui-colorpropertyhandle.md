@@ -2,7 +2,8 @@
 title: "ArkUI_ColorPropertyHandle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-colorpropertyhandle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:57.499879"
+content_hash: "be66c926dbff"
+synced_at: "2026-07-09T00:58:46.552635"
 ---
 
 # ArkUI_ColorPropertyHandle

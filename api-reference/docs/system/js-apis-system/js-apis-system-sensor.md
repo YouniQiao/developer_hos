@@ -2,7 +2,8 @@
 title: "@system.sensor (传感器)"
 upstream_id: "harmonyos-references/js-apis-system-sensor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:40.828850"
+content_hash: "3aa9a61e8f16"
+synced_at: "2026-07-09T01:00:00.374445"
 ---
 
 # @system.sensor (传感器)

@@ -2,7 +2,8 @@
 title: "image_receiver_native.h"
 upstream_id: "harmonyos-references/capi-image-receiver-native-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:25.983131"
+content_hash: "1d59083e9224"
+synced_at: "2026-07-09T01:00:32.615231"
 ---
 
 # image_receiver_native.h

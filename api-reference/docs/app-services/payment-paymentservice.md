@@ -2,7 +2,8 @@
 title: "paymentService (鸿蒙支付服务)"
 upstream_id: "harmonyos-references/payment-paymentservice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:38.634899"
+content_hash: "4960c8069d77"
+synced_at: "2026-07-09T01:01:29.595331"
 ---
 
 # paymentService (鸿蒙支付服务)

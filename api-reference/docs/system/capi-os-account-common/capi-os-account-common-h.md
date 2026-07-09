@@ -2,7 +2,8 @@
 title: "os_account_common.h"
 upstream_id: "harmonyos-references/capi-os-account-common-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:11.376652"
+content_hash: "f8615ff1d2c1"
+synced_at: "2026-07-09T00:59:43.102857"
 ---
 
 # os_account_common.h

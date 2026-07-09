@@ -2,7 +2,8 @@
 title: "Class (BitVector)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-bitvector"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:14.157868"
+content_hash: "7ca407e1a5ca"
+synced_at: "2026-07-09T00:57:24.438556"
 ---
 
 # Class (BitVector)
@@ -194,7 +195,7 @@ setBitsByRange(element: number, fromIndex: number, toIndex: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| element | number | 是 | 待设置的bit值，0表示0，其余表示1。 |
+| element | number | 是 | 待设置的bit值，0表示0，其余值表示1。 |
 | fromIndex | number | 是 | 范围起始索引，包含本索引值。fromIndex = toIndex时，则会抛出错误。 |
 | toIndex | number | 是 | 范围终止索引，不包含本索引值。toIndex length时，则会抛出错误。 |
 

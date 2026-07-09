@@ -2,7 +2,8 @@
 title: "组件内容模糊"
 upstream_id: "harmonyos-references/ts-universal-attributes-foreground-blur-style"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:40.634448"
+content_hash: "5cbc9f5c7519"
+synced_at: "2026-07-09T00:57:40.052326"
 ---
 
 # 组件内容模糊
@@ -172,4 +173,4 @@ struct ForegroundBlurStyleDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070288.png)
+ ![](./img/zh-cn_image_0000002631413080.png)

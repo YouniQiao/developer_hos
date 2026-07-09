@@ -1,9 +1,12 @@
 ---
+
 title: "交互事件错误码"
 upstream_id: "harmonyos-references/errorcode-event"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:01.024252"
+synced_at: "2026-07-09T00:58:49.036897"
+content_hash: "564f2a373190"
 ---
+
 
 # 交互事件错误码
 

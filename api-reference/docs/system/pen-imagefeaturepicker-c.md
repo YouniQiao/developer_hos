@@ -2,7 +2,8 @@
 title: "GlobalColorPicker"
 upstream_id: "harmonyos-references/pen-imagefeaturepicker-c"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:39.117497"
+content_hash: "b177ba0b6487"
+synced_at: "2026-07-09T00:59:59.043709"
 ---
 
 # GlobalColorPicker

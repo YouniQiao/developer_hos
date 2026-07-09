@@ -2,7 +2,8 @@
 title: "@ohos.enterprise.common（Enterprise公共模块）"
 upstream_id: "harmonyos-references/js-apis-enterprise-common"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:22.742071"
+content_hash: "dab917cb0bf3"
+synced_at: "2026-07-09T00:59:51.422737"
 ---
 
 # @ohos.enterprise.common（Enterprise公共模块）

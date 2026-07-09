@@ -2,7 +2,8 @@
 title: "VkSwapchainImageCreateInfoOHOS"
 upstream_id: "harmonyos-references/capi-vulkan-vkswapchainimagecreateinfoohos"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:06.050449"
+content_hash: "747630f7b3d9"
+synced_at: "2026-07-09T01:01:49.386083"
 ---
 
 # VkSwapchainImageCreateInfoOHOS

@@ -2,7 +2,8 @@
 title: "OH_Pixelmap_HdrDynamicMetadata"
 upstream_id: "harmonyos-references/capi-image-nativemodule-oh-pixelmap-hdrdynamicmetadata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:28.426338"
+content_hash: "d0d0d10ea6d9"
+synced_at: "2026-07-09T01:00:34.499173"
 ---
 
 # OH_Pixelmap_HdrDynamicMetadata

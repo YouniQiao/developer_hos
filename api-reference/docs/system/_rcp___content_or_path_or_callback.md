@@ -2,7 +2,8 @@
 title: "Rcp_ContentOrPathOrCallback"
 upstream_id: "harmonyos-references/_rcp___content_or_path_or_callback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:59.717574"
+content_hash: "173025fd2d7d"
+synced_at: "2026-07-09T00:59:33.678449"
 ---
 
 # Rcp_ContentOrPathOrCallback

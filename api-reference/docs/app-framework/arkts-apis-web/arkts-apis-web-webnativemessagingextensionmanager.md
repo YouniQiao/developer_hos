@@ -2,12 +2,13 @@
 title: "@ohos.web.webNativeMessagingExtensionManager (Web Native Messaging Extension Manager)"
 upstream_id: "harmonyos-references/arkts-apis-web-webnativemessagingextensionmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:05.399981"
+content_hash: "820cc2756330"
+synced_at: "2026-07-09T00:58:53.135995"
 ---
 
 # @ohos.web.webNativeMessagingExtensionManager (Web Native Messaging Extension Manager)
 
-webNativeMessagingExtensionManager模块提供基于Web标准的消息扩展管理能力。
+webNativeMessagingExtensionManager模块是ArkWeb提供的Web原生消息扩展管理模块，用于在应用侧（调用方）发起并管理到[WebNativeMessagingExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-web-webnativemessagingextensionability)的连接。开发者可通过[connectNative](#webnativemessagingextensionmanagerconnectnative)方法指定目标扩展Ability并建立连接，通过返回的连接ID与[WebExtensionConnectionCallback](#webextensionconnectioncallback)监听连接建立、断开及失败事件，也可通过[disconnectNative](#webnativemessagingextensionmanagerdisconnectnative)主动释放连接。该模块适用于浏览器扩展与应用通信的场景；使用前需申请[ohos.permission.WEB_NATIVE_MESSAGING](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/restricted-permissions#ohospermissionweb_native_messaging)权限，且仅在Stage模型下可用。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 21开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 

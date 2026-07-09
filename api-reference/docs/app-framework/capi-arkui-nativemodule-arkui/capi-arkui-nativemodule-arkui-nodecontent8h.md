@@ -2,7 +2,8 @@
 title: "ArkUI_NodeContent*"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-nodecontent8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:52.944930"
+content_hash: "50110f5a0244"
+synced_at: "2026-07-09T00:58:43.434368"
 ---
 
 # ArkUI_NodeContent*

@@ -1,11 +1,12 @@
 ---
-title: "@hms.utilityApplication.screenTimeGuard.appPicker.d.ts（应用选择）"
+title: "@hms.utilityApplication.screenTimeGuard.appPicker（应用选择）"
 upstream_id: "harmonyos-references/screentimeguard-app-picker"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:52.814564"
+content_hash: "145bb71c4d08"
+synced_at: "2026-07-09T01:01:39.596918"
 ---
 
-# @hms.utilityApplication.screenTimeGuard.appPicker.d.ts（应用选择）
+# @hms.utilityApplication.screenTimeGuard.appPicker（应用选择）
 
 #### 模块概述
 
@@ -45,7 +46,7 @@ startAppPicker(context: common.Context, appSelection: guardService.AppInfo): Pro
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | context | [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文（仅支持[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext)）。 |
-| appSelection | [guardService.AppInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#appinfo) | 是 | 已被用户选择的应用，在picker页呈现勾选状态，最多可选中100个应用。 **说明**： 若Token数组包含无效token，将自动过滤并仅使用有效的Token进行显示和应用。 支持空数组，表示用户未配置任何应用至禁止/允许清单中。 |
+| appSelection | [guardService.AppInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#appinfo) | 是 | 已被选择的应用。 调用此接口后，系统将根据该参数中指定的token列表，在拉起的应用选择页面中预勾选对应应用。 **说明**： 若Token数组包含无效token（同一管控应用在同一设备上通过[startAppPicker](#startapppicker)接口获取的token为有效token，其它情况均为无效token），系统将自动过滤并仅对有效token生效。 |
 
 返回值：
 
@@ -113,7 +114,7 @@ startAppForm(context: common.Context, appSelection: guardService.AppInfo, appSub
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | context | [common.Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文（仅支持[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext)）。 |
-| appSelection | [guardService.AppInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#appinfo) | 是 | 在许可应用跳转页中展示的应用，最多可展示100个应用。 **说明**： 若Token数组包含无效token，将自动过滤并仅使用有效的Token进行显示和应用。 支持空数组，即用户不设置自定义的许可应用，只显示系统默认的许可应用，是正常场景。 |
+| appSelection | [guardService.AppInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-guardservice#appinfo) | 是 | 在许可应用跳转页中展示的应用，最多可展示100个应用。 **说明**： 1. 若Token数组包含无效token（同一管控应用在同一设备上通过[startAppPicker](#startapppicker)接口获取的token为有效token，其它情况均为无效token），系统将自动过滤并仅使用有效的Token进行展示。 2. 支持空数组，即用户不设置自定义的许可应用，只显示系统默认的许可应用，是正常场景。 |
 | appSubTitle | string | 是 | 许可应用跳转页的子标题。该参数支持的最大长度为200个字符，超出范围时返回1019000009错误码。若传入参数为空字符串，则子标题显示为空。 |
 | displayTrustApp | boolean | 是 | 是否在拉起的跳转页中展示默认的访问不受限应用，true表示展示，false表示不展示。目前支持的默认访问不受限应用仅包括"联系人"。 |
 

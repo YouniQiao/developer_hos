@@ -2,7 +2,8 @@
 title: "ImageData对象"
 upstream_id: "harmonyos-references/js-components-canvas-imagedata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:09.311135"
+content_hash: "576c931754d2"
+synced_at: "2026-07-09T00:58:23.464452"
 ---
 
 # ImageData对象
@@ -33,13 +34,13 @@ ImageData对象可以存储[canvas组件](https://developer.huawei.com/consumer/
 import promptAction from '@ohos.promptAction';
 export default {
   onShow() {
-    const el =this.$refs.canvas;
+    const el = this.$refs.canvas;
     const ctx = el.getContext('2d');
-    ctx.fillRect(0,0,200,200);
-    var imageData = ctx.createImageData(1,1);
+    ctx.fillRect(0, 0, 200, 200);
+    var imageData = ctx.createImageData(1, 1);
     promptAction.showToast({
-      message:imageData,
-      duration:5000
+      message: imageData,
+      duration: 5000
     })
   }
 }

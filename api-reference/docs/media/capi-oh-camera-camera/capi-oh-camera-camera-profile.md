@@ -2,7 +2,8 @@
 title: "Camera_Profile"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-profile"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:15.731475"
+content_hash: "fa851876e020"
+synced_at: "2026-07-09T01:00:25.335180"
 ---
 
 # Camera_Profile

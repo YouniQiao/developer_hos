@@ -2,7 +2,8 @@
 title: "文本滑动选择器弹窗 (TextPickerDialog)"
 upstream_id: "harmonyos-references/ts-methods-textpicker-dialog"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:45.662945"
+content_hash: "ba1cbf9b6d40"
+synced_at: "2026-07-09T00:58:10.983499"
 ---
 
 # 文本滑动选择器弹窗 (TextPickerDialog)
@@ -205,7 +206,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470125.gif)
+ ![](./img/zh-cn_image_0000002631413650.gif)
 
 #### [h2]示例2（自定义样式）
 
@@ -292,7 +293,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350173.png)
+ ![](./img/zh-cn_image_0000002661732881.png)
 
 #### [h2]示例3（悬停态弹窗）
 
@@ -356,7 +357,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230760.gif)
+ ![](./img/zh-cn_image_0000002631253760.gif)
 
 #### [h2]示例4（设置弹窗位置）
 
@@ -397,7 +398,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070850.png)
+ ![](./img/zh-cn_image_0000002661612943.png)
 
 #### [h2]示例5（设置遮蔽区）
 
@@ -442,7 +443,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470127.png)
+ ![](./img/zh-cn_image_0000002631413652.png)
 
 #### [h2]示例6（设置弹窗背板）
 
@@ -484,7 +485,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350175.png)
+ ![](./img/zh-cn_image_0000002661732883.png)
 
 #### [h2]示例7（设置循环滚动）
 
@@ -525,7 +526,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230762.gif)
+ ![](./img/zh-cn_image_0000002631253762.gif)
 
 #### [h2]示例8（设置选中项的背景样式）
 
@@ -563,7 +564,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070852.gif)
+ ![](./img/zh-cn_image_0000002661612945.gif)
 
 #### [h2]示例9（自定义背景模糊效果参数）
 
@@ -600,7 +601,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470129.png)
+ ![](./img/zh-cn_image_0000002631413654.png)
 
 #### [h2]示例10（自定义背景效果参数）
 
@@ -638,4 +639,4 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350177.png)
+ ![](./img/zh-cn_image_0000002661732885.png)

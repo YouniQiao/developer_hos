@@ -2,7 +2,8 @@
 title: "@ohos.data.commonType (数据通用类型)"
 upstream_id: "harmonyos-references/js-apis-data-commontype"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:01.526148"
+content_hash: "c0f846069944"
+synced_at: "2026-07-09T00:57:14.694449"
 ---
 
 # @ohos.data.commonType (数据通用类型)

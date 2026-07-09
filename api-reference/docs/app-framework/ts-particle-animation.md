@@ -2,7 +2,8 @@
 title: "粒子动画 (Particle)"
 upstream_id: "harmonyos-references/ts-particle-animation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:41.949367"
+content_hash: "35187c751169"
+synced_at: "2026-07-09T00:58:09.261048"
 ---
 
 # 粒子动画 (Particle)
@@ -596,7 +597,7 @@ interface ParticleColorUpdaterOptions<UPDATER extends ParticleUpdater> {
 - 当outerRadius小于innerRadius时（即外圆半径小于内圆半径时），会将当前较小的值作为新的内圆半径，将较大的值作为新的外圆半径。
 - 当endAngle小于startAngle时（即结束角度小于起始角度时），会将当前较小的值作为新的起始角度，将较大的值作为新的结束角度。
 
-![](./img/zh-cn_image_0000002626230724.png)
+![](./img/zh-cn_image_0000002631253724.png)
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -819,7 +820,7 @@ struct ParticleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070814.gif)
+ ![](./img/zh-cn_image_0000002661612907.gif)
 
 #### [h2]示例2（图片初始化粒子）
 
@@ -1212,7 +1213,7 @@ struct ParticleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470091.gif)
+ ![](./img/zh-cn_image_0000002631413616.gif)
 
 #### [h2]示例3（粒子扰动场的干扰下运动轨迹发生变化）
 
@@ -1338,7 +1339,7 @@ struct ParticleExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350139.gif)
+ ![](./img/zh-cn_image_0000002661732847.gif)
 
 #### [h2]示例4（调整粒子发射器位置）
 
@@ -1416,7 +1417,7 @@ struct ParticleExample4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230726.gif)
+ ![](./img/zh-cn_image_0000002631253726.gif)
 
 #### [h2]示例5（环形发射器创建）
 
@@ -1502,7 +1503,7 @@ struct ParticleExample5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070816.gif)
+ ![](./img/zh-cn_image_0000002661612909.gif)
 
 #### [h2]示例6（环形发射器更新）
 
@@ -1617,7 +1618,7 @@ struct ParticleExample6 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470093.gif)
+ ![](./img/zh-cn_image_0000002631413618.gif)
 
 #### [h2]示例7（设置波动场和速度场）
 
@@ -1745,4 +1746,4 @@ struct ParticleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350141.gif)
+ ![](./img/zh-cn_image_0000002661732849.gif)

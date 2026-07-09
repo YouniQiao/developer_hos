@@ -2,7 +2,8 @@
 title: "Interface (AVRecorder)"
 upstream_id: "harmonyos-references/arkts-apis-media-avrecorder"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:33.809101"
+content_hash: "43318d99dded"
+synced_at: "2026-07-09T01:00:38.493042"
 ---
 
 # Interface (AVRecorder)

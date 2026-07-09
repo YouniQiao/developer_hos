@@ -2,7 +2,8 @@
 title: "XEG_RTShadowParameters"
 upstream_id: "harmonyos-references/xengine-kit-xeg-rtshadowparameters"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:17.362408"
+content_hash: "171cf443c140"
+synced_at: "2026-07-09T01:01:10.976491"
 ---
 
 # XEG_RTShadowParameters

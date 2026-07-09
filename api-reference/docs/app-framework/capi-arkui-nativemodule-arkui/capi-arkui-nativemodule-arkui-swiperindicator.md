@@ -2,7 +2,8 @@
 title: "ArkUI_SwiperIndicator"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-swiperindicator"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:54.298478"
+content_hash: "2462ed61a826"
+synced_at: "2026-07-09T00:58:44.247252"
 ---
 
 # ArkUI_SwiperIndicator

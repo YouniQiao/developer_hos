@@ -2,7 +2,8 @@
 title: "ArkUI_RenderNodeHandle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-rendernodehandle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:58.017146"
+content_hash: "02e6ee63f051"
+synced_at: "2026-07-09T00:58:47.002388"
 ---
 
 # ArkUI_RenderNodeHandle

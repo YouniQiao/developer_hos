@@ -2,7 +2,8 @@
 title: "ArkUI_AccessibleGridInfo"
 upstream_id: "harmonyos-references/capi-arkui-accessibility-arkui-accessiblegridinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:47.849952"
+content_hash: "7d06f0b71e25"
+synced_at: "2026-07-09T00:58:40.666082"
 ---
 
 # ArkUI_AccessibleGridInfo

@@ -2,7 +2,8 @@
 title: "@ohos.net.sharing (网络共享管理)"
 upstream_id: "harmonyos-references/js-apis-net-sharing"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:51.749517"
+content_hash: "976f4487deb6"
+synced_at: "2026-07-09T00:59:27.526636"
 ---
 
 # @ohos.net.sharing (网络共享管理)

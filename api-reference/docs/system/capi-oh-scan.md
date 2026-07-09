@@ -2,7 +2,8 @@
 title: "OH_Scan"
 upstream_id: "harmonyos-references/capi-oh-scan"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:10.642841"
+content_hash: "dd41cb562dab"
+synced_at: "2026-07-09T00:59:42.619615"
 ---
 
 # OH_Scan

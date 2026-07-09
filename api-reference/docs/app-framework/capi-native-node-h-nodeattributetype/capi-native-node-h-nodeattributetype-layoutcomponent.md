@@ -2,7 +2,8 @@
 title: "ArkUI_NodeAttributeType（布局类组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-layoutcomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:37.391804"
+content_hash: "ce995e7e57cc"
+synced_at: "2026-07-09T00:58:34.485959"
 ---
 
 # ArkUI_NodeAttributeType（布局类组件相关属性）
@@ -191,6 +192,8 @@ NODE_FLEX_OPTION = MAX_NODE_SCOPE_NUM * ARKUI_NODE_FLEX = 1008000
 
 作为属性设置方法参数、属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 
+属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)中size为无效值。
+
 起始版本： 12
 
 参数：
@@ -221,6 +224,8 @@ NODE_FLEX_SPACE = 1008001
  设置Flex容器内子组件的间距，支持属性设置，属性重置和属性获取接口。
 
 作为属性设置方法参数、属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
+
+属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)中size为无效值。
 
 起始版本： 23
 

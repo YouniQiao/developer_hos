@@ -2,7 +2,8 @@
 title: "@ohos.bluetooth.baseProfile (蓝牙baseProfile模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-baseprofile"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:45.470054"
+content_hash: "b65ed6d29632"
+synced_at: "2026-07-09T00:59:22.741322"
 ---
 
 # @ohos.bluetooth.baseProfile (蓝牙baseProfile模块)

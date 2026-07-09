@@ -2,7 +2,8 @@
 title: "scan（星闪扫描能力）"
 upstream_id: "harmonyos-references/nearlink-scan"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:50.430637"
+content_hash: "4e194cbc2c6a"
+synced_at: "2026-07-09T00:59:26.798838"
 ---
 
 # scan（星闪扫描能力）

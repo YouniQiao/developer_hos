@@ -2,7 +2,8 @@
 title: "ImagePacker_Native_"
 upstream_id: "harmonyos-references/capi-image-imagepacker-native-"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:30.235504"
+content_hash: "b5220be0bafa"
+synced_at: "2026-07-09T01:00:35.608101"
 ---
 
 # ImagePacker_Native_

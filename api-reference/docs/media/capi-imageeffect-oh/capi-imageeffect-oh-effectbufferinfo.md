@@ -2,7 +2,8 @@
 title: "OH_EffectBufferInfo"
 upstream_id: "harmonyos-references/capi-imageeffect-oh-effectbufferinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:31.980496"
+content_hash: "37bcf4ace2a4"
+synced_at: "2026-07-09T01:00:36.778589"
 ---
 
 # OH_EffectBufferInfo

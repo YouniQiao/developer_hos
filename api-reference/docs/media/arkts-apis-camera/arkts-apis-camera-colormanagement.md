@@ -2,7 +2,8 @@
 title: "Interface (ColorManagement)"
 upstream_id: "harmonyos-references/arkts-apis-camera-colormanagement"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:11.055829"
+content_hash: "ea377340fb58"
+synced_at: "2026-07-09T01:00:21.453184"
 ---
 
 # Interface (ColorManagement)

@@ -2,7 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-webview-i"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:04.929605"
+content_hash: "de517a6e844f"
+synced_at: "2026-07-09T00:58:53.089186"
 ---
 
 # Interfaces (其他)
@@ -11,6 +12,12 @@ synced_at: "2026-06-24T20:50:04.929605"
 
 - 本模块首批接口从API version 9开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
 - 示例效果请以真机运行为准。
+
+#### 概述
+
+本页面汇总了ArkWeb Webview模块（@kit.ArkWeb）中的辅助接口与数据结构类型。这些类型主要作为Web组件各能力的方法入参、回调出参或状态枚举使用，配合[WebviewController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller)、[WebCookieManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webcookiemanager)、[WebStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webstorage)等核心类共同完成Web网页的加载、渲染、交互、媒体接管及性能优化等控制能力。
+
+本模块提供Web控制能力，网页显示的能力请参考[组件描述](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web)；Web控制能力的完整说明及核心控制器类请参考[模块描述](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview)。
 
 #### WebStorageOrigin
 

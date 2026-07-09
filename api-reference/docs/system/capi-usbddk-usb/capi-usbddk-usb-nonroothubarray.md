@@ -2,7 +2,8 @@
 title: "Usb_NonRootHubArray"
 upstream_id: "harmonyos-references/capi-usbddk-usb-nonroothubarray"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:36.321661"
+content_hash: "575e7f3cf46c"
+synced_at: "2026-07-09T00:59:57.486755"
 ---
 
 # Usb_NonRootHubArray

@@ -2,7 +2,8 @@
 title: "@ohos.multimedia.movingphotoview (动态照片)"
 upstream_id: "harmonyos-references/ohos-multimedia-movingphotoview"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:46.366919"
+content_hash: "b352e8634dcc"
+synced_at: "2026-07-09T01:00:47.850719"
 ---
 
 # @ohos.multimedia.movingphotoview (动态照片)
@@ -478,7 +479,7 @@ class MediaDataHandlerMovingPhoto implements photoAccessHelper.MediaAssetDataHan
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626071644.gif)
+ ![](./img/zh-cn_image_0000002661733685.gif)
 
 #### 示例2：在元服务中使用动态照片
 
@@ -573,7 +574,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470921.gif)
+ ![](./img/zh-cn_image_0000002631254564.gif)
 
 #### 示例3：图像分析功能使用
 
@@ -728,4 +729,4 @@ class MediaDataHandlerMovingPhoto implements photoAccessHelper.MediaAssetDataHan
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350971.gif)
+ ![](./img/zh-cn_image_0000002661613749.gif)

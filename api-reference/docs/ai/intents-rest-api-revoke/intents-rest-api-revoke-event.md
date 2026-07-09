@@ -2,7 +2,8 @@
 title: "事件撤销"
 upstream_id: "harmonyos-references/intents-rest-api-revoke-event"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:57.565745"
+content_hash: "00c991ba3ac4"
+synced_at: "2026-07-09T01:01:42.917654"
 ---
 
 # 事件撤销
@@ -49,11 +50,11 @@ Request Body
 
 | **参数** | **是否必选** | **类型** | **描述** |
 | --- | --- | --- | --- |
-| requestTime | 是 | String | 接口请求UTC时间戳，格式yyyymmddhhmmssSSS。 |
+| requestTime | 是 | String | 接口请求UTC时间戳，格式yyyyMMddhhmmssSSS。 |
 | revokeBy | 否 | String | 默认值为REQUEST_ID，调用方可不带。 |
 | identifier | 是 | String | 请求ID，标识唯一数据。 |
 | eventName | 否 | String | 默认按REQUEST_ID方式撤销时可不带该字段。 |
-| openId | 否 | String | 华为分配的openId，openid推送的事件需要填openid——openId与sid不可同时为空，至少填入一项。 |
+| openId | 否 | String | 华为分配的openId，openId推送的事件需要填openId——openId与sid不可同时为空，至少填入一项。 |
 | sid | 否 | String | 华为分配的sid，sid推送的事件需要填sid——openId与sid不可同时为空，至少填入一项。 |
 | abilityId | 是 | String | 上架服务的服务标识。 |
 

@@ -2,7 +2,8 @@
 title: "marquee"
 upstream_id: "harmonyos-references/js-lite-components-basic-marquee"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:19.755363"
+content_hash: "fc899a80e37e"
+synced_at: "2026-07-09T00:58:27.769029"
 ---
 
 # marquee
@@ -115,4 +116,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350523.gif)
+ ![](./img/zh-cn_image_0000002661613295.gif)

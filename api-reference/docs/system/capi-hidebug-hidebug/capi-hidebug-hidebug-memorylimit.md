@@ -2,7 +2,8 @@
 title: "HiDebug_MemoryLimit"
 upstream_id: "harmonyos-references/capi-hidebug-hidebug-memorylimit"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:48.989299"
+content_hash: "7508417fd18e"
+synced_at: "2026-07-09T01:00:05.081118"
 ---
 
 # HiDebug_MemoryLimit

@@ -2,7 +2,8 @@
 title: "服务端关键事件通知"
 upstream_id: "harmonyos-references/iap-key-event-notifications"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:29.484081"
+content_hash: "e63a6c5164bb"
+synced_at: "2026-07-09T01:01:22.146122"
 ---
 
 # 服务端关键事件通知
@@ -52,7 +53,7 @@ synced_at: "2026-06-24T20:53:29.484081"
 
 关键事件通知处理流程建议如下：
 
-![](./img/zh-cn_image_0000002626231600.png)
+![](./img/zh-cn_image_0000002631414502.png)
 
 1. IAP服务器发送订单/订阅关键事件通知。
 2. 应用服务器收到通知请求后，从通知中获取购买Token。

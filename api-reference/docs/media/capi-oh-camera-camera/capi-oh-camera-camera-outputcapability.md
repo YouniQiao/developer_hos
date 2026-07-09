@@ -2,7 +2,8 @@
 title: "Camera_OutputCapability"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-outputcapability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:15.941218"
+content_hash: "c4e75937792b"
+synced_at: "2026-07-09T01:00:25.611443"
 ---
 
 # Camera_OutputCapability

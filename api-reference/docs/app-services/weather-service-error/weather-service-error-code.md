@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/weather-service-error-code"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:54.543310"
+content_hash: "ce15f4b70afc"
+synced_at: "2026-07-09T01:01:40.321802"
 ---
 
 # ArkTS API错误码

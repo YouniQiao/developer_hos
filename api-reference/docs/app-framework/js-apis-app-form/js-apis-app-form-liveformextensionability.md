@@ -2,7 +2,8 @@
 title: "@ohos.app.form.LiveFormExtensionAbility (LiveFormExtensionAbility)"
 upstream_id: "harmonyos-references/js-apis-app-form-liveformextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:17.859317"
+content_hash: "e40f77aa7709"
+synced_at: "2026-07-09T00:59:03.017898"
 ---
 
 # @ohos.app.form.LiveFormExtensionAbility (LiveFormExtensionAbility)
@@ -103,7 +104,7 @@ export default class LiveFormExtAbility extends LiveFormExtensionAbility {
 }
 ```
 
-#### [h2]LiveFormInfo
+#### LiveFormInfo
 
 互动卡片信息。
 
@@ -117,7 +118,7 @@ export default class LiveFormExtAbility extends LiveFormExtensionAbility {
 | --- | --- | --- | --- | --- |
 | formId | string | 否 | 否 | 卡片id。 |
 | rect | [formInfo.Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-forminfo#rect20) | 否 | 否 | 卡片位置和大小信息。 |
-| borderRadius | number | 否 | 否 | 卡片圆角半径信息。取值大于0，单位vp。 |
+| borderRadius | number | 否 | 否 | 卡片圆角半径信息。取值大于等于0，单位vp。 |
 
 #### 附录
 

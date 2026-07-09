@@ -2,7 +2,8 @@
 title: "Interface (Heatmap)"
 upstream_id: "harmonyos-references/map-map-heatmap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:34.398541"
+content_hash: "1c99d509ac36"
+synced_at: "2026-07-09T01:01:26.469916"
 ---
 
 # Interface (Heatmap)

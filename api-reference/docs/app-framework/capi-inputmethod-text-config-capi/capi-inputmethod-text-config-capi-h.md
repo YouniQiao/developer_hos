@@ -2,7 +2,8 @@
 title: "inputmethod_text_config_capi.h"
 upstream_id: "harmonyos-references/capi-inputmethod-text-config-capi-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:19.951854"
+content_hash: "7ed2d25597af"
+synced_at: "2026-07-09T00:59:05.060783"
 ---
 
 # inputmethod_text_config_capi.h

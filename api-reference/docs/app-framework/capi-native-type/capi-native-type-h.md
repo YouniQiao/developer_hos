@@ -2,7 +2,8 @@
 title: "native_type.h"
 upstream_id: "harmonyos-references/capi-native-type-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:41.247117"
+content_hash: "4375b361a32a"
+synced_at: "2026-07-09T00:58:38.479015"
 ---
 
 # native_type.h
@@ -114,7 +115,7 @@ synced_at: "2026-06-24T20:49:41.247117"
 | [OH_ArkUI_TextEditorTextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-texteditortextstyle) | OH_ArkUI_TextEditorTextStyle | 定义文本编辑器的文本样式。 |
 | [OH_ArkUI_FontWeightConfigs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-fontweightconfigs) | OH_ArkUI_FontWeightConfigs | 定义文本的字体粗细配置。可以通过[OH_ArkUI_FontWeightConfigs_Create](#oh_arkui_fontweightconfigs_create) 接口创建对应的文本字体粗细配置对象。可以通过[OH_ArkUI_FontWeightConfigs_Destroy](#oh_arkui_fontweightconfigs_destroy) 接口销毁文本字体粗细配置对象。配置创建后通过[OH_ArkUI_FontWeightConfigs_SetEnableVariableFontWeight](#oh_arkui_fontweightconfigs_setenablevariablefontweight) 接口设置是否启用可变字体粗细调节。配置创建后通过[OH_ArkUI_FontWeightConfigs_GetEnableVariableFontWeight](#oh_arkui_fontweightconfigs_getenablevariablefontweight) 接口查看是否启用了可变字体粗细调节。配置创建后通过[OH_ArkUI_FontWeightConfigs_SetEnableDeviceFontWeightCategory](#oh_arkui_fontweightconfigs_setenabledevicefontweightcategory) 接口设置文本字体粗细是否跟随设备的字体粗细级别更新。配置创建后通过[OH_ArkUI_FontWeightConfigs_GetEnableDeviceFontWeightCategory](#oh_arkui_fontweightconfigs_getenabledevicefontweightcategory) 接口查看文本字体粗细是否跟随设备的字体粗细级别更新。 |
 | [OH_ArkUI_FontConfigs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-fontconfigs) | OH_ArkUI_FontConfigs | 定义文本的字体配置。可以通过[OH_ArkUI_FontConfigs_Create](#oh_arkui_fontconfigs_create) 接口创建文本字体配置对象。可以通过[OH_ArkUI_FontConfigs_Destroy](#oh_arkui_fontconfigs_destroy) 接口销毁文本字体配置对象。配置创建后通过[OH_ArkUI_FontConfigs_SetFontWeightConfigs](#oh_arkui_fontconfigs_setfontweightconfigs) 接口设置文本的字体粗细配置。配置创建后通过[OH_ArkUI_FontConfigs_GetFontWeightConfigs](#oh_arkui_fontconfigs_getfontweightconfigs) 接口查看文本的字体粗细配置。 |
-| [OH_ArkUI_TextController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-textcontroller) | OH_ArkUI_TextController | 定义文本组件的控制器。可以通过[OH_ArkUI_TextController_Create](#oh_arkui_textcontroller_create)创建文本组件控制器对象。可以通过[OH_ArkUI_TextController_Destroy](#oh_arkui_textcontroller_destroy)接口销毁文本组件控制器对象。控制器创建后通过[OH_ArkUI_TextController_SetStyledString](#oh_arkui_textcontroller_setstyledstring) 接口设置文本组件的属性字符串。 |
+| [OH_ArkUI_TextController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-textcontroller) | OH_ArkUI_TextController | 定义文本组件的控制器。可以通过[OH_ArkUI_TextController_Create](#oh_arkui_textcontroller_create)创建文本组件控制器对象，通过[OH_ArkUI_TextController_Destroy](#oh_arkui_textcontroller_destroy)接口销毁文本组件控制器对象。控制器创建后通过[OH_ArkUI_TextController_SetStyledString](#oh_arkui_textcontroller_setstyledstring) 接口设置文本组件的属性字符串。 |
 
 #### [h2]枚举
 
@@ -191,7 +192,7 @@ synced_at: "2026-06-24T20:49:41.247117"
 | [ArkUI_ColorStrategy](#arkui_colorstrategy) | ArkUI_ColorStrategy | 前景和阴影颜色的枚举值。 |
 | [ArkUI_FlexAlignment](#arkui_flexalignment) | ArkUI_FlexAlignment | 定义垂直方向对齐方式。 |
 | [ArkUI_FlexDirection](#arkui_flexdirection) | ArkUI_FlexDirection | 定义Flex容器的主轴方向。 |
-| [ArkUI_FlexWrap](#arkui_flexwrap) | ArkUI_FlexWrap | 定义Flex行列布局模式模式。 |
+| [ArkUI_FlexWrap](#arkui_flexwrap) | ArkUI_FlexWrap | 定义Flex行列布局模式。 |
 | [ArkUI_Visibility](#arkui_visibility) | ArkUI_Visibility | 控制组件的显隐枚举值。 |
 | [ArkUI_CalendarAlignment](#arkui_calendaralignment) | ArkUI_CalendarAlignment | 日历选择器与入口组件对齐方式。 |
 | [ArkUI_MaskType](#arkui_masktype) | ArkUI_MaskType | 遮罩类型枚举。遮罩是一种用于限制组件显示区域的手段，它利用特定的形状对组件内容进行裁剪，从而实现只有遮罩区域内的内容才可见的效果。 |
@@ -1469,12 +1470,12 @@ enum ArkUI_ShadowStyle
 
 | 枚举项 | 描述 |
 | --- | --- |
-| ARKUI_SHADOW_STYLE_OUTER_DEFAULT_XS = 0 | 超小阴影。 ![](./img/zh-cn_image_0000002626231208.png) |
-| ARKUI_SHADOW_STYLE_OUTER_DEFAULT_SM = 1 | 小阴影。 ![](./img/zh-cn_image_0000002626071296.png) |
-| ARKUI_SHADOW_STYLE_OUTER_DEFAULT_MD = 2 | 中阴影。 ![](./img/zh-cn_image_0000002656470573.png) |
-| ARKUI_SHADOW_STYLE_OUTER_DEFAULT_LG = 3 | 大阴影。 ![](./img/zh-cn_image_0000002656350623.png) |
-| ARKUI_SHADOW_STYLE_OUTER_FLOATING_SM = 4 | 浮动小阴影。 ![](./img/zh-cn_image_0000002626231210.png) |
-| ARKUI_SHADOW_STYLE_OUTER_FLOATING_MD = 5 | 浮动中阴影。 ![](./img/zh-cn_image_0000002626071298.png) |
+| ARKUI_SHADOW_STYLE_OUTER_DEFAULT_XS = 0 | 超小阴影。 ![](./img/zh-cn_image_0000002631414104.png) |
+| ARKUI_SHADOW_STYLE_OUTER_DEFAULT_SM = 1 | 小阴影。 ![](./img/zh-cn_image_0000002661733333.png) |
+| ARKUI_SHADOW_STYLE_OUTER_DEFAULT_MD = 2 | 中阴影。 ![](./img/zh-cn_image_0000002631254212.png) |
+| ARKUI_SHADOW_STYLE_OUTER_DEFAULT_LG = 3 | 大阴影。 ![](./img/zh-cn_image_0000002661613393.png) |
+| ARKUI_SHADOW_STYLE_OUTER_FLOATING_SM = 4 | 浮动小阴影。 ![](./img/zh-cn_image_0000002631414106.png) |
+| ARKUI_SHADOW_STYLE_OUTER_FLOATING_MD = 5 | 浮动中阴影。 ![](./img/zh-cn_image_0000002661733335.png) |
 
 #### [h2]ArkUI_AnimationCurve
 
@@ -1856,19 +1857,19 @@ enum ArkUI_BlurStyle
 
 | 枚举项 | 描述 |
 | --- | --- |
-| ARKUI_BLUR_STYLE_THIN = 0 | 轻薄材质模糊。 ![](./img/zh-cn_image_0000002656470575.png) |
-| ARKUI_BLUR_STYLE_REGULAR = 1 | 普通厚度材质模糊。 ![](./img/zh-cn_image_0000002656350625.png) |
-| ARKUI_BLUR_STYLE_THICK = 2 | 厚材质模糊。 ![](./img/zh-cn_image_0000002626231212.png) |
-| ARKUI_BLUR_STYLE_BACKGROUND_THIN = 3 | 近距景深模糊。 ![](./img/zh-cn_image_0000002626071300.png) |
-| ARKUI_BLUR_STYLE_BACKGROUND_REGULAR = 4 | 中距景深模糊。 ![](./img/zh-cn_image_0000002656470577.png) |
-| ARKUI_BLUR_STYLE_BACKGROUND_THICK = 5 | 远距景深模糊。 ![](./img/zh-cn_image_0000002656350627.png) |
-| ARKUI_BLUR_STYLE_BACKGROUND_ULTRA_THICK = 6 | 超远距景深模糊。 ![](./img/zh-cn_image_0000002626231214.png) |
-| ARKUI_BLUR_STYLE_NONE = 7 | 关闭模糊。 ![](./img/zh-cn_image_0000002626071302.png) |
-| ARKUI_BLUR_STYLE_COMPONENT_ULTRA_THIN = 8 | 组件超轻薄材质模糊。 ![](./img/zh-cn_image_0000002656470579.png) |
-| ARKUI_BLUR_STYLE_COMPONENT_THIN = 9 | 组件轻薄材质模糊。 ![](./img/zh-cn_image_0000002656350629.png) |
-| ARKUI_BLUR_STYLE_COMPONENT_REGULAR = 10 | 组件普通材质模糊。 ![](./img/zh-cn_image_0000002626231216.png) |
-| ARKUI_BLUR_STYLE_COMPONENT_THICK = 11 | 组件厚材质模糊。 ![](./img/zh-cn_image_0000002626071304.png) |
-| ARKUI_BLUR_STYLE_COMPONENT_ULTRA_THICK = 12 | 组件超厚材质模糊。 ![](./img/zh-cn_image_0000002656470581.png) |
+| ARKUI_BLUR_STYLE_THIN = 0 | 轻薄材质模糊。 ![](./img/zh-cn_image_0000002631254214.png) |
+| ARKUI_BLUR_STYLE_REGULAR = 1 | 普通厚度材质模糊。 ![](./img/zh-cn_image_0000002661613395.png) |
+| ARKUI_BLUR_STYLE_THICK = 2 | 厚材质模糊。 ![](./img/zh-cn_image_0000002631414108.png) |
+| ARKUI_BLUR_STYLE_BACKGROUND_THIN = 3 | 近距景深模糊。 ![](./img/zh-cn_image_0000002661733337.png) |
+| ARKUI_BLUR_STYLE_BACKGROUND_REGULAR = 4 | 中距景深模糊。 ![](./img/zh-cn_image_0000002631254216.png) |
+| ARKUI_BLUR_STYLE_BACKGROUND_THICK = 5 | 远距景深模糊。 ![](./img/zh-cn_image_0000002661613397.png) |
+| ARKUI_BLUR_STYLE_BACKGROUND_ULTRA_THICK = 6 | 超远距景深模糊。 ![](./img/zh-cn_image_0000002631414110.png) |
+| ARKUI_BLUR_STYLE_NONE = 7 | 关闭模糊。 ![](./img/zh-cn_image_0000002661733339.png) |
+| ARKUI_BLUR_STYLE_COMPONENT_ULTRA_THIN = 8 | 组件超轻薄材质模糊。 ![](./img/zh-cn_image_0000002631254218.png) |
+| ARKUI_BLUR_STYLE_COMPONENT_THIN = 9 | 组件轻薄材质模糊。 ![](./img/zh-cn_image_0000002661613399.png) |
+| ARKUI_BLUR_STYLE_COMPONENT_REGULAR = 10 | 组件普通材质模糊。 ![](./img/zh-cn_image_0000002631414112.png) |
+| ARKUI_BLUR_STYLE_COMPONENT_THICK = 11 | 组件厚材质模糊。 ![](./img/zh-cn_image_0000002661733341.png) |
+| ARKUI_BLUR_STYLE_COMPONENT_ULTRA_THICK = 12 | 组件超厚材质模糊。 ![](./img/zh-cn_image_0000002631254220.png) |
 
 #### [h2]ArkUI_BlurStyleActivePolicy
 
@@ -2784,7 +2785,7 @@ enum ArkUI_ErrorCode
 | ARKUI_ERROR_CODE_BUFFER_SIZE_ERROR = 106202 | 传入的buffer size异常（数据过大）。 错误码的详细介绍请参见[106202 传入的buffer size异常](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-router#section106202-传入的buffer-size异常)。 |
 | ARKUI_ERROR_CODE_NODE_NOT_ON_MAIN_TREE = 106203 | 传入的节点未挂载到组件树上。错误码的详细介绍请参见[106203 传入的节点未挂载到组件树上](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-node#section106203-传入的节点未挂载到组件树上)。 **起始版本：** 15 |
 | ARKUI_ERROR_CODE_NODE_ON_INVALID_THREAD = 106204 | 不支持在非UI线程操作传入的节点。错误码的详细介绍请参见[106204 不支持在非UI线程操作传入的节点](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-node#section106204-不支持在非ui线程操作传入的节点)。 **起始版本：** 22 |
-| ARKUI_ERROR_CODE_FORCE_DARK_CONFIG_INVALID = 106205 | 反色能力入参错误。错误码的详细介绍请参见[106205 反色能力入参错误](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-force-dark#section106205-反色能力入参错误)。 **起始版本：** 20 |
+| ARKUI_ERROR_CODE_FORCE_DARK_CONFIG_INVALID = 106205 | 反色能力配置错误。错误码的详细介绍请参见[106205 反色能力配置错误](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-force-dark#section106205-反色能力配置错误)。 **起始版本：** 20 |
 | ARKUI_ERROR_CODE_NODE_IS_ADOPTED = 106206 | 节点已被接纳为附属节点。错误码的详细介绍请参见[106206 节点已被接纳为附属节点](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-adopt#section106206-节点已被接纳为附属节点)。 **起始版本：** 22 |
 | ARKUI_ERROR_CODE_NODE_HAS_PARENT = 106207 | 被接纳的节点已有父节点。错误码的详细介绍请参见[106207 被接纳的附属节点已有父节点](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-adopt#section106207-被接纳的附属节点已有父节点)。 **起始版本：** 22 |
 | ARKUI_ERROR_CODE_NODE_CAN_NOT_BE_ADOPTED = 106208 | 节点无法被接纳为附属节点。错误码的详细介绍请参见[106208 节点无法被接纳为附属节点](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-adopt#section106208-节点无法被接纳为附属节点)。 **起始版本：** 22 |
@@ -11777,7 +11778,7 @@ ArkUI_ErrorCode OH_ArkUI_TextEditorPlaceholderOptions_SetFontWeight(OH_ArkUI_Tex
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_ArkUI_TextEditorPlaceholderOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions)* options | 指向[OH_ArkUI_TextEditorPlaceholderOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions)对象的指针。 |
-| uint32_t fontWeight | 字体粗细。取值范围为[100, 900]中的整百数值，例如100、900。 |
+| uint32_t fontWeight | 字体粗细。取值为[ArkUI_FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_fontweight)中的枚举值，默认值为ARKUI_FONT_WEIGHT_W400。 |
 
 返回：
 
@@ -11801,7 +11802,7 @@ ArkUI_ErrorCode OH_ArkUI_TextEditorPlaceholderOptions_GetFontWeight(OH_ArkUI_Tex
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_ArkUI_TextEditorPlaceholderOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions)* options | 指向[OH_ArkUI_TextEditorPlaceholderOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions)对象的指针。 |
-| uint32_t* fontWeight | 字体粗细。取值范围为[100, 900]中的整百数值，例如100、900。 |
+| uint32_t* fontWeight | 字体粗细。取值为[ArkUI_FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_fontweight)中的枚举值，默认值为ARKUI_FONT_WEIGHT_W400。 |
 
 返回：
 
@@ -13190,7 +13191,7 @@ ArkUI_ErrorCode OH_ArkUI_TextEditorTextStyle_SetFontWeight(OH_ArkUI_TextEditorTe
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_ArkUI_TextEditorTextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-texteditortextstyle)* style | TextEditor组件文本样式。 |
-| uint32_t fontWeight | 字体粗细。取值范围为[100, 900]中的整百数值，例如100、900。 |
+| uint32_t fontWeight | 字体粗细。取值为[ArkUI_FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_fontweight)中的枚举值，默认值为ARKUI_FONT_WEIGHT_W400。 |
 
 返回：
 
@@ -13214,7 +13215,7 @@ ArkUI_ErrorCode OH_ArkUI_TextEditorTextStyle_GetFontWeight(OH_ArkUI_TextEditorTe
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_ArkUI_TextEditorTextStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-texteditortextstyle)* style | TextEditor组件文本样式。 |
-| uint32_t* fontWeight | 字体粗细。取值范围为[100, 900]中的整百数值，例如100、900。 |
+| uint32_t* fontWeight | 字体粗细。取值为[ArkUI_FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_fontweight)中的枚举值，默认值为ARKUI_FONT_WEIGHT_W400。 |
 
 返回：
 

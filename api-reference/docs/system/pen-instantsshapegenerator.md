@@ -2,16 +2,13 @@
 title: "InstantShapeGenerator（一笔成形功能）"
 upstream_id: "harmonyos-references/pen-instantsshapegenerator"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:38.599494"
+content_hash: "d58cb4a26ad4"
+synced_at: "2026-07-09T00:59:58.738923"
 ---
 
 # InstantShapeGenerator（一笔成形功能）
 
 一笔成形的功能入口类。
-
-模型约束： 此接口仅可在Stage模型下使用。
-
-系统能力： SystemCapability.Stylus.Handwrite
 
 起始版本： 5.0.0(12)
 

@@ -2,7 +2,8 @@
 title: "Interface (BasePriorityOverlay)"
 upstream_id: "harmonyos-references/map-map-basepriorityoverlay"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:32.567256"
+content_hash: "79fd9aebb9e2"
+synced_at: "2026-07-09T01:01:24.949332"
 ---
 
 # Interface (BasePriorityOverlay)
@@ -109,7 +110,7 @@ setPriority(priority: number): void
 
 | 参数名 | **类型** | 必填 | **说明** |
 | --- | --- | --- | --- |
-| priority | number | 是 | 设置覆盖物的碰撞优先级。 |
+| priority | number | 是 | 覆盖物的碰撞优先级，值越大优先级越低。 |
 
 示例：
 

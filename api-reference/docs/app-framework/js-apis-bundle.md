@@ -2,7 +2,8 @@
 title: "@ohos.bundle (Bundle模块)"
 upstream_id: "harmonyos-references/js-apis-bundle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:56.257498"
+content_hash: "36519a5fe739"
+synced_at: "2026-07-09T00:57:11.905781"
 ---
 
 # @ohos.bundle (Bundle模块)

@@ -1,9 +1,12 @@
 ---
+
 title: "逻辑组件错误码"
 upstream_id: "harmonyos-references/errorcode-rendering-control"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:01.338819"
+synced_at: "2026-07-09T00:58:49.143868"
+content_hash: "031c5135c753"
 ---
+
 
 # 逻辑组件错误码
 

@@ -2,7 +2,8 @@
 title: "Input_KeyEvent"
 upstream_id: "harmonyos-references/capi-input-input-keyevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:19.674131"
+content_hash: "cab9ebb91eab"
+synced_at: "2026-07-09T00:59:49.942989"
 ---
 
 # Input_KeyEvent

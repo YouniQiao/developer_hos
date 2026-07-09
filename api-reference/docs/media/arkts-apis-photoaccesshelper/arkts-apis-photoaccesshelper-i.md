@@ -2,7 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-i"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:45.603333"
+content_hash: "df1821aa1058"
+synced_at: "2026-07-09T01:00:47.028243"
 ---
 
 # Interfaces (其他)

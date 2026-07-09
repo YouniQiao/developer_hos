@@ -2,7 +2,8 @@
 title: "OH_Drawing_PlaceholderSpan"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-placeholderspan"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:05.986246"
+content_hash: "bba8b9e7911c"
+synced_at: "2026-07-09T01:01:00.686078"
 ---
 
 # OH_Drawing_PlaceholderSpan

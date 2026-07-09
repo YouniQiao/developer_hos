@@ -2,7 +2,8 @@
 title: "Telephony"
 upstream_id: "harmonyos-references/capi-telephony"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:04.934793"
+content_hash: "a80186ca6275"
+synced_at: "2026-07-09T00:59:37.937845"
 ---
 
 # Telephony

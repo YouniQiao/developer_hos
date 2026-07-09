@@ -2,7 +2,8 @@
 title: "弹出框 (Dialog)"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-dialog"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:45.947002"
+content_hash: "b33e40e14e16"
+synced_at: "2026-07-09T00:58:11.050909"
 ---
 
 # 弹出框 (Dialog)
@@ -268,7 +269,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230764.png)
+ ![](./img/zh-cn_image_0000002631253764.png)
 
 #### [h2]示例2（纯列表弹出框）
 
@@ -334,7 +335,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070854.png)
+ ![](./img/zh-cn_image_0000002661612947.png)
 
 #### [h2]示例3（文本与勾选弹出框）
 
@@ -396,7 +397,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470131.png)
+ ![](./img/zh-cn_image_0000002631413656.png)
 
 #### [h2]示例4（纯文本弹出框）
 
@@ -450,7 +451,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350179.png)
+ ![](./img/zh-cn_image_0000002661732887.png)
 
 #### [h2]示例5（进度加载类弹出框）
 
@@ -490,7 +491,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230766.gif)
+ ![](./img/zh-cn_image_0000002631253766.gif)
 
 #### [h2]示例6（自定义主题风格弹出框）
 
@@ -546,7 +547,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070856.png)
+ ![](./img/zh-cn_image_0000002661612949.png)
 
 #### [h2]示例7（自定义深浅色模式弹出框）
 
@@ -587,7 +588,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470133.png)
+ ![](./img/zh-cn_image_0000002631413658.png)
 
 #### [h2]示例8（自定义内容弹出框）
 
@@ -645,7 +646,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350181.png)
+ ![](./img/zh-cn_image_0000002661732889.png)
 
 #### [h2]示例9（跟手弹出框）
 
@@ -705,7 +706,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230768.png)
+ ![](./img/zh-cn_image_0000002631253768.png)
 
 #### [h2]示例10（弹出框按钮设置默认获焦）
 
@@ -756,4 +757,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070858.png)
+ ![](./img/zh-cn_image_0000002661612951.png)

@@ -2,7 +2,8 @@
 title: "划词服务错误码"
 upstream_id: "harmonyos-references/errorcode-selection"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:13.692627"
+content_hash: "9b741e4cf598"
+synced_at: "2026-07-09T00:59:45.100372"
 ---
 
 # 划词服务错误码

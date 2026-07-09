@@ -2,7 +2,8 @@
 title: "MediaKeySession"
 upstream_id: "harmonyos-references/capi-avplayer-mediakeysession"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:38.506632"
+content_hash: "fa64240a4759"
+synced_at: "2026-07-09T01:00:42.544324"
 ---
 
 # MediaKeySession

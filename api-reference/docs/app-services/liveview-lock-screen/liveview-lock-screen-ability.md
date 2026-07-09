@@ -2,7 +2,8 @@
 title: "LiveViewLockScreenExtensionAbility"
 upstream_id: "harmonyos-references/liveview-lock-screen-ability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:30.062745"
+content_hash: "2ca89098aa04"
+synced_at: "2026-07-09T01:01:22.465211"
 ---
 
 # LiveViewLockScreenExtensionAbility

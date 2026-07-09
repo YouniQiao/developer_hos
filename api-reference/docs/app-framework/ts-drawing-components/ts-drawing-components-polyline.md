@@ -2,7 +2,8 @@
 title: "Polyline"
 upstream_id: "harmonyos-references/ts-drawing-components-polyline"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:36.321167"
+content_hash: "cc5a1a2912eb"
+synced_at: "2026-07-09T00:58:04.832338"
 ---
 
 # Polyline
@@ -329,7 +330,7 @@ struct PolylineExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350117.png)
+ ![](./img/zh-cn_image_0000002661732825.png)
 
 #### [h2]示例2（宽和高使用不同参数类型绘制折线）
 
@@ -362,7 +363,7 @@ struct PolylineTypeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230704.png)
+ ![](./img/zh-cn_image_0000002631253704.png)
 
 #### [h2]示例3（使用attributeModifier动态设置Polyline组件的属性）
 
@@ -404,4 +405,4 @@ struct PolylineModifierDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070794.png)
+ ![](./img/zh-cn_image_0000002661612885.png)

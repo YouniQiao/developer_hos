@@ -2,7 +2,8 @@
 title: "OH_WindowManager_FrameMetrics"
 upstream_id: "harmonyos-references/capi-windowmanager-oh-windowmanager-framemetrics"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:56.921093"
+content_hash: "153d476ecfed"
+synced_at: "2026-07-09T00:58:46.023737"
 ---
 
 # OH_WindowManager_FrameMetrics

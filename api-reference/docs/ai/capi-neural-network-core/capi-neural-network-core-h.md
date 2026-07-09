@@ -2,7 +2,8 @@
 title: "neural_network_core.h"
 upstream_id: "harmonyos-references/capi-neural-network-core-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:59.415358"
+content_hash: "86fec9cfab77"
+synced_at: "2026-07-09T01:01:45.208436"
 ---
 
 # neural_network_core.h

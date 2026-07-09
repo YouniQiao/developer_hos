@@ -1,9 +1,12 @@
 ---
+
 title: "错误码"
 upstream_id: "harmonyos-references/gamecontroller-c-error-code"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:25.175167"
+synced_at: "2026-07-09T01:01:17.849620"
+content_hash: "fa898959e9be"
 ---
+
 
 # 错误码
 

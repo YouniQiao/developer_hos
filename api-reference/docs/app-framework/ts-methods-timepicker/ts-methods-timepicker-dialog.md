@@ -2,7 +2,8 @@
 title: "时间滑动选择器弹窗 (TimePickerDialog)"
 upstream_id: "harmonyos-references/ts-methods-timepicker-dialog"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:44.807851"
+content_hash: "5f376afc0f4d"
+synced_at: "2026-07-09T00:58:10.894329"
 ---
 
 # 时间滑动选择器弹窗 (TimePickerDialog)
@@ -150,7 +151,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350167.gif)
+ ![](./img/zh-cn_image_0000002661732875.gif)
 
 #### [h2]示例2（自定义样式）
 
@@ -208,7 +209,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230754.png)
+ ![](./img/zh-cn_image_0000002631253754.png)
 
 #### [h2]示例3（悬停态弹窗）
 
@@ -263,7 +264,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070844.gif)
+ ![](./img/zh-cn_image_0000002661612937.gif)
 
 #### [h2]示例4（设置弹窗位置）
 
@@ -297,7 +298,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470121.png)
+ ![](./img/zh-cn_image_0000002631413646.png)
 
 #### [h2]示例5（设置遮蔽区）
 
@@ -330,7 +331,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350169.png)
+ ![](./img/zh-cn_image_0000002661732877.png)
 
 #### [h2]示例6（设置弹窗背板）
 
@@ -365,7 +366,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230756.png)
+ ![](./img/zh-cn_image_0000002631253756.png)
 
 #### [h2]示例7（设置时间滑动选择器弹窗的起始时间）
 
@@ -401,7 +402,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070846.png)
+ ![](./img/zh-cn_image_0000002661612939.png)
 
 #### [h2]示例8（设置时间滑动选择器弹窗的结束时间）
 
@@ -437,7 +438,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470123.png)
+ ![](./img/zh-cn_image_0000002631413648.png)
 
 #### [h2]示例9（设置上午下午跟随时间联动）
 
@@ -472,7 +473,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350171.gif)
+ ![](./img/zh-cn_image_0000002661732879.gif)
 
 #### [h2]示例10（自定义背景模糊效果参数）
 
@@ -506,7 +507,7 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230758.png)
+ ![](./img/zh-cn_image_0000002631253758.png)
 
 #### [h2]示例11（自定义背景效果参数）
 
@@ -541,4 +542,4 @@ struct TimePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070848.png)
+ ![](./img/zh-cn_image_0000002661612941.png)

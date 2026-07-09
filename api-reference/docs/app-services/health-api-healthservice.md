@@ -2,7 +2,8 @@
 title: "healthService (运动健康联动服务)"
 upstream_id: "harmonyos-references/health-api-healthservice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:26.366820"
+content_hash: "71bfe9d19477"
+synced_at: "2026-07-09T01:01:19.427723"
 ---
 
 # healthService (运动健康联动服务)

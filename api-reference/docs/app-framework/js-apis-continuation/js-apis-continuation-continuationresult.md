@@ -2,7 +2,8 @@
 title: "ContinuationResult"
 upstream_id: "harmonyos-references/js-apis-continuation-continuationresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:49.123025"
+content_hash: "422294cdd565"
+synced_at: "2026-07-09T00:57:05.990767"
 ---
 
 # ContinuationResult

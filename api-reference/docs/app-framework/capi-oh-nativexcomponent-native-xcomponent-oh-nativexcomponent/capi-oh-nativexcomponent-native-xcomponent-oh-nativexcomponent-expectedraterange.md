@@ -2,7 +2,8 @@
 title: "OH_NativeXComponent_ExpectedRateRange"
 upstream_id: "harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent-expectedraterange"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:49.121828"
+content_hash: "1053b0be3a7a"
+synced_at: "2026-07-09T00:58:41.357811"
 ---
 
 # OH_NativeXComponent_ExpectedRateRange

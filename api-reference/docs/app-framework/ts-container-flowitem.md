@@ -2,7 +2,8 @@
 title: "FlowItem"
 upstream_id: "harmonyos-references/ts-container-flowitem"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:58.567220"
+content_hash: "575c105ed2df"
+synced_at: "2026-07-09T00:57:48.590731"
 ---
 
 # FlowItem

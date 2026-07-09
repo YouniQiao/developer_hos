@@ -2,7 +2,8 @@
 title: "ArkUI_DragAndDropInfo"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-draganddropinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:43.910439"
+content_hash: "0556833bf599"
+synced_at: "2026-07-09T00:58:38.502484"
 ---
 
 # ArkUI_DragAndDropInfo

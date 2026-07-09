@@ -2,7 +2,8 @@
 title: "OH_Drawing_ShadowLayer"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-shadowlayer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:09.880652"
+content_hash: "d7d5042794a4"
+synced_at: "2026-07-09T01:01:03.875667"
 ---
 
 # OH_Drawing_ShadowLayer

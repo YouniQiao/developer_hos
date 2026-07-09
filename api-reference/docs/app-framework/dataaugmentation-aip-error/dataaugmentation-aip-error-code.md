@@ -2,7 +2,8 @@
 title: "aip_error_code.h"
 upstream_id: "harmonyos-references/dataaugmentation-aip-error-code"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:17.046952"
+content_hash: "02a4ff5ae5d4"
+synced_at: "2026-07-09T00:59:02.249571"
 ---
 
 # aip_error_code.h

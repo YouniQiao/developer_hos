@@ -2,7 +2,8 @@
 title: "OH_Drawing_GpuContextOptions"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-gpucontextoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:05.975982"
+content_hash: "ea6868ada610"
+synced_at: "2026-07-09T01:01:00.511429"
 ---
 
 # OH_Drawing_GpuContextOptions

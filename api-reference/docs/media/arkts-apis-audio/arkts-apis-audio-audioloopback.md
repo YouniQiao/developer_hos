@@ -2,7 +2,8 @@
 title: "Interface (AudioLoopback)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audioloopback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:53.247294"
+content_hash: "25fbce11a34d"
+synced_at: "2026-07-09T01:00:08.673686"
 ---
 
 # Interface (AudioLoopback)

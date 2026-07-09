@@ -2,7 +2,8 @@
 title: "通过mercRefundOrderNo查询退款订单信息"
 upstream_id: "harmonyos-references/payment-partner-withhold-query-merc-refund-order"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:44.936282"
+content_hash: "c6da79c707fd"
+synced_at: "2026-07-09T01:01:33.905697"
 ---
 
 # 通过mercRefundOrderNo查询退款订单信息
@@ -41,7 +42,7 @@ Request Header
 
 Request Path
 
-| 参数 | 是否必填 | 参数类型 | 描述 |
+| 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | mercRefundOrderNo | 是 | String | 商户退款订单号。最大长度64。 |
 
@@ -76,7 +77,7 @@ Response Body
 | finishTime | 否 | String | 退款完成时间，UTC时间格式（yyyy-MM-dd'T'HH:mm:ss.SSSZ）。 |
 | promotionRefundAmount | 否 | Long | 营销退款金额，单位：分。 |
 | refundAmount | 否 | Long | 退款总金额。订单需要退款的金额，该金额不能大于订单金额，单位：分。 **说明：** 如果正向交易使用了营销，该退款金额包含营销金额，华为支付会按业务规则分配营销和买家自有资金分别退多少，默认按比例退款。如不填则默认payerRefundAmount。 |
-| mLong | 否 | Long | 退款给用户的金额，单位：分。 |
+| payerRefundAmount | 否 | Long | 退款给用户的金额，单位：分。 |
 | currency | 否 | String | 交易币种单位，最大长度为3。 CNY （默认，当前仅支持该币种单位） |
 | payload | 否 | String | 预留信息，如商户请求时传递该参数，此时会原样返回。 |
 

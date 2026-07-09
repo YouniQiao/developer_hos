@@ -2,7 +2,8 @@
 title: "OH_Drawing_Range"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-range"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:08.221689"
+content_hash: "bc19692c2bd2"
+synced_at: "2026-07-09T01:01:02.525195"
 ---
 
 # OH_Drawing_Range

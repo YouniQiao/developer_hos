@@ -2,7 +2,8 @@
 title: "BusinessRiskIntelligentDetection（业务风险检测）"
 upstream_id: "harmonyos-references/devicesecurity-brid-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:35.007100"
+content_hash: "ee144d542424"
+synced_at: "2026-07-09T00:59:14.844649"
 ---
 
 # BusinessRiskIntelligentDetection（业务风险检测）
@@ -11,7 +12,7 @@ synced_at: "2026-06-24T20:50:35.007100"
 
 起始版本： 5.0.0(12)
 
-- 提供自动化点击、设备墙等作弊行为检测能力。
+- 提供自动化点击、设备农场等作弊行为检测能力。
 
 起始版本： 6.0.0(20)
 
@@ -152,7 +153,7 @@ try {
 
 detectSimulatedClickRisk(params: [SimulatedClickDetectionRequest](#simulatedclickdetectionrequest)): Promise<string>
 
-获取自动化点击、设备墙等作弊行为检测结果。使用Promise异步回调。
+获取自动化点击、设备农场等作弊行为检测结果。使用Promise异步回调。
 
 系统能力： SystemCapability.Security.BusinessRiskIntelligentDetection
 
@@ -216,7 +217,7 @@ try {
 
 detectSimulatedClickRiskEnhanced(params: SimulatedClickDetectionEnhancedRequest): Promise<string>
 
-获取自动化点击、设备墙等作弊行为的增强检测结果。使用Promise异步回调。
+获取自动化点击、设备农场等作弊行为的增强检测结果。使用Promise异步回调。
 
 系统能力： SystemCapability.Security.BusinessRiskIntelligentDetection
 

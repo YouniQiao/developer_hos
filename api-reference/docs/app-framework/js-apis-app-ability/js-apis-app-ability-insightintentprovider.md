@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.insightIntentProvider (意图提供方管理能力)"
 upstream_id: "harmonyos-references/js-apis-app-ability-insightintentprovider"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:47.358198"
+content_hash: "6e73fe4bb90f"
+synced_at: "2026-07-09T00:57:04.675518"
 ---
 
 # @ohos.app.ability.insightIntentProvider (意图提供方管理能力)

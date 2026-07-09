@@ -2,7 +2,8 @@
 title: "OH_NN_UInt32Array"
 upstream_id: "harmonyos-references/capi-neuralnetworkruntime-oh-nn-uint32array"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:59.419467"
+content_hash: "6b6b8b9fce51"
+synced_at: "2026-07-09T01:01:44.279856"
 ---
 
 # OH_NN_UInt32Array

@@ -2,7 +2,8 @@
 title: "@ohos.file.cloudSync (端云同步能力)"
 upstream_id: "harmonyos-references/js-apis-file-cloudsync"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:12.962985"
+content_hash: "4eb3fe7de80d"
+synced_at: "2026-07-09T00:59:00.251466"
 ---
 
 # @ohos.file.cloudSync (端云同步能力)

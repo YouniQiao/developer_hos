@@ -2,7 +2,8 @@
 title: "aip_retrieval_condition_vector.h"
 upstream_id: "harmonyos-references/dataaugmentation-aip-retrieval-condition-vector"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:17.179270"
+content_hash: "faa0836d6748"
+synced_at: "2026-07-09T00:59:02.510586"
 ---
 
 # aip_retrieval_condition_vector.h

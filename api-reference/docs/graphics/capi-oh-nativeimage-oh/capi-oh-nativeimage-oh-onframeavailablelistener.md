@@ -2,7 +2,8 @@
 title: "OH_OnFrameAvailableListener"
 upstream_id: "harmonyos-references/capi-oh-nativeimage-oh-onframeavailablelistener"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:07.130504"
+content_hash: "d4fd9acefa92"
+synced_at: "2026-07-09T01:01:01.534163"
 ---
 
 # OH_OnFrameAvailableListener

@@ -2,7 +2,8 @@
 title: "OH_ImageNative"
 upstream_id: "harmonyos-references/capi-image-nativemodule-oh-imagenative"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:29.151913"
+content_hash: "508eba76e6be"
+synced_at: "2026-07-09T01:00:34.911011"
 ---
 
 # OH_ImageNative

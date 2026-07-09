@@ -2,7 +2,8 @@
 title: "ArkUI_ContextCallback"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-contextcallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:50.785180"
+content_hash: "bec38d8f58b3"
+synced_at: "2026-07-09T00:58:42.331280"
 ---
 
 # ArkUI_ContextCallback

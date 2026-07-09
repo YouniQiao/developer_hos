@@ -2,7 +2,8 @@
 title: "AREngine_ARSession"
 upstream_id: "harmonyos-references/capi-spatialrecon-arengine-arsession"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:14.973396"
+content_hash: "56ee2e215f18"
+synced_at: "2026-07-09T01:01:08.892866"
 ---
 
 # AREngine_ARSession

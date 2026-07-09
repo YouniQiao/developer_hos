@@ -2,7 +2,8 @@
 title: "OH_NN_Tensor"
 upstream_id: "harmonyos-references/capi-neuralnetworkruntime-oh-nn-tensor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:59.771818"
+content_hash: "ffd52fe05c14"
+synced_at: "2026-07-09T01:01:44.332187"
 ---
 
 # OH_NN_Tensor

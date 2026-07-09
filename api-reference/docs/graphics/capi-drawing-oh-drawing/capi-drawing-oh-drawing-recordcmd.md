@@ -2,7 +2,8 @@
 title: "OH_Drawing_RecordCmd"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-recordcmd"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:10.959655"
+content_hash: "de457ed2cce3"
+synced_at: "2026-07-09T01:01:04.901491"
 ---
 
 # OH_Drawing_RecordCmd

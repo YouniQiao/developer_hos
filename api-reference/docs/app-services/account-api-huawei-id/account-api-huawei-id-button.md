@@ -2,7 +2,8 @@
 title: "LoginWithHuaweiIDButton (华为账号Button登录组件)"
 upstream_id: "harmonyos-references/account-api-huawei-id-button"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:18.227589"
+content_hash: "ddd837cdeaff"
+synced_at: "2026-07-09T01:01:12.243287"
 ---
 
 # LoginWithHuaweiIDButton (华为账号Button登录组件)
@@ -35,8 +36,8 @@ import { LoginWithHuaweiIDButton, loginComponentManager } from '@kit.AccountKit'
 
 | 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| params | [loginComponentManager.LoginWithHuaweiIDButtonParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginwithhuaweiidbuttonparams) | 是 | @Require | LoginWithHuaweiIDButton组件参数。 |
-| controller | [loginComponentManager.LoginWithHuaweiIDButtonController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginwithhuaweiidbuttoncontroller) | 是 | @Require | LoginWithHuaweiIDButton组件控制器用来接收组件的点击事件。 |
+| params | [loginComponentManager.LoginWithHuaweiIDButtonParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginwithhuaweiidbuttonparams) | 是 | @Require 适用版本：26.0.0+ | LoginWithHuaweiIDButton组件参数。 |
+| controller | [loginComponentManager.LoginWithHuaweiIDButtonController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginwithhuaweiidbuttoncontroller) | 是 | @Require 适用版本：26.0.0+ | LoginWithHuaweiIDButton组件控制器用来接收组件的点击事件。 |
 
 #### [h2]build
 

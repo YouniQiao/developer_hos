@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-cloudfoundation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:23.975967"
+content_hash: "7c9a1d810003"
+synced_at: "2026-07-09T01:01:16.602796"
 ---
 
 # ArkTS API错误码
@@ -40,14 +41,16 @@ Client internal error.
 
 可能原因
 
-1. 如错误信息中包含“create http task error”，可能是签名方式错误，或者网络问题导致签名验证失败。
-2. 系统内部错误。
+1. 真机场景下，如错误信息中包含“create http task error”，可能是签名方式错误，或者网络问题导致签名验证失败。
+2. 模拟器场景下，如错误信息中包含“create http task error”，可能是未注册模拟器调试凭据。
+3. 系统内部错误。
 
 处理步骤
 
 1. 请确认应用的签名方式正确。当前Cloud Foundation Kit支持[关联注册应用进行自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section20943184413328)和[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)两种方式。
 2. 请检查设备网络连接情况。
-3. 若以上排查结果均无异常，请稍后重试。
+3. 请参考[使用模拟器调试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-emulator)进行排查。
+4. 若以上排查结果均无异常，请稍后重试。
 
 #### 1008211001 云函数服务器侧错误
 
@@ -98,14 +101,16 @@ Client internal error.
 
 可能原因
 
-1. 如错误信息中包含“create http task error”，可能是签名方式错误，或者网络问题导致签名验证失败。
-2. 系统内部错误。
+1. 真机场景下，如错误信息中包含“create http task error”，可能是签名方式错误，或者网络问题导致签名验证失败。
+2. 模拟器场景下，如错误信息中包含“create http task error”，可能是未注册模拟器调试凭据。
+3. 系统内部错误。
 
 处理步骤
 
 1. 请确认应用的签名方式正确。当前Cloud Foundation Kit支持[关联注册应用进行自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section20943184413328)和[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)两种方式。
 2. 请检查设备网络连接情况。
-3. 若以上排查结果均无异常，请稍后重试。
+3. 请参考[使用模拟器调试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-emulator)进行排查。
+4. 若以上排查结果均无异常，请稍后重试。
 
 #### 1008221001 云存储服务器侧错误
 
@@ -157,14 +162,16 @@ Client internal error.
 
 可能原因
 
-1. 如错误信息中包含“create http task error”，可能是签名方式错误，或者网络问题导致签名验证失败。
-2. 系统内部错误。
+1. 真机场景下，如错误信息中包含“create http task error”，可能是签名方式错误，或者网络问题导致签名验证失败。
+2. 模拟器场景下，如错误信息中包含“create http task error”，可能是未注册模拟器调试凭据。
+3. 系统内部错误。
 
 处理步骤
 
 1. 请确认应用的签名方式正确。当前Cloud Foundation Kit支持[关联注册应用进行自动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section20943184413328)和[手动签名](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-signing#section297715173233)两种方式。
 2. 请检查设备网络连接情况。
-3. 若以上排查结果均无异常，请稍后重试。
+3. 请参考[使用模拟器调试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/cloudfoundation-emulator)进行排查。
+4. 若以上排查结果均无异常，请稍后重试。
 
 #### 1008230002 云数据库schema配置错误
 

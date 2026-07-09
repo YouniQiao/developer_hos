@@ -2,7 +2,8 @@
 title: "CanvasRenderingContext2D"
 upstream_id: "harmonyos-references/ts-canvasrenderingcontext2d"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:30.232514"
+content_hash: "985a323456a3"
+synced_at: "2026-07-09T00:58:04.772799"
 ---
 
 # CanvasRenderingContext2D
@@ -98,7 +99,7 @@ struct LengthMetricsUnitDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230622.png)
+ ![](./img/zh-cn_image_0000002661732741.png)
 
 #### 属性
 
@@ -142,7 +143,7 @@ struct FillStyleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070712.png)
+ ![](./img/zh-cn_image_0000002631253622.png)
 
 #### [h2]lineWidth
 
@@ -182,7 +183,7 @@ struct LineWidthExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469989.png)
+ ![](./img/zh-cn_image_0000002661612803.png)
 
 #### [h2]strokeStyle
 
@@ -223,7 +224,7 @@ struct StrokeStyleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350037.png)
+ ![](./img/zh-cn_image_0000002631413514.png)
 
 #### [h2]lineCap
 
@@ -267,7 +268,7 @@ struct LineCapExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230624.png)
+ ![](./img/zh-cn_image_0000002661732743.png)
 
 #### [h2]lineJoin
 
@@ -312,7 +313,7 @@ struct LineJoinExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070714.png)
+ ![](./img/zh-cn_image_0000002631253624.png)
 
 #### [h2]miterLimit
 
@@ -357,7 +358,7 @@ struct MiterLimit {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469991.png)
+ ![](./img/zh-cn_image_0000002661612805.png)
 
 #### [h2]font
 
@@ -417,7 +418,7 @@ struct FontDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350039.jpeg)
+ ![](./img/zh-cn_image_0000002631413516.jpeg)
 
 #### [h2]textAlign
 
@@ -470,7 +471,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230626.png)
+ ![](./img/zh-cn_image_0000002661732745.png)
 
 #### [h2]textBaseline
 
@@ -523,7 +524,7 @@ struct TextBaseline {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070716.jpg)
+ ![](./img/zh-cn_image_0000002631253626.jpg)
 
 #### [h2]globalAlpha
 
@@ -566,7 +567,7 @@ struct GlobalAlpha {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469993.png)
+ ![](./img/zh-cn_image_0000002661612807.png)
 
 #### [h2]lineDashOffset
 
@@ -634,7 +635,7 @@ struct LineDashOffset {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350041.gif)
+ ![](./img/zh-cn_image_0000002631413518.gif)
 
 #### [h2]globalCompositeOperation
 
@@ -807,7 +808,7 @@ struct GlobalCompositeOperation {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230628.png)
+ ![](./img/zh-cn_image_0000002661732747.png)
 
 #### [h2]shadowBlur
 
@@ -849,7 +850,7 @@ struct ShadowBlur {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070718.png)
+ ![](./img/zh-cn_image_0000002631253628.png)
 
 #### [h2]shadowColor
 
@@ -891,7 +892,7 @@ struct ShadowColor {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469995.png)
+ ![](./img/zh-cn_image_0000002661612809.png)
 
 #### [h2]shadowOffsetX
 
@@ -934,7 +935,7 @@ struct ShadowOffsetX {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350043.png)
+ ![](./img/zh-cn_image_0000002631413520.png)
 
 #### [h2]shadowOffsetY
 
@@ -977,7 +978,7 @@ struct ShadowOffsetY {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230630.png)
+ ![](./img/zh-cn_image_0000002661732749.png)
 
 #### [h2]imageSmoothingEnabled
 
@@ -1021,7 +1022,7 @@ struct ImageSmoothingEnabled {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070720.png)
+ ![](./img/zh-cn_image_0000002631253630.png)
 
 #### [h2]height
 
@@ -1061,7 +1062,7 @@ struct HeightExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469997.png)
+ ![](./img/zh-cn_image_0000002661612811.png)
 
 #### [h2]width
 
@@ -1101,7 +1102,7 @@ struct WidthExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350045.png)
+ ![](./img/zh-cn_image_0000002631413522.png)
 
 #### [h2]canvas13+
 
@@ -1154,7 +1155,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230632.png)
+ ![](./img/zh-cn_image_0000002661732751.png)
 
 #### [h2]imageSmoothingQuality
 
@@ -1200,7 +1201,7 @@ struct ImageSmoothingQualityDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070722.jpeg)
+ ![](./img/zh-cn_image_0000002631253632.jpeg)
 
 #### [h2]direction
 
@@ -1245,7 +1246,7 @@ struct DirectionDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469999.jpeg)
+ ![](./img/zh-cn_image_0000002661612813.jpeg)
 
 #### [h2]filter
 
@@ -1321,7 +1322,7 @@ struct FilterDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350047.jpeg)
+ ![](./img/zh-cn_image_0000002631413524.jpeg)
 
 #### [h2]letterSpacing18+
 
@@ -1364,7 +1365,7 @@ struct letterSpacingDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230634.jpeg)
+ ![](./img/zh-cn_image_0000002661732753.jpeg)
 
 #### [h2]antialias24+
 
@@ -1427,7 +1428,7 @@ struct AntialiasDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070724.jpeg)
+ ![](./img/zh-cn_image_0000002631253634.jpeg)
 
 #### 方法
 
@@ -1479,7 +1480,7 @@ struct FillRect {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470001.jpg)
+ ![](./img/zh-cn_image_0000002661612815.jpg)
 
 #### [h2]strokeRect
 
@@ -1527,7 +1528,7 @@ struct StrokeRect {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350049.png)
+ ![](./img/zh-cn_image_0000002631413526.png)
 
 #### [h2]clearRect
 
@@ -1577,7 +1578,7 @@ struct ClearRect {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230636.png)
+ ![](./img/zh-cn_image_0000002661732755.png)
 
 #### [h2]fillText
 
@@ -1626,7 +1627,7 @@ struct FillText {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070726.png)
+ ![](./img/zh-cn_image_0000002631253636.png)
 
 #### [h2]strokeText
 
@@ -1675,7 +1676,7 @@ struct StrokeText {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470003.jpg)
+ ![](./img/zh-cn_image_0000002661612817.jpg)
 
 #### [h2]measureText
 
@@ -1728,7 +1729,7 @@ struct MeasureText {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350051.jpg)
+ ![](./img/zh-cn_image_0000002631413528.jpg)
 
 #### [h2]stroke
 
@@ -1772,7 +1773,7 @@ struct Stroke {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230638.png)
+ ![](./img/zh-cn_image_0000002661732757.png)
 
 #### [h2]stroke
 
@@ -1823,7 +1824,7 @@ struct Stroke {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070728.png)
+ ![](./img/zh-cn_image_0000002631253638.png)
 
 #### [h2]beginPath
 
@@ -1870,7 +1871,7 @@ struct BeginPath {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470005.png)
+ ![](./img/zh-cn_image_0000002661612819.png)
 
 #### [h2]moveTo
 
@@ -1923,7 +1924,7 @@ struct MoveTo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350053.png)
+ ![](./img/zh-cn_image_0000002631413530.png)
 
 #### [h2]lineTo
 
@@ -1972,7 +1973,7 @@ struct LineTo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230640.png)
+ ![](./img/zh-cn_image_0000002661732761.png)
 
 #### [h2]closePath
 
@@ -2016,7 +2017,7 @@ struct ClosePath {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070730.png)
+ ![](./img/zh-cn_image_0000002631253640.png)
 
 #### [h2]createPattern
 
@@ -2076,7 +2077,7 @@ struct CreatePattern {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470007.png)
+ ![](./img/zh-cn_image_0000002661612821.png)
 
 #### [h2]bezierCurveTo
 
@@ -2151,7 +2152,7 @@ struct BezierCurveTo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350055.png)
+ ![](./img/zh-cn_image_0000002631413532.png)
 
 #### [h2]quadraticCurveTo
 
@@ -2222,7 +2223,7 @@ struct QuadraticCurveTo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230642.png)
+ ![](./img/zh-cn_image_0000002661732763.png)
 
 #### [h2]arc
 
@@ -2274,7 +2275,7 @@ struct Arc {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070732.jpeg)
+ ![](./img/zh-cn_image_0000002631253642.jpeg)
 
 #### [h2]arcTo
 
@@ -2351,7 +2352,7 @@ struct ArcTo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470009.png)
+ ![](./img/zh-cn_image_0000002661612823.png)
 
 此示例中，arcTo()创建的圆弧为黑色，圆弧的两条切线为灰色。控制点为红色，起始点为绿色。
 
@@ -2412,7 +2413,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350057.jpeg)
+ ![](./img/zh-cn_image_0000002631413534.jpeg)
 
 #### [h2]rect
 
@@ -2461,7 +2462,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230644.jpeg)
+ ![](./img/zh-cn_image_0000002661732765.jpeg)
 
 #### [h2]roundRect20+
 
@@ -2552,7 +2553,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070734.jpeg)
+ ![](./img/zh-cn_image_0000002631253644.jpeg)
 
 #### [h2]fill
 
@@ -2598,7 +2599,7 @@ struct Fill {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470011.png)
+ ![](./img/zh-cn_image_0000002661612825.png)
 
 #### [h2]fill
 
@@ -2654,7 +2655,7 @@ struct Fill {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350059.jpg)
+ ![](./img/zh-cn_image_0000002631413536.jpg)
 
 #### [h2]clip
 
@@ -2703,7 +2704,7 @@ struct Clip {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230646.png)
+ ![](./img/zh-cn_image_0000002661732767.png)
 
 #### [h2]clip
 
@@ -2759,7 +2760,7 @@ struct Clip {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070736.jpg)
+ ![](./img/zh-cn_image_0000002631253646.jpg)
 
 #### [h2]reset12+
 
@@ -2801,7 +2802,7 @@ struct Reset {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470013.png)
+ ![](./img/zh-cn_image_0000002661612827.png)
 
 #### [h2]saveLayer12+
 
@@ -2851,7 +2852,7 @@ build() {
 }
 }
 ```
- ![](./img/zh-cn_image_0000002656350061.png)
+ ![](./img/zh-cn_image_0000002631413538.png)
 
 #### [h2]restoreLayer12+
 
@@ -2907,7 +2908,7 @@ struct ResetTransform {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230648.png)
+ ![](./img/zh-cn_image_0000002661732769.png)
 
 #### [h2]rotate
 
@@ -2953,7 +2954,7 @@ struct Rotate {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070738.png)
+ ![](./img/zh-cn_image_0000002631253648.png)
 
 #### [h2]scale
 
@@ -3002,7 +3003,7 @@ struct Scale {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470015.png)
+ ![](./img/zh-cn_image_0000002661612829.png)
 
 #### [h2]transform
 
@@ -3066,7 +3067,7 @@ struct Transform {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350063.jpg)
+ ![](./img/zh-cn_image_0000002631413540.jpg)
 
 #### [h2]setTransform
 
@@ -3130,7 +3131,7 @@ struct SetTransform {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230650.png)
+ ![](./img/zh-cn_image_0000002661732771.png)
 
 #### [h2]setTransform
 
@@ -3190,7 +3191,7 @@ struct TransFormDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070740.jpeg)
+ ![](./img/zh-cn_image_0000002631253650.jpeg)
 
 #### [h2]getTransform
 
@@ -3251,7 +3252,7 @@ struct TransFormDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470017.png)
+ ![](./img/zh-cn_image_0000002661612831.png)
 
 #### [h2]translate
 
@@ -3299,7 +3300,7 @@ struct Translate {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350065.png)
+ ![](./img/zh-cn_image_0000002631413542.png)
 
 #### [h2]drawImage
 
@@ -3350,7 +3351,7 @@ struct ImageExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230652.png)
+ ![](./img/zh-cn_image_0000002661732773.png)
 
 #### [h2]drawImage
 
@@ -3403,7 +3404,7 @@ struct ImageExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070742.png)
+ ![](./img/zh-cn_image_0000002631253652.png)
 
 #### [h2]drawImage
 
@@ -3460,7 +3461,7 @@ struct ImageExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470019.png)
+ ![](./img/zh-cn_image_0000002661612833.png)
 
 #### [h2]createImageData
 
@@ -3570,7 +3571,7 @@ struct GetPixelMap {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350067.png)
+ ![](./img/zh-cn_image_0000002631413544.png)
 
 #### [h2]setPixelMap
 
@@ -3646,7 +3647,7 @@ struct GetImageData {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230654.png)
+ ![](./img/zh-cn_image_0000002661732775.png)
 
 #### [h2]putImageData
 
@@ -3701,7 +3702,7 @@ struct PutImageData {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070744.png)
+ ![](./img/zh-cn_image_0000002631253654.png)
 
 #### [h2]putImageData
 
@@ -3760,7 +3761,7 @@ struct PutImageData {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470021.png)
+ ![](./img/zh-cn_image_0000002661612835.png)
 
 #### [h2]setLineDash
 
@@ -3807,7 +3808,7 @@ struct SetLineDash {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350069.png)
+ ![](./img/zh-cn_image_0000002631413546.png)
 
 #### [h2]getLineDash
 
@@ -3862,7 +3863,7 @@ struct CanvasGetLineDash {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230656.png)
+ ![](./img/zh-cn_image_0000002661732777.png)
 
 #### [h2]transferFromImageBitmap
 
@@ -3917,7 +3918,7 @@ struct TransferFromImageBitmap {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070746.jpg)
+ ![](./img/zh-cn_image_0000002631253656.jpg)
 
 #### [h2]toDataURL
 
@@ -3973,7 +3974,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470023.png)
+ ![](./img/zh-cn_image_0000002661612837.png)
 
 #### [h2]restore
 
@@ -4022,7 +4023,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350071.png)
+ ![](./img/zh-cn_image_0000002631413548.png)
 
 #### [h2]save
 
@@ -4065,7 +4066,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350071.png)
+ ![](./img/zh-cn_image_0000002631413548.png)
 
 #### [h2]createLinearGradient
 
@@ -4124,7 +4125,7 @@ struct CreateLinearGradient {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070710.png)
+ ![](./img/zh-cn_image_0000002661732739.png)
 
 #### [h2]createRadialGradient
 
@@ -4185,7 +4186,7 @@ struct CreateRadialGradient {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230658.png)
+ ![](./img/zh-cn_image_0000002661732779.png)
 
 #### [h2]createConicGradient10+
 
@@ -4243,7 +4244,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070748.png)
+ ![](./img/zh-cn_image_0000002631253658.png)
 
 #### [h2]on('onAttach')13+
 
@@ -4261,7 +4262,7 @@ on(type: 'onAttach', callback: Callback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 订阅CanvasRenderingContext2D与Canvas组件发生绑定的回调。 异常值undefined或null按无效值处理。 |
+| type | string | 是 | 订阅CanvasRenderingContext2D与Canvas组件发生绑定的事件类型，固定为'onAttach'。 异常值undefined或null按无效值处理。 |
 | callback | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 是 | 订阅CanvasRenderingContext2D与Canvas组件发生绑定后触发的回调。 异常值undefined或null按无效值处理。 |
 
 错误码：
@@ -4300,7 +4301,7 @@ on(type: 'onDetach', callback: Callback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 订阅CanvasRenderingContext2D与Canvas组件解除绑定的回调。 异常值undefined或null按无效值处理。 |
+| type | string | 是 | 订阅CanvasRenderingContext2D与Canvas组件解除绑定的事件类型，固定为'onDetach'。 异常值undefined或null按无效值处理。 |
 | callback | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 是 | 订阅CanvasRenderingContext2D与Canvas组件解除绑定后触发的回调。 异常值undefined或null按无效值处理。 |
 
 错误码：
@@ -4335,7 +4336,7 @@ off(type: 'onAttach', callback?: Callback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 取消订阅CanvasRenderingContext2D与Canvas组件发生绑定的回调。 异常值undefined或null按无效值处理。 |
+| type | string | 是 | 取消订阅CanvasRenderingContext2D与Canvas组件发生绑定的事件类型，固定为'onAttach'。 异常值undefined或null按无效值处理。 |
 | callback | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | 为空表示取消所有订阅CanvasRenderingContext2D与Canvas组件发生绑定后触发的回调。 非空则取消订阅发生绑定对应的回调。 异常值undefined或null按无效值处理。 |
 
 错误码：
@@ -4362,7 +4363,7 @@ off(type: 'onDetach', callback?: Callback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | string | 是 | 取消订阅CanvasRenderingContext2D与Canvas组件解除绑定的回调。 异常值undefined或null按无效值处理。 |
+| type | string | 是 | 取消订阅CanvasRenderingContext2D与Canvas组件解除绑定的事件类型，固定为'onDetach'。 异常值undefined或null按无效值处理。 |
 | callback | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | 为空代表取消所有订阅CanvasRenderingContext2D与Canvas组件解除绑定后触发的回调。 非空代表取消订阅解除绑定对应的回调。 异常值undefined或null按无效值处理。 |
 
 错误码：
@@ -4465,7 +4466,7 @@ struct AttachDetachExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470025.gif)
+ ![](./img/zh-cn_image_0000002661612839.gif)
 
 #### [h2]startImageAnalyzer12+
 
@@ -4590,7 +4591,7 @@ struct ImageAnalyzerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350073.png)
+ ![](./img/zh-cn_image_0000002631413550.png)
 
 #### [h2]getContext2DFromDrawingContext23+
 
@@ -4657,7 +4658,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230660.png)
+ ![](./img/zh-cn_image_0000002661732781.png)
 
 #### RenderingContextOptions23+
 
@@ -4750,7 +4751,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070750.png)
+ ![](./img/zh-cn_image_0000002631253660.png)
 
 #### CanvasLineCap类型说明
 
@@ -4857,8 +4858,8 @@ type ImageSmoothingQuality = "high" | "low" | "medium"
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| width | number | 是 | 否 | 只读属性，文本方块的宽度。 |
-| height | number | 是 | 否 | 只读属性，文本方块的高度。 |
+| width | number | 是 | 否 | 只读属性，文本方块的宽度。 单位：vp 当CanvasRenderingContext2D对象的单位模式设置为LengthMetricsUnit.PX时，单位为px。 |
+| height | number | 是 | 否 | 只读属性，文本方块的高度。 单位：vp 当CanvasRenderingContext2D对象的单位模式设置为LengthMetricsUnit.PX时，单位为px。 |
 | actualBoundingBoxAscent | number | 是 | 否 | 只读属性，从[CanvasRenderingContext2D.textBaseline](#canvastextbaseline类型说明)属性标明的水平线到渲染文本的矩形边界顶部的距离。 |
 | actualBoundingBoxDescent | number | 是 | 否 | 只读属性，从[CanvasRenderingContext2D.textBaseline](#canvastextbaseline类型说明)属性标明的水平线到渲染文本的矩形边界底部的距离。 |
 | actualBoundingBoxLeft | number | 是 | 否 | 只读属性，平行于基线，从[CanvasRenderingContext2D.textAlign](#canvastextalign类型说明)属性确定的对齐点到文本矩形边界左侧的距离。 |

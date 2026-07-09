@@ -2,7 +2,8 @@
 title: "EventHub"
 upstream_id: "harmonyos-references/js-apis-inner-application-eventhub"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:53.554754"
+content_hash: "5f12ef81254d"
+synced_at: "2026-07-09T00:57:09.260913"
 ---
 
 # EventHub

@@ -2,7 +2,8 @@
 title: "drawing_pixel_map.h"
 upstream_id: "harmonyos-references/capi-drawing-pixel-map-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:01.996980"
+content_hash: "2d93d6eea869"
+synced_at: "2026-07-09T01:00:56.654303"
 ---
 
 # drawing_pixel_map.h

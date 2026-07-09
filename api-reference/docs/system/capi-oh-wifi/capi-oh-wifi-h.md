@@ -2,7 +2,8 @@
 title: "oh_wifi.h"
 upstream_id: "harmonyos-references/capi-oh-wifi-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:47.945644"
+content_hash: "0e65c2399611"
+synced_at: "2026-07-09T00:59:24.838353"
 ---
 
 # oh_wifi.h

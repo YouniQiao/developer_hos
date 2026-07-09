@@ -2,7 +2,8 @@
 title: "CommonEventPublishData"
 upstream_id: "harmonyos-references/js-apis-inner-commonevent-commoneventpublishdata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:08.613552"
+content_hash: "b338baa7a3d1"
+synced_at: "2026-07-09T00:59:40.834830"
 ---
 
 # CommonEventPublishData

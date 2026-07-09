@@ -2,12 +2,13 @@
 title: "Class (WebDownloadItem)"
 upstream_id: "harmonyos-references/arkts-apis-webview-webdownloaditem"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:03.737452"
+content_hash: "d4c399efc9ab"
+synced_at: "2026-07-09T00:58:51.365704"
 ---
 
 # Class (WebDownloadItem)
 
-表示下载任务，您可以使用此对象来操作相应的下载任务。
+WebDownloadItem是ArkWeb框架中用于表示和管理单个下载任务的类。通过[WebDownloadDelegate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webdownloaddelegate)的回调参数，应用可以获取到WebDownloadItem实例，进而对下载任务进行查询和控制，包括启动下载到指定路径、查询下载进度和状态、暂停/恢复/取消任务、序列化失败任务以便后续恢复等。
 
 ![](./img/note_3.0-zh-cn.png)
 

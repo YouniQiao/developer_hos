@@ -2,7 +2,8 @@
 title: "通用样式"
 upstream_id: "harmonyos-references/js-service-widget-common-styles"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:24.008113"
+content_hash: "bec2b9495bf4"
+synced_at: "2026-07-09T00:58:29.851892"
 ---
 
 # 通用样式

@@ -2,7 +2,8 @@
 title: "textSearchImage（通过文本搜索图片）"
 upstream_id: "harmonyos-references/core-vision-text-search-image-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:57.213964"
+content_hash: "adc69f83fda3"
+synced_at: "2026-07-09T01:01:42.506314"
 ---
 
 # textSearchImage（通过文本搜索图片）

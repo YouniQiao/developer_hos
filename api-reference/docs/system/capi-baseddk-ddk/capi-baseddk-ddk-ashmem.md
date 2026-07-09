@@ -2,7 +2,8 @@
 title: "DDK_Ashmem"
 upstream_id: "harmonyos-references/capi-baseddk-ddk-ashmem"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:32.206206"
+content_hash: "de65e2146de1"
+synced_at: "2026-07-09T00:59:55.356774"
 ---
 
 # DDK_Ashmem

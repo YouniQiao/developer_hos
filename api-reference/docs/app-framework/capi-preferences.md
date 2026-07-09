@@ -2,7 +2,8 @@
 title: "Preferences"
 upstream_id: "harmonyos-references/capi-preferences"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:05.439813"
+content_hash: "7834eabad780"
+synced_at: "2026-07-09T00:57:17.977786"
 ---
 
 # Preferences

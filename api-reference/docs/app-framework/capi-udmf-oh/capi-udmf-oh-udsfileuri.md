@@ -2,7 +2,8 @@
 title: "OH_UdsFileUri"
 upstream_id: "harmonyos-references/capi-udmf-oh-udsfileuri"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:11.156812"
+content_hash: "b0337f794ce6"
+synced_at: "2026-07-09T00:57:21.834213"
 ---
 
 # OH_UdsFileUri

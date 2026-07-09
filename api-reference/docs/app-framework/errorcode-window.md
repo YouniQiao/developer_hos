@@ -2,7 +2,8 @@
 title: "窗口错误码"
 upstream_id: "harmonyos-references/errorcode-window"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:02.116497"
+content_hash: "e20ca75e62ac"
+synced_at: "2026-07-09T00:58:50.348846"
 ---
 
 # 窗口错误码

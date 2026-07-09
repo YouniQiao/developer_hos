@@ -2,7 +2,8 @@
 title: "ArkUI_NodeBorderStyleOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderstyleoption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:57.746998"
+content_hash: "23059ef590c7"
+synced_at: "2026-07-09T00:58:46.823225"
 ---
 
 # ArkUI_NodeBorderStyleOption

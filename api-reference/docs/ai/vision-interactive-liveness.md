@@ -2,7 +2,8 @@
 title: "interactiveLiveness（人脸活体检测）"
 upstream_id: "harmonyos-references/vision-interactive-liveness"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:00.927001"
+content_hash: "fc3256eb813a"
+synced_at: "2026-07-09T01:01:45.724047"
 ---
 
 # interactiveLiveness（人脸活体检测）
@@ -142,7 +143,7 @@ startLivenessDetection(config: InteractiveLivenessConfig): Promise<boolean>
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-vision)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-vision)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |

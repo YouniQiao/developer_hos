@@ -2,7 +2,8 @@
 title: "fast_dsp_common.h"
 upstream_id: "harmonyos-references/fast-kit-fast-dsp-common-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:14.679767"
+content_hash: "483cdbce7a2a"
+synced_at: "2026-07-09T00:59:46.100113"
 ---
 
 # fast_dsp_common.h

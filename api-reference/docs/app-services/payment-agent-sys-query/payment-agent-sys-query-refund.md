@@ -2,7 +2,8 @@
 title: "通过sysRefundOrderNo查询退款订单信息"
 upstream_id: "harmonyos-references/payment-agent-sys-query-refund"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:42.801089"
+content_hash: "bac2be0bf29e"
+synced_at: "2026-07-09T01:01:32.509956"
 ---
 
 # 通过sysRefundOrderNo查询退款订单信息
@@ -41,7 +42,7 @@ Request Header
 
 Request Path
 
-| 参数 | 是否必填 | 参数类型 | 描述 |
+| 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | sysRefundOrderNo | 是 | String | 华为支付的退款订单号。 |
 

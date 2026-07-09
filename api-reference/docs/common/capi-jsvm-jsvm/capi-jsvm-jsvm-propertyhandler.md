@@ -2,7 +2,8 @@
 title: "JSVM_PropertyHandler"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-propertyhandler"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:03.422426"
+content_hash: "c35760412214"
+synced_at: "2026-07-09T01:01:47.257790"
 ---
 
 # JSVM_PropertyHandler

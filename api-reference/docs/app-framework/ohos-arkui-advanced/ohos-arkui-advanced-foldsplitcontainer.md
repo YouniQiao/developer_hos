@@ -2,7 +2,8 @@
 title: "FoldSplitContainer"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-foldsplitcontainer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:52.920434"
+content_hash: "e9184f9dcfa4"
+synced_at: "2026-07-09T00:58:16.094359"
 ---
 
 # FoldSplitContainer
@@ -204,7 +205,7 @@ struct TwoColumns {
 
 | 折叠态 | 展开态 | 悬停态 |
 | --- | --- | --- |
-| ![](./img/zh-cn_image_0000002626230808.png) | ![](./img/zh-cn_image_0000002626070898.png) | ![](./img/zh-cn_image_0000002656470175.png) |
+| ![](./img/zh-cn_image_0000002631253808.png) | ![](./img/zh-cn_image_0000002661612991.png) | ![](./img/zh-cn_image_0000002631413702.png) |
 
 #### [h2]示例2（设置三分栏）
 
@@ -271,7 +272,7 @@ struct ThreeColumns {
 
 | 折叠态 | 展开态 | 悬停态 |
 | --- | --- | --- |
-| ![](./img/zh-cn_image_0000002656350223.png) | ![](./img/zh-cn_image_0000002626230810.png) | ![](./img/zh-cn_image_0000002626070900.png) |
+| ![](./img/zh-cn_image_0000002661732931.png) | ![](./img/zh-cn_image_0000002631253810.png) | ![](./img/zh-cn_image_0000002661612993.png) |
 
 #### [h2]示例3（展示FoldSplitContainer折叠态、悬停态、展开态下的配置行为）
 
@@ -384,7 +385,7 @@ struct Index {
     extraRegionPosition: ExtraRegionPosition.TOP
   };
   // 悬停态布局配置
-  @State foldingRegionLayoutOptions: HoverModeRegionLayoutOptions = {
+  @State hoverModeRegionLayoutOptions: HoverModeRegionLayoutOptions = {
     horizontalSplitRatio: PresetSplitRatio.LAYOUT_3V2,
     showExtraRegion: false,
     extraRegionPosition: ExtraRegionPosition.TOP
@@ -451,34 +452,34 @@ struct Index {
       Column({ space: 4 }) {
         RadioOption({
           label: "悬停态水平宽度比",
-          value: this.foldingRegionLayoutOptions.horizontalSplitRatio,
+          value: this.hoverModeRegionLayoutOptions.horizontalSplitRatio,
           options: [
             {
               label: "1:1",
               value: PresetSplitRatio.LAYOUT_1V1,
               onChecked: () => {
-                this.foldingRegionLayoutOptions.horizontalSplitRatio = PresetSplitRatio.LAYOUT_1V1
+                this.hoverModeRegionLayoutOptions.horizontalSplitRatio = PresetSplitRatio.LAYOUT_1V1
               }
             },
             {
               label: "2:3",
               value: PresetSplitRatio.LAYOUT_2V3,
               onChecked: () => {
-                this.foldingRegionLayoutOptions.horizontalSplitRatio = PresetSplitRatio.LAYOUT_2V3
+                this.hoverModeRegionLayoutOptions.horizontalSplitRatio = PresetSplitRatio.LAYOUT_2V3
               }
             },
             {
               label: "3:2",
               value: PresetSplitRatio.LAYOUT_3V2,
               onChecked: () => {
-                this.foldingRegionLayoutOptions.horizontalSplitRatio = PresetSplitRatio.LAYOUT_3V2
+                this.hoverModeRegionLayoutOptions.horizontalSplitRatio = PresetSplitRatio.LAYOUT_3V2
               }
             },
             {
               label: "未定义",
               value: undefined,
               onChecked: () => {
-                this.foldingRegionLayoutOptions.horizontalSplitRatio = undefined
+                this.hoverModeRegionLayoutOptions.horizontalSplitRatio = undefined
               }
             },
           ]
@@ -486,36 +487,36 @@ struct Index {
 
         SwitchOption({
           label: "悬停态是否显示扩展区",
-          value: this.foldingRegionLayoutOptions.showExtraRegion,
+          value: this.hoverModeRegionLayoutOptions.showExtraRegion,
           onChange: (checked) => {
-            this.foldingRegionLayoutOptions.showExtraRegion = checked;
+            this.hoverModeRegionLayoutOptions.showExtraRegion = checked;
           }
         })
 
-        if (this.foldingRegionLayoutOptions.showExtraRegion) {
+        if (this.hoverModeRegionLayoutOptions.showExtraRegion) {
           RadioOption({
             label: "悬停态扩展区位置",
-            value: this.foldingRegionLayoutOptions.extraRegionPosition,
+            value: this.hoverModeRegionLayoutOptions.extraRegionPosition,
             options: [
               {
                 label: "顶部",
                 value: ExtraRegionPosition.TOP,
                 onChecked: () => {
-                  this.foldingRegionLayoutOptions.extraRegionPosition = ExtraRegionPosition.TOP
+                  this.hoverModeRegionLayoutOptions.extraRegionPosition = ExtraRegionPosition.TOP
                 }
               },
               {
                 label: "底部",
                 value: ExtraRegionPosition.BOTTOM,
                 onChecked: () => {
-                  this.foldingRegionLayoutOptions.extraRegionPosition = ExtraRegionPosition.BOTTOM
+                  this.hoverModeRegionLayoutOptions.extraRegionPosition = ExtraRegionPosition.BOTTOM
                 }
               },
               {
                 label: "未定义",
                 value: undefined,
                 onChecked: () => {
-                  this.foldingRegionLayoutOptions.extraRegionPosition = undefined
+                  this.hoverModeRegionLayoutOptions.extraRegionPosition = undefined
                 }
               },
             ]
@@ -662,7 +663,7 @@ struct Index {
           this.ExtraRegion()
         },
         expandedLayoutOptions: this.expandedRegionLayoutOptions,
-        hoverModeLayoutOptions: this.foldingRegionLayoutOptions,
+        hoverModeLayoutOptions: this.hoverModeRegionLayoutOptions,
         foldedLayoutOptions: this.foldedRegionLayoutOptions,
       })
     }
@@ -674,6 +675,6 @@ struct Index {
 
 | 折叠态 | 展开态 | 悬停态 |
 | --- | --- | --- |
-| ![](./img/zh-cn_image_0000002656470177.png) | ![](./img/zh-cn_image_0000002656350225.png) | ![](./img/zh-cn_image_0000002626230812.png) |
-| - | ![](./img/zh-cn_image_0000002626070902.png) | ![](./img/zh-cn_image_0000002656470179.png) |
-| - | ![](./img/zh-cn_image_0000002656350227.png) | ![](./img/zh-cn_image_0000002626230814.png) |
+| ![](./img/zh-cn_image_0000002631413704.png) | ![](./img/zh-cn_image_0000002661732933.png) | ![](./img/zh-cn_image_0000002631253812.png) |
+| - | ![](./img/zh-cn_image_0000002661612995.png) | ![](./img/zh-cn_image_0000002631413706.png) |
+| - | ![](./img/zh-cn_image_0000002661732935.png) | ![](./img/zh-cn_image_0000002631253814.png) |

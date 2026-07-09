@@ -2,7 +2,8 @@
 title: "imageSuperResolution（图像超分）"
 upstream_id: "harmonyos-references/core-vision-image-super-resolution-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:57.079745"
+content_hash: "a62d4cb873f4"
+synced_at: "2026-07-09T01:01:42.392663"
 ---
 
 # imageSuperResolution（图像超分）

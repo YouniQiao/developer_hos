@@ -2,7 +2,8 @@
 title: "OhosImageSource"
 upstream_id: "harmonyos-references/capi-image-ohosimagesource"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:31.082809"
+content_hash: "a700a45a8401"
+synced_at: "2026-07-09T01:00:36.277914"
 ---
 
 # OhosImageSource

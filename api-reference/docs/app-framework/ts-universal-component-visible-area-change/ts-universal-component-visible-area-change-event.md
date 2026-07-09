@@ -2,7 +2,8 @@
 title: "组件可见区域变化事件"
 upstream_id: "harmonyos-references/ts-universal-component-visible-area-change-event"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:34.709464"
+content_hash: "0cc8c427fcc0"
+synced_at: "2026-07-09T00:57:38.055743"
 ---
 
 # 组件可见区域变化事件
@@ -348,7 +349,7 @@ struct ScrollExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469515.gif)
+ ![](./img/zh-cn_image_0000002661732257.gif)
 
 #### [h2]示例3 (设置measureFromViewport子组件超出父组件显示)
 
@@ -460,4 +461,4 @@ struct OnVisibleAreaChangeSample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349563.jpg)
+ ![](./img/zh-cn_image_0000002631253136.jpg)

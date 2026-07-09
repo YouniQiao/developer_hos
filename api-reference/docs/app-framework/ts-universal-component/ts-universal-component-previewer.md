@@ -1,9 +1,12 @@
 ---
+
 title: "组件预览"
 upstream_id: "harmonyos-references/ts-universal-component-previewer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:50.967228"
+synced_at: "2026-07-09T00:58:14.202349"
+content_hash: "6aa97727e87b"
 ---
+
 
 # 组件预览
 

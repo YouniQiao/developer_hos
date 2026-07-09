@@ -2,7 +2,8 @@
 title: "WindowManager"
 upstream_id: "harmonyos-references/capi-windowmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:32.127112"
+content_hash: "355005a83840"
+synced_at: "2026-07-09T00:58:32.353827"
 ---
 
 # WindowManager

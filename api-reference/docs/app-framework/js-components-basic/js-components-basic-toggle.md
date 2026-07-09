@@ -2,7 +2,8 @@
 title: "toggle"
 upstream_id: "harmonyos-references/js-components-basic-toggle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:08.467447"
+content_hash: "ae4727073334"
+synced_at: "2026-07-09T00:58:22.997496"
 ---
 
 # toggle
@@ -127,4 +128,4 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002626230902.png)
+ ![](./img/zh-cn_image_0000002631413796.png)

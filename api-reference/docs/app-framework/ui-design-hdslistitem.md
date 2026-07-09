@@ -2,7 +2,8 @@
 title: "HdsListItem"
 upstream_id: "harmonyos-references/ui-design-hdslistitem"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:26.714863"
+content_hash: "46e855dc94a0"
+synced_at: "2026-07-09T00:59:10.400232"
 ---
 
 # HdsListItem
@@ -164,7 +165,7 @@ type SwipeIconType = SymbolGlyphModifier | ImageOptions
 | 类型 | 说明 |
 | --- | --- |
 | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#自定义modifier) | symbol资源类型。 |
-| [ImageOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdslistitemcard#accessibilitygroupoptions) | image资源类型。 |
+| [ImageOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdslistitemcard#imageoptions) | image资源类型。 |
 
 #### MenuStyle
 
@@ -391,4 +392,4 @@ export class LazyDataSource<T> implements IDataSource {
 
 执行上述示例中的代码效果如下：
 
-![](./img/zh-cn_image_0000002656470597.gif)
+![](./img/zh-cn_image_0000002631254236.gif)

@@ -2,7 +2,8 @@
 title: "Class (Set)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-set"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:12.215812"
+content_hash: "d928f4d9be25"
+synced_at: "2026-07-09T00:57:22.835911"
 ---
 
 # Class (Set)

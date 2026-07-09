@@ -1,9 +1,12 @@
 ---
+
 title: "输入设备错误码"
 upstream_id: "harmonyos-references/errorcode-inputdevice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:20.941400"
+synced_at: "2026-07-09T00:59:50.815867"
+content_hash: "1cd7c0211e32"
 ---
+
 
 # 输入设备错误码
 

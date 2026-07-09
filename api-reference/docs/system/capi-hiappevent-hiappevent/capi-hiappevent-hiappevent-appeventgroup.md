@@ -2,7 +2,8 @@
 title: "HiAppEvent_AppEventGroup"
 upstream_id: "harmonyos-references/capi-hiappevent-hiappevent-appeventgroup"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:48.233794"
+content_hash: "7611b216ea0c"
+synced_at: "2026-07-09T01:00:04.337472"
 ---
 
 # HiAppEvent_AppEventGroup

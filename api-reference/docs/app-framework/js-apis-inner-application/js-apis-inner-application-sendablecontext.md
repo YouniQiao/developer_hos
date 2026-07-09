@@ -2,7 +2,8 @@
 title: "SendableContext"
 upstream_id: "harmonyos-references/js-apis-inner-application-sendablecontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:54.480574"
+content_hash: "8f37cccc532b"
+synced_at: "2026-07-09T00:57:09.877329"
 ---
 
 # SendableContext

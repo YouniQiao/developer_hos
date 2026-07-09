@@ -2,7 +2,8 @@
 title: "@system.file (文件存储)"
 upstream_id: "harmonyos-references/js-apis-system-file"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:14.681901"
+content_hash: "da175bb8393e"
+synced_at: "2026-07-09T00:59:01.205354"
 ---
 
 # @system.file (文件存储)

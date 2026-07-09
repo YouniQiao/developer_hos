@@ -2,7 +2,8 @@
 title: "ScsiPeripheral_CapacityInfo"
 upstream_id: "harmonyos-references/capi-scsiperipheralddk-scsiperipheral-capacityinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:34.498961"
+content_hash: "669c194b6963"
+synced_at: "2026-07-09T00:59:56.488916"
 ---
 
 # ScsiPeripheral_CapacityInfo

@@ -2,7 +2,8 @@
 title: "@ohos.FusionConnectivity.partnerAgent（设备状态通知模块）"
 upstream_id: "harmonyos-references/js-apis-fusionconnectivity-partneragent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:47.052882"
+content_hash: "210de806cc13"
+synced_at: "2026-07-09T00:59:24.202392"
 ---
 
 # @ohos.FusionConnectivity.partnerAgent（设备状态通知模块）

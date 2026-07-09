@@ -2,7 +2,8 @@
 title: "JSVM_HandleScope__*"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-handlescope--8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:04.054612"
+content_hash: "b45ed7be5a7d"
+synced_at: "2026-07-09T01:01:47.844276"
 ---
 
 # JSVM_HandleScope__*

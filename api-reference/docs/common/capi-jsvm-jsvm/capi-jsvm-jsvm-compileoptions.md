@@ -2,7 +2,8 @@
 title: "JSVM_CompileOptions"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-compileoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:03.328380"
+content_hash: "0e274f7f44fd"
+synced_at: "2026-07-09T01:01:47.284879"
 ---
 
 # JSVM_CompileOptions

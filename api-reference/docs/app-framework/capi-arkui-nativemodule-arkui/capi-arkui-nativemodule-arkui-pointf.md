@@ -2,7 +2,8 @@
 title: "ArkUI_PointF"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-pointf"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:51.991550"
+content_hash: "29c30feb3bc5"
+synced_at: "2026-07-09T00:58:42.841859"
 ---
 
 # ArkUI_PointF

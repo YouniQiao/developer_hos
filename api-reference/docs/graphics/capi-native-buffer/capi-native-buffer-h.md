@@ -2,7 +2,8 @@
 title: "native_buffer.h"
 upstream_id: "harmonyos-references/capi-native-buffer-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:58.362751"
+content_hash: "23c09e624431"
+synced_at: "2026-07-09T01:00:54.832443"
 ---
 
 # native_buffer.h

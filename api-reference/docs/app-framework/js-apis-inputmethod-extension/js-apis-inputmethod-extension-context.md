@@ -2,7 +2,8 @@
 title: "@ohos.InputMethodExtensionContext (InputMethodExtensionContext)"
 upstream_id: "harmonyos-references/js-apis-inputmethod-extension-context"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:18.401873"
+content_hash: "f1078e0bb486"
+synced_at: "2026-07-09T00:59:03.896955"
 ---
 
 # @ohos.InputMethodExtensionContext (InputMethodExtensionContext)

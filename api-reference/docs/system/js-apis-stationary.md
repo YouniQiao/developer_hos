@@ -2,7 +2,8 @@
 title: "@ohos.stationary (设备状态感知框架)"
 upstream_id: "harmonyos-references/js-apis-stationary"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:36.722953"
+content_hash: "7e763af559bc"
+synced_at: "2026-07-09T00:59:57.756634"
 ---
 
 # @ohos.stationary (设备状态感知框架)

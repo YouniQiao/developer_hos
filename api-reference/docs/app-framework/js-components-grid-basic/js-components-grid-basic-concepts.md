@@ -2,7 +2,8 @@
 title: "基本概念"
 upstream_id: "harmonyos-references/js-components-grid-basic-concepts"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:09.917607"
+content_hash: "94cbfd9bc263"
+synced_at: "2026-07-09T00:58:23.764401"
 ---
 
 # 基本概念
@@ -21,4 +22,4 @@ synced_at: "2026-06-24T20:49:09.917607"
 
 1. Margins： 是用来控制元素距离屏幕最边缘的距离关系，可以根据设备的不同尺寸，定义不同的Margin值作为断点系统中的统一规范。
 2. Gutters： 是用来控制元素和元素之间的距离关系，可以根据设备的不同尺寸，定义不同的Gutters值作为断点系统中的统一规范。为了保证较好的视觉效果，Gutters通常的取值不会大于Margins的取值。
-3. Columns： 是用来辅助布局的主要定位工具，不同的屏幕尺寸匹配不同的Columns数量来辅助布局定位。Columns的宽度在保证Margins和Gutters符合规范的情况下，根据实际设备的宽度和Columns数量自动计算每一个Columns的宽度。 ![](./img/zh-cn_image_0000002626230938.png) **栅格断点系统** 栅格系统定义了不同水平宽度设备对应Columns的数量关系，形成了一套断点规则定义。 栅格系统以水平分辨率值作为断点依据，不同的设备根据自身当前水平宽度px值(配置了autoDesignWidth为true)在不同的断点范围内的情况，显示不同数量的栅格数。 xs: 0
+3. Columns： 是用来辅助布局的主要定位工具，不同的屏幕尺寸匹配不同的Columns数量来辅助布局定位。Columns的宽度在保证Margins和Gutters符合规范的情况下，根据实际设备的宽度和Columns数量自动计算每一个Columns的宽度。 ![](./img/zh-cn_image_0000002631413832.png) **栅格断点系统** 栅格系统定义了不同水平宽度设备对应Columns的数量关系，形成了一套断点规则定义。 栅格系统以水平分辨率值作为断点依据，不同的设备根据自身当前水平宽度px值(配置了autoDesignWidth为true)在不同的断点范围内的情况，显示不同数量的栅格数。 xs: 0

@@ -2,7 +2,8 @@
 title: "组件内转场 (transition)"
 upstream_id: "harmonyos-references/ts-transition-animation-component"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:40.964101"
+content_hash: "86d8e37f3ac1"
+synced_at: "2026-07-09T00:58:08.278467"
 ---
 
 # 组件内转场 (transition)
@@ -437,7 +438,7 @@ struct TransitionEffectExample1 {
 ```
  示意图：
 
-![](./img/zh-cn_image_0000002656470087.gif)
+![](./img/zh-cn_image_0000002631413612.gif)
 
 #### [h2]示例2（使用不同接口实现图片出现消失）
 
@@ -499,7 +500,7 @@ struct TransitionEffectExample2 {
 ```
  示意图：
 
-![](./img/zh-cn_image_0000002656350135.gif)
+![](./img/zh-cn_image_0000002661732843.gif)
 
 #### [h2]示例3（设置父子组件为transition）
 
@@ -558,4 +559,4 @@ struct TransitionEffectExample3 {
 ```
  示意图：
 
-![](./img/zh-cn_image_0000002626230722.gif)
+![](./img/zh-cn_image_0000002631253722.gif)

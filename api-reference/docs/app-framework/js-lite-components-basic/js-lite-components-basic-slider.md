@@ -2,7 +2,8 @@
 title: "slider"
 upstream_id: "harmonyos-references/js-lite-components-basic-slider"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:20.601521"
+content_hash: "88903e35a81d"
+synced_at: "2026-07-09T00:58:28.477496"
 ---
 
 # slider
@@ -112,4 +113,4 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002656350525.png)
+ ![](./img/zh-cn_image_0000002661613297.png)

@@ -2,7 +2,8 @@
 title: "Canvas"
 upstream_id: "harmonyos-references/ts-components-canvas-canvas"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:29.177896"
+content_hash: "587996024366"
+synced_at: "2026-07-09T00:58:03.276647"
 ---
 
 # Canvas
@@ -194,7 +195,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070708.png)
+ ![](./img/zh-cn_image_0000002661732737.png)
 
 #### [h2]示例2（使用DrawingRenderingContext中的方法）
 
@@ -223,7 +224,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469985.png)
+ ![](./img/zh-cn_image_0000002631253618.png)
 
 #### [h2]示例3（使用attributeModifier动态设置Canvas组件的属性及方法）
 
@@ -278,8 +279,7 @@ struct attributeDemo {
                 console.info("analysis complete")
               })
               .catch((error: BusinessError) => {
-                let e: BusinessError = error as BusinessError
-                console.error(`Error code: ${e.code}, message: ${e.message}`)
+                console.error(`Error code: ${error.code}, message: ${error.message}`)
               })
           })
         Button('stop')
@@ -309,7 +309,7 @@ struct attributeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350033.png)
+ ![](./img/zh-cn_image_0000002661612799.png)
 
 #### [h2]示例4（创建不缓存指令Canvas并进行绘制）
 
@@ -356,4 +356,4 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230620.png)
+ ![](./img/zh-cn_image_0000002631413510.png)

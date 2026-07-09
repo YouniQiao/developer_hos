@@ -2,7 +2,8 @@
 title: "XEG_RTShadowAODescription"
 upstream_id: "harmonyos-references/xengine-kit-xeg-rtshadowaodescription"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:17.224227"
+content_hash: "4e6705b854e5"
+synced_at: "2026-07-09T01:01:11.188175"
 ---
 
 # XEG_RTShadowAODescription

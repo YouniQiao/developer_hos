@@ -2,7 +2,8 @@
 title: "CryptoMacApi"
 upstream_id: "harmonyos-references/capi-cryptomacapi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:30.727514"
+content_hash: "64c895aea8ad"
+synced_at: "2026-07-09T00:59:11.877449"
 ---
 
 # CryptoMacApi

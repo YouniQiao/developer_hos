@@ -2,7 +2,8 @@
 title: "Hid_EventTypeArray"
 upstream_id: "harmonyos-references/capi-hidddk-hid-eventtypearray"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:32.596602"
+content_hash: "bba21f97f960"
+synced_at: "2026-07-09T00:59:55.661528"
 ---
 
 # Hid_EventTypeArray

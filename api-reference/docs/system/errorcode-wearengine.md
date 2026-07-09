@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-wearengine"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:44.694615"
+content_hash: "1fa04c4fcc91"
+synced_at: "2026-07-09T01:00:02.215816"
 ---
 
 # ArkTS API错误码
@@ -80,13 +81,15 @@ App has not applied for the Wear Engine service.
 
 可能原因
 
-1. 申请WearEngine服务时未配置兼容选项。
-2. 开发者未在开发者联盟申请WearEngine服务。
+1. 开发者未在开发者联盟申请申请Wear Engine服务。
+2. 申请Wear Engine服务时未配置兼容选项。
+3. 在开发者联盟申请的Wear Engine服务权限和代码中向用户申请的权限不一致。
 
 处理步骤
 
-1. 登录开发者联盟[申请接入Wear Engine服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply)，勾选兼容选项。
-2. 通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+1. 开发者[申请接入Wear Engine服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply)。
+2. [申请接入Wear Engine服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/wearengine_apply)时，勾选兼容选项。
+3. 确保申请接入Wear Engine服务时申请的权限，与代码中向用户申请的权限一致。
 
 #### 1008500005 用户未授权
 
@@ -250,7 +253,8 @@ Internal error.
 2. [randomId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/wearengine_api#device)错误。
 3. 应用未在metadata中配置clientId。
 4. 在AGC未上传证书指纹，或上传的不正确，或上传的未生效。
-5. WearEngine发生未知错误。
+5. 在AGC平台申请的应用包名和APP ID，与代码中的应用包名和APP ID不一致。
+6. WearEngine发生未知错误。
 
 处理步骤
 
@@ -258,4 +262,5 @@ Internal error.
 2. 断开重连设备。
 3. 在metadata中配置[clientId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/configuration_client_id)。
 4. 确保在AGC上传正式的证书指纹，上传后24小时内会生效。
-5. 通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。
+5. 确保在AGC平台申请的应用包名和APP ID，与代码中的应用包名和APP ID一致。
+6. 通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题，华为支持人员会及时处理。

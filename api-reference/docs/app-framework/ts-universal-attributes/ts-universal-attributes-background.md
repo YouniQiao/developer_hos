@@ -2,7 +2,8 @@
 title: "背景设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-background"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:35.148549"
+content_hash: "16a152ce2684"
+synced_at: "2026-07-09T00:57:38.457230"
 ---
 
 # 背景设置
@@ -751,7 +752,7 @@ struct BackgroundExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070240.png)
+ ![](./img/zh-cn_image_0000002631413028.png)
 
 #### [h2]示例2（设置背景模糊样式）
 
@@ -781,7 +782,7 @@ struct BackgroundBlurStyleDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469517.png)
+ ![](./img/zh-cn_image_0000002661732259.png)
 
 #### [h2]示例3（设置组件背景）
 
@@ -815,7 +816,7 @@ struct BackgroundExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349565.png)
+ ![](./img/zh-cn_image_0000002631253138.png)
 
 #### [h2]示例4（设置组件背景提亮效果）
 
@@ -849,15 +850,15 @@ struct BackgroundBrightnessDemo {
 
 rate和lightUpDegree参数值为0.5,0.5：
 
-![](./img/zh-cn_image_0000002626230152.png)
+![](./img/zh-cn_image_0000002661612323.png)
 
 修改rate和lightUpDegree参数值为0.5,-0.1：
 
-![](./img/zh-cn_image_0000002626070242.png)
+![](./img/zh-cn_image_0000002631413030.png)
 
 去掉backgroundBrightness的设置，效果如下：
 
-![](./img/zh-cn_image_0000002656469519.png)
+![](./img/zh-cn_image_0000002661732263.png)
 
 #### [h2]示例5（设置模糊属性）
 
@@ -897,7 +898,7 @@ struct BlurEffectsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349567.png)
+ ![](./img/zh-cn_image_0000002631253140.png)
 
 #### [h2]示例6（设置文字异形模糊效果）
 
@@ -996,7 +997,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230154.jpeg)
+ ![](./img/zh-cn_image_0000002661612325.jpeg)
 
 #### [h2]示例7（模糊效果对比）
 
@@ -1052,7 +1053,7 @@ struct BackGroundBlur {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070244.png)
+ ![](./img/zh-cn_image_0000002631413032.png)
 
 #### [h2]示例8（设置P3色域背景效果）
 
@@ -1078,7 +1079,7 @@ struct P3BackgroundDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469521.png)
+ ![](./img/zh-cn_image_0000002661732265.png)
 
 #### [h2]示例9（设置组件背景扩展）
 
@@ -1130,4 +1131,4 @@ struct BackgroundExtension {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349569.png)
+ ![](./img/zh-cn_image_0000002631253142.png)

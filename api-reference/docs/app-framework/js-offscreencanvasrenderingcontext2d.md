@@ -2,7 +2,8 @@
 title: "OffscreenCanvasRenderingContext2D对象"
 upstream_id: "harmonyos-references/js-offscreencanvasrenderingcontext2d"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:09.887607"
+content_hash: "900d4b51b836"
+synced_at: "2026-07-09T00:58:23.964641"
 ---
 
 # OffscreenCanvasRenderingContext2D对象
@@ -73,7 +74,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230936.png)
+ ![](./img/zh-cn_image_0000002631413830.png)
 
 #### 方法
 
@@ -153,7 +154,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626071026.png)
+ ![](./img/zh-cn_image_0000002661733061.png)
 
 #### [h2]isPointInStroke
 
@@ -229,7 +230,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470303.png)
+ ![](./img/zh-cn_image_0000002631253940.png)
 
 #### [h2]resetTransform
 
@@ -298,4 +299,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350351.png)
+ ![](./img/zh-cn_image_0000002661613121.png)

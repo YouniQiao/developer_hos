@@ -2,7 +2,8 @@
 title: "context.h"
 upstream_id: "harmonyos-references/capi-context-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:58.186861"
+content_hash: "620c78dfbad4"
+synced_at: "2026-07-09T01:01:43.570282"
 ---
 
 # context.h

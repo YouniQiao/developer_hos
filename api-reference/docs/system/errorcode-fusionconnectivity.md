@@ -1,9 +1,12 @@
 ---
+
 title: "融合短距服务子系统错误码"
 upstream_id: "harmonyos-references/errorcode-fusionconnectivity"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:48.268829"
+synced_at: "2026-07-09T00:59:25.119413"
+content_hash: "6cdda3e2de23"
 ---
+
 
 # 融合短距服务子系统错误码
 

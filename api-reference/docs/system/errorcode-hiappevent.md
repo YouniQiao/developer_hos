@@ -1,9 +1,12 @@
 ---
+
 title: "应用事件打点错误码"
 upstream_id: "harmonyos-references/errorcode-hiappevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:50.082206"
+synced_at: "2026-07-09T01:00:05.949344"
+content_hash: "9c61992336e4"
 ---
+
 
 # 应用事件打点错误码
 

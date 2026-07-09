@@ -2,7 +2,8 @@
 title: "@ohos.net.ethernet (以太网连接管理)"
 upstream_id: "harmonyos-references/js-apis-net-ethernet"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:50.831357"
+content_hash: "184d435b8359"
+synced_at: "2026-07-09T00:59:27.051010"
 ---
 
 # @ohos.net.ethernet (以太网连接管理)

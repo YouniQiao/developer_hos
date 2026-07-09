@@ -2,7 +2,8 @@
 title: "Location"
 upstream_id: "harmonyos-references/capi-location"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:31.107133"
+content_hash: "1bd6db02a29a"
+synced_at: "2026-07-09T01:01:23.250427"
 ---
 
 # Location

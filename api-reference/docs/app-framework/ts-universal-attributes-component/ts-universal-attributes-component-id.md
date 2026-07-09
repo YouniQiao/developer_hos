@@ -2,7 +2,8 @@
 title: "组件标识"
 upstream_id: "harmonyos-references/ts-universal-attributes-component-id"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:34.772473"
+content_hash: "e52ab25d58da"
+synced_at: "2026-07-09T00:57:37.451365"
 ---
 
 # 组件标识

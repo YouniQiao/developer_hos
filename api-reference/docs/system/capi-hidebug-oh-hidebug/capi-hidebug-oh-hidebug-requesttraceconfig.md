@@ -2,7 +2,8 @@
 title: "OH_HiDebug_RequestTraceConfig"
 upstream_id: "harmonyos-references/capi-hidebug-oh-hidebug-requesttraceconfig"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:49.149495"
+content_hash: "b6fcc5cdb9b5"
+synced_at: "2026-07-09T01:00:05.077626"
 ---
 
 # OH_HiDebug_RequestTraceConfig
@@ -13,7 +14,7 @@ typedef struct OH_HiDebug_RequestTraceConfig {...} OH_HiDebug_RequestTraceConfig
 
 #### 概述
 
-请求trace采集的配置结构类型定义。
+请求trace采集的配置结构类型定义。用于在应用性能分析和调试场景中配置trace采集参数，如定位应用启动慢、UI卡顿、CPU占用高等性能问题。
 
 起始版本： 24
 

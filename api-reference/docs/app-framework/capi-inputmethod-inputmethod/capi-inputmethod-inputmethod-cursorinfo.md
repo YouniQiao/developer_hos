@@ -2,7 +2,8 @@
 title: "InputMethod_CursorInfo"
 upstream_id: "harmonyos-references/capi-inputmethod-inputmethod-cursorinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:20.237066"
+content_hash: "53b74fa9a560"
+synced_at: "2026-07-09T00:59:05.102312"
 ---
 
 # InputMethod_CursorInfo

@@ -2,7 +2,8 @@
 title: "devicePicker (设备选择控制器)"
 upstream_id: "harmonyos-references/servicecollaboration-devicepicker"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:03.407446"
+content_hash: "f2c912c5faee"
+synced_at: "2026-07-09T00:59:37.067583"
 ---
 
 # devicePicker (设备选择控制器)
@@ -172,7 +173,7 @@ struct CustomControls {
 
 | **图1** 设备空闲状态效果图 | **图2** 设备成功状态效果图 |
 | --- | --- |
-| 下图中my phone处于空闲状态，点击该设备后会触发deviceSelected事件![](./img/zh-cn_image_0000002626071326.png) | 下图中my phone处于成功状态，点击该设备后会触发deviceUnselected事件![](./img/zh-cn_image_0000002656470603.png) |
+| 下图中my phone处于空闲状态，点击该设备后会触发deviceSelected事件![](./img/zh-cn_image_0000002661733363.png) | 下图中my phone处于成功状态，点击该设备后会触发deviceUnselected事件![](./img/zh-cn_image_0000002631254242.png) |
 
 #### [h2]off('deviceSelected' | 'deviceUnselected' | 'selectedDeviceOffline')
 
@@ -316,7 +317,7 @@ struct CustomControls {
 
 | **图3** 设备流转过程效果图 | **图4** 设备流转成功效果图 | **图5** 设备流转失败效果图 | **图6** 应用描述信息效果图 |
 | --- | --- | --- | --- |
-| 下图中my phone处于流转中，设备名称右侧会有流转过程动画![](./img/zh-cn_image_0000002656350653.png) | 下图中my phone流转成功![](./img/zh-cn_image_0000002626231240.png) | 下图中my phone流转失败，失败原因是对端设备忙![](./img/zh-cn_image_0000002626071328.png) | 在设备选择面板的最上方显示应用的相关信息，包括应用图标、应用名称、应用描述信息![](./img/zh-cn_image_0000002656470605.png) |
+| 下图中my phone处于流转中，设备名称右侧会有流转过程动画![](./img/zh-cn_image_0000002661613423.png) | 下图中my phone流转成功![](./img/zh-cn_image_0000002631414136.png) | 下图中my phone流转失败，失败原因是对端设备忙![](./img/zh-cn_image_0000002661733365.png) | 在设备选择面板的最上方显示应用的相关信息，包括应用图标、应用名称、应用描述信息![](./img/zh-cn_image_0000002631254244.png) |
 
 #### [h2]release
 

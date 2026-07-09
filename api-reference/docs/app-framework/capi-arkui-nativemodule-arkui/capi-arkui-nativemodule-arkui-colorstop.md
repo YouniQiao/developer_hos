@@ -2,7 +2,8 @@
 title: "ArkUI_ColorStop"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-colorstop"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:51.063348"
+content_hash: "025496711861"
+synced_at: "2026-07-09T00:58:42.397134"
 ---
 
 # ArkUI_ColorStop

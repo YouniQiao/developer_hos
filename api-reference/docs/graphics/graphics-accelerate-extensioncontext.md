@@ -2,7 +2,8 @@
 title: "AssetAccelerationExtensionContext（资源加速ExtensionContext）"
 upstream_id: "harmonyos-references/graphics-accelerate-extensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:12.404833"
+content_hash: "41ad7263b7c2"
+synced_at: "2026-07-09T01:01:06.257110"
 ---
 
 # AssetAccelerationExtensionContext（资源加速ExtensionContext）

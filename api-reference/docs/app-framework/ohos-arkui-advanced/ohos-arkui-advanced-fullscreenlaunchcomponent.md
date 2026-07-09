@@ -2,7 +2,8 @@
 title: "FullScreenLaunchComponent"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-fullscreenlaunchcomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:53.150266"
+content_hash: "03ef8ba57843"
+synced_at: "2026-07-09T00:58:15.842747"
 ---
 
 # FullScreenLaunchComponent

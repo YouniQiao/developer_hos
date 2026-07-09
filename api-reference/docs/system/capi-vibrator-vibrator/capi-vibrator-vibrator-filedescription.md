@@ -2,7 +2,8 @@
 title: "Vibrator_FileDescription"
 upstream_id: "harmonyos-references/capi-vibrator-vibrator-filedescription"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:43.218180"
+content_hash: "dccb3391d2e7"
+synced_at: "2026-07-09T01:00:01.129397"
 ---
 
 # Vibrator_FileDescription

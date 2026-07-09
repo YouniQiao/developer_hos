@@ -2,7 +2,8 @@
 title: "polyline"
 upstream_id: "harmonyos-references/js-components-svg-polyline"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:11.893115"
+content_hash: "c56f1b979e40"
+synced_at: "2026-07-09T00:58:24.646206"
 ---
 
 # polyline
@@ -39,4 +40,4 @@ synced_at: "2026-06-24T20:49:11.893115"
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002626230942.png)
+ ![](./img/zh-cn_image_0000002631413836.png)

@@ -2,7 +2,8 @@
 title: "Scan_PictureScanProgress"
 upstream_id: "harmonyos-references/capi-oh-scan-scan-picturescanprogress"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:12.905722"
+content_hash: "03d813f998ed"
+synced_at: "2026-07-09T00:59:44.435932"
 ---
 
 # Scan_PictureScanProgress

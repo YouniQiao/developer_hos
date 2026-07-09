@@ -2,7 +2,8 @@
 title: "Hid_MscEventArray"
 upstream_id: "harmonyos-references/capi-hidddk-hid-msceventarray"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:33.075491"
+content_hash: "62d6aaed66eb"
+synced_at: "2026-07-09T00:59:55.798050"
 ---
 
 # Hid_MscEventArray

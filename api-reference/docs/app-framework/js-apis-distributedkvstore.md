@@ -2,7 +2,8 @@
 title: "@ohos.data.distributedKVStore (分布式键值数据库)"
 upstream_id: "harmonyos-references/js-apis-distributedkvstore"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:02.485780"
+content_hash: "1cd03fdd9fb6"
+synced_at: "2026-07-09T00:57:15.689166"
 ---
 
 # @ohos.data.distributedKVStore (分布式键值数据库)

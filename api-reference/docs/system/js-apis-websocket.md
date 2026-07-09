@@ -2,7 +2,8 @@
 title: "@ohos.net.webSocket (WebSocket连接)"
 upstream_id: "harmonyos-references/js-apis-websocket"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:52.358393"
+content_hash: "74fbc4fd33e5"
+synced_at: "2026-07-09T00:59:28.849162"
 ---
 
 # @ohos.net.webSocket (WebSocket连接)

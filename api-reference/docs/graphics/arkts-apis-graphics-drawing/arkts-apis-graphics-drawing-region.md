@@ -2,7 +2,8 @@
 title: "Class (Region)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-region"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:54.356071"
+content_hash: "86b002d5c75d"
+synced_at: "2026-07-09T01:00:52.773082"
 ---
 
 # Class (Region)

@@ -2,7 +2,8 @@
 title: "ContainerReader"
 upstream_id: "harmonyos-references/ts-container-containerreader"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:53.036978"
+content_hash: "a611971ce42d"
+synced_at: "2026-07-09T00:57:45.991248"
 ---
 
 # ContainerReader
@@ -64,8 +65,8 @@ ContainerReader(value: ContainerReaderInfo)
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | size | [Size](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#size) | 否 | 否 | 获取到的当前ContainerReader组件的尺寸，用于布局分析和断点计算。 **说明：** 该参数支持[!!](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding#系统组件参数双向绑定)双向绑定变量。绑定后组件尺寸值变化时，size绑定的变量值会自动更新。 |
-| widthBreakpoint | [WidthBreakpoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#widthbreakpoint13) | 否 | 是 | 容器的宽度断点，为获取到的当前ContainerReader组件的宽度断点枚举值。 默认值：WidthBreakpoint.XS **说明：** 该参数支持[!!](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding#系统组件参数双向绑定)双向绑定变量。绑定后组件宽度断点值变化时，widthBreakpoint绑定的变量值会自动更新。 |
-| heightBreakpoint | [HeightBreakpoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#heightbreakpoint13) | 否 | 是 | 容器的高度断点，为获取到的当前ContainerReader组件在不同高宽比阈值下对应的高度断点枚举值。 默认值：HeightBreakpoint.SM **说明：** 该参数支持[!!](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding#系统组件参数双向绑定)双向绑定变量。绑定后组件高度断点值变化时，heightBreakpoint绑定的变量值会自动更新。 |
+| widthBreakpoint | [WidthBreakpoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#widthbreakpoint13) | 否 | 是 | 容器的宽度断点，为获取到的当前ContainerReader组件的宽度断点枚举值。 **说明：** 该参数支持[!!](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding#系统组件参数双向绑定)双向绑定变量。绑定后组件宽度断点值变化时，widthBreakpoint绑定的变量值会自动更新。 |
+| heightBreakpoint | [HeightBreakpoint](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#heightbreakpoint13) | 否 | 是 | 容器的高度断点，为获取到的当前ContainerReader组件在不同高宽比阈值下对应的高度断点枚举值。 **说明：** 该参数支持[!!](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding#系统组件参数双向绑定)双向绑定变量。绑定后组件高度断点值变化时，heightBreakpoint绑定的变量值会自动更新。 |
 
 #### 属性
 
@@ -185,7 +186,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230280.gif)
+ ![](./img/zh-cn_image_0000002661612455.gif)
 
 #### [h2]示例2 （自定义断点配置）
 
@@ -261,7 +262,7 @@ struct Index {
 ```
  通过单击按钮改变父容器的宽度，返回不同的宽度断点值，从而调整布局方向。
 
-![](./img/zh-cn_image_0000002626070370.gif)
+![](./img/zh-cn_image_0000002631413164.gif)
 
 #### [h2]示例3 （利用宽度断点动态调整列数）
 
@@ -347,4 +348,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469647.gif)
+ ![](./img/zh-cn_image_0000002661732393.gif)

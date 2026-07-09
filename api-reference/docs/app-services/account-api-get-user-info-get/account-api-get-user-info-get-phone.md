@@ -2,7 +2,8 @@
 title: "获取华为账号用户信息-获取手机号"
 upstream_id: "harmonyos-references/account-api-get-user-info-get-phone"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:19.732423"
+content_hash: "97457ec299fc"
+synced_at: "2026-07-09T01:01:13.101068"
 ---
 
 # 获取华为账号用户信息-获取手机号
@@ -13,7 +14,7 @@ synced_at: "2026-06-24T20:53:19.732423"
 
 #### 功能介绍
 
-[获取手机号](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-phone-overview)场景，应用服务端向华为账号服务器调用该接口获取UnionID，OpenID，用户授权开放的手机号码及其相关信息。
+[获取手机号](https://developer.huawei.com/consumer/cn/doc/atomic-guides/account-guide-atomic-get-phonenumber)场景，应用服务端向华为账号服务器调用该接口获取UnionID，OpenID，用户授权开放的手机号码及其相关信息。
 
 #### 场景描述
 
@@ -75,7 +76,7 @@ access_token=<Access Token>
 | --- | --- | --- | --- |
 | openID | 是 | String | 用户OpenID。具体格式要求请参考[OpenID和UnionID的格式说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-9)。 |
 | unionID | 是 | String | 用户UnionID。具体格式要求请参考[OpenID和UnionID的格式说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-faq-9)。 |
-| mobileNumber | 否 | String | 用户选择授权给应用的手机号（华为账号绑定号码或用户选择的其他手机号），详见[获取手机号](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-phone-overview)。 以下场景mobileNumber不返回： - 用户未绑定手机号。 - 用户授权提供的手机号与华为账号的关联已被删除。 - 应用未申请phone的scope权限。 - 获取Authorization Code时不携带phone scope。 |
+| mobileNumber | 否 | String | 用户选择授权给应用的手机号（华为账号绑定号码或用户选择的其他手机号），详见[获取手机号](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-get-phonenumber)。 以下场景mobileNumber不返回： - 用户未绑定手机号。 - 用户授权提供的手机号与华为账号的关联已被删除。 - 应用未申请phone的scope权限。 - 获取Authorization Code时不携带phone scope。 |
 | purePhoneNumber | 否 | String | 不带国家码的手机号，此处为去除国际冠码与国际电话区号的手机号形式。 当不返回 mobileNumber 时，也不进行返回。 |
 | phoneCountryCode | 否 | String | purePhoneNumber的国际冠码(00)+国际电话区号。 当不返回 mobileNumber 时，也不进行返回。 |
 

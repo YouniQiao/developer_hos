@@ -2,7 +2,8 @@
 title: "ProgressButton"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-progressbutton"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:53.550985"
+content_hash: "75849562a82b"
+synced_at: "2026-07-09T00:58:15.838511"
 ---
 
 # ProgressButton
@@ -117,7 +118,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350231.png)
+ ![](./img/zh-cn_image_0000002661732939.png)
 
 #### [h2]示例2（自定义颜色按钮）
 
@@ -179,7 +180,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230818.png)
+ ![](./img/zh-cn_image_0000002631253818.png)
 
 #### [h2]示例3（自定义圆角按钮）
 
@@ -235,4 +236,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070908.png)
+ ![](./img/zh-cn_image_0000002661613001.png)

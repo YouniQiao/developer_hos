@@ -2,7 +2,8 @@
 title: "hiai_aipp_param.h"
 upstream_id: "harmonyos-references/cannkit-hiai-aipp-param-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:55.059552"
+content_hash: "51417d7cc5d3"
+synced_at: "2026-07-09T01:01:40.456579"
 ---
 
 # hiai_aipp_param.h

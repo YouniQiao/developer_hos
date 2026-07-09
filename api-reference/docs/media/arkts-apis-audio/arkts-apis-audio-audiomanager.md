@@ -2,7 +2,8 @@
 title: "Interface (AudioManager)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audiomanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:52.431594"
+content_hash: "fc4d0b33228a"
+synced_at: "2026-07-09T01:00:07.820279"
 ---
 
 # Interface (AudioManager)

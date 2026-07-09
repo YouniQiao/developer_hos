@@ -2,7 +2,8 @@
 title: "serviceNotification（服务通知）"
 upstream_id: "harmonyos-references/push-servicenotification"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:49.302717"
+content_hash: "ff400c105953"
+synced_at: "2026-07-09T01:01:37.566041"
 ---
 
 # serviceNotification（服务通知）
@@ -44,7 +45,7 @@ requestSubscribeNotification(context: Context, entityIds: Array<string>, callbac
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 请求订阅消息授权上下文，仅支持传入[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext)。 |
-| entityIds | Array | 是 | 待订阅的消息模板ID列表。 |
+| entityIds | Array | 是 | 待订阅的消息模板ID列表，列表数量最多传入3个。 |
 | callback | AsyncCallback | 是 | 接口调用结束的回调函数。当请求订阅成功，err为undefined，data为订阅授权结果；否则为错误对象。 |
 
 错误码：
@@ -108,7 +109,7 @@ export default class EntryAbility extends UIAbility {
 }
 ```
 
-#### requestSubscribeNotification
+#### serviceNotification.requestSubscribeNotification
 
 requestSubscribeNotification(context: Context, entityIds: Array<string>, type?: SubscribeNotificationType): Promise<RequestResult>
 
@@ -127,7 +128,7 @@ requestSubscribeNotification(context: Context, entityIds: Array<string>, type?: 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 请求订阅消息授权上下文，仅支持传入[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext)。 |
-| entityIds | Array | 是 | 待订阅的消息模板ID列表。 当订阅type为SUBSCRIBE_WITH_HUAWEI_ID时，详情请参见[选用订阅模板](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-service-noti#section880418143379)。 |
+| entityIds | Array | 是 | 待订阅的消息模板ID列表，列表数量最多传入3个。 当订阅type为SUBSCRIBE_WITH_HUAWEI_ID时，详情请参见[选用订阅模板](https://developer.huawei.com/consumer/cn/doc/atomic-guides/push-as-service-noti#section880418143379)。 |
 | type | [SubscribeNotificationType](#subscribenotificationtype) | 否 | 订阅类型。默认为SUBSCRIBE_WITH_TOKEN。起始版本：5.0.0(12)。 |
 
 返回值：
@@ -193,8 +194,7 @@ export default class EntryAbility extends UIAbility {
     let type: serviceNotification.SubscribeNotificationType =
       serviceNotification.SubscribeNotificationType.SUBSCRIBE_WITH_HUAWEI_ID;
     serviceNotification.requestSubscribeNotification(this.context, entityIds, type).then((data) => {
-      hilog.info(LOG_DOMAIN, LOG_TAG,
-        'requestSubscribeNotification succeeded, result: ${JSON.stringify(data.entityResult)}}');
+      hilog.info(LOG_DOMAIN, LOG_TAG, 'requestSubscribeNotification succeeded, result=%{public}s', JSON.stringify(data.entityResult));
     }).catch((err: BusinessError) => {
       hilog.error(LOG_DOMAIN, LOG_TAG, 'requestSubscribeNotification failed, %{public}d %{public}s', err.code, err.message);
     });
@@ -224,19 +224,57 @@ querySubscribeNotificationSetting(): Promise<SubscribeNotificationSetting>
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-error-code)。
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-error-code)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 1000900001 | System internal error. |
-| 1000900008 | Connect push service failed. |
-| 1000900009 | Push service internal error. |
+| 1000900008 | Failed to connect to the push service. |
+| 1000900009 | Internal error of the push service. |
 | 1000900010 | Illegal application identity. |
-| 1000900011 | Network is unavailable. |
+| 1000900011 | The network is unavailable. |
 | 1000900017 | The device does not support current operation. |
 | 1000900021 | App is not available or not registered. |
 | 1000900030 | The user has not logged in with HUAWEI ID. |
-| 1000900032 | No service notification settings exist. |
+| 1000900032 | The service notification setting does not exist. |
+
+示例：
+
+```
+import { UIAbility } from '@kit.AbilityKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+import { serviceNotification } from '@kit.PushKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+const LOG_DOMAIN = 0x0000;
+const LOG_TAG = 'EntryAbility';
+
+export default class EntryAbility extends UIAbility {
+  async onForeground(): Promise<void> {
+    hilog.info(LOG_DOMAIN, LOG_TAG, 'onForeground');
+
+    try {
+      await this.querySubscribe();
+    } catch (err) {
+      let e: BusinessError = err as BusinessError;
+      hilog.error(LOG_DOMAIN, LOG_TAG, 'querySubscribe failed, %{public}d %{public}s', e.code, e.message);
+    }
+  }
+
+  /**
+   * 查询元服务服务通知配置详情
+   */
+  private async querySubscribe(): Promise<void> {
+    serviceNotification.querySubscribeNotificationSetting().then((data) => {
+      hilog.info(LOG_DOMAIN, LOG_TAG,
+        `querySubscribeNotificationSetting succeeded, bundle: ${JSON.stringify(data.bundleName)},` +
+          ` enable: ${JSON.stringify(data.enable)}, entitySettings: ${JSON.stringify(data.entitySettings)}`);
+    }).catch((err: BusinessError) => {
+      hilog.error(LOG_DOMAIN, LOG_TAG, 'querySubscribeNotificationSetting failed, %{public}d %{public}s', err.code, err.message);
+    });
+  }
+}
+```
 
 #### RequestResult
 

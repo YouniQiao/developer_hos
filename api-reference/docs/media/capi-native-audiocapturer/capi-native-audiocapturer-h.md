@@ -2,7 +2,8 @@
 title: "native_audiocapturer.h"
 upstream_id: "harmonyos-references/capi-native-audiocapturer-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:54.970585"
+content_hash: "33549dc69d63"
+synced_at: "2026-07-09T01:00:09.445226"
 ---
 
 # native_audiocapturer.h

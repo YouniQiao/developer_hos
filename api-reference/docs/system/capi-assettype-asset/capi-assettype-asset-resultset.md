@@ -2,7 +2,8 @@
 title: "Asset_ResultSet"
 upstream_id: "harmonyos-references/capi-assettype-asset-resultset"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:29.327121"
+content_hash: "196d43462872"
+synced_at: "2026-07-09T00:59:11.117472"
 ---
 
 # Asset_ResultSet

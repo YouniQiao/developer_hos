@@ -1,9 +1,12 @@
 ---
+
 title: "服务动态参数说明"
 upstream_id: "harmonyos-references/push-api-service-timeline-param"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:51.403398"
+synced_at: "2026-07-09T01:01:38.399397"
+content_hash: "08361d7008ab"
 ---
+
 
 # 服务动态参数说明
 

@@ -2,7 +2,8 @@
 title: "Class (Magnifier)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-magnifier"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:21.503701"
+content_hash: "2926557e37f0"
+synced_at: "2026-07-09T00:57:29.101413"
 ---
 
 # Class (Magnifier)
@@ -74,7 +75,7 @@ struct MagnifierExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349493.png)
+ ![](./img/zh-cn_image_0000002631412954.png)
 
 #### show
 

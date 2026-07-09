@@ -2,7 +2,8 @@
 title: "OHExtDataHandle"
 upstream_id: "harmonyos-references/capi-nativewindow-ohextdatahandle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:07.611387"
+content_hash: "f6ff05e98abe"
+synced_at: "2026-07-09T01:01:01.810532"
 ---
 
 # OHExtDataHandle

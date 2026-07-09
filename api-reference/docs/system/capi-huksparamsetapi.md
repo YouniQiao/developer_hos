@@ -2,7 +2,8 @@
 title: "HuksParamSetApi"
 upstream_id: "harmonyos-references/capi-huksparamsetapi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:43.005855"
+content_hash: "629002f9fa61"
+synced_at: "2026-07-09T00:59:20.594873"
 ---
 
 # HuksParamSetApi

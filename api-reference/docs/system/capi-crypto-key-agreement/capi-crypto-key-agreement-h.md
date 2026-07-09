@@ -2,7 +2,8 @@
 title: "crypto_key_agreement.h"
 upstream_id: "harmonyos-references/capi-crypto-key-agreement-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:31.354816"
+content_hash: "d2706d58ccd3"
+synced_at: "2026-07-09T00:59:12.405199"
 ---
 
 # crypto_key_agreement.h

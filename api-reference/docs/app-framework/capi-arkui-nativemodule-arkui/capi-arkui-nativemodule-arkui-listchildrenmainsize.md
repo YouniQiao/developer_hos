@@ -2,7 +2,8 @@
 title: "ArkUI_ListChildrenMainSize"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-listchildrenmainsize"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:53.363879"
+content_hash: "737a1f32707a"
+synced_at: "2026-07-09T00:58:43.757039"
 ---
 
 # ArkUI_ListChildrenMainSize

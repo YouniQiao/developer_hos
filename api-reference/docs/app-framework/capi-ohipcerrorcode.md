@@ -2,7 +2,8 @@
 title: "OHIPCErrorCode"
 upstream_id: "harmonyos-references/capi-ohipcerrorcode"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:21.228449"
+content_hash: "4f655fff2356"
+synced_at: "2026-07-09T00:59:05.790606"
 ---
 
 # OHIPCErrorCode

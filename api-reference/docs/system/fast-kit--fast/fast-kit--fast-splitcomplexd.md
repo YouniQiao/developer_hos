@@ -2,7 +2,8 @@
 title: "FAST_SplitComplexD"
 upstream_id: "harmonyos-references/fast-kit--fast-splitcomplexd"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:15.848090"
+content_hash: "b1b43c7aafa4"
+synced_at: "2026-07-09T00:59:46.707989"
 ---
 
 # FAST_SplitComplexD

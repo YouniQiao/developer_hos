@@ -2,7 +2,8 @@
 title: "前景色设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-foreground-color"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:39.867273"
+content_hash: "fdfea1f6b6db"
+synced_at: "2026-07-09T00:57:39.521605"
 ---
 
 # 前景色设置
@@ -79,7 +80,7 @@ struct ForegroundColorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230194.png)
+ ![](./img/zh-cn_image_0000002661612365.png)
 
 #### [h2]示例2（设置前景色为组件背景色反色）
 
@@ -102,7 +103,7 @@ struct ColoringStrategyExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070284.png)
+ ![](./img/zh-cn_image_0000002631413076.png)
 
 #### [h2]示例3（前景色未继承父组件）
 
@@ -122,4 +123,4 @@ struct ForegroundColorInherit {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469561.png)
+ ![](./img/zh-cn_image_0000002661732305.png)

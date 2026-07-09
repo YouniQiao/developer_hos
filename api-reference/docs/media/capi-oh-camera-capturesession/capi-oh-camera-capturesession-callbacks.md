@@ -2,7 +2,8 @@
 title: "CaptureSession_Callbacks"
 upstream_id: "harmonyos-references/capi-oh-camera-capturesession-callbacks"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:17.912566"
+content_hash: "9e9137a5ec5d"
+synced_at: "2026-07-09T01:00:26.803995"
 ---
 
 # CaptureSession_Callbacks

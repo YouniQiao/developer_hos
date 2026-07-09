@@ -2,7 +2,8 @@
 title: "@ohos.graphics.scene (ArkGraphics 3D模块)"
 upstream_id: "harmonyos-references/js-apis-scene"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:11.540097"
+content_hash: "c8ee2878309f"
+synced_at: "2026-07-09T01:01:05.321246"
 ---
 
 # @ohos.graphics.scene (ArkGraphics 3D模块)

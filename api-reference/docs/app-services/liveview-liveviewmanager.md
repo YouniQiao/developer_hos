@@ -2,7 +2,8 @@
 title: "liveViewManager"
 upstream_id: "harmonyos-references/liveview-liveviewmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:30.190277"
+content_hash: "53194fa8618e"
+synced_at: "2026-07-09T01:01:23.672630"
 ---
 
 # liveViewManager
@@ -1043,7 +1044,7 @@ async function buildWantAgent(): Promise<Want> {
 
 辅助区元素对应的API字段：
 
-![](./img/zh-cn_image_0000002656470965.png)
+![](./img/zh-cn_image_0000002631254608.png)
 
 - 1 实况卡片辅助区类型，对应type字段: 当辅助区类型为ExtensionType.EXTENSION_TYPE_COMMON_TEXT时，辅助区显示普通文本，使用API字段text传入文本内容。
 - 当辅助区类型为ExtensionType.EXTENSION_TYPE_CAPSULE_TEXT时，辅助区显示实况胶囊文本，使用API字段text传入文本内容。
@@ -1104,7 +1105,7 @@ async function buildWantAgent(): Promise<Want> {
 | weatherType | [WeatherType](#weathertype) | 否 | 是 | 天气类型。创建实况窗时，若不传入weatherType或传入值为undefined、[WeatherType](#weathertype).WEATHER_TYPE_UNDEFINED、未定义的枚举值，则不展示天气效果。 |
 | locationType | [WeatherLocationType](#weatherlocationtype) | 否 | 是 | 天气位置类型。创建实况窗时，若locationType不传入或传入值为undefined、未定义的枚举值，则不展示天气效果。 |
 | highTemperature | number | 否 | 是 | 天气最高温度，当前仅支持摄氏度，需小于等于58℃且大于传入的最低温度值（lowTemperature）。仅支持左右文本模板（即[layoutType](#layouttype)为LAYOUT_TYPE_FLIGHT）展示温度信息。创建实况窗时，若不传入或传入值为undefined、超出取值范围，则不展示温度信息。 |
-| lowTemperature | number | 否 | 是 | 天气最低温度，当前仅支持摄氏度，需大于等于-95℃且小于传入的最高温度值（highTemperature）。持左右文本模板（即[layoutType](#layouttype)为LAYOUT_TYPE_FLIGHT）展示温度信息。创建实况窗时，若不传入或传入值为undefined、超出取值范围，则不展示温度信息。 |
+| lowTemperature | number | 否 | 是 | 天气最低温度，当前仅支持摄氏度，需大于等于-95℃且小于传入的最高温度值（highTemperature）。仅支持左右文本模板（即[layoutType](#layouttype)为LAYOUT_TYPE_FLIGHT）展示温度信息。创建实况窗时，若不传入或传入值为undefined、超出取值范围，则不展示温度信息。 |
 
 #### WeatherType
 
@@ -1189,7 +1190,7 @@ async function buildWantAgent(): Promise<Want> {
 
 卡片元素对应的API字段：
 
-![](./img/zh-cn_image_0000002656351015.png)
+![](./img/zh-cn_image_0000002661613793.png)
 
 - 1 进度百分比，对应progress字段。
 - 2 进度条进度的颜色，对应color字段。
@@ -1221,7 +1222,7 @@ async function buildWantAgent(): Promise<Want> {
 
 卡片元素对应的API字段：
 
-![](./img/zh-cn_image_0000002626231602.png)
+![](./img/zh-cn_image_0000002631414504.png)
 
 - 1 扩展区标题，对应title字段。
 - 2 扩展区内容，对应content字段。
@@ -1249,7 +1250,7 @@ async function buildWantAgent(): Promise<Want> {
 
 卡片元素对应的API字段：
 
-![](./img/zh-cn_image_0000002626071690.png)
+![](./img/zh-cn_image_0000002661733731.png)
 
 - 1 左侧文本标题，对应firstTitle字段。
 - 2 左侧文本内容，对应firstContent字段。
@@ -1291,7 +1292,7 @@ async function buildWantAgent(): Promise<Want> {
 
 卡片元素对应的API字段：
 
-![](./img/zh-cn_image_0000002656470967.png)
+![](./img/zh-cn_image_0000002631254610.png)
 
 - 1 左侧主队名称，对应hostName字段。
 - 2 左侧主队图标，对应hostIcon字段。
@@ -1329,7 +1330,7 @@ async function buildWantAgent(): Promise<Want> {
 
 卡片元素对应的API字段：
 
-![](./img/zh-cn_image_0000002656351017.png)
+![](./img/zh-cn_image_0000002661613795.png)
 
 - 1 当前导航方向，对应currentNavigationIcon字段。
 - 2 导航方向的箭头集合图片，对应navigationIcons字段。
@@ -1355,7 +1356,7 @@ async function buildWantAgent(): Promise<Want> {
 
 胶囊元素对应的API字段：
 
-![](./img/zh-cn_image_0000002626231604.png)
+![](./img/zh-cn_image_0000002631414506.png)
 
 - 1 实况胶囊类型，对应type字段。
 - 2 实况胶囊的图标，对应icon字段。
@@ -1387,7 +1388,7 @@ async function buildWantAgent(): Promise<Want> {
 
 胶囊元素对应的API字段：
 
-![](./img/zh-cn_image_0000002626071692.png)
+![](./img/zh-cn_image_0000002661733733.png)
 
 - 1 实况胶囊主文本，对应title字段。
 - 2 实况胶囊副文本，对应content字段。
@@ -1411,7 +1412,7 @@ async function buildWantAgent(): Promise<Want> {
 
 胶囊元素对应的API字段：
 
-![](./img/zh-cn_image_0000002656470969.png)
+![](./img/zh-cn_image_0000002631254612.png)
 
 - 1 实况胶囊副文本，对应content字段。
 - 2 实况胶囊计时器初始值，对应time字段。计时器正计时或倒计时，由isCountdown字段控制。计时器是否暂停，由isPaused字段控制。
@@ -1437,7 +1438,7 @@ async function buildWantAgent(): Promise<Want> {
 
 胶囊元素对应的API字段：
 
-![](./img/zh-cn_image_0000002656351019.png)
+![](./img/zh-cn_image_0000002661613797.png)
 
 - 1 进度值显示数值占比或百分比，由indeterminate字段控制： indeterminate为false：展示数值占比，格式为x/y（x对应progress字段，y对应max字段）。
 - indeterminate为true：展示百分比，格式为(x/y)*100% （x对应progress字段，y对应max字段）。
@@ -1463,7 +1464,7 @@ async function buildWantAgent(): Promise<Want> {
 
 外屏元素对应的API字段：
 
-![](./img/zh-cn_image_0000002626231606.png)
+![](./img/zh-cn_image_0000002631414508.png)
 
 - 1 外屏标题，对应title字段。
 - 2 外屏内容，对应content字段。

@@ -2,7 +2,8 @@
 title: "DRM错误码"
 upstream_id: "harmonyos-references/errorcode-drm"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:21.733957"
+content_hash: "57a1ec5f1d73"
+synced_at: "2026-07-09T01:00:29.211961"
 ---
 
 # DRM错误码

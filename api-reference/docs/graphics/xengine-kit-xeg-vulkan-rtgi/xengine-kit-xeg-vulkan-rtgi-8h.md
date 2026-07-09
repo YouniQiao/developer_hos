@@ -2,7 +2,8 @@
 title: "xeg_vulkan_rtgi.h"
 upstream_id: "harmonyos-references/xengine-kit-xeg-vulkan-rtgi-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:16.125138"
+content_hash: "990ecc70e51b"
+synced_at: "2026-07-09T01:01:09.717929"
 ---
 
 # xeg_vulkan_rtgi.h

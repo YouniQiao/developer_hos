@@ -2,7 +2,8 @@
 title: "JSVM_Deferred__*"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-deferred--8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:04.257564"
+content_hash: "809e502dc59c"
+synced_at: "2026-07-09T01:01:48.001171"
 ---
 
 # JSVM_Deferred__*

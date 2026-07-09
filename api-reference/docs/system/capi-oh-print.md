@@ -2,7 +2,8 @@
 title: "OH_Print"
 upstream_id: "harmonyos-references/capi-oh-print"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:10.709982"
+content_hash: "af17a339da8e"
+synced_at: "2026-07-09T00:59:42.690184"
 ---
 
 # OH_Print

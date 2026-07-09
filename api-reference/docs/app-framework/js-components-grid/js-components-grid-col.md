@@ -2,7 +2,8 @@
 title: "grid-col"
 upstream_id: "harmonyos-references/js-components-grid-col"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:10.717488"
+content_hash: "2e94068144b0"
+synced_at: "2026-07-09T00:58:24.421812"
 ---
 
 # grid-col
@@ -111,4 +112,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626071028.gif)
+ ![](./img/zh-cn_image_0000002661733063.gif)

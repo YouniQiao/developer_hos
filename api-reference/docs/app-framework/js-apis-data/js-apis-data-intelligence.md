@@ -2,7 +2,8 @@
 title: "@ohos.data.intelligence (智慧数据平台)"
 upstream_id: "harmonyos-references/js-apis-data-intelligence"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:04.493254"
+content_hash: "cd0614355038"
+synced_at: "2026-07-09T00:57:16.979091"
 ---
 
 # @ohos.data.intelligence (智慧数据平台)

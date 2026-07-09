@@ -2,7 +2,8 @@
 title: "native_node_napi.h"
 upstream_id: "harmonyos-references/capi-native-node-napi-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:39.735911"
+content_hash: "72ba6a0c62c7"
+synced_at: "2026-07-09T00:58:36.694272"
 ---
 
 # native_node_napi.h

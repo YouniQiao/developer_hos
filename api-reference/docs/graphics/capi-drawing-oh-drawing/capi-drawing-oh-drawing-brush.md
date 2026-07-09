@@ -2,7 +2,8 @@
 title: "OH_Drawing_Brush"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-brush"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:09.161607"
+content_hash: "13cc691fcdb8"
+synced_at: "2026-07-09T01:01:03.231277"
 ---
 
 # OH_Drawing_Brush

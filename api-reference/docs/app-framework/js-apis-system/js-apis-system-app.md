@@ -2,7 +2,8 @@
 title: "@system.app (应用上下文)"
 upstream_id: "harmonyos-references/js-apis-system-app"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:31.122437"
+content_hash: "94ee10a26d7c"
+synced_at: "2026-07-09T00:57:35.301314"
 ---
 
 # @system.app (应用上下文)

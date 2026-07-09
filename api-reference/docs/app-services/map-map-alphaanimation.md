@@ -2,7 +2,8 @@
 title: "Class (AlphaAnimation)"
 upstream_id: "harmonyos-references/map-map-alphaanimation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:33.086138"
+content_hash: "77195a0b8b93"
+synced_at: "2026-07-09T01:01:25.125564"
 ---
 
 # Class (AlphaAnimation)

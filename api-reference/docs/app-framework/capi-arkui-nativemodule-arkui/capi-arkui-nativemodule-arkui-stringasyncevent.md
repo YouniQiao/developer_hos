@@ -2,7 +2,8 @@
 title: "ArkUI_StringAsyncEvent"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-stringasyncevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:49.995859"
+content_hash: "c64d61720766"
+synced_at: "2026-07-09T00:58:41.979829"
 ---
 
 # ArkUI_StringAsyncEvent

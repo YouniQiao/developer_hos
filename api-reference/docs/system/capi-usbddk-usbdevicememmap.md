@@ -2,7 +2,8 @@
 title: "UsbDeviceMemMap"
 upstream_id: "harmonyos-references/capi-usbddk-usbdevicememmap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:36.182681"
+content_hash: "024c8da70534"
+synced_at: "2026-07-09T00:59:57.414201"
 ---
 
 # UsbDeviceMemMap

@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/reader-error-code"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:51.902302"
+content_hash: "7518fe4db50e"
+synced_at: "2026-07-09T01:01:38.717366"
 ---
 
 # ArkTS API错误码

@@ -2,7 +2,8 @@
 title: "extension_ability.h"
 upstream_id: "harmonyos-references/capi-extension-ability-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:58.765789"
+content_hash: "b3795bfd6707"
+synced_at: "2026-07-09T00:57:12.693626"
 ---
 
 # extension_ability.h

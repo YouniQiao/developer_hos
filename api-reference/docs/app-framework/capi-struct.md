@@ -2,7 +2,8 @@
 title: "OH_PixelmapNative"
 upstream_id: "harmonyos-references/capi-struct"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:56.436367"
+content_hash: "f53567abb9fc"
+synced_at: "2026-07-09T00:58:45.865003"
 ---
 
 # OH_PixelmapNative

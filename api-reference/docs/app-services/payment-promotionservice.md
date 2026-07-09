@@ -2,7 +2,8 @@
 title: "promotionService(营销服务)"
 upstream_id: "harmonyos-references/payment-promotionservice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:39.039875"
+content_hash: "13719b397a6b"
+synced_at: "2026-07-09T01:01:29.961974"
 ---
 
 # promotionService(营销服务)
@@ -153,7 +154,7 @@ constructor(context: UIContext)
 
 以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-payment)。
 
-| 错误码 | 错误信息 |
+| 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. |
 | 1019200001 | System internal error. |
@@ -203,7 +204,7 @@ startPromotionEntryDialog(mercNo: string, offset?: number): Promise<UserAction>
 
 以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-payment)。
 
-| 错误码 | 错误信息 |
+| 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. |
 | 1019200001 | System internal error. |
@@ -270,7 +271,7 @@ startUserChooseCouponsPopup(context: common.Context, orderContext: OrderContext)
 
 以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-payment)。
 
-| 错误码 | 错误信息 |
+| 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. |
 | 1019200001 | System internal error. |
@@ -345,7 +346,7 @@ startPromotionDetailPopup(context: common.Context, mercNo: string): Promise<User
 
 以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-payment)。
 
-| 错误码 | 错误信息 |
+| 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. |
 | 1019200001 | System internal error. |
@@ -410,7 +411,7 @@ getOrderAvailableCoupons(context: common.Context, orderContext: OrderContext): P
 
 以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-payment)。
 
-| 错误码 | 错误信息 |
+| 错误码ID | 错误信息 |
 | --- | --- |
 | 801 | Capability not supported. |
 | 1019200001 | System internal error. |

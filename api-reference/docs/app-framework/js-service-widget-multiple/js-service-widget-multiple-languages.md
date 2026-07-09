@@ -2,7 +2,8 @@
 title: "多语言支持"
 upstream_id: "harmonyos-references/js-service-widget-multiple-languages"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:23.232011"
+content_hash: "5fa6eff4f706"
+synced_at: "2026-07-09T00:58:29.175344"
 ---
 
 # 多语言支持

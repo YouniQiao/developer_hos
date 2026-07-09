@@ -2,7 +2,8 @@
 title: "stack"
 upstream_id: "harmonyos-references/js-service-widget-container-stack"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:26.523577"
+content_hash: "e6e44edc600c"
+synced_at: "2026-07-09T00:58:30.628640"
 ---
 
 # stack
@@ -71,4 +72,4 @@ synced_at: "2026-06-24T20:49:26.523577"
 ```
  4×4卡片
 
-![](./img/zh-cn_image_0000002656470491.png)
+![](./img/zh-cn_image_0000002631254128.png)

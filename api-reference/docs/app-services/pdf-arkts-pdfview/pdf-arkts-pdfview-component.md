@@ -2,7 +2,8 @@
 title: "PdfView（PDF预览组件）"
 upstream_id: "harmonyos-references/pdf-arkts-pdfview-component"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:47.976022"
+content_hash: "2e9113b215c5"
+synced_at: "2026-07-09T01:01:35.918128"
 ---
 
 # PdfView（PDF预览组件）
@@ -39,7 +40,7 @@ import { pdfService, pdfViewManager, PdfView } from '@kit.PDFKit';
 
 build(): void
 
-用于创建[PdfView](#pdfview)对象的构造函数。
+用于构建[PdfView](#pdfview)对象的生命周期方法。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 

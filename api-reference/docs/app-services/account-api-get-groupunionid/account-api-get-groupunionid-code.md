@@ -2,7 +2,8 @@
 title: "通过Authorization Code获取GroupUnionID"
 upstream_id: "harmonyos-references/account-api-get-groupunionid-code"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:20.632119"
+content_hash: "40620ddb2a52"
+synced_at: "2026-07-09T01:01:14.155367"
 ---
 
 # 通过Authorization Code获取GroupUnionID

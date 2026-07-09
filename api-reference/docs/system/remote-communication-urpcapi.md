@@ -2,7 +2,8 @@
 title: "urpc（高性能rpc通信库）"
 upstream_id: "harmonyos-references/remote-communication-urpcapi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:58.703681"
+content_hash: "8a1d0f7b566d"
+synced_at: "2026-07-09T00:59:33.735047"
 ---
 
 # urpc（高性能rpc通信库）
@@ -58,7 +59,7 @@ type FlowbufType =
 | 'REPEATED_INT64' | 表示参数类型为可变长度的'INT64'数组，该字段为预留字段，在当前版本不能使用。 |
 | 'REPEATED_UINT64' | 表示参数类型为可变长度的'UINT64'数组，该字段为预留字段，在当前版本不能使用。 |
 | 'REPEATED_BOOL' | 表示参数类型为可变长度的'BOOL'数组，该字段为预留字段，在当前版本不能使用。 |
-| 'REPEATED_FLOAT' | 表示参数类型为可变长度的'INT8'数组，该字段为预留字段，在当前版本不能使用。 |
+| 'REPEATED_FLOAT' | 表示参数类型为可变长度的'FLOAT'数组，该字段为预留字段，在当前版本不能使用。 |
 | 'REPEATED_DOUBLE' | 表示参数类型为可变长度的'DOUBLE'数组，该字段为预留字段，在当前版本不能使用。 |
 | 'REPEATED_STRING' | 表示参数类型为可变长度的'STRING'数组，该字段为预留字段，在当前版本不能使用。 |
 | 'REPEATED_BYTES' | 表示参数类型为可变长度的'BYTES'数组，该字段为预留字段，在当前版本不能使用。 |
@@ -111,7 +112,7 @@ FlowbufArrayElement<T>用于定义数组类型的URPC入参和返回值类型。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| type | [FlowbufType](#flowbuftype) | 否 | 否 | 表示通过URPC通信允许传送和接收返回值的类型。 |
+| type | [FlowbufType](#flowbuftype) | 否 | 否 | 表示通过URPC通信允许传入和接收返回值的类型。 |
 | value | T[] | 否 | 否 | 表示该参数的具体数值。例如，如果type的值为'ARRAY_INT8'，则value为number[]类型，可配置[1,2,3]。 |
 | length | number | 否 | 否 | 表示该参数数组的长度，长度范围[0, 2147483647]。 |
 
@@ -273,7 +274,7 @@ type UrpcDestroy = () => void
 
 #### UrpcInitConfiguration
 
-SessionConfiguration接口定义了会话的配置参数，为开发者提供了对HTTP会话各个方面的详细控制。
+定义会话的配置参数，为开发者提供了对HTTP会话各个方面的详细控制。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

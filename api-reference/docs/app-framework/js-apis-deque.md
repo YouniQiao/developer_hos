@@ -2,7 +2,8 @@
 title: "@ohos.util.Deque (线性容器Deque)"
 upstream_id: "harmonyos-references/js-apis-deque"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:16.788264"
+content_hash: "61098552826d"
+synced_at: "2026-07-09T00:57:25.688744"
 ---
 
 # @ohos.util.Deque (线性容器Deque)

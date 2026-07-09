@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-core-vision"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:57.340699"
+content_hash: "793cb96bd59b"
+synced_at: "2026-07-09T01:01:42.248905"
 ---
 
 # ArkTS API错误码

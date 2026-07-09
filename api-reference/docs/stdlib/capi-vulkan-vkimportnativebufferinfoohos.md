@@ -2,7 +2,8 @@
 title: "VkImportNativeBufferInfoOHOS"
 upstream_id: "harmonyos-references/capi-vulkan-vkimportnativebufferinfoohos"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:06.332332"
+content_hash: "8ebe4509c5b5"
+synced_at: "2026-07-09T01:01:49.767364"
 ---
 
 # VkImportNativeBufferInfoOHOS

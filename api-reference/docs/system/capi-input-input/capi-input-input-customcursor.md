@@ -2,7 +2,8 @@
 title: "Input_CustomCursor"
 upstream_id: "harmonyos-references/capi-input-input-customcursor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:20.669065"
+content_hash: "660ed2f5db29"
+synced_at: "2026-07-09T00:59:50.464914"
 ---
 
 # Input_CustomCursor

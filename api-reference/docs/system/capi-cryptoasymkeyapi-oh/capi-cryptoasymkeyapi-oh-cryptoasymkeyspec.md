@@ -2,7 +2,8 @@
 title: "OH_CryptoAsymKeySpec"
 upstream_id: "harmonyos-references/capi-cryptoasymkeyapi-oh-cryptoasymkeyspec"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:32.583910"
+content_hash: "fe02a5db8983"
+synced_at: "2026-07-09T00:59:13.141975"
 ---
 
 # OH_CryptoAsymKeySpec

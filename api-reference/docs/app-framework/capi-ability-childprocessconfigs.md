@@ -2,7 +2,8 @@
 title: "Ability_ChildProcessConfigs"
 upstream_id: "harmonyos-references/capi-ability-childprocessconfigs"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:59.667437"
+content_hash: "05b4781212a0"
+synced_at: "2026-07-09T00:57:13.364870"
 ---
 
 # Ability_ChildProcessConfigs

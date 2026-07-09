@@ -2,7 +2,8 @@
 title: "意图共享"
 upstream_id: "harmonyos-references/intents-rest-api-intent-share"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:57.711838"
+content_hash: "77a5ec3e2ad5"
+synced_at: "2026-07-09T01:01:42.887142"
 ---
 
 # 意图共享

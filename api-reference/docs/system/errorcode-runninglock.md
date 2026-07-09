@@ -2,7 +2,8 @@
 title: "RunningLock锁错误码"
 upstream_id: "harmonyos-references/errorcode-runninglock"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:13.136177"
+content_hash: "d80c4eef8bad"
+synced_at: "2026-07-09T00:59:44.568449"
 ---
 
 # RunningLock锁错误码

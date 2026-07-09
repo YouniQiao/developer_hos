@@ -2,7 +2,8 @@
 title: "通过contractId查询签约订单信息"
 upstream_id: "harmonyos-references/payment-withhold-query-contractid"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:41.269439"
+content_hash: "f31284804cbf"
+synced_at: "2026-07-09T01:01:31.780902"
 ---
 
 # 通过contractId查询签约订单信息
@@ -22,7 +23,7 @@ synced_at: "2026-06-24T20:53:41.269439"
 
 - **承载协议：** HTTPS GET
 - **接口方向：** 开发者服务器 -> 华为支付服务器
-- **接口URL：** https://petalpay-developer.cloud.huawei.com.cn/api/v2/contract/sign/contracts/{contractId
+- **接口URL：** https://petalpay-developer.cloud.huawei.com.cn/api/v2/contract/sign/contracts/{contractId}
 - **数据格式：** 请求消息：Content-Type: application/json; charset=UTF-8 响应消息：Content-Type: application/json; charset=UTF-8
 
 #### 请求参数
@@ -36,7 +37,7 @@ Request Header
 
 Request Path
 
-| 参数 | 是否必填 | 参数类型 | 描述 |
+| 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | contractId | 是 | String | 委托代扣协议ID，签约成功后回调接口中返回。 |
 

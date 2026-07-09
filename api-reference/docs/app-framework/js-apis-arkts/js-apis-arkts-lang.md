@@ -2,7 +2,8 @@
 title: "@arkts.lang (ArkTS语言基础能力)"
 upstream_id: "harmonyos-references/js-apis-arkts-lang"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:14.403999"
+content_hash: "c6231c299ea4"
+synced_at: "2026-07-09T00:57:24.010075"
 ---
 
 # @arkts.lang (ArkTS语言基础能力)

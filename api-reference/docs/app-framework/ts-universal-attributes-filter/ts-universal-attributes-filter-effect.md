@@ -1,9 +1,12 @@
 ---
+
 title: "视效设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-filter-effect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:40.366909"
+synced_at: "2026-07-09T00:57:40.223109"
+content_hash: "cb6718d6c698"
 ---
+
 
 # 视效设置
 

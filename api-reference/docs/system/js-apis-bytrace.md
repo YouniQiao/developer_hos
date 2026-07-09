@@ -2,7 +2,8 @@
 title: "@ohos.bytrace (性能打点)"
 upstream_id: "harmonyos-references/js-apis-bytrace"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:46.388588"
+content_hash: "946f97c0ef67"
+synced_at: "2026-07-09T01:00:02.981632"
 ---
 
 # @ohos.bytrace (性能打点)
@@ -103,7 +104,7 @@ traceByValue(name: string, count: number): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | name | string | 是 | 数值变量的名称。 |
-| count | number | 是 | 数值变量的值 |
+| count | number | 是 | 数值变量的值。 |
 
 示例：
 

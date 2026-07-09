@@ -2,7 +2,8 @@
 title: "资源管理错误码"
 upstream_id: "harmonyos-references/errorcode-resource-manager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:24.997940"
+content_hash: "71decf5aa6e3"
+synced_at: "2026-07-09T00:59:08.970779"
 ---
 
 # 资源管理错误码

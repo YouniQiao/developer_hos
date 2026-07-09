@@ -2,7 +2,8 @@
 title: "事件"
 upstream_id: "harmonyos-references/arkts-basic-components-web-events"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:05.930475"
+content_hash: "34a8b8599960"
+synced_at: "2026-07-09T00:58:54.420921"
 ---
 
 # 事件

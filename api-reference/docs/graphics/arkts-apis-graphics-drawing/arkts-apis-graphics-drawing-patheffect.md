@@ -2,7 +2,8 @@
 title: "Class (PathEffect)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-patheffect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:53.683712"
+content_hash: "1712ea29bebb"
+synced_at: "2026-07-09T01:00:52.696556"
 ---
 
 # Class (PathEffect)

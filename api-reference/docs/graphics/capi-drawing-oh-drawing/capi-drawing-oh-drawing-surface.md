@@ -2,7 +2,8 @@
 title: "OH_Drawing_Surface"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-surface"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:10.838079"
+content_hash: "a24d3ab69a10"
+synced_at: "2026-07-09T01:01:04.631142"
 ---
 
 # OH_Drawing_Surface

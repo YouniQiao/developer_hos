@@ -2,7 +2,8 @@
 title: "HiDebug_NativeMemInfo"
 upstream_id: "harmonyos-references/capi-hidebug-hidebug-nativememinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:48.993116"
+content_hash: "fe03fe77d78f"
+synced_at: "2026-07-09T01:00:04.929120"
 ---
 
 # HiDebug_NativeMemInfo

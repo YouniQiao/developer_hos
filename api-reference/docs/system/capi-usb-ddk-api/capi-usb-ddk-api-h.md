@@ -2,7 +2,8 @@
 title: "usb_ddk_api.h"
 upstream_id: "harmonyos-references/capi-usb-ddk-api-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:31.731340"
+content_hash: "f153ced8647c"
+synced_at: "2026-07-09T00:59:55.015647"
 ---
 
 # usb_ddk_api.h

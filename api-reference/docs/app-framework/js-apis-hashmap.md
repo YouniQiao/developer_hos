@@ -2,7 +2,8 @@
 title: "@ohos.util.HashMap (非线性容器HashMap)"
 upstream_id: "harmonyos-references/js-apis-hashmap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:16.818146"
+content_hash: "fda25ec979c7"
+synced_at: "2026-07-09T00:57:25.958918"
 ---
 
 # @ohos.util.HashMap (非线性容器HashMap)

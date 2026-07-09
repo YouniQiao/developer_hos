@@ -2,7 +2,8 @@
 title: "NetworkBoost_MultiPathStateChange"
 upstream_id: "harmonyos-references/network-boost-c-struct-multipath_statechange"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:58.589101"
+content_hash: "ccd69033d39b"
+synced_at: "2026-07-09T00:59:32.935498"
 ---
 
 # NetworkBoost_MultiPathStateChange

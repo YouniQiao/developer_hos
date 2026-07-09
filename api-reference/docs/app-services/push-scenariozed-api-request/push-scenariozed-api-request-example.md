@@ -2,7 +2,8 @@
 title: "请求示例"
 upstream_id: "harmonyos-references/push-scenariozed-api-request-example"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:50.259223"
+content_hash: "214e35677d15"
+synced_at: "2026-07-09T01:01:38.012782"
 ---
 
 # 请求示例
@@ -74,9 +75,9 @@ push-type: 0
 }
 ```
 
-#### 角标消息
+#### 角标刷新消息
 
-开发者可单独下发角标消息，通过携带badge字段指定角标数值，接收该消息后，将以数字形式展示桌面应用角标，以此提醒用户及时查看消息。
+开发者可单独下发角标刷新消息，通过携带badge字段指定角标数值，接收该消息后，将以数字形式展示桌面应用角标，以此提醒用户及时查看消息。
 
 ```
 // Request URL
@@ -121,12 +122,12 @@ push-type:1
 {
   "payload": {
     "formData": {
-      "text_key": "待刷新服务卡片的业务数据"
+      "textKey": "待刷新服务卡片的业务数据"
     },
     "version": 922337203,
     "images": [
       {
-        "keyName": "hello",
+        "keyName": "imageKey",
         "url": "https://xxx.png",
         "require": 1
       }

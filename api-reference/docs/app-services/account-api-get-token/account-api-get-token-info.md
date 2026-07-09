@@ -2,7 +2,8 @@
 title: "解析凭证"
 upstream_id: "harmonyos-references/account-api-get-token-info"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:18.901673"
+content_hash: "0e517938e5d8"
+synced_at: "2026-07-09T01:01:12.459315"
 ---
 
 # 解析凭证
@@ -163,7 +164,7 @@ public class GetTokenInfoAPIDemo {
         HttpPost httpPost = new HttpPost(url);
         List<NameValuePair> request = new ArrayList<>();
         request.add(new BasicNameValuePair("access_token", accessToken));
-        request.add(new BasicNameValuePair("openid", "OPENID"));
+        request.add(new BasicNameValuePair("open_id", "OPENID"));
         httpPost.setHeader("Content-Type", "application/x-www-form-urlencoded");
         httpPost.setEntity(new UrlEncodedFormEntity(request));
         // 如需要自定义异常处理请使用api CallUtils#remoteCall(HttpUriRequest, BiFunction<CloseableHttpResponse,String,E>)

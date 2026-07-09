@@ -2,7 +2,8 @@
 title: "申请退款"
 upstream_id: "harmonyos-references/payment-withhold-refunds"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:41.632993"
+content_hash: "547bbef58e4b"
+synced_at: "2026-07-09T01:01:31.667942"
 ---
 
 # 申请退款

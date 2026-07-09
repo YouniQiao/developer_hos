@@ -2,7 +2,8 @@
 title: "net_websocket_type.h"
 upstream_id: "harmonyos-references/capi-net-websocket-type-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:53.325621"
+content_hash: "dc635b3bd2e1"
+synced_at: "2026-07-09T00:59:28.878435"
 ---
 
 # net_websocket_type.h

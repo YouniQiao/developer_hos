@@ -2,7 +2,8 @@
 title: "ArkUI_DragEvent"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-dragevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:43.670261"
+content_hash: "c4be80c1d033"
+synced_at: "2026-07-09T00:58:38.480513"
 ---
 
 # ArkUI_DragEvent

@@ -2,7 +2,8 @@
 title: "oh_environment.h"
 upstream_id: "harmonyos-references/capi-oh-environment-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:15.084434"
+content_hash: "930d41e3c828"
+synced_at: "2026-07-09T00:59:00.816191"
 ---
 
 # oh_environment.h

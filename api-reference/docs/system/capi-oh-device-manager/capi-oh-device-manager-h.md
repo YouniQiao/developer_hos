@@ -2,7 +2,8 @@
 title: "oh_device_manager.h"
 upstream_id: "harmonyos-references/capi-oh-device-manager-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:49.772675"
+content_hash: "ef46ab89b036"
+synced_at: "2026-07-09T00:59:26.117728"
 ---
 
 # oh_device_manager.h

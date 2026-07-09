@@ -2,7 +2,8 @@
 title: "工具栏设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-toolbar"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:49.784281"
+content_hash: "e965934bf822"
+synced_at: "2026-07-09T00:57:43.654166"
 ---
 
 # 工具栏设置
@@ -158,4 +159,4 @@ struct SideBarContainerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230256.png)
+ ![](./img/zh-cn_image_0000002661612431.png)

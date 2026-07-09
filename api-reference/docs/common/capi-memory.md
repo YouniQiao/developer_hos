@@ -2,7 +2,8 @@
 title: "memory"
 upstream_id: "harmonyos-references/capi-memory"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:01.911275"
+content_hash: "b7f9aa984391"
+synced_at: "2026-07-09T01:01:46.250385"
 ---
 
 # memory

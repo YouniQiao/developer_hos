@@ -2,7 +2,8 @@
 title: "触摸事件"
 upstream_id: "harmonyos-references/ts-universal-events-touch"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:31.699434"
+content_hash: "638749a9e52c"
+synced_at: "2026-07-09T00:57:36.054339"
 ---
 
 # 触摸事件
@@ -224,7 +225,7 @@ struct TouchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230134.gif)
+ ![](./img/zh-cn_image_0000002661612303.gif)
 
 #### [h2]示例2（获取组件实时位置）
 
@@ -258,4 +259,4 @@ struct GetCurrentLocalPositionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070224.gif)
+ ![](./img/zh-cn_image_0000002631413012.gif)

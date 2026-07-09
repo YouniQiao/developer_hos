@@ -2,7 +2,8 @@
 title: "effectKit"
 upstream_id: "harmonyos-references/capi-effectkit"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:57.279651"
+content_hash: "f6ba2b816892"
+synced_at: "2026-07-09T01:00:53.813745"
 ---
 
 # effectKit

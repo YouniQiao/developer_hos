@@ -2,7 +2,8 @@
 title: "Repeat"
 upstream_id: "harmonyos-references/ts-rendering-control-repeat"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:58.016109"
+content_hash: "217cccf57948"
+synced_at: "2026-07-09T00:58:18.375700"
 ---
 
 # Repeat

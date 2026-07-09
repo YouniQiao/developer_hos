@@ -2,7 +2,8 @@
 title: "NativeDisplaySoloist"
 upstream_id: "harmonyos-references/capi-nativedisplaysoloist"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:56.725465"
+content_hash: "7b3c436a88fd"
+synced_at: "2026-07-09T01:00:53.743898"
 ---
 
 # NativeDisplaySoloist

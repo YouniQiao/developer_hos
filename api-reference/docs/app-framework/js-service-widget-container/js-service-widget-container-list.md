@@ -2,7 +2,8 @@
 title: "list"
 upstream_id: "harmonyos-references/js-service-widget-container-list"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:26.178042"
+content_hash: "2f1cff1f22b7"
+synced_at: "2026-07-09T00:58:30.497488"
 ---
 
 # list
@@ -112,4 +113,4 @@ synced_at: "2026-06-24T20:49:26.178042"
 ```
  4*4卡片
 
-![](./img/zh-cn_image_0000002626071214.png)
+![](./img/zh-cn_image_0000002661733249.png)

@@ -2,7 +2,8 @@
 title: "subjectSegmentation（主体分割）"
 upstream_id: "harmonyos-references/core-vision-subjectsegmentation-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:56.651710"
+content_hash: "022b5220b546"
+synced_at: "2026-07-09T01:01:41.929344"
 ---
 
 # subjectSegmentation（主体分割）

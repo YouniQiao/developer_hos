@@ -2,7 +2,8 @@
 title: "healthDataTypes (运动健康数据类型常量)(Lite)"
 upstream_id: "harmonyos-references/health-api-healthdatatypes-lite"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:27.431320"
+content_hash: "91d30682a44b"
+synced_at: "2026-07-09T01:01:20.365833"
 ---
 
 # healthDataTypes (运动健康数据类型常量)(Lite)

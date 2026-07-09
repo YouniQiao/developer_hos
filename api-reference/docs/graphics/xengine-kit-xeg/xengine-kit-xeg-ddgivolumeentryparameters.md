@@ -2,7 +2,8 @@
 title: "XEG_DDGIVolumeEntryParameters"
 upstream_id: "harmonyos-references/xengine-kit-xeg-ddgivolumeentryparameters"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:16.565820"
+content_hash: "3882e4f75c95"
+synced_at: "2026-07-09T01:01:10.266422"
 ---
 
 # XEG_DDGIVolumeEntryParameters

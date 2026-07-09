@@ -2,7 +2,8 @@
 title: "Class (MakerNoteHuaweiMetadata)"
 upstream_id: "harmonyos-references/arkts-apis-image-makernotehuaweimetadata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:23.326720"
+content_hash: "4bb04f631685"
+synced_at: "2026-07-09T01:00:30.108569"
 ---
 
 # Class (MakerNoteHuaweiMetadata)

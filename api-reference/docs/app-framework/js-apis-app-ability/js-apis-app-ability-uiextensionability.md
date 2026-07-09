@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.UIExtensionAbility (带界面的ExtensionAbility组件)"
 upstream_id: "harmonyos-references/js-apis-app-ability-uiextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:47.851397"
+content_hash: "b7c005f0ff7a"
+synced_at: "2026-07-09T00:57:05.055491"
 ---
 
 # @ohos.app.ability.UIExtensionAbility (带界面的ExtensionAbility组件)

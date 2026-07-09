@@ -2,7 +2,8 @@
 title: "rect"
 upstream_id: "harmonyos-references/js-components-svg-rect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:11.100446"
+content_hash: "a0e7bd6a691f"
+synced_at: "2026-07-09T00:58:24.158335"
 ---
 
 # rect
@@ -47,4 +48,4 @@ synced_at: "2026-06-24T20:49:11.100446"
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002656350353.png)
+ ![](./img/zh-cn_image_0000002661613123.png)

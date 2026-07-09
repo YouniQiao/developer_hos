@@ -2,7 +2,8 @@
 title: "Interface (Session)"
 upstream_id: "harmonyos-references/arkts-apis-camera-session"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:13.015498"
+content_hash: "b85a922f6db4"
+synced_at: "2026-07-09T01:00:23.461533"
 ---
 
 # Interface (Session)

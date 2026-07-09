@@ -2,7 +2,8 @@
 title: "@ohos.usbManager.serial (串口管理)"
 upstream_id: "harmonyos-references/js-apis-serialmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:06.608907"
+content_hash: "bef8ffc60edb"
+synced_at: "2026-07-09T00:59:40.056463"
 ---
 
 # @ohos.usbManager.serial (串口管理)

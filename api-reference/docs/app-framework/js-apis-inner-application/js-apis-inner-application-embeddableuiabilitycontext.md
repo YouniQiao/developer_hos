@@ -2,7 +2,8 @@
 title: "EmbeddableUIAbilityContext"
 upstream_id: "harmonyos-references/js-apis-inner-application-embeddableuiabilitycontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:53.309465"
+content_hash: "165166f335ae"
+synced_at: "2026-07-09T00:57:09.042888"
 ---
 
 # EmbeddableUIAbilityContext

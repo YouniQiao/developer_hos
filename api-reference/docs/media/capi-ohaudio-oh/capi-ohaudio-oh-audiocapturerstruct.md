@@ -2,7 +2,8 @@
 title: "OH_AudioCapturerStruct"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audiocapturerstruct"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:59.081888"
+content_hash: "fd9360992c0c"
+synced_at: "2026-07-09T01:00:11.840696"
 ---
 
 # OH_AudioCapturerStruct

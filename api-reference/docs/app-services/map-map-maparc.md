@@ -2,7 +2,8 @@
 title: "Interface (MapArc)"
 upstream_id: "harmonyos-references/map-map-maparc"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:33.813799"
+content_hash: "8498923341f2"
+synced_at: "2026-07-09T01:01:25.749868"
 ---
 
 # Interface (MapArc)
@@ -51,7 +52,7 @@ let mapArcParams: mapCommon.MapArcParams = {
   zIndex: 100
 };
 // 添加弧线
-let mapArc: map.MapArc = this.mapController.addArc(mapArcParams);
+let.mapArc: map.MapArc = await this.mapController.addArc(mapArcParams);
 ```
 
 #### [h2]getColor

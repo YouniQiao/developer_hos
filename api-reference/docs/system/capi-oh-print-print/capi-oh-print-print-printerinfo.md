@@ -2,7 +2,8 @@
 title: "Print_PrinterInfo"
 upstream_id: "harmonyos-references/capi-oh-print-print-printerinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:12.313618"
+content_hash: "6ead2c3d3396"
+synced_at: "2026-07-09T00:59:44.040276"
 ---
 
 # Print_PrinterInfo

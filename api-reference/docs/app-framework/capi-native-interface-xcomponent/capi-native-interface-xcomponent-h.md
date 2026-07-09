@@ -2,7 +2,8 @@
 title: "native_interface_xcomponent.h"
 upstream_id: "harmonyos-references/capi-native-interface-xcomponent-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:36.165374"
+content_hash: "dd6085f877eb"
+synced_at: "2026-07-09T00:58:35.037921"
 ---
 
 # native_interface_xcomponent.h

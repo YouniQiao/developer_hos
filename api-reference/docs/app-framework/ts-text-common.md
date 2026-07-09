@@ -2,7 +2,8 @@
 title: "文本组件公共接口"
 upstream_id: "harmonyos-references/ts-text-common"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:20.236695"
+content_hash: "aa69d2dd2843"
+synced_at: "2026-07-09T00:58:00.263404"
 ---
 
 # 文本组件公共接口
@@ -236,7 +237,7 @@ getRectsForRange(range: TextRange, widthStyle: RectWidthStyle, heightStyle: Rect
 | SEARCH18+ | [TextMenuItemId](#textmenuitemid12) | 是 | 否 | 搜索，为一级菜单项。对选中的文本提供搜索服务，拉起浏览器搜索选中文本内容。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | url20+ | [TextMenuItemId](#textmenuitemid12) | 是 | 否 | 打开链接，为一级菜单项。对选中的URL提供跳转服务，拉起浏览器搜索或者应用页面。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | email20+ | [TextMenuItemId](#textmenuitemid12) | 是 | 否 | 新建邮件，为一级菜单项。对选中的邮箱地址提供跳转服务，拉起邮箱应用。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| phoneNumber20+ | [TextMenuItemId](#textmenuitemid12) | 是 | 否 | 呼叫，为一级菜单项。对选中的电话号码跳转服务，拉起电话拨号页面。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| phoneNumber20+ | [TextMenuItemId](#textmenuitemid12) | 是 | 否 | 呼叫，为一级菜单项。对选中的电话号码提供跳转服务，拉起电话拨号页面。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | address20+ | [TextMenuItemId](#textmenuitemid12) | 是 | 否 | 导航前往，为一级菜单项。对选中的地址提供跳转服务，拉起地图应用。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | dateTime20+ | [TextMenuItemId](#textmenuitemid12) | 是 | 否 | 新建日程，为一级菜单项。对选中的日期和时间提供跳转服务，拉起新建日程页面。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | askAI20+ | [TextMenuItemId](#textmenuitemid12) | 是 | 否 | 问问小艺。对选中的文本提供AI问询能力，为一级菜单项。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
@@ -422,7 +423,7 @@ type EditableTextOnChangeCallback = (value: string, previewText?: PreviewText, o
 | URL | 1 | 链接 |
 | EMAIL | 2 | 邮箱 |
 | ADDRESS | 3 | 地址 |
-| DATE_TIME12+ | 4 | 时间 |
+| DATE_TIME12+ | 4 | 日期时间 |
 
 #### TextDeleteDirection12+枚举说明
 

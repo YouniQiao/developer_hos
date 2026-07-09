@@ -2,7 +2,8 @@
 title: "尺寸设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-size"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:36.111430"
+content_hash: "4a02fb53a0eb"
+synced_at: "2026-07-09T00:57:38.469441"
 ---
 
 # 尺寸设置
@@ -410,7 +411,7 @@ struct SizeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349575.png)
+ ![](./img/zh-cn_image_0000002631253148.png)
 
 #### [h2]示例2（LocalizedPadding和LocalizedMargin类型的使用）
 
@@ -461,11 +462,11 @@ struct SizeExample {
 ```
  从左至右显示语言示例图
 
-![](./img/zh-cn_image_0000002626230162.png)
+![](./img/zh-cn_image_0000002661612333.png)
 
 从右至左显示语言示例图
 
-![](./img/zh-cn_image_0000002626070252.png)
+![](./img/zh-cn_image_0000002631413040.png)
 
 #### [h2]示例3（设置组件级安全区）
 
@@ -498,7 +499,7 @@ struct SafeAreaPaddingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469529.png)
+ ![](./img/zh-cn_image_0000002661732273.png)
 
 #### [h2]示例4（使用attributeModifier动态设置安全区）
 
@@ -542,7 +543,7 @@ struct SafeAreaPaddingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349577.png)
+ ![](./img/zh-cn_image_0000002631253150.png)
 
 #### [h2]示例5（设置布局策略）
 
@@ -598,7 +599,7 @@ struct LayoutPolicyExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230164.jpg)
+ ![](./img/zh-cn_image_0000002661612335.jpg)
 
 #### [h2]示例6（子组件单方向设置matchParent效果）
 
@@ -639,4 +640,4 @@ struct Demo {
 
 | API版本26.0.0前 | 从API版本26.0.0开始 |
 | --- | --- |
-| ![](./img/zh-cn_image_0000002626070254.png) | ![](./img/zh-cn_image_0000002656469531.png) |
+| ![](./img/zh-cn_image_0000002631413042.png) | ![](./img/zh-cn_image_0000002661732275.png) |

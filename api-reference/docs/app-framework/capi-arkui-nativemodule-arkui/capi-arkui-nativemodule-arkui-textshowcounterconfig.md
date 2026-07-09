@@ -2,7 +2,8 @@
 title: "ArkUI_ShowCounterConfig"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-textshowcounterconfig"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:56.237472"
+content_hash: "6cdf700e9628"
+synced_at: "2026-07-09T00:58:45.628132"
 ---
 
 # ArkUI_ShowCounterConfig
@@ -13,7 +14,7 @@ typedef struct ArkUI_ShowCounterConfig ArkUI_ShowCounterConfig
 
 #### 概述
 
-定义文本输入框的计数器配置。
+定义文本输入框的计数显示器配置。
 
 起始版本： 22
 

@@ -2,7 +2,8 @@
 title: "FG_ImageSync_VK"
 upstream_id: "harmonyos-references/_f_g___image_sync___v_k"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:13.524052"
+content_hash: "eb2ed48d8519"
+synced_at: "2026-07-09T01:01:07.631108"
 ---
 
 # FG_ImageSync_VK

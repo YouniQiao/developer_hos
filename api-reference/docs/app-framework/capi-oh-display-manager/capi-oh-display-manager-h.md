@@ -2,14 +2,15 @@
 title: "oh_display_manager.h"
 upstream_id: "harmonyos-references/capi-oh-display-manager-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:43.198087"
+content_hash: "c41bc6bafa4b"
+synced_at: "2026-07-09T00:58:38.768825"
 ---
 
 # oh_display_manager.h
 
 #### 概述
 
-提供屏幕管理的一些基础能力，包括获取默认显示设备的信息，以及监听显示设备的旋转、折叠、展开等状态变化的能力。
+提供屏幕管理的基础能力，包括获取默认显示设备的信息（如屏幕宽度、高度、旋转角度、刷新率或像素密度等），以及监听显示设备的旋转、折叠或展开等状态变化的能力。适用于需要适配不同屏幕形态、响应屏幕状态变化和获取屏幕详细属性信息的场景。
 
 引用文件： <window_manager/oh_display_manager.h>
 
@@ -27,42 +28,42 @@ synced_at: "2026-06-24T20:49:43.198087"
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayId(uint64_t *displayId)](#oh_nativedisplaymanager_getdefaultdisplayid) | - | 获取默认屏幕的id号。 |
+| [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayId(uint64_t *displayId)](#oh_nativedisplaymanager_getdefaultdisplayid) | - | 获取默认屏幕的ID号。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayWidth(int32_t *displayWidth)](#oh_nativedisplaymanager_getdefaultdisplaywidth) | - | 获取默认屏幕的宽度。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayHeight(int32_t *displayHeight)](#oh_nativedisplaymanager_getdefaultdisplayheight) | - | 获取默认屏幕的高度。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayRotation(NativeDisplayManager_Rotation *displayRotation)](#oh_nativedisplaymanager_getdefaultdisplayrotation) | - | 获取默认屏幕的顺时针旋转角度。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayOrientation(NativeDisplayManager_Orientation *displayOrientation)](#oh_nativedisplaymanager_getdefaultdisplayorientation) | - | 获取默认屏幕的旋转方向。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayVirtualPixelRatio(float *virtualPixels)](#oh_nativedisplaymanager_getdefaultdisplayvirtualpixelratio) | - | 获取默认屏幕的虚拟像素密度。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayRefreshRate(uint32_t *refreshRate)](#oh_nativedisplaymanager_getdefaultdisplayrefreshrate) | - | 获取默认屏幕的刷新率。 |
-| [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayDensityDpi(int32_t *densityDpi)](#oh_nativedisplaymanager_getdefaultdisplaydensitydpi) | - | 获取屏幕的物理像素密度。 |
-| [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayDensityPixels(float *densityPixels)](#oh_nativedisplaymanager_getdefaultdisplaydensitypixels) | - | 获取屏幕逻辑像素的密度。 |
-| [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayScaledDensity(float *scaledDensity)](#oh_nativedisplaymanager_getdefaultdisplayscaleddensity) | - | 获取屏幕显示字体的缩放因子。 |
-| [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayDensityXdpi(float *xDpi)](#oh_nativedisplaymanager_getdefaultdisplaydensityxdpi) | - | 获取屏幕X方向中每英寸屏幕的物理像素值。 |
-| [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayDensityYdpi(float *yDpi)](#oh_nativedisplaymanager_getdefaultdisplaydensityydpi) | - | 获取Y方向中每英寸屏幕的物理像素值。 |
-| [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreateDefaultDisplayCutoutInfo(NativeDisplayManager_CutoutInfo **cutoutInfo)](#oh_nativedisplaymanager_createdefaultdisplaycutoutinfo) | - | 获取挖孔屏、刘海屏、瀑布屏等不可用屏幕区域信息。 |
-| [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_DestroyDefaultDisplayCutoutInfo(NativeDisplayManager_CutoutInfo *cutoutInfo)](#oh_nativedisplaymanager_destroydefaultdisplaycutoutinfo) | - | 销毁挖孔屏、刘海屏、瀑布屏等不可用屏幕区域信息。 |
+| [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayDensityDpi(int32_t *densityDpi)](#oh_nativedisplaymanager_getdefaultdisplaydensitydpi) | - | 获取默认屏幕的物理像素密度。 |
+| [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayDensityPixels(float *densityPixels)](#oh_nativedisplaymanager_getdefaultdisplaydensitypixels) | - | 获取默认屏幕的逻辑像素密度。 |
+| [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayScaledDensity(float *scaledDensity)](#oh_nativedisplaymanager_getdefaultdisplayscaleddensity) | - | 获取默认屏幕显示字体的缩放因子。 |
+| [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayDensityXdpi(float *xDpi)](#oh_nativedisplaymanager_getdefaultdisplaydensityxdpi) | - | 获取默认屏幕X方向中每英寸屏幕的物理像素值。 |
+| [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayDensityYdpi(float *yDpi)](#oh_nativedisplaymanager_getdefaultdisplaydensityydpi) | - | 获取默认屏幕Y方向中每英寸屏幕的物理像素值。 |
+| [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreateDefaultDisplayCutoutInfo(NativeDisplayManager_CutoutInfo **cutoutInfo)](#oh_nativedisplaymanager_createdefaultdisplaycutoutinfo) | - | 获取默认屏幕的挖孔屏、刘海屏、瀑布屏等不可用屏幕区域信息。 |
+| [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_DestroyDefaultDisplayCutoutInfo(NativeDisplayManager_CutoutInfo *cutoutInfo)](#oh_nativedisplaymanager_destroydefaultdisplaycutoutinfo) | - | 销毁默认屏幕的挖孔屏、刘海屏、瀑布屏等不可用屏幕区域信息。 |
 | [bool OH_NativeDisplayManager_IsFoldable()](#oh_nativedisplaymanager_isfoldable) | - | 查询设备是否可折叠。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetFoldDisplayMode(NativeDisplayManager_FoldDisplayMode *displayMode)](#oh_nativedisplaymanager_getfolddisplaymode) | - | 获取可折叠设备的显示模式。 |
-| [typedef void (*OH_NativeDisplayManager_DisplayChangeCallback)(uint64_t displayId)](#oh_nativedisplaymanager_displaychangecallback) | OH_NativeDisplayManager_DisplayChangeCallback | 注册屏幕状态变化的回调函数。 |
+| [typedef void (*OH_NativeDisplayManager_DisplayChangeCallback)(uint64_t displayId)](#oh_nativedisplaymanager_displaychangecallback) | OH_NativeDisplayManager_DisplayChangeCallback | 屏幕状态变化时触发的回调函数类型。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_RegisterDisplayChangeListener(OH_NativeDisplayManager_DisplayChangeCallback displayChangeCallback, uint32_t *listenerIndex)](#oh_nativedisplaymanager_registerdisplaychangelistener) | - | 注册屏幕状态变化监听（如旋转变化、刷新率、DPI、分辨率等变化）。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_UnregisterDisplayChangeListener(uint32_t listenerIndex)](#oh_nativedisplaymanager_unregisterdisplaychangelistener) | - | 取消屏幕状态变化的监听。 |
-| [typedef void (*OH_NativeDisplayManager_FoldDisplayModeChangeCallback)(NativeDisplayManager_FoldDisplayMode displayMode)](#oh_nativedisplaymanager_folddisplaymodechangecallback) | OH_NativeDisplayManager_FoldDisplayModeChangeCallback | 注册屏幕展开、折叠状态变化的回调函数。 |
+| [typedef void (*OH_NativeDisplayManager_FoldDisplayModeChangeCallback)(NativeDisplayManager_FoldDisplayMode displayMode)](#oh_nativedisplaymanager_folddisplaymodechangecallback) | OH_NativeDisplayManager_FoldDisplayModeChangeCallback | 屏幕展开、折叠状态变化时触发的回调函数类型。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_RegisterFoldDisplayModeChangeListener(OH_NativeDisplayManager_FoldDisplayModeChangeCallback displayModeChangeCallback, uint32_t *listenerIndex)](#oh_nativedisplaymanager_registerfolddisplaymodechangelistener) | - | 注册屏幕展开、折叠状态变化的监听。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_UnregisterFoldDisplayModeChangeListener(uint32_t listenerIndex)](#oh_nativedisplaymanager_unregisterfolddisplaymodechangelistener) | - | 取消屏幕展开、折叠状态变化的监听。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreateAllDisplays(NativeDisplayManager_DisplaysInfo **allDisplays)](#oh_nativedisplaymanager_createalldisplays) | - | 获取当前所有屏幕信息对象。 |
 | [void OH_NativeDisplayManager_DestroyAllDisplays(NativeDisplayManager_DisplaysInfo *allDisplays)](#oh_nativedisplaymanager_destroyalldisplays) | - | 销毁所有屏幕的信息对象。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreateDisplayById(uint32_t displayId,NativeDisplayManager_DisplayInfo **displayInfo)](#oh_nativedisplaymanager_createdisplaybyid) | - | 获取指定屏幕的信息对象。 |
 | [void OH_NativeDisplayManager_DestroyDisplay(NativeDisplayManager_DisplayInfo *displayInfo)](#oh_nativedisplaymanager_destroydisplay) | - | 销毁指定屏幕的信息对象。 |
-| [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreatePrimaryDisplay(NativeDisplayManager_DisplayInfo **displayInfo)](#oh_nativedisplaymanager_createprimarydisplay) | - | 获取主屏信息对象。除2in1之外的设备获取的是设备自带屏幕的屏幕信息；2in1设备外接屏幕时获取的是当前主屏幕的屏幕信息；2in1设备没有外接屏幕时获取的是自带屏幕的屏幕信息。 |
-| [typedef void (*OH_NativeDisplayManager_AvailableAreaChangeCallback)(uint64_t displayId)](#oh_nativedisplaymanager_availableareachangecallback) | OH_NativeDisplayManager_AvailableAreaChangeCallback | 注册屏幕可用区域变化的回调函数。 |
+| [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreatePrimaryDisplay(NativeDisplayManager_DisplayInfo **displayInfo)](#oh_nativedisplaymanager_createprimarydisplay) | - | 获取主屏信息对象。除PC/2in1之外的设备获取的是设备自带屏幕的屏幕信息；PC/2in1设备外接屏幕时获取的是当前主屏幕的屏幕信息；PC/2in1设备没有外接屏幕时获取的是自带屏幕的屏幕信息。 |
+| [typedef void (*OH_NativeDisplayManager_AvailableAreaChangeCallback)(uint64_t displayId)](#oh_nativedisplaymanager_availableareachangecallback) | OH_NativeDisplayManager_AvailableAreaChangeCallback | 屏幕可用区域变化时触发的回调函数类型。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_RegisterAvailableAreaChangeListener(OH_NativeDisplayManager_AvailableAreaChangeCallback availableAreaChangeCallback, uint32_t *listenerIndex)](#oh_nativedisplaymanager_registeravailableareachangelistener) | - | 注册屏幕可用区域变化监听。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_UnregisterAvailableAreaChangeListener(uint32_t listenerIndex)](#oh_nativedisplaymanager_unregisteravailableareachangelistener) | - | 取消屏幕可用区域变化的监听。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreateAvailableArea(uint64_t displayId, NativeDisplayManager_Rect **availableArea)](#oh_nativedisplaymanager_createavailablearea) | - | 获取屏幕的可用区域。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_DestroyAvailableArea(NativeDisplayManager_Rect *availableArea)](#oh_nativedisplaymanager_destroyavailablearea) | - | 销毁屏幕的可用区域。 |
-| [typedef void (*OH_NativeDisplayManager_DisplayAddCallback)(uint64_t displayId)](#oh_nativedisplaymanager_displayaddcallback) | OH_NativeDisplayManager_DisplayAddCallback | 注册屏幕连接的回调函数。 |
+| [typedef void (*OH_NativeDisplayManager_DisplayAddCallback)(uint64_t displayId)](#oh_nativedisplaymanager_displayaddcallback) | OH_NativeDisplayManager_DisplayAddCallback | 屏幕连接时触发的回调函数类型。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_RegisterDisplayAddListener(OH_NativeDisplayManager_DisplayAddCallback displayAddCallback, uint32_t *listenerIndex)](#oh_nativedisplaymanager_registerdisplayaddlistener) | - | 注册屏幕连接变化监听（如插入显示器）。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_UnregisterDisplayAddListener(uint32_t listenerIndex)](#oh_nativedisplaymanager_unregisterdisplayaddlistener) | - | 取消屏幕连接的监听。 |
-| [typedef void (*OH_NativeDisplayManager_DisplayRemoveCallback)(uint64_t displayId)](#oh_nativedisplaymanager_displayremovecallback) | OH_NativeDisplayManager_DisplayRemoveCallback | 注册屏幕移除的回调函数。 |
+| [typedef void (*OH_NativeDisplayManager_DisplayRemoveCallback)(uint64_t displayId)](#oh_nativedisplaymanager_displayremovecallback) | OH_NativeDisplayManager_DisplayRemoveCallback | 屏幕移除时触发的回调函数类型。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_RegisterDisplayRemoveListener(OH_NativeDisplayManager_DisplayRemoveCallback displayRemoveCallback, uint32_t *listenerIndex)](#oh_nativedisplaymanager_registerdisplayremovelistener) | - | 注册屏幕移除变化监听（如移除显示器）。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_UnregisterDisplayRemoveListener(uint32_t listenerIndex)](#oh_nativedisplaymanager_unregisterdisplayremovelistener) | - | 取消屏幕移除的监听。 |
 | [NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDisplaySourceMode(uint64_t displayId, NativeDisplayManager_SourceMode *sourceMode)](#oh_nativedisplaymanager_getdisplaysourcemode) | - | 获取屏幕的显示模式。 |
@@ -77,7 +78,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayId(uint6
 ```
  描述
 
-获取默认屏幕的id号。
+获取默认屏幕的ID号。
 
 起始版本： 12
 
@@ -85,7 +86,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayId(uint6
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint64_t *displayId | 默认屏幕的id号，非负整数，此处作为出参返回。 |
+| uint64_t *displayId | 默认屏幕的ID号，非负整数，此处作为出参返回。 |
 
 返回：
 
@@ -238,7 +239,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayDensityD
 ```
  描述
 
-获取屏幕的物理像素密度。
+获取默认屏幕的物理像素密度。
 
 起始版本： 12
 
@@ -261,7 +262,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayDensityP
 ```
  描述
 
-获取屏幕逻辑像素的密度。
+获取默认屏幕的逻辑像素密度。
 
 起始版本： 12
 
@@ -284,7 +285,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayScaledDe
 ```
  描述
 
-获取屏幕显示字体的缩放因子。
+获取默认屏幕显示字体的缩放因子。
 
 起始版本： 12
 
@@ -307,7 +308,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayDensityX
 ```
  描述
 
-获取屏幕X方向中每英寸屏幕的物理像素值。
+获取默认屏幕X方向中每英寸屏幕的物理像素值。
 
 起始版本： 12
 
@@ -330,7 +331,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayDensityY
 ```
  描述
 
-获取Y方向中每英寸屏幕的物理像素值。
+获取默认屏幕Y方向中每英寸屏幕的物理像素值。
 
 起始版本： 12
 
@@ -338,7 +339,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDefaultDisplayDensityY
 
 | 参数项 | 描述 |
 | --- | --- |
-| float *yDpi | 获取Y方向中每英寸屏幕的物理像素值，该参数为浮点数，此处作为出参返回。 |
+| float *yDpi | Y方向中每英寸屏幕的物理像素值，该参数为浮点数，此处作为出参返回。 |
 
 返回：
 
@@ -353,7 +354,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreateDefaultDisplayCutou
 ```
  描述
 
-获取挖孔屏、刘海屏、瀑布屏等不可用屏幕区域信息。
+获取默认屏幕的挖孔屏、刘海屏、瀑布屏等不可用屏幕区域信息。
 
 起始版本： 12
 
@@ -376,7 +377,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_DestroyDefaultDisplayCuto
 ```
  描述
 
-销毁挖孔屏、刘海屏、瀑布屏等不可用屏幕区域信息。
+销毁默认屏幕的挖孔屏、刘海屏、瀑布屏等不可用屏幕区域信息。
 
 起始版本： 12
 
@@ -384,7 +385,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_DestroyDefaultDisplayCuto
 
 | 参数项 | 描述 |
 | --- | --- |
-| [NativeDisplayManager_CutoutInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-cutoutinfo) *cutoutInfo | 销毁通过[OH_NativeDisplayManager_CreateDefaultDisplayCutoutInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_createdefaultdisplaycutoutinfo)接口获取的挖孔屏、刘海屏、瀑布屏等不可用屏幕区域信息对象，具体可见[NativeDisplayManager_CutoutInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-cutoutinfo)。 |
+| [NativeDisplayManager_CutoutInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-cutoutinfo) *cutoutInfo | 销毁通过[OH_NativeDisplayManager_CreateDefaultDisplayCutoutInfo](#oh_nativedisplaymanager_createdefaultdisplaycutoutinfo)接口获取的挖孔屏、刘海屏、瀑布屏等不可用屏幕区域信息对象，具体可见[NativeDisplayManager_CutoutInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-cutoutinfo)。 |
 
 返回：
 
@@ -441,7 +442,7 @@ typedef void (*OH_NativeDisplayManager_DisplayChangeCallback)(uint64_t displayId
 ```
  描述
 
-注册屏幕状态变化的回调函数。
+屏幕状态变化时触发的回调函数类型。
 
 起始版本： 12
 
@@ -466,8 +467,8 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_RegisterDisplayChangeList
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_NativeDisplayManager_DisplayChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_displaychangecallback) displayChangeCallback | 屏幕状态变化后触发的回调函数，回调函数定义见[OH_NativeDisplayManager_DisplayChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_displaychangecallback)。 |
-| uint32_t *listenerIndex | 注册成功后返回的监听编号，调用取消注册函数[OH_NativeDisplayManager_UnregisterDisplayChangeListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_unregisterdisplaychangelistener)时作为入参使用，此处作为出参返回。 |
+| [OH_NativeDisplayManager_DisplayChangeCallback](#oh_nativedisplaymanager_displaychangecallback) displayChangeCallback | 屏幕状态变化后触发的回调函数，回调函数定义见[OH_NativeDisplayManager_DisplayChangeCallback](#oh_nativedisplaymanager_displaychangecallback)。 |
+| uint32_t *listenerIndex | 注册成功后返回的监听编号，调用取消注册函数[OH_NativeDisplayManager_UnregisterDisplayChangeListener](#oh_nativedisplaymanager_unregisterdisplaychangelistener)时作为入参使用，此处作为出参返回。 |
 
 返回：
 
@@ -490,7 +491,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_UnregisterDisplayChangeLi
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint32_t listenerIndex | 调用注册函数[OH_NativeDisplayManager_RegisterDisplayChangeListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_registerdisplaychangelistener)时获取到的监听编号。 |
+| uint32_t listenerIndex | 调用注册函数[OH_NativeDisplayManager_RegisterDisplayChangeListener](#oh_nativedisplaymanager_registerdisplaychangelistener)时获取到的监听编号。 |
 
 返回：
 
@@ -505,7 +506,7 @@ typedef void (*OH_NativeDisplayManager_FoldDisplayModeChangeCallback)(NativeDisp
 ```
  描述
 
-注册屏幕展开、折叠状态变化的回调函数。
+屏幕展开、折叠状态变化时触发的回调函数类型。
 
 起始版本： 12
 
@@ -530,8 +531,8 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_RegisterFoldDisplayModeCh
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_NativeDisplayManager_FoldDisplayModeChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_folddisplaymodechangecallback) displayModeChangeCallback | 屏幕展开和折叠变化后触发的回调函数，回调函数定义见[OH_NativeDisplayManager_FoldDisplayModeChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_folddisplaymodechangecallback)。 |
-| uint32_t *listenerIndex | 注册成功后返回的监听编号，调用取消注册函数[OH_NativeDisplayManager_UnregisterFoldDisplayModeChangeListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_unregisterfolddisplaymodechangelistener)时作为入参使用，此处作为出参返回。 |
+| [OH_NativeDisplayManager_FoldDisplayModeChangeCallback](#oh_nativedisplaymanager_folddisplaymodechangecallback) displayModeChangeCallback | 屏幕展开和折叠变化后触发的回调函数，回调函数定义见[OH_NativeDisplayManager_FoldDisplayModeChangeCallback](#oh_nativedisplaymanager_folddisplaymodechangecallback)。 |
+| uint32_t *listenerIndex | 注册成功后返回的监听编号，调用取消注册函数[OH_NativeDisplayManager_UnregisterFoldDisplayModeChangeListener](#oh_nativedisplaymanager_unregisterfolddisplaymodechangelistener)时作为入参使用，此处作为出参返回。 |
 
 返回：
 
@@ -554,7 +555,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_UnregisterFoldDisplayMode
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint32_t listenerIndex | 调用注册函数[OH_NativeDisplayManager_RegisterFoldDisplayModeChangeListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_registerfolddisplaymodechangelistener)时获取到的监听编号。 |
+| uint32_t listenerIndex | 调用注册函数[OH_NativeDisplayManager_RegisterFoldDisplayModeChangeListener](#oh_nativedisplaymanager_registerfolddisplaymodechangelistener)时获取到的监听编号。 |
 
 返回：
 
@@ -600,7 +601,7 @@ void OH_NativeDisplayManager_DestroyAllDisplays(NativeDisplayManager_DisplaysInf
 
 | 参数项 | 描述 |
 | --- | --- |
-| [NativeDisplayManager_DisplaysInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-displaysinfo) *allDisplays | 销毁通过[OH_NativeDisplayManager_CreateAllDisplays](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_createalldisplays)接口获取的所有的屏幕信息，具体可见[NativeDisplayManager_DisplaysInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-displaysinfo)。 |
+| [NativeDisplayManager_DisplaysInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-displaysinfo) *allDisplays | 销毁通过[OH_NativeDisplayManager_CreateAllDisplays](#oh_nativedisplaymanager_createalldisplays)接口获取的所有的屏幕信息，具体可见[NativeDisplayManager_DisplaysInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-displaysinfo)。 |
 
 #### [h2]OH_NativeDisplayManager_CreateDisplayById()
 
@@ -617,7 +618,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreateDisplayById(uint32_
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint32_t displayId | 指定屏幕的id编号，该值为非负整数。 |
+| uint32_t displayId | 指定屏幕的ID号，该值为非负整数。 |
 | [NativeDisplayManager_DisplayInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-displayinfo) **displayInfo | 指定的屏幕信息对象，具体可见[NativeDisplayManager_DisplayInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-displayinfo)，此处作为出参返回。 |
 
 返回：
@@ -641,7 +642,7 @@ void OH_NativeDisplayManager_DestroyDisplay(NativeDisplayManager_DisplayInfo *di
 
 | 参数项 | 描述 |
 | --- | --- |
-| [NativeDisplayManager_DisplayInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-displayinfo) *displayInfo | 销毁通过[OH_NativeDisplayManager_CreateDisplayById](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_createdisplaybyid)或者[OH_NativeDisplayManager_CreatePrimaryDisplay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_createprimarydisplay)接口获取到的屏幕信息，具体可见[NativeDisplayManager_DisplayInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-displayinfo)。 |
+| [NativeDisplayManager_DisplayInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-displayinfo) *displayInfo | 销毁通过[OH_NativeDisplayManager_CreateDisplayById](#oh_nativedisplaymanager_createdisplaybyid)或者[OH_NativeDisplayManager_CreatePrimaryDisplay](#oh_nativedisplaymanager_createprimarydisplay)接口获取到的屏幕信息，具体可见[NativeDisplayManager_DisplayInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-displayinfo)。 |
 
 #### [h2]OH_NativeDisplayManager_CreatePrimaryDisplay()
 
@@ -650,7 +651,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreatePrimaryDisplay(Nati
 ```
  描述
 
-获取主屏信息对象。除2in1之外的设备获取的是设备自带屏幕的屏幕信息；2in1设备外接屏幕时获取的是当前主屏幕的屏幕信息；2in1设备没有外接屏幕时获取的是自带屏幕的屏幕信息。
+获取主屏信息对象。除PC/2in1之外的设备获取的是设备自带屏幕的屏幕信息；PC/2in1设备外接屏幕时获取的是当前主屏幕的屏幕信息；PC/2in1设备没有外接屏幕时获取的是自带屏幕的屏幕信息。
 
 起始版本： 14
 
@@ -673,7 +674,7 @@ typedef void (*OH_NativeDisplayManager_AvailableAreaChangeCallback)(uint64_t dis
 ```
  描述
 
-注册屏幕可用区域变化的回调函数。
+屏幕可用区域变化时触发的回调函数类型。
 
 起始版本： 20
 
@@ -681,7 +682,7 @@ typedef void (*OH_NativeDisplayManager_AvailableAreaChangeCallback)(uint64_t dis
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint64_t displayId | 屏幕的id号，非负整数。 |
+| uint64_t displayId | 屏幕的ID号，非负整数。 |
 
 #### [h2]OH_NativeDisplayManager_RegisterAvailableAreaChangeListener()
 
@@ -703,8 +704,8 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_RegisterAvailableAreaChan
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_NativeDisplayManager_AvailableAreaChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_availableareachangecallback) availableAreaChangeCallback | 屏幕可用区域变化后触发的回调函数， 回调函数定义见[OH_NativeDisplayManager_AvailableAreaChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_availableareachangecallback)。 |
-| uint32_t *listenerIndex | 注册成功后返回的监听编号， 调用取消注册函数[OH_NativeDisplayManager_UnregisterAvailableAreaChangeListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_unregisteravailableareachangelistener)时作为入参使用，此处作为出参返回。 |
+| [OH_NativeDisplayManager_AvailableAreaChangeCallback](#oh_nativedisplaymanager_availableareachangecallback) availableAreaChangeCallback | 屏幕可用区域变化后触发的回调函数， 回调函数定义见[OH_NativeDisplayManager_AvailableAreaChangeCallback](#oh_nativedisplaymanager_availableareachangecallback)。 |
+| uint32_t *listenerIndex | 注册成功后返回的监听编号， 调用取消注册函数[OH_NativeDisplayManager_UnregisterAvailableAreaChangeListener](#oh_nativedisplaymanager_unregisteravailableareachangelistener)时作为入参使用，此处作为出参返回。 |
 
 返回：
 
@@ -732,7 +733,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_UnregisterAvailableAreaCh
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint32_t listenerIndex | 调用注册函数 [OH_NativeDisplayManager_RegisterAvailableAreaChangeListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_registeravailableareachangelistener)时获取到的监听编号。 |
+| uint32_t listenerIndex | 调用注册函数 [OH_NativeDisplayManager_RegisterAvailableAreaChangeListener](#oh_nativedisplaymanager_registeravailableareachangelistener)时获取到的监听编号。 |
 
 返回：
 
@@ -760,7 +761,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_CreateAvailableArea(uint6
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint64_t displayId | 查询屏幕的id号，非负整数。 |
+| uint64_t displayId | 查询屏幕的ID号，非负整数。 |
 | [NativeDisplayManager_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-rect) **availableArea | 屏幕可用区域，具体可见[NativeDisplayManager_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-rect)，此处作为出参返回。 |
 
 返回：
@@ -784,7 +785,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_DestroyAvailableArea(Nati
 
 | 参数项 | 描述 |
 | --- | --- |
-| [NativeDisplayManager_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-rect) *availableArea | 销毁通过[OH_NativeDisplayManager_CreateAvailableArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_createavailablearea)获取的屏幕可用区域， 可用区域定义具体可见[NativeDisplayManager_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-rect)。 |
+| [NativeDisplayManager_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-rect) *availableArea | 销毁通过[OH_NativeDisplayManager_CreateAvailableArea](#oh_nativedisplaymanager_createavailablearea)获取的屏幕可用区域， 可用区域定义具体可见[NativeDisplayManager_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-rect)。 |
 
 返回：
 
@@ -799,7 +800,7 @@ typedef void (*OH_NativeDisplayManager_DisplayAddCallback)(uint64_t displayId)
 ```
  描述
 
-注册屏幕连接的回调函数。
+屏幕连接时触发的回调函数类型。
 
 起始版本： 20
 
@@ -807,7 +808,7 @@ typedef void (*OH_NativeDisplayManager_DisplayAddCallback)(uint64_t displayId)
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint64_t displayId | 新增屏幕的id号，非负整数。 |
+| uint64_t displayId | 新增屏幕的ID号，非负整数。 |
 
 #### [h2]OH_NativeDisplayManager_RegisterDisplayAddListener()
 
@@ -824,8 +825,8 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_RegisterDisplayAddListene
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_NativeDisplayManager_DisplayAddCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_displayaddcallback) displayAddCallback | 屏幕连接后触发的回调函数，回调函数定义见[OH_NativeDisplayManager_DisplayAddCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_displayaddcallback)。 |
-| uint32_t *listenerIndex | 注册成功后返回的监听编号， 调用取消注册函数[OH_NativeDisplayManager_UnregisterDisplayAddListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_unregisterdisplayaddlistener)时作为入参使用，此处作为出参返回。 |
+| [OH_NativeDisplayManager_DisplayAddCallback](#oh_nativedisplaymanager_displayaddcallback) displayAddCallback | 屏幕连接后触发的回调函数，回调函数定义见[OH_NativeDisplayManager_DisplayAddCallback](#oh_nativedisplaymanager_displayaddcallback)。 |
+| uint32_t *listenerIndex | 注册成功后返回的监听编号， 调用取消注册函数[OH_NativeDisplayManager_UnregisterDisplayAddListener](#oh_nativedisplaymanager_unregisterdisplayaddlistener)时作为入参使用，此处作为出参返回。 |
 
 返回：
 
@@ -848,7 +849,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_UnregisterDisplayAddListe
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint32_t listenerIndex | 调用注册函数[OH_NativeDisplayManager_RegisterDisplayAddListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_registerdisplayaddlistener)时获取到的监听编号。 |
+| uint32_t listenerIndex | 调用注册函数[OH_NativeDisplayManager_RegisterDisplayAddListener](#oh_nativedisplaymanager_registerdisplayaddlistener)时获取到的监听编号。 |
 
 返回：
 
@@ -863,7 +864,7 @@ typedef void (*OH_NativeDisplayManager_DisplayRemoveCallback)(uint64_t displayId
 ```
  描述
 
-注册屏幕移除的回调函数。
+屏幕移除时触发的回调函数类型。
 
 起始版本： 20
 
@@ -871,7 +872,7 @@ typedef void (*OH_NativeDisplayManager_DisplayRemoveCallback)(uint64_t displayId
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint64_t displayId | 被移除屏幕的id号，非负整数。 |
+| uint64_t displayId | 被移除屏幕的ID号，非负整数。 |
 
 #### [h2]OH_NativeDisplayManager_RegisterDisplayRemoveListener()
 
@@ -888,8 +889,8 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_RegisterDisplayRemoveList
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_NativeDisplayManager_DisplayRemoveCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_displayremovecallback) displayRemoveCallback | 屏幕移除后触发的回调函数，回调函数定义见[OH_NativeDisplayManager_DisplayRemoveCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_displayremovecallback)。 |
-| uint32_t *listenerIndex | 注册成功后返回的监听编号， 调用取消注册函数[OH_NativeDisplayManager_UnregisterDisplayRemoveListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_unregisterdisplayremovelistener)时作为入参使用，此处作为出参返回。 |
+| [OH_NativeDisplayManager_DisplayRemoveCallback](#oh_nativedisplaymanager_displayremovecallback) displayRemoveCallback | 屏幕移除后触发的回调函数，回调函数定义见[OH_NativeDisplayManager_DisplayRemoveCallback](#oh_nativedisplaymanager_displayremovecallback)。 |
+| uint32_t *listenerIndex | 注册成功后返回的监听编号， 调用取消注册函数[OH_NativeDisplayManager_UnregisterDisplayRemoveListener](#oh_nativedisplaymanager_unregisterdisplayremovelistener)时作为入参使用，此处作为出参返回。 |
 
 返回：
 
@@ -912,7 +913,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_UnregisterDisplayRemoveLi
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint32_t listenerIndex | 调用注册函数[OH_NativeDisplayManager_RegisterDisplayRemoveListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-manager-h#oh_nativedisplaymanager_registerdisplayremovelistener)时获取到的监听编号。 |
+| uint32_t listenerIndex | 调用注册函数[OH_NativeDisplayManager_RegisterDisplayRemoveListener](#oh_nativedisplaymanager_registerdisplayremovelistener)时获取到的监听编号。 |
 
 返回：
 
@@ -927,7 +928,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDisplaySourceMode(uint
 ```
  描述
 
-获取屏幕的显示模式，默认值为DisplaySourceMode.None。
+获取屏幕的显示模式，默认值为DISPLAY_SOURCE_MODE_NONE。
 
 起始版本： 20
 
@@ -935,7 +936,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDisplaySourceMode(uint
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint64_t displayId | 查询屏幕的id号，非负整数。 |
+| uint64_t displayId | 查询屏幕的ID号，非负整数。 |
 | [NativeDisplayManager_SourceMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_sourcemode) *sourceMode | 屏幕当前的显示模式，具体可见[NativeDisplayManager_SourceMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-display-info-h#nativedisplaymanager_sourcemode)，此处作为出参返回。 |
 
 返回：
@@ -963,7 +964,7 @@ NativeDisplayManager_ErrorCode OH_NativeDisplayManager_GetDisplayPosition(uint64
 
 | 参数项 | 描述 |
 | --- | --- |
-| uint64_t displayId | 查询屏幕的id号，非负整数。 |
+| uint64_t displayId | 查询位置信息的屏幕ID号，该参数应为非负整数。 |
 | int32_t *x | 相对于主屏左上角的x方向坐标，单位为px，该参数应为整数，此处作为出参返回。 |
 | int32_t *y | 相对于主屏左上角的y方向坐标，单位为px，该参数应为整数，此处作为出参返回。 |
 

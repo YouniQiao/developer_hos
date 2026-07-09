@@ -2,7 +2,8 @@
 title: "UsbConfigDescriptor"
 upstream_id: "harmonyos-references/capi-usbddk-usbconfigdescriptor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:35.218572"
+content_hash: "af566020ae85"
+synced_at: "2026-07-09T00:59:56.962780"
 ---
 
 # UsbConfigDescriptor

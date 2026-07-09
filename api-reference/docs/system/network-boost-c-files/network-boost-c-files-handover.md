@@ -2,7 +2,8 @@
 title: "network_boost_handover.h"
 upstream_id: "harmonyos-references/network-boost-c-files-handover"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:57.527874"
+content_hash: "cbdce0b1fbf8"
+synced_at: "2026-07-09T00:59:32.226457"
 ---
 
 # network_boost_handover.h
@@ -77,7 +78,7 @@ synced_at: "2026-06-24T20:50:57.527874"
 | --- | --- |
 | int32_t [HMS_NetworkBoost_RegisterHandoverChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/network-boost-c-overview#hms_networkboost_registerhandoverchangecallback) ([HMS_NetworkBoost_HandoverCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/network-boost-c-struct-handover_callback) *callback, uint32_t *callbackId) | 注册连接迁移回调。 |
 | int32_t [HMS_NetworkBoost_UnregisterHandoverChangeCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/network-boost-c-overview#hms_networkboost_unregisterhandoverchangecallback) (uint32_t callbackId) | 取消注册连接迁移回调。 |
-| int32_t [HMS_NetworkBoost_SetHandoverMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/network-boost-c-overview#hms_networkboost_sethandovermode) ([NetworkBoost_HandoverMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/network-boost-c-overview#networkboost_handovermode-1) mode) | 应用可通过该接口变更连接迁移模式，包括委托模式(由系统发起连接迁移)，和自主模式(由应用发起连接迁移)，默认为委托模式。设置失败，接口会抛出异常。 |
+| int32_t [HMS_NetworkBoost_SetHandoverMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/network-boost-c-overview#hms_networkboost_sethandovermode) ([NetworkBoost_HandoverMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/network-boost-c-overview#networkboost_handovermode-1) mode) | 应用可通过该接口变更连接迁移模式，包括委托模式（由系统发起连接迁移），和自主模式（由应用发起连接迁移），默认为委托模式。设置失败，接口会抛出异常。 |
 | int32_t [HMS_NetworkBoost_GetMultiPathQuotaStats](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/network-boost-c-overview#hms_networkboost_getmultipathquotastats)([NetworkBoost_MultiPathQuota](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/network-boost-c-struct-multipath_quota) *quota) | 获取当前应用多网使用的配额，包括已使用的配额信息和剩余配额信息。 |
 | int32_t [HMS_NetworkBoost_RequestMultiPath](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/network-boost-c-overview#hms_networkboost_requestmultipath)([HMS_NetworkBoost_OnMultiPathRequestResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/network-boost-c-overview#hms_networkboost_onmultipathrequestresult) result) | 发起多网请求。 |
 | int32_t [HMS_NetworkBoost_ReleaseMultiPath](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/network-boost-c-overview#hms_networkboost_releasemultipath)() | 释放多网请求。 |

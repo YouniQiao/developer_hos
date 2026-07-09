@@ -1,9 +1,12 @@
 ---
+
 title: "通行密钥"
 upstream_id: "harmonyos-references/errorcode-onlineauthentication-passkey"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:38.878679"
+synced_at: "2026-07-09T00:59:17.957312"
+content_hash: "1184f991d43b"
 ---
+
 
 # 通行密钥
 

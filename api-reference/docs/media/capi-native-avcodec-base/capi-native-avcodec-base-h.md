@@ -2,7 +2,8 @@
 title: "native_avcodec_base.h"
 upstream_id: "harmonyos-references/capi-native-avcodec-base-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:02.086039"
+content_hash: "be986b0cd716"
+synced_at: "2026-07-09T01:00:15.013121"
 ---
 
 # native_avcodec_base.h

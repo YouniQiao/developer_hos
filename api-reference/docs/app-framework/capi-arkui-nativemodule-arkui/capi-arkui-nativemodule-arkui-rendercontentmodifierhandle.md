@@ -2,7 +2,8 @@
 title: "ArkUI_RenderContentModifierHandle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-rendercontentmodifierhandle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:58.047277"
+content_hash: "7ca72011121d"
+synced_at: "2026-07-09T00:58:46.929393"
 ---
 
 # ArkUI_RenderContentModifierHandle

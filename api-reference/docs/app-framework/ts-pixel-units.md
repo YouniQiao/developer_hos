@@ -1,9 +1,12 @@
 ---
+
 title: "像素单位"
 upstream_id: "harmonyos-references/ts-pixel-units"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:58.327332"
+synced_at: "2026-07-09T00:58:18.852381"
+content_hash: "78be067a9491"
 ---
+
 
 # 像素单位
 

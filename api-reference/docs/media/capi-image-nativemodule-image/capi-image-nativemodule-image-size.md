@@ -2,7 +2,8 @@
 title: "Image_Size"
 upstream_id: "harmonyos-references/capi-image-nativemodule-image-size"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:28.652136"
+content_hash: "bdf2cfed502a"
+synced_at: "2026-07-09T01:00:34.625874"
 ---
 
 # Image_Size

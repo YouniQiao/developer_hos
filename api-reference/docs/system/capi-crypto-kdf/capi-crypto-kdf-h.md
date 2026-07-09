@@ -2,7 +2,8 @@
 title: "crypto_kdf.h"
 upstream_id: "harmonyos-references/capi-crypto-kdf-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:31.406134"
+content_hash: "55236c0832b5"
+synced_at: "2026-07-09T00:59:12.394068"
 ---
 
 # crypto_kdf.h

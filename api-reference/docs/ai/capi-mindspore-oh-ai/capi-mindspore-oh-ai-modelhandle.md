@@ -2,7 +2,8 @@
 title: "OH_AI_ModelHandle"
 upstream_id: "harmonyos-references/capi-mindspore-oh-ai-modelhandle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:59.028490"
+content_hash: "9790033068f2"
+synced_at: "2026-07-09T01:01:43.935341"
 ---
 
 # OH_AI_ModelHandle

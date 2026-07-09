@@ -1,9 +1,12 @@
 ---
+
 title: "核销优惠券"
 upstream_id: "harmonyos-references/payment-api-common-promotion-service-merc-coup-ucoup-use"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:47.059408"
+synced_at: "2026-07-09T01:01:35.339501"
+content_hash: "3b76c8fb7cfa"
 ---
+
 
 # 核销优惠券
 

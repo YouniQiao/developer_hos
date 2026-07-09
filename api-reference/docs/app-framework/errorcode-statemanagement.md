@@ -2,7 +2,8 @@
 title: "状态管理错误码"
 upstream_id: "harmonyos-references/errorcode-statemanagement"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:01.880329"
+content_hash: "da08c79e2a00"
+synced_at: "2026-07-09T00:58:49.742945"
 ---
 
 # 状态管理错误码
@@ -52,7 +53,7 @@ addMonitor/clearMonitor的路径参数不合法。
 
 错误信息
 
-monitorCallback is not a function or an anonymous function.
+addMonitor/clearMonitor failed because the monitorFunc is illegal, monitorFunc must be function or but cannot be an anonymous function.
 
 错误描述
 
@@ -60,7 +61,7 @@ addMonitor/clearMonitor的回调方法参数不合法。
 
 可能原因
 
-回调方法不是function类型，或者是匿名function。
+回调方法不是function类型，或者是匿名function类型。
 
 处理步骤
 
@@ -278,7 +279,7 @@ Old toolchain detected. Please upgrade to the latest.
 
 错误描述
 
-从API version 23开始，支持[@Reusable](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable)（父组件）中创建[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)（子组件），但需要开发者使用API version 18及以上SDK，详情见[@ReusableV2使用限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-reusablev2#使用限制)。
+从API version 18开始，支持[@Reusable](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-reusable)（父组件）中创建[@ComponentV2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-create-custom-components#componentv2)（子组件），但需要开发者使用API version 18及以上SDK，否则会有运行时报错，从API version 23开始，将返回此错误码，详情见[@ReusableV2使用限制](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-reusablev2#使用限制)。
 
 可能原因
 
@@ -324,7 +325,7 @@ Illegal variable value error with decorated variable
 
 使用状态管理V1的状态变量支持的类型，以@State为例，详情见[@State装饰器使用规则说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state#装饰器使用规则说明)。
 
-#### 140116 AppStorageV2使用非法的key
+#### 140116 AppStorageV2或PersistenceV2使用非法的key
 
 错误信息
 

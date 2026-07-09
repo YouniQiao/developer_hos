@@ -2,7 +2,8 @@
 title: "VkExternalFormatOHOS"
 upstream_id: "harmonyos-references/capi-vulkan-vkexternalformatohos"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:06.456998"
+content_hash: "881e266263e3"
+synced_at: "2026-07-09T01:01:49.897103"
 ---
 
 # VkExternalFormatOHOS

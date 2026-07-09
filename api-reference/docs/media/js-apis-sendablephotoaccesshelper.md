@@ -2,7 +2,8 @@
 title: "@ohos.file.sendablePhotoAccessHelper (基于Sendable对象的相册管理模块)"
 upstream_id: "harmonyos-references/js-apis-sendablephotoaccesshelper"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:45.814607"
+content_hash: "375150876ec5"
+synced_at: "2026-07-09T01:00:48.266173"
 ---
 
 # @ohos.file.sendablePhotoAccessHelper (基于Sendable对象的相册管理模块)

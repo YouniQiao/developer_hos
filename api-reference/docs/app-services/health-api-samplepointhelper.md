@@ -2,7 +2,8 @@
 title: "samplePointHelper (采样数据类型常量)"
 upstream_id: "harmonyos-references/health-api-samplepointhelper"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:26.975086"
+content_hash: "69a181740be7"
+synced_at: "2026-07-09T01:01:20.496039"
 ---
 
 # samplePointHelper (采样数据类型常量)

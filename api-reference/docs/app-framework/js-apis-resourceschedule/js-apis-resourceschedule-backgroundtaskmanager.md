@@ -2,7 +2,8 @@
 title: "@ohos.resourceschedule.backgroundTaskManager (后台任务管理)"
 upstream_id: "harmonyos-references/js-apis-resourceschedule-backgroundtaskmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:10.197671"
+content_hash: "748e3ff2f6ae"
+synced_at: "2026-07-09T00:58:57.843780"
 ---
 
 # @ohos.resourceschedule.backgroundTaskManager (后台任务管理)

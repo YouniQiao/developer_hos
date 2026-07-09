@@ -2,7 +2,8 @@
 title: "NetworkBoost_NetworkQos"
 upstream_id: "harmonyos-references/network-boost-c-struct-network_qos"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:57.969931"
+content_hash: "7db72e8f4bfa"
+synced_at: "2026-07-09T00:59:32.592115"
 ---
 
 # NetworkBoost_NetworkQos
@@ -28,7 +29,7 @@ synced_at: "2026-06-24T20:50:57.969931"
 | uint64_t [linkDownBandwidth](#linkdownbandwidth) | 下行带宽信息，单位为bps。 |
 | uint64_t [linkUpRate](#linkuprate) | 上行速率，单位为bps。 |
 | uint64_t [linkDownRate](#linkdownrate) | 下行速率，单位为bps。 |
-| uint32_t [rttMs](#rttms) | RTT时延，表示统计时间间隔内，pathType对应数据路径上，所有的TCP上下行数据包的平均往返时延。取值范围为0或任意正数，单位：毫秒（ms）。 如果在统计时间间隔内没有收到某次TCP请求的回复，则该次的RTT时延不会被计入该统计时间间隔内。因此，在完全不可上网的场景下，由于无法收到TCP的回复，回调中的RTT时延值会比较小，与实际状态不一致。针对完全不可上网的场景，建议结合[on('netCapabilitiesChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#onnetcapabilitieschange)方法进行综合判断。 |
+| uint32_t [rttMs](#rttms) | RTT时延，表示统计时间间隔内，pathType对应数据路径上，所有的TCP上下行数据包的平均往返时延。取值范围为0或任意正数，单位：ms。 如果在统计时间间隔内没有收到某次TCP请求的回复，则该次的RTT时延不会被计入该统计时间间隔内。因此，在完全不可上网的场景下，由于无法收到TCP的回复，回调中的RTT时延值会比较小，与实际状态不一致。针对完全不可上网的场景，建议结合[on('netCapabilitiesChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#onnetcapabilitieschange)方法进行综合判断。 |
 | uint32_t [linkUpBufferDelayMs](#linkupbufferdelayms) | 上行发送空口缓冲时延，单位为ms，取值范围是任意正数。 |
 | uint32_t [linkUpBufferCongestionPercent](#linkupbuffercongestionpercent) | 上行发送空口缓冲时延占总缓冲时间的比例，取值范围[0, 100]。 |
 

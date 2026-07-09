@@ -2,7 +2,8 @@
 title: "@hms.core.authentication (华为账号应用统一认证服务)"
 upstream_id: "harmonyos-references/account-api-authentication"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:17.890162"
+content_hash: "f6848ac13633"
+synced_at: "2026-07-09T01:01:12.021140"
 ---
 
 # @hms.core.authentication (华为账号应用统一认证服务)
@@ -310,7 +311,7 @@ getMobileNumberConsistency(request: ConsistencyRequest): Promise<ConsistencyResu
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -886,7 +887,7 @@ executeRequest(request: AuthenticationRequest, callback: AsyncCallback<Authentic
 
 错误码：
 
-以下错误码的详细介绍请参见[账号管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account)和[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)、[账号管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account)和[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1012,7 +1013,7 @@ executeRequest(request: AuthenticationRequest): Promise<AuthenticationResponse>
 
 错误码：
 
-以下错误码的详细介绍请参见[账号管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account)和[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)、[账号管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account)和[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |

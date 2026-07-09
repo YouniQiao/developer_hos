@@ -2,7 +2,8 @@
 title: "native_huks_param.h"
 upstream_id: "harmonyos-references/capi-native-huks-param-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:43.366229"
+content_hash: "974af2cf33e9"
+synced_at: "2026-07-09T00:59:21.295930"
 ---
 
 # native_huks_param.h

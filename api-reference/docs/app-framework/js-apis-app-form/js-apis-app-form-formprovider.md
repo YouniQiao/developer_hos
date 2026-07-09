@@ -2,7 +2,8 @@
 title: "@ohos.app.form.formProvider (formProvider)"
 upstream_id: "harmonyos-references/js-apis-app-form-formprovider"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:17.559758"
+content_hash: "25e39bb6a1fc"
+synced_at: "2026-07-09T00:59:03.819804"
 ---
 
 # @ohos.app.form.formProvider (formProvider)
@@ -522,7 +523,7 @@ struct Page {
             formProvider.closeFormEditAbility();
             console.info(`${TAG} close FormEditAbility success.`);
           } catch (error) {
-            console.error(`${TAG} close FormEditAbility faild, code: ${error.code}, message: ${error.message}`);
+            console.error(`${TAG} close FormEditAbility failed, code: ${error.code}, message: ${error.message}`);
           }
         })
     }
@@ -695,6 +696,8 @@ requestOverflow(formId: string, overflowInfo: formInfo.OverflowInfo): Promise<vo
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
+设备行为差异： 该接口支持Phone中的部分机型，不支持的设备调用会返回[801](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section801-该设备不支持此api)错误码。
+
 系统能力： SystemCapability.Ability.Form
 
 参数：
@@ -761,6 +764,8 @@ cancelOverflow(formId: string): Promise<void>
 卡片提供方发起取消互动卡片动效请求，只针对[场景动效类型互动卡片](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-widget-configuration#sceneanimationparams标签)生效，使用Promise异步回调。
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
+
+设备行为差异： 该接口支持Phone中的部分机型，不支持的设备调用会返回[801](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section801-该设备不支持此api)错误码。
 
 系统能力： SystemCapability.Ability.Form
 

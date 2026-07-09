@@ -2,7 +2,8 @@
 title: "OH_MIDIClientStruct"
 upstream_id: "harmonyos-references/capi-ohmidi-oh-midiclientstruct"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:00.707573"
+content_hash: "1c10aad5911f"
+synced_at: "2026-07-09T01:00:12.786683"
 ---
 
 # OH_MIDIClientStruct

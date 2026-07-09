@@ -2,7 +2,8 @@
 title: "OH_Drawing_PathIterator"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-pathiterator"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:09.197895"
+content_hash: "77df3167dde3"
+synced_at: "2026-07-09T01:01:03.220895"
 ---
 
 # OH_Drawing_PathIterator

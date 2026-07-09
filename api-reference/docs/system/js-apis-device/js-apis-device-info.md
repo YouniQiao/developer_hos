@@ -2,12 +2,13 @@
 title: "@ohos.deviceInfo (设备信息)"
 upstream_id: "harmonyos-references/js-apis-device-info"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:06.261204"
+content_hash: "5647589da5d6"
+synced_at: "2026-07-09T00:59:39.582666"
 ---
 
 # @ohos.deviceInfo (设备信息)
 
-本模块提供终端设备信息查询，开发者不可配置。
+本模块提供终端设备信息查询能力，支持获取设备类型、品牌、型号、系统版本、安全补丁级别、设备唯一标识等多种设备信息，适用于设备适配、版本兼容性检查、设备识别、统计分析等场景，帮助开发者快速获取设备信息进行应用适配和优化。开发者不可配置这些信息。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 6开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -66,8 +67,8 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 | udid7+ | string | 是 | 设备Udid。 **说明**：数据长度为65字节。可作为设备唯一识别码。 **需要权限**：ohos.permission.sec.ACCESS_UDID(该权限只允许系统应用及企业类应用申请) 示例：9D6AABD147XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXE5536412 |
 | distributionOSName10+ | string | 是 | 发行版系统名称。 示例：OpenHarmony |
 | distributionOSVersion10+ | string | 是 | 发行版系统版本号。格式为x.x.x，x是数字 示例：5.0.0 |
-| distributionOSApiVersion10+ | number | 是 | 发行版系统api版本。 示例：50001 |
-| distributionOSApiName13+ | string | 是 | 发行版系统api版本名称。 |
+| distributionOSApiVersion10+ | number | 是 | 发行版系统API版本。 示例：50001 |
+| distributionOSApiName13+ | string | 是 | 发行版系统API版本名称。 |
 | distributionOSReleaseType10+ | string | 是 | 发行版系统类型。 示例：Release |
 | ODID12+ | string | 是 | 开发者匿名设备标识符。 **ODID值会在以下场景重新生成**： 手机恢复出厂设置。 同一设备上同一个开发者(developerId相同)的应用全部卸载后重新安装时。 **ODID生成规则**： 根据签名信息里developerId解析出的groupId生成，developerId规则为groupId.developerId，若无groupId则取整个developerId作为groupId。 同一设备上运行的同一个开发者(developerId相同)的应用，ODID相同。 同一个设备上不同开发者(developerId不同)的应用，ODID不同。 不同设备上同一个开发者(developerId相同)的应用，ODID不同。 不同设备上不同开发者(developerId不同)的应用，ODID不同。 **说明**：数据长度为37字节(包含结束符)。 示例：1234a567-XXXX-XXXX-XXXX-XXXXXXXXXXXX |
 | diskSN15+ | string | 是 | 硬盘序列号。 **说明** ：该字段只能在部分2in1设备上进行查询，其他设备查询结果为空。 **需要权限**：ohos.permission.ACCESS_DISK_PHY_INFO 示例：2502EM400567 |
@@ -82,7 +83,7 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 14700103 | Permission verification failed. System permission operation permission denied |
-| 401 | Parameter error. Possible causes: 1.Incorrect parameter types. |
+| 401 | Parameter error. Possible causes: 1. Incorrect parameter types. |
 
 示例
 

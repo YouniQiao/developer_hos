@@ -2,7 +2,8 @@
 title: "Interface (PhotoAsset)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-photoasset"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:45.120408"
+content_hash: "6f20ba8288b1"
+synced_at: "2026-07-09T01:00:47.495601"
 ---
 
 # Interface (PhotoAsset)

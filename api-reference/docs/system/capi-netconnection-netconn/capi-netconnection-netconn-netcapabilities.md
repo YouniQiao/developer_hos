@@ -2,7 +2,8 @@
 title: "NetConn_NetCapabilities"
 upstream_id: "harmonyos-references/capi-netconnection-netconn-netcapabilities"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:53.851835"
+content_hash: "ca542f284d10"
+synced_at: "2026-07-09T00:59:29.235880"
 ---
 
 # NetConn_NetCapabilities

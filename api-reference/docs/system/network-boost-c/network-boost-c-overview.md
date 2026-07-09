@@ -2,7 +2,8 @@
 title: "NetworkBoost"
 upstream_id: "harmonyos-references/network-boost-c-overview"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:57.484921"
+content_hash: "3ba219e92cff"
+synced_at: "2026-07-09T00:59:32.465466"
 ---
 
 # NetworkBoost
@@ -138,7 +139,7 @@ synced_at: "2026-06-24T20:50:57.484921"
 ```
  描述
 
-1bps
+1bps。
 
 起始版本： 5.1.0(18)
 
@@ -149,7 +150,7 @@ synced_at: "2026-06-24T20:50:57.484921"
 ```
  描述
 
-1gbps
+1gbps。
 
 起始版本： 5.1.0(18)
 
@@ -160,7 +161,7 @@ synced_at: "2026-06-24T20:50:57.484921"
 ```
  描述
 
-1kbps
+1kbps。
 
 起始版本： 5.1.0(18)
 
@@ -171,7 +172,7 @@ synced_at: "2026-06-24T20:50:57.484921"
 ```
  描述
 
-1mbps
+1mbps。
 
 起始版本： 5.1.0(18)
 
@@ -225,7 +226,7 @@ typedef void(* HMS_NetworkBoost_NetQosChange) (NetworkBoost_NetworkQosArray *net
 
 | 名称 | 描述 |
 | --- | --- |
-| networkQosArray | 网络质量变化的详细信息 |
+| networkQosArray | 网络质量变化的详细信息。 |
 
 #### [h2]HMS_NetworkBoost_NetSceneChange
 
@@ -242,7 +243,7 @@ typedef void(* HMS_NetworkBoost_NetSceneChange) (NetworkBoost_NetworkScene *netw
 
 | 名称 | 描述 |
 | --- | --- |
-| networkScene | 网络场景变化的详细信息 |
+| networkScene | 网络场景变化的详细信息。 |
 
 #### [h2]HMS_NetworkBoost_OnHandoverComplete
 
@@ -259,7 +260,7 @@ typedef void(* HMS_NetworkBoost_OnHandoverComplete) (NetworkBoost_HandoverComple
 
 | 名称 | 描述 |
 | --- | --- |
-| handoverComplete | 连接迁移完成的详细信息 |
+| handoverComplete | 连接迁移完成的详细信息。 |
 
 #### [h2]HMS_NetworkBoost_OnHandoverStart
 

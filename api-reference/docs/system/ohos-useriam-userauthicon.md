@@ -2,7 +2,8 @@
 title: "@ohos.userIAM.userAuthIcon (嵌入式用户身份认证控件)"
 upstream_id: "harmonyos-references/ohos-useriam-userauthicon"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:44.839706"
+content_hash: "11f33ff25390"
+synced_at: "2026-07-09T00:59:22.171386"
 ---
 
 # @ohos.userIAM.userAuthIcon (嵌入式用户身份认证控件)
@@ -109,8 +110,8 @@ struct Index {
 
 人脸认证图例：
 
-![](./img/zh-cn_image_0000002656350649.png)
+![](./img/zh-cn_image_0000002661613419.png)
 
 指纹认证图例：
 
-![](./img/zh-cn_image_0000002626231236.png)
+![](./img/zh-cn_image_0000002631414132.png)

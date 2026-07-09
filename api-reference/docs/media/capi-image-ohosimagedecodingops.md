@@ -2,7 +2,8 @@
 title: "OhosImageDecodingOps"
 upstream_id: "harmonyos-references/capi-image-ohosimagedecodingops"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:31.058385"
+content_hash: "282b855d2639"
+synced_at: "2026-07-09T01:00:36.206937"
 ---
 
 # OhosImageDecodingOps

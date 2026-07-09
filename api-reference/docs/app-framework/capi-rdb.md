@@ -2,7 +2,8 @@
 title: "RDB"
 upstream_id: "harmonyos-references/capi-rdb"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:05.541046"
+content_hash: "9adf8a42b25e"
+synced_at: "2026-07-09T00:57:18.034282"
 ---
 
 # RDB

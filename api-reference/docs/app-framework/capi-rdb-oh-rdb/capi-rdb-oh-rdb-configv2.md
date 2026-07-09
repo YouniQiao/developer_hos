@@ -2,7 +2,8 @@
 title: "OH_Rdb_ConfigV2"
 upstream_id: "harmonyos-references/capi-rdb-oh-rdb-configv2"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:09.840752"
+content_hash: "82d9b91181ff"
+synced_at: "2026-07-09T00:57:21.277031"
 ---
 
 # OH_Rdb_ConfigV2

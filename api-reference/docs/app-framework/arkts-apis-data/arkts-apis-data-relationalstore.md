@@ -1,9 +1,12 @@
 ---
+
 title: "模块描述"
 upstream_id: "harmonyos-references/arkts-apis-data-relationalstore"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:02.660434"
+synced_at: "2026-07-09T00:57:15.224705"
+content_hash: "f369a8adeab9"
 ---
+
 
 # 模块描述
 

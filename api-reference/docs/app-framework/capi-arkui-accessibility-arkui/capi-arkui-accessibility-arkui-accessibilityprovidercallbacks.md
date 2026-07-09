@@ -2,7 +2,8 @@
 title: "ArkUI_AccessibilityProviderCallbacks"
 upstream_id: "harmonyos-references/capi-arkui-accessibility-arkui-accessibilityprovidercallbacks"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:48.008347"
+content_hash: "ccc3f2a060e8"
+synced_at: "2026-07-09T00:58:41.316959"
 ---
 
 # ArkUI_AccessibilityProviderCallbacks

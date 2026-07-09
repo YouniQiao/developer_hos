@@ -2,7 +2,8 @@
 title: "ArkUI_Accessibility"
 upstream_id: "harmonyos-references/capi-arkui-accessibility"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:31.387382"
+content_hash: "355f602238fb"
+synced_at: "2026-07-09T00:58:32.080346"
 ---
 
 # ArkUI_Accessibility

@@ -2,7 +2,8 @@
 title: "自定义手势判定"
 upstream_id: "harmonyos-references/ts-gesture-customize-judge"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:51.294303"
+content_hash: "fca4f5170f6c"
+synced_at: "2026-07-09T00:57:45.099095"
 ---
 
 # 自定义手势判定
@@ -191,7 +192,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469629.gif)
+ ![](./img/zh-cn_image_0000002661732375.gif)
 
 #### [h2]示例2（自定义区域手势判定）
 
@@ -268,7 +269,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349677.gif)
+ ![](./img/zh-cn_image_0000002631253256.gif)
 
 #### [h2]示例3（实时监测参与手势的有效触点的数量及其简要信息）
 
@@ -353,4 +354,4 @@ struct GestureDetectorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230264.gif)
+ ![](./img/zh-cn_image_0000002661612439.gif)

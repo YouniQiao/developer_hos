@@ -1,9 +1,12 @@
 ---
+
 title: "动态手势设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-gesture-modifier"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:47.523127"
+synced_at: "2026-07-09T00:57:42.633809"
+content_hash: "f1db48187246"
 ---
+
 
 # 动态手势设置
 

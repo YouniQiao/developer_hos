@@ -2,7 +2,8 @@
 title: "xcomponent"
 upstream_id: "harmonyos-references/js-components-basic-xcomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:08.474441"
+content_hash: "61a4c0b8ac7f"
+synced_at: "2026-07-09T00:58:23.102999"
 ---
 
 # xcomponent

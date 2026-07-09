@@ -2,7 +2,8 @@
 title: "sceneMap（场景化控件）"
 upstream_id: "harmonyos-references/map-scenemap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:35.344734"
+content_hash: "aee39861d593"
+synced_at: "2026-07-09T01:01:27.323919"
 ---
 
 # sceneMap（场景化控件）

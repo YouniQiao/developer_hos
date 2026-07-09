@@ -2,7 +2,8 @@
 title: "effect_types.h"
 upstream_id: "harmonyos-references/capi-effect-types-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:03.921001"
+content_hash: "e4453d479d5f"
+synced_at: "2026-07-09T01:00:59.076629"
 ---
 
 # effect_types.h

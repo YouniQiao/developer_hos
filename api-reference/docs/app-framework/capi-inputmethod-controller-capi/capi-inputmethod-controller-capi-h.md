@@ -2,7 +2,8 @@
 title: "inputmethod_controller_capi.h"
 upstream_id: "harmonyos-references/capi-inputmethod-controller-capi-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:19.555834"
+content_hash: "41f3519841e9"
+synced_at: "2026-07-09T00:59:04.439861"
 ---
 
 # inputmethod_controller_capi.h

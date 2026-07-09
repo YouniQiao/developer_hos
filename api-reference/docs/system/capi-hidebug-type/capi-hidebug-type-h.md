@@ -2,7 +2,8 @@
 title: "hidebug_type.h"
 upstream_id: "harmonyos-references/capi-hidebug-type-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:47.947930"
+content_hash: "11fb81ec8258"
+synced_at: "2026-07-09T01:00:04.428207"
 ---
 
 # hidebug_type.h
@@ -27,18 +28,18 @@ HiDebug模块代码结构体定义。
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [HiDebug_ThreadCpuUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-threadcpuusage) | HiDebug_ThreadCpuUsage | 应用程序所有线程的CPU使用率结构体定义。 |
-| [HiDebug_SystemMemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-systemmeminfo) | HiDebug_SystemMemInfo | 系统内存信息结构类型定义。 |
+| [HiDebug_ThreadCpuUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-threadcpuusage) | HiDebug_ThreadCpuUsage | 当前进程所有线程的CPU使用率结构体定义。使用场景：应用性能监控：获取线程CPU使用率，监控应用的运行状态和性能瓶颈。线程性能优化：分析各线程的CPU占用情况，优化线程调度和资源分配。系统调试：在调试阶段追踪线程的CPU使用情况，定位性能问题。 |
+| [HiDebug_SystemMemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-systemmeminfo) | HiDebug_SystemMemInfo | 系统内存信息结构类型定义。用于获取系统内存的总量、空闲量、可用量等关键信息，适用于系统性能分析、内存监控、故障诊断等场景，帮助开发者了解系统内存使用状况，优化内存管理策略。 |
 | [HiDebug_NativeMemInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-nativememinfo) | HiDebug_NativeMemInfo | 应用程序进程本机内存信息结构类型定义。 |
 | [HiDebug_MemoryLimit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-memorylimit) | HiDebug_MemoryLimit | 应用程序进程内存限制结构类型定义。 |
-| [OH_HiDebug_RequestTraceConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-oh-hidebug-requesttraceconfig) | OH_HiDebug_RequestTraceConfig | 请求trace采集的配置结构类型定义。 |
-| [HiDebug_JsStackFrame](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-jsstackframe) | HiDebug_JsStackFrame | js栈帧内容的定义。 |
+| [OH_HiDebug_RequestTraceConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-oh-hidebug-requesttraceconfig) | OH_HiDebug_RequestTraceConfig | 请求trace采集的配置结构类型定义。用于在应用性能分析和调试场景中配置trace采集参数，如定位应用启动慢、UI卡顿、CPU占用高等性能问题。 |
+| [HiDebug_JsStackFrame](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-jsstackframe) | HiDebug_JsStackFrame | js栈帧内容的定义。用于在性能分析和调试场景中，记录js调用栈的帧信息，包括代码位置、函数名称、映射区域等关键信息。 |
 | [HiDebug_NativeStackFrame](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-nativestackframe) | HiDebug_NativeStackFrame | native栈帧内容的定义。 |
-| [HiDebug_StackFrame](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-stackframe) | HiDebug_StackFrame | 栈帧内容的定义。 |
-| [HiDebug_MallocDispatch](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-mallocdispatch) | HiDebug_MallocDispatch | 应用程序进程可替换/恢复的HiDebug_MallocDispatch表结构类型定义。 |
+| [HiDebug_StackFrame](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-stackframe) | HiDebug_StackFrame | 栈帧内容的定义。该结构体用于表示调试时的栈帧信息，支持获取当前栈的类型以及对应的js栈帧或Native栈帧内容，帮助开发者进行问题定位和调试分析。 |
+| [HiDebug_MallocDispatch](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-mallocdispatch) | HiDebug_MallocDispatch | 应用程序进程可替换/恢复的HiDebug_MallocDispatch表结构类型定义。通过该结构体，开发者可以自定义内存管理函数指针，实现对进程内存分配和释放的监控与定制。主要特点包括：支持动态替换和恢复内存管理函数、提供全面的内存操作接口（malloc、calloc、realloc、free、mmap、munmap）、不影响系统默认内存管理行为。使用场景包括：内存泄漏检测、内存使用性能分析、自定义内存分配策略、内存安全监控等。能够帮助开发者及时发现和解决内存问题，提升应用稳定性和性能。 |
 | [HiDebug_GraphicsMemorySummary](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-graphicsmemorysummary) | HiDebug_GraphicsMemorySummary | 应用图形显存占用详情的结构定义。 |
 | [HiDebug_ProcessSamplerConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-processsamplerconfig) | HiDebug_ProcessSamplerConfig | 采样配置的结构定义。 |
-| [HiDebug_Backtrace_Object__*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-backtrace-object--8h) | HiDebug_Backtrace_Object | 用于栈回溯及栈解析的对象。 |
+| [HiDebug_Backtrace_Object__*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-backtrace-object--8h) | HiDebug_Backtrace_Object | 用于栈回溯及栈解析的对象。该对象封装了栈回溯所需的上下文信息，包括调用栈地址、线程状态等数据，通过相关接口可获取详细的栈帧信息和符号解析结果。该对象通过HiDebug相关接口创建，使用后需要调用对应的销毁接口释放资源。 |
 | [HiDebug_ThreadCpuUsage*](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-hidebug-threadcpuusage) | HiDebug_ThreadCpuUsagePtr | HiDebug_ThreadCpuUsage指针定义。 |
 | [OH_HiDebug_ResProfilerConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-oh-hidebug-resprofilerconfig) | OH_HiDebug_ResProfilerConfig | 定义资源采集配置结构体类型。 |
 | [OH_HiDebug_ProfilingResult](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hidebug-oh-hidebug-profilingresult) | OH_HiDebug_ProfilingResult | 封装单次资源采集的结果。 |
@@ -47,12 +48,12 @@ HiDebug模块代码结构体定义。
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [HiDebug_ErrorCode](#hidebug_errorcode) | HiDebug_ErrorCode | 错误码定义。 |
+| [HiDebug_ErrorCode](#hidebug_errorcode) | HiDebug_ErrorCode | 错误码定义。用于HiDebug模块各功能接口的返回状态标识，包括成功、参数错误、权限问题、系统内部错误、设备不支持等多种情况。开发者可根据错误码定位问题原因并采取相应的错误处理措施。 |
 | [HiDebug_TraceFlag](#hidebug_traceflag) | HiDebug_TraceFlag | 采集trace线程的类型。 |
 | [HiDebug_StackFrameType](#hidebug_stackframetype) | HiDebug_StackFrameType | 栈帧类型的枚举值定义。 |
 | [HiDebug_CrashObjType](#hidebug_crashobjtype) | HiDebug_CrashObjType | 维测信息数据类型的枚举。 |
 | [OH_HiDebug_ResourceType](#oh_hidebug_resourcetype) | OH_HiDebug_ResourceType | 定义资源采集类型的枚举。 |
-| [OH_HiDebug_MemListenerType](#oh_hidebug_memlistenertype) | OH_HiDebug_MemListenerType | 内存监听回调的类型。开发者根据回调类型处理相关逻辑。 |
+| [OH_HiDebug_MemListenerType](#oh_hidebug_memlistenertype) | OH_HiDebug_MemListenerType | 内存监听回调的类型枚举。开发者根据回调类型处理相关逻辑。 |
 
 #### [h2]宏定义
 
@@ -60,7 +61,7 @@ HiDebug模块代码结构体定义。
 | --- | --- |
 | [HIDEBUG_TRACE_TAG_FFRT](#hidebug_trace_tag_ffrt) (1ULL 描述
 
-错误码定义。
+错误码定义。用于HiDebug模块各功能接口的返回状态标识，包括成功、参数错误、权限问题、系统内部错误、设备不支持等多种情况。开发者可根据错误码定位问题原因并采取相应的错误处理措施。
 
 起始版本： 12
 
@@ -175,7 +176,7 @@ enum OH_HiDebug_MemListenerType
 ```
  描述
 
-内存监听回调的类型。开发者根据回调类型处理相关逻辑。
+内存监听回调的类型枚举。开发者根据回调类型处理相关逻辑。
 
 起始版本： 26.0.0
 

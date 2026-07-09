@@ -2,7 +2,8 @@
 title: "@ohos.ability.particleAbility (ParticleAbility模块)"
 upstream_id: "harmonyos-references/js-apis-ability-particleability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:49.310503"
+content_hash: "fe699baa71d0"
+synced_at: "2026-07-09T00:57:06.736767"
 ---
 
 # @ohos.ability.particleAbility (ParticleAbility模块)

@@ -2,7 +2,8 @@
 title: "转场样式"
 upstream_id: "harmonyos-references/js-components-common-transition"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:01.294376"
+content_hash: "3d69e26888ff"
+synced_at: "2026-07-09T00:58:20.037173"
 ---
 
 # 转场样式
@@ -28,7 +29,7 @@ synced_at: "2026-06-24T20:49:01.294376"
 #### [h2]注意事项
 
 1. 若同时配置了共享元素转场和自定义页面转场样式，页面转场效果以自定义效果为准。
-2. 共享元素的exchange效果类似下图。 **图1** 共享元素转场默认效果 ![](./img/zh-cn_image_0000002626230874.png)
+2. 共享元素的exchange效果类似下图。 **图1** 共享元素转场默认效果 ![](./img/zh-cn_image_0000002631413768.png)
 3. 共享元素动画对元素的边框、背景色不生效。
 4. 共享元素转场时，由于页面元素会被隐藏，故页面元素配置的动画样式/动画方法失效。
 5. 动态修改shareid5+：若组件A的shareid被组件B的shareid覆盖，组件A的共享元素效果将失效。即使后续修改组件B的shareid，组件A的共享元素效果也不会恢复。
@@ -203,7 +204,7 @@ export default {
   justify-content: center;
 }
 ```
- ![](./img/zh-cn_image_0000002626070964.gif)
+ ![](./img/zh-cn_image_0000002661732997.gif)
 
 #### 页面转场样式
 
@@ -220,7 +221,7 @@ export default {
 
 1. 配置自定义转场时，建议配置页面背景色为不透明颜色，否则在转场过程中可能会出现衔接不自然的现象。
 2. transition-enter和transition-exit可单独配置，没有配置时使用系统默认的参数。
-3. transition-enter/transition-exit说明如下： a. push场景下：进入页面栈的Page2.js应用transition-enter描述的动画配置；进入页面栈第二位置的Page1.js应用transition-exit描述的动画配置。 ![](./img/zh-cn_image_0000002656470241.png) b. back场景下：退出页面栈的Page2.js应用transition-enter描述的动画配置，并进行倒播；从页面栈第二位置进入栈顶位置的Page1.js应用transition-exit描述的动画配置，并进行倒播。 ![](./img/zh-cn_image_0000002656350289.png)
+3. transition-enter/transition-exit说明如下： a. push场景下：进入页面栈的Page2.js应用transition-enter描述的动画配置；进入页面栈第二位置的Page1.js应用transition-exit描述的动画配置。 ![](./img/zh-cn_image_0000002631253878.png) b. back场景下：退出页面栈的Page2.js应用transition-enter描述的动画配置，并进行倒播；从页面栈第二位置进入栈顶位置的Page1.js应用transition-exit描述的动画配置，并进行倒播。 ![](./img/zh-cn_image_0000002661613059.png)
 
 #### [h2]示例
 
@@ -357,4 +358,4 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002626230876.gif)
+ ![](./img/zh-cn_image_0000002631413770.gif)

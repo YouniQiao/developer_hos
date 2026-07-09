@@ -2,7 +2,8 @@
 title: "Progress"
 upstream_id: "harmonyos-references/ts-basic-components-progress"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:27.600832"
+content_hash: "d94d3d1fe57f"
+synced_at: "2026-07-09T00:58:01.954678"
 ---
 
 # Progress
@@ -260,7 +261,7 @@ privacySensitive(isPrivacySensitiveMode: Optional<boolean>)
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | strokeWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 设置进度条宽度（不支持百分比设置）。 默认值：4.0vp 超出取值范围按默认值处理。 |
-| scaleCount | number | 否 | 是 | 设置环形进度条总刻度数。 默认值：120vp 取值范围：[2, min(width, height)/scaleWidth/2/π]，超出取值范围时，样式显示为环形无刻度进度条。默认情况下宽高最小为77vp。 |
+| scaleCount | number | 否 | 是 | 设置环形进度条总刻度数。 默认值：120 取值范围：[2, min(width, height)*π/scaleWidth]，超出取值范围时，样式显示为环形无刻度进度条。当总刻度数为120、刻度粗细为2vp时，设置组件宽度或高度小于77vp会显示为环形无刻度进度条。 |
 | scaleWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 设置环形进度条刻度粗细（不支持百分比设置）。刻度粗细大于进度条宽度时，为系统默认粗细。 默认值：2.0vp |
 
 #### CapsuleStyleOptions10+
@@ -335,7 +336,7 @@ privacySensitive(isPrivacySensitiveMode: Optional<boolean>)
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | strokeWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 设置进度条宽度（不支持百分比设置）。 默认值：4.0vp |
-| scaleCount | number | 否 | 是 | 设置环形进度条总刻度数。 默认值：120vp 取值范围：[2, min(width, height)/scaleWidth/2/π]，超出取值范围时，样式显示为环形无刻度进度条。默认情况下宽高最小为77vp。 |
+| scaleCount | number | 否 | 是 | 设置环形进度条总刻度数。 默认值：120 取值范围：[2, min(width, height)*π/scaleWidth]，超出取值范围时，样式显示为环形无刻度进度条。当总刻度数为120、刻度粗细为2vp时，设置组件宽度或高度小于77vp会显示为环形无刻度进度条。 |
 | scaleWidth | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 设置环形进度条刻度粗细（不支持百分比设置）。刻度粗细大于进度条宽度时，为系统默认粗细。 默认值：2.0vp |
 
 #### EclipseStyleOptions10+
@@ -431,7 +432,7 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469971.png)
+ ![](./img/zh-cn_image_0000002631253604.png)
 
 #### [h2]示例2（设置环形进度条属性）
 
@@ -460,7 +461,7 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350019.png)
+ ![](./img/zh-cn_image_0000002661612785.png)
 
 #### [h2]示例3（设置环形进度条动画）
 
@@ -486,7 +487,7 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230606.gif)
+ ![](./img/zh-cn_image_0000002631413496.gif)
 
 #### [h2]示例4（设置胶囊形进度条属性）
 
@@ -515,7 +516,7 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070696.png)
+ ![](./img/zh-cn_image_0000002661732725.png)
 
 #### [h2]示例5（设置进度平滑动效）
 
@@ -556,7 +557,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469973.gif)
+ ![](./img/zh-cn_image_0000002631253606.gif)
 
 #### [h2]示例6（设置定制内容区）
 
@@ -636,7 +637,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350021.gif)
+ ![](./img/zh-cn_image_0000002661612787.gif)
 
 #### [h2]示例7（设置隐私隐藏）
 
@@ -672,7 +673,7 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230608.gif)
+ ![](./img/zh-cn_image_0000002631413498.gif)
 
 #### [h2]示例8（设置Capsule进度条圆角半径）
 
@@ -708,7 +709,7 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070698.png)
+ ![](./img/zh-cn_image_0000002661732727.png)
 
 #### [h2]示例9（设置线性进度条和胶囊进度条属性）
 
@@ -739,4 +740,4 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469975.png)
+ ![](./img/zh-cn_image_0000002631253608.png)

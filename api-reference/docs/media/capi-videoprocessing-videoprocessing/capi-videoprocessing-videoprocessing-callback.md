@@ -2,7 +2,8 @@
 title: "VideoProcessing_Callback"
 upstream_id: "harmonyos-references/capi-videoprocessing-videoprocessing-callback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:42.430943"
+content_hash: "f770baac1dd3"
+synced_at: "2026-07-09T01:00:44.831134"
 ---
 
 # VideoProcessing_Callback

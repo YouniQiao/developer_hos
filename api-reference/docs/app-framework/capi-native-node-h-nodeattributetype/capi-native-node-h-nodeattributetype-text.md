@@ -2,7 +2,8 @@
 title: "ArkUI_NodeAttributeType（文本显示类组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-text"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:39.101503"
+content_hash: "374dca118dd2"
+synced_at: "2026-07-09T00:58:36.071683"
 ---
 
 # ArkUI_NodeAttributeType（文本显示类组件相关属性）
@@ -840,7 +841,7 @@ NODE_TEXT_LINEAR_GRADIENT = 1033
 ```
 NODE_TEXT_RADIAL_GRADIENT = 1034
 ```
- 设置文本径向渐变渐变效果，支持属性设置，属性重置和属性获取接口。
+ 设置文本径向渐变效果，支持属性设置，属性重置和属性获取接口。
 
 作为属性设置方法参数、属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 
@@ -1484,14 +1485,14 @@ NODE_IMAGE_SPAN_ALT = 3002
 
 | 参数项 | 描述 |
 | --- | --- |
-| .string | 表示image组件占位图地址(不支持gif类型图源)。 |
+| .string | 表示imageSpan组件占位图地址(不支持gif类型图源)。 |
 | .object | 表示 PixelMap 图片数据，参数类型为[ArkUI_DrawableDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawabledescriptor)； .object参数和.string参数二选一，不可同时设置。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| .string | 表示image组件占位图地址。 |
+| .string | 表示imageSpan组件占位图地址。 |
 | .object | 表示 PixelMap 图片数据，参数类型为[ArkUI_DrawableDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-drawabledescriptor)。 |
 
 #### NODE_IMAGE_SPAN_BASELINE_OFFSET

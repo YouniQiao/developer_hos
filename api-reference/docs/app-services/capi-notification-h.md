@@ -2,7 +2,8 @@
 title: "notification.h"
 upstream_id: "harmonyos-references/capi-notification-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:38.488689"
+content_hash: "6e7429e3f933"
+synced_at: "2026-07-09T01:01:29.437256"
 ---
 
 # notification.h

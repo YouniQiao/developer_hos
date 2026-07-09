@@ -2,7 +2,8 @@
 title: "faceComparator（人脸比对）"
 upstream_id: "harmonyos-references/core-vision-facecomparator-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:56.705191"
+content_hash: "90f9b7d4f7f6"
+synced_at: "2026-07-09T01:01:41.521889"
 ---
 
 # faceComparator（人脸比对）

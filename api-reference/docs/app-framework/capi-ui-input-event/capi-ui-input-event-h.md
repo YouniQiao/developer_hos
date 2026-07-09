@@ -2,7 +2,8 @@
 title: "ui_input_event.h"
 upstream_id: "harmonyos-references/capi-ui-input-event-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:41.912644"
+content_hash: "eb25fe123381"
+synced_at: "2026-07-09T00:58:37.585330"
 ---
 
 # ui_input_event.h

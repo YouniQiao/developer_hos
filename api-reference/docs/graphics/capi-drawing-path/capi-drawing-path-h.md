@@ -2,7 +2,8 @@
 title: "drawing_path.h"
 upstream_id: "harmonyos-references/capi-drawing-path-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:01.500534"
+content_hash: "f6784bd2a685"
+synced_at: "2026-07-09T01:00:57.485185"
 ---
 
 # drawing_path.h

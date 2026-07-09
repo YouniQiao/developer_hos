@@ -2,7 +2,8 @@
 title: "FileShare_PolicyErrorResult"
 upstream_id: "harmonyos-references/capi-fileshare-fileshare-policyerrorresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:15.685975"
+content_hash: "7a5b643287ed"
+synced_at: "2026-07-09T00:59:01.188427"
 ---
 
 # FileShare_PolicyErrorResult

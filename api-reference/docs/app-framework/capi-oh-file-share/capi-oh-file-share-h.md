@@ -2,7 +2,8 @@
 title: "oh_file_share.h"
 upstream_id: "harmonyos-references/capi-oh-file-share-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:15.317475"
+content_hash: "0f4844464a76"
+synced_at: "2026-07-09T00:59:01.348434"
 ---
 
 # oh_file_share.h

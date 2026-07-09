@@ -2,7 +2,8 @@
 title: "NativeDisplayManager_DisplaysInfo"
 upstream_id: "harmonyos-references/capi-nativedisplaymanager-displaysinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:57.337356"
+content_hash: "8821c178140e"
+synced_at: "2026-07-09T00:58:46.365141"
 ---
 
 # NativeDisplayManager_DisplaysInfo
@@ -27,5 +28,5 @@ typedef struct {...} NativeDisplayManager_DisplaysInfo
 
 | 名称 | 描述 |
 | --- | --- |
-| uint32_t displaysLength | 多显示设备Display对象的长度。 |
+| uint32_t displaysLength | 多显示设备Display对象的数组长度。 |
 | [NativeDisplayManager_DisplayInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-nativedisplaymanager-displayinfo)* displaysInfo | 多显示设备Display对象的属性。 |

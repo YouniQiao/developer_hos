@@ -2,7 +2,8 @@
 title: "Rcp_HeaderValue"
 upstream_id: "harmonyos-references/_rcp___header_value"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:00.572087"
+content_hash: "8a2dcbff31c7"
+synced_at: "2026-07-09T00:59:34.538723"
 ---
 
 # Rcp_HeaderValue

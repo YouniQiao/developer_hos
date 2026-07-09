@@ -1,9 +1,12 @@
 ---
+
 title: "关闭合单支付订单"
 upstream_id: "harmonyos-references/payment-partner-combined-orders-close"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:45.169002"
+synced_at: "2026-07-09T01:01:33.943017"
+content_hash: "67eab1b3fa75"
 ---
+
 
 # 关闭合单支付订单
 

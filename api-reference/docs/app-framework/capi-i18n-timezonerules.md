@@ -2,7 +2,8 @@
 title: "TimeZoneRules"
 upstream_id: "harmonyos-references/capi-i18n-timezonerules"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:24.618430"
+content_hash: "b154330b2bcf"
+synced_at: "2026-07-09T00:59:08.699713"
 ---
 
 # TimeZoneRules
@@ -13,7 +14,7 @@ typedef struct TimeZoneRules {...} TimeZoneRules
 
 #### 概述
 
-完整的时区规则。
+完整的时区规则，包括起始时区规则、起始时间戳数组定义的时区规则和每年生效的时区规则，能够全面描述时区的历史和未来规则。
 
 起始版本： 22
 

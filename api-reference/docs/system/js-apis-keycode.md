@@ -2,7 +2,8 @@
 title: "@ohos.multimodalInput.keyCode (键值)"
 upstream_id: "harmonyos-references/js-apis-keycode"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:17.839806"
+content_hash: "59af1217d68b"
+synced_at: "2026-07-09T00:59:49.384913"
 ---
 
 # @ohos.multimodalInput.keyCode (键值)

@@ -2,7 +2,8 @@
 title: "text"
 upstream_id: "harmonyos-references/js-components-svg-text"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:12.026979"
+content_hash: "8d792f6e33c4"
+synced_at: "2026-07-09T00:58:24.863847"
 ---
 
 # text
@@ -74,7 +75,7 @@ synced_at: "2026-06-24T20:49:12.026979"
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002656470309.png)
+ ![](./img/zh-cn_image_0000002631253946.png)
 
 属性动画示例
 
@@ -102,7 +103,7 @@ synced_at: "2026-06-24T20:49:12.026979"
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002656350357.gif)
+ ![](./img/zh-cn_image_0000002661613127.gif)
 
 ```
 <!-- xxx.hml -->
@@ -116,7 +117,7 @@ synced_at: "2026-06-24T20:49:12.026979"
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002626230944.gif)
+ ![](./img/zh-cn_image_0000002631413838.gif)
 
 ```
 <!-- xxx.hml -->
@@ -134,4 +135,4 @@ synced_at: "2026-06-24T20:49:12.026979"
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002626071034.gif)
+ ![](./img/zh-cn_image_0000002661733069.gif)

@@ -2,7 +2,8 @@
 title: "preview_output.h"
 upstream_id: "harmonyos-references/capi-preview-output-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:15.466364"
+content_hash: "bb94a7efb3ed"
+synced_at: "2026-07-09T01:00:25.275370"
 ---
 
 # preview_output.h

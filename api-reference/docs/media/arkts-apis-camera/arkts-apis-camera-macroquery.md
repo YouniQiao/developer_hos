@@ -2,7 +2,8 @@
 title: "Interface (MacroQuery)"
 upstream_id: "harmonyos-references/arkts-apis-camera-macroquery"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:11.773242"
+content_hash: "a8cedfcaccb7"
+synced_at: "2026-07-09T01:00:21.975580"
 ---
 
 # Interface (MacroQuery)

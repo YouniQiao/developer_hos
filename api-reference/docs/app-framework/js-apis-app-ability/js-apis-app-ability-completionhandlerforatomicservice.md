@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.CompletionHandlerForAtomicService (打开元服务结果的操作类)"
 upstream_id: "harmonyos-references/js-apis-app-ability-completionhandlerforatomicservice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:46.557361"
+content_hash: "6472ae4ea236"
+synced_at: "2026-07-09T00:57:04.057684"
 ---
 
 # @ohos.app.ability.CompletionHandlerForAtomicService (打开元服务结果的操作类)

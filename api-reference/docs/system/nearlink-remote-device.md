@@ -2,7 +2,8 @@
 title: "remoteDevice（对端设备的连接能力）"
 upstream_id: "harmonyos-references/nearlink-remote-device"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:50.177011"
+content_hash: "7182c306143c"
+synced_at: "2026-07-09T00:59:26.761891"
 ---
 
 # remoteDevice（对端设备的连接能力）

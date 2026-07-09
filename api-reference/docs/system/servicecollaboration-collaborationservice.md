@@ -2,7 +2,8 @@
 title: "CollaborationService (跨设备互通组件)"
 upstream_id: "harmonyos-references/servicecollaboration-collaborationservice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:03.264985"
+content_hash: "0af5565b8bd5"
+synced_at: "2026-07-09T00:59:36.843157"
 ---
 
 # CollaborationService (跨设备互通组件)

@@ -2,7 +2,8 @@
 title: "AudioEncoder"
 upstream_id: "harmonyos-references/capi-audioencoder"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:05.232515"
+content_hash: "77250a128fee"
+synced_at: "2026-07-09T01:00:16.520979"
 ---
 
 # AudioEncoder

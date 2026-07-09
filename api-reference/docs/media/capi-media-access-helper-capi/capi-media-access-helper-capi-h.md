@@ -2,7 +2,8 @@
 title: "media_access_helper_capi.h"
 upstream_id: "harmonyos-references/capi-media-access-helper-capi-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:46.274281"
+content_hash: "dc9c46da1090"
+synced_at: "2026-07-09T01:00:47.831538"
 ---
 
 # media_access_helper_capi.h

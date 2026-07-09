@@ -2,7 +2,8 @@
 title: "Print_PrintDocCallback"
 upstream_id: "harmonyos-references/capi-oh-print-print-printdoccallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:12.729579"
+content_hash: "985688ce649e"
+synced_at: "2026-07-09T00:59:44.346201"
 ---
 
 # Print_PrintDocCallback

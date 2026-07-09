@@ -2,7 +2,8 @@
 title: "Print_DefaultValue"
 upstream_id: "harmonyos-references/capi-oh-print-print-defaultvalue"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:12.267370"
+content_hash: "b7293669faf3"
+synced_at: "2026-07-09T00:59:43.997890"
 ---
 
 # Print_DefaultValue

@@ -1,9 +1,12 @@
 ---
+
 title: "通行密钥"
 upstream_id: "harmonyos-references/passkey"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:39.185920"
+synced_at: "2026-07-09T00:59:18.323645"
+content_hash: "9ec0824b74aa"
 ---
+
 
 # 通行密钥
 

@@ -2,7 +2,8 @@
 title: "xeg_gles_extension.h"
 upstream_id: "harmonyos-references/xengine-kit-xeg-gles-extension-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:15.261349"
+content_hash: "4147c2cb130e"
+synced_at: "2026-07-09T01:01:09.230755"
 ---
 
 # xeg_gles_extension.h

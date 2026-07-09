@@ -2,7 +2,8 @@
 title: "获取用户风险等级"
 upstream_id: "harmonyos-references/account-api-getuserrisklevel"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:19.799441"
+content_hash: "af7d6c5303b0"
+synced_at: "2026-07-09T01:01:13.110774"
 ---
 
 # 获取用户风险等级

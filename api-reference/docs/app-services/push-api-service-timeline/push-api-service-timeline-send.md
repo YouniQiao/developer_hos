@@ -2,7 +2,8 @@
 title: "服务动态推送接口"
 upstream_id: "harmonyos-references/push-api-service-timeline-send"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:51.454996"
+content_hash: "4ea1943301e7"
+synced_at: "2026-07-09T01:01:38.361988"
 ---
 
 # 服务动态推送接口
@@ -55,6 +56,7 @@ synced_at: "2026-06-24T20:53:51.454996"
 POST "https://push-api.cloud.huawei.com/v1/[projectId]/service_timeline/send"
  
 // Request Header
+Content-Type: application/json
 Authorization: Bearer eyJr*****OiIx---****.eyJh*****iJodHR--***.QRod*****4Gp---****
 
 // Request Body

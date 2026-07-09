@@ -2,7 +2,8 @@
 title: "FG_DispatchDescription_GLES"
 upstream_id: "harmonyos-references/_f_g___dispatch_description___g_l_e_s"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:13.258598"
+content_hash: "f33bf4615cbe"
+synced_at: "2026-07-09T01:01:07.490344"
 ---
 
 # FG_DispatchDescription_GLES

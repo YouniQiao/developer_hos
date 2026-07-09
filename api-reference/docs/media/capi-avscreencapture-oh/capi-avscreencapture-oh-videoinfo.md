@@ -2,7 +2,8 @@
 title: "OH_VideoInfo"
 upstream_id: "harmonyos-references/capi-avscreencapture-oh-videoinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:40.273175"
+content_hash: "631081a87a8c"
+synced_at: "2026-07-09T01:00:43.491751"
 ---
 
 # OH_VideoInfo

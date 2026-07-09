@@ -2,7 +2,8 @@
 title: "输入法框架错误码"
 upstream_id: "harmonyos-references/errorcode-inputmethod-framework"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:20.557817"
+content_hash: "f6ac7c33cdff"
+synced_at: "2026-07-09T00:59:05.730224"
 ---
 
 # 输入法框架错误码

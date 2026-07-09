@@ -2,7 +2,8 @@
 title: "FAST_BiquadCoefficients"
 upstream_id: "harmonyos-references/fast-kit--fast-biquadcoefficients"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:14.907023"
+content_hash: "195657e2acf5"
+synced_at: "2026-07-09T00:59:46.102151"
 ---
 
 # FAST_BiquadCoefficients

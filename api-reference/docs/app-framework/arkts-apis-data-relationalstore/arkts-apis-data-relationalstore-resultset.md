@@ -2,7 +2,8 @@
 title: "Interface (ResultSet)"
 upstream_id: "harmonyos-references/arkts-apis-data-relationalstore-resultset"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:03.175463"
+content_hash: "a0eceb539cce"
+synced_at: "2026-07-09T00:57:16.594307"
 ---
 
 # Interface (ResultSet)

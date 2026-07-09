@@ -2,7 +2,8 @@
 title: "hicollie.h"
 upstream_id: "harmonyos-references/capi-hicollie-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:47.679629"
+content_hash: "c75cba0d9255"
+synced_at: "2026-07-09T01:00:03.988871"
 ---
 
 # hicollie.h

@@ -2,7 +2,8 @@
 title: "ffrt_dependence_t"
 upstream_id: "harmonyos-references/capi-ffrt-ffrt-dependence-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:16.866175"
+content_hash: "20962695da7d"
+synced_at: "2026-07-09T00:59:47.465305"
 ---
 
 # ffrt_dependence_t

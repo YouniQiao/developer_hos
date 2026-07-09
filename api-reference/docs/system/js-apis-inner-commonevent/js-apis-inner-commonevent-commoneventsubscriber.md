@@ -2,7 +2,8 @@
 title: "commonEventSubscriber"
 upstream_id: "harmonyos-references/js-apis-inner-commonevent-commoneventsubscriber"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:08.600180"
+content_hash: "ceb8811e642f"
+synced_at: "2026-07-09T00:59:41.591098"
 ---
 
 # commonEventSubscriber

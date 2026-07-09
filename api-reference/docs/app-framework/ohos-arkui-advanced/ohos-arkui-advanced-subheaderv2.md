@@ -2,7 +2,8 @@
 title: "SubHeaderV2"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-subheaderv2"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:55.887981"
+content_hash: "b9992857af2a"
+synced_at: "2026-07-09T00:58:17.146730"
 ---
 
 # SubHeaderV2
@@ -377,7 +378,7 @@ struct SubHeaderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350243.png)
+ ![](./img/zh-cn_image_0000002661613013.png)
 
 #### [h2]示例2（双行文本内容型子标题）
 
@@ -428,7 +429,7 @@ struct SubHeaderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230830.png)
+ ![](./img/zh-cn_image_0000002631413724.png)
 
 #### [h2]示例3（spinner型内容型子标题）
 
@@ -505,7 +506,7 @@ struct SubHeaderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070920.png)
+ ![](./img/zh-cn_image_0000002661732953.png)
 
 #### [h2]示例4（设置左侧symbol图标）
 
@@ -548,7 +549,7 @@ struct SubHeaderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470197.gif)
+ ![](./img/zh-cn_image_0000002631253832.gif)
 
 #### [h2]示例5（设置右侧symbol图标）
 
@@ -633,7 +634,7 @@ struct SubHeaderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350245.png)
+ ![](./img/zh-cn_image_0000002661613015.png)
 
 #### [h2]示例6（自定义标题内容）
 
@@ -690,7 +691,7 @@ struct SubHeaderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230832.png)
+ ![](./img/zh-cn_image_0000002631413726.png)
 
 #### [h2]示例7（自定义标题样式）
 
@@ -740,7 +741,7 @@ struct SubHeaderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230834.png)
+ ![](./img/zh-cn_image_0000002631413728.png)
 
 #### [h2]示例8（右侧按钮自定义播报）
 
@@ -839,7 +840,7 @@ struct SubHeaderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470199.png)
+ ![](./img/zh-cn_image_0000002631253834.png)
 
 #### [h2]示例9（右侧按钮设置默认获焦）
 
@@ -900,4 +901,4 @@ struct SubHeaderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350247.png)
+ ![](./img/zh-cn_image_0000002661613017.png)

@@ -2,7 +2,8 @@
 title: "OH_CM_UkeyInfo"
 upstream_id: "harmonyos-references/capi-certmanagertype-oh-cm-ukeyinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:41.977621"
+content_hash: "23d16cf87371"
+synced_at: "2026-07-09T00:59:19.898069"
 ---
 
 # OH_CM_UkeyInfo

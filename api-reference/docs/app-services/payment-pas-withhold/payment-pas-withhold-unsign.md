@@ -1,9 +1,12 @@
 ---
+
 title: "申请解约"
 upstream_id: "harmonyos-references/payment-pas-withhold-unsign"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:40.800272"
+synced_at: "2026-07-09T01:01:31.131186"
+content_hash: "224633760186"
 ---
+
 
 # 申请解约
 

@@ -2,7 +2,8 @@
 title: "native_audio_manager.h"
 upstream_id: "harmonyos-references/capi-native-audio-manager-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:55.019479"
+content_hash: "8bf08473c973"
+synced_at: "2026-07-09T01:00:09.473997"
 ---
 
 # native_audio_manager.h

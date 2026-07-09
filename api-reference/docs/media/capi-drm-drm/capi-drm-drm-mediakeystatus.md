@@ -2,7 +2,8 @@
 title: "DRM_MediaKeyStatus"
 upstream_id: "harmonyos-references/capi-drm-drm-mediakeystatus"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:21.077989"
+content_hash: "f7b931a4445f"
+synced_at: "2026-07-09T01:00:28.752327"
 ---
 
 # DRM_MediaKeyStatus

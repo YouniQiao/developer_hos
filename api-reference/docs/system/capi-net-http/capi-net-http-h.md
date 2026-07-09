@@ -2,7 +2,8 @@
 title: "net_http.h"
 upstream_id: "harmonyos-references/capi-net-http-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:53.273035"
+content_hash: "6be0cbddd996"
+synced_at: "2026-07-09T00:59:28.918977"
 ---
 
 # net_http.h

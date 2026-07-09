@@ -2,7 +2,8 @@
 title: "@ohos.annotation (注解)"
 upstream_id: "harmonyos-references/js-apis-annotation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:09.037561"
+content_hash: "034d693323f7"
+synced_at: "2026-07-09T00:59:41.243201"
 ---
 
 # @ohos.annotation (注解)

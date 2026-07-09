@@ -2,7 +2,8 @@
 title: "AbilityBase"
 upstream_id: "harmonyos-references/capi-abilitybase"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:57.439819"
+content_hash: "85bbc2451570"
+synced_at: "2026-07-09T00:57:11.919059"
 ---
 
 # AbilityBase

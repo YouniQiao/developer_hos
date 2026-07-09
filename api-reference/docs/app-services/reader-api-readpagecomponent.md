@@ -2,7 +2,8 @@
 title: "ReadPageComponent（阅读页组件）"
 upstream_id: "harmonyos-references/reader-api-readpagecomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:51.789219"
+content_hash: "a46a4023e574"
+synced_at: "2026-07-09T01:01:38.635163"
 ---
 
 # ReadPageComponent（阅读页组件）

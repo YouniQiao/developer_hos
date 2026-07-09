@@ -2,7 +2,8 @@
 title: "Interface (MarkerClusterInfo)"
 upstream_id: "harmonyos-references/map-map-markerclusterinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:34.288004"
+content_hash: "98feeab88179"
+synced_at: "2026-07-09T01:01:26.032152"
 ---
 
 # Interface (MarkerClusterInfo)

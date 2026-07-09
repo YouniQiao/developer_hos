@@ -2,7 +2,8 @@
 title: "ScsiPeripheral_Device"
 upstream_id: "harmonyos-references/capi-scsiperipheralddk-scsiperipheral-device"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:34.972295"
+content_hash: "f557160c8c90"
+synced_at: "2026-07-09T00:59:56.749091"
 ---
 
 # ScsiPeripheral_Device

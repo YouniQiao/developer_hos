@@ -2,7 +2,8 @@
 title: "OH_ArkUI_BackgroundColorStyle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-arkui-backgroundcolorstyle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:55.896112"
+content_hash: "73025225518c"
+synced_at: "2026-07-09T00:58:45.459089"
 ---
 
 # OH_ArkUI_BackgroundColorStyle

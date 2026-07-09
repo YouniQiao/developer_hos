@@ -2,7 +2,8 @@
 title: "ArkUI_AnimatorOnFrameEvent"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-animatoronframeevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:45.738767"
+content_hash: "411be22cca81"
+synced_at: "2026-07-09T00:58:39.612690"
 ---
 
 # ArkUI_AnimatorOnFrameEvent

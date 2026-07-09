@@ -2,7 +2,8 @@
 title: "FIDO2_AuthenticatorTransportArray"
 upstream_id: "harmonyos-references/_f_i_d_o2___authenticator_transport_array"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:39.707485"
+content_hash: "731743707536"
+synced_at: "2026-07-09T00:59:18.540484"
 ---
 
 # FIDO2_AuthenticatorTransportArray

@@ -2,7 +2,8 @@
 title: "Class (Animation)"
 upstream_id: "harmonyos-references/map-map-animation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:33.110709"
+content_hash: "7087f3a39e38"
+synced_at: "2026-07-09T01:01:25.117445"
 ---
 
 # Class (Animation)

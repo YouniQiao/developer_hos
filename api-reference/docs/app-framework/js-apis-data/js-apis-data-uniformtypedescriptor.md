@@ -2,7 +2,8 @@
 title: "@ohos.data.uniformTypeDescriptor (标准化数据定义与描述)"
 upstream_id: "harmonyos-references/js-apis-data-uniformtypedescriptor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:04.544828"
+content_hash: "cd499f17d8d4"
+synced_at: "2026-07-09T00:57:17.712660"
 ---
 
 # @ohos.data.uniformTypeDescriptor (标准化数据定义与描述)

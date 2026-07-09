@@ -2,7 +2,8 @@
 title: "CalendarPicker"
 upstream_id: "harmonyos-references/ts-basic-components-calendarpicker"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:07.029297"
+content_hash: "c9310c9006e0"
+synced_at: "2026-07-09T00:57:53.272976"
 ---
 
 # CalendarPicker
@@ -267,7 +268,7 @@ struct CalendarPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070478.gif)
+ ![](./img/zh-cn_image_0000002661732505.gif)
 
 #### [h2]示例2（设置开始日期和结束日期）
 
@@ -299,7 +300,7 @@ struct CalendarPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469755.png)
+ ![](./img/zh-cn_image_0000002631253382.png)
 
 #### [h2]示例3（设置日历选择器在系统当前日期时，保持高亮显示和禁用日期区间）
 
@@ -332,4 +333,4 @@ struct CalendarPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349803.gif)
+ ![](./img/zh-cn_image_0000002661612565.gif)

@@ -2,7 +2,8 @@
 title: "avimage_generator_base.h"
 upstream_id: "harmonyos-references/capi-avimage-generator-base-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:36.178628"
+content_hash: "a1199016a6d3"
+synced_at: "2026-07-09T01:00:40.165982"
 ---
 
 # avimage_generator_base.h

@@ -1,9 +1,12 @@
 ---
+
 title: "模块描述"
 upstream_id: "harmonyos-references/arkts-apis-camera"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:09.948187"
+synced_at: "2026-07-09T01:00:20.948224"
+content_hash: "f0030a031eb0"
 ---
+
 
 # 模块描述
 

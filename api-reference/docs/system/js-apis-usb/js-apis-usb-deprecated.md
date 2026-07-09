@@ -2,7 +2,8 @@
 title: "@ohos.usb (USB管理)(已停止维护)"
 upstream_id: "harmonyos-references/js-apis-usb-deprecated"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:09.833435"
+content_hash: "ab6a2c1b3a25"
+synced_at: "2026-07-09T00:59:41.991199"
 ---
 
 # @ohos.usb (USB管理)(已停止维护)

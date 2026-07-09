@@ -2,7 +2,8 @@
 title: "form"
 upstream_id: "harmonyos-references/js-components-container-form"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:03.052862"
+content_hash: "09877c980214"
+synced_at: "2026-07-09T00:58:20.438290"
 ---
 
 # form
@@ -78,4 +79,4 @@ export default{
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070970.gif)
+ ![](./img/zh-cn_image_0000002661733003.gif)

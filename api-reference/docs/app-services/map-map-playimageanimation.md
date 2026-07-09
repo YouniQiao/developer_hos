@@ -2,7 +2,8 @@
 title: "Class (PlayImageAnimation)"
 upstream_id: "harmonyos-references/map-map-playimageanimation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:33.341969"
+content_hash: "8e3faca6181d"
+synced_at: "2026-07-09T01:01:25.416602"
 ---
 
 # Class (PlayImageAnimation)

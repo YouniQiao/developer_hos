@@ -2,7 +2,8 @@
 title: "OH_ArkUI_DecorationStyleOptions"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-arkui-decorationstyleoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:59.429204"
+content_hash: "504a6d2c56d8"
+synced_at: "2026-07-09T00:58:47.951281"
 ---
 
 # OH_ArkUI_DecorationStyleOptions

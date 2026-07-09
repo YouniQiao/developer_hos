@@ -2,7 +2,8 @@
 title: "TextPicker"
 upstream_id: "harmonyos-references/ts-basic-components-textpicker"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:07.324461"
+content_hash: "0ce531a41adf"
+synced_at: "2026-07-09T00:57:54.351860"
 ---
 
 # TextPicker
@@ -902,7 +903,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230392.png)
+ ![](./img/zh-cn_image_0000002631413278.png)
 
 #### [h2]示例2（设置文本样式）
 
@@ -939,7 +940,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070482.gif)
+ ![](./img/zh-cn_image_0000002661732509.gif)
 
 #### [h2]示例3（设置无分割线样式）
 
@@ -970,7 +971,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469759.gif)
+ ![](./img/zh-cn_image_0000002631253386.gif)
 
 #### [h2]示例4（设置分割线样式）
 
@@ -1006,7 +1007,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349807.gif)
+ ![](./img/zh-cn_image_0000002661612569.gif)
 
 #### [h2]示例5（设置渐隐效果）
 
@@ -1037,7 +1038,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230394.gif)
+ ![](./img/zh-cn_image_0000002631413280.gif)
 
 #### [h2]示例6（设置选择项高度）
 
@@ -1065,7 +1066,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070484.png)
+ ![](./img/zh-cn_image_0000002661732511.png)
 
 #### [h2]示例7（设置循环滚动）
 
@@ -1104,7 +1105,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469761.gif)
+ ![](./img/zh-cn_image_0000002631253388.gif)
 
 #### [h2]示例8（设置选中项索引值）
 
@@ -1131,7 +1132,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349809.png)
+ ![](./img/zh-cn_image_0000002661612571.png)
 
 #### [h2]示例9（设置关闭文本样式变化动效与对应文本样式）
 
@@ -1167,7 +1168,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230396.jpeg)
+ ![](./img/zh-cn_image_0000002631413282.jpeg)
 
 #### [h2]示例10（设置选中项背景样式）
 
@@ -1228,7 +1229,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070486.gif)
+ ![](./img/zh-cn_image_0000002661732513.gif)
 
 #### [h2]示例11（设置文本的最大字号、最小字号、超长文本截断方式）
 
@@ -1275,4 +1276,4 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469763.gif)
+ ![](./img/zh-cn_image_0000002631253392.gif)

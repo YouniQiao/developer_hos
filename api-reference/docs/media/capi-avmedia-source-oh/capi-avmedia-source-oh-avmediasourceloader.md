@@ -2,7 +2,8 @@
 title: "OH_AVMediaSourceLoader"
 upstream_id: "harmonyos-references/capi-avmedia-source-oh-avmediasourceloader"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:42.746581"
+content_hash: "4d9540bf94a4"
+synced_at: "2026-07-09T01:00:45.229396"
 ---
 
 # OH_AVMediaSourceLoader

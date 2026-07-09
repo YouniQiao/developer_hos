@@ -1,9 +1,12 @@
 ---
+
 title: "订单状态查询（消耗型/非消耗型/非续期订阅商品）"
 upstream_id: "harmonyos-references/iap-query-order-status"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:28.573149"
+synced_at: "2026-07-09T01:01:21.580807"
+content_hash: "fd12cfdd49a3"
 ---
+
 
 # 订单状态查询（消耗型/非消耗型/非续期订阅商品）
 

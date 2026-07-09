@@ -2,7 +2,8 @@
 title: "多态样式"
 upstream_id: "harmonyos-references/ts-universal-attributes-polymorphic-style"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:44.617029"
+content_hash: "0ddaac596621"
+synced_at: "2026-07-09T00:57:41.640304"
 ---
 
 # 多态样式
@@ -172,7 +173,7 @@ struct StyleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070310.gif)
+ ![](./img/zh-cn_image_0000002631413104.gif)
 
 #### [h2]示例2（设置Radio多态样式）
 
@@ -237,7 +238,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469587.gif)
+ ![](./img/zh-cn_image_0000002661732333.gif)
 
 #### [h2]示例3（设置Builder多态样式）
 
@@ -297,4 +298,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349635.gif)
+ ![](./img/zh-cn_image_0000002631253212.gif)

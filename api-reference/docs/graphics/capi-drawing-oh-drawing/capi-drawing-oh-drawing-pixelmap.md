@@ -2,7 +2,8 @@
 title: "OH_Drawing_PixelMap"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-pixelmap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:09.411329"
+content_hash: "9c61174fab33"
+synced_at: "2026-07-09T01:01:03.519962"
 ---
 
 # OH_Drawing_PixelMap

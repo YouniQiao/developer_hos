@@ -2,7 +2,8 @@
 title: "avrecorder.h"
 upstream_id: "harmonyos-references/capi-avrecorder-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:36.673238"
+content_hash: "f0087aa618f2"
+synced_at: "2026-07-09T01:00:40.793617"
 ---
 
 # avrecorder.h

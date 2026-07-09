@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.insightIntent (意图框架基础定义)"
 upstream_id: "harmonyos-references/js-apis-app-ability-insightintent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:47.077243"
+content_hash: "48e192ac68f9"
+synced_at: "2026-07-09T00:57:04.462518"
 ---
 
 # @ohos.app.ability.insightIntent (意图框架基础定义)

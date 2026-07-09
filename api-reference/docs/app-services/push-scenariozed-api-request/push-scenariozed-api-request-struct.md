@@ -1,9 +1,12 @@
 ---
+
 title: "请求体结构说明"
 upstream_id: "harmonyos-references/push-scenariozed-api-request-struct"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:49.916386"
+synced_at: "2026-07-09T01:01:37.910596"
+content_hash: "e73597cdd648"
 ---
+
 
 # 请求体结构说明
 

@@ -2,7 +2,8 @@
 title: "MapComponent（地图组件）"
 upstream_id: "harmonyos-references/map-mapcomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:36.569128"
+content_hash: "33a641e57864"
+synced_at: "2026-07-09T01:01:27.615279"
 ---
 
 # MapComponent（地图组件）
@@ -125,7 +126,7 @@ struct MarkerDemo {
 
 build(): void
 
-struct的默认构造函数，无法直接调用此方法。
+MapComponent的默认构造函数，无法直接调用此方法。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

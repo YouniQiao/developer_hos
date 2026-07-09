@@ -2,7 +2,8 @@
 title: "Rcp_InfoToCollect"
 upstream_id: "harmonyos-references/_rcp___info_to_collect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:00.691739"
+content_hash: "c2d19e1270e1"
+synced_at: "2026-07-09T00:59:34.558026"
 ---
 
 # Rcp_InfoToCollect

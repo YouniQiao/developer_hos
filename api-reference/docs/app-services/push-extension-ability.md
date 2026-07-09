@@ -2,7 +2,8 @@
 title: "PushExtensionAbility（推送扩展Ability）"
 upstream_id: "harmonyos-references/push-extension-ability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:49.383197"
+content_hash: "02392632c88f"
+synced_at: "2026-07-09T01:01:37.569121"
 ---
 
 # PushExtensionAbility（推送扩展Ability）
@@ -73,11 +74,11 @@ const LOG_TAG = 'PushExtAbility';
 
 // 此处以PushExtAbility继承PushExtensionAbility为例
 export default class PushExtAbility extends PushExtensionAbility {
-  async onReceiveMessage(payload: pushCommon.PushPayload): void {
+  onReceiveMessage(payload: pushCommon.PushPayload): void {
     hilog.info(LOG_DOMAIN, LOG_TAG,'onReceiveMessage');
 
     try {
-      await this.updateData(payload.data);
+      this.updateData(payload.data);
     } catch (err) {
       const e: BusinessError = err as BusinessError;
       hilog.error(LOG_DOMAIN, LOG_TAG, 'updateData failed, code=%{public}d, message=%{public}s', e.code, e.message);
@@ -89,7 +90,7 @@ export default class PushExtAbility extends PushExtensionAbility {
    * 开发者可根据透传数据自定义实现数据更新逻辑
    * @param data 透传数据
    */
-  private async updateData(data: string): void {
+  private updateData(data: string): void {
     // 开发者自行实现数据更新逻辑
   }
 }

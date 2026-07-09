@@ -2,7 +2,8 @@
 title: "选择器（Picker）公共接口"
 upstream_id: "harmonyos-references/ts-picker-common"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:10.552331"
+content_hash: "112c92ed585d"
+synced_at: "2026-07-09T00:57:55.009385"
 ---
 
 # 选择器（Picker）公共接口

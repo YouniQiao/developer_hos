@@ -2,7 +2,8 @@
 title: "CheckboxGroup"
 upstream_id: "harmonyos-references/ts-basic-components-checkboxgroup"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:05.767666"
+content_hash: "ad84080bb4e3"
+synced_at: "2026-07-09T00:57:52.866037"
 ---
 
 # CheckboxGroup
@@ -442,7 +443,7 @@ struct CheckboxExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070472.gif)
+ ![](./img/zh-cn_image_0000002661732499.gif)
 
 #### [h2]示例2（自定义勾选样式）
 
@@ -520,7 +521,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469749.gif)
+ ![](./img/zh-cn_image_0000002631253376.gif)
 
 #### [h2]示例3（自定义多选框样式）
 
@@ -639,7 +640,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349797.gif)
+ ![](./img/zh-cn_image_0000002661612559.gif)
 
 #### [h2]示例4（设置全选）
 
@@ -795,4 +796,4 @@ struct MyComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230384.gif)
+ ![](./img/zh-cn_image_0000002631413268.gif)

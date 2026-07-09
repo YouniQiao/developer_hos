@@ -2,7 +2,8 @@
 title: "swiper"
 upstream_id: "harmonyos-references/js-service-widget-container-swiper"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:26.748804"
+content_hash: "e9e406556cec"
+synced_at: "2026-07-09T00:58:30.783243"
 ---
 
 # swiper
@@ -90,4 +91,4 @@ synced_at: "2026-06-24T20:49:26.748804"
 ```
  4×4卡片
 
-![](./img/zh-cn_image_0000002656350539.png)
+![](./img/zh-cn_image_0000002661613311.png)

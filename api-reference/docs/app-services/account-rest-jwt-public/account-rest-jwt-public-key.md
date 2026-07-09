@@ -2,7 +2,8 @@
 title: "获取验证ID Token的JWT公钥信息"
 upstream_id: "harmonyos-references/account-rest-jwt-public-key"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:20.764915"
+content_hash: "7bea9e58899c"
+synced_at: "2026-07-09T01:01:13.599627"
 ---
 
 # 获取验证ID Token的JWT公钥信息

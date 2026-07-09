@@ -2,7 +2,8 @@
 title: "PermissionRequestResult"
 upstream_id: "harmonyos-references/js-apis-permissionrequestresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:55.529245"
+content_hash: "2670f72aadb9"
+synced_at: "2026-07-09T00:57:10.750426"
 ---
 
 # PermissionRequestResult

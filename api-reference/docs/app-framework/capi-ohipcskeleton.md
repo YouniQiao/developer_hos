@@ -2,7 +2,8 @@
 title: "OHIPCSkeleton"
 upstream_id: "harmonyos-references/capi-ohipcskeleton"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:20.899807"
+content_hash: "289b208b203b"
+synced_at: "2026-07-09T00:59:05.722178"
 ---
 
 # OHIPCSkeleton

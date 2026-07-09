@@ -2,7 +2,8 @@
 title: "@ohos.hiviewdfx.hiAppEvent (应用事件打点)"
 upstream_id: "harmonyos-references/js-apis-hiviewdfx-hiappevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:46.093943"
+content_hash: "f7ea22e5a7d5"
+synced_at: "2026-07-09T01:00:03.194609"
 ---
 
 # @ohos.hiviewdfx.hiAppEvent (应用事件打点)

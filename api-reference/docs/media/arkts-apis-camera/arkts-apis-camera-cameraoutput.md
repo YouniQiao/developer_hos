@@ -2,7 +2,8 @@
 title: "Interface (CameraOutput)"
 upstream_id: "harmonyos-references/arkts-apis-camera-cameraoutput"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:10.814345"
+content_hash: "e0627ac4b9e3"
+synced_at: "2026-07-09T01:00:21.309359"
 ---
 
 # Interface (CameraOutput)

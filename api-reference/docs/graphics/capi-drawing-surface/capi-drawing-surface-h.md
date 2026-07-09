@@ -2,7 +2,8 @@
 title: "drawing_surface.h"
 upstream_id: "harmonyos-references/capi-drawing-surface-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:02.908403"
+content_hash: "14534c0ac6d9"
+synced_at: "2026-07-09T01:00:58.122793"
 ---
 
 # drawing_surface.h

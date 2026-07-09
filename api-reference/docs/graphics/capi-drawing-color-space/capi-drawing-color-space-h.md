@@ -2,7 +2,8 @@
 title: "drawing_color_space.h"
 upstream_id: "harmonyos-references/capi-drawing-color-space-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:59.830950"
+content_hash: "7388249d8b3e"
+synced_at: "2026-07-09T01:00:54.963374"
 ---
 
 # drawing_color_space.h

@@ -2,7 +2,8 @@
 title: "Print_PrintJob"
 upstream_id: "harmonyos-references/capi-oh-print-print-printjob"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:12.488238"
+content_hash: "3a10bc933e65"
+synced_at: "2026-07-09T00:59:44.083591"
 ---
 
 # Print_PrintJob

@@ -2,7 +2,8 @@
 title: "WantAgentInfo"
 upstream_id: "harmonyos-references/js-apis-inner-wantagent-wantagentinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:55.523515"
+content_hash: "8c3e54de2d51"
+synced_at: "2026-07-09T00:57:10.778051"
 ---
 
 # WantAgentInfo

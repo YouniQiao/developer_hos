@@ -2,7 +2,8 @@
 title: "TextReader（朗读控件）"
 upstream_id: "harmonyos-references/speech-textreader-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:00.441952"
+content_hash: "9696a62723a6"
+synced_at: "2026-07-09T01:01:46.027726"
 ---
 
 # TextReader（朗读控件）

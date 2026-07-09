@@ -2,7 +2,8 @@
 title: "functionalInputComponentManager(场景化融合Input组件管理)"
 upstream_id: "harmonyos-references/scenario-fusion-functionalinputcomponentmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:52.459547"
+content_hash: "0ccf5a6ca995"
+synced_at: "2026-07-09T01:01:39.105767"
 ---
 
 # functionalInputComponentManager(场景化融合Input组件管理)

@@ -2,7 +2,8 @@
 title: "TrustedAppService（可信应用服务）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-taas"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:35.787521"
+content_hash: "8957b0f9acf2"
+synced_at: "2026-07-09T00:59:15.853694"
 ---
 
 # TrustedAppService（可信应用服务）

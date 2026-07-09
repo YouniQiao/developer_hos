@@ -2,7 +2,8 @@
 title: "@ohos.InputMethodSubtype (输入法子类型)"
 upstream_id: "harmonyos-references/js-apis-inputmethod-subtype"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:18.545143"
+content_hash: "78cd5086417f"
+synced_at: "2026-07-09T00:59:03.748296"
 ---
 
 # @ohos.InputMethodSubtype (输入法子类型)

@@ -2,7 +2,8 @@
 title: "stepper-item"
 upstream_id: "harmonyos-references/js-components-container-stepper-item"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:04.602879"
+content_hash: "0593e085b10c"
+synced_at: "2026-07-09T00:58:21.192158"
 ---
 
 # stepper-item
@@ -31,7 +32,7 @@ synced_at: "2026-06-24T20:49:04.602879"
 
 | 名称 | 类型 | 默认值 | 描述 |
 | --- | --- | --- | --- |
-| prevLabel | string | - | 步骤导航器底部回退文本按钮的描述文本。 |
+| prevLabel | string | - | 步骤导航器底部返回文本按钮的描述文本。 |
 | nextLabel | string | - | 步骤导航器底部下一步文本按钮的描述文本。 |
 | status | string | normal | 步骤导航器当前步骤的初始状态，可选值为： - normal：正常状态，右侧文本按钮正常显示，可点击进入下一个步骤。 - disabled：不可用状态，右侧文本按钮灰度显示，不可点击进入下一个步骤。 - waiting：等待状态，右侧文本按钮不显示，使用等待进度条，不可点击进入下一个步骤。 |
 

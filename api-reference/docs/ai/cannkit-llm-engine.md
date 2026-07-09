@@ -2,7 +2,8 @@
 title: "llm_engine.h"
 upstream_id: "harmonyos-references/cannkit-llm-engine"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:55.476067"
+content_hash: "2e9ef2e2e73b"
+synced_at: "2026-07-09T01:01:40.850306"
 ---
 
 # llm_engine.h

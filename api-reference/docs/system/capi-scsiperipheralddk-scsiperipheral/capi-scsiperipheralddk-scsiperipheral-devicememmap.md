@@ -2,7 +2,8 @@
 title: "ScsiPeripheral_DeviceMemMap"
 upstream_id: "harmonyos-references/capi-scsiperipheralddk-scsiperipheral-devicememmap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:33.528998"
+content_hash: "0f3c9e5622a6"
+synced_at: "2026-07-09T00:59:56.069102"
 ---
 
 # ScsiPeripheral_DeviceMemMap

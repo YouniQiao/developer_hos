@@ -2,12 +2,13 @@
 title: "Class (VerifyPinHandler)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-verifypinhandler"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:04.636442"
+content_hash: "c0e35975bd33"
+synced_at: "2026-07-09T00:58:52.116061"
 ---
 
 # Class (VerifyPinHandler)
 
-Web组件返回的PIN码认证用户处理功能对象。示例代码参考[onVerifyPin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onverifypin22)。
+VerifyPinHandler是Web组件中处理PIN码验证请求的类。当需要用户PIN码认证时，该处理器通过onVerifyPin事件回调提供给应用，允许应用响应PIN码验证结果。示例代码参考[onVerifyPin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onverifypin22)。
 
 ![](./img/note_3.0-zh-cn.png)
 

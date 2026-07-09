@@ -2,7 +2,8 @@
 title: "AtomicServiceSearch"
 upstream_id: "harmonyos-references/ohos-atomicservice-atomicservicesearch"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:48.251253"
+content_hash: "26727405e85f"
+synced_at: "2026-07-09T00:58:12.810042"
 ---
 
 # AtomicServiceSearch
@@ -301,7 +302,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070866.gif)
+ ![](./img/zh-cn_image_0000002661612959.gif)
 
 #### [h2]示例2（AtomicServiceSearch添加功能位）
 
@@ -347,7 +348,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470143.gif)
+ ![](./img/zh-cn_image_0000002631413668.gif)
 
 #### [h2]示例3（AtomicServiceSearch添加选择区及功能位）
 
@@ -412,7 +413,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350191.gif)
+ ![](./img/zh-cn_image_0000002661732899.gif)
 
 #### [h2]示例4（search回调事件）
 
@@ -544,7 +545,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230778.gif)
+ ![](./img/zh-cn_image_0000002631253778.gif)
 
 #### [h2]示例5（AtomicServiceSearch修改样式）
 
@@ -664,7 +665,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070868.gif)
+ ![](./img/zh-cn_image_0000002661612961.gif)
 
 #### [h2]示例6（通过controller实现光标位置的设置）
 
@@ -716,7 +717,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470145.gif)
+ ![](./img/zh-cn_image_0000002631413670.gif)
 
 #### [h2]示例7（设置输入法回车键类型）
 
@@ -758,7 +759,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350193.gif)
+ ![](./img/zh-cn_image_0000002661732901.gif)
 
 #### [h2]示例8（设置文字特性效果）
 
@@ -813,7 +814,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230780.png)
+ ![](./img/zh-cn_image_0000002631253780.png)
 
 #### [h2]示例9（设置文本自适应）
 
@@ -852,7 +853,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070870.png)
+ ![](./img/zh-cn_image_0000002661612963.png)
 
 #### [h2]示例10（文本扩展自定义菜单）
 
@@ -924,7 +925,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470147.gif)
+ ![](./img/zh-cn_image_0000002631413672.gif)
 
 #### [h2]示例11（设置文本水平对齐/光标样式/选中背景色）
 
@@ -964,7 +965,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350195.png)
+ ![](./img/zh-cn_image_0000002661732903.png)
 
 #### [h2]示例12（对输入的文本进行过滤）
 
@@ -1006,4 +1007,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230782.gif)
+ ![](./img/zh-cn_image_0000002631253782.gif)

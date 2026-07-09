@@ -2,7 +2,8 @@
 title: "Class (TiffMetadata)"
 upstream_id: "harmonyos-references/arkts-apis-image-tiffmetadata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:23.583446"
+content_hash: "74bdd53d10b8"
+synced_at: "2026-07-09T01:00:30.555639"
 ---
 
 # Class (TiffMetadata)

@@ -2,7 +2,8 @@
 title: "OHHDRMetaData"
 upstream_id: "harmonyos-references/capi-nativewindow-ohhdrmetadata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:07.477040"
+content_hash: "666e76a3a2b5"
+synced_at: "2026-07-09T01:01:01.815536"
 ---
 
 # OHHDRMetaData

@@ -2,7 +2,8 @@
 title: "udmf_err_code.h"
 upstream_id: "harmonyos-references/capi-udmf-err-code-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:07.223629"
+content_hash: "6aae3a4d0603"
+synced_at: "2026-07-09T00:57:19.375781"
 ---
 
 # udmf_err_code.h

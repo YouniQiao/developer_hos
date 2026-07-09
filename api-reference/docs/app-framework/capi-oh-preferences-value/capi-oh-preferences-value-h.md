@@ -2,7 +2,8 @@
 title: "oh_preferences_value.h"
 upstream_id: "harmonyos-references/capi-oh-preferences-value-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:05.970279"
+content_hash: "b971d93f916b"
+synced_at: "2026-07-09T00:57:18.587992"
 ---
 
 # oh_preferences_value.h

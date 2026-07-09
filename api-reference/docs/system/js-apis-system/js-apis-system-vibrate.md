@@ -2,7 +2,8 @@
 title: "@system.vibrator (振动)"
 upstream_id: "harmonyos-references/js-apis-system-vibrate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:40.898142"
+content_hash: "5a3eea171923"
+synced_at: "2026-07-09T00:59:59.639555"
 ---
 
 # @system.vibrator (振动)

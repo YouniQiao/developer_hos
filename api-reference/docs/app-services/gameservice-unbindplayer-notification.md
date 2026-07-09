@@ -2,7 +2,8 @@
 title: "解绑账号通知"
 upstream_id: "harmonyos-references/gameservice-unbindplayer-notification"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:26.141771"
+content_hash: "5af062fae8c4"
+synced_at: "2026-07-09T01:01:19.240103"
 ---
 
 # 解绑账号通知
@@ -13,7 +14,7 @@ synced_at: "2026-06-24T20:53:26.141771"
 
 #### 场景描述
 
-在AppGallery Connect[配置回调地址](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-address)后，华为游戏服务器将在玩家注销华为账号后提醒开发者解绑账号。若开发者服务器返回结果为非成功响应，华为游戏服务器将周期性发送本次关键事件的通知，建议开发者服务端在收到通知后立即返回成功响应，避免堆积通知消息。
+在AppGallery Connect[配置回调地址](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gameservice-address)后，华为游戏服务器将在玩家注销华为账号后通知开发者，以便开发者解绑账号。若开发者服务器返回结果为非成功响应，华为游戏服务器将周期性发送本次关键事件的通知，建议开发者服务端在收到通知后立即返回成功响应，避免堆积通知消息。
 
 ![](./img/note_3.0-zh-cn.png) 为保证可靠性，系统具备补偿机制，所以可能出现重发的通知比预期的多。
 
@@ -77,10 +78,10 @@ Content-Type: application/json;charset=UTF-8
 ```
 // List、Map等基本类型的导包均由JDK自带，其它导包由业务侧自定义导入
 // 组装body内的参数，此处参数值仅为示例
-List<String> appIds =  Arrays.asList("appId1","appId2");
+List<String> appIds =  Arrays.asList("109***688","691***237");
 Map<String, String> paramsMap = new HashMap<>();
 paramsMap.put("appIds", StringUtils.join(appIds, ","));
-paramsMap.put("teamPlayerId", "teamPlayerId");
+paramsMap.put("teamPlayerId", "E5B***E9B");
 
 // 对参数进行字典序排序
 Map<String, String> tempMap = new TreeMap<>(paramsMap);

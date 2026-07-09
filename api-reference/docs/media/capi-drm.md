@@ -2,7 +2,8 @@
 title: "Drm"
 upstream_id: "harmonyos-references/capi-drm"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:20.184068"
+content_hash: "5fb4333a5542"
+synced_at: "2026-07-09T01:00:27.827611"
 ---
 
 # Drm

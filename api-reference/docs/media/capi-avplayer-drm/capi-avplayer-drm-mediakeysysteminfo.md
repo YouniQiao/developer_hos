@@ -2,7 +2,8 @@
 title: "DRM_MediaKeySystemInfo"
 upstream_id: "harmonyos-references/capi-avplayer-drm-mediakeysysteminfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:38.857132"
+content_hash: "cf41e304a0b9"
+synced_at: "2026-07-09T01:00:42.548950"
 ---
 
 # DRM_MediaKeySystemInfo

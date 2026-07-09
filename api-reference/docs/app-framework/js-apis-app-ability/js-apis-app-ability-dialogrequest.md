@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.dialogRequest (dialogRequest模块)"
 upstream_id: "harmonyos-references/js-apis-app-ability-dialogrequest"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:50.602613"
+content_hash: "d4dd672930b4"
+synced_at: "2026-07-09T00:57:07.229074"
 ---
 
 # @ohos.app.ability.dialogRequest (dialogRequest模块)

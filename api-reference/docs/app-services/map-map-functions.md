@@ -2,7 +2,8 @@
 title: "Functions"
 upstream_id: "harmonyos-references/map-map-functions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:34.736390"
+content_hash: "5b3ce485a0b3"
+synced_at: "2026-07-09T01:01:26.785499"
 ---
 
 # Functions

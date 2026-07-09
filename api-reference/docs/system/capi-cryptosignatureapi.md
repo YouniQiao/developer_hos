@@ -2,7 +2,8 @@
 title: "CryptoSignatureApi"
 upstream_id: "harmonyos-references/capi-cryptosignatureapi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:30.724060"
+content_hash: "9cf4b8050c88"
+synced_at: "2026-07-09T00:59:11.895771"
 ---
 
 # CryptoSignatureApi

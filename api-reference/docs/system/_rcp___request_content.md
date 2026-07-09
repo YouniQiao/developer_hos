@@ -2,7 +2,8 @@
 title: "Rcp_RequestContent"
 upstream_id: "harmonyos-references/_rcp___request_content"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:01.376242"
+content_hash: "a0a68b5169cf"
+synced_at: "2026-07-09T00:59:35.132770"
 ---
 
 # Rcp_RequestContent

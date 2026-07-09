@@ -2,7 +2,8 @@
 title: "Shape"
 upstream_id: "harmonyos-references/ts-drawing-components-shape"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:37.856426"
+content_hash: "2f0b8937a1c4"
+synced_at: "2026-07-09T00:58:05.683533"
 ---
 
 # Shape
@@ -490,7 +491,7 @@ struct ShapeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230710.png)
+ ![](./img/zh-cn_image_0000002631253710.png)
 
 #### [h2]示例2（使用不同参数类型绘制图形）
 
@@ -532,7 +533,7 @@ struct ShapeTypeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070800.png)
+ ![](./img/zh-cn_image_0000002661612891.png)
 
 #### [h2]示例3（使用attributeModifier动态设置Shape组件的属性）
 
@@ -575,7 +576,7 @@ struct ShapeModifierDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470077.png)
+ ![](./img/zh-cn_image_0000002631413602.png)
 
 #### [h2]示例4（使用mesh实现图像局部扭曲）
 
@@ -615,4 +616,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350125.png)
+ ![](./img/zh-cn_image_0000002661732833.png)

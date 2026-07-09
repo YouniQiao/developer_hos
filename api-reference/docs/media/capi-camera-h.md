@@ -2,7 +2,8 @@
 title: "camera.h"
 upstream_id: "harmonyos-references/capi-camera-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:14.646943"
+content_hash: "4da5c5f95619"
+synced_at: "2026-07-09T01:00:24.617048"
 ---
 
 # camera.h

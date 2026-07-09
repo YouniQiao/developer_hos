@@ -1,9 +1,12 @@
 ---
+
 title: "根据交易号查询订单状态信息"
 upstream_id: "harmonyos-references/iap-order-info-query-by-transaction-number"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:29.092066"
+synced_at: "2026-07-09T01:01:21.870160"
+content_hash: "6a343d0cbfd7"
 ---
+
 
 # 根据交易号查询订单状态信息
 

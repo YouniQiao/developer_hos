@@ -2,7 +2,8 @@
 title: "@ohos.graphics.uiEffect (效果级联)"
 upstream_id: "harmonyos-references/js-apis-uieffect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:55.683992"
+content_hash: "d7387602bb7f"
+synced_at: "2026-07-09T01:00:53.431200"
 ---
 
 # @ohos.graphics.uiEffect (效果级联)
@@ -114,7 +115,7 @@ struct UIEffectFilterExample {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002656470963.png)
+ ![](./img/zh-cn_image_0000002631254606.png)
 
 #### [h2]hdrBrightnessRatio24+
 

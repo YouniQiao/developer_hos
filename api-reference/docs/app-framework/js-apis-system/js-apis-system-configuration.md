@@ -2,7 +2,8 @@
 title: "@system.configuration (应用配置)"
 upstream_id: "harmonyos-references/js-apis-system-configuration"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:31.292801"
+content_hash: "a4191fd63def"
+synced_at: "2026-07-09T00:57:35.277408"
 ---
 
 # @system.configuration (应用配置)

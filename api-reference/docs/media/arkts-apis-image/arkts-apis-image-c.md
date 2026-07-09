@@ -2,7 +2,8 @@
 title: "Constants"
 upstream_id: "harmonyos-references/arkts-apis-image-c"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:24.655775"
+content_hash: "b3831de85029"
+synced_at: "2026-07-09T01:00:30.954921"
 ---
 
 # Constants

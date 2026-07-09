@@ -2,7 +2,8 @@
 title: "Sensor_SubscriptionAttribute"
 upstream_id: "harmonyos-references/capi-sensor-sensor-subscriptionattribute"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:42.701880"
+content_hash: "a2479bfcde20"
+synced_at: "2026-07-09T01:00:01.072910"
 ---
 
 # Sensor_SubscriptionAttribute

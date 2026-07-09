@@ -2,7 +2,8 @@
 title: "UsbInterfaceDescriptor"
 upstream_id: "harmonyos-references/capi-usbddk-usbinterfacedescriptor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:35.380881"
+content_hash: "c9fec43bac26"
+synced_at: "2026-07-09T00:59:57.034134"
 ---
 
 # UsbInterfaceDescriptor

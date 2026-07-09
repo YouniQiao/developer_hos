@@ -2,7 +2,8 @@
 title: "FAST_Rect"
 upstream_id: "harmonyos-references/fast-kit--fast-rect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:15.675224"
+content_hash: "48d9d08f7b97"
+synced_at: "2026-07-09T00:59:46.498744"
 ---
 
 # FAST_Rect
@@ -25,10 +26,10 @@ synced_at: "2026-06-24T20:51:15.675224"
 
 | 名称 | 描述 |
 | --- | --- |
-| int32_t [left](#left) | 横坐标左边界（![](./img/zh-cn_image_0000002656470611.png)）。 |
-| int32_t [top](#top) | 纵坐标上边界（![](./img/zh-cn_image_0000002656350661.png)）。 |
-| int32_t [right](#right) | 横坐标右边界（![](./img/zh-cn_image_0000002626231248.png)）。 |
-| int32_t [bottom](#bottom) | 纵坐标下边界（![](./img/zh-cn_image_0000002626071336.png)）。 |
+| int32_t [left](#left) | 横坐标左边界（![](./img/zh-cn_image_0000002631254250.png)）。 |
+| int32_t [top](#top) | 纵坐标上边界（![](./img/zh-cn_image_0000002661613431.png)）。 |
+| int32_t [right](#right) | 横坐标右边界（![](./img/zh-cn_image_0000002631414144.png)）。 |
+| int32_t [bottom](#bottom) | 纵坐标下边界（![](./img/zh-cn_image_0000002661733373.png)）。 |
 
 #### 结构体成员变量说明
 

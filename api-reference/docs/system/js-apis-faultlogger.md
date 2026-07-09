@@ -2,7 +2,8 @@
 title: "@ohos.faultLogger (故障日志获取)"
 upstream_id: "harmonyos-references/js-apis-faultlogger"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:46.750418"
+content_hash: "536f3fa26c65"
+synced_at: "2026-07-09T01:00:03.073687"
 ---
 
 # @ohos.faultLogger (故障日志获取)

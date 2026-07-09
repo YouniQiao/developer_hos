@@ -2,7 +2,8 @@
 title: "HiCollie_SetTimerParam"
 upstream_id: "harmonyos-references/capi-hicollie-hicollie-settimerparam"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:48.770146"
+content_hash: "87146afaf3cb"
+synced_at: "2026-07-09T01:00:04.763244"
 ---
 
 # HiCollie_SetTimerParam

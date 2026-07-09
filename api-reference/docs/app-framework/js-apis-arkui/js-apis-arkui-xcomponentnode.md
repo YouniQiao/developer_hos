@@ -2,7 +2,8 @@
 title: "XComponentNode"
 upstream_id: "harmonyos-references/js-apis-arkui-xcomponentnode"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:31.501182"
+content_hash: "ac31299505d5"
+synced_at: "2026-07-09T00:57:35.898668"
 ---
 
 # XComponentNode
@@ -146,4 +147,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349547.jpg)
+ ![](./img/zh-cn_image_0000002631253120.jpg)

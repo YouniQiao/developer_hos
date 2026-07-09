@@ -2,7 +2,8 @@
 title: "ChipGroup"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-chipgroup"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:51.163529"
+content_hash: "90fd6ff6ce26"
+synced_at: "2026-07-09T00:58:14.971104"
 ---
 
 # ChipGroup
@@ -226,7 +227,7 @@ IconOptions定义图标的共通属性。
 
 #### LabelOptions
 
-Label定义图标属性。
+LabelOptions定义文本属性。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -311,7 +312,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230794.png)
+ ![](./img/zh-cn_image_0000002631253794.png)
 
 #### [h2]示例2（有最右侧的builder）
 
@@ -407,7 +408,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070884.png)
+ ![](./img/zh-cn_image_0000002661612977.png)
 
 #### [h2]示例3（设置Symbol类型图标）
 
@@ -507,7 +508,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470161.png)
+ ![](./img/zh-cn_image_0000002631413688.png)
 
 #### [h2]示例4（单选时无障碍朗读）
 

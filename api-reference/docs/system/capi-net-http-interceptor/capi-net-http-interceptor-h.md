@@ -2,7 +2,8 @@
 title: "http_interceptor.h"
 upstream_id: "harmonyos-references/capi-net-http-interceptor-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:53.544664"
+content_hash: "696021b99e4d"
+synced_at: "2026-07-09T00:59:29.261866"
 ---
 
 # http_interceptor.h

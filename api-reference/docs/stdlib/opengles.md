@@ -2,7 +2,8 @@
 title: "OpenGL ES"
 upstream_id: "harmonyos-references/opengles"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:05.022662"
+content_hash: "7a7c8a3cb4e5"
+synced_at: "2026-07-09T01:01:48.556880"
 ---
 
 # OpenGL ES

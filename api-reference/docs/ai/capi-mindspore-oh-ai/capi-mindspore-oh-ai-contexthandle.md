@@ -2,7 +2,8 @@
 title: "OH_AI_ContextHandle"
 upstream_id: "harmonyos-references/capi-mindspore-oh-ai-contexthandle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:58.956427"
+content_hash: "b5dbc6acc809"
+synced_at: "2026-07-09T01:01:43.686675"
 ---
 
 # OH_AI_ContextHandle

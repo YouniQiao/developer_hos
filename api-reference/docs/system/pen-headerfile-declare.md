@@ -2,7 +2,8 @@
 title: "native_gcp_api.h"
 upstream_id: "harmonyos-references/pen-headerfile-declare"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:39.326334"
+content_hash: "4449db1cfbeb"
+synced_at: "2026-07-09T00:59:59.081807"
 ---
 
 # native_gcp_api.h

@@ -2,7 +2,8 @@
 title: "AbilityStartCallback"
 upstream_id: "harmonyos-references/js-apis-inner-application-abilitystartcallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:52.357142"
+content_hash: "2c4f43c042c2"
+synced_at: "2026-07-09T00:57:08.520087"
 ---
 
 # AbilityStartCallback

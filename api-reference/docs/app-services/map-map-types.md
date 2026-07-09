@@ -2,7 +2,8 @@
 title: "Types"
 upstream_id: "harmonyos-references/map-map-types"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:34.642124"
+content_hash: "bf1e432251bb"
+synced_at: "2026-07-09T01:01:26.380646"
 ---
 
 # Types
@@ -26,4 +27,4 @@ type MassPointOverlayCallback = (massPointOverlay: MassPointOverlay, massPointIt
 | **名称** | **类型** | 必填 | **说明** |
 | --- | --- | --- | --- |
 | massPointOverlay | [MassPointOverlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-masspointoverlay) | 是 | 海量点管理对象。 |
-| massPointItem | [mapCommon.MassPointItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#masspointitem) | 是 | 海量点列表。 |
+| massPointItem | [mapCommon.MassPointItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-common#masspointitem) | 是 | 海量点项。 |

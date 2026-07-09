@@ -2,7 +2,8 @@
 title: "OH_Drawing_LineTypography"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-linetypography"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:08.008244"
+content_hash: "e8a2e351fb18"
+synced_at: "2026-07-09T01:01:02.447230"
 ---
 
 # OH_Drawing_LineTypography

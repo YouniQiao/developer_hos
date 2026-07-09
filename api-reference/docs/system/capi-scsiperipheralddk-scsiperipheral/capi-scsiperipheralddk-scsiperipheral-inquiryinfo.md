@@ -2,7 +2,8 @@
 title: "ScsiPeripheral_InquiryInfo"
 upstream_id: "harmonyos-references/capi-scsiperipheralddk-scsiperipheral-inquiryinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:34.242784"
+content_hash: "29125c265080"
+synced_at: "2026-07-09T00:59:56.411429"
 ---
 
 # ScsiPeripheral_InquiryInfo

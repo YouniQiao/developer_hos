@@ -2,7 +2,8 @@
 title: "@ohos.selectionInput.selectionManager (划词管理)"
 upstream_id: "harmonyos-references/js-apis-selectioninput-selectionmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:08.261930"
+content_hash: "73866ed5caca"
+synced_at: "2026-07-09T00:59:40.472290"
 ---
 
 # @ohos.selectionInput.selectionManager (划词管理)

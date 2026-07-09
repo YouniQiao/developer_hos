@@ -2,12 +2,13 @@
 title: "Class (PermissionRequest)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-permissionrequest"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:06.619156"
+content_hash: "a5cfec13e997"
+synced_at: "2026-07-09T00:58:53.846024"
 ---
 
 # Class (PermissionRequest)
 
-Web组件返回授权或拒绝权限功能的对象。示例代码参考[onPermissionRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onpermissionrequest9)事件。
+PermissionRequest 是 Web 组件返回授权或拒绝权限功能的对象。当网页尝试访问受保护的系统资源（如摄像头、麦克风、地理位置等）时，ArkWeb 内核会通过[onPermissionRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onpermissionrequest9)事件回调向应用发送权限请求，应用通过 PermissionRequest 对象来决定是否授权这些请求。
 
 ![](./img/note_3.0-zh-cn.png)
 

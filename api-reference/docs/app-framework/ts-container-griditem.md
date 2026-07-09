@@ -2,7 +2,8 @@
 title: "GridItem"
 upstream_id: "harmonyos-references/ts-container-griditem"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:55.393466"
+content_hash: "06b5fbb481d2"
+synced_at: "2026-07-09T00:57:48.079679"
 ---
 
 # GridItem
@@ -278,7 +279,7 @@ struct GridItemExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070402.gif)
+ ![](./img/zh-cn_image_0000002661732425.gif)
 
 #### [h2]示例2（设置GridItem样式）
 
@@ -344,4 +345,4 @@ struct GridItemExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469679.png)
+ ![](./img/zh-cn_image_0000002631253306.png)

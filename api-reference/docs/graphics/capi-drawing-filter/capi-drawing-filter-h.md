@@ -2,7 +2,8 @@
 title: "drawing_filter.h"
 upstream_id: "harmonyos-references/capi-drawing-filter-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:00.055199"
+content_hash: "9fe141c766f4"
+synced_at: "2026-07-09T01:00:55.200495"
 ---
 
 # drawing_filter.h

@@ -2,7 +2,8 @@
 title: "UsbDeviceDescriptor"
 upstream_id: "harmonyos-references/capi-usbddk-usbdevicedescriptor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:35.174865"
+content_hash: "9b6a39603a1d"
+synced_at: "2026-07-09T00:59:56.834724"
 ---
 
 # UsbDeviceDescriptor

@@ -2,7 +2,8 @@
 title: "types.h"
 upstream_id: "harmonyos-references/capi-types-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:58.526172"
+content_hash: "13530c576b79"
+synced_at: "2026-07-09T01:01:43.321479"
 ---
 
 # types.h

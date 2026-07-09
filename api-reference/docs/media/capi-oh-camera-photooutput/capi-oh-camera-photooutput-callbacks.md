@@ -2,7 +2,8 @@
 title: "PhotoOutput_Callbacks"
 upstream_id: "harmonyos-references/capi-oh-camera-photooutput-callbacks"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:18.551919"
+content_hash: "2fa99250e940"
+synced_at: "2026-07-09T01:00:27.017740"
 ---
 
 # PhotoOutput_Callbacks

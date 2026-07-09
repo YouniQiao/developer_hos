@@ -2,7 +2,8 @@
 title: "OH_AVRecorder_EncoderInfo"
 upstream_id: "harmonyos-references/capi-avrecorder-oh-avrecorder-encoderinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:39.482049"
+content_hash: "2c55b4478d12"
+synced_at: "2026-07-09T01:00:43.049682"
 ---
 
 # OH_AVRecorder_EncoderInfo

@@ -2,7 +2,8 @@
 title: "OH_AudioConverter_Format"
 upstream_id: "harmonyos-references/capi-audioconverter-oh-audioconverter-format"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:00.318109"
+content_hash: "29607a828268"
+synced_at: "2026-07-09T01:00:12.432161"
 ---
 
 # OH_AudioConverter_Format

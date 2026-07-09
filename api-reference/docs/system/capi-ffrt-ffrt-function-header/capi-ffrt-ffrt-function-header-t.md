@@ -2,7 +2,8 @@
 title: "ffrt_function_header_t"
 upstream_id: "harmonyos-references/capi-ffrt-ffrt-function-header-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:16.586626"
+content_hash: "3ed0825a771e"
+synced_at: "2026-07-09T00:59:47.430204"
 ---
 
 # ffrt_function_header_t

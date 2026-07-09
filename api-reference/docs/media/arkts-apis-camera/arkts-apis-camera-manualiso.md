@@ -2,7 +2,8 @@
 title: "Interface (ManualIso)"
 upstream_id: "harmonyos-references/arkts-apis-camera-manualiso"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:12.225212"
+content_hash: "1aa48e6e76a6"
+synced_at: "2026-07-09T01:00:22.269726"
 ---
 
 # Interface (ManualIso)

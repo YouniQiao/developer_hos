@@ -2,7 +2,8 @@
 title: "Data_Asset"
 upstream_id: "harmonyos-references/capi-rdb-data-asset"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:09.420985"
+content_hash: "c1fe042a2496"
+synced_at: "2026-07-09T00:57:20.961336"
 ---
 
 # Data_Asset

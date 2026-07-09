@@ -2,7 +2,8 @@
 title: "NN_Tensor"
 upstream_id: "harmonyos-references/capi-neuralnetworkruntime-nn-tensor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:00.308986"
+content_hash: "13ef1f2a8898"
+synced_at: "2026-07-09T01:01:44.946259"
 ---
 
 # NN_Tensor

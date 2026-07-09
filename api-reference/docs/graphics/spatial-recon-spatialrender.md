@@ -2,7 +2,8 @@
 title: "spatialRender"
 upstream_id: "harmonyos-references/spatial-recon-spatialrender"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:14.406515"
+content_hash: "ac0ad438ee85"
+synced_at: "2026-07-09T01:01:08.960382"
 ---
 
 # spatialRender

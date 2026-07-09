@@ -2,7 +2,8 @@
 title: "OH_ArkUI_TextEditorStyledStringController"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:59.669591"
+content_hash: "fc03b52bba73"
+synced_at: "2026-07-09T00:58:48.088948"
 ---
 
 # OH_ArkUI_TextEditorStyledStringController

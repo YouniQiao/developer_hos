@@ -2,7 +2,8 @@
 title: "Class (PathIterator)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-pathiterator"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:53.905601"
+content_hash: "aee1f95cd63e"
+synced_at: "2026-07-09T01:00:52.089379"
 ---
 
 # Class (PathIterator)

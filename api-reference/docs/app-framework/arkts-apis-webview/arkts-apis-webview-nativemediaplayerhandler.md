@@ -2,12 +2,13 @@
 title: "Interface (NativeMediaPlayerHandler)"
 upstream_id: "harmonyos-references/arkts-apis-webview-nativemediaplayerhandler"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:04.890798"
+content_hash: "5042ac521b4e"
+synced_at: "2026-07-09T00:58:52.736992"
 ---
 
 # Interface (NativeMediaPlayerHandler)
 
-[CreateNativeMediaPlayerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-t#createnativemediaplayercallback12)回调函数的参数。应用通过该对象，将播放器的状态通知给 ArkWeb 内核。
+NativeMediaPlayerHandler 是[CreateNativeMediaPlayerCallback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-t#createnativemediaplayercallback12)回调函数的参数。当应用使用[NativeMediaPlayerBridge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-nativemediaplayerbridge)接管网页媒体播放时，需要通过将播放器的各种状态变化实时同步给 ArkWeb 内核，确保网页 JavaScript 能够获取正确的播放器状态，ArkWeb 内核会将这些状态转换为标准的 HTML5 Media Events，触发网页中注册的事件监听器，从而保证网页功能的正常运行。
 
 ![](./img/note_3.0-zh-cn.png)
 

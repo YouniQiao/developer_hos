@@ -2,7 +2,8 @@
 title: "@ohos.security.certManager (证书管理模块)"
 upstream_id: "harmonyos-references/js-apis-certmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:41.088487"
+content_hash: "161a6fcb645d"
+synced_at: "2026-07-09T00:59:20.252763"
 ---
 
 # @ohos.security.certManager (证书管理模块)
@@ -1754,7 +1755,7 @@ getUkeyCertificate(keyUri: string, ukeyInfo: UkeyInfo): Promise<CMResult>
 
 设备行为差异：
 
-- 从API版本26.0.0开始，该接口在所有设备上无行为差异。
+- 从API版本26.0.0开始，该接口在Phone、PC/2in1、Tablet设备可正常调用，在其他设备中返回801错误码。
 - 在API版本22-24，该接口在PC/2in1设备可正常调用，在其他设备中返回801错误码。
 
 参数：
@@ -1817,6 +1818,8 @@ getUkeyCertificateList(ukeyProvider: string, ukeyInfo: UkeyInfo): Promise<CMResu
 需要权限： ohos.permission.ACCESS_CERT_MANAGER
 
 系统能力： SystemCapability.Security.CertificateManager
+
+设备行为差异： 该接口在Phone、PC/2in1、Tablet设备可正常调用，在其他设备中返回801错误码。
 
 参数：
 

@@ -2,7 +2,8 @@
 title: "@ohos.WorkSchedulerExtensionAbility (延迟任务调度回调)"
 upstream_id: "harmonyos-references/js-apis-workschedulerextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:10.019427"
+content_hash: "b7fd216981bb"
+synced_at: "2026-07-09T00:58:56.617420"
 ---
 
 # @ohos.WorkSchedulerExtensionAbility (延迟任务调度回调)

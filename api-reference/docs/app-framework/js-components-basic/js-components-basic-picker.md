@@ -2,7 +2,8 @@
 title: "picker"
 upstream_id: "harmonyos-references/js-components-basic-picker"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:06.770084"
+content_hash: "d6cf8c9ec910"
+synced_at: "2026-07-09T00:58:22.616314"
 ---
 
 # picker
@@ -305,4 +306,4 @@ export default {
     },
 }
 ```
- ![](./img/zh-cn_image_0000002656470259.gif)
+ ![](./img/zh-cn_image_0000002631253896.gif)

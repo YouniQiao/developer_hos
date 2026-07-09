@@ -2,7 +2,8 @@
 title: "media_asset_change_request_capi.h"
 upstream_id: "harmonyos-references/capi-media-asset-change-request-capi-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:46.867219"
+content_hash: "8120a41080d2"
+synced_at: "2026-07-09T01:00:48.200405"
 ---
 
 # media_asset_change_request_capi.h

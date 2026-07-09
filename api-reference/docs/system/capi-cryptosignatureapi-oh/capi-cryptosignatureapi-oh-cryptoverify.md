@@ -2,7 +2,8 @@
 title: "OH_CryptoVerify"
 upstream_id: "harmonyos-references/capi-cryptosignatureapi-oh-cryptoverify"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:33.202737"
+content_hash: "5774475b4e7f"
+synced_at: "2026-07-09T00:59:13.815818"
 ---
 
 # OH_CryptoVerify

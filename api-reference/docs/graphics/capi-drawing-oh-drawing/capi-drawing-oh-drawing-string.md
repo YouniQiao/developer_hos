@@ -2,7 +2,8 @@
 title: "OH_Drawing_String"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-string"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:07.122421"
+content_hash: "5ca0e5263225"
+synced_at: "2026-07-09T01:01:01.456047"
 ---
 
 # OH_Drawing_String

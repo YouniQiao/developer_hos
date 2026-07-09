@@ -2,7 +2,8 @@
 title: "HMS_GCP_Color"
 upstream_id: "harmonyos-references/pen-imagefeaturepicker-struct-color"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:39.541982"
+content_hash: "6afad60e032f"
+synced_at: "2026-07-09T00:59:59.176208"
 ---
 
 # HMS_GCP_Color

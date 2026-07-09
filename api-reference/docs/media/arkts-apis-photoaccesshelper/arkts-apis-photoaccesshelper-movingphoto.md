@@ -2,7 +2,8 @@
 title: "Interface (MovingPhoto)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-movingphoto"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:44.935775"
+content_hash: "d7955841966e"
+synced_at: "2026-07-09T01:00:47.138295"
 ---
 
 # Interface (MovingPhoto)

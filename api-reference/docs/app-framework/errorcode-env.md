@@ -1,9 +1,12 @@
 ---
+
 title: "环境变量错误码"
 upstream_id: "harmonyos-references/errorcode-env"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:01.795963"
+synced_at: "2026-07-09T00:58:49.780166"
+content_hash: "b6aee15e5f57"
 ---
+
 
 # 环境变量错误码
 

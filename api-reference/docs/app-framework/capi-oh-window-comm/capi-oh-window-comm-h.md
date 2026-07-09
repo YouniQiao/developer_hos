@@ -2,7 +2,8 @@
 title: "oh_window_comm.h"
 upstream_id: "harmonyos-references/capi-oh-window-comm-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:42.123552"
+content_hash: "721443a373e5"
+synced_at: "2026-07-09T00:58:37.164877"
 ---
 
 # oh_window_comm.h

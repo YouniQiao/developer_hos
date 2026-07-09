@@ -2,7 +2,8 @@
 title: "ScsiPeripheral_BasicSenseInfo"
 upstream_id: "harmonyos-references/capi-scsiperipheralddk-scsiperipheral-basicsenseinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:34.703049"
+content_hash: "ba47c51ac2c4"
+synced_at: "2026-07-09T00:59:56.698285"
 ---
 
 # ScsiPeripheral_BasicSenseInfo

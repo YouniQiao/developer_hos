@@ -2,7 +2,8 @@
 title: "Environment"
 upstream_id: "harmonyos-references/capi-environment"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:14.690161"
+content_hash: "b02e95090061"
+synced_at: "2026-07-09T00:59:00.435791"
 ---
 
 # Environment

@@ -2,7 +2,8 @@
 title: "InputMethod_InputMethodProxy"
 upstream_id: "harmonyos-references/capi-inputmethod-inputmethod-inputmethodproxy"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:20.231003"
+content_hash: "ab486ea7b287"
+synced_at: "2026-07-09T00:59:05.170223"
 ---
 
 # InputMethod_InputMethodProxy

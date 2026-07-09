@@ -2,7 +2,8 @@
 title: "mutableBuilder"
 upstream_id: "harmonyos-references/ts-universal-mutablebuilder"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:50.737049"
+content_hash: "f260337ee415"
+synced_at: "2026-07-09T00:58:14.193169"
 ---
 
 # mutableBuilder

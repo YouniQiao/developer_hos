@@ -2,7 +2,8 @@
 title: "xeg_gles_temporal_upscale.h"
 upstream_id: "harmonyos-references/xengine-kit-xeg-gles-temporal-upscale-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:15.544969"
+content_hash: "98f0f9874762"
+synced_at: "2026-07-09T01:01:09.367272"
 ---
 
 # xeg_gles_temporal_upscale.h

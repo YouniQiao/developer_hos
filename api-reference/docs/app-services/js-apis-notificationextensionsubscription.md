@@ -2,7 +2,8 @@
 title: "@ohos.notificationExtensionSubscription (notificationExtensionSubscription模块)"
 upstream_id: "harmonyos-references/js-apis-notificationextensionsubscription"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:36.938823"
+content_hash: "90e89405b2f9"
+synced_at: "2026-07-09T01:01:28.201108"
 ---
 
 # @ohos.notificationExtensionSubscription (notificationExtensionSubscription模块)

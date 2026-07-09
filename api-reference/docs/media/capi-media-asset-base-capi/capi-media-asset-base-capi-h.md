@@ -2,7 +2,8 @@
 title: "media_asset_base_capi.h"
 upstream_id: "harmonyos-references/capi-media-asset-base-capi-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:46.613340"
+content_hash: "c232ae5de116"
+synced_at: "2026-07-09T01:00:48.406075"
 ---
 
 # media_asset_base_capi.h

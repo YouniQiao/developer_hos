@@ -2,7 +2,8 @@
 title: "Navigation"
 upstream_id: "harmonyos-references/ts-basic-components-navigation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:01.738612"
+content_hash: "3d4d0112d69b"
+synced_at: "2026-07-09T00:57:51.659355"
 ---
 
 # Navigation
@@ -828,7 +829,7 @@ pushDestination(info: NavPathInfo, animated?: boolean): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 异步返回结果。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -864,7 +865,7 @@ pushDestination(info: NavPathInfo, options?: NavigationOptions): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 异常返回结果。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -901,7 +902,7 @@ pushDestinationByName(name: string, param: Object, animated?: boolean): Promise<
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 异常返回结果。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -939,7 +940,7 @@ pushDestinationByName(name: string, param: Object, onPop: import('../api/@ohos.b
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 异常返回结果。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -1025,7 +1026,7 @@ replaceDestination(info: NavPathInfo, options?: NavigationOptions): Promise<void
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | 异常返回结果。 |
+| Promise | Promise对象，无返回结果。 |
 
 错误码：
 
@@ -1740,7 +1741,7 @@ Navigation首页名字。
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | value | string | [Resource14+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 否 | API version 9：显示菜单栏单个选项的文本。 从API version 10开始，不显示菜单栏单个选项的文本。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| icon | string | [Resource14+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 菜单栏单个选项的图标资源路径。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| icon | string | [Resource14+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 菜单栏单个选项的图标资源路径。 **说明：** 当图标为SVG格式时，系统会默认设置fill颜色，覆盖SVG文件中自定义的fill属性，可能导致图标显示异常。建议在SVG文件中通过style样式设置fill来覆盖系统默认值，示例如下： 原始写法（fill属性会被系统默认值覆盖）：，建议修改为：。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | isEnabled12+ | boolean | 否 | 是 | 使能状态，默认使能（false未使能，true使能）。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | action | () => void | 否 | 是 | 当前选项被选中的事件回调。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | symbolIcon12+ | [SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier) | 否 | 是 | 菜单栏单个选项的symbol资源（优先级高于icon）。 **说明：** 不支持通过[SymbolGlyphModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier#symbolglyphmodifier)对象的[fontSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-symbolglyph#fontsize)属性修改图标大小、[effectStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-symbolglyph#effectstrategy)属性修改动效、[symbolEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-symbolglyph#symboleffect12)属性修改动效类型。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
@@ -1754,7 +1755,7 @@ Navigation首页名字。
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | value | ResourceStr | 否 | 否 | 工具栏单个选项的显示文本。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| icon | ResourceStr | 否 | 是 | 工具栏单个选项的图标资源路径。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| icon | ResourceStr | 否 | 是 | 工具栏单个选项的图标资源路径。 **说明：** 当图标为SVG格式时，系统会默认设置fill颜色，覆盖SVG文件中自定义的fill属性，可能导致图标显示异常。建议在SVG文件中通过style样式设置fill来覆盖系统默认值，示例如下： 原始写法（fill属性会被系统默认值覆盖）：，建议修改为：。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | action | () => void | 否 | 是 | 当前选项被选中的事件回调。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | status | [ToolbarItemStatus](#toolbaritemstatus10枚举说明) | 否 | 是 | 工具栏单个选项的状态。 默认值：ToolbarItemStatus.NORMAL **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | activeIcon | ResourceStr | 否 | 是 | 工具栏单个选项处于ACTIVE态时的图标资源路径。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
@@ -1813,7 +1814,7 @@ Navigation自定义标题。
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | builder | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | 否 | 设置标题栏内容。 |
-| height | [TitleHeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#titleheight9) | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 否 | 设置标题栏高度。 |
+| height | [TitleHeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#titleheight9) | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 否 | 设置标题栏高度。 取值范围：[0, +∞) 单位参考[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)类型的说明。 |
 
 #### NavigationDividerStyle23+
 
@@ -1826,8 +1827,8 @@ Navigation分割线颜色及上下边距。
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | color | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 分割线的颜色。 默认值：#33000000，灰色。 |
-| startMargin | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 分割线与侧边栏顶端的距离。 默认值：0 单位：vp 取值范围：[0, +∞) |
-| endMargin | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 分割线与侧边栏底端的距离。 默认值：0 单位：vp 取值范围：[0, +∞) |
+| startMargin | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 分割线与侧边栏顶端的距离。 默认值：0 单位参考[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)类型的说明。 取值范围：[0, +∞) |
+| endMargin | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 分割线与侧边栏底端的距离。 默认值：0 单位参考[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)类型的说明。 取值范围：[0, +∞) |
 
 #### NavBarPosition9+枚举说明
 
@@ -2116,7 +2117,7 @@ struct NavigationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070432.png)
+ ![](./img/zh-cn_image_0000002661732457.png)
 
 #### [h2]示例2（使用导航控制器方法）
 
@@ -2379,7 +2380,7 @@ export struct PageTwo {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002656469709.gif)
+ ![](./img/zh-cn_image_0000002631253336.gif)
 
 #### [h2]示例3（设置可交互转场动画）
 
@@ -2861,7 +2862,7 @@ export class CustomTransition {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002656349757.gif)
+ ![](./img/zh-cn_image_0000002661612519.gif)
 
 #### [h2]示例4（Navigation带参返回）
 
@@ -3005,7 +3006,7 @@ export struct PageOne {
           .margin(10)
           .onClick(() => {
             let tmp = new TmpClass();
-            // 将name指定的NavDestination页面信息入栈，传递的数据为param，添加接收处理结果的onPop回调。
+            // 将name指定的NavDestination页面信息入栈，传递的数据为param。
             this.pageInfo.pushDestination({ name: 'pageTwo', param: new ParamWithOp() })
               .catch((error: BusinessError) => {
                 console.error(`[pushDestinationWithoutOnPop]failed, error code = ${error.code}, error.message = ${error.message}.`);
@@ -3084,7 +3085,7 @@ export struct PageTwo {
           .margin(20)
           .onClick(() => {
             this.pathStack.popToName('pageOne',
-              new resultClass(11)); // 将第一个名为name的NavDestination页面移到栈顶，将处理结果传入push的onPop回调中。
+              new resultClass(11)); // 回退路由栈到第一个名为name的NavDestination页面，将处理结果传入push的onPop回调中。
           })
 
         Button('popToIndex', { stateEffect: true, type: ButtonType.Capsule })
@@ -3092,7 +3093,7 @@ export struct PageTwo {
           .height(40)
           .margin(20)
           .onClick(() => {
-            this.pathStack.popToIndex(0, new resultClass(111)); // 将index指定的NavDestination页面移到栈顶，将处理结果传入push的onPop回调中。
+            this.pathStack.popToIndex(0, new resultClass(111)); // 回退路由栈到index指定的NavDestination页面，将处理结果传入push的onPop回调中。
           })
 
         Button('popWithoutResult', { stateEffect: true, type: ButtonType.Capsule })
@@ -3150,7 +3151,7 @@ export struct PageTwo {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002626230344.gif)
+ ![](./img/zh-cn_image_0000002631413228.gif)
 
 #### [h2]示例5（设置背景颜色和模糊效果）
 
@@ -3444,7 +3445,7 @@ export const EFFECT_OPTION_2: BackgroundEffectOptions = {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002626070434.gif)
+ ![](./img/zh-cn_image_0000002661732459.gif)
 
 #### [h2]示例6（嵌套场景下获取外层栈）
 
@@ -3513,7 +3514,7 @@ export function PageOneBuilder(name: string) {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002656469711.gif)
+ ![](./img/zh-cn_image_0000002631253338.gif)
 
 #### [h2]示例7（通过onReady获取栈）
 
@@ -3623,7 +3624,7 @@ struct NavigationExample2 {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002656349759.gif)
+ ![](./img/zh-cn_image_0000002661612521.gif)
 
 #### [h2]示例8（NavDestination生命周期时序）
 
@@ -3742,7 +3743,7 @@ struct NavigationExample3 {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002626230346.gif)
+ ![](./img/zh-cn_image_0000002631413230.gif)
 
 #### [h2]示例9（标题栏布局效果）
 
@@ -3813,7 +3814,7 @@ struct NavigationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070436.gif)
+ ![](./img/zh-cn_image_0000002661732461.gif)
 
 #### [h2]示例10（定义导航控制器派生类）
 
@@ -3961,7 +3962,7 @@ export class NewParam {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002656469713.gif)
+ ![](./img/zh-cn_image_0000002631253340.gif)
 
 #### [h2]示例11（使用Symbol组件）
 
@@ -4110,7 +4111,7 @@ export struct NavigationMenu {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002656349761.gif)
+ ![](./img/zh-cn_image_0000002661612523.gif)
 
 #### [h2]示例12（设置自定义标题栏边距）
 
@@ -4357,7 +4358,7 @@ export class SubTitleTextModifier extends TextModifier {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002626230348.gif)
+ ![](./img/zh-cn_image_0000002631413232.gif)
 
 #### [h2]示例13（自定义转场动画）
 
@@ -4602,7 +4603,7 @@ export class CustomTransition {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002626070438.gif)
+ ![](./img/zh-cn_image_0000002661732463.gif)
 
 #### [h2]示例14（设置Navigation双栏模式）
 
@@ -4737,7 +4738,7 @@ struct NavigationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469715.gif)
+ ![](./img/zh-cn_image_0000002631253342.gif)
 
 #### [h2]示例15（Navigation工具栏自适应）
 
@@ -4807,7 +4808,7 @@ struct NavigationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349763.gif)
+ ![](./img/zh-cn_image_0000002661612525.gif)
 
 #### [h2]示例16（Navigation使用NavDestination作为导航页）
 
@@ -4892,7 +4893,7 @@ struct Index {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002626230350.gif)
+ ![](./img/zh-cn_image_0000002631413234.gif)
 
 #### [h2]示例17（使用新增导航控制器方法）
 
@@ -5160,7 +5161,7 @@ export struct PageTwo {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002626070440.gif)
+ ![](./img/zh-cn_image_0000002661732465.gif)
 
 #### [h2]示例18（设置Navigation可恢复）
 
@@ -5325,4 +5326,4 @@ export struct NavigationMenu {
 4. 输入"aa force-stop 工程包名 -p pid值 -r RESOURCE_CONTROL"进行回车，模拟资源使用不当导致的应用退出。
 5. 点击应用重新进入，可发现页面依然是点击跳转按钮后的页面。
 
-![](./img/zh-cn_image_0000002656469717.gif)
+![](./img/zh-cn_image_0000002631253344.gif)

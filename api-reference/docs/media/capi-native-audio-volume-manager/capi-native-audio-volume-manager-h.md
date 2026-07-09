@@ -2,7 +2,8 @@
 title: "native_audio_volume_manager.h"
 upstream_id: "harmonyos-references/capi-native-audio-volume-manager-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:55.362701"
+content_hash: "4072ef245783"
+synced_at: "2026-07-09T01:00:09.700112"
 ---
 
 # native_audio_volume_manager.h

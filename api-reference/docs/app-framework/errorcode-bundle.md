@@ -2,7 +2,8 @@
 title: "包管理子系统通用错误码"
 upstream_id: "harmonyos-references/errorcode-bundle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:00.911664"
+content_hash: "8d270e3ca7e4"
+synced_at: "2026-07-09T00:57:13.975526"
 ---
 
 # 包管理子系统通用错误码

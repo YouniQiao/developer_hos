@@ -2,7 +2,8 @@
 title: "通过mercContractCode查询签约订单信息"
 upstream_id: "harmonyos-references/payment-withhold-query-contractcode"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:41.122423"
+content_hash: "4a74f10e3a76"
+synced_at: "2026-07-09T01:01:31.334393"
 ---
 
 # 通过mercContractCode查询签约订单信息
@@ -36,7 +37,7 @@ Request Header
 
 Request Path
 
-| 参数 | 是否必填 | 参数类型 | 描述 |
+| 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | mercContractCode | 是 | String | 商户签约协议号。开发者请求签约时传入的签约协议号，由商户生成，商户需保证字段唯一性。最大长度64。 |
 

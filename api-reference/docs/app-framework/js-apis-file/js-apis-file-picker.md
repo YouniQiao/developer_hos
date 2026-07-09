@@ -2,7 +2,8 @@
 title: "@ohos.file.picker (选择器)"
 upstream_id: "harmonyos-references/js-apis-file-picker"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:13.355257"
+content_hash: "ee591ef397d7"
+synced_at: "2026-07-09T00:58:59.447651"
 ---
 
 # @ohos.file.picker (选择器)

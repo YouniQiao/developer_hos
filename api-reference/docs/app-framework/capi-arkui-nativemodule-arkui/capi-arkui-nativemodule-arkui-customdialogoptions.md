@@ -2,7 +2,8 @@
 title: "ArkUI_CustomDialogOptions"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-customdialogoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:46.401204"
+content_hash: "9c4d5c7c814a"
+synced_at: "2026-07-09T00:58:39.910081"
 ---
 
 # ArkUI_CustomDialogOptions

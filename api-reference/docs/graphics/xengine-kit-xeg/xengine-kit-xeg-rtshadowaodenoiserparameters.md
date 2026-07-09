@@ -2,7 +2,8 @@
 title: "XEG_RTShadowAODenoiserParameters"
 upstream_id: "harmonyos-references/xengine-kit-xeg-rtshadowaodenoiserparameters"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:17.240745"
+content_hash: "106424834d56"
+synced_at: "2026-07-09T01:01:10.885981"
 ---
 
 # XEG_RTShadowAODenoiserParameters
@@ -23,7 +24,7 @@ synced_at: "2026-06-24T20:53:17.240745"
 
 | 名称 | 描述 |
 | --- | --- |
-| float [temporalBlendFactor](#temporalblendfactor) = 0.075f | 时域滤波时当前帧与历史帧混合的权重系数。一致性校验通过后，权重值越大时越多采用当前帧的信息。此参数的值将被限制在[0.01, 1.0]范围内。默认值为0.075。 |
+| float [temporalBlendFactor](#temporalblendfactor) = 0.075f | 时域滤波时当前帧与历史帧混合的权重系数。一致性校验通过后，权重值越大，越多采用当前帧的信息。此参数的值将被限制在[0.01, 1.0]范围内。默认值为0.075。 |
 | float [positionConstantDistance](#positionconstantdistance) = 1.0f | 时域滤波中根据世界空间距离进行一致性校验的阈值，必须大于等于0，如果传负值将被视为0。默认值为1.0。 |
 | uint32_t [spatialDenoiseTimes](#spatialdenoisetimes) = 2 | 空域滤波器执行的次数。次数越多生成的阴影和环境光遮蔽噪声越少，但可能会导致降噪结果更模糊。此参数的值将被限制在[0, 5]范围内。默认值为2。 |
 | float [ghostingAlpha](#ghostingalpha) = 0.0f | 时域滤波器中控制运动物体引入的鬼影问题。值为0时，不解决运动物体引入的鬼影问题。值越高，鬼影问题解决的越好，但降噪结果会稍微劣化。此参数的值将被限制在[0.0, 1.0]范围内。默认值为0.0。 |
@@ -84,4 +85,4 @@ float XEG_RTShadowAODenoiserParameters::temporalBlendFactor = 0.075f
 ```
  描述
 
-时域滤波时当前帧与历史帧混合的权重系数。一致性校验通过后，权重值越大时越多采用当前帧的信息。此参数的值将被限制在[0.01, 1.0]范围内。默认值为0.075。
+时域滤波时当前帧与历史帧混合的权重系数。一致性校验通过后，权重值越大，越多采用当前帧的信息。此参数的值将被限制在[0.01, 1.0]范围内。默认值为0.075。

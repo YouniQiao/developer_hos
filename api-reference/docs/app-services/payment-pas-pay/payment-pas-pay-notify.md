@@ -2,7 +2,8 @@
 title: "支付结果回调通知"
 upstream_id: "harmonyos-references/payment-pas-pay-notify"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:39.763459"
+content_hash: "1a7ec08fa23e"
+synced_at: "2026-07-09T01:01:30.510293"
 ---
 
 # 支付结果回调通知

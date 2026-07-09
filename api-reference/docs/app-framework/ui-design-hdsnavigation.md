@@ -2,7 +2,8 @@
 title: "HdsNavigation"
 upstream_id: "harmonyos-references/ui-design-hdsnavigation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:25.759774"
+content_hash: "5e5d3012105f"
+synced_at: "2026-07-09T00:59:10.341898"
 ---
 
 # HdsNavigation
@@ -887,7 +888,7 @@ HdsNavigation标题栏背景板样式。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| backgroundColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 标题栏背景板背景色。 默认值： 模糊样式类型为COMMON_BLUR或GRADUAL_BLUR时，背景色默认值均为透明色。 模糊样式类型为GRADIENT_BLUR时，背景色生效线性径向渐变色，具体默认值分以下场景： - 若[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为true，在[TitleBarStyleOptions](#titlebarstyleoptions).originalStyle中，backgroundColor默认值为透明色；在[TitleBarStyleOptions](#titlebarstyleoptions).scrollEffectStyle中，backgroundColor默认值为#99000000。 - 若[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为false，仅在[TitleBarStyleOptions](#titlebarstyleoptions).originalStyle中，backgroundColor生效，默认值为透明色。 从6.1.0(23)开始，新增如下背景色默认规则： 当模糊样式类型为GRADIENT_BLUR并已配置systemMaterialEffect，或者模糊类型为IMMERSIVE_GRADIENT_BLUR时，对应默认值如下： - 若[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为true，默认值为透明色；若[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为false，默认值为$r('sys.color.comp_background_gray')。 - 仅当[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为true时生效，默认值为r('sys.color.comp_background_gray')。 |
+| backgroundColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 标题栏背景板背景色。 默认值： 模糊样式类型为COMMON_BLUR或GRADUAL_BLUR时，背景色默认值均为透明色。 模糊样式类型为GRADIENT_BLUR时，背景色生效线性径向渐变色，具体默认值分以下场景： - 若[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为true，在[TitleBarStyleOptions](#titlebarstyleoptions).originalStyle中，backgroundColor默认值为透明色；在[TitleBarStyleOptions](#titlebarstyleoptions).scrollEffectStyle中，backgroundColor默认值为#99000000。 - 若[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为false，仅在[TitleBarStyleOptions](#titlebarstyleoptions).originalStyle中，backgroundColor生效，默认值为透明色。 从6.1.0(23)开始，新增如下背景色默认规则： 当模糊样式类型为GRADIENT_BLUR并已配置systemMaterialEffect，或者模糊类型为IMMERSIVE_GRADIENT_BLUR时，对应默认值如下： - 若[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为true，默认值为透明色；若[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为false，默认值为$r('sys.color.comp_background_gray')。 - 仅当[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为true时生效，默认值为$r('sys.color.comp_background_gray')。 |
 | maskExtraHeight | number | 否 | 是 | 标题栏模糊蒙层超出标题栏的额外高度。该配置只在模糊样式类型配置为GRADIENT_BLUR时生效。单位：vp。 默认值：32。单位：vp。 **起始版本：** 6.0.0(20) |
 | blurRadius | number | 否 | 是 | 标题栏模糊半径。仅在模糊样式类型配置为渐变模糊GRADIENT_BLUR及沉浸式渐变模糊IMMERSIVE_GRADIENT_BLUR时生效。取值范围为[0.0, 128.0]。超出取值范围时，按默认值处理。 默认值： - 作为[TitleBarStyleOptions](#titlebarstyleoptions).originalStyle中的属性时，当[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为true时，默认值为0.0；当[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为false，未配置systemMaterialEffect时，默认值为16.0，配置systemMaterialEffect时，默认值为12.0。 - 作为[TitleBarStyleOptions](#titlebarstyleoptions).scrollEffectStyle中的属性时，仅在[ScrollEffectOptions](#scrolleffectoptions).enableScrollEffect为true时生效，未配置systemMaterialEffect时，默认值为16.0，配置systemMaterialEffect时，默认值为12.0。 **起始版本：** 6.1.0(23) |
 
@@ -1419,7 +1420,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350635.gif)
+ ![](./img/zh-cn_image_0000002661613405.gif)
 
 #### [h2]设置菜单消息提醒
 
@@ -1482,7 +1483,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626231222.jpg)
+ ![](./img/zh-cn_image_0000002631414118.jpg)
 
 #### [h2]设置自定义区域
 
@@ -1569,7 +1570,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626071310.jpg)
+ ![](./img/zh-cn_image_0000002661733347.jpg)
 
 #### [h2]设置标题栏的动态显隐
 
@@ -1635,7 +1636,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470587.gif)
+ ![](./img/zh-cn_image_0000002631254226.gif)
 
 #### [h2]设置标题栏图标样式
 
@@ -1711,7 +1712,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350637.jpg)
+ ![](./img/zh-cn_image_0000002661613407.jpg)
 
 #### [h2]半模态标题栏样式
 
@@ -1803,7 +1804,7 @@ struct SheetTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626231224.jpg)
+ ![](./img/zh-cn_image_0000002631414120.jpg)
 
 #### [h2]图标上绑定自定义menu
 
@@ -1890,7 +1891,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626071312.gif)
+ ![](./img/zh-cn_image_0000002661733349.gif)
 
 #### [h2]设置应用内多窗图标
 
@@ -1942,7 +1943,7 @@ struct MultiWindowEntryInAPPTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470589.jpg)
+ ![](./img/zh-cn_image_0000002631254228.jpg)
 
 #### [h2]设置HdsNavigation双栏模式
 
@@ -2008,7 +2009,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350639.gif)
+ ![](./img/zh-cn_image_0000002661613409.gif)
 
 #### [h2]设置标题栏沉浸式样式
 
@@ -2103,7 +2104,7 @@ struct Index {
 
 执行上述代码展示的效果如下。
 
-![](./img/zh-cn_image_0000002626231226.gif)
+![](./img/zh-cn_image_0000002631414122.gif)
 
 #### [h2]通过onReady获取栈
 
@@ -2243,4 +2244,4 @@ struct NavigationExample2 {
 
 执行上述代码，效果展示如下。
 
-![](./img/zh-cn_image_0000002626071314.gif)
+![](./img/zh-cn_image_0000002661733351.gif)

@@ -2,7 +2,8 @@
 title: "Interface (MapCircle)"
 upstream_id: "harmonyos-references/map-map-mapcircle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:32.578087"
+content_hash: "8ab03f9beddb"
+synced_at: "2026-07-09T01:01:24.758317"
 ---
 
 # Interface (MapCircle)

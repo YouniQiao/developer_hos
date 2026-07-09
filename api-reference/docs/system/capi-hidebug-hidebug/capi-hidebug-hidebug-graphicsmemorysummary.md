@@ -2,7 +2,8 @@
 title: "HiDebug_GraphicsMemorySummary"
 upstream_id: "harmonyos-references/capi-hidebug-hidebug-graphicsmemorysummary"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:49.779540"
+content_hash: "788ce6a33f1f"
+synced_at: "2026-07-09T01:00:05.442981"
 ---
 
 # HiDebug_GraphicsMemorySummary

@@ -2,7 +2,8 @@
 title: "ArkUI_NodeAttributeType（滚动容器类组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-scrollablecontainer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:38.480493"
+content_hash: "8e13343cff69"
+synced_at: "2026-07-09T00:58:35.636697"
 ---
 
 # ArkUI_NodeAttributeType（滚动容器类组件相关属性）

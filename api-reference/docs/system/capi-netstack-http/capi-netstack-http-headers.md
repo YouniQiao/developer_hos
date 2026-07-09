@@ -2,7 +2,8 @@
 title: "Http_Headers"
 upstream_id: "harmonyos-references/capi-netstack-http-headers"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:55.672179"
+content_hash: "fd73f6f7fb73"
+synced_at: "2026-07-09T00:59:30.635102"
 ---
 
 # Http_Headers

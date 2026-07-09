@@ -2,7 +2,8 @@
 title: "ArkUI_NativeDialog"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-nativedialog"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:52.344748"
+content_hash: "65737028258c"
+synced_at: "2026-07-09T00:58:43.066501"
 ---
 
 # ArkUI_NativeDialog

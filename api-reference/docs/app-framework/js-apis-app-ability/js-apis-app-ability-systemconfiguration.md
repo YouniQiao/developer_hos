@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.systemConfiguration (系统环境模块)"
 upstream_id: "harmonyos-references/js-apis-app-ability-systemconfiguration"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:47.638661"
+content_hash: "27e7db488828"
+synced_at: "2026-07-09T00:57:05.516832"
 ---
 
 # @ohos.app.ability.systemConfiguration (系统环境模块)

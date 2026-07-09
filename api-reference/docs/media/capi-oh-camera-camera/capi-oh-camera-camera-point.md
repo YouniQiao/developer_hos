@@ -2,7 +2,8 @@
 title: "Camera_Point"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-point"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:16.366075"
+content_hash: "b4b0f77828c4"
+synced_at: "2026-07-09T01:00:25.838650"
 ---
 
 # Camera_Point

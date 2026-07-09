@@ -2,7 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-i"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:55.471729"
+content_hash: "4d20175856b5"
+synced_at: "2026-07-09T01:00:53.453138"
 ---
 
 # Interfaces (其他)

@@ -2,7 +2,8 @@
 title: "OhosImageRect"
 upstream_id: "harmonyos-references/capi-image-ohosimagerect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:29.824409"
+content_hash: "d53d57c73c1e"
+synced_at: "2026-07-09T01:00:35.402985"
 ---
 
 # OhosImageRect

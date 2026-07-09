@@ -2,7 +2,8 @@
 title: "OHIPCRemoteProxy"
 upstream_id: "harmonyos-references/capi-ohipcparcel-ohipcremoteproxy"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:21.902160"
+content_hash: "bfc87b3452f4"
+synced_at: "2026-07-09T00:59:06.261650"
 ---
 
 # OHIPCRemoteProxy

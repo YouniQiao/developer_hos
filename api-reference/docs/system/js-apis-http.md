@@ -2,7 +2,8 @@
 title: "@ohos.net.http (数据请求)"
 upstream_id: "harmonyos-references/js-apis-http"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:51.206151"
+content_hash: "e85399e4ecd8"
+synced_at: "2026-07-09T00:59:27.520004"
 ---
 
 # @ohos.net.http (数据请求)

@@ -2,7 +2,8 @@
 title: "xeg_vulkan_rt_reflection.h"
 upstream_id: "harmonyos-references/xengine-kit-xeg-vulkan-rt-reflection-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:15.786447"
+content_hash: "84be9ff38318"
+synced_at: "2026-07-09T01:01:09.663170"
 ---
 
 # xeg_vulkan_rt_reflection.h

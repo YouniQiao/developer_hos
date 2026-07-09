@@ -2,7 +2,8 @@
 title: "OH_DisplaySoloist"
 upstream_id: "harmonyos-references/capi-nativedisplaysoloist-oh-displaysoloist"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:07.705173"
+content_hash: "17fd89f1f7d6"
+synced_at: "2026-07-09T01:01:02.090386"
 ---
 
 # OH_DisplaySoloist

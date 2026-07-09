@@ -2,7 +2,8 @@
 title: "HiDebug_ThreadCpuUsage"
 upstream_id: "harmonyos-references/capi-hidebug-hidebug-threadcpuusage"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:48.782642"
+content_hash: "3f8046fd1cc1"
+synced_at: "2026-07-09T01:00:04.911038"
 ---
 
 # HiDebug_ThreadCpuUsage
@@ -13,7 +14,15 @@ typedef struct HiDebug_ThreadCpuUsage {...} HiDebug_ThreadCpuUsage
 
 #### 概述
 
-应用程序所有线程的CPU使用率结构体定义。
+当前进程所有线程的CPU使用率结构体定义。
+
+使用场景：
+
+应用性能监控：获取线程CPU使用率，监控应用的运行状态和性能瓶颈。
+
+线程性能优化：分析各线程的CPU占用情况，优化线程调度和资源分配。
+
+系统调试：在调试阶段追踪线程的CPU使用情况，定位性能问题。
 
 起始版本： 12
 

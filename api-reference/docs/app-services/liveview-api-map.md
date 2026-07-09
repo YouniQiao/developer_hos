@@ -2,7 +2,8 @@
 title: "实况窗Live View Kit与Push Kit的API字段关联"
 upstream_id: "harmonyos-references/liveview-api-map"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:30.481615"
+content_hash: "bd69608749aa"
+synced_at: "2026-07-09T01:01:23.015434"
 ---
 
 # 实况窗Live View Kit与Push Kit的API字段关联

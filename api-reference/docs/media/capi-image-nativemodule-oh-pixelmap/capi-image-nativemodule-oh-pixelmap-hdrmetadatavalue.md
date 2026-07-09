@@ -2,7 +2,8 @@
 title: "OH_Pixelmap_HdrMetadataValue"
 upstream_id: "harmonyos-references/capi-image-nativemodule-oh-pixelmap-hdrmetadatavalue"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:28.398913"
+content_hash: "83221dfaf94e"
+synced_at: "2026-07-09T01:00:34.562634"
 ---
 
 # OH_Pixelmap_HdrMetadataValue

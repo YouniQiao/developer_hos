@@ -2,7 +2,8 @@
 title: "Hid_EmitItem"
 upstream_id: "harmonyos-references/capi-hidddk-hid-emititem"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:32.390305"
+content_hash: "3f8a6f870614"
+synced_at: "2026-07-09T00:59:55.452123"
 ---
 
 # Hid_EmitItem

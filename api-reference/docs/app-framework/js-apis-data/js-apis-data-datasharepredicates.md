@@ -2,7 +2,8 @@
 title: "@ohos.data.dataSharePredicates (数据共享谓词)"
 upstream_id: "harmonyos-references/js-apis-data-datasharepredicates"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:02.061180"
+content_hash: "f3d30a4fe53e"
+synced_at: "2026-07-09T00:57:14.876934"
 ---
 
 # @ohos.data.dataSharePredicates (数据共享谓词)

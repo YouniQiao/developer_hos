@@ -2,7 +2,8 @@
 title: "Class (FileSelectorParam)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-fileselectorparam"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:06.255078"
+content_hash: "0823832d6f66"
+synced_at: "2026-07-09T00:58:53.477659"
 ---
 
 # Class (FileSelectorParam)

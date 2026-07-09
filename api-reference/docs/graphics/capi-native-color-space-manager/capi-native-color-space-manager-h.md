@@ -2,7 +2,8 @@
 title: "native_color_space_manager.h"
 upstream_id: "harmonyos-references/capi-native-color-space-manager-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:58.396056"
+content_hash: "9f9037f145b5"
+synced_at: "2026-07-09T01:00:54.261578"
 ---
 
 # native_color_space_manager.h

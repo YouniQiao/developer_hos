@@ -2,7 +2,8 @@
 title: "通过contractId查询签约信息"
 upstream_id: "harmonyos-references/payment-partner-pas-query-contractid"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:43.756397"
+content_hash: "dfd2a65c64e7"
+synced_at: "2026-07-09T01:01:33.273620"
 ---
 
 # 通过contractId查询签约信息

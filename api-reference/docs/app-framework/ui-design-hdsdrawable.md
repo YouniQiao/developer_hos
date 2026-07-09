@@ -2,7 +2,8 @@
 title: "hdsDrawable"
 upstream_id: "harmonyos-references/ui-design-hdsdrawable"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:24.867996"
+content_hash: "9b5b13fb6dfe"
+synced_at: "2026-07-09T00:59:09.559486"
 ---
 
 # hdsDrawable
@@ -57,7 +58,7 @@ LayeredDrawableDescriptor对象：判断的方法是打开对应的Symbol json�
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-ui-design)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -88,7 +89,7 @@ try {
   console.error(`getHdsLayeredIcon failed, code: ${code}, message: ${message}`);
 }
 ```
- ![](./img/zh-cn_image_0000002626071306.png)
+ ![](./img/zh-cn_image_0000002661733343.png)
 
 #### hdsDrawable.getHdsLayeredIconAsync
 
@@ -121,7 +122,7 @@ getHdsLayeredIconAsync(bundleName: string, layeredDrawableDescriptor: LayeredDra
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-ui-design)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -158,7 +159,7 @@ try {
   console.error(`getHdsLayeredIconAsync failed, code: ${code}, message: ${message}`);
 }
 ```
- ![](./img/zh-cn_image_0000002626071306.png)
+ ![](./img/zh-cn_image_0000002661733343.png)
 
 #### hdsDrawable.getHdsIcon
 
@@ -192,7 +193,7 @@ getHdsIcon(bundleName: string, pixelMap: image.PixelMap, size: number, mask: ima
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-ui-design)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -225,7 +226,7 @@ try {
   console.error(`getHdsIcon failed, code: ${code}, message: ${message}`);
 }
 ```
- ![](./img/zh-cn_image_0000002656470583.png)
+ ![](./img/zh-cn_image_0000002631254222.png)
 
 #### hdsDrawable.getHdsIconAsync
 
@@ -259,7 +260,7 @@ getHdsIconAsync(bundleName: string, pixelMap: image.PixelMap, size: number, mask
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-ui-design)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -299,7 +300,7 @@ try {
   console.error(`getHdsIconAsync failed, code: ${code}, message: ${message}`);
 }
 ```
- ![](./img/zh-cn_image_0000002656470583.png)
+ ![](./img/zh-cn_image_0000002631254222.png)
 
 #### hdsDrawable.getHdsLayeredIcons
 
@@ -330,7 +331,7 @@ getHdsLayeredIcons(icons: Array<LayeredIcon>, options: Options): Promise<Array<P
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-ui-design)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-ui-design)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -381,7 +382,7 @@ try {
   console.error(`getHdsLayeredIcons failed, code: ${code}, message: ${message}`);
 }
 ```
- ![](./img/zh-cn_image_0000002626071306.png)
+ ![](./img/zh-cn_image_0000002661733343.png)
 
 #### hdsDrawable.getHdsIcons
 
@@ -413,7 +414,7 @@ getHdsIcons(icons: Array<Icon>, mask: image.PixelMap, options: Options): Promise
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-ui-design)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-ui-design)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -467,7 +468,7 @@ try {
   console.error(`getHdsIcons failed, code: ${code}, message: ${message}`);
 }
 ```
- ![](./img/zh-cn_image_0000002656470583.png)
+ ![](./img/zh-cn_image_0000002631254222.png)
 
 #### LayeredIcon
 

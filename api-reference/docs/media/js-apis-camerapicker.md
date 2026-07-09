@@ -2,7 +2,8 @@
 title: "@ohos.multimedia.cameraPicker (相机选择器)"
 upstream_id: "harmonyos-references/js-apis-camerapicker"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:14.319343"
+content_hash: "5c170b7259b2"
+synced_at: "2026-07-09T01:00:24.004623"
 ---
 
 # @ohos.multimedia.cameraPicker (相机选择器)

@@ -2,7 +2,8 @@
 title: "OH_AVMediaSourceLoadingRequest"
 upstream_id: "harmonyos-references/capi-avmedia-source-oh-avmediasourceloadingrequest"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:42.754790"
+content_hash: "227f66a7edd0"
+synced_at: "2026-07-09T01:00:45.239180"
 ---
 
 # OH_AVMediaSourceLoadingRequest

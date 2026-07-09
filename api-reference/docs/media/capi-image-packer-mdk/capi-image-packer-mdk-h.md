@@ -2,7 +2,8 @@
 title: "image_packer_mdk.h"
 upstream_id: "harmonyos-references/capi-image-packer-mdk-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:26.542975"
+content_hash: "801accc08c17"
+synced_at: "2026-07-09T01:00:33.253963"
 ---
 
 # image_packer_mdk.h

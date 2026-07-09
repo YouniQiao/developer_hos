@@ -2,7 +2,8 @@
 title: "drawing_matrix.h"
 upstream_id: "harmonyos-references/capi-drawing-matrix-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:01.166311"
+content_hash: "d7c2e75d0a81"
+synced_at: "2026-07-09T01:00:57.204933"
 ---
 
 # drawing_matrix.h

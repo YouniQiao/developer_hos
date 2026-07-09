@@ -2,7 +2,8 @@
 title: "HuksExternalCryptoTypeApi"
 upstream_id: "harmonyos-references/capi-huksexternalcryptotypeapi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:42.752757"
+content_hash: "0b8aa2cc84c1"
+synced_at: "2026-07-09T00:59:20.444447"
 ---
 
 # HuksExternalCryptoTypeApi

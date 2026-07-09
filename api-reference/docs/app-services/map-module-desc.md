@@ -1,9 +1,12 @@
 ---
+
 title: "模块描述"
 upstream_id: "harmonyos-references/map-module-desc"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:31.788004"
+synced_at: "2026-07-09T01:01:23.906129"
+content_hash: "976d3a7278fc"
 ---
+
 
 # 模块描述
 

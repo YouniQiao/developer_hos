@@ -2,7 +2,8 @@
 title: "Functions"
 upstream_id: "harmonyos-references/arkts-apis-drm-f"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:19.456313"
+content_hash: "8a29e5c72e8a"
+synced_at: "2026-07-09T01:00:27.919463"
 ---
 
 # Functions

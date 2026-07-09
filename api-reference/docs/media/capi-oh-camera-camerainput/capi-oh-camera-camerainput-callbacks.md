@@ -2,7 +2,8 @@
 title: "CameraInput_Callbacks"
 upstream_id: "harmonyos-references/capi-oh-camera-camerainput-callbacks"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:17.659856"
+content_hash: "b31454bff297"
+synced_at: "2026-07-09T01:00:26.618300"
 ---
 
 # CameraInput_Callbacks

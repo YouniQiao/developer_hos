@@ -2,7 +2,8 @@
 title: "@hms.core.account.shippingAddress (华为账号收货地址管理服务)"
 upstream_id: "harmonyos-references/account-choose-address"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:18.009192"
+content_hash: "1d630bcc8334"
+synced_at: "2026-07-09T01:01:11.759407"
 ---
 
 # @hms.core.account.shippingAddress (华为账号收货地址管理服务)
@@ -94,7 +95,7 @@ chooseAddress(context: common.Context): Promise<AddressInfo>
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |

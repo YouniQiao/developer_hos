@@ -2,7 +2,8 @@
 title: "DisplaySoloist_ExpectedRateRange"
 upstream_id: "harmonyos-references/capi-nativedisplaysoloist-displaysoloist-expectedraterange"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:05.760899"
+content_hash: "54d48e53301b"
+synced_at: "2026-07-09T01:01:00.361049"
 ---
 
 # DisplaySoloist_ExpectedRateRange

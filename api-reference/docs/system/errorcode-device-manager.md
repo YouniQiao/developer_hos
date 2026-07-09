@@ -1,9 +1,12 @@
 ---
+
 title: "设备管理错误码"
 upstream_id: "harmonyos-references/errorcode-device-manager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:49.869547"
+synced_at: "2026-07-09T00:59:26.151992"
+content_hash: "07d87146c69a"
 ---
+
 
 # 设备管理错误码
 

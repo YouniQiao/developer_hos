@@ -2,7 +2,8 @@
 title: "Input_AxisEvent"
 upstream_id: "harmonyos-references/capi-input-input-axisevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:20.073594"
+content_hash: "76d604392a37"
+synced_at: "2026-07-09T00:59:50.136530"
 ---
 
 # Input_AxisEvent

@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.ChildProcessOptions (子进程启动选项)"
 upstream_id: "harmonyos-references/js-apis-app-ability-childprocessoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:46.364275"
+content_hash: "bb21b5927a76"
+synced_at: "2026-07-09T00:57:03.889638"
 ---
 
 # @ohos.app.ability.ChildProcessOptions (子进程启动选项)

@@ -2,14 +2,15 @@
 title: "服务通知"
 upstream_id: "harmonyos-references/push-api-service-noti"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:51.260947"
+content_hash: "7481d069aec1"
+synced_at: "2026-07-09T01:01:38.281286"
 ---
 
 # 服务通知
 
 #### 功能介绍
 
-元服务通过调用[requestSubscribeNotification](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-servicenotification#requestsubscribenotification)获取用户授权后，可调用服务通知REST API，完成订阅消息下发功能。
+元服务通过调用[requestSubscribeNotification](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-servicenotification#servicenotificationrequestsubscribenotification)获取用户授权后，可调用服务通知REST API，完成订阅消息下发功能。
 
 #### 约束与限制
 
@@ -70,8 +71,10 @@ synced_at: "2026-06-24T20:53:51.260947"
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| actionType | 是 | Integer | 消息点击后的行为。 0：默认打开元服务首页，支持通过指定data参数跳转至该元服务内指定页面，详情请见[调用方UIAbility指定启动页面](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/uiability-intra-device-interaction#调用方uiability指定启动页面)。 |
-| data | 否 | Object | 当actionType为0时，该字段用于在点击按钮后将数据传递给元服务，同时支持通过指定该字段跳转至该元服务内指定页面。格式必须为key-value形式，最大长度1024字节。示例： {"key1": "value1", "key2": "value2"} |
+| actionType | 是 | Integer | 消息点击后的行为。 0：打开元服务首页。 1：打开元服务指定页面。 |
+| action | 否 | String | 应用内置页面ability对应的action。当actionType为1时，字段action和uri至少填写一个，若都填写优先寻找与action匹配的应用页面。 |
+| uri | 否 | String | 应用内置页面ability对应的uri。当actionType为1时，字段action和uri至少填写一个，若都填写优先寻找与action匹配的应用页面。 |
+| data | 否 | Object | 当actionType为0或1时，该字段用于在点击按钮后将数据传递给元服务。格式必须为key-value形式，最大长度1024字节。示例： {"key1": "value1", "key2": "value2"} |
 
 #### 请求示例
 
@@ -80,6 +83,7 @@ synced_at: "2026-06-24T20:53:51.260947"
 POST "https://push-api.cloud.huawei.com/v1/[projectId]/service_notification/send"
  
 // Request Header
+Content-Type: application/json
 Authorization: Bearer eyJr*****OiIx---****.eyJh*****iJodHR--***.QRod*****4Gp---****
 
 // Request Body

@@ -2,7 +2,8 @@
 title: "RenderNode"
 upstream_id: "harmonyos-references/js-apis-arkui-rendernode"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:28.067110"
+content_hash: "7eb42dc01702"
+synced_at: "2026-07-09T00:57:32.594060"
 ---
 
 # RenderNode
@@ -1887,7 +1888,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469493.jpg)
+ ![](./img/zh-cn_image_0000002661732235.jpg)
 
 #### [h2]shadowRadius
 
@@ -1968,7 +1969,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349541.jpg)
+ ![](./img/zh-cn_image_0000002631253114.jpg)
 
 #### [h2]draw
 
@@ -2794,7 +2795,7 @@ set markNodeGroup(isNodeGroup: boolean)
 
 标记是否优先绘制节点及其子节点。若设置为true，则透明度等属性将在节点绘制完毕后再进行合成。设置效果如下：
 
-![](./img/zh-cn_image_0000002626230128.png)
+![](./img/zh-cn_image_0000002661612297.png)
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -3064,4 +3065,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070218.gif)
+ ![](./img/zh-cn_image_0000002631413006.gif)

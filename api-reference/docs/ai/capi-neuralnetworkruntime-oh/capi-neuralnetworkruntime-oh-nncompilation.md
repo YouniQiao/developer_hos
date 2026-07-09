@@ -2,7 +2,8 @@
 title: "OH_NNCompilation"
 upstream_id: "harmonyos-references/capi-neuralnetworkruntime-oh-nncompilation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:00.105634"
+content_hash: "7de3abaf64f0"
+synced_at: "2026-07-09T01:01:44.714225"
 ---
 
 # OH_NNCompilation

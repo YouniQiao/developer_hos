@@ -2,7 +2,8 @@
 title: "OH_AudioFormat"
 upstream_id: "harmonyos-references/capi-ohaudiosuite-oh-audioformat"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:59.384740"
+content_hash: "94265343dcb3"
+synced_at: "2026-07-09T01:00:11.848807"
 ---
 
 # OH_AudioFormat

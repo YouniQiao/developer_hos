@@ -2,7 +2,8 @@
 title: "OH_Drawing_Canvas"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-canvas"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:08.961833"
+content_hash: "1e86556b8c5a"
+synced_at: "2026-07-09T01:01:03.167131"
 ---
 
 # OH_Drawing_Canvas

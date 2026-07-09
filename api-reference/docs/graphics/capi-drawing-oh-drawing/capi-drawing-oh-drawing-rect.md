@@ -2,7 +2,8 @@
 title: "OH_Drawing_Rect"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-rect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:09.691394"
+content_hash: "9e41d82b48c3"
+synced_at: "2026-07-09T01:01:03.588778"
 ---
 
 # OH_Drawing_Rect

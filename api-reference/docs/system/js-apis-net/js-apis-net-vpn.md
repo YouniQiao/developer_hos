@@ -2,7 +2,8 @@
 title: "@ohos.net.vpn (VPN管理)"
 upstream_id: "harmonyos-references/js-apis-net-vpn"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:52.275780"
+content_hash: "4b3f5ba0165d"
+synced_at: "2026-07-09T00:59:27.888276"
 ---
 
 # @ohos.net.vpn (VPN管理)

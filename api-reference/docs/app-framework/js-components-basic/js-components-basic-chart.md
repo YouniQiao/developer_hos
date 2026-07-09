@@ -2,14 +2,15 @@
 title: "chart"
 upstream_id: "harmonyos-references/js-components-basic-chart"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:05.257423"
+content_hash: "80c81174cb1c"
+synced_at: "2026-07-09T00:58:21.547901"
 ---
 
 # chart
 
 ![](./img/note_3.0-zh-cn.png) 从API version 4开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
 
-图表组件，用于呈现线形图、柱状图、量规图界面。
+图表组件，用于呈现线形图、柱状图、量规图、进度类圆形图表、加载类圆形图表、占比类圆形图表界面。
 
 #### 权限列表
 
@@ -146,7 +147,7 @@ synced_at: "2026-06-24T20:49:05.257423"
 | radius | | - | 否 | 量规组件刻度条半径，该样式优先于通用样式的width和height样式。该样式需要和center-x和center-y一起配置才能生效。（仅量规图支持） |
 | colors | Array | - | 否 | 量规组件刻度条每一个区段的颜色。 如：colors: #ff0000, #00ff00。（仅量规图支持） |
 | weights | Array | - | 否 | 量规组件刻度条每一个区段的权重。 如：weights: 2, 2。（仅量规图支持） |
-| font-family5+ | Array | - | 否 | 表示绘制注释的字体样式，支持[自定义字体](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-common-customizing-font)。 |
+| font-family5+ | Array | - | 否 | 表示绘制注释的字体族，支持[自定义字体](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-common-customizing-font)。 |
 | font-size5+ | | - | 否 | 表示绘制注释的字体的大小。 |
 
 #### 事件
@@ -252,7 +253,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230886.png)
+ ![](./img/zh-cn_image_0000002631413780.png)
 2. 柱状图 
 ```
 <!-- xxx.hml -->
@@ -318,7 +319,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070976.png)
+ ![](./img/zh-cn_image_0000002661733009.png)
 3. 量规图 
 ```
 <!-- xxx.hml -->
@@ -345,7 +346,7 @@ export default {
   weights: 4, 2, 1;
 }
 ```
- ![](./img/zh-cn_image_0000002656470253.png)
+ ![](./img/zh-cn_image_0000002631253890.png)
 4. 进度类、加载类、占比类圆形图表 
 ```
 <!-- xxx.hml -->
@@ -419,4 +420,4 @@ export default {
    }
 }
 ```
- ![](./img/zh-cn_image_0000002656350301.gif)
+ ![](./img/zh-cn_image_0000002661613071.gif)

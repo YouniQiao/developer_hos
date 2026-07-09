@@ -2,7 +2,8 @@
 title: "OH_AVFormat"
 upstream_id: "harmonyos-references/capi-core-oh-avformat"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:04.215583"
+content_hash: "83cf3621d942"
+synced_at: "2026-07-09T01:00:15.842588"
 ---
 
 # OH_AVFormat

@@ -2,7 +2,8 @@
 title: "CanvasGradient对象"
 upstream_id: "harmonyos-references/js-components-canvas-canvasgradient"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:09.307004"
+content_hash: "a2fd7925a067"
+synced_at: "2026-07-09T00:58:23.405844"
 ---
 
 # CanvasGradient对象
@@ -40,12 +41,12 @@ export default {
     const el = this.$refs.canvas;
     const ctx = el.getContext('2d');
     const gradient = ctx.createLinearGradient(50, 0, 300, 100);
-    gradient.addColorStop(0.0, '#ff0000')
-    gradient.addColorStop(0.5, '#ffffff')
-    gradient.addColorStop(1.0, '#00ff00')
-    ctx.fillStyle = gradient
-    ctx.fillRect(0, 0, 300, 300)
+    gradient.addColorStop(0.0, '#ff0000');
+    gradient.addColorStop(0.5, '#ffffff');
+    gradient.addColorStop(1.0, '#00ff00');
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, 300, 300);
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230930.png)
+ ![](./img/zh-cn_image_0000002631413824.png)

@@ -2,7 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-data-relationalstore-i"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:03.894415"
+content_hash: "ace40e77df74"
+synced_at: "2026-07-09T00:57:16.066472"
 ---
 
 # Interfaces (其他)

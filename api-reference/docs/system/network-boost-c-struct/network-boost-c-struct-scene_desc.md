@@ -2,7 +2,8 @@
 title: "NetworkBoost_SceneDesc"
 upstream_id: "harmonyos-references/network-boost-c-struct-scene_desc"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:58.536912"
+content_hash: "fb72a3a94425"
+synced_at: "2026-07-09T00:59:32.986511"
 ---
 
 # NetworkBoost_SceneDesc

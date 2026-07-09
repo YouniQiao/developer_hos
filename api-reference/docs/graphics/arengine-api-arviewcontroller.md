@@ -2,7 +2,8 @@
 title: "arViewController（AR场景管理能力）"
 upstream_id: "harmonyos-references/arengine-api-arviewcontroller"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:49.532035"
+content_hash: "15c2b3eff916"
+synced_at: "2026-07-09T01:00:49.843680"
 ---
 
 # arViewController（AR场景管理能力）
@@ -513,7 +514,7 @@ setBlendShapeWeight(node: Node, type: arEngine.ARBlendShapeType, weight: number)
 
 | **类型** | **说明** |
 | --- | --- |
-| boolean | 微表情权重设置结果。true代表成功，false代表失败 |
+| boolean | 返回微表情权重设置结果。返回值true表示成功，false表示失败。 |
 
 错误码：
 
@@ -643,7 +644,7 @@ loadGSModel(resourcePath: spatialRender.GSImportSettings, location: arEngine.ARP
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | resourcePath | [spatialRender.GSImportSettings](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/spatial-recon-spatialrender#gsimportsettings) | 是 | 存储模型的路径。 |
-| location | [arEngine.ARPose](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#arpose) | 是 | 指定想要放置模型的关键点。 |
+| location | [arEngine.ARPose](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-api-arengine#arpose) | 是 | 指定模型的放置位姿。 |
 
 返回值：
 

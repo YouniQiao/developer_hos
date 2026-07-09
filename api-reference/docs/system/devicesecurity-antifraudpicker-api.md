@@ -2,7 +2,8 @@
 title: "AntifraudPicker（反诈选择器）"
 upstream_id: "harmonyos-references/devicesecurity-antifraudpicker-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:35.305854"
+content_hash: "b6d4740ebba7"
+synced_at: "2026-07-09T00:59:15.255484"
 ---
 
 # AntifraudPicker（反诈选择器）

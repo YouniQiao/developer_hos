@@ -2,7 +2,8 @@
 title: "OH_AVCodecCallback"
 upstream_id: "harmonyos-references/capi-codecbase-oh-avcodeccallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:03.695093"
+content_hash: "18c16f189cfd"
+synced_at: "2026-07-09T01:00:15.500087"
 ---
 
 # OH_AVCodecCallback

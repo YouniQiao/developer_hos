@@ -2,7 +2,8 @@
 title: "ARKUI_TextPickerCascadeRangeContent"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-textpickercascaderangecontent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:50.980146"
+content_hash: "407719108ad0"
+synced_at: "2026-07-09T00:58:42.368685"
 ---
 
 # ARKUI_TextPickerCascadeRangeContent

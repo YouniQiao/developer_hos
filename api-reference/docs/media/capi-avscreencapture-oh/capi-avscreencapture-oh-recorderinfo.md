@@ -2,7 +2,8 @@
 title: "OH_RecorderInfo"
 upstream_id: "harmonyos-references/capi-avscreencapture-oh-recorderinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:40.276789"
+content_hash: "384098ef6098"
+synced_at: "2026-07-09T01:00:43.761780"
 ---
 
 # OH_RecorderInfo

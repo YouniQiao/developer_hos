@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.ShareExtensionAbility (支持分享详情页接入的ExtensionAbility组件)"
 upstream_id: "harmonyos-references/js-apis-app-ability-shareextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:47.565636"
+content_hash: "a3f00affc9d1"
+synced_at: "2026-07-09T00:57:04.944056"
 ---
 
 # @ohos.app.ability.ShareExtensionAbility (支持分享详情页接入的ExtensionAbility组件)

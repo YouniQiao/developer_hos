@@ -2,7 +2,8 @@
 title: "DatePicker"
 upstream_id: "harmonyos-references/ts-basic-components-datepicker"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:07.084770"
+content_hash: "29b6e5da9f62"
+synced_at: "2026-07-09T00:57:53.753345"
 ---
 
 # DatePicker
@@ -421,7 +422,7 @@ struct DatePickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230390.gif)
+ ![](./img/zh-cn_image_0000002631413276.gif)
 
 #### [h2]示例2（设置文本样式）
 
@@ -453,7 +454,7 @@ struct DatePickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070480.png)
+ ![](./img/zh-cn_image_0000002661732507.png)
 
 #### [h2]示例3（设置显示年、月和月、日列）
 
@@ -505,7 +506,7 @@ struct DatePickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469757.gif)
+ ![](./img/zh-cn_image_0000002631253384.gif)
 
 #### [h2]示例4（设置循环滚动）
 
@@ -542,4 +543,4 @@ struct DatePickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349805.gif)
+ ![](./img/zh-cn_image_0000002661612567.gif)

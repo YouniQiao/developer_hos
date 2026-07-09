@@ -2,7 +2,8 @@
 title: "@ohos.telephony.vcard (VCard模块)"
 upstream_id: "harmonyos-references/js-apis-vcard"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:05.050353"
+content_hash: "51480b11508a"
+synced_at: "2026-07-09T00:59:38.107497"
 ---
 
 # @ohos.telephony.vcard (VCard模块)

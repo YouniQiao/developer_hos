@@ -2,7 +2,8 @@
 title: "ProcessData"
 upstream_id: "harmonyos-references/js-apis-inner-application-processdata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:54.381089"
+content_hash: "cdfdf844b3c4"
+synced_at: "2026-07-09T00:57:09.752898"
 ---
 
 # ProcessData

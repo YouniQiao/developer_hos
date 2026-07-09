@@ -2,7 +2,8 @@
 title: "WindowManager_Rect"
 upstream_id: "harmonyos-references/capi-windowmanager-rect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:56.348156"
+content_hash: "4db7b6b8d643"
+synced_at: "2026-07-09T00:58:45.851217"
 ---
 
 # WindowManager_Rect

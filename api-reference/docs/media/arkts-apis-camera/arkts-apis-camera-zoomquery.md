@@ -2,7 +2,8 @@
 title: "Interface (ZoomQuery)"
 upstream_id: "harmonyos-references/arkts-apis-camera-zoomquery"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:13.905709"
+content_hash: "52213ef155ab"
+synced_at: "2026-07-09T01:00:23.634587"
 ---
 
 # Interface (ZoomQuery)

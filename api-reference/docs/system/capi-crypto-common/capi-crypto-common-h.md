@@ -2,7 +2,8 @@
 title: "crypto_common.h"
 upstream_id: "harmonyos-references/capi-crypto-common-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:31.121420"
+content_hash: "89fbdd97e8f1"
+synced_at: "2026-07-09T00:59:12.387427"
 ---
 
 # crypto_common.h

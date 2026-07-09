@@ -2,7 +2,8 @@
 title: "Image_Scale"
 upstream_id: "harmonyos-references/capi-image-nativemodule-image-scale"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:32.641685"
+content_hash: "1485c764e7ba"
+synced_at: "2026-07-09T01:00:37.296383"
 ---
 
 # Image_Scale

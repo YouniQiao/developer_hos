@@ -2,7 +2,8 @@
 title: "@ohos.hiTraceMeter (性能打点)"
 upstream_id: "harmonyos-references/js-apis-hitracemeter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:45.156156"
+content_hash: "17c55f06b9d2"
+synced_at: "2026-07-09T01:00:02.687339"
 ---
 
 # @ohos.hiTraceMeter (性能打点)

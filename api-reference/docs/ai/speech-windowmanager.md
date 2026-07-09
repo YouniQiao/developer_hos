@@ -2,7 +2,8 @@
 title: "WindowManager（窗口管理）"
 upstream_id: "harmonyos-references/speech-windowmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:00.545652"
+content_hash: "0f8b7e692dd7"
+synced_at: "2026-07-09T01:01:45.060139"
 ---
 
 # WindowManager（窗口管理）

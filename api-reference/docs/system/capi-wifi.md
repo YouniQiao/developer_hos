@@ -2,7 +2,8 @@
 title: "Wifi"
 upstream_id: "harmonyos-references/capi-wifi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:47.884548"
+content_hash: "7a10d923278f"
+synced_at: "2026-07-09T00:59:24.527489"
 ---
 
 # Wifi

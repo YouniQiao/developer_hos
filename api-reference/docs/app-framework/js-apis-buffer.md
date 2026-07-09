@@ -2,7 +2,8 @@
 title: "@ohos.buffer (Buffer)"
 upstream_id: "harmonyos-references/js-apis-buffer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:15.365743"
+content_hash: "7994fa76a14d"
+synced_at: "2026-07-09T00:57:25.639327"
 ---
 
 # @ohos.buffer (Buffer)

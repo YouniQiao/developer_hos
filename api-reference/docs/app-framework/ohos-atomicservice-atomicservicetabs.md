@@ -2,7 +2,8 @@
 title: "AtomicServiceTabs"
 upstream_id: "harmonyos-references/ohos-atomicservice-atomicservicetabs"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:48.594495"
+content_hash: "cb5c28b4fdd7"
+synced_at: "2026-07-09T00:58:12.206033"
 ---
 
 # AtomicServiceTabs
@@ -211,7 +212,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070872.png)
+ ![](./img/zh-cn_image_0000002661612965.png)
 
 #### [h2]示例2(纯图标样式)
 
@@ -283,7 +284,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470149.png)
+ ![](./img/zh-cn_image_0000002631413676.png)
 
 #### [h2]示例3(图标加文本，自定义图文排布)
 
@@ -377,4 +378,4 @@ struct AtomicserviceTabs  {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350197.gif)
+ ![](./img/zh-cn_image_0000002661732905.gif)

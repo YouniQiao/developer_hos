@@ -2,7 +2,8 @@
 title: "@ohos.enterprise.wifiManager（Wi-Fi管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-wifimanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:24.464433"
+content_hash: "6b0d391b65e1"
+synced_at: "2026-07-09T00:59:53.215608"
 ---
 
 # @ohos.enterprise.wifiManager（Wi-Fi管理）

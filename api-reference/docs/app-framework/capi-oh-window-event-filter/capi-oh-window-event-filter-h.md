@@ -2,7 +2,8 @@
 title: "oh_window_event_filter.h"
 upstream_id: "harmonyos-references/capi-oh-window-event-filter-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:42.467635"
+content_hash: "e7d0f842ac87"
+synced_at: "2026-07-09T00:58:37.591676"
 ---
 
 # oh_window_event_filter.h

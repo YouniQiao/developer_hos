@@ -2,7 +2,8 @@
 title: "native_audio_routing_manager.h"
 upstream_id: "harmonyos-references/capi-native-audio-routing-manager-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:55.128727"
+content_hash: "c68f84b3c0c7"
+synced_at: "2026-07-09T01:00:09.794659"
 ---
 
 # native_audio_routing_manager.h

@@ -2,7 +2,8 @@
 title: "Media错误码"
 upstream_id: "harmonyos-references/errorcode-media"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:43.354688"
+content_hash: "ffd93f30c562"
+synced_at: "2026-07-09T01:00:45.973898"
 ---
 
 # Media错误码

@@ -2,7 +2,8 @@
 title: "ArkUI_ParallelInnerGestureEvent"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-parallelinnergestureevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:47.119257"
+content_hash: "5423f599bcc9"
+synced_at: "2026-07-09T00:58:40.320696"
 ---
 
 # ArkUI_ParallelInnerGestureEvent

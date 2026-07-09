@@ -2,7 +2,8 @@
 title: "drawing_text_blob.h"
 upstream_id: "harmonyos-references/capi-drawing-text-blob-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:02.992191"
+content_hash: "1b0962dc2416"
+synced_at: "2026-07-09T01:00:58.202459"
 ---
 
 # drawing_text_blob.h

@@ -1,9 +1,12 @@
 ---
+
 title: "证书管理错误码"
 upstream_id: "harmonyos-references/errorcode-certmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:42.102939"
+synced_at: "2026-07-09T00:59:19.994825"
+content_hash: "8c4c6af83635"
 ---
+
 
 # 证书管理错误码
 

@@ -2,7 +2,8 @@
 title: "Interface (VideoSession)"
 upstream_id: "harmonyos-references/arkts-apis-camera-videosession"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:13.478539"
+content_hash: "f2174d6539be"
+synced_at: "2026-07-09T01:00:23.915731"
 ---
 
 # Interface (VideoSession)

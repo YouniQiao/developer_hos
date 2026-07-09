@@ -2,7 +2,8 @@
 title: "XEG_TemporalUpscaleCreateInfo"
 upstream_id: "harmonyos-references/xengine-kit-xeg-temporalupscalecreateinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:17.557232"
+content_hash: "2b3b078f53a4"
+synced_at: "2026-07-09T01:01:11.104086"
 ---
 
 # XEG_TemporalUpscaleCreateInfo

@@ -2,7 +2,8 @@
 title: "InputMethod_TextAvoidInfo"
 upstream_id: "harmonyos-references/capi-inputmethod-inputmethod-textavoidinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:20.435921"
+content_hash: "d373d6164560"
+synced_at: "2026-07-09T00:59:05.377780"
 ---
 
 # InputMethod_TextAvoidInfo

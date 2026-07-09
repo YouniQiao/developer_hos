@@ -2,7 +2,8 @@
 title: "解绑账号"
 upstream_id: "harmonyos-references/gameservice-unbindplayer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:26.157495"
+content_hash: "e4303f8e0825"
+synced_at: "2026-07-09T01:01:19.244571"
 ---
 
 # 解绑账号
@@ -90,9 +91,9 @@ Content-Type: application/json;charset=UTF-8
 ```
 // 组装body内除sign和method以外的参数，此处参数值仅为示例
 Map<String, String> paramsMap = new HashMap<>();
-paramsMap.put("appId", "appId");
-paramsMap.put("cpId", "cpId");
-paramsMap.put("teamPlayerId", "teamPlayerId");
+paramsMap.put("appId", "135***568");
+paramsMap.put("cpId", "123***21f");
+paramsMap.put("teamPlayerId", "E5B***E9B");
 paramsMap.put("ts", 123456L);
 
 // 对参数进行字典序排序

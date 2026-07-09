@@ -2,7 +2,8 @@
 title: "Asset_Attr"
 upstream_id: "harmonyos-references/capi-assettype-asset-attr"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:29.243200"
+content_hash: "23b52f4b0254"
+synced_at: "2026-07-09T00:59:10.850244"
 ---
 
 # Asset_Attr

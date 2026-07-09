@@ -2,7 +2,8 @@
 title: "OH_AudioRoutingManager"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audioroutingmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:57.520247"
+content_hash: "cbd324bd57cc"
+synced_at: "2026-07-09T01:00:10.841236"
 ---
 
 # OH_AudioRoutingManager

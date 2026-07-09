@@ -2,7 +2,8 @@
 title: "healthSequenceHelper (健康记录类型常量)"
 upstream_id: "harmonyos-references/health-api-healthsequencehelper"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:26.987466"
+content_hash: "857c62d0d8cb"
+synced_at: "2026-07-09T01:01:20.277234"
 ---
 
 # healthSequenceHelper (健康记录类型常量)

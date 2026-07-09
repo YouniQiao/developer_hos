@@ -2,7 +2,8 @@
 title: "@ohos.multimodalInput.keyEvent (按键输入事件)"
 upstream_id: "harmonyos-references/js-apis-keyevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:17.936130"
+content_hash: "724506c8b196"
+synced_at: "2026-07-09T00:59:48.461691"
 ---
 
 # @ohos.multimodalInput.keyEvent (按键输入事件)

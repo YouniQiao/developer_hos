@@ -2,7 +2,8 @@
 title: "AVSession_PlaybackPosition"
 upstream_id: "harmonyos-references/capi-ohavsession-avsession-playbackposition"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:09.026311"
+content_hash: "141b5d426804"
+synced_at: "2026-07-09T01:00:20.133511"
 ---
 
 # AVSession_PlaybackPosition

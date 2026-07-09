@@ -2,7 +2,8 @@
 title: "@ohos.security.identifySensitiveContent (识别敏感内容)"
 upstream_id: "harmonyos-references/js-apis-identifysensitivecontent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:33.735814"
+content_hash: "25feeb4f636e"
+synced_at: "2026-07-09T00:59:14.193472"
 ---
 
 # @ohos.security.identifySensitiveContent (识别敏感内容)

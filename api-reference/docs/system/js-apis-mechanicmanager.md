@@ -2,7 +2,8 @@
 title: "@ohos.distributedHardware.mechanicManager (机械体控制模块)"
 upstream_id: "harmonyos-references/js-apis-mechanicmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:43.433469"
+content_hash: "880786b68031"
+synced_at: "2026-07-09T01:00:01.709821"
 ---
 
 # @ohos.distributedHardware.mechanicManager (机械体控制模块)

@@ -2,7 +2,8 @@
 title: "@ohos.settings (设置数据项名称)"
 upstream_id: "harmonyos-references/js-apis-settings"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:09.024075"
+content_hash: "3a9cd2431b20"
+synced_at: "2026-07-09T00:59:41.508114"
 ---
 
 # @ohos.settings (设置数据项名称)
@@ -1166,7 +1167,7 @@ openBiometricsSettingsPage(context: Context): void
 
 系统能力：SystemCapability.Applications.Settings.Core
 
-设备行为差异：该接口在Phone、Tablet、PC/2in1设备中可正常调用，在其他设备调用不生效。
+设备行为差异：该接口在Phone、Tablet、PC/2in1、Wearable设备中可正常调用，在其他设备调用不生效。
 
 参数：
 
@@ -1208,7 +1209,7 @@ openNfcSettingsPage(context: Context): void
 
 系统能力：SystemCapability.Applications.Settings.Core
 
-设备行为差异：该接口在Phone、Tablet设备中可正常调用，在其他设备调用不生效。
+设备行为差异：该接口在Phone、Tablet、Wearable设备中可正常调用，在其他设备调用不生效。
 
 参数：
 
@@ -1454,7 +1455,7 @@ openSoundSettingsPage(context: Context): void
 
 系统能力：SystemCapability.Applications.Settings.Core
 
-设备行为差异：该接口在Phone、Tablet、PC/2in1设备中可正常调用，在其他设备调用不生效。
+设备行为差异：该接口在Phone、Tablet设备中可正常调用，在其他设备调用不生效。
 
 参数：
 
@@ -1532,7 +1533,7 @@ try {
 
 #### settings.openAppDetailSettingsPage
 
-openAppDetailSettingsPage(context: Context, bundleName: string, appIndex?: int): void
+openAppDetailSettingsPage(context: Context, bundleName: string, appIndex?: number): void
 
 打开应用详情设置页面。
 
@@ -1550,7 +1551,7 @@ openAppDetailSettingsPage(context: Context, bundleName: string, appIndex?: int):
 | --- | --- | --- | --- |
 | context | [Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | 应用上下文（仅支持UIAbilityContext和ExtensionContext）。 Stage模型的应用Context定义见[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)。 |
 | bundleName | string | 是 | 应用包名 |
-| appIndex | int | 否 | 应用分身的索引 |
+| appIndex | number | 否 | 应用分身的索引 |
 
 错误码：
 

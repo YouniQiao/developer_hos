@@ -2,7 +2,8 @@
 title: "search"
 upstream_id: "harmonyos-references/js-components-basic-search"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:07.354406"
+content_hash: "b4b2bf1c9ba2"
+synced_at: "2026-07-09T00:58:22.507141"
 ---
 
 # search
@@ -83,4 +84,4 @@ synced_at: "2026-06-24T20:49:07.354406"
   align-items: center;
 }
 ```
- ![](./img/zh-cn_image_0000002626230898.png)
+ ![](./img/zh-cn_image_0000002631413792.png)

@@ -2,7 +2,8 @@
 title: "Interface (Marker)"
 upstream_id: "harmonyos-references/map-map-marker"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:32.216438"
+content_hash: "3f738e9f1ff7"
+synced_at: "2026-07-09T01:01:24.652272"
 ---
 
 # Interface (Marker)
@@ -388,7 +389,7 @@ setMarkerAnchor(anchorU: number, anchorV: number): void
 
 设置标记的锚点位置。锚点是标记图标接触地图平面的点，图标的左顶点为（0, 0）点，右顶点为（1, 0）点，左底点为（0, 1）点，右底点为（1, 1）点。例如，在标记X（0.5, 0.3）处的锚点坐标如下：
 
-![](./img/zh-cn_image_0000002626071694.png)
+![](./img/zh-cn_image_0000002661733735.png)
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -929,7 +930,7 @@ setOffset(x: number, y: number): void
 示例：
 
 ```
-marker.setOffset(20,20);
+marker.setOffset(20, 20);
 ```
 
 #### [h2]getOffsetX

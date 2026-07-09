@@ -2,7 +2,8 @@
 title: "ImageEffect_Region"
 upstream_id: "harmonyos-references/capi-imageeffect-imageeffect-region"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:32.213600"
+content_hash: "3d105d441087"
+synced_at: "2026-07-09T01:00:37.056758"
 ---
 
 # ImageEffect_Region

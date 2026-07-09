@@ -2,7 +2,8 @@
 title: "native_audio_suite_base.h"
 upstream_id: "harmonyos-references/capi-native-audio-suite-base-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:56.635187"
+content_hash: "8edcb34b29ae"
+synced_at: "2026-07-09T01:00:10.943575"
 ---
 
 # native_audio_suite_base.h

@@ -2,7 +2,8 @@
 title: "NativeWindow"
 upstream_id: "harmonyos-references/capi-videoprocessing-nativewindow"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:42.104270"
+content_hash: "d569fc45e2f1"
+synced_at: "2026-07-09T01:00:44.787435"
 ---
 
 # NativeWindow

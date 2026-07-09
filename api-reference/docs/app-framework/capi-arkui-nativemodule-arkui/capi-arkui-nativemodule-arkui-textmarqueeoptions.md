@@ -2,7 +2,8 @@
 title: "ArkUI_TextMarqueeOptions"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-textmarqueeoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:56.091924"
+content_hash: "fb4da010672b"
+synced_at: "2026-07-09T00:58:45.582249"
 ---
 
 # ArkUI_TextMarqueeOptions

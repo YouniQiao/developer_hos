@@ -2,7 +2,8 @@
 title: "热管理错误码"
 upstream_id: "harmonyos-references/errorcode-thermal"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:13.150324"
+content_hash: "24a2f7232a53"
+synced_at: "2026-07-09T00:59:44.704892"
 ---
 
 # 热管理错误码

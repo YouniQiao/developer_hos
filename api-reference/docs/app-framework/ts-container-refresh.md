@@ -2,7 +2,8 @@
 title: "Refresh"
 upstream_id: "harmonyos-references/ts-container-refresh"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:59.850174"
+content_hash: "dc6dc937e112"
+synced_at: "2026-07-09T00:57:49.823486"
 ---
 
 # Refresh
@@ -337,7 +338,7 @@ struct RefreshExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070424.gif)
+ ![](./img/zh-cn_image_0000002661732449.gif)
 
 #### [h2]示例2（设置刷新区域显示文本）
 
@@ -396,7 +397,7 @@ struct RefreshExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469701.gif)
+ ![](./img/zh-cn_image_0000002631253328.gif)
 
 #### [h2]示例3（自定义刷新区域显示内容-builder）
 
@@ -467,7 +468,7 @@ struct RefreshExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349749.gif)
+ ![](./img/zh-cn_image_0000002661612511.gif)
 
 #### [h2]示例4（自定义刷新区域显示内容-refreshingContent）
 
@@ -560,7 +561,7 @@ struct RefreshExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230336.gif)
+ ![](./img/zh-cn_image_0000002631413220.gif)
 
 #### [h2]示例5（实现最大下拉距离）
 
@@ -645,7 +646,7 @@ struct RefreshExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070426.gif)
+ ![](./img/zh-cn_image_0000002661732451.gif)
 
 #### [h2]示例6（实现下拉刷新上拉加载更多）
 
@@ -744,7 +745,7 @@ struct ListRefreshLoad {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469703.gif)
+ ![](./img/zh-cn_image_0000002631253330.gif)
 
 #### [h2]示例7（设置最大下拉距离）
 
@@ -803,7 +804,7 @@ struct RefreshExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349751.gif)
+ ![](./img/zh-cn_image_0000002661612513.gif)
 
 #### [h2]示例8（禁止下拉刷新）
 
@@ -871,7 +872,7 @@ struct RefreshExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230338.gif)
+ ![](./img/zh-cn_image_0000002631413222.gif)
 
 #### [h2]示例9（不满一屏场景实现下拉刷新）
 
@@ -934,7 +935,7 @@ struct RefreshExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070428.gif)
+ ![](./img/zh-cn_image_0000002661732453.gif)
 
 #### [h2]示例10（上划不取消刷新）
 
@@ -1035,4 +1036,4 @@ struct RefreshExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469705.gif)
+ ![](./img/zh-cn_image_0000002631253332.gif)

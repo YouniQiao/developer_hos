@@ -2,7 +2,8 @@
 title: "DeviceSecurityMode"
 upstream_id: "harmonyos-references/devicesecurity-capi-devicesecuritymode"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:36.324689"
+content_hash: "f76ca6d7e438"
+synced_at: "2026-07-09T00:59:15.957601"
 ---
 
 # DeviceSecurityMode

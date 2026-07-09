@@ -2,7 +2,8 @@
 title: "@ohos.arkui.componentUtils (componentUtils)"
 upstream_id: "harmonyos-references/js-apis-arkui-componentutils"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:18.748804"
+content_hash: "94b8400b70ec"
+synced_at: "2026-07-09T00:57:27.737884"
 ---
 
 # @ohos.arkui.componentUtils (componentUtils)
@@ -229,4 +230,4 @@ struct Utils {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349483.gif)
+ ![](./img/zh-cn_image_0000002631412942.gif)

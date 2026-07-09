@@ -2,7 +2,8 @@
 title: "Camera_PhotoCaptureSetting"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-photocapturesetting"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:16.578464"
+content_hash: "9068b1471b5d"
+synced_at: "2026-07-09T01:00:25.956916"
 ---
 
 # Camera_PhotoCaptureSetting

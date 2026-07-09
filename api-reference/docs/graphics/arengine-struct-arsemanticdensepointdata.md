@@ -2,7 +2,8 @@
 title: "AREngine_ARSemanticDensePointData"
 upstream_id: "harmonyos-references/arengine-struct-arsemanticdensepointdata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:51.262519"
+content_hash: "73fbdd114851"
+synced_at: "2026-07-09T01:00:50.054188"
 ---
 
 # AREngine_ARSemanticDensePointData

@@ -2,10 +2,15 @@
 title: "Types"
 upstream_id: "harmonyos-references/arkts-apis-webview-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:05.091003"
+content_hash: "3c3678153f1d"
+synced_at: "2026-07-09T00:58:52.589576"
 ---
 
 # Types
+
+ArkWeb Types模块是ArkWeb框架中的类型别名和回调函数类型定义集合，为WebView组件的消息通信、代理配置和媒体播放控制等能力提供统一的数据类型约束和回调签名规范，是WebView组件相关核心类接口声明中的类型支撑层。
+
+开发者在使用WebView组件相关核心类时，需依赖本模块中的类型定义来约束数据格式、声明回调签名以及实现各类回调接入。
 
 ![](./img/note_3.0-zh-cn.png)
 

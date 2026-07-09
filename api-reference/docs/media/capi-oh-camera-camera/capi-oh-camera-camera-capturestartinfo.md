@@ -2,7 +2,8 @@
 title: "Camera_CaptureStartInfo"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-capturestartinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:17.144605"
+content_hash: "99e37bcfd58c"
+synced_at: "2026-07-09T01:00:26.281271"
 ---
 
 # Camera_CaptureStartInfo

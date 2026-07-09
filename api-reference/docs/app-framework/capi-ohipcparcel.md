@@ -2,7 +2,8 @@
 title: "OHIPCParcel"
 upstream_id: "harmonyos-references/capi-ohipcparcel"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:20.742442"
+content_hash: "67855a3f4f80"
+synced_at: "2026-07-09T00:59:05.503709"
 ---
 
 # OHIPCParcel

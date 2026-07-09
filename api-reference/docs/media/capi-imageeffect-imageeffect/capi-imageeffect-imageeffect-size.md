@@ -2,7 +2,8 @@
 title: "ImageEffect_Size"
 upstream_id: "harmonyos-references/capi-imageeffect-imageeffect-size"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:32.304864"
+content_hash: "eb20218a7158"
+synced_at: "2026-07-09T01:00:37.117032"
 ---
 
 # ImageEffect_Size

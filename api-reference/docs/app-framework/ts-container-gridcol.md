@@ -2,7 +2,8 @@
 title: "GridCol"
 upstream_id: "harmonyos-references/ts-container-gridcol"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:53.649250"
+content_hash: "4df273bb7f9d"
+synced_at: "2026-07-09T00:57:46.316074"
 ---
 
 # GridCol
@@ -190,4 +191,4 @@ struct GridColExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230282.png)
+ ![](./img/zh-cn_image_0000002661612457.png)

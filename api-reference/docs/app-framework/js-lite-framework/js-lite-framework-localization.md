@@ -2,7 +2,8 @@
 title: "多语言支持"
 upstream_id: "harmonyos-references/js-lite-framework-localization"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:16.203383"
+content_hash: "fffe02982dfd"
+synced_at: "2026-07-09T00:58:26.326743"
 ---
 
 # 多语言支持

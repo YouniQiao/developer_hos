@@ -2,7 +2,8 @@
 title: "ffrt_mutex_t"
 upstream_id: "harmonyos-references/capi-ffrt-ffrt-mutex-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:17.210086"
+content_hash: "93a32c725271"
+synced_at: "2026-07-09T00:59:48.066785"
 ---
 
 # ffrt_mutex_t

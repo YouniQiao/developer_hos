@@ -2,7 +2,8 @@
 title: "OH_Http_Interceptor_Headers"
 upstream_id: "harmonyos-references/capi-netstack-http-interceptor-headers"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:55.723242"
+content_hash: "1e3876ec3bcd"
+synced_at: "2026-07-09T00:59:30.632670"
 ---
 
 # OH_Http_Interceptor_Headers

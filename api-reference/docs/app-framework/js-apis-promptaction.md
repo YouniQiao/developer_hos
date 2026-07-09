@@ -2,7 +2,8 @@
 title: "@ohos.promptAction (弹窗)"
 upstream_id: "harmonyos-references/js-apis-promptaction"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:24.931357"
+content_hash: "428c4be3af28"
+synced_at: "2026-07-09T00:57:31.981263"
 ---
 
 # @ohos.promptAction (弹窗)
@@ -105,7 +106,7 @@ struct toastExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349507.gif)
+ ![](./img/zh-cn_image_0000002631253078.gif)
 
 #### promptAction.closeToast18+
 
@@ -152,7 +153,7 @@ Toast的选项。
 | message | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 否 | 显示的文本信息。 **说明：** 默认字体为'Harmony Sans'，不支持设置其他字体。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | duration | number | 否 | 是 | 设置Toast弹出的持续时间。 默认值：1500ms 取值范围：[1500, 10000] 若小于1500ms则取默认值，若大于10000ms则取上限值10000ms。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | bottom | string | number | 否 | 是 | 设置Toast底部边框距离导航条的高度，软键盘拉起时，如果bottom值过小，Toast要被软键盘遮挡时，会自动避让至距离软键盘80vp处。 默认值：80vp **说明：** 当底部没有导航条时，bottom为设置弹窗底部边框距离窗口底部的高度。 设置对齐方式alignment后，bottom不生效。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| alignment12+ | [Alignment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#alignment) | 否 | 是 | 对齐方式。 默认值：undefined，当未设置alignment且存在导航条或软键盘时，Toast会自动根据导航条或软键盘位置进行调整，可参考bottom的说明。 **说明：** 不同alignment下，Toast位置对齐效果，如下图所示。 ![](./img/zh-cn_image_0000002626230094.png) Toast的文本显示默认自左向右，不支持其他对齐方式。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| alignment12+ | [Alignment](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#alignment) | 否 | 是 | 对齐方式。 默认值：undefined，当未设置alignment且存在导航条或软键盘时，Toast会自动根据导航条或软键盘位置进行调整，可参考bottom的说明。 **说明：** 不同alignment下，Toast位置对齐效果，如下图所示。 ![](./img/zh-cn_image_0000002661612263.png) Toast的文本显示默认自左向右，不支持其他对齐方式。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | offset12+ | [Offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#offset) | 否 | 是 | 在对齐方式上的偏移。 默认值：{ dx: 0, dy: 0 }，默认没有偏移。 **说明：** 仅支持设置px类型的数值。如需设置其他类型的数值，应将其他类型转换为px类型后传入。例如，若需设置vp，应将其转换为px后传入。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | showMode11+ | [ToastShowMode](#toastshowmode11) | 否 | 是 | 设置Toast层级。 默认值：ToastShowMode.DEFAULT，默认显示在应用内。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | backgroundColor12+ | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | Toast的背板颜色。 默认值：Color.Transparent **说明：** backgroundColor会与模糊属性backgroundBlurStyle叠加产生效果，如果不符合预期，可将backgroundBlurStyle设置为BlurStyle.NONE，即可取消模糊。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
@@ -786,11 +787,11 @@ struct toastExample {
 ```
  API version 11及之前Toast样式。
 
-![](./img/zh-cn_image_0000002626070184.gif)
+![](./img/zh-cn_image_0000002631412970.gif)
 
 API version 12及之后Toast样式。
 
-![](./img/zh-cn_image_0000002656469461.gif)
+![](./img/zh-cn_image_0000002661732201.gif)
 
 #### promptAction.showDialog(deprecated)
 
@@ -854,7 +855,7 @@ promptAction.showDialog({
     console.info('showDialog error: ' + err);
   })
 ```
- ![](./img/zh-cn_image_0000002656349509.gif)
+ ![](./img/zh-cn_image_0000002631253080.gif)
 
 #### promptAction.showDialog(deprecated)
 
@@ -920,7 +921,7 @@ try {
   console.error(`showDialog args error code is ${code}, message is ${message}`);
 };
 ```
- ![](./img/zh-cn_image_0000002626230096.gif)
+ ![](./img/zh-cn_image_0000002661612265.gif)
 
 当弹窗的showInSubWindow属性为true时，弹窗可显示在窗口外。
 
@@ -957,7 +958,7 @@ try {
   console.error(`showDialog args error code is ${code}, message is ${message}`);
 };
 ```
- ![](./img/zh-cn_image_0000002626070186.jpg)
+ ![](./img/zh-cn_image_0000002631412972.jpg)
 
 从API version 19开始，该示例通过调用[ShowDialogOptions](#showdialogoptions)中的onDidAppear、onDidDisappear、onWillAppear和onWillDisappear属性展示了弹窗生命周期的相关接口的使用方法。
 
@@ -1019,7 +1020,7 @@ struct DialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469463.gif)
+ ![](./img/zh-cn_image_0000002661732203.gif)
 
 #### promptAction.showActionMenu(deprecated)
 
@@ -1084,7 +1085,7 @@ try {
   console.error(`showActionMenu args error code is ${code}, message is ${message}`);
 };
 ```
- ![](./img/zh-cn_image_0000002656349511.gif)
+ ![](./img/zh-cn_image_0000002631253082.gif)
 
 示例：2
 
@@ -1158,7 +1159,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230098.gif)
+ ![](./img/zh-cn_image_0000002661612267.gif)
 
 #### promptAction.showActionMenu(deprecated)
 
@@ -1221,7 +1222,7 @@ promptAction.showActionMenu({
     console.info('showActionMenu error: ' + err);
   })
 ```
- ![](./img/zh-cn_image_0000002626070188.gif)
+ ![](./img/zh-cn_image_0000002631412974.gif)
 
 #### promptAction.openCustomDialog(deprecated)
 
@@ -1413,7 +1414,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469465.gif)
+ ![](./img/zh-cn_image_0000002661732205.gif)
 
 该示例实现了一个页面内的弹窗。
 
@@ -1500,7 +1501,7 @@ struct Next {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349513.gif)
+ ![](./img/zh-cn_image_0000002631253084.gif)
 
 #### promptAction.closeCustomDialog(deprecated)
 

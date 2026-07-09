@@ -2,7 +2,8 @@
 title: "@ohos.data.sendableRelationalStore（共享关系型数据库）"
 upstream_id: "harmonyos-references/js-apis-data-sendablerelationalstore"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:04.078166"
+content_hash: "38be08bd9bcd"
+synced_at: "2026-07-09T00:57:16.503902"
 ---
 
 # @ohos.data.sendableRelationalStore（共享关系型数据库）

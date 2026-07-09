@@ -2,7 +2,8 @@
 title: "Video"
 upstream_id: "harmonyos-references/ts-media-components-video"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:21.738936"
+content_hash: "b3c642e6fc26"
+synced_at: "2026-07-09T00:58:00.786840"
 ---
 
 # Video
@@ -620,7 +621,6 @@ struct VideoCreateComponent {
   @State isAutoPlay: boolean = false;
   @State showControls: boolean = true;
   @State isShortcutKeyEnabled: boolean = false;
-  @State showFirstFrame: boolean = false;
   controller: VideoController = new VideoController();
 
   build() {
@@ -739,7 +739,7 @@ interface FullscreenObject {
   fullscreen: boolean;
 }
 ```
- ![](./img/zh-cn_image_0000002626070628.gif)
+ ![](./img/zh-cn_image_0000002661732657.gif)
 
 #### [h2]示例2（图像分析功能）
 
@@ -896,7 +896,7 @@ struct VideoObject {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469905.png)
+ ![](./img/zh-cn_image_0000002631253536.png)
 
 #### [h2]示例5（onError事件上报错误码）
 
@@ -910,7 +910,6 @@ struct VideoErrorComponent {
   @State videoSrc: string = 'video.mp4'; // 传入不存在的视频资源路径。
   @State isAutoPlay: boolean = false;
   @State showControls: boolean = true;
-  @State showFirstFrame: boolean = false;
   controller: VideoController = new VideoController();
   @State errorMessage: string = '';
 
@@ -939,7 +938,7 @@ struct VideoErrorComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349953.png)
+ ![](./img/zh-cn_image_0000002661612719.png)
 
 #### [h2]示例6（使用attributeModifier动态设置Video组件的属性及方法）
 
@@ -1060,4 +1059,4 @@ interface FullscreenObject {
   fullscreen: boolean;
 }
 ```
- ![](./img/zh-cn_image_0000002626230540.png)
+ ![](./img/zh-cn_image_0000002631413430.png)

@@ -2,7 +2,8 @@
 title: "image_mdk.h"
 upstream_id: "harmonyos-references/capi-image-mdk-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:26.644551"
+content_hash: "a69f5fa2a682"
+synced_at: "2026-07-09T01:00:32.647444"
 ---
 
 # image_mdk.h

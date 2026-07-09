@@ -2,7 +2,8 @@
 title: "DownloadFileButton"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-downloadfilebutton"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:51.943728"
+content_hash: "fb654283c4bc"
+synced_at: "2026-07-09T00:58:14.755477"
 ---
 
 # DownloadFileButton
@@ -192,4 +193,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070888.png)
+ ![](./img/zh-cn_image_0000002661612981.png)

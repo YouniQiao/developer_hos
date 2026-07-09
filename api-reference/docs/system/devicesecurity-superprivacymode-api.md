@@ -2,7 +2,8 @@
 title: "SuperPrivacyMode（超级隐私模式）"
 upstream_id: "harmonyos-references/devicesecurity-superprivacymode-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:35.497374"
+content_hash: "5a12e0ca9997"
+synced_at: "2026-07-09T00:59:15.206376"
 ---
 
 # SuperPrivacyMode（超级隐私模式）

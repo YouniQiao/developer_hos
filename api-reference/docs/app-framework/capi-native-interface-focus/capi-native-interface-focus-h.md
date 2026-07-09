@@ -2,7 +2,8 @@
 title: "native_interface_focus.h"
 upstream_id: "harmonyos-references/capi-native-interface-focus-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:35.732407"
+content_hash: "4c7fd1657b2f"
+synced_at: "2026-07-09T00:58:33.897051"
 ---
 
 # native_interface_focus.h

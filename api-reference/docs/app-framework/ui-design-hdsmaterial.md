@@ -2,7 +2,8 @@
 title: "hdsMaterial"
 upstream_id: "harmonyos-references/ui-design-hdsmaterial"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:25.325828"
+content_hash: "c3699fb27357"
+synced_at: "2026-07-09T00:59:09.074115"
 ---
 
 # hdsMaterial

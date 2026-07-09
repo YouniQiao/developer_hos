@@ -2,7 +2,8 @@
 title: "game_performance.h"
 upstream_id: "harmonyos-references/gameservice-game-performance-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:25.717923"
+content_hash: "99fcc71a5320"
+synced_at: "2026-07-09T01:01:18.688282"
 ---
 
 # game_performance.h

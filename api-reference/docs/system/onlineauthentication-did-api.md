@@ -2,7 +2,8 @@
 title: "DID"
 upstream_id: "harmonyos-references/onlineauthentication-did-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:38.514571"
+content_hash: "c053c87696ba"
+synced_at: "2026-07-09T00:59:18.167968"
 ---
 
 # DID

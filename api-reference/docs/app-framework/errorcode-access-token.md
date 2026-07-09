@@ -2,7 +2,8 @@
 title: "访问控制错误码"
 upstream_id: "harmonyos-references/errorcode-access-token"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:00.903331"
+content_hash: "94d3092ee73f"
+synced_at: "2026-07-09T00:57:13.982342"
 ---
 
 # 访问控制错误码

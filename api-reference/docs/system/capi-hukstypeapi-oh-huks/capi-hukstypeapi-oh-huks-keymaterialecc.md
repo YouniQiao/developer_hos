@@ -2,7 +2,8 @@
 title: "OH_Huks_KeyMaterialEcc"
 upstream_id: "harmonyos-references/capi-hukstypeapi-oh-huks-keymaterialecc"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:44.287086"
+content_hash: "57c9983986cd"
+synced_at: "2026-07-09T00:59:21.828102"
 ---
 
 # OH_Huks_KeyMaterialEcc

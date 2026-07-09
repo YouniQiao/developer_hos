@@ -2,7 +2,8 @@
 title: "OH_Drawing_RunBuffer"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-runbuffer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:05.981797"
+content_hash: "b80689c40855"
+synced_at: "2026-07-09T01:01:00.705776"
 ---
 
 # OH_Drawing_RunBuffer

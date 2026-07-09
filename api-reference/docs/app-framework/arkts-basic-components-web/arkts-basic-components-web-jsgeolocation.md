@@ -2,7 +2,8 @@
 title: "Class (JsGeolocation)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-jsgeolocation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:06.484917"
+content_hash: "7836127695e9"
+synced_at: "2026-07-09T00:58:53.777936"
 ---
 
 # Class (JsGeolocation)

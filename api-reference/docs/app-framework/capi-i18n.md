@@ -2,7 +2,8 @@
 title: "i18n"
 upstream_id: "harmonyos-references/capi-i18n"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:23.352331"
+content_hash: "8a7c45da6039"
+synced_at: "2026-07-09T00:59:07.213077"
 ---
 
 # i18n

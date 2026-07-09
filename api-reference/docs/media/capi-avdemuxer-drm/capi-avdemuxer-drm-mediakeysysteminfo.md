@@ -2,7 +2,8 @@
 title: "DRM_MediaKeySystemInfo"
 upstream_id: "harmonyos-references/capi-avdemuxer-drm-mediakeysysteminfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:04.478104"
+content_hash: "058198e1bf95"
+synced_at: "2026-07-09T01:00:16.116373"
 ---
 
 # DRM_MediaKeySystemInfo

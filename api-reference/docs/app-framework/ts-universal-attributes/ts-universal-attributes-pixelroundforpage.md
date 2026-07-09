@@ -1,9 +1,12 @@
 ---
+
 title: "页面级像素取整"
 upstream_id: "harmonyos-references/ts-universal-attributes-pixelroundforpage"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:37.573423"
+synced_at: "2026-07-09T00:57:38.533188"
+content_hash: "0a6feb309410"
 ---
+
 
 # 页面级像素取整
 

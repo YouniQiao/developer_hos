@@ -2,7 +2,8 @@
 title: "ProcessInformation"
 upstream_id: "harmonyos-references/js-apis-inner-application-processinformation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:53.832632"
+content_hash: "a3d5cf5e9417"
+synced_at: "2026-07-09T00:57:09.396434"
 ---
 
 # ProcessInformation

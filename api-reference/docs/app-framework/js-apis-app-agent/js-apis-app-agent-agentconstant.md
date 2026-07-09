@@ -2,7 +2,8 @@
 title: "@ohos.app.agent.agentConstant (Agent常量)"
 upstream_id: "harmonyos-references/js-apis-app-agent-agentconstant"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:48.656540"
+content_hash: "64140c8795d5"
+synced_at: "2026-07-09T00:57:05.803951"
 ---
 
 # @ohos.app.agent.agentConstant (Agent常量)

@@ -2,7 +2,8 @@
 title: "Usb_DeviceArray"
 upstream_id: "harmonyos-references/capi-usbddk-usb-devicearray"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:36.137678"
+content_hash: "00b88ae126ce"
+synced_at: "2026-07-09T00:59:57.440071"
 ---
 
 # Usb_DeviceArray

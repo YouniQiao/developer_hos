@@ -2,7 +2,8 @@
 title: "NativeDisplayManager_WaterfallDisplayAreaRects"
 upstream_id: "harmonyos-references/capi-nativedisplaymanager-waterfalldisplayarearects"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:56.942597"
+content_hash: "62168f88fc83"
+synced_at: "2026-07-09T00:58:46.210829"
 ---
 
 # NativeDisplayManager_WaterfallDisplayAreaRects
@@ -13,7 +14,7 @@ typedef struct {...} NativeDisplayManager_WaterfallDisplayAreaRects
 
 #### 概述
 
-瀑布屏曲面部分显示区域。
+瀑布屏曲面部分的不可用矩形区域集合。
 
 起始版本： 12
 

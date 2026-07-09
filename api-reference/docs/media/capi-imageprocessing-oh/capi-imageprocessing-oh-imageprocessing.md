@@ -2,7 +2,8 @@
 title: "OH_ImageProcessing"
 upstream_id: "harmonyos-references/capi-imageprocessing-oh-imageprocessing"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:32.433174"
+content_hash: "d1066a3c11da"
+synced_at: "2026-07-09T01:00:37.216076"
 ---
 
 # OH_ImageProcessing

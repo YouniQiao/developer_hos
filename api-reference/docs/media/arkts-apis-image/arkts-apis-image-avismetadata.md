@@ -2,7 +2,8 @@
 title: "Class (AvisMetadata)"
 upstream_id: "harmonyos-references/arkts-apis-image-avismetadata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:23.870455"
+content_hash: "5cad9233898a"
+synced_at: "2026-07-09T01:00:30.821923"
 ---
 
 # Class (AvisMetadata)

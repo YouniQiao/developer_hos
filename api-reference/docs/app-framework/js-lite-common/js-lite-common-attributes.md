@@ -1,9 +1,12 @@
 ---
+
 title: "通用属性"
 upstream_id: "harmonyos-references/js-lite-common-attributes"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:16.798371"
+synced_at: "2026-07-09T00:58:26.641902"
+content_hash: "5f2ff78880a4"
 ---
+
 
 # 通用属性
 

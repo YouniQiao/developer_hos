@@ -2,7 +2,8 @@
 title: "Rcp_StaticDnsRuleItem"
 upstream_id: "harmonyos-references/_rcp___static_dns_rule_item"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:01.960483"
+content_hash: "e0683be184ef"
+synced_at: "2026-07-09T00:59:35.593654"
 ---
 
 # Rcp_StaticDnsRuleItem

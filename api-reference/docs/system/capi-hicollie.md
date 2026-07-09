@@ -2,7 +2,8 @@
 title: "HiCollie"
 upstream_id: "harmonyos-references/capi-hicollie"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:46.939135"
+content_hash: "5abeb474945f"
+synced_at: "2026-07-09T01:00:03.331213"
 ---
 
 # HiCollie

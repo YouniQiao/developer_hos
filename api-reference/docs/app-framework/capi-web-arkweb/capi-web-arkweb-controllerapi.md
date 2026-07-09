@@ -2,7 +2,8 @@
 title: "ArkWeb_ControllerAPI"
 upstream_id: "harmonyos-references/capi-web-arkweb-controllerapi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:09.443816"
+content_hash: "3ccd3e4ae479"
+synced_at: "2026-07-09T00:58:56.205929"
 ---
 
 # ArkWeb_ControllerAPI
@@ -13,7 +14,9 @@ typedef struct {...} ArkWeb_ControllerAPI
 
 #### 概述
 
-Controller相关的Native API结构体。在调用接口前建议通过[ARKWEB_MEMBER_MISSING](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-type-h#宏定义)校验该函数结构体是否有对应函数指针，避免SDK与设备ROM不匹配导致崩溃。Controller相关接口需在UI线程中调用OH_ArkWeb_GetNativeAPI方法获取。
+ArkWeb_ControllerAPI是Controller相关Native API结构体。该结构体提供了JavaScript注入、同步和异步JavaScript代理注册、代理删除、页面刷新、Web Message Port创建和管理、Frame URL查询等功能。这是从Native代码控制WebView行为的主要接口。
+
+Controller相关接口需在UI线程中调用OH_ArkWeb_GetNativeAPI方法获取，调用前建议通过[ARKWEB_MEMBER_MISSING](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-type-h#宏定义)校验函数指针的可用性，避免SDK与设备ROM不匹配导致崩溃。
 
 起始版本： 12
 

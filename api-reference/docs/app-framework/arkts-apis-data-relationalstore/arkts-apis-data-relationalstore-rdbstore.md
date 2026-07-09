@@ -2,7 +2,8 @@
 title: "Interface (RdbStore)"
 upstream_id: "harmonyos-references/arkts-apis-data-relationalstore-rdbstore"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:03.586574"
+content_hash: "c0016fe320bc"
+synced_at: "2026-07-09T00:57:17.229236"
 ---
 
 # Interface (RdbStore)

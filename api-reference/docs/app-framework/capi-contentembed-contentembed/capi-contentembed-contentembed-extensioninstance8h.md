@@ -2,7 +2,8 @@
 title: "ContentEmbed_ExtensionInstance*"
 upstream_id: "harmonyos-references/capi-contentembed-contentembed-extensioninstance8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:12.264923"
+content_hash: "38d3c68d49a1"
+synced_at: "2026-07-09T00:58:58.693982"
 ---
 
 # ContentEmbed_ExtensionInstance*

@@ -2,7 +2,8 @@
 title: "CallerInfoQueryExtensionAbility (来去电信息查询扩展Ability)"
 upstream_id: "harmonyos-references/callservicekit-callerinfoquery-extension-ability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:23.102802"
+content_hash: "d813e4413a7c"
+synced_at: "2026-07-09T01:01:16.044152"
 ---
 
 # CallerInfoQueryExtensionAbility (来去电信息查询扩展Ability)

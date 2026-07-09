@@ -2,7 +2,8 @@
 title: "JSVM_ScriptOrigin"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-scriptorigin"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:03.220142"
+content_hash: "17bdec95803f"
+synced_at: "2026-07-09T01:01:47.138442"
 ---
 
 # JSVM_ScriptOrigin

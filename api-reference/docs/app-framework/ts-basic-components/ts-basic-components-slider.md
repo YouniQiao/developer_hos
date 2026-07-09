@@ -2,7 +2,8 @@
 title: "Slider"
 upstream_id: "harmonyos-references/ts-basic-components-slider"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:09.783011"
+content_hash: "96f3cf83a2f3"
+synced_at: "2026-07-09T00:57:55.235089"
 ---
 
 # Slider
@@ -1081,7 +1082,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230410.gif)
+ ![](./img/zh-cn_image_0000002631413296.gif)
 
 #### [h2]示例2（设置滑动条样式）
 
@@ -1135,7 +1136,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070500.png)
+ ![](./img/zh-cn_image_0000002661732527.png)
 
 #### [h2]示例3（自定义滑动条）
 
@@ -1252,7 +1253,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469777.gif)
+ ![](./img/zh-cn_image_0000002631253406.gif)
 
 #### [h2]示例4（设置滑动条渐变色）
 
@@ -1334,7 +1335,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349825.gif)
+ ![](./img/zh-cn_image_0000002661612591.gif)
 
 #### [h2]示例5（滑动条设置前后缀内容）
 
@@ -1550,7 +1551,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230412.jpeg)
+ ![](./img/zh-cn_image_0000002631413298.jpeg)
 
 #### [h2]示例6（滑动条设置刻度点无障碍文本）
 
@@ -1617,7 +1618,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070502.png)
+ ![](./img/zh-cn_image_0000002661732529.png)
 
 #### [h2]示例7（设置滑动条的双向绑定）
 
@@ -1649,7 +1650,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469779.gif)
+ ![](./img/zh-cn_image_0000002631253408.gif)
 
 #### [h2]示例8（滑块设置渐变色）
 
@@ -1767,7 +1768,7 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349827.png)
+ ![](./img/zh-cn_image_0000002661612593.png)
 
 #### [h2]示例9（设置滑轨的背景颜色）
 
@@ -1810,4 +1811,4 @@ struct SliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230414.png)
+ ![](./img/zh-cn_image_0000002631413300.png)

@@ -2,7 +2,8 @@
 title: "@ohos.file.RecentPhotoComponent (最近图片组件)"
 upstream_id: "harmonyos-references/ohos-file-recentphotocomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:46.078207"
+content_hash: "1443020f07d4"
+synced_at: "2026-07-09T01:00:48.032704"
 ---
 
 # @ohos.file.RecentPhotoComponent (最近图片组件)

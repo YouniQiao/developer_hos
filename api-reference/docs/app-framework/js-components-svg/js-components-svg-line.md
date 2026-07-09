@@ -2,7 +2,8 @@
 title: "line"
 upstream_id: "harmonyos-references/js-components-svg-line"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:11.738095"
+content_hash: "8df7447cc0ae"
+synced_at: "2026-07-09T00:58:24.614587"
 ---
 
 # line
@@ -50,4 +51,4 @@ synced_at: "2026-06-24T20:49:11.738095"
     </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002656350355.png)
+ ![](./img/zh-cn_image_0000002661613125.png)

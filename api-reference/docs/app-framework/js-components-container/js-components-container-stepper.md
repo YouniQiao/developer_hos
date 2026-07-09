@@ -2,7 +2,8 @@
 title: "stepper"
 upstream_id: "harmonyos-references/js-components-container-stepper"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:04.560818"
+content_hash: "cceb3d89f1e2"
+synced_at: "2026-07-09T00:58:21.292841"
 ---
 
 # stepper
@@ -41,11 +42,11 @@ synced_at: "2026-06-24T20:49:04.560818"
 
 | 名称 | 参数 | 描述 |
 | --- | --- | --- |
-| finish | 无 | 当步骤导航器最后一个步骤完成时,触发该事件。 |
+| finish | 无 | 当步骤导航器最后一个步骤完成时，触发该事件。 |
 | skip | 无 | 当前步骤导航器下一步按钮状态为skip，即可跳过时，点击右侧跳过按钮触发该事件。 |
 | change | { prevIndex: prevIndex, index: index} | 当用户点击步骤导航器的左边或者右边按钮进行步骤切换时触发该事件，prevIndex表示老步骤的序号，index表示新步骤的序号。 |
 | next | { index: index, pendingIndex: pendingIndex } | 当用户点击下一步按钮时触发该事件，index表示当前步骤序号，pendingIndex表示将要跳转的序号，该事件有返回值，返回值格式为：{ pendingIndex: pendingIndex }，可以通过指定pendingIndex来修改下一个步骤使用哪个stepper-item子组件。 |
-| back | { index: index, pendingIndex: pendingIndex } | 当用户点击上一步按钮时触发该事件，index表示当前步骤序号，pendingIndex表示将要跳转的序号，该事件有返回值，返回值格式为Object: { pendingIndex: pendingIndex }，可以通过指定pendingIndex来修改上一个步骤使用哪个stepper-item子组件。 |
+| back | { index: index, pendingIndex: pendingIndex } | 当用户点击上一步按钮时触发该事件，index表示当前步骤序号，pendingIndex表示将要跳转的序号，该事件有返回值，返回值格式为：{ pendingIndex: pendingIndex }，可以通过指定pendingIndex来修改上一个步骤使用哪个stepper-item子组件。 |
 
 #### 方法
 
@@ -184,4 +185,4 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002626230884.gif)
+ ![](./img/zh-cn_image_0000002631413778.gif)

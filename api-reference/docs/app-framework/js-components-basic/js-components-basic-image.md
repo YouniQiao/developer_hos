@@ -2,7 +2,8 @@
 title: "image"
 upstream_id: "harmonyos-references/js-components-basic-image"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:05.424710"
+content_hash: "a28bec3e2afe"
+synced_at: "2026-07-09T00:58:21.612687"
 ---
 
 # image
@@ -103,4 +104,4 @@ export default {
   },
 }
 ```
- ![](./img/zh-cn_image_0000002626070978.gif)
+ ![](./img/zh-cn_image_0000002661733011.gif)

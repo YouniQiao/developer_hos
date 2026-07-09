@@ -2,7 +2,8 @@
 title: "ShortcutInfo"
 upstream_id: "harmonyos-references/js-apis-bundlemanager-shortcutinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:55.289441"
+content_hash: "0df89744a1f6"
+synced_at: "2026-07-09T00:57:10.964612"
 ---
 
 # ShortcutInfo

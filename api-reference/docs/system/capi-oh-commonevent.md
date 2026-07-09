@@ -2,7 +2,8 @@
 title: "OH_CommonEvent"
 upstream_id: "harmonyos-references/capi-oh-commonevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:10.440440"
+content_hash: "3952567aeff0"
+synced_at: "2026-07-09T00:59:42.354208"
 ---
 
 # OH_CommonEvent

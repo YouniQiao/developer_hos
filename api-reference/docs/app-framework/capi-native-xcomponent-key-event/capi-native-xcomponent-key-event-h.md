@@ -2,7 +2,8 @@
 title: "native_xcomponent_key_event.h"
 upstream_id: "harmonyos-references/capi-native-xcomponent-key-event-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:39.995816"
+content_hash: "a37c296a3401"
+synced_at: "2026-07-09T00:58:36.822145"
 ---
 
 # native_xcomponent_key_event.h

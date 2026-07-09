@@ -2,7 +2,8 @@
 title: "服务端通知记录查询"
 upstream_id: "harmonyos-references/iap-server-notifications-record-query"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:29.235301"
+content_hash: "d48439bfb453"
+synced_at: "2026-07-09T01:01:22.034235"
 ---
 
 # 服务端通知记录查询

@@ -2,7 +2,8 @@
 title: "native_mediakeysession.h"
 upstream_id: "harmonyos-references/capi-native-mediakeysession-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:20.412855"
+content_hash: "e1ab5ee606fe"
+synced_at: "2026-07-09T01:00:28.796690"
 ---
 
 # native_mediakeysession.h

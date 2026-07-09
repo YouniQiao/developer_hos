@@ -2,7 +2,8 @@
 title: "OhosImageSourceDelayTimeList"
 upstream_id: "harmonyos-references/capi-image-ohosimagesourcedelaytimelist"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:31.292349"
+content_hash: "e479c6ac6406"
+synced_at: "2026-07-09T01:00:36.370985"
 ---
 
 # OhosImageSourceDelayTimeList

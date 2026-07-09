@@ -2,7 +2,8 @@
 title: "PanGesture"
 upstream_id: "harmonyos-references/ts-basic-gestures-pangesture"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:50.559132"
+content_hash: "6d650bf7c7b6"
+synced_at: "2026-07-09T00:57:44.438053"
 ---
 
 # PanGesture
@@ -326,8 +327,8 @@ struct PanGestureExample {
 
 向左滑动：
 
-![](./img/zh-cn_image_0000002656469625.png)
+![](./img/zh-cn_image_0000002661732371.png)
 
 点击按钮时，修改PanGesture触发条件为双指向左下方滑动：
 
-![](./img/zh-cn_image_0000002656349673.png)
+![](./img/zh-cn_image_0000002631253252.png)

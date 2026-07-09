@@ -2,7 +2,8 @@
 title: "slider"
 upstream_id: "harmonyos-references/js-components-basic-slider"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:07.602074"
+content_hash: "c9e87c0af0a8"
+synced_at: "2026-07-09T00:58:22.580384"
 ---
 
 # slider
@@ -76,4 +77,4 @@ synced_at: "2026-06-24T20:49:07.602074"
     margin-top: 100px;
 }
 ```
- ![](./img/zh-cn_image_0000002656470265.png)
+ ![](./img/zh-cn_image_0000002631253902.png)

@@ -2,7 +2,8 @@
 title: "OH_VObject"
 upstream_id: "harmonyos-references/capi-rdb-oh-vobject"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:08.242728"
+content_hash: "e4ce83f2b735"
+synced_at: "2026-07-09T00:57:20.331920"
 ---
 
 # OH_VObject

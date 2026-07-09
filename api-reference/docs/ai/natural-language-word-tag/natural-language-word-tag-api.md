@@ -2,7 +2,8 @@
 title: "wordTag（词性）"
 upstream_id: "harmonyos-references/natural-language-word-tag-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:57.818645"
+content_hash: "745d7f9e5eb4"
+synced_at: "2026-07-09T01:01:42.642556"
 ---
 
 # wordTag（词性）

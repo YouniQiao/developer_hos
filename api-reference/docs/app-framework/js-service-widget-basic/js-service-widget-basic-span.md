@@ -2,7 +2,8 @@
 title: "span"
 upstream_id: "harmonyos-references/js-service-widget-basic-span"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:29.939527"
+content_hash: "a736dcf83228"
+synced_at: "2026-07-09T00:58:31.635790"
 ---
 
 # span

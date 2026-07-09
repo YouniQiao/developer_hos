@@ -2,7 +2,8 @@
 title: "JSVM_CodeCache"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-codecache"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:03.451533"
+content_hash: "20d87102d93e"
+synced_at: "2026-07-09T01:01:47.139081"
 ---
 
 # JSVM_CodeCache

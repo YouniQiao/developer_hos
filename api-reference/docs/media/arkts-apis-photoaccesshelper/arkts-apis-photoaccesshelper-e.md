@@ -2,7 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-e"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:45.555140"
+content_hash: "74d380c9ac95"
+synced_at: "2026-07-09T01:00:47.471571"
 ---
 
 # Enums

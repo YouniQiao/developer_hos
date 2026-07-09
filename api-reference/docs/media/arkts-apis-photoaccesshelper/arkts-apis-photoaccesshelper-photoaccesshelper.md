@@ -2,7 +2,8 @@
 title: "Interface (PhotoAccessHelper)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-photoaccesshelper"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:45.213037"
+content_hash: "678e036f6e3a"
+synced_at: "2026-07-09T01:00:47.764937"
 ---
 
 # Interface (PhotoAccessHelper)

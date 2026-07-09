@@ -2,7 +2,8 @@
 title: "ArkUI_AnimatorEvent"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-animatorevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:45.763882"
+content_hash: "74996a64f8fd"
+synced_at: "2026-07-09T00:58:39.556598"
 ---
 
 # ArkUI_AnimatorEvent

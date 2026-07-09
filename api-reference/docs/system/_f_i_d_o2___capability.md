@@ -2,7 +2,8 @@
 title: "FIDO2_Capability"
 upstream_id: "harmonyos-references/_f_i_d_o2___capability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:39.786251"
+content_hash: "0157f5ee2d51"
+synced_at: "2026-07-09T00:59:18.563654"
 ---
 
 # FIDO2_Capability

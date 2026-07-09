@@ -2,7 +2,8 @@
 title: "组件区域变化事件"
 upstream_id: "harmonyos-references/ts-universal-component-area-change-event"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:34.215740"
+content_hash: "9519e32a8275"
+synced_at: "2026-07-09T00:57:37.001050"
 ---
 
 # 组件区域变化事件
@@ -136,7 +137,7 @@ struct AreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230148.gif)
+ ![](./img/zh-cn_image_0000002661612319.gif)
 
 #### [h2]示例2（使用onAreaChange自定义间隔监听区域变化）
 

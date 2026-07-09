@@ -2,7 +2,8 @@
 title: "OH_CryptoEcPoint"
 upstream_id: "harmonyos-references/capi-cryptoasymkeyapi-oh-cryptoecpoint"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:32.742230"
+content_hash: "e3ea58bcabff"
+synced_at: "2026-07-09T00:59:13.473464"
 ---
 
 # OH_CryptoEcPoint

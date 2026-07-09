@@ -2,7 +2,8 @@
 title: "OH_Drawing_RectStyle_Info"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-rectstyle-info"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:07.099901"
+content_hash: "8b583bc9e671"
+synced_at: "2026-07-09T01:01:01.441121"
 ---
 
 # OH_Drawing_RectStyle_Info

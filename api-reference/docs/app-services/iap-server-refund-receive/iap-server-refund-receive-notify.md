@@ -2,7 +2,8 @@
 title: "接收退款申请事件通知"
 upstream_id: "harmonyos-references/iap-server-refund-receive-notify"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:29.562109"
+content_hash: "6b6038a02353"
+synced_at: "2026-07-09T01:01:22.505054"
 ---
 
 # 接收退款申请事件通知
@@ -21,7 +22,7 @@ synced_at: "2026-06-24T20:53:29.562109"
 
 关键事件通知处理流程建议如下：
 
-![](./img/zh-cn_image_0000002626071688.png)
+![](./img/zh-cn_image_0000002661733729.png)
 
 1. IAP服务器发送退款请求关键事件通知。
 2. 应用服务器收到通知请求后，从通知中获取用户申请的退款信息，决策该笔退款订单的处理方式。
@@ -75,7 +76,7 @@ synced_at: "2026-06-24T20:53:29.562109"
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| refundReason | 是 | String | 用户申请退款理由。 - LEGAL：未成年人未经允许购买 - UNINTENDED_PURCHASE：无意购买或订阅 - UNSATISFIED_WITH_PURCHASE：购买的商品无法正常使用 - FULFILLMENT_ISSUE：未收到商品 - OTHER：其他原因 |
+| refundReason | 是 | String | 用户申请退款理由。 取值如下： - LEGAL：未成年人未经允许购买 - UNINTENDED_PURCHASE：无意购买或订阅 - UNSATISFIED_WITH_PURCHASE：购买的商品无法正常使用 - FULFILLMENT_ISSUE：未收到商品 - OTHER：其他原因 |
 | applyAmount | 是 | Long | 申请退款金额，单位：分。 |
 | currency | 是 | String | 币种。 CNY：人民币 |
 | applyType | 是 | Integer | 请求类型。 1：初次提交 |

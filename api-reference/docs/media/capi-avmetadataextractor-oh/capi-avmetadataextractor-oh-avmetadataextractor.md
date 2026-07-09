@@ -2,7 +2,8 @@
 title: "OH_AVMetadataExtractor"
 upstream_id: "harmonyos-references/capi-avmetadataextractor-oh-avmetadataextractor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:38.503207"
+content_hash: "07a43ef13209"
+synced_at: "2026-07-09T01:00:42.429513"
 ---
 
 # OH_AVMetadataExtractor

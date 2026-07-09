@@ -2,7 +2,8 @@
 title: "OH_UdsPixelMap"
 upstream_id: "harmonyos-references/capi-udmf-oh-udspixelmap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:11.120210"
+content_hash: "afdd22d731e6"
+synced_at: "2026-07-09T00:57:21.835188"
 ---
 
 # OH_UdsPixelMap

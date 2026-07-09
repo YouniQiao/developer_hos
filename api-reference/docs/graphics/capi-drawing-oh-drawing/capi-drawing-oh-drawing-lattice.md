@@ -2,7 +2,8 @@
 title: "OH_Drawing_Lattice"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-lattice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:09.207345"
+content_hash: "744f6d97dd26"
+synced_at: "2026-07-09T01:01:03.425856"
 ---
 
 # OH_Drawing_Lattice

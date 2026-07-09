@@ -1,9 +1,12 @@
 ---
+
 title: "创建券批次"
 upstream_id: "harmonyos-references/payment-api-common-promotion-service-merc-coup-coupbatch-create"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:46.408688"
+synced_at: "2026-07-09T01:01:35.018930"
+content_hash: "881ac0c8c3d4"
 ---
+
 
 # 创建券批次
 

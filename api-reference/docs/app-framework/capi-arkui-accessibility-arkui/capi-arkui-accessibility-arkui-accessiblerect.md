@@ -2,7 +2,8 @@
 title: "ArkUI_AccessibleRect"
 upstream_id: "harmonyos-references/capi-arkui-accessibility-arkui-accessiblerect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:47.721154"
+content_hash: "7b4ce8d89e87"
+synced_at: "2026-07-09T00:58:40.597731"
 ---
 
 # ArkUI_AccessibleRect

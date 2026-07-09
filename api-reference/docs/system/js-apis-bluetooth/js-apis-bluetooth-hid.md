@@ -2,7 +2,8 @@
 title: "@ohos.bluetooth.hid (蓝牙hid模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-hid"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:46.354516"
+content_hash: "14483a7b0b69"
+synced_at: "2026-07-09T00:59:23.417871"
 ---
 
 # @ohos.bluetooth.hid (蓝牙hid模块)

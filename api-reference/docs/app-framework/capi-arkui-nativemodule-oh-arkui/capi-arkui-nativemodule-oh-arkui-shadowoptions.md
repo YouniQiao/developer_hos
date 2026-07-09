@@ -2,7 +2,8 @@
 title: "OH_ArkUI_ShadowOptions"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-arkui-shadowoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:59.937761"
+content_hash: "f8d8f0641c12"
+synced_at: "2026-07-09T00:58:48.283479"
 ---
 
 # OH_ArkUI_ShadowOptions

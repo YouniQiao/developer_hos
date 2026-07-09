@@ -2,7 +2,8 @@
 title: "relational_store_error_code.h"
 upstream_id: "harmonyos-references/capi-relational-store-error-code-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:07.174874"
+content_hash: "154575edda04"
+synced_at: "2026-07-09T00:57:19.298217"
 ---
 
 # relational_store_error_code.h

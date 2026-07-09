@@ -2,7 +2,8 @@
 title: "Marquee"
 upstream_id: "harmonyos-references/ts-basic-components-marquee"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:26.774030"
+content_hash: "9d1c3ff1b5d7"
+synced_at: "2026-07-09T00:58:02.138883"
 ---
 
 # Marquee
@@ -52,7 +53,7 @@ Marquee初始化参数。
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | start8+ | boolean | 否 | 否 | 控制跑马灯是否进入播放状态。 true：播放；false：不播放。 **说明：** 有限的滚动次数播放完毕后，不可以通过改变start重置滚动次数重新开始播放。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| step8+ | number | 否 | 是 | 滚动动画文本滚动步长。当step大于Marquee的文本宽度时，取默认值。 默认值：6 单位：[vp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units#基本像素单位) **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| step8+ | number | 否 | 是 | 滚动动画的文本步长。当step大于Marquee的文本宽度时，取默认值。 默认值：6 单位：[vp](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-pixel-units#基本像素单位) **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | loop8+ | number | 否 | 是 | 设置重复滚动的次数，小于等于零时无限循环。 默认值：-1 **说明：** ArkTS卡片上该参数设置任意值都仅在可见时滚动一次。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | fromStart8+ | boolean | 否 | 是 | 设置文本从头开始滚动或反向滚动。 true：表示从头开始滚动 false：表示反向滚动。 默认值：true **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | src8+ | string | 否 | 否 | 需要滚动的文本。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
@@ -336,7 +337,7 @@ struct MarqueeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469969.gif)
+ ![](./img/zh-cn_image_0000002631253602.gif)
 
 #### [h2]示例2（设置跑马灯停止回调）
 
@@ -412,4 +413,4 @@ struct MarqueeStop4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350017.gif)
+ ![](./img/zh-cn_image_0000002661612783.gif)

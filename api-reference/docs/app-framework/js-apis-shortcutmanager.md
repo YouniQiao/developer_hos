@@ -2,7 +2,8 @@
 title: "@ohos.bundle.shortcutManager (shortcutManager模块)"
 upstream_id: "harmonyos-references/js-apis-shortcutmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:51.630103"
+content_hash: "300da22f58bf"
+synced_at: "2026-07-09T00:57:07.891631"
 ---
 
 # @ohos.bundle.shortcutManager (shortcutManager模块)

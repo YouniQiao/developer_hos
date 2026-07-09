@@ -2,7 +2,8 @@
 title: "Camera_SmoothZoomInfo"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-smoothzoominfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:17.067629"
+content_hash: "5be2f4e7c639"
+synced_at: "2026-07-09T01:00:26.262802"
 ---
 
 # Camera_SmoothZoomInfo

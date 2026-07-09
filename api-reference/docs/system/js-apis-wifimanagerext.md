@@ -2,7 +2,8 @@
 title: "@ohos.wifiManagerExt (WLAN扩展接口)"
 upstream_id: "harmonyos-references/js-apis-wifimanagerext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:46.887815"
+content_hash: "4227486b398e"
+synced_at: "2026-07-09T00:59:24.080502"
 ---
 
 # @ohos.wifiManagerExt (WLAN扩展接口)

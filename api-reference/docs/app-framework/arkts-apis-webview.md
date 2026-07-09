@@ -1,9 +1,12 @@
 ---
+
 title: "模块描述"
 upstream_id: "harmonyos-references/arkts-apis-webview"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:02.206012"
+synced_at: "2026-07-09T00:58:49.784188"
+content_hash: "5cddbb64d0ed"
 ---
+
 
 # 模块描述
 

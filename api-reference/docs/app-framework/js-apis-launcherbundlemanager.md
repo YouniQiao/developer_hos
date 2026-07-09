@@ -2,7 +2,8 @@
 title: "@ohos.bundle.launcherBundleManager (launcherBundleManager模块)"
 upstream_id: "harmonyos-references/js-apis-launcherbundlemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:51.459496"
+content_hash: "254836818fe6"
+synced_at: "2026-07-09T00:57:07.804079"
 ---
 
 # @ohos.bundle.launcherBundleManager (launcherBundleManager模块)

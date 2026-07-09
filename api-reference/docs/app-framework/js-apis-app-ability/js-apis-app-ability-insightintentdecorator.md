@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.InsightIntentDecorator (意图装饰器定义)"
 upstream_id: "harmonyos-references/js-apis-app-ability-insightintentdecorator"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:47.208957"
+content_hash: "35332c55184d"
+synced_at: "2026-07-09T00:57:04.548882"
 ---
 
 # @ohos.app.ability.InsightIntentDecorator (意图装饰器定义)

@@ -2,7 +2,8 @@
 title: "@ohos.bluetooth.constant (蓝牙constant模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-constant"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:45.546775"
+content_hash: "1193ff69f0ed"
+synced_at: "2026-07-09T00:59:23.062053"
 ---
 
 # @ohos.bluetooth.constant (蓝牙constant模块)

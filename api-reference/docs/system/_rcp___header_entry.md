@@ -2,7 +2,8 @@
 title: "Rcp_HeaderEntry"
 upstream_id: "harmonyos-references/_rcp___header_entry"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:00.468341"
+content_hash: "195bbf9e1bd7"
+synced_at: "2026-07-09T00:59:34.430893"
 ---
 
 # Rcp_HeaderEntry

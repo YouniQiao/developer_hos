@@ -2,7 +2,8 @@
 title: "NativeColorSpaceManager"
 upstream_id: "harmonyos-references/capi-nativecolorspacemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:56.503144"
+content_hash: "6db5bef11c19"
+synced_at: "2026-07-09T01:00:53.565776"
 ---
 
 # NativeColorSpaceManager

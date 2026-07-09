@@ -2,7 +2,8 @@
 title: "AVSession_DeviceInfo"
 upstream_id: "harmonyos-references/capi-ohavsession-avsession-deviceinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:09.554662"
+content_hash: "79ef2a6e8b4d"
+synced_at: "2026-07-09T01:00:20.601159"
 ---
 
 # AVSession_DeviceInfo
@@ -13,7 +14,7 @@ typedef struct AVSession_DeviceInfo AVSession_DeviceInfo
 
 #### 概述
 
-设备信息的声明。该实例用于获取更多的设备信息及其详细属性。
+设备信息的结构体声明。该结构体用于存储设备信息及详细属性。
 
 起始版本： 23
 

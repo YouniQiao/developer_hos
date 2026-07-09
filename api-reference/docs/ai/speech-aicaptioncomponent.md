@@ -2,7 +2,8 @@
 title: "AICaptionComponent（AI字幕组件）"
 upstream_id: "harmonyos-references/speech-aicaptioncomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:00.862054"
+content_hash: "0d9f23b5fee9"
+synced_at: "2026-07-09T01:01:45.595416"
 ---
 
 # AICaptionComponent（AI字幕组件）

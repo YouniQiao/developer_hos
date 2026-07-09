@@ -2,7 +2,8 @@
 title: "@ohos.util.LightWeightSet (非线性容器LightWeightSet)"
 upstream_id: "harmonyos-references/js-apis-lightweightset"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:17.192767"
+content_hash: "914814e91d49"
+synced_at: "2026-07-09T00:57:26.296059"
 ---
 
 # @ohos.util.LightWeightSet (非线性容器LightWeightSet)

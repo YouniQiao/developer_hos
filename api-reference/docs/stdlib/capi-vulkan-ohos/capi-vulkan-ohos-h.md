@@ -2,7 +2,8 @@
 title: "vulkan_ohos.h"
 upstream_id: "harmonyos-references/capi-vulkan-ohos-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:05.886987"
+content_hash: "1876738c26af"
+synced_at: "2026-07-09T01:01:49.811388"
 ---
 
 # vulkan_ohos.h

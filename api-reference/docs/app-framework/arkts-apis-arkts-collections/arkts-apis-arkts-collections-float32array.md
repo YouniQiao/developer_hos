@@ -2,7 +2,8 @@
 title: "Class (Float32Array)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-float32array"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:14.130269"
+content_hash: "d98731e22cdf"
+synced_at: "2026-07-09T00:57:24.413634"
 ---
 
 # Class (Float32Array)
@@ -30,10 +31,10 @@ import { collections } from '@kit.ArkTS';
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | buffer | ArrayBuffer | 是 | 否 | ArkTS Float32Array底层使用的buffer。 |
-| byteLength | number | 是 | 否 | ArkTS Float32Array的所占的字节数。 |
+| byteLength | number | 是 | 否 | ArkTS Float32Array所占的字节数。 |
 | byteOffset | number | 是 | 否 | ArkTS Float32Array距离其ArrayBuffer起始位置的偏移。 |
 | length | number | 是 | 否 | ArkTS Float32Array元素个数。 |
-| BYTES_PER_ELEMENT | number | 是 | 否 | ArkTS Float32Array中每个元素所占用的字节数。 |
+| BYTES_PER_ELEMENT | number | 是 | 否 | ArkTS Float32Array中每个元素所占的字节数。 |
 
 #### constructor
 
@@ -452,7 +453,7 @@ let copied: collections.Float32Array = array.copyWithin(3, 1, 3);
 
 some(predicate: TypedArrayPredicateFn<number, Float32Array>): boolean
 
-测试ArkTS Float32Array中的是否存在元素满足指定条件。
+测试ArkTS Float32Array中是否存在元素满足指定条件。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 

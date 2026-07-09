@@ -2,7 +2,8 @@
 title: "@ohos.font (注册自定义字体)"
 upstream_id: "harmonyos-references/js-apis-font"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:24.156058"
+content_hash: "cdcd178b2bea"
+synced_at: "2026-07-09T00:57:30.633188"
 ---
 
 # @ohos.font (注册自定义字体)
@@ -231,7 +232,7 @@ getFontByName(fontName: string): FontInfo
 
 示例：
 
-![](./img/note_3.0-zh-cn.png) 直接使用font可能导致实例不明确的问题，推荐通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getFont](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getfont)方法获取当前UI上下文关联的[Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-font)对象。
+![](./img/note_3.0-zh-cn.png) 直接使用font可能导致[UI上下文不明确](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-global-interface#ui上下文不明确)的问题，推荐通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getFont](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getfont)方法获取当前UI上下文关联的[Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-font)对象。
 
 ```
 // xxx.ets

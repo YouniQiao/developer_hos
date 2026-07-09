@@ -2,7 +2,8 @@
 title: "Navigator"
 upstream_id: "harmonyos-references/ts-container-navigator"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:59.363094"
+content_hash: "6a66e0b6d91a"
+synced_at: "2026-07-09T00:58:19.192714"
 ---
 
 # Navigator
@@ -40,7 +41,7 @@ Navigator(value?: {target: string, type?: NavigationType})
 
 Navigator()
 
-![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 13开始废弃，建议使用[NavigationAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#属性)替代。NavigationAttribute为Navigation组件的属性。
+![](./img/note_3.0-zh-cn.png) 从API version 7开始支持，从API version 13开始废弃，建议使用[Navigation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation)替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -216,4 +217,4 @@ struct BackExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070954.gif)
+ ![](./img/zh-cn_image_0000002661732987.gif)

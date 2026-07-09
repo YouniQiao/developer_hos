@@ -2,7 +2,8 @@
 title: "OH_AVBuffer"
 upstream_id: "harmonyos-references/capi-core-oh-avbuffer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:04.083579"
+content_hash: "07c1ddc7a80e"
+synced_at: "2026-07-09T01:00:15.763889"
 ---
 
 # OH_AVBuffer

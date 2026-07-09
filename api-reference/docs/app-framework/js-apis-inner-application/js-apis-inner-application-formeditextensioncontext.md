@@ -2,7 +2,8 @@
 title: "FormEditExtensionContext"
 upstream_id: "harmonyos-references/js-apis-inner-application-formeditextensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:17.971050"
+content_hash: "e694769dff46"
+synced_at: "2026-07-09T00:59:03.062235"
 ---
 
 # FormEditExtensionContext

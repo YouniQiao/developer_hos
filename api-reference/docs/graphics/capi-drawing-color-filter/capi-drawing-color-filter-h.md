@@ -2,7 +2,8 @@
 title: "drawing_color_filter.h"
 upstream_id: "harmonyos-references/capi-drawing-color-filter-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:59.606136"
+content_hash: "641a9343a184"
+synced_at: "2026-07-09T01:00:55.122614"
 ---
 
 # drawing_color_filter.h

@@ -2,7 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/map-map-enums"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:34.790543"
+content_hash: "13c7af87ac49"
+synced_at: "2026-07-09T01:01:26.423143"
 ---
 
 # Enums

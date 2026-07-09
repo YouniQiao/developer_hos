@@ -2,7 +2,8 @@
 title: "image_receiver_mdk.h"
 upstream_id: "harmonyos-references/capi-image-receiver-mdk-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:26.877979"
+content_hash: "c0a687c8f807"
+synced_at: "2026-07-09T01:00:33.841374"
 ---
 
 # image_receiver_mdk.h

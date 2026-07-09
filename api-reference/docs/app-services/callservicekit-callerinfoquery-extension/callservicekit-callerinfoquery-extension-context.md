@@ -2,7 +2,8 @@
 title: "CallerInfoQueryExtensionContext (来去电信息查询扩展Context)"
 upstream_id: "harmonyos-references/callservicekit-callerinfoquery-extension-context"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:23.271717"
+content_hash: "03a3391e598b"
+synced_at: "2026-07-09T01:01:15.863002"
 ---
 
 # CallerInfoQueryExtensionContext (来去电信息查询扩展Context)

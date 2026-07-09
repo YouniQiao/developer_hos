@@ -2,7 +2,8 @@
 title: "uitest错误码"
 upstream_id: "harmonyos-references/errorcode-uitest"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:51.623649"
+content_hash: "f458b526fa82"
+synced_at: "2026-07-09T01:00:06.532160"
 ---
 
 # uitest错误码

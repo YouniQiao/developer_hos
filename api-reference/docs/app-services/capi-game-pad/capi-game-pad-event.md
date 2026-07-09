@@ -2,7 +2,8 @@
 title: "game_pad_event.h"
 upstream_id: "harmonyos-references/capi-game-pad-event"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:24.987664"
+content_hash: "0ecbdf232d49"
+synced_at: "2026-07-09T01:01:18.032177"
 ---
 
 # game_pad_event.h

@@ -2,7 +2,8 @@
 title: "Class (AnimationSet)"
 upstream_id: "harmonyos-references/map-map-animationset"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:33.580210"
+content_hash: "86a18a609699"
+synced_at: "2026-07-09T01:01:25.468825"
 ---
 
 # Class (AnimationSet)
@@ -79,7 +80,7 @@ addAnimation(animation: Animation): void
 
 | **参数名** | **类型** | 必填 | **说明** |
 | --- | --- | --- | --- |
-| animation | [Animation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-animation) | 是 | 动画类集合增加动画。 |
+| animation | [Animation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/map-map-animation) | 是 | 要添加的动画对象。 |
 
 示例：
 

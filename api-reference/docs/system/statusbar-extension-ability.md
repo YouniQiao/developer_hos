@@ -2,7 +2,8 @@
 title: "StatusBarViewExtensionAbility（状态栏扩展Ability）"
 upstream_id: "harmonyos-references/statusbar-extension-ability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:13.993698"
+content_hash: "fb9ede5d64fb"
+synced_at: "2026-07-09T00:59:45.297477"
 ---
 
 # StatusBarViewExtensionAbility（状态栏扩展Ability）

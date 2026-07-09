@@ -2,7 +2,8 @@
 title: "Types"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:23.236839"
+content_hash: "e61e5eada6c1"
+synced_at: "2026-07-09T00:57:30.156510"
 ---
 
 # Types

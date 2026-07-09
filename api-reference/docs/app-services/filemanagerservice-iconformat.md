@@ -1,9 +1,12 @@
 ---
+
 title: "图标格式说明"
 upstream_id: "harmonyos-references/filemanagerservice-iconformat"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:24.615032"
+synced_at: "2026-07-09T01:01:17.558225"
+content_hash: "c303d2262b84"
 ---
+
 
 # 图标格式说明
 

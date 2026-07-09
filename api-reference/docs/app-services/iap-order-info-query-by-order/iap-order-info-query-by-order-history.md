@@ -2,7 +2,8 @@
 title: "查询用户的历史购买记录"
 upstream_id: "harmonyos-references/iap-order-info-query-by-order-history"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:29.114924"
+content_hash: "24dec1f3627a"
+synced_at: "2026-07-09T01:01:21.932467"
 ---
 
 # 查询用户的历史购买记录

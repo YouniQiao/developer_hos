@@ -2,7 +2,8 @@
 title: "CommonEvent_SubscribeInfo"
 upstream_id: "harmonyos-references/capi-oh-commonevent-commonevent-subscribeinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:11.606748"
+content_hash: "04bd8b02e36d"
+synced_at: "2026-07-09T00:59:43.407016"
 ---
 
 # CommonEvent_SubscribeInfo

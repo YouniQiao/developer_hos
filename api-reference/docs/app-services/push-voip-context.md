@@ -2,7 +2,8 @@
 title: "VoIPExtensionContext（应用内通话消息扩展Context）（废弃）"
 upstream_id: "harmonyos-references/push-voip-context"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:49.269026"
+content_hash: "a83c7c191e07"
+synced_at: "2026-07-09T01:01:37.542978"
 ---
 
 # VoIPExtensionContext（应用内通话消息扩展Context）（废弃）

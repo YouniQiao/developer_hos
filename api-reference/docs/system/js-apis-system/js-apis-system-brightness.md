@@ -2,7 +2,8 @@
 title: "@system.brightness (屏幕亮度)"
 upstream_id: "harmonyos-references/js-apis-system-brightness"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:09.849977"
+content_hash: "cf9c0206f7e2"
+synced_at: "2026-07-09T00:59:42.006407"
 ---
 
 # @system.brightness (屏幕亮度)

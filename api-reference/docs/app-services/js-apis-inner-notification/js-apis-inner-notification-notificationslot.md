@@ -2,7 +2,8 @@
 title: "NotificationSlot"
 upstream_id: "harmonyos-references/js-apis-inner-notification-notificationslot"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:37.895696"
+content_hash: "6dd7a5f7c685"
+synced_at: "2026-07-09T01:01:28.822737"
 ---
 
 # NotificationSlot

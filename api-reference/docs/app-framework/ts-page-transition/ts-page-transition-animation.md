@@ -2,7 +2,8 @@
 title: "页面间转场 (pageTransition)"
 upstream_id: "harmonyos-references/ts-page-transition-animation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:40.913419"
+content_hash: "1ae35d31cfd2"
+synced_at: "2026-07-09T00:58:08.296264"
 ---
 
 # 页面间转场 (pageTransition)
@@ -357,7 +358,7 @@ struct Page1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470085.gif)
+ ![](./img/zh-cn_image_0000002631413610.gif)
 
 自定义方式2：配置了当前页面的入场动画为从左侧滑入，退场为平移加透明度变化。
 
@@ -416,7 +417,7 @@ struct Page1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350133.gif)
+ ![](./img/zh-cn_image_0000002661732841.gif)
 
 #### [h2]示例2（设置退入场平移效果）
 
@@ -501,7 +502,7 @@ struct Page1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230720.gif)
+ ![](./img/zh-cn_image_0000002631253720.gif)
 
 自定义方式2：使用系统默认的退入场效果，将系统语言排版模式改为RTL。
 
@@ -560,4 +561,4 @@ struct Page1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070810.gif)
+ ![](./img/zh-cn_image_0000002661612903.gif)

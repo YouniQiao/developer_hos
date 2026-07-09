@@ -2,7 +2,8 @@
 title: "BundleInfo"
 upstream_id: "harmonyos-references/js-apis-bundle-bundleinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:56.623735"
+content_hash: "c63076d1578e"
+synced_at: "2026-07-09T00:57:11.482063"
 ---
 
 # BundleInfo

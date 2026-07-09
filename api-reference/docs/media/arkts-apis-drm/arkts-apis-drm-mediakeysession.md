@@ -2,7 +2,8 @@
 title: "Interface (MediaKeySession)"
 upstream_id: "harmonyos-references/arkts-apis-drm-mediakeysession"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:19.419318"
+content_hash: "2d28d6a8050e"
+synced_at: "2026-07-09T01:00:28.273552"
 ---
 
 # Interface (MediaKeySession)

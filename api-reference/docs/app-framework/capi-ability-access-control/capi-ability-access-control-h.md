@@ -2,7 +2,8 @@
 title: "ability_access_control.h"
 upstream_id: "harmonyos-references/capi-ability-access-control-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:57.666034"
+content_hash: "8f85b176cc9b"
+synced_at: "2026-07-09T00:57:12.100995"
 ---
 
 # ability_access_control.h

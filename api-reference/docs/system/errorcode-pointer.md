@@ -1,9 +1,12 @@
 ---
+
 title: "鼠标光标错误码"
 upstream_id: "harmonyos-references/errorcode-pointer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:21.230289"
+synced_at: "2026-07-09T00:59:50.829333"
+content_hash: "44cb2434cccc"
 ---
+
 
 # 鼠标光标错误码
 

@@ -2,7 +2,8 @@
 title: "FIDO2_CredentialCreationOptions"
 upstream_id: "harmonyos-references/_f_i_d_o2___credential_creation_options"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:39.996192"
+content_hash: "db0dc05dca87"
+synced_at: "2026-07-09T00:59:18.649574"
 ---
 
 # FIDO2_CredentialCreationOptions

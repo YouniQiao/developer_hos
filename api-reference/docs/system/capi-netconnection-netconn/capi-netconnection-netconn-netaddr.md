@@ -2,7 +2,8 @@
 title: "NetConn_NetAddr"
 upstream_id: "harmonyos-references/capi-netconnection-netconn-netaddr"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:54.020603"
+content_hash: "f7091028b89e"
+synced_at: "2026-07-09T00:59:29.243022"
 ---
 
 # NetConn_NetAddr

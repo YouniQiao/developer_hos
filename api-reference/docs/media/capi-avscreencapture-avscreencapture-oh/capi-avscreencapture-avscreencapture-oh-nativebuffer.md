@@ -2,7 +2,8 @@
 title: "OH_NativeBuffer"
 upstream_id: "harmonyos-references/capi-avscreencapture-avscreencapture-oh-nativebuffer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:40.902370"
+content_hash: "da1dabcb1b30"
+synced_at: "2026-07-09T01:00:43.967153"
 ---
 
 # OH_NativeBuffer

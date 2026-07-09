@@ -2,7 +2,8 @@
 title: "设置组件绑定的手势"
 upstream_id: "harmonyos-references/ts-uigestureevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:50.185028"
+content_hash: "063b2ff04ac5"
+synced_at: "2026-07-09T00:57:43.748201"
 ---
 
 # 设置组件绑定的手势

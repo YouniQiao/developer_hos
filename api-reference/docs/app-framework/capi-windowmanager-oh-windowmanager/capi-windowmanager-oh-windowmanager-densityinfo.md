@@ -2,7 +2,8 @@
 title: "OH_WindowManager_DensityInfo"
 upstream_id: "harmonyos-references/capi-windowmanager-oh-windowmanager-densityinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:56.890007"
+content_hash: "6815dc45fe8a"
+synced_at: "2026-07-09T00:58:46.134388"
 ---
 
 # OH_WindowManager_DensityInfo

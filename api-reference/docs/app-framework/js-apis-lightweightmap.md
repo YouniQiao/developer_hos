@@ -2,7 +2,8 @@
 title: "@ohos.util.LightWeightMap (非线性容器LightWeightMap)"
 upstream_id: "harmonyos-references/js-apis-lightweightmap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:17.168565"
+content_hash: "5f56bc184822"
+synced_at: "2026-07-09T00:57:26.528885"
 ---
 
 # @ohos.util.LightWeightMap (非线性容器LightWeightMap)

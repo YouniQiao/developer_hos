@@ -2,14 +2,13 @@
 title: "stylusInteraction (手写笔交互功能)"
 upstream_id: "harmonyos-references/pen-stylusinteraction"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:38.788506"
+content_hash: "bc3345d58e69"
+synced_at: "2026-07-09T00:59:58.846619"
 ---
 
 # stylusInteraction (手写笔交互功能)
 
 手写笔交互功能入口类，当前包含手写笔笔身轻捏事件和手写笔笔身双击事件。
-
-系统能力： SystemCapability.Stylus.StylusService
 
 起始版本： 5.1.1(19)
 
@@ -128,7 +127,7 @@ off(type: 'doubleTap', receiver?: Callback<DoubleTapEvent>): void
 
 起始版本： 5.1.1(19)
 
-参数：：
+参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |

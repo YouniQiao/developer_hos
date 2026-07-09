@@ -1,9 +1,12 @@
 ---
+
 title: "组件级像素取整"
 upstream_id: "harmonyos-references/ts-universal-attributes-pixelroundforcomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:37.429113"
+synced_at: "2026-07-09T00:57:38.388224"
+content_hash: "e43fabd6432e"
 ---
+
 
 # 组件级像素取整
 

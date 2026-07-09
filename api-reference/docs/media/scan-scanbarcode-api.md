@@ -2,7 +2,8 @@
 title: "scanBarcode (默认界面扫码)"
 upstream_id: "harmonyos-references/scan-scanbarcode-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:49.110819"
+content_hash: "b997e48c56aa"
+synced_at: "2026-07-09T01:00:49.229496"
 ---
 
 # scanBarcode (默认界面扫码)

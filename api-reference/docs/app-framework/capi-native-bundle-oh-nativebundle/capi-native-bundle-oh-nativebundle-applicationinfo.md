@@ -2,7 +2,8 @@
 title: "OH_NativeBundle_ApplicationInfo"
 upstream_id: "harmonyos-references/capi-native-bundle-oh-nativebundle-applicationinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:59.778596"
+content_hash: "9dc9db9894f2"
+synced_at: "2026-07-09T00:57:13.466653"
 ---
 
 # OH_NativeBundle_ApplicationInfo

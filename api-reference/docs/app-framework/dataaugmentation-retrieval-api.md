@@ -2,7 +2,8 @@
 title: "retrieval（智慧化数据平台）"
 upstream_id: "harmonyos-references/dataaugmentation-retrieval-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:16.442956"
+content_hash: "30d0fa194dc8"
+synced_at: "2026-07-09T00:59:02.874525"
 ---
 
 # retrieval（智慧化数据平台）

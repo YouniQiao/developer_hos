@@ -2,7 +2,8 @@
 title: "ffrt_fiber_t"
 upstream_id: "harmonyos-references/capi-ffrt-ffrt-fiber-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:17.558981"
+content_hash: "19ddb165edd8"
+synced_at: "2026-07-09T00:59:48.323960"
 ---
 
 # ffrt_fiber_t

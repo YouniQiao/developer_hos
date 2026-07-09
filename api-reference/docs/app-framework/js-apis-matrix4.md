@@ -2,7 +2,8 @@
 title: "@ohos.matrix4 (矩阵变换)"
 upstream_id: "harmonyos-references/js-apis-matrix4"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:24.347275"
+content_hash: "ae7805018dc6"
+synced_at: "2026-07-09T00:57:31.324369"
 ---
 
 # @ohos.matrix4 (矩阵变换)
@@ -200,7 +201,7 @@ struct Test {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070178.png)
+ ![](./img/zh-cn_image_0000002631412964.png)
 
 #### [h2]combine
 
@@ -255,7 +256,7 @@ struct Test {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469455.png)
+ ![](./img/zh-cn_image_0000002661732195.png)
 
 #### [h2]invert
 
@@ -347,7 +348,7 @@ struct Test {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349503.png)
+ ![](./img/zh-cn_image_0000002631253074.png)
 
 #### [h2]scale
 
@@ -399,7 +400,7 @@ struct Test {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230090.png)
+ ![](./img/zh-cn_image_0000002661612259.png)
 
 #### [h2]skew12+
 
@@ -451,7 +452,7 @@ struct Test {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070180.jpeg)
+ ![](./img/zh-cn_image_0000002631412966.jpeg)
 
 #### [h2]rotate
 
@@ -502,7 +503,7 @@ struct Test {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469457.png)
+ ![](./img/zh-cn_image_0000002661732197.png)
 
 #### [h2]transformPoint
 
@@ -562,7 +563,7 @@ struct Test {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349505.png)
+ ![](./img/zh-cn_image_0000002631253076.png)
 
 #### [h2]setPolyToPoly12+
 
@@ -618,7 +619,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230092.png)
+ ![](./img/zh-cn_image_0000002661612261.png)
 
 #### TranslateOption
 
@@ -736,7 +737,7 @@ struct Test {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070182.png)
+ ![](./img/zh-cn_image_0000002631412968.png)
 
 #### matrix4.invert(deprecated)
 

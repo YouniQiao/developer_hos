@@ -2,7 +2,8 @@
 title: "InputMethod_PrivateCommand"
 upstream_id: "harmonyos-references/capi-inputmethod-inputmethod-privatecommand"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:20.331315"
+content_hash: "4cbe84d8fe91"
+synced_at: "2026-07-09T00:59:05.343387"
 ---
 
 # InputMethod_PrivateCommand

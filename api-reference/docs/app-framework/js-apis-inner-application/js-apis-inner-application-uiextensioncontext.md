@@ -2,7 +2,8 @@
 title: "UIExtensionContext"
 upstream_id: "harmonyos-references/js-apis-inner-application-uiextensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:54.272020"
+content_hash: "1bb28bc915b8"
+synced_at: "2026-07-09T00:57:09.963282"
 ---
 
 # UIExtensionContext

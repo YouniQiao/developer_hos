@@ -2,7 +2,8 @@
 title: "OH_Drawing_Array"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-array"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:11.057996"
+content_hash: "afc84165fdd1"
+synced_at: "2026-07-09T01:01:04.954184"
 ---
 
 # OH_Drawing_Array

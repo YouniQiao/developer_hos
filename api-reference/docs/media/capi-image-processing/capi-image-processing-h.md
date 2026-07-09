@@ -2,7 +2,8 @@
 title: "image_processing.h"
 upstream_id: "harmonyos-references/capi-image-processing-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:27.656238"
+content_hash: "b44f6c8c844a"
+synced_at: "2026-07-09T01:00:33.855964"
 ---
 
 # image_processing.h

@@ -2,7 +2,8 @@
 title: "Asset_Value"
 upstream_id: "harmonyos-references/capi-assettype-asset-value"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:29.140673"
+content_hash: "342192ea7f02"
+synced_at: "2026-07-09T00:59:10.843335"
 ---
 
 # Asset_Value

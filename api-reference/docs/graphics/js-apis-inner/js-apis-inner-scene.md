@@ -2,7 +2,8 @@
 title: "Scene"
 upstream_id: "harmonyos-references/js-apis-inner-scene"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:11.664208"
+content_hash: "633977b647ff"
+synced_at: "2026-07-09T01:01:06.211352"
 ---
 
 # Scene

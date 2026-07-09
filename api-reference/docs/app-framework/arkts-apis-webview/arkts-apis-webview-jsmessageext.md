@@ -2,12 +2,15 @@
 title: "Class (JsMessageExt)"
 upstream_id: "harmonyos-references/arkts-apis-webview-jsmessageext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:02.645999"
+content_hash: "d7dc122a493e"
+synced_at: "2026-07-09T00:58:50.161358"
 ---
 
 # Class (JsMessageExt)
 
-[runJavaScriptExt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#runjavascriptext10)接口执行脚本返回的数据对象。
+JsMessageExt是ArkWeb框架中用于封装[runJavaScriptExt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#runjavascriptext10)接口执行JavaScript脚本后返回结果的数据类。与常规的runJavaScript接口不同，runJavaScriptExt支持更丰富的返回值类型，JsMessageExt则为这些多样化的返回结果提供了类型安全的访问方式。开发者通过JsMessageExt的getType方法先获取数据类型，再调用对应的get方法获取具体值。
+
+JsMessageExt支持多种JavaScript返回值类型的解析：字符串（getString）、数值（getNumber）、布尔值（getBoolean）、原始二进制数据（getArrayBuffer）、数组（getArray）等。当获取的数据类型与实际存储类型不匹配时（例如对数值类型调用getString），会抛出错误码17100014。从API version 22开始，JsMessageExt还提供了getErrorDescription方法，用于获取JavaScript执行过程中的异常信息，如果返回值为object类型则统一格式化为描述字符串。
 
 ![](./img/note_3.0-zh-cn.png)
 

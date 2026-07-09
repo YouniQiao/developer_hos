@@ -2,7 +2,8 @@
 title: "OH_NativeXComponent_HistoricalPoint"
 upstream_id: "harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent-historicalpoint"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:48.569529"
+content_hash: "acaeeb6bbfe9"
+synced_at: "2026-07-09T00:58:41.017997"
 ---
 
 # OH_NativeXComponent_HistoricalPoint

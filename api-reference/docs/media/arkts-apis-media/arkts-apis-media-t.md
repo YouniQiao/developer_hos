@@ -2,7 +2,8 @@
 title: "Types"
 upstream_id: "harmonyos-references/arkts-apis-media-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:34.621919"
+content_hash: "be1868cb3d72"
+synced_at: "2026-07-09T01:00:38.864418"
 ---
 
 # Types

@@ -2,7 +2,8 @@
 title: "Rcp_Response"
 upstream_id: "harmonyos-references/_rcp___response"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:01.594922"
+content_hash: "4d4d1e9e9381"
+synced_at: "2026-07-09T00:59:35.786730"
 ---
 
 # Rcp_Response
@@ -64,7 +65,7 @@ Rcp_DebugInfo* Rcp_Response::debugInfo
 
 请求/响应处理调试信息。
 
-收集的事件取决于[Rcp_TracingConfiguration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_rcp___tracing_configuration)配置信息。
+收集的事件取决于[Rcp_TracingConfiguration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_rcp___tracing_configuration)配置。
 
 #### [h2]destroyResponse
 

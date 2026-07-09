@@ -2,7 +2,8 @@
 title: "Scan_ScannerOptions"
 upstream_id: "harmonyos-references/capi-oh-scan-scan-scanneroptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:12.901842"
+content_hash: "feed2b8f4e06"
+synced_at: "2026-07-09T00:59:44.464291"
 ---
 
 # Scan_ScannerOptions

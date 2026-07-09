@@ -1,9 +1,12 @@
 ---
+
 title: "内置环境变量说明"
 upstream_id: "harmonyos-references/ts-state-management-environment-variables"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:57.644720"
+synced_at: "2026-07-09T00:58:18.238858"
+content_hash: "13dd3c79e0a9"
 ---
+
 
 # 内置环境变量说明
 

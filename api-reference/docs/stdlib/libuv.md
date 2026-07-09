@@ -2,7 +2,8 @@
 title: "libuv"
 upstream_id: "harmonyos-references/libuv"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:04.916063"
+content_hash: "017bf7ecdfcc"
+synced_at: "2026-07-09T01:01:48.839509"
 ---
 
 # libuv
@@ -1217,7 +1218,7 @@ int uv_async_send(uv_async_t* handle)
 1. uv_async_t从调用uv_async_init开始后就一直处于活跃状态，除非用uv_close将其关闭。
 2. uv_async_t的执行顺序严格按照uv_async_init的顺序，而非通过uv_async_send的顺序来执行的。因此按照初始化的顺序来管理好时序问题是必要的。
 
-![](./img/zh-cn_image_0000002626231626.jpg)
+![](./img/zh-cn_image_0000002631414528.jpg)
 
 示例代码：
 
@@ -1310,7 +1311,7 @@ after_work_cb：loop所在线程要执行的回调函数。
 
 下图为原生libuv的线程池工作流程，图中流程已简化，默认句柄的pending标志为1，worker线程个数不代表线程池中线程的真实数量。
 
-![](./img/zh-cn_image_0000002626071714.jpg)
+![](./img/zh-cn_image_0000002661733755.jpg)
 
 2. 异步任务提交注意事项
 
@@ -1330,7 +1331,7 @@ after_work_cb：loop所在线程要执行的回调函数。
 
 另外，在应用主线程中，所有的异步任务尽管最终都是通过libuv得到执行的。但是在当前系统中，libuv的线程池已经对接到了FFRT中，任何抛向libuv的异步任务都会在FFRT的线程中得到调度。应用主线程的回调函数也通过PostTask接口插入到eventhandler的队列上。这就意味着FFRT线程上的异步任务完成后不再通过uv_async_send的方式触发主线程的回调。过程如下图:
 
-![](./img/zh-cn_image_0000002656470991.jpg)
+![](./img/zh-cn_image_0000002631254636.jpg)
 
 我们总结了五种类型的请求任务是直接可以按照正常用法在应用主循环中生效的：
 

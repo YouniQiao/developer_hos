@@ -2,7 +2,8 @@
 title: "Z序控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-z-order"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:35.421801"
+content_hash: "110aa7e892b5"
+synced_at: "2026-07-09T00:57:37.689564"
 ---
 
 # Z序控制
@@ -69,11 +70,11 @@ struct ZIndexExample {
 ```
  Stack容器内子组件不设置zIndex的效果。
 
-![](./img/zh-cn_image_0000002656349571.png)
+![](./img/zh-cn_image_0000002631253144.png)
 
 Stack容器子组件设置zIndex后的效果。
 
-![](./img/zh-cn_image_0000002626230158.png)
+![](./img/zh-cn_image_0000002661612329.png)
 
 #### [h2]示例2（动态修改zIndex属性）
 
@@ -109,15 +110,15 @@ struct ZIndexExample {
 ```
  不点击Button修改zIndex值的效果。
 
-![](./img/zh-cn_image_0000002626070248.png)
+![](./img/zh-cn_image_0000002631413036.png)
 
 点击Button动态修改zIndex，使Text1和Text2的zIndex相等，因为在点击Button前的层级顺序上根据zIndex进行稳定排序，层级顺序不发生改变。
 
-![](./img/zh-cn_image_0000002656469525.png)
+![](./img/zh-cn_image_0000002661732269.png)
 
 点击Button动态修改zIndex，使Text2的zIndex大于Text1，层级顺序发生改变。
 
-![](./img/zh-cn_image_0000002656349573.png)
+![](./img/zh-cn_image_0000002631253146.png)
 
 #### [h2]示例3（设置不同容器内组件的zIndex属性）
 
@@ -152,4 +153,4 @@ struct ZIndexExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230160.png)
+ ![](./img/zh-cn_image_0000002661612331.png)

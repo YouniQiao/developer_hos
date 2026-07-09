@@ -2,7 +2,8 @@
 title: "UsbDdk"
 upstream_id: "harmonyos-references/capi-usbddk"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:30.739339"
+content_hash: "40eb542cdac1"
+synced_at: "2026-07-09T00:59:54.399709"
 ---
 
 # UsbDdk

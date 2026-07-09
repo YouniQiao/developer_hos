@@ -2,7 +2,8 @@
 title: "OH_Drawing_RectSize"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-rectsize"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:06.772196"
+content_hash: "e2dca9861d2c"
+synced_at: "2026-07-09T01:01:01.199192"
 ---
 
 # OH_Drawing_RectSize

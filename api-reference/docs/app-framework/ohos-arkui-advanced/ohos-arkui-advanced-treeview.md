@@ -2,7 +2,8 @@
 title: "TreeView"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-treeview"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:57.014023"
+content_hash: "24af62de42a9"
+synced_at: "2026-07-09T00:58:17.829752"
 ---
 
 # TreeView
@@ -409,7 +410,7 @@ struct TreeViewDemo {
     }
   }}
 ```
- ![](./img/zh-cn_image_0000002656350251.png)
+ ![](./img/zh-cn_image_0000002661613021.png)
 
 #### [h2]示例2（设置Symbol类型图标）
 
@@ -534,4 +535,4 @@ struct TreeViewDemo {
     }
   }}
 ```
- ![](./img/zh-cn_image_0000002626230838.png)
+ ![](./img/zh-cn_image_0000002631413732.png)

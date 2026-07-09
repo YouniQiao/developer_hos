@@ -2,7 +2,8 @@
 title: "ArkWeb_CookieManagerAPI"
 upstream_id: "harmonyos-references/capi-web-arkweb-cookiemanagerapi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:09.703599"
+content_hash: "c2923146b0c4"
+synced_at: "2026-07-09T00:58:56.538405"
 ---
 
 # ArkWeb_CookieManagerAPI
@@ -13,7 +14,9 @@ typedef struct {...} ArkWeb_CookieManagerAPI
 
 #### 概述
 
-定义了ArkWeb的CookieManager接口。在调用接口之前，建议使用[ARKWEB_MEMBER_MISSING](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-type-h#宏定义)检查函数结构体是否有对应的函数指针，避免SDK与设备ROM不匹配导致崩溃。CookieManager相关接口需在UI线程中调用OH_ArkWeb_GetNativeAPI方法获取。
+ArkWeb_CookieManagerAPI是Cookie管理相关Native API结构体。该结构体提供了Cookie的读取、设置、清除和同步等操作能力。
+
+CookieManager相关接口需在UI线程中调用OH_ArkWeb_GetNativeAPI方法获取，调用前建议通过[ARKWEB_MEMBER_MISSING](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-type-h#宏定义)校验函数指针的可用性，避免SDK与设备ROM不匹配导致崩溃。
 
 起始版本： 12
 

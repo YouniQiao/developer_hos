@@ -2,7 +2,8 @@
 title: "OH_Drawing_TypographyCreate"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-typographycreate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:08.210331"
+content_hash: "4427bf574bf0"
+synced_at: "2026-07-09T01:01:02.476682"
 ---
 
 # OH_Drawing_TypographyCreate

@@ -2,7 +2,8 @@
 title: "OH_AudioObjectPosition"
 upstream_id: "harmonyos-references/capi-core-oh-audioobjectposition"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:05.043321"
+content_hash: "1d3533b9e1d7"
+synced_at: "2026-07-09T01:00:16.486131"
 ---
 
 # OH_AudioObjectPosition

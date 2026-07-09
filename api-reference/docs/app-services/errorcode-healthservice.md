@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-healthservice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:27.878156"
+content_hash: "1556e492d503"
+synced_at: "2026-07-09T01:01:20.721859"
 ---
 
 # ArkTS API错误码

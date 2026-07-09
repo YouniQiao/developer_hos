@@ -2,7 +2,8 @@
 title: "AssetApi"
 upstream_id: "harmonyos-references/capi-assetapi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:28.571540"
+content_hash: "5c3f3a967d1d"
+synced_at: "2026-07-09T00:59:10.418680"
 ---
 
 # AssetApi

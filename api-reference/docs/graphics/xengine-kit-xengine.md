@@ -2,7 +2,8 @@
 title: "XEngine"
 upstream_id: "harmonyos-references/xengine-kit-xengine"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:15.256276"
+content_hash: "4e02cb70e0d7"
+synced_at: "2026-07-09T01:01:09.885932"
 ---
 
 # XEngine

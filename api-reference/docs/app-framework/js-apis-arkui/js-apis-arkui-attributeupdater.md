@@ -2,7 +2,8 @@
 title: "AttributeUpdater"
 upstream_id: "harmonyos-references/js-apis-arkui-attributeupdater"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:28.461862"
+content_hash: "e2bc241fa91c"
+synced_at: "2026-07-09T00:57:33.232775"
 ---
 
 # AttributeUpdater
@@ -139,7 +140,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469495.gif)
+ ![](./img/zh-cn_image_0000002661732237.gif)
 
 #### [h2]attribute
 
@@ -193,7 +194,7 @@ struct updaterDemo2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349543.gif)
+ ![](./img/zh-cn_image_0000002631253116.gif)
 
 #### [h2]属性
 
@@ -241,7 +242,7 @@ struct attributeDemo3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230130.gif)
+ ![](./img/zh-cn_image_0000002661612299.gif)
 
 #### [h2]onComponentChanged
 
@@ -307,4 +308,4 @@ struct updaterDemo4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070220.gif)
+ ![](./img/zh-cn_image_0000002631413008.gif)

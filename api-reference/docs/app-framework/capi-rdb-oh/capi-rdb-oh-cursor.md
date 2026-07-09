@@ -2,7 +2,8 @@
 title: "OH_Cursor"
 upstream_id: "harmonyos-references/capi-rdb-oh-cursor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:07.646591"
+content_hash: "4acff322114e"
+synced_at: "2026-07-09T00:57:19.839163"
 ---
 
 # OH_Cursor

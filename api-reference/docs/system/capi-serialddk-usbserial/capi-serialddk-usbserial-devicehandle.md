@@ -2,7 +2,8 @@
 title: "UsbSerial_Device"
 upstream_id: "harmonyos-references/capi-serialddk-usbserial-devicehandle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:36.506104"
+content_hash: "a2ac5ee99918"
+synced_at: "2026-07-09T00:59:57.626363"
 ---
 
 # UsbSerial_Device

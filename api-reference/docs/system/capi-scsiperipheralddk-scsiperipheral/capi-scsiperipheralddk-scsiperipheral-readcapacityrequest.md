@@ -2,7 +2,8 @@
 title: "ScsiPeripheral_ReadCapacityRequest"
 upstream_id: "harmonyos-references/capi-scsiperipheralddk-scsiperipheral-readcapacityrequest"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:34.457901"
+content_hash: "2d8b8321edbc"
+synced_at: "2026-07-09T00:59:56.465458"
 ---
 
 # ScsiPeripheral_ReadCapacityRequest

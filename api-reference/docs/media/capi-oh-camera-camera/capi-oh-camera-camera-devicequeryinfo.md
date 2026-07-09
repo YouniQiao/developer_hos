@@ -2,7 +2,8 @@
 title: "Camera_DeviceQueryInfo"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-devicequeryinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:16.163995"
+content_hash: "c9779a3a72bd"
+synced_at: "2026-07-09T01:00:25.709062"
 ---
 
 # Camera_DeviceQueryInfo

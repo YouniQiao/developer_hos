@@ -1,9 +1,12 @@
 ---
+
 title: "触摸测试控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-hit-test-behavior"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:43.145772"
+synced_at: "2026-07-09T00:57:41.404373"
+content_hash: "254841b9ff92"
 ---
+
 
 # 触摸测试控制
 

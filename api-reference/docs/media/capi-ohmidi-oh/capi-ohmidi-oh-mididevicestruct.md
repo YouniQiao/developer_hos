@@ -2,7 +2,8 @@
 title: "OH_MIDIDeviceStruct"
 upstream_id: "harmonyos-references/capi-ohmidi-oh-mididevicestruct"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:00.777381"
+content_hash: "7548af83abc9"
+synced_at: "2026-07-09T01:00:12.971038"
 ---
 
 # OH_MIDIDeviceStruct

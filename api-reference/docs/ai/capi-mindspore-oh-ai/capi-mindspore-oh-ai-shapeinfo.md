@@ -2,7 +2,8 @@
 title: "OH_AI_ShapeInfo"
 upstream_id: "harmonyos-references/capi-mindspore-oh-ai-shapeinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:58.628130"
+content_hash: "555e3070d239"
+synced_at: "2026-07-09T01:01:43.336697"
 ---
 
 # OH_AI_ShapeInfo

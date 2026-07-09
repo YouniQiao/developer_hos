@@ -2,7 +2,8 @@
 title: "ArkUI_CustomProperty"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-customproperty"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:53.370881"
+content_hash: "e3a5eb1eeef0"
+synced_at: "2026-07-09T00:58:43.767462"
 ---
 
 # ArkUI_CustomProperty

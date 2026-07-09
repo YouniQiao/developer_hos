@@ -2,7 +2,8 @@
 title: "Types"
 upstream_id: "harmonyos-references/arkts-apis-camera-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:14.146015"
+content_hash: "f66f14068eb1"
+synced_at: "2026-07-09T01:00:23.927435"
 ---
 
 # Types

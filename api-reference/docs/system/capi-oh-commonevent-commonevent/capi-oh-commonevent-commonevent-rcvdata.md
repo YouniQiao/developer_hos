@@ -2,7 +2,8 @@
 title: "CommonEvent_RcvData"
 upstream_id: "harmonyos-references/capi-oh-commonevent-commonevent-rcvdata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:11.923466"
+content_hash: "ed5e9d5af531"
+synced_at: "2026-07-09T00:59:43.443793"
 ---
 
 # CommonEvent_RcvData

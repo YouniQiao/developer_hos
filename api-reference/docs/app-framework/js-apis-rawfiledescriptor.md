@@ -2,7 +2,8 @@
 title: "RawFileDescriptor"
 upstream_id: "harmonyos-references/js-apis-rawfiledescriptor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:22.856777"
+content_hash: "3d5747a16013"
+synced_at: "2026-07-09T00:59:06.789783"
 ---
 
 # RawFileDescriptor

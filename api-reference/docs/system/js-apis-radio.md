@@ -2,7 +2,8 @@
 title: "@ohos.telephony.radio (网络搜索)"
 upstream_id: "harmonyos-references/js-apis-radio"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:04.602295"
+content_hash: "0fb1ae7c6531"
+synced_at: "2026-07-09T00:59:38.575027"
 ---
 
 # @ohos.telephony.radio (网络搜索)

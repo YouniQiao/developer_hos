@@ -2,7 +2,8 @@
 title: "ArkUI_DrawContext"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-drawcontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:52.309227"
+content_hash: "bc30dd2466d4"
+synced_at: "2026-07-09T00:58:43.144100"
 ---
 
 # ArkUI_DrawContext

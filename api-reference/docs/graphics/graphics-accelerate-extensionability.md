@@ -2,7 +2,8 @@
 title: "AssetAccelerationExtensionAbility（资源加速ExtensionAbility）"
 upstream_id: "harmonyos-references/graphics-accelerate-extensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:12.336786"
+content_hash: "0c579c31c6a8"
+synced_at: "2026-07-09T01:01:05.977041"
 ---
 
 # AssetAccelerationExtensionAbility（资源加速ExtensionAbility）

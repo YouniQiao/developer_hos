@@ -2,7 +2,8 @@
 title: "calendar"
 upstream_id: "harmonyos-references/js-service-widget-basic-calendar"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:27.059151"
+content_hash: "c32111f4be72"
+synced_at: "2026-07-09T00:58:30.949722"
 ---
 
 # calendar
@@ -192,4 +193,4 @@ calendardata示例：
 ```
  4*4卡片
 
-![](./img/zh-cn_image_0000002626071216.png)
+![](./img/zh-cn_image_0000002661733251.png)

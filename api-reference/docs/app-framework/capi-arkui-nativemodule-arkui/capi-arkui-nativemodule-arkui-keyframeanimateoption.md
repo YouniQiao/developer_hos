@@ -2,7 +2,8 @@
 title: "ArkUI_KeyframeAnimateOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-keyframeanimateoption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:45.461222"
+content_hash: "3bbc85b296a0"
+synced_at: "2026-07-09T00:58:39.250216"
 ---
 
 # ArkUI_KeyframeAnimateOption

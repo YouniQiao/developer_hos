@@ -2,7 +2,8 @@
 title: "无障碍悬浮事件"
 upstream_id: "harmonyos-references/ts-universal-accessibility-hover-event"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:33.988970"
+content_hash: "094d697f96ff"
+synced_at: "2026-07-09T00:57:37.172072"
 ---
 
 # 无障碍悬浮事件

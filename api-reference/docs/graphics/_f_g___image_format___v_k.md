@@ -2,7 +2,8 @@
 title: "FG_ImageFormat_VK"
 upstream_id: "harmonyos-references/_f_g___image_format___v_k"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:13.460742"
+content_hash: "1daa092f0f1d"
+synced_at: "2026-07-09T01:01:07.579365"
 ---
 
 # FG_ImageFormat_VK

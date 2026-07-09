@@ -2,7 +2,8 @@
 title: "状态管理V1装饰器参数"
 upstream_id: "harmonyos-references/ts-state-management-v1-parameter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:57.395279"
+content_hash: "4435c83a6e46"
+synced_at: "2026-07-09T00:58:17.885423"
 ---
 
 # 状态管理V1装饰器参数

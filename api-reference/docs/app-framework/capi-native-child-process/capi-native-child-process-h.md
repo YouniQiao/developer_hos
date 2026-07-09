@@ -2,7 +2,8 @@
 title: "native_child_process.h"
 upstream_id: "harmonyos-references/capi-native-child-process-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:58.122788"
+content_hash: "cbc4c0db8930"
+synced_at: "2026-07-09T00:57:12.893308"
 ---
 
 # native_child_process.h

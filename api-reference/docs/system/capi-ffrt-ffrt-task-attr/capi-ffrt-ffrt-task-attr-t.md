@@ -2,7 +2,8 @@
 title: "ffrt_task_attr_t"
 upstream_id: "harmonyos-references/capi-ffrt-ffrt-task-attr-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:16.874177"
+content_hash: "5ae8303387bb"
+synced_at: "2026-07-09T00:59:47.704091"
 ---
 
 # ffrt_task_attr_t

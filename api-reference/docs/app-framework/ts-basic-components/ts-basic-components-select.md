@@ -2,7 +2,8 @@
 title: "Select"
 upstream_id: "harmonyos-references/ts-basic-components-select"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:09.390635"
+content_hash: "96ee93bb97b7"
+synced_at: "2026-07-09T00:57:54.962692"
 ---
 
 # Select
@@ -27,7 +28,7 @@ Select(options: Array<SelectOption>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | Array | 是 | 设置下拉选项。 |
+| options | [Array](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-arkts-collections-array) | 是 | 设置下拉选项。 |
 
 #### SelectOption对象说明
 
@@ -267,7 +268,7 @@ font(value: Font)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#font) | 是 | 下拉按钮本身的文本样式。 API version 11及以前默认值： { size: $r('sys.float.ohos_id_text_size_button1'), weight: FontWeight.Medium } API version 12以后，如果设置controlSize的值为：controlSize.SMALL，size默认值是$r('sys.float.ohos_id_text_size_button2')，否则为$r('sys.float.ohos_id_text_size_button1')。 |
+| value | [Font](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#font) | 是 | 下拉按钮本身的文本样式。 API version 11及以前默认值： { size: $r('sys.float.ohos_id_text_size_button1'), weight: FontWeight.Medium } API version 12以后，如果设置[controlSize](#controlsize12)的值为：ControlSize.SMALL，size默认值是$r('sys.float.ohos_id_text_size_button2')，否则为$r('sys.float.ohos_id_text_size_button1')。 |
 
 #### [h2]font18+
 
@@ -285,7 +286,7 @@ font(selectFont: Optional<Font>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| selectFont | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 下拉按钮本身的文本样式。 如果设置controlSize的值为：controlSize.SMALL，size默认值是$r('sys.float.ohos_id_text_size_button2')，否则为$r('sys.float.ohos_id_text_size_button1')。 当selectFont的值为undefined时，恢复为系统文本样式。 |
+| selectFont | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 下拉按钮本身的文本样式。 如果设置[controlSize](#controlsize12)的值为：ControlSize.SMALL，size默认值是$r('sys.float.ohos_id_text_size_button2')，否则为$r('sys.float.ohos_id_text_size_button1')。 当selectFont的值为undefined时，恢复为系统文本样式。 |
 
 #### [h2]fontColor
 
@@ -319,7 +320,7 @@ fontColor(resColor: Optional<ResourceColor>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| resColor | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 下拉按钮本身的文本颜色。 当resColor的值为undefined时，默认值：$r('sys.color.ohos_id_color_text_primary')混合$r('sys.color.ohos_id_alpha_content_primary')的透明度。 当value的值为undefined时，维持上次取值。 |
+| resColor | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 下拉按钮本身的文本颜色。 当resColor的值为undefined时，默认值：$r('sys.color.ohos_id_color_text_primary')混合$r('sys.color.ohos_id_alpha_content_primary')的透明度。 |
 
 #### [h2]selectedOptionBgColor
 
@@ -543,7 +544,7 @@ space(value: Length)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 下拉菜单项的文本与箭头的间距。 默认值：8 **说明：** 设置string类型时，不支持百分比。 |
+| value | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 是 | 下拉菜单项的文本与箭头的间距。 默认值：8vp **说明：** 设置string类型时，不支持百分比。 |
 
 #### [h2]space18+
 
@@ -561,7 +562,7 @@ space(spaceLength: Optional<Length>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| spaceLength | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 下拉菜单项的文本与箭头之间的间距。 当spaceLength的值为undefined时，默认值：8 |
+| spaceLength | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 下拉菜单项的文本与箭头之间的间距。 当spaceLength的值为undefined时，默认值：8vp |
 
 #### [h2]arrowPosition10+
 
@@ -901,7 +902,7 @@ optionTextModifier(modifier: Optional<TextModifier>)
 
 定制Select下拉菜单未选中项文本样式的方法，在应用optionTextModifier之后，下拉菜单未选中项的文本样式将完全由开发者自定义。
 
-如果[optionFont](#optionfont)与optionTextModifier的Font属性同时设置，则优先使用[optionFont](#optionfont)设置下拉菜单未选中项的文本样式；[optionFont](#optionfont)中缺省的属性将设置为对应的默认值。
+如果[optionFont](#optionfont)与optionTextModifier的font属性同时设置，则优先使用[optionFont](#optionfont)设置下拉菜单未选中项的文本样式；[optionFont](#optionfont)中缺省的属性将设置为对应的默认值。
 
 ![](./img/note_3.0-zh-cn.png) 该接口不支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
@@ -923,7 +924,7 @@ selectedOptionTextModifier(modifier: Optional<[TextModifier](https://developer.h
 
 定制Select下拉菜单选中项文本样式的方法，在应用selectedOptionTextModifier之后，下拉菜单选中项的文本样式将完全由开发者自定义。
 
-如果[selectedOptionFont](#selectedoptionfont)与selectedOptionTextModifier的Font属性同时设置，则优先使用[selectedOptionFont](#selectedoptionfont)设置下拉菜单选中项的文本样式；若未设置[selectedOptionFont](#selectedoptionfont)，则优先使用[optionFont](#optionfont)设置下拉菜单选中项的文本样式。其中[selectedOptionFont](#selectedoptionfont)或者[optionFont](#optionfont)缺省的属性将设置为对应的默认值。
+如果[selectedOptionFont](#selectedoptionfont)与selectedOptionTextModifier的font属性同时设置，则优先使用[selectedOptionFont](#selectedoptionfont)设置下拉菜单选中项的文本样式；若未设置[selectedOptionFont](#selectedoptionfont)，则优先使用[optionFont](#optionfont)设置下拉菜单选中项的文本样式。其中[selectedOptionFont](#selectedoptionfont)或者[optionFont](#optionfont)缺省的属性将设置为对应的默认值。
 
 ![](./img/note_3.0-zh-cn.png) 该接口不支持在[attributeModifier](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-attribute-modifier#attributemodifier)中调用。
 
@@ -1056,10 +1057,10 @@ menuSystemMaterial(material:Optional<SystemUiMaterial>)
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 说明 |
-| --- | --- |
-| COVER_TARGET | 目标组件下方无足够空间时，覆盖目标组件。 |
-| AVOID_AROUND_TARGET | 目标组件四周无足够空间时，在最大空间处压缩显示（可滚动）。 |
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| COVER_TARGET | 0 | 目标组件下方无足够空间时，覆盖目标组件。 |
+| AVOID_AROUND_TARGET | 1 | 目标组件四周无足够空间时，在最大空间处压缩显示（可滚动）。 |
 
 #### MenuItemConfiguration12+对象说明
 
@@ -1185,19 +1186,27 @@ struct SelectExample {
         .menuAlign(MenuAlignType.START, { dx: 0, dy: 0 })
         .optionWidth(200)
         .optionHeight(300)
+        /**
+         * 选中下拉项回调
+         * index：选中项下标
+         * text：选中项文本（可选参数）
+         */
         .onSelect((index: number, text?: string | undefined) => {
           console.info('Select:' + index);
+          // 更新选中索引状态
           this.index = index;
+          // 存在文本则更新选择框展示文字
           if (text) {
             this.text = text;
           }
         })
+        // 组件下方无足够空间时，覆盖目标组件
         .avoidance(AvoidanceMode.COVER_TARGET);
     }.width('100%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230404.png)
+ ![](./img/zh-cn_image_0000002631413290.png)
 
 #### [h2]示例2（设置symbol类型图标）
 
@@ -1238,19 +1247,26 @@ struct SelectExample {
         .space(this.space)
         .arrowPosition(this.arrowPosition)
         .menuAlign(MenuAlignType.START, { dx: 0, dy: 0 })
+        /**
+         * 选中下拉项回调
+         * index：选中项下标
+         * text：选中项文本（可选参数）
+         */
         .onSelect((index: number, text?: string | undefined) => {
           console.info('Select:' + index);
+          // 更新选中索引状态
           this.index = index;
           if (text) {
             this.text = text;
           }
         })
+        // 组件下方无足够空间时，覆盖目标组件
         .avoidance(AvoidanceMode.COVER_TARGET);
     }.width('100%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070494.png)
+ ![](./img/zh-cn_image_0000002661732521.png)
 
 #### [h2]示例3（自定义下拉菜单）
 
@@ -1259,6 +1275,11 @@ struct SelectExample {
 ```
 import { SymbolGlyphModifier } from '@kit.ArkUI';
 
+/**
+ * 自定义下拉菜单项内容修饰器
+ * 实现ContentModifier标准接口，用于替换Select下拉面板默认Item布局
+ * 可传入自定义文本，在菜单项尾部额外展示文字
+ */
 class MyMenuItemContentModifier implements ContentModifier<MenuItemConfiguration> {
   modifierText: string = "";
 
@@ -1271,19 +1292,27 @@ class MyMenuItemContentModifier implements ContentModifier<MenuItemConfiguration
   }
 }
 
+/**
+ * 自定义Select下拉菜单项UI构建器
+ * 完全重写MenuItem布局：左侧文字 + 图标 + 自定义文本 + 三角形边框图形
+ * @param configuration Select内部菜单项配置对象，包含value、索引、图标、自定义修饰器等信息
+ */
 @Builder
 function MenuItemBuilder(configuration: MenuItemConfiguration) {
   Row() {
     Text(configuration.value)
     Blank()
+    // 优先渲染系统矢量Symbol图标
     if (configuration.symbolIcon) {
       SymbolGlyph().attributeModifier(configuration.symbolIcon).fontSize(24)
     } else if (configuration.icon) {
       Image(configuration.icon).size({ width: 24, height: 24 })
     }
     Blank(30)
+    // 读取自定义修饰器传入的尾部文本并展示
     Text((configuration.contentModifier as MyMenuItemContentModifier).modifierText)
     Blank(30)
+    // 绘制自定义三角形路径图形，仅描边无填充
     Path()
       .width('100px')
       .height('150px')
@@ -1292,6 +1321,7 @@ function MenuItemBuilder(configuration: MenuItemConfiguration) {
       .stroke(Color.Black)
       .strokeWidth(3)
   }
+  .padding({left: 8, top: 8})
   .onClick(() => {
     configuration.triggerSelect(configuration.index, configuration.value.valueOf().toString());
   })
@@ -1317,6 +1347,7 @@ struct SelectExample {
             console.info('Select index:' + index);
             console.info('Select text:' + text);
           })
+          // 绑定自定义菜单项修饰器，替换下拉面板默认布局
           .menuItemContentModifier(new MyMenuItemContentModifier("Content Modifier"))
 
       }.alignItems(VerticalAlign.Center).height('50%')
@@ -1324,7 +1355,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469771.png)
+ ![](./img/zh-cn_image_0000002631253400.png)
 
 #### [h2]示例4（设置分割线样式）
 
@@ -1356,6 +1387,12 @@ struct SelectExample {
         .menuAlign(MenuAlignType.START, { dx: 0, dy: 0 })
         .optionWidth(200)
         .optionHeight(300)
+        /**
+         * 下拉选项之间分割线自定义配置
+         * strokeWidth：分割线粗细
+         * color：分割线颜色
+         * startMargin/endMargin：分割线左右两侧边距
+         */
         .divider({
           strokeWidth: 5,
           color: Color.Blue,
@@ -1374,7 +1411,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349819.png)
+ ![](./img/zh-cn_image_0000002661612585.png)
 
 #### [h2]示例5（设置无分割线样式）
 
@@ -1406,6 +1443,7 @@ struct SelectExample {
         .menuAlign(MenuAlignType.START, { dx: 0, dy: 0 })
         .optionWidth(200)
         .optionHeight(300)
+        // divider传null，隐藏选项之间的分割线
         .divider(null)
         .onSelect((index: number, text?: string | undefined) => {
           console.info('Select:' + index);
@@ -1419,7 +1457,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230406.png)
+ ![](./img/zh-cn_image_0000002631413292.png)
 
 #### [h2]示例6（设置Select中文本和箭头样式）
 
@@ -1428,6 +1466,10 @@ struct SelectExample {
 ```
 import { TextModifier, SymbolGlyphModifier } from "@kit.ArkUI";
 
+/**
+ * 使用TextModifier统一控制选择框展示文本样式
+ * 使用SymbolGlyphModifier自定义右侧下拉箭头图标尺寸、颜色
+ */
 @Entry
 @Component
 struct SelectExample {
@@ -1437,6 +1479,7 @@ struct SelectExample {
   symbolGlyphModifier: SymbolGlyphModifier = new SymbolGlyphModifier();
 
   aboutToAppear(): void {
+    // 初始化主文本全局样式
     this.textModifier
       .maxLines(2)
       .fontSize(18)
@@ -1445,6 +1488,7 @@ struct SelectExample {
       .fontWeight(FontWeight.Medium)
       .textOverflow({overflow:TextOverflow.Clip})
 
+    // 初始化下拉箭头图标样式
     this.symbolGlyphModifier
       .fontSize(25)
       .fontColor(['#999999'])
@@ -1461,7 +1505,9 @@ struct SelectExample {
       ])
         .selected(this.index)
         .value(this.text)
+        // 绑定自定义文本修饰器，统一控制文字样式
         .textModifier(this.textModifier)
+        // 绑定修饰器自定义下拉箭头
         .arrowModifier(this.symbolGlyphModifier)
         .onSelect((index: number, text?: string) => {
           console.info('Select:' + index);
@@ -1485,7 +1531,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070496.png)
+ ![](./img/zh-cn_image_0000002661732523.png)
 
 #### [h2]示例7（设置Select下拉菜单选中和非选中项文本样式）
 
@@ -1494,6 +1540,9 @@ struct SelectExample {
 ```
 import { TextModifier } from "@kit.ArkUI";
 
+/**
+ * 通过两个独立TextModifier分别控制下拉面板【普通选项文字】和【已选中选项文字】样式
+ */
 @Entry
 @Component
 struct SelectExample {
@@ -1502,6 +1551,7 @@ struct SelectExample {
   optionTextModifier: TextModifier = new TextModifier();
   selectedOptionTextModifier: TextModifier = new TextModifier();
   aboutToAppear(): void {
+    // 初始化普通下拉选项文字样式
     this.optionTextModifier
       .maxLines(1)
       .fontSize(16)
@@ -1510,6 +1560,7 @@ struct SelectExample {
       .fontWeight(FontWeight.Normal)
       .width(200)
 
+    // 初始化已选中下拉选项文字样式（高亮区分）
     this.selectedOptionTextModifier
       .maxLines(1)
       .fontSize(18)
@@ -1537,7 +1588,9 @@ struct SelectExample {
             this.text = text;
           }
         })
+        // 绑定普通选项文字修饰器
         .optionTextModifier(this.optionTextModifier)
+        // 绑定选中选项文字修饰器，实现选中高亮差异化样式
         .selectedOptionTextModifier(this.selectedOptionTextModifier)
         .margin({ top: 20,left:30 })
         .borderRadius(12)
@@ -1554,7 +1607,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469773.png)
+ ![](./img/zh-cn_image_0000002631253402.png)
 
 #### [h2]示例8（设置分割线模式）
 
@@ -1570,6 +1623,12 @@ struct Index {
     RelativeContainer() {
       Select([{ value: "SelectItem" }, { value: "SelectItem" }, { value: "SelectItem" },])
         .value("请选择")
+        **
+         * 自定义下拉选项分割线完整样式
+         * strokeWidth：分割线粗细，使用vp单位统一适配不同屏幕
+         * color：分割线浅灰色
+         * mode: EMBEDDED_IN_MENU 嵌入式模式
+         */
         .dividerStyle({
           strokeWidth: LengthMetrics.vp(5),
           color: '#d5d5d5',
@@ -1581,7 +1640,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349821.png)
+ ![](./img/zh-cn_image_0000002661612587.png)
 
 #### [h2]示例9（设置Select下拉菜单外描边样式）
 
@@ -1612,6 +1671,11 @@ struct SelectExample {
         .menuAlign(MenuAlignType.START, { dx: 0, dy: 0 })
         .optionWidth(200)
         .optionHeight(300)
+        /**
+         * 下拉菜单外描边样式配置
+         * width：边框粗细5vp
+         * color：边框颜色蓝色
+         */
         .menuOutline({
           width: '5vp',
           color: Color.Blue
@@ -1630,7 +1694,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230408.png)
+ ![](./img/zh-cn_image_0000002631413294.png)
 
 #### [h2]示例10（设置Select的弹出菜单避让软键盘）
 
@@ -1642,10 +1706,21 @@ struct SelectExample {
 import { inputMethod } from '@kit.IMEKit';
 import { LengthMetrics } from '@kit.ArkUI';
 
+/**
+ * Select下拉组件 + 输入法自动挂载示例页面
+ * 配置弹出菜单键盘避让策略，点击下拉框延迟2秒主动挂载输入法
+ */
 @Entry
 @Component
 struct Index {
-  private inputController: inputMethod.InputMethodController = inputMethod.getController();
+  private inputController: inputMethod.InputMethodController | null = null;
+  onPageShow(): void {
+    try {
+      this.inputController = inputMethod.getController();
+    } catch (err) {
+      console.error("get input method controller failed：", JSON.stringify(err));
+    }
+  }
 
   build() {
     RelativeContainer() {
@@ -1659,7 +1734,9 @@ struct Index {
           center: { anchor: '__container__', align: VerticalAlign.Center },
           middle: { anchor: '__container__', align: HorizontalAlign.Center },
         })
+        // 软键盘弹出避让模式：平移+缩放下拉弹窗，避免被键盘遮挡
         .keyboardAvoidMode(MenuKeyboardAvoidMode.TRANSLATE_AND_RESIZE)
+        // 弹窗与软键盘最小预留间距20vp
         .minKeyboardAvoidDistance(LengthMetrics.vp(20))
         .onClick(() => {
           setTimeout(() => {
@@ -1671,13 +1748,23 @@ struct Index {
     .width('100%')
   }
 
+  /**
+   * 挂载输入法监听，异步方法
+   * 1. 主动给页面Index标识设置焦点
+   * 2. 校验输入法控制器实例有效性
+   * 3. 挂载输入法，配置文本输入类型、搜索回车按键
+   */
   async attachAndListener() {
     focusControl.requestFocus('Index')
+    if (!this.inputController) {
+      console.error('inputController instance is null!');
+      return;
+    }
     try {
       await this.inputController.attach(true, {
         inputAttribute: {
-          textInputType: inputMethod.TextInputType.TEXT,
-          enterKeyType: inputMethod.EnterKeyType.SEARCH
+          textInputType: inputMethod.TextInputType.TEXT, // 普通文本输入类型
+          enterKeyType: inputMethod.EnterKeyType.SEARCH // 回车键显示搜索文案
         }
       })
     } catch (err) {
@@ -1686,7 +1773,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070498.gif)
+ ![](./img/zh-cn_image_0000002661732525.gif)
 
 #### [h2]示例11（设置Select和下拉菜单系统材质）
 
@@ -1708,9 +1795,17 @@ struct Index {
         { value: 'SelectOption' },
         { value: 'SelectOption' }])
         .value('Click Show Options')
+        /**
+         * 配置选择框自身沉浸式磨砂材质
+         * ULTRA_THIN：超薄通透磨砂，透明度高，底层画面透出更明显
+         */
         .systemMaterial(new uiMaterial.ImmersiveMaterial({
             style: uiMaterial.ImmersiveStyle.ULTRA_THIN
           }))
+        /**
+         * 配置下拉弹出面板的沉浸式磨砂材质
+         * THICK：厚重磨砂，透明度更低，遮挡感更强
+         */
         .menuSystemMaterial(new uiMaterial.ImmersiveMaterial({
             style: uiMaterial.ImmersiveStyle.THICK
           }))
@@ -1722,8 +1817,8 @@ struct Index {
 ```
  未设置系统材质时：
 
-![](./img/zh-cn_image_0000002656469775.png)
+![](./img/zh-cn_image_0000002631253404.png)
 
 设置系统材质后：
 
-![](./img/zh-cn_image_0000002656349823.png)
+![](./img/zh-cn_image_0000002661612589.png)

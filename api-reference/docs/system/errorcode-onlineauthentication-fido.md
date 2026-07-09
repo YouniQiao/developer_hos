@@ -2,7 +2,8 @@
 title: "FIDO"
 upstream_id: "harmonyos-references/errorcode-onlineauthentication-fido"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:38.639298"
+content_hash: "b3e26c3e63a0"
+synced_at: "2026-07-09T00:59:17.277405"
 ---
 
 # FIDO

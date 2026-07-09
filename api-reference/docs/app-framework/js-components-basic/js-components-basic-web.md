@@ -2,7 +2,8 @@
 title: "web"
 upstream_id: "harmonyos-references/js-components-basic-web"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:08.501029"
+content_hash: "1efda60b2929"
+synced_at: "2026-07-09T00:58:23.028975"
 ---
 
 # web

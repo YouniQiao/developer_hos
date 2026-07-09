@@ -2,7 +2,8 @@
 title: "ArkUI_NodeCustomEvent"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-nodecustomevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:50.448676"
+content_hash: "0ebbc45f69b1"
+synced_at: "2026-07-09T00:58:42.034651"
 ---
 
 # ArkUI_NodeCustomEvent

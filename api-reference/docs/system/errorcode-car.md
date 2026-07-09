@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-car"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:26.218451"
+content_hash: "92aa0148a95b"
+synced_at: "2026-07-09T00:59:53.970520"
 ---
 
 # ArkTS API错误码

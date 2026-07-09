@@ -1,9 +1,12 @@
 ---
+
 title: "显隐控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-visibility"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:34.907836"
+synced_at: "2026-07-09T00:57:37.495676"
+content_hash: "637711a39e28"
 ---
+
 
 # 显隐控制
 

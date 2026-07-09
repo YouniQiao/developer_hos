@@ -2,7 +2,8 @@
 title: "OH_AudioStreamBuilderStruct"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audiostreambuilderstruct"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:58.682658"
+content_hash: "62b3e5f78da0"
+synced_at: "2026-07-09T01:00:11.636292"
 ---
 
 # OH_AudioStreamBuilderStruct

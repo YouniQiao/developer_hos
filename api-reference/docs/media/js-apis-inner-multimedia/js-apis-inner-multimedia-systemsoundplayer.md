@@ -2,7 +2,8 @@
 title: "SystemSoundPlayer (音效播放器)"
 upstream_id: "harmonyos-references/js-apis-inner-multimedia-systemsoundplayer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:53.907334"
+content_hash: "b105c2215b48"
+synced_at: "2026-07-09T01:00:09.037809"
 ---
 
 # SystemSoundPlayer (音效播放器)

@@ -2,7 +2,8 @@
 title: "ScsiPeripheral_Request"
 upstream_id: "harmonyos-references/capi-scsiperipheralddk-scsiperipheral-request"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:33.869554"
+content_hash: "4eec56974ec2"
+synced_at: "2026-07-09T00:59:56.139118"
 ---
 
 # ScsiPeripheral_Request

@@ -2,7 +2,8 @@
 title: "ArkUI_CustomSpanDrawInfo"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-customspandrawinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:54.240107"
+content_hash: "52e67afea4c6"
+synced_at: "2026-07-09T00:58:44.200012"
 ---
 
 # ArkUI_CustomSpanDrawInfo

@@ -2,7 +2,8 @@
 title: "AR Engine"
 upstream_id: "harmonyos-references/arengine-capi-arengine"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:50.813625"
+content_hash: "9457a3c52fbb"
+synced_at: "2026-07-09T01:00:51.029113"
 ---
 
 # AR Engine
@@ -70,6 +71,7 @@ synced_at: "2026-06-24T20:52:50.813625"
 | typedef struct [AREngine_ARTrackableList](#arengine_artrackablelist) [AREngine_ARTrackableList](#arengine_artrackablelist) | 可跟踪对象列表。 |
 | typedef void (*[HMS_AREngine_PhotoAvailableCallback](#hms_arengine_photoavailablecallback))([OH_NativeBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-vulkan-oh-nativebuffer) *photoBuffer) | 输出拍照流图像回调。 |
 | typedef struct [AREngine_ARBody](#arengine_arbody) [AREngine_ARBody](#arengine_arbody) | 人体对象。 |
+| typedef struct [AREngine_ARFaceLandmark](#arengine_arbody) [AREngine_ARFaceLandmark](#arengine_arbody) | 人脸关键点对象。 |
 
 #### [h2]枚举
 
@@ -79,7 +81,7 @@ synced_at: "2026-06-24T20:52:50.813625"
 | [AREngine_ARAddAugmentedImageReason](#arengine_araddaugmentedimagereason) { ARENGINE_ADD_AUGMENTED_IMAGE_REASON_NONE = 0, ARENGINE_ADD_AUGMENTED_IMAGE_REASON_SIZE_NOT_MATCH = 1, ARENGINE_ADD_AUGMENTED_IMAGE_REASON_LIGHT_ANOMALY = 2, ARENGINE_ADD_AUGMENTED_IMAGE_REASON_FEATURE_LIMIT = 3, ARENGINE_ADD_AUGMENTED_IMAGE_REASON_OTHER = 4 } | 跟踪失败的可能原因。 |
 | [AREngine_ARAnimojiBlendShape](#arengine_aranimojiblendshape) { ARENGINE_ARANIMOJI_EYE_BLINK_LEFT = 0, ARENGINE_ARANIMOJI_EYE_LOOK_DOWN_LEFT = 1, ARENGINE_ARANIMOJI_EYE_LOOK_IN_LEFT = 2, ARENGINE_ARANIMOJI_EYE_LOOK_OUT_LEFT = 3, ARENGINE_ARANIMOJI_EYE_LOOK_UP_LEFT = 4, ARENGINE_ARANIMOJI_EYE_SQUINT_LEFT = 5, ARENGINE_ARANIMOJI_EYE_WIDE_LEFT = 6, ARENGINE_ARANIMOJI_EYE_BLINK_RIGHT = 7, ARENGINE_ARANIMOJI_EYE_LOOK_DOWN_RIGHT = 8, ARENGINE_ARANIMOJI_EYE_LOOK_IN_RIGHT = 9, ARENGINE_ARANIMOJI_EYE_LOOK_OUT_RIGHT = 10, ARENGINE_ARANIMOJI_EYE_LOOK_UP_RIGHT = 11, ARENGINE_ARANIMOJI_EYE_SQUINT_RIGHT = 12, ARENGINE_ARANIMOJI_EYE_WIDE_RIGHT = 13, ARENGINE_ARANIMOJI_JAW_FORWARD = 14, ARENGINE_ARANIMOJI_JAW_LEFT = 15, ARENGINE_ARANIMOJI_JAW_RIGHT = 16, ARENGINE_ARANIMOJI_JAW_OPEN = 17, ARENGINE_ARANIMOJI_MOUTH_FUNNEL = 18, ARENGINE_ARANIMOJI_MOUTH_PUCKER = 19, ARENGINE_ARANIMOJI_MOUTH_LEFT = 20, ARENGINE_ARANIMOJI_MOUTH_RIGHT = 21, ARENGINE_ARANIMOJI_MOUTH_SMILE_LEFT = 22, ARENGINE_ARANIMOJI_MOUTH_SMILE_RIGHT = 23, ARENGINE_ARANIMOJI_MOUTH_FROWN_LEFT = 24, ARENGINE_ARANIMOJI_MOUTH_FROWN_RIGHT = 25, ARENGINE_ARANIMOJI_MOUTH_DIMPLE_LEFT = 26, ARENGINE_ARANIMOJI_MOUTH_DIMPLE_RIGHT = 27, ARENGINE_ARANIMOJI_MOUTH_STRETCH_LEFT = 28, ARENGINE_ARANIMOJI_MOUTH_STRETCH_RIGHT = 29, ARENGINE_ARANIMOJI_MOUTH_ROLL_LOWER = 30, ARENGINE_ARANIMOJI_MOUTH_ROLL_UPPER = 31, ARENGINE_ARANIMOJI_MOUTH_SHRUG_LOWER = 32, ARENGINE_ARANIMOJI_MOUTH_SHRUG_UPPER = 33, ARENGINE_ARANIMOJI_MOUTH_UPPER_UP = 34, ARENGINE_ARANIMOJI_MOUTH_LOWER_DOWN = 35, ARENGINE_ARANIMOJI_MOUTH_LOWER_OUT = 36, ARENGINE_ARANIMOJI_BROW_DOWN_LEFT = 37, ARENGINE_ARANIMOJI_BROW_DOWN_RIGHT = 38, ARENGINE_ARANIMOJI_BROW_INNER_UP = 39, ARENGINE_ARANIMOJI_BROW_OUTER_UP_LEFT = 40, ARENGINE_ARANIMOJI_BROW_OUTER_UP_RIGHT = 41, ARENGINE_ARANIMOJI_CHEEK_PUFF = 42, ARENGINE_ARANIMOJI_CHEEK_SQUINT_LEFT = 43, ARENGINE_ARANIMOJI_CHEEK_SQUINT_RIGHT = 44, ARENGINE_ARANIMOJI_FROWN_NOSE_MOUTH_UP = 45, ARENGINE_ARANIMOJI_TONGUE_IN = 46, ARENGINE_ARANIMOJI_TONGUE_OUT_SLIGHT = 47, ARENGINE_ARANIMOJI_TONGUE_LEFT = 48, ARENGINE_ARANIMOJI_TONGUE_RIGHT = 49, ARENGINE_ARANIMOJI_TONGUE_UP = 50, ARENGINE_ARANIMOJI_TONGUE_DOWN = 51, ARENGINE_ARANIMOJI_TONGUE_LEFT_UP = 52, ARENGINE_ARANIMOJI_TONGUE_LEFT_DOWN = 53, ARENGINE_ARANIMOJI_TONGUE_RIGHT_UP = 54, ARENGINE_ARANIMOJI_TONGUE_RIGHT_DOWN = 55, ARENGINE_ARANIMOJI_LEFT_EYEBALL_LEFT = 56, ARENGINE_ARANIMOJI_LEFT_EYEBALL_RIGHT = 57, ARENGINE_ARANIMOJI_LEFT_EYEBALL_UP = 58, ARENGINE_ARANIMOJI_LEFT_EYEBALL_DOWN = 59, ARENGINE_ARANIMOJI_RIGHT_EYEBALL_LEFT = 60, ARENGINE_ARANIMOJI_RIGHT_EYEBALL_RIGHT = 61, ARENGINE_ARANIMOJI_RIGHT_EYEBALL_UP = 62, ARENGINE_ARANIMOJI_RIGHT_EYEBALL_DOWN = 63 } | 微表情类型。 |
 | [AREngine_ARAnimojiTriangleLabel](#arengine_aranimojitrianglelabel) { ARENGINE_TRIANGLE_LABEL_NON_FACE = -1, ARENGINE_TRIANGLE_LABEL_FACE_OTHER = 0, ARENGINE_TRIANGLE_LABEL_LOWER_LIP = 1, ARENGINE_TRIANGLE_LABEL_UPPER_LIP = 2, ARENGINE_TRIANGLE_LABEL_LEFT_EYE = 3, ARENGINE_TRIANGLE_LABEL_RIGHT_EYE = 4, ARENGINE_TRIANGLE_LABEL_LEFT_BROW = 5, ARENGINE_TRIANGLE_LABEL_RIGHT_BROW = 6, ARENGINE_TRIANGLE_LABEL_BROW_CENTER = 7, ARENGINE_TRIANGLE_LABEL_NOSE = 8 } | 人脸三角形面片标签。 |
-| [AREngine_RemoteSensorMode](#arengine_remotesensormode) { ARENGINE_LOCAL_SENSOR = 0, ARENGINE_REMOTE_SENSOR_AI_GLASS = 1 } | 远程传感器模式 |
+| [AREngine_RemoteSensorMode](#arengine_remotesensormode) { ARENGINE_LOCAL_SENSOR = 0, ARENGINE_REMOTE_SENSOR_AI_GLASS = 1 } | 远程传感器模式。 |
 | [AREngine_ARCameraLensFacing](#arengine_arcameralensfacing) { ARENGINE_CAMERA_FACING_REAR = 0, ARENGINE_CAMERA_FACING_FRONT = 1 } | 配置摄像机镜头的朝向。 |
 | [AREngine_ARConfidenceLevel](#arengine_arconfidencelevel) { ARENGINE_DEPTH_CONFIDENCE_LOW = 0, ARENGINE_DEPTH_CONFIDENCE_MEDIUM = 1, ARENGINE_DEPTH_CONFIDENCE_HIGH = 2 } | 深度置信度。 |
 | [AREngine_ARDepthMode](#arengine_ardepthmode) { ARENGINE_DEPTH_MODE_DISABLED = 0, ARENGINE_DEPTH_MODE_AUTOMATIC = 1 } | 深度模式。 |
@@ -112,7 +114,7 @@ synced_at: "2026-06-24T20:52:50.813625"
 
 | 名称 | 描述 |
 | --- | --- |
-| [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_CheckSupported](#hms_arengine_checksupported)([AREngine_FeatureType](#arengine_featuretype) type) | 判断当前设备支不支持AR特性的使用。 **说明：** 在进行正式开发前，可通过此接口来判断AR特性是否能够正常运行在当前设备。 |
+| [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_CheckSupported](#hms_arengine_checksupported)([AREngine_FeatureType](#arengine_featuretype) type) | 判断当前设备是否支持AR特性的使用。 **说明：** 在进行正式开发前，可通过此接口来判断AR特性是否能够正常运行在当前设备。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARAnchor_Detach](#hms_arengine_aranchor_detach)([AREngine_ARSession](#arengine_arsession) *session, [AREngine_ARAnchor](#arengine_aranchor) *anchor) | 通知AR Engine停止跟踪并解绑一个锚点。 **说明：** 由于此函数并没有释放锚点[AREngine_ARAnchor](#arengine_aranchor)，开发者需要通过调用 [HMS_AREngine_ARAnchor_Release](#hms_arengine_aranchor_release)来释放锚点。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARAnchor_GetPose](#hms_arengine_aranchor_getpose)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARAnchor](#arengine_aranchor) *anchor, [AREngine_ARPose](#arengine_arpose) *outPose) | 获取指定锚点在世界坐标系中的位姿信息。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARAnchor_GetTrackingState](#hms_arengine_aranchor_gettrackingstate)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARAnchor](#arengine_aranchor) *anchor, [AREngine_ARTrackingState](#arengine_artrackingstate) *outTrackingState) | 获取指定锚点位姿的追踪状态。 |
@@ -135,7 +137,7 @@ synced_at: "2026-06-24T20:52:50.813625"
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARAugmentedImageDatabase_GetCapacity](#hms_arengine_araugmentedimagedatabase_getcapacity)(const [AREngine_ARAugmentedImageDatabase](#arengine_araugmentedimagedatabase) *database, uint32_t *outCapacity) | 获取可以添加的最大图像数。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARAugmentedImageDatabase_GetImageCount](#hms_arengine_araugmentedimagedatabase_getimagecount)(const [AREngine_ARAugmentedImageDatabase](#arengine_araugmentedimagedatabase) *database, uint32_t *outImageCount) | 获取数据库中存储的图像数量。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARAugmentedImageDatabase_Serialize](#hms_arengine_araugmentedimagedatabase_serialize)(const [AREngine_ARAugmentedImageDatabase](#arengine_araugmentedimagedatabase) *database, uint8_t **outBuffer, uint64_t *outBufSize) | 序列化特征数据库。 |
-| [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARCamera_GetDisplayOrientedPose](#hms_arengine_arcamera_getdisplayorientedpose)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARCamera](#arengine_arcamera) *camera, [AREngine_ARPose](#arengine_arpose) *outPose) | 设置outPose为虚拟相机（面向显示）在世界空间中的位姿，用以将AR内容渲染到最新帧中。 |
+| [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARCamera_GetDisplayOrientedPose](#hms_arengine_arcamera_getdisplayorientedpose)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARCamera](#arengine_arcamera) *camera, [AREngine_ARPose](#arengine_arpose) *outPose) | 获取虚拟相机（面向显示）在世界空间中的位姿，用以将AR内容渲染到最新帧中。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARCamera_GetImageIntrinsics](#hms_arengine_arcamera_getimageintrinsics)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARCamera](#arengine_arcamera) *camera, [AREngine_ARCameraIntrinsics](#arengine_arcameraintrinsics) *outIntrinsics) | 获取物理相机离线内参的对象，可通过该对象获取相机的焦距、图像尺寸、主轴点和畸变参数。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARCamera_GetPose](#hms_arengine_arcamera_getpose)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARCamera](#arengine_arcamera) *camera, [AREngine_ARPose](#arengine_arpose) *outPose) | 设置outPose为最新帧中物理相机在世界空间中的位姿。该位姿是OpenGL相机的位姿。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARCamera_GetProjectionMatrix](#hms_arengine_arcamera_getprojectionmatrix)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARCamera](#arengine_arcamera) *camera, [AREngine_ClipPlaneDistance](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arengine-struct-clipplanedistance) clipPlaneDistance, float *outDestColMajor4x4, int32_t destColMajor4x4Num) | 获取用于在相机图像上层渲染虚拟内容的投影矩阵，可用于相机坐标系到裁剪坐标系转换。 |
@@ -220,7 +222,7 @@ synced_at: "2026-06-24T20:52:50.813625"
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFrame_GetDisplayGeometryChanged](#hms_arengine_arframe_getdisplaygeometrychanged)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFrame](#arengine_arframe) *frame, int32_t *outGeometryChangeState) | 获取显示（长宽和旋转）是否发生变化。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFrame_GetTimestamp](#hms_arengine_arframe_gettimestamp)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFrame](#arengine_arframe) *frame, int64_t *outTimestampNs) | 获取当前帧对应的时间戳信息，单位为ns。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFrame_GetUpdatedTrackables](#hms_arengine_arframe_getupdatedtrackables)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFrame](#arengine_arframe) *frame, [AREngine_ARTrackableType](#arengine_artrackabletype) filterType, [AREngine_ARTrackableList](#arengine_artrackablelist) *outTrackableList) | 获取[HMS_AREngine_ARSession_Update](#hms_arengine_arsession_update)更新后发生变化的指定类型的可跟踪对象。 |
-| [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFrame_HitTest](#hms_arengine_arframe_hittest)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFrame](#arengine_arframe) *frame, float pixelX, float pixelY, [AREngine_ARHitResultList](#arengine_arhitresultlist) *hitResultList) | 从摄像头发射一条射线，该射线的方向由预览区上的点（pixelX，pixelY）确定，（pixelX，pixelY）可以通过XComponent的[DispatchTouchEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ent-native-xcomponent-oh-nativexcomponent-callback#dispatchtouchevent)事件获取。 |
+| [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFrame_HitTest](#hms_arengine_arframe_hittest)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFrame](#arengine_arframe) *frame, float pixelX, float pixelY, [AREngine_ARHitResultList](#arengine_arhitresultlist) *hitResultList) | 从摄像头发射一条射线，该射线的方向由预览区上的点（pixelX，pixelY）确定，（pixelX，pixelY）可以通过XComponent的[DispatchTouchEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent-callback#dispatchtouchevent)事件获取。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFrame_TransformDisplayUvCoords](#hms_arengine_arframe_transformdisplayuvcoords)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFrame](#arengine_arframe) *frame, int32_t elementSize, const float *uvsIn, float *uvsOut) | 调整纹理映射坐标，以便可以正确地显示相机捕捉到的背景图片。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARHitResult_AcquireNewAnchor](#hms_arengine_arhitresult_acquirenewanchor)([AREngine_ARSession](#arengine_arsession) *session, [AREngine_ARHitResult](#arengine_arhitresult) *hitResult, [AREngine_ARAnchor](#arengine_aranchor) **outAnchor) | 在碰撞命中位置创建一个新的锚点。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARHitResult_AcquireTrackable](#hms_arengine_arhitresult_acquiretrackable)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARHitResult](#arengine_arhitresult) *hitResult, [AREngine_ARTrackable](#arengine_artrackable) **outTrackable) | 获取被命中的可追踪对象。 |
@@ -312,6 +314,11 @@ synced_at: "2026-06-24T20:52:50.813625"
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARBody_GetBodyTrackId](#hms_arengine_arbody_getbodytrackid)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARBody](#arengine_arbody) *body, const int32_t *outBodyTrackId) | 获取指定人体对象的标识。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARBody_GetBodyTimeStamp](#hms_arengine_arbody_getbodytimestamp)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARBody](#arengine_arbody) *body, int64_t *timeStamp) | 获取人体对象的检测时间点，表示触发检测人体对象距离启动相机的时间间隔，单位为ns。 |
 | [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARConfig_SetBodyDetectedNum](#hms_arengine_arconfig_setbodydetectednum)(const [AREngine_ARSession](#arengine_arsession) *session, [AREngine_ARConfig](#arengine_arconfig) *config, int32_t maxNum) | 设置追踪人数。 |
+| [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFace_AcquireLandmark](#hms_arengine_arface_acquirelandmark)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFace](#arengine_arface) *face, [AREngine_ARFaceLandmark](#arengine_arfacelandmark) **outLandmark) | 获取人脸关键点对象。 |
+| [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFaceLandmark_AcquireVertices2D](#hms_arengine_arfacelandmark_acquirevertices2d)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFaceLandmark](#arengine_arfacelandmark) *landmark, const float **outData) | 获取人脸关键点的2D位姿信息。 |
+| [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFaceLandmark_AcquireVertices3D](#hms_arengine_arfacelandmark_acquirevertices3d)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFaceLandmark](#arengine_arfacelandmark) *landmark, const float **outData) | 获取人脸关键点的3D位姿信息。 |
+| [AREngine_ARStatus](#arengine_arstatus) [HMS_AREngine_ARFaceLandmark_GetCount](#hms_arengine_arfacelandmark_getcount)(const [AREngine_ARSession](#arengine_arsession) *session, const [AREngine_ARFaceLandmark](#arengine_arfacelandmark) *landmark, int32_t *outSize) | 获取人脸关键点个数。 |
+| void [HMS_AREngine_ARFaceLandmark_Release](#hms_arengine_arfacelandmark_release)([AREngine_ARFaceLandmark](#arengine_arfacelandmark) *landmark) | 释放landmark对象，即由[HMS_AREngine_ARFace_AcquireLandmark](#hms_arengine_arface_acquirelandmark)创建的对象。 |
 
 #### 宏定义说明
 
@@ -731,7 +738,7 @@ enum AREngine_ARAddAugmentedImageReason
 | 枚举值 | 描述 |
 | --- | --- |
 | ARENGINE_ADD_AUGMENTED_IMAGE_REASON_NONE | 添加的图像符合质量要求。 |
-| ARENGINE_ADD_AUGMENTED_IMAGE_REASON_SIZE_NOT_MATCH | 尝试将质量不足（尺寸不匹配）的图像添加到图像数据库。 **说明：** 图像尺寸评价从宽高比、分辨率两个维度进行。建议宽高比、分辨率的评价为Unfit以上。 |
+| ARENGINE_ADD_AUGMENTED_IMAGE_REASON_SIZE_NOT_MATCH | 尝试将质量不足（尺寸不匹配）的图像添加到图像数据库。 **说明：** 图像尺寸评价从宽高比、分辨率两个维度进行。建议宽高比、分辨率的评价优于Unfit。 |
 | ARENGINE_ADD_AUGMENTED_IMAGE_REASON_LIGHT_ANOMALY | 尝试将质量不足（太亮或太暗）的图像添加到图像数据库中。 |
 | ARENGINE_ADD_AUGMENTED_IMAGE_REASON_FEATURE_LIMIT | 尝试将质量不足（图像颜色比较单一）的图像添加到图像数据库中。 |
 | ARENGINE_ADD_AUGMENTED_IMAGE_REASON_OTHER | 尝试将质量不足（其他场景，如图片有反光、光斑，重复性内容等）添加到图像数据库中。 |
@@ -1176,15 +1183,15 @@ enum AREngine_ARSemanticPlaneLabel
 | ARENGINE_PLANE_UNKNOWN | 未知类型。 |
 | ARENGINE_PLANE_WALL | 墙面。 |
 | ARENGINE_PLANE_FLOOR | 地面。 |
-| ARENGINE_PLANE_SEAT | 座椅。 |
-| ARENGINE_PLANE_TABLE | 桌子。 |
+| ARENGINE_PLANE_SEAT | 座椅面。 |
+| ARENGINE_PLANE_TABLE | 桌面。 |
 | ARENGINE_PLANE_CEILING | 天花板。 |
-| ARENGINE_PLANE_DOOR | 门。 |
-| ARENGINE_PLANE_WINDOW | 窗户。 |
-| ARENGINE_PLANE_BED | 床。 |
-| ARENGINE_PLANE_SPACE | 平面空间。 **起始版本：** 6.0.0(20) |
-| ARENGINE_CUBE_VOLUME | 立方体体积。 **起始版本：** 6.0.0(20) |
-| ARENGINE_CUBE_SPACE | 立方体空间。 **起始版本：** 6.0.0(20) |
+| ARENGINE_PLANE_DOOR | 门面。 |
+| ARENGINE_PLANE_WINDOW | 窗面。 |
+| ARENGINE_PLANE_BED | 床面。 |
+| ARENGINE_PLANE_SPACE | 平面空间。仅在高精几何重建模式下支持。 **起始版本：** 6.0.0(20) |
+| ARENGINE_CUBE_VOLUME | 立方体体积。仅在高精几何重建模式下支持。 **起始版本：** 6.0.0(20) |
+| ARENGINE_CUBE_SPACE | 立方体空间。仅在高精几何重建模式下支持。 **起始版本：** 6.0.0(20) |
 
 #### [h2]AREngine_ARStatus
 
@@ -2040,7 +2047,7 @@ AREngine_ARStatus HMS_AREngine_ARCamera_GetDisplayOrientedPose(const AREngine_AR
 ```
  描述
 
-设置outPose为虚拟相机（面向显示）在世界空间中的位姿，用以将AR内容渲染到最新帧中。
+获取虚拟相机（面向显示）在世界空间中的位姿，用以将AR内容渲染到最新帧中。
 
 该位姿是OpenGL相机的位姿，其中X轴正方向为右，Y轴正方向为上，Z轴负方向为相机的观察方向。相机位置即物理相机位置，而相机X轴与Y轴指向受屏幕方向（考虑显示旋转）的影响。
 
@@ -4701,7 +4708,7 @@ AREngine_ARStatus HMS_AREngine_ARFrame_HitTest(const AREngine_ARSession *session
 ```
  描述
 
-从摄像头发射一条射线，该射线的方向由预览区上的点（pixelX，pixelY）确定，（pixelX，pixelY）可以通过XComponent的[DispatchTouchEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ent-native-xcomponent-oh-nativexcomponent-callback#dispatchtouchevent)事件获取。
+从摄像头发射一条射线，该射线的方向由预览区上的点（pixelX，pixelY）确定，（pixelX，pixelY）可以通过XComponent的[DispatchTouchEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent-callback#dispatchtouchevent)事件获取。
 
 射线与系统跟踪的平面或者是点云中的点碰撞（点云正常识别），从而产生交点，形成碰撞结果。按照交点与设备的距离从近到远进行排序，存放在列表中。(pixelX，pixelY)是像素在预览区上坐标。
 

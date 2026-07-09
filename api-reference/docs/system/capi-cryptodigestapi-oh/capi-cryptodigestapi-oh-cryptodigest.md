@@ -2,7 +2,8 @@
 title: "OH_CryptoDigest"
 upstream_id: "harmonyos-references/capi-cryptodigestapi-oh-cryptodigest"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:32.778620"
+content_hash: "1e7d8d56817b"
+synced_at: "2026-07-09T00:59:13.495763"
 ---
 
 # OH_CryptoDigest

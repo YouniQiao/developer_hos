@@ -2,7 +2,8 @@
 title: "@ohos.hiAppEvent (应用打点)"
 upstream_id: "harmonyos-references/js-apis-hiappevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:46.404940"
+content_hash: "090765c0c54e"
+synced_at: "2026-07-09T01:00:02.997283"
 ---
 
 # @ohos.hiAppEvent (应用打点)

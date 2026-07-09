@@ -2,7 +2,8 @@
 title: "video_processing_types.h"
 upstream_id: "harmonyos-references/capi-video-processing-types-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:38.077048"
+content_hash: "75d02a84ceb0"
+synced_at: "2026-07-09T01:00:42.199526"
 ---
 
 # video_processing_types.h

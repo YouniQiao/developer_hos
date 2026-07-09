@@ -2,7 +2,8 @@
 title: "DRM_OfflineMediakeyIdArray"
 upstream_id: "harmonyos-references/capi-drm-drm-offlinemediakeyidarray"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:20.831792"
+content_hash: "5d19b9985236"
+synced_at: "2026-07-09T01:00:28.621350"
 ---
 
 # DRM_OfflineMediakeyIdArray

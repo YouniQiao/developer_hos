@@ -2,7 +2,8 @@
 title: "HiDebug错误码"
 upstream_id: "harmonyos-references/errorcode-hiviewdfx-hidebug"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:50.180977"
+content_hash: "c7655f9a254a"
+synced_at: "2026-07-09T01:00:06.107988"
 ---
 
 # HiDebug错误码

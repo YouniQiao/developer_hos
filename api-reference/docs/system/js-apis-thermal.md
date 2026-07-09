@@ -2,7 +2,8 @@
 title: "@ohos.thermal (热管理)"
 upstream_id: "harmonyos-references/js-apis-thermal"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:06.313860"
+content_hash: "a24ccefd344c"
+synced_at: "2026-07-09T00:59:39.201189"
 ---
 
 # @ohos.thermal (热管理)

@@ -2,7 +2,8 @@
 title: "Class (RdbPredicates)"
 upstream_id: "harmonyos-references/arkts-apis-data-relationalstore-rdbpredicates"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:03.785877"
+content_hash: "cae936bcf374"
+synced_at: "2026-07-09T00:57:16.965273"
 ---
 
 # Class (RdbPredicates)

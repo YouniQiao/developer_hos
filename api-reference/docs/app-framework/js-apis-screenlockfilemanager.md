@@ -2,7 +2,8 @@
 title: "@ohos.ability.screenLockFileManager (锁屏敏感数据管理)"
 upstream_id: "harmonyos-references/js-apis-screenlockfilemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:50.023706"
+content_hash: "72d31de21820"
+synced_at: "2026-07-09T00:57:07.030756"
 ---
 
 # @ohos.ability.screenLockFileManager (锁屏敏感数据管理)

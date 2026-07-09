@@ -2,7 +2,8 @@
 title: "驱动错误码"
 upstream_id: "harmonyos-references/errorcode-devicemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:36.606978"
+content_hash: "397a1bc87f93"
+synced_at: "2026-07-09T00:59:57.728946"
 ---
 
 # 驱动错误码

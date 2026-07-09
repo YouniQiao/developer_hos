@@ -2,7 +2,8 @@
 title: "@ohos.application.testRunner (TestRunner)"
 upstream_id: "harmonyos-references/js-apis-application-testrunner"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:50.785637"
+content_hash: "9d7266679e29"
+synced_at: "2026-07-09T01:00:06.193445"
 ---
 
 # @ohos.application.testRunner (TestRunner)

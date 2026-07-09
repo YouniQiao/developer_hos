@@ -2,7 +2,8 @@
 title: "ArkWeb_ProxyObjectWithResult"
 upstream_id: "harmonyos-references/capi-web-arkweb-proxyobjectwithresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:09.416470"
+content_hash: "bf1e44eb64b7"
+synced_at: "2026-07-09T00:58:56.177696"
 ---
 
 # ArkWeb_ProxyObjectWithResult
@@ -13,7 +14,7 @@ typedef struct {...} ArkWeb_ProxyObjectWithResult
 
 #### 概述
 
-注入的Proxy对象通用结构体。
+ArkWeb_ProxyObjectWithResult是带返回值的JavaScript代理对象结构体，扩展了ArkWeb_ProxyObject的能力。该结构体将多个ArkWeb_ProxyMethodWithResult组织成对象注入到Web页面中，支持JavaScript调用Native方法后获取返回值。适用于需要向Web前端返回结构化执行结果的API场景。
 
 起始版本： 18
 

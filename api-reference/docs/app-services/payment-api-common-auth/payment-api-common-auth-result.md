@@ -1,9 +1,12 @@
 ---
+
 title: "实名信息授权结果查询"
 upstream_id: "harmonyos-references/payment-api-common-auth-result"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:46.209241"
+synced_at: "2026-07-09T01:01:34.887829"
+content_hash: "74a9027d9757"
 ---
+
 
 # 实名信息授权结果查询
 

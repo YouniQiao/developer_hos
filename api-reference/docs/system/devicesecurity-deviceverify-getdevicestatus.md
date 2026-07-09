@@ -1,9 +1,12 @@
 ---
+
 title: "查询设备标记状态"
 upstream_id: "harmonyos-references/devicesecurity-deviceverify-getdevicestatus"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:37.507929"
+synced_at: "2026-07-09T00:59:16.493460"
+content_hash: "e2360277ce70"
 ---
+
 
 # 查询设备标记状态
 

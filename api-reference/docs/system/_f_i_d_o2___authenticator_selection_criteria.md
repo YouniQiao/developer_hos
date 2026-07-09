@@ -2,7 +2,8 @@
 title: "FIDO2_AuthenticatorSelectionCriteria"
 upstream_id: "harmonyos-references/_f_i_d_o2___authenticator_selection_criteria"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:39.811881"
+content_hash: "9ff0ab76520b"
+synced_at: "2026-07-09T00:59:18.354065"
 ---
 
 # FIDO2_AuthenticatorSelectionCriteria

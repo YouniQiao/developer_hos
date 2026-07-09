@@ -2,7 +2,8 @@
 title: "@ohos.uiAppearance (用户界面外观)"
 upstream_id: "harmonyos-references/js-apis-uiappearance"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:25.021495"
+content_hash: "553ef2a9e825"
+synced_at: "2026-07-09T00:57:31.513934"
 ---
 
 # @ohos.uiAppearance (用户界面外观)

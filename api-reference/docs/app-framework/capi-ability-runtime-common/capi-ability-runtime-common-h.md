@@ -2,7 +2,8 @@
 title: "ability_runtime_common.h"
 upstream_id: "harmonyos-references/capi-ability-runtime-common-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:57.847193"
+content_hash: "a4abff5e78e2"
+synced_at: "2026-07-09T00:57:12.198979"
 ---
 
 # ability_runtime_common.h

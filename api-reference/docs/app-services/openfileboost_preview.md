@@ -2,7 +2,8 @@
 title: "Preview"
 upstream_id: "harmonyos-references/openfileboost_preview"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:48.675141"
+content_hash: "6bab52b7f101"
+synced_at: "2026-07-09T01:01:37.190465"
 ---
 
 # Preview

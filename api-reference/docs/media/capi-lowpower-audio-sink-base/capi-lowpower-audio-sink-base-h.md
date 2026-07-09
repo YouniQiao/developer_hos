@@ -2,7 +2,8 @@
 title: "lowpower_audio_sink_base.h"
 upstream_id: "harmonyos-references/capi-lowpower-audio-sink-base-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:37.552837"
+content_hash: "a67a48d19794"
+synced_at: "2026-07-09T01:00:41.554816"
 ---
 
 # lowpower_audio_sink_base.h

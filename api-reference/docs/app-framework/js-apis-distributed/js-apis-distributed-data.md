@@ -2,7 +2,8 @@
 title: "@ohos.data.distributedData (分布式数据管理)"
 upstream_id: "harmonyos-references/js-apis-distributed-data"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:05.104459"
+content_hash: "300c730aa4e9"
+synced_at: "2026-07-09T00:57:18.544213"
 ---
 
 # @ohos.data.distributedData (分布式数据管理)

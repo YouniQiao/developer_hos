@@ -2,7 +2,8 @@
 title: "fiber.h"
 upstream_id: "harmonyos-references/capi-fiber-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:16.519880"
+content_hash: "a73d56f6c7ef"
+synced_at: "2026-07-09T00:59:47.384417"
 ---
 
 # fiber.h

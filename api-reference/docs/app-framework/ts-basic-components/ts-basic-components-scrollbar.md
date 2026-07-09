@@ -2,7 +2,8 @@
 title: "ScrollBar"
 upstream_id: "harmonyos-references/ts-basic-components-scrollbar"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:59.395950"
+content_hash: "ec83c104a307"
+synced_at: "2026-07-09T00:57:48.990021"
 ---
 
 # ScrollBar
@@ -161,7 +162,7 @@ struct ScrollBarExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469699.gif)
+ ![](./img/zh-cn_image_0000002631253326.gif)
 
 #### 示例2（不设置子节点）
 
@@ -207,7 +208,7 @@ struct ScrollBarExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349747.gif)
+ ![](./img/zh-cn_image_0000002661612509.gif)
 
 #### 示例3（支持嵌套滚动）
 
@@ -278,4 +279,4 @@ struct StickyNestedScroll {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230334.gif)
+ ![](./img/zh-cn_image_0000002631413218.gif)

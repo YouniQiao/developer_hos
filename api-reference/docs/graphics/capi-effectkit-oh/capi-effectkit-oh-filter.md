@@ -2,7 +2,8 @@
 title: "OH_Filter"
 upstream_id: "harmonyos-references/capi-effectkit-oh-filter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:11.053524"
+content_hash: "e76fc01ec0c8"
+synced_at: "2026-07-09T01:01:04.938633"
 ---
 
 # OH_Filter

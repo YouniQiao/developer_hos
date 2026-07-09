@@ -2,7 +2,8 @@
 title: "HdsSideBar"
 upstream_id: "harmonyos-references/ui-design-hdssidebar"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:25.804547"
+content_hash: "588d33d2f61f"
+synced_at: "2026-07-09T00:59:09.312267"
 ---
 
 # HdsSideBar
@@ -19,7 +20,7 @@ import { HdsSideBar } from '@kit.UIDesignKit';
 
 #### 接口
 
-HdsSideBar({contentAreaMask?: boolean, isShowSideBar?: boolean, $isShowSideBar?: Callback<boolean>, minSideBarWidth?: Length, maxSideBarWidth?: Length, minContentWidth?: Length, sideBarColor?: ResourceColor, contentColor?: ResourceColor, sideBarWidth?: Length, autoHide?: boolean, isSideBarBlur?: boolean, sideBarPosition?: sideBarPosition, onChange?: Callback<boolean>, sideBarPanelBuilder: CustomBuilder, contentPanelBuilder: CustomBuilder, sideBarContainerType?: SideBarContainerType, scaleContentEnabled?: boolean, swipeEnabled?: boolean})
+HdsSideBar({contentAreaMask?: boolean, isShowSideBar?: boolean, $isShowSideBar?: Callback<boolean>, minSideBarWidth?: Length, maxSideBarWidth?: Length, minContentWidth?: Length, sideBarColor?: ResourceColor, contentColor?: ResourceColor, sideBarWidth?: Length, autoHide?: boolean, isSideBarBlur?: boolean, sideBarPosition?: SideBarPosition, onChange?: Callback<boolean>, sideBarPanelBuilder: CustomBuilder, contentPanelBuilder: CustomBuilder, sideBarContainerType?: SideBarContainerType, scaleContentEnabled?: boolean, swipeEnabled?: boolean})
 
 装饰器类型： @ComponentV2
 
@@ -76,8 +77,7 @@ import { HdsSideBar } from '@kit.UIDesignKit';
 struct Index {
   @Local isShowSidebar: boolean = true;
 
-  //左侧侧边栏区
-  @Builder
+  @Builder // 左侧侧边栏区
   SideBarPanelBuilder() {
     Column() {
       Text('左侧侧边栏区')
@@ -87,8 +87,7 @@ struct Index {
     .margin(40)
   }
 
-  //右侧内容区
-  @Builder
+  @Builder // 右侧内容区
   ContentPanelBuilder() {
     Text('右侧内容区')
       .margin(40)
@@ -135,4 +134,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350641.gif)
+ ![](./img/zh-cn_image_0000002661613411.gif)

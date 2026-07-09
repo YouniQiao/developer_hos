@@ -2,7 +2,8 @@
 title: "OH_NativeBuffer_ColorXY"
 upstream_id: "harmonyos-references/capi-oh-nativebuffer-oh-nativebuffer-colorxy"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:04.609892"
+content_hash: "86525b3d7a4c"
+synced_at: "2026-07-09T01:00:59.608767"
 ---
 
 # OH_NativeBuffer_ColorXY

@@ -2,7 +2,8 @@
 title: "OHIPCRemoteObject"
 upstream_id: "harmonyos-references/capi-ohipcremoteobject"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:20.791938"
+content_hash: "442dd8ca5044"
+synced_at: "2026-07-09T00:59:05.681084"
 ---
 
 # OHIPCRemoteObject

@@ -2,7 +2,8 @@
 title: "ArkUI_GridItemSize"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-griditemsize"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:58.602017"
+content_hash: "4f56387f91e0"
+synced_at: "2026-07-09T00:58:47.345995"
 ---
 
 # ArkUI_GridItemSize

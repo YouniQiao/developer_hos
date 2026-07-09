@@ -2,7 +2,8 @@
 title: "MindSpore"
 upstream_id: "harmonyos-references/capi-mindspore"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:58.046650"
+content_hash: "8f4dc497c3b0"
+synced_at: "2026-07-09T01:01:42.889210"
 ---
 
 # MindSpore

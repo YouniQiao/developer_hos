@@ -2,7 +2,8 @@
 title: "NetworkBoost_DataSpeedAction"
 upstream_id: "harmonyos-references/network-boost-c-struct-data_speed_action"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:57.751992"
+content_hash: "31e92c5672da"
+synced_at: "2026-07-09T00:59:32.418817"
 ---
 
 # NetworkBoost_DataSpeedAction
@@ -24,8 +25,8 @@ synced_at: "2026-06-24T20:50:57.751992"
 | 名称 | 描述 |
 | --- | --- |
 | [NetworkBoost_DataSpeedSimpleAction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/network-boost-c-overview#networkboost_dataspeedsimpleaction-1) [dataSpeedSimpleAction](#dataspeedsimpleaction) | 应用发包策略的简单建议。 |
-| uint64_t [linkUpBandwidth](#linkupbandwidth) | 上行带宽。 |
-| uint64_t [linkDownBandwidth](#linkdownbandwidth) | 下行带宽。 |
+| uint64_t [linkUpBandwidth](#linkupbandwidth) | 上行带宽，单位为bps。 |
+| uint64_t [linkDownBandwidth](#linkdownbandwidth) | 下行带宽，单位为bps。 |
 
 #### 结构体成员变量说明
 

@@ -2,7 +2,8 @@
 title: "ArkUI_NodeAttributeType（通用属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-common"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:37.034611"
+content_hash: "89597ff2ee1a"
+synced_at: "2026-07-09T00:58:34.423814"
 ---
 
 # ArkUI_NodeAttributeType（通用属性）

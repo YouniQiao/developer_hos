@@ -2,7 +2,8 @@
 title: "@ohos.file.BackupExtensionContext (备份恢复扩展能力)"
 upstream_id: "harmonyos-references/js-apis-file-backupextensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:14.048140"
+content_hash: "b5c409757000"
+synced_at: "2026-07-09T00:58:59.952384"
 ---
 
 # @ohos.file.BackupExtensionContext (备份恢复扩展能力)

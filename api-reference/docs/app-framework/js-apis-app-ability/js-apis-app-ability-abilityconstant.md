@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.AbilityConstant (Ability相关常量)"
 upstream_id: "harmonyos-references/js-apis-app-ability-abilityconstant"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:44.821022"
+content_hash: "bf1e3f4272e6"
+synced_at: "2026-07-09T00:57:03.492660"
 ---
 
 # @ohos.app.ability.AbilityConstant (Ability相关常量)

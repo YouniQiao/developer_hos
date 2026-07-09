@@ -2,7 +2,8 @@
 title: "SecurityAudit_Event"
 upstream_id: "harmonyos-references/devicesecurity-capi-structs-securityaudit-event"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:36.871279"
+content_hash: "7290c9807045"
+synced_at: "2026-07-09T00:59:16.225339"
 ---
 
 # SecurityAudit_Event

@@ -2,7 +2,8 @@
 title: "SafetyDetect（安全检测）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-safetydetect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:35.669877"
+content_hash: "68b37e312ad6"
+synced_at: "2026-07-09T00:59:15.213743"
 ---
 
 # SafetyDetect（安全检测）

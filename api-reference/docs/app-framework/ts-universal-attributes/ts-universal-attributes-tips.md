@@ -2,7 +2,8 @@
 title: "Tips控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-tips"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:45.111124"
+content_hash: "76033ec2e60c"
+synced_at: "2026-07-09T00:57:41.634225"
 ---
 
 # Tips控制
@@ -102,7 +103,7 @@ struct TipsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230226.gif)
+ ![](./img/zh-cn_image_0000002661612401.gif)
 
 #### [h2]示例2（多个悬浮气泡的显示和消失）
 
@@ -140,7 +141,7 @@ struct TipsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070316.gif)
+ ![](./img/zh-cn_image_0000002631413110.gif)
 
 #### [h2]示例3（设置悬浮气泡的系统材质视效）
 
@@ -174,8 +175,8 @@ struct TipsExample {
 ```
  未设置系统材质时：
 
-![](./img/zh-cn_image_0000002656467803.gif)
+![](./img/zh-cn_image_0000002631251380.gif)
 
 设置系统材质后：
 
-![](./img/zh-cn_image_0000002656347851.gif)
+![](./img/zh-cn_image_0000002661610565.gif)

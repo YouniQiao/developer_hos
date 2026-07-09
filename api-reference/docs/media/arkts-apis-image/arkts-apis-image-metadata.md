@@ -2,7 +2,8 @@
 title: "Interface (Metadata)"
 upstream_id: "harmonyos-references/arkts-apis-image-metadata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:22.986301"
+content_hash: "32d045c8c56e"
+synced_at: "2026-07-09T01:00:29.844453"
 ---
 
 # Interface (Metadata)

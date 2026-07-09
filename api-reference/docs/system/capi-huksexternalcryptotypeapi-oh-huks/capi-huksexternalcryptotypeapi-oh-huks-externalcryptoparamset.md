@@ -2,7 +2,8 @@
 title: "OH_Huks_ExternalCryptoParamSet"
 upstream_id: "harmonyos-references/capi-huksexternalcryptotypeapi-oh-huks-externalcryptoparamset"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:43.801589"
+content_hash: "a47663582d5b"
+synced_at: "2026-07-09T00:59:21.256297"
 ---
 
 # OH_Huks_ExternalCryptoParamSet

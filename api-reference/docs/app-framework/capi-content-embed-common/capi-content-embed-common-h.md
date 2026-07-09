@@ -2,7 +2,8 @@
 title: "content_embed_common.h"
 upstream_id: "harmonyos-references/capi-content-embed-common-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:11.405792"
+content_hash: "29adcd258de4"
+synced_at: "2026-07-09T00:58:57.994436"
 ---
 
 # content_embed_common.h

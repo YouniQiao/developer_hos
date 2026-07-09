@@ -2,7 +2,8 @@
 title: "Bluetooth"
 upstream_id: "harmonyos-references/capi-bluetooth"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:47.612370"
+content_hash: "2ae72347d5e7"
+synced_at: "2026-07-09T00:59:24.533420"
 ---
 
 # Bluetooth

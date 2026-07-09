@@ -2,7 +2,8 @@
 title: "hiai_single_op.h"
 upstream_id: "harmonyos-references/cannkit-hiai-single-op-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:55.460482"
+content_hash: "122de45326ea"
+synced_at: "2026-07-09T01:01:40.842523"
 ---
 
 # hiai_single_op.h
@@ -40,9 +41,9 @@ synced_at: "2026-06-24T20:53:55.460482"
 | typedef struct [HiAI_SingleOpTensor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hiai_singleoptensor) [HiAI_SingleOpTensor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hiai_singleoptensor) | 单算子Tensor句柄。 |
 | typedef struct [HiAI_SingleOpOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hiai_singleopoptions) [HiAI_SingleOpOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hiai_singleopoptions) | 单算子选项句柄。 |
 | typedef struct [HiAI_SingleOpDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hiai_singleopdescriptor) [HiAI_SingleOpDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hiai_singleopdescriptor) | 单算子的算子描述句柄。 |
-| typedef struct [HiAISingleOpDescriptor_ConvolutionParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit-sopdesc-convparam) | [HMS_HiAISingleOpDescriptor_CreateConvolution](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_hiaisingleopdescriptor_createconvolution)输入参数。 |
-| typedef struct [HiAI_SingleOpExecutorConvolutionParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit-sopexec-convparam) | [HMS_HiAISingleOpExecutor_CreateConvolution](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_hiaisingleopexecutor_createconvolution)输入参数。 |
-| typedef struct [HiAI_SingleOpExecutorFusedConvolutionActivationParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit-sopexec-fusedconv-actparam) | [HMS_HiAISingleOpExecutor_CreateFusedConvolutionActivation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_hiaisingleopexecutor_createfusedconvolutionactivation)输入参数。 |
+| typedef struct [HiAISingleOpDescriptor_ConvolutionParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit-sopdesc-convparam) [HiAISingleOpDescriptor_ConvolutionParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit-sopdesc-convparam) | [HMS_HiAISingleOpDescriptor_CreateConvolution](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_hiaisingleopdescriptor_createconvolution)输入参数。 |
+| typedef struct [HiAI_SingleOpExecutorConvolutionParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit-sopexec-convparam) [HiAI_SingleOpExecutorConvolutionParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit-sopexec-convparam) | [HMS_HiAISingleOpExecutor_CreateConvolution](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_hiaisingleopexecutor_createconvolution)输入参数。 |
+| typedef struct [HiAI_SingleOpExecutorFusedConvolutionActivationParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit-sopexec-fusedconv-actparam) [HiAI_SingleOpExecutorFusedConvolutionActivationParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit-sopexec-fusedconv-actparam) | [HMS_HiAISingleOpExecutor_CreateFusedConvolutionActivation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_hiaisingleopexecutor_createfusedconvolutionactivation)输入参数。 |
 | typedef struct [HiAI_SingleOpExecutor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hiai_singleopexecutor) [HiAI_SingleOpExecutor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hiai_singleopexecutor) | 单算子执行器句柄。 |
 
 #### [h2]枚举

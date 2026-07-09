@@ -2,7 +2,8 @@
 title: "healthService (运动健康联动服务)(Lite)"
 upstream_id: "harmonyos-references/health-api-healthservice-lite"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:26.417334"
+content_hash: "8c4f622fd7b9"
+synced_at: "2026-07-09T01:01:19.889043"
 ---
 
 # healthService (运动健康联动服务)(Lite)
@@ -414,7 +415,7 @@ try {
 
 onData(dataType: undefined, listener: Callback<SampleReal[]>): void
 
-注册所有联动运动数据监听，使用callback异步回调。
+订阅所有类型的数据，使用callback异步回调。
 
 ![](./img/note_3.0-zh-cn.png) 该接口调用前，需先使用[start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice-lite#workoutstart)方法确保联动已经开启。
 
@@ -461,7 +462,7 @@ try {
 
 offData(dataType: undefined, listener?: Callback<SampleReal[]>): void
 
-取消所有联动运动数据的监听，使用callback异步回调。
+取消订阅所有类型的数据。
 
 ![](./img/note_3.0-zh-cn.png) 该接口调用前，需先使用[start](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/health-api-healthservice-lite#workoutstart)方法确保联动已经开启。
 
@@ -476,7 +477,7 @@ offData(dataType: undefined, listener?: Callback<SampleReal[]>): void
 | **参数名** | **类型** | 必填 | **说明** |
 | --- | --- | --- | --- |
 | dataType | undefined | 是 | 监听所有联动运动数据类型。 |
-| listener | Callback | 否 | 回调函数，返回联动运动数据。 |
+| listener | Callback | 否 | 需要取消订阅的回调函数，若不填写则代表取消所有监听。 |
 
 错误码：
 
@@ -544,7 +545,7 @@ try {
     dataType: { id: healthStore.healthDataTypes.WORKOUT_REALTIME.id },
     time: 1695740400000, // 2023-09-26 23:00:00,
     fields: {
-      hr: 90
+      forehandStroke: 45
     }
   };
   healthService.workout.sendData([sampleReal]);

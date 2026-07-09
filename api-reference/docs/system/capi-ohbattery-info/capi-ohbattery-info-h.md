@@ -2,7 +2,8 @@
 title: "ohbattery_info.h"
 upstream_id: "harmonyos-references/capi-ohbattery-info-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:10.919277"
+content_hash: "30a54f67de6c"
+synced_at: "2026-07-09T00:59:42.905695"
 ---
 
 # ohbattery_info.h

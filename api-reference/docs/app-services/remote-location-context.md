@@ -2,7 +2,8 @@
 title: "RemoteLocationExtensionContext（定位扩展Context）"
 upstream_id: "harmonyos-references/remote-location-context"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:49.515749"
+content_hash: "886167b698ea"
+synced_at: "2026-07-09T01:01:37.674248"
 ---
 
 # RemoteLocationExtensionContext（定位扩展Context）

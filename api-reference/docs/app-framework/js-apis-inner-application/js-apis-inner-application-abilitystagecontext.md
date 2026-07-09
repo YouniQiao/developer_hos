@@ -2,7 +2,8 @@
 title: "AbilityStageContext"
 upstream_id: "harmonyos-references/js-apis-inner-application-abilitystagecontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:52.043132"
+content_hash: "47eb8d640e62"
+synced_at: "2026-07-09T00:57:08.321279"
 ---
 
 # AbilityStageContext

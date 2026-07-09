@@ -2,7 +2,8 @@
 title: "XEG_SpatialUpscaleCreateInfo"
 upstream_id: "harmonyos-references/xengine-kit-xeg-spatialupscalecreateinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:17.461218"
+content_hash: "b47ea23d9bf8"
+synced_at: "2026-07-09T01:01:11.048371"
 ---
 
 # XEG_SpatialUpscaleCreateInfo

@@ -2,7 +2,8 @@
 title: "验证ID Token有效性"
 upstream_id: "harmonyos-references/account-api-verify-id-token"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:20.901493"
+content_hash: "57a8472a5090"
+synced_at: "2026-07-09T01:01:14.169191"
 ---
 
 # 验证ID Token有效性

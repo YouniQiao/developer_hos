@@ -1,9 +1,12 @@
 ---
+
 title: "解约结果回调通知"
 upstream_id: "harmonyos-references/payment-partner-pas-unsign-notify"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:43.847566"
+synced_at: "2026-07-09T01:01:33.217415"
+content_hash: "fd3b62f9c704"
 ---
+
 
 # 解约结果回调通知
 

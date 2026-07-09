@@ -2,7 +2,8 @@
 title: "button"
 upstream_id: "harmonyos-references/js-components-basic-button"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:05.209585"
+content_hash: "f7e48d3237fa"
+synced_at: "2026-07-09T00:58:21.501227"
 ---
 
 # button
@@ -146,4 +147,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350299.png)
+ ![](./img/zh-cn_image_0000002661613069.png)

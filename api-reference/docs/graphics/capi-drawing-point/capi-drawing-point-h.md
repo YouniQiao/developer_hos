@@ -2,7 +2,8 @@
 title: "drawing_point.h"
 upstream_id: "harmonyos-references/capi-drawing-point-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:02.073100"
+content_hash: "c15aa1e1e9ae"
+synced_at: "2026-07-09T01:00:57.262497"
 ---
 
 # drawing_point.h

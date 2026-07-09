@@ -2,7 +2,8 @@
 title: "tab-content"
 upstream_id: "harmonyos-references/js-components-container-tab-content"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:05.063735"
+content_hash: "25dd84953f75"
+synced_at: "2026-07-09T00:58:21.325094"
 ---
 
 # tab-content

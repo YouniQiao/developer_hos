@@ -2,7 +2,8 @@
 title: "ArkUI_NativeNodeAPI_1"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-nativenodeapi-1"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:50.367571"
+content_hash: "08e1ea7da16f"
+synced_at: "2026-07-09T00:58:42.906733"
 ---
 
 # ArkUI_NativeNodeAPI_1

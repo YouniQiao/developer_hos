@@ -2,7 +2,8 @@
 title: "@ohos.notificationManager (NotificationManager模块)"
 upstream_id: "harmonyos-references/js-apis-notificationmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:36.896588"
+content_hash: "372ab7e028ba"
+synced_at: "2026-07-09T01:01:28.325687"
 ---
 
 # @ohos.notificationManager (NotificationManager模块)

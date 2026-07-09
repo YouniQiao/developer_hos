@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.AppServiceExtensionAbility (应用后台服务扩展组件)"
 upstream_id: "harmonyos-references/js-apis-app-ability-appserviceextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:45.745107"
+content_hash: "8212dfab3fc1"
+synced_at: "2026-07-09T00:57:03.365938"
 ---
 
 # @ohos.app.ability.AppServiceExtensionAbility (应用后台服务扩展组件)
@@ -22,7 +23,7 @@ AppServiceExtensionAbility模块提供后台服务相关扩展能力，包括后
 
 AppServiceExtensionAbility提供了[onCreate()](#oncreate)、[onRequest()](#onrequest)、[onConnect()](#onconnect)、[onDisconnect()](#ondisconnect)和[onDestroy()](#ondestroy)生命周期回调，开发者可根据需要重写对应的回调方法。下图展示了AppServiceExtensionAbility的生命周期。
 
-![](./img/zh-cn_image_0000002656349475.png)
+![](./img/zh-cn_image_0000002631412934.png)
 
 - **onCreate** 在AppServiceExtensionAbility实例创建时，系统会触发该回调。
 - **onDestroy** 在AppServiceExtensionAbility实例销毁时，系统会触发该回调。

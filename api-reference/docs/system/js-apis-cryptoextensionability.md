@@ -2,7 +2,8 @@
 title: "@ohos.security.CryptoExtensionAbility (密钥扩展能力)"
 upstream_id: "harmonyos-references/js-apis-cryptoextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:42.888656"
+content_hash: "363d23c01853"
+synced_at: "2026-07-09T00:59:20.553355"
 ---
 
 # @ohos.security.CryptoExtensionAbility (密钥扩展能力)

@@ -2,7 +2,8 @@
 title: "HiAppEvent"
 upstream_id: "harmonyos-references/capi-hiappevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:46.718106"
+content_hash: "bdf6e34a4ac9"
+synced_at: "2026-07-09T01:00:03.173455"
 ---
 
 # HiAppEvent

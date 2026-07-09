@@ -2,7 +2,8 @@
 title: "TapGesture"
 upstream_id: "harmonyos-references/ts-basic-gestures-tapgesture"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:50.529497"
+content_hash: "6123963294e4"
+synced_at: "2026-07-09T00:57:43.879882"
 ---
 
 # TapGesture
@@ -145,7 +146,7 @@ struct TapGestureExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349671.gif)
+ ![](./img/zh-cn_image_0000002631253250.gif)
 
 #### [h2]示例2（获取单击手势坐标）
 
@@ -185,7 +186,7 @@ struct TapGestureExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230258.png)
+ ![](./img/zh-cn_image_0000002661612433.png)
 
 #### [h2]示例3（获取组件实时位置）
 
@@ -222,4 +223,4 @@ struct GetCurrentLocalPositionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070224.gif)
+ ![](./img/zh-cn_image_0000002631413012.gif)

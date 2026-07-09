@@ -1,9 +1,12 @@
 ---
+
 title: "模块描述"
 upstream_id: "harmonyos-references/arkts-apis-drm"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:19.266125"
+synced_at: "2026-07-09T01:00:27.556141"
+content_hash: "856f389ca4a6"
 ---
+
 
 # 模块描述
 

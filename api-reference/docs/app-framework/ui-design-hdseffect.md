@@ -2,7 +2,8 @@
 title: "hdsEffect"
 upstream_id: "harmonyos-references/ui-design-hdseffect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:25.081128"
+content_hash: "9cbf32c6b059"
+synced_at: "2026-07-09T00:59:09.425873"
 ---
 
 # hdsEffect
@@ -125,7 +126,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626231220.jpg)
+ ![](./img/zh-cn_image_0000002631414116.jpg)
 
 #### [h2]pressShadow
 
@@ -199,7 +200,7 @@ struct PressShadowExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626071308.gif)
+ ![](./img/zh-cn_image_0000002661733345.gif)
 
 #### [h2]shaderEffect
 
@@ -278,7 +279,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470585.gif)
+ ![](./img/zh-cn_image_0000002631254224.gif)
 
 #### [h2]buildEffect
 

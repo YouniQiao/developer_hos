@@ -2,7 +2,8 @@
 title: "hiai_options.h"
 upstream_id: "harmonyos-references/cannkit-hiai-options-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:55.327803"
+content_hash: "27248447848b"
+synced_at: "2026-07-09T01:01:41.159680"
 ---
 
 # hiai_options.h

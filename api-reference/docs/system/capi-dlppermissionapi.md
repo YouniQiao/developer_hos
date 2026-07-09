@@ -2,7 +2,8 @@
 title: "DlpPermissionApi"
 upstream_id: "harmonyos-references/capi-dlppermissionapi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:33.806331"
+content_hash: "d05245693f41"
+synced_at: "2026-07-09T00:59:14.186252"
 ---
 
 # DlpPermissionApi

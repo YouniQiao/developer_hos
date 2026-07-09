@@ -2,7 +2,8 @@
 title: "OH_Drawing_FontStyleStruct"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-fontstylestruct"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:06.562116"
+content_hash: "32243fbb0f7f"
+synced_at: "2026-07-09T01:01:01.089349"
 ---
 
 # OH_Drawing_FontStyleStruct

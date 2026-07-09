@@ -2,7 +2,8 @@
 title: "@ohos.data.distributedDataObject (分布式数据对象)"
 upstream_id: "harmonyos-references/js-apis-data-distributedobject"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:02.037640"
+content_hash: "d2b364d62381"
+synced_at: "2026-07-09T00:57:15.689297"
 ---
 
 # @ohos.data.distributedDataObject (分布式数据对象)

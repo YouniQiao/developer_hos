@@ -2,7 +2,8 @@
 title: "OH_Drawing_FontVariationAxis"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-fontvariationaxis"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:08.745498"
+content_hash: "deec3a299725"
+synced_at: "2026-07-09T01:01:02.875071"
 ---
 
 # OH_Drawing_FontVariationAxis

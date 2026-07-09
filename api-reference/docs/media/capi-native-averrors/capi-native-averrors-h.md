@@ -2,7 +2,8 @@
 title: "native_averrors.h"
 upstream_id: "harmonyos-references/capi-native-averrors-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:02.608397"
+content_hash: "94f15c10dceb"
+synced_at: "2026-07-09T01:00:14.058796"
 ---
 
 # native_averrors.h

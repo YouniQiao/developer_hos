@@ -2,7 +2,8 @@
 title: "动画样式"
 upstream_id: "harmonyos-references/js-lite-components-common-animation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:16.861087"
+content_hash: "1ccd03c4fcfe"
+synced_at: "2026-07-09T00:58:26.841820"
 ---
 
 # 动画样式
@@ -51,6 +52,6 @@ synced_at: "2026-06-24T20:49:16.861087"
    }
 }
 ```
- ![](./img/zh-cn_image_0000002656470469.gif)
+ ![](./img/zh-cn_image_0000002631254106.gif)
 
 ![](./img/note_3.0-zh-cn.png) @keyframes的from/to不支持动态绑定。

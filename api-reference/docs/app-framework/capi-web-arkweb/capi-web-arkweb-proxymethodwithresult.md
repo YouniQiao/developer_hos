@@ -2,7 +2,8 @@
 title: "ArkWeb_ProxyMethodWithResult"
 upstream_id: "harmonyos-references/capi-web-arkweb-proxymethodwithresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:09.222867"
+content_hash: "d417f11f896b"
+synced_at: "2026-07-09T00:58:56.168215"
 ---
 
 # ArkWeb_ProxyMethodWithResult
@@ -13,7 +14,7 @@ typedef struct {...} ArkWeb_ProxyMethodWithResult
 
 #### 概述
 
-注入的Proxy方法通用结构体。
+ArkWeb_ProxyMethodWithResult是带返回值的JavaScript代理方法结构体，扩展了ArkWeb_ProxyMethod的能力，支持在JavaScript调用Native方法后获取返回值。该结构体在方法名称和回调函数的基础上，增加了返回值处理能力，适用于需要向Web前端返回执行结果的调用场景。
 
 起始版本： 18
 

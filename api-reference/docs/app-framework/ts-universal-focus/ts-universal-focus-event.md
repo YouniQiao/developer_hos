@@ -1,9 +1,12 @@
 ---
+
 title: "焦点事件"
 upstream_id: "harmonyos-references/ts-universal-focus-event"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:32.911190"
+synced_at: "2026-07-09T00:57:36.459584"
+content_hash: "293dc132b30e"
 ---
+
 
 # 焦点事件
 

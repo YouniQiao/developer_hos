@@ -2,7 +2,8 @@
 title: "@ohos.taskpool (启动任务池)"
 upstream_id: "harmonyos-references/js-apis-taskpool"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:15.633719"
+content_hash: "34ad791a7850"
+synced_at: "2026-07-09T00:57:25.305722"
 ---
 
 # @ohos.taskpool (启动任务池)

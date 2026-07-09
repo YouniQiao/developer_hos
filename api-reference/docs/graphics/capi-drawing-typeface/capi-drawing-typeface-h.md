@@ -2,7 +2,8 @@
 title: "drawing_typeface.h"
 upstream_id: "harmonyos-references/capi-drawing-typeface-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:03.703119"
+content_hash: "0b27f3dd3b20"
+synced_at: "2026-07-09T01:00:58.867680"
 ---
 
 # drawing_typeface.h

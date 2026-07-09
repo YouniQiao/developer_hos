@@ -2,7 +2,8 @@
 title: "NetConn_ProbeResultInfo"
 upstream_id: "harmonyos-references/capi-netconnection-netconn-proberesultinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:54.339659"
+content_hash: "7b1df98e9c5f"
+synced_at: "2026-07-09T00:59:29.595929"
 ---
 
 # NetConn_ProbeResultInfo

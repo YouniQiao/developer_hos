@@ -2,7 +2,8 @@
 title: "获取用户实名年龄段"
 upstream_id: "harmonyos-references/account-api-get-realname-age-range-flag"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:20.164602"
+content_hash: "0afac8bf0333"
+synced_at: "2026-07-09T01:01:13.691198"
 ---
 
 # 获取用户实名年龄段

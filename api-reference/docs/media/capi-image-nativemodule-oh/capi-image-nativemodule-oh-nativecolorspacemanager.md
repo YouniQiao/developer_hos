@@ -2,7 +2,8 @@
 title: "OH_NativeColorSpaceManager"
 upstream_id: "harmonyos-references/capi-image-nativemodule-oh-nativecolorspacemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:28.179413"
+content_hash: "1fdd2c58eb17"
+synced_at: "2026-07-09T01:00:34.462973"
 ---
 
 # OH_NativeColorSpaceManager

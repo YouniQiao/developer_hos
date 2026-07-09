@@ -2,7 +2,8 @@
 title: "Radio"
 upstream_id: "harmonyos-references/ts-basic-components-radio"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:08.350102"
+content_hash: "cfdf5104fdda"
+synced_at: "2026-07-09T00:57:54.163643"
 ---
 
 # Radio
@@ -317,7 +318,7 @@ struct RadioExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469767.gif)
+ ![](./img/zh-cn_image_0000002631253396.gif)
 
 #### [h2]示例2 （设置选中样式）
 
@@ -373,7 +374,7 @@ struct RadioExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349815.gif)
+ ![](./img/zh-cn_image_0000002661612579.gif)
 
 #### [h2]示例3（设置自定义样式）
 
@@ -438,4 +439,4 @@ struct refreshExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230402.gif)
+ ![](./img/zh-cn_image_0000002631413288.gif)

@@ -2,7 +2,8 @@
 title: "Sensor_Subscriber"
 upstream_id: "harmonyos-references/capi-sensor-sensor-subscriber"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:42.894055"
+content_hash: "01fe1f41a3d8"
+synced_at: "2026-07-09T01:00:01.074013"
 ---
 
 # Sensor_Subscriber

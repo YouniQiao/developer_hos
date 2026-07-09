@@ -2,7 +2,8 @@
 title: "knowledgeProcessor（知识加工）"
 upstream_id: "harmonyos-references/dataaugmentation-knowledgeprocessor-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:16.462076"
+content_hash: "d027b7894316"
+synced_at: "2026-07-09T00:59:02.209866"
 ---
 
 # knowledgeProcessor（知识加工）

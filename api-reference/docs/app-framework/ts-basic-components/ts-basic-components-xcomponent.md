@@ -2,7 +2,8 @@
 title: "XComponent"
 upstream_id: "harmonyos-references/ts-basic-components-xcomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:38.748031"
+content_hash: "d06e387c622b"
+synced_at: "2026-07-09T00:58:07.162405"
 ---
 
 # XComponent
@@ -872,7 +873,7 @@ struct XComponentExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230712.gif)
+ ![](./img/zh-cn_image_0000002631253712.gif)
 
 #### [h2]示例2（在surface旋转过程中锁定）
 
@@ -981,7 +982,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070802.png)
+ ![](./img/zh-cn_image_0000002661612893.png)
 
 #### [h2]示例4（XComponent实现沉浸式效果）
 
@@ -1029,7 +1030,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470079.jpeg)
+ ![](./img/zh-cn_image_0000002631413604.jpeg)
 
 #### [h2]示例5（设置XComponent持有Surface在渲染时是否需要被视为不透明）
 
@@ -1128,4 +1129,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350127.jpeg)
+ ![](./img/zh-cn_image_0000002661732835.jpeg)

@@ -2,7 +2,8 @@
 title: "@ohos.statfs (statfs)"
 upstream_id: "harmonyos-references/js-apis-statfs"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:14.441802"
+content_hash: "dc5287cf9f40"
+synced_at: "2026-07-09T00:59:00.270530"
 ---
 
 # @ohos.statfs (statfs)

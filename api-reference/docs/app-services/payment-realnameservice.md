@@ -2,7 +2,8 @@
 title: "realNameService(身份验证服务)"
 upstream_id: "harmonyos-references/payment-realnameservice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:38.607170"
+content_hash: "9d01f15ac875"
+synced_at: "2026-07-09T01:01:29.429095"
 ---
 
 # realNameService(身份验证服务)

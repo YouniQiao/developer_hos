@@ -2,7 +2,8 @@
 title: "AbilityRuntime_ExtensionInstance"
 upstream_id: "harmonyos-references/capi-abilityruntime-extensioninstance"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:00.305687"
+content_hash: "5a992599f4b7"
+synced_at: "2026-07-09T00:57:13.698855"
 ---
 
 # AbilityRuntime_ExtensionInstance

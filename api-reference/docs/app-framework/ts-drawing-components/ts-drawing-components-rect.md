@@ -2,7 +2,8 @@
 title: "Rect"
 upstream_id: "harmonyos-references/ts-drawing-components-rect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:37.702893"
+content_hash: "f6a0fed494c1"
+synced_at: "2026-07-09T00:58:05.668261"
 ---
 
 # Rect
@@ -403,7 +404,7 @@ struct RectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230708.png)
+ ![](./img/zh-cn_image_0000002631253708.png)
 
 #### [h2]示例2（绘制渐变色矩形）
 
@@ -443,7 +444,7 @@ struct RectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070798.jpeg)
+ ![](./img/zh-cn_image_0000002661612889.jpeg)
 
 #### [h2]示例3（使用不同参数类型绘制矩形）
 
@@ -477,7 +478,7 @@ struct RectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470075.png)
+ ![](./img/zh-cn_image_0000002631413600.png)
 
 #### [h2]示例4（使用attributeModifier动态设置Rect组件的属性）
 
@@ -518,4 +519,4 @@ struct RectModifierDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350123.png)
+ ![](./img/zh-cn_image_0000002661732831.png)

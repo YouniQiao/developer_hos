@@ -2,7 +2,8 @@
 title: "EditableTitleBar"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-editabletitlebar"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:52.074980"
+content_hash: "7407dd87177b"
+synced_at: "2026-07-09T00:58:15.209908"
 ---
 
 # EditableTitleBar
@@ -170,7 +171,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470167.png)
+ ![](./img/zh-cn_image_0000002631413694.png)
 
 #### [h2]示例2（头像与背景模糊标题栏）
 
@@ -274,7 +275,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350215.png)
+ ![](./img/zh-cn_image_0000002661732923.png)
 
 #### [h2]示例3（右侧自定义按钮播报）
 
@@ -336,7 +337,7 @@ struct Index1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230802.png)
+ ![](./img/zh-cn_image_0000002631253802.png)
 
 #### [h2]示例4（左侧图标设置为默认焦点）
 
@@ -367,7 +368,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070892.png)
+ ![](./img/zh-cn_image_0000002661612985.png)
 
 #### [h2]示例5（右侧自定义图标设置为默认焦点）
 
@@ -415,7 +416,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470169.png)
+ ![](./img/zh-cn_image_0000002631413696.png)
 
 #### [h2]示例6（设置Symbol类型图标）
 
@@ -483,4 +484,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350217.png)
+ ![](./img/zh-cn_image_0000002661732925.png)

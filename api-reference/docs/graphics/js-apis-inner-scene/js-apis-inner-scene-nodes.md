@@ -2,7 +2,8 @@
 title: "SceneNode"
 upstream_id: "harmonyos-references/js-apis-inner-scene-nodes"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:11.758572"
+content_hash: "bdbeb9842c2d"
+synced_at: "2026-07-09T01:01:05.965735"
 ---
 
 # SceneNode

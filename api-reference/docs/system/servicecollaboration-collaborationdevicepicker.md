@@ -2,7 +2,8 @@
 title: "CollaborationDevicePicker (流转控件)"
 upstream_id: "harmonyos-references/servicecollaboration-collaborationdevicepicker"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:03.271088"
+content_hash: "dfe43efccf8a"
+synced_at: "2026-07-09T00:59:36.614605"
 ---
 
 # CollaborationDevicePicker (流转控件)
@@ -74,4 +75,4 @@ struct Index {
 
 | **图1** 设备选择界面的应用描述信息效果图 | **图2** 点击流转入口组件后，拉起设备选择面板效果图 | **图3** 设备流转成功后效果图 | **图4** 流转失败效果图 |
 | --- | --- | --- | --- |
-| 设备选择界面最上方为应用描述部分，包括应用图标、应用名称、应用描述信息![](./img/zh-cn_image_0000002626071324.png) | 页面右上角为流转图标，点击后会从设备底部弹出设备选择面板![](./img/zh-cn_image_0000002656470601.png) | 流转图标和设备信息会变蓝色![](./img/zh-cn_image_0000002656350651.png) | 流转失败效果图![](./img/zh-cn_image_0000002626231238.png) |
+| 设备选择界面最上方为应用描述部分，包括应用图标、应用名称、应用描述信息![](./img/zh-cn_image_0000002661733361.png) | 页面右上角为流转图标，点击后会从设备底部弹出设备选择面板![](./img/zh-cn_image_0000002631254240.png) | 流转图标和设备信息会变蓝色![](./img/zh-cn_image_0000002661613421.png) | 流转失败效果图![](./img/zh-cn_image_0000002631414134.png) |

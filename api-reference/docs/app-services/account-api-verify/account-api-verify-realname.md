@@ -2,7 +2,8 @@
 title: "实名信息校验"
 upstream_id: "harmonyos-references/account-api-verify-realname"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:20.298157"
+content_hash: "944ba8b01344"
+synced_at: "2026-07-09T01:01:13.815830"
 ---
 
 # 实名信息校验

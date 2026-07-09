@@ -2,7 +2,8 @@
 title: "ArkUI_ListItemSwipeActionItem"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-listitemswipeactionitem"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:52.898666"
+content_hash: "7e4c89b6b21e"
+synced_at: "2026-07-09T00:58:43.397415"
 ---
 
 # ArkUI_ListItemSwipeActionItem

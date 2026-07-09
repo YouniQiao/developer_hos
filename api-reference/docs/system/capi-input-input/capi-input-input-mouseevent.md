@@ -2,7 +2,8 @@
 title: "Input_MouseEvent"
 upstream_id: "harmonyos-references/capi-input-input-mouseevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:19.772058"
+content_hash: "c96d92982c01"
+synced_at: "2026-07-09T00:59:50.072121"
 ---
 
 # Input_MouseEvent

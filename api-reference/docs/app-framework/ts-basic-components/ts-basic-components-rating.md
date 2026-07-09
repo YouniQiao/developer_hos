@@ -2,7 +2,8 @@
 title: "Rating"
 upstream_id: "harmonyos-references/ts-basic-components-rating"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:08.968705"
+content_hash: "4b9f46837256"
+synced_at: "2026-07-09T00:57:54.128394"
 ---
 
 # Rating
@@ -384,7 +385,7 @@ struct RatingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070492.gif)
+ ![](./img/zh-cn_image_0000002661732519.gif)
 
 #### [h2]示例2（自定义评分条）
 
@@ -588,7 +589,7 @@ struct ratingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469769.gif)
+ ![](./img/zh-cn_image_0000002631253398.gif)
 
 #### [h2]示例3（通过Resource资源设置评分的样式）
 
@@ -624,7 +625,7 @@ struct RatingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349817.gif)
+ ![](./img/zh-cn_image_0000002661612581.gif)
 
 #### [h2]示例4（设置评分的样式）
 
@@ -661,4 +662,4 @@ struct RatingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349817.gif)
+ ![](./img/zh-cn_image_0000002661612581.gif)

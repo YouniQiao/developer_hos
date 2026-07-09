@@ -2,7 +2,8 @@
 title: "@ohos.ai.mindSporeLite (端侧AI框架)"
 upstream_id: "harmonyos-references/js-apis-mindsporelite"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:58.035586"
+content_hash: "0fd1d274a9de"
+synced_at: "2026-07-09T01:01:43.183400"
 ---
 
 # @ohos.ai.mindSporeLite (端侧AI框架)
@@ -523,7 +524,7 @@ getAllNNRTDeviceDescriptions() : NNRTDeviceDescription[]
 try {
   let allDevices = mindSporeLite.getAllNNRTDeviceDescriptions();
   if (allDevices == null || allDevices.length === 0) {
-    console.error(`Failed to get NNRT device descriptions. Result: null or empty array`);
+    console.error('Failed to get NNRT device descriptions. Result: null or empty array');
   } else {
     console.info(`Succeeded in getting NNRT device descriptions. Device count: ${allDevices.length}`);
   }
@@ -866,7 +867,7 @@ import { common } from '@kit.AbilityKit';
 import { UIContext } from '@kit.ArkUI';
 import { BusinessError } from '@kit.BasicServicesKit';
 
-// The name of the preprocessed model input data file
+// 预处理后的模型输入数据文件名
 let inputName = 'input_data.bin';
 let modelFile: string = '/path/to/xxx.ms';
 let globalContext = new UIContext().getHostContext() as common.UIAbilityContext;
@@ -933,6 +934,7 @@ import { common } from '@kit.AbilityKit';
 import { UIContext } from '@kit.ArkUI';
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 预处理后的模型输入数据文件名
 let inputName = 'input_data.bin';
 let modelFile = '/path/to/xxx.ms';
 let globalContext = new UIContext().getHostContext() as common.UIAbilityContext;
@@ -1377,6 +1379,7 @@ import { common } from '@kit.AbilityKit';
 import { UIContext } from '@kit.ArkUI';
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 预处理后的模型输入数据文件名
 let inputName = 'input_data.bin';
 let modelFile = '/path/to/xxx.ms';
 let globalContext = new UIContext().getHostContext() as common.UIAbilityContext;
@@ -1439,6 +1442,7 @@ import { common } from '@kit.AbilityKit';
 import { UIContext } from '@kit.ArkUI';
 import { BusinessError } from '@kit.BasicServicesKit';
 
+// 预处理后的模型输入数据文件名
 let inputName = 'input_data.bin';
 let modelFile = '/path/to/xxx.ms';
 let globalContext = new UIContext().getHostContext() as common.UIAbilityContext;

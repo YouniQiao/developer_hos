@@ -2,7 +2,8 @@
 title: "Camera错误码"
 upstream_id: "harmonyos-references/errorcode-camera"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:19.147930"
+content_hash: "07eb1fdc5671"
+synced_at: "2026-07-09T01:00:27.495335"
 ---
 
 # Camera错误码

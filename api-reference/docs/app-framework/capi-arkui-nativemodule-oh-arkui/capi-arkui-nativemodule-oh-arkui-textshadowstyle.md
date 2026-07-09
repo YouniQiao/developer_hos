@@ -2,7 +2,8 @@
 title: "OH_ArkUI_TextShadowStyle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-arkui-textshadowstyle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:55.438204"
+content_hash: "0d5c0d4d5b56"
+synced_at: "2026-07-09T00:58:45.175239"
 ---
 
 # OH_ArkUI_TextShadowStyle

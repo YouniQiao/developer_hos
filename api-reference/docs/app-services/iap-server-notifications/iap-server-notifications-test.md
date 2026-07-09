@@ -2,7 +2,8 @@
 title: "测试服务端通知"
 upstream_id: "harmonyos-references/iap-server-notifications-test"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:29.511420"
+content_hash: "c79c9aae5207"
+synced_at: "2026-07-09T01:01:22.055523"
 ---
 
 # 测试服务端通知

@@ -2,7 +2,8 @@
 title: "Functions"
 upstream_id: "harmonyos-references/arkts-apis-avsession-f"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:05.645470"
+content_hash: "9290f6935ac7"
+synced_at: "2026-07-09T01:00:17.424352"
 ---
 
 # Functions
@@ -153,7 +154,7 @@ getAVSession(context: Context): Promise<AVSession>
 
 获取会话对象。使用Promise异步回调。
 
-该接口可将当前进程已创建过的会话对象返回，如果没有创建过会话对象，当前接口会调用失败抛出异常。
+该接口可将当前进程已创建过的会话对象返回，如果没有创建过会话对象，该接口调用会失败并抛出异常。
 
 元服务API： 从API version 22开始，该接口支持在元服务中使用。
 

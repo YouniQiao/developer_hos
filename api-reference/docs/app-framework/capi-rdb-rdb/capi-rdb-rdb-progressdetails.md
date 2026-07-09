@@ -2,7 +2,8 @@
 title: "Rdb_ProgressDetails"
 upstream_id: "harmonyos-references/capi-rdb-rdb-progressdetails"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:09.003114"
+content_hash: "4a72771afe04"
+synced_at: "2026-07-09T00:57:20.736820"
 ---
 
 # Rdb_ProgressDetails

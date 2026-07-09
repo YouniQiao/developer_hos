@@ -2,7 +2,8 @@
 title: "Video组件错误码"
 upstream_id: "harmonyos-references/errorcode-video"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:01.573815"
+content_hash: "ebce256e8d37"
+synced_at: "2026-07-09T00:58:49.381481"
 ---
 
 # Video组件错误码

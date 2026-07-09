@@ -2,7 +2,8 @@
 title: "@ohos.connectedTag (有源标签)"
 upstream_id: "harmonyos-references/js-apis-connectedtag"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:46.467465"
+content_hash: "be377128fa7b"
+synced_at: "2026-07-09T00:59:24.026639"
 ---
 
 # @ohos.connectedTag (有源标签)

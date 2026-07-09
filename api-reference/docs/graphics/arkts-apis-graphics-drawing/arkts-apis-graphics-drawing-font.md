@@ -2,7 +2,8 @@
 title: "Class (Font)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-font"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:52.857738"
+content_hash: "23163806511b"
+synced_at: "2026-07-09T01:00:51.995814"
 ---
 
 # Class (Font)

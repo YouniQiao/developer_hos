@@ -2,7 +2,8 @@
 title: "ArkWeb_WebMessageAPI"
 upstream_id: "harmonyos-references/capi-web-arkweb-webmessageapi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:09.796695"
+content_hash: "f98c6154202b"
+synced_at: "2026-07-09T00:58:56.627492"
 ---
 
 # ArkWeb_WebMessageAPI
@@ -13,7 +14,9 @@ typedef struct {...} ArkWeb_WebMessageAPI
 
 #### 概述
 
-Post Message数据相关的Native API结构体。在调用接口前建议通过[ARKWEB_MEMBER_MISSING](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-type-h#宏定义)校验该函数结构体是否有对应函数指针，避免SDK与设备ROM不匹配导致崩溃。WebMessage相关接口需在UI线程中调用OH_ArkWeb_GetNativeAPI方法获取。
+ArkWeb_WebMessageAPI是Web消息相关Native API结构体。该结构体提供了创建和销毁消息、设置和获取消息类型、管理消息数据缓冲区等函数。此API是postMessage桥接的一部分，支持Native代码与HTML页面之间的双向通信。
+
+Web消息相关接口需在UI线程中调用OH_ArkWeb_GetNativeAPI方法获取，调用前建议通过[ARKWEB_MEMBER_MISSING](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-type-h#宏定义)校验函数指针的可用性，避免SDK与设备ROM不匹配导致崩溃。
 
 起始版本： 12
 
@@ -102,6 +105,12 @@ ArkWeb_WebMessageType (*getType)(ArkWeb_WebMessagePtr webMessage)
 | 参数项 | 描述 |
 | --- | --- |
 | [ArkWeb_WebMessagePtr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-web-arkweb-webmessage8h) webMessage | 消息结构体指针。 |
+
+返回：
+
+| 类型 | 说明 |
+| --- | --- |
+| [ArkWeb_WebMessageType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-type-h#arkweb_webmessagetype) | 消息类型。 |
 
 #### [h2]setData()
 

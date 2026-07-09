@@ -2,7 +2,8 @@
 title: "scsi_peripheral_types.h"
 upstream_id: "harmonyos-references/capi-scsi-peripheral-types-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:31.685575"
+content_hash: "25f40ef8628e"
+synced_at: "2026-07-09T00:59:55.021049"
 ---
 
 # scsi_peripheral_types.h

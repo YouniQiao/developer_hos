@@ -2,7 +2,8 @@
 title: "Interface (Photo)"
 upstream_id: "harmonyos-references/arkts-apis-camera-photo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:12.507649"
+content_hash: "ef583852f2c8"
+synced_at: "2026-07-09T01:00:22.516853"
 ---
 
 # Interface (Photo)

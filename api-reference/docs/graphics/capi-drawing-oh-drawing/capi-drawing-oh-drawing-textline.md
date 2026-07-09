@@ -2,7 +2,8 @@
 title: "OH_Drawing_TextLine"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-textline"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:08.491035"
+content_hash: "f5106b06e624"
+synced_at: "2026-07-09T01:01:02.815125"
 ---
 
 # OH_Drawing_TextLine

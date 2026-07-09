@@ -2,7 +2,8 @@
 title: "Functions"
 upstream_id: "harmonyos-references/arkts-apis-data-relationalstore-f"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:03.018255"
+content_hash: "aea4d25de189"
+synced_at: "2026-07-09T00:57:15.753830"
 ---
 
 # Functions

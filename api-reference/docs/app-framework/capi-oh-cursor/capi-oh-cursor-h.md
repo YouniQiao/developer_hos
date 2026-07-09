@@ -2,7 +2,8 @@
 title: "oh_cursor.h"
 upstream_id: "harmonyos-references/capi-oh-cursor-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:06.130924"
+content_hash: "8d3624041c85"
+synced_at: "2026-07-09T00:57:18.364910"
 ---
 
 # oh_cursor.h

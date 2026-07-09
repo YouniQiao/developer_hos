@@ -2,7 +2,8 @@
 title: "oh_predicates.h"
 upstream_id: "harmonyos-references/capi-oh-predicates-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:06.357347"
+content_hash: "254abc44a232"
+synced_at: "2026-07-09T00:57:18.727080"
 ---
 
 # oh_predicates.h

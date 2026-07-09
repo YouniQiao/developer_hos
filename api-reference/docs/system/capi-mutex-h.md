@@ -2,7 +2,8 @@
 title: "mutex.h"
 upstream_id: "harmonyos-references/capi-mutex-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:16.062629"
+content_hash: "152cff48be4c"
+synced_at: "2026-07-09T00:59:47.125884"
 ---
 
 # mutex.h

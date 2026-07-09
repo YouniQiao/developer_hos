@@ -2,7 +2,8 @@
 title: "Rcp_DnsServers"
 upstream_id: "harmonyos-references/_rcp___dns_servers"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:00.112759"
+content_hash: "45b2335f0ef8"
+synced_at: "2026-07-09T00:59:34.058042"
 ---
 
 # Rcp_DnsServers

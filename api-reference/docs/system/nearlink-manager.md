@@ -2,7 +2,8 @@
 title: "manager（星闪开关能力）"
 upstream_id: "harmonyos-references/nearlink-manager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:50.160820"
+content_hash: "c799facdfffb"
+synced_at: "2026-07-09T00:59:26.519117"
 ---
 
 # manager（星闪开关能力）

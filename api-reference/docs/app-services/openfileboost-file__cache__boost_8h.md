@@ -2,7 +2,8 @@
 title: "file_cache_boost.h"
 upstream_id: "harmonyos-references/openfileboost-file__cache__boost_8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:48.597065"
+content_hash: "65d263b18fea"
+synced_at: "2026-07-09T01:01:36.889435"
 ---
 
 # file_cache_boost.h

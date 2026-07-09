@@ -2,7 +2,8 @@
 title: "NotificationContent"
 upstream_id: "harmonyos-references/js-apis-inner-notification-notificationcontent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:37.406148"
+content_hash: "2673d8ac253f"
+synced_at: "2026-07-09T01:01:28.727673"
 ---
 
 # NotificationContent

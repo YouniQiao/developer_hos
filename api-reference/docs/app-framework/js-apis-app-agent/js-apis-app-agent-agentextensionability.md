@@ -2,7 +2,8 @@
 title: "@ohos.app.agent.AgentExtensionAbility (智能体扩展组件)"
 upstream_id: "harmonyos-references/js-apis-app-agent-agentextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:48.724387"
+content_hash: "c12dcb7b22bf"
+synced_at: "2026-07-09T00:57:05.832390"
 ---
 
 # @ohos.app.agent.AgentExtensionAbility (智能体扩展组件)
@@ -27,7 +28,7 @@ import { AgentExtensionAbility } from '@kit.AbilityKit';
 
 图1 AgentExtensionAbility生命周期
 
-![](./img/zh-cn_image_0000002656469429.png)
+![](./img/zh-cn_image_0000002661612229.png)
 
 - **onCreate** 当AgentExtensionAbility实例创建完成时，系统会触发该回调，开发者可在该回调中执行初始化逻辑（如定义变量、加载资源等）。
 - **onConnect** 当客户端连接AgentExtensionAbility成功后，系统会触发该回调。

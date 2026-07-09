@@ -2,7 +2,8 @@
 title: "NodeController"
 upstream_id: "harmonyos-references/js-apis-arkui-nodecontroller"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:27.762701"
+content_hash: "701c3fffd19e"
+synced_at: "2026-07-09T00:57:32.764846"
 ---
 
 # NodeController
@@ -285,7 +286,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230126.jpg)
+ ![](./img/zh-cn_image_0000002661612295.jpg)
 
 #### [h2]示例2（添加节点上下树和绑定解绑前后的生命周期回调）
 
@@ -380,4 +381,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070216.jpg)
+ ![](./img/zh-cn_image_0000002631413004.jpg)

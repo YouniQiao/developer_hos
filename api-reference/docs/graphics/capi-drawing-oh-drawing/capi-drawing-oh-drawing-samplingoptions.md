@@ -2,7 +2,8 @@
 title: "OH_Drawing_SamplingOptions"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-samplingoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:10.545245"
+content_hash: "9a9973b5c8c1"
+synced_at: "2026-07-09T01:01:04.564998"
 ---
 
 # OH_Drawing_SamplingOptions

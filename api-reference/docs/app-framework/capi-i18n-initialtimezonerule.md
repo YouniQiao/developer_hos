@@ -2,7 +2,8 @@
 title: "InitialTimeZoneRule"
 upstream_id: "harmonyos-references/capi-i18n-initialtimezonerule"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:24.503676"
+content_hash: "5851f4021335"
+synced_at: "2026-07-09T00:59:08.628634"
 ---
 
 # InitialTimeZoneRule
@@ -27,5 +28,5 @@ typedef struct InitialTimeZoneRule {...} InitialTimeZoneRule
 
 | 名称 | 描述 |
 | --- | --- |
-| int32_t rawOffset | 时区的原始偏移量。 |
-| int32_t dstSavings | 夏令时的偏移量。 |
+| int32_t rawOffset | 时区的原始偏移量，单位为毫秒（ms）。 |
+| int32_t dstSavings | 夏令时的偏移量，单位为毫秒（ms）。 |

@@ -2,7 +2,8 @@
 title: "Http_PerformanceTiming"
 upstream_id: "harmonyos-references/capi-netstack-http-performancetiming"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:55.517678"
+content_hash: "b8a354585851"
+synced_at: "2026-07-09T00:59:30.509348"
 ---
 
 # Http_PerformanceTiming

@@ -2,7 +2,8 @@
 title: "订阅状态查询"
 upstream_id: "harmonyos-references/iap-query-subscription-status"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:28.839265"
+content_hash: "00a5a9f13533"
+synced_at: "2026-07-09T01:01:21.738862"
 ---
 
 # 订阅状态查询
@@ -87,7 +88,7 @@ Accept: application/json
 | subGroupGenerationId | 是 | String | 订阅组的代ID。 - 用户切换订阅商品时，此ID不会改变。 - 订阅失效且超出[保留期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-subscription-functions#保留期)后，用户重新购买商品时，此ID会改变。 |
 | subscriptionId | 是 | String | 商品的订阅ID。以下场景，此ID会发生改变： - 用户切换订阅商品时。 - 订阅失效且超出[保留期](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-subscription-functions#保留期)后，用户重新购买商品时。 |
 | purchaseToken | 是 | String | 购买token，在购买消耗型/非消耗型/非续期订阅商品场景中与具体购买订单一一对应，在订阅型商品场景中与订阅ID一一对应。最大长度256。 |
-| status | 是 | String | 订阅状态。 1：生效状态 2：已到期 3：尝试扣费 5：撤销 |
+| status | 是 | String | 订阅状态。 1：生效中 2：已到期 3：尝试扣费 5：撤销 |
 | expiresTime | 是 | Long | 自动续期订阅商品的过期时间，UTC时间戳，以毫秒为单位。 |
 | lastPurchaseOrder | 否 | Object | 当前订阅最新的一笔购买订单。包含的参数请参见[PurchaseOrderPayload](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-server-data-model#purchaseorderpayload)。 |
 | recentPurchaseOrderList | 否 | List | 当前订阅最新的购买订单列表，包含续期、折算、延期等产生的购买订单。购买订单包含的参数请参见[PurchaseOrderPayload](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-server-data-model#purchaseorderpayload)。 |

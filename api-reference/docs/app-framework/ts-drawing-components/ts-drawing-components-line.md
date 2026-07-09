@@ -2,7 +2,8 @@
 title: "Line"
 upstream_id: "harmonyos-references/ts-drawing-components-line"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:36.013763"
+content_hash: "2c79b0f8f058"
+synced_at: "2026-07-09T00:58:04.793715"
 ---
 
 # Line
@@ -367,7 +368,7 @@ struct LineExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470067.png)
+ ![](./img/zh-cn_image_0000002631413592.png)
 
 #### [h2]示例2（边框端点绘制）
 
@@ -415,7 +416,7 @@ struct LineExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350115.png)
+ ![](./img/zh-cn_image_0000002661732823.png)
 
 #### [h2]示例3（边框间隙绘制）
 
@@ -475,7 +476,7 @@ struct LineExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230702.png)
+ ![](./img/zh-cn_image_0000002631253702.png)
 
 #### [h2]示例4（宽和高使用不同参数类型绘制直线）
 
@@ -516,7 +517,7 @@ struct LineTypeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070792.png)
+ ![](./img/zh-cn_image_0000002661612883.png)
 
 #### [h2]示例5（使用attributeModifier动态设置Line组件的属性）
 
@@ -553,4 +554,4 @@ struct LineModifierDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470069.png)
+ ![](./img/zh-cn_image_0000002631413594.png)

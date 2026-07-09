@@ -2,7 +2,8 @@
 title: "ArkTS API 错误码"
 upstream_id: "harmonyos-references/errorcode-pdf"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:48.083661"
+content_hash: "a57686508086"
+synced_at: "2026-07-09T01:01:36.001930"
 ---
 
 # ArkTS API 错误码
@@ -112,7 +113,7 @@ The PDF document is not loaded.
 
 错误描述
 
-系统无法访问指定的PDF文件。
+PDF文档未加载，无法访问指定的PDF文档。
 
 可能原因
 

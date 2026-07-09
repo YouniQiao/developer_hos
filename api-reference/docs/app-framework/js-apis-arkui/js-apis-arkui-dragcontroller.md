@@ -2,7 +2,8 @@
 title: "@ohos.arkui.dragController (DragController)"
 upstream_id: "harmonyos-references/js-apis-arkui-dragcontroller"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:18.715428"
+content_hash: "527fc274667a"
+synced_at: "2026-07-09T00:57:28.332160"
 ---
 
 # @ohos.arkui.dragController (DragController)
@@ -134,7 +135,7 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230070.gif)
+ ![](./img/zh-cn_image_0000002661732175.gif)
 
 #### dragController.executeDrag(deprecated)
 
@@ -283,7 +284,7 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070160.gif)
+ ![](./img/zh-cn_image_0000002631253054.gif)
 
 #### DragInfo
 
@@ -575,7 +576,7 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469437.gif)
+ ![](./img/zh-cn_image_0000002661612237.gif)
 
 #### DragAction11+
 
@@ -846,7 +847,7 @@ struct ImageExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349485.gif)
+ ![](./img/zh-cn_image_0000002631412944.gif)
 
 #### [h2]on('statusChange')11+
 
@@ -1294,7 +1295,7 @@ struct DragControllerPage {
   }
 }
 ```
-![](./img/zh-cn_image_0000002626230072.gif)
+![](./img/zh-cn_image_0000002661732177.gif)
 
 #### DragStartRequestStatus18+
 

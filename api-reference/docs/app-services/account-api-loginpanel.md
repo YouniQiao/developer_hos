@@ -2,7 +2,8 @@
 title: "LoginPanel (华为账号Panel登录组件)"
 upstream_id: "harmonyos-references/account-api-loginpanel"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:18.206168"
+content_hash: "a73d3adac3e9"
+synced_at: "2026-07-09T01:01:11.665091"
 ---
 
 # LoginPanel (华为账号Panel登录组件)
@@ -37,8 +38,8 @@ import { LoginPanel, loginComponentManager } from '@kit.AccountKit';
 | 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
 | show | boolean | 是 | @Link | 该参数用于控制LoginPanel组件是否展示。 false表示不展示该组件。 true表示展示该组件，当业务需要使用LoginPanel组件时设置值为true。 **说明：** - 该参数必须是@State装饰的局部变量。 - LoginPanel仅支持在页面中使用，弹框、子窗口等场景暂不支持。 |
-| params | [loginComponentManager.LoginPanelParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginpanelparams) | 是 | @Require | LoginPanel组件参数。 |
-| controller | [loginComponentManager.LoginPanelController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginpanelcontroller) | 是 | @Require | LoginPanel组件控制器用来接收组件的点击事件。 |
+| params | [loginComponentManager.LoginPanelParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginpanelparams) | 是 | @Require 适用版本：26.0.0+ | LoginPanel组件参数。 |
+| controller | [loginComponentManager.LoginPanelController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-component-manager#loginpanelcontroller) | 是 | @Require 适用版本：26.0.0+ | LoginPanel组件控制器用来接收组件的点击事件。 |
 
 #### [h2]build
 

@@ -2,7 +2,8 @@
 title: "OH_UdmfGetDataParams"
 upstream_id: "harmonyos-references/capi-udmf-oh-udmfgetdataparams"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:10.213909"
+content_hash: "c27257de82d3"
+synced_at: "2026-07-09T00:57:21.469494"
 ---
 
 # OH_UdmfGetDataParams

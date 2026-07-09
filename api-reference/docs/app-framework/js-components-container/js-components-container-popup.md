@@ -2,7 +2,8 @@
 title: "popup"
 upstream_id: "harmonyos-references/js-components-container-popup"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:04.087198"
+content_hash: "680d47826dde"
+synced_at: "2026-07-09T00:58:20.753251"
 ---
 
 # popup
@@ -125,4 +126,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070972.png)
+ ![](./img/zh-cn_image_0000002661733005.png)

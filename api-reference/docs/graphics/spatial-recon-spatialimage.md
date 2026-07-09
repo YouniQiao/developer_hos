@@ -2,7 +2,8 @@
 title: "spatialImage（空间照片）"
 upstream_id: "harmonyos-references/spatial-recon-spatialimage"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:14.373313"
+content_hash: "391dcc16f7f7"
+synced_at: "2026-07-09T01:01:08.667207"
 ---
 
 # spatialImage（空间照片）
@@ -64,7 +65,7 @@ import { spatialImage } from '@kit.SpatialReconKit';
 | 名称 | 类型 | 可读 | 可写 | 说明 |
 | --- | --- | --- | --- | --- |
 | position | [Vec3](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-types#vec3) | 是 | 是 | 相机位置，默认值为{ x: 0, y: 0, z: 0 }。 |
-| potation | [Quaternion](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-types#quaternion) | 是 | 是 | 相机旋转四元数，默认值为{ w: 1, x: 0, y: 0, z: 0 }。 |
+| rotation | [Quaternion](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-scene-types#quaternion) | 是 | 是 | 相机旋转四元数，默认值为{ w: 1, x: 0, y: 0, z: 0 }。 |
 
 #### ProgressCallback
 

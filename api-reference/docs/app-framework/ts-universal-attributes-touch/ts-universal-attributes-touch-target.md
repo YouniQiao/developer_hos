@@ -2,7 +2,8 @@
 title: "触摸热区设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-touch-target"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:42.725603"
+content_hash: "7152e5bbba69"
+synced_at: "2026-07-09T00:57:41.302786"
 ---
 
 # 触摸热区设置
@@ -201,7 +202,7 @@ struct TouchTargetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349631.gif)
+ ![](./img/zh-cn_image_0000002631253208.gif)
 
 #### [h2]示例2（通过responseRegionList接口设置触摸热区）
 
@@ -258,7 +259,7 @@ struct TouchTargetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230218.gif)
+ ![](./img/zh-cn_image_0000002661612393.gif)
 
 #### [h2]示例3（设置鼠标的触摸热区以响应点击事件）
 
@@ -349,4 +350,4 @@ struct MouseResponseRegionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070308.gif)
+ ![](./img/zh-cn_image_0000002631413102.gif)

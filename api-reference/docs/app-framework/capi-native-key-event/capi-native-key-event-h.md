@@ -2,7 +2,8 @@
 title: "native_key_event.h"
 upstream_id: "harmonyos-references/capi-native-key-event-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:36.473589"
+content_hash: "7bfd20e0f361"
+synced_at: "2026-07-09T00:58:34.654133"
 ---
 
 # native_key_event.h

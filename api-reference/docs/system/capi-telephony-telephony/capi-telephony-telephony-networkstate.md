@@ -2,7 +2,8 @@
 title: "Telephony_NetworkState"
 upstream_id: "harmonyos-references/capi-telephony-telephony-networkstate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:05.392133"
+content_hash: "04d601c437b5"
+synced_at: "2026-07-09T00:59:38.443352"
 ---
 
 # Telephony_NetworkState

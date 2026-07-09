@@ -2,7 +2,8 @@
 title: "drawing_font.h"
 upstream_id: "harmonyos-references/capi-drawing-font-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:00.237542"
+content_hash: "e67742e89ff1"
+synced_at: "2026-07-09T01:00:55.907763"
 ---
 
 # drawing_font.h

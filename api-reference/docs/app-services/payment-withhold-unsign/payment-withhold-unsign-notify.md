@@ -1,9 +1,12 @@
 ---
+
 title: "解约结果回调通知"
 upstream_id: "harmonyos-references/payment-withhold-unsign-notify"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:41.526049"
+synced_at: "2026-07-09T01:01:31.622471"
+content_hash: "24370bbcb3a5"
 ---
+
 
 # 解约结果回调通知
 

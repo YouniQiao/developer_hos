@@ -2,7 +2,8 @@
 title: "drawing_path_effect.h"
 upstream_id: "harmonyos-references/capi-drawing-path-effect-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:01.516886"
+content_hash: "f125394a439e"
+synced_at: "2026-07-09T01:00:56.640523"
 ---
 
 # drawing_path_effect.h

@@ -2,7 +2,8 @@
 title: "OH_AVMetadataStruct"
 upstream_id: "harmonyos-references/capi-ohavsession-oh-avmetadatastruct"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:08.900364"
+content_hash: "98993bfb3cf0"
+synced_at: "2026-07-09T01:00:20.011091"
 ---
 
 # OH_AVMetadataStruct
@@ -13,7 +14,7 @@ typedef struct OH_AVMetadataStruct OH_AVMetadata
 
 #### 概述
 
-会话元数据。资源设置的avmetadata的实例。
+会话元数据。用于存储媒体资源元数据的结构体定义。
 
 起始版本： 13
 

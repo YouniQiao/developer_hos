@@ -2,7 +2,8 @@
 title: "picker-view"
 upstream_id: "harmonyos-references/js-components-basic-picker-view"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:06.836994"
+content_hash: "a12e1b861ddf"
+synced_at: "2026-07-09T00:58:22.073984"
 ---
 
 # picker-view
@@ -163,7 +164,7 @@ export default {
     },
 }
 ```
- ![](./img/zh-cn_image_0000002656350307.gif)
+ ![](./img/zh-cn_image_0000002661613077.gif)
 
 #### [h2]时间选择器
 
@@ -220,7 +221,7 @@ export default {
   },
 }
 ```
- ![](./img/zh-cn_image_0000002626230894.png)
+ ![](./img/zh-cn_image_0000002631413788.png)
 
 #### [h2]日期选择器
 
@@ -261,7 +262,7 @@ export default {
     },
 }
 ```
- ![](./img/zh-cn_image_0000002626070984.png)
+ ![](./img/zh-cn_image_0000002661733017.png)
 
 #### [h2]日期时间选择器
 
@@ -302,7 +303,7 @@ export default {
     },
 }
 ```
- ![](./img/zh-cn_image_0000002656470261.png)
+ ![](./img/zh-cn_image_0000002631253898.png)
 
 #### [h2]多列文本选择器
 
@@ -348,4 +349,4 @@ export default {
     },
 }
 ```
- ![](./img/zh-cn_image_0000002656350309.png)
+ ![](./img/zh-cn_image_0000002661613079.png)

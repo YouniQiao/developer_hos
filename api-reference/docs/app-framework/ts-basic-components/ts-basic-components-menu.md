@@ -2,7 +2,8 @@
 title: "Menu"
 upstream_id: "harmonyos-references/ts-basic-components-menu"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:39.505791"
+content_hash: "b3d2a871f234"
+synced_at: "2026-07-09T00:58:06.889235"
 ---
 
 # Menu
@@ -271,7 +272,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070804.png)
+ ![](./img/zh-cn_image_0000002661612895.png)
 
 #### [h2]示例2（设置symbol类型图标）
 
@@ -344,7 +345,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470081.png)
+ ![](./img/zh-cn_image_0000002631413606.png)
 
 #### [h2]示例3（设置Menu子菜单展开符号）
 
@@ -407,7 +408,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350129.gif)
+ ![](./img/zh-cn_image_0000002661732837.gif)
 
 #### [h2]示例4（设置分割线样式）
 
@@ -454,4 +455,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230716.png)
+ ![](./img/zh-cn_image_0000002631253716.png)

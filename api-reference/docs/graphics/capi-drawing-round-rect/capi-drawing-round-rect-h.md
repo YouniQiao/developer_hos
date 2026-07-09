@@ -2,7 +2,8 @@
 title: "drawing_round_rect.h"
 upstream_id: "harmonyos-references/capi-drawing-round-rect-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:02.564041"
+content_hash: "16d44caa7118"
+synced_at: "2026-07-09T01:00:57.544486"
 ---
 
 # drawing_round_rect.h

@@ -2,7 +2,8 @@
 title: "@ohos.multimodalAwareness.deviceStatus (设备状态感知)"
 upstream_id: "harmonyos-references/js-apis-awareness-devicestatus"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:37.397447"
+content_hash: "2a5f8a9600d9"
+synced_at: "2026-07-09T00:59:57.860676"
 ---
 
 # @ohos.multimodalAwareness.deviceStatus (设备状态感知)

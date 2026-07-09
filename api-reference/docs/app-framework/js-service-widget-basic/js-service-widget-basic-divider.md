@@ -2,7 +2,8 @@
 title: "divider"
 upstream_id: "harmonyos-references/js-service-widget-basic-divider"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:29.052641"
+content_hash: "4f132e3b18fd"
+synced_at: "2026-07-09T00:58:31.222489"
 ---
 
 # divider
@@ -79,4 +80,4 @@ synced_at: "2026-06-24T20:49:29.052641"
 ```
  4*4卡片
 
-![](./img/zh-cn_image_0000002656350543.png)
+![](./img/zh-cn_image_0000002661613315.png)

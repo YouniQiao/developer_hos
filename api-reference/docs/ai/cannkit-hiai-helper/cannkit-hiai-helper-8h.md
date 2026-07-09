@@ -2,7 +2,8 @@
 title: "hiai_helper.h"
 upstream_id: "harmonyos-references/cannkit-hiai-helper-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:55.240122"
+content_hash: "b759174c620e"
+synced_at: "2026-07-09T01:01:40.658460"
 ---
 
 # hiai_helper.h

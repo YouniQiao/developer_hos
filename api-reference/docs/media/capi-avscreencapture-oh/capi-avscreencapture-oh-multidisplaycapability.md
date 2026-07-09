@@ -2,7 +2,8 @@
 title: "OH_MultiDisplayCapability"
 upstream_id: "harmonyos-references/capi-avscreencapture-oh-multidisplaycapability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:43.186548"
+content_hash: "c9df74d2a17a"
+synced_at: "2026-07-09T01:00:45.487136"
 ---
 
 # OH_MultiDisplayCapability

@@ -2,7 +2,8 @@
 title: "@ohos.telephony.observer (observer)"
 upstream_id: "harmonyos-references/js-apis-observer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:04.696678"
+content_hash: "b5d83856f67c"
+synced_at: "2026-07-09T00:59:38.548292"
 ---
 
 # @ohos.telephony.observer (observer)

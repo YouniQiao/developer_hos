@@ -2,7 +2,8 @@
 title: "Camera_FoldStatusInfo"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-foldstatusinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:17.272642"
+content_hash: "93423b196dea"
+synced_at: "2026-07-09T01:00:26.434323"
 ---
 
 # Camera_FoldStatusInfo

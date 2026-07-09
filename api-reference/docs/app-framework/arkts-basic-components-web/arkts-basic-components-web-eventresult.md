@@ -2,7 +2,8 @@
 title: "Class (EventResult)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-eventresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:06.155300"
+content_hash: "2e7e627b49dd"
+synced_at: "2026-07-09T00:58:53.430488"
 ---
 
 # Class (EventResult)

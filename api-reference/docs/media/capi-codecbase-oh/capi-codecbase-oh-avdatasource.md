@@ -2,7 +2,8 @@
 title: "OH_AVDataSource"
 upstream_id: "harmonyos-references/capi-codecbase-oh-avdatasource"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:03.844963"
+content_hash: "6dc124d31690"
+synced_at: "2026-07-09T01:00:15.667730"
 ---
 
 # OH_AVDataSource

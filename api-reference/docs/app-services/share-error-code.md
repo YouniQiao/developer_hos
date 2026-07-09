@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/share-error-code"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:53.268576"
+content_hash: "6a9a4290295d"
+synced_at: "2026-07-09T01:01:39.555593"
 ---
 
 # ArkTS API错误码

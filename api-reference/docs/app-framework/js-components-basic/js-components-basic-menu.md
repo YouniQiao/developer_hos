@@ -2,7 +2,8 @@
 title: "menu"
 upstream_id: "harmonyos-references/js-components-basic-menu"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:06.297769"
+content_hash: "74db13b9ed2f"
+synced_at: "2026-07-09T00:58:21.896591"
 ---
 
 # menu
@@ -96,4 +97,4 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002626070982.png)
+ ![](./img/zh-cn_image_0000002661733015.png)

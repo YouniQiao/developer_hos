@@ -2,7 +2,8 @@
 title: "Interface (MediaKeySystem)"
 upstream_id: "harmonyos-references/arkts-apis-drm-mediakeysystem"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:19.621076"
+content_hash: "9152d3f3ba95"
+synced_at: "2026-07-09T01:00:28.295824"
 ---
 
 # Interface (MediaKeySystem)

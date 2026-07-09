@@ -2,7 +2,8 @@
 title: "ArkUI_XComponentSurfaceConfig"
 upstream_id: "harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-arkui-xcomponentsurfaceconfig"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:49.771999"
+content_hash: "59c8d730f862"
+synced_at: "2026-07-09T00:58:41.697126"
 ---
 
 # ArkUI_XComponentSurfaceConfig

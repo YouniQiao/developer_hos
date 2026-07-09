@@ -2,7 +2,8 @@
 title: "Rcp_ClientCertificate"
 upstream_id: "harmonyos-references/_rcp___client_certificate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:59.415604"
+content_hash: "c93ecf97d748"
+synced_at: "2026-07-09T00:59:33.322130"
 ---
 
 # Rcp_ClientCertificate
@@ -23,8 +24,8 @@ synced_at: "2026-06-24T20:50:59.415604"
 
 | 名称 | 描述 |
 | --- | --- |
-| char * [content](#content) | 客户端证书内容。它应采用“PEM”、“DER”或“P12”格式。 |
-| char * [filePath](#filepath) | 客户端证书的路径。文件的格式应为“PEM”、“DER”或“P12”格式。 |
+| char * [content](#content) | 客户端证书内容。它应采用PEM、DER或P12格式。 |
+| char * [filePath](#filepath) | 客户端证书的路径。文件的格式应为PEM、DER或P12格式。 |
 | char * [key](#key) | 客户端证书私钥的文件名。 |
 | char * [keyPassword](#keypassword) | 客户端证书私钥的密码。 |
 | [Rcp_CertType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-overview#rcp_certtype) [type](#type) | 客户端证书类型。 |

@@ -2,7 +2,8 @@
 title: "OH_Drawing_TextTab"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-texttab"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:08.575048"
+content_hash: "3616ebedefab"
+synced_at: "2026-07-09T01:01:03.087619"
 ---
 
 # OH_Drawing_TextTab

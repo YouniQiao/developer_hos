@@ -2,7 +2,8 @@
 title: "@ohos.util.List (线性容器List)"
 upstream_id: "harmonyos-references/js-apis-list"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:17.114264"
+content_hash: "4754aec76a23"
+synced_at: "2026-07-09T00:57:26.049799"
 ---
 
 # @ohos.util.List (线性容器List)

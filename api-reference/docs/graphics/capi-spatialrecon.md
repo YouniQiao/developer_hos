@@ -2,7 +2,8 @@
 title: "SpatialRecon"
 upstream_id: "harmonyos-references/capi-spatialrecon"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:14.715554"
+content_hash: "2181d0404406"
+synced_at: "2026-07-09T01:01:08.546734"
 ---
 
 # SpatialRecon

@@ -2,7 +2,8 @@
 title: "OH_AudioSuite_SpaceRenderRotationParams"
 upstream_id: "harmonyos-references/capi-ohaudiosuite-oh-audiosuite-spacerenderrotationparams"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:00.188553"
+content_hash: "8bf893220fb6"
+synced_at: "2026-07-09T01:00:12.346418"
 ---
 
 # OH_AudioSuite_SpaceRenderRotationParams

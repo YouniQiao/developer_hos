@@ -2,7 +2,8 @@
 title: "game_device.h"
 upstream_id: "harmonyos-references/capi-game-device"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:24.698127"
+content_hash: "64d21a90067c"
+synced_at: "2026-07-09T01:01:17.417629"
 ---
 
 # game_device.h

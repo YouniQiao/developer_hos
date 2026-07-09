@@ -2,7 +2,8 @@
 title: "Class (FocusController)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-focuscontroller"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:21.031061"
+content_hash: "c0b1af35994b"
+synced_at: "2026-07-09T00:57:29.184167"
 ---
 
 # Class (FocusController)

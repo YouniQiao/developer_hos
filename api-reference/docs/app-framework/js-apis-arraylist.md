@@ -2,7 +2,8 @@
 title: "@ohos.util.ArrayList (线性容器ArrayList)"
 upstream_id: "harmonyos-references/js-apis-arraylist"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:16.567831"
+content_hash: "612bb1fa76b0"
+synced_at: "2026-07-09T00:57:25.673042"
 ---
 
 # @ohos.util.ArrayList (线性容器ArrayList)

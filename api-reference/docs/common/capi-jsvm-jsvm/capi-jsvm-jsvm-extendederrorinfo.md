@@ -2,7 +2,8 @@
 title: "JSVM_ExtendedErrorInfo"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-extendederrorinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:03.132561"
+content_hash: "71f3cceb092e"
+synced_at: "2026-07-09T01:01:46.917658"
 ---
 
 # JSVM_ExtendedErrorInfo

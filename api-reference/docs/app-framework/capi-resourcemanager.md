@@ -2,7 +2,8 @@
 title: "resourcemanager"
 upstream_id: "harmonyos-references/capi-resourcemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:23.344388"
+content_hash: "df30b73251fa"
+synced_at: "2026-07-09T00:59:07.206678"
 ---
 
 # resourcemanager

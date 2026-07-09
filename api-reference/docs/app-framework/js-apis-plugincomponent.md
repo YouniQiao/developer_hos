@@ -2,7 +2,8 @@
 title: "@ohos.pluginComponent (PluginComponentManager)"
 upstream_id: "harmonyos-references/js-apis-plugincomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:24.751599"
+content_hash: "f73a6a3ba5eb"
+synced_at: "2026-07-09T00:57:31.402708"
 ---
 
 # @ohos.pluginComponent (PluginComponentManager)

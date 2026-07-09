@@ -2,7 +2,8 @@
 title: "自定义字体样式"
 upstream_id: "harmonyos-references/js-service-widget-common-customizing-font"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:24.827761"
+content_hash: "e677e26d848b"
+synced_at: "2026-07-09T00:58:29.922367"
 ---
 
 # 自定义字体样式

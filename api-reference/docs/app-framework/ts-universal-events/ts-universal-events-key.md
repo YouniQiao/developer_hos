@@ -2,7 +2,8 @@
 title: "按键事件"
 upstream_id: "harmonyos-references/ts-universal-events-key"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:31.894001"
+content_hash: "a853bf9d92a3"
+synced_at: "2026-07-09T00:57:36.056089"
 ---
 
 # 按键事件
@@ -214,7 +215,7 @@ struct KeyEventExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070226.gif)
+ ![](./img/zh-cn_image_0000002631413014.gif)
 
 #### [h2]示例2（获取Unicode码值）
 
@@ -257,7 +258,7 @@ struct KeyEventExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469503.gif)
+ ![](./img/zh-cn_image_0000002661732245.gif)
 
 #### [h2]示例3（触发onKeyPreIme回调）
 
@@ -360,4 +361,4 @@ struct KeyEventExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349551.gif)
+ ![](./img/zh-cn_image_0000002631253124.gif)

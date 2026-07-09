@@ -2,7 +2,8 @@
 title: "NetworkBoost_WeakSignalPrediction"
 upstream_id: "harmonyos-references/network-boost-c-struct-weak_signal_prediction"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:58.193387"
+content_hash: "6436c735cbf5"
+synced_at: "2026-07-09T00:59:32.778088"
 ---
 
 # NetworkBoost_WeakSignalPrediction
@@ -24,8 +25,8 @@ synced_at: "2026-06-24T20:50:58.193387"
 | 名称 | 描述 |
 | --- | --- |
 | bool [isLastPredictionValid](#islastpredictionvalid) | 最近一次的弱信号预测是否有效，true表示最近一次的弱信号预测依旧有效，false表示最近一次的弱信号预测失效，此时startTime和duration参数忽略。 |
-| uint32_t [startTime](#starttime) | 预计多长时间进入弱信号（单位：s），取值范围为0和任意正数。 |
-| uint32_t [duration](#duration) | 预计在弱信号区域停留时长（单位：s），取任意正数。取值0，此次预测结果无效。 |
+| uint32_t [startTime](#starttime) | 预计多长时间进入弱信号，单位为s，取值范围为0和任意正数。 |
+| uint32_t [duration](#duration) | 预计在弱信号区域停留时长，单位为s，取任意正数。取值0，此次预测结果无效。 |
 
 #### 结构体成员变量说明
 

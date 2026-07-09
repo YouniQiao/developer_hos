@@ -2,7 +2,8 @@
 title: "transient_task_api.h"
 upstream_id: "harmonyos-references/capi-transient-task-api-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:10.875698"
+content_hash: "d209bcc078e5"
+synced_at: "2026-07-09T00:58:57.499675"
 ---
 
 # transient_task_api.h

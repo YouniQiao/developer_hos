@@ -2,7 +2,8 @@
 title: "aip_retrieval_condition.h"
 upstream_id: "harmonyos-references/dataaugmentation-aip-retrieval-condition"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:16.979122"
+content_hash: "8e48ef208773"
+synced_at: "2026-07-09T00:59:02.363787"
 ---
 
 # aip_retrieval_condition.h

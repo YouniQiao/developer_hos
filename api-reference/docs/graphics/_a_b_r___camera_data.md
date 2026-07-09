@@ -2,7 +2,8 @@
 title: "ABR_CameraData"
 upstream_id: "harmonyos-references/_a_b_r___camera_data"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:13.011673"
+content_hash: "00383778c4e7"
+synced_at: "2026-07-09T01:01:06.943110"
 ---
 
 # ABR_CameraData

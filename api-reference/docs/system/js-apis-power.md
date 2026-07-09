@@ -2,7 +2,8 @@
 title: "@ohos.power (系统电源管理)"
 upstream_id: "harmonyos-references/js-apis-power"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:06.302451"
+content_hash: "2e7836bf62b4"
+synced_at: "2026-07-09T00:59:39.323802"
 ---
 
 # @ohos.power (系统电源管理)

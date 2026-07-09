@@ -2,7 +2,8 @@
 title: "Interface (MapPolygon)"
 upstream_id: "harmonyos-references/map-map-mappolygon"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:32.541205"
+content_hash: "c531fb635be1"
+synced_at: "2026-07-09T01:01:24.721895"
 ---
 
 # Interface (MapPolygon)

@@ -2,7 +2,8 @@
 title: "Polygon"
 upstream_id: "harmonyos-references/ts-drawing-components-polygon"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:37.045162"
+content_hash: "003ab69d898f"
+synced_at: "2026-07-09T00:58:06.002234"
 ---
 
 # Polygon
@@ -332,7 +333,7 @@ struct PolygonExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470071.png)
+ ![](./img/zh-cn_image_0000002631413596.png)
 
 #### [h2]示例2（宽和高使用不同参数类型绘制多边形）
 
@@ -362,7 +363,7 @@ struct PolygonTypeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350119.png)
+ ![](./img/zh-cn_image_0000002661732827.png)
 
 #### [h2]示例3（使用attributeModifier动态设置Polygon组件的属性）
 
@@ -404,4 +405,4 @@ struct PolygonModifierDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230706.png)
+ ![](./img/zh-cn_image_0000002631253706.png)

@@ -2,7 +2,8 @@
 title: "neural_network_runtime_type.h"
 upstream_id: "harmonyos-references/capi-neural-network-runtime-type-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:59.566155"
+content_hash: "2d8ddebba8b7"
+synced_at: "2026-07-09T01:01:44.881308"
 ---
 
 # neural_network_runtime_type.h

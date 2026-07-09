@@ -2,7 +2,8 @@
 title: "xeg_gles_adaptive_vrs.h"
 upstream_id: "harmonyos-references/xengine-kit-xeg-gles-adaptive-vrs-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:15.113066"
+content_hash: "5ff652a010f5"
+synced_at: "2026-07-09T01:01:09.047856"
 ---
 
 # xeg_gles_adaptive_vrs.h

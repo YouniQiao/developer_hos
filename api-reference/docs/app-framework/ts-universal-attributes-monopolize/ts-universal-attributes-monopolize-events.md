@@ -1,9 +1,12 @@
 ---
+
 title: "事件独占控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-monopolize-events"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:43.608785"
+synced_at: "2026-07-09T00:57:41.231156"
+content_hash: "b6a14ff108cc"
 ---
+
 
 # 事件独占控制
 

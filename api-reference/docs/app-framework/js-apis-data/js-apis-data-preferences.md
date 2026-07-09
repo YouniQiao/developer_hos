@@ -2,7 +2,8 @@
 title: "@ohos.data.preferences (用户首选项)"
 upstream_id: "harmonyos-references/js-apis-data-preferences"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:02.625389"
+content_hash: "446f769a7443"
+synced_at: "2026-07-09T00:57:15.966520"
 ---
 
 # @ohos.data.preferences (用户首选项)

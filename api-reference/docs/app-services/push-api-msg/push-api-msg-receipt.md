@@ -1,9 +1,12 @@
 ---
+
 title: "消息回执"
 upstream_id: "harmonyos-references/push-api-msg-receipt"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:51.155788"
+synced_at: "2026-07-09T01:01:38.269827"
+content_hash: "8baf0ffb373b"
 ---
+
 
 # 消息回执
 

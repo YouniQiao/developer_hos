@@ -2,7 +2,8 @@
 title: "@ohos.enterprise.locationManager（位置服务管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-locationmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:23.338132"
+content_hash: "4747857b0988"
+synced_at: "2026-07-09T00:59:52.385453"
 ---
 
 # @ohos.enterprise.locationManager（位置服务管理）

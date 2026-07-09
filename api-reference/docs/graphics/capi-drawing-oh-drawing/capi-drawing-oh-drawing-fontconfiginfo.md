@@ -2,7 +2,8 @@
 title: "OH_Drawing_FontConfigInfo"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-fontconfiginfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:06.495805"
+content_hash: "59a49af70891"
+synced_at: "2026-07-09T01:01:01.057433"
 ---
 
 # OH_Drawing_FontConfigInfo

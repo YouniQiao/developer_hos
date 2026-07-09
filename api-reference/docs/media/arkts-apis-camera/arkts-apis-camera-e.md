@@ -2,7 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-apis-camera-e"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:14.106037"
+content_hash: "f86d16cdba3d"
+synced_at: "2026-07-09T01:00:24.453120"
 ---
 
 # Enums

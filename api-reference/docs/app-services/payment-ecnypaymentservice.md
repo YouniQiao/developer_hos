@@ -2,7 +2,8 @@
 title: "ecnyPaymentService (数字人民币服务)"
 upstream_id: "harmonyos-references/payment-ecnypaymentservice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:38.723910"
+content_hash: "150f2e266e44"
+synced_at: "2026-07-09T01:01:29.435914"
 ---
 
 # ecnyPaymentService (数字人民币服务)

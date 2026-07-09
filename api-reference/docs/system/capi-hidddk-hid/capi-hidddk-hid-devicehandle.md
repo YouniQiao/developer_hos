@@ -2,7 +2,8 @@
 title: "Hid_DeviceHandle"
 upstream_id: "harmonyos-references/capi-hidddk-hid-devicehandle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:33.351156"
+content_hash: "66e6066e3295"
+synced_at: "2026-07-09T00:59:56.036734"
 ---
 
 # Hid_DeviceHandle

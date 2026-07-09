@@ -2,7 +2,8 @@
 title: "HiDebug_JsStackFrame"
 upstream_id: "harmonyos-references/capi-hidebug-hidebug-jsstackframe"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:49.304875"
+content_hash: "2fdb38f5bcd0"
+synced_at: "2026-07-09T01:00:05.079170"
 ---
 
 # HiDebug_JsStackFrame
@@ -13,7 +14,7 @@ typedef struct HiDebug_JsStackFrame {...} HiDebug_JsStackFrame
 
 #### 概述
 
-js栈帧内容的定义。
+js栈帧内容的定义。用于在性能分析和调试场景中，记录js调用栈的帧信息，包括代码位置、函数名称、映射区域等关键信息。
 
 起始版本： 20
 

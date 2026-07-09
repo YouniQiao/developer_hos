@@ -2,7 +2,8 @@
 title: "Panel"
 upstream_id: "harmonyos-references/ts-container-panel"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:59.100954"
+content_hash: "40927cb875a9"
+synced_at: "2026-07-09T00:58:19.084256"
 ---
 
 # Panel
@@ -341,4 +342,4 @@ struct PanelExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350277.gif)
+ ![](./img/zh-cn_image_0000002661613047.gif)

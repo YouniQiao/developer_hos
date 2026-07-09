@@ -2,7 +2,8 @@
 title: "divider"
 upstream_id: "harmonyos-references/js-components-basic-divider"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:05.392153"
+content_hash: "44a1fa74cbdb"
+synced_at: "2026-07-09T00:58:21.568637"
 ---
 
 # divider
@@ -90,4 +91,4 @@ synced_at: "2026-06-24T20:49:05.392153"
   line-cap: round;
 }
 ```
- ![](./img/zh-cn_image_0000002626230888.jpg)
+ ![](./img/zh-cn_image_0000002631413782.jpg)

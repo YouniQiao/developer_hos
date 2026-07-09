@@ -2,7 +2,8 @@
 title: "@ohos.multimedia.systemSoundManager (系统声音管理)"
 upstream_id: "harmonyos-references/js-apis-systemsoundmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:53.966727"
+content_hash: "f553fa617be7"
+synced_at: "2026-07-09T01:00:08.992105"
 ---
 
 # @ohos.multimedia.systemSoundManager (系统声音管理)

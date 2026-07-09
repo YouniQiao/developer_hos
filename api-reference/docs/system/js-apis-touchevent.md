@@ -2,7 +2,8 @@
 title: "@ohos.multimodalInput.touchEvent (触屏输入事件)"
 upstream_id: "harmonyos-references/js-apis-touchevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:18.132474"
+content_hash: "824653d9bc7b"
+synced_at: "2026-07-09T00:59:49.047683"
 ---
 
 # @ohos.multimodalInput.touchEvent (触屏输入事件)

@@ -2,7 +2,8 @@
 title: "deviceInfo错误码"
 upstream_id: "harmonyos-references/errorcode-device-info"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:14.007170"
+content_hash: "c32ce149b4be"
+synced_at: "2026-07-09T00:59:45.140112"
 ---
 
 # deviceInfo错误码

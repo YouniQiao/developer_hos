@@ -2,7 +2,8 @@
 title: "ArkTS API 错误码"
 upstream_id: "harmonyos-references/errorcode-enterprise-threat-protection"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:38.064639"
+content_hash: "0450df2302e5"
+synced_at: "2026-07-09T00:59:16.903637"
 ---
 
 # ArkTS API 错误码

@@ -2,7 +2,8 @@
 title: "@ohos.file.securityLabel (数据标签)"
 upstream_id: "harmonyos-references/js-apis-file-securitylabel"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:13.374651"
+content_hash: "cbe01386d0d4"
+synced_at: "2026-07-09T00:58:59.723789"
 ---
 
 # @ohos.file.securityLabel (数据标签)
@@ -44,11 +45,11 @@ type DataLevel = 's0' | 's1' | 's2' | 's3' | 's4'
 
 | 类型 | 说明 |
 | --- | --- |
-| 's0' | 数据安全等级"S0" 。 |
-| 's1' | 数据安全等级"S1" 。 |
-| 's2' | 数据安全等级"S2" 。 |
-| 's3' | 数据安全等级"S3" 。 |
-| 's4' | 数据安全等级"S4" 。 |
+| 's0' | 数据安全等级"S0"。 |
+| 's1' | 数据安全等级"S1"。 |
+| 's2' | 数据安全等级"S2"。 |
+| 's3' | 数据安全等级"S3"。 |
+| 's4' | 数据安全等级"S4"。 |
 
 数据安全等级详细说明请见[数据安全标签](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/access-control-by-device-and-data-level#数据安全标签)。
 
@@ -56,7 +57,7 @@ type DataLevel = 's0' | 's1' | 's2' | 's3' | 's4'
 
 setSecurityLabel(path:string, type:DataLevel):Promise<void>
 
-设置文件或目录的数据安全等级。数据安全等级仅可由低向高或平级设置。使用Promise异步回调。
+设置文件或目录的数据安全等级。使用Promise异步回调。
 
 系统能力：SystemCapability.FileManagement.File.FileIO
 
@@ -64,8 +65,8 @@ setSecurityLabel(path:string, type:DataLevel):Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| path | string | 是 | 文件路径。 |
-| type | [DataLevel](#datalevel) | 是 | 数据安全等级，只支持"s0","s1","s2","s3","s4"。 |
+| path | string | 是 | 文件或目录的应用沙箱路径。 |
+| type | [DataLevel](#datalevel) | 是 | 数据安全等级，只支持"s0","s1","s2","s3","s4"。 **注意**：数据安全等级仅可由低向高或同级设置。 |
 
 返回值：
 
@@ -104,7 +105,7 @@ securityLabel.setSecurityLabel(filePath, "s0").then(() => {
 
 setSecurityLabel(path:string, type:DataLevel, callback: AsyncCallback<void>):void
 
-设置文件或目录的数据安全等级。数据安全等级仅可由低向高或平级设置。使用callback异步回调。
+设置文件或目录的数据安全等级。使用callback异步回调。
 
 系统能力：SystemCapability.FileManagement.File.FileIO
 
@@ -112,8 +113,8 @@ setSecurityLabel(path:string, type:DataLevel, callback: AsyncCallback<void>):voi
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| path | string | 是 | 文件路径。 |
-| type | [DataLevel](#datalevel) | 是 | 数据安全等级，只支持"s0","s1","s2","s3","s4"。 |
+| path | string | 是 | 文件或目录的应用沙箱路径。 |
+| type | [DataLevel](#datalevel) | 是 | 数据安全等级，只支持"s0","s1","s2","s3","s4"。 **注意**：数据安全等级仅可由低向高或同级设置。 |
 | callback | AsyncCallback | 是 | 回调函数。当设置数据安全等级成功，err为undefined，否则为错误对象。 |
 
 错误码：
@@ -149,7 +150,7 @@ securityLabel.setSecurityLabel(filePath, "s0", (err: BusinessError) => {
 
 setSecurityLabelSync(path:string, type:DataLevel):void
 
-以同步方法设置文件或目录的数据安全等级。数据安全等级仅可由低向高或平级设置。
+以同步方法设置文件或目录的数据安全等级。
 
 系统能力：SystemCapability.FileManagement.File.FileIO
 
@@ -157,8 +158,8 @@ setSecurityLabelSync(path:string, type:DataLevel):void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| path | string | 是 | 文件路径。 |
-| type | [DataLevel](#datalevel) | 是 | 数据安全等级，只支持"s0","s1","s2","s3","s4"。 |
+| path | string | 是 | 文件或目录的应用沙箱路径。 |
+| type | [DataLevel](#datalevel) | 是 | 数据安全等级，只支持"s0","s1","s2","s3","s4"。 **注意**：数据安全等级仅可由低向高或同级设置。 |
 
 错误码：
 
@@ -194,7 +195,7 @@ getSecurityLabel(path:string):Promise<string>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| path | string | 是 | 文件路径。 |
+| path | string | 是 | 文件或目录的应用沙箱路径。 |
 
 返回值：
 
@@ -241,7 +242,7 @@ getSecurityLabel(path:string, callback:AsyncCallback<string>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| path | string | 是 | 文件路径。 |
+| path | string | 是 | 文件或目录的应用沙箱路径。 |
 | callback | AsyncCallback | 是 | 回调函数，返回安全等级。 |
 
 错误码：
@@ -285,7 +286,7 @@ getSecurityLabelSync(path:string):string
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| path | string | 是 | 文件路径。 |
+| path | string | 是 | 文件或目录的应用沙箱路径。 |
 
 返回值：
 

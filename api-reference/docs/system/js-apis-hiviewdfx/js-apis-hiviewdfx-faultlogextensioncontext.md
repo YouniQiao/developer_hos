@@ -2,7 +2,8 @@
 title: "@ohos.hiviewdfx.FaultLogExtensionContext (故障延迟通知上下文)"
 upstream_id: "harmonyos-references/js-apis-hiviewdfx-faultlogextensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:45.510677"
+content_hash: "6a90b70fae45"
+synced_at: "2026-07-09T01:00:02.577215"
 ---
 
 # @ohos.hiviewdfx.FaultLogExtensionContext (故障延迟通知上下文)

@@ -2,7 +2,8 @@
 title: "Vulkan External Memory开发指导"
 upstream_id: "harmonyos-references/vulkan-oh-external-memory-guidelines"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:05.460937"
+content_hash: "34cbfcfb3a31"
+synced_at: "2026-07-09T01:01:49.422461"
 ---
 
 # Vulkan External Memory开发指导

@@ -2,12 +2,13 @@
 title: "Class (NativeMediaPlayerSurfaceInfo)"
 upstream_id: "harmonyos-references/arkts-apis-webview-nativemediaplayersurfaceinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:02.744475"
+content_hash: "ed07de62ed05"
+synced_at: "2026-07-09T00:58:50.404786"
 ---
 
 # Class (NativeMediaPlayerSurfaceInfo)
 
-使用[enableNativeMediaPlayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-attributes#enablenativemediaplayer12)来进行同层渲染的surface信息配置，以开启应用接管网页媒体播放功能。
+NativeMediaPlayerSurfaceInfo 使用[enableNativeMediaPlayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-attributes#enablenativemediaplayer12)来进行同层渲染的 surface 信息配置。该类允许应用接管网页媒体播放功能，通过配置 surface 的 id 和位置信息，实现网页媒体内容与应用界面的同层渲染融合，提升媒体播放体验。
 
 ![](./img/note_3.0-zh-cn.png)
 

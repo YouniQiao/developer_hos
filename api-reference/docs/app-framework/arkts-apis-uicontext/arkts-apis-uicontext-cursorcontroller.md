@@ -2,7 +2,8 @@
 title: "Class (CursorController)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-cursorcontroller"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:20.698846"
+content_hash: "8b254a7f2ece"
+synced_at: "2026-07-09T00:57:28.549576"
 ---
 
 # Class (CursorController)
@@ -55,7 +56,7 @@ struct CursorControlExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349489.gif)
+ ![](./img/zh-cn_image_0000002631412950.gif)
 
 #### setCursor12+
 
@@ -103,7 +104,7 @@ struct CursorControlExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230076.gif)
+ ![](./img/zh-cn_image_0000002661732181.gif)
 
 #### setCustomCursor
 
@@ -225,4 +226,4 @@ struct CustomCursorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070166.gif)
+ ![](./img/zh-cn_image_0000002631253060.gif)

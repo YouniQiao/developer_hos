@@ -2,7 +2,8 @@
 title: "@ohos.rpc (RPC通信)"
 upstream_id: "harmonyos-references/js-apis-rpc"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:21.217878"
+content_hash: "dc202bc8981a"
+synced_at: "2026-07-09T00:59:07.479571"
 ---
 
 # @ohos.rpc (RPC通信)

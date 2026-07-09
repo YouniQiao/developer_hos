@@ -2,7 +2,8 @@
 title: "@ohos.multimedia.videoProcessingEngine (视频处理引擎)"
 upstream_id: "harmonyos-references/js-apis-videoprocessingengine"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:24.908998"
+content_hash: "7955248afbc2"
+synced_at: "2026-07-09T01:00:31.228455"
 ---
 
 # @ohos.multimedia.videoProcessingEngine (视频处理引擎)

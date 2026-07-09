@@ -2,7 +2,8 @@
 title: "RawDir"
 upstream_id: "harmonyos-references/capi-rawfile-rawdir"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:23.968463"
+content_hash: "bd84165f9c7a"
+synced_at: "2026-07-09T00:59:08.077904"
 ---
 
 # RawDir

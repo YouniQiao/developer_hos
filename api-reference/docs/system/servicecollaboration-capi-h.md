@@ -2,7 +2,8 @@
 title: "service_collaboration_api.h"
 upstream_id: "harmonyos-references/servicecollaboration-capi-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:03.663620"
+content_hash: "eeb3e9bad69e"
+synced_at: "2026-07-09T00:59:37.164475"
 ---
 
 # service_collaboration_api.h

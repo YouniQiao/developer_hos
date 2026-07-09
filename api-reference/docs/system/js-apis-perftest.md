@@ -2,7 +2,8 @@
 title: "@ohos.test.PerfTest"
 upstream_id: "harmonyos-references/js-apis-perftest"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:50.937360"
+content_hash: "89e3c9c73e0a"
+synced_at: "2026-07-09T01:00:06.556038"
 ---
 
 # @ohos.test.PerfTest

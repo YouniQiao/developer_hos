@@ -2,7 +2,8 @@
 title: "JSVM_Value__*"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-value--8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:03.854926"
+content_hash: "70e999d85bfc"
+synced_at: "2026-07-09T01:01:47.756341"
 ---
 
 # JSVM_Value__*

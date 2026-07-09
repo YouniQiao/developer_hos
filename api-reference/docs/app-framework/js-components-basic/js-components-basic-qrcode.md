@@ -2,7 +2,8 @@
 title: "qrcode"
 upstream_id: "harmonyos-references/js-components-basic-qrcode"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:07.215196"
+content_hash: "fbc57751f3ae"
+synced_at: "2026-07-09T00:58:22.312149"
 ---
 
 # qrcode
@@ -116,4 +117,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470263.gif)
+ ![](./img/zh-cn_image_0000002631253900.gif)

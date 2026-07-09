@@ -2,7 +2,8 @@
 title: "用户状态感知错误码"
 upstream_id: "harmonyos-references/errorcode-userstatus"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:37.932440"
+content_hash: "f7df93cf5910"
+synced_at: "2026-07-09T00:59:58.222650"
 ---
 
 # 用户状态感知错误码

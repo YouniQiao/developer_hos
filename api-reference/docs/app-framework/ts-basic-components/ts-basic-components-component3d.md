@@ -2,7 +2,8 @@
 title: "Component3D"
 upstream_id: "harmonyos-references/ts-basic-components-component3d"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:38.708911"
+content_hash: "b2322cbf40ed"
+synced_at: "2026-07-09T00:58:06.681028"
 ---
 
 # Component3D

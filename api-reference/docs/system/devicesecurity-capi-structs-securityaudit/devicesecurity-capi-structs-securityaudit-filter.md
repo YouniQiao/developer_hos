@@ -2,7 +2,8 @@
 title: "SecurityAudit_Filter"
 upstream_id: "harmonyos-references/devicesecurity-capi-structs-securityaudit-filter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:36.914218"
+content_hash: "70d9a15a4cab"
+synced_at: "2026-07-09T00:59:16.270728"
 ---
 
 # SecurityAudit_Filter

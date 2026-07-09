@@ -2,7 +2,8 @@
 title: "通用属性"
 upstream_id: "harmonyos-references/js-components-common-attributes"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:00.351672"
+content_hash: "64e100f3541a"
+synced_at: "2026-07-09T00:58:19.502167"
 ---
 
 # 通用属性
@@ -104,7 +105,7 @@ export default {
     },
 }
 ```
- ![](./img/zh-cn_image_0000002626230868.gif)
+ ![](./img/zh-cn_image_0000002631413762.gif)
 
 #### [h2]示例2
 
@@ -141,4 +142,4 @@ export default {
     background-color: blue;
 }
 ```
- ![](./img/zh-cn_image_0000002626070958.png)
+ ![](./img/zh-cn_image_0000002661732991.png)

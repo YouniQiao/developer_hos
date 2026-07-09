@@ -2,7 +2,8 @@
 title: "@ohos.advertising.AutoAdComponent (轮播广告展示组件)"
 upstream_id: "harmonyos-references/js-apis-autoadcomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:21.745838"
+content_hash: "9965277b4b70"
+synced_at: "2026-07-09T01:01:14.491310"
 ---
 
 # @ohos.advertising.AutoAdComponent (轮播广告展示组件)
@@ -111,7 +112,7 @@ struct Index {
 ```
  效果图：
 
-![](./img/zh-cn_image_0000002656468753.png)
+![](./img/zh-cn_image_0000002661731479.png)
 
 #### [h2]build
 

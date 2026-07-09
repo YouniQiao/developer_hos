@@ -2,12 +2,13 @@
 title: "Class (JsResult)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-jsresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:06.622926"
+content_hash: "ea0ce541b7a8"
+synced_at: "2026-07-09T00:58:53.827434"
 ---
 
 # Class (JsResult)
 
-Web组件返回的弹窗确认或取消功能对象。示例代码参考[onAlert事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onalert)。
+JsResult是Web组件在处理JavaScript弹窗事件时返回的结果处理对象，适用于开发者拦截并自定义处理window.alert、window.confirm、window.prompt等弹窗场景。开发者可在[onAlert](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onalert)、[onConfirm](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onconfirm)或[onPrompt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onprompt9)等事件回调中，通过该对象向Web组件反馈用户的确认、取消或输入内容等操作结果，从而控制弹窗的后续行为。
 
 ![](./img/note_3.0-zh-cn.png)
 

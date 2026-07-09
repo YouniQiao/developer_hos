@@ -2,7 +2,8 @@
 title: "ipc_cremote_object.h"
 upstream_id: "harmonyos-references/capi-ipc-cremote-object-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:21.577904"
+content_hash: "78d77542cadb"
+synced_at: "2026-07-09T00:59:06.762640"
 ---
 
 # ipc_cremote_object.h

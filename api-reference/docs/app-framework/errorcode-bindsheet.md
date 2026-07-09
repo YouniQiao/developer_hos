@@ -2,7 +2,8 @@
 title: "半模态错误码"
 upstream_id: "harmonyos-references/errorcode-bindsheet"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:00.463058"
+content_hash: "b9966d98c1fc"
+synced_at: "2026-07-09T00:58:48.737963"
 ---
 
 # 半模态错误码

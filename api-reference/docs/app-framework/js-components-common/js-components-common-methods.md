@@ -2,7 +2,8 @@
 title: "通用方法"
 upstream_id: "harmonyos-references/js-components-common-methods"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:00.922463"
+content_hash: "b0a45586d641"
+synced_at: "2026-07-09T00:58:19.621170"
 ---
 
 # 通用方法
@@ -185,7 +186,7 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002656350283.gif)
+ ![](./img/zh-cn_image_0000002661613053.gif)
 
 #### getBoundingClientRect
 

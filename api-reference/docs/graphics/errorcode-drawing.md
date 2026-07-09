@@ -2,7 +2,8 @@
 title: "图形绘制与显示错误码"
 upstream_id: "harmonyos-references/errorcode-drawing"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:11.453152"
+content_hash: "df1150e60385"
+synced_at: "2026-07-09T01:01:05.307949"
 ---
 
 # 图形绘制与显示错误码

@@ -2,7 +2,8 @@
 title: "通行密钥"
 upstream_id: "harmonyos-references/onlineauthentication-passkey-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:38.628554"
+content_hash: "9e3e701f5473"
+synced_at: "2026-07-09T00:59:18.189365"
 ---
 
 # 通行密钥
@@ -39,8 +40,8 @@ import { BusinessError } from '@kit.BasicServicesKit';
 | attestationObject | Uint8Array | 是 | 否 | 声明对象。 |
 | clientDataJson | Uint8Array | 是 | 否 | 获取客户端数据，表示WebAuthn依赖方和客户端的上下文绑定，包含类型、挑战值及源等数据。 |
 | publicKeyAlgorithm | [Algorithm](#algorithm) | 否 | 否 | 密码算法。 |
-| publicKey | Uint8Array | 否 | 是 | publicKey凭证请求的选项。默认值为空。 |
-| authenticatorData | Uint8Array | 否 | 否 | 认证器数据。 |
+| publicKey | Uint8Array | 否 | 是 | 注册时生成的公钥数据，包含公钥算法类型和密钥参数，用于服务器保存并后续验证认证签名。默认值为空。 |
+| authenticatorData | Uint8Array | 否 | 否 | 认证器数据，包含依赖方ID哈希、用户存在/已验证标志位、签名计数器、凭证数据等信息，用于验证认证响应的合法性。 |
 | transports | string[] | 否 | 否 | 定义身份认证器访问类型，取值范围为[AuthenticatorTransport](#authenticatortransport)枚举。 |
 
 #### AuthenticatorAttestationResponseJson
@@ -58,9 +59,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | clientDataJson | string | 否 | 否 | 获取客户端数据，表示WebAuthn依赖方和客户端的上下文绑定，包含类型、挑战值及源等数据。长度限制0到4096。 |
-| authenticatorData | string | 否 | 否 | 认证器数据。长度限制0到4096。 |
+| authenticatorData | string | 否 | 否 | 认证器数据，包含依赖方ID哈希、用户存在/已验证标志位、签名计数器、凭证数据等信息，用于验证认证响应的合法性。长度限制0到4096。 |
 | transports | Array | 否 | 否 | 定义身份认证器访问类型，取值范围为[AuthenticatorTransport](#authenticatortransport)枚举。 |
-| publicKey | string | 否 | 是 | publicKey凭证请求的选项。默认值为空。长度限制0到4096。 |
+| publicKey | string | 否 | 是 | 注册时生成的公钥数据，包含公钥算法类型和密钥参数，用于服务器保存并后续验证认证签名。默认值为空。长度限制0到4096。 |
 | publicKeyAlgorithm | [Algorithm](#algorithm) | 否 | 否 | 密码算法。 |
 | attestationObject | string | 否 | 否 | 声明对象。长度限制0到10000。 |
 
@@ -91,8 +92,8 @@ import { BusinessError } from '@kit.BasicServicesKit';
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | clientDataJson | string | 否 | 否 | 客户端数据。长度限制0到4096。 |
-| authenticatorData | string | 否 | 否 | 认证器数据。长度限制0到4096。 |
-| signature | string | 否 | 否 | 签名。长度限制0到4096。 |
+| authenticatorData | string | 否 | 否 | 认证器数据，包含依赖方ID哈希、用户存在/已验证标志位、签名计数器、凭证数据等信息，用于验证认证响应的合法性。长度限制0到4096。 |
+| signature | string | 否 | 否 | FIDO2认证的签名信息。长度限制0到4096。 |
 | userHandle | string | 否 | 是 | 用户句柄。默认值为空。长度限制0到4096。 |
 
 #### AuthenticatorAssertionResponse
@@ -109,8 +110,8 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| authenticatorData | Uint8Array | 是 | 否 | 认证器数据。 |
-| signature | Uint8Array | 是 | 否 | 签名。 |
+| authenticatorData | Uint8Array | 是 | 否 | 认证器数据，包含依赖方ID哈希、用户存在/已验证标志位、签名计数器、凭证数据等信息，用于验证认证响应的合法性。 |
+| signature | Uint8Array | 是 | 否 | FIDO2认证的签名信息。 |
 | userHandle | Uint8Array | 是 | 是 | 用户句柄。默认值为空。 |
 | clientDataJson | Uint8Array | 是 | 否 | 客户端数据。 |
 
@@ -609,8 +610,6 @@ Token binding协议，用于客户端与依赖方通信。
 
 当前设备支持的认证能力的枚举值。
 
-元服务API： 从版本6.0.0(20)开始，该接口支持在元服务中使用。
-
 模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Security.FIDO2
@@ -619,16 +618,17 @@ Token binding协议，用于客户端与依赖方通信。
 
 | 名称 | **值** | 说明 |
 | --- | --- | --- |
-| CONDITIONAL_CREATE | 'conditionalCreate' | 通行密钥注册。 |
-| CONDITIONAL_GET | 'conditionalGet' | 通行密钥认证。 |
-| HYBRID_TRANSPORT | 'hybridTransport' | 混合传输，表示支持多种传输方式。 |
-| PASSKEY_PLATFORM_AUTHENTICATOR | 'passkeyPlatformAuthenticator' | Passkey平台认证器。 |
-| USER_VERIFYING_PLATFORM_AUTHENTICATOR | 'userVerifyingPlatformAuthenticator' | 用户认证平台认证器。 |
-| RELATED_ORIGINS | 'relatedOrigins' | 支持相关源/域的凭据操作。 |
-| SIGNAL_ALL_ACCEPTED_CREDENTIALS | 'signalAllAcceptedCredentials' | 发送所有接受的凭据。 |
-| SIGNAL_CURRENT_USER_DETAILS | 'signalCurrentUserDetails' | 发送当前用户详细信息。 |
-| SIGNAL_UNKNOWN_CREDENTIAL | 'signalUnknownCredential' | 发送未知凭据。 |
-| EXTENSION_LARGEBLOB | 'extension:largeblob' | largeBlob的扩展参数。 **起始版本**：26.0.0 |
+| CONDITIONAL_CREATE | 'conditionalCreate' | 通行密钥注册。 **元服务API**：从版本6.0.0(20)开始，该接口支持在元服务中使用。 |
+| CONDITIONAL_GET | 'conditionalGet' | 通行密钥认证。 **元服务API**：从版本6.0.0(20)开始，该接口支持在元服务中使用。 |
+| HYBRID_TRANSPORT | 'hybridTransport' | 混合传输，表示支持多种传输方式。 **元服务API**：从版本6.0.0(20)开始，该接口支持在元服务中使用。 |
+| PASSKEY_PLATFORM_AUTHENTICATOR | 'passkeyPlatformAuthenticator' | Passkey平台认证器。 **元服务API**：从版本6.0.0(20)开始，该接口支持在元服务中使用。 |
+| USER_VERIFYING_PLATFORM_AUTHENTICATOR | 'userVerifyingPlatformAuthenticator' | 用户认证平台认证器。 **元服务API**：从版本6.0.0(20)开始，该接口支持在元服务中使用。 |
+| RELATED_ORIGINS | 'relatedOrigins' | 支持相关源/域的凭据操作。 **元服务API**：从版本6.0.0(20)开始，该接口支持在元服务中使用。 |
+| SIGNAL_ALL_ACCEPTED_CREDENTIALS | 'signalAllAcceptedCredentials' | 发送所有接受的凭据。 **元服务API**：从版本6.0.0(20)开始，该接口支持在元服务中使用。 |
+| SIGNAL_CURRENT_USER_DETAILS | 'signalCurrentUserDetails' | 发送当前用户详细信息。 **元服务API**：从版本6.0.0(20)开始，该接口支持在元服务中使用。 |
+| SIGNAL_UNKNOWN_CREDENTIAL | 'signalUnknownCredential' | 发送未知凭据。 **元服务API**：从版本6.0.0(20)开始，该接口支持在元服务中使用。 |
+| EXTENSION_LARGEBLOB | 'extension:largeblob' | largeBlob的扩展参数。 **元服务API**：从API版本26.0.0开始，该接口支持在元服务中使用。 |
+| EXTENSION_AUTH_TYPE_LIST | 'extension:authTypeList' | authTypeList的扩展参数。 **元服务API**：从API版本26.0.0开始，该接口支持在元服务中使用。 |
 
 #### AuthenticatorMetadata
 
@@ -680,7 +680,7 @@ getClientCapabilities(context: common.Context): Promise<Map<ClientCapability, bo
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 801 | Device type error. |
+| 801 | Device type error. 适用版本：6.0.1(21)+ |
 | 1021300007 | Unknown error. |
 | 1021300011 | Failed to connect to the service. |
 
@@ -734,7 +734,7 @@ getPlatformAuthenticators(context: common.Context): Promise<Array<AuthenticatorM
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 801 | Device type error. |
+| 801 | Device type error. 适用版本：6.0.1(21)+ |
 | 1021300007 | Unknown error. |
 | 1021300011 | Failed to connect to the service. |
 
@@ -791,7 +791,7 @@ register(context: common.Context, options: CredentialCreationOptions, tokenBindi
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 801 | Device type error. |
+| 801 | Device type error. 适用版本：6.0.1(21)+ |
 | 1021300001 | The system does not support. |
 | 1021300002 | Invalid state. |
 | 1021300003 | System integrity check failed. |
@@ -861,7 +861,7 @@ authenticate(context: common.Context, options: CredentialRequestOptions, tokenBi
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 801 | Device type error. |
+| 801 | Device type error. 适用版本：6.0.1(21)+ |
 | 1021300002 | Invalid state. |
 | 1021300003 | System integrity check failed. |
 | 1021300004 | User abort. |
@@ -871,6 +871,7 @@ authenticate(context: common.Context, options: CredentialRequestOptions, tokenBi
 | 1021300009 | Data error. |
 | 1021300010 | User Rejects. |
 | 1021300011 | Failed to connect to the service. |
+| 1021300013 | Switched to the custom authentication process. 适用版本：26.0.0+ |
 | 1021310001 | Invalid CTAP command. |
 | 1021310002 | The command contains invalid parameters. |
 | 1021310003 | Invalid message or attribute length. |

@@ -2,7 +2,8 @@
 title: "Class (Lattice)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-lattice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:53.072521"
+content_hash: "25a4fb5eb0e3"
+synced_at: "2026-07-09T01:00:51.711658"
 ---
 
 # Class (Lattice)
@@ -70,7 +71,7 @@ class DrawingRenderNode extends RenderNode {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626231564.png)
+ ![](./img/zh-cn_image_0000002631414466.png)
 
 #### createImageLattice18+
 

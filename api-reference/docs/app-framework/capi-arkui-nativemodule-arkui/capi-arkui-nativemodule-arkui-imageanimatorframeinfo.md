@@ -2,7 +2,8 @@
 title: "ArkUI_ImageAnimatorFrameInfo"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-imageanimatorframeinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:53.143904"
+content_hash: "88bb904c1436"
+synced_at: "2026-07-09T00:58:43.663629"
 ---
 
 # ArkUI_ImageAnimatorFrameInfo

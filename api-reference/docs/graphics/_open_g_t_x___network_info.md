@@ -2,7 +2,8 @@
 title: "OpenGTX_NetworkInfo"
 upstream_id: "harmonyos-references/_open_g_t_x___network_info"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:14.128535"
+content_hash: "31c7e39c420d"
+synced_at: "2026-07-09T01:01:08.206791"
 ---
 
 # OpenGTX_NetworkInfo

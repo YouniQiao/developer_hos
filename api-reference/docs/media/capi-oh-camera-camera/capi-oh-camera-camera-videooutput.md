@@ -2,7 +2,8 @@
 title: "Camera_VideoOutput"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-videooutput"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:18.863292"
+content_hash: "7e80fc1afb06"
+synced_at: "2026-07-09T01:00:27.261292"
 ---
 
 # Camera_VideoOutput

@@ -2,7 +2,8 @@
 title: "drawing_shadow_layer.h"
 upstream_id: "harmonyos-references/capi-drawing-shadow-layer-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:02.765860"
+content_hash: "f6220b207003"
+synced_at: "2026-07-09T01:00:57.790534"
 ---
 
 # drawing_shadow_layer.h

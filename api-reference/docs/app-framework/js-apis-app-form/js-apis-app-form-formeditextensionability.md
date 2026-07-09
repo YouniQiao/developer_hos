@@ -2,7 +2,8 @@
 title: "@ohos.app.form.FormEditExtensionAbility (FormEditExtensionAbility)"
 upstream_id: "harmonyos-references/js-apis-app-form-formeditextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:17.748673"
+content_hash: "0b6b0f61738e"
+synced_at: "2026-07-09T00:59:02.934630"
 ---
 
 # @ohos.app.form.FormEditExtensionAbility (FormEditExtensionAbility)
@@ -31,4 +32,4 @@ import { FormEditExtensionAbility } from '@kit.FormKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| context | [FormEditExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-formeditextensioncontext) | 否 | 否 | FormEditExtensionAbility的上下文环境，默认值是继承自[UIExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiextensioncontext#uiextensioncontext-1)的对象。 |
+| context | [FormEditExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-formeditextensioncontext) | 否 | 否 | FormEditExtensionAbility的上下文环境，继承自[UIExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiextensioncontext#uiextensioncontext-1)。 |

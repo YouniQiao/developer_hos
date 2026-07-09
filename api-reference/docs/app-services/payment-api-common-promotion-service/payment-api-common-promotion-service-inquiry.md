@@ -2,7 +2,8 @@
 title: "查询用户可用平台券"
 upstream_id: "harmonyos-references/payment-api-common-promotion-service-inquiry"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:47.442357"
+content_hash: "2ddea5a2abc2"
+synced_at: "2026-07-09T01:01:35.575844"
 ---
 
 # 查询用户可用平台券
@@ -15,7 +16,7 @@ synced_at: "2026-06-24T20:53:47.442357"
 
 #### 接口原型
 
-- **载协议：** HTTPS POST
+- **承载协议：** HTTPS POST
 - **接口方向：** 开发者服务器 -> 华为支付服务器
 - **接口URL：** https://petalpay-developer.cloud.huawei.com.cn/api/merchantgrow/v1/ecocoupon/coupon/query/usable
 - **数据格式：** 请求消息：Content-Type: application/json 响应消息：Content-Type: application/json

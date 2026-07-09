@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.wantConstant (Want常量)"
 upstream_id: "harmonyos-references/js-apis-app-ability-wantconstant"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:51.095240"
+content_hash: "d8e90eb557ea"
+synced_at: "2026-07-09T00:57:07.883785"
 ---
 
 # @ohos.app.ability.wantConstant (Want常量)

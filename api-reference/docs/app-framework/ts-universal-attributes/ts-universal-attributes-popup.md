@@ -2,7 +2,8 @@
 title: "Popup控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-popup"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:44.736764"
+content_hash: "f375e2429a49"
+synced_at: "2026-07-09T00:57:42.217975"
 ---
 
 # Popup控制
@@ -144,7 +145,7 @@ bindPopup(show: boolean, popup: PopupOptions | CustomPopupOptions): T
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| builder | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | 否 | 提示气泡内容的构造器。 **说明：** 1. Popup为通用属性，自定义Popup中不支持再次弹出Popup。对builder下的第一层容器组件不支持使用position属性，如果使用将导致气泡不显示。 2. builder中若使用自定义组件，自定义组件的aboutToAppear和aboutToDisappear生命周期与Popup气泡的显隐无关，不能使用其生命周期判断Popup气泡的显隐。 3. 该构造器的builder仅支持定义在UI组件中，例如可以定义在Builder函数、方法或者[build](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#build)方法里。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| builder | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | 否 | 提示气泡内容的构造器。 **说明：** 1. Popup为通用属性，自定义Popup中不支持再次弹出Popup。对builder下的第一层容器组件不支持使用[Position](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#position)属性，如果使用将导致气泡不显示。 2. builder中若使用自定义组件，自定义组件的[aboutToAppear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttoappear)和[aboutToDisappear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttodisappear)生命周期与Popup气泡的显隐无关，不能使用其生命周期判断Popup气泡的显隐。 3. 该构造器的builder仅支持定义在UI组件中，例如可以定义在Builder函数、方法或者[build](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#build)方法里。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | placement | [Placement](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#placement8) | 否 | 是 | 气泡组件优先显示的位置，当前位置显示不下时，会自动调整位置。 默认值：Placement.Bottom **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | popupColor | [Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#color) | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | number | 否 | 是 | 气泡的颜色。如需去除模糊背景填充效果，需将backgroundBlurStyle设置为BlurStyle.NONE。 API version 10，默认值：'#4d4d4d' API version 11及以后，默认值：透明色[TRANSPARENT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#color)加模糊背景填充效果[COMPONENT_ULTRA_THICK](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#blurstyle9) **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | autoCancel | boolean | 否 | 是 | 页面有操作时，气泡是否自动关闭。 true：自动关闭气泡；false：气泡不会自动关闭。 默认值：true **说明：** 如果要实现点击气泡内消失需要在builder中先放一个布局组件，然后再将Popup高级组件放在布局组件里面，再在布局组件的onClick事件中修改控制显隐的状态变量show为false。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
@@ -337,7 +338,7 @@ struct PopupExample {
 
   build() {
     Flex({ direction: FlexDirection.Column }) {
-      // PopupOptions 类型设置弹框内容
+      // PopupOptions类型设置弹框内容
       Button('PopupOptions')
         .onClick(() => {
           this.handlePopup = !this.handlePopup;
@@ -371,7 +372,7 @@ struct PopupExample {
         })
         .position({ x: 100, y: 150 })
 
-      // CustomPopupOptions 类型设置弹框内容
+      // CustomPopupOptions类型设置弹框内容
       Button('CustomPopupOptions')
         .onClick(() => {
           this.customPopup = !this.customPopup;
@@ -395,7 +396,7 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230222.gif)
+ ![](./img/zh-cn_image_0000002661612397.gif)
 
 #### [h2]示例2（设置气泡的文本样式）
 
@@ -441,7 +442,7 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070312.gif)
+ ![](./img/zh-cn_image_0000002631413106.gif)
 
 #### [h2]示例3（设置气泡的样式）
 
@@ -488,7 +489,7 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469589.gif)
+ ![](./img/zh-cn_image_0000002661732335.gif)
 
 #### [h2]示例4（设置气泡的动效）
 
@@ -512,7 +513,7 @@ struct PopupExample {
 
   build() {
     Flex({ direction: FlexDirection.Column }) {
-      // PopupOptions 类型设置弹框内容
+      // PopupOptions类型设置弹框内容
       Button('PopupOptions')
         .onClick(() => {
           this.handlePopup = !this.handlePopup;
@@ -535,7 +536,7 @@ struct PopupExample {
         })
         .position({ x: 100, y: 150 })
 
-      // CustomPopupOptions 类型设置弹框内容
+      // CustomPopupOptions类型设置弹框内容
       Button('CustomPopupOptions')
         .onClick(() => {
           this.customPopup = !this.customPopup;
@@ -557,7 +558,7 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349637.gif)
+ ![](./img/zh-cn_image_0000002631253214.gif)
 
 #### [h2]示例5（为气泡添加事件）
 
@@ -594,6 +595,10 @@ struct PopupExample {
               this.handlePopup = false;
             }
           },
+          /**
+           * 气泡即将关闭前拦截回调
+           * dismissPopupAction：气泡关闭行为对象，包含关闭原因与关闭方法
+           */
           onWillDismiss: (
             (dismissPopupAction: DismissPopupAction) => {
               console.info("dismissReason:" + JSON.stringify(dismissPopupAction.reason));
@@ -607,7 +612,7 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230224.gif)
+ ![](./img/zh-cn_image_0000002661612399.gif)
 
 #### [h2]示例6（为气泡拦截退出事件）
 
@@ -640,6 +645,7 @@ struct PopupExample {
           placement: Placement.Bottom,
           enableArrow: false,
           targetSpace: '15vp',
+          // 气泡跟随按钮的平移、缩放等变换同步变动
           followTransformOfTarget: true,
           onStateChange: (e) => {
             let timer = setTimeout(() => {
@@ -650,13 +656,14 @@ struct PopupExample {
               clearTimeout(timer);
             }
           },
+          // 不响应点击、侧滑（左滑/右滑）、三键back、路由跳转或键盘ESC退出事件，仅当设置“气泡显示状态”参数值为false时才退出
           onWillDismiss: false
         })
     }.margin(20)
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070314.gif)
+ ![](./img/zh-cn_image_0000002631413108.gif)
 
 #### [h2]示例7（为气泡内外描边设置线性渐变）
 
@@ -677,6 +684,16 @@ struct PopupExample {
         .onClick(() => {
           this.handlePopup = !this.handlePopup
         })
+        /**
+         * 为按钮绑定气泡
+         * 第一个参数：气泡显隐控制变量
+         * message：气泡内部展示文本
+         * placement.Top：气泡从按钮上方弹出
+         * outlineWidth：外描边线宽度1vp
+         * outlineLinearGradient：外描边垂直从上到下黄到绿线性渐变
+         * borderWidth：弹窗内部边框宽度1vp
+         * borderLinearGradient：内边框垂直从下到上红到蓝线性渐变
+         */
         .bindPopup(this.handlePopup!!, {
           message: 'This is a popup with PopupOptions',
           placement: Placement.Top,
@@ -696,7 +713,7 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469591.gif)
+ ![](./img/zh-cn_image_0000002661732337.gif)
 
 #### [h2]示例8（设置气泡避让绑定的组件模式）
 
@@ -720,6 +737,7 @@ struct PopupExample {
         .bindPopup(this.handlePopup!!, {
           message: 'popup message '.repeat(200),
           placement: Placement.Top,
+          // 设置本参数后，四周空间不足以放下Popup时，Popup会自动压缩自身高度
           avoidTarget: AvoidanceMode.AVOID_AROUND_TARGET,
         })
         .position({ x: 100, y: 150 })
@@ -727,7 +745,7 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349639.gif)
+ ![](./img/zh-cn_image_0000002631253216.gif)
 
 #### [h2]示例9（设置Popup的系统材质视觉效果）
 
@@ -749,6 +767,14 @@ struct PopupExample {
         .onClick(() => {
           this.handlePopup = !this.handlePopup
         })
+        /**
+         * 绑定气泡至按钮
+         * 第一个参数：气泡显示控制布尔值
+         * message：气泡内展示文本
+         * placement.Top：气泡弹出位置在按钮上方
+         * systemMaterial：为气泡配置沉浸式磨砂材质
+         * ImmersiveStyle.THIN：薄款磨砂，中等通透度
+         */
         .bindPopup(this.handlePopup!!, {
           message: 'This is a popup with PopupOptions',
           placement: Placement.Top,
@@ -767,8 +793,8 @@ struct PopupExample {
 ```
  未设置系统材质时：
 
-![](./img/zh-cn_image_0000002626228434.png)
+![](./img/zh-cn_image_0000002631411272.png)
 
 设置系统材质后：
 
-![](./img/zh-cn_image_0000002626068526.png)
+![](./img/zh-cn_image_0000002661730501.png)

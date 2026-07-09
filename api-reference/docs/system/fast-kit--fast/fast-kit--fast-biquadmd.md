@@ -2,7 +2,8 @@
 title: "FAST_BiquadmD"
 upstream_id: "harmonyos-references/fast-kit--fast-biquadmd"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:15.527396"
+content_hash: "fab4494fbce7"
+synced_at: "2026-07-09T00:59:46.346417"
 ---
 
 # FAST_BiquadmD

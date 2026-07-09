@@ -2,7 +2,8 @@
 title: "属性动画 (animation)"
 upstream_id: "harmonyos-references/ts-animatorproperty"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:40.384072"
+content_hash: "b5dee0a5c80b"
+synced_at: "2026-07-09T00:58:07.218449"
 ---
 
 # 属性动画 (animation)
@@ -142,4 +143,4 @@ struct AttrAnimationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470083.gif)
+ ![](./img/zh-cn_image_0000002631413608.gif)

@@ -2,7 +2,8 @@
 title: "自定义事件拦截"
 upstream_id: "harmonyos-references/ts-universal-attributes-on-touch-intercept"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:33.502968"
+content_hash: "164b94334c91"
+synced_at: "2026-07-09T00:57:36.617084"
 ---
 
 # 自定义事件拦截

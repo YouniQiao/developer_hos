@@ -2,7 +2,8 @@
 title: "model.h"
 upstream_id: "harmonyos-references/capi-model-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:58.352328"
+content_hash: "bea55e64b2b6"
+synced_at: "2026-07-09T01:01:44.330402"
 ---
 
 # model.h

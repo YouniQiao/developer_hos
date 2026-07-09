@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-graphics-accelerate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:12.448858"
+content_hash: "2026f17b0c26"
+synced_at: "2026-07-09T01:01:07.266581"
 ---
 
 # ArkTS API错误码

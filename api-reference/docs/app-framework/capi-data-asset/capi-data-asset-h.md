@@ -2,7 +2,8 @@
 title: "data_asset.h"
 upstream_id: "harmonyos-references/capi-data-asset-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:05.907251"
+content_hash: "d0f84bf081da"
+synced_at: "2026-07-09T00:57:18.926288"
 ---
 
 # data_asset.h

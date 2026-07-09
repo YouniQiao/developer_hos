@@ -2,7 +2,8 @@
 title: "Interface (AVScreenCaptureRecorder)"
 upstream_id: "harmonyos-references/arkts-apis-media-avscreencapturerecorder"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:33.826331"
+content_hash: "29fc2b241907"
+synced_at: "2026-07-09T01:00:38.539415"
 ---
 
 # Interface (AVScreenCaptureRecorder)

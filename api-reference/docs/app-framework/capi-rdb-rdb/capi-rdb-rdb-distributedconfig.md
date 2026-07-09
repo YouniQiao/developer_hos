@@ -2,7 +2,8 @@
 title: "Rdb_DistributedConfig"
 upstream_id: "harmonyos-references/capi-rdb-rdb-distributedconfig"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:08.582181"
+content_hash: "9d58024b19f5"
+synced_at: "2026-07-09T00:57:20.171905"
 ---
 
 # Rdb_DistributedConfig

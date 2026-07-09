@@ -2,7 +2,8 @@
 title: "swiper"
 upstream_id: "harmonyos-references/js-lite-components-container-swiper"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:18.235566"
+content_hash: "b3508ab1e71f"
+synced_at: "2026-07-09T00:58:27.518025"
 ---
 
 # swiper
@@ -117,4 +118,4 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002656350519.gif)
+ ![](./img/zh-cn_image_0000002661613291.gif)

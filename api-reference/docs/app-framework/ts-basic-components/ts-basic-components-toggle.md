@@ -2,7 +2,8 @@
 title: "Toggle"
 upstream_id: "harmonyos-references/ts-basic-components-toggle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:05.396539"
+content_hash: "e2a8f8ccd044"
+synced_at: "2026-07-09T00:57:52.343694"
 ---
 
 # Toggle
@@ -12,8 +13,8 @@ synced_at: "2026-06-24T20:48:05.396539"
 ![](./img/note_3.0-zh-cn.png)
 
 - 该组件从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
-- 从API版本26.0.0开始，Toggle组件支持新材质效果。Toggle组件使用通用新材质属性[systemMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemmaterial)时，不同[ToggleType](#toggletype枚举说明)类型的效果不同： ToggleType.Checkbox：当前未适配系统材质效果，设置系统材质不会出现系统材质相关的动效和视觉效果。
-- ToggleType.Switch：传入材质参数时，使用组件内部预设的视觉参数，传入的材质参数仅作为开启新材质的开关标记，不影响实际视觉效果。主要影响Toggle的滑块大小、滑块样式、阴影等视觉属性。设置[switchPointColor](#switchpointcolor)后会出现点光源效果，点光源颜色跟随switchPointColor的设置。传入undefined时，新材质不生效，表现为原先的Toggle样式。
+- 从API版本26.0.0开始，Toggle组件支持系统材质效果。Toggle组件使用通用系统材质属性[systemMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemmaterial)时，不同[ToggleType](#toggletype枚举说明)类型的效果不同： ToggleType.Checkbox：当前未适配系统材质效果，设置系统材质不会出现系统材质相关的动效和视觉效果。
+- ToggleType.Switch：传入材质参数时，使用组件内部预设的视觉参数，传入的材质参数仅作为开启系统材质的开关标记，不影响实际视觉效果。主要影响Toggle的滑块大小、滑块样式、阴影等视觉属性。设置[switchPointColor](#switchpointcolor)后会出现点光源效果，点光源颜色跟随switchPointColor的设置。传入undefined时，系统材质不生效，表现为原先的Toggle样式。
 - ToggleType.Button：设置系统材质的效果与[Button](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button)组件设置系统材质的效果相同，主要影响背景颜色、边框、阴影等视觉属性。
 
 #### 子组件
@@ -111,7 +112,7 @@ switchPointColor(color: ResourceColor)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| color | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | Switch类型的圆形滑块颜色。 默认值：$r('sys.color.ohos_id_color_foreground_contrary') **说明：** 同时设置了[systemMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemmaterial)新材质时，设置此属性后会出现点光源效果，点光源颜色跟随此属性的设置。 |
+| color | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | Switch类型的圆形滑块颜色。 默认值：$r('sys.color.ohos_id_color_foreground_contrary') **说明：** 同时设置了[systemMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemmaterial)系统材质时，设置此属性后会出现点光源效果，点光源颜色跟随此属性的设置。 |
 
 #### [h2]switchStyle12+
 
@@ -273,7 +274,7 @@ struct ToggleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349791.gif)
+ ![](./img/zh-cn_image_0000002661612553.gif)
 
 #### [h2]示例2（自定义开关类型的样式）
 
@@ -314,7 +315,7 @@ struct ToggleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230378.gif)
+ ![](./img/zh-cn_image_0000002631413262.gif)
 
 #### [h2]示例3（自定义Toggle样式）
 
@@ -369,11 +370,11 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070468.gif)
+ ![](./img/zh-cn_image_0000002661732495.gif)
 
-#### [h2]示例4（Toggle新材质效果）
+#### [h2]示例4（Toggle系统材质效果）
 
-该示例展示了Toggle组件Switch类型在开启新材质前后的效果对比，包括不设置系统材质、设置undefined、开启新材质以及开启新材质并配合[switchPointColor](#switchpointcolor)设置点光源的效果。用例使用通用属性[systemMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemmaterial)接口来实现新材质效果。
+该示例展示了Toggle组件Switch类型在开启系统材质前后的效果对比，包括不设置系统材质、设置undefined、开启系统材质以及开启系统材质并配合[switchPointColor](#switchpointcolor)设置点光源的效果。示例使用通用属性[systemMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemmaterial)接口来实现系统材质效果。
 
 从API版本26.0.0开始，新增systemMaterial属性。
 
@@ -386,7 +387,7 @@ import { uiMaterial } from '@kit.ArkUI';
 struct ToggleMaterialTest {
   build() {
     Column({ space: 10 }) {
-      // 不设置新材质接口，无新材质效果
+      // 不设置系统材质接口，无系统材质效果
       Toggle({ type: ToggleType.Switch, isOn: true })
         .size({ width: 80, height: 40 })
 
@@ -395,12 +396,12 @@ struct ToggleMaterialTest {
         .size({ width: 80, height: 40 })
         .systemMaterial(undefined)
 
-      // 开启新材质效果（systemMaterial参数任意仅作为新材质开关，最终使用组件侧固定参数），无点光源效果
+      // 开启系统材质效果（systemMaterial参数任意仅作为系统材质开关，最终使用组件侧固定参数），无点光源效果
       Toggle({ type: ToggleType.Switch, isOn: true })
         .size({ width: 80, height: 40 })
         .systemMaterial(new uiMaterial.Material())
 
-      // 开启新材质效果（systemMaterial参数任意仅作为新材质开关，最终使用组件侧固定参数），有点光源效果
+      // 开启系统材质效果（systemMaterial参数任意仅作为系统材质开关，最终使用组件侧固定参数），有点光源效果
       Toggle({ type: ToggleType.Switch, isOn: true })
         .size({ width: 80, height: 40 })
         .systemMaterial(new uiMaterial.Material())
@@ -410,4 +411,4 @@ struct ToggleMaterialTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469745.gif)
+ ![](./img/zh-cn_image_0000002631253372.gif)

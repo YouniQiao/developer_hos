@@ -2,7 +2,8 @@
 title: "div"
 upstream_id: "harmonyos-references/js-lite-components-container-div"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:17.349567"
+content_hash: "ff0001650025"
+synced_at: "2026-07-09T00:58:26.968306"
 ---
 
 # div
@@ -99,7 +100,7 @@ synced_at: "2026-06-24T20:49:17.349567"
   background-color: #41ba41;
 }
 ```
- ![](./img/zh-cn_image_0000002656350517.png)
+ ![](./img/zh-cn_image_0000002661613289.png)
 2. Flex Wrap样式 
 ```
 <!-- xxx.hml -->
@@ -144,4 +145,4 @@ synced_at: "2026-06-24T20:49:17.349567"
   background-color: #41ba41;
 }
 ```
- ![](./img/zh-cn_image_0000002626231104.png)
+ ![](./img/zh-cn_image_0000002631414000.png)

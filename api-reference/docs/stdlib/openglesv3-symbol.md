@@ -2,7 +2,8 @@
 title: "Native api中导出的OpenGL ES 3.2符号列表"
 upstream_id: "harmonyos-references/openglesv3-symbol"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:07.175275"
+content_hash: "49ffbd6c16ac"
+synced_at: "2026-07-09T01:01:50.855557"
 ---
 
 # Native api中导出的OpenGL ES 3.2符号列表

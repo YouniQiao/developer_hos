@@ -2,7 +2,8 @@
 title: "OH_AVRecorder_Location"
 upstream_id: "harmonyos-references/capi-avrecorder-oh-avrecorder-location"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:39.052011"
+content_hash: "84cace2c6eea"
+synced_at: "2026-07-09T01:00:42.570427"
 ---
 
 # OH_AVRecorder_Location

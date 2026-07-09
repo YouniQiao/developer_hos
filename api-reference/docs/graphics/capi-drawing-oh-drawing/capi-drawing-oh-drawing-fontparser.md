@@ -2,7 +2,8 @@
 title: "OH_Drawing_FontParser"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-fontparser"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:08.550034"
+content_hash: "8877f0333d5c"
+synced_at: "2026-07-09T01:01:02.550467"
 ---
 
 # OH_Drawing_FontParser

@@ -2,7 +2,8 @@
 title: "XEG_TemporalUpscaleDescription"
 upstream_id: "harmonyos-references/xengine-kit-xeg-temporalupscaledescription"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:17.550570"
+content_hash: "81b0e572f634"
+synced_at: "2026-07-09T01:01:11.236135"
 ---
 
 # XEG_TemporalUpscaleDescription

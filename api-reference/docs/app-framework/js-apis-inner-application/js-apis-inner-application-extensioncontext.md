@@ -2,7 +2,8 @@
 title: "ExtensionContext"
 upstream_id: "harmonyos-references/js-apis-inner-application-extensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:53.642332"
+content_hash: "caf559f70472"
+synced_at: "2026-07-09T00:57:09.269771"
 ---
 
 # ExtensionContext

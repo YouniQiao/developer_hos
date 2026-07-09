@@ -2,7 +2,8 @@
 title: "@ohos.account.distributedAccount (分布式账号管理)"
 upstream_id: "harmonyos-references/js-apis-distributed-account"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:05.818475"
+content_hash: "6c23b303580a"
+synced_at: "2026-07-09T00:59:39.360723"
 ---
 
 # @ohos.account.distributedAccount (分布式账号管理)

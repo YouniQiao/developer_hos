@@ -2,12 +2,15 @@
 title: "Class (WebCookieManager)"
 upstream_id: "harmonyos-references/arkts-apis-webview-webcookiemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:03.292687"
+content_hash: "f58dd2b75c03"
+synced_at: "2026-07-09T00:58:51.765208"
 ---
 
 # Class (WebCookieManager)
 
-通过WebCookieManager可以控制Web组件中的cookie的各种行为，其中每个应用中的所有Web组件共享一个WebCookieManager实例。cookie的格式遵循[RFC6265](https://www.rfc-editor.org/rfc/rfc6265)标准。当前WebCookieManager的获取cookie接口不支持partitioned cookie。使用隐私模式浏览网页时，Cookie、缓存等数据不会写入本地持久化存储；隐私模式的Web组件销毁后，这些数据将被清除，不会保留。
+WebCookieManager是Web组件的cookie管理器，提供对Web组件中cookie的全局管理能力。开发者通过该类可以实现cookie的获取、设置、保存、清除以及权限控制等操作。该类的所有方法均为静态方法，应用中的所有Web组件共享一个WebCookieManager实例。cookie的格式遵循[RFC6265](https://www.rfc-editor.org/rfc/rfc6265)标准。
+
+使用隐私模式浏览网页时，cookie、缓存等数据不会写入本地持久化存储；隐私模式的Web组件销毁后，这些数据将被清除，不会保留。当前WebCookieManager的获取cookie接口不支持partitioned cookie。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -274,6 +277,67 @@ struct WebComponent {
 }
 ```
 
+#### fetchAllCookies23+
+
+static fetchAllCookies(incognito: boolean): Promise<Array<WebHttpCookie>>
+
+获取所有cookie，使用Promise异步回调。
+
+系统能力： SystemCapability.Web.Webview.Core
+
+参数：
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| incognito | boolean | 是 | true表示获取隐私模式下webview的所有cookie，false表示正常非隐私模式下的所有cookie。 |
+
+返回值：
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise> | Promise对象，用于获取所有cookie及其对应的字段值。 |
+
+示例：
+
+```
+// xxx.ets
+import { webview } from '@kit.ArkWeb';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+@Entry
+@Component
+struct WebComponent {
+  controller: webview.WebviewController = new webview.WebviewController()
+
+  build() {
+    Row() {
+      Column() {
+        Button('Config Cookie')
+        .onClick(() => {
+          try {
+            webview.WebCookieManager.configCookieSync('https://www.example.com', 'a=b');
+          } catch (error) {
+            console.error(`ErrorCode: ${(error as BusinessError).code},  Message: ${(error as BusinessError).message}`);
+          }
+        })
+
+        Button('Get All Cookies')
+        .onClick(() => {
+          webview.WebCookieManager.fetchAllCookies(false).then((cookies) => {
+            for (let i = 0; i < cookies.length; i++) {
+              console.info('fetchAllCookies cookie[' + i + '].name = ' + cookies[i].name);
+              console.info('fetchAllCookies cookie[' + i + '].value = ' + cookies[i].value);
+            }
+          })
+        })
+
+        Web({ src: 'https://www.example.com', controller: this.controller})
+      }
+    }
+  }
+}
+```
+
 #### configCookieSync11+
 
 static configCookieSync(url: string, value: string, incognito?: boolean): void
@@ -283,7 +347,6 @@ static configCookieSync(url: string, value: string, incognito?: boolean): void
 ![](./img/note_3.0-zh-cn.png)
 
 - configCookieSync中的url，可以指定域名的方式来使得页面内请求也附带上cookie。
-- 同步cookie的时机建议在Web组件加载之前完成。
 - cookie每30s周期性保存到磁盘中，也可以使用接口[saveCookieAsync](#savecookieasync)进行强制落盘。
 - value参数必须遵循Set-Cookie HTTP响应头的格式。形式为"key=value"的键值对，后面可跟随以分号分隔的cookie属性列表（例如"key=value;Max-Age=100"）。
 - 若存在相同host、path和名称的cookie，将被新cookie替换。若设置的cookie已过期，则不会存储该cookie。如需设置多个cookie，应多次调用此方法。
@@ -349,7 +412,6 @@ static configCookieSync(url: string, value: string, incognito: boolean, includeH
 ![](./img/note_3.0-zh-cn.png)
 
 - configCookieSync中的url，可以指定域名的方式来使得页面内请求也附带上cookie。
-- 同步cookie的时机建议在Web组件加载之前完成。
 - cookie每30s周期性保存到磁盘中，也可以使用接口[saveCookieAsync](#savecookieasync)进行强制落盘。
 - value参数必须遵循Set-Cookie HTTP响应头的格式。形式为"key=value"的键值对，后面可跟随以分号分隔的cookie属性列表（例如"key=value;Max-Age=100"）。
 - 若存在相同host、path和名称的cookie，将被新cookie替换。若设置的cookie已过期，则不会存储该cookie。如需设置多个cookie，应多次调用此方法。
@@ -412,6 +474,16 @@ static configCookie(url: string, value: string, callback: AsyncCallback<void>): 
 
 异步callback方式为指定url设置单个cookie的值。
 
+![](./img/note_3.0-zh-cn.png)
+
+- configCookie中的url，可以指定域名的方式来使得页面内请求也附带上cookie。
+- cookie每30s周期性保存到磁盘中，也可以使用接口[saveCookieAsync](#savecookieasync)进行强制落盘。
+- value参数必须遵循Set-Cookie HTTP响应头的格式。形式为"key=value"的键值对，后面可跟随以分号分隔的cookie属性列表（例如"key=value;Max-Age=100"）。
+- 若存在相同host、path和名称的cookie，将被新cookie替换。若设置的cookie已过期，则不会存储该cookie。如需设置多个cookie，应多次调用此方法。
+- 若通过configCookie进行两次或多次设置cookie，则每次设置的cookie之间会通过"; "进行分隔。
+- 如果指定的值包含"Secure"属性，则url必须使用"https://"协议。
+- 如果要覆盖HttpOnly的cookies，需要在value中指定HttpOnly属性。
+
 系统能力： SystemCapability.Web.Webview.Core
 
 参数：
@@ -469,6 +541,16 @@ struct WebComponent {
 static configCookie(url: string, value: string): Promise<void>
 
 指定url设置单个cookie的值。使用Promise异步回调。
+
+![](./img/note_3.0-zh-cn.png)
+
+- configCookie中的url，可以指定域名的方式来使得页面内请求也附带上cookie。
+- cookie每30s周期性保存到磁盘中，也可以使用接口[saveCookieAsync](#savecookieasync)进行强制落盘。
+- value参数必须遵循Set-Cookie HTTP响应头的格式。形式为"key=value"的键值对，后面可跟随以分号分隔的cookie属性列表（例如"key=value;Max-Age=100"）。
+- 若存在相同host、path和名称的cookie，将被新cookie替换。若设置的cookie已过期，则不会存储该cookie。如需设置多个cookie，应多次调用此方法。
+- 若通过configCookie进行两次或多次设置cookie，则每次设置的cookie之间会通过"; "进行分隔。
+- 如果指定的值包含"Secure"属性，则url必须使用"https://"协议。
+- 如果要覆盖HttpOnly的cookies，需要在value中指定HttpOnly属性。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -534,6 +616,15 @@ struct WebComponent {
 static configCookie(url: string, value: string, incognito: boolean, includeHttpOnly: boolean): Promise<void>
 
 指定url设置单个cookie的值。使用Promise异步回调。
+
+![](./img/note_3.0-zh-cn.png)
+
+- configCookie中的url，可以指定域名的方式来使得页面内请求也附带上cookie。
+- cookie每30s周期性保存到磁盘中，也可以使用接口[saveCookieAsync](#savecookieasync)进行强制落盘。
+- value参数必须遵循Set-Cookie HTTP响应头的格式。形式为"key=value"的键值对，后面可跟随以分号分隔的cookie属性列表（例如"key=value;Max-Age=100"）。
+- 若存在相同host、path和名称的cookie，将被新cookie替换。若设置的cookie已过期，则不会存储该cookie。如需设置多个cookie，应多次调用此方法。
+- 若通过configCookie进行两次或多次设置cookie，则每次设置的cookie之间会通过"; "进行分隔。
+- 如果指定的值包含"Secure"属性，则url必须使用"https://"协议。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -971,7 +1062,7 @@ struct WebComponent {
 
 static clearAllCookiesSync(incognito?: boolean): void
 
-清除所有cookie。
+清除所有cookie(包括会话cookie和持久化cookie)。如需仅清除会话cookie，请使用[clearSessionCookieSync](#clearsessioncookiesync11)。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -1008,7 +1099,7 @@ struct WebComponent {
 
 static clearAllCookies(callback: AsyncCallback<void>): void
 
-异步callback方式清除所有cookie。
+清除所有cookie(包括会话cookie和持久化cookie)，使用callback异步回调。如需仅清除会话cookie，请使用[clearSessionCookie](#clearsessioncookie11)。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -1062,7 +1153,7 @@ struct WebComponent {
 
 static clearAllCookies(): Promise<void>
 
-清除所有cookie。使用Promise异步回调。
+清除所有cookie(包括会话cookie和持久化cookie)，使用Promise异步回调。如需仅清除会话cookie，请使用[clearSessionCookie](#clearsessioncookie11-1)。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -1291,67 +1382,6 @@ struct WebComponent {
   build() {
     Column() {
       Web({ src: 'www.example.com', controller: this.controller })
-    }
-  }
-}
-```
-
-#### fetchAllCookies23+
-
-static fetchAllCookies(incognito: boolean): Promise<Array<WebHttpCookie>>
-
-获取所有cookie，使用Promise异步回调。
-
-系统能力： SystemCapability.Web.Webview.Core
-
-参数：
-
-| 参数名 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| incognito | boolean | 是 | true表示获取隐私模式下webview的所有cookie，false表示正常非隐私模式下的所有cookie。 |
-
-返回值：
-
-| 类型 | 说明 |
-| --- | --- |
-| Promise> | Promise对象，用于获取所有cookie及其对应的字段值。 |
-
-示例：
-
-```
-// xxx.ets
-import { webview } from '@kit.ArkWeb';
-import { BusinessError } from '@kit.BasicServicesKit';
-
-@Entry
-@Component
-struct WebComponent {
-  controller: webview.WebviewController = new webview.WebviewController()
-
-  build() {
-    Row() {
-      Column() {
-        Button('Config Cookie')
-        .onClick(() => {
-          try {
-            webview.WebCookieManager.configCookieSync('https://www.example.com', 'a=b');
-          } catch (error) {
-            console.error(`ErrorCode: ${(error as BusinessError).code},  Message: ${(error as BusinessError).message}`);
-          }
-        })
-
-        Button('Get All Cookies')
-        .onClick(() => {
-          webview.WebCookieManager.fetchAllCookies(false).then((cookies) => {
-            for (let i = 0; i < cookies.length; i++) {
-              console.info('fetchAllCookies cookie[' + i + '].name = ' + cookies[i].name);
-              console.info('fetchAllCookies cookie[' + i + '].value = ' + cookies[i].value);
-            }
-          })
-        })
-
-        Web({ src: 'https://www.example.com', controller: this.controller})
-      }
     }
   }
 }

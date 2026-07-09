@@ -2,7 +2,8 @@
 title: "OH_CryptoAsymCipher"
 upstream_id: "harmonyos-references/capi-cryptoasymcipherapi-oh-cryptoasymcipher"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:32.260294"
+content_hash: "5b204407243a"
+synced_at: "2026-07-09T00:59:12.790203"
 ---
 
 # OH_CryptoAsymCipher

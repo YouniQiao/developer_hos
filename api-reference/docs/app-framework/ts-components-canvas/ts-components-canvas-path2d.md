@@ -2,7 +2,8 @@
 title: "Path2D"
 upstream_id: "harmonyos-references/ts-components-canvas-path2d"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:32.492813"
+content_hash: "05d7d67c1a49"
+synced_at: "2026-07-09T00:58:04.928241"
 ---
 
 # Path2D
@@ -176,7 +177,7 @@ struct AddPath {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470059.png)
+ ![](./img/zh-cn_image_0000002661612873.png)
 
 #### [h2]closePath
 
@@ -220,7 +221,7 @@ struct ClosePath {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350107.png)
+ ![](./img/zh-cn_image_0000002631413584.png)
 
 #### [h2]moveTo
 
@@ -276,7 +277,7 @@ struct MoveTo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230694.png)
+ ![](./img/zh-cn_image_0000002661732815.png)
 
 #### [h2]lineTo
 
@@ -328,7 +329,7 @@ struct LineTo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070784.png)
+ ![](./img/zh-cn_image_0000002631253694.png)
 
 #### [h2]bezierCurveTo
 
@@ -381,7 +382,7 @@ struct BezierCurveTo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470061.png)
+ ![](./img/zh-cn_image_0000002661612875.png)
 
 #### [h2]quadraticCurveTo
 
@@ -425,14 +426,14 @@ struct QuadraticCurveTo {
           this.path2Db.moveTo(10, 10)
           this.path2Db.quadraticCurveTo(100, 100, 200, 20)
           this.context.stroke(this.path2Db)
-      })
+        })
     }
     .width('100%')
     .height('100%')
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350109.png)
+ ![](./img/zh-cn_image_0000002631413586.png)
 
 #### [h2]arc
 
@@ -484,7 +485,7 @@ struct Arc {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230696.png)
+ ![](./img/zh-cn_image_0000002661732817.png)
 
 #### [h2]arcTo
 
@@ -536,7 +537,7 @@ struct ArcTo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070786.png)
+ ![](./img/zh-cn_image_0000002631253696.png)
 
 #### [h2]ellipse
 
@@ -590,7 +591,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470063.png)
+ ![](./img/zh-cn_image_0000002661612877.png)
 
 #### [h2]rect
 
@@ -640,7 +641,7 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350111.png)
+ ![](./img/zh-cn_image_0000002631413588.png)
 
 #### [h2]roundRect20+
 
@@ -731,4 +732,4 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070734.jpeg)
+ ![](./img/zh-cn_image_0000002631253644.jpeg)

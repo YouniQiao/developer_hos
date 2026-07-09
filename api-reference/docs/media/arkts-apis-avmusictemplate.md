@@ -1,9 +1,12 @@
 ---
+
 title: "模块描述"
 upstream_id: "harmonyos-references/arkts-apis-avmusictemplate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:06.982119"
+synced_at: "2026-07-09T01:00:18.025246"
+content_hash: "c16802809815"
 ---
+
 
 # 模块描述
 

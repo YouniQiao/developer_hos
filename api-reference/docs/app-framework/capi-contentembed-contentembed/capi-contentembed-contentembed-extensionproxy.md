@@ -2,7 +2,8 @@
 title: "ContentEmbed_ExtensionProxy"
 upstream_id: "harmonyos-references/capi-contentembed-contentembed-extensionproxy"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:12.605247"
+content_hash: "408026e969ea"
+synced_at: "2026-07-09T00:58:58.946482"
 ---
 
 # ContentEmbed_ExtensionProxy

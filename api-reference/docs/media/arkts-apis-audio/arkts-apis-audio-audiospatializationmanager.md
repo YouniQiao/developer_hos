@@ -2,7 +2,8 @@
 title: "Interface (AudioSpatializationManager)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audiospatializationmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:52.715046"
+content_hash: "1dd6d22e5a47"
+synced_at: "2026-07-09T01:00:07.543116"
 ---
 
 # Interface (AudioSpatializationManager)

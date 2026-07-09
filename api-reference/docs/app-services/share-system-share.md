@@ -2,7 +2,8 @@
 title: "systemShare（分享）"
 upstream_id: "harmonyos-references/share-system-share"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:53.125725"
+content_hash: "182cb3c0b27d"
+synced_at: "2026-07-09T01:01:39.544069"
 ---
 
 # systemShare（分享）

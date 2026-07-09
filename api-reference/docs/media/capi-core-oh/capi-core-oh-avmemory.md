@@ -2,7 +2,8 @@
 title: "OH_AVMemory"
 upstream_id: "harmonyos-references/capi-core-oh-avmemory"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:04.394262"
+content_hash: "ea8acc529ff1"
+synced_at: "2026-07-09T01:00:16.054453"
 ---
 
 # OH_AVMemory

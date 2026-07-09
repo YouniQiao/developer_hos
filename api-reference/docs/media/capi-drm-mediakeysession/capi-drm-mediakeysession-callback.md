@@ -2,7 +2,8 @@
 title: "MediaKeySession_Callback"
 upstream_id: "harmonyos-references/capi-drm-mediakeysession-callback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:21.496722"
+content_hash: "5a054c94b168"
+synced_at: "2026-07-09T01:00:29.124665"
 ---
 
 # MediaKeySession_Callback

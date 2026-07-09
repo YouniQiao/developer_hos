@@ -2,7 +2,8 @@
 title: "OH_AVCodec"
 upstream_id: "harmonyos-references/capi-codecbase-oh-avcodec"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:04.027674"
+content_hash: "95fb298481f1"
+synced_at: "2026-07-09T01:00:15.763319"
 ---
 
 # OH_AVCodec

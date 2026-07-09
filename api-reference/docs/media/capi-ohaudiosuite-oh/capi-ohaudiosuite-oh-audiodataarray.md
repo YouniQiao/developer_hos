@@ -2,7 +2,8 @@
 title: "OH_AudioDataArray"
 upstream_id: "harmonyos-references/capi-ohaudiosuite-oh-audiodataarray"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:59.435949"
+content_hash: "523081f33189"
+synced_at: "2026-07-09T01:00:11.889235"
 ---
 
 # OH_AudioDataArray

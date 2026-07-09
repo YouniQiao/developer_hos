@@ -2,7 +2,8 @@
 title: "Pasteboard_GetDataParams"
 upstream_id: "harmonyos-references/capi-pasteboard-getdataparams"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:11.862878"
+content_hash: "34be1b703d3c"
+synced_at: "2026-07-09T00:59:43.700114"
 ---
 
 # Pasteboard_GetDataParams

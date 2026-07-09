@@ -1,9 +1,12 @@
 ---
+
 title: "统一数据管理框架错误码"
 upstream_id: "harmonyos-references/errorcode-udmf"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:11.743846"
+synced_at: "2026-07-09T00:57:22.336628"
+content_hash: "075ccd162e7a"
 ---
+
 
 # 统一数据管理框架错误码
 

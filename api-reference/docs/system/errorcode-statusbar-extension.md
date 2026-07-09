@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-statusbar-extension"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:14.214681"
+content_hash: "722c90f6c683"
+synced_at: "2026-07-09T00:59:45.757191"
 ---
 
 # ArkTS API错误码

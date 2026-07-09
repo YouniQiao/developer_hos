@@ -2,7 +2,8 @@
 title: "data_type.h"
 upstream_id: "harmonyos-references/capi-data-type-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:58.146411"
+content_hash: "f0cfd74cd6a1"
+synced_at: "2026-07-09T01:01:42.970103"
 ---
 
 # data_type.h

@@ -2,7 +2,8 @@
 title: "MediaKeySystem"
 upstream_id: "harmonyos-references/capi-drm-mediakeysystem"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:21.394978"
+content_hash: "cfc91c4229c1"
+synced_at: "2026-07-09T01:00:28.980901"
 ---
 
 # MediaKeySystem

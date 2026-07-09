@@ -2,7 +2,8 @@
 title: "native_avcodec_videoencoder.h"
 upstream_id: "harmonyos-references/capi-native-avcodec-videoencoder-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:03.173131"
+content_hash: "9f8940f04962"
+synced_at: "2026-07-09T01:00:15.457621"
 ---
 
 # native_avcodec_videoencoder.h

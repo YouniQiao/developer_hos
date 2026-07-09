@@ -2,7 +2,8 @@
 title: "oh_preferences_err_code.h"
 upstream_id: "harmonyos-references/capi-oh-preferences-err-code-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:05.785257"
+content_hash: "5e52a6662aa9"
+synced_at: "2026-07-09T00:57:18.059560"
 ---
 
 # oh_preferences_err_code.h

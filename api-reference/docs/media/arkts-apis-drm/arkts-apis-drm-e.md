@@ -2,7 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-apis-drm-e"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:20.065648"
+content_hash: "a4bfe088dba5"
+synced_at: "2026-07-09T01:00:27.820692"
 ---
 
 # Enums

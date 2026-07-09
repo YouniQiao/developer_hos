@@ -2,7 +2,8 @@
 title: "healthFields (运动健康数据字段)"
 upstream_id: "harmonyos-references/health-api-healthfields"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:27.222113"
+content_hash: "365f00ffd670"
+synced_at: "2026-07-09T01:01:20.336063"
 ---
 
 # healthFields (运动健康数据字段)

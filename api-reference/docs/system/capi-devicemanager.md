@@ -2,7 +2,8 @@
 title: "DeviceManager"
 upstream_id: "harmonyos-references/capi-devicemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:49.491966"
+content_hash: "39ba7b8ded4c"
+synced_at: "2026-07-09T00:59:26.111972"
 ---
 
 # DeviceManager

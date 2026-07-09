@@ -2,16 +2,13 @@
 title: "HandwriteController (手写套件功能)"
 upstream_id: "harmonyos-references/pen-handwritecontroller"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:38.014531"
+content_hash: "361db6a8c438"
+synced_at: "2026-07-09T00:59:58.711436"
 ---
 
 # HandwriteController (手写套件功能)
 
 手写套件的主要功能入口类，用于管理手写内容的加载、保存等核心功能。
-
-模型约束： 此接口仅可在Stage模型下使用。
-
-系统能力： SystemCapability.Stylus.Handwrite
 
 起始版本： 5.0.0(12)
 

@@ -2,7 +2,8 @@
 title: "Rdb_ProgressObserver"
 upstream_id: "harmonyos-references/capi-rdb-rdb-progressobserver"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:08.999023"
+content_hash: "6f1f4f66c9b0"
+synced_at: "2026-07-09T00:57:20.747701"
 ---
 
 # Rdb_ProgressObserver

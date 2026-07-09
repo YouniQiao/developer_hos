@@ -2,7 +2,8 @@
 title: "@ohos.ability.featureAbility (FeatureAbility模块)"
 upstream_id: "harmonyos-references/js-apis-ability-featureability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:49.292170"
+content_hash: "980d3f010198"
+synced_at: "2026-07-09T00:57:06.398907"
 ---
 
 # @ohos.ability.featureAbility (FeatureAbility模块)

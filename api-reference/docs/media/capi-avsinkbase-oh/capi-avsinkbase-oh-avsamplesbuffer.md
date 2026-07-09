@@ -2,7 +2,8 @@
 title: "OH_AVSamplesBuffer"
 upstream_id: "harmonyos-references/capi-avsinkbase-oh-avsamplesbuffer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:41.660076"
+content_hash: "aeeedbddf88a"
+synced_at: "2026-07-09T01:00:44.489477"
 ---
 
 # OH_AVSamplesBuffer

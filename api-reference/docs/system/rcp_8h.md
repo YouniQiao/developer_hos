@@ -2,7 +2,8 @@
 title: "rcp.h"
 upstream_id: "harmonyos-references/rcp_8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:59.197419"
+content_hash: "25152be0d93a"
+synced_at: "2026-07-09T00:59:34.191092"
 ---
 
 # rcp.h
@@ -126,7 +127,7 @@ synced_at: "2026-06-24T20:50:59.197419"
 | typedef enum [Rcp_AuthenticationType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-overview#rcp_authenticationtype) [Rcp_AuthenticationType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-overview#rcp_authenticationtype) | 枚举类型。服务器的身份验证类型。如果未设置，请与服务器协商。 |
 | typedef struct [Rcp_Credential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_rcp___credential) [Rcp_Credential](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-overview#rcp_credential) | 服务器身份验证中使用的身份验证凭据，包括用户名和密码。 |
 | typedef struct [Rcp_ServerAuthentication](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_rcp___server_authentication) [Rcp_ServerAuthentication](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-overview#rcp_serverauthentication) | 服务器身份验证。 |
-| typedef bool(* [Rcp_ExclusionFunction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-overview#rcp_exclusionfunction)) (const char *url) | 判断host是否使用代理的函数指针。 |
+| typedef bool(* [Rcp_ExclusionFunction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-overview#rcp_exclusionfunction)) (const char *url) | 判断host是否使用代理的函数指针，true代表使用，false代表不使用。 |
 | typedef struct [Rcp_Urls](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_rcp___urls) [Rcp_Urls](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-overview#rcp_urls) | url，用于确定主机是否正在使用代理。 |
 | typedef enum [Rcp_ExclusionsValueType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-overview#rcp_exclusionsvaluetype) [Rcp_ExclusionsValueType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-overview#rcp_exclusionsvaluetype) | 代理排除中使用的数据类型. 用于区分[Rcp_Exclusions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_rcp___exclusions)中使用的数据。 |
 | typedef struct [Rcp_Exclusions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_rcp___exclusions) [Rcp_Exclusions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-overview#rcp_exclusions) | 代理配置中用于过滤不使用代理的URLs。 |

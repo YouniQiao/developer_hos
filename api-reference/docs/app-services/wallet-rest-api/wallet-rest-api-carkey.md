@@ -2,7 +2,8 @@
 title: "数字车钥匙接口"
 upstream_id: "harmonyos-references/wallet-rest-api-carkey"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:54.309941"
+content_hash: "41ba4c50e6db"
+synced_at: "2026-07-09T01:01:39.993472"
 ---
 
 # 数字车钥匙接口

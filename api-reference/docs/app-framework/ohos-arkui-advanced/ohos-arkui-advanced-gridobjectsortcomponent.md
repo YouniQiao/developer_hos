@@ -2,7 +2,8 @@
 title: "GridObjectSortComponent"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-gridobjectsortcomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:53.443666"
+content_hash: "b3be0d6935b4"
+synced_at: "2026-07-09T00:58:15.936308"
 ---
 
 # GridObjectSortComponent
@@ -174,4 +175,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350229.gif)
+ ![](./img/zh-cn_image_0000002661732937.gif)

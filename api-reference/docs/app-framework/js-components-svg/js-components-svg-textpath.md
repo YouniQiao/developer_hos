@@ -2,7 +2,8 @@
 title: "textPath"
 upstream_id: "harmonyos-references/js-components-svg-textpath"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:12.427786"
+content_hash: "1d3c0cd27e9c"
+synced_at: "2026-07-09T00:58:25.325024"
 ---
 
 # textPath
@@ -69,7 +70,7 @@ textPath属性示例，textpath文本内容沿着属性path中的路径绘制文
     width: 600px;
 }
 ```
- ![](./img/zh-cn_image_0000002656350361.png)
+ ![](./img/zh-cn_image_0000002661613131.png)
 
 textpath与tspan组合示例与效果图
 
@@ -88,7 +89,7 @@ textpath与tspan组合示例与效果图
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002626230948.png)
+ ![](./img/zh-cn_image_0000002631413842.png)
 
 ```
 <!-- xxx.hml -->
@@ -107,7 +108,7 @@ textpath与tspan组合示例与效果图
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002626071038.png)
+ ![](./img/zh-cn_image_0000002661733073.png)
 
 ```
 <!-- xxx.hml -->
@@ -127,7 +128,7 @@ textpath与tspan组合示例与效果图
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002656470315.png)
+ ![](./img/zh-cn_image_0000002631253952.png)
 
 startOffset属性动画，文本绘制时起点偏移从10%运动到40%，不绘制超出path长度范围的文本。
 
@@ -158,7 +159,7 @@ startOffset属性动画，文本绘制时起点偏移从10%运动到40%，不绘
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002656350363.gif)
+ ![](./img/zh-cn_image_0000002661613133.gif)
 
 textpath与tspan组合属性动画与效果图
 
@@ -188,7 +189,7 @@ textpath与tspan组合属性动画与效果图
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002626230950.gif)
+ ![](./img/zh-cn_image_0000002631413844.gif)
 
 (1) "tspan attribute x|rotate" 文本绘制起点偏移从50px运动到100px，顺时针旋转0度到360度。
 
@@ -223,7 +224,7 @@ textpath与tspan组合属性动画与效果图
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002626071040.gif)
+ ![](./img/zh-cn_image_0000002661733075.gif)
 
 (1) "This is TextPath." 在path上无偏移绘制第一段文本内容，大小30px，颜色"#D2691E"。
 
@@ -259,7 +260,7 @@ textpath与tspan组合属性动画与效果图
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002656470317.gif)
+ ![](./img/zh-cn_image_0000002631253954.gif)
 
 (1) "tspan attribute stroke" 轮廓颜色从红色逐渐转变成绿色。
 

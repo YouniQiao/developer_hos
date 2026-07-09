@@ -2,7 +2,8 @@
 title: "commentManager（应用评论服务）"
 upstream_id: "harmonyos-references/appgallery-commentmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:22.492331"
+content_hash: "a5a6572d22df"
+synced_at: "2026-07-09T01:01:15.068638"
 ---
 
 # commentManager（应用评论服务）

@@ -2,7 +2,8 @@
 title: "BaseContext"
 upstream_id: "harmonyos-references/js-apis-inner-application-basecontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:53.186133"
+content_hash: "d74a901fa28a"
+synced_at: "2026-07-09T00:57:08.909485"
 ---
 
 # BaseContext

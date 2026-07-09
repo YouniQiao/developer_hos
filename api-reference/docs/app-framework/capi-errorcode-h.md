@@ -2,7 +2,8 @@
 title: "errorcode.h"
 upstream_id: "harmonyos-references/capi-errorcode-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:24.082192"
+content_hash: "95114262f532"
+synced_at: "2026-07-09T00:59:07.893339"
 ---
 
 # errorcode.h

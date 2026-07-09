@@ -2,7 +2,8 @@
 title: "OffscreenCanvas"
 upstream_id: "harmonyos-references/ts-components-offscreencanvas"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:31.446611"
+content_hash: "7574dd2172c8"
+synced_at: "2026-07-09T00:58:04.126085"
 ---
 
 # OffscreenCanvas
@@ -79,6 +80,8 @@ OffscreenCanvas支持以下属性：
 
 #### [h2]width
 
+示例：
+
 ```
 // xxx.ets
 @Entry
@@ -110,9 +113,11 @@ struct OffscreenCanvasPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350081.png)
+ ![](./img/zh-cn_image_0000002631413558.png)
 
 #### [h2]height
+
+示例：
 
 ```
 // xxx.ets
@@ -145,7 +150,7 @@ struct OffscreenCanvasPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230668.png)
+ ![](./img/zh-cn_image_0000002661732789.png)
 
 #### 方法
 
@@ -202,7 +207,7 @@ struct OffscreenCanvasPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070758.png)
+ ![](./img/zh-cn_image_0000002631253668.png)
 
 #### [h2]getContext10+
 
@@ -277,7 +282,7 @@ struct OffscreenCanvasExamplePage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470035.png)
+ ![](./img/zh-cn_image_0000002661612849.png)
 
 #### OffscreenCanvas支持并发线程绘制
 
@@ -386,4 +391,4 @@ workerPort.onmessage = (e: MessageEvents) => {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350083.png)
+ ![](./img/zh-cn_image_0000002631413560.png)

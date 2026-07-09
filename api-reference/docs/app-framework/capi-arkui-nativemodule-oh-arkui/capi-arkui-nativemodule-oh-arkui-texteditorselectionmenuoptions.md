@@ -2,7 +2,8 @@
 title: "OH_ArkUI_TextEditorSelectionMenuOptions"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:59.597346"
+content_hash: "0d933b97f7b9"
+synced_at: "2026-07-09T00:58:48.052750"
 ---
 
 # OH_ArkUI_TextEditorSelectionMenuOptions

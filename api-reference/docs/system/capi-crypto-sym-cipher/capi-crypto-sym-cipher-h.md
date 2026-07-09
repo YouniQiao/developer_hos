@@ -2,7 +2,8 @@
 title: "crypto_sym_cipher.h"
 upstream_id: "harmonyos-references/capi-crypto-sym-cipher-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:31.565553"
+content_hash: "223f94e088a4"
+synced_at: "2026-07-09T00:59:12.762383"
 ---
 
 # crypto_sym_cipher.h

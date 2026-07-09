@@ -2,7 +2,8 @@
 title: "Input_InterceptorOptions"
 upstream_id: "harmonyos-references/capi-input-input-interceptoroptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:20.357547"
+content_hash: "d900e5023706"
+synced_at: "2026-07-09T00:59:50.441192"
 ---
 
 # Input_InterceptorOptions

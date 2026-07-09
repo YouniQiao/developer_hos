@@ -2,7 +2,8 @@
 title: "OH_LowPowerAudioSinkCallback"
 upstream_id: "harmonyos-references/capi-lowpoweraudiosink-oh-lowpoweraudiosinkcallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:41.628642"
+content_hash: "bef578244ef2"
+synced_at: "2026-07-09T01:00:44.403420"
 ---
 
 # OH_LowPowerAudioSinkCallback

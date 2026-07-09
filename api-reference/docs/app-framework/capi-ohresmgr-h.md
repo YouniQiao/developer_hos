@@ -2,7 +2,8 @@
 title: "ohresmgr.h"
 upstream_id: "harmonyos-references/capi-ohresmgr-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:23.449337"
+content_hash: "ceb95e3fb2fa"
+synced_at: "2026-07-09T00:59:08.614122"
 ---
 
 # ohresmgr.h

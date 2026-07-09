@@ -1,9 +1,12 @@
 ---
+
 title: "订阅确认发货"
 upstream_id: "harmonyos-references/iap-confirm-purchase-for-sub"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:28.907658"
+synced_at: "2026-07-09T01:01:21.803501"
+content_hash: "b5b91aa6fcff"
 ---
+
 
 # 订阅确认发货
 

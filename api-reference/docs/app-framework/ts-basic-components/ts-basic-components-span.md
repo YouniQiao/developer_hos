@@ -2,7 +2,8 @@
 title: "Span"
 upstream_id: "harmonyos-references/ts-basic-components-span"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:17.084295"
+content_hash: "324116251904"
+synced_at: "2026-07-09T00:57:56.779158"
 ---
 
 # Span
@@ -323,7 +324,7 @@ fontVariations(fontVariations: Array<FontVariation>)
 
 textBackgroundStyle(style: TextBackgroundStyle): T
 
-设置背景样式。作为[ContainerSpan](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-containerspan)的子组件时可以继承它的此属性值，优先使用其自身的此属性。
+设置文本背景样式。作为[ContainerSpan](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-containerspan)的子组件时可以继承它的此属性值，优先使用其自身的此属性。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -335,7 +336,7 @@ textBackgroundStyle(style: TextBackgroundStyle): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| style | [TextBackgroundStyle](#textbackgroundstyle11对象说明) | 是 | 背景样式。 默认值: { color: Color.Transparent, radius: 0 } |
+| style | [TextBackgroundStyle](#textbackgroundstyle11对象说明) | 是 | 文本背景样式。 默认值： { color: Color.Transparent, radius: 0 } |
 
 返回值：
 
@@ -552,7 +553,7 @@ struct SpanExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230500.png)
+ ![](./img/zh-cn_image_0000002631413388.png)
 
 #### [h2]示例2（设置文本阴影）
 
@@ -605,7 +606,7 @@ struct SpanExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070590.png)
+ ![](./img/zh-cn_image_0000002661732619.png)
 
 #### [h2]示例3（设置背景样式）
 
@@ -628,7 +629,7 @@ struct SpanExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469867.png)
+ ![](./img/zh-cn_image_0000002631253498.png)
 
 #### [h2]示例4（设置文本基线偏移量）
 
@@ -664,7 +665,7 @@ struct SpanExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349915.png)
+ ![](./img/zh-cn_image_0000002661612681.png)
 
 #### [h2]示例5（设置文本可变字体的属性）
 
@@ -696,4 +697,4 @@ struct SpanExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070520.gif)
+ ![](./img/zh-cn_image_0000002661732549.gif)

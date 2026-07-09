@@ -2,7 +2,8 @@
 title: "NodeAdapter错误码"
 upstream_id: "harmonyos-references/errorcode-nodeadapter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:01.503453"
+content_hash: "b4172f077820"
+synced_at: "2026-07-09T00:58:49.345282"
 ---
 
 # NodeAdapter错误码

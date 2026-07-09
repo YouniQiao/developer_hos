@@ -2,7 +2,8 @@
 title: "XEG_NNGICreateInfo"
 upstream_id: "harmonyos-references/xengine-kit-xeg-nngicreateinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:16.854084"
+content_hash: "41ef0be79c87"
+synced_at: "2026-07-09T01:01:10.578923"
 ---
 
 # XEG_NNGICreateInfo

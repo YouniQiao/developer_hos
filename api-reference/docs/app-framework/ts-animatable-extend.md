@@ -2,7 +2,8 @@
 title: "定义可动画属性 (@AnimatableExtend)"
 upstream_id: "harmonyos-references/ts-animatable-extend"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:50.603522"
+content_hash: "abf80fbf04de"
+synced_at: "2026-07-09T00:58:13.939350"
 ---
 
 # 定义可动画属性 (@AnimatableExtend)
@@ -159,7 +160,7 @@ struct AnimatablePropertyExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350203.gif)
+ ![](./img/zh-cn_image_0000002661732911.gif)
 
 #### [h2]示例2（折线的动画效果）
 
@@ -285,4 +286,4 @@ struct AnimatablePropertyExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230790.gif)
+ ![](./img/zh-cn_image_0000002631253790.gif)

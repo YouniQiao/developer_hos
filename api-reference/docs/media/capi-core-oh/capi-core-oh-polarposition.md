@@ -2,7 +2,8 @@
 title: "OH_PolarPosition"
 upstream_id: "harmonyos-references/capi-core-oh-polarposition"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:04.954358"
+content_hash: "66c9eb140b83"
+synced_at: "2026-07-09T01:00:16.464423"
 ---
 
 # OH_PolarPosition

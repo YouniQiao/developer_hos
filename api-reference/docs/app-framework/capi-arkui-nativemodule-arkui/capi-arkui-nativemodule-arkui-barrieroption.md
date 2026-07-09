@@ -2,7 +2,8 @@
 title: "ArkUI_BarrierOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-barrieroption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:53.132615"
+content_hash: "238fcd6b7a57"
+synced_at: "2026-07-09T00:58:43.575277"
 ---
 
 # ArkUI_BarrierOption

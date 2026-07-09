@@ -2,7 +2,8 @@
 title: "OH_AudioRenderer_Callbacks_Struct"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audiorenderer-callbacks-struct"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:58.579681"
+content_hash: "317ecd77ccaa"
+synced_at: "2026-07-09T01:00:11.562467"
 ---
 
 # OH_AudioRenderer_Callbacks_Struct

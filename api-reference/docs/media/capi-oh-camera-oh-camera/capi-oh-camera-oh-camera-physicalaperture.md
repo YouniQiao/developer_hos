@@ -2,7 +2,8 @@
 title: "OH_Camera_PhysicalAperture"
 upstream_id: "harmonyos-references/capi-oh-camera-oh-camera-physicalaperture"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:19.057013"
+content_hash: "29a1f7e460af"
+synced_at: "2026-07-09T01:00:27.447048"
 ---
 
 # OH_Camera_PhysicalAperture

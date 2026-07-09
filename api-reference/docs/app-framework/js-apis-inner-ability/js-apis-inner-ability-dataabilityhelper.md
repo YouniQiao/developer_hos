@@ -2,7 +2,8 @@
 title: "DataAbilityHelper"
 upstream_id: "harmonyos-references/js-apis-inner-ability-dataabilityhelper"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:51.944948"
+content_hash: "f24eecb2e808"
+synced_at: "2026-07-09T00:57:08.515747"
 ---
 
 # DataAbilityHelper

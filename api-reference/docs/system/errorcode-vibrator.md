@@ -2,7 +2,8 @@
 title: "振动错误码"
 upstream_id: "harmonyos-references/errorcode-vibrator"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:43.303479"
+content_hash: "a544145d21b3"
+synced_at: "2026-07-09T01:00:01.479259"
 ---
 
 # 振动错误码

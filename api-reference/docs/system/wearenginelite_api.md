@@ -2,7 +2,8 @@
 title: "wearEngineLite（穿戴设备能力开放）（Lite）"
 upstream_id: "harmonyos-references/wearenginelite_api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:43.865947"
+content_hash: "399b8e8db5e4"
+synced_at: "2026-07-09T01:00:01.802879"
 ---
 
 # wearEngineLite（穿戴设备能力开放）（Lite）
@@ -17,7 +18,11 @@ synced_at: "2026-06-24T20:51:43.865947"
 import WearEngineLite from '@hms.health.WearEngineLite';
 ```
 
-#### onConnectionStateChange
+#### WearEngineLite
+
+订阅和取消订阅手表与手机之间连接状态的基类。
+
+#### [h2]onConnectionStateChange
 
 static onConnectionStateChange(callback: MonitorEventCallback): void
 
@@ -58,7 +63,7 @@ static onConnectionStateChange(callback: MonitorEventCallback): void
   WearEngineLite.onConnectionStateChange(eventCallback);
 ```
 
-#### offConnectionStateChange
+#### [h2]offConnectionStateChange
 
 static offConnectionStateChange(callback?: MonitorEventCallback): void
 

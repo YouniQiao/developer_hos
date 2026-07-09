@@ -2,7 +2,8 @@
 title: "PinchGesture"
 upstream_id: "harmonyos-references/ts-basic-gestures-pinchgesture"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:50.632894"
+content_hash: "2af5f956d1bf"
+synced_at: "2026-07-09T00:57:44.443243"
 ---
 
 # PinchGesture
@@ -185,7 +186,7 @@ struct PinchGestureExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230260.png)
+ ![](./img/zh-cn_image_0000002661612435.png)
 
 #### [h2]示例2（实现图片跟手缩放）
 
@@ -281,4 +282,4 @@ struct PinchGestureExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070350.gif)
+ ![](./img/zh-cn_image_0000002631413144.gif)

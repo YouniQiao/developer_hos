@@ -2,7 +2,8 @@
 title: "NavRouter"
 upstream_id: "harmonyos-references/ts-basic-components-navrouter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:59.112756"
+content_hash: "91b66381c4f2"
+synced_at: "2026-07-09T00:58:19.133344"
 ---
 
 # NavRouter
@@ -214,4 +215,4 @@ struct NavRouterExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230864.gif)
+ ![](./img/zh-cn_image_0000002631413758.gif)

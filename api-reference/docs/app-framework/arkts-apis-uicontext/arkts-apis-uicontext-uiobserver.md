@@ -2,7 +2,8 @@
 title: "Class (UIObserver)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-uiobserver"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:22.889360"
+content_hash: "b5220de4f6de"
+synced_at: "2026-07-09T00:57:30.510622"
 ---
 
 # Class (UIObserver)
@@ -2256,7 +2257,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070176.gif)
+ ![](./img/zh-cn_image_0000002631253070.gif)
 
 #### off('nodeRenderState')20+
 
@@ -2476,7 +2477,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469453.gif)
+ ![](./img/zh-cn_image_0000002661612255.gif)
 
 #### removeGlobalGestureListener20+
 

@@ -2,7 +2,8 @@
 title: "通用错误码"
 upstream_id: "harmonyos-references/errorcode-universal"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:44.388575"
+content_hash: "8e334a8a5497"
+synced_at: "2026-07-09T00:57:02.845750"
 ---
 
 # 通用错误码

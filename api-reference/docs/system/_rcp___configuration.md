@@ -2,7 +2,8 @@
 title: "Rcp_Configuration"
 upstream_id: "harmonyos-references/_rcp___configuration"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:59.531668"
+content_hash: "ec7139836181"
+synced_at: "2026-07-09T00:59:33.655405"
 ---
 
 # Rcp_Configuration

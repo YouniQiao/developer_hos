@@ -2,7 +2,8 @@
 title: "WithTheme"
 upstream_id: "harmonyos-references/ts-container-with-theme"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:47.742342"
+content_hash: "1946618cb9b2"
+synced_at: "2026-07-09T00:58:12.434793"
 ---
 
 # WithTheme
@@ -75,7 +76,7 @@ type CustomTheme = import('../api/@ohos.arkui.theme').CustomTheme
 
 设置局部深浅色时，需要添加dark.json资源文件，深浅色模式才会生效。
 
-![](./img/zh-cn_image_0000002656350187.png)
+![](./img/zh-cn_image_0000002661732895.png)
 
 dark.json数据示例：
 
@@ -145,7 +146,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230774.png)
+ ![](./img/zh-cn_image_0000002631253774.png)
 
 #### [h2]示例2（自定义WithTheme作用域内组件缺省配色）
 
@@ -230,4 +231,4 @@ struct IndexPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070864.gif)
+ ![](./img/zh-cn_image_0000002661612957.gif)

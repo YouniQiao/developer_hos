@@ -2,7 +2,8 @@
 title: "AR Engine错误码"
 upstream_id: "harmonyos-references/errorcode-ar-engine"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:51.369169"
+content_hash: "16743bb23640"
+synced_at: "2026-07-09T01:00:50.274072"
 ---
 
 # AR Engine错误码

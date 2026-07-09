@@ -2,7 +2,8 @@
 title: "BufferHandle"
 upstream_id: "harmonyos-references/capi-nativewindow-bufferhandle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:07.327808"
+content_hash: "a969d0e77098"
+synced_at: "2026-07-09T01:01:01.761597"
 ---
 
 # BufferHandle

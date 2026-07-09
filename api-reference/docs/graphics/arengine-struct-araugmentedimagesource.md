@@ -2,7 +2,8 @@
 title: "AREngine_ARAugmentedImageSource"
 upstream_id: "harmonyos-references/arengine-struct-araugmentedimagesource"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:50.945053"
+content_hash: "0eee784112c2"
+synced_at: "2026-07-09T01:00:49.917473"
 ---
 
 # AREngine_ARAugmentedImageSource

@@ -2,7 +2,8 @@
 title: "图形变换"
 upstream_id: "harmonyos-references/ts-universal-attributes-transformation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:38.303276"
+content_hash: "2c0cd3347fc8"
+synced_at: "2026-07-09T00:57:39.483796"
 ---
 
 # 图形变换
@@ -27,7 +28,7 @@ rotate(value: RotateOptions): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [RotateOptions](#rotateoptions对象说明) | 是 | 可使组件在以组件左上角为坐标原点的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中进行旋转（坐标系如下图所示）。其中，(x, y, z）指定一个矢量，作为旋转轴。 旋转轴和旋转中心点都基于坐标系设定，组件发生位移时，坐标系不会随之移动。 默认值: 在x、y、z都不指定时，x、y、z的默认值分别为0、0、1。指定了x、y、z任何一个值时，x、y、z中未指定的值默认为0。 { centerX: '50%', centerY: '50%', centerZ: 0, perspective: 0 } 单位：vp ![](./img/zh-cn_image_0000002656468111.png) |
+| value | [RotateOptions](#rotateoptions对象说明) | 是 | 可使组件在以组件左上角为坐标原点的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中进行旋转（坐标系如下图所示）。其中，(x, y, z）指定一个矢量，作为旋转轴。 旋转轴和旋转中心点都基于坐标系设定，组件发生位移时，坐标系不会随之移动。 默认值: 在x、y、z都不指定时，x、y、z的默认值分别为0、0、1。指定了x、y、z任何一个值时，x、y、z中未指定的值默认为0。 { centerX: '50%', centerY: '50%', centerZ: 0, perspective: 0 } 单位：vp ![](./img/zh-cn_image_0000002631251690.png) |
 
 返回值：
 
@@ -53,7 +54,7 @@ rotate(options: Optional<RotateOptions>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 可使组件在以组件左上角为坐标原点的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中进行旋转（坐标系如下图所示）。其中，(x, y, z）指定一个矢量，作为旋转轴。 旋转轴和旋转中心点都基于坐标系设定，组件发生位移时，坐标系不会随之移动。 默认值: 在x、y、z都不指定时，x、y、z的默认值分别为0、0、1。指定了x、y、z任何一个值时，x、y、z中未指定的值默认为0。 { centerX: '50%', centerY: '50%', centerZ: 0, perspective: 0 } 单位：vp ![](./img/zh-cn_image_0000002656468111.png)。 当options的值为undefined时，恢复为无旋转效果。 |
+| options | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 可使组件在以组件左上角为坐标原点的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中进行旋转（坐标系如下图所示）。其中，(x, y, z）指定一个矢量，作为旋转轴。 旋转轴和旋转中心点都基于坐标系设定，组件发生位移时，坐标系不会随之移动。 默认值: 在x、y、z都不指定时，x、y、z的默认值分别为0、0、1。指定了x、y、z任何一个值时，x、y、z中未指定的值默认为0。 { centerX: '50%', centerY: '50%', centerZ: 0, perspective: 0 } 单位：vp ![](./img/zh-cn_image_0000002631251690.png)。 当options的值为undefined时，恢复为无旋转效果。 |
 
 返回值：
 
@@ -79,7 +80,7 @@ rotate(options: Optional<RotateOptions | RotateAngleOptions>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | RotateOptions可使组件在以组件左上角为坐标原点的坐标系中进行旋转（坐标系如下图所示）。其中，(x, y, z）指定一个矢量，作为旋转轴。 旋转轴和旋转中心点都基于[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)设定，组件发生位移时，坐标系不会随之移动。 默认值：在x、y、z都不指定时，x、y、z的默认值分别为0、0、1。指定了x、y、z任何一个值时，x、y、z中未指定的值默认为0。 { centerX: '50%', centerY: '50%', centerZ: 0, perspective: 0 } RotateAngleOptions可使组件在以组件左上角为坐标原点的坐标系中进行旋转（坐标系如下图所示）。其中，(angleX, angleY, angleZ）指定三个轴方向上的旋转角。 默认值： { angleX:0, angleY:0, angleZ:0, centerX: '50%', centerY: '50%', centerZ: 0, perspective: 0 } ![](./img/zh-cn_image_0000002656468111.png) 当options的值为undefined时，恢复为无旋转效果。 |
+| options | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | RotateOptions可使组件在以组件左上角为坐标原点的坐标系中进行旋转（坐标系如下图所示）。其中，(x, y, z）指定一个矢量，作为旋转轴。 旋转轴和旋转中心点都基于[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)设定，组件发生位移时，坐标系不会随之移动。 默认值：在x、y、z都不指定时，x、y、z的默认值分别为0、0、1。指定了x、y、z任何一个值时，x、y、z中未指定的值默认为0。 { centerX: '50%', centerY: '50%', centerZ: 0, perspective: 0 } RotateAngleOptions可使组件在以组件左上角为坐标原点的坐标系中进行旋转（坐标系如下图所示）。其中，(angleX, angleY, angleZ）指定三个轴方向上的旋转角。 默认值： { angleX:0, angleY:0, angleZ:0, centerX: '50%', centerY: '50%', centerZ: 0, perspective: 0 } ![](./img/zh-cn_image_0000002631251690.png) 当options的值为undefined时，恢复为无旋转效果。 |
 
 返回值：
 
@@ -103,7 +104,7 @@ translate(value: TranslateOptions): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [TranslateOptions](#translateoptions对象说明) | 是 | 可使组件在以组件左上角为坐标原点的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中进行移动（坐标系如下图所示）。其中，x，y，z的值分别表示在对应轴移动的距离，值为正时表示向对应轴的正向移动，值为负时表示向对应轴的反向移动。移动距离支持数字和字符串（比如'10px'，'10%'）两种类型。 默认值: { x: 0, y: 0, z: 0 } 单位：vp ![](./img/zh-cn_image_0000002656468111.png) **说明：** z轴方向移动时由于观察点位置不变，z的值接近观察点组件会有放大效果，远离则缩小。 ![](./img/zh-cn_image_0000002656349595.png) |
+| value | [TranslateOptions](#translateoptions对象说明) | 是 | 可使组件在以组件左上角为坐标原点的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中进行移动（坐标系如下图所示）。其中，x，y，z的值分别表示在对应轴移动的距离，值为正时表示向对应轴的正向移动，值为负时表示向对应轴的反向移动。移动距离支持数字和字符串（比如'10px'，'10%'）两种类型。 默认值: { x: 0, y: 0, z: 0 } 单位：vp ![](./img/zh-cn_image_0000002631251690.png) **说明：** z轴方向移动时由于观察点位置不变，z的值接近观察点组件会有放大效果，远离则缩小。 ![](./img/zh-cn_image_0000002631253170.png) |
 
 返回值：
 
@@ -129,7 +130,7 @@ translate(translate: Optional<TranslateOptions>): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| translate | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 可使组件在以组件左上角为坐标原点的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中进行移动（坐标系如下图所示）。其中，x，y，z的值分别表示在对应轴移动的距离，值为正时表示向对应轴的正向移动，值为负时表示向对应轴的反向移动。移动距离支持数字和字符串（比如'10px'，'10%'）两种类型。 默认值: { x: 0, y: 0, z: 0 } 单位：vp ![](./img/zh-cn_image_0000002656468111.png) **说明：** z轴方向移动时由于观察点位置不变，z的值接近观察点组件会有放大效果，远离则缩小。 ![](./img/zh-cn_image_0000002656349595.png) 当translate的值为undefined时，恢复为无平移效果。 |
+| translate | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 可使组件在以组件左上角为坐标原点的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中进行移动（坐标系如下图所示）。其中，x，y，z的值分别表示在对应轴移动的距离，值为正时表示向对应轴的正向移动，值为负时表示向对应轴的反向移动。移动距离支持数字和字符串（比如'10px'，'10%'）两种类型。 默认值: { x: 0, y: 0, z: 0 } 单位：vp ![](./img/zh-cn_image_0000002631251690.png) **说明：** z轴方向移动时由于观察点位置不变，z的值接近观察点组件会有放大效果，远离则缩小。 ![](./img/zh-cn_image_0000002631253170.png) 当translate的值为undefined时，恢复为无平移效果。 |
 
 返回值：
 
@@ -391,7 +392,7 @@ struct TransformExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230182.png)
+ ![](./img/zh-cn_image_0000002661612353.png)
 
 #### [h2]示例2（设置旋转视距）
 
@@ -434,7 +435,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070272.gif)
+ ![](./img/zh-cn_image_0000002631413062.gif)
 
 #### [h2]示例3（按中心点旋转）
 
@@ -507,7 +508,7 @@ struct MatrixExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469549.png)
+ ![](./img/zh-cn_image_0000002661732293.png)
 
 #### [h2]示例4（通过transform3D实现图形变换）
 
@@ -543,7 +544,7 @@ struct Tests {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349597.png)
+ ![](./img/zh-cn_image_0000002631253172.png)
 
 #### [h2]示例5（按各轴旋转角的方式实现旋转）
 
@@ -583,4 +584,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230184.png)
+ ![](./img/zh-cn_image_0000002661612355.png)

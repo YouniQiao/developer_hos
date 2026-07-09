@@ -2,7 +2,8 @@
 title: "@ohos.file.fileuri (文件URI)"
 upstream_id: "harmonyos-references/js-apis-file-fileuri"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:12.882763"
+content_hash: "2231012ff3d5"
+synced_at: "2026-07-09T00:58:59.590984"
 ---
 
 # @ohos.file.fileuri (文件URI)

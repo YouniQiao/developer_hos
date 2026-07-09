@@ -2,7 +2,8 @@
 title: "Matrix2D"
 upstream_id: "harmonyos-references/ts-components-canvas-matrix2d"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:30.947494"
+content_hash: "b08cb7332d61"
+synced_at: "2026-07-09T00:58:03.673353"
 ---
 
 # Matrix2D
@@ -106,7 +107,7 @@ struct Parameter {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230664.png)
+ ![](./img/zh-cn_image_0000002661732785.png)
 
 #### 方法
 
@@ -157,7 +158,7 @@ struct Identity {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070754.png)
+ ![](./img/zh-cn_image_0000002631253664.png)
 
 #### [h2]invert
 
@@ -212,7 +213,7 @@ struct Invert {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470031.png)
+ ![](./img/zh-cn_image_0000002661612845.png)
 
 #### [h2]multiply(deprecated)
 
@@ -294,7 +295,7 @@ struct Rotate {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350079.png)
+ ![](./img/zh-cn_image_0000002631413556.png)
 
 #### [h2]rotate10+
 
@@ -357,7 +358,7 @@ struct Rotate {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230666.png)
+ ![](./img/zh-cn_image_0000002661732787.png)
 
 #### [h2]translate
 
@@ -419,7 +420,7 @@ struct Translate {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070756.png)
+ ![](./img/zh-cn_image_0000002631253666.png)
 
 #### [h2]scale
 
@@ -481,4 +482,4 @@ struct Scale {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470033.png)
+ ![](./img/zh-cn_image_0000002661612847.png)

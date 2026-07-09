@@ -2,7 +2,8 @@
 title: "visionImageAnalyzer（AI识图控件）"
 upstream_id: "harmonyos-references/vision-image-analyzer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:01.227505"
+content_hash: "9888a082fc41"
+synced_at: "2026-07-09T01:01:46.330419"
 ---
 
 # visionImageAnalyzer（AI识图控件）

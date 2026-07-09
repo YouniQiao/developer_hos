@@ -2,7 +2,8 @@
 title: "PreviewOutput_Callbacks"
 upstream_id: "harmonyos-references/capi-oh-camera-previewoutput-callbacks"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:18.504399"
+content_hash: "f7490cfdfa0d"
+synced_at: "2026-07-09T01:00:27.146028"
 ---
 
 # PreviewOutput_Callbacks

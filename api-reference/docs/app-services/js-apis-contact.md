@@ -2,7 +2,8 @@
 title: "@ohos.contact (联系人)"
 upstream_id: "harmonyos-references/js-apis-contact"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:24.218641"
+content_hash: "430fc3b9109f"
+synced_at: "2026-07-09T01:01:17.966638"
 ---
 
 # @ohos.contact (联系人)

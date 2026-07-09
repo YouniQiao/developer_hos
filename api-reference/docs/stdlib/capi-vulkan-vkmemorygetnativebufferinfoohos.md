@@ -2,7 +2,8 @@
 title: "VkMemoryGetNativeBufferInfoOHOS"
 upstream_id: "harmonyos-references/capi-vulkan-vkmemorygetnativebufferinfoohos"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:06.444010"
+content_hash: "59c0d17af0a8"
+synced_at: "2026-07-09T01:01:49.759071"
 ---
 
 # VkMemoryGetNativeBufferInfoOHOS

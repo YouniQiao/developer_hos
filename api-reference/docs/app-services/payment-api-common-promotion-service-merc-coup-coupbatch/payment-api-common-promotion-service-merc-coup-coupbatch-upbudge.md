@@ -1,9 +1,12 @@
 ---
+
 title: "修改券批次预算"
 upstream_id: "harmonyos-references/payment-api-common-promotion-service-merc-coup-coupbatch-upbudge"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:46.675510"
+synced_at: "2026-07-09T01:01:35.333023"
+content_hash: "dc2b47d7dfb8"
 ---
+
 
 # 修改券批次预算
 

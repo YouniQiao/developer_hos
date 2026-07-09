@@ -1,9 +1,12 @@
 ---
+
 title: "自定义绘制设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-draw-modifier"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:48.193933"
+synced_at: "2026-07-09T00:57:42.811466"
+content_hash: "59195d19cd3e"
 ---
+
 
 # 自定义绘制设置
 

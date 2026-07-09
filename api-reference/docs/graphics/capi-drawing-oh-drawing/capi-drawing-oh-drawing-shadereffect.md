@@ -2,7 +2,8 @@
 title: "OH_Drawing_ShaderEffect"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-shadereffect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:09.775613"
+content_hash: "116e38dbc4f4"
+synced_at: "2026-07-09T01:01:03.880796"
 ---
 
 # OH_Drawing_ShaderEffect

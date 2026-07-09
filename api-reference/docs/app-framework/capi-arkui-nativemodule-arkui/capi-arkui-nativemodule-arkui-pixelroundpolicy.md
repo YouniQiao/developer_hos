@@ -2,7 +2,8 @@
 title: "ArkUI_PixelRoundPolicy"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-pixelroundpolicy"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:54.873283"
+content_hash: "970a4ad406dd"
+synced_at: "2026-07-09T00:58:44.780218"
 ---
 
 # ArkUI_PixelRoundPolicy

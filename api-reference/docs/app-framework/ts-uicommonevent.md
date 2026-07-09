@@ -2,7 +2,8 @@
 title: "设置事件回调"
 upstream_id: "harmonyos-references/ts-uicommonevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:58.544202"
+content_hash: "919a6df24ece"
+synced_at: "2026-07-09T00:58:19.067634"
 ---
 
 # 设置事件回调

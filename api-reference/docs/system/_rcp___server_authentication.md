@@ -2,7 +2,8 @@
 title: "Rcp_ServerAuthentication"
 upstream_id: "harmonyos-references/_rcp___server_authentication"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:01.710597"
+content_hash: "2637309ad697"
+synced_at: "2026-07-09T00:59:35.457242"
 ---
 
 # Rcp_ServerAuthentication

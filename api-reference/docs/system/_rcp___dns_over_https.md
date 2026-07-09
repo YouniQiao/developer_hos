@@ -2,14 +2,15 @@
 title: "Rcp_DnsOverHttps"
 upstream_id: "harmonyos-references/_rcp___dns_over_https"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:00.064067"
+content_hash: "05e1c34eeafd"
+synced_at: "2026-07-09T00:59:34.046352"
 ---
 
 # Rcp_DnsOverHttps
 
 #### 概述
 
-HTTPS上的DNS配置如果设置，则首选由DOH dns服务器解析的地址。
+HTTPS上的DNS配置如果设置，则首选由DOH DNS服务器解析的地址。
 
 起始版本： 5.0.0(12)
 
@@ -35,7 +36,7 @@ bool Rcp_DnsOverHttps::skipCertificatesValidation
 ```
  描述
 
-判断是否跳过证书验证。默认值为false。
+判断是否跳过证书验证。true代表跳过，false代表不跳过，默认值为false。
 
 #### [h2]url
 

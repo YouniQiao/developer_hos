@@ -2,7 +2,8 @@
 title: "HidDdk"
 upstream_id: "harmonyos-references/capi-hidddk"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:30.557476"
+content_hash: "7c12625abaf9"
+synced_at: "2026-07-09T00:59:54.309363"
 ---
 
 # HidDdk

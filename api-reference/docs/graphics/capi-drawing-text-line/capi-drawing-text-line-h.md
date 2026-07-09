@@ -2,7 +2,8 @@
 title: "drawing_text_line.h"
 upstream_id: "harmonyos-references/capi-drawing-text-line-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:03.422254"
+content_hash: "84eb1185461a"
+synced_at: "2026-07-09T01:00:58.914409"
 ---
 
 # drawing_text_line.h

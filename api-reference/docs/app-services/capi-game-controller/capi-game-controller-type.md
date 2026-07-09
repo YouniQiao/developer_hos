@@ -2,7 +2,8 @@
 title: "game_controller_type.h"
 upstream_id: "harmonyos-references/capi-game-controller-type"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:24.640132"
+content_hash: "a162e457de7e"
+synced_at: "2026-07-09T01:01:17.393068"
 ---
 
 # game_controller_type.h

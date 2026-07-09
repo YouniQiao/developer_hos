@@ -2,7 +2,8 @@
 title: "@ohos.notification (Notification模块)"
 upstream_id: "harmonyos-references/js-apis-notification"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:38.268735"
+content_hash: "85dd6da6855f"
+synced_at: "2026-07-09T01:01:29.932986"
 ---
 
 # @ohos.notification (Notification模块)

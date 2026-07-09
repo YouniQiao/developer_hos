@@ -2,7 +2,8 @@
 title: "TabTitleBar"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-tabtitlebar"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:56.097854"
+content_hash: "001da5d1f802"
+synced_at: "2026-07-09T00:58:17.111292"
 ---
 
 # TabTitleBar
@@ -172,7 +173,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470201.png)
+ ![](./img/zh-cn_image_0000002631253836.png)
 
 #### [h2]示例2（右侧自定义按钮播报）
 
@@ -279,7 +280,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350249.png)
+ ![](./img/zh-cn_image_0000002661613019.png)
 
 #### [h2]示例3（设置Symbol类型图标）
 
@@ -393,4 +394,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230836.png)
+ ![](./img/zh-cn_image_0000002631413730.png)

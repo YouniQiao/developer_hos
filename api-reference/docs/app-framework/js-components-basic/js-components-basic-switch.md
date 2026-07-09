@@ -2,7 +2,8 @@
 title: "switch"
 upstream_id: "harmonyos-references/js-components-basic-switch"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:07.938787"
+content_hash: "09dd23f054bb"
+synced_at: "2026-07-09T00:58:23.048814"
 ---
 
 # switch
@@ -120,4 +121,4 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002626230900.gif)
+ ![](./img/zh-cn_image_0000002631413794.gif)

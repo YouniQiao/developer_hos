@@ -2,7 +2,8 @@
 title: "HdsTabs"
 upstream_id: "harmonyos-references/ui-design-hdstabs"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:26.843716"
+content_hash: "d1977f69384d"
+synced_at: "2026-07-09T00:59:10.388597"
 ---
 
 # HdsTabs
@@ -1180,7 +1181,7 @@ struct Index {
 
 | 常显 | 常隐 | 跟手 |
 | --- | --- | --- |
-| ![](./img/zh-cn_image_0000002656350643.gif) | ![](./img/zh-cn_image_0000002626231230.gif) | ![](./img/zh-cn_image_0000002626071318.gif) |
+| ![](./img/zh-cn_image_0000002661613413.gif) | ![](./img/zh-cn_image_0000002631414126.gif) | ![](./img/zh-cn_image_0000002661733355.gif) |
 
 #### [h2]支持渐变模糊
 
@@ -1223,7 +1224,7 @@ struct Index {
 ```
  效果：
 
-![](./img/zh-cn_image_0000002656470595.png)
+![](./img/zh-cn_image_0000002631254234.png)
 
 #### [h2]支持出血效果
 
@@ -1271,7 +1272,7 @@ struct Index {
 ```
  效果：
 
-![](./img/zh-cn_image_0000002656350645.jpg)
+![](./img/zh-cn_image_0000002661613415.jpg)
 
 #### [h2]页签半屏居中对齐布局
 
@@ -1316,7 +1317,7 @@ struct Index {
 ```
  效果：
 
-![](./img/zh-cn_image_0000002626231232.jpg)
+![](./img/zh-cn_image_0000002631414128.jpg)
 
 #### [h2]页签栏悬浮样式
 
@@ -1401,4 +1402,4 @@ struct Index {
 ```
  效果：
 
-![](./img/zh-cn_image_0000002626071320.gif)
+![](./img/zh-cn_image_0000002661733357.gif)

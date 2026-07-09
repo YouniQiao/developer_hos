@@ -2,7 +2,8 @@
 title: "CloudDisk_FileSyncState"
 upstream_id: "harmonyos-references/capi-clouddisk-clouddisk-filesyncstate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:15.926700"
+content_hash: "80f789a6d49c"
+synced_at: "2026-07-09T00:59:01.556276"
 ---
 
 # CloudDisk_FileSyncState

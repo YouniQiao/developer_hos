@@ -2,7 +2,8 @@
 title: "Class (TranslateAnimation)"
 upstream_id: "harmonyos-references/map-map-translateanimation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:33.420500"
+content_hash: "55b8b69f75c7"
+synced_at: "2026-07-09T01:01:25.333786"
 ---
 
 # Class (TranslateAnimation)

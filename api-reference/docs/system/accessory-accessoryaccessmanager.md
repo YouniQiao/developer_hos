@@ -2,7 +2,8 @@
 title: "accessoryAccessManager（配件接入管理）"
 upstream_id: "harmonyos-references/accessory-accessoryaccessmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:44.829713"
+content_hash: "830bbbf89b0e"
+synced_at: "2026-07-09T00:59:22.758719"
 ---
 
 # accessoryAccessManager（配件接入管理）
@@ -29,7 +30,7 @@ import { accessoryAccessManager } from '@kit.AccessoryKit';
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| PARTNER_BLE_CONNECT | 0 | 0表示使用开发者提供的BLE MAC地址来创建BLE GATT连接。 |
+| PARTNER_BLE_CONNECT | 0 | 使用开发者提供的BLE MAC地址来创建BLE GATT关系。 |
 
 #### ServiceName
 
@@ -43,9 +44,9 @@ import { accessoryAccessManager } from '@kit.AccessoryKit';
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| PARTNER_APP_ACCESSORY_COLLABORATION | P_AppAccessoryCollaboration | 该应用和配件之间会相互交互，唤醒彼此并传输数据。 |
-| PARTNER_SHARE_SERVICE | P_ShareService | 接收从配件共享的文件。 |
-| PARTNER_DISTRIBUTED_CAMERA_SERVICE | P_DCameraService | 将该配件用作分布式摄像头。 |
+| PARTNER_APP_ACCESSORY_COLLABORATION | 'P_AppAccessoryCollaboration' | 该应用和配件之间会相互交互，唤醒彼此并传输数据。 |
+| PARTNER_SHARE_SERVICE | 'P_ShareService' | 接收从配件共享的文件。 |
+| PARTNER_DISTRIBUTED_CAMERA_SERVICE | 'P_DCameraService' | 将该配件用作分布式摄像头。 |
 
 #### WakeupType
 
@@ -251,7 +252,7 @@ showAccessPicker(items: Array<PickerItemInfo>, callback: Callback<AccessEventInf
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 重命名结果：0成功、非0失败。 |
+| number | 操作结果：0成功，非0失败。 |
 
 错误码：
 
@@ -356,7 +357,7 @@ modifyDisplayName(accessoryId: string, displayName: string): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 重命名结果：0成功、非0失败。 |
+| number | 重命名结果：0成功，非0失败。 |
 
 错误码：
 
@@ -443,7 +444,7 @@ detachService(attachId: number, callback: Callback<DetachServiceEvent>): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 重命名结果：0成功、非0失败。 |
+| number | 操作结果：0成功，非0失败。 |
 
 错误码：
 
@@ -574,7 +575,7 @@ registerConnectListener(attachId: number, stateCallback: Callback<ChannelEventIn
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 注册监听器结果，返回0成功，返回非0失败。 |
+| number | 注册监听器结果：0成功，非0失败。 |
 
 错误码：
 
@@ -636,7 +637,7 @@ unregisterConnectListener(attachId: number): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 取消注册监听器结果，返回0成功，返回非0失败。 |
+| number | 取消注册监听器结果：0成功，非0失败。 |
 
 错误码：
 
@@ -684,7 +685,7 @@ connect(connectRequestInfo: ConnectRequestInfo): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 建立与配件的连接的结果，返回0成功，返回其他失败。 |
+| number | 建立与配件的连接结果：0成功，非0失败。 |
 
 错误码：
 
@@ -737,13 +738,13 @@ disconnect(attachId: number): number
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| attachId | number | 是 | 通道编号。 |
+| attachId | number | 是 | 挂载编号。 |
 
 返回值：
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 断开与配件的连接的结果，返回0成功，返回其他失败。 |
+| number | 断开与配件的连接结果：0成功，非0失败。 |
 
 错误码：
 

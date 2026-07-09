@@ -2,7 +2,8 @@
 title: "OH_Drawing_Path"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-path"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:09.166610"
+content_hash: "446a9e126b42"
+synced_at: "2026-07-09T01:01:03.232038"
 ---
 
 # OH_Drawing_Path

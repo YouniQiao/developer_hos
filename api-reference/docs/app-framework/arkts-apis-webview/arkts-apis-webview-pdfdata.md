@@ -2,7 +2,8 @@
 title: "Class (PdfData)"
 upstream_id: "harmonyos-references/arkts-apis-webview-pdfdata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:03.002683"
+content_hash: "1c9abfa0bd24"
+synced_at: "2026-07-09T00:58:50.469570"
 ---
 
 # Class (PdfData)

@@ -2,7 +2,8 @@
 title: "list-item"
 upstream_id: "harmonyos-references/js-service-widget-container-list-item"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:26.397715"
+content_hash: "e656b7004a8f"
+synced_at: "2026-07-09T00:58:30.583255"
 ---
 
 # list-item

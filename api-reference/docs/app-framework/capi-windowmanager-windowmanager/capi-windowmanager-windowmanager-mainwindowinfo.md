@@ -2,7 +2,8 @@
 title: "WindowManager_MainWindowInfo"
 upstream_id: "harmonyos-references/capi-windowmanager-windowmanager-mainwindowinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:56.586987"
+content_hash: "49c1a004faa3"
+synced_at: "2026-07-09T00:58:45.946736"
 ---
 
 # WindowManager_MainWindowInfo

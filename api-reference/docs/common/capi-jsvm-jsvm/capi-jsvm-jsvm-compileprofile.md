@@ -2,7 +2,8 @@
 title: "JSVM_CompileProfile"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-compileprofile"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:04.352343"
+content_hash: "12327df3611b"
+synced_at: "2026-07-09T01:01:48.191897"
 ---
 
 # JSVM_CompileProfile

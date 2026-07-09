@@ -2,7 +2,8 @@
 title: "DRM_MediaKeyRequestInfo"
 upstream_id: "harmonyos-references/capi-drm-drm-mediakeyrequestinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:20.498481"
+content_hash: "0df80bd4f8d4"
+synced_at: "2026-07-09T01:00:28.413229"
 ---
 
 # DRM_MediaKeyRequestInfo

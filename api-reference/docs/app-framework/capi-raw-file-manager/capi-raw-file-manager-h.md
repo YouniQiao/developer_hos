@@ -2,7 +2,8 @@
 title: "raw_file_manager.h"
 upstream_id: "harmonyos-references/capi-raw-file-manager-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:23.700862"
+content_hash: "996f9e182e4d"
+synced_at: "2026-07-09T00:59:07.885212"
 ---
 
 # raw_file_manager.h

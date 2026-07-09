@@ -2,7 +2,8 @@
 title: "@ohos.worker (启动一个Worker)"
 upstream_id: "harmonyos-references/js-apis-worker"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:18.118594"
+content_hash: "5e331db3ba25"
+synced_at: "2026-07-09T00:57:27.630317"
 ---
 
 # @ohos.worker (启动一个Worker)
@@ -41,7 +42,7 @@ Worker构造函数的选项，用于为Worker添加其他信息。
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | type | 'classic' | 'module' | 否 | 是 | Worker执行脚本的模式类型，暂不支持module类型，默认值为"classic"。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| name | string | 否 | 是 | Worker的名称。 默认值为undefined，此时线程名称为'WorkerThread'。 非默认值情况下，对应的线程名称带有'WorkerThread_'前缀。比如name为'testName'时，对应的线程名称为'WorkerThread_testName'。 线程名称可通过[HeapMemoryInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-util#heapmemoryinfo24)的threadName获取 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| name | string | 否 | 是 | Worker的名称。 默认值为undefined，此时线程名称为'WorkerThread'。 非默认值情况下，对应的线程名称带有'WorkerThread_'前缀。比如name为'testName'时，对应的线程名称为'WorkerThread_testName'。 线程名称可通过[HeapMemoryInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-util#heapmemoryinfo24)的threadName获取。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | shared | boolean | 否 | 是 | 表示Worker共享功能，此接口暂不支持。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | priority18+ | [ThreadWorkerPriority](#threadworkerpriority18) | 否 | 是 | 表示Worker线程优先级。默认值为MEDIUM。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 

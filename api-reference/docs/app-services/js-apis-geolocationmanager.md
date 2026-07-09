@@ -2,7 +2,8 @@
 title: "@ohos.geoLocationManager (位置服务)"
 upstream_id: "harmonyos-references/js-apis-geolocationmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:30.703563"
+content_hash: "af4391bdf8cd"
+synced_at: "2026-07-09T01:01:24.076388"
 ---
 
 # @ohos.geoLocationManager (位置服务)

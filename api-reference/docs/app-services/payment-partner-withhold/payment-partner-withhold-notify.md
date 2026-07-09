@@ -2,7 +2,8 @@
 title: "代扣结果回调通知"
 upstream_id: "harmonyos-references/payment-partner-withhold-notify"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:44.268046"
+content_hash: "91fec9e7058e"
+synced_at: "2026-07-09T01:01:33.624937"
 ---
 
 # 代扣结果回调通知

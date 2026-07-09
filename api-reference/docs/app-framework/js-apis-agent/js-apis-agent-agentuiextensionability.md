@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.AgentUIExtensionAbility (带界面的智能体拓展组件)"
 upstream_id: "harmonyos-references/js-apis-agent-agentuiextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:45.226852"
+content_hash: "bdd9f912d0db"
+synced_at: "2026-07-09T00:57:02.986874"
 ---
 
 # @ohos.app.ability.AgentUIExtensionAbility (带界面的智能体拓展组件)

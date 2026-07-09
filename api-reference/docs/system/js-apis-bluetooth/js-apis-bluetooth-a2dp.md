@@ -2,7 +2,8 @@
 title: "@ohos.bluetooth.a2dp (蓝牙a2dp模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-a2dp"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:45.049358"
+content_hash: "a84792db0527"
+synced_at: "2026-07-09T00:59:22.546883"
 ---
 
 # @ohos.bluetooth.a2dp (蓝牙a2dp模块)

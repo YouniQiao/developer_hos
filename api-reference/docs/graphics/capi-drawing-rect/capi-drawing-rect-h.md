@@ -2,7 +2,8 @@
 title: "drawing_rect.h"
 upstream_id: "harmonyos-references/capi-drawing-rect-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:02.339610"
+content_hash: "fc32f304beb0"
+synced_at: "2026-07-09T01:00:57.739919"
 ---
 
 # drawing_rect.h

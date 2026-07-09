@@ -2,7 +2,8 @@
 title: "xeg_vulkan_rt_visible_mask.h"
 upstream_id: "harmonyos-references/xengine-kit-xeg-vulkan-rt-visible-mask-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:15.893988"
+content_hash: "f4f37d7da408"
+synced_at: "2026-07-09T01:01:09.706474"
 ---
 
 # xeg_vulkan_rt_visible_mask.h

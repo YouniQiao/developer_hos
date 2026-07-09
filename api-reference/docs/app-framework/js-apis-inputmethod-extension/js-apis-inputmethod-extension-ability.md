@@ -2,7 +2,8 @@
 title: "@ohos.InputMethodExtensionAbility (InputMethodExtensionAbility)"
 upstream_id: "harmonyos-references/js-apis-inputmethod-extension-ability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:18.531252"
+content_hash: "a3267fc846b1"
+synced_at: "2026-07-09T00:59:03.630103"
 ---
 
 # @ohos.InputMethodExtensionAbility (InputMethodExtensionAbility)

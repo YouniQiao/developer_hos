@@ -2,7 +2,8 @@
 title: "悬浮事件"
 upstream_id: "harmonyos-references/ts-universal-events-hover"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:32.940692"
+content_hash: "1c0d44ed6069"
+synced_at: "2026-07-09T00:57:36.504057"
 ---
 
 # 悬浮事件
@@ -123,11 +124,11 @@ struct HoverEventExample {
 
 未悬浮时的文本内容与背景颜色：
 
-![](./img/zh-cn_image_0000002656469509.png)
+![](./img/zh-cn_image_0000002661732251.png)
 
 手写笔悬浮时改变文本内容与背景颜色：
 
-![](./img/zh-cn_image_0000002656349557.png)
+![](./img/zh-cn_image_0000002631253130.png)
 
 #### [h2]示例2（使用onHoverMove）
 
@@ -159,4 +160,4 @@ struct OnHoverMoveEventExample {
 
 手写笔悬浮在Button组件上时，UI不断刷新笔尖的位置信息：
 
-![](./img/zh-cn_image_0000002626230144.png)
+![](./img/zh-cn_image_0000002661612315.png)

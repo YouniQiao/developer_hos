@@ -2,7 +2,8 @@
 title: "Rdb_SubscribeCallback"
 upstream_id: "harmonyos-references/capi-rdb-rdb-subscribecallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:08.791151"
+content_hash: "a9c3a7cb5ba3"
+synced_at: "2026-07-09T00:57:20.453253"
 ---
 
 # Rdb_SubscribeCallback

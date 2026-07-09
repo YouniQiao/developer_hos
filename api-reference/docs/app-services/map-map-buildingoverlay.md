@@ -2,7 +2,8 @@
 title: "Interface (BuildingOverlay)"
 upstream_id: "harmonyos-references/map-map-buildingoverlay"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:33.633876"
+content_hash: "fb11c8603bb3"
+synced_at: "2026-07-09T01:01:25.695781"
 ---
 
 # Interface (BuildingOverlay)
@@ -172,7 +173,7 @@ let buildingOverlayOptions: mapCommon.BuildingOverlayParams =
     // 3D建筑的选中楼层颜色
     floorColor: 0xff000000,
     // 3D建筑的展示层级
-    showLevel: 14,
+    showLevel: 16,
     // 3D建筑选中楼层从底部升起的动画时长
     animationDuration: 5000,
     // 3D建筑侧面的纹理
@@ -188,7 +189,7 @@ let buildingOverlayOptions: mapCommon.BuildingOverlayParams =
       width: 3
     }
   }
-let buildingOverlay: map.BuildingOverlay= await this.mapController.addBuildingOverlay(buildingOverlayOptions);
+let buildingOverlay: map.BuildingOverlay = await this.mapController.addBuildingOverlay(buildingOverlayOptions);
 ```
 
 #### [h2]getId

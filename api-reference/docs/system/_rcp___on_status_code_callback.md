@@ -2,7 +2,8 @@
 title: "Rcp_OnStatusCodeReceiveCallback"
 upstream_id: "harmonyos-references/_rcp___on_status_code_callback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:02.724748"
+content_hash: "904ec97e8f92"
+synced_at: "2026-07-09T00:59:36.177443"
 ---
 
 # Rcp_OnStatusCodeReceiveCallback

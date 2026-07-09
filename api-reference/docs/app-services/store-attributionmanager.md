@@ -2,7 +2,8 @@
 title: "attributionManager（应用归因服务）"
 upstream_id: "harmonyos-references/store-attributionmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:22.307351"
+content_hash: "7e3c952537e1"
+synced_at: "2026-07-09T01:01:14.882343"
 ---
 
 # attributionManager（应用归因服务）
@@ -145,7 +146,7 @@ class  Attribution {
       // 用于计算签名的随机数，不带'-'
       let nonce: string = util.generateRandomUUID().replace(/-/g, '');
       // 时间戳
-      let timestamp: number = Date.now()
+      let timestamp: number = Date.now();
       let adSourceInfo: attributionManager.AdSourceInfo = {
         adTechId: adTechId,
         campaignId: campaignId,
@@ -230,7 +231,7 @@ class Attribution {
         // 从6.0.2（22）开始，增加事件转化时间
         adTriggerInfo.timestamp = Date.now();
         adTriggerInfo.serviceTag = 'testServiceTag';
-      };
+      }
 
       attributionManager.registerTrigger(adTriggerInfo).then(() => {
         hilog.info(0, TAG, 'Succeeded in registering triggerdata.');

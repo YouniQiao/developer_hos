@@ -2,7 +2,8 @@
 title: "AbilityInfo"
 upstream_id: "harmonyos-references/js-apis-bundle-abilityinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:56.640172"
+content_hash: "406b660ef83c"
+synced_at: "2026-07-09T00:57:11.427745"
 ---
 
 # AbilityInfo

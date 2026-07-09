@@ -2,7 +2,8 @@
 title: "cloudDatabase (云数据库模块)"
 upstream_id: "harmonyos-references/cloudfoundation-clouddatabase"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:23.569801"
+content_hash: "370fef05cb4a"
+synced_at: "2026-07-09T01:01:16.926102"
 ---
 
 # cloudDatabase (云数据库模块)

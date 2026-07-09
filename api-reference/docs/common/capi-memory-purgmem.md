@@ -2,7 +2,8 @@
 title: "PurgMem"
 upstream_id: "harmonyos-references/capi-memory-purgmem"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:04.438629"
+content_hash: "913dcb8e2b37"
+synced_at: "2026-07-09T01:01:48.189401"
 ---
 
 # PurgMem

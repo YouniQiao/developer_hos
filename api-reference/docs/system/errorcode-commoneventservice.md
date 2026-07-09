@@ -2,7 +2,8 @@
 title: "事件错误码"
 upstream_id: "harmonyos-references/errorcode-commoneventservice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:13.424421"
+content_hash: "b33a8f7343ac"
+synced_at: "2026-07-09T00:59:44.927856"
 ---
 
 # 事件错误码

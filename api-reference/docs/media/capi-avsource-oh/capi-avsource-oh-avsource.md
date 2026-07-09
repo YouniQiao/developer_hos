@@ -2,7 +2,8 @@
 title: "OH_AVSource"
 upstream_id: "harmonyos-references/capi-avsource-oh-avsource"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:04.606061"
+content_hash: "8dc037b06817"
+synced_at: "2026-07-09T01:00:16.172801"
 ---
 
 # OH_AVSource

@@ -2,7 +2,8 @@
 title: "Interface (AudioVolumeManager)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audiovolumemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:53.307171"
+content_hash: "51aaef6e8056"
+synced_at: "2026-07-09T01:00:08.796691"
 ---
 
 # Interface (AudioVolumeManager)

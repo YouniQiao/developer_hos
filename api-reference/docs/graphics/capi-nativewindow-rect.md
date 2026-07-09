@@ -2,7 +2,8 @@
 title: "Rect"
 upstream_id: "harmonyos-references/capi-nativewindow-rect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:07.357830"
+content_hash: "df9be1dc94d9"
+synced_at: "2026-07-09T01:01:01.782669"
 ---
 
 # Rect

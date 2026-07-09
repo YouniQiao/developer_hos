@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.CompletionHandler (拉起应用结果的操作类)"
 upstream_id: "harmonyos-references/js-apis-app-ability-completionhandler"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:46.485257"
+content_hash: "5032164170ca"
+synced_at: "2026-07-09T00:57:04.028048"
 ---
 
 # @ohos.app.ability.CompletionHandler (拉起应用结果的操作类)

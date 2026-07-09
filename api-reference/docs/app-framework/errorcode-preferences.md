@@ -2,7 +2,8 @@
 title: "用户首选项错误码"
 upstream_id: "harmonyos-references/errorcode-preferences"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:11.869139"
+content_hash: "cdb16ffa2b44"
+synced_at: "2026-07-09T00:57:22.292262"
 ---
 
 # 用户首选项错误码

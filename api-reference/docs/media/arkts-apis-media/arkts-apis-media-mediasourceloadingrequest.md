@@ -2,7 +2,8 @@
 title: "Interface (MediaSourceLoadingRequest)"
 upstream_id: "harmonyos-references/arkts-apis-media-mediasourceloadingrequest"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:34.347339"
+content_hash: "dfccdb88163c"
+synced_at: "2026-07-09T01:00:38.869233"
 ---
 
 # Interface (MediaSourceLoadingRequest)

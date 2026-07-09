@@ -2,7 +2,8 @@
 title: "@ohos.selectionInput.SelectionPanel (划词面板)"
 upstream_id: "harmonyos-references/js-apis-selectioninput-selectionpanel"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:08.114013"
+content_hash: "ca11e2980e63"
+synced_at: "2026-07-09T00:59:40.475197"
 ---
 
 # @ohos.selectionInput.SelectionPanel (划词面板)

@@ -2,7 +2,8 @@
 title: "drawing_shader_effect.h"
 upstream_id: "harmonyos-references/capi-drawing-shader-effect-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:02.836592"
+content_hash: "e0b5564a7b97"
+synced_at: "2026-07-09T01:00:58.056144"
 ---
 
 # drawing_shader_effect.h

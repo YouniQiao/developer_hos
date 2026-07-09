@@ -2,7 +2,8 @@
 title: "基础类型定义"
 upstream_id: "harmonyos-references/ts-types"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:58.521006"
+content_hash: "bc1f2a859d51"
+synced_at: "2026-07-09T00:58:18.810248"
 ---
 
 # 基础类型定义
@@ -37,6 +38,8 @@ type Resource = import('../api/global/resource').Resource
 - $rawfile不支持通过[预览器](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ide-previewer-arkts-js)预览。
 
 #### Length
+
+type Length = string | number | Resource
 
 长度类型，用于描述尺寸单位。
 
@@ -119,7 +122,11 @@ type ResourceStr = string | Resource
 
 #### Padding
 
+type Padding = { top: Length; right: Length; bottom: Length; left: Length; }
+
 内边距类型，用于描述组件不同方向的内边距。
+
+引入该对象时，至少传入一个参数。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -127,12 +134,12 @@ type ResourceStr = string | Resource
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 类型 | 只读 | 可选 | 说明 |
-| --- | --- | --- | --- | --- |
-| top | [Length](#length) | 否 | 是 | 上内边距，组件内元素距组件顶部的尺寸。 |
-| right | [Length](#length) | 否 | 是 | 右内边距，组件内元素距组件右边界的尺寸。 |
-| bottom | [Length](#length) | 否 | 是 | 下内边距，组件内元素距组件底部的尺寸。 |
-| left | [Length](#length) | 否 | 是 | 左内边距，组件内元素距组件左边界的尺寸。 |
+| 名称 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| top | [Length](#length) | 否 | 上内边距，组件内元素距组件顶部的尺寸。 |
+| right | [Length](#length) | 否 | 右内边距，组件内元素距组件右边界的尺寸。 |
+| bottom | [Length](#length) | 否 | 下内边距，组件内元素距组件底部的尺寸。 |
+| left | [Length](#length) | 否 | 左内边距，组件内元素距组件左边界的尺寸。 |
 
 #### LocalizedPadding12+
 
@@ -155,7 +162,11 @@ type ResourceStr = string | Resource
 
 #### Margin
 
+type Margin = Padding
+
 外边距类型，用于描述组件不同方向的外边距。
+
+引入该对象时，至少传入一个参数。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -163,16 +174,17 @@ type ResourceStr = string | Resource
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 类型 | 只读 | 可选 | 说明 |
-| --- | --- | --- | --- | --- |
-| top | [Length](#length) | 否 | 是 | 上外边距，组件顶部距组件外元素的尺寸。 |
-| right | [Length](#length) | 否 | 是 | 右外边距，组件右边界距组件外元素的尺寸。 |
-| bottom | [Length](#length) | 否 | 是 | 下外边距，组件底部距组件外元素的尺寸。 |
-| left | [Length](#length) | 否 | 是 | 左外边距，组件左边界距组件外元素的尺寸。 |
+| 名称 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| Margin | [Padding](#padding) | 否 | 外边距类型，用于描述组件不同方向的外边距，其类型与内边距类型一致。 |
 
 #### LocalizedMargin12+
 
+type LocalizedMargin = LocalizedPadding
+
 外边距类型，用于描述组件不同方向的外边距。
+
+引入该对象时，至少传入一个参数。
 
 卡片能力： 从API version 12开始，该接口支持在ArkTS卡片中使用。
 
@@ -182,14 +194,13 @@ type ResourceStr = string | Resource
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 类型 | 只读 | 可选 | 说明 |
-| --- | --- | --- | --- | --- |
-| top | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12)12+ | 否 | 是 | 上外边距，组件顶部距组件外元素的尺寸。 |
-| end | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12)12+ | 否 | 是 | 右外边距，组件右边界距组件外元素的尺寸。 从右至左显示语言模式下为 左外边距，组件左边界距组件外元素的尺寸。 |
-| bottom | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12)12+ | 否 | 是 | 下外边距，组件底部距组件外元素的尺寸。 |
-| start | [LengthMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#lengthmetrics12)12+ | 否 | 是 | 左外边距，组件左边界距组件外元素的尺寸。 从右至左显示语言模式下为 右外边距，组件右边界距组件外元素的尺寸。 |
+| 名称 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| LocalizedMargin | [LocalizedPadding](#localizedpadding12) | 否 | 外边距类型，用于描述组件不同方向的外边距，其类型与内边距类型一致。 |
 
 #### EdgeWidths9+
+
+type EdgeWidths = { top: Length; right: Length; bottom: Length; left: Length; }
 
 边框宽度类型，用于描述组件边框不同方向的宽度。
 
@@ -201,12 +212,30 @@ type ResourceStr = string | Resource
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 类型 | 只读 | 可选 | 说明 |
-| --- | --- | --- | --- | --- |
-| top | [Length](#length) | 否 | 是 | 组件上边框宽度。 |
-| right | [Length](#length) | 否 | 是 | 组件右边框宽度。 |
-| bottom | [Length](#length) | 否 | 是 | 组件下边框宽度。 |
-| left | [Length](#length) | 否 | 是 | 组件左边框宽度。 |
+| 名称 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| top | [Length](#length) | 否 | 组件上边框宽度。 |
+| right | [Length](#length) | 否 | 组件右边框宽度。 |
+| bottom | [Length](#length) | 否 | 组件下边框宽度。 |
+| left | [Length](#length) | 否 | 组件左边框宽度。 |
+
+#### EdgeWidth10+
+
+type EdgeWidth = EdgeWidths
+
+边框宽度类型，用于描述组件边框不同方向的宽度。
+
+引入该对象时，至少传入一个参数。
+
+元服务API： 从API version 11开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
+
+系统能力： SystemCapability.ArkUI.ArkUI.Full
+
+| 名称 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| EdgeWidth | [EdgeWidths](#edgewidths9) | 否 | 组件边框不同方向的宽度。 |
 
 #### LocalizedEdgeWidths12+
 
@@ -231,6 +260,8 @@ type ResourceStr = string | Resource
 
 #### BorderRadiuses9+
 
+type BorderRadiuses = { topLeft: Length; topRight: Length; bottomLeft: Length; bottomRight: Length; }
+
 圆角类型，用于描述组件边框圆角半径。
 
 引用该对象时，至少传入一个参数。
@@ -241,12 +272,12 @@ type ResourceStr = string | Resource
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 类型 | 只读 | 可选 | 说明 |
-| --- | --- | --- | --- | --- |
-| topLeft | [Length](#length) | 否 | 是 | 组件左上角圆角半径。 |
-| topRight | [Length](#length) | 否 | 是 | 组件右上角圆角半径。 |
-| bottomLeft | [Length](#length) | 否 | 是 | 组件左下角圆角半径。 |
-| bottomRight | [Length](#length) | 否 | 是 | 组件右下角圆角半径。 |
+| 名称 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| topLeft | [Length](#length) | 否 | 组件左上角圆角半径。 |
+| topRight | [Length](#length) | 否 | 组件右上角圆角半径。 |
+| bottomLeft | [Length](#length) | 否 | 组件左下角圆角半径。 |
+| bottomRight | [Length](#length) | 否 | 组件右下角圆角半径。 |
 
 #### LocalizedBorderRadiuses12+
 
@@ -271,6 +302,8 @@ type ResourceStr = string | Resource
 
 #### EdgeColors9+
 
+type EdgeColors = { top: ResourceColor; right: ResourceColor; bottom: ResourceColor; left: ResourceColor; }
+
 边框颜色，用于描述组件边框四条边的颜色。
 
 引入该对象时，至少传入一个参数。
@@ -281,12 +314,12 @@ type ResourceStr = string | Resource
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 类型 | 只读 | 可选 | 说明 |
-| --- | --- | --- | --- | --- |
-| top | [ResourceColor](#resourcecolor) | 否 | 是 | 组件上边框颜色。 |
-| right | [ResourceColor](#resourcecolor) | 否 | 是 | 组件右边框颜色。 |
-| bottom | [ResourceColor](#resourcecolor) | 否 | 是 | 组件下边框颜色。 |
-| left | [ResourceColor](#resourcecolor) | 否 | 是 | 组件左边框颜色。 |
+| 名称 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| top | [ResourceColor](#resourcecolor) | 否 | 组件上边框颜色。 |
+| right | [ResourceColor](#resourcecolor) | 否 | 组件右边框颜色。 |
+| bottom | [ResourceColor](#resourcecolor) | 否 | 组件下边框颜色。 |
+| left | [ResourceColor](#resourcecolor) | 否 | 组件左边框颜色。 |
 
 #### LocalizedEdgeColors12+
 
@@ -311,6 +344,8 @@ type ResourceStr = string | Resource
 
 #### EdgeStyles9+
 
+type EdgeStyles = { top: BorderStyle; right: BorderStyle; bottom: BorderStyle; left: BorderStyle; }
+
 边框样式，用于描述组件边框四条边的样式。
 
 引入该对象时，至少传入一个参数。
@@ -321,14 +356,16 @@ type ResourceStr = string | Resource
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 类型 | 只读 | 可选 | 说明 |
-| --- | --- | --- | --- | --- |
-| top | [BorderStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#borderstyle) | 否 | 是 | 组件上边框样式。 |
-| right | [BorderStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#borderstyle) | 否 | 是 | 组件右边框样式。 |
-| bottom | [BorderStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#borderstyle) | 否 | 是 | 组件下边框样式。 |
-| left | [BorderStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#borderstyle) | 否 | 是 | 组件左边框样式。 |
+| 名称 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| top | [BorderStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#borderstyle) | 否 | 组件上边框样式。 |
+| right | [BorderStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#borderstyle) | 否 | 组件右边框样式。 |
+| bottom | [BorderStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#borderstyle) | 否 | 组件下边框样式。 |
+| left | [BorderStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#borderstyle) | 否 | 组件左边框样式。 |
 
 #### Offset
+
+type Offset = { dx: Length; dy: Length; }
 
 相对布局完成位置坐标偏移量。
 
@@ -336,10 +373,10 @@ type ResourceStr = string | Resource
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 类型 | 只读 | 可选 | 说明 |
-| --- | --- | --- | --- | --- |
-| dx | [Length](#length) | 否 | 否 | 水平方向偏移量。 |
-| dy | [Length](#length) | 否 | 否 | 竖直方向偏移量。 |
+| 名称 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| dx | [Length](#length) | 是 | 水平方向偏移量。 |
+| dy | [Length](#length) | 是 | 竖直方向偏移量。 |
 
 #### ResourceColor
 
@@ -362,6 +399,8 @@ type ResourceColor = [Color](https://developer.huawei.com/consumer/cn/doc/harmon
 
 #### LengthConstrain
 
+type LengthConstrain = { minLength: Length; maxLength: Length; }
+
 长度约束，用于对组件最大、最小长度做限制。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
@@ -370,10 +409,10 @@ type ResourceColor = [Color](https://developer.huawei.com/consumer/cn/doc/harmon
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 类型 | 只读 | 可选 | 说明 |
-| --- | --- | --- | --- | --- |
-| minLength | [Length](#length) | 否 | 否 | 组件最小长度。 |
-| maxLength | [Length](#length) | 否 | 否 | 组件最大长度。 |
+| 名称 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| minLength | [Length](#length) | 是 | 组件最小长度。 |
+| maxLength | [Length](#length) | 是 | 组件最大长度。 |
 
 #### Font
 
@@ -956,11 +995,11 @@ type ResponsiveFillType = PresetFillType
 
 以水平方向Bias为例，其值为组件到左锚点的距离 Dstart与组件到水平方向锚点间总距离 Dstart + Dend的比值。镜像语言下，Dstart为组件到右锚点的距离。下图中Dwidth表示组件宽度。
 
-![](./img/zh-cn_image_0000002656470207.png)
+![](./img/zh-cn_image_0000002631253842.png)
 
 竖直方向同理，其值为组件到上锚点的距离Dtop与组件到竖直方向锚点间总距离Dtop + Dbottom的比值。下图中Dheight表示组件高度。
 
-![](./img/zh-cn_image_0000002656350255.png)
+![](./img/zh-cn_image_0000002661613025.png)
 
 卡片能力： 从API version 11开始，该接口支持在ArkTS卡片中使用。
 

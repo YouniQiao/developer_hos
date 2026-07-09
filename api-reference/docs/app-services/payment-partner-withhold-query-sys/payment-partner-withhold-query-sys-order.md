@@ -2,7 +2,8 @@
 title: "通过sysTransOrderNo查询订单信息"
 upstream_id: "harmonyos-references/payment-partner-withhold-query-sys-order"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:44.462602"
+content_hash: "45bf2eb9a7eb"
+synced_at: "2026-07-09T01:01:33.554793"
 ---
 
 # 通过sysTransOrderNo查询订单信息
@@ -40,7 +41,7 @@ Request Header
 
 request path
 
-| 参数 | 是否必填 | 参数类型 | 描述 |
+| 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | sysTransOrderNo | 是 | String | 华为支付系统订单号。 用户支付成功后通过支付结果回调通知返回给商户或通过mercOrderNo查询订单信息接口查询获取。 |
 

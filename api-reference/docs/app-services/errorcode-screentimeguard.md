@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-screentimeguard"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:53.024868"
+content_hash: "12b720cc5e61"
+synced_at: "2026-07-09T01:01:39.439688"
 ---
 
 # ArkTS API错误码

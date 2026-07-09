@@ -2,7 +2,8 @@
 title: "drawing_region.h"
 upstream_id: "harmonyos-references/capi-drawing-region-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:02.446647"
+content_hash: "bc6879e1be90"
+synced_at: "2026-07-09T01:00:57.424709"
 ---
 
 # drawing_region.h

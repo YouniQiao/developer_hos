@@ -2,7 +2,8 @@
 title: "OH_AudioSuite_PureVoiceChangeOption"
 upstream_id: "harmonyos-references/capi-ohaudiosuite-oh-audiosuite-purevoicechangeoption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:00.011810"
+content_hash: "b32b3c374799"
+synced_at: "2026-07-09T01:00:12.268099"
 ---
 
 # OH_AudioSuite_PureVoiceChangeOption

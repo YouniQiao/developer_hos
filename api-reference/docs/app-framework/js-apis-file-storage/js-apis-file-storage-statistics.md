@@ -2,7 +2,8 @@
 title: "@ohos.file.storageStatistics (应用空间统计)"
 upstream_id: "harmonyos-references/js-apis-file-storage-statistics"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:14.084459"
+content_hash: "10bf689bb8de"
+synced_at: "2026-07-09T00:59:00.089346"
 ---
 
 # @ohos.file.storageStatistics (应用空间统计)

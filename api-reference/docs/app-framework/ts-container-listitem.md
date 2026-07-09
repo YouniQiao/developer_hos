@@ -2,7 +2,8 @@
 title: "ListItem"
 upstream_id: "harmonyos-references/ts-container-listitem"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:54.312540"
+content_hash: "b620a27d765d"
+synced_at: "2026-07-09T00:57:47.213983"
 ---
 
 # ListItem
@@ -423,7 +424,7 @@ struct ListItemExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070384.gif)
+ ![](./img/zh-cn_image_0000002631413178.gif)
 
 #### [h2]示例2（设置划出组件）
 
@@ -502,7 +503,7 @@ struct ListItemExample2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469661.gif)
+ ![](./img/zh-cn_image_0000002661732407.gif)
 
 #### [h2]示例3（设置卡片样式）
 
@@ -543,7 +544,7 @@ struct ListItemExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349709.jpeg)
+ ![](./img/zh-cn_image_0000002631253288.jpeg)
 
 #### [h2]示例4（通过ComponentContent设置划出组件）
 
@@ -657,7 +658,7 @@ struct ListItemExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230296.gif)
+ ![](./img/zh-cn_image_0000002661612471.gif)
 
 #### [h2]示例5（通过ListItemSwipeActionManager管理划出菜单）
 
@@ -745,4 +746,4 @@ struct ListItemExample5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070386.gif)
+ ![](./img/zh-cn_image_0000002631413180.gif)

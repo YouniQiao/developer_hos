@@ -2,7 +2,8 @@
 title: "OH_CryptoSymKeyGenerator"
 upstream_id: "harmonyos-references/capi-cryptosymkeyapi-oh-cryptosymkeygenerator"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:33.494255"
+content_hash: "99b39ee77b1c"
+synced_at: "2026-07-09T00:59:13.890465"
 ---
 
 # OH_CryptoSymKeyGenerator

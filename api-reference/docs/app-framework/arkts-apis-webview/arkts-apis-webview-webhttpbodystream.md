@@ -2,12 +2,15 @@
 title: "Class (WebHttpBodyStream)"
 upstream_id: "harmonyos-references/arkts-apis-webview-webhttpbodystream"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:04.068428"
+content_hash: "fa401e200851"
+synced_at: "2026-07-09T00:58:51.431324"
 ---
 
 # Class (WebHttpBodyStream)
 
-POST、PUT请求的数据体，支持BYTES、FILE、BLOB、CHUNKED类型的数据。注意本类中其他接口需要在[initialize](#initialize12)成功后才能调用。
+WebHttpBodyStream是HTTP请求体数据流对象，用于在自定义scheme拦截场景中读取POST、PUT等请求的请求体数据。该对象通过WebSchemeHandlerRequest的getHttpBodyStream方法获取，支持BYTES、FILE、BLOB、CHUNKED类型的数据。开发者可以通过该接口在自定义协议拦截器中读取上行数据，实现对请求体的检视或转发。注意本类中的其他接口需要在[initialize](#initialize12)成功后才能调用。
+
+WebHttpBodyStream与[WebSchemeHandlerRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webschemehandlerrequest)配合使用：WebSchemeHandlerRequest代表被拦截的请求，WebHttpBodyStream代表该请求的HTTP body数据流。通过读取流中的数据，开发者可以获取完整的请求体内容。
 
 ![](./img/note_3.0-zh-cn.png)
 

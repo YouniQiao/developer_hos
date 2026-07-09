@@ -2,7 +2,8 @@
 title: "ArkUI_CrossLanguageOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-crosslanguageoption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:53.748999"
+content_hash: "2fe8043f001c"
+synced_at: "2026-07-09T00:58:43.868290"
 ---
 
 # ArkUI_CrossLanguageOption

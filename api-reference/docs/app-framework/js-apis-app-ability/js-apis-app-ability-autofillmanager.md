@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.autoFillManager (自动填充框架)"
 upstream_id: "harmonyos-references/js-apis-app-ability-autofillmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:45.855361"
+content_hash: "0e3459471fc6"
+synced_at: "2026-07-09T00:57:03.664682"
 ---
 
 # @ohos.app.ability.autoFillManager (自动填充框架)

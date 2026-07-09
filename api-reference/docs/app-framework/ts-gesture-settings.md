@@ -2,7 +2,8 @@
 title: "绑定手势事件"
 upstream_id: "harmonyos-references/ts-gesture-settings"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:50.046971"
+content_hash: "7254899a8dbe"
+synced_at: "2026-07-09T00:57:43.958890"
 ---
 
 # 绑定手势事件
@@ -180,7 +181,7 @@ struct GestureSettingsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070346.gif)
+ ![](./img/zh-cn_image_0000002631413140.gif)
 
 #### [h2]示例2（实时监测参与滑动手势的有效触点数量）
 
@@ -250,4 +251,4 @@ struct PanGestureWithFingerCount {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469623.gif)
+ ![](./img/zh-cn_image_0000002661732369.gif)

@@ -2,7 +2,8 @@
 title: "ConnectOptions"
 upstream_id: "harmonyos-references/js-apis-inner-ability-connectoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:51.669133"
+content_hash: "6270d80bd4a2"
+synced_at: "2026-07-09T00:57:08.145741"
 ---
 
 # ConnectOptions

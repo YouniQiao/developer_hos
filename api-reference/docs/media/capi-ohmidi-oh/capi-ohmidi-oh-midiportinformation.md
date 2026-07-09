@@ -2,7 +2,8 @@
 title: "OH_MIDIPortInformation"
 upstream_id: "harmonyos-references/capi-ohmidi-oh-midiportinformation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:00.507364"
+content_hash: "5e272f409bff"
+synced_at: "2026-07-09T01:00:12.635191"
 ---
 
 # OH_MIDIPortInformation

@@ -2,7 +2,8 @@
 title: "FG_ContextDescription_VK"
 upstream_id: "harmonyos-references/_f_g___context_description___v_k"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:13.249550"
+content_hash: "0ee6c719b98a"
+synced_at: "2026-07-09T01:01:07.283472"
 ---
 
 # FG_ContextDescription_VK

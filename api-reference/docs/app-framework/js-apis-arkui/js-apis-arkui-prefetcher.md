@@ -2,7 +2,8 @@
 title: "@ohos.arkui.Prefetcher (Prefetching)"
 upstream_id: "harmonyos-references/js-apis-arkui-prefetcher"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:19.770071"
+content_hash: "c7c0e8cc4229"
+synced_at: "2026-07-09T00:57:28.288137"
 ---
 
 # @ohos.arkui.Prefetcher (Prefetching)
@@ -422,7 +423,7 @@ function create10x10Bitmap(color: number): ArrayBuffer {
 ```
  演示效果如下：
 
-![](./img/zh-cn_image_0000002626070162.gif)
+![](./img/zh-cn_image_0000002631253056.gif)
 
 #### 补充说明
 

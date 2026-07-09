@@ -2,7 +2,8 @@
 title: "OH_NativeBuffer"
 upstream_id: "harmonyos-references/capi-vulkan-oh-nativebuffer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:06.682829"
+content_hash: "bc1a25757196"
+synced_at: "2026-07-09T01:01:50.143911"
 ---
 
 # OH_NativeBuffer

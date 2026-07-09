@@ -2,7 +2,8 @@
 title: "ServiceCollaboration_CollaborationDeviceInfoSets"
 upstream_id: "harmonyos-references/servicecollaboration-collaborationdeviceinfosets"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:03.894521"
+content_hash: "ad0a5b84cd1b"
+synced_at: "2026-07-09T00:59:37.214856"
 ---
 
 # ServiceCollaboration_CollaborationDeviceInfoSets

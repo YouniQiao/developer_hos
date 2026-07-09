@@ -2,7 +2,8 @@
 title: "OH_AVRecorder_MetadataTemplate"
 upstream_id: "harmonyos-references/capi-avrecorder-oh-avrecorder-metadatatemplate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:39.059657"
+content_hash: "4e1137f7c2a3"
+synced_at: "2026-07-09T01:00:42.812126"
 ---
 
 # OH_AVRecorder_MetadataTemplate

@@ -2,7 +2,8 @@
 title: "ImageAnimator"
 upstream_id: "harmonyos-references/ts-basic-components-imageanimator"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:20.489374"
+content_hash: "f6a942660506"
+synced_at: "2026-07-09T00:58:00.349870"
 ---
 
 # ImageAnimator
@@ -386,7 +387,7 @@ struct ImageAnimatorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469903.gif)
+ ![](./img/zh-cn_image_0000002631253534.gif)
 
 #### [h2]示例2（播放PixelMap动画）
 
@@ -485,7 +486,7 @@ struct ImageAnimatorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349951.gif)
+ ![](./img/zh-cn_image_0000002661612717.gif)
 
 #### [h2]示例3（设置不可见自动停播）
 
@@ -587,4 +588,4 @@ struct ImageAnimatorAutoPauseTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230538.gif)
+ ![](./img/zh-cn_image_0000002631413428.gif)

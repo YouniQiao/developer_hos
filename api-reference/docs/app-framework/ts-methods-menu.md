@@ -2,7 +2,8 @@
 title: "ContextMenu"
 upstream_id: "harmonyos-references/ts-methods-menu"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:40.120947"
+content_hash: "32d9bbfd48be"
+synced_at: "2026-07-09T00:58:07.219865"
 ---
 
 # ContextMenu
@@ -69,4 +70,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070806.gif)
+ ![](./img/zh-cn_image_0000002661612897.gif)

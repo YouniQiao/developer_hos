@@ -2,7 +2,8 @@
 title: "响应参数"
 upstream_id: "harmonyos-references/push-scenariozed-api-response"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:49.932507"
+content_hash: "f0331453edca"
+synced_at: "2026-07-09T01:01:38.307750"
 ---
 
 # 响应参数
@@ -52,7 +53,7 @@ synced_at: "2026-06-24T20:53:49.932507"
 
 ![](./img/note_3.0-zh-cn.png) 通过业务响应码定位问题之前，请优先检查[消息推送接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-struct)URL（https://push-api.cloud.huawei.com/v3/[projectId]/messages:send）是否正确：
 
-- 请使用的v3版本的推送接口URL，不用使用v1或v2版本的推送接口URL，详情请参见[场景化消息中的请求URL版本问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-8)。
+- 请使用v3版本的推送接口URL，不建议使用v1或v2版本的推送接口URL，详情请参见[场景化消息中的请求URL版本问题](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-faq-8)。
 - 请检查推送接口地址中的projectId，确保与您当前应用所属的项目保持一致，若不一致请更新推送接口URL中的projectId，并重新[生成鉴权令牌](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-jwt-token)，应用重新[获取Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)，再进行消息推送。
 
 #### [h2]80000000 成功
@@ -101,7 +102,7 @@ Check Parameter Partial Success.
 请根据响应消息中的提示，排查失败的Token是否存在以下情况：
 
 1. noPushTypeRight：请开通请求头中push-type对应场景的权益，语音播报消息（push-type为2）权益申请可参考[申请推送语音播报消息权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#申请推送语音播报消息权益)，应用内通话消息（push-type为10）权益申请可参考[申请推送应用内通话消息权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#申请推送应用内通话消息权益)。
-2. noRight：请检查生成Push Token的应用是否属于请求url中projectId对应的项目，即确保请求URL（https://push-api.cloud.huawei.com/v3/**[projectId]**/messages:send）中的**projectId**与[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站中该应用所属的“项目ID”一致。 ![](./img/zh-cn_image_0000002656470985.png)
+2. noRight：请检查生成Push Token的应用是否属于请求url中projectId对应的项目，即确保请求URL（https://push-api.cloud.huawei.com/v3/**[projectId]**/messages:send）中的**projectId**与[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站中该应用所属的“项目ID”一致。 ![](./img/zh-cn_image_0000002631254630.png)
 3. atomicUnableSendUnsubscribedMsg：元服务**仅支持**发送授权订阅消息、卡片刷新消息，请排查消息体内容。
 4. tokenFormatError：请检查Push Token格式是否错误，并重新[申请Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)。
 5. countryNotSupport：请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
@@ -290,7 +291,7 @@ All the tokens are invalid.
 请根据响应消息中的提示，排查失败的Token是否存在以下情况
 
 1. noPushTypeRight：请开通请求头中对应push-type场景的权益，语音播报消息（push-type为2）权益申请可参考[申请推送语音播报消息权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#申请推送语音播报消息权益)，应用内通话消息（push-type为10）权益申请可参考[申请推送应用内通话消息权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-apply-right#申请推送应用内通话消息权益)。
-2. noRight：请检查生成Push Token的应用是否属于请求url中projectId对应的项目，即确保请求URL（https://push-api.cloud.huawei.com/v3/**[projectId]**/messages:send）中的**projectId**与[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站中该应用所属的“项目ID”一致。 ![](./img/zh-cn_image_0000002656351035.png) 若终端设备升级至HarmonyOS NEXT版本后，需重新生成对应的Push Token（建议您在应用启动时调用getToken接口，若设备的Push Token发生变化，及时上报到您的应用服务器更新Push Token）。并使用[请求体参数说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param)、V3版本的请求URL（https://push-api.cloud.huawei.com**/v3**/[projectId]/messages:send）发送REST API请求。
+2. noRight：请检查生成Push Token的应用是否属于请求url中projectId对应的项目，即确保请求URL（https://push-api.cloud.huawei.com/v3/**[projectId]**/messages:send）中的**projectId**与[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站中该应用所属的“项目ID”一致。 ![](./img/zh-cn_image_0000002661613813.png) 若终端设备升级至HarmonyOS NEXT版本后，需重新生成对应的Push Token（建议您在应用启动时调用getToken接口，若设备的Push Token发生变化，及时上报到您的应用服务器更新Push Token）。并使用[请求体参数说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param)、V3版本的请求URL（https://push-api.cloud.huawei.com**/v3**/[projectId]/messages:send）发送REST API请求。
 3. atomicUnableSendUnsubscribedMsg：元服务**仅支持**发送授权订阅消息、卡片刷新消息，请排查消息体内容。
 4. tokenFormatError：请检查Push Token格式是否错误，并重新[申请Push Token](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-get-token)。
 5. countryNotSupport：请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。

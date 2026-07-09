@@ -2,7 +2,8 @@
 title: "@ohos.customization.customConfig (定制配置)"
 upstream_id: "harmonyos-references/js-apis-customization-customconfig"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:08.840022"
+content_hash: "a1267f832f91"
+synced_at: "2026-07-09T00:59:41.253919"
 ---
 
 # @ohos.customization.customConfig (定制配置)

@@ -2,7 +2,8 @@
 title: "circle"
 upstream_id: "harmonyos-references/js-components-svg-circle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:11.493143"
+content_hash: "12a110c02f76"
+synced_at: "2026-07-09T00:58:24.208281"
 ---
 
 # circle
@@ -41,4 +42,4 @@ synced_at: "2026-06-24T20:49:11.493143"
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002626230940.png)
+ ![](./img/zh-cn_image_0000002631413834.png)

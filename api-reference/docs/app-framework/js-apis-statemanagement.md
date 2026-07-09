@@ -2,7 +2,8 @@
 title: "@ohos.arkui.StateManagement (状态管理)"
 upstream_id: "harmonyos-references/js-apis-statemanagement"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:23.851890"
+content_hash: "18a48641287d"
+synced_at: "2026-07-09T00:57:31.149991"
 ---
 
 # @ohos.arkui.StateManagement (状态管理)
@@ -165,7 +166,7 @@ static globalConnect<T extends object>(type: ConnectOptions<T>): T | undefined
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | [ConnectOptions](#connectoptionst18) | 是 | 传入的connect参数，详细说明见ConnectOptions参数说明。 |
+| type | [ConnectOptions](#connectoptionst18) | 是 | 传入的globalConnect参数，详细说明见ConnectOptions参数说明。 |
 
 返回值：
 
@@ -291,7 +292,7 @@ struct Page1 {
 如下展示globalConnect持久化Map类型的示例代码：
 
 ```
-import { PersistenceV2, ConnectOptions } from '@kit.ArkUI';
+import { PersistenceV2 } from '@kit.ArkUI';
 
 @Entry
 @ComponentV2
@@ -487,7 +488,7 @@ struct Comp {
             Text(`report?.() '${ri.item.report?.()}'`)
           }
         })
-      // 步骤1：点击'add item'，显示`propA 'a' propB 'b'report?.'a' - 'b'`。
+      // 步骤1：点击'add item'，显示`propA 'a' propB 'b' report?.() 'a - b'`。
       // 步骤2：关闭应用。
       Button('add item')
         .onClick(() => {
@@ -1545,7 +1546,7 @@ struct ReusableChild {
 @ComponentV2({
   reusePool: 'shared', // 声明共享全局复用池
   poolAccepts: [ReusableChild], // 全局复用池接纳子组件类型ReusableChild
-  freezeWhenInactive: false // 关闭组件冻结功能。该参数必须声明reusePools时提供，也可以开启组件冻结。
+  freezeWhenInactive: false // 关闭组件冻结功能。该参数必须在声明reusePool时提供，也可以开启组件冻结。
 })
 struct Index {
   @Local showChild: boolean = true;
@@ -2125,7 +2126,7 @@ get value(): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回值类型为泛型参数T，与Binding定义的类型一致。 |
+| T | 返回值类型为泛型参数T，与MutableBinding定义的类型一致。 |
 
 示例：
 

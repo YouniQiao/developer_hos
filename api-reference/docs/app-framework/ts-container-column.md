@@ -2,7 +2,8 @@
 title: "Column"
 upstream_id: "harmonyos-references/ts-container-column"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:51.950872"
+content_hash: "e35f23a9c1e8"
+synced_at: "2026-07-09T00:57:45.239464"
 ---
 
 # Column
@@ -259,7 +260,7 @@ struct ColumnExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469637.png)
+ ![](./img/zh-cn_image_0000002661732383.png)
 
 #### [h2]示例2（设置反转属性）
 
@@ -288,4 +289,4 @@ struct ColumnReverseSample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349685.png)
+ ![](./img/zh-cn_image_0000002631253264.png)

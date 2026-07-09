@@ -2,7 +2,8 @@
 title: "healthStore (运动健康数据服务)"
 upstream_id: "harmonyos-references/health-api-healthstore"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:26.539738"
+content_hash: "68b45a81db9c"
+synced_at: "2026-07-09T01:01:20.566882"
 ---
 
 # healthStore (运动健康数据服务)

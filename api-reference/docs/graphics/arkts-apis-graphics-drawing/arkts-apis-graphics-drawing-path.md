@@ -2,7 +2,8 @@
 title: "Class (Path)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-path"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:53.542239"
+content_hash: "b7ad1a86fbb0"
+synced_at: "2026-07-09T01:00:52.059690"
 ---
 
 # Class (Path)

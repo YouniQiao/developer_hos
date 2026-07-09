@@ -2,7 +2,8 @@
 title: "Stepper"
 upstream_id: "harmonyos-references/ts-basic-components-stepper"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:00.028657"
+content_hash: "5cadb894c5cb"
+synced_at: "2026-07-09T00:58:19.575342"
 ---
 
 # Stepper
@@ -238,7 +239,7 @@ struct StepperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350281.gif)
+ ![](./img/zh-cn_image_0000002661613051.gif)
 
 #### [h2]示例2（使用Swiper替代Stepper）
 

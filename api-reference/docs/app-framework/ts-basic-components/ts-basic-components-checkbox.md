@@ -2,7 +2,8 @@
 title: "Checkbox"
 upstream_id: "harmonyos-references/ts-basic-components-checkbox"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:05.683586"
+content_hash: "1632db3242e0"
+synced_at: "2026-07-09T00:57:52.785599"
 ---
 
 # Checkbox
@@ -392,7 +393,7 @@ struct CheckboxExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349793.gif)
+ ![](./img/zh-cn_image_0000002661612555.gif)
 
 #### [h2]示例2（设置多选框颜色）
 
@@ -442,7 +443,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230380.gif)
+ ![](./img/zh-cn_image_0000002631413264.gif)
 
 #### [h2]示例3（自定义多选框样式）
 
@@ -532,7 +533,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070470.gif)
+ ![](./img/zh-cn_image_0000002661732497.gif)
 
 #### [h2]示例4（设置文本多选框样式）
 
@@ -588,7 +589,7 @@ struct CheckboxExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469747.gif)
+ ![](./img/zh-cn_image_0000002631253374.gif)
 
 #### [h2]示例5（获取多选框选中信息）
 
@@ -747,7 +748,7 @@ struct CheckboxExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349795.gif)
+ ![](./img/zh-cn_image_0000002661612557.gif)
 
 #### [h2]示例6（设置滑动多选）
 
@@ -961,4 +962,4 @@ enum SelectedState {
   Remove
 }
 ```
- ![](./img/zh-cn_image_0000002626230382.gif)
+ ![](./img/zh-cn_image_0000002631413266.gif)

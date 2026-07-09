@@ -2,7 +2,8 @@
 title: "ipc_kit.h"
 upstream_id: "harmonyos-references/capi-ipc-kit-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:21.818515"
+content_hash: "658f42be9c7f"
+synced_at: "2026-07-09T00:59:06.072353"
 ---
 
 # ipc_kit.h

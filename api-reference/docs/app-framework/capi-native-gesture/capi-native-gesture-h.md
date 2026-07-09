@@ -2,7 +2,8 @@
 title: "native_gesture.h"
 upstream_id: "harmonyos-references/capi-native-gesture-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:34.705840"
+content_hash: "d6ae5af95996"
+synced_at: "2026-07-09T00:58:34.133928"
 ---
 
 # native_gesture.h

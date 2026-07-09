@@ -2,7 +2,8 @@
 title: "drawing_memory_stream.h"
 upstream_id: "harmonyos-references/capi-drawing-memory-stream-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:01.252930"
+content_hash: "5580d0d1d28d"
+synced_at: "2026-07-09T01:00:56.304154"
 ---
 
 # drawing_memory_stream.h

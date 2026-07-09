@@ -2,7 +2,8 @@
 title: "SwipeGesture"
 upstream_id: "harmonyos-references/ts-basic-gestures-swipegesture"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:51.169029"
+content_hash: "bc73241c7be3"
+synced_at: "2026-07-09T00:57:44.427855"
 ---
 
 # SwipeGesture
@@ -119,4 +120,4 @@ struct SwipeGestureExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349675.png)
+ ![](./img/zh-cn_image_0000002631253254.png)

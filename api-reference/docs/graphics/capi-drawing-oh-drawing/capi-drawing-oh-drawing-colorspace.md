@@ -2,7 +2,8 @@
 title: "OH_Drawing_ColorSpace"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-colorspace"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:09.549885"
+content_hash: "fec74857f799"
+synced_at: "2026-07-09T01:01:03.592062"
 ---
 
 # OH_Drawing_ColorSpace

@@ -2,12 +2,15 @@
 title: "Class (WebDownloadManager)"
 upstream_id: "harmonyos-references/arkts-apis-webview-webdownloadmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:03.717713"
+content_hash: "a14baabf9ef7"
+synced_at: "2026-07-09T00:58:51.080574"
 ---
 
 # Class (WebDownloadManager)
 
-可以通过该类提供的接口来设置下载委托或恢复失败的下载任务。
+WebDownloadManager是ArkWeb框架下Web组件下载任务的静态管理类，负责管理所有通过Web组件触发的文件下载流程。开发者可以通过该类设置下载委托以接收下载进度回调，以及恢复失败的下载任务。该类的所有方法均为静态方法，在整个应用范围内全局生效。
+
+WebDownloadManager与[WebDownloadDelegate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webdownloaddelegate)、[WebDownloadItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webdownloaditem)配合使用：WebDownloadManager负责下载任务的生命周期管理和委托设置，WebDownloadDelegate负责向应用层报告下载进度和状态变更事件，WebDownloadItem代表单个下载任务实体，支持暂停、恢复、取消等操作。
 
 ![](./img/note_3.0-zh-cn.png)
 

@@ -2,14 +2,13 @@
 title: "imageFeaturePicker (全局取色功能)"
 upstream_id: "harmonyos-references/pen-imagefeaturepicker"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:38.631452"
+content_hash: "bd199f582c9a"
+synced_at: "2026-07-09T00:59:58.789372"
 ---
 
 # imageFeaturePicker (全局取色功能)
 
 全局取色的功能入口类。
-
-系统能力： SystemCapability.Stylus.ColorPicker
 
 起始版本： 5.0.0(12)
 

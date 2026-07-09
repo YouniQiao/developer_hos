@@ -2,7 +2,8 @@
 title: "camera_manager.h"
 upstream_id: "harmonyos-references/capi-camera-manager-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:14.960756"
+content_hash: "9e8cf05bef26"
+synced_at: "2026-07-09T01:00:25.169401"
 ---
 
 # camera_manager.h

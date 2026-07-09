@@ -2,7 +2,8 @@
 title: "警告弹窗 (AlertDialog)"
 upstream_id: "harmonyos-references/ts-methods-alert-dialog-box"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:42.725828"
+content_hash: "d40fbf56a6ed"
+synced_at: "2026-07-09T00:58:09.385067"
 ---
 
 # 警告弹窗 (AlertDialog)
@@ -424,7 +425,7 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070818.gif)
+ ![](./img/zh-cn_image_0000002661612911.gif)
 
 #### [h2]示例2（可在主窗外弹出的弹窗）
 
@@ -493,7 +494,7 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470095.jpg)
+ ![](./img/zh-cn_image_0000002631413620.jpg)
 
 #### [h2]示例3（设置弹窗的动画）
 
@@ -539,7 +540,7 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350143.gif)
+ ![](./img/zh-cn_image_0000002661732851.gif)
 
 #### [h2]示例4（设置弹窗的样式）
 
@@ -603,7 +604,7 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230730.gif)
+ ![](./img/zh-cn_image_0000002631253730.gif)
 
 #### [h2]示例5（悬停态弹窗）
 
@@ -654,7 +655,7 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070820.gif)
+ ![](./img/zh-cn_image_0000002661612913.gif)
 
 #### [h2]示例6（弹窗生命周期）
 
@@ -709,7 +710,7 @@ struct Example2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470097.gif)
+ ![](./img/zh-cn_image_0000002631413622.gif)
 
 #### [h2]示例7（自定义背景模糊效果参数）
 
@@ -759,7 +760,7 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350145.png)
+ ![](./img/zh-cn_image_0000002661732853.png)
 
 #### [h2]示例8（自定义背景效果参数）
 
@@ -810,7 +811,7 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230732.png)
+ ![](./img/zh-cn_image_0000002631253732.png)
 
 #### [h2]示例9（设置弹窗的系统材质）
 
@@ -856,4 +857,4 @@ struct AlertDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070822.png)
+ ![](./img/zh-cn_image_0000002661612915.png)

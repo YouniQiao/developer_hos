@@ -2,7 +2,8 @@
 title: "oh_axis_type.h"
 upstream_id: "harmonyos-references/capi-oh-axis-type-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:18.606730"
+content_hash: "6a74e950614b"
+synced_at: "2026-07-09T00:59:49.258234"
 ---
 
 # oh_axis_type.h

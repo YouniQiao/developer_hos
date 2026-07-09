@@ -2,7 +2,8 @@
 title: "@ohos.enterprise.browser（浏览器管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-browser"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:22.503976"
+content_hash: "5992aa4e3d9d"
+synced_at: "2026-07-09T00:59:51.219991"
 ---
 
 # @ohos.enterprise.browser（浏览器管理）

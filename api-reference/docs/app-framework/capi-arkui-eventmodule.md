@@ -2,7 +2,8 @@
 title: "ArkUI_EventModule"
 upstream_id: "harmonyos-references/capi-arkui-eventmodule"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:31.841710"
+content_hash: "a5a5742c1785"
+synced_at: "2026-07-09T00:58:32.125478"
 ---
 
 # ArkUI_EventModule

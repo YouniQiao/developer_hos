@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-speech"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:00.910224"
+content_hash: "a407529b7281"
+synced_at: "2026-07-09T01:01:45.578272"
 ---
 
 # ArkTS API错误码

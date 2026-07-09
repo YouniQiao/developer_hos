@@ -2,7 +2,8 @@
 title: "timezone.h"
 upstream_id: "harmonyos-references/capi-timezone-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:23.749847"
+content_hash: "a7c73d957124"
+synced_at: "2026-07-09T00:59:07.875293"
 ---
 
 # timezone.h
@@ -358,8 +359,8 @@ I18n_ErrorCode OH_i18n_GetStartTimeAt(TimeArrayTimeZoneRule* rule, int32_t index
 | 参数项 | 描述 |
 | --- | --- |
 | [TimeArrayTimeZoneRule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-i18n-timearraytimezonerule)* rule | 起始时间戳数组定义的时区规则[TimeArrayTimeZoneRule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-i18n-timearraytimezonerule)。 |
-| int32_t index | 起始时间的索引。 |
-| double* result | 规则生效的起始时间。 |
+| int32_t index | 起始时间的索引。取值范围：[0, rule.numStartTimes - 1]。 |
+| double* result | 规则生效的起始时间，单位为毫秒（ms），采用Unix时间戳格式。 |
 
 返回：
 

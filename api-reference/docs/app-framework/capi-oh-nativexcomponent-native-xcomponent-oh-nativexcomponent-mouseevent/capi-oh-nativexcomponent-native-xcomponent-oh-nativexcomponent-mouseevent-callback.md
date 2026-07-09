@@ -2,7 +2,8 @@
 title: "OH_NativeXComponent_MouseEvent_Callback"
 upstream_id: "harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent-mouseevent-callback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:49.032391"
+content_hash: "41e83a279d20"
+synced_at: "2026-07-09T00:58:41.375212"
 ---
 
 # OH_NativeXComponent_MouseEvent_Callback

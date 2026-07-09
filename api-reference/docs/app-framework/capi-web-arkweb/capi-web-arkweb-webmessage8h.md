@@ -2,7 +2,8 @@
 title: "ArkWeb_WebMessage*"
 upstream_id: "harmonyos-references/capi-web-arkweb-webmessage8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:08.959751"
+content_hash: "76932c521fff"
+synced_at: "2026-07-09T00:58:55.803327"
 ---
 
 # ArkWeb_WebMessage*
@@ -13,7 +14,7 @@ typedef struct ArkWeb_WebMessage* ArkWeb_WebMessagePtr
 
 #### 概述
 
-Post Message数据结构体指针。
+ArkWeb_WebMessage是用于跨上下文消息通信的Web消息结构体，定义了消息的基本格式和数据承载能力。该结构体是Web消息通信的基础数据单元，支持在Native代码和Web页面之间传递字符串和二进制数据。
 
 起始版本： 12
 

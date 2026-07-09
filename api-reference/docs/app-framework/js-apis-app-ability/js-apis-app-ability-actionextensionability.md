@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.ActionExtensionAbility (支持业务操作自定义的ExtensionAbility组件)"
 upstream_id: "harmonyos-references/js-apis-app-ability-actionextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:45.177178"
+content_hash: "671c1afa0d8f"
+synced_at: "2026-07-09T00:57:02.837689"
 ---
 
 # @ohos.app.ability.ActionExtensionAbility (支持业务操作自定义的ExtensionAbility组件)

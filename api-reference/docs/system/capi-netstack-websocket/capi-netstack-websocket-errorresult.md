@@ -2,7 +2,8 @@
 title: "WebSocket_ErrorResult"
 upstream_id: "harmonyos-references/capi-netstack-websocket-errorresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:54.915687"
+content_hash: "3c3f9bf14abd"
+synced_at: "2026-07-09T00:59:29.955488"
 ---
 
 # WebSocket_ErrorResult

@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.ChildProcess (子进程基类)"
 upstream_id: "harmonyos-references/js-apis-app-ability-childprocess"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:46.119958"
+content_hash: "fc0da7d611b3"
+synced_at: "2026-07-09T00:57:03.745080"
 ---
 
 # @ohos.app.ability.ChildProcess (子进程基类)

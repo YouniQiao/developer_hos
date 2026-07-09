@@ -2,7 +2,8 @@
 title: "XEG_NNGIDescription"
 upstream_id: "harmonyos-references/xengine-kit-xeg-nngidescription"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:16.950749"
+content_hash: "9f5998b75114"
+synced_at: "2026-07-09T01:01:10.898970"
 ---
 
 # XEG_NNGIDescription
@@ -104,7 +105,7 @@ bool XEG_NNGIDescription::isSceneUnbounded = false
 ```
  描述
 
-渲染场景是否无界，当前只支持false。
+渲染场景是否无界。true表示场景无边界，false表示场景有边界。当前只支持false。
 
 #### [h2]pNext
 

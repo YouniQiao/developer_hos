@@ -2,7 +2,8 @@
 title: "@arkts.math.Decimal (高精度数学库Decimal)"
 upstream_id: "harmonyos-references/js-apis-arkts-decimal"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:14.805302"
+content_hash: "8492f09f3427"
+synced_at: "2026-07-09T00:57:24.896424"
 ---
 
 # @arkts.math.Decimal (高精度数学库Decimal)

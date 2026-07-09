@@ -2,7 +2,8 @@
 title: "harmonyShare（华为分享）"
 upstream_id: "harmonyos-references/share-harmony-share"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:53.262739"
+content_hash: "82eb6abbe5f6"
+synced_at: "2026-07-09T01:01:39.593443"
 ---
 
 # harmonyShare（华为分享）
@@ -447,7 +448,7 @@ PC/2in1或Tablet设备作为接收端，触发碰一碰时的相关信息。
 
 on(event: 'knockShare', callback: Callback<SharableTarget>): void
 
-注册设备轻贴的事件监听。
+注册设备轻贴的事件监听。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -492,7 +493,7 @@ private tipsListening() {
 
 off(event: 'knockShare', callback?: Callback<SharableTarget>): void
 
-取消设备轻贴的事件监听。
+取消设备轻贴的事件监听。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -528,7 +529,7 @@ private tipsDisablingListening() {
 
 on(event: 'knockShare', capability: SendCapabilityRegistry, callback: Callback<SharableTarget>): void
 
-注册设备轻贴的事件监听。
+注册设备轻贴的事件监听。推荐在PC/2in1和Tablet上使用此方法，通过设置windowId参数指定可轻贴的窗口。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -572,7 +573,7 @@ private sendOnlyListening() {
 
 off(event: 'knockShare', capability: SendCapabilityRegistry, callback?: Callback<SharableTarget>): void
 
-取消设备轻贴的事件监听。
+取消设备轻贴的事件监听。推荐在PC/2in1和Tablet上使用此方法，通过设置windowId参数指定可轻贴的窗口。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -607,7 +608,7 @@ private sendOnlyDisablingListening() {
 
 on(event: 'gesturesShare', callback: Callback<SharableTarget>): void
 
-注册隔空传送的事件监听。
+注册隔空传送的事件监听。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -644,7 +645,7 @@ private immersiveListening() {
 
 off(event: 'gesturesShare', callback?: Callback<SharableTarget>): void
 
-取消隔空传送的事件监听。
+取消隔空传送的事件监听。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -672,7 +673,7 @@ private immersiveDisablingListening() {
 
 on(event: 'gesturesShare', capability: SendCapabilityRegistry, callback: Callback<SharableTarget>): void
 
-注册隔空传送的事件监听。
+注册隔空传送的事件监听。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -715,7 +716,7 @@ private purityListening() {
 
 off(event: 'gesturesShare', capability: SendCapabilityRegistry, callback?: Callback<SharableTarget>): void
 
-取消隔空传送的事件监听。
+取消隔空传送的事件监听。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -749,7 +750,7 @@ private purityDisablingListening() {
 
 on(event: 'dataReceive', capability: RecvCapabilityRegistry, callback: Callback<ReceivableTarget>): void
 
-注册沙箱接收事件监听。仅支持文件类型数据。文本（包含链接）类型的数据保持原有接收逻辑。
+注册沙箱接收事件监听。仅支持文件类型数据。文本（包含链接）类型的数据保持原有接收逻辑。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -826,7 +827,7 @@ private dataReceiveListening() {
 
 off(event: 'dataReceive', capability: RecvCapabilityRegistry, callback?: Callback<ReceivableTarget>): void
 
-取消沙箱接收的事件监听。
+取消沙箱接收的事件监听。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

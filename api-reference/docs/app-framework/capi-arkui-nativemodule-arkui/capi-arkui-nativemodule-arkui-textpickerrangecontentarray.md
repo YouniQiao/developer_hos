@@ -2,7 +2,8 @@
 title: "ArkUI_TextPickerRangeContentArray"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-textpickerrangecontentarray"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:54.559734"
+content_hash: "f8d0b32523e0"
+synced_at: "2026-07-09T00:58:44.501943"
 ---
 
 # ArkUI_TextPickerRangeContentArray

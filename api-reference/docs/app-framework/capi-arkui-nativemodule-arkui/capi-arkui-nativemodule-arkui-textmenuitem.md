@@ -2,7 +2,8 @@
 title: "ArkUI_TextMenuItem"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-textmenuitem"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:58.865560"
+content_hash: "351286774ac4"
+synced_at: "2026-07-09T00:58:47.611259"
 ---
 
 # ArkUI_TextMenuItem

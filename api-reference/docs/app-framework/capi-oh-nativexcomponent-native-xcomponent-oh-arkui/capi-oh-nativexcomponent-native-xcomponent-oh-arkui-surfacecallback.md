@@ -2,7 +2,8 @@
 title: "OH_ArkUI_SurfaceCallback"
 upstream_id: "harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-arkui-surfacecallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:49.640466"
+content_hash: "139917efa83a"
+synced_at: "2026-07-09T00:58:41.621694"
 ---
 
 # OH_ArkUI_SurfaceCallback

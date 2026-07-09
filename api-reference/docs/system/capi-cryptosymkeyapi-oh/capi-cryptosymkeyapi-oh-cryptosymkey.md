@@ -2,7 +2,8 @@
 title: "OH_CryptoSymKey"
 upstream_id: "harmonyos-references/capi-cryptosymkeyapi-oh-cryptosymkey"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:33.572056"
+content_hash: "529af6dd7bfd"
+synced_at: "2026-07-09T00:59:13.877511"
 ---
 
 # OH_CryptoSymKey

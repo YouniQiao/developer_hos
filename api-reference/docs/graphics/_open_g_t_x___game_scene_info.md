@@ -2,7 +2,8 @@
 title: "OpenGTX_GameSceneInfo"
 upstream_id: "harmonyos-references/_open_g_t_x___game_scene_info"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:13.948195"
+content_hash: "a84b340c9b0f"
+synced_at: "2026-07-09T01:01:07.968396"
 ---
 
 # OpenGTX_GameSceneInfo
@@ -25,9 +26,9 @@ synced_at: "2026-06-24T20:53:13.948195"
 | --- | --- |
 | [OpenGTX_SceneID](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#opengtx_sceneid-1) [sceneID](#sceneid) | 游戏场景类型。 |
 | char* [description](#description) | 对游戏场景的描述，字节长度范围[0,256]。 |
-| int32_t [recommendFPS](#recommendfps) | 当前场景的建议帧率。取值范围0、[30,[targetFPS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_open_g_t_x___config_description#targetfps)]，若设置0则该值不生效。 |
-| int32_t [minFPS](#minfps) | 当前场景预期的最小帧率。取值范围0、[30,[targetFPS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_open_g_t_x___config_description#targetfps)]，若设置0则该值不生效。 |
-| int32_t [maxFPS](#maxfps) | 当前场景预期的最大帧率。取值范围0、[30,[targetFPS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_open_g_t_x___config_description#targetfps)]，若设置0则该值不生效。 |
+| int32_t [recommendFPS](#recommendfps) | 当前场景的建议帧率。取值范围0、[30,[targetFPS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_open_g_t_x___config_description#targetfps)]，若设置0则该值不生效。超出取值范围则该值不生效，返回[401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败)错误码。 |
+| int32_t [minFPS](#minfps) | 当前场景预期的最小帧率。取值范围0、[30,[targetFPS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_open_g_t_x___config_description#targetfps)]，若设置0则该值不生效。超出取值范围则该值不生效，返回[401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败)错误码。 |
+| int32_t [maxFPS](#maxfps) | 当前场景预期的最大帧率。取值范围0、[30,[targetFPS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_open_g_t_x___config_description#targetfps)]，若设置0则该值不生效。超出取值范围则该值不生效，返回[401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败)错误码。 |
 | [OpenGTX_ResolutionValue](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_open_g_t_x___resolution_value) [resolutionCurValue](#resolutioncurvalue) | 当前场景的分辨率，取值范围360p-8k。 |
 
 #### 结构体成员变量说明
@@ -48,7 +49,7 @@ int32_t OpenGTX_GameSceneInfo::maxFPS
 ```
  描述
 
-当前场景预期的最大帧率。取值范围0、[30,[targetFPS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_open_g_t_x___config_description#targetfps)]，若设置0则该值不生效。
+当前场景预期的最大帧率。取值范围0、[30,[targetFPS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_open_g_t_x___config_description#targetfps)]，若设置0则该值不生效。超出取值范围则该值不生效，返回[401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败)错误码。
 
 #### [h2]minFPS
 
@@ -57,7 +58,7 @@ int32_t OpenGTX_GameSceneInfo::minFPS
 ```
  描述
 
-当前场景预期的最小帧率。取值范围0、[30,[targetFPS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_open_g_t_x___config_description#targetfps)]，若设置0则该值不生效。
+当前场景预期的最小帧率。取值范围0、[30,[targetFPS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_open_g_t_x___config_description#targetfps)]，若设置0则该值不生效。超出取值范围则该值不生效，返回[401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败)错误码。
 
 #### [h2]recommendFPS
 
@@ -66,7 +67,7 @@ int32_t OpenGTX_GameSceneInfo::recommendFPS
 ```
  描述
 
-当前场景的建议帧率。取值范围0、[30,[targetFPS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_open_g_t_x___config_description#targetfps)]，若设置0则该值不生效。
+当前场景的建议帧率。取值范围0、[30,[targetFPS](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_open_g_t_x___config_description#targetfps)]，若设置0则该值不生效。超出取值范围则该值不生效，返回[401](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section401-参数检查失败)错误码。
 
 #### [h2]resolutionCurValue
 

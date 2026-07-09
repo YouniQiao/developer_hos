@@ -2,7 +2,8 @@
 title: "SafetyDetect（安全检测）"
 upstream_id: "harmonyos-references/devicesecurity-safetydetectenhanced-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:34.863039"
+content_hash: "e2c2be613a9f"
+synced_at: "2026-07-09T00:59:14.865932"
 ---
 
 # SafetyDetect（安全检测）

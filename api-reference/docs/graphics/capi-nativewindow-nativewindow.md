@@ -2,7 +2,8 @@
 title: "NativeWindow"
 upstream_id: "harmonyos-references/capi-nativewindow-nativewindow"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:11.157531"
+content_hash: "c7afa2f8edf0"
+synced_at: "2026-07-09T01:01:04.994510"
 ---
 
 # NativeWindow

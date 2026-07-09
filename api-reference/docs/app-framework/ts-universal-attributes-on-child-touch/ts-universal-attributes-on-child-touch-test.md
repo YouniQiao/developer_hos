@@ -2,7 +2,8 @@
 title: "自定义事件分发"
 upstream_id: "harmonyos-references/ts-universal-attributes-on-child-touch-test"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:33.619839"
+content_hash: "49eb52beba09"
+synced_at: "2026-07-09T00:57:36.936754"
 ---
 
 # 自定义事件分发
@@ -179,7 +180,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230146.gif)
+ ![](./img/zh-cn_image_0000002661612317.gif)
 
 #### [h2]示例2（设置事件派发策略为FORWARD）
 
@@ -253,7 +254,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070236.gif)
+ ![](./img/zh-cn_image_0000002631413024.gif)
 
 #### [h2]示例3（设置事件派发策略为DEFAULT）
 
@@ -322,4 +323,4 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469513.gif)
+ ![](./img/zh-cn_image_0000002661732255.gif)

@@ -2,7 +2,8 @@
 title: "animateTransform"
 upstream_id: "harmonyos-references/js-components-svg-animatetransform"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:14.071172"
+content_hash: "9f6f4dff3203"
+synced_at: "2026-07-09T00:58:25.515704"
 ---
 
 # animateTransform
@@ -89,7 +90,7 @@ transform动效，支持的组件范围：
   width: 1080px;
 }
 ```
- ![](./img/zh-cn_image_0000002656350367.gif)
+ ![](./img/zh-cn_image_0000002661613137.gif)
 
 动画叠加
 
@@ -143,7 +144,7 @@ transform动效，支持的组件范围：
   width: 1080px;
 }
 ```
- ![](./img/zh-cn_image_0000002626230954.gif)
+ ![](./img/zh-cn_image_0000002631413848.gif)
 
 涉及组件示例
 
@@ -210,4 +211,4 @@ transform动效，支持的组件范围：
   width: 1080px;
 }
 ```
- ![](./img/zh-cn_image_0000002626071044.gif)
+ ![](./img/zh-cn_image_0000002661733079.gif)

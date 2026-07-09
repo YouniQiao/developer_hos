@@ -2,7 +2,8 @@
 title: "ellipse"
 upstream_id: "harmonyos-references/js-components-svg-ellipse"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:11.375114"
+content_hash: "1b710f0febc9"
+synced_at: "2026-07-09T00:58:24.588948"
 ---
 
 # ellipse
@@ -42,4 +43,4 @@ synced_at: "2026-06-24T20:49:11.375114"
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002626071030.png)
+ ![](./img/zh-cn_image_0000002661733065.png)

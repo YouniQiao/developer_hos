@@ -2,7 +2,8 @@
 title: "焦点轴事件"
 upstream_id: "harmonyos-references/ts-universal-events-focus_axis"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:32.478102"
+content_hash: "3cfaafba9c2f"
+synced_at: "2026-07-09T00:57:36.108995"
 ---
 
 # 焦点轴事件
@@ -95,4 +96,4 @@ struct FocusAxisEventExample {
 ```
  游戏手柄摇杆移动时：
 
-![](./img/zh-cn_image_0000002626230138.png)
+![](./img/zh-cn_image_0000002661612307.png)

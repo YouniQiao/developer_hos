@@ -2,7 +2,8 @@
 title: "Divider"
 upstream_id: "harmonyos-references/ts-basic-components-divider"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:29.141808"
+content_hash: "d8c3a03103e2"
+synced_at: "2026-07-09T00:58:02.866328"
 ---
 
 # Divider
@@ -191,7 +192,7 @@ struct DividerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350031.png)
+ ![](./img/zh-cn_image_0000002661612797.png)
 
 #### [h2]示例2（定义Divider的lineCap样式）
 
@@ -229,4 +230,4 @@ struct DividerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230618.png)
+ ![](./img/zh-cn_image_0000002631413508.png)

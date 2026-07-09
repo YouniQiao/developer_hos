@@ -2,7 +2,8 @@
 title: "@ohos.fastbuffer (FastBuffer)"
 upstream_id: "harmonyos-references/js-apis-fastbuffer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:15.499445"
+content_hash: "9e5e70ee242d"
+synced_at: "2026-07-09T00:57:25.432291"
 ---
 
 # @ohos.fastbuffer (FastBuffer)

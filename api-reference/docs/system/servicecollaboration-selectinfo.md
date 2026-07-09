@@ -2,7 +2,8 @@
 title: "ServiceCollaboration_SelectInfo"
 upstream_id: "harmonyos-references/servicecollaboration-selectinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:03.938831"
+content_hash: "0f3096c0dd01"
+synced_at: "2026-07-09T00:59:37.210523"
 ---
 
 # ServiceCollaboration_SelectInfo
@@ -25,7 +26,7 @@ synced_at: "2026-06-24T20:51:03.938831"
 | --- | --- |
 | [ServiceCollaborationFilterType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/servicecollaboration-capi-module#servicecollaborationfiltertype-1) [serviceFilterType](#servicefiltertype) | 开发者期望的设备能力类型。 |
 | char [deviceNetworkId](#devicenetworkid) [[COLLABORATIONDEVICEINFO_DEVICENETWORKID_MAXLENGTH](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/servicecollaboration-capi-module#collaborationdeviceinfo_devicenetworkid_maxlength)] | 被选择的设备network Id。 |
-| uint32_t [maxSize](#maxsize) | 被选择的设备能被选中的最大图片数量。 |
+| uint32_t [maxSize](#maxsize) | 能被选中的最大图片数量。 |
 
 #### 结构体成员变量说明
 

@@ -2,7 +2,8 @@
 title: "drawing_text_declaration.h"
 upstream_id: "harmonyos-references/capi-drawing-text-declaration-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:03.158917"
+content_hash: "f9417ad93bb2"
+synced_at: "2026-07-09T01:00:57.987588"
 ---
 
 # drawing_text_declaration.h

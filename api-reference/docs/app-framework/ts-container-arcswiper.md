@@ -2,7 +2,8 @@
 title: "ArcSwiper"
 upstream_id: "harmonyos-references/ts-container-arcswiper"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:57.969270"
+content_hash: "e0fab71e0a2f"
+synced_at: "2026-07-09T00:57:48.482376"
 ---
 
 # ArcSwiper
@@ -516,7 +517,7 @@ onAnimationEnd(handler: Optional<AnimationEndHandler>)
 
 切换动画结束时触发该回调。
 
-当ArcSwiper切换动效结束时触发，包括动画过程中手势中断，通过[SwiperController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper#swipercontroller)调用finishAnimation。参数为动画结束后的index值，多列ArcSwiper时，index为最左侧组件的索引。
+当ArcSwiper切换动效结束时触发，包括动画过程中手势中断，通过[ArcSwiperController](#arcswipercontroller)调用finishAnimation。参数为动画结束后的index值，多列ArcSwiper时，index为最左侧组件的索引。
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
@@ -609,9 +610,9 @@ finishTransition(): void
 
 #### 示例
 
-#### [h2]示例1（设置arcSwiper基本属性）
+#### [h2]示例1（设置ArcSwiper基本属性）
 
-该示例通过设置arcSwiper的基本属性，展示了组件的基本功能。
+该示例通过设置ArcSwiper的基本属性，展示了组件的基本功能。
 
 ```
 // xxx.ets
@@ -660,10 +661,6 @@ struct TestNewInterface {
   innerSelectedIndex: number = 0;
 
   aboutToAppear(): void {
-    let list: Color[] = [];
-    for (let i = 1; i <= 6; i++) {
-      list.push(i);
-    }
     this.data = new MyDataSource(this.backgroundColors);
   }
 
@@ -732,7 +729,7 @@ struct TestNewInterface {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469691.gif)
+ ![](./img/zh-cn_image_0000002631253318.gif)
 
 #### [h2]示例2（设置ArcSwiper自定义页面切换动画）
 
@@ -778,7 +775,7 @@ struct TestNewInterface {
         .customContentTransition({
           // 页面移除视窗时超时1000ms下渲染树
           timeout: 1000,
-          // 对视窗内所有页面逐帧回调transition，在回调中修改opacity属性值，实现自定义动画
+          // 对视窗内所有页面逐帧回调transition，在回调中修改scale属性值，实现自定义动画
           transition: (proxy: SwiperContentTransitionProxy) => {
             if (proxy.position <= -1 || proxy.position >= 1) {
               // 页面完全滑出视窗外时，重置属性值
@@ -795,4 +792,4 @@ struct TestNewInterface {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349739.gif)
+ ![](./img/zh-cn_image_0000002661612501.gif)

@@ -2,7 +2,8 @@
 title: "@ohos.batteryInfo (电量信息)"
 upstream_id: "harmonyos-references/js-apis-battery-info"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:05.628984"
+content_hash: "232f8b319112"
+synced_at: "2026-07-09T00:59:38.925695"
 ---
 
 # @ohos.batteryInfo (电量信息)

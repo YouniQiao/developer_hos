@@ -2,7 +2,8 @@
 title: "drawing_mask_filter.h"
 upstream_id: "harmonyos-references/capi-drawing-mask-filter-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:01.015676"
+content_hash: "13b4f99472c1"
+synced_at: "2026-07-09T01:00:56.107064"
 ---
 
 # drawing_mask_filter.h

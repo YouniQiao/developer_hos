@@ -2,7 +2,8 @@
 title: "OH_ArkUI_FontWeightConfigs"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-arkui-fontweightconfigs"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:44.567490"
+content_hash: "fe8cb5f878d7"
+synced_at: "2026-07-09T00:58:38.863727"
 ---
 
 # OH_ArkUI_FontWeightConfigs

@@ -2,7 +2,8 @@
 title: "自定义内容"
 upstream_id: "harmonyos-references/ts-universal-attributes-content-modifier"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:48.612830"
+content_hash: "6d6e8eb11b6f"
+synced_at: "2026-07-09T00:57:42.978024"
 ---
 
 # 自定义内容
@@ -136,4 +137,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070344.gif)
+ ![](./img/zh-cn_image_0000002631413138.gif)

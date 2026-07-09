@@ -2,7 +2,8 @@
 title: "ArkUI_NodeAttributeType（表单类组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-form"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:38.030748"
+content_hash: "edf2ff004fed"
+synced_at: "2026-07-09T00:58:34.859516"
 ---
 
 # ArkUI_NodeAttributeType（表单类组件相关属性）

@@ -2,7 +2,8 @@
 title: "ArkUI_NativeModule"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:30.671342"
+content_hash: "2a2a0aa9f00c"
+synced_at: "2026-07-09T00:58:32.010694"
 ---
 
 # ArkUI_NativeModule

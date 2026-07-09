@@ -2,7 +2,8 @@
 title: "安全区域"
 upstream_id: "harmonyos-references/ts-universal-attributes-expand-safe-area"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:37.494534"
+content_hash: "325b8891dd27"
+synced_at: "2026-07-09T00:57:38.941936"
 ---
 
 # 安全区域
@@ -182,9 +183,6 @@ ignoreLayoutSafeArea(types?: Array<LayoutSafeAreaType>, edges?: Array<LayoutSafe
 @Entry
 @Component
 struct SafeAreaExample1 {
-  @State text: string = ''
-  controller: TextInputController = new TextInputController()
-
   build() {
     Row() {
       Column()
@@ -198,7 +196,7 @@ struct SafeAreaExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469537.png)
+ ![](./img/zh-cn_image_0000002661732281.png)
 
 #### [h2]示例2（同时设置固定宽高和expandSafeArea属性）
 
@@ -229,7 +227,7 @@ struct SafeAreaExample2 {
 ```
  如下图：Column组件扩展至了顶部状态栏[SafeAreaEdge.TOP]，未扩展至底部导航条[SafeAreaEdge.BOTTOM]，扩展后的组件高度维持设置值不变。
 
-![](./img/zh-cn_image_0000002656349585.png)
+![](./img/zh-cn_image_0000002631253160.png)
 
 #### [h2]示例3（键盘避让时固定背景图位置）
 
@@ -272,7 +270,7 @@ struct SafeAreaExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230172.gif)
+ ![](./img/zh-cn_image_0000002661612343.gif)
 
 #### [h2]示例4（设置键盘避让模式为压缩）
 
@@ -287,9 +285,8 @@ export default class EntryAbility extends UIAbility{
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageCreate');
 
     windowStage.loadContent('pages/Index', (err, data) => {
-      let keyboardAvoidMode = windowStage.getMainWindowSync().getUIContext().getKeyboardAvoidMode();
       // 设置虚拟键盘抬起时压缩页面大小为减去键盘的高度
-    windowStage.getMainWindowSync().getUIContext().setKeyboardAvoidMode(KeyboardAvoidMode.RESIZE);
+      windowStage.getMainWindowSync().getUIContext().setKeyboardAvoidMode(KeyboardAvoidMode.RESIZE);
       if (err.code) {
         hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err) ?? '');
         return;
@@ -325,7 +322,7 @@ struct KeyboardAvoidExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070262.gif)
+ ![](./img/zh-cn_image_0000002631413050.gif)
 
 #### [h2]示例5（设置键盘避让模式为上抬）
 
@@ -340,9 +337,8 @@ export default class EntryAbility extends UIAbility{
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageCreate');
 
     windowStage.loadContent('pages/Index', (err, data) => {
-      let keyboardAvoidMode = windowStage.getMainWindowSync().getUIContext().getKeyboardAvoidMode();
       // 设置虚拟键盘抬起时把页面上抬直到露出光标
-    windowStage.getMainWindowSync().getUIContext().setKeyboardAvoidMode(KeyboardAvoidMode.OFFSET);
+      windowStage.getMainWindowSync().getUIContext().setKeyboardAvoidMode(KeyboardAvoidMode.OFFSET);
       if (err.code) {
         hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err) ?? '');
         return;
@@ -378,7 +374,7 @@ struct KeyboardAvoidExample2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469539.gif)
+ ![](./img/zh-cn_image_0000002661732283.gif)
 
 #### [h2]示例6（切换避让模式）
 
@@ -387,9 +383,9 @@ struct KeyboardAvoidExample2 {
 ```
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { KeyboardAvoidMode } from '@kit.ArkUI';
+
 @Entry
 @Component
-
 struct KeyboardAvoidExample3 {
   build() {
     Column() {
@@ -436,7 +432,7 @@ struct KeyboardAvoidExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349587.gif)
+ ![](./img/zh-cn_image_0000002631253162.gif)
 
 #### [h2]示例7（滚动类容器扩展安全区）
 
@@ -501,7 +497,7 @@ struct ExpandSafeAreaTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230174.png)
+ ![](./img/zh-cn_image_0000002661612345.png)
 
 #### [h2]示例8（ignoreLayoutSafeArea延伸组件布局范围）
 
@@ -541,7 +537,7 @@ struct IgnoreLayoutSafeAreaTest1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070264.jpg)
+ ![](./img/zh-cn_image_0000002631413052.jpg)
 
 #### [h2]示例9（ignoreLayoutSafeArea配合LayoutPolicy.matchParent延伸组件布局范围）
 
@@ -579,15 +575,13 @@ struct IgnoreLayoutSafeAreaTest2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469541.jpg)
+ ![](./img/zh-cn_image_0000002661732285.jpg)
 
 #### [h2]示例10（expandSafeArea与ignoreLayoutSafeArea的区别）
 
 该示例展示了容器分别设置了expandSafeArea和ignoreLayoutSafeArea的布局效果和各自对子组件布局效果的影响。两种设置下，容器都可见地进行了延伸，但前者的子组件不受延伸影响，后者的子组件因父容器的延伸改变了位置。
 
 ```
-import { LengthMetrics } from '@kit.ArkUI'
-
 @Entry
 @Component
 struct IgnoreLayoutSafeAreaTest3 {
@@ -652,4 +646,4 @@ struct IgnoreLayoutSafeAreaTest3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349589.jpg)
+ ![](./img/zh-cn_image_0000002631253164.jpg)

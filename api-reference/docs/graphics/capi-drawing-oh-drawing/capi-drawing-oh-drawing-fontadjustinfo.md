@@ -2,7 +2,8 @@
 title: "OH_Drawing_FontAdjustInfo"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-fontadjustinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:06.243438"
+content_hash: "47561bd3145b"
+synced_at: "2026-07-09T01:01:00.855049"
 ---
 
 # OH_Drawing_FontAdjustInfo

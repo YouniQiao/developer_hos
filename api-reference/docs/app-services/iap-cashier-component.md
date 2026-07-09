@@ -2,14 +2,19 @@
 title: "CashierComponent (iap嵌入式收银台组件)"
 upstream_id: "harmonyos-references/iap-cashier-component"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:28.281888"
+content_hash: "8fffe1427241"
+synced_at: "2026-07-09T01:01:21.067652"
 ---
 
 # CashierComponent (iap嵌入式收银台组件)
 
-本模块提供CashierComponent组件，应用通过集成该组件完成iap嵌入式收银台功能。
+CashierComponent是IAP Kit提供的ArkUI嵌入式收银台组件，需配合cashierComponentManager使用，用于在应用页面内直接展示商品选择与支付界面，无需跳转外部收银台。该组件目前仅适用于TV设备的扫码支付场景，支持通过CashierDisplayOptions配置显示参数，并通过CashierListener回调处理购买结果。
 
-CashierComponent需要配合[cashierComponentManager](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-cashier-component-manager)一起使用，用于实现iap嵌入式收银台功能。
+开发者可通过本组件实现以下功能：
+
+- 在应用内直接展示支付页面，完成商品购买和支付全流程。
+- 配置收银台显示参数及 UI 样式（如背景色）。
+- 监听购买结果并处理交易闭环，获取成功或失败的事件通知。
 
 起始版本： 6.1.0(23)
 

@@ -2,7 +2,8 @@
 title: "OH_AudioSessionManager"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audiosessionmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:57.993330"
+content_hash: "92945a5065f8"
+synced_at: "2026-07-09T01:00:11.190327"
 ---
 
 # OH_AudioSessionManager

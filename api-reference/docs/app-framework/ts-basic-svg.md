@@ -2,7 +2,8 @@
 title: "SVG标签说明"
 upstream_id: "harmonyos-references/ts-basic-svg"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:22.624489"
+content_hash: "cb2a588b7c63"
+synced_at: "2026-07-09T00:58:00.285450"
 ---
 
 # SVG标签说明
@@ -119,7 +120,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070630.png)
+ ![](./img/zh-cn_image_0000002661732659.png)
 
 #### 图形效果
 

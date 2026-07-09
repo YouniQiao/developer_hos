@@ -2,7 +2,8 @@
 title: "Input_DeviceListener"
 upstream_id: "harmonyos-references/capi-input-input-devicelistener"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:19.392604"
+content_hash: "550e6f2f8f97"
+synced_at: "2026-07-09T00:59:49.603560"
 ---
 
 # Input_DeviceListener

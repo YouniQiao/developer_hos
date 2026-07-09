@@ -2,7 +2,8 @@
 title: "ArkUI_AccessibleRangeInfo"
 upstream_id: "harmonyos-references/capi-arkui-accessibility-arkui-accessiblerangeinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:47.808915"
+content_hash: "eae7629b900a"
+synced_at: "2026-07-09T00:58:40.641586"
 ---
 
 # ArkUI_AccessibleRangeInfo

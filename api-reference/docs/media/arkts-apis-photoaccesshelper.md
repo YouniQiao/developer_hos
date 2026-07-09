@@ -1,9 +1,12 @@
 ---
+
 title: "模块描述"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:43.406147"
+synced_at: "2026-07-09T01:00:45.666356"
+content_hash: "242438bce748"
 ---
+
 
 # 模块描述
 

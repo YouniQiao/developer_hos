@@ -2,7 +2,8 @@
 title: "fileGuard (文件分级管控)"
 upstream_id: "harmonyos-references/dataguard-fileguard"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:37.838828"
+content_hash: "55fc6090923c"
+synced_at: "2026-07-09T00:59:17.274781"
 ---
 
 # fileGuard (文件分级管控)
@@ -772,7 +773,7 @@ guard.unsetFileCustomTag(path, tagList, (err: BusinessError) => {
 
 unsetFileCustomTag(path: string, tagList: Array<string>): Promise<void>
 
-取消文件自定义标签。使用Promise异步回调。
+取消文件自定义属性标签。使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -959,7 +960,7 @@ let path: string = '/data/service/el2/{account_id}/hmdfs/account/files/Docs/test
 guard.getFileUri(path, (err: BusinessError, data: fileGuard.FilePathInfo) => {
   if (err) {
     console.error(`Failed to get file uri. Code: ${err.code}, message: ${err.message}.`);
-  }else{
+  } else {
     console.info(`Succeeded in getting file uri. absolutePath: ${data.absolutePath}, uri: ${data.uri}.`);
   }
 });
@@ -1056,7 +1057,7 @@ let path: string = '/data/service/el2/{account_id}/hmdfs/account/files/Docs/Docu
 guard.deleteFile(path, (err: BusinessError) => {
   if (err) {
     console.error(`Failed to delete file. Code: ${err.code}, message: ${err.message}.`);
-  }else{
+  } else {
     console.info(`Succeeded in deleting file.`);
   }
 });
@@ -1130,7 +1131,7 @@ updatePolicy(policy: string, callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| policy | string | 是 | 安全管控策略：网络策略、文件策略、蓝牙策略、星闪策略、多用户策略、可信任应用列表和五种自定义标签。 - **网络策略** - default_policy：网段管控默认策略。判断在默认网段范围范围内，但不处于可信任网段和不可信任网段范围内的ip是否需要被管控，0表示不管控，1表示管控，默认为0。 - net_intercept_toggle：KIA网络拦截使能开关。0表示关闭，设置为0时，KIA网络拦截不生效；1表示开启（默认为1），设置为1时，开启拦截，具体拦截规则如下： -当default_policy设置为0（不管控）时，系统会拦截通过网络向外发送至默认网段范围外或不可信网段的KIA文件。 -当default_policy设置为1（管控）时，系统仅允许文件发往明确配置的可信任网段，以下所有情况均会被拦截：发往默认网段范围外的地址，发往不可信任网段地址，以及发往默认网段内但既未列入可信任网段也未列入不可信网段的地址。 - net_reject_cache_time：网络外发拦截管控时间。当成功触发网络外发拦截后，在该管控时间范围内，相关进程通过网络进行的任何文件外发操作都会被拦截。正整数，默认为30，单位：s。 - boundary：默认网段范围。限定默认管控的网段范围，向不在此范围内的ip地址外发文件默认会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_trustlist：可信任网段。限定可信任的网段范围，外发至该网段内的文件不会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_blocklist：不可信网段。限定不可信任的网段范围，外发至该网段内的文件会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_update_type：网段更新方式。0表示下发策略中的网段信息将覆盖原有策略中的网段信息；1表示在原有网段信息的基础下追加新下发策略中的网段信息，默认为0。 - **文件策略** - usb_intercept_toggle：U盘拦截管控开关。当KIA文件外发到U盘时，设置为0表示关闭拦截（不启用管控），设置为1表示开启拦截，默认为0。 - smb_client_intercept_toggle：Samba客户端拦截管控开关。当通过网络邻居外发KIA文件时，0表示关闭拦截（不启用管控），1表示开启拦截，默认为1。从6.0.1(21)版本开始支持此管控策略。 - smb_server_intercept_toggle：Samba服务端拦截管控开关。当通过网络邻居访问KIA文件时，0表示关闭拦截（不启用管控），1表示开启，拦截，默认为1。从6.0.1(21)版本开始支持此管控策略。 - new_file_audit_toggle：新建文件审计开关。开启后，会向审计框架上报文件新建的审计事件，0表示关闭，1表示开启，默认为0。起始版本：从5.1.1(19)版本开始支持此管控策略。 - kia_variant_toggle：KIA变种开关。开启后，系统将监控KIA变种事件，并支持通过注册回调的方式监听并处理相关变种事件，0表示关闭，1表示开启，默认为1。从5.0.3(15)版本开始支持此管控策略。 - audit_filter_toggle：KIA文件创建事件及变种事件的过滤开关。0表示关闭，关闭后，会记录所有进程行为下的KIA文件创建事件及变种事件；1表示开启，开启后，仅记录应用行为下的KIA文件创建事件及变种事件，默认为0。从5.0.3(15)版本开始支持此管控策略。 - print_intercept_toggle：打印管控开关。0表示关闭，关闭后，打印KIA文件的行为不会被拦截，默认为0；1表示开启，开启后，打印KIA文件的行为将会被拦截。从6.1.1(24)版本开始支持此管控策略。 - **蓝牙策略** 从6.0.1(21)版本开始支持此管控策略。 - bluetooth_intercept_toggle：蓝牙拦截管控开关。设置后，通过蓝牙外发KIA文件会被拦截。字符串列表，可填入"bt_socket","bt_ble","bt_opp"三种蓝牙协议名称，默认为空。 - bluetooth_intercept_time：蓝牙外发拦截管控时间。当成功触发蓝牙外发拦截后，在该管控时间范围内，通过蓝牙进行的任何文件外发操作都会被拦截。正整数，默认为15，单位：s。 - **星闪策略** 从6.0.1(21)版本开始支持此管控策略。 - nearlink_intercept_toggle：星闪拦截管控开关。设置后，通过相关星闪协议外发KIA文件会被拦截。字符串列表，可填入"nearlink_ssap","nearlink_dataTransfer"两种星闪协议名称，默认为空。 - nearlink_intercept_time：星闪外发拦截管控时间。当成功触发星闪外发拦截后，在该管控时间范围内，通过星闪进行的任何文件外发操作都会被拦截。正整数，默认为15，单位：s。 - **多用户策略** 从5.1.1(19)版本开始支持此管控策略。 - user_id：用户ID。设置用户ID后，本次下发的管控策略范围将仅适用于该user_id对应的用户；若未指定user_id，则采用默认的管控策略。在使用过程中，系统会优先采用用户的专属策略，若无法匹配，则自动采用默认策略。 - **可信任应用列表** - trust_app_list：可信任应用列表，在可信任应用列表中的应用才可读取KIA文件。字符串列表，元素为[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)，默认为空。从5.0.3(15)版本开始支持此管控策略。 - kia_file_access_toggle：KIA文件访问限制开关。1表示开启，开启后，应用读取KIA文件的行为将会受到限制，需将应用的[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)加入到trust_app_list中，应用才被允许读取KIA文件；0表示关闭，关闭后，任何应用和进程都可以读取KIA文件的内容，默认为0。 从6.1.1(24)版本开始支持此管控策略。 - **五种自定义标签** 从5.1.1(19)版本开始支持此管控策略。最多支持五种自定义标签管控策略，该策略会自动识别文件扩展属性中包含指定"tag"内容的文件，并对这些文件进行相应管控。 - "tag": 标签名称，用于在[setFileTag](#setfiletag)、[setFileCustomTag](#setfilecustomtag)和[unsetFileCustomTag](#unsetfilecustomtag)中管控对应标签的文件，默认为空。 - "usb_intercept_toggle"：U盘拦截管控开关，默认为0。 - "net_intercept_toggle"：网络拦截管控开关，默认为0。 - "boundary"：默认网段范围。 - "netsegment_trustlist"：可信任网段。 - "netsegment_blocklist"：不可信网段。 |
+| policy | string | 是 | 安全管控策略：网络策略、文件策略、蓝牙策略、星闪策略、多用户策略、可信任应用列表和五种自定义标签。 - **网络策略** - default_policy：网段管控默认策略。判断在默认网段范围内，但不处于可信任网段和不可信任网段范围内的ip是否需要被管控，0表示不管控，1表示管控，默认为0。 - net_intercept_toggle：KIA网络拦截使能开关。0表示关闭，设置为0时，KIA网络拦截不生效；1表示开启（默认为1），设置为1时，开启拦截，具体拦截规则如下： -当default_policy设置为0（不管控）时，系统会拦截通过网络向外发送至默认网段范围外或不可信网段的KIA文件。 -当default_policy设置为1（管控）时，系统仅允许文件发往明确配置的可信任网段，以下所有情况均会被拦截：发往默认网段范围外的地址，发往不可信任网段地址，以及发往默认网段内但既未列入可信任网段也未列入不可信网段的地址。 - net_reject_cache_time：网络外发拦截管控时间。当成功触发网络外发拦截后，在该管控时间范围内，相关进程通过网络进行的任何文件外发操作都会被拦截。正整数，默认为30，单位：s。 - boundary：默认网段范围。限定默认管控的网段范围，向不在此范围内的ip地址外发文件默认会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_trustlist：可信任网段。限定可信任的网段范围，外发至该网段内的文件不会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_blocklist：不可信网段。限定不可信任的网段范围，外发至该网段内的文件会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_update_type：网段更新方式。0表示下发策略中的网段信息将覆盖原有策略中的网段信息；1表示在原有网段信息的基础下追加新下发策略中的网段信息，默认为0。 - **文件策略** - usb_intercept_toggle：U盘拦截管控开关。当KIA文件外发到U盘时，设置为0表示关闭拦截（不启用管控），设置为1表示开启拦截，默认为0。 - smb_client_intercept_toggle：Samba客户端拦截管控开关。当通过网络邻居外发KIA文件时，0表示关闭拦截（不启用管控），1表示开启拦截，默认为1。从6.0.1(21)版本开始支持此管控策略。 - smb_server_intercept_toggle：Samba服务端拦截管控开关。当通过网络邻居访问KIA文件时，0表示关闭拦截（不启用管控），1表示开启拦截，默认为1。从6.0.1(21)版本开始支持此管控策略。 - new_file_audit_toggle：新建文件审计开关。开启后，会向审计框架上报文件新建的审计事件，0表示关闭，1表示开启，默认为0。起始版本：从5.1.1(19)版本开始支持此管控策略。 - kia_variant_toggle：KIA变种开关。开启后，系统将监控KIA变种事件，并支持通过注册回调的方式监听并处理相关变种事件，0表示关闭，1表示开启，默认为1。从5.0.3(15)版本开始支持此管控策略。 - audit_filter_toggle：KIA文件创建事件及变种事件的过滤开关。0表示关闭，关闭后，会记录所有进程行为下的KIA文件创建事件及变种事件；1表示开启，开启后，仅记录应用行为下的KIA文件创建事件及变种事件，默认为0。从5.0.3(15)版本开始支持此管控策略。 - print_intercept_toggle：打印管控开关。0表示关闭，关闭后，打印KIA文件的行为不会被拦截，默认为0；1表示开启，开启后，打印KIA文件的行为将会被拦截。从6.1.1(24)版本开始支持此管控策略。 - **蓝牙策略** 从6.0.1(21)版本开始支持此管控策略。 - bluetooth_intercept_toggle：蓝牙拦截管控开关。设置后，通过蓝牙外发KIA文件会被拦截。字符串列表，可填入"bt_socket","bt_ble","bt_opp"三种蓝牙协议名称，默认为空。 - bluetooth_intercept_time：蓝牙外发拦截管控时间。当成功触发蓝牙外发拦截后，在该管控时间范围内，通过蓝牙进行的任何文件外发操作都会被拦截。正整数，默认为15，单位：s。 - **星闪策略** 从6.0.1(21)版本开始支持此管控策略。 - nearlink_intercept_toggle：星闪拦截管控开关。设置后，通过相关星闪协议外发KIA文件会被拦截。字符串列表，可填入"nearlink_ssap","nearlink_dataTransfer"两种星闪协议名称，默认为空。 - nearlink_intercept_time：星闪外发拦截管控时间。当成功触发星闪外发拦截后，在该管控时间范围内，通过星闪进行的任何文件外发操作都会被拦截。正整数，默认为15，单位：s。 - **多用户策略** 从5.1.1(19)版本开始支持此管控策略。 - user_id：用户ID。设置用户ID后，本次下发的管控策略范围将仅适用于该user_id对应的用户；若未指定user_id，则采用默认的管控策略。在使用过程中，系统会优先采用用户的专属策略，若无法匹配，则自动采用默认策略。 - **可信任应用列表** - trust_app_list：可信任应用列表，在可信任应用列表中的应用才可读取KIA文件。字符串列表，元素为[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)，默认为空。从5.0.3(15)版本开始支持此管控策略。 - kia_file_access_toggle：KIA文件访问限制开关。1表示开启，开启后，应用读取KIA文件的行为将会受到限制，需将应用的[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)加入到trust_app_list中，应用才被允许读取KIA文件；0表示关闭，关闭后，任何应用和进程都可以读取KIA文件的内容，默认为0。 从6.1.1(24)版本开始支持此管控策略。 - **五种自定义标签** 从5.1.1(19)版本开始支持此管控策略。最多支持五种自定义标签管控策略，该策略会自动识别文件扩展属性中包含指定"tag"内容的文件，并对这些文件进行相应管控。 - "tag": 标签名称，用于在[setFileTag](#setfiletag)、[setFileCustomTag](#setfilecustomtag)和[unsetFileCustomTag](#unsetfilecustomtag)中管控对应标签的文件，默认为空。 - "usb_intercept_toggle"：U盘拦截管控开关，默认为0。 - "net_intercept_toggle"：网络拦截管控开关，默认为0。 - "boundary"：默认网段范围。 - "netsegment_trustlist"：可信任网段。 - "netsegment_blocklist"：不可信网段。 |
 | callback | AsyncCallback | 是 | 回调函数，当异步更新安全管控策略成功，err为undefined，否则为错误对象。 |
 
 错误码：
@@ -1244,7 +1245,7 @@ updatePolicy(policy: string): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| policy | string | 是 | 安全管控策略：网络策略、文件策略、蓝牙策略、星闪策略、多用户策略、可信任应用列表和五种自定义标签。 - **网络策略** - default_policy：网段管控默认策略。判断在默认网段范围范围内，但不处于可信任网段和不可信任网段范围内的ip是否需要被管控，0表示不管控，1表示管控，默认为0。 - net_intercept_toggle：KIA网络拦截使能开关。0表示关闭，设置为0时，KIA网络拦截不生效；1表示开启（默认为1），设置为1时，开启拦截，具体拦截规则如下： -当default_policy设置为0（不管控）时，系统会拦截通过网络向外发送至默认网段范围外或不可信网段的KIA文件。 -当default_policy设置为1（管控）时，系统仅允许文件发往明确配置的可信任网段，以下所有情况均会被拦截：发往默认网段范围外的地址，发往不可信任网段地址，以及发往默认网段内但既未列入可信任网段也未列入不可信网段的地址。 - net_reject_cache_time：网络外发拦截管控时间。当成功触发网络外发拦截后，在该管控时间范围内，相关进程通过网络进行的任何文件外发操作都会被拦截。正整数，默认为30，单位：s。 - boundary：默认网段范围。限定默认管控的网段范围，向不在此范围内的ip地址外发文件默认会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_trustlist：可信任网段。限定可信任的网段范围，外发至该网段内的文件不会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_blocklist：不可信网段。限定不可信任的网段范围，外发至该网段内的文件会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_update_type：网段更新方式。0表示下发策略中的网段信息将覆盖原有策略中的网段信息；1表示在原有网段信息的基础下追加新下发策略中的网段信息，默认为0。 - **文件策略** - usb_intercept_toggle：U盘拦截管控开关。当KIA文件外发到U盘时，设置为0表示关闭拦截（不启用管控），设置为1表示开启拦截，默认为0。 - smb_client_intercept_toggle：Samba客户端拦截管控开关。当通过网络邻居外发KIA文件时，0表示关闭拦截（不启用管控），1表示开启拦截，默认为1。从6.0.1(21)版本开始支持此管控策略。 - smb_server_intercept_toggle：Samba服务端拦截管控开关。当通过网络邻居访问KIA文件时，0表示关闭拦截（不启用管控），1表示开启，拦截，默认为1。从6.0.1(21)版本开始支持此管控策略。 - new_file_audit_toggle：新建文件审计开关。开启后，会向审计框架上报文件新建的审计事件，0表示关闭，1表示开启，默认为0。起始版本：从5.1.1(19)版本开始支持此管控策略。 - kia_variant_toggle：KIA变种开关。开启后，系统将监控KIA变种事件，并支持通过注册回调的方式监听并处理相关变种事件，0表示关闭，1表示开启，默认为1。从5.0.3(15)版本开始支持此管控策略。 - audit_filter_toggle：KIA文件创建事件及变种事件的过滤开关。0表示关闭，关闭后，会记录所有进程行为下的KIA文件创建事件及变种事件；1表示开启，开启后，仅记录应用行为下的KIA文件创建事件及变种事件，默认为0。从5.0.3(15)版本开始支持此管控策略。 - print_intercept_toggle：打印管控开关。0表示关闭，关闭后，打印KIA文件的行为不会被拦截，默认为0；1表示开启，开启后，打印KIA文件的行为将会被拦截。从6.1.1(24)版本开始支持此管控策略。 - **蓝牙策略** 从6.0.1(21)版本开始支持此管控策略。 - bluetooth_intercept_toggle：蓝牙拦截管控开关。设置后，通过蓝牙外发KIA文件会被拦截。字符串列表，可填入"bt_socket","bt_ble","bt_opp"三种蓝牙协议名称，默认为空。 - bluetooth_intercept_time：蓝牙外发拦截管控时间。当成功触发蓝牙外发拦截后，在该管控时间范围内，通过蓝牙进行的任何文件外发操作都会被拦截。正整数，默认为15，单位：s。 - **星闪策略** 从6.0.1(21)版本开始支持此管控策略。 - nearlink_intercept_toggle：星闪拦截管控开关。设置后，通过相关星闪协议外发KIA文件会被拦截。字符串列表，可填入"nearlink_ssap","nearlink_dataTransfer"两种星闪协议名称，默认为空。 - nearlink_intercept_time：星闪外发拦截管控时间。当成功触发星闪外发拦截后，在该管控时间范围内，通过星闪进行的任何文件外发操作都会被拦截。正整数，默认为15，单位：s。 - **多用户策略** 从5.1.1(19)版本开始支持此管控策略。 - user_id：用户ID。设置用户ID后，本次下发的管控策略范围将仅适用于该user_id对应的用户；若未指定user_id，则采用默认的管控策略。在使用过程中，系统会优先采用用户的专属策略，若无法匹配，则自动采用默认策略。 - **可信任应用列表** - trust_app_list：可信任应用列表，在可信任应用列表中的应用才可读取KIA文件。字符串列表，元素为[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)，默认为空。从5.0.3(15)版本开始支持此管控策略。 - kia_file_access_toggle：KIA文件访问限制开关。1表示开启，开启后，应用读取KIA文件的行为将会受到限制，需将应用的[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)加入到trust_app_list中，应用才被允许读取KIA文件；0表示关闭，关闭后，任何应用和进程都可以读取KIA文件的内容，默认为0。 从6.1.1(24)版本开始支持此管控策略。 - **五种自定义标签** 从5.1.1(19)版本开始支持此管控策略。最多支持五种自定义标签管控策略，该策略会自动识别文件扩展属性中包含指定"tag"内容的文件，并对这些文件进行相应管控。 - "tag": 标签名称，用于在[setFileTag](#setfiletag)、[setFileCustomTag](#setfilecustomtag)和[unsetFileCustomTag](#unsetfilecustomtag)中管控对应标签的文件，默认为空。 - "usb_intercept_toggle"：U盘拦截管控开关，默认为0。 - "net_intercept_toggle"：网络拦截管控开关，默认为0。 - "boundary"：默认网段范围。 - "netsegment_trustlist"：可信任网段。 - "netsegment_blocklist"：不可信网段。 |
+| policy | string | 是 | 安全管控策略：网络策略、文件策略、蓝牙策略、星闪策略、多用户策略、可信任应用列表和五种自定义标签。 - **网络策略** - default_policy：网段管控默认策略。判断在默认网段范围内，但不处于可信任网段和不可信任网段范围内的ip是否需要被管控，0表示不管控，1表示管控，默认为0。 - net_intercept_toggle：KIA网络拦截使能开关。0表示关闭，设置为0时，KIA网络拦截不生效；1表示开启（默认为1），设置为1时，开启拦截，具体拦截规则如下： -当default_policy设置为0（不管控）时，系统会拦截通过网络向外发送至默认网段范围外或不可信网段的KIA文件。 -当default_policy设置为1（管控）时，系统仅允许文件发往明确配置的可信任网段，以下所有情况均会被拦截：发往默认网段范围外的地址，发往不可信任网段地址，以及发往默认网段内但既未列入可信任网段也未列入不可信网段的地址。 - net_reject_cache_time：网络外发拦截管控时间。当成功触发网络外发拦截后，在该管控时间范围内，相关进程通过网络进行的任何文件外发操作都会被拦截。正整数，默认为30，单位：s。 - boundary：默认网段范围。限定默认管控的网段范围，向不在此范围内的ip地址外发文件默认会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_trustlist：可信任网段。限定可信任的网段范围，外发至该网段内的文件不会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_blocklist：不可信网段。限定不可信任的网段范围，外发至该网段内的文件会被拦截。字符串列表，元素为ip网段范围(包含IPV4和IPV6)，如"10.0.0.0-10.255.255.255"。 - netsegment_update_type：网段更新方式。0表示下发策略中的网段信息将覆盖原有策略中的网段信息；1表示在原有网段信息的基础下追加新下发策略中的网段信息，默认为0。 - **文件策略** - usb_intercept_toggle：U盘拦截管控开关。当KIA文件外发到U盘时，设置为0表示关闭拦截（不启用管控），设置为1表示开启拦截，默认为0。 - smb_client_intercept_toggle：Samba客户端拦截管控开关。当通过网络邻居外发KIA文件时，0表示关闭拦截（不启用管控），1表示开启拦截，默认为1。从6.0.1(21)版本开始支持此管控策略。 - smb_server_intercept_toggle：Samba服务端拦截管控开关。当通过网络邻居访问KIA文件时，0表示关闭拦截（不启用管控），1表示开启拦截，默认为1。从6.0.1(21)版本开始支持此管控策略。 - new_file_audit_toggle：新建文件审计开关。开启后，会向审计框架上报文件新建的审计事件，0表示关闭，1表示开启，默认为0。起始版本：从5.1.1(19)版本开始支持此管控策略。 - kia_variant_toggle：KIA变种开关。开启后，系统将监控KIA变种事件，并支持通过注册回调的方式监听并处理相关变种事件，0表示关闭，1表示开启，默认为1。从5.0.3(15)版本开始支持此管控策略。 - audit_filter_toggle：KIA文件创建事件及变种事件的过滤开关。0表示关闭，关闭后，会记录所有进程行为下的KIA文件创建事件及变种事件；1表示开启，开启后，仅记录应用行为下的KIA文件创建事件及变种事件，默认为0。从5.0.3(15)版本开始支持此管控策略。 - print_intercept_toggle：打印管控开关。0表示关闭，关闭后，打印KIA文件的行为不会被拦截，默认为0；1表示开启，开启后，打印KIA文件的行为将会被拦截。从6.1.1(24)版本开始支持此管控策略。 - **蓝牙策略** 从6.0.1(21)版本开始支持此管控策略。 - bluetooth_intercept_toggle：蓝牙拦截管控开关。设置后，通过蓝牙外发KIA文件会被拦截。字符串列表，可填入"bt_socket","bt_ble","bt_opp"三种蓝牙协议名称，默认为空。 - bluetooth_intercept_time：蓝牙外发拦截管控时间。当成功触发蓝牙外发拦截后，在该管控时间范围内，通过蓝牙进行的任何文件外发操作都会被拦截。正整数，默认为15，单位：s。 - **星闪策略** 从6.0.1(21)版本开始支持此管控策略。 - nearlink_intercept_toggle：星闪拦截管控开关。设置后，通过相关星闪协议外发KIA文件会被拦截。字符串列表，可填入"nearlink_ssap","nearlink_dataTransfer"两种星闪协议名称，默认为空。 - nearlink_intercept_time：星闪外发拦截管控时间。当成功触发星闪外发拦截后，在该管控时间范围内，通过星闪进行的任何文件外发操作都会被拦截。正整数，默认为15，单位：s。 - **多用户策略** 从5.1.1(19)版本开始支持此管控策略。 - user_id：用户ID。设置用户ID后，本次下发的管控策略范围将仅适用于该user_id对应的用户；若未指定user_id，则采用默认的管控策略。在使用过程中，系统会优先采用用户的专属策略，若无法匹配，则自动采用默认策略。 - **可信任应用列表** - trust_app_list：可信任应用列表，在可信任应用列表中的应用才可读取KIA文件。字符串列表，元素为[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)，默认为空。从5.0.3(15)版本开始支持此管控策略。 - kia_file_access_toggle：KIA文件访问限制开关。1表示开启，开启后，应用读取KIA文件的行为将会受到限制，需将应用的[appId](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/common-problem-of-application#什么是appid)加入到trust_app_list中，应用才被允许读取KIA文件；0表示关闭，关闭后，任何应用和进程都可以读取KIA文件的内容，默认为0。 从6.1.1(24)版本开始支持此管控策略。 - **五种自定义标签** 从5.1.1(19)版本开始支持此管控策略。最多支持五种自定义标签管控策略，该策略会自动识别文件扩展属性中包含指定"tag"内容的文件，并对这些文件进行相应管控。 - "tag": 标签名称，用于在[setFileTag](#setfiletag)、[setFileCustomTag](#setfilecustomtag)和[unsetFileCustomTag](#unsetfilecustomtag)中管控对应标签的文件，默认为空。 - "usb_intercept_toggle"：U盘拦截管控开关，默认为0。 - "net_intercept_toggle"：网络拦截管控开关，默认为0。 - "boundary"：默认网段范围。 - "netsegment_trustlist"：可信任网段。 - "netsegment_blocklist"：不可信网段。 |
 
 返回值：
 
@@ -1876,7 +1877,7 @@ setKiaWatermarkImage(image: Uint8Array, info: string): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| image | Uint8Array | 是 | 水印图片。当传入的数组为空时，可取消已设置的水印。 |
+| image | Uint8Array | 是 | 水印图片，仅支持PNG格式，图像像素占用大小不得超过375KB。当传入的数组为空时，可取消已设置的水印。 |
 | info | string | 是 | 水印附加信息。 |
 
 返回值：
@@ -1902,10 +1903,11 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { fileGuard } from '@kit.EnterpriseDataGuardKit';
 
 async function testSetKiaWaterMarkImage() {
+  let fd: number = -1;
   try {
     let guard: fileGuard.FileGuard = new fileGuard.FileGuard();
-    let imagePath: string = '/data/service/el2/{account_id}/hmdfs/account/files/Docs/Documents/1.png';
-    let fd: number = await guard.openFile(imagePath);
+    let imagePath: string = `/data/service/el2/test_water.png`;
+    fd = await guard.openFile(imagePath);
     let stat: fileIo.Stat = fileIo.statSync(fd);
     let buffer: ArrayBuffer = new ArrayBuffer(stat.size);
     fileIo.readSync(fd, buffer);
@@ -1919,6 +1921,10 @@ async function testSetKiaWaterMarkImage() {
     })
   } catch (e) {
     console.error(`testSetKiaWaterMarkImage Exception, Code: ${e.code}, message: ${e.message}`);
+  } finally {
+    if (fd !== -1) {
+      fileIo.close(fd);
+    }
   }
 }
 ```
@@ -2119,7 +2125,7 @@ async function getUnrestrictedApplicationList() {
 
 setHdcAuthenticationKey(devType: AuthenticateDeviceType, keyType: AuthenticateKeyType, key: Uint8Array): Promise<void>
 
-设置上下位机间的HDC认证密钥。使用Promise异步回调。
+设置上下位机间的[HDC](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/hdc)认证密钥。使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -2135,7 +2141,7 @@ setHdcAuthenticationKey(devType: AuthenticateDeviceType, keyType: AuthenticateKe
 | --- | --- | --- | --- |
 | devType | [AuthenticateDeviceType](#authenticatedevicetype) | 是 | HDC认证的设备类型枚举。当设备类型为上位机时，需分别设置公钥和私钥；当设备类型为下位机时，仅需设置私钥。 |
 | keyType | [AuthenticateKeyType](#authenticatekeytype) | 是 | HDC认证的密钥类型枚举。 |
-| key | Uint8Array | 是 | PEM格式的RAS-3072密钥。 |
+| key | Uint8Array | 是 | PEM格式的RSA-3072密钥。 |
 
 返回值：
 
@@ -2164,7 +2170,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 let guard: fileGuard.FileGuard = new fileGuard.FileGuard();
 let devType: fileGuard.AuthenticateDeviceType = fileGuard.AuthenticateDeviceType.UPPER;
-let keyType: fileGuard.AuthenticateKeyType = fileGuard.AuthenticateKeyType.PUBLIC_KEY;
+let keyType: fileGuard.AuthenticateKeyType = fileGuard.AuthenticateKeyType.PRIVATE_KEY;
 let key: Uint8Array = new Uint8Array([0]);
 
 guard.setHdcAuthenticationKey(devType, keyType, key).then(() => {

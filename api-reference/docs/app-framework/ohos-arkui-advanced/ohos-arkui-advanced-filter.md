@@ -2,7 +2,8 @@
 title: "Filter"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-filter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:52.315361"
+content_hash: "42a8f6b7cb44"
+synced_at: "2026-07-09T00:58:15.192771"
 ---
 
 # Filter
@@ -155,4 +156,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350219.png)
+ ![](./img/zh-cn_image_0000002661732927.png)

@@ -2,7 +2,8 @@
 title: "JSVM_VMInfo"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-vminfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:02.998354"
+content_hash: "29662cd11d3a"
+synced_at: "2026-07-09T01:01:46.731795"
 ---
 
 # JSVM_VMInfo

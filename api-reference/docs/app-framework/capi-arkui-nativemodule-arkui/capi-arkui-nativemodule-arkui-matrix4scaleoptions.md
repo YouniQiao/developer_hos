@@ -2,7 +2,8 @@
 title: "ArkUI_Matrix4ScaleOptions"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-matrix4scaleoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:51.665380"
+content_hash: "d5e56cbcb3db"
+synced_at: "2026-07-09T00:58:42.749695"
 ---
 
 # ArkUI_Matrix4ScaleOptions

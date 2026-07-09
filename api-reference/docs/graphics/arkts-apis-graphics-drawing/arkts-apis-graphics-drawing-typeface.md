@@ -2,7 +2,8 @@
 title: "Class (Typeface)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-typeface"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:55.244470"
+content_hash: "c5a2805893e3"
+synced_at: "2026-07-09T01:00:53.059768"
 ---
 
 # Class (Typeface)

@@ -2,7 +2,8 @@
 title: "OH_ArkUI_ImageAttachment"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-arkui-imageattachment"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:55.101937"
+content_hash: "591ccf8df117"
+synced_at: "2026-07-09T00:58:44.868390"
 ---
 
 # OH_ArkUI_ImageAttachment

@@ -2,7 +2,8 @@
 title: "image_pixel_map_napi.h"
 upstream_id: "harmonyos-references/capi-image-pixel-map-napi-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:26.847170"
+content_hash: "1eb429ef4799"
+synced_at: "2026-07-09T01:00:33.169376"
 ---
 
 # image_pixel_map_napi.h

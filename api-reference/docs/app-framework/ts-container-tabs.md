@@ -2,7 +2,8 @@
 title: "Tabs"
 upstream_id: "harmonyos-references/ts-container-tabs"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:02.427160"
+content_hash: "72dada9c6a6f"
+synced_at: "2026-07-09T00:57:51.115872"
 ---
 
 # Tabs
@@ -676,10 +677,10 @@ TabBar布局模式枚举。
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | CONTENT_FIRST | 0 | 先加载目标页内容，再开始切换动画。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| ACTION_FIRST | 1 | 先开始切换动画，再加载目标页内容；生效需要同时需要满足：Tabs的height、width没有设置成auto。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
+| ACTION_FIRST | 1 | 先开始切换动画，再加载目标页内容；生效需要同时满足：Tabs的height、width没有设置成auto。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | NO_ANIMATION | 2 | 关闭默认动画。调用TabsController的[changeIndex](#changeindex)接口切换TabContent时该枚举值不生效。 可以通过设置[animationDuration](#animationduration)为0实现调用TabsController的changeIndex接口时不带动画。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | CONTENT_FIRST_WITH_JUMP15+ | 3 | 先加载目标页内容，再无动画跳转到目标页附近，最后有动画跳转到目标页。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
-| ACTION_FIRST_WITH_JUMP15+ | 4 | 先无动画跳转到目标页附近，再有动画跳转到目标页，最后加载目标页内容。此项生效需要同时需要满足：Tabs的height、width没有设置成auto。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
+| ACTION_FIRST_WITH_JUMP15+ | 4 | 先无动画跳转到目标页附近，再有动画跳转到目标页，最后加载目标页内容。此项生效需要同时满足：Tabs的height、width没有设置成auto。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 
 #### LayoutStyle10+枚举说明
 
@@ -1371,7 +1372,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469723.gif)
+ ![](./img/zh-cn_image_0000002631253350.gif)
 
 #### [h2]示例2（设置Scrollable模式下的TabBar的布局样式）
 
@@ -1488,7 +1489,7 @@ struct TabsExample6 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349771.gif)
+ ![](./img/zh-cn_image_0000002661612533.gif)
 
 #### [h2]示例3（自定义页签切换联动）
 
@@ -1553,7 +1554,7 @@ struct TabsExample {
         if (index === targetIndex) {
           return;
         }
-        // selectedIndex控制自定义TabBar内Image和Text颜色切换
+        // selectedIndex控制自定义TabBar内Text颜色切换
         this.selectedIndex = targetIndex;
       })
       .width(360)
@@ -1564,7 +1565,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230358.gif)
+ ![](./img/zh-cn_image_0000002631413242.gif)
 
 #### [h2]示例4（分割线基本属性）
 
@@ -1673,7 +1674,7 @@ struct TabsDivider1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070448.gif)
+ ![](./img/zh-cn_image_0000002661732473.gif)
 
 #### [h2]示例5（设置TabBar渐隐）
 
@@ -1785,7 +1786,7 @@ struct TabsOpaque {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469725.gif)
+ ![](./img/zh-cn_image_0000002631253352.gif)
 
 #### [h2]示例6（设置TabBar叠加在TabContent内容上）
 
@@ -1836,7 +1837,7 @@ struct barHeightTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349773.gif)
+ ![](./img/zh-cn_image_0000002661612535.gif)
 
 #### [h2]示例7（设置TabBar栅格化可见区域）
 
@@ -1939,7 +1940,7 @@ struct TabsExample5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230360.gif)
+ ![](./img/zh-cn_image_0000002631413244.gif)
 
 #### [h2]示例8（自定义Tabs页面切换动画）
 
@@ -2028,7 +2029,7 @@ struct TabsCustomAnimationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070450.gif)
+ ![](./img/zh-cn_image_0000002661732475.gif)
 
 #### [h2]示例9（页面切换拦截）
 
@@ -2119,7 +2120,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469727.gif)
+ ![](./img/zh-cn_image_0000002631253354.gif)
 
 #### [h2]示例10（自定义TabBar切换动画）
 
@@ -2289,7 +2290,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349775.gif)
+ ![](./img/zh-cn_image_0000002661612537.gif)
 
 #### [h2]示例11（预加载子节点）
 
@@ -2417,7 +2418,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230362.gif)
+ ![](./img/zh-cn_image_0000002631413246.gif)
 
 #### [h2]示例13（页面懒加载和释放）
 
@@ -2524,7 +2525,7 @@ struct TabsSwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070452.gif)
+ ![](./img/zh-cn_image_0000002661732477.gif)
 
 #### [h2]示例14（设置翻页动效）
 
@@ -2558,7 +2559,7 @@ struct TabsExample {
   build() {
     Column() {
       Tabs({ barPosition: BarPosition.End, controller: this.controller, index: this.currentIndex }) {
-        ForEach(this.data, (item: string) => {
+        ForEach(this.data, (item: number) => {
           TabContent() {
             Column(){
               Text('' + item)
@@ -2597,7 +2598,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469729.gif)
+ ![](./img/zh-cn_image_0000002631253356.gif)
 
 #### [h2]示例15（页签超出TabBar区域显示）
 
@@ -2688,7 +2689,7 @@ struct TabsBarModifierExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349777.gif)
+ ![](./img/zh-cn_image_0000002661612539.gif)
 
 #### [h2]示例16（页签对齐布局）
 
@@ -2792,7 +2793,7 @@ struct TabsBarModifierExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230364.gif)
+ ![](./img/zh-cn_image_0000002631413248.gif)
 
 #### [h2]示例17（Tabs与TabBar同步切换）
 
@@ -2869,7 +2870,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070454.gif)
+ ![](./img/zh-cn_image_0000002661732479.gif)
 
 #### [h2]示例18（释放Tabs子组件）
 
@@ -2996,7 +2997,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469731.png)
+ ![](./img/zh-cn_image_0000002631253358.png)
 
 #### [h2]示例20（设置边缘滑动效果）
 
@@ -3052,7 +3053,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349779.gif)
+ ![](./img/zh-cn_image_0000002661612541.gif)
 
 #### [h2]示例21（Tabs设置翻页动画曲线）
 
@@ -3143,7 +3144,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230366.gif)
+ ![](./img/zh-cn_image_0000002631413250.gif)
 
 #### [h2]示例22（监听Tabs页面滑动事件）
 
@@ -3224,7 +3225,7 @@ struct TabsDidScrollExample {
         if (index === targetIndex) {
           return;
         }
-        // selectedIndex控制自定义TabBar内Image和Text颜色切换
+        // selectedIndex控制自定义TabBar内Text颜色切换
         this.selectedIndex = targetIndex;
       })
       .width(360)
@@ -3243,7 +3244,7 @@ struct TabsDidScrollExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070456.gif)
+ ![](./img/zh-cn_image_0000002661732481.gif)
 
 #### [h2]示例23（Tabs嵌套滚动）
 
@@ -3309,7 +3310,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469733.gif)
+ ![](./img/zh-cn_image_0000002631253360.gif)
 
 #### [h2]示例24（TabBar悬浮样式）
 
@@ -3360,4 +3361,4 @@ struct TabsFloatingStyleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349781.gif)
+ ![](./img/zh-cn_image_0000002661612543.gif)

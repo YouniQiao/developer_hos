@@ -2,7 +2,8 @@
 title: "@ohos.wifiManager (WLAN)"
 upstream_id: "harmonyos-references/js-apis-wifimanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:47.231061"
+content_hash: "c6b5c20f3558"
+synced_at: "2026-07-09T00:59:25.021440"
 ---
 
 # @ohos.wifiManager (WLAN)

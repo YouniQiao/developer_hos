@@ -2,7 +2,8 @@
 title: "元能力子系统错误码"
 upstream_id: "harmonyos-references/errorcode-ability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:00.680801"
+content_hash: "55bcba8551d6"
+synced_at: "2026-07-09T00:57:14.235945"
 ---
 
 # 元能力子系统错误码

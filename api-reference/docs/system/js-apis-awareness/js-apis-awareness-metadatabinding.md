@@ -2,7 +2,8 @@
 title: "@ohos.multimodalAwareness.metadataBinding (记忆链接)"
 upstream_id: "harmonyos-references/js-apis-awareness-metadatabinding"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:36.967484"
+content_hash: "136f652e0adb"
+synced_at: "2026-07-09T00:59:57.837720"
 ---
 
 # @ohos.multimodalAwareness.metadataBinding (记忆链接)

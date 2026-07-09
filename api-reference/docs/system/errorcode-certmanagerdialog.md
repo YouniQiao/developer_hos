@@ -1,9 +1,12 @@
 ---
+
 title: "证书管理对话框错误码"
 upstream_id: "harmonyos-references/errorcode-certmanagerdialog"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:42.295378"
+synced_at: "2026-07-09T00:59:20.111046"
+content_hash: "c6d1f198f679"
 ---
+
 
 # 证书管理对话框错误码
 

@@ -2,7 +2,8 @@
 title: "ArkUI_AccessibilityEventInfo"
 upstream_id: "harmonyos-references/capi-arkui-accessibility-arkui-accessibilityeventinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:48.330159"
+content_hash: "5451fed78668"
+synced_at: "2026-07-09T00:58:40.916060"
 ---
 
 # ArkUI_AccessibilityEventInfo

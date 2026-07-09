@@ -2,7 +2,8 @@
 title: "Image"
 upstream_id: "harmonyos-references/capi-image"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:25.190048"
+content_hash: "e8708732e15e"
+synced_at: "2026-07-09T01:00:31.339220"
 ---
 
 # Image

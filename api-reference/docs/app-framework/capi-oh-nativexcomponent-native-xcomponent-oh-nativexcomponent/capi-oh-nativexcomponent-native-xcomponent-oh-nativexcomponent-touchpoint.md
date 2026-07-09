@@ -2,7 +2,8 @@
 title: "OH_NativeXComponent_TouchPoint"
 upstream_id: "harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent-touchpoint"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:48.597236"
+content_hash: "7bd3d5c90206"
+synced_at: "2026-07-09T00:58:41.144259"
 ---
 
 # OH_NativeXComponent_TouchPoint

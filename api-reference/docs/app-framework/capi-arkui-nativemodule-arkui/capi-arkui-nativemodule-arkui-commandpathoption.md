@@ -2,7 +2,8 @@
 title: "ArkUI_CommandPathOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-commandpathoption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:57.479821"
+content_hash: "5d51117e1038"
+synced_at: "2026-07-09T00:58:46.588104"
 ---
 
 # ArkUI_CommandPathOption

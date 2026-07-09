@@ -2,7 +2,8 @@
 title: "UsbControlRequestSetup"
 upstream_id: "harmonyos-references/capi-usbddk-usbcontrolrequestsetup"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:35.025117"
+content_hash: "d1156462b378"
+synced_at: "2026-07-09T00:59:56.808320"
 ---
 
 # UsbControlRequestSetup

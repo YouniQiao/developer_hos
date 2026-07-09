@@ -2,7 +2,8 @@
 title: "I18n错误码"
 upstream_id: "harmonyos-references/errorcode-i18n"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:24.824528"
+content_hash: "ae91f2315a1a"
+synced_at: "2026-07-09T00:59:08.758575"
 ---
 
 # I18n错误码

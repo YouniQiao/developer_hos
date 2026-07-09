@@ -2,7 +2,8 @@
 title: "SecurityAudit（安全审计）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-securityaudit"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:35.891178"
+content_hash: "f7858ae46ba3"
+synced_at: "2026-07-09T00:59:15.587464"
 ---
 
 # SecurityAudit（安全审计）

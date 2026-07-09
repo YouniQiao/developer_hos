@@ -2,7 +2,8 @@
 title: "@ohos.advertising.AdComponent (广告展示组件)"
 upstream_id: "harmonyos-references/js-apis-adcomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:21.641331"
+content_hash: "f832a2eb3a26"
+synced_at: "2026-07-09T01:01:14.330314"
 ---
 
 # @ohos.advertising.AdComponent (广告展示组件)

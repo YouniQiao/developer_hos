@@ -2,7 +2,8 @@
 title: "Scroll"
 upstream_id: "harmonyos-references/ts-container-scroll"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:55.479456"
+content_hash: "a284923620f0"
+synced_at: "2026-07-09T00:57:48.757125"
 ---
 
 # Scroll
@@ -1165,7 +1166,7 @@ getFrameNode(): FrameNode | undefined
 
 获取与当前Scroller绑定的FrameNode。
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1451,7 +1452,7 @@ struct ScrollExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349727.gif)
+ ![](./img/zh-cn_image_0000002661612489.gif)
 
 #### [h2]示例2（嵌套滚动实现方式一）
 
@@ -1527,7 +1528,7 @@ struct NestedScroll {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230314.gif)
+ ![](./img/zh-cn_image_0000002631413198.gif)
 
 #### [h2]示例3（嵌套滚动实现方式二）
 
@@ -1594,7 +1595,7 @@ struct StickyNestedScroll {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070404.gif)
+ ![](./img/zh-cn_image_0000002661732427.gif)
 
 #### [h2]示例4（嵌套滚动父组件向子组件传递滚动）
 
@@ -1688,7 +1689,7 @@ struct NestedScroll {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469681.gif)
+ ![](./img/zh-cn_image_0000002631253308.gif)
 
 #### [h2]示例5（设置限位滚动）
 
@@ -1723,7 +1724,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349729.gif)
+ ![](./img/zh-cn_image_0000002661612491.gif)
 
 #### [h2]示例6（获取子组件索引）
 
@@ -1800,7 +1801,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230316.gif)
+ ![](./img/zh-cn_image_0000002631413200.gif)
 
 #### [h2]示例7（设置边缘渐隐）
 
@@ -1837,7 +1838,7 @@ struct ScrollExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070406.gif)
+ ![](./img/zh-cn_image_0000002661732429.gif)
 
 #### [h2]示例8（单边边缘效果）
 
@@ -1872,7 +1873,7 @@ struct ScrollExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469683.gif)
+ ![](./img/zh-cn_image_0000002631253310.gif)
 
 #### [h2]示例9（划动翻页效果）
 
@@ -1905,7 +1906,7 @@ struct EnablePagingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349731.gif)
+ ![](./img/zh-cn_image_0000002661612493.gif)
 
 #### [h2]示例10（设置过界停留）
 
@@ -1967,7 +1968,7 @@ struct StickyNestedScroll {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230318.gif)
+ ![](./img/zh-cn_image_0000002631413202.gif)
 
 #### [h2]示例11（自由滚动和缩放）
 
@@ -2002,7 +2003,7 @@ struct ScrollZoomExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070408.gif)
+ ![](./img/zh-cn_image_0000002661732431.gif)
 
 #### [h2]示例12（获取内容总大小）
 
@@ -2076,7 +2077,7 @@ struct ScrollExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469685.gif)
+ ![](./img/zh-cn_image_0000002631253312.gif)
 
 #### [h2]示例13（设置滚动事件）
 

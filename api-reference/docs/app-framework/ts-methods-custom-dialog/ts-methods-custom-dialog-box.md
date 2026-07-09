@@ -2,7 +2,8 @@
 title: "自定义弹窗 (CustomDialog)"
 upstream_id: "harmonyos-references/ts-methods-custom-dialog-box"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:42.904950"
+content_hash: "3dad78900b4c"
+synced_at: "2026-07-09T00:58:09.524560"
 ---
 
 # 自定义弹窗 (CustomDialog)
@@ -328,7 +329,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350151.gif)
+ ![](./img/zh-cn_image_0000002661732859.gif)
 
 #### [h2]示例2（可在主窗外弹出的弹窗）
 
@@ -416,7 +417,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230738.jpg)
+ ![](./img/zh-cn_image_0000002631253738.jpg)
 
 #### [h2]示例3（设置弹窗的样式）
 
@@ -507,7 +508,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070828.gif)
+ ![](./img/zh-cn_image_0000002661612921.gif)
 
 #### [h2]示例4（悬停态弹窗）
 
@@ -600,7 +601,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470105.gif)
+ ![](./img/zh-cn_image_0000002631413630.gif)
 
 #### [h2]示例5（获取弹窗的状态）
 
@@ -764,7 +765,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350153.gif)
+ ![](./img/zh-cn_image_0000002661732861.gif)
 
 #### [h2]示例7（自定义带loading的弹窗）
 
@@ -868,7 +869,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230740.gif)
+ ![](./img/zh-cn_image_0000002631253740.gif)
 
 #### [h2]示例8（不使用keyboardAvoidDistance调整弹窗与软键盘的间距）
 
@@ -1006,7 +1007,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070830.gif)
+ ![](./img/zh-cn_image_0000002661612923.gif)
 
 #### [h2]示例9（弹窗生命周期）
 
@@ -1102,7 +1103,7 @@ struct Example3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470107.gif)
+ ![](./img/zh-cn_image_0000002631413632.gif)
 
 #### [h2]示例10（不同customStyle下的弹窗示例）
 
@@ -1187,7 +1188,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350155.gif)
+ ![](./img/zh-cn_image_0000002661732863.gif)
 
 #### [h2]示例11（自定义背景模糊效果参数）
 
@@ -1248,7 +1249,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230742.png)
+ ![](./img/zh-cn_image_0000002631253742.png)
 
 #### [h2]示例12（自定义背景效果参数）
 
@@ -1310,7 +1311,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070832.png)
+ ![](./img/zh-cn_image_0000002661612925.png)
 
 #### [h2]示例13（自定义弹窗动态刷新宽度）
 
@@ -1376,7 +1377,7 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470109.gif)
+ ![](./img/zh-cn_image_0000002631413634.gif)
 
 #### [h2]示例14（设置弹窗的系统材质）
 
@@ -1433,4 +1434,4 @@ struct CustomDialogUser {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350157.png)
+ ![](./img/zh-cn_image_0000002661732865.png)

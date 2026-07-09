@@ -2,7 +2,8 @@
 title: "HuksTypeApi"
 upstream_id: "harmonyos-references/capi-hukstypeapi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:42.979619"
+content_hash: "43383da33ac2"
+synced_at: "2026-07-09T00:59:20.672636"
 ---
 
 # HuksTypeApi

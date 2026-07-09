@@ -2,7 +2,8 @@
 title: "OH_ImageReceiverNative"
 upstream_id: "harmonyos-references/capi-image-nativemodule-oh-imagereceivernative"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:29.404341"
+content_hash: "1ccd05b9db69"
+synced_at: "2026-07-09T01:00:35.188194"
 ---
 
 # OH_ImageReceiverNative

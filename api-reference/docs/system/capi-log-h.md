@@ -2,7 +2,8 @@
 title: "log.h"
 upstream_id: "harmonyos-references/capi-log-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:47.971707"
+content_hash: "91b653efaff6"
+synced_at: "2026-07-09T01:00:04.194780"
 ---
 
 # log.h

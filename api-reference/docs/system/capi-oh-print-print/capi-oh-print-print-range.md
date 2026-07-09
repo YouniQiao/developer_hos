@@ -2,7 +2,8 @@
 title: "Print_Range"
 upstream_id: "harmonyos-references/capi-oh-print-print-range"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:12.253382"
+content_hash: "6501d27de2fe"
+synced_at: "2026-07-09T00:59:43.881961"
 ---
 
 # Print_Range

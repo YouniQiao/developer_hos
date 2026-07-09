@@ -2,7 +2,8 @@
 title: "Metadata"
 upstream_id: "harmonyos-references/js-apis-bundlemanager-metadata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:55.021423"
+content_hash: "79b34fe1b084"
+synced_at: "2026-07-09T00:57:10.360824"
 ---
 
 # Metadata

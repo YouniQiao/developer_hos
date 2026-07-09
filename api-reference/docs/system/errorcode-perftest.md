@@ -2,7 +2,8 @@
 title: "perftest错误码"
 upstream_id: "harmonyos-references/errorcode-perftest"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:51.722254"
+content_hash: "6609eb7bd83e"
+synced_at: "2026-07-09T01:00:06.658682"
 ---
 
 # perftest错误码

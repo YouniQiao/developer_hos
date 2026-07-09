@@ -2,7 +2,8 @@
 title: "ArkUI_MotionPathOptions"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-motionpathoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:54.922955"
+content_hash: "44819cf67c04"
+synced_at: "2026-07-09T00:58:44.838532"
 ---
 
 # ArkUI_MotionPathOptions

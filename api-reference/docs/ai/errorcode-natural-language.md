@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-natural-language"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:57.910525"
+content_hash: "186024d83abf"
+synced_at: "2026-07-09T01:01:42.791193"
 ---
 
 # ArkTS API错误码

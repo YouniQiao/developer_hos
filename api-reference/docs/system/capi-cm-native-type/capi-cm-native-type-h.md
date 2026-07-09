@@ -2,7 +2,8 @@
 title: "cm_native_type.h"
 upstream_id: "harmonyos-references/capi-cm-native-type-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:41.787871"
+content_hash: "12c6d73b7edf"
+synced_at: "2026-07-09T00:59:19.558579"
 ---
 
 # cm_native_type.h

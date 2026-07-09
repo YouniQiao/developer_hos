@@ -2,7 +2,8 @@
 title: "Hid_KeyCodeArray"
 upstream_id: "harmonyos-references/capi-hidddk-hid-keycodearray"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:32.588448"
+content_hash: "1812e2d97ac9"
+synced_at: "2026-07-09T00:59:55.706961"
 ---
 
 # Hid_KeyCodeArray

@@ -2,7 +2,8 @@
 title: "FIDO2_PublicKeyAttestationCredential"
 upstream_id: "harmonyos-references/_f_i_d_o2___public_key_attestation_credential"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:40.256482"
+content_hash: "04b2b5c72fa0"
+synced_at: "2026-07-09T00:59:18.686467"
 ---
 
 # FIDO2_PublicKeyAttestationCredential

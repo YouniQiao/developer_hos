@@ -2,7 +2,8 @@
 title: "OH_Pixelmap_InitializationOptions"
 upstream_id: "harmonyos-references/capi-image-nativemodule-oh-pixelmap-initializationoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:28.639952"
+content_hash: "b364b51a0edb"
+synced_at: "2026-07-09T01:00:34.586987"
 ---
 
 # OH_Pixelmap_InitializationOptions

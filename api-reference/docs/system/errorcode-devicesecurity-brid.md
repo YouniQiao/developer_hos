@@ -2,7 +2,8 @@
 title: "BusinessRiskIntelligentDetection（业务风险检测）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-brid"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:35.879594"
+content_hash: "6e7bdacaef46"
+synced_at: "2026-07-09T00:59:15.643639"
 ---
 
 # BusinessRiskIntelligentDetection（业务风险检测）

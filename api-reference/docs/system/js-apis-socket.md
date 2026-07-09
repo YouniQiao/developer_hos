@@ -2,7 +2,8 @@
 title: "@ohos.net.socket (Socket连接)"
 upstream_id: "harmonyos-references/js-apis-socket"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:51.856418"
+content_hash: "e6290dddb60c"
+synced_at: "2026-07-09T00:59:28.122943"
 ---
 
 # @ohos.net.socket (Socket连接)

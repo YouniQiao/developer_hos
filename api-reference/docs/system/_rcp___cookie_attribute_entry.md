@@ -2,7 +2,8 @@
 title: "Rcp_CookieAttributeEntry"
 upstream_id: "harmonyos-references/_rcp___cookie_attribute_entry"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:59.855318"
+content_hash: "bf1e60270878"
+synced_at: "2026-07-09T00:59:33.682411"
 ---
 
 # Rcp_CookieAttributeEntry

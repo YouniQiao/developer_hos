@@ -2,7 +2,8 @@
 title: "Retrieval"
 upstream_id: "harmonyos-references/dataaugmentation-capi-retrieval"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:16.961810"
+content_hash: "95ab6a79664a"
+synced_at: "2026-07-09T00:59:02.664558"
 ---
 
 # Retrieval
@@ -45,7 +46,7 @@ synced_at: "2026-06-24T20:50:16.961810"
 
 | 名称 | 描述 |
 | --- | --- |
-| [Retrieval_Channel_Type](#retrieval_channel_type) { Retrieval_TYPE_VECTOR = 1 } | 定义数据索引类型，目前仅包括向量索引数据。 |
+| [Retrieval_Channel_Type](#retrieval_channel_type) { RETRIEVAL_TYPE_VECTOR = 1 } | 定义数据索引类型，目前仅包括向量索引数据。 |
 
 #### [h2]函数
 
@@ -223,7 +224,7 @@ enum Retrieval_Channel_Type
 
 | 枚举值 | 描述 |
 | --- | --- |
-| Retrieval_TYPE_VECTOR | 表示向量索引。 |
+| RETRIEVAL_TYPE_VECTOR | 表示向量索引。 |
 
 #### 函数说明
 

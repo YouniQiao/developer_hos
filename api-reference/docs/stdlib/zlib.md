@@ -2,7 +2,8 @@
 title: "zlib"
 upstream_id: "harmonyos-references/zlib"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:05.247149"
+content_hash: "39d9469248c2"
+synced_at: "2026-07-09T01:01:48.897089"
 ---
 
 # zlib

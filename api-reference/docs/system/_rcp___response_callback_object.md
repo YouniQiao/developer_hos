@@ -2,7 +2,8 @@
 title: "Rcp_ResponseCallbackObject"
 upstream_id: "harmonyos-references/_rcp___response_callback_object"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:01.510739"
+content_hash: "99e4c72b63e6"
+synced_at: "2026-07-09T00:59:35.248935"
 ---
 
 # Rcp_ResponseCallbackObject

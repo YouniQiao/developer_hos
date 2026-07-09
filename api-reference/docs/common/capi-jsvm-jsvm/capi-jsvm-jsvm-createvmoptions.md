@@ -2,7 +2,8 @@
 title: "JSVM_CreateVMOptions"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-createvmoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:02.932220"
+content_hash: "1b212a46a4aa"
+synced_at: "2026-07-09T01:01:46.709062"
 ---
 
 # JSVM_CreateVMOptions

@@ -2,7 +2,8 @@
 title: "@ohos.systemDateTime (系统时间、时区)"
 upstream_id: "harmonyos-references/js-apis-date-time"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:09.293474"
+content_hash: "75a17df13836"
+synced_at: "2026-07-09T00:59:41.629840"
 ---
 
 # @ohos.systemDateTime (系统时间、时区)

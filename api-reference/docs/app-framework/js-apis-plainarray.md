@@ -2,7 +2,8 @@
 title: "@ohos.util.PlainArray (非线性容器PlainArray)"
 upstream_id: "harmonyos-references/js-apis-plainarray"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:17.433580"
+content_hash: "8b47e5363142"
+synced_at: "2026-07-09T00:57:26.761317"
 ---
 
 # @ohos.util.PlainArray (非线性容器PlainArray)

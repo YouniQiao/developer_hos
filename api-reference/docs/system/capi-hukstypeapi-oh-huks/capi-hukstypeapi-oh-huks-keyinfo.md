@@ -2,7 +2,8 @@
 title: "OH_Huks_KeyInfo"
 upstream_id: "harmonyos-references/capi-hukstypeapi-oh-huks-keyinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:44.127058"
+content_hash: "78061a8d7063"
+synced_at: "2026-07-09T00:59:21.747717"
 ---
 
 # OH_Huks_KeyInfo

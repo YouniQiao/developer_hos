@@ -2,7 +2,8 @@
 title: "CloudDisk"
 upstream_id: "harmonyos-references/capi-clouddisk"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:14.944560"
+content_hash: "e30f62927f94"
+synced_at: "2026-07-09T00:59:00.630746"
 ---
 
 # CloudDisk

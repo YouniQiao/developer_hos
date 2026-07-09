@@ -2,7 +2,8 @@
 title: "JSVM_TypeTag"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-typetag"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:03.279980"
+content_hash: "e2ad501ea9d5"
+synced_at: "2026-07-09T01:01:46.988619"
 ---
 
 # JSVM_TypeTag

@@ -1,9 +1,12 @@
 ---
+
 title: "机械体控制模块错误码"
 upstream_id: "harmonyos-references/errorcode-mechanic"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:43.527808"
+synced_at: "2026-07-09T01:00:01.513125"
+content_hash: "590bdc033286"
 ---
+
 
 # 机械体控制模块错误码
 

@@ -2,7 +2,8 @@
 title: "OH_Drawing_Matrix"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-matrix"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:09.741034"
+content_hash: "f29d60d6b5d9"
+synced_at: "2026-07-09T01:01:03.862735"
 ---
 
 # OH_Drawing_Matrix

@@ -2,7 +2,8 @@
 title: "OH_PrivacyProtectInfo"
 upstream_id: "harmonyos-references/capi-avscreencapture-oh-privacyprotectinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:40.602353"
+content_hash: "a9280e598ae7"
+synced_at: "2026-07-09T01:00:43.965037"
 ---
 
 # OH_PrivacyProtectInfo

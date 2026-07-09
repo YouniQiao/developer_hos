@@ -2,7 +2,8 @@
 title: "边框设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-border"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:37.713892"
+content_hash: "24d8d168b525"
+synced_at: "2026-07-09T00:57:38.619801"
 ---
 
 # 边框设置
@@ -174,7 +175,7 @@ struct BorderExample {
   build() {
     Column() {
       Flex({ justifyContent: FlexAlign.SpaceAround, alignItems: ItemAlign.Center }) {
-        // 线段
+        // 虚线
         Text('dashed')
           .borderStyle(BorderStyle.Dashed)
           .borderWidth(5)
@@ -233,11 +234,11 @@ struct BorderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469543.gif)
+ ![](./img/zh-cn_image_0000002661732287.gif)
 
 #### [h2]示例2（边框宽度类型和边框颜色）
 
-border属性的width、radius、color属性值使用LocalizedEdgeWidths类型和LocalizedEdgeColors类型。
+border属性的width使用LocalizedEdgeWidths类型，radius使用LocalizedBorderRadiuses类型，color使用LocalizedEdgeColors类型。
 
 ```
 // xxx.ets
@@ -249,7 +250,7 @@ struct BorderExample {
   build() {
     Column() {
       Flex({ justifyContent: FlexAlign.SpaceAround, alignItems: ItemAlign.Center }) {
-        // 线段
+        // 虚线
         Text('dashed')
           .borderStyle(BorderStyle.Dashed)
           .borderWidth(5)
@@ -310,11 +311,11 @@ struct BorderExample {
 ```
  从左至右显示语言示例图
 
-![](./img/zh-cn_image_0000002656349591.png)
+![](./img/zh-cn_image_0000002631253166.png)
 
 从右至左显示语言示例图
 
-![](./img/zh-cn_image_0000002626230178.png)
+![](./img/zh-cn_image_0000002661612349.png)
 
 #### [h2]示例3（设置离屏圆角）
 
@@ -392,7 +393,7 @@ struct RenderStrategyExample {
 ```
  设置在线绘制模式（上方）以及离屏绘制模式（下方）的示例图如下：
 
-![](./img/zh-cn_image_0000002626070268.jpg)
+![](./img/zh-cn_image_0000002631413056.jpg)
 
 #### [h2]示例4（设置异形圆角）
 
@@ -424,4 +425,4 @@ struct BorderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469545.png)
+ ![](./img/zh-cn_image_0000002661732289.png)

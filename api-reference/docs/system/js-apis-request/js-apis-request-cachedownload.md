@@ -2,7 +2,8 @@
 title: "@ohos.request.cacheDownload (缓存下载)"
 upstream_id: "harmonyos-references/js-apis-request-cachedownload"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:07.314364"
+content_hash: "044f6f7eba93"
+synced_at: "2026-07-09T00:59:40.107772"
 ---
 
 # @ohos.request.cacheDownload (缓存下载)

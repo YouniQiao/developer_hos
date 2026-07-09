@@ -2,7 +2,8 @@
 title: "REST API错误码"
 upstream_id: "harmonyos-references/payment-error-code-rest"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:47.530867"
+content_hash: "073157023067"
+synced_at: "2026-07-09T01:01:35.929259"
 ---
 
 # REST API错误码

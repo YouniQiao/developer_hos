@@ -2,7 +2,8 @@
 title: "native_dialog.h"
 upstream_id: "harmonyos-references/capi-native-dialog-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:34.021082"
+content_hash: "5fe756b66bd7"
+synced_at: "2026-07-09T00:58:33.714849"
 ---
 
 # native_dialog.h

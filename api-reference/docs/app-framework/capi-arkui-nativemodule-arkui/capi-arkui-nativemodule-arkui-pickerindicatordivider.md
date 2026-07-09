@@ -2,7 +2,8 @@
 title: "ArkUI_PickerIndicatorDivider"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-pickerindicatordivider"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:59.173360"
+content_hash: "13c557130f12"
+synced_at: "2026-07-09T00:58:47.932676"
 ---
 
 # ArkUI_PickerIndicatorDivider

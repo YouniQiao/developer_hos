@@ -2,7 +2,8 @@
 title: "@ohos.multimedia.avVolumePanel (音量面板)"
 upstream_id: "harmonyos-references/ohos-multimedia-avvolumepanel"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:54.157002"
+content_hash: "324411d23c77"
+synced_at: "2026-07-09T01:00:09.153348"
 ---
 
 # @ohos.multimedia.avVolumePanel (音量面板)
@@ -15,7 +16,7 @@ synced_at: "2026-06-24T20:51:54.157002"
 
 - 本模块首批接口从API version 12开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 示例效果请以真机为准，当前DevEco Studio预览器无真实音量展示和调节功能。
-- **设备限制：** 在穿戴设备上，可用于调节系统音量，但不显示UX界面，需开发者自行设计界面。
+- **设备限制：** 在穿戴设备上，可用于调节系统音量，但不显示界面，需开发者自行设计界面。
 - 本模块接口暂不支持TV设备使用。
 
 #### 导入模块
@@ -55,7 +56,7 @@ AVVolumePanel({volumeLevel?: number, volumeParameter?: AVVolumePanelParameter})
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| position | [Position](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#position) | 否 | 是 | 设置音量面板的位置。 如果不设置该参数，则为系统默认的音量面板位置。 如果设置该参数且参数对应屏幕内位置，则显示应用设置的位置。 如果设置该参数但参数信息无效，例如（-1, -1），则隐藏系统默认音量面板。 **注意：** 若应用需隐藏系统默认音量面板，必须提供自定义音量面板，以确保用户仍可调节音量。 |
+| position | [Position](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#position) | 否 | 是 | 设置音量面板的位置。 如果不设置该参数，则使用系统默认的音量面板位置。 如果设置该参数且参数对应屏幕内位置，则显示应用设置的位置。 如果设置该参数且参数对应屏幕外位置，例如（-1, -1），则隐藏系统默认音量面板。 **注意：** 若应用需隐藏系统默认音量面板，必须提供自定义音量面板，以确保用户仍可调节音量。 |
 
 #### 事件
 

@@ -2,7 +2,8 @@
 title: "OH_AVScreenCaptureCallback"
 upstream_id: "harmonyos-references/capi-avscreencapture-oh-avscreencapturecallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:40.488846"
+content_hash: "783f3716c520"
+synced_at: "2026-07-09T01:00:43.944208"
 ---
 
 # OH_AVScreenCaptureCallback

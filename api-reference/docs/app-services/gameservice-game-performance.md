@@ -2,7 +2,8 @@
 title: "GamePerformance"
 upstream_id: "harmonyos-references/gameservice-game-performance"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:25.904445"
+content_hash: "4a11a2ed962f"
+synced_at: "2026-07-09T01:01:19.564086"
 ---
 
 # GamePerformance
@@ -2661,7 +2662,7 @@ GamePerformance_ErrorCode HMS_GamePerformance_ThermalInfo_GetThermalLevel (GameP
 | 名称 | 描述 |
 | --- | --- |
 | thermalInfo | 指针指向[GamePerformance_ThermalInfo](#gameperformance_thermalinfo)实例。该值不可以为空，否则将返回错误码401。 |
-| thermalLevel | 温度等级，即温控档位，档位越高表示温度越高。不同档位及其建议如下： 1：无需处理。 2：建议降低无感知业务规格，例如后台更新降速或延迟运行。 3：建议暂停无感知业务，降低游戏非核心业务的规格，例如前台更新降速。 4：建议减少游戏特效，降低分辨率，画质。 5：建议降低全场景规格，进一步降低分辨率、画质等。 6：建议游戏降至最低规格。 |
+| thermalLevel | 温度等级，即温控档位。不同档位及其建议如下： 1：无需处理。 2：建议降低无感知业务规格，例如后台更新降速或延迟运行。 3：建议暂停无感知业务，降低游戏非核心业务的规格，例如前台更新降速。 4：建议减少游戏特效，降低分辨率，画质。 5：建议降低全场景规格，进一步降低分辨率、画质等。 6：建议游戏降至最低规格。 |
 
 返回：
 

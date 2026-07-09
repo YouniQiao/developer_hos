@@ -2,7 +2,8 @@
 title: "动作感知错误码"
 upstream_id: "harmonyos-references/errorcode-motion"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:37.585303"
+content_hash: "8a8c8c9255cd"
+synced_at: "2026-07-09T00:59:58.063980"
 ---
 
 # 动作感知错误码

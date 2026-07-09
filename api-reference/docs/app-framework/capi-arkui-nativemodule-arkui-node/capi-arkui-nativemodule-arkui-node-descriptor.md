@@ -2,7 +2,8 @@
 title: "ArkUI_Node"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-node-descriptor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:52.629289"
+content_hash: "f03d2c82debb"
+synced_at: "2026-07-09T00:58:43.193022"
 ---
 
 # ArkUI_Node

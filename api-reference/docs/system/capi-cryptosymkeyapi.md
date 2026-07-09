@@ -2,7 +2,8 @@
 title: "CryptoSymKeyApi"
 upstream_id: "harmonyos-references/capi-cryptosymkeyapi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:30.822810"
+content_hash: "b4868f09bb59"
+synced_at: "2026-07-09T00:59:12.008955"
 ---
 
 # CryptoSymKeyApi

@@ -2,7 +2,8 @@
 title: "ImageBitmap对象"
 upstream_id: "harmonyos-references/js-components-canvas-imagebitmap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:09.658360"
+content_hash: "c14b0fba279c"
+synced_at: "2026-07-09T00:58:23.498219"
 ---
 
 # ImageBitmap对象

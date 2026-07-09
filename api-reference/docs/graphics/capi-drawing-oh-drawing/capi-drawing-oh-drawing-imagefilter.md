@@ -2,7 +2,8 @@
 title: "OH_Drawing_ImageFilter"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-imagefilter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:10.454847"
+content_hash: "4dd5de8cd669"
+synced_at: "2026-07-09T01:01:04.429148"
 ---
 
 # OH_Drawing_ImageFilter

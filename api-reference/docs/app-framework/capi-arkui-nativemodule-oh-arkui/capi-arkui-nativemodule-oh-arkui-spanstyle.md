@@ -2,7 +2,8 @@
 title: "OH_ArkUI_SpanStyle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-arkui-spanstyle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:55.067563"
+content_hash: "fc7ec6fbe8d0"
+synced_at: "2026-07-09T00:58:44.847643"
 ---
 
 # OH_ArkUI_SpanStyle

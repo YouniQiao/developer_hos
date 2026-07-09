@@ -2,7 +2,8 @@
 title: "JSVM_VMScope__*"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-vmscope--8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:03.619865"
+content_hash: "2488e38a8e08"
+synced_at: "2026-07-09T01:01:47.494506"
 ---
 
 # JSVM_VMScope__*

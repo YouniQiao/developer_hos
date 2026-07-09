@@ -2,7 +2,8 @@
 title: "@ohos.data.UdmfComponents (内容卡片)"
 upstream_id: "harmonyos-references/js-apis-data-udmfcomponents"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:05.427550"
+content_hash: "81fff60844ab"
+synced_at: "2026-07-09T00:57:17.683749"
 ---
 
 # @ohos.data.UdmfComponents (内容卡片)

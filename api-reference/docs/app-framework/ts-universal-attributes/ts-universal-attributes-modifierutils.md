@@ -2,7 +2,8 @@
 title: "属性操作工具"
 upstream_id: "harmonyos-references/ts-universal-attributes-modifierutils"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:49.514448"
+content_hash: "aa40f333ace5"
+synced_at: "2026-07-09T00:57:43.306880"
 ---
 
 # 属性操作工具

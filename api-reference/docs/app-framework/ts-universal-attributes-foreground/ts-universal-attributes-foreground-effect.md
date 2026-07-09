@@ -1,9 +1,12 @@
 ---
+
 title: "前景属性设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-foreground-effect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:39.765838"
+synced_at: "2026-07-09T00:57:39.572869"
+content_hash: "8260cb7973f3"
 ---
+
 
 # 前景属性设置
 

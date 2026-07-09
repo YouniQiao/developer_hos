@@ -2,7 +2,8 @@
 title: "@ohos.enterprise.securityManager（安全管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-securitymanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:23.909858"
+content_hash: "49468ca01739"
+synced_at: "2026-07-09T00:59:53.351380"
 ---
 
 # @ohos.enterprise.securityManager（安全管理）

@@ -2,7 +2,8 @@
 title: "AbilityRuntime_StartOptions"
 upstream_id: "harmonyos-references/capi-abilityruntime-startoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:59.414139"
+content_hash: "83f4b03b725d"
+synced_at: "2026-07-09T00:57:13.033951"
 ---
 
 # AbilityRuntime_StartOptions

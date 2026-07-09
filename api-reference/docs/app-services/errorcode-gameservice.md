@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-gameservice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:25.514254"
+content_hash: "65f74dbfc666"
+synced_at: "2026-07-09T01:01:18.860807"
 ---
 
 # ArkTS API错误码

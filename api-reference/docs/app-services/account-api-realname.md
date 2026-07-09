@@ -2,7 +2,8 @@
 title: "@hms.core.account.realName (华为账号实名认证服务)"
 upstream_id: "harmonyos-references/account-api-realname"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:18.300199"
+content_hash: "5872e7726e8c"
+synced_at: "2026-07-09T01:01:11.602357"
 ---
 
 # @hms.core.account.realName (华为账号实名认证服务)

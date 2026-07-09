@@ -2,7 +2,8 @@
 title: "libc标准库"
 upstream_id: "harmonyos-references/musl"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:04.594202"
+content_hash: "502d0d5a51b5"
+synced_at: "2026-07-09T01:01:48.614800"
 ---
 
 # libc标准库

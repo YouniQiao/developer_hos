@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.continueManager (跨端迁移)"
 upstream_id: "harmonyos-references/js-apis-app-ability-continuemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:50.468111"
+content_hash: "015c8e7a3645"
+synced_at: "2026-07-09T00:57:07.100423"
 ---
 
 # @ohos.app.ability.continueManager (跨端迁移)

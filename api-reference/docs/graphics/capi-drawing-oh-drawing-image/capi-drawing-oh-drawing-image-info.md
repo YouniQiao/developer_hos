@@ -2,7 +2,8 @@
 title: "OH_Drawing_Image_Info"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-image-info"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:06.896369"
+content_hash: "2c352366e50b"
+synced_at: "2026-07-09T01:01:01.420562"
 ---
 
 # OH_Drawing_Image_Info

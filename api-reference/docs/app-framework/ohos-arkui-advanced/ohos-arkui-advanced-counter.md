@@ -2,7 +2,8 @@
 title: "advanced.Counter"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-counter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:56.984423"
+content_hash: "740dd1cf0ff4"
+synced_at: "2026-07-09T00:58:17.690529"
 ---
 
 # advanced.Counter
@@ -56,8 +57,8 @@ CounterOptions定义Counter类型及样式。
 | type | [CounterType](#countertype) | 否 | 否 | 指定当前Counter的类型。 |
 | direction12+ | [Direction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#direction) | 否 | 是 | 布局方向。 默认值：Direction.Auto 值为undefined时，按默认值处理。 |
 | numberOptions | [NumberStyleOptions](#numberstyleoptions) | 否 | 是 | 列表型和紧凑型Counter的样式。 默认值：显示计数器为0的列表型或紧凑型Counter。 值为undefined时，按默认值处理。 |
-| inlineOptions | [InlineStyleOptions](#inlinestyleoptions) | 否 | 是 | 普通数字内联调节型Counter的样式。 默认值：显示计数器为0的普通数字内联调节型Counter。 值为undefined时，按默认值处理。 |
-| dateOptions | [DateStyleOptions](#datestyleoptions) | 否 | 是 | 日期型内联型Counter的样式。 默认值：显示0001/01/01的日期型内联型Counter。 值为undefined时，按默认值处理。 |
+| inlineOptions | [InlineStyleOptions](#inlinestyleoptions) | 否 | 是 | 数值内联型Counter的样式。 默认值：显示计数器为0的数值内联型Counter。 值为undefined时，按默认值处理。 |
+| dateOptions | [DateStyleOptions](#datestyleoptions) | 否 | 是 | 日期内联型Counter的样式。 默认值：显示0001/01/01的日期内联型Counter。 值为undefined时，按默认值处理。 |
 
 选择不同的Counter类型，需要选择对应的Counter样式。
 
@@ -80,8 +81,8 @@ CounterType指定Counter类型。
 | --- | --- | --- |
 | LIST | 0 | 列表型Counter。 |
 | COMPACT | 1 | 紧凑型Counter。 |
-| INLINE | 2 | 普通数字内联调节型Counter。 |
-| INLINE_DATE | 3 | 日期型内联型Counter。 |
+| INLINE | 2 | 数值内联型Counter。 |
+| INLINE_DATE | 3 | 日期内联型Counter。 |
 
 #### CommonOptions
 
@@ -213,7 +214,7 @@ import { CounterType, CounterComponent } from '@kit.ArkUI';
 struct ListCounterExample {
   build() {
     Column() {
-      //列表型Counter
+      // 列表型Counter
       CounterComponent({
         options: {
           type: CounterType.LIST,
@@ -229,7 +230,7 @@ struct ListCounterExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070928.gif)
+ ![](./img/zh-cn_image_0000002661732961.gif)
 
 #### [h2]示例2（紧凑型Counter）
 
@@ -243,7 +244,7 @@ import { CounterType, CounterComponent } from '@kit.ArkUI';
 struct CompactCounterExample {
   build() {
     Column() {
-      //紧凑型Counter
+      // 紧凑型Counter
       CounterComponent({
         options: {
           type: CounterType.COMPACT,
@@ -260,7 +261,7 @@ struct CompactCounterExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470205.gif)
+ ![](./img/zh-cn_image_0000002631253840.gif)
 
 #### [h2]示例3（数值内联型Counter）
 
@@ -274,7 +275,7 @@ import { CounterType, CounterComponent } from '@kit.ArkUI';
 struct NumberStyleExample {
   build() {
     Column() {
-      //数值内联型Counter
+      // 数值内联型Counter
       CounterComponent({
         options: {
           type: CounterType.INLINE,
@@ -294,7 +295,7 @@ struct NumberStyleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350253.gif)
+ ![](./img/zh-cn_image_0000002661613023.gif)
 
 #### [h2]示例4（日期内联型Counter）
 
@@ -308,7 +309,7 @@ import { CounterType, CounterComponent, DateData } from '@kit.ArkUI';
 struct DataStyleExample {
   build() {
     Column() {
-      //日期内联型counter
+      // 日期内联型Counter
       CounterComponent({
         options: {
           type: CounterType.INLINE_DATE,
@@ -324,7 +325,7 @@ struct DataStyleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230840.gif)
+ ![](./img/zh-cn_image_0000002631413734.gif)
 
 #### [h2]示例5（镜像布局展示）
 
@@ -341,7 +342,7 @@ struct CounterPage {
   build() {
     Column({}) {
 
-      //列表型Counter
+      // 列表型Counter
       CounterComponent({
         options: {
           direction: this.currentDirection,
@@ -356,7 +357,7 @@ struct CounterPage {
       })
         .width('80%')
 
-      //数值型Counter
+      // 紧凑型Counter
       CounterComponent({
         options: {
           direction: this.currentDirection,
@@ -371,7 +372,7 @@ struct CounterPage {
         }
       }).margin({ top: 20 })
 
-      //数值内联型Counter
+      // 数值内联型Counter
       CounterComponent({
         options: {
           type: CounterType.INLINE,
@@ -388,7 +389,8 @@ struct CounterPage {
           }
         }
       }).margin({ top: 20 })
-      //日期内联型counter
+      
+      // 日期内联型Counter
       CounterComponent({
         options: {
           direction: this.currentDirection,
@@ -409,4 +411,4 @@ struct CounterPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070930.png)
+ ![](./img/zh-cn_image_0000002661732963.png)

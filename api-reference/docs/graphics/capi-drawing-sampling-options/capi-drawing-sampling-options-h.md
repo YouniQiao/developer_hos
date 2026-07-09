@@ -2,7 +2,8 @@
 title: "drawing_sampling_options.h"
 upstream_id: "harmonyos-references/capi-drawing-sampling-options-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:02.677911"
+content_hash: "ee4e58a153ea"
+synced_at: "2026-07-09T01:00:57.626775"
 ---
 
 # drawing_sampling_options.h

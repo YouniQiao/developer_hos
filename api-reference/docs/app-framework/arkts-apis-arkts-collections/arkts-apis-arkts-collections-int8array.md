@@ -2,7 +2,8 @@
 title: "Class (Int8Array)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-int8array"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:12.767397"
+content_hash: "6dcb66a085b8"
+synced_at: "2026-07-09T00:57:23.506751"
 ---
 
 # Class (Int8Array)
@@ -30,10 +31,10 @@ import { collections } from '@kit.ArkTS';
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | buffer | ArrayBuffer | 是 | 否 | ArkTS Int8Array底层使用的buffer。 |
-| byteLength | number | 是 | 否 | ArkTS Int8Array的所占的字节数。 |
+| byteLength | number | 是 | 否 | ArkTS Int8Array所占的字节数。 |
 | byteOffset | number | 是 | 否 | ArkTS Int8Array距离其ArrayBuffer起始位置的偏移。 |
 | length | number | 是 | 否 | ArkTS Int8Array元素个数。 |
-| BYTES_PER_ELEMENT | number | 是 | 否 | ArkTS Int8Array中每个元素所占用的字节数。 |
+| BYTES_PER_ELEMENT | number | 是 | 否 | ArkTS Int8Array中每个元素所占的字节数。 |
 
 #### constructor
 
@@ -455,7 +456,7 @@ let copied: collections.Int8Array = array.copyWithin(3, 1, 3);
 
 some(predicate: TypedArrayPredicateFn<number, Int8Array>): boolean
 
-测试ArkTS Int8Array中的是否存在元素满足指定条件。
+测试ArkTS Int8Array中是否存在元素满足指定条件。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 

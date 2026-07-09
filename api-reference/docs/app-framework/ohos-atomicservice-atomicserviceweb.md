@@ -2,7 +2,8 @@
 title: "AtomicServiceWeb"
 upstream_id: "harmonyos-references/ohos-atomicservice-atomicserviceweb"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:48.649176"
+content_hash: "6b3d9fd6afe4"
+synced_at: "2026-07-09T00:58:12.771660"
 ---
 
 # AtomicServiceWeb

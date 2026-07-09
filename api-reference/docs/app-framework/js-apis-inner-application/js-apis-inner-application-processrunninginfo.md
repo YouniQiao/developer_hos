@@ -2,7 +2,8 @@
 title: "ProcessRunningInfo"
 upstream_id: "harmonyos-references/js-apis-inner-application-processrunninginfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:53.975073"
+content_hash: "011821418c60"
+synced_at: "2026-07-09T00:57:09.540317"
 ---
 
 # ProcessRunningInfo

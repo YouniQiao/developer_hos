@@ -2,7 +2,8 @@
 title: "drawing_text_typography.h"
 upstream_id: "harmonyos-references/capi-drawing-text-typography-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:05.530334"
+content_hash: "f0a580318e22"
+synced_at: "2026-07-09T01:00:59.642732"
 ---
 
 # drawing_text_typography.h

@@ -1,9 +1,12 @@
 ---
+
 title: "页面路由错误码"
 upstream_id: "harmonyos-references/errorcode-router"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:00.251861"
+synced_at: "2026-07-09T00:58:48.411153"
+content_hash: "d0540f653313"
 ---
+
 
 # 页面路由错误码
 

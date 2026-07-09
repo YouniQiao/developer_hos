@@ -2,7 +2,8 @@
 title: "OH_AI_TrainCfgHandle"
 upstream_id: "harmonyos-references/capi-mindspore-oh-ai-traincfghandle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:59.097148"
+content_hash: "bb3c51e7dc08"
+synced_at: "2026-07-09T01:01:43.973682"
 ---
 
 # OH_AI_TrainCfgHandle

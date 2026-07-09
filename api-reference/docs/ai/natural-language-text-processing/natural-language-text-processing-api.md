@@ -2,7 +2,8 @@
 title: "textProcessing（文本处理）"
 upstream_id: "harmonyos-references/natural-language-text-processing-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:57.581297"
+content_hash: "86f27eb2051d"
+synced_at: "2026-07-09T01:01:42.618095"
 ---
 
 # textProcessing（文本处理）

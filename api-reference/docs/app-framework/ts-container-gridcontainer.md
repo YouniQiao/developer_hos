@@ -2,7 +2,8 @@
 title: "GridContainer"
 upstream_id: "harmonyos-references/ts-container-gridcontainer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:58.946795"
+content_hash: "0843d163dc31"
+synced_at: "2026-07-09T00:58:18.747245"
 ---
 
 # GridContainer
@@ -141,4 +142,4 @@ struct GridContainerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470229.gif)
+ ![](./img/zh-cn_image_0000002631253866.gif)

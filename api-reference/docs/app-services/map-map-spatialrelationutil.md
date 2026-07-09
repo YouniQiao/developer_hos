@@ -2,7 +2,8 @@
 title: "class (SpatialRelationUtil)"
 upstream_id: "harmonyos-references/map-map-spatialrelationutil"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:33.971769"
+content_hash: "2ee49dc317de"
+synced_at: "2026-07-09T01:01:25.777051"
 ---
 
 # class (SpatialRelationUtil)

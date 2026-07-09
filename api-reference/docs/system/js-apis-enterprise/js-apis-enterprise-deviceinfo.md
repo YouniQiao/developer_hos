@@ -2,7 +2,8 @@
 title: "@ohos.enterprise.deviceInfo（设备信息管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-deviceinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:23.055109"
+content_hash: "8d4cc998f2bd"
+synced_at: "2026-07-09T00:59:51.776894"
 ---
 
 # @ohos.enterprise.deviceInfo（设备信息管理）

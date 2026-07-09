@@ -2,7 +2,8 @@
 title: "ArkTS API 错误码"
 upstream_id: "harmonyos-references/errorcode-pen"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:39.873430"
+content_hash: "746bfdd18ea0"
+synced_at: "2026-07-09T00:59:59.764001"
 ---
 
 # ArkTS API 错误码

@@ -2,7 +2,8 @@
 title: "FAST_BiquadState"
 upstream_id: "harmonyos-references/fast-kit--fast-biquadstate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:15.512894"
+content_hash: "f9305c9d4272"
+synced_at: "2026-07-09T00:59:46.454801"
 ---
 
 # FAST_BiquadState

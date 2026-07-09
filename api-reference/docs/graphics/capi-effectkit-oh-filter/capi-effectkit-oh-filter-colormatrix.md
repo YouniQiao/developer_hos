@@ -2,7 +2,8 @@
 title: "OH_Filter_ColorMatrix"
 upstream_id: "harmonyos-references/capi-effectkit-oh-filter-colormatrix"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:07.108046"
+content_hash: "8c612343477b"
+synced_at: "2026-07-09T01:01:01.457788"
 ---
 
 # OH_Filter_ColorMatrix

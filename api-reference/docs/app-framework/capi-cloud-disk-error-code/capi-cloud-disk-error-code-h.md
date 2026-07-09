@@ -2,7 +2,8 @@
 title: "cloud_disk_error_code.h"
 upstream_id: "harmonyos-references/capi-cloud-disk-error-code-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:15.476699"
+content_hash: "a36e427b7a7d"
+synced_at: "2026-07-09T00:59:01.055652"
 ---
 
 # cloud_disk_error_code.h

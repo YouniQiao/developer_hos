@@ -2,7 +2,8 @@
 title: "Rdb_DataObserver"
 upstream_id: "harmonyos-references/capi-rdb-rdb-dataobserver"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:08.797540"
+content_hash: "82f2fa8121d5"
+synced_at: "2026-07-09T00:57:20.497538"
 ---
 
 # Rdb_DataObserver

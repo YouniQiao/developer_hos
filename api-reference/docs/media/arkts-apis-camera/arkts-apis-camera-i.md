@@ -2,7 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-camera-i"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:13.954939"
+content_hash: "241354ca7b9b"
+synced_at: "2026-07-09T01:00:24.479259"
 ---
 
 # Interfaces (其他)
@@ -193,7 +194,7 @@ synced_at: "2026-06-24T20:52:13.954939"
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| quality | [QualityLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-e#qualitylevel) | 否 | 是 | 图片质量（默认低）。 |
+| quality | [QualityLevel](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-e#qualitylevel) | 否 | 是 | 图片质量（默认中等）。 |
 | rotation | [ImageRotation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-e#imagerotation) | 否 | 是 | 图片旋转角度（默认0度，顺时针旋转）。 |
 | location | [Location](#location) | 否 | 是 | 图片地理位置信息（默认以设备硬件信息为准）。 |
 | mirror | boolean | 否 | 是 | 镜像使能开关（默认关）。使用之前需要使用[isMirrorSupported](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-camera-photooutput#ismirrorsupported)进行判断是否支持。true表示使能，false表示不使能。 |

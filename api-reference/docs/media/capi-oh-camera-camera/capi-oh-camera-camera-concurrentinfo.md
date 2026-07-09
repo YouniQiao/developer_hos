@@ -2,7 +2,8 @@
 title: "Camera_ConcurrentInfo"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-concurrentinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:17.402076"
+content_hash: "b08ca2f7d6b0"
+synced_at: "2026-07-09T01:00:26.493173"
 ---
 
 # Camera_ConcurrentInfo

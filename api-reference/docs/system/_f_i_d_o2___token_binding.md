@@ -2,7 +2,8 @@
 title: "FIDO2_TokenBinding"
 upstream_id: "harmonyos-references/_f_i_d_o2___token_binding"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:40.809905"
+content_hash: "fe4079cf96ea"
+synced_at: "2026-07-09T00:59:19.232045"
 ---
 
 # FIDO2_TokenBinding

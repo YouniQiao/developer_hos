@@ -2,7 +2,8 @@
 title: "numberIdentify (号码识别查询基本能力)"
 upstream_id: "harmonyos-references/callservicekit-numberldentify"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:23.283711"
+content_hash: "a95df2dbad2b"
+synced_at: "2026-07-09T01:01:16.224605"
 ---
 
 # numberIdentify (号码识别查询基本能力)

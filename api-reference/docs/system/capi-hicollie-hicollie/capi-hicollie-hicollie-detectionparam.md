@@ -2,7 +2,8 @@
 title: "HiCollie_DetectionParam"
 upstream_id: "harmonyos-references/capi-hicollie-hicollie-detectionparam"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:48.650530"
+content_hash: "2043ec20d172"
+synced_at: "2026-07-09T01:00:04.683158"
 ---
 
 # HiCollie_DetectionParam

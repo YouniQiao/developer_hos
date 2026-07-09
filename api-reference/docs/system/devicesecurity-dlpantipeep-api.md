@@ -2,7 +2,8 @@
 title: "DlpAntiPeep（防窥保护）"
 upstream_id: "harmonyos-references/devicesecurity-dlpantipeep-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:35.342759"
+content_hash: "a5b034e4a714"
+synced_at: "2026-07-09T00:59:15.187799"
 ---
 
 # DlpAntiPeep（防窥保护）

@@ -2,7 +2,8 @@
 title: "@ohos.accessibility.GesturePath (手势路径)"
 upstream_id: "harmonyos-references/js-apis-accessibility-gesturepath"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:01.130989"
+content_hash: "0e81bc16ede3"
+synced_at: "2026-07-09T00:57:14.161485"
 ---
 
 # @ohos.accessibility.GesturePath (手势路径)

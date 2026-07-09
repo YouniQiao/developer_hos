@@ -2,7 +2,8 @@
 title: "image"
 upstream_id: "harmonyos-references/js-service-widget-basic-image"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:29.215385"
+content_hash: "8b18f600a221"
+synced_at: "2026-07-09T00:58:31.340451"
 ---
 
 # image
@@ -76,4 +77,4 @@ synced_at: "2026-06-24T20:49:29.215385"
 ```
  4*4卡片
 
-![](./img/zh-cn_image_0000002626231130.jpg)
+![](./img/zh-cn_image_0000002631414026.jpg)

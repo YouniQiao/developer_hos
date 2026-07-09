@@ -2,7 +2,8 @@
 title: "ArkUI_AccessibilityValue"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-accessibilityvalue"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:54.127898"
+content_hash: "86e4d60e47c2"
+synced_at: "2026-07-09T00:58:44.149409"
 ---
 
 # ArkUI_AccessibilityValue

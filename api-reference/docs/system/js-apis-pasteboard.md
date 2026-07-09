@@ -2,7 +2,8 @@
 title: "@ohos.pasteboard (剪贴板)"
 upstream_id: "harmonyos-references/js-apis-pasteboard"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:06.928288"
+content_hash: "7c6392d9ad09"
+synced_at: "2026-07-09T00:59:40.619358"
 ---
 
 # @ohos.pasteboard (剪贴板)

@@ -2,7 +2,8 @@
 title: "文件组织"
 upstream_id: "harmonyos-references/js-service-widget-file"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:22.243769"
+content_hash: "45d21fb6d63f"
+synced_at: "2026-07-09T00:58:28.905722"
 ---
 
 # 文件组织

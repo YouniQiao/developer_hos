@@ -2,7 +2,8 @@
 title: "staticMap（静态图）"
 upstream_id: "harmonyos-references/map-staticmap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:35.408274"
+content_hash: "fe5c347d92a3"
+synced_at: "2026-07-09T01:01:27.082734"
 ---
 
 # staticMap（静态图）

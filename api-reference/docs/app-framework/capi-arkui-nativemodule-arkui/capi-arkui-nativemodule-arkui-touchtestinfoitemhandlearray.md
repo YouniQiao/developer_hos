@@ -2,7 +2,8 @@
 title: "ArkUI_TouchTestInfoItemHandle*"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-touchtestinfoitemhandlearray"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:58.927876"
+content_hash: "ce69fdd97984"
+synced_at: "2026-07-09T00:58:47.609882"
 ---
 
 # ArkUI_TouchTestInfoItemHandle*

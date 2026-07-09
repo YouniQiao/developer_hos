@@ -2,7 +2,8 @@
 title: "postCardAction"
 upstream_id: "harmonyos-references/js-apis-postcardaction"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:25.645605"
+content_hash: "ac3bc0477aa5"
+synced_at: "2026-07-09T00:57:31.744921"
 ---
 
 # postCardAction

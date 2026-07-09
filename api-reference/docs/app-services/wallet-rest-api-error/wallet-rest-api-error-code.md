@@ -2,7 +2,8 @@
 title: "REST API错误码"
 upstream_id: "harmonyos-references/wallet-rest-api-error-code"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:54.477339"
+content_hash: "145be642f23b"
+synced_at: "2026-07-09T01:01:39.945786"
 ---
 
 # REST API错误码

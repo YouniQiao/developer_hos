@@ -2,7 +2,8 @@
 title: "drawing_types.h"
 upstream_id: "harmonyos-references/capi-drawing-types-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:03.725171"
+content_hash: "fe6057eaaa6e"
+synced_at: "2026-07-09T01:00:58.737467"
 ---
 
 # drawing_types.h

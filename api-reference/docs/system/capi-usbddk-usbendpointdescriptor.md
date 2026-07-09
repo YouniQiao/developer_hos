@@ -2,7 +2,8 @@
 title: "UsbEndpointDescriptor"
 upstream_id: "harmonyos-references/capi-usbddk-usbendpointdescriptor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:35.422049"
+content_hash: "b6724210a9d7"
+synced_at: "2026-07-09T00:59:57.068531"
 ---
 
 # UsbEndpointDescriptor

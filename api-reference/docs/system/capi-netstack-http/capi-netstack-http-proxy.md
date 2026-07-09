@@ -2,7 +2,8 @@
 title: "Http_Proxy"
 upstream_id: "harmonyos-references/capi-netstack-http-proxy"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:55.322419"
+content_hash: "dcc63f59cd12"
+synced_at: "2026-07-09T00:59:30.304218"
 ---
 
 # Http_Proxy

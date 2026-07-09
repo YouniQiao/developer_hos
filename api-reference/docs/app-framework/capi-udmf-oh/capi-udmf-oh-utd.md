@@ -2,7 +2,8 @@
 title: "OH_Utd"
 upstream_id: "harmonyos-references/capi-udmf-oh-utd"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:11.472207"
+content_hash: "868e68519ca3"
+synced_at: "2026-07-09T00:57:22.085991"
 ---
 
 # OH_Utd

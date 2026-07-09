@@ -2,7 +2,8 @@
 title: "native_interface.h"
 upstream_id: "harmonyos-references/capi-native-interface-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:34.968684"
+content_hash: "d10b4e9c94a1"
+synced_at: "2026-07-09T00:58:33.271935"
 ---
 
 # native_interface.h

@@ -2,7 +2,8 @@
 title: "OH_AI_DeviceInfoHandle"
 upstream_id: "harmonyos-references/capi-mindspore-oh-ai-deviceinfohandle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:58.859488"
+content_hash: "9ebf340b8108"
+synced_at: "2026-07-09T01:01:43.990506"
 ---
 
 # OH_AI_DeviceInfoHandle

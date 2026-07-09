@@ -2,7 +2,8 @@
 title: "OH_AVCencInfo"
 upstream_id: "harmonyos-references/capi-multimedia-drm-oh-avcencinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:04.795996"
+content_hash: "72728789ea19"
+synced_at: "2026-07-09T01:00:16.189946"
 ---
 
 # OH_AVCencInfo

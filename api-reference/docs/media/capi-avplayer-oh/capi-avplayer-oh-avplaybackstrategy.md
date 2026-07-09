@@ -2,7 +2,8 @@
 title: "OH_AVPlaybackStrategy"
 upstream_id: "harmonyos-references/capi-avplayer-oh-avplaybackstrategy"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:42.299631"
+content_hash: "9bda14e84529"
+synced_at: "2026-07-09T01:00:45.056126"
 ---
 
 # OH_AVPlaybackStrategy

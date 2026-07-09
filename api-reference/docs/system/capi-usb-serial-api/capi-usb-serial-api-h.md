@@ -2,7 +2,8 @@
 title: "usb_serial_api.h"
 upstream_id: "harmonyos-references/capi-usb-serial-api-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:31.973300"
+content_hash: "a590054ba39f"
+synced_at: "2026-07-09T00:59:55.418667"
 ---
 
 # usb_serial_api.h

@@ -2,7 +2,8 @@
 title: "native_audio_common.h"
 upstream_id: "harmonyos-references/capi-native-audio-common-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:55.613769"
+content_hash: "700c760e8be8"
+synced_at: "2026-07-09T01:00:09.797525"
 ---
 
 # native_audio_common.h

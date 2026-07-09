@@ -2,7 +2,8 @@
 title: "@ohos.telephony.call (拨打电话)"
 upstream_id: "harmonyos-references/js-apis-call"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:04.231419"
+content_hash: "efd64ec3860a"
+synced_at: "2026-07-09T00:59:38.093755"
 ---
 
 # @ohos.telephony.call (拨打电话)

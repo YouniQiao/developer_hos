@@ -2,7 +2,8 @@
 title: "@ohos.print (打印)"
 upstream_id: "harmonyos-references/js-apis-print"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:07.093440"
+content_hash: "7404870e23f9"
+synced_at: "2026-07-09T00:59:40.923797"
 ---
 
 # @ohos.print (打印)

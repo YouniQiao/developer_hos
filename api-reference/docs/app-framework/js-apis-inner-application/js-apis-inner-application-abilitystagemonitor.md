@@ -2,7 +2,8 @@
 title: "AbilityStageMonitor"
 upstream_id: "harmonyos-references/js-apis-inner-application-abilitystagemonitor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:52.285000"
+content_hash: "9a66abad5158"
+synced_at: "2026-07-09T00:57:08.481817"
 ---
 
 # AbilityStageMonitor

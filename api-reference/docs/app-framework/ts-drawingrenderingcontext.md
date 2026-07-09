@@ -2,7 +2,8 @@
 title: "DrawingRenderingContext"
 upstream_id: "harmonyos-references/ts-drawingrenderingcontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:30.259959"
+content_hash: "c4e84b14de7c"
+synced_at: "2026-07-09T00:58:03.888171"
 ---
 
 # DrawingRenderingContext
@@ -155,7 +156,7 @@ struct CanvasExample {
             green: 0,
             blue: 0
           };
-          // 使用RGBA(0, 0, 0, 0)填充画布
+          // 使用RGBA(0, 0, 0, 0)清空画布
           this.context.canvas.clear(color);
           this.context.invalidate();
         })
@@ -167,11 +168,11 @@ struct CanvasExample {
 ```
  图1 绘制圆心为(200, 200)，半径为100的圆，填充色为RGBA(39, 135, 217, 255)
 
-![](./img/zh-cn_image_0000002656470027.png)
+![](./img/zh-cn_image_0000002661612841.png)
 
 图2 点击Clear按钮清空画布
 
-![](./img/zh-cn_image_0000002656350075.png)
+![](./img/zh-cn_image_0000002631413552.png)
 
 #### [h2]示例2（绘制文本）
 
@@ -209,4 +210,4 @@ struct CanvasExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230662.png)
+ ![](./img/zh-cn_image_0000002661732783.png)

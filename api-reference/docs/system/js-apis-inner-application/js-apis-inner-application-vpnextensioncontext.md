@@ -2,7 +2,8 @@
 title: "VpnExtensionContext"
 upstream_id: "harmonyos-references/js-apis-inner-application-vpnextensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:52.611742"
+content_hash: "d6524cb5ff9a"
+synced_at: "2026-07-09T00:59:28.417941"
 ---
 
 # VpnExtensionContext

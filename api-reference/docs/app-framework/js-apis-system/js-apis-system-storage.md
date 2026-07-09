@@ -2,7 +2,8 @@
 title: "@system.storage (数据存储)"
 upstream_id: "harmonyos-references/js-apis-system-storage"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:05.116377"
+content_hash: "58f38fc04771"
+synced_at: "2026-07-09T00:57:17.328253"
 ---
 
 # @system.storage (数据存储)

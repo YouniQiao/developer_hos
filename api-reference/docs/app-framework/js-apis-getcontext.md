@@ -2,7 +2,8 @@
 title: "getContext"
 upstream_id: "harmonyos-references/js-apis-getcontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:25.383454"
+content_hash: "05e3b7d5ae73"
+synced_at: "2026-07-09T00:57:31.524311"
 ---
 
 # getContext

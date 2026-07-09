@@ -2,7 +2,8 @@
 title: "native_render.h"
 upstream_id: "harmonyos-references/capi-native-render-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:40.218406"
+content_hash: "9f9709fcb9c8"
+synced_at: "2026-07-09T00:58:37.420666"
 ---
 
 # native_render.h

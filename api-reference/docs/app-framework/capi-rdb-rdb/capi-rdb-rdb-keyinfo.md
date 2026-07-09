@@ -2,7 +2,8 @@
 title: "Rdb_KeyInfo"
 upstream_id: "harmonyos-references/capi-rdb-rdb-keyinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:08.715305"
+content_hash: "e22c0fc4d110"
+synced_at: "2026-07-09T00:57:20.340386"
 ---
 
 # Rdb_KeyInfo

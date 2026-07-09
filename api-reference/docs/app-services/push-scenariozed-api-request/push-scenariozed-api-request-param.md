@@ -2,7 +2,8 @@
 title: "请求体参数说明"
 upstream_id: "harmonyos-references/push-scenariozed-api-request-param"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:50.311314"
+content_hash: "7b33965a914a"
+synced_at: "2026-07-09T01:01:38.269665"
 ---
 
 # 请求体参数说明
@@ -16,7 +17,7 @@ synced_at: "2026-06-24T20:53:50.311314"
 | biTag | 否 | String | 批量任务消息标识，[消息回执](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-msg-receipt)时会返回给应用服务器，长度最大64字节。 |
 | receiptId | 否 | String | 输入一个唯一的回执ID指定本次下行消息的回执地址及配置，该回执ID可以在[配置回执参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-msg-receipt#配置回执参数)中查看。 |
 | collapseKey | 否 | Integer | 用户设备离线时，Push服务器对离线消息缓存机制的控制方式，用户设备上线后缓存消息会再次下发，取值如下： -1：对该取值的所有离线消息都缓存（**默认值**） 0~100：离线消息缓存分组标识，对离线消息进行分组缓存，每个应用每一组只缓存一条最新的离线消息 如果您发送了10条消息，其中前5条的collapseKey为1，后5条的collapseKey为2，那么待用户上线后collapseKey为1和2的分别下发最新的一条消息给最终用户。 **说明：** collapseKey字段只对push-type为0或2的消息生效。 0：通知消息 2：语音播报消息 |
-| backgroundMode | 否 | Integer | 后台消息模式，仅对push-type为6的消息生效。取值如下： 0（**默认值**）：默认后台消息，按照天粒度管控频次 ，系统会根据现网使用场景和流量进行管控，不合理的使用场景系统会进行频控。 1：即时通讯后台消息，终端设备接收到该条消息后，如果应用在前台则将消息内容传给应用；如果应用在后台，系统会不定时将后台消息送达至应用主进程，您可以在主进程中及时将消息内容同步到应用内。 每次主进程可执行的最大时长为30秒，请在30秒内完成事务处理，超出时间后主进程生命周期结束。 系统限制应用每小时最多发送2条，可能会根据用户使用应用行为，系统运行策略调整。 **说明：** - 该参数设置为**1**时，应用需要申请即时通讯后台消息推送权益，该权益使用限于专属IM类应用；若应用未申请该权益，系统将按照参数设置为0的场景处理该条消息。 - 即时通讯后台消息是否能够及时送达受多因素影响，例如用户使用应用的行为、设备电量、系统负载等，系统不保障送达。 |
+| backgroundMode | 否 | Integer | 后台消息模式，仅对push-type为6的消息生效。取值如下： 0（**默认值**）：默认后台消息，按照天粒度管控频次 ，系统会根据使用场景和流量进行管控，不合理的使用场景系统会进行频控。 1：即时通讯后台消息，终端设备接收到该条消息后，如果应用在前台则将消息内容传给应用；如果应用在后台，系统会不定时将后台消息送达至应用主进程，您可以在主进程中及时将消息内容同步到应用内。 每次主进程可执行的最大时长为30秒，请在30秒内完成事务处理，超出时间后主进程生命周期结束。 系统限制应用每小时最多发送2条，可能会根据用户使用应用行为，系统运行策略调整。 **说明：** - 该参数设置为**1**时，应用需要申请即时通讯后台消息推送权益，该权益使用限于专属IM类应用；若应用未申请该权益，系统将按照参数设置为0的场景处理该条消息。 - 即时通讯后台消息是否能够及时送达受多因素影响，例如用户使用应用的行为、设备电量、系统负载等，系统不保障送达。 |
 
 #### target
 
@@ -50,7 +51,7 @@ synced_at: "2026-06-24T20:53:50.311314"
 | inboxContent | 否 | Array [String] | 多行文本样式的内容，当style为3时，本字段必填，最多支持3条内容，每条最大长度1024且无法完全展示时以“...”截断。详情参见[inboxContent](#inboxcontent示例) 。 **说明：** Wearable不支持多行文本样式。 |
 | clickAction | 是 | [ClickAction](#clickaction) Object | 点击消息动作，详情请参见[ClickAction](#clickaction)结构体。 |
 | badge | 否 | [AlertBadge](#alertbadge) Object | 通知消息角标控制参数，详情请参见[AlertBadge](#alertbadge)结构体，不设置时应用不显示角标数字，若当前已存在角标，则角标数字不变化。 **说明：** Wearable、TV不支持通知角标样式。 |
-| sound | 否 | String | 自定义消息通知铃声。此处设置的铃声文件必须放在应用的/resources/rawfile路径下。例如设置为**alert.mp3**，对应应用本地的**​/resources/rawfile/alert.mp3** 文件。支持的文件格式包括MP3、WAV、MPEG等，如果不设置，则用默认系统铃声。 当请求不携带**soundDuration**字段时，建议铃声时长不超过30秒，若超过30秒则截断处理；当请求携带**soundDuration**字段时，详情请参见**soundDuration**字段说明。 **说明：** Wearable、TV、PC/2in1不支持自定义铃声。 |
+| sound | 否 | String | 自定义消息通知铃声。此处设置的铃声文件必须放在应用的/resources/rawfile路径下。例如设置为**alert.mp3**，对应应用本地的**​/resources/rawfile/alert.mp3** 文件。支持的文件格式包括MP3、WAV、MPEG等，如果不设置，则用默认系统铃声。 当请求不携带**soundDuration**字段时，建议铃声时长不超过30秒，若超过30秒则截断处理；当请求携带**soundDuration**字段时，详情请参见**soundDuration**字段说明。 **说明：** Wearable、TV、PC/2in1不支持自定义铃声。 当category取值为MARKETING时，为静默通知，自定义铃声无效。 |
 | soundDuration | 否 | Integer | 自定义消息通知铃声时长。需要配合sound字段使用，只有当请求同时携带sound字段，soundDuration字段才会生效。仅支持数字，单位：s，取值范围 [1, 60]。 sound字段传入的自定义消息通知铃声会播放至soundDuration字段值后停止，若自定义消息通知铃声对应的时长不足soundDuration字段值则会循环播放，在达到soundDuration字段值后停止。 |
 | foregroundShow | 否 | Boolean | 应用在前台时是否展示通知消息。 true：默认值，应用在前后台都展示通知消息，此时[receiveMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-pushservice#pushservicereceivemessage)不会被触发，无法获取消息数据。 false：应用只在后台展示通知消息；应用在前台时，通知消息将不会展示，但可以通过[receiveMessage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-pushservice#pushservicereceivemessage)接收通知消息自行完成业务处理，详情请参见[应用在前台时处理通知消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-send-alert#应用在前台时处理通知消息)。 **说明：** foregroundShow字段仅对push-type为0的通知消息生效。 |
 | priorityScene | 否 | String | 消息的优先通知类型。取值如下： · PRIMARY_CONTACT：重要联系人消息 · AT_ME：@我 · URGENT_MESSAGE：加急消息 · SCHEDULE_REMINDER：日程待办提醒 **说明：** 发送优先通知消息需要开通[优先通知权益](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/priority-notification-permission-guidelines)。 |
@@ -90,19 +91,19 @@ synced_at: "2026-06-24T20:53:50.311314"
 | addNum | 否 | Integer | 应用角标累加数字（大于0小于100的整数），非应用角标实际显示数字。 **说明：** · 某应用当前有N条未读消息，若addNum设置为3，则每发一次消息，应用角标显示的数字累加3，为N+3（若N+3 > 99，角标显示“99+”）。 · 当不传入addNum时默认值为0，角标不会增加。 |
 | setNum | 否 | Integer | 角标设置数字（大于等于0小于100的整数），应用角标实际显示数字。 **说明：** setNum优先级高于addNum： · 若未传入setNum，说明未下发setNum，则本次以addNum为准。 · 若setNum>=0，说明下发了setNum，则本次以setNum为准。发布通知时不携带addNum字段。 |
 
-#### BadgePayload 角标消息
+#### BadgePayload 角标刷新消息
 
-请求体示例请参见[角标消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-example#角标消息)。
+请求体示例请参见[角标刷新消息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-example#角标刷新消息)。
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| notification | 是 | [BadgeNotification](#badgenotification) Object | 角标消息结构体，详情参见[BadgeNotification](#badgenotification)结构体。 |
+| notification | 是 | [BadgeNotification](#badgenotification) Object | 角标刷新消息结构体，详情参见[BadgeNotification](#badgenotification)结构体。 |
 
 #### [h2]BadgeNotification
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
-| badge | 是 | [Badge](#badge) Object | 角标消息结构体，详情参见[Badge](#badge)结构体。 |
+| badge | 是 | [Badge](#badge) Object | 角标刷新消息结构体，详情参见[Badge](#badge)结构体。 |
 
 #### [h2]Badge
 
@@ -301,7 +302,7 @@ synced_at: "2026-06-24T20:53:50.311314"
 
 #### [h2]Extend
 
-![](./img/zh-cn_image_0000002656351029.png)
+![](./img/zh-cn_image_0000002661613807.png)
 
 - 1 实况卡片辅助区类型，对应type字段： 当辅助区类型为1时，辅助区显示普通文本，使用API字段text传入文本内容。
 - 当辅助区类型为2时，辅助区显示胶囊文本，使用API字段text传入文本内容。
@@ -319,7 +320,7 @@ synced_at: "2026-06-24T20:53:50.311314"
 
 #### [h2]Game
 
-![](./img/zh-cn_image_0000002626231616.png)
+![](./img/zh-cn_image_0000002631414518.png)
 
 - 1 左侧队伍名称，对应host中的[name](#team)字段。
 - 2 左侧队伍图标，对应host中的[icon](#team)和[iconUrl](#team)字段。
@@ -366,10 +367,10 @@ synced_at: "2026-06-24T20:53:50.311314"
 
 | 图示 | 说明 |
 | --- | --- |
-| ![](./img/zh-cn_image_0000002626071704.png) | 定义实况胶囊基本属性的基类： · 1 胶囊布局类型，对应type字段。 · 2 实况胶囊的图标，对应icon和iconUrl字段。 · 3 实况胶囊的尾部图标，对应tailIcon和tailIconUrl字段。 · 4 实况胶囊副文本是否展示，对应isContentDisplayed字段。 · 5 实况胶囊尾部图标是否展示，对应isTailIconDisplayed字段。 |
-| ![](./img/zh-cn_image_0000002656470981.png) | type为1时展示该内容： · 1 胶囊状态主文本，对应title字段。 · 2 胶囊内容，对应content字段。 |
-| ![](./img/zh-cn_image_0000002656351031.png) | type为2时展示该内容： · 1 胶囊内容，对应content字段。 · 2 胶囊计时器初始值，对应capsuleTimer中的[time](#capsuletimer)字段。 · 3 是否倒计时显示计时器，对应capsuleTimer中的[countDown](#capsuletimer)字段。 · 4 胶囊计时器是否暂停，对应capsuleTimer中的[pause](#capsuletimer)字段。 |
-| ![](./img/zh-cn_image_0000002626231618.png) | type为3时展示该内容： · 1 进度最大值，对应progress中的[max](#progress)字段。 · 2 进度当前值，对应progress中的[progress](#progress)字段。 · 3 进度显示类型，对应progress中的[indeterminate](#progress)字段。 · 4 胶囊内容，对应content字段。 |
+| ![](./img/zh-cn_image_0000002661733745.png) | 定义实况胶囊基本属性的基类： · 1 胶囊布局类型，对应type字段。 · 2 实况胶囊的图标，对应icon和iconUrl字段。 · 3 实况胶囊的尾部图标，对应tailIcon和tailIconUrl字段。 · 4 实况胶囊副文本是否展示，对应isContentDisplayed字段。 · 5 实况胶囊尾部图标是否展示，对应isTailIconDisplayed字段。 |
+| ![](./img/zh-cn_image_0000002631254626.png) | type为1时展示该内容： · 1 胶囊状态主文本，对应title字段。 · 2 胶囊内容，对应content字段。 |
+| ![](./img/zh-cn_image_0000002661613809.png) | type为2时展示该内容： · 1 胶囊内容，对应content字段。 · 2 胶囊计时器初始值，对应capsuleTimer中的[time](#capsuletimer)字段。 · 3 是否倒计时显示计时器，对应capsuleTimer中的[countDown](#capsuletimer)字段。 · 4 胶囊计时器是否暂停，对应capsuleTimer中的[pause](#capsuletimer)字段。 |
+| ![](./img/zh-cn_image_0000002631414520.png) | type为3时展示该内容： · 1 进度最大值，对应progress中的[max](#progress)字段。 · 2 进度当前值，对应progress中的[progress](#progress)字段。 · 3 进度显示类型，对应progress中的[indeterminate](#progress)字段。 · 4 胶囊内容，对应content字段。 |
 
 | 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
@@ -398,7 +399,7 @@ synced_at: "2026-06-24T20:53:50.311314"
 
 #### [h2]SingleTextBlock
 
-![](./img/zh-cn_image_0000002626071706.png)
+![](./img/zh-cn_image_0000002661733747.png)
 
 - 1 辅助标记文本，对应firstLine字段。
 - 2 强调文本内容，对应secondLine字段。
@@ -413,7 +414,7 @@ synced_at: "2026-06-24T20:53:50.311314"
 
 #### [h2]FirstTextBlock
 
-![](./img/zh-cn_image_0000002656470983.png)
+![](./img/zh-cn_image_0000002631254628.png)
 
 - 1 左侧首行文本，对应firstLine字段。
 - 2 左侧次行文本内容，对应secondLine字段。
@@ -428,7 +429,7 @@ synced_at: "2026-06-24T20:53:50.311314"
 
 #### [h2]LastTextBlock
 
-![](./img/zh-cn_image_0000002656351033.png)
+![](./img/zh-cn_image_0000002661613811.png)
 
 - 3 右侧首行文本，对应firstLine字段。
 - 4 右侧次行文本内容，对应secondLine字段。
@@ -448,7 +449,7 @@ synced_at: "2026-06-24T20:53:50.311314"
 
 #### [h2]RichProgress
 
-![](./img/zh-cn_image_0000002626231620.png)
+![](./img/zh-cn_image_0000002631414522.png)
 
 - 1 进度百分比，对应progress字段。
 - 2 进度指示器左侧的进度点及节点图标的颜色，对应color字段。
@@ -476,7 +477,7 @@ synced_at: "2026-06-24T20:53:50.311314"
 
 #### [h2]ExternalData
 
-![](./img/zh-cn_image_0000002626071708.png)
+![](./img/zh-cn_image_0000002661733749.png)
 
 - 1 自定义的外屏通知标题，对应title字段。
 - 2 自定义的外屏通知内容，对应body字段。

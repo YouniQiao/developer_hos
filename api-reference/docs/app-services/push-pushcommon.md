@@ -2,7 +2,8 @@
 title: "pushCommon（推送服务公共信息）"
 upstream_id: "harmonyos-references/push-pushcommon"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:48.857789"
+content_hash: "2c920a264528"
+synced_at: "2026-07-09T01:01:37.296445"
 ---
 
 # pushCommon（推送服务公共信息）
@@ -53,7 +54,7 @@ PushPayload是推送服务向应用传递数据的核心接口，开发者可以
 
 #### [h2]data取值样例
 
-- type为'IM'时，data取值样例（格式化后）如下： 
+- type为'IM'时，data取值样例（格式化后）： 
 ```
 {
     "data": "extraData", // 详情参考ExtensionPayload.extraData
@@ -73,7 +74,7 @@ PushPayload是推送服务向应用传递数据的核心接口，开发者可以
 }
 ```
 
-- type为 'VoIP' 时，data取值样例（格式化后） 
+- type为 'VoIP' 时，data取值样例（格式化后）： 
 ```
 {
     "data": "extraData", // 详情参考VoIPCallPayload.extraData
@@ -83,7 +84,7 @@ PushPayload是推送服务向应用传递数据的核心接口，开发者可以
 }
 ```
 
-- type为 'BACKGROUND'时，data取值样例（格式化后） 
+- type为 'BACKGROUND'时，data取值样例（格式化后）： 
 ```
 {
     "data": "extraData", // 详情参考BackgroundPayload.extraData

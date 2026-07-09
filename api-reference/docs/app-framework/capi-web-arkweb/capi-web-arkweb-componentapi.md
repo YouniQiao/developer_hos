@@ -2,7 +2,8 @@
 title: "ArkWeb_ComponentAPI"
 upstream_id: "harmonyos-references/capi-web-arkweb-componentapi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:09.423395"
+content_hash: "015f5603ab78"
+synced_at: "2026-07-09T00:58:56.271569"
 ---
 
 # ArkWeb_ComponentAPI
@@ -13,7 +14,7 @@ typedef struct {...} ArkWeb_ComponentAPI
 
 #### 概述
 
-Component相关的Native API结构体。
+ArkWeb_ComponentAPI是ArkWeb在Native侧提供的用于监听Web组件生命周期事件的API结构体，继承自基础Native API类型[ArkWeb_AnyNativeAPI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-web-arkweb-anynativeapi)。开发者通过[OH_ArkWeb_GetNativeAPI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-interface-h#oh_arkweb_getnativeapi)并指定ARKWEB_NATIVE_COMPONENT类型获取该结构体，进而注册Web组件的Controller绑定、页面开始加载、页面加载完成以及组件销毁等事件回调。该结构体适用于需要在Native代码（C/C++）中感知Web组件关键状态变化的场景，例如初始化Native资源、同步页面加载状态、统计埋点或在组件销毁时释放关联资源；相关接口需在UI线程中调用，并建议在调用具体成员函数前通过[ARKWEB_MEMBER_MISSING](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkweb-type-h#宏定义)宏校验函数指针是否存在。
 
 起始版本： 12
 

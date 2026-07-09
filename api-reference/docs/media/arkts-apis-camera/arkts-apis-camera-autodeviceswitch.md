@@ -2,7 +2,8 @@
 title: "Interface (AutoDeviceSwitch)"
 upstream_id: "harmonyos-references/arkts-apis-camera-autodeviceswitch"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:10.353947"
+content_hash: "88999545defc"
+synced_at: "2026-07-09T01:00:20.953734"
 ---
 
 # Interface (AutoDeviceSwitch)

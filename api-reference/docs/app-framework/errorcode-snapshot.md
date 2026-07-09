@@ -1,9 +1,12 @@
 ---
+
 title: "截图错误码"
 upstream_id: "harmonyos-references/errorcode-snapshot"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:00.672163"
+synced_at: "2026-07-09T00:58:48.779892"
+content_hash: "6eb8baf96eb3"
 ---
+
 
 # 截图错误码
 

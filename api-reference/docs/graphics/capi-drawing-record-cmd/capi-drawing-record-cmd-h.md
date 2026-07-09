@@ -2,7 +2,8 @@
 title: "drawing_record_cmd.h"
 upstream_id: "harmonyos-references/capi-drawing-record-cmd-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:02.194526"
+content_hash: "3aaaecd400b7"
+synced_at: "2026-07-09T01:00:57.031778"
 ---
 
 # drawing_record_cmd.h

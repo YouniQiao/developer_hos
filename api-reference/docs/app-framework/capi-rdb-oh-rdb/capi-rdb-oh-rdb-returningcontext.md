@@ -2,7 +2,8 @@
 title: "OH_RDB_ReturningContext"
 upstream_id: "harmonyos-references/capi-rdb-oh-rdb-returningcontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:08.122775"
+content_hash: "6455030a13a9"
+synced_at: "2026-07-09T00:57:19.709771"
 ---
 
 # OH_RDB_ReturningContext

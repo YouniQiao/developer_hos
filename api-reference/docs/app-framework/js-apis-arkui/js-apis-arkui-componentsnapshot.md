@@ -2,7 +2,8 @@
 title: "@ohos.arkui.componentSnapshot (组件截图)"
 upstream_id: "harmonyos-references/js-apis-arkui-componentsnapshot"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:18.802999"
+content_hash: "9454f8ec2172"
+synced_at: "2026-07-09T00:57:28.030592"
 ---
 
 # @ohos.arkui.componentSnapshot (组件截图)
@@ -104,7 +105,7 @@ struct SnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230068.gif)
+ ![](./img/zh-cn_image_0000002661732173.gif)
 
 #### componentSnapshot.get(deprecated)
 
@@ -187,7 +188,7 @@ struct SnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230068.gif)
+ ![](./img/zh-cn_image_0000002661732173.gif)
 
 #### componentSnapshot.createFromBuilder(deprecated)
 
@@ -290,7 +291,7 @@ struct OffscreenSnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070158.gif)
+ ![](./img/zh-cn_image_0000002631253052.gif)
 
 #### componentSnapshot.createFromBuilder(deprecated)
 
@@ -396,7 +397,7 @@ struct OffscreenSnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070158.gif)
+ ![](./img/zh-cn_image_0000002631253052.gif)
 
 #### componentSnapshot.getSync12+
 
@@ -477,7 +478,7 @@ struct SnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230068.gif)
+ ![](./img/zh-cn_image_0000002661732173.gif)
 
 #### SnapshotSizeLimitation
 
@@ -567,7 +568,7 @@ struct SnapshotColorModeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230068.gif)
+ ![](./img/zh-cn_image_0000002661732173.gif)
 
 #### DynamicRangeModeOptions23+
 
@@ -627,7 +628,7 @@ struct SnapshotDynamicRangeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230068.gif)
+ ![](./img/zh-cn_image_0000002661732173.gif)
 
 #### SnapshotRegionType15+
 
@@ -736,4 +737,4 @@ struct SnapshotExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469435.gif)
+ ![](./img/zh-cn_image_0000002661612235.gif)

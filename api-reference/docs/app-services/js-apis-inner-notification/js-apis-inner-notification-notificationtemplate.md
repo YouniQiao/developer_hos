@@ -2,7 +2,8 @@
 title: "NotificationTemplate"
 upstream_id: "harmonyos-references/js-apis-inner-notification-notificationtemplate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:37.881210"
+content_hash: "be1042cf7955"
+synced_at: "2026-07-09T01:01:28.824057"
 ---
 
 # NotificationTemplate

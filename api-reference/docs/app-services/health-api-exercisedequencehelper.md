@@ -2,7 +2,8 @@
 title: "exerciseSequenceHelper (锻炼记录类型常量)"
 upstream_id: "harmonyos-references/health-api-exercisedequencehelper"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:27.649419"
+content_hash: "a8b1905abcd4"
+synced_at: "2026-07-09T01:01:21.465629"
 ---
 
 # exerciseSequenceHelper (锻炼记录类型常量)

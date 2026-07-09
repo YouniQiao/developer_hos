@@ -2,7 +2,8 @@
 title: "ArkUI_GestureInterruptInfo"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-gestureinterruptinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:46.917222"
+content_hash: "97ab00c62395"
+synced_at: "2026-07-09T00:58:40.023440"
 ---
 
 # ArkUI_GestureInterruptInfo

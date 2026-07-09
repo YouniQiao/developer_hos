@@ -2,7 +2,8 @@
 title: "OH_ArkUI_GestureStyle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-arkui-gesturestyle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:55.303719"
+content_hash: "5f401879d396"
+synced_at: "2026-07-09T00:58:45.117256"
 ---
 
 # OH_ArkUI_GestureStyle

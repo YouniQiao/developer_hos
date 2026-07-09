@@ -2,7 +2,8 @@
 title: "卡片错误码"
 upstream_id: "harmonyos-references/errorcode-form"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:18.269989"
+content_hash: "9b9017562ba0"
+synced_at: "2026-07-09T00:59:03.587919"
 ---
 
 # 卡片错误码
@@ -312,7 +313,7 @@ Some internal server error occurs.
 可能原因
 
 1. 当前系统繁忙。
-2. 当前系统数据内部数据异常。
+2. 当前系统内部数据异常。
 
 处理步骤
 

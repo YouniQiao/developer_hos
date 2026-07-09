@@ -2,7 +2,8 @@
 title: "ScsiPeripheral_VerifyRequest"
 upstream_id: "harmonyos-references/capi-scsiperipheralddk-scsiperipheral-verifyrequest"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:34.840654"
+content_hash: "55f80596def3"
+synced_at: "2026-07-09T00:59:56.729937"
 ---
 
 # ScsiPeripheral_VerifyRequest

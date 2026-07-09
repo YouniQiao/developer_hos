@@ -2,7 +2,8 @@
 title: "fileManagerService"
 upstream_id: "harmonyos-references/filemanagerservice-arkts-filemanagerservice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:24.514140"
+content_hash: "4a87bfe8ea0f"
+synced_at: "2026-07-09T01:01:17.061191"
 ---
 
 # fileManagerService

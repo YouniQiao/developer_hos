@@ -2,7 +2,8 @@
 title: "UsbSerial_Params"
 upstream_id: "harmonyos-references/capi-serialddk-usbserial-params"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:36.395281"
+content_hash: "8fe697191d23"
+synced_at: "2026-07-09T00:59:57.512902"
 ---
 
 # UsbSerial_Params

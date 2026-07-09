@@ -2,12 +2,15 @@
 title: "Class (ProxyController)"
 upstream_id: "harmonyos-references/arkts-apis-webview-proxycontroller"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:03.049261"
+content_hash: "5ecdb15678cf"
+synced_at: "2026-07-09T00:58:50.828054"
 ---
 
 # Class (ProxyController)
 
-此类用于为应用程序设置代理。
+ProxyController是ArkWeb框架中用于管理应用中所有Web组件代理设置的静态类。通过ProxyController，开发者可以统一为应用中的所有Web请求设置或移除代理配置，适用于需要将Web流量路由到特定代理服务器的场景（如企业网络环境、内容过滤、流量监控等）。
+
+ProxyController提供两个核心方法：applyProxyOverride用于应用代理配置，接受一个[ProxyConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-proxyconfig)对象和代理设置成功的回调函数；removeProxyOverride用于移除当前代理配置，恢复为默认网络连接方式。需要注意的是，代理设置或移除后不会立即生效，在加载页面之前需等待监听器触发，该监听器会在UI线程上被调用。
 
 ![](./img/note_3.0-zh-cn.png)
 

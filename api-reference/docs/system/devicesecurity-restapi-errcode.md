@@ -2,7 +2,8 @@
 title: "REST API错误码"
 upstream_id: "harmonyos-references/devicesecurity-restapi-errcode"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:37.676996"
+content_hash: "08f524441690"
+synced_at: "2026-07-09T00:59:16.581521"
 ---
 
 # REST API错误码

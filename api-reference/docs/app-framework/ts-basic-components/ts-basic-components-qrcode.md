@@ -2,7 +2,8 @@
 title: "QRCode"
 upstream_id: "harmonyos-references/ts-basic-components-qrcode"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:27.442867"
+content_hash: "888119a140a2"
+synced_at: "2026-07-09T00:58:02.254490"
 ---
 
 # QRCode
@@ -132,7 +133,7 @@ struct QRCodeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350023.png)
+ ![](./img/zh-cn_image_0000002661612789.png)
 
 #### [h2]示例2（设置背景颜色为透明）
 
@@ -157,4 +158,4 @@ struct QRCodeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230610.png)
+ ![](./img/zh-cn_image_0000002631413500.png)

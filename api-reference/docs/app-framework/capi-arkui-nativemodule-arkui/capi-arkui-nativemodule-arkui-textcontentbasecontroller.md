@@ -2,7 +2,8 @@
 title: "ArkUI_TextContentBaseController"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-textcontentbasecontroller"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:56.352980"
+content_hash: "1bc08c239225"
+synced_at: "2026-07-09T00:58:45.695193"
 ---
 
 # ArkUI_TextContentBaseController

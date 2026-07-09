@@ -2,7 +2,8 @@
 title: "IFAA"
 upstream_id: "harmonyos-references/errorcode-onlineauthentication-ifaa"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:38.996787"
+content_hash: "b904d046d068"
+synced_at: "2026-07-09T00:59:17.404352"
 ---
 
 # IFAA

@@ -2,7 +2,8 @@
 title: "SceneType"
 upstream_id: "harmonyos-references/js-apis-inner-scene-types"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:11.701189"
+content_hash: "ecb4ef945f83"
+synced_at: "2026-07-09T01:01:06.010394"
 ---
 
 # SceneType
@@ -227,7 +228,7 @@ import { Vec2, Vec3, Vec4, Quaternion, Aabb, Color, Rect, GeometryType, Primitiv
 
 以radius=0.5，height=1，segmentCount=20为例，生成圆柱体的网格以及UV布局如下：
 
-![](./img/zh-cn_image_0000002656351013.png)
+![](./img/zh-cn_image_0000002661613791.png)
 
 #### Mat4x423+
 

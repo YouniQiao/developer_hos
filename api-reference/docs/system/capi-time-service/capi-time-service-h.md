@@ -2,7 +2,8 @@
 title: "time_service.h"
 upstream_id: "harmonyos-references/capi-time-service-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:11.612439"
+content_hash: "24d9d52f20aa"
+synced_at: "2026-07-09T00:59:43.341887"
 ---
 
 # time_service.h

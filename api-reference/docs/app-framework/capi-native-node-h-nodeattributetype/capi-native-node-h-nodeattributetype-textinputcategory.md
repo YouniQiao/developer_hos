@@ -2,7 +2,8 @@
 title: "ArkUI_NodeAttributeType（文本输入类组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-textinputcategory"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:39.227952"
+content_hash: "0e5286f14d52"
+synced_at: "2026-07-09T00:58:36.923058"
 ---
 
 # ArkUI_NodeAttributeType（文本输入类组件相关属性）
@@ -1332,13 +1333,13 @@ NODE_TEXT_AREA_CARET_COLOR = 8005
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0].u32 | 背景色数值，0xargb格式，形如 0xFFFF0000 表示红色。 |
+| .value[0].u32 | 光标颜色数值，0xargb格式，形如 0xFFFF0000 表示红色。 |
 
 返回：
 
 | 类型 | 说明 |
 | --- | --- |
-| .value[0].u32 | 背景色数值，0xargb格式。 |
+| .value[0].u32 | 光标颜色数值，0xargb格式。 |
 
 #### NODE_TEXT_AREA_EDITING
 

@@ -2,7 +2,8 @@
 title: "Rcp_QuicStreamData"
 upstream_id: "harmonyos-references/_rcp___quic_stream_data"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:02.927883"
+content_hash: "41d54a0e70c1"
+synced_at: "2026-07-09T00:59:36.525475"
 ---
 
 # Rcp_QuicStreamData
@@ -25,7 +26,7 @@ quic连接中用于接收流式数据的存储结构。
 | --- | --- |
 | [Rcp_QuicIoVec](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_rcp___quic_io_vec) *[iov](#iov) | 指向[Rcp_QuicIoVec](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_rcp___quic_io_vec)结构体数组的指针。 |
 | uint32_t [iovLen](#iovlen) | [Rcp_QuicIoVec](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_rcp___quic_io_vec)结构体数组的长度。 |
-| bool [fin](#fin) | 标记是否为流式传输的最后数据。true表示是流式传输的最后数据。 |
+| bool [fin](#fin) | 标记是否为流式传输的最后数据。true表示是流式传输的最后数据，false表示不是流式传输的最后数据。 |
 
 #### 结构体成员变量说明
 
@@ -54,4 +55,4 @@ bool Rcp_QuicStreamData::fin
 ```
  描述
 
-标记是否为流式传输的最后数据。true表示是流式传输的最后数据。
+标记是否为流式传输的最后数据。true表示是流式传输的最后数据，false表示不是流式传输的最后数据。

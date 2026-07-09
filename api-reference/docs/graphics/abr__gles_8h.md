@@ -2,7 +2,8 @@
 title: "abr_gles.h"
 upstream_id: "harmonyos-references/abr__gles_8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:12.739956"
+content_hash: "f68805f6ac0f"
+synced_at: "2026-07-09T01:01:06.598468"
 ---
 
 # abr_gles.h

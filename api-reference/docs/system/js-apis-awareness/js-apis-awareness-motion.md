@@ -2,7 +2,8 @@
 title: "@ohos.multimodalAwareness.motion (动作感知能力)"
 upstream_id: "harmonyos-references/js-apis-awareness-motion"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:36.835636"
+content_hash: "92f9e4082903"
+synced_at: "2026-07-09T00:59:58.071633"
 ---
 
 # @ohos.multimodalAwareness.motion (动作感知能力)
@@ -51,7 +52,10 @@ on(type: 'operatingHandChanged', callback: Callback<OperatingHandStatus>): void
 
 如果设备不支持此功能，将返回801错误码。
 
-需要权限：ohos.permission.ACTIVITY_MOTION 或 ohos.permission.DETECT_GESTURE
+需要权限：
+
+- API版本20+：ohos.permission.ACTIVITY_MOTION 或 ohos.permission.DETECT_GESTURE
+- API版本15-19：ohos.permission.ACTIVITY_MOTION
 
 系统能力：SystemCapability.MultimodalAwareness.Motion
 
@@ -98,7 +102,10 @@ off(type: 'operatingHandChanged', callback?: Callback<OperatingHandStatus>): voi
 
 取消订阅触控操作手感知事件。
 
-需要权限：ohos.permission.ACTIVITY_MOTION 或 ohos.permission.DETECT_GESTURE
+需要权限：
+
+- API版本20+：ohos.permission.ACTIVITY_MOTION 或 ohos.permission.DETECT_GESTURE
+- API版本15-19：ohos.permission.ACTIVITY_MOTION
 
 系统能力：SystemCapability.MultimodalAwareness.Motion
 
@@ -141,7 +148,10 @@ getRecentOperatingHandStatus(): OperatingHandStatus
 
 获取最新触控操作手状态。
 
-需要权限：ohos.permission.ACTIVITY_MOTION 或 ohos.permission.DETECT_GESTURE
+需要权限：
+
+- API版本20+：ohos.permission.ACTIVITY_MOTION 或 ohos.permission.DETECT_GESTURE
+- API版本15-19：ohos.permission.ACTIVITY_MOTION
 
 系统能力：SystemCapability.MultimodalAwareness.Motion
 

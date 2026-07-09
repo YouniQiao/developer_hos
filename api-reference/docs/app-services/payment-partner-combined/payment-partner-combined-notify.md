@@ -2,7 +2,8 @@
 title: "合单支付结果回调通知"
 upstream_id: "harmonyos-references/payment-partner-combined-notify"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:45.258174"
+content_hash: "de63e88d2222"
+synced_at: "2026-07-09T01:01:33.982907"
 ---
 
 # 合单支付结果回调通知

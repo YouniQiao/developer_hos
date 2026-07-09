@@ -2,7 +2,8 @@
 title: "OH_CryptoKdfParams"
 upstream_id: "harmonyos-references/capi-cryptokdfapi-oh-cryptokdfparams"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:32.933144"
+content_hash: "bd415bd2dca5"
+synced_at: "2026-07-09T00:59:13.512913"
 ---
 
 # OH_CryptoKdfParams

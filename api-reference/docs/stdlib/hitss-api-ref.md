@@ -2,7 +2,8 @@
 title: "HiTSS"
 upstream_id: "harmonyos-references/hitss-api-ref"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:06.747985"
+content_hash: "e2ae07cb499e"
+synced_at: "2026-07-09T01:01:50.801709"
 ---
 
 # HiTSS

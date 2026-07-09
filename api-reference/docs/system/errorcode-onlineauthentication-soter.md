@@ -2,7 +2,8 @@
 title: "SOTER"
 upstream_id: "harmonyos-references/errorcode-onlineauthentication-soter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:39.002576"
+content_hash: "c7fc2de5faa9"
+synced_at: "2026-07-09T00:59:17.642270"
 ---
 
 # SOTER

@@ -2,7 +2,8 @@
 title: "media_types.h"
 upstream_id: "harmonyos-references/capi-media-types-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:02.184878"
+content_hash: "0106df82cb3d"
+synced_at: "2026-07-09T01:00:13.715637"
 ---
 
 # media_types.h

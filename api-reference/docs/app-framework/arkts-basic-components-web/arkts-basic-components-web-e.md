@@ -2,7 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-basic-components-web-e"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:07.540751"
+content_hash: "c3bec74c0e21"
+synced_at: "2026-07-09T00:58:55.434307"
 ---
 
 # Enums

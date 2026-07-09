@@ -2,14 +2,15 @@
 title: "对返回结果验签"
 upstream_id: "harmonyos-references/iap-verifying-signature"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:28.580181"
+content_hash: "a169b2df0abb"
+synced_at: "2026-07-09T01:01:21.413063"
 ---
 
 # 对返回结果验签
 
 #### 功能介绍
 
-IAP服务器API返回结果以及服务端关键事件通知返回的是JSON Web Signature （JWS）格式的数据。JWS的主要目的是保证了数据在传输过程中不被修改，验证数据的完整性。
+IAP服务器API返回结果以及服务端关键事件通知返回的是JSON Web Signature （JWS）格式的数据。JWS保证数据在传输过程中的完整性，防止数据被篡改。
 
 #### JWS结构
 
@@ -114,6 +115,7 @@ public class JWSChecker {
         // Decode and return the payload.
         return new String(Base64.getUrlDecoder().decode(decodedJWT.getPayload()), StandardCharsets.UTF_8);
     }
+    
     private static PublicKey verifyChainAndGetPubKey(String[] certificates) throws Exception {
         CertificateFactory certificateFactory = CertificateFactory.getInstance("X.509");
         List<Certificate> certificateList = new LinkedList<>();
@@ -151,6 +153,7 @@ public class JWSChecker {
         }
         return certPathValidatorResult.getPublicKey();
     }
+
     private static PKIXParameters loadRootCAAndPKIX() throws Exception {
         PKIXParameters parameters;
         // TODO: Under Java 8, Need to close the resource in the finally block.

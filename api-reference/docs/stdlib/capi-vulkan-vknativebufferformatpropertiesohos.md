@@ -2,7 +2,8 @@
 title: "VkNativeBufferFormatPropertiesOHOS"
 upstream_id: "harmonyos-references/capi-vulkan-vknativebufferformatpropertiesohos"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:06.426819"
+content_hash: "98741292439a"
+synced_at: "2026-07-09T01:01:49.757706"
 ---
 
 # VkNativeBufferFormatPropertiesOHOS

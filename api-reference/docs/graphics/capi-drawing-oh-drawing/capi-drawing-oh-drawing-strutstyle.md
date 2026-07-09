@@ -2,7 +2,8 @@
 title: "OH_Drawing_StrutStyle"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-strutstyle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:06.700311"
+content_hash: "ff3d1124a45f"
+synced_at: "2026-07-09T01:01:01.103918"
 ---
 
 # OH_Drawing_StrutStyle

@@ -2,7 +2,8 @@
 title: "OH_Drawing_Run"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-run"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:08.570079"
+content_hash: "3cb49a92af13"
+synced_at: "2026-07-09T01:01:02.825696"
 ---
 
 # OH_Drawing_Run

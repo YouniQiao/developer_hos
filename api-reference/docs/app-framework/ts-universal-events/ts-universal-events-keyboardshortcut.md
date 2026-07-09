@@ -2,7 +2,8 @@
 title: "组件快捷键事件"
 upstream_id: "harmonyos-references/ts-universal-events-keyboardshortcut"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:33.095390"
+content_hash: "f16815c66dfe"
+synced_at: "2026-07-09T00:57:36.524752"
 ---
 
 # 组件快捷键事件
@@ -128,7 +129,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070234.gif)
+ ![](./img/zh-cn_image_0000002631413022.gif)
 
 #### [h2]示例2（快捷键的绑定和解除绑定）
 
@@ -167,4 +168,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469511.gif)
+ ![](./img/zh-cn_image_0000002661732253.gif)

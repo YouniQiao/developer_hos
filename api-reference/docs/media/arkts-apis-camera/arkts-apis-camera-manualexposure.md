@@ -2,7 +2,8 @@
 title: "Interface (ManualExposure)"
 upstream_id: "harmonyos-references/arkts-apis-camera-manualexposure"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:11.833263"
+content_hash: "ad699ec34cba"
+synced_at: "2026-07-09T01:00:22.006241"
 ---
 
 # Interface (ManualExposure)

@@ -2,7 +2,8 @@
 title: "AbilityStateData"
 upstream_id: "harmonyos-references/js-apis-inner-application-abilitystatedata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:52.406890"
+content_hash: "f19eebe72244"
+synced_at: "2026-07-09T00:57:08.571696"
 ---
 
 # AbilityStateData

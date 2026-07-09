@@ -2,7 +2,8 @@
 title: "OH_QoS_GewuCreateSessionResult"
 upstream_id: "harmonyos-references/capi-qos-oh-qos-gewucreatesessionresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:25.721597"
+content_hash: "46ab9d050df7"
+synced_at: "2026-07-09T00:59:53.609671"
 ---
 
 # OH_QoS_GewuCreateSessionResult

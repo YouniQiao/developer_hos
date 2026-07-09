@@ -2,7 +2,8 @@
 title: "drawing_text_run.h"
 upstream_id: "harmonyos-references/capi-drawing-text-run-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:03.644517"
+content_hash: "b58839e6ff80"
+synced_at: "2026-07-09T01:00:58.758294"
 ---
 
 # drawing_text_run.h

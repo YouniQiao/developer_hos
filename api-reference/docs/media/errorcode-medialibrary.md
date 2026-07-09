@@ -2,7 +2,8 @@
 title: "媒体库错误码"
 upstream_id: "harmonyos-references/errorcode-medialibrary"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:48.434884"
+content_hash: "ac686eb8e0b9"
+synced_at: "2026-07-09T01:00:49.025766"
 ---
 
 # 媒体库错误码

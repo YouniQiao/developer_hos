@@ -2,7 +2,8 @@
 title: "statusBarManager（状态栏管理服务）"
 upstream_id: "harmonyos-references/statusbar-extension-manager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:13.989050"
+content_hash: "804cc8dcb81c"
+synced_at: "2026-07-09T00:59:45.599662"
 ---
 
 # statusBarManager（状态栏管理服务）

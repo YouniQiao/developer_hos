@@ -2,7 +2,8 @@
 title: "NetworkBoost_NetworkScene"
 upstream_id: "harmonyos-references/network-boost-c-struct-network_scene"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:58.035671"
+content_hash: "54b4b0d7d74f"
+synced_at: "2026-07-09T00:59:32.728399"
 ---
 
 # NetworkBoost_NetworkScene

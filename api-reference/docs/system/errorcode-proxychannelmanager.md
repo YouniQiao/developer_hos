@@ -2,7 +2,8 @@
 title: "代理通道管理错误码"
 upstream_id: "harmonyos-references/errorcode-proxychannelmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:50.102821"
+content_hash: "b361c0764db7"
+synced_at: "2026-07-09T00:59:26.307619"
 ---
 
 # 代理通道管理错误码

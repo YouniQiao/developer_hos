@@ -2,7 +2,8 @@
 title: "OH_Drawing_MaskFilter"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-maskfilter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:09.954737"
+content_hash: "eaf2c48ca007"
+synced_at: "2026-07-09T01:01:03.932128"
 ---
 
 # OH_Drawing_MaskFilter

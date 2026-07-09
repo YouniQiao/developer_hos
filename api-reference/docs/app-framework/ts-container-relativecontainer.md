@@ -2,7 +2,8 @@
 title: "RelativeContainer"
 upstream_id: "harmonyos-references/ts-container-relativecontainer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:52.659377"
+content_hash: "f1a6a71a0338"
+synced_at: "2026-07-09T00:57:46.088981"
 ---
 
 # RelativeContainer
@@ -278,7 +279,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349687.png)
+ ![](./img/zh-cn_image_0000002631253266.png)
 
 #### [h2]示例2（子组件设置外边距）
 
@@ -353,7 +354,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230274.png)
+ ![](./img/zh-cn_image_0000002661612449.png)
 
 #### [h2]示例3（设置容器大小自适应内容）
 
@@ -422,7 +423,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070364.png)
+ ![](./img/zh-cn_image_0000002631413158.png)
 
 #### [h2]示例4（设置偏移）
 
@@ -456,7 +457,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469641.png)
+ ![](./img/zh-cn_image_0000002661732387.png)
 
 #### [h2]示例5（设置辅助线）
 
@@ -490,7 +491,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349689.png)
+ ![](./img/zh-cn_image_0000002631253268.png)
 
 #### [h2]示例6（设置屏障）
 
@@ -562,7 +563,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230276.png)
+ ![](./img/zh-cn_image_0000002661612451.png)
 
 #### [h2]示例7（设置链）
 
@@ -712,7 +713,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070366.png)
+ ![](./img/zh-cn_image_0000002631413160.png)
 
 #### [h2]示例8（链中设置偏移）
 
@@ -777,7 +778,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469643.png)
+ ![](./img/zh-cn_image_0000002661732389.png)
 
 #### [h2]示例9（设置镜像模式）
 
@@ -850,7 +851,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349691.png)
+ ![](./img/zh-cn_image_0000002631253270.png)
 
 #### [h2]示例10（设置链中节点权重）
 
@@ -916,4 +917,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230278.png)
+ ![](./img/zh-cn_image_0000002661612453.png)

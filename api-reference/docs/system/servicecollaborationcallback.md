@@ -2,7 +2,8 @@
 title: "ServiceCollaborationCallback"
 upstream_id: "harmonyos-references/servicecollaborationcallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:04.118610"
+content_hash: "0cd075009c52"
+synced_at: "2026-07-09T00:59:37.212839"
 ---
 
 # ServiceCollaborationCallback

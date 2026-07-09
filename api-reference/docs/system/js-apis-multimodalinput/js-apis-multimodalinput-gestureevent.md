@@ -2,7 +2,8 @@
 title: "@ohos.multimodalInput.gestureEvent (手势事件)"
 upstream_id: "harmonyos-references/js-apis-multimodalinput-gestureevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:18.204684"
+content_hash: "f07a9dcc7a8a"
+synced_at: "2026-07-09T00:59:48.795263"
 ---
 
 # @ohos.multimodalInput.gestureEvent (手势事件)

@@ -2,7 +2,8 @@
 title: "net_connection.h"
 upstream_id: "harmonyos-references/capi-net-connection-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:52.887088"
+content_hash: "a808c31f2aa3"
+synced_at: "2026-07-09T00:59:28.552312"
 ---
 
 # net_connection.h

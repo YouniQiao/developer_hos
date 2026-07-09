@@ -2,7 +2,8 @@
 title: "OH_Huks_ParamSet"
 upstream_id: "harmonyos-references/capi-hukstypeapi-oh-huks-paramset"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:43.933857"
+content_hash: "72db3499cb26"
+synced_at: "2026-07-09T00:59:21.700316"
 ---
 
 # OH_Huks_ParamSet

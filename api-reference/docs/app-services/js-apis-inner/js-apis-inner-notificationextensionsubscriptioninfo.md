@@ -2,7 +2,8 @@
 title: "NotificationExtensionSubscriptionInfo"
 upstream_id: "harmonyos-references/js-apis-inner-notificationextensionsubscriptioninfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:38.128026"
+content_hash: "e19f80f013e7"
+synced_at: "2026-07-09T01:01:28.944707"
 ---
 
 # NotificationExtensionSubscriptionInfo

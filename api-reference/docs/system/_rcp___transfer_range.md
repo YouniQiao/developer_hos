@@ -2,7 +2,8 @@
 title: "Rcp_TransferRange"
 upstream_id: "harmonyos-references/_rcp___transfer_range"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:02.478599"
+content_hash: "ba07a162be56"
+synced_at: "2026-07-09T00:59:35.922108"
 ---
 
 # Rcp_TransferRange

@@ -2,7 +2,8 @@
 title: "drawing_canvas.h"
 upstream_id: "harmonyos-references/capi-drawing-canvas-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:59.370723"
+content_hash: "c9f246c738bc"
+synced_at: "2026-07-09T01:00:55.993791"
 ---
 
 # drawing_canvas.h

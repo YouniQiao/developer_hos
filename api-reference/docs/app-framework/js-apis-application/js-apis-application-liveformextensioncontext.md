@@ -2,7 +2,8 @@
 title: "LiveFormExtensionContext"
 upstream_id: "harmonyos-references/js-apis-application-liveformextensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:17.950103"
+content_hash: "e742153544ee"
+synced_at: "2026-07-09T00:59:03.215082"
 ---
 
 # LiveFormExtensionContext

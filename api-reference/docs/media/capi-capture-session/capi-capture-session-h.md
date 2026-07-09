@@ -2,7 +2,8 @@
 title: "capture_session.h"
 upstream_id: "harmonyos-references/capi-capture-session-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:15.151952"
+content_hash: "3e4b5d097dc7"
+synced_at: "2026-07-09T01:00:25.771377"
 ---
 
 # capture_session.h

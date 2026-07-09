@@ -2,7 +2,8 @@
 title: "Class (MediaQuery)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-mediaquery"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:21.785568"
+content_hash: "ae1268425fab"
+synced_at: "2026-07-09T00:57:29.249050"
 ---
 
 # Class (MediaQuery)

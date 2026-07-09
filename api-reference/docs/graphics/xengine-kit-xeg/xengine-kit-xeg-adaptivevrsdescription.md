@@ -2,7 +2,8 @@
 title: "XEG_AdaptiveVRSDescription"
 upstream_id: "harmonyos-references/xengine-kit-xeg-adaptivevrsdescription"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:16.340993"
+content_hash: "3ba560cd0128"
+synced_at: "2026-07-09T01:01:10.062190"
 ---
 
 # XEG_AdaptiveVRSDescription
@@ -23,7 +24,7 @@ synced_at: "2026-06-24T20:53:16.340993"
 
 | 名称 | 描述 |
 | --- | --- |
-| float * [reprojectionMatrix](#reprojectionmatrix) | 参数可选，参数非空时画质更优。此参数为重投影矩阵的指针，计算公式为：（上一帧投影矩阵*上一帧的观察矩阵）*（（当前帧的投影矩阵*当前帧的观察矩阵）的逆矩阵），矩阵必须是4*4列主序的矩阵。 |
+| float * [reprojectionMatrix](#reprojectionmatrix) | 此参数为重投影矩阵的指针，计算公式为：（上一帧投影矩阵*上一帧的观察矩阵）*（（当前帧的投影矩阵*当前帧的观察矩阵）的逆矩阵），矩阵必须是4*4列主序的矩阵。此参数可以设为空指针。 |
 | VkImageView [inputColorImage](#inputcolorimage) | 上一帧渲染管线最终渲染结果颜色附件的VkImageView。 |
 | VkImageView [inputDepthImage](#inputdepthimage) | 当前帧渲染管线深度附件的VkImageView。 |
 | VkImageView [outputShadingRateImage](#outputshadingrateimage) | 准备生成着色率图信息的VkImageView，此VkImageView需要用户创建并输入。 |
@@ -68,4 +69,4 @@ float* XEG_AdaptiveVRSDescription::reprojectionMatrix
 ```
  描述
 
-参数可选，默认值为nullptr, 参数非空时画质更优。此参数为重投影矩阵的指针，计算公式为：（上一帧投影矩阵*上一帧的观察矩阵）*（（当前帧的投影矩阵*当前帧的观察矩阵）的逆矩阵），矩阵必须是4*4列主序的矩阵。
+此参数为重投影矩阵的指针，计算公式为：（上一帧投影矩阵*上一帧的观察矩阵）*（（当前帧的投影矩阵*当前帧的观察矩阵）的逆矩阵），矩阵必须是4*4列主序的矩阵。此参数可以设为空指针。

@@ -2,7 +2,8 @@
 title: "@ohos.enterprise.deviceControl（设备控制管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-devicecontrol"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:22.912203"
+content_hash: "53b339ca62c3"
+synced_at: "2026-07-09T00:59:51.559620"
 ---
 
 # @ohos.enterprise.deviceControl（设备控制管理）

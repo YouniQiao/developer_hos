@@ -2,7 +2,8 @@
 title: "NotificationCommonDef"
 upstream_id: "harmonyos-references/js-apis-inner-notification-notificationcommondef"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:37.298004"
+content_hash: "baffff20bfc2"
+synced_at: "2026-07-09T01:01:28.380351"
 ---
 
 # NotificationCommonDef

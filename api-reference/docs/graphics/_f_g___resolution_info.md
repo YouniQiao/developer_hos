@@ -2,7 +2,8 @@
 title: "FG_ResolutionInfo"
 upstream_id: "harmonyos-references/_f_g___resolution_info"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:13.688473"
+content_hash: "2e5f0f0839a7"
+synced_at: "2026-07-09T01:01:07.852524"
 ---
 
 # FG_ResolutionInfo

@@ -2,7 +2,8 @@
 title: "OH_NativeVSync"
 upstream_id: "harmonyos-references/capi-nativevsync-oh-nativevsync"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:11.383369"
+content_hash: "471971ddd304"
+synced_at: "2026-07-09T01:01:05.090096"
 ---
 
 # OH_NativeVSync

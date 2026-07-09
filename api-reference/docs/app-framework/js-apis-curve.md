@@ -2,7 +2,8 @@
 title: "@ohos.curves (插值计算)"
 upstream_id: "harmonyos-references/js-apis-curve"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:23.885810"
+content_hash: "56cc57b986bc"
+synced_at: "2026-07-09T00:57:31.084767"
 ---
 
 # @ohos.curves (插值计算)
@@ -455,4 +456,4 @@ struct ImageComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230088.gif)
+ ![](./img/zh-cn_image_0000002661612257.gif)

@@ -2,7 +2,8 @@
 title: "ArkUI_NodeAttributeType（EmbeddedComponent组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-embeddedcomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:39.529263"
+content_hash: "6beb015aec56"
+synced_at: "2026-07-09T00:58:36.027419"
 ---
 
 # ArkUI_NodeAttributeType（EmbeddedComponent组件相关属性）

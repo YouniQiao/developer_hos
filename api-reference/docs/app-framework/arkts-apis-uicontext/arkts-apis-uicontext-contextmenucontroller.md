@@ -2,7 +2,8 @@
 title: "Class (ContextMenuController)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-contextmenucontroller"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:20.532740"
+content_hash: "3e236f9d71db"
+synced_at: "2026-07-09T00:57:28.470452"
 ---
 
 # Class (ContextMenuController)
@@ -76,4 +77,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469441.gif)
+ ![](./img/zh-cn_image_0000002661612241.gif)

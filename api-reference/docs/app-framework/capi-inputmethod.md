@@ -2,7 +2,8 @@
 title: "InputMethod"
 upstream_id: "harmonyos-references/capi-inputmethod"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:19.506368"
+content_hash: "ae8ec7a5a6ad"
+synced_at: "2026-07-09T00:59:04.022667"
 ---
 
 # InputMethod

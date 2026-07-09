@@ -2,7 +2,8 @@
 title: "版本兼容适配"
 upstream_id: "harmonyos-references/js-service-widget-version-compatibility"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:23.562948"
+content_hash: "9c0d79d7fc5e"
+synced_at: "2026-07-09T00:58:29.249839"
 ---
 
 # 版本兼容适配

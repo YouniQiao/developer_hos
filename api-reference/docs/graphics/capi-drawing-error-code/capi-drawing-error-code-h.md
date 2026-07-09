@@ -2,7 +2,8 @@
 title: "drawing_error_code.h"
 upstream_id: "harmonyos-references/capi-drawing-error-code-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:59.922589"
+content_hash: "de0120755e94"
+synced_at: "2026-07-09T01:00:55.204214"
 ---
 
 # drawing_error_code.h

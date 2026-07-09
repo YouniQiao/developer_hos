@@ -2,7 +2,8 @@
 title: "hid_ddk_types.h"
 upstream_id: "harmonyos-references/capi-hid-ddk-types-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:31.492420"
+content_hash: "f26e8b6db180"
+synced_at: "2026-07-09T00:59:54.757707"
 ---
 
 # hid_ddk_types.h

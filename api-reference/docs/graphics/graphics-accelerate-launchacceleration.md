@@ -2,7 +2,8 @@
 title: "launchAcceleration（游戏启动加速）"
 upstream_id: "harmonyos-references/graphics-accelerate-launchacceleration"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:12.508505"
+content_hash: "c11cb3030df1"
+synced_at: "2026-07-09T01:01:06.332102"
 ---
 
 # launchAcceleration（游戏启动加速）

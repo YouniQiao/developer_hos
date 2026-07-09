@@ -2,7 +2,8 @@
 title: "OH_AVFormat"
 upstream_id: "harmonyos-references/capi-videoprocessing-oh-avformat"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:42.323918"
+content_hash: "511b978fac27"
+synced_at: "2026-07-09T01:00:44.797100"
 ---
 
 # OH_AVFormat

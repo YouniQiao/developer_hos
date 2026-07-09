@@ -1,9 +1,12 @@
 ---
+
 title: "焦点错误码"
 upstream_id: "harmonyos-references/errorcode-focus"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:00.311021"
+synced_at: "2026-07-09T00:58:48.662196"
+content_hash: "5b71adf63799"
 ---
+
 
 # 焦点错误码
 

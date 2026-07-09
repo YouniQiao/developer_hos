@@ -2,7 +2,8 @@
 title: "NetConn_ConnectionProperties"
 upstream_id: "harmonyos-references/capi-netconnection-netconn-connectionproperties"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:54.131862"
+content_hash: "9b7329adf197"
+synced_at: "2026-07-09T00:59:29.461772"
 ---
 
 # NetConn_ConnectionProperties

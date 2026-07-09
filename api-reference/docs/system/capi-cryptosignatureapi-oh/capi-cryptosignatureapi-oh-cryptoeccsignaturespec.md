@@ -2,7 +2,8 @@
 title: "OH_CryptoEccSignatureSpec"
 upstream_id: "harmonyos-references/capi-cryptosignatureapi-oh-cryptoeccsignaturespec"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:33.301046"
+content_hash: "9ad39a0c5155"
+synced_at: "2026-07-09T00:59:13.854725"
 ---
 
 # OH_CryptoEccSignatureSpec

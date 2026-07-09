@@ -2,7 +2,8 @@
 title: "SuperPrivacyMode（超级隐私模式）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-superprivacy"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:36.306606"
+content_hash: "ecee8b22e376"
+synced_at: "2026-07-09T00:59:15.926388"
 ---
 
 # SuperPrivacyMode（超级隐私模式）

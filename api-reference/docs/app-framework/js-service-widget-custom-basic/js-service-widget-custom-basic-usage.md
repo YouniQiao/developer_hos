@@ -2,7 +2,8 @@
 title: "自定义组件使用说明"
 upstream_id: "harmonyos-references/js-service-widget-custom-basic-usage"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:30.228965"
+content_hash: "f7c2f4a28da3"
+synced_at: "2026-07-09T00:58:31.772338"
 ---
 
 # 自定义组件使用说明

@@ -2,7 +2,8 @@
 title: "skeletonDetection（骨骼点检测）"
 upstream_id: "harmonyos-references/core-vision-skeleton-detection-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:56.958679"
+content_hash: "573ecdbe91c8"
+synced_at: "2026-07-09T01:01:42.313159"
 ---
 
 # skeletonDetection（骨骼点检测）

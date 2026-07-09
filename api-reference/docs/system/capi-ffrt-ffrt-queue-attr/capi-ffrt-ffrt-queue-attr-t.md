@@ -2,7 +2,8 @@
 title: "ffrt_queue_attr_t"
 upstream_id: "harmonyos-references/capi-ffrt-ffrt-queue-attr-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:16.791489"
+content_hash: "32f064f30988"
+synced_at: "2026-07-09T00:59:47.732048"
 ---
 
 # ffrt_queue_attr_t

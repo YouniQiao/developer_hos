@@ -2,7 +2,8 @@
 title: "@ohos.data.unifiedDataChannel (标准化数据通路)"
 upstream_id: "harmonyos-references/js-apis-data-unifieddatachannel"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:04.469420"
+content_hash: "fa2c7cbd68a0"
+synced_at: "2026-07-09T00:57:17.681654"
 ---
 
 # @ohos.data.unifiedDataChannel (标准化数据通路)

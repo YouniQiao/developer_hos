@@ -2,7 +2,8 @@
 title: "OH_AVScreenCapture_CaptureStrategy"
 upstream_id: "harmonyos-references/capi-avscreencapture-oh-avscreencapture-capturestrategy"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:41.452670"
+content_hash: "776075e673a8"
+synced_at: "2026-07-09T01:00:44.321078"
 ---
 
 # OH_AVScreenCapture_CaptureStrategy

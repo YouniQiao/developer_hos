@@ -2,7 +2,8 @@
 title: "OH_AudioBuffer"
 upstream_id: "harmonyos-references/capi-avscreencapture-oh-audiobuffer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:40.686640"
+content_hash: "151d55930b74"
+synced_at: "2026-07-09T01:00:43.971012"
 ---
 
 # OH_AudioBuffer

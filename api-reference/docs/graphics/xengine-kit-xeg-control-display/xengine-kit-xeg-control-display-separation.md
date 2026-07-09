@@ -2,7 +2,8 @@
 title: "xeg_control_display_separation.h"
 upstream_id: "harmonyos-references/xengine-kit-xeg-control-display-separation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:16.369173"
+content_hash: "d99f3aae8bf1"
+synced_at: "2026-07-09T01:01:10.005931"
 ---
 
 # xeg_control_display_separation.h

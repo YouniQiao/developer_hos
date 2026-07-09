@@ -2,7 +2,8 @@
 title: "@hms.core.account.extendService (华为账号增强服务)"
 upstream_id: "harmonyos-references/account-api-extendservice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:17.795648"
+content_hash: "dbaeabadaaa2"
+synced_at: "2026-07-09T01:01:12.055058"
 ---
 
 # @hms.core.account.extendService (华为账号增强服务)
@@ -199,7 +200,7 @@ verifyAccount(context: common.Context, request: VerifyRequest, callback: AsyncCa
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -281,7 +282,7 @@ verifyAccount(context: common.Context, request: VerifyRequest): Promise<VerifyRe
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -351,7 +352,7 @@ startAccountCenter(context: common.Context, callback: AsyncCallback<void>): void
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -418,7 +419,7 @@ startAccountCenter(context: common.Context): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |

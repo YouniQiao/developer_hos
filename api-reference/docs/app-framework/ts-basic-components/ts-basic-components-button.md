@@ -2,7 +2,8 @@
 title: "Button"
 upstream_id: "harmonyos-references/ts-basic-components-button"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:04.024097"
+content_hash: "703e728a78bb"
+synced_at: "2026-07-09T00:57:51.688496"
 ---
 
 # Button
@@ -543,7 +544,7 @@ struct ButtonExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349787.gif)
+ ![](./img/zh-cn_image_0000002661612549.gif)
 
 #### [h2]示例2 （为按钮添加渲染控制）
 
@@ -574,7 +575,7 @@ struct SwipeGestureExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230374.gif)
+ ![](./img/zh-cn_image_0000002631413258.gif)
 
 #### [h2]示例3 （设置按钮文本样式）
 
@@ -615,7 +616,7 @@ struct ButtonTestDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070464.png)
+ ![](./img/zh-cn_image_0000002661732491.png)
 
 #### [h2]示例4（设置不同尺寸按钮的重要程度）
 
@@ -653,7 +654,7 @@ struct ButtonExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469741.jpeg)
+ ![](./img/zh-cn_image_0000002631253368.jpeg)
 
 #### [h2]示例5（设置按钮的角色）
 
@@ -682,7 +683,7 @@ struct ButtonExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349789.jpeg)
+ ![](./img/zh-cn_image_0000002661612551.jpeg)
 
 #### [h2]示例6（设置自定义样式按钮）
 
@@ -752,7 +753,7 @@ struct ButtonExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230376.gif)
+ ![](./img/zh-cn_image_0000002631413260.gif)
 
 #### [h2]示例7（设置圆角矩形按钮）
 
@@ -793,7 +794,7 @@ struct ButtonExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070466.jpeg)
+ ![](./img/zh-cn_image_0000002661732493.jpeg)
 
 #### [h2]示例8（设置label文本水平对齐方式）
 
@@ -818,4 +819,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469743.jpeg)
+ ![](./img/zh-cn_image_0000002631253370.jpeg)

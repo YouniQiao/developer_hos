@@ -1,9 +1,12 @@
 ---
+
 title: "动态属性设置错误码"
 upstream_id: "harmonyos-references/errorcode-attributemodifier"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:01.352594"
+synced_at: "2026-07-09T00:58:49.109442"
+content_hash: "ffdc6eb4e04e"
 ---
+
 
 # 动态属性设置错误码
 

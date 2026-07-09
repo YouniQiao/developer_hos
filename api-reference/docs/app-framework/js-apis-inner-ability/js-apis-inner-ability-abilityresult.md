@@ -2,7 +2,8 @@
 title: "AbilityResult"
 upstream_id: "harmonyos-references/js-apis-inner-ability-abilityresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:51.682357"
+content_hash: "6edd990118c0"
+synced_at: "2026-07-09T00:57:08.121729"
 ---
 
 # AbilityResult

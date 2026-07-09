@@ -2,7 +2,8 @@
 title: "Interface (ImagePacker)"
 upstream_id: "harmonyos-references/arkts-apis-image-imagepacker"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:22.722518"
+content_hash: "2a2b4a5675d8"
+synced_at: "2026-07-09T01:00:30.160609"
 ---
 
 # Interface (ImagePacker)

@@ -2,7 +2,8 @@
 title: "申请退款"
 upstream_id: "harmonyos-references/payment-partner-pas-refund"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:43.194230"
+content_hash: "855f9bea2289"
+synced_at: "2026-07-09T01:01:32.949168"
 ---
 
 # 申请退款

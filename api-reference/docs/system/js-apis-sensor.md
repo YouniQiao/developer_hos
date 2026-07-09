@@ -2,7 +2,8 @@
 title: "@ohos.sensor (传感器)"
 upstream_id: "harmonyos-references/js-apis-sensor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:40.562430"
+content_hash: "41e911ea345f"
+synced_at: "2026-07-09T01:00:01.602179"
 ---
 
 # @ohos.sensor (传感器)

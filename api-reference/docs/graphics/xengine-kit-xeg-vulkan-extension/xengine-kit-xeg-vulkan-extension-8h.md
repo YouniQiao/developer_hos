@@ -2,7 +2,8 @@
 title: "xeg_vulkan_extension.h"
 upstream_id: "harmonyos-references/xengine-kit-xeg-vulkan-extension-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:15.803461"
+content_hash: "70902403667c"
+synced_at: "2026-07-09T01:01:09.580757"
 ---
 
 # xeg_vulkan_extension.h

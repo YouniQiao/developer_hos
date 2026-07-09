@@ -2,7 +2,8 @@
 title: "start_options.h"
 upstream_id: "harmonyos-references/capi-start-options-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:58.336015"
+content_hash: "1a97a5fcb407"
+synced_at: "2026-07-09T00:57:13.291339"
 ---
 
 # start_options.h

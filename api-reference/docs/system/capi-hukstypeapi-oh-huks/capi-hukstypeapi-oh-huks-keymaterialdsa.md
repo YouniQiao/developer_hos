@@ -2,7 +2,8 @@
 title: "OH_Huks_KeyMaterialDsa"
 upstream_id: "harmonyos-references/capi-hukstypeapi-oh-huks-keymaterialdsa"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:44.435021"
+content_hash: "7a7bc21a0e64"
+synced_at: "2026-07-09T00:59:21.836229"
 ---
 
 # OH_Huks_KeyMaterialDsa

@@ -2,7 +2,8 @@
 title: "resultSet（结果集）"
 upstream_id: "harmonyos-references/js-apis-data-resultset"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:05.333527"
+content_hash: "39576fc12352"
+synced_at: "2026-07-09T00:57:17.902162"
 ---
 
 # resultSet（结果集）

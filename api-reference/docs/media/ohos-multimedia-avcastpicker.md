@@ -2,7 +2,8 @@
 title: "@ohos.multimedia.avCastPicker (投播组件)"
 upstream_id: "harmonyos-references/ohos-multimedia-avcastpicker"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:07.878488"
+content_hash: "e7fede270aa3"
+synced_at: "2026-07-09T01:00:18.635558"
 ---
 
 # @ohos.multimedia.avCastPicker (投播组件)
@@ -49,12 +50,12 @@ AVCastPicker({
 
 | 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| normalColor11+ | Color | number | string | 否 | @Prop | 指正常状态下投播组件的颜色。 未设置将采用colorMode下的颜色设置。 |
-| activeColor11+ | Color | number | string | 否 | @Prop | 指设备切换成功状态下投播组件的颜色。未设置系统将优先根据normalColor的颜色匹配；如果normalColor也未设置，将采用colorMode下的颜色设置。 |
+| normalColor11+ | Color | number | string | 否 | @Prop | 正常状态下投播组件的颜色。 未设置时，将采用colorMode下的颜色设置。 |
+| activeColor11+ | Color | number | string | 否 | @Prop | 设备连接成功状态下投播组件的颜色。 未设置时，系统将优先根据normalColor的颜色匹配；如果normalColor也未设置，将采用colorMode下的颜色设置。 |
 | pickerStyle12+ | [AVCastPickerStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-avcastpickerparam#avcastpickerstyle12) | 否 | @Prop | 投播样式。 - 当sessionType是audio或者video时，默认值为STYLE_PANEL。 - 当sessionType是voice_call或者video_call时，默认值为STYLE_MENU，且不可修改为STYLE_PANEL。 |
 | colorMode12+ | [AVCastPickerColorMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-avcastpickerparam#avcastpickercolormode12) | 否 | @Prop | 显示模式。默认值为AUTO。 - 当colorMode设置为AUTO时，跟随系统的深浅色模式的默认色值。 - 当colorMode设置为DARK、LIGHT时，使用对应模式的系统预设色值。 |
 | sessionType12+ | string | 否 | @Prop | 会话类型，可参考[AVSessionType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-t#avsessiontype10)。默认值为当前应用创建的AVSessionType。 |
-| customPicker12+ | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | @Prop | 自定义样式。建议应用自定义组件样式，可有效提升组件显示速度。 |
+| customPicker12+ | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | @Prop | 自定义样式。建议使用自定义组件样式，可有效提升组件显示速度。 |
 | onStateChange11+ | (state: [AVCastPickerState](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-avcastpickerparam#avcastpickerstate)) => void | 否 | - | 投播状态更改回调。 |
 
 #### 事件

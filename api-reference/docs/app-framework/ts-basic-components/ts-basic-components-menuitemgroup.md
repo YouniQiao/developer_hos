@@ -2,7 +2,8 @@
 title: "MenuItemGroup"
 upstream_id: "harmonyos-references/ts-basic-components-menuitemgroup"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:39.858427"
+content_hash: "8e32033b241c"
+synced_at: "2026-07-09T00:58:07.224290"
 ---
 
 # MenuItemGroup

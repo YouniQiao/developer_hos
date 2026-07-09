@@ -2,7 +2,8 @@
 title: "剪贴板错误码"
 upstream_id: "harmonyos-references/errorcode-pasteboard"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:13.254210"
+content_hash: "02e04d0b29cd"
+synced_at: "2026-07-09T00:59:44.682054"
 ---
 
 # 剪贴板错误码

@@ -2,7 +2,8 @@
 title: "FormLink"
 upstream_id: "harmonyos-references/ts-container-formlink"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:47.164582"
+content_hash: "d6976ef5b8f9"
+synced_at: "2026-07-09T00:58:10.485288"
 ---
 
 # FormLink
@@ -122,7 +123,7 @@ struct FormLinkDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470135.png)
+ ![](./img/zh-cn_image_0000002631413660.png)
 
 待跳转应用 [module.json5](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#skills标签) uris 配置示例：
 

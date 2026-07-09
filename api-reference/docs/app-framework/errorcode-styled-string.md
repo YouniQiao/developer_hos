@@ -1,9 +1,12 @@
 ---
+
 title: "属性字符串错误码"
 upstream_id: "harmonyos-references/errorcode-styled-string"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:00.665776"
+synced_at: "2026-07-09T00:58:48.783665"
+content_hash: "075964d1130b"
 ---
+
 
 # 属性字符串错误码
 

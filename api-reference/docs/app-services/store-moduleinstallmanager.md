@@ -2,7 +2,8 @@
 title: "moduleInstallManager (产品特性按需分发)"
 upstream_id: "harmonyos-references/store-moduleinstallmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:21.878570"
+content_hash: "66b89483312f"
+synced_at: "2026-07-09T01:01:15.175665"
 ---
 
 # moduleInstallManager (产品特性按需分发)

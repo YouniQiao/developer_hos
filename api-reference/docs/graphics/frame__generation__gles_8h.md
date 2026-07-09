@@ -2,7 +2,8 @@
 title: "frame_generation_gles.h"
 upstream_id: "harmonyos-references/frame__generation__gles_8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:12.845054"
+content_hash: "563f2cbc4965"
+synced_at: "2026-07-09T01:01:06.809386"
 ---
 
 # frame_generation_gles.h

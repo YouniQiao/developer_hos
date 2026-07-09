@@ -2,7 +2,8 @@
 title: "OH_Drawing_PathEffect"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-patheffect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:09.579609"
+content_hash: "8672e147927a"
+synced_at: "2026-07-09T01:01:03.573227"
 ---
 
 # OH_Drawing_PathEffect

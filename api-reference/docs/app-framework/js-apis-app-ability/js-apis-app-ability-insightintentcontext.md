@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.InsightIntentContext (意图执行上下文)"
 upstream_id: "harmonyos-references/js-apis-app-ability-insightintentcontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:47.062660"
+content_hash: "3eac49bb77f3"
+synced_at: "2026-07-09T00:57:04.450180"
 ---
 
 # @ohos.app.ability.InsightIntentContext (意图执行上下文)

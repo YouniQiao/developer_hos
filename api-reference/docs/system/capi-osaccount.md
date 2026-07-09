@@ -2,7 +2,8 @@
 title: "OsAccount"
 upstream_id: "harmonyos-references/capi-osaccount"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:10.502591"
+content_hash: "8f3abefdc133"
+synced_at: "2026-07-09T00:59:42.507666"
 ---
 
 # OsAccount

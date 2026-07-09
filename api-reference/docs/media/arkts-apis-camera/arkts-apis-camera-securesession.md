@@ -2,7 +2,8 @@
 title: "Interface (SecureSession)"
 upstream_id: "harmonyos-references/arkts-apis-camera-securesession"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:12.932878"
+content_hash: "9b07bb29be73"
+synced_at: "2026-07-09T01:00:23.037430"
 ---
 
 # Interface (SecureSession)

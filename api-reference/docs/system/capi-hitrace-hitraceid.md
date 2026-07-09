@@ -2,7 +2,8 @@
 title: "HiTraceId"
 upstream_id: "harmonyos-references/capi-hitrace-hitraceid"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:49.975229"
+content_hash: "489a8cae6694"
+synced_at: "2026-07-09T01:00:05.600293"
 ---
 
 # HiTraceId

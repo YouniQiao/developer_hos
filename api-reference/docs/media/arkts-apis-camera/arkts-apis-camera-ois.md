@@ -2,7 +2,8 @@
 title: "Interface (OIS)"
 upstream_id: "harmonyos-references/arkts-apis-camera-ois"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:12.389889"
+content_hash: "eae69d4ea0ce"
+synced_at: "2026-07-09T01:00:22.336636"
 ---
 
 # Interface (OIS)

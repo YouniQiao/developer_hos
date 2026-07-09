@@ -2,7 +2,8 @@
 title: "Location_RequestConfig"
 upstream_id: "harmonyos-references/capi-location-location-requestconfig"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:31.578371"
+content_hash: "462d81038278"
+synced_at: "2026-07-09T01:01:23.592185"
 ---
 
 # Location_RequestConfig

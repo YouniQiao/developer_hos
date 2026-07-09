@@ -2,7 +2,8 @@
 title: "OH_AudioManager"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audiomanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:57.330371"
+content_hash: "cb126ce06ade"
+synced_at: "2026-07-09T01:00:10.744502"
 ---
 
 # OH_AudioManager

@@ -2,7 +2,8 @@
 title: "Rcp_ResponseCookies"
 upstream_id: "harmonyos-references/_rcp___response_cookies"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:01.525950"
+content_hash: "b4e3ddd6d386"
+synced_at: "2026-07-09T00:59:35.429762"
 ---
 
 # Rcp_ResponseCookies

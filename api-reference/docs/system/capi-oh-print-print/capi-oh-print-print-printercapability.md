@@ -2,7 +2,8 @@
 title: "Print_PrinterCapability"
 upstream_id: "harmonyos-references/capi-oh-print-print-printercapability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:12.279304"
+content_hash: "ad7c14ac3789"
+synced_at: "2026-07-09T00:59:44.025274"
 ---
 
 # Print_PrinterCapability

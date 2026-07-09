@@ -2,7 +2,8 @@
 title: "site（地点搜索）"
 upstream_id: "harmonyos-references/map-site"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:35.520817"
+content_hash: "8d83f4221657"
+synced_at: "2026-07-09T01:01:27.668654"
 ---
 
 # site（地点搜索）

@@ -2,7 +2,8 @@
 title: "OH_EqualizerFrequencyBandGains"
 upstream_id: "harmonyos-references/capi-ohaudiosuite-oh-equalizerfrequencybandgains"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:59.576381"
+content_hash: "cc2fe69ffd77"
+synced_at: "2026-07-09T01:00:11.899092"
 ---
 
 # OH_EqualizerFrequencyBandGains

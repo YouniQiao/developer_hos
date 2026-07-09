@@ -2,7 +2,8 @@
 title: "@ohos.security.asset (关键资产存储服务)"
 upstream_id: "harmonyos-references/js-apis-asset"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:28.408590"
+content_hash: "7c721e1351a3"
+synced_at: "2026-07-09T00:59:10.735972"
 ---
 
 # @ohos.security.asset (关键资产存储服务)
@@ -163,7 +164,7 @@ batchAdd(attributesArray: Array<AssetMap>): Promise<BatchResult>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| attributesArray | Array | 是 | 待新增关键资产的属性集合数组，包括关键资产明文、访问控制属性、自定义数据等。 |
+| attributesArray | Array | 是 | 待新增关键资产的属性集合数组，包括关键资产明文、访问控制属性、自定义数据等。数组长度最大值为100。 |
 
 返回值：
 
@@ -173,7 +174,7 @@ batchAdd(attributesArray: Array<AssetMap>): Promise<BatchResult>
 
 错误码：
 
-以下错误码的详细介绍请参见[关键资产存储服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-asset)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[关键资产存储服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-asset)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -346,7 +347,7 @@ batchRemove(assetsToBeRemoved: Array<AssetMap>): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| assetsToBeRemoved | Array | 是 | 待删除关键资产的搜索条件数组，如别名、访问控制属性、自定义数据等。 |
+| assetsToBeRemoved | Array | 是 | 待删除关键资产的搜索条件数组，如别名、访问控制属性、自定义数据等。数组长度最大值为100。 |
 
 返回值：
 
@@ -356,7 +357,7 @@ batchRemove(assetsToBeRemoved: Array<AssetMap>): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[关键资产存储服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-asset)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[关键资产存储服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-asset)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -532,8 +533,8 @@ batchUpdate(sourceAttributes: Array<AssetMap>, destAttributes: Array<AssetMap>):
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| sourceAttributes | Array | 是 | 待更新关键资产的搜索条件数组。 |
-| destAttributes | Array | 是 | 待更新关键资产的属性集合数组。 |
+| sourceAttributes | Array | 是 | 待更新关键资产的搜索条件数组。数组最大长度为100，数组中所有元素的[Tag.GROUP_ID](#tag)和[Tag.REQUIRE_ATTR_ENCRYPTED](#tag)属性值必须相同。 |
+| destAttributes | Array | 是 | 待更新关键资产的属性集合数组。数组最大长度为100，且应与sourceAttributes长度保持一致，数组中所有元素的[Tag.GROUP_ID](#tag)和[Tag.REQUIRE_ATTR_ENCRYPTED](#tag)属性值必须相同。 |
 
 返回值：
 
@@ -543,7 +544,7 @@ batchUpdate(sourceAttributes: Array<AssetMap>, destAttributes: Array<AssetMap>):
 
 错误码：
 
-以下错误码的详细介绍请参见[关键资产存储服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-asset)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[关键资产存储服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-asset)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -646,7 +647,7 @@ function stringToArray(str: string): Uint8Array {
 let query: asset.AssetMap = new Map();
 query.set(asset.Tag.ALIAS, stringToArray('demo_alias'));
 asset.preQuery(query).then((challenge: Uint8Array) => {
-  console.info(`Succeeded in pre-querying Asset, the challenge is: `, challenge);
+  console.info(`Succeeded in pre-querying Asset. Challenge is: ${challenge}`);
 });
 ```
 
@@ -961,7 +962,7 @@ querySyncResult(query: AssetMap): Promise<SyncResult>
 
 错误码：
 
-以下错误码的详细介绍请参见[关键资产存储服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-asset)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[关键资产存储服务错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-asset)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1004,13 +1005,13 @@ asset.querySyncResult(query).then((res: asset.SyncResult) => {
 | SECRET | TagType.BYTES | 0x01 | 关键资产明文。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | ALIAS | TagType.BYTES | 0x02 | 关键资产别名，每条关键资产的唯一索引。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | ACCESSIBILITY | TagType.NUMBER | 0x03 | 基于锁屏状态的访问控制。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
-| REQUIRE_PASSWORD_SET | TagType.BOOL | 0x04 | 是否仅在设置了锁屏密码的情况下，可访问关键资产。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
+| REQUIRE_PASSWORD_SET | TagType.BOOL | 0x04 | 是否仅在设置了锁屏密码的情况下，可访问关键资产。true表示仅在设置了锁屏密码时可访问，false表示不受锁屏密码限制。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | AUTH_TYPE | TagType.NUMBER | 0x05 | 访问关键资产所需的用户认证类型。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
-| AUTH_VALIDITY_PERIOD | TagType.NUMBER | 0x06 | 用户认证的有效期。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
+| AUTH_VALIDITY_PERIOD | TagType.NUMBER | 0x06 | 用户认证的有效期，单位为秒。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | AUTH_CHALLENGE | TagType.BYTES | 0x07 | 用户认证的挑战值。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | AUTH_TOKEN | TagType.BYTES | 0x08 | 用户认证通过的授权令牌。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | SYNC_TYPE | TagType.NUMBER | 0x10 | 关键资产支持的同步类型。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
-| IS_PERSISTENT | TagType.BOOL | 0x11 | 在应用卸载时是否保留关键资产。 |
+| IS_PERSISTENT | TagType.BOOL | 0x11 | 在应用卸载时是否保留关键资产。true表示应用卸载时保留关键资产，false表示不保留关键资产。 |
 | DATA_LABEL_CRITICAL_1 | TagType.BYTES | 0x20 | 关键资产附属信息，内容由业务自定义且**有完整性保护**。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | DATA_LABEL_CRITICAL_2 | TagType.BYTES | 0x21 | 关键资产附属信息，内容由业务自定义且**有完整性保护**。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | DATA_LABEL_CRITICAL_3 | TagType.BYTES | 0x22 | 关键资产附属信息，内容由业务自定义且**有完整性保护**。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
@@ -1030,8 +1031,8 @@ asset.querySyncResult(query).then((res: asset.SyncResult) => {
 | CONFLICT_RESOLUTION | TagType.NUMBER | 0x44 | 新增关键资产时的冲突（如：别名相同）处理策略。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | UPDATE_TIME12+ | TagType.BYTES | 0x45 | 数据的更新时间（时间戳形式）。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | OPERATION_TYPE12+ | TagType.NUMBER | 0x46 | 附加的操作类型。 |
-| REQUIRE_ATTR_ENCRYPTED14+ | TagType.BOOL | 0x47 | 是否加密业务自定义附属信息。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
-| GROUP_ID18+ | TagType.BYTES | 0x48 | 关键资产所属群组。 |
+| REQUIRE_ATTR_ENCRYPTED14+ | TagType.BOOL | 0x47 | 是否加密业务自定义附属信息。true表示加密业务自定义附属信息，false表示不加密。 **说明：** 批量新增、删除、更新关键资产时，数组中的每项必须具有相同的REQUIRE_ATTR_ENCRYPTED属性值。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
+| GROUP_ID18+ | TagType.BYTES | 0x48 | 关键资产所属群组。 **说明：** 批量新增、删除、更新关键资产时，数组中的每项必须具有相同的GROUP_ID属性值。 |
 | WRAP_TYPE18+ | TagType.NUMBER | 0x49 | 关键资产支持的加密导入导出类型。 |
 
 #### Value

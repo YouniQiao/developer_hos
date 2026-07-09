@@ -2,7 +2,8 @@
 title: "OH_CryptoRand"
 upstream_id: "harmonyos-references/capi-cryptorandapi-oh-cryptorand"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:33.100580"
+content_hash: "d35a0a1e7e7b"
+synced_at: "2026-07-09T00:59:13.636378"
 ---
 
 # OH_CryptoRand

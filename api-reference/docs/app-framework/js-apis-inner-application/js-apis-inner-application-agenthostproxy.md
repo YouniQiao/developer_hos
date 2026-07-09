@@ -2,7 +2,8 @@
 title: "AgentHostProxy"
 upstream_id: "harmonyos-references/js-apis-inner-application-agenthostproxy"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:52.750080"
+content_hash: "43256cc7dbdc"
+synced_at: "2026-07-09T00:57:08.676841"
 ---
 
 # AgentHostProxy

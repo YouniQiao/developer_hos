@@ -2,7 +2,8 @@
 title: "CloudDisk_DisplayNameInfo"
 upstream_id: "harmonyos-references/capi-clouddisk-clouddisk-displaynameinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:15.847252"
+content_hash: "11e9c24dadc0"
+synced_at: "2026-07-09T00:59:01.426151"
 ---
 
 # CloudDisk_DisplayNameInfo

@@ -2,7 +2,8 @@
 title: "DriverExtensionContext"
 upstream_id: "harmonyos-references/js-apis-inner-application-driverextensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:30.242712"
+content_hash: "10bc30d029e2"
+synced_at: "2026-07-09T00:59:54.228895"
 ---
 
 # DriverExtensionContext

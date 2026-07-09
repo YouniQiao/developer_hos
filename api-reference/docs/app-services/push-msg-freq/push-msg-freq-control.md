@@ -1,9 +1,12 @@
 ---
+
 title: "消息频控"
 upstream_id: "harmonyos-references/push-msg-freq-control"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:50.530813"
+synced_at: "2026-07-09T01:01:38.064699"
+content_hash: "ae9380c8ac82"
 ---
+
 
 # 消息频控
 

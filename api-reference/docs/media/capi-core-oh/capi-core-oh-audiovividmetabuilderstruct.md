@@ -2,7 +2,8 @@
 title: "OH_AudioVividMetaBuilderStruct"
 upstream_id: "harmonyos-references/capi-core-oh-audiovividmetabuilderstruct"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:05.122113"
+content_hash: "3d728cde1c17"
+synced_at: "2026-07-09T01:00:16.479961"
 ---
 
 # OH_AudioVividMetaBuilderStruct

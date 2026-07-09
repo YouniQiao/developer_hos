@@ -2,7 +2,8 @@
 title: "ServiceCollaboration_SelectInfoV2"
 upstream_id: "harmonyos-references/servicecollaboration-selectinfov2"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:04.237844"
+content_hash: "ce4d6aac2e25"
+synced_at: "2026-07-09T00:59:37.471774"
 ---
 
 # ServiceCollaboration_SelectInfoV2
@@ -60,7 +61,7 @@ ServiceCollaborationFilterType ServiceCollaboration_SelectInfo::serviceFilterTyp
 #### [h2]uri
 
 ```
-uint32_t ServiceCollaboration_SelectInfo::uri[SERVICE_COLLABORATION_URI_MAXLENGTH]
+char ServiceCollaboration_SelectInfo::uri[SERVICE_COLLABORATION_URI_MAXLENGTH]
 ```
  描述
 

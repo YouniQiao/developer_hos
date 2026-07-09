@@ -2,7 +2,8 @@
 title: "@ohos.app.form.formInfo (formInfo)"
 upstream_id: "harmonyos-references/js-apis-app-form-forminfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:17.615147"
+content_hash: "c894a2772005"
+synced_at: "2026-07-09T00:59:03.239908"
 ---
 
 # @ohos.app.form.formInfo (formInfo)
@@ -254,7 +255,7 @@ import { formInfo } from '@kit.FormKit';
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
-系统能力：SystemCapability.Ability.Form
+系统能力： SystemCapability.Ability.Form
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |

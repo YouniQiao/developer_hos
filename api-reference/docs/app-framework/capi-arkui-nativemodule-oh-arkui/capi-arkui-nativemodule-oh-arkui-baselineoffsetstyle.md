@@ -2,7 +2,8 @@
 title: "OH_ArkUI_BaselineOffsetStyle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-arkui-baselineoffsetstyle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:55.545823"
+content_hash: "adfa9290a20b"
+synced_at: "2026-07-09T00:58:45.229586"
 ---
 
 # OH_ArkUI_BaselineOffsetStyle

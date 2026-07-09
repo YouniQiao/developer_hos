@@ -2,7 +2,8 @@
 title: "@ohos.calendarManager (日程管理能力)"
 upstream_id: "harmonyos-references/js-apis-calendarmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:22.996447"
+content_hash: "b457b5c14ea2"
+synced_at: "2026-07-09T01:01:16.219677"
 ---
 
 # @ohos.calendarManager (日程管理能力)

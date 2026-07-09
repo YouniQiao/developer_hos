@@ -2,7 +2,8 @@
 title: "NativeResourceManager"
 upstream_id: "harmonyos-references/capi-rawfile-nativeresourcemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:24.198493"
+content_hash: "5960feb25bd6"
+synced_at: "2026-07-09T00:59:08.343341"
 ---
 
 # NativeResourceManager

@@ -2,7 +2,8 @@
 title: "Class (FontSizeAnimation)"
 upstream_id: "harmonyos-references/map-map-fontsizeanimation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:33.351623"
+content_hash: "73758877c7ef"
+synced_at: "2026-07-09T01:01:25.404726"
 ---
 
 # Class (FontSizeAnimation)

@@ -2,7 +2,8 @@
 title: "Vulkan开发概述"
 upstream_id: "harmonyos-references/vulkan-overview"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:05.384980"
+content_hash: "3354ed42de7e"
+synced_at: "2026-07-09T01:01:48.943611"
 ---
 
 # Vulkan开发概述

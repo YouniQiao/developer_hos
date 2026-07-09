@@ -2,7 +2,8 @@
 title: "@ohos.net.policy (网络策略管理)"
 upstream_id: "harmonyos-references/js-apis-net-policy"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:51.464863"
+content_hash: "9a0d5b435008"
+synced_at: "2026-07-09T00:59:27.188973"
 ---
 
 # @ohos.net.policy (网络策略管理)

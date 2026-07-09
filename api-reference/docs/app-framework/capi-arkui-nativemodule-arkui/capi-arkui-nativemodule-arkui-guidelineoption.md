@@ -2,7 +2,8 @@
 title: "ArkUI_GuidelineOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-guidelineoption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:53.229237"
+content_hash: "3e5dc3e0b906"
+synced_at: "2026-07-09T00:58:43.522292"
 ---
 
 # ArkUI_GuidelineOption

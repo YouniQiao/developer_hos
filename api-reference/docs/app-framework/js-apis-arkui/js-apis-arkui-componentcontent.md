@@ -2,7 +2,8 @@
 title: "ComponentContent"
 upstream_id: "harmonyos-references/js-apis-arkui-componentcontent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:26.028352"
+content_hash: "9d7fc69c5d4d"
+synced_at: "2026-07-09T00:57:32.171315"
 ---
 
 # ComponentContent
@@ -148,7 +149,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469477.gif)
+ ![](./img/zh-cn_image_0000002661732219.gif)
 
 #### [h2]update
 
@@ -217,7 +218,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349525.gif)
+ ![](./img/zh-cn_image_0000002631253096.gif)
 
 #### [h2]reuse
 
@@ -416,7 +417,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230112.gif)
+ ![](./img/zh-cn_image_0000002661612281.gif)
 
 从API版本26.0.0开始，ComponentContent中的自定义组件支持V2组件复用。
 
@@ -664,7 +665,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070202.gif)
+ ![](./img/zh-cn_image_0000002631412988.gif)
 
 #### [h2]updateConfiguration
 
@@ -777,7 +778,7 @@ struct FrameNodeTypeTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469479.gif)
+ ![](./img/zh-cn_image_0000002661732221.gif)
 
 #### [h2]isDisposed20+
 
@@ -868,7 +869,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349527.gif)
+ ![](./img/zh-cn_image_0000002631253100.gif)
 
 #### [h2]inheritFreezeOptions20+
 
@@ -1075,7 +1076,7 @@ struct TextBuilder {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230114.gif)
+ ![](./img/zh-cn_image_0000002661612283.gif)
 
 #### ReactiveComponentContent22+
 
@@ -1165,7 +1166,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469477.gif)
+ ![](./img/zh-cn_image_0000002661732219.gif)
 
 #### [h2]reuse22+
 
@@ -1372,7 +1373,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230112.gif)
+ ![](./img/zh-cn_image_0000002661612281.gif)
 
 从API版本26.0.0开始，ReactiveComponentContent中的自定义组件支持V2组件复用。
 
@@ -1662,7 +1663,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070204.gif)
+ ![](./img/zh-cn_image_0000002631412990.gif)
 
 #### [h2]updateConfiguration22+
 
@@ -1779,7 +1780,7 @@ struct FrameNodeTypeTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469479.gif)
+ ![](./img/zh-cn_image_0000002661732221.gif)
 
 #### [h2]flushState22+
 
@@ -1902,7 +1903,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469481.gif)
+ ![](./img/zh-cn_image_0000002661732223.gif)
 
 #### [h2]inheritFreezeOptions22+
 
@@ -2105,7 +2106,7 @@ struct TextBuilder {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349529.gif)
+ ![](./img/zh-cn_image_0000002631253102.gif)
 
 #### [h2]isDisposed22+
 
@@ -2246,4 +2247,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230116.gif)
+ ![](./img/zh-cn_image_0000002661612285.gif)

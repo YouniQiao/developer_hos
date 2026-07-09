@@ -2,7 +2,8 @@
 title: "ImagePacker_Opts_"
 upstream_id: "harmonyos-references/capi-image-imagepacker-opts-"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:30.225344"
+content_hash: "5e8b67839420"
+synced_at: "2026-07-09T01:00:35.582384"
 ---
 
 # ImagePacker_Opts_

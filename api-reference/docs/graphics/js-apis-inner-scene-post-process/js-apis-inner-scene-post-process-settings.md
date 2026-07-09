@@ -2,7 +2,8 @@
 title: "ScenePostProcessSettings"
 upstream_id: "harmonyos-references/js-apis-inner-scene-post-process-settings"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:12.113220"
+content_hash: "b3194e8a4e85"
+synced_at: "2026-07-09T01:01:05.919915"
 ---
 
 # ScenePostProcessSettings

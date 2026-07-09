@@ -2,7 +2,8 @@
 title: "DID数字身份服务"
 upstream_id: "harmonyos-references/errorcode-onlineauthentication-did"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:38.901329"
+content_hash: "80f8fbed0856"
+synced_at: "2026-07-09T00:59:17.687324"
 ---
 
 # DID数字身份服务

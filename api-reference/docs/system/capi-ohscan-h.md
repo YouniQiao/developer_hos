@@ -2,7 +2,8 @@
 title: "ohscan.h"
 upstream_id: "harmonyos-references/capi-ohscan-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:11.661919"
+content_hash: "664826670773"
+synced_at: "2026-07-09T00:59:43.532744"
 ---
 
 # ohscan.h

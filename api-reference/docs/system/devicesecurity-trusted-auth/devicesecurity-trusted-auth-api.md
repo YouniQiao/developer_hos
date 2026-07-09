@@ -2,7 +2,8 @@
 title: "TrustedAuthentication（数字盾服务）"
 upstream_id: "harmonyos-references/devicesecurity-trusted-auth-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:35.472427"
+content_hash: "a4c3eac7ecff"
+synced_at: "2026-07-09T00:59:15.793900"
 ---
 
 # TrustedAuthentication（数字盾服务）

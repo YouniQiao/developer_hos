@@ -2,7 +2,8 @@
 title: "context.h"
 upstream_id: "harmonyos-references/capi-abilityruntime-context-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:58.990177"
+content_hash: "e0528e4a55d7"
+synced_at: "2026-07-09T00:57:13.166856"
 ---
 
 # context.h

@@ -2,7 +2,8 @@
 title: "Interface (MediaAssetProgressHandler)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-mediaassetprogresshandler"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:44.503554"
+content_hash: "8ee8712a1420"
+synced_at: "2026-07-09T01:00:46.669532"
 ---
 
 # Interface (MediaAssetProgressHandler)

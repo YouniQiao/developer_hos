@@ -2,7 +2,8 @@
 title: "transient_task_type.h"
 upstream_id: "harmonyos-references/capi-transient-task-type-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:10.961133"
+content_hash: "6fe1948cfd32"
+synced_at: "2026-07-09T00:58:57.573366"
 ---
 
 # transient_task_type.h

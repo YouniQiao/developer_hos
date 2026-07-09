@@ -2,7 +2,8 @@
 title: "InputMethod_TextEditorProxy"
 upstream_id: "harmonyos-references/capi-inputmethod-inputmethod-texteditorproxy"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:20.514782"
+content_hash: "96c5161f8da1"
+synced_at: "2026-07-09T00:59:05.410923"
 ---
 
 # InputMethod_TextEditorProxy

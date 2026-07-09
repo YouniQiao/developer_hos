@@ -2,12 +2,15 @@
 title: "Class (ProxyRule)"
 upstream_id: "harmonyos-references/arkts-apis-webview-proxyrule"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:03.141089"
+content_hash: "bed50bb28046"
+synced_at: "2026-07-09T00:58:50.688600"
 ---
 
 # Class (ProxyRule)
 
-[insertProxyRule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-proxyconfig#insertproxyrule15)中使用的代理规则。
+ProxyRule是ArkWeb框架中用于表示代理规则只读信息的类，通过[getProxyRules](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-proxyconfig#getproxyrules15)方法获取。当开发者通过ProxyConfig配置了代理规则后，可通过getProxyRules获取已配置的规则列表，每条规则对应一个ProxyRule对象，用于查询规则的详细信息。
+
+ProxyRule提供两个方法：getSchemeFilter用于获取该代理规则对应的协议过滤器（如MATCH_ALL_SCHEMES、MATCH_HTTP、MATCH_HTTPS等），getUrl用于获取该代理规则中指定的代理服务器URL信息。ProxyRule对象为只读，由系统在配置代理规则时创建，应用只能查询其内容而不能修改。
 
 ![](./img/note_3.0-zh-cn.png)
 

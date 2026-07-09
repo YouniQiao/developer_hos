@@ -2,7 +2,8 @@
 title: "锁屏敏感数据管理错误码"
 upstream_id: "harmonyos-references/errorcode-screenlockfilemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:01.012437"
+content_hash: "dde07ac3b3ed"
+synced_at: "2026-07-09T00:57:14.049747"
 ---
 
 # 锁屏敏感数据管理错误码

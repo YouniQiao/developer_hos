@@ -2,7 +2,8 @@
 title: "半模态转场"
 upstream_id: "harmonyos-references/ts-universal-attributes-sheet-transition"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:46.262363"
+content_hash: "ac1250339a74"
+synced_at: "2026-07-09T00:57:42.857812"
 ---
 
 # 半模态转场
@@ -400,7 +401,7 @@ struct SheetTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070332.gif)
+ ![](./img/zh-cn_image_0000002631413126.gif)
 
 #### [h2]示例2（设置三个不同高度的挡位）
 
@@ -452,7 +453,7 @@ struct SheetTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469609.gif)
+ ![](./img/zh-cn_image_0000002661732355.gif)
 
 #### [h2]示例3（使用边框宽度和颜色）
 
@@ -507,11 +508,11 @@ struct SheetTransitionExample {
 ```
  从左至右显示语言模式示例图
 
-![](./img/zh-cn_image_0000002656349657.png)
+![](./img/zh-cn_image_0000002631253234.png)
 
 从右至左显示语言模式示例图
 
-![](./img/zh-cn_image_0000002626230244.png)
+![](./img/zh-cn_image_0000002661612419.png)
 
 #### [h2]示例4（使用关闭回调函数）
 
@@ -563,7 +564,7 @@ struct bindSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070334.gif)
+ ![](./img/zh-cn_image_0000002631413128.gif)
 
 #### [h2]示例5（设置内容区刷新时机）
 
@@ -615,11 +616,11 @@ struct Index {
 ```
  跟手触发挡位切换时，松手才触发面板内容高度刷新
 
-![](./img/zh-cn_image_0000002656469611.gif)
+![](./img/zh-cn_image_0000002661732357.gif)
 
 跟手触发挡位切换时，跟手时期就会触发面板内容高度刷新
 
-![](./img/zh-cn_image_0000002656349659.gif)
+![](./img/zh-cn_image_0000002631253236.gif)
 
 #### [h2]示例6（设置压缩模态内容）
 
@@ -735,7 +736,7 @@ struct ListenKeyboardHeightChange {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230246.gif)
+ ![](./img/zh-cn_image_0000002661612421.gif)
 
 #### [h2]示例7（镜像场景下如何设置圆角属性）
 
@@ -787,11 +788,11 @@ struct SheetTransitionExample {
 ```
  从左至右显示语言模式示例图
 
-![](./img/zh-cn_image_0000002626070336.png)
+![](./img/zh-cn_image_0000002631413130.png)
 
 从右至左显示语言模式示例图
 
-![](./img/zh-cn_image_0000002656469613.png)
+![](./img/zh-cn_image_0000002661732359.png)
 
 #### [h2]示例8（半模态Side侧边样式）
 
@@ -892,7 +893,7 @@ struct SheetSideExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349661.gif)
+ ![](./img/zh-cn_image_0000002631253238.gif)
 
 #### [h2]示例9（半模态ContentCover全屏样式）
 
@@ -954,7 +955,7 @@ struct ContentCoverExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230248.gif)
+ ![](./img/zh-cn_image_0000002661612423.gif)
 
 #### [h2]示例10（半模态设置系统材质）
 
@@ -1016,4 +1017,4 @@ struct SheetMaterialExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626228436.jpg)
+ ![](./img/zh-cn_image_0000002631411274.jpg)

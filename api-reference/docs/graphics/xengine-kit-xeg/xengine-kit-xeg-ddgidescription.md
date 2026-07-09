@@ -2,7 +2,8 @@
 title: "XEG_DDGIDescription"
 upstream_id: "harmonyos-references/xengine-kit-xeg-ddgidescription"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:16.576062"
+content_hash: "83e7126231a6"
+synced_at: "2026-07-09T01:01:10.554942"
 ---
 
 # XEG_DDGIDescription

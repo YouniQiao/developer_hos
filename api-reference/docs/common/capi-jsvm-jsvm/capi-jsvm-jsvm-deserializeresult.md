@@ -2,7 +2,8 @@
 title: "JSVM_DeserializeResult"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-deserializeresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:04.569123"
+content_hash: "9befee0183bc"
+synced_at: "2026-07-09T01:01:48.268050"
 ---
 
 # JSVM_DeserializeResult

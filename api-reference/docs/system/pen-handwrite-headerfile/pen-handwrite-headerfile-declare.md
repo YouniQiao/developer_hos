@@ -2,7 +2,8 @@
 title: "native_handwrite_api.h"
 upstream_id: "harmonyos-references/pen-handwrite-headerfile-declare"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:39.362749"
+content_hash: "7e194fb74b27"
+synced_at: "2026-07-09T00:59:59.142664"
 ---
 
 # native_handwrite_api.h

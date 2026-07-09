@@ -2,7 +2,8 @@
 title: "wrapBuilder"
 upstream_id: "harmonyos-references/ts-universal-wrapbuilder"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:50.746007"
+content_hash: "76f2518b6a1f"
+synced_at: "2026-07-09T00:58:14.047192"
 ---
 
 # wrapBuilder

@@ -2,7 +2,8 @@
 title: "Rcp_OnHeaderReceiveCallback"
 upstream_id: "harmonyos-references/_rcp___on_header_receive_callback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:01.089518"
+content_hash: "935e8eaf8fa8"
+synced_at: "2026-07-09T00:59:34.906081"
 ---
 
 # Rcp_OnHeaderReceiveCallback

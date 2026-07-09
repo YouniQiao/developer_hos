@@ -2,7 +2,8 @@
 title: "@system.battery (电量信息)"
 upstream_id: "harmonyos-references/js-apis-system-battery"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:09.956825"
+content_hash: "0b668f0e5018"
+synced_at: "2026-07-09T00:59:41.994062"
 ---
 
 # @system.battery (电量信息)

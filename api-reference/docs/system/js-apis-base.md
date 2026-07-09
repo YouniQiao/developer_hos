@@ -2,7 +2,8 @@
 title: "@ohos.base (公共回调信息)"
 upstream_id: "harmonyos-references/js-apis-base"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:08.913072"
+content_hash: "31531faa9eb7"
+synced_at: "2026-07-09T00:59:41.247350"
 ---
 
 # @ohos.base (公共回调信息)

@@ -2,7 +2,8 @@
 title: "ArkUI_NodeBorderWidthOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderwidthoption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:57.843845"
+content_hash: "5f577bb5f43c"
+synced_at: "2026-07-09T00:58:46.839311"
 ---
 
 # ArkUI_NodeBorderWidthOption

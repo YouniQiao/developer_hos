@@ -2,7 +2,8 @@
 title: "消息撤回"
 upstream_id: "harmonyos-references/push-msg-revoke"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:50.561832"
+content_hash: "c847ea5a0028"
+synced_at: "2026-07-09T01:01:38.453627"
 ---
 
 # 消息撤回
@@ -184,7 +185,7 @@ Authentication Error.
 可能原因
 
 1. 发送消息时未添加Authorization参数或Authorization的值为空。
-2. 用于申请JWT Token的Project Id和推送消息的Project Id不一致。
+2. 用于申请JWT Token的Project Id和推送消息的Client Id不属于同一个项目。
 3. Authorization参数中的JWT Token与实际应用不匹配。
 
 处理步骤
@@ -192,7 +193,7 @@ Authentication Error.
 请根据响应消息中的提示，排查请求头中Authorization参数鉴权失败是否存在以下情况：
 
 1. 请检查发送消息时是否添加Authorization参数或Authorization的值为空。
-2. 请参考[鉴权令牌生成步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-jwt-token#开发步骤)中的步骤二，检查推送请求URL（https://push-api.cloud.huawei.com/**v3**/[projectId]/messages:send）中的projectId，确保与您当前应用所属的项目保持一致。
+2. 请参考[鉴权令牌生成步骤](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-jwt-token#开发步骤)中的步骤二，检查推送请求URL（https://push-api.cloud.huawei.com/v1/**[clientId]**/messages:revoke）中的clientId，确保与您当前应用所属的项目保持一致。
 3. 请检查Authorization参数中的JWT Token与实际应用是否匹配，详情参见[基于服务账号生成鉴权令牌](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/push-jwt-token)。
 
 重新生成JWT Token后再发送请求。
@@ -275,7 +276,7 @@ All the tokens are invalid.
 
 1. 请确保未传递其他应用的Push Token。
 2. 请确保客户端应用配置的应用包名、应用ID与[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站上申请是一致的。
-3. 请确保终端设备升级至HarmonyOS NEXT版本后，重新生成对应的Push Token，并使用[HarmonyOS NEXT版本的请求体参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param)进行消息请求。 请确保使用v3版本的请求URL（https://push-api.cloud.huawei.com/**v3**/[projectId]/messages:send）发送REST API请求。 建议您在应用启动时调用getToken接口，若设备的Push Token发生变化，及时上报到您的应用服务器更新Push Token。
+3. 请确保终端设备升级至HarmonyOS NEXT版本后，重新生成对应的Push Token，并使用[HarmonyOS NEXT版本的请求体参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/push-scenariozed-api-request-param)进行消息请求。 请确保使用v1版本的请求URL（https://push-api.cloud.huawei.com/v1/**[clientId]**/messages:revoke）发送REST API请求。 建议您在应用启动时调用getToken接口，若设备的Push Token发生变化，及时上报到您的应用服务器更新Push Token。
 
 #### [h2]80300010 消息体中的Token数量为0或超过系统设置的默认值
 

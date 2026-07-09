@@ -2,7 +2,8 @@
 title: "申请退款"
 upstream_id: "harmonyos-references/payment-partner-combined-refund"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:45.481892"
+content_hash: "7dba9573b383"
+synced_at: "2026-07-09T01:01:34.159414"
 ---
 
 # 申请退款

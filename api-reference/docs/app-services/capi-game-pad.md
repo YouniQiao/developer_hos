@@ -2,7 +2,8 @@
 title: "game_pad.h"
 upstream_id: "harmonyos-references/capi-game-pad"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:24.906422"
+content_hash: "3d53f0835e54"
+synced_at: "2026-07-09T01:01:17.755105"
 ---
 
 # game_pad.h

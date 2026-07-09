@@ -2,7 +2,8 @@
 title: "开放匿名设备标识服务错误码"
 upstream_id: "harmonyos-references/errorcode-oaid"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:21.832746"
+content_hash: "a5330e07853b"
+synced_at: "2026-07-09T01:01:14.544379"
 ---
 
 # 开放匿名设备标识服务错误码

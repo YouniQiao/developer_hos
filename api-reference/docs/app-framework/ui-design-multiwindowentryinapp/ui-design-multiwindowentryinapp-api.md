@@ -2,7 +2,8 @@
 title: "MultiWindowEntryInAPP"
 upstream_id: "harmonyos-references/ui-design-multiwindowentryinapp-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:27.930233"
+content_hash: "e40ba45c550f"
+synced_at: "2026-07-09T00:59:10.089623"
 ---
 
 # MultiWindowEntryInAPP
@@ -185,4 +186,4 @@ struct MultiWindowEntryInAPPTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626071322.jpg)
+ ![](./img/zh-cn_image_0000002661733359.jpg)

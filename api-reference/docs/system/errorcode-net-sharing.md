@@ -1,9 +1,12 @@
 ---
+
 title: "网络共享错误码"
 upstream_id: "harmonyos-references/errorcode-net-sharing"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:56.551332"
+synced_at: "2026-07-09T00:59:31.240623"
+content_hash: "256227003645"
 ---
+
 
 # 网络共享错误码
 

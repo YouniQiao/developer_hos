@@ -2,7 +2,8 @@
 title: "NetConn_NetConnCallback"
 upstream_id: "harmonyos-references/capi-netconnection-netconn-netconncallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:54.249083"
+content_hash: "c0b46752fdf7"
+synced_at: "2026-07-09T00:59:29.573412"
 ---
 
 # NetConn_NetConnCallback

@@ -2,7 +2,8 @@
 title: "Rcp_SessionConfiguration"
 upstream_id: "harmonyos-references/_rcp___session_configuration"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:01.741080"
+content_hash: "a686e042f995"
+synced_at: "2026-07-09T00:59:35.491896"
 ---
 
 # Rcp_SessionConfiguration
@@ -44,7 +45,7 @@ const char* Rcp_SessionConfiguration::baseUrl
 
 基本URL。
 
-举例， 如果请求的url为 '?name=value', 基本url是 “https://example.com”，那么最后当请求被送往服务端时的最终url为 “https://example.com?name=value”。
+例如：请求的url为 '?name=value', 基本url是 “https://example.com”，那么最后当请求被送往服务端时的最终url为 “https://example.com?name=value”。
 
 #### [h2]connectionConfiguration
 

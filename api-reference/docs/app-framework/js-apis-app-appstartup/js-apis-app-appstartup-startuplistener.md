@@ -2,7 +2,8 @@
 title: "@ohos.app.appstartup.StartupListener (启动框架任务监听器)"
 upstream_id: "harmonyos-references/js-apis-app-appstartup-startuplistener"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:48.449187"
+content_hash: "6b5b48e108ec"
+synced_at: "2026-07-09T00:57:05.438397"
 ---
 
 # @ohos.app.appstartup.StartupListener (启动框架任务监听器)

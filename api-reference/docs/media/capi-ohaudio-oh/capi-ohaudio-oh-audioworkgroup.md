@@ -2,7 +2,8 @@
 title: "OH_AudioWorkgroup"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audioworkgroup"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:58.376472"
+content_hash: "50b7c87b161c"
+synced_at: "2026-07-09T01:00:11.489172"
 ---
 
 # OH_AudioWorkgroup

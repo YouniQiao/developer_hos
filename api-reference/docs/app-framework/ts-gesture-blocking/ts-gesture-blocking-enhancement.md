@@ -2,7 +2,8 @@
 title: "手势拦截增强"
 upstream_id: "harmonyos-references/ts-gesture-blocking-enhancement"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:51.638147"
+content_hash: "09556ba2225b"
+synced_at: "2026-07-09T00:57:45.419196"
 ---
 
 # 手势拦截增强
@@ -391,7 +392,7 @@ struct FatherControlChild {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070354.gif)
+ ![](./img/zh-cn_image_0000002631413148.gif)
 
 #### [h2]示例2（嵌套场景下拦截内部容器手势）
 
@@ -482,7 +483,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469631.gif)
+ ![](./img/zh-cn_image_0000002661732377.gif)
 
 #### [h2]示例3（拦截手势获取属性）
 
@@ -565,7 +566,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349679.gif)
+ ![](./img/zh-cn_image_0000002631253258.gif)
 
 #### [h2]示例4（手势触发成功时取消子组件上的Touch事件）
 
@@ -763,7 +764,7 @@ struct FatherControlChild {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230266.gif)
+ ![](./img/zh-cn_image_0000002661612441.gif)
 
 #### [h2]示例5（自定义手势识别器是否参与手势处理）
 
@@ -851,7 +852,7 @@ struct TouchTestDoneExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070356.gif)
+ ![](./img/zh-cn_image_0000002631413150.gif)
 
 #### [h2]示例6（自定义干预事件和手势的收集结果）
 
@@ -927,4 +928,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469633.gif)
+ ![](./img/zh-cn_image_0000002661732379.gif)

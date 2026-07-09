@@ -2,7 +2,8 @@
 title: "UI上下文错误码"
 upstream_id: "harmonyos-references/errorcode-uicontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:00.768306"
+content_hash: "0d81dffc518c"
+synced_at: "2026-07-09T00:58:48.872805"
 ---
 
 # UI上下文错误码

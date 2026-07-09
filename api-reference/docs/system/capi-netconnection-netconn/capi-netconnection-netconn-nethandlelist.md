@@ -2,7 +2,8 @@
 title: "NetConn_NetHandleList"
 upstream_id: "harmonyos-references/capi-netconnection-netconn-nethandlelist"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:54.292575"
+content_hash: "959d862d20db"
+synced_at: "2026-07-09T00:59:29.522451"
 ---
 
 # NetConn_NetHandleList

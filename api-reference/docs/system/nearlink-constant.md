@@ -2,7 +2,8 @@
 title: "constant（星闪公共常量定义）"
 upstream_id: "harmonyos-references/nearlink-constant"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:50.647648"
+content_hash: "a717c66a75e0"
+synced_at: "2026-07-09T00:59:27.503820"
 ---
 
 # constant（星闪公共常量定义）

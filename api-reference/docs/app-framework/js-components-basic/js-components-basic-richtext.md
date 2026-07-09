@@ -2,7 +2,8 @@
 title: "richtext"
 upstream_id: "harmonyos-references/js-components-basic-richtext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:07.126425"
+content_hash: "9e5e36010a3b"
+synced_at: "2026-07-09T00:58:22.351019"
 ---
 
 # richtext

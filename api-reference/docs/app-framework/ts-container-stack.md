@@ -2,7 +2,8 @@
 title: "Stack"
 upstream_id: "harmonyos-references/ts-container-stack"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:52.531036"
+content_hash: "4eda553199aa"
+synced_at: "2026-07-09T00:57:45.384136"
 ---
 
 # Stack
@@ -123,4 +124,4 @@ struct StackExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469639.png)
+ ![](./img/zh-cn_image_0000002661732385.png)

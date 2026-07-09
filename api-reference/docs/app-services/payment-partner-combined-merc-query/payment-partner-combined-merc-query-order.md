@@ -2,7 +2,8 @@
 title: "通过combinedMercOrderNo查询订单信息"
 upstream_id: "harmonyos-references/payment-partner-combined-merc-query-order"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:45.327203"
+content_hash: "f184f0d9e532"
+synced_at: "2026-07-09T01:01:34.032249"
 ---
 
 # 通过combinedMercOrderNo查询订单信息
@@ -35,7 +36,7 @@ Request Header
 
 request path
 
-| 参数 | 是否必填 | 参数类型 | 描述 |
+| 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | combinedMercOrderNo | 是 | String | 合单支付商户主订单号，由商户在创建合单支付订单时生成，商户需保证订单信息唯一性。最大长度46。 |
 

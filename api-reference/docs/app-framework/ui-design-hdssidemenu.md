@@ -2,7 +2,8 @@
 title: "HdsSideMenu"
 upstream_id: "harmonyos-references/ui-design-hdssidemenu"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:26.202539"
+content_hash: "439e0da9834d"
+synced_at: "2026-07-09T00:59:09.710768"
 ---
 
 # HdsSideMenu
@@ -358,4 +359,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626071316.png)
+ ![](./img/zh-cn_image_0000002661733353.png)

@@ -2,7 +2,8 @@
 title: "Interface (AVSessionController)"
 upstream_id: "harmonyos-references/arkts-apis-avsession-avsessioncontroller"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:06.502741"
+content_hash: "b4b2e314fbdc"
+synced_at: "2026-07-09T01:00:18.202199"
 ---
 
 # Interface (AVSessionController)
@@ -665,7 +666,7 @@ avcontroller.getLaunchAbility((err: BusinessError, agent: object) => {
 
 getRealPlaybackPositionSync(): number
 
-获取当前播放位置。
+使用同步方法获取当前播放位置。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 

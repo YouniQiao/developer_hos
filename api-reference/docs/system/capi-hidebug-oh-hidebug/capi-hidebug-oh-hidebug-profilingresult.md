@@ -2,7 +2,8 @@
 title: "OH_HiDebug_ProfilingResult"
 upstream_id: "harmonyos-references/capi-hidebug-oh-hidebug-profilingresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:49.853258"
+content_hash: "63f2fd9d8ad8"
+synced_at: "2026-07-09T01:00:05.450536"
 ---
 
 # OH_HiDebug_ProfilingResult

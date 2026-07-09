@@ -1,9 +1,12 @@
 ---
+
 title: "数据类型说明"
 upstream_id: "harmonyos-references/js-appendix-types"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:15.364317"
+synced_at: "2026-07-09T00:58:26.722333"
+content_hash: "948487d3b8bf"
 ---
+
 
 # 数据类型说明
 

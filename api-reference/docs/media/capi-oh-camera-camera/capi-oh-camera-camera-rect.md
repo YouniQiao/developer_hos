@@ -2,7 +2,8 @@
 title: "Camera_Rect"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-rect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:16.910635"
+content_hash: "7929276c2249"
+synced_at: "2026-07-09T01:00:26.112532"
 ---
 
 # Camera_Rect

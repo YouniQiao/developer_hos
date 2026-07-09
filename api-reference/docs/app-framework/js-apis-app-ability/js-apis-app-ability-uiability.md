@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.UIAbility (带界面的应用组件)"
 upstream_id: "harmonyos-references/js-apis-app-ability-uiability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:47.903355"
+content_hash: "79baeb9ef4d8"
+synced_at: "2026-07-09T00:57:06.174100"
 ---
 
 # @ohos.app.ability.UIAbility (带界面的应用组件)
@@ -19,7 +20,7 @@ UIAbility是包含UI界面的应用组件，继承自[Ability](https://developer
 
 图1 UIAbility生命周期状态
 
-![](./img/zh-cn_image_0000002626070152.png)
+![](./img/zh-cn_image_0000002631253046.png)
 
 - Create：表示UIAbility实例已创建。系统会在该状态下触发其[onCreate](#oncreate)回调函数，开发者可以在[onCreate](#oncreate)中执行初始化操作。
 - Foreground：表示UIAbility被拉到前台。系统会在该状态下触发其[onForeground](#onforeground)回调函数，开发者可以在[onForeground](#onforeground)中申请应用所需的资源。
@@ -32,7 +33,7 @@ UIAbility是包含UI界面的应用组件，继承自[Ability](https://developer
 
 图2 Call调用示意图
 
-![](./img/zh-cn_image_0000002656467287.png)
+![](./img/zh-cn_image_0000002661729977.png)
 
 - Caller UIAbility调用[startAbilityByCall()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#startabilitybycall)接口获取[Caller](#caller)对象，并使用Caller对象的[call](#call)方法向Callee UIAbility发送数据。
 - Callee UIAbility持有一个[Callee](#callee)对象，通过Callee的[on](#on)方法注册回调函数，用于接收Caller对象发送的数据。
@@ -760,7 +761,7 @@ onPrepareToTerminate(): boolean
 
 系统能力：SystemCapability.Ability.AbilityRuntime.AbilityCore
 
-设备行为差异：该接口仅在2in1和Tablet设备中可正常执行回调，在其他设备上不执行回调。
+设备行为差异：该接口仅在PC/2in1和Tablet设备中可正常执行回调，在其他设备上不执行回调。
 
 返回值：
 
@@ -823,8 +824,8 @@ onPrepareToTerminateAsync(): Promise<boolean>
 
 设备行为差异：
 
-- 从API version 15开始，该接口仅在2in1设备中可正常执行回调，在其他设备上不执行回调。
-- 从API version 19开始，该接口在2in1和Tablet设备中可正常执行回调，在其他设备上不执行回调。
+- 从API version 15开始，该接口仅在PC/2in1设备中可正常执行回调，在其他设备上不执行回调。
+- 从API version 19开始，该接口在PC/2in1和Tablet设备中可正常执行回调，在其他设备上不执行回调。
 
 返回值：
 

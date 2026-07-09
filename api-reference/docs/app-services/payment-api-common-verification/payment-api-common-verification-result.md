@@ -1,9 +1,12 @@
 ---
+
 title: "实名信息验证结果查询"
 upstream_id: "harmonyos-references/payment-api-common-verification-result"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:46.109956"
+synced_at: "2026-07-09T01:01:34.503498"
+content_hash: "64259d6bbbbd"
 ---
+
 
 # 实名信息验证结果查询
 

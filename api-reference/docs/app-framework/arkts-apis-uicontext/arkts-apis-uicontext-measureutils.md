@@ -2,7 +2,8 @@
 title: "Class (MeasureUtils)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-measureutils"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:21.704899"
+content_hash: "754b78a5bcb5"
+synced_at: "2026-07-09T00:57:29.436108"
 ---
 
 # Class (MeasureUtils)
@@ -77,7 +78,7 @@ struct Index {
 
 measureTextSize(options: MeasureOptions): SizeOptions
 
-计算指定文本单行布局下的宽度和高度。
+计算指定文本的宽度和高度。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -235,7 +236,7 @@ struct TextDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230080.png)
+ ![](./img/zh-cn_image_0000002661732185.png)
 
 #### getParagraphs20+
 
@@ -464,4 +465,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070170.png)
+ ![](./img/zh-cn_image_0000002631253064.png)

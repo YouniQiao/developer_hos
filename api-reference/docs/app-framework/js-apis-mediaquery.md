@@ -2,7 +2,8 @@
 title: "@ohos.mediaquery (媒体查询)"
 upstream_id: "harmonyos-references/js-apis-mediaquery"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:24.625161"
+content_hash: "867c447af721"
+synced_at: "2026-07-09T00:57:30.977967"
 ---
 
 # @ohos.mediaquery (媒体查询)
@@ -191,4 +192,4 @@ struct MediaQueryExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469459.png)
+ ![](./img/zh-cn_image_0000002661732199.png)

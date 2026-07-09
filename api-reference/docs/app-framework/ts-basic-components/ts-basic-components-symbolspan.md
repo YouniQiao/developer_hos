@@ -2,7 +2,8 @@
 title: "SymbolSpan"
 upstream_id: "harmonyos-references/ts-basic-components-symbolspan"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:18.612592"
+content_hash: "9f2eb362cea4"
+synced_at: "2026-07-09T00:57:57.894231"
 ---
 
 # SymbolSpan
@@ -86,7 +87,7 @@ fontSize(value: number | string | Resource)
 
 fontWeight(value: number | FontWeight | string)
 
-设置SymbolSpan组件粗细。number类型取值[100,900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如“400”，以及“bold”、“bolder”、“lighter”、“regular” 、“medium”分别对应FontWeight中相应的枚举值。
+设置SymbolSpan组件字体粗细。number类型取值[100,900]，取值间隔为100，默认为400，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如"400"，以及"bold"、"bolder"、"lighter"、"regular" 、"medium"分别对应FontWeight中相应的枚举值。
 
 sys.symbol.ohos_lungs图标不支持设置fontWeight。
 
@@ -102,7 +103,7 @@ sys.symbol.ohos_lungs图标不支持设置fontWeight。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | string | 是 | SymbolSpan组件粗细。 默认值：FontWeight.Normal |
+| value | number | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | string | 是 | SymbolSpan组件字体粗细。 默认值：FontWeight.Normal |
 
 #### [h2]renderingStrategy
 
@@ -126,7 +127,7 @@ renderingStrategy(value: SymbolRenderingStrategy)
 
 不同渲染策略效果可参考以下示意图。
 
-![](./img/zh-cn_image_0000002626070596.png)
+![](./img/zh-cn_image_0000002661732625.png)
 
 #### [h2]effectStrategy
 
@@ -274,7 +275,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469873.gif)
+ ![](./img/zh-cn_image_0000002631253504.gif)
 
 #### [h2]示例2（设置动态属性）
 
@@ -307,4 +308,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349921.gif)
+ ![](./img/zh-cn_image_0000002661612687.gif)

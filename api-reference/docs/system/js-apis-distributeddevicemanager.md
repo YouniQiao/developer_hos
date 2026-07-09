@@ -2,7 +2,8 @@
 title: "@ohos.distributedDeviceManager (设备管理)"
 upstream_id: "harmonyos-references/js-apis-distributeddevicemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:49.244774"
+content_hash: "9526038aab10"
+synced_at: "2026-07-09T00:59:25.799355"
 ---
 
 # @ohos.distributedDeviceManager (设备管理)

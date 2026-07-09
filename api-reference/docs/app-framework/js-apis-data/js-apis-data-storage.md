@@ -2,7 +2,8 @@
 title: "@ohos.data.storage (轻量级存储)"
 upstream_id: "harmonyos-references/js-apis-data-storage"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:04.854252"
+content_hash: "8d756fb422bf"
+synced_at: "2026-07-09T00:57:17.614667"
 ---
 
 # @ohos.data.storage (轻量级存储)

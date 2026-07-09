@@ -2,7 +2,8 @@
 title: "HMS_SpatialRecon_Session"
 upstream_id: "harmonyos-references/capi-spatialrecon-hms-spatialrecon-session"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:14.861758"
+content_hash: "15ba13dcf62c"
+synced_at: "2026-07-09T01:01:08.710455"
 ---
 
 # HMS_SpatialRecon_Session

@@ -2,7 +2,8 @@
 title: "picker-view"
 upstream_id: "harmonyos-references/js-lite-components-basic-picker-view"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:19.903832"
+content_hash: "292d4c6f5b35"
+synced_at: "2026-07-09T00:58:28.132026"
 ---
 
 # picker-view
@@ -148,4 +149,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626231110.png)
+ ![](./img/zh-cn_image_0000002631414006.png)

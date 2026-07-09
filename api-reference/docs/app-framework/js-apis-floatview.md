@@ -2,7 +2,8 @@
 title: "@ohos.window.floatView (闪控窗)"
 upstream_id: "harmonyos-references/js-apis-floatview"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:29.412715"
+content_hash: "f66556b02f11"
+synced_at: "2026-07-09T00:57:33.954927"
 ---
 
 # @ohos.window.floatView (闪控窗)
@@ -358,6 +359,10 @@ setUIContext(path: string, storage?: LocalStorage): Promise<void>
 
 根据当前工程中指定的页面路径为闪控窗加载具体页面内容，通过LocalStorage传递状态属性至加载页面。使用Promise异步回调。
 
+建议在闪控窗启动前使用该接口，重复调用将先销毁旧的页面内容（即UIContent）再加载新的页面内容，请谨慎使用。
+
+本接口不支持加载跨包页面，若有需要请使用[setUIContextByName()](#setuicontextbyname)接口。
+
 起始版本： 26.0.0
 
 模型约束： 此接口仅可在Stage模型下使用。
@@ -407,6 +412,8 @@ try {
 setUIContextByName(name: string, storage?: LocalStorage): Promise<void>
 
 根据指定路由页面名称为当前窗口加载[命名路由](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-routing#命名路由)页面，通过LocalStorage传递状态属性至加载页面，使用Promise异步回调。
+
+建议在闪控窗启动前使用该接口，重复调用将先销毁旧的页面内容（即UIContent）再加载新的页面内容，请谨慎使用。
 
 起始版本： 26.0.0
 

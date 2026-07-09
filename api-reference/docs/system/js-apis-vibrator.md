@@ -2,7 +2,8 @@
 title: "@ohos.vibrator (振动)"
 upstream_id: "harmonyos-references/js-apis-vibrator"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:40.196633"
+content_hash: "93e6e7648d7b"
+synced_at: "2026-07-09T01:00:00.460018"
 ---
 
 # @ohos.vibrator (振动)

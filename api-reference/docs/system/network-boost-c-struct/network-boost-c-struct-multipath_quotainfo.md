@@ -2,7 +2,8 @@
 title: "NetworkBoost_MultiPathQuotaInfo"
 upstream_id: "harmonyos-references/network-boost-c-struct-multipath_quotainfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:58.318051"
+content_hash: "739a51e0cb97"
+synced_at: "2026-07-09T00:59:32.911747"
 ---
 
 # NetworkBoost_MultiPathQuotaInfo

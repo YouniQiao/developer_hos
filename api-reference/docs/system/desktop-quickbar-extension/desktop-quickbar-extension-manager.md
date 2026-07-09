@@ -2,7 +2,8 @@
 title: "quickBarManager（快捷栏管理服务）"
 upstream_id: "harmonyos-references/desktop-quickbar-extension-manager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:14.158600"
+content_hash: "1c13da085788"
+synced_at: "2026-07-09T00:59:45.980445"
 ---
 
 # quickBarManager（快捷栏管理服务）
@@ -124,7 +125,7 @@ addCustomCategory(context: common.Context, categoryName: string): Promise<Custom
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -182,7 +183,7 @@ addQuickTask(context: common.Context, categoryId: number, taskInfo: QuickTaskInf
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -265,7 +266,7 @@ getCustomCategories(context: common.Context): Promise<CustomCategory[]>
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -320,7 +321,7 @@ getTasksFromCategory(context: common.Context, categoryId: number): Promise<Quick
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -379,7 +380,7 @@ updateCustomCategory(context: common.Context, category: CustomCategory): Promise
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -439,7 +440,7 @@ updateQuickTask(context: common.Context, task: QuickTask): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -526,7 +527,7 @@ deleteQuickTask(context: common.Context, taskId: number): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -581,7 +582,7 @@ deleteCustomCategory(context: common.Context, categoryId: number): Promise<void>
 
 错误码：
 
-以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
+以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-statusbar-extension)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |

@@ -2,7 +2,8 @@
 title: "FolderStack"
 upstream_id: "harmonyos-references/ts-container-folderstack"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:52.781123"
+content_hash: "c52bc80b9bc7"
+synced_at: "2026-07-09T00:58:15.292426"
 ---
 
 # FolderStack
@@ -307,7 +308,6 @@ struct Index {
       .alignContent(Alignment.Bottom)
       .height("100%")
       .width("100%")
-      .backgroundColor('rgb(39, 135, 217)')
 
     }
     .height("100%")
@@ -321,11 +321,11 @@ struct Index {
 ```
  图1 横屏展开
 
-![](./img/zh-cn_image_0000002626230806.png)
+![](./img/zh-cn_image_0000002631253806.png)
 
 图2 横屏半折叠
 
-![](./img/zh-cn_image_0000002626070896.png)
+![](./img/zh-cn_image_0000002661612989.png)
 
 #### [h2]示例2（使用attributeModifier动态设置FolderStack组件的属性及方法）
 
@@ -400,7 +400,6 @@ struct attributeDemo {
       .alignContent(Alignment.Bottom)
       .height("100%")
       .width("100%")
-      .backgroundColor('rgb(39, 135, 217)')
     }
     .height("100%")
     .width("100%")
@@ -425,7 +424,7 @@ this appRotation:3
 
 this windowStatusType:1
 
-![](./img/zh-cn_image_0000002656470173.png)
+![](./img/zh-cn_image_0000002631413700.png)
 
 图2 横屏半折叠
 
@@ -441,4 +440,4 @@ this appRotation:3
 
 this windowStatusType:1
 
-![](./img/zh-cn_image_0000002656350221.png)
+![](./img/zh-cn_image_0000002661732929.png)

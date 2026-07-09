@@ -2,7 +2,8 @@
 title: "记忆链接错误码"
 upstream_id: "harmonyos-references/errorcode-metadatabinding"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:37.603539"
+content_hash: "fb72c2f84f99"
+synced_at: "2026-07-09T00:59:58.101185"
 ---
 
 # 记忆链接错误码

@@ -2,7 +2,8 @@
 title: "OH_NativeBundle_AbilityResourceInfo"
 upstream_id: "harmonyos-references/capi-native-bundle-oh-nativebundle-abilityresourceinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:00.051843"
+content_hash: "4b656403b62d"
+synced_at: "2026-07-09T00:57:13.613959"
 ---
 
 # OH_NativeBundle_AbilityResourceInfo

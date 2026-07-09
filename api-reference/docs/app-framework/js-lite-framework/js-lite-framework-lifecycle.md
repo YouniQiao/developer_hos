@@ -1,9 +1,12 @@
 ---
+
 title: "生命周期"
 upstream_id: "harmonyos-references/js-lite-framework-lifecycle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:16.103950"
+synced_at: "2026-07-09T00:58:26.278874"
+content_hash: "f44111502a70"
 ---
+
 
 # 生命周期
 

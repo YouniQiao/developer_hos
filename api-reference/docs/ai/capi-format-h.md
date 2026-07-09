@@ -2,7 +2,8 @@
 title: "format.h"
 upstream_id: "harmonyos-references/capi-format-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:58.278276"
+content_hash: "501dbf5769a4"
+synced_at: "2026-07-09T01:01:43.009328"
 ---
 
 # format.h

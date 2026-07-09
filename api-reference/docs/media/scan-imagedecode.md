@@ -2,7 +2,8 @@
 title: "detectBarcode (图像识码)"
 upstream_id: "harmonyos-references/scan-imagedecode"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:48.856266"
+content_hash: "425abe77cc93"
+synced_at: "2026-07-09T01:00:49.418819"
 ---
 
 # detectBarcode (图像识码)

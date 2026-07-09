@@ -2,7 +2,8 @@
 title: "ImageEffect_FilterDelegate"
 upstream_id: "harmonyos-references/capi-imageeffect-imageeffect-filterdelegate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:32.209221"
+content_hash: "46aa1dc3e8cc"
+synced_at: "2026-07-09T01:00:36.960609"
 ---
 
 # ImageEffect_FilterDelegate

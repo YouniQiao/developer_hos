@@ -2,7 +2,8 @@
 title: "LoopObserver"
 upstream_id: "harmonyos-references/js-apis-inner-application-loopobserver"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:53.687462"
+content_hash: "5020336ebb8b"
+synced_at: "2026-07-09T00:57:09.390565"
 ---
 
 # LoopObserver

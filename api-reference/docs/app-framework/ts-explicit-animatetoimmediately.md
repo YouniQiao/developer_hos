@@ -2,7 +2,8 @@
 title: "显式动画立即下发 (animateToImmediately)"
 upstream_id: "harmonyos-references/ts-explicit-animatetoimmediately"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:42.375046"
+content_hash: "88ff542a6a80"
+synced_at: "2026-07-09T00:58:08.523686"
 ---
 
 # 显式动画立即下发 (animateToImmediately)
@@ -98,4 +99,4 @@ struct AnimateToImmediatelyExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230728.gif)
+ ![](./img/zh-cn_image_0000002631253728.gif)

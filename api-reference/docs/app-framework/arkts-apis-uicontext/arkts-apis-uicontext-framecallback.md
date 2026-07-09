@@ -2,7 +2,8 @@
 title: "Class (FrameCallback)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-framecallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:21.363195"
+content_hash: "dc478bf0080b"
+synced_at: "2026-07-09T00:57:28.978822"
 ---
 
 # Class (FrameCallback)

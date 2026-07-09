@@ -2,7 +2,8 @@
 title: "AgentCard"
 upstream_id: "harmonyos-references/js-apis-inner-application-agentcard"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:52.644820"
+content_hash: "211bd1f2dceb"
+synced_at: "2026-07-09T00:57:08.696629"
 ---
 
 # AgentCard

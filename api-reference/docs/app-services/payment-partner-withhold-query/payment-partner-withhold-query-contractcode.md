@@ -2,7 +2,8 @@
 title: "通过mercContractCode查询签约信息"
 upstream_id: "harmonyos-references/payment-partner-withhold-query-contractcode"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:44.234253"
+content_hash: "cc844854e74c"
+synced_at: "2026-07-09T01:01:33.468982"
 ---
 
 # 通过mercContractCode查询签约信息

@@ -2,7 +2,8 @@
 title: "AREngine_ARFrame"
 upstream_id: "harmonyos-references/capi-spatialrecon-arengine-arframe"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:14.919325"
+content_hash: "95cb6afdf285"
+synced_at: "2026-07-09T01:01:08.941127"
 ---
 
 # AREngine_ARFrame

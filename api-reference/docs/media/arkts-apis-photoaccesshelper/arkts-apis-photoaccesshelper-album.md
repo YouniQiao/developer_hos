@@ -2,7 +2,8 @@
 title: "Interface (Album)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-album"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:44.318155"
+content_hash: "03e355b3212f"
+synced_at: "2026-07-09T01:00:46.777895"
 ---
 
 # Interface (Album)

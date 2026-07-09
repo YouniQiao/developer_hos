@@ -2,7 +2,8 @@
 title: "Init"
 upstream_id: "harmonyos-references/init"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:01.904463"
+content_hash: "6fe91fb4cb1e"
+synced_at: "2026-07-09T01:01:46.189803"
 ---
 
 # Init

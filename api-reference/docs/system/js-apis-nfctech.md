@@ -2,7 +2,8 @@
 title: "nfctech (标准NFC-Tag Nfc 技术)"
 upstream_id: "harmonyos-references/js-apis-nfctech"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:47.608262"
+content_hash: "2bf6e70e67f4"
+synced_at: "2026-07-09T00:59:25.393409"
 ---
 
 # nfctech (标准NFC-Tag Nfc 技术)

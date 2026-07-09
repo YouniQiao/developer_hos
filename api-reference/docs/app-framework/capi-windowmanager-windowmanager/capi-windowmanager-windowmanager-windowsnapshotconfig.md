@@ -2,7 +2,8 @@
 title: "WindowManager_WindowSnapshotConfig"
 upstream_id: "harmonyos-references/capi-windowmanager-windowmanager-windowsnapshotconfig"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:56.744548"
+content_hash: "3899740f5edb"
+synced_at: "2026-07-09T00:58:45.981639"
 ---
 
 # WindowManager_WindowSnapshotConfig

@@ -2,7 +2,8 @@
 title: "open_file_boost.h"
 upstream_id: "harmonyos-references/openfileboost-open__file__boost_8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:48.580716"
+content_hash: "fc796148b5f9"
+synced_at: "2026-07-09T01:01:36.653568"
 ---
 
 # open_file_boost.h

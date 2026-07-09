@@ -2,7 +2,8 @@
 title: "Interface (MediaAssetDataHandler)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-mediaassetdatahandler"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:44.444733"
+content_hash: "aae22dbed1c3"
+synced_at: "2026-07-09T01:00:46.567741"
 ---
 
 # Interface (MediaAssetDataHandler)

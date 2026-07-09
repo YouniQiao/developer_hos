@@ -2,7 +2,8 @@
 title: "@ohos.file.PhotoPickerComponent (PhotoPicker组件)"
 upstream_id: "harmonyos-references/ohos-file-photopickercomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:45.956386"
+content_hash: "9208e0d1663b"
+synced_at: "2026-07-09T01:00:48.181552"
 ---
 
 # @ohos.file.PhotoPickerComponent (PhotoPicker组件)

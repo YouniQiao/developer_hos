@@ -2,7 +2,8 @@
 title: "backgroundProcessManager错误码"
 upstream_id: "harmonyos-references/errorcode-backgroundprocessmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:11.153372"
+content_hash: "86f9bbad6872"
+synced_at: "2026-07-09T00:58:57.846418"
 ---
 
 # backgroundProcessManager错误码

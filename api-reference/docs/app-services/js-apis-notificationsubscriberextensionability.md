@@ -2,7 +2,8 @@
 title: "@ohos.application.NotificationSubscriberExtensionAbility (通知订阅扩展能力)"
 upstream_id: "harmonyos-references/js-apis-notificationsubscriberextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:36.798472"
+content_hash: "adee6b50df14"
+synced_at: "2026-07-09T01:01:28.013669"
 ---
 
 # @ohos.application.NotificationSubscriberExtensionAbility (通知订阅扩展能力)

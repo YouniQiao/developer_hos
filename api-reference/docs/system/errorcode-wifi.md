@@ -2,7 +2,8 @@
 title: "WIFI错误码"
 upstream_id: "harmonyos-references/errorcode-wifi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:48.263410"
+content_hash: "ac8387fa576a"
+synced_at: "2026-07-09T00:59:24.879290"
 ---
 
 # WIFI错误码

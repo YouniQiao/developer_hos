@@ -2,7 +2,8 @@
 title: "滚动组件通用接口"
 upstream_id: "harmonyos-references/ts-container-scrollable-common"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:00.718360"
+content_hash: "db184ab970b6"
+synced_at: "2026-07-09T00:57:50.029416"
 ---
 
 # 滚动组件通用接口
@@ -275,6 +276,8 @@ fadingEdge(enabled: Optional<boolean>, options?: FadingEdgeOptions): T
 
 fadingEdge生效时，建议不在设置fadingEdge属性的组件上设置[background](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#background10)相关属性，会影响渐隐的显示效果。
 
+fadingEdge生效时，建议不在设置fadingEdge属性的组件以及其子组件上设置[systemMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#systemmaterial)相关属性，会影响系统材质的显示效果，导致材质效果与预期效果不一致。
+
 fadingEdge生效时，设置fadingEdge属性的组件会裁剪到边界，在该组件上设置[clip](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sharp-clipping#clip12)属性为false不生效。
 
 元服务API： 从API version 14开始，该接口支持在元服务中使用。
@@ -384,7 +387,7 @@ autoAdjustScrollBarMargin(enable: boolean | undefined): T
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -488,7 +491,7 @@ enableScrollWithMouse(enabled: boolean | undefined): T
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -933,7 +936,7 @@ List/Grid组件编辑模式选项属性参数对象。
 
 下图是组件配置了边距属性后的示意图，可理解每种枚举对应的裁剪区域。
 
-![](./img/zh-cn_image_0000002626230340.png)
+![](./img/zh-cn_image_0000002631413224.png)
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
@@ -1423,7 +1426,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469651.gif)
+ ![](./img/zh-cn_image_0000002661732397.gif)
 
 #### [h2]示例2（设置边缘渐隐）
 
@@ -1467,7 +1470,7 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230288.gif)
+ ![](./img/zh-cn_image_0000002661612463.gif)
 
 #### [h2]示例3（设置裁剪区域）
 
@@ -1527,7 +1530,7 @@ struct ScrollExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070430.gif)
+ ![](./img/zh-cn_image_0000002661732455.gif)
 
 #### [h2]示例4（设置滚动条边距）
 
@@ -1583,4 +1586,4 @@ struct ListExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469707.gif)
+ ![](./img/zh-cn_image_0000002631253334.gif)

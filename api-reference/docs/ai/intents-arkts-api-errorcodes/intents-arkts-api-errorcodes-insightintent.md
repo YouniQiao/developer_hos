@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/intents-arkts-api-errorcodes-insightintent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:57.418766"
+content_hash: "4b9f2a82b57e"
+synced_at: "2026-07-09T01:01:42.540884"
 ---
 
 # ArkTS API错误码

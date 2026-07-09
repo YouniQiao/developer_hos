@@ -2,7 +2,8 @@
 title: "ArkTS错误码"
 upstream_id: "harmonyos-references/errorcode-account-kit"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:18.622778"
+content_hash: "2f30695f0657"
+synced_at: "2026-07-09T01:01:12.610225"
 ---
 
 # ArkTS错误码
@@ -173,7 +174,7 @@ Invalid input parameter value.
 
 处理步骤
 
-1. 在 AppGallery Connect（简称AGC）的[开发与服务](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myProject)中，选择对应的项目和对应的应用，在“常规 > 应用 ”下，找到**应用**的Client ID和APP ID。 ![](./img/zh-cn_image_0000002626229366.png) 若Client ID和APP ID不同：请检查module type为entry的模块下module.json5中的client_id是否配置或配置的值是否正确，参考[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)。
+1. 在AppGallery Connect（简称AGC）的[开发与服务](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html#/myProject)中，选择对应的项目和对应的应用，在“常规 > 应用 ”下，找到**应用**的Client ID和APP ID。 ![](./img/zh-cn_image_0000002661611519.png) 若Client ID和APP ID不同：请检查module type为entry的模块下module.json5中的client_id是否配置或配置的值是否正确，参考[配置Client ID](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/account-client-id)。
 2. 若Client ID和APP ID相同：可无需配置Client ID。
 3. 请在AppGallery Connect中重新申请Profile文件并重新进行签名。在调试阶段，请参考[申请调试Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-debug-profile-0000002248181278)，完成Profile申请并重新手动签名；在发布阶段，请参考[申请发布Profile](https://developer.huawei.com/consumer/cn/doc/app/agc-help-release-profile-0000002248341090)，完成Profile申请并重新手动签名。
 4. 需要通过授权API（[AuthorizationWithHuaweiIDRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/account-api-authentication#authorizationwithhuaweiidrequest)）获取到匿名手机号，将其作为参数调用一键登录接口。

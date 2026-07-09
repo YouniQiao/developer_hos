@@ -2,7 +2,8 @@
 title: "NetworkBoost_MultiPathRequestResult"
 upstream_id: "harmonyos-references/network-boost-c-struct-multipath_req_result"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:58.376972"
+content_hash: "4e6a31f008a5"
+synced_at: "2026-07-09T00:59:32.934064"
 ---
 
 # NetworkBoost_MultiPathRequestResult

@@ -2,7 +2,8 @@
 title: "CertManagerType"
 upstream_id: "harmonyos-references/capi-certmanagertype"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:41.621413"
+content_hash: "81b13629fbe6"
+synced_at: "2026-07-09T00:59:19.466386"
 ---
 
 # CertManagerType

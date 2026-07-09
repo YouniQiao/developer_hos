@@ -2,7 +2,8 @@
 title: "Class (Map)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-map"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:12.186973"
+content_hash: "7e8603a8a0f0"
+synced_at: "2026-07-09T00:57:23.123356"
 ---
 
 # Class (Map)
@@ -462,7 +463,7 @@ has(key: K): boolean
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| key | K | 是 | 待查找元素的值。 |
+| key | K | 是 | 待查找元素的键。 |
 
 返回值：
 

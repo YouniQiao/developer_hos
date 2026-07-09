@@ -2,7 +2,8 @@
 title: "native_drm_err.h"
 upstream_id: "harmonyos-references/capi-native-drm-err-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:20.255728"
+content_hash: "23bda4f06b78"
+synced_at: "2026-07-09T01:00:28.164966"
 ---
 
 # native_drm_err.h

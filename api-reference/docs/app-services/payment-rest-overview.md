@@ -2,7 +2,8 @@
 title: "公共说明"
 upstream_id: "harmonyos-references/payment-rest-overview"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:38.965340"
+content_hash: "a71b750b7fec"
+synced_at: "2026-07-09T01:01:29.817518"
 ---
 
 # 公共说明
@@ -304,7 +305,7 @@ pip install cryptography
  加签实现示例代码：
 
 ```
-// 排序拼接示例
+# 排序拼接示例
 def generate_sign_data(self, params):
     """
     生成待签名字符串
@@ -366,7 +367,7 @@ def _build_array_sign_data(self, arr):
         parts.append(self._build_sign_data(item))
     return ','.join(parts)
 
-// 加签示例
+# 加签示例
 import base64
 
 from cryptography.hazmat.primitives import hashes

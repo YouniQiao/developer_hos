@@ -2,7 +2,8 @@
 title: "Class (ExifMetadata)"
 upstream_id: "harmonyos-references/arkts-apis-image-exifmetadata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:23.038244"
+content_hash: "55c265755ea2"
+synced_at: "2026-07-09T01:00:30.593044"
 ---
 
 # Class (ExifMetadata)

@@ -2,7 +2,8 @@
 title: "OhosPixelMapInfos"
 upstream_id: "harmonyos-references/capi-image-ohospixelmapinfos"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:30.347476"
+content_hash: "786a8ba911ee"
+synced_at: "2026-07-09T01:00:36.037300"
 ---
 
 # OhosPixelMapInfos

@@ -2,7 +2,8 @@
 title: "tabs"
 upstream_id: "harmonyos-references/js-components-container-tabs"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:04.664580"
+content_hash: "eda3d4b2f1b0"
+synced_at: "2026-07-09T00:58:21.210417"
 ---
 
 # tabs
@@ -108,4 +109,4 @@ export default {
   },
 }
 ```
- ![](./img/zh-cn_image_0000002656470251.gif)
+ ![](./img/zh-cn_image_0000002631253888.gif)

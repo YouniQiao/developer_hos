@@ -2,7 +2,8 @@
 title: "全屏模态转场"
 upstream_id: "harmonyos-references/ts-universal-attributes-modal-transition"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:45.940875"
+content_hash: "2572ee17d8ea"
+synced_at: "2026-07-09T00:57:42.249931"
 ---
 
 # 全屏模态转场
@@ -33,7 +34,7 @@ bindContentCover(isShow: boolean, builder: CustomBuilder, type?: ModalTransition
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | isShow | boolean | 是 | 是否显示全屏模态页面。 -true：显示全屏模态页面。 -false：隐藏全屏模态页面。 从API version 10开始，该参数支持[$$](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-two-way-sync)双向绑定变量。 从API version 18开始，该参数支持[!!](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-new-binding#系统组件参数双向绑定)双向绑定变量。 |
-| builder | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 是 | 配置全屏模态页面内容。builder里面的根节点需要唯一。 |
+| builder | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 是 | 配置全屏模态页面内容。 |
 | type | [ModalTransition](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-sheet-transition#modaltransition) | 否 | 全屏模态页面的系统转场方式。 默认值：ModalTransition.DEFAULT。 **说明：** 与transition同时设置时，此属性不生效。 |
 
 返回值：
@@ -189,7 +190,7 @@ struct ModalTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349653.gif)
+ ![](./img/zh-cn_image_0000002631253230.gif)
 
 #### [h2]示例2（自定义转场动画）
 
@@ -302,7 +303,7 @@ struct ModalTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230240.gif)
+ ![](./img/zh-cn_image_0000002661612415.gif)
 
 #### [h2]示例3（上下切换转场）
 
@@ -399,7 +400,7 @@ struct ModalTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070330.gif)
+ ![](./img/zh-cn_image_0000002631413124.gif)
 
 #### [h2]示例4（透明度渐变转场）
 
@@ -497,7 +498,7 @@ struct ModalTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469607.gif)
+ ![](./img/zh-cn_image_0000002661732353.gif)
 
 #### [h2]示例5（设置不同效果的自定义转场）
 
@@ -612,7 +613,7 @@ struct ModalTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349655.gif)
+ ![](./img/zh-cn_image_0000002631253232.gif)
 
 #### [h2]示例6（设置全屏模态适配安全区）
 
@@ -674,4 +675,4 @@ struct SafeAreaController {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230242.png)
+ ![](./img/zh-cn_image_0000002661612417.png)

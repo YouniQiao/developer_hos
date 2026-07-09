@@ -2,7 +2,8 @@
 title: "crypto_asym_cipher.h"
 upstream_id: "harmonyos-references/capi-crypto-asym-cipher-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:30.959154"
+content_hash: "853af63acbfc"
+synced_at: "2026-07-09T00:59:12.381229"
 ---
 
 # crypto_asym_cipher.h

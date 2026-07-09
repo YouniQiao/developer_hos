@@ -2,7 +2,8 @@
 title: "tagSession (标准NFC-Tag TagSession)"
 upstream_id: "harmonyos-references/js-apis-tagsession"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:47.675933"
+content_hash: "e5b7606a2af4"
+synced_at: "2026-07-09T00:59:24.468584"
 ---
 
 # tagSession (标准NFC-Tag TagSession)

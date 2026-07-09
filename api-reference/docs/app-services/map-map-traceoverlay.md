@@ -2,7 +2,8 @@
 title: "Interface (TraceOverlay)"
 upstream_id: "harmonyos-references/map-map-traceoverlay"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:33.819434"
+content_hash: "28b203722cad"
+synced_at: "2026-07-09T01:01:25.690750"
 ---
 
 # Interface (TraceOverlay)

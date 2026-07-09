@@ -2,7 +2,8 @@
 title: "Resource"
 upstream_id: "harmonyos-references/js-apis-resource"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:23.148782"
+content_hash: "8cc38a39058b"
+synced_at: "2026-07-09T00:59:06.803425"
 ---
 
 # Resource

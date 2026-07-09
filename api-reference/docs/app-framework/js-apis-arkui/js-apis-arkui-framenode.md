@@ -2,7 +2,8 @@
 title: "FrameNode"
 upstream_id: "harmonyos-references/js-apis-arkui-framenode"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:26.454238"
+content_hash: "456418528822"
+synced_at: "2026-07-09T00:57:33.262620"
 ---
 
 # FrameNode
@@ -1589,7 +1590,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070206.gif)
+ ![](./img/zh-cn_image_0000002631412992.gif)
 
 #### [h2]commonAttribute12+
 
@@ -2116,7 +2117,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469483.gif)
+ ![](./img/zh-cn_image_0000002661732225.gif)
 
 #### [h2]setCrossLanguageOptions15+
 
@@ -8995,7 +8996,7 @@ struct FrameNodeTypeTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349531.png)
+ ![](./img/zh-cn_image_0000002631253104.png)
 
 #### 节点操作示例
 
@@ -10949,7 +10950,7 @@ struct CreateAnimationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230118.gif)
+ ![](./img/zh-cn_image_0000002661612287.gif)
 
 #### 滚动事件示例
 
@@ -11155,7 +11156,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070208.gif)
+ ![](./img/zh-cn_image_0000002631412994.gif)
 
 #### 检验NodeAdapter是否有效示例
 
@@ -11273,7 +11274,7 @@ struct ListNodeTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469485.gif)
+ ![](./img/zh-cn_image_0000002661732227.gif)
 
 #### 获取根节点示例
 

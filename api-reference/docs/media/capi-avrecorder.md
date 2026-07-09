@@ -2,7 +2,8 @@
 title: "AVRecorder"
 upstream_id: "harmonyos-references/capi-avrecorder"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:35.328728"
+content_hash: "9dc5eb11da3b"
+synced_at: "2026-07-09T01:00:39.675482"
 ---
 
 # AVRecorder

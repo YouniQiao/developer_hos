@@ -2,7 +2,8 @@
 title: "drawing_brush.h"
 upstream_id: "harmonyos-references/capi-drawing-brush-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:58.999926"
+content_hash: "a861141f5327"
+synced_at: "2026-07-09T01:00:54.619087"
 ---
 
 # drawing_brush.h

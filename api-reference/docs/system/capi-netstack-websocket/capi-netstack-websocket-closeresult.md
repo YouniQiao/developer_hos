@@ -2,7 +2,8 @@
 title: "WebSocket_CloseResult"
 upstream_id: "harmonyos-references/capi-netstack-websocket-closeresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:54.709185"
+content_hash: "768e4818dcb6"
+synced_at: "2026-07-09T00:59:29.903987"
 ---
 
 # WebSocket_CloseResult

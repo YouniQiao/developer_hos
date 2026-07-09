@@ -2,7 +2,8 @@
 title: "取消用户级凭证授权"
 upstream_id: "harmonyos-references/account-api-obtain-revoke-token"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:19.112438"
+content_hash: "14a0660954de"
+synced_at: "2026-07-09T01:01:12.873095"
 ---
 
 # 取消用户级凭证授权

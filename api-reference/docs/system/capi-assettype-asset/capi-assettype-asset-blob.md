@@ -2,7 +2,8 @@
 title: "Asset_Blob"
 upstream_id: "harmonyos-references/capi-assettype-asset-blob"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:29.085026"
+content_hash: "15e833cd44b5"
+synced_at: "2026-07-09T00:59:10.845417"
 ---
 
 # Asset_Blob

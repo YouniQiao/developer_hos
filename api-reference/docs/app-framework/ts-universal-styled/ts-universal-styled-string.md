@@ -2,7 +2,8 @@
 title: "属性字符串"
 upstream_id: "harmonyos-references/ts-universal-styled-string"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:19.868815"
+content_hash: "954ed3f3097a"
+synced_at: "2026-07-09T00:58:00.216933"
 ---
 
 # 属性字符串
@@ -550,7 +551,7 @@ TextShadowStyle | GestureStyle | ImageAttachment | ParagraphStyle | LineHeightSt
 | [UserDataSpan](#userdataspan) | UserDataSpan样式。 |
 | [UrlStyle](#urlstyle14) | 超链接样式。 |
 | [BackgroundColorStyle](#backgroundcolorstyle14) | 文本背景颜色样式。 |
-| [LineSpacingStyle](#linespacingstyle) | 文本行间距。**起始版本：** 26.0.0 |
+| [LineSpacingStyle](#linespacingstyle) | 文本行间距样式。**起始版本：** 26.0.0 |
 
 #### StyleOptions对象说明
 
@@ -674,7 +675,7 @@ constructor(value?: GestureStyleInterface)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [GestureStyleInterface](#gesturestyleinterface对象说明) | 否 | 事件设置项。 |
+| value | [GestureStyleInterface](#gesturestyleinterface对象说明) | 否 | 事件手势设置项。 |
 
 #### GestureStyleInterface对象说明
 
@@ -1109,7 +1110,7 @@ abstract onMeasure(measureInfo: CustomSpanMeasureInfo): CustomSpanMetrics
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| measureInfo | [CustomSpanMeasureInfo](#customspanmeasureinfo对象说明) | 是 | 文本的字体大小。 |
+| measureInfo | [CustomSpanMeasureInfo](#customspanmeasureinfo对象说明) | 是 | 自定义绘制Span的测量信息。 |
 
 返回值：
 
@@ -1576,7 +1577,7 @@ struct styled_string_process_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469877.png)
+ ![](./img/zh-cn_image_0000002631253508.png)
 
 #### [h2]示例2（设置事件）
 
@@ -1665,7 +1666,7 @@ struct styled_string_bind_events_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349925.png)
+ ![](./img/zh-cn_image_0000002661612691.png)
 
 #### [h2]示例3（设置文本样式）
 
@@ -1854,7 +1855,7 @@ struct styled_string_set_text_style_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230512.png)
+ ![](./img/zh-cn_image_0000002631413402.png)
 
 #### [h2]示例4（设置图片）
 
@@ -1988,7 +1989,7 @@ struct styled_string_set_image_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070602.gif)
+ ![](./img/zh-cn_image_0000002661732631.gif)
 
 #### [h2]示例5（设置文本行高和段落样式）
 
@@ -2147,7 +2148,7 @@ struct styled_string_set_lineheight_paragraphstyle_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469879.png)
+ ![](./img/zh-cn_image_0000002631253510.png)
 
 #### [h2]示例6（设置自定义绘制Span）
 
@@ -2307,7 +2308,7 @@ struct styled_string_set_customspan_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349927.gif)
+ ![](./img/zh-cn_image_0000002661612693.gif)
 
 #### [h2]示例7（支持存储自定义扩展信息）
 
@@ -2357,7 +2358,7 @@ struct styled_string_set_userdataspan_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230514.gif)
+ ![](./img/zh-cn_image_0000002631413404.gif)
 
 #### [h2]示例8（设置超链接）
 
@@ -2390,7 +2391,7 @@ struct styled_string_set_urlstyle_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070604.gif)
+ ![](./img/zh-cn_image_0000002661732633.gif)
 
 #### [h2]示例9 （给图片设置colorFilter）
 
@@ -2460,7 +2461,7 @@ struct styled_string_set_image_colorfilter_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469881.gif)
+ ![](./img/zh-cn_image_0000002631253512.gif)
 
 #### [h2]示例10（属性字符串的插入、删除、替换）
 
@@ -2536,7 +2537,7 @@ struct styled_string_modify_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349929.gif)
+ ![](./img/zh-cn_image_0000002661612695.gif)
 
 #### [h2]示例11（属性字符串的文本描边）
 
@@ -2609,7 +2610,7 @@ struct styled_string_strokewidth_strokecolor_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230516.png)
+ ![](./img/zh-cn_image_0000002631413406.png)
 
 #### [h2]示例12（fromHtml和toHtml互相转换）
 
@@ -2676,7 +2677,7 @@ struct styled_string_html_convert_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070606.gif)
+ ![](./img/zh-cn_image_0000002661732635.gif)
 
 #### [h2]示例13（多装饰线与加粗装饰线）
 
@@ -2748,7 +2749,7 @@ struct styled_string_set_decorationstyle_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469883.png)
+ ![](./img/zh-cn_image_0000002631253514.png)
 
 #### [h2]示例14（获取以vp为单位的图片尺寸）
 
@@ -2846,7 +2847,7 @@ struct styled_string_demo4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349931.gif)
+ ![](./img/zh-cn_image_0000002661612697.gif)
 
 #### [h2]示例15（设置段落自定义缩进）
 
@@ -2964,7 +2965,7 @@ struct leadingMarginSpanDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230518.gif)
+ ![](./img/zh-cn_image_0000002631413408.gif)
 
 #### [h2]示例16（使用supportSvg2属性时，SVG图片的显示效果）
 
@@ -3031,7 +3032,7 @@ struct styled_string_process_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469871.png)
+ ![](./img/zh-cn_image_0000002631253502.png)
 
 #### [h2]示例17（设置字体配置）
 
@@ -3138,7 +3139,7 @@ struct StyledStringFontConfigsDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070608.png)
+ ![](./img/zh-cn_image_0000002661732637.png)
 
 #### [h2]示例18（fromHtml转换）
 
@@ -3172,7 +3173,7 @@ struct html_convert_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469885.png)
+ ![](./img/zh-cn_image_0000002631253516.png)
 
 #### [h2]示例19（设置可变字体的属性）
 
@@ -3222,4 +3223,4 @@ struct StyledStringExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070520.gif)
+ ![](./img/zh-cn_image_0000002661732549.gif)

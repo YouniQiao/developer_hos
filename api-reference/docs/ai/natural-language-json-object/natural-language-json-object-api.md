@@ -2,7 +2,8 @@
 title: "jsonObject（实体的其他字段）"
 upstream_id: "harmonyos-references/natural-language-json-object-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:57.882010"
+content_hash: "c4a4321d1f32"
+synced_at: "2026-07-09T01:01:42.662271"
 ---
 
 # jsonObject（实体的其他字段）

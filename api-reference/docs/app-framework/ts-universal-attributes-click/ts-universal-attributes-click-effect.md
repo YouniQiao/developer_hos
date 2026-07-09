@@ -2,7 +2,8 @@
 title: "点击回弹效果"
 upstream_id: "harmonyos-references/ts-universal-attributes-click-effect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:41.370399"
+content_hash: "b70d4b0e21e3"
+synced_at: "2026-07-09T00:57:40.256877"
 ---
 
 # 点击回弹效果
@@ -144,4 +145,4 @@ struct ToggleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349613.gif)
+ ![](./img/zh-cn_image_0000002631253188.gif)

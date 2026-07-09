@@ -2,7 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-i"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:23.007809"
+content_hash: "ba3481ffb50c"
+synced_at: "2026-07-09T00:57:29.905370"
 ---
 
 # Interfaces (其他)

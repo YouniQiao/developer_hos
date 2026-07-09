@@ -2,7 +2,8 @@
 title: "Print_StringList"
 upstream_id: "harmonyos-references/capi-oh-print-print-stringlist"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:12.680870"
+content_hash: "1c204ad1a3c0"
+synced_at: "2026-07-09T00:59:44.238242"
 ---
 
 # Print_StringList

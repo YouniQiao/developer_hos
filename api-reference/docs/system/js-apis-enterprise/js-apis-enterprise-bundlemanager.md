@@ -2,7 +2,8 @@
 title: "@ohos.enterprise.bundleManager（包管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-bundlemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:22.646187"
+content_hash: "e87ce2f0a219"
+synced_at: "2026-07-09T00:59:51.743891"
 ---
 
 # @ohos.enterprise.bundleManager（包管理）
@@ -964,11 +965,13 @@ installMarketApps(admin: Want, bundleNames: Array<string>): void
 
 注意事项：
 
-1、调用该接口时必须保证网络畅通，否则会抛出9201002错误码。
+调用此接口时必须满足以下三个要求，否则会抛出9201002错误码。
+
+1、调用该接口时必须保证网络畅通
 
 2、传入的包名必须是应用市场已上架的应用包名，并且需要[在HEM平台上加入企业应用](https://developer.huawei.com/business/cn/doc/HEM/hem_user-guide_equipment_app-management-0000002468952084)
 
-3、调用此接口前，此设备必须通过[HEM部署](https://developer.huawei.com/business/cn/doc/HEM/hem_user-guide_add-reseller_management-resellerr-0000002469112100)。
+3、调用此接口前，此设备必须通过[HEM商用部署](https://developer.huawei.com/business/cn/doc/HEM/hem_user-guide_add-reseller_management-resellerr-0000002469112100)。
 
 需要权限： ohos.permission.ENTERPRISE_INSTALL_BUNDLE
 

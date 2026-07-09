@@ -2,7 +2,8 @@
 title: "VideoProcessing_ColorSpaceInfo"
 upstream_id: "harmonyos-references/capi-videoprocessing-videoprocessing-colorspaceinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:41.888265"
+content_hash: "2a807c8b04ca"
+synced_at: "2026-07-09T01:00:44.794538"
 ---
 
 # VideoProcessing_ColorSpaceInfo

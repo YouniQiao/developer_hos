@@ -2,7 +2,8 @@
 title: "OH_Drawing_Font_Metrics"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-font-metrics"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:05.773131"
+content_hash: "59792d18ae23"
+synced_at: "2026-07-09T01:01:00.373341"
 ---
 
 # OH_Drawing_Font_Metrics

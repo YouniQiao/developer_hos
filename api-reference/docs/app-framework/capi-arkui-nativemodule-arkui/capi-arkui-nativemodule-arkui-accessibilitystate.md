@@ -2,7 +2,8 @@
 title: "ArkUI_AccessibilityState"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-accessibilitystate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:53.767486"
+content_hash: "a0c52c677fd3"
+synced_at: "2026-07-09T00:58:44.096939"
 ---
 
 # ArkUI_AccessibilityState

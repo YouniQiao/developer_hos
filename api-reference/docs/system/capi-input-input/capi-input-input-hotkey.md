@@ -2,7 +2,8 @@
 title: "Input_Hotkey"
 upstream_id: "harmonyos-references/capi-input-input-hotkey"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:20.177848"
+content_hash: "625f449b5ef1"
+synced_at: "2026-07-09T00:59:50.288923"
 ---
 
 # Input_Hotkey

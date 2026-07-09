@@ -2,7 +2,8 @@
 title: "Socket错误码"
 upstream_id: "harmonyos-references/errorcode-net-socket"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:56.247341"
+content_hash: "2817f1e42365"
+synced_at: "2026-07-09T00:59:31.329757"
 ---
 
 # Socket错误码

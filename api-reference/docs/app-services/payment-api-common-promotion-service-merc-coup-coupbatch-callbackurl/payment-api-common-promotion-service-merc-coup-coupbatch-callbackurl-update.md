@@ -1,9 +1,12 @@
 ---
+
 title: "设置回调通知地址"
 upstream_id: "harmonyos-references/payment-api-common-promotion-service-merc-coup-coupbatch-callbackurl-update"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:46.784039"
+synced_at: "2026-07-09T01:01:35.111570"
+content_hash: "9e092d5689a9"
 ---
+
 
 # 设置回调通知地址
 

@@ -2,7 +2,8 @@
 title: "Interface (Stabilization)"
 upstream_id: "harmonyos-references/arkts-apis-camera-stabilization"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:13.232869"
+content_hash: "d7a9eaac1e62"
+synced_at: "2026-07-09T01:00:22.963488"
 ---
 
 # Interface (Stabilization)

@@ -1,9 +1,12 @@
 ---
+
 title: "查询券批次详情"
 upstream_id: "harmonyos-references/payment-api-common-promotion-service-merc-coup-coupbatch-query"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:46.554829"
+synced_at: "2026-07-09T01:01:34.862215"
+content_hash: "405c0e7f9574"
 ---
+
 
 # 查询券批次详情
 

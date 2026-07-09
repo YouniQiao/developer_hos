@@ -2,7 +2,8 @@
 title: "@system.network (网络状态)"
 upstream_id: "harmonyos-references/js-apis-system-network"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:56.028423"
+content_hash: "18c21895eaa7"
+synced_at: "2026-07-09T00:59:30.876846"
 ---
 
 # @system.network (网络状态)

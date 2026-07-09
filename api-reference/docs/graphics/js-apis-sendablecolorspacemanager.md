@@ -2,7 +2,8 @@
 title: "@ohos.graphics.sendableColorSpaceManager (可共享的色彩管理)"
 upstream_id: "harmonyos-references/js-apis-sendablecolorspacemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:51.625309"
+content_hash: "58c5116ad9c8"
+synced_at: "2026-07-09T01:00:50.900196"
 ---
 
 # @ohos.graphics.sendableColorSpaceManager (可共享的色彩管理)

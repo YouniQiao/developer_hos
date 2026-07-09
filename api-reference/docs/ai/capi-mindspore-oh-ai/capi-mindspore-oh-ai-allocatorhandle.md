@@ -2,7 +2,8 @@
 title: "OH_AI_AllocatorHandle"
 upstream_id: "harmonyos-references/capi-mindspore-oh-ai-allocatorhandle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:59.014341"
+content_hash: "6db0410d95ab"
+synced_at: "2026-07-09T01:01:43.914216"
 ---
 
 # OH_AI_AllocatorHandle

@@ -2,7 +2,8 @@
 title: "ToolBar"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-toolbar"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:56.421961"
+content_hash: "fb99195603ee"
+synced_at: "2026-07-09T00:58:17.962690"
 ---
 
 # ToolBar
@@ -291,7 +292,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070926.png)
+ ![](./img/zh-cn_image_0000002661732959.png)
 
 #### [h2]示例2（设置工具栏自定义样式）
 
@@ -390,7 +391,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470203.png)
+ ![](./img/zh-cn_image_0000002631253838.png)
 
 #### [h2]示例3（设置工具栏自定义播报）
 
@@ -467,4 +468,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070926.png)
+ ![](./img/zh-cn_image_0000002661732959.png)

@@ -2,7 +2,8 @@
 title: "Hid_EventProperties"
 upstream_id: "harmonyos-references/capi-hidddk-hid-eventproperties"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:33.097922"
+content_hash: "75f0ef513211"
+synced_at: "2026-07-09T00:59:55.946187"
 ---
 
 # Hid_EventProperties

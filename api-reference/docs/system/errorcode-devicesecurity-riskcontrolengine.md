@@ -2,7 +2,8 @@
 title: "StarShieldConfidentialRiskControlEngine（星盾机密风控引擎）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-riskcontrolengine"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:35.693961"
+content_hash: "7d0391d08eee"
+synced_at: "2026-07-09T00:59:15.583779"
 ---
 
 # StarShieldConfidentialRiskControlEngine（星盾机密风控引擎）

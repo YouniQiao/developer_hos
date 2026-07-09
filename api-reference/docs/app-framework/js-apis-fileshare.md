@@ -2,7 +2,8 @@
 title: "@ohos.fileshare (文件分享)"
 upstream_id: "harmonyos-references/js-apis-fileshare"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:14.066706"
+content_hash: "04e2f869936d"
+synced_at: "2026-07-09T00:59:00.266693"
 ---
 
 # @ohos.fileshare (文件分享)

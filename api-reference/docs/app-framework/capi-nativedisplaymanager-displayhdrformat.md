@@ -2,7 +2,8 @@
 title: "NativeDisplayManager_DisplayHdrFormat"
 upstream_id: "harmonyos-references/capi-nativedisplaymanager-displayhdrformat"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:57.063853"
+content_hash: "53ef1f994beb"
+synced_at: "2026-07-09T00:58:46.309710"
 ---
 
 # NativeDisplayManager_DisplayHdrFormat
@@ -27,5 +28,5 @@ typedef struct {...} NativeDisplayManager_DisplayHdrFormat
 
 | 名称 | 描述 |
 | --- | --- |
-| uint32_t hdrFormatLength | 显示设备的HDR格式长度。 |
-| uint32_t* hdrFormats | 显示设备的HDR格式数据。 |
+| uint32_t hdrFormatLength | 显示设备支持的HDR格式数量。 |
+| uint32_t* hdrFormats | 显示设备支持的HDR格式数据。 |

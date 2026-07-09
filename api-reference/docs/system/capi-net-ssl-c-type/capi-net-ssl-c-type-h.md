@@ -2,7 +2,8 @@
 title: "net_ssl_c_type.h"
 upstream_id: "harmonyos-references/capi-net-ssl-c-type-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:53.261552"
+content_hash: "d6b68ea1cda2"
+synced_at: "2026-07-09T00:59:28.769991"
 ---
 
 # net_ssl_c_type.h

@@ -2,7 +2,8 @@
 title: "共享元素转场 (sharedTransition)"
 upstream_id: "harmonyos-references/ts-transition-animation-shared-elements"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:40.971767"
+content_hash: "22f99e64a2cb"
+synced_at: "2026-07-09T00:58:07.816327"
 ---
 
 # 共享元素转场 (sharedTransition)
@@ -102,4 +103,4 @@ struct PageBExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070812.gif)
+ ![](./img/zh-cn_image_0000002661612905.gif)

@@ -2,7 +2,8 @@
 title: "动态属性设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-attribute-modifier"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:46.862532"
+content_hash: "4c57056da11f"
+synced_at: "2026-07-09T00:57:42.885490"
 ---
 
 # 动态属性设置
@@ -390,7 +391,7 @@ struct attributeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070338.gif)
+ ![](./img/zh-cn_image_0000002631413132.gif)
 
 #### [h2]示例2（组件绑定Modifier实现按压态效果）
 
@@ -426,7 +427,7 @@ struct attributePressedDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070338.gif)
+ ![](./img/zh-cn_image_0000002631413132.gif)
 
 #### [h2]示例3（自定义Modifier不支持感知@State装饰的状态数据变化）
 
@@ -482,7 +483,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469615.gif)
+ ![](./img/zh-cn_image_0000002661732361.gif)
 
 #### [h2]示例4（Modifier和自定义Modifier的属性同时生效）
 
@@ -546,7 +547,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349663.gif)
+ ![](./img/zh-cn_image_0000002631253240.gif)
 
 #### [h2]示例5（组件绑定Modifier获焦样式）
 
@@ -590,7 +591,7 @@ struct attributeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230250.gif)
+ ![](./img/zh-cn_image_0000002661612425.gif)
 
 #### [h2]示例6（组件绑定Modifier禁用状态的样式）
 
@@ -628,7 +629,7 @@ struct attributeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070340.gif)
+ ![](./img/zh-cn_image_0000002631413134.gif)
 
 #### [h2]示例7（组件绑定Modifier选中状态样式）
 
@@ -674,7 +675,7 @@ struct attributeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469617.gif)
+ ![](./img/zh-cn_image_0000002661732363.gif)
 
 #### [h2]示例8（自定义组件绑定Modifier实现按压态效果）
 
@@ -723,4 +724,4 @@ struct ChildComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349665.gif)
+ ![](./img/zh-cn_image_0000002631253244.gif)

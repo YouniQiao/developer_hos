@@ -2,7 +2,8 @@
 title: "OH_NativeBuffer_Cta861"
 upstream_id: "harmonyos-references/capi-oh-nativebuffer-oh-nativebuffer-cta861"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:04.829257"
+content_hash: "ceb23e1fa3c2"
+synced_at: "2026-07-09T01:00:59.956844"
 ---
 
 # OH_NativeBuffer_Cta861

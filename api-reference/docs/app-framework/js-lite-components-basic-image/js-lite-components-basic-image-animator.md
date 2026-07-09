@@ -2,7 +2,8 @@
 title: "image-animator"
 upstream_id: "harmonyos-references/js-lite-components-basic-image-animator"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:19.155377"
+content_hash: "aabede675f92"
+synced_at: "2026-07-09T00:58:27.441927"
 ---
 
 # image-animator
@@ -199,4 +200,4 @@ export default {
   },
 };
 ```
- ![](./img/zh-cn_image_0000002656350521.gif)
+ ![](./img/zh-cn_image_0000002661613293.gif)

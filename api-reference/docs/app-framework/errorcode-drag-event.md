@@ -1,9 +1,12 @@
 ---
+
 title: "拖拽事件错误码"
 upstream_id: "harmonyos-references/errorcode-drag-event"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:00.212442"
+synced_at: "2026-07-09T00:58:48.443709"
+content_hash: "689b124d5444"
 ---
+
 
 # 拖拽事件错误码
 

@@ -2,7 +2,8 @@
 title: "FG_Vec3D"
 upstream_id: "harmonyos-references/_f_g___vec3_d"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:13.711078"
+content_hash: "5d2f1e756704"
+synced_at: "2026-07-09T01:01:07.901691"
 ---
 
 # FG_Vec3D

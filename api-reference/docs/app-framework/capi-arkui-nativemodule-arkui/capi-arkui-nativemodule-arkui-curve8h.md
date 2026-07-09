@@ -2,7 +2,8 @@
 title: "ArkUI_Curve*"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-curve8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:45.221230"
+content_hash: "04e06ce23486"
+synced_at: "2026-07-09T00:58:39.260214"
 ---
 
 # ArkUI_Curve*

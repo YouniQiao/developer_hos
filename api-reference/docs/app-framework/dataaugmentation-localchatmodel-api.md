@@ -2,7 +2,8 @@
 title: "localChatModel（端侧问答模型）"
 upstream_id: "harmonyos-references/dataaugmentation-localchatmodel-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:16.704030"
+content_hash: "761749816504"
+synced_at: "2026-07-09T00:59:01.916816"
 ---
 
 # localChatModel（端侧问答模型）

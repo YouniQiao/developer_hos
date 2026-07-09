@@ -2,7 +2,8 @@
 title: "@ohos.abilityAccessCtrl (程序访问控制管理)"
 upstream_id: "harmonyos-references/js-apis-abilityaccessctrl"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:49.843381"
+content_hash: "114c73d909cf"
+synced_at: "2026-07-09T00:57:06.714750"
 ---
 
 # @ohos.abilityAccessCtrl (程序访问控制管理)
@@ -244,7 +245,7 @@ requestPermissionsFromUser(context: Context, permissionList: Array<Permissions>,
 
 如果用户拒绝授权，将无法再次拉起弹框，需要用户在系统应用“设置”的界面中，手动授予权限，或是调用[requestPermissionOnSetting](#requestpermissiononsetting12)，拉起权限设置弹框，引导用户授权。
 
-![](./img/zh-cn_image_0000002656349477.png)
+![](./img/zh-cn_image_0000002631412936.png)
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -365,7 +366,7 @@ requestPermissionOnSetting(context: Context, permissionList: Array<Permissions>)
 
 在调用此接口前，应用需要先调用[requestPermissionsFromUser](#requestpermissionsfromuser9)，如果用户在首次弹窗授权时已授权，调用当前接口将无法拉起弹窗。
 
-![](./img/zh-cn_image_0000002626230064.png)
+![](./img/zh-cn_image_0000002661732169.png)
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -424,7 +425,7 @@ requestGlobalSwitch(context: Context, type: SwitchType): Promise<boolean>
 
 在某些情况下，如果录音、拍照等功能被禁用，应用可拉起此弹框请求用户同意开启对应功能。如果当前全局开关的状态为开启，则不拉起弹框。
 
-![](./img/zh-cn_image_0000002626070154.png)
+![](./img/zh-cn_image_0000002631253048.png)
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 

@@ -2,7 +2,8 @@
 title: "OH_Drawing_FontFallbackGroup"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-fontfallbackgroup"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:06.356424"
+content_hash: "6c82679c299e"
+synced_at: "2026-07-09T01:01:00.756456"
 ---
 
 # OH_Drawing_FontFallbackGroup

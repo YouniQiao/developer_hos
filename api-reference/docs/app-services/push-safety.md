@@ -1,9 +1,12 @@
 ---
+
 title: "安全访问要求"
 upstream_id: "harmonyos-references/push-safety"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:49.727216"
+synced_at: "2026-07-09T01:01:37.813726"
+content_hash: "e94eaf12b7bc"
 ---
+
 
 # 安全访问要求
 

@@ -2,7 +2,8 @@
 title: "appInfoManager（应用元数据管理服务）"
 upstream_id: "harmonyos-references/appgallery-appinfomanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:22.410356"
+content_hash: "aa960183b337"
+synced_at: "2026-07-09T01:01:15.058805"
 ---
 
 # appInfoManager（应用元数据管理服务）
@@ -23,6 +24,8 @@ import { appInfoManager } from '@kit.AppGalleryKit';
 
 动态图标信息。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.AppGalleryService.AppInfoManager
 
 起始版本： 5.0.3(15)
@@ -38,6 +41,8 @@ import { appInfoManager } from '@kit.AppGalleryKit';
 queryDynamicIcons(): Promise<DynamicIconInfo[]>
 
 查询动态图标信息。使用Promise异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.AppGalleryService.AppInfoManager
 
@@ -117,6 +122,8 @@ selectDynamicIcon(iconId: string): Promise<void>
 
 选择动态图标。使用Promise异步回调。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.AppGalleryService.AppInfoManager
 
 起始版本： 5.0.3(15)
@@ -170,6 +177,8 @@ try {
 disableDynamicIcon(): Promise<void>
 
 禁用动态图标，恢复默认图标。使用Promise异步回调。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.AppGalleryService.AppInfoManager
 

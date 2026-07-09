@@ -2,7 +2,8 @@
 title: "PasteButton"
 upstream_id: "harmonyos-references/ts-security-components-pastebutton"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:47.488885"
+content_hash: "909c018ef301"
+synced_at: "2026-07-09T00:58:10.908481"
 ---
 
 # PasteButton
@@ -218,4 +219,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350185.png)
+ ![](./img/zh-cn_image_0000002661732893.png)

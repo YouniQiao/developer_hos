@@ -2,7 +2,8 @@
 title: "ffrt_deps_t"
 upstream_id: "harmonyos-references/capi-ffrt-ffrt-deps-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:16.745725"
+content_hash: "a79f15b18765"
+synced_at: "2026-07-09T00:59:47.958465"
 ---
 
 # ffrt_deps_t

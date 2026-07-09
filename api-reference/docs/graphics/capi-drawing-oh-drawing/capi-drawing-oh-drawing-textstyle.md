@@ -2,7 +2,8 @@
 title: "OH_Drawing_TextStyle"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-textstyle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:07.986256"
+content_hash: "4018f48d43d8"
+synced_at: "2026-07-09T01:01:02.155819"
 ---
 
 # OH_Drawing_TextStyle

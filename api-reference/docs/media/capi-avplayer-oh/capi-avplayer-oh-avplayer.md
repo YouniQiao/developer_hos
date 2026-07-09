@@ -2,7 +2,8 @@
 title: "OH_AVPlayer"
 upstream_id: "harmonyos-references/capi-avplayer-oh-avplayer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:38.833988"
+content_hash: "252561d9aef1"
+synced_at: "2026-07-09T01:00:42.552738"
 ---
 
 # OH_AVPlayer

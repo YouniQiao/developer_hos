@@ -2,7 +2,8 @@
 title: "HTTP错误码"
 upstream_id: "harmonyos-references/errorcode-net-http"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:56.118932"
+content_hash: "d2894aa01365"
+synced_at: "2026-07-09T00:59:31.221080"
 ---
 
 # HTTP错误码

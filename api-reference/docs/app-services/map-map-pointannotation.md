@@ -2,7 +2,8 @@
 title: "Interface (PointAnnotation)"
 upstream_id: "harmonyos-references/map-map-pointannotation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:32.636027"
+content_hash: "dbef8231cc7f"
+synced_at: "2026-07-09T01:01:24.615397"
 ---
 
 # Interface (PointAnnotation)

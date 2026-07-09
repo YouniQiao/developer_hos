@@ -2,7 +2,8 @@
 title: "CanvasRenderingContext2D对象"
 upstream_id: "harmonyos-references/js-lite-components-canvas-canvasrenderingcontext2d"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:21.798084"
+content_hash: "ce1b4dab3084"
+synced_at: "2026-07-09T00:58:28.846191"
 ---
 
 # CanvasRenderingContext2D对象
@@ -31,7 +32,7 @@ export default {
   },
 }
 ```
- ![](./img/zh-cn_image_0000002656470479.png)
+ ![](./img/zh-cn_image_0000002631254116.png)
 
 #### fillRect()
 
@@ -48,7 +49,7 @@ export default {
 
 示例：
 
-![](./img/zh-cn_image_0000002656350527.png)
+![](./img/zh-cn_image_0000002661613299.png)
 
 ```
 ctx.fillRect(20, 20, 200, 150);
@@ -66,7 +67,7 @@ ctx.fillRect(20, 20, 200, 150);
 
 示例：
 
-![](./img/zh-cn_image_0000002626231114.png)
+![](./img/zh-cn_image_0000002631414010.png)
 
 ```
 ctx.fillStyle = '#0000ff';
@@ -88,7 +89,7 @@ ctx.fillRect(20, 20, 150, 100);
 
 示例：
 
-![](./img/zh-cn_image_0000002626071204.png)
+![](./img/zh-cn_image_0000002661733239.png)
 
 ```
 ctx.strokeRect(30, 30, 200, 150);
@@ -108,7 +109,7 @@ ctx.strokeRect(30, 30, 200, 150);
 
 示例：
 
-![](./img/zh-cn_image_0000002656470481.png)
+![](./img/zh-cn_image_0000002631254118.png)
 
 ```
 ctx.font = '35px sans-serif';
@@ -127,7 +128,7 @@ ctx.fillText("Hello World!", 20, 60);
 
 示例：
 
-![](./img/zh-cn_image_0000002656350529.png)
+![](./img/zh-cn_image_0000002661613301.png)
 
 ```
 ctx.lineWidth = 5;
@@ -146,7 +147,7 @@ ctx.strokeRect(25, 25, 85, 105);
 
 示例：
 
-![](./img/zh-cn_image_0000002626231116.png)
+![](./img/zh-cn_image_0000002631414012.png)
 
 ```
 ctx.lineWidth = 10;
@@ -160,7 +161,7 @@ ctx.strokeRect(25, 25, 155, 105);
 
 示例：
 
-![](./img/zh-cn_image_0000002626071206.png)
+![](./img/zh-cn_image_0000002661733241.png)
 
 ```
 ctx.moveTo(25, 25);
@@ -175,7 +176,7 @@ ctx.stroke();
 
 示例：
 
-![](./img/zh-cn_image_0000002656470483.png)
+![](./img/zh-cn_image_0000002631254120.png)
 
 ```
 ctx.beginPath();
@@ -199,7 +200,7 @@ ctx.stroke();
 
 示例：
 
-![](./img/zh-cn_image_0000002656350531.png)
+![](./img/zh-cn_image_0000002661613303.png)
 
 ```
 ctx.beginPath();
@@ -221,7 +222,7 @@ ctx.stroke();
 
 示例：
 
-![](./img/zh-cn_image_0000002626231118.png)
+![](./img/zh-cn_image_0000002631414014.png)
 
 ```
 ctx.beginPath();
@@ -236,7 +237,7 @@ ctx.stroke();
 
 示例：
 
-![](./img/zh-cn_image_0000002626071208.png)
+![](./img/zh-cn_image_0000002661733243.png)
 
 ```
 ctx.beginPath();
@@ -259,7 +260,7 @@ ctx.stroke();
 
 示例：
 
-![](./img/zh-cn_image_0000002656470485.png)
+![](./img/zh-cn_image_0000002631254122.png)
 
 ```
 ctx.font = '30px sans-serif';
@@ -278,7 +279,7 @@ ctx.fillText("Hello World", 20, 60);
 
 示例：
 
-![](./img/zh-cn_image_0000002656350533.png)
+![](./img/zh-cn_image_0000002661613305.png)
 
 ```
 ctx.strokeStyle = '#0000ff';
@@ -314,7 +315,7 @@ ctx.fillText('textAlign=right',140, 140);
 
 示例：
 
-![](./img/zh-cn_image_0000002626231120.png)
+![](./img/zh-cn_image_0000002631414016.png)
 
 ```
 ctx.beginPath();
@@ -337,7 +338,7 @@ ctx.stroke();
 
 示例：
 
-![](./img/zh-cn_image_0000002626071210.png)
+![](./img/zh-cn_image_0000002661733245.png)
 
 ```
 ctx.rect(20, 20, 100, 100); // Create a 100*100 rectangle at (20, 20)

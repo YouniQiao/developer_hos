@@ -2,7 +2,8 @@
 title: "@ohos.request (上传下载)"
 upstream_id: "harmonyos-references/js-apis-request"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:07.684590"
+content_hash: "3dd2c496bad7"
+synced_at: "2026-07-09T00:59:41.088904"
 ---
 
 # @ohos.request (上传下载)

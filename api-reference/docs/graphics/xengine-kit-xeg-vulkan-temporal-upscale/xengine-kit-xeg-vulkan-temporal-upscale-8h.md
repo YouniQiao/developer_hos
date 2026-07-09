@@ -2,7 +2,8 @@
 title: "xeg_vulkan_temporal_upscale.h"
 upstream_id: "harmonyos-references/xengine-kit-xeg-vulkan-temporal-upscale-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:16.115033"
+content_hash: "b09466c2e73b"
+synced_at: "2026-07-09T01:01:09.914264"
 ---
 
 # xeg_vulkan_temporal_upscale.h

@@ -2,7 +2,8 @@
 title: "@ohos.data.dataShare (数据共享)"
 upstream_id: "harmonyos-references/js-apis-data-datashare"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:01.906313"
+content_hash: "de990d8c0c8d"
+synced_at: "2026-07-09T00:57:14.546564"
 ---
 
 # @ohos.data.dataShare (数据共享)

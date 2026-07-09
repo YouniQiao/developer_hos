@@ -2,7 +2,8 @@
 title: "TextReaderIcon（朗读听筒图标）"
 upstream_id: "harmonyos-references/speech-textreadericon"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:00.631588"
+content_hash: "4730f48552a2"
+synced_at: "2026-07-09T01:01:45.056725"
 ---
 
 # TextReaderIcon（朗读听筒图标）

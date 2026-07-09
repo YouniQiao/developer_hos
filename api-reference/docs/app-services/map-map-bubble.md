@@ -2,7 +2,8 @@
 title: "Interface (Bubble)"
 upstream_id: "harmonyos-references/map-map-bubble"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:32.809183"
+content_hash: "51c332a85184"
+synced_at: "2026-07-09T01:01:24.769794"
 ---
 
 # Interface (Bubble)

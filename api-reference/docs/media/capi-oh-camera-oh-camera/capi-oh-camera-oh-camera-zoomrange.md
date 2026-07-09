@@ -2,7 +2,8 @@
 title: "OH_Camera_ZoomRange"
 upstream_id: "harmonyos-references/capi-oh-camera-oh-camera-zoomrange"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:18.917413"
+content_hash: "2e10c9f053be"
+synced_at: "2026-07-09T01:00:27.359119"
 ---
 
 # OH_Camera_ZoomRange

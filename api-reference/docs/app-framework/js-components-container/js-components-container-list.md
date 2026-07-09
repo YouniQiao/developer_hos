@@ -2,7 +2,8 @@
 title: "list"
 upstream_id: "harmonyos-references/js-components-container-list"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:03.042632"
+content_hash: "91e5d28c808d"
+synced_at: "2026-07-09T00:58:20.463037"
 ---
 
 # list
@@ -152,4 +153,4 @@ export default {
   },
 }
 ```
- ![](./img/zh-cn_image_0000002656470247.png)
+ ![](./img/zh-cn_image_0000002631253884.png)

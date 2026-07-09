@@ -2,7 +2,8 @@
 title: "modular_object_extension_manager.h"
 upstream_id: "harmonyos-references/capi-modular-object-extension-manager-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:59.035577"
+content_hash: "a8b678bfec93"
+synced_at: "2026-07-09T00:57:13.151808"
 ---
 
 # modular_object_extension_manager.h

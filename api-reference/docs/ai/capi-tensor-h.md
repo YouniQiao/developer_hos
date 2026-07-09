@@ -2,7 +2,8 @@
 title: "tensor.h"
 upstream_id: "harmonyos-references/capi-tensor-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:58.456203"
+content_hash: "186d9699d51f"
+synced_at: "2026-07-09T01:01:43.596491"
 ---
 
 # tensor.h

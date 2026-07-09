@@ -2,7 +2,8 @@
 title: "ArkUI_FloatPropertyHandle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-floatpropertyhandle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:57.565955"
+content_hash: "9d17af9efbc5"
+synced_at: "2026-07-09T00:58:46.654376"
 ---
 
 # ArkUI_FloatPropertyHandle

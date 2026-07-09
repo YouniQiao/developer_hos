@@ -2,7 +2,8 @@
 title: "属性"
 upstream_id: "harmonyos-references/arkts-basic-components-web-attributes"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:05.844288"
+content_hash: "e4dafc114fce"
+synced_at: "2026-07-09T00:58:53.765490"
 ---
 
 # 属性
@@ -13,6 +14,10 @@ synced_at: "2026-06-24T20:50:05.844288"
 
 - 该组件首批接口从API version 8开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
 - 示例效果请以真机运行为准。
+
+#### 概述
+
+Web组件属性用于在ArkUI声明式语法下以链式调用的方式配置Web组件的网页加载行为、安全策略、运行环境与交互能力，是定制Web组件行为的主要入口。其中通用的样式与布局类属性（如尺寸、边距、背景、可见性等）请参考[尺寸设置](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size)，本章仅描述Web组件特有的属性；运行期动态控制类能力（如加载URL、前进后退、注册/反注册JS对象、运行JavaScript、注入CSS等）请配合[WebviewController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller)使用。
 
 #### domStorageAccess
 
@@ -1525,8 +1530,9 @@ javaScriptOnDocumentStart(scripts: Array<ScriptItem>)
 
 - 网页文档根元素（HTML Element）创建后、但尚未加载任何其他内容之前注入脚本。
 - 该脚本按照字典序执行，非数组本身顺序，若需数组本身顺序，建议使用[runJavaScriptOnDocumentStart](#runjavascriptondocumentstart15)接口。
-- 不建议与[runJavaScriptOnDocumentStart](#runjavascriptondocumentstart15)同时使用。
 - 内容相同的脚本多次注入时将被静默去重，不展示，不提醒，使用首次注入时的scriptRules。
+- 本接口不支持[UrlRegexRule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-i#urlregexrule23)。
+- 建议使用[runJavaScriptOnDocumentStart](#runjavascriptondocumentstart15)代替。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -1602,8 +1608,9 @@ javaScriptOnDocumentEnd(scripts: Array<ScriptItem>)
 
 - 该脚本将在页面的任何JavaScript代码之后运行，并且DOM树此时已经加载、渲染完毕。
 - 该脚本按照字典序执行，非数组本身顺序。
-- 不建议与[runJavaScriptOnDocumentEnd](#runjavascriptondocumentend15)同时使用。
 - 内容相同的脚本多次注入时将被静默去重，不展示，不提醒，使用首次注入时的scriptRules。
+- 本接口不支持[UrlRegexRule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-i#urlregexrule23)。
+- 建议使用[runJavaScriptOnDocumentEnd](#runjavascriptondocumentend15)代替。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -1667,7 +1674,6 @@ runJavaScriptOnDocumentStart(scripts: Array<ScriptItem>)
 
 - 网页文档根元素（HTML Element）创建后、但尚未加载任何其他内容之前注入脚本。
 - 该脚本按照数组本身顺序执行。
-- 不建议与[javaScriptOnDocumentStart](#javascriptondocumentstart11)同时使用。
 - 内容相同的脚本多次注入时将被静默去重，不展示，不提醒，使用首次注入时的scriptRules。
 
 系统能力： SystemCapability.Web.Webview.Core
@@ -1747,7 +1753,6 @@ runJavaScriptOnDocumentEnd(scripts: Array<ScriptItem>)
 
 - 该脚本将在页面的任何JavaScript代码之后运行，并且DOM树此时已经加载、渲染完毕。
 - 该脚本按照数组本身顺序执行。
-- 不建议与[javaScriptOnDocumentEnd](#javascriptondocumentend11)同时使用。
 - 内容相同的脚本多次注入时将被静默去重，不展示，不提醒，使用首次注入时的scriptRules。
 
 系统能力： SystemCapability.Web.Webview.Core

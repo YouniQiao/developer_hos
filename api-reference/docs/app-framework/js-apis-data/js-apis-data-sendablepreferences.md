@@ -2,7 +2,8 @@
 title: "@ohos.data.sendablePreferences (共享用户首选项)"
 upstream_id: "harmonyos-references/js-apis-data-sendablepreferences"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:02.571595"
+content_hash: "6e15ff788144"
+synced_at: "2026-07-09T00:57:16.159934"
 ---
 
 # @ohos.data.sendablePreferences (共享用户首选项)

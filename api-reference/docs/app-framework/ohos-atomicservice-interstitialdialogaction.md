@@ -2,7 +2,8 @@
 title: "InterstitialDialogAction"
 upstream_id: "harmonyos-references/ohos-atomicservice-interstitialdialogaction"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:48.827434"
+content_hash: "40944d7ae8a3"
+synced_at: "2026-07-09T00:58:12.548152"
 ---
 
 # InterstitialDialogAction
@@ -256,7 +257,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230784.png)
+ ![](./img/zh-cn_image_0000002631253784.png)
 
 #### [h2]示例2
 
@@ -381,4 +382,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070874.png)
+ ![](./img/zh-cn_image_0000002661612967.png)

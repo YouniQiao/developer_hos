@@ -2,7 +2,8 @@
 title: "ArcAlphabetIndexer"
 upstream_id: "harmonyos-references/ts-container-arc-alphabet-indexer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:24.648042"
+content_hash: "eb41abfb661f"
+synced_at: "2026-07-09T00:58:01.294886"
 ---
 
 # ArcAlphabetIndexer
@@ -315,7 +316,7 @@ type OnSelectCallback = (index: number) => void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| index | number | 是 | 选中项序号。 |
+| index | number | 是 | 选中项索引值。 |
 
 #### 示例
 
@@ -418,4 +419,4 @@ struct ArcListAndIndexer {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070682.gif)
+ ![](./img/zh-cn_image_0000002661732711.gif)

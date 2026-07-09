@@ -2,7 +2,8 @@
 title: "SplitLayout"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-splitlayout"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:55.465142"
+content_hash: "e5fdf391a581"
+synced_at: "2026-07-09T00:58:16.390105"
 ---
 
 # SplitLayout
@@ -81,12 +82,12 @@ struct Index {
 ```
  小于等于600vp布局：
 
-![](./img/zh-cn_image_0000002626230828.png)
+![](./img/zh-cn_image_0000002631413722.png)
 
 大于600vp且小于等于840vp的布局：
 
-![](./img/zh-cn_image_0000002626070918.png)
+![](./img/zh-cn_image_0000002661732951.png)
 
 大于840vp布局：
 
-![](./img/zh-cn_image_0000002656470195.png)
+![](./img/zh-cn_image_0000002631253830.png)

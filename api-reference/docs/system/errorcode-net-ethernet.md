@@ -1,9 +1,12 @@
 ---
+
 title: "以太网连接错误码"
 upstream_id: "harmonyos-references/errorcode-net-ethernet"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:56.309236"
+synced_at: "2026-07-09T00:59:31.186833"
+content_hash: "332a733e8488"
 ---
+
 
 # 以太网连接错误码
 

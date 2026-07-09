@@ -2,7 +2,8 @@
 title: "avplayer.h"
 upstream_id: "harmonyos-references/capi-avplayer-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:36.544058"
+content_hash: "c5a0a95a2eac"
+synced_at: "2026-07-09T01:00:41.494515"
 ---
 
 # avplayer.h

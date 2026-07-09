@@ -2,7 +2,8 @@
 title: "废弃的Interface (CaptureSession, deprecated)"
 upstream_id: "harmonyos-references/arkts-apis-camera-capturesession"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:14.395662"
+content_hash: "5e94a79f23ee"
+synced_at: "2026-07-09T01:00:24.606400"
 ---
 
 # 废弃的Interface (CaptureSession, deprecated)

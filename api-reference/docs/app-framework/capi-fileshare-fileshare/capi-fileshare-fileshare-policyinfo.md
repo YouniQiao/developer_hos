@@ -2,7 +2,8 @@
 title: "FileShare_PolicyInfo"
 upstream_id: "harmonyos-references/capi-fileshare-fileshare-policyinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:15.556570"
+content_hash: "5ecaba68ea8a"
+synced_at: "2026-07-09T00:59:01.233989"
 ---
 
 # FileShare_PolicyInfo

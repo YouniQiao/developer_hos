@@ -2,7 +2,8 @@
 title: "@hms.enterpriseSpaceService.spaceManager(空间管理)"
 upstream_id: "harmonyos-references/enterprisespace-spacemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:24.408444"
+content_hash: "0812ef715665"
+synced_at: "2026-07-09T01:01:17.833446"
 ---
 
 # @hms.enterpriseSpaceService.spaceManager(空间管理)

@@ -2,7 +2,8 @@
 title: "ArcListItem"
 upstream_id: "harmonyos-references/ts-container-arclistitem"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:54.821802"
+content_hash: "31c540356023"
+synced_at: "2026-07-09T00:57:46.854120"
 ---
 
 # ArcListItem
@@ -141,4 +142,4 @@ struct ArcListItemExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349713.png)
+ ![](./img/zh-cn_image_0000002631253292.png)

@@ -2,7 +2,8 @@
 title: "ffrt_loop_t"
 upstream_id: "harmonyos-references/capi-ffrt-ffrt-loop-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:17.389339"
+content_hash: "fd54e4c33e2b"
+synced_at: "2026-07-09T00:59:48.121797"
 ---
 
 # ffrt_loop_t

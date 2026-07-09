@@ -2,7 +2,8 @@
 title: "Vulkan"
 upstream_id: "harmonyos-references/capi-vulkan"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:05.636089"
+content_hash: "f13d0ccb3ac9"
+synced_at: "2026-07-09T01:01:49.224696"
 ---
 
 # Vulkan

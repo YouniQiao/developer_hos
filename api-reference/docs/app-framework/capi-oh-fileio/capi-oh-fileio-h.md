@@ -2,7 +2,8 @@
 title: "oh_fileio.h"
 upstream_id: "harmonyos-references/capi-oh-fileio-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:15.200595"
+content_hash: "b1c4e1c3a701"
+synced_at: "2026-07-09T00:59:01.012920"
 ---
 
 # oh_fileio.h

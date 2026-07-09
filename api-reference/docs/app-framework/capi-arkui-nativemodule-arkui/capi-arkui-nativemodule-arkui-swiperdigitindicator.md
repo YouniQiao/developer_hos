@@ -2,7 +2,8 @@
 title: "ArkUI_SwiperDigitIndicator"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-swiperdigitindicator"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:54.441402"
+content_hash: "a5f8f5436a2b"
+synced_at: "2026-07-09T00:58:44.344125"
 ---
 
 # ArkUI_SwiperDigitIndicator

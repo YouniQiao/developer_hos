@@ -2,7 +2,8 @@
 title: "通用属性"
 upstream_id: "harmonyos-references/js-components-svg-common-attributes"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:10.984111"
+content_hash: "69082eae40c1"
+synced_at: "2026-07-09T00:58:23.869379"
 ---
 
 # 通用属性

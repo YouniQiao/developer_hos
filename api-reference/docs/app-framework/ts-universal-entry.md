@@ -2,7 +2,8 @@
 title: "@Entry：页面入口"
 upstream_id: "harmonyos-references/ts-universal-entry"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:50.475457"
+content_hash: "3dc4546bd200"
+synced_at: "2026-07-09T00:58:13.843840"
 ---
 
 # @Entry：页面入口

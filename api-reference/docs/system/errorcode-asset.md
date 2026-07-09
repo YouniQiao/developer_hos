@@ -2,7 +2,8 @@
 title: "关键资产存储服务错误码"
 upstream_id: "harmonyos-references/errorcode-asset"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:29.610610"
+content_hash: "303ffbac3241"
+synced_at: "2026-07-09T00:59:11.221178"
 ---
 
 # 关键资产存储服务错误码

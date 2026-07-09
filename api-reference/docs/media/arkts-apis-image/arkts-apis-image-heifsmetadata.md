@@ -2,7 +2,8 @@
 title: "Class (HeifsMetadata)"
 upstream_id: "harmonyos-references/arkts-apis-image-heifsmetadata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:23.308130"
+content_hash: "8004083709ad"
+synced_at: "2026-07-09T01:00:30.197776"
 ---
 
 # Class (HeifsMetadata)

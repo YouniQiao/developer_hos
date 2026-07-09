@@ -2,7 +2,8 @@
 title: "QoS"
 upstream_id: "harmonyos-references/capi-qos"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:25.419470"
+content_hash: "cb218109c9db"
+synced_at: "2026-07-09T00:59:53.407742"
 ---
 
 # QoS

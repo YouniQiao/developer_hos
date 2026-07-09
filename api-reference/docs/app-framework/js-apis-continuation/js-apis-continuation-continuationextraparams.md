@@ -2,7 +2,8 @@
 title: "ContinuationExtraParams"
 upstream_id: "harmonyos-references/js-apis-continuation-continuationextraparams"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:48.957311"
+content_hash: "9eaa4f1f6b43"
+synced_at: "2026-07-09T00:57:06.201970"
 ---
 
 # ContinuationExtraParams

@@ -2,7 +2,8 @@
 title: "UIPickerComponent"
 upstream_id: "harmonyos-references/ts-container-ui-picker-component"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:06.803305"
+content_hash: "3443e2702be0"
+synced_at: "2026-07-09T00:57:53.194625"
 ---
 
 # UIPickerComponent
@@ -292,7 +293,7 @@ struct UIPickerComponentAttrsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070474.gif)
+ ![](./img/zh-cn_image_0000002661732501.gif)
 
 #### [h2]示例2（设置事件回调）
 
@@ -337,7 +338,7 @@ struct UIPickerComponentEventsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469751.gif)
+ ![](./img/zh-cn_image_0000002631253378.gif)
 
 #### [h2]示例3（设置选中项索引值）
 
@@ -387,7 +388,7 @@ struct UIPickerComponentSelectedIndexExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349799.gif)
+ ![](./img/zh-cn_image_0000002661612561.gif)
 
 #### [h2]示例4（设置选中项指示器）
 
@@ -685,7 +686,7 @@ struct UIPickerComponentIndicatorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230386.gif)
+ ![](./img/zh-cn_image_0000002631413270.gif)
 
 #### [h2]示例5（自定义月份选择器）
 
@@ -736,7 +737,7 @@ struct MonthUIPickerComponentExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070476.gif)
+ ![](./img/zh-cn_image_0000002661732503.gif)
 
 #### [h2]示例6（自定义地区选择器）
 
@@ -853,7 +854,7 @@ struct RegionUIPickerComponentExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469753.gif)
+ ![](./img/zh-cn_image_0000002631253380.gif)
 
 #### [h2]示例7（自定义选项类型）
 
@@ -949,7 +950,7 @@ struct UIPickerComponentExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349801.gif)
+ ![](./img/zh-cn_image_0000002661612563.gif)
 
 #### [h2]示例8（自定义时间选择器）
 
@@ -1409,4 +1410,4 @@ struct TimeUIPickerComponentExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230388.gif)
+ ![](./img/zh-cn_image_0000002631413272.gif)

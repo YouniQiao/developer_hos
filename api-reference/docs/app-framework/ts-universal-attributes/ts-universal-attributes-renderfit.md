@@ -2,7 +2,8 @@
 title: "组件内容填充方式"
 upstream_id: "harmonyos-references/ts-universal-attributes-renderfit"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:41.873443"
+content_hash: "340e1ccf9c63"
+synced_at: "2026-07-09T00:57:40.574511"
 ---
 
 # 组件内容填充方式
@@ -116,4 +117,4 @@ struct RenderFitExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230200.gif)
+ ![](./img/zh-cn_image_0000002661612373.gif)

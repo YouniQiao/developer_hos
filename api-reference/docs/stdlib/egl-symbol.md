@@ -2,7 +2,8 @@
 title: "Native api中导出的EGL符号列表"
 upstream_id: "harmonyos-references/egl-symbol"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:06.967827"
+content_hash: "eaacb28092dc"
+synced_at: "2026-07-09T01:01:50.199080"
 ---
 
 # Native api中导出的EGL符号列表

@@ -2,7 +2,8 @@
 title: "Class (RotateAnimation)"
 upstream_id: "harmonyos-references/map-map-rotateanimation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:33.082421"
+content_hash: "ef043270c4b9"
+synced_at: "2026-07-09T01:01:25.326486"
 ---
 
 # Class (RotateAnimation)

@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.ChildProcessArgs (子进程参数)"
 upstream_id: "harmonyos-references/js-apis-app-ability-childprocessargs"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:46.255117"
+content_hash: "5657ff653cbf"
+synced_at: "2026-07-09T00:57:03.895708"
 ---
 
 # @ohos.app.ability.ChildProcessArgs (子进程参数)

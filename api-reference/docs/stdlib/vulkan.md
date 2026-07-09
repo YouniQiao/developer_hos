@@ -2,7 +2,8 @@
 title: "Vulkan支持能力"
 upstream_id: "harmonyos-references/vulkan"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:05.607748"
+content_hash: "dabe2deec1fd"
+synced_at: "2026-07-09T01:01:49.825789"
 ---
 
 # Vulkan支持能力

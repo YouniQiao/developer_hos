@@ -2,7 +2,8 @@
 title: "焦点控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-focus"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:42.283127"
+content_hash: "90b06c1c564b"
+synced_at: "2026-07-09T00:57:41.229161"
 ---
 
 # 焦点控制
@@ -337,7 +338,7 @@ tabStop(isTabStop: boolean): T
 
 描述走焦的时候的按键以及获焦组件
 
-![](./img/zh-cn_image_0000002656469567.png)
+![](./img/zh-cn_image_0000002661732311.png)
 
 如果当前焦点停留在button2上，按下tab键将会走焦到Column3，再按下tab键会循环走焦到button1。
 
@@ -526,23 +527,23 @@ struct FocusableExample {
 
 首次进入时，焦点默认在defaultFocus绑定的TextInput组件上：
 
-![](./img/zh-cn_image_0000002656349615.png)
+![](./img/zh-cn_image_0000002631253190.png)
 
 首次按TAB键，焦点切换到tabIndex(1)的容器上，且自动走焦到内部第一个可获焦组件上：
 
-![](./img/zh-cn_image_0000002626230202.png)
+![](./img/zh-cn_image_0000002661612375.png)
 
 第二次按TAB键，焦点切换到tabIndex(2)的容器上，且自动走到其内部的groupDefaultFocus绑定的组件上：
 
-![](./img/zh-cn_image_0000002626070292.png)
+![](./img/zh-cn_image_0000002631413084.png)
 
 第三次按TAB键，焦点切换到tabIndex(3)的容器上，且自动走焦到内部配置了DefaultFocus的组件上：
 
-![](./img/zh-cn_image_0000002656469569.png)
+![](./img/zh-cn_image_0000002661732313.png)
 
 点击绑定了focusOnTouch的组件，组件自身获焦，焦点框被清除，再按下TAB键后，显示焦点框：
 
-![](./img/zh-cn_image_0000002656349617.png)
+![](./img/zh-cn_image_0000002631253192.png)
 
 #### [h2]示例2（设置指定组件获焦）
 
@@ -622,15 +623,15 @@ struct RequestFocusExample {
 
 申请不存在的组件获焦：
 
-![](./img/zh-cn_image_0000002626230204.png)
+![](./img/zh-cn_image_0000002661612377.png)
 
 申请不可获焦的组件获焦：
 
-![](./img/zh-cn_image_0000002626070294.png)
+![](./img/zh-cn_image_0000002631413086.png)
 
 申请存在且可获焦的组件获焦：
 
-![](./img/zh-cn_image_0000002656469571.png)
+![](./img/zh-cn_image_0000002661732315.png)
 
 #### [h2]示例3（设置焦点框样式）
 
@@ -661,7 +662,7 @@ struct RequestFocusExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349619.gif)
+ ![](./img/zh-cn_image_0000002631253194.gif)
 
 #### [h2]示例4（设置焦点组走焦）
 
@@ -799,23 +800,23 @@ struct FocusableExample {
 
 首次按下TAB键时，焦点转移到容器1中绑定focusScopePriority的组件上。
 
-![](./img/zh-cn_image_0000002626230206.png)
+![](./img/zh-cn_image_0000002661612379.png)
 
 继续按下TAB键，焦点转移到容器1下一个组件上。
 
-![](./img/zh-cn_image_0000002626070296.png)
+![](./img/zh-cn_image_0000002631413088.png)
 
 再次按下TAB键，焦点转移到容器1下一个组件上。
 
-![](./img/zh-cn_image_0000002656469573.png)
+![](./img/zh-cn_image_0000002661732317.png)
 
 继续按下TAB键，焦点转移到容器2中配置了focusScopePriority的组件上。
 
-![](./img/zh-cn_image_0000002656349621.png)
+![](./img/zh-cn_image_0000002631253196.png)
 
 继续按下TAB键，焦点转移到容器1中名为Group1的组件上。
 
-![](./img/zh-cn_image_0000002626230208.png)
+![](./img/zh-cn_image_0000002661612381.png)
 
 #### [h2]示例5（设置tab走焦停留）
 
@@ -888,23 +889,23 @@ struct TabStop {
 
 连续按下两次TAB键，焦点转移到button2上。
 
-![](./img/zh-cn_image_0000002626070298.png)
+![](./img/zh-cn_image_0000002631413090.png)
 
 接着按下TAB键，焦点转移到配置了tabStop的组件。
 
-![](./img/zh-cn_image_0000002656469575.png)
+![](./img/zh-cn_image_0000002661732319.png)
 
 再按下Enter键，焦点转移至内部button3上。
 
-![](./img/zh-cn_image_0000002656349623.png)
+![](./img/zh-cn_image_0000002631253198.png)
 
 再按下ESC键，焦点转移到配置了tabStop的组件上。
 
-![](./img/zh-cn_image_0000002656469575.png)
+![](./img/zh-cn_image_0000002661732319.png)
 
 再按下TAB键，焦点循环走焦到button1上。
 
-![](./img/zh-cn_image_0000002626230210.png)
+![](./img/zh-cn_image_0000002661612383.png)
 
 #### [h2]示例6（设置自定义走焦）
 
@@ -964,4 +965,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070300.gif)
+ ![](./img/zh-cn_image_0000002631413092.gif)

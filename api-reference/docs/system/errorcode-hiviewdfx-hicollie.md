@@ -2,7 +2,8 @@
 title: "HiCollie错误码"
 upstream_id: "harmonyos-references/errorcode-hiviewdfx-hicollie"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:50.507540"
+content_hash: "1c3c9b4e7a7f"
+synced_at: "2026-07-09T01:00:05.817507"
 ---
 
 # HiCollie错误码

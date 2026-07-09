@@ -2,7 +2,8 @@
 title: "Region"
 upstream_id: "harmonyos-references/capi-nativewindow-region"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:07.354232"
+content_hash: "6cecb335f077"
+synced_at: "2026-07-09T01:01:01.757443"
 ---
 
 # Region

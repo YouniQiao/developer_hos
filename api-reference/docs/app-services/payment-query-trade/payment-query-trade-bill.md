@@ -2,7 +2,8 @@
 title: "查询对账单"
 upstream_id: "harmonyos-references/payment-query-trade-bill"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:41.903464"
+content_hash: "5f2ae876f9ea"
+synced_at: "2026-07-09T01:01:31.958028"
 ---
 
 # 查询对账单
@@ -100,7 +101,7 @@ Content-Type: application/json; charset=UTF-8
 
 resultCode非400000的错误码请查看[公共错误码说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-error-code-rest#公共错误码说明)。
 
-| 返回码 | 错误码 | **错误描述** | **解决方案** |
+| 返回码 | 错误码 | 错误描述 | 解决方案 |
 | --- | --- | --- | --- |
 | 400000 | INVALID_ARGUMENTS | 参数不合法 | 请检查请求参数。 |
 | 400000 | BILL_SWITCH_NOT_TURN_ON | 账单开关没有打开 | 请检查并[打开账单开关](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-partner-agent-query-trade-bill#功能介绍)。 |
@@ -123,7 +124,7 @@ if (responseEntity.getStatusCode() == HttpStatus.OK) {
 
 #### 对账单文件说明
 
-| **字段名** | **是否必填** | **描述** | **示例值** |
+| 字段名 | 是否必选 | 描述 | 示例值 |
 | --- | --- | --- | --- |
 | 商户名称 | 否 | 发起该笔交易下单的华为支付商户主体名称。 | 测试******商户 |
 | 商户号 | 是 | 发起该笔交易下单的华为支付商户号。 | 1015******89 |

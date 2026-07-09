@@ -2,7 +2,8 @@
 title: "ColorSpacePrimaries"
 upstream_id: "harmonyos-references/capi-nativecolorspacemanager-colorspaceprimaries"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:05.490895"
+content_hash: "7ebf9ade1d59"
+synced_at: "2026-07-09T01:01:00.332032"
 ---
 
 # ColorSpacePrimaries

@@ -2,7 +2,8 @@
 title: "arkweb_type.h"
 upstream_id: "harmonyos-references/capi-arkweb-type-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:08.157998"
+content_hash: "f5bc68330321"
+synced_at: "2026-07-09T00:58:54.970868"
 ---
 
 # arkweb_type.h
@@ -200,8 +201,8 @@ typedef void (*ArkWeb_OnScrollCallback)(const char* webTag, void* userData, doub
 | --- | --- |
 | const char* webTag | Web组件名称。 |
 | void* userData | 用户自定义的数据。 |
-| double x | X轴滚动偏移。 |
-| double y | Y轴滚动偏移。 |
+| double x | X轴滚动偏移。单位：vp。 |
+| double y | Y轴滚动偏移。单位：vp。 |
 
 #### [h2]ArkWeb_OnMessageEventHandler()
 

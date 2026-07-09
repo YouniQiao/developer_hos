@@ -2,7 +2,8 @@
 title: "NotificationUserInput"
 upstream_id: "harmonyos-references/js-apis-inner-notification-notificationuserinput"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:38.157003"
+content_hash: "c83b217271f2"
+synced_at: "2026-07-09T01:01:28.909471"
 ---
 
 # NotificationUserInput

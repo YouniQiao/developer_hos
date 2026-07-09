@@ -2,7 +2,8 @@
 title: "Class (MarqueeDynamicSyncScene)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-marqueedynamicsyncscene"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:21.507629"
+content_hash: "56aecb844f3f"
+synced_at: "2026-07-09T00:57:29.148396"
 ---
 
 # Class (MarqueeDynamicSyncScene)

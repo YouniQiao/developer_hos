@@ -2,7 +2,8 @@
 title: "Interface (AudioVolumeGroupManager)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audiovolumegroupmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:53.025688"
+content_hash: "7a01f2b7a190"
+synced_at: "2026-07-09T01:00:09.128801"
 ---
 
 # Interface (AudioVolumeGroupManager)

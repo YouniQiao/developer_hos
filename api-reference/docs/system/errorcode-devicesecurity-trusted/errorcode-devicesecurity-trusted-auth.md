@@ -2,7 +2,8 @@
 title: "TrustedAuthentication （数字盾服务）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-trusted-auth"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:36.223882"
+content_hash: "f8a74474cb0c"
+synced_at: "2026-07-09T00:59:15.896253"
 ---
 
 # TrustedAuthentication （数字盾服务）

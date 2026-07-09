@@ -2,7 +2,8 @@
 title: "ArkUI_NodeComponentEvent"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-nodecomponentevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:50.016543"
+content_hash: "5d15cf5ee723"
+synced_at: "2026-07-09T00:58:41.723004"
 ---
 
 # ArkUI_NodeComponentEvent

@@ -2,7 +2,8 @@
 title: "@ohos.scan (扫描)"
 upstream_id: "harmonyos-references/js-apis-scan"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:07.253778"
+content_hash: "d560e93e7497"
+synced_at: "2026-07-09T00:59:40.083137"
 ---
 
 # @ohos.scan (扫描)

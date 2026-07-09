@@ -2,7 +2,8 @@
 title: "SendableLruCache<K, V>"
 upstream_id: "harmonyos-references/arkts-apis-arkts-utils-sendablelrucache"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:15.131820"
+content_hash: "b102a2d9edda"
+synced_at: "2026-07-09T00:57:25.050572"
 ---
 
 # SendableLruCache
@@ -41,7 +42,7 @@ pro.put(2, 10);
 pro.put(1, 8);
 let result = pro.length;
 console.info('result = ' + result);
-// 期望输出：result = 2
+// 预期输出：result = 2
 ```
 
 #### constructor18+

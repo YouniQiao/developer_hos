@@ -2,7 +2,8 @@
 title: "CryptoDigestApi"
 upstream_id: "harmonyos-references/capi-cryptodigestapi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:30.368441"
+content_hash: "a68ed12c86b4"
+synced_at: "2026-07-09T00:59:11.574990"
 ---
 
 # CryptoDigestApi

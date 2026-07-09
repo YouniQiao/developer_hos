@@ -2,7 +2,8 @@
 title: "USB服务错误码"
 upstream_id: "harmonyos-references/errorcode-usb"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:12.929761"
+content_hash: "65cdebdecb82"
+synced_at: "2026-07-09T00:59:44.749724"
 ---
 
 # USB服务错误码

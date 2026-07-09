@@ -1,9 +1,12 @@
 ---
+
 title: "删除设备标记状态"
 upstream_id: "harmonyos-references/devicesecurity-deviceverify-deletedevicestatus"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:37.691792"
+synced_at: "2026-07-09T00:59:16.865922"
+content_hash: "c640b8f74da4"
 ---
+
 
 # 删除设备标记状态
 

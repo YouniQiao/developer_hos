@@ -2,7 +2,8 @@
 title: "want.h"
 upstream_id: "harmonyos-references/capi-want-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:58.439909"
+content_hash: "9c7449733f47"
+synced_at: "2026-07-09T00:57:12.765424"
 ---
 
 # want.h

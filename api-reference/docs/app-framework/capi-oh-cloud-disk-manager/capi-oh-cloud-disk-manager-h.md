@@ -2,7 +2,8 @@
 title: "oh_cloud_disk_manager.h"
 upstream_id: "harmonyos-references/capi-oh-cloud-disk-manager-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:15.583967"
+content_hash: "54793deb1700"
+synced_at: "2026-07-09T00:59:01.610764"
 ---
 
 # oh_cloud_disk_manager.h

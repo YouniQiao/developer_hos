@@ -1,9 +1,12 @@
 ---
+
 title: "修改券批次信息"
 upstream_id: "harmonyos-references/payment-api-common-promotion-service-merc-coup-coupbatch-update"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:46.568191"
+synced_at: "2026-07-09T01:01:34.995377"
+content_hash: "67f94ada7d6d"
 ---
+
 
 # 修改券批次信息
 

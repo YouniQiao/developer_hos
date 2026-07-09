@@ -2,7 +2,8 @@
 title: "ddk_types.h"
 upstream_id: "harmonyos-references/capi-ddk-types-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:31.118886"
+content_hash: "f1387c7f4683"
+synced_at: "2026-07-09T00:59:54.657924"
 ---
 
 # ddk_types.h

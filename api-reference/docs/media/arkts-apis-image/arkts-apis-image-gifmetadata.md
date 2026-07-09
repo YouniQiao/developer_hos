@@ -2,7 +2,8 @@
 title: "Class (GifMetadata)"
 upstream_id: "harmonyos-references/arkts-apis-image-gifmetadata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:23.552436"
+content_hash: "68e459853bdb"
+synced_at: "2026-07-09T01:00:30.462003"
 ---
 
 # Class (GifMetadata)

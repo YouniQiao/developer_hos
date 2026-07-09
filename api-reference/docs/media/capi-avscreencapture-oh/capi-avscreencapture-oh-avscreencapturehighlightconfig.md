@@ -2,7 +2,8 @@
 title: "OH_AVScreenCaptureHighlightConfig"
 upstream_id: "harmonyos-references/capi-avscreencapture-oh-avscreencapturehighlightconfig"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:41.079251"
+content_hash: "c4e8e399d314"
+synced_at: "2026-07-09T01:00:44.412763"
 ---
 
 # OH_AVScreenCaptureHighlightConfig

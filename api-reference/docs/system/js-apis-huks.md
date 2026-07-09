@@ -2,7 +2,8 @@
 title: "@ohos.security.huks (通用密钥库系统)"
 upstream_id: "harmonyos-references/js-apis-huks"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:42.600415"
+content_hash: "f447936f8277"
+synced_at: "2026-07-09T00:59:21.489777"
 ---
 
 # @ohos.security.huks (通用密钥库系统)

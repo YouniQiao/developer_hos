@@ -2,7 +2,8 @@
 title: "OH_Drawing_Point3D"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-point3d"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:06.888424"
+content_hash: "b6557fca7cf9"
+synced_at: "2026-07-09T01:01:01.399618"
 ---
 
 # OH_Drawing_Point3D

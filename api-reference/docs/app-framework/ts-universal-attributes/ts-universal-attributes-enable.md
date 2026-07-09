@@ -1,9 +1,12 @@
 ---
+
 title: "禁用控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-enable"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:41.947376"
+synced_at: "2026-07-09T00:57:40.580701"
+content_hash: "7c7c7795f824"
 ---
+
 
 # 禁用控制
 

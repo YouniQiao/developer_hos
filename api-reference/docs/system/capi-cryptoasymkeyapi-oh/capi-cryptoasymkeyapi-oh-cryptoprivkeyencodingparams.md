@@ -2,7 +2,8 @@
 title: "OH_CryptoPrivKeyEncodingParams"
 upstream_id: "harmonyos-references/capi-cryptoasymkeyapi-oh-cryptoprivkeyencodingparams"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:32.542925"
+content_hash: "08694cd9edad"
+synced_at: "2026-07-09T00:59:13.143532"
 ---
 
 # OH_CryptoPrivKeyEncodingParams

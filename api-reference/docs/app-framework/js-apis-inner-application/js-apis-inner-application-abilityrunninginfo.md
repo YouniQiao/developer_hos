@@ -2,7 +2,8 @@
 title: "AbilityRunningInfo"
 upstream_id: "harmonyos-references/js-apis-inner-application-abilityrunninginfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:52.006879"
+content_hash: "a5c4902cf402"
+synced_at: "2026-07-09T00:57:08.324360"
 ---
 
 # AbilityRunningInfo

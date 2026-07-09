@@ -1,9 +1,12 @@
 ---
+
 title: "城市码及区划代码表"
 upstream_id: "harmonyos-references/map-citycode"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:36.562790"
+synced_at: "2026-07-09T01:01:29.305730"
+content_hash: "7bad59e9137a"
 ---
+
 
 # 城市码及区划代码表
 

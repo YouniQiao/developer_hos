@@ -2,7 +2,8 @@
 title: "queue.h"
 upstream_id: "harmonyos-references/capi-queue-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:16.120817"
+content_hash: "6cc1d9d18f19"
+synced_at: "2026-07-09T00:59:47.649490"
 ---
 
 # queue.h

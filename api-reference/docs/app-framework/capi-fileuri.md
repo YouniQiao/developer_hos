@@ -2,7 +2,8 @@
 title: "fileUri"
 upstream_id: "harmonyos-references/capi-fileuri"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:14.970144"
+content_hash: "eb1e903e581d"
+synced_at: "2026-07-09T00:59:00.664686"
 ---
 
 # fileUri

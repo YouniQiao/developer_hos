@@ -1,9 +1,12 @@
 ---
+
 title: "人脸核身实人验证结果查询"
 upstream_id: "harmonyos-references/payment-api-common-face-verifactaion-result"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:46.418797"
+synced_at: "2026-07-09T01:01:34.677856"
+content_hash: "fc9e2a889be8"
 ---
+
 
 # 人脸核身实人验证结果查询
 

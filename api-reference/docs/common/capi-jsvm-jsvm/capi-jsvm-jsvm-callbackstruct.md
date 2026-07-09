@@ -2,7 +2,8 @@
 title: "JSVM_CallbackStruct"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-callbackstruct"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:02.238132"
+content_hash: "db7c2273d962"
+synced_at: "2026-07-09T01:01:46.574275"
 ---
 
 # JSVM_CallbackStruct

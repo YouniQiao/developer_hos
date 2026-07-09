@@ -2,7 +2,8 @@
 title: "ScsiPeripheral_TestUnitReadyRequest"
 upstream_id: "harmonyos-references/capi-scsiperipheralddk-scsiperipheral-testunitreadyrequest"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:34.130488"
+content_hash: "8fcc62416e4d"
+synced_at: "2026-07-09T00:59:56.354822"
 ---
 
 # ScsiPeripheral_TestUnitReadyRequest

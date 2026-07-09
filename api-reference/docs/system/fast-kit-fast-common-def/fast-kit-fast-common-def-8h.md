@@ -2,7 +2,8 @@
 title: "fast_common_def.h"
 upstream_id: "harmonyos-references/fast-kit-fast-common-def-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:14.465662"
+content_hash: "c66ffdf1ceb3"
+synced_at: "2026-07-09T00:59:45.771852"
 ---
 
 # fast_common_def.h

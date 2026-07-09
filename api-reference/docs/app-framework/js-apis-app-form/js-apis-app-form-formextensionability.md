@@ -2,7 +2,8 @@
 title: "@ohos.app.form.FormExtensionAbility (FormExtensionAbility)"
 upstream_id: "harmonyos-references/js-apis-app-form-formextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:17.409756"
+content_hash: "d6f26af13b2c"
+synced_at: "2026-07-09T00:59:03.493490"
 ---
 
 # @ohos.app.form.FormExtensionAbility (FormExtensionAbility)
@@ -31,19 +32,17 @@ import { FormExtensionAbility } from '@kit.FormKit';
 
 卡片扩展类。包含卡片提供方接收创建卡片、修改可见性等的通知接口。
 
-模型约束： 此接口仅可在Stage模型下使用。
-
-系统能力： SystemCapability.Ability.Form
-
 #### [h2]属性
 
 模型约束： 此接口仅可在Stage模型下使用。
+
+元服务API： 从API version 11开始，该接口支持在元服务。
 
 系统能力： SystemCapability.Ability.Form
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| context | [FormExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-formextensioncontext) | 否 | 否 | FormExtensionAbility的上下文环境，继承自[ExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-extensioncontext)。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| context | [FormExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-formextensioncontext) | 否 | 否 | FormExtensionAbility的上下文环境，继承自[ExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-extensioncontext)。 |
 
 #### [h2]FormExtensionAbility.onAddForm
 

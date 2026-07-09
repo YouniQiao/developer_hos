@@ -2,7 +2,8 @@
 title: "@ohos.distributedsched.proxyChannelManager (代理通道管理)"
 upstream_id: "harmonyos-references/js-apis-proxychannelmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:49.563414"
+content_hash: "952e279e4893"
+synced_at: "2026-07-09T00:59:25.763983"
 ---
 
 # @ohos.distributedsched.proxyChannelManager (代理通道管理)
@@ -40,6 +41,8 @@ openProxyChannel(channelInfo: ChannelInfo): Promise<number>
 需要权限：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.DistributedSched.AppCollaboration
+
+设备行为差异：该接口在Phone/Tablet设备中可正常调用，其他支持分布式业务的设备中会返回错误码32390101，不支持分布式业务的Wearable设备中会返回错误码801。
 
 模型约束：此接口仅可在Stage模型下使用
 
@@ -120,6 +123,8 @@ closeProxyChannel(channelId: number): void
 
 系统能力：SystemCapability.DistributedSched.AppCollaboration
 
+设备行为差异：该接口在Phone/Tablet设备中可正常调用，其他支持分布式业务的设备中会返回错误码32390006，不支持分布式业务的Wearable设备中会返回错误码801。
+
 模型约束：此接口仅可在Stage模型下使用
 
 参数：
@@ -179,6 +184,8 @@ sendData(channelId:number, data:ArrayBuffer):Promise<void>
 需要权限：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.DistributedSched.AppCollaboration
+
+设备行为差异：该接口在Phone/Tablet设备中可正常调用，其他支持分布式业务的设备中会返回错误码32390006，不支持分布式业务的Wearable设备中会返回错误码801。
 
 模型约束：此接口仅可在Stage模型下使用
 
@@ -253,6 +260,8 @@ on(type: 'receiveData', channelId: number, callback: Callback<DataInfo>): void
 
 系统能力：SystemCapability.DistributedSched.AppCollaboration
 
+设备行为差异：该接口在Phone/Tablet设备中可正常调用，其他支持分布式业务的设备中会返回错误码32390004，不支持分布式业务的Wearable设备不返回错误码，不抛异常。
+
 模型约束：此接口仅可在Stage模型下使用
 
 参数：
@@ -314,6 +323,8 @@ off(type: 'receiveData', channelId: number, callback?: Callback<DataInfo>): void
 
 系统能力：SystemCapability.DistributedSched.AppCollaboration
 
+设备行为差异：该接口在Phone/Tablet设备中可正常调用，其他支持分布式业务的设备中会返回错误码32390004，不支持分布式业务的Wearable设备不返回错误码，不抛异常。
+
 模型约束：此接口仅可在Stage模型下使用
 
 参数：
@@ -372,6 +383,8 @@ on(type: 'channelStateChange', channelId: number, callback: Callback<ChannelStat
 需要权限：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.DistributedSched.AppCollaboration
+
+设备行为差异：该接口在Phone/Tablet设备中可正常调用，其他支持分布式业务的设备中会返回错误码32390004，不支持分布式业务的Wearable设备不返回错误码，不抛异常。
 
 模型约束：此接口仅可在Stage模型下使用
 
@@ -433,6 +446,8 @@ off(type: 'channelStateChange', channelId: number, callback?: Callback<ChannelSt
 需要权限：ohos.permission.ACCESS_BLUETOOTH
 
 系统能力：SystemCapability.DistributedSched.AppCollaboration
+
+设备行为差异：该接口在Phone/Tablet设备中可正常调用，其他支持分布式业务的设备中会返回错误码32390004，不支持分布式业务的Wearable设备不返回错误码，不抛异常。
 
 模型约束：此接口仅可在Stage模型下使用
 

@@ -2,7 +2,8 @@
 title: "ArkUI_NodeAttributeType（基础属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-base"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:36.717866"
+content_hash: "ca46ca66c348"
+synced_at: "2026-07-09T00:58:34.277967"
 ---
 
 # ArkUI_NodeAttributeType（基础属性）

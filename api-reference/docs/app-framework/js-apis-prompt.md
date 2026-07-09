@@ -2,7 +2,8 @@
 title: "@ohos.prompt (弹窗)"
 upstream_id: "harmonyos-references/js-apis-prompt"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:31.085966"
+content_hash: "efc683fb800c"
+synced_at: "2026-07-09T00:57:34.994662"
 ---
 
 # @ohos.prompt (弹窗)
@@ -42,7 +43,7 @@ prompt.showToast({
     duration: 2000
 });
 ```
- ![](./img/zh-cn_image_0000002626070222.gif)
+ ![](./img/zh-cn_image_0000002631413010.gif)
 
 #### ShowToastOptions
 
@@ -101,7 +102,7 @@ prompt.showDialog({
     console.info('showDialog error: ' + err);
   })
 ```
- ![](./img/zh-cn_image_0000002656349509.gif)
+ ![](./img/zh-cn_image_0000002631253080.gif)
 
 #### prompt.showDialog
 
@@ -143,7 +144,7 @@ prompt.showDialog({
   console.info('showDialog success callback, click button: ' + data.index);
 });
 ```
- ![](./img/zh-cn_image_0000002626230096.gif)
+ ![](./img/zh-cn_image_0000002661612265.gif)
 
 #### ShowDialogOptions
 
@@ -206,7 +207,7 @@ prompt.showActionMenu({
   console.info('showActionMenu success callback, click button: ' + data.index);
 })
 ```
- ![](./img/zh-cn_image_0000002656349511.gif)
+ ![](./img/zh-cn_image_0000002631253082.gif)
 
 #### prompt.showActionMenu
 
@@ -252,7 +253,7 @@ prompt.showActionMenu({
     console.info('showActionMenu error: ' + err);
   })
 ```
- ![](./img/zh-cn_image_0000002626070188.gif)
+ ![](./img/zh-cn_image_0000002631412974.gif)
 
 #### ActionMenuOptions
 

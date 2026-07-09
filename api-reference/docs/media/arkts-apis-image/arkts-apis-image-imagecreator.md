@@ -2,7 +2,8 @@
 title: "Interface (ImageCreator)"
 upstream_id: "harmonyos-references/arkts-apis-image-imagecreator"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:22.613474"
+content_hash: "84853eaa377d"
+synced_at: "2026-07-09T01:00:29.757295"
 ---
 
 # Interface (ImageCreator)

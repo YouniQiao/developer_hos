@@ -2,7 +2,8 @@
 title: "OH_CM_Blob"
 upstream_id: "harmonyos-references/capi-certmanagertype-oh-cm-blob"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:41.882927"
+content_hash: "93dd4ddc8324"
+synced_at: "2026-07-09T00:59:19.588158"
 ---
 
 # OH_CM_Blob

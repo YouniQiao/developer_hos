@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.FenceExtensionContext (FenceExtensionContext)"
 upstream_id: "harmonyos-references/js-apis-app-ability-fenceextensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:30.790149"
+content_hash: "6a8fb84be111"
+synced_at: "2026-07-09T01:01:22.905331"
 ---
 
 # @ohos.app.ability.FenceExtensionContext (FenceExtensionContext)

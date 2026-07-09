@@ -2,7 +2,8 @@
 title: "通过mercOrderNo查询订单信息"
 upstream_id: "harmonyos-references/payment-withhold-query-merc-order"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:41.343664"
+content_hash: "7580be42edf4"
+synced_at: "2026-07-09T01:01:31.791213"
 ---
 
 # 通过mercOrderNo查询订单信息
@@ -38,7 +39,7 @@ Request Header
 
 Request Path
 
-| 参数 | 是否必填 | 参数类型 | 描述 |
+| 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | mercOrderNo | 是 | String | 商户订单号，由商户自己生成，商户需保证订单信息唯一性。最大长度46。 |
 

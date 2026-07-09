@@ -2,7 +2,8 @@
 title: "@ohos.bundle.overlay (overlay特征模块)"
 upstream_id: "harmonyos-references/js-apis-overlay"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:51.447218"
+content_hash: "6d3e54d77806"
+synced_at: "2026-07-09T00:57:07.826008"
 ---
 
 # @ohos.bundle.overlay (overlay特征模块)

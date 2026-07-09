@@ -2,7 +2,8 @@
 title: "SecurityAudit（安全审计）"
 upstream_id: "harmonyos-references/devicesecurity-securityaudit-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:35.208411"
+content_hash: "1b96c3f97370"
+synced_at: "2026-07-09T00:59:15.496333"
 ---
 
 # SecurityAudit（安全审计）

@@ -2,7 +2,8 @@
 title: "AnnualTimeZoneRule"
 upstream_id: "harmonyos-references/capi-i18n-annualtimezonerule"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:24.631050"
+content_hash: "010491567a7a"
+synced_at: "2026-07-09T00:59:08.691195"
 ---
 
 # AnnualTimeZoneRule
@@ -30,6 +31,6 @@ typedef struct AnnualTimeZoneRule {...} AnnualTimeZoneRule
 | char* name | 时区规则的名称。 |
 | int32_t startYear | 时区规则生效的起始年份。 |
 | int32_t endYear | 时区规则生效的终止年份。 |
-| int32_t rawOffset | 时区的原始偏移量。 |
-| int32_t dstSavings | 夏令时的偏移量。 |
+| int32_t rawOffset | 时区的原始偏移量，单位为毫秒（ms）。 |
+| int32_t dstSavings | 夏令时的偏移量，单位为毫秒（ms）。 |
 | [DateTimeRule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-i18n-datetimerule) dateTimeRule | 时间日期规则。 |

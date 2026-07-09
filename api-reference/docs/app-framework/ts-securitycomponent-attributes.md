@@ -2,7 +2,8 @@
 title: "安全控件通用属性"
 upstream_id: "harmonyos-references/ts-securitycomponent-attributes"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:47.364869"
+content_hash: "c95780435858"
+synced_at: "2026-07-09T00:58:11.485615"
 ---
 
 # 安全控件通用属性
@@ -913,7 +914,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350183.png)
+ ![](./img/zh-cn_image_0000002661732891.png)
 
 #### [h2]示例2
 
@@ -984,7 +985,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230770.png)
+ ![](./img/zh-cn_image_0000002631253770.png)
 
 #### [h2]示例3
 
@@ -1324,7 +1325,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070860.jpg)
+ ![](./img/zh-cn_image_0000002661612953.jpg)
 
 #### [h2]示例4
 
@@ -1389,4 +1390,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470137.gif)
+ ![](./img/zh-cn_image_0000002631413662.gif)

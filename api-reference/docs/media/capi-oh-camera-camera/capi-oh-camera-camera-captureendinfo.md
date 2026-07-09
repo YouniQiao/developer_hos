@@ -2,7 +2,8 @@
 title: "Camera_CaptureEndInfo"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-captureendinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:16.623206"
+content_hash: "92cf1fcfda44"
+synced_at: "2026-07-09T01:00:26.093782"
 ---
 
 # Camera_CaptureEndInfo

@@ -2,7 +2,8 @@
 title: "设备状态感知错误码"
 upstream_id: "harmonyos-references/errorcode-devicestatus"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:37.779510"
+content_hash: "20a6dbcb43f3"
+synced_at: "2026-07-09T00:59:58.182971"
 ---
 
 # 设备状态感知错误码

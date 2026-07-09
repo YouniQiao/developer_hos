@@ -2,7 +2,8 @@
 title: "oh_input_manager.h"
 upstream_id: "harmonyos-references/capi-oh-input-manager-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:19.095449"
+content_hash: "e63dd758f4f4"
+synced_at: "2026-07-09T00:59:50.696779"
 ---
 
 # oh_input_manager.h
@@ -1783,7 +1784,7 @@ int64_t OH_Input_GetTouchEventActionTime(const struct Input_TouchEvent* touchEve
 
 | 类型 | 说明 |
 | --- | --- |
-| int64_t | 返回触屏输入事件发生的时间。 |
+| int64_t | 返回触屏输入事件发生的时间，表示系统启动运行至今逝去的微秒数，单位为微秒（μs）。 |
 
 #### [h2]OH_Input_SetTouchEventWindowId()
 

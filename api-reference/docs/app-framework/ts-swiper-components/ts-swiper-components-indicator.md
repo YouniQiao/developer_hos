@@ -2,7 +2,8 @@
 title: "Indicator"
 upstream_id: "harmonyos-references/ts-swiper-components-indicator"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:00.768219"
+content_hash: "5120f0298716"
+synced_at: "2026-07-09T00:57:49.969070"
 ---
 
 # Indicator
@@ -168,7 +169,7 @@ onChange(event: Callback<number>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| event | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 是 | 当前显示元素的索引变化时触发的回调。 |
+| event | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 是 | 当前显示的选中导航点索引变化时触发的回调。 |
 
 #### IndicatorComponentController
 
@@ -226,7 +227,7 @@ changeIndex(index: number, useAnimation?: boolean): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| index | number | 是 | 指定导航点在Swiper中的索引值。 **说明：** 设置的值小于0或大于最大导航点索引时，取0。 |
+| index | number | 是 | 指定导航点的索引值。 **说明：** 设置的值小于0或大于最大导航点索引时，取0。 |
 | useAnimation | boolean | 否 | 设置翻至指定导航点时是否有动效，true表示有动效，false表示没有动效。 默认值：false。 |
 
 #### 示例
@@ -251,14 +252,14 @@ struct DotIndicatorDemo {
   build() {
     Column() {
       Swiper(this.swiperController) {
-        ForEach(this.list, (item: string) => {
+        ForEach(this.list, (item: number) => {
           Text(item.toString())
             .width('100%')
             .height(160)
             .backgroundColor(0xAFEEEE)
             .textAlign(TextAlign.Center)
             .fontSize(30)
-        }, (item: string) => item)
+        }, (item: number) => item.toString())
       }
       .cachedCount(2)
       .index(0)
@@ -293,7 +294,7 @@ struct DotIndicatorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349755.gif)
+ ![](./img/zh-cn_image_0000002661612517.gif)
 
 #### [h2]示例2（数字单独导航点与Swiper绑定使用）
 
@@ -315,14 +316,14 @@ struct DigitIndicatorDemo {
   build() {
     Column() {
       Swiper(this.swiperController) {
-        ForEach(this.list, (item: string) => {
+        ForEach(this.list, (item: number) => {
           Text(item.toString())
             .width('100%')
             .height(160)
             .backgroundColor(0xAFEEEE)
             .textAlign(TextAlign.Center)
             .fontSize(30)
-        }, (item: string) => item)
+        }, (item: number) => item.toString())
       }
       .cachedCount(2)
       .index(0)
@@ -354,4 +355,4 @@ struct DigitIndicatorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230342.gif)
+ ![](./img/zh-cn_image_0000002631413226.gif)

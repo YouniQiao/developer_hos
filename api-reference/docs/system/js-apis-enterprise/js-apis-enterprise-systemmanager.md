@@ -2,7 +2,8 @@
 title: "@ohos.enterprise.systemManager （系统管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-systemmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:24.151710"
+content_hash: "d83172ede55f"
+synced_at: "2026-07-09T00:59:52.825680"
 ---
 
 # @ohos.enterprise.systemManager （系统管理）
@@ -700,7 +701,7 @@ try {
 
 setInstallLocalEnterpriseAppEnabled(admin: Want, isEnable: boolean): void
 
-设置是否支持本地安装企业应用。设置为支持安装后，具备本地安装能力的PC/2in1企业设备可本地双击应用安装包，安装签名证书分发类型为enterprise_normal的企业应用。
+设置是否支持本地安装企业应用。设置为支持安装后，具备本地安装能力的PC/2in1企业设备可本地双击应用安装包，安装签名证书分发类型为enterprise_normal的企业应用。调用此接口前，此设备必须通过[HEM商用部署](https://developer.huawei.com/business/cn/doc/HEM/hem_user-guide_add-reseller_management-resellerr-0000002469112100)。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_SYSTEM
 
@@ -755,7 +756,7 @@ try {
 
 getInstallLocalEnterpriseAppEnabled(admin: Want | null): boolean
 
-查询是否支持本地安装企业应用。
+查询是否支持本地安装企业应用。调用此接口前，此设备必须通过[HEM商用部署](https://developer.huawei.com/business/cn/doc/HEM/hem_user-guide_add-reseller_management-resellerr-0000002469112100)。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_SYSTEM
 
@@ -1220,7 +1221,7 @@ try {
 
 setActivationLockDisabled(admin: Want, isDisabled: boolean, credential?: string): Promise<void>
 
-禁用/启用设备激活锁。设备激活锁被禁用后，将无法使用查找设备功能。该功能只适用于特定设备（只支持PC/2in1企业设备）。。
+禁用/启用设备激活锁。设备激活锁被禁用后，将无法使用查找设备功能。该功能只适用于特定设备（只支持PC/2in1企业设备）。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_SYSTEM
 
@@ -1343,7 +1344,7 @@ systemManager.isActivationLockDisabled(wantTemp).then(result => {
 
 setInstallLocalEnterpriseAppEnabledForAccount(admin: Want, isEnable: boolean, accountId: number): void
 
-设置指定用户下是否支持本地安装企业应用。在具备本地安装能力的PC/2in1企业设备上下发支持本地企业应用策略后，用户可以在桌面或者文件管理器直接双击企业应用安装包，即可直接安装企业应用。
+设置指定用户下是否支持本地安装企业应用。在具备本地安装能力的PC/2in1企业设备上下发支持本地企业应用策略后，用户可以在桌面或者文件管理器直接双击企业应用安装包，即可直接安装企业应用。调用此接口前，此设备必须通过[HEM商用部署](https://developer.huawei.com/business/cn/doc/HEM/hem_user-guide_add-reseller_management-resellerr-0000002469112100)。
 
 仅支持enterprise_normal或enterprise_mdm签名类型的企业应用。
 
@@ -1410,7 +1411,7 @@ try {
 
 getInstallLocalEnterpriseAppEnabledForAccount(admin: Want | null, accountId: number): boolean
 
-查询指定用户是否支持本地安装企业应用。
+查询指定用户是否支持本地安装企业应用。调用此接口前，此设备必须通过[HEM商用部署](https://developer.huawei.com/business/cn/doc/HEM/hem_user-guide_add-reseller_management-resellerr-0000002469112100)。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_SYSTEM
 

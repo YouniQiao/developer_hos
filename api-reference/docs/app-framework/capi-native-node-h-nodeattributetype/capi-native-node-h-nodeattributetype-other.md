@@ -2,7 +2,8 @@
 title: "ArkUI_NodeAttributeType（其他）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-other"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:39.691013"
+content_hash: "b81e4357b84a"
+synced_at: "2026-07-09T00:58:36.439151"
 ---
 
 # ArkUI_NodeAttributeType（其他）

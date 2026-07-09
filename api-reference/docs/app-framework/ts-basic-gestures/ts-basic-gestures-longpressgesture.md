@@ -2,7 +2,8 @@
 title: "LongPressGesture"
 upstream_id: "harmonyos-references/ts-basic-gestures-longpressgesture"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:50.674286"
+content_hash: "9e7302c8b1b1"
+synced_at: "2026-07-09T00:57:44.403681"
 ---
 
 # LongPressGesture
@@ -173,4 +174,4 @@ struct LongPressGestureExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070348.gif)
+ ![](./img/zh-cn_image_0000002631413142.gif)

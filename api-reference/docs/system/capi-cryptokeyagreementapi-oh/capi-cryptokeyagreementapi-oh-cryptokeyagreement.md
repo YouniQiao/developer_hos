@@ -2,7 +2,8 @@
 title: "OH_CryptoKeyAgreement"
 upstream_id: "harmonyos-references/capi-cryptokeyagreementapi-oh-cryptokeyagreement"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:32.937690"
+content_hash: "c372b8ff75c4"
+synced_at: "2026-07-09T00:59:13.517741"
 ---
 
 # OH_CryptoKeyAgreement

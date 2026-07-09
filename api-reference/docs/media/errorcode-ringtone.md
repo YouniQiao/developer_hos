@@ -2,7 +2,8 @@
 title: "ArkTS API 错误码"
 upstream_id: "harmonyos-references/errorcode-ringtone"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:48.719034"
+content_hash: "7cd65b690649"
+synced_at: "2026-07-09T01:00:49.101118"
 ---
 
 # ArkTS API 错误码

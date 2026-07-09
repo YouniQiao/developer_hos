@@ -2,7 +2,8 @@
 title: "OHIPCParcel"
 upstream_id: "harmonyos-references/capi-nativewindow-ohipcparcel"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:11.335509"
+content_hash: "6cac228a6fa5"
+synced_at: "2026-07-09T01:01:05.250141"
 ---
 
 # OHIPCParcel

@@ -2,7 +2,8 @@
 title: "ArkUI_NativeGestureAPI_1"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-nativegestureapi-1"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:46.606090"
+content_hash: "02d1958a28d6"
+synced_at: "2026-07-09T00:58:39.976694"
 ---
 
 # ArkUI_NativeGestureAPI_1

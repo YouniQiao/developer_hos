@@ -2,7 +2,8 @@
 title: "@ohos.enterprise.restrictions （限制类策略）"
 upstream_id: "harmonyos-references/js-apis-enterprise-restrictions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:23.766444"
+content_hash: "946b6c2f3c5a"
+synced_at: "2026-07-09T00:59:52.657367"
 ---
 
 # @ohos.enterprise.restrictions （限制类策略）
@@ -635,7 +636,7 @@ setUserRestrictionForAccount(admin: Want, settingsItem: string, accountId: numbe
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
-| settingsItem | string | 是 | 行为名称。 - modifyWallpaper：修改壁纸，包含锁屏壁纸和桌面壁纸。 |
+| settingsItem | string | 是 | 行为名称。 - modifyWallpaper：修改壁纸，包含锁屏壁纸和桌面壁纸。调用此接口前，此设备必须通过[HEM商用部署](https://developer.huawei.com/business/cn/doc/HEM/hem_user-guide_add-reseller_management-resellerr-0000002469112100)。 |
 | accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9)等接口来获取。 |
 | restricted | boolean | 是 | 是否禁用行为。true表示禁用，false表示不禁用。 |
 
@@ -689,7 +690,7 @@ getUserRestrictedForAccount(admin: Want | null, settingsItem: string, accountId:
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | admin | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | null | 是 | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
-| settingsItem | string | 是 | 指定设置项。 - modifyWallpaper：修改壁纸，包含锁屏壁纸和桌面壁纸。 |
+| settingsItem | string | 是 | 指定设置项。 - modifyWallpaper：修改壁纸，包含锁屏壁纸和桌面壁纸。调用此接口前，此设备必须通过[HEM商用部署](https://developer.huawei.com/business/cn/doc/HEM/hem_user-guide_add-reseller_management-resellerr-0000002469112100)。 |
 | accountId | number | 是 | 用户ID，取值范围：大于等于0。 accountId可以通过[getOsAccountLocalId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-osaccount#getosaccountlocalid9)等接口来获取。 |
 
 返回值：

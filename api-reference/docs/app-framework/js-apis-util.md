@@ -2,7 +2,8 @@
 title: "@ohos.util (util工具函数)"
 upstream_id: "harmonyos-references/js-apis-util"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:16.466081"
+content_hash: "ea9f2b35fc6d"
+synced_at: "2026-07-09T00:57:26.926965"
 ---
 
 # @ohos.util (util工具函数)
@@ -172,7 +173,9 @@ callbackWrapper(original: Function): (err: Object, value: Object)=>void
 
 ![](./img/note_3.0-zh-cn.png) 该接口要求参数original必须是异步函数类型。如果传入的参数不是异步函数，不会进行拦截，但是会输出错误信息："callbackWrapper: The type of Parameter must be AsyncFunction"。
 
-该接口用于将返回Promise的async函数转换为错误优先回调风格的函数，调用此接口返回的函数接收一个回调函数作为第二个入参，调用此方法时会先执行original函数。当original的Promise返回resolve时，入参的回调函数的第一个参数为null，第二个参数为resolve的值。当original的Promise返回reject时，入参的回调函数的第一个参数为错误对象，第二个参数为null。当original为无入参的函数时，此接口返回的函数第一个入参需传入一个无效的占位参数。
+该接口用于将返回Promise的async函数转换为错误优先回调风格的函数，调用此接口返回的函数接收一个回调函数作为第二个入参，调用此方法时会先执行original函数。当original的Promise返回resolve时，入参的回调函数的第一个参数为null，第二个参数为resolve的值。当original的Promise返回reject时，入参的回调函数的第一个参数为错误对象，第二个参数为null。
+
+由于此方法返回类型的声明为(err: Object, value: Object) => void，TypeScript编译器会按照该声明进行参数数量校验，因此当original为无入参的函数时，此接口返回的函数第一个入参需传入一个无效的占位参数。当original为多个入参的函数时，此接口返回的函数当前仅支持传入一个参数，可使用array等容器进行多个入参的传入调用（参照下方示例代码）。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -193,6 +196,7 @@ callbackWrapper(original: Function): (err: Object, value: Object)=>void
 示例：
 
 ```
+// original为一个入参示例
 async function fn(input: string) {
   return input;
 }
@@ -202,6 +206,21 @@ cb('hello world', (err : Object, ret : string) => {
   console.info(ret);
 });
 // 输出结果：hello world
+```
+ 
+```
+// original需要传入多个入参场景示例
+async function fn(args: Array<string | number | Function>) {
+  console.info('args[0]: ' + args[0]); // args[0]: hello world
+  console.info('args[1]: ' + args[1]); // args[1]: 8
+  return args[0];
+}
+let cb = util.callbackWrapper(fn);
+let args: Array<string | number | Function> = ['hello world', 8]
+cb(args, (err : Object, ret : string) => {
+  if (err) throw new Error;
+  console.info(ret); // 输出结果：hello world
+});
 ```
 
 #### util.promisify9+
@@ -3959,6 +3978,37 @@ let result = type.isAsyncFunction(async () => {});
 console.info("result = " + result);
 // 输出结果：result = true
 ```
+ ![](./img/note_3.0-zh-cn.png) 该接口无法对AsyncGenerator Function进行有效判断，建议通过获取函数的constructor.name属性与'AsyncGeneratorFunction'做判等的方式替代。
+
+该接口无法对Sendable class中的async成员函数进行有效判断，无替代方案。
+
+```
+// /entry/src/main/ets/pages/test.ts
+export async function* asyncGeneratorFunc() {}
+```
+ 
+```
+import { asyncGeneratorFunc } from './test'
+
+@Sendable
+class SendableClass {
+  async asyncFunction() {}
+}
+
+let type = new util.types();
+let result1 = type.isAsyncFunction(asyncGeneratorFunc);
+console.info("result = " + result1);
+// 输出结果：result = false
+
+console.info("asyncGeneratorFunc.constructor.name === AsyncGeneratorFunction : " +
+  (asyncGeneratorFunc.constructor.name === 'AsyncGeneratorFunction'));
+// 输出结果：asyncGeneratorFunc.constructor.name === AsyncGeneratorFunction : true
+
+const instance = new SendableClass();
+let result2 = type.isAsyncFunction(instance.asyncFunction);
+console.info("result = " + result2);
+// 输出结果：result = false
+```
 
 #### [h2]isBooleanObject(deprecated)
 
@@ -4256,6 +4306,25 @@ let type = new util.types();
 let result = type.isGeneratorFunction(foo);
 console.info("result = " + result);
 // 输出结果：result = true
+```
+ ![](./img/note_3.0-zh-cn.png) 该接口无法对AsyncGenerator Function进行有效判断，建议通过获取函数的constructor.name属性与'AsyncGeneratorFunction'做判等的方式替代。
+
+```
+// /entry/src/main/ets/pages/test.ts
+export async function* asyncGeneratorFunc() {}
+```
+ 
+```
+import { asyncGeneratorFunc } from './test'
+
+let type = new util.types();
+let result = type.isGeneratorFunction(asyncGeneratorFunc);
+console.info("result = " + result);
+// 输出结果：result = false
+
+console.info("asyncGeneratorFunc.constructor.name === AsyncGeneratorFunction : " +
+  (asyncGeneratorFunc.constructor.name === 'AsyncGeneratorFunction'));
+// 输出结果：asyncGeneratorFunc.constructor.name === AsyncGeneratorFunction : true
 ```
 
 #### [h2]isGeneratorObject8+

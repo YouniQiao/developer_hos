@@ -2,7 +2,8 @@
 title: "Http_Buffer"
 upstream_id: "harmonyos-references/capi-netstack-http-buffer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:55.024770"
+content_hash: "d1f5ec6ea219"
+synced_at: "2026-07-09T00:59:30.195933"
 ---
 
 # Http_Buffer

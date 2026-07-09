@@ -2,7 +2,8 @@
 title: "MediaLibrary_RequestId"
 upstream_id: "harmonyos-references/capi-mediaassetmanager-medialibrary-requestid"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:47.904517"
+content_hash: "c9406924b5f5"
+synced_at: "2026-07-09T01:00:48.519907"
 ---
 
 # MediaLibrary_RequestId

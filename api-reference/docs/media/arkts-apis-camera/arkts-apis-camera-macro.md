@@ -2,7 +2,8 @@
 title: "Interface (Macro)"
 upstream_id: "harmonyos-references/arkts-apis-camera-macro"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:11.746989"
+content_hash: "18789f281159"
+synced_at: "2026-07-09T01:00:21.962302"
 ---
 
 # Interface (Macro)

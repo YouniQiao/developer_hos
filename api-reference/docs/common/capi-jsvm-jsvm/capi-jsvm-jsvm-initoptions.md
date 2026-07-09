@@ -2,7 +2,8 @@
 title: "JSVM_InitOptions"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-initoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:02.774388"
+content_hash: "37dd7c485a2c"
+synced_at: "2026-07-09T01:01:46.666601"
 ---
 
 # JSVM_InitOptions

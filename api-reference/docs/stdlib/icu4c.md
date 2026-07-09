@@ -2,7 +2,8 @@
 title: "ICU4C"
 upstream_id: "harmonyos-references/icu4c"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:05.240615"
+content_hash: "420d76cb1d28"
+synced_at: "2026-07-09T01:01:48.805686"
 ---
 
 # ICU4C

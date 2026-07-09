@@ -2,14 +2,15 @@
 title: "FunctionComponent（功能组件）"
 upstream_id: "harmonyos-references/hmaf-function-component"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:54.831430"
+content_hash: "a25eb4824ae7"
+synced_at: "2026-07-09T01:01:40.650928"
 ---
 
 # FunctionComponent（功能组件）
 
 Agent Framework Kit（智能体框架服务）提供了拉起指定智能体的能力。
 
-应用在[小艺开放平台](https://developer.huawei.com/consumer/cn/hag/hagindex.html?isInFrame=true&lang=zh_CN#/)上线智能体后，向用户提供应用+智能体组合的服务，让用户可以在适当的场景下通过Agent Framework Kit的UI控件能力主动拉起智能体。配置智能体请参考[快速创建智能体](https://developer.huawei.com/consumer/cn/doc/service/developing-intelligent-agents-0000002435989592)。
+应用在[小艺开放平台](https://developer.huawei.com/consumer/cn/hag/hagindex.html?isInFrame=true&lang=zh_CN#/)上线智能体后，向用户提供应用+智能体组合的服务，让用户可以在适当的场景下通过Agent Framework Kit的UI控件能力主动拉起智能体。开发智能体请参考[开发Agent](https://developer.huawei.com/consumer/cn/doc/service/developing-intelligent-agents-0000002435989592)。
 
 起始版本： 6.0.0(20)
 

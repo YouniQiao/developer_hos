@@ -2,7 +2,8 @@
 title: "Camera_TorchStatusInfo"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-torchstatusinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:16.831653"
+content_hash: "e76cbdac04cd"
+synced_at: "2026-07-09T01:00:26.178442"
 ---
 
 # Camera_TorchStatusInfo

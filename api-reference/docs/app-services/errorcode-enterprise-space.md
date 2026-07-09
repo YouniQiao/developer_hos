@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-enterprise-space"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:24.415074"
+content_hash: "64369dbf43d7"
+synced_at: "2026-07-09T01:01:16.955454"
 ---
 
 # ArkTS API错误码

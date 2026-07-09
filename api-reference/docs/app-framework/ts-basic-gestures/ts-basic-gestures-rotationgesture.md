@@ -2,7 +2,8 @@
 title: "RotationGesture"
 upstream_id: "harmonyos-references/ts-basic-gestures-rotationgesture"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:51.126775"
+content_hash: "3e7720502a6d"
+synced_at: "2026-07-09T00:57:44.389578"
 ---
 
 # RotationGesture
@@ -176,4 +177,4 @@ struct RotationGestureExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469627.png)
+ ![](./img/zh-cn_image_0000002661732373.png)

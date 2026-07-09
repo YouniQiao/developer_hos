@@ -2,7 +2,8 @@
 title: "Image错误码"
 upstream_id: "harmonyos-references/errorcode-image"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:32.954571"
+content_hash: "1f056a4e91b2"
+synced_at: "2026-07-09T01:00:38.097698"
 ---
 
 # Image错误码

@@ -2,7 +2,8 @@
 title: "表冠事件"
 upstream_id: "harmonyos-references/ts-universal-events-crown"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:32.470652"
+content_hash: "9037500a8d9e"
+synced_at: "2026-07-09T00:57:35.726789"
 ---
 
 # 表冠事件
@@ -96,4 +97,4 @@ struct CityList {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656467839.gif)
+ ![](./img/zh-cn_image_0000002631251416.gif)

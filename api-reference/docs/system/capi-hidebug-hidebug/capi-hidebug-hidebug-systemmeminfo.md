@@ -2,7 +2,8 @@
 title: "HiDebug_SystemMemInfo"
 upstream_id: "harmonyos-references/capi-hidebug-hidebug-systemmeminfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:48.856311"
+content_hash: "79e349047ea1"
+synced_at: "2026-07-09T01:00:04.930222"
 ---
 
 # HiDebug_SystemMemInfo
@@ -13,7 +14,7 @@ typedef struct HiDebug_SystemMemInfo {...} HiDebug_SystemMemInfo
 
 #### 概述
 
-系统内存信息结构类型定义。
+系统内存信息结构类型定义。用于获取系统内存的总量、空闲量、可用量等关键信息，适用于系统性能分析、内存监控、故障诊断等场景，帮助开发者了解系统内存使用状况，优化内存管理策略。
 
 起始版本： 12
 

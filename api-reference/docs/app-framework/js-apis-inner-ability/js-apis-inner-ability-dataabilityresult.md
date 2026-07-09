@@ -2,7 +2,8 @@
 title: "DataAbilityResult"
 upstream_id: "harmonyos-references/js-apis-inner-ability-dataabilityresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:49.564455"
+content_hash: "d475374c8b1b"
+synced_at: "2026-07-09T00:57:06.373848"
 ---
 
 # DataAbilityResult

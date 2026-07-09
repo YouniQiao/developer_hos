@@ -2,7 +2,8 @@
 title: "ipc_cparcel.h"
 upstream_id: "harmonyos-references/capi-ipc-cparcel-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:21.466586"
+content_hash: "e7564579d3f0"
+synced_at: "2026-07-09T00:59:05.921854"
 ---
 
 # ipc_cparcel.h

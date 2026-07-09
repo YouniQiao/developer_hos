@@ -2,7 +2,8 @@
 title: "LiveViewLockScreenExtensionContext"
 upstream_id: "harmonyos-references/liveview-lock-screen-context"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:30.195612"
+content_hash: "6668beb23eed"
+synced_at: "2026-07-09T01:01:22.552124"
 ---
 
 # LiveViewLockScreenExtensionContext

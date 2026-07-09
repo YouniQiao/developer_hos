@@ -2,7 +2,8 @@
 title: "HiAISingleOpDescriptor_ConvolutionParam"
 upstream_id: "harmonyos-references/cannkit-sopdesc-convparam"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:55.614704"
+content_hash: "d9aacc634b59"
+synced_at: "2026-07-09T01:01:41.276256"
 ---
 
 # HiAISingleOpDescriptor_ConvolutionParam

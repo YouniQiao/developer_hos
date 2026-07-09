@@ -2,7 +2,8 @@
 title: "Pasteboard_ProgressInfo"
 upstream_id: "harmonyos-references/capi-pasteboard-progressinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:11.842659"
+content_hash: "b3e5435ddbc5"
+synced_at: "2026-07-09T00:59:43.690854"
 ---
 
 # Pasteboard_ProgressInfo

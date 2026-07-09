@@ -2,7 +2,8 @@
 title: "ffrt_cond_t"
 upstream_id: "harmonyos-references/capi-ffrt-ffrt-cond-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:17.353289"
+content_hash: "c64488dfe639"
+synced_at: "2026-07-09T00:59:48.095699"
 ---
 
 # ffrt_cond_t

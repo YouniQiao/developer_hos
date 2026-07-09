@@ -2,12 +2,13 @@
 title: "Class (WebKeyboardController)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-webkeyboardcontroller"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:07.119239"
+content_hash: "14ea7432be11"
+synced_at: "2026-07-09T00:58:54.187831"
 ---
 
 # Class (WebKeyboardController)
 
-控制自定义键盘的输入、删除、关闭等操作。示例代码参考[onInterceptKeyboardAttach](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#oninterceptkeyboardattach12)。
+WebKeyboardController是ArkWeb提供的用于控制Web组件自定义键盘行为的控制器类。当Web页面中的输入框需要弹出键盘时，开发者可通过[onInterceptKeyboardAttach](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#oninterceptkeyboardattach12)事件拦截系统默认键盘的挂载，并使用WebKeyboardController向当前聚焦的Web输入框执行插入字符、前向/后向删除、发送Enter等功能键以及关闭自定义键盘等操作。该类适用于需要为Web场景实现自定义安全键盘、表情键盘、手写键盘或业务专属输入面板的应用，使开发者能够完全接管Web输入框的键盘输入逻辑。
 
 ![](./img/note_3.0-zh-cn.png)
 

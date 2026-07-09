@@ -2,7 +2,8 @@
 title: "inputmethod_attach_options_capi.h"
 upstream_id: "harmonyos-references/capi-inputmethod-attach-options-capi-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:19.464782"
+content_hash: "732b34c2e0f8"
+synced_at: "2026-07-09T00:59:04.391179"
 ---
 
 # inputmethod_attach_options_capi.h

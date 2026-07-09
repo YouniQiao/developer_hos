@@ -2,7 +2,8 @@
 title: "OhosPixelMapCreateOps"
 upstream_id: "harmonyos-references/capi-image-ohospixelmapcreateops"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:30.449356"
+content_hash: "c740ea1c563d"
+synced_at: "2026-07-09T01:00:35.850276"
 ---
 
 # OhosPixelMapCreateOps

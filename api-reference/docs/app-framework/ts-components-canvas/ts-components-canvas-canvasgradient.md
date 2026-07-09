@@ -2,7 +2,8 @@
 title: "CanvasGradient"
 upstream_id: "harmonyos-references/ts-components-canvas-canvasgradient"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:29.597569"
+content_hash: "9843d174850f"
+synced_at: "2026-07-09T00:58:03.025291"
 ---
 
 # CanvasGradient
@@ -62,13 +63,13 @@ struct AddColorStop {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070710.png)
+ ![](./img/zh-cn_image_0000002661732739.png)
 
 #### addColorStop20+
 
 addColorStop(offset: number, color: string | ColorMetrics): void
 
-设置渐变断点值，包括偏移和颜色。支持设置rgb或者argb格式颜色。支持通过传入[ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12)类型设置P3色域颜色值，可在支持高色域的设备上获得更丰富的色彩表现。
+设置渐变断点值，包括偏移和颜色。支持设置rgb或者argb格式颜色。支持通过传入[ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12)类型设置P3广色域颜色值，从API版本26.0.0开始，新增支持BT2020广色域和HDR提亮。
 
 卡片能力： 从API version 20开始，该接口支持在ArkTS卡片中使用。
 
@@ -83,7 +84,7 @@ addColorStop(offset: number, color: string | ColorMetrics): void
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | offset | number | 是 | 设置渐变点距离起点的位置占总体长度的比例，范围为[0, 1]。 设置offset1无渐变效果。 异常值undefined和null按无效值处理，不设置本次断点值，NaN会导致CanvasGradient异常，Infinity会导致整个CanvasGradient不生效。 |
-| color | string | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 是 | 设置渐变的颜色。 可以使用[colorWithSpace](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colorwithspace20)方法构造指定色域属性[ColorSpace](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#colorspace20)为SRGB或DISPLAY_P3的颜色。每个渐变ColorMetrics的色域属性应当统一，设置不同色域的属性时将抛出异常，错误码：103701。 设置null和undefined无效，忽略本次断点值。 |
+| color | string | [ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12) | 是 | 设置渐变的颜色。string类型参见[colorWithSpace](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colorwithspace20)方法。ColorMetrics类型可以构造指定色域属性[ColorSpace](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#colorspace20)为sRGB或DISPLAY_P3的颜色。从API版本26.0.0开始，新增支持构造BT2020色域的颜色，并支持HDR提亮。每个渐变ColorMetrics的色域属性应当统一，设置不同色域的属性时将抛出异常，错误码：103701。设置null和undefined无效，忽略本次断点值。 |
 
 错误码：
 
@@ -93,7 +94,7 @@ addColorStop(offset: number, color: string | ColorMetrics): void
 | --- | --- |
 | 103701 | The color's ColorSpace is not the same as the last color's. |
 
-![](./img/note_3.0-zh-cn.png) 仅[CanvasRenderingContext2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-canvasrenderingcontext2d)对象的[fillStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-canvasrenderingcontext2d#fillstyle)和[strokeStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-canvasrenderingcontext2d#strokestyle)属性支持设置P3广色域的CanvasGradient对象，且需要将Canvas组件所在窗口的色域模式通过[setWindowColorSpace](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowcolorspace9)方法设置为广色域模式WIDE_GAMUT。
+![](./img/note_3.0-zh-cn.png) 仅[CanvasRenderingContext2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-canvasrenderingcontext2d)对象的[fillStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-canvasrenderingcontext2d#fillstyle)和[strokeStyle](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-canvasrenderingcontext2d#strokestyle)属性支持设置广色域的CanvasGradient对象。使用HDR颜色时，需将Canvas组件所在窗口的色域模式通过[setWindowColorSpace](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowcolorspace9)方法设置为广色域模式WIDE_GAMUT。
 
 示例：
 
@@ -116,7 +117,7 @@ struct AddColorStop {
         .width('100%')
         .height('100%')
         .onReady(() => {
-          // 设置fillStyle为SRGB色域效果的gradient
+          // 设置fillStyle为sRGB色域效果的gradient
           let gradSRGB = this.context.createLinearGradient(85, 10, 160, 110)
           // 使用try catch对可能出现的异常进行捕获
           try {
@@ -150,4 +151,75 @@ struct AddColorStop {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469987.png)
+ ![](./img/zh-cn_image_0000002631253620.png)
+
+以下示例演示SDR与HDR渐变的亮度差异。通过[ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12)可以构造BT2020色域的HDR颜色，颜色分量值可以超过1.0，超过1.0的部分用于表现超出普通屏幕亮度范围的高亮效果。左侧使用sRGB色域的红->白->绿渐变，右侧使用BT2020色域的HDR颜色且高光白色亮度倍数达到1.5，在支持HDR的屏幕上右侧高光区域明显比左侧更亮。
+
+![](./img/note_3.0-zh-cn.png) 使用HDR颜色时，需要将Canvas组件所在窗口的色域模式通过[setWindowColorSpace](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setwindowcolorspace9)方法设置为广色域模式（WIDE_GAMUT），否则HDR提亮效果不会生效。
+
+从API版本26.0.0开始，[addColorStop](#addcolorstop20)接口新增支持通过[ColorMetrics](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-graphics#colormetrics12)类型入参进行HDR提亮。
+
+```
+// xxx.ets
+import { ColorMetrics } from '@kit.ArkUI';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+@Entry
+@Component
+struct CanvasGradientDemo {
+  private settings: RenderingContextSettings = new RenderingContextSettings(true);
+  private context: CanvasRenderingContext2D = new CanvasRenderingContext2D(this.settings);
+
+  build() {
+    Column({ space: 30 }) {
+      Canvas(this.context)
+        .width(340)
+        .height(240)
+        .onReady(() => {
+          // HDR渐变支持超出1.0的亮度值，在支持HDR的设备上，右侧高光区域会比左侧更亮
+          this.drawCanvas();
+        })
+    }
+    .width('100%')
+    .height('100%')
+    .justifyContent(FlexAlign.Center)
+  }
+
+  private drawCanvas() {
+    // 左侧：SDR渐变，红 -> 白 -> 绿
+    let gradSDR = this.context.createLinearGradient(20, 20, 160, 160)
+    try {
+      gradSDR.addColorStop(0.0, ColorMetrics.colorWithSpace(ColorSpace.SRGB, 1.0, 0.0, 0.0, 1.0)) // 红色
+      gradSDR.addColorStop(0.5, ColorMetrics.colorWithSpace(ColorSpace.SRGB, 1.0, 1.0, 1.0, 1.0)) // 白色
+      gradSDR.addColorStop(1.0, ColorMetrics.colorWithSpace(ColorSpace.SRGB, 0.0, 1.0, 0.0, 1.0)) // 绿色
+    } catch (error) {
+      let e: BusinessError = error as BusinessError;
+      console.error(`SDR Failed to addColorStop. Code: ${e.code}, message: ${e.message}`);
+    }
+    this.context.fillStyle = gradSDR
+    this.context.fillRect(10, 10, 150, 150)
+
+    this.context.fillStyle = '#FFFFFF'
+    this.context.font = '16px sans-serif'
+    this.context.textAlign = 'center'
+    this.context.fillText("SDR", 85, 190)
+
+    // 右侧：HDR渐变，红 -> 高亮白(亮度1.5) -> 绿
+    let gradHDR = this.context.createLinearGradient(190, 20, 330, 160)
+    try {
+      gradHDR.addColorStop(0.0, ColorMetrics.createHDRColor(ColorSpace.BT2020, 1.0, 0.0, 0.0, 1.0)) // 红色
+      gradHDR.addColorStop(0.5, ColorMetrics.createHDRColor(ColorSpace.BT2020, 1.5, 1.5, 1.5, 1.0)) // 高亮白色
+      gradHDR.addColorStop(1.0, ColorMetrics.createHDRColor(ColorSpace.BT2020, 0.0, 1.0, 0.0, 1.0)) // 绿色
+    } catch (error) {
+      let e: BusinessError = error as BusinessError;
+      console.error(`HDR Failed to addColorStop. Code: ${e.code}, message: ${e.message}`);
+    }
+    this.context.fillStyle = gradHDR
+    this.context.fillRect(180, 10, 150, 150)
+
+    this.context.fillStyle = '#FFFFFF'
+    this.context.fillText("HDR", 255, 190)
+  }
+}
+```
+ ![](./img/zh-cn_image_0000002661612801.png)

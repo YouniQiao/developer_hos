@@ -2,7 +2,8 @@
 title: "Class (Brush)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-brush"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:52.221540"
+content_hash: "59d16c6fe900"
+synced_at: "2026-07-09T01:00:51.095039"
 ---
 
 # Class (Brush)

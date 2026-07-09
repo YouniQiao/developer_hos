@@ -2,7 +2,8 @@
 title: "oh_rdb_transaction.h"
 upstream_id: "harmonyos-references/capi-oh-rdb-transaction-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:06.805635"
+content_hash: "7bb8509b9dea"
+synced_at: "2026-07-09T00:57:19.213780"
 ---
 
 # oh_rdb_transaction.h

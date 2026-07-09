@@ -1,9 +1,12 @@
 ---
+
 title: "情景模式错误码"
 upstream_id: "harmonyos-references/errorcode-intelligentscene"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:13.755737"
+synced_at: "2026-07-09T00:59:45.117829"
+content_hash: "e63f386167ab"
 ---
+
 
 # 情景模式错误码
 

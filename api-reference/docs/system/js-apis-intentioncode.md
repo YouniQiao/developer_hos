@@ -2,7 +2,8 @@
 title: "@ohos.multimodalInput.intentionCode (意图事件)"
 upstream_id: "harmonyos-references/js-apis-intentioncode"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:17.777761"
+content_hash: "9ccc6dcbf055"
+synced_at: "2026-07-09T00:59:48.438860"
 ---
 
 # @ohos.multimodalInput.intentionCode (意图事件)

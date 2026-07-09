@@ -2,7 +2,8 @@
 title: "camera_device.h"
 upstream_id: "harmonyos-references/capi-camera-device-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:14.674281"
+content_hash: "880760c2052b"
+synced_at: "2026-07-09T01:00:24.553592"
 ---
 
 # camera_device.h

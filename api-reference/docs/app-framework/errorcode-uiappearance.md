@@ -1,9 +1,12 @@
 ---
+
 title: "用户界面外观服务错误码"
 upstream_id: "harmonyos-references/errorcode-uiappearance"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:01.296735"
+synced_at: "2026-07-09T00:58:49.213001"
+content_hash: "55f167082e81"
 ---
+
 
 # 用户界面外观服务错误码
 

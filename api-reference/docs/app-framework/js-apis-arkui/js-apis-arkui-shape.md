@@ -2,7 +2,8 @@
 title: "@ohos.arkui.shape (形状)"
 upstream_id: "harmonyos-references/js-apis-arkui-shape"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:19.866542"
+content_hash: "0e556b31f4de"
+synced_at: "2026-07-09T00:57:28.011361"
 ---
 
 # @ohos.arkui.shape (形状)
@@ -503,4 +504,4 @@ struct ShapeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469439.png)
+ ![](./img/zh-cn_image_0000002661612239.png)

@@ -2,7 +2,8 @@
 title: "native_avqueueitem.h"
 upstream_id: "harmonyos-references/capi-native-avqueueitem-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:08.639250"
+content_hash: "d0008c9291ba"
+synced_at: "2026-07-09T01:00:20.261570"
 ---
 
 # native_avqueueitem.h
@@ -83,7 +84,7 @@ AVQueueItem_Result OH_AVSession_AVMediaDescriptionBuilder_Create(OH_AVSession_AV
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AVSession_AVMediaDescriptionBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession-avmediadescriptionbuilder)** builder | 指向创建结果的构建器对象。 |
+| [OH_AVSession_AVMediaDescriptionBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession-avmediadescriptionbuilder)** builder | 指向用于接收创建结果的构建器对象。 |
 
 返回：
 
@@ -298,7 +299,7 @@ AVQueueItem_Result OH_AVSession_AVMediaDescriptionBuilder_SetDuration(OH_AVSessi
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AVSession_AVMediaDescriptionBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession-avmediadescriptionbuilder)* builder | 表示音视频媒体描述构建器实例指针。 |
-| const int32_t duration | 媒体资源的持续时间。单位为毫秒。 |
+| const int32_t duration | 媒体资源的持续时间。单位为毫秒（ms）。 |
 
 返回：
 
@@ -346,7 +347,7 @@ AVQueueItem_Result OH_AVSession_AVMediaDescriptionBuilder_SetStartPosition(OH_AV
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AVSession_AVMediaDescriptionBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession-avmediadescriptionbuilder)* builder | 表示音视频媒体描述构建器实例指针。 |
-| const int32_t startPosition | 媒体资源的起始位置。 |
+| const int32_t startPosition | 媒体资源的起始位置。单位为毫秒（ms）。 |
 
 返回：
 
@@ -442,7 +443,7 @@ AVQueueItem_Result OH_AVSession_AVMediaDescription_GetAssetId(OH_AVSession_AVMed
 | 参数项 | 描述 |
 | --- | --- |
 | [OH_AVSession_AVMediaDescription](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession-avmediadescription)* description | 表示音视频媒体描述实例指针。 |
-| char** assetId | 指针变量将返回媒体资源的当前资产ID。 |
+| char** assetId | 指针变量，用于接收媒体资源的当前资产ID。 |
 
 返回：
 
@@ -777,7 +778,7 @@ AVQueueItem_Result OH_AVSession_AVMediaDescription_Destroy(OH_AVSession_AVMediaD
 
 | 参数项 | 描述 |
 | --- | --- |
-| [OH_AVSession_AVMediaDescription](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession-avmediadescription)* avMediaDescription | 指向用于接收avMediaDescription对象的指针变量。 |
+| [OH_AVSession_AVMediaDescription](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-oh-avsession-avmediadescription)* avMediaDescription | 指向要释放的avMediaDescription对象。 |
 
 返回：
 

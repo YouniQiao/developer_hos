@@ -2,7 +2,8 @@
 title: "HdsVisualComponent"
 upstream_id: "harmonyos-references/ui-design-hds-visual-component"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:27.207293"
+content_hash: "333767620daf"
+synced_at: "2026-07-09T00:59:10.311534"
 ---
 
 # HdsVisualComponent
@@ -272,4 +273,4 @@ struct EdgeFlowLightVisualComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626231234.gif)
+ ![](./img/zh-cn_image_0000002631414130.gif)

@@ -2,7 +2,8 @@
 title: "TextClock"
 upstream_id: "harmonyos-references/ts-basic-components-textclock"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:27.708339"
+content_hash: "8c6a7923b6c8"
+synced_at: "2026-07-09T00:58:02.250996"
 ---
 
 # TextClock
@@ -250,7 +251,7 @@ textShadow(value: ShadowOptions | Array<ShadowOptions>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ShadowOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowoptions对象说明) | Array | 是 | 文字的字体阴影效果。 |
+| value | [ShadowOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadowoptions对象说明) | Array | 是 | 文字阴影效果。 |
 
 #### [h2]fontFeature11+
 
@@ -411,7 +412,7 @@ stop()
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | timeZoneOffset | number | 否 | 否 | 当前文本时钟时区偏移量。 取值范围为[-14, 12]，表示东十二区到西十二区，其中负值表示东时区，正值表示西时区，比如东八区为-8。设置值为该取值范围内的浮点数时会进行取整，舍弃小数部分。 |
-| started | boolean | 否 | 否 | 指示文本时钟是否启动。 true：表示启动文本时钟。 false：表示关闭文本时钟。 默认值：true |
+| started | boolean | 否 | 否 | 指示文本时钟是否启动。 true：表示启动文本时钟。 false：表示停止文本时钟。 默认值：true |
 | timeValue | number | 否 | 否 | 当前文本时钟时区的UTC秒数。 |
 
 #### 示例
@@ -461,7 +462,7 @@ struct Second {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070700.gif)
+ ![](./img/zh-cn_image_0000002661732729.gif)
 
 #### [h2]示例2（设定文本阴影样式）
 
@@ -505,7 +506,7 @@ struct TextClockExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469977.png)
+ ![](./img/zh-cn_image_0000002631253610.png)
 
 #### [h2]示例3（设定自定义内容区）
 
@@ -588,7 +589,7 @@ struct TextClockExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350025.gif)
+ ![](./img/zh-cn_image_0000002661612791.gif)
 
 #### [h2]示例4（设置前导零）
 
@@ -622,7 +623,7 @@ struct TextClockExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230612.png)
+ ![](./img/zh-cn_image_0000002631413502.png)
 
 #### [h2]示例5（设置文字显示样式）
 
@@ -676,4 +677,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070702.png)
+ ![](./img/zh-cn_image_0000002661732731.png)

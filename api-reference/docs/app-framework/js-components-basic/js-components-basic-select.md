@@ -2,7 +2,8 @@
 title: "select"
 upstream_id: "harmonyos-references/js-components-basic-select"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:07.454490"
+content_hash: "280334d27139"
+synced_at: "2026-07-09T00:58:22.559209"
 ---
 
 # select
@@ -86,4 +87,4 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002626070988.png)
+ ![](./img/zh-cn_image_0000002661733021.png)

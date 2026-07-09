@@ -2,7 +2,8 @@
 title: "FormExtensionContext"
 upstream_id: "harmonyos-references/js-apis-inner-application-formextensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:17.955202"
+content_hash: "6cc0b565db7e"
+synced_at: "2026-07-09T00:59:03.000206"
 ---
 
 # FormExtensionContext

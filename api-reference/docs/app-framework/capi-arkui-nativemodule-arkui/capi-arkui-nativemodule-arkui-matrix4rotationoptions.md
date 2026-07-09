@@ -2,7 +2,8 @@
 title: "ArkUI_Matrix4RotationOptions"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-matrix4rotationoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:51.670997"
+content_hash: "f2683743b627"
+synced_at: "2026-07-09T00:58:42.735474"
 ---
 
 # ArkUI_Matrix4RotationOptions

@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.AtomicServiceOptions (openAtomicService可选参数)"
 upstream_id: "harmonyos-references/js-apis-app-ability-atomicserviceoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:45.891672"
+content_hash: "c8e13471e1cc"
+synced_at: "2026-07-09T00:57:03.671496"
 ---
 
 # @ohos.app.ability.AtomicServiceOptions (openAtomicService可选参数)

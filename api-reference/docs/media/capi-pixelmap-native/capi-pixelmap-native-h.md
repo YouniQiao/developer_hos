@@ -2,7 +2,8 @@
 title: "pixelmap_native.h"
 upstream_id: "harmonyos-references/capi-pixelmap-native-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:26.259231"
+content_hash: "8e2afca3f885"
+synced_at: "2026-07-09T01:00:33.238976"
 ---
 
 # pixelmap_native.h

@@ -2,7 +2,8 @@
 title: "NotificationRequest"
 upstream_id: "harmonyos-references/js-apis-inner-notification-notificationrequest"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:37.801884"
+content_hash: "79e9df82a212"
+synced_at: "2026-07-09T01:01:29.094218"
 ---
 
 # NotificationRequest

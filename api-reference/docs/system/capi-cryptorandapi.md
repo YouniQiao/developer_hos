@@ -2,7 +2,8 @@
 title: "CryptoRandApi"
 upstream_id: "harmonyos-references/capi-cryptorandapi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:30.630024"
+content_hash: "0ca27f9ea25b"
+synced_at: "2026-07-09T00:59:11.901850"
 ---
 
 # CryptoRandApi

@@ -2,7 +2,8 @@
 title: "ArkUI_TextLayoutManager"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-textlayoutmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:56.126110"
+content_hash: "a18bc5c79651"
+synced_at: "2026-07-09T00:58:45.579871"
 ---
 
 # ArkUI_TextLayoutManager

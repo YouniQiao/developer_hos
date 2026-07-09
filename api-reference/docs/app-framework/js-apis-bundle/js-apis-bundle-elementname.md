@@ -2,7 +2,8 @@
 title: "ElementName"
 upstream_id: "harmonyos-references/js-apis-bundle-elementname"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:57.044464"
+content_hash: "7a2c6e97dec9"
+synced_at: "2026-07-09T00:57:11.663087"
 ---
 
 # ElementName

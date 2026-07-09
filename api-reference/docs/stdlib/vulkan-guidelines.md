@@ -2,7 +2,8 @@
 title: "Vulkan Surface开发指导"
 upstream_id: "harmonyos-references/vulkan-guidelines"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:05.450321"
+content_hash: "044306f73da2"
+synced_at: "2026-07-09T01:01:49.022572"
 ---
 
 # Vulkan Surface开发指导

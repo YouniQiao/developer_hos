@@ -2,7 +2,8 @@
 title: "loop.h"
 upstream_id: "harmonyos-references/capi-loop-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:16.048919"
+content_hash: "2e7f93c503a3"
+synced_at: "2026-07-09T00:59:47.076085"
 ---
 
 # loop.h

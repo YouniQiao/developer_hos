@@ -2,7 +2,8 @@
 title: "Class (ImageFilter)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-imagefilter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:53.106748"
+content_hash: "dc038daa9fee"
+synced_at: "2026-07-09T01:00:51.741744"
 ---
 
 # Class (ImageFilter)

@@ -2,7 +2,8 @@
 title: "ImageProcessing"
 upstream_id: "harmonyos-references/capi-imageprocessing"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:25.215160"
+content_hash: "5d93e3b07a73"
+synced_at: "2026-07-09T01:00:31.698880"
 ---
 
 # ImageProcessing

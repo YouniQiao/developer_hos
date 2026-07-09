@@ -2,7 +2,8 @@
 title: "Hid_AbsAxesArray"
 upstream_id: "harmonyos-references/capi-hidddk-hid-absaxesarray"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:32.854538"
+content_hash: "a9a441ef5c59"
+synced_at: "2026-07-09T00:59:55.719251"
 ---
 
 # Hid_AbsAxesArray

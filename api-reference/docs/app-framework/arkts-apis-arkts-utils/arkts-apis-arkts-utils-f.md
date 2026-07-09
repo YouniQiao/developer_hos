@@ -2,7 +2,8 @@
 title: "Functions"
 upstream_id: "harmonyos-references/arkts-apis-arkts-utils-f"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:14.717873"
+content_hash: "0af0c145c9de"
+synced_at: "2026-07-09T00:57:24.352707"
 ---
 
 # Functions
@@ -54,5 +55,5 @@ if (ArkTSUtils.isSendable(sendableFunc)) {
 } else {
   console.info("sendableFunc is not Sendable");
 }
-// 期望输出: 'SendableFunc is Sendable'
+// 期望输出: 'sendableFunc is Sendable'
 ```

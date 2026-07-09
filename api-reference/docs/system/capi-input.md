@@ -2,7 +2,8 @@
 title: "input"
 upstream_id: "harmonyos-references/capi-input"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:18.540689"
+content_hash: "fda5560519b0"
+synced_at: "2026-07-09T00:59:49.133072"
 ---
 
 # input

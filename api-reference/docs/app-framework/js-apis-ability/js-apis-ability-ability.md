@@ -2,7 +2,8 @@
 title: "@ohos.ability.ability (Ability模块)"
 upstream_id: "harmonyos-references/js-apis-ability-ability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:49.176101"
+content_hash: "46e3fda980ca"
+synced_at: "2026-07-09T00:57:06.040288"
 ---
 
 # @ohos.ability.ability (Ability模块)

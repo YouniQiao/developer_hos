@@ -2,7 +2,8 @@
 title: "防火墙错误码"
 upstream_id: "harmonyos-references/errorcode-net-netfirewall"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:56.948310"
+content_hash: "0847777c7ff0"
+synced_at: "2026-07-09T00:59:31.590337"
 ---
 
 # 防火墙错误码

@@ -2,7 +2,8 @@
 title: "DynamicLayout"
 upstream_id: "harmonyos-references/ts-container-dynamiclayout"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:52.885229"
+content_hash: "77c10ec815e1"
+synced_at: "2026-07-09T00:57:45.958670"
 ---
 
 # DynamicLayout
@@ -225,7 +226,7 @@ interface Product {
   image: string;
 }
 ```
- ![](./img/zh-cn_image_0000002626070368.png)
+ ![](./img/zh-cn_image_0000002631413162.png)
 
 #### [h2]示例2（切换布局算法）
 
@@ -341,7 +342,7 @@ struct LayoutSwitchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469645.gif)
+ ![](./img/zh-cn_image_0000002661732391.gif)
 
 #### [h2]示例3（修改布局算法属性）
 
@@ -409,4 +410,4 @@ struct PropertyChangeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349693.gif)
+ ![](./img/zh-cn_image_0000002631253272.gif)

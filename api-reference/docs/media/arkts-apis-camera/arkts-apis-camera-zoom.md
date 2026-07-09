@@ -2,7 +2,8 @@
 title: "Interface (Zoom)"
 upstream_id: "harmonyos-references/arkts-apis-camera-zoom"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:13.779148"
+content_hash: "8e969672d505"
+synced_at: "2026-07-09T01:00:23.563830"
 ---
 
 # Interface (Zoom)

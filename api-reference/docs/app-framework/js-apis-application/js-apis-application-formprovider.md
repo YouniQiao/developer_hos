@@ -2,7 +2,8 @@
 title: "@ohos.application.formProvider (formProvider)"
 upstream_id: "harmonyos-references/js-apis-application-formprovider"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:18.313919"
+content_hash: "5fcb4f41f584"
+synced_at: "2026-07-09T00:59:03.399492"
 ---
 
 # @ohos.application.formProvider (formProvider)

@@ -2,7 +2,8 @@
 title: "ServiceCollaboration"
 upstream_id: "harmonyos-references/servicecollaboration-capi-module"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:03.493243"
+content_hash: "1b86596920a3"
+synced_at: "2026-07-09T00:59:37.469924"
 ---
 
 # ServiceCollaboration

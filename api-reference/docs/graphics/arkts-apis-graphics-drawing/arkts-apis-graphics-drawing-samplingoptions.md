@@ -2,7 +2,8 @@
 title: "Class (SamplingOptions)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-samplingoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:54.676735"
+content_hash: "f323d2ae64e4"
+synced_at: "2026-07-09T01:00:52.698451"
 ---
 
 # Class (SamplingOptions)

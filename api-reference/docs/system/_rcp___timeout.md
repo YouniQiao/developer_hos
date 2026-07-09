@@ -2,7 +2,8 @@
 title: "Rcp_Timeout"
 upstream_id: "harmonyos-references/_rcp___timeout"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:02.173798"
+content_hash: "7e8424a58529"
+synced_at: "2026-07-09T00:59:36.160707"
 ---
 
 # Rcp_Timeout

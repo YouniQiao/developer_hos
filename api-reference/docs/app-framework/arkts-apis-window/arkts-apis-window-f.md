@@ -2,7 +2,8 @@
 title: "Functions"
 upstream_id: "harmonyos-references/arkts-apis-window-f"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:29.816569"
+content_hash: "f19711265d92"
+synced_at: "2026-07-09T00:57:34.655841"
 ---
 
 # Functions

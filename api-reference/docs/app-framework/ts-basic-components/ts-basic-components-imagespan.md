@@ -2,7 +2,8 @@
 title: "ImageSpan"
 upstream_id: "harmonyos-references/ts-basic-components-imagespan"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:17.729260"
+content_hash: "80d906f99c06"
+synced_at: "2026-07-09T00:57:57.075185"
 ---
 
 # ImageSpan
@@ -98,7 +99,7 @@ colorFilter(filter: ColorFilter | DrawingColorFilter)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| filter | [ColorFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#colorfilter9) | [DrawingColorFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image#drawingcolorfilter12) | 是 | 1. 给图像设置颜色滤镜效果，入参为一个4x5的RGBA转换矩阵。 矩阵第一行表示R（红色）的向量值，第二行表示G（绿色）的向量值，第三行表示B（蓝色）的向量值，第四行表示A（透明度）的向量值，4行分别代表不同的RGBA的向量值。 当矩阵对角线值为1，其余值为0时，保持图片原有色彩。 **计算规则：** 如果输入的滤镜矩阵为： ![](./img/zh-cn_image_0000002626230502.png) 像素点为[R, G, B, A]，色值的范围[0, 255] 则过滤后的颜色为 [R’, G’, B’, A’] ![](./img/zh-cn_image_0000002626070592.png) 2. 支持@ohos.graphics.drawing的ColorFilter类型作为入参。 **说明：** 该接口中的DrawingColorFilter类型支持在元服务中使用。其中，svg类型的图源只对stroke属性生效。 |
+| filter | [ColorFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#colorfilter9) | [DrawingColorFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image#drawingcolorfilter12) | 是 | 1. 给图像设置颜色滤镜效果，入参为一个4x5的RGBA转换矩阵。 矩阵第一行表示R（红色）的向量值，第二行表示G（绿色）的向量值，第三行表示B（蓝色）的向量值，第四行表示A（透明度）的向量值，4行分别代表不同的RGBA的向量值。 当矩阵对角线值为1，其余值为0时，保持图片原有色彩。 **计算规则：** 如果输入的滤镜矩阵为： ![](./img/zh-cn_image_0000002631413392.png) 像素点为[R, G, B, A]，色值的范围[0, 255] 则过滤后的颜色为 [R’, G’, B’, A’] ![](./img/zh-cn_image_0000002661732621.png) 2. 支持@ohos.graphics.drawing的ColorFilter类型作为入参。 **说明：** 该接口中的DrawingColorFilter类型支持在元服务中使用。其中，svg类型的图源只对stroke属性生效。 |
 
 #### [h2]supportSvg222+
 
@@ -241,7 +242,7 @@ struct SpanExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469869.png)
+ ![](./img/zh-cn_image_0000002631253500.png)
 
 #### [h2]示例2（设置背景样式）
 
@@ -269,7 +270,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349917.png)
+ ![](./img/zh-cn_image_0000002661612683.png)
 
 #### [h2]示例3（为图片添加事件）
 
@@ -344,7 +345,7 @@ struct SpanExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230504.png)
+ ![](./img/zh-cn_image_0000002631413394.png)
 
 #### [h2]示例5（设置加载占位图）
 
@@ -410,7 +411,7 @@ struct SpanExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070594.gif)
+ ![](./img/zh-cn_image_0000002661732623.gif)
 
 #### [h2]示例6（使用supportSvg2属性时，SVG图片的显示效果）
 
@@ -450,4 +451,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469871.png)
+ ![](./img/zh-cn_image_0000002631253502.png)

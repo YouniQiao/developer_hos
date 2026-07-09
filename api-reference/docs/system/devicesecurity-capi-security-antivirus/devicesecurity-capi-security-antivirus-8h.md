@@ -2,7 +2,8 @@
 title: "security_antivirus.h"
 upstream_id: "harmonyos-references/devicesecurity-capi-security-antivirus-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:36.648864"
+content_hash: "0281b6b5d269"
+synced_at: "2026-07-09T00:59:16.202175"
 ---
 
 # security_antivirus.h

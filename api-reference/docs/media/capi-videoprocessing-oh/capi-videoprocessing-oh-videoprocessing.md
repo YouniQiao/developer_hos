@@ -2,7 +2,8 @@
 title: "OH_VideoProcessing"
 upstream_id: "harmonyos-references/capi-videoprocessing-oh-videoprocessing"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:42.093770"
+content_hash: "5003ac53604f"
+synced_at: "2026-07-09T01:00:44.791696"
 ---
 
 # OH_VideoProcessing

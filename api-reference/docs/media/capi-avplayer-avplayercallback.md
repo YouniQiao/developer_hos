@@ -2,7 +2,8 @@
 title: "AVPlayerCallback"
 upstream_id: "harmonyos-references/capi-avplayer-avplayercallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:38.754616"
+content_hash: "aedef9b24475"
+synced_at: "2026-07-09T01:00:42.566701"
 ---
 
 # AVPlayerCallback

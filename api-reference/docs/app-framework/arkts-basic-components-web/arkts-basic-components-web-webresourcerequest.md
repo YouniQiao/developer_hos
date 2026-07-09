@@ -2,12 +2,13 @@
 title: "Class (WebResourceRequest)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-webresourcerequest"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:07.126125"
+content_hash: "9b53ac6c0de9"
+synced_at: "2026-07-09T00:58:54.258806"
 ---
 
 # Class (WebResourceRequest)
 
-Web组件获取资源请求对象。示例代码参考[onErrorReceive事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onerrorreceive)。
+WebResourceRequest是Web组件中表示网络资源请求的类，提供了关于请求资源的详细元数据。该对象在onErrorReceive、onHttpErrorReceive以及请求拦截等事件回调中使用。示例代码参考[onErrorReceive事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onerrorreceive)。
 
 ![](./img/note_3.0-zh-cn.png)
 

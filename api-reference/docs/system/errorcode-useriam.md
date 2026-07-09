@@ -2,7 +2,8 @@
 title: "用户认证错误码"
 upstream_id: "harmonyos-references/errorcode-useriam"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:44.689942"
+content_hash: "24352ab920c1"
+synced_at: "2026-07-09T00:59:22.176554"
 ---
 
 # 用户认证错误码

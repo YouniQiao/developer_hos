@@ -1,9 +1,12 @@
 ---
+
 title: "使券失效"
 upstream_id: "harmonyos-references/payment-api-common-promotion-service-merc-coup-ucoup-deactivate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:47.216688"
+synced_at: "2026-07-09T01:01:35.437457"
+content_hash: "779e3fc9cb87"
 ---
+
 
 # 使券失效
 

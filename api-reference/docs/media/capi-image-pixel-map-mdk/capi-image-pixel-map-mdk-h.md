@@ -2,7 +2,8 @@
 title: "image_pixel_map_mdk.h"
 upstream_id: "harmonyos-references/capi-image-pixel-map-mdk-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:27.040632"
+content_hash: "51c51af676bd"
+synced_at: "2026-07-09T01:00:33.301491"
 ---
 
 # image_pixel_map_mdk.h

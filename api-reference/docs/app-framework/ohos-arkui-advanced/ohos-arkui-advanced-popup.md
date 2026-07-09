@@ -2,7 +2,8 @@
 title: "Popup"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-popup"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:53.603224"
+content_hash: "9637cfd41c67"
+synced_at: "2026-07-09T00:58:15.976728"
 ---
 
 # Popup
@@ -35,8 +36,6 @@ Popup(options: PopupOptions): void
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-设备行为差异： 该接口在Wearable设备上使用时，应用程序运行异常，异常信息中提示接口未定义，在其他设备中可正常调用。
-
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
@@ -48,8 +47,6 @@ Popup(options: PopupOptions): void
 PopupOptions定义Popup的具体样式参数。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
-
-设备行为差异： 该接口在Wearable设备上使用时，应用程序运行异常，异常信息中提示接口未定义，在其他设备中可正常调用。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
@@ -70,8 +67,6 @@ PopupOptions定义Popup的具体样式参数。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-设备行为差异： 该接口在Wearable设备上使用时，应用程序运行异常，异常信息中提示接口未定义，在其他设备中可正常调用。
-
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | text | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 设置文本内容。 |
@@ -87,8 +82,6 @@ PopupButtonOptions定义按钮的相关属性和事件。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-设备行为差异： 该接口在Wearable设备上使用时，应用程序运行异常，异常信息中提示接口未定义，在其他设备中可正常调用。
-
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | text | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | 否 | 设置按钮内容。 |
@@ -103,8 +96,6 @@ PopupIconOptions定义图标的属性。
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
-
-设备行为差异： 该接口在Wearable设备上使用时，应用程序运行异常，异常信息中提示接口未定义，在其他设备中可正常调用。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
@@ -183,7 +174,7 @@ struct PopupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230816.png)
+ ![](./img/zh-cn_image_0000002631253816.png)
 
 #### [h2]示例 2（设置镜像效果）
 
@@ -257,7 +248,7 @@ struct PopupPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070906.png)
+ ![](./img/zh-cn_image_0000002661612999.png)
 
 #### [h2]示例3（设置自定义宽度）
 
@@ -323,4 +314,4 @@ struct PopupPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470183.png)
+ ![](./img/zh-cn_image_0000002631413710.png)

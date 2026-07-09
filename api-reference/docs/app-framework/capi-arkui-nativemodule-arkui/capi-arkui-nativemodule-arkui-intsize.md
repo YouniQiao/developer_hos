@@ -2,7 +2,8 @@
 title: "ArkUI_IntSize"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-intsize"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:51.225292"
+content_hash: "49c4a5eab363"
+synced_at: "2026-07-09T00:58:42.500563"
 ---
 
 # ArkUI_IntSize

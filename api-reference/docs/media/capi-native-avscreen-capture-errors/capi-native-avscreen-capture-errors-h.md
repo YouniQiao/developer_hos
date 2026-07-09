@@ -2,7 +2,8 @@
 title: "native_avscreen_capture_errors.h"
 upstream_id: "harmonyos-references/capi-native-avscreen-capture-errors-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:37.407603"
+content_hash: "9725267c4b37"
+synced_at: "2026-07-09T01:00:41.262126"
 ---
 
 # native_avscreen_capture_errors.h

@@ -2,7 +2,8 @@
 title: "JSVM_Script__*"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-script--8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:03.692017"
+content_hash: "0b074db03452"
+synced_at: "2026-07-09T01:01:47.598930"
 ---
 
 # JSVM_Script__*

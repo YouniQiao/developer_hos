@@ -2,7 +2,8 @@
 title: "OH_Drawing_Pen"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-pen"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:08.997222"
+content_hash: "98fd2cf50926"
+synced_at: "2026-07-09T01:01:03.164319"
 ---
 
 # OH_Drawing_Pen

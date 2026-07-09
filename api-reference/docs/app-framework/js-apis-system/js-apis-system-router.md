@@ -2,7 +2,8 @@
 title: "@system.router (页面路由)"
 upstream_id: "harmonyos-references/js-apis-system-router"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:31.469275"
+content_hash: "a9faac8e980d"
+synced_at: "2026-07-09T00:57:35.997586"
 ---
 
 # @system.router (页面路由)
@@ -365,7 +366,7 @@ export default new Z()
 | 名称 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | uri7+ | string | 否 | 返回到指定uri的界面，如果页面栈上没有uri页面，则不响应该情况。如果uri未设置，则返回上一页。 **系统能力：** SystemCapability.ArkUI.ArkUI.Full |
-| params7+ | object | 否 | 跳转时要同时传递到目标页面的数据。 **系统能力：** SystemCapability.ArkUI.ArkUI.Lite |
+| params7+ | Object | 否 | 返回时要同时传递到目标页面的数据。 **系统能力：** SystemCapability.ArkUI.ArkUI.Lite |
 
 #### RouterState
 
@@ -400,8 +401,8 @@ export default new Z()
 
 | 名称 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| success | (errMsg: string) => void | 否 | 关闭询问对话框能力成功时触发，errMsg表示返回信息。 |
-| cancel | (errMsg: string) => void | 否 | 关闭询问对话框能力失败时触发，errMsg表示返回信息。 |
+| success | (errMsg: string) => void | 否 | 关闭询问对话框成功时触发，errMsg表示返回信息。 |
+| cancel | (errMsg: string) => void | 否 | 关闭询问对话框失败时触发，errMsg表示返回信息。 |
 | complete | () => void | 否 | 当对话框关闭时触发该回调。 |
 
 #### ParamsInterface
@@ -590,4 +591,4 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002656469499.gif)
+ ![](./img/zh-cn_image_0000002661732241.gif)

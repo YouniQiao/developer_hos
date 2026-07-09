@@ -2,7 +2,8 @@
 title: "ApplicationStateObserver"
 upstream_id: "harmonyos-references/js-apis-inner-application-applicationstateobserver"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:52.850706"
+content_hash: "053165aef20f"
+synced_at: "2026-07-09T00:57:09.192386"
 ---
 
 # ApplicationStateObserver

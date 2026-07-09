@@ -2,7 +2,8 @@
 title: "Interface (CameraUpdate)"
 upstream_id: "harmonyos-references/map-map-cameraupdate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:32.818644"
+content_hash: "df9449dc388e"
+synced_at: "2026-07-09T01:01:24.965487"
 ---
 
 # Interface (CameraUpdate)

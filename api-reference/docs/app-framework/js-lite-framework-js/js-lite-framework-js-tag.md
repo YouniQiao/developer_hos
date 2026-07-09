@@ -2,7 +2,8 @@
 title: "js标签配置"
 upstream_id: "harmonyos-references/js-lite-framework-js-tag"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:15.632529"
+content_hash: "3384ed6bf97c"
+synced_at: "2026-07-09T00:58:26.264480"
 ---
 
 # js标签配置

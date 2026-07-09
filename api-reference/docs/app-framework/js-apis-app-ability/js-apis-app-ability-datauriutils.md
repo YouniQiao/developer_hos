@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.dataUriUtils (DataUriUtils模块)"
 upstream_id: "harmonyos-references/js-apis-app-ability-datauriutils"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:50.637042"
+content_hash: "96a63d2ffeaf"
+synced_at: "2026-07-09T00:57:07.178374"
 ---
 
 # @ohos.app.ability.dataUriUtils (DataUriUtils模块)

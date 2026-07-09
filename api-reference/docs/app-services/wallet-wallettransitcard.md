@@ -2,7 +2,8 @@
 title: "walletTransitCard（交通卡能力）"
 upstream_id: "harmonyos-references/wallet-wallettransitcard"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:53.946577"
+content_hash: "db5d938966ca"
+synced_at: "2026-07-09T01:01:40.440846"
 ---
 
 # walletTransitCard（交通卡能力）

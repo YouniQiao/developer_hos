@@ -2,7 +2,8 @@
 title: "RichEditor"
 upstream_id: "harmonyos-references/ts-basic-components-richeditor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:12.003313"
+content_hash: "62c1f2f3e2e9"
+synced_at: "2026-07-09T00:57:57.297155"
 ---
 
 # RichEditor
@@ -2452,7 +2453,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349879.gif)
+ ![](./img/zh-cn_image_0000002661612645.gif)
 
 #### [h2]示例2（绑定自定义键盘）
 
@@ -2502,7 +2503,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230466.gif)
+ ![](./img/zh-cn_image_0000002631413352.gif)
 
 #### [h2]示例3（绑定自定义菜单）
 
@@ -3030,7 +3031,7 @@ struct SelectionMenu {
 ```
  ![](./img/note_3.0-zh-cn.png) 系统暂未预置加粗、斜体等图标，示例代码使用系统默认图标，开发者使用时需自行替换iconArr中的资源。
 
-![](./img/zh-cn_image_0000002626070556.png)
+![](./img/zh-cn_image_0000002661732585.png)
 
 #### [h2]示例4（更新图片样式）
 
@@ -3273,7 +3274,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469833.gif)
+ ![](./img/zh-cn_image_0000002631253464.gif)
 
 #### [h2]示例5（Span绑定手势事件）
 
@@ -3368,7 +3369,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349881.gif)
+ ![](./img/zh-cn_image_0000002661612647.gif)
 
 #### [h2]示例6（更新和获取段落样式）
 
@@ -3464,7 +3465,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230468.gif)
+ ![](./img/zh-cn_image_0000002631413354.gif)
 
 #### [h2]示例7（更新预设样式与缩进）
 
@@ -3512,7 +3513,8 @@ class LeadingMarginCreator {
 
     return fontSizeLevel;
   }
-  // 获得字体字号级别，分别是从0到4级
+
+  // 获得外边距比例级别
   public getmarginLevel(Width: number) {
     let marginlevel: number = 1;
     if (Width == 40) {
@@ -3732,11 +3734,11 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070558.gif)
+ ![](./img/zh-cn_image_0000002661732587.gif)
 
 #### [h2]示例8（设置文本字重与阴影）
 
-通过[updateParagraphStyle](#updateparagraphstyle11)接口设置文本字重与阴影。
+通过[updateSpanStyle](#updatespanstyle)接口设置文本字重与阴影。
 
 ```
 @Entry
@@ -3815,7 +3817,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469835.gif)
+ ![](./img/zh-cn_image_0000002631253466.gif)
 
 #### [h2]示例9（添加用户自定义布局Span）
 
@@ -3864,7 +3866,7 @@ struct Index {
     Column() {
       Column({ space: 5 }) {
         Text('direction:Row').fontSize(9).fontColor(0xCCCCCC).width('90%')
-        Flex({ direction: FlexDirection.Row }) { // 子组件在容器主抽上行布局
+        Flex({ direction: FlexDirection.Row }) { // 子组件在容器主轴上行布局
           Text('1').width('20%').height(50).backgroundColor(0xF5DEB3)
           Text('1').width('20%').height(50).backgroundColor(0xD2B48C)
           Text('1').width('20%').height(50).backgroundColor(0xF5DEB3)
@@ -3876,7 +3878,7 @@ struct Index {
         .backgroundColor(0xAFEEEE)
 
         Text('direction:RowReverse').fontSize(9).fontColor(0xCCCCCC).width('90%')
-        Flex({ direction: FlexDirection.RowReverse }) { // 子组件在容器主抽上反向行布局
+        Flex({ direction: FlexDirection.RowReverse }) { // 子组件在容器主轴上反向行布局
           Text('1').width('20%').height(50).backgroundColor(0xF5DEB3)
           Text('1').width('20%').height(50).backgroundColor(0xD2B48C)
           Text('1').width('20%').height(50).backgroundColor(0xF5DEB3)
@@ -3888,7 +3890,7 @@ struct Index {
         .backgroundColor(0xAFEEEE)
 
         Text('direction:Column').fontSize(9).fontColor(0xCCCCCC).width('90%')
-        Flex({ direction: FlexDirection.Column }) { // 子组件在容器主抽上列布局
+        Flex({ direction: FlexDirection.Column }) { // 子组件在容器主轴上列布局
           Text('1').width('20%').height(40).backgroundColor(0xF5DEB3)
           Text('1').width('20%').height(40).backgroundColor(0xD2B48C)
           Text('1').width('20%').height(40).backgroundColor(0xF5DEB3)
@@ -3900,7 +3902,7 @@ struct Index {
         .backgroundColor(0xAFEEEE)
 
         Text('direction:ColumnReverse').fontSize(9).fontColor(0xCCCCCC).width('90%')
-        Flex({ direction: FlexDirection.ColumnReverse }) { // 子组件在容器主抽上反向列布局
+        Flex({ direction: FlexDirection.ColumnReverse }) { // 子组件在容器主轴上反向列布局
           Text('1').width('20%').height(40).backgroundColor(0xF5DEB3)
           Text('1').width('20%').height(40).backgroundColor(0xD2B48C)
           Text('1').width('20%').height(40).backgroundColor(0xF5DEB3)
@@ -4122,7 +4124,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349883.gif)
+ ![](./img/zh-cn_image_0000002661612649.gif)
 
 #### [h2]示例10（使用和管理组件内的BuilderSpan）
 
@@ -4467,7 +4469,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230470.gif)
+ ![](./img/zh-cn_image_0000002631413356.gif)
 
 #### [h2]示例11（设置文本识别配置）
 
@@ -4569,7 +4571,7 @@ struct RichEditorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070560.gif)
+ ![](./img/zh-cn_image_0000002661732589.gif)
 
 #### [h2]示例13（设置行高和字符间距）
 
@@ -4692,7 +4694,7 @@ struct RichEditorDemo03 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469837.png)
+ ![](./img/zh-cn_image_0000002631253468.png)
 
 #### [h2]示例14（自定义粘贴事件）
 
@@ -4724,7 +4726,7 @@ struct RichEditorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349885.gif)
+ ![](./img/zh-cn_image_0000002661612651.gif)
 
 #### [h2]示例15（配置文字特性效果）
 
@@ -4772,7 +4774,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230472.png)
+ ![](./img/zh-cn_image_0000002631413358.png)
 
 #### [h2]示例16（自定义键盘避让）
 
@@ -4855,7 +4857,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070562.gif)
+ ![](./img/zh-cn_image_0000002661732591.gif)
 
 #### [h2]示例17（查看编辑状态）
 
@@ -4867,7 +4869,6 @@ struct RichEditorExample {
 struct RichEditor_onEditingChange {
   controller: RichEditorController = new RichEditorController();
   @State controllerIsEditing: boolean = false;
-  @Builder
 
   build() {
     Column() {
@@ -4894,7 +4895,7 @@ struct RichEditor_onEditingChange {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469839.gif)
+ ![](./img/zh-cn_image_0000002631253470.gif)
 
 #### [h2]示例18（配置文本变化回调）
 
@@ -5015,7 +5016,7 @@ struct SoftKeyboardEnterTypeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349887.gif)
+ ![](./img/zh-cn_image_0000002661612653.gif)
 
 #### [h2]示例20（设置段落折行规则）
 
@@ -5093,7 +5094,7 @@ struct LineBreakStrategyExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230474.gif)
+ ![](./img/zh-cn_image_0000002631413360.gif)
 
 #### [h2]示例21（属性字符串基本功能）
 
@@ -5292,7 +5293,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070564.gif)
+ ![](./img/zh-cn_image_0000002661732593.gif)
 
 #### [h2]示例22（获取布局信息）
 
@@ -5362,7 +5363,7 @@ export struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469841.gif)
+ ![](./img/zh-cn_image_0000002631253472.gif)
 
 #### [h2]示例23（设置系统默认菜单扩展项）
 
@@ -5457,7 +5458,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349889.gif)
+ ![](./img/zh-cn_image_0000002661612655.gif)
 
 #### [h2]示例24（组件部分常用属性）
 
@@ -5549,7 +5550,7 @@ struct RichEditor_example {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230476.gif)
+ ![](./img/zh-cn_image_0000002631413362.gif)
 
 #### [h2]示例25（获取光标相对组件位置的矩形）
 
@@ -5602,7 +5603,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070566.gif)
+ ![](./img/zh-cn_image_0000002661732595.gif)
 
 #### [h2]示例26（设置最大行数和最大字符数）
 
@@ -5703,7 +5704,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469843.gif)
+ ![](./img/zh-cn_image_0000002631253474.gif)
 
 #### [h2]示例27（文本设置Url样式）
 
@@ -5744,7 +5745,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349891.gif)
+ ![](./img/zh-cn_image_0000002661612657.gif)
 
 #### [h2]示例28（开启带样式的撤销还原能力）
 
@@ -5883,7 +5884,7 @@ struct StyledUndo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230478.gif)
+ ![](./img/zh-cn_image_0000002631413366.gif)
 
 #### [h2]示例29（文本设置预设段落样式）
 
@@ -6106,7 +6107,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070568.gif)
+ ![](./img/zh-cn_image_0000002661732597.gif)
 
 #### [h2]示例31（设置开启中西文自动间距）
 
@@ -6212,7 +6213,7 @@ struct AutoSpacing {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469845.gif)
+ ![](./img/zh-cn_image_0000002631253476.gif)
 
 #### [h2]示例32（设置文本选择的AI菜单）
 
@@ -6243,7 +6244,7 @@ struct Demo32 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349893.gif)
+ ![](./img/zh-cn_image_0000002661612659.gif)
 
 #### [h2]示例33（设置监听输入法绑定事件）
 
@@ -6296,7 +6297,7 @@ struct SetOnWillAttachIME {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230480.gif)
+ ![](./img/zh-cn_image_0000002631413368.gif)
 
 #### [h2]示例34（删除输入框文本尾部字符）
 
@@ -6352,7 +6353,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070570.gif)
+ ![](./img/zh-cn_image_0000002661732599.gif)
 
 #### [h2]示例35（优化小语种文字显示）
 
@@ -6439,7 +6440,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469847.gif)
+ ![](./img/zh-cn_image_0000002631253478.gif)
 
 #### [h2]示例36（设置开启行首标点符号压缩）
 
@@ -6482,7 +6483,7 @@ struct CompressLeadingPunctuationDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349895.gif)
+ ![](./img/zh-cn_image_0000002661612661.gif)
 
 #### [h2]示例37（设置拖动预览样式）
 
@@ -6513,7 +6514,7 @@ struct RichEditorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230482.gif)
+ ![](./img/zh-cn_image_0000002631413370.gif)
 
 #### [h2]示例38（设置单行模式）
 
@@ -6553,7 +6554,7 @@ struct SingleLineDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070572.gif)
+ ![](./img/zh-cn_image_0000002661732601.gif)
 
 #### [h2]示例39（设置属性字符串样式的提示文本）
 
@@ -6632,7 +6633,7 @@ struct RichEditorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469849.png)
+ ![](./img/zh-cn_image_0000002631253480.png)
 
 #### [h2]示例40（设置孤立字符不成行）
 
@@ -6680,7 +6681,7 @@ struct RichEditorDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349897.jpg)
+ ![](./img/zh-cn_image_0000002661612663.jpg)
 
 #### [h2]示例41（设置水平滚动）
 
@@ -6723,4 +6724,4 @@ struct HorizontalScrollDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230484.gif)
+ ![](./img/zh-cn_image_0000002631413372.gif)

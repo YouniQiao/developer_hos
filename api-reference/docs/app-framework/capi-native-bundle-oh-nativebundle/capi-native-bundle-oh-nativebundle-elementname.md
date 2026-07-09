@@ -2,7 +2,8 @@
 title: "OH_NativeBundle_ElementName"
 upstream_id: "harmonyos-references/capi-native-bundle-oh-nativebundle-elementname"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:59.869048"
+content_hash: "d0d33b229745"
+synced_at: "2026-07-09T00:57:13.498100"
 ---
 
 # OH_NativeBundle_ElementName

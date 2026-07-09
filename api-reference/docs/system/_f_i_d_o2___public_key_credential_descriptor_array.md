@@ -2,7 +2,8 @@
 title: "FIDO2_PublicKeyCredentialDescriptorArray"
 upstream_id: "harmonyos-references/_f_i_d_o2___public_key_credential_descriptor_array"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:40.501431"
+content_hash: "a2789afdbd96"
+synced_at: "2026-07-09T00:59:18.930979"
 ---
 
 # FIDO2_PublicKeyCredentialDescriptorArray

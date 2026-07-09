@@ -2,7 +2,8 @@
 title: "canvas组件"
 upstream_id: "harmonyos-references/js-components-canvas-canvas"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:08.751092"
+content_hash: "3a725084781b"
+synced_at: "2026-07-09T00:58:23.277211"
 ---
 
 # canvas组件
@@ -104,4 +105,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470269.png)
+ ![](./img/zh-cn_image_0000002631253906.png)

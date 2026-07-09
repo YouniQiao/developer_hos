@@ -2,7 +2,8 @@
 title: "ArkUI_NodeAdapter*"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-nodeadapter8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:50.452278"
+content_hash: "1c1a9f3e9d53"
+synced_at: "2026-07-09T00:58:42.050153"
 ---
 
 # ArkUI_NodeAdapter*

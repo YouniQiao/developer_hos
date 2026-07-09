@@ -2,7 +2,8 @@
 title: "xeg_vulkan_spatial_upscale.h"
 upstream_id: "harmonyos-references/xengine-kit-xeg-vulkan-spatial-upscale-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:16.106618"
+content_hash: "ea833c397c93"
+synced_at: "2026-07-09T01:01:09.898649"
 ---
 
 # xeg_vulkan_spatial_upscale.h

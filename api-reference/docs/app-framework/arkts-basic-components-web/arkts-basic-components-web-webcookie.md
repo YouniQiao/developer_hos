@@ -2,7 +2,8 @@
 title: "Class (WebCookie)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-webcookie"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:07.112771"
+content_hash: "f5b9fcadf806"
+synced_at: "2026-07-09T00:58:54.138851"
 ---
 
 # Class (WebCookie)

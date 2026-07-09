@@ -2,7 +2,8 @@
 title: "VideoOutput_Callbacks"
 upstream_id: "harmonyos-references/capi-oh-camera-videooutput-callbacks"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:18.730835"
+content_hash: "834a5e91a94c"
+synced_at: "2026-07-09T01:00:27.216867"
 ---
 
 # VideoOutput_Callbacks

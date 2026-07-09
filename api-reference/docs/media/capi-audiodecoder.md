@@ -2,7 +2,8 @@
 title: "AudioDecoder"
 upstream_id: "harmonyos-references/capi-audiodecoder"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:05.154314"
+content_hash: "45078c10c667"
+synced_at: "2026-07-09T01:00:16.501506"
 ---
 
 # AudioDecoder

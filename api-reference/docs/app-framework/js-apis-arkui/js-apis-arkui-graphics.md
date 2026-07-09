@@ -2,7 +2,8 @@
 title: "Graphics"
 upstream_id: "harmonyos-references/js-apis-arkui-graphics"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:27.298213"
+content_hash: "40e8801ca5e3"
+synced_at: "2026-07-09T00:57:32.973076"
 ---
 
 # Graphics
@@ -327,7 +328,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349533.png)
+ ![](./img/zh-cn_image_0000002631253106.png)
 
 #### Edges12+
 
@@ -595,7 +596,7 @@ struct SizeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230120.png)
+ ![](./img/zh-cn_image_0000002661612289.png)
 
 #### ColorMetrics12+
 
@@ -880,7 +881,7 @@ struct ColorMetricsSample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070210.png)
+ ![](./img/zh-cn_image_0000002631412996.png)
 
 #### Corners12+
 
@@ -1071,7 +1072,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469487.png)
+ ![](./img/zh-cn_image_0000002661732229.png)
 
 #### [h2]setRoundRectShape12+
 
@@ -1139,7 +1140,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349535.png)
+ ![](./img/zh-cn_image_0000002631253108.png)
 
 #### [h2]setCircleShape12+
 
@@ -1203,7 +1204,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230122.png)
+ ![](./img/zh-cn_image_0000002661612291.png)
 
 #### [h2]setOvalShape12+
 
@@ -1262,7 +1263,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070212.png)
+ ![](./img/zh-cn_image_0000002631412998.png)
 
 #### [h2]setCommandPath12+
 
@@ -1326,7 +1327,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469489.png)
+ ![](./img/zh-cn_image_0000002661732231.png)
 
 #### ShapeClip12+
 
@@ -1416,7 +1417,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349537.gif)
+ ![](./img/zh-cn_image_0000002631253110.gif)
 
 #### [h2]setRoundRectShape12+
 
@@ -1765,7 +1766,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230124.png)
+ ![](./img/zh-cn_image_0000002661612293.png)
 
 #### edgeWidths12+
 
@@ -1837,7 +1838,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070214.png)
+ ![](./img/zh-cn_image_0000002631413000.png)
 
 #### borderStyles12+
 
@@ -1915,7 +1916,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469491.png)
+ ![](./img/zh-cn_image_0000002661732233.png)
 
 #### borderRadiuses12+
 
@@ -1981,4 +1982,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349539.png)
+ ![](./img/zh-cn_image_0000002631253112.png)

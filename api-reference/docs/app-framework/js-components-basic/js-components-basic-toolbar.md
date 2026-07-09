@@ -2,7 +2,8 @@
 title: "toolbar"
 upstream_id: "harmonyos-references/js-components-basic-toolbar"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:08.148065"
+content_hash: "2ca7a56e359f"
+synced_at: "2026-07-09T00:58:22.926009"
 ---
 
 # toolbar

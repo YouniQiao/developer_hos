@@ -2,7 +2,8 @@
 title: "@ohos.telephony.data (蜂窝数据)"
 upstream_id: "harmonyos-references/js-apis-telephony-data"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:04.502776"
+content_hash: "0e103823373f"
+synced_at: "2026-07-09T00:59:37.888340"
 ---
 
 # @ohos.telephony.data (蜂窝数据)

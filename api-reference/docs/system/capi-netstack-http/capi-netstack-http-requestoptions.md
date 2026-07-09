@@ -2,7 +2,8 @@
 title: "Http_RequestOptions"
 upstream_id: "harmonyos-references/capi-netstack-http-requestoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:55.447478"
+content_hash: "04cee1db7f9a"
+synced_at: "2026-07-09T00:59:30.506073"
 ---
 
 # Http_RequestOptions

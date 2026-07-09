@@ -2,7 +2,8 @@
 title: "OpenSL ES"
 upstream_id: "harmonyos-references/opensles"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:04.855447"
+content_hash: "ad65fd49dd59"
+synced_at: "2026-07-09T01:01:48.881671"
 ---
 
 # OpenSL ES

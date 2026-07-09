@@ -2,7 +2,8 @@
 title: "Flex"
 upstream_id: "harmonyos-references/ts-container-flex"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:51.865574"
+content_hash: "c9cb94c66caf"
+synced_at: "2026-07-09T00:57:45.259092"
 ---
 
 # Flex
@@ -145,7 +146,7 @@ struct FlexExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349681.png)
+ ![](./img/zh-cn_image_0000002631253260.png)
 
 #### [h2]示例2（子组件单/多行排列）
 
@@ -194,7 +195,7 @@ struct FlexExample2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230268.png)
+ ![](./img/zh-cn_image_0000002661612443.png)
 
 #### [h2]示例3（子组件在主轴上的对齐格式）
 
@@ -204,7 +205,7 @@ struct FlexExample2 {
 // xxx.ets
 @Component
 struct JustifyContentFlex {
-  justifyContent : number = 0;
+  justifyContent: number = 0;
 
   build() {
     Flex({ justifyContent: this.justifyContent }) {
@@ -246,7 +247,7 @@ struct FlexExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070358.png)
+ ![](./img/zh-cn_image_0000002631413152.png)
 
 #### [h2]示例4（子组件在交叉轴上的对齐方式）
 
@@ -256,7 +257,7 @@ struct FlexExample3 {
 // xxx.ets
 @Component
 struct AlignItemsFlex {
-  alignItems : number = 0;
+  alignItems: number = 0;
 
   build() {
     Flex({ alignItems: this.alignItems }) {
@@ -298,7 +299,7 @@ struct FlexExample4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469635.png)
+ ![](./img/zh-cn_image_0000002661732381.png)
 
 #### [h2]示例5（多行内容的对齐方式）
 
@@ -362,7 +363,7 @@ struct FlexExample5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349683.png)
+ ![](./img/zh-cn_image_0000002631253262.png)
 
 #### [h2]示例6（子组件单/多行排列时的主/交叉轴间距）
 
@@ -373,7 +374,7 @@ import {LengthMetrics} from '@kit.ArkUI';
 
 @Entry
 @Component
-struct FlexExample2 {
+struct FlexExample6 {
   build() {
     Column() {
       Column({ space: 5 }) {
@@ -412,7 +413,7 @@ struct FlexExample2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230270.png)
+ ![](./img/zh-cn_image_0000002661612445.png)
 
 #### [h2]示例7（宽度自适应的Flex容器）
 
@@ -420,7 +421,7 @@ struct FlexExample2 {
 
 ```
 @Component
-struct Demo {
+struct FlexExample7 {
   @Require @Prop text: string
 
   build() {
@@ -467,4 +468,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070360.png)
+ ![](./img/zh-cn_image_0000002631413154.png)

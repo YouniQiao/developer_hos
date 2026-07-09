@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.EnvironmentCallback (系统环境变化监听器)"
 upstream_id: "harmonyos-references/js-apis-app-ability-environmentcallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:46.794333"
+content_hash: "978fdf5b823e"
+synced_at: "2026-07-09T00:57:04.285130"
 ---
 
 # @ohos.app.ability.EnvironmentCallback (系统环境变化监听器)

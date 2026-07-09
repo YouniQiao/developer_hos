@@ -2,7 +2,8 @@
 title: "OH_NativeXComponent_Callback"
 upstream_id: "harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent-callback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:48.897564"
+content_hash: "9300182eacb2"
+synced_at: "2026-07-09T00:58:41.281863"
 ---
 
 # OH_NativeXComponent_Callback

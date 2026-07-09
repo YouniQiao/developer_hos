@@ -2,7 +2,8 @@
 title: "FIDO2_CredentialRequestOptions"
 upstream_id: "harmonyos-references/_f_i_d_o2___credential_request_options"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:40.134919"
+content_hash: "f9e47f967a72"
+synced_at: "2026-07-09T00:59:18.671516"
 ---
 
 # FIDO2_CredentialRequestOptions

@@ -2,7 +2,8 @@
 title: "HdsSnackBar"
 upstream_id: "harmonyos-references/ui-design-hdssnackbar"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:26.155302"
+content_hash: "c9ac6268fbb9"
+synced_at: "2026-07-09T00:59:09.388041"
 ---
 
 # HdsSnackBar
@@ -259,4 +260,4 @@ struct TestSnackBar {
 ```
  效果图：
 
-![](./img/zh-cn_image_0000002626231228.gif)
+![](./img/zh-cn_image_0000002631414124.gif)

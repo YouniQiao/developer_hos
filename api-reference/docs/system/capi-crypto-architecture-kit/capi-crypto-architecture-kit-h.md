@@ -2,7 +2,8 @@
 title: "crypto_architecture_kit.h"
 upstream_id: "harmonyos-references/capi-crypto-architecture-kit-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:31.019744"
+content_hash: "e28cead58baf"
+synced_at: "2026-07-09T00:59:12.035458"
 ---
 
 # crypto_architecture_kit.h

@@ -2,7 +2,8 @@
 title: "HiDebug_StackFrame"
 upstream_id: "harmonyos-references/capi-hidebug-hidebug-stackframe"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:49.461361"
+content_hash: "6412fc32c3b2"
+synced_at: "2026-07-09T01:00:05.250329"
 ---
 
 # HiDebug_StackFrame
@@ -13,7 +14,7 @@ typedef struct HiDebug_StackFrame {...} HiDebug_StackFrame
 
 #### 概述
 
-栈帧内容的定义。
+栈帧内容的定义。该结构体用于表示调试时的栈帧信息，支持获取当前栈的类型以及对应的js栈帧或Native栈帧内容，帮助开发者进行问题定位和调试分析。
 
 起始版本： 20
 

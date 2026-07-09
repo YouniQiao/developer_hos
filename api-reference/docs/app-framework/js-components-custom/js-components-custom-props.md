@@ -2,7 +2,8 @@
 title: "数据传递与处理"
 upstream_id: "harmonyos-references/js-components-custom-props"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:14.550025"
+content_hash: "d59ae0742523"
+synced_at: "2026-07-09T00:58:25.500466"
 ---
 
 # 数据传递与处理
@@ -134,4 +135,4 @@ export default {
   },
 }
 ```
- 这里声明的第一个计算属性message默认只有getter函数，message的值会取决于objTitle的值的变化。getter函数只能读取不能改变参数值，例如data中初始化定义的time，当需要赋值给计算属性的时候可以提供一个setter函数，如示例中的notice。
+ 这里声明的第一个计算属性message默认只有getter函数，message的值会取决于objTitle的值的变化。getter函数只能读取不能改变计算属性的值，例如data中初始化定义的time，当需要赋值给计算属性的时候可以提供一个setter函数，如示例中的notice。

@@ -2,7 +2,8 @@
 title: "healthStore (运动健康数据服务)(Lite)"
 upstream_id: "harmonyos-references/health-api-healthstore-lite"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:26.582688"
+content_hash: "1e122b8903a1"
+synced_at: "2026-07-09T01:01:20.018089"
 ---
 
 # healthStore (运动健康数据服务)(Lite)
@@ -94,8 +95,8 @@ import healthStore from '@hms.health.store';
 | --- | --- | --- | --- | --- |
 | startLocalDate | string | 否 | 否 | 数据的开始本地日期，格式'MM/DD/YYYY'。 |
 | endLocalDate | string | 否 | 否 | 数据的结束本地日期，格式'MM/DD/YYYY'。 |
-| startTime | number | 否 | 否 | 请求的开始时间，Unix时间戳，以毫秒为单位。 取值范围：(0, ∞) |
-| endTime | number | 否 | 否 | 请求的结束时间，Unix时间戳，以毫秒为单位。 取值范围：(0, ∞) |
+| startTime | number | 否 | 否 | 请求的开始时间，Unix时间戳，以毫秒为单位。该参数在Lite Wearable设备上暂不生效，仅支持返回最新一条数据。 取值范围：(0, ∞) |
+| endTime | number | 否 | 否 | 请求的结束时间，Unix时间戳，以毫秒为单位。该参数在Lite Wearable设备上暂不生效，仅支持返回最新一条数据。 取值范围：(0, ∞) |
 | dataSourceOptions | [DataSourceOptions](#datasourceoptions) | 否 | 是 | 请求关联的数据源信息，若未填写，默认为无数据源限制。 |
 
 #### DataSourceOptions
@@ -352,10 +353,6 @@ let healthSequence = {
   summaries: {
     avgShotSpeed: 25.5,
     maxShotSpeed: 32.8,
-    avgSpeed: 18.7,
-    bestSpeed: 28.3,
-    speed: 22.1,
-    totalDistance: 1500,
     shots: 125,
     maxContinuousRally: 7,
     forehandStroke: 45,

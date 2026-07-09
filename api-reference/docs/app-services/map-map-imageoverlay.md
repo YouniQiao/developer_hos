@@ -2,7 +2,8 @@
 title: "Interface (ImageOverlay)"
 upstream_id: "harmonyos-references/map-map-imageoverlay"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:33.592818"
+content_hash: "9acfdeef86fe"
+synced_at: "2026-07-09T01:01:25.956109"
 ---
 
 # Interface (ImageOverlay)

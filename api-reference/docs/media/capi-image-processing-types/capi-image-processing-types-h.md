@@ -2,7 +2,8 @@
 title: "image_processing_types.h"
 upstream_id: "harmonyos-references/capi-image-processing-types-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:27.564548"
+content_hash: "bf1579b7702c"
+synced_at: "2026-07-09T01:00:33.823893"
 ---
 
 # image_processing_types.h

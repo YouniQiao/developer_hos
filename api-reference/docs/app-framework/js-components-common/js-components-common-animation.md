@@ -2,7 +2,8 @@
 title: "动画样式"
 upstream_id: "harmonyos-references/js-components-common-animation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:00.970927"
+content_hash: "c08f6a16a6fc"
+synced_at: "2026-07-09T00:58:19.647621"
 ---
 
 # 动画样式
@@ -105,7 +106,7 @@ synced_at: "2026-06-24T20:49:00.970927"
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230870.gif)
+ ![](./img/zh-cn_image_0000002631413764.gif)
 
 ```
 <!-- xxx.hml -->
@@ -152,7 +153,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070960.gif)
+ ![](./img/zh-cn_image_0000002661732993.gif)
 
 ```
 <!-- xxx.hml -->
@@ -209,10 +210,10 @@ export default {
     transition: all 5s linear 0s;
 }
 ```
- ![](./img/zh-cn_image_0000002656470237.gif)
+ ![](./img/zh-cn_image_0000002631253874.gif)
 
 ![](./img/note_3.0-zh-cn.png) @keyframes的from/to不支持动态绑定。
 
 steps函数的end和start含义如下图所示。
 
-![](./img/zh-cn_image_0000002656350285.png)
+![](./img/zh-cn_image_0000002661613055.png)

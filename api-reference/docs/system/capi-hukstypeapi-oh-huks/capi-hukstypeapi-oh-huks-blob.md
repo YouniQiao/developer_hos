@@ -2,7 +2,8 @@
 title: "OH_Huks_Blob"
 upstream_id: "harmonyos-references/capi-hukstypeapi-oh-huks-blob"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:43.744147"
+content_hash: "8d690e162104"
+synced_at: "2026-07-09T00:59:21.361205"
 ---
 
 # OH_Huks_Blob

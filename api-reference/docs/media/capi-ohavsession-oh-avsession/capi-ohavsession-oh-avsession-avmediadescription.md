@@ -2,7 +2,8 @@
 title: "OH_AVSession_AVMediaDescription"
 upstream_id: "harmonyos-references/capi-ohavsession-oh-avsession-avmediadescription"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:09.347315"
+content_hash: "bd23ebcd2354"
+synced_at: "2026-07-09T01:00:20.352499"
 ---
 
 # OH_AVSession_AVMediaDescription
@@ -13,7 +14,7 @@ typedef struct OH_AVSession_AVMediaDescription OH_AVSession_AVMediaDescription
 
 #### 概述
 
-AVMediaDescription的声明。应用为当前资源设置的音视频媒体描述实例。
+定义OH_AVSession_AVMediaDescription结构体，用于描述应用为当前资源设置的音视频媒体信息。
 
 起始版本： 23
 

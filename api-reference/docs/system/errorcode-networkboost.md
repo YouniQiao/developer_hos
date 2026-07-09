@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-networkboost"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:57.187202"
+content_hash: "1df05e3251b9"
+synced_at: "2026-07-09T00:59:31.759600"
 ---
 
 # ArkTS API错误码

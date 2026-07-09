@@ -2,7 +2,8 @@
 title: "NFC错误码"
 upstream_id: "harmonyos-references/errorcode-nfc"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:48.138841"
+content_hash: "151698a42bbb"
+synced_at: "2026-07-09T00:59:24.899839"
 ---
 
 # NFC错误码

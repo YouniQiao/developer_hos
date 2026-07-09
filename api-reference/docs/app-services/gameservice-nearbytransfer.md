@@ -2,7 +2,8 @@
 title: "gameNearbyTransfer（游戏近场快传）"
 upstream_id: "harmonyos-references/gameservice-nearbytransfer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:25.409450"
+content_hash: "052722415450"
+synced_at: "2026-07-09T01:01:18.910110"
 ---
 
 # gameNearbyTransfer（游戏近场快传）
@@ -268,7 +269,7 @@ import { gameNearbyTransfer } from '@kit.GameServiceKit';
 | **名称** | **值** | **说明** |
 | --- | --- | --- |
 | API | 1 | API模式，即调用游戏近场快传API接口进行传输。 |
-| KNOCK | 2 | 碰一碰模式。详情请参考[碰一碰分享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-between-phones-overview)。 |
+| KNOCK | 2 | 碰一碰分享模式。详情请参考[碰一碰分享](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/knock-share-between-phones-overview)。 |
 | GESTURES | 3 | 隔空传送模式。详情请参考[隔空传送](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/gestures-share-overview)。 **起始版本：** 6.1.0(23)。 |
 
 #### ConnectState
@@ -506,6 +507,7 @@ function discoveryCallBack(callback: gameNearbyTransfer.DiscoveryResult) {
   // 获取到发现的设备 展示设备列表
   callback.nearbyGameDevices.forEach((device: gameNearbyTransfer.NearbyGameDevice, index: number) => {
     hilog.info(0x0000, 'nearby', `device info. name: ${device.deviceName}, index: ${index}`);
+    // 开发者可在此处添加展示设备列表的逻辑
   });
 }
 ```
@@ -557,6 +559,7 @@ function discoveryCallBack(callback: gameNearbyTransfer.DiscoveryResult) {
   // 获取到发现的设备 展示设备列表
   callback.nearbyGameDevices.forEach((device: gameNearbyTransfer.NearbyGameDevice, index: number) => {
     hilog.info(0x0000, 'nearby', `device info. name: ${device.deviceName}, index: ${index}`);
+    // 开发者可在此处添加展示设备列表的逻辑
   });
 }
 ```

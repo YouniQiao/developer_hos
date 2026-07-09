@@ -2,7 +2,8 @@
 title: "退款结果回调通知"
 upstream_id: "harmonyos-references/payment-partner-withhold-refunds-notify"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:44.925785"
+content_hash: "dbfe22244b58"
+synced_at: "2026-07-09T01:01:33.815432"
 ---
 
 # 退款结果回调通知

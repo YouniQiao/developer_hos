@@ -1,9 +1,12 @@
 ---
+
 title: "内核错误码"
 upstream_id: "harmonyos-references/errorcode-kernel"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:56.864344"
+synced_at: "2026-07-09T00:59:31.858309"
+content_hash: "342891d35b8b"
 ---
+
 
 # 内核错误码
 

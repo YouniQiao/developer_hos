@@ -2,7 +2,8 @@
 title: "@ohos.account.appAccount (应用账号管理)"
 upstream_id: "harmonyos-references/js-apis-appaccount"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:06.063394"
+content_hash: "a0d887638a27"
+synced_at: "2026-07-09T00:59:39.643918"
 ---
 
 # @ohos.account.appAccount (应用账号管理)

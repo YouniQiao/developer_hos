@@ -2,7 +2,8 @@
 title: "TimePicker"
 upstream_id: "harmonyos-references/ts-basic-components-timepicker"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:07.880693"
+content_hash: "031f76751624"
+synced_at: "2026-07-09T00:57:54.125438"
 ---
 
 # TimePicker
@@ -565,7 +566,7 @@ struct TimePickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349811.png)
+ ![](./img/zh-cn_image_0000002661612575.png)
 
 #### [h2]示例2（切换小时制）
 
@@ -604,7 +605,7 @@ struct TimePickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230398.gif)
+ ![](./img/zh-cn_image_0000002631413284.gif)
 
 #### [h2]示例3（设置时间格式）
 
@@ -634,7 +635,7 @@ struct TimePickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070488.gif)
+ ![](./img/zh-cn_image_0000002661732515.gif)
 
 #### [h2]示例4（设置循环滚动）
 
@@ -674,7 +675,7 @@ struct TimePickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469765.gif)
+ ![](./img/zh-cn_image_0000002631253394.gif)
 
 #### [h2]示例5（设置时间选择组件的起始时间）
 
@@ -705,7 +706,7 @@ struct TimePickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349813.png)
+ ![](./img/zh-cn_image_0000002661612577.png)
 
 #### [h2]示例6（设置时间选择组件的结束时间）
 
@@ -736,7 +737,7 @@ struct TimePickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230400.png)
+ ![](./img/zh-cn_image_0000002631413286.png)
 
 #### [h2]示例7（设置上午下午跟随时间联动）
 
@@ -768,4 +769,4 @@ struct TimePickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070490.gif)
+ ![](./img/zh-cn_image_0000002661732517.gif)

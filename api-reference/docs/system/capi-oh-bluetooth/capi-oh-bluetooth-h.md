@@ -2,7 +2,8 @@
 title: "oh_bluetooth.h"
 upstream_id: "harmonyos-references/capi-oh-bluetooth-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:47.875471"
+content_hash: "7433f2bb543c"
+synced_at: "2026-07-09T00:59:24.780420"
 ---
 
 # oh_bluetooth.h

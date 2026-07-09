@@ -2,7 +2,8 @@
 title: "ImageNative_"
 upstream_id: "harmonyos-references/capi-image-imagenative-"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:30.028847"
+content_hash: "28bddded6f4b"
+synced_at: "2026-07-09T01:00:35.764276"
 ---
 
 # ImageNative_

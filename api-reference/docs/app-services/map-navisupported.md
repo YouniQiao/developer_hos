@@ -1,9 +1,12 @@
 ---
+
 title: "路径规划支持的国家/地区"
 upstream_id: "harmonyos-references/map-navisupported"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:35.743872"
+synced_at: "2026-07-09T01:01:27.543331"
+content_hash: "dc74a15603e2"
 ---
+
 
 # 路径规划支持的国家/地区
 

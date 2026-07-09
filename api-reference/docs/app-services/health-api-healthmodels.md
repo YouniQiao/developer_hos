@@ -2,7 +2,8 @@
 title: "healthModels (运动健康数据模型)"
 upstream_id: "harmonyos-references/health-api-healthmodels"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:26.939816"
+content_hash: "4c2179d6fd8b"
+synced_at: "2026-07-09T01:01:20.363854"
 ---
 
 # healthModels (运动健康数据模型)

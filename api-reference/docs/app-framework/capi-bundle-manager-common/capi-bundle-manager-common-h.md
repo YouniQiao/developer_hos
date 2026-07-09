@@ -2,7 +2,8 @@
 title: "bundle_manager_common.h"
 upstream_id: "harmonyos-references/capi-bundle-manager-common-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:58.802881"
+content_hash: "ef4fba6c2793"
+synced_at: "2026-07-09T00:57:12.537161"
 ---
 
 # bundle_manager_common.h

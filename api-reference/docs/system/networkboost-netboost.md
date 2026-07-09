@@ -2,7 +2,8 @@
 title: "netBoost（网络加速）"
 upstream_id: "harmonyos-references/networkboost-netboost"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:57.129178"
+content_hash: "798431f3988a"
+synced_at: "2026-07-09T00:59:32.066310"
 ---
 
 # netBoost（网络加速）
@@ -27,7 +28,7 @@ setSceneDesc(sceneDesc : SceneDesc): void
 
 需要权限： ohos.permission.INTERNET
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 
@@ -181,7 +182,7 @@ try {
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 
@@ -248,7 +249,7 @@ try {
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | address | string | 是 | IP地址。 |
-| port | number | 是 | 端口号。 |
+| port | number | 是 | 端口号，取值范围是0~65535。 |
 
 #### ExpectedDescription
 
@@ -293,7 +294,7 @@ Socket文件描述符。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 

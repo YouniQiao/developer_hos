@@ -2,7 +2,8 @@
 title: "ArkUI_DrawableDescriptor_AnimationController"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-drawabledescriptoranimationcontroller"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:44.226283"
+content_hash: "6c28e912795d"
+synced_at: "2026-07-09T00:58:38.849063"
 ---
 
 # ArkUI_DrawableDescriptor_AnimationController

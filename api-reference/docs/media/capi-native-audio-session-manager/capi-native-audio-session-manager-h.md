@@ -2,7 +2,8 @@
 title: "native_audio_session_manager.h"
 upstream_id: "harmonyos-references/capi-native-audio-session-manager-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:55.256090"
+content_hash: "17927aceffa0"
+synced_at: "2026-07-09T01:00:10.218332"
 ---
 
 # native_audio_session_manager.h

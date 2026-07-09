@@ -2,7 +2,8 @@
 title: "ArkWeb_ProxyObject"
 upstream_id: "harmonyos-references/capi-web-arkweb-proxyobject"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:09.264763"
+content_hash: "f0592ac5b962"
+synced_at: "2026-07-09T00:58:56.159911"
 ---
 
 # ArkWeb_ProxyObject
@@ -13,7 +14,7 @@ typedef struct {...} ArkWeb_ProxyObject
 
 #### 概述
 
-注入的Proxy对象通用结构体。
+ArkWeb_ProxyObject是注入到Web页面的JavaScript代理对象结构体，用于将一组相关的ArkWeb_ProxyMethod方法组织成对象整体暴露给Web前端。该结构体指定了对象在JavaScript中的名称（objName）、包含的方法数组（methodList）和方法数量（size），使得Native应用可以向Web页面暴露结构化的API集合。
 
 起始版本： 12
 

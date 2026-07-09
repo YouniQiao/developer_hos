@@ -2,7 +2,8 @@
 title: "CloudDisk_PathInfo"
 upstream_id: "harmonyos-references/capi-clouddisk-clouddisk-pathinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:16.047925"
+content_hash: "5d1a6b817a77"
+synced_at: "2026-07-09T00:59:01.563389"
 ---
 
 # CloudDisk_PathInfo

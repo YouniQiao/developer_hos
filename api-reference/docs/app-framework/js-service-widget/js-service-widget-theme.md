@@ -1,9 +1,12 @@
 ---
+
 title: "设置主题样式"
 upstream_id: "harmonyos-references/js-service-widget-theme"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:23.767480"
+synced_at: "2026-07-09T00:58:29.487501"
+content_hash: "6e0c6b930241"
 ---
+
 
 # 设置主题样式
 

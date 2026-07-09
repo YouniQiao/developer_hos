@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.appManager (应用管理)"
 upstream_id: "harmonyos-references/js-apis-app-ability-appmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:50.164053"
+content_hash: "6fc439887306"
+synced_at: "2026-07-09T00:57:07.551312"
 ---
 
 # @ohos.app.ability.appManager (应用管理)

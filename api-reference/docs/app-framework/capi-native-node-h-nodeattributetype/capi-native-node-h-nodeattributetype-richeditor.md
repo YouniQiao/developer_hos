@@ -2,7 +2,8 @@
 title: "ArkUI_NodeAttributeType（富文本类组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-richeditor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:39.126868"
+content_hash: "dc79e25b5297"
+synced_at: "2026-07-09T00:58:36.150377"
 ---
 
 # ArkUI_NodeAttributeType（富文本类组件相关属性）

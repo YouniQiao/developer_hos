@@ -2,7 +2,8 @@
 title: "Interface (BaseOverlay)"
 upstream_id: "harmonyos-references/map-map-baseoverlay"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:32.177672"
+content_hash: "ccb395403f7a"
+synced_at: "2026-07-09T01:01:24.251241"
 ---
 
 # Interface (BaseOverlay)

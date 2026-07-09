@@ -2,7 +2,8 @@
 title: "crypto_sym_key.h"
 upstream_id: "harmonyos-references/capi-crypto-sym-key-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:31.996044"
+content_hash: "95b3a3a34caf"
+synced_at: "2026-07-09T00:59:12.771142"
 ---
 
 # crypto_sym_key.h

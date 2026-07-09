@@ -2,7 +2,8 @@
 title: "Interface (ManualIsoQuery)"
 upstream_id: "harmonyos-references/arkts-apis-camera-manualisoquery"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:12.201924"
+content_hash: "a338234a4d96"
+synced_at: "2026-07-09T01:00:22.304291"
 ---
 
 # Interface (ManualIsoQuery)

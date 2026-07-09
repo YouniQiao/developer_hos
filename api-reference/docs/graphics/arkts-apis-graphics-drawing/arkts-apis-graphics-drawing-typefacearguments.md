@@ -2,7 +2,8 @@
 title: "Class (TypefaceArguments)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-typefacearguments"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:55.256176"
+content_hash: "487c0d13002c"
+synced_at: "2026-07-09T01:00:53.119123"
 ---
 
 # Class (TypefaceArguments)

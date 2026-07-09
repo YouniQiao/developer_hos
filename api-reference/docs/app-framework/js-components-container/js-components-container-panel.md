@@ -2,7 +2,8 @@
 title: "panel"
 upstream_id: "harmonyos-references/js-components-container-panel"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:03.984409"
+content_hash: "258827e3adf6"
+synced_at: "2026-07-09T00:58:20.728522"
 ---
 
 # panel
@@ -162,4 +163,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230882.gif)
+ ![](./img/zh-cn_image_0000002631413776.gif)

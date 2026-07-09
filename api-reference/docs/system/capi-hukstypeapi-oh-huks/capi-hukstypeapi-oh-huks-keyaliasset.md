@@ -2,7 +2,8 @@
 title: "OH_Huks_KeyAliasSet"
 upstream_id: "harmonyos-references/capi-hukstypeapi-oh-huks-keyaliasset"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:44.470653"
+content_hash: "367d550942e2"
+synced_at: "2026-07-09T00:59:22.094015"
 ---
 
 # OH_Huks_KeyAliasSet

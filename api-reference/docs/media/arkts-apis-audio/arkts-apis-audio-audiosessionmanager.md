@@ -2,7 +2,8 @@
 title: "Interface (AudioSessionManager)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audiosessionmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:52.857462"
+content_hash: "4bf83630ef43"
+synced_at: "2026-07-09T01:00:08.224667"
 ---
 
 # Interface (AudioSessionManager)

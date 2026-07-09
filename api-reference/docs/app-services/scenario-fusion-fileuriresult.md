@@ -2,7 +2,8 @@
 title: "fileUriService（文件路径转换API）"
 upstream_id: "harmonyos-references/scenario-fusion-fileuriresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:51.997141"
+content_hash: "6aadd3fe6cc7"
+synced_at: "2026-07-09T01:01:38.766071"
 ---
 
 # fileUriService（文件路径转换API）

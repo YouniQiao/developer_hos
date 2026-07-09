@@ -2,7 +2,8 @@
 title: "lowpower_video_sink.h"
 upstream_id: "harmonyos-references/capi-lowpower-video-sink-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:37.947152"
+content_hash: "b20664e90d89"
+synced_at: "2026-07-09T01:00:41.832229"
 ---
 
 # lowpower_video_sink.h

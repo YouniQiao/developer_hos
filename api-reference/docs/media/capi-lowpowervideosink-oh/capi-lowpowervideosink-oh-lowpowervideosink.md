@@ -2,7 +2,8 @@
 title: "OH_LowPowerVideoSink"
 upstream_id: "harmonyos-references/capi-lowpowervideosink-oh-lowpowervideosink"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:41.892045"
+content_hash: "6a1816dd140e"
+synced_at: "2026-07-09T01:00:44.707434"
 ---
 
 # OH_LowPowerVideoSink

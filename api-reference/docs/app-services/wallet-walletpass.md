@@ -2,7 +2,8 @@
 title: "walletPass（Pass卡片能力）"
 upstream_id: "harmonyos-references/wallet-walletpass"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:53.984533"
+content_hash: "f89c1304562e"
+synced_at: "2026-07-09T01:01:40.007368"
 ---
 
 # walletPass（Pass卡片能力）

@@ -1,9 +1,12 @@
 ---
+
 title: "模块描述"
 upstream_id: "harmonyos-references/arkts-apis-avsession"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:05.560456"
+synced_at: "2026-07-09T01:00:16.835418"
+content_hash: "460729d480f4"
 ---
+
 
 # 模块描述
 

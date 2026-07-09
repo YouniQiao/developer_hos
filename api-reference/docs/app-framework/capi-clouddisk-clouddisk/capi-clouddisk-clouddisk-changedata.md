@@ -2,7 +2,8 @@
 title: "CloudDisk_ChangeData"
 upstream_id: "harmonyos-references/capi-clouddisk-clouddisk-changedata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:15.701162"
+content_hash: "d595f24d91df"
+synced_at: "2026-07-09T00:59:01.373175"
 ---
 
 # CloudDisk_ChangeData

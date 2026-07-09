@@ -2,7 +2,8 @@
 title: "DRM_KeysInfo"
 upstream_id: "harmonyos-references/capi-drm-drm-keysinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:21.066043"
+content_hash: "1b224b34d0b2"
+synced_at: "2026-07-09T01:00:28.631336"
 ---
 
 # DRM_KeysInfo

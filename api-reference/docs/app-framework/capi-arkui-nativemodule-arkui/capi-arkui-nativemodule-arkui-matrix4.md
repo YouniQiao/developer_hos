@@ -2,7 +2,8 @@
 title: "ArkUI_Matrix4"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-matrix4"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:51.602088"
+content_hash: "34ec85e7096c"
+synced_at: "2026-07-09T00:58:42.705981"
 ---
 
 # ArkUI_Matrix4

@@ -2,7 +2,8 @@
 title: "Class (PngMetadata)"
 upstream_id: "harmonyos-references/arkts-apis-image-pngmetadata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:23.772856"
+content_hash: "ceeb4baea22c"
+synced_at: "2026-07-09T01:00:30.613132"
 ---
 
 # Class (PngMetadata)

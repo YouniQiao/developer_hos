@@ -2,7 +2,8 @@
 title: "scanCore (扫码公共信息)"
 upstream_id: "harmonyos-references/scan-scancore"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:49.122254"
+content_hash: "b9092a77eefb"
+synced_at: "2026-07-09T01:00:49.659751"
 ---
 
 # scanCore (扫码公共信息)

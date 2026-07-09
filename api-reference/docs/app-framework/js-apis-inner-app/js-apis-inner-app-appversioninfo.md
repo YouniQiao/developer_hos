@@ -2,7 +2,8 @@
 title: "AppVersionInfo"
 upstream_id: "harmonyos-references/js-apis-inner-app-appversioninfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:49.531036"
+content_hash: "e09dd38f70ae"
+synced_at: "2026-07-09T00:57:06.555529"
 ---
 
 # AppVersionInfo

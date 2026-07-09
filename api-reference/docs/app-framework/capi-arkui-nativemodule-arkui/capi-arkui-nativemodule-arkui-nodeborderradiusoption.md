@@ -2,7 +2,8 @@
 title: "ArkUI_NodeBorderRadiusOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-nodeborderradiusoption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:57.797564"
+content_hash: "d329234c8d74"
+synced_at: "2026-07-09T00:58:46.694308"
 ---
 
 # ArkUI_NodeBorderRadiusOption

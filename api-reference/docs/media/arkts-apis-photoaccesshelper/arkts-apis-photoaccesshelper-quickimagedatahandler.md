@@ -2,7 +2,8 @@
 title: "Interface (QuickImageDataHandler)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-quickimagedatahandler"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:45.221554"
+content_hash: "5de91a22e384"
+synced_at: "2026-07-09T01:00:46.965853"
 ---
 
 # Interface (QuickImageDataHandler)

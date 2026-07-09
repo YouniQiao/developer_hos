@@ -2,7 +2,8 @@
 title: "NetConn_TraceRouteOption"
 upstream_id: "harmonyos-references/capi-netconnection-netconn-tracerouteoption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:54.447745"
+content_hash: "809938ed2d0c"
+synced_at: "2026-07-09T00:59:29.620785"
 ---
 
 # NetConn_TraceRouteOption

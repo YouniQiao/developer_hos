@@ -2,7 +2,8 @@
 title: "Web"
 upstream_id: "harmonyos-references/capi-web"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:07.882623"
+content_hash: "d462d70f443e"
+synced_at: "2026-07-09T00:58:54.608792"
 ---
 
 # Web

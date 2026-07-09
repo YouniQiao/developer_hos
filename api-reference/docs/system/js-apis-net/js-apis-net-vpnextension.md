@@ -2,7 +2,8 @@
 title: "@ohos.net.vpnExtension (VPN增强管理)"
 upstream_id: "harmonyos-references/js-apis-net-vpnextension"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:51.937804"
+content_hash: "302ca718c9b6"
+synced_at: "2026-07-09T00:59:27.964743"
 ---
 
 # @ohos.net.vpnExtension (VPN增强管理)

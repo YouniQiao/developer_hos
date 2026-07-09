@@ -1,9 +1,12 @@
 ---
+
 title: "概述"
 upstream_id: "harmonyos-references/account-api-realname-overview"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:19.945194"
+synced_at: "2026-07-09T01:01:13.138160"
+content_hash: "9deff2aa33e2"
 ---
+
 
 # 概述
 

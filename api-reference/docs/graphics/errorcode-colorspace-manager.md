@@ -1,9 +1,12 @@
 ---
+
 title: "色彩管理错误码"
 upstream_id: "harmonyos-references/errorcode-colorspace-manager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:11.352205"
+synced_at: "2026-07-09T01:01:05.278179"
+content_hash: "4b32a5bc7844"
 ---
+
 
 # 色彩管理错误码
 

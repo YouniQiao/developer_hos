@@ -2,7 +2,8 @@
 title: "native_audio_channel_layout.h"
 upstream_id: "harmonyos-references/capi-native-audio-channel-layout-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:02.179186"
+content_hash: "dc4a027cf824"
+synced_at: "2026-07-09T01:00:14.037518"
 ---
 
 # native_audio_channel_layout.h

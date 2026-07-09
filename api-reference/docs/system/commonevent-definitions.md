@@ -1,9 +1,12 @@
 ---
+
 title: "系统公共事件定义 (已废弃)"
 upstream_id: "harmonyos-references/commonevent-definitions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:09.622681"
+synced_at: "2026-07-09T00:59:42.753352"
+content_hash: "8bed9c92e287"
 ---
+
 
 # 系统公共事件定义 (已废弃)
 

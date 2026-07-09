@@ -2,7 +2,8 @@
 title: "Class (MaskFilter)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-maskfilter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:53.421972"
+content_hash: "b46513652079"
+synced_at: "2026-07-09T01:00:51.446612"
 ---
 
 # Class (MaskFilter)

@@ -2,7 +2,8 @@
 title: "AbilityDelegator"
 upstream_id: "harmonyos-references/js-apis-inner-application-abilitydelegator"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:51.060888"
+content_hash: "8ef6eb742ec0"
+synced_at: "2026-07-09T01:00:06.963606"
 ---
 
 # AbilityDelegator

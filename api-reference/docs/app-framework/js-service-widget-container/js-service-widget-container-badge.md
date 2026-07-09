@@ -2,7 +2,8 @@
 title: "badge"
 upstream_id: "harmonyos-references/js-service-widget-container-badge"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:25.670884"
+content_hash: "8c79d9405b29"
+synced_at: "2026-07-09T00:58:30.370750"
 ---
 
 # badge
@@ -95,4 +96,4 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002656470489.png)
+ ![](./img/zh-cn_image_0000002631254126.png)

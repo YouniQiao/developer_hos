@@ -2,12 +2,13 @@
 title: "Class (SwiperDynamicSyncScene)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-swiperdynamicsyncscene"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:22.338232"
+content_hash: "7a2785d8b7b4"
+synced_at: "2026-07-09T00:57:29.503347"
 ---
 
 # Class (SwiperDynamicSyncScene)
 
-提供Swiper组件相关帧率的配置。
+提供Swiper组件动态帧率场景的相关配置。
 
 ![](./img/note_3.0-zh-cn.png)
 

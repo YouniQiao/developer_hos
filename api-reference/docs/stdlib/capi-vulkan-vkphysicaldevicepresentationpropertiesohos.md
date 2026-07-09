@@ -2,7 +2,8 @@
 title: "VkPhysicalDevicePresentationPropertiesOHOS"
 upstream_id: "harmonyos-references/capi-vulkan-vkphysicaldevicepresentationpropertiesohos"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:06.101530"
+content_hash: "855da6b6226a"
+synced_at: "2026-07-09T01:01:49.544660"
 ---
 
 # VkPhysicalDevicePresentationPropertiesOHOS

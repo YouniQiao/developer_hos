@@ -2,7 +2,8 @@
 title: "app.js"
 upstream_id: "harmonyos-references/js-lite-framework-js-file"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:15.739937"
+content_hash: "ef813e272d71"
+synced_at: "2026-07-09T00:58:26.262910"
 ---
 
 # app.js

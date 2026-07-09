@@ -2,7 +2,8 @@
 title: "ContainerSpan"
 upstream_id: "harmonyos-references/ts-basic-components-containerspan"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:17.979419"
+content_hash: "38d9aeaf5f8a"
+synced_at: "2026-07-09T00:57:57.669228"
 ---
 
 # ContainerSpan
@@ -104,7 +105,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349919.png)
+ ![](./img/zh-cn_image_0000002661612685.png)
 
 #### [h2]示例2（通过attributeModifier设置背景样式）
 
@@ -141,4 +142,4 @@ struct ContainerSpanModifierExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230506.png)
+ ![](./img/zh-cn_image_0000002631413396.png)

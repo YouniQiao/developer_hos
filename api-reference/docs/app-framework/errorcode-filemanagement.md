@@ -2,7 +2,8 @@
 title: "文件管理错误码"
 upstream_id: "harmonyos-references/errorcode-filemanagement"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:16.380844"
+content_hash: "06b0e6f9184c"
+synced_at: "2026-07-09T00:59:02.015569"
 ---
 
 # 文件管理错误码
@@ -131,7 +132,7 @@ I/O错误。
 
 1. 检查硬件状态是否正常。
 2. 检查USB设备等链接是否正常。
-3. 检查并更新驱动程序。
+3. 检查并更新驱动程序，确保版本兼容。
 
 #### [h2]13900006 没有这个设备或地址
 
@@ -149,7 +150,7 @@ No such device or address
 
 处理步骤
 
-确认设备或地址信息。
+确认设备连接状态和地址配置是否正确。
 
 #### [h2]13900007 参数列表太长
 
@@ -629,9 +630,7 @@ Directory not empty
 
 处理步骤
 
-1.确认目录路径。
-
-2.确认路径为空。
+确认目录内是否为空。
 
 #### [h2]13900033 符号链接层次太多
 
@@ -827,7 +826,7 @@ No record is locks available
 
 可能原因
 
-系统资源不足。
+锁资源不足。
 
 处理步骤
 

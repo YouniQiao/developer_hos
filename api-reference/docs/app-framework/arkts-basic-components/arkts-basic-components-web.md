@@ -2,7 +2,8 @@
 title: "组件描述"
 upstream_id: "harmonyos-references/arkts-basic-components-web"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:05.653458"
+content_hash: "ab501235d869"
+synced_at: "2026-07-09T00:58:52.927323"
 ---
 
 # 组件描述

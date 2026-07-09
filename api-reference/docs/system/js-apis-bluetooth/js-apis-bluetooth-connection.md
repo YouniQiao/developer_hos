@@ -2,7 +2,8 @@
 title: "@ohos.bluetooth.connection (蓝牙connection模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-connection"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:45.651362"
+content_hash: "cfc46272c1e1"
+synced_at: "2026-07-09T00:59:23.821783"
 ---
 
 # @ohos.bluetooth.connection (蓝牙connection模块)

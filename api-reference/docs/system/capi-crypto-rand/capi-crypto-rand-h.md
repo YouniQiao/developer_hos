@@ -2,7 +2,8 @@
 title: "crypto_rand.h"
 upstream_id: "harmonyos-references/capi-crypto-rand-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:31.420811"
+content_hash: "2936ab133734"
+synced_at: "2026-07-09T00:59:12.427598"
 ---
 
 # crypto_rand.h

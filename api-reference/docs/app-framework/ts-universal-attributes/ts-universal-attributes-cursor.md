@@ -1,9 +1,12 @@
 ---
+
 title: "鼠标光标控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-cursor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:43.971674"
+synced_at: "2026-07-09T00:57:41.271163"
+content_hash: "75ae2150dce2"
 ---
+
 
 # 鼠标光标控制
 

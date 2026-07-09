@@ -2,7 +2,8 @@
 title: "@ohos.arkui.drawableDescriptor (DrawableDescriptor)"
 upstream_id: "harmonyos-references/js-apis-arkui-drawabledescriptor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:19.404815"
+content_hash: "33bfc54f279a"
+synced_at: "2026-07-09T00:57:27.824206"
 ---
 
 # @ohos.arkui.drawableDescriptor (DrawableDescriptor)

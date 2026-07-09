@@ -1,9 +1,12 @@
 ---
+
 title: "更新设备标记状态"
 upstream_id: "harmonyos-references/devicesecurity-deviceverify-updatedevicestatus"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:37.672428"
+synced_at: "2026-07-09T00:59:16.863142"
+content_hash: "7b9502b630bd"
 ---
+
 
 # 更新设备标记状态
 

@@ -2,7 +2,8 @@
 title: "sceneManager （生态查询服务）"
 upstream_id: "harmonyos-references/store-scenemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:22.062909"
+content_hash: "48e5a39c1d45"
+synced_at: "2026-07-09T01:01:14.698519"
 ---
 
 # sceneManager （生态查询服务）
@@ -24,6 +25,8 @@ import { sceneManager } from '@kit.AppGalleryKit';
 getSelfSceneCode(): string
 
 查询自身场景值。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 元服务API： 从版本4.1.0(11)开始，该接口支持在元服务中使用。
 
@@ -56,6 +59,8 @@ try {
 getAdsVerificationVersion(): number
 
 获取广告验签版本。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.BundleManager.EcologicalRuleManager.SceneManager
 

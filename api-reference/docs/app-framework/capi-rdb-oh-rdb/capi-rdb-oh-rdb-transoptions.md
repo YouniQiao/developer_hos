@@ -2,7 +2,8 @@
 title: "OH_RDB_TransOptions"
 upstream_id: "harmonyos-references/capi-rdb-oh-rdb-transoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:09.662665"
+content_hash: "f44351c00677"
+synced_at: "2026-07-09T00:57:21.112121"
 ---
 
 # OH_RDB_TransOptions

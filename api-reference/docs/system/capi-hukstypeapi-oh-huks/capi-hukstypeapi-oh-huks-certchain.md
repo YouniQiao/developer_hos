@@ -2,7 +2,8 @@
 title: "OH_Huks_CertChain"
 upstream_id: "harmonyos-references/capi-hukstypeapi-oh-huks-certchain"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:44.007580"
+content_hash: "bf615c03838c"
+synced_at: "2026-07-09T00:59:21.734137"
 ---
 
 # OH_Huks_CertChain

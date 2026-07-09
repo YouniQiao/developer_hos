@@ -2,7 +2,8 @@
 title: "hiappevent_cfg.h"
 upstream_id: "harmonyos-references/capi-hiappevent-cfg-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:47.336243"
+content_hash: "a2f9f4885605"
+synced_at: "2026-07-09T01:00:03.549293"
 ---
 
 # hiappevent_cfg.h
@@ -27,8 +28,8 @@ synced_at: "2026-06-24T20:51:47.336243"
 
 | 名称 | 描述 |
 | --- | --- |
-| [DISABLE](#disable) "disable" | 事件打点开关。默认值为false。true：关闭打点功能，false：不关闭打点功能。 **起始版本：** 8 |
-| [MAX_STORAGE](#max_storage) "max_storage" | 事件文件目录存储配额大小。默认值为“10M”。 **起始版本：** 8 |
+| [DISABLE](#disable) "disable" | 事件打点开关。默认值为false。true：关闭打点功能，false：开启打点功能。 **起始版本：** 8 |
+| [MAX_STORAGE](#max_storage) "max_storage" | 事件文件目录存储配额大小。默认值为“10M”（MB）。 **起始版本：** 8 |
 
 #### 宏定义说明
 

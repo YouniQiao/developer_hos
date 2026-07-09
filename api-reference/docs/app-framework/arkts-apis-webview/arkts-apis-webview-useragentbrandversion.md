@@ -2,12 +2,15 @@
 title: "Class (UserAgentBrandVersion)"
 upstream_id: "harmonyos-references/arkts-apis-webview-useragentbrandversion"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:04.334139"
+content_hash: "f34150078c3c"
+synced_at: "2026-07-09T00:58:52.144816"
 ---
 
 # Class (UserAgentBrandVersion)
 
-可以通过该类提供的接口对UserAgentBrandVersion进行配置。
+UserAgentBrandVersion是ArkWeb框架中用于配置User-Agent客户端提示信息中品牌名称和版本号的数据类，配合[UserAgentMetadata](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-useragentmetadata)使用。在User-Agent Client Hints机制中，浏览器通过Sec-CH-UA-Full-Version-List等请求标头向服务器报告品牌和版本信息，UserAgentBrandVersion用于定义其中的单个品牌条目。
+
+UserAgentBrandVersion提供品牌名称和版本号的设置与获取方法：setBrand/getBrand用于设置和获取品牌名称（如"Chromium"、"ArkWeb"等），setMajorVersion/getMajorVersion用于设置和获取主版本号（如"126"），setFullVersion/getFullVersion用于设置和获取完整版本号（如"126.0.0.0"）。应用可通过修改这些值来定制Web组件向服务器报告的浏览器身份信息。
 
 ![](./img/note_3.0-zh-cn.png)
 

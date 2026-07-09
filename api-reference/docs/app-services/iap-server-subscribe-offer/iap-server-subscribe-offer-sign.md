@@ -2,7 +2,8 @@
 title: "生成优惠签名购买参数"
 upstream_id: "harmonyos-references/iap-server-subscribe-offer-sign"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:29.455815"
+content_hash: "53340968af8e"
+synced_at: "2026-07-09T01:01:22.092784"
 ---
 
 # 生成优惠签名购买参数

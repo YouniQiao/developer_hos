@@ -2,7 +2,8 @@
 title: "Interface (MvtOverlay)"
 upstream_id: "harmonyos-references/map-map-mvtoverlay"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:34.439199"
+content_hash: "5db6a1f6ca41"
+synced_at: "2026-07-09T01:01:26.196390"
 ---
 
 # Interface (MvtOverlay)

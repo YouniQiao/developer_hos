@@ -2,7 +2,8 @@
 title: "drawing_font_mgr.h"
 upstream_id: "harmonyos-references/capi-drawing-font-mgr-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:00.479030"
+content_hash: "818a4bb3000a"
+synced_at: "2026-07-09T01:00:55.562568"
 ---
 
 # drawing_font_mgr.h

@@ -2,7 +2,8 @@
 title: "bookParser（书籍解析能力）"
 upstream_id: "harmonyos-references/reader-book-parser"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:51.710199"
+content_hash: "a0eb173e90c8"
+synced_at: "2026-07-09T01:01:38.837021"
 ---
 
 # bookParser（书籍解析能力）

@@ -2,7 +2,8 @@
 title: "HiLog"
 upstream_id: "harmonyos-references/capi-hilog"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:47.140133"
+content_hash: "f5c7f67a4f3a"
+synced_at: "2026-07-09T01:00:03.429343"
 ---
 
 # HiLog

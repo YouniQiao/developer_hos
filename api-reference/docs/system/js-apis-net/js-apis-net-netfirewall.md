@@ -2,7 +2,8 @@
 title: "@ohos.net.netFirewall (网络防火墙)"
 upstream_id: "harmonyos-references/js-apis-net-netfirewall"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:52.269526"
+content_hash: "514256b4b39c"
+synced_at: "2026-07-09T00:59:28.191383"
 ---
 
 # @ohos.net.netFirewall (网络防火墙)

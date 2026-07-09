@@ -2,7 +2,8 @@
 title: "Camera_AutoDeviceSwitchStatusInfo"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-autodeviceswitchstatusinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:17.465595"
+content_hash: "369fa5f23cc5"
+synced_at: "2026-07-09T01:00:26.461174"
 ---
 
 # Camera_AutoDeviceSwitchStatusInfo

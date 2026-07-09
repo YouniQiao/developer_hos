@@ -2,7 +2,8 @@
 title: "@ohos.telephony.sim (SIM卡管理)"
 upstream_id: "harmonyos-references/js-apis-sim"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:05.023981"
+content_hash: "564ec825b547"
+synced_at: "2026-07-09T00:59:38.683947"
 ---
 
 # @ohos.telephony.sim (SIM卡管理)

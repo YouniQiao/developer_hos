@@ -2,7 +2,8 @@
 title: "productViewManager (应用市场推荐)"
 upstream_id: "harmonyos-references/store-productviewmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:22.157711"
+content_hash: "9a4a846d41a6"
+synced_at: "2026-07-09T01:01:14.900306"
 ---
 
 # productViewManager (应用市场推荐)

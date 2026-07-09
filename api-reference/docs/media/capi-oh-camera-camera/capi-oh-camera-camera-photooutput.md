@@ -2,7 +2,8 @@
 title: "Camera_PhotoOutput"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-photooutput"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:18.423873"
+content_hash: "37517211cc6b"
+synced_at: "2026-07-09T01:00:27.107741"
 ---
 
 # Camera_PhotoOutput

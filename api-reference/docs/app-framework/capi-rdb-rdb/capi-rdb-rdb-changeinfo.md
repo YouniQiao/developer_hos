@@ -2,7 +2,8 @@
 title: "Rdb_ChangeInfo"
 upstream_id: "harmonyos-references/capi-rdb-rdb-changeinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:08.710065"
+content_hash: "11278907529a"
+synced_at: "2026-07-09T00:57:20.394687"
 ---
 
 # Rdb_ChangeInfo

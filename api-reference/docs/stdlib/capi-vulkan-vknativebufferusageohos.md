@@ -2,7 +2,8 @@
 title: "VkNativeBufferUsageOHOS"
 upstream_id: "harmonyos-references/capi-vulkan-vknativebufferusageohos"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:06.225049"
+content_hash: "d521132c24d6"
+synced_at: "2026-07-09T01:01:49.611916"
 ---
 
 # VkNativeBufferUsageOHOS

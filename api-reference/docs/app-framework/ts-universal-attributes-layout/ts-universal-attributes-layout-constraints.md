@@ -2,7 +2,8 @@
 title: "布局约束"
 upstream_id: "harmonyos-references/ts-universal-attributes-layout-constraints"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:36.491001"
+content_hash: "be8e2c94ed04"
+synced_at: "2026-07-09T00:57:38.180129"
 ---
 
 # 布局约束
@@ -125,11 +126,11 @@ struct AspectRatioExample {
 ```
  图1 竖屏显示
 
-![](./img/zh-cn_image_0000002656469535.png)
+![](./img/zh-cn_image_0000002661732279.png)
 
 图2 横屏显示
 
-![](./img/zh-cn_image_0000002656349583.png)
+![](./img/zh-cn_image_0000002631253158.png)
 
 #### [h2]示例2（设置组件显示优先级）
 
@@ -192,4 +193,4 @@ struct DisplayPriorityExample {
 ```
  横屏显示
 
-![](./img/zh-cn_image_0000002626230170.gif)
+![](./img/zh-cn_image_0000002661612341.gif)

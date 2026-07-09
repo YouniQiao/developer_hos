@@ -2,7 +2,8 @@
 title: "oh_key_code.h"
 upstream_id: "harmonyos-references/capi-oh-key-code-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:18.796142"
+content_hash: "10bad984ec04"
+synced_at: "2026-07-09T00:59:50.055515"
 ---
 
 # oh_key_code.h

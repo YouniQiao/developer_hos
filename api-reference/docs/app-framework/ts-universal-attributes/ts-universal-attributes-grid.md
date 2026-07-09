@@ -1,9 +1,12 @@
 ---
+
 title: "栅格设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-grid"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:59.597065"
+synced_at: "2026-07-09T00:58:19.294065"
+content_hash: "084ffce05d62"
 ---
+
 
 # 栅格设置
 

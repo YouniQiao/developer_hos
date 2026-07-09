@@ -2,7 +2,8 @@
 title: "@system.notification (通知消息)"
 upstream_id: "harmonyos-references/js-apis-system-notification"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:38.365637"
+content_hash: "ae0b6a4f24c1"
+synced_at: "2026-07-09T01:01:29.078419"
 ---
 
 # @system.notification (通知消息)

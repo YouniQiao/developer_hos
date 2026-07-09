@@ -2,7 +2,8 @@
 title: "FunctionalButton（Button组件）"
 upstream_id: "harmonyos-references/scenario-fusion-functionalbutton"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:52.226342"
+content_hash: "c58fb4dc810e"
+synced_at: "2026-07-09T01:01:38.971844"
 ---
 
 # FunctionalButton（Button组件）

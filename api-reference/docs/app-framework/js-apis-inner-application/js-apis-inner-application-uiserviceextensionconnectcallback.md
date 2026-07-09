@@ -2,7 +2,8 @@
 title: "UIServiceExtensionConnectCallback"
 upstream_id: "harmonyos-references/js-apis-inner-application-uiserviceextensionconnectcallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:54.043104"
+content_hash: "3fcd15ec7d68"
+synced_at: "2026-07-09T00:57:09.643492"
 ---
 
 # UIServiceExtensionConnectCallback

@@ -2,7 +2,8 @@
 title: "cloudResPrefetch（预加载模块）"
 upstream_id: "harmonyos-references/cloudfoundation-cloudresprefetch"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:23.769267"
+content_hash: "02d49cd297ad"
+synced_at: "2026-07-09T01:01:16.611821"
 ---
 
 # cloudResPrefetch（预加载模块）

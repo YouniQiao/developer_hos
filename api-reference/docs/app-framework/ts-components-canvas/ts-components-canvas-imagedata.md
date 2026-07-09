@@ -2,7 +2,8 @@
 title: "ImageData"
 upstream_id: "harmonyos-references/ts-components-canvas-imagedata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:30.883067"
+content_hash: "de8dca0591aa"
+synced_at: "2026-07-09T00:58:03.947000"
 ---
 
 # ImageData
@@ -44,6 +45,8 @@ constructor(width: number, height: number, data?: Uint8ClampedArray, unit?: Leng
 卡片能力： 从API version 12开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -103,4 +106,4 @@ struct Translate {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230654.png)
+ ![](./img/zh-cn_image_0000002661732775.png)

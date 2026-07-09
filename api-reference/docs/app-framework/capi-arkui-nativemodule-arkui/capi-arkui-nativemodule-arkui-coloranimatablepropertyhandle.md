@@ -2,7 +2,8 @@
 title: "ArkUI_ColorAnimatablePropertyHandle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-coloranimatablepropertyhandle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:57.375066"
+content_hash: "fc5989f5d0a6"
+synced_at: "2026-07-09T00:58:46.509104"
 ---
 
 # ArkUI_ColorAnimatablePropertyHandle

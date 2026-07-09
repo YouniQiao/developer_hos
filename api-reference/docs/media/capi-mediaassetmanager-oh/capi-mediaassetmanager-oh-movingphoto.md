@@ -2,7 +2,8 @@
 title: "OH_MovingPhoto"
 upstream_id: "harmonyos-references/capi-mediaassetmanager-oh-movingphoto"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:48.170456"
+content_hash: "f7b932c9bf5c"
+synced_at: "2026-07-09T01:00:48.738105"
 ---
 
 # OH_MovingPhoto

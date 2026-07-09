@@ -2,7 +2,8 @@
 title: "symbolRegister"
 upstream_id: "harmonyos-references/ui-design-symbolregister"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:25.053177"
+content_hash: "a310e4cacf88"
+synced_at: "2026-07-09T00:59:08.978173"
 ---
 
 # symbolRegister
@@ -81,4 +82,4 @@ struct test {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350633.png)
+ ![](./img/zh-cn_image_0000002661613403.png)

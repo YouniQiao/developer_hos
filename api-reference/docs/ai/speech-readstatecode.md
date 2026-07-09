@@ -2,7 +2,8 @@
 title: "ReadStateCode（播报状态）"
 upstream_id: "harmonyos-references/speech-readstatecode"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:00.447421"
+content_hash: "eeaa10c03bc0"
+synced_at: "2026-07-09T01:01:45.085141"
 ---
 
 # ReadStateCode（播报状态）

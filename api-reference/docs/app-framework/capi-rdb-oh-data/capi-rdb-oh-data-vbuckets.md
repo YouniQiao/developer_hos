@@ -2,7 +2,8 @@
 title: "OH_Data_VBuckets"
 upstream_id: "harmonyos-references/capi-rdb-oh-data-vbuckets"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:09.565518"
+content_hash: "a0a7ee75cdb3"
+synced_at: "2026-07-09T00:57:21.096283"
 ---
 
 # OH_Data_VBuckets

@@ -2,7 +2,8 @@
 title: "@ohos.identifier.oaid (开放匿名设备标识服务)"
 upstream_id: "harmonyos-references/js-apis-oaid"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:21.423806"
+content_hash: "cccbef6a7187"
+synced_at: "2026-07-09T01:01:14.180403"
 ---
 
 # @ohos.identifier.oaid (开放匿名设备标识服务)

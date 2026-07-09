@@ -2,7 +2,8 @@
 title: "Interface (MediaSource)"
 upstream_id: "harmonyos-references/arkts-apis-media-mediasource"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:34.185581"
+content_hash: "8104e88e73be"
+synced_at: "2026-07-09T01:00:38.449175"
 ---
 
 # Interface (MediaSource)

@@ -2,7 +2,8 @@
 title: "OH_IPC_MessageOption"
 upstream_id: "harmonyos-references/capi-ohipcremoteobject-oh-ipc-messageoption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:21.744646"
+content_hash: "b8a27410f2a8"
+synced_at: "2026-07-09T00:59:06.248362"
 ---
 
 # OH_IPC_MessageOption

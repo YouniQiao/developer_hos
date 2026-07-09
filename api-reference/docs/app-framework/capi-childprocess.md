@@ -2,7 +2,8 @@
 title: "ChildProcess"
 upstream_id: "harmonyos-references/capi-childprocess"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:57.704788"
+content_hash: "4a562a0e7717"
+synced_at: "2026-07-09T00:57:12.070406"
 ---
 
 # ChildProcess

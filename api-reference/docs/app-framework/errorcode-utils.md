@@ -2,7 +2,8 @@
 title: "语言基础类库错误码"
 upstream_id: "harmonyos-references/errorcode-utils"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:17.991279"
+content_hash: "6bc64eafa93c"
+synced_at: "2026-07-09T00:57:27.024567"
 ---
 
 # 语言基础类库错误码

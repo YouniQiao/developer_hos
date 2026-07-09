@@ -2,7 +2,8 @@
 title: "readerCore（阅读核心能力）"
 upstream_id: "harmonyos-references/reader-read-core"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:51.678162"
+content_hash: "1f88c5d6eac3"
+synced_at: "2026-07-09T01:01:38.654934"
 ---
 
 # readerCore（阅读核心能力）

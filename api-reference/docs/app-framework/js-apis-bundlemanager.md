@@ -2,7 +2,8 @@
 title: "@ohos.bundle.bundleManager (应用程序包管理模块)"
 upstream_id: "harmonyos-references/js-apis-bundlemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:51.380833"
+content_hash: "858b188e7012"
+synced_at: "2026-07-09T00:57:08.495269"
 ---
 
 # @ohos.bundle.bundleManager (应用程序包管理模块)

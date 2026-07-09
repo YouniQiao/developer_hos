@@ -2,7 +2,8 @@
 title: "Interface (Focus)"
 upstream_id: "harmonyos-references/arkts-apis-camera-focus"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:11.518616"
+content_hash: "0e651f2124c1"
+synced_at: "2026-07-09T01:00:21.807183"
 ---
 
 # Interface (Focus)

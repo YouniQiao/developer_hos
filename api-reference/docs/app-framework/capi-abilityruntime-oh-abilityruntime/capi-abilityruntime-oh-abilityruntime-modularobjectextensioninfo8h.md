@@ -2,7 +2,8 @@
 title: "OH_AbilityRuntime_ModularObjectExtensionInfo*"
 upstream_id: "harmonyos-references/capi-abilityruntime-oh-abilityruntime-modularobjectextensioninfo8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:00.555434"
+content_hash: "2279769154e0"
+synced_at: "2026-07-09T00:57:13.825139"
 ---
 
 # OH_AbilityRuntime_ModularObjectExtensionInfo*

@@ -2,7 +2,8 @@
 title: "手势公共接口"
 upstream_id: "harmonyos-references/ts-gesture-common"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:51.608587"
+content_hash: "0b7933a35f36"
+synced_at: "2026-07-09T00:57:45.786986"
 ---
 
 # 手势公共接口

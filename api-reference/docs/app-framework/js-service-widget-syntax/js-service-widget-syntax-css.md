@@ -2,7 +2,8 @@
 title: "CSS语法参考"
 upstream_id: "harmonyos-references/js-service-widget-syntax-css"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:22.948002"
+content_hash: "7441ce5cf9b4"
+synced_at: "2026-07-09T00:58:29.136212"
 ---
 
 # CSS语法参考

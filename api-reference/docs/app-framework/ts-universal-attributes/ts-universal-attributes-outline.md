@@ -2,14 +2,15 @@
 title: "外描边设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-outline"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:40.142269"
+content_hash: "c13ab642df3f"
+synced_at: "2026-07-09T00:57:40.253939"
 ---
 
 # 外描边设置
 
 设置组件外描边（outline）样式。外描边绘制在组件的外侧，不影响布局，不会占用组件本身大小。
 
-![](./img/zh-cn_image_0000002626230196.png)
+![](./img/zh-cn_image_0000002661612369.png)
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -318,7 +319,7 @@ struct OutlineExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070286.png)
+ ![](./img/zh-cn_image_0000002631413078.png)
 
 #### [h2]示例2（使用LocalizedEdgeColors类型）
 
@@ -367,8 +368,8 @@ struct OutlineExample {
 ```
  从左至右显示语言示例图
 
-![](./img/zh-cn_image_0000002656469563.png)
+![](./img/zh-cn_image_0000002661732307.png)
 
 从右至左显示语言示例图
 
-![](./img/zh-cn_image_0000002656349611.png)
+![](./img/zh-cn_image_0000002631253186.png)

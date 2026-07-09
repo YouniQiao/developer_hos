@@ -2,7 +2,8 @@
 title: "@ohos.bluetooth.pbap (蓝牙pbap模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-pbap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:46.270855"
+content_hash: "4690d4008f7a"
+synced_at: "2026-07-09T00:59:23.269993"
 ---
 
 # @ohos.bluetooth.pbap (蓝牙pbap模块)

@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.errorManager (错误管理模块)"
 upstream_id: "harmonyos-references/js-apis-app-ability-errormanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:50.704813"
+content_hash: "16e6a99d730f"
+synced_at: "2026-07-09T00:57:07.963958"
 ---
 
 # @ohos.app.ability.errorManager (错误管理模块)

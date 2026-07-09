@@ -2,7 +2,8 @@
 title: "ContentEmbed_ExtensionContext*"
 upstream_id: "harmonyos-references/capi-contentembed-contentembed-extensioncontext8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:12.126904"
+content_hash: "867d2e2c9c38"
+synced_at: "2026-07-09T00:58:58.551861"
 ---
 
 # ContentEmbed_ExtensionContext*

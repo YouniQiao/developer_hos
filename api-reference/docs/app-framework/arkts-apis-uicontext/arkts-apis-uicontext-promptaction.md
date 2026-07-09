@@ -2,7 +2,8 @@
 title: "Class (PromptAction)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-promptaction"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:21.951481"
+content_hash: "22c390b92504"
+synced_at: "2026-07-09T00:57:30.250516"
 ---
 
 # Class (PromptAction)
@@ -351,11 +352,11 @@ struct Index {
 ```
  未设置系统材质时：
 
-![](./img/zh-cn_image_0000002656467801.gif)
+![](./img/zh-cn_image_0000002631251378.gif)
 
 设置系统材质后：
 
-![](./img/zh-cn_image_0000002656347849.gif)
+![](./img/zh-cn_image_0000002661610563.gif)
 
 #### showDialog
 

@@ -2,7 +2,8 @@
 title: "ArkUI_SelectionOptions"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-selectionoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:54.686531"
+content_hash: "9a22079eaaba"
+synced_at: "2026-07-09T00:58:44.526009"
 ---
 
 # ArkUI_SelectionOptions

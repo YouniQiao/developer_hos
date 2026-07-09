@@ -2,7 +2,8 @@
 title: "resmgr_common.h"
 upstream_id: "harmonyos-references/capi-resmgr-common-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:23.711199"
+content_hash: "b3d124c69d8f"
+synced_at: "2026-07-09T00:59:07.862836"
 ---
 
 # resmgr_common.h

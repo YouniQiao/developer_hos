@@ -2,7 +2,8 @@
 title: "IPCKit"
 upstream_id: "harmonyos-references/capi-ipckit"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:21.225136"
+content_hash: "cb8b9dacb0f9"
+synced_at: "2026-07-09T00:59:05.733253"
 ---
 
 # IPCKit

@@ -1,9 +1,12 @@
 ---
+
 title: "注册节点渲染状态监听错误码"
 upstream_id: "harmonyos-references/errorcode-node-render-monitor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:00.949639"
+synced_at: "2026-07-09T00:58:48.995531"
+content_hash: "df2bc4191a73"
 ---
+
 
 # 注册节点渲染状态监听错误码
 

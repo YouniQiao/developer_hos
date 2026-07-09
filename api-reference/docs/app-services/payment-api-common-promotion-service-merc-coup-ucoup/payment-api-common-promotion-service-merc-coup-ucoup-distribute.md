@@ -2,7 +2,8 @@
 title: "发放优惠券"
 upstream_id: "harmonyos-references/payment-api-common-promotion-service-merc-coup-ucoup-distribute"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:46.856999"
+content_hash: "ca74b93b3f1d"
+synced_at: "2026-07-09T01:01:35.220960"
 ---
 
 # 发放优惠券
@@ -40,7 +41,7 @@ Request Body
 #### **请求示例**
 
 ```
-POST /api/merchantgrow/v1/merchantcoupon/couponbatch/create HTTP/1.1
+POST /api/merchantgrow/v1/merchantcoupon/couponbatch/distribute HTTP/1.1
 PayMercAuth: {"callerId":"10132120***","traceId":"202305151026422776***","time":1684117602555,"authId":"120291744647139***","headerSign":"u+H1Oe3fXV9mGCES89XA7tSjp8+TELYgG4bKyECwrVGwwExHtdWTnKc4WvEpfjLzpzKE2/+K*********************/z0UcN9QrxXSeR8r6X46b7491N1jKg/lOG7eAFfwjEWJu5JyvY5KunSeE6DiKs=","bodySign":"yWDtXOBqDoItPgHmF57L6U5G7F/LhsILChu8YSpVV0HwRQCzdGAz53wDkCRLiAEVGDDu6E6KxPAHE0TIkTxH*********************iUIFeaszpiRT2aQDaqLGaxvta6J5UxIUmAp+wGdV/juGEvQ="}
 Content-Type: application/json
 {

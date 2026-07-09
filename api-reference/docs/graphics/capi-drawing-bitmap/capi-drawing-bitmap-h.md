@@ -2,7 +2,8 @@
 title: "drawing_bitmap.h"
 upstream_id: "harmonyos-references/capi-drawing-bitmap-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:58.721543"
+content_hash: "9e4fb3c17abf"
+synced_at: "2026-07-09T01:00:54.497417"
 ---
 
 # drawing_bitmap.h

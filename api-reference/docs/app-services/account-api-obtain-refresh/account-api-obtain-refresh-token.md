@@ -2,7 +2,8 @@
 title: "刷新用户级凭证"
 upstream_id: "harmonyos-references/account-api-obtain-refresh-token"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:18.868615"
+content_hash: "5b285b6b15fd"
+synced_at: "2026-07-09T01:01:12.731064"
 ---
 
 # 刷新用户级凭证

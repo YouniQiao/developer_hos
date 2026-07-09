@@ -2,7 +2,8 @@
 title: "OH_Rect"
 upstream_id: "harmonyos-references/capi-avscreencapture-oh-rect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:40.574546"
+content_hash: "121b1cde2701"
+synced_at: "2026-07-09T01:00:43.953345"
 ---
 
 # OH_Rect

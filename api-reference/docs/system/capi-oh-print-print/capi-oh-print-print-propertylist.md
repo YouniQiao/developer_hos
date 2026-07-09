@@ -2,7 +2,8 @@
 title: "Print_PropertyList"
 upstream_id: "harmonyos-references/capi-oh-print-print-propertylist"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:12.498639"
+content_hash: "7e85c77ecde6"
+synced_at: "2026-07-09T00:59:44.126800"
 ---
 
 # Print_PropertyList

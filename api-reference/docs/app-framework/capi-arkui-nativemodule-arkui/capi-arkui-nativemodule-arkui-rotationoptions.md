@@ -2,7 +2,8 @@
 title: "ArkUI_RotationOptions"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-rotationoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:52.074724"
+content_hash: "d8aa8e507761"
+synced_at: "2026-07-09T00:58:43.037250"
 ---
 
 # ArkUI_RotationOptions

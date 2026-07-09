@@ -2,7 +2,8 @@
 title: "weatherService（天气数据服务）"
 upstream_id: "harmonyos-references/weather-service-weatherservice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:54.813212"
+content_hash: "87667a02be5e"
+synced_at: "2026-07-09T01:01:41.170579"
 ---
 
 # weatherService（天气数据服务）

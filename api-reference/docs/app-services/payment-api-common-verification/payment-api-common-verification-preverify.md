@@ -1,9 +1,12 @@
 ---
+
 title: "实名信息预验证"
 upstream_id: "harmonyos-references/payment-api-common-verification-preverify"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:46.074681"
+synced_at: "2026-07-09T01:01:34.776069"
+content_hash: "471fa7434e86"
 ---
+
 
 # 实名信息预验证
 

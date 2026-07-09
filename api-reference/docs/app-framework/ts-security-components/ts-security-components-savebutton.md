@@ -2,7 +2,8 @@
 title: "SaveButton"
 upstream_id: "harmonyos-references/ts-security-components-savebutton"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:47.725884"
+content_hash: "7d3d88a062e8"
+synced_at: "2026-07-09T00:58:11.373170"
 ---
 
 # SaveButton
@@ -336,7 +337,7 @@ symbolRenderingStrategy(strategy: SymbolRenderingStrategy)
 
 不同渲染策略效果可参考以下示意图。
 
-![](./img/zh-cn_image_0000002626070596.png)
+![](./img/zh-cn_image_0000002661732625.png)
 
 #### 属性
 
@@ -438,7 +439,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230772.png)
+ ![](./img/zh-cn_image_0000002631253772.png)
 
 #### 示例2
 
@@ -512,7 +513,7 @@ struct SetIcon {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070862.png)
+ ![](./img/zh-cn_image_0000002661612955.png)
 
 #### 示例3
 
@@ -575,4 +576,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470139.jpeg)
+ ![](./img/zh-cn_image_0000002631413664.jpeg)

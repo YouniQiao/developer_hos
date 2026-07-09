@@ -1,9 +1,12 @@
 ---
+
 title: "申请免密代扣"
 upstream_id: "harmonyos-references/payment-withhold-apply"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:41.034864"
+synced_at: "2026-07-09T01:01:31.268771"
+content_hash: "a152f4832560"
 ---
+
 
 # 申请免密代扣
 

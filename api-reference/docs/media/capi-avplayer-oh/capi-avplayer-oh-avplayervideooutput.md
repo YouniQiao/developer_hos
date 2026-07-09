@@ -2,7 +2,8 @@
 title: "OH_AVPlayerVideoOutput"
 upstream_id: "harmonyos-references/capi-avplayer-oh-avplayervideooutput"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:43.205071"
+content_hash: "1815ea828614"
+synced_at: "2026-07-09T01:00:45.536470"
 ---
 
 # OH_AVPlayerVideoOutput

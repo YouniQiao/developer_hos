@@ -2,7 +2,8 @@
 title: "EGL"
 upstream_id: "harmonyos-references/egl"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:05.189598"
+content_hash: "87768625d239"
+synced_at: "2026-07-09T01:01:48.774032"
 ---
 
 # EGL

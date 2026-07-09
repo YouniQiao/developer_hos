@@ -2,7 +2,8 @@
 title: "FG_IntegrationInfo"
 upstream_id: "harmonyos-references/_f_g___intergration_info"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:13.906533"
+content_hash: "8d99cc0e28ee"
+synced_at: "2026-07-09T01:01:07.939667"
 ---
 
 # FG_IntegrationInfo
@@ -23,10 +24,10 @@ synced_at: "2026-06-24T20:53:13.906533"
 
 | 名称 | 描述 |
 | --- | --- |
-| [FG_PresentMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_presentmode) [presentMode](#presentmode) | 预测帧展示模式。取值为FG_PRESENT_BY_SYSTEM时，仅在[FG_PredictionMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_predictionmode)为FG_PREDICTION_MODE_INTERPOLATION时生效。 |
-| bool [textureCachedByGame](#texturecachedbygame) | 深度纹理和颜色纹理是否被游戏单独缓存来用于超帧。缓存情况下算法将直接使用不再额外缓存。取值为True时，仅在[FG_PredictionMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_predictionmode)为FG_PREDICTION_MODE_INTERPOLATION时生效。 取值范围：[true, false]。 |
-| bool [needFlipInputColor](#needflipinputcolor) | 输入的颜色纹理是否需要翻转。需要翻转情况下，算法映射Y轴坐标读取颜色纹理。取值为True时，仅在[FG_PredictionMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_predictionmode)为FG_PREDICTION_MODE_INTERPOLATION时生效。 取值范围：[true, false]。 |
-| bool [needFlipOutputColor](#needflipoutputcolor) | 预测帧是否需要翻转。需要翻转情况下，算法映射Y轴坐标进行翻转输出。取值为True时，仅在[FG_PredictionMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_predictionmode)为FG_PREDICTION_MODE_INTERPOLATION时生效。 取值范围：[true, false]。 |
+| [FG_PresentMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_presentmode) [presentMode](#presentmode) | 预测帧展示模式。 |
+| bool [textureCachedByGame](#texturecachedbygame) | 深度纹理和颜色纹理是否被游戏单独缓存来用于超帧。缓存情况下算法将直接使用不再额外缓存。 false：算法自行缓存和管理纹理，默认值。 true：直接使用游戏缓存，不再额外缓存。 |
+| bool [needFlipInputColor](#needflipinputcolor) | 输入的颜色纹理是否需要翻转。需要翻转情况下，算法映射Y轴坐标读取颜色纹理。 false：不需要翻转，默认值。 true：需要翻转。 |
+| bool [needFlipOutputColor](#needflipoutputcolor) | 预测帧是否需要翻转。需要翻转情况下，算法映射Y轴坐标进行翻转输出。 false：不需要翻转，默认值。 true：需要翻转。 |
 
 #### 结构体成员变量说明
 
@@ -37,7 +38,7 @@ FG_PresentMode FG_IntegrationInfo::presentMode
 ```
  描述
 
-展示模式。
+预测帧展示模式。
 
 #### [h2]textureCachedByGame
 
@@ -46,7 +47,7 @@ bool FG_IntegrationInfo::textureCachedByGame
 ```
  描述
 
-深度纹理和颜色纹理是否被游戏单独缓存来用于超帧。缓存情况下算法将直接使用不再额外缓存。取值为True时，仅在[FG_PredictionMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_predictionmode-1)为FG_PREDICTION_MODE_INTERPOLATION生效。
+深度纹理和颜色纹理是否被游戏单独缓存来用于超帧。缓存情况下算法将直接使用不再额外缓存。
 
 #### [h2]needFlipInputColor
 
@@ -55,7 +56,7 @@ bool FG_IntegrationInfo::needFlipInputColor
 ```
  描述
 
-输入的颜色纹理是否需要翻转。需要翻转情况下，算法映射Y轴坐标读取颜色纹理。取值为True时，仅在[FG_PredictionMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_predictionmode-1)为FG_PREDICTION_MODE_INTERPOLATION生效。
+输入的颜色纹理是否需要翻转。需要翻转情况下，算法映射Y轴坐标读取颜色纹理。
 
 #### [h2]needFlipOutputColor
 
@@ -64,4 +65,4 @@ bool FG_IntegrationInfo::needFlipOutputColor
 ```
  描述
 
-预测帧是否需要翻转。需要翻转情况下，算法映射Y轴坐标进行翻转输出。取值为True时，仅在[FG_PredictionMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_predictionmode-1)为FG_PREDICTION_MODE_INTERPOLATION生效。
+预测帧是否需要翻转。需要翻转情况下，算法映射Y轴坐标进行翻转输出。

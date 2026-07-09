@@ -2,7 +2,8 @@
 title: "Class (MediaAssetManager)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-mediaassetmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:43.896314"
+content_hash: "c9e7a668b781"
+synced_at: "2026-07-09T01:00:46.410336"
 ---
 
 # Class (MediaAssetManager)

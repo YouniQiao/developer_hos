@@ -2,7 +2,8 @@
 title: "native_audio_vivid.h"
 upstream_id: "harmonyos-references/capi-native-audio-vivid-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:02.298512"
+content_hash: "dc6e06fda699"
+synced_at: "2026-07-09T01:00:14.052246"
 ---
 
 # native_audio_vivid.h

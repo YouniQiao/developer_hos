@@ -2,7 +2,8 @@
 title: "refresh"
 upstream_id: "harmonyos-references/js-components-container-refresh"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:04.193694"
+content_hash: "2447070df8e0"
+synced_at: "2026-07-09T00:58:20.852214"
 ---
 
 # refresh
@@ -136,4 +137,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470249.gif)
+ ![](./img/zh-cn_image_0000002631253886.gif)

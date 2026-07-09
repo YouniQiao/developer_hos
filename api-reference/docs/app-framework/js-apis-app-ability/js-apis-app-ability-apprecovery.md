@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.appRecovery (应用故障恢复)"
 upstream_id: "harmonyos-references/js-apis-app-ability-apprecovery"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:50.176384"
+content_hash: "81619d502907"
+synced_at: "2026-07-09T00:57:07.235032"
 ---
 
 # @ohos.app.ability.appRecovery (应用故障恢复)

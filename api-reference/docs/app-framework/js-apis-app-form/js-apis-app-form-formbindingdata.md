@@ -2,7 +2,8 @@
 title: "@ohos.app.form.formBindingData (卡片数据绑定类)"
 upstream_id: "harmonyos-references/js-apis-app-form-formbindingdata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:17.375631"
+content_hash: "c8f4bd46f5cb"
+synced_at: "2026-07-09T00:59:02.716160"
 ---
 
 # @ohos.app.form.formBindingData (卡片数据绑定类)
@@ -100,7 +101,7 @@ struct Index {
         'imgSrc': 'image',
         'formImages': formImagesParam
       };
-      formBindingData.createFormBindingData(createFormBindingDataParam);
+      let formBindingDataObj = formBindingData.createFormBindingData(createFormBindingDataParam);
     } catch (error) {
       console.error(`catch error, code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message})`);
     }

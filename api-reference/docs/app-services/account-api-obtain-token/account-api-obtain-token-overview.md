@@ -1,9 +1,12 @@
 ---
+
 title: "概述"
 upstream_id: "harmonyos-references/account-api-obtain-token-overview"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:18.497169"
+synced_at: "2026-07-09T01:01:12.364630"
+content_hash: "6a7a07990f4e"
 ---
+
 
 # 概述
 

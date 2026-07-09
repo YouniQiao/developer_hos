@@ -2,7 +2,8 @@
 title: "tspan"
 upstream_id: "harmonyos-references/js-components-svg-tspan"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:12.221411"
+content_hash: "82826c25f537"
+synced_at: "2026-07-09T00:58:25.298581"
 ---
 
 # tspan
@@ -73,7 +74,7 @@ synced_at: "2026-06-24T20:49:12.221411"
     width: 1080px;
 }
 ```
- ![](./img/zh-cn_image_0000002656470311.png)
+ ![](./img/zh-cn_image_0000002631253948.png)
 
 属性动画示例
 
@@ -110,7 +111,7 @@ synced_at: "2026-06-24T20:49:12.221411"
     width: 1080px;
 }
 ```
- ![](./img/zh-cn_image_0000002656350359.gif)
+ ![](./img/zh-cn_image_0000002661613129.gif)
 
 ```
 <!-- xxx.hml -->
@@ -126,7 +127,7 @@ synced_at: "2026-06-24T20:49:12.221411"
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002626230946.gif)
+ ![](./img/zh-cn_image_0000002631413840.gif)
 
 ```
 <!-- xxx.hml -->
@@ -141,7 +142,7 @@ synced_at: "2026-06-24T20:49:12.221411"
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002626071036.gif)
+ ![](./img/zh-cn_image_0000002661733071.gif)
 
 ```
 <!-- xxx.hml -->
@@ -163,4 +164,4 @@ synced_at: "2026-06-24T20:49:12.221411"
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002656470313.gif)
+ ![](./img/zh-cn_image_0000002631253950.gif)

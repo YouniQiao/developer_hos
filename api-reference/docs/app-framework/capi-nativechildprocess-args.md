@@ -2,7 +2,8 @@
 title: "NativeChildProcess_Args"
 upstream_id: "harmonyos-references/capi-nativechildprocess-args"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:59.772272"
+content_hash: "d773f86fb8a7"
+synced_at: "2026-07-09T00:57:13.260982"
 ---
 
 # NativeChildProcess_Args

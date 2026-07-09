@@ -2,7 +2,8 @@
 title: "condition_variable.h"
 upstream_id: "harmonyos-references/capi-condition-variable-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:15.897422"
+content_hash: "5e36005f93e3"
+synced_at: "2026-07-09T00:59:46.974699"
 ---
 
 # condition_variable.h

@@ -2,7 +2,8 @@
 title: "NativeDisplayManager_DisplayColorSpace"
 upstream_id: "harmonyos-references/capi-nativedisplaymanager-displaycolorspace"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:57.279812"
+content_hash: "40487ed00d53"
+synced_at: "2026-07-09T00:58:46.316334"
 ---
 
 # NativeDisplayManager_DisplayColorSpace
@@ -27,5 +28,5 @@ typedef struct {...} NativeDisplayManager_DisplayColorSpace
 
 | 名称 | 描述 |
 | --- | --- |
-| uint32_t colorSpaceLength | 显示设备的色域长度。 |
-| uint32_t* colorSpaces | 显示设备的色域数据。 |
+| uint32_t colorSpaceLength | 显示设备支持的色域类型数量。 |
+| uint32_t* colorSpaces | 显示设备支持的色域类型数据。 |

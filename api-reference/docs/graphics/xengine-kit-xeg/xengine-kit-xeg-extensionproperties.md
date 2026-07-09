@@ -2,7 +2,8 @@
 title: "XEG_ExtensionProperties"
 upstream_id: "harmonyos-references/xengine-kit-xeg-extensionproperties"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:16.638106"
+content_hash: "9e6ee4336de9"
+synced_at: "2026-07-09T01:01:10.311346"
 ---
 
 # XEG_ExtensionProperties

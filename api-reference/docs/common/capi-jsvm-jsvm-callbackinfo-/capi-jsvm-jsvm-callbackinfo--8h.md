@@ -2,7 +2,8 @@
 title: "JSVM_CallbackInfo__*"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-callbackinfo--8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:04.148258"
+content_hash: "542af63b731b"
+synced_at: "2026-07-09T01:01:47.958477"
 ---
 
 # JSVM_CallbackInfo__*

@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-iap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:28.321332"
+content_hash: "cdde109e0094"
+synced_at: "2026-07-09T01:01:21.372035"
 ---
 
 # ArkTS API错误码
@@ -41,12 +42,18 @@ System internal error.
 
 可能原因
 
-程序运行时发生报错。
+1. 当前DevEco Studio版本低于DevEco Studio 6.0.1 Release，或HarmonyOS SDK版本低于HarmonyOS 6.0.1 Release SDK。
+2. JWT签名无效或已过期。
+3. 使用了优惠签名，但nonce字段重复使用。
+4. IAP Kit开关未打开。
 
 处理步骤
 
-- 若购买请求返回该错误码，建议通过[queryPurchases](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-iap#iapquerypurchases)接口确认用户是否存在已购但未发放权益的商品，及时发放权益。
-- 其他情况请进行重试操作或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
+1. 请确认DevEco Studio已升级到DevEco Studio 6.0.1 Release及以上版本，且HarmonyOS SDK已升级到HarmonyOS 6.0.1 Release SDK及以上版本。
+2. 请参见[生成优惠签名购买参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-server-subscribe-offer-sign)，检查JWT签名的有效性，确认JWT在有效时间内。
+3. 如果使用了优惠签名，请确认nonce字段的唯一性，请勿重复使用。请参见[OfferInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-server-data-model#offerinfo)。
+4. 请参见[开启和激活应用内购买服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-in-app-purchases)确认IAP Kit开关已开启，并已激活。
+5. 其他情况请进行重试操作或通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。
 
 #### 1001860002 应用未被授权访问接口
 
@@ -81,12 +88,15 @@ Invalid product information.
 
 可能原因
 
-1. 传入的商品ID或者商品类型有误。
-2. 在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)上创建的商品未提交审核或未审核通过（创建商品及提交审核可参见[新增单个数字商品](https://developer.huawei.com/consumer/cn/doc/app/new-0000001931836320)）。
+1. 创建的商品状态异常（草稿、待提交、驳回）。
+2. 传入的商品ID、商品类型有误，或者商品价格未配置。
+3. IAP Kit开关未打开。
 
 处理步骤
 
-请登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，选择“我的应用 > 运营 > 商品管理 > 商品列表”，查看对应商品是否存在、必填信息是否完整、商品信息已经提交审核并审核通过。如未审核通过，可使用沙盒账号来测试（参见[沙盒测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-sandbox)）。
+1. 请登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，选择“APP与元服务 > 在应用列表中点击该商品的应用 > 运营 > 商品管理 > 商品列表”，查看对应商品是否存在、必填信息是否完整、商品信息已经提交审核并审核通过。如果未审核通过，可使用沙盒账号来进行[沙盒测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-sandbox)。
+2. 请登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，选择“APP与元服务 > 在应用列表中点击该商品的应用 > 运营 > 商品管理 > 商品列表”，请确认对应商品ID和商品类型是否正确，并确认商品价格已配置。
+3. 请参见[开启和激活应用内购买服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-in-app-purchases)确认IAP Kit开关已开启，并已激活。
 
 #### 1001860004 接口访问过频
 
@@ -193,11 +203,13 @@ The purchase cannot be finished because the user has not paid for it.
 
 可能原因
 
-用户未购买该商品。
+1. 用户未购买该商品。
+2. 参数传递错误。
 
 处理步骤
 
-可通过[queryPurchases](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-iap#iapquerypurchases)接口确认用户是否购买了该商品。
+1. 可通过[queryPurchases](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-iap#iapquerypurchases)接口确认用户是否购买了该商品。
+2. 请排查报错接口的传参是否存在问题。
 
 #### 1001860053 此次购买已经完成发货，无需重复发货
 

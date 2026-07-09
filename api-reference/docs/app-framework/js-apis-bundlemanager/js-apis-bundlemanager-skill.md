@@ -2,7 +2,8 @@
 title: "Skill"
 upstream_id: "harmonyos-references/js-apis-bundlemanager-skill"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:55.418014"
+content_hash: "a79550af8c6d"
+synced_at: "2026-07-09T00:57:10.437976"
 ---
 
 # Skill

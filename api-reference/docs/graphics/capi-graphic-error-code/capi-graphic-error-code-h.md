@@ -2,7 +2,8 @@
 title: "graphic_error_code.h"
 upstream_id: "harmonyos-references/capi-graphic-error-code-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:04.597227"
+content_hash: "04d9af1de783"
+synced_at: "2026-07-09T01:00:59.429939"
 ---
 
 # graphic_error_code.h

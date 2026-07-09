@@ -2,7 +2,8 @@
 title: "@ohos.hichecker (检测模式)"
 upstream_id: "harmonyos-references/js-apis-hichecker"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:44.577739"
+content_hash: "fb95c8828f10"
+synced_at: "2026-07-09T01:00:02.210056"
 ---
 
 # @ohos.hichecker (检测模式)
@@ -31,7 +32,7 @@ import { hichecker } from '@kit.PerformanceAnalysisKit';
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| rule | bigint | 是 | 需要添加的规则。 |
+| rule | bigint | 是 | 需要添加的规则。支持使用或运算组合多个规则。可选值包括： RULE_CAUTION_PRINT_LOG（记录日志）、RULE_CAUTION_TRIGGER_CRASH（应用退出）、RULE_THREAD_CHECK_SLOW_PROCESS（检测耗时函数调用）等，详见[常量](#常量)定义。 |
 
 错误码：
 
@@ -61,13 +62,15 @@ removeCheckRule(rule: bigint): void
 
 删除一条或多条规则，删除的规则后续将不再生效。
 
+如果传入的规则级别为线程级别，则仅从当前线程中删除。
+
 系统能力：SystemCapability.HiviewDFX.HiChecker
 
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| rule | bigint | 是 | 需要删除的规则。 |
+| rule | bigint | 是 | 需要删除的规则。支持使用或运算组合多个规则。可选值包括： RULE_CAUTION_PRINT_LOG（记录日志）、RULE_CAUTION_TRIGGER_CRASH（应用退出）、RULE_THREAD_CHECK_SLOW_PROCESS（检测耗时函数调用）等，详见[常量](#常量)定义。 |
 
 错误码：
 
@@ -95,7 +98,9 @@ try {
 
 containsCheckRule(rule: bigint): boolean
 
-当前已添加的规则集中是否包含了某一个特定的规则。如果传入的规则级别为线程级别，则仅在当前线程中进行查询。
+当前已添加的规则集中是否包含了某一个特定的规则。
+
+如果传入的规则级别为线程级别，则仅在当前线程中进行查询。
 
 系统能力：SystemCapability.HiviewDFX.HiChecker
 
@@ -209,7 +214,7 @@ getRule(): bigint
 hichecker.addCheckRule(hichecker.RULE_CAUTION_PRINT_LOG);
 
 // 获取已添加的规则
-hichecker.getRule(); // return 1n;
+hichecker.getRule();
 ```
 
 #### hichecker.contains(deprecated)

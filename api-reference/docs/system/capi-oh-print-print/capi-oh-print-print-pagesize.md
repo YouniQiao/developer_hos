@@ -2,7 +2,8 @@
 title: "Print_PageSize"
 upstream_id: "harmonyos-references/capi-oh-print-print-pagesize"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:12.125596"
+content_hash: "7904805081a5"
+synced_at: "2026-07-09T00:59:43.888896"
 ---
 
 # Print_PageSize

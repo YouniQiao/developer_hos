@@ -2,7 +2,8 @@
 title: "@system.geolocation (地理位置)"
 upstream_id: "harmonyos-references/js-apis-system-location"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:31.121710"
+content_hash: "d540d6c9e32b"
+synced_at: "2026-07-09T01:01:23.142517"
 ---
 
 # @system.geolocation (地理位置)

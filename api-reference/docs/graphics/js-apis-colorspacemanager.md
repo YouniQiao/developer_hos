@@ -2,7 +2,8 @@
 title: "@ohos.graphics.colorSpaceManager (色彩管理)"
 upstream_id: "harmonyos-references/js-apis-colorspacemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:51.508448"
+content_hash: "b8a27100a87b"
+synced_at: "2026-07-09T01:00:51.046472"
 ---
 
 # @ohos.graphics.colorSpaceManager (色彩管理)

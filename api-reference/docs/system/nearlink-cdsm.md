@@ -2,7 +2,8 @@
 title: "cdsm（星闪合作设备集合能力）"
 upstream_id: "harmonyos-references/nearlink-cdsm"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:50.444998"
+content_hash: "eda71d024d49"
+synced_at: "2026-07-09T00:59:26.707755"
 ---
 
 # cdsm（星闪合作设备集合能力）

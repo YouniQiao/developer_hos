@@ -2,7 +2,8 @@
 title: "Functions"
 upstream_id: "harmonyos-references/arkts-apis-avmusictemplate-f"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:06.987859"
+content_hash: "15dbe039d6f1"
+synced_at: "2026-07-09T01:00:18.202087"
 ---
 
 # Functions
@@ -32,7 +33,7 @@ createAVMusicTemplate(accessType: AVMusicTemplateType): AVMusicTemplate
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| accessType | [AVMusicTemplateType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-e#avmusictemplatetype) | 是 | 音频模板枚举类型。 |
+| accessType | [AVMusicTemplateType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-e#avmusictemplatetype) | 是 | 音频模板类型。 |
 
 返回值：
 
@@ -62,7 +63,7 @@ export class TemplateManager {
   }
 
   /**
-   * 获取模板控制器实例。
+   * 获取模板管理器实例。
    *
    * @returns 模板控制器实例。
    */
@@ -78,7 +79,7 @@ export class TemplateManager {
    */
   public createTemplate() {
     if (this.template) {
-      console.warn('createTemplate: template not undefined');
+      console.warn('createTemplate: template already exists');
       return
     }
     try {

@@ -2,7 +2,8 @@
 title: "AbilityBase_Element"
 upstream_id: "harmonyos-references/capi-abilitybase-element"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:59.243206"
+content_hash: "0f9f10b14635"
+synced_at: "2026-07-09T00:57:12.904043"
 ---
 
 # AbilityBase_Element

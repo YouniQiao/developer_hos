@@ -2,7 +2,8 @@
 title: "CanvasPattern"
 upstream_id: "harmonyos-references/ts-components-canvas-canvaspattern"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:29.624519"
+content_hash: "bdfe54cc2eb4"
+synced_at: "2026-07-09T00:58:03.161592"
 ---
 
 # CanvasPattern
@@ -86,4 +87,4 @@ struct CanvasPatternPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350035.gif)
+ ![](./img/zh-cn_image_0000002631413512.gif)

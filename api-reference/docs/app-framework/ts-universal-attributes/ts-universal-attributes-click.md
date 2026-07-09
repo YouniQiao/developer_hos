@@ -1,9 +1,12 @@
 ---
+
 title: "点击控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-click"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:59.546046"
+synced_at: "2026-07-09T00:58:19.195987"
+content_hash: "a7ee5c81b17b"
 ---
+
 
 # 点击控制
 

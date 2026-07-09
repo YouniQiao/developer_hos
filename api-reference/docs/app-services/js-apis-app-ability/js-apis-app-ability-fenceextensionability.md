@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.FenceExtensionAbility (FenceExtensionAbility)"
 upstream_id: "harmonyos-references/js-apis-app-ability-fenceextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:30.710914"
+content_hash: "57c152354eaa"
+synced_at: "2026-07-09T01:01:22.798805"
 ---
 
 # @ohos.app.ability.FenceExtensionAbility (FenceExtensionAbility)

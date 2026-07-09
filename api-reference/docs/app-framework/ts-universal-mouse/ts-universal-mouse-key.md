@@ -2,7 +2,8 @@
 title: "鼠标事件"
 upstream_id: "harmonyos-references/ts-universal-mouse-key"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:31.718770"
+content_hash: "d17823de24df"
+synced_at: "2026-07-09T00:57:35.625510"
 ---
 
 # 鼠标事件
@@ -238,7 +239,7 @@ struct MouseEventExample {
 
 鼠标点击时：
 
-![](./img/zh-cn_image_0000002656469501.gif)
+![](./img/zh-cn_image_0000002661732243.gif)
 
 #### [h2]示例2（获取当前帧历史点）
 
@@ -317,4 +318,4 @@ struct GetCurrentLocalPositionExample {
 
 鼠标触发事件时：
 
-![](./img/zh-cn_image_0000002656349549.gif)
+![](./img/zh-cn_image_0000002631253122.gif)

@@ -2,7 +2,8 @@
 title: "NotificationFlags"
 upstream_id: "harmonyos-references/js-apis-inner-notification-notificationflags"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:37.632774"
+content_hash: "2eb48fb95e25"
+synced_at: "2026-07-09T01:01:28.556905"
 ---
 
 # NotificationFlags

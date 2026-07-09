@@ -2,7 +2,8 @@
 title: "toolbar-item"
 upstream_id: "harmonyos-references/js-components-basic-toolbar-item"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:08.315573"
+content_hash: "c4d92a60a53a"
+synced_at: "2026-07-09T00:58:22.974603"
 ---
 
 # toolbar-item
@@ -68,4 +69,4 @@ synced_at: "2026-06-24T20:49:08.315573"
     <toolbar-item icon="common/Icon/heart.png" value='Option 6'></toolbar-item>
 </toolbar>
 ```
- ![](./img/zh-cn_image_0000002656350315.jpg)
+ ![](./img/zh-cn_image_0000002661613085.jpg)

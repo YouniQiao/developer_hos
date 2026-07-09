@@ -2,7 +2,8 @@
 title: "Uint8Buff"
 upstream_id: "harmonyos-references/_uint8_buff"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:40.934053"
+content_hash: "0862ed5868b9"
+synced_at: "2026-07-09T00:59:19.248342"
 ---
 
 # Uint8Buff

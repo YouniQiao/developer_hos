@@ -2,7 +2,8 @@
 title: "ImageReceiverNative_"
 upstream_id: "harmonyos-references/capi-image-imagereceivernative-"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:30.665277"
+content_hash: "b18ad8adf090"
+synced_at: "2026-07-09T01:00:35.934116"
 ---
 
 # ImageReceiverNative_

@@ -2,7 +2,8 @@
 title: "归因结果回传"
 upstream_id: "harmonyos-references/store-rest-receive"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:22.725016"
+content_hash: "d402c788ed07"
+synced_at: "2026-07-09T01:01:15.419097"
 ---
 
 # 归因结果回传

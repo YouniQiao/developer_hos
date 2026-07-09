@@ -2,7 +2,8 @@
 title: "CryptoCommonApi"
 upstream_id: "harmonyos-references/capi-cryptocommonapi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:30.328469"
+content_hash: "6ce3dc1fd7c8"
+synced_at: "2026-07-09T00:59:11.549971"
 ---
 
 # CryptoCommonApi

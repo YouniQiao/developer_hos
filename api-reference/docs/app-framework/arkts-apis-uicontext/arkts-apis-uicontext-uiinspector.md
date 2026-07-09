@@ -2,7 +2,8 @@
 title: "Class (UIInspector)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-uiinspector"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:22.733116"
+content_hash: "5696101c7eb9"
+synced_at: "2026-07-09T00:57:29.790358"
 ---
 
 # Class (UIInspector)

@@ -2,7 +2,8 @@
 title: "ArkUI_NumberValue"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-numbervalue"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:50.847112"
+content_hash: "ea58cee7d596"
+synced_at: "2026-07-09T00:58:42.350871"
 ---
 
 # ArkUI_NumberValue

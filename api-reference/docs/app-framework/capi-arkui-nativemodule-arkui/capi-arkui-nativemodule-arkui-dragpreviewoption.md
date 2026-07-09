@@ -2,7 +2,8 @@
 title: "ArkUI_DragPreviewOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-dragpreviewoption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:43.707351"
+content_hash: "a8507e845cfb"
+synced_at: "2026-07-09T00:58:38.480157"
 ---
 
 # ArkUI_DragPreviewOption

@@ -2,7 +2,8 @@
 title: "fileShare"
 upstream_id: "harmonyos-references/capi-fileshare"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:15.069571"
+content_hash: "8b95af401072"
+synced_at: "2026-07-09T00:59:00.655004"
 ---
 
 # fileShare

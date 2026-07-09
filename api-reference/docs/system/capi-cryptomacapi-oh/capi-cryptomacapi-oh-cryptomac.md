@@ -2,7 +2,8 @@
 title: "OH_CryptoMac"
 upstream_id: "harmonyos-references/capi-cryptomacapi-oh-cryptomac"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:32.991358"
+content_hash: "ee8b65bd0e51"
+synced_at: "2026-07-09T00:59:13.526207"
 ---
 
 # OH_CryptoMac

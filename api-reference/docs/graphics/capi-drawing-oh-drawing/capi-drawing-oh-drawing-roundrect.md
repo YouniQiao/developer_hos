@@ -2,7 +2,8 @@
 title: "OH_Drawing_RoundRect"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-roundrect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:09.678025"
+content_hash: "edf6deeb92a0"
+synced_at: "2026-07-09T01:01:03.756233"
 ---
 
 # OH_Drawing_RoundRect

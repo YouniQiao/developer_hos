@@ -2,7 +2,8 @@
 title: "Interface (ClusterOverlay)"
 upstream_id: "harmonyos-references/map-map-clusteroverlay"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:33.738209"
+content_hash: "7a89716f227c"
+synced_at: "2026-07-09T01:01:25.485503"
 ---
 
 # Interface (ClusterOverlay)

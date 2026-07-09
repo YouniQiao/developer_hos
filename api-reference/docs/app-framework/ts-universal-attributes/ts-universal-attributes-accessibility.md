@@ -2,7 +2,8 @@
 title: "无障碍属性"
 upstream_id: "harmonyos-references/ts-universal-attributes-accessibility"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:45.540663"
+content_hash: "a8cc6c4488e6"
+synced_at: "2026-07-09T00:57:42.399061"
 ---
 
 # 无障碍属性
@@ -911,7 +912,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469605.png)
+ ![](./img/zh-cn_image_0000002661732351.png)
 
 #### [h2]示例6（设置无障碍聚合功能下的子组件状态和操作接管功能）
 

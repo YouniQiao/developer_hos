@@ -2,7 +2,8 @@
 title: "Class (Pen)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-pen"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:53.992675"
+content_hash: "2bf75bb49f0c"
+synced_at: "2026-07-09T01:00:52.447701"
 ---
 
 # Class (Pen)

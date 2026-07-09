@@ -2,7 +2,8 @@
 title: "AbilityRuntime_Context*"
 upstream_id: "harmonyos-references/capi-abilityruntime-abilityruntime-context8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:00.177663"
+content_hash: "d4e15836f5d7"
+synced_at: "2026-07-09T00:57:13.628731"
 ---
 
 # AbilityRuntime_Context*

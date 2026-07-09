@@ -2,7 +2,8 @@
 title: "Camera_Device"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-device"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:16.142071"
+content_hash: "2997010852d8"
+synced_at: "2026-07-09T01:00:25.628032"
 ---
 
 # Camera_Device

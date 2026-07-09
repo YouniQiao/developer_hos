@@ -2,7 +2,8 @@
 title: "type_def.h"
 upstream_id: "harmonyos-references/capi-type-def-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:16.547980"
+content_hash: "9510d313915e"
+synced_at: "2026-07-09T00:59:47.746713"
 ---
 
 # type_def.h

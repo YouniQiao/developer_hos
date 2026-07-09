@@ -2,7 +2,8 @@
 title: "自定义组件的生命周期"
 upstream_id: "harmonyos-references/ts-custom-component-lifecycle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:49.750585"
+content_hash: "67d30d98cd6b"
+synced_at: "2026-07-09T00:58:13.656200"
 ---
 
 # 自定义组件的生命周期
@@ -142,7 +143,7 @@ struct IndexComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230786.gif)
+ ![](./img/zh-cn_image_0000002631253786.gif)
 
 #### onNewParam19+
 
@@ -315,8 +316,8 @@ struct Child {
   @State message: Message = new Message('AboutToReuse');
 
   aboutToReuse(params: Record<string, ESObject>) {
-    console.info("Recycle Child")
-    this.message = params.message as Message
+    console.info('Reuse Child');
+    this.message = params.message as Message;
   }
 
   build() {
@@ -549,7 +550,7 @@ struct IndexComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070876.png)
+ ![](./img/zh-cn_image_0000002661612969.png)
 
 V2：
 
@@ -621,7 +622,7 @@ struct IndexComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470153.png)
+ ![](./img/zh-cn_image_0000002631413680.png)
 
 #### pageTransition9+
 

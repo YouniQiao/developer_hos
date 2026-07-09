@@ -2,7 +2,8 @@
 title: "通过mercOrderNo查询订单信息"
 upstream_id: "harmonyos-references/payment-agent-merc-query-order"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:42.439076"
+content_hash: "20ea47702eeb"
+synced_at: "2026-07-09T01:01:32.197939"
 ---
 
 # 通过mercOrderNo查询订单信息
@@ -40,7 +41,7 @@ Request Header
 
 request path
 
-| 参数 | 是否必填 | 参数类型 | 描述 |
+| 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | mercOrderNo | 是 | String | 商户订单号，由商户自己生成，商户需保证订单号唯一性。最大长度46。 |
 

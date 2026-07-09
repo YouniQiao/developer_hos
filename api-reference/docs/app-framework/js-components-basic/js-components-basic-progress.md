@@ -2,7 +2,8 @@
 title: "progress"
 upstream_id: "harmonyos-references/js-components-basic-progress"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:06.709380"
+content_hash: "9cb2c2304e0d"
+synced_at: "2026-07-09T00:58:22.153838"
 ---
 
 # progress
@@ -71,7 +72,7 @@ type=arc
 | background-color | | - | 否 | 弧形进度条的背景色。 |
 | stroke-width | | 4px | 否 | 弧形进度条的宽度，始终在半径区域内。 进度条宽度越大，进度条越靠近圆心。 |
 | start-angle | | 240 | 否 | 弧形进度条起始角度，以时钟0点为基线，取值范围为0到360（顺时针）。 |
-| total-angle | | 240 | 否 | 弧形进度条总长度，范围为-360到360，负数标识起点到终点为逆时针。 |
+| total-angle | | 240 | 否 | 弧形进度条总角度，范围为-360到360，负数表示起点到终点为逆时针。 |
 | center-x | | 弧形进度条宽度的一半 | 否 | 弧形进度条中心位置，坐标原点为组件左上角顶点。该属性需要和center-y和radius一起使用。 |
 | center-y | | 弧形进度条高度的一半 | 否 | 弧形进度条中心位置，坐标原点为组件左上角顶点。该属性需要和center-x和radius一起使用。 |
 | radius | | 弧形进度条宽高最小值的一半 | 否 | 弧形进度条半径，该属性需要和center-x和center-y一起使用。 |
@@ -116,4 +117,4 @@ type=eclipse5+
   height: 300px;
 }
 ```
- ![](./img/zh-cn_image_0000002626070986.png)
+ ![](./img/zh-cn_image_0000002661733019.png)

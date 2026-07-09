@@ -2,7 +2,8 @@
 title: "ErrorObserver"
 upstream_id: "harmonyos-references/js-apis-inner-application-errorobserver"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:53.302479"
+content_hash: "a6bd0f529d71"
+synced_at: "2026-07-09T00:57:09.052431"
 ---
 
 # ErrorObserver

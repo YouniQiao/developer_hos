@@ -2,7 +2,8 @@
 title: "ArkUI_RenderNodeClipOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-rendernodeclipoption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:57.995052"
+content_hash: "95dd36b9e7bc"
+synced_at: "2026-07-09T00:58:46.994627"
 ---
 
 # ArkUI_RenderNodeClipOption

@@ -2,7 +2,8 @@
 title: "Class (WebController)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-webcontroller"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:07.699012"
+content_hash: "99faed3426b2"
+synced_at: "2026-07-09T00:58:54.882445"
 ---
 
 # Class (WebController)

@@ -2,7 +2,8 @@
 title: "OH_AVTranscoder"
 upstream_id: "harmonyos-references/capi-avtranscoder-oh-avtranscoder"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:39.601561"
+content_hash: "e08440c90f1b"
+synced_at: "2026-07-09T01:00:43.057809"
 ---
 
 # OH_AVTranscoder

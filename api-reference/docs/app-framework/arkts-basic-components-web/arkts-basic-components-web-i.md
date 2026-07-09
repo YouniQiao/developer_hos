@@ -2,7 +2,8 @@
 title: "Interfaces（其他）"
 upstream_id: "harmonyos-references/arkts-basic-components-web-i"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:07.674140"
+content_hash: "c1979cb4e696"
+synced_at: "2026-07-09T00:58:55.440894"
 ---
 
 # Interfaces（其他）

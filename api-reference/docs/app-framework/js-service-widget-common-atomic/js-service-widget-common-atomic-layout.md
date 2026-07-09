@@ -1,9 +1,12 @@
 ---
+
 title: "原子布局"
 upstream_id: "harmonyos-references/js-service-widget-common-atomic-layout"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:25.552833"
+synced_at: "2026-07-09T00:58:30.276494"
+content_hash: "74ed81f66a47"
 ---
+
 
 # 原子布局
 

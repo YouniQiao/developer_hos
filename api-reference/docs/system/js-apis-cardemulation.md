@@ -2,7 +2,8 @@
 title: "@ohos.nfc.cardEmulation (标准NFC-cardEmulation)"
 upstream_id: "harmonyos-references/js-apis-cardemulation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:46.673498"
+content_hash: "29f21766dad8"
+synced_at: "2026-07-09T00:59:24.040512"
 ---
 
 # @ohos.nfc.cardEmulation (标准NFC-cardEmulation)

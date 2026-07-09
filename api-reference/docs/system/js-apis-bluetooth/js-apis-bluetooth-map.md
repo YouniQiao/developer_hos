@@ -2,7 +2,8 @@
 title: "@ohos.bluetooth.map (蓝牙map模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-map"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:46.499041"
+content_hash: "9789b1e48eef"
+synced_at: "2026-07-09T00:59:23.420040"
 ---
 
 # @ohos.bluetooth.map (蓝牙map模块)

@@ -2,7 +2,8 @@
 title: "avmedia_base.h"
 upstream_id: "harmonyos-references/capi-avmedia-base-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:38.200106"
+content_hash: "f627122b8246"
+synced_at: "2026-07-09T01:00:42.171050"
 ---
 
 # avmedia_base.h

@@ -2,7 +2,8 @@
 title: "Drawing"
 upstream_id: "harmonyos-references/capi-drawing"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:56.948425"
+content_hash: "51630aa812e6"
+synced_at: "2026-07-09T01:00:53.803928"
 ---
 
 # Drawing

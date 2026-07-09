@@ -2,7 +2,8 @@
 title: "Camera_ControlCenterStatusInfo"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-controlcenterstatusinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:17.493291"
+content_hash: "fc02840d7c22"
+synced_at: "2026-07-09T01:00:26.520059"
 ---
 
 # Camera_ControlCenterStatusInfo

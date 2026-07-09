@@ -2,7 +2,8 @@
 title: "Interface (Transaction)"
 upstream_id: "harmonyos-references/arkts-apis-data-relationalstore-transaction"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:04.000145"
+content_hash: "570ce048b5b1"
+synced_at: "2026-07-09T00:57:16.127628"
 ---
 
 # Interface (Transaction)

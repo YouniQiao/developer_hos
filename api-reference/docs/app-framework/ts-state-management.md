@@ -2,7 +2,8 @@
 title: "应用级变量的状态管理"
 upstream_id: "harmonyos-references/ts-state-management"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:57.386026"
+content_hash: "07d98bee1dbe"
+synced_at: "2026-07-09T00:58:18.439675"
 ---
 
 # 应用级变量的状态管理
@@ -307,8 +308,8 @@ static set<T>(propName: string, newValue: T): boolean
 
 ```
 AppStorage.setOrCreate('PropA', 48);
-let res: boolean = AppStorage.set('PropA', 47) // true
-let res1: boolean = AppStorage.set('PropB', 47) // false
+let res: boolean = AppStorage.set('PropA', 47); // true
+let res1: boolean = AppStorage.set('PropB', 47); // false
 ```
 
 #### [h2]setOrCreate10+
@@ -667,8 +668,8 @@ static Set<T>(propName: string, newValue: T): boolean
 
 ```
 AppStorage.SetOrCreate('PropA', 48);
-let res: boolean = AppStorage.Set('PropA', 47) // true
-let res1: boolean = AppStorage.Set('PropB', 47) // false
+let res: boolean = AppStorage.Set('PropA', 47); // true
+let res1: boolean = AppStorage.Set('PropB', 47); // false
 ```
 
 #### [h2]SetOrCreate(deprecated)
@@ -1640,7 +1641,7 @@ static persistProp<T>(key: string, defaultValue: T): void
 
 确定属性的类型和值的顺序如下：
 
-1. 如果[PersistentStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-persiststorage)文件中存在key对应的属性，在AppStorage中创建对应的propName，并用在PersistentStorage中找到的key的属性初始化。
+1. 如果[PersistentStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-persiststorage)文件中存在key对应的属性，在AppStorage中创建对应的key，并用在PersistentStorage中找到的key的属性初始化。
 2. 如果PersistentStorage文件中没有查询到key对应的属性，则在AppStorage中查找key对应的属性。如果找到key对应的属性，则将该属性持久化。
 3. 如果AppStorage中也没查找到key对应的属性，则在AppStorage中创建key对应的属性。用defaultValue初始化其值，并将该属性持久化。
 
@@ -1735,7 +1736,7 @@ static PersistProp<T>(key: string, defaultValue: T): void
 
 确定属性的类型和值的顺序如下：
 
-1. 如果[PersistentStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-persiststorage)文件中存在key对应的属性，在AppStorage中创建对应的propName，并用在PersistentStorage中找到的key的属性初始化。
+1. 如果[PersistentStorage](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-persiststorage)文件中存在key对应的属性，在AppStorage中创建对应的key，并用在PersistentStorage中找到的key的属性初始化。
 2. 如果PersistentStorage文件中没有查询到key对应的属性，则在AppStorage中查找key对应的属性。如果找到key对应的属性，则将该属性持久化。
 3. 如果AppStorage也没查找到key对应的属性，则在AppStorage中创建key对应的属性。用defaultValue初始化其值，并将该属性持久化。
 
@@ -2017,5 +2018,5 @@ let keys: Array<string> = Environment.Keys(); // keys 包含 accessibilityEnable
 | colorMode | [ColorMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-state-management-environment-variables#colormode) | 深浅色模式，可选值为： - ColorMode.LIGHT：浅色模式； - ColorMode.DARK：深色模式。 |
 | fontScale | number | 字体大小比例。 |
 | fontWeightScale | number | 字重比例。 |
-| layoutDirection | [LayoutDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-state-management-environment-variables#layoutdirection) | 布局方向类型，可选值为： - LayoutDirection.LTR：从左到右； - LayoutDirection.RTL：从右到左。 - Auto：跟随系统。 |
+| layoutDirection | [LayoutDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-state-management-environment-variables#layoutdirection) | 布局方向类型，可选值为： - LayoutDirection.LTR：从左到右； - LayoutDirection.RTL：从右到左。 - LayoutDirection.Auto：跟随系统。 |
 | languageCode | string | 当前系统语言，小写字母，例如zh。 |

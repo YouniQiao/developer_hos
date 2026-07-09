@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-payment"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:38.862621"
+content_hash: "9768304c4052"
+synced_at: "2026-07-09T01:01:30.071174"
 ---
 
 # ArkTS API错误码

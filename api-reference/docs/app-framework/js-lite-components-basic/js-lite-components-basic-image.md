@@ -2,7 +2,8 @@
 title: "image"
 upstream_id: "harmonyos-references/js-lite-components-basic-image"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:18.673374"
+content_hash: "ab14f5500477"
+synced_at: "2026-07-09T00:58:27.653571"
 ---
 
 # image
@@ -71,4 +72,4 @@ synced_at: "2026-06-24T20:49:18.673374"
   height: 100%;
 }
 ```
- ![](./img/zh-cn_image_0000002656470473.png)
+ ![](./img/zh-cn_image_0000002631254110.png)

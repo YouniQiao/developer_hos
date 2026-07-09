@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.kioskManager (Kiosk模式管理)"
 upstream_id: "harmonyos-references/js-apis-app-ability-kioskmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:50.835023"
+content_hash: "520bf2379959"
+synced_at: "2026-07-09T00:57:07.432633"
 ---
 
 # @ohos.app.ability.kioskManager (Kiosk模式管理)

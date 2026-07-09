@@ -2,7 +2,8 @@
 title: "无障碍子系统错误码"
 upstream_id: "harmonyos-references/errorcode-accessibility"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:01.533625"
+content_hash: "d4d99335064b"
+synced_at: "2026-07-09T00:57:14.344826"
 ---
 
 # 无障碍子系统错误码

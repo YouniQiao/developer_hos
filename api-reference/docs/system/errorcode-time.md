@@ -1,9 +1,12 @@
 ---
+
 title: "时间时区服务错误码"
 upstream_id: "harmonyos-references/errorcode-time"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:13.353153"
+synced_at: "2026-07-09T00:59:44.804511"
+content_hash: "4adc86526dfe"
 ---
+
 
 # 时间时区服务错误码
 

@@ -2,7 +2,8 @@
 title: "Rcp_OnBinaryReceiveCallback"
 upstream_id: "harmonyos-references/_rcp___on_binary_receive_callback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:02.700798"
+content_hash: "3f1641f11dc8"
+synced_at: "2026-07-09T00:59:36.441629"
 ---
 
 # Rcp_OnBinaryReceiveCallback

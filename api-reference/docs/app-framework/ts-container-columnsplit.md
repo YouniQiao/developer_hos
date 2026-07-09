@@ -2,7 +2,8 @@
 title: "ColumnSplit"
 upstream_id: "harmonyos-references/ts-container-columnsplit"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:53.668152"
+content_hash: "619ead7f55a6"
+synced_at: "2026-07-09T00:57:46.168596"
 ---
 
 # ColumnSplit
@@ -120,7 +121,7 @@ struct ColumnSplitExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469649.gif)
+ ![](./img/zh-cn_image_0000002661732395.gif)
 
 #### [h2]示例2（设置带有间隔的ColumnSplit组件）
 
@@ -149,4 +150,4 @@ struct ColumnSplitDividerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349697.png)
+ ![](./img/zh-cn_image_0000002631253276.png)

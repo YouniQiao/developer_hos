@@ -2,7 +2,8 @@
 title: "native_avcapability.h"
 upstream_id: "harmonyos-references/capi-native-avcapability-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:01.817581"
+content_hash: "7480c49a52fb"
+synced_at: "2026-07-09T01:00:14.383120"
 ---
 
 # native_avcapability.h

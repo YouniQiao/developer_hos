@@ -2,7 +2,8 @@
 title: "OhosImageSourceProperty"
 upstream_id: "harmonyos-references/capi-image-ohosimagesourceproperty"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:31.524989"
+content_hash: "ac501af41f3a"
+synced_at: "2026-07-09T01:00:36.520766"
 ---
 
 # OhosImageSourceProperty

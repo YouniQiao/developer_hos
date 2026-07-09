@@ -2,7 +2,8 @@
 title: "Class (DragController)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-dragcontroller"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:20.790858"
+content_hash: "fdab936f21a3"
+synced_at: "2026-07-09T00:57:28.711979"
 ---
 
 # Class (DragController)
@@ -102,7 +103,7 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469443.gif)
+ ![](./img/zh-cn_image_0000002661612243.gif)
 
 #### executeDrag11+
 
@@ -222,7 +223,7 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349491.gif)
+ ![](./img/zh-cn_image_0000002631412952.gif)
 
 #### createDragAction11+
 
@@ -402,7 +403,7 @@ struct DragControllerPage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230078.gif)
+ ![](./img/zh-cn_image_0000002661732183.gif)
 
 #### getDragPreview11+
 
@@ -579,7 +580,7 @@ struct NormalEts {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070168.gif)
+ ![](./img/zh-cn_image_0000002631253062.gif)
 
 #### enableDropDisallowedBadge20+
 
@@ -648,4 +649,4 @@ struct Index {
 }
 ```
 
-![](./img/zh-cn_image_0000002656469445.png)
+![](./img/zh-cn_image_0000002661612245.png)

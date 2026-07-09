@@ -2,7 +2,8 @@
 title: "@ohos.util.Stack (线性容器Stack)"
 upstream_id: "harmonyos-references/js-apis-stack"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:17.525895"
+content_hash: "6c1e1b4fa3dc"
+synced_at: "2026-07-09T00:57:26.381110"
 ---
 
 # @ohos.util.Stack (线性容器Stack)

@@ -2,7 +2,8 @@
 title: "延迟订阅续订日期"
 upstream_id: "harmonyos-references/iap-date-delay-for-sub"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:29.063190"
+content_hash: "cfd73e79e38a"
+synced_at: "2026-07-09T01:01:22.127842"
 ---
 
 # 延迟订阅续订日期

@@ -2,7 +2,8 @@
 title: "native_cencinfo.h"
 upstream_id: "harmonyos-references/capi-native-cencinfo-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:03.412328"
+content_hash: "a8a68a4ae7a2"
+synced_at: "2026-07-09T01:00:15.309706"
 ---
 
 # native_cencinfo.h

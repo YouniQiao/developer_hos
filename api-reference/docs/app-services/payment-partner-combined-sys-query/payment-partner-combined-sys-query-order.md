@@ -2,7 +2,8 @@
 title: "通过combinedSysTransOrderNo查询订单信息"
 upstream_id: "harmonyos-references/payment-partner-combined-sys-query-order"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:45.404461"
+content_hash: "42efcdfa08b2"
+synced_at: "2026-07-09T01:01:33.978884"
 ---
 
 # 通过combinedSysTransOrderNo查询订单信息
@@ -35,7 +36,7 @@ Request Header
 
 request path
 
-| 参数 | 是否必填 | 参数类型 | 描述 |
+| 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | combinedSysTransOrderNo | 是 | String | 华为支付合单支付主订单号。 |
 

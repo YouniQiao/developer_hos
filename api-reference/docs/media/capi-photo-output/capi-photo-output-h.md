@@ -2,7 +2,8 @@
 title: "photo_output.h"
 upstream_id: "harmonyos-references/capi-photo-output-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:15.630202"
+content_hash: "f87d9374620d"
+synced_at: "2026-07-09T01:00:25.002482"
 ---
 
 # photo_output.h

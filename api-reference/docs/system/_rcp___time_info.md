@@ -2,7 +2,8 @@
 title: "Rcp_TimeInfo"
 upstream_id: "harmonyos-references/_rcp___time_info"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:02.157467"
+content_hash: "320b95ad2238"
+synced_at: "2026-07-09T00:59:35.817405"
 ---
 
 # Rcp_TimeInfo

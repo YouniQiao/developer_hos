@@ -2,7 +2,8 @@
 title: "oh_sensor_type.h"
 upstream_id: "harmonyos-references/capi-oh-sensor-type-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:42.118413"
+content_hash: "b1f05aaeb4d6"
+synced_at: "2026-07-09T01:00:00.717940"
 ---
 
 # oh_sensor_type.h

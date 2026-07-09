@@ -1,9 +1,12 @@
 ---
+
 title: "公共说明"
 upstream_id: "harmonyos-references/wallet-rest-api-introduction"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:54.326307"
+synced_at: "2026-07-09T01:01:39.894388"
+content_hash: "6e922358e61b"
 ---
+
 
 # 公共说明
 

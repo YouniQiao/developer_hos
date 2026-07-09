@@ -2,7 +2,8 @@
 title: "button"
 upstream_id: "harmonyos-references/js-service-widget-basic-button"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:26.992321"
+content_hash: "a9b569f5b06c"
+synced_at: "2026-07-09T00:58:30.910340"
 ---
 
 # button
@@ -88,4 +89,4 @@ synced_at: "2026-06-24T20:49:26.992321"
 ```
  4*4卡片
 
-![](./img/zh-cn_image_0000002626231126.jpg)
+![](./img/zh-cn_image_0000002631414022.jpg)

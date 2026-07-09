@@ -2,7 +2,8 @@
 title: "TrustedAppService（可信应用服务）"
 upstream_id: "harmonyos-references/devicesecurity-taas-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:34.909623"
+content_hash: "0ffc71169725"
+synced_at: "2026-07-09T00:59:15.140881"
 ---
 
 # TrustedAppService（可信应用服务）
@@ -702,7 +703,7 @@ procSecImageTransform(srcSecImage: ArrayBuffer, procParams: SecImageProcParamsAr
 | width | number | 否 | 否 | 裁剪区域的宽度，即横向的长度，取值范围在 0 到 640 之间的偶数，且需满足 x 与 width 的和不大于 640。单位是像素（pixel）。 |
 | height | number | 否 | 否 | 裁剪区域的高度，即纵向的长度，取值范围在 0 到 480 之间的偶数，且需满足 y 与 height 的和不大于 480。单位是像素（pixel）。 |
 
-![](./img/zh-cn_image_0000002656470599.jpg)
+![](./img/zh-cn_image_0000002631254238.jpg)
 
 #### SecImageBuffer
 

@@ -2,7 +2,8 @@
 title: "NavPushPathHelper"
 upstream_id: "harmonyos-references/ohos-atomicservice-navpushpathhelper"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:49.156988"
+content_hash: "dad40b49b190"
+synced_at: "2026-07-09T00:58:13.630265"
 ---
 
 # NavPushPathHelper
@@ -743,4 +744,4 @@ export struct PageTwo {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002656470151.gif)
+ ![](./img/zh-cn_image_0000002631413678.gif)

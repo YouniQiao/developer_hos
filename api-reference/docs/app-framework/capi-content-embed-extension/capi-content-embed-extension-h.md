@@ -2,7 +2,8 @@
 title: "content_embed_extension.h"
 upstream_id: "harmonyos-references/capi-content-embed-extension-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:11.659850"
+content_hash: "c018914b99b3"
+synced_at: "2026-07-09T00:58:59.052588"
 ---
 
 # content_embed_extension.h

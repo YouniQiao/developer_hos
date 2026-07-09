@@ -2,7 +2,8 @@
 title: "input"
 upstream_id: "harmonyos-references/js-components-basic-input"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:05.807299"
+content_hash: "6b5a082c015b"
+synced_at: "2026-07-09T00:58:21.931692"
 ---
 
 # input
@@ -35,7 +36,7 @@ synced_at: "2026-06-24T20:49:05.807299"
 | headericon | string | - | 否 | 在文本输入前的图标资源路径，该图标不支持点击事件（button，checkbox和radio不生效），图标格式为jpg，png和svg。 |
 | showcounter5+ | boolean | false | 否 | 文本输入框是否显示计数下标，需要配合maxlength一起使用。 true表示显示，false表示不显示。 |
 | menuoptions5+ | Array | - | 否 | 设置文本选择弹框点击更多按钮之后显示的菜单项。 |
-| autofocus6+ | boolean | false | 否 | 是否自动获焦。 应用首页中设置不生效，可在onActive中延迟（100-500ms左右）调用focus方法实现输入框在首页中自动获焦。 true表示文本框自动获焦，false表示文本框不自动获焦。 |
+| autofocus6+ | boolean | false | 否 | 是否自动获取焦点。应用首页中设置不生效，可在onActive中延迟（100-500ms左右）调用focus方法实现输入框在首页中自动获取焦点。true表示文本框自动获取焦点，false表示文本框不自动获取焦点。 |
 | selectedstart6+ | number | -1 | 否 | 开始选择文本时初始选择位置。 |
 | selectedend6+ | number | -1 | 否 | 开始选择文本时结尾选择位置。 |
 | softkeyboardenabled6+ | boolean | true | 否 | 编辑时是否弹出系统软键盘。 true表示会弹出系统软键盘，false表示不会弹出。 |
@@ -65,7 +66,7 @@ synced_at: "2026-06-24T20:49:05.807299"
 
 除支持[通用事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-common-events)外，还支持如下事件：
 
-- 当input类型为text、email、date、time、number、password时，支持如下事件： 名称 参数 描述 change { value: inputValue } 输入框输入内容发生变化时触发该事件，返回用户当前输入值。 改变value属性值不会触发该回调。 enterkeyclick { value: enterKey } 软键盘enter键点击后触发该事件，返回enter按钮的类型，enterKey类型为number，可选值为： - 2：设置enterkeytype属性为go时生效。 - 3：设置enterkeytype属性为search时生效。 - 4：设置enterkeytype属性为send时生效。 - 5：设置enterkeytype属性为next时生效。 - 6：不设置enterkeytype或者设置enterkeytype属性为default、done时生效。 translate5+ { value: selectedText } 设置此事件后，进行文本选择操作后文本选择弹窗会出现翻译按钮，点击翻译按钮之后，触发该回调，返回选中的文本内容。 share5+ { value: selectedText } 设置此事件后，进行文本选择操作后文本选择弹窗会出现分享按钮，点击分享按钮之后，触发该回调，返回选中的文本内容。 search5+ { value: selectedText } 设置此事件后，进行文本选择操作后文本选择弹窗会出现搜索按钮，点击搜索按钮之后，触发该回调，返回选中的文本内容。 optionselect5+ { index: optionIndex, value: selectedText } 文本选择弹窗中设置menuoptions属性后，用户在文本选择操作后，点击菜单项后触发该回调，返回点击的菜单项序号和选中的文本内容。 selectchange6+ { start: number, end: number } 文本选择变化时触发事件。
+- 当input类型为text、email、date、time、number、password时，支持如下事件： 名称 参数 描述 change { value: inputValue } 输入框输入内容发生变化时触发该事件，返回用户当前输入值。 改变value属性值不会触发该回调。 enterkeyclick { value: enterKey } 软键盘enter键点击后触发该事件，返回enter按钮的类型，enterKey类型为number，可选值为： - 2：设置enterkeytype属性为go时生效。 - 3：设置enterkeytype属性为search时生效。 - 4：设置enterkeytype属性为send时生效。 - 5：设置enterkeytype属性为next时生效。 - 6：不设置enterkeytype或者设置enterkeytype属性为default、done时生效。 translate5+ { value: selectedText } 设置此事件后，进行文本选择操作后文本选择弹窗会出现翻译按钮，点击翻译按钮之后，触发该回调，返回选中的文本内容。 share5+ { value: selectedText } 设置此事件后，进行文本选择操作后文本选择弹窗会出现分享按钮，点击分享按钮之后，触发该回调，返回选中的文本内容。 search5+ { value: selectedText } 设置此事件后，进行文本选择操作后文本选择弹窗会出现搜索按钮，点击搜索按钮之后，触发该回调，返回选中的文本内容。 optionselect5+ { index: optionIndex, value: selectedText } 文本选择弹窗中设置menuoptions属性后，用户在文本选择操作后，点击菜单项后触发该回调，返回点击的菜单项序号和选中的文本内容。 selectchange6+ { start: number, end: number } 文本选择变化时触发该事件，返回文本选择的起始和结束位置。
 - 当input类型为checkbox、radio时，支持如下事件： 名称 参数 描述 change { checked:true | false } checkbox多选框或radio单选框的checked状态发生变化时触发该事件。
 
 #### 方法
@@ -133,7 +134,7 @@ export default {
   },
  }
 ```
- ![](./img/zh-cn_image_0000002656350303.png)
+ ![](./img/zh-cn_image_0000002661613073.png)
 2. type为button 
 ```
 <!-- xxx.hml -->
@@ -153,7 +154,7 @@ export default {
   width: 280px;
 }
 ```
- ![](./img/zh-cn_image_0000002626230890.png)
+ ![](./img/zh-cn_image_0000002631413784.png)
 3. type为checkbox 
 ```
 <!-- xxx.hml -->
@@ -184,7 +185,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070980.png)
+ ![](./img/zh-cn_image_0000002661733013.png)
 4. type为radio 
 ```
 <!-- xxx.hml -->
@@ -219,4 +220,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470257.png)
+ ![](./img/zh-cn_image_0000002631253894.png)

@@ -2,7 +2,8 @@
 title: "@ohos.util.stream (数据流基类stream)"
 upstream_id: "harmonyos-references/js-apis-stream"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:17.513439"
+content_hash: "6b72bf445855"
+synced_at: "2026-07-09T00:57:26.717663"
 ---
 
 # @ohos.util.stream (数据流基类stream)

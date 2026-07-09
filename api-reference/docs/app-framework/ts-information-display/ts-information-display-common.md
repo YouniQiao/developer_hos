@@ -1,9 +1,12 @@
 ---
+
 title: "信息展示公共接口"
 upstream_id: "harmonyos-references/ts-information-display-common"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:28.589622"
+synced_at: "2026-07-09T00:58:02.792937"
+content_hash: "00042abb6ca6"
 ---
+
 
 # 信息展示公共接口
 

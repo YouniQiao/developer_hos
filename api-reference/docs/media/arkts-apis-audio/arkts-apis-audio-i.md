@@ -2,7 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-audio-i"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:53.318416"
+content_hash: "1440a4c69ace"
+synced_at: "2026-07-09T01:00:08.975270"
 ---
 
 # Interfaces (其他)

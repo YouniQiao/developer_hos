@@ -2,7 +2,8 @@
 title: "JSVM_DefineClassOptions"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-defineclassoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:03.484803"
+content_hash: "750940193820"
+synced_at: "2026-07-09T01:01:47.322141"
 ---
 
 # JSVM_DefineClassOptions

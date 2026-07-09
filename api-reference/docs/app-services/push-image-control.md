@@ -2,7 +2,8 @@
 title: "图片风控"
 upstream_id: "harmonyos-references/push-image-control"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:49.818887"
+content_hash: "fb4026503c35"
+synced_at: "2026-07-09T01:01:38.187825"
 ---
 
 # 图片风控

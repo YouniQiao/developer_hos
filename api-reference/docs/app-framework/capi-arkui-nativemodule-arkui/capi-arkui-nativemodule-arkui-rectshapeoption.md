@@ -2,7 +2,8 @@
 title: "ArkUI_RectShapeOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-rectshapeoption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:57.925236"
+content_hash: "736c2d221dcf"
+synced_at: "2026-07-09T00:58:46.877494"
 ---
 
 # ArkUI_RectShapeOption

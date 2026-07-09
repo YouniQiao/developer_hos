@@ -2,7 +2,8 @@
 title: "progress"
 upstream_id: "harmonyos-references/js-lite-components-basic-progress"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:20.255656"
+content_hash: "f4ee8189eab3"
+synced_at: "2026-07-09T00:58:27.954976"
 ---
 
 # progress
@@ -98,4 +99,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626071200.png)
+ ![](./img/zh-cn_image_0000002661733235.png)

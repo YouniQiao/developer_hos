@@ -2,7 +2,8 @@
 title: "StepperItem"
 upstream_id: "harmonyos-references/ts-basic-components-stepperitem"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:00.274707"
+content_hash: "264de317ad1a"
+synced_at: "2026-07-09T00:58:19.717384"
 ---
 
 # StepperItem
@@ -24,7 +25,7 @@ StepperItem()
 
 创建[Stepper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-stepper)组件的页面子组件。
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 22开始废弃，建议使用[Swiper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper#属性)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 22开始废弃，建议使用[Swiper](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-swiper)替代。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 

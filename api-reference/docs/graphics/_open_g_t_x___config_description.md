@@ -2,7 +2,8 @@
 title: "OpenGTX_ConfigDescription"
 upstream_id: "harmonyos-references/_open_g_t_x___config_description"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:14.025969"
+content_hash: "1b96fa030b85"
+synced_at: "2026-07-09T01:01:07.957111"
 ---
 
 # OpenGTX_ConfigDescription

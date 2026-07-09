@@ -2,7 +2,8 @@
 title: "@ohos.multimodalInput.mouseEvent (鼠标输入事件)"
 upstream_id: "harmonyos-references/js-apis-mouseevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:18.061271"
+content_hash: "53108b794e55"
+synced_at: "2026-07-09T00:59:48.788384"
 ---
 
 # @ohos.multimodalInput.mouseEvent (鼠标输入事件)

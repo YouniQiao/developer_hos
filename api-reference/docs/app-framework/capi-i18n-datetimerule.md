@@ -2,7 +2,8 @@
 title: "DateTimeRule"
 upstream_id: "harmonyos-references/capi-i18n-datetimerule"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:24.395371"
+content_hash: "bc2e3f2f21a7"
+synced_at: "2026-07-09T00:59:08.617789"
 ---
 
 # DateTimeRule
@@ -27,7 +28,7 @@ typedef struct DateTimeRule {...} DateTimeRule
 
 | 名称 | 描述 |
 | --- | --- |
-| int32_t month | 月份。 |
+| int32_t month | 月份。月份从0开始计数，0表示一月。 |
 | int32_t dayOfMonth | 当月的第几天。 |
 | int32_t dayOfWeek | 当周的第几天。 |
 | int32_t weekInMonth | 当月的第几周。 |

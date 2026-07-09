@@ -2,7 +2,8 @@
 title: "drawing_image.h"
 upstream_id: "harmonyos-references/capi-drawing-image-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:00.708401"
+content_hash: "f1dfafa46990"
+synced_at: "2026-07-09T01:00:56.111649"
 ---
 
 # drawing_image.h

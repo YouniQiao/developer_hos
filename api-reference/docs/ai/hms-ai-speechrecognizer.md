@@ -2,7 +2,8 @@
 title: "speechRecognizer（语音识别）"
 upstream_id: "harmonyos-references/hms-ai-speechrecognizer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:55.965386"
+content_hash: "e465881bc222"
+synced_at: "2026-07-09T01:01:41.761271"
 ---
 
 # speechRecognizer（语音识别）
@@ -47,7 +48,7 @@ createEngine(createEngineParams: CreateEngineParams, callback: AsyncCallback<Spe
 | 1002200001 | Create engine failed. |
 | 1002200006 | The engine of SpeechRecognition is busy. |
 | 1002200008 | The engine of SpeechRecognition is being destroyed. |
-| 1002200009 | Internal Service Error. |
+| 1002200009 | Internal Service Error. 适用版本：5.1.0(10)+ |
 
 示例：
 
@@ -122,7 +123,7 @@ createEngine(createEngineParams: CreateEngineParams): Promise<SpeechRecognitionE
 | 1002200001 | Create engine failed. |
 | 1002200006 | The engine of SpeechRecognition is busy. |
 | 1002200008 | The engine of SpeechRecognition is being destroyed. |
-| 1002200009 | Internal Service Error. |
+| 1002200009 | Internal Service Error. 适用版本：5.1.0(10)+ |
 
 示例：
 
@@ -190,13 +191,13 @@ listLanguages(params: LanguageQuery, callback: AsyncCallback<Array<string>>): vo
 
 错误码：
 
-以下错误码的详细介绍请参见[Core Speech Kit错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-corespeech)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Core Speech Kit错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-corespeech)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. |
 | 1002200007 | The engine is not initialized. |
-| 1002200009 | Internal Service Error. |
+| 1002200009 | Internal Service Error. 适用版本：5.1.0(10)+ |
 
 示例：
 
@@ -258,13 +259,13 @@ listLanguages(params: LanguageQuery): Promise<Array<string>>
 
 错误码：
 
-以下错误码的详细介绍请参见[Core Speech Kit错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-corespeech)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Core Speech Kit错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-corespeech)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | The parameter check failed. |
 | 1002200007 | The engine is not initialized. |
-| 1002200009 | Internal Service Error. |
+| 1002200009 | Internal Service Error. 适用版本：5.1.0(10)+ |
 
 示例：
 
@@ -379,7 +380,7 @@ startListening(params: StartParams): void
 
 错误码：
 
-以下错误码的详细介绍请参见[Core Speech Kit错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-corespeech)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Core Speech Kit错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-corespeech)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -436,7 +437,7 @@ writeAudio(sessionId: string, audio: Uint8Array): void
 
 错误码：
 
-以下错误码的详细介绍请参见[Core Speech Kit错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-corespeech)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Core Speech Kit错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-corespeech)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -490,7 +491,7 @@ finish(sessionId: string): void
 
 错误码：
 
-以下错误码的详细介绍请参见[Core Speech Kit错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-corespeech)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Core Speech Kit错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-corespeech)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -560,7 +561,7 @@ cancel(sessionId: string): void
 
 错误码：
 
-以下错误码的详细介绍请参见[Core Speech Kit错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-corespeech)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[Core Speech Kit错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-corespeech)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |

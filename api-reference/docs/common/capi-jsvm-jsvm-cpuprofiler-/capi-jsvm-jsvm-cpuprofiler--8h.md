@@ -2,7 +2,8 @@
 title: "JSVM_CpuProfiler__*"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-cpuprofiler--8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:03.829590"
+content_hash: "6608da98dd2d"
+synced_at: "2026-07-09T01:01:47.663849"
 ---
 
 # JSVM_CpuProfiler__*

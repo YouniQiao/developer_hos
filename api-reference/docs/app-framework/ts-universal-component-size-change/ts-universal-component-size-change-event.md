@@ -2,7 +2,8 @@
 title: "组件尺寸变化事件"
 upstream_id: "harmonyos-references/ts-universal-component-size-change-event"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:34.333962"
+content_hash: "636e28c3b78f"
+synced_at: "2026-07-09T00:57:37.032608"
 ---
 
 # 组件尺寸变化事件
@@ -94,4 +95,4 @@ struct AreaExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070238.gif)
+ ![](./img/zh-cn_image_0000002631413026.gif)

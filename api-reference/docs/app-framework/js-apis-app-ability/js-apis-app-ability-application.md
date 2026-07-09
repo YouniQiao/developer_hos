@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.application (应用工具类)"
 upstream_id: "harmonyos-references/js-apis-app-ability-application"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:45.588969"
+content_hash: "c292a52eceb3"
+synced_at: "2026-07-09T00:57:03.524265"
 ---
 
 # @ohos.app.ability.application (应用工具类)
@@ -359,7 +360,7 @@ exitMasterProcessRole(): Promise<void>
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
 
-设备行为差异： 该接口仅在2in1、Tablet设备中可正常调用，在其他设备中返回801错误码。
+设备行为差异： 该接口仅在PC/2in1、Tablet设备中可正常调用，在其他设备中返回801错误码。
 
 返回值：
 

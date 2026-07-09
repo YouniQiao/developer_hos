@@ -2,7 +2,8 @@
 title: "media_asset_manager_capi.h"
 upstream_id: "harmonyos-references/capi-media-asset-manager-capi-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:46.988404"
+content_hash: "dd4739d47322"
+synced_at: "2026-07-09T01:00:48.745172"
 ---
 
 # media_asset_manager_capi.h

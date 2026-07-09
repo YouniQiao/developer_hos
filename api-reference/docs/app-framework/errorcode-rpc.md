@@ -2,7 +2,8 @@
 title: "RPC错误码"
 upstream_id: "harmonyos-references/errorcode-rpc"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:22.154908"
+content_hash: "6cfcebeac857"
+synced_at: "2026-07-09T00:59:06.466744"
 ---
 
 # RPC错误码

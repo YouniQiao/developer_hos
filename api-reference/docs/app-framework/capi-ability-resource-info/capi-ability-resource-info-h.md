@@ -2,7 +2,8 @@
 title: "ability_resource_info.h"
 upstream_id: "harmonyos-references/capi-ability-resource-info-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:58.458715"
+content_hash: "fa44acd9b04f"
+synced_at: "2026-07-09T00:57:12.515167"
 ---
 
 # ability_resource_info.h

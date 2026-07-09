@@ -2,7 +2,8 @@
 title: "NNRTDeviceDesc"
 upstream_id: "harmonyos-references/capi-mindspore-nnrtdevicedesc"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:58.831401"
+content_hash: "703980eb8819"
+synced_at: "2026-07-09T01:01:43.660277"
 ---
 
 # NNRTDeviceDesc

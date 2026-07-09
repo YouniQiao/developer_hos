@@ -2,7 +2,8 @@
 title: "CloudDisk_SyncFolder"
 upstream_id: "harmonyos-references/capi-clouddisk-clouddisk-syncfolder"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:16.149872"
+content_hash: "3ce5969b5e32"
+synced_at: "2026-07-09T00:59:01.715948"
 ---
 
 # CloudDisk_SyncFolder

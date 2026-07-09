@@ -2,7 +2,8 @@
 title: "textarea"
 upstream_id: "harmonyos-references/js-components-basic-textarea"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:08.056573"
+content_hash: "fc68c4971bf3"
+synced_at: "2026-07-09T00:58:23.088293"
 ---
 
 # textarea
@@ -53,7 +54,7 @@ synced_at: "2026-06-24T20:49:08.056573"
 | color | | #e6000000 | 否 | 多行文本框的文本颜色。 |
 | font-size | | 16px | 否 | 多行文本框的文本尺寸。 |
 | allow-scale | boolean | true | 否 | 多行文本框的文本尺寸是否跟随系统设置字体缩放尺寸进行放大缩小。true表示跟随系统放大缩小，false表示不跟随系统放大缩小。 如果在config描述文件中针对ability配置了fontSize的config-changes标签，则应用不会重启而直接生效。 |
-| placeholder-color | | #99000000 | 否 | 多行文本框的提示文本颜色，type为text|email|date|time|number|password时生效。 |
+| placeholder-color | | #99000000 | 否 | 多行文本框的提示文本颜色。 |
 | font-weight | number | string | normal | 否 | 多行文本框的字体粗细，见[text组件font-weight的样式属性](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-basic-text#样式)。 |
 | font-family | string | sans-serif | 否 | 多行文本框的字体列表，用逗号分隔，每个字体用字体名或者字体族名设置。列表中第一个系统中存在的或者通过[自定义字体](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-components-common-customizing-font)指定的字体，会被选中作为文本的字体。 |
 | caret-color6+ | | - | 否 | 设置输入光标的颜色。 |
@@ -104,4 +105,4 @@ change(e){
 }
 }
 ```
- ![](./img/zh-cn_image_0000002656470267.png)
+ ![](./img/zh-cn_image_0000002631253904.png)

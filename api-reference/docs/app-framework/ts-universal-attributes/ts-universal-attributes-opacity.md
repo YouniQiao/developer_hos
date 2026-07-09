@@ -2,7 +2,8 @@
 title: "透明度设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-opacity"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:37.863481"
+content_hash: "b999a2e87072"
+synced_at: "2026-07-09T00:57:38.732604"
 ---
 
 # 透明度设置
@@ -88,4 +89,4 @@ struct OpacityExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469547.png)
+ ![](./img/zh-cn_image_0000002661732291.png)

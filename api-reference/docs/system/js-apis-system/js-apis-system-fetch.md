@@ -2,7 +2,8 @@
 title: "@system.fetch (数据请求)"
 upstream_id: "harmonyos-references/js-apis-system-fetch"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:56.058777"
+content_hash: "b96595ba8b70"
+synced_at: "2026-07-09T00:59:30.918330"
 ---
 
 # @system.fetch (数据请求)

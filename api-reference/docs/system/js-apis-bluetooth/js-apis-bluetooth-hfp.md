@@ -2,7 +2,8 @@
 title: "@ohos.bluetooth.hfp (蓝牙hfp模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-hfp"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:46.073138"
+content_hash: "80232254ba43"
+synced_at: "2026-07-09T00:59:22.894579"
 ---
 
 # @ohos.bluetooth.hfp (蓝牙hfp模块)

@@ -2,7 +2,8 @@
 title: "自定义组件参数"
 upstream_id: "harmonyos-references/ts-custom-component-parameter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:50.521252"
+content_hash: "09af917e0327"
+synced_at: "2026-07-09T00:58:13.490799"
 ---
 
 # 自定义组件参数
@@ -14,7 +15,7 @@ synced_at: "2026-06-24T20:48:50.521252"
 
 #### ComponentOptions
 
-自定义组件参数，用于配置是否支持组件冻结。
+自定义组件参数，用于配置是否支持组件冻结和全局复用池。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 

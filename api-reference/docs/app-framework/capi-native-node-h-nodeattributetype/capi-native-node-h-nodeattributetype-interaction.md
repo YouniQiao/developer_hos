@@ -2,7 +2,8 @@
 title: "ArkUI_NodeAttributeType（交互类相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-interaction"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:37.867041"
+content_hash: "3c5e8009877a"
+synced_at: "2026-07-09T00:58:35.404731"
 ---
 
 # ArkUI_NodeAttributeType（交互类相关属性）
@@ -196,8 +197,8 @@ NODE_EXPAND_SAFE_AREA = 92
 
 | 参数项 | 描述 |
 | --- | --- |
-| .value[0]?.u32 | 扩展安全区域的枚举值集合[ArkUI_SafeAreaType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_safeareatype)，例如：ARKUI_SAFE_AREA_TYPE_SYSTEM | ARKUI_SAFE_AREA_TYPE_CUTOUT。 |
-| .value[1]?.u32 | 扩展安全区域的方向枚举值集合[ArkUI_SafeAreaEdge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_safeareaedge)，例如：ARKUI_SAFE_AREA_EDGE_TOP | ARKUI_SAFE_AREA_EDGE_BOTTOM。 |
+| .value[0]?.u32 | 设置扩展安全区域的枚举值集合[ArkUI_SafeAreaType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_safeareatype)，例如：ARKUI_SAFE_AREA_TYPE_SYSTEM | ARKUI_SAFE_AREA_TYPE_CUTOUT。 |
+| .value[1]?.u32 | 设置扩展安全区域的方向枚举值集合[ArkUI_SafeAreaEdge](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-native-type-h#arkui_safeareaedge)，例如：ARKUI_SAFE_AREA_EDGE_TOP | ARKUI_SAFE_AREA_EDGE_BOTTOM。 |
 
 返回：
 

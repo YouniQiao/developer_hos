@@ -2,7 +2,8 @@
 title: "Interface (FetchResult)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-fetchresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:44.407644"
+content_hash: "d33f19dc26fb"
+synced_at: "2026-07-09T01:00:47.089986"
 ---
 
 # Interface (FetchResult)

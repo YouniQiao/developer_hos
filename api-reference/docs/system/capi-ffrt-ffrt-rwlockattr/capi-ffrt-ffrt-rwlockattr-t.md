@@ -2,7 +2,8 @@
 title: "ffrt_rwlockattr_t"
 upstream_id: "harmonyos-references/capi-ffrt-ffrt-rwlockattr-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:17.094447"
+content_hash: "63826ce5ef43"
+synced_at: "2026-07-09T00:59:47.988493"
 ---
 
 # ffrt_rwlockattr_t

@@ -2,7 +2,8 @@
 title: "AtomicServiceNavigation"
 upstream_id: "harmonyos-references/ohos-atomicservice-atomicservicenavigation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:48.007210"
+content_hash: "7060cb193f22"
+synced_at: "2026-07-09T00:58:12.508487"
 ---
 
 # AtomicServiceNavigation
@@ -324,7 +325,7 @@ export struct PageTwo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470141.jpg)
+ ![](./img/zh-cn_image_0000002631413666.jpg)
 
 #### [h2]示例2（抽屉模式，宽屏场景下插入自定义布局）
 
@@ -466,7 +467,7 @@ export struct PageTwo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350189.png)
+ ![](./img/zh-cn_image_0000002661732897.png)
 
 #### [h2]示例3（边栏使用场景）
 
@@ -617,4 +618,4 @@ export struct PageTwo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230776.png)
+ ![](./img/zh-cn_image_0000002631253776.png)

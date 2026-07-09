@@ -2,7 +2,8 @@
 title: "@ohos.net.eap (扩展认证)"
 upstream_id: "harmonyos-references/js-apis-net-eap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:52.600233"
+content_hash: "f1049c70c9f7"
+synced_at: "2026-07-09T00:59:28.899508"
 ---
 
 # @ohos.net.eap (扩展认证)

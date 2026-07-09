@@ -2,7 +2,8 @@
 title: "visionBase（Core Vision Kit基类）"
 upstream_id: "harmonyos-references/core-vision-vision-base-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:56.986541"
+content_hash: "f071d4f1cb9f"
+synced_at: "2026-07-09T01:01:42.164915"
 ---
 
 # visionBase（Core Vision Kit基类）

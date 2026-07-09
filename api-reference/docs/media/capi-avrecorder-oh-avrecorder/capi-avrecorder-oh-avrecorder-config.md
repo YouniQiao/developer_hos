@@ -2,7 +2,8 @@
 title: "OH_AVRecorder_Config"
 upstream_id: "harmonyos-references/capi-avrecorder-oh-avrecorder-config"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:39.360117"
+content_hash: "1081e3a71a53"
+synced_at: "2026-07-09T01:00:43.053153"
 ---
 
 # OH_AVRecorder_Config

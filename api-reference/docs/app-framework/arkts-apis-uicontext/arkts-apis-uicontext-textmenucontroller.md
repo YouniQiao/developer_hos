@@ -2,7 +2,8 @@
 title: "Class (TextMenuController)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-textmenucontroller"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:22.325804"
+content_hash: "89ec9e622ce7"
+synced_at: "2026-07-09T00:57:29.524934"
 ---
 
 # Class (TextMenuController)
@@ -103,7 +104,7 @@ static disableSystemServiceMenuItems(disable: boolean): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| disable | boolean | 是 | 是否禁用系统服务菜单。true表示禁用，false表示不禁用。 默认值: false |
+| disable | boolean | 是 | 是否禁用系统服务菜单项。true表示禁用，false表示不禁用。 默认值：false |
 
 示例：
 

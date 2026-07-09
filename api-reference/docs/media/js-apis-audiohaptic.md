@@ -2,7 +2,8 @@
 title: "@ohos.multimedia.audioHaptic (音振协同)"
 upstream_id: "harmonyos-references/js-apis-audiohaptic"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:53.807876"
+content_hash: "c784071d32a6"
+synced_at: "2026-07-09T01:00:09.044175"
 ---
 
 # @ohos.multimedia.audioHaptic (音振协同)

@@ -2,7 +2,8 @@
 title: "FG_Dimension2D"
 upstream_id: "harmonyos-references/_f_g___dimension2_d"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:13.317866"
+content_hash: "78ed02f79e75"
+synced_at: "2026-07-09T01:01:07.307126"
 ---
 
 # FG_Dimension2D

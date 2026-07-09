@@ -2,7 +2,8 @@
 title: "ApplicationContext (应用上下文)"
 upstream_id: "harmonyos-references/js-apis-inner-application-applicationcontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:52.962033"
+content_hash: "e18f01f4e1ee"
+synced_at: "2026-07-09T00:57:09.538482"
 ---
 
 # ApplicationContext (应用上下文)

@@ -2,7 +2,8 @@
 title: "DrawableDescriptor错误码"
 upstream_id: "harmonyos-references/errorcode-drawable-descriptor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:01.935694"
+content_hash: "684bec749219"
+synced_at: "2026-07-09T00:58:49.468462"
 ---
 
 # DrawableDescriptor错误码

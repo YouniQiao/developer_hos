@@ -1,11 +1,12 @@
 ---
-title: "Advertisement (请求的广告内容)"
+title: "advertisement (广告内容)"
 upstream_id: "harmonyos-references/js-apis-advertisement"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:21.620577"
+content_hash: "d49ac0dc59f0"
+synced_at: "2026-07-09T01:01:14.261482"
 ---
 
-# Advertisement (请求的广告内容)
+# advertisement (广告内容)
 
 本模块为请求的广告内容。
 

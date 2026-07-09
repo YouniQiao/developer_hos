@@ -2,7 +2,8 @@
 title: "ArkUI_AlignmentRuleOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-alignmentruleoption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:53.154978"
+content_hash: "19abca9e5389"
+synced_at: "2026-07-09T00:58:43.476254"
 ---
 
 # ArkUI_AlignmentRuleOption

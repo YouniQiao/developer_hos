@@ -2,7 +2,8 @@
 title: "OH_NNModel"
 upstream_id: "harmonyos-references/capi-neuralnetworkruntime-oh-nnmodel"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:59.776814"
+content_hash: "4ec28cdb9ce6"
+synced_at: "2026-07-09T01:01:44.637047"
 ---
 
 # OH_NNModel

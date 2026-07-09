@@ -2,7 +2,8 @@
 title: "game_device_event.h"
 upstream_id: "harmonyos-references/capi-game-device-event"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:24.883574"
+content_hash: "e7533d727ea8"
+synced_at: "2026-07-09T01:01:17.502281"
 ---
 
 # game_device_event.h

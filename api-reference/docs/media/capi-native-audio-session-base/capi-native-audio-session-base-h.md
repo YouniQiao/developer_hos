@@ -2,7 +2,8 @@
 title: "native_audio_session_base.h"
 upstream_id: "harmonyos-references/capi-native-audio-session-base-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:56.848835"
+content_hash: "79fab2215b10"
+synced_at: "2026-07-09T01:00:10.504858"
 ---
 
 # native_audio_session_base.h

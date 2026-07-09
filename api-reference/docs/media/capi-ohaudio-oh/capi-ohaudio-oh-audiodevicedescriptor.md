@@ -2,7 +2,8 @@
 title: "OH_AudioDeviceDescriptor"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audiodevicedescriptor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:58.311149"
+content_hash: "12ab5f4549b0"
+synced_at: "2026-07-09T01:00:11.420856"
 ---
 
 # OH_AudioDeviceDescriptor

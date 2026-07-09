@@ -2,7 +2,8 @@
 title: "通过OpenID或UnionID获取GroupUnionID"
 upstream_id: "harmonyos-references/account-api-get-groupunionid"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:20.654223"
+content_hash: "2cb8a05eb2f8"
+synced_at: "2026-07-09T01:01:13.559009"
 ---
 
 # 通过OpenID或UnionID获取GroupUnionID

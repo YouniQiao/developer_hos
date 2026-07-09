@@ -2,7 +2,8 @@
 title: "Camera_FrameShutterInfo"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-frameshutterinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:16.594100"
+content_hash: "c3ae880a77a4"
+synced_at: "2026-07-09T01:00:25.997586"
 ---
 
 # Camera_FrameShutterInfo

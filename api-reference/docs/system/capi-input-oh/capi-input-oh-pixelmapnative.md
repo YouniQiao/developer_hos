@@ -2,7 +2,8 @@
 title: "OH_PixelmapNative"
 upstream_id: "harmonyos-references/capi-input-oh-pixelmapnative"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:19.463968"
+content_hash: "a3be70c56c73"
+synced_at: "2026-07-09T00:59:49.728105"
 ---
 
 # OH_PixelmapNative

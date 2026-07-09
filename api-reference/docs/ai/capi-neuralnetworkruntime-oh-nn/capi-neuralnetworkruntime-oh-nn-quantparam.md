@@ -2,7 +2,8 @@
 title: "OH_NN_QuantParam"
 upstream_id: "harmonyos-references/capi-neuralnetworkruntime-oh-nn-quantparam"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:59.764446"
+content_hash: "016f5c9b246c"
+synced_at: "2026-07-09T01:01:44.334799"
 ---
 
 # OH_NN_QuantParam
@@ -17,17 +18,17 @@ typedef struct OH_NN_QuantParam {...} OH_NN_QuantParam
 
 在量化的场景中，32位浮点型数据根据以下公式量化为定点数据：
 
-![](./img/zh-cn_image_0000002626231624.png)
+![](./img/zh-cn_image_0000002631414526.png)
 
 其中s和z是量化参数，在OH_NN_QuantParam中通过scale和zeroPoint保存，r是浮点数，q是量化后的结果，q_min是量化后下界，q_max是量化后的上界，计算方式如下：
 
-![](./img/zh-cn_image_0000002626071712.png)
+![](./img/zh-cn_image_0000002661733753.png)
 
-![](./img/zh-cn_image_0000002656470989.png)
+![](./img/zh-cn_image_0000002631254634.png)
 
 clamp函数定义如下：
 
-![](./img/zh-cn_image_0000002656351039.png)
+![](./img/zh-cn_image_0000002661613817.png)
 
 起始版本： 9
 

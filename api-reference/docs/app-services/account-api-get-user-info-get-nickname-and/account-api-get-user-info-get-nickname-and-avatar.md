@@ -2,7 +2,8 @@
 title: "获取华为账号用户信息-获取头像昵称"
 upstream_id: "harmonyos-references/account-api-get-user-info-get-nickname-and-avatar"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:19.683005"
+content_hash: "3893fb5b543d"
+synced_at: "2026-07-09T01:01:13.117129"
 ---
 
 # 获取华为账号用户信息-获取头像昵称

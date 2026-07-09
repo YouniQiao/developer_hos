@@ -2,7 +2,8 @@
 title: "UsbRequestPipe"
 upstream_id: "harmonyos-references/capi-usbddk-usbrequestpipe"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:35.948575"
+content_hash: "82a44ddccf69"
+synced_at: "2026-07-09T00:59:57.376927"
 ---
 
 # UsbRequestPipe

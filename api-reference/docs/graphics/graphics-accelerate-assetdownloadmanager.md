@@ -2,7 +2,8 @@
 title: "assetDownloadManager（资源包下载管理）"
 upstream_id: "harmonyos-references/graphics-accelerate-assetdownloadmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:12.201966"
+content_hash: "c82dc815c758"
+synced_at: "2026-07-09T01:01:06.549357"
 ---
 
 # assetDownloadManager（资源包下载管理）
@@ -109,8 +110,8 @@ import { assetDownloadManager } from '@kit.GraphicsAccelerateKit';
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
 | downloadTask | [AssetDownloadTask](#assetdownloadtask) | 是 | 否 | 资源包下载任务的信息。 |
-| totalBytesWritten | number | 是 | 否 | 待下载的资源总大小，单位：Byte。 默认值：0。 |
-| totalExpectedBytes | number | 是 | 否 | 已下载的资源总大小，单位：Byte。 默认值：0。 |
+| totalBytesWritten | number | 是 | 否 | 已下载的资源总大小，单位：Byte。 默认值：0。 |
+| totalExpectedBytes | number | 是 | 否 | 待下载的资源总大小，单位：Byte。 默认值：0。 |
 
 #### DownloadCompletedInfo
 

@@ -2,7 +2,8 @@
 title: "浮层"
 upstream_id: "harmonyos-references/ts-universal-attributes-overlay"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:35.158428"
+content_hash: "58bec912d4b7"
+synced_at: "2026-07-09T00:57:37.804228"
 ---
 
 # 浮层
@@ -125,7 +126,7 @@ struct OverlayExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230156.png)
+ ![](./img/zh-cn_image_0000002661612327.png)
 
 #### [h2]示例2（通过builder设置浮层）
 
@@ -160,7 +161,7 @@ struct OverlayExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070246.png)
+ ![](./img/zh-cn_image_0000002631413034.png)
 
 #### [h2]示例3（通过ComponentContent设置浮层）
 
@@ -218,4 +219,4 @@ struct Page_4040 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469523.gif)
+ ![](./img/zh-cn_image_0000002661732267.gif)

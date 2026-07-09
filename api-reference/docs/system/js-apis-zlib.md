@@ -2,7 +2,8 @@
 title: "@ohos.zlib (Zip模块)"
 upstream_id: "harmonyos-references/js-apis-zlib"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:07.882809"
+content_hash: "2c1cbc9f189b"
+synced_at: "2026-07-09T00:59:40.365729"
 ---
 
 # @ohos.zlib (Zip模块)

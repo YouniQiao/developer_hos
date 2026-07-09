@@ -2,7 +2,8 @@
 title: "Resource"
 upstream_id: "harmonyos-references/js-apis-arkui-resource"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:29.262140"
+content_hash: "8ed6d8afd4e4"
+synced_at: "2026-07-09T00:57:33.588788"
 ---
 
 # Resource
@@ -59,7 +60,7 @@ struct Page {
 
 $rawfile(value: string): Resource
 
-获取工程rawfile目录下的资源信息。$rawfile会在编译期由工具链转换为[Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager#resource9)对象。通过$rawfile访问应用资源或系统资源，可参考[资源分类与访问](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access)。
+获取工程rawfile目录下的资源信息。$rawfile会在编译期由工具链转换为[Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager#resource9)对象。通过$rawfile访问rawfile目录下的资源，可参考[资源分类与访问](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/resource-categories-and-access)。
 
 卡片能力： 从API version 9开始，该接口支持在ArkTS卡片中使用。
 
@@ -71,7 +72,7 @@ $rawfile(value: string): Resource
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | string | 是 | rawfile目录下的相对路径。文件名需要包含后缀，路径开头不可以"/"开头。 |
+| value | string | 是 | rawfile目录下的相对路径。文件名需要包含后缀，路径不可以以"/"开头。 |
 
 返回值：
 

@@ -2,7 +2,8 @@
 title: "Class (AVMusicTemplateController)"
 upstream_id: "harmonyos-references/arkts-apis-avmusictemplate-avmusictemplatecontroller"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:07.335782"
+content_hash: "2d62c81f12c9"
+synced_at: "2026-07-09T01:00:19.666946"
 ---
 
 # Class (AVMusicTemplateController)
@@ -29,7 +30,7 @@ import { avMusicTemplate } from '@kit.AVSessionKit';
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | sessionId | string | 否 | 否 | 音频模板控制器唯一的标识。 |
-| isDestroy | boolean | 否 | 否 | 音频模板是否销毁。true表示已经销毁，false表示没有销毁。无默认值。 |
+| isDestroy | boolean | 否 | 否 | 音频模板控制器是否销毁。true表示已经销毁，false表示没有销毁。无默认值。 |
 
 #### queryMainTabs
 
@@ -240,7 +241,7 @@ queryCompilation(compilationId: string, pageIndex: number): Promise<PageMediaEnt
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | compilationId | string | 是 | 合集的ID。 |
-| pageIndex | number | 是 | 标签页的索引。 |
+| pageIndex | number | 是 | 页索引。 |
 
 返回值：
 
@@ -308,7 +309,7 @@ queryPlaylist(pageIndex: number, sort: Sort): Promise<PageMediaEntity>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| pageIndex | number | 是 | 标签页的索引。 |
+| pageIndex | number | 是 | 页索引。 |
 | sort | [Sort](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-e#sort) | 是 | 查询到的播放列表数据的排序类型。 |
 
 返回值：
@@ -504,7 +505,7 @@ queryMediaEntityByKeyword(keyword: string, searchType: EntityType, pageIndex: nu
 | --- | --- | --- | --- |
 | keyword | string | 是 | 关键字。 |
 | searchType | [EntityType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-e#entitytype) | 是 | 媒体资源类型。 |
-| pageIndex | number | 是 | 标签页索引。 |
+| pageIndex | number | 是 | 页索引。 |
 
 返回值：
 
@@ -1373,7 +1374,7 @@ playForSearch(command: SearchPlayInfoType, args: SearchPlayInfo): Promise<OperRe
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| command | [SearchPlayInfoType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-e#searchplayinfotype) | 是 | 搜播的信息类型枚举。 |
+| command | [SearchPlayInfoType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-e#searchplayinfotype) | 是 | 搜播的信息类型。 |
 | args | [SearchPlayInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-i#searchplayinfo) | 是 | 搜播信息。 |
 
 返回值：
@@ -1657,7 +1658,7 @@ onUserInfoChange(callback: Callback<UserInfo>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | Callback | 是 | 回调函数，返回用户信息。 |
+| callback | Callback | 是 | 回调函数，参数为用户信息。 |
 
 错误码：
 
@@ -2556,7 +2557,7 @@ export class ControllerManager {
 
 onExtensionAbilityChange(callback: ReportExecuteAbilityEvent): void
 
-注册通知音频模板控制方拉起由用户指定的媒体应用界面的信息的回调。使用callback异步回调。
+注册回调，当需要拉起指定媒体应用界面时触发。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -2603,7 +2604,7 @@ export class ControllerManager {
 
 offExtensionAbilityChange(callback?: ReportExecuteAbilityEvent): void
 
-注销通知音频模板控制方拉起指定媒体应用播放界面的信息的回调。
+注销回调，用于停止监听拉起指定媒体应用的请求。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

@@ -2,7 +2,8 @@
 title: "OH_AVSession_AVPlaybackState"
 upstream_id: "harmonyos-references/capi-ohavsession-oh-avsession-avplaybackstate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:09.339001"
+content_hash: "835a7c140f53"
+synced_at: "2026-07-09T01:00:20.319983"
 ---
 
 # OH_AVSession_AVPlaybackState
@@ -13,7 +14,7 @@ typedef struct OH_AVSession_AVPlaybackState OH_AVSession_AVPlaybackState
 
 #### 概述
 
-播控播放状态的对象。
+播放状态对象。
 
 起始版本： 23
 

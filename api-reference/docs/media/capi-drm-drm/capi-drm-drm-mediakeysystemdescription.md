@@ -2,7 +2,8 @@
 title: "DRM_MediaKeySystemDescription"
 upstream_id: "harmonyos-references/capi-drm-drm-mediakeysystemdescription"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:21.287070"
+content_hash: "81f0712a31c7"
+synced_at: "2026-07-09T01:00:28.952914"
 ---
 
 # DRM_MediaKeySystemDescription

@@ -2,7 +2,8 @@
 title: "OH_NNExecutor"
 upstream_id: "harmonyos-references/capi-neuralnetworkruntime-oh-nnexecutor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:59.985341"
+content_hash: "3940421a5cf6"
+synced_at: "2026-07-09T01:01:44.683219"
 ---
 
 # OH_NNExecutor

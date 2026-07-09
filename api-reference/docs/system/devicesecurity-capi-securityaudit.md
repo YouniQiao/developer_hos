@@ -2,7 +2,8 @@
 title: "SecurityAudit"
 upstream_id: "harmonyos-references/devicesecurity-capi-securityaudit"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:36.447683"
+content_hash: "85ca1d9e82eb"
+synced_at: "2026-07-09T00:59:16.263262"
 ---
 
 # SecurityAudit

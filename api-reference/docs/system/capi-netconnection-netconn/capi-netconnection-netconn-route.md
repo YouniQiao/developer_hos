@@ -2,7 +2,8 @@
 title: "NetConn_Route"
 upstream_id: "harmonyos-references/capi-netconnection-netconn-route"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:54.049575"
+content_hash: "d72037f163b2"
+synced_at: "2026-07-09T00:59:29.253036"
 ---
 
 # NetConn_Route

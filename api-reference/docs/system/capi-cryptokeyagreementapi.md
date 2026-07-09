@@ -2,7 +2,8 @@
 title: "CryptoKeyAgreementApi"
 upstream_id: "harmonyos-references/capi-cryptokeyagreementapi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:30.524518"
+content_hash: "b7e6574a2607"
+synced_at: "2026-07-09T00:59:11.668149"
 ---
 
 # CryptoKeyAgreementApi

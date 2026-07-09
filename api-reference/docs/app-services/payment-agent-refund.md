@@ -2,7 +2,8 @@
 title: "申请退款"
 upstream_id: "harmonyos-references/payment-agent-refund"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:42.583043"
+content_hash: "855f9bea2289"
+synced_at: "2026-07-09T01:01:32.530050"
 ---
 
 # 申请退款

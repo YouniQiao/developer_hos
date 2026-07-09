@@ -2,7 +2,8 @@
 title: "@ohos.continuation.continuationManager (流转/协同管理)"
 upstream_id: "harmonyos-references/js-apis-continuation-continuationmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:48.920388"
+content_hash: "0e8259f050c2"
+synced_at: "2026-07-09T00:57:06.151285"
 ---
 
 # @ohos.continuation.continuationManager (流转/协同管理)

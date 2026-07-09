@@ -2,7 +2,8 @@
 title: "WorkSchedulerExtensionContext"
 upstream_id: "harmonyos-references/js-apis-workschedulerextensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:10.462454"
+content_hash: "b3e47a738048"
+synced_at: "2026-07-09T00:58:56.892338"
 ---
 
 # WorkSchedulerExtensionContext

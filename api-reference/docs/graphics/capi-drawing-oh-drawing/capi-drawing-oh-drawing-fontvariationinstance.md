@@ -2,7 +2,8 @@
 title: "OH_Drawing_FontVariationInstance"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-fontvariationinstance"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:08.784740"
+content_hash: "a36b1fb702f0"
+synced_at: "2026-07-09T01:01:02.874093"
 ---
 
 # OH_Drawing_FontVariationInstance

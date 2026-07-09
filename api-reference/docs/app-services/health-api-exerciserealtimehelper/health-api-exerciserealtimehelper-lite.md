@@ -2,7 +2,8 @@
 title: "exerciseRealtimeHelper (实时运动数据类型常量)(Lite)"
 upstream_id: "harmonyos-references/health-api-exerciserealtimehelper-lite"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:27.890865"
+content_hash: "db6b46cccab9"
+synced_at: "2026-07-09T01:01:21.028363"
 ---
 
 # exerciseRealtimeHelper (实时运动数据类型常量)(Lite)
@@ -33,7 +34,7 @@ import healthStore  from '@hms.health.store';
 | REALTIME_KEY_ACTIVE_TIME | string | 锻炼时长（运动过程中身体处于活跃状态时长），单位：s 。 |
 | REALTIME_KEY_AEROBIC_TRAINING_STRESS | string | 单次运动对身体有氧系统产生的训练刺激等级，刺激等级越高刺激取值越大，取值范围：[0.0, 5.0]。 |
 | REALTIME_KEY_ANAEROBIC_TRAINING_STRESS | string | 单次运动对身体无氧系统产生的训练刺激等级，刺激等级越高刺激取值越大，取值范围：[0.0, 5.0]。 |
-| REALTIME_KEY_HEART_RATE | string | 心率，单位：bmp。 |
+| REALTIME_KEY_HEART_RATE | string | 心率，单位：bpm。 |
 | REALTIME_KEY_DURATION | string | 运动时间，单位：s。 |
 | REALTIME_KEY_TOTAL_CALORIES | string | 总消耗热量，单位：cal。 |
 | REALTIME_KEY_ACTIVE_CALORIE | string | 活动热量，单位：cal。 |

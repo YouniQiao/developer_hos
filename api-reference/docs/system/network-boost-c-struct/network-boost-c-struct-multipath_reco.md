@@ -2,7 +2,8 @@
 title: "NetworkBoost_MultiPathRecommendation"
 upstream_id: "harmonyos-references/network-boost-c-struct-multipath_reco"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:58.323803"
+content_hash: "82ea7fdf9997"
+synced_at: "2026-07-09T00:59:32.945772"
 ---
 
 # NetworkBoost_MultiPathRecommendation

@@ -2,7 +2,8 @@
 title: "OH_Drawing_TextBlob"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-textblob"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:10.366129"
+content_hash: "0c5dbba7a4f3"
+synced_at: "2026-07-09T01:01:04.281263"
 ---
 
 # OH_Drawing_TextBlob

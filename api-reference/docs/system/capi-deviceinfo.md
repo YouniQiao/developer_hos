@@ -2,7 +2,8 @@
 title: "DeviceInfo"
 upstream_id: "harmonyos-references/capi-deviceinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:10.448958"
+content_hash: "01d0019d9b6d"
+synced_at: "2026-07-09T00:59:42.393908"
 ---
 
 # DeviceInfo

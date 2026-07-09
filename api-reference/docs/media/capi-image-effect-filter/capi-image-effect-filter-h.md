@@ -2,7 +2,8 @@
 title: "image_effect_filter.h"
 upstream_id: "harmonyos-references/capi-image-effect-filter-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:27.473129"
+content_hash: "a593358a4cda"
+synced_at: "2026-07-09T01:00:33.685291"
 ---
 
 # image_effect_filter.h

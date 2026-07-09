@@ -2,7 +2,8 @@
 title: "Multimedia_Drm"
 upstream_id: "harmonyos-references/capi-multimedia-drm"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:01.647027"
+content_hash: "9673f1ff756e"
+synced_at: "2026-07-09T01:00:13.366058"
 ---
 
 # Multimedia_Drm

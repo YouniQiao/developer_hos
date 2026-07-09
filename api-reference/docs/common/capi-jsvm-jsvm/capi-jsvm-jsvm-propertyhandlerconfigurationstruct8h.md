@@ -2,7 +2,8 @@
 title: "JSVM_PropertyHandlerConfigurationStruct*"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-propertyhandlerconfigurationstruct8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:04.284220"
+content_hash: "ceacce44ee88"
+synced_at: "2026-07-09T01:01:48.201349"
 ---
 
 # JSVM_PropertyHandlerConfigurationStruct*

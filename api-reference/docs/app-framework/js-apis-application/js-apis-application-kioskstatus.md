@@ -2,7 +2,8 @@
 title: "KioskStatus (Kiosk状态信息)"
 upstream_id: "harmonyos-references/js-apis-application-kioskstatus"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:53.533686"
+content_hash: "baa54b380d57"
+synced_at: "2026-07-09T00:57:09.256620"
 ---
 
 # KioskStatus (Kiosk状态信息)

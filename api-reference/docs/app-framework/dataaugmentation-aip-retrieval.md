@@ -2,7 +2,8 @@
 title: "aip_retrieval.h"
 upstream_id: "harmonyos-references/dataaugmentation-aip-retrieval"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:17.032139"
+content_hash: "4eaa5cb952af"
+synced_at: "2026-07-09T00:59:02.639094"
 ---
 
 # aip_retrieval.h

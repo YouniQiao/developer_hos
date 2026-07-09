@@ -2,7 +2,8 @@
 title: "OffscreenCanvas对象"
 upstream_id: "harmonyos-references/js-components-canvas-offscreencanvas"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:09.685792"
+content_hash: "009784ed6376"
+synced_at: "2026-07-09T00:58:23.537860"
 ---
 
 # OffscreenCanvas对象

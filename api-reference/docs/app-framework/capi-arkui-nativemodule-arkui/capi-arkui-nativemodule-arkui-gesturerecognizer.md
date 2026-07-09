@@ -2,7 +2,8 @@
 title: "ArkUI_GestureRecognizer"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-gesturerecognizer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:46.612608"
+content_hash: "c941a336e07b"
+synced_at: "2026-07-09T00:58:40.004206"
 ---
 
 # ArkUI_GestureRecognizer

@@ -2,7 +2,8 @@
 title: "颜色渐变"
 upstream_id: "harmonyos-references/ts-universal-attributes-gradient-color"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:39.322112"
+content_hash: "fd5b009cbf44"
+synced_at: "2026-07-09T00:57:40.012584"
 ---
 
 # 颜色渐变
@@ -275,7 +276,7 @@ struct ColorGradientExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070282.png)
+ ![](./img/zh-cn_image_0000002631413074.png)
 
 #### [h2]示例2（颜色按旋转角度渐变）
 
@@ -337,7 +338,7 @@ struct ColorGradientExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469559.png)
+ ![](./img/zh-cn_image_0000002661732303.png)
 
 #### [h2]示例3（颜色按径向渐变）
 
@@ -375,4 +376,4 @@ struct ColorGradientExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349607.png)
+ ![](./img/zh-cn_image_0000002631253182.png)

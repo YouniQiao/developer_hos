@@ -2,7 +2,8 @@
 title: "@ohos.process (获取进程相关的信息)"
 upstream_id: "harmonyos-references/js-apis-process"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:15.390994"
+content_hash: "ebdb3c5c67e7"
+synced_at: "2026-07-09T00:57:24.801086"
 ---
 
 # @ohos.process (获取进程相关的信息)

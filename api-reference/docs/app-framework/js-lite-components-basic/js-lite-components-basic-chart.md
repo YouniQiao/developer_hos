@@ -2,7 +2,8 @@
 title: "chart"
 upstream_id: "harmonyos-references/js-lite-components-basic-chart"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:18.471837"
+content_hash: "4017bc5416cc"
+synced_at: "2026-07-09T00:58:27.605677"
 ---
 
 # chart
@@ -202,7 +203,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626231106.png)
+ ![](./img/zh-cn_image_0000002631414002.png)
 2. 柱状图 
 ```
 <!-- xxx.hml -->
@@ -261,4 +262,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626071196.png)
+ ![](./img/zh-cn_image_0000002661733231.png)

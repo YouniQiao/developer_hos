@@ -2,7 +2,8 @@
 title: "ArkUI_AccessibilityProviderCallbacksWithInstance"
 upstream_id: "harmonyos-references/capi-arkui-accessibility-arkui-accessibilityprovidercallbackswithinstance"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:48.161140"
+content_hash: "1f540e4877e2"
+synced_at: "2026-07-09T00:58:40.786471"
 ---
 
 # ArkUI_AccessibilityProviderCallbacksWithInstance

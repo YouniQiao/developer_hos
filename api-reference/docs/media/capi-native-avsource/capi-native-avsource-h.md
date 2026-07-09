@@ -2,7 +2,8 @@
 title: "native_avsource.h"
 upstream_id: "harmonyos-references/capi-native-avsource-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:03.429184"
+content_hash: "586b7099d161"
+synced_at: "2026-07-09T01:00:15.020851"
 ---
 
 # native_avsource.h

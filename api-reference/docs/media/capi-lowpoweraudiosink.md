@@ -2,7 +2,8 @@
 title: "LowPowerAudioSink"
 upstream_id: "harmonyos-references/capi-lowpoweraudiosink"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:35.787897"
+content_hash: "3af7d36835c0"
+synced_at: "2026-07-09T01:00:39.918957"
 ---
 
 # LowPowerAudioSink

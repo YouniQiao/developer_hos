@@ -2,7 +2,8 @@
 title: "OH_AI_CallBackParam"
 upstream_id: "harmonyos-references/capi-mindspore-oh-ai-callbackparam"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:58.724665"
+content_hash: "044fe91e9f5f"
+synced_at: "2026-07-09T01:01:43.530975"
 ---
 
 # OH_AI_CallBackParam

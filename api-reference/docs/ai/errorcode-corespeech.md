@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-corespeech"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:55.912083"
+content_hash: "e28c4e05ba25"
+synced_at: "2026-07-09T01:01:41.652616"
 ---
 
 # ArkTS API错误码

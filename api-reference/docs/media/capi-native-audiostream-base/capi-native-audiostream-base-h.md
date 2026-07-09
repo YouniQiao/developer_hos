@@ -2,7 +2,8 @@
 title: "native_audiostream_base.h"
 upstream_id: "harmonyos-references/capi-native-audiostream-base-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:56.525974"
+content_hash: "0bd290c4a456"
+synced_at: "2026-07-09T01:00:10.176667"
 ---
 
 # native_audiostream_base.h

@@ -2,7 +2,8 @@
 title: "native_midi_base.h"
 upstream_id: "harmonyos-references/capi-native-midi-base-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:56.975529"
+content_hash: "3ad2f05156b6"
+synced_at: "2026-07-09T01:00:10.858520"
 ---
 
 # native_midi_base.h
@@ -28,7 +29,7 @@ synced_at: "2026-06-24T20:51:56.975529"
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
 | [OH_MIDIEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohmidi-oh-midievent) | OH_MIDIEvent | MIDI事件结构体（通用）。事件数据以Universal MIDI Packets（UMP）格式传输。原始字节流（MIDI 1.0）数据需要先转换为UMP格式后再填充此结构体。 |
-| [OH_MIDIDeviceInformation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohmidi-oh-midideviceinformation) | OH_MIDIDeviceInformation | 设备信息结构体。储存设备ID等相关信息。 |
+| [OH_MIDIDeviceInformation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohmidi-oh-midideviceinformation) | OH_MIDIDeviceInformation | 设备信息结构体。存储设备ID等相关信息。 |
 | [OH_MIDIPortInformation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohmidi-oh-midiportinformation) | OH_MIDIPortInformation | 端口信息结构体。用于枚举端口，包含可显示的端口名称。 |
 | [OH_MIDIPortDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohmidi-oh-midiportdescriptor) | OH_MIDIPortDescriptor | 端口描述符结构体，用于打开端口时指定端口索引和协议行为。 |
 | [OH_MIDICallbacks](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohmidi-oh-midicallbacks) | OH_MIDICallbacks | 客户端回调结构体，包含设备变化和错误处理的回调函数。 |
@@ -75,7 +76,7 @@ MIDI状态码枚举。定义MIDI操作的状态码，用于表示操作成功或
 | OH_MIDI_STATUS_INVALID_CLIENT = 35500003 | 无效的客户端句柄。 **起始版本：** 24 |
 | OH_MIDI_STATUS_INVALID_DEVICE_HANDLE = 35500004 | 无效的设备句柄。 **起始版本：** 24 |
 | OH_MIDI_STATUS_INVALID_PORT = 35500005 | 无效的端口索引。 **起始版本：** 24 |
-| OH_MIDI_STATUS_WOULD_BLOCK = 35500006 | 发送缓冲区暂时已满。表示共享内存缓冲区当前缺乏空间。 当消息无法放入缓冲区时由非阻塞发送返回。建议等待约10ms后重试。 **起始版本：** 24 |
+| OH_MIDI_STATUS_WOULD_BLOCK = 35500006 | 发送缓冲区暂时已满。表示共享内存缓冲区当前空间不足。 当消息无法放入缓冲区时由非阻塞发送返回。建议等待约10ms后重试。 **起始版本：** 24 |
 | OH_MIDI_STATUS_TIMEOUT = 35500007 | 操作超时。 **起始版本：** 24 |
 | OH_MIDI_STATUS_TOO_MANY_OPEN_DEVICES = 35500008 | 客户端已达到允许打开的最大设备数量（16个）。 要打开新设备，必须先关闭现有设备。 **起始版本：** 24 |
 | OH_MIDI_STATUS_TOO_MANY_OPEN_PORTS = 35500009 | 客户端已达到允许打开的最大端口数量（64个）。 要打开新端口，必须先关闭现有端口。 **起始版本：** 24 |
@@ -111,14 +112,14 @@ enum OH_MIDIProtocol
 
 MIDI协议版本枚举，用于指定端口使用的MIDI协议行为。
 
-![](./img/note_3.0-zh-cn.png) SDK始终使用UMP（Universal MIDI Packet）格式进行数据传输，无论选择何种协议。此枚举定义连接的是数据行为和语义，而不是数据结构。MT（Message Type，消息类型）是UMP数据包的消息类型标识，不同MT值对应不同类型的MIDI消息。
+![](./img/note_3.0-zh-cn.png) SDK始终使用UMP（Universal MIDI Packet）格式进行数据传输，无论选择何种协议。此枚举定义连接的数据行为和语义，而不是数据结构。MT（Message Type，消息类型）是UMP数据包的消息类型标识，不同MT值对应不同类型的MIDI消息。
 
 起始版本： 24
 
 | 枚举项 | 描述 |
 | --- | --- |
-| OH_MIDI_PROTOCOL_1_0 = 1 | 传统MIDI 1.0语义。 在此协议下，MIDI系统服务期望接收以下UMP消息类型： - MIDI系统服务期望接收严格遵循MIDI 1.0协议规范的UMP数据包。 - MT 0x0：实用消息（例如时间戳）。 - MT 0x1：系统实时和系统公共消息。 - MT 0x2：MIDI 1.0通道声音消息（32位）。 - MT 0x3：数据消息（64位），用于SysEx（7位载荷）。 - 如果目标硬件是MIDI 1.0：服务将UMP转换回字节流（F0...F7）。 - 如果目标硬件是MIDI 2.0：服务直接发送未经转换的UMP包（封装的MIDI 1.0）。 **起始版本：** 24 |
-| OH_MIDI_PROTOCOL_2_0 = 2 | MIDI 2.0语义。 在此协议下，MIDI系统服务期望接收以下UMP消息类型： - MIDI系统服务期望接收利用MIDI 2.0功能特性的UMP数据包。 - MT 0x4：MIDI 2.0通道声音消息（64位，高分辨率）。 - MT 0x0：实用消息（时间戳）。 - MT 0xD：Flex数据消息（128位，例如文本、歌词）。 - MT 0xF：UMP流消息（128位，端点发现、功能块）。 - MT 0x3 / MT 0x5：数据消息（64位或128位）。 **起始版本：** 24 |
+| OH_MIDI_PROTOCOL_1_0 = 1 | 传统MIDI 1.0语义。 在此协议下，MIDI系统服务期望接收以下UMP消息类型： - 严格遵循MIDI 1.0协议规范的UMP数据包。 - MT 0x0：实用消息（例如时间戳）。 - MT 0x1：系统实时和系统公共消息。 - MT 0x2：MIDI 1.0通道声音消息（32位）。 - MT 0x3：数据消息（64位），用于SysEx（7位载荷）。 - 如果目标硬件是MIDI 1.0：服务将UMP转换回字节流（F0...F7）。 - 如果目标硬件是MIDI 2.0：服务直接发送未经转换的UMP包（封装的MIDI 1.0）。 **起始版本：** 24 |
+| OH_MIDI_PROTOCOL_2_0 = 2 | MIDI 2.0语义。 在此协议下，MIDI系统服务期望接收以下UMP消息类型： - 利用MIDI 2.0功能特性的UMP数据包。 - MT 0x4：MIDI 2.0通道声音消息（64位，高分辨率）。 - MT 0x0：实用消息（时间戳）。 - MT 0xD：Flex数据消息（128位，例如文本、歌词）。 - MT 0xF：UMP流消息（128位，端点发现、功能块）。 - MT 0x3 / MT 0x5：数据消息（64位或128位）。 **起始版本：** 24 |
 
 #### [h2]OH_MIDIDeviceType
 

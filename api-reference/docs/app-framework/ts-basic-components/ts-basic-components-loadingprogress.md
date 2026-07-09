@@ -2,7 +2,8 @@
 title: "LoadingProgress"
 upstream_id: "harmonyos-references/ts-basic-components-loadingprogress"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:26.327754"
+content_hash: "081f86cb9cb9"
+synced_at: "2026-07-09T00:58:01.387755"
 ---
 
 # LoadingProgress
@@ -147,7 +148,7 @@ struct LoadingProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230602.gif)
+ ![](./img/zh-cn_image_0000002631413492.gif)
 
 #### [h2]示例2（设置定制内容区）
 
@@ -297,4 +298,4 @@ struct LoadingProgressDemoExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070692.gif)
+ ![](./img/zh-cn_image_0000002661732721.gif)

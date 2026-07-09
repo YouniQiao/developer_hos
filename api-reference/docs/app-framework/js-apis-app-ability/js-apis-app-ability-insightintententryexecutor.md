@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.InsightIntentEntryExecutor (@InsightIntentEntry的意图执行基类)"
 upstream_id: "harmonyos-references/js-apis-app-ability-insightintententryexecutor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:47.097933"
+content_hash: "1827fa18dbb8"
+synced_at: "2026-07-09T00:57:04.539357"
 ---
 
 # @ohos.app.ability.InsightIntentEntryExecutor (@InsightIntentEntry的意图执行基类)

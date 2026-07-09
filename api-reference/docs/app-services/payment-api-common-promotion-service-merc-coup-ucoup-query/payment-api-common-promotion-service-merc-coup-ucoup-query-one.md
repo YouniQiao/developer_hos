@@ -1,9 +1,12 @@
 ---
+
 title: "查询用户单张优惠券详情"
 upstream_id: "harmonyos-references/payment-api-common-promotion-service-merc-coup-ucoup-query-one"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:47.465213"
+synced_at: "2026-07-09T01:01:35.564913"
+content_hash: "c1c066885ea5"
 ---
+
 
 # 查询用户单张优惠券详情
 

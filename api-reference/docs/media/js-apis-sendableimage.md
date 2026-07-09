@@ -2,7 +2,8 @@
 title: "@ohos.multimedia.sendableImage (基于Sendable对象的图片处理)"
 upstream_id: "harmonyos-references/js-apis-sendableimage"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:24.879820"
+content_hash: "93b87b1c905b"
+synced_at: "2026-07-09T01:00:32.203637"
 ---
 
 # @ohos.multimedia.sendableImage (基于Sendable对象的图片处理)

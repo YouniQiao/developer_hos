@@ -2,7 +2,8 @@
 title: "ArkUI_HostWindowInfo"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-hostwindowinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:53.532018"
+content_hash: "009cf795c29f"
+synced_at: "2026-07-09T00:58:43.780006"
 ---
 
 # ArkUI_HostWindowInfo

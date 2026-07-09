@@ -2,7 +2,8 @@
 title: "OH_Huks_Result"
 upstream_id: "harmonyos-references/capi-hukstypeapi-oh-huks-result"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:43.796770"
+content_hash: "3d8e1c6414cf"
+synced_at: "2026-07-09T00:59:21.359489"
 ---
 
 # OH_Huks_Result

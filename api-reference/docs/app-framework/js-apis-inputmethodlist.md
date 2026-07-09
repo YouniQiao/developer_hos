@@ -2,7 +2,8 @@
 title: "@ohos.inputMethodList (输入法切换列表控件)"
 upstream_id: "harmonyos-references/js-apis-inputmethodlist"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:19.216374"
+content_hash: "faddfc63622e"
+synced_at: "2026-07-09T00:59:03.965246"
 ---
 
 # @ohos.inputMethodList (输入法切换列表控件)
@@ -118,4 +119,4 @@ struct SettingsItem {
 ```
  示例效果图：
 
-![](./img/zh-cn_image_0000002626231218.png)
+![](./img/zh-cn_image_0000002631414114.png)

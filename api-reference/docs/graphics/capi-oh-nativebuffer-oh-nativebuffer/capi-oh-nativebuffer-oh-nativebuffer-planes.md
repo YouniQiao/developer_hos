@@ -2,7 +2,8 @@
 title: "OH_NativeBuffer_Planes"
 upstream_id: "harmonyos-references/capi-oh-nativebuffer-oh-nativebuffer-planes"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:05.092589"
+content_hash: "79269d616482"
+synced_at: "2026-07-09T01:01:00.031677"
 ---
 
 # OH_NativeBuffer_Planes

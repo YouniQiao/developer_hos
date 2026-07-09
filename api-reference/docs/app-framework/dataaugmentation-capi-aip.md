@@ -2,7 +2,8 @@
 title: "AIP"
 upstream_id: "harmonyos-references/dataaugmentation-capi-aip"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:16.709960"
+content_hash: "16dea00c7c20"
+synced_at: "2026-07-09T00:59:02.027176"
 ---
 
 # AIP

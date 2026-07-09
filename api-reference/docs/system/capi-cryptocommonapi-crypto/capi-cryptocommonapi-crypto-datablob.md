@@ -2,7 +2,8 @@
 title: "Crypto_DataBlob"
 upstream_id: "harmonyos-references/capi-cryptocommonapi-crypto-datablob"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:31.975598"
+content_hash: "eadb7bb028ed"
+synced_at: "2026-07-09T00:59:12.763302"
 ---
 
 # Crypto_DataBlob

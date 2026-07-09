@@ -2,7 +2,8 @@
 title: "OhosImageSourceSupportedFormatList"
 upstream_id: "harmonyos-references/capi-image-ohosimagesourcesupportedformatlist"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:31.384339"
+content_hash: "fcb7f8be41db"
+synced_at: "2026-07-09T01:00:36.437905"
 ---
 
 # OhosImageSourceSupportedFormatList

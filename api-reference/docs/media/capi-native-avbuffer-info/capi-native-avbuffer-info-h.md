@@ -2,7 +2,8 @@
 title: "native_avbuffer_info.h"
 upstream_id: "harmonyos-references/capi-native-avbuffer-info-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:02.475308"
+content_hash: "fb405ace51aa"
+synced_at: "2026-07-09T01:00:14.012744"
 ---
 
 # native_avbuffer_info.h

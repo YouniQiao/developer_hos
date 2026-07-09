@@ -1,9 +1,12 @@
 ---
+
 title: "禁用反色能力"
 upstream_id: "harmonyos-references/ts-allow-force-dark"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:35.988612"
+synced_at: "2026-07-09T00:57:37.833276"
+content_hash: "64e40d3056bf"
 ---
+
 
 # 禁用反色能力
 

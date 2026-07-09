@@ -2,7 +2,8 @@
 title: "ArkUI_PickerIndicatorStyle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-pickerindicatorstyle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:59.347463"
+content_hash: "27a6633b3ed4"
+synced_at: "2026-07-09T00:58:47.945301"
 ---
 
 # ArkUI_PickerIndicatorStyle

@@ -2,7 +2,8 @@
 title: "ImageEffect_DataValue"
 upstream_id: "harmonyos-references/capi-imageeffect-imageeffect-datavalue"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:31.751057"
+content_hash: "29617ed34e6c"
+synced_at: "2026-07-09T01:00:36.614870"
 ---
 
 # ImageEffect_DataValue

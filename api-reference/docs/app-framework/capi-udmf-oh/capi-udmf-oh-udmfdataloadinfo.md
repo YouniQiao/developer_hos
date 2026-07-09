@@ -2,7 +2,8 @@
 title: "OH_UdmfDataLoadInfo"
 upstream_id: "harmonyos-references/capi-udmf-oh-udmfdataloadinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:10.775302"
+content_hash: "7d3735b7f7e9"
+synced_at: "2026-07-09T00:57:21.627891"
 ---
 
 # OH_UdmfDataLoadInfo

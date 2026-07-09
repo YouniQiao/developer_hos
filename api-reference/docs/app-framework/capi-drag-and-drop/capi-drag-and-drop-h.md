@@ -2,7 +2,8 @@
 title: "drag_and_drop.h"
 upstream_id: "harmonyos-references/capi-drag-and-drop-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:32.929542"
+content_hash: "ccec0aa48e77"
+synced_at: "2026-07-09T00:58:33.679825"
 ---
 
 # drag_and_drop.h

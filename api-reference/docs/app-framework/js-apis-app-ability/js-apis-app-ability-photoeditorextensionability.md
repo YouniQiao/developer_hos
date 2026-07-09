@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.PhotoEditorExtensionAbility (支持图片编辑能力的ExtensionAbility组件)"
 upstream_id: "harmonyos-references/js-apis-app-ability-photoeditorextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:47.431082"
+content_hash: "d537be1a6217"
+synced_at: "2026-07-09T00:57:04.795266"
 ---
 
 # @ohos.app.ability.PhotoEditorExtensionAbility (支持图片编辑能力的ExtensionAbility组件)
@@ -17,7 +18,7 @@ PhotoEditorExtensionAbility继承自[ExtensionAbility](https://developer.huawei.
 
 下图为通过PhotoEditorExtensionAbility实现的图片编辑扩展页面示意图，页面的布局与功能可以根据实际需要开发。
 
-![](./img/zh-cn_image_0000002626230062.png)
+![](./img/zh-cn_image_0000002661732167.png)
 
 #### 导入模块
 

@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.AbilityStage (AbilityStage组件管理器)"
 upstream_id: "harmonyos-references/js-apis-app-ability-abilitystage"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:45.205392"
+content_hash: "d02588b2efae"
+synced_at: "2026-07-09T00:57:02.563839"
 ---
 
 # @ohos.app.ability.AbilityStage (AbilityStage组件管理器)
@@ -245,8 +246,8 @@ onPrepareTermination(): AbilityConstant.PrepareTermination
 
 设备行为差异：
 
-- 从API version 15开始，该接口仅在2in1设备中可正常执行回调，在其他设备上不执行回调。
-- 从API version 19开始，该接口仅在2in1和Tablet设备中可正常执行回调，在其他设备上不执行回调。
+- 从API version 15开始，该接口仅在PC/2in1设备中可正常执行回调，在其他设备上不执行回调。
+- 从API version 19开始，该接口仅在PC/2in1和Tablet设备中可正常执行回调，在其他设备上不执行回调。
 
 返回值：
 
@@ -286,8 +287,8 @@ onPrepareTerminationAsync(): Promise<AbilityConstant.PrepareTermination>
 
 设备行为差异：
 
-- 从API version 15开始，该接口仅在2in1设备中可正常执行回调，在其他设备上不执行回调。
-- 从API version 19开始，该接口仅在2in1和Tablet设备中可正常执行回调，在其他设备上不执行回调。
+- 从API version 15开始，该接口仅在PC/2in1设备中可正常执行回调，在其他设备上不执行回调。
+- 从API version 19开始，该接口仅在PC/2in1和Tablet设备中可正常执行回调，在其他设备上不执行回调。
 
 返回值：
 

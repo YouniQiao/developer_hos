@@ -2,7 +2,8 @@
 title: "avcodec_audio_channel_layout.h"
 upstream_id: "harmonyos-references/capi-avcodec-audio-channel-layout-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:05.343747"
+content_hash: "ade6ef2d5840"
+synced_at: "2026-07-09T01:00:16.625935"
 ---
 
 # avcodec_audio_channel_layout.h

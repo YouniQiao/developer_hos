@@ -2,7 +2,8 @@
 title: "cloudCommon (公共模块)"
 upstream_id: "harmonyos-references/cloudfoundation-cloudcommon"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:23.425490"
+content_hash: "2a155a830260"
+synced_at: "2026-07-09T01:01:16.230170"
 ---
 
 # cloudCommon (公共模块)

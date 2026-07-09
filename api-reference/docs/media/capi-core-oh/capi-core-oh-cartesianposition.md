@@ -2,7 +2,8 @@
 title: "OH_CartesianPosition"
 upstream_id: "harmonyos-references/capi-core-oh-cartesianposition"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:04.934300"
+content_hash: "3df8558d2cd0"
+synced_at: "2026-07-09T01:00:16.386872"
 ---
 
 # OH_CartesianPosition

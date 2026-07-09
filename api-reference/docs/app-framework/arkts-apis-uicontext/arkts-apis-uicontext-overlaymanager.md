@@ -2,7 +2,8 @@
 title: "Class (OverlayManager)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-overlaymanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:21.820177"
+content_hash: "a559de005e3c"
+synced_at: "2026-07-09T00:57:29.318873"
 ---
 
 # Class (OverlayManager)
@@ -129,7 +130,7 @@ struct OverlayExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469447.gif)
+ ![](./img/zh-cn_image_0000002661612247.gif)
 
 #### addComponentContentWithOrder18+
 
@@ -232,7 +233,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349495.gif)
+ ![](./img/zh-cn_image_0000002631412956.gif)
 
 #### removeComponentContent12+
 

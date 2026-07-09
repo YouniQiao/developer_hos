@@ -2,7 +2,8 @@
 title: "spatial_recon_interface.h"
 upstream_id: "harmonyos-references/capi-spatial-recon-interface-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:14.463380"
+content_hash: "75d4eadbd537"
+synced_at: "2026-07-09T01:01:09.215637"
 ---
 
 # spatial_recon_interface.h

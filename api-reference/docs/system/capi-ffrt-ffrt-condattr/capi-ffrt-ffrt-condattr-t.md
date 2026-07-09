@@ -2,7 +2,8 @@
 title: "ffrt_condattr_t"
 upstream_id: "harmonyos-references/capi-ffrt-ffrt-condattr-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:17.049973"
+content_hash: "d671c58d0ed5"
+synced_at: "2026-07-09T00:59:47.762414"
 ---
 
 # ffrt_condattr_t

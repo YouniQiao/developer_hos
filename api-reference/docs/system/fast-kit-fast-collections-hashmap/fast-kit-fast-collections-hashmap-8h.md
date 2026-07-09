@@ -2,7 +2,8 @@
 title: "fast_collections_hashmap.h"
 upstream_id: "harmonyos-references/fast-kit-fast-collections-hashmap-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:15.014728"
+content_hash: "c3a8b483f6af"
+synced_at: "2026-07-09T00:59:46.344165"
 ---
 
 # fast_collections_hashmap.h

@@ -1,9 +1,12 @@
 ---
+
 title: "点击音效"
 upstream_id: "harmonyos-references/ts-universal-attributes-click-sound"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:42.802934"
+synced_at: "2026-07-09T00:57:40.935704"
+content_hash: "96cd2206589e"
 ---
+
 
 # 点击音效
 

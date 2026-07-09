@@ -2,7 +2,8 @@
 title: "XEG_NeuralUpscaleCreateInfo"
 upstream_id: "harmonyos-references/xengine-kit-xeg-neuralupscalecreateinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:17.657991"
+content_hash: "a220640daea4"
+synced_at: "2026-07-09T01:01:11.233735"
 ---
 
 # XEG_NeuralUpscaleCreateInfo

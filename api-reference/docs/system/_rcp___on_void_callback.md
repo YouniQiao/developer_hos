@@ -2,7 +2,8 @@
 title: "Rcp_OnVoidCallback"
 upstream_id: "harmonyos-references/_rcp___on_void_callback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:01.085337"
+content_hash: "c196625dd24f"
+synced_at: "2026-07-09T00:59:35.074513"
 ---
 
 # Rcp_OnVoidCallback

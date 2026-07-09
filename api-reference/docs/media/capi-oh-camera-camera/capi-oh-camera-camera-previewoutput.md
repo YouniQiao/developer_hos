@@ -2,7 +2,8 @@
 title: "Camera_PreviewOutput"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-previewoutput"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:18.633101"
+content_hash: "cfccc08a3ebc"
+synced_at: "2026-07-09T01:00:27.162477"
 ---
 
 # Camera_PreviewOutput

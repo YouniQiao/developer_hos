@@ -2,7 +2,8 @@
 title: "advertising（星闪广播能力）"
 upstream_id: "harmonyos-references/nearlink-advertising"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:50.122888"
+content_hash: "6f769dacd3e7"
+synced_at: "2026-07-09T00:59:26.516993"
 ---
 
 # advertising（星闪广播能力）

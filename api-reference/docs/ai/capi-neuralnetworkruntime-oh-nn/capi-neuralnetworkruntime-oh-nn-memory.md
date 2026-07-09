@@ -2,7 +2,8 @@
 title: "OH_NN_Memory"
 upstream_id: "harmonyos-references/capi-neuralnetworkruntime-oh-nn-memory"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:59.758978"
+content_hash: "1649a1f3e0e8"
+synced_at: "2026-07-09T01:01:44.361727"
 ---
 
 # OH_NN_Memory

@@ -2,7 +2,8 @@
 title: "ArkUI_CircleShapeOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-circleshapeoption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:57.276086"
+content_hash: "0b9e497f62eb"
+synced_at: "2026-07-09T00:58:46.480097"
 ---
 
 # ArkUI_CircleShapeOption

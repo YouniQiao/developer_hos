@@ -2,7 +2,8 @@
 title: "@ohos.multimodalInput.inputEventClient (输入事件注入)"
 upstream_id: "harmonyos-references/js-apis-inputeventclient"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:18.480214"
+content_hash: "cb76c8f013d9"
+synced_at: "2026-07-09T00:59:49.706612"
 ---
 
 # @ohos.multimodalInput.inputEventClient (输入事件注入)

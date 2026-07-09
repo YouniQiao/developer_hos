@@ -2,7 +2,8 @@
 title: "native_interface_bundle.h"
 upstream_id: "harmonyos-references/capi-native-interface-bundle-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:58.061757"
+content_hash: "1ba38d530359"
+synced_at: "2026-07-09T00:57:12.349521"
 ---
 
 # native_interface_bundle.h

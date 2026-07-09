@@ -2,7 +2,8 @@
 title: "usb_serial_types.h"
 upstream_id: "harmonyos-references/capi-usb-serial-types-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:32.196747"
+content_hash: "f1a59e91eccd"
+synced_at: "2026-07-09T00:59:55.355304"
 ---
 
 # usb_serial_types.h

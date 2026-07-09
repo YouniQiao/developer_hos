@@ -2,7 +2,8 @@
 title: "OH_ImageBufferData"
 upstream_id: "harmonyos-references/capi-image-nativemodule-oh-imagebufferdata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:29.203557"
+content_hash: "661fc14c37df"
+synced_at: "2026-07-09T01:00:34.921244"
 ---
 
 # OH_ImageBufferData

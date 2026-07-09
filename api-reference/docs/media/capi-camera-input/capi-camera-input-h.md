@@ -2,7 +2,8 @@
 title: "camera_input.h"
 upstream_id: "harmonyos-references/capi-camera-input-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:14.773671"
+content_hash: "2bd5cbaa8ca9"
+synced_at: "2026-07-09T01:00:24.631075"
 ---
 
 # camera_input.h

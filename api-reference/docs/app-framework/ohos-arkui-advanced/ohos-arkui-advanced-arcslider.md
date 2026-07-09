@@ -2,7 +2,8 @@
 title: "ArcSlider"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-arcslider"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:10.450083"
+content_hash: "e64fe1b494c6"
+synced_at: "2026-07-09T00:57:55.323713"
 ---
 
 # ArcSlider
@@ -387,4 +388,4 @@ struct ArcSliderExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349829.gif)
+ ![](./img/zh-cn_image_0000002661612595.gif)

@@ -2,7 +2,8 @@
 title: "SoundPool (音频池)"
 upstream_id: "harmonyos-references/js-apis-inner-multimedia-soundpool"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:35.097161"
+content_hash: "e74485c4970f"
+synced_at: "2026-07-09T01:00:39.608231"
 ---
 
 # SoundPool (音频池)

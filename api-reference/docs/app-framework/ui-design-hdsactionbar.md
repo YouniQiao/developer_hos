@@ -2,7 +2,8 @@
 title: "HdsActionBar"
 upstream_id: "harmonyos-references/ui-design-hdsactionbar"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:26.670916"
+content_hash: "67c02d0a3d19"
+synced_at: "2026-07-09T00:59:10.051903"
 ---
 
 # HdsActionBar
@@ -271,4 +272,4 @@ struct TestActionBar {
 ```
  效果图：
 
-![](./img/zh-cn_image_0000002656470593.gif)
+![](./img/zh-cn_image_0000002631254232.gif)

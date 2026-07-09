@@ -2,7 +2,8 @@
 title: "native_audio_device_base.h"
 upstream_id: "harmonyos-references/capi-native-audio-device-base-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:56.370138"
+content_hash: "7251f6b12bfd"
+synced_at: "2026-07-09T01:00:10.328435"
 ---
 
 # native_audio_device_base.h

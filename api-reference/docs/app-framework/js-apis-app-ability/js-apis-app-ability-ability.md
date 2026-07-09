@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.Ability (Ability基类)"
 upstream_id: "harmonyos-references/js-apis-app-ability-ability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:44.282970"
+content_hash: "8480cd4d5ffd"
+synced_at: "2026-07-09T00:57:02.827894"
 ---
 
 # @ohos.app.ability.Ability (Ability基类)
@@ -25,7 +26,7 @@ Ability基类及其子类的继承关系如下图所示。
 
 ![](./img/note_3.0-zh-cn.png) 部分ExtensionAbility组件（例如[FormExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-formextensionability)、[InputMethodExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inputmethod-extension-ability)等）与下图中的ExtensionAbility基类不存在继承关系，均未在图中列出。
 
-![](./img/zh-cn_image_0000002656469427.png)
+![](./img/zh-cn_image_0000002661612227.png)
 
 #### Ability.onConfigurationUpdate
 

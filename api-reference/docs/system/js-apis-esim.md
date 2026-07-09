@@ -2,7 +2,8 @@
 title: "@ohos.telephony.esim (eSIM卡管理)"
 upstream_id: "harmonyos-references/js-apis-esim"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:04.456687"
+content_hash: "3893fea3e546"
+synced_at: "2026-07-09T00:59:37.593991"
 ---
 
 # @ohos.telephony.esim (eSIM卡管理)

@@ -2,7 +2,8 @@
 title: "RichText"
 upstream_id: "harmonyos-references/ts-basic-components-richtext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:19.712445"
+content_hash: "db693af827a7"
+synced_at: "2026-07-09T00:57:58.503975"
 ---
 
 # RichText
@@ -160,7 +161,7 @@ struct RichTextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070600.png)
+ ![](./img/zh-cn_image_0000002661732629.png)
 
 加载本地资源文件。
 

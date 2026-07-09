@@ -2,7 +2,8 @@
 title: "证书错误码"
 upstream_id: "harmonyos-references/errorcode-cert"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:42.240162"
+content_hash: "01cc1482ebe7"
+synced_at: "2026-07-09T00:59:20.258195"
 ---
 
 # 证书错误码

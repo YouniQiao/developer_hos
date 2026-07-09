@@ -2,7 +2,8 @@
 title: "CloudDisk_FailedList"
 upstream_id: "harmonyos-references/capi-clouddisk-clouddisk-failedlist"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:16.004625"
+content_hash: "800e986838f7"
+synced_at: "2026-07-09T00:59:01.539333"
 ---
 
 # CloudDisk_FailedList

@@ -2,7 +2,8 @@
 title: "@hms.core.account.invoiceAssistant (华为账号发票助手服务)"
 upstream_id: "harmonyos-references/account-api-invoiceassistant"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:18.156578"
+content_hash: "bfbd47ed6c31"
+synced_at: "2026-07-09T01:01:11.607919"
 ---
 
 # @hms.core.account.invoiceAssistant (华为账号发票助手服务)
@@ -92,7 +93,7 @@ selectInvoiceTitle(context: common.Context): Promise<InvoiceTitle>
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |

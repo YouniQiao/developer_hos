@@ -1,11 +1,12 @@
 ---
-title: "@hms.utilityApplication.screenTimeGuard.guardService.d.ts（屏幕时间守护服务）"
+title: "@hms.utilityApplication.screenTimeGuard.guardService（屏幕时间守护服务）"
 upstream_id: "harmonyos-references/screentimeguard-guardservice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:52.795762"
+content_hash: "d410f9a6f3f8"
+synced_at: "2026-07-09T01:01:39.216099"
 ---
 
-# @hms.utilityApplication.screenTimeGuard.guardService.d.ts（屏幕时间守护服务）
+# @hms.utilityApplication.screenTimeGuard.guardService（屏幕时间守护服务）
 
 #### 模块概述
 
@@ -37,7 +38,7 @@ guardService.revokeUserAuth(); // 取消授权
 
 - 策略方式 策略方式通过策略来限制对应用的访问，使用策略来表示在何时对哪些应用的访问进行限制。守护策略GuardStrategy是相关接口的核心参数，代表了一个具体策略对象，由策略名称、时间策略、应用信息和限制类型组成： [TimeStrategy](#timestrategy)：时间策略，代表了应用可用时长的不同形式，由时间策略类型和不同类型对应的时间参数组成，目前支持三种时间策略类型，以支持不同的管控场景：起止时间策略：通过设定开始时间和结束时间，可设定多个应用在该时间段内被限制访问，适用于固定时间段控制的场景。
 - 总时长策略：通过设定一个时间长度，可限定多个应用在该时间长度内被限制访问，适用于使用时长限制的场景。
-- 共享时长策略：通过设定一个时间额度，可限定多个应用共同消耗该时间额度，若时间额度消耗完毕，则该应用被限制访问，适用于多个应用共享时间额度的场景。
+- 共享时长策略：通过设定一个时间额度，可限定多个应用共同消耗该时间额度，若时间额度消耗完毕，则以上应用被限制访问，适用于多个应用共享时间额度的场景。
 
 [AppInfo](#appinfo)：应用信息，由一组应用对应的标识符（token）组成。token用于在接口调用中作为被管控应用的唯一标识符，以区分不同的被管控应用。token中不包含应用自身信息如包名、应用名等，保障用户数据隐私安全。具体token值可以使用应用选择模块中的[startAppPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/screentimeguard-app-picker#startapppicker)接口获取。[RestrictionType](#restrictiontype): 限制类型，用于选择被管控应用的范围，开发者可以指定策略生效对象是AppInfo对应的应用还是除AppInfo以外的应用。 要实现策略管控，开发者需要实例化一个守护策略对象，以下代码片段说明如何配置管控策略以实现时长管控功能。
 
@@ -344,7 +345,7 @@ function testGetUserAuthStatus() {
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
-| appTokens | string[] | 否 | 否 | 应用token数组。 数组数量上限：100。 **说明**： 1. appTokens数组中存在错误的token，若只是部分错误，则取其中正常的token做显示和应用。 2. 该数组可以为空数组，即用户不设置任何应用在禁止/允许清单中，是正常场景。 |
+| appTokens | string[] | 否 | 否 | 应用token数组。 数组数量上限：100。 **说明**： 1. appTokens数组中存在错误的token，若只是部分错误，则取其中正常的token做显示和应用。 2. 该数组可以为空数组，即用户不设置任何应用在禁止/许可清单中，是正常场景。 |
 
 #### addGuardStrategy
 
@@ -468,7 +469,7 @@ function testAddGuardStrategy() {
 
 #### RestrictionType
 
-限制类型的枚举值，包含允许清单和禁止清单，与[AppInfo](#appinfo)组合以指定被管控应用：若为允许清单，表示AppInfo对应的应用为被管控应用；若为禁止清单，表示AppInfo以外的应用为被管控应用。
+限制类型的枚举值，包含许可清单和禁止清单，与[AppInfo](#appinfo)组合以指定被管控应用：若为许可清单类型，表示AppInfo以外的应用为被管控应用；若为禁止清单类型，表示AppInfo对应的应用为被管控应用。
 
 模型约束： 此枚举仅可在Stage模型下使用。
 
@@ -478,8 +479,8 @@ function testAddGuardStrategy() {
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| TRUSTLIST_TYPE | 1 | 按允许清单做限制。 |
-| BLOCKLIST_TYPE | 2 | 按禁止清单做限制。 |
+| TRUSTLIST_TYPE | 1 | 许可清单类型。 |
+| BLOCKLIST_TYPE | 2 | 禁止清单类型。 |
 
 #### updateGuardStrategy
 
@@ -814,7 +815,7 @@ function testStopGuardService() {
 
 setAppsRestriction(appInfo: AppInfo, restrictionType: RestrictionType): Promise<void>
 
-根据限制类型，设置指定应用的访问限制。若限制类型为禁用清单，则设置AppInfo对应应用的访问限制；若限制类型为允许清单，则设置AppInfo以外应用的访问限制。与策略管控不同，此接口直接对被管控应用进行访问限制，无需创建策略，设置后立即生效。使用Promise异步回调。
+设置指定应用的访问限制。与策略管控不同，此接口直接对被管控应用进行访问限制，无需创建策略，设置后立即生效，直至调用[releaseAppsRestriction](#releaseappsrestriction)接口主动解除限制。使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -828,8 +829,8 @@ setAppsRestriction(appInfo: AppInfo, restrictionType: RestrictionType): Promise<
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| appInfo | [AppInfo](#appinfo) | 是 | 被选择的应用token集合，是一个字符串数组。 |
-| restrictionType | [RestrictionType](#restrictiontype) | 是 | 限制类型 TRUSTLIST_TYPE表示对appInfo外的应用进行限制，BLOCKLIST_TYPE表示对appInfo内的应用进行限制。 |
+| appInfo | [AppInfo](#appinfo) | 是 | 被选择的应用token。 |
+| restrictionType | [RestrictionType](#restrictiontype) | 是 | 限制类型。 TRUSTLIST_TYPE表示对appInfo外的应用进行限制，BLOCKLIST_TYPE表示对appInfo内的应用进行限制。 |
 
 返回值：
 
@@ -869,7 +870,7 @@ function testSetAppsRestriction() {
 
 releaseAppsRestriction(appInfo: AppInfo, restrictionType: RestrictionType): Promise<void>
 
-根据限制类型，解除指定应用的访问限制。若限制类型为禁用清单，则对AppInfo的对应应用解除访问限制；若限制类型为允许清单，则对AppInfo对应应用以外的应用解除访问限制。解除应用访问限制时，需要传入与设置访问限制时相同的appInfo和restrictionType。使用Promise异步回调。
+解除指定应用被[setAppsRestriction](#setappsrestriction)接口所设置的访问限制。使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -884,7 +885,7 @@ releaseAppsRestriction(appInfo: AppInfo, restrictionType: RestrictionType): Prom
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | appInfo | [AppInfo](#appinfo) | 是 | 被选择的应用token集合，是一个字符串数组。 |
-| restrictionType | [RestrictionType](#restrictiontype) | 是 | 限制类型 TRUSTLIST_TYPE表示对appInfo外的应用进行限制，BLOCKLIST_TYPE表示对appInfo内的应用进行限制。 |
+| restrictionType | [RestrictionType](#restrictiontype) | 是 | 限制类型。 TRUSTLIST_TYPE表示对appInfo外的应用解除限制，BLOCKLIST_TYPE表示对appInfo内的应用解除限制。 |
 
 返回值：
 
@@ -922,7 +923,7 @@ function testReleaseAppsRestriction() {
 
 #### GuardStrategyData
 
-该接口为策略运行数据对象，用于表示某个时间守护策略的已使用时长。
+守护策略运行数据，用于表示某个守护策略的已使用时长。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

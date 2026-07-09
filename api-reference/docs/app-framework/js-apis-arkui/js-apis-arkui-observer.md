@@ -2,7 +2,8 @@
 title: "@ohos.arkui.observer (无感监听)"
 upstream_id: "harmonyos-references/js-apis-arkui-observer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:19.757925"
+content_hash: "b5dd210d769e"
+synced_at: "2026-07-09T00:57:28.796411"
 ---
 
 # @ohos.arkui.observer (无感监听)

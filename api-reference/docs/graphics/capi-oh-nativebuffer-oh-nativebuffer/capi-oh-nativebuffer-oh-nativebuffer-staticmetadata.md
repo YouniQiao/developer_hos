@@ -2,7 +2,8 @@
 title: "OH_NativeBuffer_StaticMetadata"
 upstream_id: "harmonyos-references/capi-oh-nativebuffer-oh-nativebuffer-staticmetadata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:04.834107"
+content_hash: "968e322fbb72"
+synced_at: "2026-07-09T01:00:59.968219"
 ---
 
 # OH_NativeBuffer_StaticMetadata

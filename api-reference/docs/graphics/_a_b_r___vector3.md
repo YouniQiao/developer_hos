@@ -2,7 +2,8 @@
 title: "ABR_Vector3"
 upstream_id: "harmonyos-references/_a_b_r___vector3"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:13.049879"
+content_hash: "f928d40cc18c"
+synced_at: "2026-07-09T01:01:07.140353"
 ---
 
 # ABR_Vector3

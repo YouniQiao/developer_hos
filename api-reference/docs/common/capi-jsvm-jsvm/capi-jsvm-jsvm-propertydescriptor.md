@@ -2,7 +2,8 @@
 title: "JSVM_PropertyDescriptor"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-propertydescriptor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:02.977479"
+content_hash: "95baa4a6d455"
+synced_at: "2026-07-09T01:01:46.764587"
 ---
 
 # JSVM_PropertyDescriptor

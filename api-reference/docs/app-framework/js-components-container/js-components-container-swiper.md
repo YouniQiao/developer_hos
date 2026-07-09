@@ -2,7 +2,8 @@
 title: "swiper"
 upstream_id: "harmonyos-references/js-components-container-swiper"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:04.631942"
+content_hash: "423c567d02e2"
+synced_at: "2026-07-09T00:58:21.207737"
 ---
 
 # swiper
@@ -26,8 +27,8 @@ synced_at: "2026-06-24T20:49:04.631942"
 | 名称 | 类型 | 默认值 | 必填 | 描述 |
 | --- | --- | --- | --- | --- |
 | index | number | 0 | 否 | 当前在容器中显示的子组件的索引值。 |
-| autoplay | boolean | false | 否 | 子组件是否自动播放，自动播放状态下，导航点不可操作5+。true为自动轮播，false为不自动轮播。 |
-| interval | number | 3000 | 否 | 使用自动播放时播放的时间间隔，单位为ms。 |
+| autoplay | boolean | false | 否 | 子组件是否自动轮播，自动轮播状态下，导航点不可操作5+。true为自动轮播，false为不自动轮播。 |
+| interval | number | 3000 | 否 | 使用自动轮播时轮播的时间间隔，单位为ms。 |
 | indicator | boolean | true | 否 | 是否启用导航点指示器，默认true。true为启用导航点指示器，false为不启用导航点指示器。 |
 | digital5+ | boolean | false | 否 | 是否启用数字导航点，默认为false。true为启用数字导航点，false为不启用数字导航点。 必须设置indicator时才能生效数字导航点。 |
 | indicatordisabled5+ | boolean | false | 否 | 指示器是否禁止用户手势操作，设置为true时，指示器不会响应用户的点击拖拽。 |
@@ -157,4 +158,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070974.gif)
+ ![](./img/zh-cn_image_0000002661733007.gif)

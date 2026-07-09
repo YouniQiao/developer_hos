@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.OpenLinkOptions (openLink的可选参数)"
 upstream_id: "harmonyos-references/js-apis-app-ability-openlinkoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:47.422541"
+content_hash: "9689954fcf90"
+synced_at: "2026-07-09T00:57:04.970461"
 ---
 
 # @ohos.app.ability.OpenLinkOptions (openLink的可选参数)

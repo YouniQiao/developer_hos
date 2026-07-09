@@ -2,7 +2,8 @@
 title: "OH_Drawing_FontVariationInstanceCoordinate"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-fontvariationinstancecoordinate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:08.805817"
+content_hash: "6e0b7ae1bb6d"
+synced_at: "2026-07-09T01:01:02.889168"
 ---
 
 # OH_Drawing_FontVariationInstanceCoordinate

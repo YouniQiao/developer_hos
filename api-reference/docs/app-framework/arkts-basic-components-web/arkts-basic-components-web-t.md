@@ -2,10 +2,13 @@
 title: "Types"
 upstream_id: "harmonyos-references/arkts-basic-components-web-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:07.402020"
+content_hash: "d71185a60870"
+synced_at: "2026-07-09T00:58:54.555811"
 ---
 
 # Types
+
+本文档提供 ArkWeb 组件中使用的类型定义，包括 Web 控制器及各类事件回调函数类型。其中，WebviewController 用于控制 Web 组件的行为；各类回调函数类型为开发者提供 Web 组件运行过程中多种事件场景的事件监听和处理能力。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -14,7 +17,7 @@ synced_at: "2026-06-24T20:50:07.402020"
 
 #### WebviewController9+
 
-type WebviewController = WebviewController
+type WebviewController = import('../api/@ohos.web.webview').default.WebviewController
 
 提供Web控制器的方法。
 
@@ -22,7 +25,7 @@ type WebviewController = WebviewController
 
 | 类型 | 说明 |
 | --- | --- |
-| [WebviewController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller) | 通过WebviewController可以控制Web组件各种行为。一个WebviewController对象只能控制一个Web组件，且必须在Web组件和WebviewController绑定后，才能调用WebviewController上的方法（静态方法除外）。 |
+| [import('../api/@ohos.web.webview').default.WebviewController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller) | 通过WebviewController可以控制Web组件各种行为。一个WebviewController对象只能控制一个Web组件，且必须在Web组件和WebviewController绑定后，才能调用WebviewController上的方法（静态方法除外）。 |
 
 #### OnAdsBlockedCallback12+
 

@@ -2,7 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-drm-i"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:19.907823"
+content_hash: "2492e455a642"
+synced_at: "2026-07-09T01:00:28.083080"
 ---
 
 # Interfaces (其他)

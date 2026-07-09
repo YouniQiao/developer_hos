@@ -2,7 +2,8 @@
 title: "AlphabetIndexer"
 upstream_id: "harmonyos-references/ts-container-alphabet-indexer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:23.089881"
+content_hash: "8071f2336407"
+synced_at: "2026-07-09T00:58:00.674059"
 ---
 
 # AlphabetIndexer
@@ -72,7 +73,7 @@ color(value: ResourceColor)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | 未选中项文本颜色。 默认值：0x99182431，显示为略带透明的棕色。 |
+| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | 未选中项文本颜色。 默认值：0x99182431，显示为略带透明的深暗蓝色。 |
 
 #### [h2]selectedColor
 
@@ -120,7 +121,7 @@ selectedBackgroundColor(value: ResourceColor)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | 选中项背景颜色。 默认值：0x1A007DFF，显示为半透明的蓝绿色。 |
+| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 是 | 选中项背景颜色。 默认值：0x1A007DFF，显示为半透明的蓝色。 |
 
 #### [h2]popupBackground
 
@@ -719,7 +720,7 @@ struct AlphabetIndexerSample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469957.gif)
+ ![](./img/zh-cn_image_0000002631253590.gif)
 
 #### [h2]示例2（开启自适应折叠模式）
 
@@ -800,7 +801,7 @@ struct AlphabetIndexerSample {
               .popupBackground(0xD2B48C) // 提示弹窗背景颜色
               .usingPopup(true) // 索引项被选中时显示提示弹窗
               .selectedFont({ size: 16, weight: FontWeight.Bolder }) // 选中项文本样式
-              .popupFont({ size: 30, weight: FontWeight.Bolder }) // 提示弹窗内容的文本样式
+              .popupFont({ size: 30, weight: FontWeight.Bolder }) // 提示弹窗一级索引的文本样式
               .itemSize(28) // 每一项的尺寸大小
               .alignStyle(IndexerAlign.Right) // 提示弹窗在索引条左侧弹出
               .popupTitleBackground("#D2B48C") // 设置提示弹窗一级索引项背景颜色
@@ -860,7 +861,7 @@ struct AlphabetIndexerSample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350005.gif)
+ ![](./img/zh-cn_image_0000002661612771.gif)
 
 #### [h2]示例3（设置提示弹窗背景模糊材质）
 
@@ -990,4 +991,4 @@ struct AlphabetIndexerSample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230592.gif)
+ ![](./img/zh-cn_image_0000002631413482.gif)

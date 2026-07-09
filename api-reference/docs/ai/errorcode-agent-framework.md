@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-agent-framework"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:54.683203"
+content_hash: "a916923f360e"
+synced_at: "2026-07-09T01:01:40.448858"
 ---
 
 # ArkTS API错误码
@@ -35,7 +36,7 @@ Privacy agreement not accepted.
 
 错误描述
 
-隐私未授权。
+隐私协议未授权。
 
 可能原因
 
@@ -71,7 +72,7 @@ Internet error.
 
 错误描述
 
-网络异常。
+网络错误。
 
 可能原因
 

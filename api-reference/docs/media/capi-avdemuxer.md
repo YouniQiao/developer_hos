@@ -2,7 +2,8 @@
 title: "AVDemuxer"
 upstream_id: "harmonyos-references/capi-avdemuxer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:01.439233"
+content_hash: "df4d21e64b57"
+synced_at: "2026-07-09T01:00:13.369478"
 ---
 
 # AVDemuxer

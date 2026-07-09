@@ -2,7 +2,8 @@
 title: "OH_AVMetadataExtractor_OutputParam"
 upstream_id: "harmonyos-references/capi-avmetadataextractor-oh-avmetadataextractor-outputparam"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:42.978260"
+content_hash: "293a1282af80"
+synced_at: "2026-07-09T01:00:45.246266"
 ---
 
 # OH_AVMetadataExtractor_OutputParam

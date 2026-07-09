@@ -2,7 +2,8 @@
 title: "usb_ddk_types.h"
 upstream_id: "harmonyos-references/capi-usb-ddk-types-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:31.989408"
+content_hash: "f1abe4cbb700"
+synced_at: "2026-07-09T00:59:55.113451"
 ---
 
 # usb_ddk_types.h

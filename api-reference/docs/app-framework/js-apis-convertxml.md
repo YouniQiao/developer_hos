@@ -2,7 +2,8 @@
 title: "@ohos.convertxml (xml转换JavaScript)"
 upstream_id: "harmonyos-references/js-apis-convertxml"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:15.206723"
+content_hash: "948c5b4b6eed"
+synced_at: "2026-07-09T00:57:25.034748"
 ---
 
 # @ohos.convertxml (xml转换JavaScript)

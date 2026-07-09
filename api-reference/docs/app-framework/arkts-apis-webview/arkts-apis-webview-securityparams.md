@@ -2,7 +2,8 @@
 title: "Class (SecurityParams)"
 upstream_id: "harmonyos-references/arkts-apis-webview-securityparams"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:03.167051"
+content_hash: "2aa08de7f49a"
+synced_at: "2026-07-09T00:58:50.741752"
 ---
 
 # Class (SecurityParams)

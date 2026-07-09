@@ -2,7 +2,8 @@
 title: "OH_AVCodecBufferAttr"
 upstream_id: "harmonyos-references/capi-core-oh-avcodecbufferattr"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:04.297221"
+content_hash: "c3a257e9c014"
+synced_at: "2026-07-09T01:00:15.793905"
 ---
 
 # OH_AVCodecBufferAttr

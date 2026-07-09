@@ -2,7 +2,8 @@
 title: "OH_AVMetadataExtractor_FrameInfo"
 upstream_id: "harmonyos-references/capi-avmetadataextractor-oh-avmetadataextractor-frameinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:43.080598"
+content_hash: "9af70e398e1d"
+synced_at: "2026-07-09T01:00:45.401593"
 ---
 
 # OH_AVMetadataExtractor_FrameInfo

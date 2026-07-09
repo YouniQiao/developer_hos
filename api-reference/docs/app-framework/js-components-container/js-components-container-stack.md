@@ -2,7 +2,8 @@
 title: "stack"
 upstream_id: "harmonyos-references/js-components-container-stack"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:04.348832"
+content_hash: "4a553a40749c"
+synced_at: "2026-07-09T00:58:20.877432"
 ---
 
 # stack
@@ -76,4 +77,4 @@ synced_at: "2026-06-24T20:49:04.348832"
   border-radius: 16px;
 }
 ```
- ![](./img/zh-cn_image_0000002656350297.png)
+ ![](./img/zh-cn_image_0000002661613067.png)

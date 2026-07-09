@@ -2,7 +2,8 @@
 title: "应用购买记录相关支付订单查询"
 upstream_id: "harmonyos-references/iap-order-query"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:28.882401"
+content_hash: "b3264dab5836"
+synced_at: "2026-07-09T01:01:21.718820"
 ---
 
 # 应用购买记录相关支付订单查询

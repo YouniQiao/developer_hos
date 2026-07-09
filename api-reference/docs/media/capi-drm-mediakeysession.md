@@ -2,7 +2,8 @@
 title: "MediaKeySession"
 upstream_id: "harmonyos-references/capi-drm-mediakeysession"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:21.503284"
+content_hash: "98b642555c49"
+synced_at: "2026-07-09T01:00:29.081768"
 ---
 
 # MediaKeySession

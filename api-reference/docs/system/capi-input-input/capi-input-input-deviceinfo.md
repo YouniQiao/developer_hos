@@ -2,7 +2,8 @@
 title: "Input_DeviceInfo"
 upstream_id: "harmonyos-references/capi-input-input-deviceinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:20.275811"
+content_hash: "e96a6c7c6e68"
+synced_at: "2026-07-09T00:59:50.404224"
 ---
 
 # Input_DeviceInfo

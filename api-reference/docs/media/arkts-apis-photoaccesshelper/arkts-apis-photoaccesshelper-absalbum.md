@@ -2,7 +2,8 @@
 title: "Interface (AbsAlbum)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-absalbum"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:44.168591"
+content_hash: "54bc6b2721a6"
+synced_at: "2026-07-09T01:00:46.321341"
 ---
 
 # Interface (AbsAlbum)

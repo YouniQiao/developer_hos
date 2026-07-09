@@ -2,7 +2,8 @@
 title: "canvas组件"
 upstream_id: "harmonyos-references/js-lite-components-canvas-canvas"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:21.329136"
+content_hash: "cc1249f470aa"
+synced_at: "2026-07-09T00:58:28.793380"
 ---
 
 # canvas组件

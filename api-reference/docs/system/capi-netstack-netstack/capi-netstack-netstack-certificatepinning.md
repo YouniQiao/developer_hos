@@ -2,7 +2,8 @@
 title: "NetStack_CertificatePinning"
 upstream_id: "harmonyos-references/capi-netstack-netstack-certificatepinning"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:54.529808"
+content_hash: "18bc2276050f"
+synced_at: "2026-07-09T00:59:29.806205"
 ---
 
 # NetStack_CertificatePinning

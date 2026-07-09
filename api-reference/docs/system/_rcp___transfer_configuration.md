@@ -2,7 +2,8 @@
 title: "Rcp_TransferConfiguration"
 upstream_id: "harmonyos-references/_rcp___transfer_configuration"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:02.398917"
+content_hash: "6a14832d9071"
+synced_at: "2026-07-09T00:59:35.848147"
 ---
 
 # Rcp_TransferConfiguration

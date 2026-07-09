@@ -2,7 +2,8 @@
 title: "@ohos.commonEvent (公共事件模块)(已废弃)"
 upstream_id: "harmonyos-references/js-apis-commonevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:09.634807"
+content_hash: "90846e5240e3"
+synced_at: "2026-07-09T00:59:42.223709"
 ---
 
 # @ohos.commonEvent (公共事件模块)(已废弃)

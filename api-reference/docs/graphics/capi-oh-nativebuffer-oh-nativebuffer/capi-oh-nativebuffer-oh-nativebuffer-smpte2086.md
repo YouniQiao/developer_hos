@@ -2,7 +2,8 @@
 title: "OH_NativeBuffer_Smpte2086"
 upstream_id: "harmonyos-references/capi-oh-nativebuffer-oh-nativebuffer-smpte2086"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:04.821498"
+content_hash: "950278882a96"
+synced_at: "2026-07-09T01:00:59.828324"
 ---
 
 # OH_NativeBuffer_Smpte2086

@@ -2,7 +2,8 @@
 title: "image_mdk_common.h"
 upstream_id: "harmonyos-references/capi-image-mdk-common-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:26.603828"
+content_hash: "071484bcbd94"
+synced_at: "2026-07-09T01:00:33.241419"
 ---
 
 # image_mdk_common.h

@@ -2,7 +2,8 @@
 title: "@ohos.backgroundTaskManager (后台任务管理)"
 upstream_id: "harmonyos-references/js-apis-backgroundtaskmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:10.457908"
+content_hash: "6de82554cdad"
+synced_at: "2026-07-09T00:58:57.509527"
 ---
 
 # @ohos.backgroundTaskManager (后台任务管理)

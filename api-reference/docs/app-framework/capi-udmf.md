@@ -2,7 +2,8 @@
 title: "UDMF"
 upstream_id: "harmonyos-references/capi-udmf"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:05.519508"
+content_hash: "1df933fe1d91"
+synced_at: "2026-07-09T00:57:18.068016"
 ---
 
 # UDMF

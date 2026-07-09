@@ -2,7 +2,8 @@
 title: "批量转换teamPlayerId"
 upstream_id: "harmonyos-references/gameservice-teamplayerid"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:26.112139"
+content_hash: "9ccd041c39ec"
+synced_at: "2026-07-09T01:01:19.093710"
 ---
 
 # 批量转换teamPlayerId
@@ -53,7 +54,7 @@ synced_at: "2026-06-24T20:53:26.112139"
 #### 请求示例
 
 ```
-POST https://connect-api.cloud.huawei.com/api/jas/open/players/player-accounts/team-player/convert HTTP/1.1
+POST /api/jas/open/players/player-accounts/team-player/convert HTTP/1.1
 Host: connect-api.cloud.huawei.com
 Content-Type: application/json
 client_id: 41******7168

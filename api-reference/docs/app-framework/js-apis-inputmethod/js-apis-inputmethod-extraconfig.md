@@ -2,7 +2,8 @@
 title: "@ohos.inputMethod.ExtraConfig (输入法扩展信息)"
 upstream_id: "harmonyos-references/js-apis-inputmethod-extraconfig"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:19.410573"
+content_hash: "3cdaa3cd7479"
+synced_at: "2026-07-09T00:59:03.995950"
 ---
 
 # @ohos.inputMethod.ExtraConfig (输入法扩展信息)

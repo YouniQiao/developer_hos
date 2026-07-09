@@ -2,7 +2,8 @@
 title: "native_avformat.h"
 upstream_id: "harmonyos-references/capi-native-avformat-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:02.683628"
+content_hash: "789aff6a5f20"
+synced_at: "2026-07-09T01:00:14.690568"
 ---
 
 # native_avformat.h

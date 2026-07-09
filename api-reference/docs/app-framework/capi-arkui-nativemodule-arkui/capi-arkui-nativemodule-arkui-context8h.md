@@ -2,7 +2,8 @@
 title: "ArkUI_Context*"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-context8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:43.445470"
+content_hash: "8b63ffd9da17"
+synced_at: "2026-07-09T00:58:37.981006"
 ---
 
 # ArkUI_Context*

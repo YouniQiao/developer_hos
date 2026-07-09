@@ -2,7 +2,8 @@
 title: "蓝牙服务子系统错误码"
 upstream_id: "harmonyos-references/errorcode-bluetoothmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:47.906793"
+content_hash: "064f564978b0"
+synced_at: "2026-07-09T00:59:25.150362"
 ---
 
 # 蓝牙服务子系统错误码

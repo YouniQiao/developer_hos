@@ -2,7 +2,8 @@
 title: "OH_UdmfOptions"
 upstream_id: "harmonyos-references/capi-udmf-oh-udmfoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:10.780330"
+content_hash: "7a4de7c40ba8"
+synced_at: "2026-07-09T00:57:21.488388"
 ---
 
 # OH_UdmfOptions

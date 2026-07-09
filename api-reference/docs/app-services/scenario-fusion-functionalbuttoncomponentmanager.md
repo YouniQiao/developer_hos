@@ -2,7 +2,8 @@
 title: "functionalButtonComponentManager(场景化融合Button组件管理)"
 upstream_id: "harmonyos-references/scenario-fusion-functionalbuttoncomponentmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:52.624525"
+content_hash: "1b149ececc5e"
+synced_at: "2026-07-09T01:01:39.941366"
 ---
 
 # functionalButtonComponentManager(场景化融合Button组件管理)
@@ -291,7 +292,7 @@ import { functionalButtonComponentManager } from '@kit.ScenarioFusionKit';
 
 系统能力： SystemCapability.AtomicserviceComponent.UIComponent
 
-设备行为差异： 该接口在Phone、Tablet、PC/2in1中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV中可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 5.0.0(12)
 
@@ -497,9 +498,9 @@ import { functionalButtonComponentManager } from '@kit.ScenarioFusionKit';
 | --- | --- | --- | --- | --- |
 | description | string | 否 | 是 | 元服务描述，支持开发者传入，默认是元服务描述。 **元服务API：** 从版本6.0.0(20)开始，该接口支持在元服务中使用。 |
 | previewUri | string | 否 | 是 | 元服务预览图，由开发者传入图片，否则返回默认元服务icon图标；本地文件路径、代码包文件路径或者网络图片路径。 **元服务API：** 从版本6.0.0(20)开始，该接口支持在元服务中使用。 |
-| uniformDataType | uniformTypeDescriptor.[UniformDataType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-uniformtypedescriptor#uniformdatatype) | 否 | 是 | 元服务数据类型，取值范围：[HYPERLINK, IMAGE, VIDEO, TEXT, FILE]，默认值：HYPERLINK。 HYPERLINK：分享当前元服务。 IMAGE：图片分享。 VIDEO：视频分享。 TEXT：文本分享。 FILE：文件分享。 **起始版本：** 26.0.0 **元服务API：** 从版本26.0.0开始，该接口支持在元服务中使用。 |
-| content | string | 否 | 是 | 元服务分享内容，链接（包含元服务App Linking）、文本类型的内容通过该字段传递。 HYPERLINK：自定义参数json字符串作为content字段，长度限制1~1024。 IMAGE：图片uri作为content字段。 VIDEO：视频uri作为content字段。 TEXT：文本内容作为content字段。 FILE：文件uri作为content字段。 **起始版本：** 26.0.0 **元服务API：** 从版本26.0.0开始，该接口支持在元服务中使用。 |
-| title | string | 否 | 是 | 元服务分享的标题，如果是文本、链接等内容，建议填入title标识其标题。缺省时，若分享内容为文本类型，则文本内容作为title字段；若分享内容为文件类型，则文件名作为title字段。 **起始版本：** 26.0.0 **元服务API：** 从版本26.0.0开始，该接口支持在元服务中使用。 |
+| uniformDataType | uniformTypeDescriptor.[UniformDataType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-uniformtypedescriptor#uniformdatatype) | 否 | 是 | 元服务数据类型，取值范围：[HYPERLINK, IMAGE, VIDEO, TEXT, FILE]，默认值：HYPERLINK。 HYPERLINK：分享当前元服务。 IMAGE：图片分享。 VIDEO：视频分享。 TEXT：文本分享。 FILE：文件分享。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
+| content | string | 否 | 是 | 元服务分享内容，链接（包含元服务App Linking）、文本类型的内容通过该字段传递。 HYPERLINK：自定义参数json字符串作为content字段，长度限制1~1024。 IMAGE：图片uri作为content字段。 VIDEO：视频uri作为content字段。 TEXT：文本内容作为content字段。 FILE：文件uri作为content字段。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
+| title | string | 否 | 是 | 元服务分享的标题，如果是文本、链接等内容，建议填入title标识其标题。缺省时，若分享内容为文本类型，则文本内容作为title字段；若分享内容为文件类型，则文件名作为title字段。 **起始版本：** 26.0.0 **元服务API：** 从API版本26.0.0开始，该接口支持在元服务中使用。 |
 
 #### GetPhoneNumberAndRiskLevelResult
 
@@ -929,7 +930,7 @@ onChooseAddress(callback: AsyncCallback<ChooseAddressResult>): FunctionalButtonC
 
 系统能力： SystemCapability.AtomicserviceComponent.UIComponent
 
-设备行为差异： 该接口在Phone、Tablet、PC/2in1中可正常调用，在其他设备类型中返回801错误码。
+设备行为差异： 该接口在Phone、Tablet、PC/2in1、TV中可正常调用，在其他设备类型中返回801错误码。
 
 起始版本： 5.0.0(12)
 
@@ -1049,7 +1050,7 @@ struct Index {
         // 构建FunctionalButton组件实例。
         FunctionalButton({
           params: {
-            // OpenType.CHOOSE_INVOICE_TITLE表示该按钮用于选择发票标题。
+            // OpenType.CHOOSE_INVOICE_TITLE表示该按钮用于选择发票抬头。
             openType: functionalButtonComponentManager.OpenType.CHOOSE_INVOICE_TITLE,
             label: '选择发票抬头',
             // 调整按钮样式。
@@ -1831,6 +1832,8 @@ onRequestSubscribeMessage(callback: AsyncCallback<RequestSubscribeMessageResult>
 
 错误码：
 
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS组件错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion)。
+
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [10004](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion#section10004-系统内部异常) | Internal error. |
@@ -1913,12 +1916,14 @@ onShare(callback: AsyncCallback<void>): FunctionalButtonController
 
 错误码：
 
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS组件错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion)。
+
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [10004](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion#section10004-系统内部异常) | Internal error. |
 | [10006](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion#section10006-获取分享数据失败) | Failed to get data. |
 | [10008](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion#section10008-调用方非元服务) | Not atomic service. |
-| [1007601001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion#section1007601001-无效的分享参数值) | Invalid share parameter value. Possible causes: 1. The uniformDataType parameter verification failed; 2. Invalid content parameter format. [since 26.0.0] |
+| [1007601001](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion#section1007601001-无效的分享参数值) | Invalid share parameter value. Possible causes: 1. The uniformDataType parameter verification failed; 2. Invalid content parameter format. 适用版本： 26.0.0+ |
 
 示例：
 
@@ -1997,6 +2002,8 @@ onFeedback(callback: AsyncCallback<void>): FunctionalButtonController
 | [FunctionalButtonController](#functionalbuttoncontroller) | [FunctionalButton](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/scenario-fusion-functionalbutton#functionalbutton)组件控制器。 |
 
 错误码：
+
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS组件错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -3063,4 +3070,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656351037.png)
+ ![](./img/zh-cn_image_0000002661613815.png)

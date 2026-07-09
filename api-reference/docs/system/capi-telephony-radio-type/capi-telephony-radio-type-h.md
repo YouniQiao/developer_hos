@@ -2,7 +2,8 @@
 title: "telephony_radio_type.h"
 upstream_id: "harmonyos-references/capi-telephony-radio-type-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:05.285227"
+content_hash: "2d84b319efbd"
+synced_at: "2026-07-09T00:59:38.720422"
 ---
 
 # telephony_radio_type.h

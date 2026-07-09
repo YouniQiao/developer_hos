@@ -2,7 +2,8 @@
 title: "ArkUI_AttributeItem"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:49.963170"
+content_hash: "62d44a517f98"
+synced_at: "2026-07-09T00:58:41.696189"
 ---
 
 # ArkUI_AttributeItem

@@ -2,7 +2,8 @@
 title: "Input_InterceptorEventCallback"
 upstream_id: "harmonyos-references/capi-input-input-interceptoreventcallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:19.189448"
+content_hash: "99ae5def7779"
+synced_at: "2026-07-09T00:59:49.461934"
 ---
 
 # Input_InterceptorEventCallback

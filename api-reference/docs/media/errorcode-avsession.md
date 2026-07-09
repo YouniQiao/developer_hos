@@ -2,7 +2,8 @@
 title: "媒体会话管理错误码"
 upstream_id: "harmonyos-references/errorcode-avsession"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:09.807598"
+content_hash: "32b1671acc6a"
+synced_at: "2026-07-09T01:00:21.266600"
 ---
 
 # 媒体会话管理错误码
@@ -127,7 +128,7 @@ The remote connection is not established.
 
 错误描述
 
-查看的远端会话不存在，对应相关的接口调用失败返回。
+查看的远端会话不存在，对应接口调用失败返回。
 
 可能原因
 
@@ -156,6 +157,8 @@ The desktop lyrics feature of this application is not enabled.
 调用[enableDesktopLyric](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avsession-avsession#enabledesktoplyric23)接口启用桌面歌词功能。
 
 #### 6600111 当前设备不支持桌面歌词功能
+
+错误信息
 
 The desktop lyrics feature is not supported.
 
@@ -217,7 +220,7 @@ The playback position falls behind the live window.
 
 错误描述
 
-加载位置超过投播视频的总进度导致。
+加载位置超过投播视频的总进度。
 
 可能原因
 
@@ -290,7 +293,7 @@ The specified seek mode is not supported.
 
 错误描述
 
-不支持当前进度条模式
+不支持当前进度条模式。
 
 可能原因
 
@@ -590,7 +593,7 @@ Reading data out of the data bound.
 
 检查自身设置的资源是否可用，更换资源后，再重新发起会话。
 
-#### 6612100 缺少可播放的媒体资源。
+#### 6612100 缺少可播放的媒体资源
 
 错误信息
 

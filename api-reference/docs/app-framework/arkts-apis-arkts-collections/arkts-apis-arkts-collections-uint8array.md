@@ -2,7 +2,8 @@
 title: "Class (Uint8Array)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-uint8array"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:12.692899"
+content_hash: "cd591b96c954"
+synced_at: "2026-07-09T00:57:23.542952"
 ---
 
 # Class (Uint8Array)
@@ -30,10 +31,10 @@ import { collections } from '@kit.ArkTS';
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | buffer | ArrayBuffer | 是 | 否 | ArkTS Uint8Array底层使用的buffer。 |
-| byteLength | number | 是 | 否 | ArkTS Uint8Array的所占的字节数。 |
+| byteLength | number | 是 | 否 | ArkTS Uint8Array所占的字节数。 |
 | byteOffset | number | 是 | 否 | ArkTS Uint8Array距离其ArrayBuffer起始位置的偏移。 |
 | length | number | 是 | 否 | ArkTS Uint8Array元素个数。 |
-| BYTES_PER_ELEMENT | number | 是 | 否 | ArkTS Uint8Array中每个元素所占用的字节数。 |
+| BYTES_PER_ELEMENT | number | 是 | 否 | ArkTS Uint8Array中每个元素所占的字节数。 |
 
 #### constructor
 
@@ -201,7 +202,7 @@ constructor(buffer: ArrayBuffer, byteOffset?: number, length?: number)
 ```
 let uint8Array: collections.Uint8Array = collections.Uint8Array.from([1, 2, 3, 4, 5, 6]);
 console.info("byteLength: " + uint8Array.buffer.byteLength); // byteLength: 6
-// 从int8Array对应buffer第1个字节开始，长度为5
+// 从uint8Array的buffer中下标为1的成员开始获取，长度为5
 let uint8Array1: collections.Uint8Array = new collections.Uint8Array(uint8Array.buffer, 1, 5);
 console.info("[" + uint8Array1 + "]"); // [2, 3, 4, 5, 6]
 ```
@@ -458,7 +459,7 @@ let copied: collections.Uint8Array = array.copyWithin(3, 1, 3);
 
 some(predicate: TypedArrayPredicateFn<number, Uint8Array>): boolean
 
-测试ArkTS Uint8Array中的是否存在元素满足指定条件。
+测试ArkTS Uint8Array中是否存在元素满足指定条件。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 

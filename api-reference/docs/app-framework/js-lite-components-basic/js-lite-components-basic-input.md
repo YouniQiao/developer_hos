@@ -2,7 +2,8 @@
 title: "input"
 upstream_id: "harmonyos-references/js-lite-components-basic-input"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:19.168258"
+content_hash: "742dccdbb803"
+synced_at: "2026-07-09T00:58:27.937402"
 ---
 
 # input
@@ -76,7 +77,7 @@ synced_at: "2026-06-24T20:49:19.168258"
   width: 280px;
 }
 ```
- ![](./img/zh-cn_image_0000002626231108.png)
+ ![](./img/zh-cn_image_0000002631414004.png)
 2. type为checkbox 
 ```
 <!-- xxx.hml -->
@@ -115,7 +116,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626071198.gif)
+ ![](./img/zh-cn_image_0000002661733233.gif)
 3. type为radio 
 ```
 <!-- xxx.hml -->
@@ -157,4 +158,4 @@ export default {
   height: 100px;
 }
 ```
- ![](./img/zh-cn_image_0000002656470475.gif)
+ ![](./img/zh-cn_image_0000002631254112.gif)

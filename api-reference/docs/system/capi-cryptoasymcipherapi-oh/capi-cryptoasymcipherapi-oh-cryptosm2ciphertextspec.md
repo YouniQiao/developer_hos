@@ -2,7 +2,8 @@
 title: "OH_CryptoSm2CiphertextSpec"
 upstream_id: "harmonyos-references/capi-cryptoasymcipherapi-oh-cryptosm2ciphertextspec"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:32.349293"
+content_hash: "f5c3b8adbe17"
+synced_at: "2026-07-09T00:59:12.798433"
 ---
 
 # OH_CryptoSm2CiphertextSpec

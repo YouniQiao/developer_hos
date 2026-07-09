@@ -2,7 +2,8 @@
 title: "timer.h"
 upstream_id: "harmonyos-references/capi-timer-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:16.396894"
+content_hash: "f470655cd301"
+synced_at: "2026-07-09T00:59:47.343704"
 ---
 
 # timer.h

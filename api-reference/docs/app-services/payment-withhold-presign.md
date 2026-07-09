@@ -1,9 +1,12 @@
 ---
+
 title: "预签约"
 upstream_id: "harmonyos-references/payment-withhold-presign"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:40.839645"
+synced_at: "2026-07-09T01:01:31.436858"
+content_hash: "5c5af2425bf6"
 ---
+
 
 # 预签约
 

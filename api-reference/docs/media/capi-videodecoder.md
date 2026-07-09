@@ -2,7 +2,8 @@
 title: "VideoDecoder"
 upstream_id: "harmonyos-references/capi-videodecoder"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:01.346581"
+content_hash: "13db01c69ac7"
+synced_at: "2026-07-09T01:00:13.112333"
 ---
 
 # VideoDecoder

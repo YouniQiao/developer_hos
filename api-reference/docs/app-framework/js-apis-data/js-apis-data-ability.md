@@ -2,7 +2,8 @@
 title: "@ohos.data.dataAbility（DataAbility谓词）"
 upstream_id: "harmonyos-references/js-apis-data-ability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:01.571086"
+content_hash: "d238d66845f6"
+synced_at: "2026-07-09T00:57:15.095375"
 ---
 
 # @ohos.data.dataAbility（DataAbility谓词）

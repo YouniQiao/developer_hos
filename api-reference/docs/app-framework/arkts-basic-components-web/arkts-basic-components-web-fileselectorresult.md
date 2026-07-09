@@ -2,7 +2,8 @@
 title: "Class (FileSelectorResult)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-fileselectorresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:06.345242"
+content_hash: "8b645970ead0"
+synced_at: "2026-07-09T00:58:53.572074"
 ---
 
 # Class (FileSelectorResult)

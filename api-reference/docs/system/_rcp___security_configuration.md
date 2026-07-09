@@ -2,7 +2,8 @@
 title: "Rcp_SecurityConfiguration"
 upstream_id: "harmonyos-references/_rcp___security_configuration"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:01.699868"
+content_hash: "9f5f166f2eb5"
+synced_at: "2026-07-09T00:59:35.421537"
 ---
 
 # Rcp_SecurityConfiguration

@@ -2,7 +2,8 @@
 title: "@ohos.xml (XML解析与生成)"
 upstream_id: "harmonyos-references/js-apis-xml"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:18.042006"
+content_hash: "822b6c70c533"
+synced_at: "2026-07-09T00:57:27.053935"
 ---
 
 # @ohos.xml (XML解析与生成)

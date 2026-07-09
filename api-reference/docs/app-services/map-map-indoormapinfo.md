@@ -2,7 +2,8 @@
 title: "Interface (IndoorMapInfo)"
 upstream_id: "harmonyos-references/map-map-indoormapinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:34.405818"
+content_hash: "1eadc40415e7"
+synced_at: "2026-07-09T01:01:26.122991"
 ---
 
 # Interface (IndoorMapInfo)

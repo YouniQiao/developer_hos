@@ -2,7 +2,8 @@
 title: "ListItemGroup"
 upstream_id: "harmonyos-references/ts-container-listitemgroup"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:54.285776"
+content_hash: "5bf83c631866"
+synced_at: "2026-07-09T00:57:46.942536"
 ---
 
 # ListItemGroup
@@ -299,7 +300,7 @@ struct ListItemGroupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469663.gif)
+ ![](./img/zh-cn_image_0000002661732409.gif)
 
 #### [h2]示例2（设置卡片样式）
 
@@ -360,7 +361,7 @@ interface ArrObject {
   itemStyles: number[];
 }
 ```
- ![](./img/zh-cn_image_0000002656349711.jpeg)
+ ![](./img/zh-cn_image_0000002631253290.jpeg)
 
 #### [h2]示例3（设置Header/Footer）
 
@@ -497,7 +498,7 @@ struct ListItemGroupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230298.gif)
+ ![](./img/zh-cn_image_0000002661612473.gif)
 
 #### [h2]示例4（设置多列布局）
 
@@ -660,4 +661,4 @@ struct ListItemGroupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070388.gif)
+ ![](./img/zh-cn_image_0000002631413182.gif)

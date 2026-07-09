@@ -2,7 +2,8 @@
 title: "运动模糊"
 upstream_id: "harmonyos-references/ts-universal-attributes-motionblur"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:41.185632"
+content_hash: "a9ccfa62dcd0"
+synced_at: "2026-07-09T00:57:40.389709"
 ---
 
 # 运动模糊
@@ -154,4 +155,4 @@ struct motionBlurTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469565.gif)
+ ![](./img/zh-cn_image_0000002661732309.gif)

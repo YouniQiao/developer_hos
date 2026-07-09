@@ -2,7 +2,8 @@
 title: "video"
 upstream_id: "harmonyos-references/js-components-media-video"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:08.700045"
+content_hash: "1a533ec3edae"
+synced_at: "2026-07-09T00:58:23.142715"
 ---
 
 # video
@@ -106,7 +107,7 @@ export default {
         duration: '',
     },
     preparedCallback: function (e) {
-        this.event = '视频连接成功';
+        this.event = '视频准备完成';
         this.duration = e.duration;
     },
     startCallback: function () {
@@ -138,4 +139,4 @@ export default {
     },
 }
 ```
- ![](./img/zh-cn_image_0000002626070992.gif)
+ ![](./img/zh-cn_image_0000002661733025.gif)

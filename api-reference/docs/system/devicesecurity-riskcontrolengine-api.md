@@ -2,7 +2,8 @@
 title: "StarShieldConfidentialRiskControlEngine（星盾机密风控引擎）"
 upstream_id: "harmonyos-references/devicesecurity-riskcontrolengine-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:34.838328"
+content_hash: "ac2545ad8638"
+synced_at: "2026-07-09T00:59:14.328009"
 ---
 
 # StarShieldConfidentialRiskControlEngine（星盾机密风控引擎）
@@ -199,7 +200,7 @@ getRiskControlResult(req: RiskControlDetectionRequest): Promise<RiskControlDetec
 
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
-| req | [RiskControlDetectionRequest](#riskcontroldetectionrequest) | 否 | 风控评分的请求参数。 |
+| req | [RiskControlDetectionRequest](#riskcontroldetectionrequest) | 是 | 风控评分的请求参数。 |
 
 返回值：
 

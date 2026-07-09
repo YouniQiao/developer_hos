@@ -2,7 +2,8 @@
 title: "@ohos.application.formBindingData (卡片数据绑定类)"
 upstream_id: "harmonyos-references/js-apis-application-formbindingdata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:18.059579"
+content_hash: "0b834ca3add7"
+synced_at: "2026-07-09T00:59:03.278473"
 ---
 
 # @ohos.application.formBindingData (卡片数据绑定类)

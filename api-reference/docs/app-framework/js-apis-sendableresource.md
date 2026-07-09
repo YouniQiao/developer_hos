@@ -2,7 +2,8 @@
 title: "SendableResource"
 upstream_id: "harmonyos-references/js-apis-sendableresource"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:23.199629"
+content_hash: "8632e5596ac2"
+synced_at: "2026-07-09T00:59:07.124864"
 ---
 
 # SendableResource

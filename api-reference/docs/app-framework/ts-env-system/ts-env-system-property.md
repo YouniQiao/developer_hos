@@ -2,7 +2,8 @@
 title: "@Env：环境变量"
 upstream_id: "harmonyos-references/ts-env-system-property"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:58.158199"
+content_hash: "14f6cd0bc890"
+synced_at: "2026-07-09T00:58:18.750665"
 ---
 
 # @Env：环境变量

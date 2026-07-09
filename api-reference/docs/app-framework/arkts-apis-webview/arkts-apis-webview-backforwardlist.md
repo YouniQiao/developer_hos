@@ -2,12 +2,13 @@
 title: "Interface (BackForwardList)"
 upstream_id: "harmonyos-references/arkts-apis-webview-backforwardlist"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:04.607010"
+content_hash: "befd014bf8ce"
+synced_at: "2026-07-09T00:58:52.176221"
 ---
 
 # Interface (BackForwardList)
 
-当前Webview的历史信息列表。
+BackForwardList是ArkWeb框架中用于访问Web组件浏览历史列表的接口，通过[getBackForwardEntries](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#getbackforwardentries)方法获取。该接口提供对页面导航历史记录的只读访问能力，开发者可以获取当前历史列表的基本信息（当前索引和历史条目总数），以及通过索引获取指定历史记录项的详细信息。
 
 ![](./img/note_3.0-zh-cn.png)
 

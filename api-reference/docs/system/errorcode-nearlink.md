@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-nearlink"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:50.736140"
+content_hash: "fb3ce4c4335d"
+synced_at: "2026-07-09T00:59:26.883955"
 ---
 
 # ArkTS API错误码

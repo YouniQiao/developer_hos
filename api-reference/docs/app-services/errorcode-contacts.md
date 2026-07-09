@@ -2,7 +2,8 @@
 title: "Contacts错误码"
 upstream_id: "harmonyos-references/errorcode-contacts"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:23.920629"
+content_hash: "85a6befcc320"
+synced_at: "2026-07-09T01:01:16.682922"
 ---
 
 # Contacts错误码

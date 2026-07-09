@@ -2,7 +2,8 @@
 title: "metadata_output.h"
 upstream_id: "harmonyos-references/capi-metadata-output-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:15.167625"
+content_hash: "93f7c1675396"
+synced_at: "2026-07-09T01:00:25.133719"
 ---
 
 # metadata_output.h

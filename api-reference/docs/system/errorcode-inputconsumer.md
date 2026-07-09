@@ -1,9 +1,12 @@
 ---
+
 title: "全局快捷键管理错误码"
 upstream_id: "harmonyos-references/errorcode-inputconsumer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:20.974671"
+synced_at: "2026-07-09T00:59:50.758279"
+content_hash: "fca10e2bf3f3"
 ---
+
 
 # 全局快捷键管理错误码
 

@@ -2,7 +2,8 @@
 title: "RemoteNotificationExtensionAbility（通知扩展Ability）"
 upstream_id: "harmonyos-references/push-remote-notification-extension-ability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:48.920486"
+content_hash: "38c2556da3c5"
+synced_at: "2026-07-09T01:01:37.472731"
 ---
 
 # RemoteNotificationExtensionAbility（通知扩展Ability）

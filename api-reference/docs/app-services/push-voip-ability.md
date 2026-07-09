@@ -2,7 +2,8 @@
 title: "VoIPExtensionAbility（应用内通话消息扩展Ability）（废弃）"
 upstream_id: "harmonyos-references/push-voip-ability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:49.193095"
+content_hash: "4f666138a398"
+synced_at: "2026-07-09T01:01:37.376132"
 ---
 
 # VoIPExtensionAbility（应用内通话消息扩展Ability）（废弃）

@@ -1,11 +1,12 @@
 ---
-title: "Es2abc编译器错误码"
+title: "es2abc编译器错误码"
 upstream_id: "harmonyos-references/errorcode-es2abc"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:18.371206"
+content_hash: "590a2016d9a5"
+synced_at: "2026-07-09T00:57:27.134324"
 ---
 
-# Es2abc编译器错误码
+# es2abc编译器错误码
 
 ![](./img/note_3.0-zh-cn.png) 本节列出 es2abc 编译器模块的专有错误码说明。通用错误码请参考[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
@@ -21,7 +22,7 @@ SyntaxError: Concurrent function should only use import variable or local variab
 ```
  错误描述
 
-出现语法错误，编译器无法解析源文件中的某个语法结构，通常伴随具体的文件名与位置信息（行号与列号）
+出现语法错误，编译器无法解析源文件中的某个语法结构，通常伴随具体的文件名与位置信息（行号与列号）。
 
 可能原因
 
@@ -36,7 +37,7 @@ SyntaxError: Concurrent function should only use import variable or local variab
 2. 修复语法错误，如添加缺失的括号或关键字；
 3. 使用 DevEco Studio 的语法检查工具协助发现语法错误；
 4. 若使用新语法特性，确保当前编译器版本支持该特性；
-5. 如果存在使用加密软件，请关闭加密软件后重新编译。
+5. 如果使用了加密软件，请关闭加密软件后重新编译。
 
 #### 10706001 规格错误
 

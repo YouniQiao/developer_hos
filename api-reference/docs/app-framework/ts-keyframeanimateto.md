@@ -2,7 +2,8 @@
 title: "关键帧动画 (keyframeAnimateTo)"
 upstream_id: "harmonyos-references/ts-keyframeanimateto"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:40.544560"
+content_hash: "eca8ff9e819b"
+synced_at: "2026-07-09T00:58:07.599059"
 ---
 
 # 关键帧动画 (keyframeAnimateTo)
@@ -116,4 +117,4 @@ struct KeyframeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070808.gif)
+ ![](./img/zh-cn_image_0000002661612901.gif)

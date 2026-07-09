@@ -2,7 +2,8 @@
 title: "photo_native.h"
 upstream_id: "harmonyos-references/capi-photo-native-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:15.260677"
+content_hash: "fc944aecb3b0"
+synced_at: "2026-07-09T01:00:24.921833"
 ---
 
 # photo_native.h

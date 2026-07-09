@@ -2,7 +2,8 @@
 title: "native_avdemuxer.h"
 upstream_id: "harmonyos-references/capi-native-avdemuxer-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:02.980212"
+content_hash: "3b4a94dfd944"
+synced_at: "2026-07-09T01:00:15.154132"
 ---
 
 # native_avdemuxer.h

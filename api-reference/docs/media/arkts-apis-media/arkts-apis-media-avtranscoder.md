@@ -2,7 +2,8 @@
 title: "Interface (AVTranscoder)"
 upstream_id: "harmonyos-references/arkts-apis-media-avtranscoder"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:34.105099"
+content_hash: "dc914d996312"
+synced_at: "2026-07-09T01:00:38.842804"
 ---
 
 # Interface (AVTranscoder)

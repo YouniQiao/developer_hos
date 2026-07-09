@@ -2,7 +2,8 @@
 title: "XEG_RTReflectionDescription"
 upstream_id: "harmonyos-references/xengine-kit-xeg-rtreflectiondescription"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:17.158914"
+content_hash: "62b7620234ca"
+synced_at: "2026-07-09T01:01:10.741426"
 ---
 
 # XEG_RTReflectionDescription
@@ -77,8 +78,8 @@ uint primitiveId = (outputReflectionInfoImage.x >> 1) & (0x3ffff);
 uint instanceId = outputReflectionInfoImage.x >> 19;
 vec2 barycentrics = unpackHalf2x16(outputReflectionInfoImage.z);
 float hitT = uintBitsToFloat(outputReflectionInfoImage.w);
-uint sbtOffest = (outputReflectionInfoImage.y >> 16);
-uint geomtryIndex = (outputReflectionInfoImage.y) & 0xffff;
+uint sbtOffset = (outputReflectionInfoImage.y >> 16);
+uint geometryIndex = (outputReflectionInfoImage.y) & 0xffff;
 ```
 
 #### [h2]pNext

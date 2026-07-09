@@ -2,7 +2,8 @@
 title: "Hid_RelAxesArray"
 upstream_id: "harmonyos-references/capi-hidddk-hid-relaxesarray"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:32.859396"
+content_hash: "8f1d51ab0766"
+synced_at: "2026-07-09T00:59:55.803219"
 ---
 
 # Hid_RelAxesArray

@@ -2,7 +2,8 @@
 title: "AREngine_ARSemanticDenseCubeData"
 upstream_id: "harmonyos-references/arengine-struct-arsemanticdensecubedata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:51.176398"
+content_hash: "979a200f80e4"
+synced_at: "2026-07-09T01:00:50.219963"
 ---
 
 # AREngine_ARSemanticDenseCubeData

@@ -2,7 +2,8 @@
 title: "SysCap (系统能力)"
 upstream_id: "harmonyos-references/js-apis-syscap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:01.517753"
+content_hash: "20610deb8d80"
+synced_at: "2026-07-09T01:01:46.017506"
 ---
 
 # SysCap (系统能力)

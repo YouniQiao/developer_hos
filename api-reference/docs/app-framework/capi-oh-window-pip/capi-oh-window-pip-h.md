@@ -2,7 +2,8 @@
 title: "oh_window_pip.h"
 upstream_id: "harmonyos-references/capi-oh-window-pip-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:42.608860"
+content_hash: "8f95b42a063b"
+synced_at: "2026-07-09T00:58:37.509155"
 ---
 
 # oh_window_pip.h

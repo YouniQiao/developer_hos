@@ -2,7 +2,8 @@
 title: "Rcp_Credential"
 upstream_id: "harmonyos-references/_rcp___credential"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:59.872752"
+content_hash: "981b74d56d6b"
+synced_at: "2026-07-09T00:59:33.858364"
 ---
 
 # Rcp_Credential

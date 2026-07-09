@@ -2,7 +2,8 @@
 title: "Class (ArrayBuffer)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-arraybuffer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:12.439036"
+content_hash: "280651cdbca2"
+synced_at: "2026-07-09T00:57:22.546275"
 ---
 
 # Class (ArrayBuffer)
@@ -45,7 +46,7 @@ constructor(byteLength: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| byteLength | number | 是 | buffer所占的字节数，取值范围是[0, 2147483647]，否则会抛出异常。0代表构造的ArrayBuffer的长度为0，2147483647表示构造的ArrayBuffer的长度为2147483647。 |
+| byteLength | number | 是 | buffer所占的字节数，取值范围是[0, 2147483647]，否则会抛出异常。0代表构造的ArkTS ArrayBuffer的长度为0，2147483647表示构造的ArkTS ArrayBuffer的长度为2147483647。 |
 
 错误码：
 

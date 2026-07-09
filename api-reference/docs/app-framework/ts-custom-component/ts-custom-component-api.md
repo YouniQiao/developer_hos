@@ -2,7 +2,8 @@
 title: "自定义组件内置方法"
 upstream_id: "harmonyos-references/ts-custom-component-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:50.160180"
+content_hash: "979d04c47642"
+synced_at: "2026-07-09T00:58:13.791175"
 ---
 
 # 自定义组件内置方法

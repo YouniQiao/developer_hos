@@ -2,7 +2,8 @@
 title: "CardRecognition（卡证识别控件）"
 upstream_id: "harmonyos-references/vision-card-recognition"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:01.275283"
+content_hash: "509f827527cf"
+synced_at: "2026-07-09T01:01:46.108835"
 ---
 
 # CardRecognition（卡证识别控件）
@@ -99,7 +100,7 @@ CardRecognitionConfig, ShootingMode, CardContentConfig, BankCardConfig } from '@
 | --- | --- | --- | --- | --- |
 | code | number | 否 | 否 | 返回的结果码（200：识别成功，-1：识别失败）。 |
 | cardType | [CardType](#cardtype) | 否 | 是 | 卡证类型。默认值：CARD_AUTO。 |
-| cardInfo | Record> | 否 | 是 | 卡证信息。默认值：undefined。 对于双面卡证，包含信息为"front"和"back"。 对于单面卡证，包含信息为"main"。 |
+| cardInfo | Record> | 否 | 是 | 卡证信息。默认值：undefined。 对于双面卡证，包含信息为"front"和"back"。 对于单面卡证，包含信息为"main"。 更多信息参考 [卡证信息](#卡证信息)。 |
 
 #### CardRecognitionResult
 
@@ -117,7 +118,7 @@ CardRecognitionConfig, ShootingMode, CardContentConfig, BankCardConfig } from '@
 | --- | --- | --- | --- | --- |
 | code | number | 否 | 否 | 返回的结果码： 200：识别成功。 1008701001：未识别。 1008701002：识别失败。 1008701003：部分识别失败。 1008701004：未完成识别。 |
 | cardType | [CardType](#cardtype) | 否 | 是 | 卡证类型。默认值：CARD_AUTO。 |
-| cardInfo | Record> | 否 | 是 | 卡证信息。默认值：undefined。 对于双面卡证，包含信息为"front"和"back"。 对于单面卡证，包含信息为"main"。 |
+| cardInfo | Record> | 否 | 是 | 卡证信息。默认值：undefined。 对于双面卡证，包含信息为"front"和"back"。 对于单面卡证，包含信息为"main"。 更多信息参考 [卡证信息](#卡证信息)。 |
 
 #### CardRecognitionConfig
 
@@ -199,9 +200,9 @@ CardRecognitionConfig, ShootingMode, CardContentConfig, BankCardConfig } from '@
 | isPhotoNeeded | boolean | 否 | 是 | 识别到身份证人像面后是否需要返回身份证的人像图片。 true：需要返回身份证人像照片。 false：不需要返回身份证人像照片。 默认值：false。 |
 | isQualityDetectionNeeded | boolean | 否 | 是 | 是否开启质量检测。 true：开启质量检测。 false：不开启质量检测。 默认值：false。 |
 
-#### cardInfo
+#### 卡证信息
 
-具体证件相关信息，包含身份证人像面和国徽面、银行卡、护照、驾驶证正反面、行驶证正反面。
+具体证件相关信息，包含身份证人像面和国徽面、银行卡、护照、驾驶证正反面、行驶证正反面、港澳居民来往内地通行证正反面、台湾居民来往大陆通行证正反面。
 
 身份证人像面
 

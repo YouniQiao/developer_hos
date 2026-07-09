@@ -2,7 +2,8 @@
 title: "@ohos.bundle.defaultAppManager (默认应用管理)"
 upstream_id: "harmonyos-references/js-apis-defaultappmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:51.393738"
+content_hash: "18d14383bcf4"
+synced_at: "2026-07-09T00:57:07.783458"
 ---
 
 # @ohos.bundle.defaultAppManager (默认应用管理)

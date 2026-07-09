@@ -2,7 +2,8 @@
 title: "ipc_error_code.h"
 upstream_id: "harmonyos-references/capi-ipc-error-code-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:21.474760"
+content_hash: "0c6db5716a17"
+synced_at: "2026-07-09T00:59:06.092229"
 ---
 
 # ipc_error_code.h

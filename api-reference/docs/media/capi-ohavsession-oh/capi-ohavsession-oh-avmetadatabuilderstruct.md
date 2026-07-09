@@ -2,7 +2,8 @@
 title: "OH_AVMetadataBuilderStruct"
 upstream_id: "harmonyos-references/capi-ohavsession-oh-avmetadatabuilderstruct"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:08.868955"
+content_hash: "f42415c4b3fe"
+synced_at: "2026-07-09T01:00:19.980344"
 ---
 
 # OH_AVMetadataBuilderStruct
@@ -13,7 +14,7 @@ typedef struct OH_AVMetadataBuilderStruct OH_AVMetadataBuilder
 
 #### 概述
 
-会话元数据构造器。构造器用于构造会话元数据。
+会话元数据构造器。用于构造会话元数据。
 
 起始版本： 13
 

@@ -2,7 +2,8 @@
 title: "Rcp_DnsConfiguration"
 upstream_id: "harmonyos-references/_rcp___dns_configuration"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:59.916316"
+content_hash: "8b6711faa409"
+synced_at: "2026-07-09T00:59:34.047911"
 ---
 
 # Rcp_DnsConfiguration
@@ -46,7 +47,7 @@ Rcp_DnsRule* Rcp_DnsConfiguration::dnsRules
 
 DNS规则配置。
 
-[Rcp_DnsServers](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_rcp___dns_servers): 表示优先使用指定的dns服务器解析主机名。
+[Rcp_DnsServers](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_rcp___dns_servers): 表示优先使用指定的DNS服务器解析主机名。
 
 [Rcp_StaticDnsRule](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_rcp___static_dns_rule): 表示如果主机名匹配，则优先使用指定的地址。
 

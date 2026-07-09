@@ -2,7 +2,8 @@
 title: "buffer_common.h"
 upstream_id: "harmonyos-references/capi-buffer-common-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:58.173039"
+content_hash: "664cc6448df0"
+synced_at: "2026-07-09T01:00:54.444265"
 ---
 
 # buffer_common.h

@@ -2,7 +2,8 @@
 title: "ssap（星闪SSAP连接能力）"
 upstream_id: "harmonyos-references/nearlink-ssap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:50.547215"
+content_hash: "cb5b48e4f0b1"
+synced_at: "2026-07-09T00:59:26.853288"
 ---
 
 # ssap（星闪SSAP连接能力）

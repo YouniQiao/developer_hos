@@ -2,7 +2,8 @@
 title: "Console (控制台)"
 upstream_id: "harmonyos-references/js-apis-logs"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:01.512596"
+content_hash: "8d2bb387430d"
+synced_at: "2026-07-09T01:01:45.924953"
 ---
 
 # Console (控制台)

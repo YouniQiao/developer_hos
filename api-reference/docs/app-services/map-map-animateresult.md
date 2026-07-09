@@ -2,7 +2,8 @@
 title: "Interface (AnimateResult)"
 upstream_id: "harmonyos-references/map-map-animateresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:33.941683"
+content_hash: "1459424564b9"
+synced_at: "2026-07-09T01:01:25.807574"
 ---
 
 # Interface (AnimateResult)

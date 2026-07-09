@@ -2,7 +2,8 @@
 title: "Gauge"
 upstream_id: "harmonyos-references/ts-basic-components-gauge"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:25.844396"
+content_hash: "a616a2ae95f3"
+synced_at: "2026-07-09T00:58:01.652469"
 ---
 
 # Gauge
@@ -373,7 +374,7 @@ struct Gauge1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469963.png)
+ ![](./img/zh-cn_image_0000002631253596.png)
 
 #### [h2]示例2（设置单色量规图）
 
@@ -416,7 +417,7 @@ struct Gauge2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350011.png)
+ ![](./img/zh-cn_image_0000002661612777.png)
 
 #### [h2]示例3（设置定制说明区）
 
@@ -477,7 +478,7 @@ struct Gauge2 {
     }
   }
 ```
- ![](./img/zh-cn_image_0000002626230598.png)
+ ![](./img/zh-cn_image_0000002631413488.png)
 
 #### [h2]示例4（设置辅助区）
 
@@ -531,7 +532,7 @@ struct Gauge4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070688.png)
+ ![](./img/zh-cn_image_0000002661732717.png)
 
 #### [h2]示例5（设置最大最小值）
 
@@ -572,7 +573,7 @@ struct Gauge5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469965.png)
+ ![](./img/zh-cn_image_0000002631253598.png)
 
 #### [h2]示例6（设置指针）
 
@@ -619,7 +620,7 @@ struct Gauge6 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350013.png)
+ ![](./img/zh-cn_image_0000002661612779.png)
 
 #### [h2]示例7（设置起止角度）
 
@@ -658,7 +659,7 @@ struct Gauge7 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230600.png)
+ ![](./img/zh-cn_image_0000002631413490.png)
 
 #### [h2]示例8（设置定制内容区）
 
@@ -740,7 +741,7 @@ struct refreshExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070690.gif)
+ ![](./img/zh-cn_image_0000002661732719.gif)
 
 #### [h2]示例9（设置隐私隐藏）
 
@@ -770,7 +771,7 @@ struct GaugeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469967.gif)
+ ![](./img/zh-cn_image_0000002631253600.gif)
 
 #### [h2]示例10（设置自定义指针）
 
@@ -804,4 +805,4 @@ struct Gauge2 {
     </path>
 </svg>
 ```
- ![](./img/zh-cn_image_0000002656350015.png)
+ ![](./img/zh-cn_image_0000002661612781.png)

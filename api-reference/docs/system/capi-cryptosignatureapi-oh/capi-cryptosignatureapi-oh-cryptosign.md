@@ -2,7 +2,8 @@
 title: "OH_CryptoSign"
 upstream_id: "harmonyos-references/capi-cryptosignatureapi-oh-cryptosign"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:33.222389"
+content_hash: "4f5ca87cd7ca"
+synced_at: "2026-07-09T00:59:13.824446"
 ---
 
 # OH_CryptoSign

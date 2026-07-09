@@ -2,7 +2,8 @@
 title: "xeg_vulkan_hps.h"
 upstream_id: "harmonyos-references/xengine-kit-xeg-vulkan-hps-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:15.777272"
+content_hash: "d0b6a3deb708"
+synced_at: "2026-07-09T01:01:09.645967"
 ---
 
 # xeg_vulkan_hps.h

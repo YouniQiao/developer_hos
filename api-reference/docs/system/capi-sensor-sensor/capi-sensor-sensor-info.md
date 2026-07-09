@@ -2,7 +2,8 @@
 title: "Sensor_Info"
 upstream_id: "harmonyos-references/capi-sensor-sensor-info"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:42.513980"
+content_hash: "66a5a11cde3d"
+synced_at: "2026-07-09T01:00:00.783341"
 ---
 
 # Sensor_Info

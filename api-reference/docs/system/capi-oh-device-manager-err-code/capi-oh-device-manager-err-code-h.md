@@ -2,7 +2,8 @@
 title: "oh_device_manager_err_code.h"
 upstream_id: "harmonyos-references/capi-oh-device-manager-err-code-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:49.899582"
+content_hash: "d3e150b24b9e"
+synced_at: "2026-07-09T00:59:26.120691"
 ---
 
 # oh_device_manager_err_code.h

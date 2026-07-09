@@ -2,7 +2,8 @@
 title: "text"
 upstream_id: "harmonyos-references/js-lite-components-basic-text"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:21.116166"
+content_hash: "d79de219aa40"
+synced_at: "2026-07-09T00:58:28.483385"
 ---
 
 # text
@@ -96,4 +97,4 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002626071202.png)
+ ![](./img/zh-cn_image_0000002661733237.png)

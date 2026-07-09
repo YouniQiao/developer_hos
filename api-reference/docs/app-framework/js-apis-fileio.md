@@ -2,7 +2,8 @@
 title: "@ohos.fileio (文件管理)"
 upstream_id: "harmonyos-references/js-apis-fileio"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:14.628642"
+content_hash: "c3d50c5bb37c"
+synced_at: "2026-07-09T00:59:00.504934"
 ---
 
 # @ohos.fileio (文件管理)

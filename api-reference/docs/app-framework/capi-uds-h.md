@@ -2,7 +2,8 @@
 title: "uds.h"
 upstream_id: "harmonyos-references/capi-uds-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:07.818925"
+content_hash: "a71ec8089491"
+synced_at: "2026-07-09T00:57:20.413693"
 ---
 
 # uds.h

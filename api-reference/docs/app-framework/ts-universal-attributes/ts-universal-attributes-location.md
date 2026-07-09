@@ -2,7 +2,8 @@
 title: "位置设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-location"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:36.525881"
+content_hash: "07e44c9e5f14"
+synced_at: "2026-07-09T00:57:38.531758"
 ---
 
 # 位置设置
@@ -432,7 +433,7 @@ struct PositionExample1 {
   build() {
     Column() {
       Column({ space: 10 }) {
-        // 元素内容<元素宽高，设置内容在与元素内的对齐方式
+        // 元素内容 < 元素宽高，设置内容在元素内的对齐方式
         Text('align').fontSize(9).fontColor(0xCCCCCC).width('90%')
         Stack() {
           Text('First show in bottom end').height('65%').backgroundColor(0xD2B48C)
@@ -469,7 +470,7 @@ struct PositionExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349579.png)
+ ![](./img/zh-cn_image_0000002631253152.png)
 
 #### [h2]示例2（位置偏移）
 
@@ -557,7 +558,7 @@ struct PositionExample2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230166.png)
+ ![](./img/zh-cn_image_0000002661612337.png)
 
 #### [h2]示例3（绝对定位和相对偏移）
 
@@ -635,7 +636,7 @@ struct Example3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070256.jpeg)
+ ![](./img/zh-cn_image_0000002631413044.jpeg)
 
 #### [h2]示例4（镜像效果）
 
@@ -736,11 +737,11 @@ struct Example4 {
 ```
  镜像前效果：
 
-![](./img/zh-cn_image_0000002656469533.png)
+![](./img/zh-cn_image_0000002661732277.png)
 
 镜像后效果如下，镜像生效条件请参考[使用镜像能力](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-internationalization#使用镜像能力)：
 
-![](./img/zh-cn_image_0000002656349581.png)
+![](./img/zh-cn_image_0000002631253154.png)
 
 #### [h2]示例5（align属性适配镜像特性）
 
@@ -808,7 +809,7 @@ struct buttonTestDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230168.gif)
+ ![](./img/zh-cn_image_0000002661612339.gif)
 
 #### [h2]示例6（layoutGravity属性单独设置Stack组件中子组件的对齐规则）
 
@@ -869,4 +870,4 @@ struct Index5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070258.gif)
+ ![](./img/zh-cn_image_0000002631413046.gif)

@@ -2,7 +2,8 @@
 title: "OH_Drawing_Point"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-point"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:09.379424"
+content_hash: "d3cbcf8e29cd"
+synced_at: "2026-07-09T01:01:03.516164"
 ---
 
 # OH_Drawing_Point

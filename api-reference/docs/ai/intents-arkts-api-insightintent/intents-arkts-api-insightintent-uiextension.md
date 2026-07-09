@@ -2,7 +2,8 @@
 title: "InsightIntentUIExtensionAbility (意图调用UI扩展能力)"
 upstream_id: "harmonyos-references/intents-arkts-api-insightintent-uiextension"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:57.308361"
+content_hash: "2e0681a761c5"
+synced_at: "2026-07-09T01:01:42.250710"
 ---
 
 # InsightIntentUIExtensionAbility (意图调用UI扩展能力)

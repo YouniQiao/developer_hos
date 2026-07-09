@@ -2,7 +2,8 @@
 title: "Vibrator_Attribute"
 upstream_id: "harmonyos-references/capi-vibrator-vibrator-attribute"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:42.901252"
+content_hash: "d47279352957"
+synced_at: "2026-07-09T01:00:01.150073"
 ---
 
 # Vibrator_Attribute

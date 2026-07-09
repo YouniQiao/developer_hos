@@ -2,7 +2,8 @@
 title: "OH_ArkUI_SurfaceHolder"
 upstream_id: "harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-arkui-surfaceholder"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:49.559802"
+content_hash: "c819e55a7999"
+synced_at: "2026-07-09T00:58:41.620235"
 ---
 
 # OH_ArkUI_SurfaceHolder

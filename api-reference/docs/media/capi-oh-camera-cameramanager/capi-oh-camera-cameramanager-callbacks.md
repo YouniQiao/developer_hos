@@ -2,7 +2,8 @@
 title: "CameraManager_Callbacks"
 upstream_id: "harmonyos-references/capi-oh-camera-cameramanager-callbacks"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:17.887826"
+content_hash: "3f3319ed7b40"
+synced_at: "2026-07-09T01:00:26.774979"
 ---
 
 # CameraManager_Callbacks

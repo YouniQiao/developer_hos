@@ -2,7 +2,8 @@
 title: "OH_Camera_ZoomPointInfo"
 upstream_id: "harmonyos-references/capi-oh-camera-oh-camera-zoompointinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:19.117266"
+content_hash: "c7359963ab36"
+synced_at: "2026-07-09T01:00:27.470816"
 ---
 
 # OH_Camera_ZoomPointInfo

@@ -2,7 +2,8 @@
 title: "OH_ArkUI_LineHeightStyle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-arkui-lineheightstyle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:55.643572"
+content_hash: "6111b28be101"
+synced_at: "2026-07-09T00:58:45.226112"
 ---
 
 # OH_ArkUI_LineHeightStyle

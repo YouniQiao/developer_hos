@@ -2,7 +2,8 @@
 title: "@ohos.application.appManager (appManager)"
 upstream_id: "harmonyos-references/js-apis-application-appmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:55.891008"
+content_hash: "7a5a49a9c1c4"
+synced_at: "2026-07-09T00:57:11.046419"
 ---
 
 # @ohos.application.appManager (appManager)

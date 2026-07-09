@@ -2,7 +2,8 @@
 title: "fido2_api.h"
 upstream_id: "harmonyos-references/onlineauthentication_capi_header_fido2"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:39.115232"
+content_hash: "ae9b18613781"
+synced_at: "2026-07-09T00:59:17.881141"
 ---
 
 # fido2_api.h

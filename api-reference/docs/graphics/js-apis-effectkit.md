@@ -2,7 +2,8 @@
 title: "@ohos.effectKit (图像效果)"
 upstream_id: "harmonyos-references/js-apis-effectkit"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:51.423576"
+content_hash: "47e7773fd2e3"
+synced_at: "2026-07-09T01:00:51.070725"
 ---
 
 # @ohos.effectKit (图像效果)
@@ -372,7 +373,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
   })
 })
 ```
- ![](./img/zh-cn_image_0000002626231558.png)
+ ![](./img/zh-cn_image_0000002631414460.png)
 
 #### [h2]getMainColorSync
 
@@ -419,7 +420,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
   })
 })
 ```
- ![](./img/zh-cn_image_0000002626231558.png)
+ ![](./img/zh-cn_image_0000002631414460.png)
 
 #### [h2]getLargestProportionColor10+
 
@@ -466,7 +467,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
   })
 })
 ```
- ![](./img/zh-cn_image_0000002626071646.png)
+ ![](./img/zh-cn_image_0000002661733687.png)
 
 #### [h2]getTopProportionColors12+
 
@@ -523,7 +524,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
   })
 })
 ```
- ![](./img/zh-cn_image_0000002656470923.png)
+ ![](./img/zh-cn_image_0000002631254566.png)
 
 #### [h2]getHighestSaturationColor10+
 
@@ -570,7 +571,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
   })
 })
 ```
- ![](./img/zh-cn_image_0000002656350973.png)
+ ![](./img/zh-cn_image_0000002661613751.png)
 
 #### [h2]getAverageColor10+
 
@@ -617,7 +618,7 @@ image.createPixelMap(color, opts).then((pixelMap) => {
   })
 })
 ```
- ![](./img/zh-cn_image_0000002626231560.png)
+ ![](./img/zh-cn_image_0000002631414462.png)
 
 #### [h2]isBlackOrWhiteOrGrayColor10+
 
@@ -763,7 +764,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626071648.png)
+ ![](./img/zh-cn_image_0000002661733689.png)
 
 #### [h2]blur14+
 
@@ -850,7 +851,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470925.png)
+ ![](./img/zh-cn_image_0000002631254568.png)
 
 #### [h2]invert12+
 
@@ -927,7 +928,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350975.png)
+ ![](./img/zh-cn_image_0000002661613753.png)
 
 #### [h2]setColorMatrix12+
 
@@ -1024,7 +1025,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626231562.png)
+ ![](./img/zh-cn_image_0000002631414464.png)
 
 #### [h2]brightness
 
@@ -1112,7 +1113,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626071650.png)
+ ![](./img/zh-cn_image_0000002661733691.png)
 
 #### [h2]grayscale
 
@@ -1193,7 +1194,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470927.png)
+ ![](./img/zh-cn_image_0000002631254570.png)
 
 #### [h2]getEffectPixelMap11+
 

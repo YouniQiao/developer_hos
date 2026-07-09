@@ -2,7 +2,8 @@
 title: "ffrt_task_handle_t"
 upstream_id: "harmonyos-references/capi-ffrt-ffrt-task-handle-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:17.550121"
+content_hash: "f284e65f3d68"
+synced_at: "2026-07-09T00:59:48.116321"
 ---
 
 # ffrt_task_handle_t

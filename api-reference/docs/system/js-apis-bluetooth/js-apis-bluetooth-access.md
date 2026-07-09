@@ -2,7 +2,8 @@
 title: "@ohos.bluetooth.access (蓝牙access模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-access"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:45.300994"
+content_hash: "75c50dafb8a0"
+synced_at: "2026-07-09T00:59:23.020351"
 ---
 
 # @ohos.bluetooth.access (蓝牙access模块)

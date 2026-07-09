@@ -2,7 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-avmusictemplate-i"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:07.652674"
+content_hash: "5bcd37527600"
+synced_at: "2026-07-09T01:00:19.293485"
 ---
 
 # Interfaces (其他)
@@ -139,7 +140,7 @@ synced_at: "2026-06-24T20:52:07.652674"
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | entityId | string | 否 | 否 | 媒体实例的ID。 |
-| pageIndex | number | 否 | 否 | 媒体标签页的索引。 |
+| pageIndex | number | 否 | 否 | 分页查询页码。 |
 | type | [EntityType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-e#entitytype) | 否 | 否 | 媒体资源类型。 |
 | subEntityType | [EntityType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-e#entitytype) | 否 | 是 | 子节点的媒体资源类型。 |
 | sort | [Sort](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-e#sort) | 否 | 是 | 查询到的列表数据排序。 |
@@ -211,8 +212,8 @@ synced_at: "2026-06-24T20:52:07.652674"
 | isSupportPrev | boolean | 否 | 否 | 是否支持上一首。true表示支持，false表示不支持。无默认值。 |
 | isSupportQuickForward | boolean | 否 | 否 | 是否支持快进。true表示支持，false表示不支持。无默认值。 |
 | isSupportQuickBackward | boolean | 否 | 否 | 是否支持快退。true表示支持，false表示不支持。无默认值。 |
-| quickForwardStep | number | 否 | 否 | 每一次快进的幅度。 |
-| quickBackwardStep | number | 否 | 否 | 每一次快退的幅度。 |
+| quickForwardStep | number | 否 | 否 | 快进的步长，单位为毫秒（ms）。 |
+| quickBackwardStep | number | 否 | 否 | 快退的步长，单位为毫秒（ms）。 |
 | isSupportSkipHead | boolean | 否 | 否 | 是否支持跳过开头。true表示支持，false表示不支持。无默认值。 |
 | isSupportSkipTail | boolean | 否 | 否 | 是否支持跳过结尾。true表示支持，false表示不支持。无默认值。 |
 | isSupportPlayMode | boolean | 否 | 否 | 是否支持切换播放模式。true表示支持，false表示不支持。无默认值。 |
@@ -221,8 +222,8 @@ synced_at: "2026-06-24T20:52:07.652674"
 | currentPlayRate | string | 否 | 否 | 当前的播放速率。 |
 | isSupportSoundQuality | boolean | 否 | 否 | 是否支持声音质量。true表示支持，false表示不支持。无默认值。 |
 | isSupportSoundEffect | boolean | 否 | 否 | 是否支持音效。true表示支持，false表示不支持。无默认值。 |
-| totalDuration | number | 否 | 否 | 播放总时长。 |
-| currentPlayDuration | number | 否 | 否 | 当前播放的时长。 |
+| totalDuration | number | 否 | 否 | 播放总时长，单位为毫秒（ms）。 |
+| currentPlayDuration | number | 否 | 否 | 当前播放的时长，单位为毫秒（ms）。 |
 | isSupportProgress | boolean | 否 | 否 | 是否支持进度。true表示支持，false表示不支持。默认值为true。 |
 
 #### FavoriteData
@@ -253,7 +254,7 @@ synced_at: "2026-06-24T20:52:07.652674"
 | title | string | 否 | 否 | 设置项的标题。 |
 | desc | string | 否 | 否 | 设置项的描述。 |
 | settingType | [SettingType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-e#settingtype) | 否 | 是 | 设置项的类型。 |
-| settingValue | string | boolean | [SettingContent](#settingcontent)[] | [WantAgent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-wantagent#wantagent) | 否 | 是 | 设置项的值。 - 当settingType类型是SettingType.SWITCH时，本值数据类型是boolean。 - 当settingType类型是SettingType.LIST时，本值数据类型是SettingContent数组。 - 当settingType类型是SettingType.JUMP时，本值数据类型是string。 |
+| settingValue | string | boolean | [SettingContent](#settingcontent)[] | [WantAgent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-wantagent#wantagent) | 否 | 是 | 设置项的值。 - 当settingType为SettingType.SWITCH时，该值为boolean类型。 - 当settingType为SettingType.LIST时，该值为SettingContent数组。 - 当settingType为SettingType.JUMP时，该值为string类型。 |
 | mediaId | string | 否 | 否 | 与当前设置关联的媒体ID。 如果设置与当前媒体信息相关联，需要设置mediaId；否则，不需要设置mediaId。 |
 
 #### SettingContent
@@ -269,7 +270,7 @@ synced_at: "2026-06-24T20:52:07.652674"
 | value | string | 否 | 否 | 设置的内容。 |
 | isSelected | boolean | 否 | 否 | 是否选择设置项内容。true表示选择，false表示不选择。无默认值。 |
 | textTags | string[] | 否 | 是 | 设置内容的描述的数组。 |
-| imageTags | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)[] | 否 | 是 | 设置内容的标签描述的数组。 |
+| imageTags | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)[] | 否 | 是 | 设置内容的图片标签数组。 |
 
 #### QrCodeInfo
 
@@ -439,5 +440,5 @@ synced_at: "2026-06-24T20:52:07.652674"
 | --- | --- | --- | --- | --- |
 | entityId | string | 否 | 否 | 视频的唯一标识。 |
 | episodeId | string | 否 | 是 | 视频的集数ID。 |
-| episodeNumber | number | 否 | 是 | 视频的集数。 |
+| episodeNumber | number | 否 | 是 | 视频的剧集序号。 |
 | extras | string | 否 | 是 | 视频的额外信息。 |

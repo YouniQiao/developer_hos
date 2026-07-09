@@ -2,7 +2,8 @@
 title: "@ohos.uri (URI字符串解析)"
 upstream_id: "harmonyos-references/js-apis-uri"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:16.258175"
+content_hash: "31276f10b0c9"
+synced_at: "2026-07-09T00:57:25.579754"
 ---
 
 # @ohos.uri (URI字符串解析)

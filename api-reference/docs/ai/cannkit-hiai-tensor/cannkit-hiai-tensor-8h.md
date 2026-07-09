@@ -2,7 +2,8 @@
 title: "hiai_tensor.h"
 upstream_id: "harmonyos-references/cannkit-hiai-tensor-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:55.480092"
+content_hash: "aad4e0b1ec4d"
+synced_at: "2026-07-09T01:01:40.825461"
 ---
 
 # hiai_tensor.h

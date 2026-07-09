@@ -2,7 +2,8 @@
 title: "AssetType"
 upstream_id: "harmonyos-references/capi-assettype"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:28.875318"
+content_hash: "2524a1cf250d"
+synced_at: "2026-07-09T00:59:10.776396"
 ---
 
 # AssetType

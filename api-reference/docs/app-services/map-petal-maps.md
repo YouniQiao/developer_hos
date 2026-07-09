@@ -2,7 +2,8 @@
 title: "petalMaps（拉起地图应用）"
 upstream_id: "harmonyos-references/map-petal-maps"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:35.066028"
+content_hash: "412216012576"
+synced_at: "2026-07-09T01:01:27.263082"
 ---
 
 # petalMaps（拉起地图应用）

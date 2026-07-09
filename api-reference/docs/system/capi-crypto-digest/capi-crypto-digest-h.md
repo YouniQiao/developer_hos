@@ -2,7 +2,8 @@
 title: "crypto_digest.h"
 upstream_id: "harmonyos-references/capi-crypto-digest-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:31.206204"
+content_hash: "e6b0eefaf5da"
+synced_at: "2026-07-09T00:59:12.355983"
 ---
 
 # crypto_digest.h

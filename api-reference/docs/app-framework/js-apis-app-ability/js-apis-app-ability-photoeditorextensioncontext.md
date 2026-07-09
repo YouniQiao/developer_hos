@@ -2,7 +2,8 @@
 title: "PhotoEditorExtensionContext"
 upstream_id: "harmonyos-references/js-apis-app-ability-photoeditorextensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:54.512196"
+content_hash: "c6bb38592091"
+synced_at: "2026-07-09T00:57:09.893162"
 ---
 
 # PhotoEditorExtensionContext

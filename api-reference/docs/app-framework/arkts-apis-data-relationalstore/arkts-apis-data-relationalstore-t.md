@@ -2,7 +2,8 @@
 title: "Types"
 upstream_id: "harmonyos-references/arkts-apis-data-relationalstore-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:04.195073"
+content_hash: "561d4867f36a"
+synced_at: "2026-07-09T00:57:16.433081"
 ---
 
 # Types

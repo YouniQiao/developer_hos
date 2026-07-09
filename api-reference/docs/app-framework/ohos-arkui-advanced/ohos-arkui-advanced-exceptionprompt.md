@@ -2,7 +2,8 @@
 title: "ExceptionPrompt"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-exceptionprompt"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:52.195958"
+content_hash: "e1867416721f"
+synced_at: "2026-07-09T00:58:14.941789"
 ---
 
 # ExceptionPrompt
@@ -118,7 +119,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230804.png)
+ ![](./img/zh-cn_image_0000002631253804.png)
 
 #### [h2]示例2（设置弹窗类型的异常提示）
 
@@ -245,7 +246,7 @@ struct Index1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070894.gif)
+ ![](./img/zh-cn_image_0000002661612987.gif)
 
 #### [h2]示例3（设置Symbol类型图标）
 
@@ -284,4 +285,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470171.png)
+ ![](./img/zh-cn_image_0000002631413698.png)

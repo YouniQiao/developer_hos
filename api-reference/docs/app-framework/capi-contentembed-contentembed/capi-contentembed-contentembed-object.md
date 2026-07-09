@@ -2,7 +2,8 @@
 title: "ContentEmbed_Object"
 upstream_id: "harmonyos-references/capi-contentembed-contentembed-object"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:12.237725"
+content_hash: "014f12c947f7"
+synced_at: "2026-07-09T00:58:58.910793"
 ---
 
 # ContentEmbed_Object

@@ -2,7 +2,8 @@
 title: "@ohos.application.formInfo (formInfo)"
 upstream_id: "harmonyos-references/js-apis-application-forminfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:18.179924"
+content_hash: "0448587366fa"
+synced_at: "2026-07-09T00:59:03.646498"
 ---
 
 # @ohos.application.formInfo (formInfo)

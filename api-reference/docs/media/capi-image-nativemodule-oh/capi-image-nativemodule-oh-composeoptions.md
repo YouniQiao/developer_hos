@@ -2,7 +2,8 @@
 title: "OH_ComposeOptions"
 upstream_id: "harmonyos-references/capi-image-nativemodule-oh-composeoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:32.672593"
+content_hash: "c01b9ded9399"
+synced_at: "2026-07-09T01:00:37.390293"
 ---
 
 # OH_ComposeOptions

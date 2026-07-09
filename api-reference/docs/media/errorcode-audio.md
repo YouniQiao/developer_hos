@@ -2,7 +2,8 @@
 title: "Audio错误码"
 upstream_id: "harmonyos-references/errorcode-audio"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:00.903350"
+content_hash: "bbb1b68ef990"
+synced_at: "2026-07-09T01:00:13.017962"
 ---
 
 # Audio错误码

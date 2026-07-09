@@ -2,7 +2,8 @@
 title: "@system.prompt (弹窗)"
 upstream_id: "harmonyos-references/js-apis-system-prompt"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:31.455739"
+content_hash: "11f2f29a87a9"
+synced_at: "2026-07-09T00:57:35.387448"
 ---
 
 # @system.prompt (弹窗)

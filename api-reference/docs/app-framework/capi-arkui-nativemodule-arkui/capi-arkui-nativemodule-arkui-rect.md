@@ -2,7 +2,8 @@
 title: "ArkUI_Rect"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-rect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:51.146285"
+content_hash: "1ab7d1d33efa"
+synced_at: "2026-07-09T00:58:42.462156"
 ---
 
 # ArkUI_Rect

@@ -2,7 +2,8 @@
 title: "Class (PhotoViewPicker)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-photoviewpicker"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:44.093592"
+content_hash: "3d92838ccbe8"
+synced_at: "2026-07-09T01:00:46.205319"
 ---
 
 # Class (PhotoViewPicker)

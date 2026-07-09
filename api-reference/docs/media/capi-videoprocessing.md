@@ -2,7 +2,8 @@
 title: "VideoProcessing"
 upstream_id: "harmonyos-references/capi-videoprocessing"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:35.743631"
+content_hash: "236aa9bc067e"
+synced_at: "2026-07-09T01:00:39.934234"
 ---
 
 # VideoProcessing

@@ -2,7 +2,8 @@
 title: "@ohos.bundle.skillManager (skillManager模块)"
 upstream_id: "harmonyos-references/js-apis-skillmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:51.646891"
+content_hash: "243d713ae685"
+synced_at: "2026-07-09T00:57:08.217952"
 ---
 
 # @ohos.bundle.skillManager (skillManager模块)

@@ -2,7 +2,8 @@
 title: "asset_api.h"
 upstream_id: "harmonyos-references/capi-asset-api-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:28.930218"
+content_hash: "7a7f8153cad2"
+synced_at: "2026-07-09T00:59:10.486524"
 ---
 
 # asset_api.h

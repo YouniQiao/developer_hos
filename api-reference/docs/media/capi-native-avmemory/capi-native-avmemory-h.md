@@ -2,7 +2,8 @@
 title: "native_avmemory.h"
 upstream_id: "harmonyos-references/capi-native-avmemory-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:02.701205"
+content_hash: "21349c9b96b3"
+synced_at: "2026-07-09T01:00:14.659246"
 ---
 
 # native_avmemory.h

@@ -2,7 +2,8 @@
 title: "Interface (MetadataOutput)"
 upstream_id: "harmonyos-references/arkts-apis-camera-metadataoutput"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:12.270553"
+content_hash: "7521271896a7"
+synced_at: "2026-07-09T01:00:22.632422"
 ---
 
 # Interface (MetadataOutput)

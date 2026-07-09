@@ -2,7 +2,8 @@
 title: "ComposeListItem"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-composelistitem"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:51.117491"
+content_hash: "185aaa57ef42"
+synced_at: "2026-07-09T00:58:14.703414"
 ---
 
 # ComposeListItem
@@ -195,7 +196,7 @@ struct ComposeListItemExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350209.jpg)
+ ![](./img/zh-cn_image_0000002661732917.jpg)
 
 #### [h2]示例2（设置右侧不同元素自定义播报）
 
@@ -277,7 +278,7 @@ struct ComposeListItemExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230796.png)
+ ![](./img/zh-cn_image_0000002631253796.png)
 
 #### [h2]示例3（设置Symbol类型图标）
 
@@ -351,4 +352,4 @@ struct ComposeListItemExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070886.png)
+ ![](./img/zh-cn_image_0000002661612979.png)

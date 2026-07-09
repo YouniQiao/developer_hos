@@ -2,7 +2,8 @@
 title: "Interface (MarkerDelegate)"
 upstream_id: "harmonyos-references/map-map-markerdelegate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:34.156892"
+content_hash: "6d3733e4834d"
+synced_at: "2026-07-09T01:01:25.834616"
 ---
 
 # Interface (MarkerDelegate)

@@ -2,7 +2,8 @@
 title: "Rdb_Statistic"
 upstream_id: "harmonyos-references/capi-rdb-rdb-statistic"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:09.018936"
+content_hash: "6b7fa06d7507"
+synced_at: "2026-07-09T00:57:20.595819"
 ---
 
 # Rdb_Statistic

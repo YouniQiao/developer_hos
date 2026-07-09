@@ -2,7 +2,8 @@
 title: "OH_UdmfProperty"
 upstream_id: "harmonyos-references/capi-udmf-oh-udmfproperty"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:10.151391"
+content_hash: "3630da885189"
+synced_at: "2026-07-09T00:57:21.436127"
 ---
 
 # OH_UdmfProperty

@@ -2,7 +2,8 @@
 title: "Class (ColorFilter)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-colorfilter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:52.593433"
+content_hash: "866a61f2cd73"
+synced_at: "2026-07-09T01:00:51.655591"
 ---
 
 # Class (ColorFilter)

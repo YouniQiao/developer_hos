@@ -2,7 +2,8 @@
 title: "clock"
 upstream_id: "harmonyos-references/js-service-widget-basic-clock"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:27.617402"
+content_hash: "8955a2fc30b5"
+synced_at: "2026-07-09T00:58:31.502672"
 ---
 
 # clock
@@ -42,7 +43,7 @@ synced_at: "2026-06-24T20:49:27.617402"
 | digitRadiusRatio | number | 0.7 | 否 | 表盘数字中心到表盘中心距离 / 表盘资源边长的一半。 - 有效范围为(0, 1]。 - 该参数用于计算表盘数字在表盘上距离圆心的位置。 - 该参数可以保证同一套表盘资源在不同组件尺寸下都有同样的相对位置，而不需要针对每个组件尺寸都重新调整数字位置。 - 该参数设为1时数字会有部分区域超出表盘，建议结合表盘区域合理设置digitRadiusRatio。 |
 | digitSizeRatio | number | 0.08 | 否 | 表盘数字尺寸/表盘资源边长。 - 有效范围为(0, 0.142]。 - 该参数用于计算表盘数字相对表盘尺寸的大小。 - 该参数可以保证同一套表盘资源在不同组件尺寸下都有同样的相对大小，而不需要针对每个组件尺寸都重新调整字号。 |
 
-![](./img/zh-cn_image_0000002626071218.png)
+![](./img/zh-cn_image_0000002661733253.png)
 
 #### 样式
 
@@ -116,4 +117,4 @@ synced_at: "2026-06-24T20:49:27.617402"
 ```
  2*4卡片
 
-![](./img/zh-cn_image_0000002656470495.png)
+![](./img/zh-cn_image_0000002631254132.png)

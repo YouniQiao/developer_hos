@@ -2,7 +2,8 @@
 title: "RowSplit"
 upstream_id: "harmonyos-references/ts-container-rowsplit"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:53.772768"
+content_hash: "fab6be8c30a2"
+synced_at: "2026-07-09T00:57:46.137791"
 ---
 
 # RowSplit
@@ -82,4 +83,4 @@ struct RowSplitExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230284.gif)
+ ![](./img/zh-cn_image_0000002661612459.gif)

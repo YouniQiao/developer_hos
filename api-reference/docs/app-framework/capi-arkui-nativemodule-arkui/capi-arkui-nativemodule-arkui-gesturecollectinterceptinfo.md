@@ -2,7 +2,8 @@
 title: "ArkUI_GestureCollectInterceptInfo"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-gesturecollectinterceptinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:46.998639"
+content_hash: "b033f861f8aa"
+synced_at: "2026-07-09T00:58:40.255115"
 ---
 
 # ArkUI_GestureCollectInterceptInfo

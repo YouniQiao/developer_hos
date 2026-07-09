@@ -2,7 +2,8 @@
 title: "oh_display_info.h"
 upstream_id: "harmonyos-references/capi-oh-display-info-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:42.954193"
+content_hash: "8af496149943"
+synced_at: "2026-07-09T00:58:37.981868"
 ---
 
 # oh_display_info.h

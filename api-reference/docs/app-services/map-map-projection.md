@@ -2,7 +2,8 @@
 title: "Interface (Projection)"
 upstream_id: "harmonyos-references/map-map-projection"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:32.802497"
+content_hash: "97ff1602a15a"
+synced_at: "2026-07-09T01:01:25.061119"
 ---
 
 # Interface (Projection)

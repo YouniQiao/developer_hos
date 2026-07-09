@@ -2,7 +2,8 @@
 title: "OH_AVScreenCapture_UserSelectionInfo"
 upstream_id: "harmonyos-references/capi-avscreencapture-oh-avscreencapture-userselectioninfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:41.085244"
+content_hash: "d8f5fbcaf06d"
+synced_at: "2026-07-09T01:00:44.465872"
 ---
 
 # OH_AVScreenCapture_UserSelectionInfo

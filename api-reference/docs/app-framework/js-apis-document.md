@@ -2,7 +2,8 @@
 title: "@ohos.document (文件交互)"
 upstream_id: "harmonyos-references/js-apis-document"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:14.309625"
+content_hash: "6ec25ec7604f"
+synced_at: "2026-07-09T00:59:00.255490"
 ---
 
 # @ohos.document (文件交互)

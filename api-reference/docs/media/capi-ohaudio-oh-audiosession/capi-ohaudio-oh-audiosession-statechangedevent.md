@@ -2,7 +2,8 @@
 title: "OH_AudioSession_StateChangedEvent"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audiosession-statechangedevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:57.887908"
+content_hash: "419e0f435236"
+synced_at: "2026-07-09T01:00:11.077385"
 ---
 
 # OH_AudioSession_StateChangedEvent

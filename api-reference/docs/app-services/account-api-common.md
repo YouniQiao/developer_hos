@@ -2,7 +2,8 @@
 title: "公共说明"
 upstream_id: "harmonyos-references/account-api-common"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:18.443318"
+content_hash: "93aca143950e"
+synced_at: "2026-07-09T01:01:12.084495"
 ---
 
 # 公共说明

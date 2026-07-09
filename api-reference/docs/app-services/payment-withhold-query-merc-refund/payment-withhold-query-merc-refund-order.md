@@ -2,7 +2,8 @@
 title: "通过mercRefundOrderNo查询退款订单信息"
 upstream_id: "harmonyos-references/payment-withhold-query-merc-refund-order"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:41.985042"
+content_hash: "a52a66f97292"
+synced_at: "2026-07-09T01:01:31.886704"
 ---
 
 # 通过mercRefundOrderNo查询退款订单信息
@@ -41,7 +42,7 @@ Request Header
 
 Request Path
 
-| 参数 | 是否必填 | 参数类型 | 描述 |
+| 参数 | 是否必选 | 参数类型 | 描述 |
 | --- | --- | --- | --- |
 | mercRefundOrderNo | 是 | String | 商户退款订单号。最大长度64。 |
 

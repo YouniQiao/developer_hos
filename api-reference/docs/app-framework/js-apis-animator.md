@@ -2,7 +2,8 @@
 title: "@ohos.animator (动画)"
 upstream_id: "harmonyos-references/js-apis-animator"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:18.587952"
+content_hash: "75a7b7d42cd0"
+synced_at: "2026-07-09T00:57:27.414966"
 ---
 
 # @ohos.animator (动画)
@@ -945,7 +946,7 @@ class DateT {
   })
 }
 ```
- ![](./img/zh-cn_image_0000002626070156.gif)
+ ![](./img/zh-cn_image_0000002631253050.gif)
 
 #### [h2]基于ArkTS扩展的声明式开发范式
 
@@ -1114,7 +1115,7 @@ struct AnimatorTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469433.gif)
+ ![](./img/zh-cn_image_0000002661612233.gif)
 
 #### [h2]位移动画示例（简易入参）
 
@@ -1214,4 +1215,4 @@ struct AnimatorTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349481.gif)
+ ![](./img/zh-cn_image_0000002631412940.gif)

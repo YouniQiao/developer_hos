@@ -2,7 +2,8 @@
 title: "Class (WebContextMenuResult)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-webcontextmenuresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:06.844112"
+content_hash: "1483d76e9a2a"
+synced_at: "2026-07-09T00:58:54.132678"
 ---
 
 # Class (WebContextMenuResult)

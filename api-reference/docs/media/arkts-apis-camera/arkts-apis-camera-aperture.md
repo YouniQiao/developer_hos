@@ -2,7 +2,8 @@
 title: "Interface (Aperture)"
 upstream_id: "harmonyos-references/arkts-apis-camera-aperture"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:10.101240"
+content_hash: "7717df9a52f8"
+synced_at: "2026-07-09T01:00:20.829910"
 ---
 
 # Interface (Aperture)

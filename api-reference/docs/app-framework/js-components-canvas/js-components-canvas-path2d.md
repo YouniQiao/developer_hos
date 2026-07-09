@@ -2,7 +2,8 @@
 title: "Path2D对象"
 upstream_id: "harmonyos-references/js-components-canvas-path2d"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:09.332983"
+content_hash: "370eb6d324af"
+synced_at: "2026-07-09T00:58:23.760790"
 ---
 
 # Path2D对象
@@ -45,7 +46,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626071020.png)
+ ![](./img/zh-cn_image_0000002661733055.png)
 
 #### setTransform
 
@@ -85,7 +86,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470297.png)
+ ![](./img/zh-cn_image_0000002631253934.png)
 
 #### closePath
 
@@ -117,7 +118,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350345.png)
+ ![](./img/zh-cn_image_0000002661613115.png)
 
 #### moveTo
 
@@ -156,7 +157,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230932.png)
+ ![](./img/zh-cn_image_0000002631413826.png)
 
 #### lineTo
 
@@ -196,7 +197,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626071022.png)
+ ![](./img/zh-cn_image_0000002661733057.png)
 
 #### bezierCurveTo
 
@@ -237,7 +238,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470299.png)
+ ![](./img/zh-cn_image_0000002631253936.png)
 
 #### quadraticCurveTo
 
@@ -276,7 +277,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350347.png)
+ ![](./img/zh-cn_image_0000002661613117.png)
 
 #### arc
 
@@ -316,22 +317,22 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230934.png)
+ ![](./img/zh-cn_image_0000002631413828.png)
 
 #### arcTo
 
 arcTo(x1: number, y1: number, x2: number, y2: number, radius: number): void
 
-依据圆弧经过的点和圆弧半径创建圆弧路径。
+依据圆弧控制的点和圆弧半径创建圆弧路径。
 
 参数：
 
 | 参数 | 类型 | 描述 |
 | --- | --- | --- |
-| x1 | number | 圆弧经过的第一个点的x坐标值。 |
-| y1 | number | 圆弧经过的第一个点的y坐标值。 |
-| x2 | number | 圆弧经过的第二个点的x坐标值。 |
-| y2 | number | 圆弧经过的第二个点的y坐标值。 |
+| x1 | number | 圆弧控制的第一个点的x坐标值。 |
+| y1 | number | 圆弧控制的第一个点的y坐标值。 |
+| x2 | number | 圆弧控制的第二个点的x坐标值。 |
+| y2 | number | 圆弧控制的第二个点的y坐标值。 |
 | radius | number | 圆弧的圆半径值。 |
 
 示例：
@@ -355,13 +356,13 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626071024.png)
+ ![](./img/zh-cn_image_0000002661733059.png)
 
 #### ellipse
 
 ellipse(x: number, y: number, radiusX: number, radiusY: number, rotation: number, startAngle: number, endAngle: number, counterclockwise?: number): void
 
-在规定的矩形区域绘制一个椭圆。
+在规定的区域绘制一个椭圆。
 
 参数：
 
@@ -397,7 +398,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470301.png)
+ ![](./img/zh-cn_image_0000002631253938.png)
 
 #### rect
 
@@ -435,4 +436,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350349.png)
+ ![](./img/zh-cn_image_0000002661613119.png)

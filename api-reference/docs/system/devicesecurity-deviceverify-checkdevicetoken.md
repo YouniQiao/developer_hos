@@ -2,7 +2,8 @@
 title: "验证deviceToken"
 upstream_id: "harmonyos-references/devicesecurity-deviceverify-checkdevicetoken"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:36.929689"
+content_hash: "6a5b3ec556f4"
+synced_at: "2026-07-09T00:59:16.401321"
 ---
 
 # 验证deviceToken

@@ -2,7 +2,8 @@
 title: "openFileBoost（文件打开加速）（已废弃）"
 upstream_id: "harmonyos-references/preview-arkts-openfileboost-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:48.352827"
+content_hash: "877ce1e5272f"
+synced_at: "2026-07-09T01:01:36.498077"
 ---
 
 # openFileBoost（文件打开加速）（已废弃）

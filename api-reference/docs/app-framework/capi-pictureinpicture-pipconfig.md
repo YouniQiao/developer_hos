@@ -2,7 +2,8 @@
 title: "PictureInPicture_PipConfig"
 upstream_id: "harmonyos-references/capi-pictureinpicture-pipconfig"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:56.343859"
+content_hash: "4856270ad979"
+synced_at: "2026-07-09T00:58:45.793915"
 ---
 
 # PictureInPicture_PipConfig

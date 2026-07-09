@@ -2,7 +2,8 @@
 title: "JSVM_Env__*"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-env--8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:03.818657"
+content_hash: "b906537291a9"
+synced_at: "2026-07-09T01:01:47.617478"
 ---
 
 # JSVM_Env__*

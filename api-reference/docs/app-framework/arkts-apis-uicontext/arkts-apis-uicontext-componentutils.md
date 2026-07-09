@@ -2,7 +2,8 @@
 title: "Class (ComponentUtils)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-componentutils"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:20.294219"
+content_hash: "f52b09ce2048"
+synced_at: "2026-07-09T00:57:28.437628"
 ---
 
 # Class (ComponentUtils)

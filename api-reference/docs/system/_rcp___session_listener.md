@@ -2,7 +2,8 @@
 title: "Rcp_SessionListener"
 upstream_id: "harmonyos-references/_rcp___session_listener"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:01.795616"
+content_hash: "4de271199336"
+synced_at: "2026-07-09T00:59:35.504692"
 ---
 
 # Rcp_SessionListener

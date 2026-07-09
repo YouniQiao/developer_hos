@@ -2,7 +2,8 @@
 title: "ArkUI_Margin"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-margin"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:51.393087"
+content_hash: "41ec563ad4ac"
+synced_at: "2026-07-09T00:58:42.687196"
 ---
 
 # ArkUI_Margin

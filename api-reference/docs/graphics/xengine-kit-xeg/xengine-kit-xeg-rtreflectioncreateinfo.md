@@ -2,7 +2,8 @@
 title: "XEG_RTReflectionCreateInfo"
 upstream_id: "harmonyos-references/xengine-kit-xeg-rtreflectioncreateinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:16.987033"
+content_hash: "c675077beac4"
+synced_at: "2026-07-09T01:01:10.708871"
 ---
 
 # XEG_RTReflectionCreateInfo

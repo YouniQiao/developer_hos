@@ -2,7 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-e"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:23.369337"
+content_hash: "0822ac9bb224"
+synced_at: "2026-07-09T00:57:30.255601"
 ---
 
 # Enums

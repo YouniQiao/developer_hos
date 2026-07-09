@@ -2,7 +2,8 @@
 title: "jsvm.h"
 upstream_id: "harmonyos-references/capi-jsvm-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:02.775087"
+content_hash: "c393e71508a4"
+synced_at: "2026-07-09T01:01:48.467950"
 ---
 
 # jsvm.h

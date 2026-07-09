@@ -2,7 +2,8 @@
 title: "自定义属性设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-custom-property"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:48.679179"
+content_hash: "fac65b0624fd"
+synced_at: "2026-07-09T00:57:43.021511"
 ---
 
 # 自定义属性设置
@@ -180,4 +181,4 @@ struct CustomLayout {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469621.png)
+ ![](./img/zh-cn_image_0000002661732367.png)

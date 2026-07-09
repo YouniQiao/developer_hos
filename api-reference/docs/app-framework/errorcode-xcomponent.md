@@ -2,7 +2,8 @@
 title: "XComponent组件错误码"
 upstream_id: "harmonyos-references/errorcode-xcomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:01.570152"
+content_hash: "d1983775c87b"
+synced_at: "2026-07-09T00:58:49.369270"
 ---
 
 # XComponent组件错误码

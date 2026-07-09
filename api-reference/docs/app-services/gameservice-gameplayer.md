@@ -2,7 +2,8 @@
 title: "gamePlayer（基础游戏服务）"
 upstream_id: "harmonyos-references/gameservice-gameplayer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:25.313316"
+content_hash: "f2e999bbc865"
+synced_at: "2026-07-09T01:01:18.852391"
 ---
 
 # gamePlayer（基础游戏服务）
@@ -36,7 +37,7 @@ import { gamePlayer } from '@kit.GameServiceKit';
 | idCompatibleType | number | 否 | 否 | ID兼容类型。 0：gamePlayerId与openId、playerId不兼容，或teamPlayerId与unionId不兼容。 1：gamePlayerId兼容playerId，即HarmonyOS 4及以下游戏使用playerId作为玩家标识，HarmonyOS 5.0及以上游戏将playerId作为gamePlayerId。 2：gamePlayerId兼容openId，即HarmonyOS 4及以下游戏使用openId作为玩家标识，HarmonyOS 5.0及以上游戏将openId作为gamePlayerId。 4：teamPlayerId与unionId兼容，即HarmonyOS 5.0及以上游戏将unionId作为teamPlayerId。 |
 | level | number | 否 | 否 | 玩家等级。**此参数为预留参数，当前固定返回0。** |
 | playableTime | number | 否 | 否 | 玩家本次可玩时长，单位：min。**此参数为预留参数，当前固定返回-1。** **说明**：返回-1表示当前玩家为成年人，不限制可玩时长；返回大于等于0表示当前玩家为未成年人，返回值为未成年玩家的当前可玩时长。 |
-| loginIdType | number | 否 | 否 | 登录游戏时，玩家使用的账号ID类型。 1：gamePlayerId 2：teamPlayerId **起始版本：** 5.0.0(12) |
+| loginIdType | number | 否 | 否 | 登录游戏时，玩家使用的账号ID类型。 1：gamePlayerId，表示游戏玩家ID。 2：teamPlayerId，表示团队玩家ID。 **起始版本：** 5.0.0(12) |
 
 #### GSKPlayerRole
 
@@ -108,7 +109,7 @@ import { gamePlayer } from '@kit.GameServiceKit';
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
 | accountIcon | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 否 | 游戏官方账号图标资源信息。总和最大支持35KB。 当前仅支持$r("app.media.name")生成的Resource对象，不支持$rawfile('filename')生成的Resource对象。 |
-| accountName | string | 否 | 否 | 游戏官方账号在联合登录面板上的显示名称。 建议传入具体的“xx账号登录”、“xx通行证登录”等，例如“游友账号登录”，不建议使用“官方账号登录”等容易有歧义的账号名称。 若游戏存在多语言版本，开发者需要自行判断语种并传入当前语种对应的账号名称。 在LoginPanelType设置成“BUTTON”时，accountName作为对外展示的按钮文字。 最大长度19个字符。 |
+| accountName | string | 否 | 否 | 游戏官方账号在联合登录面板上的显示名称。 建议传入具体的“xx账号登录”、“xx通行证登录”等，例如“游友账号登录”，不建议使用“官方账号登录”等容易有歧义的账号名称。 若游戏存在多语言版本，开发者需要自行判断语种并传入当前语种对应的账号名称。 在LoginPanelType设置成“BUTTON”时，accountName作为对外展示的按钮文字。 建议最大长度19个字符，超出的文字将以省略号进行展示。 |
 | accountIdentifier | string | 否 | 是 | 当前账号的唯一标识符，用来标识账号，并在登录结果中判断玩家选择的账号。 建议传入和当前账号相关的标识符，例如“youyou_account”。 默认值：undefined。 最大长度32个字符。 **起始版本：** 6.0.2(22) |
 | isOnTop | boolean | 否 | 是 | 在LoginPanelType设置为“ICON”时生效。 当前账号是否在联合登录面板上置顶： - true：置顶。 - false：不置顶。 默认为false。 **说明**： - 仅会置顶第一个传入“true”的账号，且被置顶的账号展示为按钮样式（按钮文案为传入的accountName值），非置顶账号展示为图标样式。 - 在BUTTON或ICON类型的登录面板上，华为侧置顶华为账号的优先级更高。 **起始版本：** 6.0.2(22) |
 
@@ -154,7 +155,7 @@ import { gamePlayer } from '@kit.GameServiceKit';
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
-| accountName | string | 否 | 否 | 账号名。 - 若玩家选择华为账号，则返回“hw_account”。 - 若玩家选择开发者提供的游戏官方账号，则返回传入的ThirdAccountInfo.accountName。 - 若登录过程中出现异常，则返回“official_account”。 “official_account”表示目前无法返回具体的账号名，建议从开发者提供的账号中选择其中一个登录。 最大长度19个字符。 |
+| accountName | string | 否 | 否 | 账号名。 - 若玩家选择华为账号，则返回“hw_account”。 - 若玩家选择开发者提供的游戏官方账号，则返回传入的ThirdAccountInfo.accountName。 - 若登录过程中出现异常，则返回“official_account”。 “official_account”表示目前无法返回具体的账号名，建议从开发者提供的账号中选择其中一个登录。 建议最大长度19个字符，超出的文字将以省略号进行展示。 |
 | needBinding | boolean | 否 | 否 | 玩家标识是否需要绑定游戏官方账号。 - true：为绑定场景，需要绑定游戏官方账号。 - false：为互通场景，无需绑定游戏官方账号。 游戏服务器需要根据玩家选择的登录场景进行适配： - 互通场景下，服务器需与HarmonyOS系统的渠道包策略保持一致。 - 绑定场景下/选择游戏官方账号登录场景下，服务器策略和游戏官方包保持一致。 |
 | boundPlayerInfo | [BoundPlayerInfo](#boundplayerinfo) | 否 | 否 | 与华为PlayerId绑定的游戏官方账号信息。 |
 | localPlayer | [GSKLocalPlayer](#gsklocalplayer) | 否 | 否 | 玩家信息。 |
@@ -267,7 +268,7 @@ import { gamePlayer } from '@kit.GameServiceKit';
 
 init(context: common.UIAbilityContext): Promise<void>
 
-游戏启动时，需要对Game Service Kit进行初始化。使用Promise异步回调。
+游戏启动时，需要对Game Service Kit进行初始化。在调用其他API接口前，必须先调用此API接口。使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -316,7 +317,7 @@ export default class EntryAbility extends UIAbility {
 
 init(context: common.UIAbilityContext, callback: AsyncCallback<void>): void
 
-游戏启动时，需要对Game Service Kit进行初始化。使用callback异步回调。
+游戏启动时，需要对Game Service Kit进行初始化。在调用其他API接口前，必须先调用此API接口。使用callback异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -383,7 +384,7 @@ unionLogin(context: common.UIAbilityContext, loginParam: UnionLoginParam): Promi
 
 错误码：
 
-错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-gameservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-gameservice)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -426,7 +427,7 @@ struct UnionLogin {
   private callUnionLogin() {
     let context = this.getUIContext()?.getHostContext() as common.UIAbilityContext;
     let thirdAccountInfo1: gamePlayer.ThirdAccountInfo = {
-      'accountName': 'testName1', // 游戏官方账号在联合登录面板上的显示名称。建议传入具体的“xx游账号登录”、“xx通行证登录”等，例如“游友账号登录”，不建议使用“官方账号登录”等容易有歧义的账号名称。若游戏存在多语言版本，需要开发者自行判断语种并传入当前语种对应的账号名称
+      'accountName': 'testName1', // 游戏官方账号在联合登录面板上的显示名称。建议传入具体的“xx账号登录”、“xx通行证登录”等，例如“游友账号登录”，不建议使用“官方账号登录”等容易有歧义的账号名称。若游戏存在多语言版本，需要开发者自行判断语种并传入当前语种对应的账号名称
       'accountIcon': $r('app.media.icon'), // 游戏官方账号图标资源信息，图标大小总和不能超过35KB
       'accountIdentifier': 'testIdentifier1', // 当前账号的唯一标识符，此标识符用来标识账号并在登录结果处理中用于判断识别玩家选择的账号
       'isOnTop': true // 当前账号是否置顶显示，且仅会置顶第一个传入true的账号
@@ -477,7 +478,7 @@ getLocalPlayer(context: common.UIAbilityContext): Promise<GSKLocalPlayer>
 
 错误码：
 
-错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-gameservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-gameservice)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -553,7 +554,7 @@ getLocalPlayer(context: common.UIAbilityContext, callback: AsyncCallback<GSKLoca
 
 错误码：
 
-错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-gameservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-gameservice)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -638,7 +639,7 @@ bindPlayer(context: common.UIAbilityContext, thirdOpenId: string, teamPlayerId: 
 
 错误码：
 
-错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-gameservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-gameservice)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -712,7 +713,7 @@ unbindPlayer(context: common.UIAbilityContext, thirdOpenId: string, teamPlayerId
 | --- | --- | --- | --- |
 | context | common.[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | 是 | 上下文信息。 |
 | thirdOpenId | string | 是 | 游戏官方账号ID。 |
-| teamPlayerId | string | 是 | 玩家华为账号对应的teamPlayerId。 |
+| teamPlayerId | string | 是 | 玩家华为账号对应的teamPlayerId。 最大长度256个字符。 |
 
 返回值：
 
@@ -722,7 +723,7 @@ unbindPlayer(context: common.UIAbilityContext, thirdOpenId: string, teamPlayerId
 
 错误码：
 
-错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-gameservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-gameservice)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -805,7 +806,7 @@ verifyLocalPlayer(context: common.UIAbilityContext, thirdUserInfo: ThirdUserInfo
 
 错误码：
 
-错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-gameservice)和[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
+错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-gameservice)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -883,7 +884,7 @@ savePlayerRole(context: common.UIAbilityContext, request: GSKPlayerRole): Promis
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
 | context | common.[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | 是 | 上下文信息。 |
-| request | [GSKPlayerRole](#gskplayerrole) | 是 | 上报角色信息，玩家选择角色及区服后上报。如果游戏没有角色系统，roleId请传入“0”，roleName请传入“default”。 |
+| request | [GSKPlayerRole](#gskplayerrole) | 是 | 上报角色信息，玩家选择角色及区服后上报。如果游戏没有角色系统，roleId请传入'0'，roleName请传入'default'。 |
 
 返回值：
 
@@ -918,8 +919,8 @@ struct SavePlayerRole {
   private callSavePlayerRole() {
     let context = this.getUIContext()?.getHostContext() as common.UIAbilityContext;
     let request: gamePlayer.GSKPlayerRole = {
-      roleId: '123', // 玩家角色ID，如游戏没有角色系统，请传入“0”，务必不要传""和null
-      roleName: 'Jason', // 玩家角色名，如游戏没有角色系统，请传入“default”，务必不要传""和null
+      roleId: '123', // 玩家角色ID，如游戏没有角色系统，请传入'0'，不可以传入""和null
+      roleName: 'Jason', // 玩家角色名，如游戏没有角色系统，请传入'default'，不可以传入""和null
       serverId: '456',
       serverName: 'Zhangshan',
       gamePlayerId: '789' // 请根据实际获取到的gamePlayerId传值
@@ -953,7 +954,7 @@ savePlayerRole(context: common.UIAbilityContext, request: GSKPlayerRole, callbac
 | **参数名** | **类型** | **必填** | **说明** |
 | --- | --- | --- | --- |
 | context | common.[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | 是 | 上下文信息。 |
-| request | [GSKPlayerRole](#gskplayerrole) | 是 | 上报角色信息，玩家选择角色及区服后上报。如果游戏没有角色系统，roleId请传入“0”，roleName请传入“default”。 |
+| request | [GSKPlayerRole](#gskplayerrole) | 是 | 上报角色信息，玩家选择角色及区服后上报。如果游戏没有角色系统，roleId请传入'0'，roleName请传入'default'。 |
 | callback | AsyncCallback | 是 | 回调函数。当保存角色信息成功，err为undefined，否则为错误对象。 |
 
 示例：
@@ -983,8 +984,8 @@ struct SavePlayerRole {
   private callSavePlayerRole() {
     let context = this.getUIContext()?.getHostContext() as common.UIAbilityContext;
     let request: gamePlayer.GSKPlayerRole = {
-      roleId: '123', // 玩家角色ID，如游戏没有角色系统，请传入“0”，务必不要传""和null
-      roleName: 'Jason', // 玩家角色名，如游戏没有角色系统，请传入“default”，务必不要传""和null
+      roleId: '123', // 玩家角色ID，如游戏没有角色系统，请传入'0'，不可以传入""和null
+      roleName: 'Jason', // 玩家角色名，如游戏没有角色系统，请传入'default'，不可以传入""和null
       serverId: '456',
       serverName: 'Zhangshan',
       gamePlayerId: '789' // 请根据实际获取到的gamePlayerId传值
@@ -1127,7 +1128,7 @@ try {
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
-| gameAppId | string | 否 | 否 | 小游戏APP ID。 |
+| gameAppId | string | 否 | 否 | 小游戏APP ID。小游戏APP ID来源于开发者在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中创建小游戏时自动生成的APP ID，具体请参见[为小游戏创建APP ID](https://developer.huawei.com/consumer/cn/doc/app/agc-help-create-minigame-0000002434138360#section16423184171915d)。 最大长度64个字符。 |
 | extraData | string | 否 | 是 | 附加信息，要求JSON String格式，可以将额外需要传入的字段以key:value的形式设置在JSON String中，并通过该参数传入。例如： let extraData = "{"key1":"value1","key2":"value2"}"; |
 
 #### MiniGamePlayer
@@ -1142,7 +1143,7 @@ try {
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
-| playerId | string | 否 | 否 | 玩家账号ID。 |
+| playerId | string | 否 | 否 | 玩家账号ID。 最大长度256个字符。 |
 | isAdult | boolean | 否 | 否 | 玩家账号实名认证是否为成年人。 - true：已成年。 - false：未成年。 |
 | playerLevel | number | 否 | 否 | 当前玩家账号等级，取值范围[1,15]。 |
 | playerSign | string | 否 | 否 | 玩家登录签名。 |
@@ -1333,7 +1334,11 @@ struct MiniGameLogin {
     };
     try {
       gamePlayer.miniGameLogin(context, request).then((result: gamePlayer.MiniGamePlayer) => {
-        hilog.info(0x0000, 'testTag', `Succeeded in logging in. PlayerLevel: ${result.playerLevel}`);
+        if (result?.playerId) {
+          hilog.info(0x0000, 'testTag', `Succeeded in logging in. PlayerLevel: ${result.playerLevel}`);
+        } else {
+          hilog.error(0x0000, 'testTag', `Failed to login.`);
+        }
       }).catch((error: BusinessError) => {
         hilog.error(0x0000, 'testTag', `Failed to login. Code: ${error.code}, message: ${error.message}`);
       });
@@ -1418,14 +1423,18 @@ struct MiniGamePay {
   private callMiniGamePay() {
     let context = this.getUIContext()?.getHostContext() as common.UIAbilityContext;
     let request: gamePlayer.PurchaseParameter = {
-      productId: 'xxx', // 待支付的商品ID
+      productId: 'testProduct01', // 待支付的商品ID
       productType: 0, // 待查询的商品类型
-      developerPayload: 'xxx', // 商户侧保留信息，该参数长度限制为[0, 256]。若该字段有值，在支付成功后的回调结果中会原样返回给应用
-      reservedInfo: 'xxx' // 要求JSON String格式，商户可以将额外需要传入的字段以key-value的形式设置在JSON String中，并通过该参数传入
+      developerPayload: 'test developer payload string.', // 商户侧保留信息，该参数长度限制为[0, 256]。若该字段有值，在支付成功后的回调结果中会原样返回给应用
+      reservedInfo: '{"key1":"value1","key2":"value2"}' // 要求JSON String格式，商户可以将额外需要传入的字段以key-value的形式设置在JSON String中，并通过该参数传入
     };
     try {
       gamePlayer.miniGamePay(context, request).then((result: gamePlayer.CreatePurchaseResult) => {
-        hilog.info(0x0000, 'testTag', `Succeeded in paying. Purchase result: ${result.purchaseData}`);
+        if (JSON.parse(result?.purchaseData).resultCode == 0) {
+          hilog.info(0x0000, 'testTag', `Succeeded in paying. Purchase result: ${result.purchaseData}`);
+        } else {
+          hilog.error(0x0000, 'testTag', `Failed to pay. resultCode: ${JSON.parse(result?.purchaseData).resultCode}`);
+        }
       }).catch((error: BusinessError) => {
         hilog.error(0x0000, 'testTag', `Failed to pay. Code: ${error.code}, message: ${error.message}`);
       });
@@ -1449,7 +1458,7 @@ struct MiniGamePay {
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
-| productId | string | 否 | 否 | 待支付的商品ID。 |
+| productId | string | 否 | 否 | 待支付的商品ID。每个产品ID必须在当前应用中存在且唯一。商品ID来源于开发者在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中配置商品信息时设置的“商品ID”，具体请参见[配置商品信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-product)。 |
 | productType | [ProductType](#producttype) | 否 | 否 | 待查询的商品类型。 |
 | developerPayload | string | 否 | 是 | 商户侧保留信息，该参数长度限制为[0, 256]。若该字段有值，在支付成功后的回调结果中会原样返回给应用。 |
 | reservedInfo | string | 否 | 是 | 要求JSON String格式，商户可以将额外需要传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。例如： let reservedInfo = "{"key1":"value1","key2":"value2"}"; **说明：** 该字段为预留字段，可选传入，开发者暂时无需关注。 |

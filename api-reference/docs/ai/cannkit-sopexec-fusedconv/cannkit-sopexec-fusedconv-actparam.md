@@ -2,7 +2,8 @@
 title: "HiAI_SingleOpExecutorFusedConvolutionActivationParam"
 upstream_id: "harmonyos-references/cannkit-sopexec-fusedconv-actparam"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:55.810193"
+content_hash: "124fdac37d01"
+synced_at: "2026-07-09T01:01:41.178239"
 ---
 
 # HiAI_SingleOpExecutorFusedConvolutionActivationParam

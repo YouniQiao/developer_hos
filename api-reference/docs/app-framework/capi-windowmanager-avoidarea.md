@@ -2,7 +2,8 @@
 title: "WindowManager_AvoidArea"
 upstream_id: "harmonyos-references/capi-windowmanager-avoidarea"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:56.595168"
+content_hash: "8fdc57a68185"
+synced_at: "2026-07-09T00:58:45.950208"
 ---
 
 # WindowManager_AvoidArea

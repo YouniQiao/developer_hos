@@ -2,7 +2,8 @@
 title: "Row"
 upstream_id: "harmonyos-references/ts-container-row"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:52.204777"
+content_hash: "f399fa71719f"
+synced_at: "2026-07-09T00:57:45.039686"
 ---
 
 # Row
@@ -231,7 +232,7 @@ struct RowExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230272.png)
+ ![](./img/zh-cn_image_0000002661612447.png)
 
 #### [h2]示例2（设置反转属性）
 
@@ -260,4 +261,4 @@ struct RowReverseSample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070362.png)
+ ![](./img/zh-cn_image_0000002631413156.png)

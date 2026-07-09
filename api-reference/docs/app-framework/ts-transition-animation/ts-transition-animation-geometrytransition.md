@@ -2,7 +2,8 @@
 title: "组件内隐式共享元素转场 (geometryTransition)"
 upstream_id: "harmonyos-references/ts-transition-animation-geometrytransition"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:41.009366"
+content_hash: "4a066447e594"
+synced_at: "2026-07-09T00:58:08.042827"
 ---
 
 # 组件内隐式共享元素转场 (geometryTransition)
@@ -122,4 +123,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470089.gif)
+ ![](./img/zh-cn_image_0000002631413614.gif)

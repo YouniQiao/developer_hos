@@ -2,7 +2,8 @@
 title: "NN_QuantParam"
 upstream_id: "harmonyos-references/capi-neuralnetworkruntime-nn-quantparam"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:59.996976"
+content_hash: "6f58b469741c"
+synced_at: "2026-07-09T01:01:44.692045"
 ---
 
 # NN_QuantParam

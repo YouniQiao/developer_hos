@@ -2,7 +2,8 @@
 title: "OhosImageReceiverInfo"
 upstream_id: "harmonyos-references/capi-image-ohosimagereceiverinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:30.656053"
+content_hash: "c51430274b22"
+synced_at: "2026-07-09T01:00:35.907719"
 ---
 
 # OhosImageReceiverInfo

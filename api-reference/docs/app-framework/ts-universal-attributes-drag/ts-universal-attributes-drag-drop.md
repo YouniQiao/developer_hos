@@ -2,7 +2,8 @@
 title: "拖拽控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-drag-drop"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:42.460978"
+content_hash: "d747432a7d6c"
+synced_at: "2026-07-09T00:57:41.293776"
 ---
 
 # 拖拽控制
@@ -347,7 +348,7 @@ struct ImageExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469577.gif)
+ ![](./img/zh-cn_image_0000002661732321.gif)
 
 #### [h2]示例2（设置预览图）
 
@@ -414,7 +415,7 @@ struct DragPreviewDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349625.gif)
+ ![](./img/zh-cn_image_0000002631253200.gif)
 
 #### [h2]示例3（设置背板图样式）
 
@@ -461,7 +462,7 @@ struct dragPreviewOptionsDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230212.gif)
+ ![](./img/zh-cn_image_0000002661612385.gif)
 
 #### [h2]示例4（设置多选拖拽）
 
@@ -501,7 +502,7 @@ struct Example {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070302.gif)
+ ![](./img/zh-cn_image_0000002631413094.gif)
 
 #### [h2]示例5（设置默认点按效果）
 
@@ -541,7 +542,7 @@ struct Example {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469579.gif)
+ ![](./img/zh-cn_image_0000002661732323.gif)
 
 #### [h2]示例6（自定义背板图样式）
 
@@ -591,7 +592,7 @@ struct dragPreviewOptionsDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349627.gif)
+ ![](./img/zh-cn_image_0000002631253202.gif)
 
 #### [h2]示例7（图片拖拽设置）
 
@@ -820,7 +821,7 @@ struct ImageDrag {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230214.gif)
+ ![](./img/zh-cn_image_0000002661612387.gif)
 
 #### [h2]示例8（设置图片拖拽震动）
 
@@ -973,11 +974,11 @@ struct LiftingExampleDemo {
 ```
  自定义预览图用于浮起效果。
 
-![](./img/zh-cn_image_0000002626070304.gif)
+![](./img/zh-cn_image_0000002631413096.gif)
 
 自定义预览图禁用浮起效果。
 
-![](./img/zh-cn_image_0000002656469581.gif)
+![](./img/zh-cn_image_0000002661732325.gif)
 
 #### [h2]示例10（以拖拽预览图初始尺寸计算跟手点位置）
 
@@ -1063,7 +1064,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349629.gif)
+ ![](./img/zh-cn_image_0000002631253204.gif)
 
 #### [h2]示例11（长按浮起预览图与拖拽预览图过渡动效）
 
@@ -1157,7 +1158,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230216.gif)
+ ![](./img/zh-cn_image_0000002661612389.gif)
 
 #### [h2]示例12（设置自定义组件落入）
 
@@ -1287,4 +1288,4 @@ struct CustomCard {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070306.gif)
+ ![](./img/zh-cn_image_0000002631413098.gif)

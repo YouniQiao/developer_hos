@@ -2,7 +2,8 @@
 title: "ArkUI_LayoutConstraint"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-layoutconstraint"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:52.287756"
+content_hash: "af4e1a5f1e80"
+synced_at: "2026-07-09T00:58:43.103411"
 ---
 
 # ArkUI_LayoutConstraint

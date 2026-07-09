@@ -2,7 +2,8 @@
 title: "FG_PerFrameExtendedCameraInfo"
 upstream_id: "harmonyos-references/_f_g___per_frame_extended_camera_info"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:13.726383"
+content_hash: "4ccc2e3bfa51"
+synced_at: "2026-07-09T01:01:07.924094"
 ---
 
 # FG_PerFrameExtendedCameraInfo

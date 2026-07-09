@@ -2,7 +2,8 @@
 title: "Interface (Image)"
 upstream_id: "harmonyos-references/arkts-apis-image-image"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:22.098314"
+content_hash: "97a6129ed4ca"
+synced_at: "2026-07-09T01:00:29.490792"
 ---
 
 # Interface (Image)

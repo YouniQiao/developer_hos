@@ -1,9 +1,12 @@
 ---
+
 title: "滚动类组件错误码"
 upstream_id: "harmonyos-references/errorcode-scroll"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:00.627974"
+synced_at: "2026-07-09T00:58:48.758917"
+content_hash: "d37088bdc4f6"
 ---
+
 
 # 滚动类组件错误码
 

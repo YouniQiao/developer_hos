@@ -1,9 +1,12 @@
 ---
+
 title: "人脸核身实人预验证"
 upstream_id: "harmonyos-references/payment-api-common-face-verifactaion-preverify"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:46.330085"
+synced_at: "2026-07-09T01:01:34.954584"
+content_hash: "f97fb20ebfb6"
 ---
+
 
 # 人脸核身实人预验证
 

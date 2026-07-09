@@ -2,7 +2,8 @@
 title: "ArkUI_NodeAttributeType（信息选择类组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-informationselection"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:38.792597"
+content_hash: "13dc72533486"
+synced_at: "2026-07-09T00:58:35.687511"
 ---
 
 # ArkUI_NodeAttributeType（信息选择类组件相关属性）

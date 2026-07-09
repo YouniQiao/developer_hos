@@ -2,7 +2,8 @@
 title: "CSS语法参考"
 upstream_id: "harmonyos-references/js-lite-framework-syntax-css"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:16.539104"
+content_hash: "56de117eb8f4"
+synced_at: "2026-07-09T00:58:26.599205"
 ---
 
 # CSS语法参考

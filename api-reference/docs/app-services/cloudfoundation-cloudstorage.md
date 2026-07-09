@@ -2,7 +2,8 @@
 title: "cloudStorage (云存储模块)"
 upstream_id: "harmonyos-references/cloudfoundation-cloudstorage"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:23.618805"
+content_hash: "aa4004e8044e"
+synced_at: "2026-07-09T01:01:16.723775"
 ---
 
 # cloudStorage (云存储模块)

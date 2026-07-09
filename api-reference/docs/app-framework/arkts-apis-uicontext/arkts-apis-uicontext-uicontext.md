@@ -2,7 +2,8 @@
 title: "Class (UIContext)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-uicontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:22.986224"
+content_hash: "3d12cf1794a9"
+synced_at: "2026-07-09T00:57:30.788690"
 ---
 
 # Class (UIContext)
@@ -454,7 +455,7 @@ struct UIContextCompare {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230082.gif)
+ ![](./img/zh-cn_image_0000002661732187.gif)
 
 #### getFont
 
@@ -816,7 +817,7 @@ struct AnimateToImmediatelyExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070172.gif)
+ ![](./img/zh-cn_image_0000002631253066.gif)
 
 #### animateTo
 
@@ -1319,7 +1320,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469449.gif)
+ ![](./img/zh-cn_image_0000002661612249.gif)
 
 #### showActionSheet
 
@@ -1390,7 +1391,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349497.gif)
+ ![](./img/zh-cn_image_0000002631412958.gif)
 
 #### showDatePickerDialog
 
@@ -1464,7 +1465,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230084.gif)
+ ![](./img/zh-cn_image_0000002661732189.gif)
 
 #### showTimePickerDialog
 
@@ -1605,7 +1606,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070174.gif)
+ ![](./img/zh-cn_image_0000002631253068.gif)
 
 #### showTextPickerDialog20+
 
@@ -3529,7 +3530,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469451.gif)
+ ![](./img/zh-cn_image_0000002661612251.gif)
 
 #### unbindTabsFromScrollable13+
 
@@ -4155,7 +4156,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349499.gif)
+ ![](./img/zh-cn_image_0000002631412960.gif)
 
 #### getPageRootNode24+
 
@@ -4307,7 +4308,7 @@ export struct pageThreeTmp {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230086.jpg)
+ ![](./img/zh-cn_image_0000002661732191.jpg)
 
 #### isEasySplit24+
 

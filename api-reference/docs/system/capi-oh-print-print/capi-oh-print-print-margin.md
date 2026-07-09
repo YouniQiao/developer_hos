@@ -2,7 +2,8 @@
 title: "Print_Margin"
 upstream_id: "harmonyos-references/capi-oh-print-print-margin"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:12.048823"
+content_hash: "5c656f5b8c2a"
+synced_at: "2026-07-09T00:59:43.774669"
 ---
 
 # Print_Margin

@@ -2,12 +2,15 @@
 title: "@ohos.file.statvfs (文件系统空间统计)"
 upstream_id: "harmonyos-references/js-apis-file-statvfs"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:14.011092"
+content_hash: "db303550532d"
+synced_at: "2026-07-09T00:58:59.927667"
 ---
 
 # @ohos.file.statvfs (文件系统空间统计)
 
-该模块提供文件系统相关存储信息的功能：向应用程序提供获取文件系统总字节数、空闲字节数的ArkTS接口。
+该模块向应用程序提供获取文件系统总字节数、空闲字节数的ArkTS接口。通过该模块，开发者可以实时掌握文件系统存储状况，避免因存储空间不足导致的应用崩溃，提升用户体验和系统稳定性。
+
+使用场景包括：文件下载前检查存储空间、应用安装前进行磁盘空间预估、缓存管理中的空间监控等。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 9开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -19,9 +22,9 @@ import { statfs } from '@kit.CoreFileKit';
 
 #### statfs.getFreeSize
 
-getFreeSize(path:string): Promise<number>
+getFreeSize(path: string): Promise<number>
 
-异步方法获取指定文件系统空闲字节数，以Promise形式返回结果。
+获取指定文件或目录所在文件系统的空闲字节数。使用Promise异步回调。
 
 系统能力：SystemCapability.FileManagement.File.FileIO
 
@@ -29,7 +32,7 @@ getFreeSize(path:string): Promise<number>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| path | string | 是 | 需要查询的文件系统的文件路径。 |
+| path | string | 是 | 文件或目录的应用沙箱路径。 |
 
 返回值：
 
@@ -66,8 +69,8 @@ import { common } from '@kit.AbilityKit';
 // 请在组件内获取context，确保this.getUIContext().getHostContext()返回结果为UIAbilityContext
 let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
 let path = context.filesDir;
-statfs.getFreeSize(path).then((number: number) => {
-  console.info("Succeeded in getting free size: " + number);
+statfs.getFreeSize(path).then((number: freeSize) => {
+  console.info("Succeeded in getting free size: " + freeSize);
 }).catch((err: BusinessError) => {
   console.error("Failed to get free size. Code: " + err.code + ", message: " + err.message);
 });
@@ -75,9 +78,9 @@ statfs.getFreeSize(path).then((number: number) => {
 
 #### statfs.getFreeSize
 
-getFreeSize(path:string, callback:AsyncCallback<number>): void
+getFreeSize(path: string, callback:AsyncCallback<number>): void
 
-异步方法获取指定文件系统空闲字节数，使用callback形式返回结果。
+获取指定文件或目录所在文件系统的空闲字节数。使用callback异步回调。
 
 系统能力：SystemCapability.FileManagement.File.FileIO
 
@@ -85,7 +88,7 @@ getFreeSize(path:string, callback:AsyncCallback<number>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| path | string | 是 | 需要查询的文件系统的文件路径。 |
+| path | string | 是 | 文件或目录的应用沙箱路径。 |
 | callback | AsyncCallback | 是 | 回调函数，返回空闲字节数，单位为Byte。 |
 
 错误码：
@@ -117,20 +120,20 @@ import { common } from '@kit.AbilityKit';
 // 请在组件内获取context，确保this.getUIContext().getHostContext()返回结果为UIAbilityContext
 let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
 let path = context.filesDir;
-statfs.getFreeSize(path, (err: BusinessError, number: number) => {
+statfs.getFreeSize(path, (err: BusinessError, number: freeSize) => {
   if (err) {
     console.error("Failed to get free size. Code: " + err.code + ", message: " + err.message);
   } else {
-    console.info("Succeeded in getting free size: " + number);
+    console.info("Succeeded in getting free size: " + freeSize);
   }
 });
 ```
 
 #### statfs.getFreeSizeSync10+
 
-getFreeSizeSync(path:string): number
+getFreeSizeSync(path: string): number
 
-以同步方法获取指定文件系统空闲字节数。
+以同步方法获取指定文件或目录所在文件系统的空闲字节数。
 
 系统能力：SystemCapability.FileManagement.File.FileIO
 
@@ -138,7 +141,7 @@ getFreeSizeSync(path:string): number
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| path | string | 是 | 需要查询的文件系统的文件路径。 |
+| path | string | 是 | 文件或目录的应用沙箱路径。 |
 
 返回值：
 
@@ -174,15 +177,15 @@ import { common } from '@kit.AbilityKit';
 // 请在组件内获取context，确保this.getUIContext().getHostContext()返回结果为UIAbilityContext
 let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
 let path = context.filesDir;
-let number = statfs.getFreeSizeSync(path);
-console.info("Succeeded in getting free size: " + number);
+let freeSize = statfs.getFreeSizeSync(path);
+console.info("Succeeded in getting free size: " + freeSize);
 ```
 
 #### statfs.getTotalSize
 
 getTotalSize(path: string): Promise<number>
 
-异步方法获取指定文件系统总字节数，以Promise形式返回结果。
+获取指定文件或目录所在文件系统的总字节数。使用Promise异步回调。
 
 系统能力：SystemCapability.FileManagement.File.FileIO
 
@@ -190,7 +193,7 @@ getTotalSize(path: string): Promise<number>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| path | string | 是 | 需要查询的文件系统的文件路径。 |
+| path | string | 是 | 文件或目录的应用沙箱路径。 |
 
 返回值：
 
@@ -227,8 +230,8 @@ import { common } from '@kit.AbilityKit';
 // 请在组件内获取context，确保this.getUIContext().getHostContext()返回结果为UIAbilityContext
 let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
 let path = context.filesDir;
-statfs.getTotalSize(path).then((number: number) => {
-  console.info("Succeeded in getting total size: " + number);
+statfs.getTotalSize(path).then((number: totalSize) => {
+  console.info("Succeeded in getting total size: " + totalSize);
 }).catch((err: BusinessError) => {
   console.error("Failed to get total size. Code: " + err.code + ", message: " + err.message);
 });
@@ -238,7 +241,7 @@ statfs.getTotalSize(path).then((number: number) => {
 
 getTotalSize(path: string, callback: AsyncCallback<number>): void
 
-异步方法获取指定文件系统总字节数，使用callback形式返回结果。
+获取指定文件或目录所在文件系统的总字节数。使用callback异步回调。
 
 系统能力：SystemCapability.FileManagement.File.FileIO
 
@@ -246,7 +249,7 @@ getTotalSize(path: string, callback: AsyncCallback<number>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| path | string | 是 | 需要查询的文件系统的文件路径。 |
+| path | string | 是 | 文件或目录的应用沙箱路径。 |
 | callback | AsyncCallback | 是 | 回调函数，返回总字节数，单位为Byte。 |
 
 错误码：
@@ -278,11 +281,11 @@ import { common } from '@kit.AbilityKit';
 // 请在组件内获取context，确保this.getUIContext().getHostContext()返回结果为UIAbilityContext
 let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
 let path = context.filesDir;
-statfs.getTotalSize(path, (err: BusinessError, number: number) => {
+statfs.getTotalSize(path, (err: BusinessError, number: totalSize) => {
   if (err) {
     console.error("Failed to get total size. Code: " + err.code + ", message: " + err.message);
   } else {
-    console.info("Succeeded in getting total size: " + number);
+    console.info("Succeeded in getting total size: " + totalSize);
   }
 });
 ```
@@ -291,7 +294,7 @@ statfs.getTotalSize(path, (err: BusinessError, number: number) => {
 
 getTotalSizeSync(path: string): number
 
-以同步方法获取指定文件系统总字节数。
+以同步方法获取指定文件或目录所在文件系统的总字节数。
 
 系统能力：SystemCapability.FileManagement.File.FileIO
 
@@ -299,7 +302,7 @@ getTotalSizeSync(path: string): number
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| path | string | 是 | 需要查询的文件系统的文件路径。 |
+| path | string | 是 | 文件或目录的应用沙箱路径。 |
 
 返回值：
 
@@ -335,6 +338,6 @@ import { common } from '@kit.AbilityKit';
 // 请在组件内获取context，确保this.getUIContext().getHostContext()返回结果为UIAbilityContext
 let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
 let path = context.filesDir;
-let number = statfs.getTotalSizeSync(path);
-console.info("Succeeded in getting total size: " + number);
+let totalSize = statfs.getTotalSizeSync(path);
+console.info("Succeeded in getting total size: " + totalSize);
 ```

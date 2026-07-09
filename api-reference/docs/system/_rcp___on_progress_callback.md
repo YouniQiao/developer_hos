@@ -2,7 +2,8 @@
 title: "Rcp_OnProgressCallback"
 upstream_id: "harmonyos-references/_rcp___on_progress_callback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:00.979788"
+content_hash: "686713ce353f"
+synced_at: "2026-07-09T00:59:35.083093"
 ---
 
 # Rcp_OnProgressCallback

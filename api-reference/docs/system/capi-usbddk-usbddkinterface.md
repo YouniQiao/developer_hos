@@ -2,7 +2,8 @@
 title: "UsbDdkInterface"
 upstream_id: "harmonyos-references/capi-usbddk-usbddkinterface"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:35.755976"
+content_hash: "1f358cd196eb"
+synced_at: "2026-07-09T00:59:57.164523"
 ---
 
 # UsbDdkInterface

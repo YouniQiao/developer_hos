@@ -2,12 +2,13 @@
 title: "Class (ConsoleMessage)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-consolemessage"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:06.050062"
+content_hash: "1502c665a6ed"
+synced_at: "2026-07-09T00:58:53.214879"
 ---
 
 # Class (ConsoleMessage)
 
-Web组件获取控制台信息对象。示例代码参考[onConsole事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onconsole)。
+ConsoleMessage是Web组件中封装JavaScript控制台输出信息的对象。当网页通过console.log()、console.warn()、console.error()等方法输出日志时，该对象通过onConsole事件回调提供给应用，用于监控和检查网页调试输出。示例代码参考[onConsole事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onconsole)。
 
 ![](./img/note_3.0-zh-cn.png)
 

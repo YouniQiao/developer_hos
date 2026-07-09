@@ -2,7 +2,8 @@
 title: "CANN"
 upstream_id: "harmonyos-references/cannkit"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:55.233516"
+content_hash: "323caff39137"
+synced_at: "2026-07-09T01:01:41.670929"
 ---
 
 # CANN
@@ -3300,7 +3301,12 @@ OH_NN_ReturnCode HMS_LLMEngineContext_GetAllGeneration (const HMS_LLMEngine_Cont
 
 返回：
 
-函数执行结果，成功时返回OH_NN_SUCCESS，失败时返回错误码，错误码的详细描述请参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+接口执行状态，参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+
+| 状态码 | 状态信息 |
+| --- | --- |
+| OH_NN_SUCCESS | 成功状态。 |
+| OH_NN_FAILED | 失败状态，入参为空或len为0。 |
 
 #### [h2]HMS_LLMEngineContext_GetAllGenerationLen()
 
@@ -3322,7 +3328,12 @@ OH_NN_ReturnCode HMS_LLMEngineContext_GetAllGenerationLen (const HMS_LLMEngine_C
 
 返回：
 
-函数执行结果，成功时返回OH_NN_SUCCESS，失败时返回错误码，错误码的详细描述请参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+接口执行状态，参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+
+| 状态码 | 状态信息 |
+| --- | --- |
+| OH_NN_SUCCESS | 成功状态。 |
+| OH_NN_FAILED | 失败状态，入参为空或len为0。 |
 
 #### [h2]HMS_LLMEngineContext_GetAllTokenGeneration()
 
@@ -3345,7 +3356,12 @@ OH_NN_ReturnCode HMS_LLMEngineContext_GetAllTokenGeneration (const HMS_LLMEngine
 
 返回：
 
-函数执行结果，成功时返回OH_NN_SUCCESS，失败时返回错误码，错误码的详细描述请参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+接口执行状态，参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+
+| 状态码 | 状态信息 |
+| --- | --- |
+| OH_NN_SUCCESS | 成功状态。 |
+| OH_NN_FAILED | 失败状态，入参为空或len为0。 |
 
 #### [h2]HMS_LLMEngineContext_GetAllTokenGenerationLen()
 
@@ -3367,7 +3383,12 @@ OH_NN_ReturnCode HMS_LLMEngineContext_GetAllTokenGenerationLen (const HMS_LLMEng
 
 返回：
 
-函数执行结果，操作成功时返回OH_NN_SUCCESS，失败时返回错误码，错误码的详细描述请参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+接口执行状态，参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+
+| 状态码 | 状态信息 |
+| --- | --- |
+| OH_NN_SUCCESS | 成功状态。 |
+| OH_NN_FAILED | 失败状态，入参为空或len为0。 |
 
 #### [h2]HMS_LLMEngineContext_GetDecodeTimeMs()
 
@@ -3389,7 +3410,12 @@ OH_NN_ReturnCode HMS_LLMEngineContext_GetDecodeTimeMs (const HMS_LLMEngine_Conte
 
 返回：
 
-函数执行结果，成功时返回OH_NN_SUCCESS，失败时返回错误码，错误码请参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+接口执行状态，参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+
+| 状态码 | 状态信息 |
+| --- | --- |
+| OH_NN_SUCCESS | 成功状态。 |
+| OH_NN_FAILED | 失败状态，入参为空。 |
 
 #### [h2]HMS_LLMEngineContext_GetInputTokenCount()
 
@@ -3411,7 +3437,12 @@ OH_NN_ReturnCode HMS_LLMEngineContext_GetInputTokenCount (const HMS_LLMEngine_Co
 
 返回：
 
-函数执行结果，操作成功时返回OH_NN_SUCCESS，失败时返回错误码，错误码的详细说明请参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+接口执行状态，参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+
+| 状态码 | 状态信息 |
+| --- | --- |
+| OH_NN_SUCCESS | 成功状态。 |
+| OH_NN_FAILED | 失败状态，入参为空。 |
 
 #### [h2]HMS_LLMEngineContext_GetOneGeneration()
 
@@ -3434,7 +3465,12 @@ OH_NN_ReturnCode HMS_LLMEngineContext_GetOneGeneration (const HMS_LLMEngine_Cont
 
 返回：
 
-函数执行结果，成功时返回OH_NN_SUCCESS，失败时返回错误码，错误码的详细信息请参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+接口执行状态，参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+
+| 状态码 | 状态信息 |
+| --- | --- |
+| OH_NN_SUCCESS | 成功状态。 |
+| OH_NN_FAILED | 失败状态，入参为空或len为0。 |
 
 #### [h2]HMS_LLMEngineContext_GetOneGenerationLen()
 
@@ -3456,7 +3492,12 @@ OH_NN_ReturnCode HMS_LLMEngineContext_GetOneGenerationLen (const HMS_LLMEngine_C
 
 返回：
 
-函数执行结果，成功时返回OH_NN_SUCCESS，失败时返回错误码，错误码的详细信息请参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+接口执行状态，参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+
+| 状态码 | 状态信息 |
+| --- | --- |
+| OH_NN_SUCCESS | 成功状态。 |
+| OH_NN_FAILED | 失败状态，入参为空或len为0。 |
 
 #### [h2]HMS_LLMEngineContext_GetOneTokenGeneration()
 
@@ -3478,7 +3519,12 @@ OH_NN_ReturnCode HMS_LLMEngineContext_GetOneTokenGeneration (const HMS_LLMEngine
 
 返回：
 
-函数执行结果，成功时返回OH_NN_SUCCESS，失败时返回错误码，错误码详情请参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+接口执行状态，参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+
+| 状态码 | 状态信息 |
+| --- | --- |
+| OH_NN_SUCCESS | 成功状态。 |
+| OH_NN_FAILED | 失败状态，入参为空。 |
 
 #### [h2]HMS_LLMEngineContext_GetOutputTokenCount()
 
@@ -3500,7 +3546,12 @@ OH_NN_ReturnCode HMS_LLMEngineContext_GetOutputTokenCount (const HMS_LLMEngine_C
 
 返回：
 
-函数执行结果，成功时返回OH_NN_SUCCESS，失败时返回错误码，错误码请参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+接口执行状态，参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+
+| 状态码 | 状态信息 |
+| --- | --- |
+| OH_NN_SUCCESS | 成功状态。 |
+| OH_NN_FAILED | 失败状态，入参为空。 |
 
 #### [h2]HMS_LLMEngineContext_GetPrefillTimeMs()
 
@@ -3522,7 +3573,12 @@ LLM引擎预填充阶段消耗时间。
 
 返回：
 
-函数执行结果，成功时返回OH_NN_SUCCESS，失败时返回错误码，错误码的详细描述请参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+接口执行状态，参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+
+| 状态码 | 状态信息 |
+| --- | --- |
+| OH_NN_SUCCESS | 成功状态。 |
+| OH_NN_FAILED | 失败状态，入参为空。 |
 
 #### [h2]HMS_LLMEngineContext_GetTotalTimeMs()
 
@@ -3544,7 +3600,12 @@ OH_NN_ReturnCode HMS_LLMEngineContext_GetTotalTimeMs (const HMS_LLMEngine_Contex
 
 返回：
 
-函数执行结果，成功时返回OH_NN_SUCCESS，失败时返回错误码，错误码的详细描述请参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+接口执行状态，参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+
+| 状态码 | 状态信息 |
+| --- | --- |
+| OH_NN_SUCCESS | 成功状态。 |
+| OH_NN_FAILED | 失败状态，入参为空。 |
 
 #### [h2]HMS_LLMEngineContext_SetOnAllTokensGenerateDoneFunc()
 
@@ -3566,7 +3627,12 @@ OH_NN_ReturnCode HMS_LLMEngineContext_SetOnAllTokensGenerateDoneFunc (HMS_LLMEng
 
 返回：
 
-函数执行结果，成功时返回OH_NN_SUCCESS，失败时返回错误码，错误码的详细信息请参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+接口执行状态，参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+
+| 状态码 | 状态信息 |
+| --- | --- |
+| OH_NN_SUCCESS | 成功状态。 |
+| OH_NN_FAILED | 失败状态，入参为空。 |
 
 #### [h2]HMS_LLMEngineContext_SetOnGenerateAsyncFailed()
 
@@ -3588,7 +3654,12 @@ OH_NN_ReturnCode HMS_LLMEngineContext_SetOnGenerateAsyncFailed (HMS_LLMEngine_Co
 
 返回：
 
-函数执行结果，成功时返回OH_NN_SUCCESS，失败时返回错误码，错误码的详细信息请参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+接口执行状态，参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+
+| 状态码 | 状态信息 |
+| --- | --- |
+| OH_NN_SUCCESS | 成功状态。 |
+| OH_NN_FAILED | 失败状态，入参为空。 |
 
 #### [h2]HMS_LLMEngineContext_SetOnOneTokenGenerateDoneFunc()
 
@@ -3610,7 +3681,12 @@ OH_NN_ReturnCode HMS_LLMEngineContext_SetOnOneTokenGenerateDoneFunc (HMS_LLMEngi
 
 返回：
 
-函数执行结果，成功时返回OH_NN_SUCCESS，失败时返回错误码，错误码的详细信息请参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+接口执行状态，参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+
+| 状态码 | 状态信息 |
+| --- | --- |
+| OH_NN_SUCCESS | 成功状态。 |
+| OH_NN_FAILED | 失败状态，入参为空。 |
 
 #### [h2]HMS_LLMEngineExecutor_CreateFromExecutorJson()
 
@@ -3671,7 +3747,12 @@ OH_NN_ReturnCode HMS_LLMEngineExecutor_Generate (HMS_LLMEngine_Executor * execut
 
 返回：
 
-函数执行结果，成功时返回OH_NN_SUCCESS，失败时返回错误码，错误码的详细信息请参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+接口执行状态，参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+
+| 状态码 | 状态信息 |
+| --- | --- |
+| OH_NN_SUCCESS | 成功状态。 |
+| OH_NN_FAILED | 失败状态，入参为空。 |
 
 #### [h2]HMS_LLMEngineExecutor_GenerateAsync()
 
@@ -3694,7 +3775,12 @@ OH_NN_ReturnCode HMS_LLMEngineExecutor_GenerateAsync (HMS_LLMEngine_Executor * e
 
 返回：
 
-函数执行结果，成功时返回OH_NN_SUCCESS，失败时返回错误码，错误码的详细信息请参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+接口执行状态，参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+
+| 状态码 | 状态信息 |
+| --- | --- |
+| OH_NN_SUCCESS | 成功状态。 |
+| OH_NN_FAILED | 失败状态，入参为空。 |
 
 #### [h2]HMS_LLMEngineExecutor_SetInferencePerfMode()
 
@@ -3716,7 +3802,12 @@ OH_NN_ReturnCode HMS_LLMEngineExecutor_SetInferencePerfMode (HMS_LLMEngine_Execu
 
 返回：
 
-函数执行结果，成功时返回OH_NN_SUCCESS，失败时返回错误码，错误码请参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+接口执行状态，参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+
+| 状态码 | 状态信息 |
+| --- | --- |
+| OH_NN_SUCCESS | 成功状态。 |
+| OH_NN_FAILED | 失败状态，入参为空。 |
 
 #### [h2]HMS_LLMEnginePrompt_Create()
 
@@ -3789,4 +3880,9 @@ OH_NN_ReturnCode HMS_LLMEnginePrompt_SetTokenId (HMS_LLMEngine_Prompt * prompt, 
 
 返回：
 
-函数执行结果，成功时返回OH_NN_SUCCESS，失败时返回错误码，错误码的详细信息请参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+接口执行状态，参见[OH_NN_ReturnCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-neural-network-runtime-type-h#oh_nn_returncode)。
+
+| 状态码 | 状态信息 |
+| --- | --- |
+| OH_NN_SUCCESS | 成功状态。 |
+| OH_NN_FAILED | 失败状态，入参为空或tokenNum为0。 |

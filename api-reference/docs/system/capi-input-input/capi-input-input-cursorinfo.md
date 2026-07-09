@@ -2,7 +2,8 @@
 title: "Input_CursorInfo"
 upstream_id: "harmonyos-references/capi-input-input-cursorinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:20.722882"
+content_hash: "a49580383d1a"
+synced_at: "2026-07-09T00:59:50.654573"
 ---
 
 # Input_CursorInfo

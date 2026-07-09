@@ -2,7 +2,8 @@
 title: "ArkUI_NativeAnimateAPI_1"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-nativeanimateapi-1"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:45.175550"
+content_hash: "21d9951eaa98"
+synced_at: "2026-07-09T00:58:39.219055"
 ---
 
 # ArkUI_NativeAnimateAPI_1

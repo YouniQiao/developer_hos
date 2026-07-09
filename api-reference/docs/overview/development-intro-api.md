@@ -1,9 +1,12 @@
 ---
+
 title: "开发说明"
 upstream_id: "harmonyos-references/development-intro-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:44.293891"
+synced_at: "2026-07-09T00:57:03.163050"
+content_hash: "530e83243995"
 ---
+
 
 # 开发说明
 

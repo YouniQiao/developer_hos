@@ -2,12 +2,13 @@
 title: "@ohos.multimedia.avInputCastPicker (录音设备选择组件)"
 upstream_id: "harmonyos-references/ohos-multimedia-avinputcastpicker"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:07.974176"
+content_hash: "a249e41638cc"
+synced_at: "2026-07-09T01:00:18.553724"
 ---
 
 # @ohos.multimedia.avInputCastPicker (录音设备选择组件)
 
-本模块提供创建录音设备选择组件AVInputCastPicker的功能，提供录音设备发现连接的统一入口。
+本模块提供创建录音设备选择组件AVInputCastPicker的功能，提供录音设备发现与连接的统一入口。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -46,7 +47,7 @@ AVInputCastPicker({
 
 | 名称 | 类型 | 必填 | 装饰器类型 | 说明 |
 | --- | --- | --- | --- | --- |
-| customPicker | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | @Prop | 自定义样式。建议应用自定义组件样式，可有效提升组件渲染性能。 |
+| customPicker | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | @Prop | 自定义样式。建议开发者自定义组件样式，可有效提升组件渲染性能。 |
 | onStateChange | [OnPickerStateCallback](#onpickerstatecallback) | 否 | - | 设备列表状态变更回调。 |
 
 #### OnPickerStateCallback

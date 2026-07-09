@@ -2,7 +2,8 @@
 title: "avtranscoder.h"
 upstream_id: "harmonyos-references/capi-avtranscoder-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:36.852912"
+content_hash: "44a6a01b275d"
+synced_at: "2026-07-09T01:00:40.881587"
 ---
 
 # avtranscoder.h

@@ -2,7 +2,8 @@
 title: "customScan (自定义界面扫码)"
 upstream_id: "harmonyos-references/scan-customscan-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:48.816567"
+content_hash: "4b132c71659b"
+synced_at: "2026-07-09T01:00:49.698483"
 ---
 
 # customScan (自定义界面扫码)
@@ -203,15 +204,15 @@ import { customScan, scanBarcode } from '@kit.ScanKit';
 
 // 模拟相机预览流返回数据frameResult: customScan.ScanFrame
 let frameResult: customScan.ScanFrame = {
-  "width": 1920,
-  "height": 1080,
+  'width': 1920,
+  'height': 1080,
   // buffer 为相机流
-  "byteBuffer": buffer,
-  "scanCodeRects": [{
-    "left": 84,
-    "top": 142,
-    "right": 1695,
-    "bottom": 996
+  'byteBuffer': buffer,
+  'scanCodeRects': [{
+    'left': 84,
+    'top': 142,
+    'right': 1695,
+    'bottom': 996
   }]
 };
 if (frameResult && frameResult.scanCodeRects) {

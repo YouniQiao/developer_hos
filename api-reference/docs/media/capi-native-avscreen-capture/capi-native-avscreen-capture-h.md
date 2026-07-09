@@ -2,7 +2,8 @@
 title: "native_avscreen_capture.h"
 upstream_id: "harmonyos-references/capi-native-avscreen-capture-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:37.211429"
+content_hash: "96c135866fbb"
+synced_at: "2026-07-09T01:00:42.117882"
 ---
 
 # native_avscreen_capture.h

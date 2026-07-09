@@ -2,7 +2,8 @@
 title: "ArkUI_TouchRecognizer*"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-touchrecognizerhandle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:47.325560"
+content_hash: "67efac7af0a5"
+synced_at: "2026-07-09T00:58:40.339104"
 ---
 
 # ArkUI_TouchRecognizer*

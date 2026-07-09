@@ -2,7 +2,8 @@
 title: "xeg_extension_defs.h"
 upstream_id: "harmonyos-references/xengine-kit-xeg-extension-defs-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:15.062941"
+content_hash: "4aad96f2b401"
+synced_at: "2026-07-09T01:01:09.010166"
 ---
 
 # xeg_extension_defs.h

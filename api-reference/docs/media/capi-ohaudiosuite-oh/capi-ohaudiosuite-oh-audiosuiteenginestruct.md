@@ -2,7 +2,8 @@
 title: "OH_AudioSuiteEngineStruct"
 upstream_id: "harmonyos-references/capi-ohaudiosuite-oh-audiosuiteenginestruct"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:59.625555"
+content_hash: "206288106dad"
+synced_at: "2026-07-09T01:00:11.995417"
 ---
 
 # OH_AudioSuiteEngineStruct

@@ -2,7 +2,8 @@
 title: "@ohos.util.HashSet (非线性容器HashSet)"
 upstream_id: "harmonyos-references/js-apis-hashset"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:16.759889"
+content_hash: "fff243a7209b"
+synced_at: "2026-07-09T00:57:25.781492"
 ---
 
 # @ohos.util.HashSet (非线性容器HashSet)

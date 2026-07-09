@@ -2,12 +2,13 @@
 title: "Class (ClientAuthenticationHandler)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-clientauthenticationhandler"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:05.666043"
+content_hash: "1320a6e282fe"
+synced_at: "2026-07-09T00:58:53.496807"
 ---
 
 # Class (ClientAuthenticationHandler)
 
-Web组件返回的SSL客户端证书请求事件的处理对象。示例代码参考[onClientAuthenticationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onclientauthenticationrequest9)事件。
+ClientAuthenticationHandler是Web组件中处理SSL客户端证书认证请求的类。当服务器请求客户端证书进行TLS双向认证时，该处理器通过onClientAuthenticationRequest事件回调提供给应用，允许应用选择合适的证书凭据进行响应。示例代码参考[onClientAuthenticationRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onclientauthenticationrequest9)事件。
 
 ![](./img/note_3.0-zh-cn.png)
 

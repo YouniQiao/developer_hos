@@ -2,7 +2,8 @@
 title: "上传券预存Code"
 upstream_id: "harmonyos-references/payment-api-common-promotion-service-merc-coup-coupbatch-upload"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:46.621506"
+content_hash: "bd929327a358"
+synced_at: "2026-07-09T01:01:35.203569"
 ---
 
 # 上传券预存Code

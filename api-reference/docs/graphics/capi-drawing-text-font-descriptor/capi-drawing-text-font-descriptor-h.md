@@ -2,7 +2,8 @@
 title: "drawing_text_font_descriptor.h"
 upstream_id: "harmonyos-references/capi-drawing-text-font-descriptor-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:03.301518"
+content_hash: "24217b8bc115"
+synced_at: "2026-07-09T01:00:59.009893"
 ---
 
 # drawing_text_font_descriptor.h

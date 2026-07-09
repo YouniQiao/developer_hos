@@ -2,7 +2,8 @@
 title: "NetworkBoost_HandoverComplete"
 upstream_id: "harmonyos-references/network-boost-c-struct-handover_complete"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:57.834970"
+content_hash: "cb3459b54118"
+synced_at: "2026-07-09T00:59:32.577736"
 ---
 
 # NetworkBoost_HandoverComplete

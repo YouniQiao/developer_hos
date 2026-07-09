@@ -2,7 +2,8 @@
 title: "content_embed_proxy.h"
 upstream_id: "harmonyos-references/capi-content-embed-proxy-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:11.734578"
+content_hash: "775dc9068f52"
+synced_at: "2026-07-09T00:58:58.539946"
 ---
 
 # content_embed_proxy.h

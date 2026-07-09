@@ -2,7 +2,8 @@
 title: "ArkUI_RenderNodeMaskOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-rendernodemaskoption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:58.191884"
+content_hash: "d7effbd7a775"
+synced_at: "2026-07-09T00:58:47.031023"
 ---
 
 # ArkUI_RenderNodeMaskOption

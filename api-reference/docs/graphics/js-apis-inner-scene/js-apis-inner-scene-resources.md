@@ -2,7 +2,8 @@
 title: "SceneResource"
 upstream_id: "harmonyos-references/js-apis-inner-scene-resources"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:11.881429"
+content_hash: "bf7a5a858ed7"
+synced_at: "2026-07-09T01:01:06.460711"
 ---
 
 # SceneResource

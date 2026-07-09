@@ -2,7 +2,8 @@
 title: "Classes (其他)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-class"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:44.224651"
+content_hash: "cb346349873e"
+synced_at: "2026-07-09T01:00:46.624684"
 ---
 
 # Classes (其他)

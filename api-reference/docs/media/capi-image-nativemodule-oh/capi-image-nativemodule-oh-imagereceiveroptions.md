@@ -2,7 +2,8 @@
 title: "OH_ImageReceiverOptions"
 upstream_id: "harmonyos-references/capi-image-nativemodule-oh-imagereceiveroptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:29.709615"
+content_hash: "08650a312c04"
+synced_at: "2026-07-09T01:00:35.194986"
 ---
 
 # OH_ImageReceiverOptions

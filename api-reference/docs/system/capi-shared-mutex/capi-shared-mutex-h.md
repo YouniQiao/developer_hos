@@ -2,7 +2,8 @@
 title: "shared_mutex.h"
 upstream_id: "harmonyos-references/capi-shared-mutex-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:16.314233"
+content_hash: "60109681990d"
+synced_at: "2026-07-09T00:59:47.341289"
 ---
 
 # shared_mutex.h

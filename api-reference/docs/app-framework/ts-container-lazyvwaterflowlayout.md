@@ -2,7 +2,8 @@
 title: "LazyVWaterFlowLayout"
 upstream_id: "harmonyos-references/ts-container-lazyvwaterflowlayout"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:59.370050"
+content_hash: "10bb1078138a"
+synced_at: "2026-07-09T00:57:49.243690"
 ---
 
 # LazyVWaterFlowLayout
@@ -11,7 +12,13 @@ synced_at: "2026-06-24T20:47:59.370050"
 
 该组件仅在[List](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list)组件、[Scroll](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scroll)组件、[WaterFlow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-waterflow)组件的单列模式或分段布局中的单列分段并且布局方向为FlexDirection.Column的情况下支持懒加载。在[WaterFlow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-waterflow)的多列模式或布局方向为FlexDirection.Row或FlexDirection.RowReverse的情况下使用该组件，则不支持懒加载。此外，在布局方向为FlexDirection.ColumnReverse的[WaterFlow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-waterflow)组件下使用该组件会导致显示异常。当懒加载功能生效时，该组件仅加载显示区域内的子组件，并在帧间空闲间隙预加载显示区域上方和下方各半屏的内容。
 
-![](./img/note_3.0-zh-cn.png) LazyVWaterFlowLayout组件高度默认自适应内容，不建议设置高度、高度约束或宽高比，设置后会导致显示异常。
+![](./img/note_3.0-zh-cn.png)
+
+- LazyVWaterFlowLayout组件高度默认自适应内容，不建议设置会固定或约束组件垂直方向尺寸的属性，设置后会导致显示异常或无法正常滚动。涉及的属性包括[height](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#height)、[size](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#size)中的height、[constraintSize](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#constraintsize)中的minHeight/maxHeight、[aspectRatio](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-layout-constraints#aspectratio)、[layoutWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#layoutweight)，以及[height](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#height15)取[LayoutPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#layoutpolicy15)值的场景。
+- 当父组件设置主轴方向尺寸时，LazyVWaterFlowLayout按照父组件可视区域进行懒加载；当父组件未设置主轴方向尺寸时，LazyVWaterFlowLayout会被内容撑开，导致所有子组件都会被加载布局。
+- 该组件在不同父组件下的懒加载支持条件如下： 1. 在List组件下，要求List组件布局方向必须是竖直方向（即[listDirection](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#listdirection)属性设置为Axis.Vertical），在非竖直方向的List中使用该组件会导致应用崩溃。当List设置了[lanes](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#lanes9)、[chainAnimation](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#chainanimation)、[scrollSnapAlign](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-list#scrollsnapalign10)属性中的任意一个或多个时，该组件的懒加载功能会失效。 2. 在Scroll组件下，要求Scroll组件布局方向必须是竖直方向（即[scrollable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-scroll#scrollable)属性设置为ScrollDirection.Vertical），在非竖直方向的Scroll中使用该组件会导致应用崩溃。 3. 在WaterFlow组件下，仅在WaterFlow组件的单列模式或分段布局中的单列分段，并且布局方向为FlexDirection.Column时支持懒加载。当WaterFlow为多列模式或布局方向为FlexDirection.Row、FlexDirection.RowReverse时，该组件的懒加载功能会失效。此外，在布局方向为FlexDirection.ColumnReverse的WaterFlow组件下使用该组件会导致显示异常。
+- 当懒加载功能生效时，该组件仅加载父组件可视区域内的子组件，并在帧间空闲时隙预加载可视区域上方和下方各半屏的内容。
+- 此处的父组件指最靠近当前组件的上层滚动组件，其他文档下的具体含义请参考对应内容。
 
 起始版本： 26.0.0
 
@@ -314,4 +321,4 @@ export class MyDataSource<T> extends BasicDataSource<T> {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070422.png)
+ ![](./img/zh-cn_image_0000002661732447.png)

@@ -2,10 +2,13 @@
 title: "Functions"
 upstream_id: "harmonyos-references/arkts-apis-webview-f"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:02.195133"
+content_hash: "7b585e7d77f7"
+synced_at: "2026-07-09T00:58:49.812511"
 ---
 
 # Functions
+
+ArkWeb Functions模块是ArkWeb（Web子系统）的函数能力集合，提供Web组件运行过程中所需的独立函数，例如订阅Web引擎初始化完成事件。开发者在使用Web组件时，可通过本模块中的函数监听Web引擎关键生命周期事件或执行全局性Web相关操作。
 
 ![](./img/note_3.0-zh-cn.png)
 

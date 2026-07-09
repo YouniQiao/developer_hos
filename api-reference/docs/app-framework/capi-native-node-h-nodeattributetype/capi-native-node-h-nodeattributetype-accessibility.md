@@ -2,7 +2,8 @@
 title: "ArkUI_NodeAttributeType（无障碍相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-accessibility"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:38.855330"
+content_hash: "5f5dbdcbcd7e"
+synced_at: "2026-07-09T00:58:35.371898"
 ---
 
 # ArkUI_NodeAttributeType（无障碍相关属性）

@@ -2,7 +2,8 @@
 title: "BaseDdk"
 upstream_id: "harmonyos-references/capi-baseddk"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:30.429914"
+content_hash: "c9e568801919"
+synced_at: "2026-07-09T00:59:54.330079"
 ---
 
 # BaseDdk

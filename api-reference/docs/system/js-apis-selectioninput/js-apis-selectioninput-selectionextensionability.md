@@ -2,7 +2,8 @@
 title: "@ohos.selectionInput.SelectionExtensionAbility (划词扩展能力)"
 upstream_id: "harmonyos-references/js-apis-selectioninput-selectionextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:07.555118"
+content_hash: "3de606d9e94d"
+synced_at: "2026-07-09T00:59:40.431655"
 ---
 
 # @ohos.selectionInput.SelectionExtensionAbility (划词扩展能力)

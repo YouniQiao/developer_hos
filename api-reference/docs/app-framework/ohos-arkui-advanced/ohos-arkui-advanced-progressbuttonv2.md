@@ -2,7 +2,8 @@
 title: "ProgressButtonV2"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-progressbuttonv2"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:53.967997"
+content_hash: "8231d850b19c"
+synced_at: "2026-07-09T00:58:15.881245"
 ---
 
 # ProgressButtonV2
@@ -176,4 +177,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350231.png)
+ ![](./img/zh-cn_image_0000002661732939.png)

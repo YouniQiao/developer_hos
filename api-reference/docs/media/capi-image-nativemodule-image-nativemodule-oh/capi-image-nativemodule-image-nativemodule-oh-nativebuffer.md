@@ -2,7 +2,8 @@
 title: "OH_NativeBuffer"
 upstream_id: "harmonyos-references/capi-image-nativemodule-image-nativemodule-oh-nativebuffer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:28.174324"
+content_hash: "4d255a563ccb"
+synced_at: "2026-07-09T01:00:34.257856"
 ---
 
 # OH_NativeBuffer

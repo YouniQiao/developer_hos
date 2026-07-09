@@ -2,7 +2,8 @@
 title: "@ohos.arkui.node (自定义节点)"
 upstream_id: "harmonyos-references/js-apis-arkui-node"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:19.605474"
+content_hash: "ad655dce2e03"
+synced_at: "2026-07-09T00:57:27.633257"
 ---
 
 # @ohos.arkui.node (自定义节点)

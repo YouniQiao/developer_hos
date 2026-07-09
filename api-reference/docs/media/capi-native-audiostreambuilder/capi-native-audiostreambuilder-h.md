@@ -2,7 +2,8 @@
 title: "native_audiostreambuilder.h"
 upstream_id: "harmonyos-references/capi-native-audiostreambuilder-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:56.740548"
+content_hash: "d8f83fed3ae1"
+synced_at: "2026-07-09T01:00:11.159512"
 ---
 
 # native_audiostreambuilder.h

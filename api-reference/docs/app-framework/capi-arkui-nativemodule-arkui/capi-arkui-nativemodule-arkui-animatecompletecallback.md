@@ -2,7 +2,8 @@
 title: "ArkUI_AnimateCompleteCallback"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-animatecompletecallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:44.997889"
+content_hash: "4d25a1f5454d"
+synced_at: "2026-07-09T00:58:39.098996"
 ---
 
 # ArkUI_AnimateCompleteCallback

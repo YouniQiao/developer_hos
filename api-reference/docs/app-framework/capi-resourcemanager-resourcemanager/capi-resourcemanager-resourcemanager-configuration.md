@@ -2,7 +2,8 @@
 title: "ResourceManager_Configuration"
 upstream_id: "harmonyos-references/capi-resourcemanager-resourcemanager-configuration"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:24.290929"
+content_hash: "124067bc1749"
+synced_at: "2026-07-09T00:59:08.406626"
 ---
 
 # ResourceManager_Configuration

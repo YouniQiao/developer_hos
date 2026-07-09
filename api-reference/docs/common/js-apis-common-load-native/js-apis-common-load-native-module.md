@@ -2,7 +2,8 @@
 title: "loadNativeModule (同步动态加载系统库接口)"
 upstream_id: "harmonyos-references/js-apis-common-load-native-module"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:01.525498"
+content_hash: "850f6bb316a9"
+synced_at: "2026-07-09T01:01:45.953047"
 ---
 
 # loadNativeModule (同步动态加载系统库接口)

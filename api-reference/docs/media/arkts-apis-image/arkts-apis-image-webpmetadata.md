@@ -2,7 +2,8 @@
 title: "Class (WebPMetadata)"
 upstream_id: "harmonyos-references/arkts-apis-image-webpmetadata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:23.333926"
+content_hash: "27fce04b2e0f"
+synced_at: "2026-07-09T01:00:30.248668"
 ---
 
 # Class (WebPMetadata)

@@ -2,7 +2,8 @@
 title: "AntifraudPicker（反诈选择器）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-antifraudpicker"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:36.096423"
+content_hash: "c233f5e231d2"
+synced_at: "2026-07-09T00:59:15.577505"
 ---
 
 # AntifraudPicker（反诈选择器）

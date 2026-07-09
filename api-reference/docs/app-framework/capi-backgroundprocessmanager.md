@@ -2,7 +2,8 @@
 title: "BackgroundProcessManager"
 upstream_id: "harmonyos-references/capi-backgroundprocessmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:10.671090"
+content_hash: "d6b91edac740"
+synced_at: "2026-07-09T00:58:57.233098"
 ---
 
 # BackgroundProcessManager

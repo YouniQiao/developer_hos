@@ -2,7 +2,8 @@
 title: "OpenGL符号列表"
 upstream_id: "harmonyos-references/opengl-symbol"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:07.387726"
+content_hash: "a50ca342be70"
+synced_at: "2026-07-09T01:01:51.284393"
 ---
 
 # OpenGL符号列表

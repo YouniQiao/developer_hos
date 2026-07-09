@@ -2,7 +2,8 @@
 title: "@ohos.enterprise.accountManager（账号管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-accountmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:21.460651"
+content_hash: "2ff193c6a89d"
+synced_at: "2026-07-09T00:59:51.074173"
 ---
 
 # @ohos.enterprise.accountManager（账号管理）

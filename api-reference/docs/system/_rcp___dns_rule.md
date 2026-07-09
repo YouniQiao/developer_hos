@@ -2,7 +2,8 @@
 title: "Rcp_DnsRule"
 upstream_id: "harmonyos-references/_rcp___dns_rule"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:00.117101"
+content_hash: "35880740afa1"
+synced_at: "2026-07-09T00:59:34.050132"
 ---
 
 # Rcp_DnsRule

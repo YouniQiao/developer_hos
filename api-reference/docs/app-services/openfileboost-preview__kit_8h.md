@@ -2,7 +2,8 @@
 title: "preview_kit.h"
 upstream_id: "harmonyos-references/openfileboost-preview__kit_8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:48.683512"
+content_hash: "3fe9510a9024"
+synced_at: "2026-07-09T01:01:36.823449"
 ---
 
 # preview_kit.h

@@ -2,7 +2,8 @@
 title: "Interface (AudioCapturer)"
 upstream_id: "harmonyos-references/arkts-apis-audio-audiocapturer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:52.138757"
+content_hash: "52d18750941a"
+synced_at: "2026-07-09T01:00:08.051912"
 ---
 
 # Interface (AudioCapturer)

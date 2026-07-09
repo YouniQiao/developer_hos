@@ -2,7 +2,8 @@
 title: "Location_BasicInfo"
 upstream_id: "harmonyos-references/capi-location-location-basicinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:31.506899"
+content_hash: "77497ca9b242"
+synced_at: "2026-07-09T01:01:23.472557"
 ---
 
 # Location_BasicInfo

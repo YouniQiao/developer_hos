@@ -2,7 +2,8 @@
 title: "RemoteNotificationExtensionContext（通知扩展Context）"
 upstream_id: "harmonyos-references/push-remote-notification-extension-context"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:49.061880"
+content_hash: "82cb7002dca4"
+synced_at: "2026-07-09T01:01:37.191176"
 ---
 
 # RemoteNotificationExtensionContext（通知扩展Context）

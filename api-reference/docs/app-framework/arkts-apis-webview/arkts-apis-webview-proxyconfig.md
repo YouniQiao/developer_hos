@@ -2,12 +2,13 @@
 title: "Class (ProxyConfig)"
 upstream_id: "harmonyos-references/arkts-apis-webview-proxyconfig"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:02.915916"
+content_hash: "2a52cb4a663f"
+synced_at: "2026-07-09T00:58:50.808361"
 ---
 
 # Class (ProxyConfig)
 
-可以通过该类提供的接口对代理进行配置。
+ProxyConfig是ArkWeb框架中用于配置网络代理规则的类，配合[ProxyController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-proxycontroller)实现对应用中所有Web组件网络请求的代理控制。通过ProxyConfig，开发者可以灵活定义多种代理规则：指定特定URL使用特定代理服务器、指定某些URL直连服务器、定义绕过代理的规则等。
 
 ![](./img/note_3.0-zh-cn.png)
 

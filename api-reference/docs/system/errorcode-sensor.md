@@ -2,7 +2,8 @@
 title: "传感器错误码"
 upstream_id: "harmonyos-references/errorcode-sensor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:43.104299"
+content_hash: "0db4a5f18735"
+synced_at: "2026-07-09T01:00:01.155163"
 ---
 
 # 传感器错误码

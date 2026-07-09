@@ -2,7 +2,8 @@
 title: "WhitePointArray"
 upstream_id: "harmonyos-references/capi-nativecolorspacemanager-whitepointarray"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:05.534258"
+content_hash: "53351bf3a85d"
+synced_at: "2026-07-09T01:01:00.331042"
 ---
 
 # WhitePointArray

@@ -2,12 +2,13 @@
 title: "generateBarcode (码图生成)"
 upstream_id: "harmonyos-references/scan-generatebarcode"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:49.090324"
+content_hash: "4936f476802d"
+synced_at: "2026-07-09T01:00:49.165903"
 ---
 
 # generateBarcode (码图生成)
 
-本模块支持通过文本或字节数组生成码图。目前已支持的码制式为EAN-8、EAN-13、UPC-A、UPC-E、Codabar、Code 39、Code 93、Code 128、ITF-14、QR Code、Data Matrix、PDF417、Aztec。暂时不支持MULTIFUNCTIONAL CODE生成。
+本模块支持通过文本或字节数组生成码图。目前已支持的码制式为EAN-8、EAN-13、UPC-A、UPC-E、Codabar、Code 39、Code 93、Code 128、ITF-14、QR Code、Data Matrix、PDF417、Aztec。暂不支持MULTIFUNCTIONAL CODE生成。
 
 为了方便开发者接入，我们提供了详细的样例工程供参考，推荐参考[示例工程](https://gitcode.com/HarmonyOS_Samples/scankit-samplecode-clientdemo-arkts)接入。
 

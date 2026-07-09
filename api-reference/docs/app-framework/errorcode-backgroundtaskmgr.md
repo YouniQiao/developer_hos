@@ -2,7 +2,8 @@
 title: "backgroundTaskManager错误码"
 upstream_id: "harmonyos-references/errorcode-backgroundtaskmgr"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:11.102348"
+content_hash: "2235191e3c56"
+synced_at: "2026-07-09T00:58:57.689996"
 ---
 
 # backgroundTaskManager错误码

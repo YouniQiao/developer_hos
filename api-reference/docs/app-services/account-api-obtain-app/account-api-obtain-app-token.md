@@ -2,7 +2,8 @@
 title: "获取应用级凭证"
 upstream_id: "harmonyos-references/account-api-obtain-app-token"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:19.127470"
+content_hash: "cd8761a76133"
+synced_at: "2026-07-09T01:01:12.737075"
 ---
 
 # 获取应用级凭证

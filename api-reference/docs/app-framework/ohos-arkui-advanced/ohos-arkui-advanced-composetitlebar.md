@@ -2,7 +2,8 @@
 title: "ComposeTitleBar"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-composetitlebar"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:51.414145"
+content_hash: "6a6c15465ce2"
+synced_at: "2026-07-09T00:58:14.439291"
 ---
 
 # ComposeTitleBar
@@ -145,7 +146,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470163.png)
+ ![](./img/zh-cn_image_0000002631413690.png)
 
 #### [h2]示例2（右侧自定义按钮播报）
 
@@ -239,7 +240,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350211.png)
+ ![](./img/zh-cn_image_0000002661732919.png)
 
 #### [h2]示例3（设置Symbol类型图标）
 
@@ -320,4 +321,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230798.png)
+ ![](./img/zh-cn_image_0000002631253798.png)

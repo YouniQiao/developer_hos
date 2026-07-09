@@ -2,7 +2,8 @@
 title: "FIDO2_PublicKeyCredentialRequestOptions"
 upstream_id: "harmonyos-references/_f_i_d_o2___public_key_credential_request_options"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:40.607740"
+content_hash: "ce5b22d751bf"
+synced_at: "2026-07-09T00:59:19.016314"
 ---
 
 # FIDO2_PublicKeyCredentialRequestOptions

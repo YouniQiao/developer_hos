@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-scenario-fusion-arkts-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:52.078861"
+content_hash: "8269e1c4c080"
+synced_at: "2026-07-09T01:01:38.796161"
 ---
 
 # ArkTS API错误码

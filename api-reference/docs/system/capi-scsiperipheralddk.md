@@ -2,7 +2,8 @@
 title: "ScsiPeripheralDDK"
 upstream_id: "harmonyos-references/capi-scsiperipheralddk"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:30.619921"
+content_hash: "23e7eb872008"
+synced_at: "2026-07-09T00:59:54.351151"
 ---
 
 # ScsiPeripheralDDK

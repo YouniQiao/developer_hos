@@ -2,7 +2,8 @@
 title: "OH_NativeBuffer_Config"
 upstream_id: "harmonyos-references/capi-oh-nativebuffer-oh-nativebuffer-config"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:05.097441"
+content_hash: "fb15dbb60764"
+synced_at: "2026-07-09T01:01:00.008229"
 ---
 
 # OH_NativeBuffer_Config

@@ -2,7 +2,8 @@
 title: "XEG_SpatialUpscaleDescription"
 upstream_id: "harmonyos-references/xengine-kit-xeg-spatialupscaledescription"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:17.486086"
+content_hash: "455337a83f72"
+synced_at: "2026-07-09T01:01:11.091464"
 ---
 
 # XEG_SpatialUpscaleDescription

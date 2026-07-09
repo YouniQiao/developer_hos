@@ -2,7 +2,8 @@
 title: "OH_AVSeiMessageArray"
 upstream_id: "harmonyos-references/capi-avplayer-oh-avseimessagearray"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:42.877766"
+content_hash: "1ec0d1283327"
+synced_at: "2026-07-09T01:00:45.234938"
 ---
 
 # OH_AVSeiMessageArray

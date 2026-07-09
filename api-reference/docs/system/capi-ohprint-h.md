@@ -2,7 +2,8 @@
 title: "ohprint.h"
 upstream_id: "harmonyos-references/capi-ohprint-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:11.524035"
+content_hash: "cfbdb918aca5"
+synced_at: "2026-07-09T00:59:43.520483"
 ---
 
 # ohprint.h

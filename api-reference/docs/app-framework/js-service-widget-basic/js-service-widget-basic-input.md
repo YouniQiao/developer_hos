@@ -2,7 +2,8 @@
 title: "input"
 upstream_id: "harmonyos-references/js-service-widget-basic-input"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:29.500978"
+content_hash: "fa5ee00be844"
+synced_at: "2026-07-09T00:58:31.333287"
 ---
 
 # input
@@ -68,4 +69,4 @@ synced_at: "2026-06-24T20:49:29.500978"
 ```
  4*4卡片
 
-![](./img/zh-cn_image_0000002626071220.gif)
+![](./img/zh-cn_image_0000002661733255.gif)

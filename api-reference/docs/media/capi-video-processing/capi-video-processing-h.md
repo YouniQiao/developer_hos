@@ -2,7 +2,8 @@
 title: "video_processing.h"
 upstream_id: "harmonyos-references/capi-video-processing-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:37.844403"
+content_hash: "ae41480e8b4d"
+synced_at: "2026-07-09T01:00:42.151764"
 ---
 
 # video_processing.h

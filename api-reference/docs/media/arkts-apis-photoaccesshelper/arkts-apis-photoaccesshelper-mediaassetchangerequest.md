@@ -2,7 +2,8 @@
 title: "Class (MediaAssetChangeRequest)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-mediaassetchangerequest"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:43.648435"
+content_hash: "d4a573b2e007"
+synced_at: "2026-07-09T01:00:46.367427"
 ---
 
 # Class (MediaAssetChangeRequest)

@@ -2,7 +2,8 @@
 title: "Class (RectUtils)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-rectutils"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:54.383650"
+content_hash: "adcde9d06b69"
+synced_at: "2026-07-09T01:00:53.050626"
 ---
 
 # Class (RectUtils)

@@ -2,7 +2,8 @@
 title: "ArkWeb_JavaScriptBridgeData"
 upstream_id: "harmonyos-references/capi-web-arkweb-javascriptbridgedata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:08.950645"
+content_hash: "e840bede8441"
+synced_at: "2026-07-09T00:58:55.802523"
 ---
 
 # ArkWeb_JavaScriptBridgeData
@@ -13,7 +14,7 @@ typedef struct {...} ArkWeb_JavaScriptBridgeData
 
 #### 概述
 
-定义JavaScript Bridge数据的基础结构。
+ArkWeb_JavaScriptBridgeData是JavaScript桥接数据定义结构体，用于在Native代码和Web页面之间传递JavaScript桥接相关的数据。该结构体封装了桥接调用中的参数数据，是JavaScript桥接子系统中的基本数据单元，配合ArkWeb_ControllerAPI中的JavaScript Proxy注册接口使用。
 
 起始版本： 12
 

@@ -2,7 +2,8 @@
 title: "Sensor_Event"
 upstream_id: "harmonyos-references/capi-sensor-sensor-event"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:42.497626"
+content_hash: "72b0be8ab45f"
+synced_at: "2026-07-09T01:00:00.784618"
 ---
 
 # Sensor_Event

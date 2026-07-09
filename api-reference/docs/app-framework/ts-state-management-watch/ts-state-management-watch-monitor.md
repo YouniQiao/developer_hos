@@ -2,7 +2,8 @@
 title: "状态变量变化监听"
 upstream_id: "harmonyos-references/ts-state-management-watch-monitor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:57.598991"
+content_hash: "dc055a8ba32e"
+synced_at: "2026-07-09T00:58:18.015565"
 ---
 
 # 状态变量变化监听
@@ -318,7 +319,7 @@ SyncMonitor: MonitorDecorator
 
 | 名称 | 类型 | 说明 |
 | --- | --- | --- |
-| SyncMonitor | [MonitorDecorator](#monitordecorator12) | 属性装饰器，监听状态变量的修改。 |
+| SyncMonitor | [MonitorDecorator](#monitordecorator12) | 方法装饰器，监听状态变量的修改。 |
 
 错误码：
 

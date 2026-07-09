@@ -2,7 +2,8 @@
 title: "系统能力SystemCapability使用指南"
 upstream_id: "harmonyos-references/syscap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:44.209711"
+content_hash: "72982df6d652"
+synced_at: "2026-07-09T00:57:03.161733"
 ---
 
 # 系统能力SystemCapability使用指南
@@ -13,7 +14,7 @@ synced_at: "2026-06-24T20:46:44.209711"
 
 SystemCapability，下文统一简称为SysCap，用于标识一组实现特定开放能力的API集合，如下图所示。
 
-![](./img/zh-cn_image_0000002656469423.png)
+![](./img/zh-cn_image_0000002661612223.png)
 
 以名为SystemCapability.Communication.Bluetooth.Core的蓝牙SysCap为例，它代表了一组蓝牙能力相关的API，包括：
 
@@ -35,7 +36,7 @@ SysCap的用途：
 
 SysCap与SDK、Kit形成结构化、层级化结构，如下图所示：
 
-![](./img/zh-cn_image_0000002656349471.png)
+![](./img/zh-cn_image_0000002631412930.png)
 
 1. SDK由多个功能独立的Kit组成；
 2. 每个Kit包含一个或多个SysCap，且每个SysCap仅属于一个 Kit；
@@ -45,21 +46,21 @@ SysCap与SDK、Kit形成结构化、层级化结构，如下图所示：
 
 以Tablet设备为例，如果开发者在.ets文件上导入以“a”开头的某个模块的具体内容（例如：接口、类、函数、变量、对象等），DevEco Studio会联想出所有支持在Tablet上可用的某个模块的具体内容，如下图所示：
 
-![](./img/zh-cn_image_0000002626230058.png)
+![](./img/zh-cn_image_0000002661732163.png)
 
 #### SysCap与Device type的关系
 
 在SDK的“device-define”文件夹下，以json文件定义了各设备类型支持的SysCap集合。例如：tablet.json文件定义了Tablet设备支持SystemCapability.ArkUI.ArkUI.Full、SystemCapability.Communication.NFC.Core等SysCap。如下图所示：
 
-![](./img/zh-cn_image_0000002626070148.png)
+![](./img/zh-cn_image_0000002631253042.png)
 
 开发者在DevEco Studio创建工程时，需要选择应用的设备类型Device type：
 
-![](./img/zh-cn_image_0000002656469425.png)
+![](./img/zh-cn_image_0000002661612225.png)
 
 也可在新建工程后，通过修改module.json5文件中的[deviceTypes](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#devicetypes标签)指定应用支持的设备类型：
 
-![](./img/zh-cn_image_0000002656349473.png)
+![](./img/zh-cn_image_0000002631412932.png)
 
 DevEco Studio自动识别项目中的设备类型，定位SDK“device-define”下对应的SysCap集合，进而提取该设备支持的API，用于智能提示与自动联想，助力开发者精准、高效地调用所需接口。
 
@@ -208,7 +209,7 @@ media.createAVScreenCaptureRecorder().then((captureRecorder: media.AVScreenCaptu
 
 单设备应用开发时，DevEco Studio只识别到一种设备类型，适配开发过程如下图所示：
 
-![](./img/zh-cn_image_0000002626230060.png)
+![](./img/zh-cn_image_0000002661732165.png)
 
 1. 如果存在API在同一设备类型下的不同设备型号存在能力不一致的情况，需使用能力查询接口判断接口能力可用性（注意：此处的能力查询机制并非canIUse，请参见[使用能力查询接口判断API是否可用](#使用能力查询接口判断api是否可用)）；
 2. 为了避免调用接口出现的异常情况，需要开发者进行错误码异常处理。
@@ -217,7 +218,7 @@ media.createAVScreenCaptureRecorder().then((captureRecorder: media.AVScreenCaptu
 
 多设备应用开发时，DevEco Studio需同时识别多种设备类型，适配开发过程如下图所示：
 
-![](./img/zh-cn_image_0000002626070150.png)
+![](./img/zh-cn_image_0000002631253044.png)
 
 1. 使用canIUse判断并集内交集外的SysCap集合是否可用； canIUse仅适用于多设备应用开发，单设备应用开发可直接进行接口能力查询；
 2. 多设备应用开发场景下，当SysCap所属设备类型处于[deviceTypes](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/module-configuration-file#devicetypes标签)选择范围与API支持范围的并集但不在其交集内时（如设备类型选Phone/Tablet，而API仅支持Phone/2in1），必须通过canIUse进行可用性校验。

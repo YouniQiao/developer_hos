@@ -2,7 +2,8 @@
 title: "Interface (ControlCenterQuery)"
 upstream_id: "harmonyos-references/arkts-apis-camera-controlcenterquery"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:11.295682"
+content_hash: "f95b174ac179"
+synced_at: "2026-07-09T01:00:21.625520"
 ---
 
 # Interface (ControlCenterQuery)

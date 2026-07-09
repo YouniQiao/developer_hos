@@ -2,7 +2,8 @@
 title: "@ohos.graphics.common2D (2D图形通用数据类型)"
 upstream_id: "harmonyos-references/js-apis-graphics-common2d"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:51.730647"
+content_hash: "70624f51ab27"
+synced_at: "2026-07-09T01:00:50.574962"
 ---
 
 # @ohos.graphics.common2D (2D图形通用数据类型)

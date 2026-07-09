@@ -2,7 +2,8 @@
 title: "OH_AI_TensorHandle"
 upstream_id: "harmonyos-references/capi-mindspore-oh-ai-tensorhandle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:58.907580"
+content_hash: "d7daa44bc521"
+synced_at: "2026-07-09T01:01:43.893673"
 ---
 
 # OH_AI_TensorHandle

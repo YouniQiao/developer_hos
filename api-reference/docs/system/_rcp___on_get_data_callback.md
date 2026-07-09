@@ -2,7 +2,8 @@
 title: "Rcp_OnGetDataCallback"
 upstream_id: "harmonyos-references/_rcp___on_get_data_callback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:02.713218"
+content_hash: "b53249e02451"
+synced_at: "2026-07-09T00:59:36.186395"
 ---
 
 # Rcp_OnGetDataCallback

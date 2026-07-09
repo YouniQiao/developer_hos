@@ -2,7 +2,8 @@
 title: "@ohos.net.statistics (流量管理)"
 upstream_id: "harmonyos-references/js-apis-net-statistics"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:51.906409"
+content_hash: "62544bb27a60"
+synced_at: "2026-07-09T00:59:28.071863"
 ---
 
 # @ohos.net.statistics (流量管理)

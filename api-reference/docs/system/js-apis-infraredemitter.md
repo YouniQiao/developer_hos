@@ -2,7 +2,8 @@
 title: "@ohos.multimodalInput.infraredEmitter (红外管理)"
 upstream_id: "harmonyos-references/js-apis-infraredemitter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:18.277430"
+content_hash: "fd906ba4546c"
+synced_at: "2026-07-09T00:59:49.059153"
 ---
 
 # @ohos.multimodalInput.infraredEmitter (红外管理)

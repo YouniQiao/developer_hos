@@ -2,7 +2,8 @@
 title: "Types"
 upstream_id: "harmonyos-references/arkts-apis-avmusictemplate-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:07.595058"
+content_hash: "e4010399f2ea"
+synced_at: "2026-07-09T01:00:18.822352"
 ---
 
 # Types
@@ -80,7 +81,7 @@ type QueryMediaEntityEvent = (params: QueryMediaEntityParam) => Promise<PageMedi
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| params | [QueryMediaEntityParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-i#querymediaentityparam) | 是 | 查询媒体实例的参数。 |
+| params | [QueryMediaEntityParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-i#querymediaentityparam) | 是 | 查询媒体实体的参数。 |
 
 返回值：
 
@@ -126,7 +127,7 @@ type QueryPlaylistEvent = (pageIndex: number, sort: Sort) => Promise<PageMediaEn
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | pageIndex | number | 是 | 页面的索引。 |
-| sort | [Sort](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-e#sort) | 是 | 排序的枚举值。 |
+| sort | [Sort](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-e#sort) | 是 | 排序类型。 |
 
 返回值：
 
@@ -210,7 +211,7 @@ type QueryRecommendMediaEntityListEvent = () => Promise<MediaEntity[]>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回推荐的媒体实例的数组。 |
+| Promise | Promise对象，返回推荐的媒体实体的数组。 |
 
 #### QueryHotWordsEvent
 
@@ -314,7 +315,7 @@ type RequestDialogInfoEvent = (actionType: DialogActionType, actionInfo?: Dialog
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| actionType | [DialogActionType](#dialogactiontype) | 是 | 对话框类型。 |
+| actionType | [DialogActionType](#dialogactiontype) | 是 | 对话框操作类型。 |
 | actionInfo | [DialogActionInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-i#dialogactioninfo) | 否 | 对话框动作结果的信息。 |
 
 返回值：
@@ -436,8 +437,8 @@ type DownloadMediaEntityEvent = (controlType: DownloadControlType, mediaEntity: 
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| controlType | [DownloadControlType](#downloadcontroltype) | 是 | controlType的可选项包括：用户信息，选项卡，合集，设置。 |
-| mediaEntity | [MediaEntity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-i#mediaentity) | 是 | 媒体实例。 |
+| controlType | [DownloadControlType](#downloadcontroltype) | 是 | controlType的可选项包括：开始下载、删除下载、恢复下载、暂停下载。 |
+| mediaEntity | [MediaEntity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-i#mediaentity) | 是 | 媒体实体。 |
 
 返回值：
 
@@ -550,7 +551,7 @@ type ExecuteActionEvent = (actionType: string, params: string) => Promise<string
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | Promise对象，返回执行操作的结果对象。 |
+| Promise | Promise对象，返回执行操作的结果字符串。 |
 
 #### PlayMediaEntityEvent
 

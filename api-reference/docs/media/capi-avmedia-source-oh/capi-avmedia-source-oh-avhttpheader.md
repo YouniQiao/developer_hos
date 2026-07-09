@@ -2,7 +2,8 @@
 title: "OH_AVHttpHeader"
 upstream_id: "harmonyos-references/capi-avmedia-source-oh-avhttpheader"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:42.534401"
+content_hash: "c080d373ae0b"
+synced_at: "2026-07-09T01:00:45.155821"
 ---
 
 # OH_AVHttpHeader

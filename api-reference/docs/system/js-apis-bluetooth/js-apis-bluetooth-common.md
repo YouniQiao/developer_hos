@@ -2,7 +2,8 @@
 title: "@ohos.bluetooth.common (蓝牙common模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-common"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:45.903584"
+content_hash: "23e13bb7f831"
+synced_at: "2026-07-09T00:59:22.816659"
 ---
 
 # @ohos.bluetooth.common (蓝牙common模块)

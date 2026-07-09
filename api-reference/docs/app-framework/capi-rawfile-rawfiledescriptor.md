@@ -2,7 +2,8 @@
 title: "RawFileDescriptor"
 upstream_id: "harmonyos-references/capi-rawfile-rawfiledescriptor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:23.985687"
+content_hash: "6de69b8bbae2"
+synced_at: "2026-07-09T00:59:08.230096"
 ---
 
 # RawFileDescriptor

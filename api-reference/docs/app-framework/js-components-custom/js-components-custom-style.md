@@ -2,7 +2,8 @@
 title: "继承样式"
 upstream_id: "harmonyos-references/js-components-custom-style"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:14.622913"
+content_hash: "34faf6679989"
+synced_at: "2026-07-09T00:58:25.836706"
 ---
 
 # 继承样式

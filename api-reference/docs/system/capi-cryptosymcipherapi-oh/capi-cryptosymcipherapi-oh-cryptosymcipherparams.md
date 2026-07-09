@@ -2,7 +2,8 @@
 title: "OH_CryptoSymCipherParams"
 upstream_id: "harmonyos-references/capi-cryptosymcipherapi-oh-cryptosymcipherparams"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:33.484755"
+content_hash: "3e7a5d1278b2"
+synced_at: "2026-07-09T00:59:13.879290"
 ---
 
 # OH_CryptoSymCipherParams

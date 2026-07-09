@@ -2,7 +2,8 @@
 title: "@ohos.app.appstartup.StartupTask (启动框架任务)"
 upstream_id: "harmonyos-references/js-apis-app-appstartup-startuptask"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:48.715191"
+content_hash: "861d3721274f"
+synced_at: "2026-07-09T00:57:05.639917"
 ---
 
 # @ohos.app.appstartup.StartupTask (启动框架任务)

@@ -2,7 +2,8 @@
 title: "Rcp_SyncInterceptor"
 upstream_id: "harmonyos-references/_rcp___sync_interceptor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:02.091438"
+content_hash: "9d95046f029e"
+synced_at: "2026-07-09T00:59:35.795656"
 ---
 
 # Rcp_SyncInterceptor

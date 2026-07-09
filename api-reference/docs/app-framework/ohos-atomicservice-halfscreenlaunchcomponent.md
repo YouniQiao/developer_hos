@@ -2,7 +2,8 @@
 title: "HalfScreenLaunchComponent"
 upstream_id: "harmonyos-references/ohos-atomicservice-halfscreenlaunchcomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:48.882369"
+content_hash: "50d9a6c9caa3"
+synced_at: "2026-07-09T00:58:12.725086"
 ---
 
 # HalfScreenLaunchComponent

@@ -2,7 +2,8 @@
 title: "AppServiceExtensionContext (应用后台服务扩展组件上下文)"
 upstream_id: "harmonyos-references/js-apis-inner-application-appserviceextensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:52.989400"
+content_hash: "a0b20dad5f92"
+synced_at: "2026-07-09T00:57:08.897084"
 ---
 
 # AppServiceExtensionContext (应用后台服务扩展组件上下文)

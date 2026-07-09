@@ -2,7 +2,8 @@
 title: "Class (AVMusicTemplate)"
 upstream_id: "harmonyos-references/arkts-apis-avmusictemplate-avmusictemplate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:07.227723"
+content_hash: "3c31df543ef9"
+synced_at: "2026-07-09T01:00:19.621411"
 ---
 
 # Class (AVMusicTemplate)
@@ -3310,7 +3311,7 @@ setDownloadMediaEntityStatus(single: MediaEntity): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| single | [MediaEntity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-i#mediaentity) | 是 | 媒体实体。 |
+| single | [MediaEntity](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-avmusictemplate-i#mediaentity) | 是 | 单曲。 |
 
 返回值：
 

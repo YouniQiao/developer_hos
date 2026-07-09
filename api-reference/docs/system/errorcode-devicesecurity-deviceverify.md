@@ -2,7 +2,8 @@
 title: "DeviceVerify（应用设备状态检测）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-deviceverify"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:35.563200"
+content_hash: "55412be6bf6e"
+synced_at: "2026-07-09T00:59:15.215393"
 ---
 
 # DeviceVerify（应用设备状态检测）

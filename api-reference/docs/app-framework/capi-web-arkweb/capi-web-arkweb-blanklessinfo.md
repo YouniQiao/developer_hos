@@ -2,7 +2,8 @@
 title: "ArkWeb_BlanklessInfo"
 upstream_id: "harmonyos-references/capi-web-arkweb-blanklessinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:08.378140"
+content_hash: "d7caeb6cdce8"
+synced_at: "2026-07-09T00:58:55.212754"
 ---
 
 # ArkWeb_BlanklessInfo

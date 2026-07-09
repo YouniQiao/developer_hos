@@ -2,7 +2,8 @@
 title: "VPN错误码"
 upstream_id: "harmonyos-references/errorcode-net-vpn"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:56.870436"
+content_hash: "4d30301f8634"
+synced_at: "2026-07-09T00:59:31.521705"
 ---
 
 # VPN错误码

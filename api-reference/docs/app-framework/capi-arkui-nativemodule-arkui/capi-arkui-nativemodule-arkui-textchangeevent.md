@@ -2,7 +2,8 @@
 title: "ArkUI_TextChangeEvent"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-textchangeevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:50.178170"
+content_hash: "5dd8930d5b17"
+synced_at: "2026-07-09T00:58:41.990528"
 ---
 
 # ArkUI_TextChangeEvent
@@ -13,7 +14,7 @@ typedef struct {...} ArkUI_TextChangeEvent
 
 #### 概述
 
-定义组件事件的混合类型数据。
+定义文本变化事件的数据。
 
 起始版本： 15
 

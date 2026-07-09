@@ -2,7 +2,8 @@
 title: "OH_AudioCaptureInfo"
 upstream_id: "harmonyos-references/capi-avscreencapture-oh-audiocaptureinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:39.819362"
+content_hash: "3a96cc880c9a"
+synced_at: "2026-07-09T01:00:43.507246"
 ---
 
 # OH_AudioCaptureInfo

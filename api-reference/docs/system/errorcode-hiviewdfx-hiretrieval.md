@@ -1,9 +1,12 @@
 ---
+
 title: "应用灰度错误码"
 upstream_id: "harmonyos-references/errorcode-hiviewdfx-hiretrieval"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:50.630650"
+synced_at: "2026-07-09T01:00:05.967878"
+content_hash: "41e0f963d6d9"
 ---
+
 
 # 应用灰度错误码
 

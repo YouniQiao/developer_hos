@@ -2,7 +2,8 @@
 title: "OH_AudioSession_DeactivatedEvent"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audiosession-deactivatedevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:57.892644"
+content_hash: "61d03e02c9de"
+synced_at: "2026-07-09T01:00:11.080255"
 ---
 
 # OH_AudioSession_DeactivatedEvent

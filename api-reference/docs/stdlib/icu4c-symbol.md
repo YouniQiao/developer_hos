@@ -2,7 +2,8 @@
 title: "Native api中导出的ICU4C符号列表"
 upstream_id: "harmonyos-references/icu4c-symbol"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:07.111088"
+content_hash: "200de76a866f"
+synced_at: "2026-07-09T01:01:50.585957"
 ---
 
 # Native api中导出的ICU4C符号列表

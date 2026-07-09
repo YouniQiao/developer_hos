@@ -2,7 +2,8 @@
 title: "@ohos.UiTest"
 upstream_id: "harmonyos-references/js-apis-uitest"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:51.354795"
+content_hash: "91a17b46ecd9"
+synced_at: "2026-07-09T01:00:07.877498"
 ---
 
 # @ohos.UiTest

@@ -2,7 +2,8 @@
 title: "ContentSlot"
 upstream_id: "harmonyos-references/ts-components-contentslot"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:49.539009"
+content_hash: "fc85cb875db6"
+synced_at: "2026-07-09T00:58:13.099751"
 ---
 
 # ContentSlot

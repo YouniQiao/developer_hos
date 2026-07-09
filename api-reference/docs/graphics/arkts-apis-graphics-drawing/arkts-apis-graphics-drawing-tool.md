@@ -2,7 +2,8 @@
 title: "Class (Tool)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-tool"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:54.916055"
+content_hash: "d8292dca5ad5"
+synced_at: "2026-07-09T01:00:53.063132"
 ---
 
 # Class (Tool)

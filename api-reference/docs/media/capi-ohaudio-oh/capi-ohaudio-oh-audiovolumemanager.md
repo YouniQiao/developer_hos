@@ -2,7 +2,8 @@
 title: "OH_AudioVolumeManager"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audiovolumemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:58.106805"
+content_hash: "f3e12ed9f58c"
+synced_at: "2026-07-09T01:00:11.266184"
 ---
 
 # OH_AudioVolumeManager

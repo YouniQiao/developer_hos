@@ -2,7 +2,8 @@
 title: "Class (LiteResultSet)"
 upstream_id: "harmonyos-references/arkts-apis-data-relationalstore-literesultset"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:03.222001"
+content_hash: "24e52cd70a3e"
+synced_at: "2026-07-09T00:57:16.357113"
 ---
 
 # Class (LiteResultSet)

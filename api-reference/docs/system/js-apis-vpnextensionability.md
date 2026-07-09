@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.VpnExtensionAbility (三方VPN能力)"
 upstream_id: "harmonyos-references/js-apis-vpnextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:52.618633"
+content_hash: "0f8295611b67"
+synced_at: "2026-07-09T00:59:28.278377"
 ---
 
 # @ohos.app.ability.VpnExtensionAbility (三方VPN能力)

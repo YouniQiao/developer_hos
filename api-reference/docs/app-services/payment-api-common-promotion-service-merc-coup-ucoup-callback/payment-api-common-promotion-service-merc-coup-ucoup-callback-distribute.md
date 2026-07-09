@@ -2,7 +2,8 @@
 title: "发券事件回调通知"
 upstream_id: "harmonyos-references/payment-api-common-promotion-service-merc-coup-ucoup-callback-distribute"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:47.011336"
+content_hash: "d466578f512f"
+synced_at: "2026-07-09T01:01:35.289790"
 ---
 
 # 发券事件回调通知
@@ -56,9 +57,9 @@ Content-Type: application/json;charset=UTF-8
   "sign": "MEYCIQD8RlHJ9tGmc2tass32BgGgRbV5m********************2KxxldbJA2GYpU7nDIJCYHcZpBY1ffr21wgjQ2l",
   "signType": "SM2",
   "certNo": "10132120***",
-  "eventType": "1230223100516008511858780***",
-  "openId": "SM2",
-  "sendEntrance": "",
+  "eventType": "COUPON.SEND",
+  "openId": "A245DO***",
+  "sendEntrance": "PLATFORM_PUSH",
   "senderMerchant": "516008511***",
   "coupons": [
     {

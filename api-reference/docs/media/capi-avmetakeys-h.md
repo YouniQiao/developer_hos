@@ -2,7 +2,8 @@
 title: "avmetakeys.h"
 upstream_id: "harmonyos-references/capi-avmetakeys-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:38.273474"
+content_hash: "abfbd6bc55c5"
+synced_at: "2026-07-09T01:00:42.189194"
 ---
 
 # avmetakeys.h

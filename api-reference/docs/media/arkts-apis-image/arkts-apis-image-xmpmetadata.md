@@ -2,7 +2,8 @@
 title: "Class (XMPMetadata)"
 upstream_id: "harmonyos-references/arkts-apis-image-xmpmetadata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:23.811066"
+content_hash: "698a87472092"
+synced_at: "2026-07-09T01:00:30.602193"
 ---
 
 # Class (XMPMetadata)

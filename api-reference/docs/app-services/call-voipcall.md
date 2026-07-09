@@ -2,7 +2,8 @@
 title: "voipCall (应用内通话管理)"
 upstream_id: "harmonyos-references/call-voipcall"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:23.036219"
+content_hash: "773632b0cd2c"
+synced_at: "2026-07-09T01:01:16.346407"
 ---
 
 # voipCall (应用内通话管理)
@@ -23,7 +24,7 @@ import { voipCall } from '@kit.CallServiceKit';
 
 表示通话类型的枚举。
 
-模型约束: 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Telephony.VoipCallManager
 
@@ -38,7 +39,7 @@ import { voipCall } from '@kit.CallServiceKit';
 
 表示通话状态的枚举。
 
-模型约束: 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Telephony.VoipCallManager
 
@@ -59,7 +60,7 @@ import { voipCall } from '@kit.CallServiceKit';
 
 表示通话事件的枚举。
 
-模型约束: 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Telephony.VoipCallManager
 
@@ -82,7 +83,7 @@ import { voipCall } from '@kit.CallServiceKit';
 
 表示错误码类型的枚举。
 
-模型约束: 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Telephony.VoipCallManager
 
@@ -100,7 +101,7 @@ import { voipCall } from '@kit.CallServiceKit';
 
 通话事件详细信息。
 
-模型约束: 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Telephony.VoipCallManager
 
@@ -116,7 +117,7 @@ import { voipCall } from '@kit.CallServiceKit';
 
 表示来电消息建立失败原因的枚举。
 
-模型约束: 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Telephony.VoipCallManager
 
@@ -132,7 +133,7 @@ import { voipCall } from '@kit.CallServiceKit';
 
 通话属性选项。
 
-模型约束: 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Telephony.VoipCallManager
 
@@ -166,7 +167,7 @@ import { voipCall } from '@kit.CallServiceKit';
 | AUDIO_EVENT_UNMUTED | 1 | 取消静音。 |
 | AUDIO_EVENT_SPEAKER_ON | 2 | 开启扬声器。 |
 | AUDIO_EVENT_SPEAKER_OFF | 3 | 关闭扬声器。 |
-| AUDIO_EVENT_MIC_DISABLE | 5 | 静音且不允许操作麦克风。 **起始版本**: 6.1.1(24) **模型约束**: 此接口仅可在Stage模型下使用。 |
+| AUDIO_EVENT_MIC_DISABLE | 5 | 静音且不允许操作麦克风。 **起始版本**: 6.1.1(24) **模型约束**：此接口仅可在Stage模型下使用。 |
 
 #### voipCall.on('voipCallUiEvent')
 
@@ -174,7 +175,7 @@ on(type: 'voipCallUiEvent', callback: Callback<VoipCallUiEventInfo>): void
 
 订阅voipCallUiEvent事件。使用Callback异步回调。
 
-模型约束: 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Telephony.VoipCallManager
 
@@ -216,7 +217,7 @@ off(type: 'voipCallUiEvent', callback?: Callback<VoipCallUiEventInfo>): void
 
 取消订阅voipCallUiEvent事件。使用Callback异步回调。
 
-模型约束: 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Telephony.VoipCallManager
 
@@ -258,7 +259,7 @@ reportIncomingCall(voipCallAttribute: VoipCallAttribute): Promise<ErrorReason>
 
 通知来电消息，如果应用来电消息建立失败，需调用[reportIncomingCallError](#voipcallreportincomingcallerror)通知来电建立失败。需设置通话详细信息，见[VoipCallAttribute](#voipcallattribute)。使用Promise异步回调。
 
-模型约束: 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Telephony.VoipCallManager
 
@@ -362,7 +363,7 @@ reportOutgoingCall(voipCallAttribute: VoipCallAttribute): Promise<ErrorReason>
 
 应用上报去电。需设置通话详细信息，见[VoipCallAttribute](#voipcallattribute)。使用Promise异步回调。
 
-模型约束: 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Telephony.VoipCallManager
 
@@ -465,7 +466,7 @@ reportCallAudioEventChange(callId: string, callAudioEvent: CallAudioEvent): Prom
 
 应用上报通话中的静音、扬声器事件。使用Promise异步回调。
 
-模型约束: 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Telephony.VoipCallManager
 
@@ -542,7 +543,7 @@ reportCallStateChange(callId: string, callState: VoipCallState): Promise<void>
 
 该接口不能改变通话类型，例如，语音通话不能升级为视频通话，视频通话也不能降级为语音通话，如需上述升降级操作，请调用[voipCall.reportCallStateChange](#voipcallreportcallstatechange-1)。
 
-模型约束: 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Telephony.VoipCallManager
 
@@ -592,7 +593,7 @@ reportCallStateChange(callId: string, callState: VoipCallState, callType: VoipCa
 
 对于视频来电语音接听、通话中视频降语音或者语音升视频，需要调用该接口，并传入正确的callType。
 
-模型约束: 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Telephony.VoipCallManager
 
@@ -641,7 +642,7 @@ reportIncomingCallError(callId: string, voipCallFailureCause: VoipCallFailureCau
 
 通知来电消息建立失败的原因，使用Promise异步回调。
 
-模型约束: 此接口仅可在Stage模型下使用。
+模型约束：此接口仅可在Stage模型下使用。
 
 系统能力：SystemCapability.Telephony.VoipCallManager
 

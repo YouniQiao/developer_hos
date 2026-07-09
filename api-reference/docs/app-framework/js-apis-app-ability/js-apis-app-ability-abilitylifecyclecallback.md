@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.abilityLifecycleCallback (UIAbility生命周期回调监听器)"
 upstream_id: "harmonyos-references/js-apis-app-ability-abilitylifecyclecallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:44.991237"
+content_hash: "a2c621413750"
+synced_at: "2026-07-09T00:57:03.396608"
 ---
 
 # @ohos.app.ability.abilityLifecycleCallback (UIAbility生命周期回调监听器)

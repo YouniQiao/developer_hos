@@ -2,7 +2,8 @@
 title: "ArcButton"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-arcbutton"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:09.890463"
+content_hash: "35ad0bc6de4c"
+synced_at: "2026-07-09T00:57:55.033631"
 ---
 
 # ArcButton
@@ -273,7 +274,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070504.jpg)
+ ![](./img/zh-cn_image_0000002661732531.jpg)
 
 #### [h2]示例2 (设置设备进度条按钮)
 
@@ -364,4 +365,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469781.jpg)
+ ![](./img/zh-cn_image_0000002631253410.jpg)

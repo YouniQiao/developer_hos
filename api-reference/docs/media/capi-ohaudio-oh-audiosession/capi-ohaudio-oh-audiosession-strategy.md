@@ -2,7 +2,8 @@
 title: "OH_AudioSession_Strategy"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audiosession-strategy"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:57.701549"
+content_hash: "b90b4330d182"
+synced_at: "2026-07-09T01:00:10.910480"
 ---
 
 # OH_AudioSession_Strategy

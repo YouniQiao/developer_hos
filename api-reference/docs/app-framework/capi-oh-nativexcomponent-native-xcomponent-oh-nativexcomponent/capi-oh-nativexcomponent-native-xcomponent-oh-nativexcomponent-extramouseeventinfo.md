@@ -2,7 +2,8 @@
 title: "OH_NativeXComponent_ExtraMouseEventInfo"
 upstream_id: "harmonyos-references/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent-extramouseeventinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:49.416673"
+content_hash: "df78761a2410"
+synced_at: "2026-07-09T00:58:41.826250"
 ---
 
 # OH_NativeXComponent_ExtraMouseEventInfo

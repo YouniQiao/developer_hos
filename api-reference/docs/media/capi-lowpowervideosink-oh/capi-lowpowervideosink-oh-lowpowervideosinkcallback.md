@@ -2,7 +2,8 @@
 title: "OH_LowPowerVideoSinkCallback"
 upstream_id: "harmonyos-references/capi-lowpowervideosink-oh-lowpowervideosinkcallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:42.005258"
+content_hash: "148c5acb33d1"
+synced_at: "2026-07-09T01:00:44.799584"
 ---
 
 # OH_LowPowerVideoSinkCallback

@@ -2,7 +2,8 @@
 title: "通用事件"
 upstream_id: "harmonyos-references/js-components-common-events"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:00.588471"
+content_hash: "b4213abab8d0"
+synced_at: "2026-07-09T00:58:19.887332"
 ---
 
 # 通用事件

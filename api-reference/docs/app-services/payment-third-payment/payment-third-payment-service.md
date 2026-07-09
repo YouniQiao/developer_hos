@@ -2,7 +2,8 @@
 title: "thirdPaymentService(三方支付服务)"
 upstream_id: "harmonyos-references/payment-third-payment-service"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:38.825451"
+content_hash: "6735c5c69e09"
+synced_at: "2026-07-09T01:01:29.803724"
 ---
 
 # thirdPaymentService(三方支付服务)
@@ -37,9 +38,9 @@ import { thirdPaymentService } from '@kit.PaymentKit';
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| WECHAT_PAY | wechat_pay | 微信支付。 |
-| ALI_PAY | ali_pay | 支付宝支付。 |
-| WECHAT_MINI_PROGRAM | wechat_mini_program | 拉起微信小程序。 |
+| WECHAT_PAY | 'wechat_pay' | 微信支付。 |
+| ALI_PAY | 'ali_pay' | 支付宝支付。 |
+| WECHAT_MINI_PROGRAM | 'wechat_mini_program' | 拉起微信小程序。 |
 
 #### ThirdPayClient
 

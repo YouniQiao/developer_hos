@@ -2,7 +2,8 @@
 title: "ArkUI_Matrix4TranslationOptions"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-matrix4translationoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:51.880188"
+content_hash: "60683e95332a"
+synced_at: "2026-07-09T00:58:42.806316"
 ---
 
 # ArkUI_Matrix4TranslationOptions

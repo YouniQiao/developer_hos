@@ -2,7 +2,8 @@
 title: "status.h"
 upstream_id: "harmonyos-references/capi-status-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:58.535873"
+content_hash: "ae532443c495"
+synced_at: "2026-07-09T01:01:43.629255"
 ---
 
 # status.h

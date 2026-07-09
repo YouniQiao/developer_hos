@@ -2,7 +2,8 @@
 title: "ArkUI_TranslationOptions"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-translationoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:51.884378"
+content_hash: "7d606bcb7aff"
+synced_at: "2026-07-09T00:58:43.000180"
 ---
 
 # ArkUI_TranslationOptions

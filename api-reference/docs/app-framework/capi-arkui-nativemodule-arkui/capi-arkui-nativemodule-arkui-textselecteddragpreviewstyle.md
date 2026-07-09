@@ -2,7 +2,8 @@
 title: "ArkUI_SelectedDragPreviewStyle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-textselecteddragpreviewstyle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:59.139477"
+content_hash: "8ca714c0ecbb"
+synced_at: "2026-07-09T00:58:47.743029"
 ---
 
 # ArkUI_SelectedDragPreviewStyle

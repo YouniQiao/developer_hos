@@ -1,9 +1,12 @@
 ---
+
 title: "返回退款审核结果"
 upstream_id: "harmonyos-references/iap-server-refund-return-result"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:29.801909"
+synced_at: "2026-07-09T01:01:22.281443"
+content_hash: "97727556d4d7"
 ---
+
 
 # 返回退款审核结果
 

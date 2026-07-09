@@ -2,7 +2,8 @@
 title: "API错误码"
 upstream_id: "harmonyos-references/errorcode-remote-communication"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:03.093925"
+content_hash: "1899b37c4c8f"
+synced_at: "2026-07-09T00:59:36.834628"
 ---
 
 # API错误码
@@ -20,7 +21,7 @@ Unsupported protocol.
 
 错误描述
 
-协议版本服务器不支持。
+服务器不支持该协议版本。
 
 可能原因
 
@@ -98,11 +99,18 @@ Couldn't resolve host name.
 
 1. 传入的服务器的URL不正确。
 2. 网络不通畅。
+3. 系统内部异常。
+4. DNS服务器异常。
 
 处理步骤
 
 1. 请检查输入的服务器的URL是否合理。
 2. 请检查网络连接情况。
+3. 采集故障扩展信息字段或者日志，查看DNS相关字段：[dnsSockE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#dnssocke)、[dnsCloseE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#dnsclosee)、[dnsConnE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#dnsconne)、[dnsRecvE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#dnsrecve)、[dnsSendE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#dnssende)，以上有字段不为0，表明系统内部报错，建议排查应用管控是否有拦截、网络是否正常可用。
+4. 采集故障扩展信息字段或者日志，检验如下关键字段： [connDns](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#conndns)：若全"0"，表示Wi-Fi/蜂窝下发送请求至不可用的服务器，全部DNS服务器连接失败，DNS请求无法发送。
+5. [tryDns](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#trydns)：若为空表示当前无可用的DNS服务器。
+6. [recvDns](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#recvdns)：若[connDns](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#conndns)的DNS服务器与[recvDns](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#recvdns)中的DNS服务器若无法对应，表示有服务器没有返回DNS结果。
+7. [dnsStatus](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#dnsstatus)：1表示有IP地址，请求正常；2表示只拿到了CNAME，CNAME应该进行递归查询或者使用备份服务器重试；3表示非法报文。
 
 #### 1007900007 无法连接到服务器
 
@@ -278,11 +286,20 @@ Timeout was reached.
 
 可能原因
 
-TCP连接超时或读写超时。
+根据超时所处的不同阶段，可将其划分为以下四类：
+
+1. 参考[httpPhase字段说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#httpphase)，若dns开始阶段为1且其余阶段均为0，则判定为DNS阶段超时。DNS阶段超时可能由以下原因导致： DNS服务器异常，例如蜂窝网络或Wi-Fi连接故障。
+2. 服务器不支持IPv6或IPv4，导致查询无响应。
+3. 参考[httpPhase字段说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#httpphase)，若tcp开始阶段是1，tls开始阶段是0，则判定为TCP阶段超时。TCP阶段超时可能由以下原因导致： SYN报文发送超时。
+4. 网络切换、网络断开导致的系统内部异常。
+5. 代理信息错误，可能是系统代理获取失败或者调用方的代理配置错误。
+6. 参考[httpPhase字段说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#httpphase)，若tls开始阶段是1，snd开始阶段是0，则判定为TLS阶段超时。TLS阶段超时可能由TLS握手过程中TCP流产生异常导致。
+7. 参考[httpPhase字段说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#httpphase)，若snd开始阶段是1，rcv开始阶段是0，则判定发送阶段超时。若rcv开始阶段是1，bdy开始阶段是0，则判定响应头接收阶段超时。若rcv开始阶段是1，bdy开始阶段也是1，则判定响应体接收阶段超时。传输阶段超时可能由以下原因导致： [lastOsIn](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#lastosin)：表示最近一次系统内部通知RCP有数据到达的时间。如果[lastOsIn](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#lastosin)不存在或值为8:0:0.0，意味着系统内部接收缓冲区为空，RCP目前未接收到数据。[lastOsIn](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#lastosin)与超时发生时间之间的差异接近[cfgTransferMs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#cfgtransferms)，则表示长时间未能从系统内部接收数据，从而导致超时。
+8. [lastOsOut](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#lastosout)：表示最近一次系统内部通知RCP成功发送数据的时间。如果[lastOsOut](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#lastosout)不存在，则表明RCP面临系统内部发送缓冲区满的情况，无法发送数据。同时，[lastOsIn](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#lastosin)与[lastOsOut](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#lastosout)之间的差异接近[cfgTransferMs](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#cfgtransferms)，则表示从发送数据到接收响应的时间过长，导致超时。
 
 处理步骤
 
-排查网络问题。如果连续多次遇到1007900028错误码，建议把Session关闭后，重新创建Session。
+建议请检查网络连接，切换至更稳定的网络环境，并排查服务端是否存在阻塞情况。如果连续多次遇到1007900028错误码，建议把Session关闭后，重新创建Session。
 
 #### 1007900035 SSL连接错误
 
@@ -296,11 +313,14 @@ SSL连接错误。
 
 可能原因
 
-TLS版本或TLS加密套件配置不正确。
+根据系统内部是否发生错误，可划分为以下两种情况：
+
+1. 系统内部报错，故障扩展信息字段/日志中，[sslConnE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#sslconne)字段非0。可能的原因是TLS握手过程中出现TCP流异常（如网络切换或中断）导致。
+2. 系统内部无报错，故障扩展信息字段/日志中，[sslConnE](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#sslconne)字段为0。可能的原因是TLS握手过程中TCP流正常，但是云侧拒绝TLS连接导致。
 
 处理步骤
 
-检查TLS版本或TLS加密套件。
+如果TLS连接失败，请检客户端的TLS相关配置（[SecurityConfiguration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-rcp#securityconfiguration)中的tlsOptions和tlsRange属性）是否与服务端匹配，例如客户端与服务端的TLS版本是否匹配。
 
 #### 1007900037 无法读取文件
 
@@ -502,11 +522,20 @@ SSL peer certificate or SSH remote key was not OK.
 
 可能原因
 
-无法校验服务器身份，有可能是证书过期了。
+1. 无法校验服务器身份，有可能是证书过期了。
+2. 证书自身异常。
+3. 调用方设置的CA异常。
 
 处理步骤
 
-检查证书有效性。
+1. 检查证书有效性。常见的异常原因：证书是自签名证书、访问了Portal（门户认证）网站等。
+2. 查看访问的服务器的证书颁发者信息。 浏览器访问目标服务器地址，进入证书查看界面，在证书的详细信息中，查看“颁发者” 字段的颁发者名称信息，检查颁发者是否是受信任的机构。
+3. 采集故障扩展信息字段或者日志，查看关键字段[issuers](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#issuers)，通过IssuerName判断证书颁发者是否是对应服务器返回。
+4. 采集故障扩展信息字段或者日志，查看如下关键字信息： [tstGlbUsr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#tstglbusr)、[tstCurUsr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#tstcurusr)：参考[网络连接安全配置](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-network-ca-security#section11935814273)信任CA证书。
+5. [caFun](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#cafun)：若使用了自定义回调函数，请查看回调函数的逻辑正确性。
+6. [selfCaPath](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#selfcapath)：若使用了自定义CA文件夹，请分析排查自定义CA文件夹下的证书与服务器证书是否匹配。
+7. [selfCaFile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#selfcafile)：若使用了自定义证书文件，请分析排查自定义证书文件。
+8. [selfCaBlob](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/remote-communication-error-field#selfcablob)：若使用了自定义证书内容，请分析排查自定义证书内容。
 
 #### 1007900061 无法识别或错误的HTTP编码格式
 

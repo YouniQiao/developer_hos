@@ -2,7 +2,8 @@
 title: "GameController"
 upstream_id: "harmonyos-references/capi-game-controller"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:24.871900"
+content_hash: "84fda9b1281d"
+synced_at: "2026-07-09T01:01:18.248037"
 ---
 
 # GameController

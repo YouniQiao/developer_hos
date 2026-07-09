@@ -2,7 +2,8 @@
 title: "Image_NativeModule"
 upstream_id: "harmonyos-references/capi-image-nativemodule"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:25.005965"
+content_hash: "e2faabb00343"
+synced_at: "2026-07-09T01:00:31.311146"
 ---
 
 # Image_NativeModule

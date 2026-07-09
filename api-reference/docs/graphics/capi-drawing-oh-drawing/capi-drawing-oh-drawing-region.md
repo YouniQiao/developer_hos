@@ -2,7 +2,8 @@
 title: "OH_Drawing_Region"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-region"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:09.011153"
+content_hash: "31521e1b4274"
+synced_at: "2026-07-09T01:01:03.188894"
 ---
 
 # OH_Drawing_Region

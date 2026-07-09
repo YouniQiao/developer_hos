@@ -2,7 +2,8 @@
 title: "Print_PrintAttributes"
 upstream_id: "harmonyos-references/capi-oh-print-print-printattributes"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:12.705582"
+content_hash: "30c825b0feb4"
+synced_at: "2026-07-09T00:59:44.602037"
 ---
 
 # Print_PrintAttributes

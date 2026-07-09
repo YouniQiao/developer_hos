@@ -1,9 +1,12 @@
 ---
+
 title: "数据类型说明"
 upstream_id: "harmonyos-references/iap-data-model"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:27.934422"
+synced_at: "2026-07-09T01:01:20.914333"
+content_hash: "3e2daf6a2f3c"
 ---
+
 
 # 数据类型说明
 

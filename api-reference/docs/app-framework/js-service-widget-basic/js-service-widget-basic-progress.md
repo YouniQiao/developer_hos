@@ -2,7 +2,8 @@
 title: "progress"
 upstream_id: "harmonyos-references/js-service-widget-basic-progress"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:29.701126"
+content_hash: "af81b2f79a55"
+synced_at: "2026-07-09T00:58:31.656453"
 ---
 
 # progress
@@ -67,7 +68,7 @@ type=arc
 | background-color | | - | 否 | 弧形进度条的背景色。 |
 | stroke-width | | - | 否 | 弧形进度条的宽度。 进度条宽度越大，进度条越靠近圆心。即进度条始终在半径区域内。 |
 | start-angle | | 240 | 否 | 弧形进度条起始角度，以时钟0点为基线。范围为0到360（顺时针）。 |
-| total-angle | | 240 | 否 | 弧形进度条总长度，范围为-360到360，负数标识起点到终点为逆时针。 |
+| total-angle | | 240 | 否 | 弧形进度条总角度，范围为-360到360，负数表示起点到终点为逆时针。 |
 | center-x | | - | 否 | 弧形进度条中心位置，（坐标原点为组件左上角顶点）。该样式需要和center-y和radius一起。 |
 | center-y | | - | 否 | 弧形进度条中心位置，（坐标原点为组件左上角顶点）。该样式需要和center-x和radius一起。 |
 | radius | | - | 否 | 弧形进度条半径，该样式需要和center-x和center-y一起。 |
@@ -103,4 +104,4 @@ type=arc
 ```
  4*4卡片
 
-![](./img/zh-cn_image_0000002656470497.png)
+![](./img/zh-cn_image_0000002631254134.png)

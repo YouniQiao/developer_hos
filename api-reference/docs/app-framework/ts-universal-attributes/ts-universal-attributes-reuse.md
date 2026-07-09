@@ -1,9 +1,12 @@
 ---
+
 title: "复用选项"
 upstream_id: "harmonyos-references/ts-universal-attributes-reuse"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:49.726028"
+synced_at: "2026-07-09T00:57:43.441286"
+content_hash: "7c24631e03e0"
 ---
+
 
 # 复用选项
 

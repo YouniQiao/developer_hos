@@ -2,7 +2,8 @@
 title: "Interface (MapEventManager)"
 upstream_id: "harmonyos-references/map-map-mapeventmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:34.151284"
+content_hash: "ef690ceefa98"
+synced_at: "2026-07-09T01:01:26.692094"
 ---
 
 # Interface (MapEventManager)

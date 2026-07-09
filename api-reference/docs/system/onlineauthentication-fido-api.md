@@ -2,7 +2,8 @@
 title: "FIDO"
 upstream_id: "harmonyos-references/onlineauthentication-fido-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:38.195587"
+content_hash: "936dfcd36170"
+synced_at: "2026-07-09T00:59:17.535267"
 ---
 
 # FIDO
@@ -221,7 +222,7 @@ discover(context: common.Context): Promise<DiscoveryData>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. |
-| 801 | Device type error. |
+| 801 | Device type error. 适用版本：6.0.1(21)+ |
 | 1005900015 | System Interruption. |
 | 1005900016 | Unknown error. |
 
@@ -278,7 +279,7 @@ checkPolicy(context: common.Context, uafRequest: UAFMessage): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. |
-| 801 | Device type error. |
+| 801 | Device type error. 适用版本：6.0.1(21)+ |
 | 1005900005 | No authenticator matching the authenticator policy specified is available. |
 | 1005900006 | A violation of the UAF protocol occurred. |
 | 1005900015 | System Interruption. |
@@ -343,7 +344,7 @@ processUAFOperation(context: common.Context, uafRequest: UAFMessage, channelBind
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. |
-| 801 | Device type error. |
+| 801 | Device type error. 适用版本：6.0.1(21)+ |
 | 1005900003 | User cancels. |
 | 1005900005 | No authenticator matching the authenticator policy specified is available. |
 | 1005900006 | A violation of the UAF protocol occurred. |
@@ -352,7 +353,8 @@ processUAFOperation(context: common.Context, uafRequest: UAFMessage, channelBind
 | 1005900014 | The user does not record biometric features or the authentication module is abnormal. |
 | 1005900015 | System Interruption. |
 | 1005900016 | Unknown error. |
-| 1005900017 | Switched to the custom authentication process. |
+| 1005900017 | Switched to the custom authentication process. 适用版本：6.0.1(21)+ |
+| 1005900018 | Authentication is locked out. 适用版本：26.0.0+ |
 
 示例：
 
@@ -413,7 +415,7 @@ notifyUAFResult(context: common.Context, uafResponse: UAFMessage): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. |
-| 801 | Device type error. |
+| 801 | Device type error. 适用版本：6.0.1(21)+ |
 | 1005900006 | A violation of the UAF protocol occurred. |
 | 1005900015 | System Interruption. |
 | 1005900016 | Unknown error. |

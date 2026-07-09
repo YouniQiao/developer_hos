@@ -2,7 +2,8 @@
 title: "Camera_Input"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-input"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:17.679955"
+content_hash: "3b72c9abcbf8"
+synced_at: "2026-07-09T01:00:26.689414"
 ---
 
 # Camera_Input

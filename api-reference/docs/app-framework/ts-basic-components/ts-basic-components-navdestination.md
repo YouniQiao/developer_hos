@@ -2,7 +2,8 @@
 title: "NavDestination"
 upstream_id: "harmonyos-references/ts-basic-components-navdestination"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:01.570143"
+content_hash: "c94a82ae894c"
+synced_at: "2026-07-09T00:57:51.019799"
 ---
 
 # NavDestination
@@ -331,7 +332,7 @@ recoverable(recoverable: Optional<boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| recoverable | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | NavDestination是否可恢复，默认为不可恢复。 默认值：false true：路由栈可恢复。 false：路由栈不可恢复。 |
+| recoverable | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | NavDestination是否可恢复，默认为不可恢复。 默认值：false true：NavDestination可恢复。 false：NavDestination不可恢复。 |
 
 #### [h2]bindToScrollable14+
 
@@ -519,7 +520,7 @@ NavDestination类型。
 1. 设置NavigationSystemTransitionType为TITLE时，系统转场只有标题栏动画。
 2. 设置NavigationSystemTransitionType为CONTENT时，系统转场只有内容区动画。
 
-设置NONE或者TITLE时没有系统转场动画，设置CONTENT和DEFAULT时默认系统转场动画。
+设置NONE时没有系统转场动画，设置TITLE时只有标题栏系统转场动画，设置CONTENT和DEFAULT时默认系统转场动画。
 
 #### 事件
 
@@ -764,7 +765,7 @@ NavDestination自定义标题。
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | builder | [CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8) | 否 | 否 | 设置标题栏内容。 |
-| height | [TitleHeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#titleheight9) | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 否 | 设置标题栏高度。 取值范围：[0, +∞)。 |
+| height | [TitleHeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#titleheight9) | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 否 | 设置标题栏高度。 取值范围：[0, +∞) 单位参考[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)类型的说明。 |
 
 #### NavDestinationContext11+
 
@@ -943,7 +944,7 @@ struct MyPageOne {
                   .borderRadius(10)
                   .backgroundColor(Color.Gray)
               }
-            }, (item: string) => item);
+            }, (item: number) => item.toString());
           }.width('100%').height('80%').scrollBar(BarState.Off)
           .nestedScroll({ scrollForward: NestedScrollMode.SELF_FIRST, scrollBackward: NestedScrollMode.SELF_FIRST })
 
@@ -958,7 +959,7 @@ struct MyPageOne {
                 .borderRadius(10)
                 .backgroundColor(Color.Pink)
             }
-          }, (item: string) => item);
+          }, (item: number) => item.toString());
         }
       }
       .width('100%')
@@ -1004,7 +1005,7 @@ struct MyPageTwo {
               .borderRadius(10)
               .backgroundColor(Color.Gray)
           }
-        }, (item: string) => item);
+        }, (item: number) => item.toString());
       }.width('100%')
     }
     .title('PageTwo', { backgroundColor: Color.Yellow, barStyle: BarStyle.STACK })
@@ -1051,7 +1052,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349765.gif)
+ ![](./img/zh-cn_image_0000002661612527.gif)
 
 #### [h2]示例2（设置NavDestination自定义转场）
 
@@ -1090,7 +1091,6 @@ declare type voidFunc = () => void;
 @Component
 struct NavDest {
   @State name: string = 'NA';
-  @State destWidth: string = '100%';
   stack: NavPathStack = new NavPathStack();
   @State translateY: string = '0';
 
@@ -1192,7 +1192,7 @@ struct NavDest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230352.gif)
+ ![](./img/zh-cn_image_0000002631413236.gif)
 
 #### [h2]示例3（设置指定的NavDestination系统转场）
 
@@ -1439,13 +1439,13 @@ struct HomeBody {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070442.gif)
+ ![](./img/zh-cn_image_0000002661732467.gif)
 
-![](./img/zh-cn_image_0000002656469719.gif)
+![](./img/zh-cn_image_0000002631253346.gif)
 
-![](./img/zh-cn_image_0000002656349767.gif)
+![](./img/zh-cn_image_0000002661612529.gif)
 
-![](./img/zh-cn_image_0000002626230354.gif)
+![](./img/zh-cn_image_0000002631413238.gif)
 
 #### [h2]示例4（NavDestination配置页面方向和对应状态栏、导航条显隐）
 
@@ -1535,7 +1535,7 @@ struct ExamplePage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070444.gif)
+ ![](./img/zh-cn_image_0000002661732469.gif)
 
 #### [h2]示例5（NavDestination的onActive与onInActive生命周期）
 
@@ -1751,6 +1751,6 @@ struct NavBody {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469721.gif)
+ ![](./img/zh-cn_image_0000002631253348.gif)
 
 NavDestination其他用法可参考[Navigation示例](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#示例)。

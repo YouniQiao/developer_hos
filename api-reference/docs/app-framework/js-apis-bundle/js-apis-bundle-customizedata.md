@@ -2,7 +2,8 @@
 title: "CustomizeData"
 upstream_id: "harmonyos-references/js-apis-bundle-customizedata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:56.772241"
+content_hash: "fe32d5eb5383"
+synced_at: "2026-07-09T00:57:11.584078"
 ---
 
 # CustomizeData

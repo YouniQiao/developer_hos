@@ -2,7 +2,8 @@
 title: "rating"
 upstream_id: "harmonyos-references/js-components-basic-rating"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:07.103016"
+content_hash: "d57e0113924a"
+synced_at: "2026-07-09T00:58:22.357603"
 ---
 
 # rating
@@ -90,4 +91,4 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002656350311.png)
+ ![](./img/zh-cn_image_0000002661613081.png)

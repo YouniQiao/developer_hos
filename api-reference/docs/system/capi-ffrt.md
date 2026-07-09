@@ -2,7 +2,8 @@
 title: "FFRT"
 upstream_id: "harmonyos-references/capi-ffrt"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:15.798937"
+content_hash: "6863e0b0ee52"
+synced_at: "2026-07-09T00:59:46.705277"
 ---
 
 # FFRT

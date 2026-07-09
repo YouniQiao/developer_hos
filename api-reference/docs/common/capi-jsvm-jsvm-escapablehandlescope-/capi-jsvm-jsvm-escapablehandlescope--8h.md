@@ -2,7 +2,8 @@
 title: "JSVM_EscapableHandleScope__*"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-escapablehandlescope--8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:04.058213"
+content_hash: "59e32a9c2c3a"
+synced_at: "2026-07-09T01:01:47.932193"
 ---
 
 # JSVM_EscapableHandleScope__*

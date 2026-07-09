@@ -2,7 +2,8 @@
 title: "updateManager（更新功能）"
 upstream_id: "harmonyos-references/store-updatemanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:22.118671"
+content_hash: "b068fe109811"
+synced_at: "2026-07-09T01:01:14.717392"
 ---
 
 # updateManager（更新功能）
@@ -271,7 +272,7 @@ on(type: 'updateChange', callback: Callback<UpdateSessionState>, timeout?: numbe
 
 监听元服务更新检查接口，检查到有/无更新后，使用callback方式返回结果。
 
-![](./img/note_3.0-zh-cn.png) 同一设备下元服务的调用次数不超过6次/天、每30分钟调用次数不超过1次。
+![](./img/note_3.0-zh-cn.png) 同一设备下元服务的监听注册次数不超过6次/天、每30分钟监听注册次数不超过1次。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

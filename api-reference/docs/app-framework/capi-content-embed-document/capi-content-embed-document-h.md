@@ -2,7 +2,8 @@
 title: "content_embed_document.h"
 upstream_id: "harmonyos-references/capi-content-embed-document-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:11.535983"
+content_hash: "7dcf7e2ba82c"
+synced_at: "2026-07-09T00:58:58.633090"
 ---
 
 # content_embed_document.h

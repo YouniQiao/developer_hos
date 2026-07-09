@@ -2,7 +2,8 @@
 title: "buffer_handle.h"
 upstream_id: "harmonyos-references/capi-buffer-handle-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:04.358775"
+content_hash: "adc2982372d2"
+synced_at: "2026-07-09T01:00:59.248417"
 ---
 
 # buffer_handle.h

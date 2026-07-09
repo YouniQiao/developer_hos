@@ -2,7 +2,8 @@
 title: "HMS_GCP_PickedColorInfo"
 upstream_id: "harmonyos-references/pen-imagefeaturepicker-struct-colorinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:39.672016"
+content_hash: "62c5fdecb083"
+synced_at: "2026-07-09T00:59:59.282518"
 ---
 
 # HMS_GCP_PickedColorInfo

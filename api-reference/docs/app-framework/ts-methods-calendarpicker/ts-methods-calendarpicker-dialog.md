@@ -2,7 +2,8 @@
 title: "日历选择器弹窗 (CalendarPickerDialog)"
 upstream_id: "harmonyos-references/ts-methods-calendarpicker-dialog"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:44.075812"
+content_hash: "5b5d27f8b400"
+synced_at: "2026-07-09T00:58:09.225049"
 ---
 
 # 日历选择器弹窗 (CalendarPickerDialog)
@@ -126,7 +127,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230744.gif)
+ ![](./img/zh-cn_image_0000002631253744.gif)
 
 #### [h2]示例2（自定义按钮样式）
 
@@ -181,7 +182,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070834.png)
+ ![](./img/zh-cn_image_0000002661612927.png)
 
 #### [h2]示例3（悬停态弹窗）
 
@@ -230,7 +231,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470111.gif)
+ ![](./img/zh-cn_image_0000002631413636.gif)
 
 #### [h2]示例4（设置日期选中态底板样式）
 
@@ -262,7 +263,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350159.png)
+ ![](./img/zh-cn_image_0000002661732867.png)
 
 #### [h2]示例5（设置开始日期和结束日期）
 
@@ -294,7 +295,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230746.gif)
+ ![](./img/zh-cn_image_0000002631253746.gif)
 
 #### [h2]示例6（设置系统当前日期在日历选择器弹窗内保持高亮显示，并设置禁用日期区间）
 
@@ -325,7 +326,7 @@ struct CalendarPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070836.gif)
+ ![](./img/zh-cn_image_0000002661612929.gif)
 
 #### [h2]示例7（自定义背景模糊效果参数）
 
@@ -363,7 +364,7 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470113.png)
+ ![](./img/zh-cn_image_0000002631413638.png)
 
 #### [h2]示例8（自定义背景效果参数）
 
@@ -402,4 +403,4 @@ struct CalendarPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350161.png)
+ ![](./img/zh-cn_image_0000002661732869.png)

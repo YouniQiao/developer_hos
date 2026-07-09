@@ -2,7 +2,8 @@
 title: "ArkTSUtils.locks"
 upstream_id: "harmonyos-references/arkts-apis-arkts-utils-locks"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:14.829515"
+content_hash: "6f8556d5ee79"
+synced_at: "2026-07-09T00:57:24.597470"
 ---
 
 # ArkTSUtils.locks

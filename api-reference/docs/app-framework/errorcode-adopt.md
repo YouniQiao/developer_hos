@@ -2,7 +2,8 @@
 title: "附属节点错误码"
 upstream_id: "harmonyos-references/errorcode-adopt"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:00.564059"
+content_hash: "503681f29bed"
+synced_at: "2026-07-09T00:58:48.664707"
 ---
 
 # 附属节点错误码

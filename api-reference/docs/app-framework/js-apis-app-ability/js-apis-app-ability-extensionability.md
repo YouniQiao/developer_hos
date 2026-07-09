@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.ExtensionAbility (扩展能力基类)"
 upstream_id: "harmonyos-references/js-apis-app-ability-extensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:46.805091"
+content_hash: "69032e2e3b8a"
+synced_at: "2026-07-09T00:57:04.442070"
 ---
 
 # @ohos.app.ability.ExtensionAbility (扩展能力基类)

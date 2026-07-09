@@ -2,7 +2,8 @@
 title: "日期滑动选择器弹窗 (DatePickerDialog)"
 upstream_id: "harmonyos-references/ts-methods-datepicker-dialog"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:44.779614"
+content_hash: "6f89ad42b0bf"
+synced_at: "2026-07-09T00:58:09.645597"
 ---
 
 # 日期滑动选择器弹窗 (DatePickerDialog)
@@ -159,7 +160,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230748.gif)
+ ![](./img/zh-cn_image_0000002631253748.gif)
 
 #### [h2]示例2（自定义样式）
 
@@ -237,7 +238,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070838.png)
+ ![](./img/zh-cn_image_0000002661612931.png)
 
 ![](./img/note_3.0-zh-cn.png) 如需完全自定义实现日期滑动选择器弹窗，可以通过先使用[自定义弹窗 (CustomDialog)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-custom-dialog-box)，然后使用[DatePicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-datepicker)组件来实现。
 
@@ -296,7 +297,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470115.gif)
+ ![](./img/zh-cn_image_0000002631413640.gif)
 
 #### [h2]示例4（设置弹窗位置）
 
@@ -331,7 +332,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350163.png)
+ ![](./img/zh-cn_image_0000002661732871.png)
 
 #### [h2]示例5（设置遮蔽区）
 
@@ -370,7 +371,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230750.png)
+ ![](./img/zh-cn_image_0000002631253750.png)
 
 #### [h2]示例6（设置弹窗背板）
 
@@ -406,7 +407,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070840.png)
+ ![](./img/zh-cn_image_0000002661612933.png)
 
 #### [h2]示例7（设置公历农历）
 
@@ -456,7 +457,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470117.gif)
+ ![](./img/zh-cn_image_0000002631413642.gif)
 
 #### [h2]示例8（设置显示月、日列）
 
@@ -490,7 +491,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350165.gif)
+ ![](./img/zh-cn_image_0000002661732873.gif)
 
 #### [h2]示例9（设置循环滚动）
 
@@ -533,7 +534,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230752.gif)
+ ![](./img/zh-cn_image_0000002631253752.gif)
 
 #### [h2]示例10（自定义背景模糊效果参数）
 
@@ -571,7 +572,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070842.png)
+ ![](./img/zh-cn_image_0000002661612935.png)
 
 #### [h2]示例11（自定义背景效果参数）
 
@@ -611,4 +612,4 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470119.png)
+ ![](./img/zh-cn_image_0000002631413644.png)

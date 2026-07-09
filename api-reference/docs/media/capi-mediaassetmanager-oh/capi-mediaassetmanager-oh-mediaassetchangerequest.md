@@ -2,7 +2,8 @@
 title: "OH_MediaAssetChangeRequest"
 upstream_id: "harmonyos-references/capi-mediaassetmanager-oh-mediaassetchangerequest"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:48.221946"
+content_hash: "d17e5a7a6517"
+synced_at: "2026-07-09T01:00:48.595818"
 ---
 
 # OH_MediaAssetChangeRequest

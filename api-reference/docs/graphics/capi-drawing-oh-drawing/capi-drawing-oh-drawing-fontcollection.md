@@ -2,7 +2,8 @@
 title: "OH_Drawing_FontCollection"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-fontcollection"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:07.804091"
+content_hash: "f175b63e90b0"
+synced_at: "2026-07-09T01:01:02.140804"
 ---
 
 # OH_Drawing_FontCollection

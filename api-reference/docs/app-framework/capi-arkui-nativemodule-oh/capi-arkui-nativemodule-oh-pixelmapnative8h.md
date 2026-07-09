@@ -2,7 +2,8 @@
 title: "OH_PixelmapNative*"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-pixelmapnative8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:44.801628"
+content_hash: "bd57f8bd7f72"
+synced_at: "2026-07-09T00:58:38.878446"
 ---
 
 # OH_PixelmapNative*

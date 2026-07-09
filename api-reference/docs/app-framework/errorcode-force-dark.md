@@ -1,9 +1,12 @@
 ---
+
 title: "反色能力错误码"
 upstream_id: "harmonyos-references/errorcode-force-dark"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:01.963785"
+synced_at: "2026-07-09T00:58:49.548810"
+content_hash: "c7b82bad4a09"
 ---
+
 
 # 反色能力错误码
 

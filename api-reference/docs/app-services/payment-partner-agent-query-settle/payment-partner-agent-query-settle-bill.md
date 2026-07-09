@@ -2,7 +2,8 @@
 title: "查询结算账单"
 upstream_id: "harmonyos-references/payment-partner-agent-query-settle-bill"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:46.021096"
+content_hash: "9ad3fd4bc179"
+synced_at: "2026-07-09T01:01:34.334280"
 ---
 
 # 查询结算账单
@@ -13,7 +14,7 @@ synced_at: "2026-06-24T20:53:46.021096"
 
 ![](./img/note_3.0-zh-cn.png)
 
-1. 获取结算账单API接口能力需要管理员先在“[华为支付商户平台](https://petalpay-merchant.cloud.huawei.com/)”的“功能设置”中开启“结算单接口获取开关”，开启后**次日开始生成**前一日的账单。 ![](./img/zh-cn_image_0000002656351027.png)
+1. 获取结算账单API接口能力需要管理员先在“[华为支付商户平台](https://petalpay-merchant.cloud.huawei.com/)”的“功能设置”中开启“结算单接口获取开关”，开启后**次日开始生成**前一日的账单。 ![](./img/zh-cn_image_0000002661613805.png)
 2. 无论是否产生交易，每日自动生成账单。如果查询日期超限或未生成，则不返回文件下载信息。其他情况会返回。
 3. 账单下载后，建议遍历附件目录以获取csv后缀的文件进行解析。
 4. 解析表单内容时，需考虑表单更新，如新增列等场景。
@@ -102,7 +103,7 @@ Content-Type: application/json; charset=UTF-8
 
 result_code非400000的错误码请查看[公共错误码说明](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/payment-error-code-rest#公共错误码说明)。
 
-| 返回码 | **错误码** | **错误描述** | **解决方案** |
+| 返回码 | 错误码 | 错误描述 | 解决方案 |
 | --- | --- | --- | --- |
 | 400000 | NOT_SETTLEMENT_DATE | 非结算日，账单未生成。 | 请修改入参日期重试。 |
 | 400000 | INVALID_ARGUMENTS | 参数不合法。 | 请检查请求参数。 |
@@ -127,7 +128,7 @@ if (responseEntity.getStatusCode() == HttpStatus.OK) {
 
 #### 结算账单文件说明
 
-| **字段名** | 是否必填 | **描述** | **示例值** |
+| 字段名 | 是否必选 | 描述 | 示例值 |
 | --- | --- | --- | --- |
 | 结算单号 | 是 | 指商户号结算时，华为支付为该次结算分配的订单号。 | 71306c214b2d486199e3c19a6******X |
 | 结算日 | 是 | 依据该商户号结算周期，华为支付将交易款结算给该商户号结算账户的日期，格式为yyyyMMdd。 | 20220826 |

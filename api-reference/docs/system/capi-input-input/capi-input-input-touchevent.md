@@ -2,7 +2,8 @@
 title: "Input_TouchEvent"
 upstream_id: "harmonyos-references/capi-input-input-touchevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:19.998408"
+content_hash: "c9458b294da6"
+synced_at: "2026-07-09T00:59:50.081082"
 ---
 
 # Input_TouchEvent

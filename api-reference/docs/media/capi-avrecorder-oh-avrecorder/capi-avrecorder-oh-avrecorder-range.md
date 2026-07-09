@@ -2,7 +2,8 @@
 title: "OH_AVRecorder_Range"
 upstream_id: "harmonyos-references/capi-avrecorder-oh-avrecorder-range"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:39.405712"
+content_hash: "ee800726ab46"
+synced_at: "2026-07-09T01:00:43.056917"
 ---
 
 # OH_AVRecorder_Range

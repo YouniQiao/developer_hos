@@ -2,7 +2,8 @@
 title: "OH_ArkUI_LetterSpacingStyle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-arkui-letterspacingstyle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:55.590396"
+content_hash: "62c7d241a0d6"
+synced_at: "2026-07-09T00:58:45.224981"
 ---
 
 # OH_ArkUI_LetterSpacingStyle

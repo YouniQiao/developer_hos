@@ -2,7 +2,8 @@
 title: "polygon"
 upstream_id: "harmonyos-references/js-components-svg-polygon"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:11.983868"
+content_hash: "247556c8f2c1"
+synced_at: "2026-07-09T00:58:24.813212"
 ---
 
 # polygon
@@ -39,4 +40,4 @@ synced_at: "2026-06-24T20:49:11.983868"
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002626071032.png)
+ ![](./img/zh-cn_image_0000002661733067.png)

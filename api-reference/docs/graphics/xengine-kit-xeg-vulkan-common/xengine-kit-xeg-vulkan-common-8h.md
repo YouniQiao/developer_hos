@@ -2,7 +2,8 @@
 title: "xeg_vulkan_common.h"
 upstream_id: "harmonyos-references/xengine-kit-xeg-vulkan-common-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:15.558806"
+content_hash: "6ebfbd9e294d"
+synced_at: "2026-07-09T01:01:09.562967"
 ---
 
 # xeg_vulkan_common.h

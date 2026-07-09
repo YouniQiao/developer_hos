@@ -2,7 +2,8 @@
 title: "drawing_path_iterator.h"
 upstream_id: "harmonyos-references/capi-drawing-path-iterator-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:01.849205"
+content_hash: "3577cae21f7a"
+synced_at: "2026-07-09T01:00:56.776144"
 ---
 
 # drawing_path_iterator.h

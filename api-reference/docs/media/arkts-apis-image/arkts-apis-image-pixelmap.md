@@ -2,7 +2,8 @@
 title: "Interface (PixelMap)"
 upstream_id: "harmonyos-references/arkts-apis-image-pixelmap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:24.346182"
+content_hash: "d5e27bb17558"
+synced_at: "2026-07-09T01:00:32.167815"
 ---
 
 # Interface (PixelMap)

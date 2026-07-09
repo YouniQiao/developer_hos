@@ -2,7 +2,8 @@
 title: "TextTimer"
 upstream_id: "harmonyos-references/ts-basic-components-texttimer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:27.946006"
+content_hash: "65bcb1b05c94"
+synced_at: "2026-07-09T00:58:02.704468"
 ---
 
 # TextTimer
@@ -54,7 +55,7 @@ TextTimer(options?: TextTimerOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | string | 是 | 自定义日期显示的格式。 默认值：'HH:mm:ss.SS' |
+| value | string | 是 | 自定义时间显示的格式。 默认值：'HH:mm:ss.SS' |
 
 #### [h2]fontColor
 
@@ -346,7 +347,7 @@ struct TextTimerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350027.png)
+ ![](./img/zh-cn_image_0000002661612793.png)
 
 #### [h2]示例3（设定自定义内容区）
 
@@ -424,7 +425,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230614.gif)
+ ![](./img/zh-cn_image_0000002631413504.gif)
 
 #### [h2]示例4（创建之后立即执行计时）
 
@@ -459,7 +460,7 @@ struct TextTimerStart {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070704.gif)
+ ![](./img/zh-cn_image_0000002661732733.gif)
 
 #### [h2]示例5（设置文本样式）
 
@@ -512,7 +513,7 @@ struct demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469981.png)
+ ![](./img/zh-cn_image_0000002631253614.png)
 
 #### [h2]示例6（设置初始计时时间）
 
@@ -552,4 +553,4 @@ struct TextTimerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350029.gif)
+ ![](./img/zh-cn_image_0000002661612795.gif)

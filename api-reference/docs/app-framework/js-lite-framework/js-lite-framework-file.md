@@ -2,7 +2,8 @@
 title: "文件组织"
 upstream_id: "harmonyos-references/js-lite-framework-file"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:15.224572"
+content_hash: "491808f7dd17"
+synced_at: "2026-07-09T00:58:26.173574"
 ---
 
 # 文件组织
@@ -13,7 +14,7 @@ JS FA应用的JS模块(entry/src/main/js/module)的典型开发目录结构如�
 
 图1 目录结构
 
-![](./img/zh-cn_image_0000002656470395.png)
+![](./img/zh-cn_image_0000002631254032.png)
 
 目录结构中文件分类如下：
 

@@ -2,7 +2,8 @@
 title: "@ohos.enterprise.applicationManager（应用管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-applicationmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:22.253646"
+content_hash: "16c4e3e9666c"
+synced_at: "2026-07-09T00:59:52.473407"
 ---
 
 # @ohos.enterprise.applicationManager（应用管理）
@@ -789,7 +790,7 @@ isModifyAutoStartAppsDisallowed(admin: Want, autoStartApp: Want, accountId: numb
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | 是否禁止用户取消应用自启动，true表示禁止，false表示允许。 |
+| boolean | 是否禁止用户取消应用自启动，true表示禁止，false表示允许。设置为允许后，用户可通过设备上设置->应用和元服务->应用启动管理，取消应用自启动。 |
 
 错误码：
 
@@ -1474,7 +1475,7 @@ removeUserNonStopApps(admin: Want, applicationInstances: Array<common.Applicatio
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
-设备行为差异： 该接口在Phone和Tablet中可正常调用，在其他设备中调用无效果。
+设备行为差异： 该接口在Phone和Tablet中可正常调用，在其他设备中调用无效果。从API version 24开始，该接口在PC/2in1设备可正常调用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -1537,7 +1538,7 @@ getUserNonStopApps(admin: Want): Array<common.ApplicationInstance>
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
-设备行为差异： 该接口在Phone和Tablet中可正常调用，在其他设备中调用无效果。
+设备行为差异： 该接口在Phone和Tablet中可正常调用，在其他设备中调用无效果。从API version 24开始，该接口在PC/2in1设备可正常调用。
 
 模型约束： 此接口仅可在Stage模型下使用。
 

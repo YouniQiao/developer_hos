@@ -2,7 +2,8 @@
 title: "@system.cipher (加密算法)"
 upstream_id: "harmonyos-references/js-apis-system-cipher"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:29.999905"
+content_hash: "95c2fb6b8faa"
+synced_at: "2026-07-09T00:59:11.523006"
 ---
 
 # @system.cipher (加密算法)

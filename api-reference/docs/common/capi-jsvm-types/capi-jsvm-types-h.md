@@ -2,7 +2,8 @@
 title: "jsvm_types.h"
 upstream_id: "harmonyos-references/capi-jsvm-types-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:02.331791"
+content_hash: "be3f0a1794e2"
+synced_at: "2026-07-09T01:01:47.394029"
 ---
 
 # jsvm_types.h

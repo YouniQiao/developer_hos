@@ -2,7 +2,8 @@
 title: "OH_PhotoNative"
 upstream_id: "harmonyos-references/capi-oh-camera-oh-photonative"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:18.160705"
+content_hash: "55cd66b59457"
+synced_at: "2026-07-09T01:00:26.967867"
 ---
 
 # OH_PhotoNative

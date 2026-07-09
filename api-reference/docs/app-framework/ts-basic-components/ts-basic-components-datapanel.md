@@ -2,7 +2,8 @@
 title: "DataPanel"
 upstream_id: "harmonyos-references/ts-basic-components-datapanel"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:25.493614"
+content_hash: "3c6fc96b3fba"
+synced_at: "2026-07-09T00:58:01.271879"
 ---
 
 # DataPanel
@@ -49,7 +50,7 @@ DataPanel(options: DataPanelOptions)
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | values | number[] | 否 | 否 | 数据值列表，最多包含9个数据，大于9个数据则取前9个数据。若数据值小于0则置为0。 |
-| max | number | 否 | 是 | - max大于0时，表示数据的最大值。 - max小于等于0时，max等于value数组各项的和，按比例显示。 默认值：100 |
+| max | number | 否 | 是 | - max大于0时，表示数据的最大值。 - max小于等于0时，max等于values数组各项的和，按比例显示。 默认值：100 |
 | type8+ | [DataPanelType](#datapaneltype8枚举说明) | 否 | 是 | 数据面板的类型（不支持动态修改）。 默认值：DataPanelType.Circle |
 
 #### DataPanelType8+枚举说明
@@ -215,7 +216,7 @@ constructor(colorStops: ColorStop[])
 
 #### ColorStop10+
 
-颜色断点类型，用于描述渐进色颜色断点。
+颜色断点类型，用于描述渐变色颜色断点。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -298,7 +299,7 @@ struct DataPanelExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469961.png)
+ ![](./img/zh-cn_image_0000002631253594.png)
 
 #### [h2]示例2（设置渐变色和阴影）
 
@@ -356,7 +357,7 @@ struct LinearGradientDataPanelExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350009.png)
+ ![](./img/zh-cn_image_0000002661612775.png)
 
 #### [h2]示例3（设置关闭动画和阴影）
 
@@ -409,7 +410,7 @@ struct LinearGradientDataPanelExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230596.png)
+ ![](./img/zh-cn_image_0000002631413486.png)
 
 #### [h2]示例4（设置定制内容区）
 
@@ -494,4 +495,4 @@ struct ChildItem {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070686.jpg)
+ ![](./img/zh-cn_image_0000002661732715.jpg)

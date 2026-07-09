@@ -2,7 +2,8 @@
 title: "frame_generation_vk.h"
 upstream_id: "harmonyos-references/frame__generation__vk_8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:13.004753"
+content_hash: "5ec829b6cc22"
+synced_at: "2026-07-09T01:01:07.191315"
 ---
 
 # frame_generation_vk.h

@@ -2,7 +2,8 @@
 title: "TransientTask_TransientTaskInfo"
 upstream_id: "harmonyos-references/capi-transienttask-transienttask-transienttaskinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:11.069046"
+content_hash: "e96927eac3c7"
+synced_at: "2026-07-09T00:58:57.642469"
 ---
 
 # TransientTask_TransientTaskInfo

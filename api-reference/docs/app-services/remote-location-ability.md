@@ -2,7 +2,8 @@
 title: "RemoteLocationExtensionAbility（定位扩展Ability）"
 upstream_id: "harmonyos-references/remote-location-ability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:49.506876"
+content_hash: "923333664f5b"
+synced_at: "2026-07-09T01:01:37.638933"
 ---
 
 # RemoteLocationExtensionAbility（定位扩展Ability）

@@ -2,7 +2,8 @@
 title: "NativeChildProcess_Fd"
 upstream_id: "harmonyos-references/capi-nativechildprocess-fd"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:59.427186"
+content_hash: "c521e96c3f1a"
+synced_at: "2026-07-09T00:57:13.113480"
 ---
 
 # NativeChildProcess_Fd

@@ -2,7 +2,8 @@
 title: "OpenGTX_ResolutionValue"
 upstream_id: "harmonyos-references/_open_g_t_x___resolution_value"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:14.160369"
+content_hash: "d23396913767"
+synced_at: "2026-07-09T01:01:08.260209"
 ---
 
 # OpenGTX_ResolutionValue

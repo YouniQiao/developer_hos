@@ -2,7 +2,8 @@
 title: "ArkUI_VisibleAreaEventOptions"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-visibleareaeventoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:54.793263"
+content_hash: "602cea15505e"
+synced_at: "2026-07-09T00:58:44.589896"
 ---
 
 # ArkUI_VisibleAreaEventOptions

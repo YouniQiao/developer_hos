@@ -2,7 +2,8 @@
 title: "@ohos.commonEventManager (公共事件模块)"
 upstream_id: "harmonyos-references/js-apis-commoneventmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:08.209064"
+content_hash: "61038be44fc5"
+synced_at: "2026-07-09T00:59:40.820697"
 ---
 
 # @ohos.commonEventManager (公共事件模块)

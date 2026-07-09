@@ -2,7 +2,8 @@
 title: "@ohos.resourceManager (资源管理)"
 upstream_id: "harmonyos-references/js-apis-resource-manager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:22.849384"
+content_hash: "01b502d83159"
+synced_at: "2026-07-09T00:59:08.311074"
 ---
 
 # @ohos.resourceManager (资源管理)

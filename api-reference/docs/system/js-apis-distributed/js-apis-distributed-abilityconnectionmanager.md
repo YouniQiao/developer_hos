@@ -2,7 +2,8 @@
 title: "@ohos.distributedsched.abilityConnectionManager (应用多端协同管理)"
 upstream_id: "harmonyos-references/js-apis-distributed-abilityconnectionmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:49.379454"
+content_hash: "8be686126234"
+synced_at: "2026-07-09T00:59:25.831369"
 ---
 
 # @ohos.distributedsched.abilityConnectionManager (应用多端协同管理)

@@ -2,7 +2,8 @@
 title: "CryptoKdfApi"
 upstream_id: "harmonyos-references/capi-cryptokdfapi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:30.547800"
+content_hash: "25ddaca97353"
+synced_at: "2026-07-09T00:59:11.655407"
 ---
 
 # CryptoKdfApi

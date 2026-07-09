@@ -2,7 +2,8 @@
 title: "OHIPCRemoteStub"
 upstream_id: "harmonyos-references/capi-ohipcparcel-ohipcremotestub"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:21.949818"
+content_hash: "020e408f6f69"
+synced_at: "2026-07-09T00:59:06.416699"
 ---
 
 # OHIPCRemoteStub

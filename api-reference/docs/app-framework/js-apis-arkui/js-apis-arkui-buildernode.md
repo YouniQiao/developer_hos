@@ -2,7 +2,8 @@
 title: "BuilderNode"
 upstream_id: "harmonyos-references/js-apis-arkui-buildernode"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:25.740366"
+content_hash: "06c2d2be4efa"
+synced_at: "2026-07-09T00:57:32.430959"
 ---
 
 # BuilderNode
@@ -541,7 +542,7 @@ postTouchEvent是从组件树的中间节点往下分发，需要变换到父组
 
 OffsetA为buildNode相对于父组件的偏移量，可以通过FrameNode中的[getPositionToParent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getpositiontoparent12)获取。OffsetB为point点相对于buildNode的偏移量，可以通过[TouchEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-touch#touchevent对象说明) 获取。OffsetC为OffsetA与OffsetB的和，是传给postTouchEvent的最终结果。
 
-![](./img/zh-cn_image_0000002626070190.png)
+![](./img/zh-cn_image_0000002631412976.png)
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -1433,7 +1434,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469467.gif)
+ ![](./img/zh-cn_image_0000002661732209.gif)
 
 #### [h2]postInputEvent20+
 
@@ -1443,7 +1444,7 @@ postInputEvent(event: InputEventType): boolean
 
 offsetA为builderNode相对于父组件的偏移，offsetB为命中位置相对于builderNode的偏移，offsetC为offsetA+offsetB，最终输入给postInputEvent中的window信息。
 
-![](./img/zh-cn_image_0000002656349515.png)
+![](./img/zh-cn_image_0000002631253086.png)
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -1484,7 +1485,7 @@ postInputEventWithStrategy(event: InputEventType, competitionStrategy?: Competit
 
 接口调用前需要将event转化为对应的事件，并对event中的window参数的坐标进行转化：offsetA表示builderNode相对于父组件的偏移量，offsetB为命中位置相对于builderNode的偏移量，offsetC是offsetA与offsetB之和，最终作为event中的window参数，传递给postInputEventWithStrategy方法，具体请参考示例。
 
-![](./img/zh-cn_image_0000002656349515.png)
+![](./img/zh-cn_image_0000002631253086.png)
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -1734,7 +1735,7 @@ struct TextBuilder {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230102.gif)
+ ![](./img/zh-cn_image_0000002661612271.gif)
 
 #### ReactiveBuilderNode22+
 
@@ -1833,7 +1834,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070192.gif) #### [h2]getFrameNode22+ getFrameNode(): FrameNode | null 获取ReactiveBuilderNode中的[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)。在ReactiveBuilderNode执行build操作之后，才会生成FrameNode。 **元服务API：** 从API version 22开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.ArkUI.ArkUI.Full **返回值：** 类型 | 说明 |
+ ![](./img/zh-cn_image_0000002631412978.gif) #### [h2]getFrameNode22+ getFrameNode(): FrameNode | null 获取ReactiveBuilderNode中的[FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode)。在ReactiveBuilderNode执行build操作之后，才会生成FrameNode。 **元服务API：** 从API version 22开始，该接口支持在元服务中使用。 **系统能力：** SystemCapability.ArkUI.ArkUI.Full **返回值：** 类型 | 说明 |
 | [FrameNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode) | null | FrameNode对象。若该ReactiveBuilderNode不包含FrameNode，则返回空对象null。 |
 
 示例：
@@ -1929,7 +1930,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469469.gif)
+ ![](./img/zh-cn_image_0000002661732211.gif)
 
 #### [h2]postTouchEvent22+
 
@@ -1941,7 +1942,7 @@ postTouchEvent是从组件树的中间节点往下分发，需要变换到父组
 
 OffsetA为buildNode相对于父组件的偏移量，可以通过FrameNode中的[getPositionToParent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getpositiontoparent12)获取。OffsetB为point点相对于buildNode的偏移量，可以通过[TouchEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-touch#touchevent对象说明)获取。OffsetC为OffsetA与OffsetB的和，是传给postTouchEvent的最终结果。
 
-![](./img/zh-cn_image_0000002626070190.png)
+![](./img/zh-cn_image_0000002631412976.png)
 
 ![](./img/note_3.0-zh-cn.png) 传入的坐标值需要转换为px，如果builderNode有仿射变换，则需要再叠加仿射变换。
 
@@ -2054,7 +2055,7 @@ struct MyComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349517.gif)
+ ![](./img/zh-cn_image_0000002631253088.gif)
 
 #### [h2]dispose22+
 
@@ -2164,7 +2165,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230104.gif)
+ ![](./img/zh-cn_image_0000002661612273.gif)
 
 #### [h2]reuse22+
 
@@ -2385,7 +2386,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070194.gif)
+ ![](./img/zh-cn_image_0000002631412980.gif)
 
 从API版本26.0.0开始，ReactiveBuilderNode中的自定义组件支持V2组件复用。
 
@@ -2735,7 +2736,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469471.gif)
+ ![](./img/zh-cn_image_0000002661732213.gif)
 
 #### [h2]flushState22+
 
@@ -2843,7 +2844,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349519.gif)
+ ![](./img/zh-cn_image_0000002631253090.gif)
 
 #### [h2]postInputEvent22+
 
@@ -2853,7 +2854,7 @@ postInputEvent(event: InputEventType): boolean
 
 offsetA为builderNode相对于父组件的偏移，offsetB为命中位置相对于builderNode的偏移，offsetC为offsetA+offsetB，最终输入给postInputEvent当中。
 
-![](./img/zh-cn_image_0000002626070190.png)
+![](./img/zh-cn_image_0000002631412976.png)
 
 ![](./img/note_3.0-zh-cn.png) 传入的坐标值需要转换为px，坐标转换示例可以参考下面示例代码。
 
@@ -2899,7 +2900,7 @@ postInputEventWithStrategy(event: InputEventType, competitionStrategy?: Competit
 
 接口调用前需要将event转化为对应的事件，并对event中的window参数的坐标进行转化：offsetA表示ReactiveBuilderNode相对于父组件的偏移量，offsetB为命中位置相对于ReactiveBuilderNode的偏移量，offsetC是offsetA与offsetB之和，最终作为event中的window参数，传递给postInputEventWithStrategy方法，具体请参考示例。
 
-![](./img/zh-cn_image_0000002656349515.png)
+![](./img/zh-cn_image_0000002631253086.png)
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -3171,7 +3172,7 @@ struct TextBuilder {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230106.gif)
+ ![](./img/zh-cn_image_0000002661612275.gif)
 
 #### [h2]isDisposed22+
 
@@ -3307,7 +3308,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070196.gif)
+ ![](./img/zh-cn_image_0000002631412982.gif)
 
 #### 示例
 
@@ -3446,7 +3447,7 @@ struct MyComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469473.gif)
+ ![](./img/zh-cn_image_0000002661732215.gif)
 
 #### [h2]示例2（BuilderNode中触摸事件）
 
@@ -3555,7 +3556,7 @@ struct MyComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349521.gif)
+ ![](./img/zh-cn_image_0000002631253092.gif)
 
 #### [h2]示例3（BuilderNode中轴事件）
 
@@ -3650,7 +3651,7 @@ struct MyComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230108.gif)
+ ![](./img/zh-cn_image_0000002661612277.gif)
 
 #### [h2]示例4（BuilderNode共享localStorage）
 
@@ -3808,7 +3809,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070198.gif)
+ ![](./img/zh-cn_image_0000002631412984.gif)
 
 #### [h2]示例6（BuilderNode支持内部@Consumer接收外部的@Provider数据）
 
@@ -3892,7 +3893,7 @@ struct AddChild {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469475.gif)
+ ![](./img/zh-cn_image_0000002661732217.gif)
 
 #### [h2]示例7（BuilderNode上下树时的同步关系变化）
 
@@ -4882,7 +4883,7 @@ struct MyComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349523.gif)
+ ![](./img/zh-cn_image_0000002631253094.gif)
 
 #### [h2]示例14（ReactiveBuilderNode中触摸事件）
 
@@ -4991,7 +4992,7 @@ struct MyComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230110.gif)
+ ![](./img/zh-cn_image_0000002661612279.gif)
 
 #### [h2]示例15（ReactiveBuilderNode中轴事件）
 
@@ -5087,7 +5088,7 @@ struct MyComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070200.gif)
+ ![](./img/zh-cn_image_0000002631412986.gif)
 
 #### [h2]示例16（BuilderNode中带竞争策略的鼠标事件）
 

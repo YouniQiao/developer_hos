@@ -2,7 +2,8 @@
 title: "ArkUI_StyledString_Descriptor"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-styledstring-descriptor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:54.421076"
+content_hash: "f783d5b6fbb0"
+synced_at: "2026-07-09T00:58:44.481018"
 ---
 
 # ArkUI_StyledString_Descriptor

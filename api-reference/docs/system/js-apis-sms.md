@@ -2,7 +2,8 @@
 title: "@ohos.telephony.sms (短信服务)"
 upstream_id: "harmonyos-references/js-apis-sms"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:05.102668"
+content_hash: "74cdbe9e1c42"
+synced_at: "2026-07-09T00:59:38.395254"
 ---
 
 # @ohos.telephony.sms (短信服务)

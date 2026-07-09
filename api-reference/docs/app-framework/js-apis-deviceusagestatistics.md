@@ -2,7 +2,8 @@
 title: "@ohos.bundleState (设备使用信息统计)"
 upstream_id: "harmonyos-references/js-apis-deviceusagestatistics"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:10.527141"
+content_hash: "25079bee9653"
+synced_at: "2026-07-09T00:58:56.978302"
 ---
 
 # @ohos.bundleState (设备使用信息统计)

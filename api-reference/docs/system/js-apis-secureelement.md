@@ -2,7 +2,8 @@
 title: "@ohos.secureElement (安全单元的通道管理)"
 upstream_id: "harmonyos-references/js-apis-secureelement"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:46.772919"
+content_hash: "18581326da94"
+synced_at: "2026-07-09T00:59:24.518186"
 ---
 
 # @ohos.secureElement (安全单元的通道管理)

@@ -2,7 +2,8 @@
 title: "C API错误码"
 upstream_id: "harmonyos-references/gameservice-c-error-code"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:25.611168"
+content_hash: "27cb733e45b6"
+synced_at: "2026-07-09T01:01:18.586805"
 ---
 
 # C API错误码

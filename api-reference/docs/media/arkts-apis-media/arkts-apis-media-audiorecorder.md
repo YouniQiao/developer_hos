@@ -2,7 +2,8 @@
 title: "废弃的Interface (AudioRecorder, deprecated)"
 upstream_id: "harmonyos-references/arkts-apis-media-audiorecorder"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:34.833933"
+content_hash: "35efae995854"
+synced_at: "2026-07-09T01:00:39.207094"
 ---
 
 # 废弃的Interface (AudioRecorder, deprecated)

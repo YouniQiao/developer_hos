@@ -2,7 +2,8 @@
 title: "span"
 upstream_id: "harmonyos-references/js-components-basic-span"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:07.803305"
+content_hash: "b0789011203c"
+synced_at: "2026-07-09T00:58:22.698094"
 ---
 
 # span
@@ -76,4 +77,4 @@ synced_at: "2026-06-24T20:49:07.803305"
   font-size: 80px;
 }
 ```
- ![](./img/zh-cn_image_0000002656350313.png)
+ ![](./img/zh-cn_image_0000002661613083.png)

@@ -2,7 +2,8 @@
 title: "UIExtension错误码"
 upstream_id: "harmonyos-references/errorcode-uiextension"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:01.509753"
+content_hash: "f749b3bb248b"
+synced_at: "2026-07-09T00:58:49.131079"
 ---
 
 # UIExtension错误码

@@ -2,7 +2,8 @@
 title: "dialog"
 upstream_id: "harmonyos-references/js-components-container-dialog"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:02.398740"
+content_hash: "4a62452ae681"
+synced_at: "2026-07-09T00:58:20.332719"
 ---
 
 # dialog
@@ -156,4 +157,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470243.gif)
+ ![](./img/zh-cn_image_0000002631253880.gif)

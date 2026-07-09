@@ -2,7 +2,8 @@
 title: "Interface (ManualFocusQuery)"
 upstream_id: "harmonyos-references/arkts-apis-camera-manualfocusquery"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:12.055870"
+content_hash: "0e0165e6b29d"
+synced_at: "2026-07-09T01:00:22.266574"
 ---
 
 # Interface (ManualFocusQuery)

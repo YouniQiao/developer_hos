@@ -1,11 +1,12 @@
 ---
-title: "转换ID"
+title: "通过gamePlayerId获取playerId/openId/unionId"
 upstream_id: "harmonyos-references/gameservice-convertid"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:26.094434"
+content_hash: "0bc7ed743740"
+synced_at: "2026-07-09T01:01:19.042209"
 ---
 
-# 转换ID
+# 通过gamePlayerId获取playerId/openId/unionId
 
 #### 功能介绍
 

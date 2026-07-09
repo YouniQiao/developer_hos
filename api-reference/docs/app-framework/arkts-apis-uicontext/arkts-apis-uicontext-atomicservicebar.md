@@ -2,7 +2,8 @@
 title: "Interface (AtomicServiceBar)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-atomicservicebar"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:22.996279"
+content_hash: "9803435dcce0"
+synced_at: "2026-07-09T00:57:30.151450"
 ---
 
 # Interface (AtomicServiceBar)

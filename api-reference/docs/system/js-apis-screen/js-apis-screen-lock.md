@@ -2,7 +2,8 @@
 title: "@ohos.screenLock (锁屏管理)"
 upstream_id: "harmonyos-references/js-apis-screen-lock"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:10.158387"
+content_hash: "5258b26ae2ec"
+synced_at: "2026-07-09T00:59:42.611300"
 ---
 
 # @ohos.screenLock (锁屏管理)

@@ -2,7 +2,8 @@
 title: "@ohos.inputMethod.Panel (输入法面板)"
 upstream_id: "harmonyos-references/js-apis-inputmethod-panel"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:18.577746"
+content_hash: "1fcc1332d514"
+synced_at: "2026-07-09T00:59:03.680767"
 ---
 
 # @ohos.inputMethod.Panel (输入法面板)

@@ -1,9 +1,12 @@
 ---
+
 title: "模块描述"
 upstream_id: "harmonyos-references/arkts-apis-window"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:29.676403"
+synced_at: "2026-07-09T00:57:33.957117"
+content_hash: "8a2fb6b661a1"
 ---
+
 
 # 模块描述
 

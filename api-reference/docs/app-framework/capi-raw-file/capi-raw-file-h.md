@@ -2,7 +2,8 @@
 title: "raw_file.h"
 upstream_id: "harmonyos-references/capi-raw-file-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:23.774929"
+content_hash: "025c396bb841"
+synced_at: "2026-07-09T00:59:07.918324"
 ---
 
 # raw_file.h

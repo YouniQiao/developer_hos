@@ -2,7 +2,8 @@
 title: "ArkUI_ProgressLinearStyleOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-progresslinearstyleoption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:53.473767"
+content_hash: "c51b9a3458d6"
+synced_at: "2026-07-09T00:58:43.763533"
 ---
 
 # ArkUI_ProgressLinearStyleOption
@@ -13,7 +14,7 @@ typedef struct ArkUI_ProgressLinearStyleOption ArkUI_ProgressLinearStyleOption
 
 #### 概述
 
-定义线性进度条样式。
+定义线性进度条样式选项。
 
 起始版本： 15
 

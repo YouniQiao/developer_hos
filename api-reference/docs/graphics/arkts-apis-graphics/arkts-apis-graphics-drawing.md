@@ -1,9 +1,12 @@
 ---
+
 title: "模块描述"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:52.086464"
+synced_at: "2026-07-09T01:00:50.930997"
+content_hash: "51875d93b882"
 ---
+
 
 # 模块描述
 

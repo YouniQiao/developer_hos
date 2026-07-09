@@ -2,7 +2,8 @@
 title: "ImageBitmap"
 upstream_id: "harmonyos-references/ts-components-canvas-imagebitmap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:30.243085"
+content_hash: "899a60757a51"
+synced_at: "2026-07-09T00:58:03.595325"
 ---
 
 # ImageBitmap
@@ -79,6 +80,8 @@ constructor(data: PixelMap, unit: LengthMetricsUnit)
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
+模型约束： 此接口仅可在Stage模型下使用。
+
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
@@ -95,6 +98,8 @@ constructor(data: Resource, unit?: LengthMetricsUnit)
 通过Resource创建ImageBitmap对象，支持使用unit配置ImageBitmap对象的单位模式。
 
 起始版本： 26.0.0
+
+卡片能力： 从API版本26.0.0开始，该接口支持在ArkTS卡片中使用。
 
 元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
@@ -166,7 +171,7 @@ struct ImageExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070752.png)
+ ![](./img/zh-cn_image_0000002631253662.png)
 
 #### [h2]示例2（创建ImageBitmap）
 
@@ -202,7 +207,7 @@ struct Demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470029.png)
+ ![](./img/zh-cn_image_0000002661612843.png)
 
 #### [h2]示例3（支持并发线程绘制）
 
@@ -247,7 +252,6 @@ struct imageBitmapExamplePage {
 
 ```
 import { MessageEvents, ThreadWorkerGlobalScope, worker } from '@kit.ArkTS';
-import { image } from '@kit.ImageKit';
 
 const workerPort: ThreadWorkerGlobalScope = worker.workerPort;
 workerPort.onmessage = (e: MessageEvents) => {
@@ -261,7 +265,7 @@ workerPort.onmessage = (e: MessageEvents) => {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070752.png)
+ ![](./img/zh-cn_image_0000002631253662.png)
 
 #### [h2]示例4（加载Resource图片）
 
@@ -295,4 +299,4 @@ struct ImageBitmapResourceExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350077.png)
+ ![](./img/zh-cn_image_0000002631413554.png)

@@ -2,7 +2,8 @@
 title: "privacyManager（隐私管理服务）"
 upstream_id: "harmonyos-references/store-privacymanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:22.371666"
+content_hash: "3146d6a91626"
+synced_at: "2026-07-09T01:01:15.215994"
 ---
 
 # privacyManager（隐私管理服务）

@@ -2,7 +2,8 @@
 title: "HiAppEvent_Watcher"
 upstream_id: "harmonyos-references/capi-hiappevent-hiappevent-watcher"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:48.574896"
+content_hash: "e3af9effffa4"
+synced_at: "2026-07-09T01:00:04.577691"
 ---
 
 # HiAppEvent_Watcher

@@ -2,7 +2,8 @@
 title: "ArkUI_CustomSpanMeasureInfo"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-customspanmeasureinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:54.014636"
+content_hash: "abf8694f6f14"
+synced_at: "2026-07-09T00:58:44.148357"
 ---
 
 # ArkUI_CustomSpanMeasureInfo

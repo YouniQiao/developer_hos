@@ -2,7 +2,8 @@
 title: "预下单"
 upstream_id: "harmonyos-references/payment-prepay"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:39.061168"
+content_hash: "62ba770411fc"
+synced_at: "2026-07-09T01:01:30.410917"
 ---
 
 # 预下单

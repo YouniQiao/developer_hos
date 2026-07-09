@@ -2,7 +2,8 @@
 title: "ServiceCollaboration_CollaborationDeviceInfo"
 upstream_id: "harmonyos-references/servicecollaboration-collaborationdeviceinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:03.689227"
+content_hash: "a5e1c7e44632"
+synced_at: "2026-07-09T00:59:37.222065"
 ---
 
 # ServiceCollaboration_CollaborationDeviceInfo
@@ -23,7 +24,7 @@ synced_at: "2026-06-24T20:51:03.689227"
 
 | 名称 | 描述 |
 | --- | --- |
-| uint32_t [deviceType](#devicetype) | 对端设备类型。只有Phone或者Tablet。Phone设备类型的值为0x14，Tablet设备类型的值为0x17。 |
+| uint32_t [deviceType](#devicetype) | 对端设备类型。 Phone设备类型的值为0x14，Tablet设备类型的值为0x17。 |
 | char [deviceNetworkId](#devicenetworkid) [[COLLABORATIONDEVICEINFO_DEVICENETWORKID_MAXLENGTH](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/servicecollaboration-capi-module#collaborationdeviceinfo_devicenetworkid_maxlength)] | 对端设备network Id。 |
 | char [deviceName](#devicename) [[COLLABORATIONDEVICEINFO_DEVICENAME_MAXLENGTH](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/servicecollaboration-capi-module#collaborationdeviceinfo_devicename_maxlength)] | 对端设备名。 |
 | uint32_t [filterNum](#filternum) | 对端设备支持的能力类型列表的大小。 |

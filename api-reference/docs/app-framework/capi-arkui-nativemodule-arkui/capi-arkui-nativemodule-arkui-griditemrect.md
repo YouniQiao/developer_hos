@@ -2,7 +2,8 @@
 title: "ArkUI_GridItemRect"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-griditemrect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:58.553206"
+content_hash: "5ed05f2667e9"
+synced_at: "2026-07-09T00:58:47.334914"
 ---
 
 # ArkUI_GridItemRect

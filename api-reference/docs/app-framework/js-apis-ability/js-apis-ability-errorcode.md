@@ -2,7 +2,8 @@
 title: "@ohos.ability.errorCode (ErrorCode)"
 upstream_id: "harmonyos-references/js-apis-ability-errorcode"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:55.750765"
+content_hash: "a51ce1833f17"
+synced_at: "2026-07-09T00:57:10.957865"
 ---
 
 # @ohos.ability.errorCode (ErrorCode)

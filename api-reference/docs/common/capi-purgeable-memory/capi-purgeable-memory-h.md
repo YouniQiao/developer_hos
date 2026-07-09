@@ -2,7 +2,8 @@
 title: "purgeable_memory.h"
 upstream_id: "harmonyos-references/capi-purgeable-memory-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:02.150092"
+content_hash: "a792aa91ed24"
+synced_at: "2026-07-09T01:01:46.394246"
 ---
 
 # purgeable_memory.h

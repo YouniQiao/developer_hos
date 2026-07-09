@@ -1,9 +1,12 @@
 ---
+
 title: "接口调用异常错误码"
 upstream_id: "harmonyos-references/errorcode-internal"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:00.008635"
+synced_at: "2026-07-09T00:58:48.397390"
+content_hash: "c4cb72d7f6b6"
 ---
+
 
 # 接口调用异常错误码
 

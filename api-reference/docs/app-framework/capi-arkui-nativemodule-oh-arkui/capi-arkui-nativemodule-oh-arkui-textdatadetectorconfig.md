@@ -2,7 +2,8 @@
 title: "OH_ArkUI_TextDataDetectorConfig"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-arkui-textdatadetectorconfig"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:59.591962"
+content_hash: "54b03599369b"
+synced_at: "2026-07-09T00:58:48.036082"
 ---
 
 # OH_ArkUI_TextDataDetectorConfig

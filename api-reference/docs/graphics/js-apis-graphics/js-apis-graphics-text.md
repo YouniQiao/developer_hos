@@ -2,7 +2,8 @@
 title: "@ohos.graphics.text (文本模块)"
 upstream_id: "harmonyos-references/js-apis-graphics-text"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:55.988036"
+content_hash: "40704652f111"
+synced_at: "2026-07-09T01:00:54.817856"
 ---
 
 # @ohos.graphics.text (文本模块)
@@ -1626,11 +1627,11 @@ struct Index {
 | CENTER_OF_ROW_BOX | 5 | 居中对齐。 |
 | FOLLOW_PARAGRAPH20+ | 6 | 跟随文本排版对齐。 |
 
-![](./img/zh-cn_image_0000002656351007.png)
+![](./img/zh-cn_image_0000002661613785.png)
 
 ![](./img/note_3.0-zh-cn.png) 示意图展示了后三种对齐方式，前三种对齐方式在文本基线对齐方式上类似，比较位置是文本基线，即绿色线条部分。
 
-![](./img/zh-cn_image_0000002626231594.png)
+![](./img/zh-cn_image_0000002631414496.png)
 
 #### PlaceholderSpan
 
@@ -1822,7 +1823,7 @@ struct Index {
 ```
  ![](./img/note_3.0-zh-cn.png) 示意图展示了点击按钮后layout接口示例代码的运行结果。
 
-![](./img/zh-cn_image_0000002626071682.png)
+![](./img/zh-cn_image_0000002661733723.png)
 
 #### [h2]layoutWithConstraints24+
 
@@ -3488,15 +3489,15 @@ struct Index {
 
 ![](./img/note_3.0-zh-cn.png) 示意图展示文本行排版参数：width（包含左右空格的文本行宽度）、ascent（上升高度最高点）、descent（下降高度最低点）、leading（行间距）、top（当前行最高点）、baseline（字符基线）、bottom（当前行最低点）、next line top（下一行最高点）。
 
-![](./img/zh-cn_image_0000002656470959.png)
+![](./img/zh-cn_image_0000002631254602.png)
 
 示意图展示了字符串为" a b "的排版边界。
 
-![](./img/zh-cn_image_0000002656351009.png)
+![](./img/zh-cn_image_0000002661613787.png)
 
 示意图展示了字符串为"j"或"E"的排版边界。
 
-![](./img/zh-cn_image_0000002626231596.png)
+![](./img/zh-cn_image_0000002631414498.png)
 
 #### CaretOffsetsCallback18+
 
@@ -3711,11 +3712,11 @@ getTypographicBounds(): TypographicBounds
 
 ![](./img/note_3.0-zh-cn.png) 示意图展示了字符串为" a b "的排版边界。
 
-![](./img/zh-cn_image_0000002656351009.png)
+![](./img/zh-cn_image_0000002661613787.png)
 
 示意图展示了字符串为"j"或"E"的排版边界。
 
-![](./img/zh-cn_image_0000002626231596.png)
+![](./img/zh-cn_image_0000002631414498.png)
 
 系统能力：SystemCapability.Graphics.Drawing
 
@@ -3742,11 +3743,11 @@ getImageBounds(): common2D.Rect
 
 ![](./img/note_3.0-zh-cn.png) 示意图展示了字符串为" a b "的图像边界。
 
-![](./img/zh-cn_image_0000002626071684.png)
+![](./img/zh-cn_image_0000002661733725.png)
 
 示意图展示了字符串为"j"或"E"的图像边界。
 
-![](./img/zh-cn_image_0000002656470961.png)
+![](./img/zh-cn_image_0000002631254604.png)
 
 系统能力：SystemCapability.Graphics.Drawing
 
@@ -4248,11 +4249,11 @@ getImageBounds(): common2D.Rect
 
 ![](./img/note_3.0-zh-cn.png) 示意图展示了字符串为" a b "的图像边界。
 
-![](./img/zh-cn_image_0000002626071684.png)
+![](./img/zh-cn_image_0000002661733725.png)
 
 示意图展示了字符串为"j"或"E"的图像边界。
 
-![](./img/zh-cn_image_0000002656470961.png)
+![](./img/zh-cn_image_0000002631254604.png)
 
 系统能力：SystemCapability.Graphics.Drawing
 
@@ -4278,11 +4279,11 @@ getTypographicBounds(): TypographicBounds
 
 ![](./img/note_3.0-zh-cn.png) 示意图展示了字符串为" a b "的排版边界。
 
-![](./img/zh-cn_image_0000002656351009.png)
+![](./img/zh-cn_image_0000002661613787.png)
 
 示意图展示了字符串为"j"或"E"的排版边界。
 
-![](./img/zh-cn_image_0000002626231596.png)
+![](./img/zh-cn_image_0000002631414498.png)
 
 系统能力：SystemCapability.Graphics.Drawing
 
@@ -4370,15 +4371,15 @@ let advancesNull = runs[0].getAdvances(null); // null是非法参数，将返回
 
 alignment为CENTER，location为200，文本为"12/t345"：
 
-![](./img/zh-cn_image_0000002656351011.png)
+![](./img/zh-cn_image_0000002661613789.png)
 
 alignment为LEFT，location为100，文本为"abccccccccc/tdef"：
 
-![](./img/zh-cn_image_0000002626231598.png)
+![](./img/zh-cn_image_0000002631414500.png)
 
 alignment为RIGHT，location为100，文本为"aabcdef/tg hi/tjkl/tmno/tp qr"：
 
-![](./img/zh-cn_image_0000002626071686.png)
+![](./img/zh-cn_image_0000002661733727.png)
 
 #### SystemFontType14+
 

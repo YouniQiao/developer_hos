@@ -2,7 +2,8 @@
 title: "Blank"
 upstream_id: "harmonyos-references/ts-basic-components-blank"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:29.047425"
+content_hash: "fc1e86b8780d"
+synced_at: "2026-07-09T00:58:02.850808"
 ---
 
 # Blank
@@ -89,11 +90,11 @@ struct BlankExample {
 ```
  竖屏状态
 
-![](./img/zh-cn_image_0000002626230616.gif)
+![](./img/zh-cn_image_0000002631413506.gif)
 
 横屏状态
 
-![](./img/zh-cn_image_0000002626070706.gif)
+![](./img/zh-cn_image_0000002661732735.gif)
 
 #### [h2]示例2（填充固定宽度）
 
@@ -126,4 +127,4 @@ struct BlankExample {
 ```
  Blank父组件未设置宽度时，子组件间无空白填充，使用min参数设置填充尺寸
 
-![](./img/zh-cn_image_0000002656469983.png)
+![](./img/zh-cn_image_0000002631253616.png)

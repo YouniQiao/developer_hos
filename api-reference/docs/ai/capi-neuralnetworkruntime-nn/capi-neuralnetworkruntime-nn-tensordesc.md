@@ -2,7 +2,8 @@
 title: "NN_TensorDesc"
 upstream_id: "harmonyos-references/capi-neuralnetworkruntime-nn-tensordesc"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:00.180727"
+content_hash: "aa8500d7a557"
+synced_at: "2026-07-09T01:01:44.956390"
 ---
 
 # NN_TensorDesc

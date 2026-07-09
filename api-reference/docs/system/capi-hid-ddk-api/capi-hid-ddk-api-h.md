@@ -2,7 +2,8 @@
 title: "hid_ddk_api.h"
 upstream_id: "harmonyos-references/capi-hid-ddk-api-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:31.205085"
+content_hash: "0e91a696d082"
+synced_at: "2026-07-09T00:59:55.315863"
 ---
 
 # hid_ddk_api.h

@@ -2,7 +2,8 @@
 title: "frame_generation_base.h"
 upstream_id: "harmonyos-references/frame__generation__base_8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:12.736058"
+content_hash: "20ecb6c53753"
+synced_at: "2026-07-09T01:01:06.977010"
 ---
 
 # frame_generation_base.h
@@ -45,7 +46,7 @@ synced_at: "2026-06-24T20:53:12.736058"
 | typedef struct [FG_AlgorithmModeInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_f_g___algorithm_mode_info) [FG_AlgorithmModeInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_algorithmmodeinfo) | 此结构体描述超帧算法模式信息。 |
 | typedef enum [FG_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_errorcode-1) [FG_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_errorcode) | 此枚举描述超帧接口调用错误码。 |
 | typedef enum [FG_CvvZSemantic](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_cvvzsemantic-1) [FG_CvvZSemantic](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_cvvzsemantic) | 此枚举描述经过相机投影变换后，齐次裁剪空间Z/W范围及深度测试模式。 |
-| typedef enum [FG_PresentMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_presentmode) [FG_PresentMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_presentmode) | 定义预测帧呈现模式，该模式包括两种：游戏端预测帧呈现和系统端预测帧呈现。 |
+| typedef enum [FG_PresentMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_presentmode) [FG_PresentMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_presentmode) | 定义预测帧送显模式，该模式包括两种：游戏端预测帧送显和系统端预测帧送显。 |
 | typedef struct [FG_Dimension2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_f_g___dimension2_d) [FG_Dimension2D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_dimension2d) | 此结构体描述2D图像分辨率，以px为单位。 |
 | typedef struct [FG_ResolutionInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_f_g___resolution_info) [FG_ResolutionInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_resolutioninfo) | 此结构体描述超帧输入输出图像的分辨率。 |
 | typedef struct [FG_Vec3D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_f_g___vec3_d) [FG_Vec3D](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_f_g___vec3_d) | 此结构体描述超帧三维向量。 |
@@ -61,7 +62,7 @@ synced_at: "2026-06-24T20:53:12.736058"
 | [FG_MeMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_memode-1) { FG_ME_MODE_BASIC = 0, FG_ME_MODE_ENHANCED = 1 } | 此枚举描述超帧运动估计算法模式，支持基础模式和增强模式。 |
 | [FG_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_errorcode-1) { FG_SUCCESS = 0, FG_INVALID_PARAMETER = 401, FG_CONTEXT_NOT_CONFIG = 1009500001, FG_CONTEXT_NOT_ACTIVE = 1009500002, FG_COLLECTING_PREVIOUS_FRAMES = 1009500003 } | 此枚举描述超帧接口调用错误码。 |
 | [FG_CvvZSemantic](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_cvvzsemantic-1) { FG_CVV_Z_SEMANTIC_MINUS_ONE_TO_ONE_FORWARD_Z = 0, FG_CVV_Z_SEMANTIC_ZERO_TO_ONE_REVERSE_Z = 1, FG_CVV_Z_SEMANTIC_MINUS_ONE_TO_ONE_REVERSE_Z = 2, FG_CVV_Z_SEMANTIC_ZERO_TO_ONE_FORWARD_Z = 3 } | 此枚举描述经过相机投影变换后，齐次裁剪空间Z/W范围及深度测试模式。 |
-| [FG_PresentMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_presentmode) { FG_PRESENT_BY_GAME = 0, FG_PRESENT_BY_SYSTEM = 1 } | 定义预测帧呈现模式，该模式包括两种：游戏端预测帧呈现和系统端预测帧呈现。 |
+| [FG_PresentMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_presentmode) { FG_PRESENT_BY_GAME = 0, FG_PRESENT_BY_SYSTEM = 1 } | 定义预测帧送显模式，该模式包括两种：游戏端预测帧送显和系统端预测帧送显。 |
 | [FG_FeatureType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/_graphics_accelerate#fg_featuretype) { INTERPOLATION_GPU_GLES = 0, INTERPOLATION_GPU_VULKAN = 1, EXTRAPOLATION_GPU_GLES = 2, EXTRAPOLATION_GPU_VULKAN = 3, INTERPOLATION_AI_VULKAN = 4 } | 此枚举定义超帧的特性类型，根据平台（OPENGL ES，Vulkan）、超帧方式（内插，外插）以及算法等因素划分不同类型。 |
 
 #### [h2]函数

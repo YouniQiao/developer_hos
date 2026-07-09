@@ -2,7 +2,8 @@
 title: "ArkUI_WaterFlowSectionOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-waterflowsectionoption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:52.725909"
+content_hash: "5f9095e06517"
+synced_at: "2026-07-09T00:58:43.401056"
 ---
 
 # ArkUI_WaterFlowSectionOption

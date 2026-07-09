@@ -2,7 +2,8 @@
 title: "native_fence.h"
 upstream_id: "harmonyos-references/capi-native-fence-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:04.585048"
+content_hash: "a18fa1f52835"
+synced_at: "2026-07-09T01:00:59.582222"
 ---
 
 # native_fence.h

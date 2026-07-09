@@ -2,7 +2,8 @@
 title: "Path"
 upstream_id: "harmonyos-references/ts-drawing-components-path"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:37.157819"
+content_hash: "86f16a0d9957"
+synced_at: "2026-07-09T00:58:06.084032"
 ---
 
 # Path
@@ -400,7 +401,7 @@ struct PathExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070796.png)
+ ![](./img/zh-cn_image_0000002661612887.png)
 
 #### [h2]示例2（使用不同参数类型绘制路径）
 
@@ -436,7 +437,7 @@ struct PathTypeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470073.png)
+ ![](./img/zh-cn_image_0000002631413598.png)
 
 #### [h2]示例3（使用attributeModifier动态设置Path组件的属性）
 
@@ -476,4 +477,4 @@ struct PathModifierDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350121.png)
+ ![](./img/zh-cn_image_0000002661732829.png)

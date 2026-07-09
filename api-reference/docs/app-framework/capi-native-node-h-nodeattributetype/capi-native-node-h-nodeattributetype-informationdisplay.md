@@ -2,7 +2,8 @@
 title: "ArkUI_NodeAttributeType（信息展示类组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-informationdisplay"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:38.746199"
+content_hash: "ca9cc2658558"
+synced_at: "2026-07-09T00:58:35.488028"
 ---
 
 # ArkUI_NodeAttributeType（信息展示类组件相关属性）

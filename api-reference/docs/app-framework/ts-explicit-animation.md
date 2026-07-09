@@ -2,7 +2,8 @@
 title: "显式动画 (animateTo)"
 upstream_id: "harmonyos-references/ts-explicit-animation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:40.489257"
+content_hash: "8b879eaab208"
+synced_at: "2026-07-09T00:58:07.833120"
 ---
 
 # 显式动画 (animateTo)
@@ -205,7 +206,7 @@ struct AnimateToExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350131.gif)
+ ![](./img/zh-cn_image_0000002661732839.gif)
 
 #### [h2]示例2（动画执行结束后组件消失）
 
@@ -257,4 +258,4 @@ struct AttrAnimationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230718.gif)
+ ![](./img/zh-cn_image_0000002631253718.gif)

@@ -2,7 +2,8 @@
 title: "OH_CM_Credential"
 upstream_id: "harmonyos-references/capi-certmanagertype-oh-cm-credential"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:41.986511"
+content_hash: "da2ab00a436e"
+synced_at: "2026-07-09T00:59:19.761870"
 ---
 
 # OH_CM_Credential

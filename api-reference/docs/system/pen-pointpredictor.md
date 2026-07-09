@@ -2,14 +2,13 @@
 title: "PointPredictor（报点预测功能）"
 upstream_id: "harmonyos-references/pen-pointpredictor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:38.435366"
+content_hash: "48c971626568"
+synced_at: "2026-07-09T00:59:58.426834"
 ---
 
 # PointPredictor（报点预测功能）
 
-模型约束： 此接口仅可在Stage模型下使用。
-
-系统能力： SystemCapability.Stylus.Handwrite
+本模块提供报点预测能力。通过调用报点预测接口，可以优化应用中手写效果的绘制跟手性，提升应用中手写笔书写场景的跟手体验。
 
 起始版本： 5.0.0(12)
 

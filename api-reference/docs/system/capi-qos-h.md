@@ -2,7 +2,8 @@
 title: "qos.h"
 upstream_id: "harmonyos-references/capi-qos-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:25.634598"
+content_hash: "240be8a4e6c8"
+synced_at: "2026-07-09T00:59:53.878139"
 ---
 
 # qos.h

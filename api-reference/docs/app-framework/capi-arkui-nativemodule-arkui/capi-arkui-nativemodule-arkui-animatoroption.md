@@ -2,7 +2,8 @@
 title: "ArkUI_AnimatorOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-animatoroption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:45.625396"
+content_hash: "284282aee28a"
+synced_at: "2026-07-09T00:58:39.311662"
 ---
 
 # ArkUI_AnimatorOption

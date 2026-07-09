@@ -2,7 +2,8 @@
 title: "marquee"
 upstream_id: "harmonyos-references/js-components-basic-marquee"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:06.200813"
+content_hash: "724854fc1ec0"
+synced_at: "2026-07-09T00:58:21.709102"
 ---
 
 # marquee
@@ -27,7 +28,7 @@ synced_at: "2026-06-24T20:49:06.200813"
 
 | 名称 | 类型 | 默认值 | 必填 | 描述 |
 | --- | --- | --- | --- | --- |
-| scrollamount | number | 6 | 否 | 跑马灯每次滚动时移动的最大长度。 |
+| scrollamount | number | 6 | 否 | 跑马灯每次滚动时移动的步长。 |
 | loop | number | -1 | 否 | 跑马灯滚动的次数。如果未指定，则默认值为-1，当该值小于等于零时表示marquee将连续滚动。 |
 | direction | string | left | 否 | 设置跑马灯的文字滚动方向，可选值为left和right。 |
 
@@ -136,4 +137,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230892.gif)
+ ![](./img/zh-cn_image_0000002631413786.gif)

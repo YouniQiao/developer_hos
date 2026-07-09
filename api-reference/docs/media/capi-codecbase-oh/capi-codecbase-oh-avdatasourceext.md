@@ -2,7 +2,8 @@
 title: "OH_AVDataSourceExt"
 upstream_id: "harmonyos-references/capi-codecbase-oh-avdatasourceext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:03.995791"
+content_hash: "ea2e8614e753"
+synced_at: "2026-07-09T01:00:15.773043"
 ---
 
 # OH_AVDataSourceExt

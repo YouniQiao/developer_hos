@@ -2,7 +2,8 @@
 title: "OH_NativeBundle_Metadata"
 upstream_id: "harmonyos-references/capi-native-bundle-oh-nativebundle-metadata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:59.990222"
+content_hash: "1b5f1f9c1a56"
+synced_at: "2026-07-09T00:57:13.512007"
 ---
 
 # OH_NativeBundle_Metadata

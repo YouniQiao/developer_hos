@@ -2,7 +2,8 @@
 title: "XEG_HPSCreateInfo"
 upstream_id: "harmonyos-references/xengine-kit-xeg-hpscreateinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:16.747693"
+content_hash: "275deb652f15"
+synced_at: "2026-07-09T01:01:10.346372"
 ---
 
 # XEG_HPSCreateInfo

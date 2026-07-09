@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.Configuration (环境变量)"
 upstream_id: "harmonyos-references/js-apis-app-ability-configuration"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:50.364146"
+content_hash: "63c1be0bebb7"
+synced_at: "2026-07-09T00:57:06.972472"
 ---
 
 # @ohos.app.ability.Configuration (环境变量)

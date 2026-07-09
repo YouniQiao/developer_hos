@@ -1,9 +1,12 @@
 ---
+
 title: "订单确认发货（消耗型/非消耗型/非续期订阅商品）"
 upstream_id: "harmonyos-references/iap-confirm-purchase-for-order"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:28.745193"
+synced_at: "2026-07-09T01:01:21.684673"
+content_hash: "f1e626d19f57"
 ---
+
 
 # 订单确认发货（消耗型/非消耗型/非续期订阅商品）
 

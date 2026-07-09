@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-ui-design"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:25.468687"
+content_hash: "db3de04c3d34"
+synced_at: "2026-07-09T00:59:09.060654"
 ---
 
 # ArkTS API错误码

@@ -2,7 +2,8 @@
 title: "MDNS错误码"
 upstream_id: "harmonyos-references/errorcode-net-mdns"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:56.649829"
+content_hash: "d071daf02eaa"
+synced_at: "2026-07-09T00:59:31.398787"
 ---
 
 # MDNS错误码

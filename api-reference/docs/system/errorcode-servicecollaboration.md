@@ -2,7 +2,8 @@
 title: "ArkTS 错误码"
 upstream_id: "harmonyos-references/errorcode-servicecollaboration"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:03.436570"
+content_hash: "99a5542893db"
+synced_at: "2026-07-09T00:59:36.850587"
 ---
 
 # ArkTS 错误码

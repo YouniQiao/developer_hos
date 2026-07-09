@@ -2,7 +2,8 @@
 title: "NOTIFICATION"
 upstream_id: "harmonyos-references/capi-notification"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:38.370710"
+content_hash: "7ace2bd6899b"
+synced_at: "2026-07-09T01:01:29.172285"
 ---
 
 # NOTIFICATION

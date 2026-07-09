@@ -2,7 +2,8 @@
 title: "Class (RoundRect)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-roundrect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:54.400666"
+content_hash: "28e4d766fd20"
+synced_at: "2026-07-09T01:00:52.476354"
 ---
 
 # Class (RoundRect)

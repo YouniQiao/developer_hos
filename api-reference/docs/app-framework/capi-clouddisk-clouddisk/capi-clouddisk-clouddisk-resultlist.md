@@ -2,7 +2,8 @@
 title: "CloudDisk_ResultList"
 upstream_id: "harmonyos-references/capi-clouddisk-clouddisk-resultlist"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:16.216470"
+content_hash: "e6ea07fa1830"
+synced_at: "2026-07-09T00:59:01.689341"
 ---
 
 # CloudDisk_ResultList

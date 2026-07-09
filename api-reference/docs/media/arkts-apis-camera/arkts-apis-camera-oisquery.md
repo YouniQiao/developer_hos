@@ -2,7 +2,8 @@
 title: "Interface (OISQuery)"
 upstream_id: "harmonyos-references/arkts-apis-camera-oisquery"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:12.583164"
+content_hash: "1adf1f0d0338"
+synced_at: "2026-07-09T01:00:22.686005"
 ---
 
 # Interface (OISQuery)

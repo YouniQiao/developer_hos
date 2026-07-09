@@ -2,7 +2,8 @@
 title: "@ohos.enterprise.usbManager（USB管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-usbmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:24.178617"
+content_hash: "9e1bf091ac4c"
+synced_at: "2026-07-09T00:59:52.850573"
 ---
 
 # @ohos.enterprise.usbManager（USB管理）

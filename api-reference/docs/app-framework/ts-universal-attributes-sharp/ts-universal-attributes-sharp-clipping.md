@@ -2,7 +2,8 @@
 title: "形状裁剪"
 upstream_id: "harmonyos-references/ts-universal-attributes-sharp-clipping"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:39.159160"
+content_hash: "c6fb51837158"
+synced_at: "2026-07-09T00:57:39.634012"
 ---
 
 # 形状裁剪
@@ -81,7 +82,7 @@ clip(value: boolean | CircleAttribute | EllipseAttribute | PathAttribute | RectA
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | boolean | [CircleAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-circle) | [EllipseAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-ellipse) | [PathAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-path) | [RectAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-rect) | 是 | 参数为相应类型的组件，按指定的形状对当前组件进行裁剪；参数为boolean类型时，设置是否按照父容器边缘轮廓进行裁剪。 默认值：false **说明：** 参数为对应类型的组件时，裁剪不会导致被裁剪区域无法响应绑定的手势事件。参数为boolean类型时，裁剪会导致被裁剪区域无法响应绑定的手势事件。 |
+| value | boolean | [CircleAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-circle) | [EllipseAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-ellipse) | [PathAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-path) | [RectAttribute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-rect) | 是 | 参数为相应类型的组件，按指定的形状对当前组件进行裁剪；参数为boolean类型时，设置是否按照父容器边缘轮廓进行裁剪。 默认值：false true表示按照父容器边缘轮廓进行裁剪，false表示不对子组件进行裁剪。 **说明：** 参数为对应类型的组件时，裁剪不会导致被裁剪区域无法响应绑定的手势事件。参数为boolean类型时，裁剪会导致被裁剪区域无法响应绑定的手势事件。 |
 
 返回值：
 
@@ -482,7 +483,7 @@ struct ClipAndMaskExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349605.png)
+ ![](./img/zh-cn_image_0000002631253180.png)
 
 #### [h2]示例2（实现组件遮罩）
 
@@ -551,4 +552,4 @@ struct ProgressMaskExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230192.gif)
+ ![](./img/zh-cn_image_0000002661612363.gif)

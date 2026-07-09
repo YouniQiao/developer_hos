@@ -1,9 +1,12 @@
 ---
+
 title: "红外管理错误码"
 upstream_id: "harmonyos-references/errorcode-infraredemitter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:21.176530"
+synced_at: "2026-07-09T00:59:50.825046"
+content_hash: "ec4016af686c"
 ---
+
 
 # 红外管理错误码
 

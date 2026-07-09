@@ -2,7 +2,8 @@
 title: "@ohos.app.appstartup.startupManager (启动框架管理能力)"
 upstream_id: "harmonyos-references/js-apis-app-appstartup-startupmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:48.516905"
+content_hash: "7d3ad9fc554e"
+synced_at: "2026-07-09T00:57:05.455176"
 ---
 
 # @ohos.app.appstartup.startupManager (启动框架管理能力)

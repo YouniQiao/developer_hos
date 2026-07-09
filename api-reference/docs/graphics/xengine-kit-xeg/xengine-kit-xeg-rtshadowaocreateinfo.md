@@ -2,7 +2,8 @@
 title: "XEG_RTShadowAOCreateInfo"
 upstream_id: "harmonyos-references/xengine-kit-xeg-rtshadowaocreateinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:17.231756"
+content_hash: "893c0c8ae7de"
+synced_at: "2026-07-09T01:01:10.757650"
 ---
 
 # XEG_RTShadowAOCreateInfo

@@ -2,7 +2,8 @@
 title: "ArkUI_ExpectedFrameRateRange"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-expectedframeraterange"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:44.774919"
+content_hash: "a8c597dbe341"
+synced_at: "2026-07-09T00:58:38.882059"
 ---
 
 # ArkUI_ExpectedFrameRateRange

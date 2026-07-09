@@ -2,7 +2,8 @@
 title: "ImageProcessing_ColorSpaceInfo"
 upstream_id: "harmonyos-references/capi-imageprocessing-imageprocessing-colorspaceinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:32.427459"
+content_hash: "26933d0f240a"
+synced_at: "2026-07-09T01:00:37.138636"
 ---
 
 # ImageProcessing_ColorSpaceInfo

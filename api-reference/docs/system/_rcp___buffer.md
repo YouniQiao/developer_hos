@@ -2,7 +2,8 @@
 title: "Rcp_Buffer"
 upstream_id: "harmonyos-references/_rcp___buffer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:59.329156"
+content_hash: "2fc21db49ed3"
+synced_at: "2026-07-09T00:59:33.319472"
 ---
 
 # Rcp_Buffer

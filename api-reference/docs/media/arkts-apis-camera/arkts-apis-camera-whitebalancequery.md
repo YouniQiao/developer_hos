@@ -2,7 +2,8 @@
 title: "Interface (WhiteBalanceQuery)"
 upstream_id: "harmonyos-references/arkts-apis-camera-whitebalancequery"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:13.676968"
+content_hash: "e75578f02e56"
+synced_at: "2026-07-09T01:00:23.468430"
 ---
 
 # Interface (WhiteBalanceQuery)

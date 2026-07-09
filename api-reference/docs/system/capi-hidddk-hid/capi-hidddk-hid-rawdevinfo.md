@@ -2,7 +2,8 @@
 title: "Hid_RawDevInfo"
 upstream_id: "harmonyos-references/capi-hidddk-hid-rawdevinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:33.344413"
+content_hash: "0f3b250c80f0"
+synced_at: "2026-07-09T00:59:56.006409"
 ---
 
 # Hid_RawDevInfo

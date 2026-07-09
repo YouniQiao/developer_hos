@@ -2,7 +2,8 @@
 title: "@system.mediaquery (媒体查询)"
 upstream_id: "harmonyos-references/js-apis-system-mediaquery"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:31.426756"
+content_hash: "62661684248d"
+synced_at: "2026-07-09T00:57:35.317756"
 ---
 
 # @system.mediaquery (媒体查询)

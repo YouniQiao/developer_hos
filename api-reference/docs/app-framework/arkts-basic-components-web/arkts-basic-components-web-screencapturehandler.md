@@ -2,12 +2,13 @@
 title: "Class (ScreenCaptureHandler)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-screencapturehandler"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:06.774770"
+content_hash: "6cfc3e381cee"
+synced_at: "2026-07-09T00:58:53.904448"
 ---
 
 # Class (ScreenCaptureHandler)
 
-Web组件返回授权或拒绝屏幕捕获功能的对象。示例代码参考[onScreenCaptureRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onscreencapturerequest10)事件。
+ScreenCaptureHandler 是 Web 组件提供的屏幕捕获权限处理类，用于响应网页发起的屏幕捕获请求。该类允许开发者通过 grant 或 deny 方法控制是否授予网页屏幕捕获权限，并通过 getOrigin 方法获取请求来源信息，帮助开发者在保护用户隐私的同时，灵活处理网页的屏幕捕获访问需求。示例代码参考[onScreenCaptureRequest](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onscreencapturerequest10)事件。
 
 ![](./img/note_3.0-zh-cn.png)
 

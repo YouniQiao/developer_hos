@@ -2,7 +2,8 @@
 title: "通过OpenID获取UnionID"
 upstream_id: "harmonyos-references/account-api-get-unionid"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:20.219459"
+content_hash: "9b81eaeeeab2"
+synced_at: "2026-07-09T01:01:13.545678"
 ---
 
 # 通过OpenID获取UnionID

@@ -2,7 +2,8 @@
 title: "@ohos.graphics.displaySync (可变帧率)"
 upstream_id: "harmonyos-references/js-apis-graphics-displaysync"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:51.853491"
+content_hash: "e4bc33a836dd"
+synced_at: "2026-07-09T01:00:50.925594"
 ---
 
 # @ohos.graphics.displaySync (可变帧率)

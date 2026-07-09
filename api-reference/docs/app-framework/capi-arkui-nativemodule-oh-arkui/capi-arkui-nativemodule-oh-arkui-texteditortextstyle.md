@@ -2,7 +2,8 @@
 title: "OH_ArkUI_TextEditorTextStyle"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-arkui-texteditortextstyle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:59.913530"
+content_hash: "b13ec8bccdf7"
+synced_at: "2026-07-09T00:58:48.284650"
 ---
 
 # OH_ArkUI_TextEditorTextStyle

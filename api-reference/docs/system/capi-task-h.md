@@ -2,7 +2,8 @@
 title: "task.h"
 upstream_id: "harmonyos-references/capi-task-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:16.511852"
+content_hash: "c63c5875e34b"
+synced_at: "2026-07-09T00:59:47.729942"
 ---
 
 # task.h

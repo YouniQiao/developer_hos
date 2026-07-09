@@ -2,7 +2,8 @@
 title: "netQuality（网络质量）"
 upstream_id: "harmonyos-references/networkboost-netquality"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:57.176920"
+content_hash: "b23c195b9f4b"
+synced_at: "2026-07-09T00:59:32.204153"
 ---
 
 # netQuality（网络质量）
@@ -17,7 +18,7 @@ synced_at: "2026-06-24T20:50:57.176920"
 import { netQuality } from '@kit.NetworkBoostKit';
 ```
 
-#### netQuality.on( 'netQosChange')
+#### netQuality.on('netQosChange')
 
 on(type: 'netQosChange', callback: Callback<Array<NetworkQos>>): void
 
@@ -27,7 +28,7 @@ on(type: 'netQosChange', callback: Callback<Array<NetworkQos>>): void
 
 需要权限： ohos.permission.GET_NETWORK_INFO
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 
@@ -69,7 +70,7 @@ try {
 }
 ```
 
-#### netQuality.off( 'netQosChange')
+#### netQuality.off('netQosChange')
 
 off(type: 'netQosChange', callback?: Callback<Array<NetworkQos>>): void
 
@@ -79,7 +80,7 @@ off(type: 'netQosChange', callback?: Callback<Array<NetworkQos>>): void
 
 需要权限： ohos.permission.GET_NETWORK_INFO
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 
@@ -114,7 +115,7 @@ try {
 }
 ```
 
-#### netQuality.on( 'netSceneChange')
+#### netQuality.on('netSceneChange')
 
 on(type: 'netSceneChange', callback: Callback<Array<NetworkScene>>): void
 
@@ -124,7 +125,7 @@ on(type: 'netSceneChange', callback: Callback<Array<NetworkScene>>): void
 
 需要权限： ohos.permission.GET_NETWORK_INFO
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 
@@ -169,7 +170,7 @@ try {
 }
 ```
 
-#### netQuality.off( 'netSceneChange')
+#### netQuality.off('netSceneChange')
 
 off(type: 'netSceneChange', callback?: Callback<Array<NetworkScene>>): void
 
@@ -179,7 +180,7 @@ off(type: 'netSceneChange', callback?: Callback<Array<NetworkScene>>): void
 
 需要权限： ohos.permission.GET_NETWORK_INFO
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 
@@ -224,7 +225,7 @@ reportQoe(appQoe: AppQoe): void
 
 需要权限： ohos.permission.GET_NETWORK_INFO
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 
@@ -270,7 +271,7 @@ try {
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 
@@ -287,7 +288,7 @@ try {
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 
@@ -300,7 +301,7 @@ try {
 | linkDownBandwidth | [RateBps](#ratebps) | 否 | 否 | 下行带宽信息，单位为bps。 |
 | linkUpRate | [RateBps](#ratebps) | 否 | 否 | 上行速率，单位为bps |
 | linkDownRate | [RateBps](#ratebps) | 否 | 否 | 下行速率，单位为bps。 |
-| rttMs | number | 否 | 否 | RTT时延，表示统计时间间隔内，pathType对应数据路径上，所有的TCP上下行数据包的平均往返时延。取值范围为0或任意正数，单位：毫秒（ms）。 如果在统计时间间隔内没有收到某次TCP请求的回复，则该次的RTT时延不会被计入该统计时间间隔内。因此，在完全不可上网的场景下，由于无法收到TCP的回复，回调中的RTT时延值会比较小，与实际状态不一致。针对完全不可上网的场景，建议结合[on('netCapabilitiesChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#onnetcapabilitieschange)方法进行综合判断。 |
+| rttMs | number | 否 | 否 | RTT时延，表示统计时间间隔内，pathType对应数据路径上，所有的TCP上下行数据包的平均往返时延。取值范围为0或任意正数，单位：ms。 如果在统计时间间隔内没有收到某次TCP请求的回复，则该次的RTT时延不会被计入该统计时间间隔内。因此，在完全不可上网的场景下，由于无法收到TCP的回复，回调中的RTT时延值会比较小，与实际状态不一致。针对完全不可上网的场景，建议结合[on('netCapabilitiesChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-net-connection#onnetcapabilitieschange)方法进行综合判断。 |
 | linkUpBufferDelayMs | number | 否 | 否 | 上行发送空口缓冲时延，取值范围是任意正数。 |
 | linkUpBufferCongestionPercent | number | 否 | 是 | 上行发送空口缓冲时延占总缓冲时间的比例，取值范围[0, 100]。 |
 
@@ -310,7 +311,7 @@ try {
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 
@@ -331,7 +332,7 @@ type RateBps = number
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 
@@ -349,7 +350,7 @@ type ServiceType = 'default' | 'background' | 'realtimeVoice' | 'realtimeVideo' 
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 
@@ -390,7 +391,7 @@ type QoeType = 'good' | BadQoeCause
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 
@@ -409,7 +410,7 @@ type BadQoeCause = 'unknown' | 'serverErr' | 'noData' | 'packetLost' | 'packetOu
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 
@@ -431,7 +432,7 @@ type BadQoeCause = 'unknown' | 'serverErr' | 'noData' | 'packetLost' | 'packetOu
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 
@@ -451,7 +452,7 @@ type BadQoeCause = 'unknown' | 'serverErr' | 'noData' | 'packetLost' | 'packetOu
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 
@@ -470,7 +471,7 @@ type BadQoeCause = 'unknown' | 'serverErr' | 'noData' | 'packetLost' | 'packetOu
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 
@@ -479,8 +480,8 @@ type BadQoeCause = 'unknown' | 'serverErr' | 'noData' | 'packetLost' | 'packetOu
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | isLastPredictionValid | boolean | 否 | 否 | 最近一次的弱信号预测是否有效，true表示最近一次的弱信号预测依旧有效，false表示最近一次的弱信号预测失效，此时startTime和duration参数忽略。 |
-| startTime | number | 否 | 否 | 预计多长时间进入弱信号（单位：秒），取值范围为0和任意正数。 |
-| duration | number | 否 | 否 | 预计在弱信号区域停留时长（单位：秒），取任意正数。取值0，此次预测结果无效。 |
+| startTime | number | 否 | 否 | 预计多长时间进入弱信号（单位：s），取值范围为0和任意正数。 |
+| duration | number | 否 | 否 | 预计在弱信号区域停留时长（单位：s），取任意正数。取值0，此次预测结果无效。 |
 
 #### Scene
 
@@ -490,7 +491,7 @@ type Scene = 'normal' | 'congestion' | 'frequentHandover' | 'weakSignal'
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 
@@ -511,7 +512,7 @@ type DataSpeedSimpleAction = 'suspendData' | 'decreaseData' | 'increaseData' | '
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 
@@ -532,7 +533,7 @@ type RecommendedAction = 'doCaching' | DataSpeedSimpleAction
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从API version 26.0.0开始，该接口支持在元服务中使用。
+元服务API： 从API版本26.0.0开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Communication.NetworkBoost.Core
 

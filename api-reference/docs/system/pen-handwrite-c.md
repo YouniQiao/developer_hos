@@ -2,7 +2,8 @@
 title: "HandWrite"
 upstream_id: "harmonyos-references/pen-handwrite-c"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:39.164521"
+content_hash: "663f02b5d7b2"
+synced_at: "2026-07-09T00:59:59.053970"
 ---
 
 # HandWrite

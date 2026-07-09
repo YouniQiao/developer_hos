@@ -1,9 +1,12 @@
 ---
+
 title: "扩展认证错误码"
 upstream_id: "harmonyos-references/errorcode-net-eap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:56.571704"
+synced_at: "2026-07-09T00:59:31.229737"
+content_hash: "6c97aff8a2e3"
 ---
+
 
 # 扩展认证错误码
 

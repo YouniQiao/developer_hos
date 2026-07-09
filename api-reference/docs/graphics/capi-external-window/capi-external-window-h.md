@@ -2,7 +2,8 @@
 title: "external_window.h"
 upstream_id: "harmonyos-references/capi-external-window-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:04.329557"
+content_hash: "ae64f45f52c2"
+synced_at: "2026-07-09T01:01:00.329937"
 ---
 
 # external_window.h

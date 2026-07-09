@@ -2,7 +2,8 @@
 title: "GestureGroup"
 upstream_id: "harmonyos-references/ts-combined-gestures"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:51.404812"
+content_hash: "29c0d831f076"
+synced_at: "2026-07-09T00:57:44.578346"
 ---
 
 # GestureGroup
@@ -125,8 +126,8 @@ struct GestureGroupExample {
 
 按顺序首先触发长按事件：
 
-![](./img/zh-cn_image_0000002626230262.png)
+![](./img/zh-cn_image_0000002661612437.png)
 
 按顺序首先触发长按事件，长按事件识别结束之后，触发拖动事件，向右下方拖动：
 
-![](./img/zh-cn_image_0000002626070352.png)
+![](./img/zh-cn_image_0000002631413146.png)

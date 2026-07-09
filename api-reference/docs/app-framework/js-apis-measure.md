@@ -2,7 +2,8 @@
 title: "@ohos.measure (文本计算)"
 upstream_id: "harmonyos-references/js-apis-measure"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:24.406570"
+content_hash: "247ae765d0cb"
+synced_at: "2026-07-09T00:57:30.987404"
 ---
 
 # @ohos.measure (文本计算)

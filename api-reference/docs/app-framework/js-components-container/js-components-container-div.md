@@ -2,7 +2,8 @@
 title: "div"
 upstream_id: "harmonyos-references/js-components-container-div"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:02.803999"
+content_hash: "eb29df11dfa3"
+synced_at: "2026-07-09T00:58:20.748033"
 ---
 
 # div
@@ -125,7 +126,7 @@ synced_at: "2026-06-24T20:49:02.803999"
   background-color: #41ba41;
 }
 ```
- ![](./img/zh-cn_image_0000002656350291.png)
+ ![](./img/zh-cn_image_0000002661613061.png)
 2. Flex Wrap样式 
 ```
 <!-- xxx.hml -->
@@ -170,7 +171,7 @@ synced_at: "2026-06-24T20:49:02.803999"
   background-color: #41ba41;
 }
 ```
- ![](./img/zh-cn_image_0000002626230878.png)
+ ![](./img/zh-cn_image_0000002631413772.png)
 3. Grid样式 
 ```
 <!-- xxx.hml -->
@@ -233,7 +234,7 @@ synced_at: "2026-06-24T20:49:02.803999"
   background-color: #47cc47;
 }
 ```
- ![](./img/zh-cn_image_0000002626070968.png)
+ ![](./img/zh-cn_image_0000002661733001.png)
 4. 拖拽7+ 
 ```
 <!-- xxx.hml -->
@@ -281,7 +282,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470245.gif) 
+ ![](./img/zh-cn_image_0000002631253882.gif) 
 ```
 <!-- xxx.hml -->
 <div class="container">
@@ -342,7 +343,7 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350293.gif)
+ ![](./img/zh-cn_image_0000002661613063.gif)
 5. 手指捏合7+ 
 ```
 <!-- xxx.hml -->
@@ -396,4 +397,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230880.gif)
+ ![](./img/zh-cn_image_0000002631413774.gif)

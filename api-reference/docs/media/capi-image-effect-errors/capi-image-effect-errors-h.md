@@ -2,7 +2,8 @@
 title: "image_effect_errors.h"
 upstream_id: "harmonyos-references/capi-image-effect-errors-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:27.267397"
+content_hash: "6c3a57fc5ffc"
+synced_at: "2026-07-09T01:00:33.604817"
 ---
 
 # image_effect_errors.h

@@ -2,12 +2,13 @@
 title: "Class (PrefetchOptions)"
 upstream_id: "harmonyos-references/arkts-apis-webview-prefetchoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:02.946202"
+content_hash: "469c2b4c577e"
+synced_at: "2026-07-09T00:58:50.526557"
 ---
 
 # Class (PrefetchOptions)
 
-用来自定义网页的预取行为，包括是否忽略响应头中的Cache-Control: no-store和设置两次预取间的最小时间间隔。
+PrefetchOptions是ArkWeb框架中用于自定义网页预取行为的配置类，通过[prefetchPage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#prefetchpage21)的预取相关接口设置。用来自定义网页的预取行为，包括是否忽略响应头中的Cache-Control: no-store和设置两次预取间的最小时间间隔。
 
 ![](./img/note_3.0-zh-cn.png)
 

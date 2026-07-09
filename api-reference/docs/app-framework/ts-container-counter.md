@@ -2,7 +2,8 @@
 title: "Counter"
 upstream_id: "harmonyos-references/ts-container-counter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:25.308272"
+content_hash: "0df68bf9d982"
+synced_at: "2026-07-09T00:58:00.935416"
 ---
 
 # Counter
@@ -150,4 +151,4 @@ struct CounterExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070684.gif)
+ ![](./img/zh-cn_image_0000002661732713.gif)

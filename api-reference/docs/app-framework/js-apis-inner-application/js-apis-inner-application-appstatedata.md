@@ -2,7 +2,8 @@
 title: "AppStateData"
 upstream_id: "harmonyos-references/js-apis-inner-application-appstatedata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:52.969342"
+content_hash: "d50bea2b2f46"
+synced_at: "2026-07-09T00:57:08.887749"
 ---
 
 # AppStateData

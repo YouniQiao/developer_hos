@@ -2,7 +2,8 @@
 title: "network_boost_quality.h"
 upstream_id: "harmonyos-references/network-boost-c-files-quality"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:57.435633"
+content_hash: "c59d0e8a8548"
+synced_at: "2026-07-09T00:59:32.390808"
 ---
 
 # network_boost_quality.h

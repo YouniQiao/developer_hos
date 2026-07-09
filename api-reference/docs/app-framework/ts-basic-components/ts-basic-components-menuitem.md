@@ -2,7 +2,8 @@
 title: "MenuItem"
 upstream_id: "harmonyos-references/ts-basic-components-menuitem"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:39.519976"
+content_hash: "e27d9e423ca1"
+synced_at: "2026-07-09T00:58:06.765815"
 ---
 
 # MenuItem

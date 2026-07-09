@@ -2,7 +2,8 @@
 title: "OH_UdsDetails"
 upstream_id: "harmonyos-references/capi-udmf-oh-udsdetails"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:11.454764"
+content_hash: "f3a0905449ba"
+synced_at: "2026-07-09T00:57:22.072395"
 ---
 
 # OH_UdsDetails

@@ -2,7 +2,8 @@
 title: "无障碍"
 upstream_id: "harmonyos-references/js-service-widget-common-accessibility"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:25.449928"
+content_hash: "16667640a572"
+synced_at: "2026-07-09T00:58:30.219051"
 ---
 
 # 无障碍

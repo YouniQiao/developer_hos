@@ -2,7 +2,8 @@
 title: "native_drm_common.h"
 upstream_id: "harmonyos-references/capi-native-drm-common-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:20.238163"
+content_hash: "93cb7b6421f9"
+synced_at: "2026-07-09T01:00:28.179229"
 ---
 
 # native_drm_common.h

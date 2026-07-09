@@ -2,7 +2,8 @@
 title: "FG_AlgorithmModeInfo"
 upstream_id: "harmonyos-references/_f_g___algorithm_mode_info"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:13.216588"
+content_hash: "c1b4b61f31f1"
+synced_at: "2026-07-09T01:01:07.236380"
 ---
 
 # FG_AlgorithmModeInfo

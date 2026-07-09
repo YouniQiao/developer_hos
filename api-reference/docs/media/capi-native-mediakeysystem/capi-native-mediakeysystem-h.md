@@ -2,7 +2,8 @@
 title: "native_mediakeysystem.h"
 upstream_id: "harmonyos-references/capi-native-mediakeysystem-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:20.476834"
+content_hash: "2b6a3e6cb2a0"
+synced_at: "2026-07-09T01:00:28.872176"
 ---
 
 # native_mediakeysystem.h

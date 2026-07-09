@@ -2,7 +2,8 @@
 title: "Class (ShadowLayer)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-shadowlayer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:54.671724"
+content_hash: "a68caf0e54cc"
+synced_at: "2026-07-09T01:00:52.816528"
 ---
 
 # Class (ShadowLayer)

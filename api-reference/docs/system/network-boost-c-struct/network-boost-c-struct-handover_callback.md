@@ -2,7 +2,8 @@
 title: "HMS_NetworkBoost_HandoverCallback"
 upstream_id: "harmonyos-references/network-boost-c-struct-handover_callback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:57.747582"
+content_hash: "cf6129f8d9ee"
+synced_at: "2026-07-09T00:59:32.205661"
 ---
 
 # HMS_NetworkBoost_HandoverCallback

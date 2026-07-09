@@ -2,7 +2,8 @@
 title: "oh_location_type.h"
 upstream_id: "harmonyos-references/capi-oh-location-type-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:31.366038"
+content_hash: "3f50eb98efd7"
+synced_at: "2026-07-09T01:01:23.361218"
 ---
 
 # oh_location_type.h

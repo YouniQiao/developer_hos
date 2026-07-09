@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.common (Ability公共模块)"
 upstream_id: "harmonyos-references/js-apis-app-ability-common"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:46.359076"
+content_hash: "4789d2ab7be2"
+synced_at: "2026-07-09T00:57:04.180486"
 ---
 
 # @ohos.app.ability.common (Ability公共模块)

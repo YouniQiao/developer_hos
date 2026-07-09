@@ -2,7 +2,8 @@
 title: "xeg_vulkan_neural_upscale.h"
 upstream_id: "harmonyos-references/xengine-kit-xeg-vulkan-neural-upscale-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:16.207672"
+content_hash: "ed50cc283e29"
+synced_at: "2026-07-09T01:01:09.985758"
 ---
 
 # xeg_vulkan_neural_upscale.h

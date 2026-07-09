@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.ConfigurationConstant (环境变量相关的常量定义)"
 upstream_id: "harmonyos-references/js-apis-app-ability-configurationconstant"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:50.403212"
+content_hash: "a8ab84eb90bd"
+synced_at: "2026-07-09T00:57:07.040292"
 ---
 
 # @ohos.app.ability.ConfigurationConstant (环境变量相关的常量定义)

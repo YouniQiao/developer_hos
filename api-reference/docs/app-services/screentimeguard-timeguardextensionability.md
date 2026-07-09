@@ -1,11 +1,12 @@
 ---
-title: "@hms.utilityApplication.screenTimeGuard.TimeGuardExtensionAbility.d.ts（屏幕时间守护扩展Ability）"
+title: "@hms.utilityApplication.screenTimeGuard.TimeGuardExtensionAbility（屏幕时间守护扩展Ability）"
 upstream_id: "harmonyos-references/screentimeguard-timeguardextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:53.000363"
+content_hash: "f2f2dc02bc5a"
+synced_at: "2026-07-09T01:01:39.321342"
 ---
 
-# @hms.utilityApplication.screenTimeGuard.TimeGuardExtensionAbility.d.ts（屏幕时间守护扩展Ability）
+# @hms.utilityApplication.screenTimeGuard.TimeGuardExtensionAbility（屏幕时间守护扩展Ability）
 
 #### 模块概述
 
@@ -37,7 +38,7 @@ import { TimeGuardExtensionAbility } from '@kit.ScreenTimeGuardKit';
 
 onStart(strategyName: string): Promise<void>
 
-当管控应用启动的策略管控生效时，系统将自动触发此回调函数，开发者可在回调函数中执行自己的业务逻辑。使用Promise异步回调。
+当管控应用启动守护策略时，系统将自动触发此回调函数，开发者可在回调函数中执行自己的业务逻辑。使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -49,7 +50,7 @@ onStart(strategyName: string): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| strategyName | string | 是 | 生效的时间管控策略名称。 |
+| strategyName | string | 是 | 启动的守护策略名称。 |
 
 返回值：
 
@@ -74,6 +75,7 @@ function asyncIncrement(): Promise<void> {
 
 export default class EntryAbility extends TimeGuardExtensionAbility {
   async onStart(strategyName: string): Promise<void> {
+    // strategyName表示启动的守护策略名称
     // 开发者可在回调中处理自己的业务逻辑，本示例代码只执行index自增逻辑
     await asyncIncrement();
     console.info('test --- onStart:', strategyName, index);
@@ -85,7 +87,7 @@ export default class EntryAbility extends TimeGuardExtensionAbility {
 
 onStop(strategyName: string): Promise<void>
 
-当管控应用启动的策略管控结束时，系统将自动触发此回调函数，开发者可在回调函数中执行自己的业务逻辑。使用Promise异步回调。
+当管控应用停止守护策略时，系统将自动触发此回调函数，开发者可在回调函数中执行自己的业务逻辑。使用Promise异步回调。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -97,7 +99,7 @@ onStop(strategyName: string): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| strategyName | string | 是 | 结束的时间管控策略名称。 |
+| strategyName | string | 是 | 停止的守护策略名称。 |
 
 返回值：
 
@@ -122,6 +124,7 @@ function asyncIncrement(): Promise<void> {
 
 export default class EntryAbility extends TimeGuardExtensionAbility {
   async onStop(strategyName: string): Promise<void> {
+    // strategyName表示停止的守护策略名称
     // 开发者可在回调中处理自己的业务逻辑，本示例代码只执行index自增逻辑
     await asyncIncrement();
     console.info('test --- onStop:', strategyName, index);

@@ -2,7 +2,8 @@
 title: "列表选择弹窗 (ActionSheet)"
 upstream_id: "harmonyos-references/ts-methods-action-sheet"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:42.672637"
+content_hash: "65c2cff0f330"
+synced_at: "2026-07-09T00:58:09.156384"
 ---
 
 # 列表选择弹窗 (ActionSheet)
@@ -249,7 +250,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470099.gif)
+ ![](./img/zh-cn_image_0000002631413624.gif)
 
 #### [h2]示例2（可在主窗外弹出的弹窗）
 
@@ -320,7 +321,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350147.jpg)
+ ![](./img/zh-cn_image_0000002661732855.jpg)
 
 #### [h2]示例3（设置弹窗的动画）
 
@@ -381,7 +382,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230734.gif)
+ ![](./img/zh-cn_image_0000002631253734.gif)
 
 #### [h2]示例4（设置弹窗的样式）
 
@@ -462,7 +463,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070824.gif)
+ ![](./img/zh-cn_image_0000002661612917.gif)
 
 #### [h2]示例5（悬停态弹窗）
 
@@ -533,7 +534,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470101.gif)
+ ![](./img/zh-cn_image_0000002631413626.gif)
 
 #### [h2]示例6（弹窗生命周期）
 
@@ -611,7 +612,7 @@ struct Example1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350149.gif)
+ ![](./img/zh-cn_image_0000002661732857.gif)
 
 #### [h2]示例7（自定义背景模糊效果参数）
 
@@ -670,7 +671,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230736.png)
+ ![](./img/zh-cn_image_0000002631253736.png)
 
 #### [h2]示例8（自定义背景效果参数）
 
@@ -730,7 +731,7 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070826.png)
+ ![](./img/zh-cn_image_0000002661612919.png)
 
 #### [h2]示例9（设置弹窗的系统材质）
 
@@ -786,4 +787,4 @@ struct ActionSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470103.png)
+ ![](./img/zh-cn_image_0000002631413628.png)

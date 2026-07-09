@@ -2,7 +2,8 @@
 title: "OHAudio"
 upstream_id: "harmonyos-references/capi-ohaudio"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:54.446319"
+content_hash: "fecf16191993"
+synced_at: "2026-07-09T01:00:09.265048"
 ---
 
 # OHAudio

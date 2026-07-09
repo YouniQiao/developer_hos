@@ -2,7 +2,8 @@
 title: "oh_file_uri.h"
 upstream_id: "harmonyos-references/capi-oh-file-uri-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:15.328734"
+content_hash: "1765d1e2c85d"
+synced_at: "2026-07-09T00:59:01.034600"
 ---
 
 # oh_file_uri.h

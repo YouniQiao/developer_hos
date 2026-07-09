@@ -2,7 +2,8 @@
 title: "路径动画 (motionPath)"
 upstream_id: "harmonyos-references/ts-motion-path-animation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:41.555768"
+content_hash: "7cb1730e41e1"
+synced_at: "2026-07-09T00:58:08.299863"
 ---
 
 # 路径动画 (motionPath)
@@ -77,4 +78,4 @@ struct MotionPathExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350137.gif)
+ ![](./img/zh-cn_image_0000002661732845.gif)

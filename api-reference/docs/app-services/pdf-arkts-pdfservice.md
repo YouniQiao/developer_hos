@@ -2,14 +2,15 @@
 title: "pdfService（PDF服务）"
 upstream_id: "harmonyos-references/pdf-arkts-pdfservice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:47.992600"
+content_hash: "d3e640985757"
+synced_at: "2026-07-09T01:01:36.992932"
 ---
 
 # pdfService（PDF服务）
 
 本模块为应用提供统一的管理PDF页面的页眉页脚、水印和背景、文档的多种批注风格和书签便捷的PDF能力。
 
-注： 涉及到尺寸和坐标的属性都是以点（Points）为单位，一英寸等于72点。
+注： 涉及到尺寸和坐标的属性都是以点（Points）为单位，一英寸等于72Points。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -27,7 +28,7 @@ import { pdfService } from '@kit.PDFKit';
 
 #### PdfDocument
 
-PDF文件类。
+PDF文档类。
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 
@@ -469,7 +470,7 @@ movePage(index: number, dest: number): boolean
 
 movePage(3, 2)，会有变化，顺序：0，1，3，2，4。
 
-![](./img/zh-cn_image_0000002626231614.jpg)
+![](./img/zh-cn_image_0000002631414516.jpg)
 
 系统能力： SystemCapability.OfficeService.PDFService.Core
 

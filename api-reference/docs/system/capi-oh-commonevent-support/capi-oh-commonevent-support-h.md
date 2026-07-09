@@ -2,7 +2,8 @@
 title: "oh_commonevent_support.h"
 upstream_id: "harmonyos-references/capi-oh-commonevent-support-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:11.038036"
+content_hash: "5f71e80d2dd0"
+synced_at: "2026-07-09T00:59:42.972292"
 ---
 
 # oh_commonevent_support.h

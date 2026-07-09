@@ -2,7 +2,8 @@
 title: "获取实名信息"
 upstream_id: "harmonyos-references/account-api-get-realname"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:20.137908"
+content_hash: "d15c6af2235e"
+synced_at: "2026-07-09T01:01:13.497827"
 ---
 
 # 获取实名信息

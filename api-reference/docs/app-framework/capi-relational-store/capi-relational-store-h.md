@@ -2,7 +2,8 @@
 title: "relational_store.h"
 upstream_id: "harmonyos-references/capi-relational-store-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:07.329718"
+content_hash: "f60c3431562c"
+synced_at: "2026-07-09T00:57:20.018748"
 ---
 
 # relational_store.h

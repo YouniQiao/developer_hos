@@ -2,7 +2,8 @@
 title: "Class (Uint32Array)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-uint32array"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:13.994594"
+content_hash: "a47540fb1221"
+synced_at: "2026-07-09T00:57:24.349642"
 ---
 
 # Class (Uint32Array)
@@ -30,10 +31,10 @@ import { collections } from '@kit.ArkTS';
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | buffer | ArrayBuffer | 是 | 否 | ArkTS Uint32Array底层使用的buffer。 |
-| byteLength | number | 是 | 否 | ArkTS Uint32Array的所占的字节数。 |
+| byteLength | number | 是 | 否 | ArkTS Uint32Array所占的字节数。 |
 | byteOffset | number | 是 | 否 | ArkTS Uint32Array距离其ArrayBuffer起始位置的偏移。 |
 | length | number | 是 | 否 | ArkTS Uint32Array元素个数。 |
-| BYTES_PER_ELEMENT | number | 是 | 否 | ArkTS Uint32Array中每个元素所占用的字节数。 |
+| BYTES_PER_ELEMENT | number | 是 | 否 | ArkTS Uint32Array中每个元素所占的字节数。 |
 
 #### constructor
 
@@ -458,7 +459,7 @@ let copied: collections.Uint32Array = array.copyWithin(3, 1, 3);
 
 some(predicate: TypedArrayPredicateFn<number, Uint32Array>): boolean
 
-测试ArkTS Uint32Array中的是否存在元素满足指定条件。
+测试ArkTS Uint32Array中是否存在元素满足指定条件。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 

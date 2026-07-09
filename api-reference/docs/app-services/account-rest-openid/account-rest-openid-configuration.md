@@ -2,7 +2,8 @@
 title: "获取OpenID Connect配置公开信息"
 upstream_id: "harmonyos-references/account-rest-openid-configuration"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:20.867150"
+content_hash: "cc7f92dae62a"
+synced_at: "2026-07-09T01:01:13.886288"
 ---
 
 # 获取OpenID Connect配置公开信息

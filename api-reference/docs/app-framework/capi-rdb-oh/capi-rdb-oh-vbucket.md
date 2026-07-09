@@ -2,7 +2,8 @@
 title: "OH_VBucket"
 upstream_id: "harmonyos-references/capi-rdb-oh-vbucket"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:08.099610"
+content_hash: "af58f0ce92de"
+synced_at: "2026-07-09T00:57:19.790451"
 ---
 
 # OH_VBucket

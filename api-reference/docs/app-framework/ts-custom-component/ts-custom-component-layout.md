@@ -2,7 +2,8 @@
 title: "自定义组件的自定义布局"
 upstream_id: "harmonyos-references/ts-custom-component-layout"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:49.810419"
+content_hash: "53f7d352e9fc"
+synced_at: "2026-07-09T00:58:13.775513"
 ---
 
 # 自定义组件的自定义布局
@@ -41,7 +42,7 @@ ArkUI框架会在自定义组件确定尺寸时，将该自定义组件的节点
 
 | 类型 | 说明 |
 | --- | --- |
-| [SizeResult](#sizeresult10) | 组件尺寸信息。 |
+| [SizeResult](#sizeresult10) | 自定义组件自身的尺寸信息。 |
 
 #### onPlaceChildren10+
 
@@ -79,13 +80,13 @@ ArkUI框架会在自定义组件确定位置时，将该自定义组件的子节
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| borderWidth | [EdgeWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edgewidths9) | 否 | 否 | 父组件（自定义组件）边框宽度。 单位：vp。 |
+| borderWidth | [EdgeWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edgewidth10) | 否 | 否 | 父组件（自定义组件）边框宽度。 单位：vp。 |
 | margin | [Margin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#margin) | 否 | 否 | 父组件（自定义组件）margin信息。 单位：vp。 |
 | padding | [Padding](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#padding) | 否 | 否 | 父组件（自定义组件）padding信息。 单位：vp。 |
 
 #### Layoutable10+
 
-子组件布局信息。
+子组件位置信息。
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -172,7 +173,7 @@ getBorderWidth(): DirectionalEdgesT<number>
 
 #### Measurable10+
 
-子组件位置信息。
+子组件尺寸信息。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -444,6 +445,7 @@ struct Index {
   }
 }
 
+// 通过builder的方式传递多个组件，作为自定义组件的一级子组件（即不包含容器组件，如Column）
 @Builder
 function ColumnChildren() {
   ForEach([1, 2, 3], (index: number) => { // 目前不支持使用lazyForEach语法。
@@ -463,20 +465,12 @@ struct CustomLayout {
   };
 
   @BuilderParam builder: () => void = this.doNothingBuilder;
-  @State startSize: number = 100;
   result: SizeResult = {
     width: 0,
     height: 0
   };
 
-  onPlaceChildren(selfLayoutInfo: GeometryInfo, children: Array<Layoutable>, constraint: ConstraintSizeOptions) {
-    let startPos = 300;
-    children.forEach((child) => {
-      let pos = startPos - child.measureResult.height;
-      child.layout({ x: pos, y: pos })
-    })
-  }
-
+  // 第一步：计算各子组件的大小
   onMeasureSize(selfLayoutInfo: GeometryInfo, children: Array<Measurable>, constraint: ConstraintSizeOptions) {
     let size = 100;
     children.forEach((child) => {
@@ -492,13 +486,21 @@ struct CustomLayout {
     this.result.height = 400;
     return this.result;
   }
+  // 第二步：放置各子组件的位置
+  onPlaceChildren(selfLayoutInfo: GeometryInfo, children: Array<Layoutable>, constraint: ConstraintSizeOptions) {
+    let startPos = 300;
+    children.forEach((child) => {
+      let pos = startPos - child.measureResult.height;
+      child.layout({ x: pos, y: pos })
+    })
+  }
 
   build() {
     this.builder()
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350201.png)
+ ![](./img/zh-cn_image_0000002661732909.png)
 
 #### [h2]示例2（判断是否参与布局计算）
 
@@ -600,7 +602,7 @@ struct CustomLayout {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230788.png)
+ ![](./img/zh-cn_image_0000002631253788.png)
 
 #### [h2]示例3（获取子组件FrameNode并设置相关属性）
 
@@ -675,7 +677,7 @@ struct CustomLayout {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070878.jpg)
+ ![](./img/zh-cn_image_0000002661612971.jpg)
 
 #### [h2]示例4（子组件超过父组件大小约束）
 
@@ -736,7 +738,7 @@ struct CustomLayoutText {
 
   onMeasureSize(selfLayoutInfo: GeometryInfo, children: Array<Measurable>, constraint: ConstraintSizeOptions) {
     children.forEach((child) => {
-      let result: MeasureResult = child.measure({ maxWidth: 335, maxHeight: 50 }) // 设置自定义组件子组件大小的限制。
+      child.measure({ maxWidth: 335, maxHeight: 50 }) // 设置自定义组件子组件大小的限制。
     })
     this.result.width = 200;
     this.result.height = 130;
@@ -748,4 +750,4 @@ struct CustomLayoutText {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656470155.jpg)
+ ![](./img/zh-cn_image_0000002631413682.jpg)

@@ -2,7 +2,8 @@
 title: "list-item-group"
 upstream_id: "harmonyos-references/js-components-container-list-item-group"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:03.497199"
+content_hash: "520e273ff610"
+synced_at: "2026-07-09T00:58:20.732336"
 ---
 
 # list-item-group
@@ -171,4 +172,4 @@ export default {
 }
 
 ```
- ![](./img/zh-cn_image_0000002656350295.gif)
+ ![](./img/zh-cn_image_0000002661613065.gif)

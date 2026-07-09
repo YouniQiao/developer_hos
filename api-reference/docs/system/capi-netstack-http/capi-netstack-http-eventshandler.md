@@ -2,7 +2,8 @@
 title: "Http_EventsHandler"
 upstream_id: "harmonyos-references/capi-netstack-http-eventshandler"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:55.653526"
+content_hash: "faeeb446c3d4"
+synced_at: "2026-07-09T00:59:30.566504"
 ---
 
 # Http_EventsHandler

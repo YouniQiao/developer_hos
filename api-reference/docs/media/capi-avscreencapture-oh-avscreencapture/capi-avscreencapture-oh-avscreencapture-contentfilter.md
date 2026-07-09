@@ -2,7 +2,8 @@
 title: "OH_AVScreenCapture_ContentFilter"
 upstream_id: "harmonyos-references/capi-avscreencapture-oh-avscreencapture-contentfilter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:40.869886"
+content_hash: "c701af48566d"
+synced_at: "2026-07-09T01:00:44.410371"
 ---
 
 # OH_AVScreenCapture_ContentFilter

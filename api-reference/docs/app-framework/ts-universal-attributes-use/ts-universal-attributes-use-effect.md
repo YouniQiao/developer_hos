@@ -2,7 +2,8 @@
 title: "特效绘制合并"
 upstream_id: "harmonyos-references/ts-universal-attributes-use-effect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:41.556291"
+content_hash: "8010d7c5bbed"
+synced_at: "2026-07-09T00:57:40.757334"
 ---
 
 # 特效绘制合并

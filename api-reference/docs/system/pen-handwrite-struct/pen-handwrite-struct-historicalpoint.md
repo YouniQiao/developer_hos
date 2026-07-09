@@ -2,7 +2,8 @@
 title: "HandWrite_HistoricalPoint"
 upstream_id: "harmonyos-references/pen-handwrite-struct-historicalpoint"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:39.726735"
+content_hash: "557d19f2cbc1"
+synced_at: "2026-07-09T00:59:59.409082"
 ---
 
 # HandWrite_HistoricalPoint

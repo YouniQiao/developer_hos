@@ -2,7 +2,8 @@
 title: "ApplicationInfo"
 upstream_id: "harmonyos-references/js-apis-bundle-applicationinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:56.659609"
+content_hash: "bdab1e7dfaa9"
+synced_at: "2026-07-09T00:57:11.463884"
 ---
 
 # ApplicationInfo

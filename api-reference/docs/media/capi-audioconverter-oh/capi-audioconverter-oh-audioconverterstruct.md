@@ -2,7 +2,8 @@
 title: "OH_AudioConverterStruct"
 upstream_id: "harmonyos-references/capi-audioconverter-oh-audioconverterstruct"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:00.205664"
+content_hash: "02707fa543bd"
+synced_at: "2026-07-09T01:00:12.622004"
 ---
 
 # OH_AudioConverterStruct

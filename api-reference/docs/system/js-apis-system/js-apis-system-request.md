@@ -2,7 +2,8 @@
 title: "@system.request (上传下载)"
 upstream_id: "harmonyos-references/js-apis-system-request"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:10.211940"
+content_hash: "024c510baa08"
+synced_at: "2026-07-09T00:59:42.272480"
 ---
 
 # @system.request (上传下载)

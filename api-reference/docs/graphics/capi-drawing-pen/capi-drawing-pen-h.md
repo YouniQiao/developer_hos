@@ -2,7 +2,8 @@
 title: "drawing_pen.h"
 upstream_id: "harmonyos-references/capi-drawing-pen-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:01.787639"
+content_hash: "7eff45e3a41e"
+synced_at: "2026-07-09T01:00:56.770190"
 ---
 
 # drawing_pen.h

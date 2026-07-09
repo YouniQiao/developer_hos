@@ -2,7 +2,8 @@
 title: "Interface (CameraManager)"
 upstream_id: "harmonyos-references/arkts-apis-camera-cameramanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:10.869412"
+content_hash: "69aacaafa9db"
+synced_at: "2026-07-09T01:00:21.909559"
 ---
 
 # Interface (CameraManager)

@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.scriptManager (脚本管理)"
 upstream_id: "harmonyos-references/js-apis-app-ability-scriptmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:48.112575"
+content_hash: "2eb8d4782a8e"
+synced_at: "2026-07-09T00:57:05.298964"
 ---
 
 # @ohos.app.ability.scriptManager (脚本管理)

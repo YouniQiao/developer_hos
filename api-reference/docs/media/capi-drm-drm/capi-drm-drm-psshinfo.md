@@ -2,7 +2,8 @@
 title: "DRM_PsshInfo"
 upstream_id: "harmonyos-references/capi-drm-drm-psshinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:21.204570"
+content_hash: "c959d05e3260"
+synced_at: "2026-07-09T01:00:28.819368"
 ---
 
 # DRM_PsshInfo

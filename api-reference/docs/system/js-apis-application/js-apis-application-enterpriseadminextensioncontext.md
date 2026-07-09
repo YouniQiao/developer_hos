@@ -2,7 +2,8 @@
 title: "EnterpriseAdminExtensionContext"
 upstream_id: "harmonyos-references/js-apis-application-enterpriseadminextensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:24.794996"
+content_hash: "7d30b9ac6f01"
+synced_at: "2026-07-09T00:59:53.248463"
 ---
 
 # EnterpriseAdminExtensionContext

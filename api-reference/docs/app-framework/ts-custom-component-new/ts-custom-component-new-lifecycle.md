@@ -2,7 +2,8 @@
 title: "自定义组件的生命周期（推荐）"
 upstream_id: "harmonyos-references/ts-custom-component-new-lifecycle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:49.774827"
+content_hash: "0f9a73f095f5"
+synced_at: "2026-07-09T00:58:13.141389"
 ---
 
 # 自定义组件的生命周期（推荐）
@@ -488,7 +489,6 @@ struct Index {
 struct Child {
   @State message: Message = new Message('Child');
   @State label: string = 'HelloWorld';
-  @State switch: boolean = true;
   @ComponentInit
   myInit() {
     // 自定义组件创建完毕后，触发myInit方法
@@ -511,7 +511,6 @@ struct Child {
   }
   @ComponentDisappear
   myDisappear() {
-    this.label = 'myDisappear'
     hilog.info(0x0000, 'testTag', 'Child myDisappear');
   }
   @ComponentReuse
@@ -544,7 +543,6 @@ import { ComponentActive, ComponentInactive } from '@kit.ArkUI';
 @Entry
 @Component
 struct Index {
-  @State message: string = 'Hello World';
   @State changeChild: boolean = false;
 
   build() {

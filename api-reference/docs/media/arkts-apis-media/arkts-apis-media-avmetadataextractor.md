@@ -2,7 +2,8 @@
 title: "Interface (AVMetadataExtractor)"
 upstream_id: "harmonyos-references/arkts-apis-media-avmetadataextractor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:33.328052"
+content_hash: "ce8c8ef2f61b"
+synced_at: "2026-07-09T01:00:38.336904"
 ---
 
 # Interface (AVMetadataExtractor)

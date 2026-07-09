@@ -2,7 +2,8 @@
 title: "xeg_gles_neural_upscale.h"
 upstream_id: "harmonyos-references/xengine-kit-xeg-gles-neural-upscale-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:15.349622"
+content_hash: "1949b5222871"
+synced_at: "2026-07-09T01:01:09.301413"
 ---
 
 # xeg_gles_neural_upscale.h

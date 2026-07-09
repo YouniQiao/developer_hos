@@ -2,7 +2,8 @@
 title: "NDK涉及的musl libc接口使用限制的说明"
 upstream_id: "harmonyos-references/guidance-on-ndk-libc-interfaces-affected-by-permissions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:06.991852"
+content_hash: "b5e7f1347936"
+synced_at: "2026-07-09T01:01:50.474406"
 ---
 
 # NDK涉及的musl libc接口使用限制的说明

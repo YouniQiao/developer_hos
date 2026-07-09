@@ -2,7 +2,8 @@
 title: "ARView（AR场景可视化）"
 upstream_id: "harmonyos-references/arengine-api-component-arview"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:49.791645"
+content_hash: "d6e930b052a6"
+synced_at: "2026-07-09T01:00:49.566987"
 ---
 
 # ARView（AR场景可视化）

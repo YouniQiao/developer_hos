@@ -2,7 +2,8 @@
 title: "自定义组件的基本用法"
 upstream_id: "harmonyos-references/js-components-custom-basic-usage"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:14.108053"
+content_hash: "a2e977f6a61e"
+synced_at: "2026-07-09T00:58:25.408032"
 ---
 
 # 自定义组件的基本用法
@@ -142,7 +143,7 @@ export default {
   },
 }
 ```
- ![](./img/zh-cn_image_0000002656470321.gif)
+ ![](./img/zh-cn_image_0000002631253958.gif)
 
 #### 自定义组件数据
 

@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-appgallery"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:22.612153"
+content_hash: "bdc559167b95"
+synced_at: "2026-07-09T01:01:15.828571"
 ---
 
 # ArkTS API错误码

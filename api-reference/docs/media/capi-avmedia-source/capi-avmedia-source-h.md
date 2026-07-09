@@ -2,7 +2,8 @@
 title: "avmedia_source.h"
 upstream_id: "harmonyos-references/capi-avmedia-source-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:38.243768"
+content_hash: "4c36540139cb"
+synced_at: "2026-07-09T01:00:41.970874"
 ---
 
 # avmedia_source.h

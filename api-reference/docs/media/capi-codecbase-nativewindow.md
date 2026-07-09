@@ -2,7 +2,8 @@
 title: "NativeWindow"
 upstream_id: "harmonyos-references/capi-codecbase-nativewindow"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:03.898384"
+content_hash: "44989cd642cc"
+synced_at: "2026-07-09T01:00:15.765226"
 ---
 
 # NativeWindow

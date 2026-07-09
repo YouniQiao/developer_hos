@@ -2,7 +2,8 @@
 title: "atomicService（融合场景化API）"
 upstream_id: "harmonyos-references/scenario-fusion-atomicservice"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:52.060378"
+content_hash: "553412519553"
+synced_at: "2026-07-09T01:01:39.073405"
 ---
 
 # atomicService（融合场景化API）
@@ -64,7 +65,7 @@ import { atomicService } from '@kit.ScenarioFusionKit';
 | screenSafeArea | [window.AvoidArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-i#avoidarea7) | 否 | 是 | 竖屏正方向下的安全区域。 |
 | language | string | 否 | 是 | 系统语言。 |
 | osFullName | string | 否 | 是 | 系统版本。 |
-| fontSizeSetting | number | 否 | 是 | 显示设备逻辑像素的密度，代表物理像素与逻辑像素的缩放系数，计算方式为：![](./img/zh-cn_image_0000002626071710.png) 该参数为浮点数，受[densityDPI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)范围限制，取值范围在[0.5，4.0]。一般取值1.0、3.0等，实际取值取决于不同设备提供的[densityDPI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)。 |
+| fontSizeSetting | number | 否 | 是 | 显示设备逻辑像素的密度，代表物理像素与逻辑像素的缩放系数，计算方式为：![](./img/zh-cn_image_0000002661733751.png) 该参数为浮点数，受[densityDPI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)范围限制，取值范围在[0.5，4.0]。一般取值1.0、3.0等，实际取值取决于不同设备提供的[densityDPI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)。 |
 | sdkApiVersion | number | 否 | 是 | 系统软件API版本。 |
 | bluetoothEnabled | boolean | 否 | 是 | 蓝牙系统开关。true表示开关已打开，false表示开关已关闭。 |
 | locationEnabled | boolean | 否 | 是 | 地理位置的系统开关。true表示开关已打开，false表示开关已关闭。 |
@@ -173,7 +174,7 @@ type SystemInfoType = 'brand' | 'deviceModel' | 'screenWidth' | 'screenHeight' |
 | 'screenSafeArea' | 竖屏正方向下的安全区域。 |
 | 'language' | 系统语言。 |
 | 'osFullName' | 系统版本。 |
-| 'fontSizeSetting' | 显示设备逻辑像素的密度，代表物理像素与逻辑像素的缩放系数，计算方式为：![](./img/zh-cn_image_0000002656470987.png) 该参数为浮点数，受[densityDPI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)范围限制，取值范围在[0.5，4.0]。一般取值1.0、3.0等，实际取值取决于不同设备提供的[densityDPI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)。 |
+| 'fontSizeSetting' | 显示设备逻辑像素的密度，代表物理像素与逻辑像素的缩放系数，计算方式为：![](./img/zh-cn_image_0000002631254632.png) 该参数为浮点数，受[densityDPI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)范围限制，取值范围在[0.5，4.0]。一般取值1.0、3.0等，实际取值取决于不同设备提供的[densityDPI](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-display#display)。 |
 | 'sdkApiVersion' | 系统软件API版本。 |
 | 'bluetoothEnabled' | 蓝牙系统开关。 |
 | 'locationEnabled' | 地理位置的系统开关。 |
@@ -419,6 +420,8 @@ showFollowComponent(ctx: UIContext, params: FollowComponentParams, callback: Fol
 
 错误码：
 
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-scenario-fusion-arkts-api)。
+
 | 错误码ID | 错误信息 |
 | --- | --- |
 | [801](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section801-该设备不支持此api) | Capability not supported. |
@@ -440,9 +443,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 struct Index {
   aboutToAppear(): void {
     // 一键关注组件。
-    // pubId: 服务号id，此处以官方小助手服务号id为例。
+    // pubId: 服务号ID，此处以官方小助手服务号ID为例。
     const pubId: string = '0cca1c645526449fb89d4a83e3bc25df';
-    // channelId：渠道id，长度限制32，只能是数字或字母组成；offset：设置关注组件的位置坐标。
+    // channelId：渠道ID，长度限制32，只能是数字或字母组成；offset：设置关注组件的位置坐标。
     const params: atomicService.FollowComponentParams =
       { pubId: pubId, channelId: '', offset: { x: 0, y: 300 } };
     // 点击关注按钮的关注结果回调。
@@ -463,7 +466,7 @@ struct Index {
     }
     // 展示关注组件。
     atomicService.showFollowComponent(this.getUIContext(), params, callbacks).catch((error: BusinessError<void>) => {
-      hilog.error(0x0000, 'testTag', 'Failed to show the Follow Component, failReason: %{public}d %{public}s:', error.code,
+      hilog.error(0x0000, 'testTag', 'Failed to show the Follow Component, failReason: %{public}d %{public}s', error.code,
         error.message);
     })
   }

@@ -2,7 +2,8 @@
 title: "ArkUI_RenderNodeUtils"
 upstream_id: "harmonyos-references/capi-arkui-rendernodeutils"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:32.571453"
+content_hash: "758c2f19620c"
+synced_at: "2026-07-09T00:58:32.467594"
 ---
 
 # ArkUI_RenderNodeUtils

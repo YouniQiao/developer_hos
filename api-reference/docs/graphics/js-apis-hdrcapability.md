@@ -2,7 +2,8 @@
 title: "@ohos.graphics.hdrCapability (HDR能力)"
 upstream_id: "harmonyos-references/js-apis-hdrcapability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:55.477831"
+content_hash: "e0f96ddf2bac"
+synced_at: "2026-07-09T01:00:53.397947"
 ---
 
 # @ohos.graphics.hdrCapability (HDR能力)

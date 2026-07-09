@@ -2,7 +2,8 @@
 title: "trace.h"
 upstream_id: "harmonyos-references/capi-trace-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:48.052787"
+content_hash: "a34e144a9549"
+synced_at: "2026-07-09T01:00:04.338689"
 ---
 
 # trace.h

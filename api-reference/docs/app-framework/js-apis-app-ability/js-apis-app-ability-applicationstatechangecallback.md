@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.ApplicationStateChangeCallback (应用进程状态变化监听器)"
 upstream_id: "harmonyos-references/js-apis-app-ability-applicationstatechangecallback"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:45.600859"
+content_hash: "37384d270623"
+synced_at: "2026-07-09T00:57:03.212662"
 ---
 
 # @ohos.app.ability.ApplicationStateChangeCallback (应用进程状态变化监听器)

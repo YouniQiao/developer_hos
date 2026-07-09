@@ -2,7 +2,8 @@
 title: "@ohos.nfc.tag (标准NFC-Tag)"
 upstream_id: "harmonyos-references/js-apis-nfctag"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:47.030191"
+content_hash: "26cad6468a84"
+synced_at: "2026-07-09T00:59:24.457751"
 ---
 
 # @ohos.nfc.tag (标准NFC-Tag)

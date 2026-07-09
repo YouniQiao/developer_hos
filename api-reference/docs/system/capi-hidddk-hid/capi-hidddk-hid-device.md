@@ -2,7 +2,8 @@
 title: "Hid_Device"
 upstream_id: "harmonyos-references/capi-hidddk-hid-device"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:32.397539"
+content_hash: "60dfa58af9c5"
+synced_at: "2026-07-09T00:59:55.611266"
 ---
 
 # Hid_Device

@@ -2,7 +2,8 @@
 title: "Node-API"
 upstream_id: "harmonyos-references/napi"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:04.761436"
+content_hash: "2ad76d54f651"
+synced_at: "2026-07-09T01:01:49.382365"
 ---
 
 # Node-API

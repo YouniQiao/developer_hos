@@ -2,7 +2,8 @@
 title: "xeg_gles_spatial_upscale.h"
 upstream_id: "harmonyos-references/xengine-kit-xeg-gles-spatial-upscale-8h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:15.588128"
+content_hash: "4a998a0d89f0"
+synced_at: "2026-07-09T01:01:09.305480"
 ---
 
 # xeg_gles_spatial_upscale.h

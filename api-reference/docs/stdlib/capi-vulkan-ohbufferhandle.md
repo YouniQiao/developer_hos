@@ -2,7 +2,8 @@
 title: "OHBufferHandle"
 upstream_id: "harmonyos-references/capi-vulkan-ohbufferhandle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:06.624894"
+content_hash: "542abd0f089b"
+synced_at: "2026-07-09T01:01:50.067574"
 ---
 
 # OHBufferHandle

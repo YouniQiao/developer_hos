@@ -2,7 +2,8 @@
 title: "ScsiPeripheral_Response"
 upstream_id: "harmonyos-references/capi-scsiperipheralddk-scsiperipheral-response"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:33.819664"
+content_hash: "221e27d858a8"
+synced_at: "2026-07-09T00:59:56.288220"
 ---
 
 # ScsiPeripheral_Response

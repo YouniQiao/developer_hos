@@ -2,7 +2,8 @@
 title: "HandwriteComponent（手写套件组件）"
 upstream_id: "harmonyos-references/pen-handwritecomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:38.907794"
+content_hash: "30ef09393774"
+synced_at: "2026-07-09T00:59:58.945931"
 ---
 
 # HandwriteComponent（手写套件组件）
@@ -10,8 +11,6 @@ synced_at: "2026-06-24T20:51:38.907794"
 本模块提供手写套件组件，组件包含画布和手写工具栏，集成之后可快速实现手写能力。
 
 需要提供手写画布功能入口和回调，画布将在初始化、加载和保存动作完成时触发回调，可以在回调中自定义应用的行为。
-
-系统能力： SystemCapability.Stylus.Handwrite
 
 起始版本： 5.0.0(12)
 

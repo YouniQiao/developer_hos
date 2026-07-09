@@ -2,7 +2,8 @@
 title: "公共接口"
 upstream_id: "harmonyos-references/wallet-rest-api-public"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:54.284351"
+content_hash: "76f0dcf22365"
+synced_at: "2026-07-09T01:01:39.960276"
 ---
 
 # 公共接口

@@ -2,7 +2,8 @@
 title: "DataAbilityOperation"
 upstream_id: "harmonyos-references/js-apis-inner-ability-dataabilityoperation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:49.328618"
+content_hash: "e048c3c2a2e4"
+synced_at: "2026-07-09T00:57:06.299469"
 ---
 
 # DataAbilityOperation

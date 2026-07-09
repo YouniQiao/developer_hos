@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.abilityDelegatorRegistry (AbilityDelegatorRegistry)"
 upstream_id: "harmonyos-references/js-apis-app-ability-abilitydelegatorregistry"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:50.711423"
+content_hash: "37de8a1b70ee"
+synced_at: "2026-07-09T01:00:06.173042"
 ---
 
 # @ohos.app.ability.abilityDelegatorRegistry (AbilityDelegatorRegistry)

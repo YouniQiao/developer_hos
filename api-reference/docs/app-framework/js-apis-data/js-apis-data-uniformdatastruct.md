@@ -2,7 +2,8 @@
 title: "@ohos.data.uniformDataStruct (标准化数据结构)"
 upstream_id: "harmonyos-references/js-apis-data-uniformdatastruct"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:04.262242"
+content_hash: "35c0f8688174"
+synced_at: "2026-07-09T00:57:16.727668"
 ---
 
 # @ohos.data.uniformDataStruct (标准化数据结构)

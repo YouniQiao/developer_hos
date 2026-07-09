@@ -2,7 +2,8 @@
 title: "native_huks_api.h"
 upstream_id: "harmonyos-references/capi-native-huks-api-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:43.227000"
+content_hash: "ef72e1fec827"
+synced_at: "2026-07-09T00:59:21.559980"
 ---
 
 # native_huks_api.h

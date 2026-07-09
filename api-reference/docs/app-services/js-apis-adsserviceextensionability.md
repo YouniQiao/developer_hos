@@ -2,7 +2,8 @@
 title: "@ohos.advertising.AdsServiceExtensionAbility(广告扩展服务)"
 upstream_id: "harmonyos-references/js-apis-adsserviceextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:21.555445"
+content_hash: "5912254a3427"
+synced_at: "2026-07-09T01:01:14.232263"
 ---
 
 # @ohos.advertising.AdsServiceExtensionAbility(广告扩展服务)

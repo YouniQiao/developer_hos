@@ -2,7 +2,8 @@
 title: "HiAppEvent_AppEventInfo"
 upstream_id: "harmonyos-references/capi-hiappevent-hiappevent-appeventinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:48.228810"
+content_hash: "9e1440b9f328"
+synced_at: "2026-07-09T01:00:04.221205"
 ---
 
 # HiAppEvent_AppEventInfo
@@ -30,4 +31,4 @@ typedef struct HiAppEvent_AppEventInfo {...} HiAppEvent_AppEventInfo
 | const char* domain | 事件领域。表示事件所属的业务领域或功能模块，用于事件分类和管理。 |
 | const char* name | 事件名称。与domain配合使用唯一标识具体的事件。 |
 | enum [EventType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-hiappevent-h#eventtype) type | 事件类型。 |
-| const char* params | json格式字符串类型的事件参数列表。 |
+| const char* params | JSON格式字符串类型的事件参数列表。 |

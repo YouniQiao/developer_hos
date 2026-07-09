@@ -2,7 +2,8 @@
 title: "图像效果"
 upstream_id: "harmonyos-references/ts-universal-attributes-image-effect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:40.125754"
+content_hash: "d8c04c9dc01b"
+synced_at: "2026-07-09T00:57:40.095023"
 ---
 
 # 图像效果
@@ -27,7 +28,7 @@ blur(value: number, options?: BlurOptions): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 当前组件添加内容模糊效果，入参为模糊半径，模糊半径越大越模糊，为0时不模糊。 |
+| value | number | 是 | 当前组件添加内容模糊效果，入参为模糊半径，模糊半径越大越模糊，value值小于等于0时不模糊。 |
 | options11+ | [BlurOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-foreground-blur-style#bluroptions11) | 否 | 灰阶模糊参数。对图像中的黑白色进行色阶调整，使其趋于灰色更为柔和美观，对图像中的彩色调整没有效果。 默认值：grayscale: [0,0] |
 
 返回值：
@@ -54,7 +55,7 @@ blur(blurRadius: Optional<number>, options?: BlurOptions): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| blurRadius | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 当前组件添加内容模糊效果，入参为模糊半径，模糊半径越大越模糊，为0时不模糊。 当blurRadius的值为undefined时，维持之前取值。 |
+| blurRadius | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 当前组件添加内容模糊效果，入参为模糊半径，模糊半径越大越模糊，blurRadius值小于等于0时不模糊。 当blurRadius的值为undefined时，维持之前取值。从未设置该属性时，默认值为0，表示不模糊。 |
 | options | [BlurOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-foreground-blur-style#bluroptions11) | 否 | 灰阶模糊参数。对图像中的黑白色进行色阶调整，使其趋于灰色更为柔和美观，对图像中的彩色调整没有效果。 默认值：grayscale: [0,0] |
 
 返回值：
@@ -81,7 +82,7 @@ blur(blurRadius: Optional<number>, options?: BlurOptions, sysOptions?: SystemAda
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| blurRadius | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 当前组件添加内容模糊效果，入参为模糊半径，模糊半径越大越模糊，为0时不模糊。 当blurRadius的值为undefined时，维持之前取值。 |
+| blurRadius | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 当前组件添加内容模糊效果，入参为模糊半径，模糊半径越大越模糊，blurRadius值小于等于0时不模糊。 当blurRadius的值为undefined时，维持之前取值。从未设置该属性时，默认值为0，表示不模糊。 |
 | options | [BlurOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-foreground-blur-style#bluroptions11) | 否 | 灰阶模糊参数。对图像中的黑白色进行色阶调整，使其趋于灰色更为柔和美观，对图像中的彩色调整没有效果。 默认值：grayscale: [0,0] |
 | sysOptions | [SystemAdaptiveOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#systemadaptiveoptions19) | 否 | 系统自适应调节参数。 默认值：{ disableSystemAdaptation: false } |
 
@@ -582,7 +583,7 @@ linearGradientBlur(blurRadius: Optional<number>, options: Optional<LinearGradien
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| blurRadius | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 为模糊半径，模糊半径越大越模糊，为0时不模糊。 取值范围：[0, 1000] 当blurRadius的值为undefined时，恢复为渐变模糊为0的效果。 |
+| blurRadius | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 模糊半径，模糊半径越大越模糊，为0时不模糊。 取值范围：[0, 1000] 当blurRadius的值为undefined时，恢复为渐变模糊为0的效果。 |
 | options | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | 设置线性渐变模糊效果。 线性渐变参数，包含模糊程度和模糊位置数组fractionStops，及渐变模糊方向direction。 |
 
 返回值：
@@ -1168,7 +1169,7 @@ freeze(freeze: Optional<boolean>): T
 
 systemMaterial(material: SystemUiMaterial | undefined): T
 
-设置组件的系统材质。不同系统材质对应不同的属性影响效果，该接口可以影响背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)、材质层滤镜效果，影响的属性与设备算力档位相关，参考[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial)。使用示例请参考[示例1（设置沉浸式系统材质）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#示例1设置沉浸式系统材质)。
+设置组件的系统材质。不同系统材质对应不同的属性影响效果，该接口可以影响背景色[backgroundColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-background#backgroundcolor)、边框颜色[borderColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#bordercolor)、边框宽度[borderWidth](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-border#borderwidth)、阴影[shadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-image-effect#shadow)、材质层滤镜[materialFilter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-filter-effect#materialfilter23)效果，影响的属性与设备算力档位相关，参考[ImmersiveMaterial](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#immersivematerial)。使用示例请参考[示例1（设置沉浸式系统材质）](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uimaterial#示例1设置沉浸式系统材质)。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -1312,7 +1313,7 @@ struct ImageEffectsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070274.png)
+ ![](./img/zh-cn_image_0000002631413066.png)
 
 #### [h2]示例2（设置组件线性渐变模糊效果）
 
@@ -1341,7 +1342,7 @@ struct ImageExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469551.png)
+ ![](./img/zh-cn_image_0000002661732295.png)
 
 #### [h2]示例3（设置离屏渲染效果）
 
@@ -1393,7 +1394,7 @@ struct RenderGroupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349599.png)
+ ![](./img/zh-cn_image_0000002631253174.png)
 
 #### [h2]示例4（当前组件内容与下方画布内容混合）
 
@@ -1435,7 +1436,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230186.png)
+ ![](./img/zh-cn_image_0000002661612357.png)
 
 #### [h2]示例5（前景智能取反色）
 
@@ -1474,7 +1475,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070276.png)
+ ![](./img/zh-cn_image_0000002631413068.png)
 
 #### [h2]示例6（设置同层阴影不重叠效果）
 
@@ -1569,7 +1570,7 @@ struct UseShadowBatchingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469553.png)
+ ![](./img/zh-cn_image_0000002661732297.png)
 
 #### [h2]示例7（设置组件图像球面效果）
 
@@ -1601,11 +1602,11 @@ struct SphericalEffectExample {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002656349601.png)
+![](./img/zh-cn_image_0000002631253176.png)
 
 去掉sphericalEffect的设置，效果如下：
 
-![](./img/zh-cn_image_0000002626230188.png)
+![](./img/zh-cn_image_0000002661612359.png)
 
 #### [h2]示例8（设置组件图像渐亮效果）
 
@@ -1631,15 +1632,15 @@ struct LightUpExample {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002626070278.png)
+![](./img/zh-cn_image_0000002631413070.png)
 
 修改lightUpEffect参数值为0.2：
 
-![](./img/zh-cn_image_0000002656469555.png)
+![](./img/zh-cn_image_0000002661732299.png)
 
 去掉lightUpEffect的设置，效果如下：
 
-![](./img/zh-cn_image_0000002656349603.png)
+![](./img/zh-cn_image_0000002631253178.png)
 
 #### [h2]示例9（设置组件图像边缘像素扩展效果）
 
@@ -1671,11 +1672,11 @@ struct PixelStretchExample {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002626230190.png)
+![](./img/zh-cn_image_0000002661612361.png)
 
 去掉pixelStretchEffect的设置，原图效果如下：
 
-![](./img/zh-cn_image_0000002626070280.png)
+![](./img/zh-cn_image_0000002631413072.png)
 
 #### [h2]示例10（系统导航条智能反色）
 
@@ -1704,4 +1705,4 @@ struct Index {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002656469557.png)
+![](./img/zh-cn_image_0000002661732301.png)

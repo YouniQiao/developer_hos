@@ -2,7 +2,8 @@
 title: "Interface (MassPointOverlay)"
 upstream_id: "harmonyos-references/map-map-masspointoverlay"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:34.753491"
+content_hash: "b9505260d302"
+synced_at: "2026-07-09T01:01:26.305601"
 ---
 
 # Interface (MassPointOverlay)

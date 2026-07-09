@@ -2,7 +2,8 @@
 title: "ArkUI_SystemFontStyleEvent"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-systemfontstyleevent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:54.019357"
+content_hash: "24f0e2f7aea9"
+synced_at: "2026-07-09T00:58:44.139636"
 ---
 
 # ArkUI_SystemFontStyleEvent

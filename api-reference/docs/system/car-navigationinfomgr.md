@@ -2,7 +2,8 @@
 title: "navigationInfoMgr（导航信息管理）"
 upstream_id: "harmonyos-references/car-navigationinfomgr"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:26.022271"
+content_hash: "5e78534bc204"
+synced_at: "2026-07-09T00:59:53.705138"
 ---
 
 # navigationInfoMgr（导航信息管理）
@@ -328,7 +329,7 @@ getNavigationController(): NavigationController
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-car)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -377,7 +378,7 @@ updateNavigationStatus(navigationStatus: NavigationStatus): void
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-car)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-car)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -464,7 +465,7 @@ updateNavigationMetadata(navigationMetadata: NavigationMetadata): void
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-car)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-car)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -534,7 +535,7 @@ registerSystemNavigationListener(listener: SystemNavigationListener): void
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-car)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)和[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-car)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -605,7 +606,7 @@ unregisterSystemNavigationListener(): void
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS API错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-car)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |

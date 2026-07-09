@@ -2,7 +2,8 @@
 title: "OH_AudioStreamInfo"
 upstream_id: "harmonyos-references/capi-ohaudio-oh-audiostreaminfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:58.498489"
+content_hash: "32f46271c479"
+synced_at: "2026-07-09T01:00:11.528832"
 ---
 
 # OH_AudioStreamInfo

@@ -2,12 +2,25 @@
 title: "IAP"
 upstream_id: "harmonyos-references/iap-iap"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:28.091483"
+content_hash: "4bcda2feae2e"
+synced_at: "2026-07-09T01:01:21.536333"
 ---
 
 # IAP
 
-本模块提供应用内支付的能力。
+应用内购买（In-App Purchase，IAP）模块为HarmonyOS应用提供数字商品（虚拟商品）的全链路支付能力，包括商品查询、购买、发货确认、订阅管理及退款等。
+
+当应用需要向用户销售虚拟商品（如游戏道具、会员权益）或提供订阅服务时，可接入本模块。在发起商品查询或购买前，建议先调用[iap.queryEnvironmentStatus](#iapqueryenvironmentstatus)检查当前用户账号所在地区是否支持IAP服务，以避免后续流程异常。
+
+开发者可通过本模块实现以下功能：
+
+- 查询商品详情：获取商品名称、价格、描述等信息。
+- 发起购买：调起支付收银台完成商品购买。
+- 确认发货：在商品成功交付后调用接口完成交易确认。
+- 查询已购记录：获取用户当前已拥有的商品或权益。
+- 订阅管理：查看用户订阅列表、处理退订。
+- 退款申请：发起退款流程。
+- 沙盒测试：在沙盒环境下模拟支付流程，完成端到端测试。
 
 模型约束： 本模块接口仅可在Stage模型下使用。
 
@@ -25,18 +38,16 @@ import { iap } from '@kit.IAPKit';
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从版本5.0.0(12)开始，该接口支持在元服务中使用。
-
 系统能力： SystemCapability.Payment.IAP
 
 起始版本： 4.0.0(10)
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| CONSUMABLE | 0 | 消耗型商品。 |
-| NONCONSUMABLE | 1 | 非消耗型商品。 |
-| AUTORENEWABLE | 2 | 自动续期订阅商品。 该属性不支持Wearable设备。 **起始版本：** 4.1.0(11) |
-| NONRENEWABLE | 3 | 非续期订阅商品。 该属性不支持Wearable设备。 **元服务API：** 从版本5.0.2(14)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.2(14) |
+| CONSUMABLE | 0 | 消耗型商品。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| NONCONSUMABLE | 1 | 非消耗型商品。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| AUTORENEWABLE | 2 | 自动续期订阅商品。 该属性不支持Wearable设备。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 **起始版本：** 4.1.0(11) |
+| NONRENEWABLE | 3 | 非续期订阅商品。 该属性不支持Wearable设备。 **元服务API：** 从API版本5.0.2(14)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.2(14) |
 
 #### PurchaseQueryType
 
@@ -82,18 +93,16 @@ import { iap } from '@kit.IAPKit';
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从版本5.0.0(12)开始，该接口支持在元服务中使用。
-
 系统能力： SystemCapability.Payment.IAP
 
 起始版本： 4.1.0(11)
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| FREE_TRIAL | 1 | 免费试用。 |
-| PAY_AS_YOU_GO | 2 | 随用随付。 |
-| PAY_UP_FRONT | 3 | 提前支付。 |
-| SINGLE_PROMOTION | 5 | 单次优惠，仅适用于消耗型/非消耗型/非续期订阅商品。 **元服务API：** 从版本5.0.5(17)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.5(17) |
+| FREE_TRIAL | 1 | 免费试用。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| PAY_AS_YOU_GO | 2 | 随用随付。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| PAY_UP_FRONT | 3 | 提前支付。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| SINGLE_PROMOTION | 5 | 单次优惠，仅适用于消耗型/非消耗型/非续期订阅商品。 **元服务API：** 从API版本5.0.5(17)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.5(17) |
 
 #### OfferType
 
@@ -118,35 +127,33 @@ import { iap } from '@kit.IAPKit';
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从版本5.0.0(12)开始，该接口支持在元服务中使用。
-
 系统能力： SystemCapability.Payment.IAP
 
 起始版本： 4.1.0(11)
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| USER_CANCELED | 1001860000 | 用户取消当前操作。 |
-| SYSTEM_ERROR | 1001860001 | 通用失败错误码。 |
-| APP_NOT_AUTHORIZED | 1001860002 | 应用未被授权访问接口。 |
-| INVALID_PRODUCT | 1001860003 | 无效的商品信息。 |
-| FREQUENT_CALLS | 1001860004 | 接口访问过频。 |
-| NETWORK_ERROR | 1001860005 | 网络连接异常。 |
-| PRODUCT_TERRITORY_NOT_SUPPORTED | 1001860007 | 商品所属的应用未在指定国家/地区上架。 |
-| ACCOUNT_NOT_LOGGED_IN | 1001860050 | 未登录华为账号。 |
-| PRODUCT_OWNED | 1001860051 | 由于已经拥有该商品，购买失败。 |
-| PURCHASE_NOT_PAID | 1001860052 | 由于未拥有该商品，发货失败。 |
-| PURCHASE_FINISHED | 1001860053 | 此次购买已经完成发货，无需重复发货。 |
-| ACCOUNT_TERRITORY_NOT_SUPPORTED | 1001860054 | 用户账号所在服务地暂不支持IAP。 |
-| USER_NOT_ALLOWED | 1001860056 | 用户交易被拒绝。 |
-| APP_NOT_DEBUG | 1001860057 | 当前应用不是debug签名的应用。 **起始版本：** 5.0.0(12) |
-| ACCOUNT_NOT_TEST | 1001860058 | 华为账号不是沙盒测试账号。 **起始版本：** 5.0.0(12) |
-| INVALID_PROMOTIONAL_OFFER | 1001860059 | 无效的优惠信息。 **起始版本：** 5.0.0(12) |
-| INVALID_PURCHASE_SIGNATURE | 1001860060 | 无效的签名信息。 **起始版本：** 5.0.0(12) |
-| PURCHASE_ALREADY_REFUNDED | 1001860061 | 商品已退款或退款中。 **元服务API：** 从版本5.0.3(15)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.3(15) |
-| REFUND_NOT_ALLOWED | 1001860062 | 不允许退款。 **元服务API：** 从版本5.0.3(15)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.3(15) |
-| PURCHASE_NOT_FOUND | 1001860064 | 在登录的华为账号上找不到该笔订单。 **元服务API：** 从版本6.1.0(23)开始，该接口支持在元服务中使用。 **起始版本：** 6.1.0(23) |
-| OPERATION_NOT_SUPPORTED | 1001860065 | 不支持开票操作。 **元服务API：** 从版本6.1.0(23)开始，该接口支持在元服务中使用。 **起始版本：** 6.1.0(23) |
+| USER_CANCELED | 1001860000 | 用户取消当前操作。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| SYSTEM_ERROR | 1001860001 | 通用失败错误码。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| APP_NOT_AUTHORIZED | 1001860002 | 应用未被授权访问接口。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| INVALID_PRODUCT | 1001860003 | 无效的商品信息。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| FREQUENT_CALLS | 1001860004 | 接口访问过频。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| NETWORK_ERROR | 1001860005 | 网络连接异常。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| PRODUCT_TERRITORY_NOT_SUPPORTED | 1001860007 | 商品所属的应用未在指定国家/地区上架。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| ACCOUNT_NOT_LOGGED_IN | 1001860050 | 未登录华为账号。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| PRODUCT_OWNED | 1001860051 | 由于已经拥有该商品，购买失败。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| PURCHASE_NOT_PAID | 1001860052 | 由于未拥有该商品，发货失败。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| PURCHASE_FINISHED | 1001860053 | 此次购买已经完成发货，无需重复发货。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| ACCOUNT_TERRITORY_NOT_SUPPORTED | 1001860054 | 用户账号所在服务地暂不支持IAP。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| USER_NOT_ALLOWED | 1001860056 | 用户交易被拒绝。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| APP_NOT_DEBUG | 1001860057 | 当前应用不是debug签名的应用。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.0(12) |
+| ACCOUNT_NOT_TEST | 1001860058 | 华为账号不是沙盒测试账号。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.0(12) |
+| INVALID_PROMOTIONAL_OFFER | 1001860059 | 无效的优惠信息。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.0(12) |
+| INVALID_PURCHASE_SIGNATURE | 1001860060 | 无效的签名信息。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.0(12) |
+| PURCHASE_ALREADY_REFUNDED | 1001860061 | 商品已退款或退款中。 **元服务API：** 从API版本5.0.3(15)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.3(15) |
+| REFUND_NOT_ALLOWED | 1001860062 | 不允许退款。 **元服务API：** 从API版本5.0.3(15)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.3(15) |
+| PURCHASE_NOT_FOUND | 1001860064 | 在登录的华为账号上找不到该笔订单。 **元服务API：** 从API版本6.1.0(23)开始，该接口支持在元服务中使用。 **起始版本：** 6.1.0(23) |
+| OPERATION_NOT_SUPPORTED | 1001860065 | 不支持开票操作。 **元服务API：** 从API版本6.1.0(23)开始，该接口支持在元服务中使用。 **起始版本：** 6.1.0(23) |
 
 #### WindowScreenMode
 
@@ -218,10 +225,10 @@ queryEnvironmentStatus(context: common.Context): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. **适用版本：** 6.1.0(23)+ |
 | 1001860000 | The operation was canceled by the user. |
 | 1001860001 | System internal error. |
-| 1001860002 | The application is not authorized. |
+| 1001860002 | The application is not authorized. **适用版本：** 5.0.0(12)+ |
 | 1001860004 | Too frequent API calls. |
 | 1001860005 | Network connection error. |
 | 1001860050 | The HUAWEI ID is not signed in. |
@@ -279,7 +286,7 @@ queryEnvironmentStatus(context: common.Context, callback: AsyncCallback<void>): 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. **适用版本：** 6.1.0(23)+ |
 | 1001860000 | The operation was canceled by the user. |
 | 1001860001 | System internal error. |
 | 1001860004 | Too frequent API calls. |
@@ -347,7 +354,7 @@ queryProducts(context: common.UIAbilityContext, parameter: QueryProductsParamete
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. **适用版本：** 6.1.0(23)+ |
 | 1001860001 | System internal error. |
 | 1001860002 | The application is not authorized. |
 | 1001860003 | Invalid product information. |
@@ -417,7 +424,7 @@ queryProducts(context: common.UIAbilityContext, parameter: QueryProductsParamete
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. **适用版本：** 6.1.0(23)+ |
 | 1001860001 | System internal error. |
 | 1001860002 | The application is not authorized. |
 | 1001860003 | Invalid product information. |
@@ -495,7 +502,7 @@ queryProducts(context: common.UIAbilityContext, productIds: string[]): Promise<A
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. **适用版本：** 6.1.0(23)+ |
 | 1001860001 | System internal error. |
 | 1001860002 | The application is not authorized. |
 | 1001860003 | Invalid product information. |
@@ -726,7 +733,7 @@ createPurchase(context: common.UIAbilityContext, parameter: PurchaseParameter): 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. **适用版本：** 6.1.0(23)+ |
 | 1001860000 | The operation was canceled by the user. |
 | 1001860001 | System internal error. |
 | 1001860002 | The application is not authorized. |
@@ -737,8 +744,8 @@ createPurchase(context: common.UIAbilityContext, parameter: PurchaseParameter): 
 | 1001860051 | Failed to purchase a product because the user already owns the product. |
 | 1001860054 | The country or region of the signed-in HUAWEI ID does not support IAP. |
 | 1001860056 | The user is not allowed to make purchase. |
-| 1001860059 | Invalid promotional offer id. |
-| 1001860060 | Invalid purchase signature. |
+| 1001860059 | Invalid promotional offer id. **适用版本：** 5.0.0(12)+ |
+| 1001860060 | Invalid purchase signature. **适用版本：** 5.0.0(12)+ |
 
 示例：
 
@@ -803,7 +810,7 @@ createPurchase(context: common.UIAbilityContext, parameter: PurchaseParameter, c
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. **适用版本：** 6.1.0(23)+ |
 | 1001860000 | The operation was canceled by the user. |
 | 1001860001 | System internal error. |
 | 1001860002 | The application is not authorized. |
@@ -814,8 +821,8 @@ createPurchase(context: common.UIAbilityContext, parameter: PurchaseParameter, c
 | 1001860051 | Failed to purchase a product because the user already owns the product. |
 | 1001860054 | The country or region of the signed-in HUAWEI ID does not support IAP. |
 | 1001860056 | The user is not allowed to make purchase. |
-| 1001860059 | Invalid promotional offer id. |
-| 1001860060 | Invalid purchase signature. |
+| 1001860059 | Invalid promotional offer id. **适用版本：** 5.0.0(12)+ |
+| 1001860060 | Invalid purchase signature. **适用版本：** 5.0.0(12)+ |
 
 示例：
 
@@ -1032,7 +1039,7 @@ finishPurchase(context: common.UIAbilityContext, parameter: FinishPurchaseParame
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. **适用版本：** 6.1.0(23)+ |
 | 1001860001 | System internal error. |
 | 1001860002 | The application is not authorized. |
 | 1001860004 | Too frequent API calls. |
@@ -1102,7 +1109,7 @@ finishPurchase(context: common.UIAbilityContext, parameter: FinishPurchaseParame
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. **适用版本：** 6.1.0(23)+ |
 | 1001860001 | System internal error. |
 | 1001860002 | The application is not authorized. |
 | 1001860004 | Too frequent API calls. |
@@ -1474,7 +1481,7 @@ queryPurchases(context: common.UIAbilityContext, parameter: QueryPurchasesParame
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. **适用版本：** 6.1.0(23)+ |
 | 1001860001 | System internal error. |
 | 1001860002 | The application is not authorized. |
 | 1001860004 | Too frequent API calls. |
@@ -1542,7 +1549,7 @@ queryPurchases(context: common.UIAbilityContext, parameter: QueryPurchasesParame
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. **适用版本：** 6.1.0(23)+ |
 | 1001860001 | System internal error. |
 | 1001860002 | The application is not authorized. |
 | 1001860004 | Too frequent API calls. |
@@ -1617,7 +1624,7 @@ showManagedSubscriptions(context: common.Context, uiParameter: UIWindowParameter
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. **适用版本：** 5.1.0(18)+ |
 | 1001860001 | System internal error. |
 | 1001860002 | The application is not authorized. |
 | 1001860004 | Too frequent API calls. |
@@ -1686,7 +1693,7 @@ isSandboxActivated(context: common.Context): Promise<boolean>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. |
-| 801 | Capability not supported. Failed to call the API due to limited device capabilities. |
+| 801 | Capability not supported. Failed to call the API due to limited device capabilities. **适用版本：** 6.1.0(23)+ |
 | 1001860001 | System internal error. |
 | 1001860002 | The application is not authorized. |
 | 1001860004 | Too frequent API calls. |

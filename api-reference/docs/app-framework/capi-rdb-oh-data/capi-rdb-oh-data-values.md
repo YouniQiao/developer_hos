@@ -2,7 +2,8 @@
 title: "OH_Data_Values"
 upstream_id: "harmonyos-references/capi-rdb-oh-data-values"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:09.482152"
+content_hash: "1e28cae8e992"
+synced_at: "2026-07-09T00:57:21.070658"
 ---
 
 # OH_Data_Values

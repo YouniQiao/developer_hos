@@ -2,7 +2,8 @@
 title: "OH_Http_Interceptor_Response"
 upstream_id: "harmonyos-references/capi-netstack-http-interceptor-response"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:55.904089"
+content_hash: "6aef01b34091"
+synced_at: "2026-07-09T00:59:30.868761"
 ---
 
 # OH_Http_Interceptor_Response

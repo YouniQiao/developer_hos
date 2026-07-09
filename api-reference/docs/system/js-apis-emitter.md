@@ -2,7 +2,8 @@
 title: "@ohos.events.emitter (Emitter)"
 upstream_id: "harmonyos-references/js-apis-emitter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:08.366372"
+content_hash: "9f3a4d4b71ae"
+synced_at: "2026-07-09T00:59:41.694437"
 ---
 
 # @ohos.events.emitter (Emitter)

@@ -2,7 +2,8 @@
 title: "textRecognition（文字识别）"
 upstream_id: "harmonyos-references/core-vision-text-recognition-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:56.690509"
+content_hash: "dce9346ca7f3"
+synced_at: "2026-07-09T01:01:41.847643"
 ---
 
 # textRecognition（文字识别）

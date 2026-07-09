@@ -2,7 +2,8 @@
 title: "NetworkBoost_NetworkQosArray"
 upstream_id: "harmonyos-references/network-boost-c-struct-network_qos_array"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:57.983985"
+content_hash: "5f962f4e9b8f"
+synced_at: "2026-07-09T00:59:32.639746"
 ---
 
 # NetworkBoost_NetworkQosArray

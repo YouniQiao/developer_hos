@@ -2,7 +2,8 @@
 title: "@ohos.dlpPermission (数据防泄漏)"
 upstream_id: "harmonyos-references/js-apis-dlppermission"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:33.965540"
+content_hash: "38312a103098"
+synced_at: "2026-07-09T00:59:14.839139"
 ---
 
 # @ohos.dlpPermission (数据防泄漏)

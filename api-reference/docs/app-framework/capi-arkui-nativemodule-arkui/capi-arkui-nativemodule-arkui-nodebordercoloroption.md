@@ -2,7 +2,8 @@
 title: "ArkUI_NodeBorderColorOption"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-nodebordercoloroption"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:57.784173"
+content_hash: "795907b5006f"
+synced_at: "2026-07-09T00:58:46.686059"
 ---
 
 # ArkUI_NodeBorderColorOption

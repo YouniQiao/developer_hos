@@ -2,7 +2,8 @@
 title: "JS语法参考"
 upstream_id: "harmonyos-references/js-lite-framework-syntax-js"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:16.449909"
+content_hash: "0fdb19401b08"
+synced_at: "2026-07-09T00:58:26.616128"
 ---
 
 # JS语法参考

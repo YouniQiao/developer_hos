@@ -2,7 +2,8 @@
 title: "ArkUI_NodeAttributeType（动效、视效相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-animator"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:37.796239"
+content_hash: "8ee2faaba577"
+synced_at: "2026-07-09T00:58:34.971159"
 ---
 
 # ArkUI_NodeAttributeType（动效、视效相关属性）
@@ -1331,7 +1332,7 @@ NODE_PIXEL_ROUND = 109
 
 | 参数项 | 描述 |
 | --- | --- |
-| .object | 组件的像素取整策略；参数类型为[ArkUI_PixelRoundPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-pixelroundpolicy)。 |
+| .object | 设置组件的像素取整策略；参数类型为[ArkUI_PixelRoundPolicy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-pixelroundpolicy)。 |
 
 返回：
 

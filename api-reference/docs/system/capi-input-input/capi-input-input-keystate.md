@@ -2,7 +2,8 @@
 title: "Input_KeyState"
 upstream_id: "harmonyos-references/capi-input-input-keystate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:19.580345"
+content_hash: "266b40e4f13f"
+synced_at: "2026-07-09T00:59:49.795224"
 ---
 
 # Input_KeyState

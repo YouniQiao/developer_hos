@@ -2,7 +2,8 @@
 title: "MetadataOutput_Callbacks"
 upstream_id: "harmonyos-references/capi-oh-camera-metadataoutput-callbacks"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:18.144668"
+content_hash: "474dac6e3c1f"
+synced_at: "2026-07-09T01:00:26.871406"
 ---
 
 # MetadataOutput_Callbacks

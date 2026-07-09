@@ -2,7 +2,8 @@
 title: "attributionTestManager（应用归因接入调试功能）"
 upstream_id: "harmonyos-references/store-attributiontestmanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:22.509568"
+content_hash: "5447172a020c"
+synced_at: "2026-07-09T01:01:15.193445"
 ---
 
 # attributionTestManager（应用归因接入调试功能）
@@ -102,7 +103,7 @@ class  AttributionTest {
       // 用于计算签名的随机数，不带'-'
       let nonce: string = util.generateRandomUUID().replace(/-/g, '');
       // 时间戳
-      let timestamp: number = Date.now()
+      let timestamp: number = Date.now();
       let adSourceInfo: attributionTestManager.AdSourceInfo = {
         adTechId: adTechId,
         campaignId: campaignId,

@@ -2,7 +2,8 @@
 title: "udmf.h"
 upstream_id: "harmonyos-references/capi-udmf-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:07.163342"
+content_hash: "e2d1f3362794"
+synced_at: "2026-07-09T00:57:20.268382"
 ---
 
 # udmf.h

@@ -2,7 +2,8 @@
 title: "@ohos.app.ability.PrintExtensionAbility (打印扩展能力)"
 upstream_id: "harmonyos-references/js-apis-app-ability-printextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:06.563994"
+content_hash: "a8e61e10efe2"
+synced_at: "2026-07-09T00:59:39.838343"
 ---
 
 # @ohos.app.ability.PrintExtensionAbility (打印扩展能力)

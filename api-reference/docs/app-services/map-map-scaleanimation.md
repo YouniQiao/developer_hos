@@ -2,7 +2,8 @@
 title: "Class (ScaleAnimation)"
 upstream_id: "harmonyos-references/map-map-scaleanimation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:33.324088"
+content_hash: "4e6f45a68ea5"
+synced_at: "2026-07-09T01:01:25.331084"
 ---
 
 # Class (ScaleAnimation)

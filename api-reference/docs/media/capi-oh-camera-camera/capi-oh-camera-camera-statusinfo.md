@@ -2,7 +2,8 @@
 title: "Camera_StatusInfo"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-statusinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:16.330262"
+content_hash: "e609019f7dda"
+synced_at: "2026-07-09T01:00:25.817130"
 ---
 
 # Camera_StatusInfo

@@ -2,7 +2,8 @@
 title: "OH_Drawing_PositionAndAffinity"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-positionandaffinity"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:08.199148"
+content_hash: "bf922a8271c0"
+synced_at: "2026-07-09T01:01:02.480594"
 ---
 
 # OH_Drawing_PositionAndAffinity

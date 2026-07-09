@@ -2,7 +2,8 @@
 title: "ShellCmdResult"
 upstream_id: "harmonyos-references/js-apis-inner-application-shellcmdresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:51.519447"
+content_hash: "e3eeaa3636bc"
+synced_at: "2026-07-09T01:00:06.457998"
 ---
 
 # ShellCmdResult

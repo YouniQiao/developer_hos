@@ -2,7 +2,8 @@
 title: "SwipeRefresher"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-swiperefresher"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:56.054680"
+content_hash: "2c882faae96e"
+synced_at: "2026-07-09T00:58:16.938854"
 ---
 
 # SwipeRefresher
@@ -76,4 +77,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070924.gif)
+ ![](./img/zh-cn_image_0000002661732957.gif)

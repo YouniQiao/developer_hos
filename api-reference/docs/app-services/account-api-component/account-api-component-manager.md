@@ -2,7 +2,8 @@
 title: "loginComponentManager (华为账号登录组件管理)"
 upstream_id: "harmonyos-references/account-api-component-manager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:18.602760"
+content_hash: "67e1157efb70"
+synced_at: "2026-07-09T01:01:13.231128"
 ---
 
 # loginComponentManager (华为账号登录组件管理)
@@ -89,7 +90,7 @@ onClickEvent(callback: AsyncCallback<ClickEvent>): LoginWithHuaweiIDButtonContro
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback | 是 | 回调函数。当用户点击华为账号登录时，err为undefined，data为获取到的[ClickEvent](#clickevent)；否则为错误对象。 |
+| callback | AsyncCallback | 是 | 回调函数。当用户点击华为账号登录按钮时，err为undefined，data为获取到的[ClickEvent](#clickevent)；否则为错误对象。 |
 
 返回值：
 
@@ -127,7 +128,7 @@ onClickLoginWithHuaweiIDButton(callback: AsyncCallback<HuaweiIDCredential>): Log
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)和[账号管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)、[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)和[账号管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -976,7 +977,7 @@ onClickLoginWithHuaweiIDButton(callback: AsyncCallback<HuaweiIDCredential>): Log
 
 错误码：
 
-以下错误码的详细介绍请参见[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)和[账号管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account)。
+以下错误码的详细介绍请参见[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)、[ArkTS错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account-kit)和[账号管理错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-account)。
 
 | 错误码ID | 错误信息 |
 | --- | --- |
@@ -1460,7 +1461,7 @@ fontColor(value: ResourceColor | FontColor): ButtonStyle
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | [FontColor](#fontcolor) | 是 | 当按钮类型为[BUTTON_CUSTOM](#style)时，此参数可设置按钮文字颜色。当已经设置[CustomButtonParams](#custombuttonparams)的fontColor属性时，优先取此参数值。 不设置则为黑色。 |
+| value | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | [FontColor](#fontcolor) | 是 | 当按钮类型为[BUTTON_CUSTOM](#style)时，此参数可设置按钮文字颜色。当已经设置[CustomButtonParams](#custombuttonparams)的fontColor属性时，优先取此参数值。 不设置则为白色。 |
 
 返回值：
 

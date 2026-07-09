@@ -2,7 +2,8 @@
 title: "OH_Drawing_LineMetrics"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-linemetrics"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:06.233938"
+content_hash: "208d5eefb3c7"
+synced_at: "2026-07-09T01:01:00.745310"
 ---
 
 # OH_Drawing_LineMetrics

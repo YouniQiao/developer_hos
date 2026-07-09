@@ -2,7 +2,8 @@
 title: "Camera_OcclusionDetectionResult"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-occlusiondetectionresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:18.827049"
+content_hash: "0342dc50408e"
+synced_at: "2026-07-09T01:00:27.319031"
 ---
 
 # Camera_OcclusionDetectionResult

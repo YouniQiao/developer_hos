@@ -1,9 +1,12 @@
 ---
+
 title: "网络连接管理错误码"
 upstream_id: "harmonyos-references/errorcode-net-connection"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:56.262589"
+synced_at: "2026-07-09T00:59:31.044786"
+content_hash: "a58716eaac27"
 ---
+
 
 # 网络连接管理错误码
 

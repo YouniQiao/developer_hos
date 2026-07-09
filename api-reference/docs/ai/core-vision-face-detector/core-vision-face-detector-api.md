@@ -2,7 +2,8 @@
 title: "faceDetector（人脸检测）"
 upstream_id: "harmonyos-references/core-vision-face-detector-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:56.707161"
+content_hash: "53729d158041"
+synced_at: "2026-07-09T01:01:41.849428"
 ---
 
 # faceDetector（人脸检测）

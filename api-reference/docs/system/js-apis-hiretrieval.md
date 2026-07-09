@@ -2,7 +2,8 @@
 title: "@ohos.hiviewdfx.hiRetrieval (应用灰度)"
 upstream_id: "harmonyos-references/js-apis-hiretrieval"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:45.975281"
+content_hash: "fc57195d8e50"
+synced_at: "2026-07-09T01:00:03.096871"
 ---
 
 # @ohos.hiviewdfx.hiRetrieval (应用灰度)
@@ -85,7 +86,7 @@ participate(config: HiRetrievalConfig): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| config | [HiRetrievalConfig](#hiretrievalconfig) | 是 | 开发者指定的应用灰度活动配置。用于设置此设备参与应用灰度活动时的用户类型、设备类型和设备型号信息，服务器将记录这些配置作为算法参数，用于圈选设备。不同参数值会影响设备参与灰度活动的概率和采集的日志类型。 |
+| config | [HiRetrievalConfig](#hiretrievalconfig) | 是 | 开发者指定的应用灰度活动配置。用于设置此设备参与应用灰度活动时的用户类型、设备类型和设备型号信息，服务器将记录这些配置作为算法参数，用于圈选设备。不同参数值会影响设备参与应用灰度活动的概率和采集的日志类型。 |
 
 错误码：
 
@@ -170,7 +171,7 @@ isParticipant(): boolean
 
 | 类型 | 说明 |
 | --- | --- |
-| boolean | 标识此设备现在是否正在参与灰度活动，true表示正在参与，false表示未参与。 |
+| boolean | 标识此设备现在是否正在参与应用灰度活动，true表示正在参与，false表示未参与。 |
 
 示例：
 
@@ -260,7 +261,7 @@ getCurrentConfig(): HiRetrievalConfig
 
 | 类型 | 说明 |
 | --- | --- |
-| [HiRetrievalConfig](#hiretrievalconfig) | 当前应用灰度活动配置，包含用户类型、设备类型、设备型号等参数，用于标识和圈选设备参与灰度活动。 |
+| [HiRetrievalConfig](#hiretrievalconfig) | 当前应用灰度活动配置，包含用户类型、设备类型、设备型号等参数，用于标识和圈选设备参与应用灰度活动。 |
 
 示例：
 

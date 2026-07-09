@@ -2,7 +2,8 @@
 title: "@ohos.hiTraceChain (分布式跟踪)"
 upstream_id: "harmonyos-references/js-apis-hitracechain"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:45.293998"
+content_hash: "e0f595507d6c"
+synced_at: "2026-07-09T01:00:02.455805"
 ---
 
 # @ohos.hiTraceChain (分布式跟踪)

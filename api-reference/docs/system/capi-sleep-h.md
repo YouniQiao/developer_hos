@@ -2,7 +2,8 @@
 title: "sleep.h"
 upstream_id: "harmonyos-references/capi-sleep-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:16.321247"
+content_hash: "300fc67c88dd"
+synced_at: "2026-07-09T00:59:47.077867"
 ---
 
 # sleep.h

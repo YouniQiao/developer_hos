@@ -2,7 +2,8 @@
 title: "@ohos.url (URL字符串解析)"
 upstream_id: "harmonyos-references/js-apis-url"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:16.249059"
+content_hash: "8acbffb9a563"
+synced_at: "2026-07-09T00:57:25.502456"
 ---
 
 # @ohos.url (URL字符串解析)

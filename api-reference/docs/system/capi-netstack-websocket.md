@@ -2,7 +2,8 @@
 title: "WebSocket"
 upstream_id: "harmonyos-references/capi-netstack-websocket"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:54.634872"
+content_hash: "1e050448ef22"
+synced_at: "2026-07-09T00:59:29.869078"
 ---
 
 # WebSocket

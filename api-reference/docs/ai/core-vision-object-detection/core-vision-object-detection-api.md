@@ -2,7 +2,8 @@
 title: "objectDetection（多目标识别）"
 upstream_id: "harmonyos-references/core-vision-object-detection-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:57.071387"
+content_hash: "fb791b0106e6"
+synced_at: "2026-07-09T01:01:42.327513"
 ---
 
 # objectDetection（多目标识别）

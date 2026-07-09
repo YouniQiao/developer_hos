@@ -2,7 +2,8 @@
 title: "AVMetadataExtractor"
 upstream_id: "harmonyos-references/capi-avmetadataextractor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:35.108972"
+content_hash: "8d8bb2b95664"
+synced_at: "2026-07-09T01:00:39.474656"
 ---
 
 # AVMetadataExtractor

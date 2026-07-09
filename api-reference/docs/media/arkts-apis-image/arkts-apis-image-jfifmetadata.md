@@ -2,7 +2,8 @@
 title: "Class (JfifMetadata)"
 upstream_id: "harmonyos-references/arkts-apis-image-jfifmetadata"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:23.673370"
+content_hash: "15e7da495777"
+synced_at: "2026-07-09T01:00:30.501205"
 ---
 
 # Class (JfifMetadata)

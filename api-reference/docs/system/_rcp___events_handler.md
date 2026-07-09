@@ -2,7 +2,8 @@
 title: "Rcp_EventsHandler"
 upstream_id: "harmonyos-references/_rcp___events_handler"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:00.131493"
+content_hash: "8c18443d9212"
+synced_at: "2026-07-09T00:59:34.199647"
 ---
 
 # Rcp_EventsHandler

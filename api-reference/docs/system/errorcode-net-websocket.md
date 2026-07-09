@@ -2,7 +2,8 @@
 title: "webSocket错误码"
 upstream_id: "harmonyos-references/errorcode-net-websocket"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:56.374871"
+content_hash: "ec9e8c982168"
+synced_at: "2026-07-09T00:59:31.047904"
 ---
 
 # webSocket错误码

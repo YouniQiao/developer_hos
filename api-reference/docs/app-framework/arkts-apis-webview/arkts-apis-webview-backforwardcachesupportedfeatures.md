@@ -2,12 +2,13 @@
 title: "Class (BackForwardCacheSupportedFeatures)"
 upstream_id: "harmonyos-references/arkts-apis-webview-backforwardcachesupportedfeatures"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:02.537742"
+content_hash: "95008553166b"
+synced_at: "2026-07-09T00:58:50.095077"
 ---
 
 # Class (BackForwardCacheSupportedFeatures)
 
-选择性允许使用以下特性的页面进入前进后退缓存。完整示例代码参考[enableBackForwardCache](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#enablebackforwardcache12)。
+BackForwardCacheSupportedFeatures是ArkWeb框架中用于选择性控制允许使用了特定Web特性的页面可以进入前进后退缓存（BFCache）的配置类。默认情况下，使用同层渲染或视频托管等特性的页面会被阻止进入BFCache，因为浏览器无法安全地保存和恢复这些与系统控件绑定的复杂状态。通过设置该类中的属性，开发者可以显式允许这些特性的页面进入BFCache，但需注意自行维护相关系统控件的生命周期，避免资源泄漏。完整示例代码参考[enableBackForwardCache](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#enablebackforwardcache12)。
 
 ![](./img/note_3.0-zh-cn.png)
 

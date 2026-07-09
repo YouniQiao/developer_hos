@@ -2,7 +2,8 @@
 title: "ArkUI_ActiveChildrenInfo"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-activechildreninfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:53.565775"
+content_hash: "445ef78a2219"
+synced_at: "2026-07-09T00:58:43.800980"
 ---
 
 # ArkUI_ActiveChildrenInfo

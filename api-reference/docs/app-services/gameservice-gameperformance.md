@@ -2,7 +2,8 @@
 title: "gamePerformance（游戏场景感知）"
 upstream_id: "harmonyos-references/gameservice-gameperformance"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:25.221176"
+content_hash: "4e5275dbf670"
+synced_at: "2026-07-09T01:01:18.744219"
 ---
 
 # gamePerformance（游戏场景感知）
@@ -31,7 +32,7 @@ import { gamePerformance } from '@kit.GameServiceKit';
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
-| tempLevel | number | 否 | 否 | 温控档位，档位越高表示温度越高。不同档位及其建议如下： 1：无需处理。 2：建议降低无感知业务规格，例如后台更新降速或延迟运行。 3：建议暂停无感知业务，降低游戏非核心业务的规格，例如前台更新降速。 4：建议减少游戏特效，降低分辨率，画质。 5：建议降低全场景规格，进一步降低分辨率、画质等。 6：建议游戏降至最低规格。 |
+| tempLevel | number | 否 | 否 | 温控档位。不同档位及其建议如下： 1：无需处理。 2：建议降低无感知业务规格，例如后台更新降速或延迟运行。 3：建议暂停无感知业务，降低游戏非核心业务的规格，例如前台更新降速。 4：建议减少游戏特效，降低分辨率，画质。 5：建议降低全场景规格，进一步降低分辨率、画质等。 6：建议游戏降至最低规格。 |
 | gpuInfo | [GpuInfo](#gpuinfo) | 否 | 是 | GPU性能信息。 |
 | thermalInfo | [ThermalInfo](#thermalinfo) | 否 | 是 | 温度变化趋势数据。 **起始版本：** 5.0.1(13)。 |
 
@@ -313,7 +314,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 let gamePackageInfo: gamePerformance.GamePackageInfo = {
   messageType: 0,
-  bundleName: 'com.example.demo', // 仅示例，请替换为实际的游戏包名
+  bundleName: 'com.example.demo', // 请替换为实际的游戏包名
   appVersion: '1.0'
 };
 try {

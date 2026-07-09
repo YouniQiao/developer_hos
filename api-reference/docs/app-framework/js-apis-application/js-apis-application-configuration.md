@@ -2,7 +2,8 @@
 title: "@ohos.application.Configuration (Configuration)"
 upstream_id: "harmonyos-references/js-apis-application-configuration"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:56.023795"
+content_hash: "646d94b6f767"
+synced_at: "2026-07-09T00:57:11.090260"
 ---
 
 # @ohos.application.Configuration (Configuration)

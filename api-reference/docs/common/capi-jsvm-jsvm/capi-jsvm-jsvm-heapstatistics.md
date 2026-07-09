@@ -2,7 +2,8 @@
 title: "JSVM_HeapStatistics"
 upstream_id: "harmonyos-references/capi-jsvm-jsvm-heapstatistics"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:02.339060"
+content_hash: "e5465dd811ae"
+synced_at: "2026-07-09T01:01:46.805466"
 ---
 
 # JSVM_HeapStatistics

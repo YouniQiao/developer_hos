@@ -2,7 +2,8 @@
 title: "HiDebug CpuUsage错误码"
 upstream_id: "harmonyos-references/errorcode-hiviewdfx-hidebug-cpuusage"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:50.175751"
+content_hash: "75f86e7fad54"
+synced_at: "2026-07-09T01:00:05.827940"
 ---
 
 # HiDebug CpuUsage错误码

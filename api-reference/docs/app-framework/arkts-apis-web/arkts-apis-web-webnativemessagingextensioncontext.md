@@ -2,12 +2,13 @@
 title: "@ohos.web.WebNativeMessagingExtensionContext (Web Native Messaging Extension Context)"
 upstream_id: "harmonyos-references/arkts-apis-web-webnativemessagingextensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:05.375761"
+content_hash: "bc729db6cfff"
+synced_at: "2026-07-09T00:58:52.828407"
 ---
 
 # @ohos.web.WebNativeMessagingExtensionContext (Web Native Messaging Extension Context)
 
-WebNativeMessagingExtensionContext是Web原生消息扩展的上下文，继承自ExtensionContext。它提供了与WebNativeMessagingExtension通信消息的交互能力。
+WebNativeMessagingExtensionContext是Web原生消息扩展（[WebNativeMessagingExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-web-webnativemessagingextensionability)）的运行上下文，继承自ExtensionContext，为扩展Ability提供生命周期管理、Ability启动以及原生消息连接控制能力。开发者可在继承WebNativeMessagingExtensionAbility的扩展中通过this.context获取该上下文，进而调用[startAbility](#startability)启动其他Ability、调用[startAbilityForResult](#startabilityforresult)启动UIAbility并接收返回结果、调用[terminateSelf](#terminateself)结束当前扩展，或调用[stopNativeConnection](#stopnativeconnection)停止指定的Web原生消息连接。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 21开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 

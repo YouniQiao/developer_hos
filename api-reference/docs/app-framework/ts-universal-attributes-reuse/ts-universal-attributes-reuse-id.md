@@ -1,9 +1,12 @@
 ---
+
 title: "复用标识"
 upstream_id: "harmonyos-references/ts-universal-attributes-reuse-id"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:49.447694"
+synced_at: "2026-07-09T00:57:43.413892"
+content_hash: "6d0b310bb340"
 ---
+
 
 # 复用标识
 

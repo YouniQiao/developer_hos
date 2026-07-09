@@ -2,7 +2,8 @@
 title: "OH_Drawing_FontDescriptor"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-fontdescriptor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:05.996803"
+content_hash: "8f13d5e9e87d"
+synced_at: "2026-07-09T01:01:00.694244"
 ---
 
 # OH_Drawing_FontDescriptor

@@ -2,7 +2,8 @@
 title: "FIDO2_PublicKeyCredentialUserEntity"
 upstream_id: "harmonyos-references/_f_i_d_o2___public_key_credential_user_entity"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:40.736143"
+content_hash: "e3ee21cdff44"
+synced_at: "2026-07-09T00:59:19.127719"
 ---
 
 # FIDO2_PublicKeyCredentialUserEntity

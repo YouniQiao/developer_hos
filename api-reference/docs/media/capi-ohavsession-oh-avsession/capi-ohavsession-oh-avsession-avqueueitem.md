@@ -2,7 +2,8 @@
 title: "OH_AVSession_AVQueueItem"
 upstream_id: "harmonyos-references/capi-ohavsession-oh-avsession-avqueueitem"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:09.310156"
+content_hash: "0837b0b3eb06"
+synced_at: "2026-07-09T01:00:20.321583"
 ---
 
 # OH_AVSession_AVQueueItem

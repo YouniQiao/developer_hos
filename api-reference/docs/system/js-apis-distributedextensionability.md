@@ -2,7 +2,8 @@
 title: "@ohos.application.DistributedExtensionAbility (协同Extension)"
 upstream_id: "harmonyos-references/js-apis-distributedextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:49.251893"
+content_hash: "179f5ae167d4"
+synced_at: "2026-07-09T00:59:25.730880"
 ---
 
 # @ohos.application.DistributedExtensionAbility (协同Extension)

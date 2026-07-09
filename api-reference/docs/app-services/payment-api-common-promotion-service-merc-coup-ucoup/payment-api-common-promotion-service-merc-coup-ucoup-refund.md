@@ -2,7 +2,8 @@
 title: "申请退券"
 upstream_id: "harmonyos-references/payment-api-common-promotion-service-merc-coup-ucoup-refund"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:47.227746"
+content_hash: "ab38925a9903"
+synced_at: "2026-07-09T01:01:35.657882"
 ---
 
 # 申请退券
@@ -33,7 +34,7 @@ Request Body
 | --- | --- | --- | --- |
 | requestNo | 是 | String | 请求号，由商户随机生成，不同请求要求唯一。最小长度为1，最大长度为64。 **说明**：用于保证幂等。对不同请求，requestNo的值要求不一样。对于相同请求，值要求一样，比如超时场景，可通过requestNo一样进行重试。 |
 | batchNo | 是 | String | 券的所属批次号。最小长度为1，最大长度为40。 |
-| couponCode | 是 | String | 待退券的CouponCode。最小长度为1，最大长度为32。 |
+| couponCode | 是 | String | 待退券的券Code。最小长度为1，最大长度为32。 |
 
 #### **请求示例**
 

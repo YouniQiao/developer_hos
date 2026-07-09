@@ -2,7 +2,8 @@
 title: "option"
 upstream_id: "harmonyos-references/js-components-basic-option"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:06.400799"
+content_hash: "ffdf80343987"
+synced_at: "2026-07-09T00:58:21.986333"
 ---
 
 # option

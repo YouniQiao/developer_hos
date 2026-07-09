@@ -2,7 +2,8 @@
 title: "WindowManager_WindowProperties"
 upstream_id: "harmonyos-references/capi-windowmanager-windowproperties"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:56.601537"
+content_hash: "cea44229efdd"
+synced_at: "2026-07-09T00:58:45.919059"
 ---
 
 # WindowManager_WindowProperties

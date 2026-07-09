@@ -2,7 +2,8 @@
 title: "Ellipse"
 upstream_id: "harmonyos-references/ts-drawing-components-ellipse"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:35.242407"
+content_hash: "9866fbd2a914"
+synced_at: "2026-07-09T00:58:04.781810"
 ---
 
 # Ellipse
@@ -300,7 +301,7 @@ struct EllipseExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350113.png)
+ ![](./img/zh-cn_image_0000002661732821.png)
 
 #### [h2]示例2（宽和高使用不同参数类型绘制椭圆）
 
@@ -323,7 +324,7 @@ struct EllipseTypeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230700.png)
+ ![](./img/zh-cn_image_0000002631253700.png)
 
 #### [h2]示例3（使用attributeModifier动态设置Ellipse组件的属性）
 
@@ -360,4 +361,4 @@ struct EllipseModifierDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070790.png)
+ ![](./img/zh-cn_image_0000002661612881.png)

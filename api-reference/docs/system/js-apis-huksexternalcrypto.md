@@ -2,7 +2,8 @@
 title: "@ohos.security.huksExternalCrypto (外部密钥管理)"
 upstream_id: "harmonyos-references/js-apis-huksexternalcrypto"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:42.337880"
+content_hash: "5c74992000d1"
+synced_at: "2026-07-09T00:59:20.628900"
 ---
 
 # @ohos.security.huksExternalCrypto (外部密钥管理)

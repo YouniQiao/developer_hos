@@ -2,7 +2,8 @@
 title: "Class (WebContextMenuParam)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-webcontextmenuparam"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:06.911680"
+content_hash: "5fe4fddc2383"
+synced_at: "2026-07-09T00:58:54.425373"
 ---
 
 # Class (WebContextMenuParam)

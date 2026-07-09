@@ -2,7 +2,8 @@
 title: "TransientTask_DelaySuspendInfo"
 upstream_id: "harmonyos-references/capi-transienttask-transienttask-delaysuspendinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:11.199678"
+content_hash: "d4a45e1b064c"
+synced_at: "2026-07-09T00:58:57.574499"
 ---
 
 # TransientTask_DelaySuspendInfo

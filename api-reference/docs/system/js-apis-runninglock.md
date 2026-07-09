@@ -2,7 +2,8 @@
 title: "@ohos.runningLock (RunningLock锁)"
 upstream_id: "harmonyos-references/js-apis-runninglock"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:06.331189"
+content_hash: "45b55d9e6a88"
+synced_at: "2026-07-09T00:59:39.090763"
 ---
 
 # @ohos.runningLock (RunningLock锁)

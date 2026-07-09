@@ -2,7 +2,8 @@
 title: "AREngine_ClipPlaneDistance"
 upstream_id: "harmonyos-references/arengine-struct-clipplanedistance"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:51.160294"
+content_hash: "e85e5605ded8"
+synced_at: "2026-07-09T01:00:50.064812"
 ---
 
 # AREngine_ClipPlaneDistance

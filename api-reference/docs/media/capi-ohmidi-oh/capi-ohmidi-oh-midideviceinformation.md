@@ -2,7 +2,8 @@
 title: "OH_MIDIDeviceInformation"
 upstream_id: "harmonyos-references/capi-ohmidi-oh-midideviceinformation"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:00.398497"
+content_hash: "0bedded9332b"
+synced_at: "2026-07-09T01:00:12.628393"
 ---
 
 # OH_MIDIDeviceInformation
@@ -13,7 +14,7 @@ typedef struct {...} OH_MIDIDeviceInformation
 
 #### 概述
 
-设备信息结构体。储存设备ID等相关信息。
+设备信息结构体。存储设备ID等相关信息。
 
 起始版本： 24
 

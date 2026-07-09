@@ -2,7 +2,8 @@
 title: "tab-bar"
 upstream_id: "harmonyos-references/js-components-container-tab-bar"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:04.962978"
+content_hash: "f704239add6d"
+synced_at: "2026-07-09T00:58:21.266743"
 ---
 
 # tab-bar

@@ -1,9 +1,12 @@
 ---
+
 title: "附录"
 upstream_id: "harmonyos-references/payment-appendix"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:47.758350"
+synced_at: "2026-07-09T01:01:35.679263"
+content_hash: "14e7200036a5"
 ---
+
 
 # 附录
 

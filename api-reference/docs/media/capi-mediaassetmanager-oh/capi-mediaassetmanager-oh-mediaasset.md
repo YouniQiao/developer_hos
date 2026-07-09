@@ -2,7 +2,8 @@
 title: "OH_MediaAsset"
 upstream_id: "harmonyos-references/capi-mediaassetmanager-oh-mediaasset"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:48.237592"
+content_hash: "ac32bdb217b5"
+synced_at: "2026-07-09T01:00:48.828728"
 ---
 
 # OH_MediaAsset

@@ -2,7 +2,8 @@
 title: "@ohos.resourceschedule.systemload (性能功耗热融合档位)"
 upstream_id: "harmonyos-references/js-apis-resourceschedule-systemload"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:09.350944"
+content_hash: "eaee23eb86c4"
+synced_at: "2026-07-09T00:59:41.910186"
 ---
 
 # @ohos.resourceschedule.systemload (性能功耗热融合档位)

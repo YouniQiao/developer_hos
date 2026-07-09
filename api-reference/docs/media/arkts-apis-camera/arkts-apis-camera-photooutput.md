@@ -2,7 +2,8 @@
 title: "Interface (PhotoOutput)"
 upstream_id: "harmonyos-references/arkts-apis-camera-photooutput"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:13.333109"
+content_hash: "159da94065e4"
+synced_at: "2026-07-09T01:00:22.933915"
 ---
 
 # Interface (PhotoOutput)

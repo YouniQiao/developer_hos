@@ -2,7 +2,8 @@
 title: "Image_Region"
 upstream_id: "harmonyos-references/capi-image-nativemodule-image-region"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:28.983991"
+content_hash: "22d8db368f89"
+synced_at: "2026-07-09T01:00:34.809925"
 ---
 
 # Image_Region

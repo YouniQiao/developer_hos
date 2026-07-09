@@ -2,7 +2,8 @@
 title: "VkNativeBufferOHOS"
 upstream_id: "harmonyos-references/capi-vulkan-vknativebufferohos"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:54:06.016888"
+content_hash: "ad3df75756bc"
+synced_at: "2026-07-09T01:01:49.383282"
 ---
 
 # VkNativeBufferOHOS

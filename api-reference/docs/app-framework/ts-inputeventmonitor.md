@@ -1,9 +1,12 @@
 ---
+
 title: "全局基础输入事件监听"
 upstream_id: "harmonyos-references/ts-inputeventmonitor"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:33.754637"
+synced_at: "2026-07-09T00:57:37.118571"
+content_hash: "081bf8655896"
 ---
+
 
 # 全局基础输入事件监听
 

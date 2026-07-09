@@ -2,7 +2,8 @@
 title: "telephony_data.h"
 upstream_id: "harmonyos-references/capi-telephony-data-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:05.217086"
+content_hash: "b7ee08e516c2"
+synced_at: "2026-07-09T00:59:38.233961"
 ---
 
 # telephony_data.h

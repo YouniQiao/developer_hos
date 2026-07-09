@@ -2,7 +2,8 @@
 title: "Core"
 upstream_id: "harmonyos-references/capi-core"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:01.233558"
+content_hash: "01ec59b65464"
+synced_at: "2026-07-09T01:00:13.021818"
 ---
 
 # Core

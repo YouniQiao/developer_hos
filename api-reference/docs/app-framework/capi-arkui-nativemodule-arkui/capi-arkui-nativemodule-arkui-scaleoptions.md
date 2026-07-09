@@ -2,7 +2,8 @@
 title: "ArkUI_ScaleOptions"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-scaleoptions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:52.087010"
+content_hash: "1186dd096c87"
+synced_at: "2026-07-09T00:58:43.038428"
 ---
 
 # ArkUI_ScaleOptions

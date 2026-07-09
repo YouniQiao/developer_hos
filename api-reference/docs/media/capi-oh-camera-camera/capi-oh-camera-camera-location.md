@@ -2,7 +2,8 @@
 title: "Camera_Location"
 upstream_id: "harmonyos-references/capi-oh-camera-camera-location"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:16.369528"
+content_hash: "d92654ef864f"
+synced_at: "2026-07-09T01:00:25.920403"
 ---
 
 # Camera_Location

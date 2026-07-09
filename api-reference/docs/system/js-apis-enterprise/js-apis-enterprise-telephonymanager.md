@@ -2,7 +2,8 @@
 title: "@ohos.enterprise.telephonyManager（通话管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-telephonymanager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:24.899214"
+content_hash: "9caeba3bddd1"
+synced_at: "2026-07-09T00:59:53.245696"
 ---
 
 # @ohos.enterprise.telephonyManager（通话管理）

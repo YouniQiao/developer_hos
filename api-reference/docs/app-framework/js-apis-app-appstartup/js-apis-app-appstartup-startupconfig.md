@@ -2,7 +2,8 @@
 title: "@ohos.app.appstartup.StartupConfig (启动框架配置信息)"
 upstream_id: "harmonyos-references/js-apis-app-appstartup-startupconfig"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:48.294712"
+content_hash: "746ebeeed2ec"
+synced_at: "2026-07-09T00:57:05.418976"
 ---
 
 # @ohos.app.appstartup.StartupConfig (启动框架配置信息)

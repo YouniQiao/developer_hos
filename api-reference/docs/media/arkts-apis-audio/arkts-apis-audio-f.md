@@ -2,7 +2,8 @@
 title: "Functions"
 upstream_id: "harmonyos-references/arkts-apis-audio-f"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:52.005087"
+content_hash: "bcae9bb10f0d"
+synced_at: "2026-07-09T01:00:07.151653"
 ---
 
 # Functions

@@ -2,7 +2,8 @@
 title: "Interface (AVImageGenerator)"
 upstream_id: "harmonyos-references/arkts-apis-media-avimagegenerator"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:33.179809"
+content_hash: "d361c66ce485"
+synced_at: "2026-07-09T01:00:37.944912"
 ---
 
 # Interface (AVImageGenerator)

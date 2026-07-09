@@ -2,7 +2,8 @@
 title: "Interfaces (其他)"
 upstream_id: "harmonyos-references/arkts-apis-window-i"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:30.150924"
+content_hash: "f925f773d310"
+synced_at: "2026-07-09T00:57:35.206256"
 ---
 
 # Interfaces (其他)
@@ -132,7 +133,7 @@ synced_at: "2026-06-24T20:47:30.150924"
 
 ![](./img/note_3.0-zh-cn.png) 示意图展示了leftRect、topRect、rightRect、bottomRect的含义。
 
-![](./img/zh-cn_image_0000002656349545.png)
+![](./img/zh-cn_image_0000002631253118.png)
 
 #### UIEnvAvoidAreaVP23+
 

@@ -2,7 +2,8 @@
 title: "增强连接错误码"
 upstream_id: "harmonyos-references/errorcode-link-enhance"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:49.888798"
+content_hash: "87910edf2294"
+synced_at: "2026-07-09T00:59:26.162343"
 ---
 
 # 增强连接错误码

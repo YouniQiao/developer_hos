@@ -1,9 +1,12 @@
 ---
+
 title: "签约结果回调通知"
 upstream_id: "harmonyos-references/payment-withhold-sign-notify"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:40.887554"
+synced_at: "2026-07-09T01:01:31.195676"
+content_hash: "f2f8425c8fd1"
 ---
+
 
 # 签约结果回调通知
 

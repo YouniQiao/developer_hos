@@ -2,7 +2,8 @@
 title: "Class (Matrix)"
 upstream_id: "harmonyos-references/arkts-apis-graphics-drawing-matrix"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:53.583879"
+content_hash: "035555c0e5af"
+synced_at: "2026-07-09T01:00:52.417515"
 ---
 
 # Class (Matrix)
@@ -11,13 +12,13 @@ synced_at: "2026-06-24T20:52:53.583879"
 
 表示为3*3的矩阵，如下图所示：
 
-![](./img/zh-cn_image_0000002626071652.png)
+![](./img/zh-cn_image_0000002661733693.png)
 
 矩阵中的元素从左到右，从上到下分别表示水平缩放系数、水平倾斜系数、水平位移系数、垂直倾斜系数、垂直缩放系数、垂直位移系数、X轴透视系数、Y轴透视系数、透视缩放系数。
 
 设(x1, y1)为源坐标点，(x2, y2)为源坐标点通过矩阵变换后的坐标点，则两个坐标点的关系如下：
 
-![](./img/zh-cn_image_0000002656470929.png)
+![](./img/zh-cn_image_0000002631254572.png)
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -975,7 +976,7 @@ mapRect(dst: common2D.Rect, src: common2D.Rect): boolean
 
 将目标矩形设置为源矩形通过矩阵变换后的图形的外接矩形。如下图所示，蓝色矩形为源矩形，假设黄色矩形为源矩形通过矩阵变换形成的图形，此时黄色矩形的边不与坐标轴平行，无法使用矩形对象表示，因此，将目标矩形设置为黄色矩形的外接矩形，即黑色矩形。
 
-![](./img/zh-cn_image_0000002656350979.png)
+![](./img/zh-cn_image_0000002661613757.png)
 
 系统能力： SystemCapability.Graphics.Drawing
 

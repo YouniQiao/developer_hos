@@ -2,7 +2,8 @@
 title: "@ohos.bluetooth.pan (蓝牙pan模块)"
 upstream_id: "harmonyos-references/js-apis-bluetooth-pan"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:46.131691"
+content_hash: "652eb833fb79"
+synced_at: "2026-07-09T00:59:23.110280"
 ---
 
 # @ohos.bluetooth.pan (蓝牙pan模块)

@@ -2,7 +2,8 @@
 title: "@ohos.wallpaper (壁纸)"
 upstream_id: "harmonyos-references/js-apis-wallpaper"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:09.220567"
+content_hash: "b58d238e5809"
+synced_at: "2026-07-09T00:59:42.168691"
 ---
 
 # @ohos.wallpaper (壁纸)

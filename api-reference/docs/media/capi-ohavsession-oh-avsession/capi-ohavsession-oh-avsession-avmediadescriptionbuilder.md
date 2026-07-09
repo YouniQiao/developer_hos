@@ -2,7 +2,8 @@
 title: "OH_AVSession_AVMediaDescriptionBuilder"
 upstream_id: "harmonyos-references/capi-ohavsession-oh-avsession-avmediadescriptionbuilder"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:09.622671"
+content_hash: "19badc84527a"
+synced_at: "2026-07-09T01:00:20.472755"
 ---
 
 # OH_AVSession_AVMediaDescriptionBuilder

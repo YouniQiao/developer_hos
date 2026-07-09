@@ -2,7 +2,8 @@
 title: "Class (LatLngBoundsUtils)"
 upstream_id: "harmonyos-references/map-map-latlngboundsutils"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:32.976260"
+content_hash: "e4b13a32354b"
+synced_at: "2026-07-09T01:01:25.072833"
 ---
 
 # Class (LatLngBoundsUtils)

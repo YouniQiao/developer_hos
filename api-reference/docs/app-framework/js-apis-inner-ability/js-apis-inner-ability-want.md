@@ -2,7 +2,8 @@
 title: "Want"
 upstream_id: "harmonyos-references/js-apis-inner-ability-want"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:56.460766"
+content_hash: "fde12c99ef21"
+synced_at: "2026-07-09T00:57:11.391889"
 ---
 
 # Want

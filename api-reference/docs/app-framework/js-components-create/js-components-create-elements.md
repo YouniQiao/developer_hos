@@ -2,7 +2,8 @@
 title: "动态创建组件"
 upstream_id: "harmonyos-references/js-components-create-elements"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:15.250793"
+content_hash: "b2d534378b40"
+synced_at: "2026-07-09T00:58:26.133459"
 ---
 
 # 动态创建组件

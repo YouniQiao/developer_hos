@@ -2,7 +2,8 @@
 title: "OH_Drawing_MemoryStream"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-memorystream"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:10.238867"
+content_hash: "b5c19c6079fb"
+synced_at: "2026-07-09T01:01:04.226691"
 ---
 
 # OH_Drawing_MemoryStream

@@ -2,7 +2,8 @@
 title: "@ohos.hiviewdfx.FaultLogExtensionAbility (故障延迟通知)"
 upstream_id: "harmonyos-references/js-apis-hiviewdfx-faultlogextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:45.492530"
+content_hash: "5d3f09d76a90"
+synced_at: "2026-07-09T01:00:02.647954"
 ---
 
 # @ohos.hiviewdfx.FaultLogExtensionAbility (故障延迟通知)

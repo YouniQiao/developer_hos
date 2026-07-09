@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-scan"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:49.455566"
+content_hash: "ab53c8e62dab"
+synced_at: "2026-07-09T01:00:49.379917"
 ---
 
 # ArkTS API错误码

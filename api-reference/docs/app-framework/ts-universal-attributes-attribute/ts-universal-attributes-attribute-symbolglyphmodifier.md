@@ -2,7 +2,8 @@
 title: "动态SymbolGlyphModifier属性设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-attribute-symbolglyphmodifier"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:49.129685"
+content_hash: "f8f50d01d9dd"
+synced_at: "2026-07-09T00:57:43.209087"
 ---
 
 # 动态SymbolGlyphModifier属性设置
@@ -81,4 +82,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349669.png)
+ ![](./img/zh-cn_image_0000002631253248.png)

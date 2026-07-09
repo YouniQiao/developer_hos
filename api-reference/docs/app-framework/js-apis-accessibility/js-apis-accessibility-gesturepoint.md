@@ -2,7 +2,8 @@
 title: "@ohos.accessibility.GesturePoint (手势触摸点)"
 upstream_id: "harmonyos-references/js-apis-accessibility-gesturepoint"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:01.267779"
+content_hash: "7a17d5847ea8"
+synced_at: "2026-07-09T00:57:14.182060"
 ---
 
 # @ohos.accessibility.GesturePoint (手势触摸点)

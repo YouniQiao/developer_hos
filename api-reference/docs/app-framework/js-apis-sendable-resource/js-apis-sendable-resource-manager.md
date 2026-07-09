@@ -2,7 +2,8 @@
 title: "@ohos.sendableResourceManager (资源管理)"
 upstream_id: "harmonyos-references/js-apis-sendable-resource-manager"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:22.462991"
+content_hash: "8f480cc8214a"
+synced_at: "2026-07-09T00:59:06.766172"
 ---
 
 # @ohos.sendableResourceManager (资源管理)

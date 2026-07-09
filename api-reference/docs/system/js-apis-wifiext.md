@@ -2,7 +2,8 @@
 title: "@ohos.wifiext (WLAN扩展接口)"
 upstream_id: "harmonyos-references/js-apis-wifiext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:48.682579"
+content_hash: "08ad1f1956e3"
+synced_at: "2026-07-09T00:59:25.322494"
 ---
 
 # @ohos.wifiext (WLAN扩展接口)

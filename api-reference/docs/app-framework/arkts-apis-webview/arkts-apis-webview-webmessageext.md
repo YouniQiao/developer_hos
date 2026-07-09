@@ -2,12 +2,15 @@
 title: "Class (WebMessageExt)"
 upstream_id: "harmonyos-references/arkts-apis-webview-webmessageext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:04.013032"
+content_hash: "7635967d8cf5"
+synced_at: "2026-07-09T00:58:51.491326"
 ---
 
 # Class (WebMessageExt)
 
-[WebMessagePort](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webmessageport)接口接收、发送的数据对象。
+WebMessageExt是[WebMessagePort](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webmessageport)接口中用于接收和发送的拓展数据对象，支持多种数据类型：字符串（STRING）、数值（NUMBER）、布尔值（BOOLEAN）、二进制数据（ARRAY_BUFFER）、数组（ARRAY）和错误对象（ERROR）。该类为ArkTS侧与HTML5侧之间的跨语言消息通信提供了结构化的数据载体，通过setType/getType设置和获取数据类型，再通过对应的setter/getter方法读写具体数据。
+
+WebMessageExt与WebMessagePort配合使用：WebMessagePort负责消息通道的建立和消息的收发，WebMessageExt作为消息的有效载荷在不同语言运行时之间传递。使用扩展接口[postMessageEventExt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webmessageport#postmessageeventext10)/[onMessageEventExt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webmessageport#onmessageeventext10)时，消息载体即为WebMessageExt对象。
 
 ![](./img/note_3.0-zh-cn.png)
 

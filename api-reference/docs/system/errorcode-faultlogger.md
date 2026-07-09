@@ -2,7 +2,8 @@
 title: "Faultlogger 错误码"
 upstream_id: "harmonyos-references/errorcode-faultlogger"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:49.978552"
+content_hash: "d5aaa95f04e5"
+synced_at: "2026-07-09T01:00:05.623626"
 ---
 
 # Faultlogger 错误码

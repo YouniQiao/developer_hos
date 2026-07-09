@@ -2,7 +2,8 @@
 title: "ArkUI_PickerIndicatorBackground"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-pickerindicatorbackground"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:59.238314"
+content_hash: "91e7babf2b6b"
+synced_at: "2026-07-09T00:58:47.867220"
 ---
 
 # ArkUI_PickerIndicatorBackground

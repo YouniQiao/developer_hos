@@ -2,7 +2,8 @@
 title: "@hms.enterpriseSpaceService.fileTransfer(空间数据传输)"
 upstream_id: "harmonyos-references/enterprisespace-spacedatatransfer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:23.965580"
+content_hash: "741166075409"
+synced_at: "2026-07-09T01:01:17.144867"
 ---
 
 # @hms.enterpriseSpaceService.fileTransfer(空间数据传输)

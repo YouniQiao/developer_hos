@@ -2,7 +2,8 @@
 title: "picture_native.h"
 upstream_id: "harmonyos-references/capi-picture-native-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:25.874323"
+content_hash: "c0ffd7ca0819"
+synced_at: "2026-07-09T01:00:33.461999"
 ---
 
 # picture_native.h
@@ -56,7 +57,7 @@ synced_at: "2026-06-24T20:52:25.874323"
 | [Image_ErrorCode OH_PictureNative_GetMetadata(OH_PictureNative *picture, Image_MetadataType metadataType, OH_PictureMetadata **metadata)](#oh_picturenative_getmetadata) | 获取主图的元数据。 |
 | [Image_ErrorCode OH_PictureNative_SetMetadata(OH_PictureNative *picture, Image_MetadataType metadataType, OH_PictureMetadata *metadata)](#oh_picturenative_setmetadata) | 设置主图的元数据。 |
 | [Image_ErrorCode OH_PictureNative_Release(OH_PictureNative *picture)](#oh_picturenative_release) | 释放OH_PictureNative指针。 |
-| [Image_ErrorCode OH_AuxiliaryPictureNative_Create(uint8_t *data, size_t dataLength, Image_Size *size, Image_AuxiliaryPictureType type, OH_AuxiliaryPictureNative **auxiliaryPicture)](#oh_auxiliarypicturenative_create) | 创建OH_AuxiliaryPictureNative指针。该接口仅支持传入[像素格式](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-pixelmap-native-h#pixel_format)为BGRA_8888的连续像素数据，会创建出RGBA_8888的辅助图。 |
+| [Image_ErrorCode OH_AuxiliaryPictureNative_Create(uint8_t *data, size_t dataLength, Image_Size *size, Image_AuxiliaryPictureType type, OH_AuxiliaryPictureNative **auxiliaryPicture)](#oh_auxiliarypicturenative_create) | 创建OH_AuxiliaryPictureNative指针。该接口仅支持传入[PIXEL_FORMAT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-pixelmap-native-h#pixel_format)为BGRA_8888的连续像素数据，会创建出RGBA_8888的辅助图。 |
 | [Image_ErrorCode OH_AuxiliaryPictureNative_WritePixels(OH_AuxiliaryPictureNative *auxiliaryPicture, uint8_t *source, size_t bufferSize)](#oh_auxiliarypicturenative_writepixels) | 读取缓冲区的图像像素数据，并将结果写入辅助图中。 |
 | [Image_ErrorCode OH_AuxiliaryPictureNative_ReadPixels(OH_AuxiliaryPictureNative *auxiliaryPicture, uint8_t *destination, size_t *bufferSize)](#oh_auxiliarypicturenative_readpixels) | 读取辅助图的像素数据，结果写入缓冲区。 |
 | [Image_ErrorCode OH_AuxiliaryPictureNative_GetType(OH_AuxiliaryPictureNative *auxiliaryPicture, Image_AuxiliaryPictureType *type)](#oh_auxiliarypicturenative_gettype) | 获取辅助图类型。 |
@@ -250,6 +251,8 @@ Image_ErrorCode OH_PictureNative_GetHdrComposedPixelmap(OH_PictureNative *pictur
 
 获取hdr图的OH_PixelmapNative指针。
 
+使用约束：picture和hdrPixelmap均不能为空指针。Picture不支持HDR合成时，接口会返回IMAGE_UNSUPPORTED_OPERATION。
+
 起始版本： 13
 
 参数：
@@ -273,6 +276,8 @@ Image_ErrorCode OH_PictureNative_GetHdrComposedPixelmapWithOptions(OH_PictureNat
  描述
 
 通过设置合成选项OH_ComposeOptions获取HDR图的OH_PixelmapNative指针。
+
+使用约束：picture、options和hdrPixelmap均不能为空指针。Picture不支持HDR合成时，接口会返回IMAGE_UNSUPPORTED_OPERATION。
 
 起始版本： 23
 
@@ -323,6 +328,8 @@ Image_ErrorCode OH_PictureNative_SetAuxiliaryPicture(OH_PictureNative *picture, 
 
 设置辅助图。
 
+使用约束：picture和auxiliaryPicture均不能为空指针，type必须为当前支持的辅助图类型，且必须与auxiliaryPicture对象自身的辅助图类型一致。
+
 起始版本： 13
 
 参数：
@@ -347,6 +354,8 @@ Image_ErrorCode OH_PictureNative_GetAuxiliaryPicture(OH_PictureNative *picture, 
  描述
 
 根据类型获取辅助图。
+
+使用约束：picture和auxiliaryPicture均不能为空指针，type必须为当前支持的辅助图类型。
 
 起始版本： 13
 
@@ -373,6 +382,8 @@ Image_ErrorCode OH_PictureNative_GetMetadata(OH_PictureNative *picture, Image_Me
 
 获取主图的元数据。
 
+使用约束：picture和metadata均不能为空指针，metadataType必须为Picture允许的元数据类型；不支持的元数据类型会返回IMAGE_UNSUPPORTED_METADATA。
+
 起始版本： 13
 
 参数：
@@ -397,6 +408,8 @@ Image_ErrorCode OH_PictureNative_SetMetadata(OH_PictureNative *picture, Image_Me
  描述
 
 设置主图的元数据。
+
+使用约束：picture和metadata均不能为空指针，metadataType必须为Picture允许的元数据类型。
 
 起始版本： 13
 
@@ -444,7 +457,7 @@ Image_ErrorCode OH_AuxiliaryPictureNative_Create(uint8_t *data, size_t dataLengt
 ```
  描述
 
-创建OH_AuxiliaryPictureNative指针。该接口仅支持传入[像素格式](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-pixelmap-native-h#pixel_format)为BGRA_8888的连续像素数据，会创建出RGBA_8888的辅助图。
+创建OH_AuxiliaryPictureNative指针。该接口仅支持传入[PIXEL_FORMAT](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-pixelmap-native-h#pixel_format)为BGRA_8888的连续像素数据，会创建出RGBA_8888的辅助图。
 
 起始版本： 13
 
@@ -473,6 +486,8 @@ Image_ErrorCode OH_AuxiliaryPictureNative_WritePixels(OH_AuxiliaryPictureNative 
 
 读取缓冲区的图像像素数据，并将结果写入辅助图中。
 
+使用约束：auxiliaryPicture和source均不能为空指针，bufferSize需与待写入像素数据大小匹配。
+
 起始版本： 13
 
 参数：
@@ -497,6 +512,8 @@ Image_ErrorCode OH_AuxiliaryPictureNative_ReadPixels(OH_AuxiliaryPictureNative *
  描述
 
 读取辅助图的像素数据，结果写入缓冲区。
+
+使用约束：auxiliaryPicture、destination和bufferSize均不能为空指针，bufferSize需表示destination可写入的缓冲区大小；接口执行成功后，bufferSize会更新为实际读取的数据大小。
 
 起始版本： 13
 
@@ -547,6 +564,8 @@ Image_ErrorCode OH_AuxiliaryPictureNative_GetInfo(OH_AuxiliaryPictureNative *aux
 
 获取辅助图信息。
 
+资源管理：接口成功返回的OH_AuxiliaryPictureInfo对象由调用方管理，使用完成后应调用OH_AuxiliaryPictureInfo_Release()释放。
+
 起始版本： 13
 
 参数：
@@ -570,6 +589,8 @@ Image_ErrorCode OH_AuxiliaryPictureNative_SetInfo(OH_AuxiliaryPictureNative *aux
  描述
 
 设置辅助图信息。
+
+资源管理：接口会读取并保存OH_AuxiliaryPictureInfo中的信息值，接口返回后调用方仍需自行管理该OH_AuxiliaryPictureInfo对象的生命周期。
 
 起始版本： 13
 

@@ -2,7 +2,8 @@
 title: "WebSocket_OpenResult"
 upstream_id: "harmonyos-references/capi-netstack-websocket-openresult"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:54.851852"
+content_hash: "07c8a368d7b8"
+synced_at: "2026-07-09T00:59:29.953187"
 ---
 
 # WebSocket_OpenResult

@@ -2,7 +2,8 @@
 title: "FormMenu"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-formmenu"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:52.902664"
+content_hash: "62983596b8dd"
+synced_at: "2026-07-09T00:58:15.791805"
 ---
 
 # FormMenu
@@ -217,10 +218,10 @@ struct WidgetCard {
 ```
  高级自定义控件界面
 
-![](./img/zh-cn_image_0000002626070904.jpeg)
+![](./img/zh-cn_image_0000002661612997.jpeg)
 
 调用高级自定义控件桌面加桌结果
 
 左侧是formbindingdata为空加桌结果，右侧是formbindingdata为{ data: 'share' }的加桌结果。
 
-![](./img/zh-cn_image_0000002656470181.jpeg)
+![](./img/zh-cn_image_0000002631413708.jpeg)

@@ -2,7 +2,8 @@
 title: "@ohos.wantAgent (WantAgent模块)"
 upstream_id: "harmonyos-references/js-apis-wantagent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:56.293848"
+content_hash: "3c375fd54db8"
+synced_at: "2026-07-09T00:57:11.623416"
 ---
 
 # @ohos.wantAgent (WantAgent模块)

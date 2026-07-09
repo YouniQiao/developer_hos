@@ -2,7 +2,8 @@
 title: "NetworkBoost_HandoverStart"
 upstream_id: "harmonyos-references/network-boost-c-struct-handover_start"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:57.757551"
+content_hash: "dd1df1facc88"
+synced_at: "2026-07-09T00:59:32.580430"
 ---
 
 # NetworkBoost_HandoverStart

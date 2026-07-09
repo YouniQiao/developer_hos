@@ -2,7 +2,8 @@
 title: "NetConnection"
 upstream_id: "harmonyos-references/capi-netconnection"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:52.605758"
+content_hash: "f1957e85c841"
+synced_at: "2026-07-09T00:59:28.508721"
 ---
 
 # NetConnection

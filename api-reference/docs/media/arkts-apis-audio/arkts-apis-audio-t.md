@@ -2,7 +2,8 @@
 title: "Types"
 upstream_id: "harmonyos-references/arkts-apis-audio-t"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:53.684414"
+content_hash: "f0bc04f40862"
+synced_at: "2026-07-09T01:00:08.623813"
 ---
 
 # Types

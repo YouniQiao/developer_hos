@@ -2,7 +2,8 @@
 title: "Http_HeaderValue"
 upstream_id: "harmonyos-references/capi-netstack-http-headervalue"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:55.207617"
+content_hash: "405057a0aff2"
+synced_at: "2026-07-09T00:59:30.215992"
 ---
 
 # Http_HeaderValue

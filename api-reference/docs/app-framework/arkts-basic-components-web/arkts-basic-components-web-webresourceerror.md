@@ -2,12 +2,13 @@
 title: "Class (WebResourceError)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-webresourceerror"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:07.157675"
+content_hash: "75347ba44483"
+synced_at: "2026-07-09T00:58:54.234894"
 ---
 
 # Class (WebResourceError)
 
-Web组件资源管理错误信息对象。示例代码参考[onErrorReceive事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onerrorreceive)。
+WebResourceError是Web组件中提供资源加载失败错误信息的类。该错误对象通过onErrorReceive和onHttpErrorReceive事件回调提供给应用，封装了错误详情用于调试和错误处理。通常与WebResourceRequest配合使用以确定哪个资源加载失败。示例代码参考[onErrorReceive事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-events#onerrorreceive)。
 
 ![](./img/note_3.0-zh-cn.png)
 

@@ -2,7 +2,8 @@
 title: "NativeWindowBuffer"
 upstream_id: "harmonyos-references/capi-nativewindow-nativewindowbuffer"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:11.263033"
+content_hash: "b15c363eee9d"
+synced_at: "2026-07-09T01:01:04.978977"
 ---
 
 # NativeWindowBuffer

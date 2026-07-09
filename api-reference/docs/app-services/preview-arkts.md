@@ -2,7 +2,8 @@
 title: "filePreview（文件预览）"
 upstream_id: "harmonyos-references/preview-arkts"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:48.330825"
+content_hash: "f5bfa94d792a"
+synced_at: "2026-07-09T01:01:36.655444"
 ---
 
 # filePreview（文件预览）

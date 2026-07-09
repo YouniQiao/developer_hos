@@ -2,7 +2,8 @@
 title: "@ohos.application.formError (formError)"
 upstream_id: "harmonyos-references/js-apis-application-formerror"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:18.166030"
+content_hash: "1833182015eb"
+synced_at: "2026-07-09T00:59:03.346062"
 ---
 
 # @ohos.application.formError (formError)
@@ -25,7 +26,7 @@ import { formError } from '@kit.FormKit';
 
 #### FormError
 
-枚举，支持的卡片类型。
+枚举，卡片错误码。
 
 系统能力： SystemCapability.Ability.Form
 

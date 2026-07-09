@@ -2,7 +2,8 @@
 title: "rcp_quic.h"
 upstream_id: "harmonyos-references/rcp_quic_h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:59.323962"
+content_hash: "9c2910a44777"
+synced_at: "2026-07-09T00:59:33.317670"
 ---
 
 # rcp_quic.h

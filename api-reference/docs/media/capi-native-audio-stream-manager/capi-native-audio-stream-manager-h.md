@@ -2,7 +2,8 @@
 title: "native_audio_stream_manager.h"
 upstream_id: "harmonyos-references/capi-native-audio-stream-manager-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:55.303913"
+content_hash: "4320ff40ff07"
+synced_at: "2026-07-09T01:00:10.003037"
 ---
 
 # native_audio_stream_manager.h

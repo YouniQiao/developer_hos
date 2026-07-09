@@ -2,7 +2,8 @@
 title: "@ohos.FusionConnectivity.PartnerAgentExtensionAbility (支持设备状态通知的ExtensionAbility组件)"
 upstream_id: "harmonyos-references/js-apis-fusionconnectivity-partneragentextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:47.403723"
+content_hash: "6a553be18c53"
+synced_at: "2026-07-09T00:59:24.383507"
 ---
 
 # @ohos.FusionConnectivity.PartnerAgentExtensionAbility (支持设备状态通知的ExtensionAbility组件)

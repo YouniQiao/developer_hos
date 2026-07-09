@@ -2,7 +2,8 @@
 title: "SecurityAntivirus_Antivirus"
 upstream_id: "harmonyos-references/devicesecurity-capi-structs-securityantivirus"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:36.959217"
+content_hash: "49e5dc8371b9"
+synced_at: "2026-07-09T00:59:16.333356"
 ---
 
 # SecurityAntivirus_Antivirus

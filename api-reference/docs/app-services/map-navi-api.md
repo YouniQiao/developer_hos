@@ -2,7 +2,8 @@
 title: "navi（路径规划）"
 upstream_id: "harmonyos-references/map-navi-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:35.314533"
+content_hash: "fd16a62d2b43"
+synced_at: "2026-07-09T01:01:27.189568"
 ---
 
 # navi（路径规划）
@@ -305,24 +306,22 @@ getWalkingRoutes(context: common.Context, params: RouteParams): Promise<RouteRes
 示例：
 
 ```
-let params: navi.DrivingRouteParams = {
+let params: navi.RouteParams = {
   origins: [{
-    "latitude": 31.982129213545843,
-    "longitude": 120.27745557768591
+    latitude: 39.992281,
+    longitude: 116.31088
+  }, {
+    latitude: 39.996,
+    longitude: 116.311
   }],
   destination: {
-    "latitude": 31.9821213545843,
-    "longitude": 120.277557768591
+    latitude: 39.94,
+    longitude: 116.311
   },
-  waypoints: [
-    { "latitude": 31.967236140819114, "longitude": 120.27142088866847 },
-    { "latitude": 31.972868002238872, "longitude": 120.2943211817165 },
-    { "latitude": 31.98469327973332, "longitude": 120.29101107384068 }
-  ],
   language: "zh_CN"
 };
 const result = await navi.getWalkingRoutes(this.getUIContext().getHostContext(), params);
-console.info("Succeeded in getting walking routes.");
+console.info("Succeeded in getting cycling routes.");
 ```
 
 #### getCyclingRoutes

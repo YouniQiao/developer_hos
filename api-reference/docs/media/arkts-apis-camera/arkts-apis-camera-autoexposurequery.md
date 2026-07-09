@@ -2,7 +2,8 @@
 title: "Interface (AutoExposureQuery)"
 upstream_id: "harmonyos-references/arkts-apis-camera-autoexposurequery"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:10.612620"
+content_hash: "74fd34df49bb"
+synced_at: "2026-07-09T01:00:21.176488"
 ---
 
 # Interface (AutoExposureQuery)

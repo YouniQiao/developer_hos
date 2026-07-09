@@ -2,7 +2,8 @@
 title: "oh_pasteboard_err_code.h"
 upstream_id: "harmonyos-references/capi-oh-pasteboard-err-code-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:11.266711"
+content_hash: "f781aeb58d69"
+synced_at: "2026-07-09T00:59:43.072836"
 ---
 
 # oh_pasteboard_err_code.h

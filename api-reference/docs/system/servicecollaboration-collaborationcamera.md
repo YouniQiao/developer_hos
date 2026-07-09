@@ -2,7 +2,8 @@
 title: "CollaborationCamera (跨设备互通组件)"
 upstream_id: "harmonyos-references/servicecollaboration-collaborationcamera"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:03.211291"
+content_hash: "53cd53ea28d7"
+synced_at: "2026-07-09T00:59:36.553518"
 ---
 
 # CollaborationCamera (跨设备互通组件)

@@ -2,7 +2,8 @@
 title: "dataTransfer（星闪数传能力）"
 upstream_id: "harmonyos-references/nearlink-data-transfer-api"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:50.607098"
+content_hash: "bfb423f98f9d"
+synced_at: "2026-07-09T00:59:27.276961"
 ---
 
 # dataTransfer（星闪数传能力）

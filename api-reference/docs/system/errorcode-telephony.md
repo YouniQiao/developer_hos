@@ -1,9 +1,12 @@
 ---
+
 title: "电话子系统错误码"
 upstream_id: "harmonyos-references/errorcode-telephony"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:05.415242"
+synced_at: "2026-07-09T00:59:38.850988"
+content_hash: "c84d3f22a06b"
 ---
+
 
 # 电话子系统错误码
 

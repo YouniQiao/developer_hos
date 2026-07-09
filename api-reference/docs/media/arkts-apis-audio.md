@@ -1,9 +1,12 @@
 ---
+
 title: "模块描述"
 upstream_id: "harmonyos-references/arkts-apis-audio"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:51.934907"
+synced_at: "2026-07-09T01:00:06.808299"
+content_hash: "142c088aec61"
 ---
+
 
 # 模块描述
 

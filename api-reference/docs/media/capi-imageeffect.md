@@ -2,7 +2,8 @@
 title: "ImageEffect"
 upstream_id: "harmonyos-references/capi-imageeffect"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:25.184749"
+content_hash: "8c79343ab214"
+synced_at: "2026-07-09T01:00:31.564378"
 ---
 
 # ImageEffect

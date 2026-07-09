@@ -2,7 +2,8 @@
 title: "OH_ArkUI_LeadingMarginSpanDrawInfo"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-oh-arkui-leadingmarginspandrawinfo"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:55.914723"
+content_hash: "3196fddf1905"
+synced_at: "2026-07-09T00:58:45.541498"
 ---
 
 # OH_ArkUI_LeadingMarginSpanDrawInfo

@@ -2,7 +2,8 @@
 title: "Interface (ManualFocus)"
 upstream_id: "harmonyos-references/arkts-apis-camera-manualfocus"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:12.003737"
+content_hash: "d75d5a410a23"
+synced_at: "2026-07-09T01:00:22.171534"
 ---
 
 # Interface (ManualFocus)

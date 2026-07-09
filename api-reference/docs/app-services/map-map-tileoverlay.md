@@ -2,7 +2,8 @@
 title: "Interface (TileOverlay)"
 upstream_id: "harmonyos-references/map-map-tileoverlay"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:34.248613"
+content_hash: "b0cdecff8a0e"
+synced_at: "2026-07-09T01:01:26.089630"
 ---
 
 # Interface (TileOverlay)

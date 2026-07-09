@@ -2,7 +2,8 @@
 title: "FunctionalInput（Input组件）"
 upstream_id: "harmonyos-references/scenario-fusion-functionalinput"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:52.506332"
+content_hash: "05fc7c014f45"
+synced_at: "2026-07-09T01:01:39.075145"
 ---
 
 # FunctionalInput（Input组件）

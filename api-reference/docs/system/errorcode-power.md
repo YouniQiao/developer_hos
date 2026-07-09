@@ -2,7 +2,8 @@
 title: "系统电源管理错误码"
 upstream_id: "harmonyos-references/errorcode-power"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:13.458678"
+content_hash: "c0c87910ed67"
+synced_at: "2026-07-09T00:59:44.966877"
 ---
 
 # 系统电源管理错误码

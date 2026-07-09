@@ -2,7 +2,8 @@
 title: "AudioConverter"
 upstream_id: "harmonyos-references/capi-audioconverter"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:54.704759"
+content_hash: "196ff6e8fa99"
+synced_at: "2026-07-09T01:00:09.341741"
 ---
 
 # AudioConverter

@@ -2,7 +2,8 @@
 title: "@system.bluetooth (蓝牙)"
 upstream_id: "harmonyos-references/js-apis-system-bluetooth"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:49.276988"
+content_hash: "ec46d1cb3bcd"
+synced_at: "2026-07-09T00:59:25.380693"
 ---
 
 # @system.bluetooth (蓝牙)

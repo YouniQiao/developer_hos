@@ -2,7 +2,8 @@
 title: "Badge"
 upstream_id: "harmonyos-references/ts-container-badge"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:48:24.743879"
+content_hash: "539b0fe23865"
+synced_at: "2026-07-09T00:58:00.737100"
 ---
 
 # Badge
@@ -75,7 +76,7 @@ Badge(value: BadgeParamWithString)
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | position | [BadgePosition](#badgeposition枚举说明)|[Position10+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#position) | 否 | 是 | 设置提示点显示位置。 默认值：BadgePosition.RightTop **说明：** Position作为入参，不支持设置百分比；设置为非法值时，默认(0,0)处理。(0,0)为组件左上角位置。 BadgePosition作为入参时，会跟随[Direction](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#direction)属性控制镜像显示。 |
-| style | [BadgeStyle](#badgestyle对象说明) | 否 | 否 | Badge组件可设置样式，支持设置文本颜色、尺寸、圆点颜色和尺寸。 |
+| style | [BadgeStyle](#badgestyle对象说明) | 否 | 否 | Badge组件可设置样式，支持设置文本颜色、大小、提示点颜色和提示点大小。 |
 
 #### BadgeParamWithNumber对象说明
 
@@ -118,13 +119,13 @@ BadgeParamWithString继承自[BadgeParam](#badgeparam对象说明)，具有Badge
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| RightTop | - | 圆点显示在右上角。 |
-| Right | - | 圆点显示在右侧纵向居中。 |
-| Left | - | 圆点显示在左侧纵向居中。 |
+| RightTop | - | 提示点显示在右上角。 |
+| Right | - | 提示点显示在右侧纵向居中。 |
+| Left | - | 提示点显示在左侧纵向居中。 |
 
 #### BadgeStyle对象说明
 
-Badge的样式。包括文本颜色、尺寸、字重、圆点颜色和尺寸。
+Badge的样式。包括文本颜色、大小、字重、提示点颜色和提示点大小。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -309,7 +310,7 @@ struct BadgeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656469959.png)
+ ![](./img/zh-cn_image_0000002631253592.png)
 
 #### [h2]示例2（设置数字控制标记显隐）
 
@@ -346,7 +347,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350007.gif)
+ ![](./img/zh-cn_image_0000002661612773.gif)
 
 #### [h2]示例3（设置外描边和文本延伸方式）
 
@@ -395,4 +396,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230594.png)
+ ![](./img/zh-cn_image_0000002631413484.png)

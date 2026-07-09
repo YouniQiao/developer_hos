@@ -2,7 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/fast-kit-errorcode"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:14.250627"
+content_hash: "88561676138b"
+synced_at: "2026-07-09T00:59:45.468006"
 ---
 
 # ArkTS API错误码

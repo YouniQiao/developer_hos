@@ -2,7 +2,8 @@
 title: "HdsListItemCard"
 upstream_id: "harmonyos-references/ui-design-hdslistitemcard"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:27.399055"
+content_hash: "03a46145afb9"
+synced_at: "2026-07-09T00:59:10.019012"
 ---
 
 # HdsListItemCard
@@ -1689,4 +1690,4 @@ struct HdsListItemCardExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656350647.jpg)
+ ![](./img/zh-cn_image_0000002661613417.jpg)

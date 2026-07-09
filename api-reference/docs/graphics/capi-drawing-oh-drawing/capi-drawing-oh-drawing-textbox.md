@@ -2,7 +2,8 @@
 title: "OH_Drawing_TextBox"
 upstream_id: "harmonyos-references/capi-drawing-oh-drawing-textbox"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:53:08.306739"
+content_hash: "1fbdea5437eb"
+synced_at: "2026-07-09T01:01:02.457940"
 ---
 
 # OH_Drawing_TextBox

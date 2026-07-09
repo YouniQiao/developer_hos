@@ -2,7 +2,8 @@
 title: "设置数据项错误码"
 upstream_id: "harmonyos-references/errorcode-settings"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:13.698183"
+content_hash: "09b8a15097e8"
+synced_at: "2026-07-09T00:59:45.095493"
 ---
 
 # 设置数据项错误码

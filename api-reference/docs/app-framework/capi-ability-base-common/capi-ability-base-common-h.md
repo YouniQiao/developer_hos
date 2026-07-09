@@ -2,7 +2,8 @@
 title: "ability_base_common.h"
 upstream_id: "harmonyos-references/capi-ability-base-common-h"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:57.795839"
+content_hash: "ab695203660e"
+synced_at: "2026-07-09T00:57:12.175778"
 ---
 
 # ability_base_common.h

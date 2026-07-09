@@ -2,7 +2,8 @@
 title: "@ohos.application.BackupExtensionAbility (备份恢复扩展能力)"
 upstream_id: "harmonyos-references/js-apis-application-backupextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:12.674785"
+content_hash: "2af4eb529291"
+synced_at: "2026-07-09T00:58:59.058687"
 ---
 
 # @ohos.application.BackupExtensionAbility (备份恢复扩展能力)

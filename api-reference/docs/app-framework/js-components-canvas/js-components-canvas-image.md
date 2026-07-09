@@ -2,7 +2,8 @@
 title: "Image对象"
 upstream_id: "harmonyos-references/js-components-canvas-image"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:08.810903"
+content_hash: "e80c0adec7d2"
+synced_at: "2026-07-09T00:58:23.369315"
 ---
 
 # Image对象
@@ -49,4 +50,4 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002656350343.png)
+ ![](./img/zh-cn_image_0000002661613113.png)

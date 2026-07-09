@@ -2,7 +2,8 @@
 title: "Native_Bundle"
 upstream_id: "harmonyos-references/capi-native-bundle"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:46:57.594728"
+content_hash: "5595efe5a824"
+synced_at: "2026-07-09T00:57:12.003687"
 ---
 
 # Native_Bundle

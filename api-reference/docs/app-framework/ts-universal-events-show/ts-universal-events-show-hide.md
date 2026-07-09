@@ -2,7 +2,8 @@
 title: "挂载卸载事件"
 upstream_id: "harmonyos-references/ts-universal-events-show-hide"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:34.035757"
+content_hash: "9b95ea602541"
+synced_at: "2026-07-09T00:57:37.252166"
 ---
 
 # 挂载卸载事件
@@ -156,4 +157,4 @@ struct AppearExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349561.gif)
+ ![](./img/zh-cn_image_0000002631253134.gif)

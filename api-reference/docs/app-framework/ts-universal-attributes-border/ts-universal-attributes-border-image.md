@@ -2,7 +2,8 @@
 title: "图片边框设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-border-image"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:37.772920"
+content_hash: "2d879000816d"
+synced_at: "2026-07-09T00:57:38.969853"
 ---
 
 # 图片边框设置
@@ -116,7 +117,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002656349593.png)
+ ![](./img/zh-cn_image_0000002631253168.png)
 
 #### [h2]示例2（动态调整属性值）
 
@@ -215,7 +216,7 @@ struct BorderImage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230180.gif)
+ ![](./img/zh-cn_image_0000002661612351.gif)
 
 #### [h2]示例3（使用LocalizedEdgeWidths类型值）
 
@@ -374,4 +375,4 @@ struct BorderImage {
 ```
  显示语言示例图
 
-![](./img/zh-cn_image_0000002626070270.png)
+![](./img/zh-cn_image_0000002631413058.png)

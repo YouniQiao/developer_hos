@@ -2,7 +2,8 @@
 title: "系统资源错误码"
 upstream_id: "harmonyos-references/errorcode-system-resource"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:00.452011"
+content_hash: "b12641854e51"
+synced_at: "2026-07-09T00:58:48.642850"
 ---
 
 # 系统资源错误码
@@ -13,7 +14,7 @@ synced_at: "2026-06-24T20:50:00.452011"
 
 错误信息
 
-System resources does not exist.
+System resource does not exist.
 
 错误描述
 

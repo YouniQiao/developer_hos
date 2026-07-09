@@ -2,7 +2,8 @@
 title: "OhosImageSize"
 upstream_id: "harmonyos-references/capi-image-ohosimagesize"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:30.148678"
+content_hash: "e40ba984743e"
+synced_at: "2026-07-09T01:00:35.524746"
 ---
 
 # OhosImageSize

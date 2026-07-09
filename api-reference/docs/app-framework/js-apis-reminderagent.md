@@ -2,7 +2,8 @@
 title: "@ohos.reminderAgent (后台代理提醒)"
 upstream_id: "harmonyos-references/js-apis-reminderagent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:50:10.849252"
+content_hash: "465a5bbabb10"
+synced_at: "2026-07-09T00:58:57.305254"
 ---
 
 # @ohos.reminderAgent (后台代理提醒)

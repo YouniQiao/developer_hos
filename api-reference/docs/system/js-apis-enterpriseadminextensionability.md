@@ -2,7 +2,8 @@
 title: "@ohos.enterprise.EnterpriseAdminExtensionAbility（企业设备管理扩展能力）"
 upstream_id: "harmonyos-references/js-apis-enterpriseadminextensionability"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:24.500909"
+content_hash: "814b84083d37"
+synced_at: "2026-07-09T00:59:53.607696"
 ---
 
 # @ohos.enterprise.EnterpriseAdminExtensionAbility（企业设备管理扩展能力）

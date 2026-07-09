@@ -1,9 +1,12 @@
 ---
+
 title: "系统定义的公共事件"
 upstream_id: "harmonyos-references/commoneventmanager-definitions"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:08.303484"
+synced_at: "2026-07-09T00:59:41.603668"
+content_hash: "382f4c3f0f67"
 ---
+
 
 # 系统定义的公共事件
 

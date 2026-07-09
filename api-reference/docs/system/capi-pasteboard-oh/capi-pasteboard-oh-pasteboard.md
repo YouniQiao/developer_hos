@@ -2,7 +2,8 @@
 title: "OH_Pasteboard"
 upstream_id: "harmonyos-references/capi-pasteboard-oh-pasteboard"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:12.039286"
+content_hash: "894176a28e97"
+synced_at: "2026-07-09T00:59:43.763489"
 ---
 
 # OH_Pasteboard

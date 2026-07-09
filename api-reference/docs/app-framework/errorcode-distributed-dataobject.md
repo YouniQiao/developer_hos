@@ -2,7 +2,8 @@
 title: "分布式数据对象错误码"
 upstream_id: "harmonyos-references/errorcode-distributed-dataobject"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:47:11.740279"
+content_hash: "a79fa14e093b"
+synced_at: "2026-07-09T00:57:22.200445"
 ---
 
 # 分布式数据对象错误码

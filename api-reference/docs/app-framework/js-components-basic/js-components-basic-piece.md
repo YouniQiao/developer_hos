@@ -2,7 +2,8 @@
 title: "piece"
 upstream_id: "harmonyos-references/js-components-basic-piece"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:06.697112"
+content_hash: "e4c4c83aee87"
+synced_at: "2026-07-09T00:58:22.139611"
 ---
 
 # piece
@@ -75,4 +76,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626230896.gif)
+ ![](./img/zh-cn_image_0000002631413790.gif)

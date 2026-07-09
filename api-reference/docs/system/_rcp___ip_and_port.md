@@ -2,7 +2,8 @@
 title: "Rcp_IpAndPort"
 upstream_id: "harmonyos-references/_rcp___ip_and_port"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:00.795623"
+content_hash: "e8d9bcdc257d"
+synced_at: "2026-07-09T00:59:34.780443"
 ---
 
 # Rcp_IpAndPort

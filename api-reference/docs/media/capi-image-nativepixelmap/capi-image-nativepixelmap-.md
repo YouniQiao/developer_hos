@@ -2,7 +2,8 @@
 title: "NativePixelMap_"
 upstream_id: "harmonyos-references/capi-image-nativepixelmap-"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:30.445495"
+content_hash: "b9697832759a"
+synced_at: "2026-07-09T01:00:35.741660"
 ---
 
 # NativePixelMap_

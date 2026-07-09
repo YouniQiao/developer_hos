@@ -2,7 +2,8 @@
 title: "@ohos.selectionInput.SelectionExtensionContext (划词扩展上下文)"
 upstream_id: "harmonyos-references/js-apis-selectioninput-selectionextensioncontext"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:07.988311"
+content_hash: "6ac1eb92ca97"
+synced_at: "2026-07-09T00:59:40.429115"
 ---
 
 # @ohos.selectionInput.SelectionExtensionContext (划词扩展上下文)

@@ -2,7 +2,8 @@
 title: "animate"
 upstream_id: "harmonyos-references/js-components-svg-animate"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:49:13.164982"
+content_hash: "a81bef6360f7"
+synced_at: "2026-07-09T00:58:25.317724"
 ---
 
 # animate
@@ -51,7 +52,7 @@ synced_at: "2026-06-24T20:49:13.164982"
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002656350365.gif)
+ ![](./img/zh-cn_image_0000002661613135.gif)
 
 ```
 <!-- xxx.hml -->
@@ -64,7 +65,7 @@ synced_at: "2026-06-24T20:49:13.164982"
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002626230952.gif)
+ ![](./img/zh-cn_image_0000002631413846.gif)
 
 ```
 <!-- xxx.hml -->
@@ -76,7 +77,7 @@ synced_at: "2026-06-24T20:49:13.164982"
   </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002626071042.gif)
+ ![](./img/zh-cn_image_0000002661733077.gif)
 
 ```
 <!-- xxx.hml -->
@@ -107,4 +108,4 @@ synced_at: "2026-06-24T20:49:13.164982"
     </svg>
 </div>
 ```
- ![](./img/zh-cn_image_0000002656470319.gif)
+ ![](./img/zh-cn_image_0000002631253956.gif)

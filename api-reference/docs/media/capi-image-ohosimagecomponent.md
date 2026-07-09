@@ -2,7 +2,8 @@
 title: "OhosImageComponent"
 upstream_id: "harmonyos-references/capi-image-ohosimagecomponent"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:52:30.009541"
+content_hash: "e85ee2706a3b"
+synced_at: "2026-07-09T01:00:35.544640"
 ---
 
 # OhosImageComponent

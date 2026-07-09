@@ -2,7 +2,8 @@
 title: "@ohos.intelligentScene (情景模式)"
 upstream_id: "harmonyos-references/js-apis-intelligentscene"
 catalog: "harmonyos-references"
-synced_at: "2026-06-24T20:51:09.301024"
+content_hash: "8c628483f02d"
+synced_at: "2026-07-09T00:59:41.603203"
 ---
 
 # @ohos.intelligentScene (情景模式)
