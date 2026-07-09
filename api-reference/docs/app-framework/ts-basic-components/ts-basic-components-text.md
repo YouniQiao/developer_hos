@@ -2,8 +2,8 @@
 title: "Text"
 upstream_id: "harmonyos-references/ts-basic-components-text"
 catalog: "harmonyos-references"
-content_hash: "b0e6df62770e"
-synced_at: "2026-07-09T00:57:56.781208"
+content_hash: "f22d3208d493"
+synced_at: "2026-07-09T17:23:54.681017"
 ---
 
 # Text
@@ -616,7 +616,7 @@ fontFeature(value: string)
 
 fontFeature属性列表：
 
-![](./img/zh-cn_image_0000002631413302.png)
+![](./img/zh-cn_image_0000002664329753.png)
 
 设置fontFeature属性，fontFeature是OpenType字体的高级排版能力，如支持连字、数字等宽等特性，一般用在自定义字体中，其能力需要字体本身支持。
 
@@ -1934,7 +1934,7 @@ struct TextExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732533.gif)
+ ![](./img/zh-cn_image_0000002633850642.gif)
 
 #### [h2]示例2（设置文本样式）
 
@@ -2053,7 +2053,7 @@ struct TextExample2 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253412.gif)
+ ![](./img/zh-cn_image_0000002634010546.gif)
 
 #### [h2]示例3（设置文本超长省略）
 
@@ -2162,7 +2162,7 @@ struct TextExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612597.gif)
+ ![](./img/zh-cn_image_0000002664209695.gif)
 
 #### [h2]示例4（设置文本断行及折行）
 
@@ -2246,7 +2246,7 @@ struct TextExample4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413304.gif)
+ ![](./img/zh-cn_image_0000002664329755.gif)
 
 #### [h2]示例5（设置文本选中和复制）
 
@@ -2299,7 +2299,7 @@ struct TextExample5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732535.gif)
+ ![](./img/zh-cn_image_0000002633850644.gif)
 
 #### [h2]示例6（设置文本自适应和缩放倍数限制范围）
 
@@ -2343,7 +2343,7 @@ struct TextExample6 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253414.png)
+ ![](./img/zh-cn_image_0000002634010548.png)
 
 #### [h2]示例7（设置文本识别）
 
@@ -2411,7 +2411,7 @@ struct TextExample7 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612599.png)
+ ![](./img/zh-cn_image_0000002664209697.png)
 
 #### [h2]示例8（文本绑定自定义菜单）
 
@@ -2532,7 +2532,7 @@ function MenuStyles() {
   .backgroundColor('#F0F0F0')
 }
 ```
- ![](./img/zh-cn_image_0000002631413306.gif)
+ ![](./img/zh-cn_image_0000002664329757.gif)
 
 #### [h2]示例9（设置文本特性与行间距）
 
@@ -2590,7 +2590,7 @@ struct TextExample9 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732537.png)
+ ![](./img/zh-cn_image_0000002633850646.png)
 
 #### [h2]示例10（获取文本信息）
 
@@ -2676,7 +2676,7 @@ struct TextExample10 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253418.gif)
+ ![](./img/zh-cn_image_0000002634010550.gif)
 
 #### [h2]示例11（实现键盘框选文本）
 
@@ -2704,7 +2704,7 @@ struct TextExample11 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612601.gif)
+ ![](./img/zh-cn_image_0000002664209699.gif)
 
 #### [h2]示例12（文本扩展自定义菜单）
 
@@ -2792,7 +2792,7 @@ struct TextExample12 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413308.gif)
+ ![](./img/zh-cn_image_0000002664329759.gif)
 
 #### [h2]示例13（配置隐私隐藏）
 
@@ -2814,7 +2814,7 @@ struct TextExample13 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732539.gif)
+ ![](./img/zh-cn_image_0000002633850648.gif)
 
 #### [h2]示例14（设置中西文自动间距）
 
@@ -2840,7 +2840,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253420.png)
+ ![](./img/zh-cn_image_0000002634010552.png)
 
 #### [h2]示例15（文本颜色按线性或径向渐变）
 
@@ -2907,7 +2907,7 @@ struct ShaderColorStyle {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612603.png)
+ ![](./img/zh-cn_image_0000002664209701.png)
 
 #### [h2]示例16（配置除去行尾空格）
 
@@ -2937,7 +2937,7 @@ struct TextExample16 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413310.png)
+ ![](./img/zh-cn_image_0000002664329761.png)
 
 #### [h2]示例17（文本垂直对齐）
 
@@ -2967,7 +2967,7 @@ struct TextExample14 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732541.png)
+ ![](./img/zh-cn_image_0000002633850650.png)
 
 #### [h2]示例18（文本翻牌动效）
 
@@ -3000,7 +3000,7 @@ struct TextNumberTransition {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253422.gif)
+ ![](./img/zh-cn_image_0000002634010554.gif)
 
 #### [h2]示例19（文本内容区垂直对齐）
 
@@ -3025,7 +3025,7 @@ struct TextContentAlignExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612605.png)
+ ![](./img/zh-cn_image_0000002664209703.png)
 
 #### [h2]示例20（倍数行高和最大最小行高）
 
@@ -3068,7 +3068,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413312.png)
+ ![](./img/zh-cn_image_0000002664329763.png)
 
 #### [h2]示例21（文本设置显示最小行数）
 
@@ -3099,7 +3099,7 @@ struct TextExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732543.png)
+ ![](./img/zh-cn_image_0000002633850652.png)
 
 #### [h2]示例22（设置文本选择区域并高亮显示）
 
@@ -3130,7 +3130,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253424.gif)
+ ![](./img/zh-cn_image_0000002634010556.gif)
 
 #### [h2]示例23（设置行首标点压缩）
 
@@ -3160,7 +3160,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612607.gif)
+ ![](./img/zh-cn_image_0000002664209705.gif)
 
 #### [h2]示例24（设置自适应间距）
 
@@ -3223,7 +3223,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413314.gif)
+ ![](./img/zh-cn_image_0000002664329765.gif)
 
 #### [h2]示例25（设置文本拖拽时的背板样式）
 
@@ -3249,7 +3249,7 @@ struct TextTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732545.png)
+ ![](./img/zh-cn_image_0000002633850654.png)
 
 #### [h2]示例26（设置文本排版方向）
 
@@ -3290,7 +3290,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253426.png)
+ ![](./img/zh-cn_image_0000002634010558.png)
 
 #### [h2]示例27（获取指定坐标和范围对应的文本信息）
 
@@ -3311,8 +3311,6 @@ struct TextExample10 {
   @State str2: string = ""
   @State str3: string = ""
   @State str4: string = ""
-  textStyleAttrs: TextStyle =
-    new TextStyle({ fontWeight: FontWeight.Bolder, fontSize: LengthMetrics.vp(24), fontStyle: FontStyle.Italic });
   titleParagraphStyleAttr: ParagraphStyle =
     new ParagraphStyle({ paragraphSpacing: LengthMetrics.px(50), textIndent: LengthMetrics.vp(15) });
   mutableStyledString: MutableStyledString =
@@ -3366,7 +3364,7 @@ struct TextExample10 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612609.gif)
+ ![](./img/zh-cn_image_0000002664209707.gif)
 
 #### [h2]示例28（设置文本排版时是否使能孤字优化）
 
@@ -3404,7 +3402,7 @@ struct TextExample {
 ```
  该效果图会因设备尺寸差异有显示区别，仅供参考。
 
-![](./img/zh-cn_image_0000002631413316.png)
+![](./img/zh-cn_image_0000002664329767.png)
 
 #### [h2]示例29（设置可变字体的属性）
 
@@ -3433,7 +3431,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732549.gif)
+ ![](./img/zh-cn_image_0000002633850656.gif)
 
 #### [h2]示例30（设置图片预览菜单）
 
@@ -3479,7 +3477,7 @@ struct TextExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253428.gif)
+ ![](./img/zh-cn_image_0000002634010560.gif)
 
 #### [h2]示例31（设置文本选择的AI菜单）
 
@@ -3507,4 +3505,4 @@ struct Demo31 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612611.gif)
+ ![](./img/zh-cn_image_0000002664209709.gif)

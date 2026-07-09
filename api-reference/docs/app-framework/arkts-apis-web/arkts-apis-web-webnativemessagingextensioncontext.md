@@ -2,8 +2,8 @@
 title: "@ohos.web.WebNativeMessagingExtensionContext (Web Native Messaging Extension Context)"
 upstream_id: "harmonyos-references/arkts-apis-web-webnativemessagingextensioncontext"
 catalog: "harmonyos-references"
-content_hash: "bc729db6cfff"
-synced_at: "2026-07-09T00:58:52.828407"
+content_hash: "a1df60c4af5c"
+synced_at: "2026-07-09T17:25:37.575177"
 ---
 
 # @ohos.web.WebNativeMessagingExtensionContext (Web Native Messaging Extension Context)
@@ -62,7 +62,7 @@ startAbility(want: Want, options?: StartOptions): Promise<void>
 | 16000009 | An ability cannot be started or stopped in Wukong mode. |
 | 16000010 | The call with the continuation and prepare continuation flag is forbidden. |
 | 16000011 | The context does not exist. |
-| 16000012 | The application is controlled. |
+| 16000012 | The application is controlled by the AppGallery and cannot be started. |
 | 16000013 | The application is controlled by EDM. |
 | 16000019 | No matching ability is found. |
 | 16000050 | Internal error. Possible causes: 1. Failed to connect to the system service; 2. The system service failed to communicate with dependency module. |
@@ -81,6 +81,7 @@ startAbility(want: Want, options?: StartOptions): Promise<void>
 ```
 import { WebNativeMessagingExtensionAbility, ConnectionInfo } from '@kit.ArkWeb';
 import { Want } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 export class MyWebNativeMessagingExtension extends WebNativeMessagingExtensionAbility {
   onConnectNative(info: ConnectionInfo): void {
@@ -93,7 +94,8 @@ export class MyWebNativeMessagingExtension extends WebNativeMessagingExtensionAb
         context.startAbility(abilityWant);
         console.info('Ability started successfully');
     } catch (err) {
-        console.error(`Failed to start ability. Code: ${err.code}, Message: ${err.message}`);
+        console.error(`Failed to start ability. Code: ${(err as BusinessError).code},
+        Message: ${e(err as BusinessError)rr.message}`);
     }
   }
 }
@@ -164,6 +166,7 @@ UIAbility被启动后，有如下情况:
 ```
 import { WebNativeMessagingExtensionAbility, ConnectionInfo } from '@kit.ArkWeb';
 import { Want, common } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 export class MyWebNativeMessagingExtension extends WebNativeMessagingExtensionAbility {
   onConnectNative(info: ConnectionInfo): void {
@@ -178,11 +181,13 @@ export class MyWebNativeMessagingExtension extends WebNativeMessagingExtensionAb
         if (result.want) {
           console.info(`Result data: ${JSON.stringify(result.want)}`);
         }
-      }).catch((err: Error) => {
-        console.error(`Failed to start ability. Code: ${err.name}, Message: ${err.message}`);
+      }).catch((err: BusinessError) => {
+        console.error(`Failed to start ability. Code: ${(err as BusinessError).code},
+        Message: ${(err as BusinessError).message}`);
       });
     } catch (err) {
-      console.error(`Failed to start ability. Code: ${(err as Error).name}, Message: ${(err as Error).message}`);
+      console.error(`Failed to start ability. Code: ${(err as BusinessError).code},
+      Message: ${(err as BusinessError).message}`);
     }
   }
 }
@@ -218,6 +223,7 @@ terminateSelf(): Promise<void>
 
 ```
 import { WebNativeMessagingExtensionAbility, ConnectionInfo } from '@kit.ArkWeb';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 export class MyWebNativeMessagingExtension extends WebNativeMessagingExtensionAbility {
   onConnectNative(info: ConnectionInfo): void {
@@ -226,7 +232,8 @@ export class MyWebNativeMessagingExtension extends WebNativeMessagingExtensionAb
         context.terminateSelf();
         console.info('Extension terminated successfully');
     } catch (err) {
-        console.error(`Failed to terminate extension. Code: ${err.code}, Message: ${err.message}`);
+        console.error(`Failed to terminate extension. Code: ${(err as BusinessError).code},
+        Message: ${(err as BusinessError).message}`);
     }
   }
 }
@@ -268,6 +275,7 @@ stopNativeConnection(connectionId: number): Promise<void>
 
 ```
 import { WebNativeMessagingExtensionAbility, ConnectionInfo } from '@kit.ArkWeb';
+import { BusinessError } from '@kit.BasicServicesKit';
 
 export class MyWebNativeMessagingExtension extends WebNativeMessagingExtensionAbility {
   onConnectNative(info: ConnectionInfo): void {
@@ -277,7 +285,8 @@ export class MyWebNativeMessagingExtension extends WebNativeMessagingExtensionAb
         context.stopNativeConnection(CONNECTION_ID);
         console.info('Native connection stopped successfully');
     } catch (err) {
-        console.error(`Failed to stop native connection. Code: ${err.code}, Message: ${err.message}`);
+        console.error(`Failed to stop native connection. Code: ${(err as BusinessError).code},
+        Message: ${(err as BusinessError).message}`);
     }
   }
 }

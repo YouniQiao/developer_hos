@@ -2,8 +2,8 @@
 title: "@ohos.security.asset (关键资产存储服务)"
 upstream_id: "harmonyos-references/js-apis-asset"
 catalog: "harmonyos-references"
-content_hash: "7c721e1351a3"
-synced_at: "2026-07-09T00:59:10.735972"
+content_hash: "79505c26a6c4"
+synced_at: "2026-07-09T17:26:00.649804"
 ---
 
 # @ohos.security.asset (关键资产存储服务)
@@ -555,6 +555,7 @@ batchUpdate(sourceAttributes: Array<AssetMap>, destAttributes: Array<AssetMap>):
 | 24000010 | IPC failed. |
 | 24000011 | Calling the Bundle Manager service failed. |
 | 24000012 | Calling the OS Account service failed. |
+| 24000013 | Calling the Access Token service failed. |
 | 24000015 | Getting the system time failed. |
 | 24000019 | Each value of [Tag.GROUP_ID](#tag) and [Tag.REQUIRE_ATTR_ENCRYPTED](#tag) in the array is not consistent. |
 

@@ -2,8 +2,8 @@
 title: "基础类型定义"
 upstream_id: "harmonyos-references/ts-types"
 catalog: "harmonyos-references"
-content_hash: "bc1f2a859d51"
-synced_at: "2026-07-09T00:58:18.810248"
+content_hash: "da6b8835deb7"
+synced_at: "2026-07-09T17:24:59.167981"
 ---
 
 # 基础类型定义
@@ -441,12 +441,12 @@ type LengthConstrain = { minLength: Length; maxLength: Length; }
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 类型 | 说明 |
-| --- | --- | --- |
-| width | [Length](#length) | 目标元素的宽度。 单位：vp |
-| height | [Length](#length) | 目标元素的高度。 单位：vp |
-| position | [Position](#position) | 目标元素左上角在以父元素为基准的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中的位置。 |
-| globalPosition | [Position](#position) | 目标元素左上角在当前窗口坐标系中的位置。 |
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| width | [Length](#length) | 否 | 否 | 目标元素的宽度。 单位：vp |
+| height | [Length](#length) | 否 | 否 | 目标元素的高度。 单位：vp |
+| position | [Position](#position) | 否 | 否 | 目标元素左上角在以父元素为基准的[组件坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkui-glossary#组件坐标系)中的位置。 |
+| globalPosition | [Position](#position) | 否 | 否 | 目标元素左上角在当前窗口坐标系中的位置。 |
 
 #### Position
 
@@ -723,7 +723,7 @@ type Dimension = PX | VP | FP | LPX | Percentage | Resource
 | [VP](#vp10) | 需要指定数字或vp像素单位，如10或'10vp'。 |
 | [FP](#fp10) | 需要指定以fp像素单位，如'10fp'。 |
 | [LPX](#lpx10) | 需要指定以lpx像素单位，如'10lpx'。 |
-| [Percentage](#percentage10) | 需要指定以%像素单位，如'10%'。 |
+| [Percentage](#percentage10) | 需要指定以百分比单位，如'10%'。 |
 | [Resource](#resource) | 资源引用类型，引入系统资源或者应用资源中的尺寸。 |
 
 #### PX10+
@@ -800,7 +800,7 @@ type LPX = { number }lpx
 
 #### Percentage10+
 
-长度类型，用于描述以%像素单位为单位的长度。
+长度类型，用于描述以百分比单位为单位的长度。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -810,9 +810,11 @@ type LPX = { number }lpx
 
 | 类型 | 说明 |
 | --- | --- |
-| {number}% | 需要指定以%像素单位，如'10%'。 |
+| {number}% | 需要指定以百分比单位，如'10%'。 |
 
 #### Degree10+
+
+type Degree = ${number}deg
 
 角度类型，用于描述以deg像素单位为单位的长度。
 
@@ -836,14 +838,14 @@ type LPX = { number }lpx
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 类型定义 | 描述 |
-| --- | --- | --- |
-| X | [Dimension](#dimension10) | 跟手点X轴坐标。 |
-| Y | [Dimension](#dimension10) | 跟手点Y轴坐标。 |
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| x | [Dimension](#dimension10) | 否 | 否 | 跟手点X轴坐标。 |
+| y | [Dimension](#dimension10) | 否 | 否 | 跟手点Y轴坐标。 |
 
 #### VoidCallback12+
 
-type VoidCallback：() => void;
+type VoidCallback = () => void
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -995,11 +997,11 @@ type ResponsiveFillType = PresetFillType
 
 以水平方向Bias为例，其值为组件到左锚点的距离 Dstart与组件到水平方向锚点间总距离 Dstart + Dend的比值。镜像语言下，Dstart为组件到右锚点的距离。下图中Dwidth表示组件宽度。
 
-![](./img/zh-cn_image_0000002631253842.png)
+![](./img/zh-cn_image_0000002664210123.png)
 
 竖直方向同理，其值为组件到上锚点的距离Dtop与组件到竖直方向锚点间总距离Dtop + Dbottom的比值。下图中Dheight表示组件高度。
 
-![](./img/zh-cn_image_0000002661613025.png)
+![](./img/zh-cn_image_0000002664330181.png)
 
 卡片能力： 从API version 11开始，该接口支持在ArkTS卡片中使用。
 

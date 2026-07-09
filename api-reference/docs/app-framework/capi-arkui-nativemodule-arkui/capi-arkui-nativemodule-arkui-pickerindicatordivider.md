@@ -2,8 +2,8 @@
 title: "ArkUI_PickerIndicatorDivider"
 upstream_id: "harmonyos-references/capi-arkui-nativemodule-arkui-pickerindicatordivider"
 catalog: "harmonyos-references"
-content_hash: "13c557130f12"
-synced_at: "2026-07-09T00:58:47.932676"
+content_hash: "12d9975fe16c"
+synced_at: "2026-07-09T17:25:31.624274"
 ---
 
 # ArkUI_PickerIndicatorDivider
@@ -30,7 +30,7 @@ typedef struct {...} ArkUI_PickerIndicatorDivider
 
 | 名称 | 描述 |
 | --- | --- |
-| float strokeWidth | 分割线的线宽。 默认值：0 单位：vp 取值范围：[0, 选中项高度的一半（即20vp）]。strokeWidth小于0时设置分割线样式指示器的样式参数失败，strokeWidth大于选中项高度的一半时使用2.0px。不支持“百分比”类型。 |
+| float strokeWidth | 分割线的线宽。 默认值：0 单位：vp 取值范围：[0, 选中项高度的一半（即20vp）]。strokeWidth小于0时设置分割线样式指示器的样式参数失败，strokeWidth大于选中项高度的一半时使用2.0vp。不支持“百分比”类型。 |
 | uint32_t dividerColor | 分割线的颜色。 默认值：0 取值范围：0xARGB格式，例如**0xFF1122FF**。 |
 | float startMargin | 分割线与Picker容器侧边起始端的距离。 默认值：0 单位：vp 取值范围：startMargin与endMargin之和不得超过Picker容器的宽度。设置小于0时设置分割线样式指示器的样式参数失败，startMargin与endMargin之和超过Picker容器的宽度时，使用默认值。不支持“百分比”类型。 |
 | float endMargin | 分割线与Picker容器侧边结束端的距离。 默认值：0 单位：vp 取值范围：startMargin与endMargin之和不得超过Picker容器的宽度。设置小于0时设置分割线样式指示器的样式参数失败，startMargin与endMargin之和超过Picker容器的宽度时，使用默认值。不支持“百分比”类型。 |

@@ -2,8 +2,8 @@
 title: "NetworkBoost"
 upstream_id: "harmonyos-references/network-boost-c-overview"
 catalog: "harmonyos-references"
-content_hash: "3ba219e92cff"
-synced_at: "2026-07-09T00:59:32.465466"
+content_hash: "8de8780822b0"
+synced_at: "2026-07-09T17:26:28.944244"
 ---
 
 # NetworkBoost
@@ -105,7 +105,7 @@ synced_at: "2026-07-09T00:59:32.465466"
 | [NetworkBoost_PathState](#networkboost_pathstate) { NB_PATH_IDLE = 0,NB_PATH_CONNECTED = 1,NB_PATH_SUSPENDED = 2 } | 多网链路状态的枚举。 |
 | [NetworkBoost_MultiPathErrorResult](#networkboost_multipatherrorresult) { NB_MULTIPATH_ERROR_NONE = 0,NB_MULTIPATH_ERROR_NETWORK_REFUSED = 1, NB_MULTIPATH_ERROR_TIMEOUT = 2, NB_MULTIPATH_ERROR_LOCAL = 3 } | 多网建立结果的枚举。 |
 | [NetworkBoost_MultiPathChangeCause](#networkboost_multipathchangecause) { NB_MULTIPATH_CAUSE_REQUEST_NORMAL = 0, NB_MULTIPATH_CAUSE_RELEASE_NORMAL = 50, NB_MULTIPATH_CHANGE_CAUSE_RELEASE_NETWORK = 51, NB_MULTIPATH_CHANGE_CAUSE_RELEASE_USER_REFUSED = 52, NB_MULTIPATH_CAUSE_RELEASE_NO_QUOTA = 53, NB_MULTIPATH_CAUSE_RELEASE_POWER_CONSUMPTION = 54, NB_MULTIPATH_CHANGE_CAUSE_RELEASE_INSUFFICIENT_TRAFFIC = 55, NB_MULTIPATH_CHANGE_CAUSE_RELEASE_CONFLICT = 56, NB_MULTIPATH_CHANGE_CAUSE_RELEASE_SYS_FUSING = 57, NB_MULTIPATH_CHANGE_CAUSE_RELEASE_SYS_DEFAULT = 99, NB_MULTIPATH_CHANGE_CAUSE_SUSPEND_ENTER = 100, NB_MULTIPATH_CHANGE_CAUSE_SUSPEND_LEAVE = 101, NB_MULTIPATH_CHANGE_CAUSE_CONN_PROPERTIES_UPDATE = 102 } | 多网变化原因的枚举。 |
-| [NetworkBoost_MultiPathState](#networkboost_multipathstate) { NB_MULTIPATH_IDLE = 0, NB_MULTIPATH_CREATEING = 1, NB_MULTIPATH_CREATED = 2, NB_MULTIPATH_RELEASING = 3 } | 多网状态的枚举。 |
+| [NetworkBoost_MultiPathState](#networkboost_multipathstate) { NB_MULTIPATH_IDLE = 0, NB_MULTIPATH_CREATING = 1, NB_MULTIPATH_CREATED = 2, NB_MULTIPATH_RELEASING = 3 } | 多网状态的枚举。 |
 | [NetworkBoost_MultiPathAction](#networkboost_multipathaction) { NB_MULTIPATH_ACTION_REQUEST = 0, NB_MULTIPATH_ACTION_RELEASE = 1 } | 多网推荐动作的枚举。 |
 | [NetworkBoost_SceneEvent](#networkboost_sceneevent) { NB_SCENE_EVENT_ENTER = 0, NB_SCENE_EVENT_UPDATE = 1,NB_SCENE_EVENT_LEAVE = 2 } | 业务事件枚举。 |
 

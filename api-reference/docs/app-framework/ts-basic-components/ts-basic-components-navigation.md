@@ -2,8 +2,8 @@
 title: "Navigation"
 upstream_id: "harmonyos-references/ts-basic-components-navigation"
 catalog: "harmonyos-references"
-content_hash: "3d4d0112d69b"
-synced_at: "2026-07-09T00:57:51.659355"
+content_hash: "0327396c0343"
+synced_at: "2026-07-09T17:23:45.663159"
 ---
 
 # Navigation
@@ -1838,10 +1838,10 @@ Navigation分割线颜色及上下边距。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 说明 |
-| --- | --- |
-| Start | 双栏显示时，主列在主轴方向首部。 |
-| End | 双栏显示时，主列在主轴方向尾部。 |
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| Start | 0 | 双栏显示时，主列在主轴方向首部。 |
+| End | 1 | 双栏显示时，主列在主轴方向尾部。 |
 
 #### NavigationMode9+枚举说明
 
@@ -2117,7 +2117,7 @@ struct NavigationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732457.png)
+ ![](./img/zh-cn_image_0000002633850568.png)
 
 #### [h2]示例2（使用导航控制器方法）
 
@@ -2380,7 +2380,7 @@ export struct PageTwo {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002631253336.gif)
+ ![](./img/zh-cn_image_0000002634010472.gif)
 
 #### [h2]示例3（设置可交互转场动画）
 
@@ -2862,7 +2862,7 @@ export class CustomTransition {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002661612519.gif)
+ ![](./img/zh-cn_image_0000002664209621.gif)
 
 #### [h2]示例4（Navigation带参返回）
 
@@ -3151,7 +3151,7 @@ export struct PageTwo {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002631413228.gif)
+ ![](./img/zh-cn_image_0000002664329681.gif)
 
 #### [h2]示例5（设置背景颜色和模糊效果）
 
@@ -3445,7 +3445,7 @@ export const EFFECT_OPTION_2: BackgroundEffectOptions = {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002661732459.gif)
+ ![](./img/zh-cn_image_0000002633850570.gif)
 
 #### [h2]示例6（嵌套场景下获取外层栈）
 
@@ -3514,7 +3514,7 @@ export function PageOneBuilder(name: string) {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002631253338.gif)
+ ![](./img/zh-cn_image_0000002634010474.gif)
 
 #### [h2]示例7（通过onReady获取栈）
 
@@ -3624,7 +3624,7 @@ struct NavigationExample2 {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002661612521.gif)
+ ![](./img/zh-cn_image_0000002664209623.gif)
 
 #### [h2]示例8（NavDestination生命周期时序）
 
@@ -3743,7 +3743,7 @@ struct NavigationExample3 {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002631413230.gif)
+ ![](./img/zh-cn_image_0000002664329683.gif)
 
 #### [h2]示例9（标题栏布局效果）
 
@@ -3814,7 +3814,7 @@ struct NavigationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732461.gif)
+ ![](./img/zh-cn_image_0000002633850572.gif)
 
 #### [h2]示例10（定义导航控制器派生类）
 
@@ -3962,7 +3962,7 @@ export class NewParam {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002631253340.gif)
+ ![](./img/zh-cn_image_0000002634010476.gif)
 
 #### [h2]示例11（使用Symbol组件）
 
@@ -4111,7 +4111,7 @@ export struct NavigationMenu {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002661612523.gif)
+ ![](./img/zh-cn_image_0000002664209625.gif)
 
 #### [h2]示例12（设置自定义标题栏边距）
 
@@ -4358,7 +4358,7 @@ export class SubTitleTextModifier extends TextModifier {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002631413232.gif)
+ ![](./img/zh-cn_image_0000002664329685.gif)
 
 #### [h2]示例13（自定义转场动画）
 
@@ -4603,7 +4603,7 @@ export class CustomTransition {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002661732463.gif)
+ ![](./img/zh-cn_image_0000002633850574.gif)
 
 #### [h2]示例14（设置Navigation双栏模式）
 
@@ -4738,7 +4738,7 @@ struct NavigationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253342.gif)
+ ![](./img/zh-cn_image_0000002634010478.gif)
 
 #### [h2]示例15（Navigation工具栏自适应）
 
@@ -4808,7 +4808,7 @@ struct NavigationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612525.gif)
+ ![](./img/zh-cn_image_0000002664209627.gif)
 
 #### [h2]示例16（Navigation使用NavDestination作为导航页）
 
@@ -4893,7 +4893,7 @@ struct Index {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002631413234.gif)
+ ![](./img/zh-cn_image_0000002664329687.gif)
 
 #### [h2]示例17（使用新增导航控制器方法）
 
@@ -5161,7 +5161,7 @@ export struct PageTwo {
   ]
 }
 ```
- ![](./img/zh-cn_image_0000002661732465.gif)
+ ![](./img/zh-cn_image_0000002633850576.gif)
 
 #### [h2]示例18（设置Navigation可恢复）
 
@@ -5326,4 +5326,4 @@ export struct NavigationMenu {
 4. 输入"aa force-stop 工程包名 -p pid值 -r RESOURCE_CONTROL"进行回车，模拟资源使用不当导致的应用退出。
 5. 点击应用重新进入，可发现页面依然是点击跳转按钮后的页面。
 
-![](./img/zh-cn_image_0000002631253344.gif)
+![](./img/zh-cn_image_0000002634010480.gif)

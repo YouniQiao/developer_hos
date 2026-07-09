@@ -2,8 +2,8 @@
 title: "CANN"
 upstream_id: "harmonyos-references/cannkit"
 catalog: "harmonyos-references"
-content_hash: "323caff39137"
-synced_at: "2026-07-09T01:01:41.670929"
+content_hash: "a3bb6c0f1aaa"
+synced_at: "2026-07-09T17:28:26.902284"
 ---
 
 # CANN
@@ -3807,7 +3807,7 @@ OH_NN_ReturnCode HMS_LLMEngineExecutor_SetInferencePerfMode (HMS_LLMEngine_Execu
 | 状态码 | 状态信息 |
 | --- | --- |
 | OH_NN_SUCCESS | 成功状态。 |
-| OH_NN_FAILED | 失败状态，入参为空。 |
+| OH_NN_FAILED | 失败状态。 可能原因：入参executor为空；入参inferPerfMode大于HMS_LLMENGINE_INFERPERF_EXTREME_HIGH或小于HMS_LLMENGINE_INFERPERF_UNSET。 |
 
 #### [h2]HMS_LLMEnginePrompt_Create()
 

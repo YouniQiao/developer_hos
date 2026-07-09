@@ -2,8 +2,8 @@
 title: "TextPicker"
 upstream_id: "harmonyos-references/ts-basic-components-textpicker"
 catalog: "harmonyos-references"
-content_hash: "0ce531a41adf"
-synced_at: "2026-07-09T00:57:54.351860"
+content_hash: "ac8fb7face19"
+synced_at: "2026-07-09T17:23:47.405489"
 ---
 
 # TextPicker
@@ -405,7 +405,7 @@ divider(value: DividerOptions | null)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [DividerOptions](#divideroptions12对象说明) | null | 是 | 默认值： { strokeWidth: '2px', startMargin: 0, endMargin: 0, color: '#33000000' } 1. 当textDivider设置为有效的[DividerOptions](#divideroptions12对象说明)时，按设置的样式显示分割线。 2. 当textDivider设置为null时，不显示分割线。 |
+| value | [DividerOptions](#divideroptions12对象说明) | null | 是 | 默认值： { strokeWidth: '2px', startMargin: 0, endMargin: 0, color: '#33000000' } 1. 当value设置为有效的[DividerOptions](#divideroptions12对象说明)时，按设置的样式显示分割线。 2. 当value设置为null时，不显示分割线。 |
 
 #### [h2]divider18+
 
@@ -903,7 +903,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413278.png)
+ ![](./img/zh-cn_image_0000002664329729.png)
 
 #### [h2]示例2（设置文本样式）
 
@@ -940,7 +940,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732509.gif)
+ ![](./img/zh-cn_image_0000002633850618.gif)
 
 #### [h2]示例3（设置无分割线样式）
 
@@ -971,7 +971,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253386.gif)
+ ![](./img/zh-cn_image_0000002634010522.gif)
 
 #### [h2]示例4（设置分割线样式）
 
@@ -1007,7 +1007,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612569.gif)
+ ![](./img/zh-cn_image_0000002664209671.gif)
 
 #### [h2]示例5（设置渐隐效果）
 
@@ -1038,7 +1038,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413280.gif)
+ ![](./img/zh-cn_image_0000002664329731.gif)
 
 #### [h2]示例6（设置选择项高度）
 
@@ -1066,7 +1066,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732511.png)
+ ![](./img/zh-cn_image_0000002633850620.png)
 
 #### [h2]示例7（设置循环滚动）
 
@@ -1105,7 +1105,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253388.gif)
+ ![](./img/zh-cn_image_0000002634010524.gif)
 
 #### [h2]示例8（设置选中项索引值）
 
@@ -1132,7 +1132,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612571.png)
+ ![](./img/zh-cn_image_0000002664209673.png)
 
 #### [h2]示例9（设置关闭文本样式变化动效与对应文本样式）
 
@@ -1168,7 +1168,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413282.jpeg)
+ ![](./img/zh-cn_image_0000002664329733.jpeg)
 
 #### [h2]示例10（设置选中项背景样式）
 
@@ -1229,7 +1229,7 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732513.gif)
+ ![](./img/zh-cn_image_0000002633850622.gif)
 
 #### [h2]示例11（设置文本的最大字号、最小字号、超长文本截断方式）
 
@@ -1276,4 +1276,4 @@ struct TextPickerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253392.gif)
+ ![](./img/zh-cn_image_0000002634010526.gif)

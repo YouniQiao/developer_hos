@@ -2,8 +2,8 @@
 title: "QRCode"
 upstream_id: "harmonyos-references/ts-basic-components-qrcode"
 catalog: "harmonyos-references"
-content_hash: "888119a140a2"
-synced_at: "2026-07-09T00:58:02.254490"
+content_hash: "33afa61a6bb6"
+synced_at: "2026-07-09T17:24:30.570180"
 ---
 
 # QRCode
@@ -115,25 +115,25 @@ struct QRCodeExample {
 
   build() {
     Column({ space: 5 }) {
-      Text('normal').fontSize(9).width('90%').fontColor(0xCCCCCC).fontSize(30)
+      Text('normal').width('90%').fontColor(0xCCCCCC).fontSize(30)
       QRCode(this.value).width(140).height(140)
 
       // 设置二维码颜色
-      Text('color').fontSize(9).width('90%').fontColor(0xCCCCCC).fontSize(30)
+      Text('color').width('90%').fontColor(0xCCCCCC).fontSize(30)
       QRCode(this.value).color(0xF7CE00).width(140).height(140)
 
       // 设置二维码背景色
-      Text('backgroundColor').fontSize(9).width('90%').fontColor(0xCCCCCC).fontSize(30)
+      Text('backgroundColor').width('90%').fontColor(0xCCCCCC).fontSize(30)
       QRCode(this.value).width(140).height(140).backgroundColor(Color.Orange)
 
       // 设置二维码不透明度
-      Text('contentOpacity').fontSize(9).width('90%').fontColor(0xCCCCCC).fontSize(30)
+      Text('contentOpacity').width('90%').fontColor(0xCCCCCC).fontSize(30)
       QRCode(this.value).width(140).height(140).color(Color.Black).contentOpacity(0.1)
     }.width('100%').margin({ top: 5 })
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612789.png)
+ ![](./img/zh-cn_image_0000002664209887.png)
 
 #### [h2]示例2（设置背景颜色为透明）
 
@@ -158,4 +158,4 @@ struct QRCodeExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413500.png)
+ ![](./img/zh-cn_image_0000002664329947.png)

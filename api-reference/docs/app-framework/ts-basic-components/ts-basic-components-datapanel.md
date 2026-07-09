@@ -2,8 +2,8 @@
 title: "DataPanel"
 upstream_id: "harmonyos-references/ts-basic-components-datapanel"
 catalog: "harmonyos-references"
-content_hash: "3c6fc96b3fba"
-synced_at: "2026-07-09T00:58:01.271879"
+content_hash: "22783d690dc1"
+synced_at: "2026-07-09T17:24:20.291286"
 ---
 
 # DataPanel
@@ -299,7 +299,7 @@ struct DataPanelExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253594.png)
+ ![](./img/zh-cn_image_0000002634010724.png)
 
 #### [h2]示例2（设置渐变色和阴影）
 
@@ -357,7 +357,7 @@ struct LinearGradientDataPanelExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612775.png)
+ ![](./img/zh-cn_image_0000002664209873.png)
 
 #### [h2]示例3（设置关闭动画和阴影）
 
@@ -373,16 +373,6 @@ struct LinearGradientDataPanelExample {
     new LinearGradient([{ color: '#65EEC9A3', offset: 0 }, { color: '#FFEF629F', offset: 1 }])
   public color2: LinearGradient =
     new LinearGradient([{ color: '#FF67F9D4', offset: 0 }, { color: '#FFFF9554', offset: 1 }])
-  public colorShadow1: LinearGradient =
-    new LinearGradient([{ color: '#65EEC9A3', offset: 0 }, { color: '#65EF629F', offset: 1 }])
-  public colorShadow2: LinearGradient =
-    new LinearGradient([{ color: '#65e26709', offset: 0 }, { color: '#65efbd08', offset: 1 }])
-  public colorShadow3: LinearGradient =
-    new LinearGradient([{ color: '#6572B513', offset: 0 }, { color: '#6508efa6', offset: 1 }])
-  public colorShadow4: LinearGradient =
-    new LinearGradient([{ color: '#65ed08f5', offset: 0 }, { color: '#65ef0849', offset: 1 }])
-  @State shadowColorArray: Array<LinearGradient | ResourceColor> =
-    [this.colorShadow1, this.colorShadow2, this.colorShadow3, this.colorShadow4]
   @State color3: string = '#00FF00'
   @State color4: string = '#20FF0000'
   @State colorArray: Array<LinearGradient | ResourceColor> = [this.color1, this.color2, this.color3, this.color4]
@@ -410,7 +400,7 @@ struct LinearGradientDataPanelExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413486.png)
+ ![](./img/zh-cn_image_0000002664329933.png)
 
 #### [h2]示例4（设置定制内容区）
 
@@ -495,4 +485,4 @@ struct ChildItem {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732715.jpg)
+ ![](./img/zh-cn_image_0000002633850822.jpg)

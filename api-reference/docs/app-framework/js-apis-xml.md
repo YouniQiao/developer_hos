@@ -2,8 +2,8 @@
 title: "@ohos.xml (XML解析与生成)"
 upstream_id: "harmonyos-references/js-apis-xml"
 catalog: "harmonyos-references"
-content_hash: "822b6c70c533"
-synced_at: "2026-07-09T00:57:27.053935"
+content_hash: "df5f2fe9ddf7"
+synced_at: "2026-07-09T17:23:17.555095"
 ---
 
 # @ohos.xml (XML解析与生成)
@@ -1418,7 +1418,7 @@ XmlSAXParser的构造函数。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- inputStream参数必须传入继承自[Readable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-stream#readable)且实现[Doread](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-stream#doread)的类。可以传入其他模块中满足该条件的类，如[ReadStream](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#readstream12)。
+- inputStream参数必须传入继承自[Readable](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-stream#readable)且实现[doread](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-stream#doread)的类。可以传入其他模块中满足该条件的类，如[ReadStream](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#readstream12)。
 
 元服务API：从API version 24开始，该接口支持在元服务中使用。
 

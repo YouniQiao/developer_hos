@@ -2,8 +2,8 @@
 title: "枚举说明"
 upstream_id: "harmonyos-references/ts-appendix-enums"
 catalog: "harmonyos-references"
-content_hash: "f50b72882acf"
-synced_at: "2026-07-09T00:58:18.743253"
+content_hash: "c853b24fbc64"
+synced_at: "2026-07-09T17:24:59.731163"
 ---
 
 # 枚举说明
@@ -270,17 +270,17 @@ synced_at: "2026-07-09T00:58:18.743253"
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| Black | 0x000000 | ![](./img/zh-cn_image_0000002661732965.png) |
-| Blue | 0x0000ff | ![](./img/zh-cn_image_0000002631253844.png) |
-| Brown | 0xa52a2a | ![](./img/zh-cn_image_0000002661613027.png) |
-| Gray | 0x808080 | ![](./img/zh-cn_image_0000002631413738.png) |
-| Grey | 0x808080 | ![](./img/zh-cn_image_0000002631413738.png) |
-| Green | 0x008000 | ![](./img/zh-cn_image_0000002661732967.png) |
-| Orange | 0xffa500 | ![](./img/zh-cn_image_0000002631253846.png) |
-| Pink | 0xffc0cb | ![](./img/zh-cn_image_0000002661613029.png) |
-| Red | 0xff0000 | ![](./img/zh-cn_image_0000002631413740.png) |
-| White | 0xffffff | ![](./img/zh-cn_image_0000002661732969.png) |
-| Yellow | 0xffff00 | ![](./img/zh-cn_image_0000002631253848.png) |
+| Black | 0x000000 | ![](./img/zh-cn_image_0000002634010974.png) |
+| Blue | 0x0000ff | ![](./img/zh-cn_image_0000002664210125.png) |
+| Brown | 0xa52a2a | ![](./img/zh-cn_image_0000002664330183.png) |
+| Gray | 0x808080 | ![](./img/zh-cn_image_0000002633851072.png) |
+| Grey | 0x808080 | ![](./img/zh-cn_image_0000002633851072.png) |
+| Green | 0x008000 | ![](./img/zh-cn_image_0000002634010976.png) |
+| Orange | 0xffa500 | ![](./img/zh-cn_image_0000002664210127.png) |
+| Pink | 0xffc0cb | ![](./img/zh-cn_image_0000002664330185.png) |
+| Red | 0xff0000 | ![](./img/zh-cn_image_0000002633851074.png) |
+| White | 0xffffff | ![](./img/zh-cn_image_0000002634010978.png) |
+| Yellow | 0xffff00 | ![](./img/zh-cn_image_0000002664210129.png) |
 | Transparent9+ | rgba(0,0,0,0) | 透明色 |
 
 #### ColorSpace20+
@@ -412,7 +412,7 @@ synced_at: "2026-07-09T00:58:18.743253"
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| DEFAULT | 0 | 白底蓝字（深色主题：白底=黑底）。 |
+| DEFAULT | 0 | 白底蓝字（深色主题下为黑底蓝字）。 |
 | HIGHLIGHT | 1 | 蓝底白字。 |
 
 #### Direction
@@ -600,8 +600,8 @@ synced_at: "2026-07-09T00:58:18.743253"
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | Row | 0 | 主轴与行方向一致作为布局模式。 |
-| RowReverse | 1 | 与Row方向相反方向进行布局。 |
-| Column | 2 | 主轴与列方向一致作为布局模式。 |
+| Column | 1 | 主轴与列方向一致作为布局模式。 |
+| RowReverse | 2 | 与Row方向相反方向进行布局。 |
 | ColumnReverse | 3 | 与Column相反方向进行布局。 |
 
 #### FlexWrap
@@ -724,17 +724,17 @@ FontWeight是字重[fontWeight](https://developer.huawei.com/consumer/cn/doc/har
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 说明 |
-| --- | --- |
-| Left | 从右向左。 |
-| Top | 从下向上。 |
-| Right | 从左向右。 |
-| Bottom | 从上向下。 |
-| LeftTop | 从左上向右下。 |
-| LeftBottom | 从左下向右上。 |
-| RightTop | 从右上向左下。 |
-| RightBottom | 从右下向左上。 |
-| None | 无。 |
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| Left | 0 | 从右向左。 |
+| Top | 1 | 从下向上。 |
+| Right | 2 | 从左向右。 |
+| Bottom | 3 | 从上向下。 |
+| LeftTop | 4 | 从左上向右下。 |
+| LeftBottom | 5 | 从左下向右上。 |
+| RightTop | 6 | 从右上向左下。 |
+| RightBottom | 7 | 从右下向左上。 |
+| None | 8 | 无。 |
 
 #### GestureCollectIntervention
 
@@ -830,21 +830,21 @@ FontWeight是字重[fontWeight](https://developer.huawei.com/consumer/cn/doc/har
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| Fill | 0 | 不保持宽高比进行放大缩小，使得图片或视频充满显示边界，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002661613031.png) |
-| Contain | 1 | 保持宽高比进行缩小或者放大，使得图片或视频完全显示在显示边界内，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002631413742.png) |
-| Cover | 2 | 保持宽高比进行缩小或者放大，使得图片或视频两边都大于或等于显示边界，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002661732971.png) |
-| Auto | 3 | 图片或视频会根据其自身尺寸和组件的尺寸进行适当缩放，以在保持比例的同时填充视图，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002631253850.png) |
-| None | 5 | 保持原有尺寸进行显示，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002661613033.png) |
-| ScaleDown | 6 | 保持宽高比进行显示，图片或视频缩小或者保持不变，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002631413744.png) |
-| TOP_START12+ | 7 | 图片或视频显示在组件的顶部起始端，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002661732973.png) |
-| TOP12+ | 8 | 图片或视频显示在组件的顶部横向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002631253852.png) |
-| TOP_END12+ | 9 | 图片或视频显示在组件的顶部尾端，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002661613035.png) |
-| START12+ | 10 | 图片或视频显示在组件的起始端纵向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002631413746.png) |
-| CENTER12+ | 11 | 图片或视频显示在组件的横向和纵向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002661732975.png) |
-| END12+ | 12 | 图片或视频显示在组件的尾端纵向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002631253854.png) |
-| BOTTOM_START12+ | 13 | 图片或视频显示在组件的底部起始端，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002661613037.png) |
-| BOTTOM12+ | 14 | 图片或视频显示在组件的底部横向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002631413748.png) |
-| BOTTOM_END12+ | 15 | 图片或视频显示在组件的底部尾端，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002661732977.png) |
+| Fill | 0 | 不保持宽高比进行放大缩小，使得图片或视频充满显示边界，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002664330187.png) |
+| Contain | 1 | 保持宽高比进行缩小或者放大，使得图片或视频完全显示在显示边界内，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002633851076.png) |
+| Cover | 2 | 保持宽高比进行缩小或者放大，使得图片或视频两边都大于或等于显示边界，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002634010980.png) |
+| Auto | 3 | 图片或视频会根据其自身尺寸和组件的尺寸进行适当缩放，以在保持比例的同时填充视图，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002664210131.png) |
+| None | 5 | 保持原有尺寸进行显示，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002664330189.png) |
+| ScaleDown | 6 | 保持宽高比进行显示，图片或视频缩小或者保持不变，对齐方式为水平居中。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 ![](./img/zh-cn_image_0000002633851078.png) |
+| TOP_START12+ | 7 | 图片或视频显示在组件的顶部起始端，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002634010982.png) |
+| TOP12+ | 8 | 图片或视频显示在组件的顶部横向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002664210133.png) |
+| TOP_END12+ | 9 | 图片或视频显示在组件的顶部尾端，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002664330191.png) |
+| START12+ | 10 | 图片或视频显示在组件的起始端纵向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002633851080.png) |
+| CENTER12+ | 11 | 图片或视频显示在组件的横向和纵向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002634010984.png) |
+| END12+ | 12 | 图片或视频显示在组件的尾端纵向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002664210135.png) |
+| BOTTOM_START12+ | 13 | 图片或视频显示在组件的底部起始端，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002664330193.png) |
+| BOTTOM12+ | 14 | 图片或视频显示在组件的底部横向居中，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002633851082.png) |
+| BOTTOM_END12+ | 15 | 图片或视频显示在组件的底部尾端，且保持原有尺寸。 **卡片能力：** 从API version 12开始，该接口支持在ArkTS卡片中使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 ![](./img/zh-cn_image_0000002634010986.png) |
 | MATRIX15+ | 16 | 配合[imageMatrix](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-image#imagematrix15)使用，使图像在Image组件自定义位置显示，且保持原有尺寸。不支持svg图源。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### ItemAlign
@@ -1318,22 +1318,22 @@ type Nullable<T> = T | undefined
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| CENTER | 0 | 保持动画终态的内容大小，并且内容始终与组件保持中心对齐。 ![](./img/zh-cn_image_0000002631253858.png) |
-| TOP | 1 | 保持动画终态的内容大小，并且内容始终与组件保持顶部中心对齐。 ![](./img/zh-cn_image_0000002661613039.png) |
-| BOTTOM | 2 | 保持动画终态的内容大小，并且内容始终与组件保持底部中心对齐。 ![](./img/zh-cn_image_0000002631413750.png) |
-| LEFT | 3 | 保持动画终态的内容大小，并且内容始终与组件保持左侧对齐。 ![](./img/zh-cn_image_0000002661732979.png) |
-| RIGHT | 4 | 保持动画终态的内容大小，并且内容始终与组件保持右侧对齐。 ![](./img/zh-cn_image_0000002631253860.png) |
-| TOP_LEFT | 5 | 保持动画终态的内容大小，并且内容始终与组件保持左上角对齐。 ![](./img/zh-cn_image_0000002661613041.png) |
-| TOP_RIGHT | 6 | 保持动画终态的内容大小，并且内容始终与组件保持右上角对齐。 ![](./img/zh-cn_image_0000002631413752.png) |
-| BOTTOM_LEFT | 7 | 保持动画终态的内容大小，并且内容始终与组件保持左下角对齐。 ![](./img/zh-cn_image_0000002661732981.png) |
-| BOTTOM_RIGHT | 8 | 保持动画终态的内容大小，并且内容始终与组件保持右下角对齐。 ![](./img/zh-cn_image_0000002631253862.png) |
-| RESIZE_FILL | 9 | 不考虑动画终态内容的宽高比，并且内容始终缩放到组件的大小。 ![](./img/zh-cn_image_0000002661613043.png) |
-| RESIZE_CONTAIN | 10 | 保持动画终态内容的宽高比进行缩小或放大，使内容完整显示在组件内，且与组件保持中心对齐。 ![](./img/zh-cn_image_0000002631413754.png) |
-| RESIZE_CONTAIN_TOP_LEFT | 11 | 保持动画终态内容的宽高比进行缩小或放大，使内容完整显示在组件内。当组件宽方向有剩余时，内容与组件保持左侧对齐，当组件高方向有剩余时，内容与组件保持顶部对齐。 ![](./img/zh-cn_image_0000002661732983.png) |
-| RESIZE_CONTAIN_BOTTOM_RIGHT | 12 | 保持动画终态内容的宽高比进行缩小或放大，使内容完整显示在组件内。当组件宽方向有剩余时，内容与组件保持右侧对齐，当组件高方向有剩余时，内容与组件保持底部对齐。 ![](./img/zh-cn_image_0000002631253864.png) |
-| RESIZE_COVER | 13 | 保持动画终态内容的宽高比进行缩小或放大，使内容两边都大于或等于组件两边，且与组件保持中心对齐，显示内容的中间部分。 ![](./img/zh-cn_image_0000002661613045.png) |
-| RESIZE_COVER_TOP_LEFT | 14 | 保持动画终态内容的宽高比进行缩小或放大，使内容的两边都恰好大于或等于组件两边。当内容宽方向有剩余时，内容与组件保持左侧对齐，显示内容的左侧部分。当内容高方向有剩余时，内容与组件保持顶部对齐，显示内容的顶侧部分。 ![](./img/zh-cn_image_0000002631413756.png) |
-| RESIZE_COVER_BOTTOM_RIGHT | 15 | 保持动画终态内容的宽高比进行缩小或放大，使内容的两边都恰好大于或等于组件两边。当内容宽方向有剩余时，内容与组件保持右侧对齐，显示内容的右侧部分。当内容高方向有剩余时，内容与组件保持底部对齐，显示内容的底侧部分。 ![](./img/zh-cn_image_0000002661732985.png) |
+| CENTER | 0 | 保持动画终态的内容大小，并且内容始终与组件保持中心对齐。 ![](./img/zh-cn_image_0000002664210137.png) |
+| TOP | 1 | 保持动画终态的内容大小，并且内容始终与组件保持顶部中心对齐。 ![](./img/zh-cn_image_0000002664330195.png) |
+| BOTTOM | 2 | 保持动画终态的内容大小，并且内容始终与组件保持底部中心对齐。 ![](./img/zh-cn_image_0000002633851084.png) |
+| LEFT | 3 | 保持动画终态的内容大小，并且内容始终与组件保持左侧对齐。 ![](./img/zh-cn_image_0000002634010988.png) |
+| RIGHT | 4 | 保持动画终态的内容大小，并且内容始终与组件保持右侧对齐。 ![](./img/zh-cn_image_0000002664210139.png) |
+| TOP_LEFT | 5 | 保持动画终态的内容大小，并且内容始终与组件保持左上角对齐。 ![](./img/zh-cn_image_0000002664330197.png) |
+| TOP_RIGHT | 6 | 保持动画终态的内容大小，并且内容始终与组件保持右上角对齐。 ![](./img/zh-cn_image_0000002633851086.png) |
+| BOTTOM_LEFT | 7 | 保持动画终态的内容大小，并且内容始终与组件保持左下角对齐。 ![](./img/zh-cn_image_0000002634010990.png) |
+| BOTTOM_RIGHT | 8 | 保持动画终态的内容大小，并且内容始终与组件保持右下角对齐。 ![](./img/zh-cn_image_0000002664210141.png) |
+| RESIZE_FILL | 9 | 不考虑动画终态内容的宽高比，并且内容始终缩放到组件的大小。 ![](./img/zh-cn_image_0000002664330199.png) |
+| RESIZE_CONTAIN | 10 | 保持动画终态内容的宽高比进行缩小或放大，使内容完整显示在组件内，且与组件保持中心对齐。 ![](./img/zh-cn_image_0000002633851088.png) |
+| RESIZE_CONTAIN_TOP_LEFT | 11 | 保持动画终态内容的宽高比进行缩小或放大，使内容完整显示在组件内。当组件宽方向有剩余时，内容与组件保持左侧对齐，当组件高方向有剩余时，内容与组件保持顶部对齐。 ![](./img/zh-cn_image_0000002634010992.png) |
+| RESIZE_CONTAIN_BOTTOM_RIGHT | 12 | 保持动画终态内容的宽高比进行缩小或放大，使内容完整显示在组件内。当组件宽方向有剩余时，内容与组件保持右侧对齐，当组件高方向有剩余时，内容与组件保持底部对齐。 ![](./img/zh-cn_image_0000002664210143.png) |
+| RESIZE_COVER | 13 | 保持动画终态内容的宽高比进行缩小或放大，使内容两边都大于或等于组件两边，且与组件保持中心对齐，显示内容的中间部分。 ![](./img/zh-cn_image_0000002664330201.png) |
+| RESIZE_COVER_TOP_LEFT | 14 | 保持动画终态内容的宽高比进行缩小或放大，使内容的两边都恰好大于或等于组件两边。当内容宽方向有剩余时，内容与组件保持左侧对齐，显示内容的左侧部分。当内容高方向有剩余时，内容与组件保持顶部对齐，显示内容的顶侧部分。 ![](./img/zh-cn_image_0000002633851090.png) |
+| RESIZE_COVER_BOTTOM_RIGHT | 15 | 保持动画终态内容的宽高比进行缩小或放大，使内容的两边都恰好大于或等于组件两边。当内容宽方向有剩余时，内容与组件保持右侧对齐，显示内容的右侧部分。当内容高方向有剩余时，内容与组件保持底部对齐，显示内容的底侧部分。 ![](./img/zh-cn_image_0000002634010994.png) |
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -1633,15 +1633,15 @@ type Nullable<T> = T | undefined
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 说明 |
-| --- | --- |
-| Mon | 星期一。 |
-| Tue | 星期二。 |
-| Wed | 星期三。 |
-| Thur | 星期四。 |
-| Fri | 星期五。 |
-| Sat | 星期六。 |
-| Sun | 星期日。 |
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| Mon | 0 | 星期一。 |
+| Tue | 1 | 星期二。 |
+| Wed | 2 | 星期三。 |
+| Thur | 3 | 星期四。 |
+| Fri | 4 | 星期五。 |
+| Sat | 5 | 星期六。 |
+| Sun | 6 | 星期日。 |
 
 #### WidthBreakpoint13+
 

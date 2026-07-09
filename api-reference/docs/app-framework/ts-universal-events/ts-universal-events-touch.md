@@ -2,8 +2,8 @@
 title: "触摸事件"
 upstream_id: "harmonyos-references/ts-universal-events-touch"
 catalog: "harmonyos-references"
-content_hash: "638749a9e52c"
-synced_at: "2026-07-09T00:57:36.054339"
+content_hash: "527a3e8af3ef"
+synced_at: "2026-07-09T17:23:26.277052"
 ---
 
 # 触摸事件
@@ -102,8 +102,8 @@ getHistoricalPoints(): Array<HistoricalPoint>
 | width15+ | number | 否 | 是 | 当前手指按压区域的宽度。 单位：vp **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | height15+ | number | 否 | 是 | 当前手指按压区域的高度。 单位：vp **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | hand15+ | [InteractionHand](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#interactionhand15) | 否 | 是 | 表示事件是由左手点击还是右手点击触发。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| globalDisplayX20+ | number | 否 | 是 | 触摸点在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的X坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| globalDisplayY20+ | number | 否 | 是 | 触摸点在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的Y坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| globalDisplayX20+ | number | 否 | 是 | 触摸点在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的X坐标。 单位：vp 取值范围：(-∞, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| globalDisplayY20+ | number | 否 | 是 | 触摸点在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的Y坐标。 单位：vp 取值范围：(-∞, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### [h2]getCurrentLocalPosition
 
@@ -225,7 +225,7 @@ struct TouchExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612303.gif)
+ ![](./img/zh-cn_image_0000002664209409.gif)
 
 #### [h2]示例2（获取组件实时位置）
 
@@ -259,4 +259,4 @@ struct GetCurrentLocalPositionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413012.gif)
+ ![](./img/zh-cn_image_0000002664329469.gif)

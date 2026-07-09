@@ -2,8 +2,8 @@
 title: "Interface (BuildingOverlay)"
 upstream_id: "harmonyos-references/map-map-buildingoverlay"
 catalog: "harmonyos-references"
-content_hash: "fb11c8603bb3"
-synced_at: "2026-07-09T01:01:25.695781"
+content_hash: "2cd142bc3f83"
+synced_at: "2026-07-09T17:28:10.046637"
 ---
 
 # Interface (BuildingOverlay)
@@ -215,7 +215,7 @@ getId(): string
 示例：
 
 ```
-let id: String = buildingOverlay.getId();
+let id: string = buildingOverlay.getId();
 ```
 
 #### [h2]remove

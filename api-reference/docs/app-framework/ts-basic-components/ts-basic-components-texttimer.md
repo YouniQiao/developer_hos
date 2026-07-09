@@ -2,8 +2,8 @@
 title: "TextTimer"
 upstream_id: "harmonyos-references/ts-basic-components-texttimer"
 catalog: "harmonyos-references"
-content_hash: "65bcb1b05c94"
-synced_at: "2026-07-09T00:58:02.704468"
+content_hash: "8ba0bcb360cc"
+synced_at: "2026-07-09T17:24:36.270458"
 ---
 
 # TextTimer
@@ -347,7 +347,7 @@ struct TextTimerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612793.png)
+ ![](./img/zh-cn_image_0000002664209891.png)
 
 #### [h2]示例3（设定自定义内容区）
 
@@ -425,7 +425,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413504.gif)
+ ![](./img/zh-cn_image_0000002664329951.gif)
 
 #### [h2]示例4（创建之后立即执行计时）
 
@@ -460,7 +460,7 @@ struct TextTimerStart {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732733.gif)
+ ![](./img/zh-cn_image_0000002633850840.gif)
 
 #### [h2]示例5（设置文本样式）
 
@@ -470,9 +470,8 @@ struct TextTimerStart {
 // xxx.ets
 @Entry
 @Component
-struct demo {
+struct Demo {
   textTimerController: TextTimerController = new TextTimerController();
-  @State format: string = 'HH:mm:ss.SS';
   @State countValue: number = 5025678;
 
   build() {
@@ -513,7 +512,7 @@ struct demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253614.png)
+ ![](./img/zh-cn_image_0000002634010744.png)
 
 #### [h2]示例6（设置初始计时时间）
 
@@ -553,4 +552,4 @@ struct TextTimerExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612795.gif)
+ ![](./img/zh-cn_image_0000002664209893.gif)

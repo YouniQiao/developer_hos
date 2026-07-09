@@ -2,8 +2,8 @@
 title: "Class (MapComponentController)"
 upstream_id: "harmonyos-references/map-map-mapcomponentcontroller"
 catalog: "harmonyos-references"
-content_hash: "dc463c3562be"
-synced_at: "2026-07-09T01:01:24.954037"
+content_hash: "e36cbb81f0bc"
+synced_at: "2026-07-09T17:28:09.119136"
 ---
 
 # Class (MapComponentController)
@@ -4978,6 +4978,8 @@ setIndoorMapEnabled(enabled: boolean): void
 
 系统能力： SystemCapability.Map.Core
 
+设备行为差异： 在5.1.1(19)及之后版本该接口在phone、tablet、PC/2in1均可正常使用，在其他设备中返回801错误码。
+
 起始版本： 5.1.1(19)
 
 参数：
@@ -5013,6 +5015,8 @@ isIndoorMapEnabled(): boolean
 
 系统能力： SystemCapability.Map.Core
 
+设备行为差异： 在5.1.1(19)及之后版本该接口在phone、tablet、PC/2in1均可正常使用，在其他设备中返回801错误码。
+
 起始版本： 5.1.1(19)
 
 返回值：
@@ -5046,6 +5050,8 @@ switchIndoorMapFloor(buildingId: string, floorName: string): void
 元服务API： 从版本5.1.1(19)开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Map.Core
+
+设备行为差异： 在5.1.1(19)及之后版本该接口在phone、tablet、PC/2in1均可正常使用，在其他设备中返回801错误码。
 
 起始版本： 5.1.1(19)
 
@@ -5081,6 +5087,8 @@ setFloorControlsPosition(point: mapCommon.MapPoint): void
 元服务API： 从版本6.0.0(20)开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Map.Core
+
+设备行为差异： 在6.0.0(20)及之后版本该接口在phone、tablet、PC/2in1均可正常使用，在其他设备中返回801错误码。
 
 起始版本： 6.0.0(20)
 

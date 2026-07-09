@@ -2,15 +2,15 @@
 title: "spatialEdit"
 upstream_id: "harmonyos-references/spatial-recon-spatialedit"
 catalog: "harmonyos-references"
-content_hash: "1b22ce09bfb5"
-synced_at: "2026-07-09T01:01:08.388162"
+content_hash: "0f4b7410f8d3"
+synced_at: "2026-07-09T17:27:54.305810"
 ---
 
 # spatialEdit
 
 spatialEdit模块提供了编辑3DGS（3D Gaussian Splatting）模型的能力，支持选择、变换、上色和删除高斯点等操作。
 
-系统能力： SystemCapability.Graphics.spatialEdit
+系统能力： SystemCapability.Graphics.SpatialEdit
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
@@ -26,7 +26,7 @@ import { spatialEdit } from '@kit.SpatialReconKit';
 
 定义颜色混合模式的枚举类型。
 
-系统能力： SystemCapability.Graphics.spatialEdit
+系统能力： SystemCapability.Graphics.SpatialEdit
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
@@ -42,7 +42,7 @@ import { spatialEdit } from '@kit.SpatialReconKit';
 
 3DGS模型编辑句柄类，提供对高斯模型的各种编辑操作。
 
-系统能力： SystemCapability.Graphics.spatialEdit
+系统能力： SystemCapability.Graphics.SpatialEdit
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
@@ -54,7 +54,7 @@ static editGSNode(node: spatialRender.GSNode): GSEdit | undefined
 
 创建3DGS模型的编辑句柄。
 
-系统能力： SystemCapability.Graphics.spatialEdit
+系统能力： SystemCapability.Graphics.SpatialEdit
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
@@ -98,7 +98,7 @@ selectBy2DBox(rect: Rect): void
 
 在视口坐标中选择2D矩形区域内的高斯点（添加到当前选区）。
 
-系统能力： SystemCapability.Graphics.spatialEdit
+系统能力： SystemCapability.Graphics.SpatialEdit
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
@@ -139,7 +139,7 @@ selectBy3DBox(aabb: Aabb): void
 
 在3D空间中选择轴对齐边界框内的高斯点（添加到当前选区）。
 
-系统能力： SystemCapability.Graphics.spatialEdit
+系统能力： SystemCapability.Graphics.SpatialEdit
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
@@ -183,7 +183,7 @@ selectByIndex(indices: number[]): void
 
 通过索引选择高斯点（添加到当前选区）。
 
-系统能力： SystemCapability.Graphics.spatialEdit
+系统能力： SystemCapability.Graphics.SpatialEdit
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
@@ -227,7 +227,7 @@ selectBy2DMask(mask: image.PixelMap): void
 
 通过2D遮罩图像选择高斯点（添加到当前选区）。
 
-系统能力： SystemCapability.Graphics.spatialEdit
+系统能力： SystemCapability.Graphics.SpatialEdit
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
@@ -277,7 +277,7 @@ invertSelection(): void
 
 反选当前选区。
 
-系统能力： SystemCapability.Graphics.spatialEdit
+系统能力： SystemCapability.Graphics.SpatialEdit
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
@@ -314,7 +314,7 @@ clearSelection(): void
 
 清除当前选区。
 
-系统能力： SystemCapability.Graphics.spatialEdit
+系统能力： SystemCapability.Graphics.SpatialEdit
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
@@ -351,7 +351,7 @@ transform(matrix: Mat4x4): void
 
 对当前选区应用变换矩阵。
 
-系统能力： SystemCapability.Graphics.spatialEdit
+系统能力： SystemCapability.Graphics.SpatialEdit
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
@@ -406,7 +406,7 @@ paint(color: Color, mode: PaintMode): void
 
 使用指定混合模式为当前选区上色。
 
-系统能力： SystemCapability.Graphics.spatialEdit
+系统能力： SystemCapability.Graphics.SpatialEdit
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
@@ -456,7 +456,7 @@ remove(): void
 
 删除当前选区中的高斯点。
 
-系统能力： SystemCapability.Graphics.spatialEdit
+系统能力： SystemCapability.Graphics.SpatialEdit
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
@@ -493,7 +493,7 @@ undo(): void
 
 撤销最近的操作（支持多次调用连续撤销）。
 
-系统能力： SystemCapability.Graphics.spatialEdit
+系统能力： SystemCapability.Graphics.SpatialEdit
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 
@@ -532,7 +532,7 @@ saveToPLY(uri: string): Promise<boolean>
 
 将编辑后的模型保存为PLY格式，使用Promise异步回调。
 
-系统能力： SystemCapability.Graphics.spatialEdit
+系统能力： SystemCapability.Graphics.SpatialEdit
 
 模型约束： 此模块的接口仅可在Stage模型下使用。
 

@@ -2,8 +2,8 @@
 title: "按键事件"
 upstream_id: "harmonyos-references/ts-universal-events-key"
 catalog: "harmonyos-references"
-content_hash: "a853bf9d92a3"
-synced_at: "2026-07-09T00:57:36.056089"
+content_hash: "0a5469b7339d"
+synced_at: "2026-07-09T17:23:26.723585"
 ---
 
 # 按键事件
@@ -90,7 +90,7 @@ onKeyPreIme(event: Callback<KeyEvent, boolean>): T
 
 onKeyEventDispatch(event: Callback<KeyEvent, boolean>): T
 
-对应组件收到按键事件时，会触发该回调，该按键事件不会分发给其子组件。不支持构造KeyEvent进行分发，只支持分发已有的按键事件。
+对应组件收到按键事件时，会触发该回调，该按键事件不会分发给其子组件。从API version 23开始，支持构造KeyEvent进行分发。API version 22及之前版本，不支持构造KeyEvent进行分发，只支持分发已有的按键事件。
 
 该回调的返回值为true时，视作该按键事件已被消费，不会[冒泡](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-basic-principles#事件冒泡)给父组件处理。
 
@@ -215,7 +215,7 @@ struct KeyEventExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413014.gif)
+ ![](./img/zh-cn_image_0000002664329471.gif)
 
 #### [h2]示例2（获取Unicode码值）
 
@@ -258,7 +258,7 @@ struct KeyEventExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732245.gif)
+ ![](./img/zh-cn_image_0000002633850360.gif)
 
 #### [h2]示例3（触发onKeyPreIme回调）
 
@@ -361,4 +361,4 @@ struct KeyEventExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253124.gif)
+ ![](./img/zh-cn_image_0000002634010264.gif)

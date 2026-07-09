@@ -2,8 +2,8 @@
 title: "qrcode"
 upstream_id: "harmonyos-references/js-components-basic-qrcode"
 catalog: "harmonyos-references"
-content_hash: "fbc57751f3ae"
-synced_at: "2026-07-09T00:58:22.312149"
+content_hash: "f698b30dc008"
+synced_at: "2026-07-09T17:25:03.606631"
 ---
 
 # qrcode
@@ -57,7 +57,7 @@ synced_at: "2026-07-09T00:58:22.312149"
 ```
 <!-- xxx.hml -->
 <div class="container">
-  <qrcode value="{{qr_value}}" type="{{qr_type}}"
+  <qrcode value="Hello World" type="{{qr_type}}"
   style="color: {{qr_col}};background-color: {{qr_bcol}};width: {{qr_size}};height: {{qr_size}};margin-bottom: 70px;"></qrcode>
   <text class="txt">Type</text>
   <switch showtext="true" checked="true" texton="rect" textoff="circle" onchange="setType"></switch>
@@ -117,4 +117,4 @@ export default {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253900.gif)
+ ![](./img/zh-cn_image_0000002664210179.gif)

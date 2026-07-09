@@ -2,8 +2,8 @@
 title: "@ohos.sensor (传感器)"
 upstream_id: "harmonyos-references/js-apis-sensor"
 catalog: "harmonyos-references"
-content_hash: "41e911ea345f"
-synced_at: "2026-07-09T01:00:01.602179"
+content_hash: "86ba5a7afb99"
+synced_at: "2026-07-09T17:26:56.845102"
 ---
 
 # @ohos.sensor (传感器)
@@ -5105,7 +5105,7 @@ try {
 
 getSingleSensorByDeviceSync(type: SensorId, deviceId?: number): Array<Sensor>
 
-同步获取指定设备和类型的传感器信息。
+同步获取指定设备和类型的传感器信息。如果存在外设且未指定设备ID，获取到的传感器将是所有符合指定传感器类型的本地和外设传感器。如果不存在外设，则仅获取本地的传感器。
 
 系统能力：SystemCapability.Sensors.Sensor
 

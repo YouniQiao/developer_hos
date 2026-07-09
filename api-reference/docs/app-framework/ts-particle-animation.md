@@ -2,8 +2,8 @@
 title: "粒子动画 (Particle)"
 upstream_id: "harmonyos-references/ts-particle-animation"
 catalog: "harmonyos-references"
-content_hash: "35187c751169"
-synced_at: "2026-07-09T00:58:09.261048"
+content_hash: "2b4f248bdd45"
+synced_at: "2026-07-09T17:24:48.738789"
 ---
 
 # 粒子动画 (Particle)
@@ -209,7 +209,7 @@ interface EmitterOptions<PARTICLE extends ParticleType> {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| radius | [VP](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#vp10) | 否 | 否 | 粒子半径。 默认值：0，小于0时取默认值0。 |
+| radius | [VP](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#vp10) | 否 | 否 | 粒子半径。 默认值：0，小于0时取默认值0。 取值范围：[0, +∞) |
 
 #### ImageParticleParameters
 
@@ -597,7 +597,7 @@ interface ParticleColorUpdaterOptions<UPDATER extends ParticleUpdater> {
 - 当outerRadius小于innerRadius时（即外圆半径小于内圆半径时），会将当前较小的值作为新的内圆半径，将较大的值作为新的外圆半径。
 - 当endAngle小于startAngle时（即结束角度小于起始角度时），会将当前较小的值作为新的起始角度，将较大的值作为新的结束角度。
 
-![](./img/zh-cn_image_0000002631253724.png)
+![](./img/zh-cn_image_0000002664210005.png)
 
 元服务API： 从API version 20开始，该接口支持在元服务中使用。
 
@@ -820,11 +820,11 @@ struct ParticleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612907.gif)
+ ![](./img/zh-cn_image_0000002664330063.gif)
 
 #### [h2]示例2（图片初始化粒子）
 
-描述粒子动画基础用法，通过图片初始化粒子。
+描述粒子动画基础用法，通过图片初始化粒子。该示例同时配置两种不同的图片粒子，展示多粒子类型组合效果。
 
 ```
 @Entry
@@ -834,376 +834,90 @@ struct ParticleExample {
   myCount: number = 100
   flag: boolean = false;
 
+  // 通过参数化配置减少重复代码，imageSrc为图片资源，scaleTo为缩放目标值，durationMs为动画持续时长
+  private createImageParticle(imageSrc: ResourceStr, scaleTo: number, durationMs: number)
+    : ParticleOptions<ParticleType.IMAGE, ParticleUpdater.CURVE, ParticleUpdater.CURVE,
+  ParticleUpdater.CURVE, ParticleUpdater.CURVE, ParticleUpdater.CURVE, ParticleUpdater.CURVE>
+  {
+    return {
+      emitter: {
+        particle: {
+          type: ParticleType.IMAGE,
+          config: {
+            src: imageSrc,
+            size: [10, 10]
+          },
+          count: this.myCount,
+          lifetime: 10000,
+          lifetimeRange: 100
+        },
+        emitRate: 3,
+        shape: ParticleEmitterShape.CIRCLE
+      },
+      color: {
+        range: [Color.White, Color.White]
+      },
+      opacity: {
+        range: [1.0, 1.0],
+        updater: {
+          type: ParticleUpdater.CURVE,
+          config: [
+            { from: 0, to: 1.0, startMillis: 0, endMillis: 6000 },
+            { from: 1.0, to: 0, startMillis: 6000, endMillis: 10000 }
+          ]
+        }
+      },
+      scale: {
+        range: [0.1, 1.0],
+        updater: {
+          type: ParticleUpdater.CURVE,
+          config: [
+            { from: 0, to: scaleTo, startMillis: 0, endMillis: durationMs, curve: Curve.EaseIn }
+          ]
+        }
+      },
+      acceleration: {
+        speed: {
+          range: [3, 9],
+          updater: {
+            type: ParticleUpdater.CURVE,
+            config: [
+              { from: 10, to: 20, startMillis: 0, endMillis: 3000, curve: Curve.EaseIn },
+              { from: 10, to: 2, startMillis: 3000, endMillis: 8000, curve: Curve.EaseIn }
+            ]
+          }
+        },
+        angle: {
+          range: [0, 180],
+          updater: {
+            type: ParticleUpdater.CURVE,
+            config: [
+              { from: 1, to: 2, startMillis: 0, endMillis: 1000, curve: Curve.EaseIn },
+              { from: 50, to: -50, startMillis: 1000, endMillis: 3000, curve: Curve.EaseIn },
+              { from: 3, to: 5, startMillis: 3000, endMillis: durationMs, curve: Curve.EaseIn }
+            ]
+          }
+        }
+      },
+      spin: {
+        range: [0.1, 1.0],
+        updater: {
+          type: ParticleUpdater.CURVE,
+          config: [
+            { from: 0, to: 360, startMillis: 0, endMillis: durationMs, curve: Curve.EaseIn }
+          ]
+        }
+      },
+    }
+  }
+
   build() {
     Column() {
       Stack() {
         Particle({
           particles: [
-            {
-              emitter: {
-                particle: {
-                  type: ParticleType.IMAGE,
-                  config: {
-                    src: $r("app.media.book"),
-                    size: [10, 10]
-                  },
-                  count: this.myCount,
-                  lifetime: 10000,
-                  lifetimeRange: 100
-                },
-                emitRate: 3,
-                shape: ParticleEmitterShape.CIRCLE
-              },
-              color: {
-                range: [Color.White, Color.White]
-              },
-              opacity: {
-                range: [1.0, 1.0],
-                updater: {
-                  type: ParticleUpdater.CURVE,
-                  config: [
-                    {
-                      from: 0,
-                      to: 1.0,
-                      startMillis: 0,
-                      endMillis: 6000
-                    },
-                    {
-                      from: 1.0,
-                      to: 0,
-                      startMillis: 6000,
-                      endMillis: 10000
-                    }
-                  ]
-                }
-              },
-              scale: {
-                range: [0.1, 1.0],
-                updater: {
-                  type: ParticleUpdater.CURVE,
-                  config: [
-                    {
-                      from: 0,
-                      to: 1.5,
-                      startMillis: 0,
-                      endMillis: 8000,
-                      curve: Curve.EaseIn
-                    }
-
-                  ]
-                }
-              },
-              acceleration: {
-                speed: {
-                  range: [3, 9],
-                  updater: {
-                    type: ParticleUpdater.CURVE,
-                    config: [
-                      {
-                        from: 10,
-                        to: 20,
-                        startMillis: 0,
-                        endMillis: 3000,
-                        curve: Curve.EaseIn
-                      },
-                      {
-                        from: 10,
-                        to: 2,
-                        startMillis: 3000,
-                        endMillis: 8000,
-                        curve: Curve.EaseIn
-                      }
-                    ]
-                  }
-                },
-                angle: {
-                  range: [0, 180],
-                  updater: {
-                    type: ParticleUpdater.CURVE,
-                    config: [{
-                      from: 1,
-                      to: 2,
-                      startMillis: 0,
-                      endMillis: 1000,
-                      curve: Curve.EaseIn
-                    },
-                      {
-                        from: 50,
-                        to: -50,
-                        startMillis: 1000,
-                        endMillis: 3000,
-                        curve: Curve.EaseIn
-                      },
-                      {
-                        from: 3,
-                        to: 5,
-                        startMillis: 3000,
-                        endMillis: 8000,
-                        curve: Curve.EaseIn
-                      }
-                    ]
-                  }
-                }
-              },
-              spin: {
-                range: [0.1, 1.0],
-                updater: {
-                  type: ParticleUpdater.CURVE,
-                  config: [
-                    {
-                      from: 0,
-                      to: 360,
-                      startMillis: 0,
-                      endMillis: 8000,
-                      curve: Curve.EaseIn
-                    }
-                  ]
-                }
-              },
-            }
-            , {
-            emitter: {
-              particle: {
-                type: ParticleType.IMAGE,
-                config: {
-                  src: $r('app.media.heart'),
-                  size: [10, 10]
-                },
-                count: this.myCount,
-                lifetime: 10000,
-                lifetimeRange: 100
-              },
-              emitRate: 3,
-              shape: ParticleEmitterShape.CIRCLE
-            },
-            color: {
-              range: [Color.White, Color.White]
-            },
-            opacity: {
-              range: [1.0, 1.0],
-              updater: {
-                type: ParticleUpdater.CURVE,
-                config: [
-                  {
-                    from: 0,
-                    to: 1.0,
-                    startMillis: 0,
-                    endMillis: 6000
-                  },
-                  {
-                    from: 1.0,
-                    to: 0,
-                    startMillis: 6000,
-                    endMillis: 10000
-                  }
-                ]
-              }
-            },
-            scale: {
-              range: [0.1, 1.0],
-              updater: {
-                type: ParticleUpdater.CURVE,
-                config: [
-                  {
-                    from: 0,
-                    to: 2.0,
-                    startMillis: 0,
-                    endMillis: 10000,
-                    curve: Curve.EaseIn
-                  }
-
-                ]
-              }
-            },
-            acceleration: {
-              speed: {
-                range: [3, 9],
-                updater: {
-                  type: ParticleUpdater.CURVE,
-                  config: [
-                    {
-                      from: 10,
-                      to: 20,
-                      startMillis: 0,
-                      endMillis: 3000,
-                      curve: Curve.EaseIn
-                    },
-                    {
-                      from: 10,
-                      to: 2,
-                      startMillis: 3000,
-                      endMillis: 8000,
-                      curve: Curve.EaseIn
-                    }
-                  ]
-                }
-              },
-              angle: {
-                range: [0, 180],
-                updater: {
-                  type: ParticleUpdater.CURVE,
-                  config: [{
-                    from: 1,
-                    to: 2,
-                    startMillis: 0,
-                    endMillis: 1000,
-                    curve: Curve.EaseIn
-                  },
-                    {
-                      from: 50,
-                      to: -50,
-                      startMillis: 1000,
-                      endMillis: 3000,
-                      curve: Curve.EaseIn
-                    },
-                    {
-                      from: 3,
-                      to: 5,
-                      startMillis: 3000,
-                      endMillis: 10000,
-                      curve: Curve.EaseIn
-                    }
-                  ]
-                }
-              }
-            },
-            spin: {
-              range: [0.1, 1.0],
-              updater: {
-                type: ParticleUpdater.CURVE,
-                config: [
-                  {
-                    from: 0,
-                    to: 360,
-                    startMillis: 0,
-                    endMillis: 10000,
-                    curve: Curve.EaseIn
-                  }
-                ]
-              }
-            },
-          }, {
-            emitter: {
-              particle: {
-                type: ParticleType.IMAGE,
-                config: {
-                  src: $r('app.media.sun'),
-                  size: [10, 10]
-                },
-                count: this.myCount,
-                lifetime: 10000,
-                lifetimeRange: 100
-              },
-              emitRate: 3,
-              shape: ParticleEmitterShape.CIRCLE
-            },
-            color: {
-              range: [Color.White, Color.White]
-            },
-            opacity: {
-              range: [1.0, 1.0],
-              updater: {
-                type: ParticleUpdater.CURVE,
-                config: [
-                  {
-                    from: 0,
-                    to: 1.0,
-                    startMillis: 0,
-                    endMillis: 6000
-                  },
-                  {
-                    from: 1.0,
-                    to: 0,
-                    startMillis: 6000,
-                    endMillis: 10000
-                  }
-                ]
-              }
-            },
-            scale: {
-              range: [0.1, 1.0],
-              updater: {
-                type: ParticleUpdater.CURVE,
-                config: [
-                  {
-                    from: 0,
-                    to: 2.0,
-                    startMillis: 0,
-                    endMillis: 10000,
-                    curve: Curve.EaseIn
-                  }
-
-                ]
-              }
-            },
-            acceleration: {
-              speed: {
-                range: [3, 9],
-                updater: {
-                  type: ParticleUpdater.CURVE,
-                  config: [
-                    {
-                      from: 10,
-                      to: 20,
-                      startMillis: 0,
-                      endMillis: 3000,
-                      curve: Curve.EaseIn
-                    },
-                    {
-                      from: 10,
-                      to: 2,
-                      startMillis: 3000,
-                      endMillis: 8000,
-                      curve: Curve.EaseIn
-                    }
-                  ]
-                }
-              },
-              angle: {
-                range: [0, 180],
-                updater: {
-                  type: ParticleUpdater.CURVE,
-                  config: [{
-                    from: 1,
-                    to: 2,
-                    startMillis: 0,
-                    endMillis: 1000,
-                    curve: Curve.EaseIn
-                  },
-                    {
-                      from: 50,
-                      to: -50,
-                      startMillis: 1000,
-                      endMillis: 3000,
-                      curve: Curve.EaseIn
-                    },
-                    {
-                      from: 3,
-                      to: 5,
-                      startMillis: 3000,
-                      endMillis: 8000,
-                      curve: Curve.EaseIn
-                    }
-                  ]
-                }
-              }
-            },
-            spin: {
-              range: [0.1, 1.0],
-              updater: {
-                type: ParticleUpdater.CURVE,
-                config: [
-                  {
-                    from: 0,
-                    to: 360,
-                    startMillis: 0,
-                    endMillis: 10000,
-                    curve: Curve.EaseIn
-                  }
-                ]
-              }
-            },
-          }
+            this.createImageParticle($r("app.media.book"), 1.5, 8000),   // book粒子：缩放至1.5倍，持续8000ms
+            this.createImageParticle($r('app.media.heart'), 2.0, 10000),  // heart粒子：缩放至2.0倍，持续10000ms
           ]
         }).width(300).height(300)
 
@@ -1213,7 +927,7 @@ struct ParticleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413616.gif)
+ ![](./img/zh-cn_image_0000002633850952.gif)
 
 #### [h2]示例3（粒子扰动场的干扰下运动轨迹发生变化）
 
@@ -1339,7 +1053,7 @@ struct ParticleExample3 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732847.gif)
+ ![](./img/zh-cn_image_0000002634010856.gif)
 
 #### [h2]示例4（调整粒子发射器位置）
 
@@ -1417,7 +1131,7 @@ struct ParticleExample4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253726.gif)
+ ![](./img/zh-cn_image_0000002664210007.gif)
 
 #### [h2]示例5（环形发射器创建）
 
@@ -1503,7 +1217,7 @@ struct ParticleExample5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612909.gif)
+ ![](./img/zh-cn_image_0000002664330065.gif)
 
 #### [h2]示例6（环形发射器更新）
 
@@ -1618,7 +1332,7 @@ struct ParticleExample6 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413618.gif)
+ ![](./img/zh-cn_image_0000002633850954.gif)
 
 #### [h2]示例7（设置波动场和速度场）
 
@@ -1746,4 +1460,4 @@ struct ParticleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732849.gif)
+ ![](./img/zh-cn_image_0000002634010858.gif)

@@ -2,8 +2,8 @@
 title: "chart"
 upstream_id: "harmonyos-references/js-service-widget-basic-chart"
 catalog: "harmonyos-references"
-content_hash: "81fdf6f1008f"
-synced_at: "2026-07-09T00:58:31.621771"
+content_hash: "434b1ba9acfd"
+synced_at: "2026-07-09T17:25:13.803746"
 ---
 
 # chart
@@ -35,7 +35,7 @@ synced_at: "2026-07-09T00:58:31.621771"
 | --- | --- | --- | --- | --- |
 | xAxis | ChartAxis | - | 是 | x轴参数设置。可以设置x轴最小值、最大值、刻度数以及是否显示。 |
 | yAxis | ChartAxis | - | 是 | y轴参数设置。可以设置y轴最小值、最大值、刻度数以及是否显示。 |
-| series | ChartAxis | - | 否 | 数据序列参数设置，仅线形图支持。可以设置： - 线的样式，如线宽、是否平滑。 - 线最前端位置白点的样式和大小。 - 最高点和最低点的样式和大小。 - 屏幕显示满时，是否需要重头开始绘制。 |
+| series | ChartSeries | - | 否 | 数据序列参数设置，仅线形图支持。可以设置： - 线的样式，如线宽、是否平滑。 - 线最前端位置白点的样式和大小。 |
 
 表2 ChartDataset
 
@@ -249,7 +249,7 @@ synced_at: "2026-07-09T00:58:31.621771"
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631254130.png)
+ ![](./img/zh-cn_image_0000002664210409.png)
 2. 柱状图 
 ```
 <!-- xxx.hml -->
@@ -314,7 +314,7 @@ synced_at: "2026-07-09T00:58:31.621771"
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613313.png)
+ ![](./img/zh-cn_image_0000002664330467.png)
 3. 量规图 
 ```
 <!-- xxx.hml -->
@@ -341,4 +341,4 @@ synced_at: "2026-07-09T00:58:31.621771"
   weights: 4, 2, 1;
 }
 ```
- ![](./img/zh-cn_image_0000002631414024.png)
+ ![](./img/zh-cn_image_0000002633851356.png)

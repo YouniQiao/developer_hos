@@ -2,8 +2,8 @@
 title: "XComponent"
 upstream_id: "harmonyos-references/ts-basic-components-xcomponent"
 catalog: "harmonyos-references"
-content_hash: "d06e387c622b"
-synced_at: "2026-07-09T00:58:07.162405"
+content_hash: "3e6ffae100bd"
+synced_at: "2026-07-09T17:24:42.431384"
 ---
 
 # XComponent
@@ -74,7 +74,7 @@ XComponent(value: {id: string, type: XComponentType, libraryname?: string, contr
 | --- | --- | --- | --- |
 | id | string | 是 | 组件的唯一标识，支持最大的字符串长度128。 |
 | type | [XComponentType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#xcomponenttype10) | 是 | 用于指定XComponent组件类型。 |
-| libraryname | string | 否 | 用Native层编译输出动态库名称（对应的动态库不支持跨模块加载），仅类型为SURFACE或TEXTURE时有效。 |
+| libraryname | string | 否 | 应用Native层编译输出动态库名称（对应的动态库不支持跨模块加载），仅类型为SURFACE或TEXTURE时有效。 |
 | controller | [XComponentController](#xcomponentcontroller) | 否 | 给组件绑定一个控制器，通过控制器调用组件方法，仅类型为SURFACE或TEXTURE时有效。 |
 
 #### [h2]XComponent(deprecated)
@@ -143,7 +143,7 @@ enableAnalyzer(enable: boolean)
 
 设置组件支持AI分析，当前支持主体识别、文字识别和对象查找等功能。
 
-本功能需要搭配XComponentController的[StartImageAnalyzer](#startimageanalyzer12)和[StopImageAnalyzer](#stopimageanalyzer12)一起使用。
+本功能需要搭配XComponentController的[startImageAnalyzer](#startimageanalyzer12)和[stopImageAnalyzer](#stopimageanalyzer12)一起使用。
 
 不能和[overlay](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-overlay#overlay)属性同时使用，两者同时设置时overlay中[CustomBuilder](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#custombuilder8)属性将失效。该特性依赖设备能力。
 
@@ -239,12 +239,12 @@ hdrBrightness(brightness: number, type?: HdrType)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| brightness | number | 是 | HDR视频的亮度。取值范围为0.0到1.0。小于0.0的值按0.0处理，大于1.0的值按1.0处理，其他异常值按1.0处理。0.0表示视频按照SDR亮度显示，1.0表示视频按照当前允许的最高HDR亮度显示。 |
+| brightness | number | 是 | HDR视频的亮度。 默认值：1.0 取值范围：[0.0, 1.0]。小于0.0的值按0.0处理，大于1.0的值按1.0处理，其他异常值按1.0处理。0.0表示视频按照SDR亮度显示，1.0表示视频按照当前允许的最高HDR亮度显示。 |
 | type | [HdrType](#hdrtype24枚举说明) | 否 | 播放HDR视频时的HDR类型。 默认值: HdrType.DEFAULT |
 
 #### HdrType24+枚举说明
 
-HDR视频的高动态范围渲染类型。
+HDR内容的高动态范围渲染类型。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -853,7 +853,6 @@ struct XComponentExample {
         Button('Draw Star')
           .fontSize('16fp')
           .fontWeight(500)
-          .margin({ bottom: 24 })
           .onClick(() => {
             let surfaceId = this.xComponentController.getXComponentSurfaceId();
             console.info(`surface rect is ${this.xComponentController.getXComponentSurfaceRect()}`);
@@ -873,7 +872,7 @@ struct XComponentExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253712.gif)
+ ![](./img/zh-cn_image_0000002634010842.gif)
 
 #### [h2]示例2（在surface旋转过程中锁定）
 
@@ -982,7 +981,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612893.png)
+ ![](./img/zh-cn_image_0000002664209993.png)
 
 #### [h2]示例4（XComponent实现沉浸式效果）
 
@@ -1030,7 +1029,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413604.jpeg)
+ ![](./img/zh-cn_image_0000002664330051.jpeg)
 
 #### [h2]示例5（设置XComponent持有Surface在渲染时是否需要被视为不透明）
 
@@ -1129,4 +1128,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732835.jpeg)
+ ![](./img/zh-cn_image_0000002633850940.jpeg)

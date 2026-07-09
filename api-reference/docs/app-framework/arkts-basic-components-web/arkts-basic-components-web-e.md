@@ -2,8 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-basic-components-web-e"
 catalog: "harmonyos-references"
-content_hash: "c3bec74c0e21"
-synced_at: "2026-07-09T00:58:55.434307"
+content_hash: "c21af77684a8"
+synced_at: "2026-07-09T17:25:40.205946"
 ---
 
 # Enums
@@ -16,17 +16,17 @@ ConsoleMessage的信息级别。
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 在html5侧，调用console.log或console.info对应ConsoleMessage的信息级别都为MessageLevel.Info。
+- 在HTML5侧，调用console.log或console.info对应ConsoleMessage的信息级别都为MessageLevel.Info。
 
 系统能力： SystemCapability.Web.Webview.Core
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
 | Debug | 1 | 调试级别。 |
-| Error | 4 | 错误级别。 |
 | Info | 2 | 消息级别。 |
-| Log | 5 | 日志级别。 |
 | Warn | 3 | 警告级别。 |
+| Error | 4 | 错误级别。 |
+| Log | 5 | 日志级别。 **起始版本：** 8 **废弃版本：** 26.0.0 |
 
 #### ConsoleMessageSource23+
 
@@ -218,6 +218,8 @@ Web布局模式的配置。
 | NAVIGATION_COMMIT_TIMEOUT | 1 | 新的网页加载导航响应超时。 |
 
 #### ProtectedResourceType9+
+
+受保护的资源类型。
 
 系统能力： SystemCapability.Web.Webview.Core
 

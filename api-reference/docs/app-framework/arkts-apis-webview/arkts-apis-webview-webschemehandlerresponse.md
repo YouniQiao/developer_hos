@@ -2,8 +2,8 @@
 title: "Class (WebSchemeHandlerResponse)"
 upstream_id: "harmonyos-references/arkts-apis-webview-webschemehandlerresponse"
 catalog: "harmonyos-references"
-content_hash: "9e80e363d950"
-synced_at: "2026-07-09T00:58:52.077624"
+content_hash: "a11efc1f1c52"
+synced_at: "2026-07-09T17:25:36.557620"
 ---
 
 # Class (WebSchemeHandlerResponse)
@@ -62,7 +62,7 @@ struct WebComponent {
           console.info("[schemeHandler] getStatusText:" + response.getStatusText())
           console.info("[schemeHandler] getMimeType:" + response.getMimeType())
           console.info("[schemeHandler] getEncoding:" + response.getEncoding())
-          console.info("[schemeHandler] getHeaderByValue:" + response.getHeaderByName("header1"))
+          console.info("[schemeHandler] getHeaderByName:" + response.getHeaderByName("header1"))
           console.info("[schemeHandler] getNetErrorCode:" + response.getNetErrorCode())
 
         } catch (error) {

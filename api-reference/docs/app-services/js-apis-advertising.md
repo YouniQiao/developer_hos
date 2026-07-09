@@ -2,8 +2,8 @@
 title: "@ohos.advertising (广告服务框架)"
 upstream_id: "harmonyos-references/js-apis-advertising"
 catalog: "harmonyos-references"
-content_hash: "5b5b5580ccc3"
-synced_at: "2026-07-09T01:01:14.361178"
+content_hash: "fdb8adb597ae"
+synced_at: "2026-07-09T17:28:00.007004"
 ---
 
 # @ohos.advertising (广告服务框架)
@@ -30,10 +30,10 @@ showAd(ad: Advertisement, options: AdDisplayOptions, context?: common.UIAbilityC
 
 参数：
 
-| **参数名** | **类型** | 必填 | 说明 |
+| **名称** | **类型** | 必填 | 说明 |
 | --- | --- | --- | --- |
-| ad | [Advertisement](#advertisement) | 是 | 广告对象。 |
-| options | [AdDisplayOptions](#addisplayoptions) | 是 | 广告展示参数。 |
+| ad | [Advertisement](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertisement#advertisement) | 是 | 广告对象。 |
+| options | [AdDisplayOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#addisplayoptions) | 是 | 广告展示参数。 |
 | context | common.[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | 否 | UIAbility的上下文环境，不设置从api: [@ohos.app.ability.common](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-common)中获取。 |
 
 错误码：
@@ -77,10 +77,10 @@ getAdRequestBody(adParams: AdRequestParams[], adOptions: AdOptions): Promise<str
 
 参数：
 
-| **参数名** | **类型** | 必填 | 说明 |
+| **名称** | **类型** | 必填 | 说明 |
 | --- | --- | --- | --- |
-| adParams | [AdRequestParams[]](#adrequestparams) | 是 | 广告请求参数。 **说明：** 该接口体的adId参数可以为空。 |
-| adOptions | [AdOptions](#adoptions) | 是 | 广告配置参数。 |
+| adParams | [AdRequestParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#adrequestparams)[] | 是 | 广告请求参数。 **说明：** 该接口体的adId参数可以为空。 |
+| adOptions | [AdOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#adoptions) | 是 | 广告配置参数。 |
 
 返回值：
 
@@ -126,10 +126,10 @@ parseAdResponse(adResponse: string, listener: MultiSlotsAdLoadListener, context:
 
 参数：
 
-| **参数名** | **类型** | 必填 | 说明 |
+| **名称** | **类型** | 必填 | 说明 |
 | --- | --- | --- | --- |
 | adResponse | string | 是 | 广告响应体。 |
-| listener | [MultiSlotsAdLoadListener](#multislotsadloadlistener) | 是 | 请求广告回调监听。 |
+| listener | [MultiSlotsAdLoadListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#multislotsadloadlistener) | 是 | 请求广告回调监听。 |
 | context | common.[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | 是 | UIAbility的上下文环境。 |
 
 错误码：
@@ -145,7 +145,7 @@ parseAdResponse(adResponse: string, listener: MultiSlotsAdLoadListener, context:
 
 示例：
 
-其中context的获取方式参见[各类Context的获取方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#context的获取方式)。
+其中context的获取方式参见[各类context的获取方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#context的获取方式)。
 
 ```
 import { common } from '@kit.AbilityKit';
@@ -182,7 +182,7 @@ registerWebAdInterface(controller: web_webview.WebviewController, context: commo
 
 参数：
 
-| **参数名** | **类型** | 必填 | 说明 |
+| **名称** | **类型** | 必填 | 说明 |
 | --- | --- | --- | --- |
 | controller | web_webview.[WebviewController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller) | 是 | Web组件控制器。 |
 | context | common.[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | 是 | UIAbility的上下文环境。 |
@@ -237,7 +237,7 @@ registerWebAdInterface(controller: web_webview.WebviewController, context: commo
 
 参数：
 
-| **参数名** | **类型** | 必填 | 说明 |
+| **名称** | **类型** | 必填 | 说明 |
 | --- | --- | --- | --- |
 | controller | web_webview.[WebviewController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller) | 是 | Web组件控制器。 |
 | context | common.[UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | 是 | UIAbility的上下文环境。 |
@@ -293,7 +293,7 @@ deleteWebAdInterface(controller: web_webview.WebviewController, needRefresh: boo
 
 参数：
 
-| **参数名** | **类型** | 必填 | 说明 |
+| **名称** | **类型** | 必填 | 说明 |
 | --- | --- | --- | --- |
 | controller | web_webview.[WebviewController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller) | 是 | Web组件控制器。 |
 | needRefresh | boolean | 是 | 是否需要刷新页面（true: 需要；false: 不需要）。 |
@@ -353,7 +353,7 @@ constructor(context: common.Context)
 
 参数：
 
-| **参数名** | **类型** | 必填 | 说明 |
+| **名称** | **类型** | 必填 | 说明 |
 | --- | --- | --- | --- |
 | context | common.[Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context) | 是 | ability或application的上下文环境。 |
 
@@ -383,11 +383,11 @@ loadAd(adParam: AdRequestParams, adOptions: AdOptions, listener: AdLoadListener)
 
 参数：
 
-| **参数名** | **类型** | 必填 | 说明 |
+| **名称** | **类型** | 必填 | 说明 |
 | --- | --- | --- | --- |
-| adParam | [AdRequestParams](#adrequestparams) | 是 | 广告请求参数。 |
-| adOptions | [AdOptions](#adoptions) | 是 | 广告配置参数。 |
-| listener | [AdLoadListener](#adloadlistener) | 是 | 请求广告回调监听。 |
+| adParam | [AdRequestParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#adrequestparams) | 是 | 广告请求参数。 |
+| adOptions | [AdOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#adoptions) | 是 | 广告配置参数。 |
+| listener | [AdLoadListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#adloadlistener) | 是 | 请求广告回调监听。 |
 
 错误码：
 
@@ -396,7 +396,7 @@ loadAd(adParam: AdRequestParams, adOptions: AdOptions, listener: AdLoadListener)
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Invalid input parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
-| 801 | Device not supported. |
+| 801 | Device not supported. 适用版本：12+ |
 | 21800001 | System internal error. |
 | 21800003 | Failed to load the ad request. |
 
@@ -443,11 +443,11 @@ loadAdWithMultiSlots(adParams: AdRequestParams[], adOptions: AdOptions, listener
 
 参数：
 
-| **参数名** | **类型** | 必填 | 说明 |
+| **名称** | **类型** | 必填 | 说明 |
 | --- | --- | --- | --- |
-| adParams | [AdRequestParams](#adrequestparams)[] | 是 | 广告请求参数。 |
-| adOptions | [AdOptions](#adoptions) | 是 | 广告配置参数。 |
-| listener | [MultiSlotsAdLoadListener](#multislotsadloadlistener) | 是 | 请求广告回调监听。 |
+| adParams | [AdRequestParams](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#adrequestparams)[] | 是 | 广告请求参数。 |
+| adOptions | [AdOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#adoptions) | 是 | 广告配置参数。 |
+| listener | [MultiSlotsAdLoadListener](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#multislotsadloadlistener) | 是 | 请求广告回调监听。 |
 
 错误码：
 
@@ -456,13 +456,13 @@ loadAdWithMultiSlots(adParams: AdRequestParams[], adOptions: AdOptions, listener
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Invalid input parameter. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
-| 801 | Device not supported. |
+| 801 | Device not supported. 适用版本：12+ |
 | 21800001 | System internal error. |
 | 21800003 | Failed to load the ad request. |
 
 示例：
 
-其中context的获取方式参见[各类Context的获取方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#context的获取方式)。
+其中context的获取方式参见[各类context的获取方式](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/application-context-stage#context的获取方式)。
 
 ```
 import { common } from '@kit.AbilityKit';
@@ -510,6 +510,8 @@ onAdLoadFailure(errorCode: number, errorMsg: string): void
 
 系统能力： SystemCapability.Advertising.Ads
 
+参数：
+
 | 名称 | **类型** | 必填 | 说明 |
 | --- | --- | --- | --- |
 | errorCode | number | 是 | 广告请求失败的错误码。 |
@@ -540,6 +542,8 @@ onAdLoadSuccess(ads: Array<Advertisement>): void
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Advertising.Ads
+
+参数：
 
 | 名称 | **类型** | 必填 | 说明 |
 | --- | --- | --- | --- |
@@ -579,6 +583,8 @@ onAdLoadFailure(errorCode: number, errorMsg: string): void
 
 系统能力： SystemCapability.Advertising.Ads
 
+参数：
+
 | 名称 | **类型** | 必填 | 说明 |
 | --- | --- | --- | --- |
 | errorCode | number | 是 | 广告请求失败的错误码。 |
@@ -610,7 +616,9 @@ onAdLoadSuccess(adsMap: Map<string, Array<Advertisement>>): void
 
 系统能力： SystemCapability.Advertising.Ads
 
-| **参数名** | **类型** | 必填 | 说明 |
+参数：
+
+| **名称** | **类型** | 必填 | 说明 |
 | --- | --- | --- | --- |
 | adsMap | Map> | 是 | 广告数据，是以广告位ID为键，存储请求到的广告内容的映射集合。 |
 
@@ -650,10 +658,10 @@ onStatusChanged(status: string, ad: Advertisement, data: string)
 
 参数：
 
-| 参数名 | 类型 | 必填 | 说明 |
+| 名称 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | status | string | 是 | 广告展示状态。 - onAdLoad：广告加载成功。 - onAdFail：广告加载失败。 - onAdOpen：打开广告。 - onAdClick：点击广告。 - onAdClose：关闭广告。 - onMediaProgress：广告播放进度。 - onMediaStart：广告开始播放。 - onMediaPause：广告暂停播放。 - onMediaStop：广告停止播放。 - onMediaComplete：广告播放完成。 - onMediaCountDown：广告倒计时。 - onMediaError：广告播放失败。 - onLandscape：竖屏状态下点击全屏按钮。 - onPortrait：全屏状态下点击返回按钮。 - onBackClicked：点击返回按钮。 |
-| ad | [Advertisement](#advertisement) | 是 | 发生状态变化的广告内容。 |
+| ad | [Advertisement](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertisement#advertisement) | 是 | 发生状态变化的广告内容。 |
 | data | string | 是 | 扩展信息。 当status参数为onAdClose时，data值为关闭原因，关闭原因描述如下： - adShowEnded：广告展示结束。 - adCloseBtnClicked：点击关闭按钮。 - adSkipBtnClicked：点击跳过。 - adFeedbackClosed：负反馈关闭。 - adBackgroundClosed：开屏切后台关闭。 |
 
 示例：
@@ -729,12 +737,14 @@ const adInteractionListener: advertising.AdInteractionListener = {
 
 系统能力： SystemCapability.Advertising.Ads
 
-| 名称 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| tagForChildProtection | number | 否 | 是否希望根据 COPPA 的规定将您的内容视为面向儿童的内容。 -1：默认值，不确定。 0：不希望。 1：希望。 默认为-1。 |
-| adContentClassification | string | 否 | 设置广告内容分级上限。 W：3+，所有受众。 PI：7+，家长指导。 J：12+，青少年。 A：16+/18+，成人受众。 不填以业务逻辑为准。 |
-| nonPersonalizedAd | number | 否 | 设置是否只请求非个性化广告。 0：请求个性化广告与非个性化广告。 1：只请求非个性化广告。 不填以业务逻辑为准。 |
-| [key: string] | number | boolean | string | undefined | 否 | 自定义参数。 - totalDuration：类型number，单位：s。贴片广告必填自定义参数，用于设置贴片广告展示时长。 - allowMobileTraffic：类型number。可选自定义参数，设置是否允许使用流量下载广告素材。0：不允许，1：允许，不设置以广告主设置为准。 - tagForUnderAgeOfPromise：类型number。可选自定义参数，设置未成年保护标签。是否希望按适合未达到法定承诺年龄的欧洲经济区 (EEA) 用户的方式处理该广告请求。-1：默认值，不确定， 0：不希望 ， 1：希望。 |
+参数：
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| tagForChildProtection | number | 否 | 是 | 是否希望根据 COPPA 的规定将您的内容视为面向儿童的内容。 -1：默认值，不确定。 0：不希望。 1：希望。 默认为-1。 |
+| adContentClassification | string | 否 | 是 | 设置广告内容分级上限。 W：3+，所有受众。 PI：7+，家长指导。 J：12+，青少年。 A：16+/18+，成人受众。 不填以业务逻辑为准。 |
+| nonPersonalizedAd | number | 否 | 是 | 设置是否只请求非个性化广告。 0：请求个性化广告与非个性化广告。 1：只请求非个性化广告。 不填以业务逻辑为准。 |
+| [key: string] | number | boolean | string | undefined | 否 | 是 | 自定义参数。 - totalDuration：类型number，单位：s。贴片广告必填自定义参数，用于设置贴片广告展示时长。 - allowMobileTraffic：类型number。可选自定义参数，设置是否允许使用流量下载广告素材。0：不允许，1：允许，不设置以广告主设置为准。 - tagForUnderAgeOfPromise：类型number。可选自定义参数，设置未成年保护标签。是否希望按适合未达到法定承诺年龄的欧洲经济区 (EEA) 用户的方式处理该广告请求。-1：默认值，不确定， 0：不希望 ， 1：希望。 |
 
 #### AdRequestParams
 
@@ -744,15 +754,17 @@ const adInteractionListener: advertising.AdInteractionListener = {
 
 系统能力： SystemCapability.Advertising.Ads
 
-| 名称 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| adId | string | 是 | 广告位ID。 说明：getAdRequestBody接口可以不传该参数。 |
-| adType | number | 否 | 请求的广告类型。 - 1：开屏广告。 - 3：原生广告。 - 7：激励广告。 - 8：横幅广告。 - 12：插屏广告。 - 60：贴片广告。 不填默认为原生广告类型。 |
-| adCount | number | 否 | 请求的广告数量。不填以业务逻辑为准。 |
-| adWidth | number | 否 | 请求广告时期望的创意宽度，单位vp（横幅广告必填）。不填以业务逻辑为准。 |
-| adHeight | number | 否 | 请求广告时期望的创意高度，单位vp（横幅广告必填）。不填以业务逻辑为准。 |
-| adSearchKeyword | string | 否 | 广告关键字。不填默认""。 说明：暂不支持使用。 |
-| [key: string] | number | boolean | string | undefined | 否 | 自定义参数。 - isPreload：类型boolean，请求贴片广告时，用于区分普通在线请求和素材预加载请求。true：素材预加载请求，false：普通在线请求。默认值false。仅对贴片广告生效，其他广告请求不解析该参数。 - enableDirectReturnVideoAd：类型boolean，原生广告自定义扩展参数，是否直接返回广告，不用等待所有广告素材下载完成。true：不等待广告素材下载完成，展示广告时在线加载素材；false：等待广告素材下载完成，展示广告时从本地缓存中加载素材。如果不填以云侧配置为准。仅对原生广告生效，其他广告请求不解析该参数。 - oaid: 类型string，开放匿名设备标识符，用于精准推送广告。不填无法获取到个性化广告。默认值为""。 - tMax：类型number，交易的最大超时时间（包含网络延迟）单位ms。 - cur：类型string，竞价请求支持的币种，支持传多个，用英文逗号分隔。当前支持五种货币：CNY（单位：元）、USD（单位：美元）、EUR（单位：欧元）、GBP（单位：英镑）、JPY（单位：日元），不填则默认是CNY。 - bidFloor：类型number或者string，实时竞价广告位的底价。如果底价是小数，请传入string避免丢失精度。 - bidFloorCur：类型string，广告位底价使用的币种。如果bidFloor非空，则bidFloorCur也非空。当前只支持五种货币中的一种：CNY（单位：元）、USD（单位：美元）、EUR（单位：欧元）、GBP（单位：英镑）、JPY（单位：日元），不填则默认是CNY。 - bpkgName：类型string，广告位禁投的APP包名，支持传多个，用英文逗号分隔。 - orientation ：类型number，媒体请求广告的屏幕方向。1表示竖屏，0表示横屏，不设置则默认为1。当前未上架横屏开屏素材，若设置请求屏幕方向为横屏则不展示开屏广告。如果媒体设置应用固定横屏展示，但该参数未设置或者设置为1，则展示效果会受影响。 |
+参数：
+
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| adId | string | 否 | 否 | 广告位ID。 说明：[getAdRequestBody](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertising#advertisinggetadrequestbody12)接口可以不传该参数。 |
+| adType | number | 否 | 是 | 请求的广告类型。 - 1：开屏广告。 - 3：原生广告。 - 7：激励广告。 - 8：横幅广告。 - 12：插屏广告。 - 60：贴片广告。 不填默认为原生广告类型。 |
+| adCount | number | 否 | 是 | 请求的广告数量。不填以业务逻辑为准。 |
+| adWidth | number | 否 | 是 | 请求广告时期望的创意宽度，单位vp（横幅广告必填）。不填以业务逻辑为准。 |
+| adHeight | number | 否 | 是 | 请求广告时期望的创意高度，单位vp（横幅广告必填）。不填以业务逻辑为准。 |
+| adSearchKeyword | string | 否 | 是 | 广告关键字。不填默认""。 说明：暂不支持使用。 |
+| [key: string] | number | boolean | string | undefined | 否 | 是 | 自定义参数。 - isPreload：类型boolean，请求贴片广告时，用于区分普通在线请求和素材预加载请求。true：素材预加载请求，false：普通在线请求。默认值false。仅对贴片广告生效，其他广告请求不解析该参数。 - enableDirectReturnVideoAd：类型boolean，原生广告自定义扩展参数，是否直接返回广告，不用等待所有广告素材下载完成。true：不等待广告素材下载完成，展示广告时在线加载素材；false：等待广告素材下载完成，展示广告时从本地缓存中加载素材。如果不填以云侧配置为准。仅对原生广告生效，其他广告请求不解析该参数。 - oaid: 类型string，开放匿名设备标识符，用于精准推送广告。不填无法获取到个性化广告。默认值为""。 - tMax：类型number，交易的最大超时时间（包含网络延迟）单位ms。 - cur：类型string，竞价请求支持的币种，支持传多个，用英文逗号分隔。当前支持五种货币：CNY（单位：元）、USD（单位：美元）、EUR（单位：欧元）、GBP（单位：英镑）、JPY（单位：日元），不填则默认是CNY。 - bidFloor：类型number或者string，实时竞价广告位的底价。如果底价是小数，请传入string避免丢失精度。 - bidFloorCur：类型string，广告位底价使用的币种。如果bidFloor非空，则bidFloorCur也非空。当前只支持五种货币中的一种：CNY（单位：元）、USD（单位：美元）、EUR（单位：欧元）、GBP（单位：英镑）、JPY（单位：日元），不填则默认是CNY。 - bpkgName：类型string，广告位禁投的APP包名，支持传多个，用英文逗号分隔。 - orientation ：类型number，媒体请求广告的屏幕方向。1表示竖屏，0表示横屏，不设置则默认为1。当前未上架横屏开屏素材，若设置请求屏幕方向为横屏则不展示开屏广告。如果媒体设置应用固定横屏展示，但该参数未设置或者设置为1，则展示效果会受影响。 |
 
 #### AdDisplayOptions
 
@@ -762,25 +774,13 @@ const adInteractionListener: advertising.AdInteractionListener = {
 
 系统能力： SystemCapability.Advertising.Ads
 
-| 名称 | 类型 | 必填 | 说明 |
-| --- | --- | --- | --- |
-| customData | string | 否 | 媒体自定义数据。用于服务端通知媒体服务器某位用户因为与激励视频广告互动而应予以奖励，从而规避欺骗的行为（不填则不会通知）。 |
-| userId | string | 否 | 媒体自定义用户id。用于服务端通知媒体服务器某位用户因为与激励视频广告互动而应予以奖励，从而规避欺骗的行为（不填则不会通知）。 |
-| useMobileDataReminder | boolean | 否 | 使用移动数据播放视频或下载应用时是否弹框通知用户。 - true：弹框通知。 - false：不弹框通知。 - 该参数依赖流量弹窗功能，当前不支持完整功能的使用，暂不确定默认值。 |
-| mute | boolean | 否 | 广告视频播放是否静音。 - true：静音播放。 - false：非静音播放。 不填以业务逻辑为准。 |
-| audioFocusType | number | 否 | 视频播放过程中获得音频焦点的场景类型。 - 0：视频播放静音、非静音时都获取焦点。 - 1：视频静音播放时不获取焦点。 - 2：视频播放静音、非静音时都不获取焦点。 - 该接口依赖的相关功能当前不支持使用，暂不确定默认值。 |
-| [key: string] | number | boolean | string | undefined | 否 | 自定义参数。 - refreshTime：AutoAdComponent组件可选自定义参数，用于控制广告的轮播时间间隔。类型number，单位：ms，取值范围[30000, 120000]。如果不设置或取值为非数字或小于等于0的数字，则不轮播，只会展示广告响应中的第一个广告内容。设置小于30000的数字取值30000，设置大于120000的数字取值120000。 - colorMode：广告的主题色。类型number。0：深色主题， 1：浅色主题 ， 2：跟随系统，默认值为2。设置主题色功能从8.4.80.300版本开始支持，查看方式：可在设备上选择“设置> 应用和元服务” ，右上角点击“更多应用”，在应用界面查看智慧营销服务版本。 |
+参数：
 
-#### Advertisement
-
-type Advertisement = _Advertisement
-
-请求的广告内容。
-
-元服务API： 从API version 12开始，该接口支持在元服务中使用。
-
-系统能力： SystemCapability.Advertising.Ads
-
-| 类型 | 说明 |
-| --- | --- |
-| [_Advertisement](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-advertisement) | 表示Advertisement对象。 |
+| 名称 | 类型 | 只读 | 可选 | 说明 |
+| --- | --- | --- | --- | --- |
+| customData | string | 否 | 是 | 媒体自定义数据。用于服务端通知媒体服务器某位用户因为与激励视频广告互动而应予以奖励，从而规避欺骗的行为（不填则不会通知）。 |
+| userId | string | 否 | 是 | 媒体自定义用户id。用于服务端通知媒体服务器某位用户因为与激励视频广告互动而应予以奖励，从而规避欺骗的行为（不填则不会通知）。 |
+| useMobileDataReminder | boolean | 否 | 是 | 使用移动数据播放视频或下载应用时是否弹框通知用户。 - true：弹框通知。 - false：不弹框通知。 - 该参数依赖流量弹窗功能，当前不支持完整功能的使用，暂不确定默认值。 |
+| mute | boolean | 否 | 是 | 广告视频播放是否静音。 - true：静音播放。 - false：非静音播放。 不填以业务逻辑为准。 |
+| audioFocusType | number | 否 | 是 | 视频播放过程中获得音频焦点的场景类型。 - 0：视频播放静音、非静音时都获取焦点。 - 1：视频静音播放时不获取焦点。 - 2：视频播放静音、非静音时都不获取焦点。 - 该接口依赖的相关功能当前不支持使用，暂不确定默认值。 |
+| [key: string] | number | boolean | string | undefined | 否 | 是 | 自定义参数。 - refreshTime：AutoAdComponent组件可选自定义参数，用于控制广告的轮播时间间隔。类型number，单位：ms，取值范围[30000, 120000]。如果不设置或取值为非数字或小于等于0的数字，则不轮播，只会展示广告响应中的第一个广告内容。设置小于30000的数字取值30000，设置大于120000的数字取值120000。 - colorMode：广告的主题色。类型number。0：深色主题， 1：浅色主题 ， 2：跟随系统，默认值为2。设置主题色功能从8.4.80.300版本开始支持，查看方式：可在设备上选择“设置> 应用和元服务” ，右上角点击“更多应用”，在应用界面查看智慧营销服务版本。 |

@@ -2,8 +2,8 @@
 title: "ScenePostProcessSettings"
 upstream_id: "harmonyos-references/js-apis-inner-scene-post-process-settings"
 catalog: "harmonyos-references"
-content_hash: "b3194e8a4e85"
-synced_at: "2026-07-09T01:01:05.919915"
+content_hash: "586a61e3a93e"
+synced_at: "2026-07-09T17:27:51.886430"
 ---
 
 # ScenePostProcessSettings
@@ -17,7 +17,7 @@ synced_at: "2026-07-09T01:01:05.919915"
 #### 导入模块
 
 ```
-import { ToneMappingType, ToneMappingSettings, BloomSettings, PostProcessSettings } from '@kit.ArkGraphics3D';
+import { ToneMappingType, ToneMappingSettings, BloomSettings, VignetteSettings, ColorFringeSettings, PostProcessSettings } from '@kit.ArkGraphics3D';
 ```
 
 #### ToneMappingType

@@ -2,8 +2,8 @@
 title: "点击事件"
 upstream_id: "harmonyos-references/ts-universal-events-click"
 catalog: "harmonyos-references"
-content_hash: "1bcf1a708193"
-synced_at: "2026-07-09T00:57:36.454396"
+content_hash: "224dcb4d1e26"
+synced_at: "2026-07-09T17:23:27.426227"
 ---
 
 # 点击事件
@@ -108,8 +108,8 @@ onClick(event: (event: ClickEvent) => void): T
 | screenY(deprecated) | number | 否 | 否 | 点击位置在当前应用窗口坐标系中的Y坐标。 单位：vp **说明：** 从API version 7开始支持，从API version 10开始废弃，建议使用windowY替代。 |
 | preventDefault12+ | () => void | 否 | 否 | 阻止默认事件。 **说明：** 该接口仅支持部分组件使用，当前支持组件：RichEditor、Hyperlink，不支持的组件使用时会抛出异常。暂不支持异步调用和提供Modifier接口。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | hand15+ | [InteractionHand](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#interactionhand15) | 否 | 是 | 表示事件是由左手点击还是右手点击触发。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| globalDisplayX20+ | number | 否 | 是 | 点击位置在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的X坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| globalDisplayY20+ | number | 否 | 是 | 点击位置在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的Y坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| globalDisplayX20+ | number | 否 | 是 | 点击位置在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的X坐标。 单位：vp 取值范围：(-∞, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| globalDisplayY20+ | number | 否 | 是 | 点击位置在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的Y坐标。 单位：vp 取值范围：(-∞, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 错误码：
 
@@ -189,7 +189,7 @@ struct ClickExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413016.gif)
+ ![](./img/zh-cn_image_0000002664329473.gif)
 
 #### [h2]示例2（获取组件实时位置）
 
@@ -223,4 +223,4 @@ struct GetCurrentLocalPositionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253122.gif)
+ ![](./img/zh-cn_image_0000002634010262.gif)

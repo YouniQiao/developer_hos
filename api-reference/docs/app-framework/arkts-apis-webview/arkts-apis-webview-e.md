@@ -2,8 +2,8 @@
 title: "Enums"
 upstream_id: "harmonyos-references/arkts-apis-webview-e"
 catalog: "harmonyos-references"
-content_hash: "78a47f36d7b8"
-synced_at: "2026-07-09T00:58:52.865788"
+content_hash: "543055b9383a"
+synced_at: "2026-07-09T17:25:37.514373"
 ---
 
 # Enums
@@ -24,8 +24,8 @@ ArkWeb Enums模块是ArkWeb（Web子系统）的枚举类型定义集合，为We
 | --- | --- | --- |
 | EditText | 0 | 可编辑的区域。 |
 | Email | 1 | 电子邮件地址。 |
-| HttpAnchor | 2 | 超链接，其中src为http。 |
-| HttpAnchorImg | 3 | 带有超链接的图片，其中src为http + HTML::img。 |
+| HttpAnchor | 2 | 超链接，其中链接地址为http。 |
+| HttpAnchorImg | 3 | 带有超链接的图片，其中链接地址为http + HTML::img。 |
 | Img | 4 | HTML::img标签。 |
 | Map | 5 | 地理地址。 |
 | Phone | 6 | 电话号码。 |

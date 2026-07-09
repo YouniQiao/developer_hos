@@ -1,12 +1,12 @@
 ---
-title: "uitest错误码"
+title: "UiTest错误码"
 upstream_id: "harmonyos-references/errorcode-uitest"
 catalog: "harmonyos-references"
-content_hash: "f458b526fa82"
-synced_at: "2026-07-09T01:00:06.532160"
+content_hash: "dbbbdd239e6e"
+synced_at: "2026-07-09T17:27:00.973372"
 ---
 
-# uitest错误码
+# UiTest错误码
 
 ![](./img/note_3.0-zh-cn.png) 以下仅介绍本模块特有错误码，通用错误码请参考[通用错误码说明文档](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
 
@@ -44,7 +44,7 @@ The API does not support concurrent calls.
 
 处理步骤
 
-使用await同步等待异步函数执行完成。
+请确保同一时间只执行一个API调用，异步函数使用await同步等待执行完成。
 
 #### 17000003 断言失败
 
@@ -72,15 +72,15 @@ The window or component is invisible or destroyed.
 
 错误描述
 
-目标控件/窗口丢失，无法进行操作。
+目标控件或窗口丢失，无法进行操作。
 
 可能原因
 
-获取到目标控件/窗口后，页面发生变化导致目标丢失。
+获取到目标控件或窗口后，页面发生变化导致目标丢失。
 
 处理步骤
 
-检查获取到目标控件/窗口后，页面是否发生变化导致目标丢失。
+检查获取到目标控件或窗口后，页面是否发生变化导致目标丢失。
 
 #### 17000005 操作不支持
 

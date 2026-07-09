@@ -2,8 +2,8 @@
 title: "@ohos.router (页面路由)(不推荐)"
 upstream_id: "harmonyos-references/js-apis-router"
 catalog: "harmonyos-references"
-content_hash: "3b1b56341c6e"
-synced_at: "2026-07-09T00:57:32.050167"
+content_hash: "b8da24b9248f"
+synced_at: "2026-07-09T17:23:22.646859"
 ---
 
 # @ohos.router (页面路由)(不推荐)
@@ -33,7 +33,7 @@ pushUrl(options: RouterOptions): Promise<void>
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 9开始支持，从API version 18开始废弃，建议使用[pushUrl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushurl)替代。pushUrl需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
+- 从API version 9开始支持，从API version 18开始废弃，建议使用[pushUrl(options: router.RouterOptions)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushurl)替代。pushUrl需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
 - 从API version 10开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)方法获取当前UI上下文关联的[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)对象。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
@@ -108,7 +108,7 @@ pushUrl(options: RouterOptions, callback: AsyncCallback<void>): void
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 9开始支持，从API version 18开始废弃，建议使用[pushUrl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushurl-1)替代。pushUrl需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
+- 从API version 9开始支持，从API version 18开始废弃，建议使用[pushUrl(options: router.RouterOptions, callback: AsyncCallback)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushurl-1)替代。pushUrl需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
 - 从API version 10开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)方法获取当前UI上下文关联的[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)对象。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
@@ -176,7 +176,7 @@ pushUrl(options: RouterOptions, mode: RouterMode): Promise<void>
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 9开始支持，从API version 18开始废弃，建议使用[pushUrl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushurl-2)替代。pushUrl需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
+- 从API version 9开始支持，从API version 18开始废弃，建议使用[pushUrl(options: router.RouterOptions, mode: router.RouterMode)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushurl-2)替代。pushUrl需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
 - 从API version 10开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)方法获取当前UI上下文关联的[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)对象。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
@@ -252,7 +252,7 @@ pushUrl(options: RouterOptions, mode: RouterMode, callback: AsyncCallback<void>)
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 9开始支持，从API version 18开始废弃，建议使用[pushUrl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushurl-3)替代。pushUrl需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
+- 从API version 9开始支持，从API version 18开始废弃，建议使用[pushUrl(options: router.RouterOptions, mode: router.RouterMode, callback: AsyncCallback)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushurl-3)替代。pushUrl需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
 - 从API version 10开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)方法获取当前UI上下文关联的[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)对象。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
@@ -321,7 +321,7 @@ replaceUrl(options: RouterOptions): Promise<void>
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 9开始支持，除Lite Wearable外，从API version 18开始废弃，建议使用[replaceUrl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#replaceurl)替代。replaceUrl需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
+- 从API version 9开始支持，除Lite Wearable外，从API version 18开始废弃，建议使用[replaceUrl(options: router.RouterOptions)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#replaceurl)替代。replaceUrl需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
 - 从API version 10开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)方法获取当前UI上下文关联的[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)对象。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
@@ -385,7 +385,7 @@ replaceUrl(options: RouterOptions, callback: AsyncCallback<void>): void
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 9开始支持，除Lite Wearable外，从API version 18开始废弃，建议使用[replaceUrl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#replaceurl-1)替代。replaceUrl需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
+- 从API version 9开始支持，除Lite Wearable外，从API version 18开始废弃，建议使用[replaceUrl(options: router.RouterOptions, callback: AsyncCallback)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#replaceurl-1)替代。replaceUrl需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
 - 从API version 10开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)方法获取当前UI上下文关联的[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)对象。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
@@ -442,7 +442,7 @@ replaceUrl(options: RouterOptions, mode: RouterMode): Promise<void>
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 9开始支持，除Lite Wearable外，从API version 18开始废弃，建议使用[replaceUrl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#replaceurl-2)替代。replaceUrl需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
+- 从API version 9开始支持，除Lite Wearable外，从API version 18开始废弃，建议使用[replaceUrl(options: router.RouterOptions, mode: router.RouterMode)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#replaceurl-2)替代。replaceUrl需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
 - 从API version 10开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)方法获取当前UI上下文关联的[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)对象。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
@@ -507,7 +507,7 @@ replaceUrl(options: RouterOptions, mode: RouterMode, callback: AsyncCallback<voi
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 9开始支持，除Lite Wearable外，从API version 18开始废弃，建议使用[replaceUrl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#replaceurl-3)替代。replaceUrl需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
+- 从API version 9开始支持，除Lite Wearable外，从API version 18开始废弃，建议使用[replaceUrl(options: router.RouterOptions, mode: router.RouterMode, callback: AsyncCallback)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#replaceurl-3)替代。replaceUrl需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
 - 从API version 10开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)方法获取当前UI上下文关联的[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)对象。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
@@ -565,7 +565,7 @@ pushNamedRoute(options: NamedRouterOptions): Promise<void>
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 10开始支持，从API version 18开始废弃，建议使用[pushNamedRoute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushnamedroute)替代。pushNamedRoute需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
+- 从API version 10开始支持，从API version 18开始废弃，建议使用[pushNamedRoute(options: router.NamedRouterOptions)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushnamedroute)替代。pushNamedRoute需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
 - 从API version 10开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)方法获取当前UI上下文关联的[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)对象。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
@@ -643,7 +643,7 @@ pushNamedRoute(options: NamedRouterOptions, callback: AsyncCallback<void>): void
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 10开始支持，从API version 18开始废弃，建议使用[pushNamedRoute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushnamedroute-1)替代。pushNamedRoute需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
+- 从API version 10开始支持，从API version 18开始废弃，建议使用[pushNamedRoute(options: router.NamedRouterOptions, callback: AsyncCallback)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushnamedroute-1)替代。pushNamedRoute需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
 - 从API version 10开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)方法获取当前UI上下文关联的[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)对象。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
@@ -713,7 +713,7 @@ pushNamedRoute(options: NamedRouterOptions, mode: RouterMode): Promise<void>
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 10开始支持，从API version 18开始废弃，建议使用[pushNamedRoute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushnamedroute-2)替代。pushNamedRoute需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
+- 从API version 10开始支持，从API version 18开始废弃，建议使用[pushNamedRoute(options: router.NamedRouterOptions, mode: router.RouterMode)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushnamedroute-2)替代。pushNamedRoute需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
 - 从API version 10开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)方法获取当前UI上下文关联的[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)对象。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
@@ -791,7 +791,7 @@ pushNamedRoute(options: NamedRouterOptions, mode: RouterMode, callback: AsyncCal
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 10开始支持，从API version 18开始废弃，建议使用[pushNamedRoute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushnamedroute-3)替代。pushNamedRoute需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
+- 从API version 10开始支持，从API version 18开始废弃，建议使用[pushNamedRoute(options: router.NamedRouterOptions, mode: router.RouterMode, callback: AsyncCallback)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushnamedroute-3)替代。pushNamedRoute需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
 - 从API version 10开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)方法获取当前UI上下文关联的[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)对象。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
@@ -862,7 +862,7 @@ replaceNamedRoute(options: NamedRouterOptions): Promise<void>
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 10开始支持，从API version 18开始废弃，建议使用[replaceNamedRoute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#replacenamedroute)替代。replaceNamedRoute需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
+- 从API version 10开始支持，从API version 18开始废弃，建议使用[replaceNamedRoute(options: router.NamedRouterOptions)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#replacenamedroute)替代。replaceNamedRoute需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
 - 从API version 10开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)方法获取当前UI上下文关联的[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)对象。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
@@ -928,7 +928,7 @@ replaceNamedRoute(options: NamedRouterOptions, callback: AsyncCallback<void>): v
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 10开始支持，从API version 18开始废弃，建议使用[replaceNamedRoute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#replacenamedroute-1)替代。replaceNamedRoute需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
+- 从API version 10开始支持，从API version 18开始废弃，建议使用[replaceNamedRoute(options: router.NamedRouterOptions, callback: AsyncCallback)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#replacenamedroute-1)替代。replaceNamedRoute需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
 - 从API version 10开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)方法获取当前UI上下文关联的[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)对象。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
@@ -987,7 +987,7 @@ replaceNamedRoute(options: NamedRouterOptions, mode: RouterMode): Promise<void>
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 10开始支持，从API version 18开始废弃，建议使用[replaceNamedRoute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#replacenamedroute-2)替代。replaceNamedRoute需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
+- 从API version 10开始支持，从API version 18开始废弃，建议使用[replaceNamedRoute(options: router.NamedRouterOptions, mode: router.RouterMode)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#replacenamedroute-2)替代。replaceNamedRoute需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
 - 从API version 10开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)方法获取当前UI上下文关联的[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)对象。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
@@ -1054,7 +1054,7 @@ replaceNamedRoute(options: NamedRouterOptions, mode: RouterMode, callback: Async
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 10开始支持，从API version 18开始废弃，建议使用[replaceNamedRoute](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#replacenamedroute-3)替代。replaceNamedRoute需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
+- 从API version 10开始支持，从API version 18开始废弃，建议使用[replaceNamedRoute(options: router.NamedRouterOptions, mode: router.RouterMode, callback: AsyncCallback)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#replacenamedroute-3)替代。replaceNamedRoute需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
 - 从API version 10开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)方法获取当前UI上下文关联的[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)对象。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
@@ -1114,7 +1114,7 @@ back(options?: RouterOptions ): void
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 8开始支持，从API version 18开始废弃，建议使用[back](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#back)替代。back需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
+- 从API version 8开始支持，从API version 18开始废弃，建议使用[back](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#back)(options?: router.RouterOptions)替代。back需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
 - 从API version 10开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)方法获取当前UI上下文关联的[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)对象。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
@@ -1141,7 +1141,7 @@ back(index: number, params?: Object): void;
 
 ![](./img/note_3.0-zh-cn.png)
 
-- 从API version 12开始支持，从API version 18开始废弃，建议使用[back](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#back12)替代。back需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
+- 从API version 12开始支持，从API version 18开始废弃，建议使用[back(index: number, params?: Object)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#back12)替代。back需先通过[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)获取[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)实例，然后通过该实例进行调用。
 - 从API version 12开始，可以通过使用[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中的[getRouter](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#getrouter)方法获取当前UI上下文关联的[Router](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router)对象。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
@@ -1640,7 +1640,7 @@ push(options: RouterOptions): void
 
 跳转到应用内的指定页面。
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[pushUrl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushurl)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[pushUrl(options: router.RouterOptions)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#pushurl)替代。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -1683,7 +1683,7 @@ replace(options: RouterOptions): void
 
 用应用内的某个页面替换当前页面，并销毁被替换的页面。
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[replaceUrl](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#replaceurl)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 9开始废弃，建议使用[replaceUrl(options: router.RouterOptions)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-router#replaceurl)替代。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Lite
 
@@ -1961,4 +1961,4 @@ export default {
     }
 }
 ```
- ![](./img/zh-cn_image_0000002661612269.gif)
+ ![](./img/zh-cn_image_0000002664209375.gif)

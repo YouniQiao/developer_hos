@@ -2,8 +2,8 @@
 title: "轴事件"
 upstream_id: "harmonyos-references/ts-universal-events-axis"
 catalog: "harmonyos-references"
-content_hash: "7d2a7ef33923"
-synced_at: "2026-07-09T00:57:35.658528"
+content_hash: "856dc456fbeb"
+synced_at: "2026-07-09T17:23:26.510743"
 ---
 
 # 轴事件
@@ -60,8 +60,8 @@ onAxisEvent(event: Callback<AxisEvent>): T
 | displayY | number | 否 | 否 | 鼠标光标在当前应用屏幕坐标系中的Y坐标。 单位：vp **元服务API：** 从API version 17开始，该接口支持在元服务中使用。 |
 | scrollStep | number | 否 | 是 | 鼠标轴滚动步长配置。 **说明：** 仅支持鼠标滚轮，取值范围：[0~65535] **元服务API：** 从API version 17开始，该接口支持在元服务中使用。 |
 | propagation | Callback | 否 | 否 | 激活[事件冒泡](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-basic-principles#事件冒泡)。 **元服务API：** 从API version 17开始，该接口支持在元服务中使用。 |
-| globalDisplayX20+ | number | 否 | 是 | 鼠标光标在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的X坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| globalDisplayY20+ | number | 否 | 是 | 鼠标光标在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的Y坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| globalDisplayX20+ | number | 否 | 是 | 鼠标光标在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的X坐标。 单位：vp 取值范围：(-∞, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| globalDisplayY20+ | number | 否 | 是 | 鼠标光标在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的Y坐标。 单位：vp 取值范围：(-∞, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | eventHandleId24+ | number | 否 | 是 | 用于事件处理的唯一标识。 取值范围：[0, +∞) **说明：** 在使用[postInputEventWithStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#postinputeventwithstrategy24)接口分发事件时会使用该字段，事件每分发一次字段会增加100000。 多次使用相同的eventHandleId进行事件分发将导致事件响应异常。仅在构造事件的时候需要对此字段赋值，其余情况开发者无需处理。 **元服务API：** 从API version 24开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### [h2]getHorizontalAxisValue
@@ -191,7 +191,7 @@ struct AxisEventExample {
 ```
  鼠标滚轮滚动时：
 
-![](./img/zh-cn_image_0000002661612305.png)
+![](./img/zh-cn_image_0000002664209411.png)
 
 #### [h2]示例2（获取组件实时位置）
 
@@ -225,4 +225,4 @@ struct GetCurrentLocalPositionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253122.gif)
+ ![](./img/zh-cn_image_0000002634010262.gif)

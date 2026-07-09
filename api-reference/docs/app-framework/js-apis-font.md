@@ -2,8 +2,8 @@
 title: "@ohos.font (注册自定义字体)"
 upstream_id: "harmonyos-references/js-apis-font"
 catalog: "harmonyos-references"
-content_hash: "cdcd178b2bea"
-synced_at: "2026-07-09T00:57:30.633188"
+content_hash: "f1ce5b114d42"
+synced_at: "2026-07-09T17:23:21.903664"
 ---
 
 # @ohos.font (注册自定义字体)
@@ -106,7 +106,7 @@ struct FontExample {
       Text(this.message)
         .align(Alignment.Center)
         .fontSize(20)
-        .fontFamily('medium') // medium：注册自定义字体的名字（$r('app.string.mediumFamilyName')、'mediumRawFile'等已注册字体也能正常使用）
+        .fontFamily('medium') // medium：注册自定义字体的名字（$r('app.string.font_name')、'mediumRawFile'等已注册字体也能正常使用）
 
       // 使用iconFont的两种方式
       Text(this.unicode)
@@ -241,7 +241,6 @@ import { font } from '@kit.ArkUI';
 @Entry
 @Component
 struct FontExample {
-  fontList: Array<string> = new Array<string>();
   uiFont = this.getUIContext().getFont();
   fontInfo: font.FontInfo = this.uiFont.getFontByName(''); // 建议使用 this.getUIContext().getFont().getFontByName()接口
 

@@ -2,8 +2,8 @@
 title: "路径动画 (motionPath)"
 upstream_id: "harmonyos-references/ts-motion-path-animation"
 catalog: "harmonyos-references"
-content_hash: "7cb1730e41e1"
-synced_at: "2026-07-09T00:58:08.299863"
+content_hash: "6b825cd08149"
+synced_at: "2026-07-09T17:24:47.107247"
 ---
 
 # 路径动画 (motionPath)
@@ -44,9 +44,9 @@ motionPath(value: MotionPathOptions): T
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| path | string | 否 | 否 | 位移动画的运动路径，使用[svg路径字符串](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-path#svg路径描述规范)。path中支持使用start和end进行起点和终点的替代，如：'Mstart.x start.y L50 50 Lend.x end.y Z'，更多说明请参考[绘制路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-svg-path)。 设置为空字符串时相当于不设置路径动画。 |
+| path | string | 否 | 否 | 位移动画的运动路径，使用[svg路径描述规范](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-drawing-components-path#svg路径描述规范)。path中支持使用start和end进行起点和终点的替代，如：'Mstart.x start.y L50 50 Lend.x end.y Z'，更多说明请参考[绘制路径](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/ui-js-components-svg-path)。 设置为空字符串时相当于不设置路径动画。 |
 | from | number | 否 | 是 | 运动路径的起点。 默认值：0.0 取值范围：[0.0, 1.0] 设置小于0.0或大于1.0的值时，按默认值0.0处理。 |
-| to | number | 否 | 是 | 运动路径的终点。 默认值：1.0 取值范围：[0.0, 1.0] 设置小于0.0或大于1.0的值时，按默认值1.0处理，且满足to值 >= 异常值处理后的from值。 |
+| to | number | 否 | 是 | 运动路径的终点。 默认值：1.0 取值范围：[0.0, 1.0] 设置小于0.0或大于1.0的值时，按默认值1.0处理，且满足to值 >= 异常值处理后的from值。当处理后的to值小于异常值处理后的from值时，to值会被修正为等于异常值处理后的from值，即to被向上修正至与from相同。当from等于to时（无论是开发者主动设置还是因超出范围被修正），组件在路径上不产生位移。 |
 | rotatable | boolean | 否 | 是 | 是否跟随路径进行旋转。true代表跟随路径进行旋转，false代表不跟随路径进行旋转。 默认值：false |
 
 #### 示例
@@ -78,4 +78,4 @@ struct MotionPathExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732845.gif)
+ ![](./img/zh-cn_image_0000002634010854.gif)

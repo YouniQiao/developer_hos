@@ -1,12 +1,10 @@
 ---
-
 title: "图像类型定义"
 upstream_id: "harmonyos-references/ts-image-common"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:57:59.921335"
-content_hash: "e2dcd56fd2a1"
+content_hash: "6e1c6b84a0c0"
+synced_at: "2026-07-09T17:24:18.449510"
 ---
-
 
 # 图像类型定义
 
@@ -77,7 +75,7 @@ type PixelMap = import('../api/@ohos.multimedia.image').default.PixelMap
 
 #### ImageAnalyzerController12+
 
-图像分析控制器。可以将此对象绑定至支持的组件，通过控制器来调用支持的方法。
+图像AI分析控制器。可以将此对象绑定至支持的组件，通过控制器来调用支持的方法。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -101,7 +99,7 @@ constructor()
 
 getImageAnalyzerSupportTypes(): ImageAnalyzerType[]
 
-获取对应组件支持的分析类型。
+获取对应组件支持的AI分析类型。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -113,7 +111,7 @@ getImageAnalyzerSupportTypes(): ImageAnalyzerType[]
 
 | 类型 | 说明 |
 | --- | --- |
-| [ImageAnalyzerType](#imageanalyzertype12)[] | 对应组件支持的分析类型。 |
+| [ImageAnalyzerType](#imageanalyzertype12)[] | 对应组件支持的AI分析类型。 |
 
 #### ContentTransitionEffect21+对象说明
 

@@ -2,8 +2,8 @@
 title: "Swiper"
 upstream_id: "harmonyos-references/ts-container-swiper"
 catalog: "harmonyos-references"
-content_hash: "472255aefc92"
-synced_at: "2026-07-09T00:57:49.090556"
+content_hash: "ea516f2815d2"
+synced_at: "2026-07-09T17:23:44.621149"
 ---
 
 # Swiper
@@ -615,7 +615,7 @@ indicatorStyle(value?: IndicatorStyle)
 
 设置导航点样式。
 
-![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 10开始废弃，建议使用[indicator](#indicator)替代。
+![](./img/note_3.0-zh-cn.png) 从API version 8开始支持，从API version 10开始废弃，建议使用[indicator(value: DotIndicator | DigitIndicator | boolean)](#indicator)替代。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
@@ -2104,7 +2104,7 @@ struct SwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612495.gif)
+ ![](./img/zh-cn_image_0000002664209597.gif)
 
 #### [h2]示例2（设置数字指示器）
 
@@ -2190,7 +2190,7 @@ struct SwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413204.gif)
+ ![](./img/zh-cn_image_0000002664329657.gif)
 
 #### [h2]示例3（设置按组翻页）
 
@@ -2279,7 +2279,7 @@ struct SwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732435.gif)
+ ![](./img/zh-cn_image_0000002633850546.gif)
 
 #### [h2]示例4（设置自定义页面切换动画）
 
@@ -2414,7 +2414,7 @@ struct SwiperCustomAnimationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253314.gif)
+ ![](./img/zh-cn_image_0000002634010450.gif)
 
 #### [h2]示例5（设置圆点导航点超长显示）
 
@@ -2509,7 +2509,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612497.gif)
+ ![](./img/zh-cn_image_0000002664209599.gif)
 
 #### [h2]示例6（预加载子节点）
 
@@ -2688,7 +2688,7 @@ struct TabsSwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413206.gif)
+ ![](./img/zh-cn_image_0000002664329659.gif)
 
 #### [h2]示例8（滑动行为拦截事件）
 
@@ -2776,7 +2776,7 @@ struct SwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732437.gif)
+ ![](./img/zh-cn_image_0000002633850548.gif)
 
 #### [h2]示例9（演示导航点space与bottom）
 
@@ -2879,7 +2879,7 @@ struct SwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253316.gif)
+ ![](./img/zh-cn_image_0000002634010452.gif)
 
 #### [h2]示例10（Swiper组件基于断点配置显示个数）
 
@@ -2942,11 +2942,11 @@ struct SwiperExample {
 ```
  Swiper宽度属于[sm](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-grid-layout#栅格容器断点)及更小的断点区间时显示1列。
 
-![](./img/zh-cn_image_0000002661612499.jpg)
+![](./img/zh-cn_image_0000002664209601.jpg)
 
 Swiper宽度属于[md](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-layout-development-grid-layout#栅格容器断点)断点区间时显示2列。
 
-![](./img/zh-cn_image_0000002631413208.jpg)
+![](./img/zh-cn_image_0000002664329661.jpg)
 
 #### [h2]示例11（Swiper组件模拟拖拽）
 
@@ -3009,4 +3009,4 @@ struct SwiperFakeDragExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732439.gif)
+ ![](./img/zh-cn_image_0000002633850550.gif)

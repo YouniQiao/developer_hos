@@ -2,8 +2,8 @@
 title: "@ohos.arkui.observer (无感监听)"
 upstream_id: "harmonyos-references/js-apis-arkui-observer"
 catalog: "harmonyos-references"
-content_hash: "b5dd210d769e"
-synced_at: "2026-07-09T00:57:28.796411"
+content_hash: "85c0d7818ccd"
+synced_at: "2026-07-09T17:23:19.568624"
 ---
 
 # @ohos.arkui.observer (无感监听)
@@ -224,7 +224,7 @@ TabContent页面的切换信息。
 | index | number | 否 | 否 | TabContent组件的下标索引。索引从0开始。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | id | string | 否 | 否 | Tabs组件的id。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | uniqueId | number | 否 | 否 | Tabs组件的uniqueId。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| lastIndex22+ | number | 否 | 是 | 最近一次聚焦的TabsContent组件的下标索引。索引从0开始。仅在[on('tabChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uiobserver#ontabchange22)的回调函数中存在。 **元服务API：** 从API version 22开始，该接口支持在元服务中使用。 |
+| lastIndex22+ | number | 否 | 是 | 最近一次聚焦的TabContent组件的下标索引。索引从0开始。仅在[on('tabChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uiobserver#ontabchange22)的回调函数中存在。 **元服务API：** 从API version 22开始，该接口支持在元服务中使用。 |
 
 #### WindowSizeLayoutBreakpointInfo22+
 

@@ -2,8 +2,8 @@
 title: "Select"
 upstream_id: "harmonyos-references/ts-basic-components-select"
 catalog: "harmonyos-references"
-content_hash: "96ee93bb97b7"
-synced_at: "2026-07-09T00:57:54.962692"
+content_hash: "751354499738"
+synced_at: "2026-07-09T17:23:48.364135"
 ---
 
 # Select
@@ -952,8 +952,6 @@ showInSubWindow(showInSubWindow:Optional<boolean>)
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-设备行为差异： 在PC/2in1设备中可生效，在其他设备类型中不生效。
-
 参数：
 
 | 参数名 | 类型 | 必填 | 说明 |
@@ -1206,7 +1204,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413290.png)
+ ![](./img/zh-cn_image_0000002664329741.png)
 
 #### [h2]示例2（设置symbol类型图标）
 
@@ -1266,7 +1264,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732521.png)
+ ![](./img/zh-cn_image_0000002633850630.png)
 
 #### [h2]示例3（自定义下拉菜单）
 
@@ -1355,7 +1353,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253400.png)
+ ![](./img/zh-cn_image_0000002634010534.png)
 
 #### [h2]示例4（设置分割线样式）
 
@@ -1411,7 +1409,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612585.png)
+ ![](./img/zh-cn_image_0000002664209683.png)
 
 #### [h2]示例5（设置无分割线样式）
 
@@ -1457,7 +1455,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413292.png)
+ ![](./img/zh-cn_image_0000002664329743.png)
 
 #### [h2]示例6（设置Select中文本和箭头样式）
 
@@ -1531,7 +1529,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732523.png)
+ ![](./img/zh-cn_image_0000002633850632.png)
 
 #### [h2]示例7（设置Select下拉菜单选中和非选中项文本样式）
 
@@ -1607,7 +1605,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253402.png)
+ ![](./img/zh-cn_image_0000002634010536.png)
 
 #### [h2]示例8（设置分割线模式）
 
@@ -1640,7 +1638,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612587.png)
+ ![](./img/zh-cn_image_0000002664209685.png)
 
 #### [h2]示例9（设置Select下拉菜单外描边样式）
 
@@ -1694,7 +1692,7 @@ struct SelectExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413294.png)
+ ![](./img/zh-cn_image_0000002664329745.png)
 
 #### [h2]示例10（设置Select的弹出菜单避让软键盘）
 
@@ -1773,7 +1771,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732525.gif)
+ ![](./img/zh-cn_image_0000002633850634.gif)
 
 #### [h2]示例11（设置Select和下拉菜单系统材质）
 
@@ -1817,8 +1815,8 @@ struct Index {
 ```
  未设置系统材质时：
 
-![](./img/zh-cn_image_0000002631253404.png)
+![](./img/zh-cn_image_0000002634010538.png)
 
 设置系统材质后：
 
-![](./img/zh-cn_image_0000002661612589.png)
+![](./img/zh-cn_image_0000002664209687.png)

@@ -2,8 +2,8 @@
 title: "@ohos.arkui.inspector (布局回调)"
 upstream_id: "harmonyos-references/js-apis-arkui-inspector"
 catalog: "harmonyos-references"
-content_hash: "dd0a95d8621e"
-synced_at: "2026-07-09T00:57:27.528693"
+content_hash: "d4247361c8e3"
+synced_at: "2026-07-09T17:23:18.289816"
 ---
 
 # @ohos.arkui.inspector (布局回调)
@@ -260,7 +260,7 @@ struct ImageExample {
     }
 
     let uniqueId: number = this.getUniqueId();
-    let listenerForUniqueId: inspector.ComponentObserver = this.getUIContext().getUIInspector().createComponentObserver(uniqueId)
+    let listenerForUniqueId: inspector.ComponentObserver = this.getUIContext().getUIInspector().createComponentObserver(uniqueId.toString())
     listenerForUniqueId.onLayoutChildren(onLayoutChildrenComplete)
   }
 
@@ -333,7 +333,7 @@ offDrawChildren(callback?: Callback<number[]>): void
 
 取消注册drawChildren事件回调。使用callback异步回调。
 
-要实现在子组件布局完成后停止触发特定回调，只需通过其句柄，在对应的查询条件上取消注册该回调即可。
+要实现在子组件绘制送显完成后停止触发特定回调，只需通过其句柄，在对应的查询条件上取消注册该回调即可。
 
 元服务API： 从API version 24开始，该接口支持在元服务中使用。
 

@@ -2,8 +2,8 @@
 title: "API错误码"
 upstream_id: "harmonyos-references/errorcode-remote-communication"
 catalog: "harmonyos-references"
-content_hash: "1899b37c4c8f"
-synced_at: "2026-07-09T00:59:36.834628"
+content_hash: "73c5cc77f2a9"
+synced_at: "2026-07-09T17:26:33.756112"
 ---
 
 # API错误码
@@ -11,7 +11,9 @@ synced_at: "2026-07-09T00:59:36.834628"
 ![](./img/note_3.0-zh-cn.png)
 
 - 以下仅介绍本模块特有错误码，通用错误码请参考[通用错误码](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal)。
-- Remote Communication Kit错误码映射关系：1007900000 + curl错误码。Remote Communication Kit常见错误码如下， 更多错误码可参考：[curl错误码](https://curl.se/libcurl/c/libcurl-errors.html)。
+- 1007900000 ~ 1007900200：1007900000 + curl错误码。curl错误码可参考：[curl错误码](https://curl.se/libcurl/c/libcurl-errors.html)。
+- 1007900201 ~ 1007900999：RCP特有错误码保留段。
+- 1007910000 ~ 1007910999：URPC特有错误码保留段。
 
 #### 1007900001 不支持的协议
 
@@ -1096,42 +1098,6 @@ Plaintext transmission is forbidden.
 处理步骤
 
 检查 network_config.json 中关于HTTP明文传输的相关配置是否符合业务需求。
-
-#### 201 权限被拒绝
-
-错误信息
-
-Permission denied.
-
-错误描述
-
-应用权限不足或格式错误。
-
-可能原因
-
-应用的权限配置不正确。
-
-处理步骤
-
-检查用户的权限配置是否正确。
-
-#### 401 参数错误
-
-错误信息
-
-Parameter error.
-
-错误描述
-
-函数入参非法。
-
-可能原因
-
-传入的参数非法。
-
-处理步骤
-
-请检查传入的参数是否合理，排查服务实现。
 
 #### 1007910001 请求数据传输错误
 

@@ -2,8 +2,8 @@
 title: "HdsNavigation"
 upstream_id: "harmonyos-references/ui-design-hdsnavigation"
 catalog: "harmonyos-references"
-content_hash: "5e5d3012105f"
-synced_at: "2026-07-09T00:59:10.341898"
+content_hash: "fb0df6b52bf5"
+synced_at: "2026-07-09T17:25:58.475454"
 ---
 
 # HdsNavigation
@@ -1270,6 +1270,8 @@ HdsNavigation标题栏动态显隐配置信息。
 
 系统能力： SystemCapability.UIDesign.HDSComponent.Core
 
+设备行为差异： 该接口在Phone、Tablet中可正常调用，在PC/2in1设备调用时需先调用[getSystemMaterialTypes()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdsmaterial#getsystemmaterialtypes)接口查询当前设备支持的材质能力。
+
 起始版本： 6.1.0(23)
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
@@ -1420,7 +1422,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613405.gif)
+ ![](./img/zh-cn_image_0000002664330559.gif)
 
 #### [h2]设置菜单消息提醒
 
@@ -1483,7 +1485,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631414118.jpg)
+ ![](./img/zh-cn_image_0000002633851448.jpg)
 
 #### [h2]设置自定义区域
 
@@ -1570,7 +1572,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733347.jpg)
+ ![](./img/zh-cn_image_0000002634011352.jpg)
 
 #### [h2]设置标题栏的动态显隐
 
@@ -1636,7 +1638,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631254226.gif)
+ ![](./img/zh-cn_image_0000002664210503.gif)
 
 #### [h2]设置标题栏图标样式
 
@@ -1712,7 +1714,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613407.jpg)
+ ![](./img/zh-cn_image_0000002664330561.jpg)
 
 #### [h2]半模态标题栏样式
 
@@ -1804,7 +1806,7 @@ struct SheetTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631414120.jpg)
+ ![](./img/zh-cn_image_0000002633851450.jpg)
 
 #### [h2]图标上绑定自定义menu
 
@@ -1891,7 +1893,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733349.gif)
+ ![](./img/zh-cn_image_0000002634011354.gif)
 
 #### [h2]设置应用内多窗图标
 
@@ -1943,7 +1945,7 @@ struct MultiWindowEntryInAPPTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631254228.jpg)
+ ![](./img/zh-cn_image_0000002664210505.jpg)
 
 #### [h2]设置HdsNavigation双栏模式
 
@@ -2009,7 +2011,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613409.gif)
+ ![](./img/zh-cn_image_0000002664330563.gif)
 
 #### [h2]设置标题栏沉浸式样式
 
@@ -2104,7 +2106,7 @@ struct Index {
 
 执行上述代码展示的效果如下。
 
-![](./img/zh-cn_image_0000002631414122.gif)
+![](./img/zh-cn_image_0000002633851452.gif)
 
 #### [h2]通过onReady获取栈
 
@@ -2244,4 +2246,4 @@ struct NavigationExample2 {
 
 执行上述代码，效果展示如下。
 
-![](./img/zh-cn_image_0000002661733351.gif)
+![](./img/zh-cn_image_0000002634011356.gif)

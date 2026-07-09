@@ -2,8 +2,8 @@
 title: "Class (Int16Array)"
 upstream_id: "harmonyos-references/arkts-apis-arkts-collections-int16array"
 catalog: "harmonyos-references"
-content_hash: "4515a0b49c3e"
-synced_at: "2026-07-09T00:57:23.646315"
+content_hash: "2cbeed77fee3"
+synced_at: "2026-07-09T17:23:14.988989"
 ---
 
 # Class (Int16Array)
@@ -138,7 +138,7 @@ constructor(array: ArrayLike<number> | ArrayBuffer)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| array | ArrayLike | ArrayBuffer | 是 | 用于构造ArkTS Int16Array的对象。当参数类型是ArrayBuffer时buffer所占的字节数须是4的整数倍。 |
+| array | ArrayLike | ArrayBuffer | 是 | 用于构造ArkTS Int16Array的对象。当参数类型是ArrayBuffer时buffer所占的字节数需是2的整数倍。 |
 
 错误码：
 
@@ -185,7 +185,7 @@ constructor(buffer: ArrayBuffer, byteOffset?: number, length?: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| buffer | ArrayBuffer | 是 | 用于构造ArkTS Int16Array的ArrayBuffer对象。buffer所占的字节数须是4的整数倍。 |
+| buffer | ArrayBuffer | 是 | 用于构造ArkTS Int16Array的ArrayBuffer对象。buffer所占的字节数需是2的整数倍。 |
 | byteOffset | number | 否 | 指定buffer的字节偏移，从0开始，默认为0。 |
 | length | number | 否 | 指定ArkTS Int16Array的长度，默认为0。 |
 
@@ -211,7 +211,7 @@ console.info("[" + int16Array1 + "]"); // [2, 3, 4, 5, 6]
 
 static from(arrayLike: ArrayLike<number>): Int16Array
 
-从一个ArrayLike或者可迭代对象中创建一个ArkTS Int16Array对象。
+从一个ArrayLike中创建一个ArkTS Int16Array对象。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 

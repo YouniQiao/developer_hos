@@ -2,8 +2,8 @@
 title: "SceneNode"
 upstream_id: "harmonyos-references/js-apis-inner-scene-nodes"
 catalog: "harmonyos-references"
-content_hash: "bdbeb9842c2d"
-synced_at: "2026-07-09T01:01:05.965735"
+content_hash: "644bbf6ff7a1"
+synced_at: "2026-07-09T17:27:52.004043"
 ---
 
 # SceneNode
@@ -388,6 +388,31 @@ function getNode(): void {
       let geo : Node | null = result.root.getNodeByPath("scene/node");
     }
   });
+}
+```
+ 调用getNodeByPath时需传入节点路径参数path。可通过遍历节点树并打印各节点的属性获取可用的path值，示例如下：
+
+```
+import { Scene, Node } from '@kit.ArkGraphics3D';
+
+// 打印给定节点的树状结构，每行表示一个节点的路径。
+function printNodeTreeInRelativePath(node: Node | null): void {
+  if (!node) {
+    return;
+  }
+  let basePath: string = node.path + node.name + '/';
+  let printRelative = (n: Node | null): void => {
+    if (!n) {
+      return;
+    }
+    console.info(n.path.substring(basePath.length + 1) + n.name);
+    for (let i = 0; i < n.children.count(); i++) {
+      printRelative(n.children.get(i));
+    }
+  }
+  for (let i = 0; i < node.children.count(); i++) {
+    printRelative(node.children.get(i));
+  }
 }
 ```
 

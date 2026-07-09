@@ -2,8 +2,8 @@
 title: "HdsTabs"
 upstream_id: "harmonyos-references/ui-design-hdstabs"
 catalog: "harmonyos-references"
-content_hash: "d1977f69384d"
-synced_at: "2026-07-09T00:59:10.388597"
+content_hash: "09604511e635"
+synced_at: "2026-07-09T17:25:58.849029"
 ---
 
 # HdsTabs
@@ -611,7 +611,7 @@ barFloatingStyle(barFloatingStyle?: Optional<HdsTabsFloatingStyle>)
 
 系统能力： SystemCapability.UIDesign.HDSComponent.Core
 
-设备行为差异： 该接口在TV无效果，在其他设备类型中可正常调用。
+设备行为差异： 该接口在TV无效果，在Phone、Tablet中可正常调用，在PC/2in1设备调用时需先调用[getSystemMaterialTypes()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ui-design-hdsmaterial#getsystemmaterialtypes)接口查询当前设备支持的材质能力。
 
 起始版本： 6.1.0(23)
 
@@ -1181,7 +1181,7 @@ struct Index {
 
 | 常显 | 常隐 | 跟手 |
 | --- | --- | --- |
-| ![](./img/zh-cn_image_0000002661613413.gif) | ![](./img/zh-cn_image_0000002631414126.gif) | ![](./img/zh-cn_image_0000002661733355.gif) |
+| ![](./img/zh-cn_image_0000002664330567.gif) | ![](./img/zh-cn_image_0000002633851456.gif) | ![](./img/zh-cn_image_0000002634011360.gif) |
 
 #### [h2]支持渐变模糊
 
@@ -1224,7 +1224,7 @@ struct Index {
 ```
  效果：
 
-![](./img/zh-cn_image_0000002631254234.png)
+![](./img/zh-cn_image_0000002664210511.png)
 
 #### [h2]支持出血效果
 
@@ -1272,7 +1272,7 @@ struct Index {
 ```
  效果：
 
-![](./img/zh-cn_image_0000002661613415.jpg)
+![](./img/zh-cn_image_0000002664330569.jpg)
 
 #### [h2]页签半屏居中对齐布局
 
@@ -1317,7 +1317,7 @@ struct Index {
 ```
  效果：
 
-![](./img/zh-cn_image_0000002631414128.jpg)
+![](./img/zh-cn_image_0000002633851458.jpg)
 
 #### [h2]页签栏悬浮样式
 
@@ -1402,4 +1402,4 @@ struct Index {
 ```
  效果：
 
-![](./img/zh-cn_image_0000002661733357.gif)
+![](./img/zh-cn_image_0000002634011362.gif)

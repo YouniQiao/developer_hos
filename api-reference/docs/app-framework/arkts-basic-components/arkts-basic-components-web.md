@@ -2,8 +2,8 @@
 title: "组件描述"
 upstream_id: "harmonyos-references/arkts-basic-components-web"
 catalog: "harmonyos-references"
-content_hash: "ab501235d869"
-synced_at: "2026-07-09T00:58:52.927323"
+content_hash: "a6f74b4a23d0"
+synced_at: "2026-07-09T17:25:37.843143"
 ---
 
 # 组件描述
@@ -131,13 +131,13 @@ import { webview } from '@kit.ArkWeb';
 @Entry
 @Component
 struct WebComponent {
-  controller1: webview.WebviewController = new webview.WebviewController();
-  controller2: webview.WebviewController = new webview.WebviewController();
+  exampleController: webview.WebviewController = new webview.WebviewController();
+  w3Controller: webview.WebviewController = new webview.WebviewController();
 
   build() {
     Column() {
-      Web({ src: 'www.example.com', controller: this.controller1, sharedRenderProcessToken: "111" })
-      Web({ src: 'www.w3.org', controller: this.controller2, sharedRenderProcessToken: "111" })
+      Web({ src: 'www.example.com', controller: this.exampleController, sharedRenderProcessToken: '111' })
+      Web({ src: 'www.w3.org', controller: this.w3Controller, sharedRenderProcessToken: '111' })
     }
   }
 }
@@ -151,13 +151,13 @@ import { webview } from '@kit.ArkWeb';
 @Entry
 @Component
 struct WebComponent {
-  controller1: webview.WebviewController = new webview.WebviewController();
-  controller2: webview.WebviewController = new webview.WebviewController();
+  noEmulateController: webview.WebviewController = new webview.WebviewController();
+  emulateTouchController: webview.WebviewController = new webview.WebviewController();
 
   build() {
     Column() {
-      Web({ src: 'www.example.com', controller: this.controller1, emulateTouchFromMouseEvent: false })
-      Web({ src: 'www.w3.org', controller: this.controller2, emulateTouchFromMouseEvent: true })
+      Web({ src: 'www.example.com', controller: this.noEmulateController, emulateTouchFromMouseEvent: false })
+      Web({ src: 'www.w3.org', controller: this.emulateTouchController, emulateTouchFromMouseEvent: true })
     }
   }
 }
@@ -183,7 +183,7 @@ struct WebComponent {
   }
 }
 ```
- 通过resources协议加载。
+ 通过resource协议加载。
 
 使用 resource://rawfile/ 协议前缀可以避免常规 $rawfile 方式在处理带有“#”路由链接时的局限性。当URL中包含“#”号时，“#”后面的内容会被视为锚点（fragment）。
 
@@ -266,7 +266,7 @@ export class GlobalContext {
 import { webview } from '@kit.ArkWeb';
 import { GlobalContext } from '../GlobalContext';
 
-let url = 'file://' + GlobalContext.getContext().getObject("filesDir") + '/index.html';
+let url = 'file://' + GlobalContext.getContext().getObject('filesDir') + '/index.html';
 
 @Entry
 @Component
@@ -293,8 +293,8 @@ import { GlobalContext } from '../GlobalContext';
 export default class EntryAbility extends UIAbility {
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam) {
     // 通过在GlobalContext对象上绑定filesDir，可以实现UIAbility组件与UI之间的数据同步。
-    GlobalContext.getContext().setObject("filesDir", this.context.filesDir);
-    console.info("Sandbox path is " + GlobalContext.getContext().getObject("filesDir"));
+    GlobalContext.getContext().setObject('filesDir', this.context.filesDir);
+    console.info('Sandbox path is ' + GlobalContext.getContext().getObject('filesDir'));
   }
 }
 ```

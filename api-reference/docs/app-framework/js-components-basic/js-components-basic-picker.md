@@ -2,15 +2,15 @@
 title: "picker"
 upstream_id: "harmonyos-references/js-components-basic-picker"
 catalog: "harmonyos-references"
-content_hash: "d6cf8c9ec910"
-synced_at: "2026-07-09T00:58:22.616314"
+content_hash: "ba8179ccd7e9"
+synced_at: "2026-07-09T17:25:03.638005"
 ---
 
 # picker
 
 ![](./img/note_3.0-zh-cn.png) 从API version 4开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
 
-滑动选择器组件，类型支持普通选择器、日期选择器、时间选择器、时间日期选择器和多列文本选择器。
+滑动选择器组件，类型支持普通选择器、日期选择器、时间选择器、日期时间选择器和多列文本选择器。
 
 #### 权限列表
 
@@ -71,8 +71,8 @@ synced_at: "2026-07-09T00:58:22.616314"
 | selected | string | 当前日期时间 | 否 | 设置日期时间选择器弹窗的默认取值，有两种可选格式。 - 月日时分：MM-DD-HH-mm - 年月日时分：YYYY-MM-DD-HH-mm 不设置年时，默认使用当前年，该取值表示选择器弹窗界面的默认选择值。 |
 | value | string | - | 是 | 设置日期时间选择器的值。 |
 | hours | number | 241-4 -5+ | 否 | 设置日期时间选择器采用的时间格式，可选值： - 12：按照12小时制显示，用上午和下午进行区分； - 24：按照24小时制显示。 从API version 5开始，默认值会依据系统当前所选地区和语言选择当地习惯的小时制(12小时制或24小时制)。 |
-| lunar5+ | boolean | false | 否 | 设置日期时间选择器是否为农历展示。 默认值：false，表示设置日期选择器为公历展示。 |
-| lunarswitch | boolean | false | 否 | 设置日期选择器是否显示农历开关。当值为true时，显示农历开关，点击农历开关可切换公历和农历。当值为false时，不显示农历开关。 当lunarswitch=true且lunar=true时，开关按钮处于被选中状态。 |
+| lunar5+ | boolean | false | 否 | 设置日期时间选择器是否为农历展示。 默认值：false，表示设置日期时间选择器为公历展示。 |
+| lunarswitch | boolean | false | 否 | 设置日期时间选择器是否显示农历开关。当值为true时，显示农历开关，点击农历开关可切换公历和农历。当值为false时，不显示农历开关。 当lunarswitch=true且lunar=true时，开关按钮处于被选中状态。 |
 
 #### [h2]多列文本选择器
 
@@ -81,7 +81,7 @@ synced_at: "2026-07-09T00:58:22.616314"
 | 名称 | 类型 | 默认值 | 必填 | 描述 |
 | --- | --- | --- | --- | --- |
 | columns | number | - | 是 | 设置多列文本选择器的列数。 |
-| range | 二维Array | - | 否 | 设置多列文本选择器的选择项，其中range 为二维数组。长度表示多少列，数组的每项表示每列的数据，如 [["a","b"], ["c","d"]]。 使用时需要使用数据绑定的方式range ={{data}}，js中声明相应变量data：["15","20","25"]。 |
+| range | 二维Array | - | 否 | 设置多列文本选择器的选择项，其中range 为二维数组。长度表示多少列，数组的每项表示每列的数据，如 [["a","b"], ["c","d"]]。 使用时需要使用数据绑定的方式range ={{data}}，js中声明相应变量data：[["a","b"], ["c","d"]]。 |
 | selected | Array | [0,0,0,…] | 否 | 设置多列文本选择器弹窗的默认值，每一列被选中项对应的索引构成的数组，该取值表示选择器弹窗界面的默认选择值。 |
 | value | Array | - | 否 | 设置多列文本选择器的值，每一列被选中项对应的值构成的数组。 |
 
@@ -110,7 +110,7 @@ synced_at: "2026-07-09T00:58:22.616314"
 
 | 名称 | 参数 | 描述 |
 | --- | --- | --- |
-| change | { newValue: newValue, newSelected: newSelected } | 普通选择器选择值后点击弹窗中的确定按钮时触发该事件（newSelected为索引）。 |
+| change | { newValue: newValue, newSelected: newSelected } | 普通选择器选择值后点击弹窗中的确认按钮时触发该事件（newSelected为索引）。 |
 | cancel | - | 用户点击弹窗中的取消按钮时触发该事件。 |
 
 #### [h2]日期选择器
@@ -306,4 +306,4 @@ export default {
     },
 }
 ```
- ![](./img/zh-cn_image_0000002631253896.gif)
+ ![](./img/zh-cn_image_0000002664210175.gif)

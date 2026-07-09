@@ -2,8 +2,8 @@
 title: "@ohos.arkui.drawableDescriptor (DrawableDescriptor)"
 upstream_id: "harmonyos-references/js-apis-arkui-drawabledescriptor"
 catalog: "harmonyos-references"
-content_hash: "33bfc54f279a"
-synced_at: "2026-07-09T00:57:27.824206"
+content_hash: "968972a59579"
+synced_at: "2026-07-09T17:23:18.768326"
 ---
 
 # @ohos.arkui.drawableDescriptor (DrawableDescriptor)
@@ -185,7 +185,7 @@ PixelMapDrawableDescriptor的构造函数。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| src | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | PixelMap类型参数，存储 PixelMap 图片数据。 |
+| src | [image.PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap) | 否 | 图片资源参数，支持传入PixelMap图片数据。 |
 
 #### LayeredDrawableDescriptor
 
@@ -302,7 +302,7 @@ LayeredDrawableDescriptor的构造函数。
 | --- | --- | --- | --- |
 | foreground | [DrawableDescriptor](#drawabledescriptor) | 否 | 分层图标的前景图片选项。 |
 | background | [DrawableDescriptor](#drawabledescriptor) | 否 | 分层图标的背景图片选项。 |
-| mask | [DrawableDescriptor](#drawabledescriptor) | 否 | 分层图标的遮罩选项。 |
+| mask | [DrawableDescriptor](#drawabledescriptor) | 否 | 分层图标的蒙版选项。 |
 
 #### [h2]getForeground
 
@@ -689,7 +689,7 @@ AnimatedDrawableDescriptor的构造函数。
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | pixelMaps | Array | 是 | PixelMap 数组类型参数，存储 PixelMap 图片数据。 |
-| options | [AnimationOptions](#animationoptions12) | 否 | 动画控制选项。 |
+| options | [AnimationOptions](#animationoptions12) | 否 | 动画播放参数。 |
 
 #### [h2]constructor21+
 
@@ -708,7 +708,7 @@ AnimatedDrawableDescriptor的构造函数。
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | src | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | Array | 是 | 动图资源地址或者[PixelMap](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-image-pixelmap)对象构成的数组。 ResourceStr当前支持的范围：应用资源Resource，沙箱路径（file:///），BASE64字符串。 |
-| options | [AnimationOptions](#animationoptions12) | 否 | 动画控制参数。 |
+| options | [AnimationOptions](#animationoptions12) | 否 | 动画播放参数。 |
 
 示例：
 

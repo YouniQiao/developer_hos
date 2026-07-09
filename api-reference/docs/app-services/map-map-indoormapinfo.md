@@ -2,8 +2,8 @@
 title: "Interface (IndoorMapInfo)"
 upstream_id: "harmonyos-references/map-map-indoormapinfo"
 catalog: "harmonyos-references"
-content_hash: "1eadc40415e7"
-synced_at: "2026-07-09T01:01:26.122991"
+content_hash: "b9981652e889"
+synced_at: "2026-07-09T17:28:10.577290"
 ---
 
 # Interface (IndoorMapInfo)
@@ -23,6 +23,8 @@ import { map } from '@kit.MapKit';
 元服务API： 从版本5.1.1(19)开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Map.Core
+
+设备行为差异： 在5.1.1(19)及之后版本该接口在phone、tablet、PC/2in1均可正常使用，在其他设备中返回801错误码。
 
 起始版本： 5.1.1(19)
 

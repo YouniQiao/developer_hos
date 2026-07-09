@@ -2,8 +2,8 @@
 title: "@ohos.app.form.FormExtensionAbility (FormExtensionAbility)"
 upstream_id: "harmonyos-references/js-apis-app-form-formextensionability"
 catalog: "harmonyos-references"
-content_hash: "d6f26af13b2c"
-synced_at: "2026-07-09T00:59:03.493490"
+content_hash: "562e02e77ee1"
+synced_at: "2026-07-09T17:25:49.150010"
 ---
 
 # @ohos.app.form.FormExtensionAbility (FormExtensionAbility)
@@ -116,7 +116,7 @@ export default class MyFormExtensionAbility extends FormExtensionAbility {
     // 卡片提供方收到卡片使用方将临时卡片转常态卡片的通知时触发，开发者需根据实际需求做相应的处理
     console.info(`FormExtensionAbility onCastToNormalForm, formId: ${formId}`);
   }
-};
+}
 ```
 
 #### [h2]FormExtensionAbility.onUpdateForm
@@ -159,7 +159,7 @@ export default class MyFormExtensionAbility extends FormExtensionAbility {
       console.error(`FormExtensionAbility context updateForm failed, code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}`);
     });
   }
-};
+}
 ```
 
 #### [h2]FormExtensionAbility.onChangeFormVisibility
@@ -207,11 +207,11 @@ export default class MyFormExtensionAbility extends FormExtensionAbility {
       formProvider.updateForm(keys[i], obj2).then(() => {
         console.info('FormExtensionAbility context updateForm');
       }).catch((error: BusinessError) => {
-        console.error(`Operation updateForm failed. , code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message})`);
+        console.error(`Operation updateForm failed, code: ${error.code}, message: ${error.message}`);
       });
     }
   }
-};
+}
 ```
 
 #### [h2]FormExtensionAbility.onFormEvent
@@ -242,7 +242,7 @@ export default class MyFormExtensionAbility extends FormExtensionAbility {
   onFormEvent(formId: string, message: string) {
     console.info(`FormExtensionAbility onFormEvent, formId: ${formId}, message: ${message}`);
   }
-};
+}
 ```
 
 #### [h2]FormExtensionAbility.onRemoveForm
@@ -272,7 +272,7 @@ export default class MyFormExtensionAbility extends FormExtensionAbility {
   onRemoveForm(formId: string) {
     console.info(`FormExtensionAbility onRemoveForm, formId: ${formId}`);
   }
-};
+}
 ```
 
 #### [h2]FormExtensionAbility.onConfigurationUpdate
@@ -305,7 +305,7 @@ export default class MyFormExtensionAbility extends FormExtensionAbility {
     // 需要注意：formExtensionAbility创建后10秒内无操作将会被清理。
     console.info(`onConfigurationUpdate, config: ${newConfig?.language}`);
   }
-};
+}
 ```
 
 #### [h2]FormExtensionAbility.onAcquireFormState
@@ -343,7 +343,7 @@ export default class MyFormExtensionAbility extends FormExtensionAbility {
     console.info(`FormExtensionAbility onAcquireFormState, want: ${want}`);
     return formInfo.FormState.UNKNOWN;
   }
-};
+}
 ```
 
 #### [h2]FormExtensionAbility.onStop12+

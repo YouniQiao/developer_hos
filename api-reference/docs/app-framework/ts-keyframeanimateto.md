@@ -2,13 +2,13 @@
 title: "关键帧动画 (keyframeAnimateTo)"
 upstream_id: "harmonyos-references/ts-keyframeanimateto"
 catalog: "harmonyos-references"
-content_hash: "eca8ff9e819b"
-synced_at: "2026-07-09T00:58:07.599059"
+content_hash: "4289fda2174b"
+synced_at: "2026-07-09T17:24:43.386042"
 ---
 
 # 关键帧动画 (keyframeAnimateTo)
 
-在[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中提供keyframeAnimateTo接口来指定若干个关键帧状态，实现分段的动画。同属性动画，布局类改变宽高的动画，内容都是直接到终点状态，例如文字、[Canvas](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-canvas)的内容等，如果要内容跟随宽高变化，可以使用[renderFit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-renderfit#renderfit)属性配置。
+在[UIContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext)中提供keyframeAnimateTo接口来指定若干个关键帧状态，实现分段的动画。关键帧动画是通过若干个关键时刻的状态，将动画过程划分为多段，同一属性在动画过程内不是单调的从起点到终点的过渡，而可以是分段的过渡。同属性动画，布局类改变宽高的动画，内容都是直接到终点状态，例如文字、[Canvas](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-components-canvas-canvas)的内容等，如果要内容跟随宽高变化，可以使用[renderFit](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-renderfit#renderfit)属性配置。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -58,7 +58,7 @@ keyframeAnimateTo(param: KeyframeAnimateParam, keyframes: Array<KeyframeState>):
 
 #### 示例
 
-该示例主要演示如何通过keyframeAnimateTo来设置关键帧动画。
+该示例主要演示如何通过keyframeAnimateTo来设置关键帧动画，包括delay延时、onFinish结束回调以及各关键帧的curve曲线配置。
 
 ```
 // xxx.ets
@@ -88,9 +88,13 @@ struct KeyframeDemo {
             return;
           }
           this.myScale = 1;
-          // 设置关键帧动画整体播放3次
+          // 设置关键帧动画整体播放3次，延时200ms，并在结束时触发onFinish回调
           this.uiContext.keyframeAnimateTo({
               iterations: 3,
+              delay: 200,
+              onFinish: () => {
+                console.info("keyframe animate finish");
+              },
               expectedFrameRateRange: {
                 min: 10,
                 max: 120,
@@ -98,15 +102,17 @@ struct KeyframeDemo {
               }
             }, [
             {
-              // 第一段关键帧动画时长为800ms，scale属性做从1到1.5的动画
+              // 第一段关键帧动画时长为800ms，使用EaseIn曲线，scale属性做从1到1.5的动画
               duration: 800,
+              curve: Curve.EaseIn,
               event: () => {
                 this.myScale = 1.5;
               }
             },
             {
-              // 第二段关键帧动画时长为500ms，scale属性做从1.5到1的动画
+              // 第二段关键帧动画时长为500ms，使用EaseOut曲线，scale属性做从1.5到1的动画
               duration: 500,
+              curve: Curve.EaseOut,
               event: () => {
                 this.myScale = 1;
               }
@@ -117,4 +123,4 @@ struct KeyframeDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612901.gif)
+ ![](./img/zh-cn_image_0000002664209999.gif)

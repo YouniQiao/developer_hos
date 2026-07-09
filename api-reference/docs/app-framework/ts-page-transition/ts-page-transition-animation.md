@@ -2,8 +2,8 @@
 title: "页面间转场 (pageTransition)"
 upstream_id: "harmonyos-references/ts-page-transition-animation"
 catalog: "harmonyos-references"
-content_hash: "1ae35d31cfd2"
-synced_at: "2026-07-09T00:58:08.296264"
+content_hash: "794cf85ac5f3"
+synced_at: "2026-07-09T17:24:43.416573"
 ---
 
 # 页面间转场 (pageTransition)
@@ -112,7 +112,7 @@ onExit(event: PageTransitionCallback): PageTransitionExitInterface
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| type | [RouteType](#routetype枚举说明) | 否 | 是 | 页面转场效果生效的路由类型。 默认值：RouteType.None。 |
+| type | [RouteType](#routetype枚举说明) | 否 | 是 | 页面转场效果生效的路由类型。 默认值：RouteType.None。 **说明：** 当pageTransition函数中配置了多个[PageTransitionEnter](#pagetransitionenter)或[PageTransitionExit](#pagetransitionexit)时，按照RouteType匹配规则生效：系统会根据当前路由操作类型（Push或Pop）从所有配置的PageTransitionEnter/PageTransitionExit中选择最后一个匹配的组件生效。如果存在多个匹配相同RouteType的PageTransitionEnter，则最后配置的生效；如果存在多个匹配相同RouteType的PageTransitionExit，则最后配置的生效。RouteType.None与所有路由类型均匹配。 |
 | duration | number | 否 | 是 | 动画的时长。 单位：毫秒 默认值：1000 取值范围：[0, +∞) |
 | curve | [Curve](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#curve) | string | [ICurve](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-curve#icurve9)10+ | 否 | 是 | 动画曲线。 推荐以Curve或ICurve形式指定。 当类型为string时，为动画插值曲线，取值参考[AnimateParam](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-explicit-animation#animateparam对象说明)的curve参数。 默认值：Curve.Linear |
 | delay | number | 否 | 是 | 动画延迟时长。 单位：毫秒 默认值：0 **说明：** 没有匹配时使用系统默认的页面转场效果(根据设备可能会有差异)，如需禁用系统默认页面转场效果，可以指定duration为0。 |
@@ -358,7 +358,7 @@ struct Page1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413610.gif)
+ ![](./img/zh-cn_image_0000002664330057.gif)
 
 自定义方式2：配置了当前页面的入场动画为从左侧滑入，退场为平移加透明度变化。
 
@@ -417,7 +417,7 @@ struct Page1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732841.gif)
+ ![](./img/zh-cn_image_0000002633850946.gif)
 
 #### [h2]示例2（设置退入场平移效果）
 
@@ -502,7 +502,7 @@ struct Page1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253720.gif)
+ ![](./img/zh-cn_image_0000002634010850.gif)
 
 自定义方式2：使用系统默认的退入场效果，将系统语言排版模式改为RTL。
 
@@ -561,4 +561,4 @@ struct Page1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612903.gif)
+ ![](./img/zh-cn_image_0000002664210001.gif)

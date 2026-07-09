@@ -2,8 +2,8 @@
 title: "选择器（Picker）公共接口"
 upstream_id: "harmonyos-references/ts-picker-common"
 catalog: "harmonyos-references"
-content_hash: "112c92ed585d"
-synced_at: "2026-07-09T00:57:55.009385"
+content_hash: "71b7302ce157"
+synced_at: "2026-07-09T17:23:53.583495"
 ---
 
 # 选择器（Picker）公共接口
@@ -41,7 +41,7 @@ synced_at: "2026-07-09T00:57:55.009385"
 | --- | --- | --- | --- | --- |
 | type | [ButtonType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttontype枚举说明) | 否 | 是 | 按钮显示样式。 |
 | style | [ButtonStyleMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttonstylemode11枚举说明) | 否 | 是 | 按钮的样式和重要程度。 |
-| role | [ButtonRole](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttonrole12枚举说明) | 否 | 是 | Button组件的角色。 |
+| role | [ButtonRole](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-button#buttonrole12枚举说明) | 否 | 是 | 按钮组件的角色。 |
 | fontSize | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | 否 | 是 | 文本显示字号。 |
 | fontColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | 是 | 文本显示颜色。 |
 | fontWeight | [FontWeight](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#fontweight) | number | string | 否 | 是 | 文本的字体粗细。number类型取值[100, 900]，取值间隔为100，取值越大，字体越粗。string类型仅支持number类型取值的字符串形式，例如"200"，以及"bold"、"bolder"、"lighter"、"regular"、"medium"，分别对应FontWeight中相应的枚举值。 |

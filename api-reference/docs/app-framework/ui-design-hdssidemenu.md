@@ -2,8 +2,8 @@
 title: "HdsSideMenu"
 upstream_id: "harmonyos-references/ui-design-hdssidemenu"
 catalog: "harmonyos-references"
-content_hash: "439e0da9834d"
-synced_at: "2026-07-09T00:59:09.710768"
+content_hash: "9e5bac44d1cd"
+synced_at: "2026-07-09T17:25:57.888788"
 ---
 
 # HdsSideMenu
@@ -39,7 +39,7 @@ HdsSideMenu({items?: HdsSideMenuMainItem[], selectedIndex: number, $selectedInde
 | $selectedIndex | [OnSelectedIndexChange](#onselectedindexchange) | 否 | @Event | 用于双向绑定selectedIndex。 |
 | maxItemTextLines | number | 否 | @Param | 设置最大内容行数。 默认值：1。 取值范围：(0, +∞)的整数。 |
 
-#### build
+#### [h2]build
 
 build(): void
 
@@ -359,4 +359,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661733353.png)
+ ![](./img/zh-cn_image_0000002634011358.png)

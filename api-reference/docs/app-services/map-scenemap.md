@@ -2,8 +2,8 @@
 title: "sceneMap（场景化控件）"
 upstream_id: "harmonyos-references/map-scenemap"
 catalog: "harmonyos-references"
-content_hash: "aee39861d593"
-synced_at: "2026-07-09T01:01:27.323919"
+content_hash: "2e5f116abe78"
+synced_at: "2026-07-09T17:28:11.781539"
 ---
 
 # sceneMap（场景化控件）
@@ -33,6 +33,8 @@ queryLocation(context: common.UIAbilityContext, options: LocationQueryOptions): 
 元服务API： 从版本4.1.0(11)开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Map.Core
+
+设备行为差异： 该接口在phone、tablet和PC/2in1设备上可以正常使用，在其他设备中返回801错误码。
 
 起始版本： 4.1.0(11)
 
@@ -93,6 +95,8 @@ chooseLocation(context: common.UIAbilityContext, options: LocationChoosingOption
 元服务API： 从版本4.1.0(11)开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Map.Core
+
+设备行为差异： 该接口在phone、tablet和PC/2in1设备上可以正常使用，在其他设备中返回801错误码。
 
 起始版本： 4.1.0(11)
 
@@ -158,6 +162,8 @@ selectDistrict(context: common.Context, options: DistrictSelectOptions): Promise
 
 系统能力： SystemCapability.Map.Core
 
+设备行为差异： 该接口在phone、tablet和PC/2in1设备上可以正常使用，在其他设备中返回801错误码。
+
 起始版本： 5.0.0(12)
 
 参数：
@@ -210,6 +216,8 @@ sceneMap.selectDistrict(this.getUIContext().getHostContext(), districtSelectOpti
 
 系统能力： SystemCapability.Map.Core
 
+设备行为差异： 该接口在phone、tablet和PC/2in1设备上可以正常使用，在其他设备中返回801错误码。
+
 起始版本： 4.1.0(11)
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
@@ -243,6 +251,8 @@ let queryLocationOptions: sceneMap.LocationQueryOptions = { siteId: "92220715406
 
 系统能力： SystemCapability.Map.Core
 
+设备行为差异： 该接口在phone、tablet和PC/2in1设备上可以正常使用，在其他设备中返回801错误码。
+
 起始版本： 4.1.0(11)
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
@@ -273,6 +283,8 @@ let locationChoosingOptions: sceneMap.LocationChoosingOptions = {
 
 系统能力： SystemCapability.Map.Core
 
+设备行为差异： 该接口在phone、tablet和PC/2in1设备上可以正常使用，在其他设备中返回801错误码。
+
 起始版本： 4.1.0(11)
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
@@ -292,6 +304,8 @@ let locationChoosingOptions: sceneMap.LocationChoosingOptions = {
 模型约束： 此接口仅可在Stage模型下使用。
 
 系统能力： SystemCapability.Map.Core
+
+设备行为差异： 该接口在phone、tablet和PC/2in1设备上可以正常使用，在其他设备中返回801错误码。
 
 起始版本： 5.0.0(12)
 
@@ -327,6 +341,8 @@ let districtSelectOptions: sceneMap.DistrictSelectOptions = {
 
 系统能力： SystemCapability.Map.Core
 
+设备行为差异： 该接口在phone、tablet和PC/2in1设备上可以正常使用，在其他设备中返回801错误码。
+
 起始版本： 5.0.0(12)
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
@@ -343,6 +359,8 @@ let districtSelectOptions: sceneMap.DistrictSelectOptions = {
 元服务API： 从版本5.0.0(12)开始，该接口支持在元服务中使用。
 
 系统能力： SystemCapability.Map.Core
+
+设备行为差异： 该接口在phone、tablet和PC/2in1设备上可以正常使用，在其他设备中返回801错误码。
 
 起始版本： 5.0.0(12)
 

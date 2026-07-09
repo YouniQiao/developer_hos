@@ -2,8 +2,8 @@
 title: "TextClock"
 upstream_id: "harmonyos-references/ts-basic-components-textclock"
 catalog: "harmonyos-references"
-content_hash: "8c6a7923b6c8"
-synced_at: "2026-07-09T00:58:02.250996"
+content_hash: "ea9da9c1780a"
+synced_at: "2026-07-09T17:24:33.621117"
 ---
 
 # TextClock
@@ -421,9 +421,9 @@ stop()
 
 该示例展示了TextClock组件的基本使用方法，通过[format](#format)属性设置时钟文本的格式。
 
-点击"start TextClock"按钮，按钮回调函数会调用TextClockController启动文本时钟。点击"stop TextClock"按钮，会调用TextClockController暂停文本时钟。
+点击"start TextClock"按钮，按钮回调函数会调用TextClockController启动文本时钟。点击"stop TextClock"按钮，会调用TextClockController停止文本时钟。
 
-示例中的组件通过设置[TextClockController](#textclockcontroller)回调函数，在文本时钟更新时，持续修改accumulateTime的内容。
+示例中的组件通过设置[onDateChange](#ondatechange)回调函数，在文本时钟更新时，持续修改accumulateTime的内容。
 
 ```
 @Entry
@@ -462,7 +462,7 @@ struct Second {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732729.gif)
+ ![](./img/zh-cn_image_0000002633850836.gif)
 
 #### [h2]示例2（设定文本阴影样式）
 
@@ -506,11 +506,11 @@ struct TextClockExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253610.png)
+ ![](./img/zh-cn_image_0000002634010740.png)
 
 #### [h2]示例3（设定自定义内容区）
 
-该示例实现了自定义文本时钟样式的功能，自定义样式实现了一个时间选择器组件：通过文本时钟的时区偏移量与UTC秒数，来动态改变时间选择器的选中值，实现时钟效果。同时，根据文本时钟的启动状态，实现文本选择器的12小时制与24小时制的切换。
+该示例实现了自定义文本时钟样式的功能，自定义样式实现了一个时间选择器组件：通过文本时钟的时区偏移量与UTC秒数，来动态改变时间选择器的选中值，实现时钟效果。同时，根据文本时钟的启动状态，实现时间选择器的12小时制与24小时制的切换。
 
 ```
 class MyTextClockStyle implements ContentModifier<TextClockConfiguration> {
@@ -589,7 +589,7 @@ struct TextClockExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612791.gif)
+ ![](./img/zh-cn_image_0000002664209889.gif)
 
 #### [h2]示例4（设置前导零）
 
@@ -623,7 +623,7 @@ struct TextClockExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413502.png)
+ ![](./img/zh-cn_image_0000002664329949.png)
 
 #### [h2]示例5（设置文字显示样式）
 
@@ -677,4 +677,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732731.png)
+ ![](./img/zh-cn_image_0000002633850838.png)

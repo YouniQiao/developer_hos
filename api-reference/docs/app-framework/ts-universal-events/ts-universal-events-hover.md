@@ -2,8 +2,8 @@
 title: "悬浮事件"
 upstream_id: "harmonyos-references/ts-universal-events-hover"
 catalog: "harmonyos-references"
-content_hash: "1c0d44ed6069"
-synced_at: "2026-07-09T00:57:36.504057"
+content_hash: "7aae755ccae6"
+synced_at: "2026-07-09T17:23:30.601173"
 ---
 
 # 悬浮事件
@@ -78,8 +78,8 @@ onHoverMove(event: Callback<HoverEvent>): T
 | displayX15+ | number | 否 | 是 | 鼠标光标或手写笔位置在当前应用屏幕坐标系中的X坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 | displayY15+ | number | 否 | 是 | 鼠标光标或手写笔位置在当前应用屏幕坐标系中的Y坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 |
 | stopPropagation | () => void | 否 | 否 | 阻塞[事件冒泡](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-interaction-basic-principles#事件冒泡)。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| globalDisplayX20+ | number | 否 | 是 | 鼠标光标或手写笔位置在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的X坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
-| globalDisplayY20+ | number | 否 | 是 | 鼠标光标或手写笔位置在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的Y坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| globalDisplayX20+ | number | 否 | 是 | 鼠标光标或手写笔位置在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的X坐标。 单位：vp 取值范围：(-∞, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
+| globalDisplayY20+ | number | 否 | 是 | 鼠标光标或手写笔位置在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的Y坐标。 单位：vp 取值范围：(-∞, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 
 #### 示例
 
@@ -124,11 +124,11 @@ struct HoverEventExample {
 
 未悬浮时的文本内容与背景颜色：
 
-![](./img/zh-cn_image_0000002661732251.png)
+![](./img/zh-cn_image_0000002633850366.png)
 
 手写笔悬浮时改变文本内容与背景颜色：
 
-![](./img/zh-cn_image_0000002631253130.png)
+![](./img/zh-cn_image_0000002634010270.png)
 
 #### [h2]示例2（使用onHoverMove）
 
@@ -160,4 +160,4 @@ struct OnHoverMoveEventExample {
 
 手写笔悬浮在Button组件上时，UI不断刷新笔尖的位置信息：
 
-![](./img/zh-cn_image_0000002661612315.png)
+![](./img/zh-cn_image_0000002664209419.png)

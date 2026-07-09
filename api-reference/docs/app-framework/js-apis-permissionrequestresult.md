@@ -2,8 +2,8 @@
 title: "PermissionRequestResult"
 upstream_id: "harmonyos-references/js-apis-permissionrequestresult"
 catalog: "harmonyos-references"
-content_hash: "2670f72aadb9"
-synced_at: "2026-07-09T00:57:10.750426"
+content_hash: "6618d68ffe3a"
+synced_at: "2026-07-09T17:23:03.262301"
 ---
 
 # PermissionRequestResult
@@ -24,6 +24,8 @@ import { PermissionRequestResult } from '@kit.AbilityKit';
 #### 属性
 
 系统能力：以下各项对应的系统能力均为SystemCapability.Security.AccessToken
+
+模型约束： 此接口仅可在Stage模型下使用。
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |

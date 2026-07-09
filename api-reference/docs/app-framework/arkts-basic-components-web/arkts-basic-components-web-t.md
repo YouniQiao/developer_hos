@@ -2,8 +2,8 @@
 title: "Types"
 upstream_id: "harmonyos-references/arkts-basic-components-web-t"
 catalog: "harmonyos-references"
-content_hash: "d71185a60870"
-synced_at: "2026-07-09T00:58:54.555811"
+content_hash: "4455b2e669a7"
+synced_at: "2026-07-09T17:25:39.697587"
 ---
 
 # Types
@@ -327,7 +327,7 @@ type OnDetectBlankScreenCallback = (event: BlankScreenDetectionEventInfo) => voi
 
 #### OnCameraCaptureStateChangeCallback23+
 
-type OnCameraCaptureStateChangeCallback = (event: CameraCaptureStateChangeInfo) => void;
+type OnCameraCaptureStateChangeCallback = (event: CameraCaptureStateChangeInfo) => void
 
 当页面摄像设备状态发生改变时触发此回调。
 
@@ -341,7 +341,7 @@ type OnCameraCaptureStateChangeCallback = (event: CameraCaptureStateChangeInfo) 
 
 #### OnMicrophoneCaptureStateChangeCallback23+
 
-type OnMicrophoneCaptureStateChangeCallback = (event: MicrophoneCaptureStateChangeInfo) => void;
+type OnMicrophoneCaptureStateChangeCallback = (event: MicrophoneCaptureStateChangeInfo) => void
 
 当页面麦克风状态发生改变时触发此回调。
 

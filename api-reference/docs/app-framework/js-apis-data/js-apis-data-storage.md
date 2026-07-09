@@ -2,8 +2,8 @@
 title: "@ohos.data.storage (轻量级存储)"
 upstream_id: "harmonyos-references/js-apis-data-storage"
 catalog: "harmonyos-references"
-content_hash: "8d756fb422bf"
-synced_at: "2026-07-09T00:57:17.614667"
+content_hash: "dd44d3f3c0d0"
+synced_at: "2026-07-09T17:23:10.048341"
 ---
 
 # @ohos.data.storage (轻量级存储)
@@ -214,7 +214,7 @@ context.getFilesDir().then((filePath) => {
 
 deleteStorage(path: string): Promise<void>
 
-从内存中移除指定文件对应的Storage单实例，并删除指定文件及其备份文件、损坏文件。删除指定文件时，应用不允许再使用该实例进行数据操作，否则会出现数据一致性问题，使用promise方式返回结果，此方法为异步方法。
+从内存中移除指定文件对应的Storage单实例，并删除指定文件及其备份文件、损坏文件。删除指定文件时，应用不允许再使用该实例进行数据操作，否则会出现数据一致性问题，使用Promise方式返回结果，此方法为异步方法。
 
 系统能力： SystemCapability.DistributedDataManager.Preferences.Core
 
@@ -904,5 +904,5 @@ type ValueType = number | string | boolean
 | 类型 | 说明 |
 | --- | --- |
 | number | 表示值类型为数字。 |
-| string | 表示值类型为字符。 |
+| string | 表示值类型为字符串。 |
 | boolean | 表示值类型为布尔值。 |

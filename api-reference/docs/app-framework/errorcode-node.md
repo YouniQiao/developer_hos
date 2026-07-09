@@ -2,8 +2,8 @@
 title: "自定义节点错误码"
 upstream_id: "harmonyos-references/errorcode-node"
 catalog: "harmonyos-references"
-content_hash: "196ad2eda1ac"
-synced_at: "2026-07-09T00:58:49.081633"
+content_hash: "19a12e0222a9"
+synced_at: "2026-07-09T17:25:33.378589"
 ---
 
 # 自定义节点错误码
@@ -28,7 +28,7 @@ The FrameNode is not modifiable.
 
 避免对不可修改的节点进行修改性操作。可通过try catch捕捉并处理错误，避免影响其他逻辑。
 
-#### 100022 FrameNode节点的组件类型不支持调整跨语言的属性设置权限
+#### 100022 FrameNode节点的组件类型不支持调整跨语言的通用属性设置权限
 
 错误信息
 
@@ -36,11 +36,11 @@ The FrameNode cannot be set whether to support cross-language common attribute s
 
 错误描述
 
-当前FrameNode节点不支持跨语言属性设置，无法调整其跨语言的属性设置权限。
+当前FrameNode节点不支持跨语言通用属性设置，无法调整其跨语言的通用属性设置权限。
 
 可能原因
 
-开发者尝试调整目标FrameNode节点的跨语言属性设置权限。
+开发者尝试调整目标FrameNode节点的跨语言通用属性设置权限。
 
 处理步骤
 
@@ -74,11 +74,11 @@ The current FrameNode and the target FrameNode do not have a common ancestor nod
 
 错误描述
 
-当前节点和目标节点没有共同父节点。
+当前节点和目标节点没有公共祖先节点。
 
 可能原因
 
-找不到当前节点和目标节点的共同父节点。
+找不到当前节点和目标节点的公共祖先节点。
 
 处理步骤
 
@@ -167,7 +167,7 @@ Reuse/Recycle not implemented for ViewV2, yet.
 
 错误描述
 
-BuilderNode中，[状态管理V2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-overview#状态管理v2)暂不支持[组件复用](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#reuse12)。
+BuilderNode中，[状态管理V2](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-state-management-overview#状态管理v2)暂不支持[reuse](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#reuse12)。
 
 可能原因
 

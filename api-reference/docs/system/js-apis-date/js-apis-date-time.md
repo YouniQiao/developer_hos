@@ -2,8 +2,8 @@
 title: "@ohos.systemDateTime (系统时间、时区)"
 upstream_id: "harmonyos-references/js-apis-date-time"
 catalog: "harmonyos-references"
-content_hash: "75a17df13836"
-synced_at: "2026-07-09T00:59:41.629840"
+content_hash: "38aa2fdc6f4d"
+synced_at: "2026-07-09T17:26:38.797349"
 ---
 
 # @ohos.systemDateTime (系统时间、时区)
@@ -491,7 +491,7 @@ getUptime(timeType: TimeType, isNanoseconds?: boolean): number
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed.This error code was added due to missing issues. |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed.This error code was added due to missing issues. 适用版本：12+ |
 
 示例：
 
@@ -512,7 +512,7 @@ getDate(callback: AsyncCallback<Date>): void
 
 获取当前系统日期，使用callback异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 10开始废弃，建议使用[如何将时间格式的字符串string转换为Date对象](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/faqs/faqs-arkui-arkts.md#如何将时间格式的字符串string转换为date对象api-9)中的new Date()方法替代，new Date()返回Date实例对象。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 10开始废弃，建议使用如何将时间格式的字符串string转换为Date对象中的new Date()方法替代，new Date()返回Date实例对象。
 
 系统能力： SystemCapability.MiscServices.Time
 
@@ -555,7 +555,7 @@ getDate(): Promise<Date>
 
 获取当前系统日期，使用Promise异步回调。
 
-![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 10开始废弃，建议使用[如何将时间格式的字符串string转换为Date对象](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/faqs/faqs-arkui-arkts.md#如何将时间格式的字符串string转换为date对象api-9)中的new Date()方法替代，new Date()返回Date实例对象。
+![](./img/note_3.0-zh-cn.png) 从API version 9开始支持，从API version 10开始废弃，建议使用如何将时间格式的字符串string转换为Date对象中的new Date()方法替代，new Date()返回Date实例对象。
 
 系统能力： SystemCapability.MiscServices.Time
 

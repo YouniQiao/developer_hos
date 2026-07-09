@@ -2,8 +2,8 @@
 title: "Class (FrameCallback)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-framecallback"
 catalog: "harmonyos-references"
-content_hash: "dc478bf0080b"
-synced_at: "2026-07-09T00:57:28.978822"
+content_hash: "d1e21e4d00c4"
+synced_at: "2026-07-09T17:23:19.243273"
 ---
 
 # Class (FrameCallback)
@@ -77,7 +77,7 @@ struct Index {
 
 onIdle(timeLeftInNano: number): void
 
-在下一帧渲染结束时，如果距离下一个Vsync信号到来还有1ms以上的剩余时间，该方法将被执行，否则将顺延至后面的帧。
+在下一帧渲染任务结束后，如果距离其下个VSync信号到来的剩余时间大于1ms时，该回调函数将被执行；如果剩余时间小于1ms时，回调函数将被顺延至当某个下一帧的剩余时间大于1ms时再执行。如果当前没有下一帧，将自动请求下一帧。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 

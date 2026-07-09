@@ -2,8 +2,8 @@
 title: "oh_cursor.h"
 upstream_id: "harmonyos-references/capi-oh-cursor-h"
 catalog: "harmonyos-references"
-content_hash: "8d3624041c85"
-synced_at: "2026-07-09T00:57:18.364910"
+content_hash: "83a56c3a1cba"
+synced_at: "2026-07-09T17:23:10.224721"
 ---
 
 # oh_cursor.h
@@ -62,7 +62,7 @@ int OH_Cursor_GetFloatVectorCount(OH_Cursor *cursor, int32_t columnIndex, size_t
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行结果。 返回RDB_OK表示成功。 返回RDB_E_ERROR表示数据库常见错误。 返回RDB_E_INVALID_ARGS表示无效参数。 返回RDB_E_SQLITE_CORRUPT表示数据库损坏。 返回RDB_E_STEP_RESULT_CLOSED表示查询到的结果集已经关闭。 返回RDB_E_ALREADY_CLOSED表示数据库已经关闭。 返回RDB_E_SQLITE_PERM表示SQLite错误: 访问权限被拒绝。 返回RDB_E_SQLITE_BUSY表示SQLite错误: 数据库文件被锁定。 返回RDB_E_SQLITE_LOCKED表示SQLite错误码：数据库中的表被锁定。 返回RDB_E_SQLITE_NOMEM表示SQLite错误: 数据库内存不足。 返回RDB_E_SQLITE_IOERR表示SQLite错误: 磁盘I/O错误。 返回RDB_E_SQLITE_TOO_BIG表示SQLite错误码：TEXT或BLOB超出大小限制。 返回RDB_E_SQLITE_MISMATCH表示SQLite错误码：数据类型不匹配。 |
+| int | 返回执行结果。 返回RDB_OK表示成功。 返回RDB_E_ERROR表示数据库常见错误。 返回RDB_E_INVALID_ARGS表示无效参数。 返回RDB_E_SQLITE_CORRUPT表示数据库损坏。 返回RDB_E_STEP_RESULT_CLOSED表示查询到的结果集已经关闭。 返回RDB_E_ALREADY_CLOSED表示数据库已经关闭。 返回RDB_E_SQLITE_PERM表示SQLite错误：访问权限被拒绝。 返回RDB_E_SQLITE_BUSY表示SQLite错误：数据库文件被锁定。 返回RDB_E_SQLITE_LOCKED表示SQLite错误码：数据库中的表被锁定。 返回RDB_E_SQLITE_NOMEM表示SQLite错误：数据库内存不足。 返回RDB_E_SQLITE_IOERR表示SQLite错误：磁盘I/O错误。 返回RDB_E_SQLITE_TOO_BIG表示SQLite错误码：TEXT或BLOB超出大小限制。 返回RDB_E_SQLITE_MISMATCH表示SQLite错误码：数据类型不匹配。 |
 
 #### [h2]OH_Cursor_GetFloatVector()
 
@@ -89,4 +89,4 @@ int OH_Cursor_GetFloatVector(OH_Cursor *cursor, int32_t columnIndex, float *val,
 
 | 类型 | 说明 |
 | --- | --- |
-| int | 返回执行结果。 返回RDB_OK表示成功。 返回RDB_E_ERROR表示数据库常见错误。 返回RDB_E_INVALID_ARGS表示无效参数。 返回RDB_E_SQLITE_CORRUPT表示数据库损坏。 返回RDB_E_STEP_RESULT_CLOSED表示查询到的结果集已经关闭。 返回RDB_E_ALREADY_CLOSED表示数据库已经关闭。 返回RDB_E_SQLITE_PERM表示SQLite错误: 访问权限被拒绝。 返回RDB_E_SQLITE_BUSY表示SQLite错误: 数据库文件被锁定。 返回RDB_E_SQLITE_LOCKED表示SQLite错误码：数据库中的表被锁定。 返回RDB_E_SQLITE_NOMEM表示SQLite错误: 数据库内存不足。 返回RDB_E_SQLITE_IOERR表示SQLite错误: 磁盘I/O错误。 返回RDB_E_SQLITE_TOO_BIG表示SQLite错误码：TEXT或BLOB超出大小限制。 返回RDB_E_SQLITE_MISMATCH表示SQLite错误码：数据类型不匹配。 |
+| int | 返回执行结果。 返回RDB_OK表示成功。 返回RDB_E_ERROR表示数据库常见错误。 返回RDB_E_INVALID_ARGS表示无效参数。 返回RDB_E_SQLITE_CORRUPT表示数据库损坏。 返回RDB_E_STEP_RESULT_CLOSED表示查询到的结果集已经关闭。 返回RDB_E_ALREADY_CLOSED表示数据库已经关闭。 返回RDB_E_SQLITE_PERM表示SQLite错误：访问权限被拒绝。 返回RDB_E_SQLITE_BUSY表示SQLite错误：数据库文件被锁定。 返回RDB_E_SQLITE_LOCKED表示SQLite错误码：数据库中的表被锁定。 返回RDB_E_SQLITE_NOMEM表示SQLite错误：数据库内存不足。 返回RDB_E_SQLITE_IOERR表示SQLite错误：磁盘I/O错误。 返回RDB_E_SQLITE_TOO_BIG表示SQLite错误码：TEXT或BLOB超出大小限制。 返回RDB_E_SQLITE_MISMATCH表示SQLite错误码：数据类型不匹配。 |

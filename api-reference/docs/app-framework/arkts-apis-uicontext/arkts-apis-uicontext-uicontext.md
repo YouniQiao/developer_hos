@@ -2,8 +2,8 @@
 title: "Class (UIContext)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-uicontext"
 catalog: "harmonyos-references"
-content_hash: "3d12cf1794a9"
-synced_at: "2026-07-09T00:57:30.788690"
+content_hash: "0d43fffb5087"
+synced_at: "2026-07-09T17:23:20.708190"
 ---
 
 # Class (UIContext)
@@ -455,7 +455,7 @@ struct UIContextCompare {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732187.gif)
+ ![](./img/zh-cn_image_0000002664329415.gif)
 
 #### getFont
 
@@ -585,7 +585,7 @@ struct Index {
 
 getId(): number
 
-获取UI实例对象唯一标识，多实例场景下，开发者可使用此唯一标识区分多个UI实例对象，便于管理。
+获取UI实例对象唯一标识，多实例场景下，开发者可使用此唯一标识区分多个UI实例对象，便于管理。UI实例无效或实例ID不存在时，返回-1。
 
 元服务API： 从API version 22开始，该接口支持在元服务中使用。
 
@@ -817,7 +817,7 @@ struct AnimateToImmediatelyExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253066.gif)
+ ![](./img/zh-cn_image_0000002633850304.gif)
 
 #### animateTo
 
@@ -992,7 +992,7 @@ struct SharedLocalStorage {
 
 getHostContext(): Context | undefined
 
-获得当前元能力的Context。
+获得当前组件所在Ability的Context。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -1320,7 +1320,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612249.gif)
+ ![](./img/zh-cn_image_0000002634010208.gif)
 
 #### showActionSheet
 
@@ -1391,7 +1391,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631412958.gif)
+ ![](./img/zh-cn_image_0000002664209357.gif)
 
 #### showDatePickerDialog
 
@@ -1465,7 +1465,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732189.gif)
+ ![](./img/zh-cn_image_0000002664329417.gif)
 
 #### showTimePickerDialog
 
@@ -1606,7 +1606,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253068.gif)
+ ![](./img/zh-cn_image_0000002633850306.gif)
 
 #### showTextPickerDialog20+
 
@@ -1632,7 +1632,7 @@ showTextPickerDialog(style: TextPickerDialogOptions|TextPickerDialogOptionsExt):
 
 createAnimator(options: AnimatorOptions): AnimatorResult
 
-定义Animator类。
+创建Animator动画结果对象。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 
@@ -3530,7 +3530,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612251.gif)
+ ![](./img/zh-cn_image_0000002634010210.gif)
 
 #### unbindTabsFromScrollable13+
 
@@ -3926,7 +3926,7 @@ setImageCacheCount(value: number): void
 
 setImageCacheCount方法需要在@Entry标记的页面，[onPageShow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#onpageshow)或[aboutToAppear](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-custom-component-lifecycle#abouttoappear)里面设置才生效。
 
-setImageCacheCount、setImageRawDataCacheSize和setImageFileCacheSize并不灵活，后续不继续演进。对于复杂情况，更推荐使用[ImageKnife](https://gitcode.com/openharmony-tpc/ImageKnife)。
+setImageCacheCount、setImageRawDataCacheSize和setImageFileCacheSize并不灵活，后续不继续演进。对于复杂情况，更推荐使用[ImageKnife](https://gitcode.com/CPF-ApplicationTPC/ImageKnife)。
 
 元服务API： 从API version 23开始，该接口支持在元服务中使用。
 
@@ -4156,7 +4156,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631412960.gif)
+ ![](./img/zh-cn_image_0000002664209359.gif)
 
 #### getPageRootNode24+
 
@@ -4308,7 +4308,7 @@ export struct pageThreeTmp {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732191.jpg)
+ ![](./img/zh-cn_image_0000002664329419.jpg)
 
 #### isEasySplit24+
 

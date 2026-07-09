@@ -2,8 +2,8 @@
 title: "ArkUI_NodeAttributeType（信息选择类组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-informationselection"
 catalog: "harmonyos-references"
-content_hash: "13dc72533486"
-synced_at: "2026-07-09T00:58:35.687511"
+content_hash: "143f8d5d6a36"
+synced_at: "2026-07-09T17:25:18.067722"
 ---
 
 # ArkUI_NodeAttributeType（信息选择类组件相关属性）
@@ -142,7 +142,7 @@ NODE_DATE_PICKER_DISAPPEAR_TEXT_STYLE = 13004
 ```
 NODE_DATE_PICKER_TEXT_STYLE = 13005
 ```
- 设置日期选择器组件的所有选项中除了最上、最下及选中项以外的文本颜色、字号、字体粗细，支持属性设置，属性重置和属性获取接口。
+ 设置日期选择器组件的所有选项中除了边缘项及选中项以外的文本颜色、字号、字体粗细，支持属性设置，属性重置和属性获取接口。
 
 作为属性设置方法参数、属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 
@@ -234,7 +234,7 @@ NODE_DATE_PICKER_ENABLE_HAPTIC_FEEDBACK = 13008
 ```
 NODE_DATE_PICKER_CAN_LOOP = 13009
 ```
- Picker组件可循环滚动属性，支持属性设置，属性重置和属性获取接口。
+ 日期选择器组件可循环滚动属性，支持属性设置，属性重置和属性获取接口。
 
 作为属性设置方法参数、属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 
@@ -326,7 +326,7 @@ NODE_TIME_PICKER_DISAPPEAR_TEXT_STYLE = 14002
 ```
 NODE_TIME_PICKER_TEXT_STYLE = 14003
 ```
- 设置时间选择组件所有选项中除了最上、最下及选中项以外的文本颜色、字号、字体粗细，支持属性设置，属性重置和属性获取接口。
+ 设置时间选择组件所有选项中除了边缘项及选中项以外的文本颜色、字号、字体粗细，支持属性设置，属性重置和属性获取接口。
 
 作为属性设置方法参数、属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 
@@ -395,7 +395,7 @@ NODE_TIME_PICKER_START = 14005
 ```
 NODE_TIME_PICKER_END = 14006
 ```
- 设置时间选择器组件的结束日期，支持属性设置，属性重置和属性获取接口。
+ 设置时间选择器组件的结束时间，支持属性设置，属性重置和属性获取接口。
 
 作为属性设置方法参数、属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 
@@ -622,7 +622,7 @@ NODE_TEXT_PICKER_CAN_LOOP = 15007
 ```
 NODE_TEXT_PICKER_DEFAULT_PICKER_ITEM_HEIGHT = 15008
 ```
- Picker各选择项的高度属性，支持属性设置，属性重置和属性获取接口。
+ 滑动选择文本内容的组件各选择项的高度属性，支持属性设置，属性重置和属性获取接口。
 
 作为属性设置方法参数、属性获取方法返回值[ArkUI_AttributeItem](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-arkui-attributeitem)格式如下。
 

@@ -2,8 +2,8 @@
 title: "weatherService（天气数据服务）"
 upstream_id: "harmonyos-references/weather-service-weatherservice"
 catalog: "harmonyos-references"
-content_hash: "87667a02be5e"
-synced_at: "2026-07-09T01:01:41.170579"
+content_hash: "172bf293382d"
+synced_at: "2026-07-09T17:28:25.970286"
 ---
 
 # weatherService（天气数据服务）
@@ -229,8 +229,6 @@ export default class EntryAbility extends UIAbility {
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从版本5.0.0(12)开始，该接口支持在元服务中使用。
-
 系统能力： SystemCapability.Weather.Core
 
 设备行为差异： 对于5.0.5(17)及之前版本，该接口在Phone、Tablet、PC/2in1中可正常使用，在其他设备类型中无法使用。对于5.1.0(18)及之后版本，该接口在Phone、Tablet、PC/2in1、Wearable中可正常使用。对于6.1.0(23)及之后版本，该接口在Phone、Tablet、PC/2in1、Wearable、TV中可正常使用。
@@ -239,16 +237,16 @@ export default class EntryAbility extends UIAbility {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| current | [CurrentWeather](#currentweather) | 否 | 是 | 实况天气，若设置了limitedDatasets且数组中不包含[Dataset](#dataset).CURRENT，该字段不返回。 |
-| daily | [Forecast](#forecastt) | 否 | 是 | 多日预报，若设置了limitedDatasets且数组中不包含[Dataset](#dataset).DAILY，该字段不返回。 |
-| hourly | [Forecast](#forecastt) | 否 | 是 | 逐小时预报，若设置了limitedDatasets且数组中不包含[Dataset](#dataset).HOURLY，该字段不返回。 |
-| minute | [Forecast](#forecastt) | 否 | 是 | 分钟级降水预报，若设置了limitedDatasets且数组中不包含[Dataset](#dataset).MINUTE，或者该区域短期无降水，该字段不返回。 |
-| alerts | [WeatherAlert](#weatheralert)[] | 否 | 是 | 天气预警，若设置了limitedDatasets且数组中不包含[Dataset](#dataset).ALERTS，或者该区域当前无预警，该字段不返回。 |
-| indices | [WeatherIndex](#weatherindex)[] | 否 | 是 | 天气指数，若设置了limitedDatasets且数组中不包含[Dataset](#dataset).INDICES，该字段不返回。 |
-| tides | [Tide](#tide)[] | 否 | 是 | 潮汐，若设置了limitedDatasets且数组中不包含[Dataset](#dataset).TIDES，或者该区域无潮汐站点，该字段不返回。 |
+| current | [CurrentWeather](#currentweather) | 否 | 是 | 实况天气，若设置了limitedDatasets且数组中不包含[Dataset](#dataset).CURRENT，该字段不返回。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| daily | [Forecast](#forecastt) | 否 | 是 | 多日预报，若设置了limitedDatasets且数组中不包含[Dataset](#dataset).DAILY，该字段不返回。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| hourly | [Forecast](#forecastt) | 否 | 是 | 逐小时预报，若设置了limitedDatasets且数组中不包含[Dataset](#dataset).HOURLY，该字段不返回。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| minute | [Forecast](#forecastt) | 否 | 是 | 分钟级降水预报，若设置了limitedDatasets且数组中不包含[Dataset](#dataset).MINUTE，或者该区域短期无降水，该字段不返回。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| alerts | [WeatherAlert](#weatheralert)[] | 否 | 是 | 天气预警，若设置了limitedDatasets且数组中不包含[Dataset](#dataset).ALERTS，或者该区域当前无预警，该字段不返回。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| indices | [WeatherIndex](#weatherindex)[] | 否 | 是 | 天气指数，若设置了limitedDatasets且数组中不包含[Dataset](#dataset).INDICES，该字段不返回。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| tides | [Tide](#tide)[] | 否 | 是 | 潮汐，若设置了limitedDatasets且数组中不包含[Dataset](#dataset).TIDES，或者该区域无潮汐站点，该字段不返回。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
 | city | [City](#city) | 否 | 是 | 请求经纬度对应的城市信息，若设置了limitedDatasets且数组中不包含[Dataset](#dataset).CITY，该字段不返回。 **元服务API：** 从版本6.1.0(23)开始，该接口支持在元服务中使用。 **起始版本：** 6.1.0(23) |
-| metadata | [WeatherMetadata](#weathermetadata) | 否 | 否 | 天气数据元数据。 |
-| attributions | [WeatherAttribution](#weatherattribution)[] | 否 | 否 | 天气数据的归因。 |
+| metadata | [WeatherMetadata](#weathermetadata) | 否 | 否 | 天气数据元数据。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| attributions | [WeatherAttribution](#weatherattribution)[] | 否 | 否 | 天气数据的归因。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
 
 #### CurrentWeather
 
@@ -256,8 +254,6 @@ export default class EntryAbility extends UIAbility {
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从版本5.0.0(12)开始，该接口支持在元服务中使用。
-
 系统能力： SystemCapability.Weather.Core
 
 设备行为差异： 对于5.0.5(17)及之前版本，该接口在Phone、Tablet、PC/2in1中可正常使用，在其他设备类型中无法使用。对于5.1.0(18)及之后版本，该接口在Phone、Tablet、PC/2in1、Wearable中可正常使用。对于6.1.0(23)及之后版本，该接口在Phone、Tablet、PC/2in1、Wearable、TV中可正常使用。
@@ -266,20 +262,20 @@ export default class EntryAbility extends UIAbility {
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| temperature | number | 否 | 否 | 温度。 单位：℃。 |
-| apparentTemperature | number | 否 | 否 | 体感温度。 单位：℃。 |
-| humidity | number | 否 | 否 | 相对湿度。 例如湿度为30%，本字段返回30。 |
-| pressure | number | 否 | 否 | 地面气压。 单位：hPa。 |
-| pressureTrend | [PressureTrend](#pressuretrend) | 否 | 否 | 气压趋势。 |
-| wind | [Wind](#wind) | 否 | 否 | 风力风向。 |
-| cloudCover | number | 否 | 否 | 云量。 例如云量为30%，本字段返回30。 |
-| condition | [WeatherCondition](#weathercondition) | 否 | 否 | 天气现象。 |
-| uvIndex | [UVIndex](#uvindex) | 否 | 否 | 紫外线指数。 |
-| aqi | [WeatherAqi](#weatheraqi) | 否 | 是 | 空气质量。 |
-| visibility | number | 否 | 否 | 能见度。 单位：km。 |
-| updateTime | Date | 否 | 否 | 数据更新时间，UTC时间格式。 |
-| expirationTime | Date | 否 | 否 | 数据失效时间，UTC时间格式。 |
-| summary | string | 否 | 是 | 实况天气一句话描述。 |
+| temperature | number | 否 | 否 | 温度。 单位：℃。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| apparentTemperature | number | 否 | 否 | 体感温度。 单位：℃。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| humidity | number | 否 | 否 | 相对湿度。 例如湿度为30%，本字段返回30。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| pressure | number | 否 | 否 | 地面气压。 单位：hPa。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| pressureTrend | [PressureTrend](#pressuretrend) | 否 | 否 | 气压趋势。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| wind | [Wind](#wind) | 否 | 否 | 风力风向。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| cloudCover | number | 否 | 否 | 云量。 例如云量为30%，本字段返回30。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| condition | [WeatherCondition](#weathercondition) | 否 | 否 | 天气现象。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| uvIndex | [UVIndex](#uvindex) | 否 | 否 | 紫外线指数。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| aqi | [WeatherAqi](#weatheraqi) | 否 | 是 | 空气质量。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| visibility | number | 否 | 否 | 能见度。 单位：km。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| updateTime | Date | 否 | 否 | 数据更新时间，UTC时间格式。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| expirationTime | Date | 否 | 否 | 数据失效时间，UTC时间格式。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| summary | string | 否 | 是 | 实况天气一句话描述。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
 | alertTitle | string | 否 | 是 | 预警标题。 **元服务API：** 从版本6.1.0(23)开始，该接口支持在元服务中使用。 **起始版本：** 6.1.0(23) |
 
 #### Forecast
@@ -356,7 +352,7 @@ export default class EntryAbility extends UIAbility {
 | wind | [Wind](#wind) | 否 | 否 | 风力风向。 |
 | cloudCover | number | 否 | 否 | 云量。 例如云量为30%，本字段返回30。 |
 | condition | [WeatherCondition](#weathercondition) | 否 | 否 | 天气现象。 |
-| uvIndex | [UVIndex](#uvindex) | 否 | 否 | 紫外线等级。 |
+| uvIndex | [UVIndex](#uvindex) | 否 | 否 | 紫外线指数。 |
 | aqi | [WeatherAqi](#weatheraqi) | 否 | 是 | 空气质量。 |
 | visibility | number | 否 | 否 | 能见度。 单位：km。 |
 | precipitationProbability | number | 否 | 否 | 降水概率。 |
@@ -761,8 +757,6 @@ export default class EntryAbility extends UIAbility {
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从版本5.0.0(12)开始，该接口支持在元服务中使用。
-
 系统能力： SystemCapability.Weather.Core
 
 设备行为差异： 对于5.0.5(17)及之前版本，该接口在Phone、Tablet、PC/2in1中可正常使用，在其他设备类型中无法使用。对于5.1.0(18)及之后版本，该接口在Phone、Tablet、PC/2in1、Wearable中可正常使用。对于6.1.0(23)及之后版本，该接口在Phone、Tablet、PC/2in1、Wearable、TV中可正常使用。
@@ -771,13 +765,13 @@ export default class EntryAbility extends UIAbility {
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| CURRENT | 0 | 实况天气。 |
-| DAILY | 1 | 多日预报。 |
-| HOURLY | 2 | 逐小时预报。 |
-| MINUTE | 3 | 分钟级降水预报。 |
-| ALERTS | 4 | 天气预警。 |
-| INDICES | 5 | 天气指数。 |
-| TIDES | 6 | 潮汐。 |
+| CURRENT | 0 | 实况天气。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| DAILY | 1 | 多日预报。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| HOURLY | 2 | 逐小时预报。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| MINUTE | 3 | 分钟级降水预报。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| ALERTS | 4 | 天气预警。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| INDICES | 5 | 天气指数。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| TIDES | 6 | 潮汐。 **元服务API：** 从版本5.0.0(12)开始，该接口支持在元服务中使用。 |
 | CITY | 7 | 城市信息。 **元服务API：** 从版本6.1.0(23)开始，该接口支持在元服务中使用。 **起始版本：** 6.1.0(23) |
 
 #### PressureTrend

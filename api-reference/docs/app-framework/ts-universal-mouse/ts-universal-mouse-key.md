@@ -2,8 +2,8 @@
 title: "鼠标事件"
 upstream_id: "harmonyos-references/ts-universal-mouse-key"
 catalog: "harmonyos-references"
-content_hash: "d17823de24df"
-synced_at: "2026-07-09T00:57:35.625510"
+content_hash: "56aac73fa6af"
+synced_at: "2026-07-09T17:23:26.637435"
 ---
 
 # 鼠标事件
@@ -61,8 +61,8 @@ onMouse(event: (event: MouseEvent) => void): T
 | rawDeltaX15+ | number | 否 | 是 | 鼠标设备在二维平面X轴的移动增量。其数值为鼠标硬件的原始移动数据，使用物理世界中鼠标移动的距离单位进行表示。上报数值由硬件本身决定，并非屏幕的物理/逻辑像素。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | rawDeltaY15+ | number | 否 | 是 | 鼠标设备在二维平面Y轴的移动增量。其数值为鼠标硬件的原始移动数据，使用物理世界中鼠标移动的距离单位进行表示。上报数值由硬件本身决定，并非屏幕的物理/逻辑像素。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | pressedButtons15+ | MouseButton[] | 否 | 是 | 当前按下的鼠标按键集合。 **元服务API：** 从API version 15开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| globalDisplayX20+ | number | 否 | 是 | 鼠标位置在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的X坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
-| globalDisplayY20+ | number | 否 | 是 | 鼠标位置在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的Y坐标。 单位：vp 取值范围：[0, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| globalDisplayX20+ | number | 否 | 是 | 鼠标位置在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的X坐标。 单位：vp 取值范围：(-∞, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
+| globalDisplayY20+ | number | 否 | 是 | 鼠标位置在[全局坐标系](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/window-terminology#global-coordinate-system全局坐标系)中的Y坐标。 单位：vp 取值范围：(-∞, +∞) **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | eventHandleId24+ | number | 否 | 是 | 用于事件处理的唯一标识。 取值范围：[0, +∞) **说明：** 在使用[postInputEventWithStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode#postinputeventwithstrategy24)接口分发事件时会使用该字段，事件每分发一次字段会增加100000。 多次使用相同的eventHandleId进行事件分发将导致事件响应异常。仅在构造事件的时候需要对此字段赋值，其余情况开发者无需处理。 **元服务API：** 从API version 24开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 
 #### [h2]getCurrentLocalPosition
@@ -239,7 +239,7 @@ struct MouseEventExample {
 
 鼠标点击时：
 
-![](./img/zh-cn_image_0000002661732243.gif)
+![](./img/zh-cn_image_0000002633850358.gif)
 
 #### [h2]示例2（获取当前帧历史点）
 
@@ -318,4 +318,4 @@ struct GetCurrentLocalPositionExample {
 
 鼠标触发事件时：
 
-![](./img/zh-cn_image_0000002631253122.gif)
+![](./img/zh-cn_image_0000002634010262.gif)

@@ -2,8 +2,8 @@
 title: "Tabs"
 upstream_id: "harmonyos-references/ts-container-tabs"
 catalog: "harmonyos-references"
-content_hash: "72dada9c6a6f"
-synced_at: "2026-07-09T00:57:51.115872"
+content_hash: "6acb99a150f3"
+synced_at: "2026-07-09T17:23:45.864379"
 ---
 
 # Tabs
@@ -1372,7 +1372,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253350.gif)
+ ![](./img/zh-cn_image_0000002634010486.gif)
 
 #### [h2]示例2（设置Scrollable模式下的TabBar的布局样式）
 
@@ -1489,7 +1489,7 @@ struct TabsExample6 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612533.gif)
+ ![](./img/zh-cn_image_0000002664209635.gif)
 
 #### [h2]示例3（自定义页签切换联动）
 
@@ -1565,7 +1565,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413242.gif)
+ ![](./img/zh-cn_image_0000002664329695.gif)
 
 #### [h2]示例4（分割线基本属性）
 
@@ -1674,7 +1674,7 @@ struct TabsDivider1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732473.gif)
+ ![](./img/zh-cn_image_0000002633850584.gif)
 
 #### [h2]示例5（设置TabBar渐隐）
 
@@ -1786,7 +1786,7 @@ struct TabsOpaque {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253352.gif)
+ ![](./img/zh-cn_image_0000002634010488.gif)
 
 #### [h2]示例6（设置TabBar叠加在TabContent内容上）
 
@@ -1837,7 +1837,7 @@ struct barHeightTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612535.gif)
+ ![](./img/zh-cn_image_0000002664209637.gif)
 
 #### [h2]示例7（设置TabBar栅格化可见区域）
 
@@ -1940,7 +1940,7 @@ struct TabsExample5 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413244.gif)
+ ![](./img/zh-cn_image_0000002664329697.gif)
 
 #### [h2]示例8（自定义Tabs页面切换动画）
 
@@ -2029,7 +2029,7 @@ struct TabsCustomAnimationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732475.gif)
+ ![](./img/zh-cn_image_0000002633850586.gif)
 
 #### [h2]示例9（页面切换拦截）
 
@@ -2120,7 +2120,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253354.gif)
+ ![](./img/zh-cn_image_0000002634010490.gif)
 
 #### [h2]示例10（自定义TabBar切换动画）
 
@@ -2290,7 +2290,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612537.gif)
+ ![](./img/zh-cn_image_0000002664209639.gif)
 
 #### [h2]示例11（预加载子节点）
 
@@ -2418,7 +2418,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413246.gif)
+ ![](./img/zh-cn_image_0000002664329699.gif)
 
 #### [h2]示例13（页面懒加载和释放）
 
@@ -2525,7 +2525,7 @@ struct TabsSwiperExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732477.gif)
+ ![](./img/zh-cn_image_0000002633850588.gif)
 
 #### [h2]示例14（设置翻页动效）
 
@@ -2548,8 +2548,8 @@ struct TabsExample {
   }
 
   @Builder
-  tabBuilder(title: string,targetIndex: number) {
-    Column(){
+  tabBuilder(title: string, targetIndex: number) {
+    Column() {
       Text(title).fontColor(this.currentIndex === targetIndex ? '#FF0000' : '#6B6B6B')
     }.width('100%')
     .height(50)
@@ -2561,11 +2561,11 @@ struct TabsExample {
       Tabs({ barPosition: BarPosition.End, controller: this.controller, index: this.currentIndex }) {
         ForEach(this.data, (item: number) => {
           TabContent() {
-            Column(){
+            Column() {
               Text('' + item)
             }.width('100%').height('100%').backgroundColor('#00CB87').justifyContent(FlexAlign.Center)
-          }.tabBar(this.tabBuilder('P' + item, parseInt(item)))
-        }, (item: string) => item)
+          }.tabBar(this.tabBuilder('P' + item, item))
+        }, (item: number) => item.toString())
       }
       .barWidth(360)
       .barHeight(60)
@@ -2581,7 +2581,7 @@ struct TabsExample {
       Text('AnimationMode:' + AnimationMode[this.currentAnimationMode])
 
       Button('AnimationMode').width('50%').margin({ top: 1 }).height(25)
-        .onClick(()=>{
+        .onClick(() => {
           if (this.currentAnimationMode === AnimationMode.CONTENT_FIRST) {
             this.currentAnimationMode = AnimationMode.ACTION_FIRST;
           } else if (this.currentAnimationMode === AnimationMode.ACTION_FIRST) {
@@ -2598,7 +2598,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253356.gif)
+ ![](./img/zh-cn_image_0000002634010492.gif)
 
 #### [h2]示例15（页签超出TabBar区域显示）
 
@@ -2689,7 +2689,7 @@ struct TabsBarModifierExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612539.gif)
+ ![](./img/zh-cn_image_0000002664209641.gif)
 
 #### [h2]示例16（页签对齐布局）
 
@@ -2793,7 +2793,7 @@ struct TabsBarModifierExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413248.gif)
+ ![](./img/zh-cn_image_0000002664329701.gif)
 
 #### [h2]示例17（Tabs与TabBar同步切换）
 
@@ -2870,7 +2870,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732479.gif)
+ ![](./img/zh-cn_image_0000002633850590.gif)
 
 #### [h2]示例18（释放Tabs子组件）
 
@@ -2997,7 +2997,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253358.png)
+ ![](./img/zh-cn_image_0000002634010494.png)
 
 #### [h2]示例20（设置边缘滑动效果）
 
@@ -3053,7 +3053,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612541.gif)
+ ![](./img/zh-cn_image_0000002664209643.gif)
 
 #### [h2]示例21（Tabs设置翻页动画曲线）
 
@@ -3144,7 +3144,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413250.gif)
+ ![](./img/zh-cn_image_0000002664329703.gif)
 
 #### [h2]示例22（监听Tabs页面滑动事件）
 
@@ -3244,7 +3244,7 @@ struct TabsDidScrollExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732481.gif)
+ ![](./img/zh-cn_image_0000002633850592.gif)
 
 #### [h2]示例23（Tabs嵌套滚动）
 
@@ -3310,7 +3310,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253360.gif)
+ ![](./img/zh-cn_image_0000002634010496.gif)
 
 #### [h2]示例24（TabBar悬浮样式）
 
@@ -3361,4 +3361,4 @@ struct TabsFloatingStyleExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612543.gif)
+ ![](./img/zh-cn_image_0000002664209645.gif)

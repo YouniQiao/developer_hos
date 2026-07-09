@@ -2,8 +2,8 @@
 title: "输入框类组件通用接口"
 upstream_id: "harmonyos-references/ts-universal-attributes-text-style"
 catalog: "harmonyos-references"
-content_hash: "e78d18142d5f"
-synced_at: "2026-07-09T00:57:59.028570"
+content_hash: "c4a06758c02d"
+synced_at: "2026-07-09T17:24:07.849479"
 ---
 
 # 输入框类组件通用接口
@@ -76,7 +76,7 @@ getCaretOffset(): CaretOffset
 - 在Search组件中，返回的位置信息是相对Search组件中搜索图标的偏移值。
 - 在Search组件中，不输入文本时，返回值中有相对Search组件的位置信息。
 - 返回值中的位置信息是光标相对于可编辑组件的位置。
-- 当无法获取光标位置时（例如[TextInputController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput#textinputcontroller8)未与[TextInput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput)组件绑定时），该接口返回null。
+- 当无法获取光标位置时（例如[TextInputController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput#textinputcontroller8)未与[TextInput](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textinput)组件绑定时），该接口返回undefined。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 

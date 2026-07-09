@@ -2,8 +2,8 @@
 title: "HdsSideBar"
 upstream_id: "harmonyos-references/ui-design-hdssidebar"
 catalog: "harmonyos-references"
-content_hash: "588d33d2f61f"
-synced_at: "2026-07-09T00:59:09.312267"
+content_hash: "df5fa1cf8712"
+synced_at: "2026-07-09T17:25:57.532759"
 ---
 
 # HdsSideBar
@@ -53,7 +53,7 @@ HdsSideBar({contentAreaMask?: boolean, isShowSideBar?: boolean, $isShowSideBar?:
 | scaleContentEnabled | boolean | 否 | @Param | 设置侧边栏展开内容区是否为缩放样式。 true：侧边栏展开内容区为缩放样式。 false：侧边栏展开内容区为平移样式。 默认值：true。 **起始版本**：6.1.0(23) |
 | swipeEnabled | boolean | 否 | @Param | 设置侧边栏抽屉是否可跟随滑动手势展开关闭。 true：侧边栏抽屉跟随滑动手势展开关闭。 false：侧边栏抽屉不跟随滑动手势展开关闭。 默认值：false。 **起始版本**：6.1.0(23) **说明**： swipeEnabled仅在平移场景下（scaleContentEnabled为false）生效，其他场景下不支持侧滑手势。 |
 
-#### build
+#### [h2]build
 
 build(): void
 
@@ -134,4 +134,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613411.gif)
+ ![](./img/zh-cn_image_0000002664330565.gif)

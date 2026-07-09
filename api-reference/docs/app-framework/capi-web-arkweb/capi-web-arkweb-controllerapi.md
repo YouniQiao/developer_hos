@@ -2,8 +2,8 @@
 title: "ArkWeb_ControllerAPI"
 upstream_id: "harmonyos-references/capi-web-arkweb-controllerapi"
 catalog: "harmonyos-references"
-content_hash: "3ccd3e4ae479"
-synced_at: "2026-07-09T00:58:56.205929"
+content_hash: "72a58c4ee41f"
+synced_at: "2026-07-09T17:25:41.749892"
 ---
 
 # ArkWeb_ControllerAPI
@@ -164,7 +164,7 @@ void (*destroyWebMessagePorts)(ArkWeb_WebMessagePortPtr** ports, size_t size)
 
 | 参数项 | 描述 |
 | --- | --- |
-| [ArkWeb_WebMessagePortPtr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-web-arkweb-webmessageport8h)** ports | 发送Message端口结构体指针数组。 |
+| [ArkWeb_WebMessagePortPtr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-web-arkweb-webmessageport8h)** ports | Post Message端口结构体指针数组。 |
 | size_t size | 端口数量。 |
 
 #### [h2]postWebMessage()

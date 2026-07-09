@@ -2,8 +2,8 @@
 title: "ArcButton"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-arcbutton"
 catalog: "harmonyos-references"
-content_hash: "35ad0bc6de4c"
-synced_at: "2026-07-09T00:57:55.033631"
+content_hash: "54ec93ced32b"
+synced_at: "2026-07-09T17:23:50.209260"
 ---
 
 # ArcButton
@@ -62,8 +62,6 @@ ArcButton({ options: ArcButtonOptions })
 定义ArcButton的默认样式或自定义样式参数。
 
 系统能力： SystemCapability.ArkUI.ArkUI.Circle
-
-#### [h2]属性
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
@@ -274,7 +272,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732531.jpg)
+ ![](./img/zh-cn_image_0000002633850640.jpg)
 
 #### [h2]示例2 (设置设备进度条按钮)
 
@@ -365,4 +363,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253410.jpg)
+ ![](./img/zh-cn_image_0000002634010544.jpg)

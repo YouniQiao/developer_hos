@@ -2,8 +2,8 @@
 title: "BusinessRiskIntelligentDetection（业务风险检测）"
 upstream_id: "harmonyos-references/errorcode-devicesecurity-brid"
 catalog: "harmonyos-references"
-content_hash: "6e7bdacaef46"
-synced_at: "2026-07-09T00:59:15.643639"
+content_hash: "80e227c6fac4"
+synced_at: "2026-07-09T17:26:07.831918"
 ---
 
 # BusinessRiskIntelligentDetection（业务风险检测）
@@ -64,7 +64,7 @@ Access cloud server fail.
 
 重新发起请求。
 
-#### 1012500004 权限校验失败
+#### 1012500004 校验capability失败
 
 错误信息
 
@@ -72,15 +72,15 @@ Verify cloud capability fail.
 
 错误描述
 
-权限校验失败。
+校验capability失败。
 
 可能原因
 
-应用hap未开通Device Security服务。
+应用未开通业务风险检测相应服务。
 
 处理步骤
 
-参考[开通Device Security服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-deviceverify-activateservice)在AppGallery Connect开通Device Security服务，开通Device Security服务后重试。
+参考[开通Device Security服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/devicesecurity-deviceverify-activateservice)在AppGallery Connect开通Device Security服务中的业务风险检测相应服务，开通后重试。
 
 #### 1012500005 API调用次数超过限制
 

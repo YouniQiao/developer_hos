@@ -2,8 +2,8 @@
 title: "SymbolGlyph"
 upstream_id: "harmonyos-references/ts-basic-components-symbolglyph"
 catalog: "harmonyos-references"
-content_hash: "2a7b69124a05"
-synced_at: "2026-07-09T00:57:58.209366"
+content_hash: "a34eb5a706b9"
+synced_at: "2026-07-09T17:24:06.141967"
 ---
 
 # SymbolGlyph
@@ -151,7 +151,7 @@ renderingStrategy(value: SymbolRenderingStrategy)
 
 不同渲染策略效果可参考以下示意图。
 
-![](./img/zh-cn_image_0000002661732625.png)
+![](./img/zh-cn_image_0000002633850732.png)
 
 #### [h2]effectStrategy
 
@@ -710,7 +710,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413398.gif)
+ ![](./img/zh-cn_image_0000002664329845.gif)
 
 #### [h2]示例2（设置动效和阴影）
 
@@ -813,7 +813,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732627.gif)
+ ![](./img/zh-cn_image_0000002633850734.gif)
 
 #### [h2]示例3（设置颜色渐变）
 
@@ -823,7 +823,6 @@ struct Index {
 @Entry
 @Component
 struct Index {
-  @State message: string = 'Hello World';
 
   linearGradientOptions1: LinearGradientOptions = {
     angle: 45,
@@ -953,7 +952,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253506.jpeg)
+ ![](./img/zh-cn_image_0000002634010638.jpeg)
 
 #### [h2]示例4（设置SymbolGlyph颜色）
 
@@ -1003,4 +1002,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612689.jpeg)
+ ![](./img/zh-cn_image_0000002664209787.jpeg)

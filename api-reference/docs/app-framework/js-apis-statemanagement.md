@@ -2,8 +2,8 @@
 title: "@ohos.arkui.StateManagement (状态管理)"
 upstream_id: "harmonyos-references/js-apis-statemanagement"
 catalog: "harmonyos-references"
-content_hash: "18a48641287d"
-synced_at: "2026-07-09T00:57:31.149991"
+content_hash: "b5cb871e634a"
+synced_at: "2026-07-09T17:23:21.516538"
 ---
 
 # @ohos.arkui.StateManagement (状态管理)
@@ -174,7 +174,7 @@ static globalConnect<T extends object>(type: ConnectOptions<T>): T | undefined
 | --- | --- |
 | T | undefined | 创建或获取数据成功时，返回数据；否则返回undefined。 |
 
-![](./img/note_3.0-zh-cn.png) 1、若未指定key，使用第二个参数作为默认构造器；否则使用第三个参数作为默认构造器（第二个参数非法也使用第三个参数作为默认构造器）。
+![](./img/note_3.0-zh-cn.png) 1、若未指定key，使用默认构造器defaultCreator返回数据的类名作为key存入PersistenceV2中。
 
 2、确保数据已经存储在PersistenceV2中，可省略默认构造器，获取存储的数据；否则必须指定默认构造器，不指定将导致应用异常。
 

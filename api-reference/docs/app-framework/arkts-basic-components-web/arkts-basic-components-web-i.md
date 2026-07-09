@@ -2,8 +2,8 @@
 title: "Interfaces（其他）"
 upstream_id: "harmonyos-references/arkts-basic-components-web-i"
 catalog: "harmonyos-references"
-content_hash: "c1979cb4e696"
-synced_at: "2026-07-09T00:58:55.440894"
+content_hash: "895036c897e9"
+synced_at: "2026-07-09T17:25:39.981372"
 ---
 
 # Interfaces（其他）
@@ -24,7 +24,7 @@ synced_at: "2026-07-09T00:58:55.440894"
 | src | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 否 | 网页资源地址。如果访问本地资源文件，请使用$rawfile或者resource协议。如果加载应用包外沙箱路径的本地资源文件（文件支持html和txt类型），请使用file://沙箱文件路径。 src不能通过状态变量（例如：@State）动态更改地址，如需更改，请通过[loadUrl()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller#loadurl)重新加载。 |
 | controller | [WebController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webcontroller) | WebviewController | 否 | 否 | 控制器，通过controller可以控制Web组件各种行为（包括页面导航、生命周期状态、JavaScript交互等行为）。从API version 9开始，WebController不再维护，建议使用[WebviewController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-t#webviewcontroller9)替代。 |
 | renderMode12+ | [RenderMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-e#rendermode12) | 否 | 是 | 表示当前Web组件的渲染方式，RenderMode.ASYNC_RENDER表示Web组件异步渲染，RenderMode.SYNC_RENDER表示支持Web组件同步渲染能力，默认值RenderMode.ASYNC_RENDER，该模式不支持动态调整。 |
-| incognitoMode11+ | boolean | 否 | 是 | 表示当前创建的webview是否是隐私模式。true表示创建隐私模式的webview，false表示创建正常模式的webview。 默认值：false。 传入undefined或null时为false。 |
+| incognitoMode11+ | boolean | 否 | 是 | 表示当前创建的webview是否是隐私模式。true表示创建隐私模式的webview，false表示创建正常模式的webview。 默认值：false。 传入undefined或null时为false。 注：在可穿戴设备上，该参数不生效。即便显式传入true，系统实际创建的仍为非隐私模式的webview。 |
 | sharedRenderProcessToken12+ | string | 否 | 是 | 表示当前Web组件指定共享渲染进程的token，多渲染进程模式下，相同token的Web组件会优先尝试复用与token相绑定的渲染进程。token与渲染进程的绑定发生在渲染进程的初始化阶段。当渲染进程没有关联的Web组件时，其与token绑定关系将被移除。 默认值： ""。 |
 | emulateTouchFromMouseEvent22+ | boolean | 否 | 是 | 设定鼠标事件是否被转换成触摸事件。 默认值：false。 |
 
@@ -38,7 +38,7 @@ Web媒体策略的配置。
 | --- | --- | --- | --- | --- |
 | resumeInterval | number | 否 | 是 | 被其他应用暂停的Web音视频能够自动续播的有效期，单位：秒。取值范围：[-2147483648, 2147483647]。resumeInterval值为0时，不自动续播；大于0时，将在该时间内尝试续播；小于0时，将在无限时间内尝试续播。由于近似值原因，该有效期可能存在一秒内的误差。 **说明：** HLS视频被打断后，回到前台将自动续播，不受该时间控制。 |
 | audioExclusive | boolean | 否 | 是 | 应用内多个Web实例的音频是否独占。 true表示应用内多个Web实例的音频独占，false表示应用内多个Web实例的音频不独占。 默认值：true。 |
-| audioSessionType20+ | [AudioSessionType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-e#audiosessiontype20) | 否 | 是 | 应用中Web音频类型。默认值对应[系统音频流类型](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)STREAM_USAGE_MUSIC。设置该参数会改变组件音频类型与系统音频类型映射关系，进而影响ArkWeb音频焦点策略。 |
+| audioSessionType20+ | [AudioSessionType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-e#audiosessiontype20) | 否 | 是 | 应用中Web音频类型。默认值对应系统音频流类型[StreamUsage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-audio-e#streamusage)中的STREAM_USAGE_MUSIC。设置该参数会改变组件音频类型与系统音频类型映射关系，进而影响ArkWeb音频焦点策略。 |
 
 #### ScriptItem11+
 
@@ -80,7 +80,7 @@ Web媒体策略的配置。
 
 #### NativeMediaPlayerConfig12+
 
-用于[开启应用接管网页媒体播放功能](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-attributes#enablenativemediaplayer12)的配置信息。
+用于配置应用接管网页媒体播放功能接口[enableNativeMediaPlayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-attributes#enablenativemediaplayer12)的信息。
 
 系统能力： SystemCapability.Web.Webview.Core
 
@@ -566,7 +566,7 @@ Web同层渲染的配置。
 | object | object | 否 | 否 | 参与注册的对象。只能声明方法，不能声明属性。 |
 | name | string | 否 | 否 | 注册对象的名称，与window中调用的对象名一致。 |
 | methodList | Array | 否 | 否 | 参与注册的应用侧JavaScript对象的同步方法。 |
-| controller | [WebController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webcontroller) | [WebviewController9+](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller) | 否 | 否 | 控制器。从API version 9开始，WebController不再维护，建议使用WebviewController替代。 |
+| controller | [WebController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-basic-components-web-webcontroller) | [WebviewController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-webview-webviewcontroller) | 否 | 否 | 控制器。从API version 9开始，WebController不再维护，建议使用WebviewController替代。 |
 | asyncMethodList12+ | Array | 否 | 是 | 参与注册的应用侧JavaScript对象的异步方法。异步方法无法获取返回值。 |
 | permission12+ | string | 否 | 是 | json字符串，默认为空，通过该字符串配置JSBridge的权限管控，可以定义object、method一级的url白名单。 JavaScriptProxy的permission参数支持resource/http/https协议，不支持file协议。 示例请参考[前端页面调用应用侧函数](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/web-in-page-app-function-invoking)。 |
 

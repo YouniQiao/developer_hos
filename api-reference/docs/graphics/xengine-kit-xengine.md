@@ -2,8 +2,8 @@
 title: "XEngine"
 upstream_id: "harmonyos-references/xengine-kit-xengine"
 catalog: "harmonyos-references"
-content_hash: "4e02cb70e0d7"
-synced_at: "2026-07-09T01:01:09.885932"
+content_hash: "0ffbeb69682a"
+synced_at: "2026-07-09T17:27:55.466403"
 ---
 
 # XEngine
@@ -25,7 +25,7 @@ synced_at: "2026-07-09T01:01:09.885932"
 | [xeg_extension_defs.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xeg-extension-defs-8h) | 提供XEngine扩展特性宏定义信息。 |
 | [xeg_gles_adaptive_vrs.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xeg-gles-adaptive-vrs-8h) | XEngine自适应VRS（Variable Rate Shading，可变速率着色）特性GLES接口。使用此头文件的接口前需要通过[HMS_XEG_GetString](#hms_xeg_getstring)接口查询[XEG_ADAPTIVE_VRS_EXTENSION_NAME](#xeg_adaptive_vrs_extension_name)扩展可用。 |
 | [xeg_gles_extension.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xeg-gles-extension-8h) | XEngine扩展特性查询接口（OpenGL ES）。 |
-| [xeg_gles_neural_upscale.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xeg-gles-neural-upscale-8h) | XEngine空域AI超分特性OpenGL ES接口。使用此头文件中的接口前需要通过[HMS_XEG_GetString](#hms_xeg_getstring)接口查询[XEG_NEURAL_UPSCALE_EXTENSION_NAME](#xeg_neural_upscale_extension_name)或者[XEG_NEURAL_UPSCALE2_EXTENSION_NAME](#xeg_neural_upscale2_extension_name)扩展可用。[XEG_NEURAL_UPSCALE_EXTENSION_NAME](#xeg_neural_upscale_extension_name)扩展可用时，推荐超分倍率为(1.0, 1.5]。[XEG_NEURAL_UPSCALE2_EXTENSION_NAME](#xeg_neural_upscale2_extension_name)扩展可用时，推荐超分倍率为(1.0, 2.0]。 |
+| [xeg_gles_neural_upscale.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xeg-gles-neural-upscale-8h) | XEngine空域AI超分特性OpenGL ES接口，推荐超分倍率为[1.0, 1.5]。使用此头文件中的接口前需要通过[HMS_XEG_GetString](#hms_xeg_getstring)接口查询[XEG_NEURAL_UPSCALE_EXTENSION_NAME](#xeg_neural_upscale_extension_name)扩展可用。 |
 | [xeg_gles_spatial_upscale.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xeg-gles-spatial-upscale-8h) | XEngine空域GPU超分特性OpenGL ES接口。使用此头文件的接口前需要通过[HMS_XEG_GetString](#hms_xeg_getstring)接口查询[XEG_SPATIAL_UPSCALE_EXTENSION_NAME](#xeg_spatial_upscale_extension_name)扩展可用。 |
 | [xeg_gles_temporal_upscale.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xeg-gles-temporal-upscale-8h) | XEngine时域AI超分特性OpenGL ES接口。推荐超分倍率为[1.25, 2.0]，使用此头文件中的接口前需要通过[HMS_XEG_GetString](#hms_xeg_getstring)接口查询[XEG_TEMPORAL_UPSCALE_EXTENSION_NAME](#xeg_temporal_upscale_extension_name)扩展可用。 |
 | [xeg_vulkan_adaptive_vrs.h](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/xengine-kit-xeg-vulkan-adaptive-vrs-8h) | XEngine自适应VRS（Variable Rate Shading，可变速率着色）特性vulkan接口。使用此头文件的接口前需要通过[HMS_XEG_EnumerateDeviceExtensionProperties](#hms_xeg_enumeratedeviceextensionproperties)接口查询[XEG_ADAPTIVE_VRS_EXTENSION_NAME](#xeg_adaptive_vrs_extension_name)扩展可用。 |
@@ -79,7 +79,6 @@ synced_at: "2026-07-09T01:01:09.885932"
 | [XEG_neural_upscale](#xeg_neural_upscale) 1 | XEngine空域AI超分扩展特性宏定义。 |
 | [XEG_NEURAL_UPSCALE_VERSION](#xeg_neural_upscale_version) 1 | XEngine空域AI超分扩展特性版本号。 |
 | [XEG_NEURAL_UPSCALE_EXTENSION_NAME](#xeg_neural_upscale_extension_name) "XEG_neural_upscale" | XEngine空域AI超分扩展特性名称。 |
-| [XEG_NEURAL_UPSCALE2_EXTENSION_NAME](#xeg_neural_upscale2_extension_name) "XEG_neural_upscale2" | XEngine空域AI超分（版本2）扩展特性名称。 |
 | [XEG_temporal_upscale](#xeg_temporal_upscale) 1 | XEngine时域AI超分扩展特性宏定义。 |
 | [XEG_TEMPORAL_UPSCALE_VERSION](#xeg_temporal_upscale_version) 1 | XEngine时域AI超分扩展特性版本号。 |
 | [XEG_TEMPORAL_UPSCALE_EXTENSION_NAME](#xeg_temporal_upscale_extension_name) "XEG_temporal_upscale" | XEngine时域AI超分扩展特性名称。 |
@@ -389,17 +388,6 @@ XEngine空域AI超分扩展特性名称。
 
 起始版本： 5.0.0(12)
 
-#### [h2]XEG_NEURAL_UPSCALE2_EXTENSION_NAME
-
-```
-#define XEG_NEURAL_UPSCALE2_EXTENSION_NAME   "XEG_neural_upscale2"
-```
- 描述
-
-XEngine空域AI超分（版本2）扩展特性名称。
-
-起始版本： 26.0.0
-
 #### [h2]XEG_NEURAL_UPSCALE_INPUT_HANDLE
 
 ```
@@ -409,11 +397,7 @@ XEngine空域AI超分（版本2）扩展特性名称。
 
 用于通过[HMS_XEG_NeuralUpscaleParameter](#hms_xeg_neuralupscaleparameter)接口设置与超分输入纹理关联的[OH_NativeBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer) handle。
 
-使用此宏定义设置超分输入参数时，向接口传递的param值必须是与向[HMS_XEG_RenderNeuralUpscale](#hms_xeg_renderneuralupscale)接口传递的inputTexture纹理参数对应的合法的[OH_NativeBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer) handle，否则将产生未定义行为，如渲染效果不正确或者程序崩溃。
-
-[XEG_NEURAL_UPSCALE_EXTENSION_NAME](#xeg_neural_upscale_extension_name)扩展可用时，该参数为必选参数。
-
-[XEG_NEURAL_UPSCALE2_EXTENSION_NAME](#xeg_neural_upscale2_extension_name)扩展可用时，不需要设置该参数。
+使用此宏定义设置超分输入参数时，向接口传递的param值必须是与向[HMS_XEG_RenderNeuralUpscale](#hms_xeg_renderneuralupscale)接口传递的inputTexture纹理参数对应的合法的[OH_NativeBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer) handle，否则将产生未定义行为，如渲染效果不正确或者程序崩溃。必选参数。
 
 起始版本： 5.0.0(12)
 
@@ -1290,7 +1274,7 @@ typedef void(GL_APIENTRYP PFN_HMS_XEG_RENDERNEURALUPSCALE) (GLuint inputTexture)
 
 | 名称 | 描述 |
 | --- | --- |
-| inputTexture | 超分输入纹理，输入纹理是GL_TEXTURE_2D类型且mipLevels为1。[XEG_NEURAL_UPSCALE_EXTENSION_NAME](#xeg_neural_upscale_extension_name)扩展可用时，纹理的宽度取值范围是[448, 1728]，否则可能会引起AI推理结果错误。此输入纹理必须是由[OH_NativeBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer)创建的，并需要在调用此接口前将[OH_NativeBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer)对应的handle设置为超分的输入参数，详见接口[HMS_XEG_NeuralUpscaleParameter](#hms_xeg_neuralupscaleparameter)。[XEG_NEURAL_UPSCALE2_EXTENSION_NAME](#xeg_neural_upscale2_extension_name)扩展可用时，纹理的宽度取值范围建议[448, 1792]，此输入纹理不需要由OH_NativeBuffer创建。 |
+| inputTexture | 超分输入纹理，输入纹理是GL_TEXTURE_2D类型且mipLevels为1，纹理的宽度取值范围是[448, 1728]，单位为像素，否则可能会引起AI推理结果错误。此输入纹理必须是由[OH_NativeBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer)创建的，并需要在调用此接口前将[OH_NativeBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer)对应的handle设置为超分的输入参数，详见接口[HMS_XEG_NeuralUpscaleParameter](#hms_xeg_neuralupscaleparameter)。 |
 
 #### [h2]PFN_HMS_XEG_RENDERSPATIALUPSCALE
 
@@ -2476,7 +2460,7 @@ GL_APICALL void GL_APIENTRY HMS_XEG_RenderNeuralUpscale (GLuint inputTexture)
 
 | 名称 | 描述 |
 | --- | --- |
-| inputTexture | 超分输入纹理，输入纹理是GL_TEXTURE_2D类型且mipLevels为1。[XEG_NEURAL_UPSCALE_EXTENSION_NAME](#xeg_neural_upscale_extension_name)扩展可用时，纹理的宽度取值范围是[448, 1728]，否则可能会引起AI推理结果错误。此输入纹理必须是由[OH_NativeBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer)创建的，并需要在调用此接口前将[OH_NativeBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer)对应的handle设置为超分的输入参数，详见接口[HMS_XEG_NeuralUpscaleParameter](#hms_xeg_neuralupscaleparameter)。[XEG_NEURAL_UPSCALE2_EXTENSION_NAME](#xeg_neural_upscale2_extension_name)扩展可用时，纹理的宽度取值范围建议[448, 1792]，此输入纹理不需要由OH_NativeBuffer创建。 |
+| inputTexture | 超分输入纹理，输入纹理是GL_TEXTURE_2D类型且mipLevels为1，纹理的宽度取值范围是[448, 1728]，单位为像素，否则可能会引起AI推理结果错误。此输入纹理必须是由[OH_NativeBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer)创建的，并需要在调用此接口前将[OH_NativeBuffer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-oh-nativebuffer)对应的handle设置为超分的输入参数，详见接口[HMS_XEG_NeuralUpscaleParameter](#hms_xeg_neuralupscaleparameter)。 |
 
 #### [h2]HMS_XEG_RenderSpatialUpscale()
 

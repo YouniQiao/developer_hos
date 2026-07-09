@@ -2,8 +2,8 @@
 title: "network_boost.h"
 upstream_id: "harmonyos-references/network-boost-c-files-boost"
 catalog: "harmonyos-references"
-content_hash: "8921ef0f29df"
-synced_at: "2026-07-09T00:59:32.207466"
+content_hash: "f1ece1d60ce8"
+synced_at: "2026-07-09T17:26:28.469695"
 ---
 
 # network_boost.h
@@ -34,7 +34,7 @@ synced_at: "2026-07-09T00:59:32.207466"
 
 | 名称 | 描述 |
 | --- | --- |
-| struct [NetworkBoost_SceneEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/network-boost-c-overview#networkboost_sceneevent){ NB_SCENE_EVENT_ENTER = 0, NB_SCENE_EVENT_UPDATE = 1, NB_SCENE_EVENT_LEAVE = 2 } | 业务事件枚举。 |
+| [NetworkBoost_SceneEvent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/network-boost-c-overview#networkboost_sceneevent){ NB_SCENE_EVENT_ENTER = 0, NB_SCENE_EVENT_UPDATE = 1, NB_SCENE_EVENT_LEAVE = 2 } | 业务事件枚举。 |
 
 #### 函数
 

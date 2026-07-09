@@ -2,8 +2,8 @@
 title: "图像效果"
 upstream_id: "harmonyos-references/ts-universal-attributes-image-effect"
 catalog: "harmonyos-references"
-content_hash: "d8c04c9dc01b"
-synced_at: "2026-07-09T00:57:40.095023"
+content_hash: "3ad3e3ccfc60"
+synced_at: "2026-07-09T17:23:35.408484"
 ---
 
 # 图像效果
@@ -975,7 +975,7 @@ systemBarEffect(): T
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| radius | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 否 | 阴影模糊半径。 取值范围：[0, +∞)，API版本26.0.0开始取值范围变更为(-∞, +∞) 单位：px **说明：** API版本26.0.0之前，设置小于0的值时，按值为0处理。从API版本26.0.0开始，设置的值即为最终取值，当设置负数值时阴影消失。 如需使用vp单位的数值可用[vp2px](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#vp2px12)进行转换。 如果radius为Resource类型，则传入的值需为number类型。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
+| radius | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 否 | 阴影模糊半径。 取值范围：[0, +∞)，API版本26.0.0开始取值范围变更为(-∞, +∞) 单位：px **说明：** API版本26.0.0之前，设置小于0的值时，按值为0处理，此时不绘制阴影；从API版本26.0.0开始，设置的值即为最终取值，值为0时仍绘制阴影，设置负数值时不绘制阴影。 如需使用vp单位的数值可用[vp2px](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#vp2px12)进行转换。 如果radius为Resource类型，则传入的值需为number类型。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
 | type10+ | [ShadowType](#shadowtype10枚举说明) | 否 | 是 | 阴影类型。 默认值：COLOR **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **模型约束：** 此接口仅可在Stage模型下使用。 |
 | color | [Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#color) | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource)| [ColoringStrategy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#coloringstrategy10)11+ | 否 | 是 | 阴影的颜色。 默认为黑色。 **说明：** 从API version 11开始，该接口支持使用ColoringStrategy实现智能取色，智能取色功能不支持在ArkTS卡片、[textShadow](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-text#textshadow10)中使用。 当前仅支持平均取色和主色取色，智能取色区域为shadow绘制区域。 支持使用'average'字符串触发智能平均取色模式，支持使用'primary'字符串触发智能主色模式。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
 | offsetX | number | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 阴影的X轴偏移量。 默认值：0 单位：px **说明：** 如需使用vp单位的数值可用[vp2px](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-uicontext-uicontext#vp2px12)进行转换。 如果offsetX为Resource类型，则传入的值需为number类型。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。 |
@@ -1313,7 +1313,7 @@ struct ImageEffectsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413066.png)
+ ![](./img/zh-cn_image_0000002664329519.png)
 
 #### [h2]示例2（设置组件线性渐变模糊效果）
 
@@ -1342,7 +1342,7 @@ struct ImageExample1 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732295.png)
+ ![](./img/zh-cn_image_0000002633850408.png)
 
 #### [h2]示例3（设置离屏渲染效果）
 
@@ -1394,7 +1394,7 @@ struct RenderGroupExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253174.png)
+ ![](./img/zh-cn_image_0000002634010312.png)
 
 #### [h2]示例4（当前组件内容与下方画布内容混合）
 
@@ -1436,7 +1436,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612357.png)
+ ![](./img/zh-cn_image_0000002664209461.png)
 
 #### [h2]示例5（前景智能取反色）
 
@@ -1475,7 +1475,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413068.png)
+ ![](./img/zh-cn_image_0000002664329521.png)
 
 #### [h2]示例6（设置同层阴影不重叠效果）
 
@@ -1570,7 +1570,7 @@ struct UseShadowBatchingExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732297.png)
+ ![](./img/zh-cn_image_0000002633850410.png)
 
 #### [h2]示例7（设置组件图像球面效果）
 
@@ -1602,11 +1602,11 @@ struct SphericalEffectExample {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002631253176.png)
+![](./img/zh-cn_image_0000002634010314.png)
 
 去掉sphericalEffect的设置，效果如下：
 
-![](./img/zh-cn_image_0000002661612359.png)
+![](./img/zh-cn_image_0000002664209463.png)
 
 #### [h2]示例8（设置组件图像渐亮效果）
 
@@ -1632,15 +1632,15 @@ struct LightUpExample {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002631413070.png)
+![](./img/zh-cn_image_0000002664329523.png)
 
 修改lightUpEffect参数值为0.2：
 
-![](./img/zh-cn_image_0000002661732299.png)
+![](./img/zh-cn_image_0000002633850412.png)
 
 去掉lightUpEffect的设置，效果如下：
 
-![](./img/zh-cn_image_0000002631253178.png)
+![](./img/zh-cn_image_0000002634010316.png)
 
 #### [h2]示例9（设置组件图像边缘像素扩展效果）
 
@@ -1672,11 +1672,11 @@ struct PixelStretchExample {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002661612361.png)
+![](./img/zh-cn_image_0000002664209465.png)
 
 去掉pixelStretchEffect的设置，原图效果如下：
 
-![](./img/zh-cn_image_0000002631413072.png)
+![](./img/zh-cn_image_0000002664329525.png)
 
 #### [h2]示例10（系统导航条智能反色）
 
@@ -1705,4 +1705,4 @@ struct Index {
 ```
  效果图如下：
 
-![](./img/zh-cn_image_0000002661732301.png)
+![](./img/zh-cn_image_0000002633850414.png)

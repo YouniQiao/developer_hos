@@ -2,8 +2,8 @@
 title: "自定义属性设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-custom-property"
 catalog: "harmonyos-references"
-content_hash: "fac65b0624fd"
-synced_at: "2026-07-09T00:57:43.021511"
+content_hash: "fc7f9d6244b4"
+synced_at: "2026-07-09T17:23:39.701079"
 ---
 
 # 自定义属性设置
@@ -56,7 +56,7 @@ type Optional<T> = T | undefined
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 表示该类型声明的对象是自定义类型。 |
+| T | 表示泛型T所指定的类型。 |
 | undefined | 表示该类型声明的对象是undefined。 |
 
 #### 示例
@@ -181,4 +181,4 @@ struct CustomLayout {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732367.png)
+ ![](./img/zh-cn_image_0000002633850480.png)

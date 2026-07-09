@@ -2,8 +2,8 @@
 title: "自定义字体样式"
 upstream_id: "harmonyos-references/js-components-common-customizing-font"
 catalog: "harmonyos-references"
-content_hash: "71a82ca440e1"
-synced_at: "2026-07-09T00:58:20.050119"
+content_hash: "d2ce6df9047c"
+synced_at: "2026-07-09T17:25:00.944665"
 ---
 
 # 自定义字体样式
@@ -15,7 +15,7 @@ synced_at: "2026-07-09T00:58:20.050119"
 #### 定义font-face
 
 ```
-// xxx.js
+/* xxx.css */
 @font-face {
   font-family: font;
   src: url('/common/font.ttf');

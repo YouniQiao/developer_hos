@@ -2,8 +2,8 @@
 title: "Class (WebContextMenuParam)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-webcontextmenuparam"
 catalog: "harmonyos-references"
-content_hash: "5fe4fddc2383"
-synced_at: "2026-07-09T00:58:54.425373"
+content_hash: "f6b2e2101b84"
+synced_at: "2026-07-09T17:25:38.971926"
 ---
 
 # Class (WebContextMenuParam)
@@ -90,7 +90,7 @@ getUnfilteredLinkUrl(): string
 
 getSourceUrl(): string
 
-获取sourceUrl链接。
+获取元素的src属性对应的URL链接地址。
 
 系统能力： SystemCapability.Web.Webview.Core
 

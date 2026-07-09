@@ -2,8 +2,8 @@
 title: "@ohos.app.form.formBindingData (卡片数据绑定类)"
 upstream_id: "harmonyos-references/js-apis-app-form-formbindingdata"
 catalog: "harmonyos-references"
-content_hash: "c8f4bd46f5cb"
-synced_at: "2026-07-09T00:59:02.716160"
+content_hash: "5a497a0146c3"
+synced_at: "2026-07-09T17:25:49.065955"
 ---
 
 # @ohos.app.form.formBindingData (卡片数据绑定类)
@@ -90,11 +90,12 @@ struct Index {
   pathDir: string = this.content.filesDir;
 
   createFormBindingData() {
+    let filePath = this.pathDir + "/form.png";
+    let fd: number = -1;
     try {
-      let filePath = this.pathDir + "/form.png";
-      let file = fileIo.openSync(filePath);
+      fd = fileIo.openSync(filePath, fileIo.OpenMode.READ_ONLY).fd;
       let formImagesParam: Record<string, number> = {
-        'image': file.fd
+        'image': fd
       };
       let createFormBindingDataParam: Record<string, string | Record<string, number>> = {
         'name': '21°',
@@ -103,7 +104,11 @@ struct Index {
       };
       let formBindingDataObj = formBindingData.createFormBindingData(createFormBindingDataParam);
     } catch (error) {
-      console.error(`catch error, code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message})`);
+      console.error(`catch error, code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}`);
+    } finally {
+      if (fd !== -1) {
+        fileIo.closeSync(fd);
+      }
     }
   }
 

@@ -2,8 +2,8 @@
 title: "PatternLock"
 upstream_id: "harmonyos-references/ts-basic-components-patternlock"
 catalog: "harmonyos-references"
-content_hash: "5ff44e3e6aad"
-synced_at: "2026-07-09T00:58:02.336577"
+content_hash: "85c572f08c62"
+synced_at: "2026-07-09T17:24:24.344800"
 ---
 
 # PatternLock
@@ -379,7 +379,7 @@ struct PatternLockExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413494.gif)
+ ![](./img/zh-cn_image_0000002664329941.gif)
 
 #### [h2]示例2（判断密码是否正确）
 
@@ -423,7 +423,7 @@ struct PatternLockExample {
         .onPatternComplete((input: Array<number>) => {
           // 输入的密码长度小于5时，提示重新输入
           if (input.length < 5) {
-            this.message = 'The password length needs to be greater than 5, please enter again.';
+            this.message = 'The password length needs to be at least 5, please enter again.';
             return;
           }
           // 判断密码长度是否大于0
@@ -453,4 +453,4 @@ struct PatternLockExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732723.gif)
+ ![](./img/zh-cn_image_0000002633850830.gif)

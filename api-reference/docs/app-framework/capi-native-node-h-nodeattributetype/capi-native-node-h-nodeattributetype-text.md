@@ -2,8 +2,8 @@
 title: "ArkUI_NodeAttributeType（文本显示类组件相关属性）"
 upstream_id: "harmonyos-references/capi-native-node-h-nodeattributetype-text"
 catalog: "harmonyos-references"
-content_hash: "374dca118dd2"
-synced_at: "2026-07-09T00:58:36.071683"
+content_hash: "7a8c72bf804f"
+synced_at: "2026-07-09T17:25:17.667882"
 ---
 
 # ArkUI_NodeAttributeType（文本显示类组件相关属性）
@@ -1288,7 +1288,7 @@ NODE_TEXT_CONTROLLER = 1054
 
 | 参数项 | 描述 |
 | --- | --- |
-| .object | 文本的控制器，参数类型为[ArkUI_TextEditorStyledStringController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller)。 |
+| .object | 文本的控制器，参数类型为[OH_ArkUI_TextController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-arkui-nativemodule-oh-arkui-textcontroller)。 |
 
 #### NODE_SPAN_CONTENT
 

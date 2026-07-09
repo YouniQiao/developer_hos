@@ -2,8 +2,8 @@
 title: "属性字符串"
 upstream_id: "harmonyos-references/ts-universal-styled-string"
 catalog: "harmonyos-references"
-content_hash: "954ed3f3097a"
-synced_at: "2026-07-09T00:58:00.216933"
+content_hash: "022905f1f9b8"
+synced_at: "2026-07-09T17:24:08.053839"
 ---
 
 # 属性字符串
@@ -1577,7 +1577,7 @@ struct styled_string_process_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253508.png)
+ ![](./img/zh-cn_image_0000002634010640.png)
 
 #### [h2]示例2（设置事件）
 
@@ -1666,7 +1666,7 @@ struct styled_string_bind_events_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612691.png)
+ ![](./img/zh-cn_image_0000002664209789.png)
 
 #### [h2]示例3（设置文本样式）
 
@@ -1855,7 +1855,7 @@ struct styled_string_set_text_style_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413402.png)
+ ![](./img/zh-cn_image_0000002664329849.png)
 
 #### [h2]示例4（设置图片）
 
@@ -1989,7 +1989,7 @@ struct styled_string_set_image_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732631.gif)
+ ![](./img/zh-cn_image_0000002633850738.gif)
 
 #### [h2]示例5（设置文本行高和段落样式）
 
@@ -2148,7 +2148,7 @@ struct styled_string_set_lineheight_paragraphstyle_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253510.png)
+ ![](./img/zh-cn_image_0000002634010642.png)
 
 #### [h2]示例6（设置自定义绘制Span）
 
@@ -2308,7 +2308,7 @@ struct styled_string_set_customspan_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612693.gif)
+ ![](./img/zh-cn_image_0000002664209791.gif)
 
 #### [h2]示例7（支持存储自定义扩展信息）
 
@@ -2358,7 +2358,7 @@ struct styled_string_set_userdataspan_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413404.gif)
+ ![](./img/zh-cn_image_0000002664329851.gif)
 
 #### [h2]示例8（设置超链接）
 
@@ -2391,7 +2391,7 @@ struct styled_string_set_urlstyle_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732633.gif)
+ ![](./img/zh-cn_image_0000002633850740.gif)
 
 #### [h2]示例9 （给图片设置colorFilter）
 
@@ -2461,7 +2461,7 @@ struct styled_string_set_image_colorfilter_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253512.gif)
+ ![](./img/zh-cn_image_0000002634010644.gif)
 
 #### [h2]示例10（属性字符串的插入、删除、替换）
 
@@ -2537,7 +2537,7 @@ struct styled_string_modify_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612695.gif)
+ ![](./img/zh-cn_image_0000002664209793.gif)
 
 #### [h2]示例11（属性字符串的文本描边）
 
@@ -2610,7 +2610,7 @@ struct styled_string_strokewidth_strokecolor_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413406.png)
+ ![](./img/zh-cn_image_0000002664329853.png)
 
 #### [h2]示例12（fromHtml和toHtml互相转换）
 
@@ -2677,7 +2677,7 @@ struct styled_string_html_convert_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732635.gif)
+ ![](./img/zh-cn_image_0000002633850742.gif)
 
 #### [h2]示例13（多装饰线与加粗装饰线）
 
@@ -2749,7 +2749,7 @@ struct styled_string_set_decorationstyle_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253514.png)
+ ![](./img/zh-cn_image_0000002634010646.png)
 
 #### [h2]示例14（获取以vp为单位的图片尺寸）
 
@@ -2847,7 +2847,7 @@ struct styled_string_demo4 {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612697.gif)
+ ![](./img/zh-cn_image_0000002664209795.gif)
 
 #### [h2]示例15（设置段落自定义缩进）
 
@@ -2881,9 +2881,9 @@ class MyLeadingMarginSpan extends LeadingMarginSpan {
 
   // 回调给开发者行信息，用于canvas绘制
   onDraw(context: DrawContext, options: LeadingMarginSpanDrawInfo) {
-    console.info("x = " + options.x + options.direction + ", top = " + options.top
+    console.info("x = " + options.x + ", direction = " + options.direction + ", top = " + options.top
       + ", bottom = " + options.bottom + ", baseline = " + options.baseline
-      + ", direction = " + ", start = " + options.start + ", end = " + options.end + ", first = " + options.first)
+      + ", start = " + options.start + ", end = " + options.end + ", first = " + options.first)
     let canvas = context.canvas;
     if (!options.first) {
       return
@@ -2965,7 +2965,7 @@ struct leadingMarginSpanDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413408.gif)
+ ![](./img/zh-cn_image_0000002664329855.gif)
 
 #### [h2]示例16（使用supportSvg2属性时，SVG图片的显示效果）
 
@@ -3032,7 +3032,7 @@ struct styled_string_process_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253502.png)
+ ![](./img/zh-cn_image_0000002634010634.png)
 
 #### [h2]示例17（设置字体配置）
 
@@ -3139,7 +3139,7 @@ struct StyledStringFontConfigsDemo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732637.png)
+ ![](./img/zh-cn_image_0000002633850744.png)
 
 #### [h2]示例18（fromHtml转换）
 
@@ -3173,7 +3173,7 @@ struct html_convert_demo {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253516.png)
+ ![](./img/zh-cn_image_0000002634010648.png)
 
 #### [h2]示例19（设置可变字体的属性）
 
@@ -3223,4 +3223,4 @@ struct StyledStringExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732549.gif)
+ ![](./img/zh-cn_image_0000002633850656.gif)

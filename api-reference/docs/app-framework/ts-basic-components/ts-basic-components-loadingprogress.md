@@ -2,8 +2,8 @@
 title: "LoadingProgress"
 upstream_id: "harmonyos-references/ts-basic-components-loadingprogress"
 catalog: "harmonyos-references"
-content_hash: "081f86cb9cb9"
-synced_at: "2026-07-09T00:58:01.387755"
+content_hash: "20745c3ceccb"
+synced_at: "2026-07-09T17:24:20.815525"
 ---
 
 # LoadingProgress
@@ -148,7 +148,7 @@ struct LoadingProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413492.gif)
+ ![](./img/zh-cn_image_0000002664329939.gif)
 
 #### [h2]示例2（设置定制内容区）
 
@@ -172,8 +172,6 @@ class MyLoadingProgressStyle implements ContentModifier<LoadingProgressConfigura
   }
 }
 
-let arr1: string[] =
-  ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19'];
 let arr2: string[] = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
 @Builder
@@ -288,7 +286,7 @@ struct LoadingProgressDemoExample {
         }.width('100%').margin({ top: 5 })
       }.height('85%')
 
-      Button('点击切换config.enableloading').onClick(() => {
+      Button('点击切换config.enableLoading').onClick(() => {
         this.clickFlag++;
         this.loadingProgressIndex = (this.loadingProgressIndex + 1) % this.loadingProgressList.length;
         console.info('enableLoading:' + this.loadingProgressList[this.loadingProgressIndex]);
@@ -298,4 +296,4 @@ struct LoadingProgressDemoExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732721.gif)
+ ![](./img/zh-cn_image_0000002633850828.gif)

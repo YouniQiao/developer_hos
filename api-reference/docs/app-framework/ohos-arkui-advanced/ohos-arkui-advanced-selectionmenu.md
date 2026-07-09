@@ -2,8 +2,8 @@
 title: "SelectionMenu"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-selectionmenu"
 catalog: "harmonyos-references"
-content_hash: "f16b8785ade7"
-synced_at: "2026-07-09T00:58:16.961700"
+content_hash: "49467a4524c2"
+synced_at: "2026-07-09T17:24:55.541866"
 ---
 
 # SelectionMenu
@@ -317,7 +317,7 @@ struct Index {
         event.content.spans.forEach((item: RichEditorTextSpanResult | RichEditorImageSpanResult, index) => {
           if (typeof (item as RichEditorTextSpanResult)['textStyle'] != 'undefined') {
             let span = item as RichEditorTextSpanResult;
-            console.info('test cut' + span.value);
+            console.info('test onCopy' + span.value);
             console.info('test start ' + span.offsetInSpan[0] + ' end: ' + span.offsetInSpan[1]);
           }
         })
@@ -328,7 +328,7 @@ struct Index {
         event.content.spans.forEach((item: RichEditorTextSpanResult | RichEditorImageSpanResult, index) => {
           if (typeof (item as RichEditorTextSpanResult)['textStyle'] != 'undefined') {
             let span = item as RichEditorTextSpanResult;
-            console.info('test onPaste' + span.value);
+            console.info('test onSelectAll' + span.value);
             console.info('test start ' + span.offsetInSpan[0] + ' end: ' + span.offsetInSpan[1]);
           }
         })
@@ -452,7 +452,7 @@ struct Index {
 
 示例图为鼠标操作触发的自定义菜单弹出效果。
 
-![](./img/zh-cn_image_0000002631253828.gif)
+![](./img/zh-cn_image_0000002664210109.gif)
 
 #### [h2]示例2（设置Symbol类型图标）
 
@@ -782,4 +782,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661613011.jpg)
+ ![](./img/zh-cn_image_0000002664330167.jpg)

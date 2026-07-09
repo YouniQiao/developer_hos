@@ -2,8 +2,8 @@
 title: "@ohos.request (上传下载)"
 upstream_id: "harmonyos-references/js-apis-request"
 catalog: "harmonyos-references"
-content_hash: "3dd2c496bad7"
-synced_at: "2026-07-09T00:59:41.088904"
+content_hash: "b5dffbb711f4"
+synced_at: "2026-07-09T17:26:37.590696"
 ---
 
 # @ohos.request (上传下载)
@@ -69,7 +69,7 @@ import { request } from '@kit.BasicServicesKit';
 
 uploadFile(context: BaseContext, config: UploadConfig): Promise<UploadTask>
 
-创建并启动一个上传任务，使用Promise异步回调，支持HTTP协议。通过[on('complete'|'fail')](#oncomplete--fail9)可获取任务上传时的成功信息或错误信息。
+创建并启动一个上传任务，使用Promise异步回调，支持HTTP协议。通过[on('complete' | 'fail')](#oncomplete--fail9)可获取任务上传时的成功信息或错误信息。
 
 需要权限：ohos.permission.INTERNET
 
@@ -131,7 +131,7 @@ try {
 
 uploadFile(context: BaseContext, config: UploadConfig, callback: AsyncCallback<UploadTask>): void
 
-创建并启动一个上传任务，使用callback异步回调，支持HTTP协议。通过[on('complete'|'fail')](#oncomplete--fail9)可获取任务上传时的成功信息或错误信息。
+创建并启动一个上传任务，使用callback异步回调，支持HTTP协议。通过[on('complete' | 'fail')](#oncomplete--fail9)可获取任务上传时的成功信息或错误信息。
 
 需要权限：ohos.permission.INTERNET
 
@@ -321,7 +321,7 @@ on(type: 'progress', callback: (uploadedSize: number, totalSize: number) => void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. 适用版本：12+ |
 
 示例：
 
@@ -359,7 +359,7 @@ on(type: 'headerReceive', callback: (header: object) => void): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. 适用版本：12+ |
 
 示例：
 
@@ -391,7 +391,7 @@ on(type: 'complete' | 'fail', callback: Callback<Array<TaskState>>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. 适用版本：12+ |
 
 示例：
 
@@ -439,7 +439,7 @@ off(type: 'progress', callback?: (uploadedSize: number, totalSize: number) => vo
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. 适用版本：12+ |
 
 示例：
 
@@ -485,7 +485,7 @@ off(type: 'headerReceive', callback?: (header: object) => void): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. 适用版本：12+ |
 
 示例：
 
@@ -525,7 +525,7 @@ off(type: 'complete' | 'fail', callback?: Callback<Array<TaskState>>): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | the parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 401 | the parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. 适用版本：12+ |
 
 示例：
 
@@ -1027,7 +1027,7 @@ on(type: 'progress', callback: (receivedSize: number, totalSize: number) => void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. 适用版本：12+ |
 
 示例：
 
@@ -1081,7 +1081,7 @@ off(type: 'progress', callback?: (receivedSize: number, totalSize: number) => vo
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. 适用版本：12+ |
 
 示例：
 
@@ -1136,7 +1136,7 @@ on(type: 'complete'|'pause'|'remove', callback: () => void): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. 适用版本：12+ |
 
 示例：
 
@@ -1193,7 +1193,7 @@ off(type: 'complete'|'pause'|'remove', callback?: () => void): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. 适用版本：12+ |
 
 示例：
 
@@ -1272,7 +1272,7 @@ on(type: 'fail', callback: (err: number) => void): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| err | number | 是 | 下载失败的错误码，错误原因见[下载任务的错误码](#常量)。 |
+| err | number | 是 | 下载失败的错误码，错误原因见[常量](#常量)。 |
 
 错误码：
 
@@ -1280,7 +1280,7 @@ on(type: 'fail', callback: (err: number) => void): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. 适用版本：12+ |
 
 示例：
 
@@ -1325,7 +1325,7 @@ off(type: 'fail', callback?: (err: number) => void): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| err | number | 是 | 下载失败的错误码，错误原因见[下载任务的错误码](#常量)。 |
+| err | number | 是 | 下载失败的错误码，错误原因见[常量](#常量)。 |
 
 错误码：
 
@@ -1333,7 +1333,7 @@ off(type: 'fail', callback?: (err: number) => void): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 401 | The parameters check fails. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. 适用版本：12+ |
 
 示例：
 
@@ -2270,7 +2270,7 @@ downloadTask.resume((err: BusinessError) => {
 | enableRoaming | boolean | 否 | 是 | 表示设置是否允许在漫游网络中下载任务的配置信息。true表示允许，false表示不允许。默认值为false。 |
 | description | string | 否 | 是 | 设置下载会话的描述。默认值为空字符串。 |
 | filePath7+ | string | 否 | 是 | 设置下载路径。默认为调用方（即传入的context）对应的缓存路径。默认文件名从url的最后一个"/"后截取。 - FA模型下使用[Context.getCacheDir](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-app-context#contextgetcachedir)方法获取应用存储路径。 - Stage模型下使用[Context (Stage模型的上下文基类)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-context)中AbilityContext的类获取文件路径。 |
-| networkType | number | 否 | 是 | 设置允许下载的网络类型，通过[网络类型常量](#常量)的位运算方式决定允许的网络类型，支持如下几种设置方式: - 仅支持蜂窝网络下载，参数为NETWORK_MOBILE或0x00000001 - 仅支持WLAN网络下载，参数为NETWORK_WIFI或0x00010000 - 参数默认值，支持蜂窝/WLAN网络下载，参数为NETWORK_MOBILE | NETWORK_WIFI或0x00010001。 当参数为NETWORK_MOBILE | NETWORK_WIFI时，enableMetered和enableRoaming参数不生效。 |
+| networkType | number | 否 | 是 | 设置允许下载的网络类型，通过[常量](#常量)的位运算方式决定允许的网络类型，支持如下几种设置方式: - 仅支持蜂窝网络下载，参数为NETWORK_MOBILE或0x00000001 - 仅支持WLAN网络下载，参数为NETWORK_WIFI或0x00010000 - 参数默认值，支持蜂窝/WLAN网络下载，参数为NETWORK_MOBILE | NETWORK_WIFI或0x00010001。 当参数为NETWORK_MOBILE | NETWORK_WIFI时，enableMetered和enableRoaming参数不生效。 |
 | title | string | 否 | 是 | 设置下载任务名称。默认值为download。 |
 | background9+ | boolean | 否 | 是 | 后台任务通知开关，启用后可在通知中显示下载状态。true表示启用，false表示禁用。默认值为false。 |
 
@@ -2283,11 +2283,11 @@ downloadTask.resume((err: BusinessError) => {
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | downloadId | number | 否 | 否 | 下载任务id。 |
-| failedReason | number | 否 | 否 | 下载失败原因，可以是任何[下载任务的错误码](#常量)常量。 |
+| failedReason | number | 否 | 否 | 下载失败原因，可以是任何[常量](#常量)常量。 |
 | fileName | string | 否 | 否 | 下载的文件名。 |
 | filePath | string | 否 | 否 | 存储文件的URI。 |
-| pausedReason | number | 否 | 否 | 会话暂停的原因，可以是任何[下载任务暂停原因](#常量)常量。 |
-| status | number | 否 | 否 | 下载状态码，可以是任何[下载任务状态码](#常量)常量。 |
+| pausedReason | number | 否 | 否 | 会话暂停的原因，可以是任何[常量](#常量)常量。 |
+| status | number | 否 | 否 | 下载状态码，可以是任何[常量](#常量)常量。 |
 | targetURI | string | 否 | 否 | 下载文件的URI。 |
 | downloadTitle | string | 否 | 否 | 下载任务名称。 |
 | downloadTotalBytes | number | 否 | 否 | 下载的文件的总大小，单位为字节（B）。 |
@@ -2704,6 +2704,7 @@ on(event: 'progress', callback: (progress: [Progress](#requestagentprogress10)) 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 21900005 | task mode error. 适用版本：10-10 |
 
 示例：
 
@@ -2786,6 +2787,7 @@ on(event: 'completed', callback: (progress: [Progress](#requestagentprogress10))
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 21900005 | task mode error. 适用版本：10-10 |
 
 示例：
 
@@ -2868,6 +2870,7 @@ on(event: 'failed', callback: (progress: [Progress](#requestagentprogress10)) =>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 21900005 | Operation with wrong task mode. 适用版本：10-10 |
 
 示例：
 
@@ -3434,6 +3437,7 @@ off(event: 'progress', callback?: (progress: [Progress](#requestagentprogress10)
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 21900005 | task mode error. 适用版本：10-10 |
 
 示例：
 
@@ -3524,6 +3528,7 @@ off(event: 'completed', callback?: (progress: [Progress](#requestagentprogress10
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 21900005 | Operation with wrong task mode. 适用版本：10-10 |
 
 示例：
 
@@ -3614,6 +3619,7 @@ off(event: 'failed', callback?: (progress: [Progress](#requestagentprogress10)) 
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 21900005 | Operation with wrong task mode. 适用版本：10-10 |
 
 示例：
 
@@ -3877,7 +3883,7 @@ off(event: 'remove', callback?: (progress: [Progress](#requestagentprogress10)) 
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 401 | Parameter error. Possible causes: 1. Missing mandatory parameters. 2. Incorrect parameter type. 3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameter types. 3. Parameter verification failed. |
 
 示例：
 
@@ -4361,6 +4367,7 @@ pause(callback: AsyncCallback<void>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 13400003 | Task service ability error. |
+| 21900005 | Operation with wrong task mode. 适用版本：10-10 |
 | 21900007 | Operation with wrong task state. |
 
 示例：
@@ -4433,6 +4440,7 @@ pause(): Promise<void>
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 13400003 | Task service ability error. |
+| 21900005 | Operation with wrong task mode. 适用版本：10-10 |
 | 21900007 | Operation with wrong task state. |
 
 示例：
@@ -4506,6 +4514,7 @@ resume(callback: AsyncCallback<void>): void
 | --- | --- |
 | 201 | Permission denied. |
 | 13400003 | Task service ability error. |
+| 21900005 | Operation with wrong task mode. 适用版本：10-10 |
 | 21900007 | Operation with wrong task state. |
 
 示例：
@@ -4586,6 +4595,7 @@ resume(): Promise<void>
 | --- | --- |
 | 201 | Permission denied. |
 | 13400003 | Task service ability error. |
+| 21900005 | Operation with wrong task mode. 适用版本：10-10 |
 | 21900007 | Operation with wrong task state. |
 
 示例：

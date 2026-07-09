@@ -2,8 +2,8 @@
 title: "Progress"
 upstream_id: "harmonyos-references/ts-basic-components-progress"
 catalog: "harmonyos-references"
-content_hash: "d94d3d1fe57f"
-synced_at: "2026-07-09T00:58:01.954678"
+content_hash: "c9fd5b412d03"
+synced_at: "2026-07-09T17:24:27.414267"
 ---
 
 # Progress
@@ -432,7 +432,7 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253604.png)
+ ![](./img/zh-cn_image_0000002634010734.png)
 
 #### [h2]示例2（设置环形进度条属性）
 
@@ -461,7 +461,7 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612785.png)
+ ![](./img/zh-cn_image_0000002664209883.png)
 
 #### [h2]示例3（设置环形进度条动画）
 
@@ -487,7 +487,7 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413496.gif)
+ ![](./img/zh-cn_image_0000002664329943.gif)
 
 #### [h2]示例4（设置胶囊形进度条属性）
 
@@ -516,7 +516,7 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732725.png)
+ ![](./img/zh-cn_image_0000002633850832.png)
 
 #### [h2]示例5（设置进度平滑动效）
 
@@ -557,7 +557,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253606.gif)
+ ![](./img/zh-cn_image_0000002634010736.gif)
 
 #### [h2]示例6（设置定制内容区）
 
@@ -618,7 +618,6 @@ function myProgress(config: ProgressConfiguration) {
 struct Index {
   @State currentValue: number = 0;
   modifier = new MyProgressModifier('rgb(39, 135, 217)');
-  @State myModifier: (MyProgressModifier | undefined) = this.modifier;
 
   build() {
     Column() {
@@ -637,7 +636,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612787.gif)
+ ![](./img/zh-cn_image_0000002664209885.gif)
 
 #### [h2]示例7（设置隐私隐藏）
 
@@ -673,7 +672,7 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413498.gif)
+ ![](./img/zh-cn_image_0000002664329945.gif)
 
 #### [h2]示例8（设置Capsule进度条圆角半径）
 
@@ -709,7 +708,7 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732727.png)
+ ![](./img/zh-cn_image_0000002633850834.png)
 
 #### [h2]示例9（设置线性进度条和胶囊进度条属性）
 
@@ -740,4 +739,4 @@ struct ProgressExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253608.png)
+ ![](./img/zh-cn_image_0000002634010738.png)

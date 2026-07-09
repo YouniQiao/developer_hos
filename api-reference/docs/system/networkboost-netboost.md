@@ -2,8 +2,8 @@
 title: "netBoost（网络加速）"
 upstream_id: "harmonyos-references/networkboost-netboost"
 catalog: "harmonyos-references"
-content_hash: "798431f3988a"
-synced_at: "2026-07-09T00:59:32.066310"
+content_hash: "3b7e3a6795fb"
+synced_at: "2026-07-09T17:26:28.202796"
 ---
 
 # netBoost（网络加速）
@@ -47,8 +47,8 @@ setSceneDesc(sceneDesc : SceneDesc): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1013600001 | Internal error. For example, the internal management state machine is abnormal, or the internal message queue processing is blocked. |
-| 1013600002 | System service error. For example, IPC call processes fails, or the network management service failed to start. |
+| 1013600001 | Internal error. |
+| 1013600002 | System service error. |
 
 示例：
 
@@ -93,8 +93,8 @@ setLowPowerMode(isEnable : boolean): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1013600001 | Internal error. For example, the internal management state machine is abnormal, or the internal message queue processing is blocked. |
-| 1013600002 | System service error. For example, IPC call processes fails, or the network management service failed to start. |
+| 1013600001 | Internal error. |
+| 1013600002 | System service error. |
 
 示例：
 
@@ -127,7 +127,7 @@ setDataFlowDesc(dataFlowDesc : DataFlowDesc): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| dataFlowDesc | [dataFlowDesc](#dataflowdesc) | 是 | 待设置的数据流描述。 |
+| dataFlowDesc | [DataFlowDesc](#dataflowdesc) | 是 | 待设置的数据流描述。 |
 
 错误码：
 
@@ -136,8 +136,9 @@ setDataFlowDesc(dataFlowDesc : DataFlowDesc): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1013600001 | Internal error. For example, internal management state machine exceptions, internal message queue processing blockages, etc. |
-| 1013600002 | System service error. For example, IPC cross-process call failure, network management service startup failure. |
+| 801 | Capability not supported. |
+| 1013600001 | Internal error. |
+| 1013600002 | System service error. |
 
 示例：
 
@@ -194,8 +195,8 @@ try {
 | --- | --- | --- | --- |
 | scene | [netQuality.ServiceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/networkboost-netquality#servicetype) | 是 | 表示业务场景类型。 |
 | sceneEvent | [SceneEvent](#sceneevent) | 是 | 表示业务场景事件。 |
-| startTime | number | 否 | 表示要经过多长时间进入到sceneEvent事件，单位为s。 - 0表示立即发生sceneEvent事件，默认为0。 - 大于0表示预测未来多长时间进入sceneEvent事件。 |
-| duration | number | 否 | 预计持续的时长，单位为s。0表示持续时长未知，以SceneEvent的离开事件表示终止。 例如应用即将在10s后进入秒杀场景，预计持续20s，scene可以传入'seckillService'类型，sceneEvent填写SCENE_EVENT_ENTER，startTime可填写10，duration填写20。开发者可以依据实际的场景类型进行选填。 |
+| startTime | number | 否 | 表示要经过多长时间进入到sceneEvent事件，单位为ms。 - 0表示立即发生sceneEvent事件，默认为0。 - 大于0表示预测未来多长时间进入sceneEvent事件。 |
+| duration | number | 否 | 预计持续的时长，单位为ms。0表示持续时长未知，以SceneEvent的离开事件表示终止。 例如应用即将在10s后进入秒杀场景，预计持续20s，scene可以传入'seckillService'类型，sceneEvent填写SCENE_EVENT_ENTER，startTime可填写10000，duration填写20000。开发者可以依据实际的场景类型进行选填。 |
 
 #### DataFlowDesc
 
@@ -211,7 +212,7 @@ try {
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| dataFlowInfo | [SocketFd](#socketfd) | [DataFlowInfo](#dataflowinfo) | 是 | 数据流信息，可以唯一表示数据流的参数。 |
+| dataFlowInfo | [DataFlowInfo](#dataflowinfo) | [SocketFd](#socketfd) | 是 | 数据流信息，可以唯一表示数据流的参数。 |
 | scene | [netQuality.ServiceType](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/networkboost-netquality#servicetype) | 是 | 表示业务场景类型。 |
 | sceneEvent | [SceneEvent](#sceneevent) | 是 | 表示业务场景事件。 |
 | expectations | [ExpectedDescription](#expecteddescription) | 否 | 对指定数据流的期望。 |

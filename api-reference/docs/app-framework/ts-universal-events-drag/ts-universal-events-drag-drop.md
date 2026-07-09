@@ -2,8 +2,8 @@
 title: "拖拽事件"
 upstream_id: "harmonyos-references/ts-universal-events-drag-drop"
 catalog: "harmonyos-references"
-content_hash: "0fb817da369f"
-synced_at: "2026-07-09T00:57:37.125711"
+content_hash: "e7485a143088"
+synced_at: "2026-07-09T17:23:27.934399"
 ---
 
 # 拖拽事件
@@ -751,7 +751,7 @@ getGlobalDisplayX(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 返回当前拖拽点相对于全局屏幕的左上角的X坐标。 单位：vp，取值范围：[0, +∞) |
+| number | 返回当前拖拽点相对于全局屏幕的左上角的X坐标。 单位：vp，取值范围：(-∞, +∞) |
 
 #### [h2]getGlobalDisplayY20+
 
@@ -769,7 +769,7 @@ getGlobalDisplayY(): number
 
 | 类型 | 说明 |
 | --- | --- |
-| number | 返回当前拖拽点相对于全局屏幕的左上角的Y坐标。 单位：vp，取值范围：[0, +∞) |
+| number | 返回当前拖拽点相对于全局屏幕的左上角的Y坐标。 单位：vp，取值范围：(-∞, +∞) |
 
 #### DragResult10+枚举说明
 
@@ -1154,7 +1154,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732247.png)
+ ![](./img/zh-cn_image_0000002633850362.png)
 
 #### [h2]示例2（自定义落位动效）
 
@@ -1238,7 +1238,7 @@ struct DropAnimationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253126.gif)
+ ![](./img/zh-cn_image_0000002634010266.gif)
 
 #### [h2]示例3（拖拽异步获取数据）
 
@@ -1545,7 +1545,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612311.png)
+ ![](./img/zh-cn_image_0000002664209415.png)
 
 #### [h2]示例5（获取包名和是否是跨设备）
 
@@ -1627,7 +1627,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413018.png)
+ ![](./img/zh-cn_image_0000002664329475.png)
 
 #### [h2]示例6（拖拽支持悬停检测）
 
@@ -1711,7 +1711,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732249.gif)
+ ![](./img/zh-cn_image_0000002633850364.gif)
 
 #### [h2]示例7（拖起方延迟提供数据）
 
@@ -1861,7 +1861,7 @@ struct VideoExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253128.gif)
+ ![](./img/zh-cn_image_0000002634010268.gif)
 
 #### [h2]示例8（拖拽自动隐藏指定组件）
 
@@ -1986,4 +1986,4 @@ struct DragEventAutoHideSample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612313.gif)
+ ![](./img/zh-cn_image_0000002664209417.gif)

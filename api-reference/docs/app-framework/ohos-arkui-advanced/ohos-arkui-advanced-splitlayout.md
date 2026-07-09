@@ -2,8 +2,8 @@
 title: "SplitLayout"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-splitlayout"
 catalog: "harmonyos-references"
-content_hash: "e5fdf391a581"
-synced_at: "2026-07-09T00:58:16.390105"
+content_hash: "ebc567aa8294"
+synced_at: "2026-07-09T17:24:55.634927"
 ---
 
 # SplitLayout
@@ -28,7 +28,7 @@ import { SplitLayout } from '@kit.ArkUI';
 
 #### SplitLayout
 
-SplitLayout({mainImage: Resource, primaryText: string, secondaryText?: string, tertiaryText?: string, container: () => void })
+SplitLayout({mainImage: ResourceStr, primaryText: ResourceStr, secondaryText?: ResourceStr, tertiaryText?: ResourceStr, container: () => void })
 
 装饰器类型：@Component
 
@@ -82,12 +82,12 @@ struct Index {
 ```
  小于等于600vp布局：
 
-![](./img/zh-cn_image_0000002631413722.png)
+![](./img/zh-cn_image_0000002633851056.png)
 
 大于600vp且小于等于840vp的布局：
 
-![](./img/zh-cn_image_0000002661732951.png)
+![](./img/zh-cn_image_0000002634010960.png)
 
 大于840vp布局：
 
-![](./img/zh-cn_image_0000002631253830.png)
+![](./img/zh-cn_image_0000002664210111.png)

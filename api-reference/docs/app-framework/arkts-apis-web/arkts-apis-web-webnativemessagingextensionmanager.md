@@ -2,8 +2,8 @@
 title: "@ohos.web.webNativeMessagingExtensionManager (Web Native Messaging Extension Manager)"
 upstream_id: "harmonyos-references/arkts-apis-web-webnativemessagingextensionmanager"
 catalog: "harmonyos-references"
-content_hash: "820cc2756330"
-synced_at: "2026-07-09T00:58:53.135995"
+content_hash: "dfae65d29284"
+synced_at: "2026-07-09T17:25:37.840472"
 ---
 
 # @ohos.web.webNativeMessagingExtensionManager (Web Native Messaging Extension Manager)
@@ -43,9 +43,9 @@ Native Messaging的错误列表。
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| PERMISSION_DENY | 17100203 | Permission denied due to missing ohos.permission.WEB_NATIVE_MESSAGING. |
-| WANT_CONTENT_ERROR | 17100202 | The want content is invalid. |
-| INNER_ERROR | 17100201 | Inner error for native messaging. |
+| PERMISSION_DENY | 17100203 | 由于缺少ohos.permission.WEB_NATIVE_MESSAGING，权限被拒绝。 |
+| WANT_CONTENT_ERROR | 17100202 | Want内容无效。 |
+| INNER_ERROR | 17100201 | 表示有内部错误发生。 |
 
 #### WebExtensionConnectionCallback
 

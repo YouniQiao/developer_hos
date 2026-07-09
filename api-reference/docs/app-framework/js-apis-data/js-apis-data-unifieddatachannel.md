@@ -2,8 +2,8 @@
 title: "@ohos.data.unifiedDataChannel (标准化数据通路)"
 upstream_id: "harmonyos-references/js-apis-data-unifieddatachannel"
 catalog: "harmonyos-references"
-content_hash: "fa2c7cbd68a0"
-synced_at: "2026-07-09T00:57:17.681654"
+content_hash: "a891c66e51ca"
+synced_at: "2026-07-09T17:23:09.081396"
 ---
 
 # @ohos.data.unifiedDataChannel (标准化数据通路)
@@ -2048,7 +2048,7 @@ setAppShareOptions(intention: Intention, shareOptions: ShareOptions): void
 
 设置应用内拖拽通道数据可使用的范围[ShareOptions](#shareoptions12)，目前仅支持DRAG类型数据通道的管控设置。
 
-需要权限: ohos.permission.MANAGE_UDMF_APP_SHARE_OPTION
+需要权限： ohos.permission.MANAGE_UDMF_APP_SHARE_OPTION
 
 模型约束： 此接口仅可在Stage模型下使用。
 
@@ -2090,7 +2090,7 @@ removeAppShareOptions(intention: Intention): void
 
 清除[setAppShareOptions](#unifieddatachannelsetappshareoptions14)设置的管控信息。
 
-需要权限: ohos.permission.MANAGE_UDMF_APP_SHARE_OPTION
+需要权限： ohos.permission.MANAGE_UDMF_APP_SHARE_OPTION
 
 模型约束： 此接口仅可在Stage模型下使用。
 

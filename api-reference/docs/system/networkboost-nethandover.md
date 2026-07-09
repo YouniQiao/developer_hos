@@ -2,8 +2,8 @@
 title: "netHandover（连接迁移）"
 upstream_id: "harmonyos-references/networkboost-nethandover"
 catalog: "harmonyos-references"
-content_hash: "8e3f1c5a4037"
-synced_at: "2026-07-09T00:59:32.316835"
+content_hash: "1da1fe8d2fa1"
+synced_at: "2026-07-09T17:26:28.194435"
 ---
 
 # netHandover（连接迁移）
@@ -189,8 +189,8 @@ getMultiPathQuotaStats(): MultiPathQuota
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1013600001 | Internal error. For example, the internal management state machine is abnormal, or the internal message queue processing is blocked. |
-| 1013600002 | System service error. For example, IPC call processes fails, or the network management service failed to start. |
+| 1013600001 | Internal error. |
+| 1013600002 | System service error. |
 
 示例：
 
@@ -235,8 +235,8 @@ requestMultiPath(callback: Callback<MultiPathRequestResult>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1013600001 | Internal error. For example, the internal management state machine is abnormal, or the internal message queue processing is blocked. |
-| 1013600002 | System service error. For example, IPC call processes fails, or the network management service failed to start. |
+| 1013600001 | Internal error. |
+| 1013600002 | System service error. |
 | 1013620000 | Multi-path capability is disabled. |
 | 1013620001 | Multi-path links are already active or in the process of being established. |
 | 1013620002 | App request limit reached. |
@@ -283,8 +283,8 @@ releaseMultiPath(): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1013600001 | Internal error. For example, the internal management state machine is abnormal, or the internal message queue processing is blocked. |
-| 1013600002 | System service error. For example, IPC call processes fails, or the network management service failed to start. |
+| 1013600001 | Internal error. |
+| 1013600002 | System service error. |
 | 1013620100 | Release request mismatch. |
 | 1013620101 | Multi-path not activated. |
 
@@ -328,8 +328,8 @@ on(type: 'multiPathStateChange', callback: Callback<MultiPathStateInfo>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1013600001 | Internal error. For example, the internal management state machine is abnormal, or the internal message queue processing is blocked. |
-| 1013600002 | System service error. For example, IPC call processes fails, or the network management service failed to start. |
+| 1013600001 | Internal error. |
+| 1013600002 | System service error. |
 
 示例：
 
@@ -374,8 +374,8 @@ off(type: 'multiPathStateChange', callback?: Callback<MultiPathStateInfo>): void
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1013600001 | Internal error. For example, the internal management state machine is abnormal, or the internal message queue processing is blocked. |
-| 1013600002 | System service error. For example, IPC call processes fails, or the network management service failed to start. |
+| 1013600001 | Internal error. |
+| 1013600002 | System service error. |
 
 示例：
 
@@ -417,8 +417,8 @@ on(type: 'multiPathRecommendation', callback: Callback<MultiPathRecommendationIn
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1013600001 | Internal error. For example, the internal management state machine is abnormal, or the internal message queue processing is blocked. |
-| 1013600002 | System service error. For example, IPC call processes fails, or the network management service failed to start. |
+| 1013600001 | Internal error. |
+| 1013600002 | System service error. |
 
 示例：
 
@@ -463,8 +463,8 @@ off(type: 'multiPathRecommendation', callback?: Callback<MultiPathRecommendation
 | 错误码ID | 错误信息 |
 | --- | --- |
 | 201 | Permission denied. |
-| 1013600001 | Internal error. For example, the internal management state machine is abnormal, or the internal message queue processing is blocked. |
-| 1013600002 | System service error. For example, IPC call processes fails, or the network management service failed to start. |
+| 1013600001 | Internal error. |
+| 1013600002 | System service error. |
 
 示例：
 

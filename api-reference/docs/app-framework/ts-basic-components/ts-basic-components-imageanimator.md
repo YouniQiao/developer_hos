@@ -2,8 +2,8 @@
 title: "ImageAnimator"
 upstream_id: "harmonyos-references/ts-basic-components-imageanimator"
 catalog: "harmonyos-references"
-content_hash: "f6a942660506"
-synced_at: "2026-07-09T00:58:00.349870"
+content_hash: "19b7ce74b96b"
+synced_at: "2026-07-09T17:24:13.611676"
 ---
 
 # ImageAnimator
@@ -73,7 +73,7 @@ state(value: AnimationStatus)
 
 duration(value: number)
 
-设置播放时长。当Images中任意一帧图片设置了单独的duration后，该属性设置无效。
+设置播放时长。当[images](#images)中任意一帧图片设置了单独的duration后，该属性设置无效。
 
 卡片能力： 从API version 10开始，该接口支持在ArkTS卡片中使用。
 
@@ -137,7 +137,7 @@ preDecode(value: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 预解码的图片数量。例如，设置为2时，播放当前页时会提前加载后面两张图片至缓存，以提升性能。 默认值：0 |
+| value | number | 是 | 预解码的图片数量。例如，设置为2时，播放当前帧时会提前加载后面两张图片至缓存，以提升性能。 默认值：0 |
 
 #### [h2]fillMode
 
@@ -387,7 +387,7 @@ struct ImageAnimatorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253534.gif)
+ ![](./img/zh-cn_image_0000002634010666.gif)
 
 #### [h2]示例2（播放PixelMap动画）
 
@@ -486,7 +486,7 @@ struct ImageAnimatorExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612717.gif)
+ ![](./img/zh-cn_image_0000002664209815.gif)
 
 #### [h2]示例3（设置不可见自动停播）
 
@@ -588,4 +588,4 @@ struct ImageAnimatorAutoPauseTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413428.gif)
+ ![](./img/zh-cn_image_0000002664329875.gif)
