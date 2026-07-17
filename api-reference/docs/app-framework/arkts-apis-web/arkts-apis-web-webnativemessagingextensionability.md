@@ -2,8 +2,8 @@
 title: "@ohos.web.WebNativeMessagingExtensionAbility (Web Native Messaging Extension Ability)"
 upstream_id: "harmonyos-references/arkts-apis-web-webnativemessagingextensionability"
 catalog: "harmonyos-references"
-content_hash: "48fe53a0184a"
-synced_at: "2026-07-09T00:58:52.783114"
+content_hash: "02554cab8dee"
+synced_at: "2026-07-17T16:17:31.205620"
 ---
 
 # @ohos.web.WebNativeMessagingExtensionAbility (Web Native Messaging Extension Ability)
@@ -30,7 +30,7 @@ import { WebNativeMessagingExtensionAbility } from '@kit.ArkWeb';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| context | [WebNativeMessagingExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-web-webnativemessagingextensioncontext) | 否 | 否 | Web原生消息通信上下文。 |
+| context | [WebNativeMessagingExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-web-webnativemessagingextensioncontext) | 否 | 否 | 当前Web原生消息扩展Ability的上下文。 |
 
 #### [h2]onConnectNative
 

@@ -2,8 +2,8 @@
 title: "IAP"
 upstream_id: "harmonyos-references/iap-iap"
 catalog: "harmonyos-references"
-content_hash: "4bcda2feae2e"
-synced_at: "2026-07-09T01:01:21.536333"
+content_hash: "ea476955974a"
+synced_at: "2026-07-17T16:19:45.970629"
 ---
 
 # IAP
@@ -1993,21 +1993,19 @@ struct IapTest {
 
 模型约束： 此接口仅可在Stage模型下使用。
 
-元服务API： 从版本5.0.0(12)开始，该接口支持在元服务中使用。
-
 系统能力： SystemCapability.Payment.IAP
 
 起始版本： 4.0.0(10)
 
 | **名称** | **类型** | 只读 | 可选 | **说明** |
 | --- | --- | --- | --- | --- |
-| productId | string | 否 | 否 | 待支付的商品ID。每个产品ID必须在当前应用中存在且唯一。商品ID来源于开发者在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中配置商品信息时设置的“商品ID”，具体请参见[配置商品信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-product)。 |
-| productType | [ProductType](#producttype) | 否 | 否 | 需要查询的商品类型。 - CONSUMABLE：消耗型商品 - NONCONSUMABLE：非消耗型商品 - AUTORENEWABLE：自动续期订阅商品 - NONRENEWABLE：非续期订阅商品 |
-| developerPayload | string | 否 | 是 | 商户侧保留信息。 若该字段有值，在支付成功后的回调结果中会原样返回给应用。 **说明：** 该参数长度限制为[0, 256]。如超过长度限制，在支付成功后将返回被截断的数据。建议在发起请求前自行验证字段长度，避免非预期截断。 |
-| reservedInfo | string | 否 | 是 | 要求JSON String格式，商户可以将额外需要传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 例如：let reservedInfo = "{\"key1\":\"value1\",\"key2\":\"value2\"}"; **说明：** 该字段为预留字段，可选传入，开发者暂时无需关注。 |
-| promotionalOfferId | string | 否 | 是 | 优惠ID。优惠ID来源于开发者为商品[提供优惠-配置优惠促销](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-subscription-functions#提供优惠)时设置的促销优惠标志符。在传递jwsRepresentation（[生成优惠签名购买参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-server-subscribe-offer-sign)）使用促销优惠时必须同时传递本字段，否则将报错。 **起始版本：** 5.0.0(12) |
-| applicationUserName | string | 否 | 是 | 用户账户相关联的混淆字符串，唯一标识用户。传递优惠ID场景，可以传递该字段。在传递jwsRepresentation（[生成优惠签名购买参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-server-subscribe-offer-sign)）使用促销优惠时，若jwsRepresentation中包含[applicationUserName](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-server-data-model#offerinfo)则必须传递本字段，否则将报错。 **起始版本：** 5.0.0(12) |
-| jwsRepresentation | string | 否 | 是 | 包含购买参数信息的JWS格式签名数据。购买参数，如优惠促销等。详细说明见[生成优惠签名购买参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-server-subscribe-offer-sign)。 **起始版本：** 5.0.0(12) |
+| productId | string | 否 | 否 | 待支付的商品ID。每个产品ID必须在当前应用中存在且唯一。商品ID来源于开发者在[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)中配置商品信息时设置的“商品ID”，具体请参见[配置商品信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-config-product)。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| productType | [ProductType](#producttype) | 否 | 否 | 需要查询的商品类型。 - CONSUMABLE：消耗型商品 - NONCONSUMABLE：非消耗型商品 - AUTORENEWABLE：自动续期订阅商品 - NONRENEWABLE：非续期订阅商品 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| developerPayload | string | 否 | 是 | 商户侧保留信息。 若该字段有值，在支付成功后的回调结果中会原样返回给应用。 **说明：** 该参数长度限制为[0, 256]。如超过长度限制，在支付成功后将返回被截断的数据。建议在发起请求前自行验证字段长度，避免非预期截断。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| reservedInfo | string | 否 | 是 | 要求JSON String格式，商户可以将额外需要传入的字段以key-value的形式设置在JSON String中，并通过该参数传入。 例如：let reservedInfo = "{\"key1\":\"value1\",\"key2\":\"value2\"}"; **说明：** 该字段为预留字段，可选传入，开发者暂时无需关注。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 |
+| promotionalOfferId | string | 否 | 是 | 优惠ID。优惠ID来源于开发者为商品[提供优惠-配置优惠促销](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-subscription-functions#提供优惠)时设置的促销优惠标志符。在传递jwsRepresentation（[生成优惠签名购买参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-server-subscribe-offer-sign)）使用促销优惠时必须同时传递本字段，否则将报错。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.0(12) |
+| applicationUserName | string | 否 | 是 | 用户账户相关联的混淆字符串，唯一标识用户。传递优惠ID场景，可以传递该字段。在传递jwsRepresentation（[生成优惠签名购买参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-server-subscribe-offer-sign)）使用促销优惠时，若jwsRepresentation中包含[applicationUserName](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-server-data-model#offerinfo)则必须传递本字段，否则将报错。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.0(12) |
+| jwsRepresentation | string | 否 | 是 | 包含购买参数信息的JWS格式签名数据。购买参数，如优惠促销等。详细说明见[生成优惠签名购买参数](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/iap-server-subscribe-offer-sign)。 **元服务API：** 从API版本5.0.0(12)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.0(12) |
 | quantity | number | 否 | 是 | 购买参数。表示所购买消耗型/非续期订阅商品的数量，需满足以下限制。 - 一次仅针对单商品类型，不支持不同类型混合 - 一次请求数量不超过10个 **说明：** 如果开发者使用了quantity参数以支持商品的批量购买，则需要在发货时校验下单的商品数量和最终发货商品数量是否一致，避免造成漏发、多发的情况。 **元服务API：** 从版本5.0.3(15)开始，该接口支持在元服务中使用。 **起始版本：** 5.0.3(15) |
 
 #### PurchaseResult(deprecated)

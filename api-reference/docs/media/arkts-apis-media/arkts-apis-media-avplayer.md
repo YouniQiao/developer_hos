@@ -2,8 +2,8 @@
 title: "Interface (AVPlayer)"
 upstream_id: "harmonyos-references/arkts-apis-media-avplayer"
 catalog: "harmonyos-references"
-content_hash: "84cc384c3b1b"
-synced_at: "2026-07-09T01:00:39.052496"
+content_hash: "c2671bbf2315"
+synced_at: "2026-07-17T16:19:10.362703"
 ---
 
 # Interface (AVPlayer)
@@ -33,7 +33,7 @@ import { media } from '@kit.MediaKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| url9+ | string | 否 | 是 | 媒体URL，只允许在**idle**状态下设置。 支持的视频格式：mp4、mpeg-ts、mkv。 支持的音频格式：m4a、aac、mp3、ogg、wav、flac、amr、ape。 **支持路径示例**： 1. fd类型播放：fd://xx。 ![](./img/zh-cn_image_0000002631414456.png) 2. http网络播放：http\://xx。 3. https网络播放：https\://xx。 4. HLS网络播放路径：http\://xx或者https\://xx。 **说明：** - 设置网络播放路径，需[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)：[ohos.permission.INTERNET](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all#ohospermissioninternet)，相关错误码: [201 权限校验失败](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section201-权限校验失败)。 - 从API version 11开始不支持webm。 - 将资源句柄（fd）传递给AVPlayer实例之后，请不要通过该资源句柄做其他读写操作，包括但不限于将同一个资源句柄传递给多个AVPlayer / AVMetadataExtractor / AVImageGenerator / AVTranscoder。同一时间通过同一个资源句柄读写文件时存在竞争关系，将导致媒体播放器数据获取异常。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| url9+ | string | 否 | 是 | 媒体URL，只允许在**idle**状态下设置。 支持的视频格式：mp4、mpeg-ts、mkv。 支持的音频格式：m4a、aac、mp3、ogg、wav、flac、amr、ape。 **支持路径示例**： 1. fd类型播放：fd://xx。 ![](./img/zh-cn_image_0000002671395443.png) 2. http网络播放：http\://xx。 3. https网络播放：https\://xx。 4. HLS网络播放路径：http\://xx或者https\://xx。 **说明：** - 设置网络播放路径，需[声明权限](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/declare-permissions)：[ohos.permission.INTERNET](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/permissions-for-all#ohospermissioninternet)，相关错误码: [201 权限校验失败](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/errorcode-universal#section201-权限校验失败)。 - 从API version 11开始不支持webm。 - 将资源句柄（fd）传递给AVPlayer实例之后，请不要通过该资源句柄做其他读写操作，包括但不限于将同一个资源句柄传递给多个AVPlayer / AVMetadataExtractor / AVImageGenerator / AVTranscoder。同一时间通过同一个资源句柄读写文件时存在竞争关系，将导致媒体播放器数据获取异常。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | fdSrc9+ | [AVFileDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-i#avfiledescriptor9) | 否 | 是 | 媒体文件描述，只允许在**idle**状态下设置。 **使用场景**：应用中的媒体资源被连续存储在同一个文件中。 支持的视频格式（mp4、mpeg-ts、mkv）。 支持的音频格式（m4a、aac、mp3、ogg、wav、flac、amr、ape）。 **使用示例**： 假设一个连续存储的媒体文件： 视频1（地址偏移：0，字节长度:100）； 视频2（地址偏移：101，字节长度：50）； 视频3（地址偏移：151，字节长度：150）； 1. 播放视频1：AVFileDescriptor { fd = 资源句柄; offset = 0; length = 100; }。 2. 播放视频2：AVFileDescriptor { fd = 资源句柄; offset = 101; length = 50; }。 3. 播放视频3：AVFileDescriptor { fd = 资源句柄; offset = 151; length = 150; }。 假设是一个独立的媒体文件: 请使用src=fd://xx。 **说明：** 从API version 11开始不支持webm。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | dataSrc10+ | [AVDataSrcDescriptor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-i#avdatasrcdescriptor10) | 否 | 是 | 流式媒体资源描述，只允许在**idle**状态下设置。 **使用场景**：应用播放从远端下载到本地的文件，在应用未下载完整音视频资源时，提前播放已获取的资源数据。若将已获取的资源数据写入到本地文件中，同时从本地文件中读取数据，即可实现边播边缓存的能力。 支持的视频格式（mp4、mpeg-ts、mkv）。 支持的音频格式（m4a、aac、mp3、ogg、wav、flac、amr、ape）。 **使用示例**： 假设用户正在从远端服务器获取音视频媒体文件，希望下载到本地的同时播放已经下载好的部分： 1.用户需要获取媒体文件的总大小size（单位为字节），获取不到时设置为-1。 2.用户需要实现回调函数func用于填写数据，如果size = -1，则func形式为：func(buffer: ArrayBuffer, length: number)，此时播放器只会按照顺序获取数据；否则func形式为：func(buffer: ArrayBuffer, length: number, pos: number)，播放器会按需跳转并获取数据。 3.用户设置AVDataSrcDescriptor {fileSize = size, callback = func}。 **注意事项**： 如果播放的是mp4/m4a格式用户需要保证moov字段（媒体信息字段）在mdat字段（媒体数据字段）之前，或者moov之前的字段小于10M，否则会导致解析失败无法播放。 **说明：** 从API version 11开始不支持webm。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | surfaceId9+ | string | 否 | 是 | 视频窗口ID，默认无窗口。 仅支持在**initialized**状态下初始化。 初始化后可以在**prepared**/**playing**/**paused**/**completed**/**stopped**状态下重新设置，重新设置后视频播放将在新的窗口渲染。 使用场景：视频播放时的窗口渲染（纯音频播放时不涉及）。 **使用示例**： 通过[getXComponentSurfaceId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent#getxcomponentsurfaceid9)接口创建surfaceId。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
@@ -3197,7 +3197,7 @@ addSubtitleFromUrl(url: string): Promise<void>
 
 ```
 async function test(){
-  let fdUrl:string = 'http://xxx.xxx.xxx/xx/index.srt';
+  let fdUrl:string = 'https://abc.bcd.example/cde/index.srt'; // 此处仅为示意，请替换为真实资源文件URL。
   let avPlayer: media.AVPlayer = await media.createAVPlayer();
   avPlayer.addSubtitleFromUrl(fdUrl);
 }

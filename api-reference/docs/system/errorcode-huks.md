@@ -2,8 +2,8 @@
 title: "HUKS错误码"
 upstream_id: "harmonyos-references/errorcode-huks"
 catalog: "harmonyos-references"
-content_hash: "4ae7d014cf80"
-synced_at: "2026-07-09T00:59:22.474078"
+content_hash: "e6eb563237b3"
+synced_at: "2026-07-17T16:18:01.873538"
 ---
 
 # HUKS错误码
@@ -240,11 +240,21 @@ Device environment or input parameter abnormal.
 
 可能原因
 
-外部的硬件出错，文件错误等。
+1. 设备无证书、证书过期会导致需要使用证书的相关业务失败，例如在线匿名密钥证明、分布式密钥服务。
+2. 在线匿名密钥证明需要设备证书服务[Device Certificate Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-certificate-kit)与云端交互获取证书链，需要网络畅通。未联网、网络不稳定、网络超时等场景会导致在线匿名密钥证明失败。
+3. 匿名密钥证明涉及用户隐私，用户首次启用新设备时未同意OOBE(首次开机向导)中的隐私声明协议。
+4. 在线匿名密钥证明采用的是异步逻辑，有固定时间限制，设备证书服务[Device Certificate Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-certificate-kit)服务端与客户端连接超时会导致在线匿名密钥证明失败。
+5. 设备首次启动时注册各种Ability（例如生成、导入、导出、删除密钥、加密、解密、签名、验签、派生、哈希、MAC等）失败。
+6. 其它系统内部错误（IPC发送数据失败、NAPI层错误等）。
 
 处理步骤
 
-拿错误码与日志在社区反馈。
+1. 检查设备证书有效性：可调用[Device Certificate Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-certificate-kit)提供的[证书查询接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/device-certificate-api)，确认证书是否存在及是否在有效期内；若证书缺失或已过期，请参考[Device Certificate Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-certificate-kit)文档处理。
+2. 保证网络正常。
+3. 同意OOBE(首次开机向导)中的隐私声明协议。
+4. 可尝试重新调用在线匿名密钥证明接口，若问题持续，请参考[Device Certificate Kit](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/device-certificate-kit)文档排查故障原因。
+5. 系统崩溃会导致Ability注册失败。可在DevEco Studio中打开 FaultLog，查看是否存在系统崩溃记录进一步分析。可尝试重启设备查看故障是否恢复。
+6. 在日志中搜索huks具体定位系统层面的其它错误。
 
 #### 12000013 密钥设置生物访问控制时，待绑定的凭据不存在
 

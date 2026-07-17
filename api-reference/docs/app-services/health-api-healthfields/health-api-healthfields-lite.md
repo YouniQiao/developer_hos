@@ -2,8 +2,8 @@
 title: "healthFields (运动健康数据字段)(Lite)"
 upstream_id: "harmonyos-references/health-api-healthfields-lite"
 catalog: "harmonyos-references"
-content_hash: "403a756629d2"
-synced_at: "2026-07-09T01:01:20.977457"
+content_hash: "f8008c3be955"
+synced_at: "2026-07-17T16:19:45.396292"
 ---
 
 # healthFields (运动健康数据字段)(Lite)
@@ -71,11 +71,11 @@ import healthStore from '@hms.health.store';
 
 模型约束： 此接口仅可在FA模型下使用。
 
-| **名称** | **类型** | 只读 | 可选 | **说明** |
-| --- | --- | --- | --- | --- |
-| trainingWeight | number[] | 否 | 否 | 训练重量，数组长度最大为10。 |
-| groupCount | number[] | 否 | 否 | 训练组数，数组长度最大为10。 |
-| groupTime | number[] | 否 | 否 | 每组训练用时，数组长度最大为10。 |
+| **名称** | **类型** | 必填 | **说明** |
+| --- | --- | --- | --- |
+| trainingWeight | number[] | 是 | 训练重量，数组长度最大为10。 |
+| groupCount | number[] | 是 | 训练组数，数组长度最大为10。 |
+| groupTime | number[] | 是 | 每组训练用时，数组长度最大为10。 |
 
 #### ActionSummary
 
@@ -87,14 +87,14 @@ import healthStore from '@hms.health.store';
 
 模型约束： 此接口仅可在FA模型下使用。
 
-| **名称** | **类型** | 只读 | 可选 | **说明** |
-| --- | --- | --- | --- | --- |
-| actionName | string | 否 | 否 | 动作名称，长度不能超过50个字节。 |
-| groupRestingTime | number | 否 | 否 | 组间休息时间。 |
-| actionTimes | number | 否 | 是 | 当前训练动作组数，取值范围[0,10]。 |
-| trainingVolume | number | 否 | 是 | 总训练重量。 |
-| weightUnit | 'kg' | 'lbs' | 否 | 是 | 训练重量单位，默认为'kg'。 |
-| groups | [GroupSummary](#groupsummary)[] | 否 | 否 | 训练组数详情。 |
+| **名称** | **类型** | 必填 | **说明** |
+| --- | --- | --- | --- |
+| actionName | string | 是 | 动作名称，长度不能超过50个字节。 |
+| groupRestingTime | number | 是 | 组间休息时间。 |
+| actionTimes | number | 否 | 当前训练动作组数，默认值为0，取值范围[0,10]。 |
+| trainingVolume | number | 否 | 总训练重量，默认值为0。 |
+| weightUnit | 'kg' | 'lbs' | 否 | 训练重量单位，默认为'kg'。 |
+| groups | [GroupSummary](#groupsummary)[] | 是 | 训练组数详情。 |
 
 #### BadmintonDetail
 
@@ -124,28 +124,28 @@ import healthStore from '@hms.health.store';
 | --- | --- | --- | --- |
 | startTime | number | 是 | 运动开始时间，Unix时间戳，单位：ms。 |
 | totalTime | number | 是 | 运动总时长，单位：s。 |
-| targetDuration | number | 否 | 目标运动时长，单位：s。 |
-| avgHeartRate | number | 否 | 运动全程平均心率，单位：bpm。 |
-| maxHeartRate | number | 否 | 运动过程最高心率，单位：bpm。 |
-| mHeartrateZoneType | number | 否 | 心率区间类型，0为最大心率区间，1为储备心率区间。 |
-| startHeartRate | number | 否 | 恢复心率测量初始时的心率，单位：bpm。 |
-| endHeartRate | number | 否 | 恢复心率测量结束时的心率，单位：bpm。 |
-| loadPeakLevel | number | 否 | 运动负荷峰值等级，等级越大运动效果越好。 |
-| aerobicTrainingStress | number | 否 | 有氧训练压力值，量化有氧运动负荷程度，取值范围：[0.0, 5.0]。 |
-| anaerobicTrainingStress | number | 否 | 无氧训练压力值，量化无氧运动负荷程度，取值范围：[0.0, 5.0]。 |
-| recoveryTime | number | 否 | 预估恢复时间，单位：h。 |
+| targetDuration | number | 否 | 目标运动时长，单位：s，默认值：0。 |
+| avgHeartRate | number | 否 | 运动全程平均心率，单位：bpm，默认值：0。 |
+| maxHeartRate | number | 否 | 运动过程最高心率，单位：bpm，默认值：0。 |
+| mHeartrateZoneType | number | 否 | 心率区间类型，0为最大心率区间，1为储备心率区间，默认值：0。 |
+| startHeartRate | number | 否 | 恢复心率测量初始时的心率，单位：bpm，默认值：0。 |
+| endHeartRate | number | 否 | 恢复心率测量结束时的心率，单位：bpm，默认值：0。 |
+| loadPeakLevel | number | 否 | 运动负荷峰值等级，等级越大运动效果越好，默认值：0。 |
+| aerobicTrainingStress | number | 否 | 有氧训练压力值，量化有氧运动负荷程度，取值范围：[0.0, 5.0]，默认值：0。 |
+| anaerobicTrainingStress | number | 否 | 无氧训练压力值，量化无氧运动负荷程度，取值范围：[0.0, 5.0]，默认值：0。 |
+| recoveryTime | number | 否 | 预估恢复时间，单位：h，默认值：0。 |
 | totalCalories | number | 是 | 运动消耗总卡路里，包含基础代谢与活动消耗，单位：cal，取值范围：(0, ∞)。 |
-| activeCalorie | number | 否 | 运动主动消耗的卡路里，不含基础代谢，单位：cal，取值范围：(0, ∞)。 |
-| avgShotSpeed | number | 否 | 平均击球速度，单位：km/h，取值范围：[0,500]。 |
-| maxShotSpeed | number | 否 | 最高击球速度，单位：km/h，取值范围：[0,500]。 |
-| shots | number | 否 | 总击球次数，取值范围：[0,20000]。 |
-| maxContinuousRally | number | 否 | 最长连续对打回合数，取值范围：[0,10000]。 |
-| forehandStroke | number | 否 | 正手击球次数，取值范围：[0,10000]。 |
-| backhandStroke | number | 否 | 反手击球次数，取值范围：[0,10000]。 |
-| overhandStroke | number | 否 | 上手击球次数，如发球、扣杀准备动作，取值范围：[0,10000]。 |
-| underhandStroke | number | 否 | 下手击球次数，如挑球、切球，取值范围：[0,10000]。 |
-| smash | number | 否 | 扣杀次数，取值范围：[0,10000]。 |
-| highClear | number | 否 | 高远球次数，取值范围：[0,10000]。 |
+| activeCalorie | number | 否 | 运动主动消耗的卡路里，不含基础代谢，单位：cal，取值范围：(0, ∞)，默认值：0。 |
+| avgShotSpeed | number | 否 | 平均击球速度，单位：km/h，取值范围：[0,500]，默认值：0。 |
+| maxShotSpeed | number | 否 | 最高击球速度，单位：km/h，取值范围：[0,500]，默认值：0。 |
+| shots | number | 否 | 总击球次数，取值范围：[0,20000]，默认值：0。 |
+| maxContinuousRally | number | 否 | 最长连续对打回合数，取值范围：[0,10000]，默认值：0。 |
+| forehandStroke | number | 否 | 正手击球次数，取值范围：[0,10000]，默认值：0。 |
+| backhandStroke | number | 否 | 反手击球次数，取值范围：[0,10000]，默认值：0。 |
+| overhandStroke | number | 否 | 上手击球次数，如发球、扣杀准备动作，取值范围：[0,10000]，默认值：0。 |
+| underhandStroke | number | 否 | 下手击球次数，如挑球、切球，取值范围：[0,10000]，默认值：0。 |
+| smash | number | 否 | 扣杀次数，取值范围：[0,10000]，默认值：0。 |
+| highClear | number | 否 | 高远球次数，取值范围：[0,10000]，默认值：0。 |
 
 #### SoccerDetail
 
@@ -175,20 +175,20 @@ import healthStore from '@hms.health.store';
 | --- | --- | --- | --- |
 | startTime | number | 是 | 运动开始时间，Unix时间戳，单位：ms。 |
 | totalTime | number | 是 | 运动总时长，单位：s。 |
-| targetDuration | number | 否 | 目标运动时长，单位：s。 |
-| avgHeartRate | number | 否 | 运动全程平均心率，单位：bpm。 |
-| maxHeartRate | number | 否 | 运动过程最高心率，单位：bpm。 |
-| mHeartrateZoneType | number | 否 | 心率区间类型，0为最大心率区间，1为储备心率区间。 |
-| startHeartRate | number | 否 | 恢复心率测量初始时的心率，单位：bpm。 |
-| endHeartRate | number | 否 | 恢复心率测量结束时的心率，单位：bpm。 |
-| loadPeakLevel | number | 否 | 运动负荷峰值等级，等级越大运动效果越好。 |
-| aerobicTrainingStress | number | 否 | 有氧训练压力值，量化有氧运动负荷程度，取值范围：[0.0, 5.0]。 |
-| anaerobicTrainingStress | number | 否 | 无氧训练压力值，量化无氧运动负荷程度，取值范围：[0.0, 5.0]。 |
-| recoveryTime | number | 否 | 预估恢复时间，单位：h。 |
+| targetDuration | number | 否 | 目标运动时长，单位：s，默认值：0。 |
+| avgHeartRate | number | 否 | 运动全程平均心率，单位：bpm，默认值：0。 |
+| maxHeartRate | number | 否 | 运动过程最高心率，单位：bpm，默认值：0。 |
+| mHeartrateZoneType | number | 否 | 心率区间类型，0为最大心率区间，1为储备心率区间，默认值：0。 |
+| startHeartRate | number | 否 | 恢复心率测量初始时的心率，单位：bpm，默认值：0。 |
+| endHeartRate | number | 否 | 恢复心率测量结束时的心率，单位：bpm，默认值：0。 |
+| loadPeakLevel | number | 否 | 运动负荷峰值等级，等级越大运动效果越好，默认值：0。 |
+| aerobicTrainingStress | number | 否 | 有氧训练压力值，量化有氧运动负荷程度，取值范围：[0.0, 5.0]，默认值：0。 |
+| anaerobicTrainingStress | number | 否 | 无氧训练压力值，量化无氧运动负荷程度，取值范围：[0.0, 5.0]，默认值：0。 |
+| recoveryTime | number | 否 | 预估恢复时间，单位：h，默认值：0。 |
 | totalCalories | number | 是 | 运动消耗总卡路里，包含基础代谢与活动消耗，单位：cal，取值范围：(0, ∞)。 |
 | activeCalorie | number | 是 | 运动主动消耗的卡路里，不含基础代谢，单位：cal，取值范围：(0, ∞)。 |
-| goalsTimes | number | 否 | 进球次数，取值范围：[0,10000]。 |
-| assistsTimes | number | 否 | 助攻次数，取值范围：[0,10000]。 |
+| goalsTimes | number | 否 | 进球次数，取值范围：[0,10000]，默认值：0。 |
+| assistsTimes | number | 否 | 助攻次数，取值范围：[0,10000]，默认值：0。 |
 
 #### StrengthTrainingSummary
 
@@ -204,23 +204,23 @@ import healthStore from '@hms.health.store';
 | --- | --- | --- | --- |
 | startTime | number | 是 | 运动开始时间，Unix时间戳，单位：ms。 |
 | totalTime | number | 是 | 运动总时长，单位：s。 |
-| targetDuration | number | 否 | 目标运动时长，单位：s。 |
-| avgHeartRate | number | 否 | 运动全程平均心率，单位：bpm。 |
-| maxHeartRate | number | 否 | 运动过程最高心率，单位：bpm。 |
-| mHeartrateZoneType | number | 否 | 心率区间类型，0为最大心率区间，1为储备心率区间。 |
-| startHeartRate | number | 否 | 恢复心率测量初始时的心率，单位：bpm。 |
-| endHeartRate | number | 否 | 恢复心率测量结束时的心率，单位：bpm。 |
-| loadPeakLevel | number | 否 | 运动负荷峰值等级，等级越大运动效果越好。 |
-| aerobicTrainingStress | number | 否 | 有氧训练压力值，量化有氧运动负荷程度，取值范围：[0.0, 5.0]。 |
-| anaerobicTrainingStress | number | 否 | 无氧训练压力值，量化无氧运动负荷程度，取值范围：[0.0, 5.0]。 |
-| recoveryTime | number | 否 | 预估恢复时间，单位：h。 |
+| targetDuration | number | 否 | 目标运动时长，单位：s，默认值：0。 |
+| avgHeartRate | number | 否 | 运动全程平均心率，单位：bpm，默认值：0。 |
+| maxHeartRate | number | 否 | 运动过程最高心率，单位：bpm，默认值：0。 |
+| mHeartrateZoneType | number | 否 | 心率区间类型，0为最大心率区间，1为储备心率区间，默认值：0。 |
+| startHeartRate | number | 否 | 恢复心率测量初始时的心率，单位：bpm，默认值：0。 |
+| endHeartRate | number | 否 | 恢复心率测量结束时的心率，单位：bpm，默认值：0。 |
+| loadPeakLevel | number | 否 | 运动负荷峰值等级，等级越大运动效果越好，默认值：0。 |
+| aerobicTrainingStress | number | 否 | 有氧训练压力值，量化有氧运动负荷程度，取值范围：[0.0, 5.0]，默认值：0。 |
+| anaerobicTrainingStress | number | 否 | 无氧训练压力值，量化无氧运动负荷程度，取值范围：[0.0, 5.0]，默认值：0。 |
+| recoveryTime | number | 否 | 预估恢复时间，单位：h，默认值：0。 |
 | totalCalories | number | 是 | 运动消耗总卡路里，包含基础代谢与活动消耗，单位：cal，取值范围：(0, ∞)。 |
-| activeCalorie | number | 是 | 运动主动消耗的卡路里，不含基础代谢,单位：cal，取值范围：(0, ∞)。 |
-| actionCount | number | 否 | 动作个数。 |
-| totalTrainingVolume | number | 否 | 训练总容量,单位：kg。 |
-| actionGroups | number | 否 | 总组数。 |
-| rpe | number | 否 | 主观疲劳等级，值越大疲劳等级越高，取值范围：[1,10]。 |
-| actions | [ActionSummary](#actionsummary)[] | 否 | 动作类型组数。 |
+| activeCalorie | number | 是 | 运动主动消耗的卡路里，不含基础代谢，单位：cal，取值范围：(0, ∞)。 |
+| actionCount | number | 否 | 动作个数，默认值：0。 |
+| totalTrainingVolume | number | 否 | 训练总容量，单位：kg，默认值：0。 |
+| actionGroups | number | 否 | 总组数，默认值：0。 |
+| rpe | number | 否 | 主观疲劳等级，值越大疲劳等级越高，取值范围：[1,10]，默认值：0。 |
+| actions | [healthFields.ActionSummary](#actionsummary)[] | 否 | 动作类型组数，默认为空。 |
 
 #### StrengthTrainingDetail
 
@@ -250,22 +250,22 @@ import healthStore from '@hms.health.store';
 | --- | --- | --- | --- |
 | startTime | number | 是 | 运动开始时间，Unix时间戳，单位：ms。 |
 | totalTime | number | 是 | 运动总时长，单位：s。 |
-| targetDuration | number | 否 | 目标运动时长，单位：s。 |
-| avgHeartRate | number | 否 | 运动全程平均心率，单位：bpm。 |
-| maxHeartRate | number | 否 | 运动过程最高心率，单位：bpm。 |
-| mHeartrateZoneType | number | 否 | 心率区间类型，0为最大心率区间，1为储备心率区间。 |
-| startHeartRate | number | 否 | 恢复心率测量初始时的心率，单位：bpm。 |
-| endHeartRate | number | 否 | 恢复心率测量结束时的心率，单位：bpm。 |
-| loadPeakLevel | number | 否 | 运动负荷峰值等级，等级越大运动效果越好。 |
-| aerobicTrainingStress | number | 否 | 有氧训练压力值，量化有氧运动负荷程度，取值范围：[0.0, 5.0]。 |
-| anaerobicTrainingStress | number | 否 | 无氧训练压力值，量化无氧运动负荷程度，取值范围：[0.0, 5.0]。 |
-| recoveryTime | number | 否 | 预估恢复时间，单位：h。 |
+| targetDuration | number | 否 | 目标运动时长，单位：s，默认值：0。 |
+| avgHeartRate | number | 否 | 运动全程平均心率，单位：bpm，默认值：0。 |
+| maxHeartRate | number | 否 | 运动过程最高心率，单位：bpm，默认值：0。 |
+| mHeartrateZoneType | number | 否 | 心率区间类型，0为最大心率区间，1为储备心率区间，默认值：0。 |
+| startHeartRate | number | 否 | 恢复心率测量初始时的心率，单位：bpm，默认值：0。 |
+| endHeartRate | number | 否 | 恢复心率测量结束时的心率，单位：bpm，默认值：0。 |
+| loadPeakLevel | number | 否 | 运动负荷峰值等级，等级越大运动效果越好，默认值：0。 |
+| aerobicTrainingStress | number | 否 | 有氧训练压力值，量化有氧运动负荷程度，取值范围：[0.0, 5.0]，默认值：0。 |
+| anaerobicTrainingStress | number | 否 | 无氧训练压力值，量化无氧运动负荷程度，取值范围：[0.0, 5.0]，默认值：0。 |
+| recoveryTime | number | 否 | 预估恢复时间，单位：h，默认值：0。 |
 | totalCalories | number | 是 | 运动消耗总卡路里，包含基础代谢与活动消耗，单位：cal，取值范围：(0, ∞)。 |
-| activeCalorie | number | 是 | 运动主动消耗的卡路里，不含基础代谢,单位：cal，取值范围：(0, ∞)。 |
-| forehand | number | 否 | 所有正手方向的击球次数。 |
-| backhand | number | 否 | 所有反手方向的击球次数。 |
-| swingTimes | number | 否 | 总挥拍次数(包含所有正手发球，正手击球，反手击球次数)。 |
-| maxContinuousRally | number | 否 | 最长连续击球次数。 |
+| activeCalorie | number | 是 | 运动主动消耗的卡路里，不含基础代谢，单位：cal，取值范围：(0, ∞)。 |
+| forehand | number | 否 | 所有正手方向的击球次数，默认值：0。 |
+| backhand | number | 否 | 所有反手方向的击球次数，默认值：0。 |
+| swingTimes | number | 否 | 总挥拍次数(包含所有正手发球，正手击球，反手击球次数)，默认值：0。 |
+| maxContinuousRally | number | 否 | 最长连续击球次数，默认值：0。 |
 
 #### TennisDetail
 
@@ -279,7 +279,7 @@ import healthStore from '@hms.health.store';
 
 | **名称** | **类型** | 必填 | **说明** |
 | --- | --- | --- | --- |
-| exerciseHeartRate | [ExerciseHeartRate](#exerciseheartrate)[] | 否 | 运动过程实时心率数据数组，单位为次/分钟。 |
+| exerciseHeartRate | [ExerciseHeartRate](#exerciseheartrate)[] | 否 | 运动心率详情列表，若未填写，默认为空。 |
 
 #### StairClimbSummary
 
@@ -295,21 +295,21 @@ import healthStore from '@hms.health.store';
 | --- | --- | --- | --- |
 | startTime | number | 是 | 运动开始时间，Unix时间戳，单位：ms。 |
 | totalTime | number | 是 | 运动总时长，单位：s。 |
-| targetDuration | number | 否 | 目标运动时长，单位：s。 |
-| avgHeartRate | number | 否 | 运动全程平均心率，单位：bpm。 |
-| maxHeartRate | number | 否 | 运动过程最高心率，单位：bpm。 |
-| mHeartrateZoneType | number | 否 | 心率区间类型，0为最大心率区间，1为储备心率区间。 |
-| startHeartRate | number | 否 | 恢复心率测量初始时的心率，单位：bpm。 |
-| endHeartRate | number | 否 | 恢复心率测量结束时的心率，单位：bpm。 |
-| loadPeakLevel | number | 否 | 运动负荷峰值等级，等级越大运动效果越好。 |
-| aerobicTrainingStress | number | 否 | 有氧训练压力值，量化有氧运动负荷程度，取值范围：[0.0, 5.0]。 |
-| anaerobicTrainingStress | number | 否 | 无氧训练压力值，量化无氧运动负荷程度，取值范围：[0.0, 5.0]。 |
-| recoveryTime | number | 否 | 预估恢复时间，单位：h。 |
+| targetDuration | number | 否 | 目标运动时长，单位：s，默认值：0。 |
+| avgHeartRate | number | 否 | 运动全程平均心率，单位：bpm，默认值：0。 |
+| maxHeartRate | number | 否 | 运动过程最高心率，单位：bpm，默认值：0。 |
+| mHeartrateZoneType | number | 否 | 心率区间类型，0为最大心率区间，1为储备心率区间，默认值：0。 |
+| startHeartRate | number | 否 | 恢复心率测量初始时的心率，单位：bpm，默认值：0。 |
+| endHeartRate | number | 否 | 恢复心率测量结束时的心率，单位：bpm，默认值：0。 |
+| loadPeakLevel | number | 否 | 运动负荷峰值等级，等级越大运动效果越好，默认值：0。 |
+| aerobicTrainingStress | number | 否 | 有氧训练压力值，量化有氧运动负荷程度，取值范围：[0.0, 5.0]，默认值：0。 |
+| anaerobicTrainingStress | number | 否 | 无氧训练压力值，量化无氧运动负荷程度，取值范围：[0.0, 5.0]，默认值：0。 |
+| recoveryTime | number | 否 | 预估恢复时间，单位：h，默认值：0。 |
 | totalCalories | number | 是 | 运动消耗总卡路里，包含基础代谢与活动消耗，单位：cal，取值范围：(0, ∞)。 |
-| activeCalorie | number | 是 | 运动主动消耗的卡路里，不含基础代谢,单位：cal，取值范围：(0, ∞)。 |
+| activeCalorie | number | 是 | 运动主动消耗的卡路里，不含基础代谢，单位：cal，取值范围：(0, ∞)。 |
 | totalSteps | number | 是 | 运动总步数。 |
 | elevationGain | number | 是 | 累计爬升。 |
-| floors | number | 否 | 爬楼层数。 |
+| floors | number | 否 | 爬楼层数，默认值：0。 |
 | avgFloorSpeed | number | 是 | 平均每分钟楼层数。 |
 
 #### StairClimbDetail
@@ -324,7 +324,7 @@ import healthStore from '@hms.health.store';
 
 | **名称** | **类型** | 必填 | **说明** |
 | --- | --- | --- | --- |
-| exerciseHeartRate | [ExerciseHeartRate](#exerciseheartrate)[] | 否 | 运动过程实时心率数据数组，单位为次/分钟。 |
+| exerciseHeartRate | [ExerciseHeartRate](#exerciseheartrate)[] | 否 | 运动心率详情列表，若未填写，默认为空。 |
 
 #### PickleBallSummary
 
@@ -340,22 +340,22 @@ import healthStore from '@hms.health.store';
 | --- | --- | --- | --- |
 | startTime | number | 是 | 运动开始时间，Unix时间戳，单位：ms。 |
 | totalTime | number | 是 | 运动总时长，单位：s。 |
-| targetDuration | number | 否 | 目标运动时长，单位：s。 |
-| avgHeartRate | number | 否 | 运动全程平均心率，单位：bpm。 |
-| maxHeartRate | number | 否 | 运动过程最高心率，单位：bpm。 |
-| mHeartrateZoneType | number | 否 | 心率区间类型，0为最大心率区间，1为储备心率区间。 |
-| startHeartRate | number | 否 | 恢复心率测量初始时的心率，单位：bpm。 |
-| endHeartRate | number | 否 | 恢复心率测量结束时的心率，单位：bpm。 |
-| loadPeakLevel | number | 否 | 运动负荷峰值等级，等级越大运动效果越好。 |
-| aerobicTrainingStress | number | 否 | 有氧训练压力值，量化有氧运动负荷程度，取值范围：[0.0, 5.0]。 |
-| anaerobicTrainingStress | number | 否 | 无氧训练压力值，量化无氧运动负荷程度，取值范围：[0.0, 5.0]。 |
-| recoveryTime | number | 否 | 预估恢复时间，单位：h。 |
+| targetDuration | number | 否 | 目标运动时长，单位：s，默认值：0。 |
+| avgHeartRate | number | 否 | 运动全程平均心率，单位：bpm，默认值：0。 |
+| maxHeartRate | number | 否 | 运动过程最高心率，单位：bpm，默认值：0。 |
+| mHeartrateZoneType | number | 否 | 心率区间类型，0为最大心率区间，1为储备心率区间，默认值：0。 |
+| startHeartRate | number | 否 | 恢复心率测量初始时的心率，单位：bpm，默认值：0。 |
+| endHeartRate | number | 否 | 恢复心率测量结束时的心率，单位：bpm，默认值：0。 |
+| loadPeakLevel | number | 否 | 运动负荷峰值等级，等级越大运动效果越好，默认值：0。 |
+| aerobicTrainingStress | number | 否 | 有氧训练压力值，量化有氧运动负荷程度，取值范围：[0.0, 5.0]，默认值：0。 |
+| anaerobicTrainingStress | number | 否 | 无氧训练压力值，量化无氧运动负荷程度，取值范围：[0.0, 5.0]，默认值：0。 |
+| recoveryTime | number | 否 | 预估恢复时间，单位：h，默认值：0。 |
 | totalCalories | number | 是 | 运动消耗总卡路里，包含基础代谢与活动消耗，单位：cal，取值范围：(0, ∞)。 |
-| activeCalorie | number | 是 | 运动主动消耗的卡路里，不含基础代谢,单位：cal，取值范围：(0, ∞)。 |
-| forehand | number | 否 | 所有正手方向的击球次数。 |
-| backhand | number | 否 | 所有反手方向的击球次数。 |
-| swingTimes | number | 否 | 总挥拍次数(包含所有正手发球，正手击球，反手击球次数)。 |
-| maxContinuousRally | number | 否 | 最长连续击球次数。 |
+| activeCalorie | number | 是 | 运动主动消耗的卡路里，不含基础代谢，单位：cal，取值范围：(0, ∞)。 |
+| forehand | number | 否 | 所有正手方向的击球次数，默认值：0。 |
+| backhand | number | 否 | 所有反手方向的击球次数，默认值：0。 |
+| swingTimes | number | 否 | 总挥拍次数(包含所有正手发球，正手击球，反手击球次数)，默认值：0。 |
+| maxContinuousRally | number | 否 | 最长连续击球次数，默认值：0。 |
 
 #### PickleBallDetail
 
@@ -369,4 +369,4 @@ import healthStore from '@hms.health.store';
 
 | **名称** | **类型** | 必填 | **说明** |
 | --- | --- | --- | --- |
-| exerciseHeartRate | [ExerciseHeartRate](#exerciseheartrate)[] | 否 | 运动过程实时心率数据数组，单位为次/分钟。 |
+| exerciseHeartRate | [ExerciseHeartRate](#exerciseheartrate)[] | 否 | 运动心率详情列表，若未填写，默认为空。 |

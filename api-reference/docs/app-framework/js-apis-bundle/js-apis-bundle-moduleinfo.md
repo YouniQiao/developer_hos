@@ -2,8 +2,8 @@
 title: "ModuleInfo"
 upstream_id: "harmonyos-references/js-apis-bundle-moduleinfo"
 catalog: "harmonyos-references"
-content_hash: "d03276bc6dd6"
-synced_at: "2026-07-09T00:57:11.770304"
+content_hash: "ab3578106c09"
+synced_at: "2026-07-17T16:15:58.500563"
 ---
 
 # ModuleInfo
@@ -23,4 +23,4 @@ synced_at: "2026-07-09T00:57:11.770304"
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | moduleName | string | 是 | 否 | 模块名称。 |
-| moduleSourceDir | string | 是 | 否 | 安装目录。不能拼接路径访问资源文件，请使用[资源管理接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager)访问资源。 |
+| moduleSourceDir | string | 是 | 否 | 安装目录。不能拼接路径访问资源文件，请使用[@ohos.resourceManager (资源管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager)访问资源。 |

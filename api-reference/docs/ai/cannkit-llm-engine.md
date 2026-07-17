@@ -2,8 +2,8 @@
 title: "llm_engine.h"
 upstream_id: "harmonyos-references/cannkit-llm-engine"
 catalog: "harmonyos-references"
-content_hash: "2e9ef2e2e73b"
-synced_at: "2026-07-09T01:01:40.850306"
+content_hash: "83c2d9ee057c"
+synced_at: "2026-07-17T16:20:03.863443"
 ---
 
 # llm_engine.h
@@ -43,9 +43,9 @@ synced_at: "2026-07-09T01:01:40.850306"
 
 | 名称 | 描述 |
 | --- | --- |
-| [HMS_LLMEngine_Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_llmengine_context) * [HMS_LLMEngineExecutor_CreateFromExecutorJson](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_llmengineexecutor_createfromexecutorjson) (const char *jsonFile) | 通过JSON配置文件创建LLM引擎上下文句柄。 |
+| [HMS_LLMEngine_Executor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_llmengine_executor) * [HMS_LLMEngineExecutor_CreateFromExecutorJson](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_llmengineexecutor_createfromexecutorjson) (const char *jsonFile) | 通过JSON配置文件创建LLM引擎上下文句柄。 |
 | void [HMS_LLMEngine_Context_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_llmengine_context_destroy) ([HMS_LLMEngine_Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_llmengine_context) **ctx) | 销毁LLM引擎上下文。 |
-| [HMS_LLMEngine_Executor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_llmengine_executor) * [HMS_LLMEngineContext_CreateFromContextJson](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_llmenginecontext_createfromcontextjson) (const char *jsonFile) | 通过JSON配置文件创建LLM引擎执行器句柄。 |
+| [HMS_LLMEngine_Context](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_llmengine_context) * [HMS_LLMEngineContext_CreateFromContextJson](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_llmenginecontext_createfromcontextjson) (const char *jsonFile) | 通过JSON配置文件创建LLM引擎执行器句柄。 |
 | void [HMS_LLMEngineExecutor_Destroy](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_llmengineexecutor_destroy) ([HMS_LLMEngine_Executor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_llmengine_executor) **executor) | 销毁一个LLM引擎执行器，该执行器内存释放。 |
 | [HMS_LLMEngine_Prompt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_llmengine_prompt) * [HMS_LLMEnginePrompt_Create](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_llmengineprompt_create) (void) | 创建一个LLM引擎提示句柄。 |
 | OH_NN_ReturnCode [HMS_LLMEnginePrompt_SetText](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_llmengineprompt_settext) ([HMS_LLMEngine_Prompt](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/cannkit#hms_llmengine_prompt) *prompt, const char *text) | 设置文本输入。 |

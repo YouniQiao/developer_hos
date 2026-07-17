@@ -2,8 +2,8 @@
 title: "ApplicationInfo"
 upstream_id: "harmonyos-references/js-apis-bundle-applicationinfo"
 catalog: "harmonyos-references"
-content_hash: "bdab1e7dfaa9"
-synced_at: "2026-07-09T00:57:11.463884"
+content_hash: "6209e62e7e6f"
+synced_at: "2026-07-17T16:15:58.395126"
 ---
 
 # ApplicationInfo
@@ -33,11 +33,11 @@ synced_at: "2026-07-09T00:57:11.463884"
 | iconId | string | 是 | 否 | 应用程序图标的资源ID值。 |
 | process | string | 是 | 否 | 应用程序的进程名称。 |
 | supportedModes | number | 是 | 否 | 标识应用支持的运行模式，当前只定义了驾驶模式（drive）。该标签只适用于车机。 |
-| moduleSourceDirs | Array | 是 | 否 | 应用程序的资源存放的相对路径。不能拼接路径访问资源文件，请使用[资源管理接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager)访问资源。 |
+| moduleSourceDirs | Array | 是 | 否 | 应用程序的资源存放的相对路径。不能拼接路径访问资源文件，请使用[@ohos.resourceManager (资源管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager)访问资源。 |
 | permissions | Array | 是 | 否 | 访问应用程序所需的权限。 通过调用[bundle.getApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundle#bundlegetapplicationinfodeprecated)接口时，传入GET_APPLICATION_INFO_WITH_PERMISSION获取。 |
 | moduleInfos | Array | 是 | 否 | 应用程序的模块信息。 |
-| entryDir | string | 是 | 否 | 应用程序的文件保存路径。不能拼接路径访问资源文件，请使用[资源管理接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager)访问资源。 |
-| codePath8+ | string | 是 | 否 | 应用程序的安装目录。不能拼接路径访问资源文件，请使用[资源管理接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager)访问资源。 |
+| entryDir | string | 是 | 否 | 应用程序的文件保存路径。不能拼接路径访问资源文件，请使用[@ohos.resourceManager (资源管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager)访问资源。 |
+| codePath8+ | string | 是 | 否 | 应用程序的安装目录。不能拼接路径访问资源文件，请使用[@ohos.resourceManager (资源管理)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-resource-manager)访问资源。 |
 | metaData8+ | Map> | 是 | 否 | 应用程序的自定义元信息。 通过调用[bundle.getApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundle#bundlegetapplicationinfodeprecated)接口时，传入GET_APPLICATION_INFO_WITH_METADATA获取。 |
 | removable8+ | boolean | 是 | 否 | 应用程序是否可以被移除，取值为true表示可以被移除，取值为false表示不可以被移除。 |
 | accessTokenId8+ | number | 是 | 否 | 应用程序的accessTokenId。 |

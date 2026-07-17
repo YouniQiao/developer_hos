@@ -2,8 +2,8 @@
 title: "SceneType"
 upstream_id: "harmonyos-references/js-apis-inner-scene-types"
 catalog: "harmonyos-references"
-content_hash: "ecb4ef945f83"
-synced_at: "2026-07-09T01:01:06.010394"
+content_hash: "c881110595dd"
+synced_at: "2026-07-17T16:19:32.887075"
 ---
 
 # SceneType
@@ -17,7 +17,7 @@ synced_at: "2026-07-09T01:01:06.010394"
 #### 导入模块
 
 ```
-import { Vec2, Vec3, Vec4, Quaternion, Aabb, Color, Rect, GeometryType, PrimitiveTopology, CustomGeometry, CubeGeometry, PlaneGeometry, SphereGeometry, CylinderGeometry, Position3, Rotation3, Scale3 } from '@kit.ArkGraphics3D';
+import { Vec2, Vec3, Vec4, Quaternion, Aabb, Color, Rect, RenderingPipelineType, GeometryType, GeometryDefinition, PrimitiveTopology, ShadowAlgorithmType, CustomGeometry, CubeGeometry, PlaneGeometry, SphereGeometry, CylinderGeometry, Mat4x4, Position3, Rotation3, Scale3 } from '@kit.ArkGraphics3D';
 ```
 
 #### Vec2
@@ -228,7 +228,7 @@ import { Vec2, Vec3, Vec4, Quaternion, Aabb, Color, Rect, GeometryType, Primitiv
 
 以radius=0.5，height=1，segmentCount=20为例，生成圆柱体的网格以及UV布局如下：
 
-![](./img/zh-cn_image_0000002661613791.png)
+![](./img/zh-cn_image_0000002671435619.png)
 
 #### Mat4x423+
 

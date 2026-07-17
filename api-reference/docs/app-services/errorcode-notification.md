@@ -1,12 +1,10 @@
 ---
-
 title: "通知错误码"
 upstream_id: "harmonyos-references/errorcode-notification"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T01:01:29.551313"
-content_hash: "9308ce345129"
+content_hash: "cae3bbebc3bf"
+synced_at: "2026-07-17T16:19:53.093873"
 ---
-
 
 # 通知错误码
 
@@ -218,19 +216,23 @@ A notification dialog box is already displayed.
 
 错误信息
 
-No permission.
+1. No permission.
+2. The right of liveView is not enabled.
 
 错误描述
 
-没有相关权限，方法将返回该错误码。
+1. 没有相关权限，方法将返回该错误码。
+2. 当应用发布三方实况类型通知，且未申请实况窗权益时，将返回该错误码。
 
 可能原因
 
-没有相关权限。
+1. 没有相关权限。
+2. 应用未申请对应场景的权益。
 
 处理步骤
 
-确认是否具有相关权限。
+1. 确认是否具有相关权限。
+2. 请确认是否申请实况窗权益。
 
 #### 1600015 当前通知状态不支持重复配置
 
@@ -321,3 +323,21 @@ The application does not implement the NotificationSubscriberExtensionAbility.
 处理步骤
 
 应用需创建NotificationSubscriberExtensionAbility，具体配置方法参考[ExtensionAbility组件](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/extensionability-overview)中的[NotificationSubscriberExtensionAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-notificationsubscriberextensionability)。
+
+#### 1600029 系统无法找到实况窗卡片自定义扩展区的ExtensionAbility
+
+错误信息
+
+The system failed to find the ExtensionAbility instance for the custom Live View widget template.
+
+错误描述
+
+当应用发布三方实况类型通知时，系统未找到自定义扩展区的ExtensionAbility实例，方法将返回该错误码。
+
+可能原因
+
+应用未配置或未正确配置实况窗卡片自定义扩展区的ExtensionAbility。
+
+处理步骤
+
+检查应用是否正确配置实况窗卡片自定义扩展区的ExtensionAbility。

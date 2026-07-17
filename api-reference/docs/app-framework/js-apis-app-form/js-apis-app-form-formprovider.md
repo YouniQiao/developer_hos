@@ -2,8 +2,8 @@
 title: "@ohos.app.form.formProvider (formProvider)"
 upstream_id: "harmonyos-references/js-apis-app-form-formprovider"
 catalog: "harmonyos-references"
-content_hash: "1995f3bba64f"
-synced_at: "2026-07-09T17:25:49.987364"
+content_hash: "294044721986"
+synced_at: "2026-07-17T16:17:42.752559"
 ---
 
 # @ohos.app.form.formProvider (formProvider)
@@ -594,7 +594,7 @@ getPublishedFormInfoById(formId: string): Promise<formInfo.FormInfo>
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
-![](./img/note_3.0-zh-cn.png) 该字段从API version 18开始支持，从API version 20开始废弃，建议使用[getPublishedRunningFormInfoById](#formprovidergetpublishedrunningforminfobyid20)替代。
+![](./img/note_3.0-zh-cn.png) 该接口从API version 18开始支持，从API version 20开始废弃，建议使用[getPublishedRunningFormInfoById](#formprovidergetpublishedrunningforminfobyid20)替代。
 
 系统能力： SystemCapability.Ability.Form
 
@@ -646,7 +646,7 @@ getPublishedFormInfos(): Promise<Array<formInfo.FormInfo>>
 
 元服务API： 从API version 18开始，该接口支持在元服务中使用。
 
-![](./img/note_3.0-zh-cn.png) 该字段从API version 18开始支持，从API version 20开始废弃，建议使用[getPublishedRunningFormInfos](#formprovidergetpublishedrunningforminfos20)替代。
+![](./img/note_3.0-zh-cn.png) 该接口从API version 18开始支持，从API version 20开始废弃，建议使用[getPublishedRunningFormInfos](#formprovidergetpublishedrunningforminfos20)替代。
 
 系统能力： SystemCapability.Ability.Form
 
@@ -704,7 +704,7 @@ requestOverflow(formId: string, overflowInfo: formInfo.OverflowInfo): Promise<vo
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| formId | string | 是 | 卡片id标识。 |
+| formId | string | 是 | 卡片标识。 |
 | overflowInfo | [formInfo.OverflowInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-form-forminfo#overflowinfo20) | 是 | 动效请求参数信息。 |
 
 返回值：
@@ -773,7 +773,7 @@ cancelOverflow(formId: string): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| formId | string | 是 | 卡片id。 |
+| formId | string | 是 | 卡片标识。 |
 
 返回值：
 
@@ -829,7 +829,7 @@ getFormRect(formId: string): Promise<formInfo.Rect>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| formId | string | 是 | 卡片id标识。 |
+| formId | string | 是 | 卡片标识。 |
 
 返回值：
 

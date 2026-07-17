@@ -2,8 +2,8 @@
 title: "@ohos.file.statvfs (文件系统空间统计)"
 upstream_id: "harmonyos-references/js-apis-file-statvfs"
 catalog: "harmonyos-references"
-content_hash: "db303550532d"
-synced_at: "2026-07-09T00:58:59.927667"
+content_hash: "52aaf4db4d4c"
+synced_at: "2026-07-17T16:17:39.120219"
 ---
 
 # @ohos.file.statvfs (文件系统空间统计)
@@ -69,7 +69,7 @@ import { common } from '@kit.AbilityKit';
 // 请在组件内获取context，确保this.getUIContext().getHostContext()返回结果为UIAbilityContext
 let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
 let path = context.filesDir;
-statfs.getFreeSize(path).then((number: freeSize) => {
+statfs.getFreeSize(path).then((freeSize: number) => {
   console.info("Succeeded in getting free size: " + freeSize);
 }).catch((err: BusinessError) => {
   console.error("Failed to get free size. Code: " + err.code + ", message: " + err.message);
@@ -120,7 +120,7 @@ import { common } from '@kit.AbilityKit';
 // 请在组件内获取context，确保this.getUIContext().getHostContext()返回结果为UIAbilityContext
 let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
 let path = context.filesDir;
-statfs.getFreeSize(path, (err: BusinessError, number: freeSize) => {
+statfs.getFreeSize(path, (err: BusinessError, freeSize: number) => {
   if (err) {
     console.error("Failed to get free size. Code: " + err.code + ", message: " + err.message);
   } else {
@@ -230,7 +230,7 @@ import { common } from '@kit.AbilityKit';
 // 请在组件内获取context，确保this.getUIContext().getHostContext()返回结果为UIAbilityContext
 let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
 let path = context.filesDir;
-statfs.getTotalSize(path).then((number: totalSize) => {
+statfs.getTotalSize(path).then((totalSize: number) => {
   console.info("Succeeded in getting total size: " + totalSize);
 }).catch((err: BusinessError) => {
   console.error("Failed to get total size. Code: " + err.code + ", message: " + err.message);
@@ -281,7 +281,7 @@ import { common } from '@kit.AbilityKit';
 // 请在组件内获取context，确保this.getUIContext().getHostContext()返回结果为UIAbilityContext
 let context = this.getUIContext().getHostContext() as common.UIAbilityContext;
 let path = context.filesDir;
-statfs.getTotalSize(path, (err: BusinessError, number: totalSize) => {
+statfs.getTotalSize(path, (err: BusinessError, totalSize: number) => {
   if (err) {
     console.error("Failed to get total size. Code: " + err.code + ", message: " + err.message);
   } else {

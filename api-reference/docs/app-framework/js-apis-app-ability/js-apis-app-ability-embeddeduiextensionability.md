@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.EmbeddedUIExtensionAbility (支持跨进程界面嵌入的ExtensionAbility组件)"
 upstream_id: "harmonyos-references/js-apis-app-ability-embeddeduiextensionability"
 catalog: "harmonyos-references"
-content_hash: "cc8182bad540"
-synced_at: "2026-07-09T00:57:04.301613"
+content_hash: "ca1e5c69560b"
+synced_at: "2026-07-17T16:15:51.943738"
 ---
 
 # @ohos.app.ability.EmbeddedUIExtensionAbility (支持跨进程界面嵌入的ExtensionAbility组件)
@@ -36,4 +36,3 @@ EmbeddedUIExtensionAbility为开发者提供了跨进程界面嵌入的能力，
 
 - 从API version 12开始，该接口在Tablet中可正常调用，在其他设备类型中无法被启动。
 - 从API version 13开始，该接口在PC/2in1、Tablet中可正常调用，在其他设备类型中无法被启动。
-- 从API version 23开始，该接口在PC/2in1、Tablet、Car中可正常调用，在其他设备类型中无法被启动。

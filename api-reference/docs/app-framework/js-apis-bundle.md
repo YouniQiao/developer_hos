@@ -2,13 +2,13 @@
 title: "@ohos.bundle (Bundle模块)"
 upstream_id: "harmonyos-references/js-apis-bundle"
 catalog: "harmonyos-references"
-content_hash: "36519a5fe739"
-synced_at: "2026-07-09T00:57:11.905781"
+content_hash: "e25368c2d957"
+synced_at: "2026-07-17T16:15:59.031972"
 ---
 
 # @ohos.bundle (Bundle模块)
 
-本模块提供应用信息查询能力，支持[包信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundle-bundleinfo)、[应用信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundle-applicationinfo)、[Ability组件信息](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundle-abilityinfo)等信息的查询，以及应用禁用状态的查询、设置等。
+本模块提供应用信息查询能力，支持[BundleInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundle-bundleinfo)、[ApplicationInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundle-applicationinfo)、[AbilityInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-bundle-abilityinfo)等信息的查询，以及应用禁用状态的查询、设置等。
 
 ![](./img/note_3.0-zh-cn.png) 本模块首批接口从API version 7开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -52,7 +52,7 @@ SystemCapability.BundleManager.BundleFramework
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | bundleName | string | 是 | 要查询的应用Bundle名称。 |
-| bundleFlags | number | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围请参考[BundleFlag说明](#bundleflagdeprecated)中应用信息相关flag。 |
+| bundleFlags | number | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围请参考[BundleFlag](#bundleflagdeprecated)说明中应用信息相关flag。 |
 | userId | number | 否 | 用户ID。默认值：调用方所在用户，取值范围：大于等于0。 |
 
 返回值：
@@ -102,7 +102,7 @@ SystemCapability.BundleManager.BundleFramework
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | bundleName | string | 是 | 要查询的应用Bundle名称。 |
-| bundleFlags | number | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag说明](#bundleflagdeprecated)中应用信息相关flag。 |
+| bundleFlags | number | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag](#bundleflagdeprecated)说明中应用信息相关flag。 |
 | userId | number | 是 | 用户ID。取值范围：大于等于0。 |
 | callback | AsyncCallback | 是 | 程序启动作为入参的回调函数，返回应用程序信息。 |
 
@@ -147,7 +147,7 @@ SystemCapability.BundleManager.BundleFramework
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | bundleName | string | 是 | 要查询的应用Bundle名称。 |
-| bundleFlags | number | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag说明](#bundleflagdeprecated)中应用信息相关flag。 |
+| bundleFlags | number | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag](#bundleflagdeprecated)说明中应用信息相关flag。 |
 | callback | AsyncCallback | 是 | 程序启动作为入参的回调函数，返回应用程序信息。 |
 
 示例：
@@ -187,7 +187,7 @@ SystemCapability.BundleManager.BundleFramework
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| bundleFlag | BundleFlag | 是 | 用于指定返回的包信息对象中包含信息的标记。取值范围：参考[BundleFlag说明](#bundleflagdeprecated)中包信息相关flag。 |
+| bundleFlag | BundleFlag | 是 | 用于指定返回的包信息对象中包含信息的标记。取值范围：参考[BundleFlag](#bundleflagdeprecated)说明中包信息相关flag。 |
 | userId | number | 否 | 用户ID。默认值：调用方所在用户，取值范围：大于等于0。 |
 
 返回值：
@@ -233,7 +233,7 @@ SystemCapability.BundleManager.BundleFramework
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| bundleFlag | BundleFlag | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag说明](#bundleflagdeprecated)中包信息相关flag。 |
+| bundleFlag | BundleFlag | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag](#bundleflagdeprecated)说明中包信息相关flag。 |
 | callback | AsyncCallback> | 是 | 程序启动作为入参的回调函数，返回所有可用的BundleInfo。 |
 
 示例：
@@ -272,7 +272,7 @@ SystemCapability.BundleManager.BundleFramework
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| bundleFlag | BundleFlag | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag说明](#bundleflagdeprecated)中包信息相关flag。 |
+| bundleFlag | BundleFlag | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag](#bundleflagdeprecated)说明中包信息相关flag。 |
 | userId | number | 是 | 用户ID。默认值：调用方所在用户，取值范围：大于等于0。 |
 | callback | AsyncCallback> | 是 | 程序启动作为入参的回调函数，返回指定用户下所有包的BundleInfo。 |
 
@@ -316,7 +316,7 @@ SystemCapability.BundleManager.BundleFramework
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | bundleName | string | 是 | 要查询的应用Bundle名称。 |
-| bundleFlags | number | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag说明](#bundleflagdeprecated)中包信息相关flag。 |
+| bundleFlags | number | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag](#bundleflagdeprecated)说明中包信息相关flag。 |
 | options | [BundleOptions](#bundleoptionsdeprecated) | 否 | 包含userid的查询选项。 |
 
 返回值：
@@ -368,7 +368,7 @@ SystemCapability.BundleManager.BundleFramework
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | bundleName | string | 是 | 需要查询的应用Bundle名称。 |
-| bundleFlags | number | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag说明](#bundleflagdeprecated)中包信息相关flag。 |
+| bundleFlags | number | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag](#bundleflagdeprecated)说明中包信息相关flag。 |
 | callback | AsyncCallback | 是 | 程序启动作为入参的回调函数，返回包信息。 |
 
 示例：
@@ -411,7 +411,7 @@ SystemCapability.BundleManager.BundleFramework
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | bundleName | string | 是 | 要查询的应用Bundle名称。 |
-| bundleFlags | number | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag说明](#bundleflagdeprecated)中包信息相关flag。 |
+| bundleFlags | number | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag](#bundleflagdeprecated)说明中包信息相关flag。 |
 | options | [BundleOptions](#bundleoptionsdeprecated) | 是 | 包含userid。 |
 | callback | AsyncCallback | 是 | 程序启动作为入参的回调函数，返回包信息。 |
 
@@ -455,7 +455,7 @@ SystemCapability.BundleManager.BundleFramework
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| bundleFlags | number | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag说明](#bundleflagdeprecated)中应用信息相关flag。 |
+| bundleFlags | number | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag](#bundleflagdeprecated)说明中应用信息相关flag。 |
 | userId | number | 否 | 用户ID。默认值：调用方所在用户，取值范围：大于等于0。 |
 
 返回值：
@@ -501,7 +501,7 @@ SystemCapability.BundleManager.BundleFramework
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| bundleFlags | number | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag说明](#bundleflagdeprecated)中应用信息相关flag。 |
+| bundleFlags | number | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag](#bundleflagdeprecated)说明中应用信息相关flag。 |
 | userId | number | 是 | 用户ID。默认值：调用方所在用户，取值范围：大于等于0。 |
 | callback | AsyncCallback> | 是 | 程序启动作为入参的回调函数，返回应用信息列表。 |
 
@@ -542,7 +542,7 @@ SystemCapability.BundleManager.BundleFramework
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| bundleFlags | number | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag说明](#bundleflagdeprecated)中应用信息相关flag。 |
+| bundleFlags | number | 是 | 用于指定返回的应用信息对象中包含信息的标记。取值范围：参考[BundleFlag](#bundleflagdeprecated)说明中应用信息相关flag。 |
 | callback | AsyncCallback> | 是 | 程序启动作为入参的回调函数，返回应用信息列表。 |
 
 示例：
@@ -578,7 +578,7 @@ SystemCapability.BundleManager.BundleFramework
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | hapFilePath | string | 是 | HAP存放路径。支持当前应用程序的绝对路径和数据目录沙箱路径。 |
-| bundleFlags | number | 是 | 用于指定要返回的BundleInfo对象中包含信息的标记。取值范围：参考[BundleFlag说明](#bundleflagdeprecated)中包信息相关flag。 |
+| bundleFlags | number | 是 | 用于指定要返回的BundleInfo对象中包含信息的标记。取值范围：参考[BundleFlag](#bundleflagdeprecated)说明中包信息相关flag。 |
 
 返回值：
 
@@ -620,7 +620,7 @@ SystemCapability.BundleManager.BundleFramework
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | hapFilePath | string | 是 | HAP存放路径，支持当前应用程序的绝对路径和数据目录沙箱路径。 |
-| bundleFlags | number | 是 | 用于指定要返回的BundleInfo对象中包含信息的标记。取值范围：参考[BundleFlag说明](#bundleflagdeprecated)中包信息相关flag。 |
+| bundleFlags | number | 是 | 用于指定要返回的BundleInfo对象中包含信息的标记。取值范围：参考[BundleFlag](#bundleflagdeprecated)说明中包信息相关flag。 |
 | callback | AsyncCallback | 是 | 程序启动作为入参的回调函数，返回HAP中包含的应用程序包的信息。 |
 
 示例：
@@ -1000,7 +1000,7 @@ SystemCapability.BundleManager.BundleFramework
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | want | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-application-want) | 是 | 包含要查询的应用Bundle名称的意图。 |
-| bundleFlags | number | 是 | 用于指定返回abilityInfo信息。取值范围：参考[BundleFlag说明](#bundleflagdeprecated)中Ability信息相关flag。 |
+| bundleFlags | number | 是 | 用于指定返回abilityInfo信息。取值范围：参考[BundleFlag](#bundleflagdeprecated)说明中Ability信息相关flag。 |
 | userId | number | 否 | 用户ID。默认值：调用方所在用户，取值范围：大于等于0。 |
 
 返回值：
@@ -1054,7 +1054,7 @@ SystemCapability.BundleManager.BundleFramework
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | want | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-application-want) | 是 | 指示包含要查询的应用Bundle名称的意图。 |
-| bundleFlags | number | 是 | 用于指定返回abilityInfo信息。取值范围：参考[BundleFlag说明](#bundleflagdeprecated)中Ability信息相关flag。 |
+| bundleFlags | number | 是 | 用于指定返回abilityInfo信息。取值范围：参考[BundleFlag](#bundleflagdeprecated)说明中Ability信息相关flag。 |
 | userId | number | 是 | 用户ID。取值范围：大于等于0。 |
 | callback | AsyncCallback> | 是 | 程序启动作为入参的回调函数，返回Ability信息。 |
 
@@ -1103,7 +1103,7 @@ SystemCapability.BundleManager.BundleFramework
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | want | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-application-want) | 是 | 指示包含要查询的应用Bundle名称的意图。 |
-| bundleFlags | number | 是 | 用于指定返回abilityInfo信息。取值范围：参考[BundleFlag说明](#bundleflagdeprecated)中Ability信息相关flag。 |
+| bundleFlags | number | 是 | 用于指定返回abilityInfo信息。取值范围：参考[BundleFlag](#bundleflagdeprecated)说明中Ability信息相关flag。 |
 | callback | AsyncCallback> | 是 | 程序启动作为入参的回调函数，返回Ability信息。 |
 
 示例：

@@ -2,8 +2,8 @@
 title: "属性"
 upstream_id: "harmonyos-references/arkts-basic-components-web-attributes"
 catalog: "harmonyos-references"
-content_hash: "44709a7b293a"
-synced_at: "2026-07-09T17:25:38.331742"
+content_hash: "900bb4dfc6ba"
+synced_at: "2026-07-17T16:17:32.861423"
 ---
 
 # 属性
@@ -1018,7 +1018,7 @@ minLogicalFontSize(size: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| size | number | 是 | 设置网页逻辑字体大小最小值，单位px。 输入值的范围为[-2^31, 2^31-1]，实际渲染时超过72px的值按照72px进行渲染，低于1px的值按照1px进行渲染。 传入null或undefined时为18。 |
+| size | number | 是 | 设置网页逻辑字体大小最小值，单位px。 输入值的范围为[-2^31, 2^31-1]，实际渲染时超过72px的值按照72px进行渲染，低于1px的值按照1px进行渲染。 传入null或undefined时为8。 |
 
 示例：
 
@@ -2667,7 +2667,7 @@ editMenuOptions(editMenu: EditMenuOptions)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| editMenu | [EditMenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#editmenuoptions) | 是 | Web自定义文本菜单选项。 菜单项数量，及菜单的content大小、icon图标尺寸，与ArkUI [Menu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-menu)组件保持一致。 菜单中系统自带的id枚举值（[TextMenuItemId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#textmenuitemid12)）在Web中仅支持CUT、COPY、PASTE、SELECT_ALL、TRANSLATE、SEARCH、AI_WRITER七项。 onMenuItemClick函数中textRange参数在web中无意义，传入值为-1。 |
+| editMenu | [EditMenuOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#editmenuoptions) | 是 | Web自定义文本菜单选项。 菜单项数量，及菜单的content大小、icon图标尺寸，与ArkUI [Menu](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-menu)组件保持一致。 菜单中系统自带的id枚举值（[TextMenuItemId](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-text-common#textmenuitemid12)）在Web中仅支持CUT、COPY、PASTE、SELECT_ALL、TRANSLATE、SEARCH、AI_WRITER七项。 onMenuItemClick函数中textRange参数在Web中无意义，传入值为-1。 |
 
 示例
 

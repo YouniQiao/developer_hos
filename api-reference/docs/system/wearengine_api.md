@@ -2,8 +2,8 @@
 title: "wearEngine（穿戴设备能力开放）"
 upstream_id: "harmonyos-references/wearengine_api"
 catalog: "harmonyos-references"
-content_hash: "feb2046a5a01"
-synced_at: "2026-07-09T17:26:57.696218"
+content_hash: "a62ed248cd4e"
+synced_at: "2026-07-17T16:18:39.725104"
 ---
 
 # wearEngine（穿戴设备能力开放）
@@ -1555,32 +1555,51 @@ try {
           remoteApp: appInfo
           // transformLocalAppInfo默认为false，不转换包名指纹
         }
-        // 设置需要发送的文件
-        let p2pFile: wearEngine.P2pFile = {
-          file: fileIo.openSync('')
-        }
-
-        p2pClient.transferFile(device.randomId, appParam, p2pFile,
-          (error: BusinessError, p2pResult: wearEngine.P2pResult) => {
-            // callback处理逻辑
-            if (error) {
-              console.error(`Failed to transfer file. Code is ${error.code}, message is ${error.message}.`);
-              return;
-            }
-            if (p2pResult.code) {
-              if (p2pResult.code === wearEngine.P2pResultCode.COMMUNICATION_SUCCESS) {
-                console.info(`Succeeded in transfering file, the result is ${p2pResult.code}.`);
+        let file: fileIo.File | null = null;
+        try {
+          // 设置需要发送的文件
+          file = fileIo.openSync('');
+          let p2pFile: wearEngine.P2pFile = {
+            file: file
+          }
+          const closeFile = () => {
+            try {
+              if (file) {
+                fileIo.closeSync(file);
+                console.info('File closed successfully.');
               }
-              console.info(`Failed to transfer file, the error code is ${p2pResult.code}.`);
+            } catch (closeErr) {
+              console.error(`Failed to close file. Code is ${closeErr.code}, message is${closeErr.message}.`);
             }
-            if (p2pResult.progress) {
-              console.info(`Succeeded in transfering file, the progress is ${p2pResult.progress}.`);
-            }
-          })
-        fileIo.close(p2pFile.file);
-      }
-    } catch (error) {
-      console.error(`Failed to check device capability. Code is ${error.code}, message is ${error.message}.`);
+          };
+
+          p2pClient.transferFile(device.randomId, appParam, p2pFile,
+            (error: BusinessError, p2pResult: wearEngine.P2pResult) => {
+              // callback处理逻辑
+              if (error) {
+                console.error(`Failed to transfer file. Code is ${error.code}, message is ${error.message}.`);
+                closeFile();
+                return;
+              }
+              if (p2pResult.code) {
+                if (p2pResult.code === wearEngine.P2pResultCode.COMMUNICATION_SUCCESS) {
+                  console.info(`Succeeded in transfering file, the result is ${p2pResult.code}.`);
+                } else {
+                  console.error(`Failed to transfer file, the error code is ${p2pResult.code}.`);
+                }
+                closeFile();
+              }
+              if (p2pResult.progress) {
+                console.info(`Succeeded in transfering file, the progress is ${p2pResult.progress}.`);
+              }
+            });
+          } catch (fileErr) {
+            console.error(`Failed to open file. Code is ${fileErr.code}, message is${fileErr.message}`);
+            if (file) fileIo.closeSync(file);
+          }
+        }
+      } catch (error) {
+        console.error(`Failed to check device capability. Code is ${error.code}, message is ${error.message}.`);
     }
 
     if (idx === deviceList.length - 1) {

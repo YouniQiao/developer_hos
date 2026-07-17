@@ -2,8 +2,8 @@
 title: "start_options.h"
 upstream_id: "harmonyos-references/capi-start-options-h"
 catalog: "harmonyos-references"
-content_hash: "1a97a5fcb407"
-synced_at: "2026-07-09T00:57:13.291339"
+content_hash: "d2fd11386e9a"
+synced_at: "2026-07-17T16:15:59.930000"
 ---
 
 # start_options.h
@@ -1203,7 +1203,7 @@ AbilityRuntime_ErrorCode OH_AbilityRuntime_GetStartOptionsSupportedWindowModes(A
 | --- | --- |
 | [AbilityRuntime_StartOptions](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-abilityruntime-startoptions) *startOptions | AbilityRuntime_StartOptions对象。 |
 | [AbilityRuntime_SupportedWindowMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-context-constant-h#abilityruntime_supportedwindowmode) **supportedWindowModes | 启动Ability时的组件所支持的窗口模式。取值范围参见AbilityRuntime_SupportedWindowMode。 |
-| size | 组件所支持的窗口模式大小。 |
+| size_t &size | 组件所支持的窗口模式大小。 |
 
 返回：
 

@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.AbilityConstant (Ability相关常量)"
 upstream_id: "harmonyos-references/js-apis-app-ability-abilityconstant"
 catalog: "harmonyos-references"
-content_hash: "bf1e3f4272e6"
-synced_at: "2026-07-09T00:57:03.492660"
+content_hash: "7b4fc0004940"
+synced_at: "2026-07-17T16:15:50.676880"
 ---
 
 # @ohos.app.ability.AbilityConstant (Ability相关常量)
@@ -140,9 +140,28 @@ export default class MyAbility extends UIAbility {
 
 exitSubReason取值的含义如下：
 
+- [LastExitReason](#lastexitreason)为NORMAL时： 9：内核强制终止，终止信号SIGKILL。
+- 15：内核强制终止，终止信号SIGTERM。
+
+[LastExitReason](#lastexitreason)为PERFORMANCE_CONTROL时：
+
 - 100：进入户外模式查杀。
-- 101：退出户外模式查杀或未申请合理的后台任务，但是后台有大量音频播放，具体错误原因可通过[LaunchParam.lastExitMessage](#launchparam)区分。
-- 102：户外模式中查杀或应用未申请合理的后台任务，但是后台有录音，具体错误原因可通过[LaunchParam.lastExitMessage](#launchparam)区分。
+- 101：退出户外模式查杀。
+- 102：户外模式中查杀。
+- 3000：冻结异常管控，后台存在不合理订阅导致的回调唤醒。
+- 3001：冻结异常管控，后台存在不合理订阅导致应用处理回调卡死。
+- 3002：GNSS工作异常清理。
+- 3003：蓝牙工作异常清理。
+- 3004：RunningLock持锁异常清理。
+- 3005：Kernel锁异常清理。
+- 3006：省电模式清理。
+- 3007：模块高耗电异常清理。
+- 3030：应急模式、超级省电模式或睡眠模式的清理，具体错误原因可通过[LaunchParam.lastExitMessage](#launchparam)区分。
+
+[LastExitReason](#lastexitreason)为RESOURCE_CONTROL时：
+
+- 101：未申请合理的后台任务，但是后台有大量音频播放。
+- 102：应用未申请合理的后台任务，但是后台有录音。
 - 103：应用后台CPU高负载。
 - 105：应用IO超限。
 - 106：ION内存泄漏管控或恶意使用后台任务查杀，具体错误原因可通过[LaunchParam.lastExitMessage](#launchparam)区分。
@@ -154,16 +173,7 @@ exitSubReason取值的含义如下：
 - 113：线程泄漏管控。
 - 114：ASHMEM内存泄漏管控。
 - 117：页表泄漏管控。
-- 301：GPU内存超限或热清理。
-- 3000：冻结异常管控，后台存在不合理订阅导致的回调唤醒。
-- 3001：冻结异常管控，后台存在不合理订阅导致应用处理回调卡死。
-- 3002：GNSS工作异常清理。
-- 3003：蓝牙工作异常清理。
-- 3004：RunningLock持锁异常清理。
-- 3005：Kernel锁异常清理。
-- 3006：省电模式清理。
-- 3007：模块高耗电异常清理。
-- 3030：应急模式、超级省电模式或睡眠模式的清理，具体错误原因可通过[LaunchParam.lastExitMessage](#launchparam)区分。
+- 301：GPU内存超限或热清理，具体错误原因可通过[LaunchParam.lastExitMessage](#launchparam)区分。
 
 示例:
 

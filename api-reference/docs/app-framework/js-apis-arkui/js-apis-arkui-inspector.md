@@ -2,8 +2,8 @@
 title: "@ohos.arkui.inspector (布局回调)"
 upstream_id: "harmonyos-references/js-apis-arkui-inspector"
 catalog: "harmonyos-references"
-content_hash: "d4247361c8e3"
-synced_at: "2026-07-09T17:23:18.289816"
+content_hash: "d93daa898d4c"
+synced_at: "2026-07-17T16:16:10.927710"
 ---
 
 # @ohos.arkui.inspector (布局回调)
@@ -62,7 +62,7 @@ let listener:inspector.ComponentObserver = inspector.createComponentObserver('CO
 
 on(type: 'layout', callback: () => void): void
 
-通过句柄向对应的查询条件注册回调，当组件布局完成时会触发该回调。
+通过句柄向对应的查询条件注册回调，当组件布局完成时会触发该回调。请注意，该接口无法监听窗口尺寸变化，相关需求请参考[on('windowSizeChange')](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#onwindowsizechange7)。此外，布局回调和窗口尺寸变化回调之间不存在确定的执行顺序依赖。
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 

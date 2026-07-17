@@ -2,8 +2,8 @@
 title: "REST API错误码"
 upstream_id: "harmonyos-references/account-server-error-code"
 catalog: "harmonyos-references"
-content_hash: "9aaef9a38785"
-synced_at: "2026-07-09T01:01:13.991141"
+content_hash: "25ff7427dedb"
+synced_at: "2026-07-17T16:19:40.460071"
 ---
 
 # REST API错误码
@@ -393,15 +393,16 @@ synced_at: "2026-07-09T01:01:13.991141"
 
 | 业务响应主错误码 | 业务响应子错误码 | 描述 | 解决方法 |
 | --- | --- | --- | --- |
-| 1203 | 100305 | id_token的header解析失败。 | id_token格式错误或者伪造的id_token，请排查id_token值是否JWT格式及正确性。 |
-| 1203 | 100306 | id_token的payload解析失败。 | id_token格式错误或者伪造的id_token，请排查id_token值是否JWT格式及正确性。 |
-| 1203 | 150021 | id_token解析失败。 | id_token格式错误或者伪造的id_token，请排查id_token值是否JWT格式及正确性。 |
-| 1203 | 150023 | id_token的signature解析失败。 | id_token格式错误或者伪造的id_token，请排查id_token值是否JWT格式及正确性。 |
+| 1203 | 100305 | id_token的header析成功后的内容不是JSON格式。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
+| 1203 | 100306 | id_token的payload解析成功后的内容不是JSON格式。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
+| 1203 | 150021 | id_token的header解析失败。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
+| 1203 | 150022 | id_token的payload解析失败。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
+| 1203 | 150023 | id_token的signature解析失败。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
 | 1203 | 500 | 系统内部错误。 | 系统内部处理错误，建议业务打印错误码信息，并请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
 | 1400 | 14004 | 无法通过其kid找到对应的JWT公钥相关信息。 | 请通过[在线提单](https://developer.huawei.com/consumer/cn/support/feedback/#/)提交问题。 |
-| 1500 | 15003 | 无效的id_token。 | id_token格式错误或者伪造的id_token，请排查id_token值是否JWT格式及正确性。 |
-| 1500 | 15004 | id_token验证失败。 | 检查验证时使用的公钥、算法是否正确。 |
-| 1500 | 15005 | id_token的issuer验证失败。 | 请排查id_token是否被篡改。 |
+| 1500 | 15003 | 无效的id_token。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
+| 1500 | 15004 | id_token验证失败。 | id_token格式错误或者伪造的id_token，请检查id_token参数值是否为华为账号返回的原始值。 |
+| 1500 | 15005 | id_token的issuer验证失败。 | id_token的issuer校验失败，请检查id_token参数值是否为华为账号返回的原始值。 |
 | 1500 | 15006 | id_token已过期。 | 请重新获取新的id_token。 |
 | 1500 | 15007 | id_token为空。 | 请按照接口参数的要求，传入正确的id_token参数。 |
 | 1500 | 15008 | id_token格式不正确。 | 检查id_token的格式是否满足正则：^[0-9a-zA-Z_\-\.]+$。 |

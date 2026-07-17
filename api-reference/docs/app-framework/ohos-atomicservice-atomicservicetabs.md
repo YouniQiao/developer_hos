@@ -2,8 +2,8 @@
 title: "AtomicServiceTabs"
 upstream_id: "harmonyos-references/ohos-atomicservice-atomicservicetabs"
 catalog: "harmonyos-references"
-content_hash: "cb5c28b4fdd7"
-synced_at: "2026-07-09T00:58:12.206033"
+content_hash: "7fe50adcf573"
+synced_at: "2026-07-17T16:16:41.533549"
 ---
 
 # AtomicServiceTabs
@@ -65,7 +65,7 @@ AtomicServiceTabs({
 | --- | --- | --- | --- | --- |
 | tabContents | [[TabContentBuilder?](#tabcontentbuilder),[TabContentBuilder?](#tabcontentbuilder), [TabContentBuilder?](#tabcontentbuilder),[TabContentBuilder?](#tabcontentbuilder), [TabContentBuilder?](#tabcontentbuilder)] | 否 | @BuilderParam | 内容视图容器数组，默认值为空，无内容展示。 |
 | tabBarOptionsArray | [[TabBarOptions](#tabbaroptions),[TabBarOptions](#tabbaroptions), [TabBarOptions?](#tabbaroptions),[TabBarOptions?](#tabbaroptions), [TabBarOptions?](#tabbaroptions)] | 是 | @Prop | 页签容器数组。 |
-| tabBarPosition | [TabBarPosition](#tabbarposition) | 否 | @Prop | 设置页签栏位置，默认值为TabBarPosition.Bottom。 |
+| tabBarPosition | [TabBarPosition](#tabbarposition) | 否 | @Prop | 设置页签栏位置，默认值为TabBarPosition.BOTTOM。 |
 | layoutMode18+ | [LayoutMode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-tabcontent#layoutmode10) | 否 | @Prop | 设置底部页签的图片、文字排布的方式，默认值为LayoutMode.VERTICAL。 **元服务API：** 从API version 18开始，该接口支持在元服务中使用。 |
 | barBackgroundColor | [ResourceColor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcecolor) | 否 | @Prop | 设置TabBar的背景颜色，默认值为透明。 |
 | index | number | 否 | @Prop | 设置当前显示页签的索引，索引值从0开始。默认值为0。 |
@@ -212,7 +212,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612965.png)
+ ![](./img/zh-cn_image_0000002671434771.png)
 
 #### [h2]示例2(纯图标样式)
 
@@ -284,7 +284,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413676.png)
+ ![](./img/zh-cn_image_0000002671394641.png)
 
 #### [h2]示例3(图标加文本，自定义图文排布)
 
@@ -378,4 +378,4 @@ struct AtomicserviceTabs  {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732905.gif)
+ ![](./img/zh-cn_image_0000002641354794.gif)

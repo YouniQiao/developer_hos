@@ -2,8 +2,8 @@
 title: "Class (ComponentUtils)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-componentutils"
 catalog: "harmonyos-references"
-content_hash: "f52b09ce2048"
-synced_at: "2026-07-09T00:57:28.437628"
+content_hash: "943e47843737"
+synced_at: "2026-07-17T16:16:11.320379"
 ---
 
 # Class (ComponentUtils)
@@ -23,7 +23,7 @@ getRectangleById(id: string): componentUtils.ComponentInfo
 
 获取组件大小、位置、平移、缩放、旋转及仿射矩阵属性信息。
 
-![](./img/note_3.0-zh-cn.png) 该接口需要在目标组件布局完成以后获取目标组件区域大小信息，建议在[布局回调](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-inspector)中使用该接口。如果组件动态创建但未挂载组件树，则无法通过该接口获取正常的组件信息。因为组件在未挂载组件树的情况下，一般未经过UI框架正常的测量与布局，此时请确保组件正常挂载组件树后再尝试获取组件信息。
+![](./img/note_3.0-zh-cn.png) 该接口需要在目标组件布局完成以后获取目标组件区域大小信息，建议在[布局回调](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-inspector)中使用该接口。如果组件动态创建但未挂载组件树，则无法通过该接口获取正常的组件信息。因为组件在未挂载组件树的情况下，一般未经过UI框架正常的测量与布局，此时请确保组件正常挂载组件树后再尝试获取组件信息。该接口返回的组件位置为布局位置，某些属性计算不支持，如[translate](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#translate)、[offset](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#offset)、[markAnchor](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-location#markanchor)、[scale](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#scale)、[transform](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-transformation#transform)等，可以使用替代接口[getPositionToWindowWithTransform](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-framenode#getpositiontowindowwithtransform12)。
 
 元服务API： 从API version 11开始，该接口支持在元服务中使用。
 

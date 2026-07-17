@@ -2,8 +2,8 @@
 title: "oh_window_pip.h"
 upstream_id: "harmonyos-references/capi-oh-window-pip-h"
 catalog: "harmonyos-references"
-content_hash: "8f95b42a063b"
-synced_at: "2026-07-09T00:58:37.509155"
+content_hash: "3ba2858dc9ef"
+synced_at: "2026-07-17T16:17:12.912186"
 ---
 
 # oh_window_pip.h
@@ -204,7 +204,7 @@ typedef void (*WebPipStartPipCallback)(uint32_t controllerId, uint8_t requestId,
 | --- | --- |
 | uint32_t controllerId | 画中画控制器Id，为非负整数。 |
 | uint8_t requestId | 请求Id，表示当前请求拉起画中画窗口的次数。 |
-| uint64_t surfaceId | 画中画内部Xcomponent组件的surfaceId，用于应用自行渲染。 |
+| uint64_t surfaceId | 画中画内部XComponent组件的surfaceId，用于应用自行渲染。 |
 
 #### [h2]WebPipLifecycleCallback()
 
@@ -448,7 +448,7 @@ int32_t OH_PictureInPicture_CreatePip(PictureInPicture_PipConfig pipConfig, uint
 | 参数项 | 描述 |
 | --- | --- |
 | [PictureInPicture_PipConfig](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-pictureinpicture-pipconfig) pipConfig | 画中画参数配置器。 |
-| uint32_t* controllerId | 用于接收创建画中画控制器的id。 |
+| uint32_t* controllerId | 用于接收创建画中画控制器的Id。 |
 
 返回：
 

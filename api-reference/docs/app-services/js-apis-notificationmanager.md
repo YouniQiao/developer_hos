@@ -2,8 +2,8 @@
 title: "@ohos.notificationManager (NotificationManager模块)"
 upstream_id: "harmonyos-references/js-apis-notificationmanager"
 catalog: "harmonyos-references"
-content_hash: "372ab7e028ba"
-synced_at: "2026-07-09T01:01:28.325687"
+content_hash: "db38a81e537c"
+synced_at: "2026-07-17T16:19:52.316402"
 ---
 
 # @ohos.notificationManager (NotificationManager模块)
@@ -54,6 +54,7 @@ publish(request: NotificationRequest, callback: AsyncCallback<void>): void
 | 1600015 | The current notification status does not support duplicate configurations. 适用版本：11 |
 | 1600016 | The notification version for this update is too low. 适用版本：11 |
 | 1600020 | The application is not allowed to send notifications due to permission settings. 适用版本：12 |
+| 1600029 | The system failed to find the ExtensionAbility instance for the custom Live View widget template. 适用版本：26.0.0 |
 | 2300007 | Network unreachable. 适用版本：11 |
 
 示例：
@@ -125,6 +126,7 @@ publish(request: NotificationRequest): Promise<void>
 | 1600015 | The current notification status does not support duplicate configurations. 适用版本：11 |
 | 1600016 | The notification version for this update is too low. 适用版本：11 |
 | 1600020 | The application is not allowed to send notifications due to permission settings. 适用版本：12 |
+| 1600029 | The system failed to find the ExtensionAbility instance for the custom Live View widget template. 适用版本：26.0.0 |
 | 2300007 | Network unreachable. 适用版本：11 |
 
 示例：

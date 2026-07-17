@@ -2,8 +2,8 @@
 title: "FAST"
 upstream_id: "harmonyos-references/fast-kit-fast"
 catalog: "harmonyos-references"
-content_hash: "efeaa4152a2e"
-synced_at: "2026-07-09T00:59:46.685247"
+content_hash: "c7a320892ff0"
+synced_at: "2026-07-17T16:18:24.735270"
 ---
 
 # FAST
@@ -105,8 +105,8 @@ synced_at: "2026-07-09T00:59:46.685247"
 | FAST_EXPORT [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_SegmentMap_Query](#hms_fast_segmentmap_query) ([FAST_SegmentMapHandle](#fast_segmentmaphandle) handle, size_t left, size_t right, int32_t *result) | 查询线段表的区间。 |
 | FAST_EXPORT [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_RectPartition_CreateConfig](#hms_fast_rectpartition_createconfig) ([FAST_RectPartitionConfig](#fast_rectpartitionconfig) **config) | 创建矩形划分求解器的不透明配置。 |
 | FAST_EXPORT void [HMS_FAST_RectPartition_DestroyConfig](#hms_fast_rectpartition_destroyconfig) ([FAST_RectPartitionConfig](#fast_rectpartitionconfig) *config) | 销毁矩形划分求解器的不透明配置。 |
-| FAST_EXPORT [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_RectPartition_SetAlgo](#hms_fast_rectpartition_setalgo) ([FAST_RectPartitionConfig](#fast_rectpartitionconfig) *config, const char *name) | 设置矩形划分求解器使用的算法。目前仅支持扫描线算法“SweepLineAlgo”，输出数量尽可能少（不保证最优性）的不相交矩形集合，复杂度为![](./img/zh-cn_image_0000002661613425.png)。 |
-| FAST_EXPORT [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_RectPartition_Solve](#hms_fast_rectpartition_solve) ([FAST_RectPartitionConfig](#fast_rectpartitionconfig) *config, size_t size, const [FAST_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-rect) *origin, [FAST_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-rect) *result, size_t *resultSize) | 在指定不透明配置下解决矩形划分问题。函数接收若干个彼此不相交的矩形作为输入，计算出覆盖相同区域的矩形划分方案，并使输出的矩形数量尽可能少。 **说明**： 1. 输入须保证矩形两两不相交（即任意两个矩形满足：![](./img/zh-cn_image_0000002631414138.png) 或 ![](./img/zh-cn_image_0000002661733367.png)或![](./img/zh-cn_image_0000002631254246.png)或 ![](./img/zh-cn_image_0000002661613427.png)），否则函数返回FAST_ERROR_CODE_ILLEGAL_INPUT。 2. 函数能保证输出矩形的数量小于等于输入矩形的数量。 |
+| FAST_EXPORT [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_RectPartition_SetAlgo](#hms_fast_rectpartition_setalgo) ([FAST_RectPartitionConfig](#fast_rectpartitionconfig) *config, const char *name) | 设置矩形划分求解器使用的算法。目前仅支持扫描线算法“SweepLineAlgo”，输出数量尽可能少（不保证最优性）的不相交矩形集合，复杂度为![](./img/zh-cn_image_0000002671435249.png)。 |
+| FAST_EXPORT [FAST_ErrorCode](#fast_errorcode-1) [HMS_FAST_RectPartition_Solve](#hms_fast_rectpartition_solve) ([FAST_RectPartitionConfig](#fast_rectpartitionconfig) *config, size_t size, const [FAST_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-rect) *origin, [FAST_Rect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/fast-kit--fast-rect) *result, size_t *resultSize) | 在指定不透明配置下解决矩形划分问题。函数接收若干个彼此不相交的矩形作为输入，计算出覆盖相同区域的矩形划分方案，并使输出的矩形数量尽可能少。 **说明**： 1. 输入须保证矩形两两不相交（即任意两个矩形满足：![](./img/zh-cn_image_0000002671395115.png) 或 ![](./img/zh-cn_image_0000002641355268.png)或![](./img/zh-cn_image_0000002641195308.png)或 ![](./img/zh-cn_image_0000002671435251.png)），否则函数返回FAST_ERROR_CODE_ILLEGAL_INPUT。 2. 函数能保证输出矩形的数量小于等于输入矩形的数量。 |
 | float [HMS_FAST_DSP_Maxmgv](#hms_fast_dsp_maxmgv) (const float *input, size_t stride, size_t length) | 计算步长实数向量中的最大幅值（单精度）。 |
 | double [HMS_FAST_DSP_MaxmgvD](#hms_fast_dsp_maxmgvd) (const double *input, size_t stride, size_t length) | 计算步长实数向量中的最大幅值（双精度）。 |
 | void [HMS_FAST_DSP_Maxvi](#hms_fast_dsp_maxvi) (const float *input, size_t stride, size_t length, float *value, size_t *index) | 查找步长实数向量中的最大值及其索引（单精度）。 |
@@ -619,7 +619,7 @@ FAST_EXPORT FAST_ErrorCode HMS_FAST_RectPartition_SetAlgo (FAST_RectPartitionCon
 | 名称 | 描述 |
 | --- | --- |
 | config | 待设置的矩形划分求解器的不透明配置[FAST_RectPartitionConfig](#fast_rectpartitionconfig)。 |
-| name | 矩形求解器使用的算法名称。目前仅支持扫描线算法“SweepLineAlgo”，输出数量尽可能少（不保证最优性）的不相交矩形集合，复杂度为![](./img/zh-cn_image_0000002631414140.png)。 |
+| name | 矩形求解器使用的算法名称。目前仅支持扫描线算法“SweepLineAlgo”，输出数量尽可能少（不保证最优性）的不相交矩形集合，复杂度为![](./img/zh-cn_image_0000002671395117.png)。 |
 
 返回：
 
@@ -1875,6 +1875,7 @@ FAST_ErrorCode HMS_FAST_ConcurrentHashmap_Insert(
 | handle | 并发哈希表句柄。 |
 | key | 待插入的键指针。 |
 | value | 待插入的值指针。 |
+| originValue | 将被覆盖的值的指针，仅在返回[FAST_ERROR_CODE_KEY_EXISTS](#fast_errorcode-1)时有效，如果不需要请传入NULL。 |
 
 返回：
 
@@ -1929,7 +1930,7 @@ FAST_ErrorCode HMS_FAST_ConcurrentHashmap_Erase(
 ```
  描述
 
-在并发哈希表中删除给定的键及其对应的值，并将其值保存在originalKey和originalValue中以便于开发者进行内存管理; 实际使用时也可根据需求将originalKey或originalValue设为nullptr，此时则不会将键或值的地址返回。
+在并发哈希表中删除给定的键及其对应的值，并将其值保存在originalKey和originalValue中以便于开发者进行内存管理; 实际使用时也可根据需求将originalKey或originalValue设为NULL，此时则不会将键或值的地址返回。
 
 起始版本： 6.1.1(24)
 
@@ -1939,8 +1940,8 @@ FAST_ErrorCode HMS_FAST_ConcurrentHashmap_Erase(
 | --- | --- |
 | handle | 并发哈希表句柄。 |
 | key | 待删除的键指针。 |
-| originKey | 用于返回哈希表中保存的键的指针，可为nullptr。 |
-| originValue | 用于返回哈希表中保存的值得指针，可为nullptr。 |
+| originKey | 用于返回哈希表中保存的键的指针，可为NULL。 |
+| originValue | 用于返回哈希表中保存的值得指针，可为NULL。 |
 
 返回：
 
@@ -2032,7 +2033,7 @@ size_t HMS_FAST_ConcurrentHashmap_EraseIf(
 ```
  描述
 
-遍历哈希表并删除所有符合给定条件的键值对，同时使用开发者定义的freeFunc释放键值对的内存；实际使用时freeFunc可为nullptr，此时要求开发者另行完成内存管理动作。注意：请避免在condFunc和freeFunc中定义复杂的逻辑（如加锁等）以避免死锁等不可控现象。
+遍历哈希表并删除所有符合给定条件的键值对，同时使用开发者定义的freeFunc释放键值对的内存；实际使用时freeFunc可为NULL，此时要求开发者另行完成内存管理动作。注意：请避免在condFunc和freeFunc中定义复杂的逻辑（如加锁等）以避免死锁等不可控现象。
 
 起始版本： 6.1.1(24)
 
@@ -2043,7 +2044,7 @@ size_t HMS_FAST_ConcurrentHashmap_EraseIf(
 | handle | 并发哈希表句柄。 |
 | condFunc | 开发者定义的删除条件回调函数。 |
 | condCtx | 条件回调函数的上下文。 |
-| freeFunc | 开发者定义的内存释放回调函数，可为nullptr。 |
+| freeFunc | 开发者定义的内存释放回调函数，可为NULL。 |
 | freeCtx | 内存释放回调函数的上下文。 |
 
 返回：
@@ -2063,7 +2064,7 @@ void HMS_FAST_ConcurrentHashmap_Traverse(
 ```
  描述
 
-遍历哈希表并对所有符合开发者condFunc的键值对执行workFunc中的修改；如果condFunc为nullptr，则对于表中存在的所有键值对都将执行开发者定义的workFunc。注意：请避免在condFunc和workFunc中定义复杂的逻辑（如加锁等）以避免死锁等不可控现象。
+遍历哈希表并对所有符合开发者condFunc的键值对执行workFunc中的修改；如果condFunc为NULL，则对于表中存在的所有键值对都将执行开发者定义的workFunc。注意：请避免在condFunc和workFunc中定义复杂的逻辑（如加锁等）以避免死锁等不可控现象。
 
 起始版本： 6.1.1(24)
 
@@ -2072,7 +2073,7 @@ void HMS_FAST_ConcurrentHashmap_Traverse(
 | 名称 | 描述 |
 | --- | --- |
 | handle | 并发哈希表句柄。 |
-| condFunc | 开发者定义的条件回调函数，可为nullptr。 |
+| condFunc | 开发者定义的条件回调函数，可为NULL。 |
 | condCtx | 回调函数的上下文。 |
 | workFunc | 开发者定义的修改回调函数。 |
 | workCtx | 修改函数的上下文。 |

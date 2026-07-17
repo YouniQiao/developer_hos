@@ -2,8 +2,8 @@
 title: "@ohos.app.form.formInfo (formInfo)"
 upstream_id: "harmonyos-references/js-apis-app-form-forminfo"
 catalog: "harmonyos-references"
-content_hash: "c894a2772005"
-synced_at: "2026-07-09T00:59:03.239908"
+content_hash: "28460427ed9f"
+synced_at: "2026-07-17T16:17:42.767752"
 ---
 
 # @ohos.app.form.formInfo (formInfo)
@@ -41,7 +41,7 @@ import { formInfo } from '@kit.FormKit';
 | updateEnabled | boolean | 否 | 否 | 卡片是否使能更新。 - true：表示支持周期性刷新。 - false：表示不支持周期性刷新。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | formVisibleNotify | boolean | 否 | 否 | 卡片是否使能可见通知。 - true：通知卡片提供方可见状态变化。 - false：不通知卡片提供方可见状态变化。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | scheduledUpdateTime | string | 否 | 否 | 卡片更新时间。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| formConfigAbility | string | 否 | 否 | 卡片配置ability。指定长按卡片弹出的选择框内，编辑选项所对应的ability。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| formConfigAbility | string | 否 | 否 | 卡片配置Ability。指定长按卡片弹出的选择框内，编辑选项所对应的Ability。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | updateDuration | number | 否 | 否 | 卡片更新周期。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **说明：** 数值为[0, 336]的整数。 |
 | defaultDimension | number | 否 | 否 | 卡片规格。具体可选规格参考[FormDimension](#formdimension)。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **说明：** 数值为[1, 9]的整数，数值5从API version 9开始支持，从API version 20开始废弃。 |
 | supportDimensions | Array | 否 | 否 | 卡片支持的规格。具体可选规格参考[FormDimension](#formdimension)。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 **说明：** 最大长度为9，数值取值范围[1, 9]的整数的数组，数值5从API version 9开始支持，从API version 20开始废弃。 |
@@ -127,7 +127,7 @@ import { formInfo } from '@kit.FormKit';
 | PARAM_FORM_CUSTOMIZE_KEY10+ | 'ohos.extra.param.key.form_customize' | 自定义数据。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | FORM_RENDERING_MODE_KEY11+ | 'ohos.extra.param.key.form_rendering_mode' | 卡片渲染模式。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | HOST_BG_INVERSE_COLOR_KEY12+ | 'ohos.extra.param.key.host_bg_inverse_color' | 卡片使用方的背景反色颜色值。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
-| FORM_LOCATION_KEY12+ | 'ohos.extra.param.key.form_location' | 卡片位置。 OTHER -1 （其他位置） DESKTOP 0 （桌面） FORM_CENTER 1 （桌面的卡片中心） FORM_MANAGER 2 （桌面的卡片管理器） NEGATIVE_SCREEN 3 （负一屏） FORM_CENTER_NEGATIVE_SCREEN 4 （负一屏的服务中心） FORM_MANAGER_NEGATIVE_SCREEN 5 （负一屏的卡片管理器） SCREEN_LOCK 6 （锁屏） AI_SUGGESTION 7 （AI智慧助手推荐区） STANDBY 8 （待机屏保显示界面） |
+| FORM_LOCATION_KEY12+ | 'ohos.extra.param.key.form_location' | 卡片位置。 具体可选位置参考[FormLocation](#formlocation20)。 |
 | FORM_PERMISSION_NAME_KEY12+ | 'ohos.extra.param.key.permission_name' | 用户授权权限名称。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | FORM_PERMISSION_GRANTED_KEY12+ | 'ohos.extra.param.key.permission_granted' | 用户是否授权。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | ORIGINAL_FORM_KEY20+ | 'ohos.extra.param.key.original_form_id' | 用groupId关联的一组卡片，在调整大小时，会先创建新尺寸的卡片，再删除旧尺寸的卡片。新尺寸卡片创建时want参数会通过该key传递旧尺寸卡片的卡片id。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
@@ -162,7 +162,7 @@ import { formInfo } from '@kit.FormKit';
 
 | 名称 | 值 | 说明 |
 | --- | --- | --- |
-| RECT | 1 | 方形 form。 |
+| RECT | 1 | 矩形 form。 |
 | CIRCLE | 2 | 圆形 form。 |
 
 #### FormInfoFilter

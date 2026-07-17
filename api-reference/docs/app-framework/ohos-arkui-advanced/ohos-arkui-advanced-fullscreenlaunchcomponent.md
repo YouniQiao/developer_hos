@@ -2,8 +2,8 @@
 title: "FullScreenLaunchComponent"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-fullscreenlaunchcomponent"
 catalog: "harmonyos-references"
-content_hash: "03ef8ba57843"
-synced_at: "2026-07-09T00:58:15.842747"
+content_hash: "0e9a2b83afd1"
+synced_at: "2026-07-17T16:16:47.864231"
 ---
 
 # FullScreenLaunchComponent
@@ -11,8 +11,6 @@ synced_at: "2026-07-09T00:58:15.842747"
 全屏启动元服务组件，当被拉起方授权使用方可以嵌入式运行元服务时，使用方全屏嵌入式运行元服务；未授权时，使用方跳出式拉起元服务。
 
 ![](./img/note_3.0-zh-cn.png) 该组件从API version 12开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
-
-该组件不支持在Wearable设备上使用。
 
 如果需要在该组件中实现可嵌入式运行的元服务，必须继承自[EmbeddableUIAbility](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-embeddableuiability)。否则，系统无法保证元服务功能正常。
 

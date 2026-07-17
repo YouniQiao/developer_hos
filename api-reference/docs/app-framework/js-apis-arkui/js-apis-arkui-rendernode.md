@@ -2,8 +2,8 @@
 title: "RenderNode"
 upstream_id: "harmonyos-references/js-apis-arkui-rendernode"
 catalog: "harmonyos-references"
-content_hash: "7eb42dc01702"
-synced_at: "2026-07-09T00:57:32.594060"
+content_hash: "5041181b407a"
+synced_at: "2026-07-17T16:16:14.457482"
 ---
 
 # RenderNode
@@ -726,7 +726,7 @@ set backgroundColor(color: number)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| color | number | 是 | 背景颜色值，ARGB格式，示例：0xE5E5E5。 |
+| color | number | 是 | 背景颜色值，ARGB格式，示例：0xFFE5E5E5。 |
 
 get backgroundColor(): number
 
@@ -1888,7 +1888,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732235.jpg)
+ ![](./img/zh-cn_image_0000002671393955.jpg)
 
 #### [h2]shadowRadius
 
@@ -1969,7 +1969,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253114.jpg)
+ ![](./img/zh-cn_image_0000002641354110.jpg)
 
 #### [h2]draw
 
@@ -2795,7 +2795,7 @@ set markNodeGroup(isNodeGroup: boolean)
 
 标记是否优先绘制节点及其子节点。若设置为true，则透明度等属性将在节点绘制完毕后再进行合成。设置效果如下：
 
-![](./img/zh-cn_image_0000002661612297.png)
+![](./img/zh-cn_image_0000002641194150.png)
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
@@ -3065,4 +3065,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413006.gif)
+ ![](./img/zh-cn_image_0000002671434089.gif)

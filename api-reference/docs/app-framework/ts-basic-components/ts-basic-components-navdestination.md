@@ -2,8 +2,8 @@
 title: "NavDestination"
 upstream_id: "harmonyos-references/ts-basic-components-navdestination"
 catalog: "harmonyos-references"
-content_hash: "c94a82ae894c"
-synced_at: "2026-07-09T00:57:51.019799"
+content_hash: "c9939d287bda"
+synced_at: "2026-07-17T16:16:29.456977"
 ---
 
 # NavDestination
@@ -332,7 +332,7 @@ recoverable(recoverable: Optional<boolean>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| recoverable | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | NavDestination是否可恢复，默认为不可恢复。 默认值：false true：NavDestination可恢复。 false：NavDestination不可恢复。 |
+| recoverable | [Optional](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-custom-property#optionalt) | 是 | NavDestination是否可恢复，默认为可恢复。 默认值：true true：NavDestination可恢复。 false：NavDestination不可恢复。 |
 
 #### [h2]bindToScrollable14+
 
@@ -1052,7 +1052,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612527.gif)
+ ![](./img/zh-cn_image_0000002641194384.gif)
 
 #### [h2]示例2（设置NavDestination自定义转场）
 
@@ -1192,7 +1192,7 @@ struct NavDest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413236.gif)
+ ![](./img/zh-cn_image_0000002671434323.gif)
 
 #### [h2]示例3（设置指定的NavDestination系统转场）
 
@@ -1439,13 +1439,13 @@ struct HomeBody {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732467.gif)
+ ![](./img/zh-cn_image_0000002671394191.gif)
 
-![](./img/zh-cn_image_0000002631253346.gif)
+![](./img/zh-cn_image_0000002641354344.gif)
 
-![](./img/zh-cn_image_0000002661612529.gif)
+![](./img/zh-cn_image_0000002641194386.gif)
 
-![](./img/zh-cn_image_0000002631413238.gif)
+![](./img/zh-cn_image_0000002671434325.gif)
 
 #### [h2]示例4（NavDestination配置页面方向和对应状态栏、导航条显隐）
 
@@ -1535,7 +1535,7 @@ struct ExamplePage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732469.gif)
+ ![](./img/zh-cn_image_0000002671394193.gif)
 
 #### [h2]示例5（NavDestination的onActive与onInActive生命周期）
 
@@ -1751,6 +1751,6 @@ struct NavBody {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253348.gif)
+ ![](./img/zh-cn_image_0000002641354346.gif)
 
 NavDestination其他用法可参考[Navigation示例](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-navigation#示例)。

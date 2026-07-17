@@ -2,8 +2,8 @@
 title: "@ohos.fileio (文件管理)"
 upstream_id: "harmonyos-references/js-apis-fileio"
 catalog: "harmonyos-references"
-content_hash: "c3d50c5bb37c"
-synced_at: "2026-07-09T00:59:00.504934"
+content_hash: "bc848ac830e2"
+synced_at: "2026-07-17T16:17:39.924041"
 ---
 
 # @ohos.fileio (文件管理)
@@ -1559,7 +1559,7 @@ lstat(path: string): Promise<Stat>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise | promise对象，返回文件对象，表示文件的具体信息，详情见stat。 |
+| Promise | Promise对象，返回文件对象，表示文件的具体信息，详情见stat。 |
 
 示例：
 
@@ -2648,7 +2648,7 @@ createWatcher(filename: string, events: number, callback: AsyncCallback<number>)
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | filename | string | 是 | 待监视文件的应用沙箱路径。 |
-| events | number | 是 | - 1: 监听文件或者目录是否发生重命名。 - 2：监听文件或者目录内容的是否修改。 - 3：两者都有。 |
+| events | number | 是 | - 1：监听文件或者目录是否发生重命名。 - 2：监听文件或者目录内容是否修改。 - 3：两者都有。 |
 | callback | AsyncCallback | 是 | 每发生变化一次，调用一次此函数。 |
 
 返回值：
@@ -3416,7 +3416,7 @@ let dirent = dir.readSync();
 
 close(): Promise<void>
 
-异步关闭目录，使用promise形式返回结果。目录被关闭后，Dir中持有的文件描述将被释放，后续将无法从Dir中读取目录项。
+异步关闭目录。使用Promise异步回调。目录被关闭后，Dir中持有的文件描述符将被释放，后续将无法从Dir中读取目录项。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，请使用[fileIo.listFile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#fileiolistfile)替代。
 
@@ -3435,7 +3435,7 @@ dir.close().then(() => {
 
 close(callback: AsyncCallback<void>): void
 
-异步关闭目录，使用callback形式返回结果。目录被关闭后，Dir中持有的文件描述将被释放，后续将无法从Dir中读取目录项。
+异步关闭目录。使用callback异步回调。目录被关闭后，Dir中持有的文件描述符将被释放，后续将无法从Dir中读取目录项。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，请使用[fileIo.listFile](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#fileiolistfile-1)替代。
 
@@ -3454,7 +3454,7 @@ dir.close((err: BusinessError) => {
 
 closeSync(): void
 
-用于关闭目录。目录被关闭后，Dir中持有的文件描述将被释放，后续将无法从Dir中读取目录项。
+用于关闭目录。目录被关闭后，Dir中持有的文件描述符将被释放，后续将无法从Dir中读取目录项。
 
 ![](./img/note_3.0-zh-cn.png) 从API version 9开始废弃，请使用[fileIo.listFileSync](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-file-fs#fileiolistfilesync)替代。
 

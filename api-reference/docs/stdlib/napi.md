@@ -2,8 +2,8 @@
 title: "Node-API"
 upstream_id: "harmonyos-references/napi"
 catalog: "harmonyos-references"
-content_hash: "2ad76d54f651"
-synced_at: "2026-07-09T01:01:49.382365"
+content_hash: "d6a84a1503dc"
+synced_at: "2026-07-17T16:20:11.323479"
 ---
 
 # Node-API
@@ -1294,7 +1294,7 @@ napi_status napi_remove_wrap_sendable(napi_env env, napi_value js_object, void**
 ```
  描述：
 
-移除并获取ArkTS对象封装的native实例，移除后回调将不再触发，需手动delete释放内存。
+移除并获取ArkTS对象包裹的native实例，移除后回调后续会被自动触发，需注意避免出现重复释放问题。
 
 起始版本： 12
 

@@ -2,8 +2,8 @@
 title: "@ohos.web.webNativeMessagingExtensionManager (Web Native Messaging Extension Manager)"
 upstream_id: "harmonyos-references/arkts-apis-web-webnativemessagingextensionmanager"
 catalog: "harmonyos-references"
-content_hash: "dfae65d29284"
-synced_at: "2026-07-09T17:25:37.840472"
+content_hash: "ba743d093e55"
+synced_at: "2026-07-17T16:17:31.508938"
 ---
 
 # @ohos.web.webNativeMessagingExtensionManager (Web Native Messaging Extension Manager)
@@ -249,7 +249,7 @@ connectNative(context: UIAbilityContext, want: Want, callback: WebExtensionConne
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| context | [UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | 是 | Web原生消息扩展的上下文。 |
+| context | [UIAbilityContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext) | 是 | 调用方UIAbility的上下文。 |
 | want | [Want](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-app-ability-want) | 是 | 启动Ability的want信息。 |
 | callback | [WebExtensionConnectionCallback](#webextensionconnectioncallback) | 是 | WebExtensionConnection状态的回调对象。 |
 

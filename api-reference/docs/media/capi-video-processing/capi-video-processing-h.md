@@ -2,8 +2,8 @@
 title: "video_processing.h"
 upstream_id: "harmonyos-references/capi-video-processing-h"
 catalog: "harmonyos-references"
-content_hash: "ae41480e8b4d"
-synced_at: "2026-07-09T01:00:42.151764"
+content_hash: "32e69a01245d"
+synced_at: "2026-07-17T16:19:13.437547"
 ---
 
 # video_processing.h
@@ -420,7 +420,7 @@ VideoProcessing_ErrorCode OH_VideoProcessingCallback_Create(VideoProcessing_Call
 
 | 类型 | 说明 |
 | --- | --- |
-| [VideoProcessing_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-video-processing-types-h#videoprocessing_errorcode) | 如果回调函数对象创建成功，返回VIDEO_PROCESSING_SUCCESS。 如果callback为空或者callback不为空，返回VIDEO_PROCESSING_ERROR_INVALID_PARAMETER。 如果内存不足，返回VIDEO_PROCESSING_ERROR_NO_MEMORY。 |
+| [VideoProcessing_ErrorCode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-video-processing-types-h#videoprocessing_errorcode) | 如果回调函数对象创建成功，返回VIDEO_PROCESSING_SUCCESS。 如果callback为空，返回VIDEO_PROCESSING_ERROR_INVALID_PARAMETER。 如果内存不足，返回VIDEO_PROCESSING_ERROR_NO_MEMORY。 |
 
 #### [h2]OH_VideoProcessingCallback_Destroy()
 

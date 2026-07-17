@@ -2,8 +2,8 @@
 title: "arkweb_scheme_handler.h"
 upstream_id: "harmonyos-references/capi-arkweb-scheme-handler-h"
 catalog: "harmonyos-references"
-content_hash: "c4122998d75c"
-synced_at: "2026-07-09T17:25:40.878439"
+content_hash: "ffb929b11e18"
+synced_at: "2026-07-17T16:17:34.277945"
 ---
 
 # arkweb_scheme_handler.h
@@ -67,7 +67,7 @@ arkweb_scheme_handler.h是ArkWeb中用于拦截和自定义网络请求的完整
 | [int32_t OH_ArkWebHttpBodyStream_SetUserData(ArkWeb_HttpBodyStream* httpBodyStream, void* userData)](#oh_arkwebhttpbodystream_setuserdata) | - | 将一个用户数据设置到ArkWeb_HttpBodyStream对象中。 |
 | [void* OH_ArkWebHttpBodyStream_GetUserData(const ArkWeb_HttpBodyStream* httpBodyStream)](#oh_arkwebhttpbodystream_getuserdata) | - | 从ArkWeb_HttpBodyStream获取用户数据。 |
 | [int32_t OH_ArkWebHttpBodyStream_SetReadCallback(ArkWeb_HttpBodyStream* httpBodyStream,ArkWeb_HttpBodyStreamReadCallback readCallback)](#oh_arkwebhttpbodystream_setreadcallback) | - | 为OH_ArkWebHttpBodyStream_Read设置回调函数。OH_ArkWebHttpBodyStream_Read的结果将通过readCallback通知给调用者。 该回调函数将在与OH_ArkWebHttpBodyStream_Read相同的线程中运行。 |
-| [int32_t OH_ArkWebHttpBodyStream_SetAsyncReadCallback(ArkWeb_HttpBodyStream* httpBodyStream,ArkWeb_HttpBodyStreamReadCallback readCallback)](#oh_arkwebhttpbodystream_setasyncreadcallback) | - | 为OH_ArkWebHttpBodyStream_AsyncRead设置回调函数。OH_ArkWebHttpBodyStream_AsyncRead的结果将通过readCallback通知给开发者。 该回调函数会在ArkWeb工作线程中运行。 |
+| [int32_t OH_ArkWebHttpBodyStream_SetAsyncReadCallback(ArkWeb_HttpBodyStream* httpBodyStream,ArkWeb_HttpBodyStreamAsyncReadCallback readCallback)](#oh_arkwebhttpbodystream_setasyncreadcallback) | - | 为OH_ArkWebHttpBodyStream_AsyncRead设置回调函数。OH_ArkWebHttpBodyStream_AsyncRead的结果将通过readCallback通知给开发者。 该回调函数会在ArkWeb工作线程中运行。 |
 | [int32_t OH_ArkWebHttpBodyStream_Init(ArkWeb_HttpBodyStream* httpBodyStream,ArkWeb_HttpBodyStreamInitCallback initCallback)](#oh_arkwebhttpbodystream_init) | - | 初始化ArkWeb_HttpBodyStream。在调用任何其他函数之前，必须调用此函数。该接口需要在IO线程调用。 |
 | [void OH_ArkWebHttpBodyStream_Read(const ArkWeb_HttpBodyStream* httpBodyStream, uint8_t* buffer, int bufLen)](#oh_arkwebhttpbodystream_read) | - | 将请求的上传数据读取到buffer。buffer的大小必须大于bufLen。我们将从工作线程读取数据到buffer，因此在回调函数返回之前，不应在其他线程中使用buffer，以避免并发问题。 |
 | [void OH_ArkWebHttpBodyStream_AsyncRead(const ArkWeb_HttpBodyStream* httpBodyStream, uint8_t* buffer, int bufLen)](#oh_arkwebhttpbodystream_asyncread) | - | 将请求的上传数据读取到buffer。buffer的大小必须大于bufLen。数据将从工作线程读取到buffer，因此在回调函数返回之前，不应在其他线程中使用buffer，以避免并发问题。 |
@@ -256,7 +256,7 @@ typedef void (*ArkWeb_HttpBodyStreamAsyncReadCallback)(const ArkWeb_HttpBodyStre
 | 参数项 | 描述 |
 | --- | --- |
 | const [ArkWeb_HttpBodyStream](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-web-arkweb-httpbodystream)* httpBodyStream | ArkWeb_HttpBodyStream。 |
-| uint8_t* buffer | 接收数据的缓存区。 |
+| uint8_t* buffer | 接收数据的缓冲区。 |
 | int bytesRead | 标识异步读取操作执行结果的字节计数值。如果bytesRead大于0，则表示buffer已填充了bytesRead大小的数据。开发者可以从buffer中读取数据，如果OH_ArkWebHttpBodyStream_IsEof的返回值为false，则开发者可以继续读取剩余的数据。 |
 
 #### [h2]ArkWeb_HttpBodyStreamInitCallback()
@@ -692,7 +692,7 @@ void OH_ArkWebHttpBodyStream_AsyncRead(const ArkWeb_HttpBodyStream* httpBodyStre
 | 参数项 | 描述 |
 | --- | --- |
 | const [ArkWeb_HttpBodyStream](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-web-arkweb-httpbodystream)* httpBodyStream | ArkWeb_HttpBodyStream。 |
-| uint8_t* buffer | 接收数据的缓存区。 |
+| uint8_t* buffer | 接收数据的缓冲区。 |
 | int bufLen | 要读取的字节的大小。 |
 
 #### [h2]OH_ArkWebHttpBodyStream_GetSize()

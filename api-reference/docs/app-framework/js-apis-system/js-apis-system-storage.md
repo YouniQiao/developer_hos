@@ -2,8 +2,8 @@
 title: "@system.storage (数据存储)"
 upstream_id: "harmonyos-references/js-apis-system-storage"
 catalog: "harmonyos-references"
-content_hash: "58f38fc04771"
-synced_at: "2026-07-09T00:57:17.328253"
+content_hash: "4dd5e9d0d976"
+synced_at: "2026-07-17T16:16:02.997301"
 ---
 
 # @system.storage (数据存储)
@@ -11,7 +11,7 @@ synced_at: "2026-07-09T00:57:17.328253"
 ![](./img/note_3.0-zh-cn.png)
 
 - 模块维护策略： 对于Lite Wearable设备类型，该模块长期维护，可正常使用。
-- 对于支持该模块的其他设备类型，该模块从API version 6开始不再维护，可以使用模块[@ohos.data.storage](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-storage)。在API version 9后，推荐使用新模块[@ohos.data.preferences](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-preferences)。
+- 对于支持该模块的其他设备类型，该模块从API version 6开始不再维护，可以使用模块[@ohos.data.storage (轻量级存储)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-storage)。在API version 9后，推荐使用新模块[@ohos.data.preferences (用户首选项)](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-data-preferences)。
 
 本模块首批接口从API version 3开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
@@ -306,10 +306,6 @@ export default {
     }
 }
 ```
-
-#### storage.get
-
-get(options: GetStorageOptions): void
 
 #### storage.delete
 

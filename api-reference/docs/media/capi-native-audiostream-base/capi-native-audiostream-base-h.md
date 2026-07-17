@@ -2,8 +2,8 @@
 title: "native_audiostream_base.h"
 upstream_id: "harmonyos-references/capi-native-audiostream-base-h"
 catalog: "harmonyos-references"
-content_hash: "0bd290c4a456"
-synced_at: "2026-07-09T01:00:10.176667"
+content_hash: "150daebc359d"
+synced_at: "2026-07-17T16:18:45.112364"
 ---
 
 # native_audiostream_base.h
@@ -122,9 +122,9 @@ enum OH_AudioStream_SampleFormat
 | 枚举项 | 描述 |
 | --- | --- |
 | AUDIOSTREAM_SAMPLE_U8 = 0 | Unsigned 8位。 |
-| AUDIOSTREAM_SAMPLE_S16LE = 1 | Short 16位小端。 |
-| AUDIOSTREAM_SAMPLE_S24LE = 2 | Short 24位小端。 |
-| AUDIOSTREAM_SAMPLE_S32LE = 3 | Short 32位小端。 |
+| AUDIOSTREAM_SAMPLE_S16LE = 1 | Signed 16位小端。 |
+| AUDIOSTREAM_SAMPLE_S24LE = 2 | Signed 24位小端。 |
+| AUDIOSTREAM_SAMPLE_S32LE = 3 | Signed 32位小端。 |
 | AUDIOSTREAM_SAMPLE_F32LE = 4 | Float 32位小端。 **起始版本：** 17 |
 
 #### [h2]OH_AudioStream_EncodingType

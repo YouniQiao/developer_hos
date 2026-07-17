@@ -2,8 +2,8 @@
 title: "Class (UIContext)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-uicontext"
 catalog: "harmonyos-references"
-content_hash: "0d43fffb5087"
-synced_at: "2026-07-09T17:23:20.708190"
+content_hash: "ae52dfcc9ea6"
+synced_at: "2026-07-17T16:16:12.627174"
 ---
 
 # Class (UIContext)
@@ -455,7 +455,7 @@ struct UIContextCompare {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664329415.gif)
+ ![](./img/zh-cn_image_0000002671434039.gif)
 
 #### getFont
 
@@ -817,7 +817,7 @@ struct AnimateToImmediatelyExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002633850304.gif)
+ ![](./img/zh-cn_image_0000002671393909.gif)
 
 #### animateTo
 
@@ -1320,7 +1320,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002634010208.gif)
+ ![](./img/zh-cn_image_0000002641354062.gif)
 
 #### showActionSheet
 
@@ -1391,7 +1391,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664209357.gif)
+ ![](./img/zh-cn_image_0000002641194102.gif)
 
 #### showDatePickerDialog
 
@@ -1465,7 +1465,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664329417.gif)
+ ![](./img/zh-cn_image_0000002671434041.gif)
 
 #### showTimePickerDialog
 
@@ -1606,7 +1606,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002633850306.gif)
+ ![](./img/zh-cn_image_0000002671393911.gif)
 
 #### showTextPickerDialog20+
 
@@ -1882,7 +1882,7 @@ getAtomicServiceBar(): Nullable<AtomicServiceBar>
 
 | 类型 | 说明 |
 | --- | --- |
-| Nullable | 如果是元服务则返回AtomicServerBar类型，否则返回undefined。 |
+| Nullable | 如果是元服务则返回AtomicServiceBar类型，否则返回undefined。 |
 
 示例：
 
@@ -3530,7 +3530,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002634010210.gif)
+ ![](./img/zh-cn_image_0000002641354064.gif)
 
 #### unbindTabsFromScrollable13+
 
@@ -4156,7 +4156,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664209359.gif)
+ ![](./img/zh-cn_image_0000002641194104.gif)
 
 #### getPageRootNode24+
 
@@ -4308,7 +4308,7 @@ export struct pageThreeTmp {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002664329419.jpg)
+ ![](./img/zh-cn_image_0000002671434043.jpg)
 
 #### isEasySplit24+
 

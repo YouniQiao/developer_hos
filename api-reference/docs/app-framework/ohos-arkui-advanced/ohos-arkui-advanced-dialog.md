@@ -2,8 +2,8 @@
 title: "弹出框 (Dialog)"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-dialog"
 catalog: "harmonyos-references"
-content_hash: "b33e40e14e16"
-synced_at: "2026-07-09T00:58:11.050909"
+content_hash: "1f97ceaf471e"
+synced_at: "2026-07-17T16:16:40.787470"
 ---
 
 # 弹出框 (Dialog)
@@ -88,7 +88,7 @@ ConfirmDialog({controller: CustomDialogController, title: ResourceStr, content?:
 | controller | [CustomDialogController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-custom-dialog-box#customdialogcontroller) | 是 | - | 确认弹出框控制器。 **说明：** 未使用@Require装饰，构造时不强制校验参数。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | title | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | - | 确认弹出框标题。 **说明：** 标题超过两行会显示“...”。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | content | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | - | 确认弹出框内容。 默认不设置或设置为undefined，确认弹出框内容不显示。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
-| checkTips | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | - | checkbox的提示内容。 默认不设置或设置为undefined，checkbox的提示内容不显示。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
+| checkTips | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | - | checkbox的提示内容。 默认不设置或设置为undefined，checkbox的提示内容不显示。 **说明：** 当提示内容不设置时，checkbox也会显示。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | isChecked | boolean | 否 | @Prop | value为true时，表示checkbox已选中，value为false时，表示未选中。 默认值：false **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
 | onCheckedChange12+ | [Callback](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#callback12) | 否 | - | checkbox的选中状态改变事件回调。回调参数类型为boolean，true表示checkbox已选中，false表示checkbox未选中。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | primaryButton | [ButtonOptions](#buttonoptions) | 否 | - | 确认弹出框左侧按钮。 默认不设置或设置为undefined，确认弹出框左侧按钮不显示。 **元服务API：** 从API version 11开始，该接口支持在元服务中使用。 |
@@ -269,7 +269,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253764.png)
+ ![](./img/zh-cn_image_0000002641194812.png)
 
 #### [h2]示例2（纯列表弹出框）
 
@@ -335,7 +335,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612947.png)
+ ![](./img/zh-cn_image_0000002671434753.png)
 
 #### [h2]示例3（文本与勾选弹出框）
 
@@ -397,7 +397,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413656.png)
+ ![](./img/zh-cn_image_0000002671394621.png)
 
 #### [h2]示例4（纯文本弹出框）
 
@@ -451,7 +451,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732887.png)
+ ![](./img/zh-cn_image_0000002641354776.png)
 
 #### [h2]示例5（进度加载类弹出框）
 
@@ -491,7 +491,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253766.gif)
+ ![](./img/zh-cn_image_0000002641194814.gif)
 
 #### [h2]示例6（自定义主题风格弹出框）
 
@@ -547,7 +547,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612949.png)
+ ![](./img/zh-cn_image_0000002671434755.png)
 
 #### [h2]示例7（自定义深浅色模式弹出框）
 
@@ -588,7 +588,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413658.png)
+ ![](./img/zh-cn_image_0000002671394623.png)
 
 #### [h2]示例8（自定义内容弹出框）
 
@@ -646,7 +646,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732889.png)
+ ![](./img/zh-cn_image_0000002641354778.png)
 
 #### [h2]示例9（跟手弹出框）
 
@@ -706,7 +706,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253768.png)
+ ![](./img/zh-cn_image_0000002641194816.png)
 
 #### [h2]示例10（弹出框按钮设置默认获焦）
 
@@ -757,4 +757,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612951.png)
+ ![](./img/zh-cn_image_0000002671434757.png)

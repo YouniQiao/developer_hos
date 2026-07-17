@@ -2,13 +2,13 @@
 title: "FrameNode"
 upstream_id: "harmonyos-references/js-apis-arkui-framenode"
 catalog: "harmonyos-references"
-content_hash: "456418528822"
-synced_at: "2026-07-09T00:57:33.262620"
+content_hash: "f36362a89070"
+synced_at: "2026-07-17T16:16:15.460080"
 ---
 
 # FrameNode
 
-FrameNode表示组件树的实体节点。[NodeController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-nodecontroller)可通过[BuilderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode)持有的FrameNode将其挂载到[NodeContainer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-nodecontainer)上，也可通过FrameNode获取[RenderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-rendernode)，挂载到其他FrameNode上。最佳实践请参考[组件动态创建-组件动态添加、更新和删除](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-ui-dynamic-operations#section153921947151012)。
+FrameNode表示组件树的实体节点。[NodeController](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-nodecontroller)可通过[BuilderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-buildernode)持有的FrameNode将其挂载到[NodeContainer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-nodecontainer)上，也可通过FrameNode获取[RenderNode](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-arkui-rendernode)，挂载到其他FrameNode上。最佳实践请参考[组件动态创建](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-ui-component-dynamic-creation)。
 
 ![](./img/note_3.0-zh-cn.png)
 
@@ -1590,7 +1590,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631412992.gif)
+ ![](./img/zh-cn_image_0000002671434077.gif)
 
 #### [h2]commonAttribute12+
 
@@ -2117,7 +2117,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732225.gif)
+ ![](./img/zh-cn_image_0000002671393945.gif)
 
 #### [h2]setCrossLanguageOptions15+
 
@@ -8996,7 +8996,7 @@ struct FrameNodeTypeTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253104.png)
+ ![](./img/zh-cn_image_0000002641354100.png)
 
 #### 节点操作示例
 
@@ -10950,7 +10950,7 @@ struct CreateAnimationExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612287.gif)
+ ![](./img/zh-cn_image_0000002641194140.gif)
 
 #### 滚动事件示例
 
@@ -11046,7 +11046,7 @@ struct Index {
 
 #### 检验FrameNode是否有效示例
 
-该示例演示了FrameNode释放节点前后分别使用[isDisposed](#isdisposed20)接口验证节点的状态，释放节点前节点调用isDisposed接口返回true，释放节点后节点调用isDisposed接口返回false。
+该示例演示了FrameNode释放节点前后分别使用[isDisposed](#isdisposed20)接口验证节点的状态，释放节点前节点调用isDisposed接口返回false，释放节点后节点调用isDisposed接口返回true。
 
 ```
 import { NodeController, FrameNode, BuilderNode } from '@kit.ArkUI';
@@ -11156,11 +11156,11 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631412994.gif)
+ ![](./img/zh-cn_image_0000002671434079.gif)
 
 #### 检验NodeAdapter是否有效示例
 
-该示例演示了[NodeAdapter](#nodeadapter12)释放节点前后分别使用[isDisposed](#isdisposed20)接口验证节点的状态，释放节点前节点调用isDisposed接口返回true，释放节点后节点调用isDisposed接口返回false。
+该示例演示了[NodeAdapter](#nodeadapter12)释放节点前后分别使用[isDisposed](#isdisposed20)接口验证节点的状态，释放节点前节点调用isDisposed接口返回false，释放节点后节点调用isDisposed接口返回true。
 
 ```
 import { FrameNode, NodeController, NodeAdapter, typeNode } from '@kit.ArkUI';
@@ -11274,7 +11274,7 @@ struct ListNodeTest {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732227.gif)
+ ![](./img/zh-cn_image_0000002671393947.gif)
 
 #### 获取根节点示例
 

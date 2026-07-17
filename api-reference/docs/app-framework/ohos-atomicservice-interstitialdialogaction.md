@@ -2,8 +2,8 @@
 title: "InterstitialDialogAction"
 upstream_id: "harmonyos-references/ohos-atomicservice-interstitialdialogaction"
 catalog: "harmonyos-references"
-content_hash: "40944d7ae8a3"
-synced_at: "2026-07-09T00:58:12.548152"
+content_hash: "682aafeac1b6"
+synced_at: "2026-07-17T16:16:42.108075"
 ---
 
 # InterstitialDialogAction
@@ -84,8 +84,8 @@ closeDialog(): void
 | subtitleColor | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | [Color](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#color) | 否 | 是 | 弹框副标题文本颜色。默认为$r('sys.color.ohos_id_color_text_secondary_contrary')。 |
 | backgroundImage | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 弹框背景图片。默认为纯色背景，颜色值为#EBEEF5。 |
 | foregroundImage | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | 否 | 是 | 弹框前景图片。默认为空，即不显示前景图片。 |
-| iconStyle | [IconStyle](#iconstyle) | 否 | 是 | 关闭按钮图标的样式（亮调或者暗调）。 默认值：[IconStyle](#iconstyle).Light |
-| titlePosition | [TitlePosition](#titleposition) | 否 | 是 | 标题在弹框中的位置，在副标题的上方或者在副标题的下方。 默认值：[TitlePosition](#titleposition).Top |
+| iconStyle | [IconStyle](#iconstyle) | 否 | 是 | 关闭按钮图标的样式（亮调或者暗调）。 默认值：[IconStyle](#iconstyle).LIGHT |
+| titlePosition | [TitlePosition](#titleposition) | 否 | 是 | 标题在弹框中的位置，在副标题的上方或者在副标题的下方。 默认值：[TitlePosition](#titleposition).TOP |
 | onDialogClick | Callback | 否 | 是 | 点击弹框任意位置后触发的用户自定义动作。默认为“执行关闭弹框的函数”，即仅关闭弹框。 |
 | onDialogClose | Callback | 否 | 是 | 点击关闭按钮后触发的用户自定义动作。默认为“执行关闭弹框的函数”，即仅关闭弹框。 |
 
@@ -257,7 +257,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253784.png)
+ ![](./img/zh-cn_image_0000002641194832.png)
 
 #### [h2]示例2
 
@@ -382,4 +382,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612967.png)
+ ![](./img/zh-cn_image_0000002671434773.png)

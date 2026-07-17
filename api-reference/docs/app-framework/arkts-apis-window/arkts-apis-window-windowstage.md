@@ -2,8 +2,8 @@
 title: "Interface (WindowStage)"
 upstream_id: "harmonyos-references/arkts-apis-window-windowstage"
 catalog: "harmonyos-references"
-content_hash: "ea070592c758"
-synced_at: "2026-07-09T00:57:35.255166"
+content_hash: "c40994f823d9"
+synced_at: "2026-07-17T16:16:15.839273"
 ---
 
 # Interface (WindowStage)
@@ -874,7 +874,7 @@ export struct Index {
 
 loadContentByName(name: string, storage?: LocalStorage): Promise<void>
 
-根据指定路由页面名称为当前WindowStage加载[命名路由](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-routing#命名路由)页面，通过LocalStorage传递状态属性至加载页面，使用promise异步回调。
+根据指定路由页面名称为当前WindowStage加载[命名路由](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-routing#命名路由)页面，通过LocalStorage传递状态属性至加载页面，使用Promise异步回调。
 
 建议在UIAbility启动过程中使用该接口，重复调用该接口将先销毁旧的页面内容（即UIContent）再加载新的页面内容，请谨慎使用。当前UI的执行上下文可能不明确，所以不建议在回调函数中做UI相关的操作。
 

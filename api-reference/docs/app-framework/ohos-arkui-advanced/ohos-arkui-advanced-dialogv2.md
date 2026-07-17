@@ -2,8 +2,8 @@
 title: "DialogV2"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-dialogv2"
 catalog: "harmonyos-references"
-content_hash: "fe35fd399311"
-synced_at: "2026-07-09T00:58:14.851920"
+content_hash: "1014552fd506"
+synced_at: "2026-07-17T16:16:46.382280"
 ---
 
 # DialogV2
@@ -106,7 +106,7 @@ ConfirmDialogV2({title: ResourceStr, content?: ResourceStr, checkTips?: Resource
 | --- | --- | --- | --- | --- |
 | title | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 是 | @Param @Require | 确认弹出框标题。 **说明：** 标题超过两行会显示“...”。 |
 | content | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | @Param | 确认弹出框内容。 默认不显示。 |
-| checkTips | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | @Param | checkbox的提示内容。 默认不显示。 |
+| checkTips | [ResourceStr](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resourcestr) | 否 | @Param | checkbox的提示内容。 默认不显示。 **说明：** 当提示内容不设置时，checkbox也会显示。 |
 | checked | boolean | 否 | @Param | checked为true时，表示checkbox已选中，为false时，表示未选中。 默认值：false |
 | onCheckedChange | [AdvancedDialogV2OnCheckedChange](#advanceddialogv2oncheckedchange) | 否 | @Param | checkbox的选中状态改变事件。 默认无事件。 |
 | primaryButton | [AdvancedDialogV2Button](#advanceddialogv2button) | 否 | @Param | 确认弹出框左侧按钮。 默认不显示。 |
@@ -349,7 +349,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413692.png)
+ ![](./img/zh-cn_image_0000002671394657.png)
 
 #### [h2]示例2（纯列表弹出框）
 
@@ -417,7 +417,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612947.png)
+ ![](./img/zh-cn_image_0000002671434753.png)
 
 #### [h2]示例3（文本与勾选弹出框）
 
@@ -483,7 +483,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413656.png)
+ ![](./img/zh-cn_image_0000002671394621.png)
 
 #### [h2]示例4（纯文本弹出框）
 
@@ -541,7 +541,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732887.png)
+ ![](./img/zh-cn_image_0000002641354776.png)
 
 #### [h2]示例5（进度加载类弹出框）
 
@@ -584,7 +584,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253766.gif)
+ ![](./img/zh-cn_image_0000002641194814.gif)
 
 #### [h2]示例6（自定义主题风格弹出框）
 
@@ -642,7 +642,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732921.png)
+ ![](./img/zh-cn_image_0000002641354810.png)
 
 #### [h2]示例7（自定义内容弹出框）
 
@@ -701,7 +701,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253800.png)
+ ![](./img/zh-cn_image_0000002641194850.png)
 
 #### [h2]示例8（跟手弹出框）
 
@@ -757,4 +757,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612983.png)
+ ![](./img/zh-cn_image_0000002671434791.png)

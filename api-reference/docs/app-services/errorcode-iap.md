@@ -2,8 +2,8 @@
 title: "ArkTS API错误码"
 upstream_id: "harmonyos-references/errorcode-iap"
 catalog: "harmonyos-references"
-content_hash: "cdde109e0094"
-synced_at: "2026-07-09T01:01:21.372035"
+content_hash: "a86ffdf21a61"
+synced_at: "2026-07-17T16:19:45.768748"
 ---
 
 # ArkTS API错误码
@@ -78,25 +78,61 @@ The application is not authorized.
 
 #### 1001860003 无效的商品信息
 
+根据实际错误原因的不同，系统会上报不同的错误信息，具体如下。
+
+#### [h2]Product status is not online.
+
 错误信息
 
-Invalid product information.
+Invalid product information. Failure reason: Product status is not online.
 
 错误描述
 
-无效的商品信息。
+当产品状态为不在线时，系统会产生此错误码。
 
 可能原因
 
-1. 创建的商品状态异常（草稿、待提交、驳回）。
-2. 传入的商品ID、商品类型有误，或者商品价格未配置。
-3. IAP Kit开关未打开。
+创建的商品状态异常（草稿、待提交、驳回）。
 
 处理步骤
 
-1. 请登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，选择“APP与元服务 > 在应用列表中点击该商品的应用 > 运营 > 商品管理 > 商品列表”，查看对应商品是否存在、必填信息是否完整、商品信息已经提交审核并审核通过。如果未审核通过，可使用沙盒账号来进行[沙盒测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-sandbox)。
-2. 请登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，选择“APP与元服务 > 在应用列表中点击该商品的应用 > 运营 > 商品管理 > 商品列表”，请确认对应商品ID和商品类型是否正确，并确认商品价格已配置。
-3. 请参见[开启和激活应用内购买服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-in-app-purchases)确认IAP Kit开关已开启，并已激活。
+请登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，选择“APP与元服务 > 在应用列表中点击该商品的应用 > 运营 > 商品管理 > 商品列表”，查看对应商品是否存在且正确、商品信息已经提交审核并审核通过。如未审核通过，可使用沙盒账号来进行[沙盒测试](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-sandbox)。
+
+#### [h2]The product type or product id does not match.
+
+错误信息
+
+Invalid product information. Failure reason: The product type or product id does not match.
+
+错误描述
+
+当产品类型或产品ID不匹配时，系统会产生此错误码。
+
+可能原因
+
+传入的商品ID、商品类型有误，或者商品价格未配置。
+
+处理步骤
+
+请登录[AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html)网站，选择“APP与元服务 > 在应用列表中点击该商品的应用 > 运营 > 商品管理 > 商品列表”，请确认对应商品ID和商品类型是否正确，并确认商品价格已配置。
+
+#### [h2]The In-App Purchases Service is not activated.
+
+错误信息
+
+The application is not authorized. Failure reason: The In-App Purchases Service is not activated.
+
+错误描述
+
+当未激活应用内支付服务时，系统会产生此错误码。
+
+可能原因
+
+IAP Kit开关未开启。
+
+处理步骤
+
+请参见[开启和激活应用内购买服务](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/iap-enable-in-app-purchases)确认IAP Kit开关已开启，并已激活。
 
 #### 1001860004 接口访问过频
 

@@ -2,8 +2,8 @@
 title: "arkweb_type.h"
 upstream_id: "harmonyos-references/capi-arkweb-type-h"
 catalog: "harmonyos-references"
-content_hash: "f5bc68330321"
-synced_at: "2026-07-09T00:58:54.970868"
+content_hash: "d56c95456a14"
+synced_at: "2026-07-17T16:17:34.031243"
 ---
 
 # arkweb_type.h
@@ -66,8 +66,7 @@ synced_at: "2026-07-09T00:58:54.970868"
 
 | 名称 | 描述 |
 | --- | --- |
-| ARKWEB_MEMBER_EXISTS(s, f) ((intptr_t) & ((s)->f) - (intptr_t)(s) + sizeof((s)->f) (s)) | 检查结构体中是否存在该成员变量。 **起始版本：** 12 |
-| ARKWEB_MEMBER_MISSING(s, f) (!ARKWEB_MEMBER_EXISTS(s, f) || !((s)->f)) | 当前结构体存在该成员变量则返回false，否则返回true **起始版本：** 12 |
+| ARKWEB_MEMBER_EXISTS(s, f) ((intptr_t) & ((s)->f) - (intptr_t)(s) + sizeof((s)->f) f)) | 当前结构体存在该成员变量则返回false，否则返回true **起始版本：** 12 |
 
 #### 枚举类型说明
 
