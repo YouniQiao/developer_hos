@@ -2,8 +2,8 @@
 title: "Class (UIContext)"
 upstream_id: "harmonyos-references/arkts-apis-uicontext-uicontext"
 catalog: "harmonyos-references"
-content_hash: "ae52dfcc9ea6"
-synced_at: "2026-07-17T16:16:12.627174"
+content_hash: "10338f04843a"
+synced_at: "2026-07-21T16:23:28.431362"
 ---
 
 # Class (UIContext)
@@ -455,7 +455,7 @@ struct UIContextCompare {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002671434039.gif)
+ ![](./img/zh-cn_image_0000002677667455.gif)
 
 #### getFont
 
@@ -682,7 +682,7 @@ getOverlayManager(): OverlayManager
 
 元服务API： 从API version 12开始，该接口支持在元服务中使用。
 
-系统能力：: SystemCapability.ArkUI.ArkUI.Full
+系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 返回值：
 
@@ -702,7 +702,7 @@ setOverlayManagerOptions(options: OverlayManagerOptions): boolean
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
 
-系统能力：: SystemCapability.ArkUI.ArkUI.Full
+系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 参数：
 
@@ -728,7 +728,7 @@ getOverlayManagerOptions(): OverlayManagerOptions
 
 元服务API： 从API version 15开始，该接口支持在元服务中使用。
 
-系统能力：: SystemCapability.ArkUI.ArkUI.Full
+系统能力： SystemCapability.ArkUI.ArkUI.Full
 
 返回值：
 
@@ -817,7 +817,7 @@ struct AnimateToImmediatelyExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002671393909.gif)
+ ![](./img/zh-cn_image_0000002647747574.gif)
 
 #### animateTo
 
@@ -1320,7 +1320,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002641354062.gif)
+ ![](./img/zh-cn_image_0000002647587664.gif)
 
 #### showActionSheet
 
@@ -1391,7 +1391,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002641194102.gif)
+ ![](./img/zh-cn_image_0000002677827305.gif)
 
 #### showDatePickerDialog
 
@@ -1465,7 +1465,7 @@ struct DatePickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002671434041.gif)
+ ![](./img/zh-cn_image_0000002677667457.gif)
 
 #### showTimePickerDialog
 
@@ -1606,7 +1606,7 @@ struct TextPickerDialogExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002671393911.gif)
+ ![](./img/zh-cn_image_0000002647747576.gif)
 
 #### showTextPickerDialog20+
 
@@ -3530,7 +3530,7 @@ struct TabsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002641354064.gif)
+ ![](./img/zh-cn_image_0000002647587666.gif)
 
 #### unbindTabsFromScrollable13+
 
@@ -4156,7 +4156,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002641194104.gif)
+ ![](./img/zh-cn_image_0000002677827307.gif)
 
 #### getPageRootNode24+
 
@@ -4308,7 +4308,7 @@ export struct pageThreeTmp {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002671434043.jpg)
+ ![](./img/zh-cn_image_0000002677667459.jpg)
 
 #### isEasySplit24+
 

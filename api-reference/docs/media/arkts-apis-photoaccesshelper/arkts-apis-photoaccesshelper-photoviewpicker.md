@@ -2,8 +2,8 @@
 title: "Class (PhotoViewPicker)"
 upstream_id: "harmonyos-references/arkts-apis-photoaccesshelper-photoviewpicker"
 catalog: "harmonyos-references"
-content_hash: "3d92838ccbe8"
-synced_at: "2026-07-09T01:00:46.205319"
+content_hash: "7ffcbffe25ca"
+synced_at: "2026-07-21T16:26:55.463959"
 ---
 
 # Class (PhotoViewPicker)
@@ -53,7 +53,7 @@ select(option?: PhotoSelectOptions) : Promise<PhotoSelectResult>
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 13900042 | Unknown error. |
-| 23800151 | Scene parameters validate failed, possible causes:1. An illegal enumeration value was passed to PhotoSelectOptions.globalMovingPhotoState. Only MOVING_PHOTO_ENABLE and MOVING_PHOTO_DISABLE are supported for configuration; |
+| 23800151 | Scene parameters validate failed, possible causes:1. An illegal enumeration value was passed to PhotoSelectOptions.globalMovingPhotoState. Only MOVING_PHOTO_ENABLED and MOVING_PHOTO_DISABLED are supported for configuration; 2. An illegal enumeration value was passed to PhotoSelectOptions.assetCompatibleAbility. 适用版本：12 |
 
 示例：
 
@@ -105,7 +105,7 @@ select(option: PhotoSelectOptions, callback: AsyncCallback<PhotoSelectResult>) :
 | --- | --- |
 | 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
 | 13900042 | Unknown error. |
-| 23800151 | Scene parameters validate failed, possible causes:1. An illegal enumeration value was passed to PhotoSelectOptions.globalMovingPhotoState. Only MOVING_PHOTO_ENABLE and MOVING_PHOTO_DISABLE are supported for configuration; |
+| 23800151 | Scene parameters validate failed, possible causes:1. An illegal enumeration value was passed to PhotoSelectOptions.globalMovingPhotoState. Only MOVING_PHOTO_ENABLED and MOVING_PHOTO_DISABLED are supported for configuration; |
 
 示例：
 

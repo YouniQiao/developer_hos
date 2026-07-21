@@ -2,15 +2,15 @@
 title: "@ohos.file.PhotoPickerComponent (PhotoPicker组件)"
 upstream_id: "harmonyos-references/ohos-file-photopickercomponent"
 catalog: "harmonyos-references"
-content_hash: "9208e0d1663b"
-synced_at: "2026-07-09T01:00:48.181552"
+content_hash: "dbf5f2fae65c"
+synced_at: "2026-07-21T16:26:57.175458"
 ---
 
 # @ohos.file.PhotoPickerComponent (PhotoPicker组件)
 
 应用可以在布局中嵌入PhotoPicker组件，通过此组件，应用无需申请权限，即可实现媒体文件选择功能。在用户选择媒体文件后，应用即可访问用户选中的图片或视频文件。仅包含读权限。
 
-需要注意的是PhotoPickerComponent不能嵌套使用，且不建议在PhotoPickerComponent上覆盖设置了overlay属性的组件，将导致PhotoPickerComponent无法接受手势事件。
+请注意PhotoPickerComponent不支持嵌套，且不应在其上覆盖设置overlay属性或更高层级组件，以免导致手势事件失效。
 
 应用嵌入组件后，用户可直接在PhotoPicker组件中选择图片或视频文件。
 
@@ -95,8 +95,8 @@ Picker配置选项，继承自[photoAccessHelper.BaseSelectOptions](https://deve
 | maxVideoSelectNumber | number | 否 | 是 | 视频最大的选择数量。最大值为500，受到系统中所有媒体文件最大选择总数的限制。默认为500。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API：** 从API version 12开始，该接口支持在元服务中使用。 |
 | isSlidingSelectionSupported13+ | boolean | 否 | 是 | 是否支持滑动多选，true表示支持，false表示不支持。默认值为false。重复选择场景不支持滑动多选。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
 | photoBrowserCheckboxPosition13+ | [number, number] | 否 | 是 | 设置大图页checkbox的位置。第一个参数为X方向偏移量，第二个参数为Y方向偏移量。传参范围[0, 1]，代表距离组件左上角0%-100%的偏移量。默认值为[0, 0]。 **元服务API：** 从API version 13开始，该接口支持在元服务中使用。 |
-| gridMargin14+ | [Margin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#margin) | 否 | 是 | 设置组件宫格页margin。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
-| photoBrowserMargin14+ | [Margin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-size#margin) | 否 | 是 | 设置组件大图页margin。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
+| gridMargin14+ | [Margin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#margin) | 否 | 是 | 设置组件宫格页margin。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
+| photoBrowserMargin14+ | [Margin](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#margin) | 否 | 是 | 设置组件大图页margin。 **元服务API：** 从API version 14开始，该接口支持在元服务中使用。 |
 | singleLineConfig20+ | [SingleLineConfig](#singlelineconfig20) | 否 | 是 | 设置组件宫格页单行显示模式。单行模式下，组件不提供打开大图浏览相关功能。组件不支持大图相关回调，PickerController不支持大图相关的接口，接口调用将无效。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | uiComponentColorMode20+ | [PickerColorMode](#pickercolormode) | 否 | 是 | Picker的颜色模式。Picker宫格界面除背景色之外其他组件的深浅色风格，包括搜索框、相机入口、安全使用图库提示组件、推荐气泡等组件，一般与backgroundColor配合使用。默认为PickerColorMode.AUTO，跟随系统深浅色切换。 该属性一般设置PickerColorMode.LIGHT时不与深颜色的backgroundColor搭配；设置PickerColorMode.DARK时不与浅颜色的backgroundColor搭配，否则会出现组件背景或文字无法看清楚的问题。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
 | gridStartOffset20+ | number | 否 | 是 | 组件宫格缩略图第一行与组件顶部的预留空间。默认值0，单位vp。 **元服务API：** 从API version 20开始，该接口支持在元服务中使用。 |
@@ -104,7 +104,7 @@ Picker配置选项，继承自[photoAccessHelper.BaseSelectOptions](https://deve
 | pickerIndex21+ | number | 否 | 是 | 通过设置唯一序号来区分不同的pickerComponent。默认值为-1，-1时不做区分。 **元服务API：** 从API version 21开始，该接口支持在元服务中使用。 |
 | preselectedInfos21+ | Array | 否 | 是 | 支持在指定pickerIndex的PhotoPickerComponent中回显用户已选择的数据。 **元服务API：** 从API version 21开始，该接口支持在元服务中使用。 |
 | badgeConfig21+ | [BadgeConfig](#badgeconfig21) | 否 | 是 | 支持配置特殊角标显示。Picker目前仅支持一种类型的角标，详见[BadgeType](#badgetype21)。 **元服务API：** 从API version 21开始，该接口支持在元服务中使用。 |
-| isSlidingSupported23+ | boolean | 否 | 是 | 是否屏蔽PhotoPickerComponent的滚动。true表示不屏蔽滚动事件，响应用户滚动。false表示屏蔽滚动事件，不响应用户滚动。 默认为true。 **模型约束**：此接口仅可在Stage模型下使用。 **元服务API**：从API version 23开始，该接口支持在元服务中使用。 |
+| isSlidingSupported23+ | boolean | 否 | 是 | 是否屏蔽PhotoPickerComponent的滚动。true表示不屏蔽滚动事件，响应用户滚动。false表示屏蔽滚动事件，不响应用户滚动。 默认为true。 **注意：** 当isSlidingSupported设为false时，宫格缩略图将不响应用户点击查看大图的操作。 **模型约束**：此接口仅可在Stage模型下使用。 **元服务API**：从API version 23开始，该接口支持在元服务中使用。 |
 | edgeEffect23+ | [EdgeEffect](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#edgeeffect) | 否 | 是 | Picker宫格页滑动到边缘处的滑动效果。 默认为[EdgeEffect.Spring](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-appendix-enums#edgeeffect)。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API**：从API version 23开始，该接口支持在元服务中使用。 |
 | appAlbumFilters23+ | Array | 否 | 是 | 仅显示与指定bundle name对应的相册内容。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API**：从API version 23开始，该接口支持在元服务中使用。 |
 | backgroundOpacity24+ | number | 否 | 是 | 支持配置picker背景透明度。取值范围为[0, 1]，0表示完全透明，1表示完全不透明。 **模型约束：** 此接口仅可在Stage模型下使用。 **元服务API**：从API version 24开始，该接口支持在元服务中使用。 |
@@ -463,7 +463,7 @@ setData(dataType: DataType, data: Object): void
 
 addData(dataType: DataType, data: Object): void
 
-应用可通过该接口向picker组件发送增加配置数据。通过[DataType](#datatype)来区分具体发送的数据类型，该方法仅支持SET_BADGE_CONFIGS类型。
+应用可通过该接口向picker组件发送增加配置数据。通过[DataType](#datatype)来区分具体发送的数据类型。在API version 23之前，该方法仅支持SET_BADGE_CONFIGS类型。
 
 元服务API：从API version 21开始，该接口支持在元服务中使用。
 
@@ -666,7 +666,7 @@ setMovingPhotoState(movingPhotoState: photoAccessHelper.MovingPhotoBadgeStateTyp
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| 23800151 | Scene parameters validate failed, possible causes: 1. An invalid enumeration value was passed. Only MOVING_PHOTO_ENABLE and MOVING_PHOTO_DISABLE are supported for configuration |
+| 23800151 | Scene parameters validate failed, possible causes: 1. An invalid enumeration value was passed. Only MOVING_PHOTO_ENABLED and MOVING_PHOTO_DISABLED are supported for configuration |
 | 23800202 | Invalid call context. Possible causes: 1. The API is called outside the photo browsing scenario. 2. The API is called when isMovingPhotoBadgeShown is already set to true. |
 
 返回值：

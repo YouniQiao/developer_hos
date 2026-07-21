@@ -2,8 +2,8 @@
 title: "UsbRequestPipe"
 upstream_id: "harmonyos-references/capi-usbddk-usbrequestpipe"
 catalog: "harmonyos-references"
-content_hash: "82a44ddccf69"
-synced_at: "2026-07-09T00:59:57.376927"
+content_hash: "65c7a045278a"
+synced_at: "2026-07-21T16:26:03.233618"
 ---
 
 # UsbRequestPipe
@@ -29,5 +29,5 @@ typedef struct UsbRequestPipe {...} __attribute__((aligned(8))) UsbRequestPipe
 | 名称 | 描述 |
 | --- | --- |
 | uint64_t interfaceHandle | 接口操作句柄。 |
-| uint8_t endpoint | 要通信的端点的地址。 |
 | uint32_t timeout | 超时时间，单位是毫秒。 |
+| uint8_t endpoint | 要通信的端点的地址。 |

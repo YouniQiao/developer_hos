@@ -2,8 +2,8 @@
 title: "Tips控制"
 upstream_id: "harmonyos-references/ts-universal-attributes-tips"
 catalog: "harmonyos-references"
-content_hash: "76033ec2e60c"
-synced_at: "2026-07-09T00:57:41.634225"
+content_hash: "e63c24034c13"
+synced_at: "2026-07-21T16:23:35.470308"
 ---
 
 # Tips控制
@@ -14,7 +14,7 @@ synced_at: "2026-07-09T00:57:41.634225"
 
 - 从API version 19开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
 - 本模块接口仅可在Stage模型下使用。
-- 目前支持通过外接鼠标、手写笔以及触控板触发。
+- Tips控制依赖设备可以触发[悬浮事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-hover)，对于无法触发[悬浮事件](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-events-hover)的硬件设备无法使用Tips控制。
 
 #### bindTips
 
@@ -103,7 +103,7 @@ struct TipsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612401.gif)
+ ![](./img/zh-cn_image_0000002677827451.gif)
 
 #### [h2]示例2（多个悬浮气泡的显示和消失）
 
@@ -141,7 +141,7 @@ struct TipsExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413110.gif)
+ ![](./img/zh-cn_image_0000002677667603.gif)
 
 #### [h2]示例3（设置悬浮气泡的系统材质视效）
 
@@ -175,8 +175,8 @@ struct TipsExample {
 ```
  未设置系统材质时：
 
-![](./img/zh-cn_image_0000002631251380.gif)
+![](./img/zh-cn_image_0000002647585994.gif)
 
 设置系统材质后：
 
-![](./img/zh-cn_image_0000002661610565.gif)
+![](./img/zh-cn_image_0000002677825635.gif)

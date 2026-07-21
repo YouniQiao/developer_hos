@@ -2,13 +2,15 @@
 title: "@ohos.file.AlbumPickerComponent (Album Picker组件)"
 upstream_id: "harmonyos-references/ohos-file-albumpickercomponent"
 catalog: "harmonyos-references"
-content_hash: "7ed29f18dc76"
-synced_at: "2026-07-09T01:00:47.453014"
+content_hash: "c67154985594"
+synced_at: "2026-07-21T16:26:57.029878"
 ---
 
 # @ohos.file.AlbumPickerComponent (Album Picker组件)
 
 应用可以在布局中嵌入AlbumPickerComponent组件，通过此组件，应用无需申请权限，即可访问公共目录中的相册列表。
+
+请注意AlbumPickerComponent不支持嵌套，且不应在其上覆盖设置overlay属性或更高层级组件，以免导致手势事件失效。
 
 需配合[PhotoPickerComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ohos-file-photopickercomponent)一起使用，用户通过AlbumPickerComponent组件选择对应相册并通知PhotoPickerComponent组件刷新为对应相册的图片和视频。
 

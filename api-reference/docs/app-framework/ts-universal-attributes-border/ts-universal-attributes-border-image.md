@@ -2,8 +2,8 @@
 title: "图片边框设置"
 upstream_id: "harmonyos-references/ts-universal-attributes-border-image"
 catalog: "harmonyos-references"
-content_hash: "2d879000816d"
-synced_at: "2026-07-09T00:57:38.969853"
+content_hash: "688531e87aae"
+synced_at: "2026-07-21T16:23:33.511370"
 ---
 
 # 图片边框设置
@@ -46,7 +46,7 @@ borderImage(value: BorderImageOption): T
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| source | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | [LinearGradient](#lineargradient) | 否 | 是 | 边框图源或者渐变色设置。参数类型为string类型时，用于设置边框图源，引用方式请参考[加载图片资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-graphics-display#加载图片资源)。 **说明：** 边框图源仅适用于容器组件，如[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)、[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)、[Flex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-flex)，在非容器组件上使用会失效。 |
+| source | string | [Resource](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#resource) | [LinearGradient](#lineargradient) | 否 | 是 | 边框图源或者渐变色设置。参数类型为string类型时，用于设置边框图源，引用方式请参考[加载图片资源](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/arkts-graphics-display#加载图片资源)。 默认值：undefined（不设置边框图源） **说明：** 边框图源仅适用于容器组件，如[Row](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-row)、[Column](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-column)、[Flex](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-flex)，在非容器组件上使用会失效。 |
 | slice | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | [EdgeWidths](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edgewidths9) | [LocalizedEdgeWidths](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizededgewidths12)12+ | 否 | 是 | 设置边框图片左上角、右上角、左下角以及右下角的切割宽高。 默认值：0 **说明：** 设置负数时取默认值。 参数类型为[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)时，统一设置四个角的宽高。 参数类型为[EdgeWidths](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edgewidths9)时： - Top：设置图片上侧被切割的高。 - Bottom：设置图片下侧被切割的高。 - Left：设置图片左侧被切割的宽。 - Right：设置图片右侧被切割的宽。 参数类型为[LocalizedEdgeWidths](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizededgewidths12)12+时： - Top：设置图片上侧被切割的高。 - Bottom：设置图片下侧被切割的高。 - Start：设置图片左侧被切割的宽。 从右至左显示语言模式下为设置图片右侧被切割的宽。 - End：设置图片右侧被切割的宽。 从右至左显示语言模式下为设置图片左侧被切割的宽。 |
 | width | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | [EdgeWidths](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edgewidths9) | [LocalizedEdgeWidths](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizededgewidths12)12+ | 否 | 是 | 设置图片边框宽度。 默认值：0 **说明：** 设置负数时取默认值。 参数类型为[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)时，统一设置四条边框的宽度。 参数类型为[EdgeWidths](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edgewidths9)时： - Top：设置图片边框上边框的宽。 - Bottom：设置图片边框下边框的宽。 - Left：设置图片边框左边框的宽。 - Right：设置图片边框右边框宽。 参数类型为[LocalizedEdgeWidths](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizededgewidths12)12+时： - Top：设置图片边框上边框的宽。 - Bottom：设置图片边框下边框的宽。 - Start：设置图片边框左边框的宽。 从右至左显示语言模式下为设置图片边框右边框宽。 - End：设置图片边框右边框宽。 从右至左显示语言模式下为设置图片边框左边框的宽。 |
 | outset | [Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length) | [EdgeWidths](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edgewidths9) | [LocalizedEdgeWidths](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizededgewidths12)12+ | 否 | 是 | 设置边框图片向外延伸距离。 默认值：0 **说明：** 设置负数时取默认值。 参数类型为[Length](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#length)时，统一设置四条边框的向外延伸距离。 参数类型为[EdgeWidths](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#edgewidths9)时： - Top：设置边框图片上边框向外延伸的距离。 - Bottom：设置边框图片下边框向外延伸的距离。 - Left：设置边框图片左边框向外延伸的距离。 - Right：设置边框图片右边框向外延伸的距离。 参数类型为[LocalizedEdgeWidths](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-types#localizededgewidths12)12+时： - Top：设置边框图片上边框向外延伸的距离。 - Bottom：设置边框图片下边框向外延伸的距离。 - Start：设置边框图片左边框向外延伸的距离。 从右至左显示语言模式下为设置边框图片右边框向外延伸的距离。 - End：设置边框图片右边框向外延伸的距离。 从右至左显示语言模式下为设置边框图片左边框向外延伸的距离。 |
@@ -117,7 +117,7 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253168.png)
+ ![](./img/zh-cn_image_0000002647587762.png)
 
 #### [h2]示例2（动态调整属性值）
 
@@ -216,7 +216,7 @@ struct BorderImage {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612351.gif)
+ ![](./img/zh-cn_image_0000002677827403.gif)
 
 #### [h2]示例3（使用LocalizedEdgeWidths类型值）
 
@@ -375,4 +375,4 @@ struct BorderImage {
 ```
  显示语言示例图
 
-![](./img/zh-cn_image_0000002631413058.png)
+![](./img/zh-cn_image_0000002677667555.png)

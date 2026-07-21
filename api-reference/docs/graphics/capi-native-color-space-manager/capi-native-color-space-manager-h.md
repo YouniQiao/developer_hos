@@ -2,8 +2,8 @@
 title: "native_color_space_manager.h"
 upstream_id: "harmonyos-references/capi-native-color-space-manager-h"
 catalog: "harmonyos-references"
-content_hash: "9f9037f145b5"
-synced_at: "2026-07-09T01:00:54.261578"
+content_hash: "21516589fe28"
+synced_at: "2026-07-21T16:27:03.982941"
 ---
 
 # native_color_space_manager.h
@@ -66,9 +66,9 @@ enum ColorSpaceName
 | --- | --- |
 | NONE = 0 | 表示未知的色彩空间。 |
 | ADOBE_RGB = 1 | 表示基于Adobe RGB的色彩空间。 |
-| DCI_P3 = 2 | 表示基于SMPTE RP 431-2-2007和IEC 61966-2.1：1999的色彩空间。 |
-| DISPLAY_P3 = 3 | 表示基于SMPTE RP 431-2-2007和IEC 61966-2.1：1999的色彩空间。 |
-| SRGB = 4 | 表示基于IEC 61966-2.1：1999的标准红绿蓝（SRGB）色彩空间。 |
+| DCI_P3 = 2 | 表示基于SMPTE RP 431-2-2007和IEC 61966-2.1:1999的色彩空间。 |
+| DISPLAY_P3 = 3 | 表示基于SMPTE RP 431-2-2007和IEC 61966-2.1:1999的色彩空间。 |
+| SRGB = 4 | 表示基于IEC 61966-2.1:1999的标准红绿蓝（SRGB）色彩空间。 |
 | BT709 = 6 | 表示基于ITU-R BT.709的色彩空间。 |
 | BT601_EBU = 7 | 表示基于ITU-R BT.601的色彩空间。 |
 | BT601_SMPTE_C = 8 | 表示基于ITU-R BT.601的色彩空间。 |

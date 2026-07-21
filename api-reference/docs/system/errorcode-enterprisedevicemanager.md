@@ -2,8 +2,8 @@
 title: "企业设备管理错误码"
 upstream_id: "harmonyos-references/errorcode-enterprisedevicemanager"
 catalog: "harmonyos-references"
-content_hash: "4a15dfe2166a"
-synced_at: "2026-07-09T00:59:53.969153"
+content_hash: "af6183c2f492"
+synced_at: "2026-07-21T16:25:58.844019"
 ---
 
 # 企业设备管理错误码
@@ -343,7 +343,9 @@ Failed to install the application.
 
 可能原因
 
-该错误码表示安装企业应用失败，可能原因如下。
+该错误码表示安装企业应用失败。
+
+如果调用接口为[bundleManager.install](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-bundlemanager#bundlemanagerinstall)，可能原因如下。
 
 1. 应用安装路径为空、不存在、无效路径。
 2. 安装多个不同包名的应用。
@@ -351,6 +353,8 @@ Failed to install the application.
 4. 传入无效用户id。
 
 处理步骤
+
+如果调用接口为[bundleManager.install](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-bundlemanager#bundlemanagerinstall)，处理步骤如下。
 
 1. 检查应用安装路径是有效的安装路径。
 2. 检查安装参数是有效的安装参数。

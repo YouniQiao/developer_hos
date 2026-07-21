@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.AbilityStage (AbilityStage组件管理器)"
 upstream_id: "harmonyos-references/js-apis-app-ability-abilitystage"
 catalog: "harmonyos-references"
-content_hash: "d02588b2efae"
-synced_at: "2026-07-09T00:57:02.563839"
+content_hash: "a9c2805dbfbf"
+synced_at: "2026-07-21T16:23:08.483610"
 ---
 
 # @ohos.app.ability.AbilityStage (AbilityStage组件管理器)
@@ -341,7 +341,7 @@ onAcceptWantAsync(want: Want): Promise<string>
 import { AbilityStage } from '@kit.AbilityKit';
 
 class MyAbilityStage extends AbilityStage {
-  async onAcceptWantAsync(): Promise<string> {
+  async onAcceptWantAsync(want: Want): Promise<string> {
     await new Promise<string>((res, rej) => {
       setTimeout(res, 1000); // 延时1秒后执行
     });

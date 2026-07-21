@@ -2,8 +2,8 @@
 title: "Video"
 upstream_id: "harmonyos-references/ts-media-components-video"
 catalog: "harmonyos-references"
-content_hash: "b3c642e6fc26"
-synced_at: "2026-07-09T00:58:00.786840"
+content_hash: "50d1fad82a6b"
+synced_at: "2026-07-21T16:23:46.746544"
 ---
 
 # Video
@@ -14,7 +14,7 @@ synced_at: "2026-07-09T00:58:00.786840"
 
 Video组件只提供简单的视频播放功能，无法支撑复杂的视频播控场景。复杂开发场景推荐使用[AVPlayer](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-media-avplayer)播控API和[XComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-xcomponent)组件开发。
 
-Video组件在使用expandSafeArea扩展安全区域时，组件视频显示内容区域不支持扩展。
+Video组件在使用[expandSafeArea](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-universal-attributes-expand-safe-area#expandsafearea)扩展安全区域时，组件视频显示内容区域不支持扩展。
 
 #### 权限列表
 
@@ -586,7 +586,7 @@ setCurrentTime(value: number, seekMode: SeekMode)
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | value | number | 是 | 视频播放进度位置。 取值范围：[0, [duration](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-media-components-video#preparedinfo18对象说明)] 当设置value大于duration时，进度跳转至最后；当设置value小于0时，不会进行进度跳转。 单位：秒 |
-| seekMode | [SeekMode](#seekmode8枚举说明) | 是 | 跳转模式。 |
+| seekMode | [SeekMode](#seekmode8枚举说明) | 是 | 跳转模式。 异常值undefined、null、NaN和Infinity按PreviousKeyframe处理。 |
 
 #### SeekMode8+枚举说明
 
@@ -596,12 +596,12 @@ setCurrentTime(value: number, seekMode: SeekMode)
 
 系统能力： SystemCapability.ArkUI.ArkUI.Full
 
-| 名称 | 说明 |
-| --- | --- |
-| PreviousKeyframe | 跳转到前一个最近的关键帧。 |
-| NextKeyframe | 跳转到后一个最近的关键帧。 |
-| ClosestKeyframe | 跳转到最近的关键帧。 |
-| Accurate | 精准跳转，不论是否为关键帧。 |
+| 名称 | 值 | 说明 |
+| --- | --- | --- |
+| PreviousKeyframe | 0 | 跳转到前一个最近的关键帧。 |
+| NextKeyframe | 1 | 跳转到后一个最近的关键帧。 |
+| ClosestKeyframe | 2 | 跳转到最近的关键帧。 |
+| Accurate | 3 | 精准跳转，不论是否为关键帧。 |
 
 #### 示例
 
@@ -739,7 +739,7 @@ interface FullscreenObject {
   fullscreen: boolean;
 }
 ```
- ![](./img/zh-cn_image_0000002661732657.gif)
+ ![](./img/zh-cn_image_0000002647748034.gif)
 
 #### [h2]示例2（图像分析功能）
 
@@ -896,7 +896,7 @@ struct VideoObject {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253536.png)
+ ![](./img/zh-cn_image_0000002647588124.png)
 
 #### [h2]示例5（onError事件上报错误码）
 
@@ -938,7 +938,7 @@ struct VideoErrorComponent {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612719.png)
+ ![](./img/zh-cn_image_0000002677827765.png)
 
 #### [h2]示例6（使用attributeModifier动态设置Video组件的属性及方法）
 
@@ -1059,4 +1059,4 @@ interface FullscreenObject {
   fullscreen: boolean;
 }
 ```
- ![](./img/zh-cn_image_0000002631413430.png)
+ ![](./img/zh-cn_image_0000002677667917.png)

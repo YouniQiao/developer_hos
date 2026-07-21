@@ -2,8 +2,8 @@
 title: "@ohos.enterprise.browser（浏览器管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-browser"
 catalog: "harmonyos-references"
-content_hash: "5992aa4e3d9d"
-synced_at: "2026-07-09T00:59:51.219991"
+content_hash: "1a3ad8bde202"
+synced_at: "2026-07-21T16:25:57.273886"
 ---
 
 # @ohos.enterprise.browser（浏览器管理）
@@ -28,7 +28,7 @@ import { browser } from '@kit.MDMKit';
 
 setPolicySync(admin: Want, appId: string, policyName: string, policyValue: string): void
 
-为指定的浏览器设置浏览器子策略。
+为指定的浏览器设置浏览器子策略。此策略仅对使用了华为webview的浏览器生效。
 
 需要权限： ohos.permission.ENTERPRISE_SET_BROWSER_POLICY
 
@@ -87,7 +87,7 @@ try {
 
 getPoliciesSync(admin: Want, appId: string): string
 
-通过appid获取指定浏览器设置的策略。
+通过appid获取指定浏览器设置的策略。此策略仅对使用了华为webview的浏览器生效。
 
 系统能力： SystemCapability.Customization.EnterpriseDeviceManager
 
@@ -143,6 +143,8 @@ try {
 setManagedBrowserPolicy(admin: Want, bundleName: string, policyName: string, policyValue: string): void
 
 为指定的浏览器设置浏览器策略，成功后会发布系统公共事件[COMMON_EVENT_MANAGED_BROWSER_POLICY_CHANGED](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/commoneventmanager-definitions#common_event_managed_browser_policy_changed)。
+
+![](./img/note_3.0-zh-cn.png) 在多MDM应用场景下，针对同一浏览器的同一策略，一旦被首个Admin配置并生效，其他Admin将无法配置。
 
 需要权限： ohos.permission.ENTERPRISE_SET_BROWSER_POLICY
 
