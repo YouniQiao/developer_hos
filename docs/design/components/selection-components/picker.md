@@ -1,95 +1,141 @@
 ---
-title: 选择器
-sidebar_label: 选择器
-original_url: /docs/design/components/selection-components/picker
-format: md
-upstream_id: design/components/selection-components/picker
-last_sync: 2026-06-07
-sync_hash: 8c9fc29c
+title: "选择器"
 ---
+
 # 选择器
 
-当需要从单个维度或多个维度进行组合做选择时使用。月历视图日期选择器开发相关描述请参考 [CalendarPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-calendarpicker) 文档。滚动选择器开发相关描述请参考 [DatePicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-datepicker)、[TimePicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-timepicker)、[TextPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textpicker)文档。
+当需要从单个维度或多个维度进行组合选择时使用。滚轮选择器开发相关描述请参阅 [UIPickerComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-ui-picker-component)。月历视图选择器开发相关描述请参阅 [CalendarPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-calendarpicker) 文档。
 
-![](https://contentcenter-vali-drcn.dbankcdn.cn/pvt_2/DeveloperAlliance_scene_100_1/d2/v3/5eEfrkszTcCuxVCyI3Hi0Q/zh-cn_image_0000001957104701.jpg "点击放大")
-
-### 如何使用
-
-**通过选择不同的 Picker 组件实现对应效果。**组件提供 TimePicker、DatePicker、TextPicker 三种组件类型，特殊的 Picker 内容可以通过 TextPicker 自定义实现。
-
-**在 CustomContentDialog 内添加 Picker 组件以实现与弹出框的组合。**弹出框组件详细指导见 [Dialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-custom-dialog-box) 。
-
-|  |  |  |
-| --- | --- | --- |
-| ![](../../general-design-basics/visual-design/img/img_7b33eb693ed8_zh-cn_image_0000002103699257.png "点击放大") | ![](../../general-design-basics/visual-design/img/img_cf1bb4cb30a2_zh-cn_image_0000002068382284.png "点击放大") | ![](../../general-design-basics/visual-design/img/img_c76942b33927_zh-cn_image_0000002103579425.png "点击放大") |
-| **TimePicker** | **DatePicker** | **TextPicker** |
+![](./img/zh-cn_image_0000002609972635.png "点击放大")
 
 ### 类型
 
+选择器按交互形式分为滚轮选择器和月历视图选择器。
+
+* 滚轮选择器支持自定义数据和时间日期的选择；
+  + 自定义选择器可自定义维度和选项，用于展示自定义的可选内容；
+  + 时间日期选择器提供常用的时间和日期的维度与选项；
+* 月历视图选择器支持在月历视图下选择日期，能较为直观地看出日期和星期的关系。
+
+|  |  |  |
+| --- | --- | --- |
+| ![](./img/zh-cn_image_0000002616184795.png "点击放大") | ![](./img/zh-cn_image_0000002585904982.png "点击放大") | ![](./img/zh-cn_image_0000002585748890.png "点击放大") |
+| **自定义选择****器** | **时间日期选择****器** | **月历视图选择****器** |
+
+### 如何使用
+
+通过组合选择器组件和容器组件，实现不同的选择交互效果。
+
+* **根据业务场景选择合适的组件。**特殊内容选择可通过 [UIPickerComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-ui-picker-component) 自定义实现；日期、时间选择可通过 DatePickerComponent 实现；选择日期场景也可通过 [CalendarPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-calendarpicker) 实现。
+* **选择合适的选择器呈现方式。**自定义选择器和时间日期选择器组件可与弹出框等多种容器组件组合使用，以适配不同的选择场景。弹出框组件详细指导请参阅 [CustomDialog](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-methods-custom-dialog-box) 。
+* 月历视图选择器以独立组件形式提供日期选择能力。
+
+### 自定义选择器
+
+当需要从大量单选项中做组合多个维度的单选条件时，可使用自定义选择器。用户通过滚动滚轮，从列表中选择所需信息。
+
+* **合理配置滚轮选项的内容与尺寸，避免内容被截断或折行，确保选项易读性。**组合图像与文本时，建议将图像高度设为40vp及以下，避免图片过大被裁剪。若字符超长，可调整字号、启用文本截断或自动滚动以适配展示。
+* **预设高频使用的默认选项，和易于理解的排列顺序。**默认选项应贴合多数用户的实际场景，以减少大多数用户的操作；当选项为数字时，建议选项按从小到大排序。
+* **根据业务场景需求，配置滚轮选项的循环滚动。**循环滚动适用于周期性数据，如生肖、季节等，符合用户生活常识；关闭循环滚动则使数据边界更清晰，适用于年龄、体重、国家选择等场景。
+* **合理选择滚轮选择器的展示形式。**滚轮选项支持自定义文本、数字、图像、Symbol 及 Row 组件；其中 Row 组件可灵活组合文本、数字与图像，以满足多样化的内容排版需求。
+
 |  |  |
 | --- | --- |
-| ![](../../general-design-basics/visual-design/img/img_c8471c4fa743_zh-cn_image_0000002104382297.png "点击放大") | ![](../../general-design-basics/visual-design/img/img_78f2cf7cbc28_zh-cn_image_0000002103704637.png "点击放大") |
-| **滚动选择器** | **月历视图日期选择器** |
+| ![](./img/zh-cn_image_0000002625021745.png "点击放大") | ![](./img/zh-cn_image_0000002594422250.png "点击放大") |
+| **文本** | **数字** |
+| ![](./img/zh-cn_image_0000002594582160.png "点击放大") | ![](./img/zh-cn_image_0000002624941611.png "点击放大") |
+| **Symbol** | **图片** |
 
-**电脑设备**
-
-月历选择
-
-月历时间段选择
+* 支持自定义选项高度和可见选项数量，适配不同布局需求。
 
 |  |  |
 | --- | --- |
-| ![](../../general-design-basics/visual-design/img/img_b55805c782a6_zh-cn_image_0000002103552413.png "点击放大") | ![](../../general-design-basics/visual-design/img/img_e6d5c37c6fd4_zh-cn_image_0000002103667857.png "点击放大") |
-| **单个月历日期面板，用于选择日期。** | **连月历日期面板，在选择日期段时使用。** |
+| ![](./img/zh-cn_image_0000002625021753.png "点击放大") | ![](./img/zh-cn_image_0000002594422252.png "点击放大") |
+| **行数7行** | **行数5行** |
 
-**月历选择**
+### 时间日期选择器
+
+时间日期选择器基于滚轮选择器实现，提供时间和日期两种初始模式，并支持开发者根据实际需求选择时间日期选择器的包含列。同时，时间和日期的显示格式可根据用户的系统设置自动适配。
+
+![](./img/zh-cn_image_0000002594582052.png "点击放大")
+
+**日期**可选年、月、日列，支持中国农历。
+
+* **可组合勾选组件以便用户切换农历与公历。**勾选组件详细指导可参阅 [Checkbox](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-checkbox) 文档。
 
 |  |  |
 | --- | --- |
-| ![](../../general-design-basics/visual-design/img/img_45b334c2c01f_zh-cn_image_0000002067873966.png "点击放大") |  |
-| **电脑必选月历日期选择入口** |  |
+| ![](./img/zh-cn_image_0000002624941513.png "点击放大") | ![](./img/zh-cn_image_0000002594422140.png "点击放大") |
+| **公历** | **农历** |
+
+**时间**可选上下午、时、分、秒列，支持24小时制和12小时制。
+
+* **根据业务需求、用户场景和地区习惯****，选择时间制式和格式。**若采用24小时制，保留时、分列；当使用12小时制时，新增上下午列。根据语言习惯灵活配置各时间维度的展示顺序、数值补零规则，并支持上下午标识随小时列循环滚动自动切换。
+
+|  |  |
+| --- | --- |
+| ![](./img/zh-cn_image_0000002625021639.png "点击放大") | ![](./img/zh-cn_image_0000002594582054.png "点击放大") |
+| **12小时制** | **24小时制** |
+
+### 月历视图选择器
+
+月历视图可直观呈现星期与日期的对应关系，适用于日程管理、日历查看、住宿预订等场景，用户可直接在月历视图中选择所需日期。
+
+![](./img/zh-cn_image_0000002624941415.png "点击放大")
 
 |  |  |  |
 | --- | --- | --- |
 | **序号** | **元素名称** | 描述 |
-| **1** | **入口触发方式** | 电脑必选，手机端可自定入口触发方式 |
+| **1** | **选择器入口** | 电脑必选，手机端可自定选择器入口。 |
 | **2** | **标题区** | 显示选中的年月，单箭头切换月份，双箭头切换年。 |
 | **3** | **内容区** | 显示日期选项，可左右滑动，可配置显示农历。 |
 | **4** | **操作区** | 操作为“取消”，“确定”，电脑可选。 |
 | **5** | **容器** | 弹出框。 |
 
+月历视图选择器需包含选择器入口与选择器面板。点击选择器入口唤起月历日期选择器。
+
+* **根据业务需求，自定义月历的选择区间。**可设定不同的时间范围，例如：生日日期不能晚于当前日期，预订车票不能选择过去的日期。
+
+|  |  |
+| --- | --- |
+| ![](./img/zh-cn_image_0000002594422052.png "点击放大") | ![](./img/zh-cn_image_0000002625021553.png "点击放大") |
+| **单个月历日期面板，用于选择日期。** | **连月历日期面板，在选择日期段时使用。** |
+
+### 布局规则
+
+**电脑****月历视图选择****器**
+
+月历视图选择器电脑端必选月历选择入口，手机可选月历日期选择弹窗。
+
+![](./img/zh-cn_image_0000002594582242.png "点击放大")
+
 **智能穿戴滑动选择器**
 
 当需要从单维度或多个维度单选进行组合做选择时使用。
 
-![](../../general-design-basics/visual-design/img/img_6cf3466a2a60_zh-cn_image_0000002348861249.png "点击放大")
+![](./img/zh-cn_image_0000002624941703.png "点击放大")
 
 **时间选择器**
 
-时间选择器使用弹出框或者内嵌的方式，在智能穿戴上选择单个时间（小时:分钟:秒的格式）。
+时间选择器使用弹出框或者内嵌的方式，在智能穿戴上选择单个时间 (时 : 分 : 秒的格式) 。
 
-![](../../general-design-basics/visual-design/img/img_40714b146ef3_zh-cn_image_0000002314784336.png "点击放大")
+![](./img/zh-cn_image_0000002625021837.png "点击放大")
 
 例如设置闹钟/计时器
 
 **其他选择器**
 
-· 通常有两种：数字选择器，文本选择器。
+通常有两种：数字选择器，文本选择器。
 
-· 数字选择器默认按从小到大排序。
+* 数字选择器默认按从小到大排序。
+* 根据选择项的属性选择合适的默认选项，以减少大多数用户的操作。
 
-· 根据选择项的属性选择合适的默认选项，以减少大多数用户的操作。
-
-![](../../general-design-basics/visual-design/img/img_3d7cfc348e5b_zh-cn_image_0000002314946736.png "点击放大")
+![](./img/zh-cn_image_0000002594422324.png "点击放大")
 
 例如设置熄屏时间/高度校准
 
 ### 开发文档
 
-[DatePicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-datepicker)
-
-[TimePicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-timepicker)
-
-[TextPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-textpicker)
+[UIPickerComponent](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-container-ui-picker-component)
 
 [CalendarPicker](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/ts-basic-components-calendarpicker)
