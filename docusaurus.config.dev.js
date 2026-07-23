@@ -54,7 +54,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars-dev.js'),
           include: [
-            'design/**',
+            'tools/deveco-code/**',
           ],
           routeBasePath: 'docs',
           exclude: ['**/img/**', '**/_category_**'],

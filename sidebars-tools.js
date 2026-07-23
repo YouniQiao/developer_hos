@@ -975,8 +975,28 @@ aiAssistSidebar: [
 ],
 
 devecoCodeSidebar: [
-  'tools/deveco-code/overview',
-  'tools/deveco-code/deveco-cli',
+  {
+    type: 'category',
+    label: 'DevEco Code',
+    collapsed: false,
+    items: [
+      'tools/deveco-code/overview',
+      'tools/deveco-code/deveco-code-install',
+      'tools/deveco-code/deveco-code-agent',
+      'tools/deveco-code/deveco-code-model',
+      'tools/deveco-code/deveco-code-common-configure',
+    ],
+  },
+  {
+    type: 'category',
+    label: 'DevEco CLI',
+    collapsed: true,
+    items: [
+      'tools/deveco-code/deveco-cli',
+      'tools/deveco-code/deveco-cli-install',
+      'tools/deveco-code/deveco-cli-options',
+    ],
+  },
 ],
 
 cliToolsSidebar: [

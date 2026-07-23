@@ -1,10 +1,9 @@
 // @ts-check
-// Dev sidebar — 设计指南预览。
+// Dev sidebar — DevEco Code 预览。
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  designSidebar: require('./sidebars-design.js').designSidebar,
-  appCompatibilitySidebar: require('./sidebars-compatibility.js').appCompatibilitySidebar,
+  devecoCodeSidebar: require('./sidebars-tools.js').devecoCodeSidebar,
 };
 
 module.exports = sidebars;
