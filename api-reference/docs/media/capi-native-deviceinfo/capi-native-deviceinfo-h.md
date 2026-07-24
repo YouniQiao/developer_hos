@@ -2,8 +2,8 @@
 title: "native_deviceinfo.h"
 upstream_id: "harmonyos-references/capi-native-deviceinfo-h"
 catalog: "harmonyos-references"
-content_hash: "4bb71be0e66d"
-synced_at: "2026-07-09T01:00:19.851695"
+content_hash: "d8d6df570a64"
+synced_at: "2026-07-24T16:45:36.910526"
 ---
 
 # native_deviceinfo.h
@@ -28,7 +28,7 @@ synced_at: "2026-07-09T01:00:19.851695"
 
 | 名称 | typedef关键字 | 描述 |
 | --- | --- | --- |
-| [AVSession_OutputDeviceInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-avsession-outputdeviceinfo) | - | 目标设备信息的定义。 |
+| [AVSession_OutputDeviceInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-avsession-outputdeviceinfo) | AVSession_OutputDeviceInfo | 目标设备信息的定义。 |
 | [AVSession_DeviceInfo](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/capi-ohavsession-avsession-deviceinfo) | AVSession_DeviceInfo | 设备信息的声明。该实例用于获取更多的设备信息及其详细属性。 |
 
 #### [h2]函数

@@ -2,8 +2,8 @@
 title: "半模态转场"
 upstream_id: "harmonyos-references/ts-universal-attributes-sheet-transition"
 catalog: "harmonyos-references"
-content_hash: "ac1250339a74"
-synced_at: "2026-07-09T00:57:42.857812"
+content_hash: "b8a08068064e"
+synced_at: "2026-07-24T16:43:27.681262"
 ---
 
 # 半模态转场
@@ -401,7 +401,7 @@ struct SheetTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413126.gif)
+ ![](./img/zh-cn_image_0000002649779872.gif)
 
 #### [h2]示例2（设置三个不同高度的挡位）
 
@@ -453,7 +453,7 @@ struct SheetTransitionExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661732355.gif)
+ ![](./img/zh-cn_image_0000002649939780.gif)
 
 #### [h2]示例3（使用边框宽度和颜色）
 
@@ -508,11 +508,11 @@ struct SheetTransitionExample {
 ```
  从左至右显示语言模式示例图
 
-![](./img/zh-cn_image_0000002631253234.png)
+![](./img/zh-cn_image_0000002679859613.png)
 
 从右至左显示语言模式示例图
 
-![](./img/zh-cn_image_0000002661612419.png)
+![](./img/zh-cn_image_0000002680019433.png)
 
 #### [h2]示例4（使用关闭回调函数）
 
@@ -564,7 +564,7 @@ struct bindSheetExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631413128.gif)
+ ![](./img/zh-cn_image_0000002649779874.gif)
 
 #### [h2]示例5（设置内容区刷新时机）
 
@@ -616,11 +616,11 @@ struct Index {
 ```
  跟手触发挡位切换时，松手才触发面板内容高度刷新
 
-![](./img/zh-cn_image_0000002661732357.gif)
+![](./img/zh-cn_image_0000002649939782.gif)
 
 跟手触发挡位切换时，跟手时期就会触发面板内容高度刷新
 
-![](./img/zh-cn_image_0000002631253236.gif)
+![](./img/zh-cn_image_0000002679859615.gif)
 
 #### [h2]示例6（设置压缩模态内容）
 
@@ -736,7 +736,7 @@ struct ListenKeyboardHeightChange {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612421.gif)
+ ![](./img/zh-cn_image_0000002680019435.gif)
 
 #### [h2]示例7（镜像场景下如何设置圆角属性）
 
@@ -788,11 +788,11 @@ struct SheetTransitionExample {
 ```
  从左至右显示语言模式示例图
 
-![](./img/zh-cn_image_0000002631413130.png)
+![](./img/zh-cn_image_0000002649779876.png)
 
 从右至左显示语言模式示例图
 
-![](./img/zh-cn_image_0000002661732359.png)
+![](./img/zh-cn_image_0000002649939784.png)
 
 #### [h2]示例8（半模态Side侧边样式）
 
@@ -893,7 +893,7 @@ struct SheetSideExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631253238.gif)
+ ![](./img/zh-cn_image_0000002679859617.gif)
 
 #### [h2]示例9（半模态ContentCover全屏样式）
 
@@ -955,7 +955,7 @@ struct ContentCoverExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612423.gif)
+ ![](./img/zh-cn_image_0000002680019437.gif)
 
 #### [h2]示例10（半模态设置系统材质）
 
@@ -973,7 +973,7 @@ struct SheetMaterialExample {
   @State isShow: boolean = false;
   @State sheetHeight: number = 300;
   @State myMaterial: SystemUiMaterial | undefined = new uiMaterial.ImmersiveMaterial({
-    style: 0,
+    style: uiMaterial.ImmersiveStyle.ULTRA_THICK,
   });
 
   @Builder
@@ -1017,4 +1017,4 @@ struct SheetMaterialExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002631411274.jpg)
+ ![](./img/zh-cn_image_0000002649778040.jpg)

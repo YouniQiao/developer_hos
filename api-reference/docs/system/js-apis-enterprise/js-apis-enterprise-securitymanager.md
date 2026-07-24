@@ -2,8 +2,8 @@
 title: "@ohos.enterprise.securityManager（安全管理）"
 upstream_id: "harmonyos-references/js-apis-enterprise-securitymanager"
 catalog: "harmonyos-references"
-content_hash: "49468ca01739"
-synced_at: "2026-07-09T00:59:53.351380"
+content_hash: "447daa5be96f"
+synced_at: "2026-07-24T16:45:16.387104"
 ---
 
 # @ohos.enterprise.securityManager（安全管理）
@@ -848,7 +848,7 @@ try {
 
 cancelWatermarkImage(admin: Want, bundleName: string, accountId: number): void
 
-取消指定用户的水印策略。
+取消指定用户的水印策略。当应用不再需要水印保护或需要更换水印时，企业可调用此接口取消水印策略。当使用[企业数字空间](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/enterprisespace-introduction)时，只能在当前用户下取消当前用户的水印。即可以在100用户下取消100用户的水印，不可以在100用户下取消101用户的水印。
 
 需要权限： ohos.permission.ENTERPRISE_MANAGE_SECURITY
 
@@ -1357,7 +1357,7 @@ imageSource.createPixelMap().then((pixelMap: image.PixelMap) => {
 
 cancelScreenWatermarkImage(admin: Want): void
 
-取消屏幕水印策略，对所有用户生效。
+取消屏幕水印策略，对所有用户生效。取消成功后，设备屏幕上的水印消失。当设备不再需要屏幕水印保护时，企业可调用此接口取消水印策略。只有设置屏幕水印的用户才能取消该水印，例如用户100设置的屏幕水印，用户101无法取消。
 
 起始版本：26.0.0
 

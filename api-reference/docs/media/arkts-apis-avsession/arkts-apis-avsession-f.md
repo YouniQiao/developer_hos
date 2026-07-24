@@ -2,8 +2,8 @@
 title: "Functions"
 upstream_id: "harmonyos-references/arkts-apis-avsession-f"
 catalog: "harmonyos-references"
-content_hash: "9290f6935ac7"
-synced_at: "2026-07-09T01:00:17.424352"
+content_hash: "d55800868e7a"
+synced_at: "2026-07-24T16:45:35.468572"
 ---
 
 # Functions
@@ -189,7 +189,6 @@ import { avSession } from '@kit.AVSessionKit';
 @Entry
 @Component
 struct Index {
-  private avsessioncontroller !: avSession.AVSessionController;
   @State message: string = 'hello world';
 
   build() {

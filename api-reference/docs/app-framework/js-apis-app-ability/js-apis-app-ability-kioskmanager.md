@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.kioskManager (Kiosk模式管理)"
 upstream_id: "harmonyos-references/js-apis-app-ability-kioskmanager"
 catalog: "harmonyos-references"
-content_hash: "520bf2379959"
-synced_at: "2026-07-09T00:57:07.432633"
+content_hash: "c1b08764645b"
+synced_at: "2026-07-24T16:42:57.498164"
 ---
 
 # @ohos.app.ability.kioskManager (Kiosk模式管理)
@@ -16,7 +16,7 @@ Kiosk模式是一种特殊的设备锁定模式，可以确保设备界面只服
 
 - 本模块首批接口从API version 20开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 - 本模块接口仅可在Stage模型下使用。
-- 本模块接口仅适用于通过[setAllowedKioskApps接口](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-applicationmanager#applicationmanagersetallowedkioskapps20)配置的支持Kiosk模式的应用。
+- 本模块接口仅适用于通过[applicationManager.setAllowedKioskApps](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-enterprise-applicationmanager#applicationmanagersetallowedkioskapps20)配置的支持Kiosk模式的应用。
 
 #### 导入模块
 
@@ -28,7 +28,7 @@ import { kioskManager } from '@kit.AbilityKit';
 
 enterKioskMode(context: UIAbilityContext): Promise<void>
 
-进入Kiosk模式。使用Promise异步回调。
+调用此接口进入Kiosk模式，采用Promise异步回调方式。若触发进入Kiosk模式的应用进程被终止，系统将自动退出该模式。
 
 系统能力： SystemCapability.Ability.AbilityRuntime.Core
 

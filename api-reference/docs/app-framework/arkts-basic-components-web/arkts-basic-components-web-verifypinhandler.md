@@ -2,8 +2,8 @@
 title: "Class (VerifyPinHandler)"
 upstream_id: "harmonyos-references/arkts-basic-components-web-verifypinhandler"
 catalog: "harmonyos-references"
-content_hash: "c0e35975bd33"
-synced_at: "2026-07-09T00:58:52.116061"
+content_hash: "22082c9725a3"
+synced_at: "2026-07-24T16:44:17.222925"
 ---
 
 # Class (VerifyPinHandler)
@@ -16,7 +16,7 @@ VerifyPinHandler是Web组件中处理PIN码验证请求的类。当需要用户P
 - 本Class首批接口从API version 22开始支持。
 - 示例效果请以真机运行为准。
 
-#### constructor22+
+#### constructor
 
 constructor()
 
@@ -24,7 +24,7 @@ VerifyPinHandler的构造函数。
 
 系统能力： SystemCapability.Web.Webview.Core
 
-#### confirm22+
+#### confirm
 
 confirm(result: PinVerifyResult): void
 

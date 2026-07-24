@@ -2,8 +2,8 @@
 title: "@ohos.app.form.formBindingData (卡片数据绑定类)"
 upstream_id: "harmonyos-references/js-apis-app-form-formbindingdata"
 catalog: "harmonyos-references"
-content_hash: "5a497a0146c3"
-synced_at: "2026-07-09T17:25:49.065955"
+content_hash: "103a7614dfc8"
+synced_at: "2026-07-24T16:44:27.730284"
 ---
 
 # @ohos.app.form.formBindingData (卡片数据绑定类)
@@ -30,8 +30,8 @@ import { formBindingData } from '@kit.FormKit';
 
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
-| key10+ | string | 否 | 否 | 卡片代理刷新的订阅标识，与数据发布者保持一致。 |
-| subscriberId10+ | string | 否 | 是 | 卡片代理刷新的订阅条件，默认值为当前卡片的formId。 |
+| key | string | 否 | 否 | 卡片代理刷新的订阅标识，与数据发布者保持一致。 |
+| subscriberId | string | 否 | 是 | 卡片代理刷新的订阅者标识，默认值为当前卡片的formId。 |
 
 #### FormBindingData
 

@@ -2,17 +2,15 @@
 title: "DownloadFileButton"
 upstream_id: "harmonyos-references/ohos-arkui-advanced-downloadfilebutton"
 catalog: "harmonyos-references"
-content_hash: "fb654283c4bc"
-synced_at: "2026-07-09T00:58:14.755477"
+content_hash: "d912b2cba0f1"
+synced_at: "2026-07-24T16:43:40.726737"
 ---
 
 # DownloadFileButton
 
-下载文件按钮，通过点击该下载按钮，可以获取到当前应用在Download公共目录中所属的存储路径。
+下载文件按钮，在下载文件场景中提供统一样式的下载按钮。
 
 ![](./img/note_3.0-zh-cn.png) 该组件从API version 12开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
-
-该组件不支持在Wearable设备上使用。
 
 #### 导入模块
 
@@ -193,4 +191,4 @@ struct Index {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002661612981.png)
+ ![](./img/zh-cn_image_0000002649780430.png)

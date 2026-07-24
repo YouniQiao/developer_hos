@@ -2,8 +2,8 @@
 title: "oh_window.h"
 upstream_id: "harmonyos-references/capi-oh-window-h"
 catalog: "harmonyos-references"
-content_hash: "f6b259d3480b"
-synced_at: "2026-07-17T16:17:12.551176"
+content_hash: "8eef3658576a"
+synced_at: "2026-07-24T16:43:59.944778"
 ---
 
 # oh_window.h
@@ -136,7 +136,9 @@ int32_t OH_WindowManager_SetWindowNavigationBarEnabled(int32_t windowId, bool en
 ```
  描述
 
-设置主窗口是否显示导航栏。HarmonyOS各设备不支持此能力。
+设置主窗口是否显示导航栏。
+
+此接口调用是否生效由设备厂商定义。在HarmonyOS设备上，底部导航表现为导航条，用户也可在设置中开启三键导航，此时导航条或三键导航的显隐可通过[setSpecificSystemBarEnabled](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/arkts-apis-window-window#setspecificsystembarenabled11)接口设置。
 
 起始版本： 15
 

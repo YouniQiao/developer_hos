@@ -2,8 +2,8 @@
 title: "Interface (AVSessionController)"
 upstream_id: "harmonyos-references/arkts-apis-avsession-avsessioncontroller"
 catalog: "harmonyos-references"
-content_hash: "b4b2e314fbdc"
-synced_at: "2026-07-09T01:00:18.202199"
+content_hash: "b1d00c502680"
+synced_at: "2026-07-24T16:45:36.525668"
 ---
 
 # Interface (AVSessionController)
@@ -43,7 +43,7 @@ import { avSession } from '@kit.AVSessionKit';
 struct Index {
   private tag: string = "createNewSession";
   private sessionId: string = "";
-  private AVSessionController?: avSession.AVSessionController;
+  private avsessionController?: avSession.AVSessionController;
   private currentAVSession?: avSession.AVSession;
   context = this.getUIContext();
 

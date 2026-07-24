@@ -1,12 +1,10 @@
 ---
-
 title: "焦点事件"
 upstream_id: "harmonyos-references/ts-universal-focus-event"
 catalog: "harmonyos-references"
-synced_at: "2026-07-09T00:57:36.459584"
-content_hash: "293dc132b30e"
+content_hash: "9e5d0a88436d"
+synced_at: "2026-07-24T16:43:22.947731"
 ---
-
 
 # 焦点事件
 
@@ -79,7 +77,7 @@ struct FocusEventExample {
 
   build() {
     Column({ space: 20 }) {
-      // 通过外接键盘的Tab键激活焦点，并使用上下键让焦点在三个按钮间移动，按钮获焦时颜色变化，失焦时变回原背景色
+      // 当焦点在三个按钮间移动，按钮获焦时颜色变化，失焦时变回原背景色
       Button('First Button')
         .backgroundColor(this.oneButtonColor)
         .width(260)
@@ -120,4 +118,4 @@ struct FocusEventExample {
   }
 }
 ```
- ![](./img/zh-cn_image_0000002626070232.png)
+ ![](./img/zh-cn_image_0000002649779770.png)

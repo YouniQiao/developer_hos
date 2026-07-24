@@ -2,8 +2,8 @@
 title: "@ohos.app.ability.AppServiceExtensionAbility (应用后台服务扩展组件)"
 upstream_id: "harmonyos-references/js-apis-app-ability-appserviceextensionability"
 catalog: "harmonyos-references"
-content_hash: "8212dfab3fc1"
-synced_at: "2026-07-09T00:57:03.365938"
+content_hash: "c3a83ec10f7a"
+synced_at: "2026-07-24T16:42:53.500619"
 ---
 
 # @ohos.app.ability.AppServiceExtensionAbility (应用后台服务扩展组件)
@@ -23,7 +23,7 @@ AppServiceExtensionAbility模块提供后台服务相关扩展能力，包括后
 
 AppServiceExtensionAbility提供了[onCreate()](#oncreate)、[onRequest()](#onrequest)、[onConnect()](#onconnect)、[onDisconnect()](#ondisconnect)和[onDestroy()](#ondestroy)生命周期回调，开发者可根据需要重写对应的回调方法。下图展示了AppServiceExtensionAbility的生命周期。
 
-![](./img/zh-cn_image_0000002631412934.png)
+![](./img/zh-cn_image_0000002680019247.png)
 
 - **onCreate** 在AppServiceExtensionAbility实例创建时，系统会触发该回调。
 - **onDestroy** 在AppServiceExtensionAbility实例销毁时，系统会触发该回调。
@@ -45,6 +45,8 @@ AppServiceExtensionAbility模块提供后台服务相关扩展能力，包括后
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
 
+设备行为差异：该属性仅在PC/2in1设备中可正常调用，在其他设备上不生效。
+
 | 名称 | 类型 | 只读 | 可选 | 说明 |
 | --- | --- | --- | --- | --- |
 | context | [AppServiceExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-appserviceextensioncontext) | 否 | 否 | AppServiceExtensionAbility的上下文环境，继承自[ExtensionContext](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-extensioncontext)。 |
@@ -58,6 +60,8 @@ onCreate(want: Want): void
 ![](./img/note_3.0-zh-cn.png) 如果AppServiceExtensionAbility实例已创建，再次启动或连接该实例时不会触发onCreate()回调。
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
+
+设备行为差异：该接口仅在PC/2in1设备中可正常执行回调，在其他设备上不执行回调。
 
 参数：
 
@@ -88,6 +92,8 @@ onDestroy(): void
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
 
+设备行为差异：该接口仅在PC/2in1设备中可正常执行回调，在其他设备上不执行回调。
+
 示例：
 
 ```
@@ -110,6 +116,8 @@ onRequest(want: Want, startId: number): void
 调用方每次使用[startAppServiceExtensionAbility()](https://developer.huawei.com/consumer/cn/doc/harmonyos-references/js-apis-inner-application-uiabilitycontext#startappserviceextensionability20)拉起AppServiceExtensionAbility实例时，系统都会触发该回调。
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
+
+设备行为差异：该接口仅在PC/2in1设备中可正常执行回调，在其他设备上不执行回调。
 
 参数：
 
@@ -142,6 +150,8 @@ onConnect(want: Want): rpc.RemoteObject
 应用需要在该接口中返回一个RemoteObject对象，用于客户端和服务端进行通信。当AppServiceExtensionAbility实例处于连接状态时，如果调用方发起新的连接，系统会返回缓存的RemoteObject对象，而不会重复回调onConnect()接口。
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
+
+设备行为差异：该接口仅在PC/2in1设备中可正常执行回调，在其他设备上不执行回调。
 
 参数：
 
@@ -188,6 +198,8 @@ onDisconnect(want: Want): void
 当所有连接方断开与AppServiceExtensionAbility实例的连接时，系统会触发该回调。
 
 系统能力：SystemCapability.Ability.AbilityRuntime.Core
+
+设备行为差异：该接口仅在PC/2in1设备中可正常执行回调，在其他设备上不执行回调。
 
 参数：
 
